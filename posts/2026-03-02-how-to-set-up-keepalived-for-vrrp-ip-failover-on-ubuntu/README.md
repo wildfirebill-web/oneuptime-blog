@@ -31,6 +31,7 @@ VRRP is a network protocol originally designed for router redundancy. In a Keepa
 
 ```bash
 # Install on both servers
+
 sudo apt update
 sudo apt install -y keepalived
 

@@ -28,6 +28,7 @@ Start by enabling the API and installing dependencies.
 
 ```bash
 # Enable the Natural Language API
+
 gcloud services enable language.googleapis.com
 
 # Install the Python client library

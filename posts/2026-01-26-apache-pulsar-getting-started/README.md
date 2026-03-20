@@ -127,6 +127,7 @@ The fastest way to get started is using Docker. If you do not have Docker instal
 
 ```bash
 # Pull the official Apache Pulsar image
+
 docker pull apachepulsar/pulsar:3.3.0
 
 # Run Pulsar in standalone mode

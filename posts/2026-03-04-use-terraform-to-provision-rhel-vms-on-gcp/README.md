@@ -31,6 +31,7 @@ provider "google" {
 }
 
 # RHEL 9 Compute Engine instance
+
 resource "google_compute_instance" "rhel" {
   name         = "rhel9-terraform"
   machine_type = "e2-medium"

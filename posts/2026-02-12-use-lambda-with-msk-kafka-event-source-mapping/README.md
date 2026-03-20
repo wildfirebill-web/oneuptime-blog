@@ -48,6 +48,7 @@ Your Lambda function needs to be in the same VPC as your MSK cluster, or in a pe
 
 ```bash
 # Update Lambda function to run in the MSK cluster's VPC
+
 aws lambda update-function-configuration \
   --function-name msk-consumer \
   --vpc-config SubnetIds=subnet-abc123,subnet-def456,SecurityGroupIds=sg-msk-consumer

@@ -319,7 +319,7 @@ spec:
 
 Both containers access the ephemeral volume through shared fsGroup membership.
 
-## Resource Limits on Ephemeral Volumes
+Resource Limits on Ephemeral Volumes
 
 Prevent resource exhaustion with proper limits:
 

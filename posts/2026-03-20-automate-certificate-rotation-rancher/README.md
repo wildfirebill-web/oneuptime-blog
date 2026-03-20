@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Certificates, cert-manager, TLS, Automation, Kubernetes, Security
+Tags: Rancher, Certificates, Cert-Manager, TLS, Automation, Kubernetes, Security
 
-Description: Automate TLS certificate rotation in Rancher using cert-manager for application certificates, and built-in RKE2 mechanisms for Kubernetes component certificates, ensuring no certificate expiry incidents.
+Description: Automate TLS certificate rotation in Rancher using cert-manager for application certificates, and built-in RKE2 mechanisms for Kubernetes component certificates, ensuring no certificate expiry...
 
 ## Introduction
 
-Certificate expiry is one of the most preventable causes of production outages. Automating certificate rotation—for Kubernetes component certificates (API server, etcd, kubelet), Rancher's own certificates, and application TLS certificates—eliminates manual renewal processes. cert-manager handles application certificates, while RKE2 manages Kubernetes component certificates automatically.
+Certificate expiry is one of the most preventable causes of production outages. Automating certificate rotation-for Kubernetes component certificates (API server, etcd, kubelet), Rancher's own certificates, and application TLS certificates-eliminates manual renewal processes. cert-manager handles application certificates, while RKE2 manages Kubernetes component certificates automatically.
 
 ## Step 1: Install cert-manager
 
 ```bash
 # Install cert-manager with CRDs
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 
@@ -216,4 +217,4 @@ spec:
 
 ## Conclusion
 
-cert-manager automates the complete lifecycle of TLS certificates in Rancher-managed clusters. Application certificates are issued automatically when Ingresses are created and renewed before expiry without any manual intervention. RKE2 handles Kubernetes component certificate rotation with a simple `rke2 certificate rotate` command. The combination of cert-manager Prometheus metrics and PrometheusRule alerts ensures certificate expiry never causes unexpected outages—the team is notified weeks before expiry, with critical alerts for any renewal failures.
+cert-manager automates the complete lifecycle of TLS certificates in Rancher-managed clusters. Application certificates are issued automatically when Ingresses are created and renewed before expiry without any manual intervention. RKE2 handles Kubernetes component certificate rotation with a simple `rke2 certificate rotate` command. The combination of cert-manager Prometheus metrics and PrometheusRule alerts ensures certificate expiry never causes unexpected outages-the team is notified weeks before expiry, with critical alerts for any renewal failures.

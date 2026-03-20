@@ -220,6 +220,7 @@ chown named:named /var/named/192.168.1.rev
 chown named:named /var/named/2001-db8.ip6.rev
 
 # Validate
+
 named-checkconf /etc/named.conf
 named-checkzone example.com /var/named/example.com.zone
 named-checkzone 1.168.192.in-addr.arpa /var/named/192.168.1.rev

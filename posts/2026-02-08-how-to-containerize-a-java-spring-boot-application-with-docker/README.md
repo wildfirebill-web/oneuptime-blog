@@ -49,6 +49,7 @@ Many tutorials show this approach, but it has significant problems:
 
 ```dockerfile
 # BAD EXAMPLE - Do not use this in production
+
 FROM openjdk:17
 COPY target/app.jar /app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]

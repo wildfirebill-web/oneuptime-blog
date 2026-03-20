@@ -32,6 +32,7 @@ The basic command to restart a service is:
 
 ```bash
 # Restart a specific service
+
 talosctl service <service-name> restart -n <node-ip>
 ```
 

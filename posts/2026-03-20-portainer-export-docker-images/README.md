@@ -1,4 +1,4 @@
-# How to Export Docker Images from Portainer
+# How to Export Docker Images from Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to export Docker images from Portainer as tar files for b
 
 ## Introduction
 
-Exporting Docker images from Portainer creates a portable tar file of the image that can be transferred to other systems, used for air-gapped deployments, or archived for compliance. This is the opposite of the import operation — you start with an image on the host and create a file.
+Exporting Docker images from Portainer creates a portable tar file of the image that can be transferred to other systems, used for air-gapped deployments, or archived for compliance. This is the opposite of the import operation - you start with an image on the host and create a file.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Exporting Docker images from Portainer creates a portable tar file of the image 
 
 The browser downloads the image directly as a file.
 
-Note: Portainer may not always offer a direct export button — if not available, use the Docker CLI method below.
+Note: Portainer may not always offer a direct export button - if not available, use the Docker CLI method below.
 
 ## Step 2: Export via Docker CLI
 
@@ -33,6 +33,7 @@ The most reliable way to export images:
 
 ```bash
 # Export a single image to a tar file:
+
 docker save myorg/myapp:v2.1.0 > myapp-v2.1.0.tar
 
 # Export with gzip compression (saves significant space):
@@ -178,14 +179,14 @@ tar -tzf myapp-v2.1.0.tar.gz | head -20
 # Test the file integrity:
 gzip -t myapp-v2.1.0.tar.gz && echo "File is valid"
 
-# Test load (dry run — load then immediately remove):
+# Test load (dry run - load then immediately remove):
 docker load -i myapp-v2.1.0.tar.gz
 docker image rm myorg/myapp:v2.1.0
 ```
 
 ## Export Size Expectations
 
-```
+```bash
 # Image sizes vs. export file sizes:
 # nginx:alpine (42 MB)      → tar: 42 MB    → tar.gz: ~40 MB
 # postgres:15 (412 MB)      → tar: 410 MB   → tar.gz: ~140 MB
@@ -197,7 +198,7 @@ docker image rm myorg/myapp:v2.1.0
 
 ## Use Cases by Scenario
 
-```
+```bash
 # Air-gapped deployment:
 # On internet-connected machine:
 docker save myapp:v1 | gzip > bundle.tar.gz
@@ -219,4 +220,4 @@ aws s3 cp myapp-v2.1.0.tar.gz s3://compliance-bucket/images/
 
 ## Conclusion
 
-Exporting Docker images from Portainer or Docker CLI creates portable tar files for backup, transfer, and air-gapped deployments. Always use gzip compression for storage and transfer efficiency. For systematic image archival in production, consider pushing to a dedicated archive registry rather than managing tar files — it provides versioning, tagging, and easy retrieval without large binary file management.
+Exporting Docker images from Portainer or Docker CLI creates portable tar files for backup, transfer, and air-gapped deployments. Always use gzip compression for storage and transfer efficiency. For systematic image archival in production, consider pushing to a dedicated archive registry rather than managing tar files - it provides versioning, tagging, and easy retrieval without large binary file management.

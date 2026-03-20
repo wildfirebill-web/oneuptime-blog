@@ -31,6 +31,7 @@ Create a Layout Parser processor and install the required libraries.
 
 ```bash
 # Enable Document AI and install the client library
+
 gcloud services enable documentai.googleapis.com
 pip install google-cloud-documentai
 ```

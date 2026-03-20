@@ -14,6 +14,7 @@ The `terraform workspace show` command does one thing: it prints the name of the
 
 ```bash
 # Show the current workspace
+
 terraform workspace show
 ```
 

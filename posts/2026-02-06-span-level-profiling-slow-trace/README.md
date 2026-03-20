@@ -51,6 +51,7 @@ For Python applications using the `py-spy` or `ebpf` profiler:
 
 ```python
 # Install the required packages
+
 # pip install opentelemetry-api opentelemetry-sdk pyroscope-io
 
 import pyroscope

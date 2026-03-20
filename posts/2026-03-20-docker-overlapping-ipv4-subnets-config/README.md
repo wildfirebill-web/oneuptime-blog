@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, Networking, IPv4, Overlapping Subnets, Network Isolation
 
-Description: Manage Docker containers with overlapping IPv4 subnets by using separate bridge networks for isolation, understanding routing behavior, and preventing cross-network communication between overlapping ranges.
+Description: Manage Docker containers with overlapping IPv4 subnets by using separate bridge networks for isolation, understanding routing behavior, and preventing cross-network communication between...
 
 ## Introduction
 
@@ -15,13 +15,14 @@ Overlapping subnets in Docker occur when two networks share the same or overlapp
 When two Docker bridge networks have overlapping subnets, the host routing table has two routes for the same CIDR. The kernel uses only one, causing packets destined for one network's containers to be misrouted to the other.
 
 ```bash
-# Both networks use 172.20.0.0/24 — problematic
+# Both networks use 172.20.0.0/24 - problematic
+
 docker network create --subnet 172.20.0.0/24 network-a
 docker network create --subnet 172.20.0.0/24 network-b  # conflict!
 
 # Check the host routing table
 ip route show | grep "172.20.0.0"
-# Only one route exists — Docker created duplicate
+# Only one route exists - Docker created duplicate
 ```
 
 ## Prevention: Use Non-Overlapping Subnets
@@ -67,7 +68,7 @@ docker network create \
 ip link show type bridge | grep br-
 ```
 
-The two bridges are isolated at Layer 2 — containers on `tenant-a-network` cannot reach `tenant-b-network` even with the same IP range.
+The two bridges are isolated at Layer 2 - containers on `tenant-a-network` cannot reach `tenant-b-network` even with the same IP range.
 
 ## Checking for Subnet Conflicts
 

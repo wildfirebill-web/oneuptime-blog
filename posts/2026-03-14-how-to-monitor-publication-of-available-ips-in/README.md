@@ -24,6 +24,7 @@ Key monitoring targets are publication frequency, data accuracy over time, and a
 
 ```promql
 # Available IPs per node
+
 cilium_ipam_available
 
 # Used IPs per node

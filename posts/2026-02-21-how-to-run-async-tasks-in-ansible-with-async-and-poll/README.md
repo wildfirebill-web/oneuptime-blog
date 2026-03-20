@@ -35,6 +35,7 @@ When `poll` is greater than 0, Ansible starts the task, then periodically checks
 
 ```yaml
 # async-poll.yml - Run a long task with periodic status checks
+
 ---
 - name: Compile and install software
   hosts: build_servers

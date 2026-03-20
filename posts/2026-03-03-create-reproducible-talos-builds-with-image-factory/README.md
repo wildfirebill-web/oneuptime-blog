@@ -26,6 +26,7 @@ Always use an explicit version tag, never "latest" or floating references:
 
 ```yaml
 # Good - explicit version
+
 machine:
   install:
     image: factory.talos.dev/installer/376567988ad8b2698212367b:v1.7.0

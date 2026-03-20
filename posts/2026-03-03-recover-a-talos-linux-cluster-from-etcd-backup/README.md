@@ -33,6 +33,7 @@ Before starting the recovery process, make sure you have:
 
 ```bash
 # Verify your snapshot file exists and is not empty
+
 ls -la ./etcd-backup.db
 
 # If you have etcdctl, verify the snapshot

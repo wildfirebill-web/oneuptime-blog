@@ -16,6 +16,7 @@ Package managers (apt, apk, yum) maintain local caches of available packages. Do
 
 ```dockerfile
 # This often fails because package lists are outdated or empty
+
 FROM ubuntu:22.04
 RUN apt-get install -y curl
 # E: Unable to locate package curl

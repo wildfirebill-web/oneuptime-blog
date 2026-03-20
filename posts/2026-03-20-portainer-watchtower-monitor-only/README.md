@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Watchtower, Monitor, Notifications, Updates
+Tags: Portainer, Watchtower, Monitors, Notifications, Updates
 
-Description: Learn how to run Watchtower in monitor-only mode alongside Portainer to receive update notifications without automatic container restarts, giving you visibility into available updates while maintaining manual control.
+Description: Learn how to run Watchtower in monitor-only mode alongside Portainer to receive update notifications without automatic container restarts, giving you visibility into available updates while...
 
 ## Introduction
 
-Watchtower's monitor-only mode checks for new container image versions and sends notifications, but does not automatically pull new images or restart containers. This provides the visibility benefits of Watchtower — knowing when updates are available — without the risk of unexpected container restarts in production. This guide covers deploying and using Watchtower in monitor-only mode.
+Watchtower's monitor-only mode checks for new container image versions and sends notifications, but does not automatically pull new images or restart containers. This provides the visibility benefits of Watchtower - knowing when updates are available - without the risk of unexpected container restarts in production. This guide covers deploying and using Watchtower in monitor-only mode.
 
 ## Prerequisites
 
@@ -19,7 +19,8 @@ Watchtower's monitor-only mode checks for new container image versions and sends
 ## Step 1: Deploy Watchtower in Monitor-Only Mode
 
 ```yaml
-# Portainer stack — monitor-only Watchtower
+# Portainer stack - monitor-only Watchtower
+
 version: "3.8"
 
 services:
@@ -73,7 +74,7 @@ Monitor-only mode pairs well with a manual update workflow via Portainer:
 
 ```bash
 #!/bin/bash
-# review-and-update.sh — Run weekly to apply pending updates
+# review-and-update.sh - Run weekly to apply pending updates
 
 # Get notification of outdated containers (from Watchtower monitor)
 # Then for each outdated container, update manually:
@@ -182,10 +183,10 @@ docker logs watchtower-monitor 2>&1 | grep -i "found\|outdated\|update\|monitor"
 # Sample output in monitor-only mode:
 # INF Checking container: nginx, image: nginx:alpine
 # INF Found newer image for container: nginx
-# INF Session done — Checked 8 containers, found 2 with new images
+# INF Session done - Checked 8 containers, found 2 with new images
 # (No restarts because monitor-only is enabled)
 ```
 
 ## Conclusion
 
-Monitor-only mode gives you the update visibility of Watchtower without the operational risk of automatic container restarts in production. Pair it with Slack notifications so your team sees update alerts in real time, and use Portainer's stack management to apply updates manually after reviewing release notes. For a graduated approach, run auto-update on staging and monitor-only on production — if an image update works smoothly on staging, you have higher confidence when applying it to production through Portainer.
+Monitor-only mode gives you the update visibility of Watchtower without the operational risk of automatic container restarts in production. Pair it with Slack notifications so your team sees update alerts in real time, and use Portainer's stack management to apply updates manually after reviewing release notes. For a graduated approach, run auto-update on staging and monitor-only on production - if an image update works smoothly on staging, you have higher confidence when applying it to production through Portainer.

@@ -1,10 +1,10 @@
-# How to Convert Docker Compose to Kubernetes Manifests with Portainer Terraform
+# How to Convert Docker Compose to Kubernetes Manifests with Portainer Terra (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Terraform, Kubernetes, Docker, Migration
 
-Description: Learn how to use Portainer and Terraform to deploy applications that bridge Docker Compose and Kubernetes, and how to migrate workloads between the two using Kompose and Portainer's Kubernetes support.
+Description: Learn how to use Portainer and Terraform to deploy applications that bridge Docker Compose and Kubernetes, and how to migrate workloads between the two using Kompose and Portainer's Kubernetes...
 
 ## Introduction
 
@@ -23,6 +23,7 @@ Kompose converts Docker Compose files to Kubernetes manifests:
 
 ```bash
 # Install kompose
+
 curl -L https://github.com/kubernetes/kompose/releases/latest/download/kompose-linux-amd64 \
   -o /usr/local/bin/kompose
 chmod +x /usr/local/bin/kompose
@@ -34,7 +35,7 @@ kompose version
 ## Step 2: Your Docker Compose Starting Point
 
 ```yaml
-# docker-compose.yml — Original Docker Compose
+# docker-compose.yml - Original Docker Compose
 version: "3.8"
 services:
   web:
@@ -89,7 +90,7 @@ ls k8s/
 Kompose generates basic manifests. Enhance them for production:
 
 ```yaml
-# k8s/web-deployment.yaml — Enhanced version
+# k8s/web-deployment.yaml - Enhanced version
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -143,7 +144,7 @@ spec:
 ## Step 5: Deploy to Kubernetes via Portainer Terraform
 
 ```hcl
-# k8s_resources.tf — Deploy Kubernetes manifests via Portainer
+# k8s_resources.tf - Deploy Kubernetes manifests via Portainer
 
 # Apply a Kubernetes manifest string
 resource "portainer_kubernetes_manifest" "namespace" {
@@ -180,7 +181,7 @@ resource "portainer_kubernetes_manifest" "service" {
 ## Step 6: Deploy Using Kubernetes Helm via Portainer
 
 ```hcl
-# helm_releases.tf — Deploy via Helm through Portainer
+# helm_releases.tf - Deploy via Helm through Portainer
 
 resource "portainer_helm_release" "postgresql" {
   endpoint_id = portainer_environment.k8s_production.id
@@ -207,7 +208,7 @@ resource "portainer_helm_release" "postgresql" {
 During migration, manage both environments simultaneously:
 
 ```hcl
-# migration.tf — Manage both Docker and Kubernetes during transition
+# migration.tf - Manage both Docker and Kubernetes during transition
 
 # Docker Compose stack (old deployment)
 resource "portainer_stack" "myapp_docker" {
@@ -251,7 +252,7 @@ kubectl get svc -n myapp
 # In terraform.tfvars:
 # use_docker_deployment = false
 
-# Step 4: Apply — removes Docker stack, keeps K8s
+# Step 4: Apply - removes Docker stack, keeps K8s
 terraform apply
 
 # Step 5: Verify and clean up

@@ -255,6 +255,7 @@ provider:
             - arn:aws:ssm:${self:provider.region}:*:parameter/${self:service}/*
 
 # Package configuration
+
 package:
   individually: true           # Package each function separately
   patterns:

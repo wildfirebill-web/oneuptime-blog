@@ -14,6 +14,7 @@ The `community.docker` collection brings Docker management into Ansible. Instead
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.docker
 
 # The Docker SDK for Python is required on the target hosts

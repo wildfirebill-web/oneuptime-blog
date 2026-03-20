@@ -41,6 +41,7 @@ For Docker Hub:
 
 ```bash
 # Log in to Docker Hub
+
 docker login
 
 # Or specify credentials directly (useful in CI/CD)

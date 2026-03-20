@@ -1,4 +1,4 @@
-# How to Configure RKE2 with Embedded etcd
+# How to Configure RKE2 with Embedded etcd - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ tls-san:
   - "rke2.example.com"
 
 # etcd snapshot settings
+
 etcd-snapshot-schedule-cron: "0 */6 * * *"   # every 6 hours
 etcd-snapshot-retention: 10                    # keep last 10 snapshots
 etcd-snapshot-dir: /var/lib/rancher/rke2/server/db/snapshots
@@ -54,7 +55,7 @@ For clusters with many resources or high write throughput, tune the etcd heartbe
 # etcd heartbeat interval in milliseconds (default 100ms)
 etcd-arg:
   - "heartbeat-interval=150"
-  # Election timeout — should be 10x heartbeat
+  # Election timeout - should be 10x heartbeat
   - "election-timeout=1500"
   # Disk quota (8GB for large clusters)
   - "quota-backend-bytes=8589934592"
@@ -120,7 +121,7 @@ systemctl start rke2-server
 
 ## Best Practices
 
-- Use SSD storage for etcd data — HDD latency causes etcd heartbeat timeouts and leader elections.
-- Monitor etcd database size (`db_size` metric) — when it approaches the quota, defrag or increase the quota.
+- Use SSD storage for etcd data - HDD latency causes etcd heartbeat timeouts and leader elections.
+- Monitor etcd database size (`db_size` metric) - when it approaches the quota, defrag or increase the quota.
 - Always test restores on a non-production cluster to validate your backup process.
 - Enable S3 snapshots in addition to local snapshots for disaster recovery coverage.

@@ -27,6 +27,7 @@ Start by adding the HashiCorp Helm repository and installing Vault.
 
 ```bash
 # Add the HashiCorp Helm repository
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 
 # Update the local repo cache

@@ -14,6 +14,7 @@ SpamAssassin performs many checks based on the sender's IP address, including DN
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update && sudo apt install -y spamassassin spamc
 
 # Enable and start the daemon

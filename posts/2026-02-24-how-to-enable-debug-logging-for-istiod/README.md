@@ -34,6 +34,7 @@ The fastest way to turn on debug logging for Istiod is to use its admin API. Ist
 
 ```bash
 # Enable debug for the ADS scope
+
 kubectl exec -n istio-system deploy/istiod -- \
   curl -s -XPUT "localhost:8080/scopej/ads" -d '{"output_level":"debug"}'
 

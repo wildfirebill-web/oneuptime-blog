@@ -41,6 +41,7 @@ Ubuntu 20.04 and later include `ubuntu-advantage-tools` (the `pro` command), but
 
 ```bash
 # Update to the latest version of ua-client
+
 sudo apt update
 sudo apt install --only-upgrade ubuntu-advantage-tools
 

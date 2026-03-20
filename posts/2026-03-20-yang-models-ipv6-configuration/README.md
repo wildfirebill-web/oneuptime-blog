@@ -12,7 +12,7 @@ YANG (RFC 7950) is a data modeling language for network configuration. YANG mode
 
 ## Key IPv6 YANG Models
 
-```
+```text
 ietf-interfaces (RFC 8343)
   └── interface
       └── ietf-ip (RFC 8344)
@@ -39,6 +39,7 @@ openconfig-interfaces
 
 ```python
 # yang/get_ipv6_ietf.py
+
 from ncclient import manager
 import xmltodict
 import json

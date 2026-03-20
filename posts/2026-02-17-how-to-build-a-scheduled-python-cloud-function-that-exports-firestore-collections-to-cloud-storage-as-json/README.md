@@ -20,6 +20,7 @@ Here is the Cloud Function that exports specified Firestore collections to Cloud
 
 ```python
 # main.py - Scheduled Firestore export to Cloud Storage
+
 import functions_framework
 from google.cloud import firestore, storage
 from datetime import datetime, timezone

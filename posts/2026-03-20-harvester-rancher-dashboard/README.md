@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Rancher, Virtualization, HCI, Dashboard
+Tags: Harvester, Kubernetes, Rancher, Virtualization, HCI, Dashboards
 
 Description: Learn how to manage your Harvester HCI cluster, virtual machines, and infrastructure from the Rancher unified management dashboard.
 
 ## Introduction
 
-Once Harvester is integrated with Rancher, you can access all Harvester management functionality directly from the Rancher dashboard. This eliminates the need to switch between interfaces and provides a unified view of your entire infrastructure — both VMs and Kubernetes clusters. This guide covers the key Harvester management tasks available from Rancher.
+Once Harvester is integrated with Rancher, you can access all Harvester management functionality directly from the Rancher dashboard. This eliminates the need to switch between interfaces and provides a unified view of your entire infrastructure - both VMs and Kubernetes clusters. This guide covers the key Harvester management tasks available from Rancher.
 
 ## Accessing Harvester from Rancher
 
@@ -36,6 +36,7 @@ From the Harvester context in Rancher:
 
 ```bash
 # Equivalent kubectl command
+
 export KUBECONFIG=harvester.kubeconfig
 kubectl get virtualmachineinstances -A \
     -o custom-columns=\
@@ -171,7 +172,7 @@ For clusters running on Harvester:
 2. Go to **Cluster** → **Machine Pools**
 3. Click **Edit** on a pool
 4. Change the quantity
-5. Click **Save** — new VMs will be created in Harvester automatically
+5. Click **Save** - new VMs will be created in Harvester automatically
 
 ## Using Rancher's Monitoring in Harvester Context
 
@@ -225,4 +226,4 @@ rules:
 
 ## Conclusion
 
-Managing Harvester through the Rancher dashboard provides a significantly improved operational experience compared to using each tool separately. The unified interface reduces context switching, provides consistent RBAC across both VM and container workloads, and makes it straightforward to provision new Kubernetes clusters on your HCI infrastructure. As your organization grows, the Rancher-Harvester integration scales with you — supporting multi-cluster management, fleet deployments, and policy enforcement across your entire hybrid infrastructure.
+Managing Harvester through the Rancher dashboard provides a significantly improved operational experience compared to using each tool separately. The unified interface reduces context switching, provides consistent RBAC across both VM and container workloads, and makes it straightforward to provision new Kubernetes clusters on your HCI infrastructure. As your organization grows, the Rancher-Harvester integration scales with you - supporting multi-cluster management, fleet deployments, and policy enforcement across your entire hybrid infrastructure.

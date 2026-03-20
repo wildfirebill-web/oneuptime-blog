@@ -16,6 +16,7 @@ Add `--log-level DEBUG` to the Portainer startup command:
 
 ```bash
 # Stop and remove the current Portainer container
+
 docker stop portainer && docker rm portainer
 
 # Start with debug logging

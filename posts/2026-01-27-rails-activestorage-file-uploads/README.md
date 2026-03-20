@@ -30,6 +30,7 @@ Run the installation generator and migrate:
 
 ```ruby
 # Generate ActiveStorage tables
+
 rails active_storage:install
 
 # Run the migration

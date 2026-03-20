@@ -29,6 +29,7 @@ This guide provides practical examples of using `calicoctl ipam release` for com
 
 ```bash
 # Release a single leaked IP address
+
 calicoctl ipam release --ip=10.244.0.5
 ```
 

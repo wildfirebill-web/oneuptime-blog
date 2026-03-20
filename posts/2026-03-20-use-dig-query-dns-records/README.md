@@ -14,6 +14,7 @@ Description: Use the dig command to query all types of DNS records, trace resolu
 
 ```bash
 # Query A record (IPv4 address):
+
 dig example.com
 dig example.com A
 

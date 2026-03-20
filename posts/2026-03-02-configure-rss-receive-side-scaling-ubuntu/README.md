@@ -29,6 +29,7 @@ RSS requires:
 
 ```bash
 # Check number of RX queues on your NIC
+
 ethtool -l eth0
 ```
 

@@ -29,6 +29,7 @@ However, Calico chaining has significant limitations compared to standalone Cili
 Before adding Cilium to the chain, understand what Calico is currently doing.
 ```bash
 # Review current Calico IP pools
+
 calicoctl get ippools -o yaml
 
 # List active network policies

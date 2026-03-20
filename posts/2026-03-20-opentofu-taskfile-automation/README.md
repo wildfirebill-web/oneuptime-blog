@@ -20,6 +20,7 @@ Learn how to use the Task tool with Taskfiles to create reusable OpenTofu workfl
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

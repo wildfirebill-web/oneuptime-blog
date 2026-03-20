@@ -45,6 +45,7 @@ The phases are:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   datamigration.googleapis.com \
   alloydb.googleapis.com \

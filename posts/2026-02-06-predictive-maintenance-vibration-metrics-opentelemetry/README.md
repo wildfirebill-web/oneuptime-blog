@@ -29,6 +29,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 import numpy as np
 
 # Configure the meter provider to export every 10 seconds
+
 metric_reader = PeriodicExportingMetricReader(
     OTLPMetricExporter(endpoint="http://otel-collector:4317"),
     export_interval_millis=10000

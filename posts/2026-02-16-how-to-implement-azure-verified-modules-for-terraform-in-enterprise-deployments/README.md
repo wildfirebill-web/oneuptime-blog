@@ -31,6 +31,7 @@ AVM modules are published to the Terraform Registry with a consistent naming con
 
 ```hcl
 # Example: Using the AVM module for a Virtual Network
+
 module "vnet" {
   source  = "Azure/avm-res-network-virtualnetwork/azurerm"
   version = "~> 0.4"

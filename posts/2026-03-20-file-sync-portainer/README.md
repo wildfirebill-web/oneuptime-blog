@@ -8,7 +8,7 @@ Description: Deploy Nextcloud as a self-hosted Dropbox/Google Drive alternative 
 
 ## Introduction
 
-Nextcloud is the most popular self-hosted file sync and share platform. It offers file storage, calendar, contacts, video calls, and hundreds of apps — all running on your own infrastructure. This guide covers deploying a production-ready Nextcloud instance using Portainer.
+Nextcloud is the most popular self-hosted file sync and share platform. It offers file storage, calendar, contacts, video calls, and hundreds of apps - all running on your own infrastructure. This guide covers deploying a production-ready Nextcloud instance using Portainer.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Nextcloud is the most popular self-hosted file sync and share platform. It offer
 
 ```bash
 # Create Nextcloud data directories
+
 sudo mkdir -p /opt/nextcloud/{data,config,apps}
 sudo chown -R www-data:www-data /opt/nextcloud
 sudo chmod -R 750 /opt/nextcloud

@@ -16,6 +16,7 @@ The `serial` keyword limits how many hosts are processed simultaneously. Without
 
 ```yaml
 # serial-basics.yml - Different serial strategies
+
 ---
 # Process one host at a time
 - name: One at a time deployment

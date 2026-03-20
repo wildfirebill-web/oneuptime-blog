@@ -52,6 +52,7 @@ graph LR
 
 ```bash
 # Install required collections
+
 ansible-galaxy collection install amazon.aws
 
 # Install boto3

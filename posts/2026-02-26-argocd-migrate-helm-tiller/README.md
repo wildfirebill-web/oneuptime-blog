@@ -42,6 +42,7 @@ First, document everything Tiller is currently managing.
 
 ```bash
 # List all Helm v2 releases
+
 helm2 list --all --output json | jq '.Releases[] | {
   name: .Name,
   namespace: .Namespace,

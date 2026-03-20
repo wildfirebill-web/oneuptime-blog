@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Add MinIO operator repository
+
 helm repo add minio-operator https://operator.min.io
 helm repo update
 

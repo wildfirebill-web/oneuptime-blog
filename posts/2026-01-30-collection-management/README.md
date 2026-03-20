@@ -103,6 +103,7 @@ A well-designed schema prevents headaches down the road. Consider these principl
 
 ```python
 # Schema definition example
+
 collection_schema = {
     "name": "document_embeddings",
     "vector_config": {

@@ -12,7 +12,7 @@ Storage connectivity over IPv6 fails for reasons that differ from typical applic
 
 ## Diagnostic Framework
 
-```
+```text
 Storage connectivity problem
 │
 ├─ Layer 1/2: Physical/link connectivity
@@ -35,6 +35,7 @@ Storage connectivity problem
 
 ```bash
 # Basic ping6 to storage server
+
 ping6 -c 4 2001:db8::1
 # "Network unreachable" → check routing
 # "No route to host" → check firewall or routing
@@ -82,7 +83,7 @@ ping6 -M do -s 1452 2001:db8::1  # DF-bit set (tests PMTUD)
 
 # Capture ICMPv6 "Packet Too Big" messages
 tcpdump -i eth0 -n "icmp6 and icmp6[0] == 2"
-# Type 2 = Packet Too Big — indicates MTU mismatch
+# Type 2 = Packet Too Big - indicates MTU mismatch
 
 # Check interface MTU
 ip link show eth0 | grep mtu
@@ -98,15 +99,15 @@ mount -t nfs4 -o rsize=1400,wsize=1400 [2001:db8::1]:/srv/data /mnt/data
 ## Step 4: ICMPv6 Firewall Issues
 
 ```bash
-# ICMPv6 must NOT be fully blocked — NDP and PMTUD require it
+# ICMPv6 must NOT be fully blocked - NDP and PMTUD require it
 
 # Check if ICMPv6 is being blocked
 ip6tables -L INPUT -n | grep icmpv6
 
 # Essential ICMPv6 types that must be allowed for storage:
-# Type 2  (Packet Too Big) — required for PMTUD
-# Type 135 (Neighbor Solicitation) — required for NDP
-# Type 136 (Neighbor Advertisement) — required for NDP
+# Type 2  (Packet Too Big) - required for PMTUD
+# Type 135 (Neighbor Solicitation) - required for NDP
+# Type 136 (Neighbor Advertisement) - required for NDP
 
 # Allow minimum ICMPv6 for storage connectivity
 ip6tables -A INPUT -p icmpv6 --icmpv6-type 2 -j ACCEPT    # Packet Too Big
@@ -121,7 +122,7 @@ ip -6 neigh show
 ## Step 5: NFS-Specific Debugging
 
 ```bash
-# NFS mount hangs — check if server exports the path
+# NFS mount hangs - check if server exports the path
 showmount -e [2001:db8::1]
 
 # NFS mount fails with "Permission denied"

@@ -30,6 +30,7 @@ If you do not already have a MySQL server, create one:
 
 ```bash
 # Create Azure Database for MySQL Flexible Server
+
 RESOURCE_GROUP="rg-spring-production"
 MYSQL_SERVER="myorg-mysql-server"
 ADMIN_USER="springadmin"

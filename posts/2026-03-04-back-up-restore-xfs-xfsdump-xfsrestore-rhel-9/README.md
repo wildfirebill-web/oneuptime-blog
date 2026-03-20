@@ -59,6 +59,7 @@ After a full backup, create incremental backups:
 
 ```bash
 # Level 1 - changes since level 0
+
 sudo xfsdump -l 1 -L "data_incr_20260305" -M "backup_media" -f /backup/data_incr_1.dump /data
 
 # Level 2 - changes since level 1

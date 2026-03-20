@@ -24,6 +24,7 @@ IPv6 address conflicts are less common than IPv4 conflicts due to Duplicate Addr
 
 ```bash
 # Monitor kernel for DAD failures (Linux)
+
 # DAD failure message appears when another device has the same address
 dmesg | grep "IPv6 duplicate address"
 # Output: IPv6: 2001:db8::1: IPv6 duplicate address detected!
@@ -186,4 +187,4 @@ def assign_static_ipv6(address: str, hostname: str) -> bool:
 
 ## Conclusion
 
-IPv6 address conflict management combines proactive prevention (IPAM-enforced allocation workflow, checking both IPAM records and live NDP table before static assignment) with reactive detection (DAD failure monitoring, NDP table scanning for duplicate MACs). The key operational practice is ensuring all IPv6 addresses — both static and DHCPv6 — flow through the IPAM system before deployment. Regular reconciliation between IPAM records and NDP table data identifies shadow IT devices and stale IPAM records that could cause future conflicts.
+IPv6 address conflict management combines proactive prevention (IPAM-enforced allocation workflow, checking both IPAM records and live NDP table before static assignment) with reactive detection (DAD failure monitoring, NDP table scanning for duplicate MACs). The key operational practice is ensuring all IPv6 addresses - both static and DHCPv6 - flow through the IPAM system before deployment. Regular reconciliation between IPAM records and NDP table data identifies shadow IT devices and stale IPAM records that could cause future conflicts.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, netem, IPv4, Network Simulation, Testing, Linux
+Tags: tc, Netem, IPv4, Network Simulation, Testing, Linux
 
 Description: Use the Linux tc netem qdisc to add artificial latency to IPv4 network interfaces for testing application behavior under delayed network conditions.
 
@@ -12,6 +12,7 @@ Network Emulator (netem) is a tc qdisc built into the Linux kernel that adds con
 
 ```bash
 # Add 100ms delay to all outgoing traffic on eth0
+
 sudo tc qdisc add dev eth0 root netem delay 100ms
 
 # Verify the qdisc was applied
@@ -104,4 +105,4 @@ ping -c 10 -i 0.2 8.8.8.8
 sudo tc qdisc del dev eth0 root
 ```
 
-Netem is essential for integration testing — simulating mobile network conditions, cross-continental latency, or degraded network performance before deploying latency-sensitive applications.
+Netem is essential for integration testing - simulating mobile network conditions, cross-continental latency, or degraded network performance before deploying latency-sensitive applications.

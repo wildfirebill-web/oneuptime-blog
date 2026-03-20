@@ -36,6 +36,7 @@ The origin server is where you have the most control. Start by instrumenting it 
 
 ```python
 # origin_server.py - Instrumented origin with CDN-awareness
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

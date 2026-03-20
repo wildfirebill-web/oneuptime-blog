@@ -364,6 +364,7 @@ Test the connection:
 ```bash
 kubectl logs -n mtls-demo job/client
 # Should show: Response: Secure connection established!
+
 ```
 
 ## Automatic Certificate Rotation

@@ -20,6 +20,7 @@ Install Age:
 
 ```bash
 # macOS
+
 brew install age
 
 # Linux

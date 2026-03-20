@@ -93,6 +93,7 @@ The simplest approach maintains a fixed percentage buffer above current usage.
 
 ```python
 # headroom_calculator.py
+
 from dataclasses import dataclass
 from typing import List
 

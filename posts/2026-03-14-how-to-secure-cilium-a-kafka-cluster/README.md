@@ -47,6 +47,7 @@ Run these commands to understand your current security posture:
 
 ```bash
 # Verify Cilium is running and healthy
+
 cilium status
 ```
 

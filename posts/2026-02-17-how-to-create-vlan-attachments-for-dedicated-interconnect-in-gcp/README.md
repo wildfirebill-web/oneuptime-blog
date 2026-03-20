@@ -52,6 +52,7 @@ Each VLAN attachment requires a Cloud Router. The Cloud Router must be in the sa
 
 ```bash
 # Create a Cloud Router for the VLAN attachment
+
 gcloud compute routers create ic-router-prod \
     --network=production-vpc \
     --region=us-east4 \

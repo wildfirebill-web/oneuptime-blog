@@ -33,6 +33,7 @@ Start by creating the Cloud SQL instance and defining your relational schema. Th
 
 ```bash
 # Create a Cloud SQL PostgreSQL instance
+
 gcloud sql instances create cqrs-write-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-2-4096 \

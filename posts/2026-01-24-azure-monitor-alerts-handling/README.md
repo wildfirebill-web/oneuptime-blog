@@ -51,6 +51,7 @@ Metric alerts trigger when a metric crosses a threshold.
 
 ```bash
 # Create an alert for high CPU usage
+
 az monitor metrics alert create \
     --name "High CPU Alert" \
     --resource-group myResourceGroup \

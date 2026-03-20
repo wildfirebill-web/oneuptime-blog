@@ -23,6 +23,7 @@ Container images have two startup directives:
 
 ```bash
 # See an image's default entrypoint and command
+
 podman inspect nginx --format 'Entrypoint: {{.Config.Entrypoint}}'
 podman inspect nginx --format 'Cmd: {{.Config.Cmd}}'
 

@@ -293,6 +293,7 @@ export function init($plugin: IPlugin, store: any) {
 
 ```bash
 # Build for production
+
 yarn build-pkg cluster-dashboard
 
 # Build Helm chart

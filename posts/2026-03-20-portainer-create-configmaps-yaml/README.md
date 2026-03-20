@@ -1,4 +1,4 @@
-# How to Create ConfigMaps via YAML Manifest in Portainer
+# How to Create ConfigMaps via YAML Manifest in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -152,6 +152,7 @@ Separate configuration by concern:
 
 ```yaml
 # App configuration
+
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -199,7 +200,7 @@ Paste this entire multi-document YAML into Portainer's editor to create all thre
 1. Paste the YAML manifest into Portainer's editor
 2. Click **Deploy** or **Apply**
 3. Portainer confirms the resources created:
-   ```
+   ```text
    ConfigMap "app-config" created
    ConfigMap "db-config" created
    ConfigMap "feature-flags" created
@@ -254,4 +255,4 @@ kubectl create configmap my-config \
 
 ## Conclusion
 
-YAML-based ConfigMap creation in Portainer enables complex configuration scenarios — multi-file configurations, environment-specific settings, and immutable versioned configs. The YAML approach integrates naturally with GitOps workflows where configuration is managed as code. Use separate ConfigMaps for different configuration concerns (app settings, database config, feature flags) to keep configuration modular and easy to update independently.
+YAML-based ConfigMap creation in Portainer enables complex configuration scenarios - multi-file configurations, environment-specific settings, and immutable versioned configs. The YAML approach integrates naturally with GitOps workflows where configuration is managed as code. Use separate ConfigMaps for different configuration concerns (app settings, database config, feature flags) to keep configuration modular and easy to update independently.

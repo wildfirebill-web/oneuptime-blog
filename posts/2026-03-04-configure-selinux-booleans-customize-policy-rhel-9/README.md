@@ -20,6 +20,7 @@ Booleans are the easiest way to adjust SELinux policy for your specific environm
 
 ```bash
 # List all booleans with their current values
+
 sudo getsebool -a
 
 # Count total booleans

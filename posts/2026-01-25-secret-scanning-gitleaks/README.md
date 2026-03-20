@@ -28,6 +28,7 @@ gitleaks is a single binary written in Go. Install it using your package manager
 
 ```bash
 # macOS with Homebrew
+
 brew install gitleaks
 
 # Linux (download from GitHub releases)

@@ -38,6 +38,7 @@ Start by creating a new xUnit test project alongside your main application:
 
 ```bash
 # Create solution structure
+
 dotnet new sln -n MyApplication
 dotnet new webapi -n MyApplication.Api
 dotnet new xunit -n MyApplication.Tests

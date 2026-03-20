@@ -24,6 +24,7 @@ Ensure pods spread across at least 3 availability zones:
 
 ```yaml
 # deployment-mindomain.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

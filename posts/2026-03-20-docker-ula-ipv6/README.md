@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, IPv6, ULA, Unique Local Address, Internal Networks, RFC 4193
 
-Description: Configure Docker networks with RFC 4193 Unique Local Addresses (ULA) for private container-to-container communication, understand ULA structure, and generate unique ULA prefixes for your Docker infrastructure.
+Description: Configure Docker networks with RFC 4193 Unique Local Addresses (ULA) for private container-to-container communication, understand ULA structure, and generate unique ULA prefixes for your Docker...
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Unique Local Addresses (ULA) in the `fd00::/8` range are the recommended address
 
 ```python
 #!/usr/bin/env python3
-# generate_ula.py — Generate a unique ULA /48 prefix for Docker
+# generate_ula.py - Generate a unique ULA /48 prefix for Docker
 
 import os
 import binascii
@@ -34,6 +34,7 @@ def generate_ula():
 
 print("Generated ULA /48 prefix:", generate_ula())
 # Example output: fd3a:1b2c:4d5e::/48
+
 ```
 
 ```bash
@@ -82,7 +83,7 @@ docker network create \
 ## Docker Compose with ULA Addresses
 
 ```yaml
-# compose.yaml — ULA-based IPv6 networking
+# compose.yaml - ULA-based IPv6 networking
 
 networks:
   frontend:
@@ -123,7 +124,7 @@ services:
 
 ## Benefits of ULA vs Globally Routable Addresses
 
-```
+```text
 ULA (fd00::/8):
   + No registration required
   + Not routable on internet (accidental exposure safe)

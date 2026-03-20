@@ -80,6 +80,7 @@ etcdctl role grant-permission calico-admin --prefix=true readwrite /calico/
 
 ```bash
 # Create users with passwords (certificate auth is preferred - see cert guide)
+
 etcdctl user add calico-felix --new-user-password="$(openssl rand -base64 32)"
 etcdctl user add calico-cni --new-user-password="$(openssl rand -base64 32)"
 etcdctl user add calico-admin --new-user-password="$(openssl rand -base64 32)"

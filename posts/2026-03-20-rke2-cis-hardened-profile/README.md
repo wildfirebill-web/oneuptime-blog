@@ -6,7 +6,7 @@ Tags: RKE2, Kubernetes, CIS, Security, Hardening, Compliance, Rancher
 
 Description: Learn how to configure RKE2 with the built-in CIS hardened profile to automatically apply security benchmark configurations to your Kubernetes cluster.
 
-RKE2 includes a built-in CIS hardened profile that automatically applies many of the security configurations required by the CIS Kubernetes Benchmark. This is one of RKE2's key differentiators — it provides a secure-by-default Kubernetes distribution. This guide covers how to enable and work with the RKE2 CIS hardened profile.
+RKE2 includes a built-in CIS hardened profile that automatically applies many of the security configurations required by the CIS Kubernetes Benchmark. This is one of RKE2's key differentiators - it provides a secure-by-default Kubernetes distribution. This guide covers how to enable and work with the RKE2 CIS hardened profile.
 
 ## Prerequisites
 
@@ -32,6 +32,7 @@ Before enabling the CIS profile, prepare the OS:
 
 ```bash
 # Set secure kernel parameters required by CIS benchmark
+
 cat <<EOF | sudo tee /etc/sysctl.d/60-rke2-cis.conf
 # CIS 1.1.1 - Ensure auditing is configured for Docker files
 vm.panic_on_oom=0

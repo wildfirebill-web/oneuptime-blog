@@ -22,6 +22,7 @@ The Image Factory API is a REST API hosted at `https://factory.talos.dev`. It do
 
 ```bash
 # POST /schematics
+
 # Submit a schematic definition and receive a unique ID
 
 curl -s -X POST \

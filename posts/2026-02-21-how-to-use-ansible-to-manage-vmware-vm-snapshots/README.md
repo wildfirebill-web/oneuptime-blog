@@ -29,6 +29,7 @@ The `community.vmware.vmware_guest_snapshot` module handles all snapshot operati
 
 ```yaml
 # create-snapshot.yml
+
 ---
 - name: Create a VM snapshot before maintenance
   hosts: localhost

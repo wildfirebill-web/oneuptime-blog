@@ -40,6 +40,7 @@ Here is a typical GraphQL schema that can cause the N+1 problem:
 
 ```graphql
 # GraphQL schema with nested relationships
+
 type User {
   id: ID!
   name: String!

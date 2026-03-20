@@ -16,6 +16,7 @@ The most straightforward method is `vars_files` at the play level:
 
 ```yaml
 # deploy.yml - Load variables from external files
+
 ---
 - name: Deploy application
   hosts: webservers

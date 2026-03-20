@@ -96,6 +96,7 @@ Define a VPA resource for your service:
 
 ```yaml
 # vpa.yaml
+
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler
 metadata:

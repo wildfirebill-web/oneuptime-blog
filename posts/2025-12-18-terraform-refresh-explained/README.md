@@ -35,6 +35,7 @@ The standalone refresh command was deprecated in Terraform 0.15.4 but still work
 
 ```bash
 # Deprecated standalone command
+
 terraform refresh
 
 # Refresh with variable file

@@ -35,6 +35,7 @@ First, set up the source queue with its DLQ:
 
 ```yaml
 # CloudFormation for SQS queues with dead letter queue configuration
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   # Main processing queue

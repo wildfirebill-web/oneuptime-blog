@@ -61,6 +61,7 @@ Google Cloud Build is the native CI/CD tool on GCP. Here is a cloudbuild.yaml th
 
 ```yaml
 # cloudbuild.yaml
+
 steps:
   # Step 1: Run unit tests
   - name: 'python:3.11-slim'

@@ -14,7 +14,7 @@ Docker bridge networks are the default networking mechanism for containers on a 
 
 Docker creates a virtual bridge (`docker0` by default) on the host. Containers connect to this bridge and get private IP addresses. The bridge acts as a virtual switch for inter-container communication.
 
-```
+```text
 Host Network (192.168.1.0/24)
     │
     │ (docker0 bridge: 172.17.0.1)
@@ -33,6 +33,7 @@ In Portainer: **Networks** > **Add network**
 
 ```yaml
 # docker-compose.yml - Network examples
+
 version: "3.8"
 
 networks:
@@ -219,4 +220,4 @@ docker network disconnect frontend_network existing_container
 
 ## Conclusion
 
-Docker bridge networks provide flexible, isolated communication between containers. Custom bridge networks are always preferred over the default bridge because they support DNS resolution by service name. Portainer's Networks view makes it easy to visualize your network topology, inspect connected containers, and troubleshoot connectivity issues. Use network segmentation to isolate tiers of your application for better security — your databases should only be reachable by application containers, not exposed to public networks.
+Docker bridge networks provide flexible, isolated communication between containers. Custom bridge networks are always preferred over the default bridge because they support DNS resolution by service name. Portainer's Networks view makes it easy to visualize your network topology, inspect connected containers, and troubleshoot connectivity issues. Use network segmentation to isolate tiers of your application for better security - your databases should only be reachable by application containers, not exposed to public networks.

@@ -48,6 +48,7 @@ Here is a typical Cloud Build configuration for building and deploying a Cloud R
 
 ```yaml
 # cloudbuild.yaml - Build, test, and deploy to Cloud Run
+
 steps:
   # Step 1: Run unit tests
   - name: 'python:3.11'

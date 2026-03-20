@@ -28,6 +28,7 @@ Before generating a plan, make sure your configuration is syntactically valid:
 
 ```bash
 # Initialize the working directory
+
 terraform init
 
 # Check formatting - returns non-zero if files need formatting

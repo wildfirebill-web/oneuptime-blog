@@ -20,6 +20,7 @@ Windows networking in Kubernetes has specific constraints compared to Linux. Not
 
 ```bash
 # Supported CNI plugins for Windows nodes (as of 2026):
+
 # 1. Flannel (vxlan or host-gw) - Most compatible, simplest
 # 2. Calico - Supports Windows nodes with limited policy support
 # 3. Antrea - Good Windows support
@@ -217,4 +218,4 @@ netsh trace stop
 
 ## Conclusion
 
-Windows networking in Kubernetes requires careful CNI selection—Flannel with vxlan backend provides the broadest compatibility. DNS resolution and service discovery work similarly to Linux once CoreDNS is properly configured, but Windows containers need additional time for network initialization. Test connectivity thoroughly after adding Windows nodes, particularly cross-OS service communication between Linux and Windows pods. Network policies have limited support on Windows but basic ingress/egress rules work with Antrea and Calico.
+Windows networking in Kubernetes requires careful CNI selection-Flannel with vxlan backend provides the broadest compatibility. DNS resolution and service discovery work similarly to Linux once CoreDNS is properly configured, but Windows containers need additional time for network initialization. Test connectivity thoroughly after adding Windows nodes, particularly cross-OS service communication between Linux and Windows pods. Network policies have limited support on Windows but basic ingress/egress rules work with Antrea and Calico.

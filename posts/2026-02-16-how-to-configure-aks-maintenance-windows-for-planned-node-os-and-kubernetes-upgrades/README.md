@@ -28,6 +28,7 @@ AKS has three distinct types of maintenance, each controllable with separate mai
 
 ```bash
 # Install or update the aks-preview extension
+
 az extension add --name aks-preview
 az extension update --name aks-preview
 ```

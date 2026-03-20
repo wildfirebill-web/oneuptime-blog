@@ -39,6 +39,7 @@ This guide uses age keys, which are the recommended approach for SOPS with Flux.
 
 ```bash
 # Install age if not already installed
+
 # macOS: brew install age
 # Linux: apt install age or download from https://github.com/FiloSottile/age
 

@@ -30,6 +30,7 @@ apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:
 # Log all authentication events with full details
+
 - level: RequestResponse
   verbs: ["create"]
   resources:

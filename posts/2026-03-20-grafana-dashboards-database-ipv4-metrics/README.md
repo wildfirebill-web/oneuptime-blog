@@ -21,6 +21,7 @@ Monitoring database connections by client IPv4 address helps identify connection
 
 ```promql
 # Total active connections to PostgreSQL
+
 pg_stat_activity_count{state="active"}
 
 # Connections grouped by client IP address

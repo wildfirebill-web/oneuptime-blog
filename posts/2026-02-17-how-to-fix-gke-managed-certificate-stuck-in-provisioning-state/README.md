@@ -41,6 +41,7 @@ First, get the current status of your ManagedCertificate:
 
 ```bash
 # Check the status of managed certificates
+
 kubectl get managedcertificate -n your-namespace
 
 # Get detailed status including domain status

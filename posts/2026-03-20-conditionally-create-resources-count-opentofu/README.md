@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, count, Conditionals, HCL, Resource Management
+Tags: OpenTofu, Terraform, Count, Conditional, HCL, Resource Management
 
 Description: Learn how to use the count meta-argument in OpenTofu to conditionally create resources based on boolean variables and conditional expressions.
 
@@ -20,6 +20,7 @@ variable "create_bastion" {
 }
 
 # The bastion host is created only when create_bastion = true
+
 resource "aws_instance" "bastion" {
   count = var.create_bastion ? 1 : 0
 

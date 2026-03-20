@@ -31,6 +31,7 @@ Lag = log-end offset - committed offset = 9 - 3 = 6
 
 ```bash
 # Describe consumer group
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
   --describe --group my-consumer-group
 

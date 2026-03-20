@@ -42,6 +42,7 @@ Verify your rsyslog version and installed modules before proceeding. The version
 
 ```bash
 # Check rsyslog version - should be 8.x or higher for TLS support
+
 rsyslogd -v | head -5
 
 # Verify TLS modules are available

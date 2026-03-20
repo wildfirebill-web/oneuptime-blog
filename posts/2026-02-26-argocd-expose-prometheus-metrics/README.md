@@ -40,6 +40,7 @@ Before configuring Prometheus, verify that each component is exposing metrics:
 
 ```bash
 # Port-forward to the application controller metrics port
+
 kubectl port-forward -n argocd deployment/argocd-application-controller 8082:8082 &
 
 # Check if metrics are being served

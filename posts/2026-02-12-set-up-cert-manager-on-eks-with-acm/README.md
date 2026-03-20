@@ -20,6 +20,7 @@ Request a certificate in ACM:
 
 ```bash
 # Request a public certificate in ACM
+
 aws acm request-certificate \
   --domain-name "*.example.com" \
   --validation-method DNS \

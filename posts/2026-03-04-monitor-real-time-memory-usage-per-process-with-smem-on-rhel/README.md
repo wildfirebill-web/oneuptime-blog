@@ -22,6 +22,7 @@ Install and use smem:
 
 ```bash
 # Install smem
+
 sudo dnf install -y smem
 
 # Show memory usage for all processes

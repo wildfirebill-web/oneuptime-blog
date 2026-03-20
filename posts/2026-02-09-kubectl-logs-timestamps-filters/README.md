@@ -18,6 +18,7 @@ Basic syntax:
 
 ```bash
 # Get logs from a single-container pod
+
 kubectl logs pod-name
 
 # Get logs from a specific container in a multi-container pod

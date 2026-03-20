@@ -85,6 +85,7 @@ Aggregate by parsed fields:
 
 ```logql
 # Count errors by service
+
 sum by (service) (
   count_over_time(
     {job="myapp"}

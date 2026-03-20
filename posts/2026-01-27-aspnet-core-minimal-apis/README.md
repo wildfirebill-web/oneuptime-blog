@@ -73,6 +73,7 @@ app.MapGet("/api/products/{id}", async (int id, IProductService productService) 
 
 ```bash
 # Create a new minimal API project
+
 dotnet new web -n MyMinimalApi
 
 # Navigate to the project directory

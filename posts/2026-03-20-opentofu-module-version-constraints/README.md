@@ -91,9 +91,10 @@ For Git sources, use tags as versions:
 
 ```hcl
 # Tag-based pinning (recommended)
+
 module "internal_vpc" {
   source = "github.com/myorg/terraform-modules//vpc?ref=v2.1.0"
-  # No "version" attribute — use ?ref= instead
+  # No "version" attribute - use ?ref= instead
 }
 
 # Specific commit (maximum reproducibility)

@@ -20,6 +20,7 @@ Named volumes are the recommended approach for production data. Docker manages t
 
 ```bash
 # Create a named volume that Docker will manage
+
 docker volume create mydata
 
 # Mount the named volume at /data inside the container

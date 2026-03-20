@@ -34,6 +34,7 @@ Document what you are monitoring and how.
 
 ```bash
 # List Application Insights resources
+
 az monitor app-insights component show \
   --resource-group my-rg \
   --query '{

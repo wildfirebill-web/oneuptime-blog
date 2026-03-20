@@ -20,6 +20,7 @@ OpenBao is the open-source fork of HashiCorp Vault, providing centralized secret
 
 ```bash
 # Enable the transit engine
+
 bao secrets enable transit
 
 # Create an encryption key

@@ -153,6 +153,7 @@ Every database connection must set the tenant context:
 
 ```python
 # Python with psycopg2
+
 import psycopg2
 
 def get_connection(tenant_id: str):

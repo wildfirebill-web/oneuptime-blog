@@ -14,6 +14,7 @@ AWS WAF protects your web applications from common exploits like SQL injection, 
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -52,7 +53,7 @@ resource "aws_wafv2_web_acl" "main" {
     allow {}
   }
 
-  # Rule 1: AWS Managed Rules — Core Rule Set (OWASP Top 10)
+  # Rule 1: AWS Managed Rules - Core Rule Set (OWASP Top 10)
   rule {
     name     = "AWSManagedRulesCommonRuleSet"
     priority = 10
@@ -70,7 +71,7 @@ resource "aws_wafv2_web_acl" "main" {
         rule_action_override {
           name = "SizeRestrictions_BODY"
           action_to_use {
-            count {}  # Count but don't block — API payloads can be large
+            count {}  # Count but don't block - API payloads can be large
           }
         }
       }
@@ -106,7 +107,7 @@ resource "aws_wafv2_web_acl" "main" {
     }
   }
 
-  # Rule 3: Rate limiting — 1000 requests per IP per 5 minutes
+  # Rule 3: Rate limiting - 1000 requests per IP per 5 minutes
   rule {
     name     = "RateLimit"
     priority = 30
@@ -140,7 +141,7 @@ resource "aws_wafv2_web_acl" "main" {
     }
   }
 
-  # Rule 4: Custom rule — block specific user agents
+  # Rule 4: Custom rule - block specific user agents
   rule {
     name     = "BlockMaliciousUserAgents"
     priority = 40
@@ -196,8 +197,8 @@ resource "aws_cloudfront_distribution" "main" {
 
 ## Best Practices
 
-- Start with rule groups in `count` mode rather than `block` mode — analyze logs for false positives before enabling blocking.
-- Use AWS Managed Rule Groups for common threats — they're continuously updated by AWS security researchers.
-- Set rate limits appropriate for your application — too low blocks legitimate traffic; too high doesn't protect.
+- Start with rule groups in `count` mode rather than `block` mode - analyze logs for false positives before enabling blocking.
+- Use AWS Managed Rule Groups for common threats - they're continuously updated by AWS security researchers.
+- Set rate limits appropriate for your application - too low blocks legitimate traffic; too high doesn't protect.
 - Enable CloudWatch logging for WAF to inspect blocked requests and tune rules.
 - Use IP sets for allowlisting trusted sources (monitoring services, payment processors) to prevent false positives.

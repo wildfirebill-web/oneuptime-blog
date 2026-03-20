@@ -30,7 +30,7 @@ Before creating users, understand the available roles:
 
 ### Step 2: Fill in User Details
 
-```
+```text
 Username:     john.doe
 Email:        john.doe@example.com (optional)
 Password:     [set a strong password]
@@ -45,6 +45,7 @@ After creating the user, you can assign them to teams which grant access to spec
 
 ```bash
 # Get admin token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \

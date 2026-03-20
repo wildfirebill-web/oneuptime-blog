@@ -14,6 +14,7 @@ Description: Learn how to read and critically review tofu plan output to catch d
 
 ```bash
 # Generate plan with human-readable output
+
 tofu plan -no-color -out=tfplan.binary 2>&1 | tee plan.txt
 
 # Show JSON plan for scripted review
@@ -22,7 +23,7 @@ tofu show -json tfplan.binary > plan.json
 
 ## Understanding Plan Symbols
 
-```
+```text
 + create      → A new resource will be created (usually safe)
 - destroy     → A resource will be destroyed (review carefully)
 ~ update      → A resource will be modified in-place (check details)
@@ -34,8 +35,8 @@ tofu show -json tfplan.binary > plan.json
 
 ### 1. Unexpected Destroys
 
-```
-# RED FLAG — unexpected database destroy
+```text
+# RED FLAG - unexpected database destroy
   - aws_db_instance.main will be destroyed
 
 # When to be concerned:
@@ -46,8 +47,8 @@ tofu show -json tfplan.binary > plan.json
 
 ### 2. Forces Replacement
 
-```
-# RED FLAG — database will be replaced (destroy + create)
+```text
+# RED FLAG - database will be replaced (destroy + create)
   -/+ aws_db_instance.main must be replaced
       ~ identifier       = "prod-postgres"
       ~ engine_version   = "15.3" -> "15.4"  # This forces replacement
@@ -59,8 +60,8 @@ tofu show -json tfplan.binary > plan.json
 
 ### 3. Large Number of Destroys
 
-```
-# RED FLAG — many resources being destroyed
+```text
+# RED FLAG - many resources being destroyed
 Plan: 5 to add, 2 to change, 47 to destroy.
 
 # A large number of destroys when you expected a simple change
@@ -107,7 +108,7 @@ tofu show -json tfplan.binary | \
 
 ```bash
 #!/bin/bash
-# ci-plan-check.sh — fail CI if too many resources would be destroyed
+# ci-plan-check.sh - fail CI if too many resources would be destroyed
 DESTROY_COUNT=$(tofu show -json tfplan.binary | \
   jq '[.resource_changes[] | select(.change.actions == ["delete"])] | length')
 

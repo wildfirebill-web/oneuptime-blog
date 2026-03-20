@@ -51,6 +51,7 @@ AND blocking_locks.granted;
 
 ```conf
 # postgresql.conf
+
 log_lock_waits = on
 deadlock_timeout = 1s  # Log after 1 second wait
 ```

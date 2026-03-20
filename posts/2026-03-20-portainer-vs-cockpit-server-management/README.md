@@ -1,4 +1,4 @@
-# Portainer vs Cockpit: Server Management Comparison
+# Portainer vs Cockpit: Server Management Comparison - Server Management
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Compare Portainer and Cockpit as Linux server management web interf
 
 ---
 
-Portainer and Cockpit are both web-based interfaces for Linux server management, but their scopes are fundamentally different. Cockpit manages the Linux host (services, networking, storage, users, logs), while Portainer manages containers running on the host. Understanding this difference helps you choose the right tool — or use both together.
+Portainer and Cockpit are both web-based interfaces for Linux server management, but their scopes are fundamentally different. Cockpit manages the Linux host (services, networking, storage, users, logs), while Portainer manages containers running on the host. Understanding this difference helps you choose the right tool - or use both together.
 
 ## Scope Comparison
 
@@ -28,19 +28,20 @@ Portainer and Cockpit are both web-based interfaces for Linux server management,
 
 Cockpit is a Red Hat-developed web console for Linux servers. It provides:
 
-- **System Overview** — CPU, memory, disk, and network graphs
-- **Logs** — journald log viewer with filtering
-- **Storage** — manage disk partitions, RAID, and LVM
-- **Networking** — configure network interfaces, bonding, VLANs
-- **Services** — start/stop/enable systemd services
-- **Terminal** — browser-based SSH terminal
-- **Virtual Machines** — manage KVM VMs via the Machines plugin
-- **Podman containers** — limited container management via the podman plugin
+- **System Overview** - CPU, memory, disk, and network graphs
+- **Logs** - journald log viewer with filtering
+- **Storage** - manage disk partitions, RAID, and LVM
+- **Networking** - configure network interfaces, bonding, VLANs
+- **Services** - start/stop/enable systemd services
+- **Terminal** - browser-based SSH terminal
+- **Virtual Machines** - manage KVM VMs via the Machines plugin
+- **Podman containers** - limited container management via the podman plugin
 
 Cockpit install:
 
 ```bash
 # Install Cockpit on RHEL/CentOS/Fedora
+
 sudo dnf install cockpit
 sudo systemctl enable --now cockpit.socket
 # Access at https://server-ip:9090

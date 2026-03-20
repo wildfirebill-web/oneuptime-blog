@@ -18,6 +18,7 @@ Create a simple network namespace:
 
 ```bash
 # Create a new network namespace
+
 ip netns add blue
 
 # List all namespaces

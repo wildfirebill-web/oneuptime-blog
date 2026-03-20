@@ -8,7 +8,7 @@ Description: Step-by-step guide to disabling IPv6 on macOS using the System Sett
 
 ## Disable IPv6 via System Settings (macOS Ventura/Sonoma)
 
-```
+```sql
 Steps:
 1. Click Apple menu (top-left) → System Settings
 
@@ -23,8 +23,8 @@ Steps:
 5. Find "Configure IPv6" dropdown
 
 6. Change from "Automatically" to:
-   - "Off" — Disables IPv6 completely on this interface
-   - "Link-local only" — Keeps only link-local (fe80::) addressing
+   - "Off" - Disables IPv6 completely on this interface
+   - "Link-local only" - Keeps only link-local (fe80::) addressing
 
 7. Click "OK"
 
@@ -33,7 +33,7 @@ Steps:
 
 ## Disable IPv6 via System Preferences (macOS Monterey and earlier)
 
-```
+```sql
 Steps:
 1. Apple menu → System Preferences
 
@@ -55,7 +55,7 @@ Steps:
 
 ## Disable on Multiple Interfaces
 
-```
+```text
 For dual-stack machines, disable on all interfaces:
 
 1. Repeat the steps above for:
@@ -73,6 +73,7 @@ After disabling via GUI, verify using Terminal:
 
 ```bash
 # Check IPv6 addresses on Wi-Fi (en0)
+
 ifconfig en0 | grep inet6
 
 # With IPv6 disabled, you should only see (or nothing):
@@ -88,7 +89,7 @@ ping6 2001:4860:4860::8888
 
 ## Re-enable IPv6
 
-```
+```sql
 Steps:
 1. System Settings → Network → Details → TCP/IP
 

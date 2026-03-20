@@ -139,6 +139,7 @@ Run tests with garbage collection exposed:
 
 ```bash
 # Run Jest with garbage collection exposed for accurate measurements
+
 node --expose-gc ./node_modules/.bin/jest --runInBand
 ```
 

@@ -36,6 +36,7 @@ The interactive Test Runner is your primary debugging tool during development. R
 
 ```bash
 # Open Cypress in interactive mode
+
 npx cypress open
 
 # Or run a specific spec in headed mode

@@ -26,6 +26,7 @@ The simplest approach is running migrations manually after your database is read
 
 ```bash
 # Start the database first
+
 docker compose up -d postgres
 
 # Wait a moment for it to initialize

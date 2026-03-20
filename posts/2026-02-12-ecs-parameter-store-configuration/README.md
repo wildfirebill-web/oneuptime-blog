@@ -36,6 +36,7 @@ Organize your parameters in a hierarchy that makes sense for your application an
 
 ```bash
 # Create application configuration parameters
+
 # Use a hierarchy: /{environment}/{application}/{parameter}
 
 # String parameter (plain text, not sensitive)

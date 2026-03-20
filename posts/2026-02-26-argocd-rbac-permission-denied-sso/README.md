@@ -39,6 +39,7 @@ The first thing to do is verify what group claims ArgoCD is actually receiving f
 
 ```bash
 # Get the user info from ArgoCD
+
 argocd account get-user-info --grpc-web
 
 # Or check via the API

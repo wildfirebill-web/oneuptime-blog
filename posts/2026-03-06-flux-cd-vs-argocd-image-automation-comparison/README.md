@@ -60,6 +60,7 @@ Flux CD requires setting up three resources: an ImageRepository to scan, an Imag
 
 ```yaml
 # Step 1: Define the image repository to scan
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

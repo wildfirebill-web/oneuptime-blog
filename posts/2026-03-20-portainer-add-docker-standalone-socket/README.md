@@ -1,4 +1,4 @@
-# How to Add a Docker Standalone Environment to Portainer via Socket
+# How to Add a Docker Standalone Environment to Portainer via Socket - Add
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -74,6 +74,7 @@ The Docker socket requires appropriate permissions:
 
 ```bash
 # Check socket permissions
+
 ls -la /var/run/docker.sock
 # Typically: srw-rw---- 1 root docker 0 Mar 20 10:00 /var/run/docker.sock
 

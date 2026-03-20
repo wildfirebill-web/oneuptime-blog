@@ -12,8 +12,9 @@ Nginx access logs record the client's IPv4 (or IPv6) address as the first field 
 
 ## Nginx Log Format
 
-```
+```text
 # Default combined format:
+
 # $remote_addr - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent"
 
 Example:

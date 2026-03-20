@@ -14,6 +14,7 @@ KVM virtual machines need virtual disks for storage. RHEL supports multiple disk
 
 ```bash
 # Create a qcow2 disk image (thin provisioned, recommended)
+
 sudo qemu-img create -f qcow2 /var/lib/libvirt/images/data-disk.qcow2 50G
 
 # Create a raw disk image (fixed size, slightly better performance)

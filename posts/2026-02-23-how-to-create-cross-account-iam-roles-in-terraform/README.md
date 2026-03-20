@@ -36,6 +36,7 @@ Configure Terraform to work with both AWS accounts using provider aliases.
 
 ```hcl
 # Provider for the source account (where users/services are)
+
 provider "aws" {
   alias   = "source"
   region  = "us-east-1"

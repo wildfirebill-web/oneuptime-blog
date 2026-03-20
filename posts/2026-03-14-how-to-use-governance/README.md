@@ -30,6 +30,7 @@ For feature proposals and design changes:
 
 ```bash
 # Create a Cilium Enhancement Proposal (CEP)
+
 # Fork the cilium/design-cfps repository
 git clone https://github.com/YOUR-USERNAME/design-cfps.git
 cd design-cfps

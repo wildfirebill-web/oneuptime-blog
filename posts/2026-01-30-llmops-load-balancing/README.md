@@ -77,6 +77,7 @@ Let us start by defining the core data structures that will power our load balan
 
 ```python
 # llm_load_balancer/models.py
+
 """
 Core data models for the LLM load balancer.
 These classes define the structure for replicas, requests, and metrics.

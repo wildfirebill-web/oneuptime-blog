@@ -30,6 +30,7 @@ Common reasons to hold packages:
 
 ```bash
 # Hold single package
+
 sudo apt-mark hold package-name
 
 # Example: Hold nginx

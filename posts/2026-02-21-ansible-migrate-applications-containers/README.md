@@ -26,6 +26,7 @@ graph TD
 
 ```yaml
 # roles/containerize/defaults/main.yml - Container migration settings
+
 containerize_registry: registry.example.com:5000
 containerize_apps:
   - name: web-app

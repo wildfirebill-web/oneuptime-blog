@@ -287,6 +287,7 @@ Test your rate limiting by sending rapid requests:
 
 ```bash
 # Send 20 requests quickly to test SpikeArrest
+
 for i in $(seq 1 20); do
   curl -s -o /dev/null -w "%{http_code}\n" \
     "https://YOUR_APIGEE_HOST/weather/test" \

@@ -33,6 +33,7 @@ Set up `talosctl` on your workstation:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Confirm it works

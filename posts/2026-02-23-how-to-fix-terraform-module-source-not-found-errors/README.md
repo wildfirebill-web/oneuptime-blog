@@ -49,6 +49,7 @@ Local path references are the simplest source type, but they break easily when y
 
 ```hcl
 # This expects the module to be at ./modules/vpc relative to the calling file
+
 module "vpc" {
   source = "./modules/vpc"
 }

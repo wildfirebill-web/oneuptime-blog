@@ -28,6 +28,7 @@ Enable the necessary Google Cloud APIs for this setup.
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   container.googleapis.com \
   artifactregistry.googleapis.com \

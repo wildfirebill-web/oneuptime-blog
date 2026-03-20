@@ -18,6 +18,7 @@ Every Podman pod has an infra container that runs a minimal pause process. This 
 
 ```bash
 # Create a pod and observe the infra container
+
 podman pod create --name my-pod
 
 # List all containers including the infra container

@@ -45,6 +45,7 @@ Add required crates to your `Cargo.toml`:
 ```toml
 [dependencies]
 # Reqwest HTTP client with OpenTelemetry integration
+
 reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
 reqwest-middleware = "0.2"
 reqwest-tracing = { version = "0.4", features = ["opentelemetry_0_22"] }

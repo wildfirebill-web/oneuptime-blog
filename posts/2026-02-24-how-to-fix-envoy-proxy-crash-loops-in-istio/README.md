@@ -18,6 +18,7 @@ Start by understanding what is happening:
 
 ```bash
 # Check pod status and restart count
+
 kubectl get pod <pod-name> -n production
 
 # Look at the events

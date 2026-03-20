@@ -43,6 +43,7 @@ Common event reasons include:
 
 ```bash
 # Get events for a specific canary resource
+
 kubectl describe canary my-app -n default | tail -30
 
 # Use kubectl events (Kubernetes 1.26+) for structured output

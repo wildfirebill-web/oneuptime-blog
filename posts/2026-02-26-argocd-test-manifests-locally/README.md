@@ -37,6 +37,7 @@ The most basic check is YAML syntax validation. Many ArgoCD errors come from sim
 
 ```bash
 # Install yamllint
+
 pip install yamllint
 
 # Validate a single file

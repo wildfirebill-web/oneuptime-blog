@@ -29,6 +29,7 @@ You can create monitors at different levels. Start with a service-level monitor 
 
 ```bash
 # Create an anomaly monitor that watches all AWS services
+
 aws ce create-anomaly-monitor \
   --anomaly-monitor '{
     "MonitorName": "AllServicesMonitor",

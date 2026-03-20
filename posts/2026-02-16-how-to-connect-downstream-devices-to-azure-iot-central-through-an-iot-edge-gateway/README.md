@@ -123,6 +123,7 @@ Install and configure IoT Edge on the gateway device. This is typically a Linux 
 
 ```bash
 # Install IoT Edge runtime on Ubuntu 22.04
+
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb

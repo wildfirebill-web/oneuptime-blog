@@ -52,6 +52,7 @@ Use the filter options in Portainer to narrow down logs by:
 
 ```bash
 # Export audit logs via the Portainer API
+
 curl -s "https://portainer.mycompany.com/api/auth/logs" \
   -H "Authorization: Bearer ${ADMIN_TOKEN}" | jq '.'
 

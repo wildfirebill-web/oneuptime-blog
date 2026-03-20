@@ -42,6 +42,7 @@ kubectl get crd ciliumendpointslices.cilium.io
 
 ```yaml
 # cilium-ces-values.yaml
+
 ciliumEndpointSlice:
   enabled: true
   rateLimits:

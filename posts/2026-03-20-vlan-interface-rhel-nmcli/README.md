@@ -8,7 +8,7 @@ Description: Create and configure a persistent 802.1Q VLAN interface on Red Hat 
 
 ## Introduction
 
-On RHEL, CentOS, and Fedora, NetworkManager manages network configuration and `nmcli` is the command-line interface. nmcli makes it easy to create VLAN connections that are persistent by default — no separate save step is required.
+On RHEL, CentOS, and Fedora, NetworkManager manages network configuration and `nmcli` is the command-line interface. nmcli makes it easy to create VLAN connections that are persistent by default - no separate save step is required.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ On RHEL, CentOS, and Fedora, NetworkManager manages network configuration and `n
 
 ```bash
 # Create VLAN 100 on top of eth0 with a static IP
+
 nmcli connection add \
     type vlan \
     con-name "eth0.100" \

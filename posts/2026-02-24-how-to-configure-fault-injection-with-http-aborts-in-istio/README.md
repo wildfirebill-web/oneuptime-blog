@@ -230,6 +230,7 @@ Only requests with the `x-test-abort: true` header trigger the abort:
 
 ```bash
 # This gets a 503
+
 curl -H "x-test-abort: true" http://payment-service:8080/charge
 
 # This works normally

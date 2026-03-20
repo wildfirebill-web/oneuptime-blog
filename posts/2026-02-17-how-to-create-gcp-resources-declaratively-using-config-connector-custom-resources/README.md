@@ -24,6 +24,7 @@ Before diving into examples, there are a few annotations you will use frequently
 
 ```yaml
 # Common annotations used across Config Connector resources
+
 metadata:
   annotations:
     # Specifies which GCP project the resource belongs to

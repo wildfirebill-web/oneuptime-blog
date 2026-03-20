@@ -26,6 +26,7 @@ In all these cases, exit code 143 is expected and correct behavior.
 
 ```bash
 # This will result in exit code 143
+
 docker stop my-container
 docker inspect my-container --format '{{.State.ExitCode}}'
 # Output: 143

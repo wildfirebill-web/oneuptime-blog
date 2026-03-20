@@ -24,6 +24,7 @@ You can inspect the discovery data stored in Kubernetes:
 
 ```bash
 # View node annotations related to discovery
+
 kubectl get nodes -o json | jq '.items[] | {name: .metadata.name, discovery: [.metadata.annotations | to_entries[] | select(.key | startswith("cluster.talos.dev"))]}'
 ```
 

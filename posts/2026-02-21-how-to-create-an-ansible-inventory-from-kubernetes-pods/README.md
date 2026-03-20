@@ -19,6 +19,7 @@ You need:
 
 ```bash
 # Install the Kubernetes collection
+
 ansible-galaxy collection install kubernetes.core
 
 # Install the Python client

@@ -19,6 +19,7 @@ Azure Managed Identity provides an identity for Azure resources (VMs, Container 
 
 ```hcl
 # managed-identity.tf
+
 resource "azurerm_resource_group" "identity" {
   name     = "rg-terraform-identities"
   location = "East US"
@@ -200,4 +201,4 @@ terraform {
 
 ## Conclusion
 
-Managed Identity is the most secure and operationally simple authentication method for the azurerm backend when running on Azure. It eliminates credential management entirely — no secrets to rotate, no risk of credential exposure. User-assigned managed identities are preferred over system-assigned for their reusability and explicit lifecycle management. For GitHub-hosted runners, workload identity federation provides equivalent benefits.
+Managed Identity is the most secure and operationally simple authentication method for the azurerm backend when running on Azure. It eliminates credential management entirely - no secrets to rotate, no risk of credential exposure. User-assigned managed identities are preferred over system-assigned for their reusability and explicit lifecycle management. For GitHub-hosted runners, workload identity federation provides equivalent benefits.

@@ -30,6 +30,7 @@ Migrate critical data (state files, variables) via API and let non-critical data
 
 ```bash
 # Inventory your source TFE instance
+
 echo "=== TFE Migration Inventory ==="
 
 # Count organizations

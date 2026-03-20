@@ -38,6 +38,7 @@ The DynamoDB table design is critical. You need to support two access patterns:
 
 ```bash
 # Create the event store table
+
 aws dynamodb create-table \
   --table-name EventStore \
   --attribute-definitions \

@@ -14,6 +14,7 @@ Monitoring IPv6 QoS metrics ensures QoS policies are working correctly and ident
 
 ```bash
 # View tc queue statistics
+
 sudo tc -s qdisc show dev eth0
 
 # Sample output:
@@ -158,7 +159,7 @@ done
 
 ## Grafana Dashboard Queries for IPv6 QoS
 
-```
+```text
 Prometheus queries for IPv6 QoS dashboard:
 
 # IPv6 throughput by class

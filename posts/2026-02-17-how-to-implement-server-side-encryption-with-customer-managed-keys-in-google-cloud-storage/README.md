@@ -42,6 +42,7 @@ First, create a key ring and a key in Cloud KMS. The key ring location should ma
 
 ```bash
 # Create a key ring in the same region as your bucket
+
 gcloud kms keyrings create my-storage-keyring \
   --location=us-central1
 

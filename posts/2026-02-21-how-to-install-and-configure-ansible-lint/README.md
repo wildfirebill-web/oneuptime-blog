@@ -22,6 +22,7 @@ The recommended approach is using pip in a virtual environment:
 
 ```bash
 # Create a virtual environment for your Ansible tools
+
 python3 -m venv ~/ansible-env
 source ~/ansible-env/bin/activate
 

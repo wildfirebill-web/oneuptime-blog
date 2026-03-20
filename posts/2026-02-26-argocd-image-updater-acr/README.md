@@ -24,6 +24,7 @@ The simplest approach is to use the AKS-ACR integration:
 
 ```bash
 # Attach ACR to AKS cluster
+
 az aks update \
   --name my-aks-cluster \
   --resource-group my-rg \

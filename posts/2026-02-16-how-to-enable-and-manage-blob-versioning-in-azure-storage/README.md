@@ -51,6 +51,7 @@ You can enable versioning at the storage account level. It applies to all contai
 
 ```bash
 # Enable blob versioning on a storage account
+
 az storage account blob-service-properties update \
   --account-name mystorageaccount \
   --resource-group myresourcegroup \

@@ -122,6 +122,7 @@ Set up the boto3 client with appropriate configuration.
 
 ```python
 # sqs_client.py
+
 import os
 import boto3
 from botocore.config import Config

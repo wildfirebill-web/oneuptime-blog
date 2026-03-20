@@ -29,6 +29,7 @@ Use Calico's `IPReservation` resource to protect specific addresses from pod all
 
 ```yaml
 # ip-reservation.yaml - Reserve specific IPs within the pod CIDR
+
 # These IPs will not be allocated to pods by Calico IPAM
 apiVersion: projectcalico.org/v3
 kind: IPReservation

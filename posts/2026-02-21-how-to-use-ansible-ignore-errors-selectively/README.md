@@ -16,6 +16,7 @@ Many Ansible beginners end up writing playbooks that look like this:
 
 ```yaml
 # Bad practice: ignoring errors on every task
+
 - name: Stop the old service
   ansible.builtin.service:
     name: legacy-app

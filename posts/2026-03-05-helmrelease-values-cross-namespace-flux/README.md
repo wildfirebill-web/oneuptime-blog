@@ -19,6 +19,7 @@ The `spec.valuesFrom` field on a HelmRelease accepts a list of references to Con
 
 ```yaml
 # Basic valuesFrom example (same namespace)
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

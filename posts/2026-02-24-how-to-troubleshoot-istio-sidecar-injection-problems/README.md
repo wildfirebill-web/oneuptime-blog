@@ -29,6 +29,7 @@ First, verify that the namespace has the injection label:
 
 ```bash
 # Check for the injection label
+
 kubectl get namespace production --show-labels
 
 # You should see either:

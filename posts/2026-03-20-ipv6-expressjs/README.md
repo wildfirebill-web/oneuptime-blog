@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 // Listen on all IPv6 interfaces
-// Second argument is the host — '::' enables dual-stack
+// Second argument is the host - '::' enables dual-stack
 app.listen(3000, '::', () => {
     console.log('Express server on [::]:3000');
 });
@@ -161,7 +161,7 @@ app.use(express.json());
 // Database of IPv6-addressed resources
 const devices = new Map();
 
-// GET /devices/:ipv6 — URL-encode brackets or use hex without brackets
+// GET /devices/:ipv6 - URL-encode brackets or use hex without brackets
 app.get('/devices/:address', (req, res) => {
     const address = decodeURIComponent(req.params.address);
 

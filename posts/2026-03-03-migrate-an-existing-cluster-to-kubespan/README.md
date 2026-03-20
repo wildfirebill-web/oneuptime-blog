@@ -16,6 +16,7 @@ Before enabling KubeSpan, assess your current cluster setup:
 
 ```bash
 # Check current Talos version (KubeSpan requires Talos 1.0+)
+
 talosctl version --nodes <node-ip>
 
 # Check current network configuration

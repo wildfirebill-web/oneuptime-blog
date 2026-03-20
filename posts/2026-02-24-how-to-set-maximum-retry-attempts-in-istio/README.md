@@ -187,6 +187,7 @@ In this example: `10s >= (3 + 1) * 3s = 12s` - the timeout is too short. Either 
 
 ```yaml
 # Fixed version
+
 http:
   - timeout: 12s
     retries:

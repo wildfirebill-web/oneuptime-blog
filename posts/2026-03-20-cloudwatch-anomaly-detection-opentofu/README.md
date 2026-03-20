@@ -20,6 +20,7 @@ CloudWatch Anomaly Detection uses machine learning to continuously analyze metri
 
 ```hcl
 # Create a CloudWatch Anomaly Detector for Lambda invocations
+
 resource "aws_cloudwatch_metric_alarm" "lambda_anomaly" {
   alarm_name          = "${var.project_name}-lambda-invocation-anomaly"
   comparison_operator = "GreaterThanUpperThreshold"
@@ -149,4 +150,4 @@ aws cloudwatch describe-anomaly-detectors \
 
 ## Conclusion
 
-Anomaly Detection is most valuable for metrics with clear patterns—daily/weekly cycles, business hours variations, or growth trends. Allow at least 2-3 weeks for the model to learn before trusting alerts. Use a higher standard deviation multiplier (2-3) for noisy metrics and lower (1-1.5) for stable metrics. Combine anomaly detection with absolute threshold alarms for defense in depth—anomaly detection catches unexpected deviations while absolute thresholds catch extreme violations.
+Anomaly Detection is most valuable for metrics with clear patterns-daily/weekly cycles, business hours variations, or growth trends. Allow at least 2-3 weeks for the model to learn before trusting alerts. Use a higher standard deviation multiplier (2-3) for noisy metrics and lower (1-1.5) for stable metrics. Combine anomaly detection with absolute threshold alarms for defense in depth-anomaly detection catches unexpected deviations while absolute thresholds catch extreme violations.

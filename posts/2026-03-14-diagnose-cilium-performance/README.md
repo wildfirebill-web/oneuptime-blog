@@ -30,6 +30,7 @@ Start by categorizing the performance problem:
 
 ```bash
 # Check overall Cilium agent resource usage
+
 kubectl -n kube-system top pod -l k8s-app=cilium --sort-by=cpu
 
 # Check for node-level resource pressure

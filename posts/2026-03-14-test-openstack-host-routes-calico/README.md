@@ -31,6 +31,7 @@ Capture the current route state to compare against after changes.
 ```bash
 #!/bin/bash
 # capture-route-baseline.sh
+
 # Capture route table baseline from all compute nodes
 
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)

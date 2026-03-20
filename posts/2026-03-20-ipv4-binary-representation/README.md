@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Binary, Networking, ipaddress, Subnetting
+Tags: Python, IPv4, Binary, Networking, Ipaddress, Subnetting
 
 Description: Learn how to convert IPv4 addresses to their binary (bit-string) representation in Python, useful for understanding subnetting, CIDR masking, and teaching network concepts.
 
@@ -22,6 +22,7 @@ print(ipv4_to_binary("255.255.255.0"))
 
 print(ipv4_to_binary("0.0.0.0"))
 # 00000000.00000000.00000000.00000000
+
 ```
 
 ## Flat 32-Bit Binary String
@@ -106,4 +107,4 @@ print(apply_mask("10.20.30.40",  16))  # 10.20.0.0
 
 ## Conclusion
 
-Binary representation reveals the structure of IPv4 addresses that decimal notation hides. Converting with `f"{int(IPv4Address(ip)):032b}"` gives a clean 32-bit string. The `N/H` annotation shows which bits belong to the network prefix and which to the host portion, making subnetting concepts intuitive. The bitwise AND of an address with its subnet mask always yields the network address — the foundation of all routing decisions.
+Binary representation reveals the structure of IPv4 addresses that decimal notation hides. Converting with `f"{int(IPv4Address(ip)):032b}"` gives a clean 32-bit string. The `N/H` annotation shows which bits belong to the network prefix and which to the host portion, making subnetting concepts intuitive. The bitwise AND of an address with its subnet mask always yields the network address - the foundation of all routing decisions.

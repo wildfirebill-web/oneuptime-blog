@@ -144,6 +144,7 @@ effective_cache_size = 24GB  -- ~75% of available RAM
 
 ```bash
 # Calculate huge pages needed
+
 # shared_buffers / huge_page_size + some overhead
 # For 8GB shared_buffers with 2MB huge pages: 8192/2 + 100 = 4196
 

@@ -27,6 +27,7 @@ This guide explains the connectivity test architecture, how to run targeted test
 
 ```bash
 # Full test run (takes 5-15 minutes)
+
 cilium connectivity test
 
 # Run with verbose output to see each test

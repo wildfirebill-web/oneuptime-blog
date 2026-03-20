@@ -22,6 +22,7 @@ Define a labeling strategy for team attribution:
 
 ```yaml
 # Example labeling schema
+
 apiVersion: v1
 kind: Namespace
 metadata:

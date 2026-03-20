@@ -16,6 +16,7 @@ You must specify the exact address and prefix length that was assigned:
 
 ```bash
 # Remove 192.168.1.100/24 from eth0
+
 sudo ip addr del 192.168.1.100/24 dev eth0
 
 # Verify it is gone
@@ -24,7 +25,7 @@ ip -4 addr show dev eth0
 
 If the address was not found, you will see:
 
-```
+```text
 RTNETLINK answers: Cannot assign requested address
 ```
 
@@ -106,7 +107,7 @@ nmcli con up "Wired connection 1"
 If an interface was already flushed or the address was never assigned, `ip addr del` will error. Check first:
 
 ```bash
-# Conditional delete — only if the address exists
+# Conditional delete - only if the address exists
 if ip addr show dev eth0 | grep -q "192.168.1.100"; then
     sudo ip addr del 192.168.1.100/24 dev eth0
     echo "Address removed"

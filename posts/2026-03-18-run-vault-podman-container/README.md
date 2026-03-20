@@ -20,6 +20,7 @@ Download the official Vault image.
 
 ```bash
 # Pull the latest Vault image
+
 podman pull docker.io/hashicorp/vault:latest
 
 # Verify the image

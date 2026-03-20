@@ -82,6 +82,7 @@ First, configure the object storage backend. Create a bucket configuration file 
 
 ```yaml
 # bucket.yml - S3 configuration
+
 type: S3
 config:
   bucket: "thanos-metrics"

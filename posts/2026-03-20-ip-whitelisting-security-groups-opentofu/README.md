@@ -14,6 +14,7 @@ IP whitelisting restricts service access to known IP ranges. OpenTofu manages se
 
 ```hcl
 # main.tf - Centralized IP whitelist via variables
+
 locals {
   allowed_office_cidrs = ["10.0.0.0/8", "203.0.113.0/24"]
   allowed_vpn_cidrs    = ["198.51.100.0/28"]
@@ -146,4 +147,4 @@ resource "google_compute_firewall" "deny_all_ingress" {
 
 ## Summary
 
-IP whitelisting with OpenTofu uses `for_each` and `toset()` to create rules dynamically from a centralized list, making updates a single-variable change that propagates to all providers. AWS Managed Prefix Lists are the most maintainable approach — a single security group rule references the list, so adding or removing IPs doesn't require rule changes. Using explicit deny-all rules ensures unmatched traffic is blocked even if allow rules are misconfigured.
+IP whitelisting with OpenTofu uses `for_each` and `toset()` to create rules dynamically from a centralized list, making updates a single-variable change that propagates to all providers. AWS Managed Prefix Lists are the most maintainable approach - a single security group rule references the list, so adding or removing IPs doesn't require rule changes. Using explicit deny-all rules ensures unmatched traffic is blocked even if allow rules are misconfigured.

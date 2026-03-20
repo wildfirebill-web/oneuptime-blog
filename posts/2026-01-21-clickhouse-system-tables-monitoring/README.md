@@ -468,6 +468,7 @@ scrape_configs:
 
 ```text
 # Query rate
+
 rate(ClickHouseProfileEvents_Query[5m])
 
 # Error rate

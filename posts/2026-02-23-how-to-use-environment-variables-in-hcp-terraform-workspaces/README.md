@@ -32,6 +32,7 @@ This is fine for one-off setups, but for repeatable workflows, use the API.
 
 ```bash
 # Set AWS credentials as environment variables
+
 # First, get your workspace ID
 WORKSPACE_ID=$(curl -s \
   --header "Authorization: Bearer $TF_TOKEN" \

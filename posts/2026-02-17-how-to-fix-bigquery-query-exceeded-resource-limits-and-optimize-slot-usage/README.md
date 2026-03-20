@@ -20,6 +20,7 @@ If you are on on-demand pricing, you share a pool of slots (typically up to 2000
 
 ```bash
 # Check your current slot usage with INFORMATION_SCHEMA
+
 bq query --use_legacy_sql=false '
 SELECT
   period_start,

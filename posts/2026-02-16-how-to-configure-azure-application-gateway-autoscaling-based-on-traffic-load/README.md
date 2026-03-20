@@ -55,6 +55,7 @@ Here is how to create an Application Gateway v2 with autoscaling enabled from th
 
 ```bash
 # Create a public IP for the Application Gateway (Standard SKU required for v2)
+
 az network public-ip create \
   --resource-group myResourceGroup \
   --name appGwPublicIP \

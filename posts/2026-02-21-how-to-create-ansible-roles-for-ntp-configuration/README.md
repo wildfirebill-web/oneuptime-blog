@@ -32,6 +32,7 @@ roles/ntp/
 
 ```yaml
 # roles/ntp/defaults/main.yml
+
 # Chrony package and service
 ntp_package: chrony
 ntp_service: chronyd

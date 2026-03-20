@@ -22,7 +22,7 @@ The `3fff::/20` prefix provides **4,096 /32 blocks** (each the size of the origi
 
 ## Address Range Details
 
-```
+```text
 Prefix:        3fff::/20
 First address: 3fff:0000:0000:0000:0000:0000:0000:0000
 Last address:  3fff:0fff:ffff:ffff:ffff:ffff:ffff:ffff
@@ -34,8 +34,9 @@ Available /64 blocks: 17,592,186,044,416
 
 ## Usage Patterns
 
-```
+```text
 # Large ISP allocation examples
+
 3fff:1::/32    # ISP-A allocation
 3fff:2::/32    # ISP-B allocation
 3fff:100::/32  # Tier-2 ISP allocation
@@ -121,7 +122,7 @@ sudo ip6tables -A OUTPUT -d 3fff::/20 -j DROP
 
 ## When to Use Which Prefix
 
-```
+```text
 For simple host address examples:
   → Use 2001:db8::1 (familiar, compact)
 

@@ -12,7 +12,7 @@ A well-designed VPC module is the foundation of all cloud infrastructure. It sho
 
 ## Module Structure
 
-```
+```text
 modules/vpc/
 ├── main.tf
 ├── variables.tf

@@ -31,6 +31,7 @@ graph TD
 
 ```bash
 # Create a resource group for the Logic App
+
 az group create --name rg-workflows --location eastus
 
 # Create a consumption-tier Logic App
@@ -107,6 +108,7 @@ Request ID: [requestId]
 Requested By: [requestedBy]
 Type: [requestType]
 Description: [description]
+
 Amount: $[amount]
 
 Please review and approve or reject this request.

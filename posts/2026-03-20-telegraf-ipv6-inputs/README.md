@@ -12,6 +12,7 @@ Telegraf is InfluxData's agent for collecting and reporting metrics. It supports
 
 ```toml
 # telegraf.conf - Core agent configuration
+
 [agent]
   interval = "10s"
   hostname = ""  # Auto-detect hostname
@@ -148,7 +149,7 @@ telegraf --config /etc/telegraf/telegraf.conf --input-filter ping --test
 
 ## Key IPv6 Metrics from Telegraf
 
-```
+```text
 # From net plugin
 net_bytes_recv{interface="eth0"} = X        # Total bytes received
 net_bytes_sent{interface="eth0"} = X

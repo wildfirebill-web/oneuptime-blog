@@ -35,6 +35,7 @@ The recommended approach. Start the proxy, then run pg_dump against localhost:
 
 ```bash
 # Start the Cloud SQL Auth Proxy in the background
+
 cloud-sql-proxy --port=5432 my-project:us-central1:my-instance &
 
 # Wait a moment for the proxy to initialize

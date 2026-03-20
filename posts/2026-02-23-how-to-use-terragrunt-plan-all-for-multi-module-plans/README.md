@@ -16,6 +16,7 @@ Terragrunt originally had a set of dedicated commands: `plan-all`, `apply-all`, 
 
 ```bash
 # Legacy command (deprecated but still works)
+
 terragrunt plan-all
 
 # Modern equivalent (recommended)

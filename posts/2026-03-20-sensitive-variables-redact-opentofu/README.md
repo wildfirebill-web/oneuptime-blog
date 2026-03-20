@@ -14,6 +14,7 @@ OpenTofu's `sensitive = true` attribute tells the engine to treat a value as a s
 
 ```hcl
 # variables.tf
+
 variable "db_password" {
   type        = string
   description = "Master password for the RDS instance"
@@ -35,7 +36,7 @@ variable "tls_private_key" {
 
 When a sensitive variable is used in a resource, OpenTofu redacts it automatically:
 
-```
+```hcl
   # aws_db_instance.main will be updated in-place
   ~ resource "aws_db_instance" "main" {
         id       = "prod-postgres"
@@ -61,7 +62,7 @@ locals {
 ```hcl
 output "db_password" {
   value     = var.db_password
-  sensitive = true   # Required — OpenTofu errors if sensitive value used in non-sensitive output
+  sensitive = true   # Required - OpenTofu errors if sensitive value used in non-sensitive output
 }
 
 output "connection_string" {
@@ -72,7 +73,7 @@ output "connection_string" {
 
 Attempting to output a sensitive value without `sensitive = true` produces an error:
 
-```
+```text
 Error: Output refers to sensitive values
   The output value is derived from a sensitive value, and so must also be declared as sensitive.
 ```

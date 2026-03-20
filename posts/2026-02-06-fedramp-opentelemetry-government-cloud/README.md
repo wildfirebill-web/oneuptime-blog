@@ -30,6 +30,7 @@ Build and configure the collector with FIPS-validated TLS:
 
 ```yaml
 # fedramp-collector.yaml
+
 # Requires the collector to be compiled with GOEXPERIMENT=boringcrypto
 # which uses BoringSSL's FIPS-validated crypto module
 

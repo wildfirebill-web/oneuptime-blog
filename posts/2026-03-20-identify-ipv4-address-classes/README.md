@@ -40,13 +40,14 @@ def classify_ipv4(ip: str) -> str:
         return 'Invalid'
 
 # Test classification
+
 for ip in ["10.1.2.3", "127.0.0.1", "172.16.0.1",
            "192.168.1.1", "224.0.0.5", "240.0.0.1"]:
     print(f"{ip:15s} -> Class {classify_ipv4(ip)}")
 ```
 
 Expected output:
-```
+```text
 10.1.2.3        -> Class A
 127.0.0.1       -> Class Loopback (reserved Class A)
 172.16.0.1      -> Class B

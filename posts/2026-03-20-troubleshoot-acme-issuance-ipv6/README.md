@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ACME, IPv6, Let's Encrypt, TLS, Troubleshooting, certbot, Debugging
+Tags: ACME, IPv6, Let's Encrypt, TLS, Troubleshooting, Certbot, Debugging
 
 Description: Diagnose and resolve ACME certificate issuance failures in IPv6 environments by systematically checking DNS records, firewall rules, ACME challenge reachability, and error logs.
 
@@ -12,7 +12,7 @@ ACME certificate issuance failures in IPv6 environments can stem from several so
 
 ## Understanding ACME IPv6 Failure Modes
 
-```
+```text
 Common failure hierarchy:
 1. DNS AAAA record missing or incorrect
 2. Port 80/443 blocked for IPv6 on firewall
@@ -26,6 +26,7 @@ Common failure hierarchy:
 
 ```bash
 # Check both A and AAAA records
+
 dig A yourdomain.example.com +short
 dig AAAA yourdomain.example.com +short
 
@@ -180,4 +181,4 @@ curl -s "https://letsdebug.net/yourdomain.example.com/new" \
 # https://ipv6-test.com/validate.php?url=http://yourdomain.example.com/
 ```
 
-Systematic troubleshooting — starting with DNS and working through firewall, web server binding, and ACME challenge simulation — resolves the vast majority of IPv6 ACME certificate issuance failures.
+Systematic troubleshooting - starting with DNS and working through firewall, web server binding, and ACME challenge simulation - resolves the vast majority of IPv6 ACME certificate issuance failures.

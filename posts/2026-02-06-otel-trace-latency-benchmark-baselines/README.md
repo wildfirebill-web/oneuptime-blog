@@ -20,6 +20,7 @@ Start by instrumenting your application. Here is a Python example using the Open
 
 ```python
 # app_tracing.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

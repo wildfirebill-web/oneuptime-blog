@@ -28,6 +28,7 @@ This guide covers how to contribute to and extend Cilium API reference documenta
 
 ```bash
 # Clone the Cilium repository
+
 git clone https://github.com/cilium/cilium.git
 cd cilium
 

@@ -29,6 +29,7 @@ First, verify your domain with SES:
 
 ```hcl
 # Domain identity in SES
+
 resource "aws_ses_domain_identity" "main" {
   domain = var.domain_name
 }

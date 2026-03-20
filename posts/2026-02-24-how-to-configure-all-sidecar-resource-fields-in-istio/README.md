@@ -65,6 +65,7 @@ The `workloadSelector` determines which pods this Sidecar configuration applies 
 
 ```yaml
 # Namespace default sidecar (no workloadSelector)
+
 apiVersion: networking.istio.io/v1beta1
 kind: Sidecar
 metadata:

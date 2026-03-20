@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Troubleshooting, Networking, Lease Renewal, sysadmin
+Tags: DHCP, Troubleshooting, Networking, Lease Renewal, Sysadmin
 
-Description: DHCP lease renewal failures occur when the client cannot reach the server at T1 or T2, leading to address expiry and network loss, resolved by diagnosing connectivity, firewall rules, and server availability.
+Description: DHCP lease renewal failures occur when the client cannot reach the server at T1 or T2, leading to address expiry and network loss, resolved by diagnosing connectivity, firewall rules, and server...
 
 ## Understanding the Renewal Timeline
 
-```
+```text
 T=0:    Lease obtained (DHCPACK)
-T=50%:  T1 — Client sends DHCPREQUEST unicast to original server
-T=87.5%: T2 — Client broadcasts DHCPREQUEST to any server
-T=100%:  Lease expires — client loses IP address
+T=50%:  T1 - Client sends DHCPREQUEST unicast to original server
+T=87.5%: T2 - Client broadcasts DHCPREQUEST to any server
+T=100%:  Lease expires - client loses IP address
 ```
 
 If renewal fails at T1, the client tries at T2. If T2 also fails, the IP is lost.
@@ -29,6 +29,7 @@ If renewal fails at T1, the client tries at T2. If T2 also fails, the IP is lost
 
 ```bash
 # Attempt renewal manually and view verbose output
+
 sudo dhclient -v eth0
 
 # Check current lease expiry

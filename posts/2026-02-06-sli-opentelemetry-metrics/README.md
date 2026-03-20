@@ -25,6 +25,7 @@ Before instrumenting SLIs, you need the OpenTelemetry SDK configured with a metr
 
 ```python
 # Install dependencies: pip install opentelemetry-sdk opentelemetry-exporter-otlp
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

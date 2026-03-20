@@ -134,6 +134,7 @@ To use tag-based expiration, tag your objects when you upload them:
 
 ```bash
 # Upload with a lifecycle tag
+
 aws s3 cp temp-data.json s3://my-bucket/temp/data.json \
     --tagging "lifecycle=ephemeral"
 ```

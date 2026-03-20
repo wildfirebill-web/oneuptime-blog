@@ -20,7 +20,7 @@ Longhorn uses two key settings to control storage scheduling:
 
 ### Calculation Example
 
-```
+```text
 Available disk space: 100 GiB
 Over-provisioning: 200%
 Maximum schedulable storage: 100 GiB × 200% = 200 GiB
@@ -34,6 +34,7 @@ Effective schedulable storage: 175 GiB (200 - 25)
 
 ```bash
 # Check current over-provisioning percentage
+
 kubectl get settings.longhorn.io storage-over-provisioning-percentage \
   -n longhorn-system -o yaml
 
@@ -140,9 +141,9 @@ chmod +x check-overprovisioning.sh
 
 ```yaml
 defaultSettings:
-  # High over-provisioning — developers create many small PVCs
+  # High over-provisioning - developers create many small PVCs
   storageOverProvisioningPercentage: 500
-  # Low minimum available — acceptable for non-critical workloads
+  # Low minimum available - acceptable for non-critical workloads
   storageMinimalAvailablePercentage: 10
 ```
 
@@ -150,9 +151,9 @@ defaultSettings:
 
 ```yaml
 defaultSettings:
-  # Conservative over-provisioning — predictable workloads
+  # Conservative over-provisioning - predictable workloads
   storageOverProvisioningPercentage: 150
-  # Higher minimum — ensure headroom for replica rebuilds
+  # Higher minimum - ensure headroom for replica rebuilds
   storageMinimalAvailablePercentage: 30
 ```
 
@@ -160,9 +161,9 @@ defaultSettings:
 
 ```yaml
 defaultSettings:
-  # No over-provisioning — databases actually use their allocated space
+  # No over-provisioning - databases actually use their allocated space
   storageOverProvisioningPercentage: 100
-  # Higher minimum — databases can grow quickly
+  # Higher minimum - databases can grow quickly
   storageMinimalAvailablePercentage: 40
 ```
 

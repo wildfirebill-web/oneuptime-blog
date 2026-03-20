@@ -125,6 +125,7 @@ resource "azurerm_redis_firewall_rule" "app_servers" {
 
 ```hcl
 # Primary in eastus
+
 resource "azurerm_redis_cache" "primary" {
   name                = "myapp-redis-primary"
   location            = "eastus"

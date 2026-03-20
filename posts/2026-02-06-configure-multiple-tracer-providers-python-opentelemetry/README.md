@@ -46,6 +46,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Create first provider for high-priority traces
+
 # This provider sends traces to a production monitoring backend
 high_priority_resource = Resource.create({
     "service.name": "payment-service",

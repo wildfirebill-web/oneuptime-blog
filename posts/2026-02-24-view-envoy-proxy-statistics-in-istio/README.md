@@ -30,6 +30,7 @@ This returns thousands of lines. Filter to what you need:
 
 ```bash
 # Filter by prefix
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s "localhost:15000/stats?filter=cluster.outbound"
 
 # Only used (non-zero) stats

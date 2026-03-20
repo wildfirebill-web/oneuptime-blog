@@ -28,6 +28,7 @@ Structure your experiments with a consistent template:
 
 ```yaml
 # chaos-experiment.yaml
+
 # Experiment: Payment Service Degradation
 # Hypothesis: Frontend shows graceful error when payment service is slow
 # Duration: 10 minutes

@@ -20,6 +20,7 @@ Here's the recommended setup using S3 for state storage and DynamoDB for locking
 
 ```hcl
 # backend.tf - Remote state with S3 and DynamoDB locking
+
 terraform {
   backend "s3" {
     bucket         = "mycompany-terraform-state"

@@ -96,6 +96,7 @@ Keycloak requires Java 17 or higher. Install OpenJDK on Ubuntu:
 
 ```bash
 # Update package index to ensure we get the latest package information
+
 sudo apt update
 
 # Install OpenJDK 17 (LTS version recommended for Keycloak)

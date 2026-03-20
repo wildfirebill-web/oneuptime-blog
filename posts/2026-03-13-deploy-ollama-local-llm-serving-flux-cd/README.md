@@ -27,6 +27,7 @@ This guide covers deploying Ollama to Kubernetes with GPU resources using Flux C
 
 ```yaml
 # clusters/my-cluster/ollama/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

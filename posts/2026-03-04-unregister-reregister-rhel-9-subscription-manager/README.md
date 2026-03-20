@@ -26,6 +26,7 @@ Before doing anything, see what state the system is in:
 
 ```bash
 # Check if the system is currently registered
+
 sudo subscription-manager identity
 
 # Check subscription status

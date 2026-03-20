@@ -22,6 +22,7 @@ Before running the playbook, set up these DNS records:
 
 ```text
 # Required DNS records for your mail server
+
 MX    example.com       mail.example.com    10
 A     mail.example.com  203.0.113.50
 PTR   203.0.113.50      mail.example.com

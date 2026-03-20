@@ -22,6 +22,7 @@ Before creating any DynamoDB resources, you need to configure the AWS provider i
 
 ```hcl
 # Configure the AWS provider with your preferred region
+
 terraform {
   required_providers {
     aws = {

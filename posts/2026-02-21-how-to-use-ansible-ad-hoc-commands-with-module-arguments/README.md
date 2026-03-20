@@ -16,6 +16,7 @@ The most common way to pass arguments is as space-separated key=value pairs:
 
 ```bash
 # Simple key-value pairs
+
 ansible webservers -m copy -a "src=/tmp/config.yml dest=/etc/app/config.yml"
 
 # Multiple parameters

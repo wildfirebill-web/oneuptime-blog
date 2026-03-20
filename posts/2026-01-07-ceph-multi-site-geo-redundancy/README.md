@@ -97,6 +97,7 @@ Verify your Ceph cluster health on both sites before proceeding:
 
 ```bash
 # Check cluster health on both sites
+
 # This command displays the overall health status of your Ceph cluster
 # including any warnings or errors that need attention
 ceph health detail

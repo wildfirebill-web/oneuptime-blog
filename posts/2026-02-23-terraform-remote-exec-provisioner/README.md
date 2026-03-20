@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provisioner, Remote-exec, SSH, Infrastructure as Code
+Tags: Terraform, Provisioners, remote-exec, SSH, Infrastructure as Code
 
 Description: Learn how to use the remote-exec provisioner in Terraform to execute commands on remote resources over SSH or WinRM for post-creation configuration and bootstrapping.
 
@@ -97,6 +97,7 @@ Here is what `scripts/setup.sh` might look like:
 set -euo pipefail
 
 # Update packages
+
 sudo apt-get update
 sudo apt-get upgrade -y
 

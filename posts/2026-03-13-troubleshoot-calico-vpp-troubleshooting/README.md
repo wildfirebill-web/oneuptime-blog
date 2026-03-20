@@ -16,6 +16,7 @@ Calico VPP issues present differently from standard Linux networking problems. V
 
 ```bash
 # Check calico-vpp-node pod status
+
 kubectl get pods -n calico-vpp-dataplane
 
 # Check VPP container logs for startup errors

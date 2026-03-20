@@ -57,6 +57,7 @@ Using Azure CLI:
 
 ```bash
 # Register a storage account with the Recovery Services vault
+
 # This allows the vault to manage file share backups in this account
 az backup container register \
     --resource-group rg-backup-eastus2 \

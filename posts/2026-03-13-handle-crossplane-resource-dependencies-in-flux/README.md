@@ -42,6 +42,7 @@ Flux Kustomization `dependsOn` creates hard ordering between groups of resources
 
 ```yaml
 # clusters/my-cluster/infrastructure/01-networking.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

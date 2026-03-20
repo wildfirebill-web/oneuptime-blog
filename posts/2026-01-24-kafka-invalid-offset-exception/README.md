@@ -56,6 +56,7 @@ flowchart TD
 
 ```bash
 # Get the earliest and latest offsets for a topic
+
 kafka-run-class.sh kafka.tools.GetOffsetShell \
   --broker-list localhost:9092 \
   --topic my-topic \

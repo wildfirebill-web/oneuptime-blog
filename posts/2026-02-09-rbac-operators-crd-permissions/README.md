@@ -34,6 +34,7 @@ Start with a minimal operator that manages a custom resource called `Application
 
 ```yaml
 # application-operator-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

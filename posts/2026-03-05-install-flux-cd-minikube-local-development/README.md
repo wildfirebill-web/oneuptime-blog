@@ -26,6 +26,7 @@ Install the Flux command-line tool to manage your Flux CD installation.
 
 ```bash
 # Install the Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify the installation

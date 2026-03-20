@@ -26,6 +26,7 @@ Install Kyverno and Gatekeeper in separate namespaces to avoid conflicts:
 
 ```bash
 # Install Kyverno
+
 helm repo add kyverno https://kyverno.github.io/kyverno/
 helm install kyverno kyverno/kyverno \
   --namespace kyverno \

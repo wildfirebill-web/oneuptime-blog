@@ -46,6 +46,7 @@ Here is a typical Fluent Bit configuration for Kubernetes:
 
 ```ini
 # Typical Fluent Bit Kubernetes configuration
+
 [INPUT]
     Name              tail
     Tag               kube.*

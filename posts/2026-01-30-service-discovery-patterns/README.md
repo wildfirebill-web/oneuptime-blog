@@ -152,6 +152,7 @@ Consul provides service discovery, health checking, and a distributed key-value 
 
 ```bash
 # Register the service using Consul's HTTP API
+
 curl --request PUT \
   --data @service-definition.json \
   http://localhost:8500/v1/agent/service/register

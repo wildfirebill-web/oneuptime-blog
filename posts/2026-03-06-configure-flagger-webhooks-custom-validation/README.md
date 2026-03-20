@@ -39,6 +39,7 @@ First, deploy a simple webhook service that performs custom validation. Here is 
 
 ```yaml
 # webhook-service-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

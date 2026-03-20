@@ -113,6 +113,7 @@ Define two BGPPeer resources, one for each router:
 
 ```yaml
 # metallb-bgp-peers.yaml
+
 # Peer with Router A
 apiVersion: metallb.io/v1beta2
 kind: BGPPeer

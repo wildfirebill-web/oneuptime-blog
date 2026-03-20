@@ -33,6 +33,7 @@ Longhorn's V2 Data Engine (introduced in Longhorn v1.6.0) is a new storage engin
 
 ```bash
 # Check kernel version (need 5.15+)
+
 uname -r
 
 # Verify NVMe-oF TCP module

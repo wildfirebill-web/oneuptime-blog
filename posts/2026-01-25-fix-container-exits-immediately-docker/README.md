@@ -16,6 +16,7 @@ First, gather information about what happened:
 
 ```bash
 # See all containers including stopped ones
+
 docker ps -a
 
 # Check the exit code

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Windows, Teredo, ISATAP, 6to4, Transition Technologies
 
-Description: An overview of the IPv6 transition technologies built into Windows — Teredo, ISATAP, and 6to4 — how they work, when they activate, and how to check their status.
+Description: An overview of the IPv6 transition technologies built into Windows - Teredo, ISATAP, and 6to4 - how they work, when they activate, and how to check their status.
 
 ## Overview of Windows IPv6 Transition Technologies
 
@@ -22,6 +22,7 @@ Teredo provides IPv6 connectivity for hosts behind IPv4 NAT using UDP port 3544:
 
 ```powershell
 # Check Teredo state
+
 netsh interface teredo show state
 
 # Output:
@@ -40,7 +41,7 @@ netsh interface teredo set state type=disabled
 ```
 
 How Teredo works:
-```
+```text
 Host (behind NAT) ←UDP/3544→ Teredo Server ←→ IPv6 Internet
     IPv4: 192.168.1.5                           IPv6 native
     Teredo: 2001:0::/32 prefix
@@ -68,7 +69,7 @@ ipconfig /all | Select-String -Pattern "ISATAP|Tunnel"
 ```
 
 ISATAP address format:
-```
+```text
 Prefix: 2001:db8::/64
 + ISATAP interface ID: ::0:5efe:192.168.1.5
 = 2001:db8::5efe:192.168.1.5

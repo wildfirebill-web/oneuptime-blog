@@ -66,6 +66,7 @@ def initialize_telemetry():
     trace.set_tracer_provider(provider)
 
 # Call this during Django startup
+
 initialize_telemetry()
 ```
 

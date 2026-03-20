@@ -22,6 +22,7 @@ This behavior is equivalent to Flux running the following internally:
 
 ```bash
 # Flux essentially does this behind the scenes
+
 cd /path/to/your/manifests
 kustomize create --autodetect
 kustomize build .

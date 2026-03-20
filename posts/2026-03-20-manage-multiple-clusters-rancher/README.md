@@ -29,6 +29,7 @@ In Rancher UI, go to **Cluster Management > Import Existing**. Choose the cluste
 
 ```bash
 # Rancher generates a unique import manifest per cluster
+
 # Run this on the target cluster to register it
 kubectl apply -f https://rancher.example.com/v3/import/<token>.yaml
 
@@ -106,9 +107,9 @@ userPrincipalName: local://u-jane
 ```
 
 Rancher's built-in roles include:
-- `cluster-owner` — full control
-- `cluster-member` — read + deploy access
-- `read-only` — view-only
+- `cluster-owner` - full control
+- `cluster-member` - read + deploy access
+- `read-only` - view-only
 
 ---
 

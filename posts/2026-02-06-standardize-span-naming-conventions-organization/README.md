@@ -28,6 +28,7 @@ Base your naming standard on OpenTelemetry semantic conventions and extend them 
 
 ```yaml
 # span-naming-standard.yaml
+
 # Organization-wide span naming conventions.
 # All teams must follow these patterns.
 

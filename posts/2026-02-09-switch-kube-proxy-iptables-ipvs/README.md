@@ -28,6 +28,7 @@ Before switching, verify your nodes support IPVS:
 
 ```bash
 # SSH to a node and check for IPVS kernel modules
+
 lsmod | grep ip_vs
 
 # If empty, try loading them

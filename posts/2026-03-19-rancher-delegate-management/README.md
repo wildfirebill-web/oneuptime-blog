@@ -56,6 +56,7 @@ Give each cluster a designated owner or owning team:
 
 ```hcl
 # Assign the frontend-leads group as owners of the frontend cluster
+
 resource "rancher2_cluster_role_template_binding" "frontend_owners" {
   name               = "frontend-cluster-owners"
   cluster_id         = rancher2_cluster.frontend.id

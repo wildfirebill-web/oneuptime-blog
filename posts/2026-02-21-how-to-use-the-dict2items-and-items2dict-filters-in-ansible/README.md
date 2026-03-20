@@ -16,6 +16,7 @@ The `dict2items` filter converts a dictionary into a list of dictionaries, where
 
 ```yaml
 # Convert a dictionary to a list of key-value items
+
 - name: Convert dict to items
   ansible.builtin.debug:
     msg: "{{ my_dict | dict2items }}"

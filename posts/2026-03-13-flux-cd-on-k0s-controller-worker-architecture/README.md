@@ -27,6 +27,7 @@ This guide covers deploying a k0s cluster with separate controller and worker no
 
 ```bash
 # Install k0s on all nodes
+
 curl -sSLf https://get.k0s.sh | sudo sh
 
 # On the controller node, generate a default config

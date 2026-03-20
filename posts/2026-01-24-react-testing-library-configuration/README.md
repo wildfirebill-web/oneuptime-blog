@@ -16,6 +16,7 @@ React Testing Library (RTL) encourages testing your components the way users int
 
 ```bash
 # For Create React App (already includes RTL)
+
 npx create-react-app my-app
 
 # For existing projects

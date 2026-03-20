@@ -24,6 +24,7 @@ A typical retail store K3s deployment includes:
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 # Retail store edge configuration
 
 disable:
@@ -377,4 +378,4 @@ spec:
 
 ## Conclusion
 
-K3s provides an excellent platform for retail edge computing, enabling centrally managed yet locally autonomous store operations. The key capabilities are offline POS transaction processing with eventual consistency, real-time inventory synchronization, and centralized digital signage management. With K3s, retail chains can deploy consistent application stacks across hundreds of stores while maintaining the ability to run each store autonomously during network outages — a critical requirement for continuous retail operations.
+K3s provides an excellent platform for retail edge computing, enabling centrally managed yet locally autonomous store operations. The key capabilities are offline POS transaction processing with eventual consistency, real-time inventory synchronization, and centralized digital signage management. With K3s, retail chains can deploy consistent application stacks across hundreds of stores while maintaining the ability to run each store autonomously during network outages - a critical requirement for continuous retail operations.

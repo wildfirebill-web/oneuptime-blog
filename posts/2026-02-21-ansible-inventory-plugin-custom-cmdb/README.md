@@ -32,6 +32,7 @@ Users create a YAML file that tells Ansible which plugin to use and how to conne
 
 ```yaml
 # inventory.cmdb.yml
+
 plugin: myorg.myutils.cmdb_inventory
 api_url: https://cmdb.internal.myorg.com/api/v2
 api_token: "{{ lookup('env', 'CMDB_API_TOKEN') }}"

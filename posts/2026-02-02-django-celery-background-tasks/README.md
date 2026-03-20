@@ -31,6 +31,7 @@ Now let's set up the project structure. Create a `celery.py` file in your main D
 
 ```python
 # myproject/celery.py
+
 import os
 from celery import Celery
 

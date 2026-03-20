@@ -42,6 +42,7 @@ Consecutive groups of zeros can be replaced with `::` (once per address):
 
 ```bash
 # Full form
+
 2001:0db8:0000:0000:0000:0000:0000:0001
 
 # Shortened form

@@ -29,6 +29,7 @@ Deploy MinIO using the official operator:
 
 ```bash
 # Add MinIO operator repository
+
 kubectl apply -f https://github.com/minio/operator/releases/latest/download/operator.yaml
 
 # Wait for operator to be ready

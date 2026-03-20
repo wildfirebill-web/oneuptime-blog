@@ -31,6 +31,7 @@ First, install ArgoCD Notifications (included by default in ArgoCD 2.6+):
 
 ```yaml
 # argocd/notifications-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

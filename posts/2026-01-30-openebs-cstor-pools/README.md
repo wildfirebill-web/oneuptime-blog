@@ -70,6 +70,7 @@ cStor uses iSCSI to expose volumes to pods. Install the iSCSI initiator on every
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update
 sudo apt install -y open-iscsi
 sudo systemctl enable --now iscsid

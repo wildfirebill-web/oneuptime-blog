@@ -27,6 +27,7 @@ Snowflake supports several authentication methods. Key pair authentication is re
 
 ```bash
 # Generate an RSA private key
+
 openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out snowflake_key.p8 -nocrypt
 
 # Generate the corresponding public key

@@ -83,6 +83,7 @@ Configure Envoy to use OPA as an external authorization service:
 
 ```yaml
 # envoy.yaml
+
 static_resources:
   listeners:
     - name: listener_0

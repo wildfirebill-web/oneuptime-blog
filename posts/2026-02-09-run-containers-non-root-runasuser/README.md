@@ -151,6 +151,7 @@ To ensure images work properly as non-root, follow these practices in your Docke
 FROM node:20-alpine
 
 # Create a non-root user
+
 RUN addgroup -g 1001 -S appgroup && \
     adduser -u 1001 -S appuser -G appgroup
 

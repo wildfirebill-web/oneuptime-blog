@@ -80,6 +80,7 @@ This is faster but means resources may still be terminating after the Applicatio
 
 ```yaml
 # Preview environment application - always needs cleanup
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

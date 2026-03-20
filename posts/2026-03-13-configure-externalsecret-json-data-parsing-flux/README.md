@@ -45,6 +45,7 @@ Use `remoteRef.property` to extract specific fields from a JSON secret:
 
 ```yaml
 # clusters/my-cluster/apps/myapp/externalsecret-json-extract.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

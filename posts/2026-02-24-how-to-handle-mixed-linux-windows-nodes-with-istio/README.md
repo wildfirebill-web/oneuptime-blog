@@ -83,6 +83,7 @@ Organize your namespaces to separate concerns:
 
 ```bash
 # Namespace for Linux workloads with full mesh support
+
 kubectl create namespace linux-apps
 kubectl label namespace linux-apps istio-injection=enabled
 

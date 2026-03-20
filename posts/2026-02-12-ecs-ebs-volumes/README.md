@@ -72,6 +72,7 @@ When creating the service, you specify the volume configuration in the `volumeCo
 
 ```bash
 # Create a service with an EBS volume
+
 aws ecs create-service \
   --cluster my-cluster \
   --service-name db-service \

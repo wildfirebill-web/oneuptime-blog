@@ -14,6 +14,7 @@ HCL expressions compute values dynamically from variables, resource attributes, 
 
 ```hcl
 # Resource attributes
+
 aws_s3_bucket.main.id
 aws_s3_bucket.main.arn
 aws_s3_bucket.main.bucket_regional_domain_name

@@ -73,6 +73,7 @@ Store the AWS credentials in Google Cloud Secret Manager so they are not exposed
 
 ```bash
 # Store the AWS access key ID
+
 echo -n "AKIAIOSFODNN7EXAMPLE" | gcloud secrets create aws-access-key-id \
     --data-file=- \
     --project=my-project

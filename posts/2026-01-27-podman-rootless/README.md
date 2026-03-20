@@ -68,6 +68,7 @@ Before setting up rootless Podman, ensure your system meets these requirements.
 
 ```bash
 # Verify user namespace support is enabled
+
 # This should return a number greater than 0
 cat /proc/sys/kernel/unprivileged_userns_clone
 
@@ -333,7 +334,7 @@ location = "mirror.gcr.io"
 EOF
 ```
 
-### Resource Limits with cgroups v2
+Resource Limits with cgroups v2
 
 ```bash
 # Check if cgroups v2 is enabled (required for rootless resource limits)

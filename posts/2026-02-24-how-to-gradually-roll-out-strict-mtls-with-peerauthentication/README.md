@@ -122,6 +122,7 @@ After applying STRICT to the test namespace, check for issues:
 
 ```bash
 # Check for connection errors in the proxy logs
+
 kubectl logs -n staging -l app=my-service -c istio-proxy --tail=100 | grep -i "error\|reset\|refused"
 
 # Check if services are responding

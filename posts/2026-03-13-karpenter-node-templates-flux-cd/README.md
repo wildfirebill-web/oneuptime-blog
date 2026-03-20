@@ -25,6 +25,7 @@ This post covers deploying Karpenter via Flux and defining NodePool configuratio
 
 ```yaml
 # karpenter-namespace.yaml - Create namespace for Karpenter
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -30,6 +30,7 @@ Syft from Anchore is one of the most widely used SBOM generators for containers.
 
 ```bash
 # Install Syft
+
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
 # Generate an SBOM for a Docker image in SPDX JSON format

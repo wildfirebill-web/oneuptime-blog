@@ -34,6 +34,7 @@ Before deploying any containers, create the networks they will communicate over:
 
 ```yaml
 # networks.yml - Create Docker networks for the application
+
 ---
 - name: Set Up Application Networks
   hosts: docker_hosts

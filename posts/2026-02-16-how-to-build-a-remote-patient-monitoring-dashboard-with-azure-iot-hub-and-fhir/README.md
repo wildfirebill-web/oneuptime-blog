@@ -43,6 +43,7 @@ Each patient's monitoring device needs to be registered. Here is how to register
 
 ```python
 # Register patient monitoring devices in Azure IoT Hub
+
 # Each device represents a physical monitoring device assigned to a patient
 from azure.iot.hub import IoTHubRegistryManager
 

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, mod_rpaf, Reverse Proxy, IPv4, X-Forwarded-For, Security
+Tags: Apache, Mod_rpaf, Reverse Proxy, IPv4, X-Forwarded-For, Security
 
 Description: Install and configure Apache mod_rpaf to rewrite the client IP seen by Apache applications to the real client IPv4 from X-Forwarded-For headers when behind a reverse proxy.
 
 ## Introduction
 
-When Apache sits behind a reverse proxy (like Nginx, an AWS ALB, or Cloudflare), `REMOTE_ADDR` shows the proxy's IP rather than the client's real IP. `mod_rpaf` (Reverse Proxy Add Forward) rewrites `REMOTE_ADDR` to the real client IP extracted from `X-Forwarded-For` headers — enabling accurate logging, rate limiting, and access control.
+When Apache sits behind a reverse proxy (like Nginx, an AWS ALB, or Cloudflare), `REMOTE_ADDR` shows the proxy's IP rather than the client's real IP. `mod_rpaf` (Reverse Proxy Add Forward) rewrites `REMOTE_ADDR` to the real client IP extracted from `X-Forwarded-For` headers - enabling accurate logging, rate limiting, and access control.
 
 ## Installing mod_rpaf
 
@@ -16,6 +16,7 @@ On Debian/Ubuntu:
 
 ```bash
 # Install mod_rpaf from apt
+
 sudo apt-get install libapache2-mod-rpaf
 
 # Enable the module
@@ -50,7 +51,7 @@ Create a configuration file or add to your virtual host:
     # Enable mod_rpaf
     RPAF_Enable On
 
-    # Trust these proxy IPs — only rewrite REMOTE_ADDR if the request
+    # Trust these proxy IPs - only rewrite REMOTE_ADDR if the request
     # came from one of these trusted proxies
     RPAF_ProxyIPs 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16
 
@@ -102,7 +103,7 @@ Once `mod_rpaf` is active, Apache's `Require ip` directive works with real clien
 
 ```apache
 <Location /admin>
-    Require ip 203.0.113.0/24   # Office CIDR — now uses real client IP
+    Require ip 203.0.113.0/24   # Office CIDR - now uses real client IP
     AuthType Basic
     AuthName "Admin Area"
     Require valid-user

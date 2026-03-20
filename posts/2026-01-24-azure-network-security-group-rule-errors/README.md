@@ -52,6 +52,7 @@ Every rule in an NSG must have a unique priority number.
 
 ```bash
 # List all rules with their priorities
+
 az network nsg rule list \
     --nsg-name myNSG \
     --resource-group myResourceGroup \

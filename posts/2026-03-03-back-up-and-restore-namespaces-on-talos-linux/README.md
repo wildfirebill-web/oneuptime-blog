@@ -20,6 +20,7 @@ Velero is the standard tool for Kubernetes backups, and it supports namespace-le
 
 ```bash
 # Back up the entire production namespace
+
 velero backup create production-backup \
   --include-namespaces production \
   --wait

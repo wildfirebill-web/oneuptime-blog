@@ -488,6 +488,7 @@ class ResponseSLO:
     postmortem_required: bool
 
 # Example SLO definitions
+
 response_slos = {
     Severity.P1: ResponseSLO(
         severity=Severity.P1,

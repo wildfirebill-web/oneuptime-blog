@@ -63,6 +63,7 @@ Here is a minimal configuration to enable the Query Frontend in your Tempo deplo
 # tempo.yaml - Basic Query Frontend Configuration
 
 # Enable the query-frontend target
+
 target: query-frontend
 
 # Server configuration

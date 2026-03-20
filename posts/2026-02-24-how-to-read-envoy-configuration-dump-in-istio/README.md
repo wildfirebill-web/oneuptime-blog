@@ -225,6 +225,7 @@ with open('/tmp/config_dump.json') as f:
 
 ```bash
 # List all cluster names
+
 cat /tmp/config_dump.json | python3 -m json.tool | grep '"name":' | head -30
 
 # Find circuit breaker settings

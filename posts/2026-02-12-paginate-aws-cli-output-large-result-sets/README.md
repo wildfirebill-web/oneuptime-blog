@@ -36,6 +36,7 @@ The AWS CLI automatically paginates most commands by default. When you run a com
 
 ```bash
 # This automatically pages through ALL objects
+
 aws s3api list-objects-v2 --bucket my-bucket \
   --query "Contents[].Key"
 

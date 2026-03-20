@@ -80,6 +80,7 @@ Beyond the standard Istio metrics, Envoy exposes more granular JWT-specific stat
 
 ```bash
 # Access Envoy stats for a specific pod
+
 kubectl exec -n my-app deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep jwt
 ```

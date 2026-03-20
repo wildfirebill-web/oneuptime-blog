@@ -20,6 +20,7 @@ Use the `--add` flag to add a new system connection to an existing farm:
 
 ```bash
 # Add an arm64 builder to an existing farm
+
 podman farm update --add arm64-builder my-farm
 
 # Verify the change

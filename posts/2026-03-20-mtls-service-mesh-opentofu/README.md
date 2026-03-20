@@ -27,6 +27,7 @@ graph LR
 # istio_mtls.tf
 
 # Cluster-wide strict mTLS
+
 resource "kubernetes_manifest" "peer_auth_strict" {
   manifest = {
     apiVersion = "security.istio.io/v1beta1"
@@ -41,7 +42,7 @@ resource "kubernetes_manifest" "peer_auth_strict" {
   }
 }
 
-# Override for a specific namespace — permissive during migration
+# Override for a specific namespace - permissive during migration
 resource "kubernetes_manifest" "peer_auth_permissive" {
   manifest = {
     apiVersion = "security.istio.io/v1beta1"
@@ -143,7 +144,7 @@ resource "kubernetes_namespace" "secure_apps" {
   }
 }
 
-# Linkerd Server policy — restrict who can access this service
+# Linkerd Server policy - restrict who can access this service
 resource "kubernetes_manifest" "server_policy" {
   manifest = {
     apiVersion = "policy.linkerd.io/v1beta3"
@@ -204,6 +205,6 @@ kubectl exec -it <pod> -n apps -c istio-proxy -- \
 
 - Start with `PERMISSIVE` mode during service mesh adoption to avoid breaking existing traffic, then migrate to `STRICT` namespace by namespace.
 - Use `AuthorizationPolicy` in Istio (or `ServerAuthorization` in Linkerd) to enforce which service identities can call each endpoint.
-- Service mesh certificates are short-lived (24 hours for Istio, 24 hours for Linkerd) and auto-rotated — this is a security feature, not a limitation.
-- Monitor certificate rotation via the mesh control plane metrics — alerts on failed rotations prevent service disruption.
-- Test mTLS in staging before enforcing strict mode in production — confirm all services have sidecars injected before switching to STRICT.
+- Service mesh certificates are short-lived (24 hours for Istio, 24 hours for Linkerd) and auto-rotated - this is a security feature, not a limitation.
+- Monitor certificate rotation via the mesh control plane metrics - alerts on failed rotations prevent service disruption.
+- Test mTLS in staging before enforcing strict mode in production - confirm all services have sidecars injected before switching to STRICT.

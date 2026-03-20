@@ -24,6 +24,7 @@ Let's start with a basic HTTP/1.1 connection pool configuration:
 
 ```yaml
 # envoy-connection-pool.yaml
+
 static_resources:
   listeners:
   - name: listener_0

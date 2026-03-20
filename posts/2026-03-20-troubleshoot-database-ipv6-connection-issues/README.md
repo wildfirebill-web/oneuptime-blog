@@ -8,8 +8,9 @@ Description: A systematic guide to diagnosing and resolving IPv6 connectivity is
 
 ## Common IPv6 Database Connection Errors
 
-```
+```text
 # PostgreSQL
+
 psql: error: connection to server at "2001:db8::10" (2001:db8::10), port 5432 failed:
 Connection refused
 

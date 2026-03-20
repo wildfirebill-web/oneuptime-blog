@@ -16,6 +16,7 @@ The `merge` function takes two or more maps and combines them into a single map.
 
 ```hcl
 # Combine two maps
+
 > merge({ a = "1", b = "2" }, { b = "3", c = "4" })
 {
   "a" = "1"

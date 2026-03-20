@@ -28,6 +28,7 @@ Start by figuring out whether the issue is with cluster DNS, external DNS, or th
 
 ```bash
 # Test cluster DNS (service resolution)
+
 kubectl run dns-test --rm -it --restart=Never --image=busybox:1.36 -- \
     nslookup kubernetes.default.svc.cluster.local
 

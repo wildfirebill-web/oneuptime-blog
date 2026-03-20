@@ -8,7 +8,7 @@ Description: Learn how to use dynamic blocks in OpenTofu to build ECS task defin
 
 ## Introduction
 
-AWS ECS task definitions support multiple containers — the main application container plus sidecars like log collectors, service mesh proxies, and secret injectors. Dynamic blocks let you build these container definitions from a structured list rather than a hard-coded JSON blob.
+AWS ECS task definitions support multiple containers - the main application container plus sidecars like log collectors, service mesh proxies, and secret injectors. Dynamic blocks let you build these container definitions from a structured list rather than a hard-coded JSON blob.
 
 ## Single Container with Dynamic Environment Variables
 
@@ -158,4 +158,4 @@ locals {
 
 ## Conclusion
 
-Building ECS container definitions with dynamic data rather than static JSON strings makes your task definitions versionable, reviewable, and composable. The sidecar pattern is particularly powerful — define the base application container in your module, and let callers inject additional sidecars through variables without modifying the core module logic.
+Building ECS container definitions with dynamic data rather than static JSON strings makes your task definitions versionable, reviewable, and composable. The sidecar pattern is particularly powerful - define the base application container in your module, and let callers inject additional sidecars through variables without modifying the core module logic.

@@ -55,6 +55,7 @@ If you are running Rancher on RKE2 or K3s, use the built-in snapshot mechanism:
 
 ```bash
 # For RKE2
+
 rke2 etcd-snapshot save --name pre-upgrade-snapshot
 
 # For K3s

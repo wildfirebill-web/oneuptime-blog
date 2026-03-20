@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # roles/helm_setup/tasks/main.yml
+
 # Install Helm on the control node
 ---
 - name: Download Helm installer

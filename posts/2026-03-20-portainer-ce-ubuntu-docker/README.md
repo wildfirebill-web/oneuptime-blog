@@ -68,11 +68,11 @@ sudo ufw status
 
 Open your browser and go to:
 
-```
+```text
 https://<server-ip>:9443
 ```
 
-Accept the self-signed TLS certificate warning and set up your admin account. The admin session creation window is 5 minutes — if it times out, restart the container.
+Accept the self-signed TLS certificate warning and set up your admin account. The admin session creation window is 5 minutes - if it times out, restart the container.
 
 ## Verify Portainer is Running
 
@@ -119,4 +119,4 @@ The `portainer_data` volume preserves your settings across updates.
 
 ## Conclusion
 
-Ubuntu with Docker and Portainer CE is one of the most popular self-hosted container management setups. Portainer's intuitive web UI makes it easy to deploy stacks, manage volumes and networks, and monitor containers — all without needing to memorize Docker CLI commands.
+Ubuntu with Docker and Portainer CE is one of the most popular self-hosted container management setups. Portainer's intuitive web UI makes it easy to deploy stacks, manage volumes and networks, and monitor containers - all without needing to memorize Docker CLI commands.

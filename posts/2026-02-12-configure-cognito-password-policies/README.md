@@ -42,6 +42,7 @@ Through the AWS CLI:
 
 ```bash
 # Update password policy
+
 aws cognito-idp update-user-pool \
   --user-pool-id us-east-1_XXXXXXXXX \
   --policies '{

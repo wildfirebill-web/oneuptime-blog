@@ -115,6 +115,7 @@ etcd uses the Raft consensus algorithm, which inherently provides quorum-based s
 
 ```yaml
 # etcd-cluster.yaml
+
 # Configuration for a 3-node etcd cluster with built-in quorum
 apiVersion: v1
 kind: ConfigMap

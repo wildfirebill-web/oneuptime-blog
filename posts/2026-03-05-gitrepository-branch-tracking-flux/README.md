@@ -26,6 +26,7 @@ The most straightforward GitRepository configuration tracks a single branch. Her
 
 ```yaml
 # gitrepository-main.yaml - Track the main branch
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

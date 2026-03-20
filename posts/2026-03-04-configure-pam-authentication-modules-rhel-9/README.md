@@ -50,6 +50,7 @@ RHEL uses authselect to manage PAM profiles. Look at a typical service file:
 
 ```bash
 # View the PAM configuration for the SSH service
+
 cat /etc/pam.d/sshd
 ```
 

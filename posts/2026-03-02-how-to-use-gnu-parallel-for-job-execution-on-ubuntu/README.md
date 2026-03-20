@@ -14,6 +14,7 @@ Many shell scripting tasks are embarrassingly parallel - processing a list of fi
 
 ```bash
 # Install from Ubuntu repositories
+
 sudo apt update
 sudo apt install parallel -y
 

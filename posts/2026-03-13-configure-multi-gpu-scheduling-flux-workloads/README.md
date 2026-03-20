@@ -29,6 +29,7 @@ First, label nodes with their GPU type and count to enable precise scheduling:
 
 ```bash
 # Label nodes with GPU type
+
 kubectl label node gpu-node-01 nvidia.com/gpu.product=A100-SXM4-80GB
 kubectl label node gpu-node-01 nvidia.com/gpu.count="8"
 kubectl label node gpu-node-02 nvidia.com/gpu.product=A100-SXM4-80GB

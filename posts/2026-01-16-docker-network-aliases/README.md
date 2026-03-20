@@ -29,6 +29,7 @@ flowchart TB
 
 ```bash
 # Create network
+
 docker network create mynet
 
 # Run container with aliases

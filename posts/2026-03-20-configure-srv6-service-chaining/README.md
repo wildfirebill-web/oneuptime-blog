@@ -27,6 +27,7 @@ Each network function node must own a SID and configure the corresponding End.X 
 
 ```bash
 # On the IDS node (5f00:svc:1::/48 is IDS locator)
+
 ip -6 addr add 5f00:svc:1::1/128 dev lo
 ip -6 route add 5f00:svc:1:0:e001::/128 \
   encap seg6local action End.X \
@@ -119,7 +120,7 @@ for svc in "${SERVICES[@]}"; do
   if ping6 -c 2 -W 2 "$addr" > /dev/null 2>&1; then
     echo "OK: $name ($addr)"
   else
-    echo "FAIL: $name ($addr) — service chain broken!"
+    echo "FAIL: $name ($addr) - service chain broken!"
   fi
 done
 ```

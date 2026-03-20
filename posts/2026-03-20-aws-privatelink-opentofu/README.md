@@ -23,9 +23,10 @@ graph LR
 ## Provider: Endpoint Service
 
 ```hcl
-# provider_service.tf — the VPC that hosts the service
+# provider_service.tf - the VPC that hosts the service
 
 # NLB is required as the front-end for PrivateLink endpoint services
+
 resource "aws_lb" "privatelink" {
   name               = "${var.service_name}-privatelink-nlb"
   internal           = true
@@ -96,7 +97,7 @@ output "endpoint_service_name" {
 ## Consumer: Interface Endpoint
 
 ```hcl
-# consumer_endpoint.tf — the VPC that consumes the service
+# consumer_endpoint.tf - the VPC that consumes the service
 
 resource "aws_security_group" "endpoint" {
   name        = "${var.service_name}-endpoint"
@@ -143,7 +144,7 @@ output "endpoint_dns" {
 ## Cross-Account PrivateLink
 
 ```hcl
-# cross_account.tf — provider accepts consumer from another account
+# cross_account.tf - provider accepts consumer from another account
 
 # Provider allows consumer account to create endpoints
 resource "aws_vpc_endpoint_service_allowed_principal" "consumer" {
@@ -171,8 +172,8 @@ resource "aws_vpc_endpoint_connection_accepter" "consumer" {
 
 ## Best Practices
 
-- Use `acceptance_required = true` for services shared across accounts — this requires manual or automated approval before a consumer can connect, preventing unauthorized access.
-- Enable `private_dns_enabled = true` on interface endpoints — this creates a private Route 53 hosted zone so applications can use the service's original DNS name without code changes.
-- Use network load balancers with `enable_cross_zone_load_balancing = true` — without cross-zone balancing, consumers in AZs without healthy targets will experience failures.
-- Scope `allowed_principals` to specific accounts rather than using `"*"` — PrivateLink visibility and access should be explicitly granted, not open to all accounts.
+- Use `acceptance_required = true` for services shared across accounts - this requires manual or automated approval before a consumer can connect, preventing unauthorized access.
+- Enable `private_dns_enabled = true` on interface endpoints - this creates a private Route 53 hosted zone so applications can use the service's original DNS name without code changes.
+- Use network load balancers with `enable_cross_zone_load_balancing = true` - without cross-zone balancing, consumers in AZs without healthy targets will experience failures.
+- Scope `allowed_principals` to specific accounts rather than using `"*"` - PrivateLink visibility and access should be explicitly granted, not open to all accounts.
 - Test connectivity from the consumer VPC using `nslookup` to verify private DNS resolution works before your application connects.

@@ -46,6 +46,7 @@ Envoy's circuit breaker configuration lives in the cluster definition. These set
 
 ```yaml
 # envoy.yaml - Basic circuit breaker configuration
+
 static_resources:
   clusters:
     - name: backend_service

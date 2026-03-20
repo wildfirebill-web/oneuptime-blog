@@ -28,6 +28,7 @@ This runbook follows a standard incident response workflow: detect, assess, diag
 
 ```bash
 # Check scope of impact
+
 kubectl get pods -A --field-selector status.phase!=Running | grep -v Completed | wc -l
 
 # Check how many nodes are affected

@@ -14,6 +14,7 @@ CentOS Stream is a rolling-release distribution that tracks ahead of RHEL minor 
 
 ```bash
 # Verify the current CentOS Stream version
+
 cat /etc/redhat-release
 # Example: CentOS Stream release 9
 

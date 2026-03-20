@@ -24,6 +24,7 @@ Rate limit information comes in the HTTP response headers:
 
 ```bash
 # Make an API call and inspect rate limit headers
+
 curl -s -D- \
   --header "Authorization: Bearer $TF_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

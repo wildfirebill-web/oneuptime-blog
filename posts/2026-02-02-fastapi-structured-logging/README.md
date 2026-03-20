@@ -18,6 +18,7 @@ Here's the difference between traditional and structured logs:
 
 ```text
 # Traditional log
+
 2026-02-02 10:15:23 INFO User logged in
 
 # Structured log

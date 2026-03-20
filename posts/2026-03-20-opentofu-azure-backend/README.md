@@ -1,8 +1,8 @@
-# How to Configure the Azure Backend (azurerm) in OpenTofu
+# How to Configure the Azure Backend (azurerm) in OpenTofu - Opentofu Azure
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, Azure
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, Azure
 
 Description: Learn how to configure the Azure Blob Storage backend (azurerm) in OpenTofu to store state files with built-in locking and versioning.
 
@@ -60,6 +60,7 @@ resource "azurerm_storage_container" "tfstate" {
 
 ```bash
 # Log in with Azure CLI
+
 az login
 
 # Set the subscription

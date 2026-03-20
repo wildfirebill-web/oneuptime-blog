@@ -1,4 +1,4 @@
-# How to Write Negative Tests for OpenTofu Configurations
+# How to Write Negative Tests for OpenTofu Configurations - Configurations
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Given a variable with validation:
 
 ```hcl
 # variables.tf
+
 variable "environment" {
   type        = string
   description = "Deployment environment"

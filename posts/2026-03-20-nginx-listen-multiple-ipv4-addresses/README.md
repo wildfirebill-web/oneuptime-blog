@@ -14,6 +14,7 @@ A server with multiple IPv4 addresses (multi-homed) can run Nginx with different
 
 ```nginx
 # Same content served on two different IPs
+
 server {
     listen 192.168.1.100:80;
     listen 10.0.0.10:80;

@@ -35,6 +35,7 @@ The simplest form of auto scaling is storage auto scaling. When your RDS instanc
 
 ```hcl
 # Configure the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

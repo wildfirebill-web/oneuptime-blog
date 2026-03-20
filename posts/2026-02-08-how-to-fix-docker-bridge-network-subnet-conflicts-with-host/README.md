@@ -26,6 +26,7 @@ Check what subnets Docker is currently using:
 
 ```bash
 # List all Docker networks and their subnets
+
 docker network ls
 docker network inspect bridge --format '{{range .IPAM.Config}}{{.Subnet}}{{end}}'
 

@@ -33,6 +33,7 @@ Create buckets for raw and processed images:
 
 ```bash
 # Bucket for raw uploaded images
+
 gsutil mb -l us-central1 gs://my-project-raw-images/
 
 # Bucket for processed/resized images

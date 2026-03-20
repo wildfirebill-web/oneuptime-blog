@@ -262,6 +262,7 @@ Different environments need different load levels. Use Kustomize to manage this:
 
 ```yaml
 # base/load-test-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -349,7 +350,7 @@ command:
     exit $result
 ```
 
-## Resource Limits for Load Test Jobs
+Resource Limits for Load Test Jobs
 
 Load test tools can consume significant resources. Always set resource limits to prevent them from impacting your application:
 

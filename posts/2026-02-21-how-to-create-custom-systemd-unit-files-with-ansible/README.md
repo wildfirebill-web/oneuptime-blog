@@ -24,6 +24,7 @@ A minimal unit file for a custom application:
 
 ```ini
 # /etc/systemd/system/myapp.service
+
 [Unit]
 Description=My Custom Application
 After=network.target

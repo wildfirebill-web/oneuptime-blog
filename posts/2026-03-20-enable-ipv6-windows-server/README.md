@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows Server, Network Configuration, PowerShell, netsh
+Tags: IPv6, Windows Server, Network Configuration, PowerShell, Netsh
 
 Description: Learn how to enable and verify IPv6 on Windows Server through the GUI, PowerShell, and netsh, including configuring IPv6 for production server roles.
 
@@ -12,6 +12,7 @@ IPv6 is enabled by default on Windows Server. However, it may be disabled via re
 
 ```powershell
 # Check if IPv6 is enabled on network adapters
+
 Get-NetAdapterBinding -ComponentID ms_tcpip6
 
 # Output shows Enabled=True/False for each adapter:

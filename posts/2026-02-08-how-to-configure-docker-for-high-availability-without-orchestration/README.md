@@ -38,6 +38,7 @@ Create the HAProxy configuration:
 
 ```cfg
 # /etc/haproxy/haproxy.cfg
+
 # Load balancer configuration for Docker high availability
 
 global

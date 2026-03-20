@@ -8,7 +8,7 @@ Description: Understand the unique privacy considerations for IPv6 in enterprise
 
 ## Introduction
 
-IPv6 privacy in enterprises is a nuanced topic. While the internet-facing privacy concerns (ISP tracking, cross-site correlation) are well understood, enterprises also have legitimate internal security needs — intrusion detection, incident response, and asset tracking — that can conflict with strong privacy settings. This guide explores how to balance both.
+IPv6 privacy in enterprises is a nuanced topic. While the internet-facing privacy concerns (ISP tracking, cross-site correlation) are well understood, enterprises also have legitimate internal security needs - intrusion detection, incident response, and asset tracking - that can conflict with strong privacy settings. This guide explores how to balance both.
 
 ## The Enterprise Privacy Tension
 
@@ -35,6 +35,7 @@ For employee devices, the primary concern is tracking by external websites and s
 
 ```bash
 # On enterprise workstations: use stable-privacy (not rotating temp addresses)
+
 # addr_gen_mode=2 gives a stable-but-opaque IID that cannot be reverse-engineered
 # from the MAC address, yet is stable enough for IPAM and incident response
 
@@ -44,7 +45,7 @@ sudo sysctl -w net.ipv6.conf.all.addr_gen_mode=2
 
 ## Use Case 2: Servers and Infrastructure
 
-Servers should NOT use privacy extensions — they need stable, predictable addresses for DNS, monitoring, and load balancing.
+Servers should NOT use privacy extensions - they need stable, predictable addresses for DNS, monitoring, and load balancing.
 
 ```bash
 # For servers: disable privacy extensions
@@ -77,10 +78,10 @@ interface guest0 {
 
 Even with privacy extensions enabled, enterprise security teams retain visibility through:
 
-1. **DHCPv6 logs** — record address-to-device mappings when DHCPv6 is used
-2. **NDv6 (Neighbor Discovery) tables** — map IPv6 addresses to MAC addresses at the layer-2 boundary
-3. **NetFlow/IPFIX** — capture traffic flows without requiring stable IIDs
-4. **DNS logs** — if clients register dynamically, track current address via DNS
+1. **DHCPv6 logs** - record address-to-device mappings when DHCPv6 is used
+2. **NDv6 (Neighbor Discovery) tables** - map IPv6 addresses to MAC addresses at the layer-2 boundary
+3. **NetFlow/IPFIX** - capture traffic flows without requiring stable IIDs
+4. **DNS logs** - if clients register dynamically, track current address via DNS
 
 ```bash
 # Check the IPv6 neighbor cache on a router/switch to correlate IID to MAC
@@ -100,7 +101,7 @@ ip -6 neigh show | grep "2001:db8:"
 | HIPAA | Requires controlling access to patient systems - stable IIDs aid audit trails |
 | PCI DSS | Stable addressing required for cardholder data environment systems |
 
-For GDPR, EUI-64 addresses constitute personal data because they directly encode hardware identifiers. RFC 7217 addresses are pseudonymous — they can be de-anonymized internally but not externally.
+For GDPR, EUI-64 addresses constitute personal data because they directly encode hardware identifiers. RFC 7217 addresses are pseudonymous - they can be de-anonymized internally but not externally.
 
 ## Recommended Enterprise IPv6 Privacy Policy
 

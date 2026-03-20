@@ -80,6 +80,7 @@ Talos uses a YAML-based machine configuration. To enable the external AWS cloud 
 
 ```bash
 # Generate Talos machine configuration for AWS
+
 talosctl gen config my-cluster https://my-cluster-endpoint:6443 \
   --config-patch='[
     {"op": "add", "path": "/cluster/externalCloudProvider", "value": {

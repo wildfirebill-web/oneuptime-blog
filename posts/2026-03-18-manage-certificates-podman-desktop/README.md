@@ -25,6 +25,7 @@ Podman needs certificates when connecting to:
 
 ```bash
 # Check if you can pull from a private registry
+
 podman pull registry.company.com/my-image:latest
 
 # If you see "x509: certificate signed by unknown authority"

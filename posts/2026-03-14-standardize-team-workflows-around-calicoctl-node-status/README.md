@@ -38,6 +38,7 @@ Define clear triggers for running this command:
 ```bash
 #!/bin/bash
 # team-bgp-check.sh
+
 # Standard team script for BGP health assessment
 
 echo "=== BGP Health Check ==="

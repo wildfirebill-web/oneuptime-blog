@@ -17,12 +17,13 @@ Network bonding aggregates multiple physical interfaces into a single logical in
 - Netplan installed (default on Ubuntu)
 - Root access
 
-## Active-Backup Bond (Mode 1) — High Availability
+## Active-Backup Bond (Mode 1) - High Availability
 
 Active-backup keeps one interface active; the other takes over on failure:
 
 ```yaml
 # /etc/netplan/01-bond.yaml
+
 network:
   version: 2
   renderer: networkd
@@ -51,7 +52,7 @@ network:
         mii-monitor-interval: 100
 ```
 
-## LACP Bond (Mode 4) — Link Aggregation
+## LACP Bond (Mode 4) - Link Aggregation
 
 Requires switch support for LACP (802.3ad):
 
@@ -80,7 +81,7 @@ network:
         transmit-hash-policy: layer3+4
 ```
 
-## Round-Robin Bond (Mode 0) — Load Balancing
+## Round-Robin Bond (Mode 0) - Load Balancing
 
 Sends packets to each interface in turn:
 

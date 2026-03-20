@@ -30,6 +30,7 @@ Each container group can request 1 to 4 GPUs, depending on the SKU and region.
 
 ```bash
 # Deploy a container with 1 NVIDIA V100 GPU
+
 az container create \
     --resource-group my-resource-group \
     --name gpu-container \

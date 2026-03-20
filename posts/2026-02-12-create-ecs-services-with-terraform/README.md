@@ -18,6 +18,7 @@ The cluster is the logical grouping for your services. With Fargate, it's mostly
 
 ```hcl
 # ECS Cluster with Container Insights enabled
+
 resource "aws_ecs_cluster" "main" {
   name = "myapp-cluster"
 

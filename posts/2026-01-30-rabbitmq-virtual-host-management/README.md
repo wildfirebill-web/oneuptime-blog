@@ -93,6 +93,7 @@ The `rabbitmqctl` command is the primary tool for managing RabbitMQ from the com
 
 ```bash
 # Create a new virtual host
+
 rabbitmqctl add_vhost /production
 
 # Create vhost with description and tags
@@ -191,7 +192,7 @@ curl -u admin:password -X DELETE \
   http://localhost:15672/api/permissions/%2Ftenant-acme/acme-app
 ```
 
-## Resource Limits and Quotas
+Resource Limits and Quotas
 
 RabbitMQ 3.8+ supports per-vhost resource limits. This prevents a single tenant from consuming all broker resources.
 

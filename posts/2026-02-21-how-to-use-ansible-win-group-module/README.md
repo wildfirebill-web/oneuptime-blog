@@ -16,6 +16,7 @@ Creating a local group is straightforward. You specify the group name and set th
 
 ```yaml
 # create-groups.yml - Create local groups on Windows
+
 ---
 - name: Create local groups
   hosts: windows_servers

@@ -64,6 +64,7 @@ You need Go 1.21 or later and the Falco plugin SDK.
 
 ```bash
 # Verify Go installation
+
 go version
 
 # Create a new plugin project

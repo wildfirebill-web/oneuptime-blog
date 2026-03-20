@@ -18,6 +18,7 @@ While `podman generate kube` produces a Pod manifest by default, you can use the
 
 ```bash
 # Run a container locally
+
 podman run -d --name web-app \
   -p 8080:80 \
   -e APP_ENV=production \

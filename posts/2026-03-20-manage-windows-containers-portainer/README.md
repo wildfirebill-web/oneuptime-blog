@@ -99,6 +99,7 @@ Windows containers support multiple networking modes:
 
 ```powershell
 # Create a NAT network (default for Windows containers)
+
 docker network create --driver nat my-nat-network
 
 # Create a transparent network (direct access to physical network)

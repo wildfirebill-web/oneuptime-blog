@@ -8,7 +8,7 @@ Description: Learn how to manage staging environments with OpenTofu that closely
 
 ---
 
-Staging environments catch issues that dev environments miss. But staging that doesn't mirror production closely enough gives false confidence. OpenTofu enables you to share configuration between staging and production — differing only in scale — ensuring staging is a true production replica at reduced cost.
+Staging environments catch issues that dev environments miss. But staging that doesn't mirror production closely enough gives false confidence. OpenTofu enables you to share configuration between staging and production - differing only in scale - ensuring staging is a true production replica at reduced cost.
 
 ## Staging Configuration Strategy
 
@@ -16,6 +16,7 @@ The key is using the same module as production with different variables.
 
 ```hcl
 # environments/staging/main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -42,7 +43,7 @@ provider "aws" {
   }
 }
 
-# Same modules as production — different variables
+# Same modules as production - different variables
 module "network" {
   source      = "../../modules/network"
   environment = "staging"
@@ -149,7 +150,7 @@ resource "aws_cloudwatch_event_rule" "refresh_trigger" {
 
 ## Best Practices
 
-- Use the same application Docker image in staging as production — the only difference should be infrastructure scale.
+- Use the same application Docker image in staging as production - the only difference should be infrastructure scale.
 - Match production's engine/runtime versions exactly in staging to catch version-specific bugs.
 - Refresh staging data regularly from production (with PII masked) to keep it realistic.
 - Run load tests against staging before production releases to validate auto-scaling behavior.

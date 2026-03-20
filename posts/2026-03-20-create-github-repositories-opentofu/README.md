@@ -27,10 +27,11 @@ provider "github" {
 }
 ```
 
-## Resource Configuration
+Resource Configuration
 
 ```hcl
 # Branch protection example
+
 resource "github_branch_protection" "main" {
   repository_id = var.repository_id
   pattern       = "main"

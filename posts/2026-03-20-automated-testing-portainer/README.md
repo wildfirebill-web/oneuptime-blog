@@ -14,6 +14,7 @@ Automated testing in Docker containers ensures every developer and CI/CD system 
 
 ```yaml
 # docker-compose.test.yml - Unit test configuration
+
 version: "3.8"
 
 services:
@@ -263,7 +264,7 @@ services:
       retries: 5
 ```
 
-## Step 5: CI Integration — Run Tests via Portainer API
+## Step 5: CI Integration - Run Tests via Portainer API
 
 ```bash
 #!/bin/bash

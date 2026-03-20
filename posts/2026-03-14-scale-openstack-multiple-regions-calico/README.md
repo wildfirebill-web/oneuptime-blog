@@ -30,6 +30,7 @@ For multi-region scale, use a two-tier route reflector hierarchy: regional refle
 
 ```yaml
 # super-reflector.yaml
+
 # Top-tier route reflector for cross-region route distribution
 apiVersion: projectcalico.org/v3
 kind: Node

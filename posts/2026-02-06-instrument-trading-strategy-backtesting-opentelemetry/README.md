@@ -55,6 +55,7 @@ import time
 from datetime import datetime
 
 # Metrics for backtest performance
+
 backtest_duration = meter.create_histogram(
     name="backtest.total_duration_seconds",
     description="Total wall-clock time for a backtest run",

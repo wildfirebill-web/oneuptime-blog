@@ -12,7 +12,7 @@ BGP IPv6 peering failures can occur at multiple layers: TCP connectivity, addres
 
 ## BGP Session States
 
-```
+```text
 Idle → Connect → Active → OpenSent → OpenConfirm → Established
 ```
 
@@ -22,6 +22,7 @@ If a session is stuck in any state other than Established, something is preventi
 
 ```bash
 # FRRouting
+
 vtysh -c "show bgp ipv6 unicast summary"
 
 # Cisco

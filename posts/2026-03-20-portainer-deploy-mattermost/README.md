@@ -1,4 +1,4 @@
-# How to Deploy Mattermost via Portainer
+# How to Deploy Mattermost via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -85,8 +85,8 @@ By default, Mattermost creates `#town-square` and `#off-topic`. Add more:
 1. Click **+** next to **Channels**
 2. Create channels for:
    - `#engineering`, `#general`, `#random`
-   - `#ops-alerts` — For monitoring alerts
-   - `#deployments` — For CI/CD notifications
+   - `#ops-alerts` - For monitoring alerts
+   - `#deployments` - For CI/CD notifications
 
 ## Integrations
 

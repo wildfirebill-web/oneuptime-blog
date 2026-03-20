@@ -103,6 +103,7 @@ Deploy the function with an HTTP trigger.
 
 ```bash
 # Deploy the Cloud Function (2nd gen)
+
 gcloud functions deploy cleanup-expired-sessions \
   --gen2 \
   --runtime=nodejs20 \

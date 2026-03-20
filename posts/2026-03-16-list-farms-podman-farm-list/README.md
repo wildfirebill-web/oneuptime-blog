@@ -18,6 +18,7 @@ When managing multiple build farms for different projects or environments, you n
 
 ```bash
 # List all configured farms
+
 podman farm list
 ```
 

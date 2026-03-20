@@ -28,7 +28,7 @@ Before configuring, design address ranges that align with bit boundaries. A good
 
 Use `area range` to configure inter-area summarization on the ABR:
 
-```
+```text
 ! On ABR connecting Area 1 to Area 0
 ABR(config)# router ospf 1
 ! Summarize all Area 1 prefixes into a single /16
@@ -41,7 +41,7 @@ The ABR now advertises only `10.1.0.0/16` into Area 0 instead of each individual
 
 If you want to prevent the summary from being advertised (useful during testing or to temporarily hide an area):
 
-```
+```text
 ! Do not advertise the summary (useful for filtering)
 ABR(config-router)# area 1 range 10.1.0.0 255.255.0.0 not-advertise
 ```
@@ -52,7 +52,7 @@ This suppresses both the summary and the component routes from other areas.
 
 The default summary cost is the highest cost among the component routes. Override it:
 
-```
+```text
 ! Explicitly set the summary cost
 ABR(config-router)# area 1 range 10.1.0.0 255.255.0.0 cost 50
 ```
@@ -61,7 +61,7 @@ This is useful when multiple ABRs serve the same area and you need to influence 
 
 ## Step 5: Verify Summarization
 
-```
+```text
 ! On Area 0 router - check if summary is visible
 R0# show ip route ospf
 
@@ -81,7 +81,7 @@ ABR# show ip ospf database summary | include 10.1
 
 When an ABR creates a summary, it also installs a Null route for the summary prefix. This prevents routing loops if no specific component route exists:
 
-```
+```text
 ABR# show ip route 10.1.0.0
 
 Routing entry for 10.1.0.0/16
@@ -92,7 +92,7 @@ Routing entry for 10.1.0.0/16
     Route metric is 0, traffic share count is 1
 ```
 
-This Null route is automatically created—it's normal behavior, not a problem.
+This Null route is automatically created-it's normal behavior, not a problem.
 
 ## Summarization vs. Aggregation
 

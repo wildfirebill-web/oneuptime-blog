@@ -18,6 +18,7 @@ Before configuring STONITH, make sure you have a working Pacemaker/Corosync clus
 
 ```bash
 # Install cluster stack on both nodes
+
 sudo apt update
 sudo apt install -y pacemaker corosync pcs
 

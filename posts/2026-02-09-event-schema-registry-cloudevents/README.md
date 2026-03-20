@@ -22,6 +22,7 @@ Deploy Schema Registry on Kubernetes:
 
 ```yaml
 # schema-registry-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

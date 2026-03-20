@@ -16,6 +16,7 @@ This guide covers creating LimitRanges with Terraform for containers, pods, and 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

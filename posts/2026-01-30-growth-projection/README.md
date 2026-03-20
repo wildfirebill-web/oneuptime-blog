@@ -69,6 +69,7 @@ Start with at least 12 months of historical data. More is better. You need enoug
 
 ```python
 # Pull historical metrics from your monitoring system
+
 import pandas as pd
 from datetime import datetime, timedelta
 

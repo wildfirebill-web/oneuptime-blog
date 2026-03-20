@@ -37,6 +37,7 @@ Standard port groups need to be created on each ESXi host individually. Ansible 
 
 ```yaml
 # create-standard-portgroup.yml
+
 ---
 - name: Create standard port groups on all ESXi hosts
   hosts: localhost

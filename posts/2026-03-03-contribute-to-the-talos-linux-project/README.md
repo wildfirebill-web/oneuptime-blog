@@ -27,6 +27,7 @@ Before contributing, familiarize yourself with the Talos repositories on GitHub.
 
 ```bash
 # Clone the main repository
+
 git clone https://github.com/siderolabs/talos.git
 cd talos
 

@@ -14,6 +14,7 @@ npm packages can be installed globally (available system-wide) or locally (proje
 
 ```bash
 # Local installation (default)
+
 npm install express
 
 # Global installation

@@ -353,6 +353,7 @@ Test your routing with curl:
 
 ```bash
 # Should hit v1 (default)
+
 curl http://user-api/api/users
 
 # Should hit v2

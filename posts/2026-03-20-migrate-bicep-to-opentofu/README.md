@@ -16,6 +16,7 @@ Audit existing Bicep deployments.
 
 ```bash
 # List current deployments
+
 az deployment group list \
   --resource-group myapp-prod-rg \
   --output table
@@ -80,7 +81,7 @@ resource "azurerm_storage_account" "main" {
 
 ## Bicep to OpenTofu Concept Mapping
 
-```
+```text
 Bicep                    → OpenTofu
 --------------------------------------------
 param                    → variable

@@ -66,6 +66,7 @@ set -e
 
 echo "=== Disabling swap ==="
 # Kubernetes requires swap to be disabled
+
 swapoff -a
 # Remove swap entries from fstab to persist across reboots
 sed -i '/swap/d' /etc/fstab

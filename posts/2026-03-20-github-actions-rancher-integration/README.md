@@ -26,6 +26,7 @@ Create a dedicated service account and extract a kubeconfig file for use in GitH
 
 ```bash
 # Create namespace and service account
+
 kubectl create namespace my-app
 kubectl create serviceaccount github-deploy -n my-app
 
@@ -84,9 +85,9 @@ EOF
 
 In your GitHub repository go to **Settings > Secrets and variables > Actions** and add:
 
-- `KUBECONFIG_DATA` — the base64 content of `kubeconfig.b64`
-- `REGISTRY_USERNAME` — container registry username
-- `REGISTRY_PASSWORD` — container registry password
+- `KUBECONFIG_DATA` - the base64 content of `kubeconfig.b64`
+- `REGISTRY_USERNAME` - container registry username
+- `REGISTRY_PASSWORD` - container registry password
 
 ---
 
@@ -175,6 +176,6 @@ After deploying, run a basic health check before marking the job successful:
 ## Best Practices
 
 - Use **GitHub Environments** with required reviewers for production deployments.
-- Limit the service account to only the namespaces it needs — never use `cluster-admin`.
+- Limit the service account to only the namespaces it needs - never use `cluster-admin`.
 - Rotate the kubeconfig secret on a schedule using GitHub Actions itself or a secrets manager.
 - Store image digests (not tags) in production manifests for deterministic deploys.

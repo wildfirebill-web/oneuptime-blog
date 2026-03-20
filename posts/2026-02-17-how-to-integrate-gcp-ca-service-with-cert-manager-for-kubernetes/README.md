@@ -41,6 +41,7 @@ If you do not have cert-manager installed yet:
 
 ```bash
 # Install cert-manager using Helm
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 

@@ -24,6 +24,7 @@ First, make sure PITR is enabled on your Cloud SQL instance. It requires binary 
 
 ```bash
 # Enable PITR for a PostgreSQL instance
+
 gcloud sql instances patch my-production-db \
   --enable-point-in-time-recovery \
   --retained-transaction-log-days=7

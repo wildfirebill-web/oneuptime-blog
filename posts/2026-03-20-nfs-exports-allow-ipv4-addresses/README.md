@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, Exports, Access Control, Linux, File Sharing
+Tags: NFS, IPv4, Export, Access Control, Linux, File Sharing
 
 Description: Configure /etc/exports to allow NFS access from specific IPv4 addresses and subnets, set mount options, and reload the NFS server to apply changes.
 
@@ -14,6 +14,7 @@ NFS access control is primarily managed through `/etc/exports`. Each exported di
 
 ```bash
 # /etc/exports format:
+
 # /path/to/share  client(options) [client2(options2)]
 
 # Allow a single IPv4 address
@@ -101,7 +102,7 @@ sudo showmount -e 203.0.113.10
 ## Security Best Practices
 
 ```bash
-# /etc/exports — security-focused configuration
+# /etc/exports - security-focused configuration
 
 # Use sync to avoid data loss on server crash
 /srv/data  10.0.0.0/24(rw,sync,no_subtree_check,root_squash)

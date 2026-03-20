@@ -30,6 +30,7 @@ Enable audit logging for the relevant services through the IAM audit config:
 
 ```bash
 # Get the current IAM policy
+
 gcloud projects get-iam-policy PROJECT_ID --format=json > policy.json
 ```
 

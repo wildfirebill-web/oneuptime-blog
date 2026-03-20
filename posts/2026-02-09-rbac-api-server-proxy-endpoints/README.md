@@ -36,6 +36,7 @@ Start with the most common and least dangerous proxy operation: reading logs.
 
 ```yaml
 # log-reader-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

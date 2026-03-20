@@ -509,6 +509,7 @@ Check pod affinity effectiveness:
 
 ```bash
 # List nodes with the DaemonSet
+
 kubectl get pods -n monitoring -l app=db-monitor -o wide
 
 # Verify co-location with target workloads

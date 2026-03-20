@@ -37,6 +37,7 @@ Generate an RSA key pair. The public key goes to CloudFront. The private key sta
 
 ```bash
 # Generate a 2048-bit RSA private key
+
 openssl genrsa -out private_key.pem 2048
 
 # Extract the public key

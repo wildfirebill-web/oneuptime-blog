@@ -14,6 +14,7 @@ The Pilot Light DR strategy keeps core critical components (databases, AMIs) run
 
 ```hcl
 # main.tf - Pilot light DR setup
+
 # Only the database replica runs continuously in DR
 resource "aws_db_instance" "pilot_light" {
   provider            = aws.dr

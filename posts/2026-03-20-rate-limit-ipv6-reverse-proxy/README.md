@@ -8,11 +8,11 @@ Description: Configure rate limiting for IPv6 clients at the reverse proxy layer
 
 ## Introduction
 
-Rate limiting IPv6 clients is more complex than IPv4 because a single user can legitimately rotate between thousands of addresses within a /64 prefix. Rate limiting by individual /128 address is ineffective — an attacker cycles through addresses while a legitimate mobile user gets blocked. The correct approach is to rate limit by /48 or /64 prefix at the reverse proxy.
+Rate limiting IPv6 clients is more complex than IPv4 because a single user can legitimately rotate between thousands of addresses within a /64 prefix. Rate limiting by individual /128 address is ineffective - an attacker cycles through addresses while a legitimate mobile user gets blocked. The correct approach is to rate limit by /48 or /64 prefix at the reverse proxy.
 
 ## The IPv6 Rate Limiting Challenge
 
-```
+```text
 IPv4: 1 user = 1 IP (e.g., 203.0.113.5)
 IPv6: 1 user = /64 prefix with 2^64 addresses
       e.g., 2001:db8:cafe:1::/64
@@ -122,7 +122,7 @@ frontend web_ipv6
     # Use src_get_gpc0 for tracking
     stick-table type ipv6 size 1m expire 60s store conn_rate(60s),http_req_rate(60s)
 
-    # Track by /48 prefix — HAProxy uses full address but can mask
+    # Track by /48 prefix - HAProxy uses full address but can mask
     # For /48 masking: use custom maps or track per connection
     tcp-request connection track-sc0 src mask ffff:ffff:ffff::
 
@@ -213,6 +213,7 @@ class IPv6PrefixRateLimiter:
         return True
 
 # Usage
+
 limiter = IPv6PrefixRateLimiter(max_requests=100, window_seconds=60)
 
 def check_rate_limit(client_ip: str) -> bool:

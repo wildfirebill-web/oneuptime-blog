@@ -41,6 +41,7 @@ sudo vi /etc/security/pwquality.conf
 
 ```bash
 # Minimum password length
+
 minlen = 14
 
 # Minimum number of character classes (lowercase, uppercase, digit, special)

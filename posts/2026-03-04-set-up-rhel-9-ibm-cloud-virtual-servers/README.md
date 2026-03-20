@@ -14,6 +14,7 @@ IBM Cloud provides RHEL as a stock image for Virtual Servers for VPC (Virtual Pr
 
 ```bash
 # Using IBM Cloud CLI
+
 ibmcloud login
 
 # Create a VPC (if not existing)

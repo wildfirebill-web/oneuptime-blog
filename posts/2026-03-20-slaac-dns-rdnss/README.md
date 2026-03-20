@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RDNSS, SLAAC, DNS, IPv6, RFC 8106, radvd
+Tags: RDNSS, SLAAC, DNS, IPv6, RFC 8106, Radvd
 
 Description: Configure DNS server distribution via the RDNSS option in IPv6 Router Advertisements, allowing hosts to obtain DNS configuration without DHCPv6.
 
@@ -12,7 +12,7 @@ The RDNSS (Recursive DNS Server) option (RFC 8106) allows IPv6 routers to includ
 
 ## RDNSS Option Format
 
-```
+```text
 RDNSS Option (Type 25) Wire Format:
 
  0                   1                   2                   3
@@ -46,6 +46,7 @@ DNSSL Option (Type 31):
 
 ```bash
 # Add RDNSS and DNSSL to radvd configuration
+
 cat > /etc/radvd.conf << 'EOF'
 interface eth1 {
     AdvSendAdvert on;
@@ -87,7 +88,7 @@ sudo radvdump
 
 ## Configuring RDNSS on Cisco Routers
 
-```
+```text
 ! Configure RDNSS on Cisco IOS router interface
 interface GigabitEthernet0/1
  ! Add DNS servers to RA
@@ -132,7 +133,7 @@ sudo tcpdump -i eth0 -vv "icmp6 and ip6[40] == 134" | grep -A 5 "rdnss\|dns"
 
 ## RDNSS Lifetime Considerations
 
-```
+```text
 RDNSS Lifetime Best Practices:
 
 Problem: Host must not use expired DNS server
@@ -161,7 +162,7 @@ Setting lifetime=0:
 
 ## RDNSS vs DHCPv6 for DNS
 
-```
+```text
 DNS Distribution: RDNSS vs DHCPv6
 
 RDNSS (RA Option):

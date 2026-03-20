@@ -26,6 +26,7 @@ Rancher includes a Submariner integration. In the Rancher UI, go to **Cluster Ma
 
 ```bash
 # Install the subctl CLI
+
 curl -Ls https://get.submariner.io | bash
 export PATH=$PATH:~/.local/bin
 
@@ -130,6 +131,6 @@ kubectl get serviceimport -n payments --kubeconfig cluster2.yaml
 ## Best Practices
 
 - Keep pod CIDRs unique across all clusters to avoid routing conflicts (use `/20` per cluster from a `/16` range).
-- Use **GlobalNet** mode only when CIDR overlap is unavoidable — it adds NAT overhead.
+- Use **GlobalNet** mode only when CIDR overlap is unavoidable - it adds NAT overhead.
 - Export only the services that need cross-cluster access, not everything.
-- Monitor Submariner gateway pod CPU and memory — it handles all cross-cluster traffic.
+- Monitor Submariner gateway pod CPU and memory - it handles all cross-cluster traffic.

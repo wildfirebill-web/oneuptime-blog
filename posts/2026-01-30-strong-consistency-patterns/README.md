@@ -1199,6 +1199,7 @@ SET CLUSTER SETTING kv.follower_read.enabled = false;
 
 ```yaml
 # etcd cluster configuration
+
 name: node1
 initial-cluster: node1=http://10.0.0.1:2380,node2=http://10.0.0.2:2380,node3=http://10.0.0.3:2380
 initial-cluster-state: new

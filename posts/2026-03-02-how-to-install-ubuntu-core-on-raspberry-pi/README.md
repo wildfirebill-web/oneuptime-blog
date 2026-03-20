@@ -42,6 +42,7 @@ Ubuntu Core's first-boot authentication uses your Ubuntu One account and SSH key
 
 ```bash
 # On your workstation, display your public key
+
 cat ~/.ssh/id_ed25519.pub
 # Paste this output into the Ubuntu One SSH keys section
 ```

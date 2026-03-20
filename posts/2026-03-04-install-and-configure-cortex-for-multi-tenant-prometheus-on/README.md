@@ -20,6 +20,7 @@ Cortex for Multi-Tenant Prometheus can be installed and configured on RHEL to pr
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

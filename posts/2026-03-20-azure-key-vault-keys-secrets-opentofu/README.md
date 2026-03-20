@@ -14,6 +14,7 @@ Azure Key Vault provides secure storage for cryptographic keys, secrets, and cer
 
 ```hcl
 # main.tf - Key Vault for secrets and key management
+
 resource "azurerm_key_vault" "kv" {
   name                       = "my-secrets-kv"
   location                   = azurerm_resource_group.rg.location

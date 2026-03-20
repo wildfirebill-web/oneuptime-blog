@@ -45,6 +45,7 @@ First, set up your cable configuration in `config/cable.yml`:
 
 ```yaml
 # config/cable.yml
+
 development:
   adapter: async  # In-memory adapter for development
 

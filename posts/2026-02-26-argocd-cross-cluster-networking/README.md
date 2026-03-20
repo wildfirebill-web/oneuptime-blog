@@ -59,6 +59,7 @@ The simplest approach for a small number of clusters:
 
 ```bash
 # Create VPC peering connection
+
 aws ec2 create-vpc-peering-connection \
   --vpc-id vpc-management \
   --peer-vpc-id vpc-target-cluster \

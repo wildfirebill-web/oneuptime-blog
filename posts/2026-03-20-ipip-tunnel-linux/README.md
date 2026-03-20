@@ -26,6 +26,7 @@ IPIP (IP-in-IP) is the simplest tunneling protocol, encapsulating IPv4 packets i
 
 ```bash
 # Load the IPIP module
+
 modprobe ipip
 
 # Create the IPIP tunnel

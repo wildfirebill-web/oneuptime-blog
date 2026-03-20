@@ -443,6 +443,7 @@ CoreDNS is the default DNS server in Kubernetes and offers a plugin-based archit
 # /etc/coredns/Corefile
 
 # Internal view for IPv4 private ranges
+
 (internal-ipv4) {
     bind 10.0.1.10
 

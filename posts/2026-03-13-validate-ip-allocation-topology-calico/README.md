@@ -24,6 +24,7 @@ This guide provides practical steps to manage IP Address Allocation by Topology 
 
 ```bash
 # Check current IPAM state
+
 calicoctl ipam show --show-blocks
 
 # View IP pool configuration

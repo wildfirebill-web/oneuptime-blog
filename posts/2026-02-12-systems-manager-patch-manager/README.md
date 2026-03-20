@@ -38,6 +38,7 @@ View the default baselines:
 
 ```bash
 # List default patch baselines
+
 aws ssm describe-patch-baselines \
   --filters "Key=OWNER,Values=AWS" \
   --query 'BaselineIdentities[*].{Id:BaselineId,Name:BaselineName,OS:OperatingSystem}'

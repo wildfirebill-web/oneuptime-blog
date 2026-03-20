@@ -22,6 +22,7 @@ By default, `podman stop` sends SIGTERM:
 
 ```bash
 # Run a container that traps signals
+
 podman run -d --name default-signal alpine sh -c "
   trap 'echo SIGTERM received; exit 0' TERM
   trap 'echo SIGINT received; exit 0' INT

@@ -346,6 +346,7 @@ For complex setups, use Docker Compose to define your test infrastructure:
 
 ```yaml
 # src/test/resources/docker-compose-test.yml
+
 version: '3.8'
 services:
   postgres:

@@ -23,6 +23,7 @@ Hubble captures every drop event with reason codes. Prometheus exposes drop coun
 
 ```bash
 # Monitor all drops
+
 hubble observe --verdict DROPPED --follow
 
 # Monitor drops with context

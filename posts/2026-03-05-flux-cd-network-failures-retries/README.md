@@ -36,6 +36,7 @@ When the source controller fails to fetch a Git repository, Helm chart, or OCI a
 
 ```yaml
 # GitRepository status after a network failure
+
 status:
   conditions:
     - type: Ready

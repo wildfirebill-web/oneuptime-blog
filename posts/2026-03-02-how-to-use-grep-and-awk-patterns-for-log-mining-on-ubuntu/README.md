@@ -20,6 +20,7 @@ This guide covers practical patterns for common log mining tasks.
 
 ```bash
 # -i: case-insensitive
+
 grep -i "error" /var/log/syslog
 
 # -n: show line numbers

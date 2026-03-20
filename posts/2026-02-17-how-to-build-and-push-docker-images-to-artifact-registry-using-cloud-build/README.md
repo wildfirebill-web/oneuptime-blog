@@ -28,6 +28,7 @@ If you are starting a new project, use Artifact Registry from the beginning. If 
 
 ```bash
 # Enable the Artifact Registry API
+
 gcloud services enable artifactregistry.googleapis.com
 ```
 

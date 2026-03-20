@@ -22,6 +22,7 @@ Launch NiFi with a single command:
 
 ```bash
 # Start Apache NiFi with the web UI exposed on port 8443
+
 docker run -d \
   --name nifi \
   -p 8443:8443 \

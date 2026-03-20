@@ -76,6 +76,7 @@ The project definition file specifies the project name, runtime, and description
 
 ```yaml
 # Pulumi.yaml
+
 name: my-infrastructure
 runtime: nodejs
 description: Core infrastructure for my application

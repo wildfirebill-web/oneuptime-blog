@@ -1,4 +1,4 @@
-# How to Configure K3s with Systemd
+# How to Configure K3s with Systemd - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure and manage K3s systemd service units, includ
 
 ## Introduction
 
-K3s installs as a systemd service on Linux systems. Understanding and customizing the systemd service configuration is essential for production deployments — from setting resource limits to configuring startup dependencies and environment variables. This guide covers comprehensive systemd configuration for K3s.
+K3s installs as a systemd service on Linux systems. Understanding and customizing the systemd service configuration is essential for production deployments - from setting resource limits to configuring startup dependencies and environment variables. This guide covers comprehensive systemd configuration for K3s.
 
 ## Understanding the K3s Systemd Service
 
@@ -22,6 +22,7 @@ These are located at `/etc/systemd/system/k3s.service` and `/etc/systemd/system/
 
 ```bash
 # View the K3s server service file
+
 systemctl cat k3s
 
 # View the K3s agent service file

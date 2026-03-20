@@ -43,6 +43,7 @@ When someone provides a value for this variable, Terraform checks that:
 
 ```hcl
 # In terraform.tfvars or -var flag
+
 server = {
   name          = "api-01"
   instance_type = "t3.small"

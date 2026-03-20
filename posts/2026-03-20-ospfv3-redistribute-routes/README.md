@@ -12,15 +12,16 @@ Route redistribution allows OSPFv3 to advertise routes learned from other source
 
 ## Redistributing Static Routes
 
-```
-! Cisco IOS — Redistribute static IPv6 routes into OSPFv3
+```text
+! Cisco IOS - Redistribute static IPv6 routes into OSPFv3
 router ospfv3 1
  address-family ipv6 unicast
   redistribute static metric 20 metric-type 1
 ```
 
 ```bash
-# FRRouting — Redistribute static routes into OSPFv3
+# FRRouting - Redistribute static routes into OSPFv3
+
 vtysh
 configure terminal
 
@@ -42,7 +43,7 @@ Use Type 1 for better path selection when multiple ASBRs exist. Use Type 2 (defa
 
 ## Redistributing Connected Routes
 
-```
+```text
 ! Cisco
 router ospfv3 1
  address-family ipv6 unicast
@@ -55,8 +56,8 @@ router ospf6
 
 ## Redistributing from BGP
 
-```
-! Cisco — Redistribute BGP IPv6 into OSPFv3
+```text
+! Cisco - Redistribute BGP IPv6 into OSPFv3
 router ospfv3 1
  address-family ipv6 unicast
   redistribute bgp metric 100 metric-type 2
@@ -72,8 +73,8 @@ router ospf6
 
 Route maps allow granular control over which routes are redistributed and what metric they receive:
 
-```
-! Cisco — Redistribute only specific static routes
+```bash
+! Cisco - Redistribute only specific static routes
 ip prefix-list OSPF_EXPORT seq 10 permit 2001:db8:1::/48 le 64
 
 route-map STATIC_TO_OSPF permit 10
@@ -87,7 +88,7 @@ router ospfv3 1
 ```
 
 ```bash
-# FRRouting — Selective redistribution with route map
+# FRRouting - Selective redistribution with route map
 vtysh
 configure terminal
 
@@ -108,7 +109,7 @@ write memory
 
 To make OSPFv3 advertise a default route to all areas:
 
-```
+```text
 ! Cisco
 router ospfv3 1
  address-family ipv6 unicast
@@ -121,8 +122,8 @@ router ospf6
 
 ## Verifying Redistribution
 
-```
-! Cisco — Check for Type 5 (external) LSAs
+```text
+! Cisco - Check for Type 5 (external) LSAs
 Router# show ospfv3 database external
 
 ! Check redistributed routes in the routing table on a neighbor
@@ -132,7 +133,7 @@ Router-Neighbor# show ipv6 route ospf | include OE
 ```
 
 ```bash
-# FRRouting — Verify redistributed routes
+# FRRouting - Verify redistributed routes
 vtysh -c "show ipv6 ospf database as-external"
 
 # Check on a neighbor

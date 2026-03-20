@@ -1,4 +1,4 @@
-# How to Migrate from Kubernetes Dashboard to Rancher
+# How to Migrate from Kubernetes Dashboard to Rancher - Kubernetes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -73,7 +73,7 @@ Click any pod in Rancher > **Pods**, then:
 
 These replace the equivalent features in Kubernetes Dashboard.
 
-### Resource Editing
+Resource Editing
 
 Rancher provides an inline YAML editor for all resources:
 1. Select any resource.
@@ -86,6 +86,7 @@ If you used Kubernetes Dashboard with kubeconfig authentication, migrate users t
 
 ```yaml
 # In Rancher: Cluster > Members > Add Member
+
 # Or use the Rancher API:
 apiVersion: management.cattle.io/v3
 kind: ClusterRoleTemplateBinding

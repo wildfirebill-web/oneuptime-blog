@@ -20,6 +20,7 @@ Check if your wireless card supports AP mode:
 
 ```bash
 # Install iw if not present
+
 sudo apt install iw -y
 
 # Check supported interface modes

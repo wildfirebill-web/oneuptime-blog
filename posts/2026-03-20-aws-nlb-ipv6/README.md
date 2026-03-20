@@ -14,6 +14,7 @@ AWS Network Load Balancers support IPv6 through the same "dualstack" mechanism a
 
 ```bash
 # Create NLB with dualstack mode
+
 aws elbv2 create-load-balancer \
     --name my-dualstack-nlb \
     --type network \
@@ -135,7 +136,7 @@ resource "aws_security_group" "nlb_target" {
 ## UDP Load Balancing with IPv6 (NLB Only)
 
 ```hcl
-# NLB supports UDP — ALB does not
+# NLB supports UDP - ALB does not
 resource "aws_lb_listener" "udp_dns" {
   load_balancer_arn = aws_lb.nlb.arn
   port              = "53"
@@ -163,4 +164,4 @@ resource "aws_lb_target_group" "dns" {
 
 ## Conclusion
 
-AWS NLBs with `ip_address_type = "dualstack"` accept IPv6 client connections at Layer 4, enabling TCP/UDP services to serve IPv6 clients. Unlike ALBs, NLBs preserve client source IPs — backend instances see the actual client IPv6 address, so security groups on targets must allow IPv6 from `::/0` when using NLB. NLBs don't use security groups themselves. The NLB DNS name includes both A and AAAA records when dualstack is enabled, allowing Happy Eyeballs clients to prefer IPv6 connections.
+AWS NLBs with `ip_address_type = "dualstack"` accept IPv6 client connections at Layer 4, enabling TCP/UDP services to serve IPv6 clients. Unlike ALBs, NLBs preserve client source IPs - backend instances see the actual client IPv6 address, so security groups on targets must allow IPv6 from `::/0` when using NLB. NLBs don't use security groups themselves. The NLB DNS name includes both A and AAAA records when dualstack is enabled, allowing Happy Eyeballs clients to prefer IPv6 connections.

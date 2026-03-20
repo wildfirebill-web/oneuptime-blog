@@ -1,10 +1,10 @@
-# How to Deploy Cloudflared as a Portainer Stack
+# How to Deploy Cloudflared as a Portainer Stack - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloudflare, Cloudflared, Stack, Docker Compose
+Tags: Portainer, Cloudflare, Cloudflared, Stacks, Docker Compose
 
-Description: Learn how to deploy the Cloudflare Tunnel daemon (cloudflared) as a Portainer-managed stack, exposing multiple services through Cloudflare Tunnels with lifecycle management through the Portainer interface.
+Description: Learn how to deploy the Cloudflare Tunnel daemon (cloudflared) as a Portainer-managed stack, exposing multiple services through Cloudflare Tunnels with lifecycle management through the Portainer...
 
 ## Introduction
 
@@ -22,6 +22,7 @@ For more control over tunnel configuration, use a config file instead of just a 
 
 ```bash
 # On the host, create the cloudflared config directory
+
 mkdir -p /opt/cloudflared
 
 # Install cloudflared locally to authenticate (one-time setup)
@@ -195,4 +196,4 @@ Both containers connect to the same tunnel using the same token, creating 8 tota
 
 ## Conclusion
 
-Deploying cloudflared as a Portainer stack integrates Cloudflare Tunnel management into your standard container workflow. Config-file mode allows routing multiple public hostnames to different services on your Docker network, while token mode is simpler for single-tunnel setups. The key advantage is having tunnel lifecycle management — updates, restarts, and log access — through the same Portainer interface you use for everything else, rather than a separate deployment mechanism.
+Deploying cloudflared as a Portainer stack integrates Cloudflare Tunnel management into your standard container workflow. Config-file mode allows routing multiple public hostnames to different services on your Docker network, while token mode is simpler for single-tunnel setups. The key advantage is having tunnel lifecycle management - updates, restarts, and log access - through the same Portainer interface you use for everything else, rather than a separate deployment mechanism.

@@ -29,6 +29,7 @@ Confirm that the CNI configuration on nodes lists Azure CNI as the primary plugi
 
 ```bash
 # SSH to a node and inspect the CNI configuration directory
+
 # The config file should show a "plugins" array with azure-vnet first, then cilium
 cat /etc/cni/net.d/10-azure.conflist
 

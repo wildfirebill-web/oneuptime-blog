@@ -16,6 +16,7 @@ Add it to `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Enable dense output
+
 [defaults]
 stdout_callback = dense
 ```

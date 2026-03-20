@@ -1,8 +1,8 @@
-# How to Deploy MongoDB on Rancher
+# How to Deploy MongoDB on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, MongoDB, Databases, NoSQL
+Tags: Rancher, Kubernetes, MongoDB, Database, NoSQL
 
 Description: Deploy a highly available MongoDB replica set on Rancher-managed Kubernetes clusters using Helm for document-oriented database workloads.
 
@@ -21,6 +21,7 @@ MongoDB is the leading NoSQL document database, widely used for flexible schema 
 
 ```yaml
 # mongodb-values.yaml - Production MongoDB configuration
+
 # Authentication
 auth:
   enabled: true

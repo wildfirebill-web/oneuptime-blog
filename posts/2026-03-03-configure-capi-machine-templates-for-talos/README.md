@@ -22,6 +22,7 @@ For AWS, the machine template specifies EC2 instance configuration:
 
 ```yaml
 # Control plane machine template for AWS
+
 apiVersion: infrastructure.cluster.x-k8s.io/v1beta2
 kind: AWSMachineTemplate
 metadata:

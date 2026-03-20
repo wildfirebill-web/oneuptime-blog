@@ -24,6 +24,7 @@ The first step is capturing detailed information about every Terraform operation
 
 ```python
 # scripts/audit-logger.py
+
 # Captures Terraform operations and logs them to an audit store
 
 import json

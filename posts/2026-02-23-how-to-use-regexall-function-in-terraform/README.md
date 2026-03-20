@@ -16,6 +16,7 @@ The `regexall` function applies a regular expression to a string and returns a l
 
 ```hcl
 # Basic syntax
+
 regexall(pattern, string)
 ```
 

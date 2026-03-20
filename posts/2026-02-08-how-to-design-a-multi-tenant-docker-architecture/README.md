@@ -37,6 +37,7 @@ Docker Compose for a shared multi-tenant application:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

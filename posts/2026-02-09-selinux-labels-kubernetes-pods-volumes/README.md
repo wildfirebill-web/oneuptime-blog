@@ -22,6 +22,7 @@ Verify SELinux is enabled on your nodes:
 
 ```bash
 # Check SELinux status
+
 ssh node01 "sestatus"
 
 # Check if running in enforcing mode

@@ -35,6 +35,7 @@ Query Store uses the `pg_qs` extension, which needs to be loaded at server start
 
 ```bash
 # Add pg_qs to shared_preload_libraries
+
 az postgres flexible-server parameter set \
   --resource-group myResourceGroup \
   --server-name my-pg-server \

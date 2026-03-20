@@ -26,6 +26,7 @@ Create the Clair configuration:
 
 ```yaml
 # ~/clair/config/clair-config.yml
+
 http_listen_addr: "0.0.0.0:6060"
 introspection_addr: "0.0.0.0:8089"
 log_level: info

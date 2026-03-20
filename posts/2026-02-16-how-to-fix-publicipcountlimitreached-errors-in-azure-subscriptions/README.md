@@ -27,6 +27,7 @@ First, see how many public IPs you are using versus your limit:
 
 ```bash
 # Check public IP usage and limits for a specific region
+
 az network list-usages \
   --location eastus \
   --query "[?contains(name.value, 'PublicIPAddresses')].{Name: name.localizedValue, CurrentValue: currentValue, Limit: limit}" \

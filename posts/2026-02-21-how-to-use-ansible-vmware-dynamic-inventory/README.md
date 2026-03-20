@@ -16,6 +16,7 @@ With static inventory, you maintain a file that lists every host.
 
 ```ini
 # Static inventory - manual updates required
+
 [webservers]
 10.100.1.10
 10.100.1.11

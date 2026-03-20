@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Timeouts, Apply, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Timeout, Apply, Infrastructure as Code
 
 Description: Learn how to diagnose and resolve tofu apply timeouts for resources that take longer than expected to create, update, or delete.
 
@@ -12,13 +12,14 @@ Description: Learn how to diagnose and resolve tofu apply timeouts for resources
 
 ## Identifying Timeout Errors
 
-```
+```text
 Error: waiting for RDS DB Instance creation: timeout while waiting for
 state to become 'available' (last state: 'creating', timeout: 40m0s)
 ```
 
 ```bash
 # Get more detail about what's happening
+
 TF_LOG=INFO tofu apply 2>&1 | grep -i "waiting\|poll\|retry"
 
 # Check the resource status directly in AWS
@@ -158,4 +159,4 @@ watch -n 30 aws eks describe-cluster \
 
 ## Summary
 
-Apply timeouts are usually caused by resource operations that legitimately take longer than the provider's default — extend them with the `timeouts` block. For RDS, EKS clusters, and OpenSearch domains, budget 60-90 minutes for creation timeouts. Always check CloudTrail and resource events to verify the timeout is not masking an underlying error (wrong subnet, missing permissions, quota exceeded). Use `-target` to apply slow resources individually so they don't block the rest of the configuration.
+Apply timeouts are usually caused by resource operations that legitimately take longer than the provider's default - extend them with the `timeouts` block. For RDS, EKS clusters, and OpenSearch domains, budget 60-90 minutes for creation timeouts. Always check CloudTrail and resource events to verify the timeout is not masking an underlying error (wrong subnet, missing permissions, quota exceeded). Use `-target` to apply slow resources individually so they don't block the rest of the configuration.

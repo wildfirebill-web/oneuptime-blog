@@ -29,6 +29,7 @@ Check your function's current configuration:
 
 ```bash
 # Get current memory and timeout settings
+
 aws lambda get-function-configuration \
   --function-name my-function \
   --query "{Memory:MemorySize,Timeout:Timeout,LastModified:LastModified}" \

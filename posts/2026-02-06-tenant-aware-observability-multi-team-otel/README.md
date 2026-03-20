@@ -40,6 +40,7 @@ For services that belong to a single team, the tenant attribute is a static reso
 
 ```yaml
 # kubernetes/deployment.yaml for a team-owned service
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -35,6 +35,7 @@ Start by writing the Cloud Functions that perform your scheduled tasks.
 
 ```python
 # cleanup/main.py
+
 import logging
 from google.cloud import firestore
 from datetime import datetime, timedelta

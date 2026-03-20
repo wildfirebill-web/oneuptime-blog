@@ -12,7 +12,7 @@ Server management networks provide out-of-band access to server operating system
 
 ## Management Network IPv6 Design
 
-```
+```text
 Server Management IPv6 Architecture:
 
 Management Network: 2001:db8:mgmt::/48
@@ -34,6 +34,7 @@ Encoding: .:VVVV::NNNN where VVVV=VLAN, NNNN=server number
 # Server in-band management IPv6 configuration
 
 # Ubuntu/Debian - /etc/netplan/01-mgmt.yaml
+
 network:
   ethernets:
     eth0:

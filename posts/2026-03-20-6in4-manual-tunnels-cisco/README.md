@@ -12,7 +12,7 @@ Cisco IOS implements 6in4 tunnels using a `tunnel` interface with `tunnel mode i
 
 ## Basic 6in4 Tunnel Configuration
 
-```
+```text
 ! Tunnel from Router-A (203.0.113.10) to Tunnel Broker (198.51.100.1)
 
 Router(config)# interface Tunnel0
@@ -29,7 +29,7 @@ Router(config)# ipv6 route ::/0 Tunnel0 2001:db8::1
 
 ## Physical Interface Configuration
 
-```
+```text
 ! WAN interface (provides tunnel source)
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip address 203.0.113.10 255.255.255.0
@@ -41,7 +41,7 @@ Router(config)# ip route 0.0.0.0 0.0.0.0 203.0.113.1
 
 ## Verify Tunnel
 
-```
+```text
 Router# show interface Tunnel0
 Tunnel0 is up, line protocol is up
   Internet address is omitted
@@ -63,8 +63,8 @@ Router# ping ipv6 2001:4860:4860::8888
 
 ## LAN Distribution Behind the Tunnel
 
-```
-! LAN interface — provides IPv6 to hosts
+```text
+! LAN interface - provides IPv6 to hosts
 Router(config)# interface GigabitEthernet0/1
 Router(config-if)# ipv6 address 2001:db8:abcd:1::1/64
 Router(config-if)# ipv6 nd ra-interval 60        ! Send Router Advertisements
@@ -80,7 +80,7 @@ Router(config)# ipv6 route ::/0 Tunnel0 2001:db8::1
 
 ## Site-to-Site 6in4 (Two Cisco Routers)
 
-```
+```text
 ! ===== Router-A (left side) =====
 Router-A(config)# ipv6 unicast-routing
 
@@ -110,7 +110,7 @@ Router-B(config)# ipv6 route 2001:db8:siteA::/48 Tunnel0 2001:db8:link::1
 
 6in4 adds a 20-byte IPv4 header, reducing effective IPv6 MTU from 1500 to 1480:
 
-```
+```text
 ! Set IPv6 MTU on tunnel to avoid fragmentation
 Router(config-if)# ipv6 mtu 1480
 
@@ -123,7 +123,7 @@ Router# show interface Tunnel0 | include MTU
 
 ## ACL to Restrict Protocol 41
 
-```
+```text
 ! Allow only expected tunnel broker's protocol 41, block all others
 Router(config)# ip access-list extended PROTECT-PROTO41
 Router(config-ext-nacl)# permit 41 host 198.51.100.1 any  ! Broker → us
@@ -136,14 +136,14 @@ Router(config-if)# ip access-group PROTECT-PROTO41 in
 
 ## Troubleshooting
 
-```
+```text
 ! Check tunnel status
 Router# show interface Tunnel0
 
 ! Check IPv6 routing
 Router# show ipv6 route
 
-! Debug tunnel (verbose — use in lab only)
+! Debug tunnel (verbose - use in lab only)
 Router# debug tunnel
 
 ! Check if IPv4 path to broker exists

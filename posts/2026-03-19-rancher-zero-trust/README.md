@@ -233,6 +233,7 @@ Ensure only signed and verified images are deployed:
 
 ```bash
 # Install Cosign
+
 go install github.com/sigstore/cosign/v2/cmd/cosign@latest
 
 # Sign an image

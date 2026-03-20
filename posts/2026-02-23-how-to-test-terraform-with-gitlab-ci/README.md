@@ -18,6 +18,7 @@ A well-organized GitLab CI pipeline for Terraform uses stages that flow from fas
 # .gitlab-ci.yml
 
 # Define pipeline stages in order
+
 stages:
   - validate
   - test
@@ -238,7 +239,7 @@ post-plan-comment:
       BODY="## Terraform Plan Summary\n\n"
       for env in dev staging production; do
         if [ -f "environments/${env}/plan.txt" ]; then
-          BODY="${BODY}### ${env}\n\`\`\`\n$(cat environments/${env}/plan.txt | tail -20)\n\`\`\`\n\n"
+          BODY="${BODY}### ${env}\n```\n$(cat environments/${env}/plan.txt | tail -20)\n```\n\n"
         fi
       done
 

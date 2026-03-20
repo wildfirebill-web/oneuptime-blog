@@ -377,6 +377,7 @@ While `count.index` is powerful, consider using `for_each` when resources need s
 
 ```hcl
 # Using for_each for better stability
+
 variable "servers_map" {
   type = map(object({
     instance_type = string

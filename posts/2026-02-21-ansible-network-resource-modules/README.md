@@ -41,6 +41,7 @@ Before making changes, it is helpful to see what is already configured. The `gat
 
 ```yaml
 # gather_interfaces.yml - Pull current interface config as structured data
+
 ---
 - name: Gather interface configuration
   hosts: switches

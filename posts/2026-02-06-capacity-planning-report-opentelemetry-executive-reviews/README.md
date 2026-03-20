@@ -27,6 +27,7 @@ This collector config adds team ownership and service tier labels that are essen
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

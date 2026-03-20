@@ -54,6 +54,7 @@ Start by assigning the built-in policies to get visibility into your current pos
 
 ```bash
 # Assign the Storage Account private link policy in Audit mode
+
 az policy assignment create \
   --name "audit-storage-private-link" \
   --display-name "Audit: Storage accounts should use private link" \

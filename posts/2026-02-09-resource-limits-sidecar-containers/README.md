@@ -70,6 +70,7 @@ Envoy and Linkerd proxies intercept all traffic, so size based on throughput:
 
 ```yaml
 # Low traffic (< 100 RPS)
+
 containers:
 - name: envoy-proxy
   image: envoyproxy/envoy:v1.28

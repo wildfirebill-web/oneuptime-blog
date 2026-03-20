@@ -40,6 +40,7 @@ Before removing any lock files, verify whether a legitimate process holds them.
 
 ```bash
 # Check for running apt or dpkg processes
+
 ps aux | grep -E "apt|dpkg|unattended"
 
 # Check which process holds the lock files

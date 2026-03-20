@@ -43,6 +43,7 @@ RabbitMQ has native support for dead letter exchanges (DLX). Here's how to confi
 
 ```python
 # dlq_setup.py
+
 # RabbitMQ dead letter queue configuration
 import pika
 from typing import Optional

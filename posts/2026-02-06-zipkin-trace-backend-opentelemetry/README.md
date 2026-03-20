@@ -36,6 +36,7 @@ The following command starts Zipkin with default settings and exposes the UI on 
 
 ```bash
 # Start Zipkin with in-memory storage for development
+
 docker run -d \
   --name zipkin \
   -p 9411:9411 \

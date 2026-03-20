@@ -31,6 +31,7 @@ Enabling Requester Pays on a bucket is a single API call.
 
 ```bash
 # Enable Requester Pays
+
 aws s3api put-bucket-request-payment \
   --bucket my-shared-dataset \
   --request-payment-configuration '{"Payer": "Requester"}'

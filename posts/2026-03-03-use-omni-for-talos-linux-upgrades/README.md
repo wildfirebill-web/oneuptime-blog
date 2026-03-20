@@ -20,6 +20,7 @@ Omni can handle both types of upgrades. In most cases, you will upgrade the Talo
 
 ```bash
 # Check current versions across your cluster
+
 omnictl cluster status my-cluster
 
 # Example output showing version info

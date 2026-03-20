@@ -24,6 +24,7 @@ include "root" {
 }
 
 # Ensure these modules are applied before monitoring
+
 dependencies {
   paths = ["../vpc", "../ecs", "../rds"]
 }

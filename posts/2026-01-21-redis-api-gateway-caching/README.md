@@ -143,6 +143,7 @@ class GatewayCache:
         return deleted
 
 # Flask middleware example
+
 from flask import Flask, request, Response, g
 
 app = Flask(__name__)

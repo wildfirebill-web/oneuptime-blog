@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, CLI, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, CLI, Provider
 
 Description: Learn how to use tofu providers commands to list required providers, show schemas, lock checksums, and create provider mirrors.
 
 ## Introduction
 
-The `tofu providers` command group provides tools for working with providers — listing which are required, viewing their schemas, managing lock file checksums, and creating mirrors for air-gapped environments.
+The `tofu providers` command group provides tools for working with providers - listing which are required, viewing their schemas, managing lock file checksums, and creating mirrors for air-gapped environments.
 
 ## tofu providers (list)
 
 ```bash
 # List all required providers and their sources
+
 tofu providers
 
 # Output:

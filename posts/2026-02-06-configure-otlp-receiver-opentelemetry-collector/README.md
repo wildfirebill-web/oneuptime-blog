@@ -22,6 +22,7 @@ Starting with a minimal configuration helps understand the core concepts before 
 
 ```yaml
 # collector-config.yaml - minimal OTLP receiver setup
+
 receivers:
   otlp:
     protocols:
@@ -236,7 +237,7 @@ Clients must include the bearer token in their requests:
 
 For more sophisticated authentication, consider using the OAuth2 or OIDC authenticator extensions.
 
-## Resource Limits and Rate Limiting
+Resource Limits and Rate Limiting
 
 Protecting the collector from overload requires setting appropriate resource limits.
 

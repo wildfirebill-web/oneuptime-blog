@@ -25,6 +25,7 @@ Create a shared secret for webhook payload verification:
 
 ```bash
 # Generate a secure random secret
+
 WEBHOOK_SECRET=$(openssl rand -hex 32)
 echo "Your webhook secret: $WEBHOOK_SECRET"
 ```

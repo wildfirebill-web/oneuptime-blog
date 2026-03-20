@@ -49,6 +49,7 @@ flowchart TD
 
 ```bash
 # Clone the VPA repository
+
 git clone https://github.com/kubernetes/autoscaler.git
 cd autoscaler/vertical-pod-autoscaler
 

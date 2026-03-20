@@ -8,13 +8,13 @@ Description: Understand how the IPv6 Hop Limit field limits packet lifetime in h
 
 ## Introduction
 
-IPv6 has no explicit time-based packet lifetime like IPv4's TTL was originally intended to be (TTL was supposed to be seconds, but was used as hop count in practice). IPv6's Hop Limit is explicitly named as a hop counter — each router decrements it by 1, and the packet is discarded at zero. Understanding the implications of Hop Limit for packet lifetime helps with network design and troubleshooting.
+IPv6 has no explicit time-based packet lifetime like IPv4's TTL was originally intended to be (TTL was supposed to be seconds, but was used as hop count in practice). IPv6's Hop Limit is explicitly named as a hop counter - each router decrements it by 1, and the packet is discarded at zero. Understanding the implications of Hop Limit for packet lifetime helps with network design and troubleshooting.
 
 ## Hop Limit vs TTL: The Name Change
 
 IPv4 TTL (Time To Live) was originally intended to be decremented by the time spent at each router (in seconds). In practice, every implementation decremented it by exactly 1 per hop, making it a hop count. IPv6 formally renamed this to "Hop Limit" to reflect actual behavior:
 
-```
+```text
 IPv4 TTL:
   RFC 791: Should be decremented by seconds spent processing
   Reality: Every router decrements by exactly 1 (hop count)
@@ -59,6 +59,7 @@ def estimate_packet_lifetime(
     }
 
 # Common scenarios
+
 scenarios = [
     (64, 5.0, "Default HL (LAN/WAN typical)"),
     (128, 5.0, "Windows default HL"),
@@ -73,7 +74,7 @@ for hl, latency, desc in scenarios:
 ```
 
 Output:
-```
+```text
 HL= 64 (Default HL (LAN/WAN typical)):         ~323.4 ms
 HL=128 (Windows default HL):                   ~646.4 ms
 HL=255 (NDP messages (max HL)):               ~1286.3 ms
@@ -119,7 +120,7 @@ sudo tcpdump -i eth0 -vv "icmp6 and (ip6[40]==133 or ip6[40]==134 or ip6[40]==13
 
 ## Practical Implications
 
-```
+```text
 Default HL=64:
   → Sufficient for all real internet paths (longest real paths < 30 hops)
   → Reveals approximate distance when observed in responses

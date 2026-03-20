@@ -23,6 +23,7 @@ First, check the certificate details:
 
 ```bash
 # Check certificate expiration
+
 openssl s_client -connect api.example.com:443 -servername api.example.com 2>/dev/null | openssl x509 -noout -dates
 
 # Output:

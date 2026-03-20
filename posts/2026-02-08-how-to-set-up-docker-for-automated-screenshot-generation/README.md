@@ -28,6 +28,7 @@ Here is the Dockerfile:
 
 ```dockerfile
 # Dockerfile - Screenshot service with headless Chrome
+
 FROM node:20-slim
 
 # Install Chromium and required system libraries

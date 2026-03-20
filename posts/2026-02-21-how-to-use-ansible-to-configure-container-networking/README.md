@@ -29,6 +29,7 @@ Bridge networks are the default for standalone Docker containers on a single hos
 
 ```yaml
 # roles/container_networking/tasks/bridge.yml
+
 # Create Docker bridge networks with custom configuration
 - name: Create application bridge network
   community.docker.docker_network:

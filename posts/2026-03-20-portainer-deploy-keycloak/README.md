@@ -1,4 +1,4 @@
-# How to Deploy Keycloak via Portainer
+# How to Deploy Keycloak via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -101,6 +101,7 @@ volumes:
 
 ```bash
 # Via Keycloak Admin API
+
 TOKEN=$(curl -s http://keycloak:8080/realms/master/protocol/openid-connect/token \
   -d "client_id=admin-cli&username=admin&password=admin_password&grant_type=password" \
   | jq -r '.access_token')

@@ -36,6 +36,7 @@ Every auth method in Vault must be enabled (mounted) before it can be used. Auth
 
 ```bash
 # Enable an auth method at the default path
+
 vault auth enable kubernetes
 
 # Enable an auth method at a custom path

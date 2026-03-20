@@ -27,6 +27,7 @@ Set up Google Secret Manager and create initial secrets.
 
 ```bash
 # Set environment variables
+
 export PROJECT_ID=$(gcloud config get-value project)
 
 # Enable the Secret Manager API

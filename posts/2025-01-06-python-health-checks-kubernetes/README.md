@@ -28,6 +28,7 @@ Kubernetes supports three types of probes:
 
 ```yaml
 # Liveness: "Should I restart this container?"
+
 livenessProbe:
   httpGet:
     path: /health

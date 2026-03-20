@@ -69,6 +69,7 @@ This command displays the overall health of your Ceph cluster. The cluster shoul
 
 ```bash
 # Check overall cluster health - must be HEALTH_OK before upgrade
+
 ceph health detail
 ```
 

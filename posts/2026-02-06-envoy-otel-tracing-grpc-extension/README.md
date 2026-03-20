@@ -14,6 +14,7 @@ Here is an Envoy config that enables OpenTelemetry tracing:
 
 ```yaml
 # envoy.yaml
+
 static_resources:
   listeners:
     - name: listener_0

@@ -76,6 +76,7 @@ Create a cluster configuration file:
 
 ```yaml
 # cluster-config.yaml
+
 # EKS cluster configuration that disables the default VPC CNI
 # This allows Cilium to be installed as the primary CNI
 

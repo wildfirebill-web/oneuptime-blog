@@ -34,6 +34,7 @@ Synchronous replication ensures that transactions are committed on both primary 
 # postgresql.conf
 
 # Enable synchronous commit
+
 synchronous_commit = on
 
 # Define synchronous standbys

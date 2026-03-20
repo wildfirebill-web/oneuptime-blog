@@ -56,6 +56,7 @@ AWS recommends launch templates for all new configurations. Launch configuration
 
 ```bash
 # Create a launch template for a web server
+
 aws ec2 create-launch-template \
     --launch-template-name webapp-template \
     --version-description "Initial version - Nginx on Amazon Linux 2023" \

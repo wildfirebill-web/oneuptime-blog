@@ -18,6 +18,7 @@ Before scaling, figure out what's actually the bottleneck:
 
 ```bash
 # Check CPU - is the engine thread maxed out?
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/ElastiCache \
   --metric-name EngineCPUUtilization \

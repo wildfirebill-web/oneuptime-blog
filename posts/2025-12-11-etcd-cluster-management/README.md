@@ -37,6 +37,7 @@ Set up environment variables for common operations:
 
 ```bash
 # Set etcdctl environment
+
 export ETCDCTL_API=3
 export ETCDCTL_ENDPOINTS=https://10.0.1.10:2379,https://10.0.1.11:2379,https://10.0.1.12:2379
 export ETCDCTL_CACERT=/etc/etcd/pki/ca.crt

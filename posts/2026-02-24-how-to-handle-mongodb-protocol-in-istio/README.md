@@ -297,6 +297,7 @@ When things go wrong, start with these checks:
 
 ```bash
 # Check if Istio recognizes the protocol
+
 istioctl x describe service mongodb -n default
 
 # Check endpoint health

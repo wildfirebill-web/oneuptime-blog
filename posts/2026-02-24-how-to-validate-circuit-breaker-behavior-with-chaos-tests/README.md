@@ -33,6 +33,7 @@ kubectl label namespace cb-test istio-injection=enabled
 kubectl apply -n cb-test -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/httpbin/httpbin.yaml
 
 # Scale to 3 replicas for outlier detection testing
+
 kubectl scale deployment httpbin -n cb-test --replicas=3
 
 # Deploy load generator

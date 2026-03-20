@@ -18,6 +18,7 @@ Resilio provides an official APT repository for Ubuntu:
 
 ```bash
 # Add the Resilio Sync repository
+
 echo "deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free" | \
     sudo tee /etc/apt/sources.list.d/resilio-sync.list
 

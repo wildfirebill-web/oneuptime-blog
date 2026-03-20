@@ -55,6 +55,7 @@ kubectl logs $NODE_POD -n kube-system --previous --tail=30 2>/dev/null
 
 ```bash
 # See CrashLoopBackOff runbook for specific fix
+
 # Quick restart attempt:
 kubectl delete pod $NODE_POD -n kube-system
 kubectl wait pods -n kube-system -l k8s-app=calico-node \

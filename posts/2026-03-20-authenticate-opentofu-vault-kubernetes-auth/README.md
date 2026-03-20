@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Vault, Kubernetes Auth, Service Account, Authentication
+Tags: OpenTofu, Vault, Kubernetes Auth, Service Accounts, Authentication
 
 Description: Learn how to configure OpenTofu to authenticate with HashiCorp Vault using the Kubernetes auth method, enabling pods and CI/CD jobs to authenticate using service account tokens.
 
 ## Introduction
 
-Vault's Kubernetes auth method uses Kubernetes service account JWT tokens for authentication. OpenTofu running in Kubernetes-based CI/CD systems (Argo CD, Tekton, GitLab Runners) can authenticate with Vault using the pod's mounted service account token — no separate credentials required.
+Vault's Kubernetes auth method uses Kubernetes service account JWT tokens for authentication. OpenTofu running in Kubernetes-based CI/CD systems (Argo CD, Tekton, GitLab Runners) can authenticate with Vault using the pod's mounted service account token - no separate credentials required.
 
 ## Configuring Kubernetes Auth in Vault
 
 ```hcl
 # Enable Kubernetes auth method
+
 resource "vault_auth_backend" "kubernetes" {
   type = "kubernetes"
   path = "kubernetes"

@@ -29,6 +29,7 @@ First, initialize your Go module and install the Gorilla WebSocket package.
 
 ```bash
 # Initialize a new Go module
+
 go mod init websocket-demo
 
 # Install Gorilla WebSocket

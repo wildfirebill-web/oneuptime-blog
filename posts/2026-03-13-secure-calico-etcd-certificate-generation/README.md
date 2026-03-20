@@ -26,6 +26,7 @@ The CA private key is the most sensitive secret in your PKI. Anyone with access 
 
 ```bash
 # Encrypt the CA private key with a strong passphrase
+
 openssl genrsa -aes256 -passout pass:"$(openssl rand -base64 48)" \
   -out calico-etcd-ca.key.encrypted 4096
 

@@ -89,6 +89,7 @@ location ~ {{ some regex }} {
 
 ```bash
 # Test template rendering locally
+
 ansible localhost -m template -a "src=template.j2 dest=/tmp/output.txt" -e "@vars.yml"
 
 # Or use Python directly

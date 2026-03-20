@@ -8,12 +8,13 @@ Description: Create and configure Linux network namespaces with IPv6 addresses f
 
 ## What Are Network Namespaces?
 
-Linux network namespaces provide isolated network stacks — each namespace has its own network interfaces, routes, iptables rules, and socket table. They are the foundation of container networking.
+Linux network namespaces provide isolated network stacks - each namespace has its own network interfaces, routes, iptables rules, and socket table. They are the foundation of container networking.
 
 ## Creating a Network Namespace with IPv6
 
 ```bash
 # Create a new network namespace
+
 sudo ip netns add ns-ipv6-test
 
 # Verify it was created

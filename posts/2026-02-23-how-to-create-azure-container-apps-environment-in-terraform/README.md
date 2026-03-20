@@ -18,6 +18,7 @@ Configure Terraform with the Azure provider:
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     azurerm = {

@@ -18,6 +18,7 @@ The audit log lives at `/var/log/audit/audit.log`. ausearch always reads from th
 
 ```bash
 # Show all audit events (extremely verbose)
+
 sudo ausearch
 
 # Show only recent events (last 10 minutes is the default for -ts recent)

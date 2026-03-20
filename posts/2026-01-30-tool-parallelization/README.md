@@ -603,6 +603,7 @@ import asyncio
 from typing import Any
 
 # Define available tools
+
 async def fetch_user_data(params: dict) -> dict:
     """Simulate fetching user data."""
     await asyncio.sleep(0.5)  # Simulate network delay

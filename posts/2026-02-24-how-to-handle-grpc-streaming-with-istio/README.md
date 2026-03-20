@@ -231,6 +231,7 @@ However, you can monitor stream duration and connection counts:
 
 ```bash
 # Check active streams
+
 kubectl exec -it <pod-name> -c istio-proxy -- \
   pilot-agent request GET stats | grep "downstream_rq_active"
 

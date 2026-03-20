@@ -16,6 +16,7 @@ AWS CloudFront supports IPv6 and can be enabled on existing or new distributions
 DISTRIBUTION_ID="ABCDEFGHIJKLMNO"
 
 # Get current distribution config
+
 aws cloudfront get-distribution-config \
     --id "$DISTRIBUTION_ID" \
     --output json > /tmp/dist-config.json

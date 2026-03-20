@@ -246,6 +246,7 @@ Track RBAC metrics:
 
 ```promql
 # Allowed requests
+
 envoy_http_rbac_allowed
 
 # Denied requests

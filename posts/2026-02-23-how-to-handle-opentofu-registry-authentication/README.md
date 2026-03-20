@@ -46,6 +46,7 @@ Create or edit the `~/.tofurc` file (or `~/.terraformrc` which OpenTofu also rea
 # ~/.tofurc
 
 # Credentials for a private registry
+
 credentials "registry.example.com" {
   token = "your-api-token-here"
 }

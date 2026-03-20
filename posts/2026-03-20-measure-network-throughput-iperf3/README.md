@@ -14,6 +14,7 @@ iperf3 is the standard tool for measuring maximum TCP and UDP throughput between
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install -y iperf3
 
 # RHEL/CentOS/Rocky Linux
@@ -109,7 +110,7 @@ iperf3 -c 192.168.1.100 -t 30 -Z
 
 ## Step 7: Interpret iperf3 Results
 
-```
+```text
 [ ID] Interval           Transfer     Bitrate         Retr  Cwnd
 [  5] 0.00-10.00 sec  1.09 GBytes   936 Mbits/sec    0    2.86 MBytes
 

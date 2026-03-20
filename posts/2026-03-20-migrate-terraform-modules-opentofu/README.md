@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, Modules, Migration, Infrastructure as Code
 
-Description: Learn how to migrate existing Terraform modules to OpenTofu — updating module sources, handling registry differences, and validating compatibility with OpenTofu-specific features.
+Description: Learn how to migrate existing Terraform modules to OpenTofu - updating module sources, handling registry differences, and validating compatibility with OpenTofu-specific features.
 
 ## Introduction
 
-Terraform modules are fully compatible with OpenTofu — the HCL syntax is identical, and OpenTofu reads the same module format. Migration involves updating module source references to use the OpenTofu registry when applicable, and optionally adopting OpenTofu-specific enhancements like write-only attributes and native state encryption.
+Terraform modules are fully compatible with OpenTofu - the HCL syntax is identical, and OpenTofu reads the same module format. Migration involves updating module source references to use the OpenTofu registry when applicable, and optionally adopting OpenTofu-specific enhancements like write-only attributes and native state encryption.
 
 ## Step 1: Verify Compatibility
 
@@ -16,6 +16,7 @@ Most Terraform modules work without changes:
 
 ```bash
 # Clone an existing Terraform module repo
+
 git clone https://github.com/my-org/terraform-aws-vpc.git
 
 cd terraform-aws-vpc/
@@ -31,7 +32,7 @@ tofu validate
 
 ### Registry Modules
 
-Terraform registry modules continue to work — OpenTofu mirrors the registry:
+Terraform registry modules continue to work - OpenTofu mirrors the registry:
 
 ```hcl
 # This works unchanged in OpenTofu
@@ -157,7 +158,7 @@ module "vpc" {
 
 ## Migration Checklist
 
-```
+```hcl
 [ ] Run tofu validate on all module directories
 [ ] Update .terraform.lock.hcl (delete and re-run tofu init)
 [ ] Replace deprecated interpolation syntax
@@ -171,4 +172,4 @@ module "vpc" {
 
 ## Conclusion
 
-Migrating Terraform modules to OpenTofu is low-risk — the HCL syntax and module interface are identical. The main steps are: validate with `tofu validate`, regenerate the lock file, fix deprecated syntax, and update test tooling. Optionally adopt OpenTofu-exclusive features like provider iteration and write-only attributes when ready. Tag a new module version to signal OpenTofu compatibility to consumers.
+Migrating Terraform modules to OpenTofu is low-risk - the HCL syntax and module interface are identical. The main steps are: validate with `tofu validate`, regenerate the lock file, fix deprecated syntax, and update test tooling. Optionally adopt OpenTofu-exclusive features like provider iteration and write-only attributes when ready. Tag a new module version to signal OpenTofu compatibility to consumers.

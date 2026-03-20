@@ -20,6 +20,7 @@ Podman supports four pull policy options.
 
 ```bash
 # Check the current default pull policy
+
 podman info --format json | python3 -c "
 import sys, json
 info = json.load(sys.stdin)

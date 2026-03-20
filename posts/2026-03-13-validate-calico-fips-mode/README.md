@@ -26,6 +26,7 @@ A complete FIPS validation covers four dimensions: OS-level FIPS enforcement, Ca
 ```bash
 #!/bin/bash
 # validate-os-fips.sh
+
 echo "=== OS FIPS Validation ==="
 
 for node in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do

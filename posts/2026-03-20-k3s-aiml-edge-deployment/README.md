@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: K3s, AI/ML, Edge Computing, Kubernetes, NVIDIA, TensorFlow, Model Serving
 
-Description: Learn how to deploy AI and machine learning model inference workloads at the edge using K3s, including GPU configuration, model serving with Triton or TorchServe, and edge-optimized deployment patterns.
+Description: Learn how to deploy AI and machine learning model inference workloads at the edge using K3s, including GPU configuration, model serving with Triton or TorchServe, and edge-optimized deployment...
 
 ---
 
@@ -16,6 +16,7 @@ Running AI inference at the edge reduces latency, preserves privacy, and works o
 
 ```bash
 # Install NVIDIA drivers and container toolkit on the edge node
+
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
@@ -138,7 +139,7 @@ curl -s -X POST http://localhost:8000/v2/models/my-model/infer \
 
 ## Best Practices
 
-- Cache models in a local PVC backed by Longhorn — avoid pulling large models over a slow edge connection on every restart.
+- Cache models in a local PVC backed by Longhorn - avoid pulling large models over a slow edge connection on every restart.
 - Use **model versioning** in Triton to roll out new model versions without service disruption.
 - Set **CPU fallback** for non-GPU edge nodes using TensorRT Lite or ONNX Runtime CPU providers.
 - Monitor GPU utilization and temperature using the DCGM exporter and alert when utilization drops unexpectedly.

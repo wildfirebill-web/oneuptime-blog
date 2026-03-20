@@ -37,6 +37,7 @@ Start by adding the shared repository as a remote and pulling it as a subtree:
 cd backend-api-config
 
 # Add the shared repo as a remote
+
 git remote add shared-configs https://github.com/myorg/shared-configs.git
 
 # Pull the shared repo into a subdirectory

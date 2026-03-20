@@ -49,6 +49,7 @@ Initialize the Go module and install Terratest.
 cd test
 
 # Initialize the Go module
+
 go mod init github.com/your-org/terraform-azure-vnet/test
 
 # Add Terratest dependencies

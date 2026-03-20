@@ -16,6 +16,7 @@ At its simplest, the fail module stops execution with a message.
 
 ```yaml
 # Basic fail module usage
+
 ---
 - name: Fail module basics
   hosts: localhost

@@ -16,6 +16,7 @@ The most basic validation ensures your playbook is valid YAML and valid Ansible 
 
 ```bash
 # Check playbook syntax without executing anything
+
 ansible-playbook deploy.yml --syntax-check
 ```
 

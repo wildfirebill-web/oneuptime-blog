@@ -42,6 +42,7 @@ The customer gateway represents your on-premises router in AWS. You need the pub
 
 ```bash
 # Create a customer gateway with your on-premises router's public IP
+
 CGW_ID=$(aws ec2 create-customer-gateway \
   --type ipsec.1 \
   --public-ip 203.0.113.50 \

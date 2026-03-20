@@ -65,6 +65,7 @@ You need to create VLAN sub-interfaces on every Kubernetes node that will partic
 
 ```bash
 # Load the 802.1Q kernel module
+
 # This enables VLAN tagging support in the Linux kernel
 sudo modprobe 8021q
 

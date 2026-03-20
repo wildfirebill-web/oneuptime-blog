@@ -31,6 +31,7 @@ On your CI/CD pipeline, publish manifests as OCI artifacts on every merge:
 
 ```yaml
 # .github/workflows/publish-oci.yml
+
 name: Publish OCI Artifact
 
 on:

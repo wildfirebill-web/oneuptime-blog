@@ -365,6 +365,7 @@ For planning applications, display forecast data alongside the map.
 
 ```python
 # weather_forecast.py - Fetch multi-day forecasts
+
 import requests
 
 AZURE_MAPS_KEY = "your-subscription-key"

@@ -22,6 +22,7 @@ PHP-FPM (FastCGI Process Manager) is a PHP implementation that runs as a separat
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install Apache

@@ -192,6 +192,7 @@ To capture a CPU profile from a running HTTP server, use the `go tool pprof` com
 
 ```bash
 # Capture a 30-second CPU profile from a running server
+
 go tool pprof http://localhost:8080/debug/pprof/profile
 
 # Capture a custom duration profile (60 seconds)

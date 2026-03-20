@@ -26,6 +26,7 @@ registry.example.com/mycompany/myapp:v1.0.0
 
 ```bash
 # These are equivalent (Docker Hub is default)
+
 docker pull nginx
 docker pull docker.io/library/nginx
 docker pull docker.io/library/nginx:latest

@@ -20,6 +20,7 @@ Check pod status:
 
 ```bash
 # View pod status
+
 kubectl get pods -n my-namespace
 
 # Stuck in ContainerCreating:

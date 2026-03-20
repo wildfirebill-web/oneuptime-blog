@@ -44,6 +44,7 @@ A portfolio is a collection of products. You organize products into portfolios a
 
 ```hcl
 # Create a portfolio for networking products
+
 resource "aws_servicecatalog_portfolio" "networking" {
   name          = "Networking Products"
   description   = "Pre-approved networking infrastructure components"

@@ -120,6 +120,7 @@ Use multiple patterns for complex logs:
 
 ```logql
 # Pattern parse, then JSON parse nested content
+
 {job="app"}
 | pattern `<timestamp> <level> <json_payload>`
 | json payload_json=json_payload

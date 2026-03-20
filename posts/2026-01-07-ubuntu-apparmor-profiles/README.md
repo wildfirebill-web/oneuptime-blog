@@ -69,6 +69,7 @@ AppArmor profiles are stored in specific directories:
 
 ```bash
 # Main profile directory - contains active profiles
+
 /etc/apparmor.d/
 
 # Abstractions - reusable rule sets

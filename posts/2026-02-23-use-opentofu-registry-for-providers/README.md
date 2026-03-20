@@ -24,6 +24,7 @@ You can search the registry through its web interface or by exploring the provid
 # The registry is browsable at https://registry.opentofu.org
 
 # You can also check if a provider exists by trying to install it
+
 tofu init  # This will fail fast if a provider is not found
 ```
 

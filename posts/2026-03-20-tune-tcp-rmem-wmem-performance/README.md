@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, sysctl, Performance, Linux, tcp_rmem, tcp_wmem, Network Tuning
+Tags: TCP, Sysctl, Performance, Linux, Tcp_rmem, Tcp_wmem, Network Tuning
 
 Description: Learn how to correctly configure net.ipv4.tcp_rmem and net.ipv4.tcp_wmem for different network scenarios, balancing throughput against memory usage.
 
@@ -10,7 +10,7 @@ Description: Learn how to correctly configure net.ipv4.tcp_rmem and net.ipv4.tcp
 
 Both parameters have three values: `min default max`
 
-```
+```text
 net.ipv4.tcp_rmem = 4096 87380 6291456
                     ^^^^  ^^^^^  ^^^^^^^
                     min   default  max
@@ -28,6 +28,7 @@ TCP auto-tuning grows the buffer from `default` toward `max` as needed.
 
 ```bash
 # View current TCP buffer settings
+
 sysctl net.ipv4.tcp_rmem
 sysctl net.ipv4.tcp_wmem
 

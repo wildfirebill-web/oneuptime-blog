@@ -38,6 +38,7 @@ Check virtualization support on your nodes.
 
 ```bash
 # Verify hardware virtualization is available
+
 talosctl -n <node-ip> read /proc/cpuinfo | grep -c "vmx\|svm"
 
 # Check if /dev/kvm exists
@@ -247,7 +248,7 @@ kubectl run curl-test --image=curlimages/curl --rm -it -- \
   curl http://nginx-isolated
 ```
 
-## Resource Management
+Resource Management
 
 Kata pods consume more resources than standard containers because each pod runs in its own VM. Plan your resource allocations accordingly.
 

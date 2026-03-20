@@ -37,6 +37,7 @@ Verify your Ubuntu version with the following command:
 
 ```bash
 # Display Ubuntu version information
+
 # This confirms you are running a supported LTS release
 lsb_release -a
 ```

@@ -1,11 +1,10 @@
----
-title: "Using GCS as a Module Source in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, gcs, gcp
-description: "Learn how to use Google Cloud Storage as a module source in OpenTofu for distributing modules within GCP environments."
----
-
 # Using GCS as a Module Source in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, GCS, GCP
+
+Description: Learn how to use Google Cloud Storage as a module source in OpenTofu for distributing modules within GCP environments.
 
 Google Cloud Storage (GCS) provides a natural module distribution mechanism for GCP-centric organizations. OpenTofu can download module archives from GCS using standard Google Cloud authentication.
 
@@ -25,6 +24,7 @@ module "gke" {
 
 ```hcl
 # Using gs:// notation (automatically converted)
+
 module "gke" {
   source = "gcs::https://storage.googleapis.com/my-modules/modules/gke-v1.5.0.tar.gz"
 }
@@ -39,7 +39,7 @@ gcloud auth application-default login
 # Service account key file
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account.json"
 
-# On GCE/GKE — uses instance/workload identity automatically
+# On GCE/GKE - uses instance/workload identity automatically
 ```
 
 ## GCS Bucket Setup

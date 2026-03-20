@@ -14,6 +14,7 @@ The `terraform.workspace` expression returns the name of the current workspace a
 
 ```hcl
 # The current workspace name is a string
+
 output "current_workspace" {
   value = terraform.workspace
 }

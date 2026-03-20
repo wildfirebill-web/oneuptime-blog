@@ -20,6 +20,7 @@ The build context is transferred to every farm node over SSH. A smaller context 
 
 ```bash
 # Check your current build context size
+
 du -sh --exclude=.git .
 
 # Create a thorough .containerignore

@@ -8,7 +8,7 @@ Description: Learn how to configure the K3s service CIDR to define the IP range 
 
 ## Introduction
 
-The service CIDR in K3s defines the IP address range assigned to Kubernetes Services of type ClusterIP. Every Service you create in the cluster receives a virtual IP from this range. This IP is not tied to any physical network interface — it's a virtual address managed by kube-proxy (or eBPF in newer K3s). Understanding and correctly configuring the service CIDR is essential for building clusters that integrate cleanly with your existing network.
+The service CIDR in K3s defines the IP address range assigned to Kubernetes Services of type ClusterIP. Every Service you create in the cluster receives a virtual IP from this range. This IP is not tied to any physical network interface - it's a virtual address managed by kube-proxy (or eBPF in newer K3s). Understanding and correctly configuring the service CIDR is essential for building clusters that integrate cleanly with your existing network.
 
 ## Default Service CIDR
 
@@ -24,6 +24,7 @@ When you run `kubectl get svc`:
 ```bash
 kubectl get svc --all-namespaces
 # NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)
+
 # kubernetes   ClusterIP   10.43.0.1      <none>        443/TCP
 # kube-dns     ClusterIP   10.43.0.10     <none>        53/UDP,53/TCP
 # my-app       ClusterIP   10.43.45.123   <none>        80/TCP

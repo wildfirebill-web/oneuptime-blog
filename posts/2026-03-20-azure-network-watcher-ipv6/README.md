@@ -14,6 +14,7 @@ Azure Network Watcher provides a suite of diagnostic tools for IPv6 troubleshoot
 
 ```bash
 # Network Watcher is automatically created per region
+
 # Verify it exists
 az network watcher list \
     --query "[*].{name:name, region:location, status:provisioningState}"

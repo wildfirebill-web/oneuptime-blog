@@ -254,6 +254,7 @@ Keep an eye on these metrics to know when to adjust scaling parameters:
 
 ```bash
 # Check current HPA status
+
 kubectl get hpa istio-ingressgateway -n istio-system
 
 # Watch scaling events

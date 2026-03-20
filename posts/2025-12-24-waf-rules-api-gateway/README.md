@@ -342,6 +342,7 @@ AdminIPSet:
 
 ```bash
 # Get the API Gateway ARN
+
 API_ARN="arn:aws:apigateway:us-east-1::/restapis/abc123/stages/prod"
 
 # Associate WAF with API Gateway

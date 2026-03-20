@@ -50,6 +50,7 @@ Adding a host to an existing cluster is the simplest scaling operation. The new 
 
 ```bash
 # Check the current state of your private cloud
+
 gcloud vmware private-clouds describe my-gcve-cloud \
   --location=us-central1 \
   --format="yaml(managementCluster)"

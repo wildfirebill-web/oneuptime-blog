@@ -31,6 +31,7 @@ Deploy SkyWalking's OAP server and UI:
 
 ```yaml
 # skywalking-oap.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

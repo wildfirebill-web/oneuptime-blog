@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, netstat, TCP, Linux, Troubleshooting, Connection State, Network Monitoring
+Tags: ss, netstat, TCP, Linux, Troubleshooting, Connection States, Network Monitoring
 
 Description: Learn how to use the ss and netstat commands to identify TCP connection bottlenecks, including connection state counts, socket queues, retransmits, and port exhaustion.
 
@@ -14,6 +14,7 @@ Description: Learn how to use the ss and netstat commands to identify TCP connec
 
 ```bash
 # Summary of all socket states
+
 ss -s
 
 # Output:
@@ -133,5 +134,5 @@ ss -tn | awk 'NR>1 && $3>10000' | head -10
 
 - Use `ss -s` for a quick overview; look for high TIME_WAIT or CLOSE_WAIT counts.
 - A high Recv-Q on a LISTEN socket indicates the application is not accepting connections fast enough.
-- Use `ss -tni` to see per-connection retransmit counts and RTT — high retransmits indicate packet loss.
+- Use `ss -tni` to see per-connection retransmit counts and RTT - high retransmits indicate packet loss.
 - TIME_WAIT exhaustion causes `connect: Cannot assign requested address`; fix with `tcp_tw_reuse` and wider port ranges.

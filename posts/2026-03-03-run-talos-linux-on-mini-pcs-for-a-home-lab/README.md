@@ -79,6 +79,7 @@ Before installing Talos, configure each mini PC's BIOS:
 
 ```bash
 # Download Talos metal image
+
 curl -LO https://github.com/siderolabs/talos/releases/download/v1.6.0/metal-amd64.iso
 
 # Write to USB drive

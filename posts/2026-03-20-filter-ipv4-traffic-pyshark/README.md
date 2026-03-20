@@ -18,6 +18,7 @@ PyShark supports two filtering mechanisms:
 import pyshark
 
 # Filter using Wireshark display filter syntax
+
 cap = pyshark.LiveCapture(
     interface="eth0",
     display_filter="ip.addr == 192.168.1.100"   # All traffic to/from this IP

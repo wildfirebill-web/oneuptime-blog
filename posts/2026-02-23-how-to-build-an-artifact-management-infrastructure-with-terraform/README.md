@@ -28,6 +28,7 @@ A CodeArtifact domain is the top-level container for all your repositories. It p
 
 ```hcl
 # domain.tf - CodeArtifact domain
+
 resource "aws_codeartifact_domain" "main" {
   domain = var.organization_name
 

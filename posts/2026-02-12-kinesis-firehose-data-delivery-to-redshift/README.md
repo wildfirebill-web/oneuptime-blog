@@ -208,6 +208,7 @@ def send_events(events):
             print(f"Failed records: {response['FailedPutCount']}")
 
 # Sample events
+
 events = [
     {
         "event_id": str(uuid.uuid4()),

@@ -16,6 +16,7 @@ Environment variables can be set in the deployment manifests for each ArgoCD com
 
 ```yaml
 # Helm values.yaml
+
 controller:
   env:
     - name: ARGOCD_RECONCILIATION_TIMEOUT

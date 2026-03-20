@@ -8,7 +8,7 @@ Description: Learn how to load JSON and YAML data files in OpenTofu to drive res
 
 ## Introduction
 
-Separating data from code is a fundamental software engineering principle. In OpenTofu, you can load JSON or YAML files using `file()` and `jsondecode()`/`yamldecode()` to drive resource creation — making it easy for non-Terraform users to modify configuration without touching HCL.
+Separating data from code is a fundamental software engineering principle. In OpenTofu, you can load JSON or YAML files using `file()` and `jsondecode()`/`yamldecode()` to drive resource creation - making it easy for non-Terraform users to modify configuration without touching HCL.
 
 ## Loading JSON Configuration Files
 
@@ -16,6 +16,7 @@ Use `jsondecode(file(...))` to load structured data from a JSON file.
 
 ```hcl
 # File: config/environments.json
+
 # {
 #   "dev": {
 #     "instance_type": "t3.micro",

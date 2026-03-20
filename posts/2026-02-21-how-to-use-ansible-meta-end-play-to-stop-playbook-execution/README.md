@@ -16,6 +16,7 @@ The `meta: end_play` task ends the current play immediately. No further tasks in
 
 ```yaml
 # Basic end_play example
+
 ---
 - name: Conditional playbook execution
   hosts: all

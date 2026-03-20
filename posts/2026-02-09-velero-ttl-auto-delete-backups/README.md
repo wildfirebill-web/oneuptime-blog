@@ -22,6 +22,7 @@ You can set TTL when creating a backup using the `--ttl` flag. The value accepts
 
 ```bash
 # Create a backup with 30-day TTL
+
 velero backup create my-backup \
   --ttl 720h \
   --include-namespaces production

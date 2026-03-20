@@ -91,6 +91,7 @@ flowchart TB
 
 ```bash
 # Check for multiple paths to the same LUN
+
 # You should see multiple devices with the same size and WWID
 lsblk -o NAME,SIZE,TYPE,TRAN,VENDOR,MODEL
 

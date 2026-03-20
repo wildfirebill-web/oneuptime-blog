@@ -173,6 +173,7 @@ This middleware adds standard deprecation headers to responses.
 
 ```python
 # deprecation_middleware.py
+
 # Middleware that adds RFC 8594 deprecation headers to API responses
 
 from datetime import datetime

@@ -24,6 +24,7 @@ The IP-FORWARD-MIB and legacy IP-MIB provide access to the routing table:
 
 ```bash
 # Walk the CIDR routing table
+
 snmpwalk -v2c -c public 192.168.1.1 ipCidrRouteTable
 
 # Or use the MIB name directly
@@ -132,7 +133,7 @@ python3 routing_table_monitor.py
 
 ## Step 4: Alert on Route Count Thresholds
 
-Monitor the total route count—a sudden drop may indicate a BGP or OSPF failure:
+Monitor the total route count-a sudden drop may indicate a BGP or OSPF failure:
 
 ```bash
 # Get the total number of routes
@@ -144,4 +145,4 @@ snmpwalk -v2c -c public 192.168.1.1 ipCidrRouteDest | wc -l
 
 ## Conclusion
 
-SNMP routing table monitoring detects route changes—additions, removals, and next-hop shifts—that indicate BGP route leaks, OSPF reconvergence, or network failures. Use the Python script as a lightweight monitor that alerts when changes occur, and integrate with your incident management system for automated notifications when the routing table changes unexpectedly.
+SNMP routing table monitoring detects route changes-additions, removals, and next-hop shifts-that indicate BGP route leaks, OSPF reconvergence, or network failures. Use the Python script as a lightweight monitor that alerts when changes occur, and integrate with your incident management system for automated notifications when the routing table changes unexpectedly.

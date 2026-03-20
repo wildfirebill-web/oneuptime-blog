@@ -34,6 +34,7 @@ The most common approach is to store CSS in a ConfigMap and mount it into the Ar
 
 ```yaml
 # Step 1: Create a ConfigMap with your CSS
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

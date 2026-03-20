@@ -36,6 +36,7 @@ Create a policy file and test it without touching your cluster:
 
 ```bash
 # Create a test policy file
+
 cat > /tmp/test-policy.csv << 'EOF'
 p, role:deployer, applications, get, */*, allow
 p, role:deployer, applications, sync, frontend/*, allow

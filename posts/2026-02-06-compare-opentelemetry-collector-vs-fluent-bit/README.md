@@ -14,7 +14,7 @@ When you need a lightweight telemetry agent that runs on every node in your clus
 
 Before diving in, it helps to clarify that Fluent Bit is not just a smaller version of Fluentd. Fluent Bit is written entirely in C, designed for embedded and containerized environments, and focuses on being extremely lightweight. It was built from scratch with performance as the primary goal. While it shares the Fluent ecosystem branding, its internals are completely different from Fluentd's Ruby-based architecture.
 
-## Resource Footprint
+Resource Footprint
 
 This is where Fluent Bit really shines. A typical Fluent Bit instance uses 5-10 MB of memory at idle and can process thousands of log records per second with minimal CPU usage. It was literally designed to run on IoT devices and edge hardware.
 
@@ -36,6 +36,7 @@ Fluent Bit uses an INI-style configuration format (though YAML support was added
 
 ```ini
 # Fluent Bit configuration for collecting container logs
+
 # Uses tail input to watch log files and forward output to send data
 [INPUT]
     # Tail plugin reads from log files

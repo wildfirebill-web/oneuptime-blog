@@ -18,6 +18,7 @@ This is the more common scenario: a printer is physically connected to an Ubuntu
 
 ```bash
 # Install CUPS and Avahi for Bonjour/mDNS support
+
 sudo apt update
 sudo apt install cups avahi-daemon -y
 

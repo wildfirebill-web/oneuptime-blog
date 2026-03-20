@@ -404,6 +404,7 @@ Handle schema evolution in your code.
 
 ```python
 # protobuf_evolution.py - Handling Protocol Buffers schema evolution
+
 from google.protobuf import json_format
 from google.protobuf.message import DecodeError
 import logging

@@ -97,6 +97,7 @@ import os
 sm_client = boto3.client('secretsmanager')
 
 # Module-level cache - persists between warm invocations
+
 _cache = {}
 CACHE_TTL = int(os.environ.get('SECRET_CACHE_TTL', '300'))  # 5 minutes default
 

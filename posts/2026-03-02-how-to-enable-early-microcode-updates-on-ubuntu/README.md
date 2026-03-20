@@ -29,6 +29,7 @@ Before updating, see what microcode version is currently running:
 
 ```bash
 # Check current microcode version
+
 grep microcode /proc/cpuinfo | head -5
 # Example output: microcode : 0xf4
 

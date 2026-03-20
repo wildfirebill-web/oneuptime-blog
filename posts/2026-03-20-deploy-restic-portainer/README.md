@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Restic + REST Server
+
 version: "3.8"
 
 services:
@@ -77,7 +78,7 @@ docker run --rm httpd:alpine htpasswd -Bbn restic your-restic-password > /opt/re
 
 ## Step 3: Set Environment Variables in Portainer
 
-```
+```text
 RESTIC_PASSWORD=your-restic-password        # REST Server HTTP auth password
 RESTIC_REPO_PASSWORD=your-repo-encryption-password  # Restic repo encryption key
 ```

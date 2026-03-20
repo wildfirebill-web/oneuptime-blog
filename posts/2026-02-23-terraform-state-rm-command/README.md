@@ -33,6 +33,7 @@ You can remove one or multiple resources in a single command.
 
 ```bash
 # Remove a single resource from state
+
 terraform state rm aws_instance.legacy_server
 
 # Output:

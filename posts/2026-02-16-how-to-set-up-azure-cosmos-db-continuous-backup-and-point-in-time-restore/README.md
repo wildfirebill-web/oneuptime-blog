@@ -37,6 +37,7 @@ Continuous backup is the clear winner for operational recovery. Periodic backup 
 
 ```bash
 # Create a new Cosmos DB account with continuous backup (30-day retention)
+
 az cosmosdb create \
     --name myCosmosAccount \
     --resource-group myResourceGroup \

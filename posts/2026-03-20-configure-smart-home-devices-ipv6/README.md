@@ -14,7 +14,7 @@ Modern smart home protocols increasingly use IPv6:
 - **Zigbee over IP (ZBIP)**: Uses IPv6
 - **mDNS/Bonjour**: Used for device discovery, works on both IPv4 and IPv6
 
-Many older smart home devices (WiFi bulbs, older smart plugs) are IPv4-only. This is fine — they work alongside IPv6 devices on a dual-stack network.
+Many older smart home devices (WiFi bulbs, older smart plugs) are IPv4-only. This is fine - they work alongside IPv6 devices on a dual-stack network.
 
 ## Home Assistant and IPv6
 
@@ -24,6 +24,7 @@ Home Assistant supports IPv6 for accessing the dashboard and for integrations:
 # /config/configuration.yaml
 
 # Enable IPv6 HTTP access to Home Assistant
+
 http:
   # Listen on all interfaces including IPv6
   server_host:
@@ -38,7 +39,7 @@ network:
 
 Access Home Assistant via its IPv6 address:
 
-```
+```text
 http://[2001:db8:home::ha]:8123
 ```
 
@@ -49,7 +50,7 @@ Note the square brackets around IPv6 addresses in URLs.
 Matter requires IPv6 to function. When you set up a Matter device:
 
 1. The Matter device connects via Thread (if it's a Thread-enabled device) or WiFi
-2. Thread uses IPv6 exclusively — devices get addresses via Thread's own DHCP/NDP
+2. Thread uses IPv6 exclusively - devices get addresses via Thread's own DHCP/NDP
 3. WiFi Matter devices use your home network's IPv6
 
 Ensure your router provides IPv6 for Matter to work correctly with Thread devices.
@@ -81,7 +82,7 @@ sudo ot-ctl ipaddr
 
 ## IPv6 for Zigbee and Z-Wave Devices
 
-Zigbee and Z-Wave devices themselves don't use IPv6 — the hub/gateway translates. When using:
+Zigbee and Z-Wave devices themselves don't use IPv6 - the hub/gateway translates. When using:
 
 - **Zigbee2MQTT**: Runs on your host; configure MQTT broker with IPv6 support
 - **ZHA (Zigbee Home Automation)** in Home Assistant: Inherits IPv6 from HA

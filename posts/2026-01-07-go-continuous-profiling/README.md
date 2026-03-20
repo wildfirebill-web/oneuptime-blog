@@ -193,6 +193,7 @@ Once your pprof server is running, you can collect profiles using the `go tool p
 
 ```bash
 # Collect a 30-second CPU profile
+
 go tool pprof http://localhost:6060/debug/pprof/profile?seconds=30
 
 # Collect heap profile

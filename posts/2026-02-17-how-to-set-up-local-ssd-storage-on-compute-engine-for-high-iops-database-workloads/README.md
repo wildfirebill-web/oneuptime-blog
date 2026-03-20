@@ -24,6 +24,7 @@ Here is how to create a VM with local SSD storage attached:
 
 ```bash
 # Create a VM with 4 local SSD partitions (1.5 TB total)
+
 gcloud compute instances create db-server \
   --zone=us-central1-a \
   --machine-type=n2-standard-8 \

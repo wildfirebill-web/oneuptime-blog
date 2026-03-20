@@ -51,6 +51,7 @@ Before writing a health check, examine the CRD's status structure:
 
 ```bash
 # Get a sample resource to see its status fields
+
 kubectl get <crd-kind> <name> -o json | jq '.status'
 
 # Check the CRD's OpenAPI schema for status fields

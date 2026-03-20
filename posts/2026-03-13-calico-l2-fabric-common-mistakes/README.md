@@ -29,6 +29,7 @@ The most common L2 overlay mistake is forgetting to add security group or firewa
 **Diagnosis**:
 ```bash
 # On a node, attempt to ping another node
+
 ping -c 3 <other-node-ip>
 # If this fails, basic connectivity is broken
 

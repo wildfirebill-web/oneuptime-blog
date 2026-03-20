@@ -60,6 +60,7 @@ Create container images that run as non-root users by default:
 FROM node:18-alpine
 
 # Create non-root user
+
 RUN addgroup -g 1000 appgroup && \
     adduser -D -u 1000 -G appgroup appuser
 

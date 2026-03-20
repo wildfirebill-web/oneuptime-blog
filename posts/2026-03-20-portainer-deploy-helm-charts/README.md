@@ -1,4 +1,4 @@
-# How to Deploy Helm Charts in Portainer
+# How to Deploy Helm Charts in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,7 +30,7 @@ Portainer comes with some built-in Helm repositories. Add more:
 2. Click **Add repository**
 3. Enter repository details:
 
-```
+```text
 Name:   bitnami
 URL:    https://charts.bitnami.com/bitnami
 ```
@@ -39,6 +39,7 @@ Popular repositories to add:
 
 ```bash
 # Add common Helm repositories
+
 helm repo add stable https://charts.helm.sh/stable
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
@@ -57,7 +58,7 @@ In the Portainer Helm catalog:
 
 Example: Search for "nginx-ingress":
 
-```
+```text
 nginx-ingress-controller    bitnami     4.8.0    NGINX Ingress Controller
 ingress-nginx               ingress-nginx  4.8.4  Ingress controller for Kubernetes
 ```
@@ -66,7 +67,7 @@ ingress-nginx               ingress-nginx  4.8.4  Ingress controller for Kuberne
 
 Click on a chart, then click **Install**:
 
-```
+```text
 Chart:       nginx-ingress-controller
 Version:     4.8.0
 Repository:  bitnami
@@ -82,7 +83,7 @@ The **Values** section shows customizable options:
 
 Some charts show a form with labeled fields. Fill in the values:
 
-```
+```text
 Replica count:         2
 Service type:          LoadBalancer
 Enable HTTPS:          [x]
@@ -144,7 +145,7 @@ helm template nginx-ingress bitnami/nginx-ingress-controller \
 
 Portainer shows the resources being created:
 
-```
+```text
 NAME: nginx-ingress
 LAST DEPLOYED: Tue Jan 15 2024 10:00:00
 NAMESPACE: ingress-nginx
@@ -163,7 +164,7 @@ Resources created:
 
 Go to **Applications → Helm releases** (or check the Helm section):
 
-```
+```text
 RELEASE NAME     NAMESPACE      CHART                          VERSION   STATUS
 nginx-ingress    ingress-nginx  nginx-ingress-controller       4.8.0     deployed
 cert-manager     cert-manager   cert-manager                   v1.13.2   deployed

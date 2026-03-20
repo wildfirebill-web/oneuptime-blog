@@ -28,6 +28,7 @@ Before updating, check what you currently have:
 
 ```bash
 # List installed extensions on a node
+
 talosctl -n 192.168.1.10 get extensions
 
 # Get detailed version information

@@ -24,6 +24,7 @@ Let us start with a practical example - a function that performs sentiment analy
 
 ```python
 # main.py - Cloud Function for sentiment analysis
+
 import json
 import functions_framework
 from google.cloud import language_v1

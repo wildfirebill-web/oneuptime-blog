@@ -338,6 +338,7 @@ Create resolvers for each field using the JavaScript runtime:
 
 ```bash
 # Attach getProduct resolver
+
 aws appsync create-resolver \
   --api-id YOUR_API_ID \
   --type-name Query \

@@ -27,6 +27,7 @@ This guide provides practical examples of using `calicoctl ipam split` for commo
 
 ```bash
 # Split the IP pool containing 10.244.0.0/24 into 4 smaller pools
+
 calicoctl ipam split 4 --cidr=10.244.0.0/24
 ```
 

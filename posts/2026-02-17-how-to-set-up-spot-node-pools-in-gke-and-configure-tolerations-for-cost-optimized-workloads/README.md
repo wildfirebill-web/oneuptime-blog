@@ -40,6 +40,7 @@ Create a node pool with the `--spot` flag.
 
 ```bash
 # Create a Spot node pool alongside your existing on-demand pool
+
 gcloud container node-pools create spot-pool \
   --cluster my-cluster \
   --region us-central1 \

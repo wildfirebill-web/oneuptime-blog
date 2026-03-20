@@ -44,6 +44,7 @@ curl -X GET "https://localhost:9200/_cluster/health?pretty" \
   -u elastic:password
 
 # Should be GREEN before upgrading
+
 ```
 
 ### 3. Create Snapshot Backup

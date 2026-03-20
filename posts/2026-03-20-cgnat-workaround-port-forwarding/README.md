@@ -15,7 +15,7 @@ When behind CGNAT, you cannot directly accept inbound connections because:
 
 ## Solution 1: Request a Public IP from Your ISP
 
-The simplest solution — contact your ISP and ask for a static or dynamic public IP. Many ISPs offer this as an upgrade or for a small fee.
+The simplest solution - contact your ISP and ask for a static or dynamic public IP. Many ISPs offer this as an upgrade or for a small fee.
 
 ## Solution 2: VPS Relay with frp (Fast Reverse Proxy)
 
@@ -25,6 +25,7 @@ frp is a fast reverse proxy for exposing local services behind NAT/firewalls.
 
 ```bash
 # On your VPS (has public IP 203.0.113.1):
+
 # Download frp
 wget https://github.com/fatedier/frp/releases/latest/download/frp_linux_amd64.tar.gz
 tar -xzf frp_linux_amd64.tar.gz

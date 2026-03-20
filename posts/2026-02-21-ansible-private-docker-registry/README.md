@@ -43,6 +43,7 @@ docker-registry/
 
 ```ini
 # inventory/hosts.ini - Registry server target
+
 [registry]
 registry-server ansible_host=10.0.1.20 ansible_user=ubuntu
 ```

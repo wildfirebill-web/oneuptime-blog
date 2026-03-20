@@ -78,6 +78,7 @@ The following script installs K3s with embedded etcd for high availability on th
 
 ```bash
 # Install K3s with embedded etcd on the first control plane node
+
 # The cluster-init flag bootstraps a new HA cluster with etcd
 # Disable local storage and traefik to keep the management cluster lean
 curl -sfL https://get.k3s.io | sh -s - server \

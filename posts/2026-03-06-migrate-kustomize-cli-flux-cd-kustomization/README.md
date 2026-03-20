@@ -33,6 +33,7 @@ Flux CD Kustomization adds:
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify Kustomize is installed (for testing)

@@ -35,6 +35,7 @@ Store the Slack webhook URL in a Kubernetes Secret to keep it secure.
 
 ```yaml
 # slack-webhook-secret.yaml
+
 # Kubernetes Secret containing the Slack webhook URL
 apiVersion: v1
 kind: Secret

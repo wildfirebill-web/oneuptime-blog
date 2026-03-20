@@ -28,6 +28,7 @@ Validate Calico configurations before applying them to production:
 
 ```bash
 # Use calicoctl to validate manifests
+
 calicoctl apply -f calico-config.yaml --dry-run
 
 # Compare your manifest against the live configuration

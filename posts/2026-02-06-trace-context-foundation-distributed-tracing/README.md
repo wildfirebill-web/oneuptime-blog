@@ -633,6 +633,7 @@ import requests
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 
 # Without instrumentation, trace context doesn't propagate
+
 response = requests.get("https://api.example.com/data")
 
 # Instrument requests library to enable automatic propagation

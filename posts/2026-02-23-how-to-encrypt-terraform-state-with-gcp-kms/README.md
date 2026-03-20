@@ -26,6 +26,7 @@ First, enable the required APIs and create a key ring and key:
 
 ```hcl
 # Enable required APIs
+
 resource "google_project_service" "kms" {
   service = "cloudkms.googleapis.com"
 }

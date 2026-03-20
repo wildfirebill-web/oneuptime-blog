@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, rtadvd, Router Advertisements, SLAAC
+Tags: IPv6, FreeBSD, Rtadvd, Router Advertisement, SLAAC
 
 Description: Learn how to configure rtadvd on FreeBSD to send IPv6 Router Advertisements, enabling SLAAC on your network so clients can automatically configure IPv6 addresses.
 
 ## What is rtadvd?
 
-`rtadvd` (Router Advertisement Daemon) is the FreeBSD daemon that sends ICMPv6 Router Advertisement (RA) messages. Client machines listen for these RAs to perform SLAAC — automatically assigning IPv6 addresses and default routes.
+`rtadvd` (Router Advertisement Daemon) is the FreeBSD daemon that sends ICMPv6 Router Advertisement (RA) messages. Client machines listen for these RAs to perform SLAAC - automatically assigning IPv6 addresses and default routes.
 
 ## Enable rtadvd
 
 ```bash
 # Enable IPv6 forwarding (required for rtadvd)
+
 sysctl -w net.inet6.ip6.forwarding=1
 echo 'net.inet6.ip6.forwarding=1' >> /etc/sysctl.conf
 
@@ -50,7 +51,7 @@ EOF
 
 ## rtadvd.conf Fields Explained
 
-```
+```text
 em1:                    Interface name
 :addrs#1:               Number of prefix entries
 :addr="2001:db8:lan::": Prefix to advertise (::= unspecified last 64 bits)

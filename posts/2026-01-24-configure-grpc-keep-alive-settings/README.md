@@ -473,6 +473,7 @@ Configure keep-alive in Python gRPC.
 
 ```python
 # client.py
+
 import grpc
 from grpc import ChannelCredentials
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Address Conflict, ARP, DHCP, Troubleshooting
+Tags: IPv4, Address Conflicts, ARP, DHCP, Troubleshooting
 
 Description: Learn how to detect, identify, and resolve IPv4 address conflicts on a network where two devices share the same IP address, causing connectivity issues.
 
@@ -29,6 +29,7 @@ REM Note the IP and MAC address shown
 **Linux detection:**
 ```bash
 # Use arping to find multiple hosts with the same IP
+
 sudo arping -c 5 192.168.1.50 -I eth0
 
 # If two different MAC addresses respond, there's a conflict:

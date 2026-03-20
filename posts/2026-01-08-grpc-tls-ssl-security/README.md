@@ -49,6 +49,7 @@ First, let's create a Certificate Authority (CA) and server certificates for dev
 # generate-certs.sh
 
 # Create directories
+
 mkdir -p certs
 cd certs
 

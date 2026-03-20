@@ -52,6 +52,7 @@ Setting MTU at the VPC level (applies to all VMs in the network):
 
 ```bash
 # Set the VPC network MTU to 1460 (matches Cloud VPN)
+
 gcloud compute networks update my-vpc \
     --mtu=1460
 ```

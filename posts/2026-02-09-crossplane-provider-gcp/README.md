@@ -18,6 +18,7 @@ Install the provider package:
 
 ```bash
 # Install GCP provider
+
 kubectl crossplane install provider \
   xpkg.upbound.io/crossplane-contrib/provider-gcp:v0.36.0
 

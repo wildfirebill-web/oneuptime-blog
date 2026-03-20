@@ -47,6 +47,7 @@ def chat(messages, user_input):
     return assistant_message
 
 # Run the chat loop
+
 conversation = []
 print("Chatbot ready! Type 'quit' to exit.\n")
 

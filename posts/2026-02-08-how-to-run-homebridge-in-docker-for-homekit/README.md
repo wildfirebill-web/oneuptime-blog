@@ -43,6 +43,7 @@ Create a directory for Homebridge:
 
 ```bash
 # Create the project directory for Homebridge data
+
 mkdir -p ~/homebridge
 cd ~/homebridge
 ```

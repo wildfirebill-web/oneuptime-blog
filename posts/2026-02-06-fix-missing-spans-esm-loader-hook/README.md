@@ -159,6 +159,7 @@ If spans are still missing after adding the loader hook:
 
 ```bash
 # Check if the hook.mjs file exists in your node_modules
+
 ls node_modules/@opentelemetry/instrumentation/hook.mjs
 ```
 

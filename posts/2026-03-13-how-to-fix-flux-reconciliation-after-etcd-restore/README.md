@@ -186,6 +186,7 @@ After clearing inventories, reconcile Kustomizations in the correct order:
 
 ```bash
 # Infrastructure first
+
 flux reconcile kustomization infra-crds --with-source
 flux reconcile kustomization infra-controllers --with-source
 

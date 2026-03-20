@@ -204,6 +204,7 @@ When all your services use these conventions, you can write powerful queries:
 
 ```text
 # Find all spans for a specific event type across all services
+
 cloudevents.event_type = "com.example.order.created"
 
 # Find all events from a specific source

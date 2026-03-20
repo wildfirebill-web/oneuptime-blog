@@ -33,6 +33,7 @@ Before any upgrade, verify the current versions:
 
 ```bash
 # Check current Typha image version
+
 kubectl get deployment calico-typha -n kube-system \
   -o jsonpath='{.spec.template.spec.containers[0].image}'
 

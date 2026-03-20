@@ -40,6 +40,7 @@ The retention period determines how far back you can restore. You can set it bet
 
 ```bash
 # Create a MariaDB server with 14-day backup retention
+
 az mariadb server create \
   --resource-group myResourceGroup \
   --name my-mariadb-server \

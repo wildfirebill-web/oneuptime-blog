@@ -41,6 +41,7 @@ Kubernetes Jobs must have unique names within a namespace. Once a Job exists, yo
 **Using static names**: The second sync fails because the Job already exists.
 ```yaml
 # This fails on the second sync without cleanup
+
 metadata:
   name: db-migrate  # Already exists from the first sync
 ```

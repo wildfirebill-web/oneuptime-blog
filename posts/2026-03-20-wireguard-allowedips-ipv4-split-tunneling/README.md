@@ -6,7 +6,7 @@ Tags: WireGuard, VPN, IPv4, Split Tunneling, Networking, Routing
 
 Description: Understand how WireGuard's AllowedIPs field controls IPv4 routing and how to configure split tunneling to send only selected traffic through the VPN.
 
-The `AllowedIPs` field in a WireGuard peer configuration is both an access control list and a routing directive. Understanding it is key to implementing split tunneling — where only certain IPv4 traffic goes through the VPN while everything else continues on the normal internet connection.
+The `AllowedIPs` field in a WireGuard peer configuration is both an access control list and a routing directive. Understanding it is key to implementing split tunneling - where only certain IPv4 traffic goes through the VPN while everything else continues on the normal internet connection.
 
 ## How AllowedIPs Works
 
@@ -17,7 +17,7 @@ WireGuard uses `AllowedIPs` in two ways:
 
 ## Full Tunnel vs. Split Tunnel
 
-```
+```text
 Full Tunnel:  AllowedIPs = 0.0.0.0/0   → All IPv4 traffic goes through VPN
 Split Tunnel: AllowedIPs = 10.0.0.0/24 → Only VPN subnet traffic goes through VPN
 ```
@@ -38,6 +38,7 @@ PublicKey = <SERVER_PUBLIC_KEY>
 Endpoint = 203.0.113.1:51820
 
 # Only route the internal corporate subnets through the VPN
+
 # Everything else (internet traffic) bypasses the VPN
 AllowedIPs = 10.0.0.0/24, 192.168.10.0/24, 172.16.20.0/22
 

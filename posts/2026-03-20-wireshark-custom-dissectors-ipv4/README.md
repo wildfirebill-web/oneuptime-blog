@@ -8,13 +8,13 @@ Description: Write Lua-based Wireshark dissectors to decode proprietary applicat
 
 ## Introduction
 
-Wireshark includes dissectors for hundreds of standard protocols, but proprietary or custom application protocols appear as raw bytes. Writing a Lua dissector adds named field decoding, filter support, and tree display — transforming incomprehensible hex into readable protocol details.
+Wireshark includes dissectors for hundreds of standard protocols, but proprietary or custom application protocols appear as raw bytes. Writing a Lua dissector adds named field decoding, filter support, and tree display - transforming incomprehensible hex into readable protocol details.
 
 ## Example Protocol
 
 We'll dissect a simple proprietary sensor protocol over UDP:
 
-```
+```text
 Packet format:
   [4 bytes: magic = 0xDEADBEEF]
   [1 byte:  message type (0=ping, 1=data, 2=ack)]
@@ -65,7 +65,7 @@ function sensor_proto.dissector(buffer, pinfo, tree)
     
     -- Minimum packet size check
     if length < 16 then
-        return 0  -- Not our protocol — too short
+        return 0  -- Not our protocol - too short
     end
     
     -- Check magic number
@@ -150,6 +150,7 @@ Once installed:
 
 ```wireshark
 # Filter for your protocol
+
 sensor
 
 # Filter by specific field

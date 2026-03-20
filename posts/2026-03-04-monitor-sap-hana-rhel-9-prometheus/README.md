@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Download the hanadb_exporter (community maintained)
+
 cd /tmp
 curl -LO https://github.com/SUSE/hanadb_exporter/releases/latest/download/hanadb_exporter-linux-amd64.tar.gz
 tar xzf hanadb_exporter-linux-amd64.tar.gz

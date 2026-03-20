@@ -34,6 +34,7 @@ Check that the Azure Disk CSI driver is running:
 
 ```bash
 # Check driver pods
+
 kubectl get pods -n kube-system -l app=csi-azuredisk-controller
 kubectl get pods -n kube-system -l app=csi-azuredisk-node
 

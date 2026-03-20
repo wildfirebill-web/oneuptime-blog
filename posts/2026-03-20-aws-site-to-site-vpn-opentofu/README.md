@@ -14,6 +14,7 @@ AWS Site-to-Site VPN creates an encrypted IPSec tunnel between your AWS VPC and 
 
 ```hcl
 # Virtual Private Gateway (AWS side of the connection)
+
 resource "aws_vpn_gateway" "main" {
   vpc_id          = var.vpc_id
   amazon_side_asn = 64512  # BGP ASN for AWS side
@@ -127,4 +128,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS Site-to-Site VPN provides an encrypted, redundant connection between your VPC and on-premises network. OpenTofu manages the VGW, Customer Gateway, VPN connection parameters, and route propagation — giving you a version-controlled, reproducible hybrid connectivity configuration.
+AWS Site-to-Site VPN provides an encrypted, redundant connection between your VPC and on-premises network. OpenTofu manages the VGW, Customer Gateway, VPN connection parameters, and route propagation - giving you a version-controlled, reproducible hybrid connectivity configuration.

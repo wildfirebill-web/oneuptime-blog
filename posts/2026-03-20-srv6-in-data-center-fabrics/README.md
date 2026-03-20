@@ -1,4 +1,4 @@
-# How to Understand SRv6 in Data Center Fabrics
+# How to Understand SRv6 in Data Center Fabrics - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -40,6 +40,7 @@ SRv6 EVPN uses End.DX2 SIDs for L2 bridging.
 
 ```bash
 # Leaf 1: configure End.DX2 SID for VLAN 100 bridge
+
 # End.DX2 decapsulates SRv6 and delivers to L2 interface
 
 ip -6 route add 5f00:1:1:0:e010::/128 \
@@ -52,8 +53,8 @@ ip -6 route add 5f00:1:1:0:e010::/128 \
 
 FRRouting BGP EVPN with SRv6:
 
-```
-! frr.conf — BGP EVPN SRv6 L2VPN
+```bash
+! frr.conf - BGP EVPN SRv6 L2VPN
 router bgp 65000
  !
  address-family l2vpn evpn
@@ -106,7 +107,7 @@ The SRv6 data center underlay needs:
 
 ```bash
 # 1. IS-IS for SRv6 locator advertisement between leaves and spines
-# 2. No VXLAN — only native IPv6 forwarding in the underlay
+# 2. No VXLAN - only native IPv6 forwarding in the underlay
 
 # Configure IS-IS on leaf with SRv6 locator advertisement
 # (Quagga/FRR)

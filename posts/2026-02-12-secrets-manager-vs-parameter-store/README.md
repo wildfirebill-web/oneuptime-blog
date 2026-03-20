@@ -75,6 +75,7 @@ That's an 80% cost reduction by using the right tool for each job.
 
 ```bash
 # Create a secret with automatic rotation
+
 aws secretsmanager create-secret \
   --name "production/database/app" \
   --secret-string '{"username":"app_user","password":"initial-pass","engine":"postgres","host":"db.example.com","port":5432}'

@@ -58,6 +58,7 @@ Docker containers run with these capabilities by default:
 
 ```bash
 # Drop all capabilities
+
 docker run --cap-drop=ALL alpine id
 ```
 

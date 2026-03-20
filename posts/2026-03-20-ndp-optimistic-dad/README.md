@@ -23,6 +23,7 @@ Description: Understand and configure Optimistic Duplicate Address Detection (DA
 
 ```bash
 # Enable Optimistic DAD per interface
+
 sysctl -w net.ipv6.conf.eth0.optimistic_dad=1
 
 # Enable globally

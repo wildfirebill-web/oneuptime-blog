@@ -50,6 +50,7 @@ blob_service = BlobServiceClient(
 blob_client = blob_service.get_blob_client("config", "app-settings.json")
 
 # Acquire a lease on the blob
+
 # Duration of 30 seconds - the lease expires automatically if not renewed
 lease_client = blob_client.acquire_lease(lease_duration=30)
 lease_id = lease_client.id

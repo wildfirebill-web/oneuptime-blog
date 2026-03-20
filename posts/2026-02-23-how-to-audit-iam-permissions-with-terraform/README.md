@@ -18,6 +18,7 @@ Over time, IAM policies accumulate. Users gain permissions they no longer need. 
 
 ```hcl
 # Configure AWS provider for IAM auditing
+
 terraform {
   required_providers {
     aws = {

@@ -39,6 +39,7 @@ Check your current configuration:
 import boto3
 
 # Print the region your client is using
+
 client = boto3.client('dynamodb')
 print(f"Current region: {client.meta.region_name}")
 

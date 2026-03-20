@@ -1,4 +1,4 @@
-# How to Request IPv6 Address Space from AFRINIC
+# How to Request IPv6 Address Space from AFRINIC - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ AFRINIC serves the African continent and Indian Ocean region. IPv6 space is allo
 
 ## Membership Categories
 
-```
+```text
 AFRINIC membership (2024, USD approximate):
 
 Micro ISP:     ~$100/year (small, <500 customers)
@@ -29,7 +29,7 @@ IPv6 allocation:
 
 ## Application Process
 
-```
+```sql
 1. Register at https://my.afrinic.net/
    - Create account
    - Submit organization details
@@ -56,7 +56,7 @@ IPv6 allocation:
 
 ## AFRINIC Whois Registration
 
-```
+```text
 inet6num:       2c0f:db8::/32
 netname:        EXAMPLE-ZA-IPV6
 descr:          Example ISP South Africa IPv6
@@ -72,6 +72,7 @@ source:         AFRINIC
 
 ```bash
 # AFRINIC hosted RPKI via MyAFRINIC portal
+
 # https://my.afrinic.net → Resources → RPKI
 
 # Create ROA:

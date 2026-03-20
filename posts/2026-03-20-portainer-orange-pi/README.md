@@ -1,4 +1,4 @@
-# How to Install Portainer on Orange Pi
+# How to Install Portainer on Orange Pi - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ On first boot:
 
 ```bash
 # Default credentials for most Orange Pi Ubuntu images
+
 # Username: orangepi  Password: orangepi
 ssh orangepi@<orangepi-ip>
 
@@ -160,9 +161,9 @@ docker run -d \
 
 Orange Pi 5 benchmarks well due to its Cortex-A76 cores, but keep in mind:
 
-- eMMC storage is faster than MicroSD — use it for Docker data directory
+- eMMC storage is faster than MicroSD - use it for Docker data directory
 - The Mali G610 GPU cannot be easily used for general GPU compute in Docker
-- Thermal throttling occurs without active cooling — add a heatsink and small fan
+- Thermal throttling occurs without active cooling - add a heatsink and small fan
 
 ## Conclusion
 

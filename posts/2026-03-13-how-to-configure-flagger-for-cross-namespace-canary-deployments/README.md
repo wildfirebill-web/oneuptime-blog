@@ -114,6 +114,7 @@ Services in the `frontend` namespace need to reach the backend using its FQDN. C
 
 ```yaml
 # Frontend deployment calling backend across namespaces
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

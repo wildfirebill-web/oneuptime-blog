@@ -12,7 +12,7 @@ VoIP over IPv6 requires strict QoS policies to maintain call quality. The key me
 
 ## VoIP QoS Requirements
 
-```
+```text
 VoIP QoS Requirements (ITU G.114):
 - One-way delay: < 150ms (150-400ms acceptable)
 - Jitter: < 30ms (affects audio playout buffer)
@@ -58,8 +58,9 @@ sudo nft -f /etc/nftables.conf
 
 ## Asterisk PBX QoS Configuration
 
-```
+```text
 # /etc/asterisk/rtp.conf - RTP port range
+
 [general]
 rtpstart=10000
 rtpend=20000
@@ -145,7 +146,7 @@ iperf3 -6 -c 2001:db8::remote -u -b 64k -l 160 -t 60
 
 ## Cisco Router VoIP over IPv6
 
-```
+```text
 ! Cisco QoS for VoIP over IPv6
 
 class-map match-any IPV6-VOIP-EF

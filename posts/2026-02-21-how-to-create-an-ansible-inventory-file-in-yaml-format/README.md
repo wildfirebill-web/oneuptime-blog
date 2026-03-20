@@ -18,6 +18,7 @@ A YAML inventory starts with the `all` group at the top level. Every host belong
 
 ```yaml
 # inventory.yml
+
 # Minimal YAML inventory with just a list of hosts
 all:
   hosts:

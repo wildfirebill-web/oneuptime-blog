@@ -26,6 +26,7 @@ If your Terraform configuration includes `check` blocks, `precondition` blocks, 
 
 ```hcl
 # Example: A check block that health assessments evaluate
+
 check "api_health" {
   data "http" "api_endpoint" {
     url = "https://api.example.com/health"

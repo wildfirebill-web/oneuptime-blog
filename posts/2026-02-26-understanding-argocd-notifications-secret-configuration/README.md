@@ -18,6 +18,7 @@ For example, in the ConfigMap:
 
 ```yaml
 # argocd-notifications-cm
+
 data:
   service.slack: |
     token: $slack-token

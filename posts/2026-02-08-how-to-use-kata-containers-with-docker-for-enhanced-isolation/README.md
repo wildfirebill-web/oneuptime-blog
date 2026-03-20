@@ -50,6 +50,7 @@ Kata Containers requires hardware virtualization support. Check your system:
 
 ```bash
 # Check for Intel VT-x or AMD-V support
+
 grep -cE '(vmx|svm)' /proc/cpuinfo
 # Output should be > 0
 

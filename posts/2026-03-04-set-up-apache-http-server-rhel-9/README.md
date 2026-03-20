@@ -20,6 +20,7 @@ Apache HTTP Server (httpd) remains one of the most widely used web servers in th
 
 ```bash
 # Install the Apache HTTP Server package
+
 sudo dnf install -y httpd
 
 # Verify the installed version

@@ -39,6 +39,7 @@ Priority only affects CPU scheduling. It does not affect data freshness, consist
 
 ```python
 # priority_example.py - Setting request priorities in Cloud Spanner
+
 from google.cloud import spanner
 from google.cloud.spanner_v1 import RequestOptions
 

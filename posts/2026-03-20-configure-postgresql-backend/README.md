@@ -41,6 +41,7 @@ OpenTofu will create the required tables automatically on first initialization.
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "pg" {
     conn_str = "postgresql://opentofu_user:secure_password@db.example.com/opentofu_state"
@@ -62,7 +63,7 @@ terraform {
 
 ## Using Environment Variable for Connection String
 
-Store connection strings in environment variables — never hardcode credentials:
+Store connection strings in environment variables - never hardcode credentials:
 
 ```bash
 # Set connection string via environment variable
@@ -70,7 +71,7 @@ export PG_CONN_STR="postgresql://opentofu_user:secure_password@db.example.com/op
 ```
 
 ```hcl
-# backend.tf — no conn_str needed when using env var
+# backend.tf - no conn_str needed when using env var
 terraform {
   backend "pg" {
     # conn_str loaded from PG_CONN_STR environment variable
@@ -91,10 +92,10 @@ terraform {
 ```
 
 Common parameters:
-- `sslmode=require` — Require SSL (highly recommended)
-- `sslmode=verify-full` — Verify SSL cert and hostname
-- `connect_timeout=10` — Connection timeout in seconds
-- `application_name=opentofu` — Visible in pg_stat_activity
+- `sslmode=require` - Require SSL (highly recommended)
+- `sslmode=verify-full` - Verify SSL cert and hostname
+- `connect_timeout=10` - Connection timeout in seconds
+- `application_name=opentofu` - Visible in pg_stat_activity
 
 ## Database Schema
 

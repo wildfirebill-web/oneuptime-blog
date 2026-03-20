@@ -25,6 +25,7 @@ graph TD
 
 ```yaml
 # playbook-lamp.yml
+
 # Deploy a complete LAMP stack on RHEL
 ---
 - name: Deploy LAMP stack

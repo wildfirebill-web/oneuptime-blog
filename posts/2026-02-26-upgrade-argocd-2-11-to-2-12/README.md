@@ -38,6 +38,7 @@ This is critical - ArgoCD 2.12 drops support for Kubernetes 1.26.
 
 ```bash
 # Check Kubernetes version
+
 kubectl version
 
 # If you are on 1.26 or earlier, upgrade Kubernetes first!

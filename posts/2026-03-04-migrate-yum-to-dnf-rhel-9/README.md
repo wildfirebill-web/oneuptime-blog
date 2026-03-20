@@ -23,6 +23,7 @@ Here is the timeline:
 
 ```bash
 # Check what yum actually points to on RHEL
+
 ls -la /usr/bin/yum
 ```
 

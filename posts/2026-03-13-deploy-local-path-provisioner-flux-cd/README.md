@@ -24,6 +24,7 @@ Deploying `local-path-provisioner` through Flux CD gives you GitOps-managed loca
 
 ```yaml
 # infrastructure/sources/local-path-provisioner-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

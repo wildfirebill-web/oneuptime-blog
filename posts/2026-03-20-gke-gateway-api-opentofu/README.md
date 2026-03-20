@@ -14,6 +14,7 @@ GKE Gateway API is the next-generation Kubernetes ingress solution, offering mor
 
 ```hcl
 # main.tf - GKE cluster with Gateway API enabled
+
 resource "google_container_cluster" "gateway_cluster" {
   name     = "gateway-api-cluster"
   location = "us-central1"

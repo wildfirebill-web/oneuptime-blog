@@ -31,6 +31,7 @@ The CSI driver needs permissions to create and manage Azure Managed Disks. If yo
 
 ```bash
 # Assign the Contributor role (or a custom role) to the service principal
+
 az role assignment create \
   --assignee <service-principal-app-id> \
   --role "Contributor" \

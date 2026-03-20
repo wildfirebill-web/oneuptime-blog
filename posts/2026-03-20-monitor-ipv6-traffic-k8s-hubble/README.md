@@ -18,6 +18,7 @@ Hubble is the observability layer built into Cilium. It provides deep visibility
 
 ```bash
 # Enable Hubble via the Cilium CLI
+
 cilium hubble enable --ui
 
 # Verify Hubble is running

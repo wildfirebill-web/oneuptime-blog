@@ -12,6 +12,7 @@ EC2 runs two status checks on every instance, and when either one fails, your in
 
 ```bash
 # Check the current status
+
 aws ec2 describe-instance-status \
   --instance-ids i-1234567890abcdef0 \
   --query "InstanceStatuses[0].[SystemStatus.Status, InstanceStatus.Status]" \

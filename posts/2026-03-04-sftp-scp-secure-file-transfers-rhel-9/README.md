@@ -30,6 +30,7 @@ scp admin@server:/path/to/remote/file.txt /path/to/local/
 
 ```bash
 # -r for recursive
+
 scp -r /path/to/local/directory admin@server:/path/to/remote/
 ```
 

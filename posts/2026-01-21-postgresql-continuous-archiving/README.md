@@ -39,6 +39,7 @@ Transaction -> WAL Buffer -> WAL Segment File -> Archive
 # postgresql.conf
 
 # Enable archiving
+
 archive_mode = on
 
 # Set WAL level (required for archiving)

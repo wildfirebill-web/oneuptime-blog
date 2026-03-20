@@ -66,6 +66,7 @@ The most straightforward case. You changed the version constraint in your config
 
 ```hcl
 # You changed this from "~> 5.0" to "~> 5.40"
+
 terraform {
   required_providers {
     aws = {

@@ -61,6 +61,7 @@ resource "azurerm_resource_group" "databricks" {
 }
 
 # Basic Databricks workspace
+
 resource "azurerm_databricks_workspace" "main" {
   name                = "dbw-analytics-prod-001"
   location            = azurerm_resource_group.databricks.location

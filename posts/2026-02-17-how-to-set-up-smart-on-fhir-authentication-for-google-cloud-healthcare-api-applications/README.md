@@ -51,6 +51,7 @@ This command updates the FHIR store to enable SMART access control:
 
 ```bash
 # Update FHIR store with SMART enforcement configuration
+
 curl -X PATCH \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
   -H "Content-Type: application/json" \

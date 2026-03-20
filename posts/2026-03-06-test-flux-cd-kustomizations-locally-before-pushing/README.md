@@ -18,6 +18,7 @@ Install the required tools:
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Install kustomize (standalone, not kubectl's built-in version)

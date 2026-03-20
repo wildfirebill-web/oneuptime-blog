@@ -26,6 +26,7 @@ This guide provides comprehensive validation checks for CES resources.
 
 ```bash
 # Check the CRD is established
+
 kubectl get crd ciliumendpointslices.cilium.io \
   -o jsonpath='{.status.conditions[?(@.type=="Established")].status}'
 

@@ -107,6 +107,7 @@ Project roles can also be used with JWT tokens, which is ideal for CI/CD pipelin
 
 ```bash
 # Generate a token for the deployer role in the frontend project
+
 argocd proj role create-token frontend deployer
 
 # Generate a token with an expiration

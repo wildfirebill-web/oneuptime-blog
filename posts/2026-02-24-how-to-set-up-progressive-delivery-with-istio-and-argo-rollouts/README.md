@@ -400,6 +400,7 @@ Enable the Argo Rollouts extension in ArgoCD:
 
 ```yaml
 # argocd-cm ConfigMap
+
 data:
   resource.customizations: |
     argoproj.io/Rollout:

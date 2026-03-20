@@ -29,6 +29,7 @@ Before starting, make sure you have:
 
 ```bash
 # Add the GitLab Helm repository
+
 helm repo add gitlab https://charts.gitlab.io
 
 # Update the chart cache
@@ -336,7 +337,7 @@ integration-test:
     - go test -v -tags=integration ./...
 ```
 
-## Resource Management
+Resource Management
 
 Control how many concurrent jobs the runner can handle.
 

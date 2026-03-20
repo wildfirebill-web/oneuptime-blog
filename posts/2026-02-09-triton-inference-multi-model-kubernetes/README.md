@@ -54,6 +54,7 @@ Create a configuration file for each model. Here's an example for a PyTorch sent
 
 ```protobuf
 # sentiment-analysis/config.pbtxt
+
 name: "sentiment-analysis"
 platform: "pytorch_libtorch"
 max_batch_size: 32
@@ -412,7 +413,7 @@ Key metrics to monitor:
 
 Set up alerts for high failure rates or queue times that indicate resource constraints.
 
-## Resource Management Strategies
+Resource Management Strategies
 
 For mixed model workloads, configure instance groups carefully:
 

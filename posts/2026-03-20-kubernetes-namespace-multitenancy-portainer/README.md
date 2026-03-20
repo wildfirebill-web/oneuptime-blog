@@ -8,12 +8,13 @@ Description: Configure Kubernetes namespace-based multi-tenancy through Portaine
 
 ## Introduction
 
-Kubernetes namespaces provide the primary isolation boundary for multi-tenancy. Combined with Portainer's Kubernetes RBAC integration, you can give each team or tenant access to only their namespace through the Portainer UI — without them needing kubectl access or knowledge of other namespaces. This guide covers creating namespaced environments, applying ResourceQuotas, and configuring Portainer team access for Kubernetes.
+Kubernetes namespaces provide the primary isolation boundary for multi-tenancy. Combined with Portainer's Kubernetes RBAC integration, you can give each team or tenant access to only their namespace through the Portainer UI - without them needing kubectl access or knowledge of other namespaces. This guide covers creating namespaced environments, applying ResourceQuotas, and configuring Portainer team access for Kubernetes.
 
 ## Step 1: Connect Kubernetes Cluster to Portainer
 
 ```bash
 # Install Portainer Agent in the Kubernetes cluster
+
 kubectl apply -n portainer -f \
   https://downloads.portainer.io/ce2-19/portainer-agent-k8s-lb.yaml
 
@@ -195,4 +196,4 @@ kubectl get resourcequota --all-namespaces
 
 ## Conclusion
 
-Kubernetes namespace-based multi-tenancy combines several components: namespaces provide logical isolation, ResourceQuotas enforce compute limits, LimitRanges set per-container defaults, RBAC restricts which users can act in each namespace, and NetworkPolicies (not covered here) provide network isolation. Portainer's Kubernetes integration surfaces these namespaces in the UI and maps Portainer teams to specific namespaces, providing a friendly interface for teams who don't need to learn kubectl. This architecture scales well — adding a new tenant means creating a namespace, applying quota and RBAC manifests, and configuring Portainer access for the team.
+Kubernetes namespace-based multi-tenancy combines several components: namespaces provide logical isolation, ResourceQuotas enforce compute limits, LimitRanges set per-container defaults, RBAC restricts which users can act in each namespace, and NetworkPolicies (not covered here) provide network isolation. Portainer's Kubernetes integration surfaces these namespaces in the UI and maps Portainer teams to specific namespaces, providing a friendly interface for teams who don't need to learn kubectl. This architecture scales well - adding a new tenant means creating a namespace, applying quota and RBAC manifests, and configuring Portainer access for the team.

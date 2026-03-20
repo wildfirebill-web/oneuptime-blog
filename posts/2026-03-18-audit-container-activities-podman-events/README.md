@@ -20,6 +20,7 @@ Container auditing should capture several categories of activity:
 
 ```bash
 # Lifecycle events - who created, started, stopped, removed containers
+
 podman events --filter type=container --since 24h
 
 # Image events - what images were pulled or modified

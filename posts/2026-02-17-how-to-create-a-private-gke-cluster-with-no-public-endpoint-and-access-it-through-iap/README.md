@@ -30,6 +30,7 @@ Private clusters need a VPC with properly sized subnets for nodes, pods, and ser
 
 ```bash
 # Create a custom VPC for the private cluster
+
 gcloud compute networks create private-gke-vpc \
   --subnet-mode custom
 

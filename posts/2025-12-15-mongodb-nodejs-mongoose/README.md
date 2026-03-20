@@ -14,6 +14,7 @@ Mongoose is the most popular Object Document Mapper (ODM) for MongoDB and Node.j
 
 ```bash
 # Install Mongoose
+
 npm install mongoose
 
 # For TypeScript support (mongoose includes its own type definitions)

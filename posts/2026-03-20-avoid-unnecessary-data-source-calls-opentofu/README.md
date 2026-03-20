@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, Performance, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Data Source, Performance, Best Practices, Infrastructure as Code
 
 Description: Learn how to avoid unnecessary data source calls in OpenTofu that slow down plans, hit API rate limits, and add complexity without benefit.
 
@@ -12,7 +12,7 @@ Data sources in OpenTofu read information from external systems during planning.
 
 ## When Data Sources Are Appropriate
 
-```
+```text
 Use data sources when:
 ✓ Looking up resources created outside your configuration
 ✓ Getting dynamically changing values (latest AMI, current region)
@@ -32,6 +32,7 @@ Looking up AMIs on every plan adds latency and API calls.
 
 ```hcl
 # UNNECESSARY: AMI rarely changes, repeated API call
+
 data "aws_ami" "ubuntu" {
   most_recent = true
   owners      = ["099720109477"]
@@ -69,7 +70,7 @@ resource "aws_vpc" "main" {
 }
 
 data "aws_vpc" "main" {
-  id = aws_vpc.main.id  # redundant — you already have the resource!
+  id = aws_vpc.main.id  # redundant - you already have the resource!
 }
 
 resource "aws_subnet" "public" {
@@ -125,7 +126,7 @@ tofu plan -refresh=false
 
 ## Data Sources That Scan Many Resources
 
-Some data sources make expensive scans — avoid calling them in frequently-run configs.
+Some data sources make expensive scans - avoid calling them in frequently-run configs.
 
 ```hcl
 # EXPENSIVE: Scans all subnets every plan

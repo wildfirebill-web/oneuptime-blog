@@ -29,6 +29,7 @@ Adjust MTU for your network environment:
 
 ```bash
 # Check current MTU setting
+
 kubectl -n kube-system exec ds/cilium -- cilium config view | grep mtu
 
 # Adjust MTU for VXLAN overlay (VXLAN header = 50 bytes overhead)

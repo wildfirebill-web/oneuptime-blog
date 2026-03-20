@@ -142,6 +142,7 @@ This is the most important part. Watch the canary's metrics and compare them to 
 
 ```bash
 # Error rate for canary
+
 rate(istio_requests_total{destination_workload="checkout-service-canary",response_code=~"5.."}[5m])
 /
 rate(istio_requests_total{destination_workload="checkout-service-canary"}[5m])

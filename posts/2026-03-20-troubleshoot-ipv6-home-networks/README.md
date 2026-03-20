@@ -20,6 +20,7 @@ First, verify IPv6 is available from your ISP:
 
 ```bash
 # Connect a laptop directly to the modem/ONT (bypass router)
+
 # Then run:
 ip -6 addr show scope global
 # or visit test-ipv6.com in a browser

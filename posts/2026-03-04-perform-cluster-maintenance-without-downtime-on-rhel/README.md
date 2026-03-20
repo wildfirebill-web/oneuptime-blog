@@ -16,6 +16,7 @@ Standby mode tells Pacemaker to move all resources off a node without removing i
 
 ```bash
 # Put node1 into standby (resources migrate to other nodes)
+
 sudo pcs node standby node1
 
 # Verify resources moved away from node1

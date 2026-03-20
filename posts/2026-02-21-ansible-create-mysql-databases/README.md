@@ -18,6 +18,7 @@ Install the MySQL community collection.
 
 ```bash
 # Install the community MySQL collection
+
 ansible-galaxy collection install community.mysql
 pip install PyMySQL
 ```

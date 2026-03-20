@@ -34,6 +34,7 @@ graph TD
 
 ```bash
 # List pods and filter for Pending state
+
 kubectl get pods -n your-namespace --field-selector=status.phase=Pending
 
 # Describe the pod to see why it is pending

@@ -60,6 +60,7 @@ Create the three standard base chains for filtering:
 
 ```bash
 # Input chain - traffic destined for this host
+
 nft add chain inet firewall input { type filter hook input priority 0 \; policy drop \; }
 
 # Forward chain - traffic passing through this host

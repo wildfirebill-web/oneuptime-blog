@@ -280,6 +280,7 @@ async function updateDataFreshness(date) {
 
 ```bash
 # Deploy the transformation function
+
 gcloud functions deploy run-transformations \
   --gen2 \
   --runtime=nodejs20 \

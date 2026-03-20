@@ -107,6 +107,7 @@ To use managed identity, enable it on your Azure resource (App Service, VM, Cont
 
 ```bash
 # Enable system-assigned managed identity on an App Service
+
 az webapp identity assign --name my-java-app --resource-group my-rg
 
 # Grant the identity access to a Key Vault

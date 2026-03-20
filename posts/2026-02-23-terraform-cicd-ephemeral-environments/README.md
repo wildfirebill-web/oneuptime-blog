@@ -28,6 +28,7 @@ Structure your Terraform to support dynamic naming:
 
 ```hcl
 # environments/preview/variables.tf
+
 variable "environment_name" {
   type        = string
   description = "Unique name for this ephemeral environment"

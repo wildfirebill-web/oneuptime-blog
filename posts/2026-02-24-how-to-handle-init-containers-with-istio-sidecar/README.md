@@ -25,6 +25,7 @@ The problem is at step 2. Your init containers try to make network requests, but
 
 ```bash
 # This is what you see in your init container logs:
+
 curl: (7) Failed to connect to api.example.com port 443: Connection refused
 ```
 

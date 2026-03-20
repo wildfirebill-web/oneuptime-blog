@@ -12,14 +12,14 @@ Cisco IOS supports RIPng natively. Unlike RIPv2 where the network statement acti
 
 ## Prerequisites
 
-```
+```text
 ! Enable IPv6 unicast routing
 Router(config)# ipv6 unicast-routing
 ```
 
 ## Basic RIPng Configuration
 
-```
+```text
 ! Create a RIPng process with a tag name
 Router(config)# ipv6 router rip RIPNG_PROCESS
 
@@ -37,7 +37,7 @@ Router(config-if)# ipv6 rip RIPNG_PROCESS enable
 
 Suppress RIPng updates on interfaces that connect to hosts (not routers):
 
-```
+```text
 Router(config)# ipv6 router rip RIPNG_PROCESS
 Router(config-rtr)# passive-interface GigabitEthernet0/2
 ```
@@ -46,7 +46,7 @@ Router(config-rtr)# passive-interface GigabitEthernet0/2
 
 Advertise a default route (::/0) to RIPng neighbors:
 
-```
+```text
 ! Originate a default route into RIPng
 Router(config)# ipv6 router rip RIPNG_PROCESS
 Router(config-rtr)# default-information originate    ! Requires default in routing table
@@ -57,7 +57,7 @@ Router(config-rtr)# default-information originate always
 
 ## Adjusting Timers
 
-```
+```text
 ! Adjust RIPng timers (update, timeout, holddown - in seconds)
 Router(config)# ipv6 router rip RIPNG_PROCESS
 Router(config-rtr)# timers update 30 holddown 120 invalid 180 flush 240
@@ -67,7 +67,7 @@ Router(config-rtr)# timers update 30 holddown 120 invalid 180 flush 240
 
 Split horizon is enabled by default. Disable it for NBMA networks:
 
-```
+```text
 ! Disable split horizon on an interface (for hub-and-spoke networks)
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# no ipv6 rip RIPNG_PROCESS split-horizon
@@ -75,7 +75,7 @@ Router(config-if)# no ipv6 rip RIPNG_PROCESS split-horizon
 
 ## Verification Commands
 
-```
+```text
 ! Show RIPng process and configuration
 Router# show ipv6 rip
 
@@ -91,7 +91,7 @@ Router# show ipv6 interface GigabitEthernet0/0 | include RIP
 
 ## Sample Output
 
-```
+```text
 Router# show ipv6 rip
 
 RIP process "RIPNG_PROCESS", port 521, multicast-group ff02::9, pid 312
@@ -117,7 +117,7 @@ RIP process "RIPNG_PROCESS"
 
 ## Redistributing Routes into RIPng
 
-```
+```text
 ! Redistribute OSPFv3 routes into RIPng
 Router(config)# ipv6 router rip RIPNG_PROCESS
 Router(config-rtr)# redistribute ospf 1 metric 5

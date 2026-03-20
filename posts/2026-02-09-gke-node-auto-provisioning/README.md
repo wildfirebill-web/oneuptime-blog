@@ -24,6 +24,7 @@ Enable NAP on cluster creation or update existing clusters:
 
 ```bash
 # Enable NAP on existing cluster
+
 gcloud container clusters update production-cluster \
   --enable-autoprovisioning \
   --autoprovisioning-max-cpu 100 \

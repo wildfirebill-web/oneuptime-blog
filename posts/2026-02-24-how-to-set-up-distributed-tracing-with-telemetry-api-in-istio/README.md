@@ -191,6 +191,7 @@ Apply and generate some traffic:
 kubectl apply -f tracing-telemetry.yaml
 
 # Generate traffic
+
 for i in $(seq 1 100); do
   curl -s http://your-service/api/test
 done

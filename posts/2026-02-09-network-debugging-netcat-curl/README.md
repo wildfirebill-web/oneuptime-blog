@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Networking, Debugging, Netcat, curl
+Tags: Kubernetes, Networking, Debugging, netcat, curl
 
 Description: Learn how to use netcat and curl for network debugging in Kubernetes pods to troubleshoot connectivity, test services, and diagnose network issues.
 
@@ -51,6 +51,7 @@ Check if ports are open and accepting connections:
 
 ```bash
 # Test TCP connection
+
 nc -zv service-name 8080
 
 # Output:

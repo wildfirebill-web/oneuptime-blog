@@ -38,6 +38,7 @@ First, check the history to find the target:
 
 ```bash
 # View deployment history
+
 argocd app history my-app
 ```
 

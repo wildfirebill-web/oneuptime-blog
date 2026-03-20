@@ -6,7 +6,7 @@ Tags: OpenTofu, Variables, Refactoring, HCL, Infrastructure as Code
 
 Description: Learn how to systematically replace hardcoded values in OpenTofu configurations with variables to create reusable, environment-agnostic modules.
 
-Hardcoded values — instance types, region names, CIDR blocks, account IDs — make configurations brittle and impossible to reuse across environments. Extracting them to variables is one of the most important refactoring steps in maturing an OpenTofu codebase.
+Hardcoded values - instance types, region names, CIDR blocks, account IDs - make configurations brittle and impossible to reuse across environments. Extracting them to variables is one of the most important refactoring steps in maturing an OpenTofu codebase.
 
 ## Identifying Hardcoded Values
 
@@ -14,6 +14,7 @@ Scan your configuration for values that might differ between environments or dep
 
 ```bash
 # Search for potential hardcoded strings (region names, account IDs, etc.)
+
 grep -rn '"us-east-1"' .
 grep -rn '"123456789012"' .
 grep -rn '"t3\.' .
@@ -22,7 +23,7 @@ grep -rn '"10\.0\.' .
 
 ## Step 1: Extract to Local Variables First
 
-Start by moving hardcoded values to `locals` — this is a safe first step that doesn't change behavior:
+Start by moving hardcoded values to `locals` - this is a safe first step that doesn't change behavior:
 
 ```hcl
 # Before: hardcoded throughout main.tf
@@ -110,7 +111,7 @@ Not everything should be a variable. Keep values that are truly constant (not en
 
 ```hcl
 locals {
-  # These never change — keep as locals, not variables
+  # These never change - keep as locals, not variables
   managed_by  = "opentofu"
   aws_service = "ec2"
 }

@@ -22,6 +22,7 @@ Initialize the project:
 
 ```bash
 # Create a new Zig project
+
 mkdir zig-docker-demo
 cd zig-docker-demo
 zig init

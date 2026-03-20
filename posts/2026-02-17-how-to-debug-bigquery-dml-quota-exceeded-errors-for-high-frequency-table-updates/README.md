@@ -47,6 +47,7 @@ You have a process that inserts small batches of rows every minute.
 
 ```python
 # Bad: inserting a small batch every minute = 1440 DML inserts per day
+
 # This will exceed the 1500 daily limit very quickly
 
 from google.cloud import bigquery

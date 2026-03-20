@@ -35,6 +35,7 @@ Add region annotations to your Kubernetes deployments:
 
 ```yaml
 # eu-service-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

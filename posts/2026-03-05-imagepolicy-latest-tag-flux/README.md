@@ -37,6 +37,7 @@ The recommended approach is to tag images with semantic versions and use a SemVe
 
 ```yaml
 # imagepolicy-semver-recommended.yaml
+
 # Recommended: use semver tags instead of latest
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

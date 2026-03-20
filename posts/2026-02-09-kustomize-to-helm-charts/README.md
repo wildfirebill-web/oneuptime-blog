@@ -21,6 +21,7 @@ Understand your current Kustomize organization before converting.
 echo "=== Kustomize Structure Analysis ==="
 
 # Find all kustomization files
+
 find . -name "kustomization.yaml" -o -name "kustomization.yml"
 
 # Analyze base directory

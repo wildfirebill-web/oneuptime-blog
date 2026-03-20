@@ -41,6 +41,7 @@ Fluent Bit is a lightweight log processor that collects container logs from ever
 
 ```yaml
 # playbook: deploy-fluentbit-daemonset.yml
+
 # Deploys Fluent Bit as a DaemonSet for centralized log collection
 ---
 - name: Deploy Fluent Bit DaemonSet

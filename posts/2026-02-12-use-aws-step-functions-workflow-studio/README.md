@@ -18,6 +18,7 @@ Workflow Studio is built into the Step Functions console. When you create or edi
 
 ```bash
 # Create a new state machine - this opens Workflow Studio in the console
+
 aws stepfunctions create-state-machine \
   --name "order-processing-workflow" \
   --role-arn "arn:aws:iam::123456789012:role/StepFunctionsRole" \

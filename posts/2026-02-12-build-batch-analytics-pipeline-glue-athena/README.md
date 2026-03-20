@@ -32,6 +32,7 @@ Organize your S3 bucket with clear zones for raw, processed, and curated data.
 
 ```bash
 # Create the bucket structure
+
 aws s3api put-object --bucket my-analytics-lake --key raw/
 aws s3api put-object --bucket my-analytics-lake --key processed/
 aws s3api put-object --bucket my-analytics-lake --key curated/

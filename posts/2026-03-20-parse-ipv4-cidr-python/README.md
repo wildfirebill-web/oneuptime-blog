@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, CIDR, ipaddress, Networking, Subnetting
+Tags: Python, IPv4, CIDR, Ipaddress, Networking, Subnetting
 
 Description: Learn how to parse and work with IPv4 CIDR notation in Python using the ipaddress standard library module to extract network addresses, host ranges, subnet masks, and perform membership checks.
 
@@ -12,6 +12,7 @@ Description: Learn how to parse and work with IPv4 CIDR notation in Python using
 import ipaddress
 
 # strict=False allows host bits to be set (e.g., 192.168.1.50/24 → 192.168.1.0/24)
+
 net = ipaddress.IPv4Network("192.168.1.0/24", strict=True)
 
 print(net.network_address)   # 192.168.1.0

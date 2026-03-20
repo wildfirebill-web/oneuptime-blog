@@ -23,6 +23,7 @@ This guide covers setting up Alembic, writing migrations, and running them again
 
 ```bash
 # Create resources
+
 az group create --name alembic-demo-rg --location eastus
 
 az sql server create \

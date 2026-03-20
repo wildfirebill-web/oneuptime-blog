@@ -100,6 +100,7 @@ sudo ipsec certutil -S -k rsa -n "vpn-siteA" \
   -z /etc/hostname
 
 # Export and import certificates between sites
+
 sudo ipsec certutil -L -n "vpn-siteA" -a > siteA.pem
 ```
 

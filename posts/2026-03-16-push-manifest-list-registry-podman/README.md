@@ -22,6 +22,7 @@ Before pushing, ensure you have:
 
 ```bash
 # Verify your manifest list has entries
+
 podman manifest inspect myapp:latest | jq '.manifests | length'
 
 # Log in to your registry

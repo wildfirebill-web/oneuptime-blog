@@ -67,6 +67,7 @@ elk-stack/
 
 ```yaml
 # roles/elasticsearch/defaults/main.yml
+
 elasticsearch_version: "8.11"
 elasticsearch_cluster_name: "elk-cluster"
 elasticsearch_node_name: "{{ ansible_hostname }}"

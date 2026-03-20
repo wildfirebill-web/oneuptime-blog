@@ -112,7 +112,7 @@ server {
 ## Browser Client Connecting to wss://
 
 ```javascript
-// wss:// automatically uses TLS — no extra config needed in the browser
+// wss:// automatically uses TLS - no extra config needed in the browser
 const ws = new WebSocket("wss://ws.example.com/ws");
 
 ws.onopen = () => ws.send("hello over TLS!");

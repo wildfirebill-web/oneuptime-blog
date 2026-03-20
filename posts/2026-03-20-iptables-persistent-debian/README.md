@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, Debian, Linux, Firewall, Persistence, iptables-persistent
+Tags: iptables, Debian, Linux, Firewall, Persistence, Iptables-persistent
 
 Description: Configure iptables-persistent on Debian to automatically restore iptables and ip6tables rules at boot, ensuring your firewall configuration survives system restarts.
 
@@ -12,6 +12,7 @@ On Debian and Debian-based systems, `iptables-persistent` is the standard packag
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install iptables-persistent
@@ -133,4 +134,4 @@ echo -e "*filter\n:INPUT ACCEPT [0:0]\n:FORWARD ACCEPT [0:0]\n:OUTPUT ACCEPT [0:
   | sudo tee /etc/iptables/rules.v4
 ```
 
-`iptables-persistent` is the simplest and most reliable way to make iptables survive reboots on Debian systems — it integrates cleanly with systemd and requires no manual boot scripts.
+`iptables-persistent` is the simplest and most reliable way to make iptables survive reboots on Debian systems - it integrates cleanly with systemd and requires no manual boot scripts.

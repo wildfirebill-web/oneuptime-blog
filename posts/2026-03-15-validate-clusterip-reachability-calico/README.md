@@ -30,6 +30,7 @@ Test the affected ClusterIP service from multiple locations in the cluster.
 
 ```bash
 # Test from a pod on the same node as a service endpoint
+
 kubectl run validate-same-node --image=nicolaka/netshoot \
   --overrides='{"spec":{"nodeName":"<endpoint-node>"}}' \
   --rm -it -- curl -s --connect-timeout 5 -o /dev/null -w "%{http_code}" \

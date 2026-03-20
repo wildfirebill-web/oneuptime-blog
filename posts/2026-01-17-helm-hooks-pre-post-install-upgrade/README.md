@@ -59,6 +59,7 @@ The most common use case: run database migrations before deploying new applicati
 
 ```yaml
 # templates/db-migration-hook.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

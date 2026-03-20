@@ -35,6 +35,7 @@ The proxy Secret must contain an `address` key with the full proxy URL. If your 
 
 ```yaml
 # proxy-secret.yaml
+
 # Secret containing the proxy server address for Git operations
 apiVersion: v1
 kind: Secret

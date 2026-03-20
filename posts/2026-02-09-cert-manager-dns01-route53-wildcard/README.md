@@ -62,6 +62,7 @@ Save this as `cert-manager-route53-policy.json` and create the policy:
 
 ```bash
 # Create IAM policy
+
 aws iam create-policy \
   --policy-name CertManagerRoute53Policy \
   --policy-document file://cert-manager-route53-policy.json

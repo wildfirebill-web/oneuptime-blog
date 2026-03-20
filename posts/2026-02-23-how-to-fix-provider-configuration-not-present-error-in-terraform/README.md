@@ -29,6 +29,7 @@ The simplest case: you deleted the provider block from your configuration, but r
 
 ```hcl
 # You had this, but removed it:
+
 # provider "aws" {
 #   region = "us-east-1"
 # }

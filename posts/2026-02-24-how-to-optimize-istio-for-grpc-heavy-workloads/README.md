@@ -48,6 +48,7 @@ Verify that load balancing is working per-request:
 
 ```bash
 # Check the cluster configuration
+
 istioctl proxy-config cluster deploy/my-grpc-client -n my-namespace | grep my-grpc-service
 
 # Check endpoint distribution

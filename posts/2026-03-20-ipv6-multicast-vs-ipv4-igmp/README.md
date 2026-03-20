@@ -9,8 +9,8 @@ Description: A comparative analysis of IPv6 multicast (MLD) and IPv4 multicast (
 ## Overview
 
 Both IPv4 and IPv6 support multicast, but they use different protocols for group management:
-- IPv4: **IGMP** (Internet Group Management Protocol) — IGMPv1, v2, v3
-- IPv6: **MLD** (Multicast Listener Discovery) — MLDv1, v2
+- IPv4: **IGMP** (Internet Group Management Protocol) - IGMPv1, v2, v3
+- IPv6: **MLD** (Multicast Listener Discovery) - MLDv1, v2
 
 MLD is essentially IGMP redesigned as part of ICMPv6 with IPv6 address support.
 
@@ -31,7 +31,7 @@ MLD is essentially IGMP redesigned as part of ICMPv6 with IPv6 address support.
 ## Address Range Differences
 
 IPv4 multicast uses Class D addresses (224.0.0.0/4):
-```
+```text
 224.0.0.0/24     - Link-local (routers don't forward)
 224.0.1.0-238.255.255.255  - Global multicast
 232.0.0.0/8      - SSM range
@@ -39,7 +39,7 @@ IPv4 multicast uses Class D addresses (224.0.0.0/4):
 ```
 
 IPv6 multicast uses the ff00::/8 prefix with embedded scope:
-```
+```text
 ff02::/16        - Link-local (routers don't forward)
 ff05::/16        - Site-local
 ff0e::/16        - Global multicast
@@ -51,12 +51,12 @@ ff3e::/32        - SSM (global scope)
 ### 1. Protocol Encapsulation
 
 **IGMP**: Carried directly in IPv4 as a separate protocol (protocol number 2):
-```
+```text
 IPv4 Header (proto=2) | IGMP Message
 ```
 
 **MLD**: Carried as ICMPv6 (protocol 58), with mandatory Hop-by-Hop Router Alert:
-```
+```text
 IPv6 Header | Hop-by-Hop Options (Router Alert) | ICMPv6 (MLD Message)
 ```
 
@@ -66,10 +66,11 @@ The Hop-by-Hop extension header is mandatory for all MLD messages, ensuring rout
 
 **IGMP**: Uses the interface's IPv4 address as source.
 
-**MLD**: Must use a link-local IPv6 address as source (RFC 3590). This is why MLD works even before an interface gets a global IPv6 address — link-local addresses are always available.
+**MLD**: Must use a link-local IPv6 address as source (RFC 3590). This is why MLD works even before an interface gets a global IPv6 address - link-local addresses are always available.
 
 ```bash
 # Verify MLD reports use link-local source
+
 tcpdump -i eth0 -n 'icmp6 and ip6[40] == 143' | grep 'fe80'
 # Source should always be a fe80:: address
 ```
@@ -78,7 +79,7 @@ tcpdump -i eth0 -n 'icmp6 and ip6[40] == 143' | grep 'fe80'
 
 **IGMPv2**: Hosts suppress their reports when they hear another host already reporting for the same group.
 
-**MLDv2**: No report suppression — each host reports independently. This is simpler but generates more traffic on busy links.
+**MLDv2**: No report suppression - each host reports independently. This is simpler but generates more traffic on busy links.
 
 ### 4. Scope Awareness
 

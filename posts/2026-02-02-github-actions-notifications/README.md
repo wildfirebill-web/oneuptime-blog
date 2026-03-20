@@ -42,6 +42,7 @@ Navigate to your repository settings and configure notification preferences unde
 
 ```yaml
 # .github/settings.yml (using probot/settings app)
+
 repository:
   # Enable/disable specific notification types
   has_issues: true

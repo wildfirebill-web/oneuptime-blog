@@ -26,6 +26,7 @@ Most container orchestrators support multiple types of health checks:
 
 ```hcl
 # Kubernetes deployment with comprehensive health checks
+
 resource "kubernetes_deployment" "api" {
   metadata {
     name = "api-service"

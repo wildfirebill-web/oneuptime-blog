@@ -16,6 +16,7 @@ The `values` function takes a map and returns a list containing all the values f
 
 ```hcl
 # Extract just the values from a map
+
 > values({ "a" = 1, "b" = 2, "c" = 3 })
 [
   1,

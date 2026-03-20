@@ -16,6 +16,7 @@ Install helm-docs using your preferred method:
 
 ```bash
 # Using Homebrew on macOS
+
 brew install norwoodj/tap/helm-docs
 
 # Using Go

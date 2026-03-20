@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, s3, backups, kubernetes, aws
+Tags: Rancher, Disaster-recovery, S3, Backup, Kubernetes, AWS
 
 Description: Complete configuration guide for setting up Rancher disaster recovery using Amazon S3 or S3-compatible storage for reliable backup storage.
 
@@ -21,6 +21,7 @@ Amazon S3 and S3-compatible storage provide durable, highly-available storage fo
 
 ```bash
 # Create primary backup bucket
+
 aws s3 mb s3://rancher-production-backups \
   --region us-east-1
 

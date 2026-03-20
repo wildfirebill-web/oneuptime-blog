@@ -35,6 +35,7 @@ Create an SQS queue and subscribe it to an SNS topic.
 
 ```bash
 # Create an SQS queue
+
 aws sqs create-queue --queue-name order-inventory-queue
 
 # Get the queue ARN (you'll need this for the subscription)

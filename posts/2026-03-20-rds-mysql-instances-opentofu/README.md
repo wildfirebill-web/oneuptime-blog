@@ -19,6 +19,7 @@ Amazon RDS MySQL provides a managed relational database service with automated b
 
 ```hcl
 # RDS requires a subnet group spanning at least 2 AZs
+
 resource "aws_db_subnet_group" "main" {
   name       = "${var.project_name}-rds-subnet-group"
   subnet_ids = var.private_subnet_ids

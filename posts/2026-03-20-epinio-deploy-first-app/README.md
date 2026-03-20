@@ -37,6 +37,7 @@ Let's create a Node.js application:
 mkdir my-first-app && cd my-first-app
 
 # Create the application file
+
 cat > server.js << 'EOF'
 const http = require('http');
 const port = process.env.PORT || 8080;
@@ -187,4 +188,4 @@ epinio namespace delete my-apps
 
 ## Conclusion
 
-Epinio's push workflow makes deploying applications to Kubernetes as simple as pushing to a PaaS platform. Developers don't need to write Kubernetes manifests or understand container building — just point Epinio at source code and it handles the rest. This dramatically reduces the Kubernetes learning curve while maintaining the scalability and reliability of Kubernetes.
+Epinio's push workflow makes deploying applications to Kubernetes as simple as pushing to a PaaS platform. Developers don't need to write Kubernetes manifests or understand container building - just point Epinio at source code and it handles the rest. This dramatically reduces the Kubernetes learning curve while maintaining the scalability and reliability of Kubernetes.

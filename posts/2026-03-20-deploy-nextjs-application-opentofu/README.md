@@ -12,7 +12,7 @@ Next.js supports multiple deployment modes: static export (like React), standalo
 
 ## Architecture Overview
 
-```
+```text
 CloudFront Distribution
 ├── /static/* → S3 Bucket (static assets)
 ├── /_next/static/* → S3 Bucket (Next.js built assets)
@@ -137,7 +137,7 @@ resource "aws_cloudfront_distribution" "nextjs" {
     origin_request_policy_id = "b689b0a8-53d0-40ab-baf2-68738e2966ac"  # AllViewerExceptHostHeader
   }
 
-  # Static Next.js assets — served from S3, long-lived cache
+  # Static Next.js assets - served from S3, long-lived cache
   ordered_cache_behavior {
     path_pattern           = "/_next/static/*"
     allowed_methods        = ["GET", "HEAD"]
@@ -170,4 +170,4 @@ resource "aws_cloudfront_distribution" "nextjs" {
 
 ## Summary
 
-Deploying Next.js in standalone mode on ECS Fargate with OpenTofu uses a multi-origin CloudFront distribution: static `/_next/static/` assets are served from S3 with year-long caching, while SSR pages, API routes, and ISR requests go to the ECS containers. Build Next.js with `output: 'standalone'` in `next.config.js` to create a self-contained server bundle. Use separate cache policies — caching disabled for SSR pages and long TTLs for hashed static assets.
+Deploying Next.js in standalone mode on ECS Fargate with OpenTofu uses a multi-origin CloudFront distribution: static `/_next/static/` assets are served from S3 with year-long caching, while SSR pages, API routes, and ISR requests go to the ECS containers. Build Next.js with `output: 'standalone'` in `next.config.js` to create a self-contained server bundle. Use separate cache policies - caching disabled for SSR pages and long TTLs for hashed static assets.

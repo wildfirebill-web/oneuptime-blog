@@ -49,6 +49,7 @@ This means the OpenTelemetry API package is not installed in your current Python
 
 ```bash
 # Install the core API and SDK packages.
+
 # The API provides the interfaces, the SDK provides the implementation.
 pip install opentelemetry-api opentelemetry-sdk
 ```

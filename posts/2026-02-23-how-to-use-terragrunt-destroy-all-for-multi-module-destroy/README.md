@@ -16,6 +16,7 @@ Like the other legacy commands, `destroy-all` has been replaced by `run-all`:
 
 ```bash
 # Legacy (deprecated, still works)
+
 terragrunt destroy-all
 
 # Modern (recommended)
@@ -148,7 +149,7 @@ This destroys only that module. If other modules depend on it, those dependencie
 
 ## Handling Destroy Failures
 
-### Resources with Deletion Protection
+Resources with Deletion Protection
 
 Many production resources have deletion protection enabled:
 
@@ -180,7 +181,7 @@ cd live/dev/rds
 terragrunt destroy -var="enable_deletion_protection=false"
 ```
 
-### Resources That Take a Long Time to Destroy
+Resources That Take a Long Time to Destroy
 
 Some resources (like RDS instances with final snapshots or CloudFront distributions) take a long time to destroy. Increase the timeout:
 

@@ -89,6 +89,7 @@ Run the load generator at maximum speed (no rate limiting) with increasing concu
 
 ```bash
 # Baseline without Istio
+
 for c in 2 4 8 16 32 64 128 256; do
   echo "=== Concurrency: $c ==="
   kubectl exec -n bench-plain deploy/load-generator -c fortio -- \

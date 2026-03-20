@@ -1,4 +1,4 @@
-# How to Monitor Serverless Workloads in Rancher
+# How to Monitor Serverless Workloads in Rancher - Workloads
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Serverless monitoring differs from traditional application monitoring because of
 
 ```yaml
 # OpenFaaS values (already enabled by default)
+
 gateway:
   prometheusPort: 8082
   prometheusHost: "0.0.0.0"

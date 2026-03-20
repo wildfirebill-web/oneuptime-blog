@@ -29,6 +29,7 @@ Verify that your GKE configuration is compatible with Calico.
 
 ```bash
 # Check if the GKE cluster uses Dataplane V2 (Cilium-based)
+
 gcloud container clusters describe <cluster-name> \
   --zone <zone> \
   --format="value(networkConfig.datapathProvider)"

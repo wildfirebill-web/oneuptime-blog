@@ -54,12 +54,13 @@ Best for security groups that receive rules from multiple modules or dynamically
 
 ```hcl
 # Create the security group without inline rules
+
 resource "aws_security_group" "app" {
   name        = "${var.environment}-app-sg"
   description = "Security group for application servers"
   vpc_id      = aws_vpc.main.id
 
-  # Explicitly empty — rules added separately
+  # Explicitly empty - rules added separately
   lifecycle {
     ignore_changes = [ingress, egress]  # Prevents conflicts with separate rules
   }
@@ -113,7 +114,7 @@ resource "aws_security_group" "cluster" {
 A common pattern for web → app → db tiers:
 
 ```hcl
-# Load balancer — accepts internet traffic
+# Load balancer - accepts internet traffic
 resource "aws_security_group" "alb" {
   name   = "${var.environment}-alb-sg"
   vpc_id = aws_vpc.main.id
@@ -123,7 +124,7 @@ resource "aws_security_group" "alb" {
   egress  { from_port = 0; to_port = 0; protocol = "-1"; cidr_blocks = ["0.0.0.0/0"] }
 }
 
-# App tier — accepts traffic from ALB only
+# App tier - accepts traffic from ALB only
 resource "aws_security_group" "app" {
   name   = "${var.environment}-app-sg"
   vpc_id = aws_vpc.main.id
@@ -138,7 +139,7 @@ resource "aws_security_group" "app" {
   egress { from_port = 0; to_port = 0; protocol = "-1"; cidr_blocks = ["0.0.0.0/0"] }
 }
 
-# Database tier — accepts traffic from app only
+# Database tier - accepts traffic from app only
 resource "aws_security_group" "db" {
   name   = "${var.environment}-db-sg"
   vpc_id = aws_vpc.main.id
@@ -189,4 +190,4 @@ output "db_sg_id"  { value = aws_security_group.db.id }
 
 ## Conclusion
 
-Choose inline rules for simple, fixed security groups and separate `aws_security_group_rule` resources for complex groups that receive rules from multiple sources. The tiered security group pattern (ALB → App → DB) enforces defense-in-depth. Use security group references (`source_security_group_id`) instead of CIDR blocks for internal traffic — this ensures rules stay accurate even when instances change IP addresses.
+Choose inline rules for simple, fixed security groups and separate `aws_security_group_rule` resources for complex groups that receive rules from multiple sources. The tiered security group pattern (ALB → App → DB) enforces defense-in-depth. Use security group references (`source_security_group_id`) instead of CIDR blocks for internal traffic - this ensures rules stay accurate even when instances change IP addresses.

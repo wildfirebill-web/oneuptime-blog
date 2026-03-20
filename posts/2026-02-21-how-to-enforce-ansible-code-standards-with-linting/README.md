@@ -20,6 +20,7 @@ Here is an example standards document:
 
 ```yaml
 # docs/ansible-standards.yml - Team coding standards
+
 ---
 formatting:
   indentation: 2 spaces

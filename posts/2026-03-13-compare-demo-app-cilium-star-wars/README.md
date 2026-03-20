@@ -42,6 +42,7 @@ The label `org=empire` maps to `team=payments`. The `class=tiefighter` maps to `
 
 ```yaml
 # Production equivalent of the Star Wars L7 policy
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

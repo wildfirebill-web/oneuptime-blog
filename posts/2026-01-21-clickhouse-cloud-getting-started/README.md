@@ -63,6 +63,7 @@ After service creation, you'll receive:
 
 ```bash
 # Install clickhouse-client
+
 curl https://clickhouse.com/ | sh
 
 # Connect to ClickHouse Cloud

@@ -30,6 +30,7 @@ Before setting up multi-cluster ambient mode:
 
 ```bash
 # Set up kubeconfig contexts for both clusters
+
 export CTX_CLUSTER1=cluster1
 export CTX_CLUSTER2=cluster2
 

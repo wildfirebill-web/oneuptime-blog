@@ -18,6 +18,7 @@ Check whether your system is actually using IPv6:
 
 ```bash
 # View current IPv6 addresses
+
 ip -6 addr show
 
 # Check for active IPv6 routes

@@ -159,6 +159,7 @@ variable "vpn_connections" {
 }
 
 # Customer gateways
+
 resource "aws_customer_gateway" "vpns" {
   for_each = var.vpn_connections
 

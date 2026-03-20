@@ -40,6 +40,7 @@ Flux CD uses standard Kubernetes RBAC, meaning tenant isolation is achieved thro
 
 ```yaml
 # Create a namespace for each tenant
+
 apiVersion: v1
 kind: Namespace
 metadata:

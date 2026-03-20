@@ -43,6 +43,7 @@ The `serial` keyword controls how many hosts Ansible updates at a time. Without 
 ```yaml
 ---
 # deploy.yml
+
 # Deploy application with rolling updates, 2 hosts at a time
 
 - hosts: webservers

@@ -18,6 +18,7 @@ Falco outputs are defined in rule files and control how alerts appear when a rul
 
 ```yaml
 # Basic rule with output definition
+
 - rule: Detect Shell in Container
   desc: Detects when a shell is spawned inside a container
   condition: >

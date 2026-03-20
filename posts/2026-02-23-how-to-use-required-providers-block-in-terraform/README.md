@@ -18,6 +18,7 @@ The `required_providers` block goes inside the `terraform` block:
 
 ```hcl
 # versions.tf - Provider requirements
+
 terraform {
   required_version = ">= 1.5.0"
 

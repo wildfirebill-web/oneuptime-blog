@@ -14,6 +14,7 @@ Save the plan JSON from each run with a consistent naming scheme:
 
 ```bash
 # Save plan with a timestamp
+
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 tofu plan -out=tfplan
 tofu show -json tfplan > "plans/plan-${TIMESTAMP}.json"
@@ -46,7 +47,7 @@ diff changes-before.txt changes-after.txt
 
 ```python
 #!/usr/bin/env python3
-# compare-plans.py — compare two OpenTofu plan JSON files
+# compare-plans.py - compare two OpenTofu plan JSON files
 
 import json, sys
 from typing import Dict, Set

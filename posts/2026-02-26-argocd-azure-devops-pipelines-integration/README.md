@@ -49,6 +49,7 @@ First, configure the required variables in your Azure DevOps project:
 
 ```yaml
 # azure-pipelines.yml
+
 trigger:
   branches:
     include:

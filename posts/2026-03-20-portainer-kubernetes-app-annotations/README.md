@@ -1,4 +1,4 @@
-# How to Configure Application Annotations in Portainer for Kubernetes
+# How to Configure Application Annotations in Portainer for Kubernetes - App
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,7 +31,7 @@ When creating/editing an application:
 1. Find the **Annotations** section
 2. Add key-value pairs:
 
-```
+```text
 Key: description
 Value: Production API service for order processing
 
@@ -90,6 +90,7 @@ spec:
 
 ```yaml
 # Pod template annotations
+
 metadata:
   annotations:
     prometheus.io/scrape: "true"    # Enable scraping

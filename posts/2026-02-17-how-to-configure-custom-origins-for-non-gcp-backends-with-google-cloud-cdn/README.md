@@ -46,6 +46,7 @@ An Internet NEG defines the external endpoint that Cloud CDN should fetch conten
 
 ```bash
 # Create an Internet NEG pointing to your custom origin
+
 gcloud compute network-endpoint-groups create custom-origin-neg \
     --network-endpoint-type=INTERNET_FQDN_PORT \
     --global \

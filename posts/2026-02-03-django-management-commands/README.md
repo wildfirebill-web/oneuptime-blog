@@ -64,6 +64,7 @@ Every management command inherits from `BaseCommand`. Here's the simplest possib
 
 ```python
 # myapp/management/commands/hello.py
+
 from django.core.management.base import BaseCommand
 
 

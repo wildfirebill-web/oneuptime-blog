@@ -37,6 +37,7 @@ To disable OpenAPI validation during the initial installation:
 
 ```yaml
 # HelmRelease with OpenAPI validation disabled for install
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

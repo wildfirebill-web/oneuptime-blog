@@ -52,6 +52,7 @@ These commands initialize a new Go module for our container engine. The module s
 
 ```bash
 # Create project directory and navigate into it
+
 mkdir minicontainer && cd minicontainer
 # Initialize Go module with the project name
 go mod init minicontainer

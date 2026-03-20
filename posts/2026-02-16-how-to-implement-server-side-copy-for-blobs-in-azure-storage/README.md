@@ -26,6 +26,7 @@ The most common pattern is copying a blob from one location to another within th
 
 ```bash
 # Copy a blob within the same storage account
+
 az storage blob copy start \
   --account-name mystorageaccount \
   --destination-container archive \

@@ -46,6 +46,7 @@ Configure OpenTelemetry in your application.properties file.
 
 ```properties
 # Application identification
+
 quarkus.application.name=order-service
 
 # OpenTelemetry configuration

@@ -72,6 +72,7 @@ Create a root module that orchestrates all the governance components:
 # main.tf - Landing zone root module (replaces Blueprint definition)
 
 # Configure the Azure provider
+
 terraform {
   required_providers {
     azurerm = {

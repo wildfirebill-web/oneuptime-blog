@@ -249,6 +249,7 @@ The most effective strategy uses both:
 
 ```yaml
 # Istio: send 20% of traces to the collector
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

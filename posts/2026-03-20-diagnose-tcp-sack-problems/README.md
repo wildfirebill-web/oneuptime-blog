@@ -14,6 +14,7 @@ TCP Selective Acknowledgment (SACK) allows a receiver to acknowledge non-contigu
 
 ```bash
 # Check Linux SACK settings
+
 sysctl net.ipv4.tcp_sack
 # 1 = enabled (default), 0 = disabled
 
@@ -131,4 +132,4 @@ sysctl -w net.ipv4.tcp_sack=1
 
 ## Conclusion
 
-SACK is critical for performance on any link with packet loss. Verify both endpoints negotiate SACK in the handshake. Monitor `TcpExtTCPSACKReneging` — any non-zero value indicates a buggy middlebox stripping or modifying TCP options. DSACK counters tell you whether spurious retransmissions are occurring. Only disable SACK as a last resort; the performance cost on any path with >0.1% loss is significant.
+SACK is critical for performance on any link with packet loss. Verify both endpoints negotiate SACK in the handshake. Monitor `TcpExtTCPSACKReneging` - any non-zero value indicates a buggy middlebox stripping or modifying TCP options. DSACK counters tell you whether spurious retransmissions are occurring. Only disable SACK as a last resort; the performance cost on any path with >0.1% loss is significant.

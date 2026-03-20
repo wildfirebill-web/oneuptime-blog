@@ -1,4 +1,4 @@
-# How to Write Assertions in Check Blocks in OpenTofu
+# How to Write Assertions in Check Blocks in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -123,6 +123,7 @@ Good error messages explain:
 
 ```hcl
 # Poor error message
+
 assert {
   condition     = aws_instance.web.instance_type == "t3.large"
   error_message = "Wrong instance type."

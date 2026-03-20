@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, URLs, HTTP, Networking, Web Development
+Tags: IPv6, URL, HTTP, Networking, Web Development
 
 Description: Learn the correct syntax for including IPv6 addresses in URLs using square brackets as required by RFC 2732 and RFC 3986, with examples across common tools and languages.
 
@@ -12,11 +12,12 @@ IPv6 addresses contain colons (`:`), which conflict with the colon used to separ
 
 ## Basic Syntax
 
-```
+```text
 # Standard URL with IPv4 address and port
+
 http://192.168.1.1:8080/path
 
-# IPv6 address in a URL — square brackets required
+# IPv6 address in a URL - square brackets required
 http://[2001:db8::1]:8080/path
 http://[::1]:3000/
 
@@ -27,7 +28,7 @@ https://[2001:db8:cafe::1]/api/v1/
 
 ## Correct vs Incorrect Formats
 
-```
+```text
 # CORRECT
 http://[2001:db8::1]/
 http://[2001:db8::1]:8080/api

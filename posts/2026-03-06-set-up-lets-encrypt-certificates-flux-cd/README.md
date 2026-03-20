@@ -50,6 +50,7 @@ Always start with the staging environment to avoid hitting production rate limit
 
 ```yaml
 # clusters/my-cluster/cert-manager-config/letsencrypt-staging-issuer.yaml
+
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

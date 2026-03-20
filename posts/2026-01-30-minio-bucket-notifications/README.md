@@ -70,6 +70,7 @@ Before configuring notifications, you need to register your target service with 
 
 ```bash
 # Set Kafka environment variables before starting MinIO
+
 export MINIO_NOTIFY_KAFKA_ENABLE_PRIMARY="on"
 export MINIO_NOTIFY_KAFKA_BROKERS_PRIMARY="kafka1:9092,kafka2:9092,kafka3:9092"
 export MINIO_NOTIFY_KAFKA_TOPIC_PRIMARY="minio-events"

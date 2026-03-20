@@ -29,6 +29,7 @@ Start by setting up a running Podman pod, then generate the Kubernetes YAML:
 
 ```yaml
 # generate_basic.yml - Create a pod and generate its K8s manifest
+
 ---
 - name: Generate Kubernetes YAML from Podman Pod
   hosts: dev_machines

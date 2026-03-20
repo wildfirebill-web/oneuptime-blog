@@ -48,6 +48,7 @@ cat /proc/sys/net/ipv6/conf/all/forwarding
 # Symptom: docker exec container ip -6 addr shows only fe80:: (link-local only)
 
 # Diagnosis 1: Is IPv6 enabled on the network?
+
 docker network inspect mynet | grep EnableIPv6
 # If false, recreate network with --ipv6
 
@@ -149,4 +150,4 @@ docker network create \
 
 ## Conclusion
 
-Debug Docker IPv6 by checking in order: daemon.json has `"ipv6": true` and `"ip6tables": true`, the network has `EnableIPv6: true` with an IPv6 subnet, host has `net.ipv6.conf.all.forwarding=1`, ip6tables has MASQUERADE for outbound, and containers are on the same network for inter-container communication. The most common issue is missing `"ipv6": true` in daemon.json — without it, no Docker network or container receives IPv6 addresses.
+Debug Docker IPv6 by checking in order: daemon.json has `"ipv6": true` and `"ip6tables": true`, the network has `EnableIPv6: true` with an IPv6 subnet, host has `net.ipv6.conf.all.forwarding=1`, ip6tables has MASQUERADE for outbound, and containers are on the same network for inter-container communication. The most common issue is missing `"ipv6": true` in daemon.json - without it, no Docker network or container receives IPv6 addresses.

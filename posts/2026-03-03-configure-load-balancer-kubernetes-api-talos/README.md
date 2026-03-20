@@ -54,6 +54,7 @@ HAProxy is the most popular choice for on-premises Talos clusters.
 
 ```bash
 # On Ubuntu/Debian
+
 sudo apt update && sudo apt install haproxy -y
 
 # On CentOS/RHEL

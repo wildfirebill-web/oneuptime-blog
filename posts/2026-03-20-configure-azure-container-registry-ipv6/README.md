@@ -14,6 +14,7 @@ Azure Container Registry (ACR) supports IPv6 through dual-stack private endpoint
 
 ```bash
 # Check if ACR endpoint resolves to IPv6
+
 dig AAAA myregistry.azurecr.io +short
 
 # Test connectivity

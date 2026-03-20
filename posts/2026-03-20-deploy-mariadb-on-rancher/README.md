@@ -8,7 +8,7 @@ Description: A step-by-step guide to deploying MariaDB on Rancher using Helm cha
 
 ## Introduction
 
-MariaDB is a popular open-source relational database that serves as a drop-in replacement for MySQL. Deploying it on Rancher gives you the benefits of Kubernetes orchestration—automated restarts, resource management, and scalability—while keeping your database operations straightforward.
+MariaDB is a popular open-source relational database that serves as a drop-in replacement for MySQL. Deploying it on Rancher gives you the benefits of Kubernetes orchestration-automated restarts, resource management, and scalability-while keeping your database operations straightforward.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Bitnami maintains a well-tested MariaDB Helm chart. Add the repository before de
 
 ```bash
 # Add and update the Bitnami Helm repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 ```
@@ -111,7 +112,7 @@ mysql -h mariadb.databases.svc.cluster.local -uroot -p
 
 ## Step 7: Expose MariaDB (Optional)
 
-If external access is needed, expose the service via a LoadBalancer or NodePort—only do this on a private network.
+If external access is needed, expose the service via a LoadBalancer or NodePort-only do this on a private network.
 
 ```bash
 # Patch the service type to LoadBalancer

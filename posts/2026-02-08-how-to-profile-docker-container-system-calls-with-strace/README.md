@@ -22,6 +22,7 @@ The simplest approach installs strace in the container:
 
 ```bash
 # Run a container with strace installed
+
 docker run --rm -it --cap-add SYS_PTRACE alpine sh -c "
     apk add --no-cache strace
     strace -c ls /

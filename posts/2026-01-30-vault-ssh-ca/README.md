@@ -38,6 +38,7 @@ Vault's SSH secrets engine handles certificate signing. Enable it first.
 
 ```bash
 # Enable SSH secrets engine at the default path
+
 vault secrets enable ssh
 
 # Or enable at a custom path for multiple CAs

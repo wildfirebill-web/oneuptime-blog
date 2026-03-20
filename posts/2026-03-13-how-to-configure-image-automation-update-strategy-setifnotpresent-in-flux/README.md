@@ -99,6 +99,7 @@ When you add a new application to your cluster, you may want automation to set t
 
 ```yaml
 # New deployment added without a specific tag
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

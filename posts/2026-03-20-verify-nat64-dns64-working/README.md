@@ -16,6 +16,7 @@ After deploying NAT64 (TAYGA) and DNS64 (BIND or Unbound), systematic verificati
 # Test against your DNS64 server (e.g., 10.0.0.5)
 
 # 1. Check synthesis for a known IPv4-only host
+
 #    ipv4only.arpa has only an A record (192.0.0.170 and 192.0.0.171)
 dig @10.0.0.5 AAAA ipv4only.arpa.
 # Expected: 64:ff9b::c000:0aa  (synthesized from 192.0.0.170)
@@ -104,7 +105,7 @@ ping -6 ipv4only.arpa
 nslookup ipv4only.arpa 8.8.8.8   # Should return IPv4
 
 # Issue: Ping to 64:ff9b:: works but HTTP doesn't
-# Fix: Check MTU — NAT64 adds overhead
+# Fix: Check MTU - NAT64 adds overhead
 #      TAYGA interface MTU should be 1480 or lower
 ip link show nat64 | grep mtu
 
@@ -112,7 +113,7 @@ ip link show nat64 | grep mtu
 # Fix: Check iptables masquerade is active
 sudo iptables -t nat -nL | grep MASQUERADE
 
-# Issue: Asymmetric routing — IPv6 packets going out but no reply
+# Issue: Asymmetric routing - IPv6 packets going out but no reply
 # Fix: Verify TAYGA is on the default IPv4 path
 ip route show
 ```

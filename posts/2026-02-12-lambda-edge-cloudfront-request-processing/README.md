@@ -338,6 +338,7 @@ To find your logs, check CloudWatch in the regions where your users are. Or use 
 
 ```bash
 # Check which regions have logs
+
 aws logs describe-log-groups \
   --log-group-name-prefix '/aws/lambda/us-east-1.my-edge-function' \
   --region eu-west-1

@@ -280,6 +280,7 @@ After applying Telemetry resources, verify the changes took effect:
 
 ```bash
 # Check what metrics a specific proxy is generating
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s localhost:15020/stats/prometheus | grep istio_
 
 # Verify specific labels are present or absent

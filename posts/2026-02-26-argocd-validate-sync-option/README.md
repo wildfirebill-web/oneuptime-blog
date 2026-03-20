@@ -40,6 +40,7 @@ Add the option to your Application manifest:
 
 ```yaml
 # Application with validation disabled
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

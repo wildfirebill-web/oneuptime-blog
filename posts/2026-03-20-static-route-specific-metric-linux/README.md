@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Static Routes, Metric, Routing, iproute2, Networking, Failover
+Tags: Linux, Static Routes, Metrics, Routing, iproute2, Networking, Failover
 
 Description: Add static routes with custom metric values on Linux to control route preference, implement backup routing, and manage traffic when multiple paths exist.
 
@@ -14,6 +14,7 @@ Route metric determines the preference between multiple routes to the same desti
 
 ```bash
 # Add a route with metric 100 (lower = preferred)
+
 ip route add 192.168.2.0/24 via 10.0.0.1 metric 100
 
 # Add a backup route with higher metric (used if primary fails)
@@ -94,10 +95,10 @@ ip route replace 192.168.2.0/24 via 10.0.0.1 metric 50
 
 ## Automatic Failover Simulation
 
-Routes with metrics don't automatically failover — that requires link detection. For true failover, pair with dead gateway detection or interface monitoring:
+Routes with metrics don't automatically failover - that requires link detection. For true failover, pair with dead gateway detection or interface monitoring:
 
 ```bash
-# Add both routes — lower metric preferred
+# Add both routes - lower metric preferred
 ip route add default via 10.0.0.1 metric 100
 ip route add default via 10.0.1.1 metric 200
 

@@ -38,6 +38,7 @@ Here is the complete multi-stage Dockerfile:
 
 ```dockerfile
 # Stage 1: Install all dependencies
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./

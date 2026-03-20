@@ -33,6 +33,7 @@ Filter rows based on their row key pattern:
 
 ```python
 # Filter rows whose keys match a regex pattern
+
 from google.cloud.bigtable import row_filters
 
 # Match row keys that start with "sensor" followed by digits

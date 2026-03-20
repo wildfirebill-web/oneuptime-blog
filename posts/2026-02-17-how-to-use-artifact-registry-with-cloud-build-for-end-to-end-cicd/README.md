@@ -18,6 +18,7 @@ Start with enabling the required APIs and creating the Artifact Registry reposit
 
 ```bash
 # Enable the necessary APIs
+
 gcloud services enable \
   cloudbuild.googleapis.com \
   artifactregistry.googleapis.com \

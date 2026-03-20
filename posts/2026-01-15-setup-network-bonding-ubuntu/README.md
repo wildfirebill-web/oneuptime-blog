@@ -39,6 +39,7 @@ Network bonding (also called NIC teaming) combines multiple network interfaces i
 
 ```bash
 # List all network interfaces
+
 ip link show
 
 # Show interface details

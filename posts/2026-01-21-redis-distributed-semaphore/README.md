@@ -245,6 +245,7 @@ class FairSemaphore:
 
 
 # Example: Database connection pool limiter
+
 class ConnectionPoolLimiter:
     """Limit concurrent database connections."""
 

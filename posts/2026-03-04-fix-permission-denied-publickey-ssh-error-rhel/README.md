@@ -14,6 +14,7 @@ The "Permission denied (publickey)" error means SSH key-based authentication fai
 
 ```bash
 # Connect with verbose output to see exactly where authentication fails
+
 ssh -vvv user@server.example.com 2>&1 | grep -A5 "Offering public key\|Permission denied"
 
 # Key things to look for in verbose output:

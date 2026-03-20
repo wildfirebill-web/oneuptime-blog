@@ -12,7 +12,7 @@ SIP (Session Initiation Protocol) requires specific configuration for IPv6 becau
 
 ## SIP IPv6 Address Notation
 
-```
+```text
 RFC 5118 "SIP" IPv6 Address Rules:
 - IPv6 addresses in SIP headers MUST use brackets: [2001:db8::1]
 - SIP URI format: sip:user@[2001:db8::1]:5060
@@ -33,6 +33,7 @@ Content-Length: 0
 
 ```bash
 # Install sipsak
+
 sudo apt install sipsak -y
 
 # Send OPTIONS to SIP server over IPv6
@@ -81,7 +82,7 @@ route {
 
 ## SIP SDP with IPv6 Addresses
 
-```
+```text
 SDP in SIP INVITE body must specify IPv6:
 
 v=0

@@ -66,6 +66,7 @@ This creates an AES-256-GCM key by default. For different algorithms:
 
 ```bash
 # RSA-4096 for asymmetric encryption
+
 vault write transit/keys/rsa-key type=rsa-4096
 
 # ChaCha20-Poly1305 for high-performance scenarios

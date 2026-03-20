@@ -69,6 +69,7 @@ Here is a more practical example. Say you have database connection strings in on
 
 ```yaml
 # vars
+
 db_connection: "postgresql://dbuser:dbpass@db-host.internal:5432/mydb"
 ```
 

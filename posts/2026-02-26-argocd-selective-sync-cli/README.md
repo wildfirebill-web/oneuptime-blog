@@ -16,6 +16,7 @@ The core of selective sync in the CLI is the `--resource` flag. It accepts a res
 
 ```bash
 # Basic syntax
+
 argocd app sync APP_NAME --resource GROUP:KIND:NAME
 ```
 

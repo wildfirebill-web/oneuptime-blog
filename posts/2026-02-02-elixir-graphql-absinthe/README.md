@@ -34,6 +34,7 @@ First, add Absinthe and its Phoenix integration to your `mix.exs`:
 
 ```elixir
 # mix.exs
+
 defp deps do
   [
     {:absinthe, "~> 1.7"},

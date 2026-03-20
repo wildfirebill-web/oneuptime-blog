@@ -25,6 +25,7 @@ Before deploying, ensure you have:
 
 ```bash
 # Verify your tools
+
 kubectl version --client
 helm version
 

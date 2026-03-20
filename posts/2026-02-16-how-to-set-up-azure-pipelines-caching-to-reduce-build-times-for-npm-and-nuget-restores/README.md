@@ -39,6 +39,7 @@ Here is a YAML pipeline configuration that caches npm packages:
 
 ```yaml
 # Pipeline with npm caching - uses package-lock.json as the cache key
+
 trigger:
   - main
 

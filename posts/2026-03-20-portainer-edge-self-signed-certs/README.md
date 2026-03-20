@@ -1,8 +1,8 @@
-# How to Configure Edge Agent with Self-Signed Certificates
+# How to Configure Edge Agent with Self-Signed Certificates - Portainer Certs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, TLS, Self-Signed Certificate, Security
+Tags: Portainer, Edge Agent, TLS, Self-Signed Certificates, Security
 
 Description: Configure the Portainer Edge Agent to trust self-signed certificates when connecting to a Portainer server that uses a self-signed TLS certificate.
 
@@ -16,6 +16,7 @@ Trust the certificate explicitly by providing the CA certificate to the edge age
 
 ```bash
 # Export your self-signed CA certificate
+
 # If using the default Portainer self-signed cert:
 openssl s_client -connect portainer.example.com:9443 < /dev/null 2>/dev/null \
   | openssl x509 > portainer-ca.pem

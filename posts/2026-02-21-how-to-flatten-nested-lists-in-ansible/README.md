@@ -16,6 +16,7 @@ The `flatten` filter takes a nested list and collapses all levels into one flat 
 
 ```yaml
 # playbook-basic-flatten.yml
+
 # Flattens a deeply nested list structure into a single flat list
 - name: Basic list flattening
   hosts: localhost

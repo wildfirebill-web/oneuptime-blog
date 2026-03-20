@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, tensorflow, gpu, deep-learning, kubernetes
+Tags: Rancher, TensorFlow, GPU, Deep-learning, Kubernetes
 
 Description: Step-by-step guide to deploying TensorFlow GPU workloads on Rancher-managed Kubernetes clusters.
+
 ## Introduction
 
 TensorFlow is one of the most popular deep learning frameworks, and GPU acceleration dramatically reduces training times. This guide covers deploying TensorFlow workloads on GPU nodes in Rancher.
@@ -19,6 +20,7 @@ TensorFlow is one of the most popular deep learning frameworks, and GPU accelera
 
 ```yaml
 # training-pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

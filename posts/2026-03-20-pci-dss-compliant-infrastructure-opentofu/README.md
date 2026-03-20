@@ -26,6 +26,7 @@ graph TB
 
 ```hcl
 # cde_network.tf
+
 # PCI DSS Requirement 1: Install and maintain network security controls
 
 # Isolated VPC for cardholder data
@@ -45,7 +46,7 @@ resource "aws_vpc" "cde" {
 
 resource "aws_security_group" "cde_db" {
   name        = "cde-database"
-  description = "Database tier — only accepts connections from app tier"
+  description = "Database tier - only accepts connections from app tier"
   vpc_id      = aws_vpc.cde.id
 
   ingress {
@@ -196,8 +197,8 @@ resource "aws_s3_bucket_lifecycle_configuration" "cde_audit" {
 
 ## Best Practices
 
-- Engage a Qualified Security Assessor (QSA) before your first PCI DSS audit — OpenTofu implements technical controls but scope determination requires expertise.
-- Tokenize cardholder data at the point of entry — minimize CDE scope by never storing raw PANs.
-- Segment the CDE with dedicated VPCs and no peering to non-CDE environments — network segmentation is the most important scope-reduction control.
-- Enable CloudTrail with log file validation for all CDE accounts — PCI Requirement 10 requires audit logs and evidence they haven't been tampered with.
+- Engage a Qualified Security Assessor (QSA) before your first PCI DSS audit - OpenTofu implements technical controls but scope determination requires expertise.
+- Tokenize cardholder data at the point of entry - minimize CDE scope by never storing raw PANs.
+- Segment the CDE with dedicated VPCs and no peering to non-CDE environments - network segmentation is the most important scope-reduction control.
+- Enable CloudTrail with log file validation for all CDE accounts - PCI Requirement 10 requires audit logs and evidence they haven't been tampered with.
 - Run quarterly vulnerability scans and annual penetration tests on CDE infrastructure as required by PCI DSS Requirements 11.3 and 11.4.

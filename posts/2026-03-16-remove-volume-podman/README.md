@@ -18,6 +18,7 @@ Over time, volumes accumulate as containers are created and removed. Orphaned vo
 
 ```bash
 # Remove a volume by name
+
 podman volume rm mydata
 
 # Verify it was removed

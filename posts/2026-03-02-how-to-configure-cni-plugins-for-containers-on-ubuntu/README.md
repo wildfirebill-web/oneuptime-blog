@@ -24,6 +24,7 @@ The reference CNI plugins from the CNCF cover most common needs:
 
 ```bash
 # Create the CNI binary directory
+
 sudo mkdir -p /opt/cni/bin
 
 # Download the CNI plugins tarball

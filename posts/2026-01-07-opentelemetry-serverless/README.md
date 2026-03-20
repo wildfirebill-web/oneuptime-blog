@@ -131,6 +131,7 @@ The following configuration adds the AWS-managed OpenTelemetry layer to your Lam
 
 ```yaml
 # serverless.yml - Serverless Framework configuration
+
 service: otel-instrumented-lambda
 
 provider:

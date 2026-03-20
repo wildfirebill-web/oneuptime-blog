@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, setproduct, Collections, Functions, for_each
+Tags: OpenTofu, Terraform, Setproduct, Collections, Functions, for_each
 
 Description: Learn how to use the setproduct function in OpenTofu to generate Cartesian products of multiple sets, enabling exhaustive multi-dimensional resource creation across environments, regions, and tiers.
 
@@ -86,6 +86,7 @@ locals {
 }
 
 # This creates 2 × 3 × 3 = 18 security groups
+
 resource "aws_security_group" "tier_sgs" {
   provider = aws.${replace(each.value.region, "-", "_")}
 

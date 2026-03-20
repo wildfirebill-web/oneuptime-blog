@@ -16,6 +16,7 @@ The `import_playbook` directive is used at the top level of a playbook, at the s
 
 ```yaml
 # site.yml - master playbook that imports others
+
 ---
 - import_playbook: webservers.yml
 - import_playbook: dbservers.yml

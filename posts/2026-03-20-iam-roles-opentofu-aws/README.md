@@ -8,7 +8,7 @@ Description: A practical guide to creating and managing AWS IAM roles using Open
 
 ## What Are IAM Roles?
 
-IAM roles are identities in AWS that can be assumed by users, services, or applications. Unlike IAM users, roles do not have permanent credentials — they issue temporary security tokens. Roles are the recommended way to grant permissions to:
+IAM roles are identities in AWS that can be assumed by users, services, or applications. Unlike IAM users, roles do not have permanent credentials - they issue temporary security tokens. Roles are the recommended way to grant permissions to:
 
 - EC2 instances and Lambda functions
 - Cross-account access

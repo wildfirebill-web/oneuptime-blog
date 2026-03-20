@@ -20,6 +20,7 @@ A dead letter topic captures messages that fail after a specified number of deli
 
 ```bash
 # Create the main topic
+
 gcloud pubsub topics create order-processing
 
 # Create the dead letter topic

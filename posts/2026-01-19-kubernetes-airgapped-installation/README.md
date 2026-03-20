@@ -46,6 +46,7 @@ flowchart TD
 # list-required-images.sh
 
 # Kubernetes core images
+
 KUBE_VERSION="v1.28.0"
 kubeadm config images list --kubernetes-version=$KUBE_VERSION > images.txt
 

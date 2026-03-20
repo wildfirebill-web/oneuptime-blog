@@ -118,6 +118,7 @@ Set up Workload Identity for your application:
 
 ```bash
 # Create a GCP service account
+
 gcloud iam service-accounts create my-app-gsa \
   --display-name "My App Service Account"
 

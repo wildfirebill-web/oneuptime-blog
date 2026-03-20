@@ -27,6 +27,7 @@ The standard Kubernetes approach is to create a PVC, which triggers Longhorn to 
 
 ```yaml
 # basic-pvc.yaml - A simple ReadWriteOnce PVC backed by Longhorn
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

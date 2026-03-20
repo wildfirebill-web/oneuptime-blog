@@ -33,6 +33,7 @@ The `amazon.aws.aws_ec2` inventory plugin handles this. It queries EC2, processe
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install amazon.aws
 ```
 

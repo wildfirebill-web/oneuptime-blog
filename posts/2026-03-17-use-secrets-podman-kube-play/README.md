@@ -18,6 +18,7 @@ Podman's `kube play` command lets you run Kubernetes Pod and Deployment manifest
 
 ```yaml
 # secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

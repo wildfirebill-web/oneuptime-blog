@@ -49,6 +49,7 @@ GOMEMLIMIT is a Go 1.19+ environment variable that sets a soft memory limit for 
 
 ```yaml
 # Kubernetes deployment with GOMEMLIMIT
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

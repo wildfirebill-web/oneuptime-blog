@@ -71,6 +71,7 @@ global:
       whenUnsatisfiable: DoNotSchedule
 
 # Application Controller - Sharded across 4 replicas
+
 controller:
   replicas: 4
   resources:
@@ -334,7 +335,7 @@ spec:
           selfHeal: true
 ```
 
-## Resource Ignore Rules
+Resource Ignore Rules
 
 Reduce reconciliation load by ignoring frequently-changing fields that do not represent drift:
 

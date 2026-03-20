@@ -58,6 +58,7 @@ When you lack permissions, Azure returns errors like:
 
 ```bash
 # Check your current identity
+
 az ad signed-in-user show --query "{Name:displayName, UPN:userPrincipalName, ObjectId:id}" --output table
 
 # For service principals

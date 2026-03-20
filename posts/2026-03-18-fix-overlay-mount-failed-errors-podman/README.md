@@ -50,6 +50,7 @@ Alternatively, switch Podman to the `vfs` storage driver, which works on any fil
 
 ```bash
 # Edit the storage configuration
+
 vi /etc/containers/storage.conf
 
 # Change the driver line to:

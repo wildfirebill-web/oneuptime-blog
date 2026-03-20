@@ -22,6 +22,7 @@ Start by provisioning the Nomad servers and clients on AWS.
 
 ```hcl
 # Nomad server instances
+
 resource "aws_instance" "nomad_server" {
   count         = 3
   ami           = var.nomad_ami_id

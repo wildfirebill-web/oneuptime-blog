@@ -35,6 +35,7 @@ The fastest way to clear stale content is to create a cache invalidation:
 
 ```bash
 # Invalidate specific files
+
 aws cloudfront create-invalidation \
     --distribution-id E1234567890 \
     --paths "/index.html" "/css/styles.css" "/js/app.js"

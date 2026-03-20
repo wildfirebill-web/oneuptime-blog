@@ -34,6 +34,7 @@ Create a workflow that responds to dispatch events:
 
 ```yaml
 # .github/workflows/dispatch.yml
+
 name: Repository Dispatch Handler
 
 on:

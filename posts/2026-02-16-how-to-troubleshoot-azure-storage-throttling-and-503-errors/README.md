@@ -43,6 +43,7 @@ If you have diagnostic logging enabled, you can query the $logs container for en
 
 ```bash
 # Download the storage analytics logs for a specific date
+
 az storage blob download-batch \
   --source '$logs' \
   --destination ./logs \

@@ -51,6 +51,7 @@ resource "aws_route53_zone" "internal" {
 
 ```hcl
 # Internal API endpoint
+
 resource "aws_route53_record" "api_internal" {
   zone_id = aws_route53_zone.internal.zone_id
   name    = "api.${var.project_name}.internal"
@@ -182,4 +183,4 @@ aws route53 list-vpc-association-authorizations \
 
 ## Conclusion
 
-Private hosted zones use the VPC's DNS resolver (at the VPC CIDR + 2 address, e.g., `10.0.0.2`), so `enableDnsHostnames` and `enableDnsSupport` must be enabled on associated VPCs. For split-horizon DNS, the private zone takes precedence for queries from associated VPCs. When associating VPCs across accounts, the authorization process requires coordination between both accounts—use Terraform's cross-provider configuration to manage this cleanly. Keep TTLs low (30-60 seconds) on service discovery records to enable rapid updates during deployments.
+Private hosted zones use the VPC's DNS resolver (at the VPC CIDR + 2 address, e.g., `10.0.0.2`), so `enableDnsHostnames` and `enableDnsSupport` must be enabled on associated VPCs. For split-horizon DNS, the private zone takes precedence for queries from associated VPCs. When associating VPCs across accounts, the authorization process requires coordination between both accounts-use Terraform's cross-provider configuration to manage this cleanly. Keep TTLs low (30-60 seconds) on service discovery records to enable rapid updates during deployments.

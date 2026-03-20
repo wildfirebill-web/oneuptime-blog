@@ -268,6 +268,7 @@ spec:
 
 ```bash
 # Apply the policy
+
 kubectl apply -f allow-policy.yaml
 
 # Test from an allowed source

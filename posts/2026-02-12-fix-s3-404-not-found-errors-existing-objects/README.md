@@ -18,6 +18,7 @@ This sounds obvious, but it catches people all the time. S3 keys are case-sensit
 
 ```bash
 # These are ALL different keys in S3:
+
 # photos/My File.jpg
 # photos/my file.jpg
 # photos/My%20File.jpg

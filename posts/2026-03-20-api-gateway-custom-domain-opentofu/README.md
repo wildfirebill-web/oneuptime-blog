@@ -20,6 +20,7 @@ API Gateway custom domains replace auto-generated endpoints like `abc123.execute
 
 ```hcl
 # ACM certificate for the custom domain
+
 # For REGIONAL endpoints, certificate must be in the same region
 # For EDGE (CloudFront) endpoints, certificate must be in us-east-1
 resource "aws_acm_certificate" "api" {
@@ -157,4 +158,4 @@ curl https://api.example.com/v2/users
 
 ## Conclusion
 
-Custom domains decouple your API clients from the internal API Gateway endpoint structure, allowing API upgrades, migrations, and versioning without client changes. Use base path mappings to run multiple API versions side-by-side under the same domain—clients can migrate from `/v1` to `/v2` on their own schedule. Always enforce TLS 1.2 via the security policy to meet modern security standards.
+Custom domains decouple your API clients from the internal API Gateway endpoint structure, allowing API upgrades, migrations, and versioning without client changes. Use base path mappings to run multiple API versions side-by-side under the same domain-clients can migrate from `/v1` to `/v2` on their own schedule. Always enforce TLS 1.2 via the security policy to meet modern security standards.

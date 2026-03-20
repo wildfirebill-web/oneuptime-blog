@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Multicast, IGMP, Linux, Socket, Networking, UDP
+Tags: Multicast, IGMP, Linux, Sockets, Networking, UDP
 
 Description: Join IPv4 multicast groups on Linux using socket options, the ip command, and programming interfaces, and verify group membership with system commands.
 
@@ -23,6 +23,7 @@ MCAST_GRP = '239.255.0.1'
 MCAST_PORT = 5007
 
 # Create UDP socket:
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
 
 # Allow multiple sockets on same port:
@@ -199,4 +200,4 @@ netstat -g
 
 ## Conclusion
 
-Joining a multicast group on Linux is done via `IP_ADD_MEMBERSHIP` socket option, specifying the group address and interface (use 0.0.0.0 for any interface). The kernel sends an IGMP membership report to inform the local router and switch. Use `ip maddr show` to see current group memberships and `cat /proc/net/igmp` for kernel-level IGMP state. For Source-Specific Multicast (SSM), use `IP_ADD_SOURCE_MEMBERSHIP` to join a `(source, group)` pair — more efficient than ASM as it eliminates unnecessary traffic from other sources. Always call `IP_DROP_MEMBERSHIP` when your application exits to send IGMP leave messages.
+Joining a multicast group on Linux is done via `IP_ADD_MEMBERSHIP` socket option, specifying the group address and interface (use 0.0.0.0 for any interface). The kernel sends an IGMP membership report to inform the local router and switch. Use `ip maddr show` to see current group memberships and `cat /proc/net/igmp` for kernel-level IGMP state. For Source-Specific Multicast (SSM), use `IP_ADD_SOURCE_MEMBERSHIP` to join a `(source, group)` pair - more efficient than ASM as it eliminates unnecessary traffic from other sources. Always call `IP_DROP_MEMBERSHIP` when your application exits to send IGMP leave messages.

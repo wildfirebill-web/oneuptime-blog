@@ -59,6 +59,7 @@ When you suspend a running CronJob, existing jobs continue executing but new job
 
 ```bash
 # Suspend a CronJob
+
 kubectl patch cronjob daily-report-generator -p '{"spec":{"suspend":true}}'
 
 # Verify suspension
@@ -229,7 +230,7 @@ spec:
 
 When active, this CronJob keeps 3 successful and 1 failed job. When you suspend it, it switches to keeping 10 total jobs regardless of status. When you resume it, it goes back to the success/failure-based limits.
 
-## Resource Impact Considerations
+Resource Impact Considerations
 
 Each job object in Kubernetes consumes etcd storage. For frequently-run CronJobs that accumulate many jobs, this can become significant.
 

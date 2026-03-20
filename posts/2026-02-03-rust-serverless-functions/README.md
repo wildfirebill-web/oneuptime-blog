@@ -34,6 +34,7 @@ Install Rust via rustup if you haven't already:
 
 ```bash
 # Install Rust toolchain
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install cargo-lambda for Lambda development

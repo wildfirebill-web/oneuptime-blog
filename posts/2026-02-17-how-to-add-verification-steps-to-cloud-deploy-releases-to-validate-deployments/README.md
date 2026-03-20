@@ -24,6 +24,7 @@ Verification is a boolean flag on the strategy configuration of a pipeline stage
 
 ```yaml
 # pipeline.yaml - Pipeline with verification enabled on staging and prod
+
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:

@@ -32,6 +32,7 @@ First, regain control of your Redis instance:
 
 ```bash
 # Try to kill the script (only works if script hasn't performed writes)
+
 redis-cli SCRIPT KILL
 
 # If script has performed writes, you'll see:

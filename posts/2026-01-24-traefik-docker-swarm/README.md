@@ -18,6 +18,7 @@ You need a Docker Swarm cluster with at least one manager node. If you do not ha
 
 ```bash
 # Initialize a swarm on the manager node
+
 docker swarm init --advertise-addr <manager-ip>
 
 # Join worker nodes (run on each worker)

@@ -16,6 +16,7 @@ In Node.js, auto-instrumentation typically uses the `--require` flag to preload 
 
 ```bash
 # Node.js approach
+
 node --require ./instrumentation.js app.js
 ```
 

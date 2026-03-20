@@ -32,6 +32,7 @@ The default upgrade method works well for most scenarios. Kubernetes replaces ol
 
 ```bash
 # Apply the new version
+
 ARGOCD_NEW_VERSION=v2.14.0
 
 kubectl apply -n argocd -f \

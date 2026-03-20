@@ -135,6 +135,7 @@ Calico's node DaemonSet writes the CNI configuration:
 
 ```bash
 # Verify CNI config is deployed
+
 kubectl exec -n calico-system ds/calico-node -- \
   cat /host/etc/cni/net.d/10-calico.conflist
 

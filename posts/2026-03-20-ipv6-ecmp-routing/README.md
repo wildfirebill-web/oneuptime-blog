@@ -28,7 +28,8 @@ Linux uses a **hash of the source address, destination address, and optionally t
 ## Configuring ECMP Routes
 
 ```bash
-# Method 1: Add multiple routes with the same metric — kernel detects ECMP automatically
+# Method 1: Add multiple routes with the same metric - kernel detects ECMP automatically
+
 sudo ip -6 route add 2001:db8:remote::/48 via fe80::1 dev eth0 metric 100
 sudo ip -6 route add 2001:db8:remote::/48 via fe80::2 dev eth1 metric 100
 
@@ -62,7 +63,7 @@ Linux uses a flow hash for consistent per-flow routing. Configure the hash input
 ```bash
 # View current ECMP hash algorithm
 sysctl net.ipv6.fib_multipath_hash_policy
-# 0 = L3 (src/dst IP only) — default
+# 0 = L3 (src/dst IP only) - default
 # 1 = L4 (src/dst IP + src/dst port)
 # 2 = L3/L4 with inner headers (for tunnels)
 

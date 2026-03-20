@@ -27,6 +27,7 @@ Redis might close your connection for several reasons:
 
 ```bash
 # Get client connection info
+
 redis-cli INFO clients
 
 # Key metrics to watch:

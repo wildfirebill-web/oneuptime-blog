@@ -286,6 +286,7 @@ After applying optimizations, measure the impact:
 
 ```bash
 # Compare sidecar memory
+
 kubectl top pods -n your-namespace --containers | grep istio-proxy
 
 # Compare metric count

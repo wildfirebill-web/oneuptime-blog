@@ -34,6 +34,7 @@ Document everything you are migrating.
 
 ```bash
 # List all SNS topics
+
 aws sns list-topics --query 'Topics[*].TopicArn' --output table
 
 # List subscriptions for a specific topic

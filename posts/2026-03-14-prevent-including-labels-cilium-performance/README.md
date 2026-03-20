@@ -27,6 +27,7 @@ This guide provides the specific steps for managing label inclusion in Cilium.
 
 ```bash
 # Define standard labels during installation
+
 helm install cilium cilium/cilium --namespace kube-system \
   --set labels="k8s:app k8s:io.kubernetes.pod.namespace k8s:io.cilium.k8s.policy"
 ```

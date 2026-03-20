@@ -44,6 +44,7 @@ Configure Flux to watch the preview directory:
 
 ```yaml
 # clusters/preview/flux-system/gotk-sync.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
@@ -285,7 +286,7 @@ images:
     newTag: ${IMAGE_TAG}
 ```
 
-## Resource Limits for Preview Environments
+Resource Limits for Preview Environments
 
 Apply resource quotas to prevent preview environments from consuming too many cluster resources:
 

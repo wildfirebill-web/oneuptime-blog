@@ -18,6 +18,7 @@ The first decision is your naming convention. There are two common approaches:
 
 ```bash
 # Each workspace is a region
+
 terraform workspace new us-east-1
 terraform workspace new us-west-2
 terraform workspace new eu-west-1

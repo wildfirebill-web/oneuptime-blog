@@ -30,6 +30,7 @@ The following comparison shows how fetching user data with their posts differs b
 
 ```bash
 # REST: Multiple requests needed
+
 GET /users/123
 GET /users/123/posts
 GET /posts/456/comments

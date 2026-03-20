@@ -18,6 +18,7 @@ Before you can install Snap packages, the `snapd` daemon needs to be running on 
 
 ```yaml
 # Ensure snapd is installed and running
+
 - name: Install snapd (for non-Ubuntu systems)
   ansible.builtin.package:
     name: snapd

@@ -31,6 +31,7 @@ Enable the admission webhook in NeuVector:
 
 ```bash
 # Enable admission control via API
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/admission/state" \
   -H "Content-Type: application/json" \
@@ -169,33 +170,33 @@ curl -sk -X POST \
 
 NeuVector supports many criteria types:
 
-```
+```text
 Image criteria:
-- imageRegistry        — Registry hostname
-- imageTag             — Image tag (e.g., block "latest")
-- imageSigned          — Whether image has a valid signature
+- imageRegistry        - Registry hostname
+- imageTag             - Image tag (e.g., block "latest")
+- imageSigned          - Whether image has a valid signature
 
 Vulnerability criteria:
-- cveHighCount         — Number of high CVEs
-- cveCriticalCount     — Number of critical CVEs
-- cveScoreCount        — CVEs above a CVSS score threshold
-- allowedCves          — Specific CVE exceptions
+- cveHighCount         - Number of high CVEs
+- cveCriticalCount     - Number of critical CVEs
+- cveScoreCount        - CVEs above a CVSS score threshold
+- allowedCves          - Specific CVE exceptions
 
 Kubernetes spec criteria:
-- privileged           — Privileged container flag
-- runAsRoot            — Running as root user
-- shareIpcNamespace    — hostIPC: true
-- shareNetNamespace    — hostNetwork: true
-- sharePidNamespace    — hostPID: true
-- allowPrivEscalation  — allowPrivilegeEscalation: true
-- namespace            — Target namespace
-- label                — Pod labels
-- annotations          — Pod annotations
+- privileged           - Privileged container flag
+- runAsRoot            - Running as root user
+- shareIpcNamespace    - hostIPC: true
+- shareNetNamespace    - hostNetwork: true
+- sharePidNamespace    - hostPID: true
+- allowPrivEscalation  - allowPrivilegeEscalation: true
+- namespace            - Target namespace
+- label                - Pod labels
+- annotations          - Pod annotations
 
 Resource criteria:
-- cpuLimit             — CPU limit set
-- memoryLimit          — Memory limit set
-- noRequestLimit       — No resource limits specified
+- cpuLimit             - CPU limit set
+- memoryLimit          - Memory limit set
+- noRequestLimit       - No resource limits specified
 ```
 
 ## Step 6: Test Admission Control

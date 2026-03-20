@@ -30,6 +30,7 @@ graph TD
 
 ```yaml
 # Repository structure for enterprise multi-cluster
+
 # fleet-infra/
 #   clusters/
 #     us-east-prod/
@@ -158,7 +159,7 @@ spec:
   targetNamespace: team-alpha
 ```
 
-## Resource Limits and Performance Tuning
+Resource Limits and Performance Tuning
 
 At enterprise scale, Flux controllers process many resources. Tune controller resources and concurrency settings.
 

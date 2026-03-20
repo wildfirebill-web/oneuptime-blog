@@ -28,6 +28,7 @@ The NATS Helm chart is the easiest way to deploy NATS on Kubernetes:
 
 ```bash
 # Add the NATS Helm repository
+
 helm repo add nats https://nats-io.github.io/k8s/helm/charts/
 helm repo update
 

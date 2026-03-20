@@ -198,6 +198,7 @@ Use the command-line tools to reset offsets for a consumer group:
 
 ```bash
 # Preview what would be reset (dry-run)
+
 kafka-consumer-groups.sh --bootstrap-server kafka:9092 \
     --group my-group \
     --topic orders \

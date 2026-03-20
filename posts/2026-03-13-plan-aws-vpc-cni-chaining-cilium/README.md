@@ -29,6 +29,7 @@ This guide covers the planning phase - understanding what changes, what stays th
 Understand the current CNI setup before adding Cilium to the chain.
 ```bash
 # Check the current VPC CNI version
+
 kubectl describe daemonset aws-node -n kube-system | grep Image
 
 # View the current CNI configuration on a node

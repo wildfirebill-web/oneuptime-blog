@@ -26,6 +26,7 @@ Create dedicated consumer groups for each logical consumer of your event stream:
 
 ```bash
 # Create consumer groups for different processing pipelines
+
 # Each consumer group gets an independent view of the full event stream
 
 # Consumer group for the real-time analytics pipeline

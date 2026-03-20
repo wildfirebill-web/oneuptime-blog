@@ -26,6 +26,7 @@ Deploying SQL Server on Windows containers presents unique challenges: it is a s
 
 ```yaml
 # infrastructure/windows/sql-server/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

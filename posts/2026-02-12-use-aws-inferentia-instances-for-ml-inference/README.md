@@ -27,6 +27,7 @@ Each first-generation Inferentia chip has 4 NeuronCores (compared to 2 NeuronCor
 
 ```bash
 # Launch an Inf1 instance with the Neuron Deep Learning AMI
+
 aws ec2 run-instances \
   --image-id ami-0abc123-neuron-dlami \
   --instance-type inf1.xlarge \

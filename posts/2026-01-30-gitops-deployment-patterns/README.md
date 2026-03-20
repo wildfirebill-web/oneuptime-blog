@@ -80,6 +80,7 @@ Application code and deployment configs live in different repositories. CI build
 
 ```text
 # App repository (myapp)
+
 myapp/
 ├── src/
 ├── Dockerfile

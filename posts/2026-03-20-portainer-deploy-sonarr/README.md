@@ -1,4 +1,4 @@
-# How to Deploy Sonarr via Portainer
+# How to Deploy Sonarr via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

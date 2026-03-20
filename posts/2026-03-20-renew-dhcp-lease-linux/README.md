@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Linux, Networking, Network Diagnostics, sysadmin
+Tags: DHCP, Linux, Networking, Network Diagnostics, Sysadmin
 
 Description: Renewing a DHCP lease on Linux can be done with dhclient, nmcli, or by restarting the networking service, depending on which network management stack is in use.
 
@@ -10,6 +10,7 @@ Description: Renewing a DHCP lease on Linux can be done with dhclient, nmcli, or
 
 ```bash
 # Release current lease
+
 sudo dhclient -r eth0
 
 # Request a new lease

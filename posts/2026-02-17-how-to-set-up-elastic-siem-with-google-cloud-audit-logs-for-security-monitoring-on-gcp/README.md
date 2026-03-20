@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Create a Pub/Sub topic for audit log export
+
 gcloud pubsub topics create gcp-audit-logs-elastic \
   --project=my-project
 

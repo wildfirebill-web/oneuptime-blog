@@ -40,6 +40,7 @@ aws eks create-addon \
   --addon-version v1.2.0-eksbuild.1
 
 # Verify the agent is running
+
 kubectl get daemonset eks-pod-identity-agent -n kube-system
 ```
 

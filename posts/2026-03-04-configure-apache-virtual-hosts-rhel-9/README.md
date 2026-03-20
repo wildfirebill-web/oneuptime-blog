@@ -35,6 +35,7 @@ Name-based virtual hosts are far more common since they allow multiple sites on 
 
 ```bash
 # Create document roots for two websites
+
 sudo mkdir -p /var/www/site1.example.com/public_html
 sudo mkdir -p /var/www/site2.example.com/public_html
 

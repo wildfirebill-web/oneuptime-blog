@@ -29,6 +29,7 @@ Set up the API and install the client library:
 
 ```bash
 # Enable the Text-to-Speech API
+
 gcloud services enable texttospeech.googleapis.com
 
 # Install the Python client

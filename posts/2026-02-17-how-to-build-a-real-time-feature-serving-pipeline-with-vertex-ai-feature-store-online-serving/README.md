@@ -51,6 +51,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Create a feature store with online serving enabled
+
 feature_store = aiplatform.Featurestore.create(
     featurestore_id="realtime_features",
     online_serving_config=aiplatform.Featurestore.OnlineServingConfig(

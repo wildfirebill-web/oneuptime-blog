@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Linode, Firewalls, Security, Infrastructure as Code
+Tags: OpenTofu, Linode, Firewall, Security, Infrastructure as Code
 
 Description: Learn how to create Linode Cloud Firewalls with OpenTofu to control inbound and outbound traffic to your Linode instances.
 

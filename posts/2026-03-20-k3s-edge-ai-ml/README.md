@@ -1,4 +1,4 @@
-# How to Deploy AI/ML Models at the Edge with K3s
+# How to Deploy AI/ML Models at the Edge with K3s - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ Edge AI/ML brings machine learning inference close to the data source, reducing 
 # On NVIDIA Jetson Xavier NX (JetPack 5.1+)
 
 # Verify CUDA is available
+
 nvcc --version
 nvidia-smi  # Note: jetson-stats for Jetson
 
@@ -356,4 +357,4 @@ curl http://localhost:8002/metrics | grep nv_inference
 
 ## Conclusion
 
-K3s on NVIDIA Jetson and other AI-capable edge hardware enables powerful edge AI/ML inference workloads with full Kubernetes orchestration. Key advantages include automatic GPU resource allocation via device plugins, containerized model isolation, automated model updates, and the ability to run multiple models simultaneously. The combination of K3s's lightweight orchestration and GPU acceleration enables sophisticated AI/ML use cases — from real-time video analytics to sensor fusion — at the edge with minimal infrastructure overhead.
+K3s on NVIDIA Jetson and other AI-capable edge hardware enables powerful edge AI/ML inference workloads with full Kubernetes orchestration. Key advantages include automatic GPU resource allocation via device plugins, containerized model isolation, automated model updates, and the ability to run multiple models simultaneously. The combination of K3s's lightweight orchestration and GPU acceleration enables sophisticated AI/ML use cases - from real-time video analytics to sensor fusion - at the edge with minimal infrastructure overhead.

@@ -31,6 +31,7 @@ Use Raspberry Pi Imager to flash Ubuntu Server 24.04 LTS (64-bit) to your storag
 
 ```bash
 # SSH into the Pi
+
 ssh ubuntu@<pi-ip>
 
 # Update all packages

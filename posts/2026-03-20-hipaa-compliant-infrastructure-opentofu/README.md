@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, HIPAA, Compliance, PHI, Healthcare, Encryption, Audit Logging, Infrastructure as Code
 
-Description: Learn how to provision HIPAA-compliant AWS infrastructure using OpenTofu, covering encryption at rest and in transit, audit logging, access controls, and backup requirements for protected health information.
+Description: Learn how to provision HIPAA-compliant AWS infrastructure using OpenTofu, covering encryption at rest and in transit, audit logging, access controls, and backup requirements for protected health...
 
 ---
 
@@ -28,8 +28,9 @@ graph TD
 
 ```hcl
 # kms.tf
+
 resource "aws_kms_key" "phi" {
-  description             = "KMS key for PHI encryption — HIPAA compliant"
+  description             = "KMS key for PHI encryption - HIPAA compliant"
   deletion_window_in_days = 30
   enable_key_rotation     = true  # Required for HIPAA
 
@@ -81,7 +82,7 @@ resource "aws_db_instance" "phi" {
 ## Audit Logging
 
 ```hcl
-# cloudtrail.tf — HIPAA requires audit activity logs
+# cloudtrail.tf - HIPAA requires audit activity logs
 resource "aws_cloudtrail" "phi_audit" {
   name                          = "phi-audit-trail"
   s3_bucket_name                = aws_s3_bucket.audit_logs.id
@@ -103,7 +104,7 @@ resource "aws_cloudtrail" "phi_audit" {
   cloud_watch_logs_role_arn  = aws_iam_role.cloudtrail.arn
 }
 
-# Audit log retention — HIPAA requires 6 years
+# Audit log retention - HIPAA requires 6 years
 resource "aws_s3_bucket_lifecycle_configuration" "audit_logs" {
   bucket = aws_s3_bucket.audit_logs.id
 
@@ -188,8 +189,8 @@ resource "aws_iam_policy" "phi_access" {
 
 ## Best Practices
 
-- Sign a Business Associate Agreement (BAA) with AWS before storing PHI — this is a legal requirement.
-- Enable KMS key rotation — HIPAA doesn't prescribe rotation frequency but CMS requires at least annual rotation.
-- Use S3 Object Lock in COMPLIANCE mode for audit logs — compliance mode prevents anyone, including AWS, from deleting records.
+- Sign a Business Associate Agreement (BAA) with AWS before storing PHI - this is a legal requirement.
+- Enable KMS key rotation - HIPAA doesn't prescribe rotation frequency but CMS requires at least annual rotation.
+- Use S3 Object Lock in COMPLIANCE mode for audit logs - compliance mode prevents anyone, including AWS, from deleting records.
 - Enable CloudTrail log file validation to detect tampering and use it as evidence in audits.
-- Test backup restoration quarterly — HIPAA requires not just backing up but verifying you can restore.
+- Test backup restoration quarterly - HIPAA requires not just backing up but verifying you can restore.

@@ -79,6 +79,7 @@ Check the mTLS certificates currently in use.
 
 ```bash
 # View Talos API server certificate
+
 talosctl -n 10.0.1.10 get certificate
 
 # Inspect the API server certificate details

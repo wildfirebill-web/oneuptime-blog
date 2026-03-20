@@ -8,7 +8,7 @@ Description: Learn how to implement graceful shutdown for Python IPv4 socket ser
 
 ## What Is Graceful Shutdown?
 
-A graceful shutdown allows the server to stop accepting new connections, finish processing in-flight requests, and cleanly close all client connections—rather than abruptly terminating and leaving clients with broken pipes.
+A graceful shutdown allows the server to stop accepting new connections, finish processing in-flight requests, and cleanly close all client connections-rather than abruptly terminating and leaving clients with broken pipes.
 
 ## Basic Signal Handling
 
@@ -21,6 +21,7 @@ HOST = "0.0.0.0"
 PORT = 9007
 
 # Global flag to signal shutdown
+
 shutdown_event = False
 
 

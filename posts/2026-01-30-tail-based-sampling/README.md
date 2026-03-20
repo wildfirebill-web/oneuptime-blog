@@ -156,6 +156,7 @@ The OpenTelemetry Collector includes a `tail_sampling` processor. Here is a mini
 
 ```yaml
 # otel-collector-config.yaml
+
 # Minimal tail sampling configuration for OpenTelemetry Collector
 
 receivers:

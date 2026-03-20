@@ -18,6 +18,7 @@ Podman allows you to connect a running container to one or more additional netwo
 
 ```bash
 # Create two networks
+
 podman network create frontend
 podman network create backend
 

@@ -19,6 +19,7 @@ CloudWatch Log Groups and Log Streams organize application and AWS service logs.
 
 ```hcl
 # Application log group
+
 resource "aws_cloudwatch_log_group" "app" {
   name              = "/application/${var.project_name}/${var.environment}"
   retention_in_days = 30
@@ -155,4 +156,4 @@ aws logs filter-log-events \
 
 ## Conclusion
 
-Always pre-create CloudWatch Log Groups in OpenTofu rather than allowing services to auto-create them—this ensures retention policies and encryption are applied from the first log entry. Without explicit retention, logs accumulate indefinitely at $0.03/GB/month. Use the KMS key condition `kms:EncryptionContext:aws:logs:arn` to restrict the key to specific log groups, preventing accidental use for other purposes.
+Always pre-create CloudWatch Log Groups in OpenTofu rather than allowing services to auto-create them-this ensures retention policies and encryption are applied from the first log entry. Without explicit retention, logs accumulate indefinitely at $0.03/GB/month. Use the KMS key condition `kms:EncryptionContext:aws:logs:arn` to restrict the key to specific log groups, preventing accidental use for other purposes.

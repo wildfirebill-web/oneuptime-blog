@@ -18,6 +18,7 @@ In QuickSight, you build in an "analysis" and publish to a "dashboard." An analy
 
 ```bash
 # First, create a template from your analysis
+
 aws quicksight create-template \
   --aws-account-id 123456789012 \
   --template-id sales-dashboard-template \

@@ -24,6 +24,7 @@ Start by verifying kube-proxy is running:
 
 ```bash
 # Check kube-proxy pods
+
 kubectl get pods -n kube-system -l k8s-app=kube-proxy
 
 # All pods should be Running

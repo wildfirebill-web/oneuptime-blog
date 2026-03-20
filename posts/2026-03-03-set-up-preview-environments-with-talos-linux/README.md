@@ -63,6 +63,7 @@ Here is a complete GitHub Actions workflow for preview environments:
 
 ```yaml
 # .github/workflows/preview.yml
+
 name: Preview Environment
 
 on:
@@ -292,7 +293,7 @@ spec:
 EOF
 ```
 
-## Resource Limits and Cost Control
+Resource Limits and Cost Control
 
 Preview environments can quickly consume resources if not managed:
 

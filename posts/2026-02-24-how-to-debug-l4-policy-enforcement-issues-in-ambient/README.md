@@ -28,6 +28,7 @@ First, check that ztunnel has actually received the authorization policies from 
 
 ```bash
 # Find the ztunnel pod on the relevant node
+
 NODE_NAME=$(kubectl get pod -n my-app my-pod -o jsonpath='{.spec.nodeName}')
 ZTUNNEL=$(kubectl get pods -n istio-system -l app=ztunnel \
   --field-selector spec.nodeName=$NODE_NAME -o jsonpath='{.items[0].metadata.name}')

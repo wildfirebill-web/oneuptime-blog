@@ -91,6 +91,7 @@ Subsets defined in DestinationRules might not be referenced by any VirtualServic
 echo "=== Checking for Unused Subsets ==="
 
 # Get all subset references from VirtualServices
+
 VS_SUBSETS=$(kubectl get virtualservice -A -o json | jq -r '
   .items[] |
   .spec.http[]?.route[]? |

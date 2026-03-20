@@ -20,6 +20,7 @@ Before using the lookup, you need to encrypt your files with Ansible Vault.
 
 ```bash
 # Encrypt a file with ansible-vault
+
 ansible-vault encrypt secrets/api_key.txt
 
 # Encrypt a certificate file

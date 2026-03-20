@@ -38,6 +38,7 @@ Scale up when:
 
 ```bash
 # Check your current plan tier
+
 az appservice plan show \
   --resource-group myAppRG \
   --name myAppPlan \

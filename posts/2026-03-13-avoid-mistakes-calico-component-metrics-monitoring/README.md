@@ -16,6 +16,7 @@ Calico metrics monitoring has several common configuration mistakes that result 
 
 ```yaml
 # WRONG - selector looks for labels that Services don't have
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 spec:

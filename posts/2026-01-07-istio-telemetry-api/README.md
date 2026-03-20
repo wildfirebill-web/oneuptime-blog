@@ -87,6 +87,7 @@ The following command verifies your Istio installation and version:
 
 ```bash
 # Check Istio version to ensure Telemetry API support
+
 # Telemetry API is stable from Istio 1.12+
 istioctl version
 

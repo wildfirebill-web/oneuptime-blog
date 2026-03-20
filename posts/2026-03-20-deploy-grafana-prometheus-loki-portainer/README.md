@@ -8,7 +8,7 @@ Description: Learn how to deploy the complete Grafana observability stack (Grafa
 
 ## The Modern Observability Stack
 
-```
+```bash
 Metrics: Node Exporter + cAdvisor → Prometheus → Grafana
 Logs:    Promtail (Docker logs)   → Loki       → Grafana
                                                ↑
@@ -98,6 +98,7 @@ volumes:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
 
@@ -143,9 +144,9 @@ providers:
 ```
 
 Download community dashboards into `grafana-provisioning/dashboards/`:
-- `1860` — Node Exporter Full
-- `14282` — cAdvisor Container Metrics
-- `13639` — Loki Log Dashboard
+- `1860` - Node Exporter Full
+- `14282` - cAdvisor Container Metrics
+- `13639` - Loki Log Dashboard
 
 ## Accessing the Stack
 

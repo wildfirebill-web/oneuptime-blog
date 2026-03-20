@@ -29,6 +29,7 @@ The simplest way to enable caching is with an environment variable:
 
 ```bash
 # Add this to your shell profile (~/.bashrc, ~/.zshrc, etc.)
+
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 
 # Create the directory

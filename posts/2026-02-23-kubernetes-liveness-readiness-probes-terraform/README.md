@@ -423,6 +423,7 @@ variable "probe_config" {
 }
 
 # Use the variable in the deployment
+
 container {
   name  = "app"
   image = "my-app:1.0.0"

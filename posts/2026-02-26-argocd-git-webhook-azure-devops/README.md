@@ -25,6 +25,7 @@ ArgoCD's API server handles the Azure DevOps payload format and extracts the rep
 
 ```bash
 # Generate a secure webhook secret
+
 WEBHOOK_SECRET=$(openssl rand -hex 32)
 echo "Your webhook secret: $WEBHOOK_SECRET"
 ```

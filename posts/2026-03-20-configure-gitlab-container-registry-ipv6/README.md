@@ -18,6 +18,7 @@ For GitLab Omnibus (all-in-one installation):
 # /etc/gitlab/gitlab.rb
 
 # Enable container registry
+
 registry_external_url 'https://registry.example.com'
 
 # Configure registry to listen on IPv6

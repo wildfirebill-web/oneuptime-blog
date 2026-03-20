@@ -43,6 +43,7 @@ The cleanest fix is to import the existing resource into your Terraform state:
 
 ```bash
 # Import an S3 bucket
+
 terraform import aws_s3_bucket.my_bucket my-bucket
 
 # Import a security group

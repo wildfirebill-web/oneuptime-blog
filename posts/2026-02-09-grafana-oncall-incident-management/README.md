@@ -22,6 +22,7 @@ Oncall can run as a standalone service or as a Grafana Cloud feature. For self-h
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

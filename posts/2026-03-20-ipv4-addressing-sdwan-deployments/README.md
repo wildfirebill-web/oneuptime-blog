@@ -12,7 +12,7 @@ SD-WAN creates a virtual overlay over multiple transport links (MPLS, broadband,
 
 ## SD-WAN Addressing Layers
 
-```
+```text
 Layer            Address Space       Purpose
 ───────────────────────────────────────────────────────
 Underlay ISP     203.0.113.0/30      WAN uplinks (public/private)
@@ -24,7 +24,7 @@ Management OOB   10.253.0.0/16       Device management
 
 ## Site Numbering Scheme
 
-```
+```text
 Site ID: 3-digit number (001–999)
   001  HQ
   002  Branch Chicago
@@ -34,8 +34,8 @@ Site ID: 3-digit number (001–999)
 
 Per-site address:
   Service LAN:  10.<site_id>.<vlan>.0/24
-    Site 001:   10.1.10.0/24   (VLAN 10 — corporate)
-                10.1.20.0/24   (VLAN 20 — guest)
+    Site 001:   10.1.10.0/24   (VLAN 10 - corporate)
+                10.1.20.0/24   (VLAN 20 - guest)
     Site 002:   10.2.10.0/24
                 10.2.20.0/24
 
@@ -65,7 +65,7 @@ VLANS = {
 }
 
 for site_id, site_name in SITES.items():
-    print(f"\nSite {site_id:03d} — {site_name}")
+    print(f"\nSite {site_id:03d} - {site_name}")
     loopback = f"10.254.{site_id}.1/32"
     print(f"  Loopback: {loopback}")
     for vlan, vlan_name in VLANS.items():
@@ -75,9 +75,9 @@ for site_id, site_name in SITES.items():
               f"GW: {list(net.hosts())[0]}")
 ```
 
-## Cisco Viptela — Interface Configuration
+## Cisco Viptela - Interface Configuration
 
-```
+```text
 ! vEdge router at Site 002 (Chicago)
 ! Transport (underlay)
 vpn 0
@@ -97,7 +97,7 @@ vpn 1
 
 ## Avoid Overlap Checklist
 
-```
+```text
 Before deployment, verify:
 [ ] No site LAN prefix overlaps another site
 [ ] Overlay tunnel space (10.255.x.x) doesn't collide with LAN
@@ -108,13 +108,13 @@ Before deployment, verify:
 
 ## Summarization at Hub Sites
 
-```
+```text
 HQ aggregates:
-  10.1.0.0/16   — All HQ subnets
+  10.1.0.0/16   - All HQ subnets
   Summary to MPLS/internet: 10.0.0.0/8  (entire SD-WAN)
 
 Regional hub:
-  10.1.0.0/20  — Sites 001–015 (if /24 per site per region)
+  10.1.0.0/20  - Sites 001–015 (if /24 per site per region)
 ```
 
 ## Conclusion

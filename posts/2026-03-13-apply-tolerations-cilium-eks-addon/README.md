@@ -84,6 +84,7 @@ helm upgrade cilium cilium/cilium \
 
 ```bash
 # Check which nodes have taints
+
 kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
 
 # Verify Cilium is running on all nodes

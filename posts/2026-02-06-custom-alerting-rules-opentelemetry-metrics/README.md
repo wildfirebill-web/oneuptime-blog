@@ -36,6 +36,7 @@ Start by instrumenting the metrics that drive your most important alerting rules
 
 ```python
 # alertable_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

@@ -1399,6 +1399,7 @@ Configure your application properties:
 
 ```yaml
 # application.yml
+
 spring:
   data:
     mongodb:

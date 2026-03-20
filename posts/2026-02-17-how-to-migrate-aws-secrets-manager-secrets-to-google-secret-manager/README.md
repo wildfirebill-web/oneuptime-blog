@@ -31,6 +31,7 @@ Start by listing everything in AWS Secrets Manager.
 
 ```bash
 # List all secrets with their metadata
+
 aws secretsmanager list-secrets \
   --query 'SecretList[*].{
     Name:Name,

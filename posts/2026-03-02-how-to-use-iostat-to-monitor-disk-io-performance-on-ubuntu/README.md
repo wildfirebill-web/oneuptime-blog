@@ -50,6 +50,7 @@ For continuous monitoring:
 
 ```bash
 # Update every 2 seconds
+
 iostat 2
 
 # Update every 1 second, 20 times

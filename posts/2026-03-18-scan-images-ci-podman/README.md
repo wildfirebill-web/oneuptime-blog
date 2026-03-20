@@ -21,6 +21,7 @@ Trivy is one of the most popular container vulnerability scanners. It can scan P
 ```bash
 #!/bin/bash
 # Install Trivy for container image scanning
+
 # Trivy detects vulnerabilities in OS packages and language dependencies
 
 # Install Trivy on Ubuntu-based CI runners

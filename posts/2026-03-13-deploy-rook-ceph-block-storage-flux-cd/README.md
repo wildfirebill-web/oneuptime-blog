@@ -24,6 +24,7 @@ Deploying Rook-Ceph block storage through Flux CD gives you GitOps-managed stora
 
 ```yaml
 # infrastructure/storage/rook-ceph/block-pool.yaml
+
 apiVersion: ceph.rook.io/v1
 kind: CephBlockPool
 metadata:

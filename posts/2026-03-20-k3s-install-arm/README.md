@@ -24,6 +24,7 @@ Regardless of the ARM device, these steps are universal:
 
 ```bash
 # Check your architecture
+
 uname -m
 # aarch64 = ARM64
 # armv7l  = ARMv7

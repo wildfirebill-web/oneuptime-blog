@@ -231,6 +231,7 @@ When something is not working right with headless services in Istio, start by ch
 
 ```bash
 # Check endpoints from Kubernetes perspective
+
 kubectl get endpoints my-headless-service -n default
 
 # Check how Istio sees the endpoints

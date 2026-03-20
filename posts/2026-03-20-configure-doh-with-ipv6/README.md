@@ -8,7 +8,7 @@ Description: A guide to configuring DNS-over-HTTPS (DoH) servers and clients wit
 
 ## What Is DNS-over-HTTPS?
 
-DNS-over-HTTPS (DoH), defined in RFC 8484, sends DNS queries inside HTTPS requests to port 443. It provides DNS privacy and security by encrypting queries. DoH can use both IPv4 and IPv6 transport — the DNS query is carried inside HTTPS, which runs over TCP/TLS, which can use IPv6.
+DNS-over-HTTPS (DoH), defined in RFC 8484, sends DNS queries inside HTTPS requests to port 443. It provides DNS privacy and security by encrypting queries. DoH can use both IPv4 and IPv6 transport - the DNS query is carried inside HTTPS, which runs over TCP/TLS, which can use IPv6.
 
 ## Setting Up a DoH Server with dnsdist over IPv6
 
@@ -16,6 +16,7 @@ dnsdist is a DNS load balancer that supports DoH and IPv6:
 
 ```bash
 # Install dnsdist
+
 apt install dnsdist
 
 # /etc/dnsdist/dnsdist.conf

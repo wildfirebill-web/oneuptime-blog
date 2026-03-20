@@ -16,6 +16,7 @@ Serve static files with a single command.
 
 ```bash
 # Serve files from the current directory
+
 docker run -d \
   --name apache \
   -p 8080:80 \

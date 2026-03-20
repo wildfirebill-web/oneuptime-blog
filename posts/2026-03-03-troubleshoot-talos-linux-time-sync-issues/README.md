@@ -26,6 +26,7 @@ Start by checking the time on the problematic node:
 
 ```bash
 # Check the node time
+
 talosctl -n <node-ip> time
 ```
 

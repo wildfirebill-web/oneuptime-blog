@@ -16,6 +16,7 @@ The source VM must be shut down before cloning:
 
 ```bash
 # Shut down the source VM
+
 sudo virsh shutdown rhel9-vm
 
 # Wait for it to fully stop

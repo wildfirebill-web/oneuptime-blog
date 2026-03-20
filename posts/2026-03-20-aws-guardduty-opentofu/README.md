@@ -74,6 +74,7 @@ resource "aws_guardduty_ipset" "trusted" {
 
 ```hcl
 # Route HIGH severity GuardDuty findings to SNS
+
 resource "aws_cloudwatch_event_rule" "guardduty_high_findings" {
   name        = "${var.project_name}-guardduty-high-severity"
   description = "Alert on HIGH severity GuardDuty findings"
@@ -153,4 +154,4 @@ aws guardduty list-findings \
 
 ## Conclusion
 
-GuardDuty should be enabled in every AWS account and region—the cost is based on data analyzed and is minimal compared to the security value. Enable S3 protection and EKS audit log monitoring for comprehensive coverage beyond EC2 and CloudTrail. For multi-account deployments, use Organizations integration to auto-enable GuardDuty in all current and future accounts and centralize findings in a security account.
+GuardDuty should be enabled in every AWS account and region-the cost is based on data analyzed and is minimal compared to the security value. Enable S3 protection and EKS audit log monitoring for comprehensive coverage beyond EC2 and CloudTrail. For multi-account deployments, use Organizations integration to auto-enable GuardDuty in all current and future accounts and centralize findings in a security account.

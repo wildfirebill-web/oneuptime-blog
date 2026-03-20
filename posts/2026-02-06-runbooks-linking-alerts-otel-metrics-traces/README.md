@@ -190,6 +190,7 @@ You can generate runbook links directly in your alerting rules using annotations
 
 ```yaml
 # Prometheus alerting rule with runbook and query links
+
 groups:
   - name: order-service
     rules:

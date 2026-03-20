@@ -20,6 +20,7 @@ Before changing anything, see where you stand:
 
 ```bash
 # Check the current time synchronization status
+
 timedatectl
 ```
 

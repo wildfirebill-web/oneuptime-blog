@@ -16,6 +16,7 @@ The `trimprefix` function removes a word from the start of a string. If the stri
 
 ```hcl
 # Basic syntax
+
 trimprefix(string, prefix)
 ```
 

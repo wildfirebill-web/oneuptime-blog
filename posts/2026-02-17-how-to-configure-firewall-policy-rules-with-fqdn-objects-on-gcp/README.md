@@ -34,6 +34,7 @@ Make sure you have the network firewall policy API enabled:
 
 ```bash
 # Enable the required API for network firewall policies
+
 gcloud services enable networksecurity.googleapis.com
 ```
 

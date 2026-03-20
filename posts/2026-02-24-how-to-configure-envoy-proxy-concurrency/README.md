@@ -166,6 +166,7 @@ After changing concurrency, watch these metrics to see if things improved:
 
 ```bash
 # Check Envoy upstream connection stats
+
 kubectl exec -it <pod-name> -c istio-proxy -n <namespace> -- curl -s localhost:15000/stats | grep downstream_cx_active
 ```
 

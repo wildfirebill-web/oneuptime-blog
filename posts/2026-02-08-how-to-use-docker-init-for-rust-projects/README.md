@@ -18,6 +18,7 @@ Create a basic Rust web application using Actix-web:
 
 ```bash
 # Create a new Rust project
+
 cargo new rust-docker-demo && cd rust-docker-demo
 ```
 

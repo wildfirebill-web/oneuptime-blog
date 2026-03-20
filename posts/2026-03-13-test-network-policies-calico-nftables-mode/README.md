@@ -85,6 +85,7 @@ kubectl exec -n nft-policy-test blocked-client -- wget -qO- --timeout=5 http://$
 
 ```bash
 # On the node where the server pod is running
+
 SERVER_NODE=$(kubectl get pod server -n nft-policy-test -o jsonpath='{.spec.nodeName}')
 # SSH into $SERVER_NODE
 nft list table ip calico-filter | grep -A5 "nft-policy-test"

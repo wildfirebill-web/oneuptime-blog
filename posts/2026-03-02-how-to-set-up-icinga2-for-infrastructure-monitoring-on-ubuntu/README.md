@@ -26,6 +26,7 @@ The typical single-server setup has all components on one machine:
 
 ```bash
 # Add Icinga repository
+
 curl -sSL https://packages.icinga.com/icinga.key | sudo gpg --dearmor -o /usr/share/keyrings/icinga.gpg
 
 echo "deb [signed-by=/usr/share/keyrings/icinga.gpg] https://packages.icinga.com/ubuntu icinga-$(lsb_release -cs) main" | \

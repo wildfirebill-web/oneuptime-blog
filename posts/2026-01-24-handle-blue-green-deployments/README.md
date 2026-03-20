@@ -69,6 +69,7 @@ Implement blue-green deployments in Kubernetes using separate deployments and se
 
 ```yaml
 # blue-deployment.yaml - Blue environment deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

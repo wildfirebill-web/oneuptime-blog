@@ -213,6 +213,7 @@ On GKE, use Workload Identity for authentication:
 
 ```bash
 # Create a GCP service account
+
 gcloud iam service-accounts create otel-collector \
   --display-name="OTel Collector for Trace Export"
 

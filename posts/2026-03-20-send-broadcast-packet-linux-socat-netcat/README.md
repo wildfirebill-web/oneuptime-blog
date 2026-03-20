@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Broadcast, Linux, socat, netcat, UDP
+Tags: Networking, Broadcast, Linux, Socat, netcat, UDP
 
 Description: Send UDP broadcast packets from the Linux command line using socat and netcat, including how to enable the SO_BROADCAST socket option and receive broadcasts on remote hosts.
 
 ## Introduction
 
-Sending a UDP broadcast packet on Linux requires the `SO_BROADCAST` socket option — a deliberate safety mechanism to prevent accidental broadcast floods. Both `socat` and `netcat` support this, making it easy to test broadcast delivery without writing custom code.
+Sending a UDP broadcast packet on Linux requires the `SO_BROADCAST` socket option - a deliberate safety mechanism to prevent accidental broadcast floods. Both `socat` and `netcat` support this, making it easy to test broadcast delivery without writing custom code.
 
 ## Sending a Broadcast with socat
 
@@ -16,6 +16,7 @@ Sending a UDP broadcast packet on Linux requires the `SO_BROADCAST` socket optio
 
 ```bash
 # Send a single broadcast packet to 192.168.1.255 on port 9999
+
 echo "Hello broadcast" | socat - UDP-DATAGRAM:192.168.1.255:9999,broadcast
 
 # Send the limited broadcast to all hosts on the local segment
@@ -84,7 +85,7 @@ nc -u -l 9999
 ## Verifying Delivery with tcpdump
 
 ```bash
-# On another host on the segment — confirm the broadcast arrives
+# On another host on the segment - confirm the broadcast arrives
 sudo tcpdump -i eth0 -n "udp dst port 9999"
 ```
 
@@ -108,4 +109,4 @@ print('WoL packet sent')
 
 ## Conclusion
 
-`socat` with the `broadcast` option is the most reliable way to send UDP broadcasts from the Linux command line. Remember that broadcast packets are limited to the local subnet — routers drop `255.255.255.255` and most block directed broadcasts by default.
+`socat` with the `broadcast` option is the most reliable way to send UDP broadcasts from the Linux command line. Remember that broadcast packets are limited to the local subnet - routers drop `255.255.255.255` and most block directed broadcasts by default.

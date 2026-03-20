@@ -17,6 +17,7 @@ Validating Calico upgrades on OpenShift requires both standard Calico checks and
 ```bash
 #!/bin/bash
 # validate-calico-openshift-upgrade.sh
+
 TARGET_VERSION="${1:?Provide target version}"
 FAILURES=0
 

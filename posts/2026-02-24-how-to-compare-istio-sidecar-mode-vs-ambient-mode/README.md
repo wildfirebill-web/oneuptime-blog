@@ -20,6 +20,7 @@ The sidecar handles mTLS, traffic routing, telemetry collection, and policy enfo
 
 ```yaml
 # Pod with sidecar injection
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -54,7 +55,7 @@ istioctl waypoint apply --namespace default
 
 The key insight is that many services only need L4 features (mTLS, basic connectivity), and only some need L7 features (HTTP routing, header-based policies). Ambient mode lets you pay the L7 cost only where you need it.
 
-## Resource Usage
+Resource Usage
 
 This is the most impactful difference for most teams.
 

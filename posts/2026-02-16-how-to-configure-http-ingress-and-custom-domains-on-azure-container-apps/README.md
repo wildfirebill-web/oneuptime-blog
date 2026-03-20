@@ -20,6 +20,7 @@ If you are creating a new container app, you can enable ingress during creation.
 
 ```bash
 # Create a container app with external HTTP ingress on port 8080
+
 az containerapp create \
   --name my-web-app \
   --resource-group my-rg \

@@ -32,6 +32,7 @@ For command-line access, use the `virtctl` tool:
 
 ```bash
 # Install virtctl
+
 VERSION=$(kubectl get kubevirt -n harvester-system -o jsonpath='{.items[0].status.observedKubeVirtVersion}')
 curl -Lo virtctl https://github.com/kubevirt/kubevirt/releases/download/${VERSION}/virtctl-${VERSION}-linux-amd64
 chmod +x virtctl
@@ -140,6 +141,6 @@ kubectl logs -n harvester-system \
 
 ## Best Practices
 
-- Always enable the serial console on Linux server VMs at provisioning time — if the VM loses network access, the serial console is the only way to recover it without a reboot.
-- Use `virtctl console` for automation scripts that need to interact with a VM — it's scriptable unlike the web VNC console.
-- For Windows VMs, the VNC web console is the only practical option — ensure the VM has a VGA-compatible display device configured.
+- Always enable the serial console on Linux server VMs at provisioning time - if the VM loses network access, the serial console is the only way to recover it without a reboot.
+- Use `virtctl console` for automation scripts that need to interact with a VM - it's scriptable unlike the web VNC console.
+- For Windows VMs, the VNC web console is the only practical option - ensure the VM has a VGA-compatible display device configured.

@@ -53,6 +53,7 @@ The `Restart=` directive controls when systemd restarts the service:
 ```ini
 [Service]
 # Only restart on watchdog timeout
+
 Restart=on-watchdog
 
 # Restart on watchdog timeout AND on failure (recommended for most services)

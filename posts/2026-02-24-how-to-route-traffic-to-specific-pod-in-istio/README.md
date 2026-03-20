@@ -96,6 +96,7 @@ For quick debugging, you can bypass the service entirely and call the pod IP dir
 
 ```bash
 # Get the pod IP
+
 POD_IP=$(kubectl get pod my-service-abc123 -o jsonpath='{.status.podIP}')
 
 # Call it directly

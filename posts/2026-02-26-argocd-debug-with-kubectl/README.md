@@ -16,6 +16,7 @@ ArgoCD stores its data as Kubernetes Custom Resources and native resources:
 
 ```bash
 # List all ArgoCD custom resource types
+
 kubectl api-resources | grep argoproj
 
 # Typical output:

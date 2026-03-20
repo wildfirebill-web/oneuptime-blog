@@ -18,6 +18,7 @@ When debugging containers or investigating unexpected behavior, it's often valua
 docker diff container_name
 
 # Output symbols:
+
 # A = Added (new file or directory)
 # C = Changed (modified file or directory)  
 # D = Deleted
@@ -46,15 +47,15 @@ Understanding what changes are normal vs. suspicious:
 
 ```bash
 # Normal changes in a web application:
-A /app/logs/access.log     # Log files created at runtime — expected
-C /app/config/runtime.json # Configuration written on startup — check if intended
-A /tmp/                    # Temp files — usually fine
+A /app/logs/access.log     # Log files created at runtime - expected
+C /app/config/runtime.json # Configuration written on startup - check if intended
+A /tmp/                    # Temp files - usually fine
 
 # Potentially concerning changes:
-C /etc/passwd              # Password file modified — investigate
-C /etc/hosts               # Hosts file modified — check for DNS poisoning
-A /usr/bin/suspicious      # New binary in system paths — malware risk
-C /etc/cron.d/             # Cron jobs modified — backdoor risk
+C /etc/passwd              # Password file modified - investigate
+C /etc/hosts               # Hosts file modified - check for DNS poisoning
+A /usr/bin/suspicious      # New binary in system paths - malware risk
+C /etc/cron.d/             # Cron jobs modified - backdoor risk
 ```
 
 ## Auditing Container Changes for Security
@@ -63,7 +64,7 @@ Use `docker diff` as part of a security audit:
 
 ```python
 #!/usr/bin/env python3
-# container-audit.py — check containers for suspicious filesystem changes
+# container-audit.py - check containers for suspicious filesystem changes
 import subprocess
 import json
 

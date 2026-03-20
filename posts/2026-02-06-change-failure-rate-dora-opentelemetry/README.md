@@ -23,6 +23,7 @@ Every deployment must be recorded as a structured event in your telemetry pipeli
 
 ```python
 # Record every deployment with outcome tracking
+
 from opentelemetry import metrics
 from datetime import datetime
 

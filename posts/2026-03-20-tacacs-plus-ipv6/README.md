@@ -8,7 +8,7 @@ Description: Configure TACACS+ servers and network devices to use IPv6 for authe
 
 ## TACACS+ and IPv6 Overview
 
-TACACS+ (TCP port 49) supports IPv6 natively — both the transport (TACACS+ server reachable via IPv6) and attributes (device management via IPv6). Key use cases:
+TACACS+ (TCP port 49) supports IPv6 natively - both the transport (TACACS+ server reachable via IPv6) and attributes (device management via IPv6). Key use cases:
 - Network device admin login over IPv6 management network
 - TACACS+ server listening on IPv6
 - Logging management access from IPv6 source addresses
@@ -17,10 +17,11 @@ TACACS+ (TCP port 49) supports IPv6 natively — both the transport (TACACS+ ser
 
 ```bash
 # Install tac_plus (TACACS+ daemon)
+
 apt-get install tacacs+   # Debian/Ubuntu
 yum install tacacs+       # RHEL/CentOS
 
-# /etc/tacacs+/tac_plus.conf — Basic IPv6 configuration
+# /etc/tacacs+/tac_plus.conf - Basic IPv6 configuration
 cat > /etc/tacacs+/tac_plus.conf << 'EOF'
 # TACACS+ key
 key = mysecretkey
@@ -82,7 +83,7 @@ listen = {
 
 ## Cisco IOS: TACACS+ via IPv6
 
-```
+```text
 ! Configure TACACS+ server via IPv6 address
 
 tacacs server IPV6_TACACS
@@ -110,7 +111,7 @@ show tacacs
 
 ## Cisco NX-OS: TACACS+ IPv6
 
-```
+```text
 ! NX-OS TACACS+ with IPv6
 
 tacacs-server host 2001:db8::tacacs key mykey
@@ -132,7 +133,7 @@ show aaa authentication login ascii-authentication
 
 ## Juniper Junos: TACACS+ IPv6
 
-```
+```text
 # Juniper configuration for IPv6 TACACS+
 
 set system authentication-order [ tacplus password ]
@@ -166,7 +167,7 @@ show system tacplus statistics
 
 ## Arista EOS: TACACS+ IPv6
 
-```
+```text
 ! Arista EOS TACACS+ configuration
 
 tacacs-server host 2001:db8::tacacs key 7 <encrypted-key>
@@ -189,8 +190,8 @@ show aaa methods authentication
 
 ## TACACS+ Authorization for IPv6 Management Commands
 
-```
-# tac_plus.conf — Command authorization
+```text
+# tac_plus.conf - Command authorization
 user = netops {
     login = cleartext "netopspass"
 
@@ -224,7 +225,7 @@ user = netops {
 
 ```bash
 #!/bin/bash
-# test-tacacs-ipv6.sh — Verify TACACS+ reachability over IPv6
+# test-tacacs-ipv6.sh - Verify TACACS+ reachability over IPv6
 
 TACACS_SERVER="2001:db8::tacacs"
 TACACS_PORT=49
@@ -249,4 +250,4 @@ journalctl -u tacacs+ | grep -i "error\|fail" | tail -5
 
 ## Conclusion
 
-TACACS+ works over IPv6 with minimal configuration changes — the protocol itself is transport-agnostic. Configure `tac_plus` to listen on `::` (all IPv6 addresses) and define NAS clients by their IPv6 addresses. On Cisco IOS/NX-OS, use `address ipv6` in the `tacacs server` block; on Juniper, specify IPv6 in `tacplus-server`. Always configure a backup TACACS+ server and a local fallback (`local` in the AAA method list) to prevent lockout during network failures. Use `source-interface` or `source-address` to ensure TACACS+ packets originate from the management IPv6 address that the server expects.
+TACACS+ works over IPv6 with minimal configuration changes - the protocol itself is transport-agnostic. Configure `tac_plus` to listen on `::` (all IPv6 addresses) and define NAS clients by their IPv6 addresses. On Cisco IOS/NX-OS, use `address ipv6` in the `tacacs server` block; on Juniper, specify IPv6 in `tacplus-server`. Always configure a backup TACACS+ server and a local fallback (`local` in the AAA method list) to prevent lockout during network failures. Use `source-interface` or `source-address` to ensure TACACS+ packets originate from the management IPv6 address that the server expects.

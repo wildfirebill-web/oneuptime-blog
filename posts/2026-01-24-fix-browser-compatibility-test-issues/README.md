@@ -38,6 +38,7 @@ flowchart TD
 
 ```python
 # test_brittle_locators.py
+
 # BAD: These locators break easily
 
 from selenium import webdriver

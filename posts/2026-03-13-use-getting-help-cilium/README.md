@@ -24,6 +24,7 @@ The most efficient path to help almost always starts with a `cilium status` and 
 
 ```bash
 # Check overall Cilium health
+
 cilium status
 
 # Get verbose status with component details

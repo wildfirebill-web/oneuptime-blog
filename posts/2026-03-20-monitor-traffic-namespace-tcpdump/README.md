@@ -20,6 +20,7 @@ tcpdump can be run inside a network namespace using `ip netns exec`, capturing o
 
 ```bash
 # Capture all traffic on all interfaces inside ns1
+
 ip netns exec ns1 tcpdump -i any
 
 # Capture traffic on a specific interface inside the namespace

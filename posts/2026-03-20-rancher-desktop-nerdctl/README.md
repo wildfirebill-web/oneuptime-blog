@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, nerdctl, containerd, Containers, CLI
+Tags: Rancher Desktop, nerdctl, Containerd, Containers, CLI
 
 Description: Use the nerdctl CLI (containerd CLI) with Rancher Desktop to manage containers and images with Docker-compatible commands.
 
@@ -30,6 +30,7 @@ Rancher Desktop simplifies local Kubernetes and container development by providi
 
 ```bash
 # Verify Rancher Desktop is installed and running
+
 rdctl version
 
 # Check Kubernetes cluster status

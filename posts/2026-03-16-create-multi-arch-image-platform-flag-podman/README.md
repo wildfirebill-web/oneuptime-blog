@@ -26,6 +26,7 @@ CMD ["sh", "-c", "echo Running on $(uname -m)"]
 EOF
 
 # Build for AMD64 and ARM64 in one command
+
 podman build \
   --platform linux/amd64,linux/arm64 \
   --manifest myapp:latest \

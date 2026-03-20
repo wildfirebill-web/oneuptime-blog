@@ -87,6 +87,7 @@ def quantize_model_for_edge(saved_model_path: str, output_path: str) -> None:
 
 
 # Example usage
+
 quantize_model_for_edge(
     saved_model_path="./models/resnet50",
     output_path="./models/resnet50_int8.tflite"

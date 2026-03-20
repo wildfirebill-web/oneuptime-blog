@@ -50,6 +50,7 @@ You can verify that fsGroup correctly applies by checking file ownership:
 
 ```bash
 # Exec into the pod
+
 kubectl exec -it fsgroup-demo -- sh
 
 # Check the group ownership

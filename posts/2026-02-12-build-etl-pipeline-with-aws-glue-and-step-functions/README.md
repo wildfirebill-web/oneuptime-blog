@@ -113,6 +113,7 @@ Here's where the transformation happens. Glue ETL jobs run PySpark under the hoo
 
 ```python
 # glue-scripts/transform_events.py
+
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions

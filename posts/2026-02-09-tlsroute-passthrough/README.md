@@ -22,6 +22,7 @@ Start with simple SNI-based routing to a backend service.
 
 ```yaml
 # tlsroute-basic.yaml
+
 apiVersion: gateway.networking.k8s.io/v1alpha2
 kind: TLSRoute
 metadata:

@@ -457,6 +457,7 @@ First, ensure bpftool is installed on your system:
 
 ```bash
 # On Ubuntu/Debian - install from kernel tools package
+
 # The package name includes the kernel version
 sudo apt-get install linux-tools-$(uname -r) linux-tools-common
 

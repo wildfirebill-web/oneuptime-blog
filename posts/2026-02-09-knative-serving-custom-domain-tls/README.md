@@ -16,6 +16,7 @@ Install Knative Serving components:
 
 ```bash
 # Install Knative Serving CRDs
+
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.12.0/serving-crds.yaml
 
 # Install Knative Serving core

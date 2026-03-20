@@ -33,6 +33,7 @@ locals {
 }
 
 # Number converts to string when assigned to a string argument
+
 resource "aws_ssm_parameter" "port" {
   name  = "/app/port"
   type  = "String"

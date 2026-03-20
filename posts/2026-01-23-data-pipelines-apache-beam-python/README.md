@@ -41,6 +41,7 @@ Install Apache Beam with common optional dependencies for running locally and co
 
 ```bash
 # Basic installation
+
 pip install apache-beam
 
 # With Google Cloud Dataflow support

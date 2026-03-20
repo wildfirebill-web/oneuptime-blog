@@ -26,6 +26,7 @@ ztunnel exposes metrics on port 15020. These are primarily L4 (TCP) metrics sinc
 
 ```bash
 # Port-forward to a ztunnel pod's metrics endpoint
+
 kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=ztunnel -o jsonpath='{.items[0].metadata.name}') 15020:15020
 
 # Fetch metrics

@@ -16,6 +16,7 @@ When you switch workspaces, Terraform changes which state file it uses. But it d
 
 ```bash
 # These two commands use the exact same variable values
+
 terraform workspace select dev
 terraform plan
 # Same variables as...

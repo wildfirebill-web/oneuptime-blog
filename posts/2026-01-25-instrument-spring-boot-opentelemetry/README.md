@@ -26,6 +26,7 @@ The fastest way to instrument a Spring Boot application is with the OpenTelemetr
 
 ```bash
 # Download the latest OpenTelemetry Java agent
+
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 ```
@@ -406,7 +407,7 @@ public Sampler sampler() {
 }
 ```
 
-### Resource Attributes
+Resource Attributes
 
 Add deployment context to all your telemetry:
 

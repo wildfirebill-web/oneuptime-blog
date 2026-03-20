@@ -101,6 +101,7 @@ For zero-downtime deployments, set maxUnavailable to 0. This ensures all existin
 
 ```yaml
 # Zero-downtime configuration - never reduce capacity below current
+
 strategy:
   type: RollingUpdate
   rollingUpdate:

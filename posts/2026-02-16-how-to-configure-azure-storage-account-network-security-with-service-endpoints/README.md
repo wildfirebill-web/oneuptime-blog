@@ -33,6 +33,7 @@ A service endpoint extends your virtual network's identity to the Azure Storage 
 
 ```bash
 # Enable the Microsoft.Storage service endpoint on a subnet
+
 # This tells Azure to route storage traffic through the backbone
 az network vnet subnet update \
   --resource-group myResourceGroup \

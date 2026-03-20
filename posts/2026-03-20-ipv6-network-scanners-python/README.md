@@ -1,4 +1,4 @@
-# How to Build IPv6 Network Scanners in Python
+# How to Build IPv6 Network Scanners in Python - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,13 @@ Description: Build IPv6 network scanners in Python using ICMPv6 ping sweeps, NDP
 
 ## IPv6 Scanning Challenges
 
-```
-IPv4 scanning: 254 hosts per /24 — trivial to sweep
-IPv6 scanning: 18 quintillion addresses per /64 — impossible to brute-force
+```text
+IPv4 scanning: 254 hosts per /24 - trivial to sweep
+IPv6 scanning: 18 quintillion addresses per /64 - impossible to brute-force
 
 IPv6 discovery methods:
-1. NDP neighbor table (passive — see who the router knows)
-2. Multicast ping (ff02::1 — all nodes on segment)
+1. NDP neighbor table (passive - see who the router knows)
+2. Multicast ping (ff02::1 - all nodes on segment)
 3. DNS PTR records (ip6.arpa zone walking)
 4. Service-specific multicast groups (ff02::fb for mDNS)
 5. DHCPv6 lease database
@@ -63,6 +63,7 @@ def read_ndp_table(interface: str = None) -> list[dict]:
     return neighbors
 
 # Display results
+
 neighbors = read_ndp_table()
 print(f"Found {len(neighbors)} IPv6 neighbors:")
 for n in neighbors:
@@ -208,4 +209,4 @@ for host in hosts[:2]:
 
 ## Conclusion
 
-IPv6 network scanning cannot use traditional sequential address sweeps due to the enormous address space of a /64. Effective IPv6 host discovery uses: NDP neighbor table inspection (`ip -6 neigh show`) for hosts already known to the router, multicast ping to `ff02::1` for all-nodes discovery on the local segment, EUI-64 prediction when device MAC addresses are known, and DNS AAAA/PTR record queries for service hosts. Build Python scanners with `subprocess` for NDP table reading, Scapy for multicast probes, and `ipaddress` for address manipulation. Always obtain proper authorization before scanning networks — IPv6 multicast probes are detectable by SIEM systems.
+IPv6 network scanning cannot use traditional sequential address sweeps due to the enormous address space of a /64. Effective IPv6 host discovery uses: NDP neighbor table inspection (`ip -6 neigh show`) for hosts already known to the router, multicast ping to `ff02::1` for all-nodes discovery on the local segment, EUI-64 prediction when device MAC addresses are known, and DNS AAAA/PTR record queries for service hosts. Build Python scanners with `subprocess` for NDP table reading, Scapy for multicast probes, and `ipaddress` for address manipulation. Always obtain proper authorization before scanning networks - IPv6 multicast probes are detectable by SIEM systems.

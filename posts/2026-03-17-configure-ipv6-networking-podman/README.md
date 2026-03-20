@@ -18,6 +18,7 @@ As IPv6 adoption grows, containerized applications need IPv6 connectivity. Podma
 
 ```bash
 # Create a network with IPv6 enabled
+
 podman network create \
   --ipv6 \
   --subnet fd00:dead:beef::/64 \

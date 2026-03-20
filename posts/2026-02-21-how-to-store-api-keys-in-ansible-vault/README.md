@@ -20,6 +20,7 @@ Structure your vault files to group API keys logically:
 
 ```yaml
 # group_vars/production/vault.yml (before encryption)
+
 # All API keys for the production environment
 ---
 # Payment processing

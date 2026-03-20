@@ -16,6 +16,7 @@ The standard resource attributes defined by the OpenTelemetry semantic conventio
 
 ```yaml
 # Essential resource attributes
+
 service.name: "checkout-service"         # required, identifies the service
 service.version: "2.4.1"                 # version of the deployed code
 service.namespace: "ecommerce"           # logical grouping of services

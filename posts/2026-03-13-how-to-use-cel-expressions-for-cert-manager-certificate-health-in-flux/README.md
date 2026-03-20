@@ -285,6 +285,7 @@ When a certificate health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization certificates
 
 # Check Certificate status

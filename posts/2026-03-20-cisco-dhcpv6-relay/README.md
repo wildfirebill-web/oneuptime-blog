@@ -20,7 +20,7 @@ Configure Cisco IOS as a DHCPv6 relay agent to forward DHCPv6 requests from clie
 
 ### Basic IPv6 Setup
 
-```
+```text
 ! Always start with enabling IPv6 routing globally
 Router(config)# ipv6 unicast-routing
 
@@ -32,7 +32,7 @@ Router(config-if)# no shutdown
 
 ### Feature-Specific Configuration
 
-```
+```text
 ! Static route example
 Router(config)# ipv6 route 2001:db8:remote::/48 2001:db8:wan::254
 
@@ -55,7 +55,7 @@ Router(config-if)# ipv6 dhcp server IPV6-POOL
 
 ## Verification Commands
 
-```
+```text
 ! Show IPv6 addresses
 Router# show ipv6 interface brief
 
@@ -77,7 +77,7 @@ Router# traceroute ipv6 2001:db8::1 source GigabitEthernet0/1
 
 ## Debug Commands
 
-```
+```text
 ! Debug IPv6 packet processing
 Router# debug ipv6 packet
 

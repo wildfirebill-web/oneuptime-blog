@@ -32,6 +32,7 @@ Start by creating a stream with an appropriate number of shards. Each shard hand
 
 ```bash
 # Create a Kinesis stream with 2 shards
+
 aws kinesis create-stream \
   --stream-name clickstream-events \
   --shard-count 2

@@ -60,6 +60,7 @@ volumes:
 
 ```python
 # app/main.py
+
 from fastapi import FastAPI
 from sqlalchemy.ext.asyncio import create_async_engine
 import os
@@ -85,7 +86,7 @@ async def root():
 
 ## Requirements
 
-```
+```text
 # app/requirements.txt
 fastapi>=0.110.0
 uvicorn[standard]>=0.27.0

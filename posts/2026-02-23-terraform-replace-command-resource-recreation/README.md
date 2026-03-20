@@ -18,6 +18,7 @@ The `-replace` flag tells Terraform to destroy a specific resource and create a 
 
 ```bash
 # Basic syntax
+
 terraform apply -replace="aws_instance.web"
 ```
 

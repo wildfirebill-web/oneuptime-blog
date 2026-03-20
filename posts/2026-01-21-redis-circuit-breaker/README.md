@@ -218,6 +218,7 @@ class CircuitOpenError(Exception):
     pass
 
 # Usage
+
 r = redis.Redis()
 circuit = CircuitBreaker(r, "user-service")
 

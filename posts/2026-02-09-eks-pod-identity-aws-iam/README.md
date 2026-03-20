@@ -22,6 +22,7 @@ Ensure your cluster supports Pod Identity:
 
 ```bash
 # Check EKS cluster version (requires 1.24+)
+
 aws eks describe-cluster --name my-cluster --query 'cluster.version'
 
 # Verify Pod Identity add-on is available

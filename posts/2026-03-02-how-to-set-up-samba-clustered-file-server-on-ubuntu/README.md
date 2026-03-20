@@ -29,6 +29,7 @@ Install on both nodes:
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Samba, CTDB, and Winbind

@@ -23,6 +23,7 @@ First, provision the backend resources manually or via a bootstrap OpenTofu conf
 
 ```hcl
 # bootstrap/main.tf
+
 resource "aws_s3_bucket" "tfstate" {
   bucket = "mycompany-opentofu-state"
   force_destroy = false
@@ -91,7 +92,7 @@ tofu init -migrate-state
 
 OpenTofu will prompt:
 
-```
+```text
 Do you want to copy existing state to the new backend?
 
   Pre-existing state was found while migrating the previous "local" backend
@@ -185,4 +186,4 @@ terraform {
 
 ## Conclusion
 
-Migrating from a local to a remote backend is a critical step in operationalizing OpenTofu for team use. The migration is safe and straightforward — OpenTofu handles state copying automatically, and the result is a collaborative, locking-enabled workflow ready for production use.
+Migrating from a local to a remote backend is a critical step in operationalizing OpenTofu for team use. The migration is safe and straightforward - OpenTofu handles state copying automatically, and the result is a collaborative, locking-enabled workflow ready for production use.

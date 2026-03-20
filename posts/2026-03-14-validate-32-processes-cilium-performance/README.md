@@ -63,6 +63,7 @@ done
 ```bash
 #!/bin/bash
 # validate-32p-consistency.sh
+
 RUNS=10
 RESULTS=()
 

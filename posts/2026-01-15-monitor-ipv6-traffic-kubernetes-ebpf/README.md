@@ -97,6 +97,7 @@ eBPF features require Linux kernel 4.15+ for basic functionality, 5.x+ for advan
 
 ```bash
 # Check kernel version on nodes
+
 kubectl get nodes -o wide
 
 # SSH to a node and verify eBPF support

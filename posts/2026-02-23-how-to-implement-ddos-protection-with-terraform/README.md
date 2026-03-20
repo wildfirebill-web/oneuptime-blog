@@ -26,6 +26,7 @@ Shield Standard is free and automatically enabled for all AWS accounts. It prote
 
 ```hcl
 # Enable Shield Advanced subscription
+
 resource "aws_shield_subscription" "main" {
   auto_renew = "ENABLED"
 }

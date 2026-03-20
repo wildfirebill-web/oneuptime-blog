@@ -34,6 +34,7 @@ The Live Stream API acts as a cloud-native live encoder. It receives your live f
 
 ```bash
 # Enable required APIs
+
 gcloud services enable livestream.googleapis.com
 gcloud services enable storage.googleapis.com
 

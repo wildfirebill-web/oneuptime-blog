@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, VPC Peering, IPv6, Route Exchange, Dual-Stack, Internal
+Tags: GCP, VPC Peering, IPv6, Route Exchange, Dual-Stack, Internals
 
 Description: Configure GCP VPC peering to exchange IPv6 routes between peered VPC networks for private IPv6 connectivity.
 
@@ -20,6 +20,7 @@ GCP VPC Peering IPv6 enables private IPv6 connectivity between cloud resources a
 
 ```bash
 # Check VPC has IPv6 CIDR
+
 gcloud compute networks subnets list --filter='ipv6AccessType=INTERNAL OR ipv6AccessType=EXTERNAL'
 ```
 

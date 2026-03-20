@@ -47,6 +47,7 @@ Make sure your Azure Stack HCI cluster meets the networking requirements for AKS
 
 ```powershell
 # Verify the cluster has enough resources
+
 Get-ClusterNode | ForEach-Object {
     $node = $_
     $memory = Get-CimInstance -ClassName Win32_ComputerSystem -ComputerName $node.Name

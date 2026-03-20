@@ -38,6 +38,7 @@ You can create a pool that uses only low-priority nodes or a mix of dedicated an
 
 ```bash
 # Create a pool with only low-priority nodes
+
 az batch pool create \
   --id low-pri-pool \
   --vm-size Standard_D4s_v3 \

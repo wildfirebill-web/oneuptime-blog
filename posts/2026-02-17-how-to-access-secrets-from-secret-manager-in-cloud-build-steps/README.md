@@ -27,6 +27,7 @@ First, store your secret in Secret Manager:
 
 ```bash
 # Create a new secret in Secret Manager
+
 gcloud secrets create my-api-key \
   --replication-policy="automatic"
 

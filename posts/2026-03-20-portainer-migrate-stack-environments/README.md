@@ -1,4 +1,4 @@
-# How to Migrate a Stack Between Environments in Portainer
+# How to Migrate a Stack Between Environments in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to migrate Docker Compose stacks from one environment to 
 
 ## Introduction
 
-Moving a stack between environments — from development to staging, staging to production, or from one Docker host to another — requires migrating both the stack configuration and any persistent data in volumes. Portainer doesn't have a built-in "move stack" feature, but the process is straightforward: export the configuration, transfer the data, and redeploy in the target environment. This guide covers the complete migration workflow.
+Moving a stack between environments - from development to staging, staging to production, or from one Docker host to another - requires migrating both the stack configuration and any persistent data in volumes. Portainer doesn't have a built-in "move stack" feature, but the process is straightforward: export the configuration, transfer the data, and redeploy in the target environment. This guide covers the complete migration workflow.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Moving a stack between environments — from development to staging, staging to 
 
 ## Migration Overview
 
-```
+```bash
 Source Environment          Target Environment
 ────────────────────        ────────────────────
 1. Export stack config  →   3. Import config
@@ -40,6 +40,7 @@ Or via CLI on the source host:
 
 ```bash
 # Export using docker compose config (shows resolved variables):
+
 cd /opt/stacks/myapp/
 docker compose config > myapp-stack-resolved.yml
 
@@ -112,7 +113,7 @@ docker run --rm -v myapp_postgres_data:/vol alpine ls -la /vol
 3. Paste the exported Compose YAML.
 4. Configure environment variables for the target environment:
 
-```
+```text
 # Source (staging) values:
 DB_PASSWORD=staging_password
 API_URL=https://staging-api.example.com
@@ -145,7 +146,7 @@ docker exec myapp_postgres_1 psql -U appuser -d myapp -c "SELECT count(*) FROM u
 Update configurations that differ between environments:
 
 ```yaml
-# docker-compose.yml — use variables for environment-specific values
+# docker-compose.yml - use variables for environment-specific values
 services:
   nginx:
     image: nginx:alpine
@@ -164,4 +165,4 @@ Set correct values in Portainer's environment variables for each stack.
 
 ## Conclusion
 
-Migrating a stack between Portainer environments requires three components: the Compose YAML configuration, environment-specific variable values, and volume data backups. Export the Compose file from the source, backup volumes using a temporary Alpine container, transfer both to the target host, restore volumes before deploying, and then create the stack in Portainer with target-appropriate environment variables. For stacks deployed from Git, only the volume data and environment variable changes are needed — the Compose file is already versioned in the repository.
+Migrating a stack between Portainer environments requires three components: the Compose YAML configuration, environment-specific variable values, and volume data backups. Export the Compose file from the source, backup volumes using a temporary Alpine container, transfer both to the target host, restore volumes before deploying, and then create the stack in Portainer with target-appropriate environment variables. For stacks deployed from Git, only the volume data and environment variable changes are needed - the Compose file is already versioned in the repository.

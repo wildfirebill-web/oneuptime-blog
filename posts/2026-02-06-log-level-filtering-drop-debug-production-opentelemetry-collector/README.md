@@ -16,6 +16,7 @@ The simplest setup drops all DEBUG and TRACE logs at the collector. Here is the 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

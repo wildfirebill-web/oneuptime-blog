@@ -18,6 +18,7 @@ Setting `--network none` creates a container with only a loopback interface and 
 
 ```bash
 # Run a container with no network
+
 podman run --rm --network none \
   docker.io/library/alpine:latest ip addr show
 # Output: Only the loopback interface (lo) is shown

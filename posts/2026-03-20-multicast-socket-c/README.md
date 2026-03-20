@@ -32,7 +32,7 @@ Multicast addresses occupy the Class D range: `224.0.0.0` – `239.255.255.255`.
 int main(void) {
     int fd = socket(AF_INET, SOCK_DGRAM, 0);
 
-    /* Set TTL — 1 keeps traffic on the local subnet */
+    /* Set TTL - 1 keeps traffic on the local subnet */
     unsigned char ttl = 1;
     setsockopt(fd, IPPROTO_IP, IP_MULTICAST_TTL, &ttl, sizeof(ttl));
 
@@ -142,10 +142,11 @@ gcc -Wall -o mcast_recv mcast_recv.c
 gcc -Wall -o mcast_send mcast_send.c
 
 # Start receiver first, then sender
+
 ./mcast_recv &
 ./mcast_send
 ```
 
 ## Conclusion
 
-IPv4 multicast requires a UDP socket (`SOCK_DGRAM`). Senders use `sendto()` with the multicast group address as the destination; no special socket options are required for sending. Set `IP_MULTICAST_TTL` to control how far packets travel — TTL 1 is local subnet only. Receivers bind to `INADDR_ANY` on the multicast port and join the group with `IP_ADD_MEMBERSHIP` using an `ip_mreq` struct that specifies the group address and local interface. Set `SO_REUSEADDR` so multiple processes on the same host can join the same group. Leave the group with `IP_DROP_MEMBERSHIP` before closing the socket to send an IGMP leave message to the router.
+IPv4 multicast requires a UDP socket (`SOCK_DGRAM`). Senders use `sendto()` with the multicast group address as the destination; no special socket options are required for sending. Set `IP_MULTICAST_TTL` to control how far packets travel - TTL 1 is local subnet only. Receivers bind to `INADDR_ANY` on the multicast port and join the group with `IP_ADD_MEMBERSHIP` using an `ip_mreq` struct that specifies the group address and local interface. Set `SO_REUSEADDR` so multiple processes on the same host can join the same group. Leave the group with `IP_DROP_MEMBERSHIP` before closing the socket to send an IGMP leave message to the router.

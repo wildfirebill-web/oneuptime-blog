@@ -61,6 +61,7 @@ Before enabling virtual nodes, you need:
 
 ```bash
 # Verify Azure CLI version
+
 az --version
 
 # Update if needed

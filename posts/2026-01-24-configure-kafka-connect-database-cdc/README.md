@@ -59,6 +59,7 @@ Kafka Connect comes bundled with Kafka. Create a dedicated configuration:
 
 ```bash
 # Create Connect configuration directory
+
 sudo mkdir -p /opt/kafka/config/connect
 
 # Create worker properties file

@@ -35,6 +35,7 @@ The prometheus_client library provides everything you need to expose metrics. St
 
 ```python
 # metrics_basic.py
+
 # Basic Prometheus metrics setup for Python
 from prometheus_client import Counter, Gauge, Histogram, Summary
 from prometheus_client import start_http_server, REGISTRY

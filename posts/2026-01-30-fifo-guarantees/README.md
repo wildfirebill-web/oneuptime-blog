@@ -99,6 +99,7 @@ Group messages by the entity they affect. This is the most common approach.
 
 ```python
 # Entity-based partitioning example
+
 # All messages for the same user go to the same partition
 
 import hashlib

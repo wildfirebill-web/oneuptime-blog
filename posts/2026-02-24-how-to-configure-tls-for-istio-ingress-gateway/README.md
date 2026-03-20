@@ -277,6 +277,7 @@ Test the gateway with curl:
 
 ```bash
 # Basic TLS verification
+
 curl -v https://app.example.com
 
 # Check certificate details

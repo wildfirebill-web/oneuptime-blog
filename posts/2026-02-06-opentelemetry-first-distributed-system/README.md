@@ -35,6 +35,7 @@ Create a basic collector configuration that receives OTLP data and exports it to
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

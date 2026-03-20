@@ -60,6 +60,7 @@ Configure the server in application.yml:
 
 ```yaml
 # Eureka server configuration
+
 server:
   port: 8761
 

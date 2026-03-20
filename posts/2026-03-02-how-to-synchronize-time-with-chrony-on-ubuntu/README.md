@@ -25,6 +25,7 @@ Ubuntu 20.04 and later use `systemd-timesyncd` by default. chrony is worth insta
 
 ```bash
 # Stop and disable systemd-timesyncd first
+
 sudo systemctl stop systemd-timesyncd
 sudo systemctl disable systemd-timesyncd
 

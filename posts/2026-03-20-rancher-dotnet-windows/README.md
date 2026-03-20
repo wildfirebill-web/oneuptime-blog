@@ -1,4 +1,4 @@
-# How to Deploy .NET Applications on Windows Nodes in Rancher
+# How to Deploy .NET Applications on Windows Nodes in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Windows nodes in Rancher can run .NET applications across the entire .NET ecosys
 
 ```dockerfile
 # .NET Framework 4.8 - For legacy applications
+
 FROM mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022
 # OR
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022

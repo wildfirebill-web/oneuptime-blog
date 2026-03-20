@@ -44,6 +44,7 @@ Python's `xml.etree.ElementTree` module is included in the standard library and 
 
 ```python
 # xml_reader.py
+
 # Reading and parsing XML files with ElementTree
 import xml.etree.ElementTree as ET
 

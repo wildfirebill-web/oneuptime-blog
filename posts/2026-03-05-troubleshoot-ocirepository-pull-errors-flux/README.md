@@ -20,6 +20,7 @@ Start every troubleshooting session with these commands to gather information.
 
 ```bash
 # Check the OCIRepository status and conditions
+
 flux get sources oci -A
 
 # Get detailed status including error messages

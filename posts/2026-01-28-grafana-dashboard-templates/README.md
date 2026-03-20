@@ -78,6 +78,7 @@ Variables appear as dropdowns at the top of dashboards. They are referenced in q
 
 ```promql
 # Prometheus query with variables
+
 rate(http_requests_total{
   environment="$environment",
   service="$service",

@@ -52,6 +52,7 @@ First, create a topic exchange and bind queues with routing patterns.
 import pika
 
 # Connect to RabbitMQ
+
 connection = pika.BlockingConnection(
     pika.ConnectionParameters('localhost')
 )

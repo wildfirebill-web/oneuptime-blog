@@ -27,6 +27,7 @@ Create the authentication secret first.
 
 ```bash
 # Create a secret with ChartMuseum basic auth credentials
+
 kubectl create secret generic chartmuseum-creds \
   --namespace flux-system \
   --from-literal=username=admin \

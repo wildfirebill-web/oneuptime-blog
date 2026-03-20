@@ -142,6 +142,7 @@ resource "aws_lambda_function" "functions" {
 }
 
 # SQS → Lambda event source mapping
+
 resource "aws_lambda_event_source_mapping" "sqs_processor" {
   event_source_arn = aws_sqs_queue.main.arn
   function_name    = aws_lambda_function.functions["event_processor"].arn
@@ -217,4 +218,4 @@ resource "aws_cloudwatch_event_target" "order_processor" {
 
 ## Summary
 
-A serverless application platform uses DynamoDB for low-latency data storage with point-in-time recovery, SQS with dead letter queues for reliable message processing, Lambda functions for compute with X-Ray tracing, HTTP API Gateway with CORS configuration, and EventBridge for event-driven routing between services. Configure SQS `ReportBatchItemFailures` on Lambda event source mappings to enable partial batch failure handling — failed messages return to the queue for retry rather than blocking the entire batch.
+A serverless application platform uses DynamoDB for low-latency data storage with point-in-time recovery, SQS with dead letter queues for reliable message processing, Lambda functions for compute with X-Ray tracing, HTTP API Gateway with CORS configuration, and EventBridge for event-driven routing between services. Configure SQS `ReportBatchItemFailures` on Lambda event source mappings to enable partial batch failure handling - failed messages return to the queue for retry rather than blocking the entire batch.

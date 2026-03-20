@@ -18,6 +18,7 @@ When you attach a secret to a container in Podman, it is mounted as a file under
 
 ```bash
 # Create a secret
+
 echo -n "my-secret-password" | podman secret create db_password -
 
 # Mount the secret as a file in the container

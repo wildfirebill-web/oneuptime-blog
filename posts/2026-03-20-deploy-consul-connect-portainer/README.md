@@ -27,6 +27,7 @@ Create a new stack in Portainer for the Consul server cluster:
 
 ```yaml
 # docker-compose.yml for Consul Server
+
 version: "3.8"
 
 services:

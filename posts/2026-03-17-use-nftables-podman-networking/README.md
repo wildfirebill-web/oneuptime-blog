@@ -18,6 +18,7 @@ Modern Linux distributions are migrating from iptables to nftables as the defaul
 
 ```bash
 # Verify nftables is available
+
 nft --version
 
 # List existing rulesets

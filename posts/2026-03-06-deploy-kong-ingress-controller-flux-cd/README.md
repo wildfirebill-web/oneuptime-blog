@@ -29,6 +29,7 @@ First, define a HelmRepository source that points to the official Kong Helm char
 
 ```yaml
 # clusters/my-cluster/sources/kong-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

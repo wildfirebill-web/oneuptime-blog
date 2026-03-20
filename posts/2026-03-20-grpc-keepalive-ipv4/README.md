@@ -10,7 +10,7 @@ Description: Learn how to configure gRPC keepalive parameters to detect dead IPv
 
 Firewalls and NAT devices silently drop idle TCP connections after a timeout (typically 60–300 seconds). gRPC uses HTTP/2 PING frames as a keepalive mechanism to probe the connection without sending application data.
 
-```
+```text
 Client                        Server
   │                               │
   │──── HTTP/2 PING ─────────────►│
@@ -121,4 +121,4 @@ s := grpc.NewServer(
 
 ## Conclusion
 
-Set `keepalive_time_ms` (client) and the server `Time` parameter to a value shorter than your network's firewall idle timeout — 30 seconds is a safe default. Enable `PermitWithoutStream` so the connection stays alive even when there are no active RPCs. Configure `MaxConnectionAge` on the server to periodically force clients to reconnect, which rebalances connections after pod restarts. Mismatched keepalive policies cause `ENHANCE_YOUR_CALM (too_many_pings)` errors — coordinate client and server settings.
+Set `keepalive_time_ms` (client) and the server `Time` parameter to a value shorter than your network's firewall idle timeout - 30 seconds is a safe default. Enable `PermitWithoutStream` so the connection stays alive even when there are no active RPCs. Configure `MaxConnectionAge` on the server to periodically force clients to reconnect, which rebalances connections after pod restarts. Mismatched keepalive policies cause `ENHANCE_YOUR_CALM (too_many_pings)` errors - coordinate client and server settings.

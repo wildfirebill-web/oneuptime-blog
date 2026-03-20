@@ -36,6 +36,7 @@ First, create a password hash. Never store the actual password in plain text in 
 
 ```bash
 # Generate a PBKDF2 password hash
+
 grub2-mkpasswd-pbkdf2
 
 # You will be prompted to enter and confirm a password

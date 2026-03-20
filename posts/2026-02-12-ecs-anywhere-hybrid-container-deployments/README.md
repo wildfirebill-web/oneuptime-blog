@@ -61,6 +61,7 @@ Create a cluster that will manage both cloud and external instances.
 
 ```bash
 # Create a cluster for hybrid workloads
+
 aws ecs create-cluster \
   --cluster-name hybrid-cluster \
   --settings "name=containerInsights,value=enabled"

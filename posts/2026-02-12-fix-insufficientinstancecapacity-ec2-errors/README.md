@@ -38,6 +38,7 @@ Here's how you can specify the AZ when launching an instance with the AWS CLI:
 
 ```bash
 # Launch in a specific availability zone (us-east-1b instead of us-east-1a)
+
 aws ec2 run-instances \
   --image-id ami-0abcdef1234567890 \
   --instance-type m5.xlarge \

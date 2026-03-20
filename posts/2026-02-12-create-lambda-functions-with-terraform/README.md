@@ -20,6 +20,7 @@ First, create the IAM role that Lambda will use when executing your function:
 
 ```hcl
 # IAM role that Lambda assumes during execution
+
 resource "aws_iam_role" "lambda_exec" {
   name = "my-lambda-execution-role"
 

@@ -50,6 +50,7 @@ Before configuring notebooks, ensure your cluster has:
 
 ```bash
 # Check Kubeflow installation
+
 kubectl get pods -n kubeflow | grep notebook
 
 # Verify the notebook controller is running
@@ -273,7 +274,7 @@ spec:
   volumeName: shared-datasets
 ```
 
-## Resource Management
+Resource Management
 
 ### Setting Resource Quotas
 

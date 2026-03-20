@@ -8,7 +8,7 @@ Description: Learn how to use Google Cloud Artifact Registry as an OCI registry 
 
 ## Introduction
 
-Google Cloud Artifact Registry supports OCI artifacts alongside Docker images and other package formats. For GCP-centric organizations, it provides IAM-based authentication, multi-region repositories, CMEK encryption, and VPC Service Controls — making it a natural choice for OpenTofu provider and module distribution.
+Google Cloud Artifact Registry supports OCI artifacts alongside Docker images and other package formats. For GCP-centric organizations, it provides IAM-based authentication, multi-region repositories, CMEK encryption, and VPC Service Controls - making it a natural choice for OpenTofu provider and module distribution.
 
 ## Creating Artifact Registry Repositories
 
@@ -38,6 +38,7 @@ resource "google_artifact_registry_repository" "opentofu_modules" {
 }
 
 # Multi-region repository for global access
+
 resource "google_artifact_registry_repository" "opentofu_providers_multiregion" {
   provider = google
 

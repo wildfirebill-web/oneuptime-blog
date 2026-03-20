@@ -1,13 +1,12 @@
----
-title: "How to Use Set Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, collections
-description: "Learn how to use setintersection, setproduct, setsubtract, and setunion functions in OpenTofu for set operations."
----
-
 # How to Use Set Functions in OpenTofu
 
-OpenTofu provides four set operation functions — `setintersection`, `setproduct`, `setsubtract`, and `setunion`. These operate on sets (or sets created from lists) and are useful for comparing collections, finding differences, and generating combinations.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Collections
+
+Description: Learn how to use setintersection, setproduct, setsubtract, and setunion functions in OpenTofu for set operations.
+
+OpenTofu provides four set operation functions - `setintersection`, `setproduct`, `setsubtract`, and `setunion`. These operate on sets (or sets created from lists) and are useful for comparing collections, finding differences, and generating combinations.
 
 ## setunion()
 

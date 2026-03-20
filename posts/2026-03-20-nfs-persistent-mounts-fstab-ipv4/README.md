@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, fstab, Persistent Mount, Linux, Automount
+Tags: NFS, IPv4, Fstab, Persistent Mount, Linux, Automount
 
 Description: Add NFS shares to /etc/fstab for automatic mounting at boot, configure appropriate options for reliability, and set up systemd automount as an alternative.
 
 ## Introduction
 
-Adding NFS mounts to `/etc/fstab` makes them mount automatically at boot. This requires careful option selection—if the NFS server is unreachable during boot, a poorly configured fstab entry can cause the system to hang. The `_netdev` and `soft` options prevent this.
+Adding NFS mounts to `/etc/fstab` makes them mount automatically at boot. This requires careful option selection-if the NFS server is unreachable during boot, a poorly configured fstab entry can cause the system to hang. The `_netdev` and `soft` options prevent this.
 
 ## /etc/fstab Entry Format
 
 ```bash
 # Format:
+
 # server:/path  /local/mountpoint  fstype  options  dump  pass
 
 # Basic NFSv4 mount

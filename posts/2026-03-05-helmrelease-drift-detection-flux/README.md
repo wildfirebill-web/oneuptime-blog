@@ -108,6 +108,7 @@ Use the following command to inspect the HelmRelease and look for drift-related 
 
 ```bash
 # Check the HelmRelease status for drift detection information
+
 kubectl get helmrelease my-application -n default -o yaml | grep -A 5 driftDetection
 ```
 

@@ -26,6 +26,7 @@ Most Ubuntu server installations already have OpenSSH. Verify and install if nee
 
 ```bash
 # Check if SSH server is running
+
 sudo systemctl status ssh
 
 # Install if missing

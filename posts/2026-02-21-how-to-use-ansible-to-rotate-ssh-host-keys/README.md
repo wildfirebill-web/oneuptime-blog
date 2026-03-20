@@ -43,6 +43,7 @@ This playbook collects host key information from all servers:
 
 ```yaml
 # audit_host_keys.yml - Audit current SSH host keys
+
 ---
 - name: Audit SSH host keys
   hosts: all

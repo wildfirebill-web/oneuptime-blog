@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, VyOS, IPv4, Network Automation, vyos_config, Open Source Router
+Tags: Ansible, VyOS, IPv4, Network Automation, Vyos_config, Open Source Router
 
 Description: Use the Ansible vyos.vyos.vyos_config module to configure IPv4 interfaces, static routing, and NAT on VyOS routers with set/delete command syntax.
 
@@ -27,6 +27,7 @@ ansible_connection=network_cli
 
 ```yaml
 # configure_vyos_ipv4.yml
+
 ---
 - name: Configure IPv4 on VyOS
   hosts: vyos_routers
@@ -117,4 +118,4 @@ ansible-playbook -i inventory.ini configure_vyos_ipv4.yml
 
 ## Conclusion
 
-`vyos.vyos.vyos_config` uses VyOS `set` and `delete` commands directly, making playbooks readable even for those unfamiliar with Ansible. Commit and save are handled by the module — use `save: yes` to persist configuration to the boot config file. Check mode works fully with VyOS.
+`vyos.vyos.vyos_config` uses VyOS `set` and `delete` commands directly, making playbooks readable even for those unfamiliar with Ansible. Commit and save are handled by the module - use `save: yes` to persist configuration to the boot config file. Check mode works fully with VyOS.

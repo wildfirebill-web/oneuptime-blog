@@ -14,6 +14,7 @@ The `ss` (socket statistics) command is the modern replacement for `netstat`. It
 
 ```bash
 # Basic syntax for detailed TCP info
+
 ss -tin state established
 
 # Essential fields explained:

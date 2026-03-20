@@ -28,6 +28,7 @@ Create the VPC endpoint:
 
 ```bash
 # Create an interface VPC endpoint for API Gateway
+
 aws ec2 create-vpc-endpoint \
   --vpc-id vpc-0abc123def456 \
   --service-name com.amazonaws.us-east-1.execute-api \

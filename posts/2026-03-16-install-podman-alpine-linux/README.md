@@ -26,6 +26,7 @@ Podman is in the Alpine community repository. Ensure it is enabled:
 
 ```bash
 # Check if community repo is enabled
+
 cat /etc/apk/repositories
 
 # If the community line is commented out, enable it

@@ -18,6 +18,7 @@ Your switch port must be configured as a trunk (802.1Q) port that passes the VLA
 
 ```bash
 # Load the 8021q kernel module for VLAN support
+
 sudo modprobe 8021q
 
 # Make it persistent across reboots

@@ -101,6 +101,7 @@ The entries count on the new brick shows files being healed. When it reaches 0 o
 
 ```bash
 # Check volume info shows the new brick
+
 sudo gluster volume info repvol
 
 # Verify all bricks are online

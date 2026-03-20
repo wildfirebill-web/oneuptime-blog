@@ -14,6 +14,7 @@ Terragrunt provides a set of built-in functions that read data from the environm
 
 ```hcl
 # Find the root terragrunt.hcl by walking up the directory tree
+
 include "root" {
   path = find_in_parent_folders()
 }

@@ -39,6 +39,7 @@ The following CLI commands create three ASGs in the same region and resource gro
 
 ```bash
 # Create an ASG for the web tier
+
 az network asg create \
   --resource-group myResourceGroup \
   --name WebServers \

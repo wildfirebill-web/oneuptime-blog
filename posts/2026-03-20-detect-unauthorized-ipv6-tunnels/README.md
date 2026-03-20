@@ -14,6 +14,7 @@ Unauthorized IPv6 tunnels allow attackers to bypass IPv4 security controls or ex
 
 ```bash
 # Detect any IP protocol 41 (6in4, 6to4, ISATAP, SIT)
+
 tcpdump -i eth0 "proto 41" -n -v
 
 # Sample output indicating unauthorized tunnel:
@@ -35,7 +36,7 @@ tcpdump -i eth0 "(proto 41 or proto 47 or (udp port 3544))" -w /tmp/tunnels.pcap
 ## NetFlow / IPFIX Analysis
 
 ```bash
-# Using nfdump — find proto 41 flows
+# Using nfdump - find proto 41 flows
 nfdump -r /var/cache/nfdump/nfcapd.current \
     -o "fmt:%ts %sa %da %pr %byt" \
     "proto 41"
@@ -55,7 +56,7 @@ nfdump -r /var/cache/nfdump/nfcapd.current \
 
 ## Snort / Suricata Rules
 
-```
+```text
 # Suricata rules for tunnel detection
 
 # Detect 6in4 / protocol 41
@@ -77,7 +78,7 @@ alert ip $HOME_NET any -> $EXTERNAL_NET any (msg:"GRE tunnel outbound"; ip_proto
 # List all tunnel interfaces
 ip tunnel show
 
-# Example — unauthorized tunnel found:
+# Example - unauthorized tunnel found:
 # sit1: ipv6/ip  remote 203.0.113.1  local 10.0.5.22  ttl 64
 
 # Check for sit (SIT), gre, ip6tnl, etc.
@@ -90,7 +91,7 @@ ip link show type gretap
 lsmod | grep -E "^(sit|ip_gre|ip6_gre|ip6_tunnel)"
 
 # Find processes using tunnel interfaces
-# (tunnels are created by root — check recent root commands)
+# (tunnels are created by root - check recent root commands)
 last -n 20
 ausearch -c "ip" --start today  # If auditd is running
 
@@ -151,7 +152,7 @@ ISATAP clients query for `isatap.<domain>` to find the router:
 # Capture DNS queries for "isatap"
 tcpdump -i eth0 "port 53" -A | grep -i "isatap"
 
-# On BIND — check query logs for isatap
+# On BIND - check query logs for isatap
 grep -i "isatap" /var/log/named/query.log
 
 # Suricata DNS rule
@@ -160,8 +161,8 @@ alert dns $HOME_NET any -> any 53 (msg:"ISATAP router discovery query"; dns.quer
 
 ## SIEM Detection Query (Splunk)
 
-```
-# Splunk SPL — find protocol 41 flows from NetFlow
+```text
+# Splunk SPL - find protocol 41 flows from NetFlow
 index=netflow proto=41
 | stats count, sum(bytes) as total_bytes by src_ip, dest_ip
 | sort - total_bytes

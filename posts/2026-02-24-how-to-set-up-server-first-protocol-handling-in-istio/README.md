@@ -135,6 +135,7 @@ If you have several server-first services in your cluster, a systematic approach
 
 ```yaml
 # PostgreSQL
+
 apiVersion: v1
 kind: Service
 metadata:

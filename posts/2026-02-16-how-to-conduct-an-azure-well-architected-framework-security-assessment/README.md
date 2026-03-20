@@ -42,6 +42,7 @@ Here is a quick way to check which resources are still using key-based authentic
 
 ```bash
 # List all App Services and check their managed identity status
+
 # This helps identify services that might still rely on connection strings or keys
 az webapp list --query "[].{name:name, resourceGroup:resourceGroup, identity:identity.type}" -o table
 

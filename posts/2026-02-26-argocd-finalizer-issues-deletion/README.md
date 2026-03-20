@@ -44,6 +44,7 @@ If you see this pattern, the ArgoCD finalizer itself is the problem:
 
 ```bash
 # Check the Application's finalizers
+
 kubectl get application my-app -n argocd -o jsonpath='{.metadata.finalizers}'
 # Output: ["resources-finalizer.argocd.argoproj.io"]
 

@@ -42,6 +42,7 @@ Enforce this structure with a contributing guide and use linting to catch deviat
 
 ```bash
 # Install and run terraform fmt to enforce formatting
+
 terraform fmt -check -recursive -diff
 
 # Use tflint for deeper linting
@@ -91,7 +92,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Terraform Plan Output\n\`\`\`\n${truncated}\n\`\`\``
+              body: `## Terraform Plan Output\n```\n${truncated}\n````
             });
 ```
 

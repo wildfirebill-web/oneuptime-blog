@@ -55,6 +55,7 @@ The simplest way to remove Flux:
 
 ```bash
 # Uninstall Flux (with confirmation prompt)
+
 flux uninstall
 ```
 

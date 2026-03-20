@@ -20,6 +20,7 @@ ModSecurity is an open-source web application firewall (WAF) that protects Apach
 
 ```bash
 # Enable EPEL if not already enabled
+
 sudo dnf install -y epel-release
 
 # Install ModSecurity for Apache

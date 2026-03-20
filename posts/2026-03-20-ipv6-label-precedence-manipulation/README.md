@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RFC 6724, Policy Table, Label, Precedence, Linux, Address Selection
+Tags: IPv6, RFC 6724, Policy Table, LABEL, Precedence, Linux, Address Selection
 
 Description: Manipulate IPv6 address selection label and precedence values on Linux to control source address selection and destination sorting for specific traffic patterns.
 
@@ -19,10 +19,11 @@ Labels are used to pair source and destination addresses. Precedence ranks desti
 
 ## Understanding Label Matching
 
-RFC 6724 Rule 6: "Prefer matching label" — if the source address label matches the destination address label, that source-destination pair is preferred.
+RFC 6724 Rule 6: "Prefer matching label" - if the source address label matches the destination address label, that source-destination pair is preferred.
 
 ```bash
 # Default label assignments:
+
 # ::1/128        label 0   (loopback)
 # ::/0           label 1   (global IPv6)
 # ::ffff:0:0/96  label 4   (IPv4-mapped)
@@ -88,15 +89,15 @@ EOF
 
 ```bash
 # Scenario: 3 subnets, traffic must stay within subnet
-# Subnet A: 2001:db8:a::/48 — label 20
-# Subnet B: 2001:db8:b::/48 — label 21
-# Global:   ::/0            — label 1
+# Subnet A: 2001:db8:a::/48 - label 20
+# Subnet B: 2001:db8:b::/48 - label 21
+# Global:   ::/0            - label 1
 
-# Add labels (kernel table — affects source selection)
+# Add labels (kernel table - affects source selection)
 ip addrlabel add prefix 2001:db8:a::/48 label 20
 ip addrlabel add prefix 2001:db8:b::/48 label 21
 
-# gai.conf — affects getaddrinfo destination sorting
+# gai.conf - affects getaddrinfo destination sorting
 cat >> /etc/gai.conf << 'EOF'
 label 2001:db8:a::/48 20
 label 2001:db8:b::/48 21
@@ -117,7 +118,7 @@ EOF
 ip addrlabel list | grep "fc00"
 # prefix fc00::/7 label 13  ← correct
 
-# Global destinations have label 1 — no match with ULA label 13
+# Global destinations have label 1 - no match with ULA label 13
 # So global destinations will not prefer ULA source addresses
 
 # Test: ULA source should NOT be chosen for global destination
@@ -165,7 +166,7 @@ systemctl enable --now ipv6-policy.service
 
 ```bash
 #!/bin/bash
-# test-labels.sh — Verify label assignments and source selection
+# test-labels.sh - Verify label assignments and source selection
 
 echo "=== Kernel label table ==="
 ip addrlabel list
@@ -201,4 +202,4 @@ grep "^label" /etc/gai.conf 2>/dev/null || echo "(using built-in defaults)"
 
 ## Conclusion
 
-Label manipulation is the most powerful aspect of RFC 6724 policy control. By assigning the same label to a source prefix and destination prefix, you force traffic to prefer that source for those destinations. Use `ip addrlabel add prefix <prefix> label <N>` for kernel-level source selection, and add matching `label` entries to `/etc/gai.conf` for userspace `getaddrinfo()` destination sorting. Precedence values in `gai.conf` control absolute destination ordering — raise a prefix's precedence to make it always tried first. Persist kernel label rules across reboots with a systemd oneshot service that runs `ip addrlabel` commands at startup.
+Label manipulation is the most powerful aspect of RFC 6724 policy control. By assigning the same label to a source prefix and destination prefix, you force traffic to prefer that source for those destinations. Use `ip addrlabel add prefix <prefix> label <N>` for kernel-level source selection, and add matching `label` entries to `/etc/gai.conf` for userspace `getaddrinfo()` destination sorting. Precedence values in `gai.conf` control absolute destination ordering - raise a prefix's precedence to make it always tried first. Persist kernel label rules across reboots with a systemd oneshot service that runs `ip addrlabel` commands at startup.

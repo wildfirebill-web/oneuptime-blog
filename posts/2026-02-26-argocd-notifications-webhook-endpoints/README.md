@@ -306,6 +306,7 @@ ArgoCD webhook notifications do not have built-in retries. If the endpoint is te
 
 ```bash
 # Watch notification controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Common errors:

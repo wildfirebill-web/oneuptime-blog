@@ -187,6 +187,7 @@ For teams that use multiple Sentinel workspaces, you can export workbook templat
 
 ```bash
 # Export a workbook template as JSON using Azure CLI
+
 az monitor app-insights workbook show \
   --resource-group myResourceGroup \
   --name "SOC-Overview-Dashboard" \

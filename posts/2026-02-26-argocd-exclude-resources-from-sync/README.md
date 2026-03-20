@@ -68,7 +68,7 @@ data:
         - "*"
 ```
 
-## Resource Inclusions (Allowlist Approach)
+Resource Inclusions (Allowlist Approach)
 
 Instead of excluding specific resources, you can flip the approach and only include specific resource types. This is configured with `resource.inclusions` in the same ConfigMap.
 
@@ -195,6 +195,7 @@ During a sync operation (using the CLI), you can exclude resources by only inclu
 
 ```bash
 # Instead of excluding, select only what you want to sync
+
 argocd app sync my-app \
   --resource apps:Deployment:web-server \
   --resource :Service:api-svc

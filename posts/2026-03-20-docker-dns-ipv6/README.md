@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, IPv6, DNS, AAAA Records, Resolution, Container Networking
 
-Description: Configure DNS resolution for IPv6 in Docker containers, set IPv6-capable DNS servers, understand how Docker's embedded DNS resolves container names over IPv6, and troubleshoot DNS AAAA resolution failures.
+Description: Configure DNS resolution for IPv6 in Docker containers, set IPv6-capable DNS servers, understand how Docker's embedded DNS resolves container names over IPv6, and troubleshoot DNS AAAA resolution...
 
 ## Introduction
 
@@ -31,6 +31,7 @@ Docker containers use an embedded DNS server (127.0.0.11) for service discovery 
 sudo systemctl restart docker
 
 # Verify DNS servers are applied
+
 docker run --rm alpine cat /etc/resolv.conf
 # nameserver 8.8.8.8
 # nameserver 8.8.4.4

@@ -22,6 +22,7 @@ The primary way to declare collection dependencies is through a `requirements.ym
 
 ```yaml
 # requirements.yml - declare all collection dependencies
+
 collections:
   # Pin to a specific version for maximum reproducibility
   - name: amazon.aws

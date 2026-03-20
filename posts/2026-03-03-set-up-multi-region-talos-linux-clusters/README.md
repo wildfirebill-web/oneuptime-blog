@@ -43,6 +43,7 @@ Start by creating a Talos cluster in each region with its own configuration:
 
 ```bash
 # Generate secrets (can be shared or separate per cluster)
+
 talosctl gen secrets -o secrets-us-east.yaml
 talosctl gen secrets -o secrets-eu-west.yaml
 

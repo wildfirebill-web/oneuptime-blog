@@ -243,6 +243,7 @@ Here is a real-world egress configuration for a multi-tier application:
 
 ```yaml
 # Web tier - can reach API tier and CDN
+
 apiVersion: networking.istio.io/v1
 kind: Sidecar
 metadata:

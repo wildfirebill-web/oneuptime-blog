@@ -14,6 +14,7 @@ Red Hat Insights is a hosted service included with your RHEL subscription. It an
 
 ```bash
 # Ensure the system is registered with Red Hat Subscription Manager
+
 sudo subscription-manager register --auto-attach
 
 # Install the Insights client (pre-installed on RHEL 8+)

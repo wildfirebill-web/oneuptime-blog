@@ -35,7 +35,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 ## Edge Functions with IPv6
 
 ```typescript
-// middleware.ts — Vercel Edge Middleware
+// middleware.ts - Vercel Edge Middleware
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 

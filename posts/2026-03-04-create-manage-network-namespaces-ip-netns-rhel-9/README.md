@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Create a namespace called "blue"
+
 sudo ip netns add blue
 
 # List all namespaces

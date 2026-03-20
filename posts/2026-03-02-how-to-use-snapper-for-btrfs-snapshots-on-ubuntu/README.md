@@ -27,6 +27,7 @@ For an existing installation, you would need to migrate to Btrfs, which is beyon
 
 ```bash
 # Check current filesystem types
+
 df -T /
 
 # Or check with lsblk

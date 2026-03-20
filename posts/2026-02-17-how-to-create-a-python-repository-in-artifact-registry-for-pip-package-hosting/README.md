@@ -18,6 +18,7 @@ Enable the API and create the repository:
 
 ```bash
 # Enable the Artifact Registry API
+
 gcloud services enable artifactregistry.googleapis.com --project=my-project
 
 # Create a Python repository

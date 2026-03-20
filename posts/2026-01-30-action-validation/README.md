@@ -236,6 +236,7 @@ class Role:
         return permission in self.permissions
 
 # Define standard roles
+
 ROLES = {
     "read_only": Role("read_only", {
         Permission(ActionType.READ, ResourceType.FILE),

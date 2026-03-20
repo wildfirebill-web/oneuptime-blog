@@ -27,6 +27,7 @@ This guide walks through deploying each ELK component as a Flux `HelmRelease`, c
 
 ```yaml
 # infrastructure/sources/elastic-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

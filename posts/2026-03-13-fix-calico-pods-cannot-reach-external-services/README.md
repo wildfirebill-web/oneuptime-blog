@@ -24,6 +24,7 @@ If pods can ping external IPs but external services see a non-routable source IP
 
 ```bash
 # Check current natOutgoing setting
+
 calicoctl get ippools -o yaml | grep -A 3 "natOutgoing:"
 
 # Fix: Enable natOutgoing on the default IP pool

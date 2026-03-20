@@ -32,6 +32,7 @@ On a minimal RHEL installation, Cockpit is not installed by default. Let's fix t
 
 ```bash
 # Install the cockpit package and common modules
+
 sudo dnf install -y cockpit cockpit-storaged cockpit-networkmanager cockpit-packagekit
 ```
 

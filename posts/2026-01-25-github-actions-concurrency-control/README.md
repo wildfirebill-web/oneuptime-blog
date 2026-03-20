@@ -32,6 +32,7 @@ Add concurrency at the workflow level:
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy
 
 on:

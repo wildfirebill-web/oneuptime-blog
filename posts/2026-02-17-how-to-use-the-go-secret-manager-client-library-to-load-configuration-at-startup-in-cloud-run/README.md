@@ -27,6 +27,7 @@ Create some secrets and install the client library.
 
 ```bash
 # Create secrets in Secret Manager
+
 echo -n "my-db-password" | gcloud secrets create db-password --data-file=-
 echo -n "my-api-key-12345" | gcloud secrets create api-key --data-file=-
 echo -n '{"host":"10.0.0.1","port":5432,"database":"mydb"}' | \

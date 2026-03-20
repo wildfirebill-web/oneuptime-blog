@@ -18,7 +18,7 @@ Description: Monitor DHCPv6 relay statistics across platforms including message 
 
 ## Cisco IOS/IOS-XE Statistics
 
-```
+```text
 ! Show relay message statistics
 show ipv6 dhcp relay statistics
 
@@ -39,8 +39,9 @@ show ipv6 dhcp interface GigabitEthernet0/1
 
 ## Juniper Relay Statistics
 
-```
+```text
 # Show DHCPv6 relay statistics
+
 show dhcp v6 relay statistics
 
 # Output fields:
@@ -65,7 +66,7 @@ show dhcp v6 relay statistics group CLIENTS
 
 ```python
 #!/usr/bin/env python3
-# kea-relay-stats.py — Query Kea DHCP6 statistics via REST API
+# kea-relay-stats.py - Query Kea DHCP6 statistics via REST API
 
 import requests
 import json
@@ -106,7 +107,7 @@ if __name__ == "__main__":
 
 ```python
 #!/usr/bin/env python3
-# dhcpv6-relay-exporter.py — Prometheus exporter for DHCPv6 relay stats
+# dhcpv6-relay-exporter.py - Prometheus exporter for DHCPv6 relay stats
 
 from prometheus_client import start_http_server, Gauge, Counter
 import subprocess
@@ -151,7 +152,7 @@ if __name__ == '__main__':
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Prometheus queries for DHCPv6 relay monitoring
 
 # Message rate per type
@@ -186,7 +187,7 @@ groups:
         expr: rate(dhcpv6_relay_received_total[15m]) == 0
         for: 10m
         annotations:
-          summary: "DHCPv6 relay receiving no traffic — clients may not be getting addresses"
+          summary: "DHCPv6 relay receiving no traffic - clients may not be getting addresses"
 ```
 
 ## Conclusion

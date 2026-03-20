@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CIDR, IP Addressing, Networking, cidrsubnet, Infrastructure as Code
+Tags: OpenTofu, CIDR, IP Addressing, Networking, Cidrsubnet, Infrastructure as Code
 
-Description: Learn how to manage IP address allocation with OpenTofu using cidrsubnet(), cidrsubnets(), and cidrhost() functions — automating subnet CIDR calculations and avoiding IP conflicts.
+Description: Learn how to manage IP address allocation with OpenTofu using cidrsubnet(), cidrsubnets(), and cidrhost() functions - automating subnet CIDR calculations and avoiding IP conflicts.
 
 ## Introduction
 
 OpenTofu's built-in CIDR functions automate subnet address allocation, eliminating manual IP planning errors. `cidrsubnet()` calculates individual subnets, `cidrsubnets()` generates multiple in sequence, and `cidrhost()` generates specific host addresses within a range.
 
-## cidrsubnet() — Single Subnet Calculation
+## cidrsubnet() - Single Subnet Calculation
 
 ```hcl
 # cidrsubnet(prefix, newbits, netnum)
+
 # prefix = base CIDR, newbits = bits to add for new prefix, netnum = subnet number
 
 variable "vpc_cidr" {
@@ -33,7 +34,7 @@ locals {
 }
 ```
 
-## cidrsubnets() — Multiple Subnets in Sequence
+## cidrsubnets() - Multiple Subnets in Sequence
 
 ```hcl
 # cidrsubnets(prefix, newbits...) generates sequential subnets
@@ -78,7 +79,7 @@ locals {
 }
 ```
 
-## cidrhost() — Specific Host Addresses
+## cidrhost() - Specific Host Addresses
 
 ```hcl
 # Get specific host addresses within a subnet

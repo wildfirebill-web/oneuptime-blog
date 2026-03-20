@@ -68,7 +68,7 @@ class TCPConnectionPool:
                 conn = self._create()
             yield conn
         except queue.Empty:
-            # Pool exhausted — create a temporary connection
+            # Pool exhausted - create a temporary connection
             conn = self._create()
             yield conn
             try: conn.close()
@@ -90,6 +90,7 @@ def send_request(payload: bytes) -> bytes:
         return conn.recv(4096)
 
 # Use from multiple threads
+
 import concurrent.futures
 with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
     futures = [executor.submit(send_request, b"ping") for _ in range(100)]
@@ -141,4 +142,4 @@ asyncio.run(main())
 
 ## Conclusion
 
-A connection pool maintains a fixed set of open TCP connections. The `contextlib.contextmanager` pattern ensures connections are always returned to the pool even if an exception occurs. Check connection health before use with a non-blocking `MSG_PEEK` recv — create a fresh connection if the old one has been closed by the server. Size the pool to the expected concurrent request count — too small causes queuing, too large wastes server resources. For asyncio applications, use an `asyncio.Queue` of (reader, writer) pairs as the pool backing store.
+A connection pool maintains a fixed set of open TCP connections. The `contextlib.contextmanager` pattern ensures connections are always returned to the pool even if an exception occurs. Check connection health before use with a non-blocking `MSG_PEEK` recv - create a fresh connection if the old one has been closed by the server. Size the pool to the expected concurrent request count - too small causes queuing, too large wastes server resources. For asyncio applications, use an `asyncio.Queue` of (reader, writer) pairs as the pool backing store.

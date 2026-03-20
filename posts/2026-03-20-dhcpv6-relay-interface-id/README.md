@@ -31,8 +31,8 @@ sequenceDiagram
 
 ## Configuring Option 18 on Cisco IOS
 
-```
-! Cisco IOS — Interface ID is automatically added (interface name)
+```text
+! Cisco IOS - Interface ID is automatically added (interface name)
 interface GigabitEthernet0/1.100
  encapsulation dot1q 100
  ipv6 address 2001:db8:100::1/64
@@ -46,8 +46,9 @@ ipv6 dhcp relay option interface-id ifname
 
 ## Configuring Option 18 on Juniper
 
-```
-# Juniper — include Interface ID in relay messages
+```text
+# Juniper - include Interface ID in relay messages
+
 set forwarding-options dhcp-relay v6 group CLIENTS interface-id-option include
 set forwarding-options dhcp-relay v6 group CLIENTS interface ge-0/0/1.100
 
@@ -70,7 +71,7 @@ dhcrelay -6 \
 ## ISC Kea Server Using Interface ID
 
 ```json
-// kea-dhcp6.conf — Classify clients by Option 18
+// kea-dhcp6.conf - Classify clients by Option 18
 {
     "Dhcp6": {
         "client-classes": [
@@ -147,4 +148,4 @@ tshark -i eth1 -f 'udp port 547' \
 
 ## Conclusion
 
-DHCPv6 Option 18 is automatically inserted by relay agents with the relay interface name or a configured identifier. DHCPv6 servers use it to apply per-interface address pools and policies — essential for ISP subscriber management. ISC Kea's client-class expressions `relay6[0].option[18].hex` enable classification by Interface ID. Pair Option 18 with Option 37 (Remote ID) for comprehensive subscriber identification when the relay is behind another relay agent.
+DHCPv6 Option 18 is automatically inserted by relay agents with the relay interface name or a configured identifier. DHCPv6 servers use it to apply per-interface address pools and policies - essential for ISP subscriber management. ISC Kea's client-class expressions `relay6[0].option[18].hex` enable classification by Interface ID. Pair Option 18 with Option 37 (Remote ID) for comprehensive subscriber identification when the relay is behind another relay agent.

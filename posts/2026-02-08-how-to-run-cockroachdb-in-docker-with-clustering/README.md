@@ -20,6 +20,7 @@ Start with a single node for local development:
 
 ```bash
 # Run a single CockroachDB node for development
+
 docker run -d \
   --name cockroach-single \
   -p 26257:26257 \

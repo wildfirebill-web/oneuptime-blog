@@ -22,6 +22,7 @@ PSA operates at the namespace level using labels. Three modes exist: enforce (bl
 
 ```bash
 # Check namespace PSA labels
+
 kubectl get namespace production -o yaml | grep pod-security
 
 # Example output:

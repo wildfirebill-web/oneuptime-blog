@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Nmcli, Multiple IPs, Networking, Linux
+Tags: RHEL, nmcli, Multiple IPs, Networking, Linux
 
 Description: Learn how to assign multiple IP addresses to a single network interface on RHEL using nmcli, with practical use cases and configuration examples.
 
@@ -30,6 +30,7 @@ You can specify multiple addresses when you first create a connection profile:
 
 ```bash
 # Create a connection with two IP addresses
+
 nmcli connection add \
   con-name "multi-ip" \
   ifname ens192 \

@@ -18,7 +18,7 @@ Portainer's Git polling auto-update feature checks your repository at a defined 
 
 ## How Polling Auto-Update Works
 
-```
+```text
 1. Portainer checks the Git repo every N minutes
 2. Compares current commit SHA to the deployed commit SHA
 3. If different: pulls the new Compose file and redeploys
@@ -32,7 +32,7 @@ Portainer's Git polling auto-update feature checks your repository at a defined 
 2. Select **Repository** as the build method.
 3. Configure Git settings:
 
-```
+```text
 Repository URL:  https://github.com/myorg/my-infra
 Repository ref:  refs/heads/main
 Compose path:    docker-compose.yml
@@ -57,19 +57,19 @@ For an already-deployed Git stack:
 
 Choose an interval based on how quickly you need changes deployed:
 
-```
-1m  — Near real-time (high API usage for large fleets)
-5m  — Standard for most development workflows
-15m — Balanced for stable services
-1h  — Production services with infrequent changes
-24h — Very stable configurations
+```text
+1m  - Near real-time (high API usage for large fleets)
+5m  - Standard for most development workflows
+15m - Balanced for stable services
+1h  - Production services with infrequent changes
+24h - Very stable configurations
 ```
 
 Portainer polls the Git API for each stack separately. With many stacks and short intervals, consider the API rate limits of your Git provider:
 
-```
+```text
 GitHub: 60 requests/hour (unauthenticated), 5000/hour (authenticated)
-→ For 10 stacks with 5m polling: 120 requests/hour — use authentication
+→ For 10 stacks with 5m polling: 120 requests/hour - use authentication
 ```
 
 ## Step 4: Trigger a Deployment by Pushing to Git
@@ -78,8 +78,9 @@ To test the polling update:
 
 ```bash
 # Make a change to the Compose file:
+
 cd my-infra/
-# Edit docker-compose.yml — e.g., update IMAGE_TAG
+# Edit docker-compose.yml - e.g., update IMAGE_TAG
 
 # Commit and push:
 git add docker-compose.yml
@@ -136,7 +137,7 @@ git ls-remote https://github.com/myorg/my-infra refs/heads/main
 
 Deploy the same repo to multiple environments with different branches:
 
-```
+```text
 Stack: myapp-production
   Branch: refs/heads/main
   Polling: 15m
@@ -153,4 +154,4 @@ Merge PR to `main` → production updates within 15 minutes.
 
 ## Conclusion
 
-Git polling auto-updates in Portainer provide a zero-configuration GitOps workflow — no webhooks to set up, no CI/CD pipeline changes required. Set a polling interval, push to Git, and Portainer handles the rest. The trade-off is latency: changes take up to the interval duration to deploy. For faster deployments, use the webhook-based auto-update method instead. Use polling for stable services and environments where the interval latency is acceptable, and enable Force re-pull when using mutable image tags to ensure the latest image is always deployed.
+Git polling auto-updates in Portainer provide a zero-configuration GitOps workflow - no webhooks to set up, no CI/CD pipeline changes required. Set a polling interval, push to Git, and Portainer handles the rest. The trade-off is latency: changes take up to the interval duration to deploy. For faster deployments, use the webhook-based auto-update method instead. Use polling for stable services and environments where the interval latency is acceptable, and enable Force re-pull when using mutable image tags to ensure the latest image is always deployed.

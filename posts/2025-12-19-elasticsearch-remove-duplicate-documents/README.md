@@ -274,6 +274,7 @@ reindex_without_duplicates("orders", "orders_clean", "order_id", "created_at")
 
 ```bash
 # Create transform to deduplicate
+
 curl -X PUT "https://localhost:9200/_transform/deduplicate_orders" \
   -H "Content-Type: application/json" \
   -u elastic:password \

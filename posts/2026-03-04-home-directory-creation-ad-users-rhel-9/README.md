@@ -30,6 +30,7 @@ The recommended way to configure home directory creation on RHEL is through auth
 
 ```bash
 # Check the current authselect profile
+
 authselect current
 
 # Enable the mkhomedir feature

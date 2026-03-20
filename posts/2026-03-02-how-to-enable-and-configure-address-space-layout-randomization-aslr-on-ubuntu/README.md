@@ -28,6 +28,7 @@ ASLR has three levels in the Linux kernel, controlled via `randomize_va_space`:
 
 ```bash
 # Read the current ASLR level
+
 cat /proc/sys/kernel/randomize_va_space
 
 # Expected output for a properly configured system:

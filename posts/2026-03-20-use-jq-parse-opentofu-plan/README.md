@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, jq, Plan JSON, Shell Scripting, Infrastructure as Code
+Tags: OpenTofu, Jq, Plan JSON, Shell Scripting, Infrastructure as Code
 
 Description: Learn how to use jq to quickly parse, filter, and transform OpenTofu plan JSON output for shell scripts and CI/CD pipelines.
 
@@ -12,6 +12,7 @@ Description: Learn how to use jq to quickly parse, filter, and transform OpenTof
 
 ```bash
 # Generate plan JSON
+
 tofu plan -out=tfplan
 tofu show -json tfplan > plan.json
 
@@ -137,4 +138,4 @@ jq '.resource_changes[] | select(.address == "aws_instance.web")' plan.json
 
 ## Conclusion
 
-`jq` transforms OpenTofu's plan JSON into an interactive, scriptable data source. The patterns in this guide cover the most common CI/CD use cases — from counting changes and detecting destructions to extracting specific attribute values. Combine them with shell conditionals and pipeline tools to build powerful infrastructure change gates.
+`jq` transforms OpenTofu's plan JSON into an interactive, scriptable data source. The patterns in this guide cover the most common CI/CD use cases - from counting changes and detecting destructions to extracting specific attribute values. Combine them with shell conditionals and pipeline tools to build powerful infrastructure change gates.

@@ -39,6 +39,7 @@ Shared VPC requires an organization. You cannot set it up with standalone projec
 
 ```bash
 # Enable Compute Engine API in host and service projects
+
 gcloud services enable compute.googleapis.com --project=host-project
 gcloud services enable compute.googleapis.com --project=service-project-a
 gcloud services enable compute.googleapis.com --project=service-project-b

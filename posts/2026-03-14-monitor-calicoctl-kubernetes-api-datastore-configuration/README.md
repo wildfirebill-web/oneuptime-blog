@@ -31,6 +31,7 @@ Create a comprehensive health check script that validates calicoctl connectivity
 ```bash
 #!/bin/bash
 # calico-health-check.sh
+
 # Validates calicoctl can communicate with the Kubernetes API datastore
 
 set -euo pipefail

@@ -20,6 +20,7 @@ Description: Learn how to use strace on Ubuntu to trace network-related system c
 
 ```bash
 # Install strace
+
 sudo apt update
 sudo apt install -y strace
 

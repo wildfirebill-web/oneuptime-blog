@@ -216,6 +216,7 @@ def find_large_varchar_columns(connection, database, min_length=500):
     return results
 
 # Usage
+
 connection = mysql.connector.connect(
     host='localhost',
     user='root',

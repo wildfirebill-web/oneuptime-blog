@@ -25,6 +25,7 @@ Before writing code, set up the database resources in Azure.
 
 ```bash
 # Create a Cosmos DB account
+
 az cosmosdb create \
   --name my-products-db \
   --resource-group cosmos-rg \

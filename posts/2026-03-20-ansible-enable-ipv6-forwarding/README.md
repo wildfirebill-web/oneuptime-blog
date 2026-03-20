@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, sysctl, Linux, Networking, Automation
+Tags: Ansible, IPv6, Sysctl, Linux, Networking, Automation
 
 Description: A guide to enabling and persisting IPv6 packet forwarding on Linux hosts using Ansible's sysctl module.
 
@@ -12,6 +12,7 @@ IPv6 forwarding must be enabled on any Linux host that acts as a router, Kuberne
 
 ```yaml
 # enable-ipv6-forwarding.yml
+
 ---
 - name: Enable IPv6 forwarding on all infrastructure nodes
   hosts: infrastructure

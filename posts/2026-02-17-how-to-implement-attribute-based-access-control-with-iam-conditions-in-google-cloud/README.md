@@ -44,6 +44,7 @@ Restrict access to specific time windows. This is useful for operations that sho
 
 ```bash
 # Grant compute admin access only during business hours (9 AM - 6 PM EST, weekdays)
+
 gcloud projects add-iam-policy-binding my-project \
     --member="group:ops-team@example.com" \
     --role="roles/compute.admin" \

@@ -18,6 +18,7 @@ Terraform automatically builds a dependency graph based on resource references. 
 
 ```hcl
 # Implicit dependency: Terraform creates the VPC first
+
 # because the subnet references vpc_id
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"

@@ -46,6 +46,7 @@ Save that as `codedeploy-trust.json` and create the role:
 
 ```bash
 # Create the CodeDeploy service role
+
 aws iam create-role \
   --role-name CodeDeployServiceRole \
   --assume-role-policy-document file://codedeploy-trust.json

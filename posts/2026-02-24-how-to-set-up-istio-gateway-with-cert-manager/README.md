@@ -162,6 +162,7 @@ kubectl apply -f certificate.yaml
 
 ```bash
 # Check certificate status
+
 kubectl get certificate app-tls -n istio-system
 
 # Detailed status

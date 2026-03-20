@@ -42,6 +42,7 @@ gcloud services enable pubsub.googleapis.com --project=my-project-123
 
 ```yaml
 # create-topic.yml - Create a Pub/Sub topic
+
 ---
 - name: Create Pub/Sub Topic
   hosts: localhost

@@ -213,6 +213,7 @@ ACR webhooks support scope patterns to control which repositories trigger the we
 
 ```bash
 # Single repository, all tags
+
 az acr webhook create --scope "my-app:*" ...
 
 # Single repository, specific tag pattern

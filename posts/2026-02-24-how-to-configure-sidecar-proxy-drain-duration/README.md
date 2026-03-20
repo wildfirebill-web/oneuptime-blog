@@ -224,6 +224,7 @@ You can test that drain is working correctly by watching connections during a ro
 
 ```bash
 # In one terminal, generate traffic
+
 while true; do curl -s -o /dev/null -w "%{http_code}\n" http://my-service:8080/health; sleep 0.1; done
 
 # In another terminal, trigger a rollout

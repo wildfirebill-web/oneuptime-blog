@@ -28,6 +28,7 @@ The setup is simple - one API call to turn it on.
 
 ```bash
 # Enable automated sensitive data discovery
+
 aws macie2 update-automated-discovery-configuration \
   --status ENABLED
 

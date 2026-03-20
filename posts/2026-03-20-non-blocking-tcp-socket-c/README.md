@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Non-Blocking, fcntl, POSIX, Networking
+Tags: C, IPv4, TCP, Non-Blocking, Fcntl, POSIX, Networking
 
 Description: Learn how to create non-blocking IPv4 TCP sockets in C using fcntl() and O_NONBLOCK, and how to handle EAGAIN correctly for recv, send, and accept calls.
 
@@ -111,7 +111,7 @@ ssize_t send_nonblocking(int fd, const char *buf, size_t len) {
             sent += (size_t)s;
         } else if (s < 0) {
             if (errno == EAGAIN || errno == EWOULDBLOCK) {
-                /* Socket send buffer full — register EPOLLOUT and retry later */
+                /* Socket send buffer full - register EPOLLOUT and retry later */
                 return (ssize_t)sent;
             }
             perror("send");
@@ -175,4 +175,4 @@ int connect_nonblocking(const char *ip, uint16_t port) {
 
 ## Conclusion
 
-Switch a socket to non-blocking mode with `fcntl(fd, F_SETFL, flags | O_NONBLOCK)` or use `SOCK_NONBLOCK` at creation time (Linux). In non-blocking mode, `recv()`, `send()`, and `accept()` return `-1` with `errno == EAGAIN`/`EWOULDBLOCK` instead of blocking — this is not an error, just a signal to retry later. Pair non-blocking sockets with an event-notification mechanism (`select`, `poll`, or `epoll`) to know when a socket is ready before attempting I/O. For `connect()`, detect `EINPROGRESS`, wait for writability via `select`/`epoll`, then confirm success by reading `SO_ERROR`.
+Switch a socket to non-blocking mode with `fcntl(fd, F_SETFL, flags | O_NONBLOCK)` or use `SOCK_NONBLOCK` at creation time (Linux). In non-blocking mode, `recv()`, `send()`, and `accept()` return `-1` with `errno == EAGAIN`/`EWOULDBLOCK` instead of blocking - this is not an error, just a signal to retry later. Pair non-blocking sockets with an event-notification mechanism (`select`, `poll`, or `epoll`) to know when a socket is ready before attempting I/O. For `connect()`, detect `EINPROGRESS`, wait for writability via `select`/`epoll`, then confirm success by reading `SO_ERROR`.

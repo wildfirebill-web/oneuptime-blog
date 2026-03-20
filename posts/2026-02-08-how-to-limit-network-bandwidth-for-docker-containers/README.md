@@ -27,6 +27,7 @@ Start a container with `NET_ADMIN` capability:
 
 ```bash
 # Start an Ubuntu container with network admin capabilities
+
 docker run -d \
   --name throttled-app \
   --cap-add NET_ADMIN \

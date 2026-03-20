@@ -6,7 +6,7 @@ Tags: OpenTofu, Grafana, Alerting, Monitoring, Infrastructure as Code
 
 Description: Learn how to create Grafana alert rules, contact points, and notification policies with OpenTofu to manage your alerting configuration as code.
 
-Grafana Alerting manages alert rules alongside dashboards. OpenTofu lets you version-control alert definitions, contact points, and routing policies — ensuring your alerting configuration is reviewed, tested, and consistently deployed.
+Grafana Alerting manages alert rules alongside dashboards. OpenTofu lets you version-control alert definitions, contact points, and routing policies - ensuring your alerting configuration is reviewed, tested, and consistently deployed.
 
 ## Provider Configuration
 
@@ -30,6 +30,7 @@ provider "grafana" {
 
 ```hcl
 # Slack contact point
+
 resource "grafana_contact_point" "slack_alerts" {
   name = "Slack Alerts"
 

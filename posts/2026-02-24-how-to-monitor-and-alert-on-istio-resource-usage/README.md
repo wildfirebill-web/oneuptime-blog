@@ -32,6 +32,7 @@ For an existing Prometheus installation, add scrape configs for Istio:
 
 ```yaml
 # prometheus-configmap addition
+
 scrape_configs:
 - job_name: 'istiod'
   kubernetes_sd_configs:
@@ -129,7 +130,7 @@ sum(container_memory_working_set_bytes{container="istio-proxy"}) by (namespace) 
 sum(rate(container_cpu_usage_seconds_total{container="istio-proxy"}[5m])) by (namespace)
 ```
 
-### Resource Limit Proximity
+Resource Limit Proximity
 
 ```promql
 # Sidecars near their memory limit (above 80%)

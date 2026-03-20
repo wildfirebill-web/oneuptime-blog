@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv4, Integer Conversion, Networking, net package
+Tags: Go, IPv4, Integer Conversion, Networking, Net package
 
 Description: Learn how to convert IPv4 addresses to their 32-bit integer representation and back in Go using the net package and binary encoding.
 
@@ -175,4 +175,4 @@ func main() {
 
 ## Conclusion
 
-Converting IPv4 addresses to `uint32` and back is straightforward in Go using `net.IP.To4()` and `encoding/binary`. This enables efficient IP arithmetic for range checking, sorting, subnet enumeration, and CIDR calculations—all common needs in network programming.
+Converting IPv4 addresses to `uint32` and back is straightforward in Go using `net.IP.To4()` and `encoding/binary`. This enables efficient IP arithmetic for range checking, sorting, subnet enumeration, and CIDR calculations-all common needs in network programming.

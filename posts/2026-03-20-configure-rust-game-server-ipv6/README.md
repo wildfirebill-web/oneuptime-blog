@@ -14,6 +14,7 @@ Rust is a multiplayer survival game by Facepunch Studios. Its dedicated server c
 
 ```bash
 # Create server user
+
 sudo useradd -m -s /bin/bash rust
 sudo su - rust
 

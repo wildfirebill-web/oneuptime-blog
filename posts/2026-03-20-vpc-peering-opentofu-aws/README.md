@@ -1,4 +1,4 @@
-# How to Set Up VPC Peering with OpenTofu on AWS
+# How to Set Up VPC Peering with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ VPC Peering allows routing traffic between two VPCs privately using AWS infrastr
 
 ```hcl
 # For same-account peering
+
 provider "aws" {
   region = var.region
   alias  = "requester"

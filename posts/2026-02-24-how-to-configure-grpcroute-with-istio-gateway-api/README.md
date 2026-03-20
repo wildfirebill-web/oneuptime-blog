@@ -379,6 +379,7 @@ Test gRPC connectivity with grpcurl:
 
 ```bash
 # List available services
+
 grpcurl -plaintext <gateway-ip>:80 list
 
 # Call a specific method

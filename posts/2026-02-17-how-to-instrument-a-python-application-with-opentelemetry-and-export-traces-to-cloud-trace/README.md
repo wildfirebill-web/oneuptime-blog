@@ -18,6 +18,7 @@ You need the OpenTelemetry SDK, the Cloud Trace exporter, and auto-instrumentati
 
 ```bash
 # Install core OpenTelemetry packages and the Cloud Trace exporter
+
 pip install opentelemetry-sdk \
   opentelemetry-api \
   opentelemetry-exporter-gcp-trace \

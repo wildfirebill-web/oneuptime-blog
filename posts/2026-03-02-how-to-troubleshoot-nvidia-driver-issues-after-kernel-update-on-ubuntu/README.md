@@ -22,6 +22,7 @@ Kernel updates are among the most common triggers for NVIDIA driver failures on 
 
 ```bash
 # Check current kernel version
+
 uname -r
 
 # Check what kernel the nvidia module was built for

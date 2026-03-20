@@ -18,6 +18,7 @@ Install the required collection and Python library:
 
 ```bash
 # Install the community.general Ansible collection
+
 ansible-galaxy collection install community.general
 
 # Install the hvac Python library (HashiCorp Vault API client)

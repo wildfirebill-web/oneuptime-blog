@@ -40,6 +40,7 @@ Check how deep your module nesting goes:
 
 ```bash
 # List all modules in state
+
 terraform state list | grep "^module\." | \
   awk -F'module.' '{print NF-1}' | sort -rn | head -5
 

@@ -26,6 +26,7 @@ Canonical provides an example preseed file for Ubuntu. You can also dump the cur
 
 ```bash
 # On an existing Ubuntu system, dump debconf settings
+
 sudo debconf-get-selections --installer > preseed.cfg
 sudo debconf-get-selections >> preseed.cfg
 ```

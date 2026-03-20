@@ -24,6 +24,7 @@ Let us start with the complete playbook and then break down each section:
 
 ```yaml
 # harden_ssh.yml - Comprehensive SSH hardening
+
 ---
 - name: Harden SSH configuration
   hosts: all

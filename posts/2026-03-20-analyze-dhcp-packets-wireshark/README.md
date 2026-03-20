@@ -4,20 +4,21 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DHCP, Wireshark, Packet Analysis, Network Diagnostics
 
-Description: Wireshark provides detailed DHCP packet dissection showing all options, message types, and field values, enabling engineers to diagnose lease failures, verify option delivery, and investigate rogue servers.
+Description: Wireshark provides detailed DHCP packet dissection showing all options, message types, and field values, enabling engineers to diagnose lease failures, verify option delivery, and investigate...
 
 ## Capturing DHCP Traffic
 
 Start a capture in Wireshark on your network interface. Apply a capture filter before starting:
 
-```
+```text
 # Capture filter (BPF syntax)
+
 port 67 or port 68
 ```
 
 ## Display Filters for DHCP
 
-```
+```text
 # Show all DHCP packets
 bootp
 
@@ -82,7 +83,7 @@ In Wireshark:
 3. All four DORA messages for that client will be shown in sequence.
 
 Or filter by transaction ID:
-```
+```text
 bootp.id == 0x12345678
 ```
 

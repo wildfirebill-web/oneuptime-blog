@@ -18,6 +18,7 @@ find [starting_directory] [options] [expression]
 
 ```bash
 # Find all files in current directory (recursive)
+
 find .
 
 # Find in /var/log

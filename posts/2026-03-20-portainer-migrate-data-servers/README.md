@@ -14,6 +14,7 @@ Migrating Portainer to a new server involves copying the data volume and re-depl
 
 ```bash
 # On the SOURCE server: stop Portainer for a consistent backup
+
 docker stop portainer
 
 # Create a backup archive of the data volume

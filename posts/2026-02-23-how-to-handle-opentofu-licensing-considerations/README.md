@@ -28,6 +28,7 @@ The Mozilla Public License 2.0 is a weak copyleft license. Here is what that mea
 
 ```text
 # Quick summary of what you can do under MPL 2.0:
+
 # - Use commercially: YES
 # - Modify: YES (modified MPL files must stay MPL)
 # - Distribute: YES

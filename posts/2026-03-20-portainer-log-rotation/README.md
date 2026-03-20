@@ -1,8 +1,8 @@
-# How to Set Up Log Rotation for Containers in Portainer
+# How to Set Up Log Rotation for Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Log Rotation, Docker, json-file, Disk Management, Container Logging
+Tags: Portainer, Log Rotation, Docker, Json-file, Disk Management, Container Logging
 
 Description: Learn how to configure log rotation for Docker containers managed by Portainer to prevent log files from consuming all disk space.
 
@@ -14,12 +14,13 @@ Docker's default `json-file` log driver writes container logs to the host disk w
 
 Without configuration, Docker writes logs to:
 
-```
+```text
 /var/lib/docker/containers/{container-id}/{container-id}-json.log
 ```
 
 ```bash
 # Check current log file sizes
+
 du -sh /var/lib/docker/containers/*/*.log | sort -rh | head -10
 ```
 
@@ -74,7 +75,7 @@ Set defaults for all containers on a Docker host in `/etc/docker/daemon.json`:
 
 Restart Docker to apply: `sudo systemctl restart docker`
 
-This applies to all new containers. Existing containers are unaffected — they must be recreated to pick up the new settings.
+This applies to all new containers. Existing containers are unaffected - they must be recreated to pick up the new settings.
 
 ## Applying to Existing Containers
 
@@ -83,7 +84,7 @@ Existing containers keep their original log settings. Recreate them to apply new
 ```bash
 # For a Portainer-managed stack, update the stack:
 # 1. Edit the stack and add logging section
-# 2. Click "Update the stack" — this recreates affected containers
+# 2. Click "Update the stack" - this recreates affected containers
 
 # For individual containers, stop and recreate:
 docker stop my-container

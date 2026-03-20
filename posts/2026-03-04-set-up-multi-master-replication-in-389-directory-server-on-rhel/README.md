@@ -20,6 +20,7 @@ Multi-master replication allows two or more 389 Directory Server instances to ac
 
 ```bash
 # Enable the replication plugin and configure as a supplier
+
 sudo dsconf ldap1 replication enable \
     --suffix "dc=example,dc=com" \
     --role supplier \

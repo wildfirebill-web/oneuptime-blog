@@ -26,6 +26,7 @@ Start with fundamental percentile calculations to understand API server performa
 
 ```promql
 # 95th percentile of API server request duration across all requests
+
 histogram_quantile(
   0.95,
   sum(rate(apiserver_request_duration_seconds_bucket[5m])) by (le)

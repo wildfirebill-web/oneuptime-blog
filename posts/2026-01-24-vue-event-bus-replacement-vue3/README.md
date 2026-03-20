@@ -454,6 +454,7 @@ flowchart LR
 
 ```bash
 # Find all event bus usages
+
 grep -r "\$emit\|\$on\|\$off" --include="*.vue" --include="*.js" src/
 ```
 

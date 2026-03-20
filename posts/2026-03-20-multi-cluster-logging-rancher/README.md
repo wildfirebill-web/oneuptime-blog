@@ -34,6 +34,7 @@ A `ClusterFlow` selects which logs to collect cluster-wide. This example collect
 
 ```yaml
 # clusterflow-all.yaml
+
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:
@@ -151,5 +152,5 @@ kubectl logs -n cattle-logging-system \
 
 - Add a `cluster` field to every log record via `record_transformer` so you can filter by cluster in Kibana or Grafana Loki.
 - Use **buffering** in ClusterOutputs to absorb spikes and prevent log loss during network hiccups.
-- Set retention policies in Elasticsearch per environment — keep production logs longer than staging.
+- Set retention policies in Elasticsearch per environment - keep production logs longer than staging.
 - Deploy a **log router** (e.g., Vector) in the central cluster to fan-out to multiple destinations.

@@ -56,6 +56,7 @@ For Helm-based installations:
 
 ```yaml
 # values.yaml
+
 server:
   extraArgs:
     - --request-timeout

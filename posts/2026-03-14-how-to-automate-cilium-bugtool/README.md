@@ -26,6 +26,7 @@ This guide covers automation patterns for cilium-bugtool, from simple cron-based
 ```bash
 #!/bin/bash
 # auto-bugtool.sh
+
 # Automated cilium-bugtool collection with rotation
 
 set -euo pipefail

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, CLI Flags, Performance, Snapshots, Configuration, Docker
+Tags: Portainer, CLI Flags, Performance, Snapshot, Configuration, Docker
 
 Description: Learn how to use the --snapshot-interval flag to control how frequently Portainer polls Docker environments for state changes, balancing freshness with resource usage.
 
@@ -14,6 +14,7 @@ Portainer polls each registered Docker environment every `--snapshot-interval` s
 
 ```bash
 # Default: poll all environments every 60 seconds
+
 docker run -d portainer/portainer-ce:latest
 # Equivalent to:
 docker run -d portainer/portainer-ce:latest --snapshot-interval 60
@@ -63,7 +64,7 @@ The snapshot interval directly affects how stale the UI data can be:
 | Interval | Maximum UI Staleness | Use Case |
 |---|---|---|
 | 15s | 15 seconds | Active development environments |
-| 60s | 1 minute | Default — most use cases |
+| 60s | 1 minute | Default - most use cases |
 | 300s | 5 minutes | Low-resource hosts |
 | 3600s | 1 hour | Read-mostly monitoring dashboards |
 

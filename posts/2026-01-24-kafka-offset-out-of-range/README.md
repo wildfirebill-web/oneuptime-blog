@@ -72,6 +72,7 @@ Messages older than the retention period are automatically deleted, making their
 
 ```bash
 # Check topic retention settings
+
 kafka-configs.sh --bootstrap-server localhost:9092 \
     --entity-type topics \
     --entity-name orders \

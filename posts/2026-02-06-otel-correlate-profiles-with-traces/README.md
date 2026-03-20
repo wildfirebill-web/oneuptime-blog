@@ -24,6 +24,7 @@ The Pyroscope Java agent integrates with OpenTelemetry to automatically tag prof
 
 ```bash
 # Download the Pyroscope Java agent
+
 curl -L -o pyroscope.jar \
   https://github.com/grafana/pyroscope-java/releases/latest/download/pyroscope.jar
 ```

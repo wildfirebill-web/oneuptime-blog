@@ -18,6 +18,7 @@ The first step for any pipeline issue is enabling Terraform's debug output:
 
 ```yaml
 # .github/workflows/terraform-debug.yml
+
 - name: Terraform Plan (debug)
   env:
     TF_LOG: DEBUG              # Options: TRACE, DEBUG, INFO, WARN, ERROR

@@ -45,6 +45,7 @@ If you're restoring to a fresh cluster, you need Istio installed before you can 
 
 ```bash
 # If you backed up your IstioOperator resource
+
 istioctl install -f backup/istiooperator.yaml
 
 # Or if using Helm

@@ -27,6 +27,7 @@ Before configuring policies, make sure the necessary packages are present.
 
 ```yaml
 # install_pwquality.yml - Ensure password quality packages are installed
+
 ---
 - name: Install password policy packages
   hosts: all

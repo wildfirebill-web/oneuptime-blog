@@ -6,7 +6,7 @@ Tags: OpenTofu, Retry Logic, Resilience, Provisioners, Infrastructure as Code
 
 Description: Learn how to implement retry logic in OpenTofu for transient failures using provider settings, null_resource retries, and external_provider patterns.
 
-Cloud APIs fail transiently — rate limits, eventually-consistent reads, and service-side timeouts are routine. OpenTofu itself does not have a built-in retry keyword for resource operations, but several patterns let you build retry behavior into your configurations.
+Cloud APIs fail transiently - rate limits, eventually-consistent reads, and service-side timeouts are routine. OpenTofu itself does not have a built-in retry keyword for resource operations, but several patterns let you build retry behavior into your configurations.
 
 ## Provider-Level Retry Settings
 
@@ -14,6 +14,7 @@ The first line of defense is configuring the provider's built-in retry mechanism
 
 ```hcl
 # AWS: increase API retry count and use adaptive retry mode
+
 provider "aws" {
   region      = "us-east-1"
   retry_mode  = "adaptive"   # Automatically backs off on throttling
@@ -40,7 +41,7 @@ resource "google_container_cluster" "primary" {
 }
 ```
 
-## Resource-Level Timeouts
+Resource-Level Timeouts
 
 Most resources support a `timeouts` block for controlling how long OpenTofu waits for operations:
 
@@ -114,7 +115,7 @@ Wrap `tofu apply` in a retry loop in your CI pipeline for transient failures:
 
 ```bash
 #!/usr/bin/env bash
-# retry-apply.sh — retry tofu apply on transient failures
+# retry-apply.sh - retry tofu apply on transient failures
 
 set -euo pipefail
 

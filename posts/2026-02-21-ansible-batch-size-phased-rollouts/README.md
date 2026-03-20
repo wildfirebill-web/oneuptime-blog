@@ -16,6 +16,7 @@ The simplest approach is a fixed number:
 
 ```yaml
 # fixed-batch.yml - Process 5 hosts at a time
+
 ---
 - name: Deploy in fixed batches
   hosts: webservers  # 50 hosts

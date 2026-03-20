@@ -38,6 +38,7 @@ kubectl get pods -n kube-system -l k8s-app=calico-node -o wide | grep <node-name
 
 ```bash
 # See companion CrashLoopBackOff fix post for detailed steps
+
 # Quick restart attempt:
 NODE_POD=$(kubectl get pods -n kube-system -l k8s-app=calico-node \
   --field-selector spec.nodeName=<node-name> -o name)

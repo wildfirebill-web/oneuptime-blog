@@ -20,6 +20,7 @@ If your playbook does not use any Ansible facts (like `ansible_os_family` or `an
 
 ```yaml
 # Disable fact gathering when you do not need system facts
+
 ---
 - hosts: all
   gather_facts: false

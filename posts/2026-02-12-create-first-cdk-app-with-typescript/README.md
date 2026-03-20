@@ -18,6 +18,7 @@ First, make sure you have the prerequisites installed.
 
 ```bash
 # Verify Node.js (14.x or later required)
+
 node --version
 
 # Install the CDK CLI if you haven't already

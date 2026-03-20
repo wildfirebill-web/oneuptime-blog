@@ -1,4 +1,4 @@
-# How to Deploy Mimir on Rancher for Metrics Storage
+# How to Deploy Mimir on Rancher for Metrics Storage - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Grafana Mimir is a horizontally scalable, highly available, multi-tenant, long-t
 
 ```yaml
 # mimir-values.yaml - Mimir monolithic mode for small/medium deployments
+
 mimir:
   # Monolithic mode runs all components in a single binary
   structuredConfig:

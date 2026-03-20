@@ -32,6 +32,7 @@ The replication instance is an EC2 instance managed by DMS. Size it based on you
 
 ```python
 # Create a DMS replication instance
+
 import boto3
 
 dms = boto3.client('dms')

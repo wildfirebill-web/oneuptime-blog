@@ -58,6 +58,7 @@ Proper DNS configuration is critical for mail delivery. You need to set up the f
 
 ```bash
 # Example DNS records for domain: example.com
+
 # Mail server hostname: mail.example.com
 # Server IP: 203.0.113.10
 

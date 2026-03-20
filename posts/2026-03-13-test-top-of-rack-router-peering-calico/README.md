@@ -24,6 +24,7 @@ This guide covers test of Top-of-Rack Router Peering with Calico in Calico with 
 
 ```bash
 # Verify current configuration
+
 calicoctl get bgpconfiguration default -o yaml
 
 # Check node status

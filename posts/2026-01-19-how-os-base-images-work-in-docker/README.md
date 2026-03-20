@@ -24,6 +24,7 @@ You get a bash prompt that *looks* like Ubuntu. You can run `apt update`, instal
 
 ```bash
 # Inside the container, check the kernel
+
 $ uname -r
 6.5.0-44-generic  # This is your HOST kernel, not Ubuntu 22.04's
 

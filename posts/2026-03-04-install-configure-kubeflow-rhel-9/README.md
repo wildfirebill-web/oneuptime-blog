@@ -43,6 +43,7 @@ First, install kubectl and kustomize on your RHEL system.
 
 ```bash
 # Install kubectl
+
 sudo dnf install -y kubectl
 
 # If kubectl is not in RHEL repos, download it directly

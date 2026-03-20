@@ -28,6 +28,7 @@ When to use SSSD over Winbind:
 
 ```bash
 # Install SSSD, Samba, and AD integration tools
+
 sudo dnf install -y sssd sssd-ad sssd-tools samba samba-client \
     realmd adcli krb5-workstation oddjob oddjob-mkhomedir
 ```

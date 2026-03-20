@@ -136,6 +136,7 @@ To know if your connection pool settings are right, you need to monitor how they
 
 ```bash
 # Check active connections
+
 kubectl exec deploy/my-app -c istio-proxy -- curl -s localhost:15000/stats | grep "upstream_cx_active"
 
 # Check total connections opened

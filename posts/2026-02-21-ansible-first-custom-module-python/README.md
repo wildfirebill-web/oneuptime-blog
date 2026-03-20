@@ -29,6 +29,7 @@ Create a module that manages a configuration value:
 ```python
 #!/usr/bin/python
 # library/my_config.py
+
 from ansible.module_utils.basic import AnsibleModule
 import json
 import os

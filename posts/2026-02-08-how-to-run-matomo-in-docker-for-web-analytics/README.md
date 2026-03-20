@@ -24,6 +24,7 @@ Docker and Docker Compose are required. Matomo benefits from at least 2 GB of RA
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

@@ -19,6 +19,7 @@ AWS VPCs use the Amazon-provided DNS server at the VPC base CIDR plus 2 (e.g., 1
 
 ```hcl
 # VPC must have both DNS support and hostnames enabled
+
 # for instances to receive DNS names and resolve them
 resource "aws_vpc" "main" {
   cidr_block           = "10.0.0.0/16"

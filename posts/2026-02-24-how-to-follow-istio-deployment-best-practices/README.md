@@ -170,6 +170,7 @@ Monitor the Istio control plane itself:
 
 ```bash
 # Key istiod metrics to alert on
+
 # pilot_xds_pushes - configuration pushes to proxies
 # pilot_proxy_convergence_time - how long it takes proxies to get new config
 # pilot_conflict_inbound_listener - listener conflicts (indicates misconfiguration)

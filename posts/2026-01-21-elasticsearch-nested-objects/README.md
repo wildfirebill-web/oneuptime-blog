@@ -18,6 +18,7 @@ With the default object type, arrays of objects are flattened:
 
 ```bash
 # Index a document with object array
+
 curl -X PUT "https://localhost:9200/products/_doc/1" \
   -H "Content-Type: application/json" \
   -u elastic:password \

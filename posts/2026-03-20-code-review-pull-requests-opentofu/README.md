@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Code Review, Pull Requests, GitHub Actions, CI/CD, Team Workflow, Infrastructure as Code
+Tags: OpenTofu, Code Review, Pull Requests, GitHub Actions, CI/CD, Team Workflows, Infrastructure as Code
 
 Description: Learn how to establish an effective code review workflow for OpenTofu infrastructure changes, including automated plan comments on PRs, required reviewers, and review checklists.
 
@@ -26,6 +26,7 @@ graph LR
 
 ```yaml
 # .github/workflows/plan.yml
+
 name: OpenTofu Plan
 on:
   pull_request:
@@ -86,7 +87,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## OpenTofu Plan\n\`\`\`\n${truncated}\n\`\`\``
+              body: `## OpenTofu Plan\n```\n${truncated}\n````
             });
 
       - name: Fail if plan failed
@@ -172,8 +173,8 @@ resource "github_repository_file" "pr_template" {
 
 ## Best Practices
 
-- Post the full `tofu plan` output as a PR comment automatically — reviewers should not need to run the plan locally.
+- Post the full `tofu plan` output as a PR comment automatically - reviewers should not need to run the plan locally.
 - Require at least 2 approvals for production changes and configure CODEOWNERS so infrastructure team members are auto-requested.
 - Enable `dismiss_stale_reviews` so pushing new commits invalidates previous approvals and forces re-review.
-- Fail the CI pipeline if `tofu plan` exits non-zero — don't allow merging a PR with a broken plan.
-- Include a PR template with a checklist — it takes 30 seconds to fill in and catches common mistakes before review.
+- Fail the CI pipeline if `tofu plan` exits non-zero - don't allow merging a PR with a broken plan.
+- Include a PR template with a checklist - it takes 30 seconds to fill in and catches common mistakes before review.

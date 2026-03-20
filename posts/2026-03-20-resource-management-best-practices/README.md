@@ -6,6 +6,14 @@ Tags: OpenTofu, Best Practices, Infrastructure as Code, Resource Management, Ter
 
 Description: A comprehensive guide to OpenTofu resource management best practices, including naming conventions, tagging, lifecycle rules, and state management.
 
+Resource Management Best Practices in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Best Practices, Infrastructure as Code, Resource Management, Terraform
+
+Description: A comprehensive guide to OpenTofu resource management best practices, including naming conventions, tagging, lifecycle rules, and state management.
+
 ## Why Resource Management Matters
 
 Well-managed OpenTofu resources are easier to understand, modify safely, and audit. Poor resource management leads to:
@@ -136,12 +144,13 @@ moved {
 }
 ```
 
-## Resource Targeting
+Resource Targeting
 
 Use targeting carefully and only in emergencies:
 
 ```bash
 # Apply only a specific resource
+
 tofu apply -target=aws_instance.app
 
 # Destroy only a specific resource
@@ -179,7 +188,7 @@ terraform {
 }
 ```
 
-## Resource Count Hygiene
+Resource Count Hygiene
 
 ```hcl
 # Prefer for_each over count for resources that may be removed individually

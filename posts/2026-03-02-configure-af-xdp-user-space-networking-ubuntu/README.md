@@ -28,6 +28,7 @@ An XDP program (eBPF) running in the kernel decides which packets to redirect to
 
 ```bash
 # Check kernel version (needs 4.18+ for AF_XDP, 5.x recommended)
+
 uname -r
 
 # Install build dependencies

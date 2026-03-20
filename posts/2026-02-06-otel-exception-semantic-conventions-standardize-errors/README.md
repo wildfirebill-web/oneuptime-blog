@@ -28,6 +28,7 @@ Here is what correct exception recording looks like in different languages:
 
 ```python
 # Python - CORRECT way to record exceptions
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("order-service")

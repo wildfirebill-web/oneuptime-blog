@@ -911,6 +911,7 @@ function useRenderTracking(componentName) {
 
 ```bash
 # CLI
+
 npx lighthouse https://your-app.com --view
 
 # Or use Chrome DevTools > Lighthouse tab

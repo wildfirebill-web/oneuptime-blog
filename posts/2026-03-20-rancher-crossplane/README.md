@@ -1,4 +1,4 @@
-# How to Use Crossplane with Rancher
+# How to Use Crossplane with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Crossplane extends Kubernetes to manage cloud infrastructure using the same Kube
 
 ```bash
 # Add Crossplane Helm repository
+
 helm repo add crossplane-stable https://charts.crossplane.io/stable
 helm repo update
 

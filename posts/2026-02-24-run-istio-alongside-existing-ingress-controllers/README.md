@@ -103,6 +103,7 @@ The simplest approach is to use different hostnames for each controller. Say you
 
 ```bash
 # Get Istio gateway IP
+
 ISTIO_IP=$(kubectl get svc -n istio-system istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Add DNS record for testing (in your DNS provider)

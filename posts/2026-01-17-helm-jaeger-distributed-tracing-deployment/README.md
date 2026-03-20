@@ -57,6 +57,7 @@ flowchart TB
 
 ```bash
 # Add Jaeger Helm repository
+
 helm repo add jaegertracing https://jaegertracing.github.io/helm-charts
 helm repo update
 

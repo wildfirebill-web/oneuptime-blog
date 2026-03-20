@@ -55,6 +55,7 @@ The most straightforward approach is to exclude all non-Ansible directories.
 
 ```yaml
 # .ansible-lint - Exclude non-Ansible content
+
 ---
 profile: moderate
 

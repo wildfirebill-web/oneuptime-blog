@@ -223,6 +223,7 @@ Sometimes you need to guarantee a trace is captured, regardless of the sampling 
 
 ```bash
 # Force sampling for a specific request
+
 curl -H "x-b3-sampled: 1" http://my-service/api/checkout
 ```
 

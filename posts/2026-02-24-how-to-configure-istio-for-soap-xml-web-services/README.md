@@ -355,6 +355,7 @@ Since SOAP uses HTTP, Istio metrics work just like they would for any HTTP servi
 
 ```bash
 # Request rate and error rates
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'sum(rate(istio_requests_total{destination_service="payment-service.soap-services.svc.cluster.local"}[5m])) by (response_code)'
 

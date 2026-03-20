@@ -14,7 +14,7 @@ A corrupted OpenTofu state file can bring your infrastructure management to a ha
 
 Common symptoms include:
 
-```
+```text
 Error: Failed to load state: state snapshot was created by an incompatible version
 Error: The state file could not be loaded: unexpected token
 panic: runtime error: index out of range
@@ -26,6 +26,7 @@ Before taking any action, ensure that no one runs `tofu apply` or `tofu destroy`
 
 ```bash
 # Immediately lock the state if possible, or communicate to your team
+
 # Do NOT run tofu apply until the state is healthy
 ```
 

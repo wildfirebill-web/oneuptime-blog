@@ -1,4 +1,4 @@
-# How to Optimize Rancher API Performance
+# How to Optimize Rancher API Performance - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Optimize Rancher's API performance through connection pooling, cach
 
 ## Introduction
 
-Rancher's API is the backbone of its management capabilities—used by the UI, CLI, Terraform provider, and automation scripts. Poor API performance manifests as slow UI, timing out kubectl operations, and failed automation. This guide covers diagnosing and optimizing Rancher API performance.
+Rancher's API is the backbone of its management capabilities-used by the UI, CLI, Terraform provider, and automation scripts. Poor API performance manifests as slow UI, timing out kubectl operations, and failed automation. This guide covers diagnosing and optimizing Rancher API performance.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Rancher's API is the backbone of its management capabilities—used by the UI, C
 
 ```bash
 # Measure API response times
+
 time curl -sk \
   -H "Authorization: Bearer $TOKEN" \
   "https://rancher.example.com/v3/clusters" \

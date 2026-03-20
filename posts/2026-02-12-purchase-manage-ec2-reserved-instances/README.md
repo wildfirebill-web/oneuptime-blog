@@ -57,6 +57,7 @@ This command shows available RI offerings for a specific instance type:
 
 ```bash
 # List available RI offerings
+
 aws ec2 describe-reserved-instances-offerings \
   --instance-type m5.large \
   --product-description "Linux/UNIX" \

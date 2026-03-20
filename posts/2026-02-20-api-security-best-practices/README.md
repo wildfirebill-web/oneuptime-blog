@@ -34,6 +34,7 @@ graph TD
 
 ```python
 # Secure JWT validation middleware for FastAPI
+
 from fastapi import FastAPI, Request, HTTPException, Depends
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 import jwt

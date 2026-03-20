@@ -8,7 +8,7 @@ Description: Diagnose IGMP querier election failures that cause multicast group 
 
 ## Introduction
 
-IGMP requires exactly one **Querier** on each network segment to periodically send General Query messages and maintain membership tables. When querier election fails — due to misconfiguration, device failure, or version mismatch — snooping tables age out and multicast delivery stops even though receivers are still running.
+IGMP requires exactly one **Querier** on each network segment to periodically send General Query messages and maintain membership tables. When querier election fails - due to misconfiguration, device failure, or version mismatch - snooping tables age out and multicast delivery stops even though receivers are still running.
 
 ## How Querier Election Works
 
@@ -24,13 +24,13 @@ In IGMPv2 and v3, each multicast-capable router sends General Queries. When mult
 
 On a Cisco switch:
 
-```
+```text
 show ip igmp snooping querier vlan 20
 ```
 
 Expected output:
 
-```
+```text
 Vlan  IP Address      IGMP Version  Port
 ----  ----------      ------------  ----
 20    10.20.0.1       v2            Gi0/1
@@ -42,8 +42,9 @@ If the output is empty or shows "0.0.0.0", there is no active Querier on the seg
 
 When no router is present on the VLAN, enable the switch as IGMP Querier:
 
-```
+```text
 # Cisco IOS
+
 conf t
 ip igmp snooping vlan 20 querier
 ip igmp snooping vlan 20 querier address 10.20.0.1
@@ -86,7 +87,7 @@ cat /etc/pimd.conf | grep query
 
 On Cisco:
 
-```
+```text
 conf t
 interface vlan 20
  ip igmp query-interval 30         ! Send queries every 30s (default 60s)
@@ -96,7 +97,7 @@ interface vlan 20
 ## Step 6: Verify No ACL Is Blocking Queries
 
 ```bash
-# On Linux — ensure IGMP is not blocked by iptables
+# On Linux - ensure IGMP is not blocked by iptables
 sudo iptables -L INPUT -n -v | grep -i igmp
 
 # Allow IGMP if it is being dropped

@@ -1,4 +1,4 @@
-# How to Configure Sysctls for Containers in Portainer
+# How to Configure Sysctls for Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure Linux kernel parameters (sysctls) for Docker
 
 ## Introduction
 
-Sysctls are Linux kernel parameters that can be tuned at runtime via the `/proc/sys` filesystem. Docker allows setting container-namespaced sysctls to tune behavior for specific workloads — particularly useful for high-performance networking, database tuning, and real-time applications. Portainer exposes this configuration through its web interface.
+Sysctls are Linux kernel parameters that can be tuned at runtime via the `/proc/sys` filesystem. Docker allows setting container-namespaced sysctls to tune behavior for specific workloads - particularly useful for high-performance networking, database tuning, and real-time applications. Portainer exposes this configuration through its web interface.
 
 ## Prerequisites
 
@@ -20,17 +20,17 @@ Sysctls are Linux kernel parameters that can be tuned at runtime via the `/proc/
 Docker only allows setting sysctls that are namespaced per-container (safe to change without affecting the host):
 
 **Safe (namespaced) sysctls:**
-- `net.ipv4.*` — TCP/IP settings
-- `net.ipv6.*` — IPv6 settings
-- `net.core.somaxconn` — Socket connection queue
-- `net.unix.*` — Unix socket settings
-- `kernel.msgmax`, `kernel.msgmnb`, `kernel.msgmni` — IPC message queues
-- `kernel.sem` — Semaphores
-- `kernel.shmmax`, `kernel.shmall` — Shared memory
+- `net.ipv4.*` - TCP/IP settings
+- `net.ipv6.*` - IPv6 settings
+- `net.core.somaxconn` - Socket connection queue
+- `net.unix.*` - Unix socket settings
+- `kernel.msgmax`, `kernel.msgmnb`, `kernel.msgmni` - IPC message queues
+- `kernel.sem` - Semaphores
+- `kernel.shmmax`, `kernel.shmall` - Shared memory
 
 **Unsafe (require `--privileged`):**
-- `fs.*` — Filesystem parameters
-- `kernel.sysrq` — System request key
+- `fs.*` - Filesystem parameters
+- `kernel.sysrq` - System request key
 - Most non-namespaced sysctls
 
 ## Step 1: Configure Sysctls in Portainer
@@ -47,6 +47,7 @@ Docker only allows setting sysctls that are namespaced per-container (safe to ch
 
 ```yaml
 # docker-compose.yml
+
 services:
   nginx:
     image: nginx:alpine
@@ -134,7 +135,7 @@ For sysctls that need to be set on all containers system-wide, or for unsafe sys
 For unsafe sysctls, you need `--privileged` or must enable them in the daemon:
 
 ```bash
-# Unsafe sysctl — requires privileged container or daemon config
+# Unsafe sysctl - requires privileged container or daemon config
 docker run --privileged \
   --sysctl net.ipv4.ip_forward=1 \
   myimage
@@ -163,7 +164,7 @@ The container sysctl values are independent of the host.
 
 Some sysctls fail with an error in non-privileged containers:
 
-```
+```text
 Error response from daemon: invalid argument "vm.swappiness=10"
 for sysctl: not valid for kernel version
 ```
@@ -172,7 +173,7 @@ This means the sysctl is not namespaced and cannot be set per-container without 
 
 ## Security Considerations
 
-- **Only set sysctls you understand** — incorrect values can degrade performance or cause instability.
+- **Only set sysctls you understand** - incorrect values can degrade performance or cause instability.
 - **Avoid unsafe sysctls** unless absolutely necessary, as they affect the host kernel.
 - **Test sysctl changes** in a development environment before applying to production.
 - **Document sysctl rationale** in your docker-compose.yml comments.

@@ -16,6 +16,7 @@ When a model fails, dbt provides several pieces of information. Learning to read
 
 ```bash
 # Example failure output
+
 Running with dbt=1.7.0
 Found 42 models, 18 tests, 3 snapshots, 6 seeds, 8 sources
 

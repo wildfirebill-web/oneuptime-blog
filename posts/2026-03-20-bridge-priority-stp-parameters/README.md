@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bridge, STP, Spanning Tree Protocol, Linux, brctl, ip link, Bridge Priority, RSTP
+Tags: Bridge, STP, Spanning Tree Protocol, Linux, Brctl, Ip link, Bridge Priority, RSTP
 
 Description: Learn how to configure Spanning Tree Protocol (STP) parameters on Linux bridges including bridge priority, port cost, and port priority to control root bridge election and forwarding topology.
 
@@ -12,7 +12,7 @@ STP prevents Layer 2 loops in networks with multiple bridge paths. Configuring b
 
 ## STP Basics
 
-```
+```text
 Root Bridge: Lowest bridge ID (priority + MAC)
 Bridge ID: Priority (0-65535, lower=better) + bridge MAC
 
@@ -24,6 +24,7 @@ To become root bridge: set priority < 32768 (e.g., 4096)
 
 ```bash
 # Set bridge priority (must be multiple of 4096)
+
 brctl setbridgeprio br0 4096
 
 # Verify

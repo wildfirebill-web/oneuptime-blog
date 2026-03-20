@@ -30,6 +30,7 @@ Check your log output for trace context:
 
 ```bash
 # Look at raw log output
+
 kubectl logs my-app-pod | head -5
 
 # If you see logs without trace_id/span_id fields, correlation is missing:

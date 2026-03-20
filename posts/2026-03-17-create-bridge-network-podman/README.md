@@ -18,6 +18,7 @@ A bridge network creates a software-based network bridge on the host, allowing c
 
 ```bash
 # Create a bridge network (bridge is the default driver)
+
 podman network create my-bridge
 
 # Explicitly specify the bridge driver

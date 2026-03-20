@@ -24,6 +24,7 @@ Submit a PySpark job using the gcloud CLI:
 
 ```bash
 # Submit a simple PySpark job to Dataproc Serverless
+
 gcloud dataproc batches submit pyspark \
   gs://my-bucket/scripts/daily_etl.py \
   --region=us-central1 \

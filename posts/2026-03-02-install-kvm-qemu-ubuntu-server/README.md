@@ -16,6 +16,7 @@ Before installing anything, confirm your CPU supports hardware virtualization:
 
 ```bash
 # Check for Intel VT-x or AMD-V virtualization support
+
 grep -E --count '(vmx|svm)' /proc/cpuinfo
 
 # A non-zero result means virtualization is supported

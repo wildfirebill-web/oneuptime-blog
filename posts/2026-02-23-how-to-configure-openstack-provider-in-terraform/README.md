@@ -33,6 +33,7 @@ This gives you a shell script with your authentication details.
 
 ```hcl
 # versions.tf - Declare the OpenStack provider
+
 terraform {
   required_version = ">= 1.0"
 

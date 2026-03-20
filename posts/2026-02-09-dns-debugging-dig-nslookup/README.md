@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, DNS, Debugging, Networking, Dig
+Tags: Kubernetes, DNS, Debugging, Networking, dig
 
 Description: Master DNS troubleshooting in Kubernetes using dig and nslookup to diagnose service discovery issues and resolve name resolution problems.
 
@@ -22,6 +22,7 @@ Most minimal containers lack DNS tools. Create a debug pod:
 
 ```bash
 # Quick debug pod with DNS tools
+
 kubectl run dnstools --image=tutum/dnsutils -it --rm -- /bin/bash
 
 # Or use a more comprehensive image

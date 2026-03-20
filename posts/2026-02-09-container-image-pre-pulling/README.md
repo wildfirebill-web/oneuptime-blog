@@ -22,6 +22,7 @@ Use DaemonSets to pull critical images on all nodes automatically.
 
 ```yaml
 # image-prepuller-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

@@ -12,13 +12,14 @@ Tailscale is a mesh VPN built on WireGuard that automatically handles IPv6 in se
 
 Every Tailscale device automatically receives an IPv6 address:
 
-```
+```text
 IPv4 Tailscale address: 100.x.x.x (Carrier-Grade NAT range)
 IPv6 Tailscale address: fd7a:115c:a1e0::/48 (unique-local range)
 ```
 
 ```bash
 # After installing Tailscale, check assigned addresses
+
 tailscale ip
 
 # Example output:
@@ -137,4 +138,4 @@ nslookup -type=AAAA my-server.tailnet-name.ts.net 100.100.100.100
 # 100.100.100.100 is Tailscale's MagicDNS resolver
 ```
 
-Tailscale's automatic IPv6 address assignment and transparent IPv6 transport support means most IPv6 features work without any additional configuration — Tailscale handles the addressing and routing automatically.
+Tailscale's automatic IPv6 address assignment and transparent IPv6 transport support means most IPv6 features work without any additional configuration - Tailscale handles the addressing and routing automatically.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ruby, Rails, Puma, NGINX, Production, Web Development
+Tags: RHEL, Ruby, Rails, Puma, Nginx, Production, Web Development
 
 Description: Set up a production-ready Ruby on Rails server on RHEL with Puma as the application server and Nginx as a reverse proxy.
 
@@ -14,6 +14,7 @@ Ruby on Rails is a full-stack web framework. This guide covers setting up a prod
 
 ```bash
 # Install Ruby from AppStream
+
 sudo dnf module enable ruby:3.2 -y
 sudo dnf install -y ruby ruby-devel rubygem-bundler gcc gcc-c++ make \
   openssl-devel readline-devel zlib-devel libffi-devel \

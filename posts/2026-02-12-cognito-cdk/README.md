@@ -23,6 +23,7 @@ mkdir cognito-cdk && cd cognito-cdk
 npx cdk init app --language typescript
 
 # Install Cognito constructs
+
 npm install aws-cdk-lib constructs
 ```
 
@@ -351,7 +352,7 @@ new cdk.CfnOutput(this, 'IdentityPoolId', {
 });
 ```
 
-## Resource Server for Custom Scopes
+Resource Server for Custom Scopes
 
 If you need custom OAuth scopes for API authorization:
 

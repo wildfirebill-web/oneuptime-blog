@@ -14,6 +14,7 @@ GCP Access Context Manager lets you define fine-grained access control based on 
 
 ```hcl
 # main.tf - Organization-level access policy
+
 resource "google_access_context_manager_access_policy" "org_policy" {
   parent = "organizations/${var.org_id}"
   title  = "Organization Access Policy"

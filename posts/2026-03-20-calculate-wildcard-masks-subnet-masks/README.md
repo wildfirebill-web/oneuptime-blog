@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Wildcard Mask, Subnetting, ACL, OSPF, Networking
 
-Description: A wildcard mask is the bitwise inverse of a subnet mask, with 0 bits indicating matching positions and 1 bits indicating "don't care" positions, used in ACLs and routing protocol configurations.
+Description: A wildcard mask is the bitwise inverse of a subnet mask, with 0 bits indicating matching positions and 1 bits indicating 'don't care' positions, used in ACLs and routing protocol configurations.
 
 ## What Is a Wildcard Mask?
 
@@ -14,7 +14,7 @@ While subnet masks use 1s for network bits and 0s for host bits, wildcard masks 
 
 To compute a wildcard mask: subtract each octet of the subnet mask from 255.
 
-```
+```text
 Subnet mask: 255.255.255.0
 Wildcard:    255-255 . 255-255 . 255-255 . 255-0 = 0.0.0.255
 ```
@@ -49,6 +49,7 @@ def cidr_to_wildcard(prefix: int) -> str:
     return socket.inet_ntoa(struct.pack("!I", wildcard_int))
 
 # Examples
+
 for mask in ["255.255.255.0", "255.255.240.0", "255.255.255.252"]:
     print(f"Subnet {mask:16s} -> Wildcard {subnet_to_wildcard(mask)}")
 

@@ -121,6 +121,7 @@ tofu plan
 tofu apply
 
 # Verify TTL configuration
+
 aws dynamodb describe-time-to-live \
   --table-name my-project-user-sessions
 ```
@@ -146,4 +147,4 @@ resource "aws_cloudwatch_metric_alarm" "ttl_deleted_items" {
 
 ## Conclusion
 
-DynamoDB TTL is the most cost-effective way to manage data lifecycle for time-bounded records—deletions are free and happen within 48 hours of the expiry time. Note that TTL is not precise: items may persist for up to 48 hours after the TTL timestamp. Applications must filter expired items in query results if strict expiry is required. Use the stream filter to distinguish TTL deletions (by `dynamodb.amazonaws.com` principal) from application-initiated deletions.
+DynamoDB TTL is the most cost-effective way to manage data lifecycle for time-bounded records-deletions are free and happen within 48 hours of the expiry time. Note that TTL is not precise: items may persist for up to 48 hours after the TTL timestamp. Applications must filter expired items in query results if strict expiry is required. Use the stream filter to distinguish TTL deletions (by `dynamodb.amazonaws.com` principal) from application-initiated deletions.

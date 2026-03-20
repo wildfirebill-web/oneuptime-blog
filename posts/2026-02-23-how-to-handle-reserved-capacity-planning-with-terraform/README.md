@@ -22,6 +22,7 @@ Before purchasing reservations, you need to understand your baseline usage. Terr
 
 ```hcl
 # Data source to inventory current EC2 instances
+
 data "aws_instances" "running" {
   filter {
     name   = "instance-state-name"

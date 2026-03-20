@@ -51,6 +51,7 @@ Here's a deployment with properly configured memory settings:
 
 ```yaml
 # java-app-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

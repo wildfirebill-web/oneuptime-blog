@@ -8,7 +8,7 @@ Description: Learn how to configure Fleet to apply different Helm values to diff
 
 ## Introduction
 
-One of Fleet's most powerful capabilities is the ability to customize Helm values on a per-cluster or per-environment basis without duplicating your Helm chart configuration. This allows you to deploy the same application to development, staging, and production clusters with different resource allocations, replica counts, feature flags, and other settings — all from a single Git repository.
+One of Fleet's most powerful capabilities is the ability to customize Helm values on a per-cluster or per-environment basis without duplicating your Helm chart configuration. This allows you to deploy the same application to development, staging, and production clusters with different resource allocations, replica counts, feature flags, and other settings - all from a single Git repository.
 
 ## Prerequisites
 
@@ -31,6 +31,7 @@ Later values override earlier ones, giving you fine-grained control.
 
 ```yaml
 # fleet.yaml - Environment-specific Helm values
+
 defaultNamespace: my-app
 
 helm:
@@ -114,7 +115,7 @@ targets:
 
 Organize complex values into separate files:
 
-```
+```text
 my-app/
 ├── fleet.yaml
 ├── chart/

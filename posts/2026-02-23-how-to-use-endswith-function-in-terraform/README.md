@@ -16,6 +16,7 @@ The `endswith` function takes two arguments: a string and a suffix. It returns `
 
 ```hcl
 # Basic syntax
+
 endswith(string, suffix)
 ```
 

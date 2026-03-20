@@ -38,6 +38,7 @@ The flow is:
 
 ```bash
 # Find the latest ECS-optimized AMI
+
 ECS_AMI=$(aws ssm get-parameter \
   --name /aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id \
   --query 'Parameter.Value' --output text)

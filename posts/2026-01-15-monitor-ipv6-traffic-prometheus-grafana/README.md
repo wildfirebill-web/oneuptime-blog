@@ -80,6 +80,7 @@ Install and configure Node Exporter:
 
 ```bash
 # Download and install
+
 wget https://github.com/prometheus/node_exporter/releases/download/v1.8.0/node_exporter-1.8.0.linux-amd64.tar.gz
 tar xvfz node_exporter-1.8.0.linux-amd64.tar.gz
 cd node_exporter-1.8.0.linux-amd64

@@ -30,6 +30,7 @@ Image signing provides:
 
 ```bash
 # Install Cosign CLI
+
 # On macOS
 brew install cosign
 
@@ -239,4 +240,4 @@ EOF
 
 ## Conclusion
 
-NeuVector's Sigstore integration adds supply chain security enforcement to your container admission control workflow. By requiring that all production images are signed with known keys, you prevent unauthorized or tampered images from running in your cluster. Combined with NeuVector's vulnerability scanning and runtime security, Sigstore signature verification creates a comprehensive defense against supply chain attacks — ensuring images are both signed and free of known vulnerabilities before they reach production.
+NeuVector's Sigstore integration adds supply chain security enforcement to your container admission control workflow. By requiring that all production images are signed with known keys, you prevent unauthorized or tampered images from running in your cluster. Combined with NeuVector's vulnerability scanning and runtime security, Sigstore signature verification creates a comprehensive defense against supply chain attacks - ensuring images are both signed and free of known vulnerabilities before they reach production.

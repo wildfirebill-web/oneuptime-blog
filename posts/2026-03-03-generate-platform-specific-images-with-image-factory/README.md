@@ -35,6 +35,7 @@ For AWS deployments, you need an image that supports the EC2 instance metadata s
 
 ```yaml
 # aws-schematic.yaml
+
 # Extensions commonly needed for AWS
 customization:
   systemExtensions:

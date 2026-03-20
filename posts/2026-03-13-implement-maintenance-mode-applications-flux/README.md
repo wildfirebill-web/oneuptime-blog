@@ -29,6 +29,7 @@ The maintenance page should always be running, ready to accept traffic when acti
 
 ```yaml
 # infrastructure/maintenance-mode/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

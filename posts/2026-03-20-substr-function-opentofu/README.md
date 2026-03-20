@@ -1,8 +1,8 @@
-# How to Use the substr Function in OpenTofu
+# How to Use the substr Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, substr, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Substr, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the substr function in OpenTofu to extract a portion of a string by specifying a start offset and length.
 
@@ -18,8 +18,8 @@ The `substr()` function extracts a substring from a string given a starting offs
 substr(string, offset, length)
 ```
 
-- `offset` — starting character position (0-indexed); negative values count from the end
-- `length` — number of characters to extract; `-1` extracts to the end of the string
+- `offset` - starting character position (0-indexed); negative values count from the end
+- `length` - number of characters to extract; `-1` extracts to the end of the string
 
 ---
 

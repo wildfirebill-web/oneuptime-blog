@@ -22,6 +22,7 @@ This playbook creates users and deploys their SSH keys:
 
 ```yaml
 # playbook.yml - Create users with multiple SSH keys
+
 ---
 - name: Manage user accounts and SSH keys
   hosts: all

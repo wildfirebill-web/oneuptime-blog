@@ -25,6 +25,7 @@ This guide covers a complete fresh installation of Calico with eBPF enabled on a
 
 ```bash
 # Verify all nodes are awaiting CNI (NotReady is expected)
+
 kubectl get nodes
 # Expected: NotReady - normal before CNI is installed
 

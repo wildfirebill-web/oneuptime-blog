@@ -22,6 +22,7 @@ Calico flow logs capture metadata for every network connection passing through t
 
 ```yaml
 # Enable flow logging via FelixConfiguration
+
 apiVersion: projectcalico.org/v3
 kind: FelixConfiguration
 metadata:

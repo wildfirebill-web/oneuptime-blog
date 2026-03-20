@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flask, NGINX, Python, Logging, Debugging
+Tags: Flask, Nginx, Python, Logging, Debugging
 
 Description: Learn how to configure Flask and Nginx to properly capture and display Python tracebacks, including stderr handling, Gunicorn logging, and production error tracking strategies.
 
@@ -42,6 +42,7 @@ The problem is that Nginx only sees the HTTP response - it does not have access 
 
 ```python
 # app.py
+
 import logging
 from flask import Flask
 

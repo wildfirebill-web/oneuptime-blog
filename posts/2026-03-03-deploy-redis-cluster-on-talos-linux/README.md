@@ -27,6 +27,7 @@ Before diving in, it is worth understanding when you need a Redis Cluster versus
 
 ```yaml
 # redis-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

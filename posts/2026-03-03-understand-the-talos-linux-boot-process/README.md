@@ -57,6 +57,7 @@ The boot loader's job is to:
 
 ```bash
 # You can see the kernel command line on a running system
+
 talosctl read /proc/cmdline
 ```
 

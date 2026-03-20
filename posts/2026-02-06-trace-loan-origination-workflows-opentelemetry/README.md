@@ -143,6 +143,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("loan-origination")
 
 # How long each phase takes
+
 phase_duration = meter.create_histogram(
     name="loan.phase_duration_seconds",
     description="Duration of each loan origination phase",

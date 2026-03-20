@@ -74,6 +74,7 @@ Premium Tier is the default on GCP. When you create resources without specifying
 
 ```bash
 # Reserve a Premium Tier external IP (this is the default)
+
 gcloud compute addresses create my-premium-ip \
     --region=us-central1 \
     --network-tier=PREMIUM

@@ -20,6 +20,7 @@ But you can also work with the AWS Pricing API programmatically, which is more u
 
 ```bash
 # List available services in the Pricing API
+
 aws pricing describe-services \
   --region us-east-1 \
   --query "Services[].ServiceCode" \

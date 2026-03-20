@@ -86,6 +86,7 @@ Create an IstioOperator configuration for the first cluster:
 
 ```yaml
 # cluster1.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

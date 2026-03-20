@@ -26,6 +26,7 @@ Before starting, verify your Calico installation:
 
 ```bash
 # Check Calico version
+
 kubectl get pods -n kube-system -l k8s-app=calico-node -o jsonpath='{.items[0].spec.containers[0].image}'
 
 # Verify Calico is healthy

@@ -2,19 +2,20 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, pytest, Python, Testing, Infrastructure Testing
+Tags: OpenTofu, Pytest, Python, Testing, Infrastructure Testing
 
 Description: Learn how to use pytest-terraform to write Python-based tests for OpenTofu modules, leveraging pytest fixtures and assertions to validate deployed infrastructure.
 
 ## Introduction
 
-pytest-terraform is a pytest plugin that provides fixtures for running OpenTofu operations within Python tests. It integrates with the pytest ecosystem — parametrize, fixtures, conftest — making it familiar to Python developers who want to test infrastructure with tools they already know.
+pytest-terraform is a pytest plugin that provides fixtures for running OpenTofu operations within Python tests. It integrates with the pytest ecosystem - parametrize, fixtures, conftest - making it familiar to Python developers who want to test infrastructure with tools they already know.
 
 ## Installation
 
 ```bash
 pip install pytest-terraform boto3
 # or with uv:
+
 uv add pytest-terraform boto3 pytest
 ```
 
@@ -142,7 +143,7 @@ def test_instance_cpu_credits(instance_type, expected_cpu):
 
 ## Directory Structure
 
-```
+```text
 tests/
 ├── conftest.py
 ├── fixtures/
@@ -178,4 +179,4 @@ pytest tests/ -v -s
 
 ## Conclusion
 
-pytest-terraform bridges OpenTofu infrastructure testing with Python's mature testing ecosystem. Teams already using pytest for application testing can apply the same patterns — parametrize, fixtures, conftest — to infrastructure tests. The `scope="module"` option reuses deployed infrastructure across multiple test functions, reducing deployment time and cost when multiple tests validate the same infrastructure.
+pytest-terraform bridges OpenTofu infrastructure testing with Python's mature testing ecosystem. Teams already using pytest for application testing can apply the same patterns - parametrize, fixtures, conftest - to infrastructure tests. The `scope="module"` option reuses deployed infrastructure across multiple test functions, reducing deployment time and cost when multiple tests validate the same infrastructure.

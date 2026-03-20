@@ -14,6 +14,7 @@ Binding Nginx to a specific IP address is useful on multi-homed servers where di
 
 ```nginx
 # /etc/nginx/sites-available/app1
+
 server {
     # Only accept connections to 192.168.1.100 on port 80
     listen 192.168.1.100:80;

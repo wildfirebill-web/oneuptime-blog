@@ -27,6 +27,7 @@ This guide covers deploying the HAProxy Ingress controller and demonstrating cus
 
 ```yaml
 # clusters/my-cluster/haproxy-ingress/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

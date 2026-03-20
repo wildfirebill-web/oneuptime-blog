@@ -25,6 +25,7 @@ This guide covers installing Calico on GKE in network policy enforcement mode, p
 
 ```bash
 # Create a GKE cluster with network policy support disabled (Calico will provide it)
+
 gcloud container clusters create my-cluster \
   --zone us-central1-a \
   --num-nodes 3 \

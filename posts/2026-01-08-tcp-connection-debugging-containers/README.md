@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Debugging, Containers, Docker, Kubernetes, Networking, Troubleshooting, Netcat, Ss, Connection states
+Tags: TCP, Debugging, Containers, Docker, Kubernetes, Networking, Troubleshooting, netcat, ss, Connection States
 
 Description: A comprehensive guide to diagnosing and resolving TCP connection problems in containerized environments using essential networking tools and techniques.
 
@@ -50,6 +50,7 @@ The `ss` command is the modern replacement for `netstat` and provides detailed s
 
 ```bash
 # View all TCP connections with process information
+
 ss -tlnp
 
 # Show all TCP connections with state information

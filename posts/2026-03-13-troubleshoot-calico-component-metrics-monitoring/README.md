@@ -24,6 +24,7 @@ Understanding the Prometheus service discovery chain helps diagnose which layer 
 
 ```bash
 # Check if ServiceMonitors were created
+
 kubectl get servicemonitor -n monitoring | grep calico
 
 # Check if Prometheus is watching the monitoring namespace

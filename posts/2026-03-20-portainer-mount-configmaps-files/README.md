@@ -1,4 +1,4 @@
-# How to Mount ConfigMaps as Files in Portainer
+# How to Mount ConfigMaps as Files in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to mount Kubernetes ConfigMaps as files inside containers
 
 ## Introduction
 
-Many applications read configuration from files rather than environment variables — Nginx reads `nginx.conf`, databases read `postgresql.conf`, and Java apps read `application.yaml`. ConfigMaps can be mounted as volumes, creating files inside containers at a specified path. This allows you to manage configuration files in Kubernetes without rebuilding images. Portainer supports configuring volume mounts through both its form UI and YAML editor.
+Many applications read configuration from files rather than environment variables - Nginx reads `nginx.conf`, databases read `postgresql.conf`, and Java apps read `application.yaml`. ConfigMaps can be mounted as volumes, creating files inside containers at a specified path. This allows you to manage configuration files in Kubernetes without rebuilding images. Portainer supports configuring volume mounts through both its form UI and YAML editor.
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ When creating or editing a Portainer application:
 1. Find the **Volumes** section
 2. Click **+ Add volume**
 3. Configure the volume mount:
-   ```
+   ```text
    Type: ConfigMap
    ConfigMap name: nginx-config
    Mount path: /etc/nginx/conf.d
@@ -164,7 +164,7 @@ volumes:
   - name: script-volume
     configMap:
       name: init-scripts
-      defaultMode: 0755    # rwxr-xr-x — executable scripts
+      defaultMode: 0755    # rwxr-xr-x - executable scripts
 ```
 
 ```yaml
@@ -172,7 +172,7 @@ volumes:
   - name: config-volume
     configMap:
       name: app-config
-      defaultMode: 0644    # rw-r--r-- — readable config files (default)
+      defaultMode: 0644    # rw-r--r-- - readable config files (default)
 ```
 
 ## Step 7: Verify File Mounts
@@ -181,6 +181,7 @@ Check that files are mounted correctly in running pods:
 
 ```bash
 # Open a shell in the pod
+
 kubectl exec -it <pod-name> -n production -- /bin/sh
 
 # List mounted config files
@@ -205,7 +206,7 @@ kubectl exec <pod-name> -n production -- \
   cat /etc/nginx/conf.d/default.conf
 ```
 
-## Step 8: Dynamic Updates — ConfigMap Volume Auto-Sync
+## Step 8: Dynamic Updates - ConfigMap Volume Auto-Sync
 
 Unlike environment variables, ConfigMap volume mounts auto-update when the ConfigMap changes (within the kubelet sync period, typically 60 seconds):
 
@@ -232,15 +233,15 @@ kubectl rollout restart deployment/nginx -n production
 
 Typical applications that benefit from ConfigMap file mounts:
 
-```
-nginx/apache       — Virtual host configuration
-PostgreSQL         — postgresql.conf, pg_hba.conf
-Prometheus         — prometheus.yml, alert rules
-Grafana            — datasource.yaml, dashboard provisioning
-Fluentd            — fluent.conf
-Java (Spring Boot) — application.yaml, logback.xml
-Python             — gunicorn.conf.py, logging.conf
-Redis              — redis.conf
+```text
+nginx/apache       - Virtual host configuration
+PostgreSQL         - postgresql.conf, pg_hba.conf
+Prometheus         - prometheus.yml, alert rules
+Grafana            - datasource.yaml, dashboard provisioning
+Fluentd            - fluent.conf
+Java (Spring Boot) - application.yaml, logback.xml
+Python             - gunicorn.conf.py, logging.conf
+Redis              - redis.conf
 ```
 
 ## Conclusion

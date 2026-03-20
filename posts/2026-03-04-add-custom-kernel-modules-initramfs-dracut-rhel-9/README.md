@@ -34,6 +34,7 @@ For modules that ship with the RHEL kernel but are not automatically included:
 
 ```bash
 # Check which modules are currently in the initramfs
+
 lsinitrd /boot/initramfs-$(uname -r).img | grep "\.ko"
 
 # Create a dracut config to add specific modules

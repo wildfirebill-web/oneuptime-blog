@@ -1,10 +1,10 @@
-# How to Fix "Connection Reset by Peer" Errors in Portainer
+# How to Fix 'Connection Reset by Peer' Errors in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Networking, Reverse Proxy
 
-Description: Diagnose and fix "Connection Reset by Peer" errors in Portainer, which commonly occur when using reverse proxies, WebSocket connections, or TLS misconfiguration.
+Description: Diagnose and fix 'Connection Reset by Peer' errors in Portainer, which commonly occur when using reverse proxies, WebSocket connections, or TLS misconfiguration.
 
 ## Introduction
 
@@ -22,6 +22,7 @@ Description: Diagnose and fix "Connection Reset by Peer" errors in Portainer, wh
 
 ```bash
 # Check Portainer logs during the error
+
 docker logs portainer -f --tail 50
 
 # Check for WebSocket-related errors
@@ -43,7 +44,7 @@ If you see "ERR_CONNECTION_RESET" in Chrome or Firefox:
 
 This almost always indicates a reverse proxy WebSocket configuration issue.
 
-## Scenario 2: Nginx Reverse Proxy — Fix WebSocket Support
+## Scenario 2: Nginx Reverse Proxy - Fix WebSocket Support
 
 ```nginx
 server {
@@ -56,7 +57,7 @@ server {
 
         proxy_http_version 1.1;
 
-        # WebSocket upgrade headers — CRITICAL
+        # WebSocket upgrade headers - CRITICAL
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
 
@@ -80,7 +81,7 @@ server {
 }
 ```
 
-## Scenario 3: Apache Reverse Proxy — Fix WebSocket Support
+## Scenario 3: Apache Reverse Proxy - Fix WebSocket Support
 
 ```apache
 <VirtualHost *:443>
@@ -111,7 +112,7 @@ server {
 </VirtualHost>
 ```
 
-## Scenario 4: Traefik — Fix Connection Reset
+## Scenario 4: Traefik - Fix Connection Reset
 
 ```yaml
 # traefik.yml dynamic configuration
@@ -139,7 +140,7 @@ http:
           X-Forwarded-Proto: "https"
 ```
 
-## Scenario 5: Cloudflare — Connection Reset by Peer
+## Scenario 5: Cloudflare - Connection Reset by Peer
 
 Cloudflare's default WebSocket support settings can cause issues:
 

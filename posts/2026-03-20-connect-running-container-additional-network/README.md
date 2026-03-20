@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, docker network connect, Containers
+Tags: Docker, Networking, IPv4, Docker network connect, Containers
 
 Description: Add a running Docker container to an additional network using docker network connect, assign a static IP, and disconnect it when no longer needed without restarting the container.
 
@@ -14,17 +14,18 @@ Description: Add a running Docker container to an additional network using docke
 
 ```bash
 # The container "web-app" is already running on "frontend-net"
+
 # Connect it to "backend-net" as well
 docker network connect backend-net web-app
 
-# Verify — container now has two network interfaces
+# Verify - container now has two network interfaces
 docker inspect web-app \
   --format '{{range $net, $cfg := .NetworkSettings.Networks}}{{$net}}: {{$cfg.IPAddress}}{{"\n"}}{{end}}'
 ```
 
 Output:
 
-```
+```text
 frontend-net: 172.20.0.2
 backend-net: 172.21.0.3
 ```

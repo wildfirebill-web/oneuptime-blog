@@ -1,19 +1,19 @@
-# How to Troubleshoot "Request Timed Out" vs "Destination Unreachable"
+# How to Troubleshoot 'Request Timed Out' vs 'Destination Unreachable'
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Ping, ICMP, Networking, Troubleshooting, IPv4, Firewall
 
-Description: Understand the key differences between "Request Timed Out" and "Destination Unreachable" ping errors, and follow the right diagnostic path for each.
+Description: Understand the key differences between 'Request Timed Out' and 'Destination Unreachable' ping errors, and follow the right diagnostic path for each.
 
 These two errors look similar but point to completely different problems. Confusing them leads to hours of wasted troubleshooting. Understanding the distinction immediately narrows your investigation.
 
 ## Key Differences
 
-```
+```yaml
 Error Type                         What It Means
 ---------------------------------  ------------------------------------------
-"Destination Host Unreachable"     ICMP error returned — routing failure
+"Destination Host Unreachable"     ICMP error returned - routing failure
                                    You got feedback: network infrastructure
                                    knows the host is unreachable
 
@@ -27,13 +27,14 @@ Error Type                         What It Means
 
 ```bash
 # Linux ping output showing unreachable:
+
 ping 10.50.0.1
 # From 192.168.1.1 icmp_seq=1 Destination Host Unreachable
 # ^--- Response came back quickly, from router 192.168.1.1
 
 # Diagnose: find which router is sending the error
 traceroute 10.50.0.1
-# hop 1: 192.168.1.1  — this router is sending the error
+# hop 1: 192.168.1.1  - this router is sending the error
 # Shows the exact router that has no route to the destination
 
 # Fix options:
@@ -99,7 +100,7 @@ sudo ip route add 10.0.0.0/8 via 10.50.0.254
 
 ## Quick Diagnostic Decision Tree
 
-```
+```text
 Ping fails
     |
     ├─ "Destination Host Unreachable" received?

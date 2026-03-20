@@ -61,6 +61,7 @@ Edit the argocd-cm ConfigMap:
 
 ```yaml
 # argocd-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

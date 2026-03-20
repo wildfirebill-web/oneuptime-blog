@@ -55,7 +55,7 @@ class-map type inspect match-any DMZ-SERVICES
 ! Define inspection policy
 policy-map type inspect INSIDE-TO-OUTSIDE-POLICY
  class type inspect INSIDE-TO-OUTSIDE-TRAFFIC
-  inspect                    ! Stateful inspection — allow return traffic
+  inspect                    ! Stateful inspection - allow return traffic
  class class-default
   drop log
 
@@ -85,7 +85,7 @@ zone-pair security OUTSIDE-TO-DMZ source OUTSIDE destination DMZ
 zone-pair security INSIDE-TO-DMZ source INSIDE destination DMZ
  service-policy type inspect INSIDE-TO-DMZ-POLICY
 
-! Self zone — allows traffic to/from the router itself
+! Self zone - allows traffic to/from the router itself
 zone-pair security INSIDE-TO-SELF source INSIDE destination self
  service-policy type inspect INSIDE-TO-OUTSIDE-POLICY
 ```

@@ -29,6 +29,7 @@ Before you start migrating, audit your code for these common stateful patterns:
 
 ```python
 # Pattern 1: In-memory caches
+
 product_cache = {}  # Cached across requests
 
 # Pattern 2: Session data stored in the process

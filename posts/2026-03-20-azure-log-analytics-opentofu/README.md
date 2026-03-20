@@ -14,6 +14,7 @@ Log Analytics Workspaces are the central data stores for Azure Monitor logs. The
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -203,7 +204,7 @@ output "workspace_primary_key" {
 ## Best Practices
 
 - Use a single workspace per environment to simplify querying and cost management.
-- Set `retention_in_days` based on compliance requirements — 90 days is a common baseline.
+- Set `retention_in_days` based on compliance requirements - 90 days is a common baseline.
 - Use the `PerGB2018` SKU unless you have specific commitment tier requirements.
 - Enable Azure Defender integration by linking the workspace to Microsoft Defender for Cloud.
 - Export workspace data to Azure Storage for long-term archival if you need retention beyond 730 days.

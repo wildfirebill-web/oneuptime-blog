@@ -30,6 +30,7 @@ graph TB
 
 ```hcl
 # secrets.tf
+
 resource "kubernetes_secret" "datadog" {
   metadata {
     name      = "datadog-agent"
@@ -151,8 +152,8 @@ resource "datadog_monitor" "high_cpu" {
 
 ## Best Practices
 
-- Store the Datadog API key in a Kubernetes Secret and reference it via `apiKeyExistingSecret` — never put it in Helm values.
+- Store the Datadog API key in a Kubernetes Secret and reference it via `apiKeyExistingSecret` - never put it in Helm values.
 - Enable the Cluster Agent alongside the DaemonSet Agent for Kubernetes state metrics and autoscaling support.
 - Set `containerCollectAll = true` to collect logs from all containers, then use Datadog pipelines to filter at the backend.
 - Enable APM `portEnabled = true` and instrument services with the Datadog tracing library for end-to-end request tracing.
-- Tag everything with `env:${var.environment}` — it enables Datadog's environment-scoped dashboards and alerts to work correctly.
+- Tag everything with `env:${var.environment}` - it enables Datadog's environment-scoped dashboards and alerts to work correctly.

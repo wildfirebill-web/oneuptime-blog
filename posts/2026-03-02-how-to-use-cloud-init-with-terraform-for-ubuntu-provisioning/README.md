@@ -24,6 +24,7 @@ cloud-init user data is typically written as YAML, starting with `#cloud-config`
 #cloud-config
 
 # Update package cache and upgrade all packages
+
 package_update: true
 package_upgrade: true
 

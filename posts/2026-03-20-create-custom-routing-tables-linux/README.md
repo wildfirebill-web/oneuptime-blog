@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Routing, Policy Routing, iproute2, Networking, ip rule
+Tags: Linux, Routing, Policy Routing, iproute2, Networking, Ip rule
 
 Description: Create custom routing tables on Linux using iproute2 to implement policy-based routing, enabling different traffic flows to use different routes based on source IP, marks, or interfaces.
 
 ## Introduction
 
-Linux supports multiple routing tables (numbered 0–252, plus special tables `local`, `main`, `default`). Custom routing tables allow policy-based routing — different packets can use different routing tables based on rules. This is essential for multi-homing, VPN split tunneling, and traffic engineering.
+Linux supports multiple routing tables (numbered 0–252, plus special tables `local`, `main`, `default`). Custom routing tables allow policy-based routing - different packets can use different routing tables based on rules. This is essential for multi-homing, VPN split tunneling, and traffic engineering.
 
 ## Register a Custom Table Name (Optional)
 
@@ -16,6 +16,7 @@ Table names are defined in `/etc/iproute2/rt_tables`:
 
 ```bash
 # Add a custom table name (append to the file)
+
 echo "100 vpn" >> /etc/iproute2/rt_tables
 echo "200 isp2" >> /etc/iproute2/rt_tables
 

@@ -22,6 +22,7 @@ The FROM instruction accepts an image name with an optional tag or digest:
 
 ```dockerfile
 # Basic format
+
 FROM <image>[:<tag>]
 
 # With digest for exact pinning

@@ -48,6 +48,7 @@ Edge security policies use a different type parameter when created:
 
 ```bash
 # Create an edge security policy
+
 gcloud compute security-policies create cdn-edge-policy \
   --type=CLOUD_ARMOR_EDGE \
   --description="Edge security policy for CDN content" \

@@ -20,6 +20,7 @@ First, enable firewall rule logging on your VPC network:
 
 ```hcl
 # firewall-logging.tf
+
 # Enable logging on all firewall rules for usage tracking
 
 resource "google_compute_firewall" "example_rule" {

@@ -20,6 +20,7 @@ A network namespace is a logical copy of the Linux network stack, complete with 
 
 ```bash
 # Create a new network namespace named "ns1"
+
 ip netns add ns1
 
 # Verify it was created
@@ -85,7 +86,7 @@ ip netns exec ns1 ip addr show lo
 Each namespace has its own independent network configuration. Changes in one namespace do not affect others or the host:
 
 ```bash
-# This only affects ns1 — does not change host routing
+# This only affects ns1 - does not change host routing
 ip netns exec ns1 ip route add default via 10.0.0.1
 
 # Host routing is unchanged
@@ -106,4 +107,4 @@ ip netns list
 
 ## Conclusion
 
-Creating a network namespace with `ip netns add` provides a completely isolated network environment. New namespaces start with only a down loopback interface and no connectivity — you must explicitly add interfaces and routes. Network namespaces are the building block for container networking, virtual network labs, and network function testing.
+Creating a network namespace with `ip netns add` provides a completely isolated network environment. New namespaces start with only a down loopback interface and no connectivity - you must explicitly add interfaces and routes. Network namespaces are the building block for container networking, virtual network labs, and network function testing.

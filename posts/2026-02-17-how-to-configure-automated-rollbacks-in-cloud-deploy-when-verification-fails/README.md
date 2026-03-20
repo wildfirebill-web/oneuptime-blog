@@ -29,6 +29,7 @@ Verification is configured at the pipeline stage level. You need to set `verify:
 
 ```yaml
 # pipeline.yaml - Enable verification on staging and production stages
+
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:

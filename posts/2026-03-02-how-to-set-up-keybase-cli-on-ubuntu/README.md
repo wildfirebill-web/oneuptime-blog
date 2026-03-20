@@ -16,6 +16,7 @@ Keybase provides packages for Ubuntu. Install from their official repository:
 
 ```bash
 # Download and install the Keybase package
+
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install ./keybase_amd64.deb
 

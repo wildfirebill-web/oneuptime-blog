@@ -28,6 +28,7 @@ Generate a custom Talos image with the Tailscale extension:
 
 ```bash
 # Create a schematic with Tailscale
+
 curl -X POST https://factory.talos.dev/schematics \
   -H "Content-Type: application/json" \
   -d '{

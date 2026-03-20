@@ -212,6 +212,7 @@ Verify Elasticsearch is running correctly:
 
 ```bash
 # Check cluster health
+
 curl -X GET "localhost:9200/_cluster/health?pretty"
 
 # Expected output for development

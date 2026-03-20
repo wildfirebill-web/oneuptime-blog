@@ -17,23 +17,24 @@ This controls:
 
 ## The 10 Destination Selection Rules
 
-```
-Rule 1:  Avoid unusable — skip if no valid source exists
-Rule 2:  Prefer matching scope — src and dst same scope wins
-Rule 3:  Avoid deprecated source — skip if src is deprecated
-Rule 4:  Prefer home address — Mobile IPv6 (rarely used)
-Rule 5:  Prefer matching label — src label == dst label
-Rule 6:  Prefer higher precedence — from policy table
-Rule 7:  Prefer native — native IPv6 over 6to4/Teredo
-Rule 8:  Prefer smaller scope — link-local before global
-Rule 9:  Longest matching prefix — most common bits wins
-Rule 10: Keep order unchanged — stable sort, first DNS result stays
+```text
+Rule 1:  Avoid unusable - skip if no valid source exists
+Rule 2:  Prefer matching scope - src and dst same scope wins
+Rule 3:  Avoid deprecated source - skip if src is deprecated
+Rule 4:  Prefer home address - Mobile IPv6 (rarely used)
+Rule 5:  Prefer matching label - src label == dst label
+Rule 6:  Prefer higher precedence - from policy table
+Rule 7:  Prefer native - native IPv6 over 6to4/Teredo
+Rule 8:  Prefer smaller scope - link-local before global
+Rule 9:  Longest matching prefix - most common bits wins
+Rule 10: Keep order unchanged - stable sort, first DNS result stays
 ```
 
 ## Policy Table Precedence (Rule 6)
 
 ```bash
 # Default policy table precedence values
+
 # Higher = preferred destination
 
 # ::1/128         → precedence 50  (loopback, always first)
@@ -147,7 +148,7 @@ EOF
 ip addrlabel add prefix ::ffff:0:0/96 label 4
 # Then set precedence by modifying /etc/gai.conf
 
-# /etc/gai.conf — getaddrinfo() policy table for userspace
+# /etc/gai.conf - getaddrinfo() policy table for userspace
 cat > /etc/gai.conf << 'EOF'
 # Uncomment to prefer IPv4 over IPv6
 #precedence ::ffff:0:0/96  100
@@ -203,4 +204,4 @@ gcc -o /tmp/gai_debug /tmp/gai_debug.c
 
 ## Conclusion
 
-RFC 6724 destination address selection sorts the `getaddrinfo()` result list so applications connect to the best address without any code changes. The default policy prefers global IPv6 (precedence 40) over IPv4 (precedence 35), so dual-stack hosts choose IPv6 automatically. Label matching (Rule 5) keeps ULA addresses local and prevents them from being used for global destinations. Modify `/etc/gai.conf` on Linux to adjust precedence — for example, to temporarily prefer IPv4 while debugging IPv6 issues.
+RFC 6724 destination address selection sorts the `getaddrinfo()` result list so applications connect to the best address without any code changes. The default policy prefers global IPv6 (precedence 40) over IPv4 (precedence 35), so dual-stack hosts choose IPv6 automatically. Label matching (Rule 5) keeps ULA addresses local and prevents them from being used for global destinations. Modify `/etc/gai.conf` on Linux to adjust precedence - for example, to temporarily prefer IPv4 while debugging IPv6 issues.

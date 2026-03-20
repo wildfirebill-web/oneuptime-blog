@@ -61,6 +61,7 @@ Attach the `AmazonDMSVPCManagementRole` managed policy to this role. You can do 
 
 ```bash
 # Create the DMS VPC role
+
 aws iam create-role \
   --role-name dms-vpc-role \
   --assume-role-policy-document file://dms-trust-policy.json

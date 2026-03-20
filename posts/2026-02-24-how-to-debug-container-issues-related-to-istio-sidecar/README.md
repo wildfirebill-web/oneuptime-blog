@@ -256,6 +256,7 @@ Here's a quick reference of commands for debugging container issues with Istio:
 
 ```bash
 # Overall pod status
+
 kubectl describe pod my-app-xyz
 
 # Container logs

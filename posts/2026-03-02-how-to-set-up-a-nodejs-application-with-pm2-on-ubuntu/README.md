@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Node.js, PM2, NGINX, Web Server
+Tags: Ubuntu, Node.js, PM2, Nginx, Web Server
 
 Description: Deploy and manage a Node.js application on Ubuntu using PM2 for process management, with Nginx as a reverse proxy and automatic startup on server reboot.
 
@@ -16,6 +16,7 @@ Use NodeSource's repository for a current Node.js version:
 
 ```bash
 # Install Node.js 20 LTS from NodeSource
+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install nodejs -y
 

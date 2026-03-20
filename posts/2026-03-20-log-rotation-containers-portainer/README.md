@@ -26,6 +26,7 @@ Without log rotation, container log files grow indefinitely until they fill the 
 
 ```bash
 # Apply the changes
+
 sudo systemctl restart docker
 
 # Verify default log options
@@ -208,4 +209,4 @@ sudo logrotate -f /etc/logrotate.d/docker-containers
 
 ## Conclusion
 
-Log rotation is essential disk management for containerized environments. Docker's built-in `max-size` and `max-file` options in the json-file driver are the simplest approach — no external tools needed. Set them globally in `daemon.json` for consistent behavior, then override per-service for high-volume containers. The `compress: "true"` option is often overlooked but typically saves 60-80% of log storage for text-based logs. Monitor log sizes regularly and tune the rotation thresholds based on observed growth rates. Portainer's compose YAML makes it straightforward to apply different log retention policies to different services based on their criticality and volume.
+Log rotation is essential disk management for containerized environments. Docker's built-in `max-size` and `max-file` options in the json-file driver are the simplest approach - no external tools needed. Set them globally in `daemon.json` for consistent behavior, then override per-service for high-volume containers. The `compress: "true"` option is often overlooked but typically saves 60-80% of log storage for text-based logs. Monitor log sizes regularly and tune the rotation thresholds based on observed growth rates. Portainer's compose YAML makes it straightforward to apply different log retention policies to different services based on their criticality and volume.

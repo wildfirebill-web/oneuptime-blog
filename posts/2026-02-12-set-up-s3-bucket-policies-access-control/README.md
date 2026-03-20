@@ -47,6 +47,7 @@ Apply a bucket policy using the CLI:
 
 ```bash
 # Create the policy file
+
 cat > bucket-policy.json << 'EOF'
 {
     "Version": "2012-10-17",

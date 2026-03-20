@@ -262,6 +262,7 @@ Different rate limits for different user tiers or API endpoints.
 
 ```python
 # Python - Tiered rate limiting implementation
+
 from dataclasses import dataclass
 from enum import Enum
 from typing import Optional, Tuple

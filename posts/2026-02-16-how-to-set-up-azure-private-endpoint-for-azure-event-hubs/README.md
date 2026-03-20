@@ -35,6 +35,7 @@ If you do not already have one, create an Event Hubs namespace:
 
 ```bash
 # Create an Event Hubs namespace
+
 az eventhubs namespace create \
   --name myEventHubNamespace \
   --resource-group myResourceGroup \

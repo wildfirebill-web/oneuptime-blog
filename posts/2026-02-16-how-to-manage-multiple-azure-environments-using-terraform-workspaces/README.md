@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Workspaces, Environment, Infrastructure as Code, DevOps, State Management
+Tags: Terraform, Azure, Workspaces, Environments, Infrastructure as Code, DevOps, State Management
 
 Description: A practical guide to using Terraform workspaces for managing multiple Azure environments like dev, staging, and production from a single codebase.
 
@@ -20,6 +20,7 @@ By default, every Terraform project starts in a workspace called "default." You 
 
 ```bash
 # Create workspaces for each environment
+
 terraform workspace new dev
 terraform workspace new staging
 terraform workspace new production

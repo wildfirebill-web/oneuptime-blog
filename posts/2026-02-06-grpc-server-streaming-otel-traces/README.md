@@ -246,6 +246,7 @@ func watchPrices(client pb.StockServiceClient, symbols []string) error {
 
 ```promql
 # Average stream duration by method
+
 histogram_avg(grpc_server_stream_duration[5m])
 
 # Active streams right now

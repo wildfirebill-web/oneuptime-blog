@@ -24,6 +24,7 @@ CodeCommit supports three authentication methods:
 
 ```bash
 # Create an IAM user for Flux (if one does not already exist)
+
 aws iam create-user --user-name flux-codecommit
 
 # Attach the CodeCommit policy

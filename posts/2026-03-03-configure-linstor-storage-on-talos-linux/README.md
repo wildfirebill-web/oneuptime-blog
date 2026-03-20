@@ -27,6 +27,7 @@ LINSTOR requires the DRBD kernel module and a few other components. Create a mac
 
 ```yaml
 # linstor-patch.yaml
+
 machine:
   install:
     extensions:

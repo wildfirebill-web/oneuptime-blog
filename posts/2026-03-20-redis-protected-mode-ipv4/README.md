@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, IPv4, protected-mode, Security, Configuration, Cache
+Tags: Redis, IPv4, Protected-mode, Security, Configuration, Cache
 
 Description: Understand Redis protected-mode behavior, when to enable or disable it, and how to safely configure Redis for remote IPv4 access while maintaining security.
 
@@ -14,6 +14,7 @@ Redis `protected-mode` (introduced in 3.2) is a safety net that prevents remote 
 
 ```bash
 # protected-mode = yes (default):
+
 # If Redis:
 #   - Is bound to a non-loopback address (i.e., 0.0.0.0 or 10.0.0.5)
 #   AND
@@ -53,7 +54,7 @@ protected-mode no
 # - Deployment might accidentally expose Redis publicly
 
 # /etc/redis/redis.conf
-protected-mode yes     # Default — keep this for safety
+protected-mode yes     # Default - keep this for safety
 
 # If you want remote access WITH protected-mode enabled,
 # you must set requirepass:
@@ -93,7 +94,7 @@ redis-cli info server | grep -E "protected|bind|requirepass"
 ## Recommended Production Configuration
 
 ```bash
-# /etc/redis/redis.conf — production settings
+# /etc/redis/redis.conf - production settings
 
 # Bind to specific IPv4 only
 bind 127.0.0.1 10.0.0.5

@@ -45,6 +45,7 @@ ssh <node-name> "df -h && free -m"
 ```bash
 ssh <node-name> << 'EOF'
 # Clear journal logs
+
 journalctl --vacuum-size=200M
 
 # Clear container runtime cache

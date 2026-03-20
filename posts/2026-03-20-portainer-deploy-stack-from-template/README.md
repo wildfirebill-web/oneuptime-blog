@@ -56,12 +56,12 @@ A stack template in Portainer (type `2`) contains:
 
 Popular stack templates include:
 
-- **WordPress** — WordPress + MySQL
-- **Ghost** — Ghost CMS + MySQL
-- **Nextcloud** — File sharing platform
-- **Gitea** — Self-hosted Git service
-- **MEAN** — MongoDB + Express + Angular + Node
-- **Prometheus + Grafana** — Monitoring stack
+- **WordPress** - WordPress + MySQL
+- **Ghost** - Ghost CMS + MySQL
+- **Nextcloud** - File sharing platform
+- **Gitea** - Self-hosted Git service
+- **MEAN** - MongoDB + Express + Angular + Node
+- **Prometheus + Grafana** - Monitoring stack
 
 ## Step 3: Click the Stack Template
 
@@ -75,7 +75,7 @@ Click on your chosen template. The configuration panel expands showing:
 
 For the **Ghost** stack template example:
 
-```
+```text
 Stack name:        my-ghost-blog
 
 Ghost port:        2368
@@ -149,10 +149,10 @@ Visit the application URL in your browser to confirm it works.
 
 From the stack detail view:
 
-- **Edit** — Modify the Compose file or environment variables
-- **Stop** — Stop all services
-- **Remove** — Delete the stack (optionally delete volumes)
-- **Logs** — View per-container logs
+- **Edit** - Modify the Compose file or environment variables
+- **Stop** - Stop all services
+- **Remove** - Delete the stack (optionally delete volumes)
+- **Logs** - View per-container logs
 
 ## Updating a Stack from a Template
 

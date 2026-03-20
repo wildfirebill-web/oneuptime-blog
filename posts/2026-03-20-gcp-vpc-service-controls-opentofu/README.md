@@ -14,6 +14,7 @@ VPC Service Controls create security perimeters around GCP projects and services
 
 ```hcl
 # main.tf - Create an access policy (org-level container for perimeters)
+
 resource "google_access_context_manager_access_policy" "policy" {
   parent = "organizations/${var.org_id}"
   title  = "Default Access Policy"

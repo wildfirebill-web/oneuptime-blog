@@ -27,6 +27,7 @@ Before starting, confirm you have:
 
 ```bash
 # Verify cluster health
+
 kubectl get nodes
 kubectl get pods -n kube-system --field-selector=status.phase!=Running
 ```

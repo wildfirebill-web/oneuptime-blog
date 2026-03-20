@@ -1,4 +1,4 @@
-# How to Install Portainer on WSL2 with Ubuntu
+# How to Install Portainer on WSL2 with Ubuntu - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ WSL2 (Windows Subsystem for Linux 2) runs a real Linux kernel, making it possibl
 
 ```powershell
 # In PowerShell as Administrator
+
 wsl --install -d Ubuntu-22.04
 
 # Ensure WSL2 is the default
@@ -127,7 +128,7 @@ Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "WSL2-Portain
 ## Port Forwarding to External Network (Optional)
 
 ```powershell
-# In PowerShell as Administrator — forward WSL2 port to Windows host
+# In PowerShell as Administrator - forward WSL2 port to Windows host
 $wslIP = (wsl hostname -I).trim().split(" ")[0]
 netsh interface portproxy add v4tov4 listenport=9443 listenaddress=0.0.0.0 connectport=9443 connectaddress=$wslIP
 ```

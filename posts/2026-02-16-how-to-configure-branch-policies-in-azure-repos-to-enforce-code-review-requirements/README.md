@@ -53,6 +53,7 @@ The following configuration runs your CI pipeline against every PR targeting the
 
 ```yaml
 # This YAML is your CI pipeline that runs on PR validation
+
 trigger: none  # Do not trigger on push; only on PR validation
 
 pr:

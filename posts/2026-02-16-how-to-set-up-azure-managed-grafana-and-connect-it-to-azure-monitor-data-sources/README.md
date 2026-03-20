@@ -32,6 +32,7 @@ You might wonder why you would use Managed Grafana instead of just installing Gr
 
 ```bash
 # Create a resource group for your Grafana workspace
+
 az group create \
     --name "grafana-rg" \
     --location "eastus"

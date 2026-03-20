@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Crossplane, Dual-Stack, IPv6, Compositions, XRDs
+Tags: Crossplane, Dual-Stack, IPv6, Composition, XRD
 
 Description: Design Crossplane Compositions that provision dual-stack infrastructure with both IPv4 and IPv6 networking.
 
@@ -24,6 +24,7 @@ Crossplane manages cloud infrastructure as Kubernetes custom resources. For IPv6
 
 ```yaml
 # vpc-ipv6.yaml
+
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: VPC
 metadata:

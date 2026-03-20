@@ -26,6 +26,7 @@ Create the collector configuration:
 
 ```yaml
 # ~/otel/config/otel-collector-config.yml
+
 receivers:
   otlp:
     protocols:

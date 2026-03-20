@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Cost Management, AWS Budgets, CloudWatch, Cost Alerts, Infrastructure as Code
+Tags: OpenTofu, AWS, Cost Management, AWS Budget, CloudWatch, Cost Alerts, Infrastructure as Code
 
 Description: Learn how to create AWS Budgets cost alerts and CloudWatch billing alarms for OpenTofu-managed infrastructure to prevent unexpected cloud spend.
 
@@ -26,6 +26,7 @@ graph LR
 
 ```hcl
 # budgets.tf
+
 resource "aws_budgets_budget" "monthly_total" {
   name         = "monthly-total-budget"
   budget_type  = "COST"
@@ -142,7 +143,7 @@ resource "aws_budgets_budget" "ec2_spend" {
 ## Best Practices
 
 - Create budgets at multiple levels: account total, per-environment, and per-service to pinpoint spend increases quickly.
-- Use `FORECASTED` notification type in addition to `ACTUAL` — getting warned when you're on track to overspend is more useful than being warned after you already have.
+- Use `FORECASTED` notification type in addition to `ACTUAL` - getting warned when you're on track to overspend is more useful than being warned after you already have.
 - Enable billing alerts at the AWS account level via the Billing console (one-time setup required) before CloudWatch billing alarms will work.
 - Tag all resources with `Environment` and `Team` tags to enable cost allocation filtering in budgets.
 - Wire budget alerts to SNS and then to Slack so the team sees cost alerts in context, not just in email.

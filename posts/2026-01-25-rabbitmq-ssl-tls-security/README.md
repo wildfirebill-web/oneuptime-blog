@@ -52,6 +52,7 @@ For development and testing, generate your own certificates:
 # generate_certs.sh
 
 # Create directories
+
 mkdir -p /etc/rabbitmq/ssl
 cd /etc/rabbitmq/ssl
 

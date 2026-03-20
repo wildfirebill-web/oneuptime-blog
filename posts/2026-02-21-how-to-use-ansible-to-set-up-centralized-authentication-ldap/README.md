@@ -47,6 +47,7 @@ This playbook installs SSSD and LDAP client packages:
 
 ```yaml
 # install_ldap_client.yml - Install LDAP client packages
+
 ---
 - name: Install LDAP client packages
   hosts: all

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PROXY Protocol, HAProxy, Nginx, Load Balancer, Client IP
+Tags: IPv6, Proxy Protocol, HAProxy, Nginx, Load Balancer, Client IP
 
 Description: Configure PROXY Protocol v2 to carry IPv6 client addresses through load balancers and reverse proxies, enabling backends to see the original client IPv6 address.
 
@@ -12,7 +12,7 @@ PROXY Protocol is a network protocol that prepends a header to TCP connections c
 
 ## How PROXY Protocol v2 Works
 
-```
+```text
 Client (2001:db8::1:1234) → Load Balancer → Backend (with PROXY Protocol header)
 
 Binary header at start of TCP stream:
@@ -166,6 +166,7 @@ def handle_connection(conn: socket.socket) -> None:
 
 ```bash
 # Test with haproxy sending PROXY Protocol v2 to local port
+
 # Use haproxy in client mode or the pp2 tool:
 
 # Install proxychains or pp2 test client

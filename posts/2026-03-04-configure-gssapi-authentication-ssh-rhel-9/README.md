@@ -41,6 +41,7 @@ Before configuring GSSAPI SSH authentication, you need:
 
 ```bash
 # Install Kerberos client packages
+
 sudo dnf install krb5-workstation krb5-libs
 
 # Verify installation

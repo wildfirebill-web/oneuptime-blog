@@ -60,6 +60,7 @@ Grant the Cloud Tasks Enqueuer role to your service account.
 
 ```bash
 # Check current IAM bindings for the queue
+
 gcloud tasks queues get-iam-policy my-queue --location=us-central1
 
 # Grant the Cloud Tasks Enqueuer role

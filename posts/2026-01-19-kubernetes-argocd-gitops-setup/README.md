@@ -82,6 +82,7 @@ flowchart TB
 
 ```bash
 # Create the argocd namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD (non-HA, suitable for dev/small clusters)

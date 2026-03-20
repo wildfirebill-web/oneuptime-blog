@@ -39,6 +39,7 @@ After initializing an azd project, create your first environment.
 
 ```bash
 # Initialize a new azd project (if not already done)
+
 azd init --template todo-python-mongo
 
 # Create and select the dev environment

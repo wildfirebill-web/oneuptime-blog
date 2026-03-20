@@ -27,6 +27,7 @@ Unlike throughput fixes that focus on steady-state packet processing, TCP_CRR fi
 
 ```bash
 # Increase conntrack table sizes to reduce hash collisions
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set bpf.ctGlobalTCPMax=1048576 \
   --set bpf.ctGlobalAnyMax=524288

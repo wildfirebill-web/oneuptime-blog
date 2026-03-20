@@ -33,6 +33,7 @@ Configure the OpenTelemetry exporter in your `config/config.exs`:
 
 ```elixir
 # Configure OTLP exporter to send traces to your backend
+
 config :opentelemetry, :resource,
   service: [
     name: "my_elixir_app",

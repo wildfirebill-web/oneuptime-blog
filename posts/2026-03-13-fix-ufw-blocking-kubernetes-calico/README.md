@@ -42,6 +42,7 @@ sudo ufw disable
 sudo systemctl disable ufw
 
 # Verify iptables FORWARD is no longer DROP
+
 sudo iptables -L FORWARD -n | head -5
 # Should show policy ACCEPT now (or Calico's own chain)
 ```

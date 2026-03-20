@@ -53,6 +53,7 @@ arp -a
 # Run PowerShell as Administrator
 
 # Get wireless adapter name
+
 Get-NetAdapter | Where-Object {$_.Name -like "*Wi-Fi*" -or $_.Name -like "*Wireless*"}
 # Note the adapter name, e.g., "Wi-Fi"
 
@@ -123,4 +124,4 @@ ipconfig /renew
 
 ## Conclusion
 
-Setting a static WiFi IP on Windows is straightforward through Settings → Network → WiFi properties or via PowerShell with `New-NetIPAddress`. Always check the router's DHCP pool range before choosing a static IP to avoid conflicts — set your static IP outside the DHCP range (e.g., if DHCP assigns .100-.200, use .50 for static devices). Test connectivity with `ping` after configuration and revert to DHCP with `Set-NetIPInterface -Dhcp Enabled` if needed.
+Setting a static WiFi IP on Windows is straightforward through Settings → Network → WiFi properties or via PowerShell with `New-NetIPAddress`. Always check the router's DHCP pool range before choosing a static IP to avoid conflicts - set your static IP outside the DHCP range (e.g., if DHCP assigns .100-.200, use .50 for static devices). Test connectivity with `ping` after configuration and revert to DHCP with `Set-NetIPInterface -Dhcp Enabled` if needed.

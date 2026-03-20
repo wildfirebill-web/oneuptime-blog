@@ -45,6 +45,7 @@ flowchart TD
 
 ```bash
 # Create a new encrypted file
+
 # This opens your default editor for entering content
 ansible-vault create secrets.yml
 

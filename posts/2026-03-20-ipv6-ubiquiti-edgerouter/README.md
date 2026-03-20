@@ -14,6 +14,7 @@ Ubiquiti EdgeRouter runs EdgeOS, which is based on Vyatta (a Linux-based routing
 
 ```bash
 # Connect to the EdgeRouter via SSH
+
 # Configure DHCPv6 client on the WAN interface
 
 configure

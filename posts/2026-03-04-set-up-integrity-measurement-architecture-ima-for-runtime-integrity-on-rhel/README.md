@@ -21,6 +21,7 @@ IMA has three main modes:
 
 ```bash
 # Add IMA boot parameters
+
 sudo grubby --update-kernel=ALL \
   --args="ima_policy=tcb ima_hash=sha256"
 

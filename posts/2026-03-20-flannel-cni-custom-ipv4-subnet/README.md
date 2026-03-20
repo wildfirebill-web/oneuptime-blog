@@ -12,6 +12,7 @@ Flannel is a simple overlay network CNI for Kubernetes that reads the per-node P
 
 ```bash
 # Initialize kubeadm with the pod network CIDR you want Flannel to use
+
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
 # Configure kubectl
@@ -46,7 +47,7 @@ grep -A3 "net-conf.json" kube-flannel.yml
 The ConfigMap section looks like this:
 
 ```yaml
-# In kube-flannel.yml — ConfigMap section
+# In kube-flannel.yml - ConfigMap section
 data:
   cni-conf.json: |
     {

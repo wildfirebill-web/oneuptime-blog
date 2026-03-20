@@ -81,6 +81,7 @@ If you are using the OpenTelemetry Java agent, the Logback instrumentation is in
 
 ```python
 # logging_setup.py
+
 # Configure Python logging to include OpenTelemetry trace context
 import logging
 from opentelemetry.instrumentation.logging import LoggingInstrumentor

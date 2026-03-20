@@ -48,6 +48,7 @@ Record CPU samples for a running process:
 
 ```bash
 # Record CPU samples for 30 seconds on process 12345
+
 perf record -F 99 -p 12345 -g -- sleep 30
 
 # Record CPU samples for a command

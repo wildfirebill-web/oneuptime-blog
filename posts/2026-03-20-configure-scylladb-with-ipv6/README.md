@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ScyllaDB, IPv6, Cassandra-compatible, NoSQL, High Performance, Cluster
 
-Description: Configure ScyllaDB — the high-performance Cassandra-compatible database — to operate over IPv6 for cluster communication, native client connections, and monitoring.
+Description: Configure ScyllaDB - the high-performance Cassandra-compatible database - to operate over IPv6 for cluster communication, native client connections, and monitoring.
 
 ---
 
@@ -14,6 +14,7 @@ ScyllaDB is a Cassandra-compatible, high-performance NoSQL database written in C
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install curl
 curl -sSf https://downloads.scylladb.com/stable/ubuntu/scylladb-apt.gpg \
   | sudo apt-key add -

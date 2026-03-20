@@ -20,6 +20,7 @@ Not all events need alerts. Focus on events that indicate problems.
 
 ```bash
 # Critical events that should trigger immediate alerts
+
 # - die: Container process exited unexpectedly
 # - oom: Container ran out of memory
 # - kill: Container was forcefully killed

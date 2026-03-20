@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Linux, GRE, IPIP, SIT, Tunnel, Comparison, Networking
 
-Description: Compare the three main Linux tunnel types — GRE, IPIP, and SIT — to choose the right encapsulation protocol based on your use case, overhead, and protocol requirements.
+Description: Compare the three main Linux tunnel types - GRE, IPIP, and SIT - to choose the right encapsulation protocol based on your use case, overhead, and protocol requirements.
 
 ## Introduction
 
@@ -61,7 +61,7 @@ ip addr add <your-ipv6>/64 dev sit0
 
 ## Overhead Comparison
 
-```
+```text
 IPIP packet:  [IP outer 20][IP inner 20][payload]
 SIT packet:   [IP outer 20][IPv6 inner 40][payload]
 GRE packet:   [IP outer 20][GRE 4-16][IP inner 20][payload]
@@ -84,6 +84,7 @@ flowchart TD
 
 ```bash
 # GRE
+
 ip tunnel add <name> mode gre local <local-ip> remote <remote-ip> ttl 255
 
 # IPIP

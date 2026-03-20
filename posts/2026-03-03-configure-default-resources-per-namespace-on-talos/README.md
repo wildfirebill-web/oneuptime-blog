@@ -28,6 +28,7 @@ The LimitRange resource is how you configure defaults in Kubernetes. It applies 
 
 ```yaml
 # default-resources.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

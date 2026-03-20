@@ -12,7 +12,7 @@ DHCPv6 Prefix Delegation (DHCPv6-PD, RFC 3633) allows an upstream DHCPv6 server 
 
 ## IA_PD Message Flow
 
-```
+```yaml
 Prefix Delegation Exchange:
 
 CPE Router (client)         ISP DHCPv6 Server (delegating router)
@@ -80,6 +80,7 @@ CPE Router (client)         ISP DHCPv6 Server (delegating router)
 ```bash
 cat >> /etc/dhcp/dhcpd6.conf << 'EOF'
 # Prefix delegation pool
+
 # Delegates /56 prefixes from the range 2001:db8:1234::/48
 prefix6 2001:db8:1234:: 2001:db8:1234:ff:: /56;
 

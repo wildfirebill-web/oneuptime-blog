@@ -16,6 +16,7 @@ A `.network` file tells systemd-networkd how to configure a matched network inte
 # /etc/systemd/network/10-eth0.network
 
 # [Match] selects which interface(s) this file applies to
+
 [Match]
 Name=eth0
 
@@ -124,7 +125,7 @@ ip addr show eth0
 
 ## File Naming Convention
 
-```
+```text
 /etc/systemd/network/
   10-lo.network       ← loopback (low number = high priority)
   20-eth0.network     ← primary interface
@@ -132,7 +133,7 @@ ip addr show eth0
   40-wlan0.network    ← wireless
 ```
 
-Files are processed alphabetically — use numeric prefixes to control order.
+Files are processed alphabetically - use numeric prefixes to control order.
 
 ## Conclusion
 

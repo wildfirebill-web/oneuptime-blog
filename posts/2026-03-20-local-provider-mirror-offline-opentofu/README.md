@@ -14,6 +14,7 @@ A local provider mirror is a directory (or web server) that contains provider pl
 
 ```bash
 # Create a configuration that lists all needed providers
+
 cat > /tmp/mirror-setup/main.tf << 'EOF'
 terraform {
   required_providers {
@@ -51,7 +52,7 @@ tofu providers mirror /opt/provider-mirror/
 
 ## Mirror Directory Structure
 
-```
+```text
 /opt/provider-mirror/
 └── registry.opentofu.org/
     └── hashicorp/

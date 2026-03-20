@@ -18,6 +18,7 @@ Make sure you have Docker installed on your system. You can verify this by runni
 
 ```bash
 # Verify Docker is installed and running
+
 docker --version
 docker info
 ```

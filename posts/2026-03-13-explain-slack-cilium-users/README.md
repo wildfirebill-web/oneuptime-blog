@@ -25,6 +25,7 @@ Slack's search syntax allows targeted queries:
 
 ```plaintext
 # Search in a specific channel
+
 in:#help cilium connectivity test failed
 
 # Search with keywords

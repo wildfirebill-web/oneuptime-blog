@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, systemd-networkd, DNS, systemd-resolved, Networking, Configuration
+Tags: Linux, systemd-networkd, DNS, Systemd-resolved, Networking, Configuration
 
 Description: Configure DNS servers with systemd-networkd and systemd-resolved, including per-interface DNS settings, search domains, and DNS-over-TLS.
 
@@ -14,6 +14,7 @@ systemd-networkd delegates DNS resolution to `systemd-resolved`. DNS servers can
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 

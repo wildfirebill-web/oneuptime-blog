@@ -40,6 +40,7 @@ The most common cause. RDS security groups must explicitly allow inbound traffic
 
 ```bash
 # Get RDS security group
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query 'DBInstances[0].VpcSecurityGroups[*].VpcSecurityGroupId' \

@@ -63,6 +63,7 @@ Create an index with a join field to establish the relationship:
 
 ```bash
 # Create index with join field for blog posts and comments
+
 curl -X PUT "localhost:9200/blog" -H 'Content-Type: application/json' -d'
 {
   "mappings": {

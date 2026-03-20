@@ -42,6 +42,7 @@ If you manage ArgoCD with the App of Apps pattern, recovery takes minutes.
 
 ```bash
 # Install ArgoCD on a fresh or recovered cluster
+
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/ha/install.yaml
 

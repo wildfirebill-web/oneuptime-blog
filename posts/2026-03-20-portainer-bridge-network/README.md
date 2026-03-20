@@ -1,4 +1,4 @@
-# How to Create a Bridge Network in Portainer
+# How to Create a Bridge Network in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,7 +31,7 @@ Docker bridge networks enable container-to-container communication on the same h
 2. Click **Add network**.
 3. Configure the network:
 
-```
+```text
 Name:    myapp-network
 Driver:  bridge
 ```
@@ -42,7 +42,7 @@ Driver:  bridge
 
 Expand the **Advanced configuration** section:
 
-```
+```text
 Subnet:   172.20.0.0/16
 Gateway:  172.20.0.1
 IP range: 172.20.1.0/24  (optional: restrict container IPs to this range)
@@ -54,7 +54,7 @@ Leave blank to let Docker choose automatically.
 
 Common bridge driver options:
 
-```
+```text
 com.docker.network.bridge.name         → Custom bridge interface name
 com.docker.network.bridge.enable_icc   → Enable inter-container communication
 com.docker.network.bridge.enable_ip_masquerade → Enable IP masquerade (NAT)
@@ -63,7 +63,7 @@ com.docker.network.driver.mtu          → MTU for the network
 
 Example for an isolated network (no container-to-container traffic):
 
-```
+```text
 Option: com.docker.network.bridge.enable_icc
 Value:  false
 ```
@@ -72,6 +72,7 @@ Value:  false
 
 ```bash
 # Basic bridge network:
+
 docker network create myapp-network
 
 # With custom subnet:
@@ -128,7 +129,7 @@ services:
       - POSTGRES_PASSWORD=${DB_PASSWORD}
     networks:
       - backend   # Only on backend network
-      # NOT on frontend — database is isolated from internet-facing containers
+      # NOT on frontend - database is isolated from internet-facing containers
 
   redis:
     image: redis:7-alpine

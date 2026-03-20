@@ -22,6 +22,7 @@ IPv4 multicast addresses fall in the `224.0.0.0/4` range. Use a BPF filter to is
 
 ```bash
 # Capture all IPv4 multicast packets on eth0, show verbose output
+
 sudo tcpdump -i eth0 -n -v "dst net 224.0.0.0/4"
 ```
 
@@ -47,7 +48,7 @@ sudo tcpdump -i eth0 -n -v "ip proto 2"
 
 Typical output shows IGMP Membership Reports (Join) and Leave messages:
 
-```
+```text
 12:01:05.123456 IP 192.168.1.50 > 224.0.0.22: igmp v3 report, 1 group record(s)
 12:01:05.567890 IP 192.168.1.50 > 224.0.0.2: igmp leave 239.1.2.3
 ```
@@ -57,7 +58,7 @@ Typical output shows IGMP Membership Reports (Join) and Leave messages:
 Link-local multicast is used by routing protocols (OSPF, RIP) and service discovery:
 
 ```bash
-# Capture link-local multicast — these packets should NOT cross routers
+# Capture link-local multicast - these packets should NOT cross routers
 sudo tcpdump -i eth0 -n "dst net 224.0.0.0/24"
 ```
 

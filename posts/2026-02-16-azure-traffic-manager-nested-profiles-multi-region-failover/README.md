@@ -40,6 +40,7 @@ Start with the child profiles - one per region. These handle the routing within 
 
 ```bash
 # Create a resource group for Traffic Manager profiles
+
 az group create \
   --name rg-traffic-manager \
   --location eastus

@@ -14,6 +14,7 @@ Slow DNS resolution directly impacts application startup time, connection establ
 
 ```bash
 # Basic timing:
+
 time dig google.com
 # "Query time: 45 msec" in dig output = actual DNS time (not total time)
 

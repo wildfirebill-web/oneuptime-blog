@@ -24,6 +24,7 @@ Here is the simplest possible container group YAML:
 
 ```yaml
 # simple-container.yaml - A basic single-container group
+
 apiVersion: '2021-09-01'
 location: eastus
 name: my-container-group

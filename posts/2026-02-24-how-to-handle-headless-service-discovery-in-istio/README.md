@@ -209,6 +209,7 @@ When things aren't working with headless services, check these:
 
 ```bash
 # Verify the service is headless
+
 kubectl get svc my-database -o jsonpath='{.spec.clusterIP}'
 # Should output "None"
 

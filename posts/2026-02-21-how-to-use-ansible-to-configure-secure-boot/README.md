@@ -42,6 +42,7 @@ This playbook checks whether Secure Boot is enabled on each server:
 
 ```yaml
 # check_secureboot.yml - Audit Secure Boot status
+
 ---
 - name: Check Secure Boot status
   hosts: all

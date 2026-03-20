@@ -24,6 +24,7 @@ By default, Podman provides reasonable isolation without any special flags.
 
 ```bash
 # Run a container with default isolation
+
 podman run --rm -d --name default-isolation docker.io/library/alpine:latest sleep 3600
 
 # Inspect the default isolation settings

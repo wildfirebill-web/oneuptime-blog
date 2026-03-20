@@ -28,6 +28,7 @@ The Splunk Add-on needs a service account with permissions to read from Pub/Sub 
 
 ```bash
 # Create the service account for Splunk integration
+
 gcloud iam service-accounts create splunk-integration \
   --display-name="Splunk GCP Integration" \
   --project=my-project

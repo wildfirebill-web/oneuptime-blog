@@ -96,6 +96,7 @@ Filter targets based on complex conditions:
 ```yaml
 relabel_configs:
 # Keep only pods in specific namespaces
+
 - source_labels: [__meta_kubernetes_namespace]
   action: keep
   regex: production|staging

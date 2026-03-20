@@ -14,6 +14,7 @@ The OSS (Object Storage Service) backend stores OpenTofu state in Alibaba Cloud'
 
 ```bash
 # Using Alibaba Cloud CLI (aliyun)
+
 aliyun oss mb oss://my-terraform-state --region cn-hangzhou
 
 # Enable versioning

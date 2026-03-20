@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to use partial backend configuration in OpenTofu to separate static backend settings from dynamic credentials and environment-specific values.
 
@@ -20,7 +20,8 @@ Backend blocks cannot reference variables or locals. Partial configuration solve
 ## The Pattern
 
 ```hcl
-# backend.tf — committed to source control
+# backend.tf - committed to source control
+
 terraform {
   backend "s3" {
     region = "us-east-1"
@@ -30,7 +31,7 @@ terraform {
 ```
 
 ```bash
-# init time — not committed
+# init time - not committed
 tofu init \
   -backend-config="bucket=acme-tofu-state-production" \
   -backend-config="key=infrastructure/terraform.tfstate" \
@@ -42,7 +43,7 @@ tofu init \
 Store the dynamic values in a file that is gitignored:
 
 ```hcl
-# backends/production.hcl — gitignored
+# backends/production.hcl - gitignored
 bucket         = "acme-tofu-state-production"
 key            = "infrastructure/terraform.tfstate"
 dynamodb_table = "terraform-lock"
@@ -60,7 +61,7 @@ tofu init -backend-config=backends/staging.hcl
 
 ## Multiple Backend Config Files by Environment
 
-```
+```text
 backends/
 ├── production.hcl    # gitignored
 ├── staging.hcl       # gitignored

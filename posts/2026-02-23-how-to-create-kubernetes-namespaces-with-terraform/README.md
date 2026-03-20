@@ -18,6 +18,7 @@ Before creating any Kubernetes resources, you need to configure the provider. Th
 
 ```hcl
 # providers.tf - Configure the Kubernetes provider
+
 terraform {
   required_version = ">= 1.0"
 

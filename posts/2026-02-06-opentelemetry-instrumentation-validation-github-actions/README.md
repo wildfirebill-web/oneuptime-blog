@@ -26,6 +26,7 @@ Build a test harness that sets up an in-memory OpenTelemetry pipeline and provid
 
 ```python
 # tests/otel_test_harness.py
+
 import pytest
 from opentelemetry import trace, context
 from opentelemetry.sdk.trace import TracerProvider

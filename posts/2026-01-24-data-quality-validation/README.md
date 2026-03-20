@@ -46,6 +46,7 @@ Great Expectations is the standard library for data validation in Python:
 
 ```bash
 # Install Great Expectations
+
 pip install great_expectations
 
 # Initialize a new project

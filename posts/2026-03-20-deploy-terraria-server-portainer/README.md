@@ -14,6 +14,7 @@ Terraria is a beloved 2D adventure game with excellent multiplayer support. Runn
 
 ```yaml
 # terraria-stack.yml
+
 version: "3.8"
 
 services:
@@ -73,12 +74,12 @@ After first run, configure TShock at `/config/config.json`:
 
 The first time TShock runs, it outputs a setup code. Check the container logs in Portainer:
 
-```
+```text
 TShock Setup Code: 12345678
 ```
 
 Use this code in-game to become an admin:
-```
+```text
 /setup 12345678
 /user add adminname adminpassword superadmin
 ```
@@ -91,10 +92,10 @@ Copy plugin DLLs to the mounted plugins directory:
 # Download popular plugins to the mounted plugins directory
 cd /var/lib/docker/volumes/terraria-plugins/_data
 
-# AutoRegister — automatically register new players
+# AutoRegister - automatically register new players
 wget https://github.com/nicatronTg/AutoRegister/releases/latest/download/AutoRegister.dll
 
-# Essentials — essential commands
+# Essentials - essential commands
 wget https://github.com/nicatronTg/EssentialsPlus/releases/latest/download/EssentialsPlus.dll
 ```
 
@@ -106,7 +107,7 @@ Use Portainer's volume backup or a scheduled script:
 
 ```bash
 #!/bin/bash
-# terraria-backup.sh — run as a Portainer scheduled job
+# terraria-backup.sh - run as a Portainer scheduled job
 BACKUP_DIR=/opt/terraria/backups
 mkdir -p "$BACKUP_DIR"
 

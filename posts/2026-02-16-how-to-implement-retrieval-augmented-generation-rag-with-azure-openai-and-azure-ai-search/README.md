@@ -45,6 +45,7 @@ Install the dependencies:
 
 ```bash
 # Install required Python packages
+
 pip install openai azure-search-documents azure-identity
 ```
 

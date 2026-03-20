@@ -37,6 +37,7 @@ Here is a Collector configuration that receives traces, generates span metrics, 
 
 ```yaml
 # otel-collector-config.yaml
+
 # Generate RED metrics from traces using the spanmetrics connector
 
 receivers:

@@ -14,6 +14,7 @@ tcpdump is the ground truth for TCP packet analysis. By examining sequence numbe
 
 ```bash
 # Capture TCP traffic with a specific host
+
 tcpdump -i eth0 -n -w /tmp/loss_analysis.pcap 'tcp and host 10.20.0.5'
 
 # Run during a period when loss is occurring
@@ -64,7 +65,7 @@ tcpdump -r /tmp/loss_analysis.pcap -n | \
 
 ## Wireshark Packet Loss Filters
 
-```
+```text
 # In Wireshark:
 
 # Find all retransmissions (after loss)

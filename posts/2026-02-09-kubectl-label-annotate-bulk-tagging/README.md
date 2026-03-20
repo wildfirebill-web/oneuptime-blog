@@ -16,6 +16,7 @@ Labels are key-value pairs used for selection:
 
 ```bash
 # Labels for filtering
+
 kubectl get pods -l app=nginx
 kubectl get pods -l environment=production,tier=backend
 ```

@@ -224,6 +224,7 @@ Matrix generators can produce a large number of Applications. Be mindful of the 
 
 ```bash
 # Calculate expected Application count
+
 # Generator A produces: N parameter sets
 # Generator B produces: M parameter sets
 # Matrix produces: N x M Applications

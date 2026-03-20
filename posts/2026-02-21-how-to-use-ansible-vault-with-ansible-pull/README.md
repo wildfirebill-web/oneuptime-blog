@@ -37,6 +37,7 @@ The simplest approach is to place the vault password file on each node before `a
 
 ```bash
 # During initial node provisioning (e.g., in a Packer template or cloud-init)
+
 # Write the vault password to a secure location
 echo "your-vault-password" > /etc/ansible/vault_pass.txt
 chmod 600 /etc/ansible/vault_pass.txt

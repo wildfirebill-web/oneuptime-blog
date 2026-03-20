@@ -184,6 +184,7 @@ This script implements a tiered PostgreSQL backup strategy with WAL archiving fo
 # postgres-backup.sh - Comprehensive PostgreSQL backup strategy
 
 # Configuration - adjust these for your environment
+
 DB_NAME="production"
 BACKUP_DIR="/var/backups/postgres"
 S3_BUCKET="s3://company-backups/postgres"

@@ -380,6 +380,7 @@ Export dashboards from Grafana to create ConfigMaps:
 
 ```bash
 # Export a dashboard by UID
+
 DASHBOARD_UID="cluster-overview"
 GRAFANA_URL="http://grafana.example.com"
 API_KEY="your-api-key"

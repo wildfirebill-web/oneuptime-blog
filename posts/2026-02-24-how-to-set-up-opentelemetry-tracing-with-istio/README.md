@@ -170,6 +170,7 @@ For an existing installation, update the mesh config and restart:
 
 ```bash
 # Edit the configmap
+
 kubectl edit configmap istio -n istio-system
 
 # Restart istiod

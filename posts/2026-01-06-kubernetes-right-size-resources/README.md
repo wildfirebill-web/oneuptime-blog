@@ -47,6 +47,7 @@ This example shows a common anti-pattern where pods request far more resources t
 
 ```yaml
 # BAD: Wastes cluster capacity
+
 resources:
   requests:
     cpu: 2000m      # App uses 100m average - 20x over-provisioned
@@ -460,7 +461,7 @@ kubectl krew install resource-capacity
 kubectl resource-capacity -n production
 ```
 
-## Resource Quota and LimitRange
+Resource Quota and LimitRange
 
 ### Namespace Defaults with LimitRange
 

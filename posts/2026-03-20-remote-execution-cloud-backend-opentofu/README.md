@@ -28,6 +28,7 @@ terraform {
 
 ```bash
 # Terraform Cloud workspace must have execution mode: Remote
+
 # Set in workspace UI: Settings → General → Execution Mode → Remote
 
 # Or via API:
@@ -215,4 +216,4 @@ esac
 
 ## Conclusion
 
-Remote execution with the cloud backend uploads your configuration to Terraform Cloud, runs the plan or apply on managed infrastructure with workspace-injected credentials, and streams output back to your terminal. The key benefit is credential isolation — AWS/Azure/GCP credentials live only in Terraform Cloud workspace variables, never on developer machines or in CI/CD systems. All runs are logged, with output available in the Terraform Cloud UI for auditing.
+Remote execution with the cloud backend uploads your configuration to Terraform Cloud, runs the plan or apply on managed infrastructure with workspace-injected credentials, and streams output back to your terminal. The key benefit is credential isolation - AWS/Azure/GCP credentials live only in Terraform Cloud workspace variables, never on developer machines or in CI/CD systems. All runs are logged, with output available in the Terraform Cloud UI for auditing.

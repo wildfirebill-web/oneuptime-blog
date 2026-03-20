@@ -21,6 +21,7 @@ Cgroup v2 is the default control group hierarchy on RHEL and provides a unified 
 ```bash
 mount | grep cgroup2
 # Expected: cgroup2 on /sys/fs/cgroup type cgroup2
+
 stat -f /sys/fs/cgroup/ | grep Type
 ```
 

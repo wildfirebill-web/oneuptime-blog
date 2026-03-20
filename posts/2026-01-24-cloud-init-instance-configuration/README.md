@@ -52,6 +52,7 @@ The most common format for declarative configuration.
 # This comment line tells cloud-init this is cloud-config format
 
 # Set the hostname
+
 hostname: web-server-01
 
 # Create users

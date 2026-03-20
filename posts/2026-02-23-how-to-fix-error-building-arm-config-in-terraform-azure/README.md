@@ -39,6 +39,7 @@ The Azure provider requires a minimum version of the Azure CLI:
 
 ```bash
 # Check your current version
+
 az version
 
 # Update on macOS

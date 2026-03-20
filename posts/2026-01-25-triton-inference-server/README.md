@@ -28,6 +28,7 @@ The easiest way to run Triton is with Docker:
 
 ```bash
 # Pull the Triton image
+
 docker pull nvcr.io/nvidia/tritonserver:24.01-py3
 
 # Create model repository structure

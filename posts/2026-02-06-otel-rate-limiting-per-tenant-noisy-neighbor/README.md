@@ -166,6 +166,7 @@ Monitor these collector metrics to know when rate limiting kicks in:
 
 ```bash
 # Check the processor's dropped span count
+
 curl -s http://localhost:8888/metrics | \
   grep "otelcol_processor_dropped_spans"
 

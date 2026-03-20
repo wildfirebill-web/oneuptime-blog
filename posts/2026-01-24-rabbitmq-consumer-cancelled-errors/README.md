@@ -43,6 +43,7 @@ The most common cause is when the queue a consumer is subscribed to gets deleted
 
 ```bash
 # This will cause all consumers on the queue to be cancelled
+
 rabbitmqctl delete_queue my-queue
 
 # Or via management API

@@ -111,6 +111,7 @@ resource "aws_cloudwatch_event_bus" "app_bus" {
 }
 
 # Archive events for replay capability
+
 resource "aws_cloudwatch_event_archive" "app_archive" {
   name             = "my-app-archive"
   event_source_arn = aws_cloudwatch_event_bus.app_bus.arn

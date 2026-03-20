@@ -18,6 +18,7 @@ Pick one AKS cluster as your management cluster. ArgoCD runs here and manages al
 
 ```bash
 # Create a namespace for ArgoCD
+
 kubectl create namespace argocd
 
 # Install ArgoCD using the official manifests

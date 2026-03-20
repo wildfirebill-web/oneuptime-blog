@@ -261,6 +261,7 @@ If initial connections time out:
 
 ```bash
 # Check sidecar is running
+
 kubectl get pod kafka-0 -n kafka -o jsonpath='{.status.containerStatuses[*].name}'
 
 # Check listener config

@@ -14,6 +14,7 @@ OSSEC is a host-based intrusion detection system (HIDS) that analyzes log files.
 
 ```bash
 # Download and install OSSEC
+
 wget https://github.com/ossec/ossec-hids/archive/refs/tags/3.7.0.tar.gz
 tar xf 3.7.0.tar.gz
 cd ossec-hids-3.7.0

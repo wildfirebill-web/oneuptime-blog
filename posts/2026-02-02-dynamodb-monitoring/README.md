@@ -79,6 +79,7 @@ The following code demonstrates how to query DynamoDB metrics using the AWS CLI.
 
 ```bash
 # Query consumed read capacity units for the last hour
+
 # Replace 'your-table-name' with your actual DynamoDB table name
 # The period is set to 300 seconds (5 minutes) for granular data
 aws cloudwatch get-metric-statistics \

@@ -8,12 +8,13 @@ Description: Learn how to build nested map structures from flat data in OpenTofu
 
 ## Overview
 
-Flat lists of key-value pairs are easy to pass around but hard to query by multiple dimensions. Building nested maps from flat data — for example, grouping instance sizes by region and then by environment — enables cleaner lookups and more expressive resource configurations in OpenTofu.
+Flat lists of key-value pairs are easy to pass around but hard to query by multiple dimensions. Building nested maps from flat data - for example, grouping instance sizes by region and then by environment - enables cleaner lookups and more expressive resource configurations in OpenTofu.
 
 ## Building a Two-Level Nested Map
 
 ```hcl
 # Flat source data
+
 locals {
   instance_configs = [
     { region = "us-east-1", env = "prod",    type = "t3.large",  count = 3 },

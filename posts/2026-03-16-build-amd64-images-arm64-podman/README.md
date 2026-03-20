@@ -20,6 +20,7 @@ Install QEMU user-static to enable AMD64 binary emulation on your ARM64 host.
 
 ```bash
 # On Fedora/RHEL (ARM64)
+
 sudo dnf install qemu-user-static
 
 # On Ubuntu/Debian (ARM64)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, IPv6, Service Mesh, xDS, Proxy, Networking
+Tags: Envoy, IPv6, Service Mesh, XDS, Proxy, Networking
 
 Description: A guide to configuring Envoy proxy in a service mesh for IPv6 traffic, including listener configuration, cluster DNS resolution, and EDS with IPv6 endpoints.
 
@@ -11,7 +11,7 @@ Envoy Proxy is the data plane for many service meshes (Istio, Consul Connect, AW
 ## Static Envoy Configuration with IPv6 Listener
 
 ```yaml
-# envoy-ipv6.yaml — static configuration
+# envoy-ipv6.yaml - static configuration
 
 static_resources:
   listeners:
@@ -99,6 +99,7 @@ clusters:
 
 ```yaml
 # EDS response with IPv6 endpoint addresses
+
 # Sent from xDS management server to Envoy
 
 version_info: "1"
@@ -226,4 +227,4 @@ clusters:
     dns_lookup_family: ALL    # Use both IPv4 and IPv6 endpoints
 ```
 
-Envoy's IPv6 support is comprehensive — configure listeners to bind to `::` with `ipv4_compat: true` for dual-stack, set `dns_lookup_family` to `V6_ONLY` or `ALL` for clusters requiring IPv6, and include IPv6 addresses directly in static or EDS endpoint configurations.
+Envoy's IPv6 support is comprehensive - configure listeners to bind to `::` with `ipv4_compat: true` for dual-stack, set `dns_lookup_family` to `V6_ONLY` or `ALL` for clusters requiring IPv6, and include IPv6 addresses directly in static or EDS endpoint configurations.

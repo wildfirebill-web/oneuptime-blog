@@ -24,6 +24,7 @@ Podman Desktop uses proxy settings at three levels:
 
 ```bash
 # Check if system proxy variables are set
+
 echo "HTTP_PROXY: $HTTP_PROXY"
 echo "HTTPS_PROXY: $HTTPS_PROXY"
 echo "NO_PROXY: $NO_PROXY"

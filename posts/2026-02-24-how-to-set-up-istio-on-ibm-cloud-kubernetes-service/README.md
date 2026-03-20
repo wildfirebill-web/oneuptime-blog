@@ -40,6 +40,7 @@ Create a VPC-based cluster (recommended over classic infrastructure):
 
 ```bash
 # Create a VPC first
+
 ibmcloud is vpc-create istio-vpc
 
 # Create a subnet

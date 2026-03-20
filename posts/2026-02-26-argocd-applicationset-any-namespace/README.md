@@ -114,6 +114,7 @@ subjects:
 kubectl rollout restart deployment argocd-applicationset-controller -n argocd
 
 # Verify the controller picked up the new configuration
+
 kubectl logs -n argocd \
   -l app.kubernetes.io/name=argocd-applicationset-controller \
   --tail=50 | grep -i "namespace"

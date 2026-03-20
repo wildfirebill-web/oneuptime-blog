@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Fleet, GitOps, Rancher, Kubernetes, Auto-Updates
+Tags: Fleet, GitOps, Rancher, Kubernetes, Auto-Update
 
 Description: Learn how to configure Fleet's automatic update mechanisms to keep your Kubernetes deployments synchronized with Git changes without manual intervention.
 
@@ -30,6 +30,7 @@ Fleet uses two mechanisms to detect changes:
 
 ```yaml
 # gitrepo-polling.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -223,4 +224,4 @@ kubectl logs -n cattle-fleet-system \
 
 ## Conclusion
 
-Fleet's auto-update capabilities make it a true GitOps system — changes in Git automatically flow to your clusters with no manual intervention required. The combination of polling and webhook support gives you flexibility to balance between simplicity (polling) and responsiveness (webhooks). By properly configuring update intervals and leveraging webhooks for production environments, you can ensure your clusters stay synchronized with your Git repository with minimal latency while maintaining control over the update process.
+Fleet's auto-update capabilities make it a true GitOps system - changes in Git automatically flow to your clusters with no manual intervention required. The combination of polling and webhook support gives you flexibility to balance between simplicity (polling) and responsiveness (webhooks). By properly configuring update intervals and leveraging webhooks for production environments, you can ensure your clusters stay synchronized with your Git repository with minimal latency while maintaining control over the update process.

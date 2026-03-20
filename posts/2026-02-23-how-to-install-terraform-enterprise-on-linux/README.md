@@ -23,6 +23,7 @@ Before starting, make sure your Linux server meets these requirements:
 
 ```bash
 # Check system resources
+
 nproc          # CPU cores
 free -h        # Memory
 df -h /        # Disk space

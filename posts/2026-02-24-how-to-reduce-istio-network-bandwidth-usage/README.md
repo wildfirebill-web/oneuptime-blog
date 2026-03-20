@@ -32,6 +32,7 @@ Measure the current push size:
 
 ```bash
 # Check istiod push metrics
+
 kubectl exec -n istio-system deploy/istiod -- \
   pilot-agent request GET /debug/push_status
 ```

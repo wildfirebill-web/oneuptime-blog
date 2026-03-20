@@ -53,6 +53,7 @@ Search for traces that exceed your SLO:
 
 ```bash
 # Jaeger API query for traces over 2 seconds
+
 curl -s "http://jaeger:16686/api/traces?service=checkout-service&minDuration=2s&limit=20"
 ```
 

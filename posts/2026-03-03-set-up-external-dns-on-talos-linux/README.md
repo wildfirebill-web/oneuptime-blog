@@ -31,6 +31,7 @@ First, add the ExternalDNS Helm chart repository:
 
 ```bash
 # Add the ExternalDNS Helm repo
+
 helm repo add external-dns https://kubernetes-sigs.github.io/external-dns/
 helm repo update
 ```

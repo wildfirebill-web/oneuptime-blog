@@ -61,6 +61,7 @@ This command creates a network insights path between two EC2 instances on port 4
 
 ```bash
 # Create a network insights path
+
 aws ec2 create-network-insights-path \
   --source i-0abc123def456 \
   --destination i-0xyz789ghi012 \

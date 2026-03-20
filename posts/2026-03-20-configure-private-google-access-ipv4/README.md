@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Private Google Access, IPv4, VPC, Cloud APIs, Networking
+Tags: GCP, Private Google Access, IPv4, VPC, Cloud API, Networking
 
 Description: Enable Private Google Access on GCP subnets to allow VM instances without external IPv4 addresses to reach Google APIs and services using internal IP addresses.
 
@@ -17,6 +17,7 @@ PROJECT_ID="my-gcp-project"
 REGION="us-central1"
 
 # Enable Private Google Access for a specific subnet
+
 gcloud compute networks subnets update app-subnet \
   --project=$PROJECT_ID \
   --region=$REGION \

@@ -20,6 +20,7 @@ Never copy SSH keys directly into an image.
 
 ```bash
 # BAD: SSH key persists in image layers even after deletion
+
 cat > Containerfile.bad << 'EOF'
 FROM docker.io/library/alpine:latest
 COPY id_rsa /root/.ssh/id_rsa

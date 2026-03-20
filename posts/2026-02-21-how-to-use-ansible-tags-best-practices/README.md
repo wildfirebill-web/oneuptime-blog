@@ -16,6 +16,7 @@ Tags are simple to add to any task, block, role, or play:
 
 ```yaml
 # Apply tags directly to tasks
+
 - name: Install nginx packages
   ansible.builtin.apt:
     name: nginx

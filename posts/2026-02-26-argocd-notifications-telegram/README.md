@@ -233,6 +233,7 @@ For non-critical notifications, send them silently (no notification sound):
 
 ```bash
 # Check notification controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Test the bot directly

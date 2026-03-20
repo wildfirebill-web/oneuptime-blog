@@ -150,6 +150,7 @@ Pre-loading images:
 
 ```bash
 # On each node, manually load the image
+
 docker pull myapp:v1.0.0
 
 # Or load from a tar file

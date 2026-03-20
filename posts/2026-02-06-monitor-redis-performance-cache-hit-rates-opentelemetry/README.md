@@ -33,6 +33,7 @@ Here is an example using Node.js with the `ioredis` library.
 
 ```bash
 # Install the OpenTelemetry packages for Redis instrumentation
+
 npm install @opentelemetry/api \
     @opentelemetry/sdk-node \
     @opentelemetry/auto-instrumentations-node \

@@ -25,6 +25,7 @@ Flux CD handles mixed clusters naturally - it applies whatever manifests are in 
 
 ```bash
 # Confirm both Linux and Windows nodes are present
+
 kubectl get nodes -L kubernetes.io/os,node.kubernetes.io/windows-build
 
 # Check node labels

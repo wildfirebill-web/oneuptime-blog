@@ -12,7 +12,7 @@ OpenTofu and Ansible solve different problems: OpenTofu creates and manages infr
 
 ## The Standard Pattern
 
-```
+```hcl
 OpenTofu apply → Creates EC2 instances, outputs IPs
        ↓
 Ansible playbook → Connects to instances, configures software
@@ -22,6 +22,7 @@ Ansible playbook → Connects to instances, configures software
 
 ```hcl
 # main.tf - provision EC2 instances
+
 resource "aws_instance" "app_servers" {
   count         = var.server_count
   ami           = data.aws_ami.ubuntu.id
@@ -54,7 +55,7 @@ output "ansible_inventory" {
 }
 ```
 
-```
+```bash
 # inventory.tpl
 [app_servers]
 %{ for ip in app_servers ~}

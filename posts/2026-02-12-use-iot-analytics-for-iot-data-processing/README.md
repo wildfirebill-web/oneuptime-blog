@@ -37,6 +37,7 @@ A channel is the entry point for your data. It receives messages either from IoT
 
 ```bash
 # Create a channel that retains raw data for 30 days
+
 aws iotanalytics create-channel \
   --channel-name "sensor_data_channel" \
   --channel-storage '{

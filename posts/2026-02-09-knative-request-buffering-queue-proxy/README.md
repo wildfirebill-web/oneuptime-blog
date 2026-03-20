@@ -24,6 +24,7 @@ Container concurrency determines how many simultaneous requests a single pod can
 
 ```yaml
 # concurrency-config.yaml
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

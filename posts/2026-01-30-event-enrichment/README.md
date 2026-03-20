@@ -361,6 +361,7 @@ For observability pipelines, the OpenTelemetry Collector provides built-in proce
 
 ```yaml
 # otel-collector-config.yaml - Enrichment processors for telemetry
+
 processors:
   # Add static resource attributes to all telemetry
   resource:

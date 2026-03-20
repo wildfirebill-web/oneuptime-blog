@@ -89,6 +89,7 @@ Here is how to capture latency with proper percentile support using histograms:
 
 ```python
 # latency_metrics.py
+
 # Comprehensive latency measurement implementation
 
 from prometheus_client import Histogram, Counter

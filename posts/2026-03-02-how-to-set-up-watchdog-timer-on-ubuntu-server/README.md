@@ -35,6 +35,7 @@ Common VM watchdog devices:
 
 ```bash
 # Check if /dev/watchdog exists
+
 ls -la /dev/watchdog*
 
 # Check which kernel modules provide watchdog support

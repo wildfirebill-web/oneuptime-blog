@@ -27,6 +27,7 @@ Create a dedicated service account in AD for Rancher:
 Username: svc-rancher
 Password: <strong-password>
 Description: Rancher LDAP service account
+
 Password Never Expires: Yes
 User Cannot Change Password: Yes
 ```
@@ -51,6 +52,7 @@ Verify connectivity from the Rancher server:
 
 ```bash
 # Test LDAP connectivity
+
 ldapsearch -x -H ldap://dc01.example.com:389 \
   -D "CN=svc-rancher,OU=Service Accounts,DC=example,DC=com" \
   -w "<password>" \

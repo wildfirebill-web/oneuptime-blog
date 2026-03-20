@@ -39,6 +39,7 @@ Instead of each server managing its own WebSocket connections, Azure Web PubSub 
 
 ```bash
 # Create a resource group
+
 az group create --name pubsub-rg --location eastus
 
 # Create the Web PubSub service

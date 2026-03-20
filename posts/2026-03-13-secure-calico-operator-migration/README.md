@@ -25,6 +25,7 @@ Key security concerns during migration include: ensuring policy enforcement is c
 
 ```bash
 # Create a dedicated service account for the migration
+
 # This enables fine-grained audit logging of migration actions
 
 kubectl create serviceaccount calico-migration-runner \

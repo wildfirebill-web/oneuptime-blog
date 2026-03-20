@@ -90,6 +90,7 @@ The microservice template is the most commonly used. It includes everything a te
 
 ```yaml
 # templates/microservice/Chart.yaml
+
 apiVersion: v2
 name: microservice
 description: Standard microservice template with best practices

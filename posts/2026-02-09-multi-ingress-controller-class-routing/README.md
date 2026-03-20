@@ -48,6 +48,7 @@ helm install traefik-internal traefik/traefik \
 
 ```yaml
 # ingressclass.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: IngressClass
 metadata:

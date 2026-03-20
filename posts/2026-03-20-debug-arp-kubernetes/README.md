@@ -18,6 +18,7 @@ Description: Learn how to diagnose and fix ARP-related networking issues in Kube
 
 ```bash
 # SSH to the node
+
 # Check ARP table size
 ip neigh show | wc -l
 

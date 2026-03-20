@@ -37,6 +37,7 @@ The browser uses SPNEGO (Simple and Protected GSSAPI Negotiation Mechanism) to n
 
 ```bash
 # Install Apache and the GSSAPI module
+
 sudo dnf install httpd mod_auth_gssapi -y
 
 # Enable and start Apache

@@ -37,6 +37,7 @@ For development and testing:
 
 ```bash
 # Generate a key pair
+
 cosign generate-key-pair
 
 # The private key goes to your CI secrets

@@ -32,6 +32,7 @@ We use two separate buckets - one for originals and one for resized images. This
 
 ```bash
 # Create the bucket for original uploads
+
 gcloud storage buckets create gs://my-project-originals \
   --location=us-central1
 

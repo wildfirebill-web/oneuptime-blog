@@ -30,6 +30,7 @@ The `removed` block tells Terraform to remove a resource from its state without 
 
 ```hcl
 # Instead of deleting the resource block, replace it with a removed block
+
 removed {
   from = aws_s3_bucket.data
 

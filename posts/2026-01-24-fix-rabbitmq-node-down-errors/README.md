@@ -53,6 +53,7 @@ Network problems are the most frequent cause of node failures.
 
 ```bash
 # Check network connectivity between nodes
+
 ping -c 5 rabbit-node2.example.com
 
 # Verify the Erlang distribution port is accessible (default: 25672)

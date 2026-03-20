@@ -12,6 +12,7 @@ AWS Network Load Balancer (NLB) supports IPv6 through dual-stack mode, enabling 
 
 ```hcl
 # VPC with IPv6
+
 resource "aws_vpc" "main" {
   cidr_block                       = "10.0.0.0/16"
   assign_generated_ipv6_cidr_block = true
@@ -42,7 +43,7 @@ resource "aws_lb" "nlb" {
   }
 }
 
-# TCP Listener — accepts both IPv4 and IPv6 in dualstack mode
+# TCP Listener - accepts both IPv4 and IPv6 in dualstack mode
 resource "aws_lb_listener" "tcp_443" {
   load_balancer_arn = aws_lb.nlb.arn
   port              = 443
@@ -136,7 +137,7 @@ NLB preserves the client source IP (unlike ALB which uses X-Forwarded-For):
 
 # Configure application to handle IPv6 client IPs
 # In nginx:
-# real_ip_header X-Real-IP;   (not needed with NLB — IP is in connection)
+# real_ip_header X-Real-IP;   (not needed with NLB - IP is in connection)
 ```
 
 ## Security Groups for IPv6 NLB Targets

@@ -139,6 +139,7 @@ Configure Flyway in your application properties:
 
 ```yaml
 # application.yml
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/myapp

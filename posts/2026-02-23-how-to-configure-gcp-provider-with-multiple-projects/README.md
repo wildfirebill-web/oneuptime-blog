@@ -26,6 +26,7 @@ Define multiple instances of the Google provider, each targeting a different pro
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     google = {

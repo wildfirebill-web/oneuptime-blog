@@ -31,6 +31,7 @@ provider "helm" {
 }
 
 # Deploy Fluentd as a DaemonSet (runs on every node)
+
 resource "helm_release" "fluentd" {
   name             = "fluentd"
   repository       = "https://fluent.github.io/helm-charts"
@@ -247,4 +248,4 @@ resource "aws_launch_template" "app_with_fluentd" {
 
 ## Conclusion
 
-Fluentd in OpenTofu provides flexible log collection for both Kubernetes and EC2 environments. Deploy as a DaemonSet on Kubernetes using the Helm provider to collect logs from all nodes, use IRSA to grant minimal CloudWatch permissions without static credentials, and configure buffering to handle network interruptions gracefully. Fluentd's plugin ecosystem supports routing logs to multiple destinations simultaneously — ideal for sending logs to both CloudWatch for alerting and S3 or Elasticsearch for long-term search.
+Fluentd in OpenTofu provides flexible log collection for both Kubernetes and EC2 environments. Deploy as a DaemonSet on Kubernetes using the Helm provider to collect logs from all nodes, use IRSA to grant minimal CloudWatch permissions without static credentials, and configure buffering to handle network interruptions gracefully. Fluentd's plugin ecosystem supports routing logs to multiple destinations simultaneously - ideal for sending logs to both CloudWatch for alerting and S3 or Elasticsearch for long-term search.

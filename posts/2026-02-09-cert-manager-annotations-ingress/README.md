@@ -31,6 +31,7 @@ Create an Ingress that automatically provisions certificates:
 
 ```yaml
 # basic-annotated-ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

@@ -59,6 +59,7 @@ curl -u elastic:password -X PUT "localhost:9200/metrics" -H 'Content-Type: appli
 
 ```bash
 # Create index template for data stream
+
 curl -u elastic:password -X PUT "localhost:9200/_index_template/metrics-template" -H 'Content-Type: application/json' -d'
 {
   "index_patterns": ["metrics-*"],

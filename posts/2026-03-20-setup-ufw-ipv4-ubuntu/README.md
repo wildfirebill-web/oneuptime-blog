@@ -12,6 +12,7 @@ UFW (Uncomplicated Firewall) is Ubuntu's frontend to iptables designed for simpl
 
 ```bash
 # Install UFW (usually pre-installed on Ubuntu)
+
 sudo apt install ufw -y
 
 # Check current status
@@ -40,7 +41,7 @@ sudo ufw status verbose
 ## Allow Common Services
 
 ```bash
-# Allow SSH (critical — do this before enabling!)
+# Allow SSH (critical - do this before enabling!)
 sudo ufw allow ssh          # By service name (TCP 22)
 # or
 sudo ufw allow 22/tcp       # By port/protocol
@@ -82,7 +83,7 @@ sudo ufw delete 3
 # Delete rule by specification
 sudo ufw delete allow 8080/tcp
 
-# Reset all rules (caution — disables UFW)
+# Reset all rules (caution - disables UFW)
 sudo ufw reset
 ```
 

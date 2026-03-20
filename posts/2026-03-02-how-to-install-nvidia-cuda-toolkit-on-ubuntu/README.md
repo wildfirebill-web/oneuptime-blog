@@ -23,6 +23,7 @@ Also verify Secure Boot status. If Secure Boot is enabled, you'll need to sign t
 
 ```bash
 # Check if Secure Boot is enabled
+
 mokutil --sb-state
 
 # Check current GPU

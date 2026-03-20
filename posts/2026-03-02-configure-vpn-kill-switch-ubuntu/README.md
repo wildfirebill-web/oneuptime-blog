@@ -28,6 +28,7 @@ This approach creates firewall rules that block all traffic except through the V
 
 ```bash
 # Store these in a script for easy management
+
 sudo nano /usr/local/bin/vpn-kill-switch.sh
 ```
 

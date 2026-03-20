@@ -28,6 +28,7 @@ A clear versioning strategy makes it easy to track what is deployed where. Seman
 
 ```bash
 # Semantic Versioning: MAJOR.MINOR.PATCH
+
 # MAJOR: Breaking changes
 # MINOR: New features, backward compatible
 # PATCH: Bug fixes, backward compatible

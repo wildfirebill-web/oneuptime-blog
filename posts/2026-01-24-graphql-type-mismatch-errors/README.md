@@ -38,6 +38,7 @@ The most basic type mismatch occurs when a resolver returns a value of the wrong
 
 ```graphql
 # schema.graphql
+
 type User {
   id: ID!
   age: Int!

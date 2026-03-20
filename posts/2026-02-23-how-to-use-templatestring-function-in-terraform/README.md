@@ -16,6 +16,7 @@ The `templatestring` function takes a template string and a map of variables, th
 
 ```hcl
 # Basic syntax
+
 templatestring(template, vars)
 ```
 

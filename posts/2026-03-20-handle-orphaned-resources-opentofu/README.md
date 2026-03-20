@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Troubleshooting, Orphaned Resources, State Management, Infrastructure as Code
 
-Description: Learn how to identify and handle orphaned resources in OpenTofu state — resources that exist in state but no longer in configuration or in the cloud.
+Description: Learn how to identify and handle orphaned resources in OpenTofu state - resources that exist in state but no longer in configuration or in the cloud.
 
 ## Introduction
 
@@ -19,13 +19,14 @@ Orphaned resources are state file entries that no longer correspond to a resourc
 
 ```bash
 # List all resources in state
+
 tofu state list
 
 # Check for resources that no longer exist in config
 tofu plan   # Shows resources to be destroyed (removed from config)
 
 # Check for resources deleted outside OpenTofu
-tofu plan -refresh-only   # Shows only drift — resources deleted/changed externally
+tofu plan -refresh-only   # Shows only drift - resources deleted/changed externally
 ```
 
 ## Handling Type 1: Resource Removed from Config (Intentional)

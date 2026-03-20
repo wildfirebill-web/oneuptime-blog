@@ -1360,6 +1360,7 @@ test.describe('Dashboard', () => {
 
 ```bash
 # Run all tests
+
 npx playwright test
 
 # Run specific test file

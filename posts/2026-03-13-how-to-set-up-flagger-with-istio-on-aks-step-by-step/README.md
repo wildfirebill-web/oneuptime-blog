@@ -24,6 +24,7 @@ Azure Kubernetes Service (AKS) provides a managed Kubernetes platform on Azure t
 
 ```bash
 # Create a resource group
+
 az group create --name flagger-demo-rg --location eastus
 
 # Create an AKS cluster

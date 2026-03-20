@@ -328,6 +328,7 @@ Since ArgoCD does not provide a REPL for testing Lua scripts, debugging can be t
 
 ```bash
 # Install Lua
+
 brew install lua@5.1  # macOS
 
 # Test your script

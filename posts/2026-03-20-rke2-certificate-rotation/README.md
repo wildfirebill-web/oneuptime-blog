@@ -28,6 +28,7 @@ Certificates are stored at: `/var/lib/rancher/rke2/server/tls/`
 
 ```bash
 # Check expiration of all RKE2 certificates
+
 sudo find /var/lib/rancher/rke2/server/tls -name "*.crt" \
   -exec sh -c 'echo "=== {} ===" && \
   openssl x509 -in {} -noout -dates 2>/dev/null' \;

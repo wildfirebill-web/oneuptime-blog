@@ -28,6 +28,7 @@ First, make sure you are authenticated. Run `terraform login` to generate and st
 
 ```bash
 # Authenticate with HCP Terraform
+
 terraform login
 
 # This opens a browser window to generate an API token

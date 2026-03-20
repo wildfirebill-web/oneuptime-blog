@@ -14,6 +14,7 @@ Static ARP entries permanently map an IP address to a MAC address. Unlike dynami
 
 ```bash
 # Add a permanent ARP entry mapping IP to MAC
+
 ip neigh add 192.168.1.50 lladdr aa:bb:cc:dd:ee:ff dev eth0 nud permanent
 
 # Verify
@@ -48,10 +49,10 @@ ip neigh replace 192.168.1.50 lladdr ff:ee:dd:cc:bb:aa dev eth0 nud permanent
 ## nud States for Static Entries
 
 ```bash
-# PERMANENT — never expires, never refreshed
+# PERMANENT - never expires, never refreshed
 ip neigh add 10.0.0.1 lladdr aa:bb:cc:dd:ee:ff dev eth0 nud permanent
 
-# NOARP — static entry that doesn't require ARP
+# NOARP - static entry that doesn't require ARP
 ip neigh add 10.0.0.1 lladdr aa:bb:cc:dd:ee:ff dev eth0 nud noarp
 ```
 

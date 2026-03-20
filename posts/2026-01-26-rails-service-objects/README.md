@@ -60,6 +60,7 @@ Here is a basic service object template:
 
 ```ruby
 # app/services/application_service.rb
+
 #
 # Base class for all service objects. Provides a clean interface
 # for calling services and standardizes the pattern across your app.

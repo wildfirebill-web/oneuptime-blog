@@ -26,6 +26,7 @@ Each has different diagnostic approaches.
 
 ```bash
 # View all network connections and their states
+
 ss -tunaop
 
 # Key connection states to look for:

@@ -28,6 +28,7 @@ Compare the two modes:
 
 ```bash
 # Default: checkpoint and stop
+
 sudo podman run -d --name stop-test docker.io/library/alpine sleep 3600
 sudo podman container checkpoint stop-test
 sudo podman ps --filter name=stop-test  # Not running
@@ -210,7 +211,7 @@ sudo podman container restore \
   --name=from-t2
 ```
 
-## Resource Considerations
+Resource Considerations
 
 Keep-running checkpoints consume additional resources:
 

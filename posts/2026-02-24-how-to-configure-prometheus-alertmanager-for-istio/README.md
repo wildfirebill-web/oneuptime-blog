@@ -301,6 +301,7 @@ Verify that alert rules are loaded correctly:
 
 ```bash
 # Check Prometheus rules
+
 kubectl port-forward -n istio-system svc/prometheus 9090:9090
 # Then visit http://localhost:9090/rules
 ```

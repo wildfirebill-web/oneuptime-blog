@@ -51,6 +51,7 @@ Start with the base manifests that define your application.
 
 ```yaml
 # k8s/base/deployment.yaml
+
 # Base deployment - common across all environments
 apiVersion: apps/v1
 kind: Deployment

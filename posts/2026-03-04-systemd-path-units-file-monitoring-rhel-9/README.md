@@ -26,6 +26,7 @@ sequenceDiagram
 
 ```bash
 # Create a path unit that watches for new files in /var/spool/incoming
+
 sudo tee /etc/systemd/system/process-uploads.path << 'UNITEOF'
 [Unit]
 Description=Watch for new uploaded files

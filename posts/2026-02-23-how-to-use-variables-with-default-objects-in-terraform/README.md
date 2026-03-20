@@ -38,6 +38,7 @@ When the caller does not provide this variable at all, Terraform uses the entire
 
 ```hcl
 # Uses all defaults
+
 module "web" {
   source = "./modules/web"
   # instance_config not specified - all defaults apply

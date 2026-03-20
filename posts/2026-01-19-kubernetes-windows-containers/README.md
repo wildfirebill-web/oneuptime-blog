@@ -56,6 +56,7 @@ flowchart TD
 
 ```plaintext
 # Supported Windows versions:
+
 - Windows Server 2019 (LTSC)
 - Windows Server 2022 (LTSC)
 - Windows Server SAC (Semi-Annual Channel)

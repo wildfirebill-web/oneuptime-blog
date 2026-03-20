@@ -8,7 +8,7 @@ Description: Learn how to diagnose and fix issues where Docker container logs ar
 
 ## Introduction
 
-One of the most frustrating Portainer issues is opening the log viewer and seeing nothing — blank logs for a running container. This can be caused by the wrong logging driver, application writing to files instead of stdout, output buffering, or Portainer's log viewer limitations. This guide walks through each cause systematically.
+One of the most frustrating Portainer issues is opening the log viewer and seeing nothing - blank logs for a running container. This can be caused by the wrong logging driver, application writing to files instead of stdout, output buffering, or Portainer's log viewer limitations. This guide walks through each cause systematically.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Portainer's log viewer only supports `json-file` and `journald` drivers. Other d
 
 ```bash
 # Check which logging driver the container uses:
+
 docker inspect my-container | jq '.[].HostConfig.LogConfig'
 
 # Output if correct:
@@ -96,7 +97,7 @@ import logging
 import sys
 
 logging.basicConfig(
-    stream=sys.stdout,    # stdout — not a file
+    stream=sys.stdout,    # stdout - not a file
     level=logging.INFO,
     format='%(asctime)s %(levelname)s: %(message)s',
     force=True  # Override any existing handlers
@@ -265,7 +266,7 @@ docker run -d \
 
 ## Summary Diagnostic Flow
 
-```
+```bash
 Logs empty in Portainer?
     │
     ├─ Check logging driver: json-file? ─ No → Switch to json-file

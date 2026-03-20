@@ -46,6 +46,7 @@ Data disappears when containers restart or are recreated.
 
 ```bash
 # View volumes defined in compose file
+
 docker compose config | grep -A10 volumes:
 
 # List volumes created by compose

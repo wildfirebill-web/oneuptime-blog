@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider
 
 Description: Learn how to configure the OpenTofu provider plugin cache to share downloaded providers across multiple configurations and speed up initialization.
 
@@ -16,6 +16,7 @@ Set `plugin_cache_dir` in your `.tofurc` file:
 
 ```hcl
 # ~/.tofurc
+
 plugin_cache_dir = "$HOME/.terraform.d/plugin-cache"
 ```
 
@@ -41,7 +42,7 @@ When `tofu init` runs:
 2. If found: creates a symlink from `.terraform/providers/` to the cache entry
 3. If not found: downloads the provider, stores it in the cache, then symlinks
 
-```
+```text
 ~/.terraform.d/plugin-cache/
 └── registry.opentofu.org/
     └── hashicorp/
@@ -87,17 +88,17 @@ cd ~/projects/project-a
 tofu init  # Downloads aws 5.31.0 to cache
 
 cd ~/projects/project-b
-tofu init  # Reuses aws 5.31.0 from cache — instant!
+tofu init  # Reuses aws 5.31.0 from cache - instant!
 ```
 
 ## Cache and Lock File Interaction
 
 The cache is separate from the lock file. The lock file records which version to use; the cache stores the binary for that version. Always commit the lock file but never commit the cache directory.
 
-```
+```text
 # .gitignore
 .terraform/
-# Do NOT add ~/.terraform.d/plugin-cache — it lives outside the repo
+# Do NOT add ~/.terraform.d/plugin-cache - it lives outside the repo
 ```
 
 ## Limitations

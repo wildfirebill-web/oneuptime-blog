@@ -16,6 +16,7 @@ Before creating containers, you need a storage account to host them.
 
 ```hcl
 # variables.tf - Define configurable parameters
+
 variable "resource_group_name" {
   description = "Name of the Azure resource group"
   type        = string

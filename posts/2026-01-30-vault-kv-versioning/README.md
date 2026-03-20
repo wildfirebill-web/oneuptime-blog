@@ -42,6 +42,7 @@ Enable the KV v2 secrets engine at a specific path:
 
 ```bash
 # Enable KV v2 at the default 'secret' path
+
 vault secrets enable -version=2 -path=secret kv
 
 # Verify the engine is enabled

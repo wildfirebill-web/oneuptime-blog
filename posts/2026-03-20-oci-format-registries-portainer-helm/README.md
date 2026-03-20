@@ -8,20 +8,21 @@ Description: Learn how to configure OCI-compliant registries in Portainer to sto
 
 ## What Are OCI-Format Registries?
 
-The OCI (Open Container Initiative) Distribution Specification extends container registries to store arbitrary artifacts — including Helm charts. This means you can store Helm charts in the same registry as your container images, using standard registry credentials.
+The OCI (Open Container Initiative) Distribution Specification extends container registries to store arbitrary artifacts - including Helm charts. This means you can store Helm charts in the same registry as your container images, using standard registry credentials.
 
 ## Supported OCI Registries for Helm Charts
 
-- **Amazon ECR** — supports OCI artifacts natively
-- **GitHub Container Registry (GHCR)** — supports OCI artifacts
-- **Azure Container Registry (ACR)** — supports OCI artifacts
-- **Harbor 2.0+** — supports OCI artifacts
-- **Google Artifact Registry** — supports OCI artifacts
+- **Amazon ECR** - supports OCI artifacts natively
+- **GitHub Container Registry (GHCR)** - supports OCI artifacts
+- **Azure Container Registry (ACR)** - supports OCI artifacts
+- **Harbor 2.0+** - supports OCI artifacts
+- **Google Artifact Registry** - supports OCI artifacts
 
 ## Pushing a Helm Chart to an OCI Registry
 
 ```bash
 # Enable OCI support in Helm (required for Helm 3.7 and earlier)
+
 export HELM_EXPERIMENTAL_OCI=1
 
 # Package your Helm chart

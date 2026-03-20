@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # roles/traefik/defaults/main.yml
+
 # Default values for Traefik deployment
 traefik_version: "3.0"
 traefik_install_dir: /opt/traefik

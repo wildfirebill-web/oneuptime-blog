@@ -39,6 +39,7 @@ For a VNC server with no password (suitable for isolated install networks):
 
 ```bash
 # Append to the kernel boot line - starts VNC on default port 5901
+
 inst.vnc
 ```
 

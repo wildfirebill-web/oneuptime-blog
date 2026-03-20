@@ -62,6 +62,7 @@ Assign roles to your application and users:
 
 ```bash
 # Assign the DICOM Data Owner role to your application
+
 az role assignment create \
     --assignee {app-client-id} \
     --role "DICOM Data Owner" \

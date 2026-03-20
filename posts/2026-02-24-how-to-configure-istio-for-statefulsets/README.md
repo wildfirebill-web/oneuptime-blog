@@ -225,6 +225,7 @@ Redis Cluster uses CLUSTER MEET commands where nodes exchange their IP addresses
 
 ```yaml
 # Redis Cluster needs nodes to reach each other on both the client port and the bus port
+
 ports:
   - name: tcp-redis
     port: 6379
@@ -267,7 +268,7 @@ spec:
     mode: PERMISSIVE
 ```
 
-## Resource Limits for the Sidecar
+Resource Limits for the Sidecar
 
 StatefulSet pods often run on dedicated nodes with specific resource requirements. Make sure the sidecar resource requests do not interfere with your application's resource needs:
 

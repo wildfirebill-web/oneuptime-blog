@@ -12,10 +12,10 @@ Generic Routing Encapsulation (GRE) creates a virtual point-to-point link betwee
 
 ## GRE Tunnel Configuration
 
-```
+```text
 Topology:
-  Router A (10.0.0.1) <——WAN (public IPs)——> Router B (10.0.0.2)
-  Tunnel: 172.16.0.1/30 <—GRE—> 172.16.0.2/30
+  Router A (10.0.0.1) <--WAN (public IPs)--> Router B (10.0.0.2)
+  Tunnel: 172.16.0.1/30 <-GRE-> 172.16.0.2/30
   Behind A: 192.168.1.0/24   Behind B: 192.168.2.0/24
 ```
 

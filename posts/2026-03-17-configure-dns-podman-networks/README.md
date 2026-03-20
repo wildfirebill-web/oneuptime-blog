@@ -20,6 +20,7 @@ Custom Podman networks have DNS enabled by default:
 
 ```bash
 # Create a network (DNS is enabled automatically)
+
 podman network create app-network
 
 # Verify DNS is enabled

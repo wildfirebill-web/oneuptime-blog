@@ -38,6 +38,7 @@ Enable email auto-verification in your User Pool:
 
 ```hcl
 # cognito-verification.tf
+
 resource "aws_cognito_user_pool" "main" {
   name = "my-app-user-pool"
 

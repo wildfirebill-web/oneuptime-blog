@@ -22,6 +22,7 @@ You can enable HTTP application routing when creating a new cluster or on an exi
 
 ```bash
 # Enable on a new AKS cluster
+
 az aks create \
   --resource-group dev-rg \
   --name dev-cluster \

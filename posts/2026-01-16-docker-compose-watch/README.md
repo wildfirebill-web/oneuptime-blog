@@ -45,6 +45,7 @@ services:
 
 ```bash
 # Start with watch mode
+
 docker compose watch
 
 # Or with up command

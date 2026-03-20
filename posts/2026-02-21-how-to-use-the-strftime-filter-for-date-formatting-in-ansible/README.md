@@ -16,6 +16,7 @@ The strftime filter takes a format string and an optional Unix timestamp. If no 
 
 ```yaml
 # Format the current time in various formats
+
 - name: Show current date and time
   ansible.builtin.debug:
     msg: |

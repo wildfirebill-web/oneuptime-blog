@@ -639,6 +639,7 @@ Stripe's API is the gold standard for REST expansion. They use a simple yet powe
 
 ```bash
 # Expand a single field
+
 curl https://api.stripe.com/v1/charges/ch_123?expand[]=customer
 
 # Expand multiple fields

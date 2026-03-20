@@ -58,6 +58,7 @@ The most straightforward Dockerfile looks like this:
 
 ```dockerfile
 # Basic Dockerfile - works but not optimized
+
 # Uses the official Rust image which includes cargo and rustc
 FROM rust:1.75
 

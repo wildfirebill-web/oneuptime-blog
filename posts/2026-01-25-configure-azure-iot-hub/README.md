@@ -62,6 +62,7 @@ graph TB
 
 ```bash
 # Login to Azure
+
 az login
 
 # Create a resource group

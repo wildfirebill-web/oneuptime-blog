@@ -33,6 +33,7 @@ First, set up a Cloud Storage bucket and configure Datastream to write there ins
 
 ```bash
 # Create a bucket for Datastream output
+
 gsutil mb -l us-central1 gs://my-project-datastream-staging/
 
 # Create a Cloud Storage connection profile

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Pipelines, Kubernetes, Environment, Deployment Tracking, DevOps, CI/CD, AKS
+Tags: Azure Pipelines, Kubernetes, Environments, Deployment Tracking, DevOps, CI/CD, AKS
 
 Description: Configure Azure Pipelines environments with Kubernetes resources to track deployments, enforce approvals, and gain visibility into what is running in each cluster.
 
@@ -45,6 +45,7 @@ Alternatively, referencing an environment in YAML creates it automatically:
 
 ```yaml
 # Simply referencing an environment in YAML creates it if it does not exist
+
 stages:
   - stage: DeployStaging
     jobs:

@@ -31,6 +31,7 @@ The `foomatic-db` packages provide driver data for a wide range of printers. For
 
 ```bash
 # HP printers
+
 sudo apt install -y hplip
 
 # Brother printers (download from Brother's website)

@@ -70,6 +70,7 @@ When the controller decides to sync an application (either from auto-sync or man
 
 ```bash
 # You can observe the sync process in the controller logs
+
 kubectl logs -l app.kubernetes.io/name=argocd-application-controller -n argocd -f
 ```
 
@@ -173,7 +174,7 @@ spec:
 
 With sharding, if controller-0 goes down, the Applications it managed will not be reconciled until it comes back. The other controllers do not take over its shard automatically. This is a trade-off between even distribution and resilience.
 
-## Resource Limits and Performance
+Resource Limits and Performance
 
 The controller is CPU and memory intensive. It needs to:
 

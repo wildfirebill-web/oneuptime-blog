@@ -38,6 +38,7 @@ graph LR
 
 ```bash
 # Create a Media Services account if you don't have one
+
 az ams account create \
   --name my-media-services \
   --resource-group media-rg \

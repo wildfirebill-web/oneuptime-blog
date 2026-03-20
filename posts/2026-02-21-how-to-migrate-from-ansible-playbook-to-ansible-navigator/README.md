@@ -28,6 +28,7 @@ Start by installing ansible-navigator alongside your existing ansible-playbook s
 
 ```bash
 # Install ansible-navigator
+
 pip install ansible-navigator
 
 # Verify both tools are available

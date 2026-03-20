@@ -67,6 +67,7 @@ Service Endpoints are the right choice when:
 
 ```bash
 # Enable a Service Endpoint for Azure Storage on a subnet
+
 az network vnet subnet update \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

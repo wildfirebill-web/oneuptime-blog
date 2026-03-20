@@ -21,7 +21,7 @@ OpenTofu 1.6+ includes a native testing framework that runs actual plan and appl
 
 OpenTofu test files use the `.tftest.hcl` extension and live alongside your configuration:
 
-```
+```text
 modules/vpc/
 ├── main.tf
 ├── variables.tf
@@ -82,6 +82,7 @@ run "verify_outputs" {
 
 ```hcl
 # Test create, then verify idempotency
+
 run "initial_apply" {
   command = apply
 
@@ -178,7 +179,7 @@ run "validate_config" {
 ## Best Practices
 
 1. **Use unique name prefixes** for test resources to avoid conflicts
-2. **Clean up after tests** — OpenTofu's test runner destroys resources after each run
+2. **Clean up after tests** - OpenTofu's test runner destroys resources after each run
 3. **Test both happy path and edge cases** (invalid inputs, boundary values)
 4. **Use mock providers** for fast unit tests, real providers for integration tests
 5. **Run integration tests in isolated AWS accounts** or separate namespaces

@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # psc.tf
+
 resource "google_compute_global_address" "psc_google_apis" {
   name          = "${var.prefix}-psc-google-apis"
   purpose       = "PRIVATE_SERVICE_CONNECT"
@@ -46,7 +47,7 @@ resource "google_compute_global_forwarding_rule" "psc_google_apis" {
 ## DNS Configuration for PSC
 
 ```hcl
-# dns.tf — route Google API calls through PSC endpoint
+# dns.tf - route Google API calls through PSC endpoint
 resource "google_dns_managed_zone" "googleapis" {
   name        = "${var.prefix}-googleapis"
   dns_name    = "googleapis.com."
@@ -106,7 +107,7 @@ resource "google_dns_record_set" "gcr_a" {
 ## PSC Endpoint for a Published Service (Consumer)
 
 ```hcl
-# consumer_psc.tf — connect to a service published by another VPC
+# consumer_psc.tf - connect to a service published by another VPC
 
 # Reserve IP for the PSC endpoint
 resource "google_compute_address" "psc_endpoint" {
@@ -133,7 +134,7 @@ resource "google_compute_forwarding_rule" "psc_consumer" {
 ## Publisher: Exposing a Service via PSC
 
 ```hcl
-# publisher_psc.tf — expose your service for other VPCs to connect
+# publisher_psc.tf - expose your service for other VPCs to connect
 
 # NLB is required as the frontend for PSC published services
 resource "google_compute_forwarding_rule" "psc_producer_nlb" {
@@ -174,8 +175,8 @@ output "service_attachment_uri" {
 
 ## Best Practices
 
-- Use the `all-apis` PSC target rather than `vpc-sc` unless you need VPC Service Controls — `all-apis` covers all Google APIs with a single endpoint.
-- Create private DNS zones for `googleapis.com` and `gcr.io` to route API calls through the PSC endpoint — without DNS, applications will still resolve to public IP addresses.
+- Use the `all-apis` PSC target rather than `vpc-sc` unless you need VPC Service Controls - `all-apis` covers all Google APIs with a single endpoint.
+- Create private DNS zones for `googleapis.com` and `gcr.io` to route API calls through the PSC endpoint - without DNS, applications will still resolve to public IP addresses.
 - Use `ACCEPT_AUTOMATIC` for trusted internal consumers and `ACCEPT_MANUAL` for external organizations that need approval before connecting.
-- Create a dedicated NAT subnet (`/29` minimum) for PSC service attachments — this subnet provides IP addresses for PSC connection translations.
-- Test PSC connectivity by resolving `storage.googleapis.com` from inside the VPC — it should resolve to the PSC endpoint IP rather than a public Google IP.
+- Create a dedicated NAT subnet (`/29` minimum) for PSC service attachments - this subnet provides IP addresses for PSC connection translations.
+- Test PSC connectivity by resolving `storage.googleapis.com` from inside the VPC - it should resolve to the PSC endpoint IP rather than a public Google IP.

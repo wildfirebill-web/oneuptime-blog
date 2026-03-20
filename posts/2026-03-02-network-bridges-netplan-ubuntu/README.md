@@ -25,6 +25,7 @@ Here is how to create a bridge (`br0`) that connects a physical interface (`enp3
 
 ```yaml
 # /etc/netplan/01-bridge.yaml
+
 network:
   version: 2
   renderer: networkd

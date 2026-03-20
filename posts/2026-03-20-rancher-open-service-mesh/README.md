@@ -21,6 +21,7 @@ Open Service Mesh (OSM) is a lightweight, extensible cloud-native service mesh t
 
 ```bash
 # Install OSM CLI on Linux/macOS
+
 curl -L https://github.com/openservicemesh/osm/releases/latest/download/osm-v1.3.0-linux-amd64.tar.gz | tar -xzf - osm
 chmod +x osm && sudo mv osm /usr/local/bin/
 

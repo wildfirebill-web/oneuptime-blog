@@ -22,6 +22,7 @@ Start by deploying an NFS server. For production, use dedicated NFS appliances o
 
 ```yaml
 # nfs-server.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

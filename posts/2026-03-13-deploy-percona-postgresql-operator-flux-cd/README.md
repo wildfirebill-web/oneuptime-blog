@@ -27,6 +27,7 @@ This guide deploys the Percona PostgreSQL Operator via Flux HelmRelease and crea
 
 ```yaml
 # infrastructure/sources/percona-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

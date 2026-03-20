@@ -16,6 +16,7 @@ Each `-v` flag adds a layer of detail:
 
 ```bash
 # Level 1: Show task results
+
 ansible-playbook deploy.yml -v
 
 # Level 2: Show task input parameters

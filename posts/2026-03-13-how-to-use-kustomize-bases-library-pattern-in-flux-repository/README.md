@@ -60,6 +60,7 @@ The base contains the canonical resource definitions without environment-specifi
 
 ```yaml
 # base/app-a/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

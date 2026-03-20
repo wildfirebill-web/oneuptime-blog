@@ -22,6 +22,7 @@ Use Terraform's HTTP provider or a custom provider to create ServiceNow change r
 
 ```hcl
 # Variables for ServiceNow integration
+
 variable "servicenow_instance" {
   description = "ServiceNow instance URL"
   type        = string

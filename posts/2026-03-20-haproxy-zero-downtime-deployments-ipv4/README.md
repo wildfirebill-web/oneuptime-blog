@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Zero Downtime, Deployment, IPv4, Drain, Rolling Update
+Tags: HAProxy, Zero Downtime, Deployment, IPv4, Drain, Rolling Updates
 
 Description: Use HAProxy server drain mode, graceful reloads, and rolling update techniques to deploy new application versions on IPv4 backends without dropping connections.
 
 ## Introduction
 
-Zero-downtime deployments require removing servers from rotation gracefully—draining existing connections before stopping them—and adding new servers while maintaining traffic flow. HAProxy provides built-in mechanisms for all of these.
+Zero-downtime deployments require removing servers from rotation gracefully-draining existing connections before stopping them-and adding new servers while maintaining traffic flow. HAProxy provides built-in mechanisms for all of these.
 
 ## Graceful Configuration Reload
 
@@ -16,6 +16,7 @@ HAProxy can reload configuration without dropping active connections:
 
 ```bash
 # Validate new config before applying
+
 sudo haproxy -c -f /etc/haproxy/haproxy.cfg
 # Expected: Configuration file is valid
 

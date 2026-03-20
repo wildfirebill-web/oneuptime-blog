@@ -38,6 +38,7 @@ First, install registry-creds using the official deployment manifest:
 
 ```yaml
 # registry-creds-deployment.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

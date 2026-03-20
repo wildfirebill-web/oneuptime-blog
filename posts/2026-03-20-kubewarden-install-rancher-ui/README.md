@@ -8,7 +8,7 @@ Description: Learn how to install and configure Kubewarden directly from the Ran
 
 ## Introduction
 
-Rancher provides a graphical way to install Kubewarden through its integrated app catalog. This approach simplifies the installation process significantly — you can deploy Kubewarden without writing any Helm commands, configure all options through forms, and manage updates through the Rancher interface.
+Rancher provides a graphical way to install Kubewarden through its integrated app catalog. This approach simplifies the installation process significantly - you can deploy Kubewarden without writing any Helm commands, configure all options through forms, and manage updates through the Rancher interface.
 
 This guide covers the complete Kubewarden installation process using the Rancher UI, from prerequisites through policy server verification.
 
@@ -125,6 +125,7 @@ Wait for the installation to complete (all resources show as active).
 
 ```bash
 # Check all Kubewarden pods
+
 kubectl get pods -n kubewarden
 
 # Verify the PolicyServer resource

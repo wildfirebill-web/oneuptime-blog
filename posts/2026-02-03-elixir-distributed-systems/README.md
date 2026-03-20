@@ -24,6 +24,7 @@ Start a node with a short name for local development. The cookie acts as a share
 
 ```elixir
 # Start a node named "node1" with short naming
+
 # The cookie is a shared secret for cluster authentication
 iex --sname node1 --cookie secret_cookie
 

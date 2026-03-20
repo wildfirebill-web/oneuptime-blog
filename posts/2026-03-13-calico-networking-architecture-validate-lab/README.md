@@ -30,6 +30,7 @@ kubectl get pods -n tigera-operator
 
 kubectl get tigerastatus
 # Expected: all components showing "Available=True, Degraded=False, Progressing=False"
+
 ```
 
 ## Validation 2: Felix Health

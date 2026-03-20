@@ -1,18 +1,18 @@
----
-title: "Using tofu state list in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Learn how to use the tofu state list command to inspect what resources are tracked in your OpenTofu state file."
----
-
 # Using tofu state list in OpenTofu
 
-The `tofu state list` command lists all resources tracked in your state file. It's the starting point for any state inspection — helping you understand what OpenTofu knows about, troubleshoot unexpected plan behavior, and find resources to move or remove.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Learn how to use the tofu state list command to inspect what resources are tracked in your OpenTofu state file.
+
+The `tofu state list` command lists all resources tracked in your state file. It's the starting point for any state inspection - helping you understand what OpenTofu knows about, troubleshoot unexpected plan behavior, and find resources to move or remove.
 
 ## Basic Usage
 
 ```bash
 # List all resources in state
+
 tofu state list
 
 # Example output:

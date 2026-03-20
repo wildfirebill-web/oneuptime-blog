@@ -30,6 +30,7 @@ You can look for signs of half-open connections in several places:
 
 ```bash
 # Check connection states in the Envoy proxy
+
 kubectl exec my-pod -c istio-proxy -- \
   pilot-agent request GET stats | grep upstream_cx_active
 

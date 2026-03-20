@@ -25,6 +25,7 @@ Each interface also gets its own fact entry accessible through `ansible_facts['<
 
 ```yaml
 # show-network-facts.yml
+
 # Displays all major network-related facts
 ---
 - name: Display network facts

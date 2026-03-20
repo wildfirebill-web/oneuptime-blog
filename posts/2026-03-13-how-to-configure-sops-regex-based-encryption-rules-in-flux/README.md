@@ -178,6 +178,7 @@ Before applying regex rules to your repository, test them on sample files:
 
 ```bash
 # Create a test file
+
 cat <<EOF > test.yaml
 apiVersion: v1
 kind: Secret

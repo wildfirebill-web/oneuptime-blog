@@ -14,8 +14,9 @@ Nginx listens on IPv6 when `listen [::]:80` directives are present. Removing the
 
 ```nginx
 # /etc/nginx/sites-available/default
+
 server {
-    # IPv4 only — listen on all IPv4 addresses
+    # IPv4 only - listen on all IPv4 addresses
     listen 80;
 
     # REMOVED: listen [::]:80;
@@ -71,7 +72,7 @@ systemctl reload nginx
 
 # Confirm no IPv6 sockets
 ss -6tlnp | grep nginx
-# Should show no output — Nginx is not listening on IPv6
+# Should show no output - Nginx is not listening on IPv6
 
 # Confirm IPv4 is still working
 ss -4tlnp | grep nginx
@@ -94,7 +95,7 @@ grep -r "listen \[::" /etc/nginx/
 ```nginx
 server {
     listen 80;
-    # listen [::]:80;  # Disabled — IPv4 only
+    # listen [::]:80;  # Disabled - IPv4 only
 
     server_name example.com;
 }

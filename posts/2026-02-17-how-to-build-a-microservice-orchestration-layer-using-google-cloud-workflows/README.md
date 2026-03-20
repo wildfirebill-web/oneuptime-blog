@@ -41,6 +41,7 @@ Here is the complete workflow definition in YAML.
 
 ```yaml
 # order-fulfillment.yaml
+
 main:
   params: [input]
   steps:

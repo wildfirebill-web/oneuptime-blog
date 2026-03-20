@@ -24,6 +24,7 @@ All workspaces in a configuration share the same backend credentials:
 
 ```bash
 # Anyone who can run tofu against production can also run it against staging
+
 # There is no workspace-level RBAC in the backend config
 
 tofu workspace select production  # No additional auth required
@@ -69,7 +70,7 @@ When more than ~20% of resources differ per workspace, separate directories are 
 
 Workspace state lives in the same backend path:
 
-```
+```text
 s3://bucket/
 ├── prefix/terraform.tfstate         # default
 └── prefix/env:/production/          # production
@@ -79,7 +80,7 @@ A backend migration moves all workspaces together. You cannot independently move
 
 ## Better Alternative: Separate Directories
 
-```
+```text
 infrastructure/
 ├── development/
 │   ├── main.tf
@@ -100,7 +101,7 @@ Each directory has its own backend configuration with separate IAM roles and acc
 ## Better Alternative: Separate State Paths with Same Config
 
 ```hcl
-# shared/main.tf — shared configuration
+# shared/main.tf - shared configuration
 terraform {
   backend "s3" {}  # Partial config
 }

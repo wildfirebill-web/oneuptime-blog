@@ -28,6 +28,7 @@ This guide covers installing Calico on OpenShift Hosted Control Plane worker nod
 
 ```bash
 # Get the hosted cluster kubeconfig
+
 oc extract secret/admin-kubeconfig -n <hosted-cluster-namespace> --to=- > hosted-kubeconfig.yaml
 export KUBECONFIG=hosted-kubeconfig.yaml
 

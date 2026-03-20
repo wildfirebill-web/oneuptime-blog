@@ -30,6 +30,7 @@ This guide covers the planning phase for Azure CNI legacy chaining, including co
 Verify you are running Azure CNI in legacy mode, not Azure CNI Overlay.
 ```bash
 # Get the network profile of your AKS cluster
+
 az aks show \
   --resource-group <resource-group> \
   --name <cluster-name> \

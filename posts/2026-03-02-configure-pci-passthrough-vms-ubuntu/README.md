@@ -24,6 +24,7 @@ The passthrough process:
 
 ```bash
 # Check CPU virtualization and IOMMU capability
+
 dmesg | grep -e DMAR -e IOMMU -e AMD-Vi
 
 # Enable IOMMU in GRUB

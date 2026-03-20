@@ -16,6 +16,7 @@ An IPv6 readiness assessment identifies gaps between your current state and what
 
 ```bash
 # Check if your ISP provides IPv6 transit
+
 curl -6 https://api6.ipify.org 2>/dev/null || echo "No IPv6 Internet"
 
 # Check your public IPv6 prefix assignment

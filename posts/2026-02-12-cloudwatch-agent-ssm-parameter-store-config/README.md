@@ -28,6 +28,7 @@ First, create your CloudWatch Agent configuration as a JSON file. Then store it 
 
 ```bash
 # Store the agent config in SSM Parameter Store
+
 aws ssm put-parameter \
   --name "AmazonCloudWatch-linux-config" \
   --type "String" \

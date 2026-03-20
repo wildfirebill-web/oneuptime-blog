@@ -39,6 +39,7 @@ Work with Google Cloud sales or use the BMS provisioning API to get your server:
 
 ```bash
 # List available BMS instances
+
 gcloud bms instances list \
     --project=my-project \
     --location=us-central1

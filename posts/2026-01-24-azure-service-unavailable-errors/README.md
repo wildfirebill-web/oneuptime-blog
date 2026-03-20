@@ -44,6 +44,7 @@ Start with these commands to identify the issue.
 
 ```bash
 # Check Azure service health for your region
+
 az monitor activity-log list \
     --resource-group myresourcegroup \
     --start-time $(date -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ) \

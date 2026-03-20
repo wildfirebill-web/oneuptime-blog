@@ -81,6 +81,7 @@ fleet-config/
 
 ```yaml
 # global/namespaces/production.yaml
+
 # Production namespace with standard labels and annotations
 apiVersion: v1
 kind: Namespace

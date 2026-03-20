@@ -178,7 +178,7 @@ spec:
         storageClass: standard
 ```
 
-### Resource Allocation
+Resource Allocation
 
 ```yaml
 spec:
@@ -457,6 +457,7 @@ CloudNativePG automatically creates services:
 
 ```bash
 # List services
+
 kubectl get svc -l cnpg.io/cluster=postgres-cluster
 
 # postgres-cluster-rw  - Read-write (primary)

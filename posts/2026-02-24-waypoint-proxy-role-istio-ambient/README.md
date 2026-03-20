@@ -22,6 +22,7 @@ You create a waypoint proxy using the Kubernetes Gateway API. Here is how to dep
 
 ```bash
 # Create a waypoint proxy for a namespace
+
 istioctl waypoint apply -n my-namespace
 ```
 

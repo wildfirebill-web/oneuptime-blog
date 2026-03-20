@@ -82,6 +82,7 @@ AWS provides managed layers for Powertools:
 
 ```yaml
 # SAM template
+
 Globals:
   Function:
     Layers:

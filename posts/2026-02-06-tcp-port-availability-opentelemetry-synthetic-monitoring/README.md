@@ -26,6 +26,7 @@ The OpenTelemetry Collector Contrib distribution includes a `tcpcheck` receiver 
 
 ```yaml
 # collector-tcpcheck.yaml
+
 # Monitor TCP port availability for critical infrastructure services.
 # Each target specifies a host:port combination to probe.
 # The receiver reports connection success, failure, and duration.

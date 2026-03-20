@@ -105,6 +105,7 @@ flowchart LR
 
 ```yaml
 # flag-naming-policy.yaml
+
 apiVersion: governance/v1
 kind: FlagNamingPolicy
 metadata:

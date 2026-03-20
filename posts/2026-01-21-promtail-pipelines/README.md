@@ -105,6 +105,7 @@ pipeline_stages:
 
 ```yaml
 # For: {"user": {"id": "123", "name": "John"}, "action": "login"}
+
 pipeline_stages:
   - json:
       expressions:

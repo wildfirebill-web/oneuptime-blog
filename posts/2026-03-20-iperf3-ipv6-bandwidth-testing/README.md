@@ -14,6 +14,7 @@ Description: Test IPv6 network bandwidth and throughput using iperf3 with TCP an
 
 ```bash
 # Start iperf3 server on any address (IPv4 and IPv6)
+
 iperf3 -s
 
 # Start server bound to a specific IPv6 address
@@ -72,7 +73,7 @@ iperf3 -c 2001:db8::1 -6 -u -b 1G -l 8192
 
 ## Understanding iperf3 Output
 
-```
+```text
 Connecting to host 2001:db8::1, port 5201
 [  5] local 2001:db8::100 port 52100 connected to 2001:db8::1 port 5201
 [ ID] Interval           Transfer     Bitrate         Retr  Cwnd
@@ -141,4 +142,4 @@ iperf3 -c 2001:db8::1 -6 -Z
 
 ## Conclusion
 
-`iperf3` with the `-6` flag provides accurate IPv6 bandwidth measurement. Run TCP tests to measure throughput and retransmissions, UDP tests to measure jitter and packet loss. Always compare IPv4 and IPv6 results on the same path — significant differences indicate IPv6-specific network issues such as MTU mismatches, different routing paths, or hardware offload problems.
+`iperf3` with the `-6` flag provides accurate IPv6 bandwidth measurement. Run TCP tests to measure throughput and retransmissions, UDP tests to measure jitter and packet loss. Always compare IPv4 and IPv6 results on the same path - significant differences indicate IPv6-specific network issues such as MTU mismatches, different routing paths, or hardware offload problems.

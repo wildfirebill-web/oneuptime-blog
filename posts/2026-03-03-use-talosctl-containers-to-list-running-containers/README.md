@@ -27,6 +27,7 @@ To list all containers on a node:
 
 ```bash
 # List all containers on a node
+
 talosctl containers --nodes 192.168.1.10
 ```
 

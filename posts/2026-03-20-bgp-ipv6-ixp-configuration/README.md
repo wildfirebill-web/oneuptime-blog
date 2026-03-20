@@ -67,15 +67,16 @@ write memory
 
 ## Route Server Configuration (BIRD)
 
-```
-# /etc/bird/bird.conf — IXP Route Server configuration
+```python
+# /etc/bird/bird.conf - IXP Route Server configuration
 
 router id 10.0.0.1;
 log syslog all;
 
 protocol device { scan time 10; }
 
-# Define import filter — validate prefixes from members
+# Define import filter - validate prefixes from members
+
 filter IMPORT_FROM_MEMBER {
     # Reject default route
     if net = ::/0 then reject;
@@ -109,10 +110,10 @@ protocol bgp AS65002 from RS_CLIENT {
 
 ## IXP Best Practices for IPv6
 
-1. **Accept only announced prefixes** — Use IRR-based filtering to accept only prefixes the AS is authorized to announce
-2. **Enforce RPKI ROV** — Reject routes with invalid RPKI Route Origin Validation status
-3. **Use maximum-prefix limits** — Prevent members from accidentally advertising too many routes
-4. **Advertise only your own space** — Never advertise learned routes back to the IXP fabric
+1. **Accept only announced prefixes** - Use IRR-based filtering to accept only prefixes the AS is authorized to announce
+2. **Enforce RPKI ROV** - Reject routes with invalid RPKI Route Origin Validation status
+3. **Use maximum-prefix limits** - Prevent members from accidentally advertising too many routes
+4. **Advertise only your own space** - Never advertise learned routes back to the IXP fabric
 
 ## RPKI Validation in FRRouting
 

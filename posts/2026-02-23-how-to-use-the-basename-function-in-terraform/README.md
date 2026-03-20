@@ -16,6 +16,7 @@ The `basename` function takes a string containing a file path and returns only t
 
 ```hcl
 # basename(path)
+
 # Returns the last component of a path
 basename("/etc/nginx/nginx.conf")     # Returns: "nginx.conf"
 basename("configs/app/settings.yaml") # Returns: "settings.yaml"

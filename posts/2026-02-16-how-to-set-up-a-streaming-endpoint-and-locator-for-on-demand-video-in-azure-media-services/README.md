@@ -56,6 +56,7 @@ Using the Azure CLI, start the default endpoint with this command.
 
 ```bash
 # Start the default streaming endpoint (it is created automatically but stopped)
+
 az ams streaming-endpoint start \
   --resource-group myResourceGroup \
   --account-name myMediaServicesAccount \

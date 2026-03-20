@@ -17,7 +17,7 @@ QRadar supports IPv6 in multiple areas:
 
 ## Configuring Log Sources via IPv6
 
-```
+```text
 QRadar Admin Console → Log Sources → Add Log Source
 
 Log Source Type: Linux OS / Cisco ASA / etc.
@@ -25,6 +25,7 @@ Protocol: Syslog
 Log Source Identifier: 2001:db8:device::1   ← IPv6 address
 
 # For UDP syslog from IPv6 devices:
+
 Admin → System Configuration → Firewall Access
 Add: Allow UDP 514 from 2001:db8:device::/48
 
@@ -35,7 +36,7 @@ ss -6 -u -l -n | grep 514
 
 ## Network Hierarchy: IPv6 Subnets
 
-```
+```text
 QRadar Admin → Network Hierarchy → Add Network
 
 Name: Corp_IPv6_Network
@@ -57,7 +58,7 @@ Group: Guest Networks
 
 ## Custom Event Properties for IPv6
 
-```
+```text
 QRadar Admin → Custom Event Properties → Add Property
 
 # Extract IPv6 source from custom log format
@@ -82,7 +83,7 @@ Group: 1
 
 ## Building Block Rules for IPv6
 
-```
+```text
 QRadar → Rules → Add Building Block Rule
 
 # BB: IPv6 Internal Source
@@ -107,7 +108,7 @@ Note: Link-local should not appear in routed logs
 
 ## Detection Rules
 
-```
+```text
 # Rule: IPv6 Scanning Detection
 Name: IPv6 Port Scan from External
 Description: Detect external IPv6 host scanning multiple ports
@@ -150,7 +151,7 @@ LAST 24 HOURS
 GROUP BY "sourceip", "destinationip", "destinationport", "protocolid"
 ORDER BY event_count DESC
 
--- AQL: IPv6 flows — top talkers
+-- AQL: IPv6 flows - top talkers
 SELECT
     sourceip,
     destinationip,
@@ -175,7 +176,7 @@ LAST 1 HOURS
 
 ## QFlow: IPv6 Flow Collection
 
-```
+```text
 # QFlow collector configuration for IPv6 support
 # Admin → Data Collection → Flow Sources
 
@@ -195,7 +196,7 @@ Port: 2055
 
 ## Reporting
 
-```
+```text
 # Create scheduled report: IPv6 Security Summary
 QRadar → Reports → Add Report
 

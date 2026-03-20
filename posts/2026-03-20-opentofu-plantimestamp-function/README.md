@@ -61,7 +61,7 @@ resource "aws_instance" "worker" {
 
   tags = {
     Name       = "worker"
-    # Same timestamp as app server — consistent for this deployment
+    # Same timestamp as app server - consistent for this deployment
     DeployedAt = local.deploy_datetime
   }
 }

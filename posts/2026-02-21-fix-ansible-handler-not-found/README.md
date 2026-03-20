@@ -22,6 +22,7 @@ ERROR! The requested handler 'restart nginx' was not found in either the main ha
 
 ```yaml
 # WRONG: notify name does not match handler name
+
 tasks:
   - name: Deploy config
     template:

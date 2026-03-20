@@ -21,7 +21,8 @@ Traefik routing issues can stem from incorrect labels, network misconfigurations
 First, enable verbose logging to see exactly what Traefik is doing:
 
 ```yaml
-# traefik.yml — Temporarily increase log level
+# traefik.yml - Temporarily increase log level
+
 log:
   level: DEBUG    # Change from INFO to DEBUG for troubleshooting
   format: common  # Use 'json' for structured logs
@@ -126,7 +127,7 @@ docker exec mycontainer netstat -tlnp 2>/dev/null || docker exec mycontainer ss 
 
 ```bash
 #!/bin/bash
-# traefik-debug.sh — Run this to diagnose routing issues
+# traefik-debug.sh - Run this to diagnose routing issues
 
 SERVICE_NAME="${1:-myapp}"
 DOMAIN="${2:-myapp.example.com}"
@@ -168,7 +169,7 @@ echo "  HTTPS status: $HTTPS_STATUS"
 # WRONG: Service name mismatch between router and service
 labels:
   - "traefik.http.routers.myapp.service=my-app"        # Hyphen
-  - "traefik.http.services.myapp.loadbalancer..."       # No hyphen — MISMATCH
+  - "traefik.http.services.myapp.loadbalancer..."       # No hyphen - MISMATCH
 
 # CORRECT: Names must match exactly
 labels:

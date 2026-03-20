@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GRE, ip tunnel, Linux, Inspection, Networking, Tunnel Management, IPv4
+Tags: GRE, Ip tunnel, Linux, Inspection, Networking, Tunnel Management, IPv4
 
 Description: Learn how to use the ip tunnel show command to list and inspect GRE tunnel configurations on Linux, including tunnel mode, local/remote addresses, TTL, and key values.
 
@@ -14,6 +14,7 @@ Description: Learn how to use the ip tunnel show command to list and inspect GRE
 
 ```bash
 # List all tunnel interfaces
+
 ip tunnel show
 
 # Output:
@@ -29,7 +30,7 @@ ip tunnel show gre1
 
 ## Understanding the Output
 
-```
+```text
 gre1: gre/ip remote 10.0.0.2 local 10.0.0.1 ttl 255
 
   gre1           → Interface name

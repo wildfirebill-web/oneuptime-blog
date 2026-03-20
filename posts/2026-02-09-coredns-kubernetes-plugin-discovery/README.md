@@ -99,6 +99,7 @@ Pod DNS naming patterns:
 
 ```text
 # Format: pod-ip-address.namespace.pod.cluster.local
+
 10-244-1-5.default.pod.cluster.local
 
 # StatefulSet pods: pod-name.service-name.namespace.svc.cluster.local

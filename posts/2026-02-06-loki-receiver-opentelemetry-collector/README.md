@@ -78,6 +78,7 @@ The Loki receiver requires configuring an HTTP endpoint for the Loki push API. H
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   # Loki receiver implements the Grafana Loki push API
   loki:

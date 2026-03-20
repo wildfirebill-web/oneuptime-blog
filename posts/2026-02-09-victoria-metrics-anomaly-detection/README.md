@@ -134,6 +134,7 @@ Interquartile Range (IQR) method is robust against extreme outliers:
 
 ```promql
 # Memory usage anomaly detection
+
 (
   container_memory_working_set_bytes
   >

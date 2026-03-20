@@ -72,6 +72,7 @@ Verify the setup:
 
 ```bash
 # Check IPv4 rules
+
 kubectl exec my-pod -c istio-proxy -- iptables -t nat -L ISTIO_REDIRECT -n
 
 # Check IPv6 rules

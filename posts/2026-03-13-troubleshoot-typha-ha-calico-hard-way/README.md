@@ -118,6 +118,7 @@ If all nodes have Typha pods due to anti-affinity, remove the `required` anti-af
 
 ```bash
 # Check Felix reconnect timeout
+
 calicoctl get felixconfiguration default -o yaml | grep typhaReadTimeout
 ```
 

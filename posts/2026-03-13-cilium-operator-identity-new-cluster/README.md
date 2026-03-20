@@ -30,6 +30,7 @@ Install Cilium with Operator identity management enabled from the start:
 
 ```bash
 # Add Cilium Helm repository
+
 helm repo add cilium https://helm.cilium.io/
 helm repo update
 

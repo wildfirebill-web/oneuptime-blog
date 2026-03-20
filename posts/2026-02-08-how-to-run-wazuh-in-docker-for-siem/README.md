@@ -34,6 +34,7 @@ Wazuh is a resource-hungry platform. Make sure your Docker host meets these mini
 
 ```bash
 # Increase vm.max_map_count for the indexer (OpenSearch requirement)
+
 sudo sysctl -w vm.max_map_count=262144
 echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
 ```

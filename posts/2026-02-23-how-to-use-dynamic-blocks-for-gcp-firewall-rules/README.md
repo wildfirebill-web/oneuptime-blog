@@ -21,6 +21,7 @@ Before diving into the Terraform patterns, it is worth noting how GCP firewall r
 
 ```hcl
 # Basic GCP firewall rule structure
+
 resource "google_compute_firewall" "allow_http" {
   name    = "allow-http"
   network = google_compute_network.main.name

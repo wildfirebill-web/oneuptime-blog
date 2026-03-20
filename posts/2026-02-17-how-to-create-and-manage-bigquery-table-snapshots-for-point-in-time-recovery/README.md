@@ -43,6 +43,7 @@ You can also use the `bq` command:
 
 ```bash
 # Create a table snapshot using bq
+
 bq cp --snapshot \
     my-project-id:production.orders \
     my-project-id:backups.orders_snapshot_20260217

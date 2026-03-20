@@ -24,6 +24,7 @@ Start by adding image pull secrets to a ServiceAccount:
 
 ```yaml
 # serviceaccount-with-image-secrets.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

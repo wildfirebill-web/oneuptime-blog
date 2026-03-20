@@ -93,11 +93,11 @@ Click **Save** and Uptime Kuma will immediately start checking.
 
 Navigate to **Settings > Notifications** to set up alerts. Uptime Kuma supports:
 
-- **Slack** — webhook URL
-- **Discord** — webhook URL
-- **Telegram** — bot token + chat ID
-- **Email (SMTP)** — configure SMTP credentials
-- **PagerDuty** — integration key
+- **Slack** - webhook URL
+- **Discord** - webhook URL
+- **Telegram** - bot token + chat ID
+- **Email (SMTP)** - configure SMTP credentials
+- **PagerDuty** - integration key
 - **Pushover**, **Gotify**, and 80+ more
 
 ### Step 7: Set Up a Status Page

@@ -1,4 +1,4 @@
-# How to Migrate from Lens to Rancher Dashboard
+# How to Migrate from Lens to Rancher Dashboard - Dashboard
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ In Lens, go to the **Catalog** to list all connected clusters. Export kubeconfig
 
 ```bash
 # List all contexts
+
 kubectl config get-contexts
 
 # Export kubeconfig for a specific context
@@ -133,4 +134,4 @@ Rancher's web-based access means team members don't need local kubeconfig files:
 
 ## Conclusion
 
-Migrating from Lens to Rancher Dashboard shifts cluster management from individual desktop tools to a centralized, team-friendly web platform. The core workflows — viewing workloads, accessing logs, running exec shells — all have direct equivalents, with Rancher adding significant value in multi-cluster management and team collaboration.
+Migrating from Lens to Rancher Dashboard shifts cluster management from individual desktop tools to a centralized, team-friendly web platform. The core workflows - viewing workloads, accessing logs, running exec shells - all have direct equivalents, with Rancher adding significant value in multi-cluster management and team collaboration.

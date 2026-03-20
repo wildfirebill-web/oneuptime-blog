@@ -571,6 +571,7 @@ flowchart TB
 
 ```python
 # apdex_calculator.py
+
 # Apdex score calculator for measuring user satisfaction
 
 from dataclasses import dataclass

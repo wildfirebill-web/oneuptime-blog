@@ -30,6 +30,7 @@ This gives you two files:
 
 ```bash
 # Export the Logic App resource as an ARM template
+
 az group export \
   --resource-group rg-workflows \
   --resource-ids "/subscriptions/<sub-id>/resourceGroups/rg-workflows/providers/Microsoft.Logic/workflows/la-approval-workflow" \

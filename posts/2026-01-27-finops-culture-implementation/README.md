@@ -22,6 +22,7 @@ The core idea is simple: everyone takes ownership of their cloud usage, supporte
 
 ```yaml
 # Core FinOps stakeholders and their responsibilities
+
 stakeholders:
   engineering:
     - Optimize code and architecture for cost efficiency

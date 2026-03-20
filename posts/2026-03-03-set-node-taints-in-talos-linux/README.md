@@ -56,6 +56,7 @@ Reserve nodes with GPUs for GPU workloads only:
 
 ```yaml
 # GPU node configuration
+
 machine:
   nodeLabels:
     hardware-type: gpu

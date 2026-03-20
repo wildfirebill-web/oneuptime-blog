@@ -101,6 +101,7 @@ class ClientCredentialsAuth:
         )
 
 # Usage
+
 auth = ClientCredentialsAuth(
     token_url="https://auth.example.com/oauth/token",
     client_id=os.environ["CLIENT_ID"],

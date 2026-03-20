@@ -36,6 +36,7 @@ This playbook disables IPv6 using sysctl parameters:
 
 ```yaml
 # disable_ipv6_sysctl.yml - Disable IPv6 via sysctl
+
 ---
 - name: Disable IPv6 via sysctl
   hosts: all

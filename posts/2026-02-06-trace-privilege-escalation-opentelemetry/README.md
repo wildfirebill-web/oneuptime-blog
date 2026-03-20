@@ -18,6 +18,7 @@ Every authorization check should be recorded as span attributes:
 
 ```python
 # authz_tracing.py
+
 from opentelemetry import trace
 from opentelemetry.trace import StatusCode
 

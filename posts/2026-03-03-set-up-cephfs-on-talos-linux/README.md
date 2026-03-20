@@ -24,6 +24,7 @@ Verify that CephFS CSI is enabled:
 
 ```bash
 # Check that the CephFS CSI pods are running
+
 kubectl get pods -n rook-ceph -l app=csi-cephfsplugin
 
 # Verify the Ceph cluster is healthy

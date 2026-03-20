@@ -20,6 +20,7 @@ SELinux (Security-Enhanced Linux) provides mandatory access control (MAC) at the
 
 ```bash
 # Check SELinux status
+
 getenforce
 # Output: Enforcing, Permissive, or Disabled
 

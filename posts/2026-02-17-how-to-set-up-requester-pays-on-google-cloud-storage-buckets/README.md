@@ -44,6 +44,7 @@ graph TD
 
 ```bash
 # Enable Requester Pays on a bucket
+
 gcloud storage buckets update gs://my-shared-dataset \
   --requester-pays
 ```

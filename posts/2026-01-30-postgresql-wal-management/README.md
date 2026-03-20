@@ -137,6 +137,7 @@ Create a robust archive script with compression and verification:
 ```bash
 #!/bin/bash
 # /usr/local/bin/archive_wal.sh
+
 # WAL archiving script with compression and verification
 
 # Configuration

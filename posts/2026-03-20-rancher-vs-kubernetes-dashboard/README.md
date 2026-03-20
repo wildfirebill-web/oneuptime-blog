@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, kubernetes-dashboard, kubernetes, comparison, management-ui
+Tags: Rancher, Kubernetes-dashboard, Kubernetes, Comparison, Management-ui
 
 Description: A comprehensive comparison of Rancher and the Kubernetes Dashboard to help you decide which tool best fits your cluster management needs.
 
@@ -12,7 +12,7 @@ The Kubernetes Dashboard is the official web-based UI for Kubernetes clusters, w
 
 ## What Is Kubernetes Dashboard?
 
-The Kubernetes Dashboard is the official, community-maintained web UI for Kubernetes. It provides a basic view of your cluster resources — Pods, Deployments, Services, ConfigMaps, and more. It allows you to deploy containerized applications, troubleshoot running applications, and manage cluster resources. It is intentionally lightweight and focused on single-cluster visibility.
+The Kubernetes Dashboard is the official, community-maintained web UI for Kubernetes. It provides a basic view of your cluster resources - Pods, Deployments, Services, ConfigMaps, and more. It allows you to deploy containerized applications, troubleshoot running applications, and manage cluster resources. It is intentionally lightweight and focused on single-cluster visibility.
 
 ## What Is Rancher?
 
@@ -42,6 +42,7 @@ Rancher is a multi-cluster Kubernetes management platform developed by SUSE. It 
 
 ```bash
 # Deploy the Kubernetes Dashboard
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
 # Create a service account for access
@@ -108,4 +109,4 @@ Rancher includes integrated Prometheus and Grafana monitoring, Loki-based loggin
 
 ## Conclusion
 
-The Kubernetes Dashboard and Rancher serve fundamentally different needs. The Dashboard is a lightweight, single-cluster visualization tool — perfect for getting started or inspecting resources quickly. Rancher is a full enterprise platform that handles the entire lifecycle of Kubernetes clusters at scale. For production environments with multiple clusters, Rancher provides capabilities that the Dashboard simply cannot match.
+The Kubernetes Dashboard and Rancher serve fundamentally different needs. The Dashboard is a lightweight, single-cluster visualization tool - perfect for getting started or inspecting resources quickly. Rancher is a full enterprise platform that handles the entire lifecycle of Kubernetes clusters at scale. For production environments with multiple clusters, Rancher provides capabilities that the Dashboard simply cannot match.

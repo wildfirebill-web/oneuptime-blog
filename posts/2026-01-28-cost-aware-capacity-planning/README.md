@@ -35,6 +35,7 @@ Before you can optimize, you need visibility. Instrument your infrastructure to 
 
 ```python
 # cost_tracker.py - Track resource utilization alongside costs
+
 import datetime
 from dataclasses import dataclass
 from typing import Dict, List

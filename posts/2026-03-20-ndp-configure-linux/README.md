@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NDP, Linux Configuration, sysctl, IPv6, Neighbor Discovery
+Tags: NDP, Linux Configuration, Sysctl, IPv6, Neighbor Discovery
 
 Description: Configure IPv6 NDP parameters on Linux using sysctl, including neighbor cache timers, router advertisement acceptance, and NUD behavior tuning.
 
@@ -14,6 +14,7 @@ Linux provides extensive NDP configuration via sysctl parameters under `/proc/sy
 
 ```bash
 # View all IPv6 NDP-related parameters for eth0
+
 sysctl -a 2>/dev/null | grep "net.ipv6.neigh.eth0"
 
 # Key parameters (with defaults):

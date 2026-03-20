@@ -20,6 +20,7 @@ Learn how to write infrastructure code that works with both Terraform and OpenTo
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

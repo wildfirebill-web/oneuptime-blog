@@ -475,6 +475,7 @@ Deploy your leader election-enabled application with proper RBAC and pod configu
 
 ```yaml
 # rbac.yaml
+
 # Create a ServiceAccount for the application
 apiVersion: v1
 kind: ServiceAccount

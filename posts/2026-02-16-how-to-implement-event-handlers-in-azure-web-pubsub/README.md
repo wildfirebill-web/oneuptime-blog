@@ -47,6 +47,7 @@ Event handlers are HTTP endpoints on your server. Web PubSub sends POST requests
 
 ```bash
 # Install the necessary packages
+
 npm install @azure/web-pubsub @azure/web-pubsub-express express
 ```
 

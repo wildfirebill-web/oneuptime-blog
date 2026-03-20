@@ -30,6 +30,7 @@ The simplest way to define variables is directly in your `.gitlab-ci.yml` file.
 
 ```yaml
 # Global variables available to all jobs
+
 variables:
   APP_VERSION: "1.2.3"
   BUILD_ENV: "production"

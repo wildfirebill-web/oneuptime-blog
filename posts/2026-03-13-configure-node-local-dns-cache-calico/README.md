@@ -26,6 +26,7 @@ Calico requires specific configuration when NodeLocal DNSCache is used, particul
 
 ```bash
 # Download the NodeLocal DNSCache manifest
+
 curl -LO https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml
 
 # Customize DNS IP addresses

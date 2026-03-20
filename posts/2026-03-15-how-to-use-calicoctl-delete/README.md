@@ -72,6 +72,7 @@ Always follow a safe deletion workflow to prevent disruptions:
 
 ```bash
 # Review what you are about to delete
+
 calicoctl get globalnetworkpolicy my-policy -o yaml
 ```
 

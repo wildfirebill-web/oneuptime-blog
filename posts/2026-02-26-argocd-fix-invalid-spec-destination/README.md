@@ -51,6 +51,7 @@ application destination can't have both name and server defined
 
 ```yaml
 # WRONG - both server and name
+
 destination:
   server: https://kubernetes.default.svc
   name: in-cluster

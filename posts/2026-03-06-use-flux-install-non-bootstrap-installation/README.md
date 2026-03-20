@@ -51,6 +51,7 @@ The simplest installation deploys all default components:
 
 ```bash
 # Install Flux with default settings
+
 flux install
 ```
 
@@ -189,7 +190,7 @@ flux install --network-policy=true
 flux install --network-policy=false
 ```
 
-## Resource Limits and Tolerations
+Resource Limits and Tolerations
 
 Customize resource allocation and scheduling:
 

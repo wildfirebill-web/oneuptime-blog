@@ -20,6 +20,7 @@ Description: Learn how to create, update, and manage Portainer environments (end
 
 ```bash
 # Add a new Docker environment via Unix socket
+
 curl -X POST "${PORTAINER_URL}/api/endpoints" \
   -H "Authorization: Bearer ${API_TOKEN}" \
   -H "Content-Type: multipart/form-data" \

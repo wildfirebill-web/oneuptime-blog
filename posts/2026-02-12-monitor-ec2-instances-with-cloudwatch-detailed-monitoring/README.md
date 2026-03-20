@@ -31,6 +31,7 @@ At launch time:
 
 ```bash
 # Launch an instance with detailed monitoring enabled
+
 aws ec2 run-instances \
   --image-id ami-0abc123 \
   --instance-type m5.xlarge \

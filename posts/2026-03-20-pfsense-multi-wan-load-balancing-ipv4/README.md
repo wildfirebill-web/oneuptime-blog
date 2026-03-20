@@ -13,8 +13,8 @@ pfSense multi-WAN uses gateway groups to balance or fail-over outbound IPv4 traf
 ## Step 1: Configure WAN Interfaces
 
 Navigate to **Interfaces > Assignments**:
-- WAN (em0): Primary ISP — `203.0.113.2/30`, GW: `203.0.113.1`
-- OPT1 (em2): Secondary ISP — `198.51.100.6/30`, GW: `198.51.100.5`
+- WAN (em0): Primary ISP - `203.0.113.2/30`, GW: `203.0.113.1`
+- OPT1 (em2): Secondary ISP - `198.51.100.6/30`, GW: `198.51.100.5`
   - Rename OPT1 to `WAN2`
 
 ## Step 2: Gateway Configuration
@@ -22,7 +22,7 @@ Navigate to **Interfaces > Assignments**:
 Navigate to **System > Routing > Gateways**:
 
 Primary gateway:
-```
+```text
 Name:       GW_WAN
 Interface:  WAN
 Gateway IP: 203.0.113.1
@@ -30,7 +30,7 @@ Monitor IP: 8.8.8.8
 ```
 
 Secondary gateway:
-```
+```text
 Name:       GW_WAN2
 Interface:  WAN2
 Gateway IP: 198.51.100.5
@@ -42,26 +42,26 @@ Monitor IP: 8.8.4.4
 Navigate to **System > Routing > Gateway Groups > Add**:
 
 **Load Balancing Group:**
-```
+```text
 Name:           LOAD_BALANCE
 GW_WAN  Tier 1  (active)
-GW_WAN2 Tier 1  (active — same tier = load balance)
+GW_WAN2 Tier 1  (active - same tier = load balance)
 Trigger Level:  Packet Loss or High Latency
 ```
 
 **Failover Group:**
-```
+```text
 Name:           FAILOVER
 GW_WAN  Tier 1  (primary)
-GW_WAN2 Tier 2  (standby — higher tier = backup only)
+GW_WAN2 Tier 2  (standby - higher tier = backup only)
 Trigger Level:  Packet Loss or High Latency
 ```
 
-## Step 4: Firewall Rule — Route LAN Through Gateway Group
+## Step 4: Firewall Rule - Route LAN Through Gateway Group
 
 Navigate to **Firewall > Rules > LAN > Edit** (default allow rule):
 
-```
+```text
 Action:          Pass
 Source:          LAN net
 Destination:     any
@@ -71,17 +71,18 @@ Gateway:         LOAD_BALANCE   ← Change from default to gateway group
 ## Step 5: Sticky Connections (Session Persistence)
 
 Navigate to **System > Advanced > Miscellaneous**:
-```
+```text
 Sticky Connections:   checked
 Source tracking timeout: 0 (use state timeout)
 ```
 
 This ensures a user's session stays on the same WAN during an active connection.
 
-## Policy Routing — Specific Traffic via Specific WAN
+## Policy Routing - Specific Traffic via Specific WAN
 
-```
+```text
 # Route VoIP through WAN2 for lower latency
+
 Firewall > Rules > LAN > Add:
   Source:      LAN net
   Destination: any

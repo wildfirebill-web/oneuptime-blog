@@ -465,6 +465,7 @@ Query specific JetStream metrics:
 
 ```promql
 # Stream message rate
+
 rate(nats_jetstream_stream_msg_count[5m])
 
 # Consumer delivery rate

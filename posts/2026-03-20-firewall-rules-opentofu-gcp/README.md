@@ -16,6 +16,7 @@ GCP firewall rules control network traffic to and from Compute Engine instances.
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     google = {
@@ -221,7 +222,7 @@ gcloud compute ssh web-server-instance --command "curl -I https://api.internal"
 ## Best Practices
 
 1. **Use target tags** to apply rules to specific instance groups, not all instances
-2. **Prefer service accounts** over tags for production — they are more secure and auditable
+2. **Prefer service accounts** over tags for production - they are more secure and auditable
 3. **Use priority** to control rule evaluation order (lower = higher priority)
 4. **Log firewall actions** with logging metadata for security auditing
 5. **Regularly audit** unused rules with Recommender API recommendations

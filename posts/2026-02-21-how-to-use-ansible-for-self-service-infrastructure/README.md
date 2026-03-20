@@ -37,6 +37,7 @@ AWX surveys create web forms that collect variables from users:
 
 ```yaml
 # AWX job template configuration (via API)
+
 # This creates a "New Development Environment" self-service option
 
 job_template:

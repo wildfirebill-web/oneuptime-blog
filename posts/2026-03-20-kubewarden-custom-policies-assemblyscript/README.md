@@ -21,6 +21,7 @@ AssemblyScript is a variant of TypeScript that compiles directly to WebAssembly.
 
 ```bash
 # Install Node.js (if not installed)
+
 # macOS
 brew install node
 
@@ -58,7 +59,7 @@ npx asinit . --yes
 
 ## Project Structure
 
-```
+```text
 my-as-policy/
 ├── package.json
 ├── asconfig.json           # AssemblyScript config

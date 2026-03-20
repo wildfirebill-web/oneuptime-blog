@@ -18,6 +18,7 @@ Start by installing the build toolchain:
 
 ```bash
 # Install essential build tools
+
 sudo apt update
 sudo apt install build-essential devscripts dh-make dpkg-dev lintian -y
 
@@ -119,6 +120,7 @@ Package: myhello
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A simple hello world program
+
  This package provides a minimal demonstration of a .deb package
  built from source code. It prints a greeting to standard output.
 EOF

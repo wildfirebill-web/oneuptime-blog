@@ -238,6 +238,7 @@ Check how much traffic is being throttled using Envoy stats:
 
 ```bash
 # Check rate limit stats for a specific pod
+
 kubectl exec deploy/order-service -c istio-proxy -- \
   pilot-agent request GET stats | grep rate_limit
 

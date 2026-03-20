@@ -79,6 +79,7 @@ First, install the required dependencies:
 
 ```bash
 # Install core libraries for QLoRA fine-tuning
+
 pip install torch transformers accelerate
 pip install bitsandbytes  # Required for 4-bit quantization
 pip install peft          # Hugging Face PEFT library

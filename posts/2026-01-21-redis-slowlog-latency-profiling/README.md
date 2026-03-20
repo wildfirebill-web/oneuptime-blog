@@ -28,6 +28,7 @@ SLOWLOG records commands that exceed a configurable execution time threshold. It
 
 ```bash
 # redis.conf
+
 slowlog-log-slower-than 10000    # Log commands slower than 10ms (in microseconds)
 slowlog-max-len 1024             # Keep last 1024 slow commands
 

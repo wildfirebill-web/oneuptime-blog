@@ -28,6 +28,7 @@ flowchart LR
 
 ```ini
 # inventory/gluster
+
 [gluster_nodes]
 gluster-01 ansible_host=10.0.1.10 gluster_ip=10.0.1.10
 gluster-02 ansible_host=10.0.1.11 gluster_ip=10.0.1.11

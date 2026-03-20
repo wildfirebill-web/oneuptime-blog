@@ -16,6 +16,7 @@ The `-e` or `--extra-vars` flag accepts variables in several formats. The simple
 
 ```bash
 # Pass a single variable
+
 ansible all -m debug -a "msg={{ greeting }}" -e "greeting=hello"
 
 # Pass multiple variables

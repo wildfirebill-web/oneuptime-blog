@@ -45,6 +45,7 @@ Your VM cannot reach external endpoints even with Cloud NAT configured.
 
 ```bash
 # Check if Cloud NAT is associated with the right network and region
+
 gcloud compute routers nats list \
     --router=my-router \
     --region=us-central1

@@ -157,6 +157,7 @@ The following Terraform configuration establishes the organization structure wit
 # modules/organization/main.tf
 
 # Create the AWS Organization with all features enabled
+
 resource "aws_organizations_organization" "main" {
   # Enable all features including SCPs
   feature_set = "ALL"

@@ -45,6 +45,7 @@ Set up the Amplify app:
 
 ```bash
 # Create the Amplify app with your Next.js repo
+
 aws amplify create-app \
     --name my-nextjs-app \
     --repository https://github.com/yourname/my-nextjs-app \

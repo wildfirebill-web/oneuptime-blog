@@ -12,10 +12,10 @@ Container networking issues are among the most common problems in Docker deploym
 
 ## Common Symptoms
 
-- `connection refused` — service is not running or wrong port
-- `no such host` — DNS resolution failure
-- `connection timed out` — firewall or wrong network
-- `network xxx not found` — container not on expected network
+- `connection refused` - service is not running or wrong port
+- `no such host` - DNS resolution failure
+- `connection timed out` - firewall or wrong network
+- `network xxx not found` - container not on expected network
 
 ## Step 1: Verify Container Status
 
@@ -24,6 +24,7 @@ Check that both containers are running and healthy in Portainer's container list
 ```bash
 docker ps | grep -E "container-a|container-b"
 # Both should show "Up" status and passing health checks
+
 ```
 
 ## Step 2: Check Network Membership
@@ -111,7 +112,7 @@ services:
 
   container-b:
     networks:
-      - shared-net    # Add this — was missing before
+      - shared-net    # Add this - was missing before
 
 networks:
   shared-net:

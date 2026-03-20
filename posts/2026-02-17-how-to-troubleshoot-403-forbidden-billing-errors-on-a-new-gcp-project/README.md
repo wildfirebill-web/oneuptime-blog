@@ -41,6 +41,7 @@ The first thing to check is whether your project actually has a billing account 
 
 ```bash
 # Check if the project has a billing account linked
+
 gcloud billing projects describe my-new-project
 ```
 

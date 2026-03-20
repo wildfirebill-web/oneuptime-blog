@@ -32,6 +32,7 @@ First, deploy your current production model (Model A) and the challenger model (
 
 ```python
 # setup_ab_test.py
+
 from google.cloud import aiplatform
 
 aiplatform.init(project="my-project", location="us-central1")

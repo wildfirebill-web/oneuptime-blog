@@ -35,6 +35,7 @@ Create a circuit breaker middleware that opens when error rates exceed 50%:
 
 ```yaml
 # circuit-breaker-middleware.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:

@@ -16,6 +16,7 @@ Set it up with a single command:
 
 ```bash
 # Clone the demo repository
+
 git clone https://github.com/open-telemetry/opentelemetry-demo.git
 cd opentelemetry-demo
 

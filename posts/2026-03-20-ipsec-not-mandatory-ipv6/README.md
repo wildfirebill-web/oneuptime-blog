@@ -85,7 +85,7 @@ Despite not being mandatory, IPsec remains the right choice for:
 
 Rather than mandatory IPsec for everything, modern security design uses defense in depth:
 
-```
+```text
 Application layer:  TLS 1.3 for all user data
 Transport layer:    DTLS for UDP applications
 Network layer:      IPsec selectively for:
@@ -96,6 +96,7 @@ Network layer:      IPsec selectively for:
 
 ```bash
 # Example: Protect BGP sessions with IPsec (management plane)
+
 # strongSwan: Protect only BGP traffic (not all IPv6)
 conn bgp-protection
     left=2001:db8:r1::1
@@ -110,11 +111,11 @@ conn bgp-protection
 
 ## What This Means for Your Security Design
 
-1. **Don't rely on IPsec being "built in"** — it won't be active unless you configure it
-2. **Use IPsec where it provides clear value** — VPNs, management plane, specific protocols
-3. **Don't use IPsec as a replacement for application security** — TLS in applications is more maintainable
-4. **Check dual-stack paths** — IPv6 IPsec policy may differ from IPv4
+1. **Don't rely on IPsec being "built in"** - it won't be active unless you configure it
+2. **Use IPsec where it provides clear value** - VPNs, management plane, specific protocols
+3. **Don't use IPsec as a replacement for application security** - TLS in applications is more maintainable
+4. **Check dual-stack paths** - IPv6 IPsec policy may differ from IPv4
 
 ## Summary
 
-IPv6's mandatory IPsec requirement (RFC 2460) was downgraded to SHOULD by RFC 6434 in 2011 because: virtually no network used it despite implementations existing, NAT broke AH compatibility, TLS became the dominant security layer, and operational complexity prevented universal adoption. IPsec remains valuable for VPN tunnels, management plane security, and protecting legacy applications — but it is now a deliberate deployment choice rather than a universal requirement. Security comes from a combination of application-layer TLS and selective IPsec deployment.
+IPv6's mandatory IPsec requirement (RFC 2460) was downgraded to SHOULD by RFC 6434 in 2011 because: virtually no network used it despite implementations existing, NAT broke AH compatibility, TLS became the dominant security layer, and operational complexity prevented universal adoption. IPsec remains valuable for VPN tunnels, management plane security, and protecting legacy applications - but it is now a deliberate deployment choice rather than a universal requirement. Security comes from a combination of application-layer TLS and selective IPsec deployment.

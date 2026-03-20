@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Fragmentation, Routers, Performance, RFC 8200
+Tags: IPv6, Fragmentation, Router, Performance, RFC 8200
 
 Description: Understand the design rationale behind IPv6's source-only fragmentation model, why intermediate router fragmentation was eliminated, and the performance benefits this provides.
 
@@ -14,10 +14,10 @@ IPv6 eliminated the ability of intermediate routers to fragment packets. Only th
 
 In IPv4, any router could fragment packets:
 
-```
+```text
 IPv4 fragmentation problems:
   1. Router overhead: Fragmentation requires allocating buffers,
-     copying data, creating multiple packets — expensive in hardware
+     copying data, creating multiple packets - expensive in hardware
 
   2. Performance impact: Hardware fast paths often can't fragment;
      packets that need fragmentation get punted to the CPU
@@ -27,7 +27,7 @@ IPv4 fragmentation problems:
        maintain fragment buffers
 
   4. Fragment attacks: Teardrop attack, overlapping fragments,
-     Fragrouter attacks — all exploited router fragmentation
+     Fragrouter attacks - all exploited router fragmentation
 
   5. Poor path visibility: Source doesn't know the actual path MTU
      unless DF bit is set and ICMP "Fragmentation Needed" is returned
@@ -35,7 +35,7 @@ IPv4 fragmentation problems:
 
 ## Why IPv6 Eliminated Router Fragmentation
 
-```
+```text
 RFC 8200 rationale:
 
 1. Performance: Eliminating router fragmentation allows all routers
@@ -62,7 +62,7 @@ RFC 8200 rationale:
 
 The price for simpler routers is more complex sources:
 
-```
+```text
 IPv6 source requirements:
   1. Implement Path MTU Discovery (RFC 8201)
   2. Cache PMTU per destination
@@ -99,6 +99,7 @@ sequenceDiagram
 
 ```bash
 # Check if your system is handling PMTU correctly
+
 # Look for ICMPv6 Packet Too Big messages being received
 sudo tcpdump -i eth0 "icmp6 and ip6[40] == 2"
 
@@ -120,7 +121,7 @@ cat /proc/net/snmp6 | grep Pmtu
 
 ## When Source Fragmentation Is Used
 
-```
+```text
 Sources fragment when PMTUD is not used (e.g., UDP applications):
 
 Option 1: Keep packets ≤ 1280 bytes (minimum IPv6 MTU)

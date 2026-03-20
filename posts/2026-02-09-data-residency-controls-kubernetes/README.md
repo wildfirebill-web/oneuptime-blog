@@ -24,6 +24,7 @@ Start by labeling all cluster nodes with their geographic location and complianc
 
 ```bash
 # label-nodes-by-region.sh
+
 #!/bin/bash
 
 # AWS nodes - label with region and compliance zone

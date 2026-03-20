@@ -14,6 +14,7 @@ NetworkManager supports VLAN subinterfaces natively. Use `nmcli connection add t
 
 ```bash
 # Create VLAN 10 on eth0 with a static IP
+
 nmcli connection add \
     type vlan \
     con-name "vlan10" \

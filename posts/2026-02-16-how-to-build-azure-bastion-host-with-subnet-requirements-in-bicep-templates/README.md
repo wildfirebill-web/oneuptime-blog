@@ -381,6 +381,7 @@ Deploy everything with a single Azure CLI command.
 
 ```bash
 # Create the resource group
+
 az group create --name rg-bastion-demo --location eastus2
 
 # Deploy the Bicep template

@@ -66,6 +66,7 @@ spec:
 
 ```bash
 # Create host endpoint
+
 calicoctl apply -f host-endpoint.yaml
 
 # Verify host endpoint is active

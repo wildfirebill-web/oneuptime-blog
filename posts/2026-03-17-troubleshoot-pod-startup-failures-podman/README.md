@@ -18,6 +18,7 @@ Pod startup failures can stem from image pull errors, port conflicts, resource e
 
 ```bash
 # View the pod status
+
 podman pod ls --filter name=my-pod
 
 # If the pod shows "Degraded", one or more containers failed

@@ -143,4 +143,4 @@ print(anonymize_ipv4("10.20.30.40"))   # 10.20.30.0
 
 ## Conclusion
 
-Log client IPs in middleware rather than in individual route handlers to ensure uniform coverage. Use structured (JSON) logging to make logs queryable with tools like Elasticsearch or CloudWatch. Include a request ID to correlate logs across microservices. When GDPR compliance is required, anonymize the last octet before logging. Always extract the real client IP using proxy-aware logic (ProxyFix, `trust proxy`) before logging — logging the proxy's address is unhelpful for security investigation.
+Log client IPs in middleware rather than in individual route handlers to ensure uniform coverage. Use structured (JSON) logging to make logs queryable with tools like Elasticsearch or CloudWatch. Include a request ID to correlate logs across microservices. When GDPR compliance is required, anonymize the last octet before logging. Always extract the real client IP using proxy-aware logic (ProxyFix, `trust proxy`) before logging - logging the proxy's address is unhelpful for security investigation.

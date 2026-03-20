@@ -47,6 +47,7 @@ Define a dedicated namespace for Apache Pulsar.
 
 ```yaml
 # pulsar-namespace.yaml
+
 # Dedicated namespace for all Apache Pulsar components
 apiVersion: v1
 kind: Namespace

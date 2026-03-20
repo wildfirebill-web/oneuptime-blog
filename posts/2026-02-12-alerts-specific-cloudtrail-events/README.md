@@ -24,6 +24,7 @@ Unauthorized API calls should be monitored because a spike in access-denied erro
 
 ```bash
 # 1. Unauthorized API calls
+
 aws logs put-metric-filter \
   --log-group-name CloudTrail/DefaultLogGroup \
   --filter-name UnauthorizedAPICalls \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Gzip, Compression, Performance, Optimization
+Tags: Nginx, Gzip, Compression, Performance, Optimization
 
 Description: Learn how to configure Gzip compression in Nginx to reduce bandwidth usage and improve page load times, with practical examples and performance tuning tips.
 
@@ -195,6 +195,7 @@ Create compressed versions during your build process:
 
 ```bash
 # Compress static files at maximum level
+
 find /var/www/static -type f \( -name "*.js" -o -name "*.css" -o -name "*.html" \) \
     -exec gzip -9 -k {} \;
 ```

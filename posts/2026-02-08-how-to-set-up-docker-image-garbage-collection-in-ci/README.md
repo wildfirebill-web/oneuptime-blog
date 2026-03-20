@@ -18,6 +18,7 @@ CI runners accumulate Docker artifacts between jobs. Start with a basic cleanup 
 
 ```bash
 # Remove all stopped containers
+
 docker container prune -f
 
 # Remove all unused images (not referenced by any container)

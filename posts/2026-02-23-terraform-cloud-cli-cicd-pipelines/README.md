@@ -27,6 +27,7 @@ Configure your Terraform to use the Terraform Cloud backend:
 
 ```hcl
 # backend.tf
+
 terraform {
   cloud {
     organization = "my-org"
@@ -62,7 +63,7 @@ terraform {
 
 ## GitHub Actions Integration
 
-```yaml
+````yaml
 # .github/workflows/terraform-cloud.yml
 name: Terraform Cloud CLI
 on:
@@ -119,9 +120,9 @@ jobs:
             <details>
             <summary>Show Plan Output</summary>
 
-            \`\`\`
+            ```
             ${output}
-            \`\`\`
+            ```
 
             </details>`;
 
@@ -154,7 +155,7 @@ jobs:
       - name: Terraform Apply
         working-directory: infrastructure
         run: terraform apply -auto-approve -no-color
-```
+````
 
 ## Setting Variables in Terraform Cloud
 

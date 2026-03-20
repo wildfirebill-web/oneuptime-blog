@@ -1,10 +1,10 @@
-# How to Configure Rancher Resource Limits
+# How to Configure Rancher Resource Limits - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Kubernetes, Resource Limits, LimitRange, ResourceQuota
 
-Description: Configure resource limits and quotas in Rancher at multiple levels—namespace, project, and workload—to ensure fair resource distribution and cluster stability.
+Description: Configure resource limits and quotas in Rancher at multiple levels-namespace, project, and workload-to ensure fair resource distribution and cluster stability.
 
 ## Introduction
 
@@ -20,6 +20,7 @@ Resource limits in Kubernetes prevent any single workload from consuming all clu
 
 ```yaml
 # Deployment with resource limits
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

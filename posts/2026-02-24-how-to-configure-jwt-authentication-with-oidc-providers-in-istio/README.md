@@ -225,6 +225,7 @@ When things go wrong, here are the first things to check:
 
 ```bash
 # Check if the JWKS endpoint is reachable from inside the mesh
+
 kubectl exec -n my-app deploy/my-service -c istio-proxy -- curl -s https://your-tenant.auth0.com/.well-known/jwks.json | head -20
 
 # Check Envoy logs for JWT validation errors

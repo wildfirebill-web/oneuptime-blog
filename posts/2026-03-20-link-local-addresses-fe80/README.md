@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Link-Local, fe80, RFC 4291, NDP, Neighbor Discovery
+Tags: IPv6, Link-Local, Fe80, RFC 4291, NDP, Neighbor Discovery
 
 Description: Understand IPv6 link-local addresses in the fe80::/10 range (RFC 4291), how they are generated, their role in Neighbor Discovery, and how to work with them in applications.
 
@@ -12,7 +12,7 @@ Link-local addresses (`fe80::/10`) are automatically configured on every IPv6-en
 
 ## Link-Local Address Structure
 
-```
+```yaml
  | 10 bits  |  54 bits (zeros) |    64 bits Interface ID    |
  +----------+------------------+----------------------------+
  | 1111111010|  000...000       |       Interface ID         |
@@ -60,6 +60,7 @@ def mac_to_link_local(mac: str) -> str:
     return f"fe80::{iid}"
 
 # Example
+
 print(mac_to_link_local("00:1a:2b:3c:4d:5e"))
 # fe80::021a:2bff:fe3c:4d5e
 ```
@@ -88,7 +89,7 @@ ip -6 neigh show
 ```python
 import socket
 
-# Connect to a link-local address — requires scope ID
+# Connect to a link-local address - requires scope ID
 # In Python, use the 4th element of the address tuple for scope ID
 # scope_id = interface index (from socket.if_nametoindex)
 
@@ -116,7 +117,7 @@ ip -6 route show default
 # default via fe80::1 dev eth0 proto ra metric 1024
 
 # The gateway is always a link-local address
-# Never a global unicast — link-local is always available
+# Never a global unicast - link-local is always available
 ```
 
 ## Security Considerations
@@ -132,4 +133,4 @@ ip6tables -A INPUT -p ipv6-icmp --icmpv6-type router-advertisement \
 
 ## Conclusion
 
-Link-local addresses (`fe80::/10`) are automatically assigned to every IPv6 interface and serve as the foundation for NDP, SLAAC, and routing protocol adjacencies. They require a scope identifier (`%interface`) when used in applications. Every production network depends on link-local working correctly — monitor for NDP failures and RA issues with OneUptime network monitoring.
+Link-local addresses (`fe80::/10`) are automatically assigned to every IPv6 interface and serve as the foundation for NDP, SLAAC, and routing protocol adjacencies. They require a scope identifier (`%interface`) when used in applications. Every production network depends on link-local working correctly - monitor for NDP failures and RA issues with OneUptime network monitoring.

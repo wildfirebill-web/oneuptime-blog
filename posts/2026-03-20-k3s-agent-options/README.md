@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, Agent, Configuration, Worker Node
+Tags: K3s, Kubernetes, Rancher, Agent, Configuration, Worker Nodes
 
 Description: A complete reference for K3s agent configuration options, covering server connection, resource tuning, and node customization.
 
@@ -25,6 +25,7 @@ sudo nano /etc/rancher/k3s/config.yaml
 # /etc/rancher/k3s/config.yaml - Agent configuration
 
 # K3s server URL (required)
+
 server: "https://192.168.1.100:6443"
 
 # Authentication token (must match the server's token)
@@ -285,4 +286,4 @@ kubectl describe node worker-01 | grep -A 10 "Allocatable:"
 
 ## Conclusion
 
-K3s agent options give you precise control over how worker nodes present themselves to the cluster and how they manage local resources. By defining appropriate resource reservations, eviction thresholds, node labels, and taints in the configuration file, you can create purpose-built worker nodes optimized for specific workload types — whether that's general-purpose compute, GPU inference, high-memory databases, or lightweight edge processing.
+K3s agent options give you precise control over how worker nodes present themselves to the cluster and how they manage local resources. By defining appropriate resource reservations, eviction thresholds, node labels, and taints in the configuration file, you can create purpose-built worker nodes optimized for specific workload types - whether that's general-purpose compute, GPU inference, high-memory databases, or lightweight edge processing.

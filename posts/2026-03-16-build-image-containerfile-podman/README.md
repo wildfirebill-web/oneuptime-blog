@@ -20,6 +20,7 @@ A Containerfile is a text file containing instructions that Podman executes sequ
 
 ```bash
 # Create a project directory
+
 mkdir -p ~/myapp && cd ~/myapp
 ```
 

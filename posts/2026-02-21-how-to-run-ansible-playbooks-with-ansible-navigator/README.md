@@ -16,6 +16,7 @@ Install it from PyPI alongside ansible-builder:
 
 ```bash
 # Install ansible-navigator
+
 pip install ansible-navigator
 
 # Verify the installation

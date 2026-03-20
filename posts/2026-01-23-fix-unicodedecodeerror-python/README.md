@@ -18,6 +18,7 @@ Character encoding is how computers represent text as bytes. When there is a mis
 
 ```python
 # This might fail depending on the file's actual encoding
+
 with open('data.txt', 'r') as f:
     content = f.read()
 

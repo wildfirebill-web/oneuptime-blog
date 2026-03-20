@@ -36,6 +36,7 @@ Start by creating your application manifests with variable placeholders in a sha
 
 ```yaml
 # apps/my-app/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -14,6 +14,7 @@ When Terraform and Ansible work together, integration issues can arise at the bo
 
 ```bash
 # Debug: Check what Terraform is outputting
+
 terraform output -json | python3 -m json.tool
 
 # Debug: Verify the generated inventory file

@@ -34,6 +34,7 @@ Use the official Apache CouchDB repository:
 
 ```bash
 # Install required packages
+
 sudo apt update && sudo apt install -y curl apt-transport-https gnupg
 
 # Add CouchDB repository key

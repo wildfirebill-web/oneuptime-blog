@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, SNMP, Network Management, pysnmp, Monitoring
+Tags: Python, IPv6, SNMP, Network Management, Pysnmp, Monitoring
 
 Description: Use Python with pysnmp to perform SNMP queries over IPv6 to monitor and manage network devices.
 
@@ -57,6 +57,7 @@ def snmp_get_ipv6(
         return str(var_bind[1])
 
 # Query sysDescr from a router over IPv6
+
 sysDescr = snmp_get_ipv6(
     host="2001:db8:router::1",
     community="public",
@@ -207,4 +208,4 @@ async def discover_snmp_hosts(hosts: list[str], community: str) -> dict:
 
 ## Conclusion
 
-Python's pysnmp library supports SNMP over IPv6 using `Udp6TransportTarget`. The API is identical to IPv4 SNMP — only the transport target class changes. SNMP over IPv6 is essential for network monitoring of IPv6-only devices and for management systems that need to reach devices with IPv6 addresses in dual-stack networks.
+Python's pysnmp library supports SNMP over IPv6 using `Udp6TransportTarget`. The API is identical to IPv4 SNMP - only the transport target class changes. SNMP over IPv6 is essential for network monitoring of IPv6-only devices and for management systems that need to reach devices with IPv6 addresses in dual-stack networks.

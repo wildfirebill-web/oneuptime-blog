@@ -27,6 +27,7 @@ Service Connect requires a Cloud Map namespace. Create an HTTP namespace for the
 
 ```hcl
 # Cloud Map namespace for Service Connect
+
 resource "aws_service_discovery_http_namespace" "main" {
   name        = "myapp"
   description = "Namespace for ECS Service Connect"

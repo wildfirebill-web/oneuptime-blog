@@ -18,6 +18,7 @@ In plain Terraform, every module directory needs a backend block:
 
 ```hcl
 # This has to be copied into every single module
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

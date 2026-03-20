@@ -27,6 +27,7 @@ Before validating the data path, identify the host-side veth interface for your 
 
 ```bash
 # Get test pod's node
+
 kubectl get pod test-pod -o jsonpath='{.spec.nodeName}'
 
 # On that node, identify the veth pair

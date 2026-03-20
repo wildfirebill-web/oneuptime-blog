@@ -51,7 +51,7 @@ Allow multiple selection: Yes
 Default value: All subscriptions
 ```
 
-### Resource Group Parameter
+Resource Group Parameter
 
 ```text
 Parameter name: ResourceGroup

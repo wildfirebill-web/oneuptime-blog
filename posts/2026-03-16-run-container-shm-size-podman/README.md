@@ -20,6 +20,7 @@ By default, containers get 64MB of shared memory:
 
 ```bash
 # Check the default /dev/shm size
+
 podman run --rm alpine sh -c "
   df -h /dev/shm
   echo ''

@@ -341,6 +341,7 @@ public class OrderFunctions {
 
 ```yaml
 # src/main/resources/application.yml
+
 spring:
   cloud:
     function:

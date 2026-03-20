@@ -24,6 +24,7 @@ output "yaml_output" {
 }
 
 # Output:
+
 # "name": "myapp"
 # "ports":
 # - 80

@@ -32,6 +32,7 @@ First, confirm that both the source and destination pods are actually in the amb
 
 ```bash
 # Check namespace labels
+
 kubectl get namespace source-ns -o jsonpath='{.metadata.labels}'
 kubectl get namespace dest-ns -o jsonpath='{.metadata.labels}'
 

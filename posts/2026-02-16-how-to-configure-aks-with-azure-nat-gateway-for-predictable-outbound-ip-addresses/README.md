@@ -40,6 +40,7 @@ Start by creating the public IPs that will be your permanent outbound addresses.
 
 ```bash
 # Create a resource group
+
 az group create --name myNATRG --location eastus
 
 # Create a static public IP for outbound traffic

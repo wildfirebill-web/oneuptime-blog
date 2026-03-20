@@ -1,4 +1,4 @@
-# How to Automate Multi-Environment Deployments with Portainer
+# How to Automate Multi-Environment Deployments with Portainer - Env
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Multi-environment deployment pipelines promote releases through stages: developm
 
 ```bash
 # The three environments should be separate Portainer endpoints
+
 # dev  (endpoint ID: 1) - Development
 # staging (endpoint ID: 2) - Staging
 # production (endpoint ID: 3) - Production

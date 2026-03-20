@@ -49,6 +49,7 @@ First, create the Service Bus namespace and the queues needed for saga communica
 
 ```bash
 # Create a Service Bus namespace
+
 az servicebus namespace create \
   --resource-group myResourceGroup \
   --name my-saga-bus \

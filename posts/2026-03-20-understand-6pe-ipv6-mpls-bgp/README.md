@@ -12,7 +12,7 @@ Description: Understand 6PE (IPv6 Provider Edge) architecture for transporting I
 
 ## 6PE Architecture
 
-```
+```text
 6PE Network Architecture:
 
 [IPv6 CE] ─── [PE1] ═══ MPLS Backbone (IPv4) ═══ [PE2] ─── [IPv6 CE]
@@ -36,7 +36,7 @@ Key Properties:
 
 ## 6PE vs 6VPE
 
-```
+```text
 6PE vs 6VPE Comparison:
 ┌─────────────────┬───────────────────────┬────────────────────────┐
 │ Feature         │ 6PE                   │ 6VPE                   │
@@ -51,7 +51,7 @@ Key Properties:
 
 ## MP-BGP for 6PE
 
-```
+```text
 MP-BGP IPv6 Address Family Exchange:
 
 PE1 advertises to PE2 via MP-BGP:
@@ -78,6 +78,7 @@ BGP UPDATE message contains:
 # On PE router (Cisco IOS/IOS XE):
 
 # Verify MP-BGP IPv6 neighbors
+
 show bgp ipv6 unicast summary
 
 # View IPv6 BGP table with labels
@@ -104,7 +105,7 @@ debug mpls lfib entry
 
 ## 6PE Label Allocation Example
 
-```
+```text
 6PE Label Stack Operation:
 
 Packet: IPv6 src=2001:db8:a::1 dst=2001:db8:b::10

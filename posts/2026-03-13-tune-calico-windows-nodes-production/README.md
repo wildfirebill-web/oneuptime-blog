@@ -26,6 +26,7 @@ Windows VXLAN has the same 50-byte overhead as Linux VXLAN. Set the MTU to avoid
 
 ```bash
 # On Linux, patch the Installation CR
+
 kubectl patch installation default --type merge \
   --patch '{"spec":{"calicoNetwork":{"mtu":1450}}}'
 ```

@@ -56,6 +56,7 @@ Tag your IAM users too:
 
 ```bash
 # Tag IAM users with their team membership
+
 aws iam tag-user \
   --user-name alice \
   --tags Key=Team,Value=alpha Key=Department,Value=engineering

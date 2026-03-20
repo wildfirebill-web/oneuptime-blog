@@ -14,7 +14,7 @@ Accepting all BGP routes from a neighbor is dangerous. A misconfigured or malici
 
 Prefix lists match routes based on the network address and prefix length. The `ge` (greater-than-or-equal) and `le` (less-than-or-equal) keywords control the length range:
 
-```
+```text
 ! Allow only prefixes from 10.0.0.0/8 with lengths between /24 and /32
 ip prefix-list CUSTOMER_IN seq 10 permit 10.0.0.0/8 ge 24 le 32
 
@@ -32,7 +32,7 @@ An implicit `deny any` exists at the end of every prefix list. Any prefix not ma
 
 Bogons are IP ranges that should never appear in global routing tables (RFC 1918, documentation ranges, etc.):
 
-```
+```text
 ! Block RFC 1918 private addresses
 ip prefix-list BOGON_BLOCK seq 10 deny 10.0.0.0/8 le 32
 ip prefix-list BOGON_BLOCK seq 20 deny 172.16.0.0/12 le 32
@@ -54,7 +54,7 @@ ip prefix-list BOGON_BLOCK seq 999 permit 0.0.0.0/0 le 32
 
 Apply prefix lists inbound (filter what you accept) or outbound (filter what you advertise):
 
-```
+```text
 router bgp 65001
  ! Apply inbound filter - only accept valid prefixes from neighbor
  neighbor 203.0.113.1 prefix-list BOGON_BLOCK in
@@ -65,7 +65,7 @@ router bgp 65001
 
 Create the outbound filter:
 
-```
+```text
 ! Only advertise your allocated prefix
 ip prefix-list OUR_PREFIX seq 10 permit 198.51.100.0/24
 ip prefix-list OUR_PREFIX seq 999 deny 0.0.0.0/0 le 32
@@ -75,7 +75,7 @@ ip prefix-list OUR_PREFIX seq 999 deny 0.0.0.0/0 le 32
 
 After applying a new filter, perform a soft reset to apply it without dropping the BGP session:
 
-```
+```text
 ! Soft reset inbound (re-evaluate received routes against new filter)
 Router# clear ip bgp 203.0.113.1 soft in
 
@@ -85,7 +85,7 @@ Router# clear ip bgp 203.0.113.1 soft out
 
 ## Step 5: Verify Filter Operation
 
-```
+```text
 ! View the prefix list configuration
 Router# show ip prefix-list BOGON_BLOCK
 

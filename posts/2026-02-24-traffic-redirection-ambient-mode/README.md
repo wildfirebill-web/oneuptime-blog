@@ -21,6 +21,7 @@ The CNI plugin runs as a DaemonSet and hooks into the Kubernetes pod lifecycle:
 
 ```bash
 # Check the Istio CNI plugin pods
+
 kubectl get pods -n istio-system -l k8s-app=istio-cni-node -o wide
 ```
 

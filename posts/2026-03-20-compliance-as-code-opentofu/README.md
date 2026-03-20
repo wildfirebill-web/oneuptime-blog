@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Compliance, Checkov, tfsec, AWS Config, Security, Infrastructure as Code
+Tags: OpenTofu, Compliance, Checkov, Tfsec, AWS Config, Security, Infrastructure as Code
 
-Description: Learn how to implement compliance as code using OpenTofu with static analysis tools like Checkov and tfsec, AWS Config rules, and custom validation blocks to enforce security and compliance requirements automatically.
+Description: Learn how to implement compliance as code using OpenTofu with static analysis tools like Checkov and tfsec, AWS Config rules, and custom validation blocks to enforce security and compliance...
 
 ---
 
-Compliance as code means security and regulatory requirements are checked automatically — not through manual audits. Static analysis tools scan OpenTofu configurations before deployment, while AWS Config evaluates running infrastructure continuously.
+Compliance as code means security and regulatory requirements are checked automatically - not through manual audits. Static analysis tools scan OpenTofu configurations before deployment, while AWS Config evaluates running infrastructure continuously.
 
 ## Compliance Pipeline
 
@@ -26,6 +26,7 @@ graph LR
 
 ```yaml
 # .github/workflows/security.yml
+
 - name: Run Checkov
   uses: bridgecrewio/checkov-action@master
   with:
@@ -155,8 +156,8 @@ aws configservice describe-compliance-by-config-rule \
 
 ## Best Practices
 
-- Run Checkov and tfsec in CI before plan — static analysis catches issues in seconds vs. minutes for Config rules.
+- Run Checkov and tfsec in CI before plan - static analysis catches issues in seconds vs. minutes for Config rules.
 - Use `lifecycle.precondition` blocks in OpenTofu for compliance requirements that depend on variable values.
 - Enable AWS Security Hub to aggregate findings from Config, GuardDuty, and Inspector in one compliance dashboard.
-- Treat Checkov failures as build failures — marking them as warnings leads to alert fatigue and ignored violations.
+- Treat Checkov failures as build failures - marking them as warnings leads to alert fatigue and ignored violations.
 - Create custom tfsec rules for organization-specific requirements that generic tools don't cover.

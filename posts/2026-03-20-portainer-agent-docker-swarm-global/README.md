@@ -1,4 +1,4 @@
-# How to Install Portainer Agent on Docker Swarm as a Global Service
+# How to Install Portainer Agent on Docker Swarm as a Global Service - Docker
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ docker service create \
 
 ```yaml
 # portainer-agent-stack.yml
+
 version: "3.8"
 
 services:

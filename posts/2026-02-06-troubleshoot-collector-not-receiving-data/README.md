@@ -44,6 +44,7 @@ Enable debug logging to see detailed receiver information:
 
 ```yaml
 # config.yaml - Enable debug logging
+
 service:
   telemetry:
     logs:

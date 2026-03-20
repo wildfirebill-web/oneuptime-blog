@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, IPv6, Buildx, BuildKit, Multi-Platform, Build
 
-Description: Configure Docker Buildx and BuildKit to build container images in environments with IPv6 connectivity, handle IPv6 network access during build steps, and set up multi-platform builders with IPv6 support.
+Description: Configure Docker Buildx and BuildKit to build container images in environments with IPv6 connectivity, handle IPv6 network access during build steps, and set up multi-platform builders with IPv6...
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Docker Buildx uses BuildKit for image builds, which runs build steps in containe
 
 ```bash
 # Default builder uses host networking for build containers
+
 # This inherits the host's IPv6 configuration
 
 # Create a custom builder
@@ -36,7 +37,7 @@ docker buildx build \
 ## Build with IPv6 Network Access
 
 ```dockerfile
-# Dockerfile — IPv6-aware build steps
+# Dockerfile - IPv6-aware build steps
 
 FROM ubuntu:22.04
 
@@ -102,7 +103,7 @@ docker buildx imagetools inspect registry.example.com/myapp:latest
 ## BuildKit Configuration for IPv6
 
 ```toml
-# /etc/buildkit/buildkitd.toml — BuildKit daemon configuration
+# /etc/buildkit/buildkitd.toml - BuildKit daemon configuration
 
 [grpc]
   address = ["unix:///run/buildkit/buildkitd.sock"]

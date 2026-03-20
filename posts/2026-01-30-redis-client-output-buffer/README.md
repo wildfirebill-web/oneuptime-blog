@@ -95,6 +95,7 @@ client-output-buffer-limit <class> <hard limit> <soft limit> <soft seconds>
 
 ```redis
 # Default Redis configuration
+
 client-output-buffer-limit normal 0 0 0
 client-output-buffer-limit replica 256mb 64mb 60
 client-output-buffer-limit pubsub 32mb 8mb 60

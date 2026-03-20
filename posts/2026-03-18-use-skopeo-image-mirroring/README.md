@@ -30,6 +30,7 @@ First, run a local registry that will serve as your mirror.
 
 ```bash
 # Start a local registry with Podman
+
 podman run -d \
   --name mirror-registry \
   -p 5000:5000 \

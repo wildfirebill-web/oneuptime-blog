@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, ECS, Fargate, Containers, AWS, Infrastructure as Code
 
-Description: Learn how to deploy containerized applications on Amazon ECS with OpenTofu — configuring Fargate clusters, task definitions, services, auto scaling, and ALB integration.
+Description: Learn how to deploy containerized applications on Amazon ECS with OpenTofu - configuring Fargate clusters, task definitions, services, auto scaling, and ALB integration.
 
 ## Introduction
 
@@ -198,7 +198,8 @@ resource "aws_appautoscaling_policy" "ecs_memory" {
 ## IAM Roles
 
 ```hcl
-# Execution role — pulls images, writes logs, reads secrets
+# Execution role - pulls images, writes logs, reads secrets
+
 resource "aws_iam_role" "ecs_execution" {
   name = "${var.environment}-ecs-execution-role"
 
@@ -217,7 +218,7 @@ resource "aws_iam_role_policy_attachment" "ecs_execution" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 
-# Task role — permissions the application itself needs
+# Task role - permissions the application itself needs
 resource "aws_iam_role" "ecs_task" {
   name = "${var.environment}-ecs-task-role"
 

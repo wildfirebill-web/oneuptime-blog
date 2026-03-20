@@ -50,6 +50,7 @@ Readiness probes tell Kubernetes when a pod is ready to receive traffic. Without
 
 ```yaml
 # deployment.yaml - Properly configured for zero-downtime upgrades
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -14,6 +14,7 @@ systemd-networkd creates VXLAN interfaces via `.netdev` files with `Kind=vxlan`.
 
 ```ini
 # /etc/systemd/network/50-vxlan100.netdev
+
 [NetDev]
 Name=vxlan100
 Kind=vxlan
@@ -100,7 +101,7 @@ After creating the VXLAN device, attach it to a bridge:
 Name=vxlan100
 
 [Network]
-# No IP — VXLAN is a bridge member
+# No IP - VXLAN is a bridge member
 Bridge=br0
 ```
 

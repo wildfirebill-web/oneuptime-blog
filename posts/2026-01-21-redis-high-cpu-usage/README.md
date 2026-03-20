@@ -25,6 +25,7 @@ Redis is primarily single-threaded for command execution. High CPU usage typical
 
 ```bash
 # System CPU for Redis process
+
 top -p $(pgrep -x redis-server)
 
 # Or using ps

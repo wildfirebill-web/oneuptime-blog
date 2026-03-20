@@ -24,6 +24,7 @@ Microsoft provides several .NET Framework base images:
 
 ```dockerfile
 # .NET Framework 4.8 runtime only
+
 FROM mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2022
 
 # .NET Framework 4.8 with ASP.NET

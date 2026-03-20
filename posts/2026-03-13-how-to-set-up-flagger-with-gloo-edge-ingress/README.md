@@ -30,6 +30,7 @@ If you have not yet installed Gloo Edge, you can deploy it using Helm. Add the G
 
 ```bash
 # Add the Gloo Edge Helm repository
+
 helm repo add gloo https://storage.googleapis.com/solo-public-helm
 helm repo update
 

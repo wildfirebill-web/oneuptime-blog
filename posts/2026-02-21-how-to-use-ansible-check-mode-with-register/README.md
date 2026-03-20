@@ -16,6 +16,7 @@ Check mode tells Ansible to simulate the playbook run. Modules that support chec
 
 ```bash
 # Run the playbook in check mode (dry run)
+
 ansible-playbook --check deploy.yml
 ```
 

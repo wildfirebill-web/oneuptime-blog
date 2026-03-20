@@ -43,6 +43,7 @@ Key metrics to monitor:
 
 ```bash
 # Basic I/O statistics (run every 2 seconds, 5 times)
+
 iostat -xz 2 5
 
 # Example output interpretation

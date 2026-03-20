@@ -45,6 +45,7 @@ Define multiple workloads with default replica counts.
 
 ```yaml
 # apps/platform/base/api-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

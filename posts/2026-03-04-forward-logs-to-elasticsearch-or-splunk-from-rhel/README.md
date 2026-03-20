@@ -16,6 +16,7 @@ Sending RHEL logs to a centralized platform like Elasticsearch or Splunk gives y
 
 ```bash
 # Install the rsyslog Elasticsearch module
+
 sudo dnf install -y rsyslog-elasticsearch
 ```
 

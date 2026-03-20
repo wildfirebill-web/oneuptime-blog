@@ -33,6 +33,7 @@ Bind mounts are the most common type. You specify both the host path and the con
 
 ```yaml
 # bind_mount.yml - Container with bind mount volumes
+
 ---
 - name: Container with Bind Mounts
   hosts: docker_hosts

@@ -23,6 +23,7 @@ pg_dump is PostgreSQL's built-in tool for creating logical backups. It creates c
 
 ```bash
 # Backup single database
+
 pg_dump mydb > backup.sql
 
 # Backup with connection parameters

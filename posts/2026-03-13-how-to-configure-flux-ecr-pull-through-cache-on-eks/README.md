@@ -33,6 +33,7 @@ Set up cache rules for the registries your cluster uses.
 
 ```bash
 # Cache Docker Hub (docker.io)
+
 aws ecr create-pull-through-cache-rule \
   --ecr-repository-prefix docker-hub \
   --upstream-registry-url registry-1.docker.io \

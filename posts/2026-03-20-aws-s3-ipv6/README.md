@@ -14,6 +14,7 @@ AWS S3 supports IPv6 access through dualstack endpoints (`s3.dualstack.<region>.
 
 ```bash
 # Standard S3 endpoint (IPv4 only)
+
 s3.amazonaws.com
 s3.us-east-1.amazonaws.com
 <bucket>.s3.amazonaws.com

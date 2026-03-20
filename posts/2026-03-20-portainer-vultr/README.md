@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Vultr Cloud
+# How to Deploy Portainer on Vultr Cloud - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -40,6 +40,7 @@ docker run -d \
 
 ```bash
 # Install vultr-cli
+
 go install github.com/vultr/vultr-cli/v2@latest
 
 # Configure API key
@@ -141,4 +142,4 @@ curl -s "https://api.vultr.com/v2/domains/yourdomain.com/records" \
 
 ## Conclusion
 
-Vultr's compute instances are straightforward for Portainer deployments. The startup script feature automates Docker and Portainer installation, and Vultr's block storage provides persistent, detachable storage for Portainer data — useful when migrating between instance types or regions.
+Vultr's compute instances are straightforward for Portainer deployments. The startup script feature automates Docker and Portainer installation, and Vultr's block storage provides persistent, detachable storage for Portainer data - useful when migrating between instance types or regions.

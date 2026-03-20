@@ -16,6 +16,7 @@ In Portainer, go to **Stacks > Add Stack** and paste the following:
 
 ```yaml
 # duplicati-stack.yml
+
 version: "3.8"
 
 services:
@@ -30,7 +31,7 @@ services:
     volumes:
       # Persistent config storage
       - duplicati-config:/config
-      # Source data to back up — adjust to your actual data paths
+      # Source data to back up - adjust to your actual data paths
       - /opt/appdata:/source:ro
       # Temporary backup working directory
       - /tmp/duplicati-backups:/backups
@@ -50,7 +51,7 @@ From the Duplicati UI, click **Add backup**:
 
 1. Choose a destination (example: S3-compatible storage):
 
-```
+```text
 Storage Type: S3 Compatible
 Server: s3.amazonaws.com
 Bucket: my-backups-bucket
@@ -63,7 +64,7 @@ Secret Access Key: <your-secret>
 
 3. Configure an encryption passphrase. Duplicati uses AES-256 by default.
 
-4. Set a schedule — daily at 02:00 is a common starting point.
+4. Set a schedule - daily at 02:00 is a common starting point.
 
 ## Step 4: Use Environment Variables for Secrets
 
@@ -89,13 +90,13 @@ After the first backup completes, always test a restore:
 3. Choose a file or directory to restore
 4. Verify the restored content matches the source
 
-Testing restores is the most important step — a backup you have never restored is not a backup.
+Testing restores is the most important step - a backup you have never restored is not a backup.
 
 ## Monitoring with Portainer
 
 Use Portainer's **Container Logs** view to watch Duplicati's activity log. For automated alerting, configure Duplicati's **Send HTTP report** option to POST results to a webhook (Slack, PagerDuty, OneUptime, etc.):
 
-```
+```text
 Report URL: https://your-alert-endpoint/webhook
 Report level: Warning, Error
 ```

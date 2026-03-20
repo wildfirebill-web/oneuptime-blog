@@ -32,6 +32,7 @@ The most robust pattern is to create a dedicated ArgoCD application that owns al
 
 ```yaml
 # shared-infra-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

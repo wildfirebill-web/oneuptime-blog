@@ -31,6 +31,7 @@ First, create the tag key at the organization level:
 
 ```bash
 # Create a tag key for environment classification
+
 gcloud resource-manager tags keys create environment \
   --parent=organizations/ORG_ID \
   --description="Environment classification for resources"

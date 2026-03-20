@@ -30,6 +30,7 @@ This is the recommended approach for Linux systems using systemd.
 
 ```bash
 # Create the systemd drop-in directory
+
 sudo mkdir -p /etc/systemd/system/docker.service.d
 
 # Create the proxy configuration file

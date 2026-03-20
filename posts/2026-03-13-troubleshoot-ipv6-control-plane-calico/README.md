@@ -31,6 +31,7 @@ Test API server IPv6 connectivity:
 
 ```bash
 # Get the API server IPv6 address from the Calico node logs
+
 kubectl -n calico-system logs -l k8s-app=calico-node -c calico-node | grep "api-server\|apiserver"
 
 # From a node, test connectivity to the API server IPv6 address

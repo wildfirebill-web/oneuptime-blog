@@ -138,6 +138,7 @@ def send_events(delivery_stream, events):
                     print(f"Error: {result['ErrorCode']} - {result['ErrorMessage']}")
 
 # Generate sample events
+
 events = [
     {
         "userId": f"user-{i}",

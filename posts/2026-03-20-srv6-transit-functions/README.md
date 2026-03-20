@@ -27,11 +27,11 @@ graph LR
 - **Endpoint**: Owns the SID, executes the End function
 - **Egress**: Final decapsulation
 
-## T — Plain Transit
+## T - Plain Transit
 
 A transit node simply forwards the packet based on the IPv6 destination address (the current SID), without any SRH processing.
 
-```
+```text
 IPv6 packet with SRH:
   dst = 5f00:1:2:0:e001::  (owned by Router 2)
   SRH: [5f00:3:1::, 5f00:2:1::, 5f00:1:2:0:e001::], SL=0
@@ -43,14 +43,15 @@ Transit Router 1 (does not own 5f00:1:2::):
   (No SRH modification)
 ```
 
-No special configuration is needed on transit nodes — they just forward IPv6 normally.
+No special configuration is needed on transit nodes - they just forward IPv6 normally.
 
-## T.Insert — Insert an SRH at a Transit Node
+## T.Insert - Insert an SRH at a Transit Node
 
 T.Insert inserts a new SRH (or adds segments to an existing one) at a transit point, enabling midpoint traffic engineering.
 
 ```bash
 # Linux: insert SRH at a transit node for matching traffic
+
 ip -6 route add 2001:db8:dest::/48 \
   encap seg6 mode insert \
   segs 5f00:1:2::,5f00:2:3:: \
@@ -62,7 +63,7 @@ ip -6 route add 2001:db8:dest::/48 \
 
 **Use case**: Policy-based routing at a midpoint without full encapsulation.
 
-## T.Encaps — Encapsulate with SRH at Transit
+## T.Encaps - Encapsulate with SRH at Transit
 
 ```bash
 # Encap mode: creates a new outer IPv6 header + SRH
@@ -75,7 +76,7 @@ ip -6 route add 2001:db8:dest::/48 \
 # Useful for color-based TE (BGP Color community → SRv6 policy)
 ```
 
-## T.Encaps.L2 — L2 Frame Encapsulation
+## T.Encaps.L2 - L2 Frame Encapsulation
 
 Encapsulates an entire L2 frame in an SRv6 packet (L2 VPN over SRv6).
 
@@ -87,11 +88,11 @@ ip -6 route add 2001:db8:dest::/48 \
   dev eth0
 ```
 
-## T.Encaps.Red — Reduced Encapsulation
+## T.Encaps.Red - Reduced Encapsulation
 
 When the first segment is the local node, it can be omitted from the SRH to save 16 bytes.
 
-```
+```text
 Standard encap:
   Outer dst = S[2]
   SRH: [S[0]=Dst, S[1]=Mid, S[2]=Ingress], SL=2
@@ -113,7 +114,7 @@ ip -6 route add 2001:db8:dest::/48 \
 
 ## Combining Transit and Endpoint Functions
 
-```
+```sql
 Example full packet lifecycle:
 
 Packet: src=client, dst=server
@@ -135,4 +136,4 @@ At Egress (End.DT6):
 
 ## Conclusion
 
-SRv6 transit functions keep transit nodes simple — they forward based on IPv6 destination addresses without understanding the SRH. Policy insertion via T.Insert and T.Encaps enables midpoint traffic engineering. Understanding transit vs endpoint roles is key to SRv6 topology planning. Use OneUptime to monitor each hop in your SRv6 path for latency and availability.
+SRv6 transit functions keep transit nodes simple - they forward based on IPv6 destination addresses without understanding the SRH. Policy insertion via T.Insert and T.Encaps enables midpoint traffic engineering. Understanding transit vs endpoint roles is key to SRv6 topology planning. Use OneUptime to monitor each hop in your SRv6 path for latency and availability.

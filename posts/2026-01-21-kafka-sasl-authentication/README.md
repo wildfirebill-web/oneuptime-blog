@@ -32,6 +32,7 @@ SASL/PLAIN transmits credentials in clear text, so it must be used with TLS.
 # server.properties
 
 # Enable SASL/PLAIN
+
 listeners=SASL_SSL://0.0.0.0:9093
 advertised.listeners=SASL_SSL://broker1.example.com:9093
 security.inter.broker.protocol=SASL_SSL

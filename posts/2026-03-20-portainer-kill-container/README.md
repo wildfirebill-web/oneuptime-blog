@@ -1,4 +1,4 @@
-# How to Kill a Running Container in Portainer
+# How to Kill a Running Container in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ While `docker stop` sends a graceful SIGTERM signal to allow a container to shut
 
 Understanding the difference:
 
-```
+```bash
 docker stop my-container
   1. Sends SIGTERM (graceful shutdown signal)
   2. Waits up to --time seconds (default: 10)
@@ -43,7 +43,7 @@ Kill is appropriate when:
 
 1. Navigate to **Containers** in Portainer.
 2. Find the running container.
-3. Click the **Kill** button (X or lightning icon — may vary by Portainer version).
+3. Click the **Kill** button (X or lightning icon - may vary by Portainer version).
 
 Note: In some Portainer versions, Kill may only be available from the container details page.
 
@@ -54,6 +54,7 @@ Note: In some Portainer versions, Kill may only be available from the container 
 
 ```bash
 # Equivalent Docker CLI:
+
 docker kill my-container
 
 # Send a specific signal:
@@ -109,7 +110,7 @@ import signal
 import logging
 
 def handle_log_rotate(signum, frame):
-    logging.info("Received SIGUSR1 — rotating logs")
+    logging.info("Received SIGUSR1 - rotating logs")
     # Re-open log files
     for handler in logging.root.handlers[:]:
         handler.close()
@@ -152,7 +153,7 @@ Design your applications to respond to SIGTERM cleanly:
 
 # Forward SIGTERM to the application process
 _term() {
-  echo "Received SIGTERM — shutting down gracefully"
+  echo "Received SIGTERM - shutting down gracefully"
   kill -TERM "$child" 2>/dev/null
 }
 

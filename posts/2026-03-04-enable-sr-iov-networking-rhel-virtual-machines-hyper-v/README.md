@@ -21,6 +21,7 @@ SR-IOV (Single Root I/O Virtualization) allows a physical network adapter to pre
 
 ```powershell
 # Verify the physical NIC supports SR-IOV
+
 Get-NetAdapterSriov
 
 # Enable SR-IOV on the Hyper-V virtual switch

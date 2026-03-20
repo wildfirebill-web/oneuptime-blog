@@ -24,6 +24,7 @@ Cloud DLP's tokenization (called "crypto-based tokenization" in GCP terminology)
 
 ```bash
 # Create a key ring for DLP tokenization
+
 gcloud kms keyrings create dlp-tokenization \
   --location=global
 

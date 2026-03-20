@@ -23,6 +23,7 @@ A flat VLAN with 10,000 VMs generates significant NDP traffic:
 
 ```bash
 # Enable NDP suppression on a bridge (Linux 4.10+)
+
 # Bridge learns addresses from NA/NS messages and responds locally
 
 ip link add br100 type bridge
@@ -64,7 +65,7 @@ ip link set vxlan100 master br100
 
 ## FRR BGP EVPN with NDP Suppression
 
-```
+```text
 ! FRRouting configuration for EVPN NDP suppression
 
 router bgp 65001
@@ -152,4 +153,4 @@ echo "Failed NDP entries: ${FAILED}"
 
 ## Conclusion
 
-Large L2 IPv6 networks face NDP scalability challenges from flooding and cache overflow. The solutions are: NDP suppression on bridges (responds to NS locally from cache), BGP EVPN for control-plane MAC/IP distribution (eliminates data-plane flooding), adequate `gc_thresh3` for large neighbor tables, and rate limiting NS at hypervisor level. For data centers with 10,000+ VMs, NDP suppression is not optional — it's a requirement to prevent multicast flooding from degrading network performance.
+Large L2 IPv6 networks face NDP scalability challenges from flooding and cache overflow. The solutions are: NDP suppression on bridges (responds to NS locally from cache), BGP EVPN for control-plane MAC/IP distribution (eliminates data-plane flooding), adequate `gc_thresh3` for large neighbor tables, and rate limiting NS at hypervisor level. For data centers with 10,000+ VMs, NDP suppression is not optional - it's a requirement to prevent multicast flooding from degrading network performance.

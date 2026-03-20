@@ -18,6 +18,7 @@ The `in` operator is the most Pythonic and readable way to check for a key.
 user = {'name': 'Alice', 'age': 30, 'city': 'NYC'}
 
 # Check if key exists
+
 if 'name' in user:
     print(f"Name: {user['name']}")
 

@@ -18,6 +18,7 @@ The first tool you should reach for is built right into Istio. The `istioctl ana
 
 ```bash
 # Analyze the entire cluster
+
 istioctl analyze --all-namespaces
 
 # Analyze a specific namespace

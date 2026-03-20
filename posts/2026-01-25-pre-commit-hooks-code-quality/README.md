@@ -22,6 +22,7 @@ The pre-commit framework (https://pre-commit.com) is language-agnostic and suppo
 
 ```bash
 # Install with pip
+
 pip install pre-commit
 
 # Or with Homebrew

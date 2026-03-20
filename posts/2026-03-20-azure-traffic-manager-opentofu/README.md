@@ -8,7 +8,7 @@ Description: Learn how to configure Azure Traffic Manager with OpenTofu to route
 
 ## Introduction
 
-Azure Traffic Manager is a DNS-based load balancer that routes client requests to the best available endpoint across global Azure regions and on-premises locations. It supports six routing methods: Performance (lowest latency), Weighted (proportional), Priority (failover), Geographic (compliance), Multivalue (returns multiple IPs), and Subnet (routes based on client IP subnet). Traffic Manager works at the DNS layer and is not a proxy—after DNS resolution, clients connect directly to endpoints.
+Azure Traffic Manager is a DNS-based load balancer that routes client requests to the best available endpoint across global Azure regions and on-premises locations. It supports six routing methods: Performance (lowest latency), Weighted (proportional), Priority (failover), Geographic (compliance), Multivalue (returns multiple IPs), and Subnet (routes based on client IP subnet). Traffic Manager works at the DNS layer and is not a proxy-after DNS resolution, clients connect directly to endpoints.
 
 ## Prerequisites
 
@@ -44,6 +44,7 @@ resource "azurerm_traffic_manager_profile" "main" {
 }
 
 # East US endpoint
+
 resource "azurerm_traffic_manager_azure_endpoint" "east_us" {
   name               = "east-us-endpoint"
   profile_id         = azurerm_traffic_manager_profile.main.id
@@ -203,4 +204,4 @@ dig <relative-name>.trafficmanager.net
 
 ## Conclusion
 
-Traffic Manager's low TTL (30-60 seconds) is critical for fast failover—clients must re-query DNS frequently for Traffic Manager to redirect them to healthy endpoints. Traffic Manager doesn't terminate connections; it only influences DNS responses. Use `monitor_config` with `interval_in_seconds = 10` for critical applications that need faster failure detection (at higher cost). For GDPR and data residency, Geographic routing is the right choice—set `geo_mappings = ["WORLD"]` on a default endpoint to catch all traffic not matched by other geographic rules.
+Traffic Manager's low TTL (30-60 seconds) is critical for fast failover-clients must re-query DNS frequently for Traffic Manager to redirect them to healthy endpoints. Traffic Manager doesn't terminate connections; it only influences DNS responses. Use `monitor_config` with `interval_in_seconds = 10` for critical applications that need faster failure detection (at higher cost). For GDPR and data residency, Geographic routing is the right choice-set `geo_mappings = ["WORLD"]` on a default endpoint to catch all traffic not matched by other geographic rules.

@@ -26,6 +26,7 @@ The simplest way to launch a read-only container is with the `--read-only` flag.
 
 ```bash
 # Run an nginx container with a read-only root filesystem
+
 podman run --rm --read-only --name secure-nginx docker.io/library/nginx:alpine
 ```
 

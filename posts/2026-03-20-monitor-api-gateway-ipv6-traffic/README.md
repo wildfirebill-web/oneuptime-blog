@@ -15,7 +15,7 @@ Monitoring IPv6 API gateway traffic separately from IPv4 helps you detect asymme
 Configure NGINX to log the full client address and IP version.
 
 ```nginx
-# nginx.conf — custom log format capturing IP version
+# nginx.conf - custom log format capturing IP version
 
 log_format api_extended '$remote_addr [$time_local] '
                          '"$request" $status $body_bytes_sent '
@@ -32,6 +32,7 @@ Parse and count IPv6 vs IPv4 requests:
 
 ```bash
 # Count IPv6 requests (addresses contain colons)
+
 grep -c ':' /var/log/nginx/api_access.log
 
 # Count IPv4 requests
@@ -67,7 +68,7 @@ curl -X POST http://[::1]:8001/plugins \
 ## Step 3: Add Custom IPv6 Metrics with OpenTelemetry
 
 ```python
-# otel_middleware.py — add IPv6 metric labels in a Python API
+# otel_middleware.py - add IPv6 metric labels in a Python API
 import ipaddress
 from opentelemetry import metrics
 
@@ -95,7 +96,7 @@ def track_request(client_ip: str, route: str, status: int):
     })
 ```
 
-## Step 4: Grafana Dashboard — IPv6 Traffic Panel
+## Step 4: Grafana Dashboard - IPv6 Traffic Panel
 
 Create a Grafana dashboard panel using PromQL to visualize IPv6 traffic share.
 

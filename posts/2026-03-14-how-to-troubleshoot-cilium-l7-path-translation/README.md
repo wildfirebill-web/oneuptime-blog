@@ -22,6 +22,7 @@ L7 path translation issues in Cilium manifest as requests hitting the wrong back
 
 ```bash
 # Check CiliumEnvoyConfig status
+
 kubectl get ciliumenvoyconfigs -n default
 
 # Verify Envoy picked up the configuration

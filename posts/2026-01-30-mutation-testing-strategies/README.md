@@ -166,6 +166,7 @@ Stryker is a popular mutation testing framework for JavaScript and TypeScript pr
 
 ```bash
 # Install Stryker for a JavaScript/TypeScript project
+
 npm install --save-dev @stryker-mutator/core
 npm install --save-dev @stryker-mutator/jest-runner
 ```

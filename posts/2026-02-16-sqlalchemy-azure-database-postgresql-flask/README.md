@@ -16,6 +16,7 @@ You need an Azure Database for PostgreSQL Flexible Server and a Flask project. L
 
 ```bash
 # Install the required Python packages
+
 pip install flask flask-sqlalchemy flask-migrate psycopg2-binary python-dotenv
 ```
 

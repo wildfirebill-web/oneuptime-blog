@@ -40,6 +40,7 @@ Ubuntu Pro is free for personal and small commercial use (up to 5 machines). Lar
 
 ```bash
 # Install the ubuntu-advantage-tools package (likely already installed)
+
 sudo apt install ubuntu-advantage-tools -y
 
 # Attach to Ubuntu Pro with your token

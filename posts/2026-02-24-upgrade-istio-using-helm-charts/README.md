@@ -112,6 +112,7 @@ Common custom values people set include:
 
 ```yaml
 # istiod-values.yaml
+
 meshConfig:
   accessLogFile: /dev/stdout
   defaultConfig:

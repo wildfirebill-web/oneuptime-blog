@@ -35,6 +35,7 @@ First, retrieve the machine UUID:
 
 ```bash
 # Get the machine UUID from a known good connection
+
 talosctl get systeminformation --nodes 10.0.1.10 -o json | jq -r '.spec.uuid'
 ```
 

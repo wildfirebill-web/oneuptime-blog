@@ -374,6 +374,7 @@ Call reusable workflows as jobs with dependencies:
 
 ```yaml
 # .github/workflows/ci.yml
+
 jobs:
   build:
     uses: ./.github/workflows/build.yml

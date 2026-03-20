@@ -32,6 +32,7 @@ Start with the API definition and schema.
 
 ```hcl
 # AppSync GraphQL API
+
 resource "aws_appsync_graphql_api" "main" {
   name                = "main-graphql-api"
   authentication_type = "AMAZON_COGNITO_USER_POOLS"

@@ -16,6 +16,7 @@ Configure the shared provider cache directory.
 
 ```bash
 # Set the global cache directory
+
 export TF_PLUGIN_CACHE_DIR="$HOME/.tofu/plugin-cache"
 
 # Create the directory if it doesn't exist

@@ -18,6 +18,7 @@ Before `.htaccess` files work, Apache must be configured to allow them. This is 
 
 ```bash
 # Edit your virtual host configuration
+
 sudo nano /etc/apache2/sites-available/example.com.conf
 ```
 

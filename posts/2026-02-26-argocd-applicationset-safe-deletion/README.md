@@ -33,6 +33,7 @@ With default settings, deleting an ApplicationSet triggers cascade deletion.
 
 ```bash
 # THIS IS DANGEROUS in production!
+
 kubectl delete applicationset my-apps -n argocd
 
 # This will:

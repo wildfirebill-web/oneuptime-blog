@@ -41,6 +41,7 @@ from pulsar.schema import String, BytesSchema, JsonSchema
 client = pulsar.Client('pulsar://localhost:6650')
 
 # String schema
+
 string_producer = client.create_producer(
     'persistent://public/default/messages',
     schema=String()

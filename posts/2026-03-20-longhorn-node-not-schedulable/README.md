@@ -1,4 +1,4 @@
-# How to Troubleshoot Longhorn Node Not Schedulable
+# How to Fix Longhorn Node Not Schedulable Errors
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ When a Longhorn node is marked as "not schedulable", Longhorn will not place new
 
 ```bash
 # List Longhorn nodes and their scheduling status
+
 kubectl get lhnode -n longhorn-system \
   -o custom-columns='NAME:.metadata.name,SCHEDULABLE:.status.conditions[?(@.type=="Schedulable")].status,READY:.status.conditions[?(@.type=="Ready")].status'
 
@@ -72,7 +73,7 @@ kubectl get lhnode <node-name> -n longhorn-system \
 If a disk shows `diskReady: false`, check:
 
 ```bash
-# On the host node — check if the disk path exists
+# On the host node - check if the disk path exists
 ls -la /var/lib/longhorn
 
 # Check if Longhorn can write to the disk
@@ -118,6 +119,6 @@ kubectl patch lhnode <node-name> -n longhorn-system \
 
 ## Best Practices
 
-- Keep Longhorn disk usage below 80% — the 85% threshold doesn't leave enough buffer for replica rebuilds.
+- Keep Longhorn disk usage below 80% - the 85% threshold doesn't leave enough buffer for replica rebuilds.
 - Use separate dedicated disks for Longhorn storage on each node for better isolation.
 - Regularly check `kubectl get lhnode` in your monitoring dashboard to catch scheduling issues before they impact data availability.

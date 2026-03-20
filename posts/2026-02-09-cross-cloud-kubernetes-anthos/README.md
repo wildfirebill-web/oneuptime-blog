@@ -30,6 +30,7 @@ Before setting up Anthos Multi-Cloud clusters, you need:
 
 ```bash
 # Install the gcloud CLI with Anthos components
+
 gcloud components install kubectl gke-gcloud-auth-plugin
 
 # Enable required APIs

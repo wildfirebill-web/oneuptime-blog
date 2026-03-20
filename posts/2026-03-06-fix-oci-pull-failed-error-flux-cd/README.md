@@ -18,6 +18,7 @@ Check the OCIRepository or HelmRepository status:
 
 ```bash
 # Check OCIRepository resources
+
 kubectl get ocirepositories -A
 
 # Get detailed error information

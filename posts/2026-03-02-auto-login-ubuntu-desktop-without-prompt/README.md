@@ -27,6 +27,7 @@ The auto-login configuration depends on which display manager you are using:
 
 ```bash
 # Check which display manager is active
+
 cat /etc/X11/default-display-manager
 # Common outputs:
 # /usr/sbin/gdm3  (GDM3, Ubuntu default)

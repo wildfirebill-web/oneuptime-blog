@@ -26,6 +26,7 @@ Keep Windows workloads in namespaces that do not have injection enabled:
 
 ```bash
 # Linux namespace with injection
+
 kubectl create namespace linux-apps
 kubectl label namespace linux-apps istio-injection=enabled
 

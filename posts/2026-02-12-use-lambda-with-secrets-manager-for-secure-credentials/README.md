@@ -18,6 +18,7 @@ First, store your credentials in Secrets Manager:
 
 ```bash
 # Create a secret for database credentials
+
 aws secretsmanager create-secret \
   --name "myapp/production/db-credentials" \
   --description "Production database credentials" \

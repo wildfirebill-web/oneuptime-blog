@@ -33,6 +33,7 @@ Create a stream to ingest your data:
 
 ```bash
 # Create a Kinesis stream with 2 shards
+
 # Each shard handles 1MB/s in and 2MB/s out
 aws kinesis create-stream \
   --stream-name events-stream \

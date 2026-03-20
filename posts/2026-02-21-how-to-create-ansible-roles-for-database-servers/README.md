@@ -16,6 +16,7 @@ Start by creating the full role skeleton:
 
 ```bash
 # Create the role directory structure
+
 ansible-galaxy role init --init-path roles/ postgresql
 ```
 

@@ -36,6 +36,7 @@ View the build history of an image:
 
 ```bash
 # Show image history
+
 docker history nginx:alpine
 
 # Sample output:

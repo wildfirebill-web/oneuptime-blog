@@ -38,6 +38,7 @@ Run a kernel version check on all nodes:
 
 ```bash
 # Check kernel version on all nodes in one command
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.nodeInfo.kernelVersion}{"\n"}{end}'
 
 # On the node itself, get the full kernel config availability

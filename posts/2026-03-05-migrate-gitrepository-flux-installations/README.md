@@ -28,6 +28,7 @@ List all GitRepository resources and their referenced secrets:
 
 ```bash
 # List all GitRepository resources with their status
+
 flux get sources git --all-namespaces
 
 # Get detailed information including secret references

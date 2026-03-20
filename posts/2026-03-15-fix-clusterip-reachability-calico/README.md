@@ -30,6 +30,7 @@ When kube-proxy iptables rules are missing or corrupted, ClusterIP traffic canno
 
 ```bash
 # Restart kube-proxy to regenerate iptables rules
+
 kubectl rollout restart daemonset/kube-proxy -n kube-system
 
 # Wait for rollout to complete

@@ -22,6 +22,7 @@ Verify Calico is running:
 ```bash
 kubectl get pods -n calico-system
 # or for older installations
+
 kubectl get pods -n kube-system -l k8s-app=calico-node
 ```
 

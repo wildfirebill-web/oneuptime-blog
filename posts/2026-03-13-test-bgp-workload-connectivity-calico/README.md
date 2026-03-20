@@ -29,6 +29,7 @@ kubectl create deployment bgp-test-app --image=nginx --replicas=3
 kubectl expose deployment bgp-test-app --port=80 --type=ClusterIP
 
 # Get individual pod IPs
+
 kubectl get pods -l app=bgp-test-app -o wide
 ```
 

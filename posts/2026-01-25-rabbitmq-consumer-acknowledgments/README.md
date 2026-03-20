@@ -16,6 +16,7 @@ By default, you might be tempted to use auto-acknowledgment mode where messages 
 
 ```python
 # Dangerous - messages lost if consumer crashes
+
 channel.basic_consume(queue='tasks', auto_ack=True, on_message_callback=process)
 ```
 

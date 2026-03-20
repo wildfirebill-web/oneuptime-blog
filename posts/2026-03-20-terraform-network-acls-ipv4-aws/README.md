@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, AWS, Network ACL, NACL, IPv4, Security, Infrastructure as Code
+Tags: Terraform, AWS, Network ACLs, NACLs, IPv4, Security, Infrastructure as Code
 
 Description: Create AWS Network ACLs for IPv4 using Terraform to add stateless subnet-level filtering as a second layer of defense beyond security groups.
 

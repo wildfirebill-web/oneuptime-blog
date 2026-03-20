@@ -81,7 +81,7 @@ You don't have to know everything. But knowing *something* puts you ahead of mos
 
 ---
 
-## Resources to Get Started
+Resources to Get Started
 
 - **"Computer Networking: A Top-Down Approach"** by Kurose & Ross – The classic textbook, approachable and thorough
 - **Julia Evans' networking zines** – Visual, fun, and surprisingly deep

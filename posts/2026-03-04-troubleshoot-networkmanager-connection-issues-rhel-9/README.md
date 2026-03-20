@@ -16,6 +16,7 @@ Before diving into logs and traces, check the obvious stuff first:
 
 ```bash
 # Is NetworkManager running?
+
 systemctl status NetworkManager
 
 # Is networking enabled?

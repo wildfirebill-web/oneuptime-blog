@@ -1,8 +1,8 @@
-# How to Perform Rolling Cluster Upgrades in Rancher
+# How to Perform Rolling Cluster Upgrades in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Cluster Upgrade, RKE2, Rolling Update, Node Management, Maintenance
+Tags: Rancher, Kubernetes, Cluster Upgrade, RKE2, Rolling Updates, Node Management, Maintenance
 
 Description: Learn how to perform rolling Kubernetes cluster upgrades through Rancher with minimal downtime by upgrading control plane nodes and worker nodes in sequence.
 
@@ -21,6 +21,7 @@ Keeping Kubernetes clusters up to date is essential for security and feature acc
 
 ```bash
 # Verify all nodes are Ready
+
 kubectl get nodes
 
 # Check current Kubernetes version
@@ -37,7 +38,7 @@ kubectl version --short
    - **Control Plane Concurrency**: `1` (upgrade one control plane node at a time)
    - **Worker Concurrency**: `10%` (upgrade 10% of workers simultaneously)
    - **Max Unavailable**: `1`
-4. Click **Save** — Rancher will orchestrate the rolling upgrade.
+4. Click **Save** - Rancher will orchestrate the rolling upgrade.
 
 ---
 

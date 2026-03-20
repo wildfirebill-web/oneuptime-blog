@@ -50,6 +50,7 @@ Install the required testing tools:
 
 ```bash
 # Install testing tools
+
 pip install ansible-core molecule molecule-docker ansible-lint yamllint pytest testinfra
 ```
 

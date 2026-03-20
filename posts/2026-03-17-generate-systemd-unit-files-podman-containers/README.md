@@ -20,6 +20,7 @@ First, create and start a container:
 
 ```bash
 # Run a container
+
 podman run -d --name mywebserver -p 8080:80 docker.io/library/nginx:latest
 ```
 

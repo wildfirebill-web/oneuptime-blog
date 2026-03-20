@@ -16,6 +16,7 @@ Creating a backup is a single gcloud command. You need to specify the database t
 
 ```bash
 # Create a backup of the database with a 30-day expiration
+
 gcloud spanner backups create my-backup-20260217 \
     --instance=my-spanner-instance \
     --database=my-database \

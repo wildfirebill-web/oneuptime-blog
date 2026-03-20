@@ -8,12 +8,13 @@ Description: Tune TCP congestion avoidance parameters to improve throughput stab
 
 ## Introduction
 
-TCP congestion avoidance is the phase after slow start where the sender grows CWND linearly (one MSS per RTT) to probe for additional bandwidth without triggering congestion. Tuning congestion avoidance parameters — slow start threshold, recovery algorithms, and RTO settings — can improve how quickly TCP recovers after packet loss and how efficiently it uses available bandwidth.
+TCP congestion avoidance is the phase after slow start where the sender grows CWND linearly (one MSS per RTT) to probe for additional bandwidth without triggering congestion. Tuning congestion avoidance parameters - slow start threshold, recovery algorithms, and RTO settings - can improve how quickly TCP recovers after packet loss and how efficiently it uses available bandwidth.
 
 ## Key Congestion Avoidance Parameters
 
 ```bash
 # View all TCP tuning parameters
+
 sysctl -a | grep "^net.ipv4.tcp" | sort
 
 # Most relevant for congestion avoidance:

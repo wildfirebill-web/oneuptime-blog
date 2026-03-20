@@ -43,6 +43,7 @@ Deploy Gatekeeper using kubectl or Helm:
 
 ```bash
 # Option 1: Apply manifests directly
+
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.14.0/deploy/gatekeeper.yaml
 
 # Option 2: Install with Helm

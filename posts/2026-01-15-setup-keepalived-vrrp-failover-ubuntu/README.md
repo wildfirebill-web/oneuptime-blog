@@ -67,6 +67,7 @@ First, update your system packages on both servers:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade existing packages

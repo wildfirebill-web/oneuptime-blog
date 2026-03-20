@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, Log Parsing, Filelog Receiver, Regex
+Tags: OpenTelemetry, Nginx, Log Parsing, Filelog Receiver, Regex
 
 Description: Parse NGINX access logs into structured OpenTelemetry log attributes using custom regex patterns in the filelog receiver.
 
@@ -180,6 +180,7 @@ Some teams configure NGINX to output JSON logs directly. In that case, you can u
 
 ```nginx
 # nginx.conf
+
 log_format json_combined escape=json
   '{"time":"$time_iso8601",'
   '"remote_addr":"$remote_addr",'

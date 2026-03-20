@@ -66,6 +66,7 @@ First, set up a Django project with Django REST Framework installed.
 
 ```bash
 # Create project structure
+
 pip install django djangorestframework
 django-admin startproject myapi
 cd myapi

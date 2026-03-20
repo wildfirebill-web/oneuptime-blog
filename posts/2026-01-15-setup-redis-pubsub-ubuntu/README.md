@@ -42,6 +42,7 @@ When a publisher sends a message to a channel, Redis immediately delivers it to 
 
 ```bash
 # Update the package index to ensure we get the latest versions
+
 sudo apt update
 
 # Upgrade existing packages (optional but recommended)

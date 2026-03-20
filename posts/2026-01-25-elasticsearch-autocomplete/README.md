@@ -59,6 +59,7 @@ The completion suggester is optimized for speed using an in-memory finite state 
 
 ```bash
 # Create index with completion field
+
 curl -X PUT "localhost:9200/products_suggest" -H 'Content-Type: application/json' -d'
 {
   "mappings": {

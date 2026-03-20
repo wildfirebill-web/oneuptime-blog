@@ -39,6 +39,7 @@ Before Ansible can use pfexec, the remote Solaris host needs to grant the approp
 
 ```bash
 # On the Solaris host, assign the Primary Administrator profile to the deploy user
+
 # This gives full root-equivalent access through pfexec
 usermod -P 'Primary Administrator' deploy
 

@@ -28,6 +28,7 @@ Let AWS manage the key pair and never let Terraform see the private key:
 
 ```hcl
 # Generate the key pair locally first
+
 # ssh-keygen -t ed25519 -f ~/.ssh/my-ec2-key -C "ec2-access"
 
 # Import only the public key into AWS

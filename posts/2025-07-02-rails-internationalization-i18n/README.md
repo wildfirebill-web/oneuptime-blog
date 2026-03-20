@@ -109,6 +109,7 @@ Configure i18n in your Rails application:
 
 ```ruby
 # config/application.rb
+
 module MyApp
   class Application < Rails::Application
     # Set available locales for the application

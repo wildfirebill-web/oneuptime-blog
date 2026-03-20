@@ -32,6 +32,7 @@ Clients connect to Azure Web PubSub via WebSockets. When a client sends a messag
 
 ```bash
 # Create the Web PubSub service
+
 az webpubsub create \
   --name chat-pubsub \
   --resource-group chat-rg \

@@ -281,6 +281,7 @@ Always verify your ClusterRoles work correctly:
 
 ```bash
 # Test a specific user's access
+
 kubectl auth can-i create virtualservices.networking.istio.io -n team-alpha \
   --as=developer@example.com
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, SNMP, IPv6, Monitoring, Network, MIB
+Tags: Grafana, SNMP, IPv6, Monitoring, Networks, MIB
 
 Description: A guide to monitoring IPv6 statistics from network devices using SNMP, the SNMP Exporter for Prometheus, and Grafana dashboards.
 
@@ -12,6 +12,7 @@ SNMP (Simple Network Management Protocol) provides IPv6 statistics through RFC 4
 
 ```bash
 # Download SNMP exporter
+
 wget https://github.com/prometheus/snmp_exporter/releases/latest/download/snmp_exporter-*.linux-amd64.tar.gz
 tar xzf snmp_exporter-*.linux-amd64.tar.gz
 sudo mv snmp_exporter /usr/local/bin/

@@ -30,6 +30,7 @@ Longhorn requires open-iscsi on every node. You can verify and install it using 
 
 ```bash
 # Check if open-iscsi is installed on nodes
+
 kubectl get nodes -o wide
 
 # Deploy the Longhorn environment check script

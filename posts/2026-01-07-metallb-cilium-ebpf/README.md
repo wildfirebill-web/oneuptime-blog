@@ -111,6 +111,7 @@ Create a values file for Cilium installation. This configuration enables eBPF-ba
 # cilium-values.yaml
 
 # Enable kube-proxy replacement for full eBPF load balancing
+
 kubeProxyReplacement: true
 
 # Kubernetes API server endpoint (replace with your cluster's API server)

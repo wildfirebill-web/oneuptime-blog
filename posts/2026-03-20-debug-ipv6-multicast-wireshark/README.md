@@ -10,6 +10,7 @@ Description: A practical guide to using Wireshark display filters and analysis f
 
 ```bash
 # Start Wireshark capture from command line on a specific interface
+
 wireshark -i eth0 -k
 
 # Or capture to a file for later analysis

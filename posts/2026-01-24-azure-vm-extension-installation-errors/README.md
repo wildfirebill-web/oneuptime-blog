@@ -34,6 +34,7 @@ The first step in troubleshooting is to check the current extension status and e
 
 ```bash
 # List all extensions on a VM with their status
+
 az vm extension list \
   --resource-group myResourceGroup \
   --vm-name myVM \

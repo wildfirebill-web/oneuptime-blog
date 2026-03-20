@@ -24,6 +24,7 @@ Start with a module structure:
 
 ```hcl
 # modules/ingress/variables.tf
+
 variable "name" {
   description = "Name of the ingress resource"
   type        = string

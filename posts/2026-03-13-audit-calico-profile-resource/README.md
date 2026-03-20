@@ -25,6 +25,7 @@ Beyond Kubernetes namespace profiles, audits should verify that custom profiles 
 ```bash
 #!/bin/bash
 # Every namespace should have a corresponding kns.* profile
+
 NS_COUNT=$(kubectl get namespaces --no-headers | wc -l)
 PROFILE_COUNT=$(calicoctl get profiles | grep "^kns\." | wc -l)
 

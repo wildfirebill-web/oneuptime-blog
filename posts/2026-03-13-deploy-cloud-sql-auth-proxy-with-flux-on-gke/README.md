@@ -31,6 +31,7 @@ Workload Identity lets Kubernetes service accounts act as GCP service accounts. 
 
 ```bash
 # Enable Workload Identity on an existing cluster
+
 gcloud container clusters update my-cluster \
   --region us-central1 \
   --workload-pool=MY_PROJECT_ID.svc.id.goog

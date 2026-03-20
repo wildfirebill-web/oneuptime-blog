@@ -19,6 +19,7 @@ Error: cannot start pipelines: failed to create "otlp" exporter:
 
 ```yaml
 # Collector config references /etc/ssl/certs/
+
 exporters:
   otlp:
     endpoint: backend:4317

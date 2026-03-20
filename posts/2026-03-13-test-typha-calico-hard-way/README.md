@@ -18,6 +18,7 @@ Verify that a NetworkPolicy applied to the API server reaches all nodes via Typh
 
 ```bash
 # Watch Typha update counter before test
+
 kubectl port-forward -n calico-system deployment/calico-typha 9093:9093 &
 BEFORE=$(curl -s http://localhost:9093/metrics | grep typha_updates_sent | awk '{print $2}')
 

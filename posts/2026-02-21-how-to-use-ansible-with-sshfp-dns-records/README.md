@@ -62,6 +62,7 @@ The easiest way to generate SSHFP records is on the server itself:
 
 ```bash
 # Generate SSHFP records for all host keys
+
 ssh-keygen -r $(hostname -f)
 ```
 

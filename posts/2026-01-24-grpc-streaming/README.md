@@ -668,6 +668,7 @@ Here is the same bidirectional streaming in Python:
 
 ```python
 # server_streaming.py - Python gRPC streaming server
+
 import grpc
 from concurrent import futures
 import time

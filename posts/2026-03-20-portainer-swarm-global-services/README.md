@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Global Services, Infrastructure, Monitoring
+Tags: Portainer, Docker Swarm, Global Service, Infrastructure, Monitoring
 
 Description: Deploy Docker Swarm global services that run one instance per node, equivalent to Kubernetes DaemonSets, using Portainer.
 
 ## Introduction
 
-Global services in Docker Swarm run exactly one task on every node in the cluster—or on nodes matching placement constraints. This is equivalent to Kubernetes DaemonSets. Common use cases include monitoring agents, log collectors, security scanners, and storage drivers.
+Global services in Docker Swarm run exactly one task on every node in the cluster-or on nodes matching placement constraints. This is equivalent to Kubernetes DaemonSets. Common use cases include monitoring agents, log collectors, security scanners, and storage drivers.
 
 ## Global Service Use Cases
 
@@ -22,6 +22,7 @@ Global services in Docker Swarm run exactly one task on every node in the cluste
 
 ```yaml
 # global-services-stack.yml
+
 version: '3.8'
 
 services:

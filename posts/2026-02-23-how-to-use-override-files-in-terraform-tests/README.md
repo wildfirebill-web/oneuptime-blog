@@ -38,6 +38,7 @@ Use `override_resource` to replace specific resource behavior in tests:
 mock_provider "aws" {}
 
 # Override a specific resource instance
+
 override_resource {
   target = aws_instance.app
   values = {

@@ -22,6 +22,7 @@ Conflicts surface as errors in the Kustomization status. You can detect them usi
 
 ```bash
 # Check Kustomization status for conflict errors
+
 flux get ks --all-namespaces
 
 # View detailed events for a specific Kustomization

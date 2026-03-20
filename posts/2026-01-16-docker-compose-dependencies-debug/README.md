@@ -53,6 +53,7 @@ Available conditions:
 
 ```bash
 # View all services and their status
+
 docker compose ps
 
 # Example output showing unhealthy service blocking dependents:

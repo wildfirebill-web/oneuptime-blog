@@ -56,6 +56,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 import joblib
 
 # SageMaker paths
+
 prefix = '/opt/ml/'
 input_path = os.path.join(prefix, 'input', 'data')
 output_path = os.path.join(prefix, 'output')

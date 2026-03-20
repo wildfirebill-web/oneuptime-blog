@@ -33,6 +33,7 @@ Create a retry middleware:
 
 ```yaml
 # retry-middleware.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:

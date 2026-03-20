@@ -219,6 +219,7 @@ Generate a valid JWT token from your issuer and test:
 
 ```bash
 # With a valid token (should succeed)
+
 TOKEN="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9..."
 kubectl exec deploy/sleep -c sleep -- curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $TOKEN" http://my-api.default.svc.cluster.local/api/data
 # Expected: 200

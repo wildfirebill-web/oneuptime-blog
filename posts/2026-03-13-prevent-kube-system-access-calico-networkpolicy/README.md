@@ -32,6 +32,7 @@ This guide establishes a namespace bootstrapping pattern that includes kube-syst
 
 ```bash
 # Audit all namespaces for missing DNS allow
+
 for NS in $(kubectl get namespaces -o jsonpath='{.items[*].metadata.name}'); do
   HAS_DNS=$(kubectl get networkpolicy -n $NS -o yaml 2>/dev/null \
     | grep -c "port: 53" || true)

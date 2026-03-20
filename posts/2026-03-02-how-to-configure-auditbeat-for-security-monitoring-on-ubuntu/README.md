@@ -30,6 +30,7 @@ The auditd module effectively replaces `auditd` daemon on the host - you should 
 
 ```bash
 # Add the Elastic APT repository (if not already added)
+
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 

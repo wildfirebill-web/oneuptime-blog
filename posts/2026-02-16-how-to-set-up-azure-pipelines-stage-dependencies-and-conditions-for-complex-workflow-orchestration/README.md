@@ -18,6 +18,7 @@ By default, stages run sequentially in the order they appear in the YAML file. T
 
 ```yaml
 # Linear pipeline - each stage waits for the previous one
+
 stages:
   - stage: Build
     jobs:

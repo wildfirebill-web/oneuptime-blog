@@ -44,6 +44,7 @@ By default, Django runs in autocommit mode. Each database query runs in its own 
 
 ```python
 # myapp/views.py
+
 from django.http import JsonResponse
 from .models import Account
 

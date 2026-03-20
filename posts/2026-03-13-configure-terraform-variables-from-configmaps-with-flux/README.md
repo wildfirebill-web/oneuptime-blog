@@ -28,6 +28,7 @@ Organize ConfigMaps by environment to hold shared variables.
 
 ```yaml
 # infrastructure/terraform/config/production-vars.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

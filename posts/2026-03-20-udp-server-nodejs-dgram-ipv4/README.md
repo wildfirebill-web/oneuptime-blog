@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, UDP, dgram, IPv4, Networking, Datagram
+Tags: Node.js, UDP, Dgram, IPv4, Networking, Datagram
 
 Description: Learn how to create a UDP server and client in Node.js using the built-in dgram module for IPv4 datagram communication.
 

@@ -32,6 +32,7 @@ Automating cilium-agent shell completion for Fish reduces operational overhead a
 
 ```bash
 # Create an automation script for common operations
+
 cat > /tmp/cilium-automation.sh << 'SCRIPT'
 #!/bin/bash
 # Cilium automation script

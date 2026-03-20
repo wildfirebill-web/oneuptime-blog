@@ -35,6 +35,7 @@ flowchart TD
 
 ```bash
 # View the default GRUB settings
+
 cat /etc/default/grub
 
 # List all boot entries

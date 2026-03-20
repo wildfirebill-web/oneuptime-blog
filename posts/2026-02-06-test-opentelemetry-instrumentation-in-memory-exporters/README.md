@@ -36,6 +36,7 @@ The Python OpenTelemetry SDK ships with an in-memory exporter out of the box. Yo
 
 ```python
 # test_instrumentation.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export.in_memory_span_exporter import InMemorySpanExporter

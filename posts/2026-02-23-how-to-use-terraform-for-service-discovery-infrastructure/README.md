@@ -16,6 +16,7 @@ In this guide, we will cover how to build service discovery infrastructure with 
 
 ```hcl
 # service-discovery/cloud-map.tf
+
 # AWS Cloud Map for ECS service discovery
 
 # Private DNS namespace

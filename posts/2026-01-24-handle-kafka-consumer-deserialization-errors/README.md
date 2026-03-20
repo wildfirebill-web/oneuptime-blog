@@ -349,6 +349,7 @@ flowchart TB
 
 ```bash
 # Set compatibility mode to BACKWARD
+
 curl -X PUT \
   -H "Content-Type: application/vnd.schemaregistry.v1+json" \
   --data '{"compatibility": "BACKWARD"}' \

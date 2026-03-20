@@ -14,14 +14,14 @@ ResourceQuota objects limit the total resource consumption within a Kubernetes n
 
 When you deploy through Portainer and the quota is exceeded, you'll see errors like:
 
-```
+```text
 Error creating: pods "my-app-xxx" is forbidden: exceeded quota: team-quota,
 requested: cpu=500m, used: cpu=3500m, limited: cpu=4000m
 ```
 
 Or for object counts:
 
-```
+```text
 Error from server (Forbidden): pods "my-app" is forbidden:
 exceeded quota: ns-quota, requested: pods=1, used: pods=10, limited: pods=10
 ```
@@ -32,12 +32,13 @@ Navigate to **Kubernetes > Namespaces > [your namespace]** in Portainer. The nam
 
 ```bash
 # Via CLI
+
 kubectl get resourcequota -n production
 kubectl describe resourcequota team-quota -n production
 ```
 
 Example output:
-```
+```yaml
 Name:                   team-quota
 Namespace:              production
 Resource                Used    Hard

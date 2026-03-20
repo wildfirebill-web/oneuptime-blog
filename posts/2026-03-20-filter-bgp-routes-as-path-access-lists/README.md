@@ -28,7 +28,7 @@ The underscore `_` matches any delimiter character: space, comma, `{`, `}`, `(`,
 
 AS-path access lists are numbered 1–500:
 
-```
+```text
 ! Permit routes originated by AS 65100 only
 ip as-path access-list 1 permit ^65100$
 
@@ -48,7 +48,7 @@ ip as-path access-list 4 permit ^$
 
 Use `show ip bgp regexp` to test your pattern against the current BGP table before applying it as a filter:
 
-```
+```text
 ! Test which routes match the pattern for AS 65100
 Router# show ip bgp regexp ^65100$
 
@@ -62,7 +62,7 @@ Review the output carefully to confirm the regex matches only the intended route
 
 Apply the access list inbound or outbound using `neighbor X filter-list`:
 
-```
+```text
 router bgp 65001
  ! Accept only routes from AS 65100 (direct customer)
  neighbor 10.0.0.1 filter-list 1 in
@@ -75,7 +75,7 @@ router bgp 65001
 
 For more complex filtering, use the AS-path access list as a match condition inside a route map:
 
-```
+```nginx
 ! Create route map that uses AS-path matching
 route-map FILTER_UPSTREAM permit 10
  match as-path 1
@@ -93,7 +93,7 @@ router bgp 65001
 
 After applying, perform a soft reset and check the BGP table:
 
-```
+```text
 ! Soft-reset inbound to apply new filter
 Router# clear ip bgp 203.0.113.1 soft in
 

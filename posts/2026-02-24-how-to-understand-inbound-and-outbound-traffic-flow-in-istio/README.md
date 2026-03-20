@@ -44,6 +44,7 @@ Envoy's virtualOutbound listener has `useOriginalDst: true`, which means it reco
 
 ```bash
 # See the listener that handles port 8080
+
 istioctl proxy-config listener service-a-pod --port 8080
 ```
 

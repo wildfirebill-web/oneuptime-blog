@@ -16,6 +16,7 @@ Installing a single package is straightforward:
 
 ```yaml
 # Install a single package
+
 - name: Install nginx
   ansible.builtin.dnf:
     name: nginx

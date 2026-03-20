@@ -31,6 +31,7 @@ Start with a comprehensive backup script that handles all components:
 ```bash
 #!/bin/bash
 # /usr/local/bin/podman-backup.sh
+
 # Automated backup of all Podman containers, volumes, and images
 
 set -euo pipefail

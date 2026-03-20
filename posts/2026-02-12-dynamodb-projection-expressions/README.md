@@ -219,6 +219,7 @@ The biggest cost savings from projections come from Global Secondary Indexes. Wh
 
 ```bash
 # Create a GSI that only includes specific attributes
+
 aws dynamodb update-table \
   --table-name Products \
   --attribute-definitions \

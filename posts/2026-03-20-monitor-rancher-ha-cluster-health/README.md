@@ -27,6 +27,7 @@ Set up external synthetic monitoring of the Rancher health endpoint:
 
 ```bash
 # Simple health check script
+
 #!/bin/bash
 RANCHER_URL="https://rancher.example.com"
 
@@ -150,4 +151,4 @@ Configure [OneUptime](https://oneuptime.com) to monitor the Rancher URL from mul
 
 ## Conclusion
 
-Rancher HA health monitoring requires visibility into every layer: load balancer, Rancher pods, Kubernetes API server, and etcd. External monitoring provides the most reliable signal since it exercises the full stack from outside the cluster—the same perspective your users and cluster agents have.
+Rancher HA health monitoring requires visibility into every layer: load balancer, Rancher pods, Kubernetes API server, and etcd. External monitoring provides the most reliable signal since it exercises the full stack from outside the cluster-the same perspective your users and cluster agents have.

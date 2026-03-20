@@ -8,7 +8,7 @@ Description: Learn how to use tofu metadata commands to access OpenTofu function
 
 ## Introduction
 
-The `tofu metadata` command group provides utilities for accessing metadata about OpenTofu itself — primarily function signatures and schema information. These commands are primarily used by tooling authors (IDE plugins, documentation generators) but are also useful for exploring what functions are available and understanding their signatures.
+The `tofu metadata` command group provides utilities for accessing metadata about OpenTofu itself - primarily function signatures and schema information. These commands are primarily used by tooling authors (IDE plugins, documentation generators) but are also useful for exploring what functions are available and understanding their signatures.
 
 ## tofu metadata functions
 
@@ -18,6 +18,7 @@ The `tofu metadata` command group provides utilities for accessing metadata abou
 tofu metadata functions
 
 # Output (excerpt):
+
 # abs(number) number
 # base64decode(str) string
 # base64encode(str) string

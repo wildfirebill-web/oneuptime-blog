@@ -18,6 +18,7 @@ k3d is a single binary. Install it with one command.
 
 ```bash
 # Install k3d on macOS or Linux
+
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 # Or with Homebrew on macOS

@@ -14,6 +14,7 @@ When RabbitMQ isn't accessible, the issue is typically one of: the service faile
 
 ```bash
 # Step 1: Is RabbitMQ running?
+
 sudo systemctl status rabbitmq-server
 
 # Step 2: What does RabbitMQ report?
@@ -120,7 +121,7 @@ curl -s -u guest:guest http://127.0.0.1:15672/api/overview | python3 -m json.too
 ## Reset and Reinitialize
 
 ```bash
-# If configuration is corrupted — reset to defaults
+# If configuration is corrupted - reset to defaults
 sudo systemctl stop rabbitmq-server
 sudo rabbitmqctl reset
 sudo systemctl start rabbitmq-server

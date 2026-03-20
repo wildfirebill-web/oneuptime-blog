@@ -1,8 +1,8 @@
-# How to Set Up Rancher for Retail
+# How to Set Up Rancher for Retail - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, retail, pci-dss, edge, kubernetes, point-of-sale
+Tags: Rancher, Retail, PCI-DSS, Edge, Kubernetes, Point-of-sale
 
 Description: A practical guide to deploying Rancher for retail environments, covering in-store edge deployments, POS systems, PCI DSS compliance, and centralized fleet management.
 
@@ -14,7 +14,7 @@ Retail organizations are modernizing store infrastructure with Kubernetes, deplo
 
 A typical retail Rancher deployment includes:
 
-```
+```text
 Headquarters (Data Center)
 └── Rancher Management Server (RKE2 HA cluster)
     ├── Fleet GitOps Controller
@@ -37,6 +37,7 @@ Each retail store runs a K3s cluster on minimal hardware:
 
 ```bash
 # Install K3s on store server (single node or 2-node HA)
+
 curl -sfL https://get.k3s.io | sh - \
   --node-label="location=store" \
   --node-label="store-id=NYC-001" \

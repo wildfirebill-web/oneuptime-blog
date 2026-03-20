@@ -59,6 +59,7 @@ flowchart TD
 
 ```yaml
 # Install AWS EBS CSI driver using Helm
+
 # This driver provisions EBS volumes in AWS.
 # Requires IAM permissions for EC2 volume operations.
 ---

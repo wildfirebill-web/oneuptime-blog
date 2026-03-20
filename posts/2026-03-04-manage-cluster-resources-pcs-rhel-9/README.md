@@ -69,7 +69,7 @@ sudo pcs resource create MyService systemd:myservice \
     op monitor interval=30s
 ```
 
-## Resource Groups
+Resource Groups
 
 Group resources to run on the same node and start/stop in order:
 
@@ -169,7 +169,7 @@ Remove an operation:
 sudo pcs resource op remove VIP monitor interval=30s
 ```
 
-## Resource Meta Attributes
+Resource Meta Attributes
 
 Set how long to wait before moving a resource after a failure:
 

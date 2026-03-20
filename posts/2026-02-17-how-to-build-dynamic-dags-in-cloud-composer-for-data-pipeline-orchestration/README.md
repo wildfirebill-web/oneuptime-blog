@@ -24,6 +24,7 @@ The simplest approach is reading a YAML or JSON configuration file:
 
 ```python
 # dags/dynamic_from_config.py
+
 # Generate DAG tasks from a YAML configuration file
 import yaml
 from datetime import datetime

@@ -16,6 +16,7 @@ Operationalizing Calico datastore backup means treating it as critical infrastru
 
 ```bash
 # Export Calico datastore (backup or migration)
+
 calicoctl datastore migrate export > calico-backup-$(date +%Y%m%d).yaml
 
 # Verify export content

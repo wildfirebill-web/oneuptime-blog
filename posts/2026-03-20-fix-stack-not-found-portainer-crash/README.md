@@ -1,10 +1,10 @@
-# How to Fix "Stack Not Found" After a Portainer Crash
+# How to Fix 'Stack Not Found' After a Portainer Crash
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Troubleshooting, Stacks, Recovery, Database, Crash
 
-Description: Learn how to recover from "Stack Not Found" errors after a Portainer crash by restoring stack metadata from the database or re-importing running stacks.
+Description: Learn how to recover from 'Stack Not Found' errors after a Portainer crash by restoring stack metadata from the database or re-importing running stacks.
 
 ---
 
@@ -12,12 +12,13 @@ After a Portainer crash or improper shutdown, stack metadata in the BoltDB datab
 
 ## Understanding the Problem
 
-Portainer stores stack metadata (name, compose content, environment variables) in its BoltDB database (`portainer.db`). The actual running containers live in Docker — independent of Portainer. A corrupt database loses the metadata link but not the running containers.
+Portainer stores stack metadata (name, compose content, environment variables) in its BoltDB database (`portainer.db`). The actual running containers live in Docker - independent of Portainer. A corrupt database loses the metadata link but not the running containers.
 
 ## Step 1: Verify Containers Are Still Running
 
 ```bash
 # Check if your stack containers are still running despite the error
+
 docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Image}}"
 
 # List Docker-managed networks (stacks usually create a dedicated network)

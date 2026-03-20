@@ -8,7 +8,7 @@ Description: Learn how to configure gRPC clients to use DNS-based service discov
 
 ## How gRPC DNS Discovery Works
 
-```
+```text
 gRPC Client
     │
     ▼
@@ -87,6 +87,7 @@ import hello_pb2
 import hello_pb2_grpc
 
 # dns:/// triggers the gRPC built-in DNS resolver
+
 channel = grpc.insecure_channel(
     "dns:///greeter.default.svc.cluster.local:50051",
     options=[
@@ -109,7 +110,7 @@ metadata:
   name: greeter
   namespace: default
 spec:
-  clusterIP: None   # Headless — DNS returns all matching pod IPs
+  clusterIP: None   # Headless - DNS returns all matching pod IPs
   selector:
     app: greeter
   ports:

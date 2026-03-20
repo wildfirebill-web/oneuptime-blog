@@ -22,6 +22,7 @@ Ensure all nodes have:
 
 ```bash
 # Install cephadm
+
 sudo dnf install -y cephadm
 
 # Verify the installation

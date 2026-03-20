@@ -42,6 +42,7 @@ The `argocd_app_info` metric includes health_status as a label:
 
 ```promql
 # All currently degraded applications
+
 argocd_app_info{health_status="Degraded"}
 
 # Count of degraded applications

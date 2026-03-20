@@ -26,6 +26,7 @@ The simplest form of sudo access is adding a user to the appropriate group.
 
 ```yaml
 # manage_sudo_group.yml - Add or remove users from sudo group
+
 ---
 - name: Manage sudo group membership
   hosts: all

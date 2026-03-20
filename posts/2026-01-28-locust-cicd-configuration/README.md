@@ -45,6 +45,7 @@ For CI/CD, Locust runs without the web UI using command-line parameters:
 
 ```bash
 # Basic headless run
+
 locust \
     --headless \
     --host=https://staging.example.com \

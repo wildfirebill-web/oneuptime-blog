@@ -12,7 +12,7 @@ Multi-cloud architectures require IPv6 connectivity between cloud providers. Opt
 
 ## Architecture Options
 
-```
+```text
 Option 1: Cloud VPNs with IPv6 (Most Common)
   AWS ← VPN Tunnel (IPv6) → Azure
   AWS ← VPN Tunnel (IPv6) → GCP
@@ -32,6 +32,7 @@ Option 3: Overlay Network (WireGuard/IPsec)
 
 ```hcl
 # AWS side
+
 resource "aws_customer_gateway" "azure_gw" {
   bgp_asn    = 65515  # Azure BGP ASN
   ip_address = azurerm_public_ip.vpn_gw.ip_address

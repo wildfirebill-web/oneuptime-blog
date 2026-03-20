@@ -72,6 +72,7 @@ This alert fires only when users experience elevated error rates, not when infra
 
 ```yaml
 # prometheus/rules/symptom-alerts.yaml
+
 # Alert on user-visible symptoms, not infrastructure metrics
 
 groups:

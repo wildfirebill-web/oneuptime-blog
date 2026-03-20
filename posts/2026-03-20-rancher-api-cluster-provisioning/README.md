@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, api, automation, cluster-provisioning, terraform
+Tags: Rancher, API, Automation, Cluster-provisioning, Terraform
 
 Description: A practical guide to automating Kubernetes cluster provisioning using the Rancher API and Terraform, covering authentication, cluster creation, and post-provisioning configuration.
 
@@ -16,7 +16,7 @@ Manually creating clusters through the Rancher UI is fine for occasional setups,
 
 First, create a Rancher API key:
 
-```
+```text
 Rancher UI → User Avatar → API Keys → Add Key
 - Description: automation-key
 - Expires: (set appropriate expiry)
@@ -25,6 +25,7 @@ Rancher UI → User Avatar → API Keys → Add Key
 
 ```bash
 # Store credentials
+
 export RANCHER_URL="https://rancher.example.com"
 export RANCHER_ACCESS_KEY="token-xxxxx"
 export RANCHER_SECRET_KEY="xxxxxxxxxxxxxxxxxx"

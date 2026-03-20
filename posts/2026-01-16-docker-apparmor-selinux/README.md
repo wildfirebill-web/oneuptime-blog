@@ -35,6 +35,7 @@ flowchart TB
 
 ```bash
 # Check if AppArmor is enabled
+
 sudo aa-status
 
 # View Docker's default profile

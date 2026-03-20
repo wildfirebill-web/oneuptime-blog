@@ -146,6 +146,7 @@ Here is a minimal plugin service in Python that returns applications from a serv
 
 ```python
 # plugin_service.py
+
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)

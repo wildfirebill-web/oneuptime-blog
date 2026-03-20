@@ -16,6 +16,7 @@ In this guide, we will cover how to build progressive delivery infrastructure wi
 
 ```hcl
 # progressive/traffic-splitting.tf
+
 # ALB-based traffic splitting for progressive delivery
 
 variable "canary_weight" {

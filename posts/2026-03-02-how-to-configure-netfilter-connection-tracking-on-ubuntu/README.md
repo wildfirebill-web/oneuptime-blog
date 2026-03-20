@@ -28,6 +28,7 @@ Subsequent packets matching this entry are classified as ESTABLISHED and (depend
 
 ```bash
 # Install conntrack tools
+
 sudo apt install -y conntrack
 
 # View all current connections

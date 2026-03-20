@@ -55,6 +55,7 @@ Every KRaft cluster needs a unique identifier. Generate it once and use it acros
 
 ```bash
 # Generate a unique cluster ID (run once, save the output)
+
 KAFKA_CLUSTER_ID=$(kafka-storage.sh random-uuid)
 echo $KAFKA_CLUSTER_ID
 # Example output: MkU3OEVBNTcwNTJENDM2Qk

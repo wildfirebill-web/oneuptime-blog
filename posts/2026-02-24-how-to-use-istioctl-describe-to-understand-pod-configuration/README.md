@@ -179,6 +179,7 @@ The `describe` command gives you the big picture. Once you know which configurat
 
 ```bash
 # Found a suspicious VirtualService? Check its YAML
+
 kubectl get virtualservice reviews-route -n default -o yaml
 
 # Want to see how it translates to Envoy config?

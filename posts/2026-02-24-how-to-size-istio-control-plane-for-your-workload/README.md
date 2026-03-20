@@ -30,6 +30,7 @@ If you already have Istio running, start by measuring what you have:
 
 ```bash
 # Check istiod resource usage
+
 kubectl top pod -n istio-system -l app=istiod
 
 # Check how many proxies are connected

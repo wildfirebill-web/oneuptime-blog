@@ -25,6 +25,7 @@ When a Talos node first boots from the ISO or disk image, it enters maintenance 
 
 ```bash
 # Apply configuration to a node in maintenance mode
+
 talosctl apply-config --insecure \
   --nodes 192.168.1.101 \
   --file controlplane.yaml

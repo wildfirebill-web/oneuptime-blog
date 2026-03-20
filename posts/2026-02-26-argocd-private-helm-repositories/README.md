@@ -20,6 +20,7 @@ There are three ways to add a private Helm repository to ArgoCD: the CLI, the UI
 
 ```bash
 # Add a private Helm repository with basic auth
+
 argocd repo add https://charts.myorg.com \
   --type helm \
   --name myorg-charts \

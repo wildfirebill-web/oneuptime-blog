@@ -12,7 +12,7 @@ UDP hole punching is a technique that allows two hosts behind separate NAT devic
 
 ## How NAT Hole Punching Works
 
-```
+```text
 Scenario:
   Host A (behind NAT-A) wants to connect to Host B (behind NAT-B)
   Both can reach Rendezvous Server (public IP)
@@ -98,6 +98,7 @@ sock.bind(('0.0.0.0', LOCAL_PORT))
 sock.settimeout(10)
 
 # Step 1: Register with rendezvous server and get peer's external address
+
 print(f"Registering as '{MY_ID}', looking for '{PEER_ID}'")
 sock.sendto(json.dumps({'id': MY_ID, 'want': PEER_ID}).encode(), RENDEZVOUS)
 

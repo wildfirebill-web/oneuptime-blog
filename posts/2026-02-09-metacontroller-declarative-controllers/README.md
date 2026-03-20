@@ -18,6 +18,7 @@ Deploy Metacontroller to your cluster:
 
 ```bash
 # Install using kubectl
+
 kubectl apply -k https://github.com/metacontroller/metacontroller/manifests/production
 ```
 

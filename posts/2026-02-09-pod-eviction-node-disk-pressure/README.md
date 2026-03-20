@@ -25,6 +25,7 @@ Default eviction thresholds:
 
 ```yaml
 # Kubelet configuration
+
 evictionHard:
   nodefs.available: "10%"
   nodefs.inodesFree: "5%"

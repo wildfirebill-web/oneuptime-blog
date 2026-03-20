@@ -26,6 +26,7 @@ Create a trigger token in Settings, then CI/CD, then Pipeline trigger tokens.
 
 ```bash
 # Trigger a pipeline using the token
+
 curl --request POST \
   --form "token=YOUR_TRIGGER_TOKEN" \
   --form "ref=main" \

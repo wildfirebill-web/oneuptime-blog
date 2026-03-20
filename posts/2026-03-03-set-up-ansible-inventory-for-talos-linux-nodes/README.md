@@ -22,6 +22,7 @@ Start with a simple YAML inventory file that groups nodes by role:
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     controlplane:

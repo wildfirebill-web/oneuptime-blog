@@ -31,6 +31,7 @@ The cluster health API is your first stop for assessing cluster status. It provi
 
 ```bash
 # Basic cluster health check
+
 # Returns: status (green/yellow/red), node count, shard counts
 curl -X GET "localhost:9200/_cluster/health?pretty"
 ```

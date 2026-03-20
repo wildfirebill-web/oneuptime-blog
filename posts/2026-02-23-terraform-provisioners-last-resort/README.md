@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provisioner, Best Practices, Infrastructure as Code, Configuration Management
+Tags: Terraform, Provisioners, Best Practices, Infrastructure as Code, Configuration Management
 
 Description: Learn why Terraform documentation recommends provisioners as a last resort, what problems they cause, and what better alternatives exist for common provisioner use cases.
 
@@ -28,6 +28,7 @@ Terraform is declarative. You describe the desired state, and Terraform figures 
 
 ```hcl
 # Declarative: describe what you want
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.medium"

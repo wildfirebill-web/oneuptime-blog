@@ -46,6 +46,7 @@ First, determine if this is happening on all requests or specific endpoints.
 
 ```bash
 # Stream live logs from your App Service
+
 az webapp log tail --name myapp --resource-group myresourcegroup
 
 # Download logs for analysis

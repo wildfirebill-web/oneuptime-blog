@@ -16,6 +16,7 @@ For reference, here is what a correct mount command looks like:
 
 ```bash
 # Standard mount command for Azure file share on Linux
+
 sudo mount -t cifs \
   //stmyfiles.file.core.windows.net/myshare \
   /mnt/azure-files \

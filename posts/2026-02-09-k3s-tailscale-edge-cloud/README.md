@@ -30,6 +30,7 @@ On each K3s node, install Tailscale:
 
 ```bash
 # Install Tailscale
+
 curl -fsSL https://tailscale.com/install.sh | sh
 
 # Authenticate and join tailnet

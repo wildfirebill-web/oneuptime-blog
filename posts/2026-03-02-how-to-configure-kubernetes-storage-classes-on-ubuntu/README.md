@@ -24,6 +24,7 @@ When a PVC references a Storage Class, the associated provisioner creates a PV a
 
 ```bash
 # List available storage classes
+
 kubectl get storageclass
 
 # Show detailed information about a storage class

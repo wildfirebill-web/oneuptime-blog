@@ -29,6 +29,7 @@ Here is a Fluent Bit log collector deployed through ArgoCD:
 
 ```yaml
 # apps/fluent-bit/daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

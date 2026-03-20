@@ -56,6 +56,7 @@ Each account directory is small, mostly calling shared modules with account-spec
 
 ```hcl
 # accounts/dev/main.tf
+
 module "vpc" {
   source = "../../modules/vpc"
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Rollback, Disaster-Recovery
+Tags: Kubernetes, Rollback, Disaster-recovery
 
 Description: Master Kubernetes upgrade rollback procedures including control plane rollback, node version downgrades, and etcd restoration for recovering from failed upgrades with minimal downtime.
 
@@ -25,6 +25,7 @@ ROLLBACK_THRESHOLD=10
 echo "Checking upgrade health..."
 
 # Count unhealthy pods
+
 unhealthy_pods=$(kubectl get pods -A --field-selector status.phase!=Running,status.phase!=Succeeded -o json | jq '.items | length')
 
 # Count not-ready nodes

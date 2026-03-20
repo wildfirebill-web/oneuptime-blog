@@ -92,6 +92,7 @@ stateDiagram-v2
 
 ```bash
 # Check connection states on your system
+
 ss -tan | awk '{print $1}' | sort | uniq -c | sort -rn
 
 # Common output and what it means:

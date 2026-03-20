@@ -64,6 +64,7 @@ Rancher ships with several predefined global roles:
 
 ```yaml
 # Example: Viewing global roles via kubectl
+
 # Connect to the local (Rancher management) cluster
 apiVersion: management.cattle.io/v3
 kind: GlobalRole

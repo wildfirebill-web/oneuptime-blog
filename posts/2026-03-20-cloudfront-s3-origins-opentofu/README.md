@@ -154,4 +154,4 @@ tofu apply tfplan
 
 ## Summary
 
-CloudFront with an S3 origin is the standard pattern for serving static websites and SPAs globally. OpenTofu manages the S3 bucket, Origin Access Control, bucket policy, and CloudFront distribution — ensuring consistent, secure CDN deployments across environments.
+CloudFront with an S3 origin is the standard pattern for serving static websites and SPAs globally. OpenTofu manages the S3 bucket, Origin Access Control, bucket policy, and CloudFront distribution - ensuring consistent, secure CDN deployments across environments.

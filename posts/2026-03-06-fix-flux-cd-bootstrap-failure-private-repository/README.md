@@ -27,6 +27,7 @@ Run the bootstrap command and carefully read the error output.
 
 ```bash
 # SSH bootstrap (most common)
+
 flux bootstrap github \
   --owner=myorg \
   --repository=fleet-infra \

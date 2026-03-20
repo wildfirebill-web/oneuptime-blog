@@ -16,6 +16,7 @@ The improved plan output provides clearer change summaries.
 
 ```bash
 # Standard plan with improved formatting
+
 tofu plan
 
 # Example output improvements in 1.11:

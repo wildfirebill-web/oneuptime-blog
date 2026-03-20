@@ -32,6 +32,7 @@ The following command creates a new workspace in your resource group:
 
 ```bash
 # Create a Log Analytics workspace for VM Insights data
+
 az monitor log-analytics workspace create \
   --resource-group myResourceGroup \
   --workspace-name myVMInsightsWorkspace \

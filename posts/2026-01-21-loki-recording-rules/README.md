@@ -40,6 +40,7 @@ flowchart LR
 
 ```yaml
 # loki-config.yaml
+
 ruler:
   # Enable the ruler
   enable_api: true

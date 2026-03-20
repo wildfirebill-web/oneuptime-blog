@@ -26,6 +26,7 @@ CHAP credentials do not match:
 
 ```bash
 # Verify initiator CHAP settings
+
 sudo iscsiadm -m node -T <target_iqn> -p <target_ip> -o show | grep auth
 ```
 

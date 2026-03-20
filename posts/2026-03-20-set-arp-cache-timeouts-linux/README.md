@@ -12,12 +12,13 @@ Linux uses a neighbor discovery (ND) subsystem that manages ARP cache entries th
 
 ```bash
 # View all ARP/neighbor timing settings
+
 sysctl -a | grep -E 'neigh.default\.(base_reachable|gc_stale|delay|retrans|gc_thresh)'
 ```
 
 Typical defaults:
 
-```
+```text
 net.ipv4.neigh.default.base_reachable_time_ms = 30000    # 30 seconds
 net.ipv4.neigh.default.gc_stale_time = 60                # 60 seconds
 net.ipv4.neigh.default.delay_first_probe_time = 5        # 5 seconds
@@ -28,7 +29,7 @@ net.ipv4.neigh.default.mcast_solicit = 3                 # 3 multicast probes
 
 ## State Lifecycle and Timeouts
 
-```
+```text
 NEW → INCOMPLETE → REACHABLE → STALE → DELAY → PROBE → FAILED
                       ↑ base_reachable_time_ms
                                ↑ gc_stale_time

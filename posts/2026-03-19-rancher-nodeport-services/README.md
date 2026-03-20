@@ -94,6 +94,7 @@ Access the application using any node's IP address and the NodePort:
 
 ```bash
 # Get node IPs
+
 kubectl get nodes -o wide
 
 # Access the service

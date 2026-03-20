@@ -20,6 +20,7 @@ Check which connection is currently set as the default.
 
 ```bash
 # List all connections with default indicator
+
 podman system connection ls
 
 # Show only the default connection

@@ -54,6 +54,7 @@ First, create a CDN profile, which is a container for one or more CDN endpoints:
 
 ```bash
 # Create a CDN profile with Microsoft's Standard tier
+
 az cdn profile create \
   --name mycdnprofile \
   --resource-group myresourcegroup \

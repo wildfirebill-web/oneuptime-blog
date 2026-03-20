@@ -27,6 +27,7 @@ flowchart LR
 
 ```bash
 # Load bonding module
+
 modprobe bonding
 
 # Create bond in balance-alb mode

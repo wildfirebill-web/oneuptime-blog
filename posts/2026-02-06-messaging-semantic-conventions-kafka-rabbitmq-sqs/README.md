@@ -41,6 +41,7 @@ Every messaging span should include a common set of attributes, regardless of wh
 
 ```yaml
 # Required for all messaging spans
+
 messaging.system: "kafka"              # The messaging system (kafka, rabbitmq, aws_sqs, etc.)
 messaging.operation.name: "publish"    # publish, receive, process, settle
 messaging.destination.name: "orders"   # Topic, queue, or exchange name

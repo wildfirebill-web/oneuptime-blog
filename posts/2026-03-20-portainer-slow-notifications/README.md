@@ -1,4 +1,4 @@
-# How to Fix Slow Notification Loading Affecting Bulk Operations
+# How to Fix Slow Notification Loading Affecting Bulk Operations - Notifications
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Resolve Portainer performance issues where slow notification loadin
 
 ## Introduction
 
-Portainer's notification system can become a bottleneck in environments with high activity — when you have thousands of events queued up, the notification bell can cause the entire UI to become sluggish. Bulk operations like stopping multiple containers or deploying large stacks can be affected. This guide explains how to manage and optimize notifications.
+Portainer's notification system can become a bottleneck in environments with high activity - when you have thousands of events queued up, the notification bell can cause the entire UI to become sluggish. Bulk operations like stopping multiple containers or deploying large stacks can be affected. This guide explains how to manage and optimize notifications.
 
 ## Step 1: Check Notification Count
 
 ```bash
 # Check how many notifications are accumulated
+
 TOKEN=$(curl -s -X POST http://localhost:9000/api/auth \
   -H "Content-Type: application/json" \
   -d '{"Username":"admin","Password":"yourpassword"}' | jq -r .jwt)
@@ -103,7 +104,7 @@ docker run -d \
 docker logs portainer 2>&1 | grep -i "notification\|activity\|slow\|ms" | tail -30
 ```
 
-## Step 7: Workaround — Perform Bulk Operations via CLI
+## Step 7: Workaround - Perform Bulk Operations via CLI
 
 When Portainer UI is slow due to notifications, use CLI for bulk operations:
 
@@ -197,4 +198,4 @@ echo "$(date): Notifications cleared. Status: $RESULT"
 
 ## Conclusion
 
-Notification accumulation is a common but easily overlooked cause of Portainer UI slowness. The immediate fix is to clear all notifications and compact the database. For the long term, schedule nightly cleanup of old notifications, configure retention limits in Portainer settings, and use the API for bulk operations when the UI is sluggish — the API bypasses the notification loading entirely.
+Notification accumulation is a common but easily overlooked cause of Portainer UI slowness. The immediate fix is to clear all notifications and compact the database. For the long term, schedule nightly cleanup of old notifications, configure retention limits in Portainer settings, and use the API for bulk operations when the UI is sluggish - the API bypasses the notification loading entirely.

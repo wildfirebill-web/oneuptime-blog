@@ -45,6 +45,7 @@ Create prefix lists for common whitelisting scenarios:
 
 ```bash
 # Office networks - IPs that get administrative access
+
 aws ec2 create-managed-prefix-list \
   --prefix-list-name "whitelist-offices" \
   --max-entries 25 \

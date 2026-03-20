@@ -28,6 +28,7 @@ The snapshot LV grows as changes accumulate. If it fills completely, the snapsho
 
 ```bash
 # Create a 20GB snapshot of db_data
+
 # Snapshot is stored in the same VG and needs free space there
 sudo lvcreate -L 20G -s -n db_data_snap /dev/data_vg/db_data
 ```

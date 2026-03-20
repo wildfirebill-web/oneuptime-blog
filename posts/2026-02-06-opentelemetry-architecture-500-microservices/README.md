@@ -72,6 +72,7 @@ Agent collectors should be lightweight and fast:
 
 ```yaml
 # agent-collector-config.yaml
+
 # Minimal configuration for DaemonSet agent collectors.
 # These run on every node and handle local telemetry collection.
 receivers:

@@ -29,6 +29,7 @@ Start at the source:
 
 ```bash
 # Check the service exists
+
 kubectl get svc orders-service -n production
 
 # Check if the service has endpoints

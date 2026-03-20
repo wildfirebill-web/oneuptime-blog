@@ -967,6 +967,7 @@ Jaeger provides a complete tracing backend for local development:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   jaeger:

@@ -27,6 +27,7 @@ Run a manual status check to understand the structure before automating it.
 
 ```bash
 # Full Cilium status check with all component details
+
 cilium status --verbose
 
 # Wait for Cilium to become ready (useful in scripts after installation or upgrades)

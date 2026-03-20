@@ -20,6 +20,7 @@ Unsolicited NAs are used to:
 
 ```bash
 # Method 1: Using ndsend (if available)
+
 # apt-get install -y ndisc6
 ndsend 2001:db8::1 eth0
 # Sends an unsolicited NA for 2001:db8::1 on eth0
@@ -75,7 +76,7 @@ After a VRRP master transition, the new master sends unsolicited NAs to update n
 
 ```bash
 #!/bin/bash
-# vrrp-failover.sh — Run on new VRRP master
+# vrrp-failover.sh - Run on new VRRP master
 
 VIRTUAL_IP="2001:db8::vip"
 IFACE="eth0"
@@ -104,7 +105,7 @@ echo "Failover announcement complete"
 
 ## Keepalived Integration for IPv6
 
-```
+```text
 # /etc/keepalived/keepalived.conf
 vrrp_instance VI_IPv6 {
     state MASTER

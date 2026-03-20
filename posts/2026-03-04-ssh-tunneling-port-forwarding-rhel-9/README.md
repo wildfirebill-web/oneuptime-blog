@@ -30,6 +30,7 @@ Local forwarding makes a remote service available on your local machine. This is
 
 ```bash
 # Forward local port 5432 to the remote PostgreSQL on db.internal:5432
+
 ssh -L 5432:db.internal:5432 admin@bastion.example.com
 ```
 

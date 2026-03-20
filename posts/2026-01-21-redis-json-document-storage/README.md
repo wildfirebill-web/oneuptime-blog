@@ -72,6 +72,7 @@ redis-cli
 
 ```bash
 # Store a complete JSON document
+
 JSON.SET user:1 $ '{"name": "John Doe", "email": "john@example.com", "age": 30, "address": {"city": "New York", "zip": "10001"}}'
 
 # Store with root path

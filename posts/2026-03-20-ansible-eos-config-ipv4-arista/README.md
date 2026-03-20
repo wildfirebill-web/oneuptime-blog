@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Arista, EOS, IPv4, Network Automation, eos_config
+Tags: Ansible, Arista, EOS, IPv4, Network Automation, Eos_config
 
 Description: Use the Ansible arista.eos.eos_config module to configure IPv4 interfaces, routing, and VLANs on Arista EOS switches with idempotent configuration management.
 
@@ -29,6 +29,7 @@ ansible_become_method=enable
 
 ```yaml
 # configure_arista_ipv4.yml
+
 ---
 - name: Configure IPv4 on Arista switches
   hosts: arista_switches

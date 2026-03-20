@@ -28,6 +28,7 @@ Here's a simple example showing how to use environment variables for endpoint co
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

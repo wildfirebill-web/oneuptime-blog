@@ -17,7 +17,7 @@ Stateful NAT maintains a **connection tracking table** that records active sessi
 
 ### How Stateful NAT Works
 
-```
+```text
 Client: 192.168.1.10:54321 → 8.8.8.8:53
 
 NAT creates entry:
@@ -55,7 +55,7 @@ Stateless NAT performs **per-packet translation** without maintaining any sessio
 
 ### How Stateless NAT Works
 
-```
+```text
 Rule: Map 203.0.113.x → 192.168.1.x (1:1 prefix mapping)
 203.0.113.10 → 192.168.1.10  (always, no state needed)
 203.0.113.20 → 192.168.1.20  (always, no state needed)
@@ -99,7 +99,7 @@ Rule: Map 203.0.113.x → 192.168.1.x (1:1 prefix mapping)
 
 RFC 6296 defines NPTv6 (Network Prefix Translation for IPv6) as a stateless 1:1 prefix mapping:
 
-```
+```text
 Internal: fd00::/48
 External: 2001:db8::/48
 

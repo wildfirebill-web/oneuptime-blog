@@ -26,6 +26,7 @@ You can also combine both approaches in a single policy by using rule priorities
 
 ```bash
 # Create a new security policy
+
 gcloud compute security-policies create ip-access-policy \
     --description="IP-based access control policy" \
     --project=my-project

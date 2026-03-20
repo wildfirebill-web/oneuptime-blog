@@ -8,7 +8,7 @@ Description: Learn how to deploy a private Docker Registry (Distribution) alongs
 
 ## Introduction
 
-Running a private Docker Registry gives your team full control over container images — no rate limits, no external dependencies, and no image leaks. When paired with Portainer, you get a complete self-hosted platform for building, storing, and deploying containers.
+Running a private Docker Registry gives your team full control over container images - no rate limits, no external dependencies, and no image leaks. When paired with Portainer, you get a complete self-hosted platform for building, storing, and deploying containers.
 
 This guide walks you through deploying Docker Distribution (the official open-source registry) and connecting it to Portainer so you can push, pull, and manage images directly from the UI.
 
@@ -23,6 +23,7 @@ This guide walks you through deploying Docker Distribution (the official open-so
 
 ```bash
 # Create directories for registry data and auth
+
 mkdir -p /opt/registry/data
 mkdir -p /opt/registry/auth
 mkdir -p /opt/registry/certs

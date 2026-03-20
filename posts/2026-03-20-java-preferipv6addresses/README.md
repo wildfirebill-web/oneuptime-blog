@@ -24,6 +24,7 @@ The `preferIPv6Addresses` values:
 
 ```bash
 # Prefer IPv6 when resolving hostnames
+
 java -Djava.net.preferIPv6Addresses=true -jar app.jar
 
 # Force IPv4 only (disables IPv6 entirely)
@@ -110,7 +111,7 @@ public class PreferenceEffect {
 In Spring Boot, configure IPv6 preference in `application.properties` and via JVM args:
 
 ```properties
-# application.properties — for server binding
+# application.properties - for server binding
 server.address=::
 server.port=8080
 ```
@@ -169,4 +170,4 @@ public class CheckEffectivePreference {
 
 ## Conclusion
 
-`java.net.preferIPv6Addresses` controls DNS resolution order in Java applications. Set it to `true` to prefer IPv6 when both A and AAAA records exist. The `system` value defers to OS-level RFC 6724 address selection, which is the most standards-compliant option. `java.net.preferIPv4Stack=true` is the nuclear option — it completely disables IPv6 at the JVM level. For containerized applications, pass these as JVM system properties via `JAVA_OPTS` or `JAVA_TOOL_OPTIONS` environment variables.
+`java.net.preferIPv6Addresses` controls DNS resolution order in Java applications. Set it to `true` to prefer IPv6 when both A and AAAA records exist. The `system` value defers to OS-level RFC 6724 address selection, which is the most standards-compliant option. `java.net.preferIPv4Stack=true` is the nuclear option - it completely disables IPv6 at the JVM level. For containerized applications, pass these as JVM system properties via `JAVA_OPTS` or `JAVA_TOOL_OPTIONS` environment variables.

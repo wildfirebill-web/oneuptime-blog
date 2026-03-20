@@ -30,6 +30,7 @@ Initialize a new Go module and install Cobra.
 
 ```bash
 # Create project directory and initialize module
+
 mkdir taskctl && cd taskctl
 go mod init github.com/yourname/taskctl
 

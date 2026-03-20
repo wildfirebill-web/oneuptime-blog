@@ -58,6 +58,7 @@ resource "azurerm_kubernetes_cluster" "policy_enabled" {
 
 ```hcl
 # Assign the Kubernetes cluster pod security baseline standards initiative
+
 resource "azurerm_resource_policy_assignment" "k8s_baseline" {
   name                 = "k8s-pod-security-baseline"
   resource_id          = azurerm_kubernetes_cluster.policy_enabled.id
@@ -195,4 +196,4 @@ kubectl get constraints
 
 ## Conclusion
 
-Azure Policy for AKS runs as OPA Gatekeeper inside the cluster—deploying it may take 15-20 minutes after enabling the add-on as Gatekeeper syncs policies. Always include system namespaces (`kube-system`, `gatekeeper-system`) in `excludedNamespaces` to avoid breaking cluster operations. Start with `effect = "audit"` to assess current compliance before switching to `effect = "deny"`—Audit mode reports violations without blocking deployments, giving teams time to remediate existing workloads. Use policy initiatives (sets of related policies) rather than individual policies to enforce comprehensive security baselines with a single assignment.
+Azure Policy for AKS runs as OPA Gatekeeper inside the cluster-deploying it may take 15-20 minutes after enabling the add-on as Gatekeeper syncs policies. Always include system namespaces (`kube-system`, `gatekeeper-system`) in `excludedNamespaces` to avoid breaking cluster operations. Start with `effect = "audit"` to assess current compliance before switching to `effect = "deny"`-Audit mode reports violations without blocking deployments, giving teams time to remediate existing workloads. Use policy initiatives (sets of related policies) rather than individual policies to enforce comprehensive security baselines with a single assignment.

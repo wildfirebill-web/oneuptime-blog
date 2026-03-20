@@ -20,6 +20,7 @@ The simplest way to start is by creating a new encrypted file.
 
 ```bash
 # Create a new encrypted variables file
+
 ansible-vault create secrets.yml
 ```
 

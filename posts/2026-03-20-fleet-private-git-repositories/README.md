@@ -31,6 +31,7 @@ Fleet supports three authentication methods:
 
 ```bash
 # Generate a new ED25519 SSH key pair for Fleet
+
 ssh-keygen -t ed25519 \
   -C "fleet-gitops@example.com" \
   -f ~/.ssh/fleet_gitops_key \

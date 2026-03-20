@@ -10,6 +10,7 @@ Description: Learn how to configure Apache as a reverse proxy forwarding request
 
 ```bash
 # Enable mod_proxy and related modules
+
 a2enmod proxy proxy_http proxy_balancer lbmethod_byrequests headers
 systemctl restart apache2
 ```
@@ -126,4 +127,4 @@ tail -f /var/log/apache2/error.log | grep proxy
 
 ## Summary
 
-Configure Apache reverse proxy to IPv6 backends with `ProxyPass / http://[2001:db8::10]:8080/` — brackets are required around IPv6 addresses. Enable `mod_proxy` and `mod_proxy_http` with `a2enmod`. Use `RequestHeader set X-Real-IP "%{REMOTE_ADDR}e"` to pass client IP to backend. For load balancing, use `<Proxy "balancer://name">` with multiple `BalancerMember http://[2001:db8::N]:PORT` entries.
+Configure Apache reverse proxy to IPv6 backends with `ProxyPass / http://[2001:db8::10]:8080/` - brackets are required around IPv6 addresses. Enable `mod_proxy` and `mod_proxy_http` with `a2enmod`. Use `RequestHeader set X-Real-IP "%{REMOTE_ADDR}e"` to pass client IP to backend. For load balancing, use `<Proxy "balancer://name">` with multiple `BalancerMember http://[2001:db8::N]:PORT` entries.

@@ -80,6 +80,7 @@ LookML is Looker's modeling language. It defines how BigQuery tables map to dime
 
 ```lookml
 # views/inventory.view.lkml
+
 # Defines the inventory data model for Looker
 view: inventory {
   sql_table_name: `project.supply_chain.mv_current_inventory` ;;

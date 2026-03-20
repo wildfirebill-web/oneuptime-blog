@@ -46,6 +46,7 @@ Configure the project properties:
 
 ```properties
 # GCP project configuration
+
 spring.cloud.gcp.project-id=my-project-id
 
 # Pub/Sub subscription configuration

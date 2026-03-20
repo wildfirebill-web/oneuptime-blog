@@ -20,6 +20,7 @@ After modifying this ConfigMap, restart the affected component:
 
 ```bash
 # Restart all components
+
 kubectl rollout restart deployment -n argocd
 
 # Or restart specific components

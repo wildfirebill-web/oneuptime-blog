@@ -36,6 +36,7 @@ Verify your cluster is accessible before proceeding.
 
 ```bash
 # Check kubectl can reach the cluster
+
 kubectl cluster-info
 # Verify you have nodes in Ready state
 kubectl get nodes
@@ -420,7 +421,7 @@ Open a terminal session inside any running container. Navigate to a Pod, click t
 
 View and edit resource YAML directly. Click any resource, then click Edit to modify its configuration.
 
-## Resource Management via Dashboard
+Resource Management via Dashboard
 
 The Dashboard enables common administrative tasks through its UI.
 

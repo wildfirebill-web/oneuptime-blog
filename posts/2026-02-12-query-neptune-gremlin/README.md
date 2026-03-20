@@ -24,6 +24,7 @@ Before running queries, you need a connection. Here's how to connect from a Pyth
 
 ```python
 # Install with: pip install gremlinpython
+
 from gremlin_python.driver.driver_remote_connection import DriverRemoteConnection
 from gremlin_python.process.anonymous_traversal import traversal
 from gremlin_python.process.graph_traversal import __

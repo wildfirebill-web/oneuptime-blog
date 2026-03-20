@@ -55,6 +55,7 @@ Your `amplify.yml` file can include branch-specific build commands. This is usef
 
 ```yaml
 # amplify.yml - Branch-specific build configuration
+
 version: 1
 frontend:
   phases:

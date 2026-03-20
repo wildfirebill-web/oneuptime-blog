@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LangChain, AI, LLM, Python, Tools, Agents, Function Calling, OpenAI, RAG
+Tags: LangChain, AI, LLM, Python, Tools, Agent, Function Calling, OpenAI, RAG
 
 Description: Learn how to implement and use LangChain tools to extend LLM capabilities with custom functions, input validation, and async support for building powerful AI agents.
 
@@ -22,6 +22,7 @@ LangChain provides a rich library of pre-built tools for common tasks. These too
 
 ```bash
 # Install LangChain and common tool dependencies
+
 pip install langchain langchain-openai langchain-community
 pip install duckduckgo-search  # For web search
 pip install wikipedia          # For Wikipedia lookups

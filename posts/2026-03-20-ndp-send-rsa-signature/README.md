@@ -12,7 +12,7 @@ The RSA Signature option (ICMPv6 NDP option Type 12, defined in RFC 3971) provid
 
 ## RSA Signature Option Format
 
-```
+```text
 RSA Signature Option (Type 12) Wire Format:
 
  0                   1                   2                   3
@@ -48,7 +48,7 @@ Fields:
 
 The RSA signature covers specific fields of the NDP message to prevent tampering.
 
-```
+```text
 Signed Data for RSA Signature Computation (RFC 3971 Section 5.2):
 
 signed_data =
@@ -72,7 +72,7 @@ Signature algorithm: RSA with SHA-1 (RSASSA-PKCS1-v1_5-SHA1)
 
 ## RSA Signature Verification Process
 
-```
+```text
 SEND RSA Signature Verification Steps (RFC 3971 Section 5.3):
 
 Step 1: Receive NDP message with SEND options
@@ -172,7 +172,7 @@ def verify_send_rsa_signature(
 
 The Timestamp option works with the RSA Signature to prevent replay attacks.
 
-```
+```text
 Timestamp Option (Type 13):
 
  0                   1                   2                   3
@@ -196,7 +196,7 @@ Verification:
 
 ## Nonce Option (Type 14) Format
 
-```
+```text
 Nonce Option (Type 14):
 
  0                   1                   2                   3

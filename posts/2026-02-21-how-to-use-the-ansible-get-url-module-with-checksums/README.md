@@ -20,6 +20,7 @@ The `checksum` parameter accepts a hash algorithm prefix followed by the expecte
 
 ```yaml
 # Download kubectl with SHA256 checksum verification
+
 - name: Download kubectl with checksum
   ansible.builtin.get_url:
     url: "https://dl.k8s.io/release/v1.29.1/bin/linux/amd64/kubectl"

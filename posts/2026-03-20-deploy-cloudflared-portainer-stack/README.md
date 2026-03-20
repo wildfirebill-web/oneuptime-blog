@@ -1,8 +1,8 @@
-# How to Deploy cloudflared as a Portainer Stack
+# How to Deploy cloudflared as a Portainer Stack - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Cloudflare, cloudflared, Docker, Networking, Security
+Tags: Portainer, Cloudflare, Cloudflared, Docker, Networking, Security
 
 Description: Learn how to deploy the Cloudflare tunnel daemon (cloudflared) as a Portainer stack for secure, no-inbound-port service exposure.
 
@@ -62,7 +62,7 @@ Set `TUNNEL_TOKEN` in the Portainer stack **Environment variables** section.
 ## Verify Tunnel Status
 
 In the Portainer container logs:
-```
+```text
 2024-01-01T12:00:00Z INF Starting tunnel tunnelID=abc123...
 2024-01-01T12:00:01Z INF Connection registered connIndex=0 ip=198.41.192.7
 ```
@@ -89,6 +89,7 @@ All route through the single cloudflared container.
 
 ```yaml
 # Change image tag to update
+
 image: cloudflare/cloudflared:2024.1.0
 ```
 

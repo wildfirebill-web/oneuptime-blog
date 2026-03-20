@@ -1,4 +1,4 @@
-# How to Configure IPv6 on Netgear Home Routers
+# How to Configure IPv6 on Netgear Home Routers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,16 +12,16 @@ IPv6 is supported on Nighthawk (R7000, R8000, RAX series) and Orbi mesh systems.
 
 ## GUI Configuration (Nighthawk)
 
-```
+```text
 Path: Advanced → Advanced Setup → IPv6
 
 Internet Connection Type:
-  Auto Detect (let router choose — recommended)
+  Auto Detect (let router choose - recommended)
   or
-  DHCPv6        — for most ISPs with DHCPv6-PD
-  Auto Config   — for SLAAC-only ISPs
-  6to4 Tunnel   — legacy tunnel (avoid)
-  Fixed         — static IPv6 address
+  DHCPv6        - for most ISPs with DHCPv6-PD
+  Auto Config   - for SLAAC-only ISPs
+  6to4 Tunnel   - legacy tunnel (avoid)
+  Fixed         - static IPv6 address
 
 DHCPv6 Settings:
   Prefix delegation: Enable
@@ -29,8 +29,8 @@ DHCPv6 Settings:
   DHCP Domain Name: (optional)
 
 LAN:
-  IPv6 Mode: Auto      — router assigns prefix automatically
-  Enable RDNSS: Yes    — send DNS servers via RA
+  IPv6 Mode: Auto      - router assigns prefix automatically
+  Enable RDNSS: Yes    - send DNS servers via RA
   IPv6 DNS Server 1: 2606:4700:4700::1111
   IPv6 DNS Server 2: 2001:4860:4860::8888
 ```
@@ -39,7 +39,7 @@ LAN:
 
 Orbi systems use the same Netgear web GUI via `orbilogin.com`.
 
-```
+```text
 Path: Advanced → Advanced Setup → IPv6
 
 Orbi-specific notes:
@@ -61,6 +61,7 @@ Use the built-in diagnostics or telnet/SSH where available.
 # Netgear routers: Advanced → Administration → Diagnostics
 
 # Ping test to IPv6 address from router GUI:
+
 # Target: 2606:4700:4700::1111
 # Result should show 0% packet loss
 
@@ -97,7 +98,7 @@ cat /tmp/radvd.conf | head -30
 # Path: Advanced → Setup → WAN Setup → MTU Size
 
 # Issue 4: IPv6 drops after a few hours (lease renewal)
-# Known issue on R7000 — update to latest firmware
+# Known issue on R7000 - update to latest firmware
 # Or set shorter DHCP renewal interval
 
 # Check status after changes
@@ -127,4 +128,4 @@ curl -6 -s https://ifconfig.co
 
 ## Conclusion
 
-Netgear Nighthawk and Orbi routers configure IPv6 under Advanced → Advanced Setup → IPv6. Select DHCPv6 as the connection type for most ISPs; Auto Detect also works for ISPs that use RA announcements. Enable prefix delegation and set up IPv6 LAN advertisement so that LAN devices receive /64 prefixes via SLAAC. Configure Cloudflare or Google IPv6 DNS servers for reliability. Keep the IPv6 firewall enabled — Netgear blocks all inbound by default, which is the correct stance for a home router. If the router acquires IPv6 but LAN devices do not, verify that RA advertisement to LAN is enabled and recheck firewall rules blocking ICMPv6.
+Netgear Nighthawk and Orbi routers configure IPv6 under Advanced → Advanced Setup → IPv6. Select DHCPv6 as the connection type for most ISPs; Auto Detect also works for ISPs that use RA announcements. Enable prefix delegation and set up IPv6 LAN advertisement so that LAN devices receive /64 prefixes via SLAAC. Configure Cloudflare or Google IPv6 DNS servers for reliability. Keep the IPv6 firewall enabled - Netgear blocks all inbound by default, which is the correct stance for a home router. If the router acquires IPv6 but LAN devices do not, verify that RA advertisement to LAN is enabled and recheck firewall rules blocking ICMPv6.

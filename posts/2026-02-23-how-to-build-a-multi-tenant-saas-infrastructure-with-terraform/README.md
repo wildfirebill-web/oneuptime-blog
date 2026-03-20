@@ -32,6 +32,7 @@ Start with a table that tracks all tenant configurations.
 
 ```hcl
 # Tenant metadata table
+
 resource "aws_dynamodb_table" "tenants" {
   name         = "tenant-metadata"
   billing_mode = "PAY_PER_REQUEST"

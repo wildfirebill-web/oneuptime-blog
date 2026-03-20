@@ -34,6 +34,7 @@ Set up the required services:
 
 ```bash
 # Enable all the APIs we need
+
 gcloud services enable \
     cloudfunctions.googleapis.com \
     aiplatform.googleapis.com \

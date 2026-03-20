@@ -81,6 +81,7 @@ Enable seal wrap when mounting secrets engines:
 
 ```bash
 # Enable KV v2 with seal wrap
+
 vault secrets enable -path=sensitive-data kv-v2
 
 # Enable seal wrap for specific paths

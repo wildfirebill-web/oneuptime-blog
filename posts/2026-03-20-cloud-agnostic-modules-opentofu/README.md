@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Modules, Multi-Cloud, Cloud-Agnostic, Infrastructure as Code, Reusability
 
-Description: Learn how to design OpenTofu modules that work across AWS, Azure, and GCP — using abstraction patterns that hide provider-specific details behind a consistent interface.
+Description: Learn how to design OpenTofu modules that work across AWS, Azure, and GCP - using abstraction patterns that hide provider-specific details behind a consistent interface.
 
 ## Introduction
 
-Cloud-agnostic modules expose a provider-neutral interface — inputs like `name`, `environment`, `region`, and `size` — while internal implementation handles the provider-specific details. The calling code doesn't need to know whether it's creating an EC2 instance, Azure VM, or GCP compute instance.
+Cloud-agnostic modules expose a provider-neutral interface - inputs like `name`, `environment`, `region`, and `size` - while internal implementation handles the provider-specific details. The calling code doesn't need to know whether it's creating an EC2 instance, Azure VM, or GCP compute instance.
 
 ## Pattern: Provider Selection via Variable
 
 ```hcl
 # modules/object-storage/variables.tf
+
 variable "cloud_provider" {
   type        = string
   description = "Cloud provider: aws, azure, or gcp"
@@ -87,7 +88,7 @@ output "bucket_arn_or_id" {
 
 A cleaner approach: create cloud-specific modules that share the same variable and output interface:
 
-```
+```text
 modules/
   object-storage-aws/
     main.tf      # aws_s3_bucket
@@ -165,4 +166,4 @@ locals {
 
 ## Conclusion
 
-Cloud-agnostic modules hide provider complexity behind a consistent variable interface. Use `count = var.cloud_provider == "aws" ? 1 : 0` for simple single-module patterns, or separate per-cloud module directories for cleaner separation. The key is a shared variable contract — same inputs, same outputs, different internal implementations. T-shirt sizing (small/medium/large) abstracts instance types, and shared tag/label conventions map to each provider's tagging system.
+Cloud-agnostic modules hide provider complexity behind a consistent variable interface. Use `count = var.cloud_provider == "aws" ? 1 : 0` for simple single-module patterns, or separate per-cloud module directories for cleaner separation. The key is a shared variable contract - same inputs, same outputs, different internal implementations. T-shirt sizing (small/medium/large) abstracts instance types, and shared tag/label conventions map to each provider's tagging system.

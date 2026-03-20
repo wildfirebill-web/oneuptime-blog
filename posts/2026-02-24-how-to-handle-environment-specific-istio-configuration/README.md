@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Configuration, Environment, Kubernetes, GitOps
+Tags: Istio, Configuration, Environments, Kubernetes, GitOps
 
 Description: Strategies for managing Istio configuration differences across development, staging, and production environments without duplicating YAML.
 
@@ -38,6 +38,7 @@ Kustomize is the simplest approach when differences are small:
 
 ```yaml
 # base/virtual-service.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

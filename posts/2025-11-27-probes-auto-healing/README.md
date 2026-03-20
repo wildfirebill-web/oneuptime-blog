@@ -94,6 +94,7 @@ Apply the deployment to your cluster. This command creates or updates the Deploy
 
 ```bash
 # Deploy the web application with health probes configured
+
 kubectl apply -f deployments/web-with-probes.yaml
 ```
 

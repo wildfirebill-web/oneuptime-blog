@@ -26,6 +26,7 @@ DHCP lease time affects two competing concerns:
 
 ```bash
 # Count current active DHCP leases
+
 cat /var/lib/misc/dnsmasq.leases | wc -l
 
 # Check how many unique devices have connected recently
@@ -138,4 +139,4 @@ cat /var/lib/dhcp/dhcpd.leases | grep "^lease " | wc -l
 
 ## Conclusion
 
-Optimize WiFi DHCP lease times based on client churn: use 30-60 minute leases for high-churn guest networks (cafes, events), 8-24 hour leases for office/home environments, and permanent reservations for servers and printers. The key metric is ensuring your DHCP pool has headroom — never exceed 80% utilization during peak hours. Monitor with `wc -l /var/lib/misc/dnsmasq.leases` and adjust the pool size or lease time as needed.
+Optimize WiFi DHCP lease times based on client churn: use 30-60 minute leases for high-churn guest networks (cafes, events), 8-24 hour leases for office/home environments, and permanent reservations for servers and printers. The key metric is ensuring your DHCP pool has headroom - never exceed 80% utilization during peak hours. Monitor with `wc -l /var/lib/misc/dnsmasq.leases` and adjust the pool size or lease time as needed.

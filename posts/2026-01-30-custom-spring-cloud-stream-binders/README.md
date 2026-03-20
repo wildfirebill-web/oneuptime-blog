@@ -1335,6 +1335,7 @@ Create `META-INF/spring.factories` in your resources folder for Spring Boot 2.x 
 
 ```properties
 # src/main/resources/META-INF/spring.factories
+
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.example.binder.config.CustomMessagingBinderAutoConfiguration
 ```

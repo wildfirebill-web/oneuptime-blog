@@ -33,6 +33,7 @@ hping3 sends custom packets to a target host and measures the round-trip time (R
 
 ```bash
 # Basic ICMP ping (equivalent to regular ping)
+
 sudo hping3 -1 192.168.1.1
 ```
 

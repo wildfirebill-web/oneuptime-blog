@@ -28,6 +28,7 @@ When a `.env` file contains secrets, restrict who can read it:
 
 ```bash
 # Create a .env file
+
 touch .env
 
 # Set permissions: owner read/write only (600)

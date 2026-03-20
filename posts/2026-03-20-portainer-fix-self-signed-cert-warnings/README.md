@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, self-signed, certificate, browser-warning
+Tags: Portainer, SSL, TLS, Self-Signed, Certificates, Browser-warning
 
 Description: A guide to eliminating browser self-signed certificate warnings when accessing Portainer, with options ranging from proper CA-signed certs to trusting an internal CA.
 
@@ -21,6 +21,7 @@ The simplest fix for internet-accessible Portainer:
 
 ```bash
 # Obtain Let's Encrypt certificate
+
 sudo certbot certonly --standalone \
   -d portainer.example.com \
   --agree-tos -m admin@example.com --non-interactive

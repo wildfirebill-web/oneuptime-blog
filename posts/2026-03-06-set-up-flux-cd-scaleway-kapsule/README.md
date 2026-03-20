@@ -24,6 +24,7 @@ Scaleway Kapsule is a managed Kubernetes service from the European cloud provide
 
 ```bash
 # Create a Kubernetes cluster on Scaleway Kapsule
+
 scw k8s cluster create \
   name=flux-cluster \
   version=1.29.1 \

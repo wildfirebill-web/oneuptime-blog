@@ -18,6 +18,7 @@ ArgoCD templates inherit all standard Go `text/template` functions plus addition
 
 ```yaml
 # Basic string manipulation
+
 {{ .app.metadata.name | upper }}           # MYAPP
 {{ .app.metadata.name | lower }}           # myapp
 {{ .app.metadata.name | title }}           # Myapp

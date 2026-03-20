@@ -18,6 +18,7 @@ There are three pieces to this: the Lambda function, the S3 bucket notification,
 
 ```hcl
 # Lambda function that processes S3 events
+
 resource "aws_lambda_function" "processor" {
   function_name = "s3-file-processor"
   handler       = "index.handler"

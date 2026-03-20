@@ -30,6 +30,7 @@ The bucket name must match your domain name exactly. This is a hard requirement 
 
 ```bash
 # Create the primary bucket matching your domain name
+
 aws s3 mb s3://example.com --region us-east-1
 ```
 

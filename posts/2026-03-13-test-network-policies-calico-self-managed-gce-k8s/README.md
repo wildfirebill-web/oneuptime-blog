@@ -25,6 +25,7 @@ Testing network policies on self-managed GCE Kubernetes validates the complete C
 
 ```bash
 # Check GCE instance networking
+
 gcloud compute instances list --format="table(name,networkInterfaces[0].networkIP,zone)"
 kubectl get nodes -o wide
 calicoctl node status

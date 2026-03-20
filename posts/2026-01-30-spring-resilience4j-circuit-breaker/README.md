@@ -88,6 +88,7 @@ Configure circuit breakers in your application.yml file. This configuration crea
 
 ```yaml
 # application.yml
+
 resilience4j:
   circuitbreaker:
     instances:

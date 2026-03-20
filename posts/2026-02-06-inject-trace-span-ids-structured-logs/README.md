@@ -33,6 +33,7 @@ The OpenTelemetry Python SDK provides a log handler that automatically injects t
 
 ```python
 # app.py
+
 import logging
 import json
 from opentelemetry import trace

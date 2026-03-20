@@ -14,6 +14,7 @@ Dual-stack networking allows a host to communicate over both IPv4 and IPv6 simul
 
 ```bash
 # View current interface addresses (both IPv4 and IPv6)
+
 ip address show
 
 # Check IPv4 addresses
@@ -112,4 +113,4 @@ curl -v -6 https://example.com   # Force IPv6
 
 ## Conclusion
 
-Dual-stack networking is enabled by adding both IPv4 (`inet`) and IPv6 (`inet6`) address families to the same interface. Use netplan, `interfaces`, or `NetworkManager` depending on your distribution. Verify connectivity with `ping -4` and `ping -6`. Most modern applications automatically use both protocols and prefer IPv6 when available. The dual-stack approach requires no special transition mechanisms—both protocols coexist natively.
+Dual-stack networking is enabled by adding both IPv4 (`inet`) and IPv6 (`inet6`) address families to the same interface. Use netplan, `interfaces`, or `NetworkManager` depending on your distribution. Verify connectivity with `ping -4` and `ping -6`. Most modern applications automatically use both protocols and prefer IPv6 when available. The dual-stack approach requires no special transition mechanisms-both protocols coexist natively.

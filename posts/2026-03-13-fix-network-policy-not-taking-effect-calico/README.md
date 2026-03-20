@@ -36,6 +36,7 @@ kubectl get networkpolicy <policy-name> -n <namespace> -o yaml | grep -A 5 "podS
 
 ```bash
 # Check current pod labels
+
 kubectl get pod <pod-name> -n <namespace> --show-labels
 
 # Fix the NetworkPolicy selector to match actual labels

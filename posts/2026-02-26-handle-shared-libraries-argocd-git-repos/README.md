@@ -28,6 +28,7 @@ The simplest approach is Kustomize remote bases. You point directly at a remote 
 
 ```yaml
 # service-config/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

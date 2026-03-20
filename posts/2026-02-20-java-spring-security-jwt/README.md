@@ -340,6 +340,7 @@ graph TD
 
 ```yaml
 # application.yml - JWT configuration
+
 app:
   jwt:
     # Base64-encoded secret key (use a strong random key in production)

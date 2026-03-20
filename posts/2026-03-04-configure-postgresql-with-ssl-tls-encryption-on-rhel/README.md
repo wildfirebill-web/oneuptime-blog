@@ -14,6 +14,7 @@ By default, PostgreSQL connections are unencrypted. This means passwords and que
 
 ```bash
 # Create a directory for certificates
+
 sudo mkdir -p /var/lib/pgsql/certs
 cd /var/lib/pgsql/certs
 

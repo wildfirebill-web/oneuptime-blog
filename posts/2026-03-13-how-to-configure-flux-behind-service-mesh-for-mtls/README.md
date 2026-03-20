@@ -358,6 +358,7 @@ Patch the deployment:
 
 ```bash
 # For Istio
+
 kubectl patch deployment source-controller -n flux-system -p '{"spec":{"template":{"metadata":{"annotations":{"proxy.istio.io/config":"{\"holdApplicationUntilProxyStarts\": true}"}}}}}'
 
 # For Linkerd

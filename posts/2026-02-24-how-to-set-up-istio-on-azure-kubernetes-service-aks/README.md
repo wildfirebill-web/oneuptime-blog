@@ -82,6 +82,7 @@ Install with an AKS-friendly configuration:
 
 ```yaml
 # istio-aks.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

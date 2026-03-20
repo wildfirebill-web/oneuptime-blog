@@ -36,6 +36,7 @@ Start by granting CONNECT access to the databases each user needs.
 
 ```yaml
 # playbooks/manage-pg-permissions.yml
+
 # Grant database-level permissions to PostgreSQL users
 ---
 - name: Manage PostgreSQL permissions

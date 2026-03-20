@@ -64,6 +64,7 @@ You can verify your cluster is ready:
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Verify kubectl can access the cluster

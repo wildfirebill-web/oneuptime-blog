@@ -18,6 +18,7 @@ The conflict error typically appears in the Kustomization status:
 
 ```bash
 # Check the Kustomization status
+
 kubectl get kustomization -n flux-system my-app -o yaml
 ```
 

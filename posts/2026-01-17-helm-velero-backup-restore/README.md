@@ -58,6 +58,7 @@ flowchart TB
 
 ```bash
 # Add VMware Tanzu Helm repository
+
 helm repo add vmware-tanzu https://vmware-tanzu.github.io/helm-charts
 helm repo update
 

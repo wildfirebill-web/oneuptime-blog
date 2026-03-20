@@ -45,6 +45,7 @@ BuildKit condenses output by default. Get the full, uncompressed output:
 
 ```bash
 # Build with plain progress to see all output
+
 docker build --progress=plain --no-cache -t myimage .
 ```
 

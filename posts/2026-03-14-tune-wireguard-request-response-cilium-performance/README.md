@@ -28,6 +28,7 @@ This guide covers the specific tuning steps to minimize WireGuard's impact on re
 
 ```bash
 # First measure without encryption
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set encryption.enabled=false
 kubectl rollout status ds/cilium -n kube-system

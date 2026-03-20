@@ -35,6 +35,7 @@ Create a dedicated subnet for App Service integration. This subnet must be deleg
 
 ```bash
 # Create a VNet if you do not have one
+
 az network vnet create \
   --resource-group myAppRG \
   --name myVNet \

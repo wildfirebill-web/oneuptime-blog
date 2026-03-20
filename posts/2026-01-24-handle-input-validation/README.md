@@ -422,6 +422,7 @@ module.exports = { validate, validations };
 
 ```python
 # validation.py
+
 # Input validation with Pydantic
 
 from pydantic import BaseModel, Field, EmailStr, validator, root_validator

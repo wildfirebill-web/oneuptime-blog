@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, proxy_bind, IPv4, Source IP, Outbound, Networking
+Tags: Nginx, Proxy_bind, IPv4, Source IP, Outbound, Networking
 
 Description: Use Nginx proxy_bind to control the source IPv4 address used when making outbound connections to upstream servers, enabling multi-homed routing and policy-based forwarding.
 
 ## Introduction
 
-By default, Nginx uses the server's primary IPv4 address when connecting to upstream backends. The `proxy_bind` directive lets you select a specific source IP for outbound proxy connections—useful for multi-homed servers, policy-based routing, or backends that allowlist specific source IPs.
+By default, Nginx uses the server's primary IPv4 address when connecting to upstream backends. The `proxy_bind` directive lets you select a specific source IP for outbound proxy connections-useful for multi-homed servers, policy-based routing, or backends that allowlist specific source IPs.
 
 ## Basic proxy_bind Configuration
 
@@ -96,6 +96,7 @@ Transparent proxy requires kernel configuration:
 
 ```bash
 # Allow Nginx to bind to non-local addresses
+
 echo 1 > /proc/sys/net/ipv4/ip_nonlocal_bind
 
 # Redirect inbound traffic to Nginx (transparent intercept)

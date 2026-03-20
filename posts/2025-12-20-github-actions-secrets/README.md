@@ -45,6 +45,7 @@ Or use the GitHub CLI:
 
 ```bash
 # Set a secret from terminal input
+
 gh secret set API_KEY
 
 # Set from a file

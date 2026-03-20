@@ -26,6 +26,7 @@ Start by adjusting kubelet configuration to enable overcommitment through system
 
 ```yaml
 # kubelet-config-overcommit.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

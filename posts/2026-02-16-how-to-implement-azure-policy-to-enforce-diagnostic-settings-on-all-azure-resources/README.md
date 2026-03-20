@@ -41,6 +41,7 @@ First, let us find the available built-in policies for diagnostic settings:
 
 ```bash
 # List built-in diagnostic settings policies
+
 az policy definition list \
   --query "[?contains(displayName,'diagnostic') && policyType=='BuiltIn' && contains(metadata.category,'Monitoring')].{name:name, displayName:displayName}" \
   -o table | head -30

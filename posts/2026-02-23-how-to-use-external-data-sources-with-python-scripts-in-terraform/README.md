@@ -20,6 +20,7 @@ The external data source protocol is simple. Terraform passes a JSON object on s
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

@@ -16,6 +16,7 @@ By default, Python stores instance attributes in a dictionary called `__dict__`.
 
 ```python
 # Standard class with __dict__
+
 class Point:
     def __init__(self, x, y):
         self.x = x

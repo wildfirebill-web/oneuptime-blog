@@ -1,4 +1,4 @@
-# How to Fix 502 Bad Gateway Errors with Cloudflare Tunnel and Portainer
+# How to Resolve 502 Bad Gateway with Cloudflare Tunnel and Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,7 +16,7 @@ Cloudflare Tunnel provides a secure way to expose Portainer (and other services)
 
 When using Cloudflare Tunnel with Portainer:
 
-```
+```text
 Browser → Cloudflare Edge → cloudflared (tunnel connector) → Portainer container
 ```
 
@@ -28,6 +28,7 @@ A 502 means cloudflared successfully connected to Cloudflare, but failed to reac
 
 ```bash
 # Check if Portainer container is running
+
 docker ps | grep portainer
 
 # Check Portainer logs
@@ -56,7 +57,7 @@ ingress:
   - hostname: portainer.example.com
     service: https://localhost:9443
     originRequest:
-      noTLSVerify: true  # Required — Portainer uses self-signed cert
+      noTLSVerify: true  # Required - Portainer uses self-signed cert
   - service: http_status:404
 ```
 
@@ -71,7 +72,7 @@ ingress:
 
 ---
 
-## Step 3: TLS Verification — The Most Common Fix
+## Step 3: TLS Verification - The Most Common Fix
 
 Portainer uses a self-signed certificate on port 9443. Cloudflare will refuse to connect unless you disable TLS verification:
 
@@ -210,9 +211,9 @@ ingress:
 
 1. **Always set `noTLSVerify: true`** when targeting Portainer's HTTPS port
 2. **Use service names** (e.g., `portainer:9443`) instead of `localhost` in Docker Compose setups
-3. **Check logs first** — cloudflared logs show the exact rejection reason
+3. **Check logs first** - cloudflared logs show the exact rejection reason
 4. **Use HTTP 9000** if you want to avoid TLS complications in internal-only setups
-5. **Secure with Cloudflare Access** — add authentication in front of the tunnel for production
+5. **Secure with Cloudflare Access** - add authentication in front of the tunnel for production
 
 ---
 

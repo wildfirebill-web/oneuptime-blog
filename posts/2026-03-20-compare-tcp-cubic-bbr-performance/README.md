@@ -8,12 +8,13 @@ Description: Systematically compare TCP CUBIC and BBR performance on your networ
 
 ## Introduction
 
-CUBIC and BBR take fundamentally different approaches to congestion control. CUBIC reacts to packet loss; BBR models bandwidth and RTT directly. The performance difference depends heavily on network characteristics — CUBIC can outperform BBR on lossless LAN, while BBR dramatically outperforms CUBIC on lossy or high-latency paths.
+CUBIC and BBR take fundamentally different approaches to congestion control. CUBIC reacts to packet loss; BBR models bandwidth and RTT directly. The performance difference depends heavily on network characteristics - CUBIC can outperform BBR on lossless LAN, while BBR dramatically outperforms CUBIC on lossy or high-latency paths.
 
 ## Setting Up the Comparison
 
 ```bash
 # Install iperf3 on both server and client
+
 apt install iperf3
 
 # Server side
@@ -70,7 +71,7 @@ cat $RESULTS_FILE
 
 ## Typical Results
 
-```
+```text
 Clean LAN (< 5ms RTT, 0% loss):
   CUBIC: 950 Mbps  retrans=2
   BBR:   940 Mbps  retrans=0
@@ -108,4 +109,4 @@ iperf3 -c $SERVER -t 30
 
 ## Conclusion
 
-BBR consistently outperforms CUBIC on any path with measurable latency or packet loss. For pure LAN with sub-millisecond RTT and zero loss, CUBIC is adequate. The recommendation for internet-facing services is BBR with `net.core.default_qdisc=fq`. Run the benchmark script in your own environment to confirm results — network characteristics vary significantly and the performance winner depends on your actual path.
+BBR consistently outperforms CUBIC on any path with measurable latency or packet loss. For pure LAN with sub-millisecond RTT and zero loss, CUBIC is adequate. The recommendation for internet-facing services is BBR with `net.core.default_qdisc=fq`. Run the benchmark script in your own environment to confirm results - network characteristics vary significantly and the performance winner depends on your actual path.

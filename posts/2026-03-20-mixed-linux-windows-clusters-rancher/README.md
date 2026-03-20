@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Mixed Clusters, Windows, Linux, Kubernetes, Node Selector
+Tags: Rancher, Mixed Cluster, Windows, Linux, Kubernetes, Node Selectors
 
 Description: Configure and manage mixed Linux and Windows Kubernetes clusters in Rancher with proper workload scheduling, resource organization, and OS-aware configurations.
 
@@ -22,6 +22,7 @@ Kubernetes automatically labels nodes with `kubernetes.io/os`:
 
 ```bash
 # Verify OS labels
+
 kubectl get nodes -L kubernetes.io/os,kubernetes.io/arch
 
 # Add custom labels for Windows version targeting

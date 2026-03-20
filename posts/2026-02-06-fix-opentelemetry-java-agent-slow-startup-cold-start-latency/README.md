@@ -49,6 +49,7 @@ Before you start optimizing, measure the baseline. Add these JVM flags to quanti
 
 ```bash
 # Run your application with class loading statistics enabled
+
 # -verbose:class prints each class as it loads
 # -Xlog:class+load logs class loading with timestamps
 java -verbose:class \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Rancher, Kubernetes, Helm, StatefulSet, Caching, Databases, SUSE Rancher
+Tags: Redis, Rancher, Kubernetes, Helm, StatefulSets, Caching, Database, SUSE Rancher
 
 Description: Learn how to deploy a production-ready Redis cluster on a Rancher-managed Kubernetes cluster using the Bitnami Helm chart with persistent storage, authentication, and Sentinel for high availability.
 
@@ -25,6 +25,7 @@ helm repo update
 
 ```yaml
 # redis-values.yaml
+
 architecture: replication   # Deploy with 1 master + 2 replicas
 
 auth:
@@ -195,7 +196,7 @@ rate(redis_keyspace_hits_total[5m]) /
 ## Persistence Configuration for Caching vs. Data Store
 
 ```yaml
-# For pure caching (no persistence needed — faster, lower storage cost)
+# For pure caching (no persistence needed - faster, lower storage cost)
 master:
   persistence:
     enabled: false
@@ -214,6 +215,6 @@ master:
 
 ## Best Practices
 
-- Enable Redis Sentinel (`sentinel.enabled: true`) for production deployments — it provides automatic failover without requiring application-level cluster awareness.
+- Enable Redis Sentinel (`sentinel.enabled: true`) for production deployments - it provides automatic failover without requiring application-level cluster awareness.
 - Use a dedicated namespace for Redis and restrict network access using NetworkPolicy.
 - For caching workloads, disable persistence to improve write performance and reduce storage costs; for session storage or queues, enable AOF persistence.

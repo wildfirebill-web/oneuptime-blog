@@ -20,6 +20,7 @@ For failover scenarios, this can be reduced significantly.
 
 ```bash
 # Reduce NDP reachability timeout for faster failure detection
+
 # Default: 30000ms (30 seconds)
 sysctl -w net.ipv6.neigh.eth0.base_reachable_time_ms=10000  # 10 seconds
 
@@ -47,7 +48,7 @@ sysctl -p /etc/sysctl.d/99-ndp-failover.conf
 
 ## VRRP with IPv6 Fast Failover
 
-```
+```text
 # /etc/keepalived/keepalived.conf
 vrrp_instance VI_IPv6 {
     state MASTER
@@ -76,7 +77,7 @@ VIP="2001:db8::vip"
 
 case ${STATE} in
     MASTER)
-        echo "Became MASTER — sending unsolicited NAs"
+        echo "Became MASTER - sending unsolicited NAs"
         # Send 5 unsolicited NAs with 100ms intervals
         for i in 1 2 3 4 5; do
             ndsend ${VIP} ${IFACE} 2>/dev/null || \
@@ -116,12 +117,12 @@ watch -n 0.5 "ip -6 neigh show dev eth0"
 
 ## Router Advertisement Frequency Tuning
 
-```
-# /etc/radvd.conf — Faster RA for quicker gateway discovery
+```text
+# /etc/radvd.conf - Faster RA for quicker gateway discovery
 interface eth0 {
     AdvSendAdvert on;
-    MaxRtrAdvInterval 10;     # Default 200s — reduce to 10s
-    MinRtrAdvInterval 3;      # Default 0.33*Max — set to 3s
+    MaxRtrAdvInterval 10;     # Default 200s - reduce to 10s
+    MinRtrAdvInterval 3;      # Default 0.33*Max - set to 3s
     AdvRouterLifetime 30;     # How long to trust this router
 
     prefix 2001:db8:1::/64 {
@@ -137,7 +138,7 @@ interface eth0 {
 
 ```bash
 #!/bin/bash
-# measure-failover.sh — Time IPv6 failover detection
+# measure-failover.sh - Time IPv6 failover detection
 
 TARGET="2001:db8::vip"
 INTERVAL=0.1

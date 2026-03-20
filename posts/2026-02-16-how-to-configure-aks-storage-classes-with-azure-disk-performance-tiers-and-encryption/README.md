@@ -30,6 +30,7 @@ AKS comes with these default storage classes.
 
 ```bash
 # List default storage classes
+
 kubectl get storageclass
 ```
 

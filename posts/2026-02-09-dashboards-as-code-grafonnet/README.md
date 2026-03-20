@@ -31,6 +31,7 @@ Install the Jsonnet compiler and Grafonnet library:
 
 ```bash
 # Install jsonnet
+
 brew install jsonnet  # macOS
 # Or download from https://github.com/google/jsonnet/releases
 

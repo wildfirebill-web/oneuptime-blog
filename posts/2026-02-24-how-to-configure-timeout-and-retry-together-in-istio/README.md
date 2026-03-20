@@ -111,6 +111,7 @@ This one happens more often than you would think:
 
 ```yaml
 # BAD - per-try timeout exceeds route timeout
+
 timeout: 3s
 retries:
   attempts: 3

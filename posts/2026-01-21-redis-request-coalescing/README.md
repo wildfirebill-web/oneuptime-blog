@@ -211,6 +211,7 @@ class SingleFlightCache:
 
 
 # Usage
+
 client = redis.Redis(decode_responses=True)
 cache = SingleFlightCache(client, default_ttl=60)
 

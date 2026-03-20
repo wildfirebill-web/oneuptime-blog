@@ -59,6 +59,7 @@ Test it:
 
 ```bash
 # This goes to stable
+
 curl http://my-app.production:80/api/resource
 
 # This goes to canary

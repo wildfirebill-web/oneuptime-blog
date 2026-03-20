@@ -54,6 +54,7 @@ Configure your connection pool to validate connections before using them:
 // application.properties for HikariCP (Spring Boot default)
 
 # Validate connections before giving them to the application
+
 spring.datasource.hikari.connection-test-query=SELECT 1
 spring.datasource.hikari.validation-timeout=3000
 

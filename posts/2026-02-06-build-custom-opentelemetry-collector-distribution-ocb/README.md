@@ -33,6 +33,7 @@ The OpenTelemetry Collector Builder is a standalone tool that generates Collecto
 
 ```bash
 # Install OCB using Go
+
 go install go.opentelemetry.io/collector/cmd/builder@latest
 
 # Verify installation

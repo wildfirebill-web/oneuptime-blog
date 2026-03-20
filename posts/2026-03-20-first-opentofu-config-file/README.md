@@ -25,6 +25,7 @@ Create a new directory and a file called `main.tf`:
 # main.tf - Your first OpenTofu configuration
 
 # The terraform block configures OpenTofu behavior
+
 terraform {
   # Specify minimum OpenTofu version required
   required_version = ">= 1.6.0"

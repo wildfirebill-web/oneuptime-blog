@@ -41,6 +41,7 @@ Azure Storage supports multiple network security layers:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     azurerm = {

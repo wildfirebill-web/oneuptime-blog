@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, netip, net/netip, Networking, Programming
+Tags: Go, IPv6, Netip, Net/netip, Networking, Programming
 
 Description: Use Go's net/netip package (introduced in Go 1.18) for efficient, immutable IPv6 address and prefix operations.
 

@@ -16,6 +16,7 @@ Fresh Calico eBPF installations have their own set of common mistakes that diffe
 
 ```bash
 # WRONG - installing operator before BPF filesystem is mounted
+
 kubectl create -f tigera-operator.yaml  # Too early!
 # calico-node starts and can't load BPF programs, falls back to iptables
 

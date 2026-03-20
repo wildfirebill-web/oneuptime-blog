@@ -45,6 +45,7 @@ The simplest queue configuration:
 
 ```hcl
 # Basic Cloud Tasks queue with default settings
+
 resource "google_cloud_tasks_queue" "basic" {
   name     = "basic-queue"
   location = var.region

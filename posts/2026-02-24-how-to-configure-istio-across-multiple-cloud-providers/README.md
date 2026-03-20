@@ -38,6 +38,7 @@ Create clusters on each cloud provider:
 
 ```bash
 # AWS EKS
+
 eksctl create cluster \
   --name mesh-aws \
   --region us-east-1 \

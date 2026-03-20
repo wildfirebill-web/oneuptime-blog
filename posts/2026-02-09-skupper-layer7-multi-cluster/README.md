@@ -28,6 +28,7 @@ Install the skupper command-line tool:
 
 ```bash
 # Linux
+
 curl -fL https://github.com/skupperproject/skupper/releases/download/1.5.0/skupper-cli-1.5.0-linux-amd64.tgz | tar -xzf -
 sudo install skupper /usr/local/bin/
 

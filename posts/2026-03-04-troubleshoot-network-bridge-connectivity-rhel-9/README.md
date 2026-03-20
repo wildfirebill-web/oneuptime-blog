@@ -31,6 +31,7 @@ graph TD
 
 ```bash
 # Check if the bridge interface exists and is up
+
 ip link show br0
 
 # Check if the bridge connection is active

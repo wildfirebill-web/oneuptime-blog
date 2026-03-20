@@ -36,6 +36,7 @@ resource "aws_instance" "web" {
 Plan output:
 ```text
 # aws_instance.web will be updated in-place
+
 ~ resource "aws_instance" "web" {
       id            = "i-0abc123"
     ~ tags          = {

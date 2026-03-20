@@ -31,6 +31,7 @@ Create separate IAM policies for read-only and read-write access:
 
 ```hcl
 # Read-only policy for Terraform state (for plan operations)
+
 resource "aws_iam_policy" "terraform_state_read" {
   name        = "terraform-state-read"
   description = "Read-only access to Terraform state in S3"

@@ -31,6 +31,7 @@ Cognito lets you export user data (but not password hashes). Export all user pro
 
 ```bash
 # List users in the Cognito User Pool
+
 aws cognito-idp list-users \
   --user-pool-id us-east-1_abc123 \
   --limit 60 \

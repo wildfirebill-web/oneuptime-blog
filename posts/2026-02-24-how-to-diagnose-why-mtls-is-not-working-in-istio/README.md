@@ -26,6 +26,7 @@ Start by checking the overall mTLS status of your mesh:
 
 ```bash
 # Check mTLS status for a specific service
+
 istioctl authn tls-check <source-pod>.<namespace> <destination-service>
 
 # Example

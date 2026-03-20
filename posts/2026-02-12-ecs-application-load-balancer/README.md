@@ -33,6 +33,7 @@ You need separate security groups for the ALB and the ECS tasks.
 
 ```bash
 # Security group for the ALB - allows traffic from the internet
+
 aws ec2 create-security-group \
   --group-name alb-sg \
   --description "ALB security group" \

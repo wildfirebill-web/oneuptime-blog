@@ -401,6 +401,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
 
 # Create custom ID generator
+
 id_generator = TimestampIdGenerator()
 
 # Create tracer provider with custom generator

@@ -32,6 +32,7 @@ Make sure your origin is accessible and serving content correctly before setting
 
 ```bash
 # Test that your origin responds correctly
+
 curl -I https://origin.example.com/
 curl -I https://origin.example.com/api/health
 ```

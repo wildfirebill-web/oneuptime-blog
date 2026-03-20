@@ -1,4 +1,4 @@
-# How to Configure GitHub OAuth with Portainer
+# How to Configure GitHub OAuth with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,7 +22,7 @@ GitHub OAuth is a natural choice for development teams already using GitHub for 
 2. Click **New OAuth App**
 3. Fill in:
 
-```
+```text
 Application name:     Portainer
 Homepage URL:         https://portainer.example.com
 Authorization callback URL: https://portainer.example.com/
@@ -40,7 +40,7 @@ For GitHub Organizations:
 
 GitHub uses a non-standard OAuth flow (not OIDC). The endpoints are:
 
-```
+```text
 Authorization URL: https://github.com/login/oauth/authorize
 Access Token URL:  https://github.com/login/oauth/access_token
 Resource URL:      https://api.github.com/user
@@ -50,7 +50,7 @@ Resource URL:      https://api.github.com/user
 
 In Settings → Authentication → OAuth → GitHub:
 
-```
+```text
 Client ID:         your-github-client-id
 Client Secret:     your-github-client-secret
 Authorization URL: https://github.com/login/oauth/authorize
@@ -97,7 +97,7 @@ curl -X PUT \
 
 To restrict access to members of a specific GitHub organization, add the `allow_organizations` parameter:
 
-```
+```text
 Authorization URL: https://github.com/login/oauth/authorize?allowed_organizations=your-org-name
 ```
 
@@ -111,7 +111,7 @@ However, the most reliable way to restrict access is to configure org-level OAut
 
 For GitHub Enterprise Server:
 
-```
+```text
 Authorization URL: https://github.yourcompany.com/login/oauth/authorize
 Access Token URL:  https://github.yourcompany.com/login/oauth/access_token
 Resource URL:      https://github.yourcompany.com/api/v3/user
@@ -123,6 +123,7 @@ Register the OAuth app in your GitHub Enterprise instance's admin panel or in yo
 
 ```bash
 # Test the GitHub OAuth token manually
+
 GITHUB_TOKEN="your-github-oauth-token"
 curl -H "Authorization: token $GITHUB_TOKEN" \
   https://api.github.com/user \

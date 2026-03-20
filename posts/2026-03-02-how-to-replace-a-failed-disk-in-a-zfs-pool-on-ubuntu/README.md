@@ -58,6 +58,7 @@ Map the ZFS device name to a physical disk:
 
 ```bash
 # See the full device path
+
 sudo zpool status tank | grep FAULTED
 
 # Find more details

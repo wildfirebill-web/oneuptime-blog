@@ -16,6 +16,7 @@ Caddy is a modern web server and reverse proxy that automatically obtains and re
 # /etc/caddy/Caddyfile
 
 # Caddy automatically listens on both IPv4 and IPv6
+
 app.example.com {
     # Automatic HTTPS with Let's Encrypt
     reverse_proxy backend:8080
@@ -49,7 +50,7 @@ app.example.com {
 ## IPv6 Backend Proxying
 
 ```caddyfile
-# Proxy to IPv6 backend — must use brackets
+# Proxy to IPv6 backend - must use brackets
 api.example.com {
     reverse_proxy {
         to [2001:db8::10]:8080
@@ -179,4 +180,4 @@ tail -f /var/log/caddy/access.log | grep -E '"[0-9a-fA-F:]{3,39}"'
 
 ## Conclusion
 
-Caddy handles IPv6 automatically — it listens on both `0.0.0.0` and `::` by default, and the `{remote_host}` placeholder captures IPv6 client addresses correctly without special configuration. For IPv6 backend proxying, use bracket notation for addresses in `to` directives. Configure `trusted_proxies` in the global block to enable correct client IP extraction from `X-Forwarded-For` when Caddy sits behind another proxy. Caddy is the easiest reverse proxy to make dual-stack since it requires no IPv6-specific configuration for basic operation.
+Caddy handles IPv6 automatically - it listens on both `0.0.0.0` and `::` by default, and the `{remote_host}` placeholder captures IPv6 client addresses correctly without special configuration. For IPv6 backend proxying, use bracket notation for addresses in `to` directives. Configure `trusted_proxies` in the global block to enable correct client IP extraction from `X-Forwarded-For` when Caddy sits behind another proxy. Caddy is the easiest reverse proxy to make dual-stack since it requires no IPv6-specific configuration for basic operation.

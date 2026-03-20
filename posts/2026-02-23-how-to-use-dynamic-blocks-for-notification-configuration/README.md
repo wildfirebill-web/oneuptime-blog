@@ -199,6 +199,7 @@ resource "aws_cloudwatch_event_rule" "rules" {
 }
 
 # Flatten targets for each rule
+
 locals {
   event_targets = flatten([
     for rule_key, rule in var.eventbridge_rules : [

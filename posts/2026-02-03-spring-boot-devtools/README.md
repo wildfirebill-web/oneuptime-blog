@@ -284,6 +284,7 @@ Configure restart behavior in `application.properties`:
 
 ```properties
 # Enable or disable automatic restart (default: true)
+
 spring.devtools.restart.enabled=true
 
 # Poll interval for classpath changes (default: 1s)

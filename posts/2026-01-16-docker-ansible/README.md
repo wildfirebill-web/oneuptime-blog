@@ -16,6 +16,7 @@ Ansible provides powerful modules for managing Docker infrastructure across mult
 
 ```bash
 # Install the Docker collection
+
 ansible-galaxy collection install community.docker
 
 # Verify installation

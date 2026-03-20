@@ -52,6 +52,7 @@ graph LR
 
 ```bash
 # Clone Airbyte repository
+
 git clone https://github.com/airbytehq/airbyte.git
 cd airbyte
 

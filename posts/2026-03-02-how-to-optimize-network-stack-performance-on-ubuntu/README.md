@@ -16,6 +16,7 @@ Before tuning, establish a baseline:
 
 ```bash
 # Check interface statistics and errors
+
 ip -s link show eth0
 
 # Current socket statistics

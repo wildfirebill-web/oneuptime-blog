@@ -330,6 +330,7 @@ def health_check_endpoint():
         # Expose Prometheus metrics
         return f"""
 # HELP cronjobs_managed Number of CronJobs managed
+
 # TYPE cronjobs_managed gauge
 cronjobs_managed{{controller="{CONTROLLER_NAME}"}} {count_managed_cronjobs()}
 

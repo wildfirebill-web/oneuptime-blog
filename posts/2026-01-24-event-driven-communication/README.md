@@ -529,6 +529,7 @@ class RabbitMQPublisher:
             self.connection.close()
 
 # Usage
+
 publisher = RabbitMQPublisher(host='rabbitmq')
 publisher.connect()
 

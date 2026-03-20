@@ -40,6 +40,7 @@ Getting started is a single pip install. OpenLIT bundles all of its instrumentor
 
 ```bash
 # Install OpenLIT - this includes all instrumentors for supported GenAI libraries
+
 pip install openlit
 ```
 

@@ -20,6 +20,7 @@ Here is a simple example with two plays.
 
 ```yaml
 # multi-tier.yml - configures both web servers and database servers
+
 ---
 - name: Configure database servers
   hosts: dbservers

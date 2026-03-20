@@ -194,6 +194,7 @@ Check that outlier detection is configured and working:
 
 ```bash
 # Verify the DestinationRule is applied
+
 kubectl get destinationrule order-service -n production -o yaml
 
 # Check Envoy cluster config for outlier detection

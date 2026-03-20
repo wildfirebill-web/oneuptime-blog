@@ -285,6 +285,7 @@ Automate with mysqldump:
 
 ```bash
 # Dump just the schema (no data)
+
 mysqldump -u root -p --no-data database_name orders order_items > schema.sql
 
 # Drop tables

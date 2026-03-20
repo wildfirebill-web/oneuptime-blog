@@ -60,6 +60,7 @@ The key to managing configs across environments is the variable hierarchy. Ansib
 
 ```yaml
 # group_vars/staging/vars.yml - Staging environment settings
+
 app_env: staging
 app_debug: true
 log_level: debug

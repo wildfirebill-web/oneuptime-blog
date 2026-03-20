@@ -46,6 +46,7 @@ Define zone-specific storage classes for optimal performance:
 
 ```yaml
 # yugabyte-storage-classes.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

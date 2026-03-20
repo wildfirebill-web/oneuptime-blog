@@ -8,12 +8,13 @@ Description: Connect application containers to database containers in Portainer 
 
 ## Introduction
 
-Connecting application containers to database containers is fundamental to containerized development. Docker's networking model makes this clean — containers on the same network find each other by service name. This guide covers the patterns, pitfalls, and best practices for container-to-database connections in Portainer.
+Connecting application containers to database containers is fundamental to containerized development. Docker's networking model makes this clean - containers on the same network find each other by service name. This guide covers the patterns, pitfalls, and best practices for container-to-database connections in Portainer.
 
-## Step 1: The Core Pattern — Shared Networks
+## Step 1: The Core Pattern - Shared Networks
 
 ```yaml
 # docker-compose.yml - Application + Database on shared network
+
 version: "3.8"
 
 networks:
@@ -89,7 +90,7 @@ services:
       - REDIS_URL=redis://redis:6379
       - MONGODB_URL=mongodb://app:pass@mongodb:27017/myapp
 
-  # Databases (backend only — not accessible from frontend)
+  # Databases (backend only - not accessible from frontend)
   postgres:
     image: postgres:15-alpine
     networks:

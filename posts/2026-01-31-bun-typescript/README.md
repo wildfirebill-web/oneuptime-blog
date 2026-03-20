@@ -83,6 +83,7 @@ Use Bun's integrated type checker to validate your code:
 
 ```bash
 # Check types without emitting files
+
 bun --bun tsc --noEmit
 
 # Or use the shorthand

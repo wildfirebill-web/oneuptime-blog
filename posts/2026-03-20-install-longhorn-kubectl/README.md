@@ -22,6 +22,7 @@ Installing Longhorn with `kubectl` is the most straightforward approach, requiri
 **Ubuntu/Debian:**
 ```bash
 # Install open-iscsi
+
 apt-get install -y open-iscsi
 
 # Enable and start the service
@@ -98,11 +99,11 @@ kubectl get pods -n longhorn-system
 ```
 
 The following components should be running:
-- `longhorn-manager` — DaemonSet, one pod per node
-- `longhorn-driver-deployer` — Deployment
-- `longhorn-ui` — Deployment
-- `instance-manager` — one per node
-- `engine-image` — one per node
+- `longhorn-manager` - DaemonSet, one pod per node
+- `longhorn-driver-deployer` - Deployment
+- `longhorn-ui` - Deployment
+- `instance-manager` - one per node
+- `engine-image` - one per node
 
 ## Verify Longhorn Nodes
 

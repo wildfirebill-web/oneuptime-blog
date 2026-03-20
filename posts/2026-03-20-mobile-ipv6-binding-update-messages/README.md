@@ -19,14 +19,14 @@ graph TD
     C --> D{"Route Optimization\nenabled?"}
     D -- Yes --> E["Return Routability\nprocedure"]
     E --> F["MN sends BU to CN\n(H flag not set)"]
-    D -- No --> G["Bidirectional Tunneling\nin use — done"]
+    D -- No --> G["Bidirectional Tunneling\nin use - done"]
     C --> H["HA updates Binding Cache"]
     F --> I["CN updates Binding Cache"]
 ```
 
 ## BU Message Structure
 
-```
+```text
 IPv6 Header:
   Src: CoA, Dst: HA (for home registration)
   -- or --
@@ -87,12 +87,12 @@ def send_home_registration(mn, ha_address, hoa, coa, lifetime=600):
 
 The HA sends a BA in response to a BU with A flag set.
 
-```
+```text
 Mobility Header (MH Type = 6, Binding Acknowledgement):
   Status:          0     (Binding Update accepted)
   K flag:          0
   Sequence:        42    (matches BU sequence number)
-  Lifetime:        150   (granted lifetime — may differ from requested)
+  Lifetime:        150   (granted lifetime - may differ from requested)
 
 Status Codes:
   0   = Binding Update Accepted
@@ -110,6 +110,7 @@ Status Codes:
 
 ```bash
 # Monitor binding lifetime on the Home Agent (UMIP)
+
 # Bindings must be refreshed before expiry
 
 # View current bindings

@@ -25,6 +25,7 @@ The SCAP Security Guide packages all of this into content files you point a scan
 
 ```bash
 # Install the OpenSCAP scanner and utilities
+
 sudo apt-get update
 sudo apt-get install -y libopenscap8 openscap-scanner openscap-utils
 

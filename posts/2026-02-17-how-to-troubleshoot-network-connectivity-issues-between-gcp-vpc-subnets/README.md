@@ -16,6 +16,7 @@ Before diving into configurations, document what exactly is failing. Can you pin
 
 ```bash
 # From a VM in subnet-a, test connectivity to a VM in subnet-b
+
 # First, test basic ICMP (ping)
 ping -c 4 10.0.2.5
 

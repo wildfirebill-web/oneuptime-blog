@@ -22,6 +22,7 @@ Every API call from a private subnet to an AWS service that goes through a NAT g
 
 ```hcl
 # VPC endpoint for S3 (Gateway type - free)
+
 resource "aws_vpc_endpoint" "s3" {
   vpc_id       = aws_vpc.main.id
   service_name = "com.amazonaws.${var.region}.s3"

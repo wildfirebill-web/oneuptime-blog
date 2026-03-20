@@ -41,6 +41,7 @@ Machine credentials are used to connect to managed hosts via SSH.
 
 ```yaml
 # create-credentials.yml
+
 ---
 - name: Configure AWX Credentials
   hosts: localhost

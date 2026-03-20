@@ -328,6 +328,7 @@ Check that Dex can reach your OIDC provider's discovery endpoint:
 
 ```bash
 # From within the cluster
+
 kubectl run curl --image=curlimages/curl --rm -it -- \
   curl -s https://sso.example.com/.well-known/openid-configuration | jq .
 ```

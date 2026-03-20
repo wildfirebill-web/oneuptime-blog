@@ -37,6 +37,7 @@ Kubernetes supports three ways to check health:
 
 ```yaml
 # http-probe.yaml
+
 # Check health by sending an HTTP GET request.
 # The probe passes if the response status code is 200-399.
 readinessProbe:

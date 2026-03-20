@@ -33,6 +33,7 @@ Before running E2E tests, you need a local Kubernetes cluster and several tools 
 
 ```bash
 # Required tools
+
 go version          # Go 1.21+
 kubectl version     # kubectl matching your cluster version
 kind version        # kind for creating local clusters

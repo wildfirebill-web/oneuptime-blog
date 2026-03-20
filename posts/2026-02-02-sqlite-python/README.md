@@ -91,6 +91,7 @@ This connection manager implements the singleton pattern to ensure you have a si
 
 ```python
 # database/connection.py
+
 # Implements connection management with thread-local storage and automatic cleanup
 import sqlite3
 import threading

@@ -25,6 +25,7 @@ Several projects implement the MCS API. We'll use the reference implementation w
 
 ```bash
 # Deploy Submariner with service discovery
+
 subctl deploy-broker \
   --kubeconfig ~/.kube/config \
   --context cluster-1

@@ -26,6 +26,7 @@ The broker cluster maintains cross-cluster state. Deploy via Flux:
 
 ```yaml
 # clusters/broker/infrastructure/submariner-broker.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

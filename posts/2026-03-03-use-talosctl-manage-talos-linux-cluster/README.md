@@ -18,6 +18,7 @@ talosctl communicates with the Talos API that runs on every Talos Linux node. Th
 
 ```bash
 # Set the talosconfig (do this in your shell profile)
+
 export TALOSCONFIG="$HOME/.talos/config"
 ```
 

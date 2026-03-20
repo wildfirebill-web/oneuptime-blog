@@ -31,6 +31,7 @@ Use the `community.vmware.vmware_vmotion` module to migrate a running VM to a di
 
 ```yaml
 # compute-vmotion.yml
+
 ---
 - name: Migrate VM to a different ESXi host
   hosts: localhost

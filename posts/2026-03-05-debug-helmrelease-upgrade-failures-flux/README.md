@@ -36,6 +36,7 @@ Start by examining the current state of the HelmRelease:
 
 ```bash
 # Get the HelmRelease status
+
 flux get helmrelease my-app -n default
 
 # View detailed conditions
@@ -116,7 +117,7 @@ spec:
 
 **Warning:** Using `force: true` causes downtime because resources are deleted and recreated. Use it carefully.
 
-### Resource Validation Errors
+Resource Validation Errors
 
 New chart versions may introduce resources with schemas that fail validation:
 
@@ -137,7 +138,7 @@ kubectl logs -n flux-system deployment/helm-controller | grep "hook" | grep "my-
 kubectl get jobs -n default -l helm.sh/hook
 ```
 
-### Resource Quota and Limits
+Resource Quota and Limits
 
 Upgrades that increase resource requirements may fail if quotas are exceeded:
 

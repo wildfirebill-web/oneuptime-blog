@@ -18,6 +18,7 @@ Run Solr in standalone mode:
 
 ```bash
 # Start Solr with the admin UI on port 8983
+
 docker run -d \
   --name solr \
   -p 8983:8983 \

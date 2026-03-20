@@ -12,6 +12,7 @@ Managing IPv6 DNS records with Terraform ensures your AAAA records stay in sync 
 
 ```hcl
 # route53-aaaa.tf - AAAA record in AWS Route 53
+
 data "aws_route53_zone" "main" {
   name = "example.com."
 }

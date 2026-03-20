@@ -74,6 +74,7 @@ from opentelemetry.sdk.metrics.export import (
 )
 
 # Set up the meter provider with a console exporter
+
 # The reader collects metrics every 10 seconds
 reader = PeriodicExportingMetricReader(
     ConsoleMetricExporter(),

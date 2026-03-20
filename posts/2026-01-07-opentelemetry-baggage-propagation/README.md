@@ -155,6 +155,7 @@ Configure Python with baggage propagation. The setup is similar to Node.js but u
 
 ```python
 # tracing.py - OpenTelemetry configuration with baggage support for Python
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

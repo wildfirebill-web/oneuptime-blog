@@ -98,6 +98,7 @@ from elasticsearch import Elasticsearch
 import numpy as np
 
 # Load embedding model
+
 model = SentenceTransformer("all-MiniLM-L6-v2")  # 384 dimensions
 
 # Connect to Elasticsearch

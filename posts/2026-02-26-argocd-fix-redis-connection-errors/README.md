@@ -49,6 +49,7 @@ All ArgoCD components connect to Redis. If Redis is down:
 
 ```bash
 # Check if Redis is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-redis
 
 # Check for restarts

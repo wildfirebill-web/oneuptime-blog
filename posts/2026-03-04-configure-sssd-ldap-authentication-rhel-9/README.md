@@ -24,6 +24,7 @@ flowchart LR
 
 ```bash
 # Install SSSD with LDAP support
+
 sudo dnf install sssd sssd-ldap sssd-tools oddjob oddjob-mkhomedir -y
 ```
 

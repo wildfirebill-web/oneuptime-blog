@@ -18,6 +18,7 @@ A Lambda version is a numbered, immutable snapshot of your function's code and c
 
 ```bash
 # Publish a new version of your function
+
 aws lambda publish-version \
   --function-name my-api \
   --description "Release v2.3.1 - Fixed payment processing bug"

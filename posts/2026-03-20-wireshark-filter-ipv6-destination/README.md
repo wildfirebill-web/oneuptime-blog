@@ -12,6 +12,7 @@ Filtering by IPv6 destination address in Wireshark helps you track traffic flowi
 
 ```wireshark
 # All packets destined for a specific IPv6 address
+
 ipv6.dst == 2001:db8::10
 
 # All packets destined for the loopback address

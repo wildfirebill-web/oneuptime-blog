@@ -198,6 +198,7 @@ Request a token with permissions included:
 
 ```bash
 # Request token with authorization
+
 curl -X POST \
   "https://keycloak.example.com/realms/myrealm/protocol/openid-connect/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \

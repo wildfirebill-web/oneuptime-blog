@@ -22,6 +22,7 @@ Monitoring L7 path translation in production ensures rewrites continue working c
 
 ```promql
 # HTTP request rate through Envoy (includes rewritten paths)
+
 rate(envoy_http_downstream_rq_total[5m])
 
 # Latency added by proxy

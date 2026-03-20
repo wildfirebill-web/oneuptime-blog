@@ -35,6 +35,7 @@ graph TB
 
 ```hcl
 # modules/rhel9-instance/main.tf
+
 # This module abstracts cloud-specific details
 
 variable "cloud_provider" {

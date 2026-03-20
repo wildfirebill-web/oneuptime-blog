@@ -35,6 +35,7 @@ Here's a simple example of parsing a JSON log body:
 
 ```yaml
 # Basic JSON log parsing
+
 processors:
   transform:
     log_statements:

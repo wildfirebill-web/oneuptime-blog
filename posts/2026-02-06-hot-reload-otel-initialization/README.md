@@ -77,6 +77,7 @@ Flask's debug mode uses the Werkzeug reloader, which spawns a child process that
 
 ```python
 # app.py
+
 import os
 from flask import Flask
 from opentelemetry import trace

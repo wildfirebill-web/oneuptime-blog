@@ -14,6 +14,7 @@ Description: Create 802.1Q VLAN subinterfaces on Linux using ip link add type vl
 
 ```bash
 # Create VLAN 10 subinterface on eth0
+
 ip link add link eth0 name eth0.10 type vlan id 10
 
 # Assign an IP address
@@ -93,4 +94,4 @@ ip link delete eth0.10
 
 ## Conclusion
 
-`ip link add link <parent> name <name> type vlan id <vid>` creates a VLAN subinterface. The interface handles 802.1Q tagging automatically. Load the `8021q` kernel module first. These changes are not persistent — use Netplan, nmcli, or systemd-networkd for permanent VLAN configuration.
+`ip link add link <parent> name <name> type vlan id <vid>` creates a VLAN subinterface. The interface handles 802.1Q tagging automatically. Load the `8021q` kernel module first. These changes are not persistent - use Netplan, nmcli, or systemd-networkd for permanent VLAN configuration.

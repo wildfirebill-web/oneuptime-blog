@@ -68,6 +68,7 @@ First, deploy Kafka Connect with Debezium plugins. Here is a Docker Compose setu
 
 ```yaml
 # docker-compose.yml
+
 # Development setup for Kafka, Zookeeper, and Kafka Connect with Debezium
 
 version: '3.8'

@@ -28,6 +28,7 @@ Configure deletion policy directly on managed resources.
 
 ```yaml
 # s3-bucket-orphan.yaml
+
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:

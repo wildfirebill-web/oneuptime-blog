@@ -55,6 +55,7 @@ Before changing anything, record what you have. You will need this to verify thi
 
 ```bash
 # List all LoadBalancer services and their external IPs
+
 # Save this output - you will compare against it later
 kubectl get svc --all-namespaces -o wide | grep LoadBalancer
 ```

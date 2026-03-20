@@ -27,6 +27,7 @@ Deploying Piraeus through Flux CD gives you GitOps-managed replicated storage in
 
 ```yaml
 # infrastructure/sources/piraeus-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

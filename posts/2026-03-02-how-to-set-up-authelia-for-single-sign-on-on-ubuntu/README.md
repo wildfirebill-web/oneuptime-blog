@@ -26,6 +26,7 @@ If you don't have Docker installed yet:
 
 ```bash
 # Install prerequisites
+
 sudo apt update && sudo apt install -y ca-certificates curl gnupg
 
 # Add Docker's official GPG key

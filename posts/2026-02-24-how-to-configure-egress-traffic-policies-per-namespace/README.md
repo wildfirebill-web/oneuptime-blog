@@ -170,6 +170,7 @@ Here is a complete example for a cluster with three namespaces:
 
 ```yaml
 # Mesh-wide Sidecar default (applied to istio-system namespace as root config)
+
 apiVersion: networking.istio.io/v1
 kind: Sidecar
 metadata:

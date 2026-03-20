@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Fan-In, Gateway Collector, Agents, Architecture
+Tags: OpenTelemetry, Fan-In, Gateway Collector, Agent, Architecture
 
 Description: Build a fan-in architecture where hundreds of lightweight agent collectors aggregate telemetry into a fleet of gateway collectors for export.
 
@@ -28,6 +28,7 @@ The agent collector should be as lightweight as possible. Its job is to receive 
 
 ```yaml
 # agent-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

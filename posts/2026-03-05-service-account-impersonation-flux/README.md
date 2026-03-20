@@ -27,6 +27,7 @@ First, create a service account in the target namespace where resources will be 
 
 ```yaml
 # service-account-app-deployer.yaml
+
 # Service account for deploying application workloads in the "webapp" namespace
 apiVersion: v1
 kind: ServiceAccount

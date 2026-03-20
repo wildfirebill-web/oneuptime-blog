@@ -16,6 +16,7 @@ The default TCP buffer sizes in Linux are conservative. They are designed to wor
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   sysctls:
     # TCP receive buffer: min, default, max (in bytes)

@@ -19,6 +19,7 @@ Bind Grafana to a specific IPv4 address to prevent access from other interfaces.
 
 [server]
 # Bind Grafana to a specific IPv4 address (e.g., internal network only)
+
 # 0.0.0.0 = all interfaces; specify an IP to restrict
 http_addr = 192.168.1.10
 

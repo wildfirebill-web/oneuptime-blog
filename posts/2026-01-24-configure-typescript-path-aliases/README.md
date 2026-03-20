@@ -123,6 +123,7 @@ Then use it when running your application:
 
 ```bash
 # Using ts-node with path resolution
+
 ts-node -r tsconfig-paths/register src/index.ts
 
 # Or in package.json scripts

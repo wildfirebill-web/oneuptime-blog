@@ -18,6 +18,7 @@ Forks control how many hosts Ansible manages simultaneously. The default is 5, w
 
 ```ini
 # ansible.cfg - increase the default fork count
+
 [defaults]
 forks = 30
 ```

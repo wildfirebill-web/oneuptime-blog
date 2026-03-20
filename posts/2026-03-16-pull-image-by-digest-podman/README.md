@@ -20,6 +20,7 @@ An image digest is a SHA256 hash of the image manifest. It uniquely identifies a
 
 ```bash
 # A digest looks like this:
+
 # sha256:a3ed95caeb02236b4eb4c6e1... (64 hex characters)
 
 # The full reference format is:

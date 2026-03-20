@@ -36,6 +36,7 @@ In cluster mode disabled, all your data lives in a single shard with one primary
 
 ```bash
 # Create a Redis replication group with 2 replicas
+
 aws elasticache create-replication-group \
   --replication-group-id my-redis-repl \
   --replication-group-description "Production Redis with replication" \

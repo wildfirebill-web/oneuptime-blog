@@ -34,6 +34,7 @@ This is the single most important database security policy. A publicly accessibl
 
 ```python
 # deny-public-rds.sentinel
+
 # Prevent RDS instances from being publicly accessible
 
 import "tfplan/v2" as tfplan

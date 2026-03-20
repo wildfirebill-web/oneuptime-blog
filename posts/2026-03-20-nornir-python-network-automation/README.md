@@ -27,6 +27,7 @@ python3 -c "import nornir; print(nornir.__version__)"
 
 ```yaml
 # inventory/hosts.yaml
+
 router01:
   hostname: 192.168.1.1
   groups:

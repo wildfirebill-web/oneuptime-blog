@@ -16,6 +16,7 @@ When you scale a service, Docker Compose creates multiple containers from the sa
 
 ```bash
 # Scale the api service to 5 replicas
+
 docker compose up -d --scale api=5
 
 # View all replicas

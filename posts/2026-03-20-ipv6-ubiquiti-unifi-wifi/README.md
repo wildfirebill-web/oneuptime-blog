@@ -12,7 +12,7 @@ Ubiquiti UniFi networks support IPv6 through the UniFi Network Controller. You c
 
 ## UniFi Controller IPv6 Configuration
 
-```
+```sql
 UniFi Controller: Settings > Networks > [Select Network] > IPv6
 
 Options:
@@ -86,6 +86,7 @@ Recommended for most deployments:
 
 ```bash
 # SSH into UDM
+
 ssh root@192.168.1.1
 
 # Check IPv6 status
@@ -110,7 +111,7 @@ cat /var/lib/misc/dnsmasq.leases | grep -v "^#"
 
 ## UniFi IPv6 Firewall Rules
 
-```
+```text
 UniFi Controller > Settings > Firewall & Security > IPv6
 
 Rule 1: Allow Established/Related

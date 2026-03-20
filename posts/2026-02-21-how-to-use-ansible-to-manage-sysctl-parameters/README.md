@@ -16,6 +16,7 @@ The `sysctl` module sets a kernel parameter and applies it without requiring a r
 
 ```yaml
 # Increase the maximum number of open file descriptors system-wide
+
 - name: Set system-wide max open files
   ansible.posix.sysctl:
     name: fs.file-max

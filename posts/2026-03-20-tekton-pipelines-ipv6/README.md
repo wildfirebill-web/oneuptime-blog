@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Tekton, Kubernetes, CI/CD, Pipeline, DevOps
+Tags: IPv6, Tekton, Kubernetes, CI/CD, Pipelines, DevOps
 
 Description: Configure Tekton Pipelines to run in IPv6 Kubernetes clusters, connect to IPv6 Git sources, and test IPv6 connectivity within pipeline tasks.
 
 ## Introduction
 
-Tekton Pipelines is a Kubernetes-native CI/CD framework where every step runs as a container in a Kubernetes Pod. IPv6 support in Tekton is inherited from the Kubernetes cluster's network configuration — if the cluster supports IPv6, Tekton tasks automatically benefit from it.
+Tekton Pipelines is a Kubernetes-native CI/CD framework where every step runs as a container in a Kubernetes Pod. IPv6 support in Tekton is inherited from the Kubernetes cluster's network configuration - if the cluster supports IPv6, Tekton tasks automatically benefit from it.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Tekton Pipelines is a Kubernetes-native CI/CD framework where every step runs as
 
 ```bash
 # Check Tekton components are running
+
 kubectl get pods -n tekton-pipelines
 
 # Verify a Tekton task pod gets an IPv6 address
@@ -211,4 +212,4 @@ kubectl get pods -l tekton.dev/pipelineRun=ipv6-app-run-001 -o wide
 
 ## Conclusion
 
-Tekton Pipelines inherits IPv6 support from the Kubernetes cluster — every task step runs as a container in a Pod, and if the cluster has IPv6, those pods automatically get IPv6 addresses. The key differences for IPv6 with Tekton are: using IPv6 bracket notation in Git URLs, ensuring container images are pulled from IPv6-accessible registries, and verifying that the cluster's CNI plugin correctly assigns IPv6 addresses to pods. No Tekton-specific IPv6 configuration is required beyond having a properly configured IPv6 Kubernetes cluster.
+Tekton Pipelines inherits IPv6 support from the Kubernetes cluster - every task step runs as a container in a Pod, and if the cluster has IPv6, those pods automatically get IPv6 addresses. The key differences for IPv6 with Tekton are: using IPv6 bracket notation in Git URLs, ensuring container images are pulled from IPv6-accessible registries, and verifying that the cluster's CNI plugin correctly assigns IPv6 addresses to pods. No Tekton-specific IPv6 configuration is required beyond having a properly configured IPv6 Kubernetes cluster.

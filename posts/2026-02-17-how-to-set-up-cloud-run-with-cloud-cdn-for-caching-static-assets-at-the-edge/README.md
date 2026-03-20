@@ -35,6 +35,7 @@ The global load balancer receives all traffic. Cloud CDN sits between the load b
 
 ```bash
 # Enable required APIs
+
 gcloud services enable compute.googleapis.com \
   run.googleapis.com
 ```

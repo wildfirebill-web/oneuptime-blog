@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MTU, Windows, Network Configuration, netsh
+Tags: IPv6, MTU, Windows, Network Configuration, Netsh
 
 Description: Configure and verify IPv6 MTU settings on Windows network interfaces using netsh and PowerShell, understand MTU inheritance, and troubleshoot MTU-related issues.
 
@@ -14,6 +14,7 @@ Windows manages IPv6 MTU settings through the `netsh` command and PowerShell's `
 
 ```powershell
 # PowerShell: View MTU for all IPv6 interfaces
+
 Get-NetIPInterface -AddressFamily IPv6 | Select-Object InterfaceAlias, NlMtu, ConnectionState
 
 # View a specific interface
@@ -113,4 +114,4 @@ foreach ($iface in $interfaces) {
 
 ## Conclusion
 
-Windows IPv6 MTU configuration uses either `Set-NetIPInterface` in PowerShell or `netsh interface ipv6 set subinterface` in the command prompt. The minimum valid MTU for IPv6 is 1280 bytes — interfaces below this cannot carry IPv6 traffic. When using VPNs or tunnels, calculate the overhead and reduce the interface MTU accordingly. The destination cache (`netsh interface ipv6 show destinationcache`) shows cached PMTU values for specific destinations.
+Windows IPv6 MTU configuration uses either `Set-NetIPInterface` in PowerShell or `netsh interface ipv6 set subinterface` in the command prompt. The minimum valid MTU for IPv6 is 1280 bytes - interfaces below this cannot carry IPv6 traffic. When using VPNs or tunnels, calculate the overhead and reduce the interface MTU accordingly. The destination cache (`netsh interface ipv6 show destinationcache`) shows cached PMTU values for specific destinations.

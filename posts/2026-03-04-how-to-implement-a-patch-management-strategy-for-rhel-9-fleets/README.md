@@ -27,6 +27,7 @@ Categorize patches by severity:
 
 ```bash
 # Review available updates
+
 sudo dnf updateinfo list security
 sudo dnf updateinfo summary
 

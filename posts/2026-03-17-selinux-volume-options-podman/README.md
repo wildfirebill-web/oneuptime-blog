@@ -20,6 +20,7 @@ By default, SELinux labels host files with a context that containers cannot read
 
 ```bash
 # Check SELinux status
+
 getenforce
 
 # View the SELinux label on a directory

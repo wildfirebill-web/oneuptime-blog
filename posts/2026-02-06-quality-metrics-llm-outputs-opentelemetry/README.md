@@ -320,6 +320,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("llm.feedback")
 
 # Counter for thumbs up/down
+
 feedback_counter = meter.create_counter(
     name="llm.feedback.votes",
     description="User feedback votes on LLM outputs",

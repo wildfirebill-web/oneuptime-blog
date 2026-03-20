@@ -25,6 +25,7 @@ Or from the CLI, open the UI for a specific app:
 ```bash
 argocd app get my-app --grpc-web
 # The output includes a URL field pointing to the UI page
+
 ```
 
 ## The Application Header

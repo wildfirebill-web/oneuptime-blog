@@ -140,4 +140,4 @@ def is_valid_ipv4(host: str) -> bool:
 
 ## Conclusion
 
-Use the URL parsing library native to your language to extract the hostname, then validate it as an IPv4 address. Avoid splitting on `:` or `/` manually — URL parsing libraries correctly handle edge cases like ports, IPv6 addresses in brackets, and encoded characters.
+Use the URL parsing library native to your language to extract the hostname, then validate it as an IPv4 address. Avoid splitting on `:` or `/` manually - URL parsing libraries correctly handle edge cases like ports, IPv6 addresses in brackets, and encoded characters.

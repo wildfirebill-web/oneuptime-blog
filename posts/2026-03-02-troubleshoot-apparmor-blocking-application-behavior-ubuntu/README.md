@@ -29,6 +29,7 @@ Before going further, verify that AppArmor is active on the system:
 
 ```bash
 # Check if AppArmor is enabled
+
 sudo systemctl status apparmor
 
 # Check which profiles are loaded

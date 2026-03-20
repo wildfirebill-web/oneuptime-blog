@@ -677,6 +677,7 @@ For development, configure Grafana to load plugins from your development directo
 
 ```ini
 # grafana.ini or custom.ini
+
 [paths]
 plugins = /path/to/your/plugins
 
@@ -855,7 +856,7 @@ func (d *Datasource) QueryData(ctx context.Context, req *backend.QueryDataReques
 }
 ```
 
-### Resource Management
+Resource Management
 
 Implement proper resource cleanup:
 

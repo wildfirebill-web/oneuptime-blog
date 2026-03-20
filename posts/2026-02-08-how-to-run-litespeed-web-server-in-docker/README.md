@@ -24,6 +24,7 @@ This guide covers both, starting with OpenLiteSpeed since it is freely available
 
 ```bash
 # Run OpenLiteSpeed with PHP 8.3
+
 docker run -d \
   --name openlitespeed \
   -p 80:80 \

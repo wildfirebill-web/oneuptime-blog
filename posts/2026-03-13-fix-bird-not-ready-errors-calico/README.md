@@ -34,6 +34,7 @@ Always test fixes on a non-production node first. BGP configuration changes can 
 
 ```bash
 # Identify the affected node and pod
+
 kubectl get pods -n kube-system -l k8s-app=calico-node -o wide
 
 # Check BIRD-specific errors

@@ -46,6 +46,7 @@ Start with basic network validation to rule out infrastructure issues.
 
 ```bash
 # From the application pod, test connectivity to collector
+
 kubectl exec -it <app-pod> -n <namespace> -- sh
 
 # Test DNS resolution

@@ -12,7 +12,7 @@ Cisco IOS supports dual-stack on the same interface by assigning both IPv4 and I
 
 ## Enable IPv6 Routing
 
-```
+```text
 ! Required global command to enable IPv6 unicast routing
 Router(config)# ipv6 unicast-routing
 ```
@@ -21,7 +21,7 @@ Without this command, IPv6 forwarding is disabled even if addresses are assigned
 
 ## Interface Dual-Stack Configuration
 
-```
+```text
 ! Configure GigabitEthernet0/0 with both IPv4 and IPv6
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# description WAN Interface
@@ -39,7 +39,7 @@ Router(config-if)# no shutdown
 
 ## Static Routes for Both Families
 
-```
+```text
 ! IPv4 default route
 Router(config)# ip route 0.0.0.0 0.0.0.0 192.0.2.254
 
@@ -53,7 +53,7 @@ Router# show ipv6 route
 
 ## OSPFv2 and OSPFv3 (Parallel Instances)
 
-```
+```text
 ! OSPFv2 for IPv4
 Router(config)# router ospf 1
 Router(config-router)# router-id 1.1.1.1
@@ -74,7 +74,7 @@ Router# show ipv6 ospf neighbor
 
 ## BGP Dual-Stack (mp-BGP)
 
-```
+```text
 ! mp-BGP with both IPv4 and IPv6 address families on same session
 Router(config)# router bgp 65001
 Router(config-router)# neighbor 192.0.2.2 remote-as 65002
@@ -101,7 +101,7 @@ Router# show bgp ipv6 unicast summary
 
 On LAN-facing interfaces, configure RA for hosts:
 
-```
+```text
 ! Enable RA on LAN interface (default when ipv6 address is assigned)
 Router(config)# interface GigabitEthernet0/1
 Router(config-if)# ipv6 address 2001:db8:lan::1/64
@@ -119,7 +119,7 @@ Router(config-if)# ipv6 nd suppress-ra
 
 ## ACLs for Dual-Stack
 
-```
+```text
 ! IPv4 ACL
 Router(config)# ip access-list extended INBOUND-V4
 Router(config-ext-nacl)# permit tcp any host 10.0.0.10 eq 443
@@ -141,7 +141,7 @@ Router(config-if)# ipv6 traffic-filter INBOUND-V6 in
 
 ## Verification Commands
 
-```
+```text
 ! Interface summary
 Router# show interfaces GigabitEthernet0/0
 Router# show ipv6 interface GigabitEthernet0/0

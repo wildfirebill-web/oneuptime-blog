@@ -30,6 +30,7 @@ Before chrooting, you need to know your partition layout:
 
 ```bash
 # List all block devices and their mount points
+
 lsblk -f
 
 # Or get more detail including UUIDs

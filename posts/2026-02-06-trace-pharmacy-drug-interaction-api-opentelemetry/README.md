@@ -25,6 +25,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 import time
 
 # Initialize tracing and metrics
+
 trace_provider = TracerProvider()
 trace_provider.add_span_processor(BatchSpanProcessor(OTLPSpanExporter()))
 trace.set_tracer_provider(trace_provider)

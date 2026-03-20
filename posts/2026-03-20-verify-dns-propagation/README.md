@@ -14,6 +14,7 @@ After making a DNS change, the new records must propagate through the global DNS
 
 ```bash
 # The authoritative server has the new record immediately after the change.
+
 # If auth server shows new record but resolvers don't: still propagating (waiting for TTL)
 
 # Find authoritative nameservers:
@@ -136,4 +137,4 @@ dig @a.gtld-servers.net example.com NS  # Check from .com TLD servers directly
 
 ## Conclusion
 
-DNS propagation verification requires checking the authoritative server first (should show new record immediately), then multiple public resolvers (show propagation status). The TTL of the old record determines maximum propagation time — a 3600-second TTL means up to 1 hour for all caches to expire. The best practice is reducing TTL to 300 seconds 24 hours before any planned DNS change, making the change, verifying it on authoritative servers, then confirming propagation to public resolvers within 5 minutes.
+DNS propagation verification requires checking the authoritative server first (should show new record immediately), then multiple public resolvers (show propagation status). The TTL of the old record determines maximum propagation time - a 3600-second TTL means up to 1 hour for all caches to expire. The best practice is reducing TTL to 300 seconds 24 hours before any planned DNS change, making the change, verifying it on authoritative servers, then confirming propagation to public resolvers within 5 minutes.

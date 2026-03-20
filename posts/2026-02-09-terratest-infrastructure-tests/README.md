@@ -28,6 +28,7 @@ cd kubernetes-tests
 go mod init github.com/yourorg/kubernetes-tests
 
 # Install Terratest
+
 go get github.com/gruntwork-io/terratest/modules/k8s
 go get github.com/gruntwork-io/terratest/modules/helm
 go get github.com/gruntwork-io/terratest/modules/random

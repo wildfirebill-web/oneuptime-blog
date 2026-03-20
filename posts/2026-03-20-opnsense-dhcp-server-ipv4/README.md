@@ -14,7 +14,7 @@ OPNsense uses ISC DHCP (or Kea in newer versions) for IPv4 address assignment. C
 
 Navigate to **Services > ISC DHCPv4 > [LAN]**:
 
-```
+```text
 Enable DHCP server on LAN interface:  checked
 
 Subnet:         192.168.1.0
@@ -36,18 +36,19 @@ Servers:
 
 Navigate to **Services > ISC DHCPv4 > [LAN] > Static Mappings > Add**:
 
-```
+```text
 MAC address:    00:1a:2b:3c:4d:5e
 IP address:     192.168.1.10
 Hostname:       fileserver
 Description:    File Server
+
 ```
 
 ## DHCP Options
 
 Navigate to **Services > ISC DHCPv4 > [LAN]**:
 
-```
+```text
 Additional BOOTP/DHCP Options:
   Number  Type    Value
   066     text    10.1.30.5        # TFTP server (VoIP phones)
@@ -59,12 +60,12 @@ Additional BOOTP/DHCP Options:
 
 Navigate to **Services > ISC DHCPv4 > [OPT1]** (e.g., DMZ):
 
-```
+```text
 Enable:  checked
 Range:   10.1.40.100 – 10.1.40.200
 Gateway: 10.1.40.1
 DNS:     10.1.1.10
-Lease:   3600 (1 hour — shorter for DMZ)
+Lease:   3600 (1 hour - shorter for DMZ)
 ```
 
 ## Monitor Leases
@@ -78,7 +79,7 @@ Or navigate to **Services > ISC DHCPv4 > [Interface] > Leases**
 
 Navigate to **Services > ISC DHCPv4 > Relay**:
 
-```
+```text
 Enable DHCP relay:   checked
 Destination servers: 10.1.1.20   (centralized DHCP server IP)
 Interface(s):        VLAN10, VLAN20, VLAN30
@@ -86,8 +87,9 @@ Interface(s):        VLAN10, VLAN20, VLAN30
 
 ## OPNsense ISC DHCP Config (Behind the Scenes)
 
-```
+```nginx
 # /var/etc/dhcpd.conf (generated)
+
 subnet 192.168.1.0 netmask 255.255.255.0 {
   range 192.168.1.100 192.168.1.200;
   option routers 192.168.1.1;

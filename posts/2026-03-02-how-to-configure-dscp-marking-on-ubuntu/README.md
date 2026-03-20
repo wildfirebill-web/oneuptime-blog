@@ -30,6 +30,7 @@ The ToS byte value is DSCP shifted left by 2 bits (the lower 2 bits are ECN).
 
 ```bash
 # Capture packets and display DSCP values
+
 sudo apt install tcpdump -y
 
 # Show TOS field for all traffic on eth0

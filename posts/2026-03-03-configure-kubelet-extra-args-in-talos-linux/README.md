@@ -52,7 +52,7 @@ Each key-value pair maps to a kubelet command-line flag. The flag name is the ke
 
 Here are some of the most commonly used kubelet extra args in production environments:
 
-### Resource Management
+Resource Management
 
 ```yaml
 machine:
@@ -141,6 +141,7 @@ To use this effectively, make sure your pods request whole CPU numbers:
 
 ```yaml
 # Pod spec that benefits from static CPU manager
+
 resources:
   requests:
     cpu: "2"

@@ -14,6 +14,7 @@ Jenkins is widely used for CI/CD pipelines. Integrating Jenkins with Rancher all
 
 ```bash
 # Add the Jenkins Helm chart
+
 helm repo add jenkins https://charts.jenkins.io
 helm repo update
 
@@ -71,7 +72,7 @@ kubectl get secret -n jenkins jenkins \
 Jenkins' Kubernetes plugin provisions pods as build agents on demand:
 
 ```groovy
-// Jenkinsfile — Declare a Kubernetes agent
+// Jenkinsfile - Declare a Kubernetes agent
 pipeline {
   agent {
     kubernetes {
@@ -130,7 +131,7 @@ curl -sk -X POST \
 ## Step 4: Build a Deploy Pipeline
 
 ```groovy
-// Jenkinsfile — Build, push, and deploy to Rancher cluster
+// Jenkinsfile - Build, push, and deploy to Rancher cluster
 pipeline {
   agent {
     kubernetes {

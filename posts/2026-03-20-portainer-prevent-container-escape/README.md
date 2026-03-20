@@ -26,7 +26,7 @@ graph TD
 
 ## 1. Never Run Privileged Containers
 
-The single most important rule — `--privileged` gives a container nearly unrestricted access to the host:
+The single most important rule - `--privileged` gives a container nearly unrestricted access to the host:
 
 ```yaml
 services:
@@ -40,7 +40,7 @@ In Portainer, the **Runtime & Resources** tab shows a **Privileged mode** toggle
 
 ## 2. Do Not Mount the Docker Socket
 
-Mounting `/var/run/docker.sock` into a container gives it the ability to create new privileged containers — effectively full host access:
+Mounting `/var/run/docker.sock` into a container gives it the ability to create new privileged containers - effectively full host access:
 
 ```yaml
 services:
@@ -133,6 +133,7 @@ Scan for common misconfigurations:
 
 ```bash
 # Check for privileged containers
+
 docker ps -q | xargs docker inspect \
   --format '{{.Name}}: privileged={{.HostConfig.Privileged}}' | grep "true"
 

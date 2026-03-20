@@ -13,12 +13,13 @@ Linux supports MLD (both v1 and v2) natively in the kernel. The kernel automatic
 - Responding to MLD queries from routers
 - Maintaining multicast group membership state
 
-You typically don't configure MLD directly — it runs automatically. However, you can tune its behavior and monitor its state.
+You typically don't configure MLD directly - it runs automatically. However, you can tune its behavior and monitor its state.
 
 ## Viewing Current MLD State
 
 ```bash
 # View all multicast groups the system has joined
+
 ip -6 maddr show
 
 # View groups on a specific interface

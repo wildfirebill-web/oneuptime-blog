@@ -108,6 +108,7 @@ def search_with_answer_generation(
     return response
 
 # Generate an answer for a question
+
 search_with_answer_generation(
     project_id="your-project-id",
     location="global",

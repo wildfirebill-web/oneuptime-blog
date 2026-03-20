@@ -24,6 +24,7 @@ Install func on your system:
 
 ```bash
 # macOS
+
 brew tap knative-sandbox/kn-plugins
 brew install func
 

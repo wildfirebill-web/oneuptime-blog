@@ -136,6 +136,7 @@ The problem is not always the OTLP exporter. Other packages in your dependency t
 
 ```bash
 # Search for packages that depend on @grpc/grpc-js
+
 npm ls @grpc/grpc-js
 ```
 

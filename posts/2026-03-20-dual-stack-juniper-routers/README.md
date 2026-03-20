@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Dual-Stack, Juniper, JunOS
+Tags: IPv6, IPv4, Dual-Stack, Juniper, Junos
 
 Description: Learn how to configure dual-stack IPv4 and IPv6 routing on Juniper routers running JunOS, including interface addressing, static routes, OSPF, and BGP address families.
 
 ## Overview
 
-Juniper JunOS supports dual-stack natively. IPv4 and IPv6 are both first-class routing families — each gets its own RIB (inet.0 for IPv4, inet6.0 for IPv6). Protocols such as OSPF run as separate instances (OSPF for IPv4, OSPFv3 for IPv6), while BGP supports both in a single session using multiprotocol extensions.
+Juniper JunOS supports dual-stack natively. IPv4 and IPv6 are both first-class routing families - each gets its own RIB (inet.0 for IPv4, inet6.0 for IPv6). Protocols such as OSPF run as separate instances (OSPF for IPv4, OSPFv3 for IPv6), while BGP supports both in a single session using multiprotocol extensions.
 
 ## Interface Configuration
 
-```
+```text
 set interfaces ge-0/0/0 unit 0 description "WAN"
 set interfaces ge-0/0/0 unit 0 family inet address 192.0.2.1/24
 set interfaces ge-0/0/0 unit 0 family inet6 address 2001:db8:wan::1/64
@@ -22,19 +22,20 @@ set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.1/24
 set interfaces ge-0/0/1 unit 0 family inet6 address 2001:db8:lan::1/64
 
 # Apply
+
 commit
 ```
 
 Verification:
 
-```
+```text
 show interfaces ge-0/0/0 terse
 show interfaces ge-0/0/1 terse
 ```
 
 ## Static Routes for Both Families
 
-```
+```text
 # IPv4 default route
 set routing-options static route 0.0.0.0/0 next-hop 192.0.2.254
 
@@ -48,7 +49,7 @@ show route table inet6.0
 
 ## OSPF and OSPFv3
 
-```
+```text
 # OSPFv2 for IPv4
 set protocols ospf area 0.0.0.0 interface ge-0/0/1.0
 set protocols ospf area 0.0.0.0 interface lo0.0 passive
@@ -67,7 +68,7 @@ show route protocol ospf3 table inet6.0
 
 ## BGP Dual-Stack (Multiprotocol BGP)
 
-```
+```nginx
 # Configure BGP group with both inet and inet6 families
 set protocols bgp group UPSTREAM type external
 set protocols bgp group UPSTREAM peer-as 65002
@@ -94,7 +95,7 @@ show route protocol bgp table inet6.0
 
 ## Router Advertisement (RA) Configuration
 
-```
+```text
 # Configure RA on LAN interface for host auto-configuration
 set protocols router-advertisement interface ge-0/0/1.0 prefix 2001:db8:lan::/64
 set protocols router-advertisement interface ge-0/0/1.0 max-advertisement-interval 60
@@ -109,7 +110,7 @@ set protocols router-advertisement interface ge-0/0/1.0 managed-information
 
 ## Firewall Filters (ACLs) for Dual-Stack
 
-```
+```text
 # IPv4 filter
 set firewall family inet filter INBOUND-V4 term HTTPS from destination-address 10.0.0.10/32
 set firewall family inet filter INBOUND-V4 term HTTPS from protocol tcp
@@ -137,7 +138,7 @@ set interfaces ge-0/0/0 unit 0 family inet6 filter input INBOUND-V6
 
 ## Verification Commands
 
-```
+```text
 # Interface addresses
 show interfaces terse
 
@@ -163,4 +164,4 @@ traceroute inet6 2001:4860:4860::8888
 
 ## Summary
 
-Juniper JunOS dual-stack assigns both `family inet` and `family inet6` on each interface unit. IPv4 routes live in inet.0, IPv6 routes in inet6.0 — set static routes using `routing-options rib inet6.0` for IPv6. Run OSPFv2 under `protocols ospf` and OSPFv3 under `protocols ospf3` as separate instances. For BGP, add both `family inet unicast` and `family inet6 unicast` to the same or separate neighbors. Create separate `family inet` and `family inet6` firewall filters and apply both on the interface.
+Juniper JunOS dual-stack assigns both `family inet` and `family inet6` on each interface unit. IPv4 routes live in inet.0, IPv6 routes in inet6.0 - set static routes using `routing-options rib inet6.0` for IPv6. Run OSPFv2 under `protocols ospf` and OSPFv3 under `protocols ospf3` as separate instances. For BGP, add both `family inet unicast` and `family inet6 unicast` to the same or separate neighbors. Create separate `family inet` and `family inet6` firewall filters and apply both on the interface.

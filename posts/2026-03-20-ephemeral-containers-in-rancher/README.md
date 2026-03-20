@@ -19,6 +19,7 @@ Ephemeral containers are temporary containers added to a running pod for debuggi
 
 ```bash
 # Add an ephemeral debug container to a running pod
+
 kubectl debug -it pod/myapp-7d4f9b6c-xkv8p \
   -n production \
   --image=busybox:latest \
@@ -33,7 +34,7 @@ ls /proc/1/root/etc/    # View the main container's /etc directory
 
 ## Debugging Distroless Images
 
-Distroless images contain only the application binary and its dependencies—no shell, no package manager. Ephemeral containers let you attach debug tools:
+Distroless images contain only the application binary and its dependencies-no shell, no package manager. Ephemeral containers let you attach debug tools:
 
 ```bash
 # Attach a full debug toolset to a distroless Go application
@@ -113,4 +114,4 @@ kubectl debug -it "pod/${POD_NAME}" \
 
 ## Conclusion
 
-Ephemeral containers in Rancher fill the gap left by minimal production images. The `--target` flag enables full access to the main container's process namespace, filesystem, and network—all without restarting the pod or modifying the production image. This is the safest way to debug production issues in real time.
+Ephemeral containers in Rancher fill the gap left by minimal production images. The `--target` flag enables full access to the main container's process namespace, filesystem, and network-all without restarting the pod or modifying the production image. This is the safest way to debug production issues in real time.

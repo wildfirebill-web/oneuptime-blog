@@ -14,6 +14,7 @@ fwupd is a daemon and command-line tool that manages firmware updates for hardwa
 
 ```bash
 # Install fwupd (often pre-installed on RHEL)
+
 sudo dnf install -y fwupd
 
 # Enable and start the service

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Rate Limiting, DevOps, Security
+Tags: Ansible, Nginx, Rate Limiting, DevOps, Security
 
 Description: Learn how to automate Nginx rate limiting configuration using Ansible playbooks to protect your web applications from abuse and DDoS attacks.
 
@@ -47,6 +47,7 @@ First, let us set up default variables for the role. These control the rate limi
 
 ```yaml
 # roles/nginx_rate_limit/defaults/main.yml
+
 # Rate limiting configuration defaults
 nginx_rate_limit_zones:
   - name: general

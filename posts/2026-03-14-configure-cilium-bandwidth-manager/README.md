@@ -30,6 +30,7 @@ Apply the following Helm values to configure cilium bandwidth manager:
 
 ```yaml
 # cilium-bandwidth-values.yaml
+
 # Bandwidth Manager configuration
 
 # Enable the bandwidth manager

@@ -24,6 +24,7 @@ Set up a CloudFront distribution with an S3 bucket as the origin:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

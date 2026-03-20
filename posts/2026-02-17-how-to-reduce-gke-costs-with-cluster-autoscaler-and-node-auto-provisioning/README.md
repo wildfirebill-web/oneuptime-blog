@@ -26,6 +26,7 @@ If you already have a GKE cluster, you can enable autoscaling on an existing nod
 
 ```bash
 # Enable autoscaling on an existing node pool
+
 gcloud container clusters update my-cluster \
   --zone=us-central1-a \
   --enable-autoscaling \

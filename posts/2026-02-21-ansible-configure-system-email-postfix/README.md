@@ -16,6 +16,7 @@ The problem is that Postfix configuration involves many files and settings that 
 
 ```yaml
 # install-postfix.yml - Install and configure Postfix MTA
+
 ---
 - name: Install Postfix
   hosts: all

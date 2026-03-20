@@ -49,6 +49,7 @@ CPU is compressible - the kernel can throttle it without killing the process. Me
 
 ```yaml
 # cpu-examples.yaml
+
 # CPU resource specifications in Kubernetes
 apiVersion: v1
 kind: Pod

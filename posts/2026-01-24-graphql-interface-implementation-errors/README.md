@@ -47,6 +47,7 @@ Type "Post" must define field "createdAt" required by interface "Node".
 
 ```graphql
 # Interface defines required fields
+
 interface Node {
   id: ID!
   createdAt: DateTime!

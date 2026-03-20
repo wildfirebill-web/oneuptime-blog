@@ -30,6 +30,7 @@ The simplest and most impactful change is activating the High Performance power 
 
 ```yaml
 # playbook-power-plan.yml
+
 # Sets the active power plan to High Performance on all servers
 - name: Configure power plan
   hosts: windows

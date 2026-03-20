@@ -26,6 +26,7 @@ Most RAN vendors expose performance counters through a northbound interface, oft
 
 ```python
 # ran_metrics_collector.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

@@ -26,6 +26,7 @@ Create separate quotas for high and low priority workloads:
 
 ```yaml
 # High priority pods get 30 CPU
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

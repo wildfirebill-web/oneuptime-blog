@@ -14,6 +14,7 @@ Packer's `googlecompute` builder creates GCP Compute Engine custom images. OpenT
 
 ```hcl
 # packer/gcp-web-server.pkr.hcl
+
 packer {
   required_plugins {
     googlecompute = {

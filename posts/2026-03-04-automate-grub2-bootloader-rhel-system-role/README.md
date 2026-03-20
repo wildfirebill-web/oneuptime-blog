@@ -18,6 +18,7 @@ Instead of SSH-ing into each server and running `grubby` commands, you define th
 
 ```bash
 # Install the RHEL System Roles package
+
 sudo dnf install rhel-system-roles -y
 
 # Verify the installation

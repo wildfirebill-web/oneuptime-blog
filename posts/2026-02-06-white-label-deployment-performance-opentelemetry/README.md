@@ -17,12 +17,13 @@ When your product runs under different brands in different environments, you nee
 3. Compare performance across deployments
 4. Detect degradation in specific customer environments
 
-## Resource Attributes for Deployment Identity
+Resource Attributes for Deployment Identity
 
 Every white-label deployment should tag its telemetry with deployment-specific resource attributes:
 
 ```python
 # deployment_resource.py
+
 from opentelemetry.sdk.resources import Resource
 import os
 

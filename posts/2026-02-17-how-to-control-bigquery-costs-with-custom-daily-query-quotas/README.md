@@ -43,6 +43,7 @@ Unfortunately, BigQuery quotas need to be managed through the Cloud Console or t
 
 ```bash
 # Check current BigQuery quotas for your project
+
 gcloud services quotas list \
   --service=bigquery.googleapis.com \
   --consumer=projects/my-project \

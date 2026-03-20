@@ -26,6 +26,7 @@ Before upgrading, prepare your environment:
 
 ```bash
 # Check your current Podman version
+
 podman --version
 
 # List running containers that will need to be restarted

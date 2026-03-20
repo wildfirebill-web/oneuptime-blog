@@ -41,6 +41,7 @@ When you modify templates to add a new optional configuration parameter, increme
 
 ```yaml
 # Before: version 1.5.2
+
 # After: version 1.6.0
 
 # Added new optional feature

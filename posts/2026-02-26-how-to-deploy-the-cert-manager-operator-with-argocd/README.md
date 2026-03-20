@@ -140,6 +140,7 @@ Here is a Let's Encrypt setup with both staging and production issuers:
 
 ```yaml
 # Staging issuer for testing
+
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

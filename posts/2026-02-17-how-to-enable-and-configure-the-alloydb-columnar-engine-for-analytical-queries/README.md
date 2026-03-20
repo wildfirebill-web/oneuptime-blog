@@ -32,6 +32,7 @@ The columnar engine is controlled by a database flag. Enable it on your AlloyDB 
 
 ```bash
 # Enable the columnar engine on your AlloyDB instance
+
 gcloud alloydb instances update my-primary \
   --cluster=my-alloydb-cluster \
   --region=us-central1 \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PTP, IEEE 1588, IPv6, Time Synchronization, linuxptp, Network Precision
+Tags: PTP, IEEE 1588, IPv6, Time Synchronization, Linuxptp, Network Precision
 
 Description: Configure Precision Time Protocol (PTP/IEEE 1588) over IPv6 for sub-microsecond time synchronization in high-precision networks, using linuxptp tools.
 
@@ -13,9 +13,9 @@ PTP (Precision Time Protocol, IEEE 1588) achieves nanosecond-level time synchron
 ## Understanding PTP Transport Modes
 
 PTP supports three transport modes:
-- **L2 (Ethernet)** — Direct Ethernet frames, no IP layer.
-- **UDPv4** — PTP over UDP/IPv4.
-- **UDPv6** — PTP over UDP/IPv6.
+- **L2 (Ethernet)** - Direct Ethernet frames, no IP layer.
+- **UDPv4** - PTP over UDP/IPv4.
+- **UDPv6** - PTP over UDP/IPv6.
 
 For IPv6 networks, use the UDPv6 transport mode.
 
@@ -23,6 +23,7 @@ For IPv6 networks, use the UDPv6 transport mode.
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install linuxptp -y
 
 # RHEL/CentOS/AlmaLinux

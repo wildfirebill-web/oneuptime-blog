@@ -31,6 +31,7 @@ Remove the finalizer from all Applications so deleting them does not cascade-del
 
 ```bash
 # List all applications and their finalizers
+
 kubectl get applications -n argocd -o custom-columns=NAME:.metadata.name,FINALIZERS:.metadata.finalizers
 
 # Remove finalizers from all applications

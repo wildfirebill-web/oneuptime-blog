@@ -32,6 +32,7 @@ If the control plane goes down temporarily and comes back:
 
 ```bash
 # Check if ArgoCD pods recovered
+
 kubectl get pods -n argocd
 
 # If pods are in CrashLoopBackOff, check logs

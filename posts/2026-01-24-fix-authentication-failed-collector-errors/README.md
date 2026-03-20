@@ -89,6 +89,7 @@ exporter = OTLPSpanExporter(
 
 ```yaml
 # otel-collector-config.yaml
+
 exporters:
   otlphttp:
     endpoint: https://oneuptime.com/otlp

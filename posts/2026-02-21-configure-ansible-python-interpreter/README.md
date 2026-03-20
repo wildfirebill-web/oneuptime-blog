@@ -27,6 +27,7 @@ Starting with Ansible 2.8, there is an interpreter discovery feature that tries 
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # auto_silent: auto-detect but don't show warnings (recommended)
 # auto: auto-detect and show warnings

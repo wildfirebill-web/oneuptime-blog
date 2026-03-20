@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, NGINX, Web Server, Reverse Proxy
+Tags: Podman, Containers, DevOps, Nginx, Web Server, Reverse Proxy
 
 Description: Learn how to run Nginx as a web server and reverse proxy inside a Podman container with custom configuration and persistent storage.
 
@@ -20,6 +20,7 @@ Start by pulling the official Nginx image from a container registry.
 
 ```bash
 # Pull the latest official Nginx image
+
 podman pull docker.io/library/nginx:latest
 
 # Verify the image was downloaded

@@ -35,6 +35,7 @@ Create a CI pipeline that runs on every pull request:
 
 ```yaml
 # .github/workflows/pr-validation.yml
+
 name: PR Validation
 
 on:

@@ -1,11 +1,10 @@
----
-title: "How to Use Filesystem Functions in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, filesystem
-description: "Learn how to use abspath, basename, dirname, file, filebase64, fileexists, fileset, and pathexpand in OpenTofu."
----
-
 # How to Use Filesystem Functions in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, Filesystem
+
+Description: Learn how to use abspath, basename, dirname, file, filebase64, fileexists, fileset, and pathexpand in OpenTofu.
 
 OpenTofu provides filesystem functions that let you read files, inspect paths, and work with file contents during configuration evaluation. These are evaluated at plan/apply time on the machine running OpenTofu.
 
@@ -55,6 +54,7 @@ Reads the content of a file as a string:
 
 ```hcl
 # Read SSH public key for EC2 key pair
+
 resource "aws_key_pair" "deploy" {
   key_name   = "deploy-key"
   public_key = file("~/.ssh/id_rsa.pub")

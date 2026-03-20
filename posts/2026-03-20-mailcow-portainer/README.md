@@ -8,7 +8,7 @@ Description: Deploy Mailcow, the full-featured self-hosted email server suite, u
 
 ## Introduction
 
-Mailcow is a Docker-based mail server suite that includes Postfix, Dovecot, SOGo webmail, antispam, and antivirus — all in one package. This guide shows you how to install Mailcow using its official installer and then import it into Portainer for ongoing management.
+Mailcow is a Docker-based mail server suite that includes Postfix, Dovecot, SOGo webmail, antispam, and antivirus - all in one package. This guide shows you how to install Mailcow using its official installer and then import it into Portainer for ongoing management.
 
 ## Prerequisites
 
@@ -22,14 +22,15 @@ Mailcow is a Docker-based mail server suite that includes Postfix, Dovecot, SOGo
 
 Before installing, set up these DNS records:
 
-```
+```text
 # A record
+
 mail.yourdomain.com  A  your.server.ip
 
 # MX record
 yourdomain.com  MX  10  mail.yourdomain.com
 
-# PTR record (reverse DNS — set with your server provider)
+# PTR record (reverse DNS - set with your server provider)
 your.server.ip  PTR  mail.yourdomain.com
 
 # SPF record
@@ -145,4 +146,4 @@ After setup, use Portainer to:
 
 ## Conclusion
 
-Mailcow provides a production-ready, self-hosted email platform and Portainer makes it easy to monitor and manage the ~15 containers it runs. With proper DNS configuration, you'll have a fully functional mail server that rivals hosted email services — all under your control.
+Mailcow provides a production-ready, self-hosted email platform and Portainer makes it easy to monitor and manage the ~15 containers it runs. With proper DNS configuration, you'll have a fully functional mail server that rivals hosted email services - all under your control.

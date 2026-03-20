@@ -43,6 +43,7 @@ A database is the top-level container in Timestream. Each database can hold mult
 
 ```hcl
 # KMS key for encrypting Timestream data
+
 resource "aws_kms_key" "timestream" {
   description             = "KMS key for Timestream database encryption"
   deletion_window_in_days = 7

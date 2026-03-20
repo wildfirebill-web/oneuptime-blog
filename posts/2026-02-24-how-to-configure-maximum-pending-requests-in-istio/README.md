@@ -143,6 +143,7 @@ When requests get rejected because the pending queue is full, Envoy records it:
 
 ```bash
 # Check pending request overflows
+
 kubectl exec deploy/catalog-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "pending"
 

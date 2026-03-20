@@ -29,6 +29,7 @@ The key principle is address space separation: pod CIDR, node subnet, and servic
 
 ```bash
 # Pre-provisioning CIDR audit
+
 # List existing subnets in your infrastructure
 # Compare against planned pod, node, and service CIDRs
 ```

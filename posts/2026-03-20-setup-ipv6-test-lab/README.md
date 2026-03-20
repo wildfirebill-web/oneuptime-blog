@@ -32,6 +32,7 @@ flowchart LR
 # Create a 3-router IPv6 lab using Linux network namespaces
 
 # Create namespaces: Router1, Router2, Router3
+
 for NS in r1 r2 r3; do
     ip netns add ${NS}
     ip netns exec ${NS} ip link set lo up
@@ -148,4 +149,4 @@ echo "Lab cleaned up"
 
 ## Conclusion
 
-A minimal IPv6 test lab needs only a Linux machine with network namespace support — no hardware or expensive licenses required. Network namespaces provide complete isolation with their own routing tables, interfaces, and sysctl settings. FRRouting adds dynamic routing protocols (OSPFv3, BGP, IS-IS) for realistic scenario simulation. For GUI-based labs and router OS images, GNS3 and EVE-NG provide more realistic environments. Always validate the lab with end-to-end reachability tests, DNS queries, and MTU checks before running experiments.
+A minimal IPv6 test lab needs only a Linux machine with network namespace support - no hardware or expensive licenses required. Network namespaces provide complete isolation with their own routing tables, interfaces, and sysctl settings. FRRouting adds dynamic routing protocols (OSPFv3, BGP, IS-IS) for realistic scenario simulation. For GUI-based labs and router OS images, GNS3 and EVE-NG provide more realistic environments. Always validate the lab with end-to-end reachability tests, DNS queries, and MTU checks before running experiments.

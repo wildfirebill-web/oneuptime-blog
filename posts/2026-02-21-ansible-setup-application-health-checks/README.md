@@ -57,6 +57,7 @@ health-checks/
 
 ```yaml
 # group_vars/all.yml
+
 app_name: myapp
 app_port: 8000
 app_health_path: /health

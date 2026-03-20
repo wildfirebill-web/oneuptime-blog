@@ -20,6 +20,7 @@ This configures the required providers and sets up authentication:
 
 ```hcl
 # providers.tf
+
 # Configure the Azure and Azure AD providers
 terraform {
   required_version = ">= 1.5.0"

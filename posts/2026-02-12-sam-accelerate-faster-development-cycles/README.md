@@ -27,6 +27,7 @@ You need SAM CLI version 1.53.0 or later. Check your version and upgrade if need
 
 ```bash
 # Check current SAM CLI version
+
 sam --version
 
 # Upgrade via pip if needed

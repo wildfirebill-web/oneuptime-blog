@@ -211,6 +211,7 @@ Track when overflow happens so you can scale up before it becomes a regular occu
 
 ```promql
 # Connection pool overflows (503 responses from circuit breaking)
+
 sum(rate(istio_requests_total{destination_service="api-service.default.svc.cluster.local", response_code="503", response_flags="UO"}[5m]))
 ```
 

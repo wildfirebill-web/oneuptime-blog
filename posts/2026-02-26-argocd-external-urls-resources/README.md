@@ -117,6 +117,7 @@ When using Kustomize for multi-environment deployments, you can add environment-
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -46,6 +46,7 @@ TCP uses buffers to manage data flow. Too small, and you bottleneck throughput. 
 
 ```bash
 # View current buffer settings
+
 sysctl net.core.rmem_max
 sysctl net.core.wmem_max
 sysctl net.ipv4.tcp_rmem

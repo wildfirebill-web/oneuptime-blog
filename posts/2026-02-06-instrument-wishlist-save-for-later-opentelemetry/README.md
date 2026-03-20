@@ -31,6 +31,7 @@ tracer = trace.get_tracer("wishlist.service")
 meter = metrics.get_meter("wishlist.service")
 
 # Metrics for wishlist behavior
+
 wishlist_adds = meter.create_counter(
     "wishlist.items.added",
     description="Items added to wishlists"

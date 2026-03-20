@@ -24,6 +24,7 @@ A Kafka topic is a logical channel for messages. Producers write to topics, and 
 
 ```bash
 # Create a topic with specific partition count and replication factor
+
 # 12 partitions allows scaling up to 12 consumers in a group
 # Replication factor of 3 tolerates 2 broker failures
 kafka-topics.sh --create \

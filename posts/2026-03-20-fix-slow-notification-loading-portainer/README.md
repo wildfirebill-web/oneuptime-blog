@@ -22,6 +22,7 @@ Portainer stores activity logs and notifications in BoltDB. A large notification
 
 ```bash
 # Inspect the Portainer data volume for database size
+
 docker run --rm -v portainer_data:/data alpine ls -lh /data/portainer.db
 
 # A database file over 500MB often indicates notification accumulation

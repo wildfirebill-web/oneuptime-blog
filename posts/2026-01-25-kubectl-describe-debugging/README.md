@@ -21,6 +21,7 @@ The describe command shows detailed information about a resource including:
 
 ```bash
 # Basic describe syntax
+
 kubectl describe <resource-type> <resource-name> -n <namespace>
 
 # Examples

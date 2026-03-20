@@ -83,6 +83,7 @@ The simplest Singleton in Python is a module. Module-level variables are initial
 
 ```python
 # config.py
+
 # The most Pythonic singleton: a module with state
 # Modules are imported once and cached by Python's import system
 

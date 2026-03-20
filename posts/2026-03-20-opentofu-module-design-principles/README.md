@@ -16,6 +16,7 @@ Each module should do one thing well.
 
 ```hcl
 # BAD: Module does too much
+
 # modules/everything/main.tf
 # Creates: VPC, EKS cluster, RDS, S3, IAM, CloudFront...
 # This is impossible to reuse in different contexts
@@ -30,7 +31,7 @@ modules/
 
 ## Principle 2: Clear Input/Output Interface
 
-Variables and outputs form the module's public interface — design them carefully.
+Variables and outputs form the module's public interface - design them carefully.
 
 ```hcl
 # modules/rds-postgres/variables.tf
@@ -101,7 +102,7 @@ variable "backup_retention_days" {
 variable "deletion_protection" {
   type        = bool
   description = "Enable deletion protection (recommended for production)"
-  default     = true  # safe default — explicit action required to disable
+  default     = true  # safe default - explicit action required to disable
 }
 ```
 

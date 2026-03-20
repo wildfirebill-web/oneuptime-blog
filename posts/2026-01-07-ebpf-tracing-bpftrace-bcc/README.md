@@ -84,6 +84,7 @@ The following commands install bpftrace on common Linux distributions. bpftrace 
 
 ```bash
 # Ubuntu/Debian - Install bpftrace from official repositories
+
 # bpftrace is available in Ubuntu 19.04+ and Debian 10+
 sudo apt-get update
 sudo apt-get install -y bpftrace

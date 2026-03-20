@@ -26,6 +26,7 @@ When creating a new VM, boot diagnostics can be enabled with a single flag:
 
 ```bash
 # Create a VM with boot diagnostics enabled using managed storage
+
 az vm create \
   --resource-group myResourceGroup \
   --name myVM \

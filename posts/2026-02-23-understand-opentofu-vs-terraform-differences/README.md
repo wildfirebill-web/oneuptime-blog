@@ -40,6 +40,7 @@ Since the fork, both projects have continued development independently. Some fea
 
 ```hcl
 # OpenTofu state encryption configuration
+
 terraform {
   encryption {
     key_provider "pbkdf2" "my_key" {

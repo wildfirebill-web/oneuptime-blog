@@ -32,6 +32,7 @@ Enable the required APIs:
 
 ```bash
 # Enable Container Analysis and related APIs
+
 gcloud services enable \
   containeranalysis.googleapis.com \
   containerscanning.googleapis.com \

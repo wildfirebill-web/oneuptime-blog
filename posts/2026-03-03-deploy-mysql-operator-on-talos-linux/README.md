@@ -34,6 +34,7 @@ The MySQL Operator is installed via its official Helm chart maintained by Oracle
 
 ```bash
 # Add the MySQL Operator Helm repository
+
 helm repo add mysql-operator https://mysql.github.io/mysql-operator/
 
 # Update the repository cache

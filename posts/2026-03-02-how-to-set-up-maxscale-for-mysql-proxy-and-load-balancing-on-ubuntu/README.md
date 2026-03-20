@@ -38,6 +38,7 @@ For this guide, we'll use:
 
 ```bash
 # Add MariaDB repository (MaxScale is distributed by MariaDB)
+
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash
 
 # Install MaxScale

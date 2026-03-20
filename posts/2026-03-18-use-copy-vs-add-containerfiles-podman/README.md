@@ -22,6 +22,7 @@ COPY transfers files or directories from the build context into the container fi
 
 ```dockerfile
 # Basic file copy
+
 COPY app.py /app/app.py
 
 # Copy a directory

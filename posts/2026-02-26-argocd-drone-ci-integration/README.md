@@ -32,6 +32,7 @@ Create a `.drone.yml` file in your application repository. This pipeline builds 
 
 ```yaml
 # .drone.yml
+
 kind: pipeline
 type: docker
 name: build-and-update

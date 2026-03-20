@@ -246,6 +246,7 @@ Deploy the same canary across multiple AWS regions to detect regional issues and
 
 ```bash
 # Deploy canary in us-east-1
+
 aws synthetics create-canary \
   --region us-east-1 \
   --name api-monitor-us-east \

@@ -8,7 +8,7 @@ Description: Learn how to create and manage Docker Swarm secrets through Portain
 
 ---
 
-Docker Swarm secrets let you store sensitive data — passwords, API keys, certificates — in the cluster's encrypted store and mount them into containers as files. Portainer provides a UI for managing these secrets across your Swarm without exposing values in Compose files or environment variables.
+Docker Swarm secrets let you store sensitive data - passwords, API keys, certificates - in the cluster's encrypted store and mount them into containers as files. Portainer provides a UI for managing these secrets across your Swarm without exposing values in Compose files or environment variables.
 
 ---
 
@@ -32,6 +32,7 @@ Alternatively, use the CLI:
 
 ```bash
 # Create a secret from a string
+
 echo "my-super-secret-password" | docker secret create db_password -
 
 # Create a secret from a file (e.g., a TLS certificate)
@@ -48,7 +49,7 @@ docker secret ls
 Reference secrets in your Docker Compose file using the `secrets:` key.
 
 ```yaml
-# app-with-secrets-stack.yml — Swarm stack using Docker secrets
+# app-with-secrets-stack.yml - Swarm stack using Docker secrets
 version: "3.8"
 
 services:
@@ -113,7 +114,7 @@ api_key = read_secret("api_key")
 
 ## Step 4: Rotate Secrets Safely
 
-Docker secrets are immutable — you can't update a secret's value in place. To rotate a secret:
+Docker secrets are immutable - you can't update a secret's value in place. To rotate a secret:
 
 ```bash
 # Create a new version of the secret
@@ -131,9 +132,9 @@ docker secret rm db_password
 ## Step 5: View Secret Usage in Portainer
 
 In Portainer:
-- **Swarm > Secrets** — shows all secrets and which services use them
-- **Swarm > Services** — each service shows which secrets are mounted
-- Secret values are **never displayed** in the UI — only names and metadata
+- **Swarm > Secrets** - shows all secrets and which services use them
+- **Swarm > Services** - each service shows which secrets are mounted
+- Secret values are **never displayed** in the UI - only names and metadata
 
 ---
 

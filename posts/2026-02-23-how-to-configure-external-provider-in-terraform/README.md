@@ -21,6 +21,7 @@ The External provider works through a simple contract: your program reads JSON f
 
 ```hcl
 # versions.tf - Declare the External provider
+
 terraform {
   required_version = ">= 1.0"
 

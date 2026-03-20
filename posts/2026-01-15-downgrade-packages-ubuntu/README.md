@@ -20,6 +20,7 @@ Sometimes package updates introduce bugs, break compatibility, or cause unexpect
 
 ```bash
 # Check installed version
+
 apt show package-name | grep Version
 
 # Example: Check nginx version

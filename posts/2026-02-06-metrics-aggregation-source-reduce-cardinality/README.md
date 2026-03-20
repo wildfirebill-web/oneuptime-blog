@@ -27,6 +27,7 @@ Here is how to configure Views in a Python application to reduce cardinality:
 
 ```python
 # Configure SDK Views to aggregate metrics at the source.
+
 # This drops high-cardinality attributes and customizes histogram buckets.
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.view import View, ExplicitBucketHistogramAggregation

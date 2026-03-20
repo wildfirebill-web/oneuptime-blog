@@ -18,6 +18,7 @@ Path triggers are defined in the `trigger` section of your YAML pipeline. You sp
 
 ```yaml
 # api-pipeline.yml - only triggers when API code changes
+
 trigger:
   branches:
     include:

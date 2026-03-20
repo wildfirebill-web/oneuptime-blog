@@ -55,6 +55,7 @@ ArgoCD Applications:
 
 ```yaml
 # One Application per environment
+
 - name: my-api-dev
   path: my-api/overlays/dev
 

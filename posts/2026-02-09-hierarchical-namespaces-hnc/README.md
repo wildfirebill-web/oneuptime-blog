@@ -30,6 +30,7 @@ Deploy HNC using kubectl:
 
 ```bash
 # Install HNC
+
 kubectl apply -f https://github.com/kubernetes-sigs/hierarchical-namespaces/releases/download/v1.1.0/hnc-manager.yaml
 
 # Verify installation

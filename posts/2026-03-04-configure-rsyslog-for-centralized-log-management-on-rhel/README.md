@@ -16,6 +16,7 @@ On the server that will receive logs:
 
 ```bash
 # Edit the rsyslog configuration
+
 sudo vi /etc/rsyslog.conf
 
 # Uncomment these lines to enable UDP and TCP reception:

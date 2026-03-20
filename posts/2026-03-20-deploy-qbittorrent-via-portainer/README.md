@@ -49,8 +49,9 @@ volumes:
 
 On first boot, qBittorrent generates a temporary admin password visible in the container logs:
 
-```
+```text
 # In Portainer, go to Containers > qbittorrent > Logs and look for:
+
 # The WebUI administrator username is: admin
 # The WebUI administrator password is: <temporary-password>
 ```

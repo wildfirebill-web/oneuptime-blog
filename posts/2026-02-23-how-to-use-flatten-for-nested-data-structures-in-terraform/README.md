@@ -16,6 +16,7 @@ The `flatten` function takes a list that may contain nested lists and returns a 
 
 ```hcl
 # Flatten a list of lists
+
 > flatten([["a", "b"], ["c", "d"], ["e"]])
 [
   "a",

@@ -26,6 +26,7 @@ The VPP management socket (`/run/vpp/cli.sock`) must be protected:
 
 ```bash
 # Verify socket permissions on the node
+
 ls -la /run/vpp/
 # cli.sock should be owned by root with restricted permissions
 

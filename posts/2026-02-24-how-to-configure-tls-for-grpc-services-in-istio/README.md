@@ -269,6 +269,7 @@ gRPC TLS issues often manifest as cryptic error codes. Here are common ones:
 
 ```bash
 # Verify protocol detection
+
 istioctl proxy-config listener <pod-name> -o json | \
   jq '.[] | select(.name | contains("50051")) | .filterChains[].filters[].typedConfig.httpProtocolOptions'
 ```

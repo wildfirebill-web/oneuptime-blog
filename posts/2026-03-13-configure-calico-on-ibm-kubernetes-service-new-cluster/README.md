@@ -29,6 +29,7 @@ Create a new IKS cluster - Calico is automatically included.
 
 ```bash
 # Log in to IBM Cloud
+
 ibmcloud login -a https://cloud.ibm.com
 
 # Set your target region and resource group

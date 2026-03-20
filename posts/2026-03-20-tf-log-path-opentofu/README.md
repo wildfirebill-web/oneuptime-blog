@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # Redirect all logs to a file
+
 export TF_LOG=DEBUG
 export TF_LOG_PATH="./tofu-debug.log"
 tofu plan
@@ -47,7 +48,7 @@ tofu apply
 
 ## Log File Structure
 
-```
+```hcl
 # Example TF_LOG_PATH file content structure
 # Each line includes: timestamp [LEVEL] source: message
 
@@ -119,7 +120,7 @@ tofu apply 2>&1 | tee -a /var/log/opentofu/apply-$(date +%Y%m%d).log
 
 ```bash
 #!/bin/bash
-# scripts/analyze-logs.sh — extract useful information from tofu logs
+# scripts/analyze-logs.sh - extract useful information from tofu logs
 
 LOG_FILE="${1:-./tofu-debug.log}"
 
@@ -178,8 +179,8 @@ rm -f /tmp/tofu-*.log
 
 ## Best Practices
 
-- Set `TF_LOG_PATH` to `/tmp/tofu-<run-id>.log` in CI/CD rather than the workspace directory — this prevents log files from being accidentally included in artifacts or polluting the workspace.
-- Use `TF_LOG=INFO` or `TF_LOG=DEBUG` for most CI/CD runs, and only escalate to `TRACE` for specific troubleshooting sessions — TRACE logs can be hundreds of megabytes for large configurations.
-- Always upload log files as CI artifacts when a plan or apply fails — having the debug logs available after the fact eliminates the need to re-run with logging enabled.
-- Scrub log files before sharing with external support — search for AWS account IDs, access keys, secret values, and resource ARNs before sending logs to third parties.
-- Set log file retention to 3-7 days in CI/CD — debug logs are only useful immediately after a failure and shouldn't accumulate indefinitely.
+- Set `TF_LOG_PATH` to `/tmp/tofu-<run-id>.log` in CI/CD rather than the workspace directory - this prevents log files from being accidentally included in artifacts or polluting the workspace.
+- Use `TF_LOG=INFO` or `TF_LOG=DEBUG` for most CI/CD runs, and only escalate to `TRACE` for specific troubleshooting sessions - TRACE logs can be hundreds of megabytes for large configurations.
+- Always upload log files as CI artifacts when a plan or apply fails - having the debug logs available after the fact eliminates the need to re-run with logging enabled.
+- Scrub log files before sharing with external support - search for AWS account IDs, access keys, secret values, and resource ARNs before sending logs to third parties.
+- Set log file retention to 3-7 days in CI/CD - debug logs are only useful immediately after a failure and shouldn't accumulate indefinitely.

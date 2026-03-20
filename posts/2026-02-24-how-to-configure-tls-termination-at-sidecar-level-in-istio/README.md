@@ -224,6 +224,7 @@ Test the TLS connection:
 
 ```bash
 # From another pod in the cluster
+
 kubectl exec <test-pod> -- \
   openssl s_client -connect my-service.production:8443 -servername my-service.production
 ```

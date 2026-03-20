@@ -20,6 +20,7 @@ Download the WordPress and MariaDB images.
 
 ```bash
 # Pull the WordPress and MariaDB images
+
 podman pull docker.io/library/wordpress:latest
 podman pull docker.io/library/mariadb:11
 
@@ -143,6 +144,7 @@ cat > ~/wp-dev/themes/my-theme/style.css <<'EOF'
 Theme Name: My Podman Theme
 Theme URI: http://localhost:8080
 Description: A custom theme developed in Podman
+
 Author: Developer
 Version: 1.0.0
 */

@@ -34,6 +34,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
 }
 
 # Add explicit sleep to allow IAM to propagate before Lambda creation
+
 resource "time_sleep" "iam_propagation" {
   depends_on = [aws_iam_role_policy_attachment.lambda_basic]
 

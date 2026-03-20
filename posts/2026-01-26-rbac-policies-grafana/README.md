@@ -72,6 +72,7 @@ Navigate to a folder and click "Permissions" to configure access:
 
 ```yaml
 # Example: Platform folder permissions
+
 Folder: Platform
 Permissions:
   - Role: Admin

@@ -52,6 +52,7 @@ If you do not have a Google Workspace domain, start with Cloud Identity Free.
 
 ```bash
 # Verify your domain ownership first
+
 # Then create the Cloud Identity account via:
 # https://workspace.google.com/signup/gcpidentity/welcome
 

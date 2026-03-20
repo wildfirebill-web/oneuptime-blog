@@ -18,6 +18,7 @@ Many organizations start with everything in one large subnet:
 
 ```bash
 # Discover all active devices on the flat network
+
 nmap -sn 10.0.0.0/8 -oG - | awk '/Up$/{print $2}' > /tmp/all-hosts.txt
 
 # Try to identify device types by port scan
@@ -35,16 +36,16 @@ cat /tmp/service-scan.txt | grep "3389/open" | wc -l   # Windows devices
 
 ## Step 2: Design the Target State
 
-```
+```text
 Target: Segmented network with security zones
 
-VLAN 10 — Corporate Users    10.1.10.0/24  (254 hosts)
-VLAN 20 — Servers            10.1.20.0/24  (254 hosts)
-VLAN 30 — DMZ                10.1.30.0/28  (14 hosts — small!)
-VLAN 40 — Management/OOB     10.1.40.0/27  (30 network devices)
-VLAN 50 — VoIP               10.1.50.0/24  (254 phones)
-VLAN 60 — IoT                10.1.60.0/24  (isolated, no internet)
-VLAN 99 — Native/Trunk       (untagged management traffic)
+VLAN 10 - Corporate Users    10.1.10.0/24  (254 hosts)
+VLAN 20 - Servers            10.1.20.0/24  (254 hosts)
+VLAN 30 - DMZ                10.1.30.0/28  (14 hosts - small!)
+VLAN 40 - Management/OOB     10.1.40.0/27  (30 network devices)
+VLAN 50 - VoIP               10.1.50.0/24  (254 phones)
+VLAN 60 - IoT                10.1.60.0/24  (isolated, no internet)
+VLAN 99 - Native/Trunk       (untagged management traffic)
 
 Migration from flat:
   Old: 10.0.0.0/8 (everything)
@@ -55,7 +56,7 @@ Migration from flat:
 
 Migrate in this order to minimize risk:
 
-```
+```text
 Phase 1: Network infrastructure (switches, routers, APs)
   - Move to VLAN 40 (management)
   - Low risk: these devices don't have users
@@ -76,14 +77,14 @@ Phase 4: IoT/Cameras
   - May require physical access for some devices
 
 Phase 5: User workstations
-  - Last — largest number of devices
+  - Last - largest number of devices
   - Use DHCP to migrate (change pool to new subnet)
   - Short cutover window during non-business hours
 ```
 
 ## Step 4: Configure the New VLANs
 
-```
+```text
 ! On the core switch
 vlan 10
  name CORPORATE_USERS

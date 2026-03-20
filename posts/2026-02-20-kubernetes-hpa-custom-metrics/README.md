@@ -29,6 +29,7 @@ If you do not already have Prometheus in your cluster, install it using Helm.
 
 ```bash
 # Add the Prometheus community Helm chart repository
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

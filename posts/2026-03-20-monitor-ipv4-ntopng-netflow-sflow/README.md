@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ntopng, NetFlow, sFlow, Traffic Monitoring, IPv4, Network Analytics
+Tags: Ntopng, NetFlow, sFlow, Traffic Monitoring, IPv4, Network Analytics
 
 Description: Learn how to install ntopng and configure it to receive NetFlow and sFlow data for real-time IPv4 traffic monitoring and visualization.
 
@@ -14,6 +14,7 @@ ntopng is an open-source network traffic monitoring tool that provides a web-bas
 
 ```bash
 # Add ntop repository
+
 sudo apt-get install -y software-properties-common curl
 curl https://packages.ntop.org/APT/ntop.key | sudo apt-key add -
 echo "deb http://packages.ntop.org/apt-stable/20.04/ x64/" | \
@@ -76,7 +77,7 @@ To receive sFlow instead of (or in addition to) NetFlow:
 
 On your Cisco router, configure NetFlow export to ntopng:
 
-```
+```bash
 ! Send NetFlow v5 to ntopng server
 Router(config)# ip flow-export destination 192.168.1.200 2055
 Router(config)# ip flow-export version 5

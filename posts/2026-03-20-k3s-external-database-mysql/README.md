@@ -18,6 +18,7 @@ Install and configure MySQL 8.0+:
 
 ```bash
 # Install MySQL on a dedicated database node
+
 sudo apt-get install -y mysql-server
 
 # Secure the installation
@@ -91,7 +92,7 @@ curl -sfL https://get.k3s.io | sh -s - server \
 
 Put a load balancer (HAProxy, Nginx, or cloud LB) in front of all server nodes on ports 6443 (API) and 6444 (supervisor):
 
-```
+```text
 backend k3s-servers
     server k3s-1 192.168.1.11:6443 check
     server k3s-2 192.168.1.12:6443 check
@@ -129,4 +130,4 @@ mysql -h 192.168.1.50 -u k3suser -p k3s < k3s-backup-20260320.sql
 - Use MySQL with read replicas and point K3s at the primary for writes.
 - Enable SSL/TLS for the MySQL connection: append `?tls=true` to the DSN.
 - Back up the MySQL database before every K3s upgrade.
-- Monitor MySQL replication lag — if the replica lags significantly, K3s HA may be affected during failover.
+- Monitor MySQL replication lag - if the replica lags significantly, K3s HA may be affected during failover.

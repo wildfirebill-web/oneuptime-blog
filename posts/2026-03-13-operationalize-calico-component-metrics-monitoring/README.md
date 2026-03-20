@@ -26,6 +26,7 @@ Operationalizing Calico metrics monitoring means building processes around the m
 
 ```yaml
 # Prometheus retention for Calico metrics
+
 # In kube-prometheus-stack values.yaml
 prometheus:
   prometheusSpec:

@@ -135,6 +135,7 @@ Configure PlayFab to export events to an Event Hub, then set up ADX to ingest fr
 
 ```bash
 # Create an Event Hub namespace and hub for PlayFab events
+
 az eventhubs namespace create \
   --name game-analytics-ns \
   --resource-group gaming-rg \

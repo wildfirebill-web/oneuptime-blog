@@ -32,6 +32,7 @@ Create a Route53 hosted zone:
 
 ```bash
 # Create hosted zone
+
 aws route53 create-hosted-zone \
   --name example.com \
   --caller-reference $(date +%s)

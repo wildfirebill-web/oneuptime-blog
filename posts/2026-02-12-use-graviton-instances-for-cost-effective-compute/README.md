@@ -35,6 +35,7 @@ Check your existing instances and their software stack:
 
 ```bash
 # List all EC2 instances and their architectures
+
 aws ec2 describe-instances \
   --filters "Name=instance-state-name,Values=running" \
   --query "Reservations[].Instances[].{

@@ -71,6 +71,7 @@ Update your system packages and install WireGuard on the server.
 
 ```bash
 # Update package lists to ensure we get the latest versions
+
 sudo apt update
 
 # Install WireGuard and required tools

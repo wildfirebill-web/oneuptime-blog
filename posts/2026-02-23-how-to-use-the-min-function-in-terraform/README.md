@@ -16,6 +16,7 @@ The `min` function takes one or more numbers and returns the smallest one:
 
 ```hcl
 # min(number1, number2, ...)
+
 # Returns the smallest number
 min(5, 12, 3)    # Returns: 3
 min(1, 1, 1)     # Returns: 1

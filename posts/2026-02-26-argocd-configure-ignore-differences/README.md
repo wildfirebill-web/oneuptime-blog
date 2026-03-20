@@ -200,6 +200,7 @@ You can also configure this globally:
 
 ```yaml
 # In argocd-cm
+
 resource.customizations.ignoreDifferences.all: |
   managedFields:
     - manager: kube-controller-manager

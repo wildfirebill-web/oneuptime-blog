@@ -14,6 +14,7 @@ Storing secrets in plain text files, environment variables, or configuration man
 
 ```yaml
 # roles/vault/defaults/main.yml - Vault server configuration
+
 vault_version: "1.15.4"
 vault_domain: vault.example.internal
 vault_api_port: 8200

@@ -354,6 +354,7 @@ Wire everything together with API Gateway:
 
 ```yaml
 # serverless.yml or SAM template - API routes
+
 Resources:
   HttpApi:
     Type: AWS::ApiGatewayV2::Api

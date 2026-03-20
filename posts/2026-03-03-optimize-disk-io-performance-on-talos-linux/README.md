@@ -24,6 +24,7 @@ For NVMe drives, use the `none` scheduler. NVMe devices have their own internal 
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     extraKernelArgs:

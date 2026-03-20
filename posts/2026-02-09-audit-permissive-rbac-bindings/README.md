@@ -30,6 +30,7 @@ RBAC-Lookup is a kubectl plugin that simplifies RBAC auditing by showing who has
 
 ```bash
 # Install Krew if you haven't already
+
 kubectl krew install rbac-lookup
 ```
 

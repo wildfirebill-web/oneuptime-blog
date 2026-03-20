@@ -40,6 +40,7 @@ The server address depends on how you exposed ArgoCD.
 
 ```bash
 # If using port-forward
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443 &
 # Server address: localhost:8080
 

@@ -65,6 +65,7 @@ access/
 
 ```yaml
 # access/teleport/Chart.yaml
+
 apiVersion: v2
 name: teleport-cluster
 description: Wrapper chart for Teleport

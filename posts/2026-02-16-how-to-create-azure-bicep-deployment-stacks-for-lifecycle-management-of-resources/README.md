@@ -106,6 +106,7 @@ Deploy this through a deployment stack instead of a regular deployment:
 
 ```bash
 # Create a deployment stack at the resource group scope
+
 az stack group create \
   --name "myapp-stack" \
   --resource-group "rg-myapp-dev" \

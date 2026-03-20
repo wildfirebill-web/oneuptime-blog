@@ -22,6 +22,7 @@ You can query AMP from Managed Grafana (the most common approach), from the comm
 
 ```bash
 # Install awscurl for SigV4-authenticated requests
+
 pip install awscurl
 
 # Run a simple query
@@ -167,7 +168,7 @@ rate(http_request_duration_seconds_count[5m])
 
 Averages can be misleading because they hide outliers, but they are useful as a general trend indicator alongside percentiles.
 
-## Resource Utilization Patterns
+Resource Utilization Patterns
 
 ### CPU Usage
 

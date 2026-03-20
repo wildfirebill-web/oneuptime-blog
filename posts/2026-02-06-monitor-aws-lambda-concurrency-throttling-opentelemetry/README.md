@@ -43,6 +43,7 @@ Start by adding the OpenTelemetry Lambda layer to your function. This gives you 
 
 ```yaml
 # serverless.yml
+
 service: concurrency-monitor
 
 provider:

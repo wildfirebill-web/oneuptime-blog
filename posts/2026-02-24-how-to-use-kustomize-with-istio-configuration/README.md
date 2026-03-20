@@ -44,6 +44,7 @@ The base contains the common configuration shared across all environments:
 
 ```yaml
 # istio/base/virtual-service.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

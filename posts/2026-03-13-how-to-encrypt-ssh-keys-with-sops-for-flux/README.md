@@ -258,6 +258,7 @@ When rotating SSH keys:
 
 ```bash
 # Generate a new key pair
+
 ssh-keygen -t ed25519 -f new-deploy-key -N ""
 
 # Update the encrypted secret

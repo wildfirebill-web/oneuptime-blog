@@ -29,6 +29,7 @@ Create the Pub/Sub infrastructure for receiving events:
 
 ```bash
 # Create the events topic
+
 gcloud pubsub topics create dashboard-events \
   --message-retention-duration=24h
 

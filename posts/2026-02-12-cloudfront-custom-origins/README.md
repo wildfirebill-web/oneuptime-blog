@@ -78,6 +78,7 @@ Here's a distribution configuration with an ALB as a custom origin:
 
 ```bash
 # Create the distribution
+
 aws cloudfront create-distribution \
   --distribution-config file://custom-origin-dist.json
 ```

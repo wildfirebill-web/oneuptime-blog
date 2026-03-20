@@ -18,6 +18,7 @@ First, confirm the distribution status:
 
 ```bash
 # Check distribution status
+
 aws cloudfront get-distribution --id E1234567890 \
     --query 'Distribution.{Status:Status,DomainName:DomainName,Enabled:DistributionConfig.Enabled}'
 ```

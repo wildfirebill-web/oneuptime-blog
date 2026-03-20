@@ -27,6 +27,7 @@ graph LR
 # /etc/squid/squid.conf (on the child proxy)
 
 # --- Parent cache peer definition ---
+
 # cache_peer <hostname/IP> parent <http_port> <icp_port> [options]
 # ICP port 0 disables ICP; use 7 for ICP-based cache queries
 cache_peer 10.0.0.1 parent 3128 0 no-query default
@@ -48,7 +49,7 @@ http_access deny all
 
 ## Parent Squid Configuration
 
-The parent needs no special configuration for hierarchy — it acts as a regular Squid proxy. Ensure it accepts connections from the child's IPv4 address.
+The parent needs no special configuration for hierarchy - it acts as a regular Squid proxy. Ensure it accepts connections from the child's IPv4 address.
 
 ```squid
 # /etc/squid/squid.conf (on the parent proxy)
@@ -64,10 +65,10 @@ http_access deny all
 
 ```squid
 # Options for the cache_peer directive:
-# no-query    — Don't use ICP to check if the parent has the object
-# default     — Use this peer as the default if no other peer matches
-# login=user:pass — Authenticate with the parent if it requires credentials
-# proxy-only  — Don't cache objects fetched via this peer locally
+# no-query    - Don't use ICP to check if the parent has the object
+# default     - Use this peer as the default if no other peer matches
+# login=user:pass - Authenticate with the parent if it requires credentials
+# proxy-only  - Don't cache objects fetched via this peer locally
 
 cache_peer 10.0.0.1 parent 3128 0 no-query default proxy-only login=squid:secret
 ```

@@ -64,6 +64,7 @@ Find your node IP and subnet to plan the address pool:
 
 ```bash
 # Show the IP address and subnet of your primary network interface
+
 # Look for the inet line under your active interface (e.g., eth0 or enp0s3)
 ip addr show
 ```
@@ -288,7 +289,7 @@ Your MetalLB IP range must not overlap with your router's DHCP range. Check your
 | Node static IP | 192.168.1.50 |
 | MetalLB pool | 192.168.1.240 - 192.168.1.250 |
 
-### Resource Usage
+Resource Usage
 
 MetalLB is lightweight. The speaker and controller pods together use roughly 50-100 MB of RAM and minimal CPU, so they are fine even on a Raspberry Pi 4.
 

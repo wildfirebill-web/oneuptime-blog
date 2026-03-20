@@ -183,6 +183,7 @@ The following command installs all the necessary OpenTelemetry packages: the cor
 
 ```bash
 # Install OpenTelemetry core packages for Node.js metrics collection
+
 # @opentelemetry/api - Core API for creating metrics and spans
 # @opentelemetry/sdk-node - Node.js SDK that ties everything together
 # @opentelemetry/auto-instrumentations-node - Automatic instrumentation for common libraries

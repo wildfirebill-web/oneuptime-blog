@@ -72,6 +72,7 @@ Verify your system meets the minimum requirements for Calico.
 
 ```bash
 # Check Ubuntu version (20.04 LTS or later recommended)
+
 lsb_release -a
 
 # Verify kernel version (4.9.17 or later required)

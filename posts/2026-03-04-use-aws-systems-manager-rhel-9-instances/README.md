@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # The SSM Agent is pre-installed on official AWS RHEL AMIs
+
 # Verify it is running
 sudo systemctl status amazon-ssm-agent
 

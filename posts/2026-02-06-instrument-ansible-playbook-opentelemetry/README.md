@@ -49,6 +49,7 @@ First, install the required packages on your Ansible control node:
 
 ```bash
 # Install the OpenTelemetry SDK and OTLP exporter
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc
 ```
 

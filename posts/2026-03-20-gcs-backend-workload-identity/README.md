@@ -23,6 +23,7 @@ Workload Identity Federation allows external identities (like GitHub Actions wor
 # workload-identity.tf
 
 # Create the Identity Pool
+
 resource "google_iam_workload_identity_pool" "github" {
   workload_identity_pool_id = "github-pool"
   display_name              = "GitHub Actions Pool"
@@ -82,7 +83,7 @@ terraform {
     bucket = "my-terraform-state-bucket"
     prefix = "prod"
 
-    # Impersonate the SA — credentials come from Workload Identity
+    # Impersonate the SA - credentials come from Workload Identity
     impersonate_service_account = "sa-opentofu-runner@my-project.iam.gserviceaccount.com"
   }
 }

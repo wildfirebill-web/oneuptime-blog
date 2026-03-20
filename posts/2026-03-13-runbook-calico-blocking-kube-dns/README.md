@@ -29,6 +29,7 @@ Calico blocking kube-dns is a P1 incident - it causes total DNS failure across a
 kubectl run dns-emergency --image=busybox --restart=Never --rm -i \
   --timeout=10s -- nslookup kubernetes.default 2>&1
 # If this fails: cluster-wide DNS is down
+
 ```
 
 **Find the blocking policy**

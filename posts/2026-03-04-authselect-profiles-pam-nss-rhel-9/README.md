@@ -30,6 +30,7 @@ RHEL ships with three built-in profiles:
 
 ```bash
 # List available profiles
+
 authselect list
 ```
 

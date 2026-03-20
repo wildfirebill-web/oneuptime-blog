@@ -39,6 +39,7 @@ You can also pull recommendations programmatically:
 
 ```bash
 # List all available recommenders
+
 gcloud recommender recommenders list --format="table(name)"
 
 # List cost recommendations for Compute Engine rightsizing

@@ -26,6 +26,7 @@ This playbook installs Chrony and deploys an NTS-enabled configuration:
 
 ```yaml
 # configure-nts-clients.yml - Set up NTS time sync on all servers
+
 ---
 - name: Configure NTS Time Synchronization
   hosts: all

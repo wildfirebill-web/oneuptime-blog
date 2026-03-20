@@ -31,7 +31,7 @@ The migration process:
 
 Live migration requires:
 - At least 2 nodes with sufficient resources
-- Shared storage (Longhorn — already built into Harvester)
+- Shared storage (Longhorn - already built into Harvester)
 - Network connectivity between nodes for memory transfer
 - The VM must not have PCI passthrough or SR-IOV devices (these prevent live migration)
 
@@ -39,6 +39,7 @@ Live migration requires:
 
 ```bash
 # Check if a VM is migratable
+
 kubectl get vmi ubuntu-web-01 -n default \
     -o jsonpath='{.status.conditions[?(@.type=="LiveMigratable")]}' | jq .
 

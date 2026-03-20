@@ -35,6 +35,7 @@ A typical Beanstalk configuration in .ebextensions looks like this:
 
 ```yaml
 # .ebextensions/01-environment.config (Elastic Beanstalk)
+
 option_settings:
   aws:elasticbeanstalk:application:environment:
     DATABASE_URL: "postgres://user:pass@host:5432/db"

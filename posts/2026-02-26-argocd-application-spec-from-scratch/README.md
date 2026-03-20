@@ -79,6 +79,7 @@ Projects define what repositories, clusters, and namespaces an application can u
 
 ```bash
 # List available projects
+
 argocd proj list
 
 # Create a project

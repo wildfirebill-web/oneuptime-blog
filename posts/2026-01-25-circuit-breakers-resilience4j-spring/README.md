@@ -75,6 +75,7 @@ Configure your circuit breakers in `application.yml`. This configuration defines
 
 ```yaml
 # application.yml
+
 resilience4j:
   circuitbreaker:
     instances:

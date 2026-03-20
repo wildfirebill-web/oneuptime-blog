@@ -14,6 +14,7 @@ The `[Match]` section determines which interfaces a `.network` or `.link` file a
 
 ```ini
 # /etc/systemd/network/eth0.network
+
 [Match]
 Name=eth0          # Exact name match
 
@@ -97,7 +98,7 @@ MACAddress=aa:bb:cc:*:*:*
 
 ## Match Precedence
 
-```
+```text
 Files are processed in lexicographic order (10- before 20- before 99-)
 More specific files should have lower numbers to be processed first
 The FIRST matching file wins (for .link files)
@@ -107,7 +108,7 @@ For .network files, all matching files are merged
 ## Example: Different Config for Physical vs. Virtual
 
 ```ini
-# /etc/systemd/network/10-vm.network — VMs (virtio)
+# /etc/systemd/network/10-vm.network - VMs (virtio)
 [Match]
 Driver=virtio_net
 Virtualization=vm
@@ -115,7 +116,7 @@ Virtualization=vm
 [Network]
 DHCP=yes
 
-# /etc/systemd/network/20-physical.network — Physical servers
+# /etc/systemd/network/20-physical.network - Physical servers
 [Match]
 Type=ether
 Virtualization=no

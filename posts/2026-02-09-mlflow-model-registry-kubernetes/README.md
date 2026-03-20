@@ -28,6 +28,7 @@ Start with PostgreSQL for storing experiment metadata:
 
 ```yaml
 # mlflow-postgres.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

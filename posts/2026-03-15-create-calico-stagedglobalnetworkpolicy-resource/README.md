@@ -189,6 +189,7 @@ After deploying staged policies, review their impact through flow logs:
 
 ```bash
 # Check flow logs for staged policy verdicts
+
 kubectl logs -n calico-system -l k8s-app=calico-node --tail=100 | grep -i staged
 
 # Use calicoctl to list staged policies

@@ -1,4 +1,4 @@
-# How to Use the -refresh=false Flag in OpenTofu
+# How to Use the -refresh=false Flag in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ By default, `tofu plan` and `tofu apply` refresh state by querying all managed r
 
 ```bash
 # Plan without refreshing state
+
 tofu plan -refresh=false
 
 # Apply without refreshing state
@@ -27,7 +28,7 @@ tofu apply -refresh=false -auto-approve
 
 For a large configuration with 500 resources:
 
-```
+```hcl
 # With refresh (default):
 tofu plan  # Takes 8-10 minutes (500 API calls)
 
@@ -58,7 +59,7 @@ Avoid skipping refresh when:
 - After incidents where manual remediation may have occurred
 
 ```bash
-# Before production changes — always refresh
+# Before production changes - always refresh
 tofu plan  # default refresh=true
 tofu apply
 ```
@@ -97,4 +98,4 @@ tofu plan -refresh-only
 
 ## Conclusion
 
-`-refresh=false` is a performance optimization that's safe to use in specific, controlled scenarios — particularly in CI/CD pipelines immediately after an apply operation. In production environments where external changes may occur, always use the default refresh behavior to catch drift before applying changes. Never use `-refresh=false` as a permanent setting for production deployments.
+`-refresh=false` is a performance optimization that's safe to use in specific, controlled scenarios - particularly in CI/CD pipelines immediately after an apply operation. In production environments where external changes may occur, always use the default refresh behavior to catch drift before applying changes. Never use `-refresh=false` as a permanent setting for production deployments.

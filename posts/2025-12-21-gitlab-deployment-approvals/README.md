@@ -34,6 +34,7 @@ The simplest form of approval is a manual job that requires someone to click a b
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test

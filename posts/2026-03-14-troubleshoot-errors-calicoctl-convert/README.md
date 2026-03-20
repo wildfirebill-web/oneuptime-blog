@@ -24,6 +24,7 @@ Understanding the common error patterns helps you work through conversion issues
 
 ```bash
 # Error: trying to convert a non-NetworkPolicy resource
+
 calicoctl convert -f deployment.yaml
 # Error: cannot convert resource of kind "Deployment"
 

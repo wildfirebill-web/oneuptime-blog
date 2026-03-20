@@ -8,7 +8,7 @@ Description: Learn how to configure sFlow packet sampling on HP/Aruba switches t
 
 ## What Is sFlow?
 
-sFlow (RFC 3176) uses statistical packet sampling—it samples 1 in N packets from each interface and forwards the sample header to a collector. Unlike NetFlow (which records every flow), sFlow scales to any link speed with constant CPU overhead by using sampling instead of flow tracking.
+sFlow (RFC 3176) uses statistical packet sampling-it samples 1 in N packets from each interface and forwards the sample header to a collector. Unlike NetFlow (which records every flow), sFlow scales to any link speed with constant CPU overhead by using sampling instead of flow tracking.
 
 **Key sFlow concepts:**
 - **Sampling rate:** 1 in N packets is sampled (e.g., 1 in 1000)
@@ -20,7 +20,7 @@ sFlow (RFC 3176) uses statistical packet sampling—it samples 1 in N packets fr
 
 Log in to the switch CLI and configure sFlow:
 
-```
+```text
 ! Access the switch CLI
 Switch# configure terminal
 
@@ -42,7 +42,7 @@ Switch(config)# sflow sampling receiver 1 rate 512
 
 Apply sFlow sampling to the interfaces you want to monitor:
 
-```
+```text
 ! Enable sFlow on uplink interfaces
 Switch(config)# interface 1/1
 Switch(config-if)# sflow sampling 512
@@ -62,7 +62,7 @@ Switch(config-if)# sflow sampling 512
 
 Newer Aruba CX switches use a different CLI:
 
-```
+```text
 ! ArubaOS-CX sFlow configuration
 switch(config)# sflow
 switch(config-sflow)# agent-ip 10.0.0.1       ! Switch management IP
@@ -79,7 +79,7 @@ switch(config-if)# sflow polling-interval 30
 
 ## Step 4: Verify sFlow Configuration
 
-```
+```yaml
 ! Show sFlow status
 Switch# show sflow
 
@@ -100,6 +100,7 @@ Install sflowtool on Linux to receive and decode sFlow data:
 
 ```bash
 # Install sflowtool
+
 sudo apt-get install -y sflowtool
 
 # Receive and print sFlow datagrams (port 6343)

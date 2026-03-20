@@ -16,6 +16,7 @@ The fastest way to get a container's IP address is using `docker inspect` with a
 
 ```bash
 # Get IP address of a container by name or ID
+
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name
 
 # Example output: 172.17.0.2

@@ -1,4 +1,4 @@
-# How to Authenticate with the Portainer API Using JWT Tokens
+# How to Authenticate with the Portainer API Using JWT Tokens - Auth
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Send a POST request to the `/api/auth` endpoint with your credentials:
 
 ```bash
 # Basic authentication - get JWT token
+
 RESPONSE=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{
@@ -114,7 +115,7 @@ JWT tokens from Portainer expire after a configurable period (default: 8 hours).
 
 ```bash
 #!/bin/bash
-# portainer-helper.sh — Reusable authentication with auto-refresh
+# portainer-helper.sh - Reusable authentication with auto-refresh
 
 PORTAINER_URL="https://portainer.example.com"
 PORTAINER_USER="${PORTAINER_USER:-admin}"
@@ -147,7 +148,7 @@ get_valid_token() {
     fi
   fi
 
-  # Token missing or expired — get a new one
+  # Token missing or expired - get a new one
   get_token
 }
 
@@ -220,9 +221,9 @@ async function getPortainerToken(url, username, password) {
 
 ## Security Best Practices
 
-1. **Never hardcode credentials** in scripts — use environment variables or a secrets manager
-2. **Use HTTPS** for all API calls — never send credentials over HTTP
-3. **Store tokens securely** — in memory or temp files with restricted permissions
+1. **Never hardcode credentials** in scripts - use environment variables or a secrets manager
+2. **Use HTTPS** for all API calls - never send credentials over HTTP
+3. **Store tokens securely** - in memory or temp files with restricted permissions
 4. **Set short token expiry** in Portainer admin settings for sensitive environments
 5. **Use API access tokens** for CI/CD pipelines instead of username/password JWT auth
 

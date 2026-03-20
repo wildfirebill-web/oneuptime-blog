@@ -26,6 +26,7 @@ Instead of hardcoding IP addresses, you can use DNS names for WireGuard endpoint
 
 ```yaml
 # Talos machine config with DNS-based WireGuard endpoint
+
 machine:
   network:
     interfaces:

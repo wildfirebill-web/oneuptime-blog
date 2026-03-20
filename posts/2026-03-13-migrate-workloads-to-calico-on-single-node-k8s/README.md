@@ -37,6 +37,7 @@ kubectl get networkpolicy --all-namespaces -o yaml > netpol-backup.yaml
 ```bash
 kubectl get pv -o yaml > pv-backup.yaml
 # For each PV, backup the underlying data
+
 kubectl exec -n <namespace> <pod> -- tar czf - /data > pv-data-backup.tar.gz
 ```
 

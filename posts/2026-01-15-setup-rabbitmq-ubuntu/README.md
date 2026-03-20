@@ -22,6 +22,7 @@ RabbitMQ is a robust, open-source message broker that implements AMQP (Advanced 
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install curl gnupg apt-transport-https -y
 

@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Install required development libraries and tools
+
 sudo dnf install -y gcc gcc-c++ python3-devel python3-pip \
     openssl-devel libffi-devel cyrus-sasl-devel \
     openldap-devel postgresql-devel mariadb-devel \

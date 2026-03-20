@@ -51,6 +51,7 @@ Create a file called `plugin.yaml` that tells ArgoCD how your plugin works:
 
 ```yaml
 # plugin.yaml - defines the plugin interface
+
 apiVersion: argoproj.io/v1alpha1
 kind: ConfigManagementPlugin
 metadata:
@@ -284,7 +285,7 @@ spec:
           protocol: TCP
 ```
 
-## Resource Management
+Resource Management
 
 Each sidecar consumes resources independently. Monitor memory and CPU usage carefully, especially if your plugin performs heavy operations like template rendering or secret decryption:
 

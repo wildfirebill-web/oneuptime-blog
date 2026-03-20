@@ -68,6 +68,7 @@ flowchart TD
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt update
 sudo apt install nftables
 

@@ -60,6 +60,7 @@ SSH into your GCP Compute Engine instance and run the installation. Here is the 
 
 ```bash
 # Download the Elastic Agent package
+
 curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.12.0-linux-x86_64.tar.gz
 
 # Extract the archive

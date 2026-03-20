@@ -33,6 +33,7 @@ First, create a bucket with the right permissions:
 
 ```bash
 # Create the bucket for log exports
+
 aws s3 mb s3://my-cloudwatch-log-exports --region us-east-1
 ```
 

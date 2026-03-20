@@ -58,6 +58,7 @@ First, create an Event Hubs namespace and an Event Hub if you do not already hav
 
 ```bash
 # Create a resource group for the Event Hubs resources
+
 az group create --name otel-telemetry-rg --location eastus
 
 # Create an Event Hubs namespace with Standard tier

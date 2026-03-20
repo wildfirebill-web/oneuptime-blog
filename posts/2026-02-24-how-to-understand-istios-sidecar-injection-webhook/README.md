@@ -239,6 +239,7 @@ Check if a pod has the sidecar:
 
 ```bash
 # Look for 2/2 in the READY column (app + sidecar)
+
 kubectl get pods -n default
 # NAME         READY   STATUS
 # my-app-xyz   2/2     Running

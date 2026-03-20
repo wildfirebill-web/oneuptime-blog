@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, HTTP, IPv4, TCP, Server, Networking, std::net
+Tags: Rust, HTTP, IPv4, TCP, Server, Networking, Std::net
 
 Description: Build a multithreaded HTTP/1.0 server in Rust using std::net TcpListener, manually parsing HTTP requests and generating responses over IPv4.
 
 ## Introduction
 
-Building an HTTP server from scratch in Rust teaches both Rust's networking primitives and the HTTP/1.0 protocol. This implementation uses Rust's standard library without external HTTP crates — using `TcpListener`, `TcpStream`, threads, and string parsing.
+Building an HTTP server from scratch in Rust teaches both Rust's networking primitives and the HTTP/1.0 protocol. This implementation uses Rust's standard library without external HTTP crates - using `TcpListener`, `TcpStream`, threads, and string parsing.
 
 ## Single-Threaded HTTP Server
 
@@ -179,6 +179,7 @@ fn main() -> std::io::Result<()> {
 
 ```bash
 # Build and run
+
 cargo run
 
 # Test with curl

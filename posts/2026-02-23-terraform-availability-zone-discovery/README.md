@@ -14,6 +14,7 @@ Hardcoding availability zone names like `us-east-1a` and `us-east-1b` works unti
 
 ```hcl
 # Fragile - breaks in any region other than us-east-1
+
 resource "aws_subnet" "private" {
   count             = 3
   vpc_id            = aws_vpc.main.id

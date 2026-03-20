@@ -32,6 +32,7 @@ The simplest reduction is to increase the polling interval.
 
 ```yaml
 # argocd-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

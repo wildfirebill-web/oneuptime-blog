@@ -154,6 +154,7 @@ Start a test container and check that logs flow through:
 
 ```bash
 # Run a container that produces logs
+
 docker run --name log-test alpine sh -c 'while true; do echo "test log $(date)"; sleep 1; done'
 ```
 

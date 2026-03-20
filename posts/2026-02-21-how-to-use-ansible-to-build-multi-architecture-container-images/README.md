@@ -14,6 +14,7 @@ Multi-architecture container images allow a single image tag to work on differen
 
 ```yaml
 # roles/multiarch_build/tasks/setup.yml
+
 # Set up Docker Buildx and QEMU for multi-architecture builds
 - name: Install QEMU user static binaries
   ansible.builtin.package:

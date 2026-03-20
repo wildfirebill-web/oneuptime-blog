@@ -24,6 +24,7 @@ graph TD
 
 ```yaml
 # roles/grafana/tasks/main.yml
+
 ---
 - name: Add Grafana GPG key
   ansible.builtin.apt_key:

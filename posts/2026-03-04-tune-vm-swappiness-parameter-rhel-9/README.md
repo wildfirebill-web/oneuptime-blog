@@ -37,6 +37,7 @@ The default on RHEL is 60.
 
 ```bash
 # Show current swappiness setting
+
 sysctl vm.swappiness
 ```
 

@@ -26,6 +26,7 @@ Terraform has a built-in `sensitive` flag for variables and outputs that prevent
 
 ```hcl
 # Mark a variable as sensitive
+
 variable "database_password" {
   type        = string
   description = "Password for the RDS database"

@@ -16,6 +16,7 @@ The following example demonstrates how easily Kubernetes secrets can be decoded 
 
 ```bash
 # Create a secret containing a database password
+
 kubectl create secret generic db-creds --from-literal=password=supersecret
 
 # Anyone with kubectl access can decode the secret - base64 is NOT encryption!

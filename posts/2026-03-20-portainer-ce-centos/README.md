@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, centos, docker, installation, rhel
+Tags: Portainer, CentOS, Docker, Installation, RHEL
 
 Description: A step-by-step guide to installing Portainer Community Edition on CentOS 7 and CentOS Stream 8/9 with Docker, including SELinux considerations.
 
@@ -20,6 +20,7 @@ CentOS is widely used in enterprise environments. This guide covers installing P
 
 ```bash
 # Update all packages
+
 sudo yum update -y   # CentOS 7
 # or
 sudo dnf update -y   # CentOS Stream 8/9

@@ -18,6 +18,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Add players with scores
+
 r.zadd('leaderboard', {
     'player1': 1500,
     'player2': 2300,

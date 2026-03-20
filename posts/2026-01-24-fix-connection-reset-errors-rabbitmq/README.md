@@ -34,6 +34,7 @@ Connection resets manifest as various error messages depending on the client lib
 
 ```text
 # Python (pika)
+
 pika.exceptions.StreamLostError: Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')
 
 # Node.js (amqplib)

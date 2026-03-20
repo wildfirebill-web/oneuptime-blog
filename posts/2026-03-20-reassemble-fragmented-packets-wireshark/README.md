@@ -12,7 +12,7 @@ Wireshark automatically reassembles IPv4 fragments by default. When you capture 
 
 ## How Wireshark Displays Fragments
 
-```
+```text
 In the packet list, fragmented packets appear as:
 
 Frame 100: IP fragment (offset=0, MF=1)
@@ -34,7 +34,7 @@ Frame 101 (expanded in detail pane):
 
 ## Configure Wireshark Fragment Reassembly
 
-```
+```text
 In Wireshark:
   Edit → Preferences → Protocols → IPv4
 
@@ -47,8 +47,9 @@ In Wireshark:
 
 ## Wireshark Display Filters for Fragments
 
-```
+```text
 # Show all fragment frames:
+
 ip.flags.mf == 1 or ip.frag_offset > 0
 
 # Show first fragments only:

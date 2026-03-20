@@ -27,6 +27,7 @@ Your load balancer needs a static external IP address. This is the IP you will p
 
 ```bash
 # Reserve a global static IP address for the load balancer
+
 gcloud compute addresses create lb-ipv4-address \
     --ip-version=IPV4 \
     --global

@@ -380,6 +380,7 @@ Before applying changes, review what will be installed:
 
 ```bash
 # Generate the full manifest without applying
+
 istioctl manifest generate -f my-config.yaml > generated.yaml
 
 # Diff against what's currently installed

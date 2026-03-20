@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, NGINX, Ingresses
+Tags: ArgoCD, GitOps, Kubernetes, Nginx, Ingresses
 
 Description: Learn how to expose ArgoCD server through Nginx Ingress Controller with proper TLS, gRPC support, and authentication for production Kubernetes clusters.
 
@@ -29,6 +29,7 @@ If you do not have Nginx Ingress Controller installed yet, deploy it with:
 
 ```bash
 # Install Nginx Ingress Controller using Helm
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 helm install ingress-nginx ingress-nginx/ingress-nginx \

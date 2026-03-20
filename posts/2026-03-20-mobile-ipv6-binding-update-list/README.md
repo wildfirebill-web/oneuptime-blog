@@ -14,18 +14,18 @@ The Binding Update List (BUL) is maintained by the Mobile Node and is the counte
 
 Each entry in the BUL corresponds to a BU sent to one destination (HA or CN).
 
-```
+```text
 Binding Update List Entry:
-├── Destination Address       — HA or CN address the BU was sent to
-├── Home Address (HoA)        — MN's HoA included in the BU
-├── Care-of Address (CoA)     — CoA registered in the BU
-├── Sequence Number           — BU sequence number sent
-├── Lifetime                  — Granted lifetime from BA
-├── Refresh Time              — When to send the next BU (lifetime/2)
-├── Initial BU Timeout        — For retransmission if no BA received
-├── Acknowledged              — True if BA was received
+├── Destination Address       - HA or CN address the BU was sent to
+├── Home Address (HoA)        - MN's HoA included in the BU
+├── Care-of Address (CoA)     - CoA registered in the BU
+├── Sequence Number           - BU sequence number sent
+├── Lifetime                  - Granted lifetime from BA
+├── Refresh Time              - When to send the next BU (lifetime/2)
+├── Initial BU Timeout        - For retransmission if no BA received
+├── Acknowledged              - True if BA was received
 └── Flags
-    ├── H: Home Registration  — BU sent to HA
+    ├── H: Home Registration  - BU sent to HA
     ├── A: Ack Requested
     └── K: Key Management
 ```
@@ -180,4 +180,4 @@ def handle_movement(mn_state, new_coa: str):
 
 ## Conclusion
 
-The Binding Update List is the Mobile Node's record of all active bindings. Proper BUL management — including timely refresh before expiry and updating all entries on CoA change — is essential for uninterrupted connectivity. Monitor BU success rates and refresh timing issues with OneUptime to detect mobility signaling problems.
+The Binding Update List is the Mobile Node's record of all active bindings. Proper BUL management - including timely refresh before expiry and updating all entries on CoA change - is essential for uninterrupted connectivity. Monitor BU success rates and refresh timing issues with OneUptime to detect mobility signaling problems.

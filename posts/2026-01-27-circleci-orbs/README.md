@@ -26,6 +26,7 @@ To use an orb, declare it in the `orbs` section of your `.circleci/config.yml` f
 
 ```yaml
 # CircleCI configuration version (2.1 required for orbs)
+
 version: 2.1
 
 # Declare orbs you want to use in this configuration

@@ -261,6 +261,7 @@ To handle this, you either need a middleware that calls the Graph API to resolve
 
 ```bash
 # Decode token to check claims
+
 echo $TOKEN | cut -d'.' -f2 | base64 -d 2>/dev/null | jq .
 
 # Test authenticated access

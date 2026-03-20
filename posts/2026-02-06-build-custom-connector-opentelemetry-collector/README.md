@@ -335,6 +335,7 @@ Create a builder configuration file:
 
 ```yaml
 # builder-config.yaml
+
 dist:
   name: otelcol-custom
   description: Custom OpenTelemetry Collector with trace-to-metrics connector

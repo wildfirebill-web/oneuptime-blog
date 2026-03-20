@@ -27,6 +27,7 @@ The simplest way to limit namespace access is through ArgoCD Projects. Projects 
 
 ```yaml
 # restricted-project.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

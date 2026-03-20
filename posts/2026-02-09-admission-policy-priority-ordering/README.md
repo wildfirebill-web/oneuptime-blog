@@ -27,6 +27,7 @@ Control execution order through naming:
 
 ```yaml
 # Executes first (alphabetically)
+
 apiVersion: admissionregistration.k8s.io/v1
 kind: MutatingWebhookConfiguration
 metadata:

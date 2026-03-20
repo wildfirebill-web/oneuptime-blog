@@ -24,6 +24,7 @@ Start with AWS EKS. The module needs to create the cluster, node groups, and sup
 
 ```hcl
 # modules/eks/main.tf
+
 variable "cluster_name" {
   description = "Name of the EKS cluster"
   type        = string

@@ -18,6 +18,7 @@ Not every change needs the same level of scrutiny. A developer adding a tag to a
 
 ```yaml
 # approval-config.yaml
+
 # Define approval requirements based on risk level
 
 approval_rules:

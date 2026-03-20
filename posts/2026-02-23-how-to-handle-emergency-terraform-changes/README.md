@@ -49,6 +49,7 @@ If ANY of these criteria are NOT met, use the standard process.
 ```bash
 #!/bin/bash
 # scripts/declare-emergency.sh
+
 # Run this first to set up the emergency context
 
 REASON="$1"
@@ -149,7 +150,7 @@ echo "Emergency apply completed for $INCIDENT_ID by $(whoami)" | \
 
 #### Option B: Expedited PR (Preferred When Possible)
 
-```yaml
+````yaml
 # .github/workflows/emergency-pr.yml
 name: Emergency PR Process
 
@@ -179,9 +180,9 @@ jobs:
           script: |
             const output = `## EMERGENCY CHANGE - Plan Output
             Please review immediately.
-            \`\`\`
+            ```
             ${process.env.PLAN_OUTPUT}
-            \`\`\``;
+            ````;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -199,7 +200,7 @@ jobs:
       - uses: hashicorp/setup-terraform@v3
       - run: terraform init && terraform apply -auto-approve
         working-directory: environments/production
-```
+````
 
 For the expedited PR, reduce the approval requirement from two reviewers to one, but the reviewer must be a senior engineer.
 

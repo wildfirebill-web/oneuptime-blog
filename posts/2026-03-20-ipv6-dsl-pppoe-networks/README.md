@@ -17,7 +17,7 @@ PPPoEv6 extends the PPPoE protocol to carry IPv6. DSL subscribers negotiate a PP
 
 Use `accel-ppp` as a PPPoE server with IPv6 support:
 
-```
+```text
 # /etc/accel-ppp.conf
 
 [modules]
@@ -40,6 +40,7 @@ interface=eth1    # DSL-facing interface
 
 [ipv6pool]
 # Pool of /56 prefixes to delegate
+
 delegate=2001:db8:dsl::/40,56
 
 [ipv6-dns]
@@ -63,7 +64,7 @@ systemctl start accel-ppp
 
 On the customer router running OpenWRT:
 
-```
+```text
 # /etc/config/network
 
 config interface 'wan'
@@ -88,7 +89,7 @@ config interface 'lan'
 
 FreeRADIUS returns IPv6 prefix assignment for each subscriber:
 
-```
+```text
 # /etc/freeradius/3.0/users
 user@isp.com Cleartext-Password := "password"
     Framed-Protocol = PPP,
@@ -100,7 +101,7 @@ user@isp.com Cleartext-Password := "password"
 
 Configure the DSLAM (Digital Subscriber Line Access Multiplexer) to pass IPv6 traffic:
 
-```
+```nginx
 ! Huawei MA5800 DSLAM
 ! Enable IPv6 on the upstream port
 interface GigabitEthernet 0/0/0

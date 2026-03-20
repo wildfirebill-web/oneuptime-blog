@@ -14,6 +14,7 @@ Configuring a RHEL system as a Kerberos client means setting it up to authentica
 
 ```bash
 # Install the Kerberos client workstation tools
+
 sudo dnf install krb5-workstation -y
 
 # This provides: kinit, klist, kdestroy, kvno, and other tools

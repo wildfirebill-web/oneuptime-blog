@@ -38,6 +38,7 @@ GCP introduced Instance Schedules as a built-in way to automate VM start and sto
 
 ```bash
 # Create a schedule that starts VMs at 8 AM and stops them at 6 PM US Eastern
+
 gcloud compute resource-policies create instance-schedule dev-hours \
   --region=us-central1 \
   --vm-start-schedule="0 8 * * MON-FRI" \

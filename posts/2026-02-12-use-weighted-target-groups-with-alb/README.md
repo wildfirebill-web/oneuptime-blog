@@ -41,6 +41,7 @@ Create separate target groups for each version of your application.
 
 ```bash
 # Target group for current version (v1)
+
 aws elbv2 create-target-group \
     --name app-v1-tg \
     --protocol HTTP \

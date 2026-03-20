@@ -65,6 +65,7 @@ Create a new Python project for your bot application.
 
 ```bash
 # Create project directory and virtual environment
+
 mkdir support-chatbot && cd support-chatbot
 python -m venv venv
 source venv/bin/activate

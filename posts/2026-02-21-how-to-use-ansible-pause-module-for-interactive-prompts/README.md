@@ -14,6 +14,7 @@ The `ansible.builtin.pause` module stops playbook execution and waits for a spec
 
 ```yaml
 # Wait for a specified number of seconds
+
 - name: Wait for service to initialize
   ansible.builtin.pause:
     seconds: 30

@@ -29,6 +29,7 @@ First, define a HelmRepository source so Flux can pull the official Consul Helm 
 
 ```yaml
 # clusters/my-cluster/consul/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

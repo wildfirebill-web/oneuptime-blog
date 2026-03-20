@@ -8,13 +8,13 @@ Description: Learn how to deploy K3s on solar-powered edge nodes with power mana
 
 ## Introduction
 
-Solar-powered edge computing combines the benefits of edge AI/ML processing with renewable energy, enabling zero-operational-cost data centers in remote locations — weather stations, agricultural sensors, wildlife monitoring, or off-grid infrastructure. The challenge is that solar power is variable: you have abundant power during sunny days and limited or no power at night or during cloudy periods. K3s's lightweight footprint and workload management capabilities make it well-suited for this scenario.
+Solar-powered edge computing combines the benefits of edge AI/ML processing with renewable energy, enabling zero-operational-cost data centers in remote locations - weather stations, agricultural sensors, wildlife monitoring, or off-grid infrastructure. The challenge is that solar power is variable: you have abundant power during sunny days and limited or no power at night or during cloudy periods. K3s's lightweight footprint and workload management capabilities make it well-suited for this scenario.
 
 ## Hardware Considerations
 
 ### Typical Solar-Powered Node Setup
 
-```
+```text
 Solar Panel (20-200W)
     ↓
 Solar Charge Controller (MPPT)
@@ -43,6 +43,7 @@ K3s Edge Node
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 # Power-optimized K3s configuration
 
 disable:

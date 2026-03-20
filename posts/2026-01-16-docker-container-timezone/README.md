@@ -16,6 +16,7 @@ By default, Docker containers use UTC timezone. While UTC is often preferred for
 
 ```bash
 # Set timezone via environment variable
+
 docker run -e TZ=America/New_York myimage
 
 # Verify

@@ -26,6 +26,7 @@ Istiod exposes several Prometheus metrics related to certificates:
 
 ```bash
 # Check istiod certificate metrics
+
 kubectl exec -n istio-system deploy/istiod -- \
   curl -s localhost:15014/metrics | grep -E "cert|citadel"
 ```

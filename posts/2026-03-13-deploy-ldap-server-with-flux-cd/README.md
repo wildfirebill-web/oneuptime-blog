@@ -29,6 +29,7 @@ This guide deploys OpenLDAP and phpLDAPadmin using the Bitnami Helm chart manage
 kubectl create namespace openldap
 
 # Admin and config passwords for OpenLDAP
+
 kubectl create secret generic openldap-secrets \
   --namespace openldap \
   --from-literal=adminpassword=LdapAdmin1! \

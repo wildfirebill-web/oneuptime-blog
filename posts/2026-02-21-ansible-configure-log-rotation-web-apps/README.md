@@ -53,6 +53,7 @@ logrotate-setup/
 
 ```yaml
 # group_vars/all.yml
+
 log_retention_days: 14
 log_rotation_frequency: daily  # daily, weekly, monthly
 log_compress: true

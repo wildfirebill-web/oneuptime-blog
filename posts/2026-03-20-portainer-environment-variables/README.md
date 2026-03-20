@@ -28,8 +28,9 @@ You'll see a key-value editor where you can add environment variables.
 
 Click **+ add environment variable** for each variable:
 
-```
+```text
 # Common application variables:
+
 Name:   POSTGRES_DB
 Value:  myapp
 
@@ -68,7 +69,7 @@ docker run -d \
   myimage:latest
 ```
 
-Variables set in the image's Dockerfile `ENV` instruction are defaults — container-level `-e` flags override them.
+Variables set in the image's Dockerfile `ENV` instruction are defaults - container-level `-e` flags override them.
 
 ## Step 4: Verify Environment Variables
 
@@ -129,7 +130,7 @@ For teams, use Portainer's role-based access control to limit who can view conta
 
 ### Database Configuration
 
-```
+```text
 POSTGRES_HOST=db
 POSTGRES_PORT=5432
 POSTGRES_DB=production_db
@@ -140,7 +141,7 @@ POSTGRES_SSL_MODE=require
 
 ### Application Behavior
 
-```
+```text
 NODE_ENV=production
 APP_PORT=3000
 LOG_LEVEL=warn
@@ -150,7 +151,7 @@ RATE_LIMIT_PER_MINUTE=60
 
 ### Cloud Integration
 
-```
+```text
 AWS_REGION=us-east-1
 AWS_ACCESS_KEY_ID=<key>
 AWS_SECRET_ACCESS_KEY=<secret>
@@ -159,7 +160,7 @@ S3_BUCKET=my-app-bucket
 
 ### Timezone
 
-```
+```text
 TZ=UTC
 # Common values: UTC, America/New_York, Europe/London, Asia/Tokyo
 ```

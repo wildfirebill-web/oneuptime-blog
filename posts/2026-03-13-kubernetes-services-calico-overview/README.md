@@ -69,6 +69,7 @@ Use pod selector-based policies instead:
 
 ```yaml
 # Wrong: ClusterIP will never appear as a source in policy evaluation
+
 ingress:
 - from:
   - ipBlock:

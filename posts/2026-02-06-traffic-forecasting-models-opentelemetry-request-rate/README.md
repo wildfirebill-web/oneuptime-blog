@@ -18,6 +18,7 @@ This collector config processes incoming HTTP metrics and adds the labels needed
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

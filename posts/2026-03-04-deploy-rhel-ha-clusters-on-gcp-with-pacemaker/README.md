@@ -14,6 +14,7 @@ Running a Pacemaker HA cluster on GCP requires a fence agent that can communicat
 
 ```bash
 # Enable the HA repo
+
 sudo subscription-manager repos --enable=rhel-9-for-x86_64-highavailability-rpms
 
 # Install cluster packages

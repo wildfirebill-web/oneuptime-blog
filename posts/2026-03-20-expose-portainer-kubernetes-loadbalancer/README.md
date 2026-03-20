@@ -16,6 +16,7 @@ For on-premises clusters, you need MetalLB or a similar bare-metal load balancer
 
 ```bash
 # Install Portainer with LoadBalancer service type
+
 helm install portainer portainer/portainer \
   --namespace portainer \
   --create-namespace \

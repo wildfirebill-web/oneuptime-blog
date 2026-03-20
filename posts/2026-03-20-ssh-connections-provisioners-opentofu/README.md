@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, SSH, Connection Block, Infrastructure as Code
+Tags: OpenTofu, Provisioners, SSH, Connection Blocks, Infrastructure as Code
 
 Description: Learn how to configure SSH connection blocks in OpenTofu to authenticate provisioners to remote Linux and Unix resources using passwords, key files, or agent forwarding.
 
@@ -52,6 +52,7 @@ connection {
 
 ```hcl
 # The private key content is stored securely (e.g., in Vault or CI secrets)
+
 variable "ssh_private_key" {
   type      = string
   sensitive = true
@@ -85,7 +86,7 @@ resource "aws_instance" "web" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    # Use the in-memory private key — never touches disk
+    # Use the in-memory private key - never touches disk
     private_key = tls_private_key.deploy.private_key_pem
     host        = self.public_ip
   }
@@ -143,7 +144,7 @@ connection {
 }
 ```
 
-## Resource-Level vs Provisioner-Level Connections
+Resource-Level vs Provisioner-Level Connections
 
 The `connection` block can be placed at the resource level (shared by all provisioners) or inside a specific provisioner:
 

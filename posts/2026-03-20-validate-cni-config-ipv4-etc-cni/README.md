@@ -12,6 +12,7 @@ CNI configuration files in `/etc/cni/net.d/` tell the container runtime how to s
 
 ```bash
 # List configuration files on a node
+
 ls -la /etc/cni/net.d/
 # Files are sorted alphabetically; the first matching file is used
 # 10-calico.conflist    ← used (10 sorts before 20)

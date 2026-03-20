@@ -53,6 +53,7 @@ def ipv6_udp_client(server_addr: str, port: int, message: bytes) -> bytes:
         sock.close()
 
 # Send a message to localhost IPv6
+
 # response = ipv6_udp_client("::1", 5005, b"Hello IPv6 UDP!")
 # print(response)
 ```

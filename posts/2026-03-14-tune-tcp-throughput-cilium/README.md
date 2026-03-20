@@ -30,6 +30,7 @@ Establish your current TCP throughput before tuning:
 
 ```bash
 # Deploy iperf3 server
+
 kubectl create namespace tcp-tune
 kubectl -n tcp-tune run iperf3-server --image=networkstatic/iperf3 --port=5201 -- -s
 kubectl -n tcp-tune expose pod iperf3-server --port=5201

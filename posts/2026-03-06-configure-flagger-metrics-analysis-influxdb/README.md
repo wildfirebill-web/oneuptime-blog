@@ -28,6 +28,7 @@ If you need to deploy InfluxDB, use a Flux HelmRelease.
 
 ```yaml
 # influxdb-helmrelease.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

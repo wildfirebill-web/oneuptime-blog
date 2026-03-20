@@ -185,6 +185,7 @@ Once deployed, the Trivy Operator creates VulnerabilityReport resources:
 
 ```bash
 # List all vulnerability reports
+
 kubectl get vulnerabilityreports -A
 
 # Get detailed report for a specific workload

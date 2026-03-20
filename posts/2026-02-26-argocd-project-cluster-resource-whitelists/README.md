@@ -44,6 +44,7 @@ By default, ArgoCD projects deny all cluster-scoped resources. This is the secur
 
 ```yaml
 # Default: no cluster resources allowed
+
 clusterResourceWhitelist: []
 
 # This is equivalent to having no clusterResourceWhitelist field at all

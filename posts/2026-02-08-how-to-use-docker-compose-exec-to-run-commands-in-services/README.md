@@ -18,6 +18,7 @@ The basic form of the command is straightforward:
 
 ```bash
 # Run a command inside a running service container
+
 docker compose exec <service-name> <command>
 ```
 

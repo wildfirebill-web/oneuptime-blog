@@ -20,6 +20,7 @@ The `podman cp` command works on stopped containers just like running ones:
 
 ```bash
 # Create a container that generates data and then stops
+
 podman run --name crash-app alpine /bin/sh -c "echo 'important data' > /tmp/output.txt; echo 'error log' > /tmp/error.log; exit 1"
 
 # Verify the container has exited

@@ -14,6 +14,7 @@ Migrating from a local state file to the Terraform Cloud backend enables remote 
 
 ```bash
 # 1. Verify current state is clean
+
 tofu state list
 tofu plan  # Should show no changes
 
@@ -236,4 +237,4 @@ tofu plan  # Should show no changes
 
 ## Conclusion
 
-Migrating from local to cloud backend is a one-command operation: update the `terraform {}` block to include `cloud {}` configuration, then run `tofu init`. OpenTofu detects the backend change, prompts for confirmation, reads the existing state (local file or remote backend), and writes it to Terraform Cloud. Always back up your state file before migration and verify with `tofu plan` — it should show no changes — before committing to the new backend. The rollback process is symmetric: revert the configuration and run `tofu init` again.
+Migrating from local to cloud backend is a one-command operation: update the `terraform {}` block to include `cloud {}` configuration, then run `tofu init`. OpenTofu detects the backend change, prompts for confirmation, reads the existing state (local file or remote backend), and writes it to Terraform Cloud. Always back up your state file before migration and verify with `tofu plan` - it should show no changes - before committing to the new backend. The rollback process is symmetric: revert the configuration and run `tofu init` again.

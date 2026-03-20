@@ -38,6 +38,7 @@ The simplest approach uses a Helm chart source pointing to the official cert-man
 
 ```yaml
 # bootstrap/cert-manager/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

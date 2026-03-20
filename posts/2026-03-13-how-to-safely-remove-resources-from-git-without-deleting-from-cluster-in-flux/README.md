@@ -69,6 +69,7 @@ If you need to remove multiple resources from Git at once, you can suspend the K
 
 ```bash
 # Suspend the Kustomization to stop reconciliation
+
 flux suspend kustomization my-app
 
 # Annotate resources in the cluster directly

@@ -82,6 +82,7 @@ graph TD
 
 ```bash
 # Create the share directory
+
 mkdir -p /srv/samba/data /srv/samba/projects
 
 # Create a group for each share
@@ -129,6 +130,6 @@ smbclient //192.168.1.10/data -U john%password
 ## Key Takeaways
 
 - `valid users` restricts who can authenticate to a share; `hosts allow` restricts which IPv4 addresses can connect.
-- Both Samba and Unix filesystem permissions must allow access — the most restrictive wins.
+- Both Samba and Unix filesystem permissions must allow access - the most restrictive wins.
 - Use `write list` to allow specific users write access while keeping the share read-only for others.
 - `force group` ensures all files created in the share belong to the same group, simplifying permissions management.

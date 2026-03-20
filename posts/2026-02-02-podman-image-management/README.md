@@ -47,6 +47,7 @@ Install Podman using your distribution's package manager.
 
 ```bash
 # Fedora, RHEL, CentOS
+
 sudo dnf install podman
 
 # Ubuntu, Debian

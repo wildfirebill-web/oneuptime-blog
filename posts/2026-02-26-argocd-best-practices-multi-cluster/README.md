@@ -29,6 +29,7 @@ graph TD
 
 ```bash
 # Register remote clusters with central ArgoCD
+
 argocd cluster add prod-us-east --name prod-us-east
 argocd cluster add prod-us-west --name prod-us-west
 argocd cluster add prod-eu-west --name prod-eu-west

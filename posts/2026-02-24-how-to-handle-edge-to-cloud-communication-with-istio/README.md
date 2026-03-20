@@ -24,6 +24,7 @@ Generate a shared root certificate:
 
 ```bash
 # Create root CA
+
 mkdir -p certs
 openssl req -new -x509 -nodes -days 3650 \
   -keyout certs/root-key.pem \

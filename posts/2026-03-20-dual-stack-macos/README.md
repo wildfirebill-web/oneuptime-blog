@@ -14,6 +14,7 @@ macOS supports dual-stack out of the box. By default, it accepts Router Advertis
 
 ```bash
 # Show all interface addresses
+
 ifconfig en0
 
 # Sample output:
@@ -30,7 +31,7 @@ netstat -rn -f inet6  # IPv6 routes
 ping -4 8.8.8.8
 ping6 2001:4860:4860::8888
 
-# DNS resolution — both families
+# DNS resolution - both families
 dns-sd -G v4v6 example.com
 ```
 
@@ -68,7 +69,7 @@ networksetup -getdnsservers "Ethernet"
 
 ## GUI: System Settings (macOS Ventura / Sonoma)
 
-```
+```text
 System Settings → Network → [Interface] → Details → TCP/IP
 
 IPv4 tab:
@@ -90,18 +91,18 @@ DNS tab:
 
 ## Verify Address Selection
 
-macOS implements RFC 6724 — IPv6 is preferred for connections to dual-stack hosts:
+macOS implements RFC 6724 - IPv6 is preferred for connections to dual-stack hosts:
 
 ```bash
 # Check what address macOS will use for a destination
-# (uses getaddrinfo internally — check with scutil)
+# (uses getaddrinfo internally - check with scutil)
 scutil --dns
 
-# Check active connections — which family is being used
+# Check active connections - which family is being used
 netstat -an -f inet   # IPv4 connections
 netstat -an -f inet6  # IPv6 connections
 
-# Test with curl — force IPv4 or IPv6
+# Test with curl - force IPv4 or IPv6
 curl -4 https://example.com -s -o /dev/null -w "%{remote_ip}\n"
 curl -6 https://example.com -s -o /dev/null -w "%{remote_ip}\n"
 ```
@@ -127,7 +128,7 @@ ifconfig en0 inet6
 macOS supports multiple IPv6 addresses per interface:
 
 ```bash
-# Add additional IPv6 address (temporary — lost on reboot)
+# Add additional IPv6 address (temporary - lost on reboot)
 sudo ifconfig en0 inet6 2001:db8:alt::10 prefixlen 64 alias
 
 # Remove
@@ -144,11 +145,11 @@ macOS pf and the application firewall both need to handle IPv6:
 # Check pf status
 sudo pfctl -s info | grep Status
 
-# Add dual-stack pf rules — /etc/pf.conf should address both families
+# Add dual-stack pf rules - /etc/pf.conf should address both families
 # Allow SSH inbound (both families):
 # pass in proto tcp to any port 22
 
-# Application firewall (socketfilterfw) — applies to both families by default
+# Application firewall (socketfilterfw) - applies to both families by default
 /usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate
 ```
 

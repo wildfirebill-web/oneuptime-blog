@@ -104,6 +104,7 @@ Apply and verify:
 kubectl apply -f api-deployment.yaml
 
 # Check service
+
 kubectl get svc api
 
 # View endpoints (Pod IPs)

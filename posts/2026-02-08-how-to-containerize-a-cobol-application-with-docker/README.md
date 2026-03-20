@@ -61,6 +61,7 @@ Create a simple COBOL program:
 
 ```dockerfile
 # Dockerfile for COBOL application using GnuCOBOL
+
 FROM ubuntu:22.04
 
 # Install GnuCOBOL compiler

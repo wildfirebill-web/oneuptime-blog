@@ -37,6 +37,7 @@ OCI-based Helm repositories eliminate the index download entirely. Instead of do
 
 ```yaml
 # OCI-based HelmRepository - no index download required
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -18,6 +18,7 @@ Red Hat packages ArgoCD as the OpenShift GitOps operator. It is supported by Red
 
 ```bash
 # Install OpenShift GitOps operator via the CLI
+
 oc apply -f - <<EOF
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription

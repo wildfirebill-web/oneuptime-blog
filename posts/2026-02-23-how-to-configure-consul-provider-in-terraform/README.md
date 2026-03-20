@@ -26,6 +26,7 @@ Start by declaring the provider and pinning its version.
 
 ```hcl
 # versions.tf - Declare the Consul provider
+
 terraform {
   required_version = ">= 1.0"
 

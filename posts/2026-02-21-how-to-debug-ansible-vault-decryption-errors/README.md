@@ -32,6 +32,7 @@ The most common issue. You are providing the wrong password.
 
 ```bash
 # Try to view an encrypted file manually
+
 ansible-vault view group_vars/production/vault.yml
 # Enter the password when prompted
 

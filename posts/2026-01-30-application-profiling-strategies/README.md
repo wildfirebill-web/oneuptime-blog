@@ -48,6 +48,7 @@ Memory profiling tracks allocation patterns and heap usage. It helps identify:
 
 ```python
 # Example: Memory profiling in Python reveals allocation patterns
+
 import tracemalloc
 
 # Start tracing memory allocations

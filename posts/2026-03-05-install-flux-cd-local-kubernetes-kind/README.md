@@ -26,6 +26,7 @@ The Flux CLI is required to bootstrap and manage Flux CD. Install it using the o
 
 ```bash
 # Install the Flux CLI on macOS or Linux
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify the installation

@@ -31,6 +31,7 @@ Here's how to create a global network resource:
 
 ```bash
 # Create the global network
+
 aws networkmanager create-global-network \
   --description "Production Global Network" \
   --tags Key=Environment,Value=Production

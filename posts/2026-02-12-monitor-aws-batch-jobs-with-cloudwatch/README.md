@@ -27,6 +27,7 @@ Every Batch job should send its output to CloudWatch Logs. Configure this in the
 
 ```bash
 # Create the log group first
+
 aws logs create-log-group \
   --log-group-name /aws/batch/jobs \
   --retention-in-days 30

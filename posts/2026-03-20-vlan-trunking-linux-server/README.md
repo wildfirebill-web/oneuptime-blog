@@ -19,10 +19,11 @@ VLAN trunking allows a single physical link to carry traffic for multiple VLANs 
 
 ## Linux Trunk Configuration
 
-The physical interface acts as the "trunk" — it does not need an IP address. Each VLAN subinterface handles traffic for its VLAN:
+The physical interface acts as the "trunk" - it does not need an IP address. Each VLAN subinterface handles traffic for its VLAN:
 
 ```bash
 # Load 802.1Q module
+
 modprobe 8021q
 
 # Bring up parent interface without an IP
@@ -46,9 +47,9 @@ ip link set eth0.30 up
 
 ## Switch Port Configuration Reference
 
-For a Cisco switch (for reference only — switch config is not done on Linux):
+For a Cisco switch (for reference only - switch config is not done on Linux):
 
-```
+```text
 ! Configure the connected switch port as a trunk
 interface GigabitEthernet0/1
  switchport mode trunk

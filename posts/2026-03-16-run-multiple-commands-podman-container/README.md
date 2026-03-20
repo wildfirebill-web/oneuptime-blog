@@ -20,6 +20,7 @@ The most common approach is to invoke a shell and pass multiple commands with `-
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # Chain commands with && (run next only if previous succeeds)

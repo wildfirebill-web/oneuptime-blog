@@ -33,6 +33,7 @@ Configure nodes for different tiers:
 
 ```yaml
 # Hot node - elasticsearch.yml
+
 node.roles: [data_hot, data_content, ingest]
 node.attr.data: hot
 

@@ -21,6 +21,7 @@ Start with a Containerfile (or Dockerfile) and build your image with proper tagg
 ```bash
 #!/bin/bash
 # Build a container image with multiple tags for CI
+
 # Uses the commit SHA for traceability and 'latest' for convenience
 
 # Set variables (these would come from your CI environment)

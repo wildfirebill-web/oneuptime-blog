@@ -24,6 +24,7 @@ Match exactly one branch:
 
 ```bash
 # Match only the main branch
+
 gcloud builds triggers create github \
   --name="deploy-production" \
   --repo-name="my-app" \

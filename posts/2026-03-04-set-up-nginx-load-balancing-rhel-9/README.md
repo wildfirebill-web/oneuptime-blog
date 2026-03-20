@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Load Balancing, High Availability, Linux
+Tags: RHEL, Nginx, Load Balancing, High Availability, Linux
 
 Description: Learn how to configure Nginx as a load balancer on RHEL with round-robin, least connections, and IP hash algorithms plus health checks.
 
@@ -34,6 +34,7 @@ The default algorithm distributes requests evenly across all servers:
 # /etc/nginx/conf.d/loadbalancer.conf
 
 # Define the upstream group
+
 upstream backend_servers {
     server 192.168.1.10:3000;
     server 192.168.1.11:3000;

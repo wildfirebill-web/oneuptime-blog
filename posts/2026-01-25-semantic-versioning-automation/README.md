@@ -30,6 +30,7 @@ Install the tool:
 
 ```bash
 # Install semantic-release and plugins
+
 npm install --save-dev semantic-release \
   @semantic-release/git \
   @semantic-release/changelog \

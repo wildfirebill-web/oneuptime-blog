@@ -45,6 +45,7 @@ First, set up Google Cloud Directory Sync (GCDS):
 
 ```bash
 # Download and install GCDS on a server that can reach your AD domain controller
+
 # GCDS runs on Windows or Linux
 
 # The configuration is done through the GCDS Configuration Manager GUI

@@ -10,6 +10,7 @@ Description: Learn how to automate BGP peer (neighbor) configuration on Cisco IO
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     bgp_routers:

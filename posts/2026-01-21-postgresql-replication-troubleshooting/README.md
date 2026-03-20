@@ -57,6 +57,7 @@ SELECT
 
 ```bash
 # Check replica logs
+
 tail -f /var/log/postgresql/postgresql-16-main.log
 
 # Common errors:

@@ -16,6 +16,7 @@ The `json_query` filter requires the `jmespath` Python library. Install it on yo
 
 ```bash
 # Install the jmespath library required by json_query
+
 pip install jmespath
 ```
 

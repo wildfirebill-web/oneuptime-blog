@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: netsh, TCP/IP, Windows, Network Reset, Winsock
+Tags: Netsh, TCP/IP, Windows, Network Reset, Winsock
 
 Description: Learn how to use netsh commands to fully reset the Windows TCP/IP stack and Winsock catalog, fixing corrupted network configurations that cause persistent connectivity failures.
 
@@ -18,7 +18,7 @@ Reset the TCP/IP stack when you experience:
 ## Step 1: Full TCP/IP and Winsock Reset
 
 ```cmd
-REM Run Command Prompt as Administrator (crucial — will fail otherwise)
+REM Run Command Prompt as Administrator (crucial - will fail otherwise)
 
 REM Reset Winsock catalog (fixes LSP/layered service provider corruption)
 netsh winsock reset catalog
@@ -60,6 +60,7 @@ REM Reseting Routes, OK!
 
 ```powershell
 # PowerShell equivalent (Windows 8/10/11)
+
 # Run as Administrator
 
 # Reset network stack
@@ -82,7 +83,7 @@ Get-DnsClientCache
 
 ## Step 4: Reset Network Using Windows Settings (GUI)
 
-```
+```text
 Settings → System → Troubleshoot → Other troubleshooters
 → Internet Connections → Run
 

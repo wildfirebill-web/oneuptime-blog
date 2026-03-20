@@ -35,6 +35,7 @@ The core functionality - translate text on the fly:
 
 ```python
 # Lambda for real-time text translation
+
 import boto3
 import json
 import hashlib

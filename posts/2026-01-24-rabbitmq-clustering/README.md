@@ -61,6 +61,7 @@ Edit `/etc/hosts` on each node:
 
 ```bash
 # /etc/hosts on all nodes
+
 # Add entries for all cluster nodes
 
 192.168.1.10    rabbit1

@@ -13,7 +13,7 @@ const express = require("express");
 const app = express();
 
 app.get("/whoami", (req, res) => {
-    // req.socket.remoteAddress — works for direct connections
+    // req.socket.remoteAddress - works for direct connections
     // May return "::ffff:192.168.1.1" for IPv4-mapped IPv6
     const raw = req.socket.remoteAddress;
     const ip  = raw.startsWith("::ffff:") ? raw.slice(7) : raw;
@@ -37,7 +37,7 @@ app.get("/whoami", (req, res) => {
     res.json({ client_ip: req.ip });
 });
 
-app.listen(3000, "127.0.0.1");  // Bind to localhost — Nginx connects here
+app.listen(3000, "127.0.0.1");  // Bind to localhost - Nginx connects here
 ```
 
 ## Express: Manual Header Parsing with Trust Check
@@ -110,4 +110,4 @@ app.listen(3000);
 
 ## Conclusion
 
-`req.socket.remoteAddress` returns the direct connection's IP, which may be `::ffff:x.x.x.x` for IPv4-mapped IPv6 — strip the prefix with `.replace("::ffff:", "")`. Set `app.set("trust proxy", 1)` in Express to safely unwrap `X-Forwarded-For` into `req.ip` when behind one proxy hop. Never trust `X-Forwarded-For` from untrusted sources — always verify that `remoteAddress` is a known proxy before reading forwarded headers.
+`req.socket.remoteAddress` returns the direct connection's IP, which may be `::ffff:x.x.x.x` for IPv4-mapped IPv6 - strip the prefix with `.replace("::ffff:", "")`. Set `app.set("trust proxy", 1)` in Express to safely unwrap `X-Forwarded-For` into `req.ip` when behind one proxy hop. Never trust `X-Forwarded-For` from untrusted sources - always verify that `remoteAddress` is a known proxy before reading forwarded headers.

@@ -26,6 +26,7 @@ graph LR
 
 ```yaml
 # roles/dr_failover/defaults/main.yml - Disaster recovery configuration
+
 dr_primary_site: us-east-1
 dr_secondary_site: us-west-2
 dr_dns_zone: example.com

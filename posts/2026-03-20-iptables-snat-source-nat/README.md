@@ -10,7 +10,7 @@ SNAT rewrites the source IP address of packets as they leave through a gateway, 
 
 ## How SNAT Works
 
-```
+```text
 Without SNAT:
   10.0.0.5 → Internet → Internet can't route back to 10.0.0.5 (private IP)
 
@@ -23,6 +23,7 @@ With SNAT on gateway:
 
 ```bash
 # Enable IP forwarding
+
 sudo sysctl -w net.ipv4.ip_forward=1
 
 # SNAT outbound traffic from 10.0.0.0/8 going via eth0
@@ -116,4 +117,4 @@ sudo iptables-save > /etc/iptables/rules.v4
 # COMMIT
 ```
 
-SNAT is what makes shared internet access work — without it, private IP addresses have no way to communicate with the public internet, since routers can't route back to RFC 1918 addresses.
+SNAT is what makes shared internet access work - without it, private IP addresses have no way to communicate with the public internet, since routers can't route back to RFC 1918 addresses.

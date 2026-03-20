@@ -43,6 +43,7 @@ This enables RDS login activity monitoring on your GuardDuty detector:
 
 ```bash
 # Enable RDS Protection
+
 aws guardduty update-detector \
   --detector-id abc123def456 \
   --features '[

@@ -33,6 +33,7 @@ These commands create a GPU reservation:
 
 ```bash
 # Create a reservation for 8 A100 GPUs
+
 gcloud compute reservations create ml-training-reservation \
     --project=your-project-id \
     --zone=us-central1-a \

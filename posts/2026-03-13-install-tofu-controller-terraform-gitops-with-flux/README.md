@@ -27,6 +27,7 @@ This guide installs the Tofu Controller using a Flux HelmRelease, setting up the
 
 ```yaml
 # infrastructure/tofu-controller/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

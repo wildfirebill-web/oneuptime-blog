@@ -18,6 +18,7 @@ Define a schema for service registration:
 
 ```yaml
 # catalog/payment-api.yaml
+
 apiVersion: catalog.observability/v1
 kind: ServiceRegistration
 metadata:

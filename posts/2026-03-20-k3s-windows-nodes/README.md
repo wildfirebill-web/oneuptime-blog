@@ -1,4 +1,4 @@
-# How to Configure K3s for Windows Node Support
+# How to Configure K3s for Windows Node Support - Nodes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ On each Windows Server node:
 # Run as Administrator in PowerShell
 
 # Check Windows Server version
+
 Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion
 
 # Enable required Windows features

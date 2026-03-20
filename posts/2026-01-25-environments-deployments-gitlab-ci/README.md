@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab CI, Environment, Deployment, DevOps, CI/CD
+Tags: GitLab CI, Environments, Deployment, DevOps, CI/CD
 
 Description: Learn how to configure GitLab CI environments for staging, production, and review apps, with deployment tracking, rollbacks, and approval workflows.
 
@@ -252,6 +252,7 @@ deploy:
     name: production
 
 # Manual rollback job
+
 rollback:
   stage: deploy
   script:

@@ -1,4 +1,4 @@
-# How to Build IPv6 Network Inventory Tools
+# How to Build IPv6 Network Inventory Tools - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

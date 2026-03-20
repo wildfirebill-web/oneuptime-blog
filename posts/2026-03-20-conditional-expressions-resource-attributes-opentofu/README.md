@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Conditionals, HCL, Expressions, Best Practices
+Tags: OpenTofu, Terraform, Conditional, HCL, Expressions, Best Practices
 
 Description: Learn how to use conditional expressions in OpenTofu to set resource attributes dynamically based on variable values, environment names, and computed conditions.
 

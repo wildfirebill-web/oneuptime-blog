@@ -20,6 +20,7 @@ An environment file is a plain text file with one variable per line:
 
 ```bash
 # Create an environment file
+
 cat > app.env << 'EOF'
 NODE_ENV=production
 PORT=3000

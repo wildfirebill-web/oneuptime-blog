@@ -30,6 +30,7 @@ Create an approved base image catalog that all teams must use. This eliminates t
 
 ```dockerfile
 # base-images/python/Dockerfile
+
 # Organization-approved Python base image with security hardening
 FROM python:3.12.2-slim@sha256:abc123...
 
@@ -180,7 +181,7 @@ fi
 echo "PASS: All required labels present"
 ```
 
-## Resource Limit Policies
+Resource Limit Policies
 
 Prevent any single container from consuming unbounded resources:
 

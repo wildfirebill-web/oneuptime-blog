@@ -20,6 +20,7 @@ Install using Helm:
 
 ```bash
 # Create IAM policy
+
 curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 
 aws iam create-policy \

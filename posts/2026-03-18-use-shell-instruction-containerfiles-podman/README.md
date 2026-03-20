@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containerfile, SHELL, Container Build, DevOps
+Tags: Podman, Containerfile, Shell, Container Build, DevOps
 
 Description: Learn how to use the SHELL instruction in Containerfiles for Podman to change the default shell used for RUN, CMD, and ENTRYPOINT instructions in shell form.
 
@@ -40,6 +40,7 @@ Consider this common problem:
 FROM ubuntu:22.04
 
 # This silently ignores failures in piped commands
+
 RUN curl -s https://example.com/data | process-data > output.txt
 ```
 

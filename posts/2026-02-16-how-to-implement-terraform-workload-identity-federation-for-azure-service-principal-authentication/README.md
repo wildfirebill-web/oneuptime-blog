@@ -46,6 +46,7 @@ First, create the Azure AD application and service principal that Terraform will
 # setup-workload-identity.sh - Create the Azure AD app and federated credential
 
 # Create the Azure AD application
+
 APP_ID=$(az ad app create \
   --display-name "terraform-github-actions" \
   --query appId \

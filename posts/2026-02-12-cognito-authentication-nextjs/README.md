@@ -21,6 +21,7 @@ npx create-next-app@latest my-cognito-app --typescript --app
 cd my-cognito-app
 
 # Install Cognito client SDK
+
 npm install @aws-sdk/client-cognito-identity-provider
 
 # Install JWT verification for server-side

@@ -80,6 +80,7 @@ First, confirm you have a public IPv4 address:
 ```bash
 #!/bin/bash
 # Script: check_public_ip.sh
+
 # Description: Verify public IPv4 address for 6to4 compatibility
 
 # Get the public IP address

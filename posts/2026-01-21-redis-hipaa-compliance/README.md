@@ -75,6 +75,7 @@ flowchart TB
 # redis-hipaa.conf
 
 # Bind to private network only
+
 bind 10.0.0.100
 
 # Require strong authentication

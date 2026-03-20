@@ -43,6 +43,7 @@ session = Session()
 role = sagemaker.get_execution_role()
 
 # Assuming you just trained a model with xgb_estimator
+
 # (see our training guide for the full setup)
 predictor = xgb_estimator.deploy(
     initial_instance_count=1,

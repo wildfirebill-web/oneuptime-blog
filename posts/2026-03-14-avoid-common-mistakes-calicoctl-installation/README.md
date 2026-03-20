@@ -28,6 +28,7 @@ The most common mistake is running a calicoctl version that does not match the C
 
 ```bash
 # WRONG: Installing latest calicoctl without checking cluster version
+
 curl -fsSL -o /usr/local/bin/calicoctl \
   https://github.com/projectcalico/calico/releases/latest/download/calicoctl-linux-amd64
 

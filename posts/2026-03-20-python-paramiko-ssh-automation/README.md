@@ -8,7 +8,7 @@ Description: Learn how to use Python Paramiko to connect to network devices via 
 
 ## What Is Paramiko?
 
-Paramiko is a Python library implementing the SSH protocol. Unlike Netmiko (which is built on Paramiko), Paramiko provides lower-level SSH access — useful when:
+Paramiko is a Python library implementing the SSH protocol. Unlike Netmiko (which is built on Paramiko), Paramiko provides lower-level SSH access - useful when:
 - Netmiko doesn't support your device type
 - You need SSH tunneling or SFTP
 - You want fine-grained control over the SSH session
@@ -28,6 +28,7 @@ import paramiko
 import time
 
 # Create SSH client
+
 client = paramiko.SSHClient()
 
 # Trust the host key automatically (not for production - verify in prod)

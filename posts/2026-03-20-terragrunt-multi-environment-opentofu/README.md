@@ -12,9 +12,9 @@ Terragrunt is a thin wrapper around OpenTofu that adds features for multi-enviro
 
 ## Terragrunt Directory Structure
 
-```
+```text
 infrastructure/
-├── terragrunt.hcl          # Root config — shared across all environments
+├── terragrunt.hcl          # Root config - shared across all environments
 ├── modules/
 │   ├── network/
 │   ├── database/
@@ -40,6 +40,7 @@ infrastructure/
 
 ```hcl
 # terragrunt.hcl (root)
+
 locals {
   # Parse environment from directory path
   path_components = split("/", path_relative_to_include())
@@ -53,7 +54,7 @@ locals {
   account_id = local.account_ids[local.environment]
 }
 
-# DRY backend configuration — all environments inherit this
+# DRY backend configuration - all environments inherit this
 remote_state {
   backend = "s3"
   generate = {
@@ -154,7 +155,7 @@ terragrunt run-all destroy
 ## Best Practices
 
 - Use `mock_outputs` in dependencies for `plan` operations so you can plan without applying dependencies first.
-- The `run-all` commands apply modules in the correct dependency order — don't manually manage apply order.
-- Keep module `terragrunt.hcl` files minimal — they should only configure inputs and dependencies, not resources.
+- The `run-all` commands apply modules in the correct dependency order - don't manually manage apply order.
+- Keep module `terragrunt.hcl` files minimal - they should only configure inputs and dependencies, not resources.
 - Use `include "root"` and `expose = true` to access root-level `locals` in child configs.
 - Consider Terragrunt's `generate` block to create provider.tf files with environment-specific configurations.

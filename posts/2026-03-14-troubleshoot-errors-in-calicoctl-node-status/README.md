@@ -31,6 +31,7 @@ This means the calico-node container is not active or the Felix/BIRD processes i
 
 ```bash
 # Check if the calico-node container/pod exists
+
 kubectl get pods -n calico-system -l k8s-app=calico-node -o wide
 
 # Check pod logs

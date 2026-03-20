@@ -26,6 +26,7 @@ For workloads that need reliable, predictable compute, use on-demand instances.
 
 ```bash
 # Create a managed EC2 on-demand compute environment
+
 aws batch create-compute-environment \
   --compute-environment-name prod-on-demand \
   --type MANAGED \

@@ -600,6 +600,7 @@ Download and extract Flink:
 
 ```bash
 # Download Flink 1.18.1
+
 wget https://archive.apache.org/dist/flink/flink-1.18.1/flink-1.18.1-bin-scala_2.12.tgz
 
 # Extract

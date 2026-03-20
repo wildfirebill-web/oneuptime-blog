@@ -14,6 +14,7 @@ Ceph RBD provides block storage that can be used as virtual machine disk backend
 
 ```bash
 # Create a pool for RBD images
+
 sudo ceph osd pool create rbd-pool 128
 
 # Initialize the pool for RBD use

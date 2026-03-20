@@ -14,6 +14,7 @@ NAT masquerade on MikroTik dynamically translates private IPv4 source addresses 
 
 ```mikrotik
 # Enable masquerade for all LAN traffic going out ether1 (WAN)
+
 /ip firewall nat add \
   chain=srcnat \
   out-interface=ether1 \

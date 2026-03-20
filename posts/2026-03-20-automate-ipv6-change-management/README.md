@@ -14,6 +14,7 @@ Automate IPv6 network change workflows including approval gates, deployment, val
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

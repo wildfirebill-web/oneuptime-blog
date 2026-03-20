@@ -91,6 +91,7 @@ variable "layers" {
 }
 
 # VPC configuration
+
 variable "vpc_config" {
   description = "VPC configuration for the Lambda function"
   type = object({

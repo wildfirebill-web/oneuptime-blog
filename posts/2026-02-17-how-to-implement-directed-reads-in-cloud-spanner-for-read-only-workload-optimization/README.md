@@ -60,6 +60,7 @@ Directed reads are configured per-request through the client library. You do not
 
 ```python
 # directed_reads.py - Route reads to specific replicas
+
 from google.cloud import spanner
 from google.cloud.spanner_v1 import DirectedReadOptions
 from google.cloud.spanner_v1.types import DirectedReadOptions as DROTypes

@@ -28,6 +28,7 @@ This seems obvious, but it catches people more than you would expect. Go to your
 
 ```bash
 # Check the current state of your App Service
+
 az webapp show \
   --resource-group myResourceGroup \
   --name myWebApp \

@@ -18,6 +18,7 @@ After running `terraform init`, Terraform creates a `.terraform.lock.hcl` file t
 
 ```hcl
 # .terraform.lock.hcl
+
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 

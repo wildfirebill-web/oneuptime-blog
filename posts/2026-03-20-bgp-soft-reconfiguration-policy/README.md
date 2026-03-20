@@ -14,17 +14,18 @@ When you modify BGP routing policies (route maps, prefix lists, communities), yo
 
 | Method | Effect | Disruption |
 |--------|--------|------------|
-| Hard reset | Tears down the BGP session | Yes — traffic blackhole during reconvergence |
-| Soft-in reset | Re-applies inbound policy | No — just re-evaluates received routes |
-| Soft-out reset | Re-announces routes with new policy | No — just re-sends advertised routes |
-| Route Refresh (RFC 2918) | Peer re-sends its routes | No — modern standard approach |
+| Hard reset | Tears down the BGP session | Yes - traffic blackhole during reconvergence |
+| Soft-in reset | Re-applies inbound policy | No - just re-evaluates received routes |
+| Soft-out reset | Re-announces routes with new policy | No - just re-sends advertised routes |
+| Route Refresh (RFC 2918) | Peer re-sends its routes | No - modern standard approach |
 
-## Method 1: Route Refresh (Preferred — No Config Required)
+## Method 1: Route Refresh (Preferred - No Config Required)
 
 Modern BGP implementations support Route Refresh automatically. No stored table needed.
 
 ```bash
-# FRR (Linux) — Trigger inbound policy re-evaluation via Route Refresh
+# FRR (Linux) - Trigger inbound policy re-evaluation via Route Refresh
+
 vtysh -c "clear bgp 10.0.0.2 soft in"
 
 # Trigger outbound re-announcement
@@ -41,7 +42,7 @@ vtysh -c "clear bgp ipv4 unicast soft"
 
 For peers that don't support Route Refresh, enable inbound soft reconfiguration to store all received routes.
 
-```
+```text
 # FRR configuration (vtysh)
 router bgp 65001
   neighbor 10.0.0.2 soft-reconfiguration inbound
@@ -51,7 +52,7 @@ This stores every route received from the neighbor before applying any inbound p
 
 ## Applying an Updated Inbound Policy
 
-```
+```text
 # FRR example: update an inbound route map, then re-apply
 router bgp 65001
   address-family ipv4 unicast
@@ -63,7 +64,7 @@ do clear bgp 10.0.0.2 soft in
 
 ## Applying an Updated Outbound Policy
 
-```
+```text
 router bgp 65001
   address-family ipv4 unicast
     neighbor 10.0.0.2 route-map ADVERTISE-OUT out
@@ -74,7 +75,7 @@ do clear bgp 10.0.0.2 soft out
 
 ## Cisco IOS Equivalent
 
-```
+```text
 ! Enable inbound soft reconfiguration
 router bgp 65001
   neighbor 10.0.0.2 soft-reconfiguration inbound
@@ -89,7 +90,7 @@ clear ip bgp 10.0.0.2 soft out
 ## Verifying After Soft Reset
 
 ```bash
-# Check BGP summary — session should remain Established
+# Check BGP summary - session should remain Established
 vtysh -c "show bgp summary"
 
 # Verify the new policy is taking effect on received routes

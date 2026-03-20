@@ -142,6 +142,7 @@ Load balancers, firewalls, and NAT devices often close idle TCP connections afte
 
 ```bash
 # Linux - Set TCP keep-alive parameters
+
 sudo sysctl -w net.ipv4.tcp_keepalive_time=120
 sudo sysctl -w net.ipv4.tcp_keepalive_intvl=30
 sudo sysctl -w net.ipv4.tcp_keepalive_probes=3

@@ -18,6 +18,7 @@ UFW logging is off by default. Enable it with:
 
 ```bash
 # Enable logging
+
 sudo ufw logging on
 
 # Check logging status

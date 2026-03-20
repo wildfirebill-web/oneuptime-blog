@@ -14,6 +14,7 @@ Description: Learn how to use templatefile() in OpenTofu to generate dynamic con
 
 ```hcl
 # main.tf - templatefile for dynamic scripts
+
 resource "aws_instance" "app" {
   ami           = data.aws_ami.app.id
   instance_type = "m5.large"

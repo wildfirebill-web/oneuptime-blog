@@ -250,6 +250,7 @@ You can calculate your cache hit ratio:
 
 ```bash
 # hit_ratio = hit_count / total_count
+
 ```
 
 A healthy cache hit ratio depends on your workload, but for read-heavy API endpoints, you should aim for 60-90% after the cache warms up.

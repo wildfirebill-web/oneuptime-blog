@@ -18,6 +18,7 @@ BGP (Border Gateway Protocol) is the internet's routing protocol. It:
 
 ```bash
 # Ubuntu/Debian
+
 curl -s https://deb.frrouting.org/frr/keys.asc | sudo apt-key add -
 echo "deb https://deb.frrouting.org/frr $(lsb_release -s -c) frr-stable" | \
     sudo tee /etc/apt/sources.list.d/frr.list
@@ -32,12 +33,12 @@ systemctl restart frr
 
 Two ASes exchanging routes:
 
-```
+```text
 AS 65001 (our router): 10.0.0.1
 AS 65002 (peer router): 10.0.0.2
 ```
 
-```
+```text
 vtysh
 configure terminal
 
@@ -61,7 +62,7 @@ exit
 
 iBGP requires full mesh or route reflectors:
 
-```
+```text
 router bgp 65001
  bgp router-id 1.1.1.1
 
@@ -80,7 +81,7 @@ exit
 
 For large iBGP deployments, configure route reflectors to avoid full mesh:
 
-```
+```text
 router bgp 65001
  bgp router-id 3.3.3.3
  neighbor 1.1.1.1 remote-as 65001
@@ -95,7 +96,7 @@ exit
 
 ## Filtering with Prefix Lists and Route Maps
 
-```
+```text
 ! Create prefix list (allow only specific prefixes)
 ip prefix-list ALLOW_ONLY seq 5 permit 192.168.1.0/24
 ip prefix-list ALLOW_ONLY seq 10 deny 0.0.0.0/0 le 32
@@ -132,14 +133,14 @@ vtysh -c "show bgp neighbors 10.0.0.2 advertised-routes"
 
 Sample `show bgp summary`:
 
-```
+```text
 Neighbor        V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down State/PfxRcd
 10.0.0.2        4      65002       325       320        1    0    0  02:10:15            5
 ```
 
 ## BGP Communities
 
-```
+```text
 ! Tag outbound routes with a community
 route-map TAG_COMMUNITY permit 10
  set community 65001:100

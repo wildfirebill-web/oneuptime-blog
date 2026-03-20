@@ -29,6 +29,7 @@ Install the Kubescape CLI for ad-hoc scans:
 
 ```bash
 # Install Kubescape CLI
+
 curl -s https://raw.githubusercontent.com/kubescape/kubescape/master/install.sh | /bin/bash
 
 # Verify installation

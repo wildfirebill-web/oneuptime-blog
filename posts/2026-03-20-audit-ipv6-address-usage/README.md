@@ -14,7 +14,7 @@ IPv6 address auditing discovers the gap between what your IPAM says is assigned 
 
 ```bash
 #!/bin/bash
-# collect_ndp.sh — Collect NDP tables from all gateway routers
+# collect_ndp.sh - Collect NDP tables from all gateway routers
 
 OUTPUT_DIR="/var/audit/ipv6-ndp/$(date +%Y%m%d)"
 mkdir -p "$OUTPUT_DIR"
@@ -79,6 +79,7 @@ def parse_linux_ndp(content: str) -> list:
     return entries
 
 # Load all NDP files
+
 all_entries = {}
 for ndp_file in Path("/var/audit/ipv6-ndp").rglob("*.txt"):
     router = ndp_file.stem.replace("-ndp", "")
@@ -115,9 +116,9 @@ for ip in nb.ipam.ip_addresses.filter(family=6):
 on_network = set(all_entries.keys())
 in_ipam = set(ipam_addresses.keys())
 
-# Active on network but not in IPAM — potential unauthorized or SLAAC
+# Active on network but not in IPAM - potential unauthorized or SLAAC
 untracked = on_network - in_ipam
-# In IPAM as active but not seen on network — potentially stale
+# In IPAM as active but not seen on network - potentially stale
 stale = {a for a, d in ipam_addresses.items()
          if d["status"] == "active" and a not in on_network}
 

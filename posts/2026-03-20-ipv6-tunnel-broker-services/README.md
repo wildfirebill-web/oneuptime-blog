@@ -32,9 +32,9 @@ When you sign up:
 | Provider | URL | Tunnel Types | IPv6 Prefix | Free? |
 |---|---|---|---|---|
 | Hurricane Electric (HE) | tunnelbroker.net | 6in4 | /64 + /48 | Yes |
-| SixXS | sixXS.net | 6in4, AYIYA | /64 + /48 | Was free — shut down 2017 |
+| SixXS | sixXS.net | 6in4, AYIYA | /64 + /48 | Was free - shut down 2017 |
 | NetAssist | net.ua/ipv6 | 6in4 | /64 + /48 | Yes (Ukraine) |
-| Freenet6 / Gogo6 | defunct | 6in4 | — | Closed |
+| Freenet6 / Gogo6 | defunct | 6in4 | - | Closed |
 
 **Hurricane Electric** is the dominant tunnel broker today, operating PoPs in:
 - North America: Fremont, Los Angeles, Dallas, Chicago, New York, Miami
@@ -45,11 +45,11 @@ When you sign up:
 
 When you register:
 
-```
+```text
 Tunnel details page shows:
   Server IPv4 Address:  198.51.100.1        (HE's endpoint)
   Server IPv6 Address:  2001:db8:abcd::1/64 (HE's tunnel IP)
-  Client IPv4 Address:  203.0.113.10        (your WAN IPv4 — auto-detected)
+  Client IPv4 Address:  203.0.113.10        (your WAN IPv4 - auto-detected)
   Client IPv6 Address:  2001:db8:abcd::2/64 (your tunnel IP)
 
 Routed IPv6 Prefix:
@@ -62,6 +62,7 @@ Hurricane Electric provides ready-to-use configuration for multiple platforms:
 
 ```bash
 # Linux example (from HE's tunnel configuration page)
+
 modprobe ipv6
 ip tunnel add he-ipv6 mode sit remote 198.51.100.1 local 203.0.113.10 ttl 255
 ip link set he-ipv6 up

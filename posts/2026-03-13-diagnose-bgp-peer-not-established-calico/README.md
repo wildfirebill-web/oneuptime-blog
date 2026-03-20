@@ -37,6 +37,7 @@ The BGP session establishment process requires: TCP connectivity on port 179 bet
 ```bash
 calicoctl node status
 # Look for peers not in Established state
+
 ```
 
 **Step 2: Get BGP peer configuration**

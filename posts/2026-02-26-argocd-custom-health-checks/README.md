@@ -300,6 +300,7 @@ Test your Lua scripts before deploying them.
 
 ```bash
 # Install Lua 5.3 or later
+
 # Create a test script
 cat > test_health.lua << 'EOF'
 -- Simulate the resource object

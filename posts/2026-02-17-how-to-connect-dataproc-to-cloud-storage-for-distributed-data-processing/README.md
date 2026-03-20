@@ -24,6 +24,7 @@ If you do not already have a bucket, create one in the same region as your Datap
 
 ```bash
 # Create a regional GCS bucket in the same region as your Dataproc cluster
+
 gsutil mb -l us-central1 -c standard gs://my-dataproc-data/
 
 # Create directory structure for organized data management

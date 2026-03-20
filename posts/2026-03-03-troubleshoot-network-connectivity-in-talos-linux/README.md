@@ -27,6 +27,7 @@ Start by checking the basic network configuration on the node:
 
 ```bash
 # Check network interfaces and their status
+
 talosctl -n <node-ip> get links
 
 # Check IP addresses assigned to interfaces

@@ -29,6 +29,7 @@ Ensure Felix and Typha are exposing metrics:
 
 ```bash
 # Verify Felix metrics are enabled
+
 calicoctl get felixconfiguration default -o yaml | grep -i prometheus
 
 # If not enabled, apply:

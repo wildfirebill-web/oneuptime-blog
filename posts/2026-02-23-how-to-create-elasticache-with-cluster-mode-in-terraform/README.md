@@ -20,6 +20,7 @@ There are some trade-offs to be aware of. Multi-key operations only work when al
 
 ```hcl
 # Configure Terraform and the AWS provider
+
 terraform {
   required_providers {
     aws = {

@@ -48,6 +48,7 @@ This comprehensive Collector configuration handles all three signal types: metri
 
 ```yaml
 # collector-daemonset.yaml
+
 apiVersion: opentelemetry.io/v1alpha1
 kind: OpenTelemetryCollector
 metadata:

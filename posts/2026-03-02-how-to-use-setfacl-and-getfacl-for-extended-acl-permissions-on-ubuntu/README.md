@@ -18,6 +18,7 @@ ACLs require filesystem support. ext4, XFS, and Btrfs all support ACLs natively 
 
 ```bash
 # Check mount options for a filesystem
+
 grep -E "acl|ext4|xfs" /proc/mounts
 
 # On Ubuntu, ext4 filesystems mount with ACL support enabled by default

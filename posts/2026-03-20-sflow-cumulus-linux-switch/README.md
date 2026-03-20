@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: sFlow, Cumulus Linux, Networking, Monitoring, IPv4, hsflowd, Traffic Analysis
+Tags: sFlow, Cumulus Linux, Networking, Monitoring, IPv4, Hsflowd, Traffic Analysis
 
 Description: Learn how to configure sFlow packet sampling on a Cumulus Linux switch using hsflowd to export traffic statistics to an sFlow collector over IPv4.
 
@@ -14,6 +14,7 @@ sFlow is a packet sampling protocol that provides visibility into network traffi
 
 ```bash
 # Install the Host sFlow daemon
+
 apt update && apt install hsflowd -y
 
 # Verify installation

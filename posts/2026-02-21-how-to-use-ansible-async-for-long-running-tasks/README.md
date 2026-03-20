@@ -39,6 +39,7 @@ The simplest async pattern launches a task and polls for completion:
 ```yaml
 ---
 # Run a slow task with async polling
+
 - hosts: databases
   tasks:
     - name: Run database backup

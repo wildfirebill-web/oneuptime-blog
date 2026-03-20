@@ -1,4 +1,4 @@
-# How to Filter and Search Container Logs in Portainer
+# How to Filter and Search Container Logs in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,7 +25,7 @@ In the log viewer:
 4. The viewer highlights or filters to matching lines.
 
 Common search terms:
-```
+```text
 "ERROR"          → Find all error lines
 "CRITICAL"       → Find critical issues
 "timeout"        → Find timeout-related issues
@@ -39,6 +39,7 @@ Portainer allows setting how many lines to show (from the end). But for time-bas
 
 ```bash
 # Show logs from the last hour:
+
 docker logs --since 1h my-container
 
 # Show logs from a specific time:
@@ -192,7 +193,7 @@ services:
 
 With Grafana + Loki, you can search logs across all containers with LogQL:
 
-```
+```text
 # LogQL examples in Grafana:
 {container_name="my-app"} |= "ERROR"
 {container_name=~"api.*"} | json | latency_ms > 1000

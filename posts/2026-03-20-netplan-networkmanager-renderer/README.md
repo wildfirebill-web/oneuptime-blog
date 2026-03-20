@@ -23,12 +23,13 @@ Set `renderer: NetworkManager` in your Netplan YAML:
 
 ```yaml
 # /etc/netplan/01-network-manager-all.yaml
+
 network:
   version: 2
   renderer: NetworkManager    # Delegate all interfaces to NetworkManager
 ```
 
-This single directive tells Netplan to let NetworkManager manage all interfaces — matching the default desktop behavior.
+This single directive tells Netplan to let NetworkManager manage all interfaces - matching the default desktop behavior.
 
 ## Static IP via NetworkManager Renderer
 

@@ -14,6 +14,7 @@ TCP connections progress through a well-defined state machine from creation to t
 
 ```bash
 # View all connection states
+
 ss -tn state all
 
 # Count connections per state

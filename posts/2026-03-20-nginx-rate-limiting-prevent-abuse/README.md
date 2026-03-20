@@ -16,6 +16,7 @@ Rate limit zones are defined in the `http` block and referenced in `server` or `
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 http {
     # Define a shared memory zone called "api_limit"
     # Key: client IP ($binary_remote_addr uses less memory than $remote_addr)
@@ -56,8 +57,8 @@ server {
 }
 ```
 
-- `burst=20` — allows a burst of up to 20 extra requests to be queued
-- `nodelay` — process burst requests immediately rather than spacing them out
+- `burst=20` - allows a burst of up to 20 extra requests to be queued
+- `nodelay` - process burst requests immediately rather than spacing them out
 - Without `nodelay`, queued requests are delayed to conform to the rate
 
 ## Limiting Concurrent Connections

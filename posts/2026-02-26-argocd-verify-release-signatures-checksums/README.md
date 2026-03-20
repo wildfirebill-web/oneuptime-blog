@@ -29,6 +29,7 @@ When downloading the ArgoCD CLI, always verify the checksum.
 
 ```bash
 # Download the CLI binary
+
 VERSION=v2.13.0
 curl -sSL -o argocd-linux-amd64 \
   https://github.com/argoproj/argo-cd/releases/download/${VERSION}/argocd-linux-amd64

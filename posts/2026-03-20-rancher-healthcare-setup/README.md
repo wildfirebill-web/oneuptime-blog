@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, healthcare, hipaa, kubernetes, compliance
+Tags: Rancher, Healthcare, HIPAA, Kubernetes, Compliance
 
 Description: A step-by-step guide to configuring Rancher for HIPAA-compliant healthcare environments, covering security hardening, access control, and audit logging.
 
@@ -24,6 +24,7 @@ All healthcare clusters should use RKE2 with the CIS hardening profile:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml on each node
+
 profile: cis-1.23
 selinux: true
 secrets-encryption: true
@@ -196,7 +197,7 @@ audit-log-maxage: "90"   # 90-day retention for HIPAA
 
 Configure Rancher with your hospital's Active Directory or SAML identity provider:
 
-```
+```text
 Rancher UI → Global Settings → Auth Configuration → Active Directory
 - Server: ldaps://ad.hospital.internal:636
 - Service Account: rancher@hospital.internal

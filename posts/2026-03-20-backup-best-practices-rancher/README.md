@@ -22,6 +22,7 @@ Backup strategy in Rancher covers three distinct layers: the Rancher management 
 
 ```bash
 # Install Rancher Backup Operator
+
 helm install rancher-backup rancher-charts/rancher-backup \
   --namespace cattle-resources-system \
   --create-namespace \
@@ -191,4 +192,4 @@ velero restore create --from-backup daily-production-20260301000000 \
 
 ## Conclusion
 
-A complete Rancher backup strategy requires all three layers: management plane, etcd, and application data. The Rancher Backup Operator handles the management plane, RKE2's built-in snapshot handles etcd, and Velero handles application workloads. Test restores quarterly—untested backups are not backups. Store backups in a separate AWS account or geographic region to protect against account compromise or regional failures.
+A complete Rancher backup strategy requires all three layers: management plane, etcd, and application data. The Rancher Backup Operator handles the management plane, RKE2's built-in snapshot handles etcd, and Velero handles application workloads. Test restores quarterly-untested backups are not backups. Store backups in a separate AWS account or geographic region to protect against account compromise or regional failures.

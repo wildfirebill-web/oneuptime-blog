@@ -26,7 +26,8 @@ Blocking all ICMP traffic is a common but misguided security practice. While it 
 ```bash
 # iptables: allow essential ICMP, block everything else
 
-# Allow ICMP echo request (incoming ping) — rate-limited
+# Allow ICMP echo request (incoming ping) - rate-limited
+
 iptables -A INPUT -p icmp --icmp-type echo-request -m limit --limit 10/s -j ACCEPT
 
 # Allow ICMP echo reply (responses to our pings)
@@ -72,8 +73,8 @@ table inet filter {
 # Send a large packet with DF bit set to a remote server
 ping -s 1400 -M do -c 3 8.8.8.8
 
-# If you get "Frag needed" ICMP back — PMTUD works correctly
-# If the ping hangs/times out — you've blocked Type 3 Code 4
+# If you get "Frag needed" ICMP back - PMTUD works correctly
+# If the ping hangs/times out - you've blocked Type 3 Code 4
 
 # Check for PMTUD blocking
 tcpdump -i eth0 -n 'icmp[0]=3 and icmp[1]=4'
@@ -92,4 +93,4 @@ iptables -A OUTPUT -p icmp --icmp-type echo-reply -j DROP
 
 ## Conclusion
 
-Never block all ICMP. The security benefit is minimal (the IP header is still visible to scanners regardless), and the operational cost is high — MTU black holes, broken health checks, and inability to use traceroute for diagnostics. Allow echo-request (rate-limited), echo-reply, fragmentation-needed, time-exceeded, and destination-unreachable. Selectively drop anything else.
+Never block all ICMP. The security benefit is minimal (the IP header is still visible to scanners regardless), and the operational cost is high - MTU black holes, broken health checks, and inability to use traceroute for diagnostics. Allow echo-request (rate-limited), echo-reply, fragmentation-needed, time-exceeded, and destination-unreachable. Selectively drop anything else.

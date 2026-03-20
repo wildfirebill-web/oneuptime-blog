@@ -18,6 +18,7 @@ A Cloud Run Job consists of one or more tasks that run in parallel. Each task ru
 
 ```bash
 # Check the current configuration of your job
+
 gcloud run jobs describe my-job \
     --region=us-central1 \
     --format="yaml(spec.template)"

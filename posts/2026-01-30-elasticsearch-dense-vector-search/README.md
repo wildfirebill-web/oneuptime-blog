@@ -168,6 +168,7 @@ from sentence_transformers import SentenceTransformer
 from elasticsearch import Elasticsearch
 
 # Initialize
+
 model = SentenceTransformer('all-MiniLM-L6-v2')
 es = Elasticsearch(['http://localhost:9200'])
 

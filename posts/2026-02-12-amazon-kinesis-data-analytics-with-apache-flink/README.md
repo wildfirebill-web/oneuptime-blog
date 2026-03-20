@@ -222,6 +222,7 @@ from pyflink.table.expressions import col, lit
 from pyflink.table.window import Tumble
 
 # Set up the environment
+
 env_settings = EnvironmentSettings.in_streaming_mode()
 t_env = TableEnvironment.create(env_settings)
 

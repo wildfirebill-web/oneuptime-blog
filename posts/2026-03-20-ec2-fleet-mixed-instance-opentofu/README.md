@@ -125,6 +125,7 @@ resource "aws_launch_template" "app" {
 
 ```hcl
 # CloudWatch alarm to track fleet fulfillment
+
 resource "aws_cloudwatch_metric_alarm" "fleet_capacity" {
   alarm_name          = "ec2-fleet-capacity-shortfall"
   comparison_operator = "LessThanThreshold"

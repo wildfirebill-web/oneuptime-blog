@@ -84,6 +84,7 @@ Prometheus provides a built-in function for linear regression forecasting. The `
 
 ```promql
 # Predict disk usage 24 hours from now
+
 # Uses the last 7 days of data to fit the trend line
 predict_linear(
     node_filesystem_avail_bytes{mountpoint="/"}[7d],

@@ -320,6 +320,7 @@ Environment configs:
 
 ```yaml
 # environments/dev/config.yaml
+
 name: myapp-dev
 targetRevision: main  # Always latest
 deployPath: k8s/overlays/dev

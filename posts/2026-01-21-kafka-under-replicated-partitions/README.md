@@ -28,6 +28,7 @@ Replicas: [1, 2, 3]
 
 ```bash
 # List under-replicated partitions
+
 kafka-topics.sh --bootstrap-server localhost:9092 \
   --describe --under-replicated-partitions
 

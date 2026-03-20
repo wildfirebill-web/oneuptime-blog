@@ -33,6 +33,7 @@ API keys should be cryptographically random, sufficiently long, and include a pr
 
 ```python
 # key_generator.py
+
 # Generate secure API keys with prefixes and metadata
 
 import secrets

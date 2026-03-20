@@ -26,6 +26,7 @@ Verify your cluster version supports ephemeral containers:
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Expected output should show v1.25.0 or higher

@@ -54,6 +54,7 @@ Let us start by setting up a new Laravel project and installing the required pac
 
 ```bash
 # Create a new Laravel project
+
 composer create-project laravel/laravel saas-platform
 
 # Navigate to the project directory

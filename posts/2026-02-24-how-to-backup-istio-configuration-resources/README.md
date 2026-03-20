@@ -50,6 +50,7 @@ BACKUP_DIR="istio-backup-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 
 # Networking resources
+
 for resource in virtualservices destinationrules gateways serviceentries sidecars envoyfilters workloadentries workloadgroups proxyconfigs; do
   echo "Backing up $resource..."
   kubectl get "$resource" --all-namespaces -o yaml > "$BACKUP_DIR/$resource.yaml"

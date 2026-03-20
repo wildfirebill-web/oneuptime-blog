@@ -12,7 +12,7 @@ IS-IS route redistribution advertises routes from external sources as External r
 
 ## Cisco IOS Redistribution
 
-```
+```text
 ! Redistribute static IPv6 routes into IS-IS
 Router(config)# router isis
 Router(config-router)# redistribute ipv6 static level-2   ! Inject into L2
@@ -29,7 +29,7 @@ Router(config-router)# redistribute ipv6 bgp 65001 level-2 metric 30
 
 ## Cisco: Using Route Maps for Selective Redistribution
 
-```
+```text
 ! Create prefix list for filtering
 Router(config)# ipv6 prefix-list ISIS_IMPORT seq 10 permit 2001:db8:branch::/48
 
@@ -45,10 +45,11 @@ Router(config-router)# redistribute ipv6 static level-2 route-map TO_ISIS
 
 ## Juniper JunOS Redistribution
 
-```
+```bash
 # Redistribution uses export policies in Juniper
 
 # Policy to redistribute static IPv6 into IS-IS
+
 set policy-options policy-statement STATIC_TO_ISIS term 1 from protocol static
 set policy-options policy-statement STATIC_TO_ISIS term 1 from family inet6
 set policy-options policy-statement STATIC_TO_ISIS term 1 then accept
@@ -100,7 +101,7 @@ Router(config-router)# default-information originate ipv6 always
 
 ## Verifying Redistributed Routes
 
-```
+```text
 ! Cisco: Check for external IS-IS routes on a neighbor
 Router-Neighbor# show ipv6 route isis
 
@@ -121,7 +122,7 @@ show route protocol isis table inet6.0
 
 When redistributing between two protocols bidirectionally, use route tags to prevent loops:
 
-```
+```text
 ! Cisco: Tag routes from OSPF before injecting into IS-IS
 Router(config)# route-map OSPF_TO_ISIS permit 10
 Router(config-route-map)#  match ipv6 address prefix-list OSPF_PREFIXES

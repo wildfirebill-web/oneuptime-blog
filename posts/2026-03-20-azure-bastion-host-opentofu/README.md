@@ -8,7 +8,7 @@ Description: Learn how to deploy Azure Bastion Host with OpenTofu to provide sec
 
 ## Introduction
 
-Azure Bastion is a managed PaaS service that provides secure RDP and SSH access to VMs through the Azure Portal or native clients over TLS—without requiring a public IP on the VM or an open RDP/SSH port in NSGs. Traffic flows through Azure's network, and Bastion handles session management, audit logging, and MFA enforcement through Azure AD. This eliminates the attack surface of publicly exposed management ports, which are a primary target for brute-force attacks.
+Azure Bastion is a managed PaaS service that provides secure RDP and SSH access to VMs through the Azure Portal or native clients over TLS-without requiring a public IP on the VM or an open RDP/SSH port in NSGs. Traffic flows through Azure's network, and Bastion handles session management, audit logging, and MFA enforcement through Azure AD. This eliminates the attack surface of publicly exposed management ports, which are a primary target for brute-force attacks.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Azure Bastion is a managed PaaS service that provides secure RDP and SSH access 
 
 ```hcl
 # Dedicated subnet - must be named exactly "AzureBastionSubnet"
+
 resource "azurerm_subnet" "bastion" {
   name                 = "AzureBastionSubnet"  # Required exact name
   resource_group_name  = var.resource_group_name
@@ -197,4 +198,4 @@ az network bastion rdp \
 
 ## Conclusion
 
-Azure Bastion eliminates the need for jump boxes, VPNs, or public IPs on management VMs. The Standard SKU is required for native client (SSH/RDP) support via tunneling—Basic SKU only supports browser-based access through the Azure Portal. One Bastion deployment per VNet can access all VMs in the VNet and in peered VNets. Combine Bastion with Azure AD Conditional Access policies to enforce MFA for all VM access sessions.
+Azure Bastion eliminates the need for jump boxes, VPNs, or public IPs on management VMs. The Standard SKU is required for native client (SSH/RDP) support via tunneling-Basic SKU only supports browser-based access through the Azure Portal. One Bastion deployment per VNet can access all VMs in the VNet and in peered VNets. Combine Bastion with Azure AD Conditional Access policies to enforce MFA for all VM access sessions.

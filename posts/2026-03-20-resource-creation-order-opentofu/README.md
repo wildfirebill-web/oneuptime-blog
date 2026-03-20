@@ -71,6 +71,7 @@ resource "aws_subnet" "public_b" {
 }
 
 # Both subnets are created in parallel after aws_vpc.main is ready
+
 ```
 
 ## Dependency Graph Visualization

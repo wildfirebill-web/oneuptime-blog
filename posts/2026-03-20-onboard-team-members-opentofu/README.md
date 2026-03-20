@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Onboarding, Team Workflow, Documentation, Developer Experience, Infrastructure as Code
+Tags: OpenTofu, Onboarding, Team Workflows, Documentation, Developer Experience, Infrastructure as Code
 
 Description: Learn how to create a smooth onboarding experience for new team members joining an OpenTofu project, including environment setup, access provisioning, and learning resources.
 
@@ -22,7 +22,8 @@ graph LR
 ## Automated Tooling Setup
 
 ```bash
-# .tool-versions — works with mise or asdf
+# .tool-versions - works with mise or asdf
+
 opentofu 1.6.0
 terraform-docs 0.17.0
 tflint 0.50.3
@@ -104,7 +105,7 @@ resource "aws_iam_group_membership" "new_engineers" {
 ## Sandbox Environment
 
 ```hcl
-# sandbox.tf — personal sandbox per engineer
+# sandbox.tf - personal sandbox per engineer
 resource "aws_iam_role" "sandbox" {
   for_each = toset(var.engineer_usernames)
   name     = "sandbox-${each.key}"
@@ -180,8 +181,8 @@ resource "aws_iam_role_policy" "sandbox" {
 
 ## Best Practices
 
-- Automate tooling setup with a single script — "run this one command" is more reliable than a multi-step guide.
-- Grant read-only access first and expand incrementally — it's easier to add permissions than to explain a production incident.
+- Automate tooling setup with a single script - "run this one command" is more reliable than a multi-step guide.
+- Grant read-only access first and expand incrementally - it's easier to add permissions than to explain a production incident.
 - Assign a buddy for the first two weeks to answer questions and review first PRs.
 - Create sandbox accounts or namespaces where new engineers can experiment without risk to shared environments.
 - Keep the onboarding guide in the repository so it stays up to date when tools and processes change.

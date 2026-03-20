@@ -32,6 +32,7 @@ You need Python 3.9 or later installed on your system. Most modern Linux distrib
 
 ```bash
 # Check your Python version
+
 python3 --version
 ```
 

@@ -51,6 +51,7 @@ k8s/
 
 ```yaml
 # k8s/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

@@ -28,6 +28,7 @@ Before working with constructs, let us set up a basic CDKTF project using TypeSc
 
 ```bash
 # Install CDKTF CLI globally
+
 npm install -g cdktf-cli
 
 # Initialize a new CDKTF project with TypeScript

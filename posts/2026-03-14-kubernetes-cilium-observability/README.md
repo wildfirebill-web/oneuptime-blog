@@ -30,6 +30,7 @@ Hubble is Cilium's observability component. Enable it with full Kubernetes conte
 
 ```yaml
 # cilium-hubble-values.yaml
+
 hubble:
   enabled: true
   relay:

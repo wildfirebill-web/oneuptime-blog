@@ -53,6 +53,7 @@ Once you have SLOs, calculating the error budget is straightforward. The formula
 
 ```python
 # Error Budget Formula
+
 # ====================
 # This calculates the maximum allowable downtime or failure rate
 # that your service can experience while still meeting your SLO.

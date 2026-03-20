@@ -16,6 +16,7 @@ The concept is simple: test first, deploy second. If the test step exits with a 
 
 ```yaml
 # The fundamental test-before-deploy pattern
+
 steps:
   # Step 1: Install dependencies
   - name: 'node:20'

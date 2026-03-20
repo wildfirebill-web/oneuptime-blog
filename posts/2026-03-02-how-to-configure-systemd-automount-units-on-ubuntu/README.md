@@ -32,6 +32,7 @@ systemd derives unit names from paths by replacing `/` with `-` and special char
 
 ```bash
 # Convert a path to a systemd unit name
+
 systemd-escape --path /mnt/nfs-backup
 # Output: mnt-nfs\x2dbackup
 

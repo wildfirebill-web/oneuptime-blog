@@ -121,7 +121,7 @@ Administrators who need to create, configure, and manage queues require a broade
 
 ---
 
-## Resource-Based Policies
+Resource-Based Policies
 
 Resource-based policies are attached directly to SQS queues and specify who can access the queue and what actions they can perform.
 
@@ -586,6 +586,7 @@ Create a new SQS queue and apply an access policy using the AWS CLI. The queue p
 
 ```bash
 # Create the queue with a policy attached during creation
+
 # The policy allows a specific IAM role to send and receive messages
 aws sqs create-queue \
     --queue-name order-processing-queue \

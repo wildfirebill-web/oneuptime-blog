@@ -29,6 +29,7 @@ Let's start with a simple restore operation. Assume you have an existing snapsho
 
 ```bash
 # List available snapshots
+
 kubectl get volumesnapshot
 
 # Example output:

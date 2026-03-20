@@ -360,6 +360,7 @@ Check log storage growth rate before and after:
 
 ```bash
 # Before: check logs per second for a workload
+
 kubectl logs -l app=data-pipeline -c istio-proxy --since=1m | wc -l
 ```
 

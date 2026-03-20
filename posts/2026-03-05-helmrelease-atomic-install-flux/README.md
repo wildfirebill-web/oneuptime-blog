@@ -29,6 +29,7 @@ First, define a HelmRepository source. This example uses the Bitnami charts repo
 
 ```yaml
 # helmrepository.yaml - Defines the Helm chart source for Flux to pull from
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

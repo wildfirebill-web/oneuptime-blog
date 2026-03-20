@@ -19,10 +19,11 @@ Comparing IPv6 and IPv4 performance helps identify protocol-specific bottlenecks
 ## Step 1: Measure Round-Trip Latency
 
 ```bash
-# IPv4 ping — 100 packets
+# IPv4 ping - 100 packets
+
 ping -c 100 -i 0.1 192.0.2.1
 
-# IPv6 ping — 100 packets
+# IPv6 ping - 100 packets
 ping6 -c 100 -i 0.1 2001:db8::1
 
 # Compare statistics output:
@@ -36,25 +37,25 @@ IPv6 often has slightly lower latency on native paths because there is no NAT tr
 Run iperf3 as a server on the remote host, then benchmark from the local host.
 
 ```bash
-# On the server host — listen on both IPv4 and IPv6
+# On the server host - listen on both IPv4 and IPv6
 iperf3 -s -p 5201
 
-# From the client — IPv4 TCP throughput
+# From the client - IPv4 TCP throughput
 iperf3 -c 192.0.2.1 -p 5201 \
   -t 30 \          # 30-second test
   -P 4 \           # 4 parallel streams
   --format m       # Output in Mbits/s
 
-# From the client — IPv6 TCP throughput
+# From the client - IPv6 TCP throughput
 iperf3 -6 -c 2001:db8::1 -p 5201 \
   -t 30 \
   -P 4 \
   --format m
 
-# UDP throughput test — IPv4
+# UDP throughput test - IPv4
 iperf3 -c 192.0.2.1 -u -b 1G -t 30
 
-# UDP throughput test — IPv6
+# UDP throughput test - IPv6
 iperf3 -6 -c 2001:db8::1 -u -b 1G -t 30
 ```
 
@@ -87,7 +88,7 @@ EOF
 
 ```bash
 #!/bin/bash
-# bench-ip-comparison.sh — compare IPv4 vs IPv6 throughput
+# bench-ip-comparison.sh - compare IPv4 vs IPv6 throughput
 
 SERVER4="192.0.2.1"
 SERVER6="2001:db8::1"

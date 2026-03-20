@@ -18,6 +18,7 @@ The simplest form shows the last commit that modified each line:
 
 ```bash
 # Basic blame output
+
 git blame src/server.js
 
 # Output format:

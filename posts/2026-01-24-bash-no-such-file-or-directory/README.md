@@ -31,6 +31,7 @@ The "No such file or directory" error appears in several forms:
 
 ```bash
 # When running a script
+
 bash: ./script.sh: No such file or directory
 
 # When sourcing a file

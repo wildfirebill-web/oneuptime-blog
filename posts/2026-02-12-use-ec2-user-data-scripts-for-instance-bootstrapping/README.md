@@ -35,6 +35,7 @@ yum update -y
 yum install -y nginx
 
 # Start Nginx and enable it on boot
+
 systemctl start nginx
 systemctl enable nginx
 

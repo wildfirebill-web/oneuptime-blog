@@ -22,6 +22,7 @@ The fastest way to get Mongo Express running is with two Docker commands. First,
 
 ```bash
 # Start a MongoDB container with authentication enabled
+
 docker run -d \
   --name mongodb \
   -e MONGO_INITDB_ROOT_USERNAME=admin \

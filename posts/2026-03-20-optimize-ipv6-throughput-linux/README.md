@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Performance, Kernel, sysctl, Networking
+Tags: IPv6, Linux, Performance, Kernel, Sysctl, Networking
 
 Description: Tune Linux kernel parameters and network stack settings to maximize IPv6 TCP and UDP throughput for high-bandwidth applications.
 
@@ -18,6 +18,7 @@ Large socket buffers allow the kernel to buffer more in-flight data, critical fo
 # /etc/sysctl.d/99-ipv6-performance.conf
 
 # Maximum receive socket buffer size (256 MB)
+
 net.core.rmem_max = 268435456
 # Maximum send socket buffer size (256 MB)
 net.core.wmem_max = 268435456
@@ -67,7 +68,7 @@ Offloading TCP segmentation to the NIC reduces CPU overhead and increases throug
 # Check current offload settings for your interface
 ethtool -k eth0 | grep -E "scatter|offload|generic"
 
-# Enable TCP Segmentation Offload (TSO) — also used for IPv6
+# Enable TCP Segmentation Offload (TSO) - also used for IPv6
 sudo ethtool -K eth0 tso on
 
 # Enable Generic Segmentation Offload

@@ -1,4 +1,4 @@
-# How to Deploy a Django + PostgreSQL Stack via Portainer
+# How to Deploy a Django + PostgreSQL Stack via Portainer - Postgres
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Django is Python's most popular web framework, and PostgreSQL is its preferred d
 
 ```dockerfile
 # Dockerfile (in your Django project root)
+
 FROM python:3.12-slim
 
 # Install system dependencies
@@ -208,7 +209,7 @@ env = environ.Env()
 # Read .env file if present
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-# Database — uses DATABASE_URL env var
+# Database - uses DATABASE_URL env var
 DATABASES = {
     'default': env.db('DATABASE_URL', default='sqlite:///db.sqlite3')
 }

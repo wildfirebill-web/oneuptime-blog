@@ -37,6 +37,7 @@ Create `templates/user_data.sh.tpl`:
 set -euo pipefail
 
 # Variables injected by OpenTofu
+
 APP_VERSION="${app_version}"
 ENVIRONMENT="${environment}"
 DB_ENDPOINT="${db_endpoint}"

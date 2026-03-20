@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, Kubernetes, Gateway, Agents, Scalability, Architecture
+Tags: OpenTelemetry, Collector, Kubernetes, Gateway, Agent, Scalability, Architecture
 
 Description: A practical guide to designing and configuring OpenTelemetry Collector agent and gateway topologies that scale to large Kubernetes clusters with thousands of nodes.
 
@@ -56,6 +56,7 @@ This is a minimal agent configuration that collects OTLP data from local pods, e
 
 ```yaml
 # agent-collector-config.yaml
+
 # Runs as DaemonSet - one per node
 receivers:
   otlp:

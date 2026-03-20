@@ -37,6 +37,7 @@ openstack server list -f value -c ID | xargs -I{} openstack server stop {}
 
 ```bash
 # On controller
+
 sudo systemctl stop openstack-neutron-openvswitch-agent
 
 # On each compute node

@@ -48,6 +48,7 @@ flowchart TB
 
 ```bash
 # Run official DinD image
+
 docker run --privileged --name dind -d docker:dind
 
 # Connect a client container to it

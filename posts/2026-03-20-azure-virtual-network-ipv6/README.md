@@ -17,6 +17,7 @@ RESOURCE_GROUP="rg-ipv6-network"
 LOCATION="eastus"
 
 # Create resource group
+
 az group create --name "$RESOURCE_GROUP" --location "$LOCATION"
 
 # Create VNet with both IPv4 and IPv6 address spaces

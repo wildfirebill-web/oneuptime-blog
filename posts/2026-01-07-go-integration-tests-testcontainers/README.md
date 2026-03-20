@@ -54,6 +54,7 @@ First, let us set up our Go module and install the required dependencies:
 
 ```bash
 # Initialize the Go module
+
 go mod init myapi
 
 # Install Testcontainers-Go and database drivers

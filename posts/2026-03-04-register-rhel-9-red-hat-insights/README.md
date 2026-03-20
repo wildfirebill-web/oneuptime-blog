@@ -44,6 +44,7 @@ Insights requires a valid registration with Red Hat:
 
 ```bash
 # Confirm the system is registered
+
 sudo subscription-manager identity
 ```
 

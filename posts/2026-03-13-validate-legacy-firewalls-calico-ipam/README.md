@@ -29,6 +29,7 @@ Identify the IP ranges that need to be permitted through the legacy firewall.
 
 ```bash
 # Get all configured IP pools
+
 calicoctl get ippool -o wide
 
 # Note the CIDRs that need firewall rules:

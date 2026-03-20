@@ -39,6 +39,7 @@ After disabling Docker's iptables management, you must add rules manually for co
 
 ```bash
 # Allow forwarding between container bridge and host
+
 sudo iptables -A FORWARD -i docker0 -j ACCEPT
 sudo iptables -A FORWARD -o docker0 -j ACCEPT
 

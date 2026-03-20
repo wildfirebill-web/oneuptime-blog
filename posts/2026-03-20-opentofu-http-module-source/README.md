@@ -1,11 +1,10 @@
----
-title: "Using HTTP URLs as Module Sources in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, http
-description: "Learn how to use HTTP and HTTPS URLs as module sources in OpenTofu to download modules from web servers."
----
-
 # Using HTTP URLs as Module Sources in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, HTTP
+
+Description: Learn how to use HTTP and HTTPS URLs as module sources in OpenTofu to download modules from web servers.
 
 OpenTofu can download module packages from HTTP and HTTPS URLs. The URL must point to a zip, tar.gz, tar.bz2, or tar.xz archive.
 
@@ -35,6 +34,7 @@ module "vpc" {
 
 ```hcl
 # Generate pre-signed URL in advance
+
 # aws s3 presign s3://my-modules/vpc-2.1.0.zip --expires-in 3600
 
 module "vpc" {

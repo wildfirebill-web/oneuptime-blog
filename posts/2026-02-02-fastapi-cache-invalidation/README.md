@@ -34,6 +34,7 @@ First, let's set up our Redis connection and basic caching utilities:
 
 ```python
 # cache.py
+
 import redis
 import json
 import hashlib

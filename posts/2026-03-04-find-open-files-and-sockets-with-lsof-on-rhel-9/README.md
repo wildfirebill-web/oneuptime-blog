@@ -22,6 +22,7 @@ Use lsof to inspect open files and connections:
 
 ```bash
 # Show all open files for a process
+
 lsof -p <PID>
 
 # Show all network connections

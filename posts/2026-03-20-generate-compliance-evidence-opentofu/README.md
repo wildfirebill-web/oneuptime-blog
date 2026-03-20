@@ -6,12 +6,13 @@ Tags: OpenTofu, Compliance, Evidence Generation, Audit, Infrastructure as Code
 
 Description: Learn how to extract compliance evidence from OpenTofu state files to support security audits and regulatory assessments.
 
-OpenTofu state files contain the current configuration of all managed resources. Auditors often need evidence that specific controls are in place — encryption enabled, logging configured, access restricted. This guide shows how to extract that evidence programmatically from state.
+OpenTofu state files contain the current configuration of all managed resources. Auditors often need evidence that specific controls are in place - encryption enabled, logging configured, access restricted. This guide shows how to extract that evidence programmatically from state.
 
 ## Exporting State as JSON
 
 ```bash
 # Export the full current state as JSON
+
 tofu show -json > state.json
 
 # Or pull the raw state file (less structured)
@@ -112,7 +113,7 @@ print("Compliance evidence written to compliance-evidence.json")
 
 ```python
 #!/usr/bin/env python3
-# evidence-report.py — generate a Markdown compliance evidence report
+# evidence-report.py - generate a Markdown compliance evidence report
 
 import json, sys
 from datetime import datetime

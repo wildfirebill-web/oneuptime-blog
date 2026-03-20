@@ -23,6 +23,7 @@ The workflow is straightforward:
 
 ```bash
 # Create a symmetric KMS key for SOPS encryption
+
 aws kms create-key \
   --description "Flux CD SOPS encryption key" \
   --key-usage ENCRYPT_DECRYPT \

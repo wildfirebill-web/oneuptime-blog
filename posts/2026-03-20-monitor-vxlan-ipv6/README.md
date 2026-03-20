@@ -22,7 +22,8 @@ Description: Monitor VXLAN overlay networks over IPv6 using Prometheus node expo
 Node exporter automatically exposes network interface metrics including VXLAN:
 
 ```yaml
-# prometheus.yml — scrape node exporter on all VTEPs
+# prometheus.yml - scrape node exporter on all VTEPs
+
 scrape_configs:
   - job_name: 'vtep-nodes'
     static_configs:
@@ -37,7 +38,7 @@ scrape_configs:
         replacement: '$1'
 ```
 
-```
+```text
 # Key PromQL queries for VXLAN monitoring
 
 # VXLAN throughput per VTEP (bytes/sec)
@@ -116,7 +117,7 @@ TEXTFILE_DIR="/var/lib/node_exporter/textfile_collector"
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Dashboard: VXLAN Fabric Overview
 
 # Panel 1: Overlay throughput (bytes/sec) per VTEP

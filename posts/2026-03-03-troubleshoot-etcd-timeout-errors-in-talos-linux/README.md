@@ -54,6 +54,7 @@ Check disk performance:
 
 ```bash
 # Check etcd WAL sync duration from the metrics
+
 # First, port-forward to etcd metrics
 kubectl -n kube-system port-forward <etcd-pod> 2381:2381
 

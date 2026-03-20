@@ -391,6 +391,7 @@ The following Python implementation demonstrates a flexible criteria builder tha
 
 ```python
 # criteria.py
+
 # Fluent criteria builder for constructing API filters
 
 from typing import Any, List, Dict, Optional, TypeVar, Generic

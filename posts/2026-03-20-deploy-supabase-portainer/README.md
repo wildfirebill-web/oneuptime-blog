@@ -20,6 +20,7 @@ Supabase is an open-source Firebase alternative that provides a PostgreSQL datab
 
 ```bash
 # Clone the official self-hosted compose files
+
 git clone --depth 1 https://github.com/supabase/supabase
 cd supabase/docker
 
@@ -116,4 +117,4 @@ const { data: session, error: authError } = await supabase.auth.signInWithPasswo
 
 ## Conclusion
 
-Supabase self-hosted deploys ~15 containers (Kong API gateway, PostgREST, GoTrue auth, Realtime, Storage, Analytics, PostgreSQL). The `ANON_KEY` is safe for client-side use and respects Row Level Security (RLS) policies. The `SERVICE_ROLE_KEY` bypasses RLS — keep it server-side only. Always enable RLS on tables before exposing them via the `ANON_KEY`.
+Supabase self-hosted deploys ~15 containers (Kong API gateway, PostgREST, GoTrue auth, Realtime, Storage, Analytics, PostgreSQL). The `ANON_KEY` is safe for client-side use and respects Row Level Security (RLS) policies. The `SERVICE_ROLE_KEY` bypasses RLS - keep it server-side only. Always enable RLS on tables before exposing them via the `ANON_KEY`.

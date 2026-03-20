@@ -38,6 +38,7 @@ Let us build a three-step ETL pipeline.
 
 ```bash
 # Step 1: Submit the extract job
+
 EXTRACT_JOB_ID=$(aws batch submit-job \
   --job-name etl-extract \
   --job-queue data-pipeline-queue \

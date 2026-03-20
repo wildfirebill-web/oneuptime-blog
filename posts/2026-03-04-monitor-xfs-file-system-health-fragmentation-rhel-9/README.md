@@ -131,6 +131,7 @@ Monitor these over time to detect changes in workload patterns:
 
 ```bash
 # Capture stats every 5 seconds
+
 while true; do
     echo "--- $(date) ---"
     cat /proc/fs/xfs/stat

@@ -26,6 +26,7 @@ terraform {
 }
 
 # These values are passed as Terraform variables
+
 inputs = {
   vpc_cidr           = "10.0.0.0/16"
   environment        = "dev"

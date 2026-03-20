@@ -48,6 +48,7 @@ Before debugging, ensure you have visibility into all resource dimensions.
 
 ```python
 # bottleneck_metrics.py - Collect comprehensive resource metrics
+
 from dataclasses import dataclass
 from datetime import datetime
 from typing import List, Dict, Optional

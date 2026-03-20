@@ -14,6 +14,7 @@ Label Studio is an open-source data labeling tool that supports images, text, au
 
 ```yaml
 # label-studio-stack.yml
+
 version: "3.8"
 
 services:
@@ -66,7 +67,7 @@ networks:
 For large datasets, configure Label Studio to read from MinIO or S3:
 
 ```python
-# setup_storage.py — configure cloud storage via Label Studio API
+# setup_storage.py - configure cloud storage via Label Studio API
 import requests
 
 LABEL_STUDIO_URL = "http://localhost:8080"
@@ -159,22 +160,22 @@ print(f"Exported {len(response.content)} bytes of annotations")
 ```
 
 Supported export formats:
-- **JSON** — Label Studio native format
-- **COCO** — Object detection (bounding boxes)
-- **Pascal VOC** — XML format for image classification
-- **CSV** — Simple tabular format for text classification
-- **YOLO** — For YOLO object detection models
+- **JSON** - Label Studio native format
+- **COCO** - Object detection (bounding boxes)
+- **Pascal VOC** - XML format for image classification
+- **CSV** - Simple tabular format for text classification
+- **YOLO** - For YOLO object detection models
 
 ## Step 5: Active Learning Integration
 
-Connect your model to Label Studio for active learning — automatically prioritizing the most uncertain samples for annotation:
+Connect your model to Label Studio for active learning - automatically prioritizing the most uncertain samples for annotation:
 
 ```python
 # Submit predictions back to Label Studio to guide annotators
 predictions = [
     {
         "model_version": "classifier-v1",
-        "score": 0.45,    # Low confidence — annotators should review this
+        "score": 0.45,    # Low confidence - annotators should review this
         "result": [{"type": "choices", "value": {"choices": ["Neutral"]}}]
     }
 ]

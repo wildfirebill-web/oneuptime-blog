@@ -27,6 +27,7 @@ graph TD
 
 ```bash
 # Install comprehensive network tools
+
 sudo apt update
 sudo apt install net-tools iputils-ping dnsutils traceroute mtr-tiny tcpdump nmap netcat-openbsd iftop iperf3 ethtool -y
 ```

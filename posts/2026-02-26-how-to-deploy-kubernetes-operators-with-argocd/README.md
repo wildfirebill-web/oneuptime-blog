@@ -37,6 +37,7 @@ Here is a typical structure for an operator deployment:
 
 ```yaml
 # Wave 0: CRDs first
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

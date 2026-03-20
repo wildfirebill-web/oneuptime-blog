@@ -1,4 +1,4 @@
-# How to Handle Import ID Formats for Different Resource Types in OpenTofu
+# How to Handle Import ID Formats for Different Resource Types in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Every provider resource in documentation has an "Import" section showing the ID 
 
 ```bash
 # Check the provider documentation for the resource
+
 # Example: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import
 
 # Or: run plan with -generate-config-out to see what ID format is used

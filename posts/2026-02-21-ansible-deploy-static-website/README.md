@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Static Website, NGINX, Deployment, DevOps
+Tags: Ansible, Static Website, Nginx, Deployment, DevOps
 
 Description: Deploy static websites with Ansible including Nginx configuration, build steps, cache headers, and multi-environment support.
 
@@ -45,6 +45,7 @@ static-deploy/
 
 ```yaml
 # inventory/production.yml
+
 all:
   hosts:
     web1:

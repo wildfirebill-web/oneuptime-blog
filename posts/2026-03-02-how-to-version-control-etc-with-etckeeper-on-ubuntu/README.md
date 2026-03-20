@@ -29,6 +29,7 @@ etckeeper installs with Git as the default VCS and automatically initializes the
 
 ```bash
 # Review and edit the etckeeper configuration
+
 sudo nano /etc/etckeeper/etckeeper.conf
 ```
 

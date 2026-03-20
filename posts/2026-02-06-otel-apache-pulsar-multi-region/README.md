@@ -35,6 +35,7 @@ First, configure geo-replication between your Pulsar clusters:
 
 ```bash
 # Register clusters with each other
+
 pulsar-admin clusters create us-east \
   --url http://pulsar-us-east:8080 \
   --broker-url pulsar://pulsar-us-east:6650

@@ -12,7 +12,7 @@ RIPE NCC (Réseaux IP Européens Network Coordination Centre) is the RIR respons
 
 ## RIPE NCC Membership
 
-Unlike ARIN, RIPE NCC uses a membership model. To receive IPv6 address space directly from RIPE NCC, you must become a member (LIR — Local Internet Registry).
+Unlike ARIN, RIPE NCC uses a membership model. To receive IPv6 address space directly from RIPE NCC, you must become a member (LIR - Local Internet Registry).
 
 Alternatively, end-users can receive IPv6 space from an LIR (their ISP) without becoming members.
 
@@ -32,7 +32,7 @@ All new LIRs receive a /32 IPv6 allocation automatically upon becoming members. 
 
 The allocation is created in the RIPE database as:
 
-```
+```text
 inet6num: 2001:db8::/32
 netname:  YOUR-NET-NAME
 descr:    Your Organization Name
@@ -61,8 +61,9 @@ If your organization is not an ISP and does not want LIR membership:
 
 After receiving your allocation, create the necessary RIPE database objects:
 
-```
+```text
 # Create inet6num objects for customer assignments
+
 inet6num: 2001:db8:1::/48
 netname:  CUSTOMER-A-NET
 descr:    Customer A IPv6 Block

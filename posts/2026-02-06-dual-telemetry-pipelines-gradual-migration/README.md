@@ -41,6 +41,7 @@ The simplest approach is to configure the OpenTelemetry Collector to export to b
 
 ```yaml
 # collector-config.yaml: dual export for metrics
+
 receivers:
   otlp:
     protocols:

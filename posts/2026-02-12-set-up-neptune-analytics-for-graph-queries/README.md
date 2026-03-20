@@ -42,6 +42,7 @@ Neptune Analytics graphs are standalone resources. You specify the memory size b
 
 ```bash
 # Create a Neptune Analytics graph with 128 GB of memory
+
 aws neptune-graph create-graph \
   --graph-name fraud-detection-graph \
   --provisioned-memory 128 \

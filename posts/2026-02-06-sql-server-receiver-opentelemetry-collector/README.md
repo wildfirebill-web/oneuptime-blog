@@ -44,6 +44,7 @@ Here's a minimal configuration to start monitoring a SQL Server instance:
 
 ```yaml
 # Receivers section - defines how telemetry enters the Collector
+
 receivers:
   # SQL Server receiver for Microsoft SQL Server monitoring
   sqlserver:

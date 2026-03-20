@@ -37,6 +37,7 @@ The customer gateway is a representation of your physical VPN device in AWS. You
 
 ```hcl
 # Customer gateway - represents your on-prem VPN device
+
 resource "aws_customer_gateway" "main" {
   bgp_asn    = 65000    # your on-premises BGP ASN
   ip_address = var.onprem_vpn_ip  # public IP of your VPN device

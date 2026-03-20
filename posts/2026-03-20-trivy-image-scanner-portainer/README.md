@@ -1,4 +1,4 @@
-# How to Deploy Trivy as an Image Scanner with Portainer
+# How to Deploy Trivy as an Image Scanner with Portainer - Image
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Running Trivy in client-server mode separates the vulnerability database from th
 
 ```yaml
 # docker-compose.yml - Trivy server deployment
+
 version: "3.8"
 
 services:

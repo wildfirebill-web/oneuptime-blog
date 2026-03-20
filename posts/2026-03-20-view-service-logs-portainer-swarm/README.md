@@ -1,4 +1,4 @@
-# How to View Service Logs in Portainer on Swarm
+# How to View Service Logs in Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Docker Swarm mode enables container orchestration across multiple hosts. Portain
 
 ```bash
 # Initialize Docker Swarm (if not already done)
+
 docker swarm init --advertise-addr <manager-ip>
 
 # Join workers to the Swarm

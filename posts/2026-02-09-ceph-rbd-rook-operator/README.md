@@ -22,6 +22,7 @@ Deploy the Rook operator which watches for Ceph-related custom resources.
 
 ```bash
 # Clone Rook repository for deployment manifests
+
 git clone --single-branch --branch v1.13.0 https://github.com/rook/rook.git
 cd rook/deploy/examples
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: dnsmasq, DNS, IPv6, DHCP, SLAAC, Resolver, Local Network
+Tags: Dnsmasq, DNS, IPv6, DHCP, SLAAC, Resolver, Local Network
 
 Description: Configure dnsmasq to provide DNS resolution and DHCPv6/RA services over IPv6 on a local network, including AAAA record overrides and upstream forwarding.
 
@@ -15,6 +15,7 @@ dnsmasq is a lightweight DNS forwarder and DHCP server widely used on home netwo
 ```bash
 apt-get install -y dnsmasq
 # or
+
 dnf install -y dnsmasq
 ```
 
@@ -68,7 +69,7 @@ address=/nas.local/2001:db8::20
 # Or add to /etc/hosts (dnsmasq reads /etc/hosts by default)
 ```
 
-```
+```text
 # /etc/hosts additions
 2001:db8::1    router router.local
 2001:db8::10   server server.local

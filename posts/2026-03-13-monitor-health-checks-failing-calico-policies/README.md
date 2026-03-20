@@ -29,6 +29,7 @@ Prometheus kube-state-metrics exposes the pod readiness and container restart co
 
 ```bash
 # Check pod readiness state
+
 kubectl get pods -n <namespace> -o wide | grep "0/"
 
 # Check for probe failure events

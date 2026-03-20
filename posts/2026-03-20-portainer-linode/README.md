@@ -22,6 +22,7 @@ Description: Learn how to deploy Portainer on a Linode (now Akamai Cloud) instan
 ```bash
 #!/bin/bash
 # Install Docker
+
 curl -fsSL https://get.docker.com | sh
 usermod -aG docker root
 

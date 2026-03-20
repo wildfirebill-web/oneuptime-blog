@@ -142,7 +142,7 @@ spec:
       image: batch-processor:latest
 ```
 
-## Resource-Aware Scheduling
+Resource-Aware Scheduling
 
 The default scheduler considers CPU and memory requests when placing pods. You can configure how much weight each resource gets:
 
@@ -203,6 +203,7 @@ After configuring the scheduler, monitor its behavior to make sure it is working
 
 ```bash
 # Check scheduler logs on control plane nodes
+
 talosctl logs kube-scheduler --nodes 10.0.0.2
 
 # View scheduler events

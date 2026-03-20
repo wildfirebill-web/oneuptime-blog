@@ -46,6 +46,7 @@ Trivy can scan multiple targets for secrets. Here are the fundamental commands:
 
 ```bash
 # Scan a local directory for secrets
+
 # This checks all files recursively for credential patterns
 trivy fs --scanners secret /path/to/your/project
 

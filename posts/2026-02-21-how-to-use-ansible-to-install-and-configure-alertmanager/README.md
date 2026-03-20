@@ -52,6 +52,7 @@ alertmanager/
 
 ```yaml
 # roles/alertmanager/defaults/main.yml
+
 alertmanager_version: "0.26.0"
 alertmanager_platform: "linux-amd64"
 

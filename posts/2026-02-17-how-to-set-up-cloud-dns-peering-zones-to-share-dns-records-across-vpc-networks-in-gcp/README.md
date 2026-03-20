@@ -51,6 +51,7 @@ First, make sure the shared services VPC has a private DNS zone with the records
 
 ```bash
 # Create a private zone in the shared services project
+
 gcloud dns managed-zones create internal-zone \
     --dns-name=internal.example.com. \
     --description="Internal DNS for shared services" \

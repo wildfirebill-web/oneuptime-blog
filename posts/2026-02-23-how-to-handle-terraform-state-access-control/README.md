@@ -30,6 +30,7 @@ The most common backend for AWS teams is S3 with DynamoDB locking. Here is how t
 
 ```hcl
 # State bucket with all security controls
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "my-org-terraform-state"
 

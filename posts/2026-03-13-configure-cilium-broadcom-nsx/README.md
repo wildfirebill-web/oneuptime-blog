@@ -29,6 +29,7 @@ Configure NSX components required for the Kubernetes cluster.
 
 ```bash
 # NSX configuration steps (performed in NSX Manager UI or API):
+
 # 1. Create a Logical Segment for Kubernetes nodes
 # 2. Create a Tier-1 Gateway for cluster traffic
 # 3. Configure NAT rules for pod egress (if using Cilium with NAT)

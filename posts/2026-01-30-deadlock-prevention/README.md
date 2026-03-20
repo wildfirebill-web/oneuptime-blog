@@ -328,6 +328,7 @@ Avoid doing I/O, network calls, or heavy computation while holding locks.
 
 ```python
 # Bad: Holding lock during external API call
+
 def process_order_bad(conn, order_id):
     with conn.cursor() as cur:
         cur.execute("SELECT * FROM orders WHERE id = %s FOR UPDATE", (order_id,))

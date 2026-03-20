@@ -27,6 +27,7 @@ This guide provides practical techniques for getting maximum value from Cilium S
 
 ```bash
 # Join via the official invite link
+
 # Visit: https://cilium.io/slack to get the invite URL
 
 # After joining, configure your Slack notifications:

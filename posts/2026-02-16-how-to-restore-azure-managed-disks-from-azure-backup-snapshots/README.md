@@ -49,6 +49,7 @@ List available recovery points for the VM:
 
 ```bash
 # List all recovery points for a backed-up VM
+
 # This shows the date, type, and tier of each recovery point
 az backup recoverypoint list \
     --resource-group rg-backup-eastus2 \

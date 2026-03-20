@@ -22,6 +22,7 @@ Pod status clearly indicates when init containers are causing problems. The Init
 
 ```bash
 # Check pod status
+
 kubectl get pods -n production
 
 # Example output showing init container issues
@@ -281,7 +282,7 @@ spec:
 
 This pattern is common with StatefulSets using persistent volumes that might have incorrect initial permissions.
 
-## Resource Limits on Init Containers
+Resource Limits on Init Containers
 
 Init containers respect resource limits. If limits are too low, init containers might get OOMKilled or throttled.
 

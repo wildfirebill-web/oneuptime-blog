@@ -59,6 +59,7 @@ This centralized model is designed for managing hundreds or thousands of cluster
 
 ```yaml
 # Flux CD: GitRepository source
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

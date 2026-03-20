@@ -37,6 +37,7 @@ No more managing authorized_keys files on hundreds of servers.
 
 ```bash
 # Create a dedicated directory for the CA
+
 mkdir -p ~/ssh-ca && chmod 700 ~/ssh-ca
 
 # Generate the CA key (this is the crown jewel - protect it!)

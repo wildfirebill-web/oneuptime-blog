@@ -22,6 +22,7 @@ This playbook running on web servers generates a config that references all data
 
 ```yaml
 # playbook.yml - Resolve group members from another group
+
 ---
 - name: Configure web servers with database server list
   hosts: webservers

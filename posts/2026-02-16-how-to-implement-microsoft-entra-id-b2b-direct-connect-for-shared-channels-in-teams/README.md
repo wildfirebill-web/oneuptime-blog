@@ -55,6 +55,7 @@ Navigate to Microsoft Entra admin center > External Identities > Cross-tenant ac
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.CrossTenantAccess"
 
 # Add Fabrikam as a partner organization

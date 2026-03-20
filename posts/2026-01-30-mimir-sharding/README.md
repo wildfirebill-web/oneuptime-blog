@@ -71,6 +71,7 @@ Ingesters hold recent samples in memory before flushing to object storage. The h
 
 ```yaml
 # mimir-config.yaml
+
 # Ingester ring configuration for sharded distribution
 
 ingester:

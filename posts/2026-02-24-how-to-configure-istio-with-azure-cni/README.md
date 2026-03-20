@@ -41,6 +41,7 @@ The good news is that sidecar containers share the same pod IP, so Istio doesn't
 
 ```bash
 # Check your current subnet size
+
 az network vnet subnet show \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

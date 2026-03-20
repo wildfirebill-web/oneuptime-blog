@@ -200,6 +200,7 @@ Apply different hedging strategies per service based on their characteristics:
 
 ```yaml
 # Search service - aggressive hedging OK (read-only, idempotent)
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

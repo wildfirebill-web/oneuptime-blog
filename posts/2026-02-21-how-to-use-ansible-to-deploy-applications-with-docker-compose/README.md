@@ -54,6 +54,7 @@ First, we need Docker and Docker Compose installed on the target servers.
 
 ```yaml
 # roles/docker_install/tasks/main.yml
+
 ---
 - name: Install required packages
   ansible.builtin.apt:

@@ -31,6 +31,7 @@ flowchart LR
 
 ```bash
 # Install the Matter SDK (chip-tool)
+
 sudo apt-get install git gcc g++ python3-pip libssl-dev libavahi-client-dev
 
 # Clone the Matter SDK

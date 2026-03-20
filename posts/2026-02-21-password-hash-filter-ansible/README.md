@@ -16,6 +16,7 @@ The `password_hash` filter takes a hashing algorithm as its argument:
 
 ```yaml
 # create_user.yml - Create a user with a hashed password
+
 - name: Create application user
   ansible.builtin.user:
     name: deploy

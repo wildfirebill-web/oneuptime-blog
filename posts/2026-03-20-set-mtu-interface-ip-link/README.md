@@ -14,6 +14,7 @@ MTU (Maximum Transmission Unit) is the largest packet size the interface can tra
 
 ```bash
 # Show MTU for all interfaces
+
 ip link show
 
 # Show MTU for a specific interface
@@ -49,7 +50,7 @@ ip link set vxlan0 mtu 1450
 
 ## Calculate Correct Tunnel MTU
 
-```
+```text
 Ethernet underlay MTU: 1500
 GRE overhead:           24 bytes → tunnel MTU = 1476
 VXLAN overhead:         50 bytes → tunnel MTU = 1450

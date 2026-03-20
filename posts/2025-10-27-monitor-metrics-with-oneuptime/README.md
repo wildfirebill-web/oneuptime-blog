@@ -39,6 +39,7 @@ The following PromQL-style query examples show common metric patterns for monito
 
 ```promql
 # Metric query examples for OneUptime metric monitors
+
 # Use these patterns to build effective alerting rules
 
 # Request rate: total requests per second over 5 minutes

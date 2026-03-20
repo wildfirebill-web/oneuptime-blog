@@ -30,6 +30,7 @@ First, initialize the operator project:
 
 ```bash
 # Initialize the project
+
 kubebuilder init --domain example.com --repo github.com/example/app-operator
 
 # Create an API

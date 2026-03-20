@@ -10,7 +10,7 @@ nftables uses a clean, unified syntax that replaces iptables, ip6tables, and arp
 
 ## nftables Architecture
 
-```
+```text
 Table (ip = IPv4, ip6 = IPv6, inet = both)
   └── Chain (input, output, forward, or custom)
         └── Rules (match conditions + actions)
@@ -20,6 +20,7 @@ Table (ip = IPv4, ip6 = IPv6, inet = both)
 
 ```bash
 # List all rules
+
 sudo nft list ruleset
 
 # Flush all rules (careful in production!)
@@ -31,8 +32,8 @@ sudo nft -f /etc/nftables.conf
 
 ## Writing a Complete Firewall from Scratch
 
-```
-# /etc/nftables.conf — Complete firewall configuration
+```text
+# /etc/nftables.conf - Complete firewall configuration
 
 # Flush existing ruleset first (idempotent)
 flush ruleset

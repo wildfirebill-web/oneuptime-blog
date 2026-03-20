@@ -179,6 +179,7 @@ def paginate_with_search_after(index, query, page_size=20):
         search_after = hits[-1]["sort"]
 
 # Usage
+
 query = {"match": {"category": "electronics"}}
 for product in paginate_with_search_after("products", query):
     print(product["name"])

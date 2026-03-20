@@ -27,12 +27,13 @@ Portainer provides two types of authentication for API access: JWT tokens (short
 4. Scroll to **Access tokens**
 5. Click **Add access token**
 6. Enter a descriptive name (e.g., `ci-cd-pipeline`, `monitoring-script`)
-7. Copy the generated token immediately — it's shown only once
+7. Copy the generated token immediately - it's shown only once
 
 ## Method 2: Generate Token via API
 
 ```bash
 # Step 1: Get a JWT via username/password
+
 JWT=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
@@ -144,7 +145,7 @@ curl -X DELETE \
 ## Security Best Practices
 
 - Give each token a descriptive name tied to its use case
-- Use separate tokens per pipeline/application — never share tokens
+- Use separate tokens per pipeline/application - never share tokens
 - Revoke tokens when pipelines are decommissioned
 - Store tokens in secrets managers (GitHub Secrets, HashiCorp Vault, etc.)
 - Never hardcode tokens in source code or Dockerfiles

@@ -28,6 +28,7 @@ Topic-level retention is the foundation for replay. When enabled, Pub/Sub stores
 
 ```bash
 # Enable 7-day message retention on a topic
+
 gcloud pubsub topics update order-events \
   --message-retention-duration=7d
 ```

@@ -30,6 +30,7 @@ Determine whether the issue is cluster-wide or specific to certain paths:
 
 ```bash
 # Test pod-to-pod on same node
+
 kubectl run server-local --image=cilium/netperf -- netserver -D
 kubectl run client-local --image=cilium/netperf \
   --overrides='{"spec":{"nodeName":"'$(kubectl get pod server-local -o jsonpath='{.spec.nodeName}')}'"}}' \

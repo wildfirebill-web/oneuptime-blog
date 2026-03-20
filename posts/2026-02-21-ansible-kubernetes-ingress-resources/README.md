@@ -21,6 +21,7 @@ This guide walks through creating Ingress resources with Ansible for common scen
 
 ```bash
 # Install required collection and library
+
 ansible-galaxy collection install kubernetes.core
 pip install kubernetes
 ```

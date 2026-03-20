@@ -16,6 +16,7 @@ Every change to infrastructure configuration is a commit. Enforce meaningful com
 
 ```bash
 # Require signed commits in your repository
+
 git config --global commit.gpgsign true
 
 # View infrastructure change history

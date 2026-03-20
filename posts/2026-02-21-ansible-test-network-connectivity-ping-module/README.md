@@ -22,6 +22,7 @@ The simplest connectivity test across your entire inventory:
 
 ```yaml
 # ping_all.yml - Test Ansible connectivity to all hosts
+
 ---
 - name: Test Ansible connectivity
   hosts: all

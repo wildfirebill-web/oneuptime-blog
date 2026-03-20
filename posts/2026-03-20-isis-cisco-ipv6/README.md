@@ -12,7 +12,7 @@ IS-IS on Cisco IOS requires a NET (Network Entity Title) address, IS-IS enabled 
 
 ## Cisco IS-IS Configuration for IPv6
 
-```
+```text
 ! Step 1: Create the IS-IS process and set the NET address
 Router(config)# router isis
 Router(config-router)# net 49.0001.0000.0000.0001.00
@@ -49,7 +49,7 @@ Router(config-if)# isis passive   ! No Hello on loopback
 
 ## NET Address Format
 
-```
+```yaml
 NET: 49.0001.0000.0000.0001.00
      --------  ^^^^^^^^^^^^^^  --
      Area ID   System ID       SEL (always 00)
@@ -62,17 +62,17 @@ System ID: 6 bytes (from MAC or loopback: convert to 3-part hex)
 
 ## IS-IS Interface Types
 
-```
+```text
 ! Point-to-point interface (no DIS election)
 Router(config-if)# isis network point-to-point
 
 ! Broadcast interface (DR election = DIS in IS-IS)
-! Default for Ethernet — no change needed
+! Default for Ethernet - no change needed
 ```
 
 ## Verification Commands
 
-```
+```text
 ! Show IS-IS neighbors
 Router# show isis neighbors
 
@@ -91,7 +91,7 @@ Router# show isis interface detail
 
 ## Sample Output
 
-```
+```text
 Router# show isis neighbors
 
 System Id      Type Interface   IP Address      State Holdtime Circuit Id
@@ -106,7 +106,7 @@ I L2 2001:db8:3::/48 [115/30]
      via FE80::2, GigabitEthernet0/0
 ```
 
-- `[115/20]` = [AD/metric] — IS-IS has AD 115 for IPv6
+- `[115/20]` = [AD/metric] - IS-IS has AD 115 for IPv6
 
 ## Summary
 

@@ -31,6 +31,7 @@ This provider block configures the default region and an alias for us-east-1, wh
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.0"
   required_providers {

@@ -34,6 +34,7 @@ If you are deploying from the CLI, the identity is your logged-in user or servic
 
 ```bash
 # Check which identity you are currently using
+
 az account show --query "{user: user.name, type: user.type, subscriptionId: id}" --output table
 
 # If using a service principal, find its details

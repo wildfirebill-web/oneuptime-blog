@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, HAProxy, Transparent Proxy, tproxy, Network Configuration
+Tags: IPv6, HAProxy, Transparent Proxy, TPROXY, Network Configuration
 
 Description: Learn how to configure HAProxy as a transparent proxy for IPv6 traffic, allowing it to intercept and forward connections while preserving original source and destination addresses.
 
@@ -13,7 +13,7 @@ Transparent proxy allows HAProxy to:
 - Intercept traffic without client reconfiguration (TPROXY mode)
 - Preserve source IPs for logging and backend application logic
 
-```
+```text
 Client (2001:db8::client) → Router → HAProxy (TPROXY) → Backend
 Backend sees connection from: 2001:db8::client (original client)
 Not from: HAProxy's address
@@ -23,6 +23,7 @@ Not from: HAProxy's address
 
 ```haproxy
 # HAProxy sends traffic to backend using the client's source IP
+
 # Requires: CAP_NET_ADMIN, iptables TPROXY, routing rules
 
 global

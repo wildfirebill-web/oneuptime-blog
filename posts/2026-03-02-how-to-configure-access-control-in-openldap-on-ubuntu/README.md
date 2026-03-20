@@ -41,6 +41,7 @@ Access levels, from lowest to highest:
 
 ```bash
 # View ACLs for the main database
+
 sudo ldapsearch -Y EXTERNAL -H ldapi:/// \
   -b "olcDatabase={1}mdb,cn=config" \
   "(objectClass=olcDatabaseConfig)" \

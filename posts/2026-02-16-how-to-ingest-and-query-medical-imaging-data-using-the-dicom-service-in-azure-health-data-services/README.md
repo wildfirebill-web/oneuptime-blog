@@ -43,6 +43,7 @@ Within your Health Data Services workspace, create a DICOM service:
 
 ```bash
 # Variables
+
 RESOURCE_GROUP="rg-health-data"
 WORKSPACE_NAME="healthworkspace01"
 DICOM_SERVICE_NAME="dicom-radiology"

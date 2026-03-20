@@ -18,6 +18,7 @@ Here is a simple example of the problem:
 
 ```hcl
 # This approach does not scale - you end up with many resource copies
+
 resource "aws_security_group" "with_egress" {
   count = var.enable_egress ? 1 : 0
   name  = "my-sg"

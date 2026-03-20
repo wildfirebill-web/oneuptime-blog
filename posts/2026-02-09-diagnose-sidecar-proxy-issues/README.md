@@ -24,6 +24,7 @@ Verify the sidecar container is actually injected:
 
 ```bash
 # Check pod containers
+
 kubectl get pod my-pod -n my-namespace -o jsonpath='{.spec.containers[*].name}'
 
 # For Istio, should show: app istio-proxy

@@ -24,6 +24,7 @@ When you define a parameter without a default value, FastAPI treats it as requir
 
 ```python
 # required_params.py
+
 # Required query parameters - no default value means the client must provide it
 from fastapi import FastAPI
 

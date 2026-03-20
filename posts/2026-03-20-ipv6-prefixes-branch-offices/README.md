@@ -12,7 +12,7 @@ Assigning IPv6 prefixes to branch offices requires a systematic approach that en
 
 ## Branch Allocation Strategy
 
-```
+```text
 Organization /40: 2001:db8:corp::/40 (from ISP /32)
 
 Branch range: 2001:db8:corp:1000::/44 (256 possible /56 branches)
@@ -77,6 +77,7 @@ class BranchAllocator:
             print(f"  Branch {bid:3d} ({info['name']:20s}): {info['prefix']}")
 
 # Usage
+
 allocator = BranchAllocator("2001:db8:corp:1000::/44")
 allocator.allocate_branch(1, "New York")
 allocator.allocate_branch(2, "Chicago")

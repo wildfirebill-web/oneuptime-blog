@@ -16,6 +16,7 @@ Knowing which Node.js version your code runs on is essential for feature detecti
 
 ```bash
 # Node.js version
+
 node --version
 # or
 node -v

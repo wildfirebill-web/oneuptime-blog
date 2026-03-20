@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu's local-exec provisioner to run commands 
 
 ## Introduction
 
-OpenTofu provisioners allow you to execute scripts as part of resource creation or destruction. The `local-exec` provisioner runs commands on the machine executing OpenTofu — not on the remote resource — making it ideal for triggering local scripts, updating inventory files, or calling external APIs after provisioning.
+OpenTofu provisioners allow you to execute scripts as part of resource creation or destruction. The `local-exec` provisioner runs commands on the machine executing OpenTofu - not on the remote resource - making it ideal for triggering local scripts, updating inventory files, or calling external APIs after provisioning.
 
 ## When to Use local-exec
 
@@ -138,7 +138,7 @@ provisioner "local-exec" {
 ## Best Practices
 
 - Prefer native OpenTofu resources over provisioners whenever possible.
-- Keep provisioner commands idempotent — they may run again if a resource is tainted.
+- Keep provisioner commands idempotent - they may run again if a resource is tainted.
 - Avoid hardcoding credentials in commands; use environment variables instead.
 - Use `triggers` in `null_resource` to control when provisioners re-run.
 - Log command output to a file for debugging: `command = "my_script.sh 2>&1 | tee /tmp/provision.log"`

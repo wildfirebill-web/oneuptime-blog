@@ -39,6 +39,7 @@ Configure the Elasticsearch connection:
 
 ```yaml
 # application.yml
+
 spring:
   elasticsearch:
     uris: http://localhost:9200

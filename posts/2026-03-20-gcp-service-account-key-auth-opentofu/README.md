@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Google Cloud, Infrastructure as Code, IaC, Service Account, Authentication
+Tags: OpenTofu, GCP, Google Cloud, Infrastructure as Code, IaC, Service Accounts, Authentication
 
 Description: Learn how to create and configure GCP Service Account keys for OpenTofu authentication, including key rotation and least-privilege IAM roles.
 
@@ -14,6 +14,7 @@ Service Account keys allow OpenTofu to authenticate with GCP APIs. While this me
 
 ```bash
 # Create a service account for OpenTofu
+
 gcloud iam service-accounts create opentofu-sa \
   --display-name="OpenTofu Service Account" \
   --project="${PROJECT_ID}"

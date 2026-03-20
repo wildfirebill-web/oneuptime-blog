@@ -17,7 +17,7 @@ A typical HA RKE2 setup consists of:
 - Multiple worker (agent) nodes
 - etcd running on each control plane node (embedded)
 
-```
+```text
                     ┌──────────────────┐
                     │   Load Balancer   │
                     │  (HAProxy/nginx)  │
@@ -49,6 +49,7 @@ A typical HA RKE2 setup consists of:
 
 ```bash
 # Install HAProxy on a dedicated node or use your existing LB
+
 sudo apt-get install -y haproxy  # Ubuntu/Debian
 # or
 sudo yum install -y haproxy      # CentOS/RHEL

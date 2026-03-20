@@ -54,6 +54,7 @@ Running TimescaleDB in Docker provides a quick and isolated development environm
 
 ```bash
 # Pull and run TimescaleDB container
+
 # -d: Run in detached mode
 # -p: Map port 5432 to host
 # --name: Container name for easy reference

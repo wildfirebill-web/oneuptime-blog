@@ -16,6 +16,7 @@ Start by creating a TLS certificate as a Kubernetes Secret. For production, use 
 
 ```bash
 # Generate a self-signed certificate for testing
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout tls.key -out tls.crt \
   -subj "/CN=example.com/O=example"

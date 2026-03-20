@@ -43,6 +43,7 @@ PgBouncer multiplexes 400 client connections onto 50 actual PostgreSQL connectio
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update && sudo apt install pgbouncer
 
 # CentOS/RHEL

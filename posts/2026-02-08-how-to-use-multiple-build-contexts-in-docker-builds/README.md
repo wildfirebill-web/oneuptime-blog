@@ -22,6 +22,7 @@ Multiple build contexts require BuildKit. Make sure it is enabled:
 
 ```bash
 # Set the environment variable to enable BuildKit
+
 export DOCKER_BUILDKIT=1
 
 # Alternatively, use docker buildx which always uses BuildKit

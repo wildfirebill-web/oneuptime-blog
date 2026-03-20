@@ -97,6 +97,7 @@ Network Policies are the Kubernetes-native way to control traffic between pods. 
 
 ```yaml
 # Allow ArgoCD API server to receive external traffic
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

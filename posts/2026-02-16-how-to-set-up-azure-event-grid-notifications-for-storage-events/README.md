@@ -36,6 +36,7 @@ An Event Grid subscription connects a source (your storage account) to a destina
 
 ```bash
 # Create an Event Grid subscription that sends blob events to a webhook
+
 az eventgrid event-subscription create \
   --name blob-events-webhook \
   --source-resource-id "/subscriptions/{sub-id}/resourceGroups/myRG/providers/Microsoft.Storage/storageAccounts/mystorageaccount" \

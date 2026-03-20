@@ -285,6 +285,7 @@ Test your rules before deploying them. The Firebase Emulator Suite lets you test
 
 ```bash
 # Start the Firebase emulators including Firestore
+
 firebase emulators:start --only firestore
 ```
 

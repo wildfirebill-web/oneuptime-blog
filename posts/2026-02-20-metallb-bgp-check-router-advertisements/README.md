@@ -36,6 +36,7 @@ Always start from the MetalLB side to confirm that routes are being sent.
 
 ```bash
 # Get the speaker pod name
+
 SPEAKER_POD=$(kubectl get pods -n metallb-system \
   -l component=speaker \
   -o jsonpath='{.items[0].metadata.name}')

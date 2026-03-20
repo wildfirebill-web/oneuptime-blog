@@ -37,6 +37,7 @@ Start by cataloging everything running in Azure:
 
 ```bash
 # Export all Azure resources to JSON
+
 az resource list --output json > azure-resources.json
 
 # Get VM inventory

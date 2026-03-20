@@ -34,6 +34,7 @@ The first `otlp` exporter definition (pointing to Tempo) is silently overwritten
 
 ```yaml
 # Alice adds this
+
 processors:
   attributes/team-a:
     actions:

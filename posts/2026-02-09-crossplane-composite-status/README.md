@@ -28,6 +28,7 @@ Start with an XRD that includes custom status fields.
 
 ```yaml
 # xrd-database-with-status.yaml
+
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:

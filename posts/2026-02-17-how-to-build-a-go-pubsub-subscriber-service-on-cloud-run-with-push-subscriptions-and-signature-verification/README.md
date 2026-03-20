@@ -37,6 +37,7 @@ Create the topic, push subscription, and a service account for authentication.
 
 ```bash
 # Create a service account for Pub/Sub to use when pushing messages
+
 gcloud iam service-accounts create pubsub-pusher \
   --display-name="Pub/Sub Push Service Account"
 

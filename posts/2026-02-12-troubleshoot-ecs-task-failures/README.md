@@ -18,6 +18,7 @@ When a task fails, ECS records the reason. This is your starting point for every
 
 ```bash
 # List recently stopped tasks for a service
+
 aws ecs list-tasks \
   --cluster production \
   --service-name api-service \
@@ -132,7 +133,7 @@ aws ecr describe-images \
 
 **Private registry authentication:** If you're pulling from Docker Hub or another private registry, you need to configure the `repositoryCredentials` in your task definition with a Secrets Manager ARN.
 
-## Resource Constraint Failures
+Resource Constraint Failures
 
 If your cluster doesn't have enough resources to place a task, you'll see "no container instances met all requirements" or similar messages.
 

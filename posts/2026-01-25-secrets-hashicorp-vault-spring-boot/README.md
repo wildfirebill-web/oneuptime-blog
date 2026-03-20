@@ -33,6 +33,7 @@ Start a development Vault server for testing:
 
 ```bash
 # Start Vault in development mode (not for production)
+
 vault server -dev -dev-root-token-id="root-token"
 
 # In another terminal, set the address and token

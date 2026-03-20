@@ -42,6 +42,7 @@ If you do not already have an Artifact Registry repository, create one.
 
 ```bash
 # Create a Docker-format Artifact Registry repository
+
 gcloud artifacts repositories create my-flux-repo \
   --repository-format=docker \
   --location=us-central1 \

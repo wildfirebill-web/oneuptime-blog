@@ -81,6 +81,7 @@ Opens the Prometheus UI on port 9090. From here, you can query raw Istio metrics
 
 ```promql
 # Request rate by destination service
+
 rate(istio_requests_total{reporter="destination"}[5m])
 
 # 99th percentile latency

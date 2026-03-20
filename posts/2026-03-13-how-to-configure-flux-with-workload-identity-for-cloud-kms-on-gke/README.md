@@ -24,6 +24,7 @@ Install SOPS if needed:
 
 ```bash
 # macOS
+
 brew install sops
 
 # Linux

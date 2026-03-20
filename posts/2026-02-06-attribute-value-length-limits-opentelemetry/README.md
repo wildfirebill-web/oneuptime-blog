@@ -48,6 +48,7 @@ from opentelemetry.sdk.trace.export import (
 )
 
 # Configure a 256-character limit on attribute values
+
 # Any string attribute longer than 256 characters will be truncated
 span_limits = SpanLimits(
     max_span_attribute_value_length=256,

@@ -26,6 +26,7 @@ First, verify the autoscaler is actually enabled on your node pool.
 
 ```bash
 # Check autoscaler status on all node pools
+
 az aks nodepool list \
   --resource-group myResourceGroup \
   --cluster-name myAKSCluster \

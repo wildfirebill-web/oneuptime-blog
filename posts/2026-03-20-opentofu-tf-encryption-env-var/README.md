@@ -57,7 +57,8 @@ tofu apply
 `TF_ENCRYPTION` merges with any `encryption` block in your `.tf` files. Configuration from both sources is combined:
 
 ```hcl
-# versions.tf — defines the method, but not the key
+# versions.tf - defines the method, but not the key
+
 terraform {
   encryption {
     method "aes_gcm" "main" {
@@ -82,7 +83,7 @@ key_provider "pbkdf2" "main" {
 ## Environment-Specific Encryption in CI/CD
 
 ```yaml
-# GitHub Actions — different passphrases per environment
+# GitHub Actions - different passphrases per environment
 jobs:
   deploy-dev:
     environment: development
@@ -128,7 +129,7 @@ state {
 
 ## Security Considerations
 
-- Do not log the `TF_ENCRYPTION` value — it contains key material
+- Do not log the `TF_ENCRYPTION` value - it contains key material
 - Use CI/CD secret management for passphrases (GitHub Secrets, HashiCorp Vault, etc.)
 - The environment variable content is not written to disk
 

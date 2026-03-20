@@ -8,12 +8,13 @@ Description: Set up Prometheus Blackbox Exporter to probe IPv4 endpoints for HTT
 
 ## Introduction
 
-Blackbox Exporter probes endpoints from the outside—testing whether HTTP(S), TCP, DNS, or ICMP targets are reachable and responding correctly. This is essential for uptime monitoring and detecting issues from a network perspective rather than from inside the target host.
+Blackbox Exporter probes endpoints from the outside-testing whether HTTP(S), TCP, DNS, or ICMP targets are reachable and responding correctly. This is essential for uptime monitoring and detecting issues from a network perspective rather than from inside the target host.
 
 ## Installation
 
 ```bash
 # Install Blackbox Exporter
+
 BLACKBOX_VERSION="0.24.0"
 wget https://github.com/prometheus/blackbox_exporter/releases/download/v${BLACKBOX_VERSION}/blackbox_exporter-${BLACKBOX_VERSION}.linux-amd64.tar.gz
 tar xzf blackbox_exporter-*.tar.gz

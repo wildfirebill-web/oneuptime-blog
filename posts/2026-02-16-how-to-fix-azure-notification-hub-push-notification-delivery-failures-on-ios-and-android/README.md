@@ -30,6 +30,7 @@ Before troubleshooting anything, enable per-message telemetry. This is the singl
 
 ```bash
 # Enable diagnostic logging for Notification Hub
+
 az monitor diagnostic-settings create \
   --name "nh-diagnostics" \
   --resource "/subscriptions/{sub-id}/resourceGroups/myRG/providers/Microsoft.NotificationHubs/namespaces/myNHNamespace/notificationHubs/myHub" \

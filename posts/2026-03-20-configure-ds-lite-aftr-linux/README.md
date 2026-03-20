@@ -28,6 +28,7 @@ For production deployments, Snabb's lwAFTR (Lightweight 4over6 AFTR) offers high
 
 ```bash
 # Load IPv6 tunnel module
+
 modprobe ip6_tunnel
 modprobe ip6table_mangle
 

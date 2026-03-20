@@ -115,6 +115,7 @@ Add Kubernetes labels and taints through the machine pool configuration:
 
 ```yaml
 # Labels
+
 labels:
   topology.kubernetes.io/zone: us-east-1a
   node.kubernetes.io/pool: workers

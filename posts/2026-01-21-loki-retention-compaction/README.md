@@ -177,6 +177,7 @@ limits_config:
 
 ```bash
 # Delete logs matching selector
+
 curl -X POST "http://loki:3100/loki/api/v1/delete" \
   -H "X-Scope-OrgID: production" \
   -H "Content-Type: application/json" \

@@ -54,6 +54,7 @@ Deploy your services to the new cluster. Use the same Kubernetes manifests with 
 
 ```bash
 # Create the namespace
+
 kubectl create namespace myapp --context=new-cluster
 kubectl label namespace myapp istio-injection=enabled --context=new-cluster
 

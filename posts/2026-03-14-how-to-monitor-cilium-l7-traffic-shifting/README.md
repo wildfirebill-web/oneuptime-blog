@@ -22,6 +22,7 @@ Monitoring traffic shifting during canary deployments is critical for deciding w
 
 ```promql
 # Per-cluster request rate (shows traffic distribution)
+
 rate(envoy_cluster_upstream_rq_total{envoy_cluster_name=~".*backend.*"}[5m])
 
 # Error rate per version

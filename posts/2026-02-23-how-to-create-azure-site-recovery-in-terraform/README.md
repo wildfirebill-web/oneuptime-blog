@@ -31,6 +31,7 @@ You need resource groups in both the source and target regions:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -25,6 +25,7 @@ A thorough migration validation compares the pre-migration state (captured in ba
 
 ```bash
 # Verify the operator now manages calico resources (not the kube-system manifests)
+
 echo "=== Checking operator management ==="
 
 # Should show no Calico pods in kube-system

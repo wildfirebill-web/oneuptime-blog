@@ -28,6 +28,7 @@ One of the most useful applications is exploring API groups and resources:
 
 ```bash
 # List all API versions
+
 kubectl get --raw /api
 
 # List API groups

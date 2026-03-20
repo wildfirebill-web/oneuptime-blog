@@ -58,6 +58,7 @@ def get_shard(user_id: str, num_shards: int) -> int:
 
 
 # Example: route a user to their shard
+
 user_id = "user_12345"
 shard_index = get_shard(user_id, num_shards=4)
 print(f"User {user_id} belongs to shard {shard_index}")

@@ -13,7 +13,7 @@ Azure Resource Manager (ARM) templates and Bicep provide declarative infrastruct
 ## Bicep Template for Dual-Stack VNet
 
 ```bicep
-// main.bicep — Dual-stack VNet with IPv6
+// main.bicep - Dual-stack VNet with IPv6
 
 param location string = resourceGroup().location
 param vnetName string = 'vnet-dualstack'
@@ -58,7 +58,7 @@ output vnetIPv6Prefix string = vnet.properties.addressSpace.addressPrefixes[1]
 ## Bicep Template for Dual-Stack NIC
 
 ```bicep
-// nic.bicep — NIC with IPv4 and IPv6 configurations
+// nic.bicep - NIC with IPv4 and IPv6 configurations
 
 param nicName string = 'nic-web-01'
 param subnetId string
@@ -186,6 +186,7 @@ output ipv6Address string = nic.properties.ipConfigurations[1].properties.privat
 
 ```bash
 # Deploy Bicep template
+
 az deployment group create \
     --resource-group "$RG" \
     --template-file main.bicep \

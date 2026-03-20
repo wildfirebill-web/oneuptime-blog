@@ -16,6 +16,7 @@ LoadBalancer Services rely on external infrastructure to assign IP addresses. In
 
 ```bash
 # Check your Service status
+
 kubectl get svc my-service
 
 # Typical output when stuck pending

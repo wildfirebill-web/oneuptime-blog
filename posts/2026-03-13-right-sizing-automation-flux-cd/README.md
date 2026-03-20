@@ -31,6 +31,7 @@ Create VPA objects for each major workload that disable automatic updates but co
 
 ```yaml
 # apps/api-server/vpa.yaml
+
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler
 metadata:

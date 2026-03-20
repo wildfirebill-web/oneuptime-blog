@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Naming Conventions, Best Practices, Infrastructure as Code, Organization, DevOps
+Tags: OpenTofu, Naming Conventions, Best Practices, Infrastructure as Code, Organizations, DevOps
 
 Description: Learn how to establish consistent naming conventions for OpenTofu resource blocks and cloud resource names to improve readability, searchability, and team collaboration.
 
@@ -16,6 +16,7 @@ Resource block names (the identifier after the resource type) follow these conve
 
 ```hcl
 # Pattern: <purpose>_<qualifier>
+
 # Use snake_case (underscores)
 # Be descriptive but concise
 
@@ -31,7 +32,7 @@ resource "aws_instance" "bastion" {}
 # AVOID
 resource "aws_vpc" "my_vpc" {}           # Redundant "my_"
 resource "aws_subnet" "subnet1" {}       # Not descriptive
-resource "aws_instance" "EC2Instance" {} # CamelCase — use snake_case
+resource "aws_instance" "EC2Instance" {} # CamelCase - use snake_case
 ```
 
 ## Cloud Resource Naming Convention
@@ -98,7 +99,7 @@ resource "aws_s3_bucket" "app_data" {
 ## Using Variables for Naming Consistency
 
 ```hcl
-# variables.tf — centralize naming inputs
+# variables.tf - centralize naming inputs
 variable "company" {
   type        = string
   description = "Company name abbreviation for resource naming"

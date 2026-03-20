@@ -46,6 +46,7 @@ Here is a collector configuration for scraping Calico's Felix component, which h
 
 ```yaml
 # otel-collector-netpol.yaml
+
 # Scrape network policy metrics from the CNI plugin
 receivers:
   prometheus:

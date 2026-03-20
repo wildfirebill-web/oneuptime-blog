@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, GoAccess, Log Analysis, Monitoring
+Tags: Ubuntu, Nginx, GoAccess, Log Analysis, Monitoring
 
 Description: Learn how to use GoAccess to analyze Nginx access logs on Ubuntu in real time, generate HTML reports, and set up automated reporting for web traffic insights.
 
@@ -18,6 +18,7 @@ The version in Ubuntu's default repositories is often outdated. Use the official
 
 ```bash
 # Add the GoAccess signing key
+
 curl -fsSL https://deb.goaccess.io/gnugpg.key | sudo gpg --dearmor -o /usr/share/keyrings/goaccess.gpg
 
 # Add the repository

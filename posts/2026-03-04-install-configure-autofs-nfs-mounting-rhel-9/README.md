@@ -81,6 +81,7 @@ sudo systemctl restart autofs
 
 ```bash
 # The /nfs directory exists but is empty
+
 ls /nfs/
 
 # Access a subdirectory to trigger the mount

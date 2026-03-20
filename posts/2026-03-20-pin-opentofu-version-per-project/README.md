@@ -14,6 +14,7 @@ Pinning an OpenTofu version per project ensures that all team members, CI/CD pip
 
 ```bash
 # Navigate to your project directory
+
 cd /path/to/your/project
 
 # Create the version file
@@ -96,7 +97,7 @@ docker run --rm -v $(pwd):/workspace project-tofu:1.9.0 plan
 
 ## Recommended Project Structure
 
-```
+```text
 my-infrastructure/
 ├── .opentofu-version      # tofuenv version pin
 ├── .tool-versions         # asdf version pin

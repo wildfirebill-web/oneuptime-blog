@@ -130,6 +130,7 @@ class MagicLinkAuth:
         return self.verify_token(token, consume=False)
 
 # Usage
+
 auth = MagicLinkAuth()
 
 # Create magic link

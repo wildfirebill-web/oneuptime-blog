@@ -8,7 +8,7 @@ Description: Learn how to create and configure container webhooks in Portainer t
 
 ## Introduction
 
-Portainer container webhooks allow external systems — CI/CD pipelines, GitHub Actions, GitLab CI, or custom scripts — to trigger a container redeployment with a simple HTTP POST request. This is a lightweight alternative to the full Portainer API for automated deployments.
+Portainer container webhooks allow external systems - CI/CD pipelines, GitHub Actions, GitLab CI, or custom scripts - to trigger a container redeployment with a simple HTTP POST request. This is a lightweight alternative to the full Portainer API for automated deployments.
 
 ## Prerequisites
 
@@ -33,10 +33,10 @@ This effectively gives you a "pull latest and redeploy" operation via a single H
 3. Scroll down to the **Webhooks** section.
 4. Enable **Create container webhook**.
 5. Portainer generates a unique webhook URL.
-6. Copy the URL — you'll need it in your CI/CD pipeline.
+6. Copy the URL - you'll need it in your CI/CD pipeline.
 
 The URL format looks like:
-```
+```text
 https://portainer.example.com/api/webhooks/abc123def456...
 ```
 
@@ -46,6 +46,7 @@ Test that the webhook works by triggering it manually:
 
 ```bash
 # Test with curl:
+
 curl -X POST "https://portainer.example.com/api/webhooks/abc123def456your-token"
 
 # Expected response: HTTP 204 No Content
@@ -60,7 +61,7 @@ curl -v -X POST "https://portainer.example.com/api/webhooks/your-token" 2>&1 | g
 
 The sequence when a webhook fires:
 
-```
+```bash
 1. POST request received
 2. Portainer authenticates the token from the URL
 3. Pulls the image: docker pull <image>:<tag>
@@ -204,4 +205,4 @@ exit 1
 
 ## Conclusion
 
-Container webhooks in Portainer provide a simple, token-based mechanism for triggering automated redeployments from CI/CD pipelines and other external systems. With a single HTTP POST, you can pull the latest image and restart your container — making it easy to integrate Portainer into any deployment workflow without complex API authentication.
+Container webhooks in Portainer provide a simple, token-based mechanism for triggering automated redeployments from CI/CD pipelines and other external systems. With a single HTTP POST, you can pull the latest image and restart your container - making it easy to integrate Portainer into any deployment workflow without complex API authentication.

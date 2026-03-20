@@ -71,6 +71,7 @@ Beyond the README, document variables where they are defined:
 
 ```yaml
 # roles/postgresql/defaults/main.yml
+
 # PostgreSQL version to install. Supported: 13, 14, 15, 16
 postgresql_version: 15
 

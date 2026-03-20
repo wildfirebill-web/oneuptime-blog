@@ -20,6 +20,7 @@ AWS Lambda functions (and similar serverless platforms) have a key characteristi
 
 ```python
 # BAD: Using BatchSpanProcessor in Lambda
+
 # Spans may be lost when the Lambda freezes after handler returns
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 

@@ -33,6 +33,7 @@ Kafka Connect needs connector plugins installed. Create a custom Docker image wi
 
 ```dockerfile
 # Dockerfile.kafka-connect
+
 FROM confluentinc/cp-kafka-connect:7.6.0
 
 # Install connectors from Confluent Hub

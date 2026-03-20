@@ -28,6 +28,7 @@ First, quantify the size of your overlay:
 
 ```bash
 # Count the number of resources generated
+
 kustomize build overlays/production | grep "^kind:" | wc -l
 
 # Measure the total YAML size

@@ -44,6 +44,7 @@ StatefulSets require a headless Service (with `clusterIP: None`) to control the 
 
 ```yaml
 # headless-service.yaml
+
 # A headless service that gives each StatefulSet pod
 # a unique DNS name: <pod-name>.<service-name>.<namespace>.svc.cluster.local
 apiVersion: v1

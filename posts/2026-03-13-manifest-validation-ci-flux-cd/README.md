@@ -37,6 +37,7 @@ A comprehensive validation pipeline checks:
 
 ```yaml
 # .github/workflows/validate.yml
+
 name: Validate Manifests
 
 on:

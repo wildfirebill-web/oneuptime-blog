@@ -12,7 +12,7 @@ A guest WiFi network provides internet access to visitors while preventing them 
 
 ## Step 1: Design the Guest Network
 
-```
+```text
 Internal Network: 192.168.1.0/24 (VLAN 1)
 Guest Network:    192.168.100.0/24 (VLAN 100)
 
@@ -27,6 +27,7 @@ Rules:
 
 ```bash
 # On router/gateway (Linux)
+
 # Create VLAN 100 for guest network
 ip link add link eth0 name eth0.100 type vlan id 100
 ip addr add 192.168.100.1/24 dev eth0.100

@@ -26,6 +26,7 @@ Pre-built providers are published as npm packages and are the recommended approa
 
 ```bash
 # Add the AWS provider
+
 npm install @cdktf/provider-aws
 
 # Add the Azure provider

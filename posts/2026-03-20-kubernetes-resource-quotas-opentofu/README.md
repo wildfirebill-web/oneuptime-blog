@@ -14,6 +14,7 @@ Kubernetes Resource Quotas limit the total amount of CPU, memory, storage, and o
 
 ```hcl
 # main.tf - Namespace with compute resource quota
+
 resource "kubernetes_namespace_v1" "team_a" {
   metadata {
     name = "team-a"

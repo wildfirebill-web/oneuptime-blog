@@ -224,6 +224,7 @@ Common Security Advisory Framework (CSAF) is a more comprehensive format that in
 
 ```bash
 # Scan an image with an OpenVEX document
+
 trivy image --vex openvex.json myregistry/myapp:1.0.0
 
 # Scan with a CSAF VEX document

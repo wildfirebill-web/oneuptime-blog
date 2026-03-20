@@ -31,6 +31,7 @@ Clients never connect directly to your server. They connect to Web PubSub, and y
 
 ```bash
 # Create the Web PubSub service
+
 az webpubsub create \
     --name my-chat-pubsub \
     --resource-group my-rg \

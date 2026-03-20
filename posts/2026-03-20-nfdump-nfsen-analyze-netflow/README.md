@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NetFlow, nfdump, nfsen, Traffic Analysis, Network Monitoring, Linux
+Tags: NetFlow, Nfdump, Nfsen, Traffic Analysis, Network Monitoring, Linux
 
 Description: Learn how to use nfdump to collect NetFlow data and nfsen to provide a web frontend for browsing and analyzing network flow records.
 
@@ -18,6 +18,7 @@ Description: Learn how to use nfdump to collect NetFlow data and nfsen to provid
 
 ```bash
 # Install on Ubuntu/Debian
+
 sudo apt-get install -y nfdump
 
 # Verify installation
@@ -166,4 +167,4 @@ nfdump -R /var/log/netflow/router1/${DATE} -s dstport/bytes -n 10 >> "$REPORT"
 
 ## Conclusion
 
-nfdump and nfsen provide a proven open-source NetFlow analysis stack. Run nfcapd to collect and store flow files, use nfdump's flexible filter and aggregation syntax for ad-hoc analysis, and deploy nfsen for a web-based dashboard with graphs and a flow browser. nfdump's filter syntax is particularly powerful for security investigations—detecting port scans, large transfers, and unusual traffic patterns.
+nfdump and nfsen provide a proven open-source NetFlow analysis stack. Run nfcapd to collect and store flow files, use nfdump's flexible filter and aggregation syntax for ad-hoc analysis, and deploy nfsen for a web-based dashboard with graphs and a flow browser. nfdump's filter syntax is particularly powerful for security investigations-detecting port scans, large transfers, and unusual traffic patterns.

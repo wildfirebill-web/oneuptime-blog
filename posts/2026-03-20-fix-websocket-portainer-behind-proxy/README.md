@@ -58,6 +58,7 @@ server {
 
 ```yaml
 # In Traefik labels for the Portainer service
+
 labels:
   - "traefik.enable=true"
   - "traefik.http.routers.portainer.rule=Host(`portainer.example.com`)"

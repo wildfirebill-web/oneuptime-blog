@@ -457,6 +457,7 @@ For centralized control, configure rate limiting in the OpenTelemetry Collector:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

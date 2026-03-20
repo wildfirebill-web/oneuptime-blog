@@ -133,6 +133,7 @@ Instead of jumping straight to an ALLOW policy (which denies everything not expl
 
 ```yaml
 # Step 1: Add a DENY policy for the specific thing you want to block
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

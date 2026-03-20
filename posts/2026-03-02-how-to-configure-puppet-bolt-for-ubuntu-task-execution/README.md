@@ -23,6 +23,7 @@ This means:
 
 ```bash
 # Add the Puppet repository
+
 wget https://apt.puppet.com/puppet-tools-release-$(lsb_release -sc).deb
 sudo dpkg -i puppet-tools-release-$(lsb_release -sc).deb
 

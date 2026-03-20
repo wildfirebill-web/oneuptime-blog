@@ -39,6 +39,7 @@ Register your geographically distributed clusters with ArgoCD. Label them with t
 
 ```yaml
 # EU-West cluster
+
 apiVersion: v1
 kind: Secret
 metadata:

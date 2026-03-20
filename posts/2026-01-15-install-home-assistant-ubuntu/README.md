@@ -39,6 +39,7 @@ Update your system before proceeding with any installation method.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential tools

@@ -24,6 +24,7 @@ Ubuntu keeps old kernels installed alongside new ones. GRUB shows all available 
 
 ```bash
 # Check currently running kernel
+
 uname -r
 
 # Check installed kernels

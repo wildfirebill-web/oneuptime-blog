@@ -23,6 +23,7 @@ Before moving anything, understand what lives under `/var/lib/docker`.
 
 ```bash
 # View the top-level directory structure
+
 sudo ls -la /var/lib/docker/
 
 # Check how much space Docker is using

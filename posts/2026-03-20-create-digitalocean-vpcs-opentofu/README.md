@@ -121,4 +121,4 @@ resource "digitalocean_droplet" "dev" {
 
 ## Conclusion
 
-DigitalOcean VPCs give your resources private network isolation with minimal configuration — just a name, region, and CIDR block. Place Droplets, databases, and Kubernetes clusters in the same VPC to enable private communication, and use separate VPCs for different environments to enforce network-level isolation.
+DigitalOcean VPCs give your resources private network isolation with minimal configuration - just a name, region, and CIDR block. Place Droplets, databases, and Kubernetes clusters in the same VPC to enable private communication, and use separate VPCs for different environments to enforce network-level isolation.

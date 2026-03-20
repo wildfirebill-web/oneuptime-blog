@@ -121,6 +121,7 @@ The following query calculates error rate in a Loki/LogQL style.
 
 ```promql
 # Calculate error percentage over 5 minute windows
+
 # Count of error-level logs divided by total logs
 sum(count_over_time({job="myapp"} | level="error" [5m]))
 /

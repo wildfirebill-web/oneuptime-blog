@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Configuration, Daemon.json, Linux, DevOps, Containers, Logging, Storage, Networking
+Tags: Docker, Configuration, daemon.json, Linux, DevOps, Containers, Logging, Storage, Networking
 
 Description: A comprehensive guide to configuring the Docker daemon through the daemon.json file, covering logging, storage, networking, security, and performance tuning options.
 
@@ -16,6 +16,7 @@ The file lives at `/etc/docker/daemon.json` on Linux. If it does not exist, crea
 
 ```bash
 # Create the Docker config directory and an empty daemon.json
+
 sudo mkdir -p /etc/docker
 sudo touch /etc/docker/daemon.json
 ```

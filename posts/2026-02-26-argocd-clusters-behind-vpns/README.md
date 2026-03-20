@@ -43,6 +43,7 @@ Use AWS Site-to-Site VPN to connect your management VPC to the remote network:
 
 ```bash
 # Create a Customer Gateway (represents the remote VPN endpoint)
+
 aws ec2 create-customer-gateway \
   --type ipsec.1 \
   --public-ip 203.0.113.1 \

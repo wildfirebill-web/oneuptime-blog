@@ -57,6 +57,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Cache buster argument - change this to invalidate cache
+
 ARG CACHE_BUST=1
 
 # This layer and all following layers will rebuild when CACHE_BUST changes

@@ -14,6 +14,7 @@ WAF rules protect web applications from SQL injection, XSS, and other attacks. O
 
 ```hcl
 # main.tf - AWS WAFv2 with managed rule groups
+
 resource "aws_wafv2_web_acl" "app" {
   name  = "app-waf"
   scope = "REGIONAL"  # or CLOUDFRONT for edge

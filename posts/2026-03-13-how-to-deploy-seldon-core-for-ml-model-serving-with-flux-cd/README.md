@@ -28,6 +28,7 @@ In this guide you will deploy Seldon Core using Flux CD, create SeldonDeployment
 
 ```yaml
 # clusters/production/sources/seldon.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

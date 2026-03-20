@@ -44,6 +44,7 @@ Good SLIs directly measure user experience. Start with these common patterns:
 
 ```promql
 # Availability: proportion of successful requests
+
 sum(rate(http_requests_total{status!~"5.."}[5m]))
 /
 sum(rate(http_requests_total[5m]))

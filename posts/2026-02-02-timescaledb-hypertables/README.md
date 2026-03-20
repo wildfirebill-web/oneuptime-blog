@@ -48,6 +48,7 @@ Install TimescaleDB on Ubuntu/Debian:
 
 ```bash
 # Add TimescaleDB repository
+
 sudo sh -c "echo 'deb https://packagecloud.io/timescale/timescaledb/ubuntu/ $(lsb_release -c -s) main' > /etc/apt/sources.list.d/timescaledb.list"
 
 # Import GPG key

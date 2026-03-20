@@ -30,6 +30,7 @@ First, make sure your S3 bucket is configured as a Helm chart repository. If you
 
 ```bash
 # Install the helm-s3 plugin locally
+
 helm plugin install https://github.com/hypnoglow/helm-s3.git
 
 # Initialize the S3 bucket as a Helm repo

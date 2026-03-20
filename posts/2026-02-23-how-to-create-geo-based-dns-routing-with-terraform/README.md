@@ -26,6 +26,7 @@ Start with the provider and hosted zone reference:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

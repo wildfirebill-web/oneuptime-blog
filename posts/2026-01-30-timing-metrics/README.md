@@ -310,6 +310,7 @@ Once you have timing data, set up alerts for latency regressions:
 
 ```yaml
 # Example alert rule (Prometheus format)
+
 groups:
   - name: latency-alerts
     rules:

@@ -10,7 +10,7 @@ Description: Configure OAuth2 redirect URIs with IPv6 addresses, handle IP-liter
 
 OAuth2 redirect URIs with IPv6 addresses follow RFC 3986 URI syntax, requiring brackets around the IPv6 address:
 
-```
+```text
 http://[::1]:8080/callback
 https://[2001:db8::1]:8443/auth/callback
 ```
@@ -21,6 +21,7 @@ https://[2001:db8::1]:8443/auth/callback
 
 ```bash
 # Register a client with IPv6 redirect URI in Keycloak
+
 curl -X POST \
   http://[keycloak-ip]:8080/admin/realms/myrealm/clients \
   -H "Authorization: Bearer $ADMIN_TOKEN" \
@@ -81,7 +82,7 @@ const app = express();
 app.get('/callback', async (req, res) => {
     const { code, state } = req.query;
 
-    // Validate redirect URI — must exactly match registered URI
+    // Validate redirect URI - must exactly match registered URI
     // IPv6 URIs must include brackets
     const callbackUrl = `http://[${req.socket.localAddress}]:3000/callback`;
 

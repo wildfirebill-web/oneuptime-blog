@@ -16,6 +16,7 @@ The error appears when you write something like:
 
 ```promql
 # This causes the error
+
 (metric_a + metric_b)[5m]
 ```
 

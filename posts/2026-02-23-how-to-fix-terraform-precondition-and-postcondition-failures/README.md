@@ -52,6 +52,7 @@ A precondition failure means the inputs to the resource do not meet your require
 
 ```hcl
 # Change the variable to meet the precondition
+
 instance_type = "t3.small"
 ```
 

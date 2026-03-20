@@ -14,6 +14,7 @@ Container networking failures have a predictable set of causes: missing network 
 
 ```bash
 # Check the container's IP addresses
+
 docker inspect my-container \
   --format '{{range $net, $cfg := .NetworkSettings.Networks}}{{$net}}: {{$cfg.IPAddress}}{{"\n"}}{{end}}'
 
@@ -52,7 +53,7 @@ docker exec my-container ping -c 3 $(docker exec my-container ip route | awk '/d
 # Ping an external IP (bypass DNS)
 docker exec my-container ping -c 3 8.8.8.8
 
-# If this fails but gateway ping works — check iptables NAT rules on host
+# If this fails but gateway ping works - check iptables NAT rules on host
 sudo iptables -t nat -L POSTROUTING -n -v | grep MASQUERADE
 ```
 

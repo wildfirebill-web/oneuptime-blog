@@ -34,6 +34,7 @@ Key rotation settings:
 
 ```ini
 # Maximum size of each log file in megabytes
+
 max_log_file = 50
 
 # Number of rotated log files to keep

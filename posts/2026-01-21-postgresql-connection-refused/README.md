@@ -24,6 +24,7 @@ Description: A comprehensive guide to diagnosing and resolving PostgreSQL connec
 
 ```bash
 # Check if running
+
 sudo systemctl status postgresql
 
 # Check if listening

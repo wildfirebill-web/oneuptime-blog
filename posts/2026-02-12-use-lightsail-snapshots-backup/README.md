@@ -25,6 +25,7 @@ Take a manual snapshot before making changes to your server.
 
 ```bash
 # Create a snapshot of a running instance
+
 aws lightsail create-instance-snapshot \
   --instance-name my-web-server \
   --instance-snapshot-name pre-upgrade-$(date +%Y%m%d)

@@ -58,6 +58,7 @@ First, define your rules as a list of objects in a local variable or variable.
 
 ```hcl
 # Define rules as structured data
+
 locals {
   web_nsg_rules = [
     {

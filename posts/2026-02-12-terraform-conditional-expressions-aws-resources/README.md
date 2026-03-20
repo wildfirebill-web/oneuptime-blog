@@ -23,6 +23,7 @@ variable "environment" {
 }
 
 # Different instance sizes per environment
+
 resource "aws_instance" "app" {
   ami           = var.ami_id
   instance_type = var.environment == "production" ? "m6i.xlarge" : "t3.medium"

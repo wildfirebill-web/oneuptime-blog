@@ -28,6 +28,7 @@ Start with a deny-all baseline and explicitly allow only what is needed:
 
 ```yaml
 # clusters/my-cluster/istio-policies/deny-all.yaml
+
 # Apply deny-all to the entire production namespace
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy

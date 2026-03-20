@@ -16,6 +16,7 @@ Hardcoding passwords and API keys in container images or pod specs is a security
 
 ```bash
 # Create secret with multiple key-value pairs
+
 kubectl create secret generic myapp-secrets \
   --from-literal=DATABASE_PASSWORD=supersecret123 \
   --from-literal=API_KEY=abc123xyz \

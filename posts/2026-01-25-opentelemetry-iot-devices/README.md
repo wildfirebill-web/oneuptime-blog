@@ -45,6 +45,7 @@ flowchart TD
 
 ```python
 # iot_telemetry.py
+
 import os
 import time
 import threading

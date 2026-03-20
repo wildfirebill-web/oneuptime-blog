@@ -8,7 +8,7 @@ Description: Use NAPALM (Network Automation and Programmability Abstraction Laye
 
 ## Introduction
 
-NAPALM provides a unified Python API for managing network devices from multiple vendors. It supports IPv6 configuration deployment, BGP neighbor management, and interface configuration retrieval — all through a consistent interface regardless of vendor.
+NAPALM provides a unified Python API for managing network devices from multiple vendors. It supports IPv6 configuration deployment, BGP neighbor management, and interface configuration retrieval - all through a consistent interface regardless of vendor.
 
 ## Installation
 
@@ -16,6 +16,7 @@ NAPALM provides a unified Python API for managing network devices from multiple 
 pip install napalm
 
 # Install vendor-specific extras
+
 pip install napalm[ios]       # Cisco IOS
 pip install napalm[iosxr]     # Cisco IOS-XR
 pip install napalm[junos]     # Juniper JunOS
@@ -88,7 +89,7 @@ interface {interface}
  no shutdown
 !
 """
-    # Load config (merge — adds without removing existing config)
+    # Load config (merge - adds without removing existing config)
     device.load_merge_candidate(config=config)
 
     # Review the diff

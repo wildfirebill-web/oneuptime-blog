@@ -24,6 +24,7 @@ How often does your team deploy to production? GitOps should increase this becau
 
 ```bash
 # Count production syncs in the last 30 days
+
 argocd app list -o json | jq '[
   .[] | select(.spec.destination.namespace == "production")
   | .status.history[]

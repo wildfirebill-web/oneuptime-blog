@@ -39,6 +39,7 @@ Start with the basics. Track CPU and memory usage of istiod:
 
 ```promql
 # istiod CPU usage
+
 sum(rate(container_cpu_usage_seconds_total{
   namespace="istio-system",
   container="discovery"

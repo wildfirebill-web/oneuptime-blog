@@ -21,13 +21,13 @@ This guide covers structuring your repository for Kustomize, configuring Fleet t
 
 ## Understanding Fleet's Kustomize Support
 
-Fleet automatically detects Kustomize directories by looking for a `kustomization.yaml` file. When found, Fleet runs `kustomize build` on the directory before applying the resulting manifests. No additional configuration is needed — it just works.
+Fleet automatically detects Kustomize directories by looking for a `kustomization.yaml` file. When found, Fleet runs `kustomize build` on the directory before applying the resulting manifests. No additional configuration is needed - it just works.
 
 ## Setting Up a Kustomize Repository Structure
 
 The standard base-overlay pattern works directly with Fleet:
 
-```
+```text
 my-app/
 ├── base/
 │   ├── kustomization.yaml   # Base kustomization file
@@ -56,6 +56,7 @@ my-app/
 
 ```yaml
 # base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

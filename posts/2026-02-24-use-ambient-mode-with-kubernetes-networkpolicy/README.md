@@ -75,6 +75,7 @@ Let NetworkPolicy handle coarse-grained isolation (namespace-level) and use Isti
 
 ```yaml
 # NetworkPolicy: namespace-level isolation
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

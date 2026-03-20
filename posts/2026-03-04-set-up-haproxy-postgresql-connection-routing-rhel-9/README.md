@@ -43,6 +43,7 @@ Update `pg_hba.conf` on all PostgreSQL servers:
 
 ```bash
 # Allow health check connections from HAProxy
+
 host    postgres    haproxy_check    192.168.1.0/24    trust
 ```
 

@@ -60,6 +60,7 @@ flowchart TB
 
 ```bash
 # Add MongoDB Helm repository
+
 helm repo add mongodb https://mongodb.github.io/helm-charts
 helm repo update
 

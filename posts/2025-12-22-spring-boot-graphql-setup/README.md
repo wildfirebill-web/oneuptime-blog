@@ -125,6 +125,7 @@ type Subscription {
 }
 
 # User type
+
 type User {
     id: ID!
     username: String!

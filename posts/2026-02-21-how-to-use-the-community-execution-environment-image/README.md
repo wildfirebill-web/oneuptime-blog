@@ -26,6 +26,7 @@ Pull the image with Podman or Docker:
 
 ```bash
 # Pull the minimal community EE
+
 podman pull quay.io/ansible/community-ee-minimal:latest
 
 # Or pull the development tools image

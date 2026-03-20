@@ -55,6 +55,7 @@ Use `calicoctl` to query HostEndpoints that match a specific selector expression
 
 ```bash
 # List all endpoints matching a selector
+
 calicoctl get hostendpoints --selector="node-role == 'worker'" -o wide
 ```
 

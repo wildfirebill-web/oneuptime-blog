@@ -27,6 +27,7 @@ You can enable one or multiple standards simultaneously.
 
 ```bash
 # Enable CIS Benchmark
+
 aws securityhub batch-enable-standards \
   --standards-subscription-requests '[{
     "StandardsArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.4.0"

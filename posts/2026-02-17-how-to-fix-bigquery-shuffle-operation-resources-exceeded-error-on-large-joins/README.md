@@ -225,6 +225,7 @@ For frequently-run analytical queries on smaller datasets (up to a few hundred G
 
 ```bash
 # Create a BI Engine reservation
+
 bq mk --bi_reservation \
     --project_id=my-project \
     --location=US \

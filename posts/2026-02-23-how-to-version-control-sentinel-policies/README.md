@@ -66,6 +66,7 @@ Your `sentinel.hcl` file maps policies to their source files and enforcement lev
 
 ```hcl
 # sentinel.hcl
+
 # Central configuration for all Sentinel policies
 
 # Shared modules

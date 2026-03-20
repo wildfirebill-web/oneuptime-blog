@@ -1,4 +1,4 @@
-# How to Configure Mixed Linux and Windows Clusters in Rancher
+# How to Configure Mixed Linux and Windows Clusters in Rancher - Cluster
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ Mixed OS clusters allow organizations to consolidate Linux and Windows workloads
 
 ## Step 1: Cluster Architecture
 
-```
+```text
 Mixed OS Cluster Architecture:
 ├── Control Plane (Linux only)
 │   ├── etcd: 3x Linux nodes
@@ -45,6 +45,7 @@ Note: Windows nodes CANNOT run:
 
 ```bash
 # Check existing cluster is Linux-only
+
 kubectl get nodes -o wide
 
 # Verify CNI is Windows-compatible (Flannel)
@@ -244,4 +245,4 @@ kubectl uncordon win-node-01
 
 ## Conclusion
 
-Mixed OS Kubernetes clusters in Rancher provide a unified management platform for heterogeneous workloads. The fundamental principle is always specifying `kubernetes.io/os` node selectors in all pod specifications—this ensures workloads never accidentally schedule on the wrong OS. Cross-OS service communication works transparently through Kubernetes services, enabling Linux and Windows pods to call each other via standard DNS names. Monitor both Linux and Windows nodes through their respective exporters, and plan separate upgrade windows for Linux and Windows nodes since they require different procedures.
+Mixed OS Kubernetes clusters in Rancher provide a unified management platform for heterogeneous workloads. The fundamental principle is always specifying `kubernetes.io/os` node selectors in all pod specifications-this ensures workloads never accidentally schedule on the wrong OS. Cross-OS service communication works transparently through Kubernetes services, enabling Linux and Windows pods to call each other via standard DNS names. Monitor both Linux and Windows nodes through their respective exporters, and plan separate upgrade windows for Linux and Windows nodes since they require different procedures.

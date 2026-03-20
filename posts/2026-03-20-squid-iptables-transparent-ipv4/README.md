@@ -16,6 +16,7 @@ Transparent IPv4 interception requires two components: Squid configured in `inte
 # /etc/squid/squid.conf
 
 # Intercept mode: accept redirected connections
+
 http_port 127.0.0.1:3129 intercept
 
 # Standard explicit proxy port

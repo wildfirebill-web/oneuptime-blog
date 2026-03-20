@@ -24,6 +24,7 @@ Create `become_plugins/pamsudo.py`:
 
 ```python
 # pamsudo.py - Become plugin for PAM-wrapped sudo
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

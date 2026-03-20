@@ -100,6 +100,7 @@ Now create the template spec:
 
 ```bash
 # Create a resource group to hold template specs
+
 az group create \
   --name "rg-template-specs" \
   --location "eastus2"

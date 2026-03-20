@@ -18,6 +18,7 @@ You need the Google Cloud CLI (gcloud) installed and a GCP project:
 
 ```bash
 # Install gcloud CLI (macOS)
+
 brew install google-cloud-sdk
 
 # Or download from https://cloud.google.com/sdk/docs/install

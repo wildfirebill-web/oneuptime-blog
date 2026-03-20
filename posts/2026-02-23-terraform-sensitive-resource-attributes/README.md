@@ -34,6 +34,7 @@ When a variable is marked sensitive, Terraform redacts its value from plan outpu
 
 ```text
 # aws_db_instance.main will be created
+
 + resource "aws_db_instance" "main" {
     + password = (sensitive value)
   }

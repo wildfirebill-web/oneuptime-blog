@@ -32,6 +32,7 @@ Velero is the most common tool for migrating Kubernetes resources between cluste
 
 ```bash
 # Install Velero CLI
+
 brew install velero  # macOS
 # or
 wget https://github.com/vmware-tanzu/velero/releases/download/v1.14.0/velero-v1.14.0-linux-amd64.tar.gz

@@ -1,4 +1,4 @@
-# How to Set Up Harvester Storage for Kubernetes
+# How to Set Up Harvester Storage for Kubernetes - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure Harvester's built-in Longhorn storage for us
 
 ## Introduction
 
-Guest Kubernetes clusters running on Harvester VMs can leverage Harvester's built-in Longhorn storage for persistent volumes through the Harvester CSI (Container Storage Interface) driver. This integration means applications in guest clusters can dynamically provision persistent volumes that are backed by Longhorn's distributed, replicated storage — without needing to deploy a separate storage solution.
+Guest Kubernetes clusters running on Harvester VMs can leverage Harvester's built-in Longhorn storage for persistent volumes through the Harvester CSI (Container Storage Interface) driver. This integration means applications in guest clusters can dynamically provision persistent volumes that are backed by Longhorn's distributed, replicated storage - without needing to deploy a separate storage solution.
 
 ## Architecture
 
@@ -38,6 +38,7 @@ Guest cluster nodes need iSCSI support for Longhorn volume attachment:
 
 ```bash
 # Add to cloud-init for guest cluster nodes
+
 # This ensures iSCSI is available when nodes boot
 
 #cloud-config
@@ -265,4 +266,4 @@ spec:
 
 ## Conclusion
 
-The Harvester CSI driver bridges Harvester's powerful Longhorn storage with guest Kubernetes clusters, providing enterprise-grade distributed storage for containerized applications without additional complexity. Applications get the full benefits of Longhorn — data replication, snapshots, and volume expansion — while maintaining standard Kubernetes PVC semantics. This integration is one of the key reasons Harvester is a compelling HCI platform: it provides consistent, high-quality storage for both VMs and containers through a unified management interface.
+The Harvester CSI driver bridges Harvester's powerful Longhorn storage with guest Kubernetes clusters, providing enterprise-grade distributed storage for containerized applications without additional complexity. Applications get the full benefits of Longhorn - data replication, snapshots, and volume expansion - while maintaining standard Kubernetes PVC semantics. This integration is one of the key reasons Harvester is a compelling HCI platform: it provides consistent, high-quality storage for both VMs and containers through a unified management interface.

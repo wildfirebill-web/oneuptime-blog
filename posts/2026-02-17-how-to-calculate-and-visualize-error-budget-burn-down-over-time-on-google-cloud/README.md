@@ -26,6 +26,7 @@ Here is how to create an SLO using the gcloud CLI. This example sets up an avail
 
 ```bash
 # Create an availability SLO with a 99.9% target over a rolling 30-day window
+
 gcloud slo service-level-objectives create my-availability-slo \
   --service=my-cloud-run-service \
   --project=my-project-id \

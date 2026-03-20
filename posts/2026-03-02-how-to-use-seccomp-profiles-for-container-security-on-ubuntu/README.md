@@ -24,6 +24,7 @@ Before doing anything, confirm that your Ubuntu system and Docker installation s
 
 ```bash
 # Check kernel config for seccomp support
+
 grep CONFIG_SECCOMP /boot/config-$(uname -r)
 
 # You should see:

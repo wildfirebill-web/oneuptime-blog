@@ -44,6 +44,7 @@ The simplest setup is a public-facing SFTP server backed by S3.
 
 ```hcl
 # Basic public SFTP server
+
 resource "aws_transfer_server" "sftp" {
   identity_provider_type = "SERVICE_MANAGED"
   protocols              = ["SFTP"]

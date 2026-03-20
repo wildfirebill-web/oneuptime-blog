@@ -16,6 +16,7 @@ Identify your GPU and understand your goal:
 
 ```bash
 # Check if an NVIDIA GPU is present
+
 lspci | grep -i nvidia
 
 # Example output:

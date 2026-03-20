@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, resource-management, quotas, best-practices, kubernetes
+Tags: Rancher, Resource-Management, Quotas, Best-practices, Kubernetes
 
 Description: Guide to resource management best practices in Rancher for optimal cluster utilization and workload isolation.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

@@ -32,6 +32,7 @@ This guide covers network policy design patterns, encapsulation mode validation,
 
 ```bash
 # Audit existing NetworkPolicies before making changes
+
 kubectl get networkpolicy --all-namespaces -o yaml
 
 # Check encapsulation consistency across IP pools

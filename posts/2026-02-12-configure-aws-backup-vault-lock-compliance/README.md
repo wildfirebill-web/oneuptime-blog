@@ -38,6 +38,7 @@ If you don't already have a vault, create one specifically for locked backups:
 
 ```bash
 # Create a KMS key for the vault
+
 VAULT_KEY=$(aws kms create-key \
   --description "Compliance vault encryption" \
   --query 'KeyMetadata.KeyId' --output text)

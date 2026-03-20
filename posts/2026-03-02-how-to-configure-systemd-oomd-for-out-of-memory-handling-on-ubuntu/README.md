@@ -26,6 +26,7 @@ PSI (Pressure Stall Information) must be enabled in the kernel. Most Ubuntu 20.0
 
 ```bash
 # Check if PSI is available
+
 cat /proc/pressure/memory
 
 # You should see output like:

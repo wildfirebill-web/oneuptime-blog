@@ -1,4 +1,4 @@
-# How to Deploy a Microservice Architecture with Portainer
+# How to Deploy a Microservice Architecture with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Microservices break monolithic applications into small, independently deployable
 
 ## Architecture Overview
 
-```
+```text
 Client → API Gateway (Traefik)
               ↓
     ┌────────────────────┐
@@ -33,6 +33,7 @@ Client → API Gateway (Traefik)
 
 ```bash
 # Initialize Swarm on the manager node
+
 docker swarm init --advertise-addr YOUR_SERVER_IP
 
 # Get worker join token

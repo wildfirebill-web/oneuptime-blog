@@ -30,6 +30,7 @@ The following configuration runs the pipeline when a PR targets the main or rele
 
 ```yaml
 # azure-pipelines.yml - PR trigger configuration
+
 trigger: none  # Disable CI trigger; this pipeline is PR-only
 
 # Run on PRs targeting main or release branches

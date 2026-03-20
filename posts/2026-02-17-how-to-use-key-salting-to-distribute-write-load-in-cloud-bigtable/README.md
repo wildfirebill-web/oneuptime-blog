@@ -58,6 +58,7 @@ Here is a straightforward implementation in Python.
 
 ```python
 # Key salting implementation for Cloud Bigtable
+
 # Uses a hash-based salt to deterministically distribute keys
 import hashlib
 

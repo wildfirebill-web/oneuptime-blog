@@ -261,6 +261,7 @@ Track how long lock renewal requests take through the sidecar:
 
 ```promql
 # TCP round-trip time to lock service
+
 istio_tcp_connections_opened_total{destination_service="redis-lock.coordination.svc.cluster.local"}
 ```
 

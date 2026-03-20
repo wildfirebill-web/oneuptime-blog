@@ -30,6 +30,7 @@ Hubble flow data can reveal application behavior and internal architecture. Rest
 
 ```bash
 # Check current access to Hubble relay
+
 kubectl auth can-i create pods/portforward -n kube-system \
   --as=system:serviceaccount:default:default
 

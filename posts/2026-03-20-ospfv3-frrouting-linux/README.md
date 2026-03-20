@@ -14,6 +14,7 @@ FRRouting (FRR) is the leading open-source routing suite for Linux, providing OS
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install frr
 
 # RHEL/CentOS/Fedora
@@ -50,7 +51,7 @@ configure terminal
 router ospf6
  ospf6 router-id 1.1.1.1
 
-! Enable OSPFv3 on interfaces — specify the area
+! Enable OSPFv3 on interfaces - specify the area
 interface eth0
  ipv6 ospf6 area 0.0.0.0
 
@@ -69,7 +70,7 @@ write memory
 
 Alternatively, edit the FRR configuration file directly:
 
-```
+```text
 # /etc/frr/ospf6d.conf
 router ospf6
  ospf6 router-id 1.1.1.1
@@ -133,7 +134,7 @@ show ipv6 route ospf
 
 ## Sample Output
 
-```
+```text
 Router# show ipv6 ospf neighbor
 
 OSPFv3 Process (1)

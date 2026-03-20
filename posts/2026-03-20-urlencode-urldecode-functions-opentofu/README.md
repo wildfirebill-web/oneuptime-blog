@@ -1,8 +1,8 @@
-# How to Use the urlencode and urldecode Functions in OpenTofu
+# How to Use the urlencode and urldecode Functions in OpenTofu - Functions
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, urlencode, urldecode, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Urlencode, Urldecode, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the urlencode and urldecode functions in OpenTofu to encode and decode URL-safe strings for use in HTTP requests and resource configurations.
 
@@ -108,6 +108,7 @@ resource "aws_api_gateway_resource" "path" {
 }
 
 # But for the complete URL reference, encode special chars
+
 locals {
   full_api_url = "https://${aws_api_gateway_rest_api.main.id}.execute-api.${data.aws_region.current.name}.amazonaws.com/${var.stage}${var.api_path}"
 }
@@ -150,4 +151,4 @@ Use `urlencode()` for URL parameters and path components. Use `base64encode()` f
 
 ## Summary
 
-`urlencode(string)` converts special characters to percent-encoded sequences (spaces become `+`, `@` becomes `%40`, etc.), making strings safe for URL inclusion. `urldecode(string)` reverses this. Use `urlencode()` when constructing URLs with query parameters from variable data, building S3 object URL references, or encoding values for use in webhook endpoints. Note that the actual AWS resource names and keys should use the raw values — encoding is only needed when constructing HTTP URLs.
+`urlencode(string)` converts special characters to percent-encoded sequences (spaces become `+`, `@` becomes `%40`, etc.), making strings safe for URL inclusion. `urldecode(string)` reverses this. Use `urlencode()` when constructing URLs with query parameters from variable data, building S3 object URL references, or encoding values for use in webhook endpoints. Note that the actual AWS resource names and keys should use the raw values - encoding is only needed when constructing HTTP URLs.

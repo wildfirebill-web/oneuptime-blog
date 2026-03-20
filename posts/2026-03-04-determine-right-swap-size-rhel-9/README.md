@@ -51,6 +51,7 @@ The kernel's `vm.overcommit_memory` setting affects how memory is allocated:
 
 ```bash
 # Check current overcommit setting
+
 sysctl vm.overcommit_memory
 ```
 

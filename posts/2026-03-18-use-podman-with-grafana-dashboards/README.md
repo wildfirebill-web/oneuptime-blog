@@ -39,6 +39,7 @@ Deploy Grafana alongside Prometheus and other monitoring tools:
 
 ```yaml
 # monitoring-stack.yml
+
 version: "3"
 services:
   prometheus:

@@ -16,6 +16,7 @@ The fastest way to verify time sync is the `time` command in talosctl:
 
 ```bash
 # Check time on a single node
+
 talosctl -n 192.168.1.10 time
 
 # Check time on multiple nodes simultaneously

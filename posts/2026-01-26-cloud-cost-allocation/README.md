@@ -35,6 +35,7 @@ Start with these five tags on every resource:
 
 ```yaml
 # Minimum viable tagging schema
+
 Owner: platform-team
 Project: checkout-service
 Environment: production

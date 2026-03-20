@@ -31,6 +31,7 @@ graph TD
 
 ```bash
 # Check if Kea DHCPv6 is active
+
 systemctl status kea-dhcp6
 
 # Check ISC dhcpd
@@ -81,7 +82,7 @@ sudo ip6tables -L -n -v
 # INPUT: -p udp --dport 547 -j ACCEPT
 # OUTPUT: -p udp --sport 547 -j ACCEPT
 
-# Quick fix — temporarily flush rules for testing
+# Quick fix - temporarily flush rules for testing
 sudo ip6tables -F  # WARNING: removes all rules
 ```
 

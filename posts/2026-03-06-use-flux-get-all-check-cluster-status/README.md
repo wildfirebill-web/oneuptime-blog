@@ -27,6 +27,7 @@ If you do not already have the Flux CLI installed:
 
 ```bash
 # Install on macOS
+
 brew install fluxcd/tap/flux
 
 # Install on Linux

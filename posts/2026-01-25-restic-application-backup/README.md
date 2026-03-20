@@ -29,6 +29,7 @@ Restic ships as a single binary with no dependencies:
 
 ```bash
 # Install on Ubuntu/Debian
+
 sudo apt update && sudo apt install restic
 
 # Install on macOS

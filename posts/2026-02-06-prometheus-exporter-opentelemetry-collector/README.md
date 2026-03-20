@@ -36,6 +36,7 @@ Here is a minimal Prometheus exporter configuration. This exposes metrics on por
 
 ```yaml
 # receivers configuration (how telemetry enters the Collector)
+
 receivers:
   otlp:
     protocols:
@@ -167,7 +168,7 @@ http_request_duration_summary_count 150
 
 ---
 
-## Resource Attribute Mapping
+Resource Attribute Mapping
 
 OpenTelemetry metrics include resource attributes (metadata about the source) that need to be converted to Prometheus labels. The exporter handles this automatically:
 

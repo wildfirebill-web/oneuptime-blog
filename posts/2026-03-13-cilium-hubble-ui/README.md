@@ -46,6 +46,7 @@ For local access during development and debugging:
 ```bash
 kubectl port-forward -n kube-system svc/hubble-ui 12000:80
 # Open: http://localhost:12000
+
 ```
 
 ## Step 3: Expose via Ingress (Optional)

@@ -22,6 +22,7 @@ You need Terraform 1.0 or later with AWS credentials that have permissions acros
 
 ```hcl
 # Primary region
+
 provider "aws" {
   region = "us-east-1"
   alias  = "primary"

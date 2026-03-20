@@ -36,6 +36,7 @@ The `AuthorizationPolicy` resource is the core building block. It specifies whic
 
 ```yaml
 # AuthorizationPolicy defines access rules for a target workload
+
 apiVersion: policy.linkerd.io/v1beta3
 kind: AuthorizationPolicy
 metadata:

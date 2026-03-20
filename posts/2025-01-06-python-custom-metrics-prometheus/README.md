@@ -56,6 +56,7 @@ Counters track cumulative values that only increase. They're reset to zero on re
 from prometheus_client import Counter
 
 # Create a counter with labels for dimensional data
+
 # Labels allow filtering and grouping in Prometheus queries
 http_requests_total = Counter(
     'http_requests_total',              # Metric name (must be unique)

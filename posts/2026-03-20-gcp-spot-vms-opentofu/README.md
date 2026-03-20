@@ -14,6 +14,7 @@ GCP Spot VMs are the successor to Preemptible VMs, offering up to 91% discount o
 
 ```hcl
 # main.tf - Spot VM instance
+
 resource "google_compute_instance" "spot_vm" {
   name         = "spot-vm-worker"
   machine_type = "n2-standard-4"

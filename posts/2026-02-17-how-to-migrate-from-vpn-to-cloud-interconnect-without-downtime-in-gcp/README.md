@@ -51,6 +51,7 @@ For Dedicated Interconnect:
 
 ```bash
 # Create interconnects in two Edge Availability Domains
+
 gcloud compute interconnects create ic-primary \
     --interconnect-type=DEDICATED \
     --link-type=LINK_TYPE_ETHERNET_10G_LR \

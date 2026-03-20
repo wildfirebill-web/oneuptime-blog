@@ -146,6 +146,7 @@ Validate the BGP configuration is active and routes are being advertised:
 
 ```bash
 # Check BGP session status
+
 calicoctl node status
 
 # Verify advertised routes from a peer router

@@ -25,6 +25,7 @@ Fedora moves fast. New releases come out roughly every six months, and each vers
 
 ```ini
 # inventory/hosts
+
 [fedora]
 fed-web01 ansible_host=10.0.5.10
 fed-dev01 ansible_host=10.0.5.20

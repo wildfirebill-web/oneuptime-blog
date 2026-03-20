@@ -1,4 +1,4 @@
-# How to Deploy TimescaleDB via Portainer
+# How to Deploy TimescaleDB via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Deploy TimescaleDB as a PostgreSQL-compatible time-series database 
 
 ## Introduction
 
-TimescaleDB extends PostgreSQL with time-series capabilities — automatic partitioning (hypertables), continuous aggregations, and data retention policies. Because it's built on PostgreSQL, you can use all existing PostgreSQL tools and ORMs. This guide covers deploying TimescaleDB via Portainer.
+TimescaleDB extends PostgreSQL with time-series capabilities - automatic partitioning (hypertables), continuous aggregations, and data retention policies. Because it's built on PostgreSQL, you can use all existing PostgreSQL tools and ORMs. This guide covers deploying TimescaleDB via Portainer.
 
 ## Step 1: Deploy TimescaleDB Stack
 
 ```yaml
 # docker-compose.yml - TimescaleDB
+
 version: "3.8"
 
 networks:

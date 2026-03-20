@@ -8,11 +8,11 @@ Description: Use IPv6 Flow Labels in Equal-Cost Multi-Path routing to ensure con
 
 ## Introduction
 
-ECMP (Equal-Cost Multi-Path) routing allows traffic to be distributed across multiple equal-cost paths. The challenge is ensuring that packets belonging to the same TCP flow always take the same path — otherwise, out-of-order delivery causes performance problems. IPv6 Flow Labels solve this elegantly: by hashing on the Flow Label (which is constant for a given flow), ECMP routers can make consistent path decisions without inspecting TCP ports or payloads.
+ECMP (Equal-Cost Multi-Path) routing allows traffic to be distributed across multiple equal-cost paths. The challenge is ensuring that packets belonging to the same TCP flow always take the same path - otherwise, out-of-order delivery causes performance problems. IPv6 Flow Labels solve this elegantly: by hashing on the Flow Label (which is constant for a given flow), ECMP routers can make consistent path decisions without inspecting TCP ports or payloads.
 
 ## The ECMP Problem
 
-```
+```text
 Without consistent hashing:
 Flow A: Packet 1 → Path 1, Packet 2 → Path 2 (different latencies)
 Result: TCP out-of-order → retransmissions → degraded throughput
@@ -27,6 +27,7 @@ Result: All packets take same path → in-order delivery
 
 ```bash
 # Linux ECMP uses 5-tuple or flow label for hashing
+
 # Check current ECMP hash policy
 cat /proc/sys/net/ipv6/flowlabel_state_ranges
 
@@ -98,7 +99,7 @@ for src, dst, fl in flows:
 
 ## Cisco IOS-XR ECMP with Flow Label
 
-```
+```text
 # Cisco IOS-XR: configure ECMP hash to include flow label
 router cef
   load-balance algorithm tunnel src-dst-ip-gre-key-port-proto-tunnel-id
@@ -111,7 +112,7 @@ ipv6 cef load-sharing algorithm include-ports source destination
 
 ## Juniper Junos ECMP Configuration
 
-```
+```text
 # Juniper: include Flow Label in ECMP hash
 set forwarding-options hash-key family inet6 layer-3 source-address
 set forwarding-options hash-key family inet6 layer-3 destination-address

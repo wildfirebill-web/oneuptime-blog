@@ -32,6 +32,7 @@ The most common way to wipe a Talos node is the `talosctl reset` command. This c
 
 ```bash
 # Full graceful reset - removes the node from the cluster first
+
 talosctl reset --nodes 192.168.1.10 --graceful
 
 # Full reset without draining workloads first

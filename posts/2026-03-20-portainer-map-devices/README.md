@@ -1,4 +1,4 @@
-# How to Map Devices to Containers in Portainer
+# How to Map Devices to Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to map host devices like serial ports, USB devices, and G
 
 ## Introduction
 
-Some containerized applications need direct access to hardware devices — serial ports for IoT/industrial equipment, USB devices for data acquisition, GPUs for inference, or specialized hardware accelerators. Docker's device mapping feature lets you expose these host devices inside containers, and Portainer makes this configuration accessible through the web UI.
+Some containerized applications need direct access to hardware devices - serial ports for IoT/industrial equipment, USB devices for data acquisition, GPUs for inference, or specialized hardware accelerators. Docker's device mapping feature lets you expose these host devices inside containers, and Portainer makes this configuration accessible through the web UI.
 
 ## Prerequisites
 
@@ -22,10 +22,11 @@ Device mapping uses Docker's `--device` flag, which adds a device file to the co
 
 ```bash
 # Docker CLI equivalent:
+
 docker run --device /dev/ttyS0:/dev/ttyS0 myimage
 
 # Format: /host/device:/container/device[:permissions]
-# Permissions: r (read), w (write), m (mknod) — default: rwm
+# Permissions: r (read), w (write), m (mknod) - default: rwm
 ```
 
 The device is accessible inside the container at the specified path, with the same underlying device driver as on the host.
@@ -59,7 +60,7 @@ udevadm info -n /dev/ttyUSB0 | grep DEVNAME
 3. Click **+ add device**.
 4. Fill in the fields:
 
-```
+```text
 Host device path:       /dev/ttyS0
 Container device path:  /dev/ttyS0
 Permissions:            rwm
@@ -67,7 +68,7 @@ Permissions:            rwm
 
 Or:
 
-```
+```text
 Host device path:       /dev/video0
 Container device path:  /dev/video0
 Permissions:            r
@@ -197,7 +198,7 @@ stat /dev/ttyS0
 
 - **Prefer specific device paths** over broad mounts like `/dev` to minimize attack surface.
 - **Use read-only permissions** (`r`) where write access is not needed.
-- **Avoid `--privileged`** when device mapping is sufficient — it's much safer.
+- **Avoid `--privileged`** when device mapping is sufficient - it's much safer.
 - **Audit device access** regularly, especially in multi-tenant environments.
 
 ## Conclusion

@@ -33,6 +33,7 @@ Add secrets through the GitHub UI or CLI:
 
 ```bash
 # Using GitHub CLI
+
 gh secret set API_KEY --body "your-api-key-value"
 
 # From a file

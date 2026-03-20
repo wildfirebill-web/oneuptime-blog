@@ -34,6 +34,7 @@ Every RPC span, regardless of the framework, should include these attributes:
 
 ```yaml
 # Required for all RPC spans
+
 rpc.system: "grpc"              # The RPC framework (grpc, thrift, etc.)
 rpc.service: "OrderService"     # The full service name from the IDL
 rpc.method: "CreateOrder"       # The method being called

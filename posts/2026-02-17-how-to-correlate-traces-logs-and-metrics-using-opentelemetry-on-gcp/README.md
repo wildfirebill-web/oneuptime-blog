@@ -112,6 +112,7 @@ tracer = trace.get_tracer(__name__)
 meter = metrics.get_meter(__name__)
 
 # Create metric instruments
+
 request_counter = meter.create_counter(
     name="http.server.request.count",
     description="Total number of HTTP requests",

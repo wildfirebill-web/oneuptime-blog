@@ -25,6 +25,7 @@ Velero is the most widely used backup tool for Kubernetes. Here is how to deploy
 
 ```yaml
 # applications/velero.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -31,6 +31,7 @@ Create keys for three distinct groups representing different organizational role
 
 ```bash
 # Security team keys
+
 age-keygen -o security-team-1.agekey
 age-keygen -o security-team-2.agekey
 

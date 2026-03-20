@@ -27,6 +27,7 @@ Install Liqo using liqoctl:
 
 ```bash
 # Download liqoctl
+
 curl --fail -LSO "https://github.com/liqotech/liqo/releases/download/v0.10.0/liqoctl-linux-amd64.tar.gz"
 tar -xzf liqoctl-linux-amd64.tar.gz
 sudo install -o root -g root -m 0755 liqoctl /usr/local/bin/liqoctl

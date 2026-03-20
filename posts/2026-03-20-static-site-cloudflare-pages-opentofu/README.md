@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # pages.tf
+
 terraform {
   required_providers {
     cloudflare = {
@@ -74,7 +75,7 @@ resource "cloudflare_pages_project" "main" {
         API_URL     = var.api_url_production
       }
 
-      # Secrets are stored encrypted — use for API keys
+      # Secrets are stored encrypted - use for API keys
       secrets = {
         ANALYTICS_KEY = var.analytics_key
       }
@@ -193,8 +194,8 @@ output "production_url" {
 
 ## Best Practices
 
-- Set `proxied = true` on the DNS CNAME record to route traffic through Cloudflare's proxy — this enables DDoS protection, caching, and WAF without additional configuration.
-- Use the `secrets` field in `deployment_configs` for API keys and sensitive values — they're stored encrypted and not exposed in logs or the dashboard.
-- Configure `preview_branch_includes` to only build specific branches as previews rather than all branches — this prevents accidental exposure of unfinished work.
+- Set `proxied = true` on the DNS CNAME record to route traffic through Cloudflare's proxy - this enables DDoS protection, caching, and WAF without additional configuration.
+- Use the `secrets` field in `deployment_configs` for API keys and sensitive values - they're stored encrypted and not exposed in logs or the dashboard.
+- Configure `preview_branch_includes` to only build specific branches as previews rather than all branches - this prevents accidental exposure of unfinished work.
 - Leverage Cloudflare Pages' built-in preview deployments for PR review workflows instead of managing separate staging infrastructure.
-- Use `pr_comments_enabled = true` to automatically comment on PRs with preview deployment URLs — this improves code review workflows significantly.
+- Use `pr_comments_enabled = true` to automatically comment on PRs with preview deployment URLs - this improves code review workflows significantly.

@@ -30,6 +30,7 @@ Route 80% to stable version and 20% to canary:
 
 ```yaml
 # weighted-ingressroute.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:

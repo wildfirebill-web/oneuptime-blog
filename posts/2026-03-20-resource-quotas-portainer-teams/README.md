@@ -1,4 +1,4 @@
-# How to Configure Per-Team Resource Quotas in Portainer
+# How to Configure Per-Team Resource Quotas in Portainer - Teams
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ When multiple teams share a Docker host, resource quotas prevent one team from c
 
 ```yaml
 # Team Alpha's docker-compose.yml with enforced resource limits
+
 version: "3.8"
 
 services:

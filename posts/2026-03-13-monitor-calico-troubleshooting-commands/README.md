@@ -17,6 +17,7 @@ Calico troubleshooting commands are not just for incident response - they can be
 ```bash
 #!/bin/bash
 # calico-health-monitor.sh
+
 FAILURES=0
 
 echo "=== Calico Health Check $(date) ==="

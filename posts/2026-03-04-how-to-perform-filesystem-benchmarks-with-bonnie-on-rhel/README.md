@@ -14,6 +14,7 @@ bonnie++ is a filesystem benchmark tool that tests sequential I/O, random seeks,
 
 ```bash
 # Install from EPEL
+
 sudo dnf install -y epel-release
 sudo dnf install -y bonnie++
 ```

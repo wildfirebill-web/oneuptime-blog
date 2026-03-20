@@ -152,6 +152,7 @@ Query costs by team in Kubecost:
 
 ```bash
 # Via API
+
 curl http://localhost:9090/model/allocation \
   -d window=7d \
   -d aggregate=label:team \

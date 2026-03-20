@@ -42,6 +42,7 @@ The agent connects outbound to HCP Terraform - it does not require any inbound n
 
 ```bash
 # Create an agent pool in your organization
+
 curl -s \
   --request POST \
   --header "Authorization: Bearer $TF_TOKEN" \

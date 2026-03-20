@@ -22,6 +22,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Appwrite
+
 version: "3.8"
 
 services:
@@ -124,7 +125,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 APPWRITE_OPENSSL_KEY=your-random-32-char-secret
 APPWRITE_DOMAIN=appwrite.yourdomain.com
 DB_PASSWORD=your-db-password

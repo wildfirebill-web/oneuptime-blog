@@ -16,6 +16,7 @@ Out of the box, sudo logs every command to syslog. These entries go to `/var/log
 
 ```bash
 # View recent sudo entries
+
 sudo grep "sudo:" /var/log/secure | tail -20
 ```
 

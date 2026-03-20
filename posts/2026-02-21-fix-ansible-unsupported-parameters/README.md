@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # WRONG: 'packages' instead of 'name'
+
 - apt:
     packages: nginx  # Wrong parameter name
     state: present

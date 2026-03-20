@@ -30,6 +30,7 @@ Always capture the current state before replacing:
 ```bash
 #!/bin/bash
 # safe-replace.sh
+
 # Replaces a Calico resource with automatic backup
 
 set -euo pipefail

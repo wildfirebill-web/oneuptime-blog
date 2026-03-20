@@ -1,4 +1,4 @@
-# How to Manage Containers via the Portainer API
+# How to Manage Containers via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ TOKEN="your-token"
 ENDPOINT_ID=1
 
 # List running containers
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/endpoints/${ENDPOINT_ID}/docker/containers/json" | \
   jq '.[] | {id: .Id[0:12], name: .Names[0], image: .Image, status: .Status}'
@@ -196,4 +197,4 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 
 ## Conclusion
 
-The Portainer API provides full Docker container lifecycle management with the security benefits of Portainer's authentication and RBAC layer. Use it to automate container creation, monitor running workloads, retrieve logs for debugging, and clean up unused containers — all without requiring direct Docker socket access. This is particularly valuable when you want to centralize access control through Portainer rather than distributing Docker socket credentials.
+The Portainer API provides full Docker container lifecycle management with the security benefits of Portainer's authentication and RBAC layer. Use it to automate container creation, monitor running workloads, retrieve logs for debugging, and clean up unused containers - all without requiring direct Docker socket access. This is particularly valuable when you want to centralize access control through Portainer rather than distributing Docker socket credentials.

@@ -193,6 +193,7 @@ Track the health of rolling updates using Istio metrics:
 
 ```bash
 # Watch error rates during deployment
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant http://localhost:9090 \
   'sum(rate(istio_requests_total{destination_service="web-api.production.svc.cluster.local",response_code=~"5.."}[1m])) / sum(rate(istio_requests_total{destination_service="web-api.production.svc.cluster.local"}[1m]))'

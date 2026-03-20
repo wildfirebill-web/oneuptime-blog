@@ -28,6 +28,7 @@ LaunchDarkly has an official Terraform provider that supports projects, environm
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     launchdarkly = {

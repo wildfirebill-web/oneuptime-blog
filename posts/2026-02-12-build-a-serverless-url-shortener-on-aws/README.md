@@ -35,6 +35,7 @@ Two main flows:
 
 ```bash
 # URLs table - stores the mapping from short code to long URL
+
 aws dynamodb create-table \
   --table-name url-shortener-urls \
   --attribute-definitions AttributeName=shortCode,AttributeType=S \

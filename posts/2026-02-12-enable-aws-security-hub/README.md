@@ -28,6 +28,7 @@ Enabling Security Hub is quick. You can do it through the console or CLI.
 
 ```bash
 # Enable Security Hub with default standards
+
 aws securityhub enable-security-hub \
   --enable-default-standards
 

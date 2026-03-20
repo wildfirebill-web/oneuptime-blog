@@ -36,6 +36,7 @@ Every model registered in the Model Registry should include standardized metadat
 
 ```python
 # governance/register_model.py
+
 from google.cloud import aiplatform
 from datetime import datetime
 import json

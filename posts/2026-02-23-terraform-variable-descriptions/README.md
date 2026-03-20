@@ -51,6 +51,7 @@ Given this visibility, investing in good descriptions pays off.
 
 ```hcl
 # Bad - too vague
+
 variable "size" {
   description = "The size"
   type        = string

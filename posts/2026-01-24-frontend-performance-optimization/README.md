@@ -422,7 +422,7 @@ new LazyImageLoader();
 
 ---
 
-## Resource Loading Strategy
+Resource Loading Strategy
 
 ```mermaid
 graph TD

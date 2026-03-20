@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Docker, Socket, API Compatibility, Systemd
+Tags: Podman, Containers, DevOps, Docker, Sockets, API Compatibility, Systemd
 
 Description: Learn how to configure Podman's Docker-compatible socket so that tools expecting the Docker daemon can work seamlessly with Podman.
 
@@ -20,6 +20,7 @@ Docker tools communicate with the Docker daemon through a Unix socket that expos
 
 ```bash
 # The standard Docker socket location
+
 ls -la /var/run/docker.sock
 
 # Tools that use the Docker socket include:

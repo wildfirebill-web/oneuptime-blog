@@ -1317,6 +1317,7 @@ describe('Navigation E2E', () => {
 
 ```yaml
 # e2e/navigation.yaml
+
 appId: com.myapp
 ---
 - launchApp
@@ -1435,7 +1436,7 @@ Key takeaways:
 
 By implementing comprehensive navigation tests, you'll catch bugs early, ensure consistent user experiences, and make your app more maintainable. Remember that navigation is one of the most critical aspects of mobile apps - users expect it to work flawlessly every time.
 
-## Resources
+Resources
 
 - [React Navigation Documentation](https://reactnavigation.org/docs/testing)
 - [React Native Testing Library](https://callstack.github.io/react-native-testing-library/)

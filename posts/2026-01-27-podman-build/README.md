@@ -41,6 +41,7 @@ The basic build command mirrors Docker's syntax. Podman reads from a `Containerf
 
 ```bash
 # Build an image from a Containerfile in the current directory
+
 # -t: Tag the image with a name and optional version
 podman build -t myapp:v1.0 .
 

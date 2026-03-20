@@ -28,6 +28,7 @@ Before enabling IPv6 in Docker, ensure your environment meets these requirements
 
 ```bash
 # Check if your host supports IPv6
+
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 # Output: 0 means IPv6 is enabled, 1 means disabled
 

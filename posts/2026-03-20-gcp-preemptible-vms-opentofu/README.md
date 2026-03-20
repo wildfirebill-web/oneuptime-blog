@@ -14,6 +14,7 @@ GCP Preemptible VMs offer up to 80% savings compared to regular VMs but can be t
 
 ```hcl
 # main.tf - Preemptible VM for batch processing
+
 resource "google_compute_instance" "preemptible_worker" {
   name         = "batch-worker-preemptible"
   machine_type = "n2-standard-4"

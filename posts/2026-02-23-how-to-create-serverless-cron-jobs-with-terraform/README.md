@@ -18,6 +18,7 @@ This guide covers how to create serverless cron jobs with Terraform, including s
 
 ```hcl
 # Lambda function for the cron job
+
 resource "aws_lambda_function" "daily_cleanup" {
   filename         = data.archive_file.cleanup.output_path
   function_name    = "daily-data-cleanup"

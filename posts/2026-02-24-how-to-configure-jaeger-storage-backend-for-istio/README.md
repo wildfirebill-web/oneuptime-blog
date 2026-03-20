@@ -257,6 +257,7 @@ Before starting the collector, you need to initialize the Cassandra schema:
 
 ```bash
 # Run the schema creation job
+
 kubectl run jaeger-cassandra-schema \
   --image=jaegertracing/jaeger-cassandra-schema:1.53 \
   --restart=Never \

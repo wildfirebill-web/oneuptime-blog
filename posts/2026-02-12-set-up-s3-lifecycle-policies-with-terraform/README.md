@@ -37,6 +37,7 @@ Here's the Terraform resource for lifecycle rules. Note that since AWS provider 
 
 ```hcl
 # Create the bucket first
+
 resource "aws_s3_bucket" "data" {
   bucket = "my-company-data-2026"
 }

@@ -39,6 +39,7 @@ All Azure services encrypt data at rest by default using Microsoft-managed keys.
 
 ```bash
 # Create a Key Vault for customer-managed encryption keys
+
 az keyvault create \
   --resource-group hipaa-rg \
   --name hipaa-keyvault \

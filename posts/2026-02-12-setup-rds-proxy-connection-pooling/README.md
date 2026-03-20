@@ -70,6 +70,7 @@ This creates the IAM role and policy for the RDS Proxy.
 
 ```bash
 # Create the trust policy
+
 cat > /tmp/trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

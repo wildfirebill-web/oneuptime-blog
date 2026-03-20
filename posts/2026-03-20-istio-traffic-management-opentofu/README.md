@@ -8,7 +8,7 @@ Description: Learn how to configure Istio traffic management with OpenTofu, incl
 
 ---
 
-Istio's traffic management features — VirtualService, DestinationRule, and Gateway — give you fine-grained control over how traffic flows between services. OpenTofu manages these CRDs as code, making canary deployments, circuit breakers, and retry policies reproducible.
+Istio's traffic management features - VirtualService, DestinationRule, and Gateway - give you fine-grained control over how traffic flows between services. OpenTofu manages these CRDs as code, making canary deployments, circuit breakers, and retry policies reproducible.
 
 ## Traffic Management Building Blocks
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # canary.tf
+
 resource "kubernetes_manifest" "virtual_service_canary" {
   manifest = {
     apiVersion = "networking.istio.io/v1beta1"
@@ -194,8 +195,8 @@ resource "kubernetes_manifest" "header_routing" {
 
 ## Best Practices
 
-- Use weighted traffic splitting to gradually roll out canary deployments — start at 1%, monitor error rates, then increase.
+- Use weighted traffic splitting to gradually roll out canary deployments - start at 1%, monitor error rates, then increase.
 - Configure outlier detection (circuit breaking) for all downstream service dependencies to prevent cascade failures.
-- Set per-request timeouts in VirtualService rather than relying on application-level timeouts — mesh timeouts are enforced by the proxy.
+- Set per-request timeouts in VirtualService rather than relying on application-level timeouts - mesh timeouts are enforced by the proxy.
 - Use header-based routing for testing canary deployments internally before exposing them to traffic.
-- Always pair traffic splitting with DestinationRule subsets using deployment labels (e.g., `version: v1`) — this is how Istio identifies which pods receive which traffic.
+- Always pair traffic splitting with DestinationRule subsets using deployment labels (e.g., `version: v1`) - this is how Istio identifies which pods receive which traffic.

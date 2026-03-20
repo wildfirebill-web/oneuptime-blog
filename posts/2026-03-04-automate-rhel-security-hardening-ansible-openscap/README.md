@@ -16,6 +16,7 @@ On your Ansible control node, install the SCAP tools:
 
 ```bash
 # Install OpenSCAP and the SCAP Security Guide
+
 sudo dnf install -y scap-security-guide openscap-scanner openscap-utils
 ```
 

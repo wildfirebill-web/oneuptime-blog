@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Multicast, Video Streaming, IPTV, Network
+Tags: IPv6, Multicast, Video Streaming, IPTV, Networks
 
 Description: A practical guide to configuring IPv6 multicast for video streaming deployments, including sender configuration, receiver setup, and network optimization.
 
@@ -16,7 +16,7 @@ IPv6 multicast is ideal for video streaming because:
 ## Choosing the Right Multicast Approach
 
 For video streaming:
-- **PIM-SSM** (Source-Specific Multicast): Recommended — receivers specify exact source, prevents unauthorized streams
+- **PIM-SSM** (Source-Specific Multicast): Recommended - receivers specify exact source, prevents unauthorized streams
 - **PIM-SM** with RP: Use when source isn't known ahead of time
 - **SSM range**: Use `ff3e::/32` (global scope) or `ff3x::/32` with appropriate scope
 
@@ -25,6 +25,7 @@ For video streaming:
 ```python
 #!/usr/bin/env python3
 # multicast_video_sender.py
+
 # Send a video stream over IPv6 multicast
 
 import socket

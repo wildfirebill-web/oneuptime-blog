@@ -78,6 +78,7 @@ If you run Istio, Linkerd, or similar service mesh, sidecar proxies already inte
 
 ```yaml
 # Example: Extracting dependencies from Istio metrics
+
 # Query Prometheus for source-destination pairs
 - record: service_dependency
   expr: |

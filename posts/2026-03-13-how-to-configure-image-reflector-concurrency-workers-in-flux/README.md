@@ -22,6 +22,7 @@ Each ImageRepository reconciliation involves an API call to a container registry
 
 ```yaml
 # clusters/my-cluster/flux-system/image-reflector-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -82,7 +83,7 @@ If you set concurrency too high you may hit rate limits and start seeing errors.
 - 10 to 50 ImageRepositories: `--concurrent=5`
 - Over 50 ImageRepositories: `--concurrent=10` with registry rate limit monitoring
 
-## Resource Adjustments
+Resource Adjustments
 
 The image-reflector-controller stores scanned tag lists in its internal database. Higher concurrency means more concurrent database writes:
 

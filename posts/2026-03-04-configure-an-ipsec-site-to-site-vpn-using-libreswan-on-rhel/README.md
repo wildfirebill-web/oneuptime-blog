@@ -16,6 +16,7 @@ On both VPN gateway servers:
 
 ```bash
 # Install Libreswan
+
 sudo dnf install -y libreswan
 
 # Initialize the NSS database (first time only)

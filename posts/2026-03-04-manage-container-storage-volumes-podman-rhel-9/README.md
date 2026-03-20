@@ -52,6 +52,7 @@ podman stop mydb
 podman rm mydb
 
 # Start a new container using the same volume
+
 podman run -d --name mydb-new \
   -e MYSQL_ROOT_PASSWORD=secret \
   -v dbdata:/var/lib/mysql \

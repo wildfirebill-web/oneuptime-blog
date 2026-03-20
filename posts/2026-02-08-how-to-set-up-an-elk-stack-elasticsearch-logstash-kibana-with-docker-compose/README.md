@@ -44,6 +44,7 @@ elk-stack/
 
 ```yaml
 # ELK Stack - Elasticsearch, Logstash, Kibana
+
 version: "3.8"
 
 services:

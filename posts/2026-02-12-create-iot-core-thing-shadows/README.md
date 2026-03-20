@@ -46,6 +46,7 @@ Every Thing in IoT Core can have one unnamed (classic) shadow and multiple named
 
 ```bash
 # Update a thing shadow with initial state
+
 aws iot-data update-thing-shadow \
     --thing-name "temperature-sensor-001" \
     --cli-binary-format raw-in-base64-out \

@@ -44,6 +44,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Sonic Search
+
 version: "3.8"
 
 services:
@@ -136,4 +137,4 @@ QUIT
 
 ## Conclusion
 
-Sonic stores the search index in two parts: a key-value store (RocksDB) for forward lookup and an FST (Finite State Transducer) for reverse lookup. The authentication password in `config.cfg` is set under `[channel.auth]`. Sonic returns object IDs from search queries — your application maps these IDs back to actual content. It is ideal for lightweight, low-memory search in applications that don't need Elasticsearch's aggregation capabilities.
+Sonic stores the search index in two parts: a key-value store (RocksDB) for forward lookup and an FST (Finite State Transducer) for reverse lookup. The authentication password in `config.cfg` is set under `[channel.auth]`. Sonic returns object IDs from search queries - your application maps these IDs back to actual content. It is ideal for lightweight, low-memory search in applications that don't need Elasticsearch's aggregation capabilities.

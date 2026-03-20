@@ -28,6 +28,7 @@ Failed to collect diagnostics: unable to connect to Calico datastore
 
 ```bash
 # Verify datastore configuration
+
 echo $DATASTORE_TYPE
 
 # For Kubernetes datastore

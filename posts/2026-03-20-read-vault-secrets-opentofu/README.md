@@ -14,6 +14,7 @@ OpenTofu's Vault provider allows reading secrets directly from HashiCorp Vault d
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     vault = {

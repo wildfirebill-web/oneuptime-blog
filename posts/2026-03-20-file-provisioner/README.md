@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Provisioner, File, Infrastructure as Code, EC2, Configuration
+Tags: OpenTofu, Terraform, Provisioners, File, Infrastructure as Code, EC2, Configuration
 
 Description: Learn how to use the OpenTofu file provisioner to copy files and directories to remote instances during resource creation as part of your infrastructure automation.
 
@@ -220,11 +220,11 @@ resource "aws_instance" "app" {
 
 ## Best Practices
 
-1. **Use cloud-init or user_data** for initial server setup when possible — it's faster and more reliable
+1. **Use cloud-init or user_data** for initial server setup when possible - it's faster and more reliable
 2. **Use `/tmp` as destination** and move files with `remote-exec` to avoid permission issues
 3. **Combine with remote-exec** to execute the uploaded files immediately after copy
 4. **Use templatefile()** to inject dynamic values into configuration files
-5. **Avoid storing secrets** in provisioner source files — use Vault or AWS Secrets Manager instead
+5. **Avoid storing secrets** in provisioner source files - use Vault or AWS Secrets Manager instead
 
 ---
 
@@ -234,4 +234,4 @@ The OpenTofu file provisioner is a straightforward way to copy configuration fil
 
 ---
 
-*Monitor your provisioned infrastructure with [OneUptime](https://oneuptime.com) — automated uptime and health monitoring.*
+*Monitor your provisioned infrastructure with [OneUptime](https://oneuptime.com) - automated uptime and health monitoring.*

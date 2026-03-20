@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, HTTP, Server, net/http, Networking
+Tags: Go, IPv6, HTTP, Server, Net/http, Networking
 
 Description: Handle IPv6 in Go HTTP servers including binding, client address extraction, and middleware for IPv6-aware request processing.
 

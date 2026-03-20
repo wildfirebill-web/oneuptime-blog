@@ -22,6 +22,7 @@ The simplest way to read a JSON file is with `json.load()`:
 import json
 
 # Open the file and parse JSON content
+
 with open('config.json', 'r') as file:
     data = json.load(file)
 

@@ -36,6 +36,7 @@ Before exploring traffic policies, here is the BGP setup for reference:
 
 ```yaml
 # bgp-peer.yaml
+
 # Configure the BGP peer (your upstream router).
 # MetalLB speakers will establish BGP sessions with this router.
 apiVersion: metallb.io/v1beta2

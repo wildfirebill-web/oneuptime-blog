@@ -293,6 +293,7 @@ After applying your policies, verify they are actually in effect:
 
 ```bash
 # Check the DestinationRule is applied
+
 kubectl get destinationrules -n production
 
 # Verify Envoy has the correct configuration

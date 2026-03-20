@@ -35,6 +35,7 @@ On the KDC server:
 
 ```bash
 # Install KDC packages
+
 sudo apt install krb5-kdc krb5-admin-server -y
 
 # Initialize the realm

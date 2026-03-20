@@ -140,6 +140,7 @@ Because of this, it is generally safer to put all routing rules for a host in a 
 
 ```yaml
 # BAD - ordering between these two VirtualServices is unpredictable
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

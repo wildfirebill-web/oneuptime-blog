@@ -62,6 +62,7 @@ infrastructure-dashboards/
 
 ```yaml
 # group_vars/all.yml
+
 grafana_version: "10.3.1"
 grafana_port: 3000
 grafana_admin_user: admin

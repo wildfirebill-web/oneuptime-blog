@@ -1,8 +1,8 @@
-# How to Configure Macvlan Networks for Direct LAN Access in Portainer
+# How to Configure Macvlan Networks for Direct LAN Access in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Macvlan, Docker Networking, LAN Access, Network, IP Address
+Tags: Portainer, Macvlan, Docker Networking, LAN Access, Networks, IP Address
 
 Description: Learn how to configure Docker macvlan networks in Portainer so containers get their own IP addresses on your physical LAN, appearing as separate devices.
 
@@ -18,6 +18,7 @@ Macvlan allows Docker containers to appear as physical devices on your LAN, each
 
 ```bash
 # Enable promiscuous mode on the host interface (VMs only)
+
 sudo ip link set eth0 promisc on
 
 # Make it persistent

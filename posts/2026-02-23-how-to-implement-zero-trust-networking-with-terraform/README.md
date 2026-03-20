@@ -28,6 +28,7 @@ In zero trust, identity replaces network location as the primary access control.
 
 ```hcl
 # Each service gets its own IAM role
+
 resource "aws_iam_role" "order_service" {
   name = "order-service-role"
 

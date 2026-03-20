@@ -14,6 +14,7 @@ The GRUB2 "error: unknown filesystem" message appears when GRUB cannot recognize
 
 ```bash
 # At the grub rescue> prompt, list available drives
+
 grub rescue> ls
 # (hd0) (hd0,msdos1) (hd0,msdos2)
 

@@ -26,6 +26,7 @@ Set the default strategy for all playbooks:
 
 ```ini
 # ansible.cfg - Set the global default strategy
+
 [defaults]
 strategy = linear
 ```

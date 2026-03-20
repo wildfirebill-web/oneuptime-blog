@@ -27,6 +27,7 @@ This guide covers deploying TGI on Kubernetes with GPU support using Flux CD, in
 
 ```yaml
 # clusters/my-cluster/tgi/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

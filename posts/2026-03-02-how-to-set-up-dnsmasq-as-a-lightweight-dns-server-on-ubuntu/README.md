@@ -33,6 +33,7 @@ The cleanest solution is to disable `systemd-resolved`'s stub listener and use d
 
 ```bash
 # Check the current status
+
 sudo systemctl status systemd-resolved
 
 # Edit resolved.conf to disable the stub listener

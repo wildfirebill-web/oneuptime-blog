@@ -46,6 +46,7 @@ Create one ArgoCD Application per environment per service. This gives you indepe
 
 ```yaml
 # applications/payment-service-dev.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

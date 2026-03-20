@@ -28,6 +28,7 @@ The `prio` qdisc is the simplest priority scheduler. It has multiple bands (queu
 
 ```bash
 # Replace root qdisc with a 3-band priority scheduler
+
 sudo tc qdisc add dev eth0 root handle 1: prio bands 3
 
 # By default, traffic with IP precedence bits is placed in different bands

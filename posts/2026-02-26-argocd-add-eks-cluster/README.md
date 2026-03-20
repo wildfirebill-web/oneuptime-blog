@@ -33,6 +33,7 @@ The fastest way to add an EKS cluster, good for development and testing:
 
 ```bash
 # Make sure you have the EKS cluster in your kubeconfig
+
 aws eks update-kubeconfig --name my-eks-cluster --region us-east-1
 
 # Verify the context

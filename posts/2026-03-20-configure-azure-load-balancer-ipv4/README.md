@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Load Balancer, IPv4, Networking, High Availability, Backend Pools
+Tags: Azure, Load Balancer, IPv4, Networking, High Availability, Backend Pool
 
 Description: Configure an Azure Standard Load Balancer with IPv4 frontend, backend pool, health probe, and load balancing rules to distribute traffic across virtual machines.
 
@@ -40,6 +40,7 @@ az network lb create \
 
 ```bash
 # HTTP health probe on port 80
+
 az network lb probe create \
   --resource-group $RESOURCE_GROUP \
   --lb-name my-lb \

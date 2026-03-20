@@ -85,6 +85,7 @@ Once you have identified a slow query, the execution plan shows exactly what Big
 
 ```bash
 # Get the execution plan for a specific job
+
 bq show -j --format=prettyjson <job-id> | python3 -c "
 import json, sys
 job = json.load(sys.stdin)

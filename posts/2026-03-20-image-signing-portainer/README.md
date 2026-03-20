@@ -14,6 +14,7 @@ Container image signing ensures that the images you deploy are exactly what was 
 
 ```bash
 # Install Cosign on your build machine
+
 curl -O -L https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64
 sudo mv cosign-linux-amd64 /usr/local/bin/cosign
 sudo chmod +x /usr/local/bin/cosign
@@ -209,4 +210,4 @@ echo "All images verified successfully."
 
 ## Conclusion
 
-Image signing creates a cryptographic chain of custody from build to deployment. Every signed image proves it came from your CI/CD pipeline and hasn't been modified. Cosign's keyless mode using OIDC tokens (GitHub Actions, GitLab CI) eliminates key management overhead while maintaining cryptographic guarantees. Combining signature verification with Portainer webhook deployments creates a secure deployment gate — only images that passed CI and were signed can reach production.
+Image signing creates a cryptographic chain of custody from build to deployment. Every signed image proves it came from your CI/CD pipeline and hasn't been modified. Cosign's keyless mode using OIDC tokens (GitHub Actions, GitLab CI) eliminates key management overhead while maintaining cryptographic guarantees. Combining signature verification with Portainer webhook deployments creates a secure deployment gate - only images that passed CI and were signed can reach production.

@@ -36,6 +36,7 @@ On RHEL, the simplest way to grant a user full sudo access is to add them to the
 
 ```bash
 # Add a user to the wheel group for full sudo access
+
 sudo usermod -aG wheel jsmith
 
 # Verify group membership

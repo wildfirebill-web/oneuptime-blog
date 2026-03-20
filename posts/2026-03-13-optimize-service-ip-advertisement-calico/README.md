@@ -26,6 +26,7 @@ Service IPs are advertised from all nodes, but ECMP on the router is needed to u
 
 ```bash
 # Verify service IP is advertised from all nodes
+
 for node in $(kubectl get nodes -o name | cut -d/ -f2); do
   POD=$(kubectl get pod -n calico-system -l k8s-app=calico-node \
     --field-selector spec.nodeName=${node} -o name | head -1)

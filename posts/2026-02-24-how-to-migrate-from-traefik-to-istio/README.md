@@ -34,6 +34,7 @@ List all Traefik-specific resources:
 
 ```bash
 # IngressRoutes
+
 kubectl get ingressroute --all-namespaces
 
 # Middlewares

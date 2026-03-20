@@ -266,6 +266,7 @@ Verify your policies are working correctly:
 
 ```bash
 # Test connectivity between pods
+
 kubectl run test-client --rm -it --image=busybox --restart=Never -n production -- \
   wget -qO- --timeout=3 http://api-service:8080/health
 

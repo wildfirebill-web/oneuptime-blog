@@ -27,6 +27,7 @@ Verify your Flux CLI version supports OCI artifact diffing.
 
 ```bash
 # Check Flux CLI version
+
 flux version --client
 ```
 

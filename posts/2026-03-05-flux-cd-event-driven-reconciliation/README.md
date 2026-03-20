@@ -60,6 +60,7 @@ To enable event-driven reconciliation, you need to create a Receiver resource th
 
 ```yaml
 # Secret containing the webhook token for validation
+
 apiVersion: v1
 kind: Secret
 metadata:

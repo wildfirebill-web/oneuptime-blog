@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # Enforce allowed instance types per environment
+
 variable "instance_type" {
   type = string
 
@@ -106,7 +107,7 @@ resource "aws_config_config_rule" "rds_storage_limit" {
 ## Service Control Policy for Account-Level Limits
 
 ```hcl
-# scp.tf — apply to AWS Organization OU
+# scp.tf - apply to AWS Organization OU
 resource "aws_organizations_policy" "deny_expensive_instances" {
   name        = "deny-expensive-ec2-instances"
   description = "Prevent launching GPU and high-memory instances without approval"
@@ -163,8 +164,8 @@ resource "aws_config_remediation_configuration" "missing_tags" {
 
 ## Best Practices
 
-- Use OpenTofu `validation` blocks to catch policy violations at plan time — faster feedback than waiting for Config evaluation.
+- Use OpenTofu `validation` blocks to catch policy violations at plan time - faster feedback than waiting for Config evaluation.
 - Apply SCPs at the OU level in AWS Organizations to prevent expensive instance launches in non-production accounts.
 - Configure AWS Config rule auto-remediation for low-risk fixes (like adding missing tags) but require human approval for resource deletion.
-- Review Config compliance reports weekly — governance is only effective if non-compliance is acted upon.
+- Review Config compliance reports weekly - governance is only effective if non-compliance is acted upon.
 - Start with alerting on violations before implementing blocking SCPs to avoid disrupting existing workflows.

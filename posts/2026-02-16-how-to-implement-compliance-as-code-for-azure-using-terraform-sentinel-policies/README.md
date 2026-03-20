@@ -83,6 +83,7 @@ This policy ensures that all Azure storage accounts have encryption enabled and 
 
 ```python
 # policies/azure-encryption.sentinel
+
 # Enforce encryption at rest for all storage accounts and databases
 
 import "tfplan/v2" as tfplan

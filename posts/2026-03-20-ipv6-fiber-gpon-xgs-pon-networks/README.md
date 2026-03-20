@@ -23,7 +23,7 @@ flowchart LR
 
 Configure IPv6 on the OLT uplink and enable DHCPv6 relay for subscriber prefix delegation:
 
-```
+```text
 ! Enable IPv6 globally
 ipv6 enable
 
@@ -48,7 +48,7 @@ ipv6 route-static :: 0 2001:db8:olt::2
 
 On Nokia ISAM/7360:
 
-```
+```text
 configure router
     interface "olt-uplink"
         ipv6
@@ -69,8 +69,9 @@ exit
 
 ONT configuration pushed via OMCI (ONU Management Control Interface) or TR-069:
 
-```
+```text
 # TR-069 (CWMP) parameter for IPv6 PD on residential gateway
+
 InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1.
   X_IPv6Enable = true
   X_IPv6PrefixDelegationEnabled = true

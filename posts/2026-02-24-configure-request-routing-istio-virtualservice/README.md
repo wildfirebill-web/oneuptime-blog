@@ -423,6 +423,7 @@ When routes do not work as expected, use istioctl to inspect:
 
 ```bash
 # Check what routes the proxy has
+
 istioctl proxy-config routes deploy/productpage -n bookinfo
 
 # Get detailed route info for a specific domain

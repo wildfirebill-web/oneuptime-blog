@@ -1,4 +1,4 @@
-# How to Configure a Bridge with systemd-networkd
+# How to Configure a Bridge with systemd-networkd - Configure
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ A Linux bridge created by systemd-networkd requires a `.netdev` file for the bri
 
 ```ini
 # /etc/systemd/network/10-br0.netdev
+
 [NetDev]
 Name=br0
 Kind=bridge
@@ -43,7 +44,7 @@ DNS=8.8.8.8
 Name=eth0
 
 [Network]
-# Assign eth0 as a bridge member — no IP on eth0 itself
+# Assign eth0 as a bridge member - no IP on eth0 itself
 Bridge=br0
 ```
 

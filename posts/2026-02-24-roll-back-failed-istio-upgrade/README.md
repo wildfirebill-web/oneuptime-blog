@@ -16,6 +16,7 @@ Before doing anything, figure out what is actually broken. Panicking and running
 
 ```bash
 # Check if istiod is running
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check istiod logs for errors

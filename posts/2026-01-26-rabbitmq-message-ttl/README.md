@@ -46,6 +46,7 @@ connection = pika.BlockingConnection(
 channel = connection.channel()
 
 # Create queue with 60-second TTL for all messages
+
 channel.queue_declare(
     queue='notifications',
     durable=True,

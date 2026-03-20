@@ -33,6 +33,7 @@ When a pod is pending, check these in order:
 
 ```bash
 # Get pod status
+
 kubectl get pod pending-pod
 
 # Get detailed information

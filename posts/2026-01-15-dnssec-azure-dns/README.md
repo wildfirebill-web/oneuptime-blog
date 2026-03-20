@@ -174,6 +174,7 @@ If you haven't already, install the Azure CLI:
 
 ```bash
 # macOS
+
 brew update && brew install azure-cli
 
 # Windows (PowerShell)

@@ -362,6 +362,7 @@ spec:
 
 ```yaml
 # Main app and sidecar communicate via localhost
+
 containers:
   - name: app
     image: myapp:v1

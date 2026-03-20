@@ -38,6 +38,7 @@ First, create a bucket and set up a log export. This example exports Cloud Audit
 
 ```bash
 # Create a dedicated bucket for Chronicle ingestion
+
 gsutil mb -l US gs://chronicle-log-ingestion-YOUR_PROJECT_ID
 
 # Create a log sink that exports audit logs to the bucket

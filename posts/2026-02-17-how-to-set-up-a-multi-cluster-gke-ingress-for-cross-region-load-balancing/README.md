@@ -46,6 +46,7 @@ Multi-Cluster Ingress requires GKE Enterprise (formerly Anthos). You also need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   gkehub.googleapis.com \
   multiclusteringress.googleapis.com \

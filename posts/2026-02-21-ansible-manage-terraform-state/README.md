@@ -14,6 +14,7 @@ While Terraform manages its own state, there are scenarios where you need Ansibl
 
 ```yaml
 # roles/terraform_state/tasks/main.yml
+
 ---
 - name: Create S3 bucket for Terraform state
   amazon.aws.s3_bucket:

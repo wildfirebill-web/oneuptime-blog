@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Load Balancers, Infrastructure as Code, Networking
+Tags: OpenTofu, Hetzner Cloud, Load Balancer, Infrastructure as Code, Networking
 
 Description: Learn how to create Hetzner Cloud Load Balancers with OpenTofu, including services, health checks, and target server attachments.
 
@@ -86,6 +86,7 @@ resource "hcloud_managed_certificate" "web" {
 
 ```hcl
 # Attach individual servers to the load balancer
+
 resource "hcloud_load_balancer_target" "web" {
   count            = length(hcloud_server.web)
   load_balancer_id = hcloud_load_balancer.web.id

@@ -47,6 +47,7 @@ Your EC2 instances need a role that allows them to communicate with Systems Mana
 
 ```bash
 # Create the role
+
 aws iam create-role \
   --role-name SSMInstanceRole \
   --assume-role-policy-document '{

@@ -1,11 +1,10 @@
----
-title: "Using GitHub as a Module Source in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, github
-description: "Learn how to use GitHub repositories as OpenTofu module sources with the github.com shorthand syntax."
----
-
 # Using GitHub as a Module Source in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, GitHub
+
+Description: Learn how to use GitHub repositories as OpenTofu module sources with the github.com shorthand syntax.
 
 OpenTofu supports a shorthand `github.com` prefix for referencing modules stored in GitHub repositories, without needing to type the full `git::https://` URL.
 
@@ -17,6 +16,7 @@ module "vpc" {
 }
 
 # With subdirectory
+
 module "vpc" {
   source = "github.com/myorg/terraform-modules//modules/vpc"
 }

@@ -1,4 +1,4 @@
-# How to Set Up Distributed Tracing with Jaeger via Portainer
+# How to Set Up Distributed Tracing with Jaeger via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Distributed tracing follows a request as it traverses multiple microservices, re
 
 ```yaml
 # docker-compose.yml - Jaeger all-in-one for development
+
 version: "3.8"
 
 services:

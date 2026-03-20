@@ -20,6 +20,7 @@ Ensure Podman Desktop is running and you have a container to inspect.
 
 ```bash
 # Start a container that produces log output
+
 podman run -d \
     --name my-web-server \
     -p 8080:80 \

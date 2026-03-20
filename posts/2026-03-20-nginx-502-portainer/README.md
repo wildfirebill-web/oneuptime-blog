@@ -20,6 +20,7 @@ A 502 error means Nginx received the request but couldn't forward it to Portaine
 
 ```bash
 # Step 1: Is Portainer running?
+
 docker ps | grep portainer
 # Expected: STATUS "Up X minutes"
 
@@ -73,11 +74,11 @@ networks:
 
 In NPM's proxy host settings:
 
-```
-# Wrong — using IP that may change
+```text
+# Wrong - using IP that may change
 Forward Hostname/IP: 172.17.0.3
 
-# Correct — use container name (DNS resolved by Docker)
+# Correct - use container name (DNS resolved by Docker)
 Forward Hostname/IP: portainer
 ```
 
@@ -110,7 +111,7 @@ proxy_read_timeout 300;
 
 If Portainer runs with HTTPS internally:
 
-```
+```text
 In NPM Proxy Host:
   Scheme: https
   Forward Port: 9443
@@ -144,4 +145,4 @@ curl -I https://portainer.yourdomain.com
 
 ## Conclusion
 
-Most 502 errors with Nginx and Portainer come down to network isolation or wrong port/hostname configuration. The fastest diagnostic is `docker exec nginx-proxy-manager curl http://portainer:9000` — if this succeeds, the issue is in NPM's proxy host configuration; if it fails, the containers aren't on the same network.
+Most 502 errors with Nginx and Portainer come down to network isolation or wrong port/hostname configuration. The fastest diagnostic is `docker exec nginx-proxy-manager curl http://portainer:9000` - if this succeeds, the issue is in NPM's proxy host configuration; if it fails, the containers aren't on the same network.

@@ -16,6 +16,7 @@ The `ip maddr` command shows multicast addresses joined on each interface:
 
 ```bash
 # List all multicast memberships for all interfaces
+
 ip maddr show
 
 # List memberships for a specific interface
@@ -24,7 +25,7 @@ ip maddr show dev eth0
 
 Example output:
 
-```
+```text
 2:  eth0
     link  01:00:5e:00:00:01
     link  01:00:5e:00:00:fb
@@ -46,7 +47,7 @@ cat /proc/net/igmp
 
 Output format:
 
-```
+```text
 Idx  Device    : Count Querier   Group    Users Timer    Reporter
 1    lo        :     1      V3
 2    eth0      :     3      V3   EF000001     1 0:00000000  0

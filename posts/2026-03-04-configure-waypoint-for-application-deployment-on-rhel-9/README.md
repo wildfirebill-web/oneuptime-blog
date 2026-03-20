@@ -30,6 +30,7 @@ Each phase uses a plugin that handles the platform-specific details.
 
 ```bash
 # Add the HashiCorp repository
+
 sudo dnf install -y yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 ```

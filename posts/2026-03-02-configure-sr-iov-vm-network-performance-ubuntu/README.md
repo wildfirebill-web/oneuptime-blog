@@ -28,6 +28,7 @@ Traffic between a VF and the network bypasses the host kernel networking stack, 
 
 ```bash
 # Check if IOMMU is enabled
+
 dmesg | grep -e DMAR -e IOMMU
 
 # Enable IOMMU in GRUB

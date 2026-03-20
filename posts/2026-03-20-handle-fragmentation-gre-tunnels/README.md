@@ -12,7 +12,7 @@ GRE (Generic Routing Encapsulation) adds 24 bytes of overhead to each packet: a 
 
 ## GRE Overhead Breakdown
 
-```
+```text
 GRE Tunnel Overhead:
   Outer IP header:  20 bytes
   GRE header:        4 bytes (basic GRE without optional fields)
@@ -35,6 +35,7 @@ For TCP through GRE tunnel:
 
 ```bash
 # Create GRE tunnel:
+
 ip tunnel add gre1 mode gre local 192.168.1.1 remote 203.0.113.1 ttl 255
 
 # Set MTU accounting for GRE overhead:

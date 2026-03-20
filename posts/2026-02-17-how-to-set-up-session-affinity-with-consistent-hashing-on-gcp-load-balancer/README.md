@@ -33,6 +33,7 @@ The simplest form. Good for internal services where clients have unique IPs.
 
 ```bash
 # Create a backend service with client IP session affinity
+
 gcloud compute backend-services create my-stateful-backend \
   --protocol=HTTP \
   --port-name=http \

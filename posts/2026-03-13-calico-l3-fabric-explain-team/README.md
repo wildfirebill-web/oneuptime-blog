@@ -37,6 +37,7 @@ Show the team the BGP routing table on a node:
 
 ```bash
 # View BGP sessions (who is this node peering with?)
+
 kubectl exec -n calico-system -l k8s-app=calico-node -c calico-node \
   -- birdcl show protocols
 # Expected: sessions to other nodes or route reflectors in "Established" state

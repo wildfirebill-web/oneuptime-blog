@@ -2,14 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Network Configuration, sysctl, System Administration
+Tags: IPv6, Linux, Network Configuration, Sysctl, System Administration
 
-Description: A guide to enabling IPv6 on Linux systems at various levels — kernel parameters, network interfaces, and common troubleshooting steps.
+Description: A guide to enabling IPv6 on Linux systems at various levels - kernel parameters, network interfaces, and common troubleshooting steps.
 
 ## Checking If IPv6 Is Currently Enabled
 
 ```bash
 # Check if IPv6 is disabled at the kernel level
+
 sysctl net.ipv6.conf.all.disable_ipv6
 # 0 = IPv6 enabled (default)
 # 1 = IPv6 disabled

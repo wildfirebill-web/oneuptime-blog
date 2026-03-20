@@ -40,6 +40,7 @@ Using gcloud:
 
 ```bash
 # Create a Cloud SQL instance with high availability enabled
+
 gcloud sql instances create myapp-db \
     --database-version=POSTGRES_15 \
     --tier=db-custom-4-16384 \

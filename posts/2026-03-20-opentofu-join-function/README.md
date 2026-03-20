@@ -1,11 +1,10 @@
----
-title: "How to Use join() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, strings
-description: "Learn how to use the join() function in OpenTofu to combine list elements into a single string."
----
-
 # How to Use join() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, String
+
+Description: Learn how to use the join() function in OpenTofu to combine list elements into a single string.
 
 The `join()` function combines a list of strings into a single string, inserting a separator between each element. It's the complement of `split()`.
 
@@ -146,7 +145,8 @@ locals {
 > join(",", [])
 ""
 
-# Safe to use — returns empty string for empty lists
+# Safe to use - returns empty string for empty lists
+
 locals {
   tags_string = join(",", var.optional_tags)
   # "" if var.optional_tags is empty

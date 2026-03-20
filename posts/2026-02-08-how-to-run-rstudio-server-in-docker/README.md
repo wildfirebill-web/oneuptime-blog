@@ -18,6 +18,7 @@ The Rocker project maintains the official RStudio Docker images. Get started wit
 
 ```bash
 # Start RStudio Server on port 8787 with a default password
+
 docker run -d \
   --name rstudio \
   -p 8787:8787 \
@@ -212,7 +213,7 @@ docker exec rstudio-multi bash -c "echo 'analyst2:password2' | chpasswd"
 
 Each user gets their own home directory and R session.
 
-## Resource Limits
+Resource Limits
 
 For shared environments, limit resources per container to prevent one user from consuming everything:
 

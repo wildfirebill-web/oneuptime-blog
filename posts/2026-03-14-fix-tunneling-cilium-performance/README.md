@@ -28,6 +28,7 @@ This guide provides the specific steps for each aspect of tunnel performance man
 
 ```bash
 # The most impactful fix: disable tunneling entirely
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set routingMode=native \
   --set autoDirectNodeRoutes=true \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Buffer, Linux, sysctl, Performance, Network Tuning
+Tags: UDP, Buffer, Linux, Sysctl, Performance, Network Tuning
 
 Description: Learn how to tune UDP socket buffer sizes on Linux to prevent packet drops in high-volume UDP applications like DNS, syslog, VoIP, and streaming.
 
@@ -20,6 +20,7 @@ This is a common cause of:
 
 ```bash
 # System-wide maximum UDP socket buffer
+
 sysctl net.core.rmem_max    # Maximum receive buffer
 sysctl net.core.wmem_max    # Maximum send buffer
 
@@ -94,7 +95,7 @@ print(f"Actual receive buffer: {actual_rcvbuf / 1048576:.1f} MB")
 ## Step 5: Configure High-Volume UDP Applications
 
 **DNS resolver (unbound):**
-```
+```text
 # /etc/unbound/unbound.conf
 server:
     so-rcvbuf: 64m
@@ -102,7 +103,7 @@ server:
 ```
 
 **syslog-ng:**
-```
+```text
 # /etc/syslog-ng/syslog-ng.conf
 source s_udp {
     udp(ip(0.0.0.0) port(514) so_rcvbuf(67108864));
@@ -110,7 +111,7 @@ source s_udp {
 ```
 
 **rsyslog:**
-```
+```text
 # /etc/rsyslog.conf
 module(load="imudp" TimeRequery="5")
 input(type="imudp" port="514" rcvbufSize="67108864")

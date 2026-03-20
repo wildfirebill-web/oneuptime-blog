@@ -117,6 +117,7 @@ Place your certificate and key in the Cockpit configuration directory:
 
 ```bash
 # Combine your cert and key into a single file
+
 # Cockpit expects a combined PEM file
 sudo cat /etc/pki/tls/certs/your-cert.pem /etc/pki/tls/private/your-key.pem > /etc/cockpit/ws-certs.d/your-cert.cert
 ```

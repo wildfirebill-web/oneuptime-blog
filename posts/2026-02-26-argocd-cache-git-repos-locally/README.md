@@ -47,6 +47,7 @@ The repo server caches both Git repositories and generated manifests. Configure 
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

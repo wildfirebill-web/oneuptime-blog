@@ -54,6 +54,7 @@ Start with a minimal configuration:
 
 ```yaml
 # Basic Kubernetes Events Receiver configuration
+
 # Requires RBAC permissions to watch events
 receivers:
   k8s_events:

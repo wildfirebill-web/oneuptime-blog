@@ -41,6 +41,7 @@ Here is a minimal Alertmanager configuration that sends all alerts to Slack:
 
 ```yaml
 # alertmanager.yaml
+
 # Basic Slack notification setup
 
 global:

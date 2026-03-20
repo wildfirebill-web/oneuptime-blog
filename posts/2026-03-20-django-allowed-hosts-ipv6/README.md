@@ -14,6 +14,7 @@ Django's `ALLOWED_HOSTS` setting validates the HTTP `Host` header to prevent hos
 
 ```bash
 # When a browser accesses http://[2001:db8::1]:8000/
+
 # The HTTP Host header is:
 Host: [2001:db8::1]:8000
 
@@ -35,7 +36,7 @@ ALLOWED_HOSTS = [
     "example.com",
     "www.example.com",
 
-    # IPv6 addresses — Django uses bracket notation
+    # IPv6 addresses - Django uses bracket notation
     "[2001:db8::1]",
     "[::1]",
 
@@ -58,7 +59,7 @@ def parse_allowed_hosts(hosts_str: str) -> list:
     """
     Parse ALLOWED_HOSTS from an environment variable.
     IPv6 addresses in the env var should use bracket notation
-    or plain addresses — we handle both.
+    or plain addresses - we handle both.
     """
     hosts = []
     for host in hosts_str.split(","):

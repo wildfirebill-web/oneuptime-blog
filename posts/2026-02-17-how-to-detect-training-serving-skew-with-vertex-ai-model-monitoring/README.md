@@ -28,6 +28,7 @@ The first thing Vertex AI Model Monitoring needs is a baseline - the distributio
 
 ```python
 # prepare_baseline.py
+
 from google.cloud import bigquery
 from google.cloud import storage
 import pandas as pd

@@ -56,6 +56,7 @@ Both clusters need to trust each other for mTLS. Create a shared root CA:
 mkdir -p certs
 
 # Create root CA
+
 openssl req -new -newkey rsa:4096 -x509 -sha256 \
   -days 3650 -nodes \
   -out certs/root-cert.pem \

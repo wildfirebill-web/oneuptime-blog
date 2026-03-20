@@ -8,12 +8,13 @@ Description: Create new network connection profiles using nmcli for Ethernet, Wi
 
 ## Introduction
 
-A NetworkManager connection profile stores all settings for a network connection — type, interface binding, IP configuration, DNS, and more. Use `nmcli connection add` to create profiles from the command line without editing configuration files directly.
+A NetworkManager connection profile stores all settings for a network connection - type, interface binding, IP configuration, DNS, and more. Use `nmcli connection add` to create profiles from the command line without editing configuration files directly.
 
 ## Create a Basic Ethernet Connection (DHCP)
 
 ```bash
 # Create a new Ethernet connection using DHCP
+
 nmcli connection add \
     type ethernet \
     con-name "myconnection" \

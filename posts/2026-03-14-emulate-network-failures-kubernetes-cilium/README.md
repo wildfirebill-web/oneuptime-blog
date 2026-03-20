@@ -30,6 +30,7 @@ Use CiliumNetworkPolicies to completely isolate a pod from the network:
 
 ```yaml
 # network-isolation.yaml
+
 # This policy drops ALL traffic to and from the target pod
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy

@@ -110,6 +110,7 @@ kubectl label nodes worker-0 worker-1 worker-2 bgp-speaker=true
 
 ```bash
 # CiliumBGPNodeConfig is auto-generated per node
+
 kubectl get ciliumbgpnodeconfig
 
 # Check cluster config status

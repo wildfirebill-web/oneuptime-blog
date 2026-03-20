@@ -121,6 +121,7 @@ This multi-stage Dockerfile compiles Chi and packages the binary:
 
 ```dockerfile
 # Stage 1: Build
+
 FROM golang:1.22-alpine AS build
 
 WORKDIR /app

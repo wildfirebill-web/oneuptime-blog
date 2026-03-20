@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Private Endpoints, Private Link, VNet, DNS, Infrastructure as Code
+Tags: OpenTofu, Azure, Private Endpoint, Private Link, VNet, DNS, Infrastructure as Code
 
 Description: Learn how to create Azure Private Endpoints for PaaS services like Storage, SQL Database, Key Vault, and Service Bus using OpenTofu, with private DNS zone integration for seamless name resolution.
 
@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # private_endpoint_storage.tf
+
 resource "azurerm_resource_group" "network" {
   name     = "rg-network-${var.environment}"
   location = var.location
@@ -159,7 +160,7 @@ resource "azurerm_subnet" "private_endpoints" {
 ## Common Private DNS Zones
 
 ```hcl
-# dns_zones.tf — manage all private DNS zones as a set
+# dns_zones.tf - manage all private DNS zones as a set
 locals {
   private_dns_zones = {
     blob       = "privatelink.blob.core.windows.net"
@@ -191,8 +192,8 @@ resource "azurerm_private_dns_zone_virtual_network_link" "all" {
 
 ## Best Practices
 
-- Create Private DNS zones for every PaaS service accessed via Private Endpoints — without the DNS zone, name resolution returns the public IP even though traffic flows privately.
-- Use a dedicated subnet for private endpoints — they have special network policy requirements and isolating them simplifies security zone management.
-- Link private DNS zones to all VNets that need to resolve the private service — applications in VNets without the link will resolve the public IP of the service.
-- Use the `private_dns_zone_group` block inside the `azurerm_private_endpoint` resource — this automatically creates the DNS A record for the private IP, removing a manual step.
+- Create Private DNS zones for every PaaS service accessed via Private Endpoints - without the DNS zone, name resolution returns the public IP even though traffic flows privately.
+- Use a dedicated subnet for private endpoints - they have special network policy requirements and isolating them simplifies security zone management.
+- Link private DNS zones to all VNets that need to resolve the private service - applications in VNets without the link will resolve the public IP of the service.
+- Use the `private_dns_zone_group` block inside the `azurerm_private_endpoint` resource - this automatically creates the DNS A record for the private IP, removing a manual step.
 - Disable public access on PaaS services after creating private endpoints: set `public_network_access_enabled = false` on storage accounts, SQL servers, and Key Vaults.

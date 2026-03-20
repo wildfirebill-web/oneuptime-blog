@@ -26,6 +26,7 @@ Download and install the Sonobuoy CLI:
 
 ```bash
 # Install on Linux
+
 wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.57.0/sonobuoy_0.57.0_linux_amd64.tar.gz
 tar -xzf sonobuoy_0.57.0_linux_amd64.tar.gz
 sudo mv sonobuoy /usr/local/bin/

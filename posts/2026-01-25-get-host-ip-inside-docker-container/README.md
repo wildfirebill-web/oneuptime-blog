@@ -16,6 +16,7 @@ On Docker Desktop for Mac and Windows, Docker provides a special DNS name that r
 
 ```bash
 # From inside a container
+
 ping host.docker.internal
 
 # Use it in your application configuration

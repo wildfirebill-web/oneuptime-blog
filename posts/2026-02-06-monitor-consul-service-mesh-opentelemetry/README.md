@@ -60,6 +60,7 @@ Verify the metrics endpoint works:
 
 ```bash
 # Check that Consul is exposing Prometheus metrics
+
 # The default metrics endpoint runs on the HTTP API port
 curl http://localhost:8500/v1/agent/metrics?format=prometheus
 

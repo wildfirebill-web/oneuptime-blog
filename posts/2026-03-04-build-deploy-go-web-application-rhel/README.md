@@ -14,6 +14,7 @@ Go produces self-contained binaries that are simple to deploy. This guide covers
 
 ```bash
 # Install Go
+
 sudo dnf install -y golang
 
 # Create the project

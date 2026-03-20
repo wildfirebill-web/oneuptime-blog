@@ -39,6 +39,7 @@ You need a Kubernetes cluster with Tekton Pipelines installed. You also need the
 
 ```bash
 # Install Tekton Pipelines on your cluster
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Verify the installation

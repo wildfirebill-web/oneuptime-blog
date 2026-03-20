@@ -142,6 +142,7 @@ Your API key grants read access to trace data, which may contain sensitive infor
 
 ```bash
 # Set the API key as an environment variable
+
 export TRACELOOP_API_KEY="your-key-here"
 ```
 

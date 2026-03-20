@@ -54,6 +54,7 @@ Label matchers use curly braces to specify which log streams to query. The follo
 
 ```logql
 # Select logs from a specific application and namespace
+
 # The = operator performs exact string matching
 {app="nginx", namespace="production"}
 ```

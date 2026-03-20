@@ -28,6 +28,7 @@ PromQL's `offset` modifier shifts a query's time range backwards:
 
 ```promql
 # Current request rate
+
 sum(rate(http_requests_total[5m]))
 
 # Request rate 1 hour ago

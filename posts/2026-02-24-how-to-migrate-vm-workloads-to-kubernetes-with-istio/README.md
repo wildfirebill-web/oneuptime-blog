@@ -167,6 +167,7 @@ Now start moving traffic to Kubernetes in controlled increments:
 
 ```bash
 # Phase 1: 10% to Kubernetes
+
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

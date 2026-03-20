@@ -47,6 +47,7 @@ Create an internal (private) load balancer. The frontend IP should be in the sam
 
 ```bash
 # Create the internal load balancer
+
 az network lb create \
   --name sqlAlwaysOnLB \
   --resource-group myResourceGroup \

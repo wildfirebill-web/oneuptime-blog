@@ -36,6 +36,7 @@ Pull everything from your AKS cluster.
 
 ```bash
 # Get AKS cluster details
+
 az aks show \
   --name my-aks-cluster \
   --resource-group my-rg \

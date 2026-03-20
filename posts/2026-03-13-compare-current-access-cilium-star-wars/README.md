@@ -45,6 +45,7 @@ Flannel is a network overlay that provides IP routing but ignores `NetworkPolicy
 
 ```bash
 # On a Flannel cluster, this policy does nothing
+
 kubectl apply -f sw_l3_l4_policy.yaml
 # xwing can still reach deathstar - Flannel ignores the policy
 ```

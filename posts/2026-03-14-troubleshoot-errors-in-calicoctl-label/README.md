@@ -35,6 +35,7 @@ This means the Calico node resource name does not match what you specified. Cali
 
 ```bash
 # List Calico node names (may differ from kubectl get nodes)
+
 calicoctl get nodes -o wide
 
 # Compare with Kubernetes node names

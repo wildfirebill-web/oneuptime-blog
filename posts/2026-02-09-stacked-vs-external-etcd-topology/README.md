@@ -100,6 +100,7 @@ Create kubeadm configuration for stacked etcd:
 
 ```yaml
 # kubeadm-stacked-config.yaml
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 kubernetesVersion: v1.28.0

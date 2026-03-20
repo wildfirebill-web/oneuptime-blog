@@ -16,6 +16,7 @@ The `limit` module uses a token bucket algorithm. It allows a burst of packets b
 
 ```bash
 # Allow ICMP (ping) but limit to 5 per second with a burst of 10
+
 sudo iptables -A INPUT -p icmp -m limit --limit 5/second --limit-burst 10 -j ACCEPT
 
 # Drop ICMP that exceeds the limit

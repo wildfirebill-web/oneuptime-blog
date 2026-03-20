@@ -68,6 +68,7 @@ For gateway traffic (external), the host must match the hostname in the Gateway 
 
 ```yaml
 # Gateway
+
 spec:
   servers:
     - hosts:

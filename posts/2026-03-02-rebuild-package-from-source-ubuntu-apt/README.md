@@ -16,6 +16,7 @@ Before starting, you need development tools and the ability to fetch source pack
 
 ```bash
 # Install the essential build tools
+
 sudo apt install build-essential devscripts fakeroot dpkg-dev
 
 # Enable source repositories (needed to download source packages)

@@ -38,6 +38,7 @@ Flux uses the built-in kstatus library to evaluate Deployment health. A Deployme
 
 ```yaml
 # Example Deployment status when healthy
+
 status:
   observedGeneration: 3
   replicas: 5

@@ -29,6 +29,7 @@ Create a base configuration that captures your organization's standards:
 
 ```yaml
 # base/machine-config.yaml
+
 machine:
   install:
     disk: /dev/sda

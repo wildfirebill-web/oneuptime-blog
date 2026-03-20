@@ -71,6 +71,7 @@ variables:
   DOCKER_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
 
 # Build runs in parallel - no resource group needed
+
 build:
   stage: build
   script:
@@ -300,7 +301,7 @@ deploy:
 
 ## Combining with Other Concurrency Controls
 
-### Resource Groups + Interruptible
+Resource Groups + Interruptible
 
 Cancel older pending jobs when a new pipeline starts:
 
@@ -319,7 +320,7 @@ test:
     - npm test
 ```
 
-### Resource Groups + Needs (DAG)
+Resource Groups + Needs (DAG)
 
 Control job dependencies while maintaining concurrency limits:
 

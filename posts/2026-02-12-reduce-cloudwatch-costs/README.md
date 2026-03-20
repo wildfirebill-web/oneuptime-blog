@@ -41,6 +41,7 @@ The most common cost trap is high-cardinality dimensions. If you publish a metri
 
 ```python
 # BAD - creates a metric per user
+
 cloudwatch.put_metric_data(
     Namespace='MyApp',
     MetricData=[{

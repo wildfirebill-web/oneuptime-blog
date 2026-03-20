@@ -57,6 +57,7 @@ sequenceDiagram
 
 ```bash
 # Enable OIDC issuer and workload identity on the AKS cluster
+
 az aks update \
   --resource-group myResourceGroup \
   --name myAKSCluster \

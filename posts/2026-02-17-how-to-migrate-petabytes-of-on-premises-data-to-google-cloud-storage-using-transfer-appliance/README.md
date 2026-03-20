@@ -42,6 +42,7 @@ Before ordering an appliance, plan the details:
 
 ```bash
 # Calculate your total data volume
+
 du -sh /data/warehouse/
 du -sh /data/archives/
 du -sh /data/media/

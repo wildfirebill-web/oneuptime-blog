@@ -24,6 +24,7 @@ Most routers expose BGP session data via the BGP-MIB (`1.3.6.1.2.1.15`):
 
 ```bash
 # Query BGP session state via SNMP for an IPv6 router
+
 snmpwalk -v2c -c public "[2001:db8::router1]" BGP-MIB::bgpPeerState
 
 # Query IPv6 BGP peer information from the BGP4-MIB extension
@@ -104,10 +105,10 @@ rate(bgp_updates_received_total{peer=~".*:.*"}[5m])
 ## Grafana Dashboard for IPv6 BGP
 
 Key panels:
-1. **Session State Table** — shows all IPv6 peers with current state
-2. **Prefix Count Over Time** — track received prefix count stability
-3. **Update Rate** — detect BGP churn
-4. **Session Uptime** — sorted ascending to spot recently reset sessions
+1. **Session State Table** - shows all IPv6 peers with current state
+2. **Prefix Count Over Time** - track received prefix count stability
+3. **Update Rate** - detect BGP churn
+4. **Session Uptime** - sorted ascending to spot recently reset sessions
 
 ```promql
 # Panel: IPv6 BGP Peer Status Summary

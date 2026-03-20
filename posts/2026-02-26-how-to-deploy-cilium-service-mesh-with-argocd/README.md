@@ -176,6 +176,7 @@ After deployment, verify Cilium is healthy:
 
 ```bash
 # Check Cilium status
+
 cilium status
 
 # Run connectivity test

@@ -24,6 +24,7 @@ Create an organization and configure authentication:
 
 ```bash
 # Install Terraform CLI
+
 brew install terraform
 
 # Login to Terraform Cloud

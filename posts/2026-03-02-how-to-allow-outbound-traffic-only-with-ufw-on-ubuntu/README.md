@@ -16,6 +16,7 @@ UFW's default policies determine what happens to traffic that doesn't match any 
 
 ```bash
 # View current defaults
+
 sudo ufw status verbose | grep Default
 ```
 

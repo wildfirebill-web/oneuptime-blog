@@ -22,6 +22,7 @@ Define new nodes in your Ansible inventory before provisioning:
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   vars:
     cluster_name: "production"

@@ -141,6 +141,7 @@ def create_image_labeling_job(
     return job
 
 # Example usage
+
 labels = [
     "product_photo",
     "lifestyle_photo",

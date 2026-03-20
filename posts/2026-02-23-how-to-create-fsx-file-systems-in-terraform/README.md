@@ -38,6 +38,7 @@ provider "aws" {
 }
 
 # Common variables
+
 variable "vpc_id" {
   description = "VPC ID for the file system"
   type        = string

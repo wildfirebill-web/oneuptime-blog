@@ -42,6 +42,7 @@ Every function has a defined number of required and optional parameters. Passing
 
 ```hcl
 # join() requires exactly 2 arguments: separator and list
+
 # Wrong - missing separator
 locals {
   result = join(["a", "b", "c"])

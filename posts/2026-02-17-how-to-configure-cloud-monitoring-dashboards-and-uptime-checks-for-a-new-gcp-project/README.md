@@ -18,6 +18,7 @@ Cloud Monitoring is enabled by default, but you should configure a few things:
 
 ```bash
 # Ensure the monitoring API is enabled
+
 gcloud services enable monitoring.googleapis.com --project=my-project
 
 # Set up notification channels first - you need these for alerts

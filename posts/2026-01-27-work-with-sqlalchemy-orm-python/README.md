@@ -20,6 +20,7 @@ This guide covers SQLAlchemy 2.0 patterns, showing you how to define models, cre
 
 ```bash
 # Core SQLAlchemy
+
 pip install sqlalchemy
 
 # Database drivers

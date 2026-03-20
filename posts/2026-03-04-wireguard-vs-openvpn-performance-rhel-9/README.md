@@ -16,6 +16,7 @@ For a fair comparison, you need identical conditions. Two RHEL machines connecte
 
 ```bash
 # Install both VPN solutions
+
 sudo dnf install -y epel-release
 sudo dnf install -y wireguard-tools openvpn easy-rsa
 

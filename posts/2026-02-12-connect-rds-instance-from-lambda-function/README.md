@@ -82,6 +82,7 @@ Create a security group for Lambda and update the RDS security group to allow it
 
 ```bash
 # Lambda security group (outbound to RDS)
+
 aws ec2 create-security-group \
   --group-name lambda-sg \
   --description "Security group for Lambda functions" \

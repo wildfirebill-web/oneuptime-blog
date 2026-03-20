@@ -185,6 +185,7 @@ inputs = ["kubernetes_logs"]
 endpoint = "http://loki.logging.svc.cluster.local:3100"
 
 # Exponential backoff retry
+
 [sinks.loki_with_retry.request]
 retry_attempts = 10
 retry_initial_backoff_secs = 1

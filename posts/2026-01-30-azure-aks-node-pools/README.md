@@ -58,6 +58,7 @@ System node pools host critical cluster components like CoreDNS and the metrics 
 
 ```bash
 # Create a new AKS cluster with a system node pool
+
 az aks create \
     --resource-group myResourceGroup \
     --name myAKSCluster \

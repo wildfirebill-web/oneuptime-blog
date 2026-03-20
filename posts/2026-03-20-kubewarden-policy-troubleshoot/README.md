@@ -27,12 +27,13 @@ Kubewarden policies can fail silently or produce unexpected results. This guide 
 
 ```bash
 # List all ClusterAdmissionPolicies
+
 kubectl get clusteradmissionpolicy -A
 
 # Check if a policy is active
 kubectl describe clusteradmissionpolicy disallow-latest-tag
 
-# Look for the Status field — it should be "active"
+# Look for the Status field - it should be "active"
 # If it shows "pending" or "error", the policy server may not have loaded it
 ```
 
@@ -124,7 +125,7 @@ kubectl get validatingwebhookconfigurations
 # Inspect the Kubewarden webhook
 kubectl describe validatingwebhookconfiguration kubewarden-policy-server-default
 
-# Check the namespaceSelector and rules — misconfigured selectors mean
+# Check the namespaceSelector and rules - misconfigured selectors mean
 # the webhook never fires for your target resources
 ```
 
@@ -182,6 +183,6 @@ kubectl describe validatingwebhookconfiguration kubewarden-policy-server-default
 
 ## Best Practices
 
-- Always test with `kwctl` locally before deploying to a cluster — it gives faster feedback than cluster-level testing.
+- Always test with `kwctl` locally before deploying to a cluster - it gives faster feedback than cluster-level testing.
 - Set policies to `monitor` mode first (`spec.mode: monitor`) so you can observe what would be denied without actually blocking requests.
-- Use `kubectl describe` on the policy and the webhook configuration together — most issues are in the rules or settings fields.
+- Use `kubectl describe` on the policy and the webhook configuration together - most issues are in the rules or settings fields.

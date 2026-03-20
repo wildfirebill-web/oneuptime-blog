@@ -76,6 +76,7 @@ spec:
 
 ```bash
 # Verify the DaemonSet is running on all nodes
+
 kubectl get pods -n monitoring -o wide
 
 # Confirm HostPort is registered in Cilium's service list

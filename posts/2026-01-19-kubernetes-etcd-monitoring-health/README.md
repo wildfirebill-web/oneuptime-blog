@@ -52,6 +52,7 @@ flowchart TD
 
 ```yaml
 # /etc/kubernetes/manifests/etcd.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

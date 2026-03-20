@@ -12,7 +12,7 @@ The CGA option (NDP option Type 11, defined in RFC 3971) carries the CGA Paramet
 
 ## CGA Option Wire Format
 
-```
+```text
 CGA Option (Type 11) Wire Format:
 
  0                   1                   2                   3
@@ -40,7 +40,7 @@ The CGA Parameters Data Structure is the core of the option.
 
 ## CGA Parameters Data Structure
 
-```
+```yaml
 CGA Parameters Data Structure (RFC 3972 Section 4):
 
  0                   1                   2                   3
@@ -145,7 +145,7 @@ def derive_interface_id(hash1: bytes, sec: int) -> bytes:
 
 ## CGA Option Verification Logic
 
-```
+```text
 CGA Option Verification Steps (RFC 3971 Section 5):
 
 Input:
@@ -182,7 +182,7 @@ Step 6: Verify collision count:
 
 ## CGA Option in NDP Message Flow
 
-```
+```text
 SEND-enabled Neighbor Solicitation:
 
 IPv6 Header:

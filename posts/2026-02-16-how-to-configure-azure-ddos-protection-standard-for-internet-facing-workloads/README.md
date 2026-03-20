@@ -30,6 +30,7 @@ DDoS Protection Standard is enabled at the Virtual Network level through a DDoS 
 
 ```bash
 # Create a DDoS Protection Plan
+
 az network ddos-protection create \
   --resource-group rg-security \
   --name ddos-plan-production \

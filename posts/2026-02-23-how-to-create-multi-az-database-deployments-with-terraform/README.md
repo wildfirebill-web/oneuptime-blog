@@ -31,6 +31,7 @@ Start by configuring the AWS provider and referencing your VPC infrastructure.
 
 ```hcl
 # Configure the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

@@ -48,6 +48,7 @@ Start by creating a new directory for your functions and initializing it with Fi
 
 ```bash
 # Create a new directory and initialize Firebase Functions
+
 mkdir my-auth-functions
 cd my-auth-functions
 firebase init functions

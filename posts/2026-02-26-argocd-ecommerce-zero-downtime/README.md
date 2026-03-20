@@ -40,6 +40,7 @@ The most critical ArgoCD feature for e-commerce is sync windows. Configure chang
 
 ```yaml
 # AppProject with e-commerce sync windows
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

@@ -33,6 +33,7 @@ Within each section, you can grant these privileges:
 
 ```bash
 # View the IPC access control configuration
+
 ls -la /etc/usbguard/IPCAccessControl.d/
 
 # Check the daemon config for IPC settings

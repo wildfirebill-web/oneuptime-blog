@@ -22,6 +22,7 @@ Azure CNI reserves IPs per node: `max_pods` per node × number of nodes must fit
 
 ```hcl
 # AKS subnet sized for 30 nodes × 30 pods = 900 IPs + 30 nodes
+
 resource "azurerm_subnet" "aks" {
   name                 = "aks-subnet"
   resource_group_name  = var.resource_group_name
@@ -171,4 +172,4 @@ az network vnet subnet show \
 
 ## Conclusion
 
-Choose Azure CNI for workloads that require Network Policy enforcement, direct pod access from on-premises, or pod-level access to Service Endpoints—use CNI Overlay mode to avoid the IP exhaustion problem. Calculate subnet size as: `(max_pods × max_nodes) + max_nodes + headroom`; always add at least 30% headroom for upgrades (which require additional nodes). With standard Azure CNI, set `max_pods` between 30-50 per node to balance pod density with subnet IP consumption; with CNI Overlay, you can use up to 250 pods per node since pods use a separate CIDR.
+Choose Azure CNI for workloads that require Network Policy enforcement, direct pod access from on-premises, or pod-level access to Service Endpoints-use CNI Overlay mode to avoid the IP exhaustion problem. Calculate subnet size as: `(max_pods × max_nodes) + max_nodes + headroom`; always add at least 30% headroom for upgrades (which require additional nodes). With standard Azure CNI, set `max_pods` between 30-50 per node to balance pod density with subnet IP consumption; with CNI Overlay, you can use up to 250 pods per node since pods use a separate CIDR.

@@ -219,6 +219,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 
 # Create histogram metric
+
 REQUEST_DURATION = Histogram(
     'http_request_duration_seconds',
     'HTTP request duration in seconds',

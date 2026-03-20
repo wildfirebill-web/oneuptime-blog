@@ -576,6 +576,7 @@ Define clear escalation paths that automation can follow during incidents.
 
 ```yaml
 # escalation-config.yaml
+
 # Define escalation paths per service or service tier
 
 escalation_templates:

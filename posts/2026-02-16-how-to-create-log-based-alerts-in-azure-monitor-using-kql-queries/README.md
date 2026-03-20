@@ -74,6 +74,7 @@ If you prefer infrastructure as code or need to create many alert rules, use the
 
 ```bash
 # Create a log-based alert rule that fires when HTTP 500 errors exceed threshold
+
 az monitor scheduled-query create \
   --name "High-500-Error-Rate" \
   --resource-group myResourceGroup \

@@ -8,7 +8,7 @@ Description: Deploy a Minecraft Java Edition server using Portainer with persist
 
 ---
 
-Running your own Minecraft server on Docker via Portainer gives you full control over the game version, mods, and world data — all with easy updates and backups through the Portainer interface.
+Running your own Minecraft server on Docker via Portainer gives you full control over the game version, mods, and world data - all with easy updates and backups through the Portainer interface.
 
 ## Step 1: Deploy via Portainer Stack
 
@@ -16,6 +16,7 @@ The `itzg/minecraft-server` image is the community standard for Dockerized Minec
 
 ```yaml
 # minecraft-stack.yml
+
 version: "3.8"
 
 services:
@@ -69,11 +70,11 @@ For Paper servers, place plugin JARs in the plugins directory. Map a local direc
 Download popular plugins to `/opt/minecraft/plugins/`:
 
 ```bash
-# EssentialsX — essential commands
+# EssentialsX - essential commands
 wget -O /opt/minecraft/plugins/EssentialsX.jar \
   https://github.com/EssentialsX/Essentials/releases/download/2.20.1/EssentialsX-2.20.1.jar
 
-# LuckPerms — permissions management
+# LuckPerms - permissions management
 wget -O /opt/minecraft/plugins/LuckPerms.jar \
   https://ci.luckperms.net/job/LuckPerms/lastSuccessfulBuild/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.137.jar
 ```
@@ -127,4 +128,4 @@ To update the Minecraft version, update the `VERSION` environment variable in Po
 
 ## Summary
 
-Portainer makes Minecraft server management approachable — update plugins, change server properties, view logs, and back up world data without command-line access. The `itzg/minecraft-server` image handles version management, mod installation, and Paper/Forge/Fabric setup automatically.
+Portainer makes Minecraft server management approachable - update plugins, change server properties, view logs, and back up world data without command-line access. The `itzg/minecraft-server` image handles version management, mod installation, and Paper/Forge/Fabric setup automatically.

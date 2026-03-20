@@ -20,6 +20,7 @@ Save money by shutting down development instances outside of business hours:
 
 ```powershell
 # stop-dev-instances.ps1
+
 # Stop all instances tagged as "development" environment
 
 param(

@@ -35,6 +35,7 @@ Start by documenting all Helm releases currently managed via the CLI.
 
 ```bash
 # List all Helm releases across all namespaces
+
 helm list --all-namespaces
 
 # Export details of each release

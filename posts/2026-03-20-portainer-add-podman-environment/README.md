@@ -1,4 +1,4 @@
-# How to Add a Podman Environment to Portainer
+# How to Add a Podman Environment to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Podman is a daemonless container engine that runs containers as rootless process
 
 ```bash
 # Enable and start the Podman socket
+
 sudo systemctl enable --now podman.socket
 
 # Verify socket is available
@@ -167,4 +168,4 @@ curl -s \
 
 ## Conclusion
 
-Portainer provides a familiar management interface for Podman deployments, leveraging Podman's Docker-compatible API. The socket-based connection works for local installations, while TCP exposure enables remote Podman management. Note that Swarm-specific features aren't available with Podman — for orchestration, combine Podman with Kubernetes instead.
+Portainer provides a familiar management interface for Podman deployments, leveraging Podman's Docker-compatible API. The socket-based connection works for local installations, while TCP exposure enables remote Podman management. Note that Swarm-specific features aren't available with Podman - for orchestration, combine Podman with Kubernetes instead.

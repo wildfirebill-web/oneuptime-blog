@@ -18,6 +18,7 @@ When you run a playbook locally, you can type the vault password or point to a f
 
 ```bash
 # This works locally but not in CI/CD
+
 ansible-playbook site.yml --ask-vault-pass
 
 # This is what CI/CD needs

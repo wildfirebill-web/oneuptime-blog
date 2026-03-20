@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Database, PostgreSQL, MySQL, Kubernetes, Storage, StatefulSet, Performance
+Tags: Longhorn, Database, PostgreSQL, MySQL, Kubernetes, Storage, StatefulSets, Performance
 
 Description: Learn how to configure Longhorn storage for database workloads including StatefulSets for PostgreSQL and MySQL, with optimizations for data locality, IOPS, and backup scheduling.
 
@@ -28,6 +28,7 @@ Databases are the most demanding stateful workloads in Kubernetes. Running them 
 
 ```yaml
 # storageclass-database.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
@@ -155,7 +156,7 @@ EOF
 
 ## Best Practices
 
-- Use `reclaimPolicy: Retain` for database StorageClasses — never auto-delete database volumes.
+- Use `reclaimPolicy: Retain` for database StorageClasses - never auto-delete database volumes.
 - Set `volumeBindingMode: WaitForFirstConsumer` to ensure the volume is created on the same node as the pod.
 - Schedule database-specific backups more frequently than general workloads.
 - Test backup restore on a staging database at least monthly to verify recovery capability.

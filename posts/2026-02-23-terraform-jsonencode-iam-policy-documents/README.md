@@ -18,6 +18,7 @@ When you write an IAM policy as a raw JSON string in Terraform, it looks like th
 
 ```hcl
 # The old way - raw JSON string (hard to maintain)
+
 resource "aws_iam_policy" "s3_read" {
   name = "s3-read-access"
 

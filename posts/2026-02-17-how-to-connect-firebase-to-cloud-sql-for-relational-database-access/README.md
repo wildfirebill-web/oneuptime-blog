@@ -34,6 +34,7 @@ Stick with Firestore when you need:
 
 ```bash
 # Create a PostgreSQL instance
+
 gcloud sql instances create my-firebase-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-2-8192 \

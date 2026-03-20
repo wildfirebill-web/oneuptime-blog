@@ -41,6 +41,7 @@ Enter the template details:
 ```plaintext
 Name: standard-rke-cluster
 Description: Organization-standard RKE cluster configuration
+
 ```
 
 ## Step 3: Configure RKE Options
@@ -49,6 +50,7 @@ Set the core RKE configuration for your template:
 
 ```yaml
 # RKE Configuration
+
 kubernetes_version: v1.28.x-rancher1-1
 
 # Network configuration

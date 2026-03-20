@@ -34,6 +34,7 @@ Amazon Elastic Container Registry requires token-based authentication. ECR token
 
 ```yaml
 # For ECR, it is better to use Kubernetes imagePullSecrets
+
 # rather than machine-level config because tokens expire
 machine:
   registries:

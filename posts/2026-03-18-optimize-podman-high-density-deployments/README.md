@@ -52,6 +52,7 @@ Memory is usually the limiting factor for container density. Reduce per-containe
 
 ```bash
 # Set tight memory limits
+
 podman run -d --name app \
   --memory=64m \
   --memory-swap=64m \

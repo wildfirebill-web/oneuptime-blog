@@ -42,6 +42,7 @@ This creates a Key Vault with HSM-backed key support and purge protection:
 
 ```bash
 # Create a resource group for the confidential VM resources
+
 RG="rg-confidential-vms"
 LOCATION="eastus"
 az group create --name $RG --location $LOCATION

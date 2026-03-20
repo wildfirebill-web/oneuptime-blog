@@ -31,6 +31,7 @@ Let's pull some real data. Here's how to check CPU utilization for a specific se
 
 ```bash
 # Get average CPU utilization over the last 3 hours in 5-minute intervals
+
 aws cloudwatch get-metric-statistics \
   --namespace "AWS/ECS" \
   --metric-name CPUUtilization \

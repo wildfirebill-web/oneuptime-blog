@@ -21,6 +21,7 @@ How to View Application Logs in Epinio demonstrates how Epinio simplifies applic
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

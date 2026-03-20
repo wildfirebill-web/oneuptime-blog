@@ -32,6 +32,7 @@ Docker secrets require Docker Swarm mode. Make sure your cluster is initialized:
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 ```
 

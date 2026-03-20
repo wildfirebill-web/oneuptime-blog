@@ -16,6 +16,7 @@ Docker BuildKit changed how build output is displayed. Here is how to get more v
 
 ```bash
 # Enable plain progress output for readable error messages
+
 docker build --progress=plain -t myapp:debug .
 
 # Disable BuildKit for classic output format

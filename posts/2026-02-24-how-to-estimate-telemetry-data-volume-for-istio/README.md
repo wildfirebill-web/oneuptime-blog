@@ -30,6 +30,7 @@ Metrics are the most storage-efficient form of telemetry, but their cardinality 
 
 ```bash
 # Check how many metric lines a single sidecar exposes
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s localhost:15090/stats/prometheus | wc -l
 
 # Check specific Istio metrics

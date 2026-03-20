@@ -16,6 +16,7 @@ Prometheus uses file-based service discovery or API-based targets. Here is how t
 
 ```yaml
 # prometheus-register.yml - Register hosts with Prometheus
+
 ---
 - name: Provision and register with Prometheus
   hosts: webservers

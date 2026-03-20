@@ -51,6 +51,7 @@ Add Pundit to your Gemfile:
 
 ```ruby
 # Gemfile
+
 gem 'pundit'
 ```
 

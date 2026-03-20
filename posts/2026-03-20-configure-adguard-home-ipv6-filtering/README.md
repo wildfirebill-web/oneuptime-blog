@@ -14,6 +14,7 @@ AdGuard Home is a self-hosted DNS ad-blocker with a web UI, support for DNS-over
 
 ```bash
 # Download and install
+
 curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
 
 # Or via Docker

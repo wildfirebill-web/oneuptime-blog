@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nornir, Python, IPv6, Network Automation, Inventory, Tasks, Parallelism
+Tags: Nornir, Python, IPv6, Network Automation, Inventory, Task, Parallelism
 
 Description: Use Nornir to automate IPv6 configuration across a fleet of network devices using inventory files, plugins, and parallel task execution.
 
@@ -20,6 +20,7 @@ pip install nornir nornir-napalm nornir-netmiko nornir-utils
 
 ```yaml
 # inventory/hosts.yaml
+
 router1:
   hostname: 2001:db8::r1      # IPv6 management address
   platform: ios

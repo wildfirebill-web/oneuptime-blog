@@ -34,6 +34,7 @@ Before enabling automatic OS image upgrades, you need:
 
 ```bash
 # Enable automatic OS image upgrades on an existing scale set
+
 az vmss update \
   --resource-group myResourceGroup \
   --name myScaleSet \

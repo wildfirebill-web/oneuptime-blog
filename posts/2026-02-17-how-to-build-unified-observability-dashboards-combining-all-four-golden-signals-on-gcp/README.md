@@ -52,6 +52,7 @@ Here are the MQL queries for each golden signal when your service runs on GKE be
 
 ```text
 # P50, P95, P99 request latency from the load balancer
+
 {
   fetch https_lb_rule::loadbalancing.googleapis.com/https/total_latencies
   | group_by [resource.url_map_name], percentile(val(), 50)

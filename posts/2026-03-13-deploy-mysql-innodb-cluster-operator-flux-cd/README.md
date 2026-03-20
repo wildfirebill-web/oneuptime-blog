@@ -24,6 +24,7 @@ Deploying the MySQL InnoDB Cluster Operator through Flux CD gives you GitOps con
 
 ```yaml
 # infrastructure/sources/mysql-operator-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

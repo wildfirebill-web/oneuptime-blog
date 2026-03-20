@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Snapshots, Automation, Backup
+Tags: Longhorn, Kubernetes, Storage, Snapshot, Automation, Backup
 
 Description: Configure automated recurring snapshots in Longhorn using recurring jobs and cron expressions to maintain consistent data protection schedules.
 
@@ -38,6 +38,7 @@ Each job can be configured with:
 
 ```yaml
 # recurring-snapshot-daily.yaml - Daily snapshot at midnight
+
 apiVersion: longhorn.io/v1beta2
 kind: RecurringJob
 metadata:

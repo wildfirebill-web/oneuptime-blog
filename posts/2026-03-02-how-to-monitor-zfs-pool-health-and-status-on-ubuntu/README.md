@@ -52,6 +52,7 @@ Any state other than ONLINE requires immediate attention.
 
 ```bash
 # Quick capacity view
+
 sudo zpool list
 ```
 

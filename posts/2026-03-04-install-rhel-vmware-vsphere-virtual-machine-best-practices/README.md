@@ -22,6 +22,7 @@ This selection ensures vSphere applies the correct default hardware settings.
 
 ```bash
 # VM Configuration Best Practices:
+
 CPU:         Allocate based on workload (start with 2-4 vCPUs)
 Memory:      Minimum 2 GB, recommended 4 GB or more
 Disk:        Use "Thin Provisioning" for development, "Thick Eager Zeroed" for production

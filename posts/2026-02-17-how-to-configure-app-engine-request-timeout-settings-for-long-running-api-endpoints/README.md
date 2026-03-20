@@ -36,6 +36,7 @@ If you need longer timeouts, use basic scaling:
 
 ```yaml
 # app.yaml - Basic scaling for longer timeouts (up to 24 hours)
+
 runtime: python312
 
 basic_scaling:

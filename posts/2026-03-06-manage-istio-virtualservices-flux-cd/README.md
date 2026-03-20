@@ -37,6 +37,7 @@ Create the Flux CD source for your traffic management configs:
 
 ```yaml
 # git-source.yaml
+
 # GitRepository source for traffic management configurations
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

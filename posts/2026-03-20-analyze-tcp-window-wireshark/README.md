@@ -14,8 +14,9 @@ The TCP receive window controls how much data can be in-flight before an acknowl
 
 ## Display Filters for TCP Window Analysis
 
-```
+```text
 # Show all TCP traffic
+
 tcp
 
 # Show zero window packets (receiver buffer full)
@@ -37,7 +38,7 @@ tcp.analysis.flags
 
 TCP window scaling extends the window beyond 65535 bytes. Wireshark automatically applies the scale factor from the SYN/SYN-ACK exchange.
 
-```
+```text
 # Verify window scaling options during handshake
 tcp.options.wscale
 
@@ -55,7 +56,7 @@ tcp.options.wscale
 1. Select a TCP stream packet.
 2. Right-click → **Follow** → **TCP Stream** to isolate the stream.
 3. Open **Statistics** → **TCP Stream Graphs** → **Window Scaling**.
-4. The graph shows window size over time — a plateau near zero indicates a bottleneck.
+4. The graph shows window size over time - a plateau near zero indicates a bottleneck.
 
 ---
 
@@ -74,7 +75,7 @@ tcp.options.wscale
 
 Click on a TCP packet and expand the **Transmission Control Protocol** section:
 
-```
+```text
 Transmission Control Protocol
   Source Port: 443
   Destination Port: 52400

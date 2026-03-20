@@ -22,6 +22,7 @@ Fedora IoT supports ARM (aarch64) and x86_64 architectures. Download the raw ima
 
 ```bash
 # Write the image to an SD card (e.g., for Raspberry Pi)
+
 sudo arm-image-installer \
   --image=Fedora-IoT-39-aarch64.raw.xz \
   --target=rpi4 \
@@ -222,7 +223,7 @@ sudo rpm-ostree rollback
 sudo systemctl reboot
 ```
 
-## Resource Management on Constrained Devices
+Resource Management on Constrained Devices
 
 IoT devices typically have limited CPU and memory. Use Podman resource limits to prevent containers from overwhelming the host:
 

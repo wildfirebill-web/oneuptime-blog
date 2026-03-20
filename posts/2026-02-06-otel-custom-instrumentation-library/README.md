@@ -25,6 +25,7 @@ First, the framework we are instrumenting (simplified):
 
 ```python
 # internalhttp/server.py
+
 class InternalHTTPServer:
     def __init__(self, name):
         self.name = name

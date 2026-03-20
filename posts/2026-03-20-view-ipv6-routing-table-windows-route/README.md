@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Routing, route print, Network Diagnostics
+Tags: IPv6, Windows, Routing, Route print, Network Diagnostics
 
 Description: Learn how to view and interpret the IPv6 routing table on Windows using route print and PowerShell, including filtering routes and understanding route metrics.
 
@@ -21,7 +21,7 @@ Get-NetRoute -AddressFamily IPv6
 
 ## Understanding route print -6 Output
 
-```
+```text
 ===========================================================================
 IPv6 Route Table
 ===========================================================================
@@ -47,6 +47,7 @@ Column meanings:
 
 ```powershell
 # Show all IPv6 routes with interface names
+
 Get-NetRoute -AddressFamily IPv6 |
     Select-Object InterfaceAlias, DestinationPrefix, NextHop, RouteMetric, Protocol |
     Format-Table -AutoSize

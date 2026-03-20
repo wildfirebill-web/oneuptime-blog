@@ -8,7 +8,7 @@ Description: Deploy containerized HART protocol gateways and data collection age
 
 ---
 
-HART (Highway Addressable Remote Transducer) is the dominant protocol for industrial field instruments — pressure transmitters, flow meters, level sensors, and more. Connecting HART devices to modern data infrastructure requires protocol gateways. Portainer makes it easy to deploy and manage these gateways as containers on edge hardware.
+HART (Highway Addressable Remote Transducer) is the dominant protocol for industrial field instruments - pressure transmitters, flow meters, level sensors, and more. Connecting HART devices to modern data infrastructure requires protocol gateways. Portainer makes it easy to deploy and manage these gateways as containers on edge hardware.
 
 ## HART Protocol Architecture
 
@@ -26,6 +26,7 @@ The following stack deploys a HART gateway container that reads instrument data 
 
 ```yaml
 # hart-gateway-stack.yml
+
 version: "3.8"
 
 services:

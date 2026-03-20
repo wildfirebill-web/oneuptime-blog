@@ -34,6 +34,7 @@ The simplest Kaniko build runs as a pod. Given a Dockerfile in a Git repository:
 
 ```yaml
 # kaniko-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

@@ -140,6 +140,7 @@ This index template defines the field mappings and settings for all rotated indi
 
 ```bash
 # Create an index template using the OpenSearch API
+
 curl -XPUT "https://my-search-domain.us-east-1.es.amazonaws.com/_index_template/app-logs-template" \
   -H "Content-Type: application/json" \
   --aws-sigv4 "aws:amz:us-east-1:es" \

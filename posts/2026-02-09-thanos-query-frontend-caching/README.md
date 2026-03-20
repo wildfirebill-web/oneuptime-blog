@@ -259,6 +259,7 @@ Track cache effectiveness:
 
 ```promql
 # Cache hit rate
+
 sum(rate(thanos_query_frontend_queries_total{result="hit"}[5m])) /
 sum(rate(thanos_query_frontend_queries_total[5m]))
 

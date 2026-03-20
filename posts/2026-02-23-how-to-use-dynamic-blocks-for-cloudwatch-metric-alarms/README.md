@@ -73,6 +73,7 @@ Feed it like this:
 
 ```hcl
 # terraform.tfvars
+
 metric_alarms = {
   "high-cpu-web-server" = {
     description         = "CPU utilization exceeds 80% on web server"

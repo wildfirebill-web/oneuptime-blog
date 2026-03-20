@@ -78,6 +78,7 @@ The installation applies the MetalLB namespace and deployment manifests from the
 
 ```bash
 # Apply the MetalLB native manifests
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.5/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready

@@ -39,6 +39,7 @@ Enable the DRA feature gate on the API server and kubelet:
 
 ```yaml
 # API server
+
 --feature-gates=DynamicResourceAllocation=true
 
 # Kubelet

@@ -21,6 +21,7 @@ Satellite can provision RHEL hosts automatically using PXE boot. A new server bo
 
 ```bash
 # Enable DHCP, DNS, and TFTP on Satellite or Capsule
+
 satellite-installer \
     --foreman-proxy-dhcp true \
     --foreman-proxy-dhcp-interface enp1s0 \

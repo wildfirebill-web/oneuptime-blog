@@ -18,6 +18,7 @@ Kyverno is a policy engine designed for Kubernetes that allows you to validate, 
 
 ```bash
 # Install Kyverno CLI using Homebrew
+
 brew install kyverno
 ```
 

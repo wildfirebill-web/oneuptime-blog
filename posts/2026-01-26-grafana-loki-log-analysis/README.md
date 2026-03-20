@@ -42,6 +42,7 @@ Good log analysis starts with proper label configuration. Here's a Promtail conf
 
 ```yaml
 # promtail-config.yaml
+
 server:
   http_listen_port: 9080
   grpc_listen_port: 0

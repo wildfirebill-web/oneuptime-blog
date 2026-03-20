@@ -1,4 +1,4 @@
-# How to Upgrade RKE2 Clusters
+# How to Upgrade RKE2 Clusters - Clusters
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Upgrading RKE2 is a two-phase process: first upgrade server (control plane) node
 
 ```bash
 # 1. Verify current version
+
 rke2 --version
 
 # 2. Check all nodes are Ready
@@ -132,4 +133,4 @@ kubectl apply -f https://raw.githubusercontent.com/aquasecurity/kube-bench/main/
 - Only upgrade one minor version at a time (e.g., 1.28 → 1.29, not 1.28 → 1.30).
 - Test upgrades in a staging cluster that mirrors production before upgrading production.
 - Keep the etcd backup for at least 7 days after a successful upgrade before deleting it.
-- Upgrade RKE2 before upgrading Rancher — check Rancher's support matrix for compatible versions.
+- Upgrade RKE2 before upgrading Rancher - check Rancher's support matrix for compatible versions.

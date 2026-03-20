@@ -34,6 +34,7 @@ A span contract is a specification that describes what a valid span looks like f
 
 ```yaml
 # span-contracts/http-server.yaml
+
 # Contract for HTTP server spans
 
 name: "http-server-span"

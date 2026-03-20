@@ -8,7 +8,7 @@ Description: Learn how to add and manage tags for Docker images in Portainer to 
 
 ## Introduction
 
-Docker image tags are labels that identify specific versions of an image. Proper tagging is fundamental to container lifecycle management — it distinguishes `v2.0.0` from `v2.1.0`, marks images as `latest`, `stable`, or `edge`, and enables rollbacks. Portainer allows you to tag images through its image management interface.
+Docker image tags are labels that identify specific versions of an image. Proper tagging is fundamental to container lifecycle management - it distinguishes `v2.0.0` from `v2.1.0`, marks images as `latest`, `stable`, or `edge`, and enables rollbacks. Portainer allows you to tag images through its image management interface.
 
 ## Prerequisites
 
@@ -17,8 +17,9 @@ Docker image tags are labels that identify specific versions of an image. Proper
 
 ## Understanding Docker Image Tags
 
-```
+```bash
 # Full image reference format:
+
 registry/repository:tag
 
 # Examples:
@@ -29,7 +30,7 @@ ghcr.io/myorg/myapp:latest  # GitHub Container Registry
 registry.example.com/myapp:prod  # Private registry, environment tag
 ```
 
-A single image can have multiple tags — they all point to the same image ID.
+A single image can have multiple tags - they all point to the same image ID.
 
 ## Step 1: Tag an Image in Portainer
 
@@ -167,7 +168,7 @@ docker inspect myorg/myapp:v2.1.0 --format '{{.RepoTags}}'
 
 In production, treat version tags as immutable:
 
-```
+```text
 ✓ Correct:
   myapp:v2.1.0 → always the same image, never changes
 

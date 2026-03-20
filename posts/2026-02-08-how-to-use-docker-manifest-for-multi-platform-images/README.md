@@ -28,6 +28,7 @@ The `docker manifest` command is an experimental feature. You need to enable it 
 
 ```bash
 # Enable experimental CLI features
+
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
 # Or add it to your Docker config file permanently

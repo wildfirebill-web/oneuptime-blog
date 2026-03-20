@@ -20,6 +20,7 @@ In Kubernetes environments, assign each team to a namespace and apply a Resource
 
 ```yaml
 # Apply a ResourceQuota for Team A's namespace
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

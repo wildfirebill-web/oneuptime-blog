@@ -28,6 +28,7 @@ Salt state:
 
 ```yaml
 # salt/nginx/init.sls
+
 nginx:
   pkg.installed: []
   service.running:

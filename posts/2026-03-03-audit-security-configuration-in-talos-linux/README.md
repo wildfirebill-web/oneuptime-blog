@@ -33,6 +33,7 @@ The machine configuration defines the security posture of each node. Start by pu
 ```bash
 #!/bin/bash
 # audit-machine-configs.sh
+
 # Pulls and audits machine configurations from all nodes
 
 AUDIT_DIR="audit-$(date +%Y%m%d)"

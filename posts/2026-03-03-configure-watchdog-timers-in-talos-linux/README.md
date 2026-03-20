@@ -30,6 +30,7 @@ Most server motherboards include a hardware watchdog (usually the Intel TCO or I
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     extraKernelArgs:

@@ -35,6 +35,7 @@ First, build a service that handles Pub/Sub push messages. The message format is
 
 ```python
 # app.py - Cloud Run service that processes Pub/Sub messages
+
 import base64
 import json
 import os

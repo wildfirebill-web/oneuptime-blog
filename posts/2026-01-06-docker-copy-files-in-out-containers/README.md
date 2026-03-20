@@ -31,6 +31,7 @@ The basic syntax for docker cp is straightforward. The container path uses a col
 
 ```bash
 # Copy from container to host
+
 # Format: docker cp <container>:<container_path> <host_path>
 docker cp <container>:<path> <host_path>
 

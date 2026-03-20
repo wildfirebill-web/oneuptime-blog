@@ -1,4 +1,4 @@
-# How to Deploy a PostgreSQL Cluster with Patroni via Portainer
+# How to Deploy a PostgreSQL Cluster with Patroni via Portainer - Cluster
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Patroni is the most popular tool for managing highly available PostgreSQL cluste
 
 ## Architecture
 
-```
+```text
 Applications
     │
     ▼
@@ -29,6 +29,7 @@ HAProxy (routes writes to primary, reads to replicas)
 
 ```yaml
 # docker-compose.yml - Patroni PostgreSQL Cluster
+
 version: "3.8"
 
 networks:

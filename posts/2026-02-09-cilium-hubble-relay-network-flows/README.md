@@ -45,6 +45,7 @@ Verify Relay installation:
 
 ```bash
 # Check Relay pods
+
 kubectl get pods -n kube-system -l k8s-app=hubble-relay
 
 # Check Relay service

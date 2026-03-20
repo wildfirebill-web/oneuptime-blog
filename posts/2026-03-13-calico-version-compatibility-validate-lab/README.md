@@ -27,6 +27,7 @@ Document your current versions before making any changes:
 
 ```bash
 # Current Kubernetes version
+
 kubectl version --short
 
 # Current Calico version (from calico-node pods)

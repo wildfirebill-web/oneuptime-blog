@@ -141,4 +141,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure ML workspaces and compute clusters provide a managed platform for ML experimentation and training. OpenTofu manages workspaces, CPU and GPU clusters with auto-scaling, and development compute instances — giving your data science team a consistent, cost-efficient environment.
+Azure ML workspaces and compute clusters provide a managed platform for ML experimentation and training. OpenTofu manages workspaces, CPU and GPU clusters with auto-scaling, and development compute instances - giving your data science team a consistent, cost-efficient environment.

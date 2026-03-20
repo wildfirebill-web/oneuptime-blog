@@ -1,4 +1,4 @@
-# How to Create RDS Read Replicas with OpenTofu
+# How to Create RDS Read Replicas with OpenTofu - Rds
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -43,6 +43,7 @@ resource "aws_db_instance" "primary" {
 
 ```hcl
 # Read replica in the same region for read scaling
+
 resource "aws_db_instance" "read_replica_1" {
   identifier     = "${var.project_name}-replica-1"
   instance_class = "db.r6g.xlarge"  # Can use smaller instance for reads
@@ -145,4 +146,4 @@ tofu apply
 
 ## Conclusion
 
-RDS read replicas scale read throughput by distributing queries across multiple database instances. Monitor `ReplicaLag` in CloudWatch—high lag indicates the replica cannot keep up with write volume on the primary. For promotion to standalone database during DR, use `aws rds promote-read-replica`. Remember that after promotion, the replica is no longer a replica and will not receive replication from the primary.
+RDS read replicas scale read throughput by distributing queries across multiple database instances. Monitor `ReplicaLag` in CloudWatch-high lag indicates the replica cannot keep up with write volume on the primary. For promotion to standalone database during DR, use `aws rds promote-read-replica`. Remember that after promotion, the replica is no longer a replica and will not receive replication from the primary.

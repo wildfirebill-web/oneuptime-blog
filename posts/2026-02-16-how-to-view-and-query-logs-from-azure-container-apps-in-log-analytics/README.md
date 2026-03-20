@@ -25,6 +25,7 @@ Check that your Container Apps environment is connected to a Log Analytics works
 
 ```bash
 # View the environment's logging configuration
+
 az containerapp env show \
   --name my-env \
   --resource-group my-rg \

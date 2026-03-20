@@ -44,6 +44,7 @@ graph LR
 
 ```yaml
 # GitHub Actions workflow
+
 name: Build and Deploy
 on:
   push:

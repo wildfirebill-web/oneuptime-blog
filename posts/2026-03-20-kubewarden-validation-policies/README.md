@@ -8,7 +8,7 @@ Description: Learn how to configure Kubewarden validation policies to enforce se
 
 ## Introduction
 
-Validation policies are the most common type of Kubewarden policy. They evaluate incoming Kubernetes admission requests and either allow or deny them based on configurable rules. Unlike mutation policies that modify resources, validation policies are read-only — they simply approve or reject the admission request.
+Validation policies are the most common type of Kubewarden policy. They evaluate incoming Kubernetes admission requests and either allow or deny them based on configurable rules. Unlike mutation policies that modify resources, validation policies are read-only - they simply approve or reject the admission request.
 
 This guide covers creating comprehensive validation policies using both hub policies and custom implementations.
 
@@ -42,6 +42,7 @@ spec:
 
 ```yaml
 # 01-no-privileged.yaml
+
 apiVersion: policies.kubewarden.io/v1
 kind: ClusterAdmissionPolicy
 metadata:

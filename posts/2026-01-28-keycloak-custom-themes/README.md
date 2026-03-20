@@ -110,6 +110,7 @@ Start by creating a theme that extends the default Keycloak base theme. This app
 
 ```bash
 # Navigate to Keycloak themes directory
+
 cd /opt/keycloak/themes
 
 # Create your theme directory

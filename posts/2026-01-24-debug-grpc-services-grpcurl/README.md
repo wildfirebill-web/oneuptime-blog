@@ -14,6 +14,7 @@ grpcurl is a command-line tool that lets you interact with gRPC servers the way 
 
 ```bash
 # macOS
+
 brew install grpcurl
 
 # Linux (using Go)

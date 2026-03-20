@@ -52,6 +52,7 @@ These are the bread-and-butter metrics for understanding service health:
 
 ```text
 # Request rate per service
+
 sum(rate(istio_requests_total{reporter="destination"}[5m])) by (destination_service)
 
 # Error rate (5xx) per service

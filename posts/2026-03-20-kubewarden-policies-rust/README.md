@@ -1,4 +1,4 @@
-# How to Write Custom Kubewarden Policies in Rust
+# How to Write Custom Kubewarden Policies in Rust - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Kubewarden policies are WebAssembly modules. Writing them in Rust gives you type
 
 ```bash
 # Install Rust
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.cargo/env
 
@@ -40,9 +41,9 @@ cd require-resource-limits
 ```
 
 The generated project includes:
-- `src/lib.rs` — policy logic
-- `src/settings.rs` — configurable policy settings
-- `metadata.yaml` — policy metadata
+- `src/lib.rs` - policy logic
+- `src/settings.rs` - configurable policy settings
+- `metadata.yaml` - policy metadata
 
 ---
 
@@ -162,6 +163,6 @@ kwctl push \
 ## Best Practices
 
 - Write unit tests in Rust for your policy logic using the Kubewarden test helpers.
-- Keep policies focused on one concern — smaller policies are easier to understand and test.
+- Keep policies focused on one concern - smaller policies are easier to understand and test.
 - Use `settings.rs` to make policies configurable rather than hardcoding values.
 - Run `kwctl inspect <policy>` to verify the policy metadata before deploying to production.

@@ -49,6 +49,7 @@ Start by creating the NAT Gateway resources.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-aks \
   --location eastus

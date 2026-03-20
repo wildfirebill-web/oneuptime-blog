@@ -29,6 +29,7 @@ Backstage uses PostgreSQL for its catalog and plugin data. We will set up an RDS
 
 ```hcl
 # database.tf - PostgreSQL for Backstage
+
 resource "aws_db_subnet_group" "backstage" {
   name       = "backstage-db-subnet"
   subnet_ids = var.private_subnet_ids

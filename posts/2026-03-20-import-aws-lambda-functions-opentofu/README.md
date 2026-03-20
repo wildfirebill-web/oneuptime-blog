@@ -79,6 +79,7 @@ resource "aws_lambda_function" "processor" {
 }
 
 # Placeholder archive to satisfy Terraform's requirement for a deployment package
+
 data "archive_file" "placeholder" {
   type        = "zip"
   output_path = "/tmp/placeholder.zip"

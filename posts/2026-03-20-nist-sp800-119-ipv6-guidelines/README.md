@@ -16,7 +16,7 @@ NIST Special Publication 800-119, "Guidelines for the Secure Deployment of IPv6,
 
 Before deploying IPv6, NIST recommends a thorough inventory:
 
-```
+```text
 [ ] Identify all hosts, routers, and appliances
 [ ] Determine which support IPv6 (check vendor documentation)
 [ ] Identify applications that may behave differently under IPv6
@@ -30,10 +30,10 @@ NIST SP 800-119 categorizes transition mechanisms by risk level:
 
 | Mechanism | Risk Level | Recommendation |
 |-----------|-----------|----------------|
-| Dual-stack | Medium | Preferred — visible and manageable |
+| Dual-stack | Medium | Preferred - visible and manageable |
 | 6in4 manual tunnel | Medium | Acceptable with proper ACLs |
-| 6to4 automatic | High | Avoid — deprecated, uncontrolled relays |
-| Teredo | High | Disable — bypasses NAT/firewalls |
+| 6to4 automatic | High | Avoid - deprecated, uncontrolled relays |
+| Teredo | High | Disable - bypasses NAT/firewalls |
 | ISATAP | Medium-High | Use only in controlled environments |
 | NAT64/DNS64 | Low-Medium | Preferred for IPv4-only backends |
 
@@ -43,6 +43,7 @@ NIST requires that all IPv4 security policies be explicitly extended to IPv6:
 
 ```bash
 # Check: Do your firewall rules cover IPv6?
+
 # IPv4 rule example:
 iptables -A INPUT -p tcp --dport 22 -s 10.0.0.0/8 -j ACCEPT
 
@@ -55,7 +56,7 @@ ip6tables -A INPUT -p tcp --dport 22 -s fd00::/8 -j ACCEPT
 
 NIST recommends a structured addressing plan:
 
-```
+```text
 Infrastructure addresses:   2001:db8:0:ffxx::/64  (routers, switches)
 Server subnets:             2001:db8:0:01xx::/64
 User subnets:               2001:db8:0:10xx::/64
@@ -130,7 +131,7 @@ NIST recommends DNSSEC for AAAA record validation:
 dig +dnssec AAAA ipv6.google.com
 
 # Check DNS64 deployment (if used)
-# DNS64 synthesizes AAAA records — must be protected against spoofing
+# DNS64 synthesizes AAAA records - must be protected against spoofing
 ```
 
 ## NIST SP 800-119 Implementation Phases

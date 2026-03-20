@@ -58,6 +58,7 @@ Update your MySQL configuration to support your pooling requirements:
 
 ```ini
 # my.cnf or my.ini
+
 [mysqld]
 # Maximum number of connections (default is 151)
 max_connections = 500

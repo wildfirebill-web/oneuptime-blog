@@ -53,6 +53,7 @@ Azure Blueprints can create deny assignments that lock specific resources from m
 
 ```bash
 # Create a blueprint definition
+
 az blueprint create \
   --name "CoreInfraProtection" \
   --target-scope "subscription" \

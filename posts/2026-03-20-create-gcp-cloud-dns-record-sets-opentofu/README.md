@@ -40,6 +40,7 @@ resource "google_dns_managed_zone" "main" {
 }
 
 # Output nameservers to configure at your registrar
+
 output "nameservers" {
   value = google_dns_managed_zone.main.name_servers
 }

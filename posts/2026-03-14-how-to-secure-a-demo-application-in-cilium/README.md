@@ -22,6 +22,7 @@ Securing a demo application with Cilium demonstrates how network policies protec
 
 ```yaml
 # demo-app.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

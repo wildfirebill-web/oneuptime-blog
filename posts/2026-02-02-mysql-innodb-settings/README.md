@@ -37,6 +37,7 @@ This command shows the location and structure of MySQL configuration files on Ub
 
 ```bash
 # View the main configuration file location
+
 ls -la /etc/mysql/mysql.conf.d/
 
 # Check all included configuration directories

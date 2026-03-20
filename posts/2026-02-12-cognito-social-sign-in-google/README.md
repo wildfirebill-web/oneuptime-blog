@@ -66,6 +66,7 @@ Using Terraform:
 
 ```hcl
 # Google identity provider
+
 resource "aws_cognito_identity_provider" "google" {
   user_pool_id  = aws_cognito_user_pool.main.id
   provider_name = "Google"

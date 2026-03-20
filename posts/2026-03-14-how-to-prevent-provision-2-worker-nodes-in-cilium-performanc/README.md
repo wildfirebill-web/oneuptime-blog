@@ -32,6 +32,7 @@ Preventing issues is more effective than reactive troubleshooting. This section 
 
 ```bash
 # Establish baseline metrics for your cluster
+
 cilium metrics list | grep -E "endpoint_count|identity_count|policy_regeneration" > /tmp/cilium-baseline-$(date +%Y%m%d).txt
 
 # Document current resource usage
@@ -43,7 +44,7 @@ cilium config view > /tmp/cilium-config-$(date +%Y%m%d).txt
 
 ## Implementing Preventive Controls
 
-### Resource Limits and Requests
+Resource Limits and Requests
 
 ```yaml
 # cilium-preventive-values.yaml

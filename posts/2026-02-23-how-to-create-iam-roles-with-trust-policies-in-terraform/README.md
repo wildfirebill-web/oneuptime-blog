@@ -35,6 +35,7 @@ The most common trust policy allows an AWS service to assume a role. This is use
 
 ```hcl
 # Trust policy allowing Lambda to assume the role
+
 data "aws_iam_policy_document" "lambda_trust" {
   statement {
     effect = "Allow"

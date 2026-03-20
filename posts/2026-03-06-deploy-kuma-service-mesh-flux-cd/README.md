@@ -29,6 +29,7 @@ Create a HelmRepository resource pointing to the official Kuma chart repository.
 
 ```yaml
 # infrastructure/sources/kuma-helmrepo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

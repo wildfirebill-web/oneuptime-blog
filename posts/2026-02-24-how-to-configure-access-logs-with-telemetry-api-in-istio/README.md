@@ -312,6 +312,7 @@ You can combine these with standard CEL operators:
 
 ```yaml
 # Log errors or slow requests
+
 filter:
   expression: "response.code >= 500 || response.duration > duration('2s')"
 

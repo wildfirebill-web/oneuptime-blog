@@ -22,6 +22,7 @@ MachineInventorySelectors are the bridge between the Elemental MachineInventory 
 
 ```yaml
 # basic-selector.yaml
+
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineInventorySelector
 metadata:

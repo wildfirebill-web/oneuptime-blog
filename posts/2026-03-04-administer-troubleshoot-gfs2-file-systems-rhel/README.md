@@ -14,6 +14,7 @@ Managing GFS2 file systems requires cluster-aware operations. Many standard Linu
 
 ```bash
 # View mounted GFS2 filesystems and their usage
+
 mount | grep gfs2
 df -h /mnt/gfs2
 

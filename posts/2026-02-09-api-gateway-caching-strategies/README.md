@@ -22,6 +22,7 @@ NGINX provides powerful caching capabilities with flexible configuration options
 
 ```nginx
 # nginx-cache.conf
+
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=api_cache:10m max_size=1g inactive=60m use_temp_path=off;
 
 server {

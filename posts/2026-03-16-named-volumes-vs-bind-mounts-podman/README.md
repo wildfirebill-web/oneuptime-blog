@@ -30,6 +30,7 @@ Podman offers two primary ways to provide persistent storage to containers: name
 
 ```bash
 # Create and use a named volume
+
 podman volume create appdata
 podman run -d -v appdata:/app/data myapp:latest
 

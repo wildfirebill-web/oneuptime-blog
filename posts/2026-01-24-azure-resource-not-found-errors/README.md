@@ -43,6 +43,7 @@ The most common cause by far. You are looking for a resource in subscription A w
 
 ```bash
 # Check your current subscription
+
 az account show --query "{Name:name, ID:id}" --output table
 
 # List all resources in current subscription to verify

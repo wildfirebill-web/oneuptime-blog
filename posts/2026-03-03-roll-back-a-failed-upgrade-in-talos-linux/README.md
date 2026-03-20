@@ -38,6 +38,7 @@ After initiating an upgrade, monitor the node to see if it succeeds:
 
 ```bash
 # Check the version after the node reboots
+
 talosctl version --nodes 192.168.1.10
 
 # If the version is still the OLD version, automatic rollback happened

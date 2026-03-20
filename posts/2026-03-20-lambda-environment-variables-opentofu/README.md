@@ -19,6 +19,7 @@ Lambda environment variables provide configuration to functions at runtime witho
 
 ```hcl
 # Customer-managed KMS key for encrypting Lambda environment variables
+
 resource "aws_kms_key" "lambda_env" {
   description             = "KMS key for Lambda environment variable encryption"
   deletion_window_in_days = 30
@@ -167,4 +168,4 @@ tofu apply
 
 ## Conclusion
 
-Never store actual secret values directly in Lambda environment variables—they are visible in the AWS console and logs. Instead, store sensitive values in Secrets Manager or SSM Parameter Store and pass only the ARN or path as environment variables. Fetch secrets at cold start and cache them in memory to minimize Secrets Manager API calls and latency on subsequent invocations.
+Never store actual secret values directly in Lambda environment variables-they are visible in the AWS console and logs. Instead, store sensitive values in Secrets Manager or SSM Parameter Store and pass only the ARN or path as environment variables. Fetch secrets at cold start and cache them in memory to minimize Secrets Manager API calls and latency on subsequent invocations.

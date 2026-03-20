@@ -43,6 +43,7 @@ Use a tool like Blender, MeshLab, or Simplygon to decimate the mesh before conve
 
 ```python
 # Blender Python script to decimate a model to a target polygon count
+
 # Run this in Blender's scripting workspace before exporting
 import bpy
 

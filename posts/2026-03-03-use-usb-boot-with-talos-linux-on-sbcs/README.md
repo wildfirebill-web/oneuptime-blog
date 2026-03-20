@@ -46,6 +46,7 @@ If you have not already enabled USB boot, you need to do this once using Raspber
 
 ```bash
 # Boot the Pi with Raspberry Pi OS on an SD card
+
 sudo apt update
 sudo apt install rpi-eeprom
 

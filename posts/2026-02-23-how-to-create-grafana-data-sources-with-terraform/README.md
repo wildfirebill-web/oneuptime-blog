@@ -236,6 +236,7 @@ After creating data sources, you can verify they are working by checking the hea
 
 ```hcl
 # Use a null_resource to verify data source connectivity
+
 resource "null_resource" "verify_prometheus" {
   triggers = {
     datasource_id = grafana_data_source.prometheus.id

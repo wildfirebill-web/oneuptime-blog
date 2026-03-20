@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, Logging, Security, Monitoring
+Tags: IPv6, Ip6tables, Logging, Security, Monitoring
 
 Description: Learn how to configure ip6tables logging for IPv6 firewall events, including log targets, rate limiting logs, and parsing IPv6 firewall log entries.
 
@@ -14,6 +14,7 @@ ip6tables logging uses the LOG target to write firewall events to the kernel log
 
 ```bash
 # Log all INPUT drops (place BEFORE your final DROP rule)
+
 ip6tables -A INPUT -j LOG --log-prefix "IPv6-IN-DROP: " --log-level 4
 
 # Log all FORWARD drops
@@ -44,7 +45,7 @@ ip6tables -A INPUT -p tcp --dport 22 \
 
 ## Log Format: Understanding IPv6 Log Entries
 
-```
+```text
 Mar 20 14:23:01 host kernel: [12345.678901] IPv6-IN-DROP: IN=eth0 OUT= MAC=...
   SRC=2001:db8:1::100 DST=2001:db8:server::1
   LEN=60 TC=0 HOPLIMIT=64 FLOWLBL=0 NEXTHDR=TCP URGP=0

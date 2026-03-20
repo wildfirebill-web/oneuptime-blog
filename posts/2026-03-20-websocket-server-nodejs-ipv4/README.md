@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Node.js, IPv4, JavaScript, Networking, ws
+Tags: WebSocket, Node.js, IPv4, JavaScript, Networking, Ws
 
 Description: Learn how to create a WebSocket server on a specific IPv4 address in Node.js using the ws library, with connection tracking, broadcasting, heartbeat, and graceful shutdown.
 

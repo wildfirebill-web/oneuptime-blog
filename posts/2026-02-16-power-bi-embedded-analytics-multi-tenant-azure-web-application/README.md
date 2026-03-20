@@ -43,6 +43,7 @@ First, create a Power BI Embedded capacity in Azure. This provides dedicated com
 
 ```bash
 # Create a Power BI Embedded capacity
+
 az powerbi embedded-capacity create \
   --name analytics-capacity \
   --resource-group rg-analytics \

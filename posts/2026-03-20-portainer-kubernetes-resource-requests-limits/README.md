@@ -15,11 +15,11 @@ Setting appropriate resource requests and limits for Kubernetes applications is 
 - Portainer with Kubernetes environment
 - Understanding of CPU and memory units in Kubernetes
 
-## Resource Units
+Resource Units
 
 ### CPU Units
 
-```
+```text
 1 CPU = 1000m (millicores)
 
 Examples:
@@ -30,7 +30,7 @@ Examples:
 
 ### Memory Units
 
-```
+```text
 Ki = Kibibytes (1024 bytes)
 Mi = Mebibytes (1024 Ki)
 Gi = Gibibytes (1024 Mi)
@@ -49,7 +49,7 @@ When creating/editing an application in Portainer:
 1. Scroll to the **Resources** section
 2. Set values:
 
-```
+```text
 Resource requests:
   Memory: 256Mi     (guaranteed minimum)
   CPU:    200m      (guaranteed minimum)
@@ -81,6 +81,7 @@ Use actual metrics to determine appropriate values:
 
 ```bash
 # View current resource usage
+
 kubectl top pods -n production
 
 # Output:
@@ -95,7 +96,7 @@ kubectl top pods -n production
 ```
 
 For `web-app` (using 45m CPU, 180Mi memory):
-```
+```text
 requests.cpu:    100m    (2x average, but leave room)
 requests.memory: 192Mi   (~average)
 limits.cpu:      300m    (for burst handling)
@@ -108,7 +109,7 @@ limits.memory:   384Mi   (~2x average)
 
 When a container exceeds its memory limit, it is **immediately killed** (OOM kill):
 
-```
+```text
 Container memory usage > limits.memory → Container killed with exit code 137
 ```
 
@@ -123,7 +124,7 @@ kubectl describe pod <pod-name> | grep -A5 "OOMKilled"
 
 When a container exceeds its CPU limit, it is **throttled** (slowed down), NOT killed:
 
-```
+```text
 Container CPU usage > limits.cpu → Container CPU throttled (runs slower)
 ```
 

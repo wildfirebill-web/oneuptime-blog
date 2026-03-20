@@ -288,6 +288,7 @@ This command builds your Storybook, uploads it to Chromatic's cloud, captures sc
 
 ```yaml
 # .github/workflows/chromatic.yml
+
 name: Chromatic
 
 on:

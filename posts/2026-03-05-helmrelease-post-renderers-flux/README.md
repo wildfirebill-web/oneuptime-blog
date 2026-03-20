@@ -302,6 +302,7 @@ Use the following commands to verify post-renderer modifications:
 
 ```bash
 # Check that labels were added by the post-renderer
+
 kubectl get deployment my-application -n default --show-labels
 
 # Verify annotations

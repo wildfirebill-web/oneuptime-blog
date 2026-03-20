@@ -22,8 +22,8 @@ A stateful IPv6 router uses DHCPv6 to assign addresses to clients, similar to DH
 
 ## Components Required
 
-1. **radvd** — sends RA with M=1 to tell clients to use DHCPv6
-2. **isc-dhcp-server** or **kea** — the DHCPv6 server that assigns addresses
+1. **radvd** - sends RA with M=1 to tell clients to use DHCPv6
+2. **isc-dhcp-server** or **kea** - the DHCPv6 server that assigns addresses
 
 ## Step 1: Enable IPv6 Forwarding
 
@@ -71,6 +71,7 @@ sudo apt-get install isc-dhcp-server
 # /etc/dhcp/dhcpd6.conf - Stateful DHCPv6 configuration
 
 # Global options
+
 default-lease-time 86400;
 preferred-lifetime 14400;
 option dhcp-renewal-time 43200;

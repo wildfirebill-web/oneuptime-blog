@@ -24,6 +24,7 @@ If network policies are blocking port 3306 between replica and primary pods.
 
 ```yaml
 # fix-mysql-replication-policy.yaml
+
 # Allows MySQL replication traffic between primary and replica pods
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy

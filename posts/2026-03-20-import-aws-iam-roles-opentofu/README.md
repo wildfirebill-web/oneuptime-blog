@@ -8,7 +8,7 @@ Description: Learn how to import existing AWS IAM roles, policies, and policy at
 
 ## Introduction
 
-IAM roles created manually or by other tools can be imported into OpenTofu. The challenge is that IAM roles have multiple associated resources — assume role policies, inline policies, and managed policy attachments — that must all be imported separately.
+IAM roles created manually or by other tools can be imported into OpenTofu. The challenge is that IAM roles have multiple associated resources - assume role policies, inline policies, and managed policy attachments - that must all be imported separately.
 
 ## Step 1: Inventory the IAM Role
 
@@ -16,6 +16,7 @@ IAM roles created manually or by other tools can be imported into OpenTofu. The 
 ROLE_NAME="my-app-role"
 
 # Get assume role policy
+
 aws iam get-role \
   --role-name $ROLE_NAME \
   --query 'Role.AssumeRolePolicyDocument' \
@@ -137,4 +138,4 @@ import {
 
 ## Conclusion
 
-IAM role import requires importing the role plus every policy attachment separately. The composite key format (ROLE/POLICY_ARN for managed attachments, ROLE:POLICY_NAME for inline policies) is non-obvious. Always verify that your HCL's `assume_role_policy` JSON matches exactly what's in AWS — policy JSON comparison is order-sensitive in some cases and may cause spurious plan diffs.
+IAM role import requires importing the role plus every policy attachment separately. The composite key format (ROLE/POLICY_ARN for managed attachments, ROLE:POLICY_NAME for inline policies) is non-obvious. Always verify that your HCL's `assume_role_policy` JSON matches exactly what's in AWS - policy JSON comparison is order-sensitive in some cases and may cause spurious plan diffs.

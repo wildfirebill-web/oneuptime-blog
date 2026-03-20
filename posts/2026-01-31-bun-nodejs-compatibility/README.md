@@ -115,6 +115,7 @@ The simplest way to run a Node.js file with Bun:
 
 ```bash
 # Instead of: node app.js
+
 bun app.js
 
 # For TypeScript files (no configuration needed)

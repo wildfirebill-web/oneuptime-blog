@@ -22,6 +22,7 @@ Start by enabling the required APIs and creating the basic setup:
 
 ```bash
 # Enable Binary Authorization and Container Analysis APIs
+
 gcloud services enable binaryauthorization.googleapis.com
 gcloud services enable containeranalysis.googleapis.com
 gcloud services enable container.googleapis.com

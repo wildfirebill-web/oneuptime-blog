@@ -72,6 +72,7 @@ If you do not already have an ExpressRoute gateway in your hub virtual network, 
 
 ```bash
 # Create a virtual network for the hub (if not existing)
+
 az network vnet create \
   --resource-group myNetworkRG \
   --name hub-vnet \

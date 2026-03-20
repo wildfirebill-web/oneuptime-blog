@@ -35,6 +35,7 @@ role = sagemaker.get_execution_role()
 bucket = session.default_bucket()
 
 # Define built-in rules to monitor during training
+
 rules = [
     # Detect when loss stops decreasing
     Rule.sagemaker(

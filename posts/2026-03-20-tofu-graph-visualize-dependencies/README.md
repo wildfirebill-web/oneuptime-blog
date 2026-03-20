@@ -1,4 +1,4 @@
-# How to Use tofu graph to Visualize Dependencies
+# How to Use tofu graph to Visualize Dependencies - Tofu Visualize Dependencies
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Learn how to use tofu graph to generate a dependency graph of your 
 
 ```bash
 # Generate the dependency graph in DOT format
+
 tofu graph
 
 # The output is DOT language (Graphviz format)
@@ -48,16 +49,16 @@ xdg-open infrastructure.png  # Linux
 ## Graph Types
 
 ```bash
-# Plan graph (default) — shows planned operations
+# Plan graph (default) - shows planned operations
 tofu graph -type=plan
 
-# Apply graph — shows apply operations
+# Apply graph - shows apply operations
 tofu graph -type=apply
 
-# Destroy graph — shows destruction order
+# Destroy graph - shows destruction order
 tofu graph -type=destroy-complete
 
-# Plan with destroy — destroy plan graph
+# Plan with destroy - destroy plan graph
 tofu graph -type=plan-destroy
 ```
 
@@ -106,7 +107,7 @@ tofu graph > infrastructure.dot
 
 ## Understanding the Graph Output
 
-```
+```text
 digraph {
   # Node: represents a resource
   "[root] aws_instance.web (expand)" [label = "aws_instance.web", ...]

@@ -55,6 +55,7 @@ rsyslog uses a `facility.severity` selector syntax to route messages:
 
 ```bash
 # View the main rsyslog configuration
+
 cat /etc/rsyslog.conf
 
 # View additional configuration files

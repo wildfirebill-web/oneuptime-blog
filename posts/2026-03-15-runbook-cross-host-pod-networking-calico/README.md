@@ -46,6 +46,7 @@ This guide provides the complete structure and content for a production-ready cr
 
 ```bash
 # Step 1: Confirm cross-host failure
+
 # Pick two pods on DIFFERENT nodes
 kubectl get pods -o wide -A | awk 'NR>1 {print $1,$2,$8}' | sort -k3 | head -10
 

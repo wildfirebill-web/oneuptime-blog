@@ -62,6 +62,7 @@ First, make sure the gateway instance has a static Elastic IP and that the secur
 
 ```bash
 # Allocate an Elastic IP for the AWS gateway
+
 aws ec2 allocate-address --domain vpc
 # Associate it with the gateway instance
 aws ec2 associate-address --instance-id i-xxxxx --allocation-id eipalloc-xxxxx

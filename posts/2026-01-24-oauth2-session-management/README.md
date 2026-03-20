@@ -925,6 +925,7 @@ import redis
 app = FastAPI()
 
 # Initialize components
+
 redis_client = redis.Redis(host='localhost', port=6379, db=0)
 session_store = OAuth2SessionStore(redis_client)
 token_manager = OAuth2TokenManager(

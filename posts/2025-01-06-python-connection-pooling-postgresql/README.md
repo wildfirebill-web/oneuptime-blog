@@ -42,6 +42,7 @@ This basic connection pool wrapper provides thread-safe connection management. T
 
 ```python
 # pool_basic.py
+
 from psycopg2 import pool
 import logging
 

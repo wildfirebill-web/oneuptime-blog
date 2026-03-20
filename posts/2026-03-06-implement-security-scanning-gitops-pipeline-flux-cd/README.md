@@ -44,6 +44,7 @@ Kyverno is a Kubernetes-native policy engine that validates resources before the
 
 ```yaml
 # clusters/my-cluster/security/kyverno/helm-repository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

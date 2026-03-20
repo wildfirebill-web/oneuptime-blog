@@ -34,6 +34,7 @@ The most common use of meta is forcing handlers to run immediately instead of wa
 
 ```yaml
 # Reset failed status for a host
+
 - name: Attempt risky operation
   ansible.builtin.command: /opt/risky-script.sh
   failed_when: false

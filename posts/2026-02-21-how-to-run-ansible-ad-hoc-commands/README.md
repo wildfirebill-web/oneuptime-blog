@@ -18,6 +18,7 @@ The basic format of an ad hoc command is:
 
 ```bash
 # Basic ad hoc command structure
+
 ansible <host-pattern> -m <module> -a "<module-arguments>"
 ```
 

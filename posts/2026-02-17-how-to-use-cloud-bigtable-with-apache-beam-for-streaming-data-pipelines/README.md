@@ -49,6 +49,7 @@ Let me set up the infrastructure first:
 
 ```bash
 # Enable all required APIs
+
 gcloud services enable \
   dataflow.googleapis.com \
   bigtable.googleapis.com \

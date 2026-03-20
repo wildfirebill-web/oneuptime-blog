@@ -56,6 +56,7 @@ For Python, remove the X-Ray SDK similarly.
 
 ```python
 # REMOVE: Old X-Ray SDK initialization code
+
 from aws_xray_sdk.core import xray_recorder
 from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 

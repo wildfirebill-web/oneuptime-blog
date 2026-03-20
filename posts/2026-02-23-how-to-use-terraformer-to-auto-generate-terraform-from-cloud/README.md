@@ -24,6 +24,7 @@ On macOS, you can install Terraformer using Homebrew:
 
 ```bash
 # Install Terraformer via Homebrew
+
 brew install terraformer
 ```
 

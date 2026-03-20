@@ -29,6 +29,7 @@ Apache runs as the `apache` user. It needs read access to files and execute acce
 
 ```bash
 # Check permissions on the document root
+
 ls -la /var/www/html/
 
 # Check permissions on parent directories

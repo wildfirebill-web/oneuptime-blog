@@ -41,6 +41,7 @@ Each file contains standard Kubernetes YAML. Here are examples:
 
 ```yaml
 # namespace.yaml - Create the application namespace
+
 apiVersion: v1
 kind: Namespace
 metadata:

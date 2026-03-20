@@ -1338,6 +1338,7 @@ class OAuth2ServerInterceptor(grpc.ServerInterceptor):
 
 
 # Example usage
+
 def create_oauth2_channel(target: str, token_url: str, client_id: str, client_secret: str, scopes: list = None):
     """Create a gRPC channel with OAuth2 authentication."""
     token_manager = OAuth2TokenManager(token_url, client_id, client_secret, scopes)

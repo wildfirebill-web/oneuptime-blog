@@ -61,6 +61,7 @@ When using the official Jenkins Docker image, you can pre-install plugins using 
 
 ```text
 # plugins.txt
+
 # Core plugin for Configuration as Code
 configuration-as-code:latest
 

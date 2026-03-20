@@ -6,11 +6,11 @@ Tags: iptables, DNAT, Port Forwarding, NAT, Linux, Networking
 
 Description: Configure iptables DNAT rules to forward incoming connections on one port to a different host or port, enabling port forwarding and reverse proxy scenarios.
 
-DNAT (Destination Network Address Translation) rewrites the destination IP or port of incoming packets, redirecting traffic to a different host. This is how port forwarding works — external port 8080 becomes internal port 80 on a different server.
+DNAT (Destination Network Address Translation) rewrites the destination IP or port of incoming packets, redirecting traffic to a different host. This is how port forwarding works - external port 8080 becomes internal port 80 on a different server.
 
 ## How DNAT Works
 
-```
+```text
 Without DNAT:
   Internet → Your Server:8080 → (no rule) → connection refused
 
@@ -22,6 +22,7 @@ With DNAT:
 
 ```bash
 # Enable IP forwarding (required for DNAT to work across hosts)
+
 sudo sysctl -w net.ipv4.ip_forward=1
 echo "net.ipv4.ip_forward = 1" | sudo tee -a /etc/sysctl.conf
 
@@ -110,4 +111,4 @@ sudo iptables-save > /etc/iptables/rules.v4
 # COMMIT
 ```
 
-DNAT is the foundation of port forwarding — used in home routers, load balancers, and any Linux gateway that needs to redirect traffic from one port or host to another.
+DNAT is the foundation of port forwarding - used in home routers, load balancers, and any Linux gateway that needs to redirect traffic from one port or host to another.

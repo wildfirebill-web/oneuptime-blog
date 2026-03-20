@@ -103,6 +103,7 @@ First, create entities for your users or services.
 
 ```bash
 # Create an entity for a user
+
 vault write identity/entity \
     name="alice" \
     metadata="team=sre" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bonding, Linux, /proc/net/bonding, sysfs, Network Interface, Monitoring, ip link
+Tags: Bonding, Linux, /proc/net/bonding, Sysfs, Network Interfaces, Monitoring, Ip link
 
 Description: Learn how to view all bonding driver parameters on Linux including bond mode, MII monitoring interval, active slave, slave states, and link failure counts using /proc and sysfs.
 
@@ -14,6 +14,7 @@ Linux exposes bonding driver parameters through `/proc/net/bonding/` and `/sys/c
 
 ```bash
 # Full bond status
+
 cat /proc/net/bonding/bond0
 
 # Example output:
@@ -115,5 +116,5 @@ done
 
 - `/proc/net/bonding/<bond>` provides a comprehensive human-readable status of all bond parameters and slave states.
 - Individual parameters are accessible via `/sys/class/net/<bond>/bonding/` for scripting and monitoring.
-- Monitor `Link Failure Count` per slave — increasing counts indicate flapping physical links.
+- Monitor `Link Failure Count` per slave - increasing counts indicate flapping physical links.
 - Use `cat /sys/class/net/bond0/bonding/active_slave` in monitoring scripts to alert when the active slave changes.

@@ -22,6 +22,7 @@ Enable and configure Buildx for multi-platform builds.
 
 ```bash
 # Check if buildx is available
+
 docker buildx version
 
 # Create a new builder instance

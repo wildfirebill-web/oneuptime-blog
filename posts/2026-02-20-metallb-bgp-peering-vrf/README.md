@@ -45,6 +45,7 @@ The VRF must exist on the node before MetalLB can use it. Create it using iprout
 
 ```bash
 # Create a VRF device named 'metallb-vrf' with routing table ID 100
+
 # Run this on each node that runs a MetalLB speaker pod
 sudo ip link add metallb-vrf type vrf table 100
 

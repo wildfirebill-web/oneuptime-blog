@@ -18,6 +18,7 @@ Before writing playbooks, you need the Azure modules installed. Ansible uses the
 
 ```bash
 # Install the Azure collection and its Python dependencies
+
 ansible-galaxy collection install azure.azcollection --force
 
 # Install the required Python packages

@@ -24,6 +24,7 @@ HAProxy is available in the RHEL AppStream repository:
 
 ```bash
 # Install HAProxy
+
 sudo dnf install -y haproxy
 ```
 

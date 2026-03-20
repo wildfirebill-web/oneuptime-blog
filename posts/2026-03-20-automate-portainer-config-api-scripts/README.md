@@ -20,6 +20,7 @@ Manually configuring Portainer through the UI is not repeatable or version-contr
 ```bash
 #!/bin/bash
 # portainer-configure.sh - Complete Portainer setup automation
+
 set -euo pipefail
 
 PORTAINER_URL="${PORTAINER_URL:?Required}"
@@ -127,7 +128,7 @@ export HARBOR_TOKEN="$(vault kv get -field=token kv/portainer/harbor)"
 
 ## Storing Configuration in Git
 
-```
+```text
 portainer-config/
 ├── portainer-configure.sh     # Main setup script
 ├── settings.json              # Global settings template

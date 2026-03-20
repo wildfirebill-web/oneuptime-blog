@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Deploy the demo
+
 kubectl create -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/http-sw-app.yaml
 
 # Inspect all pods and their labels

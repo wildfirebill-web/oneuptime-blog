@@ -61,6 +61,7 @@ resource "azurerm_resource_group" "security" {
 }
 
 # Create the DDoS Protection plan
+
 resource "azurerm_network_ddos_protection_plan" "main" {
   name                = "ddos-plan-prod-001"
   location            = azurerm_resource_group.security.location

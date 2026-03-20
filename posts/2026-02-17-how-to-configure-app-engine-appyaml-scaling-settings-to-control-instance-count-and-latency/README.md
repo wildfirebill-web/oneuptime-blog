@@ -30,6 +30,7 @@ Here is a well-tuned automatic scaling configuration:
 
 ```yaml
 # app.yaml - Automatic scaling with tuned parameters
+
 runtime: python312
 instance_class: F2
 

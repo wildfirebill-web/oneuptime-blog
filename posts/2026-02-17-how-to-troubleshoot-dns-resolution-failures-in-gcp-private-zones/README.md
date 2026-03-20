@@ -29,6 +29,7 @@ Start by confirming the zone exists and is configured correctly.
 
 ```bash
 # List all private zones in the project
+
 gcloud dns managed-zones list \
     --filter="visibility=private" \
     --project=my-project

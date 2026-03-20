@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, try, Optional Attributes, Error Handling, Null Safety
+Tags: OpenTofu, Try, Optional Attributes, Error Handling, Null Safety
 
 Description: Learn how to use the try() function in OpenTofu to safely access potentially null or missing values and provide fallback defaults for optional configuration.
 
@@ -14,6 +14,7 @@ Description: Learn how to use the try() function in OpenTofu to safely access po
 
 ```hcl
 # main.tf - try() for safe null handling
+
 variable "config" {
   type = object({
     database = object({
@@ -141,4 +142,4 @@ locals {
 
 ## Summary
 
-`try()` in OpenTofu provides null-safe attribute access and graceful fallbacks for optional configuration. Unlike using `lookup()` or `can()`, `try()` handles any type of expression failure, including type errors and null dereferences. Multiple fallback expressions are supported — `try(expr1, expr2, default_value)` — enabling cascading fallback logic for complex optional configurations. The key use case is accessing optional nested object attributes where the parent object might be null.
+`try()` in OpenTofu provides null-safe attribute access and graceful fallbacks for optional configuration. Unlike using `lookup()` or `can()`, `try()` handles any type of expression failure, including type errors and null dereferences. Multiple fallback expressions are supported - `try(expr1, expr2, default_value)` - enabling cascading fallback logic for complex optional configurations. The key use case is accessing optional nested object attributes where the parent object might be null.

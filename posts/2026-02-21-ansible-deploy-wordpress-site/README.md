@@ -50,6 +50,7 @@ wordpress-deploy/
 
 ```yaml
 # group_vars/all/vars.yml
+
 wp_site_title: "My WordPress Site"
 wp_domain: wordpress.example.com
 wp_dir: /var/www/wordpress

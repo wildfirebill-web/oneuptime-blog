@@ -42,6 +42,7 @@ Set up the Pub/Sub topics and Firestore collections:
 
 ```bash
 # Topic for incoming sensor data
+
 gcloud pubsub topics create sensor-data
 
 # Topic for evaluated alerts

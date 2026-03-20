@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, NAT, Linux, conntrack, IPv4
+Tags: Networking, NAT, Linux, Conntrack, IPv4
 
 Description: Learn how to view and interpret active NAT translations on Linux using conntrack, iptables, and related tools.
 
@@ -14,6 +14,7 @@ Linux NAT state is maintained by the netfilter connection tracking (conntrack) s
 
 ```bash
 # Install
+
 apt install conntrack
 
 # Show all tracked connections (includes NAT info)
@@ -28,7 +29,7 @@ conntrack -L | grep DNAT
 
 ### Reading conntrack Output
 
-```
+```text
 tcp  6  86394  ESTABLISHED
   src=192.168.1.10 dst=8.8.8.8 sport=54321 dport=80 
   src=8.8.8.8 dst=203.0.113.1 sport=80 dport=54321 [ASSURED]

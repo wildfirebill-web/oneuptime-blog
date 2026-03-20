@@ -41,6 +41,7 @@ SQL filters use a subset of SQL-92 syntax to evaluate conditions against message
 
 ```bash
 # Create a topic
+
 az servicebus topic create \
   --name order-events \
   --namespace-name my-servicebus \

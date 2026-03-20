@@ -33,6 +33,7 @@ Create the main application file:
 
 ```python
 # app/main.py - FastAPI application entry point
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 

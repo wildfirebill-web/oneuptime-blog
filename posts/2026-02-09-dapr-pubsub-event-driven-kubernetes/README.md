@@ -24,6 +24,7 @@ Install Dapr using the CLI:
 
 ```bash
 # Install Dapr CLI
+
 wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
 
 # Verify installation

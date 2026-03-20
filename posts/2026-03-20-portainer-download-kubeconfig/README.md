@@ -46,6 +46,7 @@ You can also download kubeconfig programmatically:
 
 ```bash
 # Step 1: Authenticate and get JWT token
+
 TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"myuser","password":"mypassword"}' | jq -r '.jwt')
@@ -113,7 +114,7 @@ kubectl get pods -n staging --context=portainer-staging
 
 When the kubeconfig token expires, you will see this error:
 
-```
+```text
 error: You must be logged in to the server (Unauthorized)
 ```
 
@@ -140,7 +141,7 @@ echo "Kubeconfig refreshed."
 
 ```bash
 #!/bin/bash
-# refresh-kubeconfig.sh — Run as a cron job to keep kubeconfig fresh
+# refresh-kubeconfig.sh - Run as a cron job to keep kubeconfig fresh
 
 PORTAINER_URL="https://portainer.example.com"
 PORTAINER_USER="myuser"

@@ -107,6 +107,7 @@ YAML files work the same way as JSON. Many teams prefer YAML for readability.
 
 ```yaml
 # apps/user-service.yaml
+
 appName: user-service
 repoPath: deploy/user-service
 namespace: users

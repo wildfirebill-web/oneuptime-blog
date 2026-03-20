@@ -8,7 +8,7 @@ Description: Learn how to verify IS-IS IPv6 route installation on Cisco IOS, Jun
 
 ## Cisco IOS Verification
 
-```
+```text
 ! Show all IPv6 routes from IS-IS
 Router# show ipv6 route isis
 
@@ -31,7 +31,7 @@ I2  2001:db8:3::/48 [115/30]
 
 ## Checking a Specific Prefix
 
-```
+```text
 Router# show ipv6 route 2001:db8:2::/64
 
 Routing entry for 2001:DB8:2::/64
@@ -44,8 +44,9 @@ Routing entry for 2001:DB8:2::/64
 
 ## Juniper JunOS Verification
 
-```
+```text
 # Show IS-IS IPv6 routes
+
 show route protocol isis table inet6.0
 
 inet6.0: 8 destinations, 8 routes (8 active, 0 holddown, 0 hidden)
@@ -79,7 +80,7 @@ ip -6 route show proto isis
 
 ## Checking IS-IS Topology
 
-```
+```text
 ! Cisco: Show the IS-IS IPv6 topology (all paths, not just best)
 Router# show isis topology ipv6
 ```
@@ -94,7 +95,7 @@ show isis topology
 
 ## Checking IS-IS Database for IPv6 Entries
 
-```
+```text
 ! Cisco: Show LSP database with IPv6 TLVs
 Router# show isis database detail | include IPv6
 

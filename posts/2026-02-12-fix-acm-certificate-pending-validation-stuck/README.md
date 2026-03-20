@@ -25,6 +25,7 @@ First, let's see what CNAME record ACM expects you to create.
 
 ```bash
 # Get the details of your certificate including validation records
+
 aws acm describe-certificate \
   --certificate-arn arn:aws:acm:us-east-1:123456789012:certificate/abc123 \
   --query 'Certificate.DomainValidationOptions'

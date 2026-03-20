@@ -263,6 +263,7 @@ When a Pod hook fails, unlike a Job, there are no automatic retries. The sync fa
 
 ```bash
 # Check why the Pod failed
+
 kubectl describe pod presync-check -n my-app
 
 # View the logs

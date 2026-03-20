@@ -25,6 +25,7 @@ This guide covers the tools and techniques for monitoring Fleet bundle status ef
 
 ```bash
 # Summary view of all GitRepos
+
 kubectl get gitrepo -A
 
 # Summary view of all bundles with key status columns

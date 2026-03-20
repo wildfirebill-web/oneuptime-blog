@@ -49,6 +49,7 @@ locals {
 }
 
 # SNS topic for alarm notifications
+
 resource "aws_sns_topic" "alerts" {
   count = var.enabled ? 1 : 0
   name  = "${var.service_name}-${var.environment}-alerts"

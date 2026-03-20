@@ -20,6 +20,7 @@ Before any changes, document all used address space:
 
 ```bash
 # Scan each network for active hosts
+
 nmap -sn 10.0.0.0/8 --open -oG /tmp/company-a-hosts.txt
 
 # Extract just IPs
@@ -36,7 +37,7 @@ print(f'Highest IP: {max(ips)}')
 "
 ```
 
-## Step 2: Option A — Use NAT to Connect Overlapping Networks
+## Step 2: Option A - Use NAT to Connect Overlapping Networks
 
 The quickest solution: translate addresses at the network boundary:
 
@@ -54,7 +55,7 @@ iptables -t nat -A POSTROUTING -s 10.1.0.0/24 -j NETMAP --to 192.168.100.0/24
 # Drawbacks: breaks some applications, complex to manage long-term
 ```
 
-## Step 3: Option B — Re-address One Network
+## Step 3: Option B - Re-address One Network
 
 The cleanest long-term solution: renumber one network to eliminate overlap.
 
@@ -90,7 +91,7 @@ for new_net in company_b_new:
 
 Re-addressing a live network requires careful phasing:
 
-```
+```text
 Phase 1: Add new IP addresses to all servers (dual-stack period)
   - Servers get BOTH old and new IPs
   - Update DNS to point to new IPs
@@ -112,7 +113,7 @@ Phase 4: Update routing
 
 For multi-tenant environments where multiple companies use the same space:
 
-```
+```text
 Use MPLS VRFs (Virtual Routing and Forwarding) to keep company networks isolated:
 
 VRF: Company-A

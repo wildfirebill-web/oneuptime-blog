@@ -29,6 +29,7 @@ Configure your application to emit structured logs through the OpenTelemetry log
 
 ```python
 # logging_setup.py
+
 import logging
 from opentelemetry import trace
 from opentelemetry._logs import set_logger_provider

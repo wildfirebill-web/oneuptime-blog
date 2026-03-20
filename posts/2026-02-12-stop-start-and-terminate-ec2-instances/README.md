@@ -49,6 +49,7 @@ Select the instance > Instance state > Stop instance > Confirm
 
 ```bash
 # Stop an EC2 instance
+
 aws ec2 stop-instances --instance-ids i-0123456789abcdef0
 
 # Wait for it to fully stop

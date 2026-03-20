@@ -12,7 +12,7 @@ Cisco IOS-XE builds on IOS with a modular architecture running on Cisco's hardwa
 
 ## Step 1: Enable IPv6 and Basic Interface Configuration
 
-```
+```text
 ! Enable IPv6 unicast routing
 Router(config)# ipv6 unicast-routing
 Router(config)# ipv6 cef
@@ -35,7 +35,7 @@ Router(config-if)# no shutdown
 
 IOS-XE 16.6 and later support RFC 8106 RDNSS directly in RA:
 
-```
+```text
 ! Advertise DNS servers via RA on the LAN interface
 Router(config)# interface GigabitEthernet0/0/0
 Router(config-if)# ipv6 nd ra dns server 2001:db8:1:1::53 infinite
@@ -53,7 +53,7 @@ Router# show ipv6 nd ra dns GigabitEthernet0/0/0
 
 IOS-XE handles DHCPv6-PD for both server and client roles:
 
-```
+```text
 ! DHCPv6 Pool for assigning prefixes to downstream routers
 Router(config)# ipv6 dhcp pool PD-POOL
 Router(config-dhcpv6)# prefix-delegation pool PD-PREFIXES lifetime 86400 14400
@@ -76,7 +76,7 @@ Router(config-if)# ipv6 dhcp client pd PREFIX hint ::/48
 
 IOS-XE supports OSPFv3 with address family syntax (newer approach):
 
-```
+```text
 ! Modern OSPFv3 with address family
 Router(config)# router ospfv3 1
 Router(config-router)# !
@@ -94,6 +94,7 @@ IOS-XE supports RESTCONF for programmatic configuration:
 
 ```bash
 # Enable RESTCONF on the router
+
 # Router(config)# restconf
 # Router(config)# ip http server
 # Router(config)# ip http secure-server
@@ -119,7 +120,7 @@ curl -s -X PATCH \
 
 ## Verification Commands
 
-```
+```text
 ! Show IPv6 interfaces and addresses
 Router# show ipv6 interface brief
 

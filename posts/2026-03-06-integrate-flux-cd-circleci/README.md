@@ -42,6 +42,7 @@ Create a `.circleci/config.yml` file in your application repository. This define
 
 ```yaml
 # .circleci/config.yml
+
 # CircleCI pipeline for building container images consumed by Flux CD
 
 version: 2.1

@@ -65,7 +65,7 @@ volumes:
 3. Update `ROOT_URL` to your actual domain.
 4. Click **Deploy the stack**.
 
-The `mongo-init-replica` service runs once and exits, which Portainer will show as "Exited (0)" — this is normal.
+The `mongo-init-replica` service runs once and exits, which Portainer will show as "Exited (0)" - this is normal.
 
 Open `http://<host>:3102` and complete the setup wizard.
 

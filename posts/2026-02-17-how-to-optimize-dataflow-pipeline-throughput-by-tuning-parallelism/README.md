@@ -83,6 +83,7 @@ The number of workers directly affects parallelism. Each worker runs multiple th
 
 ```bash
 # Launch with specific worker configuration
+
 gcloud dataflow jobs run optimized-pipeline \
   --gcs-location=gs://my-bucket/templates/my-template \
   --region=us-central1 \

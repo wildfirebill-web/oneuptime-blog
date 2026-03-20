@@ -292,6 +292,7 @@ Generate traffic and verify the rate limits are enforced:
 
 ```bash
 # Send 100 requests quickly from cluster A
+
 kubectl exec deploy/sleep -c sleep --context=cluster-a -- \
   sh -c 'for i in $(seq 1 100); do curl -s -o /dev/null -w "%{http_code}\n" payment:8080/api/payment; done'
 

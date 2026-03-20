@@ -172,6 +172,7 @@ def configure_production_database(db_path: str) -> sqlite3.Connection:
 
 
 # Example usage
+
 if __name__ == "__main__":
     db = configure_production_database("/var/lib/myapp/production.db")
     print("Production database configured successfully")

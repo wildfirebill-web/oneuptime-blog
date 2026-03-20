@@ -30,6 +30,7 @@ This guide provides the validation methodology for performance test servers.
 # Validate server can handle expected traffic rates
 
 # Test 1: Server not CPU-bound at expected throughput
+
 kubectl exec iperf-client -- iperf3 -c $SERVER_IP -t 20 -P 8 &
 sleep 5
 SERVER_CPU=$(kubectl top pod iperf-server --no-headers | awk '{print $2}')
@@ -48,7 +49,7 @@ done
 # CV should be < 5%
 ```
 
-## Resource Validation
+Resource Validation
 
 ```bash
 # Verify server has adequate resources

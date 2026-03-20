@@ -47,6 +47,7 @@ A common misunderstanding: an empty `podSelector: {}` in a `from` clause means "
 **Example of the mistake**:
 ```yaml
 # This allows ALL pods in the namespace, not just the intended ones
+
 ingress:
 - from:
   - podSelector: {}  # Matches ALL pods in the namespace

@@ -410,6 +410,7 @@ LIMIT 100;
 
 ```bash
 # Export trace data
+
 clickhouse-client --query "
 SELECT
     arrayStringConcat(arrayReverse(arrayMap(x -> demangle(addressToSymbol(x)), trace)), ';') AS stack,

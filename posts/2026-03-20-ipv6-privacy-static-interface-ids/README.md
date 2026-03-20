@@ -12,6 +12,7 @@ IPv6 Stateless Address Autoconfiguration (SLAAC) traditionally derived the inter
 
 ```bash
 # EUI-64 derives interface ID from MAC address
+
 # MAC: 00:11:22:33:44:55
 # EUI-64: 0211:22FF:FE33:4455
 # IPv6 address: 2001:db8::/64 prefix + 0211:22ff:fe33:4455
@@ -92,9 +93,9 @@ ip -6 addr show eth0
 #   valid_lft 2591990sec preferred_lft 604790sec
 # inet6 fe80::aabb:ccff:fedd:eeff/64 scope link
 
-# First address: temporary (privacy extension) — used for outbound connections
-# Second address: stable/EUI-64 — used for inbound (services that need consistent address)
-# Third address: link-local — not routable, used for NDP
+# First address: temporary (privacy extension) - used for outbound connections
+# Second address: stable/EUI-64 - used for inbound (services that need consistent address)
+# Third address: link-local - not routable, used for NDP
 
 # Confirm which address is used for outbound connections
 curl -6 https://ipv6.icanhazip.com
@@ -105,9 +106,9 @@ curl -6 https://ipv6.icanhazip.com
 
 Static interface IDs (disabling privacy extensions) are appropriate for:
 
-1. **Servers** — consistent address needed for DNS A/AAAA records
-2. **Network equipment** — routers, switches need predictable addresses
-3. **Management interfaces** — monitoring, SSH access requires stable IPs
+1. **Servers** - consistent address needed for DNS A/AAAA records
+2. **Network equipment** - routers, switches need predictable addresses
+3. **Management interfaces** - monitoring, SSH access requires stable IPs
 
 ```bash
 # Disable privacy for a specific interface (servers)
@@ -141,7 +142,7 @@ DHCP=ipv6
 
 [DHCPv6]
 UseAddress=yes
-# DUID type LL (link-layer) — consistent but not EUI-64
+# DUID type LL (link-layer) - consistent but not EUI-64
 DUIDType=link-layer
 EOF
 ```

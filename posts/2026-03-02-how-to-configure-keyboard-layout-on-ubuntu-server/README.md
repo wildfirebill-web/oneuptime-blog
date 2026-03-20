@@ -14,6 +14,7 @@ On Ubuntu Server, keyboard layout configuration affects console sessions (direct
 
 ```bash
 # Check current keyboard configuration
+
 localectl status
 
 # Example output:

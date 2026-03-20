@@ -65,6 +65,7 @@ graph TB
 
 ```python
 # monitoring_agent.py
+
 # Lightweight monitoring agent for edge devices
 
 import psutil

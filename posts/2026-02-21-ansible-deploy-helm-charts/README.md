@@ -21,6 +21,7 @@ This guide covers using Ansible's `kubernetes.core.helm` module to install chart
 
 ```bash
 # Install the Ansible collection
+
 ansible-galaxy collection install kubernetes.core
 
 # Install Helm 3 (if not already installed)

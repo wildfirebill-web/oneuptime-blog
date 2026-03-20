@@ -21,6 +21,7 @@ IPsec requires specific UDP ports and the ESP protocol to be open through the fi
 
 ```bash
 # Allow IKE traffic (UDP 500) - required for all IPsec
+
 sudo iptables -A INPUT -p udp --dport 500 -j ACCEPT
 
 # Allow NAT-T traffic (UDP 4500) - required when behind NAT
@@ -115,7 +116,7 @@ nc -zuv <GATEWAY_IP> 4500
 If the IPsec gateway is behind NAT, the NAT device must:
 1. Allow UDP 500 and 4500 inbound
 2. Forward those ports to the internal gateway
-3. Allow ESP protocol (protocol 50) passthrough — many NAT devices block this
+3. Allow ESP protocol (protocol 50) passthrough - many NAT devices block this
 
 ```bash
 # If ESP is being NATed (behind NAT), force NAT-T in strongSwan config:

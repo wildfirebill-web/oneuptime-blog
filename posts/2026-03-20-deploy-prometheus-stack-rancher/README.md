@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, prometheus, monitoring, alertmanager, kubernetes
+Tags: Rancher, Prometheus, Monitoring, Alertmanager, Kubernetes
 
 Description: Guide to deploying the full Prometheus monitoring stack on Rancher for comprehensive cluster observability.
 
@@ -24,6 +24,7 @@ How to Deploy Prometheus Stack on Rancher on Rancher gives your team a productio
 kubectl create namespace prometheus-stack
 
 # Configure project in Rancher
+
 kubectl annotate namespace prometheus-stack   field.cattle.io/projectId=YOUR_PROJECT_ID
 ```
 

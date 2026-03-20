@@ -230,6 +230,7 @@ Track cold start metrics to understand the impact:
 
 ```bash
 # Check how long pods take to start
+
 kubectl get events -n default --field-selector reason=Started --sort-by='.lastTimestamp'
 
 # Check Knative revision readiness

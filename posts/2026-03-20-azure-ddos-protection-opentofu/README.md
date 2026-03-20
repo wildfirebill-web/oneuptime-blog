@@ -56,6 +56,7 @@ resource "azurerm_virtual_network" "protected" {
 
 ```hcl
 # All Standard public IPs in the protected VNet are automatically covered
+
 resource "azurerm_public_ip" "app_gateway" {
   name                = "${var.project_name}-agw-pip"
   location            = var.location
@@ -169,4 +170,4 @@ az monitor metrics list \
 
 ## Conclusion
 
-Azure DDoS Network Protection is priced per protected plan (not per IP), so one plan can cover all VNets linked to it across a subscription. Always use Standard SKU public IPs with DDoS Network Protection—Basic SKU IPs receive only the basic DDoS mitigation built into Azure. Enable DDoS Flow Logs for forensic analysis during and after attacks. The DDoS Protection plan can be shared across multiple subscriptions in the same tenant using `azurerm_network_ddos_protection_plan` resource with cross-subscription VNet linking.
+Azure DDoS Network Protection is priced per protected plan (not per IP), so one plan can cover all VNets linked to it across a subscription. Always use Standard SKU public IPs with DDoS Network Protection-Basic SKU IPs receive only the basic DDoS mitigation built into Azure. Enable DDoS Flow Logs for forensic analysis during and after attacks. The DDoS Protection plan can be shared across multiple subscriptions in the same tenant using `azurerm_network_ddos_protection_plan` resource with cross-subscription VNet linking.

@@ -91,6 +91,7 @@ aws eks list-clusters --output table
 
 ```python
 # instance_mapping.py
+
 AWS_TO_GCP_INSTANCE_MAP = {
     # General purpose
     't3.micro': 'e2-micro',

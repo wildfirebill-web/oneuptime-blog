@@ -41,6 +41,7 @@ from azure.ai.ml.constants import AssetTypes
 from azure.identity import DefaultAzureCredential
 
 # Connect to the workspace
+
 credential = DefaultAzureCredential()
 ml_client = MLClient(
     credential=credential,

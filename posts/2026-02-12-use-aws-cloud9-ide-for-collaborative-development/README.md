@@ -36,6 +36,7 @@ You can create environments through the console or CLI:
 
 ```bash
 # Create a Cloud9 environment with a t3.small instance
+
 aws cloud9 create-environment-ec2 \
   --name "team-dev-environment" \
   --description "Shared development environment for the backend team" \

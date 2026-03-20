@@ -29,6 +29,7 @@ The simplest PVC uses the default StorageClass and lets Kubernetes handle volume
 
 ```yaml
 # playbook: create-basic-pvc.yml
+
 # Creates a PVC using the default StorageClass for application data
 ---
 - name: Create PersistentVolumeClaim

@@ -16,6 +16,7 @@ The most basic pattern loops over a list of usernames:
 
 ```yaml
 # simple-loop.yml - Create users from a simple list
+
 - name: Create users from a list
   hosts: all
   become: yes

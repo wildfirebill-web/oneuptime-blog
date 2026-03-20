@@ -20,6 +20,7 @@ Access fields using double curly braces and dot notation:
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app -p 8080:80 -e APP_ENV=prod -e DB_HOST=localhost nginx:latest
 
 # Access a top-level field

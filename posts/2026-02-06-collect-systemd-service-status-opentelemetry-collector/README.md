@@ -40,6 +40,7 @@ Create a script that queries systemd for service states and outputs Prometheus e
 ```bash
 #!/bin/bash
 # /opt/otel/scripts/systemd_status.sh
+
 # Queries systemd for service status and outputs Prometheus metrics
 
 # List of services to monitor

@@ -495,6 +495,7 @@ If you are using MongoDB Atlas, you can hide indexes through the UI or CLI:
 
 ```bash
 # Using Atlas CLI
+
 atlas clusters indexes update myCluster \
     --db myDatabase \
     --collection orders \

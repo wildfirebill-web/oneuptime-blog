@@ -32,6 +32,7 @@ Configure the IoT Core endpoint, thing types, and policies.
 
 ```hcl
 # IoT thing type for temperature sensors
+
 resource "aws_iot_thing_type" "temperature_sensor" {
   name = "TemperatureSensor"
 

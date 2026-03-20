@@ -14,6 +14,7 @@ OCI (Open Container Initiative) registries store and serve container images and 
 
 ```bash
 # Start the Docker Distribution registry on IPv6
+
 docker run -d \
     -p "[::]:5000:5000" \
     --name registry \
@@ -91,7 +92,7 @@ EOF
 ## Harbor Registry with IPv6
 
 ```yaml
-# harbor.yml — Harbor configuration for IPv6
+# harbor.yml - Harbor configuration for IPv6
 
 hostname: registry.example.com
 # Ensure DNS resolves to AAAA record for hostname
@@ -113,7 +114,7 @@ https:
 ```
 
 ```yaml
-# docker-compose.yml — add IPv6 to Harbor networks
+# docker-compose.yml - add IPv6 to Harbor networks
 networks:
   harbor:
     driver: bridge
@@ -209,4 +210,4 @@ ss -tlnp | grep 5000
 
 ## Conclusion
 
-OCI registries serve container images over IPv6 by binding to `[::]:port` in their configuration. Docker Distribution uses `addr: "[::]:5000"` in `config.yml`. Harbor listens on all interfaces by default — ensure the Docker network has IPv6 enabled. Clients use bracket notation for IPv6 registry addresses in Docker daemon `insecure-registries`, containerd's `config.toml` registry configuration, and Kubernetes imagePullSecrets. TLS certificates must include the IPv6 address as a SAN IP entry. Kubernetes nodes with containerd or CRI-O pull from IPv6 registries when the node's network stack has IPv6 connectivity and the registry address is configured in the CRI's registry config.
+OCI registries serve container images over IPv6 by binding to `[::]:port` in their configuration. Docker Distribution uses `addr: "[::]:5000"` in `config.yml`. Harbor listens on all interfaces by default - ensure the Docker network has IPv6 enabled. Clients use bracket notation for IPv6 registry addresses in Docker daemon `insecure-registries`, containerd's `config.toml` registry configuration, and Kubernetes imagePullSecrets. TLS certificates must include the IPv6 address as a SAN IP entry. Kubernetes nodes with containerd or CRI-O pull from IPv6 registries when the node's network stack has IPv6 connectivity and the registry address is configured in the CRI's registry config.

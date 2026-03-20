@@ -28,6 +28,7 @@ First, configure the machine that will receive logs:
 
 ```bash
 # Install rsyslog on the receiving server (usually already installed)
+
 sudo apt install rsyslog
 
 # Check rsyslog version

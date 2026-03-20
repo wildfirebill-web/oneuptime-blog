@@ -144,6 +144,7 @@ Once you have both trace and profile data linked by trace ID, the debugging work
 
 ```text
 # Find traces where calculate_totals takes more than 500ms
+
 {
   resource.service.name = "order-service"
   && name = "order.calculate_totals"

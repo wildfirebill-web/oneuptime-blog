@@ -276,6 +276,7 @@ LIMIT 10;
 
 ```hcl
 # Partitioned and clustered table
+
 resource "google_bigquery_table" "orders" {
   dataset_id = google_bigquery_dataset.sales.dataset_id
   table_id   = "orders"

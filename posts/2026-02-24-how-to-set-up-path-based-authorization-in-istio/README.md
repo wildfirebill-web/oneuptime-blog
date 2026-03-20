@@ -228,7 +228,7 @@ spec:
             paths: ["/api/v3/*"]
 ```
 
-## Resource-Level Authorization
+Resource-Level Authorization
 
 Path patterns can match REST resource patterns for resource-level authorization:
 
@@ -330,6 +330,7 @@ spec:
 
 ```bash
 # Test public path
+
 kubectl exec -n my-app deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" http://api-service:8080/api/products
 
 # Test protected path without auth

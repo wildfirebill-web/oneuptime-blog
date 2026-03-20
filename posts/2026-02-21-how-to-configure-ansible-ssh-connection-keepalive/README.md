@@ -29,6 +29,7 @@ The most common approach is setting SSH arguments in your ansible.cfg file.
 
 ```ini
 # ansible.cfg
+
 # Configure SSH keepalive to send a packet every 30 seconds
 # and tolerate up to 5 missed responses before disconnecting
 [ssh_connection]

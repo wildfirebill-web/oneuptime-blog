@@ -32,6 +32,7 @@ The `terraform state rm` command removes resources from state.
 
 ```bash
 # Remove a single resource
+
 terraform state rm aws_instance.web
 
 # Remove a resource with count index

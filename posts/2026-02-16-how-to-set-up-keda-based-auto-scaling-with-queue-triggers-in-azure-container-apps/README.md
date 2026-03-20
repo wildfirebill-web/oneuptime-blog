@@ -22,6 +22,7 @@ Let us start with an Azure Service Bus queue, which is one of the most common tr
 
 ```bash
 # Create a Service Bus namespace
+
 az servicebus namespace create \
   --name my-sb-namespace \
   --resource-group my-rg \

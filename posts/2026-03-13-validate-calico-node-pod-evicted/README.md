@@ -36,6 +36,7 @@ kubectl describe node <node> | grep -i pressure
 ```bash
 kubectl get pods -n kube-system -l k8s-app=calico-node --field-selector spec.nodeName=<node>
 # Expected: 1/1 Running, not Evicted
+
 ```
 
 **Validation Step 2: No node pressure conditions**

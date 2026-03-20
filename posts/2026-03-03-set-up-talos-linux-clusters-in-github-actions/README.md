@@ -18,6 +18,7 @@ Here is a minimal GitHub Actions workflow that creates a Talos cluster, runs tes
 
 ```yaml
 # .github/workflows/integration-tests.yml
+
 name: Integration Tests
 
 on:

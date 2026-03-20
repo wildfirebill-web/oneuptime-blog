@@ -12,7 +12,7 @@ In high-availability IPv6 deployments, fast failure detection is critical. By de
 
 ## Default vs Tuned Failover Times
 
-```
+```text
 Default NUD failover time calculation:
   REACHABLE state: 30s (base_reachable_time_ms)
   STALE state: until first packet sent
@@ -38,6 +38,7 @@ Ultra-fast NUD (aggressive, higher NDP traffic):
 
 ```bash
 # Fast failover configuration for a specific interface
+
 IFACE="eth0"
 
 # Reduce REACHABLE time (how often NUD confirmation is needed)
@@ -134,7 +135,7 @@ done
 
 ## Tradeoffs of Fast Timers
 
-```
+```text
 Faster timers = more NDP traffic:
   base_reachable_time_ms = 5000:
     NUD confirmation needed every ~5 seconds per active connection

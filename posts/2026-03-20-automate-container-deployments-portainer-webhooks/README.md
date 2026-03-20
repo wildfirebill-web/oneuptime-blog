@@ -35,6 +35,7 @@ Portainer supports webhooks at multiple levels:
 
 ```bash
 # Basic webhook trigger
+
 curl -X POST "https://portainer.mycompany.com/api/webhooks/token123"
 
 # With a specific image tag (recommended for traceability)

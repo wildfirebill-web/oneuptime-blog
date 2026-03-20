@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, DevOps, Automation, Environment, Configuration
+Tags: Docker, DevOps, Automation, Environments, Configuration
 
 Description: A hands-on guide to structuring Docker Compose files with profiles, overrides, and secrets so dev, staging, and prod share one stack file without copy/paste drift.
 
@@ -50,6 +50,7 @@ services:
     profiles: ["observability"]              # Only starts when explicitly enabled
 
 # Named volumes persist beyond container lifecycle
+
 volumes:
   pgdata:  # PostgreSQL data survives docker compose down
 ```

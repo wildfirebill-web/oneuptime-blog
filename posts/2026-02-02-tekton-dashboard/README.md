@@ -76,6 +76,7 @@ You can verify your Tekton Pipelines installation with the following command tha
 
 ```bash
 # Check if Tekton Pipelines is installed and running
+
 kubectl get pods -n tekton-pipelines
 
 # Expected output shows pods in Running state:

@@ -19,12 +19,13 @@ Writing to PCAP files (instead of reading output in the terminal) allows:
 
 ```bash
 # Basic save to PCAP
+
 sudo tcpdump -i eth0 -w /tmp/capture.pcap
 
 # Save with filter (only interesting traffic)
 sudo tcpdump -i eth0 -w /tmp/web-traffic.pcap 'port 80 or port 443'
 
-# Save with -n (don't resolve names — smaller output, faster)
+# Save with -n (don't resolve names - smaller output, faster)
 sudo tcpdump -i eth0 -n -w /tmp/capture.pcap host 192.168.1.50
 
 # Limit capture to N packets then stop
@@ -109,7 +110,7 @@ wireshark /tmp/remote-capture.pcap
 wireshark /tmp/capture.pcap.gz
 ```
 
-```
+```bash
 Wireshark workflow after opening PCAP:
 1. Apply display filter: ip.addr == 192.168.1.50
 2. Statistics → Conversations → TCP (see all connections)

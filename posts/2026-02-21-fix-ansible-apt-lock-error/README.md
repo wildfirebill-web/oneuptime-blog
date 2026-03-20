@@ -26,6 +26,7 @@ Ubuntu automatically runs security updates, which holds the apt lock:
 
 ```yaml
 # Wait for any existing apt processes to finish
+
 - name: Wait for automatic updates to complete
   shell: while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1; do sleep 5; done
   changed_when: false

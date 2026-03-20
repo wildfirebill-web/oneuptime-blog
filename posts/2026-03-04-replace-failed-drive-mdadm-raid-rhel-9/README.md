@@ -21,6 +21,7 @@ Signs of a failed disk:
 
 ```bash
 # Check overall array status
+
 cat /proc/mdstat
 
 # Get detailed info including which disk failed

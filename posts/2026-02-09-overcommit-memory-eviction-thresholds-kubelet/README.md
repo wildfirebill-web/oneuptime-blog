@@ -28,6 +28,7 @@ First, check your current overcommit settings:
 
 ```bash
 # View current overcommit mode
+
 cat /proc/sys/vm/overcommit_memory
 
 # View overcommit ratio (used in mode 2)

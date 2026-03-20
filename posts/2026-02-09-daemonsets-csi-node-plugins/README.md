@@ -288,6 +288,7 @@ Understanding the required volume mounts is crucial for CSI node plugin operatio
 
 ```yaml
 # Plugin directory for CSI socket communication
+
 - name: plugin-dir
   hostPath:
     path: /var/lib/kubelet/plugins/your-csi-driver/

@@ -47,6 +47,7 @@ First, ensure each cluster has its own ClusterSecretStore. This is typically dep
 
 ```yaml
 # clusters/staging/external-secrets-store.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ClusterSecretStore
 metadata:

@@ -1,23 +1,23 @@
-# How to Troubleshoot "Request Timed Out" Ping Errors
+# How to Troubleshoot 'Request Timed Out' Ping Errors
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Ping, Request Timed Out, Troubleshooting, ICMP, Windows
 
-Description: Learn how to diagnose and fix "Request Timed Out" ping errors on Windows and Linux, which indicate that ICMP packets are being sent but no reply is received within the timeout window.
+Description: Learn how to diagnose and fix 'Request Timed Out' ping errors on Windows and Linux, which indicate that ICMP packets are being sent but no reply is received within the timeout window.
 
 ## Request Timed Out vs Destination Host Unreachable
 
 - **Request Timed Out**: Packet was sent but no reply arrived. The host may exist but ICMP is blocked by a firewall, or the route back is broken.
-- **Destination Host Unreachable**: A router along the path explicitly returned an ICMP error — the route doesn't exist.
+- **Destination Host Unreachable**: A router along the path explicitly returned an ICMP error - the route doesn't exist.
 
 ## Step 1: Check Your Own Connectivity First
 
 ```cmd
-REM Test loopback — verifies TCP/IP stack is working
+REM Test loopback - verifies TCP/IP stack is working
 ping 127.0.0.1
 
-REM Test gateway — verifies LAN connectivity
+REM Test gateway - verifies LAN connectivity
 ping 192.168.1.1
 
 REM Test internet IP (no DNS involved)
@@ -33,10 +33,11 @@ Timeouts only at the internet step suggest firewall or routing issues. Timeouts 
 
 ```bash
 # Try TCP instead of ICMP to bypass ICMP blocks
+
 # Using curl (HTTP)
 curl -v --connect-timeout 5 http://192.168.1.50
 
-# Using nmap — scans TCP ports even when ICMP is blocked
+# Using nmap - scans TCP ports even when ICMP is blocked
 nmap -sS -p 22,80,443 192.168.1.50
 
 # If TCP connects but ping times out, the target has ICMP blocked
@@ -48,7 +49,7 @@ nmap -sS -p 22,80,443 192.168.1.50
 REM Windows traceroute
 tracert 8.8.8.8
 
-REM Shows each hop — asterisks (*) indicate where packets are dropped
+REM Shows each hop - asterisks (*) indicate where packets are dropped
 REM First hop = router, last responding hop = where the problem is
 
 REM Linux
@@ -80,7 +81,7 @@ New-NetFirewallRule -Name "Allow-ICMPv4-In" -DisplayName "Allow ICMPv4 In" `
 ## Step 5: Check Linux Firewall
 
 ```bash
-# iptables — check for ICMP DROP rules
+# iptables - check for ICMP DROP rules
 sudo iptables -L INPUT -n --line-numbers | grep -i icmp
 
 # Allow ICMP
@@ -98,10 +99,10 @@ sudo nft list ruleset | grep icmp
 ## Step 6: Check Routing
 
 ```cmd
-REM Print routing table — verify default gateway is set
+REM Print routing table - verify default gateway is set
 route print -4
 
-REM Check ARP cache — target IP should resolve to a MAC
+REM Check ARP cache - target IP should resolve to a MAC
 arp -a 192.168.1.50
 
 REM If no ARP entry, the host may be off or in a different VLAN
@@ -132,4 +133,4 @@ sudo tcpdump -i eth0 icmp
 
 ## Conclusion
 
-"Request Timed Out" means packets leave your machine but replies don't return. Diagnose by checking if ICMP is specifically blocked (use nmap or curl to test TCP), tracing the path with `tracert`/`mtr`, enabling ICMP in Windows Firewall with `netsh advfirewall`, and capturing packets with `tcpdump` to confirm traffic flow. In most enterprise environments, ICMP is intentionally blocked — use TCP-based tools to test connectivity instead.
+"Request Timed Out" means packets leave your machine but replies don't return. Diagnose by checking if ICMP is specifically blocked (use nmap or curl to test TCP), tracing the path with `tracert`/`mtr`, enabling ICMP in Windows Firewall with `netsh advfirewall`, and capturing packets with `tcpdump` to confirm traffic flow. In most enterprise environments, ICMP is intentionally blocked - use TCP-based tools to test connectivity instead.

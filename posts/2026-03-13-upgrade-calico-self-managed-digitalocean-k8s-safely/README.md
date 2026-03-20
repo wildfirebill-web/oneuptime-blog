@@ -43,6 +43,7 @@ Check the Calico release notes for the target version. Pay attention to:
 
 ```bash
 # Check current version
+
 kubectl get ds calico-node -n kube-system -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```
 

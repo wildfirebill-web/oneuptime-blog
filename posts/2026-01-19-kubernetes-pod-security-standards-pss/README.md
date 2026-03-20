@@ -97,6 +97,7 @@ Pod Security Admission is stable in Kubernetes 1.25+. Verify your version:
 
 ```bash
 # Check the server version to ensure PSA is available
+
 # PSA is beta in 1.23-1.24 and stable in 1.25+
 kubectl version --short
 ```

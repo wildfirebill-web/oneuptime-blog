@@ -32,6 +32,7 @@ Dependabot is GitHub's built-in dependency update tool:
 
 ```yaml
 # .github/dependabot.yml
+
 version: 2
 updates:
   # JavaScript/npm dependencies

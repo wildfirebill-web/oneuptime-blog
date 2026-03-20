@@ -24,6 +24,7 @@ Everything between the two `DELIMITER` lines is passed to `command` as standard 
 
 ```bash
 # Most common use: pass multi-line text to cat
+
 cat << EOF
 This is line one
 This is line two

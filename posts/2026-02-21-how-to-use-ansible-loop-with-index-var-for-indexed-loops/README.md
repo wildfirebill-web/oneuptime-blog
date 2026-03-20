@@ -16,6 +16,7 @@ The `index_var` option creates a variable that holds the zero-based index of the
 
 ```yaml
 # Print each item along with its index position
+
 - name: Show items with their index
   ansible.builtin.debug:
     msg: "Index {{ my_index }}: {{ item }}"

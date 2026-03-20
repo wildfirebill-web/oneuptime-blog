@@ -14,6 +14,7 @@ RHEL's default AppStream repository may not ship the latest PHP version. The Rem
 
 ```bash
 # Install EPEL (required dependency for Remi)
+
 sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 
 # Install the Remi repository

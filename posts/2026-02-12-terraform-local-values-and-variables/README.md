@@ -18,6 +18,7 @@ Input variables are parameters that callers provide to your module or configurat
 
 ```hcl
 # String variable with a default
+
 variable "environment" {
   description = "Deployment environment (dev, staging, production)"
   type        = string

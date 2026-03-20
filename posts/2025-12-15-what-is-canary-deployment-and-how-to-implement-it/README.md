@@ -180,6 +180,7 @@ To increase canary traffic from 10% to 50%, scale the deployments. The traffic s
 
 ```bash
 # Scale down stable to 5 replicas (from 9)
+
 kubectl scale deployment myapp-stable --replicas=5
 # Scale up canary to 5 replicas (from 1)
 # Now traffic is split 50/50 between stable and canary

@@ -18,6 +18,7 @@ Create a `.circleci/config.yml` file in your repository root.
 
 ```yaml
 # .circleci/config.yml - Basic Ansible pipeline
+
 version: 2.1
 
 executors:
@@ -359,7 +360,7 @@ workflows:
             - ansible/lint
 ```
 
-## Resource Classes and Performance
+Resource Classes and Performance
 
 CircleCI lets you choose different machine sizes. For large Ansible runs, you might want more CPU and memory.
 

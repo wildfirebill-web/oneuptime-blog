@@ -1,10 +1,10 @@
-# How to Understand Resource Behavior in OpenTofu
+# How to Understand Resource Behavior in OpenTofu - Understand
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Resources, Lifecycle, Infrastructure as Code, DevOps, HCL
 
-Description: Learn how OpenTofu manages resource lifecycle — creation, update, replacement, and deletion — and what drives each type of change.
+Description: Learn how OpenTofu manages resource lifecycle - creation, update, replacement, and deletion - and what drives each type of change.
 
 ---
 
@@ -14,11 +14,11 @@ OpenTofu resources have a well-defined lifecycle: they are created, may be updat
 
 ## The Four Resource Actions
 
-```
-+ create    — Resource doesn't exist; will be created
-~ update    — Resource exists; some attributes will be changed in place
--/+ replace — Resource must be destroyed and recreated (destructive)
-- destroy   — Resource will be removed
+```text
++ create    - Resource doesn't exist; will be created
+~ update    - Resource exists; some attributes will be changed in place
+-/+ replace - Resource must be destroyed and recreated (destructive)
+- destroy   - Resource will be removed
 ```
 
 ---
@@ -28,6 +28,7 @@ OpenTofu resources have a well-defined lifecycle: they are created, may be updat
 ### Create
 ```hcl
 # A new resource block not yet in state
+
 resource "aws_s3_bucket" "data" {
   bucket = "my-new-bucket"
 }
@@ -66,7 +67,7 @@ tofu plan   # shows: - aws_instance.web will be destroyed
 
 ## ForceNew Attributes
 
-Provider documentation marks some attributes as `ForceNew` — changing them destroys and recreates the resource:
+Provider documentation marks some attributes as `ForceNew` - changing them destroys and recreates the resource:
 
 ```hcl
 # Common ForceNew attributes:
@@ -95,9 +96,9 @@ tofu plan
 # +/- : will be created then destroyed (create_before_destroy)
 
 # Attribute annotations:
-# (forces replacement) — this change requires destroy+create
-# (known after apply) — value depends on creation result
-# (sensitive value)   — redacted from output
+# (forces replacement) - this change requires destroy+create
+# (known after apply) - value depends on creation result
+# (sensitive value)   - redacted from output
 ```
 
 ---
@@ -107,7 +108,7 @@ tofu plan
 ```hcl
 resource "aws_instance" "web" {
   lifecycle {
-    # Ignore AMI changes — don't replace when AMI is updated
+    # Ignore AMI changes - don't replace when AMI is updated
     ignore_changes = [ami]
 
     # Create new before destroying old (zero-downtime replacement)
@@ -118,7 +119,7 @@ resource "aws_instance" "web" {
 
 ---
 
-## Resource Dependencies and Update Order
+Resource Dependencies and Update Order
 
 OpenTofu processes resources in dependency order:
 

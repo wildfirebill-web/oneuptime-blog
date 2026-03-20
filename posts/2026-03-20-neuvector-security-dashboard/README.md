@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, Dashboard, Security Monitoring, Kubernetes, Container Security
+Tags: NeuVector, Dashboards, Security Monitoring, Kubernetes, Container Security
 
 Description: Use the NeuVector security dashboard to monitor your cluster's security posture, track vulnerabilities, and visualize container activity in real time.
 
 ## Introduction
 
-The NeuVector Manager dashboard provides a comprehensive view of your Kubernetes cluster's security posture. It displays real-time security events, vulnerability statistics, compliance scores, and network activity — all in one place. This guide explains how to effectively use the dashboard for security monitoring and incident triage.
+The NeuVector Manager dashboard provides a comprehensive view of your Kubernetes cluster's security posture. It displays real-time security events, vulnerability statistics, compliance scores, and network activity - all in one place. This guide explains how to effectively use the dashboard for security monitoring and incident triage.
 
 ## Dashboard Sections Overview
 
@@ -31,6 +31,7 @@ The NeuVector dashboard is organized into several key sections:
 
 ```bash
 # Get the NeuVector Manager URL
+
 kubectl get svc neuvector-service-webui -n neuvector
 
 # Access via browser at:
@@ -42,7 +43,7 @@ kubectl get svc neuvector-service-webui -n neuvector
 
 The main dashboard shows:
 
-```
+```text
 Security Risk Score: A number from 0-100 (lower is better)
 ├── Critical CVEs: Count of critical vulnerabilities in running containers
 ├── High CVEs: Count of high severity vulnerabilities

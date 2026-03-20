@@ -332,6 +332,7 @@ Track the progress of a rolling sync.
 
 ```bash
 # Check overall rollout status
+
 kubectl get applicationset global-service -n argocd -o yaml | \
   yq '.status'
 

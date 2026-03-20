@@ -6,11 +6,11 @@ Tags: Cloudflare, IPv6, IPv4, Proxy, CDN, Origin
 
 Description: A guide to using Cloudflare as an IPv6-to-IPv4 proxy, allowing IPv6 clients to reach IPv4-only origin servers through Cloudflare's edge network.
 
-Cloudflare's proxy mode automatically acts as an IPv6-to-IPv4 translator when your origin server only has an IPv4 address. IPv6 clients connect to Cloudflare's edge over IPv6, and Cloudflare connects to your origin over IPv4 — providing seamless IPv6 access to IPv4-only infrastructure.
+Cloudflare's proxy mode automatically acts as an IPv6-to-IPv4 translator when your origin server only has an IPv4 address. IPv6 clients connect to Cloudflare's edge over IPv6, and Cloudflare connects to your origin over IPv4 - providing seamless IPv6 access to IPv4-only infrastructure.
 
 ## IPv6-to-IPv4 Proxy Architecture
 
-```
+```text
 IPv6 Client                          Your IPv4 Origin
     |                                      |
     | HTTPS over IPv6                      |
@@ -33,6 +33,7 @@ For the IPv6-to-IPv4 proxy to work:
 
 ```bash
 # Step 1: Ensure your A record is proxied (orange cloud)
+
 curl -X PATCH "https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records/{record_id}" \
   -H "Authorization: Bearer $CF_API_TOKEN" \
   -H "Content-Type: application/json" \
@@ -48,7 +49,7 @@ curl -X PATCH "https://api.cloudflare.com/client/v4/zones/{zone_id}/settings/ipv
 ### Terraform Configuration
 
 ```hcl
-# Only an A record needed — Cloudflare provides AAAA automatically
+# Only an A record needed - Cloudflare provides AAAA automatically
 resource "cloudflare_record" "main" {
   zone_id = var.zone_id
   name    = "@"
@@ -108,7 +109,7 @@ Since Cloudflare proxies IPv6 clients to your IPv4 origin, consider allowing onl
 # Get current Cloudflare IPs:
 curl https://www.cloudflare.com/ips-v4
 
-# Example ip6tables rule (block direct IPv6 access — all IPv6 goes through Cloudflare)
+# Example ip6tables rule (block direct IPv6 access - all IPv6 goes through Cloudflare)
 sudo ip6tables -A INPUT -p tcp --dport 443 ! -s 2606:4700::/32 -j DROP
 ```
 
@@ -128,4 +129,4 @@ curl -6 -v https://example.com/ 2>&1 | grep "Connected to"
 # Should contain the real client IPv6 address
 ```
 
-Cloudflare's IPv6-to-IPv4 proxy is the standard approach for legacy IPv4 infrastructure — one DNS change and one setting toggle gives full IPv6 connectivity to clients worldwide without any origin changes.
+Cloudflare's IPv6-to-IPv4 proxy is the standard approach for legacy IPv4 infrastructure - one DNS change and one setting toggle gives full IPv6 connectivity to clients worldwide without any origin changes.

@@ -77,6 +77,7 @@ Manage Kong plugins and routes as Kubernetes CRDs:
 
 ```yaml
 # Rate limiting plugin
+
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:

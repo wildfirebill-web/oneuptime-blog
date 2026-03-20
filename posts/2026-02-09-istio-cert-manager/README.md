@@ -22,6 +22,7 @@ Install cert-manager before configuring Istio integration:
 
 ```bash
 # Install cert-manager CRDs
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.0/cert-manager.crds.yaml
 
 # Install cert-manager

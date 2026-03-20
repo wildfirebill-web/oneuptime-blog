@@ -197,6 +197,7 @@ Oracle Linux runs SELinux in enforcing mode by default. Podman handles SELinux l
 
 ```bash
 # Private label for single container access
+
 podman run -v /data:/data:Z myapp:latest
 
 # Shared label for multi-container access
@@ -287,7 +288,7 @@ podman run -d --pod app-stack --name proxy \
   docker.io/library/nginx:latest
 ```
 
-## Resource Management
+Resource Management
 
 Set resource limits appropriate for your OCI instance shape:
 

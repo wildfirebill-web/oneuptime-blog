@@ -15,6 +15,7 @@ Terraform's `terraform_remote_state` data source lets Terraform read outputs fro
 ```bash
 #!/bin/bash
 # Read outputs from a remote state backend
+
 cd /path/to/terraform/project
 terraform init
 terraform output -json db_endpoint | tr -d '"'

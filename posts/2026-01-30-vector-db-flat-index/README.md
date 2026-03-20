@@ -50,6 +50,7 @@ Measures the straight line distance between two points in vector space. Smaller 
 
 ```python
 # euclidean_distance.py
+
 import numpy as np
 
 def euclidean_distance(vec_a: np.ndarray, vec_b: np.ndarray) -> float:

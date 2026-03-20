@@ -95,6 +95,7 @@ The OpenTelemetry Operator requires cert-manager for managing TLS certificates u
 
 ```bash
 # Add the Jetstack Helm repository which hosts cert-manager charts
+
 helm repo add jetstack https://charts.jetstack.io
 
 # Update your local Helm chart repository cache to get the latest charts

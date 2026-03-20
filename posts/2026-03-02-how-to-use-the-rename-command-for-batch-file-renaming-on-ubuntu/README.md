@@ -16,6 +16,7 @@ Ubuntu includes two different `rename` commands. The Perl-based version (`perl-r
 
 ```bash
 # Check which version you have
+
 rename --version
 
 # Install the Perl-based rename if needed

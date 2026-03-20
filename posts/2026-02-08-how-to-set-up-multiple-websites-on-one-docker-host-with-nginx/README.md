@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, NGINX, Web Server, Reverse Proxy, DevOps, Hosting
+Tags: Docker, Nginx, Web Server, Reverse Proxy, DevOps, Hosting
 
 Description: Host multiple websites on a single Docker server using Nginx as a reverse proxy with automatic SSL certificate management.
 
@@ -30,6 +30,7 @@ First, create a Docker network that all services will share. This allows Nginx t
 
 ```bash
 # Create a shared network for the reverse proxy and all site containers
+
 docker network create web-proxy
 ```
 

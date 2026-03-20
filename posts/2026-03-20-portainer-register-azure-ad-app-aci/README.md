@@ -54,6 +54,7 @@ After registration, on the app overview page, note:
 
 ```bash
 # Log into Azure
+
 az login
 
 # Create the app registration

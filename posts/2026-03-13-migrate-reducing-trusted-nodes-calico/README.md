@@ -24,6 +24,7 @@ This guide covers migrate Trusted Node Reduction in Calico with practical config
 
 ```yaml
 # Restrict cross-node trust - only allow specific node-to-node traffic
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

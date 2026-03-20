@@ -53,6 +53,7 @@ def notification_listener():
             print(f"Notification: {message['data'].decode()}")
 
 # Start listener in background
+
 listener_thread = threading.Thread(target=notification_listener, daemon=True)
 listener_thread.start()
 

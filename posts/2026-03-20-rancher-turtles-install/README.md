@@ -21,6 +21,7 @@ Rancher Turtles is the official Cluster API (CAPI) integration for Rancher. It e
 
 ```bash
 # Add Jetstack Helm repo
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 

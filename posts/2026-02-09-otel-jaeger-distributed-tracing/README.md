@@ -16,6 +16,7 @@ Deploy Jaeger all-in-one for development or production components for scalable d
 
 ```bash
 # Run Jaeger all-in-one with Docker
+
 docker run -d --name jaeger \
   -e COLLECTOR_OTLP_ENABLED=true \
   -p 16686:16686 \

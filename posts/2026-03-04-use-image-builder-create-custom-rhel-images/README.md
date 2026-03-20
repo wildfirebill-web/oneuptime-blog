@@ -16,6 +16,7 @@ Install and start Image Builder:
 
 ```bash
 # Install required packages
+
 sudo dnf install -y osbuild-composer composer-cli
 
 # Enable the service

@@ -16,6 +16,7 @@ Ensure you have a running Kubernetes cluster on RHEL and Helm installed:
 
 ```bash
 # Verify cluster is running
+
 kubectl get nodes
 
 # Install Helm if not already installed

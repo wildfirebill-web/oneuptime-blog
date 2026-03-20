@@ -27,6 +27,7 @@ Before configuring plugins, you need Kong Ingress Controller running in your clu
 
 ```bash
 # Add the Kong Helm repository
+
 helm repo add kong https://charts.konghq.com
 helm repo update
 

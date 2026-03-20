@@ -31,6 +31,7 @@ The most common scenario is testing connectivity between two VMs:
 
 ```bash
 # Test TCP connectivity between two VMs on port 443
+
 gcloud network-management connectivity-tests create test-vm-to-vm \
   --source-instance=projects/my-project/zones/us-central1-a/instances/vm-source \
   --destination-instance=projects/my-project/zones/us-central1-a/instances/vm-dest \

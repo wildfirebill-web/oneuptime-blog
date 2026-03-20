@@ -35,6 +35,7 @@ First, set up SLOs that your error budget policies will reference:
 
 ```bash
 # Create a Cloud Monitoring SLO for your service
+
 # This example creates an availability SLO based on good/total request ratio
 gcloud monitoring slos create \
     --project=your-project-id \

@@ -8,7 +8,7 @@ Description: Learn how to configure Portainer service webhooks on Docker Swarm t
 
 ## Introduction
 
-Portainer service webhooks provide an HTTP endpoint that, when called, triggers an image update for a Swarm service. This enables a push-based deployment model where your CI/CD pipeline builds a new image and then tells Portainer to update the service — without needing to store Portainer credentials in your CI system. This guide covers setting up and using service webhooks.
+Portainer service webhooks provide an HTTP endpoint that, when called, triggers an image update for a Swarm service. This enables a push-based deployment model where your CI/CD pipeline builds a new image and then tells Portainer to update the service - without needing to store Portainer credentials in your CI system. This guide covers setting up and using service webhooks.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Portainer service webhooks provide an HTTP endpoint that, when called, triggers 
 
 The URL looks like:
 
-```
+```text
 https://portainer.example.com:9443/api/webhooks/abc123def456...
 ```
 
@@ -36,6 +36,7 @@ Test the webhook with curl to verify it works:
 
 ```bash
 # Trigger a service update via webhook
+
 curl -X POST \
   "https://portainer.example.com:9443/api/webhooks/abc123def456" \
   --insecure
@@ -169,12 +170,12 @@ In the service webhook settings, enable **Force update**. This is useful when us
 
 ## Step 7: Secure the Webhook
 
-The webhook URL is a secret — anyone with the URL can trigger a deployment. Protect it:
+The webhook URL is a secret - anyone with the URL can trigger a deployment. Protect it:
 
-1. **Store as a CI/CD secret** — Never hardcode in your pipeline files
-2. **Restrict network access** — Use firewall rules to limit which IPs can reach Portainer's API
-3. **Rotate webhooks** — Regenerate the webhook URL periodically or after team members leave
-4. **Use HTTPS only** — Never expose Portainer over plain HTTP
+1. **Store as a CI/CD secret** - Never hardcode in your pipeline files
+2. **Restrict network access** - Use firewall rules to limit which IPs can reach Portainer's API
+3. **Rotate webhooks** - Regenerate the webhook URL periodically or after team members leave
+4. **Use HTTPS only** - Never expose Portainer over plain HTTP
 
 ## Monitoring Webhook-Triggered Deployments
 

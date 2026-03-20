@@ -61,6 +61,7 @@ Create a dedicated Kustomization for CRDs:
 
 ```yaml
 # clusters/production/crds.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

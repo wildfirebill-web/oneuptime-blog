@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, BIND, Network Configuration, named
+Tags: IPv6, DNS, BIND, Network Configuration, Named
 
 Description: Learn how to configure BIND (named) to accept DNS queries over IPv6 by setting the listen-on-v6 directive and verifying IPv6 connectivity.
 
@@ -57,6 +57,7 @@ Before configuring BIND, ensure the host has a working IPv6 address:
 
 ```bash
 # Check for global IPv6 addresses (not just link-local)
+
 ip -6 addr show | grep -E 'inet6.*global'
 
 # Verify IPv6 is not disabled

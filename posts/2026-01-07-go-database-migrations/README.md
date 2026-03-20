@@ -51,6 +51,7 @@ Using Go install (requires Go 1.16+):
 
 ```bash
 # Install the migrate CLI with PostgreSQL support
+
 go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
 
 # For MySQL support

@@ -30,6 +30,7 @@ Latency measures the time it takes to serve a request. It is important to distin
 
 ```python
 # latency_metrics.py
+
 # Track request latency with Prometheus histograms
 
 from prometheus_client import Histogram, Summary

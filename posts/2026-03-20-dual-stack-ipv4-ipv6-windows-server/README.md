@@ -14,6 +14,7 @@ Windows Server supports dual-stack networking natively. Both IPv4 and IPv6 are e
 
 ```powershell
 # View all network adapters and addresses
+
 Get-NetIPAddress | Format-Table InterfaceAlias, AddressFamily, IPAddress, PrefixLength
 
 # View interface details
@@ -63,7 +64,7 @@ Set-DnsClientServerAddress `
 
 ## Configuring via GUI
 
-```
+```text
 1. Control Panel → Network and Sharing Center → Change adapter settings
 2. Right-click adapter → Properties
 3. Configure both:
@@ -121,4 +122,4 @@ New-NetFirewallRule -DisplayName "Allow ICMPv6" `
 
 ## Conclusion
 
-Windows Server dual-stack configuration requires assigning both IPv4 and IPv6 addresses to the same adapter. Use `New-NetIPAddress` for both address families. Windows prefers IPv6 by default when available — applications receive connections on both protocols without modification. Verify connectivity with `Test-NetConnection` for both IPv4 (-ComputerName with IPv4) and IPv6 (-ComputerName with IPv6) addresses.
+Windows Server dual-stack configuration requires assigning both IPv4 and IPv6 addresses to the same adapter. Use `New-NetIPAddress` for both address families. Windows prefers IPv6 by default when available - applications receive connections on both protocols without modification. Verify connectivity with `Test-NetConnection` for both IPv4 (-ComputerName with IPv4) and IPv6 (-ComputerName with IPv6) addresses.

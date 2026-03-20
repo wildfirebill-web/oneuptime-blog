@@ -106,6 +106,7 @@ check_replication_lag('192.168.1.100', ['192.168.1.101', '192.168.1.102'])
 
 ```bash
 # Ping from master to replica
+
 ping -c 10 192.168.1.101
 
 # Check TCP connection quality

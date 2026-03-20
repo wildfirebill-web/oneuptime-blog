@@ -72,6 +72,7 @@ calicoctl get ippool -o yaml
 
 ```bash
 # SSH to the affected node
+
 ip route show | grep bird
 ip route show table all | grep -v "^default" | head -40
 ```

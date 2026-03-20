@@ -24,6 +24,7 @@ When you send a packet from `eth0.100`, the kernel adds the 802.1Q tag (VLAN 100
 
 ```bash
 # Load the 802.1Q VLAN kernel module
+
 modprobe 8021q
 
 # Verify it's loaded
@@ -44,7 +45,7 @@ ip -d link show eth0.100
 ```
 
 Output from `ip -d link show eth0.100`:
-```
+```text
 3: eth0.100@eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN
     link/ether aa:bb:cc:dd:ee:ff brd ff:ff:ff:ff:ff:ff
     vlan protocol 802.1Q id 100 <REORDER_HDR>

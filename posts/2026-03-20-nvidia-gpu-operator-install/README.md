@@ -2,12 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, nvidia, gpu-operator, kubernetes, helm
+Tags: Rancher, NVIDIA, Gpu-operator, Kubernetes, Helm
 
 Description: Detailed installation guide for the NVIDIA GPU Operator in Rancher-managed Kubernetes clusters.
+
 ## Introduction
 
-The NVIDIA GPU Operator automates the management of all NVIDIA software components needed to provision GPUs in Kubernetes—drivers, container toolkit, device plugin, DCGM exporter, and more. This guide covers a complete installation in a Rancher environment.
+The NVIDIA GPU Operator automates the management of all NVIDIA software components needed to provision GPUs in Kubernetes-drivers, container toolkit, device plugin, DCGM exporter, and more. This guide covers a complete installation in a Rancher environment.
 
 ## Architecture
 
@@ -23,6 +24,7 @@ The GPU Operator consists of several components:
 
 ```bash
 # Verify GPU hardware is present on worker nodes
+
 lspci | grep -i nvidia
 
 # Check kernel version (must be 4.15+)

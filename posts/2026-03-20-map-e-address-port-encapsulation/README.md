@@ -43,15 +43,16 @@ graph LR
 The power of MAP-E (like MAP-T) is that it operates without per-subscriber state at the BR:
 
 - The CE encapsulates each IPv4 packet in IPv6 with a destination that encodes the IPv4 source address and port range
-- The BR decapsulates based on the outer IPv6 source address — which algorithmically identifies the subscriber, their IPv4 address, and port range
-- No lookup table needed — the information is embedded in the IPv6 address
+- The BR decapsulates based on the outer IPv6 source address - which algorithmically identifies the subscriber, their IPv4 address, and port range
+- No lookup table needed - the information is embedded in the IPv6 address
 
 ## MAP-E Mapping Rules
 
 MAP-E rules are distributed to CEs via DHCPv6 (RFC 7598 options). A typical rule set:
 
-```
+```text
 # Basic Mapping Rule (BMR) - what the CE uses for its own traffic
+
 Rule-IPv6-Prefix: 2001:db8:map::/48
 Rule-IPv4-Prefix: 203.0.113.0/24
 EA-bits: 16         # 8 bits for IPv4 host, 8 bits for PSID
@@ -66,7 +67,7 @@ Default-IPv6-Prefix: 64:ff9b::/96  # or BR's /64 prefix
 
 With 24-bit IPv4 prefix and 16 EA bits (8 for host, 8 for PSID), each subscriber gets:
 
-```
+```text
 16 subscribers share each IPv4 address (4-bit PSID)
 Port set size per subscriber: (65536 - 1024) / 16 = 4032 ports
 (Ports 0-1023 are reserved, so effective port space is 1024-65535)
@@ -84,7 +85,7 @@ PSID 15: ports 15360-16383
 
 One advantage of MAP is that CE-to-CE traffic (between subscribers in the same MAP domain) can flow directly without going through the BR:
 
-```
+```text
 CE-A wants to reach CE-B:
 1. CE-A knows CE-B's IPv4 source (from incoming packet)
 2. CE-A computes CE-B's IPv6 address using FMR

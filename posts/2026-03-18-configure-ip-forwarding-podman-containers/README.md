@@ -46,6 +46,7 @@ Check if IP forwarding is enabled:
 
 ```bash
 # IPv4
+
 sysctl net.ipv4.ip_forward
 
 # IPv6

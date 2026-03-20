@@ -24,6 +24,7 @@ The output of `calicoctl ipam check` requires careful interpretation. Not every 
 
 ```bash
 # An IP may appear leaked if a pod is in the process of terminating
+
 # Wait 2 minutes and recheck
 sleep 120
 calicoctl ipam check

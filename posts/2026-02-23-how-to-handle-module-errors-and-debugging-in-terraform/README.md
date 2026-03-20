@@ -34,6 +34,7 @@ Terraform's built-in logging is your best friend for module debugging. Set the `
 
 ```bash
 # Set log level - TRACE is the most verbose
+
 export TF_LOG=TRACE
 
 # Run your command

@@ -32,6 +32,7 @@ Enable control plane logging through the AWS CLI, console, or infrastructure as 
 
 ```bash
 # Enable all control plane log types
+
 aws eks update-cluster-config \
   --name production-cluster \
   --logging '{"clusterLogging":[{"types":["api","audit","authenticator","controllerManager","scheduler"],"enabled":true}]}' \

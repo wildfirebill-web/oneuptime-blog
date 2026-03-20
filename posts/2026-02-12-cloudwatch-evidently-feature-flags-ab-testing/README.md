@@ -40,6 +40,7 @@ Everything in Evidently lives inside a project:
 
 ```bash
 # Create an Evidently project
+
 aws evidently create-project \
   --name "web-app" \
   --description "Web application feature flags and experiments"

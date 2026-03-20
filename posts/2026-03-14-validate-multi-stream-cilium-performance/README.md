@@ -172,6 +172,7 @@ Acceptance criteria for the statistical validation:
 ```bash
 #!/bin/bash
 # ci-multistream-validate.sh
+
 set -euo pipefail
 
 MIN_THROUGHPUT_GBPS=20

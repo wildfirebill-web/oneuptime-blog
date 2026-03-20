@@ -28,6 +28,7 @@ This guide covers both approaches, from simple replica count overrides to more s
 Create overlay directories for different time windows.
 ```yaml
 # apps/api-service/overlays/peak-hours/replica-patch.yaml
+
 # Kustomize patch setting higher replica counts for peak business hours
 apiVersion: apps/v1
 kind: Deployment

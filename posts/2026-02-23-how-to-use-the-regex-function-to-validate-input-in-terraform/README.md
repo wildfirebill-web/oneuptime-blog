@@ -16,6 +16,7 @@ Terraform offers two regex functions with different behaviors:
 
 ```hcl
 # regex(pattern, string) - returns the first match or raises an error
+
 regex("[a-z]+", "hello123")
 # Result: "hello"
 

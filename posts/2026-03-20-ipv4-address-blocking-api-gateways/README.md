@@ -10,10 +10,11 @@ Description: Block specific IPv4 addresses and CIDR ranges at the API gateway la
 
 Blocking IPs at the API gateway layer stops malicious traffic before it reaches your application code. Most gateways support static IP lists, CIDR ranges, and dynamic blocking rules.
 
-## Kong Gateway — IP Restriction Plugin
+## Kong Gateway - IP Restriction Plugin
 
 ```bash
 # Apply to a service
+
 curl -X POST http://localhost:8001/services/my-service/plugins \
   --data "name=ip-restriction" \
   --data "config.deny[]=192.168.50.20" \
@@ -37,7 +38,7 @@ plugins:
         - 10.0.0.0/8
 ```
 
-## AWS API Gateway — Resource Policy
+## AWS API Gateway - Resource Policy
 
 ```json
 {
@@ -64,7 +65,7 @@ plugins:
 }
 ```
 
-## Nginx — geo Module
+## Nginx - geo Module
 
 ```nginx
 http {
@@ -114,7 +115,7 @@ app.use(ipBlockMiddleware);
 app.get('/api/data', (req, res) => res.json({ ok: true }));
 ```
 
-## Terraform — AWS WAF IP Set
+## Terraform - AWS WAF IP Set
 
 ```hcl
 resource "aws_wafv2_ip_set" "blocked_ips" {
@@ -136,4 +137,4 @@ resource "aws_wafv2_web_acl_association" "api_gw" {
 
 ## Conclusion
 
-Block IPv4 addresses at the gateway layer for zero-overhead enforcement — the request never reaches your application. Use static lists for known bad actors, CIDR ranges for subnets, and dynamic Redis-backed lists for automated threat response.
+Block IPv4 addresses at the gateway layer for zero-overhead enforcement - the request never reaches your application. Use static lists for known bad actors, CIDR ranges for subnets, and dynamic Redis-backed lists for automated threat response.

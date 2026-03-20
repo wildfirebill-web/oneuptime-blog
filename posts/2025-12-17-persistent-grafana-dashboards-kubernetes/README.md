@@ -57,6 +57,7 @@ The most common approach uses Grafana's sidecar container to watch ConfigMaps.
 
 ```yaml
 # values.yaml for grafana helm chart
+
 sidecar:
   dashboards:
     enabled: true

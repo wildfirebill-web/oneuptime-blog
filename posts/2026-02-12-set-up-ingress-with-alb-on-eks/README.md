@@ -45,6 +45,7 @@ The Load Balancer Controller needs to know which subnets to use. Tag your public
 
 ```bash
 # Tag public subnets for internet-facing ALBs
+
 aws ec2 create-tags --resources subnet-0abc123 subnet-0def456 \
   --tags Key=kubernetes.io/role/elb,Value=1
 

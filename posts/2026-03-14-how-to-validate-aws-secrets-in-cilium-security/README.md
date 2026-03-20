@@ -24,6 +24,7 @@ Validating AWS secrets configuration in Cilium ensures that credentials work cor
 echo "=== AWS Credential Validation ==="
 
 # Test API access from Cilium pod
+
 IDENTITY=$(kubectl exec -n kube-system -l k8s-app=cilium -- \
   aws sts get-caller-identity 2>/dev/null)
 if [ $? -eq 0 ]; then

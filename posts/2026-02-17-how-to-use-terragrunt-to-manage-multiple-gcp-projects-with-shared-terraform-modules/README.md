@@ -82,6 +82,7 @@ Here is a root configuration that automatically generates backend config based o
 
 ```hcl
 # Root terragrunt.hcl - defines remote state and provider configuration
+
 # that all child modules inherit automatically
 
 # Automatically configure the GCS backend based on directory structure

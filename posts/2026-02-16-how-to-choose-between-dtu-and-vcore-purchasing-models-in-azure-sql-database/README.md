@@ -138,6 +138,7 @@ Via Azure CLI:
 
 ```bash
 # Change a DTU database to vCore General Purpose with 2 cores
+
 az sql db update \
     --resource-group myResourceGroup \
     --server myserver \

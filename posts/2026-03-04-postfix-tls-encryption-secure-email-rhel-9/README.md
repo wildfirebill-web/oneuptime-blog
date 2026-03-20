@@ -26,6 +26,7 @@ If you do not already have a certificate, use certbot with Let's Encrypt:
 
 ```bash
 # Install certbot
+
 sudo dnf install -y certbot
 
 # Request a certificate for your mail server hostname

@@ -16,6 +16,7 @@ The traditional setup required two AWS resources for reliable locking.
 
 ```hcl
 # Old approach - requires a DynamoDB table
+
 terraform {
   backend "s3" {
     bucket         = "my-tofu-state"
@@ -137,7 +138,7 @@ tofu plan
 
 ## How Native Locking Works
 
-```
+```hcl
 Native S3 locking uses S3 conditional writes:
 
 1. tofu apply starts → attempts to write lock file

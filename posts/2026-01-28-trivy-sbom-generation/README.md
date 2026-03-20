@@ -63,6 +63,7 @@ CycloneDX is ideal for security workflows and vulnerability management.
 
 ```bash
 # Generate CycloneDX SBOM for a container image
+
 trivy image --format cyclonedx --output sbom.cdx.json nginx:1.25
 
 # Generate CycloneDX for a filesystem

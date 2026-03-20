@@ -20,6 +20,7 @@ import json
 tracer = trace.get_tracer("audit.trail")
 
 # Standard attribute keys for audit spans
+
 AUDIT_ENTITY_TYPE = "audit.entity.type"
 AUDIT_ENTITY_ID = "audit.entity.id"
 AUDIT_ACTION = "audit.action"

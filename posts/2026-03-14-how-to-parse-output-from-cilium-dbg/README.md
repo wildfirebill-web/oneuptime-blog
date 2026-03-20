@@ -31,7 +31,7 @@ This guide covers parsing techniques for all common cilium-dbg output formats.
 
 Most cilium-dbg commands support JSON output:
 
-\`\`\`bash
+```bash
 CILIUM_POD=\$(kubectl -n kube-system get pods -l k8s-app=cilium   -o jsonpath='{.items[0].metadata.name}')
 
 ## Get endpoint list as JSON
@@ -39,11 +39,11 @@ kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   cilium-dbg endpo
 
 ## Parse with jq
 jq '.[] | {id: .id, state: .status.state, identity: .status.identity.id}'   /tmp/endpoints.json
-\`\`\`
+```
 
 ### Parsing Status Output
 
-\`\`\`bash
+```bash
 #!/bin/bash
 ## parse-cilium-dbg-status.sh
 
@@ -58,11 +58,11 @@ echo "\$STATUS" | grep "Overall Health" | awk -F: '{print \$2}' | xargs
 echo "\$STATUS" | grep -E "^[A-Z].*:" | while IFS=: read -r key value; do
   echo "{\\"component\\": \\"\$key\\", \\"status\\": \\"\$(echo \$value | xargs)\\"}"
 done | jq -s '.'
-\`\`\`
+```
 
 ### Python Parser
 
-\`\`\`python
+```python
 #!/usr/bin/env python3
 """Parse cilium-dbg output in various formats."""
 import json, subprocess, sys
@@ -93,19 +93,20 @@ if __name__ == '__main__':
     endpoints = get_endpoints(pod)
     summary = summarize_endpoints(endpoints)
     print(json.dumps(summary, indent=2))
-\`\`\`
+```
 
 ### Converting Table Output to CSV
 
-\`\`\`bash
+```bash
 ## For commands without JSON support
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   cilium-dbg bpf ct list global 2>/dev/null |   awk 'NR==1 {gsub(/  +/, ","); print} NR>1 {gsub(/  +/, ","); print}' > /tmp/ct-table.csv
-\`\`\`
+```
 
 ## Verification
 
 ```bash
 # Verify JSON parsing
+
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   cilium-dbg endpoint list -o json | jq length
 
 # Verify Python parser

@@ -316,6 +316,7 @@ For L7 (application-level) load balancing, use a gRPC-aware proxy like Envoy or 
 
 ```yaml
 # envoy.yaml - Envoy as gRPC load balancer
+
 static_resources:
   listeners:
     - name: grpc_listener

@@ -24,6 +24,7 @@ fatal: [very-long-hostname.subdomain.example.com]: UNREACHABLE! => {
 
 ```ini
 # ansible.cfg - Use a shorter control path pattern
+
 [ssh_connection]
 control_path = %(directory)s/%%C
 # %%C creates a short hash of host-port-user

@@ -31,6 +31,7 @@ The simplest approach is to streamline your Git workflow for emergencies:
 ```bash
 #!/bin/bash
 # emergency-deploy.sh
+
 # Usage: ./emergency-deploy.sh <service-name> <image-tag> <jira-ticket>
 
 SERVICE=$1

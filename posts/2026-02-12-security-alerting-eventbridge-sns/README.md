@@ -37,6 +37,7 @@ Let's start with the SNS topic and its subscriptions. We want a topic specifical
 
 ```bash
 # Create an SNS topic for security alerts
+
 aws sns create-topic \
   --name security-alerts \
   --tags Key=Team,Value=Security Key=Purpose,Value=Alerting

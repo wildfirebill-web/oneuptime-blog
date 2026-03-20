@@ -29,6 +29,7 @@ The simplest backup method triggers a background save:
 
 ```bash
 # Trigger background save
+
 redis-cli BGSAVE
 
 # Check save status

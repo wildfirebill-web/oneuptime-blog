@@ -49,6 +49,7 @@ Plan your media directories carefully. The key is giving all services access to 
 
 ```yaml
 # Media server stack - Plex, Sonarr, Radarr, Prowlarr
+
 version: "3.8"
 
 services:

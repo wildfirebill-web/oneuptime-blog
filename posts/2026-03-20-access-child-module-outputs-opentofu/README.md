@@ -1,4 +1,4 @@
-# How to Access Child Module Outputs in OpenTofu
+# How to Access Child Module Outputs in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,14 +8,14 @@ Description: Learn how to access output values from child modules in OpenTofu an
 
 ---
 
-Child modules expose values to their callers through `output` blocks. In the calling (parent) module, you reference these values using the `module.<module_name>.<output_name>` syntax. This is how you chain infrastructure components — for example, passing a VPC ID from a networking module to a compute module.
+Child modules expose values to their callers through `output` blocks. In the calling (parent) module, you reference these values using the `module.<module_name>.<output_name>` syntax. This is how you chain infrastructure components - for example, passing a VPC ID from a networking module to a compute module.
 
 ---
 
 ## Defining Outputs in the Child Module
 
 ```hcl
-# modules/networking/outputs.tf — child module outputs
+# modules/networking/outputs.tf - child module outputs
 
 output "vpc_id" {
   description = "The ID of the VPC"
@@ -43,7 +43,7 @@ output "nat_gateway_ip" {
 ## Accessing Module Outputs in the Root Module
 
 ```hcl
-# main.tf — accessing child module outputs
+# main.tf - accessing child module outputs
 
 module "networking" {
   source      = "./modules/networking"
@@ -52,6 +52,7 @@ module "networking" {
 }
 
 # Reference networking module outputs in a resource
+
 resource "aws_eks_cluster" "main" {
   name = "my-cluster"
 
@@ -73,7 +74,7 @@ resource "aws_security_group" "app" {
 ## Chaining Module Outputs to Module Inputs
 
 ```hcl
-# main.tf — chain networking outputs to database module inputs
+# main.tf - chain networking outputs to database module inputs
 
 module "networking" {
   source   = "./modules/networking"
@@ -104,7 +105,7 @@ module "application" {
 ## Forwarding Child Module Outputs to Root Outputs
 
 ```hcl
-# outputs.tf — expose child module outputs from the root
+# outputs.tf - expose child module outputs from the root
 
 output "vpc_id" {
   description = "VPC ID (from networking module)"

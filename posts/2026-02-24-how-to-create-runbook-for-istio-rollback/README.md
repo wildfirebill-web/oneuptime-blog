@@ -34,6 +34,7 @@ If you performed a canary upgrade and the new revision is causing problems:
 
 ```bash
 # List namespaces with the new revision label
+
 kubectl get namespaces -l istio.io/rev
 
 # Check which proxies are running the new version

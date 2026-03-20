@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ss, Netstat, Linux, Networking, Sockets, Diagnostics
+Tags: ss, netstat, Linux, Networking, Sockets, Diagnostics
 
 Description: Use the ss command as a faster, more powerful replacement for netstat to investigate socket connections, listening ports, and TCP internals on modern Linux systems.
 
@@ -10,7 +10,7 @@ Description: Use the ss command as a faster, more powerful replacement for netst
 
 ## Why ss Over netstat?
 
-```
+```text
 Feature            netstat        ss
 -----------------  -------------  ------------------
 Speed              Slow (/proc)   Fast (netlink)
@@ -24,6 +24,7 @@ Available?         Needs install  Pre-installed
 
 ```bash
 # Show all connections (netstat equivalent)
+
 ss -a
 
 # Show all TCP (netstat -t)
@@ -132,4 +133,4 @@ sudo ss -tin dst 8.8.8.8
 # bytes_retrans: Retransmissions (> 0 = packet loss)
 ```
 
-`ss` is the preferred tool on all modern Linux systems — use it instead of netstat for faster results, richer TCP debugging, and future compatibility as netstat continues to age out.
+`ss` is the preferred tool on all modern Linux systems - use it instead of netstat for faster results, richer TCP debugging, and future compatibility as netstat continues to age out.

@@ -22,6 +22,7 @@ tmux (terminal multiplexer) lets you run multiple terminal sessions within a sin
 
 ```bash
 # Install tmux
+
 sudo apt update
 sudo apt install tmux -y
 

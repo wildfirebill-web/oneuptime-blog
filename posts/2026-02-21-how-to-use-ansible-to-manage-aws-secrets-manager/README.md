@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Install dependencies
+
 ansible-galaxy collection install amazon.aws community.aws
 pip install boto3 botocore
 ```
@@ -324,7 +325,7 @@ ansible-playbook deploy-env-secrets.yml -e "env=staging" --ask-vault-pass
 ansible-playbook deploy-env-secrets.yml -e "env=production" --ask-vault-pass
 ```
 
-## Resource Policy for Cross-Account Access
+Resource Policy for Cross-Account Access
 
 Allow another AWS account to read your secrets:
 

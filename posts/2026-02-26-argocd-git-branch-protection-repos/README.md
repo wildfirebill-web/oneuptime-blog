@@ -29,6 +29,7 @@ Navigate to your config repo settings or use the GitHub API:
 
 ```bash
 # Set branch protection via GitHub CLI
+
 gh api repos/org/config-repo/branches/main/protection \
   --method PUT \
   --field required_status_checks='{"strict":true,"contexts":["validate-manifests","lint-yaml"]}' \

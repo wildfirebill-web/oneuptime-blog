@@ -42,6 +42,7 @@ sudo convert2rhel --org <org-id> --activationkey <key-name>
 
 ```bash
 # Verify RHEL registration
+
 sudo subscription-manager status
 
 # Upgrade to RHEL 8, then RHEL 9 using Leapp

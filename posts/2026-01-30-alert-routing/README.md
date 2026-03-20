@@ -55,6 +55,7 @@ Labels are key-value pairs attached to alerts at creation time. They provide str
 
 ```yaml
 # Example alert with labels
+
 alert:
   name: "HighErrorRate"
   severity: "critical"

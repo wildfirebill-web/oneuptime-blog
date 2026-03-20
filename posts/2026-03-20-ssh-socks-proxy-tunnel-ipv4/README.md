@@ -14,6 +14,7 @@ SSH dynamic port forwarding creates a SOCKS proxy on your local machine. Traffic
 
 ```bash
 # Create a SOCKS5 proxy on local port 1080, tunnel through remote SSH server
+
 ssh -D 1080 -f -C -q -N user@remote-server.example.com
 
 # Options:
@@ -27,7 +28,7 @@ ssh -D 1080 -f -C -q -N user@remote-server.example.com
 ## Bind to a Specific Local IPv4 Address
 
 ```bash
-# Only listen on 127.0.0.1 (secure — local only)
+# Only listen on 127.0.0.1 (secure - local only)
 ssh -D 127.0.0.1:1080 -f -N user@remote-server.example.com
 
 # Listen on all interfaces (allow other machines on your LAN to use the proxy)

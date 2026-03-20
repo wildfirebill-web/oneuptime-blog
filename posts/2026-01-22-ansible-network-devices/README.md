@@ -29,6 +29,7 @@ Install vendor-specific collections for your network devices.
 
 ```bash
 # Cisco IOS/IOS-XE
+
 ansible-galaxy collection install cisco.ios
 
 # Cisco NX-OS (Nexus)

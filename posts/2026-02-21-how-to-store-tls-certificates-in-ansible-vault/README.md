@@ -29,6 +29,7 @@ Store the certificate and key in a vault-encrypted variables file:
 
 ```yaml
 # group_vars/production/vault.yml (before encryption)
+
 ---
 vault_tls_private_key: |
   -----BEGIN RSA PRIVATE KEY-----

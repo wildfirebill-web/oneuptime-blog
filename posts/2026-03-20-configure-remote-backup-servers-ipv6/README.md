@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Backup Server, IPv6, SSH, rsync, Remote Backup, Linux, Security
+Tags: Backup Server, IPv6, SSH, Rsync, Remote Backup, Linux, Security
 
 Description: Set up and secure a remote backup server accessible over IPv6, configure client access, implement deduplication, and automate backup verification.
 
 ---
 
-A dedicated backup server reachable only over IPv6 adds a security layer to your backup infrastructure — attackers who compromise your IPv4 network still cannot reach your backups. This guide covers setting up a hardened IPv6 backup server.
+A dedicated backup server reachable only over IPv6 adds a security layer to your backup infrastructure - attackers who compromise your IPv4 network still cannot reach your backups. This guide covers setting up a hardened IPv6 backup server.
 
 ## Preparing the Backup Server
 
 ```bash
 # Verify the backup server has a public IPv6 address
+
 ip -6 addr show | grep "scope global"
 # Expected: 2001:db8::backup/64
 

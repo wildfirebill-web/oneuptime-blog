@@ -24,6 +24,7 @@ Community testing for Calico networking encompasses the Kubernetes conformance t
 
 ```bash
 # Install sonobuoy for conformance testing
+
 wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.56.0/sonobuoy_0.56.0_linux_amd64.tar.gz
 tar xzf sonobuoy_0.56.0_linux_amd64.tar.gz
 

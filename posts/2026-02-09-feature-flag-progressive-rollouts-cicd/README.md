@@ -145,6 +145,7 @@ from openfeature import api
 from openfeature.provider.flagd import FlagdProvider
 
 # Configure provider
+
 api.set_provider(FlagdProvider(
     host="flagd.feature-flags.svc.cluster.local",
     port=8013

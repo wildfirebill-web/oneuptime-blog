@@ -34,6 +34,7 @@ Create the topics for transaction ingestion and fraud alerts.
 
 ```bash
 # Create the transaction events topic
+
 gcloud pubsub topics create transaction-events
 
 # Create a subscription for Dataflow to read from

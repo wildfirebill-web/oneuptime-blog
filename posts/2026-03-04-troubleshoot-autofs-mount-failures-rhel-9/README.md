@@ -65,6 +65,7 @@ Now check logs while triggering the mount:
 
 ```bash
 # In one terminal
+
 sudo journalctl -u autofs -f
 
 # In another terminal

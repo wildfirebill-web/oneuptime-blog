@@ -20,6 +20,7 @@ Learn how to use Checkov to scan OpenTofu configurations for security misconfigu
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

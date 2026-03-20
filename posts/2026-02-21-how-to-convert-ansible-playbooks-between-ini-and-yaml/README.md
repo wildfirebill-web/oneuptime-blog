@@ -14,6 +14,7 @@ Ansible supports two inventory formats: the traditional INI format and the YAML 
 
 ```ini
 # inventory/hosts.ini
+
 [webservers]
 web1 ansible_host=10.0.1.10 http_port=80
 web2 ansible_host=10.0.1.11 http_port=80

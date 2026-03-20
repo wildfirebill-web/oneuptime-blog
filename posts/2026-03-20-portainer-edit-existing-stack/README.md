@@ -1,4 +1,4 @@
-# How to Edit an Existing Stack in Portainer
+# How to Edit an Existing Stack in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to modify and update existing Docker Compose stacks in Po
 
 ## Introduction
 
-Once a stack is deployed in Portainer, you will inevitably need to modify it — adding a new service, updating an image version, changing environment variables, adjusting resource limits, or restructuring the network configuration. Portainer provides a built-in editor for stacks deployed via the web editor, and update controls for Git-based stacks. Understanding how Portainer applies updates helps you make changes safely without unnecessary downtime.
+Once a stack is deployed in Portainer, you will inevitably need to modify it - adding a new service, updating an image version, changing environment variables, adjusting resource limits, or restructuring the network configuration. Portainer provides a built-in editor for stacks deployed via the web editor, and update controls for Git-based stacks. Understanding how Portainer applies updates helps you make changes safely without unnecessary downtime.
 
 ## Prerequisites
 
@@ -36,6 +36,7 @@ To add a Redis cache service to an existing stack:
 
 ```yaml
 # Add this service block to the existing Compose YAML:
+
   redis:
     image: redis:7-alpine
     restart: unless-stopped
@@ -51,7 +52,7 @@ volumes:
   redis_data:       # (new)
 ```
 
-After adding, click **Update the stack** — only the new `redis` container is created. Existing containers continue running.
+After adding, click **Update the stack** - only the new `redis` container is created. Existing containers continue running.
 
 ## Step 3: Update a Service Image
 
@@ -122,7 +123,7 @@ For standalone Docker (not Swarm), use:
 
 ## Step 6: Rename a Service
 
-Renaming a service effectively creates a new container — Docker Compose tracks services by name:
+Renaming a service effectively creates a new container - Docker Compose tracks services by name:
 
 ```yaml
 # Before:
@@ -156,4 +157,4 @@ For Git-based stacks:
 
 ## Conclusion
 
-Editing stacks in Portainer is straightforward — open the editor, modify the Compose YAML, and click Update. Docker Compose intelligently applies only the changes: new services are created, changed services are recreated, and unchanged services continue running without interruption. For production stacks, use Git-based deployment so every edit is a commit, enabling rollback to any previous state. Before making significant changes, copy the current Compose YAML as a backup or ensure your Git history is up to date.
+Editing stacks in Portainer is straightforward - open the editor, modify the Compose YAML, and click Update. Docker Compose intelligently applies only the changes: new services are created, changed services are recreated, and unchanged services continue running without interruption. For production stacks, use Git-based deployment so every edit is a commit, enabling rollback to any previous state. Before making significant changes, copy the current Compose YAML as a backup or ensure your Git history is up to date.

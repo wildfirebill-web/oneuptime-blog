@@ -16,6 +16,7 @@ In Terraform, a child module is any module called from another module using a `m
 
 ```hcl
 # Root module calling a child module
+
 module "networking" {
   source = "./modules/networking"
 

@@ -24,6 +24,7 @@ Validating derived policy creation confirms that every endpoint with matching po
 echo "=== Derived Policy Validation ==="
 
 # Check every endpoint has policy state
+
 cilium endpoint list -o json | jq '.[] | {
   id: .id,
   state: .status.state,

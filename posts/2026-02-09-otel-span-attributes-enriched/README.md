@@ -22,6 +22,7 @@ Add custom attributes to spans using the span API. This works with both manually
 
 ```python
 # basic_attributes.py
+
 from opentelemetry import trace
 from opentelemetry.trace import Status, StatusCode
 

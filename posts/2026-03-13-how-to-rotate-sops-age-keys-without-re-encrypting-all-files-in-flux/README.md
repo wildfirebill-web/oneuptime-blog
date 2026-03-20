@@ -25,6 +25,7 @@ Generate a new age key:
 ```bash
 age-keygen -o new-key.agekey
 # Note the public key: age1newkey...
+
 ```
 
 Update `.sops.yaml` to include both old and new keys:

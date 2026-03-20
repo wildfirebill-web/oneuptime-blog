@@ -20,6 +20,7 @@ First, install Vagrant and VirtualBox:
 
 ```bash
 # Install on macOS with Homebrew
+
 brew install vagrant virtualbox
 
 # Install on Ubuntu

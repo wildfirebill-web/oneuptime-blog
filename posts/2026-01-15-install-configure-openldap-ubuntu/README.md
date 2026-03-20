@@ -145,6 +145,7 @@ You should see output similar to:
 
 ```text
 # extended LDIF
+
 #
 # LDAPv3
 # base <> with scope baseObject

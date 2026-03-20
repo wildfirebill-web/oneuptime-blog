@@ -30,6 +30,7 @@ The first step is creating a capacity commitment, which is your baseline slot al
 
 ```bash
 # Create an Enterprise edition commitment with 100 baseline slots
+
 # Using a monthly commitment for better pricing
 gcloud bq reservations create-capacity-commitment \
   --project=my-project \

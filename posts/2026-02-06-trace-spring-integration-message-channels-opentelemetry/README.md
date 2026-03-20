@@ -67,6 +67,7 @@ Configure basic settings:
 
 ```yaml
 # application.yml
+
 spring:
   integration:
     channel:

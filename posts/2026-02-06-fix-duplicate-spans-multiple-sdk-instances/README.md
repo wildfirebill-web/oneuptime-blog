@@ -23,6 +23,7 @@ Common scenarios that cause this:
 
 ```bash
 # Look at your tracing backend for duplicate span IDs
+
 # Each span should have a unique span_id
 # If you see the same operation with different span_ids but identical timestamps,
 # you have multiple SDK instances

@@ -29,6 +29,7 @@ Adding IPs to an existing reservation is the safest operation. No running pods a
 
 ```bash
 # Back up the current reservation
+
 calicoctl get ipreservation infrastructure-reservations -o yaml > reservation-backup.yaml
 ```
 

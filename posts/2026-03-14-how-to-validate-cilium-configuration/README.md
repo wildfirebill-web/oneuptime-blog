@@ -27,6 +27,7 @@ This guide provides validation checks for each stage.
 
 ```bash
 # Dry-run Helm to catch template errors
+
 helm template cilium cilium/cilium \
   --namespace kube-system \
   -f cilium-values.yaml > /tmp/cilium-rendered.yaml

@@ -16,6 +16,7 @@ The `floor` function takes a numeric value and returns the largest integer that 
 
 ```hcl
 # floor(number)
+
 # Rounds down to nearest integer
 floor(4.9)  # Returns: 4
 floor(4.1)  # Returns: 4

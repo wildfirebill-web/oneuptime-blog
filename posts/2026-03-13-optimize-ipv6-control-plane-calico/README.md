@@ -29,6 +29,7 @@ IPv6 IPAM requires a different approach to block sizing than IPv4.
 
 ```yaml
 # ippool-ipv6-optimized.yaml
+
 # IPv6 IPPool with block size optimized for pod density
 apiVersion: projectcalico.org/v3
 kind: IPPool

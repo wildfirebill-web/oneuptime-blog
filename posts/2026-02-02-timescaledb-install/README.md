@@ -62,6 +62,7 @@ The following commands add the official TimescaleDB APT repository to your syste
 
 ```bash
 # Add the TimescaleDB repository GPG key
+
 sudo apt-get update
 sudo apt-get install -y gnupg postgresql-common apt-transport-https lsb-release wget
 

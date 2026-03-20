@@ -118,6 +118,7 @@ Sometimes you need bigger TaskManagers rather than more of them.
 # flink-conf.yaml for large-state workloads
 
 # Total memory for the TaskManager process
+
 taskmanager.memory.process.size: 16384m
 
 # JVM Heap - for user code objects

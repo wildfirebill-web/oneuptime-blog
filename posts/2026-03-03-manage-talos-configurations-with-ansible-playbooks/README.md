@@ -54,6 +54,7 @@ Use Ansible group variables to define configuration parameters for different nod
 
 ```yaml
 # inventory/production/group_vars/all.yml
+
 cluster_name: "production"
 cluster_endpoint: "https://lb.production.example.com:6443"
 talos_version: "v1.7.0"

@@ -16,6 +16,7 @@ Install the necessary tools before you begin:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install the Azure CLI

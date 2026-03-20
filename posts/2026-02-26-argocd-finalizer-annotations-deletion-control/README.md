@@ -140,6 +140,7 @@ The ArgoCD CLI lets you override the finalizer behavior at deletion time:
 
 ```bash
 # Cascade delete (default if finalizer exists)
+
 argocd app delete my-web-app --cascade
 
 # Orphan delete (ignore finalizer, keep resources)

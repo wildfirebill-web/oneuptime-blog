@@ -18,6 +18,7 @@ The `-var` flag takes a key-value pair in the format `"variable_name=value"`:
 
 ```bash
 # Pass a single string variable
+
 terraform plan -var="environment=production"
 
 # Pass a number variable

@@ -53,6 +53,7 @@ First, determine what type of module you are trying to use:
 
 ```bash
 # Check if module exists in your Ansible installation
+
 # This shows documentation if module is available
 ansible-doc module_name
 

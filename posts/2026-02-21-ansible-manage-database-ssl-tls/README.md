@@ -33,6 +33,7 @@ First, create a CA and generate server certificates. In production, you would us
 
 ```yaml
 # playbooks/generate-certificates.yml
+
 ---
 - name: Generate SSL certificates for databases
   hosts: localhost

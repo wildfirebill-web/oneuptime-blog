@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Networking, NAT, IPv4, Cisco, Concepts
 
-Description: Learn the four NAT address types — Inside Local, Inside Global, Outside Local, and Outside Global — and how they map traffic through a NAT device.
+Description: Learn the four NAT address types - Inside Local, Inside Global, Outside Local, and Outside Global - and how they map traffic through a NAT device.
 
 ## The Four NAT Address Types
 
@@ -19,7 +19,7 @@ Cisco defines four terms to describe addresses at different points in a NAT tran
 
 ## Visual Map
 
-```
+```text
 [Internal Host]          [NAT Router]          [Internet Host]
 192.168.1.10     →     203.0.113.1     →     8.8.8.8
 
@@ -40,7 +40,7 @@ In most home/office NAT configurations:
 
 When hosting a server inside:
 
-```
+```text
 External Client → 203.0.113.1:80 (Inside Global) → 192.168.1.10:80 (Inside Local)
 ```
 
@@ -62,7 +62,7 @@ show ip nat translations
 
 This happens when **Destination NAT** is applied to outside traffic (less common). Example: you translate 10.0.0.1 → 8.8.8.8 for internal clients:
 
-```
+```text
 Outside Local:  10.0.0.1  (what inside hosts send to)
 Outside Global: 8.8.8.8   (actual destination)
 ```
@@ -71,6 +71,7 @@ Outside Global: 8.8.8.8   (actual destination)
 
 ```python
 # Simulate a NAT translation table entry
+
 class NATEntry:
     def __init__(self, inside_local, inside_global, outside_local, outside_global, proto='tcp'):
         self.proto = proto

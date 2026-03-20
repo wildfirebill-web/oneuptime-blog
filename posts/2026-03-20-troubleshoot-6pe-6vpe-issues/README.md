@@ -14,6 +14,7 @@ Description: Diagnose and resolve common 6PE and 6VPE issues including BGP sessi
 
 ```bash
 # Cisco IOS - Check BGP sessions
+
 show bgp ipv6 unicast summary        # 6PE
 show bgp vpnv6 unicast all summary   # 6VPE
 
@@ -172,7 +173,7 @@ traceroute mpls ipv6 2001:db8:site-b::/48
 
 ## Common Error Messages and Fixes
 
-```
+```text
 Error: "IPv6 routing not enabled"
 Fix: ip routing + ipv6 unicast-routing
 

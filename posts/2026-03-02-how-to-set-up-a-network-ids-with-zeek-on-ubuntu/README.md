@@ -29,6 +29,7 @@ Zeek provides official packages for Ubuntu via its own repository:
 
 ```bash
 # Install dependencies
+
 sudo apt update
 sudo apt install -y curl gnupg
 

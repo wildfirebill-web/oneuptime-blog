@@ -18,6 +18,7 @@ The simplest form of unsubscription is removing the notification annotation from
 
 ```bash
 # Remove a specific notification subscription
+
 kubectl annotate application my-app -n argocd \
   notifications.argoproj.io/subscribe.on-sync-succeeded.slack-
 

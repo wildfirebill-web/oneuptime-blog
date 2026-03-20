@@ -27,6 +27,7 @@ Here is a straightforward policy that restricts AWS EC2 instance types:
 
 ```python
 # restrict-instance-types.sentinel
+
 # Limits EC2 instances to approved types
 
 import "tfplan/v2" as tfplan

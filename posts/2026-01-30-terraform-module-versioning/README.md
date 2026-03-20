@@ -64,6 +64,7 @@ Use comparison operators when you need flexibility:
 
 ```hcl
 # Greater than or equal to version 5.0.0
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = ">= 5.0.0"

@@ -32,6 +32,7 @@ provider "aws" {
 }
 
 # Task execution role
+
 resource "aws_iam_role" "ecs_task_execution" {
   name = "ecs-task-execution-role"
 

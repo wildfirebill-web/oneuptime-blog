@@ -26,6 +26,7 @@ Deploy Capsule using a Flux HelmRelease.
 
 ```yaml
 # infrastructure/capsule/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

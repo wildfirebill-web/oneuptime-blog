@@ -22,6 +22,7 @@ Design values that control webhook behavior and certificate management.
 
 ```yaml
 # values.yaml
+
 webhook:
   enabled: true
   name: myapp-validator

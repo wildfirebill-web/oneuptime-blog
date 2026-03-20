@@ -54,6 +54,7 @@ cdn-deploy/
 
 ```yaml
 # group_vars/all.yml
+
 app_name: myapp
 app_domain: www.example.com
 cdn_domain: cdn.example.com

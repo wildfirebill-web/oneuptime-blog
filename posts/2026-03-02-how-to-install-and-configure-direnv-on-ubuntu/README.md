@@ -22,6 +22,7 @@ direnv is a shell extension that loads and unloads environment variables based o
 
 ```bash
 # Install from Ubuntu repositories
+
 sudo apt update
 sudo apt install -y direnv
 

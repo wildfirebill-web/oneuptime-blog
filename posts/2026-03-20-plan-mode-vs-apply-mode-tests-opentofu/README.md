@@ -28,7 +28,7 @@ run "check_resource_configuration" {
 ```
 
 **Advantages of plan mode:**
-- Very fast—no API calls to create resources.
+- Very fast-no API calls to create resources.
 - No cloud credentials required if using mock providers.
 - Zero cost.
 - Safe to run on every commit.
@@ -61,7 +61,7 @@ run "instance_gets_public_ip" {
 ```
 
 **Advantages of apply mode:**
-- Full fidelity—tests real cloud behaviour.
+- Full fidelity-tests real cloud behaviour.
 - Can assert on any attribute, including provider-generated ones.
 - Catches real-world failure modes.
 
@@ -77,7 +77,8 @@ Use plan mode for cheap structural checks and apply mode for end-to-end verifica
 ```hcl
 # tests/ec2.tftest.hcl
 
-# Fast structural check — runs on every PR
+# Fast structural check - runs on every PR
+
 run "instance_uses_correct_type" {
   command = plan
 
@@ -87,7 +88,7 @@ run "instance_uses_correct_type" {
   }
 }
 
-# Full apply — runs on merge to main only
+# Full apply - runs on merge to main only
 run "instance_is_running_after_apply" {
   command = apply
 
@@ -125,7 +126,7 @@ jobs:
     steps:
       - uses: opentofu/setup-opentofu@v1
       - run: tofu init
-      # Only plan-mode tests—fast and free
+      # Only plan-mode tests-fast and free
       - run: tofu test -filter=tests/unit/
 
   apply-tests:
@@ -136,7 +137,7 @@ jobs:
     steps:
       - uses: opentofu/setup-opentofu@v1
       - run: tofu init
-      # Full apply tests—thorough but slow
+      # Full apply tests-thorough but slow
       - run: tofu test -filter=tests/integration/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

@@ -26,6 +26,7 @@ YAML uses spaces, not tabs. Two spaces is the standard indentation:
 
 ```yaml
 # WRONG: mixed indentation
+
 - hosts: all
   tasks:
       - name: Task one  # 6 spaces instead of 4

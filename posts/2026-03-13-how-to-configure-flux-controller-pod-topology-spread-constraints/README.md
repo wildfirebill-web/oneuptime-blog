@@ -28,6 +28,7 @@ Common topology keys include:
 
 ```yaml
 # clusters/my-cluster/flux-system/topology-spread-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

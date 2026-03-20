@@ -18,6 +18,7 @@ Start with the provider configuration and some shared variables:
 
 ```hcl
 # main.tf - Provider and backend configuration
+
 terraform {
   required_version = ">= 1.0"
 

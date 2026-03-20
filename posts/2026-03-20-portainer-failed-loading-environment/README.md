@@ -1,10 +1,10 @@
-# How to Fix "Failed Loading Environment" Errors in Portainer
+# How to Fix 'Failed Loading Environment' Errors in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Environments, Self-Hosted
 
-Description: Resolve "Failed Loading Environment" errors in Portainer caused by unreachable agents, stale environment data, credential issues, or Docker socket problems.
+Description: Resolve 'Failed Loading Environment' errors in Portainer caused by unreachable agents, stale environment data, credential issues, or Docker socket problems.
 
 ## Introduction
 
@@ -14,10 +14,10 @@ Description: Resolve "Failed Loading Environment" errors in Portainer caused by 
 
 Different environment types have different failure causes:
 
-1. **Local Docker** — Portainer can't access the Docker socket
-2. **Docker Agent** — Portainer can't reach the remote agent
-3. **Kubernetes** — Portainer can't reach the Kubernetes API
-4. **Edge Agent** — Edge tunnel is down
+1. **Local Docker** - Portainer can't access the Docker socket
+2. **Docker Agent** - Portainer can't reach the remote agent
+3. **Kubernetes** - Portainer can't reach the Kubernetes API
+4. **Edge Agent** - Edge tunnel is down
 
 Check which environment is failing:
 1. Go to **Environments** in Portainer
@@ -27,6 +27,7 @@ Check which environment is failing:
 
 ```bash
 # For local Docker environment, check Docker socket
+
 ls -la /var/run/docker.sock
 docker ps  # If this works on the host, the socket is fine
 
@@ -43,7 +44,7 @@ sudo systemctl status docker
 # Test the socket directly
 curl --unix-socket /var/run/docker.sock http://localhost/v1.44/version
 
-# If the above fails — restart Docker
+# If the above fails - restart Docker
 sudo systemctl restart docker
 
 # Restart Portainer after Docker restarts

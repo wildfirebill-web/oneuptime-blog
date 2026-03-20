@@ -16,6 +16,7 @@ Kafka brokers listen for client and inter-broker connections on addresses define
 # /etc/kafka/server.properties (or /opt/kafka/config/server.properties)
 
 # Unique broker ID
+
 broker.id=1
 
 # Listeners: comma-separated list of name://host:port

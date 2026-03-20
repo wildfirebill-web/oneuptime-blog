@@ -1,4 +1,4 @@
-# How to Set Up Custom Metrics Collection in Rancher
+# How to Set Up Custom Metrics Collection in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Beyond infrastructure metrics, custom application metrics provide business-level
 
 ```python
 # app.py - Flask app with Prometheus metrics
+
 from flask import Flask, request
 from prometheus_client import Counter, Histogram, Gauge, make_wsgi_app
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
@@ -376,4 +377,4 @@ spec:
 
 ## Conclusion
 
-Custom metrics transform Rancher monitoring from infrastructure-focused to business-focused observability. By instrumenting applications with the Prometheus client libraries and configuring ServiceMonitors, you create a feedback loop between business outcomes and system behavior. The key is to instrument what matters—error rates, latency percentiles, and business KPIs—and configure alerts that notify your team before customers notice degradation.
+Custom metrics transform Rancher monitoring from infrastructure-focused to business-focused observability. By instrumenting applications with the Prometheus client libraries and configuring ServiceMonitors, you create a feedback loop between business outcomes and system behavior. The key is to instrument what matters-error rates, latency percentiles, and business KPIs-and configure alerts that notify your team before customers notice degradation.

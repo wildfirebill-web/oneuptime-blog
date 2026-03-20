@@ -6,7 +6,7 @@ Tags: OpenTofu, Workspaces, Configuration Logic, HCL, Infrastructure as Code
 
 Description: Learn how to use the terraform.workspace built-in value in OpenTofu to write a single configuration that behaves differently across environments.
 
-`terraform.workspace` is a built-in string value that always holds the name of the currently selected workspace. By referencing it in your HCL, you can drive environment-specific behavior — instance sizes, replica counts, feature flags — from a single configuration without duplicating code.
+`terraform.workspace` is a built-in string value that always holds the name of the currently selected workspace. By referencing it in your HCL, you can drive environment-specific behavior - instance sizes, replica counts, feature flags - from a single configuration without duplicating code.
 
 ## Reading the Current Workspace
 
@@ -14,6 +14,7 @@ Access the value directly in any expression:
 
 ```hcl
 # Output the active workspace name for debugging
+
 output "current_workspace" {
   value = terraform.workspace
 }
@@ -132,7 +133,7 @@ locals {
 ## Limitations
 
 - `terraform.workspace` is evaluated at plan time, so it cannot be used in `provider` block `alias` names.
-- Avoid complex business logic solely based on workspace — prefer variable files for configurations that change frequently.
+- Avoid complex business logic solely based on workspace - prefer variable files for configurations that change frequently.
 - Workspaces share the same provider configuration, which can be a limitation for multi-account setups.
 
 ## Conclusion

@@ -243,6 +243,7 @@ sudo tee /usr/local/etc/rc.d/podman_webapp << 'RCEOF'
 #!/bin/sh
 
 # PROVIDE: podman_webapp
+
 # REQUIRE: DAEMON podman
 # KEYWORD: shutdown
 
@@ -309,7 +310,7 @@ podman run -d docker.io/library/redis:7
 
 You can run both jails and Podman containers on the same system for different workloads.
 
-## Resource Limits
+Resource Limits
 
 Use FreeBSD's rctl to limit container resources:
 

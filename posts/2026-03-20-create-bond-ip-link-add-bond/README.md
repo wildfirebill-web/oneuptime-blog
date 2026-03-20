@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bonding, Linux, Networking, ip-command, High-Availability, IPv4
+Tags: Bonding, Linux, Networking, Ip-command, High-Availability, IPv4
 
 Description: Create a network bond using the ip link command to aggregate multiple NICs for redundancy or increased throughput on Linux systems.
 
 ## Introduction
 
-Network bonding combines multiple physical NICs into a single logical interface, providing either fault tolerance (active-backup) or load balancing (802.3ad LACP). The `ip link add type bond` command creates bonds without requiring persistent configuration files — useful for testing or scripting.
+Network bonding combines multiple physical NICs into a single logical interface, providing either fault tolerance (active-backup) or load balancing (802.3ad LACP). The `ip link add type bond` command creates bonds without requiring persistent configuration files - useful for testing or scripting.
 
 ## Creating a Bond Interface
 
 ```bash
 # Create a bond interface named bond0
+
 sudo ip link add bond0 type bond
 
 # Set the bonding mode (4 = 802.3ad LACP, 1 = active-backup)

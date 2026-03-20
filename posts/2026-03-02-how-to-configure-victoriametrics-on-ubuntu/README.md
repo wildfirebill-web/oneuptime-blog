@@ -22,6 +22,7 @@ VictoriaMetrics is a fast, cost-effective time-series database that is compatibl
 
 ```bash
 # Download the latest binary
+
 VERSION="v1.96.0"
 curl -Lo /tmp/victoria-metrics.tar.gz \
     https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/${VERSION}/victoria-metrics-linux-amd64-${VERSION}.tar.gz

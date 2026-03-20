@@ -29,12 +29,13 @@ In this comprehensive guide, we will explore how to replace sidecar proxies with
 
 Traditional service meshes inject a sidecar proxy container (typically Envoy) into every pod. While this approach provides powerful features, it comes with significant drawbacks:
 
-### Resource Overhead
+Resource Overhead
 
 Each sidecar proxy consumes CPU and memory resources:
 
 ```yaml
 # Typical Istio sidecar resource requirements per pod
+
 # These resource requests are multiplied by the number of pods in your cluster
 # For a cluster with 1000 pods, you're looking at 100+ CPU cores just for sidecars
 resources:
@@ -801,7 +802,7 @@ jq -r '
 ' benchmark-results.json
 ```
 
-### Resource Usage Comparison
+Resource Usage Comparison
 
 ```yaml
 # Script to compare resource usage between sidecar and eBPF approaches

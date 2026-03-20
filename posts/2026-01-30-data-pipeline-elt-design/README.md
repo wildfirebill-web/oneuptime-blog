@@ -192,6 +192,7 @@ your_project/
 
 ```yaml
 # dbt_project.yml
+
 # This file configures your dbt project settings
 
 name: 'analytics'

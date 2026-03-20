@@ -28,6 +28,7 @@ Start by defining secure PSPs that application teams can use:
 
 ```yaml
 # restricted-psp.yaml
+
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:

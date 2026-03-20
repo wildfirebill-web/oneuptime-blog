@@ -14,6 +14,7 @@ Terragrunt is a thin wrapper around OpenTofu (and Terraform) that provides extra
 
 ```bash
 # Install OpenTofu
+
 brew install opentofu    # macOS
 # or follow https://opentofu.org/docs/intro/install/
 
@@ -89,7 +90,7 @@ EOF
 
 A typical Terragrunt project using OpenTofu looks like this:
 
-```
+```text
 infrastructure/
 ├── terragrunt.hcl          # Root config (sets terraform_binary = "tofu")
 ├── common_vars.yaml        # Shared variables
@@ -164,4 +165,4 @@ terragrunt run-all apply
 
 ## Conclusion
 
-Configuring Terragrunt to use OpenTofu is straightforward — set `terraform_binary = "tofu"` in your root `terragrunt.hcl` or export `TERRAGRUNT_TFPATH`. From there, all Terragrunt features like DRY backends, dependency management, and `run-all` work seamlessly with OpenTofu.
+Configuring Terragrunt to use OpenTofu is straightforward - set `terraform_binary = "tofu"` in your root `terragrunt.hcl` or export `TERRAGRUNT_TFPATH`. From there, all Terragrunt features like DRY backends, dependency management, and `run-all` work seamlessly with OpenTofu.

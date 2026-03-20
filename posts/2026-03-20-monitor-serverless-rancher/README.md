@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, serverless, monitoring, prometheus, grafana, observability
+Tags: Rancher, Serverless, Monitoring, Prometheus, Grafana, Observability
 
 Description: Comprehensive guide to monitoring serverless workloads in Rancher with Prometheus, Grafana, and distributed tracing.
 
@@ -23,6 +23,7 @@ Monitoring serverless workloads presents unique challenges: functions scale to z
 
 ```yaml
 # knative-metrics-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

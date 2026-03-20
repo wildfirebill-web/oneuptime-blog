@@ -32,6 +32,7 @@ Tag instances for scheduling:
 
 ```bash
 # Tag instances that should be auto-scheduled
+
 aws ec2 create-tags \
   --resources i-0abc123 i-0def456 i-0ghi789 \
   --tags Key=AutoSchedule,Value=true Key=Schedule,Value=business-hours

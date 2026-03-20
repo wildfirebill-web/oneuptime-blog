@@ -25,6 +25,7 @@ Let's start with a simple fleet that mixes On-Demand and Spot instances:
 
 ```bash
 # Create a fleet with 10 instances: 3 On-Demand for baseline, 7 Spot for savings
+
 aws ec2 create-fleet \
   --type maintain \
   --target-capacity-specification '{

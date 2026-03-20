@@ -49,6 +49,7 @@ module "vpc" {
 
 ```hcl
 # When a repo contains multiple modules in subdirectories
+
 module "security_groups" {
   source = "github.com/myorg/aws-modules//security-groups?ref=v1.5.0"
 
@@ -67,7 +68,7 @@ module "iam_roles" {
 
 ```hcl
 module "internal_vpc" {
-  # Private repo — requires authentication
+  # Private repo - requires authentication
   source = "github.com/mycompany/private-infra-modules//networking/vpc?ref=v3.2.1"
 
   cidr_block   = "10.200.0.0/16"

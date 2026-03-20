@@ -40,6 +40,7 @@ Document what is currently deployed and how:
 
 ```bash
 # List all resources in the target namespace
+
 kubectl get all -n production -o wide
 
 # Export current state for comparison

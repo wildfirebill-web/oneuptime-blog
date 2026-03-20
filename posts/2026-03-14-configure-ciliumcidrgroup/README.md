@@ -30,6 +30,7 @@ Apply the following Helm values to configure ciliumcidrgroup:
 
 ```yaml
 # cidrgroup-example.yaml
+
 # CiliumCIDRGroup resource definition
 apiVersion: cilium.io/v2alpha1
 kind: CiliumCIDRGroup

@@ -21,6 +21,7 @@ During failover, the non-production HANA instance on Node 2 is stopped to free r
 
 ```bash
 # Both nodes must have sufficient memory
+
 # Production HANA: e.g., 256 GB
 # QAS HANA on secondary: e.g., 64 GB
 # Total on secondary: 320 GB minimum

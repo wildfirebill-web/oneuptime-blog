@@ -19,6 +19,7 @@ sudo apt update
 sudo apt install hdparm -y
 
 # Verify installation
+
 hdparm --version
 ```
 

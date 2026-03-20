@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Snapshots, Data Protection
+Tags: Longhorn, Kubernetes, Storage, Snapshot, Data Protection
 
 Description: Learn how to create, manage, and restore from Longhorn volume snapshots to protect your data and enable point-in-time recovery.
 
@@ -37,6 +37,7 @@ Use the Longhorn `Snapshot` custom resource:
 
 ```yaml
 # longhorn-snapshot.yaml - Create a snapshot of a Longhorn volume
+
 apiVersion: longhorn.io/v1beta2
 kind: Snapshot
 metadata:

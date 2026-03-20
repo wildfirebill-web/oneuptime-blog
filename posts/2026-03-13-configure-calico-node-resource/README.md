@@ -24,6 +24,7 @@ Understanding the Node resource is essential for advanced BGP configurations, mu
 
 ```bash
 # List all Calico Node resources
+
 calicoctl get nodes
 
 # Inspect a specific node

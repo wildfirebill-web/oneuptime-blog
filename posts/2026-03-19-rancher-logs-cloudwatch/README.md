@@ -205,6 +205,7 @@ After logs are flowing to CloudWatch, use CloudWatch Insights for querying:
 
 ```bash
 # Find error logs
+
 fields @timestamp, @message
 | filter @message like /ERROR/
 | sort @timestamp desc

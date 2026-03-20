@@ -35,6 +35,7 @@ Before setting up HITL, you need:
 
 ```bash
 # Enable the Document AI API
+
 gcloud services enable documentai.googleapis.com
 
 # Grant the Document AI reviewer role to your review team

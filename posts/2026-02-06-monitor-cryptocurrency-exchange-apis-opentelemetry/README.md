@@ -36,6 +36,7 @@ Exchange REST APIs handle order placement, account queries, and withdrawal reque
 
 ```python
 # exchange_client.py - Instrumented exchange API client
+
 import time
 import hmac
 import hashlib

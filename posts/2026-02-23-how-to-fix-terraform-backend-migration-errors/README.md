@@ -49,6 +49,7 @@ Someone (or a CI job) has a lock on the state file. Terraform cannot migrate whi
 
 ```bash
 # Only use force-unlock if you are SURE no other operation is running
+
 terraform force-unlock a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ```
 

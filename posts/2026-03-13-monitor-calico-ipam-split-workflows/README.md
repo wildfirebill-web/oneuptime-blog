@@ -31,6 +31,7 @@ The primary tool for IPAM visibility is `calicoctl ipam show`. Use it to see uti
 
 ```bash
 # Show IP block allocation summary per pool
+
 calicoctl ipam show --show-blocks
 
 # Show all allocated IP addresses (verbose - use for investigation, not routine monitoring)

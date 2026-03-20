@@ -69,6 +69,7 @@ OUTPUT_DIR="./api-docs"
 mkdir -p $OUTPUT_DIR
 
 # Generate index
+
 cat > $OUTPUT_DIR/index.md << 'HEADER'
 # API Documentation
 

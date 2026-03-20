@@ -65,6 +65,7 @@ The following command verifies your Istio installation is ready for A/B testing 
 
 ```bash
 # Verify Istio installation and check that all components are running
+
 istioctl version
 
 # Check that Istio pods are healthy in the istio-system namespace

@@ -16,7 +16,7 @@ arp -a
 
 Sample output:
 
-```
+```yaml
 Interface: 192.168.1.100 --- 0x4
   Internet Address      Physical Address      Type
   192.168.1.1           aa-bb-cc-dd-ee-ff     dynamic
@@ -37,6 +37,7 @@ Interface: 192.168.1.100 --- 0x4
 
 ```cmd
 # Show ARP table for a specific interface (by IP)
+
 arp -a 192.168.1.100
 
 # Show all interfaces
@@ -63,7 +64,7 @@ Get-NetNeighbor | Select-Object IPAddress, LinkLayerAddress, State | Format-Tabl
 
 Sample PowerShell output:
 
-```
+```text
 IPAddress       LinkLayerAddress   State
 ---------       ----------------   -----
 192.168.1.1     AA-BB-CC-DD-EE-FF  Reachable

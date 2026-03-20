@@ -30,6 +30,7 @@ The best approach is to enable encryption at the account level so every new volu
 
 ```bash
 # Enable default EBS encryption in the current region
+
 aws ec2 enable-ebs-encryption-by-default
 
 # Verify it's enabled

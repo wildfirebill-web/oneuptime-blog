@@ -40,6 +40,7 @@ As of Flux v2.x, the stable API versions are as follows.
 
 ```yaml
 # Source API - v1 is stable
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 

@@ -35,6 +35,7 @@ If you send an access token to Cloud Run, it will be rejected. You need an ident
 
 ```bash
 # Wrong - this generates an access token
+
 TOKEN=$(gcloud auth print-access-token)
 
 # Correct - this generates an identity token with the right audience

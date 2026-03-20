@@ -16,6 +16,7 @@ Training large ML models requires distributing work across multiple GPUs and nod
 kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone?ref=v1.7.0"
 
 # Verify installation
+
 kubectl get pods -n kubeflow
 kubectl get crd | grep kubeflow
 ```

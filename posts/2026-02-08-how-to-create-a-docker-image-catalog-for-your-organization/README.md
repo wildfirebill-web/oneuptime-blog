@@ -30,6 +30,7 @@ Your catalog lives in a container registry. The choice depends on your infrastru
 
 ```bash
 # Option 1: Self-hosted registry for full control
+
 docker run -d -p 5000:5000 --name registry \
   -v /data/registry:/var/lib/registry \
   registry:2
@@ -315,9 +316,9 @@ yq '.images[]' catalog.yaml | while read -r image; do
     echo ""
     echo "Current version: \`$version\`"
     echo ""
-    echo "\`\`\`dockerfile"
+    echo "```dockerfile"
     echo "FROM myregistry.example.com/${name}:${version}"
-    echo "\`\`\`"
+    echo "```"
     echo ""
 done
 ```

@@ -8,12 +8,13 @@ Description: Learn how to use Checkov to statically scan OpenTofu configurations
 
 ## Introduction
 
-Checkov is a static analysis tool from Bridgecrew that scans OpenTofu (and Terraform) configurations for hundreds of built-in security and compliance checks. Unlike OPA which evaluates plan output, Checkov analyzes `.tf` files directly — catching issues as early as the pre-commit stage.
+Checkov is a static analysis tool from Bridgecrew that scans OpenTofu (and Terraform) configurations for hundreds of built-in security and compliance checks. Unlike OPA which evaluates plan output, Checkov analyzes `.tf` files directly - catching issues as early as the pre-commit stage.
 
 ## Installing Checkov
 
 ```bash
 # Install via pip
+
 pip install checkov
 
 # Or via Docker
@@ -43,7 +44,7 @@ checkov -d . --output junitxml --output-file results.xml
 
 ## Sample Output
 
-```
+```hcl
 Check: CKV_AWS_20: "Ensure the S3 bucket has access control list (ACL) applied and is private"
   FAILED for resource: aws_s3_bucket.app_data
   File: /main.tf:15-25
@@ -93,7 +94,7 @@ resource "aws_s3_bucket_versioning" "app_data" {
 resource "aws_s3_bucket" "public_website" {
   bucket = "my-public-website"
 
-  #checkov:skip=CKV_AWS_20:This bucket is intentionally public — it hosts a static website
+  #checkov:skip=CKV_AWS_20:This bucket is intentionally public - it hosts a static website
   #checkov:skip=CKV2_AWS_6:Public access block disabled intentionally for website hosting
 }
 ```

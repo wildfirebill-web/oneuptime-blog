@@ -29,6 +29,7 @@ Manage the Cluster API installation itself through Flux to keep it version-contr
 
 ```yaml
 # infrastructure/controllers/cluster-api/kustomization.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

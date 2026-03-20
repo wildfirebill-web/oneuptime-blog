@@ -320,6 +320,7 @@ Another approach uses dedicated node pools for specific workload types. This pro
 
 ```yaml
 # Label nodes in the reserved pool
+
 apiVersion: v1
 kind: Node
 metadata:

@@ -272,6 +272,7 @@ You can test this locally by sending SIGTERM to your process.
 
 ```bash
 # Start the server
+
 go run main.go &
 
 # Send a request that takes a while

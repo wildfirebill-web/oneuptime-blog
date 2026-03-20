@@ -21,6 +21,7 @@ variable "database_password" {
 }
 
 # This will show as (sensitive value) in plan output
+
 output "masked" {
   value     = var.database_password
   sensitive = true

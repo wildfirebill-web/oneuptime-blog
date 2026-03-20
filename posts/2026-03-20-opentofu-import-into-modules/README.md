@@ -1,4 +1,4 @@
-# How to Import Resources into Modules in OpenTofu
+# How to Import Resources into Modules in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ When adopting OpenTofu for existing infrastructure, resources often need to be i
 
 ```hcl
 # Root module: import.tf
+
 import {
   to = module.networking.aws_vpc.main
   id = "vpc-0abc123456"

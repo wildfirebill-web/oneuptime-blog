@@ -1,4 +1,4 @@
-# How to Use .tfvars Files to Set Variables in OpenTofu
+# How to Use .tfvars Files to Set Variables in OpenTofu - Set Variables
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,14 +8,15 @@ Description: Learn how to use .tfvars files to organize and pass variable values
 
 ---
 
-`.tfvars` files separate variable values from variable declarations, making your configuration reusable across environments. You define variables once in `.tf` files and provide values in `.tfvars` files — one per environment, team, or use case.
+`.tfvars` files separate variable values from variable declarations, making your configuration reusable across environments. You define variables once in `.tf` files and provide values in `.tfvars` files - one per environment, team, or use case.
 
 ---
 
 ## Creating a .tfvars File
 
 ```hcl
-# terraform.tfvars — values for your variables (NOT definitions)
+# terraform.tfvars - values for your variables (NOT definitions)
+
 # This file is automatically loaded by OpenTofu
 
 region         = "us-east-1"
@@ -37,7 +38,7 @@ allowed_ports = [80, 443]
 ## Variable Definition vs Value File
 
 ```hcl
-# variables.tf — WHERE variables are DEFINED (structure only)
+# variables.tf - WHERE variables are DEFINED (structure only)
 variable "region" {
   type        = string
   description = "AWS region"
@@ -50,7 +51,7 @@ variable "instance_count" {
 ```
 
 ```hcl
-# terraform.tfvars — WHERE values are SET
+# terraform.tfvars - WHERE values are SET
 region         = "us-east-1"
 instance_count = 3
 ```
@@ -61,7 +62,7 @@ instance_count = 3
 
 Create separate `.tfvars` files for each environment:
 
-```
+```text
 infrastructure/
 ├── variables.tf
 ├── main.tf
@@ -101,8 +102,8 @@ OpenTofu automatically loads specific `.tfvars` files:
 | `terraform.tfvars` | Yes |
 | `terraform.tfvars.json` | Yes |
 | `*.auto.tfvars` | Yes (all matching files) |
-| `production.tfvars` | No — must use `-var-file` |
-| `staging.tfvars` | No — must use `-var-file` |
+| `production.tfvars` | No - must use `-var-file` |
+| `staging.tfvars` | No - must use `-var-file` |
 
 ```bash
 # These are equivalent:
@@ -115,7 +116,7 @@ tofu plan -var-file="terraform.tfvars" # explicit load
 ## Multiple -var-file Flags
 
 ```bash
-# Load multiple tfvars files — later files override earlier ones
+# Load multiple tfvars files - later files override earlier ones
 tofu apply \
   -var-file="common.tfvars" \
   -var-file="production.tfvars" \
@@ -130,7 +131,7 @@ tofu apply \
 ## .gitignore for Sensitive tfvars
 
 ```gitignore
-# .gitignore — never commit files with real secrets
+# .gitignore - never commit files with real secrets
 *.tfvars
 *.tfvars.json
 

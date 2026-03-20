@@ -37,6 +37,7 @@ When running Podman as root, the socket is typically at `/run/podman/podman.sock
 
 ```bash
 # Start the service
+
 sudo podman system service --time=0 unix:///run/podman/podman.sock &
 
 # Check socket permissions

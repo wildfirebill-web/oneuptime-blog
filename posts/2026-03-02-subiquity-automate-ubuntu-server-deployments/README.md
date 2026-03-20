@@ -170,6 +170,7 @@ The identity section requires a pre-hashed password:
 
 ```bash
 # Generate a SHA-512 hashed password
+
 openssl passwd -6 'your-secure-password'
 
 # Or using Python

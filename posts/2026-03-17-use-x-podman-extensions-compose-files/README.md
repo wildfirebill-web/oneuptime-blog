@@ -18,6 +18,7 @@ The Compose specification allows custom extension fields prefixed with `x-`. pod
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

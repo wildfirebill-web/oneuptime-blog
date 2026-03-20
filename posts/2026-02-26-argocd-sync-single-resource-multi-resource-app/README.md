@@ -16,6 +16,7 @@ Before you can sync a single resource, you need its exact identifier. Every reso
 
 ```bash
 # List all resources in the application
+
 argocd app resources my-large-app
 
 # Example output:

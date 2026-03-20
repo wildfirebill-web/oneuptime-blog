@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Problem: variable is undefined or None
+
 ip: "{{ my_ip | ipaddr }}"  # Fails if my_ip is undefined
 
 # Fix: provide a default

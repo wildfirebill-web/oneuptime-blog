@@ -47,6 +47,7 @@ If the conflict is caused by a specific instrumentation, disable it:
 
 ```bash
 # Disable gRPC instrumentation if it conflicts with your gRPC version
+
 java -javaagent:opentelemetry-javaagent.jar \
      -Dotel.instrumentation.grpc.enabled=false \
      -jar myapp.jar

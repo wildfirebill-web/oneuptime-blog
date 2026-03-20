@@ -27,6 +27,7 @@ Create `plugins/vars/consul_vars.py`:
 
 ```python
 # consul_vars.py - Vars plugin that loads variables from Consul KV
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

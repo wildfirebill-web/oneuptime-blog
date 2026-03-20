@@ -31,6 +31,7 @@ Goal: machines on `10.1.0.0/24` can reach machines on `10.2.0.0/24` through the 
 
 ```bash
 # Verify the GRE kernel module is available
+
 lsmod | grep gre
 
 # Load it if not present

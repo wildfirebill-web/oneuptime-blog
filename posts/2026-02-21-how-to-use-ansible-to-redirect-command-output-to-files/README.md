@@ -16,6 +16,7 @@ The `>` operator writes stdout to a file, overwriting any existing content. The 
 
 ```yaml
 # basic_redirect.yml - Basic output redirection
+
 ---
 - name: Basic output redirection examples
   hosts: all

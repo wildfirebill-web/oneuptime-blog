@@ -28,6 +28,7 @@ Before changing timeouts, measure the real network latency:
 
 ```bash
 # From the Collector pod, measure round-trip time to the backend
+
 kubectl exec -it otel-collector-pod -- sh -c "
   for i in 1 2 3 4 5; do
     start=\$(date +%s%N)

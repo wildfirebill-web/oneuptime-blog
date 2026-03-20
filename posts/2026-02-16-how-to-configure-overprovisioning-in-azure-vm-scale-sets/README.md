@@ -40,6 +40,7 @@ The entire process happens transparently. You do not see the extra instances in 
 
 ```bash
 # Check if overprovisioning is enabled on your scale set
+
 az vmss show \
   --resource-group myResourceGroup \
   --name myScaleSet \

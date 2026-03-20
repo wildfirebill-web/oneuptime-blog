@@ -22,6 +22,7 @@ Traffic shifting issues manifest as all traffic going to one version, weights no
 
 ```bash
 # Check CiliumEnvoyConfig status
+
 kubectl get ciliumenvoyconfigs -n default -o yaml
 
 # Verify Envoy weighted cluster configuration

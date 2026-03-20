@@ -40,6 +40,7 @@ Jinja2 template for the backup service unit:
 
 ```jinja2
 # roles/systemd_timer/templates/backup.service.j2
+
 [Unit]
 Description={{ timer_description | default('Scheduled backup task') }}
 After=network-online.target

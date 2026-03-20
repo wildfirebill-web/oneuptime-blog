@@ -14,6 +14,7 @@ Azure Policy lets you enforce organizational standards and assess compliance acr
 
 ```hcl
 # main.tf - Policy to require tags on all resources
+
 resource "azurerm_policy_definition" "require_tags" {
   name         = "require-required-tags"
   policy_type  = "Custom"

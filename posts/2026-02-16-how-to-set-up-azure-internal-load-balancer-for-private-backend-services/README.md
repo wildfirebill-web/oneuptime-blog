@@ -43,6 +43,7 @@ The key difference from a public load balancer:
 
 ```bash
 # Create a Standard Internal Load Balancer with a private frontend IP
+
 az network lb create \
   --resource-group myResourceGroup \
   --name myInternalLB \

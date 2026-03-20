@@ -277,6 +277,7 @@ Check that the connection from the gateway reaches the sidecar encrypted:
 
 ```bash
 # From a test pod
+
 kubectl exec -it test-pod -- curl -v --resolve api.myapp.com:8443:$SERVICE_IP https://api.myapp.com:8443/health
 ```
 

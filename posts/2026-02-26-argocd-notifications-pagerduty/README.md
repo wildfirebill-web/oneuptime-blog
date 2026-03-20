@@ -161,6 +161,7 @@ Only subscribe production-critical applications to PagerDuty to avoid alert fati
 
 ```bash
 # Subscribe production applications
+
 kubectl annotate app production-api -n argocd \
   notifications.argoproj.io/subscribe.on-sync-failed-pagerduty.pagerduty=""
 kubectl annotate app production-api -n argocd \

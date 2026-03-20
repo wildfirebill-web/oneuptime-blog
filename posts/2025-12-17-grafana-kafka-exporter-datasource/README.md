@@ -104,6 +104,7 @@ Key command-line flags for Kafka Exporter:
 
 ```bash
 # Kafka connection
+
 --kafka.server=broker:9092           # Kafka broker address (can specify multiple)
 --kafka.version=2.8.0               # Kafka version
 

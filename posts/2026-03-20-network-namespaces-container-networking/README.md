@@ -12,7 +12,7 @@ Docker and Kubernetes use Linux network namespaces to give each container its ow
 
 ## How Docker Uses Namespaces
 
-```
+```text
 Host                         Container (namespace: ns-c1)
   docker0 (172.17.0.1)          eth0 (172.17.0.2)
       |                              |
@@ -41,6 +41,7 @@ ip netns add container1
 
 ```bash
 # Create veth pair
+
 ip link add veth-host type veth peer name veth-cont
 
 # Move container-side into namespace

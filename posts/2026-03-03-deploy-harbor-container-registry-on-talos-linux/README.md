@@ -40,6 +40,7 @@ Before starting, make sure you have:
 
 ```bash
 # Add the Harbor Helm repository
+
 helm repo add harbor https://helm.goharbor.io
 
 # Update the chart cache

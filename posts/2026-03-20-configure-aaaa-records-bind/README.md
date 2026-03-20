@@ -54,6 +54,7 @@ To add an AAAA record to an existing zone, open the zone file and add entries af
 
 ```bash
 # Edit the zone file
+
 vi /var/named/example.com.zone
 
 # Add AAAA record for www (after the www A record)

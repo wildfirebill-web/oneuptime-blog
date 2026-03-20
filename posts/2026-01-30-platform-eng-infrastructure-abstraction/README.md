@@ -72,6 +72,7 @@ Instead of exposing infrastructure primitives, expose what developers actually w
 
 ```yaml
 # Bad: Too much infrastructure detail exposed
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -133,6 +133,7 @@ Configure Actuator to expose health endpoints:
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

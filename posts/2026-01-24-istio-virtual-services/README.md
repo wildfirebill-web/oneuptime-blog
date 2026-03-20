@@ -35,6 +35,7 @@ Let's start with a simple VirtualService that routes traffic to a single backend
 
 ```yaml
 # Basic VirtualService for internal service routing
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

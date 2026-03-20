@@ -1,4 +1,4 @@
-# How to Deploy Open WebUI for AI Chat via Portainer
+# How to Deploy Open WebUI for AI Chat via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Ensure your system meets the requirements:
 
 ```bash
 # Check available resources
+
 free -h
 nproc
 df -h

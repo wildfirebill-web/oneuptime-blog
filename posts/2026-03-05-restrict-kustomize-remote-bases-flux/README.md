@@ -16,6 +16,7 @@ A Kustomize overlay can reference a remote base like this:
 
 ```yaml
 # kustomization.yaml with a remote base - potential security risk
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

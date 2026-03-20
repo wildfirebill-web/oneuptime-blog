@@ -320,6 +320,7 @@ flowchart TB
 
 ```yaml
 # CloudFormation template
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ALBListener:

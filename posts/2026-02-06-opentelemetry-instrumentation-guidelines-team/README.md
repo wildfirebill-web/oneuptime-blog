@@ -31,6 +31,7 @@ Not every function needs a span. Too many spans create noise, increase costs, an
 
 ```yaml
 # instrumentation-guidelines.yaml
+
 # What to instrument and what to skip.
 spans:
   always_instrument:

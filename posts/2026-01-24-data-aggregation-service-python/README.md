@@ -54,6 +54,7 @@ Let us start with the fundamental building blocks. These classes define what a m
 
 ```python
 # models.py
+
 # Core data structures for the aggregation service
 from dataclasses import dataclass, field
 from datetime import datetime

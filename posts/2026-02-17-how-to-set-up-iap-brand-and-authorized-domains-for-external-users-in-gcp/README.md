@@ -32,6 +32,7 @@ The brand is the OAuth consent screen configuration. You can create it through t
 
 ```bash
 # Create an IAP brand for external users
+
 gcloud iap oauth-brands create \
     --application_title="My Partner Portal" \
     --support_email="support@company.com" \

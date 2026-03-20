@@ -191,6 +191,7 @@ Not every decision needs an ADR. Use ADRs for decisions that are significant and
 
 ```yaml
 # adr/decision-criteria.yaml
+
 # When to write a Terraform ADR
 
 always_write_adr:

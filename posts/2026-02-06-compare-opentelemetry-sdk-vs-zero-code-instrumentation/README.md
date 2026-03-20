@@ -27,6 +27,7 @@ eBPF (extended Berkeley Packet Filter) lets you attach programs to kernel and us
 
 ```yaml
 # Example: Deploying an eBPF-based instrumentation agent
+
 # This runs as a DaemonSet and instruments all pods on the node
 apiVersion: apps/v1
 kind: DaemonSet

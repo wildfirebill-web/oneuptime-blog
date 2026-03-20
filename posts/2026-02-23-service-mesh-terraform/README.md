@@ -24,6 +24,7 @@ Istio is best installed using its official Helm charts, which split the installa
 
 ```hcl
 # Create the istio-system namespace
+
 resource "kubernetes_namespace" "istio_system" {
   metadata {
     name = "istio-system"

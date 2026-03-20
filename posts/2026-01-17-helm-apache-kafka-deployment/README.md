@@ -64,6 +64,7 @@ flowchart TB
 
 ```bash
 # Add Strimzi repository
+
 helm repo add strimzi https://strimzi.io/charts/
 helm repo update
 

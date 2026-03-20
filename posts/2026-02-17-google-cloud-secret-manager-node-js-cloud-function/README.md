@@ -29,6 +29,7 @@ First, create some secrets in Secret Manager.
 
 ```bash
 # Create a secret for your database password
+
 echo -n "my-super-secret-password" | \
   gcloud secrets create db-password \
   --data-file=- \

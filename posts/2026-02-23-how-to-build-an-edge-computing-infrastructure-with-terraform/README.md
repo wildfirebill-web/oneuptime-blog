@@ -31,6 +31,7 @@ CloudFront Functions run at the edge with sub-millisecond startup times. They ar
 
 ```hcl
 # CloudFront function for URL rewriting
+
 resource "aws_cloudfront_function" "url_rewrite" {
   name    = "url-rewrite"
   runtime = "cloudfront-js-2.0"

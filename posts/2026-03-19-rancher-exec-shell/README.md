@@ -38,6 +38,7 @@ The terminal gives you an interactive shell inside the container. You can run co
 
 ```bash
 # Check the filesystem
+
 ls -la /app
 
 # View environment variables

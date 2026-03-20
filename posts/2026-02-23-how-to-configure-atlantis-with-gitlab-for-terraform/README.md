@@ -41,6 +41,7 @@ Scopes: api, read_repository, write_repository
 
 ```bash
 # Start Atlantis for GitLab
+
 atlantis server \
   --gitlab-user=atlantis-bot \
   --gitlab-token=glpat-xxxxxxxxxxxxxxxxxxxx \

@@ -18,6 +18,7 @@ Install Polaris for local auditing:
 
 ```bash
 # Install on macOS
+
 brew install fairwindsops/tap/polaris
 
 # Install on Linux

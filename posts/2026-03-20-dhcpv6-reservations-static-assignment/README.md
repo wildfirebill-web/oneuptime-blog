@@ -16,6 +16,7 @@ Before creating a reservation, you need the client's DUID:
 
 ```bash
 # On the DHCPv6 client (Linux), find the DUID from the lease file
+
 cat /var/lib/dhclient/dhclient6.leases | grep "dhcp6.client-id"
 
 # Or from systemd-networkd

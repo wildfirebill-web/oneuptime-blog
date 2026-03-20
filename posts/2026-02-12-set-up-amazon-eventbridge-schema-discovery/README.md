@@ -35,6 +35,7 @@ The following command enables schema discovery on the default event bus:
 
 ```bash
 # Enable schema discovery on the default event bus
+
 aws schemas put-discoverer \
   --source-arn arn:aws:events:us-east-1:123456789012:event-bus/default \
   --description "Discover schemas on the default event bus" \

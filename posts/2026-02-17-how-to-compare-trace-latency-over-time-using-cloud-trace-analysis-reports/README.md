@@ -49,6 +49,7 @@ The Cloud Console is great for interactive analysis, but for automated compariso
 
 ```python
 # compare_latency.py - Compare trace latency across two time periods
+
 from google.cloud import trace_v2
 from datetime import datetime, timedelta
 import statistics

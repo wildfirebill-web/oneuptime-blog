@@ -30,6 +30,7 @@ Check which fields Flux owns:
 
 ```bash
 # View field managers for a deployment
+
 kubectl get deployment my-service -n team-alpha \
   -o jsonpath='{.metadata.managedFields}' | jq '.[] | {manager: .manager, fields: .fieldsV1}'
 ```

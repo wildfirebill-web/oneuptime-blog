@@ -39,6 +39,7 @@ This is fundamentally different from a simple uptime check. It works at the inst
 
 ```bash
 # Enable health check with a specific path
+
 az webapp config set \
     --name my-app-service \
     --resource-group my-resource-group \

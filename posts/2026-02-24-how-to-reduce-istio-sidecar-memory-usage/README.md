@@ -16,6 +16,7 @@ First, understand your current memory usage:
 
 ```bash
 # Check memory usage across all sidecars
+
 kubectl top pods -n my-namespace --containers | grep istio-proxy
 
 # Get detailed memory breakdown for a specific proxy

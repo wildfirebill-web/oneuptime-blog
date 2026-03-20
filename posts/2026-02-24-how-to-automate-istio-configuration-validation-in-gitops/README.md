@@ -36,6 +36,7 @@ Create a yamllint config:
 
 ```yaml
 # .yamllint.yml
+
 extends: default
 
 rules:

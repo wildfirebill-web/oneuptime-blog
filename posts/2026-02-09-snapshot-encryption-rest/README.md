@@ -67,6 +67,7 @@ Verify encryption:
 
 ```bash
 # Get snapshot details
+
 kubectl describe volumesnapshot encrypted-snapshot
 
 # Check AWS console or CLI

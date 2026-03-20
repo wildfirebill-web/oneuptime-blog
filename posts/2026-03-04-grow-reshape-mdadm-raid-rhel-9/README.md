@@ -26,6 +26,7 @@ The most common reshape is adding a disk to increase capacity.
 
 ```bash
 # Check current array status
+
 sudo mdadm --detail /dev/md5
 
 # Wipe the new disk

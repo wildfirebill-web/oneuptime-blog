@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker Compose, Environment Override, Multi-Environment, Configuration, DevOps
 
-Description: Use Portainer's environment variables, Git branch deployments, and Docker Compose override files to maintain a single stack definition that works across development, staging, and production environments.
+Description: Use Portainer's environment variables, Git branch deployments, and Docker Compose override files to maintain a single stack definition that works across development, staging, and production...
 
 ---
 
@@ -15,7 +15,8 @@ Managing separate stack files for each environment leads to drift and maintenanc
 Use Portainer's built-in environment variable management to override stack values per environment:
 
 ```yaml
-# Base stack — same file deployed to all environments
+# Base stack - same file deployed to all environments
+
 version: "3.8"
 services:
   webapp:
@@ -32,7 +33,7 @@ services:
 In Portainer, set different values per environment:
 
 **Production environment variables:**
-```
+```text
 APP_VERSION=1.2.3
 DATABASE_URL=postgres://prod-db:5432/mydb
 LOG_LEVEL=warn
@@ -41,7 +42,7 @@ RESTART_POLICY=always
 ```
 
 **Staging environment variables:**
-```
+```text
 APP_VERSION=1.3.0-beta
 DATABASE_URL=postgres://staging-db:5432/mydb
 LOG_LEVEL=debug
@@ -54,7 +55,7 @@ RESTART_POLICY=unless-stopped
 Use a base file with environment-specific override files:
 
 ```yaml
-# docker-compose.yml (base — checked into Git)
+# docker-compose.yml (base - checked into Git)
 version: "3.8"
 services:
   webapp:
@@ -95,7 +96,7 @@ In Portainer, deploy with the override file by setting the compose file path to 
 
 Use different Git branches for different environments:
 
-```
+```text
 main branch     → Deploy to production
 staging branch  → Deploy to staging
 develop branch  → Deploy to development
@@ -111,7 +112,7 @@ In Portainer, create three stacks pointing to the same repository but different 
 
 Create environment-specific `.env` files in your repository:
 
-```
+```text
 .env.production:
   APP_VERSION=1.2.3
   LOG_LEVEL=warn

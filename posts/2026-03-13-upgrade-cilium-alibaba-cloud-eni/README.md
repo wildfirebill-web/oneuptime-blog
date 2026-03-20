@@ -30,6 +30,7 @@ Verify Cilium and ENI health before the upgrade.
 
 ```bash
 # Check current Cilium version
+
 cilium version
 
 # Check Cilium status

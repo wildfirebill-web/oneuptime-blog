@@ -22,6 +22,7 @@ By default, pods can resolve services in any namespace using this fully qualifie
 
 ```bash
 # From a pod in the "web" namespace
+
 curl http://api-server.backend.svc.cluster.local:8080/v1/users
 ```
 

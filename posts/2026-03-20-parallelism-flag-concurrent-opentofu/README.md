@@ -14,6 +14,7 @@ OpenTofu creates, updates, and refreshes up to 10 resources concurrently by defa
 
 ```bash
 # Default: 10 concurrent operations
+
 tofu apply
 
 # Equivalent explicit command
@@ -82,19 +83,19 @@ tofu plan
 ```hcl
 # Even with -parallelism=100, this resource waits for aws_vpc.main
 resource "aws_subnet" "private" {
-  vpc_id     = aws_vpc.main.id   # Implicit dependency — subnet waits for VPC
+  vpc_id     = aws_vpc.main.id   # Implicit dependency - subnet waits for VPC
   cidr_block = "10.0.1.0/24"
 }
 ```
 
-Parallelism controls how many *independent* operations run at once — dependency ordering is always respected.
+Parallelism controls how many *independent* operations run at once - dependency ordering is always respected.
 
 ## Destroy Operations and Parallelism
 
 During destroy, parallelism controls concurrent resource deletion. Lower values are safer:
 
 ```bash
-# Slower but safer destroy — avoids race conditions in dependency teardown
+# Slower but safer destroy - avoids race conditions in dependency teardown
 tofu destroy -parallelism=5
 ```
 
@@ -102,7 +103,7 @@ tofu destroy -parallelism=5
 
 ```bash
 #!/bin/bash
-# benchmark.sh — find the best parallelism for your config
+# benchmark.sh - find the best parallelism for your config
 for p in 5 10 15 20 30 50; do
   echo -n "Parallelism $p: "
   time tofu plan -refresh=false -parallelism=$p 2>&1 | tail -1

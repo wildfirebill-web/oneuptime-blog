@@ -22,6 +22,7 @@ Install Nix with the official installer:
 
 ```bash
 # Install Nix with flakes enabled
+
 # This script works on Linux and macOS
 sh <(curl -L https://nixos.org/nix/install) --daemon
 

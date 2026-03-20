@@ -66,6 +66,7 @@ helm install newrelic-bundle newrelic/nri-bundle \
   --set newrelic-k8s-metrics-adapter.accountID="your-account-id"
 
 # Verify external metrics API
+
 kubectl get apiservice | grep newrelic
 ```
 

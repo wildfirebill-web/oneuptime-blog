@@ -50,6 +50,7 @@ flowchart LR
 
 ```yaml
 # promtail-config.yaml
+
 scrape_configs:
   - job_name: application
     static_configs:

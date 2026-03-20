@@ -1,4 +1,4 @@
-# How to Use tofu force-unlock to Release State Locks
+# How to Use tofu force-unlock to Release State Locks - Tofu State Locks
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -15,6 +15,7 @@ When an OpenTofu operation (plan, apply, or destroy) fails or is interrupted, it
 ```bash
 tofu plan
 # Error: Error acquiring the state lock
+
 #
 # Error message: ConditionalCheckFailedException
 # Lock Info:
@@ -99,7 +100,7 @@ Before force-unlocking:
 ps aux | grep tofu
 
 # 2. Check when the lock was created (from error message)
-# If recent and you have a running process — DO NOT force unlock
+# If recent and you have a running process - DO NOT force unlock
 
 # 3. Communicate with your team
 # Is anyone else running tofu on this state?

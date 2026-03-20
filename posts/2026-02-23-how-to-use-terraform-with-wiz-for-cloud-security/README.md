@@ -26,6 +26,7 @@ Install and configure the Wiz CLI for Terraform scanning.
 
 ```bash
 # Download and install the Wiz CLI
+
 curl -o wizcli https://wizcli.app.wiz.io/latest/wizcli-linux-amd64
 chmod +x wizcli
 sudo mv wizcli /usr/local/bin/

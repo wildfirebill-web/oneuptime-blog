@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, Split-Horizon, Internal, External, BIND, Linux, Networking
+Tags: DNS, Split-Horizon, Internals, External, BIND, Linux, Networking
 
 Description: Configure split-horizon DNS to return different IP addresses for internal and external clients querying the same hostname, using BIND views or separate DNS servers.
 
@@ -12,7 +12,7 @@ Split-horizon DNS (also called split-brain DNS) returns different answers based 
 
 ## Architecture
 
-```
+```text
 External query:  dig example.com → 1.2.3.4 (public IP)
 Internal query:  dig example.com → 10.20.0.10 (private IP)
 
@@ -26,6 +26,7 @@ Why useful:
 
 ```bash
 # BIND views are the standard way to implement split-horizon:
+
 # /etc/bind/named.conf.local:
 
 cat >> /etc/bind/named.conf.local << 'EOF'

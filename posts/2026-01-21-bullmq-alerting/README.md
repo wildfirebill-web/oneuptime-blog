@@ -378,7 +378,7 @@ class SlackChannel implements NotificationChannel {
               type: 'section',
               text: {
                 type: 'mrkdwn',
-                text: `*Metrics:*\n\`\`\`${JSON.stringify(alert.metrics, null, 2)}\`\`\``,
+                text: `*Metrics:*\n```${JSON.stringify(alert.metrics, null, 2)}````,
               },
             },
           ],

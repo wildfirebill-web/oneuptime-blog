@@ -18,6 +18,7 @@ The `join()` method is the most Pythonic way to convert a list of strings.
 words = ['Hello', 'World', 'from', 'Python']
 
 # Join with space
+
 sentence = ' '.join(words)
 print(sentence)  # 'Hello World from Python'
 

@@ -24,6 +24,7 @@ ModSecurity is available through the EPEL repository:
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install ModSecurity and the Apache connector

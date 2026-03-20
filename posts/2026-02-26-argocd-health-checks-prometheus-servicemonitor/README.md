@@ -363,6 +363,7 @@ Even with health checks, you should verify that ServiceMonitors are actually pro
 
 ```bash
 # Port-forward to Prometheus
+
 kubectl port-forward -n monitoring svc/prometheus-operated 9090:9090
 
 # Check targets in Prometheus UI

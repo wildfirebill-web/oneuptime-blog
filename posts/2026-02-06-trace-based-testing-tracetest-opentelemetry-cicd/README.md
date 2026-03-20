@@ -25,6 +25,7 @@ The Collector needs to forward traces to Tracetest in addition to your regular b
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

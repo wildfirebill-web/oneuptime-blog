@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Apache, Web Server, Listen directive, Network Configuration
+Tags: IPv6, Apache, Web Server, Listen Directive, Network Configuration
 
 Description: Learn how to configure Apache HTTP Server to listen on IPv6 addresses using the Listen directive, including listening on all interfaces, specific addresses, and dual-stack configuration.
 
@@ -12,6 +12,7 @@ Description: Learn how to configure Apache HTTP Server to listen on IPv6 address
 # In /etc/apache2/ports.conf or httpd.conf
 
 # Listen on all IPv6 addresses on port 80
+
 Listen [::]:80
 
 # Listen on a specific IPv6 address

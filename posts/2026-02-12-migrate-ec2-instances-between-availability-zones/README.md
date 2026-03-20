@@ -20,6 +20,7 @@ This is the simplest and most reliable approach. You create an AMI from the sour
 
 ```bash
 # Step 1: Create an AMI from the source instance
+
 AMI_ID=$(aws ec2 create-image \
   --instance-id i-0abc123source \
   --name "migration-$(date +%Y%m%d-%H%M)" \

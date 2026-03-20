@@ -10,11 +10,11 @@ Description: Configure VXLAN tunnels over an IPv6 underlay network on Linux incl
 
 ```mermaid
 graph LR
-    subgraph Leaf1["Leaf 1 — 2001:db8:1::1"]
+    subgraph Leaf1["Leaf 1 - 2001:db8:1::1"]
         VM1["VM 10.0.0.1"]
         VTEP1["VTEP vxlan10"]
     end
-    subgraph Leaf2["Leaf 2 — 2001:db8:2::1"]
+    subgraph Leaf2["Leaf 2 - 2001:db8:2::1"]
         VM2["VM 10.0.0.2"]
         VTEP2["VTEP vxlan10"]
     end
@@ -23,12 +23,13 @@ graph LR
     VTEP2 --- VM2
 ```
 
-VXLAN frames are encapsulated in UDP datagrams. The outer IP headers can be IPv4 or IPv6 — using IPv6 underlay removes the need for IPv4 infrastructure and simplifies routing.
+VXLAN frames are encapsulated in UDP datagrams. The outer IP headers can be IPv4 or IPv6 - using IPv6 underlay removes the need for IPv4 infrastructure and simplifies routing.
 
 ## Creating a VXLAN Interface on Linux
 
 ```bash
 # Create VXLAN interface with IPv6 underlay
+
 # VNI 10, local VTEP at 2001:db8:1::1
 ip link add vxlan10 type vxlan \
     id 10 \
@@ -94,7 +95,7 @@ tcpdump -i eth0 -n \
 # Show routing table for VTEP endpoint
 ip -6 route get 2001:db8:2::1
 
-# Check MTU — VXLAN adds 56 bytes overhead over IPv6
+# Check MTU - VXLAN adds 56 bytes overhead over IPv6
 ip link show eth0 | grep mtu
 ```
 

@@ -35,6 +35,7 @@ This command creates an internet-facing ALB across two public subnets:
 
 ```bash
 # Create the ALB
+
 ALB_ARN=$(aws elbv2 create-load-balancer \
   --name my-web-alb \
   --type application \

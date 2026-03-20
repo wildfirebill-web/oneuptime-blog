@@ -22,6 +22,7 @@ On the internet-connected system:
 
 ```bash
 # Install the satellite-maintain package for content export tools
+
 sudo dnf install -y satellite-maintain
 
 # Or if using a dedicated connected Satellite, sync the required repos

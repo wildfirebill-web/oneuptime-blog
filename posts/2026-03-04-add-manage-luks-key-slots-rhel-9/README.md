@@ -30,6 +30,7 @@ Each key slot independently encrypts the same master key. Any single key slot ca
 
 ```bash
 # View all key slot information
+
 sudo cryptsetup luksDump /dev/sdb
 
 # Look for the "Keyslots:" section in the output

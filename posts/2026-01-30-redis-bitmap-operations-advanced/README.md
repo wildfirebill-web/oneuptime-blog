@@ -81,6 +81,7 @@ Sets or clears the bit at a specific offset. Returns the original bit value.
 
 ```bash
 # Syntax: SETBIT key offset value
+
 # value must be 0 or 1
 
 # Mark user 42 as active today

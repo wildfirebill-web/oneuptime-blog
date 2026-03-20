@@ -33,6 +33,7 @@ DocumentDB implements the MongoDB 3.6, 4.0, and 5.0 wire protocol, but it is not
 
 ```python
 # Check your application's MongoDB feature usage
+
 # Run this against your MongoDB to identify potential issues
 from pymongo import MongoClient
 

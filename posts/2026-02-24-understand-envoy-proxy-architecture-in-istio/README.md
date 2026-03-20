@@ -37,6 +37,7 @@ Check the configuration that istiod has pushed to a sidecar:
 
 ```bash
 # See all listeners
+
 istioctl proxy-config listeners <pod-name>
 
 # See all routes

@@ -25,6 +25,7 @@ The package installs:
 
 ```bash
 # Enable and start the daemon
+
 sudo systemctl enable --now incrond
 
 # Verify it's running

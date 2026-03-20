@@ -8,7 +8,7 @@ Description: Configure passive and active health checks in Nginx to automaticall
 
 ## Introduction
 
-Nginx supports two types of health checks: **passive** (built into open-source Nginx—detects failures from real traffic) and **active** (Nginx Plus only—probes backends proactively). This guide covers both, with a workaround for active checks using open-source Nginx.
+Nginx supports two types of health checks: **passive** (built into open-source Nginx-detects failures from real traffic) and **active** (Nginx Plus only-probes backends proactively). This guide covers both, with a workaround for active checks using open-source Nginx.
 
 ## Passive Health Checks (Open-Source Nginx)
 
@@ -70,6 +70,7 @@ For open-source Nginx, use `nginx_upstream_check_module` or a Lua-based solution
 
 ```nginx
 # With OpenResty or nginx-lua module:
+
 # /etc/nginx/conf.d/healthcheck.conf
 
 upstream app_backends {
@@ -122,7 +123,7 @@ Simulate a backend failure to verify Nginx removes it correctly:
 # Stop one backend
 ssh 192.168.1.10 "sudo systemctl stop app-server"
 
-# Send requests—they should all succeed on remaining backends
+# Send requests-they should all succeed on remaining backends
 for i in $(seq 1 20); do
     curl -s -o /dev/null -w "%{http_code} %{time_total}s\n" http://example.com/
 done

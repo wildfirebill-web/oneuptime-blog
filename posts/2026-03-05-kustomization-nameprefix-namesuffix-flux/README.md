@@ -52,6 +52,7 @@ Define a base deployment that references a ConfigMap.
 
 ```yaml
 # apps/worker/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

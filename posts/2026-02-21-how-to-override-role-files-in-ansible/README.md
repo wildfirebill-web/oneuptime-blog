@@ -24,6 +24,7 @@ Here is a role with sensible defaults:
 
 ```yaml
 # roles/nginx/defaults/main.yml
+
 nginx_worker_processes: auto
 nginx_worker_connections: 1024
 nginx_keepalive_timeout: 65

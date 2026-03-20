@@ -51,6 +51,7 @@ RABBIT_PASSWORD=secret
 SERVICE_PASSWORD=secret
 
 # Use Calico instead of OVS
+
 Q_PLUGIN=calico
 enable_plugin networking-calico https://opendev.org/openstack/networking-calico.git stable/yoga
 

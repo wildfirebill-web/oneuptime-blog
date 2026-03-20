@@ -400,6 +400,7 @@ Create a scheduler configuration that enables your custom plugins:
 
 ```yaml
 # scheduler-config.yaml
+
 apiVersion: kubescheduler.config.k8s.io/v1
 kind: KubeSchedulerConfiguration
 profiles:

@@ -20,6 +20,7 @@ Umami is a minimalist, open-source web analytics tool that provides a clean, fas
 
 ```bash
 # Generate a random secret for JWT tokens
+
 openssl rand -hex 32
 ```
 
@@ -64,7 +65,7 @@ services:
       # Database connection string
       DATABASE_URL: postgresql://umami:umamipassword@umami-db:5432/umami
 
-      # JWT secret — generate with 'openssl rand -hex 32'
+      # JWT secret - generate with 'openssl rand -hex 32'
       APP_SECRET: "your_generated_hex_secret_here"
 
       # Optional: disable telemetry
@@ -176,4 +177,4 @@ Create team members:
 
 ## Conclusion
 
-Umami is one of the lightest and fastest self-hosted analytics tools available. Deployed via Portainer, you get a privacy-respecting analytics solution that uses minimal resources, stores all data in your own PostgreSQL database, and provides a beautiful, fast dashboard — all without a single cookie.
+Umami is one of the lightest and fastest self-hosted analytics tools available. Deployed via Portainer, you get a privacy-respecting analytics solution that uses minimal resources, stores all data in your own PostgreSQL database, and provides a beautiful, fast dashboard - all without a single cookie.

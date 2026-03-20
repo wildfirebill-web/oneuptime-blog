@@ -14,6 +14,7 @@ Testing IPv6 migration in staging before production reduces risk significantly. 
 
 ```bash
 # Create a Docker network with IPv6 for staging tests
+
 docker network create \
     --driver bridge \
     --ipv6 \
@@ -139,7 +140,7 @@ class TestIPv6AddressHandling:
         """Rate limiting handles IPv6 client addresses."""
         for _ in range(5):
             make_ipv6_request("/api/v1/test", expected_status=200)
-        # Should be rate-limited now (or not — depends on limits)
+        # Should be rate-limited now (or not - depends on limits)
         # Main test is that it doesn't crash with IPv6
 ```
 
@@ -177,9 +178,9 @@ PASS=$(grep -c 'testcase.*time' /tmp/ipv6-test-results.xml)
 FAIL=$(grep -c 'failure' /tmp/ipv6-test-results.xml)
 echo ""
 echo "Results: $PASS passed, $FAIL failed"
-[ $FAIL -eq 0 ] && echo "READY FOR PRODUCTION" || echo "NOT READY — Fix failures first"
+[ $FAIL -eq 0 ] && echo "READY FOR PRODUCTION" || echo "NOT READY - Fix failures first"
 ```
 
 ## Conclusion
 
-Staging IPv6 migration tests should include IPv6-only client tests (remove IPv4 access to force IPv6 code paths), API endpoint verification over IPv6, client IP header parsing with IPv6 addresses, database schema validation for IPv6 address storage, and rate limiting behavior. The most valuable test is running the application in a Docker network where the test client has only IPv6 connectivity — this surfaces IPv4 assumptions that would never appear in dual-stack testing.
+Staging IPv6 migration tests should include IPv6-only client tests (remove IPv4 access to force IPv6 code paths), API endpoint verification over IPv6, client IP header parsing with IPv6 addresses, database schema validation for IPv6 address storage, and rate limiting behavior. The most valuable test is running the application in a Docker network where the test client has only IPv6 connectivity - this surfaces IPv4 assumptions that would never appear in dual-stack testing.

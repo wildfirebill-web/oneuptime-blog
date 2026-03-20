@@ -18,6 +18,7 @@ The `cli_parse` module lives in the `ansible.utils` collection, and the parsing 
 
 ```bash
 # Install the collections that provide cli_parse and its parser plugins
+
 ansible-galaxy collection install ansible.utils
 ansible-galaxy collection install ansible.netcommon
 

@@ -14,6 +14,7 @@ The `-var` flag allows you to pass variable values directly to `tofu plan`, `tof
 
 ```bash
 # Pass a single string variable
+
 tofu plan -var="environment=production"
 
 # Pass a number variable

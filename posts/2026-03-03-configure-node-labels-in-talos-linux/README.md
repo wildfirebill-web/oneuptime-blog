@@ -68,6 +68,7 @@ When generating a new Talos configuration, include labels through a config patch
 
 ```bash
 # Generate with a patch that includes node labels
+
 talosctl gen config my-cluster https://10.0.0.1:6443 \
   --config-patch-worker '[{"op": "add", "path": "/machine/nodeLabels", "value": {"environment": "production", "role": "worker"}}]'
 ```

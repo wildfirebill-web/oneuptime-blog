@@ -48,6 +48,7 @@ sudo nano /etc/auto.master
 # Format: mount-point  map-file  [options]
 
 # Mount NFS shares under /mnt/nfs, using /etc/auto.nfs as the map
+
 /mnt/nfs  /etc/auto.nfs  --timeout=300 --ghost
 
 # Mount user home directories under /home/nfs

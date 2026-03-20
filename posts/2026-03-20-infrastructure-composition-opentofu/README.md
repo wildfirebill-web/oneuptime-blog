@@ -8,7 +8,7 @@ Description: Learn how to compose complex infrastructure from reusable OpenTofu 
 
 ---
 
-Infrastructure composition is the practice of building complex deployments from smaller, reusable modules. Rather than writing monolithic configurations, you compose vetted building blocks — a VPC module, an ECS module, a database module — into a complete service. This promotes reuse, simplifies testing, and enables team-scale infrastructure management.
+Infrastructure composition is the practice of building complex deployments from smaller, reusable modules. Rather than writing monolithic configurations, you compose vetted building blocks - a VPC module, an ECS module, a database module - into a complete service. This promotes reuse, simplifies testing, and enables team-scale infrastructure management.
 
 ## The Composition Pattern
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # modules/network/main.tf
+
 # A reusable VPC module with well-defined inputs and outputs
 variable "cidr_block" {
   type        = string
@@ -93,7 +94,7 @@ module "network" {
   availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
 }
 
-# Compose the database layer — receives outputs from network module
+# Compose the database layer - receives outputs from network module
 module "database" {
   source = "../../modules/database"
 
@@ -189,8 +190,8 @@ module "dns" {
 
 ## Best Practices
 
-- Modules should have a single responsibility — a VPC module creates only network resources, not application resources.
+- Modules should have a single responsibility - a VPC module creates only network resources, not application resources.
 - Use semantic versioning for internal modules and pin versions in root configurations.
-- Make modules self-contained — they should work without knowledge of the calling module.
-- Document every input and output with `description` fields — modules are APIs for infrastructure.
+- Make modules self-contained - they should work without knowledge of the calling module.
+- Document every input and output with `description` fields - modules are APIs for infrastructure.
 - Test modules in isolation with Terratest or OpenTofu's built-in test framework before using them in production root configs.

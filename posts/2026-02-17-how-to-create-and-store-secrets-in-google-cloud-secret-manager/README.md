@@ -33,6 +33,7 @@ Enable the API:
 
 ```bash
 # Enable the Secret Manager API
+
 gcloud services enable secretmanager.googleapis.com --project=my-project-id
 ```
 

@@ -1,4 +1,4 @@
-# How to Deploy IoT Applications on Raspberry Pi with Portainer
+# How to Deploy IoT Applications on Raspberry Pi with Portainer - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use Portainer on Raspberry Pi to deploy and manage IoT
 
 ## IoT Stack Architecture
 
-```
+```text
 IoT Sensors/Devices
     ↓ MQTT
 Mosquitto Broker (MQTT)
@@ -98,6 +98,7 @@ After deploying, create the config via Portainer console:
 
 ```bash
 # In Portainer: Containers > mosquitto > Console
+
 cat > /mosquitto/config/mosquitto.conf << 'EOF'
 listener 1883
 allow_anonymous false
@@ -116,7 +117,7 @@ mosquitto_passwd -c /mosquitto/config/passwd iot-user
 
 In Node-RED (`http://pi:1880`), create this flow:
 
-```
+```javascript
 MQTT In (topic: sensors/temperature)
     ↓
 JSON Parse

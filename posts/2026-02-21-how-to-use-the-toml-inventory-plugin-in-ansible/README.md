@@ -33,6 +33,7 @@ Install the community.general collection which includes the TOML inventory plugi
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.general
 
 # Install the Python TOML library

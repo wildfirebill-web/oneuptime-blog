@@ -332,6 +332,7 @@ These are available in Prometheus format and can be used in Grafana dashboards.
 
 ```bash
 # Check listener config for the TCP port
+
 istioctl proxy-config listener <pod-name> -n default --port 9000 -o json
 
 # Verify the filter chain uses tcp_proxy, not http_connection_manager

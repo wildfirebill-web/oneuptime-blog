@@ -14,6 +14,7 @@ TeamSpeak 3 is a popular voice communication server for gaming communities. It h
 
 ```bash
 # Create TeamSpeak user
+
 sudo useradd -m -s /bin/bash teamspeak
 sudo su - teamspeak
 

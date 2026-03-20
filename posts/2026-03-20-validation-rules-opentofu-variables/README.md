@@ -1,4 +1,4 @@
-# How to Add Validation Rules to OpenTofu Variables
+# How to Add Validation Rules to OpenTofu Variables - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -31,6 +31,7 @@ Here is how to gather package facts and store them for later use:
 
 ```yaml
 # Gather facts about all installed packages on the target host
+
 - name: Collect package facts
   hosts: all
   tasks:

@@ -62,6 +62,7 @@ spec:
 
 ```yaml
 # Important Hubble TCP metrics:
+
 # hubble_tcp_flags_total - TCP flag distribution (SYN, FIN, RST)
 # hubble_flows_processed_total - Total flow count
 # hubble_drop_total - Packet drops by reason

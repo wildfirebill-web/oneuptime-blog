@@ -26,6 +26,7 @@ The simplest way to start LocalAI is with a single Docker command.
 
 ```bash
 # Run LocalAI on port 8080 with a persistent models directory
+
 docker run -d \
   --name localai \
   -p 8080:8080 \

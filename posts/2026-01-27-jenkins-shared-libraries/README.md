@@ -487,6 +487,7 @@ Use Git tags and branches for versioning:
 
 ```bash
 # Tag releases with semantic versions
+
 git tag -a v1.0.0 -m "Initial stable release"
 git tag -a v1.1.0 -m "Added deployToK8s step"
 git tag -a v1.1.1 -m "Fixed deployToK8s timeout handling"

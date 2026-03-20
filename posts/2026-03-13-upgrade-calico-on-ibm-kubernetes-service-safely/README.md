@@ -30,6 +30,7 @@ IKS ships with specific Calico versions tied to each Kubernetes version.
 
 ```bash
 # Check current IKS cluster version and Kubernetes version
+
 ibmcloud ks cluster get --cluster <cluster-name> | grep -E "Version|Status"
 
 # Check the Calico version installed by IBM

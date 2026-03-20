@@ -41,6 +41,7 @@ Create a storage account optimized for streaming large files.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-music --location eastus
 
 # Create a storage account for audio files

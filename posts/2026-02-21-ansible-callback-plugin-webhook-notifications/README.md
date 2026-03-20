@@ -18,6 +18,7 @@ Create `callback_plugins/webhook_notify.py`:
 
 ```python
 # webhook_notify.py - Callback plugin for webhook notifications
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

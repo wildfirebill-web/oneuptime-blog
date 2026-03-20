@@ -32,6 +32,7 @@ We will use NATS with JetStream as our event broker for its simplicity and perfo
 
 ```bash
 # Install NATS with Helm
+
 helm repo add nats https://nats-io.github.io/k8s/helm/charts/
 kubectl create namespace events
 ```

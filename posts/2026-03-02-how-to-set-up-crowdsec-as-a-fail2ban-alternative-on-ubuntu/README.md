@@ -23,6 +23,7 @@ CrowdSec is a modern intrusion detection and prevention system that improves on 
 
 ```bash
 # Add the CrowdSec repository
+
 curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash
 
 # Install CrowdSec

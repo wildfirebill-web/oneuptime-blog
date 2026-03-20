@@ -53,6 +53,7 @@ The resulting metrics look like this in the Prometheus exposition format.
 
 ```text
 # HELP http_request_duration_seconds HTTP request latency in seconds
+
 # TYPE http_request_duration_seconds histogram
 http_request_duration_seconds_bucket{le="0.005"} 24054
 http_request_duration_seconds_bucket{le="0.01"} 33444

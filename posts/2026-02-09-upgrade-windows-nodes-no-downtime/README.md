@@ -16,6 +16,7 @@ Before upgrading, assess your cluster:
 
 ```bash
 # Check current node versions
+
 kubectl get nodes -o wide
 
 # View Windows node details

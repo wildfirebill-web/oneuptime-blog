@@ -44,6 +44,7 @@ Let's start by setting up our Node.js project:
 
 ```bash
 # Create project directory
+
 mkdir websocket-chat && cd websocket-chat
 
 # Initialize npm project

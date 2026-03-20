@@ -57,6 +57,7 @@ You can enable streams when creating a table or on an existing one. The `StreamV
 
 ```bash
 # Enable streams on an existing table
+
 # NEW_AND_OLD_IMAGES lets you see what changed by comparing old vs new
 aws dynamodb update-table \
     --table-name Users \

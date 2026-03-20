@@ -18,6 +18,7 @@ Your Connect instance is the top-level container for everything - phone numbers,
 
 ```bash
 # Create an instance
+
 # Note: This is typically done through the AWS Console because
 # it requires accepting terms of service. But the API works too.
 aws connect create-instance \

@@ -234,6 +234,7 @@ This is where Go really shines. The multi-stage build produces a tiny final imag
 
 ```dockerfile
 # Dockerfile - Multi-stage build for Go application
+
 # Stage 1: Build the Go binary
 FROM golang:1.22-alpine AS builder
 

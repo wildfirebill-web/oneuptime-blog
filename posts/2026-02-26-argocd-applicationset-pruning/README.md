@@ -143,6 +143,7 @@ Without the finalizer, pruning only removes the ArgoCD Application resource. The
 
 ```yaml
 # Safe option: No finalizer = no cascade delete
+
 template:
   metadata:
     name: '{{path.basename}}'

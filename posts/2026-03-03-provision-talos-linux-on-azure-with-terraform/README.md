@@ -46,6 +46,7 @@ provider "azurerm" {
 }
 
 # Resource group to hold all cluster resources
+
 resource "azurerm_resource_group" "talos" {
   name     = "${var.cluster_name}-rg"
   location = var.azure_location

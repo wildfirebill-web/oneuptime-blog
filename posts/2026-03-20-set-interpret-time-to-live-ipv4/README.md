@@ -25,7 +25,8 @@ TTL is an 8-bit field in the IPv4 header. Each router that forwards a packet dec
 ```python
 from scapy.all import IP, ICMP, sr1
 
-# Send a ping with TTL=3 — will expire at the 3rd hop
+# Send a ping with TTL=3 - will expire at the 3rd hop
+
 pkt = IP(dst="8.8.8.8", ttl=3) / ICMP()
 reply = sr1(pkt, timeout=2, verbose=False)
 

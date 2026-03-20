@@ -48,6 +48,7 @@ The simplest approach uses ConfigMaps to store feature flag values:
 
 ```yaml
 # apps/feature-flags/base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

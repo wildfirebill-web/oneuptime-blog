@@ -156,6 +156,7 @@ Timeout configuration prevents your application from hanging when the database i
 
 ```python
 # db/pool.py
+
 import psycopg2
 from psycopg2 import pool
 from contextlib import contextmanager

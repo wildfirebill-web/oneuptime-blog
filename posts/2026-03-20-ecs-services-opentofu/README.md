@@ -1,4 +1,4 @@
-# How to Create ECS Services with OpenTofu
+# How to Create ECS Services with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -161,6 +161,7 @@ tofu plan
 tofu apply
 
 # Monitor service deployment
+
 aws ecs describe-services \
   --cluster my-project-cluster \
   --services my-project-app \
@@ -175,4 +176,4 @@ aws ecs update-service \
 
 ## Conclusion
 
-The deployment circuit breaker is the most important ECS service feature to enable—it automatically rolls back deployments where tasks fail to start or health checks fail, preventing prolonged outages from bad deployments. Use `ignore_changes = [desired_count]` so auto-scaling policies can adjust task count without triggering Terraform drift detection. FARGATE_SPOT can reduce compute costs by 60-70% for fault-tolerant services that can handle interruptions.
+The deployment circuit breaker is the most important ECS service feature to enable-it automatically rolls back deployments where tasks fail to start or health checks fail, preventing prolonged outages from bad deployments. Use `ignore_changes = [desired_count]` so auto-scaling policies can adjust task count without triggering Terraform drift detection. FARGATE_SPOT can reduce compute costs by 60-70% for fault-tolerant services that can handle interruptions.

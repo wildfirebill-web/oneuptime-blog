@@ -68,6 +68,7 @@ The `:Z` flag relabels the host directory with a private SELinux label unique to
 
 ```bash
 # Dangerous - never do this
+
 podman run -v /home:/data:Z my-image
 
 # Safe - mount a specific directory

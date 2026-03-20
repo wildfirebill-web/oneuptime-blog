@@ -45,6 +45,7 @@ Adding a new cluster to the fleet is as simple as committing new manifests.
 
 ```bash
 # Create the cluster manifest directory
+
 mkdir -p clusters/workloads/dev-02
 
 # Copy an existing cluster template and customize it

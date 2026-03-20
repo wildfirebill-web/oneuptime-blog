@@ -32,6 +32,7 @@ Before you can reference a chart, you need a HelmRepository source. Here is an e
 
 ```yaml
 # helmrepository.yaml - Defines the Helm repository source for Flux
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

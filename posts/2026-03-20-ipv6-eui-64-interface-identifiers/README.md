@@ -15,23 +15,23 @@ Modified EUI-64 is the algorithm defined in RFC 4291 that converts a 48-bit MAC 
 Converting a MAC address `00:1A:2B:3C:4D:5E`:
 
 **Step 1: Start with the 48-bit MAC address**
-```
+```text
 00:1A:2B:3C:4D:5E
 ```
 
 **Step 2: Split into two 24-bit halves**
-```
+```text
 OUI (first 24 bits):  00:1A:2B
 NIC (last 24 bits):   3C:4D:5E
 ```
 
 **Step 3: Insert `FF:FE` between the two halves**
-```
+```text
 00:1A:2B:FF:FE:3C:4D:5E  (now 64 bits = EUI-64)
 ```
 
-**Step 4: Flip the Universal/Local (U/L) bit** — bit 7 of the first byte (0-indexed)
-```
+**Step 4: Flip the Universal/Local (U/L) bit** - bit 7 of the first byte (0-indexed)
+```text
 First byte: 0x00 = 0000 0000
                         ^
                   bit 7 (U/L bit)
@@ -39,7 +39,7 @@ Flip bit 7: 0000 0010 = 0x02
 ```
 
 **Result IID:**
-```
+```text
 02:1A:2B:FF:FE:3C:4D:5E
 → 021a:2bff:fe3c:4d5e
 ```
@@ -87,6 +87,7 @@ def build_ipv6_address(prefix, mac_address):
     return f"{prefix_clean}:{iid}"
 
 # Examples
+
 examples = [
     "00:1A:2B:3C:4D:5E",
     "AA:BB:CC:DD:EE:FF",

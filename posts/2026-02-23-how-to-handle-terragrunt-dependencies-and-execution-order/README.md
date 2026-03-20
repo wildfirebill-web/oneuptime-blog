@@ -16,6 +16,7 @@ Terragrunt scans all `terragrunt.hcl` files in the target directory and builds e
 
 ```hcl
 # Explicit dependency with output passing
+
 dependency "vpc" {
   config_path = "../vpc"
 }

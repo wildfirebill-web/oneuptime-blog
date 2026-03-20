@@ -33,6 +33,7 @@ This is non-negotiable for GDPR. Every service that processes personal data must
 
 ```bash
 # Check all namespaces for mTLS status
+
 for ns in $(kubectl get namespaces -o jsonpath='{.items[*].metadata.name}'); do
   echo "=== $ns ==="
   kubectl get peerauthentication -n $ns 2>/dev/null

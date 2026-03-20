@@ -76,6 +76,7 @@ Create the lock table before configuring Terraform:
 
 ```hcl
 # dynamodb.tf
+
 # DynamoDB table for Terraform state locking
 # The table requires a primary key named LockID
 

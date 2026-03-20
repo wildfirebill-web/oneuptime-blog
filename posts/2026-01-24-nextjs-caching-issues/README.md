@@ -337,6 +337,7 @@ export async function GET() {
 
 ```bash
 # Clear the Next.js cache
+
 rm -rf .next/cache
 
 # Or use the dev server with cache disabled

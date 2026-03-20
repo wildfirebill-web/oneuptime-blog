@@ -16,6 +16,7 @@ A Git server is essentially just a Linux box with Git installed and SSH access c
 
 ```yaml
 # playbook-git-server.yml
+
 # Sets up a basic Git server with a dedicated user and SSH access
 - name: Configure Git server
   hosts: git_servers

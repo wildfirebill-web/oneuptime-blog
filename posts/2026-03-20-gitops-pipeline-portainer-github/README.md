@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitHub, GitOps, CI/CD, Pipeline
+Tags: Portainer, GitHub, GitOps, CI/CD, Pipelines
 
 Description: Learn how to build an end-to-end GitOps pipeline where GitHub stores configuration, GitHub Actions builds images, and Portainer handles deployment.
 
@@ -25,7 +25,7 @@ graph TD
 
 Use a separate "config" repository pattern:
 
-```
+```text
 app-repo/           # Application code
 ├── src/
 ├── Dockerfile
@@ -46,6 +46,7 @@ infra-repo/         # Infrastructure/deployment config (GitOps source)
 
 ```yaml
 # app-repo/.github/workflows/ci.yml
+
 name: CI - Build and Update Config
 
 on:
@@ -159,4 +160,4 @@ git push origin promote-to-prod
 
 ## Conclusion
 
-This complete GitOps pipeline provides full auditability — every production change goes through a PR review, every deployment is tied to a Git commit, and Portainer's webhook integration ensures near-instant delivery. The separation of app and infra repos keeps deployment concerns cleanly separated.
+This complete GitOps pipeline provides full auditability - every production change goes through a PR review, every deployment is tied to a Git commit, and Portainer's webhook integration ensures near-instant delivery. The separation of app and infra repos keeps deployment concerns cleanly separated.

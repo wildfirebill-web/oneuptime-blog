@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: bpftool, eBPF, IPv6, Debugging, Linux
+Tags: Bpftool, eBPF, IPv6, Debugging, Linux
 
 Description: Use bpftool to inspect, debug, and manage eBPF programs and maps that process IPv6 traffic.
 
@@ -62,6 +62,7 @@ char LICENSE[] SEC("license") = "GPL";
 
 ```bash
 # Compile eBPF program
+
 clang -O2 -target bpf -c program.c -o program.o
 
 # Load XDP program on interface

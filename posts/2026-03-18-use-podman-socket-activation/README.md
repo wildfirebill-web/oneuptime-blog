@@ -43,6 +43,7 @@ Podman itself uses socket activation for its API service. Enable it:
 
 ```bash
 # Enable the Podman API socket (rootless)
+
 systemctl --user enable --now podman.socket
 
 # Verify the socket is listening

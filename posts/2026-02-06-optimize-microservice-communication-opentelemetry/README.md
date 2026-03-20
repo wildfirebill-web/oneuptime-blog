@@ -36,6 +36,7 @@ Start by making sure all your inter-service communication is properly instrument
 
 ```python
 # communication_metrics.py
+
 from opentelemetry import metrics, trace
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

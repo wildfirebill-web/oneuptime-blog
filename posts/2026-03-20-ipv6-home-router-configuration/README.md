@@ -27,6 +27,7 @@ flowchart LR
 
 ```bash
 # /etc/dhcpcd.conf
+
 # Configure WAN interface to request an IPv6 prefix
 
 interface eth0  # WAN interface

@@ -58,6 +58,7 @@ The `platform.yaml` file is the entry point. It tells Elastic Beanstalk where to
 
 ```yaml
 # platform.yaml - Custom platform definition
+
 version: "1.0"
 
 provisioner:

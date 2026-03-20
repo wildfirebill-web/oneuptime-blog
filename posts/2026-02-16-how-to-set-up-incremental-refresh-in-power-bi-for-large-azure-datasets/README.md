@@ -139,6 +139,7 @@ For deeper monitoring, use the XMLA endpoint (available with Premium) to connect
 
 ```python
 # Use the Tabular Object Model (TOM) via Python to inspect partitions
+
 # This requires the pyadomd or pytabular library
 import pytabular
 

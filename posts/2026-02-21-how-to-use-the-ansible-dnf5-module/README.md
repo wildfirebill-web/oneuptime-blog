@@ -28,6 +28,7 @@ The syntax mirrors the `dnf` module almost exactly:
 
 ```yaml
 # Install a package using dnf5
+
 - name: Install nginx with dnf5
   ansible.builtin.dnf5:
     name: nginx

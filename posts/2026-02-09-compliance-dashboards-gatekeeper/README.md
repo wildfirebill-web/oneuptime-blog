@@ -24,6 +24,7 @@ Configure Gatekeeper to expose audit metrics in Prometheus format:
 
 ```yaml
 # gatekeeper-metrics-config.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

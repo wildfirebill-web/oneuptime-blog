@@ -48,6 +48,7 @@ Start by managing the service mesh installation itself through ArgoCD. Here is a
 
 ```yaml
 # istio-base application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

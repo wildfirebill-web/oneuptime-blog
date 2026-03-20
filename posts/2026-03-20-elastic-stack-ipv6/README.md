@@ -216,6 +216,7 @@ network.type: ipv6 AND destination.port > 1024 AND event.action: drop
 
 ```yaml
 # /etc/filebeat/filebeat.yml
+
 filebeat.inputs:
   - type: log
     paths:
@@ -238,4 +239,4 @@ filebeat.modules:
 
 ## Conclusion
 
-Elastic Stack handles IPv6 natively through the `ip` field type in Elasticsearch, which accepts both IPv4 and IPv6 and supports CIDR prefix queries. Use ECS field names (`source.ip`, `destination.ip`) for compatibility with built-in Kibana security dashboards. In Logstash, use grok with the `%{IP}` pattern (which matches IPv6) or custom regex for non-standard formats. Logstash and Elasticsearch can listen on IPv6 by setting `host: "::"`. Use `ip_prefix` aggregation to summarize traffic by /64 prefix — essential for analyzing large IPv6 address spaces where individual /128 addresses are less meaningful than /64 blocks.
+Elastic Stack handles IPv6 natively through the `ip` field type in Elasticsearch, which accepts both IPv4 and IPv6 and supports CIDR prefix queries. Use ECS field names (`source.ip`, `destination.ip`) for compatibility with built-in Kibana security dashboards. In Logstash, use grok with the `%{IP}` pattern (which matches IPv6) or custom regex for non-standard formats. Logstash and Elasticsearch can listen on IPv6 by setting `host: "::"`. Use `ip_prefix` aggregation to summarize traffic by /64 prefix - essential for analyzing large IPv6 address spaces where individual /128 addresses are less meaningful than /64 blocks.

@@ -39,6 +39,7 @@ To use side_effect, create a `side_effect.yml` playbook in your scenario directo
 
 ```yaml
 # molecule/default/side_effect.yml
+
 ---
 - name: Side Effect - Simulate service failure
   hosts: all

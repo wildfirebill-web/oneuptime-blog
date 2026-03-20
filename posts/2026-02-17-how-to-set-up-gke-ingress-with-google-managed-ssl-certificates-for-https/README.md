@@ -39,6 +39,7 @@ Let us start with a simple application and service.
 
 ```yaml
 # app-deployment.yaml - A simple web application
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

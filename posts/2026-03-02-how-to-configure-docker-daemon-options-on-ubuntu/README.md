@@ -16,6 +16,7 @@ Docker reads its daemon configuration from `/etc/docker/daemon.json`. This file 
 
 ```bash
 # Check if it exists
+
 cat /etc/docker/daemon.json
 
 # Create it if missing

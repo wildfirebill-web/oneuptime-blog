@@ -29,6 +29,7 @@ The simplest rollback: revert the code change and apply the previous configurati
 ```bash
 #!/bin/bash
 # scripts/test-git-revert-rollback.sh
+
 # Test that reverting a commit produces a clean rollback
 
 set -e

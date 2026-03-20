@@ -21,7 +21,7 @@ REM Shows which DNS server is being used and the result
 ## Step 1: Check Configured DNS Servers
 
 ```cmd
-REM Windows — show DNS servers
+REM Windows - show DNS servers
 ipconfig /all | findstr "DNS Server"
 
 REM Linux
@@ -38,6 +38,7 @@ If the DNS server IP is wrong (e.g., 0.0.0.0, 169.254.x.x, or blank), that's the
 
 ```bash
 # Test specific DNS server
+
 nslookup google.com 8.8.8.8      # Use Google DNS
 nslookup google.com 1.1.1.1      # Use Cloudflare DNS
 nslookup google.com 192.168.1.1  # Test local router DNS
@@ -78,7 +79,7 @@ sudo killall -HUP mDNSResponder
 ## Step 4: Change DNS Server
 
 ```powershell
-# Windows PowerShell — set Google DNS
+# Windows PowerShell - set Google DNS
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 8.8.8.8, 8.8.4.4
 Set-DnsClientServerAddress -InterfaceAlias "Wi-Fi" -ServerAddresses 8.8.8.8, 8.8.4.4
 
@@ -90,7 +91,7 @@ Get-DnsClientServerAddress -InterfaceAlias "Ethernet"
 ```
 
 ```bash
-# Linux — edit /etc/resolv.conf
+# Linux - edit /etc/resolv.conf
 sudo tee /etc/resolv.conf << 'EOF'
 nameserver 8.8.8.8
 nameserver 8.8.4.4

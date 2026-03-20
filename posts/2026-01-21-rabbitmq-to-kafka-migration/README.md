@@ -499,6 +499,7 @@ class ConsumerMigrator:
 
 
 # Exchange pattern mappings
+
 class ExchangePatternMapper:
     """Maps RabbitMQ exchange patterns to Kafka"""
 

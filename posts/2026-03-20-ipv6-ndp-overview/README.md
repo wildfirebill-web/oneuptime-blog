@@ -12,7 +12,7 @@ IPv6 Neighbor Discovery Protocol (NDP), defined in RFC 4861, is the IPv6 replace
 
 ## NDP's Five Core Functions
 
-```
+```javascript
 Function 1: Router Discovery
   Hosts discover routers on the local link
   Messages: Router Solicitation (RS, Type 133) and
@@ -39,7 +39,7 @@ Function 5: Next-Hop Determination
 
 ## NDP Message Types Summary
 
-```
+```text
 ICMPv6 Type 133: Router Solicitation (RS)
   From: Hosts
   To:   All-Routers multicast (ff02::2)
@@ -75,7 +75,7 @@ ICMPv6 Type 137: Redirect
 
 ## Comparison: NDP vs ARP
 
-```
+```text
 ARP (IPv4):
   Protocol: Ethernet (ARP EtherType 0x0806)
   Broadcast: Entire subnet receives every ARP request
@@ -97,6 +97,7 @@ NDP reduces traffic compared to ARP by using solicited-node multicast:
 
 ```bash
 # Solicited-node multicast = ff02::1:ff<last 24 bits of IPv6 address>
+
 # Example: for address 2001:db8::1234:5678
 # Last 24 bits of 1234:5678 = 34:56:78
 # Solicited-node multicast = ff02::1:ff34:5678
@@ -123,4 +124,4 @@ EOF
 
 ## Conclusion
 
-NDP is the cornerstone of IPv6 network operation, replacing multiple IPv4 mechanisms with a unified protocol. Its five functions — router discovery, prefix discovery, parameter discovery, address resolution, and next-hop determination — are all performed using ICMPv6 messages. The use of solicited-node multicast for address resolution is more efficient than ARP's broadcast approach. NDP messages must be allowed through all firewalls on the local segment for IPv6 to function, making firewall policy one of the most common NDP troubleshooting targets.
+NDP is the cornerstone of IPv6 network operation, replacing multiple IPv4 mechanisms with a unified protocol. Its five functions - router discovery, prefix discovery, parameter discovery, address resolution, and next-hop determination - are all performed using ICMPv6 messages. The use of solicited-node multicast for address resolution is more efficient than ARP's broadcast approach. NDP messages must be allowed through all firewalls on the local segment for IPv6 to function, making firewall policy one of the most common NDP troubleshooting targets.

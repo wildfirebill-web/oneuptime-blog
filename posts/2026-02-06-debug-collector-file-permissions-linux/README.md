@@ -20,6 +20,7 @@ You'll know you have permission issues when you see errors like:
 
 ```bash
 # Config file read errors
+
 Error: failed to read config: open /etc/otelcol/config.yaml: permission denied
 
 # Queue storage errors

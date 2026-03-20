@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Rancher, Kubernetes, Helm, StatefulSet, Persistent Storage, Databases, SUSE Rancher
+Tags: MongoDB, Rancher, Kubernetes, Helm, StatefulSets, Persistent Storage, Database, SUSE Rancher
 
 Description: Learn how to deploy a production-ready MongoDB replica set on a Rancher-managed Kubernetes cluster using the Bitnami Helm chart with persistent storage and authentication.
 
@@ -16,6 +16,7 @@ Deploying MongoDB on Kubernetes with Rancher gives you a managed, scalable datab
 
 ```bash
 # Add Bitnami charts repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 
@@ -61,7 +62,7 @@ metrics:
     enabled: true
     namespace: monitoring
 
-# Pod disruption budget — keep at least 2 replicas available
+# Pod disruption budget - keep at least 2 replicas available
 podDisruptionBudget:
   enabled: true
   minAvailable: 2
@@ -203,6 +204,6 @@ EOF
 
 ## Best Practices
 
-- Always deploy MongoDB as a replica set (`architecture: replicaset`) in production — standalone deployments have no high availability.
-- Use a dedicated StorageClass with fast block storage (SSD) for MongoDB volumes — Longhorn works well.
+- Always deploy MongoDB as a replica set (`architecture: replicaset`) in production - standalone deployments have no high availability.
+- Use a dedicated StorageClass with fast block storage (SSD) for MongoDB volumes - Longhorn works well.
 - Enable Prometheus metrics from day one so you can track query latency, replication lag, and connection pool usage.

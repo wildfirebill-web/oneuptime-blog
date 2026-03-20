@@ -16,6 +16,7 @@ Start by installing the Firestore client library.
 
 ```bash
 # Install the Firestore Python client
+
 pip install google-cloud-firestore
 ```
 

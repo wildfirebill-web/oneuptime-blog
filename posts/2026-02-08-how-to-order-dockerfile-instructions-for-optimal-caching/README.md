@@ -58,6 +58,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Copying everything first means ANY file change invalidates the cache
+
 COPY . .
 
 # This runs on every build because COPY . . changes constantly

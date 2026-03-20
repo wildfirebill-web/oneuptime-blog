@@ -70,6 +70,7 @@ Automate the export for all tables:
 
 ```python
 # export_redshift.py
+
 # Export all Redshift tables to S3 in Parquet format
 import psycopg2
 import json

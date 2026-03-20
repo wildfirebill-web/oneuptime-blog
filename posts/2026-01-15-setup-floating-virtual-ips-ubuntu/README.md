@@ -74,6 +74,7 @@ While `ifconfig` is deprecated, understanding it helps when working with older s
 
 ```bash
 # Add a virtual IP to interface eth0
+
 # Syntax: ifconfig <interface>:<alias_number> <ip_address> netmask <netmask> up
 sudo ifconfig eth0:0 192.168.1.100 netmask 255.255.255.0 up
 

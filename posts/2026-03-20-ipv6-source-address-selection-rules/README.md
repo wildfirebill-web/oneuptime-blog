@@ -18,7 +18,7 @@ A host with multiple IPv6 addresses (global, ULA, link-local, temporary) must pi
 
 RFC 6724 evaluates candidate source addresses against the destination using these rules in order:
 
-```
+```text
 Rule 1: Prefer same address
         If candidate == destination, it wins immediately
 
@@ -49,6 +49,7 @@ Rule 8: Longest matching prefix
 
 ```bash
 # Add multiple IPv6 addresses to test selection
+
 ip addr add 2001:db8:1::10/64 dev eth0   # Global static
 ip addr add fd00::10/64 dev eth0          # ULA
 ip addr add fe80::10/64 dev eth0          # Link-local (already present)
@@ -69,7 +70,7 @@ ip -6 addr show dev eth0
 # Verify: ping to global destination uses global source
 ping6 -I eth0 2001:db8::1 &>/dev/null &
 ss -6 -n state established sport 0
-# Source will be 2001:db8:1::10 or the temporary address — NOT fe80::
+# Source will be 2001:db8:1::10 or the temporary address - NOT fe80::
 
 # ping to link-local destination uses link-local source
 ping6 fe80::1%eth0 &>/dev/null &
@@ -116,8 +117,8 @@ curl -6 --interface 2001:db8:1::10 https://ifconfig.co/ip
 
 ```bash
 # When connecting to 2001:db8:1::200, which source is preferred?
-# Candidate A: 2001:db8:1::10   (same /64 prefix — 64 matching bits)
-# Candidate B: 2001:db8:2::10   (different /48 — 48 matching bits)
+# Candidate A: 2001:db8:1::10   (same /64 prefix - 64 matching bits)
+# Candidate B: 2001:db8:2::10   (different /48 - 48 matching bits)
 
 # Rule 8 picks Candidate A (64 bits match > 48 bits match)
 
@@ -148,7 +149,7 @@ EOF
 # Deprecate an address (set preferred lifetime to 0)
 ip addr change 2001:db8:1::10/64 dev eth0 preferred_lft 0
 
-# Verify — address shows as "deprecated"
+# Verify - address shows as "deprecated"
 ip -6 addr show dev eth0
 # inet6 2001:db8:1::10/64 scope global deprecated
 
@@ -163,7 +164,7 @@ ip addr change 2001:db8:1::10/64 dev eth0 preferred_lft forever
 
 ```bash
 #!/bin/bash
-# debug-source-selection.sh — Show which source address would be chosen
+# debug-source-selection.sh - Show which source address would be chosen
 
 DESTINATION=${1:-"2001:db8::1"}
 
@@ -212,4 +213,4 @@ EOF
 
 ## Conclusion
 
-RFC 6724 source address selection follows 8 rules in priority order. The most commonly triggered rules in practice are: Rule 2 (scope — link-local cannot reach global), Rule 5 (prefer interface address), Rule 6 (label matching — ULA stays local), Rule 7 (prefer temporary for privacy), and Rule 8 (longest prefix match). Use `ip addrlabel` to modify label assignments and redirect traffic to specific source prefixes. Debug selection with Python's `socket.connect()` trick — it reveals the OS-chosen source without sending actual traffic.
+RFC 6724 source address selection follows 8 rules in priority order. The most commonly triggered rules in practice are: Rule 2 (scope - link-local cannot reach global), Rule 5 (prefer interface address), Rule 6 (label matching - ULA stays local), Rule 7 (prefer temporary for privacy), and Rule 8 (longest prefix match). Use `ip addrlabel` to modify label assignments and redirect traffic to specific source prefixes. Debug selection with Python's `socket.connect()` trick - it reveals the OS-chosen source without sending actual traffic.

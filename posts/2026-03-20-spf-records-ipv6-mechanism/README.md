@@ -14,7 +14,7 @@ Sender Policy Framework (SPF) allows domain owners to specify which mail servers
 
 An SPF record is a DNS TXT record on your domain. Its basic structure:
 
-```
+```text
 v=spf1 [mechanisms] [modifiers] [all]
 ```
 
@@ -22,7 +22,7 @@ The `ip6:` mechanism authorizes specific IPv6 addresses or subnets.
 
 ## Basic ip6: Mechanism Syntax
 
-```
+```text
 ip6:<ipv6-address>           # Single address (/128)
 ip6:<ipv6-address>/<prefix>  # Address range
 ```
@@ -33,6 +33,7 @@ Add a TXT record in your DNS zone. A full example authorizing both IPv4 and IPv6
 
 ```dns
 # DNS TXT record for example.com
+
 example.com.  300  IN  TXT  "v=spf1 ip4:203.0.113.10 ip6:2001:db8::10 include:_spf.google.com ~all"
 ```
 
@@ -113,7 +114,7 @@ swaks --from sender@example.com \
 
 **Exceeding the 10 DNS lookup limit**: Each `include:` counts as a lookup. The `ip6:` mechanism does NOT require a DNS lookup, so it is efficient.
 
-**Using /0**: Never use `ip6:::/0` — it would authorize any IPv6 address in the world to send as your domain.
+**Using /0**: Never use `ip6:::/0` - it would authorize any IPv6 address in the world to send as your domain.
 
 ## All Mechanisms: Soft vs Hard Fail
 

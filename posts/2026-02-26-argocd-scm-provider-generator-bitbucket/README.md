@@ -211,6 +211,7 @@ If your Bitbucket Server uses a self-signed certificate:
 
 ```bash
 # Add the CA certificate to ArgoCD
+
 kubectl create configmap argocd-tls-certs-cm \
   -n argocd \
   --from-file=bitbucket.company.com=/path/to/ca-cert.pem

@@ -16,6 +16,7 @@ The syslog callback plugin is included with Ansible. You just need to enable it.
 
 ```ini
 # ansible.cfg - Enable the syslog callback
+
 [defaults]
 # Add syslog to the list of enabled callbacks
 # The 'community.general.syslog_json' sends structured JSON to syslog

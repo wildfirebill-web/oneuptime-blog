@@ -12,6 +12,7 @@ OCI Object Storage is a high-performance, scalable storage service. OpenTofu let
 
 ```hcl
 # Every OCI tenancy has a unique object storage namespace
+
 data "oci_objectstorage_namespace" "ns" {
   compartment_id = var.compartment_id
 }
@@ -118,4 +119,4 @@ resource "oci_objectstorage_bucket" "public" {
 
 ## Conclusion
 
-OCI Object Storage integrates tightly with the OCI ecosystem. Create private buckets for application data, enable versioning for critical data, add lifecycle policies to move old objects to Archive tier (much cheaper), and use pre-authenticated requests for temporary access. Always get the namespace first — it is required for all object storage operations.
+OCI Object Storage integrates tightly with the OCI ecosystem. Create private buckets for application data, enable versioning for critical data, add lifecycle policies to move old objects to Archive tier (much cheaper), and use pre-authenticated requests for temporary access. Always get the namespace first - it is required for all object storage operations.

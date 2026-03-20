@@ -35,6 +35,7 @@ Create a new function project and add the Cosmos DB extension.
 
 ```bash
 # Create a new function project
+
 func init CosmosChangeFeed --dotnet-isolated
 cd CosmosChangeFeed
 

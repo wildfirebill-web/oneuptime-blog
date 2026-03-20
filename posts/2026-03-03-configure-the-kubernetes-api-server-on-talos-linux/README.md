@@ -20,6 +20,7 @@ View the current API server configuration:
 
 ```bash
 # View the cluster API server configuration
+
 talosctl -n 192.168.1.10 get machineconfig -o yaml | grep -A 50 "apiServer:"
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, Configuration, Web Server, Performance
+Tags: Ubuntu, Nginx, Configuration, Web Server, Performance
 
 Description: Use the Nginx map directive to create dynamic variables based on request attributes, enabling clean, efficient configuration for routing, redirects, and access control.
 
@@ -239,6 +239,7 @@ For large maps (hundreds of entries), store the mapping data in a separate file:
 
 ```nginx
 # In nginx.conf or a conf.d include
+
 map $uri $redirect_target {
     default     "";
     include     /etc/nginx/redirects.map;

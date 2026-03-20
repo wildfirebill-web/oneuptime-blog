@@ -36,6 +36,7 @@ Define the services you want to monitor and their expected states.
 
 ```yaml
 # group_vars/all.yml
+
 # Service definitions with health check parameters
 monitored_services:
   - name: nginx

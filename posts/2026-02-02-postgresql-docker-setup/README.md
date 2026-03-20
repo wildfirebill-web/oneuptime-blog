@@ -18,6 +18,7 @@ The fastest way to get PostgreSQL running:
 
 ```bash
 # Pull the official PostgreSQL image
+
 docker pull postgres:16
 
 # Run a basic PostgreSQL container

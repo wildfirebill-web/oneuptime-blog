@@ -16,6 +16,7 @@ Description: Learn how to use tofu plan to preview what changes OpenTofu will ma
 tofu plan
 
 # Output:
+
 # OpenTofu will perform the following actions:
 #
 #   # aws_s3_bucket.data will be created
@@ -56,7 +57,7 @@ tofu plan -out=tfplan
 tofu apply tfplan
 ```
 
-Saved plans guarantee that exactly what was previewed is what gets applied — no drift between plan and apply.
+Saved plans guarantee that exactly what was previewed is what gets applied - no drift between plan and apply.
 
 ## Targeted Plan
 
@@ -84,9 +85,9 @@ tofu plan -detailed-exitcode
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -eq 2 ]; then
-  echo "Changes detected — proceeding to apply"
+  echo "Changes detected - proceeding to apply"
 elif [ $EXIT_CODE -eq 0 ]; then
-  echo "No changes — nothing to apply"
+  echo "No changes - nothing to apply"
 fi
 ```
 

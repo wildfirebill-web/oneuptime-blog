@@ -18,6 +18,7 @@ The `cbt` tool comes with the Google Cloud SDK as a separate component. Install 
 
 ```bash
 # Install the cbt CLI component
+
 gcloud components install cbt
 
 # Verify the installation

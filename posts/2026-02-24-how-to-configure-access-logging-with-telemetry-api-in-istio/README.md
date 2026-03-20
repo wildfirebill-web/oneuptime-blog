@@ -36,6 +36,7 @@ Apply it and generate some traffic:
 kubectl apply -f access-log-telemetry.yaml
 
 # Generate traffic to see logs
+
 curl http://your-service/api/test
 
 # Check the access logs

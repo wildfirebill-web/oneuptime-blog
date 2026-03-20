@@ -22,6 +22,7 @@ Organize the Sealed Secrets controller deployment in your repository's infrastru
 
 ```bash
 # Create the directory structure
+
 mkdir -p infrastructure/sealed-secrets
 ```
 

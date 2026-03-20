@@ -79,6 +79,7 @@ PostgreSQL supports multiple users per database, making dual-credential rotation
 ```bash
 #!/bin/bash
 # PostgreSQL credential rotation using dual-user pattern
+
 # Requires: psql client, jq, base64
 
 set -euo pipefail

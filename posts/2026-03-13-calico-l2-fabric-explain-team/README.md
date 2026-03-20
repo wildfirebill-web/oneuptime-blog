@@ -37,6 +37,7 @@ Show the team what encapsulation looks like with `tcpdump`:
 
 ```bash
 # On a worker node, capture traffic on the VXLAN interface
+
 sudo tcpdump -i vxlan.calico -n -c 5
 
 # In another terminal, generate cross-node pod-to-pod traffic

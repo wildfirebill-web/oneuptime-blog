@@ -131,6 +131,7 @@ The `$dex.github.clientID` syntax references values from the `argocd-secret`.
 
 ```bash
 # Store GitHub OAuth credentials
+
 kubectl -n argocd patch secret argocd-secret --type merge -p '{
   "stringData": {
     "dex.github.clientID": "your-github-client-id",

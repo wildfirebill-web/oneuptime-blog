@@ -30,6 +30,7 @@ Create a Cloud Monitoring dashboard that gives you a single pane of glass for al
 
 ```bash
 # Create a monitoring dashboard using gcloud
+
 gcloud monitoring dashboards create --config-from-file=dashboard.json
 ```
 

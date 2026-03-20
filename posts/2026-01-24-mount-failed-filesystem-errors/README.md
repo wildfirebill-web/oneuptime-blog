@@ -74,6 +74,7 @@ Start with these commands to understand the problem:
 
 ```bash
 # Check current mounts
+
 mount | column -t
 
 # View mount errors in system log

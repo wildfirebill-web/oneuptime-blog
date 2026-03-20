@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Auto Scaling, AWS, EC2, Infrastructure as Code, Compute
 
-Description: Learn how to configure AWS Auto Scaling Groups with OpenTofu — defining launch templates, scaling policies, lifecycle hooks, and mixed instance policies for cost-optimized compute fleets.
+Description: Learn how to configure AWS Auto Scaling Groups with OpenTofu - defining launch templates, scaling policies, lifecycle hooks, and mixed instance policies for cost-optimized compute fleets.
 
 ## Introduction
 
@@ -104,6 +104,7 @@ resource "aws_autoscaling_group" "app" {
 
 ```hcl
 # Scale to maintain 60% CPU utilization
+
 resource "aws_autoscaling_policy" "cpu_target_tracking" {
   name                   = "${var.environment}-cpu-target-tracking"
   autoscaling_group_name = aws_autoscaling_group.app.name
@@ -137,7 +138,7 @@ resource "aws_autoscaling_policy" "request_count" {
 ## Lifecycle Hooks for Graceful Draining
 
 ```hcl
-# Hook that fires before termination — allows graceful shutdown
+# Hook that fires before termination - allows graceful shutdown
 resource "aws_autoscaling_lifecycle_hook" "termination" {
   name                   = "${var.environment}-termination-hook"
   autoscaling_group_name = aws_autoscaling_group.app.name
@@ -149,7 +150,7 @@ resource "aws_autoscaling_lifecycle_hook" "termination" {
   role_arn                = aws_iam_role.lifecycle.arn
 }
 
-# Hook that fires after launch — allows initialization before traffic
+# Hook that fires after launch - allows initialization before traffic
 resource "aws_autoscaling_lifecycle_hook" "launch" {
   name                   = "${var.environment}-launch-hook"
   autoscaling_group_name = aws_autoscaling_group.app.name
@@ -227,4 +228,4 @@ resource "aws_autoscaling_schedule" "scale_down" {
 
 ## Conclusion
 
-AWS Auto Scaling Groups with OpenTofu provide elastic compute capacity that responds to real demand. Use target tracking policies for simple CPU/request scaling, lifecycle hooks for graceful instance draining, and mixed instance policies to blend Spot and On-Demand capacity for up to 70% cost savings. The `instance_refresh` block enables zero-downtime deployments when the launch template changes — OpenTofu triggers a rolling refresh automatically on apply.
+AWS Auto Scaling Groups with OpenTofu provide elastic compute capacity that responds to real demand. Use target tracking policies for simple CPU/request scaling, lifecycle hooks for graceful instance draining, and mixed instance policies to blend Spot and On-Demand capacity for up to 70% cost savings. The `instance_refresh` block enables zero-downtime deployments when the launch template changes - OpenTofu triggers a rolling refresh automatically on apply.

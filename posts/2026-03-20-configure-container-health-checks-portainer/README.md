@@ -14,10 +14,10 @@ Health checks tell Docker (and Portainer) whether a container is actually functi
 
 A container with a health check can be in four states:
 
-- **starting** — health check hasn't run yet (within `start_period`)
-- **healthy** — last N checks passed
-- **unhealthy** — last N checks failed (triggers restart if `restart: always`)
-- **none** — no health check defined
+- **starting** - health check hasn't run yet (within `start_period`)
+- **healthy** - last N checks passed
+- **unhealthy** - last N checks failed (triggers restart if `restart: always`)
+- **none** - no health check defined
 
 ## Defining Health Checks in Portainer Stacks
 
@@ -83,7 +83,8 @@ For complex checks:
 
 ```bash
 #!/bin/sh
-# healthcheck.sh — inside the container
+# healthcheck.sh - inside the container
+
 # Returns 0 for healthy, 1 for unhealthy
 
 # Check HTTP endpoint
@@ -137,4 +138,4 @@ When the container becomes `unhealthy`, Docker automatically restarts it (simila
 
 ## Summary
 
-Container health checks are a fundamental reliability feature. Define them for all production services in your Portainer stacks — especially databases and API services. Portainer's health status display gives immediate visibility into container health, and automatic restarts on unhealthy state reduce manual intervention for recoverable failures.
+Container health checks are a fundamental reliability feature. Define them for all production services in your Portainer stacks - especially databases and API services. Portainer's health status display gives immediate visibility into container health, and automatic restarts on unhealthy state reduce manual intervention for recoverable failures.

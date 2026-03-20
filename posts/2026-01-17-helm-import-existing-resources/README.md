@@ -8,7 +8,7 @@ Description: Guide to adopting unmanaged Kubernetes resources into Helm releases
 
 > Adopting existing Kubernetes resources into Helm management enables unified release management. This guide covers annotation-based adoption, using helm adopt plugin, and strategies for migrating unmanaged resources to Helm.
 
-## Resource Adoption Overview
+Resource Adoption Overview
 
 ```mermaid
 flowchart TB
@@ -44,6 +44,7 @@ flowchart TB
 
 ```bash
 # List resources without Helm management
+
 kubectl get all -l '!app.kubernetes.io/managed-by'
 
 # Check specific resource labels
@@ -275,7 +276,7 @@ helm upgrade --install myapp ./myapp --namespace production
 
 ## Handling Resource Conflicts
 
-### Resource Already Exists Error
+Resource Already Exists Error
 
 ```bash
 # Error: "resource already exists and is not managed by Helm"

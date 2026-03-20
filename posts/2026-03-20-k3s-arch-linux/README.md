@@ -14,6 +14,7 @@ Arch Linux's rolling release model and minimal base make it an interesting platf
 
 ```bash
 # Update all packages
+
 sudo pacman -Syu
 
 # Install base tools
@@ -98,7 +99,7 @@ stat -fc %T /sys/fs/cgroup/
 # Then: sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## Step 6: Option A — Install via AUR
+## Step 6: Option A - Install via AUR
 
 ```bash
 # Install K3s from the AUR
@@ -113,7 +114,7 @@ sudo systemctl start k3s
 sudo systemctl status k3s
 ```
 
-## Step 7: Option B — Manual Installation
+## Step 7: Option B - Manual Installation
 
 ```bash
 # Create K3s configuration

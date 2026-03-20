@@ -63,6 +63,7 @@ flowchart TD
 
 ```bash
 # Check if service is running with systemctl
+
 systemctl status nginx
 systemctl status mysql
 systemctl status sshd

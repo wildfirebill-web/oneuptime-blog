@@ -18,6 +18,7 @@ The images field in Kustomize replaces image references in containers and init c
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

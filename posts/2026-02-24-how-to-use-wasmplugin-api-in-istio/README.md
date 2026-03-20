@@ -116,6 +116,7 @@ When you have multiple WasmPlugins in the same phase, `priority` controls the or
 
 ```yaml
 # This runs first (higher priority)
+
 apiVersion: extensions.istio.io/v1alpha1
 kind: WasmPlugin
 metadata:

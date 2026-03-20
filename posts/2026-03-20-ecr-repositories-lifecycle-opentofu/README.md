@@ -8,7 +8,7 @@ Description: Learn how to create Amazon ECR repositories with lifecycle policies
 
 ## Introduction
 
-Amazon ECR stores Docker container images securely with encryption at rest, image vulnerability scanning, and lifecycle policies to automatically remove old images. Without lifecycle policies, images accumulate indefinitely—lifecycle policies can reduce storage costs by 90% by keeping only the most recent N images per tag pattern or removing untagged images automatically.
+Amazon ECR stores Docker container images securely with encryption at rest, image vulnerability scanning, and lifecycle policies to automatically remove old images. Without lifecycle policies, images accumulate indefinitely-lifecycle policies can reduce storage costs by 90% by keeping only the most recent N images per tag pattern or removing untagged images automatically.
 
 ## Prerequisites
 
@@ -104,6 +104,7 @@ resource "aws_ecr_lifecycle_policy" "app" {
 
 ```hcl
 # Allow another account (e.g., production) to pull images from this registry
+
 resource "aws_ecr_repository_policy" "cross_account" {
   repository = aws_ecr_repository.app.name
 
@@ -185,4 +186,4 @@ docker push \
 
 ## Conclusion
 
-ECR lifecycle policies are essential cost controls—set them up before your first image push, not after. Use `IMMUTABLE` tags to prevent accidental overwrites of production image tags. Cross-account repository policies allow dev/staging accounts to push images while production accounts only pull, maintaining a clean separation of CI/CD permissions. Enable scan on push and monitor Inspector findings to catch CVEs in your images before deployment.
+ECR lifecycle policies are essential cost controls-set them up before your first image push, not after. Use `IMMUTABLE` tags to prevent accidental overwrites of production image tags. Cross-account repository policies allow dev/staging accounts to push images while production accounts only pull, maintaining a clean separation of CI/CD permissions. Enable scan on push and monitor Inspector findings to catch CVEs in your images before deployment.

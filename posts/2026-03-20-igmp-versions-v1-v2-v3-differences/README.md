@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Multicast, IGMP, IPv4, Protocols
+Tags: Networking, Multicast, IGMP, IPv4, Protocol
 
 Description: Compare IGMP v1, v2, and v3, covering their key protocol differences, feature improvements, and how to identify which version is active on your network.
 
@@ -12,7 +12,7 @@ The Internet Group Management Protocol (IGMP) allows hosts to signal routers abo
 
 ## IGMP v1 (RFC 1112)
 
-IGMPv1 is the baseline. Hosts send **Membership Reports** to join a group. There is no explicit leave mechanism — the router must wait for the **Membership Report Timer** to expire before pruning the group.
+IGMPv1 is the baseline. Hosts send **Membership Reports** to join a group. There is no explicit leave mechanism - the router must wait for the **Membership Report Timer** to expire before pruning the group.
 
 Key characteristics:
 - No Leave message (silent departure)
@@ -32,7 +32,7 @@ Key improvements over v1:
 
 Typical leave sequence:
 
-```
+```text
 Host → Router:   Leave Group  (dst 224.0.0.2)
 Router → Group:  Group-Specific Query  (dst 239.1.2.3)
   [no response within Max Response Time]
@@ -41,7 +41,7 @@ Router:          Prunes group from interface
 
 ## IGMP v3 (RFC 3376)
 
-IGMPv3 is the current standard, adding **source filtering** — the foundation for Source-Specific Multicast (SSM).
+IGMPv3 is the current standard, adding **source filtering** - the foundation for Source-Specific Multicast (SSM).
 
 Key improvements over v2:
 - Hosts specify **INCLUDE** or **EXCLUDE** source lists in reports
@@ -77,13 +77,14 @@ Capture IGMP traffic and inspect message types:
 
 ```bash
 # Capture IGMP and decode version from message type byte
+
 sudo tcpdump -i eth0 -n -vv "ip proto 2"
 ```
 
 In tcpdump output:
-- `igmp v1 report` — IGMPv1
-- `igmp v2 report` / `igmp leave` — IGMPv2
-- `igmp v3 report` — IGMPv3
+- `igmp v1 report` - IGMPv1
+- `igmp v2 report` / `igmp leave` - IGMPv2
+- `igmp v3 report` - IGMPv3
 
 Check the configured version on a Linux host:
 

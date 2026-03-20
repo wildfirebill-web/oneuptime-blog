@@ -293,6 +293,7 @@ Lua filter issues can be tricky to debug. Here are some techniques:
 
 ```bash
 # Check proxy logs for Lua log output
+
 kubectl logs deploy/my-service -c istio-proxy | grep "lua\|script"
 
 # Verify the filter was injected

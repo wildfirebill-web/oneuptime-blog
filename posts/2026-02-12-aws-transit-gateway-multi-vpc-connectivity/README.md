@@ -34,6 +34,7 @@ Every VPC connects once to the transit gateway. The transit gateway handles the 
 
 ```bash
 # Create the transit gateway
+
 TGW_ID=$(aws ec2 create-transit-gateway \
   --description "Central network hub" \
   --options '{

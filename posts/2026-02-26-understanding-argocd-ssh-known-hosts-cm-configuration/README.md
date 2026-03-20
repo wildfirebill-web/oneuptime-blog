@@ -60,6 +60,7 @@ If you host your own Git server (Gitea, GitLab self-hosted, etc.), you need to a
 
 ```bash
 # Step 1: Scan the host key from your Git server
+
 ssh-keyscan -t ed25519,rsa,ecdsa git.internal.example.com 2>/dev/null
 
 # Output example:

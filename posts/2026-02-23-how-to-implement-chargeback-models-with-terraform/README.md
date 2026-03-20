@@ -22,6 +22,7 @@ Accurate chargeback requires consistent, comprehensive tagging. Every resource m
 
 ```hcl
 # Define the chargeback tag schema
+
 variable "chargeback_tags" {
   description = "Required tags for cost allocation"
   type = object({

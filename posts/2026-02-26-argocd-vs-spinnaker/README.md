@@ -90,6 +90,7 @@ ArgoCD equivalent using Git-based promotion:
 
 ```yaml
 # ArgoCD Application - staging auto-syncs from Git
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

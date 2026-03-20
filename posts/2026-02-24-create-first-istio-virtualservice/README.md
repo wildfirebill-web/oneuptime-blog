@@ -198,6 +198,7 @@ Verify the proxy received the configuration:
 
 ```bash
 # Pick a pod in the namespace
+
 POD=$(kubectl get pods -n bookstore -l app=reviews -o jsonpath='{.items[0].metadata.name}')
 
 # Check routes

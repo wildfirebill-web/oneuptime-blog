@@ -18,6 +18,7 @@ Copilot is a standalone binary. Install it based on your platform.
 
 ```bash
 # macOS (Homebrew)
+
 brew install aws/tap/copilot-cli
 
 # macOS/Linux (direct download)

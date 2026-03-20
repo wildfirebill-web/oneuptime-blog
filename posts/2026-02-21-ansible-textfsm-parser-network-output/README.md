@@ -24,6 +24,7 @@ First, install the required packages on your Ansible control node.
 
 ```bash
 # Install TextFSM library and the NTC Templates collection
+
 pip install textfsm
 pip install ntc-templates
 

@@ -36,6 +36,7 @@ Before making changes, check what mode your system is currently running:
 
 ```bash
 # Quick check
+
 getenforce
 # Output: Enforcing
 

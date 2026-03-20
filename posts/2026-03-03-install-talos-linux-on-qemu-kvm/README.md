@@ -16,6 +16,7 @@ Install the necessary packages:
 
 ```bash
 # Install QEMU/KVM on Ubuntu/Debian
+
 sudo apt update
 sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients \
   bridge-utils virt-manager

@@ -24,6 +24,7 @@ A typical AML screening pipeline has these stages:
 
 ```python
 # aml_observability.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.metrics import MeterProvider

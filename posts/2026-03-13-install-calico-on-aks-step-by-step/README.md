@@ -27,6 +27,7 @@ For new clusters, enable Calico at cluster creation time:
 
 ```bash
 # Create AKS cluster with Calico network policy enabled
+
 az aks create \
   --resource-group my-resource-group \
   --name my-aks-cluster \

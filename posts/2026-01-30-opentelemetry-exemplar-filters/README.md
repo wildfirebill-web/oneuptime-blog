@@ -376,6 +376,7 @@ class SmartExemplarFilter(ExemplarFilter):
 
 
 # Configure the meter provider with the custom filter
+
 exporter = OTLPMetricExporter(
     endpoint="https://oneuptime.com/otlp/v1/metrics",
     headers={"x-oneuptime-token": "YOUR_TOKEN"}

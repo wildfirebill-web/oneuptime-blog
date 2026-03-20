@@ -34,6 +34,7 @@ parameters:
   type: gp3
   encrypted: "true"
 # Delete is the default for most provisioners
+
 reclaimPolicy: Delete
 volumeBindingMode: WaitForFirstConsumer
 allowVolumeExpansion: true

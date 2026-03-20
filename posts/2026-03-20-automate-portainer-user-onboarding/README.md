@@ -8,7 +8,7 @@ Description: Learn how to use the Portainer API to automate user creation, team 
 
 ---
 
-Manually onboarding new users in Portainer — creating accounts, assigning teams, granting environment access — doesn't scale. The Portainer API lets you automate the entire process: create users, assign them to teams, and grant environment-level permissions in a single script run. This is useful for HR-triggered provisioning, CI/CD user management, or team bootstrapping.
+Manually onboarding new users in Portainer - creating accounts, assigning teams, granting environment access - doesn't scale. The Portainer API lets you automate the entire process: create users, assign them to teams, and grant environment-level permissions in a single script run. This is useful for HR-triggered provisioning, CI/CD user management, or team bootstrapping.
 
 ---
 
@@ -26,12 +26,13 @@ In Portainer UI:
 
 ```bash
 #!/bin/bash
-# portainer-onboard.sh — automate user creation and access setup
+# portainer-onboard.sh - automate user creation and access setup
 
 PORTAINER_URL="https://portainer.example.com"
 ADMIN_TOKEN="ptr_your_admin_token_here"
 
 # Function: create a new user
+
 create_user() {
   local username="$1"
   local password="$2"
@@ -153,7 +154,7 @@ echo "(User must change password on first login)"
 Integrate with your email system to notify new users of their credentials.
 
 ```python
-# send_welcome_email.py — send onboarding credentials to new user
+# send_welcome_email.py - send onboarding credentials to new user
 import smtplib
 from email.message import EmailMessage
 
@@ -181,4 +182,4 @@ Please log in and change your password immediately.
 
 ## Summary
 
-The Portainer API provides full control over user lifecycle management. Combining `POST /api/users`, team membership APIs, and endpoint access policies into a single onboarding script makes it easy to provision new users consistently and repeatably — or to integrate user creation into your existing HR or identity management workflows.
+The Portainer API provides full control over user lifecycle management. Combining `POST /api/users`, team membership APIs, and endpoint access policies into a single onboarding script makes it easy to provision new users consistently and repeatably - or to integrate user creation into your existing HR or identity management workflows.

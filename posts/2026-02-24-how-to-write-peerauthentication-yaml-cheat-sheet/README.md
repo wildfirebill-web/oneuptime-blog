@@ -280,6 +280,7 @@ Check that your policy is applied correctly:
 
 ```bash
 # List all policies
+
 kubectl get peerauthentication -A
 
 # Check specific policy

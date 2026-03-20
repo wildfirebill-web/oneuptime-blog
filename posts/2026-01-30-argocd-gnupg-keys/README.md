@@ -49,6 +49,7 @@ To install GPG on your system, use the following commands.
 
 ```bash
 # macOS
+
 brew install gnupg
 
 # Ubuntu/Debian

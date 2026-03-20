@@ -34,6 +34,7 @@ Confirm the pods are failing due to image pull issues:
 
 ```bash
 # Check pod status for ImagePullBackOff
+
 kubectl get pods -n your-namespace
 
 # Get detailed error from the pod events

@@ -22,6 +22,7 @@ First, ensure your nodes have the necessary kernel support. eBPF requires Linux 
 
 ```bash
 # Check kernel version
+
 uname -r
 
 # Verify BPF support

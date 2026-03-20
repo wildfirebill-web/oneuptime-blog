@@ -39,6 +39,7 @@ Tokens have an expiration time. If the token used by Terraform has expired, you 
 
 ```hcl
 # The token from aws_eks_cluster_auth is short-lived
+
 data "aws_eks_cluster_auth" "cluster" {
   name = "my-cluster"
 }

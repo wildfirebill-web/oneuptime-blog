@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Debian, Network Bonding, ifupdown, /etc/network/interfaces, Link Aggregation, Networking
+Tags: Debian, Network Bonding, Ifupdown, /etc/network/interfaces, Link Aggregation, Networking
 
 Description: Set up network interface bonding on Debian using the /etc/network/interfaces file and the ifenslave tool for persistent link redundancy configuration.
 
@@ -20,6 +20,7 @@ Debian with the traditional `ifupdown` network stack uses `/etc/network/interfac
 
 ```bash
 # Install ifenslave and the bonding utilities
+
 apt install ifenslave
 
 # Load the bonding module

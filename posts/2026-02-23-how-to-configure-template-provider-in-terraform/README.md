@@ -20,6 +20,7 @@ The Template provider has been deprecated in favor of the built-in `templatefile
 
 ```hcl
 # versions.tf - Declare the Template provider
+
 terraform {
   required_version = ">= 1.0"
 

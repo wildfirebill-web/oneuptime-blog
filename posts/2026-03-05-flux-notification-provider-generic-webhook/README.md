@@ -31,6 +31,7 @@ Store the webhook URL and any authentication headers in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the webhook URL and optional authentication headers
+
 kubectl create secret generic generic-webhook-secret \
   --namespace=flux-system \
   --from-literal=address=https://your-endpoint.example.com/flux-events \

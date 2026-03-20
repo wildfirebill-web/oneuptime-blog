@@ -167,6 +167,7 @@ After the ImageUpdateAutomation runs, verify that commits use the correct author
 
 ```bash
 # Check the automation status
+
 flux get image update image-updater
 
 # View recent commits in the repository

@@ -271,6 +271,7 @@ echo "Create DNS record: kiali.example.com -> $GATEWAY_IP"
 
 ```bash
 # Test basic connectivity
+
 curl -k -I https://kiali.example.com/kiali
 
 # Should get a 200 or redirect to login

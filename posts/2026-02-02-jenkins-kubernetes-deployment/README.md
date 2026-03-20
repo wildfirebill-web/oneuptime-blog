@@ -58,6 +58,7 @@ Alternatively, use the Jenkins CLI to install plugins programmatically.
 
 ```bash
 # Install plugins using Jenkins CLI
+
 java -jar jenkins-cli.jar -s http://localhost:8080/ install-plugin kubernetes kubernetes-cli docker-workflow pipeline-stage-view git credentials-binding
 
 # Restart Jenkins to activate plugins

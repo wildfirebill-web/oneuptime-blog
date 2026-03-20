@@ -176,6 +176,7 @@ Implement correlation in Python applications:
 
 ```python
 # correlation/logger.py
+
 # Python logging with trace correlation
 
 import logging

@@ -22,6 +22,7 @@ Start by adding the test utilities alongside your dev dependencies:
 
 ```bash
 # Install the test utilities and core OpenTelemetry packages
+
 npm install --save-dev @opentelemetry/contrib-test-utils
 npm install --save-dev @opentelemetry/api
 npm install --save-dev @opentelemetry/sdk-trace-base

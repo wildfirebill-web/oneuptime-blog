@@ -67,6 +67,7 @@ Typha uses mTLS to authenticate Felix connections.
 
 ```bash
 # Generate CA
+
 openssl req -x509 -newkey rsa:4096 -keyout typha-ca.key -out typha-ca.crt \
   -days 365 -nodes -subj "/CN=typha-ca"
 

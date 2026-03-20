@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, net.ListenConfig, IPv4, Socket Options, Networking, TCP, syscall
+Tags: Go, Net.ListenConfig, IPv4, Socket Options, Networking, TCP, Syscalls
 
 Description: Use Go's net.ListenConfig with a Control function to set low-level IPv4 socket options like SO_REUSEPORT, TCP_FASTOPEN, and SO_KEEPALIVE before binding a listener.
 
 ## Introduction
 
-Go's standard `net.Listen` creates a TCP listener with sensible defaults, but sometimes you need to customize socket options — for example, enabling `SO_REUSEPORT` for multi-process servers, `TCP_FASTOPEN` for reduced latency, or `SO_RCVBUF`/`SO_SNDBUF` for high-throughput servers. `net.ListenConfig` with a `Control` function provides this capability.
+Go's standard `net.Listen` creates a TCP listener with sensible defaults, but sometimes you need to customize socket options - for example, enabling `SO_REUSEPORT` for multi-process servers, `TCP_FASTOPEN` for reduced latency, or `SO_RCVBUF`/`SO_SNDBUF` for high-throughput servers. `net.ListenConfig` with a `Control` function provides this capability.
 
 ## Basic ListenConfig Usage
 

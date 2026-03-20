@@ -103,6 +103,7 @@ Apache Airflow is a popular choice for orchestrating batch workflows. Here is an
 
 ```python
 # airflow_batch_dag.py
+
 # This DAG orchestrates a daily ETL pipeline with proper dependencies
 
 from datetime import datetime, timedelta

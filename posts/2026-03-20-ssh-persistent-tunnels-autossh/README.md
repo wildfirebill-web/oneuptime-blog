@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSH, autossh, IPv4, Persistent Tunnels, High Availability, Networking
+Tags: SSH, Autossh, IPv4, Persistent Tunnels, High Availability, Networking
 
 Description: Use autossh to create self-healing SSH tunnels on IPv4 that automatically restart after network interruptions, connection drops, or system reboots.
 
@@ -14,6 +14,7 @@ Regular SSH tunnels die silently when the network drops. `autossh` monitors tunn
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install autossh
 
 # RHEL/CentOS

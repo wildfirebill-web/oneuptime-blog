@@ -48,6 +48,7 @@ graph TB
 
 ```bash
 # Run Metabase with ClickHouse driver
+
 docker run -d \
   --name metabase \
   -p 3000:3000 \

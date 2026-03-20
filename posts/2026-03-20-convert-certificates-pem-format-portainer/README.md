@@ -23,6 +23,7 @@ Portainer requires certificates and keys in PEM format (base64-encoded with `---
 
 ```bash
 # Convert DER-encoded certificate to PEM
+
 openssl x509 \
   -inform der \
   -in certificate.der \

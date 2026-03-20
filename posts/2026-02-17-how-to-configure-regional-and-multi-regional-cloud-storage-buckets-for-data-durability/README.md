@@ -45,6 +45,7 @@ Regional buckets are the most common choice for application data that stays with
 
 ```bash
 # Create a regional bucket in us-central1
+
 # The -l flag sets the location, -c sets the default storage class
 gsutil mb -l us-central1 -c STANDARD gs://my-project-app-data
 

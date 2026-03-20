@@ -38,6 +38,7 @@ Deploy it using the provided CloudFormation template:
 
 ```bash
 # Deploy the solution stack
+
 aws cloudformation create-stack \
   --stack-name automated-security-response \
   --template-url https://s3.amazonaws.com/solutions-reference/aws-security-hub-automated-response-and-remediation/latest/aws-sharr-deploy.template \

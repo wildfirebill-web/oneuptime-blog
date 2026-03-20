@@ -708,6 +708,7 @@ if __name__ == '__main__':
 
 ```yaml
 # prometheus-rules.yml
+
 groups:
   - name: kafka-hotspot-detection
     rules:

@@ -53,6 +53,7 @@ The simplest fix is to use explicit range notation that avoids .0 and .255:
 
 ```yaml
 # pool-safe-range.yaml
+
 # Pool that avoids .0 and .255 addresses
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

@@ -86,6 +86,7 @@ Deploy Pyroscope using Docker or Kubernetes.
 
 ```yaml
 # docker-compose.yml for local development
+
 version: '3.8'
 
 services:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, Router Advertisement, IPv6, radvd, Cisco, Router Configuration
+Tags: SLAAC, Router Advertisement, IPv6, Radvd, Cisco, Router Configuration
 
 Description: Configure IPv6 routers to send Router Advertisements with prefix information for SLAAC, including Cisco IOS, Linux radvd, and key RA parameters for address autoconfiguration.
 
@@ -12,7 +12,7 @@ For SLAAC to work, the router must send Router Advertisements containing Prefix 
 
 ## Cisco IOS SLAAC Configuration
 
-```
+```text
 ! Step 1: Enable IPv6 routing
 ipv6 unicast-routing
 
@@ -54,7 +54,7 @@ show ipv6 interface GigabitEthernet0/1
 
 ## Cisco IOS with Stateless DHCPv6 (O flag)
 
-```
+```text
 ! SLAAC for address + DHCPv6 for DNS (common pattern)
 interface GigabitEthernet0/1
  ipv6 address 2001:db8::1/64
@@ -80,6 +80,7 @@ interface GigabitEthernet0/1
 
 ```bash
 # Install radvd
+
 sudo apt-get install radvd
 
 # Create radvd configuration
@@ -164,7 +165,7 @@ sudo systemctl restart radvd
 
 ## Key RA Parameters for SLAAC
 
-```
+```text
 RA Parameters Summary:
 
 Router Lifetime:

@@ -44,6 +44,7 @@ flowchart TB
 
 ```bash
 # Create a resource group
+
 az group create \
     --name myContainerResources \
     --location eastus

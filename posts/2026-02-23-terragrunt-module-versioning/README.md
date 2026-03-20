@@ -16,6 +16,7 @@ The most common pattern is tagging your Terraform module repository with semanti
 
 ```hcl
 # dev/vpc/terragrunt.hcl
+
 terraform {
   source = "git::https://github.com/org/terraform-modules.git//networking/vpc?ref=v2.3.0"
 }

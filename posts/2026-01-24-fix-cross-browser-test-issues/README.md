@@ -109,6 +109,7 @@ Run tests on specific browsers:
 
 ```bash
 # Run on all browsers
+
 npx playwright test
 
 # Run on specific browser

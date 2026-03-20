@@ -18,6 +18,7 @@ There is a better pattern: use a SpanProcessor that works with a context-based a
 
 ```python
 # attribute_store.py
+
 import threading
 from contextvars import ContextVar
 from typing import Dict, Any

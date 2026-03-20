@@ -36,6 +36,7 @@ Autoscaling policies are defined as YAML configuration files and created as Data
 
 ```yaml
 # autoscaling-policy.yaml
+
 workerConfig:
   minInstances: 2
   maxInstances: 20

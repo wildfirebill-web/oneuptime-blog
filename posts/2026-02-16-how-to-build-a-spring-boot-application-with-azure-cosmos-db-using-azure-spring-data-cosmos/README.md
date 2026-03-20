@@ -59,6 +59,7 @@ Add your Cosmos DB credentials to `application.properties`.
 
 ```properties
 # application.properties
+
 # Azure Cosmos DB connection settings
 azure.cosmos.uri=https://your-account.documents.azure.com:443/
 azure.cosmos.key=your-primary-key

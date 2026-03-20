@@ -14,9 +14,10 @@ Testing SRv6 configurations in an isolated lab prevents production outages. Linu
 
 ```bash
 #!/bin/bash
-# srv6-lab.sh — minimal SRv6 test topology using Linux namespaces
+# srv6-lab.sh - minimal SRv6 test topology using Linux namespaces
 
 # Create 3 routers as network namespaces
+
 for ns in R1 R2 R3; do
     ip netns add $ns
     ip netns exec $ns ip link set lo up
@@ -25,14 +26,14 @@ for ns in R1 R2 R3; do
 done
 
 # Create veth pairs between routers
-# R1 — R2
+# R1 - R2
 ip link add r1r2-r1 type veth peer name r1r2-r2
 ip link set r1r2-r1 netns R1
 ip link set r1r2-r2 netns R2
 ip netns exec R1 ip link set r1r2-r1 up
 ip netns exec R2 ip link set r1r2-r2 up
 
-# R2 — R3
+# R2 - R3
 ip link add r2r3-r2 type veth peer name r2r3-r3
 ip link set r2r3-r2 netns R2
 ip link set r2r3-r3 netns R3
@@ -127,7 +128,7 @@ sudo containerlab exec -t containerlab/srv6-topology.yml \
 
 ```bash
 #!/bin/bash
-# srv6-tests.sh — validate SRv6 lab configuration
+# srv6-tests.sh - validate SRv6 lab configuration
 
 PASS=0
 FAIL=0

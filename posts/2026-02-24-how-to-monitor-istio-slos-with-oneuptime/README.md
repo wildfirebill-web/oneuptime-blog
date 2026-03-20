@@ -28,6 +28,7 @@ The most fundamental SLI measures whether requests succeed:
 
 ```text
 # Availability = successful requests / total requests
+
 # Using Istio metrics:
 
 availability = sum(rate(istio_requests_total{

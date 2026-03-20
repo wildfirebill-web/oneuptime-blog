@@ -34,6 +34,7 @@ The following example demonstrates how to parallelize a CPU-intensive computatio
 
 ```python
 # pool_basic.py
+
 from multiprocessing import Pool, cpu_count
 import time
 

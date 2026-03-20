@@ -21,6 +21,7 @@ Verify your Power system is running Linux in little-endian mode:
 ```bash
 uname -m
 # Expected output: ppc64le
+
 ```
 
 Supported distributions on ppc64le:

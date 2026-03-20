@@ -51,6 +51,7 @@ Rather than scanning everything, create a job specifically targeting buckets tha
 
 ```bash
 # Create a PII-focused classification job
+
 aws macie2 create-classification-job \
   --job-type ONE_TIME \
   --name "pii-scan-customer-data" \

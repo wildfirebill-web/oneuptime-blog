@@ -1,4 +1,4 @@
-# How to Back Up NeuVector Configuration
+# How to Back Up NeuVector Configuration - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ NeuVector stores its configuration in an internal database. Regular backups prot
 
 ```bash
 # Authenticate to NeuVector
+
 TOKEN=$(curl -sk -X POST \
   https://neuvector.example.com/auth \
   -H "Content-Type: application/json" \
@@ -138,5 +139,5 @@ curl -sk \
 
 - Store backups in an S3 bucket with versioning enabled so you can roll back to any previous backup.
 - Test the restoration process quarterly to verify backups are valid.
-- Create a dedicated read-only NeuVector user for backup jobs — never use the admin account.
+- Create a dedicated read-only NeuVector user for backup jobs - never use the admin account.
 - Back up before every NeuVector upgrade as a safety net.

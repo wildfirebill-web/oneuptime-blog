@@ -22,6 +22,7 @@ ICMPv6 Neighbor Discovery Protocol (NDP) replaces ARP in IPv6. It handles addres
 
 ```wireshark
 # Show ALL NDP/ICMPv6 messages
+
 icmpv6
 
 # Show only Neighbor Solicitation messages (type 135)
@@ -102,7 +103,7 @@ icmpv6.type == 136 && icmpv6.nd.na.flag.solicited == 0
 
 1. Go to **Statistics → Conversations**
 2. Select the **IPv6** tab
-3. Look for multicast conversations (ff02::...) — these represent NDP exchanges
+3. Look for multicast conversations (ff02::...) - these represent NDP exchanges
 
 ## Common NDP Issues
 

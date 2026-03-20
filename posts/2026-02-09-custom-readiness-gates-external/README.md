@@ -357,6 +357,7 @@ Here's a Python implementation using the Kubernetes client library:
 
 ```python
 # readiness_gate_controller.py
+
 from kubernetes import client, config, watch
 import time
 import logging

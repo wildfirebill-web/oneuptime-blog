@@ -1,4 +1,4 @@
-# How to Create a VPC with OpenTofu on AWS
+# How to Create a VPC with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

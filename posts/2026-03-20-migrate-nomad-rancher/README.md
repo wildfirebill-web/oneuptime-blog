@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, migration, nomad, kubernetes
+Tags: Rancher, Migration, Nomad, Kubernetes
 
 Description: Guide to migrating workloads from HashiCorp Nomad to Rancher Kubernetes clusters.
 
@@ -45,6 +45,7 @@ echo "=== Workload Inventory ==="
 echo ""
 echo "Services/Applications:"
 # Docker Swarm example:
+
 # docker service ls --format "table {{.Name}}\t{{.Image}}\t{{.Replicas}}"
 
 # Docker Compose example:

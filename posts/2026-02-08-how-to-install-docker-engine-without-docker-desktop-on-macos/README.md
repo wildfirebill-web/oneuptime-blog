@@ -25,6 +25,7 @@ Colima is the most popular Docker Desktop alternative on macOS. It runs a lightw
 
 ```bash
 # Install Colima and the Docker CLI using Homebrew
+
 brew install colima docker docker-compose docker-buildx
 ```
 

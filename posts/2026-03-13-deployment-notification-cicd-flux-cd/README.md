@@ -47,6 +47,7 @@ Two CRDs manage notifications:
 
 ```yaml
 # clusters/production/notifications/slack-provider.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

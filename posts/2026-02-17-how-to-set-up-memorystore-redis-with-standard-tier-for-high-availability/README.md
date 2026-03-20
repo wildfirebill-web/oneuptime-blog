@@ -47,6 +47,7 @@ Here is the command to create a production-ready Standard Tier instance:
 
 ```bash
 # Create a Standard Tier Memorystore Redis instance with cross-zone replication
+
 gcloud redis instances create production-cache \
   --size=5 \
   --region=us-central1 \

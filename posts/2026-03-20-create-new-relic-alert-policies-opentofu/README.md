@@ -43,6 +43,7 @@ resource "newrelic_alert_policy" "application" {
 
 ```hcl
 # High error rate condition
+
 resource "newrelic_nrql_alert_condition" "error_rate" {
   policy_id   = newrelic_alert_policy.application.id
   name        = "High Error Rate"

@@ -36,6 +36,7 @@ The `union` filter merges two lists and removes duplicates:
 
 ```yaml
 # playbook-union.yml
+
 # Combines two package lists into one deduplicated list
 - name: Demonstrate union operation
   hosts: localhost

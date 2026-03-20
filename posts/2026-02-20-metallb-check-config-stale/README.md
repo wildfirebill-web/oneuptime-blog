@@ -37,6 +37,7 @@ MetalLB uses validating webhooks to catch obvious errors before they reach etcd.
 
 ```bash
 # Verify the MetalLB webhook service is available
+
 kubectl get validatingwebhookconfigurations | grep metallb
 
 # Check the webhook pod status

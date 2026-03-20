@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, DevOps, Provider Functions, Tfvars, HCL, Infrastructure as Code
+Tags: Terraform, DevOps, Provider Functions, tfvars, HCL, Infrastructure as Code
 
 Description: Learn how to use the encode_tfvars provider function in Terraform to programmatically generate tfvars-formatted content from your Terraform data structures.
 
@@ -25,6 +25,7 @@ output "tfvars_content" {
 }
 
 # Output:
+
 # region           = "us-west-2"
 # instance_type    = "t3.micro"
 # instance_count   = 3

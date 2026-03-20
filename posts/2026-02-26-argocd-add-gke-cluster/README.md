@@ -24,6 +24,7 @@ The quickest way to get started. Create a service account in the GKE cluster and
 
 ```bash
 # Get GKE credentials
+
 gcloud container clusters get-credentials my-gke-cluster \
   --zone us-central1-a \
   --project my-gcp-project

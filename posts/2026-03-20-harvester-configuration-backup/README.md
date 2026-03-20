@@ -1,4 +1,4 @@
-# How to Back Up Harvester Configuration
+# How to Back Up and Restore Harvester Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Harvester runs on RKE2. Use RKE2's built-in etcd snapshot feature:
 
 ```bash
 # On a Harvester control plane node
+
 # Take an on-demand etcd snapshot
 rke2 etcd-snapshot save \
   --name harvester-config-$(date +%Y%m%d%H%M%S)
@@ -115,7 +116,7 @@ spec:
 
 ```bash
 #!/bin/bash
-# backup-verify.sh — run weekly to test restores
+# backup-verify.sh - run weekly to test restores
 set -e
 
 # List recent backups
@@ -123,7 +124,7 @@ kubectl get lhbackup -n longhorn-system \
   --sort-by=.metadata.creationTimestamp \
   | tail -10
 
-# Check backup status — all should show "Completed"
+# Check backup status - all should show "Completed"
 FAILED=$(kubectl get lhbackup -n longhorn-system \
   -o jsonpath='{.items[?(@.status.state!="Completed")].metadata.name}')
 
@@ -141,4 +142,4 @@ echo "All backups verified"
 - Test disaster recovery quarterly by restoring to a test Harvester cluster.
 - Store etcd snapshots in a different location from the Harvester cluster (S3, remote NFS).
 - Keep VM configuration YAML files in Git so you have a version history of VM changes.
-- Document your recovery procedure — the person performing recovery may not be the person who set up the backup.
+- Document your recovery procedure - the person performing recovery may not be the person who set up the backup.

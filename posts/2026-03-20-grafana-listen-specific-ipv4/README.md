@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, IPv4, Configuration, Monitoring, HTTP, Dashboard
+Tags: Grafana, IPv4, Configuration, Monitoring, HTTP, Dashboards
 
 Description: Configure Grafana to bind to a specific IPv4 address using grafana.ini, set the HTTP port and root URL, and restrict access with firewall rules.
 
@@ -17,6 +17,7 @@ Grafana defaults to listening on all interfaces (0.0.0.0:3000). Binding it to a 
 
 [server]
 # Specific IPv4 to bind to
+
 http_addr = 10.0.0.5
 http_port = 3000
 
@@ -29,7 +30,7 @@ domain = 10.0.0.5
 # Root URL (important for correct redirect URLs)
 root_url = http://10.0.0.5:3000/
 
-# Socket path (for Unix socket binding — alternative to TCP)
+# Socket path (for Unix socket binding - alternative to TCP)
 # socket = /run/grafana/grafana.sock
 ```
 

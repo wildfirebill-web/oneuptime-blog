@@ -18,6 +18,7 @@ This approach makes kernel management cleaner. Adding a kernel means dropping a 
 
 ```bash
 # List all BLS entry files
+
 ls -la /boot/loader/entries/
 
 # View a typical entry

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, TCP, Binary, Socket, POSIX, Networking
+Tags: C, IPv4, TCP, Binary, Sockets, POSIX, Networking
 
 Description: Learn how to reliably send and receive structured binary data over IPv4 TCP sockets in C using length-prefix framing, network byte order, and loop-based recv/send to handle partial reads.
 
 ## Why TCP Requires Framing
 
-TCP is a byte-stream protocol — it does not preserve message boundaries. A single `send()` of 100 bytes may arrive as two `recv()` calls of 60 and 40 bytes. Binary data must be framed so the receiver knows exactly how many bytes constitute one message.
+TCP is a byte-stream protocol - it does not preserve message boundaries. A single `send()` of 100 bytes may arrive as two `recv()` calls of 60 and 40 bytes. Binary data must be framed so the receiver knows exactly how many bytes constitute one message.
 
 ## Helper: Reliable recv and send Loops
 
@@ -62,7 +62,7 @@ int send_message(int fd, const void *payload, uint32_t payload_len) {
 }
 
 /* Receive a length-prefixed binary message.
-   Allocates heap buffer — caller must free().
+   Allocates heap buffer - caller must free().
    Returns payload size on success, -1 on error / EOF. */
 ssize_t recv_message(int fd, void **out) {
     uint32_t net_len;

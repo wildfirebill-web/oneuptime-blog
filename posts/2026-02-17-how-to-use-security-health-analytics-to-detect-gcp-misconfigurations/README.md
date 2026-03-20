@@ -41,6 +41,7 @@ SHA should be enabled by default when you activate SCC, but let us verify.
 
 ```bash
 # Check the status of Security Health Analytics
+
 gcloud scc settings services describe sha \
   --organization=ORGANIZATION_ID
 ```

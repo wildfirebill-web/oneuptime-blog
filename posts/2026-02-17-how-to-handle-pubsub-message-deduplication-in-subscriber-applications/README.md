@@ -44,6 +44,7 @@ For non-idempotent operations, you need to add idempotency checks:
 
 ```python
 # Idempotent message processing using database upsert
+
 from google.cloud import pubsub_v1, firestore
 import json
 

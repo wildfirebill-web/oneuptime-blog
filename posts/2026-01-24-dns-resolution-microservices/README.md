@@ -44,6 +44,7 @@ Before diving into solutions, understand the common error patterns.
 
 ```python
 # dns_error_analyzer.py - Analyze DNS resolution errors
+
 import re
 import logging
 from dataclasses import dataclass

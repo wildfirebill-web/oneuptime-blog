@@ -191,6 +191,7 @@ console.log(JSON.stringify(recorded, null, 2));
 
 ```python
 # tests/test_api.py
+
 import responses
 import requests
 from myapp.api import fetch_user, create_order

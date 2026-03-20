@@ -20,6 +20,7 @@ First, make sure the metrics port is accessible. Check the notifications control
 
 ```bash
 # Verify the metrics port is exposed
+
 kubectl get deployment argocd-notifications-controller -n argocd -o json | \
   jq '.spec.template.spec.containers[0].ports'
 ```
@@ -199,7 +200,7 @@ spec:
         periodSeconds: 5
 ```
 
-### Resource Usage Monitoring
+Resource Usage Monitoring
 
 Track the controller's resource consumption to detect memory leaks or CPU spikes:
 

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Policy Routing, ip rule, Networking
+Tags: IPv6, Linux, Policy Routing, Ip rule, Networking
 
 Description: Learn how to configure IPv6 policy-based routing (PBR) on Linux using ip rules and multiple routing tables to route traffic based on source address or other criteria.
 
 ## Overview
 
-IPv6 Policy-Based Routing (PBR) allows traffic to be routed differently based on attributes beyond the destination address — such as source address, incoming interface, or mark. Linux implements PBR using **routing rules** (`ip rule`) and multiple **routing tables**.
+IPv6 Policy-Based Routing (PBR) allows traffic to be routed differently based on attributes beyond the destination address - such as source address, incoming interface, or mark. Linux implements PBR using **routing rules** (`ip rule`) and multiple **routing tables**.
 
 ## How PBR Works
 
@@ -31,6 +31,7 @@ Default rules (priority 0, 32766, 32767) handle normal routing. Custom rules are
 
 ```bash
 # Show all IPv6 routing rules
+
 ip -6 rule show
 
 # Default output:
@@ -41,7 +42,7 @@ ip -6 rule show
 
 ## Use Case: Multi-Homed Server with Two ISPs
 
-Route traffic based on source address — packets from `2001:db8:1::/64` use ISP1, packets from `2001:db8:2::/64` use ISP2:
+Route traffic based on source address - packets from `2001:db8:1::/64` use ISP1, packets from `2001:db8:2::/64` use ISP2:
 
 ```bash
 # Step 1: Create separate routing tables for each ISP

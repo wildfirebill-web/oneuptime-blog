@@ -35,6 +35,7 @@ The most common cause. Your application is tracking a branch that no longer exis
 
 ```bash
 # List remote branches
+
 git ls-remote --heads https://github.com/org/repo
 
 # Check for a specific branch

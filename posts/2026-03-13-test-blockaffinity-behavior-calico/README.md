@@ -29,6 +29,7 @@ Query existing BlockAffinity resources to understand the current allocation stat
 
 ```bash
 # List all BlockAffinity resources across the cluster
+
 # Each entry shows a node-to-block affiliation
 calicoctl get blockaffinity -o yaml
 

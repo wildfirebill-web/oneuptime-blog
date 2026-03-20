@@ -1,4 +1,4 @@
-# How to Deploy Infisical Secrets Manager via Portainer
+# How to Deploy Infisical Secrets Manager via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Infisical is an open-source secrets manager that provides a GitHub-like UI for m
 
 ```yaml
 # infisical-stack.yml
+
 version: '3.8'
 
 services:

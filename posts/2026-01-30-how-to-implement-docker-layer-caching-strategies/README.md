@@ -22,6 +22,7 @@ The most impactful optimization is ordering your Dockerfile instructions from le
 
 ```dockerfile
 # Bad: Dependencies reinstalled on every code change
+
 FROM node:20-alpine
 COPY . /app
 WORKDIR /app

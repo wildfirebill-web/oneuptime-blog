@@ -20,6 +20,7 @@ Once machines are registered in the Elemental MachineInventory, the next step is
 
 ```bash
 # List all registered machines
+
 kubectl get machineinventory -n fleet-default
 
 # Check machine labels

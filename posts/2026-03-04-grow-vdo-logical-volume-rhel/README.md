@@ -14,6 +14,7 @@ As storage needs increase, you may need to grow a VDO volume. RHEL supports onli
 
 ```bash
 # Check the current logical and physical sizes
+
 sudo vdo status --name=vdo0 | grep -E "Physical size|Logical size"
 
 # Also check actual usage

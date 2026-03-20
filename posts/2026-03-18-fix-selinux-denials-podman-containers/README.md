@@ -77,6 +77,7 @@ Podman provides two volume label options:
 
 ```bash
 # Shared label - multiple containers can access
+
 podman run -v /home/user/shared-data:/data:z myimage
 
 # Private label - only this container can access

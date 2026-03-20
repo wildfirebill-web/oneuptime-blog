@@ -69,6 +69,7 @@ Ansible needs to know which migrations have already been applied:
 
 ```yaml
 # roles/db_migrate/tasks/init.yml
+
 # Create the migration tracking table
 ---
 - name: Create schema migrations tracking table

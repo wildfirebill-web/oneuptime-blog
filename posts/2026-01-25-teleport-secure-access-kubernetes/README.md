@@ -90,6 +90,7 @@ Create a values file for Teleport configuration:
 
 ```yaml
 # teleport-values.yaml
+
 # Helm values for Teleport deployment
 
 chartMode: standalone

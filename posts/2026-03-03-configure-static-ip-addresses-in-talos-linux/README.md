@@ -18,6 +18,7 @@ Static IPs are configured in the `machine.network.interfaces` section of the Tal
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     hostname: cp-node-1

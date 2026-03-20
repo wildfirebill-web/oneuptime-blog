@@ -181,6 +181,7 @@ spec:
 # /etc/rsyslog.d/50-loki.conf
 
 # Load modules
+
 module(load="imudp")
 module(load="imtcp")
 module(load="omhttp")

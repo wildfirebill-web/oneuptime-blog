@@ -26,6 +26,7 @@ First, understand what mTLS mode is active. There are three levels:
 
 ```bash
 # Mesh-wide PeerAuthentication
+
 kubectl get peerauthentication -n istio-system
 
 # Namespace-level PeerAuthentication

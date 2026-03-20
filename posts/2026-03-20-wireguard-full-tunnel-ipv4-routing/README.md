@@ -14,6 +14,7 @@ The key to full tunnel routing is a single `AllowedIPs` entry on the client peer
 
 ```ini
 # This tells WireGuard to route ALL IPv4 traffic through the tunnel
+
 AllowedIPs = 0.0.0.0/0
 ```
 
@@ -51,7 +52,7 @@ ip rule add not fwmark 51820 table 51820
 ip route add default dev wg0 table 51820
 ```
 
-You don't need to run these manually — `wg-quick up wg0` handles them automatically.
+You don't need to run these manually - `wg-quick up wg0` handles them automatically.
 
 ## Server-Side NAT for Full Tunnel
 

@@ -58,6 +58,7 @@ Partitioning is the most important factor for Spark performance.
 
 ```python
 # Check number of partitions
+
 df = spark.read.parquet("s3://bucket/data/")
 print(f"Number of partitions: {df.rdd.getNumPartitions()}")
 

@@ -22,6 +22,7 @@ The most basic optimization is using the right machine type. GCP offers predefin
 
 ```bash
 # Check recommendations for right-sizing VMs
+
 # The recommender API suggests optimal machine types based on usage
 gcloud recommender recommendations list \
   --project=my-project \

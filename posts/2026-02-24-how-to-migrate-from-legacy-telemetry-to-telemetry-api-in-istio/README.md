@@ -371,6 +371,7 @@ After migration, run these checks:
 
 ```bash
 # 1. Verify no legacy MeshConfig telemetry settings remain
+
 kubectl get cm istio -n istio-system -o yaml | grep -E "accessLogFile|enableTracing|defaultConfig"
 
 # 2. Verify no telemetry-related EnvoyFilters remain

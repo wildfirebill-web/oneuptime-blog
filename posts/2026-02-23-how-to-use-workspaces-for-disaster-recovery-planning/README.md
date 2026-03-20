@@ -16,6 +16,7 @@ The idea is to use workspaces to represent different regions or availability zon
 
 ```bash
 # Primary region workspace
+
 terraform workspace new primary-us-east-1
 
 # DR region workspace

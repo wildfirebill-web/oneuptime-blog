@@ -52,6 +52,7 @@ The sync wave is controlled through a simple annotation on your Kubernetes resou
 
 ```yaml
 # Basic sync wave annotation syntax
+
 # Lower numbers sync first, negative numbers are allowed
 # Default wave is 0 if no annotation is specified
 
@@ -78,7 +79,7 @@ Key characteristics of sync waves:
 - ArgoCD waits for all resources in a wave to be healthy before proceeding
 - Health is determined by Kubernetes readiness probes and ArgoCD health checks
 
-## Resource Ordering Patterns
+Resource Ordering Patterns
 
 A well-designed wave strategy follows the natural dependency order of your resources. Here is a comprehensive example showing proper resource ordering.
 

@@ -29,6 +29,7 @@ Use stable disk identifiers for any production pool:
 
 ```bash
 # List disks by their persistent ID
+
 ls -la /dev/disk/by-id/ | grep -v part | awk '{print $NF, $9}'
 
 # Example output:

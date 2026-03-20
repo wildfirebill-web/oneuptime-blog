@@ -44,6 +44,7 @@ Here's a typical Node.js application without multi-stage builds:
 
 ```dockerfile
 # BAD: Everything in one stage
+
 # This includes node_modules with devDependencies, build tools, etc.
 FROM node:20
 

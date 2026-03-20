@@ -37,6 +37,7 @@ First, create a taxonomy that represents your data classification hierarchy:
 
 ```bash
 # Create a taxonomy for sensitive data
+
 gcloud data-catalog taxonomies create \
   --location=us \
   --display-name="Sensitive Data Classification" \

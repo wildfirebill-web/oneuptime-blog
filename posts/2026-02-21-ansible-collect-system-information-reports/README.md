@@ -18,6 +18,7 @@ Ansible gathers a wealth of information automatically through the `setup` module
 
 ```yaml
 # collect-facts.yml - Collect basic system facts from all servers
+
 ---
 - name: Collect system information
   hosts: all

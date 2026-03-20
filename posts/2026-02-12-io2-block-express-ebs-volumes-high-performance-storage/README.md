@@ -46,6 +46,7 @@ The easiest way to check if your instance supports it:
 
 ```bash
 # Check if your instance type supports io2 Block Express
+
 aws ec2 describe-instance-types \
     --instance-types r6i.xlarge \
     --query "InstanceTypes[].EbsInfo.EbsOptimizedInfo" \

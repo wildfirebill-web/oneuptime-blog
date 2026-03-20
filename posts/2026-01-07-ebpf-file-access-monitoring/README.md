@@ -113,6 +113,7 @@ The following commands install the necessary tools and verify your kernel suppor
 
 ```bash
 # Check kernel version (requires 4.18+ for full eBPF support, 5.8+ recommended)
+
 uname -r
 
 # Install BCC tools on Ubuntu/Debian

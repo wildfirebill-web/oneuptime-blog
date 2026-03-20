@@ -32,6 +32,7 @@ Caddy is a modern, open-source web server with automatic HTTPS. It simplifies we
 
 ```bash
 # Install dependencies
+
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
 
 # Add Caddy GPG key

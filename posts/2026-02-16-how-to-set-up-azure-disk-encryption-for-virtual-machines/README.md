@@ -57,6 +57,7 @@ Create a Key Vault configured for disk encryption:
 
 ```bash
 # Create a Key Vault enabled for disk encryption
+
 az keyvault create \
   --resource-group myResourceGroup \
   --name myEncryptionVault \

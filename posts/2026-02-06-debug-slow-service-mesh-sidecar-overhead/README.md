@@ -168,6 +168,7 @@ If the Envoy sidecar is CPU-throttled, every request pays the price. Check with 
 
 ```yaml
 # Increase sidecar resources if needed
+
 apiVersion: v1
 kind: Pod
 metadata:

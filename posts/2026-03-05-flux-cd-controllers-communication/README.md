@@ -58,6 +58,7 @@ Here is what the source-controller writes when it fetches a new revision:
 
 ```yaml
 # GitRepository status after successful reconciliation
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

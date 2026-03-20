@@ -54,6 +54,7 @@ When you remove this PVC from your Git repository and sync, ArgoCD will not dele
 
 ```yaml
 # Protect a Namespace from pruning
+
 apiVersion: v1
 kind: Namespace
 metadata:

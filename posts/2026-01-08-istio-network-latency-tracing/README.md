@@ -39,6 +39,7 @@ Ensure you have:
 
 ```bash
 # Kubernetes cluster with Istio installed
+
 kubectl get pods -n istio-system
 
 # Istio CLI

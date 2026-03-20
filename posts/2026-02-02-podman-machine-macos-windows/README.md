@@ -53,6 +53,7 @@ Homebrew provides the easiest installation path on macOS:
 
 ```bash
 # Install Podman using Homebrew package manager
+
 brew install podman
 ```
 
@@ -186,7 +187,7 @@ podman machine init \
     --disk-size 50
 ```
 
-### Resource Recommendations by Workload
+Resource Recommendations by Workload
 
 | Workload Type | CPUs | Memory | Disk |
 |--------------|------|--------|------|
@@ -712,7 +713,7 @@ podman machine init
 
 ## Best Practices
 
-### Resource Allocation
+Resource Allocation
 
 Allocate resources based on your typical workload:
 

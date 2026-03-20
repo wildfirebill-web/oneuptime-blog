@@ -8,7 +8,7 @@ Description: Learn how to create public, private, and database subnets in AWS wi
 
 ## Introduction
 
-Subnets divide your VPC CIDR block into smaller networks assigned to specific availability zones. A well-designed subnet structure separates public-facing resources, application servers, and databases into distinct tiers—each with its own routing and security posture.
+Subnets divide your VPC CIDR block into smaller networks assigned to specific availability zones. A well-designed subnet structure separates public-facing resources, application servers, and databases into distinct tiers-each with its own routing and security posture.
 
 ## Basic Subnet Creation
 
@@ -37,7 +37,8 @@ data "aws_availability_zones" "available" {
   state = "available"
 }
 
-# Public subnets — one per AZ
+# Public subnets - one per AZ
+
 resource "aws_subnet" "public" {
   count = length(data.aws_availability_zones.available.names)
 

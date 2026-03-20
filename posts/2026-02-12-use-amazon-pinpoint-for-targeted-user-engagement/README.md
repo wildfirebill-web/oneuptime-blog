@@ -40,6 +40,7 @@ Pinpoint has two modes of sending messages:
 
 ```bash
 # Create a Pinpoint application (project)
+
 aws pinpoint create-app \
   --create-application-request '{
     "Name": "MyApp-UserEngagement",

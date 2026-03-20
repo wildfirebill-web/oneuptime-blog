@@ -30,6 +30,7 @@ Within a major version:
 
 ```hcl
 # This configuration written for OpenTofu 1.x will continue to work
+
 # across all 1.x patch and minor versions
 resource "aws_s3_bucket" "example" {
   bucket = var.bucket_name

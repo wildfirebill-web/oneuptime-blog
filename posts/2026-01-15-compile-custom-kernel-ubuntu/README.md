@@ -67,6 +67,7 @@ Open a terminal and install the required packages:
 
 ```bash
 # Update package lists to ensure we get the latest versions
+
 sudo apt update
 
 # Install essential build tools

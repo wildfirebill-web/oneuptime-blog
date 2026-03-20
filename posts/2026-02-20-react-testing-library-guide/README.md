@@ -30,6 +30,7 @@ Install the required packages:
 
 ```bash
 # Install React Testing Library and related tools
+
 npm install --save-dev @testing-library/react @testing-library/jest-dom @testing-library/user-event jest @types/jest
 
 # If using TypeScript, add ts-jest

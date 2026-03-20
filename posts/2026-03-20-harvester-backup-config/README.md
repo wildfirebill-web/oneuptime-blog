@@ -1,4 +1,4 @@
-# How to Back Up Harvester Configuration
+# How to Export and Restore Harvester Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Harvester is built on RKE2, so etcd backup configuration is identical to RKE2:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml (on Harvester server nodes)
+
 etcd-snapshot-schedule-cron: "0 */6 * * *"
 etcd-snapshot-retention: 10
 etcd-s3: true
@@ -183,6 +184,6 @@ EOF
 
 ## Best Practices
 
-- Store all three backup types (etcd, Longhorn volumes, config manifests) in separate S3 buckets or locations — a corrupted backup location should not affect all backups.
-- Test your full restore process quarterly — a backup is only valuable if the restore succeeds.
-- Back up before every Harvester upgrade — the upgrade process modifies cluster state and a rollback requires a working etcd snapshot.
+- Store all three backup types (etcd, Longhorn volumes, config manifests) in separate S3 buckets or locations - a corrupted backup location should not affect all backups.
+- Test your full restore process quarterly - a backup is only valuable if the restore succeeds.
+- Back up before every Harvester upgrade - the upgrade process modifies cluster state and a rollback requires a working etcd snapshot.

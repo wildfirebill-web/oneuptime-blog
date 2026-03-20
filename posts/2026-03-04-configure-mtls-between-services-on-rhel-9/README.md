@@ -34,6 +34,7 @@ Start by creating a private CA that will sign both server and client certificate
 
 ```bash
 # Create a directory structure for the CA
+
 mkdir -p /etc/pki/mtls/{ca,server,client}
 cd /etc/pki/mtls/ca
 ```

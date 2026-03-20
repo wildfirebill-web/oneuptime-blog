@@ -24,6 +24,7 @@ Joplin is a popular open-source note-taking app with end-to-end encryption suppo
 
 ```yaml
 # docker-compose.yml - Joplin Server with PostgreSQL
+
 version: "3.8"
 
 networks:

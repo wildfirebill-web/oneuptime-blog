@@ -8,13 +8,13 @@ Description: Learn how to send and receive structured JSON data over IPv4 TCP so
 
 ## The Framing Problem
 
-TCP is a byte stream with no message boundaries. Sending `json.dumps(data).encode()` may arrive in multiple chunks, or multiple JSON messages may arrive in a single `recv()`. You must add framing—a length prefix—to delineate message boundaries.
+TCP is a byte stream with no message boundaries. Sending `json.dumps(data).encode()` may arrive in multiple chunks, or multiple JSON messages may arrive in a single `recv()`. You must add framing-a length prefix-to delineate message boundaries.
 
 ## JSON-over-TCP Protocol
 
 We use a 4-byte big-endian length prefix followed by the UTF-8 encoded JSON payload:
 
-```
+```text
 [4-byte length][JSON payload bytes]
 ```
 

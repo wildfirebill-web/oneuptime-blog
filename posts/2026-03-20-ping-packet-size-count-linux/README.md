@@ -12,6 +12,7 @@ The default ping packet (56 bytes of data + 28 bytes ICMP/IP header = 84 bytes) 
 
 ```bash
 # Send exactly 10 packets
+
 ping -c 10 192.168.1.1
 
 # Send 1 packet (fast check)
@@ -45,7 +46,7 @@ Different sizes help find where fragmentation or drops begin:
 
 ```bash
 #!/bin/bash
-# mtu-probe.sh — Find effective MTU by testing sizes
+# mtu-probe.sh - Find effective MTU by testing sizes
 
 HOST="10.0.0.1"
 echo "Testing packet sizes to $HOST..."
@@ -65,7 +66,7 @@ done
 Flood ping sends packets as fast as possible (requires root):
 
 ```bash
-# Flood ping — sends/receives as fast as possible
+# Flood ping - sends/receives as fast as possible
 # Prints a '.' for each sent packet, backspace for each received
 # High loss ratio indicates network problems under load
 sudo ping -f -c 10000 10.0.0.1
@@ -112,4 +113,4 @@ ping -c 200 -i 0.5 -s 1000 10.0.0.1 | tail -3
 # If loss is > 0%, you have link problems under load
 ```
 
-Varying packet size and count gives you a far more complete picture of link health than the default ping — essential for diagnosing MTU black holes, bufferbloat, and capacity limits.
+Varying packet size and count gives you a far more complete picture of link health than the default ping - essential for diagnosing MTU black holes, bufferbloat, and capacity limits.

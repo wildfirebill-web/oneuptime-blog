@@ -38,6 +38,7 @@ Use the Azure CLI to create a namespace and hub.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-notifications --location eastus
 
 # Create a notification hub namespace

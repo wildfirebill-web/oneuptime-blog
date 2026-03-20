@@ -16,6 +16,7 @@ Before starting the upgrade:
 
 ```bash
 # 1. Check current Longhorn version
+
 kubectl get pods -n longhorn-system -l app=longhorn-manager \
   -o jsonpath='{.items[0].spec.containers[0].image}'
 

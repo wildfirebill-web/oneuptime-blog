@@ -53,6 +53,7 @@ First, configure where alerts get sent.
 
 ```python
 # alerting/setup_channels.py
+
 from google.cloud import monitoring_v3
 
 def setup_notification_channels(project_id):

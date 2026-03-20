@@ -34,6 +34,7 @@ Set up separate buckets for input documents and processed results.
 
 ```bash
 # Create the input bucket where documents will be uploaded
+
 gsutil mb -l us-central1 gs://my-project-doc-input/
 
 # Create the output bucket for processed results

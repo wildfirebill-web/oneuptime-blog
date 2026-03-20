@@ -1,4 +1,4 @@
-# How to Implement Rolling Updates with Portainer on Swarm
+# How to Implement Rolling Updates with Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Rolling updates replace containers one at a time (or in small batches), ensuring
 
 ```yaml
 # docker-compose.yml - Service with rolling update configuration
+
 version: "3.8"
 
 networks:

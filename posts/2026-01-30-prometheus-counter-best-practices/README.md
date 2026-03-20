@@ -99,6 +99,7 @@ All counters MUST end with `_total`. This is a Prometheus convention that makes 
 
 ```text
 # Good
+
 http_requests_total
 errors_total
 processed_bytes_total

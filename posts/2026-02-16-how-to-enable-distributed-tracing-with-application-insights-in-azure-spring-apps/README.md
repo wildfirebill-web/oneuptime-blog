@@ -42,6 +42,7 @@ If you do not already have an Application Insights resource, create one:
 
 ```bash
 # Create an Application Insights resource
+
 RESOURCE_GROUP="rg-spring-production"
 APP_INSIGHTS_NAME="ai-spring-apps"
 

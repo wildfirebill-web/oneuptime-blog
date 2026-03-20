@@ -2,14 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Pool Exhaustion, Networking, Troubleshooting, sysadmin
+Tags: DHCP, Pool Exhaustion, Networking, Troubleshooting, Sysadmin
 
-Description: DHCP pool exhaustion occurs when all addresses in a scope are leased and new clients cannot obtain an IP, resolved by reducing lease times, expanding the pool, reclaiming stale leases, or segmenting the network.
+Description: DHCP pool exhaustion occurs when all addresses in a scope are leased and new clients cannot obtain an IP, resolved by reducing lease times, expanding the pool, reclaiming stale leases, or...
 
 ## Detecting Pool Exhaustion
 
 ```bash
 # Count active leases
+
 ACTIVE=$(grep -c "binding state active" /var/lib/dhcp/dhcpd.leases)
 POOL_SIZE=100  # Your pool size
 
@@ -23,7 +24,7 @@ fi
 ```
 
 Server logs will show:
-```
+```text
 DHCPDISCOVER from aa:bb:cc:dd:ee:ff via eth0: no free leases
 ```
 
@@ -31,7 +32,7 @@ DHCPDISCOVER from aa:bb:cc:dd:ee:ff via eth0: no free leases
 
 Shorter leases return addresses to the pool faster:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 subnet 192.168.1.0 netmask 255.255.255.0 {
     range 192.168.1.50 192.168.1.200;
@@ -44,7 +45,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 
 ## Solution 2: Expand the Address Pool
 
-```
+```text
 # Original scope: .50 to .200 (150 addresses)
 # Expanded: .50 to .240 (190 addresses)
 
@@ -104,7 +105,7 @@ for subnet in original.subnets(new_prefix=25):
 
 ## Solution 5: Use /23 Instead of /24
 
-```
+```text
 # Extend to a /23 block to double address space
 subnet 192.168.0.0 netmask 255.255.254.0 {
     range 192.168.0.50 192.168.1.250;   # ~450 addresses

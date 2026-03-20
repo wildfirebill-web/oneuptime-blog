@@ -18,6 +18,7 @@ In Talos Linux, you do not SSH into a machine and run `reboot`. Instead, you use
 
 ```bash
 # Reboot a single node
+
 talosctl reboot -n <node-ip>
 ```
 

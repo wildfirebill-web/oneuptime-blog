@@ -144,4 +144,4 @@ fn main() {
 
 ## Conclusion
 
-Rust's `Ipv4Addr` seamlessly converts to and from `u32` via `u32::from(ip)` and `Ipv4Addr::from(n)`. These conversions use network byte order (big-endian). The `u32` representation enables efficient IP arithmetic: range checks, sorting, subnet enumeration, and address incrementing—all expressible as simple integer operations.
+Rust's `Ipv4Addr` seamlessly converts to and from `u32` via `u32::from(ip)` and `Ipv4Addr::from(n)`. These conversions use network byte order (big-endian). The `u32` representation enables efficient IP arithmetic: range checks, sorting, subnet enumeration, and address incrementing-all expressible as simple integer operations.

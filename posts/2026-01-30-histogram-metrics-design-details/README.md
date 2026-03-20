@@ -257,6 +257,7 @@ The accuracy depends on bucket placement. If the p99 falls in a wide bucket span
 
 ```promql
 # PromQL query for p99 latency by route
+
 histogram_quantile(0.99,
   sum(rate(http_request_duration_seconds_bucket[5m])) by (route, le)
 )

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Linode, Akamai Cloud, Infrastructure as Code, Virtual Machines
+Tags: OpenTofu, Linode, Akamai Cloud, Infrastructure as Code, Virtual Machine
 
 Description: Learn how to create Linode (Akamai Cloud) instances with OpenTofu using the linode provider, including disk images, SSH keys, and user data.
 

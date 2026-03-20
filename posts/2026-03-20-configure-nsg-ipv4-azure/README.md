@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, NSG, Network Security Groups, IPv4, Firewall, Security
+Tags: Azure, NSG, Network Security Group, IPv4, Firewall, Security
 
 Description: Create and configure Azure Network Security Groups with inbound and outbound rules to control IPv4 traffic for subnets and virtual machine network interfaces.
 
@@ -16,6 +16,7 @@ Network Security Groups (NSGs) are Azure's stateful packet filters. Each NSG con
 RESOURCE_GROUP="my-network-rg"
 
 # Create an NSG
+
 az network nsg create \
   --resource-group $RESOURCE_GROUP \
   --name web-nsg \

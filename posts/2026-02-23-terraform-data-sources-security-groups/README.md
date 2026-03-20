@@ -20,6 +20,7 @@ The `aws_security_group` data source lets you find a security group by ID, name,
 
 ```hcl
 # Look up a security group when you know its ID
+
 data "aws_security_group" "known" {
   id = "sg-0123456789abcdef0"
 }

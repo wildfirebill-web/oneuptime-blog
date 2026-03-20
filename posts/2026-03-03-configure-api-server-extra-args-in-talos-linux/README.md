@@ -18,6 +18,7 @@ Extra arguments for the API server are configured under `cluster.apiServer.extra
 
 ```yaml
 # Add extra args to the Kubernetes API server
+
 cluster:
   apiServer:
     extraArgs:

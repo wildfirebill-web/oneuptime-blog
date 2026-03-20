@@ -18,6 +18,7 @@ At its simplest, `talosctl gen config` takes a cluster name and an endpoint:
 
 ```bash
 # Generate default configs
+
 talosctl gen config my-cluster https://192.168.1.100:6443 --output-dir ./configs
 ```
 

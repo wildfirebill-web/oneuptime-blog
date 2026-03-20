@@ -18,6 +18,7 @@ Before creating alarms, you need somewhere to send the notifications. Create an 
 
 ```bash
 # Create an SNS topic for database alerts
+
 aws sns create-topic --name rds-critical-alerts
 
 # Subscribe an email address to the topic

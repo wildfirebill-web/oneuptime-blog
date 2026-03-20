@@ -290,6 +290,7 @@ Scale your consumer group based on lag metrics. Here is a pattern for Kubernetes
 
 ```yaml
 # Kubernetes HPA based on consumer lag
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

@@ -40,6 +40,7 @@ Here is a minimal configuration that validates JWTs from a single issuer.
 
 ```yaml
 # requestauthentication-basic.yaml
+
 # Validates JWTs issued by Auth0
 apiVersion: security.istio.io/v1
 kind: RequestAuthentication

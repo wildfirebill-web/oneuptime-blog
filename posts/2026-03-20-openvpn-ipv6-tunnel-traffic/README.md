@@ -10,7 +10,7 @@ OpenVPN can tunnel IPv6 traffic inside an IPv4 VPN connection. This is useful wh
 
 ## Architecture: IPv6 over IPv4 Tunnel
 
-```
+```text
 Client (IPv4 only)   ←→   OpenVPN Tunnel (IPv4)   ←→   Server (IPv4 + IPv6)
      |                          tun0                          |
      | IPv6 traffic encapsulated inside IPv4 UDP tunnel       |
@@ -32,6 +32,7 @@ key server.key
 dh dh.pem
 
 # IPv4 tunnel addresses
+
 server 10.8.0.0 255.255.255.0
 
 # IPv6 addresses inside the tunnel (server gets ::1, clients get ::2, ::3, etc.)
@@ -124,11 +125,11 @@ push "route-ipv6 fd00:services::/64"
 OpenVPN supports scripts that run when the tunnel connects:
 
 ```bash
-# /etc/openvpn/up.sh — Add IPv6 routes when tunnel comes up
+# /etc/openvpn/up.sh - Add IPv6 routes when tunnel comes up
 #!/bin/bash
 ip -6 route add 2001:db8::/32 dev $dev
 
-# /etc/openvpn/down.sh — Remove routes when tunnel goes down
+# /etc/openvpn/down.sh - Remove routes when tunnel goes down
 #!/bin/bash
 ip -6 route del 2001:db8::/32 dev $dev
 ```
@@ -157,4 +158,4 @@ ping6 2001:4860:4860::8888   # Should succeed
 curl -6 https://ifconfig.co   # Should show server's IPv6
 ```
 
-Tunneling IPv6 over IPv4 OpenVPN provides IPv6 connectivity to clients that only have IPv4 Internet access, and ensures IPv6 traffic uses the same controlled exit point as IPv4 traffic — preventing IPv6 from bypassing your VPN.
+Tunneling IPv6 over IPv4 OpenVPN provides IPv6 connectivity to clients that only have IPv4 Internet access, and ensures IPv6 traffic uses the same controlled exit point as IPv4 traffic - preventing IPv6 from bypassing your VPN.

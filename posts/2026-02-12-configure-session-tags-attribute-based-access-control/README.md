@@ -33,6 +33,7 @@ First, make sure your AWS resources have consistent tags:
 
 ```bash
 # Tag S3 buckets with project and department
+
 aws s3api put-bucket-tagging \
   --bucket project-alpha-data \
   --tagging '{

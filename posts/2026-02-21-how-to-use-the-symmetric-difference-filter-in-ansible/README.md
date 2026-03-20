@@ -16,6 +16,7 @@ If list A has `[1, 2, 3, 4]` and list B has `[3, 4, 5, 6]`, the symmetric differ
 
 ```yaml
 # Find items unique to each list (not shared between them)
+
 - name: Symmetric difference example
   ansible.builtin.debug:
     msg: "{{ list_a | symmetric_difference(list_b) }}"

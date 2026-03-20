@@ -14,6 +14,7 @@ Configure your test framework to create spans for each test case. Here is a pyte
 
 ```python
 # conftest.py
+
 import pytest
 import time
 from opentelemetry import trace

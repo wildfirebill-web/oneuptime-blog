@@ -61,6 +61,7 @@ resource "aws_cloudfront_distribution" "main" {
 
 ```bash
 # Enable IPv6 on existing distribution
+
 aws cloudfront update-distribution \
   --id EXAMPLEID \
   --if-match "ETAG" \

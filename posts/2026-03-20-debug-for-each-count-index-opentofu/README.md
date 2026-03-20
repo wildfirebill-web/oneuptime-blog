@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, for_each, count, Debugging, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, for_each, Count, Debugging, Infrastructure as Code
 
 Description: Learn how to diagnose and fix common errors with for_each and count in OpenTofu, including value must be known before apply errors, index out of bounds, and unexpected resource churn.
 
@@ -12,7 +12,7 @@ Description: Learn how to diagnose and fix common errors with for_each and count
 
 ## Common Errors
 
-```
+```hcl
 Error: Invalid for_each argument
   The "for_each" value depends on resource attributes that cannot be determined
   until apply, so OpenTofu cannot predict how many instances will be created.
@@ -29,14 +29,15 @@ Error: Index value required
 ## Fix 1: for_each Value Unknown at Plan Time
 
 ```hcl
-# WRONG — security_group.id is not known until apply
+# WRONG - security_group.id is not known until apply
+
 resource "aws_instance" "web" {
   for_each = toset([aws_security_group.app.id])  # Unknown at plan time
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.micro"
 }
 
-# CORRECT — use a static set or a data source known at plan time
+# CORRECT - use a static set or a data source known at plan time
 locals {
   environments = toset(["dev", "staging", "prod"])
 }
@@ -54,7 +55,7 @@ resource "aws_instance" "web" {
 ## Fix 2: count Based on Unknown Value
 
 ```hcl
-# WRONG — count depends on a resource attribute not yet known
+# WRONG - count depends on a resource attribute not yet known
 resource "aws_subnet" "private" {
   count             = aws_vpc.main.enable_dns_support ? 3 : 1  # Unknown at plan
   vpc_id            = aws_vpc.main.id
@@ -62,7 +63,7 @@ resource "aws_subnet" "private" {
   availability_zone = data.aws_availability_zones.available.names[count.index]
 }
 
-# CORRECT — use a known variable or literal
+# CORRECT - use a known variable or literal
 variable "subnet_count" {
   type    = number
   default = 3
@@ -84,9 +85,9 @@ variable "availability_zones" {
 }
 
 resource "aws_subnet" "private" {
-  count = 3  # ERROR — only 2 AZs in the list above
+  count = 3  # ERROR - only 2 AZs in the list above
 
-  # CORRECT — use length() to align count with the list
+  # CORRECT - use length() to align count with the list
   # count = length(var.availability_zones)
 
   availability_zone = var.availability_zones[count.index]
@@ -115,7 +116,7 @@ tofu state mv 'aws_instance.web[0]' 'aws_instance.web["prod"]'
 tofu state mv 'aws_instance.web[1]' 'aws_instance.web["staging"]'
 
 # Step 2: Update the configuration to use for_each
-# Step 3: Run plan — should show no changes if moved correctly
+# Step 3: Run plan - should show no changes if moved correctly
 tofu plan
 ```
 

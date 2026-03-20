@@ -8,7 +8,7 @@ Description: Learn how to use the SERVICE_TAG environment variable with Portaine
 
 ## Introduction
 
-Portainer's container webhooks are powerful because you can pass a `SERVICE_TAG` environment variable to override the image tag at deployment time. This means a single webhook URL can deploy any version of your application — just change the tag you pass. This is ideal for CI/CD pipelines where each build produces a new tagged image.
+Portainer's container webhooks are powerful because you can pass a `SERVICE_TAG` environment variable to override the image tag at deployment time. This means a single webhook URL can deploy any version of your application - just change the tag you pass. This is ideal for CI/CD pipelines where each build produces a new tagged image.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Portainer's container webhooks are powerful because you can pass a `SERVICE_TAG`
 
 When Portainer receives a webhook trigger, it checks for a `SERVICE_TAG` environment variable in the request body. If present, it overrides the image tag for this deployment only.
 
-```
+```text
 Normal webhook (uses container's current image tag):
 POST /api/webhooks/YOUR-TOKEN
 → Pulls: myorg/myapp:latest (or whatever tag is configured)
@@ -39,6 +39,7 @@ For Portainer Stacks (more reliable), use the stack webhook with environment var
 
 ```bash
 # Trigger a stack webhook with a specific version:
+
 curl -X POST \
   -H "Content-Type: application/json" \
   "https://portainer.example.com/api/webhooks/STACK-WEBHOOK-TOKEN" \

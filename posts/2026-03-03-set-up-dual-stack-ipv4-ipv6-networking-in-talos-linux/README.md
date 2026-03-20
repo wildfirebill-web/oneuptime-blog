@@ -39,6 +39,7 @@ Start by giving each node both an IPv4 and IPv6 address in the machine configura
 
 ```yaml
 # Dual-stack node network configuration
+
 machine:
   network:
     hostname: cp-01

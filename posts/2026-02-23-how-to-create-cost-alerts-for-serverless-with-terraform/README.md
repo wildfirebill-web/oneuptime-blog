@@ -22,6 +22,7 @@ Monitor Lambda invocation counts to catch runaway functions before they generate
 
 ```hcl
 # CloudWatch alarm for Lambda invocation count spikes
+
 resource "aws_cloudwatch_metric_alarm" "lambda_invocations" {
   for_each = var.monitored_lambda_functions
 

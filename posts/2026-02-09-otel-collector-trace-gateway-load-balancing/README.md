@@ -24,6 +24,7 @@ Start with agent collectors on each Kubernetes node:
 
 ```yaml
 # otel-agent-daemonset.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

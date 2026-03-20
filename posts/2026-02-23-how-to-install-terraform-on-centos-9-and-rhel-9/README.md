@@ -24,6 +24,7 @@ Check your OS version:
 
 ```bash
 # Verify your OS version
+
 cat /etc/redhat-release
 ```
 

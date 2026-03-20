@@ -36,6 +36,7 @@ If SCA is enabled on your account, the process is straightforward:
 
 ```bash
 # On the old system, unregister it
+
 sudo subscription-manager unregister
 ```
 

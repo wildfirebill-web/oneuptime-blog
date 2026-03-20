@@ -18,6 +18,7 @@ Start by creating a clean project structure for your pipeline.
 
 ```bash
 # Create the project directory
+
 mkdir my-dataflow-pipeline
 cd my-dataflow-pipeline
 

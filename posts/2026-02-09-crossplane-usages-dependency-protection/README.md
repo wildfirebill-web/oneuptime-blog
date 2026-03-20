@@ -24,6 +24,7 @@ Protect a database from deletion:
 
 ```yaml
 # database.yaml
+
 apiVersion: rds.aws.upbound.io/v1beta1
 kind: Instance
 metadata:

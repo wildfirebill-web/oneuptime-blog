@@ -65,6 +65,7 @@ The recycle directory needs to be writable but ideally not visible to users (or 
 
 ```bash
 # The .recycle directory will be created automatically by Samba
+
 # But set permissions appropriately on the share root
 sudo chown -R root:smbusers /srv/samba/myshare
 sudo chmod -R 775 /srv/samba/myshare

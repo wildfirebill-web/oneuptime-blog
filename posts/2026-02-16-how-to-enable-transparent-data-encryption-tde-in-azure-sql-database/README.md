@@ -74,6 +74,7 @@ JOIN sys.databases db ON dek.database_id = db.database_id;
 
 ```bash
 # Check TDE status for a database
+
 az sql db tde show \
     --resource-group myResourceGroup \
     --server myserver \

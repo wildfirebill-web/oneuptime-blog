@@ -134,6 +134,7 @@ routes:
 
 ```bash
 # Start Envoy
+
 envoy -c /etc/envoy/reverse-proxy.yaml
 
 # Test path routing

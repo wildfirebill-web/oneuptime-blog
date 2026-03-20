@@ -104,6 +104,7 @@ The cache hit rate is one of the most useful derived metrics. You can compute it
 
 ```yaml
 # Cache hit rate = hits / (hits + misses)
+
 # This is best computed in your observability backend using the raw counters:
 # coredns_cache_hits_total and coredns_cache_misses_total
 

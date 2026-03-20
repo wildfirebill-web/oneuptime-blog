@@ -34,6 +34,7 @@ Here is a foundational workflow for JavaScript/TypeScript projects using Jest:
 
 ```yaml
 # .github/workflows/coverage.yml
+
 name: Code Coverage
 
 on:

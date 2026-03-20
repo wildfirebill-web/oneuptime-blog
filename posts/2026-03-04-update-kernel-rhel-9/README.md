@@ -20,6 +20,7 @@ Before updating, verify the current state of your system.
 
 ```bash
 # Check your running kernel version
+
 uname -r
 
 # List all installed kernels

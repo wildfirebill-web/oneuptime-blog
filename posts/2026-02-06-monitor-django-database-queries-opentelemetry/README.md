@@ -27,6 +27,7 @@ The easiest way to start monitoring database queries is with auto-instrumentatio
 
 ```bash
 # For PostgreSQL (psycopg2)
+
 pip install opentelemetry-instrumentation-psycopg2
 
 # For MySQL (mysqlclient)

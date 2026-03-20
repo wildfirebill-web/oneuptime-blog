@@ -24,6 +24,7 @@ Before using ephemeral containers, verify that your cluster supports them. The f
 
 ```bash
 # Check your Kubernetes version
+
 kubectl version --short
 
 # Verify the feature is enabled

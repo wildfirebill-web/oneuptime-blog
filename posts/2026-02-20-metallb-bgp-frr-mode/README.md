@@ -54,6 +54,7 @@ Add the MetalLB Helm repository and install with the FRR flag:
 
 ```bash
 # Add the official MetalLB Helm chart repository
+
 helm repo add metallb https://metallb.universe.tf
 
 # Update local chart cache

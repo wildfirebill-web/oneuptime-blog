@@ -43,6 +43,7 @@ The `ua` command-line tool manages Ubuntu Pro attachments:
 
 ```bash
 # Check if already installed
+
 ua version
 
 # If not installed (should be present on Ubuntu 18.04+)

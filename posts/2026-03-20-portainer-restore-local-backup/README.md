@@ -8,7 +8,7 @@ Description: Restore Portainer configuration from a local backup file, recoverin
 
 ## Introduction
 
-Whether recovering from a hardware failure, migrating to a new server, or undoing a misconfiguration, restoring Portainer from a local backup brings back all your settings — environments, stacks, users, registries, and access control — in minutes. This guide covers both the built-in restore UI and manual volume restoration.
+Whether recovering from a hardware failure, migrating to a new server, or undoing a misconfiguration, restoring Portainer from a local backup brings back all your settings - environments, stacks, users, registries, and access control - in minutes. This guide covers both the built-in restore UI and manual volume restoration.
 
 ## Prerequisites
 
@@ -33,6 +33,7 @@ For backups created by the manual `tar` method:
 
 ```bash
 # Step 1: Stop Portainer
+
 docker stop portainer
 docker rm portainer
 

@@ -122,6 +122,7 @@ Suppose you have a `user-profile` service deployed across two regions and three 
 
 ```yaml
 # us-east-1a deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -40,6 +40,7 @@ Start by examining the Kustomization status for decryption errors:
 
 ```bash
 # Get the Kustomization status
+
 flux get kustomizations my-app
 
 # Get detailed conditions

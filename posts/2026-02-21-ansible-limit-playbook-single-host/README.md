@@ -16,6 +16,7 @@ The `--limit` flag restricts execution to the hosts you specify, regardless of w
 
 ```bash
 # Run the playbook only on web01
+
 ansible-playbook -i inventory.ini site.yml --limit web01
 ```
 

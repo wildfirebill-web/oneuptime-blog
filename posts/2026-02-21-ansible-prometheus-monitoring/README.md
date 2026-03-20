@@ -25,6 +25,7 @@ graph TD
 
 ```yaml
 # roles/prometheus/tasks/main.yml
+
 # Install and configure Prometheus
 ---
 - name: Create prometheus user

@@ -31,6 +31,7 @@ The metric has labels that tell you which processor is refusing data:
 
 ```promql
 # PromQL query to see refused spans broken down by processor
+
 # This tells you exactly which processor is the bottleneck
 otelcol_processor_refused_spans{processor="memory_limiter"}
 otelcol_processor_refused_spans{processor="batch"}

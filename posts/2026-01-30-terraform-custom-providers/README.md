@@ -491,6 +491,7 @@ To build and install your provider locally for testing, use these commands.
 
 ```bash
 # Build the provider binary
+
 go build -o terraform-provider-example
 
 # Create the local plugin directory

@@ -34,6 +34,7 @@ Before starting, make sure you have:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable documentai.googleapis.com
 gcloud services enable storage.googleapis.com
 

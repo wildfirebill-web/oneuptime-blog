@@ -18,6 +18,7 @@ HashiCorp releases new versions of Terraform Enterprise regularly. Each release 
 
 ```bash
 # Check your current TFE version
+
 curl -s https://tfe.example.com/api/v2/admin/general-settings \
   --header "Authorization: Bearer $TFE_ADMIN_TOKEN" | jq '.data.attributes."app-version"'
 

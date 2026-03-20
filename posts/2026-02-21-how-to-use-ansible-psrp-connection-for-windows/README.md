@@ -42,6 +42,7 @@ On the Ansible control node:
 
 ```bash
 # Install the pypsrp library
+
 pip install pypsrp
 
 # Verify installation

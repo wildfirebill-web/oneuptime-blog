@@ -1,4 +1,4 @@
-# How to Deploy Redis as a Cache Layer via Portainer
+# How to Deploy Redis as a Cache Layer via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Redis as a high-performance caching layer for your applicati
 
 ## Introduction
 
-Redis is an in-memory data structure store commonly used as a cache, session store, and message broker. This guide configures Redis specifically for caching workloads — setting appropriate eviction policies, memory limits, and connecting your application to use it.
+Redis is an in-memory data structure store commonly used as a cache, session store, and message broker. This guide configures Redis specifically for caching workloads - setting appropriate eviction policies, memory limits, and connecting your application to use it.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
 # docker-compose.yml - Redis Cache Layer
+
 version: "3.8"
 
 services:
@@ -71,15 +72,15 @@ networks:
 ```
 
 Eviction policy notes:
-- `allkeys-lru` — evict least recently used keys (best for pure caches)
-- `volatile-lru` — only evict keys with TTL set
-- `allkeys-lfu` — evict least frequently used keys (Redis 4+)
+- `allkeys-lru` - evict least recently used keys (best for pure caches)
+- `volatile-lru` - only evict keys with TTL set
+- `allkeys-lfu` - evict least frequently used keys (Redis 4+)
 
 ## Step 2: Configure Environment Variables
 
 In Portainer's Stack editor, add environment variables:
 
-```
+```text
 REDIS_PASSWORD=your-secure-password-here
 ```
 
@@ -124,7 +125,7 @@ def get_user(user_id: int) -> dict:
     if cached:
         return json.loads(cached)
 
-    # Cache miss — fetch from database
+    # Cache miss - fetch from database
     user = db.fetch_user(user_id)
 
     # Store in cache for 1 hour
@@ -148,10 +149,10 @@ scrape_configs:
 ```
 
 Key metrics to monitor:
-- `redis_memory_used_bytes` vs `redis_memory_max_bytes` — memory pressure
-- `redis_keyspace_hits_total` / `redis_keyspace_misses_total` — hit rate
-- `redis_evicted_keys_total` — keys evicted due to memory limits
-- `redis_connected_clients` — active connections
+- `redis_memory_used_bytes` vs `redis_memory_max_bytes` - memory pressure
+- `redis_keyspace_hits_total` / `redis_keyspace_misses_total` - hit rate
+- `redis_evicted_keys_total` - keys evicted due to memory limits
+- `redis_connected_clients` - active connections
 
 ## Step 6: Connect Your App Container to the Cache
 
@@ -172,4 +173,4 @@ services:
 
 ## Conclusion
 
-Redis configured with `maxmemory` and `allkeys-lru` eviction is ideal for application caching. Disable RDB persistence (`--save ""`) and AOF (`--appendonly no`) for pure cache workloads — this improves performance and reduces disk I/O. Always require authentication with `requirepass`. Monitor the hit rate and eviction rate to tune memory allocation — a hit rate below 90% or high eviction count indicates the cache is too small.
+Redis configured with `maxmemory` and `allkeys-lru` eviction is ideal for application caching. Disable RDB persistence (`--save ""`) and AOF (`--appendonly no`) for pure cache workloads - this improves performance and reduces disk I/O. Always require authentication with `requirepass`. Monitor the hit rate and eviction rate to tune memory allocation - a hit rate below 90% or high eviction count indicates the cache is too small.

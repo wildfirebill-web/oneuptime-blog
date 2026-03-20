@@ -28,6 +28,7 @@ Create `plugins/connection/rest_api.py`:
 
 ```python
 # rest_api.py - Connection plugin for REST API-managed devices
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

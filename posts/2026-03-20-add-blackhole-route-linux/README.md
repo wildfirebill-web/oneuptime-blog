@@ -8,12 +8,13 @@ Description: Add a blackhole route on Linux to silently discard traffic to speci
 
 ## Introduction
 
-A blackhole route silently drops all packets destined for a given prefix — no ICMP error is sent back to the source. This differs from a `prohibit` or `unreachable` route. Blackhole routes are commonly used for null-routing attack traffic, blocking known bad prefixes, or preventing routing loops.
+A blackhole route silently drops all packets destined for a given prefix - no ICMP error is sent back to the source. This differs from a `prohibit` or `unreachable` route. Blackhole routes are commonly used for null-routing attack traffic, blocking known bad prefixes, or preventing routing loops.
 
 ## Add a Blackhole Route
 
 ```bash
 # Drop all traffic to 192.168.99.0/24 silently
+
 ip route add blackhole 192.168.99.0/24
 ```
 
@@ -23,7 +24,7 @@ ip route add blackhole 192.168.99.0/24
 # Confirm the blackhole route was installed
 ip route show type blackhole
 
-# Test — ping should fail silently (no response, no ICMP errors)
+# Test - ping should fail silently (no response, no ICMP errors)
 ping -c 3 192.168.99.1
 # Expected: 100% packet loss with no error messages
 ```

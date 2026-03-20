@@ -49,6 +49,7 @@ etcd is managed by the cloud provider. You cannot access it directly. Use Velero
 
 ```bash
 # Find etcd pods
+
 kubectl get pods -n kube-system | grep etcd
 
 # Check etcd configuration

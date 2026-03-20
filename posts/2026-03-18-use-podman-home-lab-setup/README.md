@@ -177,6 +177,7 @@ Access at `http://localhost:3001` and add monitors for each of your services.
 
 ```bash
 # Prometheus
+
 cat > ~/homelab/prometheus/prometheus.yml << 'EOF'
 global:
   scrape_interval: 15s

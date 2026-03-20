@@ -12,7 +12,7 @@ Solicited-node multicast addresses are special IPv6 multicast addresses used exc
 
 ## Solicited-Node Multicast Address Format
 
-```
+```text
 Solicited-node multicast format:
 
 ff02::1:ff00:0000/104 + low 24 bits of unicast address
@@ -81,6 +81,7 @@ def solicited_node_ethernet_multicast(ipv6_addr: str) -> str:
     return ':'.join(f'{b:02x}' for b in eth_mac)
 
 # Test with various addresses
+
 test_addresses = [
     "2001:db8::1",
     "2001:db8::1234:5678",
@@ -120,7 +121,7 @@ ip -6 maddr show eth0 | grep "ff02::1:ff"
 
 ## Why Solicited-Node Multicast Is More Efficient Than Broadcast
 
-```
+```text
 ARP (IPv4) broadcast analysis:
   A NS-equivalent ARP request goes to: ff:ff:ff:ff:ff:ff (Ethernet broadcast)
   EVERY host on the segment must:

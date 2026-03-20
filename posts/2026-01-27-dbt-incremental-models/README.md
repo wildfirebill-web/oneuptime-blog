@@ -401,6 +401,7 @@ Sometimes you need to rebuild the entire table from scratch. dbt provides the `-
 
 ```bash
 # Run a full refresh on a specific model
+
 dbt run --select my_incremental_model --full-refresh
 
 # Run full refresh on all models

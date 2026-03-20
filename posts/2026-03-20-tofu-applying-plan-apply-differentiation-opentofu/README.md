@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu.applying, Plan, Apply, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu.applying, Plan, Apply, Expressions, Infrastructure as Code, DevOps
 
 Description: A guide to using the tofu.applying built-in value to differentiate between plan and apply phases in OpenTofu expressions.
 
@@ -14,6 +14,7 @@ OpenTofu provides a built-in value `tofu.applying` that evaluates to `true` duri
 
 ```hcl
 # tofu.applying is true during apply, false during plan
+
 output "current_phase" {
   value = tofu.applying ? "apply" : "plan"
 }

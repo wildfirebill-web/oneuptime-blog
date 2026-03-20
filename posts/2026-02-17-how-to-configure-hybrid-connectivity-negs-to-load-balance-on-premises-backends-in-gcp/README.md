@@ -62,6 +62,7 @@ Make sure your on-premises servers are reachable from GCP:
 
 ```bash
 # From a GCP VM in the same VPC, test connectivity to on-prem
+
 ping 192.168.1.10
 
 # Test the application port

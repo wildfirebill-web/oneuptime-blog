@@ -18,6 +18,7 @@ Enabling GuardDuty in a single account is straightforward:
 
 ```hcl
 # Enable GuardDuty detector
+
 resource "aws_guardduty_detector" "main" {
   enable = true
 

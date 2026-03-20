@@ -35,6 +35,7 @@ First, confirm your Cloud SQL instance actually has a private IP:
 
 ```bash
 # Check the instance's IP configuration
+
 gcloud sql instances describe my-db \
     --format="table(ipAddresses.type, ipAddresses.ipAddress, settings.ipConfiguration.privateNetwork)"
 ```

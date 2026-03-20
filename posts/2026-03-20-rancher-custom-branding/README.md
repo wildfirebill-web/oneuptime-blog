@@ -8,7 +8,7 @@ Description: A comprehensive guide to configuring custom branding in Rancher, in
 
 ## Introduction
 
-Rancher's white-labeling capabilities allow enterprises and MSPs to fully replace the default Rancher branding with their own corporate identity. This guide goes beyond the login page and covers branding the entire Rancher dashboard — from favicons to navigation colors.
+Rancher's white-labeling capabilities allow enterprises and MSPs to fully replace the default Rancher branding with their own corporate identity. This guide goes beyond the login page and covers branding the entire Rancher dashboard - from favicons to navigation colors.
 
 ## Prerequisites
 
@@ -34,6 +34,7 @@ All branding settings live under `Global Settings → Branding` and are also ava
 
 ```bash
 # Recommended image specifications:
+
 # Logo: 200x40 px, transparent background, PNG or SVG
 # Favicon: 32x32 px, ICO or PNG
 
@@ -58,7 +59,7 @@ Create a reusable script to apply branding across multiple Rancher instances:
 
 ```bash
 #!/usr/bin/env bash
-# apply-branding.sh — Apply custom branding to a Rancher instance
+# apply-branding.sh - Apply custom branding to a Rancher instance
 
 RANCHER_URL="${1:?Usage: apply-branding.sh <rancher-url> <token>}"
 RANCHER_TOKEN="${2:?}"
@@ -144,4 +145,4 @@ After applying, perform a hard refresh (`Ctrl+Shift+R`) in your browser and chec
 
 ## Conclusion
 
-Custom branding in Rancher lets you deliver a seamless, white-labeled Kubernetes management experience. By configuring logos, colors, favicons, and product names — and automating the process with scripts — you can ensure consistent branding across all environments while maintaining a professional, enterprise-grade interface for your users.
+Custom branding in Rancher lets you deliver a seamless, white-labeled Kubernetes management experience. By configuring logos, colors, favicons, and product names - and automating the process with scripts - you can ensure consistent branding across all environments while maintaining a professional, enterprise-grade interface for your users.

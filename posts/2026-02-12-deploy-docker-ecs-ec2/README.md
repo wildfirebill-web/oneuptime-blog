@@ -30,6 +30,7 @@ The ECS-optimized AMI comes with the Docker runtime and ECS agent pre-installed.
 
 ```bash
 # Get the latest ECS-optimized AMI ID for your region
+
 ECS_AMI=$(aws ssm get-parameters \
   --names /aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id \
   --query 'Parameters[0].Value' \

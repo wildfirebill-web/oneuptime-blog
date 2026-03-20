@@ -1,14 +1,14 @@
-# How to Fix IPv4 and IPv6 Both Showing "Not Connected" on WiFi
+# How to Fix IPv4 and IPv6 Both Showing 'Not Connected' on WiFi
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: WiFi, IPv4, IPv6, Not Connected, Windows, Troubleshooting
 
-Description: Learn how to fix the issue where both IPv4 and IPv6 show "Not Connected" on Windows WiFi, indicating a complete connectivity failure at the IP layer.
+Description: Learn how to fix the issue where both IPv4 and IPv6 show 'Not Connected' on Windows WiFi, indicating a complete connectivity failure at the IP layer.
 
 ## What Does "IPv4 and IPv6 Not Connected" Mean?
 
-When Windows shows both IPv4 and IPv6 as "Not Connected" in the Network and Sharing Center, the WiFi adapter has associated with the access point (Layer 2 is up) but has failed to obtain any IP configuration. This is more severe than just "No Internet" — the device has no IP address at all.
+When Windows shows both IPv4 and IPv6 as "Not Connected" in the Network and Sharing Center, the WiFi adapter has associated with the access point (Layer 2 is up) but has failed to obtain any IP configuration. This is more severe than just "No Internet" - the device has no IP address at all.
 
 ## Step 1: Verify the WiFi Association
 
@@ -66,6 +66,7 @@ Sometimes the protocol bindings get disabled:
 
 ```powershell
 # PowerShell - Check bindings
+
 Get-NetAdapterBinding -Name "Wi-Fi"
 
 # Re-enable IPv4

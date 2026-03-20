@@ -124,6 +124,7 @@ For automation, use the CLI. Here is how to create an action group with email an
 
 ```bash
 # Create an action group with email and webhook notifications
+
 az monitor action-group create \
   --resource-group rg-monitoring \
   --name "ops-team" \

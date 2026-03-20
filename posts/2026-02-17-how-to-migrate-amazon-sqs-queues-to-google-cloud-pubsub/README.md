@@ -36,6 +36,7 @@ Create Pub/Sub resources that match your SQS queue configuration:
 
 ```hcl
 # pubsub.tf
+
 # Pub/Sub topics and subscriptions equivalent to SQS queues
 
 # Main topic (equivalent to the SQS queue for publishing)

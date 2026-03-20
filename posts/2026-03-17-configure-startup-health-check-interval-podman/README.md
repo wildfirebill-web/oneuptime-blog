@@ -18,6 +18,7 @@ A shorter startup interval means faster detection of when the application is rea
 
 ```bash
 # Check startup readiness every 3 seconds
+
 podman run -d \
   --name quick-detect-app \
   --health-startup-cmd "curl -f http://localhost:8080/ready || exit 1" \

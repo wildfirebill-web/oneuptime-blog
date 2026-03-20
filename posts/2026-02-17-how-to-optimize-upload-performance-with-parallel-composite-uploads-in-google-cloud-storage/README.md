@@ -53,6 +53,7 @@ gsutil supports parallel composite uploads through configuration. Edit your `.bo
 
 ```bash
 # Find your boto config location
+
 gsutil version -l | grep config
 ```
 

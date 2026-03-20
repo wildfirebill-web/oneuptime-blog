@@ -16,6 +16,7 @@ Install stress-ng from the EPEL repository:
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install stress-ng

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Traffic Shaping, QoS, Networking, Bandwidth, Kubernetes, Tc
+Tags: Talos Linux, Traffic Shaping, QoS, Networking, Bandwidth, Kubernetes, tc
 
 Description: Learn how to implement traffic shaping and quality of service (QoS) policies on Talos Linux for bandwidth management and prioritization.
 
@@ -49,6 +49,7 @@ These annotations work with the bandwidth CNI plugin, which is often included wi
 
 ```bash
 # Check if bandwidth limits are applied
+
 kubectl debug node/talos-node-1 -it --image=nicolaka/netshoot -- \
   tc qdisc show
 

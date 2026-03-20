@@ -27,6 +27,7 @@ This guide deploys the Store Gateway with index caching for improved query perfo
 
 ```yaml
 # clusters/my-cluster/thanos/store-gateway/objstore-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

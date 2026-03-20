@@ -206,6 +206,7 @@ MACSec requires hardware support for reasonable performance. Check your hardware
 
 ```bash
 # Check if your NIC supports MACSec offload
+
 ethtool -k eth0 | grep macsec
 ```
 

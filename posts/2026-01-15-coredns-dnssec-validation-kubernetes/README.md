@@ -86,6 +86,7 @@ CoreDNS is the default DNS server in Kubernetes since version 1.13. It runs as a
 
 ```bash
 # Check CoreDNS deployment
+
 kubectl get deployment coredns -n kube-system
 
 # View current configuration
@@ -1025,7 +1026,7 @@ dnssec {
 kubectl scale deployment/coredns -n kube-system --replicas=3
 ```
 
-### Resource Allocation
+Resource Allocation
 
 ```yaml
 resources:

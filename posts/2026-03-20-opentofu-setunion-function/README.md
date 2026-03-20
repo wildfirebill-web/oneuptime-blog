@@ -122,6 +122,7 @@ toset(["a", "b", "c"])
 
 ```hcl
 # These are equivalent:
+
 setunion(toset(list1), toset(list2))
 distinct(concat(list1, list2))
 ```

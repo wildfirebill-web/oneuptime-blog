@@ -29,6 +29,7 @@ The exporter is where data first leaves the in-memory buffer and becomes persist
 
 ```yaml
 # secure-exporter-filters.yaml
+
 hubble:
   export:
     static:

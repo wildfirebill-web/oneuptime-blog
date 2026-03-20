@@ -72,6 +72,7 @@ Create the Celery application in your project directory. This file sets up Celer
 
 ```python
 # myproject/celery.py
+
 import os
 from celery import Celery
 

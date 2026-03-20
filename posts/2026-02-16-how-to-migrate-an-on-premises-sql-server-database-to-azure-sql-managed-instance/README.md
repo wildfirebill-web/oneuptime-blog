@@ -42,6 +42,7 @@ You need a storage account to hold the backup file temporarily.
 
 ```bash
 # Create a storage account for the backup file
+
 az storage account create \
     --resource-group myResourceGroup \
     --name mymigrationstore \

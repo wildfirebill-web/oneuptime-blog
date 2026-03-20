@@ -16,6 +16,7 @@ Collections are declared in a `requirements.yml` file, which is referenced from 
 
 ```yaml
 # execution-environment.yml
+
 ---
 version: 3
 

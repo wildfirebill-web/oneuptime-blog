@@ -8,7 +8,7 @@ Description: Learn how to set up S3 Batch Operations using OpenTofu to perform l
 
 ## Introduction
 
-S3 Batch Operations executes operations on billions of objects in parallel—far faster than iterating through them individually. Common use cases include copying objects across regions, restoring archived objects, updating object tags, ACLs, and running custom Lambda functions against every object.
+S3 Batch Operations executes operations on billions of objects in parallel-far faster than iterating through them individually. Common use cases include copying objects across regions, restoring archived objects, updating object tags, ACLs, and running custom Lambda functions against every object.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ S3 Batch Operations executes operations on billions of objects in parallel—far
 
 ```hcl
 # IAM role that S3 Batch Operations assumes to perform actions
+
 resource "aws_iam_role" "batch_ops" {
   name = "s3-batch-operations-role"
 

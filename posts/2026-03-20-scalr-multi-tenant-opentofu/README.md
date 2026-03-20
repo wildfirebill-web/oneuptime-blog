@@ -26,7 +26,8 @@ graph TD
 ## Configuring OpenTofu to Use Scalr Backend
 
 ```hcl
-# main.tf — configure the Scalr backend
+# main.tf - configure the Scalr backend
+
 terraform {
   backend "remote" {
     hostname     = "yourorg.scalr.io"
@@ -164,4 +165,4 @@ resource "scalr_access_policy" "alpha_env_write" {
 
 ## Conclusion
 
-Scalr's hierarchical model lets platform teams centralize governance — state storage, policies, and RBAC — while giving product teams full autonomy within their environment. OpenTofu workspaces sit at the leaf level, inheriting security baselines automatically and benefiting from centrally managed remote state.
+Scalr's hierarchical model lets platform teams centralize governance - state storage, policies, and RBAC - while giving product teams full autonomy within their environment. OpenTofu workspaces sit at the leaf level, inheriting security baselines automatically and benefiting from centrally managed remote state.

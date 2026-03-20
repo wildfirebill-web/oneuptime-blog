@@ -33,6 +33,7 @@ Get your CA certificate in PEM format:
 
 ```bash
 # Extract CA cert from your server (if accessible)
+
 openssl s_client -connect helm.internal.company.com:443 -showcerts </dev/null 2>/dev/null | \
   openssl x509 -outform PEM > internal-ca.pem
 
@@ -85,7 +86,7 @@ curl -s -X POST -H "Authorization: Bearer $TOKEN" \
 If you are running ChartMuseum as your private Helm repository, here is a Docker Compose example with TLS:
 
 ```yaml
-# docker-compose.yml — ChartMuseum with TLS
+# docker-compose.yml - ChartMuseum with TLS
 version: "3.8"
 services:
   chartmuseum:
@@ -168,4 +169,4 @@ openssl x509 -in server.crt -text -noout | grep -A 3 "Subject Alternative"
 
 ## Conclusion
 
-Configuring CA files for Helm repositories in Portainer is essential when working with private or self-signed TLS certificates. Upload your CA certificate through the Portainer UI or API to establish trusted connections to internal chart repositories. This approach maintains full TLS verification while supporting internal PKI infrastructure — always prefer proper CA configuration over disabling TLS verification.
+Configuring CA files for Helm repositories in Portainer is essential when working with private or self-signed TLS certificates. Upload your CA certificate through the Portainer UI or API to establish trusted connections to internal chart repositories. This approach maintains full TLS verification while supporting internal PKI infrastructure - always prefer proper CA configuration over disabling TLS verification.

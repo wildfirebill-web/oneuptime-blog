@@ -39,6 +39,7 @@ from enum import Enum
 import threading
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 class JobStatus(Enum):

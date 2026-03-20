@@ -47,7 +47,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 GRAFANA_ADMIN_USER = admin
 GRAFANA_ADMIN_PASSWORD = secure-grafana-password
 SMTP_HOST = smtp.gmail.com:587
@@ -108,6 +108,7 @@ Place dashboard JSON files in the same directory. Download community dashboards:
 
 ```bash
 # Download Node Exporter Full dashboard
+
 curl -s "https://grafana.com/api/dashboards/1860/revisions/36/download" \
   > grafana-provisioning/dashboards/node-exporter.json
 ```
@@ -156,4 +157,4 @@ Login with admin / GRAFANA_ADMIN_PASSWORD.
 
 ## Conclusion
 
-Grafana via Portainer with provisioning files delivers a pre-configured monitoring dashboard platform that's reproducible across deployments. The provisioning approach means data sources and dashboards are automatically configured on startup — no manual setup required when recreating the stack.
+Grafana via Portainer with provisioning files delivers a pre-configured monitoring dashboard platform that's reproducible across deployments. The provisioning approach means data sources and dashboards are automatically configured on startup - no manual setup required when recreating the stack.

@@ -36,6 +36,7 @@ graph LR
 
 ```bash
 # Connect to PostgreSQL and configure WAL settings
+
 sudo -u postgres psql
 
 # Enable logical replication in PostgreSQL

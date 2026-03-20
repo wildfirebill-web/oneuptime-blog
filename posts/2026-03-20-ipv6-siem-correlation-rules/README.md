@@ -18,7 +18,7 @@ Correlation is most valuable for detecting multi-stage attacks that evade single
 
 ## Correlation Scenario 1: IPv6 Reconnaissance → Exploitation
 
-```
+```text
 Attack chain:
 1. Attacker scans IPv6 /64 prefix (many ICMP probe failures)
 2. Finds active host (ICMP reply)
@@ -28,8 +28,9 @@ Attack chain:
 Correlation: Events 1-4 from same /64 source prefix within 30 minutes
 ```
 
-```
+```text
 # Splunk correlation: detect scan-then-exploit from same /64
+
 | tstats count as events
     where index=firewall OR index=auth
     by _time span=30m, source_prefix64, event_type
@@ -46,7 +47,7 @@ Correlation: Events 1-4 from same /64 source prefix within 30 minutes
 
 ## Correlation Scenario 2: IPv6 Lateral Movement
 
-```
+```text
 # Elastic EQL: detect lateral movement pattern
 # Source /64 accesses multiple internal /64 subnets in sequence
 
@@ -64,7 +65,7 @@ sequence by source.prefix64 with maxspan=10m
 
 ## Correlation Scenario 3: IPv6 Data Exfiltration
 
-```
+```text
 # Splunk: detect unusually large outbound IPv6 transfers
 
 index=netflow network_type=ipv6
@@ -88,7 +89,7 @@ index=netflow network_type=ipv6
 
 ```python
 #!/usr/bin/env python3
-# extract-prefix64.py — Helper for SIEM correlation
+# extract-prefix64.py - Helper for SIEM correlation
 # Extracts /64 prefix for grouping related IPv6 addresses
 
 import ipaddress
@@ -106,7 +107,7 @@ def get_prefix64(ip_str: str) -> str:
 
 # In Logstash/Elasticsearch ingest pipeline:
 # Add prefix64 as a derived field at ingestion time
-# Reduces correlation complexity — group by prefix64 instead of full /128
+# Reduces correlation complexity - group by prefix64 instead of full /128
 
 # Example: compute_prefix64 ingest processor
 ingest_pipeline = {
@@ -131,7 +132,7 @@ ingest_pipeline = {
 
 ## Baseline Deviation Correlation
 
-```
+```text
 # Splunk: detect unusual new IPv6 /64 prefixes
 
 | tstats count as current_count
@@ -159,7 +160,7 @@ ingest_pipeline = {
 
 ## QRadar Building Block Chain
 
-```
+```text
 # QRadar: multi-event correlation using BB chaining
 
 BB1: IPv6_Scan_Observed
@@ -181,4 +182,4 @@ Rule: IPv6_Reconnaissance_Attack_Chain
 
 ## Conclusion
 
-IPv6 SIEM correlation rules are most effective when they track attack chains across multiple log sources and time windows. Key design principles: use /64 prefix as the correlation key (not individual /128 addresses, which change due to privacy extensions), set appropriate time windows (30 minutes for recon-to-exploit), and chain building blocks (scan → auth failure → auth success). Extract and index `source.prefix64` at ingestion time to avoid expensive on-the-fly regex in correlation queries. Baseline deviation detection — comparing current /64 activity to 7-day historical averages using Z-score — catches novel sources that single-event rules miss.
+IPv6 SIEM correlation rules are most effective when they track attack chains across multiple log sources and time windows. Key design principles: use /64 prefix as the correlation key (not individual /128 addresses, which change due to privacy extensions), set appropriate time windows (30 minutes for recon-to-exploit), and chain building blocks (scan → auth failure → auth success). Extract and index `source.prefix64` at ingestion time to avoid expensive on-the-fly regex in correlation queries. Baseline deviation detection - comparing current /64 activity to 7-day historical averages using Z-score - catches novel sources that single-event rules miss.

@@ -20,6 +20,7 @@ List all tagged images on your system:
 
 ```bash
 # List all images (these two commands are identical)
+
 docker images
 docker image ls
 

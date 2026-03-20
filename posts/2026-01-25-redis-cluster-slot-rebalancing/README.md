@@ -39,6 +39,7 @@ Use redis-cli to inspect your cluster:
 
 ```bash
 # Connect to any cluster node
+
 redis-cli -c -h 192.168.1.10 -p 6379
 
 # View cluster node information

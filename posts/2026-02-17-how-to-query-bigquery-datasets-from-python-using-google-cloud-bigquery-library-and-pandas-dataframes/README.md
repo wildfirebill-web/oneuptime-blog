@@ -18,6 +18,7 @@ First, you need to install the required packages. The BigQuery library has an op
 
 ```bash
 # Install the BigQuery client library with Pandas support
+
 pip install google-cloud-bigquery pandas db-dtypes pyarrow
 ```
 

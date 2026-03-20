@@ -51,6 +51,7 @@ Control Tower creates a few default OUs. You can add more with Terraform:
 
 ```hcl
 # Reference the organization
+
 data "aws_organizations_organization" "main" {}
 
 # Get the root OU

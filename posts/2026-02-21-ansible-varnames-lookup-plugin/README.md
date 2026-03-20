@@ -22,6 +22,7 @@ This playbook finds all variables that start with `myapp_`:
 
 ```yaml
 # playbook.yml - Find variables matching a pattern
+
 ---
 - name: Discover variables by name pattern
   hosts: localhost

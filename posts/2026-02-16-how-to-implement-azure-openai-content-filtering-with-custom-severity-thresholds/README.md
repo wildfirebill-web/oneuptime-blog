@@ -61,6 +61,7 @@ You can see the default behavior by testing with the API:
 
 ```python
 # test_default_filter.py - Test the default content filtering behavior
+
 from openai import AzureOpenAI
 
 client = AzureOpenAI(

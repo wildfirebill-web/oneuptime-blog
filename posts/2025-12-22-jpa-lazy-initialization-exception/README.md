@@ -232,6 +232,7 @@ Spring Boot has `spring.jpa.open-in-view=true` by default, which keeps the sessi
 
 ```properties
 # Disable Open Session in View (recommended)
+
 spring.jpa.open-in-view=false
 ```
 

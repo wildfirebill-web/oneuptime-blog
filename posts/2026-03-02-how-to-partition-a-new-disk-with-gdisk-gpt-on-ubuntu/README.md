@@ -28,6 +28,7 @@ Before partitioning, confirm which device corresponds to the new disk:
 
 ```bash
 # List all block devices
+
 lsblk
 
 # More detail including model names

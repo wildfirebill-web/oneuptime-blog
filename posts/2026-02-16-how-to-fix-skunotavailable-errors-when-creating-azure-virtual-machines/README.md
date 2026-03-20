@@ -45,6 +45,7 @@ The first step is to find out which VM sizes are actually available in your targ
 
 ```bash
 # List all available VM sizes in a specific region
+
 # The --query filter removes SKUs with location restrictions
 az vm list-skus \
   --location eastus \

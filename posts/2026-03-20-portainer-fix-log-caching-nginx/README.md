@@ -1,4 +1,4 @@
-# How to Fix Log Caching Issues with Nginx Reverse Proxy in Portainer
+# How to Fix Log Caching Issues with Nginx Reverse Proxy in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to fix issues where Portainer log streaming is delayed or
 
 ## Introduction
 
-When Portainer is deployed behind an Nginx reverse proxy, you may notice that the log viewer doesn't show real-time logs — there's a delay, logs appear in bursts, or the follow mode doesn't work. This is caused by Nginx's proxy buffering, which buffers the streaming HTTP response from Portainer before forwarding it to your browser. This guide explains how to disable buffering for Portainer log streaming.
+When Portainer is deployed behind an Nginx reverse proxy, you may notice that the log viewer doesn't show real-time logs - there's a delay, logs appear in bursts, or the follow mode doesn't work. This is caused by Nginx's proxy buffering, which buffers the streaming HTTP response from Portainer before forwarding it to your browser. This guide explains how to disable buffering for Portainer log streaming.
 
 ## Prerequisites
 
@@ -32,6 +32,7 @@ Find your Nginx configuration for Portainer:
 
 ```nginx
 # Example: /etc/nginx/conf.d/portainer.conf
+
 # or /etc/nginx/sites-available/portainer
 ```
 
@@ -148,7 +149,7 @@ location /api/ {
 }
 ```
 
-Or Portainer can set this header in its responses — but since we're configuring Nginx, add it at the proxy level.
+Or Portainer can set this header in its responses - but since we're configuring Nginx, add it at the proxy level.
 
 ## Step 5: Docker Compose with Nginx Proxy
 
@@ -165,7 +166,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    # Don't expose Portainer directly — Nginx handles external access
+    # Don't expose Portainer directly - Nginx handles external access
     expose:
       - "9000"
 

@@ -22,6 +22,7 @@ Monitoring the Calico VPP uplink provides visibility into the physical network c
 
 ```yaml
 # ServiceMonitor for VPP exporter
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

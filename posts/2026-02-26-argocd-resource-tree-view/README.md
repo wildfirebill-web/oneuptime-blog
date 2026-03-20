@@ -61,7 +61,7 @@ Each node in the tree displays several pieces of information:
 - Yellow exclamation - OutOfSync (differs from Git)
 - No indicator - Resource was created by Kubernetes, not directly managed by ArgoCD
 
-### Resource Details on Each Node
+Resource Details on Each Node
 
 Each tree node shows:
 - Resource icon (varies by kind)
@@ -229,7 +229,7 @@ If a resource appears in Git but does not exist in the cluster, it shows as "Mis
 - The namespace does not exist
 - RBAC prevents ArgoCD from creating the resource
 
-## Resource Tree for Complex Applications
+Resource Tree for Complex Applications
 
 For applications with many resources (StatefulSets, CronJobs, PVCs, ServiceAccounts, Roles), the tree can get large. Use these strategies to manage complexity:
 
@@ -244,6 +244,7 @@ If you prefer the command line, you can get similar information:
 
 ```bash
 # View the resource tree in text format
+
 argocd app resources my-app
 
 # Get detailed resource info

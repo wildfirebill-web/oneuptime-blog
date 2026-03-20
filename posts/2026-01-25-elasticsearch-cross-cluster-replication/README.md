@@ -58,6 +58,7 @@ First, configure the follower cluster to recognize the leader cluster:
 
 ```bash
 # On the follower cluster, add the leader cluster as a remote
+
 curl -X PUT "https://follower-cluster:9200/_cluster/settings" \
   -H 'Content-Type: application/json' \
   -u elastic:password \

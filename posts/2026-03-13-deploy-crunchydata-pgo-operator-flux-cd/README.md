@@ -27,6 +27,7 @@ PGO is published as an OCI Helm chart starting with version 5:
 
 ```yaml
 # infrastructure/sources/crunchydata-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -29,6 +29,7 @@ Generate a random keyfile with strong entropy:
 
 ```bash
 # Create a directory to store keyfiles (root-only access)
+
 sudo mkdir -p /etc/luks-keys
 sudo chmod 700 /etc/luks-keys
 

@@ -16,6 +16,7 @@ The `ceil` function takes a numeric value and returns the smallest integer that 
 
 ```hcl
 # ceil(number)
+
 # Rounds up to nearest integer
 ceil(4.1)  # Returns: 5
 ceil(4.9)  # Returns: 5

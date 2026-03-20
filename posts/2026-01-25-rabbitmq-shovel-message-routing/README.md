@@ -44,6 +44,7 @@ First, enable the plugin on nodes that will run shovels:
 
 ```bash
 # Enable shovel plugin
+
 rabbitmq-plugins enable rabbitmq_shovel
 
 # Enable management UI extension (optional but helpful)

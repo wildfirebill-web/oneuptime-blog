@@ -13,7 +13,8 @@ If your machine has `192.168.1.100`, that is your private RFC 1918 address. Your
 ## Method 1: curl with IP Discovery Services
 
 ```bash
-# Simple — returns just the IP address
+# Simple - returns just the IP address
+
 curl -s https://api.ipify.org
 curl -s https://ifconfig.me
 curl -s https://icanhazip.com
@@ -29,7 +30,7 @@ curl -s https://api.ipify.org?format=json
 Some DNS servers have a special hostname that returns your public IP:
 
 ```bash
-# Using OpenDNS resolver — returns your public IP
+# Using OpenDNS resolver - returns your public IP
 dig +short myip.opendns.com @resolver1.opendns.com
 
 # Google's TXT record approach
@@ -72,7 +73,7 @@ For server environments, check the WAN IP directly:
 # Cisco IOS:
 # show ip interface brief
 
-# Linux router — check the WAN interface (e.g., ppp0 for PPPoE, eth0 for direct)
+# Linux router - check the WAN interface (e.g., ppp0 for PPPoE, eth0 for direct)
 ip addr show ppp0
 ip addr show eth0  # Look for the non-RFC1918 address
 

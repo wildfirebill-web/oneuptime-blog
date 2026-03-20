@@ -25,7 +25,7 @@ In Portainer, navigate to your Kubernetes environment:
 2. Click **Add Repository**
 3. Add the Linkerd stable repository:
 
-```
+```text
 Name: linkerd
 URL: https://helm.linkerd.io/stable
 ```
@@ -36,6 +36,7 @@ Deploy the following manifest via Portainer's Kubernetes manifest editor:
 
 ```yaml
 # linkerd-namespaces.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -287,6 +287,7 @@ When using policy variables in Terraform, escape the dollar sign:
 
 ```hcl
 # Terraform requires double-dollar for IAM policy variables
+
 resource "aws_iam_policy" "user_home_directory" {
   name = "UserHomeDirectory"
 

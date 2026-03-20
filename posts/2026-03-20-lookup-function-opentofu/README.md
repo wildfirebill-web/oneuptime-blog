@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, lookup, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Lookup, Map Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the lookup function in OpenTofu to retrieve values from a map with a fallback default when the key is not found.
 
@@ -18,7 +18,7 @@ Description: Learn how to use the lookup function in OpenTofu to retrieve values
 lookup(map, key, default)
 ```
 
-If `key` exists in `map`, its value is returned. If not, `default` is returned. (The default argument was optional in Terraform but is required in the latest versions — always provide it.)
+If `key` exists in `map`, its value is returned. If not, `default` is returned. (The default argument was optional in Terraform but is required in the latest versions - always provide it.)
 
 ---
 
@@ -35,7 +35,7 @@ locals {
   # Returns "m5.large"
   prod_type = lookup(local.instance_types, "production", "t3.micro")
 
-  # Returns "t3.micro" (the default) — "test" key doesn't exist
+  # Returns "t3.micro" (the default) - "test" key doesn't exist
   test_type = lookup(local.instance_types, "test", "t3.micro")
 }
 ```
@@ -91,7 +91,7 @@ locals {
   env  = lookup(var.resource_tags, "Environment", "unknown")
   team = lookup(var.resource_tags, "Team", "unassigned")
   cost = lookup(var.resource_tags, "CostCenter", "default")
-  # "default" — CostCenter key doesn't exist
+  # "default" - CostCenter key doesn't exist
 }
 ```
 
@@ -128,11 +128,12 @@ variable "config" {
   default = { key1 = "value1" }
 }
 
-# Direct access — errors if key missing
+# Direct access - errors if key missing
+
 value1 = var.config["key1"]     # "value1"
 # var.config["key2"]            # Error: key not found
 
-# lookup — returns default if key missing
+# lookup - returns default if key missing
 value1 = lookup(var.config, "key1", "default")  # "value1"
 value2 = lookup(var.config, "key2", "default")  # "default" (no error)
 ```

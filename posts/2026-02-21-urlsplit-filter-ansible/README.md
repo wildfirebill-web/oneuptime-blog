@@ -60,6 +60,7 @@ Suppose your database connection string comes from an environment variable or a 
 
 ```yaml
 # db_config.yml - Parse database URL into components
+
 - name: Configure database connection
   hosts: app_servers
   vars:

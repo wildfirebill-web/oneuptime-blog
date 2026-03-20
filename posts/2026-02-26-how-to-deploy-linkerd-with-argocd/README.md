@@ -42,6 +42,7 @@ Linkerd uses a trust anchor certificate for mTLS. You must generate this before 
 
 ```bash
 # Generate trust anchor (CA) certificate
+
 # This is the root of trust for your mesh
 step certificate create root.linkerd.cluster.local ca.crt ca.key \
   --profile root-ca \

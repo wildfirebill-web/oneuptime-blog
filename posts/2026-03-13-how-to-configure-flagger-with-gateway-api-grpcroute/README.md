@@ -31,6 +31,7 @@ GRPCRoute may require the experimental channel of the Gateway API CRDs. Install 
 
 ```bash
 # Install Gateway API CRDs including experimental resources
+
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.0.0/experimental-install.yaml
 ```
 

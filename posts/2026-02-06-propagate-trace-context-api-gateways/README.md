@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, API Gateway, Context Propagation, Distributed Tracing, NGINX, Kong, AWS API Gateway, Envoy
+Tags: OpenTelemetry, API Gateway, Context Propagation, Distributed Tracing, Nginx, Kong, AWS API Gateway, Envoy
 
 Description: Learn how to configure API gateways like Nginx, Kong, AWS API Gateway, and Envoy to propagate OpenTelemetry trace context to backend services.
 
@@ -43,6 +43,7 @@ The basic configuration to ensure trace context headers pass through:
 
 ```nginx
 # nginx.conf - Ensure trace context headers are forwarded
+
 http {
     upstream backend {
         server backend-service:8080;

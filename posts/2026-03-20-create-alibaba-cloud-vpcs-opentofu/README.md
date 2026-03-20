@@ -39,6 +39,7 @@ data "alicloud_zones" "available" {
 
 ```hcl
 # Public VSwitch in Zone A
+
 resource "alicloud_vswitch" "public_a" {
   vswitch_name = "public-vsw-a"
   vpc_id       = alicloud_vpc.production.id

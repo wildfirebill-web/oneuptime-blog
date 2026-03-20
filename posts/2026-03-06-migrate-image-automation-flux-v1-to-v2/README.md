@@ -45,6 +45,7 @@ Ensure you have the following before starting:
 
 ```bash
 # Install Flux v2 CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify prerequisites

@@ -186,6 +186,7 @@ Monitor memory over 24-48 hours:
 
 ```bash
 # Query collector process memory
+
 ps aux | grep otelcol
 
 # Or use container metrics

@@ -18,6 +18,7 @@ Both tools fetch HTTP resources but have different strengths:
 
 ```bash
 # curl: More features, better for APIs
+
 kubectl exec -it my-pod -- curl http://my-service:8080/
 
 # wget: Simpler, better for downloads

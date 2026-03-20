@@ -8,13 +8,13 @@ Description: Learn how to configure and customize the OpenTofu local backend for
 
 ## Introduction
 
-The local backend is OpenTofu's default backend — it stores state in a file on your local filesystem. While not suitable for team environments, it's ideal for personal projects, local development, and testing. Understanding its configuration helps you customize state file locations and manage local workspaces.
+The local backend is OpenTofu's default backend - it stores state in a file on your local filesystem. While not suitable for team environments, it's ideal for personal projects, local development, and testing. Understanding its configuration helps you customize state file locations and manage local workspaces.
 
 ## Default Behavior
 
 Without any backend configuration, OpenTofu uses the local backend with default settings:
 
-```
+```text
 Project directory:
 ├── main.tf
 ├── terraform.tfstate        ← State file (auto-created)
@@ -28,6 +28,7 @@ You can explicitly configure the local backend with a custom path:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "local" {
     path = "terraform.tfstate"  # Default: terraform.tfstate in current directory
@@ -131,7 +132,7 @@ tofu init
 # Initializing provider plugins...
 # OpenTofu has been successfully initialized!
 
-# No backend config needed — local is the default
+# No backend config needed - local is the default
 ```
 
 ## When to Use the Local Backend
@@ -172,4 +173,4 @@ tofu init
 
 ## Conclusion
 
-The local backend is simple, requires no configuration, and works well for individual developers and testing. Understanding its workspace directory structure and locking mechanism helps you troubleshoot issues. For any collaborative or production use, plan your migration to a remote backend early — OpenTofu makes this migration straightforward through `tofu init`.
+The local backend is simple, requires no configuration, and works well for individual developers and testing. Understanding its workspace directory structure and locking mechanism helps you troubleshoot issues. For any collaborative or production use, plan your migration to a remote backend early - OpenTofu makes this migration straightforward through `tofu init`.

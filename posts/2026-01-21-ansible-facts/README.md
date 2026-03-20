@@ -18,6 +18,7 @@ When Ansible runs, it automatically collects facts about each host using the `se
 
 ```bash
 # View all facts for a host
+
 ansible web1.example.com -m setup
 
 # Filter facts by name

@@ -26,6 +26,7 @@ IPv6 address hierarchies in IPAM represent the delegation chain from RIR allocat
 ```python
 #!/usr/bin/env python3
 # design_ipv6_hierarchy.py
+
 import ipaddress
 
 ORG_PREFIX = "2001:db8::/32"
@@ -68,7 +69,7 @@ describe_hierarchy(ORG_PREFIX)
 
 ## Example Hierarchy: Multi-Site Organization
 
-```
+```text
 2001:db8::/32                          # RIR Allocation
 
   2001:db8:0000::/36                   # North America Region
@@ -97,7 +98,7 @@ describe_hierarchy(ORG_PREFIX)
 
 A common practice is to encode site/region/VLAN information directly in the address bits:
 
-```
+```yaml
 2001:db8:RRSS:VVVV::/64
          ||||
          ||++-- Site ID (hex): 0001=HQ, 0002=DC-East, 0003=DC-West
@@ -172,4 +173,4 @@ create_hierarchy(HIERARCHY)
 
 ## Conclusion
 
-IPv6 address hierarchies should reflect your organizational structure: allocate /48 per site, divide into /64 per VLAN, and use the middle bits to encode location or type metadata. In IPAM tools, create parent-child prefix relationships to visualize the hierarchy and identify allocation gaps. The most important design decision is choosing the /36 or /40 boundary for regional blocks — align these with your BGP routing hierarchy so regional aggregates can be announced from regional PoPs. Encode business metadata (region, site, VLAN) in the address bits to make addresses self-documenting.
+IPv6 address hierarchies should reflect your organizational structure: allocate /48 per site, divide into /64 per VLAN, and use the middle bits to encode location or type metadata. In IPAM tools, create parent-child prefix relationships to visualize the hierarchy and identify allocation gaps. The most important design decision is choosing the /36 or /40 boundary for regional blocks - align these with your BGP routing hierarchy so regional aggregates can be announced from regional PoPs. Encode business metadata (region, site, VLAN) in the address bits to make addresses self-documenting.

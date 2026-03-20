@@ -18,6 +18,7 @@ The simplest removal specifies the exact line to remove:
 
 ```yaml
 # Remove a specific line from /etc/hosts
+
 - name: Remove old monitoring server from hosts
   ansible.builtin.lineinfile:
     path: /etc/hosts

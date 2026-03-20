@@ -42,6 +42,7 @@ The simplest way to install Envoy on Linux is through the official package repos
 
 ```bash
 # Add Envoy GPG key and repository
+
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl gnupg
 

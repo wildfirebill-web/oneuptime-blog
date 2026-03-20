@@ -35,6 +35,7 @@ flowchart TD
 
 ```yaml
 # configure-chrony.yml - Install and configure chrony for time sync
+
 ---
 - name: Configure chrony time synchronization
   hosts: all

@@ -24,6 +24,7 @@ You need two Kubernetes clusters with Linkerd installed on each. We'll call them
 
 ```bash
 # On cluster-east
+
 linkerd install --cluster-domain=cluster.local | kubectl apply -f -
 linkerd check
 

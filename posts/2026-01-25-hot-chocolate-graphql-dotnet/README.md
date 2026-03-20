@@ -446,6 +446,7 @@ Example queries:
 
 ```graphql
 # Cursor-based pagination with filtering
+
 query {
   productsPaged(
     first: 10

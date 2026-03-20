@@ -36,6 +36,7 @@ An ArgoCD Application is a Kubernetes custom resource. You define it in YAML jus
 
 ```yaml
 # applications/my-web-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

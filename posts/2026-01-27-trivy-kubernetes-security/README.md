@@ -29,6 +29,7 @@ The Trivy Operator runs inside your cluster and continuously scans workloads. It
 
 ```bash
 # Add the Aqua Security Helm repository
+
 helm repo add aqua https://aquasecurity.github.io/helm-charts/
 helm repo update
 

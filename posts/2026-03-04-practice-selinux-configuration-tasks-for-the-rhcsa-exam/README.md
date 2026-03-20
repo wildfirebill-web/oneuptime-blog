@@ -14,6 +14,7 @@ SELinux is always tested on the RHCSA exam. You need to be comfortable changing 
 
 ```bash
 # Check the current mode
+
 getenforce
 # Output: Enforcing, Permissive, or Disabled
 

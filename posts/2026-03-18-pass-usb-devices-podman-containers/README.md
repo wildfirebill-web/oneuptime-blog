@@ -20,6 +20,7 @@ Before passing USB devices to containers, it helps to understand how Linux repre
 
 ```bash
 # List all connected USB devices
+
 lsusb
 # Example output:
 # Bus 001 Device 003: ID 2341:0043 Arduino SA Mega 2560 R3

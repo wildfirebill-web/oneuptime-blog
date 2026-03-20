@@ -24,6 +24,7 @@ Auditing policy language usage checks that policies across the cluster follow co
 echo "=== Policy Language Audit ==="
 
 # Count policies by type
+
 echo "Policy statistics:"
 echo "  CiliumNetworkPolicy: $(kubectl get ciliumnetworkpolicies --all-namespaces --no-headers | wc -l)"
 echo "  CiliumClusterwideNetworkPolicy: $(kubectl get ciliumclusterwidenetworkpolicies --no-headers 2>/dev/null | wc -l)"

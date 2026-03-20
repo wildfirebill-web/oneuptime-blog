@@ -10,6 +10,7 @@ Description: Emulate IPv6 networks with Mininet for testing, SDN experiments, an
 
 ```bash
 # Install Mininet
+
 sudo apt-get install -y mininet
 
 # Verify installation
@@ -23,7 +24,7 @@ sudo mn --ipv6 --test pingall
 
 ```python
 #!/usr/bin/env python3
-# ipv6-topo.py — Basic 3-host IPv6 topology
+# ipv6-topo.py - Basic 3-host IPv6 topology
 
 from mininet.net import Mininet
 from mininet.node import Controller
@@ -139,7 +140,7 @@ if __name__ == '__main__':
 
 ```python
 #!/usr/bin/env python3
-# test-suite.py — Automated IPv6 tests in Mininet
+# test-suite.py - Automated IPv6 tests in Mininet
 
 from mininet.net import Mininet
 from mininet.node import Controller

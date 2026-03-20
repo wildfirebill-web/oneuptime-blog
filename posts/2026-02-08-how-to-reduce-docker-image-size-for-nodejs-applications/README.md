@@ -16,6 +16,7 @@ Here is a common Dockerfile that produces an unnecessarily large image:
 
 ```dockerfile
 # Starting point: typically 1GB+
+
 FROM node:20
 WORKDIR /app
 COPY . .

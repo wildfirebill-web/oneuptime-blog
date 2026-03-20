@@ -39,6 +39,7 @@ The most common source type. It clones a Git repository and makes its contents a
 
 ```yaml
 # A GitRepository source that tracks the main branch
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

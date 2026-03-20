@@ -58,6 +58,7 @@ Key metrics:
 
 ```text
 # Total pushes
+
 pilot_xds_pushes{type="cds"} 1523
 pilot_xds_pushes{type="eds"} 8234
 pilot_xds_pushes{type="lds"} 1523

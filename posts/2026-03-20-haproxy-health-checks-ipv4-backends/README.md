@@ -14,7 +14,7 @@ HAProxy health checks continuously probe backend servers to determine if they ar
 
 The `check` keyword enables TCP-level health checking:
 
-```
+```text
 backend api-servers
     balance roundrobin
     server api1 10.0.1.10:8080 check
@@ -28,7 +28,7 @@ HAProxy opens a TCP connection to the server. If the connection succeeds, the se
 
 For application-level health checking:
 
-```
+```text
 backend api-servers
     balance roundrobin
     option httpchk GET /health HTTP/1.1\r\nHost:\ api.internal
@@ -43,7 +43,7 @@ HAProxy sends an HTTP GET request and checks the response code.
 
 Check a different port than the traffic port:
 
-```
+```text
 backend api-servers
     server api1 10.0.1.10:8080 check port 8090   # Traffic: 8080, Health: 8090
     server api2 10.0.1.11:8080 check port 8090
@@ -51,7 +51,7 @@ backend api-servers
 
 ## Tuning Check Interval and Thresholds
 
-```
+```text
 defaults
     timeout check 3s      # Max time to wait for a health check response
 
@@ -68,7 +68,7 @@ backend api-servers
 
 ## Using fastinter and downinter
 
-```
+```text
 backend api-servers
     server api1 10.0.1.10:8080 check inter 5000 fastinter 1000 downinter 2000 rise 3 fall 2
 ```
@@ -80,7 +80,7 @@ backend api-servers
 
 Use an agent running on the backend to report health and weight dynamically:
 
-```
+```text
 backend api-servers
     server api1 10.0.1.10:8080 check agent-check agent-port 9999 agent-inter 10000
 ```
@@ -91,6 +91,7 @@ The agent on port 9999 responds with status strings like `ready`, `drain`, `main
 
 ```bash
 # View server states via HAProxy socket
+
 echo "show servers state api-servers" | sudo socat stdio /run/haproxy/admin.sock
 ```
 
@@ -101,13 +102,13 @@ Output includes:
 
 ## MySQL/PostgreSQL Custom Health Check
 
-```
+```text
 backend db-servers
     option mysql-check user haproxy
     server db1 10.0.2.10:3306 check
 ```
 
-```
+```text
 backend pg-servers
     option pgsql-check user haproxy
     server pg1 10.0.2.20:5432 check

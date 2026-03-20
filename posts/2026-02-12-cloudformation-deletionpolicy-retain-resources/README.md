@@ -28,6 +28,7 @@ Three options:
 
 ```yaml
 # Retain the database even if the stack is deleted
+
 Resources:
   ProductionDatabase:
     Type: AWS::RDS::DBInstance

@@ -225,6 +225,7 @@ Cloud load balancers perform health checks on the ingress gateway pods. These he
 
 ```yaml
 # AWS ALB health check target
+
 healthCheckPort: 15021
 healthCheckPath: /healthz/ready
 ```

@@ -39,7 +39,7 @@ Fleet passes these credentials using HTTP Basic Authentication when cloning and 
    - `repo` (for private repositories)
    - `read:org` (if using organization repositories)
 6. Click **Generate token**
-7. **Copy the token immediately** — you won't see it again
+7. **Copy the token immediately** - you won't see it again
 
 ### GitHub Fine-Grained Personal Access Token (Recommended)
 
@@ -77,6 +77,7 @@ Fleet passes these credentials using HTTP Basic Authentication when cloning and 
 
 ```bash
 # GitHub Personal Access Token
+
 kubectl create secret generic github-http-auth \
   --from-literal=username=my-github-username \
   --from-literal=password=ghp_xxxxxxxxxxxxxxxxxxxx \

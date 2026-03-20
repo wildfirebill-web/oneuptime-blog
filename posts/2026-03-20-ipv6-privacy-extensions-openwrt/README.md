@@ -22,6 +22,7 @@ First, verify whether the router itself is using EUI-64 or privacy addresses:
 
 ```bash
 # SSH into OpenWrt and check IPv6 addresses
+
 ip -6 addr show
 
 # Check addr_gen_mode for the WAN interface

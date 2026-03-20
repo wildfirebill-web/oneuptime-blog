@@ -119,6 +119,7 @@ Pre-Upgrade Checklist
 
 ```bash
 # Take etcd snapshot
+
 rke2 etcd-snapshot save --name pre-upgrade-$(date +%Y%m%d)
 
 # Run Rancher Backup

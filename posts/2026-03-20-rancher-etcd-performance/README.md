@@ -1,4 +1,4 @@
-# How to Optimize etcd Performance for Rancher
+# How to Optimize etcd Performance for Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ etcd is the backbone of every Kubernetes cluster, storing all cluster state. Poo
 
 ```bash
 # Check etcd cluster health via kubectl
+
 kubectl exec -n kube-system \
   $(kubectl get pod -n kube-system -l component=etcd -o name | head -1) \
   -- etcdctl endpoint health \

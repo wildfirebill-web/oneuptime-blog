@@ -14,6 +14,7 @@ RHEL's AppStream repository provides Ruby through module streams, making it stra
 
 ```bash
 # List available Ruby module streams
+
 sudo dnf module list ruby
 
 # Expected output shows available streams like 3.0, 3.1, 3.2

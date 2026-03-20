@@ -16,6 +16,7 @@ The `formatdate` function takes two arguments: a format string and a timestamp i
 
 ```hcl
 # formatdate(spec, timestamp)
+
 formatdate("YYYY-MM-DD", "2026-02-23T14:30:00Z")
 # Result: "2026-02-23"
 ```

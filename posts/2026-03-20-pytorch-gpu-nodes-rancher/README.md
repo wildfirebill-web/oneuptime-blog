@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, pytorch, gpu, deep-learning, kubernetes
+Tags: Rancher, PyTorch, GPU, Deep-learning, Kubernetes
 
 Description: Complete guide to running PyTorch deep learning workloads on GPU-accelerated nodes in Rancher Kubernetes clusters.
+
 ## Introduction
 
 PyTorch is widely used in research and production deep learning. This guide covers deploying PyTorch training and inference workloads on GPU nodes managed by Rancher.
@@ -13,6 +14,7 @@ PyTorch is widely used in research and production deep learning. This guide cove
 
 ```dockerfile
 # Dockerfile.pytorch-training
+
 FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
 
 # Install additional dependencies

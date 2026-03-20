@@ -33,6 +33,7 @@ Each child includes the root:
 
 ```hcl
 # live/dev/vpc/terragrunt.hcl
+
 include "root" {
   path = find_in_parent_folders()
 }
@@ -83,7 +84,7 @@ This single configuration creates separate state files for every module:
 
 Without this function, you would need to manually set a unique `key` in every single module's backend configuration. With dozens or hundreds of modules, that is a lot of error-prone copy-pasting.
 
-## Resource Naming
+Resource Naming
 
 Beyond state keys, `path_relative_to_include()` is useful for generating consistent resource names:
 

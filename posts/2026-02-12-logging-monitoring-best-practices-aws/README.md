@@ -35,6 +35,7 @@ This Terraform configuration sets up an organization-wide CloudTrail with tamper
 
 ```hcl
 # S3 bucket for CloudTrail logs with immutability
+
 resource "aws_s3_bucket" "cloudtrail" {
   bucket = "${var.org_id}-cloudtrail-logs"
 }

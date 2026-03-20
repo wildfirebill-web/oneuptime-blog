@@ -50,6 +50,7 @@ Delete the existing CNI DaemonSet:
 
 ```bash
 # For Flannel
+
 kubectl delete -f kube-flannel.yml
 
 # Clean up CNI config on each node (run on all nodes)

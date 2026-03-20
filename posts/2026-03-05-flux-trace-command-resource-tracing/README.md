@@ -157,6 +157,7 @@ Combine `flux trace` with other Flux commands for a systematic debugging approac
 
 ```bash
 # 1. Start by tracing the problematic resource
+
 flux trace deployment my-app -n production
 
 # 2. Based on the trace output, check events for the failing component

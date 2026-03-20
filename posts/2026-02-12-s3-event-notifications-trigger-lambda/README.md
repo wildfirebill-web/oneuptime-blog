@@ -93,6 +93,7 @@ Package and deploy the Lambda function:
 
 ```bash
 # Create the deployment package
+
 zip function.zip lambda_function.py
 
 # Create the Lambda function

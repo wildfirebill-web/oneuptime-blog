@@ -26,6 +26,7 @@ The simplest approach is to use a vault password file. Create a file containing 
 
 ```bash
 # Create a vault password file (do NOT commit this to git)
+
 echo "my-vault-password" > .vault-password
 chmod 600 .vault-password
 ```

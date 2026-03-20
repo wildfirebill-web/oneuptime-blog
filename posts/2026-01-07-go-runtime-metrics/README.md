@@ -720,6 +720,7 @@ When you register the Go collector, Prometheus exposes these key metrics:
 
 ```text
 # Goroutine count
+
 go_goroutines
 
 # GC duration histogram (in seconds)

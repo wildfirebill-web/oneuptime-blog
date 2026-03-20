@@ -29,6 +29,7 @@ The recommended installation method is using the official Helm chart.
 
 ```bash
 # Add the Flux Operator Helm repository
+
 helm repo add controlplaneio-fluxcd https://controlplaneio-fluxcd.github.io/charts
 helm repo update
 

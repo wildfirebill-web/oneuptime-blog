@@ -25,6 +25,7 @@ The result is a web interface where you can find a receipt from 2019 by typing "
 
 ```bash
 # Install Docker and Docker Compose
+
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 

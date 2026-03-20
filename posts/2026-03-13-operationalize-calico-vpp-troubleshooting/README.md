@@ -42,6 +42,7 @@ Operationalizing Calico VPP troubleshooting means creating repeatable processes 
 ```bash
 #!/bin/bash
 # collect-vpp-support-bundle.sh
+
 BUNDLE="vpp-support-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "${BUNDLE}"
 

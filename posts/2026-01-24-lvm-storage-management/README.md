@@ -64,6 +64,7 @@ flowchart TD
 
 ```bash
 # Install LVM tools on Debian/Ubuntu
+
 sudo apt update
 sudo apt install lvm2
 

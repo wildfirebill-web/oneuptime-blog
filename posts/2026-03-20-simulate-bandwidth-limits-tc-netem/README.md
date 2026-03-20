@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, netem, IPv4, Bandwidth, Network Simulation, Linux
+Tags: tc, Netem, IPv4, Bandwidth, Network Simulation, Linux
 
 Description: Use tc netem's rate option to simulate constrained IPv4 bandwidth on a network interface for testing application behavior under limited throughput.
 
@@ -12,6 +12,7 @@ The netem `rate` parameter allows you to simulate a specific bandwidth cap direc
 
 ```bash
 # Simulate a 1 Mbps connection (typical slow DSL)
+
 sudo tc qdisc add dev eth0 root netem rate 1mbit
 
 # Simulate a 10 Mbps connection
@@ -42,7 +43,7 @@ sudo tc qdisc add dev eth0 root netem \
 # Dial-up modem (56K)
 sudo tc qdisc add dev eth0 root netem rate 56kbit delay 150ms
 
-# ADSL (2 Mbps down, asymmetric — use IFB for inbound shaping)
+# ADSL (2 Mbps down, asymmetric - use IFB for inbound shaping)
 sudo tc qdisc add dev eth0 root netem rate 2mbit delay 20ms
 
 # Cable internet (50 Mbps)

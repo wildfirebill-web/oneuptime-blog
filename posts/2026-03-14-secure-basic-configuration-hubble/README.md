@@ -29,6 +29,7 @@ The most critical security measure is encrypting communication between Hubble co
 
 ```yaml
 # hubble-secure-basic.yaml
+
 hubble:
   enabled: true
   tls:

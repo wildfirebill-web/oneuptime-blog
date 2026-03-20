@@ -4,13 +4,13 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, CIDR, Subnet Mask, Subnetting, Networking
 
-Description: CIDR prefix length and dotted-decimal subnet mask are two representations of the same concept — the number of leading 1-bits in a 32-bit mask — and they are directly interconvertible.
+Description: CIDR prefix length and dotted-decimal subnet mask are two representations of the same concept - the number of leading 1-bits in a 32-bit mask - and they are directly interconvertible.
 
 ## Two Representations, One Concept
 
 A subnet mask defines which bits of an IP address belong to the network. CIDR notation expresses this as a count of leading 1-bits:
 
-```
+```text
 /24 = 255.255.255.0 = 24 ones followed by 8 zeros
 /20 = 255.255.240.0 = 20 ones followed by 12 zeros
 ```
@@ -46,6 +46,7 @@ def mask_to_prefix(mask: str) -> int:
     return bin(mask_int).count("1")
 
 # Demonstrate bidirectional conversion
+
 import ipaddress
 for cidr_str in ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16",
                   "10.1.2.0/24", "10.1.2.0/26"]:

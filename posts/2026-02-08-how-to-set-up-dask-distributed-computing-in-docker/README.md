@@ -35,6 +35,7 @@ For simple development tasks, you can run Dask in a single container:
 
 ```bash
 # Run Dask in single-machine mode with the dashboard
+
 docker run -it --rm \
   --name dask-single \
   -p 8787:8787 \
@@ -289,7 +290,7 @@ for addr, worker in info["workers"].items():
           f"{worker['nthreads']} threads")
 ```
 
-## Resource Limits and Memory Management
+Resource Limits and Memory Management
 
 Setting proper memory limits prevents workers from consuming all available RAM:
 

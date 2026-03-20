@@ -14,6 +14,7 @@ Libreswan is an open-source IKEv1/IKEv2 implementation for Linux, commonly used 
 
 ```bash
 # RHEL/CentOS/Fedora
+
 sudo dnf install libreswan
 
 # Debian/Ubuntu
@@ -33,7 +34,7 @@ ipsec --version
 
 ### /etc/ipsec.conf
 
-```
+```text
 config setup
     logfile=/var/log/pluto.log
     logappend=no
@@ -63,7 +64,7 @@ conn site1-to-site2
 
 ### /etc/ipsec.secrets
 
-```
+```text
 # PSK for site-to-site
 @gw1.example.com @gw2.example.com : PSK "StrongSharedKey123ChangeThis!"
 ```
@@ -82,7 +83,7 @@ ipsec trafficstatus
 
 ## Host-to-Host IPv6 Transport Mode
 
-```
+```text
 conn host-a-to-b
     left=2001:db8:1::1
     right=2001:db8:1::2
@@ -112,7 +113,7 @@ certutil -S -n "gw1" -s "CN=gw1.example.com" -c "VPN CA" -t "u,u,u" -v 12 \
 pk12util -o gw1.p12 -n "gw1" -d /etc/ipsec.d
 ```
 
-```
+```text
 # Certificate-based connection
 conn cert-site1-to-site2
     left=2001:db8:gw1::1
@@ -164,12 +165,12 @@ ipsec pluto --nofork --debug-all 2>&1 | head -100
 
 # Common issues:
 # "AUTHENTICATE: Failed to verify IKEv2 AUTH payload"
-# → Wrong PSK or cert mismatch — check /etc/ipsec.secrets
+# → Wrong PSK or cert mismatch - check /etc/ipsec.secrets
 
 # "No matching policy" → check leftsubnet/rightsubnet match
 
 # "unable to find compatible proposals"
-# → Mismatched ike= or esp= proposals — check both sides match
+# → Mismatched ike= or esp= proposals - check both sides match
 
 # Restart after configuration change
 systemctl restart ipsec

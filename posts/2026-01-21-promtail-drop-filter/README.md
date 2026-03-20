@@ -394,6 +394,7 @@ relabel_configs:
 
 ```promql
 # Dropped entries by reason
+
 sum by (reason) (rate(promtail_dropped_entries_total[5m]))
 
 # Drop rate percentage

@@ -28,6 +28,7 @@ Different channels serve different purposes. Join the ones relevant to your work
 
 ```plaintext
 # Core channels to join:
+
 #general          - Announcements, news, general discussion
 #help             - Getting help with issues (most active support channel)
 #hubble           - Hubble observability and flow visibility questions

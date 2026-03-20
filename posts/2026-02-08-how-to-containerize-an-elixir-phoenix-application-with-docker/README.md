@@ -25,6 +25,7 @@ Here is the key configuration for a Phoenix app prepared for releases:
 
 ```elixir
 # config/runtime.exs - Runtime configuration for releases
+
 import Config
 
 if config_env() == :prod do

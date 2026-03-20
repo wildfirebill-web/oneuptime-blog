@@ -16,6 +16,7 @@ Reserved Instances are a billing construct, not a specific resource. When you pu
 
 ```hcl
 # This instance automatically benefits from an RI purchase
+
 # for t3.large in us-east-1
 resource "aws_instance" "web" {
   ami           = var.ami_id

@@ -690,27 +690,27 @@ main();
 
 ## Installation
 
-\`\`\`bash
+```bash
 deno install --allow-read --allow-write -n {{ name }} ./mod.ts
-\`\`\`
+```
 
 ## Usage
 
-\`\`\`bash
+```bash
 {{ name }} --help
-\`\`\`
+```
 
 ## Development
 
-\`\`\`bash
+```bash
 deno task dev
-\`\`\`
+```
 
 ## Build
 
-\`\`\`bash
+````bash
 deno task compile
-\`\`\`
+```
 `,
   },
 };
@@ -869,12 +869,13 @@ if (buildType === "all") {
 } else {
   buildCurrent();
 }
-```
+````
 
 To compile your CLI, run:
 
 ```bash
 # Build for current platform
+
 deno run --allow-run --allow-write --allow-read build.ts
 
 # Build for all platforms

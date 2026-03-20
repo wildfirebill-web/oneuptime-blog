@@ -46,6 +46,7 @@ ArgoCD Applications for each environment point to different directories on the s
 
 ```yaml
 # Dev application - auto-sync enabled
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

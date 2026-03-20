@@ -22,6 +22,7 @@ Create the project structure:
 
 ```bash
 # Create project directories
+
 mkdir -p julia-docker-demo/src
 cd julia-docker-demo
 ```

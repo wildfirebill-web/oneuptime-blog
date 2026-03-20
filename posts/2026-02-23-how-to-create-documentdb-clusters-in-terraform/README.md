@@ -20,6 +20,7 @@ A cluster has one primary instance that handles read and write operations, and u
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

@@ -22,6 +22,7 @@ The deadline should be longer than your longest expected processing time, with s
 
 ```bash
 # Set the acknowledgment deadline to 120 seconds
+
 # This gives slow message processing enough time to complete
 gcloud pubsub subscriptions create my-subscription \
   --topic=my-topic \

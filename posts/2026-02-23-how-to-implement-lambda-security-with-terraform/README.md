@@ -18,6 +18,7 @@ The single most important Lambda security control is the execution role. Every L
 
 ```hcl
 # Execution role for the Lambda function
+
 resource "aws_iam_role" "lambda" {
   name = "order-processor-lambda-role"
 

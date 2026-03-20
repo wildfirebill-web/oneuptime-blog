@@ -29,6 +29,7 @@ Cilium requires specific kernel versions for different feature sets.
 
 ```bash
 # Check kernel version on each node
+
 kubectl get nodes -o jsonpath=\
 '{range .items[*]}{.metadata.name}: {.status.nodeInfo.kernelVersion}{"\n"}{end}'
 

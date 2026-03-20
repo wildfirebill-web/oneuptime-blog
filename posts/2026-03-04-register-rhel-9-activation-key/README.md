@@ -45,6 +45,7 @@ To register with an activation key, you also need your organization ID. Find it 
 
 ```bash
 # Display the organization ID from an already registered system
+
 sudo subscription-manager identity | grep "org ID"
 ```
 

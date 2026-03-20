@@ -22,6 +22,7 @@ The `%s` placeholder in the validation command gets replaced with the path to th
 
 ```yaml
 # Validate a generated config file before deploying it
+
 - name: Deploy nginx configuration
   ansible.builtin.template:
     src: nginx.conf.j2

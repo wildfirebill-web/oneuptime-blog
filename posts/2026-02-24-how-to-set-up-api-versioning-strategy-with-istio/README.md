@@ -444,6 +444,7 @@ These headers follow the HTTP Deprecation and Sunset standards, letting API cons
 
 ```bash
 # Test v1
+
 curl -s https://api.example.com/api/v1/users | head -20
 
 # Test v2

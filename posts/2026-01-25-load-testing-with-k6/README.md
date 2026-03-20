@@ -20,6 +20,7 @@ On macOS with Homebrew:
 
 ```bash
 # Install k6 using Homebrew
+
 brew install k6
 ```
 

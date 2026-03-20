@@ -14,6 +14,7 @@ Here is how to instrument a CSV/JSON import pipeline that processes tenant data:
 
 ```python
 # data_import.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import csv

@@ -24,6 +24,7 @@ The simplest caching approach is a shared PVC that build pods mount to access ca
 
 ```yaml
 # build-cache-pvc.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

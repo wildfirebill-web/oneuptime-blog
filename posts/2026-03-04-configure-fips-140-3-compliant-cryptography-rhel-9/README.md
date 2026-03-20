@@ -32,6 +32,7 @@ flowchart LR
 
 ```bash
 # Check the OpenSSL FIPS module version
+
 openssl version -a | head -5
 
 # Check the FIPS module status

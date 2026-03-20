@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Containers, Organization, DevOps
+Tags: Portainer, Docker, Containers, Organizations, DevOps
 
 Description: Learn how to add and use Docker container labels in Portainer for organization, service discovery, and integration with tools like Traefik and Prometheus.
 
@@ -21,8 +21,9 @@ Docker labels are key-value metadata attached to containers, images, volumes, an
 3. Click **+ add label** for each label.
 4. Enter the **Name** (key) and **Value**.
 
-```
+```text
 # Organization labels
+
 Name:   com.example.environment
 Value:  production
 
@@ -40,7 +41,7 @@ Value:  john.doe@example.com
 
 Docker recommends using reverse-DNS notation for label keys:
 
-```
+```text
 # Reverse DNS format (recommended)
 com.example.environment=production
 com.example.project=myapp
@@ -67,7 +68,7 @@ services:
     labels:
       # Enable Traefik for this container
       - "traefik.enable=true"
-      # Define the router — matches requests to example.com
+      # Define the router - matches requests to example.com
       - "traefik.http.routers.web.rule=Host(`example.com`)"
       # Use the HTTPS entrypoint
       - "traefik.http.routers.web.entrypoints=websecure"

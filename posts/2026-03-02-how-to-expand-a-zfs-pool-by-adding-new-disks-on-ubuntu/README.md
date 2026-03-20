@@ -50,6 +50,7 @@ errors: No known data errors
 
 ```bash
 # Check current capacity
+
 sudo zpool list tank
 ```
 

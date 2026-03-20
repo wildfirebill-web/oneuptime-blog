@@ -16,6 +16,7 @@ The most direct way to see what modules are installed is to look at the module m
 
 ```bash
 # After running terraform init, check the modules manifest
+
 cat .terraform/modules/modules.json | python3 -m json.tool
 ```
 

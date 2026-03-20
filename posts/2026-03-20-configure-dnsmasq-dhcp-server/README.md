@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, dnsmasq, Linux, DNS, sysadmin, Lightweight
+Tags: DHCP, Dnsmasq, Linux, DNS, Sysadmin, Lightweight
 
 Description: dnsmasq is a lightweight DNS forwarder and DHCP server ideal for home networks, labs, and small deployments, configured through a single file that handles both DNS and DHCP from the same process.
 
@@ -10,6 +10,7 @@ Description: dnsmasq is a lightweight DNS forwarder and DHCP server ideal for ho
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install dnsmasq
 
 # RHEL/Fedora
@@ -18,7 +19,7 @@ sudo dnf install dnsmasq
 
 ## Complete Configuration
 
-```
+```nginx
 # /etc/dnsmasq.conf
 
 # =============================================
@@ -87,7 +88,7 @@ dig @192.168.1.1 server1.home.local
 
 ## Multiple Interfaces / VLANs
 
-```
+```text
 # dnsmasq.conf for multi-VLAN
 interface=eth0.10
 interface=eth0.20
@@ -111,7 +112,7 @@ dhcp-option=tag:eth0.20,option:router,10.0.20.1
 
 ## Key Takeaways
 
-- dnsmasq combines DHCP and DNS in one lightweight daemon — ideal for small networks and labs.
+- dnsmasq combines DHCP and DNS in one lightweight daemon - ideal for small networks and labs.
 - `dhcp-host=MAC,IP,hostname,lease` handles reservations in a single concise line.
 - Use `log-dhcp` to log all DHCP events to a file for debugging.
-- `bogus-priv` and `domain-needed` are important security settings — always include them.
+- `bogus-priv` and `domain-needed` are important security settings - always include them.

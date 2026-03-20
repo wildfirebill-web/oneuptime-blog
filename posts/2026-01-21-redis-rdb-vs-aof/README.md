@@ -42,6 +42,7 @@ RDB creates point-in-time snapshots of your dataset at specified intervals.
 
 ```bash
 # Save every 15 minutes if at least 1 key changed
+
 save 900 1
 
 # Save every 5 minutes if at least 10 keys changed

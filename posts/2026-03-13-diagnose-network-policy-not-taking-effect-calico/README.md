@@ -53,6 +53,7 @@ kubectl exec $NODE_POD -n kube-system -- wget -qO- http://localhost:9099/readine
 ```bash
 ssh $POD_NODE "sudo iptables -L | grep -A 5 cali-pi-"
 # Look for rules matching your policy name
+
 ```
 
 **Step 4: Check policy labels and selectors**

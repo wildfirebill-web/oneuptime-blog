@@ -20,6 +20,7 @@ Learn how to use Terramate to orchestrate OpenTofu stacks with change detection 
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

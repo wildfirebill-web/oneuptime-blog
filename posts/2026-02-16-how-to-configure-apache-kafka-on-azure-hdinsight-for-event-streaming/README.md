@@ -18,6 +18,7 @@ The first step is provisioning the cluster. Kafka on HDInsight uses managed disk
 
 ```bash
 # Create an HDInsight Kafka cluster
+
 # Uses 4 worker nodes with managed disks for broker storage
 az hdinsight create \
   --name my-kafka-cluster \

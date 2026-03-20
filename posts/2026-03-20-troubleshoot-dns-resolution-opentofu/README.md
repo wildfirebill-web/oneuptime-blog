@@ -12,7 +12,7 @@ DNS issues in OpenTofu-managed infrastructure fall into two distinct categories:
 
 ## Error: Route53 Record Already Exists
 
-```
+```text
 Error: [ERR]: Error building changeset: InvalidChangeBatch:
 [Tried to create resource record set [name='api.example.com.', type='A']
 but it already exists]
@@ -20,6 +20,7 @@ but it already exists]
 
 ```bash
 # Check if the record exists in Route53
+
 aws route53 list-resource-record-sets \
   --hosted-zone-id Z1234567890ABCDE \
   --query "ResourceRecordSets[?Name=='api.example.com.']"
@@ -45,7 +46,7 @@ resource "aws_route53_record" "api" {
 
 ## Error: Hosted Zone Not Found
 
-```
+```text
 Error: reading Route53 Hosted Zone: NoSuchHostedZone:
 No hosted zone found with ID: Z1234567890ABCDE
 ```
@@ -56,7 +57,7 @@ aws route53 list-hosted-zones \
   --query "HostedZones[?Name=='example.com.'].[Id,Name,Config.PrivateZone]" \
   --output table
 
-# Note: Zone IDs returned by AWS are /hostedzone/ZXXX — strip the prefix
+# Note: Zone IDs returned by AWS are /hostedzone/ZXXX - strip the prefix
 # OpenTofu expects just ZXXX
 
 # Use data source to look up the zone dynamically
@@ -86,7 +87,7 @@ dig @ns-1234.awsdns-56.org api.example.com
 # Check local resolution (may be cached)
 dig api.example.com
 
-# Check TTL — low TTL means changes propagate faster
+# Check TTL - low TTL means changes propagate faster
 dig api.example.com | grep "TTL"
 
 # Force bypass DNS cache for testing
@@ -129,7 +130,7 @@ resource "aws_route53_zone_association" "secondary" {
 Different DNS responses for internal vs. external clients.
 
 ```hcl
-# Public zone — for external clients
+# Public zone - for external clients
 resource "aws_route53_zone" "public" {
   name = "api.example.com"
 }
@@ -142,7 +143,7 @@ resource "aws_route53_record" "public_api" {
   records = [aws_eip.nat.public_ip]  # public IP
 }
 
-# Private zone — for internal clients in VPC
+# Private zone - for internal clients in VPC
 resource "aws_route53_zone" "private" {
   name = "api.example.com"
   vpc {

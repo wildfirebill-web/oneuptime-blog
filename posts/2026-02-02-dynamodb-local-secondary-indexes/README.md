@@ -83,6 +83,7 @@ LSIs must be defined at table creation time. Here is how to create a table with 
 
 ```bash
 # Create a DynamoDB table with two Local Secondary Indexes
+
 # The table stores orders with userId as partition key and orderId as sort key
 # LSIs allow querying by createdAt or status within the same user partition
 

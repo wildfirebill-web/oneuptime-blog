@@ -75,6 +75,7 @@ Crossplane controllers continuously reconcile the desired state with actual stat
 
 ```yaml
 # Crossplane periodically checks and corrects drift
+
 # No manual "tofu apply" needed to restore desired state
 spec:
   forProvider:
@@ -188,7 +189,7 @@ resource "helm_release" "crossplane" {
 
 - Choose Crossplane if platform self-service and continuous reconciliation are primary requirements.
 - Choose OpenTofu if multi-cloud coverage, simplicity, and explicit change preview matter most.
-- Avoid running both for the same resources — this creates conflicting control loops.
+- Avoid running both for the same resources - this creates conflicting control loops.
 - Evaluate your team's Kubernetes expertise before committing to Crossplane.
 
 ## Conclusion

@@ -22,6 +22,7 @@ Create a HelmRepository resource that points to the Bitnami OCI registry:
 
 ```yaml
 # HelmRepository for Bitnami charts via OCI registry on Docker Hub
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

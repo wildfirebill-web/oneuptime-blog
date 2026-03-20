@@ -38,6 +38,7 @@ calicoctl get nodes -o yaml > backup-nodes.yaml
 
 ```bash
 # Check CNI binaries exist on the affected node
+
 kubectl debug node/<affected-node> -it --image=busybox -- ls -la /host/opt/cni/bin/calico*
 
 # Check CNI configuration

@@ -16,13 +16,14 @@ For a CPU-only deployment:
 
 ```yaml
 # ollama-stack.yml
+
 version: "3.8"
 
 services:
   ollama:
     image: ollama/ollama:0.1.27
     volumes:
-      # Persist downloaded models — models can be several GB
+      # Persist downloaded models - models can be several GB
       - ollama-data:/root/.ollama
     ports:
       - "11434:11434"    # Ollama REST API
@@ -86,7 +87,7 @@ curl http://localhost:11434/api/tags
 Ollama provides an OpenAI-compatible chat completions API:
 
 ```python
-# ollama_chat.py — use Ollama's OpenAI-compatible API
+# ollama_chat.py - use Ollama's OpenAI-compatible API
 from openai import OpenAI
 
 # Point the OpenAI client at your local Ollama instance
@@ -110,7 +111,7 @@ print(response.choices[0].message.content)
 For streaming responses:
 
 ```python
-# Streaming inference — useful for interactive UIs
+# Streaming inference - useful for interactive UIs
 response = client.chat.completions.create(
     model="llama3",
     messages=[{"role": "user", "content": "Write a haiku about containers."}],

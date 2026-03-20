@@ -26,6 +26,7 @@ You should create machine images regularly for any instance you care about. Here
 
 ```bash
 # Create a machine image from a running instance
+
 gcloud compute machine-images create my-vm-backup-2026-02-17 \
   --source-instance=my-vm \
   --source-instance-zone=us-central1-a \

@@ -1186,6 +1186,7 @@ Regularly analyze your bundle to identify optimization opportunities:
 
 ```bash
 # Using webpack-bundle-analyzer
+
 npm install --save-dev webpack-bundle-analyzer
 
 # Add to webpack config

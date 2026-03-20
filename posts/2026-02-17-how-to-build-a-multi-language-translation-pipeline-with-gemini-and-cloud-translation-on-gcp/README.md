@@ -34,6 +34,7 @@ graph TB
 
 ```bash
 # Enable the Translation API
+
 gcloud services enable translate.googleapis.com
 
 # Create a glossary for domain-specific terms

@@ -32,6 +32,7 @@ Deploy two versions with separate services:
 
 ```yaml
 # Production version - serves all users
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -14,6 +14,7 @@ ProFTPD is a feature-rich FTP server with an Apache-like configuration syntax. I
 
 ```bash
 # ProFTPD is available from EPEL
+
 sudo dnf install -y epel-release
 sudo dnf install -y proftpd proftpd-utils
 ```

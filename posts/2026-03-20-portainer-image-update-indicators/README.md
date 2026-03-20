@@ -1,4 +1,4 @@
-# How to Identify Image Update Indicators in Portainer
+# How to Identify Image Update Indicators in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ To manually check for updates:
 
 ```bash
 # Docker CLI: check if a new image digest is available
+
 # Compare local digest vs. registry digest
 
 # Get local image digest:
@@ -115,7 +116,7 @@ services:
       - WATCHTOWER_DEBUG=false
 ```
 
-With `WATCHTOWER_MONITOR_ONLY=true`, Watchtower only notifies about updates without applying them — safer for production.
+With `WATCHTOWER_MONITOR_ONLY=true`, Watchtower only notifies about updates without applying them - safer for production.
 
 ## Step 6: Portainer's Automatic Update for Stacks
 
@@ -202,11 +203,11 @@ done
 
 ## Best Practices for Image Updates
 
-- **Don't auto-update production containers** without testing — use `WATCHTOWER_MONITOR_ONLY=true`.
+- **Don't auto-update production containers** without testing - use `WATCHTOWER_MONITOR_ONLY=true`.
 - **Update on a schedule** (e.g., nightly in staging, weekly in production).
-- **Use semantic versioning** — pin to `v2.1` (gets patch updates) not `latest` (gets breaking changes).
+- **Use semantic versioning** - pin to `v2.1` (gets patch updates) not `latest` (gets breaking changes).
 - **Test updates in staging** before applying to production.
-- **Keep a rollback plan** — know the previous image digest before updating.
+- **Keep a rollback plan** - know the previous image digest before updating.
 
 ## Conclusion
 

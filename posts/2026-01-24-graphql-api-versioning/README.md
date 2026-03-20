@@ -38,6 +38,7 @@ Add new fields without removing existing ones. This is the safest approach.
 
 ```graphql
 # Original schema
+
 type User {
   id: ID!
   name: String!

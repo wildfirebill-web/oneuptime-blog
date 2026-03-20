@@ -256,6 +256,7 @@ Check the Envoy stats to confirm faults are being injected:
 
 ```bash
 # Check delay injection stats
+
 kubectl exec -it <client-pod> -c istio-proxy -- \
   pilot-agent request GET stats | grep "fault"
 ```

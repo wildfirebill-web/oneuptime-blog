@@ -20,6 +20,7 @@ The simplest storage setup uses Prometheus's built-in local storage. Configure i
 
 ```bash
 # Start Prometheus with custom storage settings
+
 prometheus \
   --config.file=/etc/prometheus/prometheus.yml \
   --storage.tsdb.path=/var/lib/prometheus/data \

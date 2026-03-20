@@ -77,6 +77,7 @@ You should see endpoints from both clusters. If you only see local endpoints:
 
 ```bash
 # Check mesh configuration
+
 istioctl proxy-config bootstrap deployment/sleep -n sample --context="${CTX_CLUSTER1}" -o json | grep meshId
 ```
 

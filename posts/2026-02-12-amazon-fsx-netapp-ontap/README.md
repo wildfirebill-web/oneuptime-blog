@@ -48,6 +48,7 @@ First, create the file system:
 
 ```bash
 # Create FSx for NetApp ONTAP file system
+
 aws fsx create-file-system \
   --file-system-type ONTAP \
   --storage-capacity 1024 \

@@ -74,6 +74,7 @@ Verify your zone is currently signed with DNSSEC and using NSEC:
 
 ```bash
 # Check current DNSSEC status
+
 dig @your-nameserver example.com DNSKEY +dnssec
 
 # Verify NSEC records exist

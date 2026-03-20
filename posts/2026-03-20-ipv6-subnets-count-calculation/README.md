@@ -12,7 +12,7 @@ Calculating the number of IPv6 subnets within an allocation involves simple powe
 
 ## The Formula
 
-```
+```text
 Number of /Y subnets within /X = 2^(Y - X)
   where Y > X (the desired subnet must be smaller)
 
@@ -34,6 +34,7 @@ def subnet_count(prefix_len, target_len):
     return 2 ** (target_len - prefix_len)
 
 # Common combinations
+
 pairs = [
     (32, 48, "ISP /32 → org /48"),
     (32, 56, "ISP /32 → residential /56"),
@@ -56,7 +57,7 @@ for prefix, target, desc in pairs:
 ```
 
 Output:
-```
+```text
  From →   To            Count  Description
 ------------------------------------------------------------
 /32    → /48           65,536  ISP /32 → org /48
@@ -104,24 +105,24 @@ subnet_analysis("2001:db8::/32", 48)   # 65,536 /48s from /32
 ## Practical Questions and Answers
 
 **Q: I have a /48. How many /64 subnets can I create?**
-```
+```text
 2^(64-48) = 2^16 = 65,536 subnets
 ```
 
 **Q: My ISP gave me a /56. How many VLANs can I have?**
-```
+```text
 2^(64-56) = 2^8 = 256 VLANs (one /64 per VLAN)
 ```
 
 **Q: I need 1,000 subnets. What allocation size do I need?**
-```
+```text
 Need 2^N ≥ 1000, so N ≥ 10 (2^10 = 1024)
 From a /64 subnet: need at most a /(64-10) = /54 prefix minimum
 Standard: get a /48 (65,536 subnets) for comfortable headroom
 ```
 
 **Q: How many /56 allocations can an ISP give from a /32?**
-```
+```text
 2^(56-32) = 2^24 = 16,777,216 residential customers
 ```
 
@@ -140,4 +141,4 @@ Standard: get a /48 (65,536 subnets) for comfortable headroom
 
 ## Conclusion
 
-IPv6 subnet counting is purely powers of two: `2^(target - prefix)`. There are no subnet waste concerns like in IPv4 (no need to subtract 2 for network and broadcast). Every address in a /64 is potentially usable. This simplicity means IPv6 address planning focuses on structural decisions rather than tedious arithmetic — use the formula, use a calculator, and focus on designing a logical, scalable hierarchy.
+IPv6 subnet counting is purely powers of two: `2^(target - prefix)`. There are no subnet waste concerns like in IPv4 (no need to subtract 2 for network and broadcast). Every address in a /64 is potentially usable. This simplicity means IPv6 address planning focuses on structural decisions rather than tedious arithmetic - use the formula, use a calculator, and focus on designing a logical, scalable hierarchy.

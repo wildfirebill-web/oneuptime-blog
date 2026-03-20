@@ -24,6 +24,7 @@ Maintain a standard GlobalNetworkPolicy that allows external API access and appl
 
 ```yaml
 # standard-external-api-egress.yaml
+
 # Standard egress policy for namespaces that need external API access
 # Apply this as a building block before adding default-deny policies
 apiVersion: projectcalico.org/v3

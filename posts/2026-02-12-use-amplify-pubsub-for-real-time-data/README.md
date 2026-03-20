@@ -37,6 +37,7 @@ sequenceDiagram
 
 ```bash
 # Install Amplify PubSub and related packages
+
 npm install aws-amplify @aws-amplify/pubsub
 ```
 

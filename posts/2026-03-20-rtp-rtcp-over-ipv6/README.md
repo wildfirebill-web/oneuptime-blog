@@ -12,7 +12,7 @@ RTP (RFC 3550) carries audio/video media in VoIP calls. Configuring RTP/RTCP ove
 
 ## RTP over IPv6 Architecture
 
-```
+```text
 RTP/RTCP IPv6 Flow:
 Caller (IPv6)                    Callee (IPv6)
 2001:db8::caller                 2001:db8::callee
@@ -96,6 +96,7 @@ if __name__ == '__main__':
 
 ```bash
 # Install libsrtp for SRTP testing
+
 sudo apt install libsrtp2-dev srtp-utils -y
 
 # Test SRTP sender over IPv6

@@ -127,6 +127,7 @@ Add Kubernetes labels and taints to your node template:
 
 ```yaml
 # Example labels
+
 node-role.kubernetes.io/worker: "true"
 topology.kubernetes.io/zone: us-east-1a
 node.kubernetes.io/instance-type: t3.large

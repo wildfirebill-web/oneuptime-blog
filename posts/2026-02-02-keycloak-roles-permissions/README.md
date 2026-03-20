@@ -54,6 +54,7 @@ Every Keycloak deployment starts with realm configuration. Each realm operates i
 
 ```bash
 # Use the Keycloak Admin CLI to create a realm
+
 # First, authenticate as the admin user
 /opt/keycloak/bin/kcadm.sh config credentials \
     --server http://localhost:8080 \

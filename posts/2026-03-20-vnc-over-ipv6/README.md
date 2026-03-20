@@ -16,6 +16,7 @@ TigerVNC is the most widely used VNC server on Linux:
 
 ```bash
 # Install on Ubuntu/Debian
+
 sudo apt update && sudo apt install -y tigervnc-standalone-server tigervnc-common
 
 # Install on RHEL/Fedora

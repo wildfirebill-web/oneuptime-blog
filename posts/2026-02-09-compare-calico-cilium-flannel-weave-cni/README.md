@@ -28,6 +28,7 @@ To run meaningful performance tests, you need a consistent testing environment. 
 
 ```bash
 # Create a kind cluster for testing (repeat for each CNI)
+
 cat <<EOF > kind-config.yaml
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
@@ -164,7 +165,7 @@ Typical latency results (mean values in microseconds):
 
 Again, eBPF-based solutions (Cilium and Calico in eBPF mode) show significantly lower latency due to reduced packet processing overhead.
 
-## Resource Usage Comparison
+Resource Usage Comparison
 
 CNI plugin resource consumption affects your cluster's capacity. Monitor CPU and memory usage:
 

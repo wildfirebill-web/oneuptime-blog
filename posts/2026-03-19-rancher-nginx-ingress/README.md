@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Ingress, NGINX
+Tags: Rancher, Kubernetes, Ingress, Nginx
 
 Description: Learn how to deploy and configure the NGINX Ingress Controller in a Rancher-managed Kubernetes cluster.
 

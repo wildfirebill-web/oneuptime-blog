@@ -112,6 +112,7 @@ Add Kubernetes labels to all nodes in a pool:
 
 ```yaml
 # Labels for worker-general pool
+
 node-pool: worker-general
 workload-type: general
 cost-center: engineering

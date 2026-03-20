@@ -36,6 +36,7 @@ graph TD
 
 ```bash
 # Create test project
+
 dotnet new xunit -n MyApp.IntegrationTests
 
 # Add required packages

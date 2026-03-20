@@ -283,6 +283,7 @@ The quality check Lambda validates transformed data before loading:
 
 ```python
 # Data quality check that validates row counts, null ratios, and freshness
+
 import boto3
 
 def handler(event, context):

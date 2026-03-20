@@ -20,7 +20,7 @@ Terratest is a Go testing library from Gruntwork that allows you to write automa
 
 Create a test directory:
 
-```
+```text
 modules/
   networking/
     main.tf

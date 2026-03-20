@@ -12,7 +12,7 @@ IPv6 ND Inspection (also called IPv6 Snooping on Cisco or ND Security on Juniper
 
 ## What ND Inspection Examines
 
-```
+```text
 NDP Messages Inspected by ND Inspection:
 
 Router Solicitation (Type 133):
@@ -44,7 +44,7 @@ Redirect (Type 137):
 
 On Cisco, ND Inspection is enabled through the IPv6 Snooping policy.
 
-```
+```text
 ! Create IPv6 Snooping policy (ND Inspection)
 ipv6 snooping policy ND_INSPECT
  security-level guard       ← Validate and drop invalid NDP
@@ -73,7 +73,7 @@ show ipv6 neighbor binding
 
 ## Binding Table Lifecycle
 
-```
+```text
 Binding Table State Machine:
 
 State: INCOMPLETE
@@ -108,7 +108,7 @@ Binding Table Entry Contains:
 
 ND Inspection can detect and drop spoofed Neighbor Advertisements.
 
-```
+```text
 NA Spoofing Attack:
 
 Attacker sends unsolicited NA:
@@ -130,7 +130,7 @@ Configuration to enable NA validation:
 
 ## ND Inspection Statistics and Verification
 
-```
+```text
 ! Show binding table
 show ipv6 neighbor binding
 
@@ -160,7 +160,7 @@ show ipv6 neighbor binding vlan 10
 
 Limiting the number of IPv6 addresses per port prevents ND exhaustion attacks.
 
-```
+```text
 ! Limit to 10 IPv6 addresses per port (prevents ND table exhaustion)
 ipv6 snooping policy STRICT_INSPECT
  security-level guard
@@ -180,8 +180,9 @@ interface range GigabitEthernet1/0/1 - 23
 
 On Juniper EX switches, ND Inspection is called ND Security.
 
-```
+```text
 # Enable ND security on VLAN (enables inspection of NDP messages)
+
 set vlans v10 forwarding-options nd-security
 
 # Mark trusted port (uplink/router port)

@@ -33,6 +33,7 @@ Start by checking the Ingress resource itself:
 
 ```bash
 # Get the Ingress status and associated IP address
+
 kubectl get ingress your-ingress -n your-namespace
 kubectl describe ingress your-ingress -n your-namespace
 ```

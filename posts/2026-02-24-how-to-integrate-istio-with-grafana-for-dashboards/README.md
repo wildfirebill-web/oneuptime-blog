@@ -128,6 +128,7 @@ The Istio dashboards are available as JSON files in the Istio repository. Downlo
 
 ```bash
 # Mesh dashboard
+
 curl -L https://raw.githubusercontent.com/istio/istio/release-1.20/manifests/addons/dashboards/istio-mesh-dashboard.json -o mesh-dashboard.json
 
 # Service dashboard

@@ -1,10 +1,10 @@
-# How to Fix "Origin Invalid" Errors After Upgrading Portainer
+# How to Fix 'Origin Invalid' Errors After Upgrading Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Troubleshooting, CSRF, Origin, Security, Upgrade, Reverse Proxy
 
-Description: Learn how to fix "Origin Invalid" or "CSRF check failed" errors that appear after upgrading Portainer, caused by stricter origin validation introduced in newer versions.
+Description: Learn how to fix 'Origin Invalid' or 'CSRF check failed' errors that appear after upgrading Portainer, caused by stricter origin validation introduced in newer versions.
 
 ---
 
@@ -12,12 +12,13 @@ Newer versions of Portainer enforce stricter CSRF origin validation. After upgra
 
 ## Why This Happens After Upgrade
 
-Portainer added cross-origin protection in its API. The server compares the `Origin` header in requests against the expected server URL. If they don't match — typically because a proxy rewrites URLs or because you're accessing Portainer via IP when it expects a hostname — all POST requests fail.
+Portainer added cross-origin protection in its API. The server compares the `Origin` header in requests against the expected server URL. If they don't match - typically because a proxy rewrites URLs or because you're accessing Portainer via IP when it expects a hostname - all POST requests fail.
 
 ## Step 1: Identify the Mismatch
 
 ```bash
 # Check what origin Portainer is receiving
+
 docker logs portainer 2>&1 | grep -i "origin\|csrf\|referer" | tail -20
 
 # You'll see something like:

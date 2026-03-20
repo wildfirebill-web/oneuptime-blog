@@ -238,6 +238,7 @@ Configure exemplar collection in Python:
 
 ```python
 # instrumentation.py
+
 from opentelemetry import metrics, trace
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

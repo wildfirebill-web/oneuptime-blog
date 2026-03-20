@@ -44,6 +44,7 @@ Store your HCP Terraform token as a GitLab CI/CD variable:
 
 ```hcl
 # main.tf
+
 terraform {
   cloud {
     organization = "your-org"
@@ -135,7 +136,7 @@ apply:
 
 Post the plan output as a comment on the merge request:
 
-```yaml
+````yaml
 # .gitlab-ci.yml - Advanced version
 image:
   name: hashicorp/terraform:1.7.0
@@ -195,9 +196,9 @@ plan:
         # Create the comment
         COMMENT_BODY=$(jq -n --arg body "### Terraform Plan Output
 
-      \`\`\`
+      ```
       $PLAN_OUTPUT
-      \`\`\`
+      ```
 
       *Pipeline: $CI_PIPELINE_URL*" '{body: $body}')
 
@@ -234,7 +235,7 @@ apply:
   environment:
     name: production
     url: https://app.terraform.io/app/your-org/workspaces/app-production
-```
+````
 
 ## Multi-Environment Pipeline
 
@@ -392,7 +393,7 @@ apply-production:
     TF_API_TOKEN: $TF_API_TOKEN_PRODUCTION
 ```
 
-### Resource Groups
+Resource Groups
 
 Prevent concurrent pipeline runs from conflicting:
 

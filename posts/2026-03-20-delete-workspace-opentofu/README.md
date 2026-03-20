@@ -8,7 +8,7 @@ Description: Learn how to safely delete an OpenTofu workspace after destroying i
 
 ## Introduction
 
-When a workspace is no longer needed — for example, when a feature branch environment is decommissioned — you should delete it to keep your workspace list clean and avoid confusion. Deleting a workspace requires first destroying any managed infrastructure, then removing the workspace.
+When a workspace is no longer needed - for example, when a feature branch environment is decommissioned - you should delete it to keep your workspace list clean and avoid confusion. Deleting a workspace requires first destroying any managed infrastructure, then removing the workspace.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Before deleting a workspace:
 
 ```bash
 # Switch to the workspace you want to delete
+
 tofu workspace select dev-feature-x
 
 # Verify what's managed in this workspace
@@ -73,7 +74,7 @@ tofu workspace delete dev-feature-x
 ### Force Delete (Use with Caution)
 
 ```bash
-# Force delete — leaves infrastructure in place (orphaned resources)
+# Force delete - leaves infrastructure in place (orphaned resources)
 tofu workspace delete -force dev-feature-x
 
 # CAUTION: Resources managed by this workspace are now unmanaged
@@ -166,4 +167,4 @@ fi
 
 ## Conclusion
 
-Deleting an OpenTofu workspace is a two-step process: first destroy the infrastructure, then delete the workspace. The `default` workspace cannot be deleted. Use force deletion only when you consciously want to abandon resources — always prefer proper `tofu destroy` followed by clean workspace deletion. Regular workspace cleanup keeps your environment list manageable and prevents confusion.
+Deleting an OpenTofu workspace is a two-step process: first destroy the infrastructure, then delete the workspace. The `default` workspace cannot be deleted. Use force deletion only when you consciously want to abandon resources - always prefer proper `tofu destroy` followed by clean workspace deletion. Regular workspace cleanup keeps your environment list manageable and prevents confusion.

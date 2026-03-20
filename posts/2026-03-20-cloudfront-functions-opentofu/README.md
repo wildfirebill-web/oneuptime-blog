@@ -137,4 +137,4 @@ tofu apply tfplan
 
 ## Summary
 
-CloudFront Functions provide sub-millisecond edge logic for URL rewriting, header injection, and simple request manipulation. OpenTofu manages function code, publishing, and distribution associations — keeping your edge logic version controlled and consistently deployed.
+CloudFront Functions provide sub-millisecond edge logic for URL rewriting, header injection, and simple request manipulation. OpenTofu manages function code, publishing, and distribution associations - keeping your edge logic version controlled and consistently deployed.

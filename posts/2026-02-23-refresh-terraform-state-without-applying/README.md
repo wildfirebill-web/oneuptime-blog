@@ -27,6 +27,7 @@ The `terraform refresh` command was the original way to refresh state:
 
 ```bash
 # Refresh all resources in the state
+
 terraform refresh
 ```
 

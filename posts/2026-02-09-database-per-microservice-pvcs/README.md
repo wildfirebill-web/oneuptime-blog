@@ -32,6 +32,7 @@ Here's a complete StatefulSet for a user service database:
 
 ```yaml
 # user-service-postgres.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

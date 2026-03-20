@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, ARP, Proxy ARP, Iproute2
+Tags: Ubuntu, Networking, ARP, Proxy ARP, iproute2
 
 Description: Configure proxy ARP on Ubuntu to allow a Linux host to answer ARP requests on behalf of other machines, enabling transparent layer-2 bridging and VPN gateway scenarios.
 
@@ -26,6 +26,7 @@ For most routing scenarios, proper routing tables are a better solution than pro
 
 ```bash
 # Check current proxy ARP status on all interfaces
+
 cat /proc/sys/net/ipv4/conf/all/proxy_arp
 
 # 0 = disabled, 1 = enabled

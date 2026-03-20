@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Install the Linkerd CLI
+
 curl --proto '=https' --tlsv1.2 -sSfL https://run.linkerd.io/install | sh
 
 # Add to your PATH

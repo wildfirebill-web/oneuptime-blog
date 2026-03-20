@@ -18,6 +18,7 @@ You need two Terraform providers: the Kubernetes provider for cluster access and
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

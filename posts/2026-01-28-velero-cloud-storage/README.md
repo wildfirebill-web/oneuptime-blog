@@ -56,6 +56,7 @@ First, create an S3 bucket and the necessary IAM resources:
 
 ```bash
 # Set your configuration variables
+
 BUCKET_NAME=velero-backups-prod
 REGION=us-east-1
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)

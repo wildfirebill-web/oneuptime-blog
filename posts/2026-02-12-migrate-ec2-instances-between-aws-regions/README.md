@@ -25,6 +25,7 @@ The foundation of cross-region migration is AMI copy. First, create an AMI from 
 
 ```bash
 # Create an AMI from the source instance (stop it first for consistency)
+
 aws ec2 stop-instances --instance-ids i-0abc123 --region us-east-1
 aws ec2 wait instance-stopped --instance-ids i-0abc123 --region us-east-1
 

@@ -45,6 +45,7 @@ Before creating the MSK cluster, document your current setup:
 
 ```bash
 # List all topics and their configurations
+
 kafka-topics.sh --bootstrap-server your-kafka:9092 --list
 
 # Get detailed topic configuration

@@ -53,6 +53,7 @@ Here is a practical setup for a company with four teams, each owning a namespace
 
 ```yaml
 # Frontend team - can reach API layer
+
 apiVersion: networking.istio.io/v1
 kind: Sidecar
 metadata:

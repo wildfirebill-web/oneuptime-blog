@@ -26,6 +26,7 @@ Calico Tier troubleshooting requires understanding how tier order maps to evalua
 
 ```bash
 # Check tier orders - security must have LOWER order number than default
+
 calicoctl get tiers -o json | python3 -c "
 import json, sys
 data = json.load(sys.stdin)

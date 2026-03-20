@@ -29,6 +29,7 @@ Determine the correct block size based on your node's expected pod density.
 
 ```bash
 # Calculate block sizes:
+
 # /26 = 64 addresses  (default, suitable for up to ~50 pods/node)
 # /25 = 128 addresses (suitable for up to ~110 pods/node)
 # /24 = 256 addresses (suitable for up to ~230 pods/node)

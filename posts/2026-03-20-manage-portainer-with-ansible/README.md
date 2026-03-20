@@ -21,6 +21,7 @@ Ansible is a powerful automation tool that can orchestrate your entire Portainer
 
 ```bash
 # Install required collections
+
 ansible-galaxy collection install community.docker
 ansible-galaxy collection install ansible.builtin
 

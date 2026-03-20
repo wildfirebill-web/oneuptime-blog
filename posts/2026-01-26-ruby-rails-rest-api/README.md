@@ -33,6 +33,7 @@ First, make sure you have Ruby and Rails installed. This guide uses Rails 7.1 wi
 
 ```bash
 # Check your Ruby version
+
 ruby -v
 # Should output something like: ruby 3.2.0
 

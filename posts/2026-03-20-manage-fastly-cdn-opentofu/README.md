@@ -192,4 +192,4 @@ resource "fastly_service_vcl" "app" {
 
 ## Conclusion
 
-Fastly CDN configuration managed with OpenTofu ensures that CDN behavior — caching rules, security headers, backend routing, and VCL snippets — goes through the same review process as application code. The `activate = true` attribute ensures new versions are immediately published after apply, while the Fastly version history provides rollback capability if a configuration change causes issues.
+Fastly CDN configuration managed with OpenTofu ensures that CDN behavior - caching rules, security headers, backend routing, and VCL snippets - goes through the same review process as application code. The `activate = true` attribute ensures new versions are immediately published after apply, while the Fastly version history provides rollback capability if a configuration change causes issues.

@@ -26,6 +26,7 @@ The simplest form of the command creates a tenant with a single namespace.
 
 ```bash
 # Create a tenant named "team-alpha" with its own namespace
+
 flux create tenant team-alpha \
   --with-namespace=team-alpha
 ```

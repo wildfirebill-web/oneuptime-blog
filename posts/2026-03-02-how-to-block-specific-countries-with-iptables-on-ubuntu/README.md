@@ -35,6 +35,7 @@ For this tutorial, we'll use ipdeny.com which provides simple per-country text f
 
 ```bash
 # Create a directory for IP block lists
+
 sudo mkdir -p /etc/iptables/geoip
 
 # Download the aggregated zone for a specific country (CN = China)

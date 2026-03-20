@@ -21,6 +21,7 @@ Prisma is known for its PostgreSQL and MySQL support, but it works with Microsof
 
 ```bash
 # Create a resource group
+
 az group create --name prisma-sql-rg --location eastus
 
 # Create a SQL Server

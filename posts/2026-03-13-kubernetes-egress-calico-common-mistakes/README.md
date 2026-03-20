@@ -50,6 +50,7 @@ Using CIDR-based egress policies for external SaaS APIs breaks silently when tho
 **Diagnosis**:
 ```bash
 # Check if the external API's current IPs match the policy CIDR
+
 kubectl exec test-pod -- nslookup api.stripe.com
 # Compare the resolved IPs against your NetworkPolicy CIDR list
 ```

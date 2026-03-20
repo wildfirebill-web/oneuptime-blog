@@ -18,6 +18,7 @@ Every namespace in Kubernetes has a default service account. When you create a p
 
 ```bash
 # View service accounts in a namespace
+
 kubectl get serviceaccounts -n default
 
 # View the default service account details

@@ -20,6 +20,7 @@ After running `systemctl --user daemon-reload`, verify the unit was generated:
 
 ```bash
 # List generated Quadlet units
+
 ls /run/user/$(id -u)/systemd/generator/
 
 # For rootful containers

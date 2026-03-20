@@ -61,6 +61,7 @@ Your underlying infrastructure must support IPv6:
 
 ```bash
 # Check if your nodes have IPv6 enabled
+
 ip -6 addr show
 
 # Verify IPv6 connectivity

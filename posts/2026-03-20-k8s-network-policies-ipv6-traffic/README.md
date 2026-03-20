@@ -18,6 +18,7 @@ Apply a default-deny policy to restrict all incoming IPv6 traffic to pods in a n
 
 ```yaml
 # default-deny-ingress.yaml - Deny all ingress traffic (covers both IPv4 and IPv6)
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -151,6 +152,6 @@ kubectl logs test-blocked
 
 - **Calico**: Fully supports IPv6 NetworkPolicy, including GlobalNetworkPolicy for cluster-wide rules
 - **Cilium**: Supports IPv6 NetworkPolicy and offers richer L7 policies via CiliumNetworkPolicy
-- **Flannel**: Does **not** support NetworkPolicy — you need a separate policy engine
+- **Flannel**: Does **not** support NetworkPolicy - you need a separate policy engine
 
 Writing explicit NetworkPolicy objects for both IPv4 and IPv6 CIDRs ensures your security posture is complete in dual-stack Kubernetes clusters.

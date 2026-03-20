@@ -22,6 +22,7 @@ Add this to your `ansible.cfg`:
 
 ```ini
 # Enable SSH pipelining to skip module file transfer
+
 [ssh_connection]
 pipelining = True
 ```

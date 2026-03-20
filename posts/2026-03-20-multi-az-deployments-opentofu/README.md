@@ -14,6 +14,7 @@ Multi-AZ deployments spread infrastructure across physically separate datacenter
 
 ```hcl
 # main.tf - Dynamically discover AZs for portability
+
 data "aws_availability_zones" "available" {
   state = "available"
   filter {

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Linux, Performance, sysctl, Network Tuning, Throughput
+Tags: TCP, Linux, Performance, Sysctl, Network Tuning, Throughput
 
 Description: Learn how to tune Linux TCP buffer sizes using sysctl parameters to maximize throughput on high-bandwidth or high-latency network connections.
 
@@ -10,7 +10,7 @@ Description: Learn how to tune Linux TCP buffer sizes using sysctl parameters to
 
 TCP needs buffer space to hold data in flight. The maximum throughput achievable on a TCP connection is:
 
-```
+```text
 Max Throughput = TCP Window Size / Round-Trip Time
 ```
 
@@ -29,6 +29,7 @@ If the buffer is too small, TCP throttles the sender even when bandwidth is avai
 
 ```bash
 # View current settings
+
 sysctl net.core.rmem_max
 sysctl net.core.wmem_max
 sysctl net.ipv4.tcp_rmem

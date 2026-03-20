@@ -61,6 +61,7 @@ helm upgrade cilium cilium/cilium \
 
 ```bash
 # Connect cluster1 to cluster2
+
 cilium clustermesh connect \
   --context cluster1 \
   --destination-context cluster2

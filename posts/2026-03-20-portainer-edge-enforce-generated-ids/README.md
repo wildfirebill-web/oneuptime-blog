@@ -1,4 +1,4 @@
-# How to Enforce Portainer-Generated Edge IDs
+# How to Enforce Portainer-Generated Edge IDs - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -54,6 +54,7 @@ With enforcement enabled, create environments before deploying agents:
 
 ```bash
 # Create edge environment (Portainer generates the Edge ID)
+
 NEW_ENV=$(curl -s -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

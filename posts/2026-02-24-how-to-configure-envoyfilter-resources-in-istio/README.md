@@ -255,6 +255,7 @@ EnvoyFilter problems are notoriously hard to debug. Here is a systematic approac
 
 ```bash
 # Check if the filter was applied
+
 istioctl proxy-config listener deploy/my-service -o json | python3 -m json.tool | grep "my-filter-name"
 
 # Dump the full Envoy config

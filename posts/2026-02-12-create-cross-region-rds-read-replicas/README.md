@@ -92,6 +92,7 @@ This script migrates an RDS instance from the default key to a custom KMS key.
 
 ```bash
 # Step 1: Create a custom KMS key
+
 KMS_KEY=$(aws kms create-key \
   --description "RDS encryption key" \
   --query 'KeyMetadata.KeyId' --output text)

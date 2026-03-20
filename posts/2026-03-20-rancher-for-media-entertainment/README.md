@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Media, Entertainment, Video Processing, CDN, Kubernetes, Streaming
 
-Description: Configure Rancher for media and entertainment workloads including video transcoding, content delivery, live streaming infrastructure, and high-throughput storage systems for broadcast and OTT platforms.
+Description: Configure Rancher for media and entertainment workloads including video transcoding, content delivery, live streaming infrastructure, and high-throughput storage systems for broadcast and OTT...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Media and entertainment Kubernetes workloads are characterized by high throughpu
 
 ## Media Platform Architecture
 
-```
+```text
 ┌──────────────────────────────────────────────────┐
 │  Rancher Management                               │
 └──────────────────────────┬───────────────────────┘
@@ -31,6 +31,7 @@ Media and entertainment Kubernetes workloads are characterized by high throughpu
 
 ```yaml
 # NVIDIA GPU operator for transcoding nodes
+
 helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
 helm install gpu-operator nvidia/gpu-operator \
   --namespace gpu-operator \

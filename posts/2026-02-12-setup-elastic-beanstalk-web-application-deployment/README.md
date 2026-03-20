@@ -40,6 +40,7 @@ The EB CLI makes working with Beanstalk much easier than using the regular AWS C
 
 ```bash
 # Install the EB CLI via pip
+
 pip3 install awsebcli
 
 # Verify the installation

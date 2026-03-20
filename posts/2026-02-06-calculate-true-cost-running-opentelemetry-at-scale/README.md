@@ -45,6 +45,7 @@ Enable the Collector's built-in telemetry endpoint and query the key throughput 
 
 ```yaml
 # otel-collector-config.yaml
+
 # Enable the Collector's internal metrics endpoint for cost measurement
 service:
   telemetry:

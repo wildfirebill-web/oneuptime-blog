@@ -40,6 +40,7 @@ Maintain two identical environments, switching traffic between them.
 
 ```python
 # deployment/blue_green.py
+
 from dataclasses import dataclass
 from typing import Optional, Dict, Any
 from enum import Enum

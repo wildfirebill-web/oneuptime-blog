@@ -218,6 +218,7 @@ Test your HTTPS gateway with curl:
 export GATEWAY_URL=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Test HTTPS (use -k for self-signed certs)
+
 curl -v -k --resolve "app.example.com:443:$GATEWAY_URL" \
   "https://app.example.com/"
 

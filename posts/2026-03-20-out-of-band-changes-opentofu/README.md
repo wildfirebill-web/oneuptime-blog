@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Out-of-Band Changes, Drift, State Management, Infrastructure as Code, Governance
 
-Description: Learn how to detect, evaluate, and respond to out-of-band infrastructure changes — modifications made outside OpenTofu — while maintaining a consistent managed state.
+Description: Learn how to detect, evaluate, and respond to out-of-band infrastructure changes - modifications made outside OpenTofu - while maintaining a consistent managed state.
 
 ## Introduction
 
-Out-of-band changes are modifications to cloud resources made outside OpenTofu: via the cloud console, CLI, or other automation tools. While the goal is to prevent them, they happen in practice — during incidents, through legacy scripts, or unauthorized access. This guide covers how to handle them systematically.
+Out-of-band changes are modifications to cloud resources made outside OpenTofu: via the cloud console, CLI, or other automation tools. While the goal is to prevent them, they happen in practice - during incidents, through legacy scripts, or unauthorized access. This guide covers how to handle them systematically.
 
 ## Detecting Out-of-Band Changes
 
 ```bash
 # Detect changes in the current environment
+
 tofu plan -refresh-only -no-color 2>&1 | grep -A 5 "will be updated"
 
 # The refresh-only plan shows exactly what changed externally
@@ -24,7 +25,7 @@ tofu plan -refresh-only -no-color 2>&1 | grep -A 5 "will be updated"
 
 Before deciding how to respond, classify the change:
 
-```
+```hcl
 Category 1: Authorized emergency change
   - DB scaled up during incident, planned to update config
   - Action: Accept with refresh-only, update config
@@ -69,14 +70,14 @@ resource "aws_autoscaling_group" "web" {
   desired_capacity = 4
 
   lifecycle {
-    # ASG manages desired_capacity — don't override it
+    # ASG manages desired_capacity - don't override it
     ignore_changes = [desired_capacity, tag]
   }
 }
 
 resource "aws_db_instance" "main" {
   lifecycle {
-    # Rotation tooling updates this — don't track it
+    # Rotation tooling updates this - don't track it
     ignore_changes = [password, snapshot_identifier]
   }
 }
@@ -123,4 +124,4 @@ aws cloudtrail lookup-events \
 
 ## Conclusion
 
-Out-of-band changes are inevitable — the goal is to detect them quickly, categorize accurately, and respond appropriately. Use `ignore_changes` for expected automation drift, `apply -refresh-only` for accepted emergency changes, and regular `tofu apply` to revert unauthorized changes. Combine with CloudTrail auditing to hold people accountable for unauthorized modifications.
+Out-of-band changes are inevitable - the goal is to detect them quickly, categorize accurately, and respond appropriately. Use `ignore_changes` for expected automation drift, `apply -refresh-only` for accepted emergency changes, and regular `tofu apply` to revert unauthorized changes. Combine with CloudTrail auditing to hold people accountable for unauthorized modifications.

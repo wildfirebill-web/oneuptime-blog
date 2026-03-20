@@ -8,11 +8,11 @@ Description: Diagnose and fix DHCP Discovery failures where clients cannot obtai
 
 ## Introduction
 
-When a DHCP client fails to get an IP address, the root cause is almost always a broadcast communication failure — the Discover packet never reaching the server, or the server's Offer never reaching the client. This guide provides a systematic approach to isolating the fault.
+When a DHCP client fails to get an IP address, the root cause is almost always a broadcast communication failure - the Discover packet never reaching the server, or the server's Offer never reaching the client. This guide provides a systematic approach to isolating the fault.
 
 ## DHCP Four-Way Handshake
 
-```
+```text
 Client → Broadcast:  DHCP Discover  (src 0.0.0.0, dst 255.255.255.255)
 Server → Client:     DHCP Offer     (unicast or broadcast)
 Client → Broadcast:  DHCP Request   (broadcast with chosen server)
@@ -22,7 +22,8 @@ Server → Client:     DHCP ACK       (unicast or broadcast)
 ## Step 1: Capture on the Client Interface
 
 ```bash
-# On the client — capture DHCP traffic on the client interface
+# On the client - capture DHCP traffic on the client interface
+
 sudo tcpdump -i eth0 -n -v "udp port 67 or udp port 68"
 
 # Then trigger a DHCP request
@@ -63,7 +64,7 @@ If the server never sees a Discover, the broadcast is being dropped somewhere be
 If client and server are on different subnets, verify the relay agent:
 
 ```bash
-# On the relay host — confirm it is forwarding
+# On the relay host - confirm it is forwarding
 sudo journalctl -u isc-dhcp-relay -f
 
 # Capture to confirm relay is forwarding to the server
@@ -75,7 +76,7 @@ The `giaddr` field must be set to the relay's IP on the client subnet. If it is 
 ## Step 5: Check DHCP Server Scope
 
 ```bash
-# On isc-dhcp-server — check for scope exhaustion
+# On isc-dhcp-server - check for scope exhaustion
 sudo cat /var/lib/dhcp/dhcpd.leases | grep -c "binding state active"
 
 # Check the server's error log
@@ -85,7 +86,7 @@ sudo journalctl -u isc-dhcpd -n 50
 grep -A 5 "subnet" /etc/dhcp/dhcpd.conf
 ```
 
-A common error is a missing or wrong `subnet` declaration — the DHCP server silently ignores requests from subnets it has no pool for.
+A common error is a missing or wrong `subnet` declaration - the DHCP server silently ignores requests from subnets it has no pool for.
 
 ## Step 6: Check iptables on Server and Router
 
@@ -107,7 +108,7 @@ sudo ss -ulnp | grep 67
 ```
 
 Expected output:
-```
+```text
 UNCONN 0 0 0.0.0.0:67 0.0.0.0:* users:(("dhcpd",pid=1234,fd=7))
 ```
 

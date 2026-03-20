@@ -22,6 +22,7 @@ Every filesystem gets a unique UUID when formatted. It does not change unless yo
 
 ```bash
 # View UUIDs for all block devices
+
 sudo blkid
 
 # View UUID for a specific device

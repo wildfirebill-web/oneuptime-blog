@@ -28,6 +28,7 @@ Before configuring Flux, ensure you have a Helm chart stored in ECR. If you have
 
 ```bash
 # Authenticate Helm with ECR
+
 aws ecr get-login-password --region us-east-1 | \
   helm registry login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com
 

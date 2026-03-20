@@ -32,6 +32,7 @@ Before you can fix false positives, you need to see them. Enable WAF diagnostic 
 
 ```bash
 # Enable diagnostic logging for Front Door WAF
+
 az monitor diagnostic-settings create \
   --name "waf-diagnostics" \
   --resource "/subscriptions/{sub-id}/resourceGroups/myRG/providers/Microsoft.Cdn/profiles/myFrontDoor" \

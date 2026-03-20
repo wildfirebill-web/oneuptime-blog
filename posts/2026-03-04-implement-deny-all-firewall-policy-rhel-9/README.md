@@ -44,6 +44,7 @@ The public zone already uses the `default` target, which rejects unmatched traff
 
 ```bash
 # Verify the public zone target
+
 firewall-cmd --zone=public --list-all | grep target
 
 # Strip it down to only what you need

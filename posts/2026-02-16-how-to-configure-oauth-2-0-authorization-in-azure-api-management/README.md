@@ -128,6 +128,7 @@ In Azure AD, the client app needs an "Application permission" (not a "Delegated 
 
 ```bash
 # Obtain a token using the client credentials flow
+
 # This is for machine-to-machine authentication without user interaction
 curl -X POST \
     "https://login.microsoftonline.com/YOUR_TENANT_ID/oauth2/v2.0/token" \

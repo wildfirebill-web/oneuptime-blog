@@ -21,6 +21,7 @@ How to Deploy a Go Application with Epinio demonstrates how Epinio simplifies ap
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

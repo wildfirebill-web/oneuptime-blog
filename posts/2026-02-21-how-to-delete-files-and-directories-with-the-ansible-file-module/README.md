@@ -18,6 +18,7 @@ The simplest deletion is removing a single file:
 
 ```yaml
 # Remove a single file from the remote host
+
 - name: Delete old configuration file
   ansible.builtin.file:
     path: /etc/myapp/old-config.yml

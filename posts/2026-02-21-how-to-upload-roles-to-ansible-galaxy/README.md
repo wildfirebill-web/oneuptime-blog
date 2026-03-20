@@ -56,6 +56,7 @@ This file is the most important piece. Galaxy reads it to display information ab
 
 ```yaml
 # meta/main.yml - Galaxy metadata for your role
+
 ---
 galaxy_info:
   role_name: myapp

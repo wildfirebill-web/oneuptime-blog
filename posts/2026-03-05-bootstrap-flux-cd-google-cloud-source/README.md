@@ -24,6 +24,7 @@ Ensure the Cloud Source Repositories API is enabled for your project.
 
 ```bash
 # Set your Google Cloud project
+
 export GCP_PROJECT=<your-gcp-project-id>
 gcloud config set project $GCP_PROJECT
 

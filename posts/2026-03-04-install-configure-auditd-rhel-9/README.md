@@ -35,6 +35,7 @@ On RHEL, the audit package is usually installed by default. If it is not present
 
 ```bash
 # Install the audit packages
+
 sudo dnf install audit audit-libs
 
 # Verify the installation

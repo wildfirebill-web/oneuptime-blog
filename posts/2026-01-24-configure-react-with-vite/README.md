@@ -16,6 +16,7 @@ Create a new React project with Vite:
 
 ```bash
 # Using npm
+
 npm create vite@latest my-react-app -- --template react-ts
 
 # Using yarn

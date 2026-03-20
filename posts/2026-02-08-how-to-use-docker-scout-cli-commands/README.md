@@ -18,6 +18,7 @@ Docker Scout CLI comes bundled with Docker Desktop 4.17+. If you need to install
 
 ```bash
 # Install Docker Scout CLI plugin
+
 curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh
 
 # Verify installation

@@ -15,6 +15,7 @@ CRI-O is a lightweight container runtime interface designed specifically for Kub
 
 [crio.network]
 # Path to CNI configuration directory
+
 network_dir = "/etc/cni/net.d/"
 
 # Paths to search for CNI plugin binaries

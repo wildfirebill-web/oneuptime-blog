@@ -14,6 +14,7 @@ RTMP (Real-Time Messaging Protocol) is widely used for live streaming. Configuri
 
 ```bash
 # Install Nginx with RTMP module
+
 sudo apt install nginx libnginx-mod-rtmp -y
 
 # Or build from source with RTMP module

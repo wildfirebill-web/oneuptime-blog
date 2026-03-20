@@ -16,6 +16,7 @@ ArgoCD is written in Go (backend) and TypeScript/React (frontend). You need a sp
 
 ```bash
 # Check Go version - ArgoCD requires Go 1.21+
+
 go version
 # go version go1.21.6 linux/amd64
 

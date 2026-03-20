@@ -16,6 +16,7 @@ The `community.general.git_config` module manages Git settings:
 
 ```yaml
 # playbook-global-config.yml
+
 # Sets global Git configuration options on all managed hosts
 - name: Configure global Git settings
   hosts: all

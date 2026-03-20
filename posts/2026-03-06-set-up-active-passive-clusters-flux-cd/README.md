@@ -44,6 +44,7 @@ Structure your repository to support both clusters while sharing common configur
 
 ```bash
 # Repository structure
+
 fleet-infra/
   clusters/
     base/                    # Shared configurations

@@ -101,6 +101,7 @@ The following configuration creates a dedicated IP pool for database services:
 
 ```yaml
 # metallb-database-config.yaml
+
 # This configuration creates a dedicated IP address pool for database services
 # Using a separate pool allows for targeted firewall rules and network policies
 apiVersion: metallb.io/v1beta1

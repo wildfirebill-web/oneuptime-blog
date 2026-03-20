@@ -21,6 +21,7 @@ A private Docker registry lets you store and distribute container images within 
 
 ```bash
 # Run registry container
+
 docker run -d -p 5000:5000 --name registry --restart=always registry:2
 
 # Test registry

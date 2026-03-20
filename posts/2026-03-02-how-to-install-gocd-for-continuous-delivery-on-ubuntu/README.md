@@ -20,6 +20,7 @@ GoCD provides packages for Debian/Ubuntu systems through their APT repository.
 
 ```bash
 # Import the GoCD GPG key
+
 curl https://download.gocd.org/GOCD-GPG-KEY.asc | sudo gpg --dearmor -o /usr/share/keyrings/gocd.gpg
 
 # Add the GoCD repository
@@ -365,7 +366,7 @@ sudo tail -f /var/log/go-agent/go-agent.log
 curl http://localhost:8153/go/api/v1/health
 ```
 
-## Resource Requirements
+Resource Requirements
 
 GoCD server requires reasonable resources. For a small team:
 

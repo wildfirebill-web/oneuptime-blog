@@ -186,6 +186,7 @@ Measure the configuration size:
 
 ```bash
 # Get the xDS config dump from a sidecar
+
 kubectl exec -n production deploy/your-service -c istio-proxy -- \
   pilot-agent request GET /config_dump | wc -c
 ```

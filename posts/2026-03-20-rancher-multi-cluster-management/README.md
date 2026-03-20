@@ -1,4 +1,4 @@
-# How to Manage Multiple Clusters from a Single Rancher Instance
+# How to Manage Multiple Clusters from a Single Rancher Instance (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Labels are the foundation of multi-cluster organization in Rancher:
 
 ```bash
 # Label clusters for organizational grouping
+
 kubectl label cluster.management.cattle.io c-onprem-prod \
   environment=production \
   region=us-east \
@@ -168,7 +169,7 @@ curl -sk -X POST \
 
 ```bash
 #!/usr/bin/env bash
-# bulk-kubectl.sh — Run kubectl commands across multiple clusters
+# bulk-kubectl.sh - Run kubectl commands across multiple clusters
 
 # Get all cluster kubeconfigs from Rancher
 get_kubeconfig() {

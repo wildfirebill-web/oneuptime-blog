@@ -25,6 +25,7 @@ If you need a fresh project:
 
 ```bash
 # Create a virtual environment and install Django
+
 python -m venv venv
 source venv/bin/activate
 pip install django gunicorn psycopg2-binary

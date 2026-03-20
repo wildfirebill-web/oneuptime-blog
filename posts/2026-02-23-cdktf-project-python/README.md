@@ -14,6 +14,7 @@ Python is a natural fit for CDKTF if your team already uses it for automation, s
 
 ```bash
 # Create the project directory
+
 mkdir cdktf-python-demo
 cd cdktf-python-demo
 

@@ -22,6 +22,7 @@ First, create a BigQuery dataset to hold the trace data.
 
 ```bash
 # Create a dataset for trace data with 90-day expiration
+
 bq mk --dataset \
   --description="Cloud Trace span data for latency analysis" \
   --default_table_expiration=7776000 \

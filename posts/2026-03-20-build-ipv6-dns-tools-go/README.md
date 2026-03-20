@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, DNS, AAAA, miekg/dns, Network Tools
+Tags: Go, IPv6, DNS, AAAA, Miekg/dns, Network Tools
 
 Description: Build IPv6 DNS tools in Go using the miekg/dns library for AAAA record queries, reverse DNS lookups, and DNS server implementation.
 

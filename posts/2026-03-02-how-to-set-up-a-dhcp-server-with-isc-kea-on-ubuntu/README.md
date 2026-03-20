@@ -163,6 +163,7 @@ If there are no errors, the output shows `Configuration check was successful`.
 
 ```bash
 # Start the DHCPv4 server
+
 sudo systemctl start kea-dhcp4-server
 
 # Enable at boot

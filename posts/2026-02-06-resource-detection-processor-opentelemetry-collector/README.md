@@ -40,6 +40,7 @@ Here's a minimal configuration that detects environment variables and system inf
 
 ```yaml
 # Basic resource detection configuration
+
 # Detects system and environment information
 receivers:
   otlp:

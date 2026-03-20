@@ -12,7 +12,7 @@ IPv6 fragment reassembly is performed exclusively at the destination. When a sou
 
 ## Reassembly Algorithm
 
-```
+```text
 IPv6 Reassembly Steps (RFC 8200):
 
 1. Receive fragment with Fragment Header (NH=44)
@@ -31,6 +31,7 @@ IPv6 Reassembly Steps (RFC 8200):
 
 ```bash
 # Linux reassembly timeout: check kernel parameters
+
 cat /proc/sys/net/ipv6/netfilter/ip6_frag_time
 # Default: 60 seconds (in jiffies, system-dependent)
 
@@ -148,7 +149,7 @@ print(f"After fragment 1: {len(result)} bytes reassembled" if result else "None"
 
 Fragment reassembly has historically been an attack vector:
 
-```
+```text
 Known fragment reassembly attacks:
 
 1. Fragment flooding: Sending many incomplete fragment sets
@@ -167,4 +168,4 @@ Known fragment reassembly attacks:
 
 ## Conclusion
 
-IPv6 fragment reassembly is simpler than IPv4 in some respects (no overlapping fragments allowed) but places the full burden on the destination. The 60-second reassembly timer means all fragments of a packet must arrive within one minute. Reassembly buffers are memory-limited, so high fragment rates can exhaust them. In practice, IPv6 fragmentation should be avoided through proper PMTUD implementation — fragmentation is a fallback mechanism, not a primary design pattern.
+IPv6 fragment reassembly is simpler than IPv4 in some respects (no overlapping fragments allowed) but places the full burden on the destination. The 60-second reassembly timer means all fragments of a packet must arrive within one minute. Reassembly buffers are memory-limited, so high fragment rates can exhaust them. In practice, IPv6 fragmentation should be avoided through proper PMTUD implementation - fragmentation is a fallback mechanism, not a primary design pattern.

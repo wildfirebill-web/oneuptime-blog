@@ -202,6 +202,7 @@ For HTTP/2 connections (including gRPC), Envoy sends a GOAWAY frame during shutd
 
 ```text
 # This happens automatically during sidecar shutdown
+
 # Envoy sends GOAWAY to all active HTTP/2 connections
 ```
 

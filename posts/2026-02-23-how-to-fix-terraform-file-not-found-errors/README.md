@@ -57,6 +57,7 @@ The most common fix. When a file is next to the `.tf` file that references it, u
 
 ```hcl
 # Wrong - relative to working directory, not the module
+
 resource "aws_instance" "web" {
   user_data = file("scripts/init.sh")
 }

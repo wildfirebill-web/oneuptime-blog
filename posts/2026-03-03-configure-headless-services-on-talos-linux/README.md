@@ -35,6 +35,7 @@ When you look up `my-db.default.svc.cluster.local`, instead of getting a single 
 
 ```bash
 # Regular service - returns one ClusterIP
+
 dig my-web.default.svc.cluster.local +short
 # 10.96.1.50
 

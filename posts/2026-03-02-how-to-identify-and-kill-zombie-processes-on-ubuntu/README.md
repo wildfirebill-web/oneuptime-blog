@@ -31,6 +31,7 @@ The zombie state is indicated by a 'Z' in the process status column:
 
 ```bash
 # Show all processes in zombie state
+
 ps aux | grep '[Z]'
 
 # More targeted: show only zombies with parent PID

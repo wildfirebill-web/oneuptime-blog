@@ -25,6 +25,7 @@ Check every node for Felix prerequisites before adding it to the cluster.
 ```bash
 #!/bin/bash
 # validate-node-felix-prereqs.sh
+
 # Run on each node before joining it to the Calico cluster
 
 echo "=== Felix Prerequisites Check ==="

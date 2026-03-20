@@ -22,6 +22,7 @@ Start by checking the service status on the node that is failing to join.
 
 ```bash
 # Check the status of the rke2-agent service
+
 sudo systemctl status rke2-agent
 
 # View recent logs for more detail

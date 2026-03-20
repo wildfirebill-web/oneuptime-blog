@@ -26,6 +26,7 @@ Deploy a server on Windows and clients on both Windows and Linux.
 
 ```yaml
 # windows-server.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

@@ -50,6 +50,7 @@ The Cloud Router handles BGP sessions with your on-premises router:
 
 ```bash
 # Create a Cloud Router with a private ASN
+
 gcloud compute routers create vpn-router \
   --network=your-vpc \
   --region=us-central1 \

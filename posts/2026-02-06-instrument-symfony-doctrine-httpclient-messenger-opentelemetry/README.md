@@ -24,6 +24,7 @@ Install the Doctrine DBAL middleware that hooks into query execution.
 
 ```bash
 # Install required packages
+
 composer require open-telemetry/sdk
 composer require open-telemetry/exporter-otlp
 ```

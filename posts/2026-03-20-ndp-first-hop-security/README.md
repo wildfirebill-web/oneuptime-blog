@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: First Hop Security, IPv6 Security, RA Guard, DHCPv6 Guard, ND Inspection, IPv6 Source Guard
 
-Description: Understand the four components of IPv6 First Hop Security — RA Guard, DHCPv6 Guard, ND Inspection, and IPv6 Source Guard — and how they work together to protect IPv6 networks.
+Description: Understand the four components of IPv6 First Hop Security - RA Guard, DHCPv6 Guard, ND Inspection, and IPv6 Source Guard - and how they work together to protect IPv6 networks.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ IPv6 First Hop Security (FHS) is a suite of switch-level features that protect I
 
 ## The Four FHS Components
 
-```
+```text
 IPv6 First Hop Security Components:
 
 1. RA Guard
@@ -42,7 +42,7 @@ IPv6 First Hop Security Components:
 
 ## Attack Vectors Addressed
 
-```
+```text
 Attack vs FHS Component:
 
 Rogue Router Advertisement:
@@ -88,7 +88,7 @@ graph TD
 
 Follow this order when deploying FHS features.
 
-```
+```text
 FHS Deployment Order:
 
 Step 1: Deploy RA Guard (immediate protection, no side effects)
@@ -125,7 +125,7 @@ Step 4: Deploy IPv6 Source Guard (requires binding table)
 
 Deploying in the wrong order can cause outages.
 
-```
+```text
 Wrong Order (causes outage):
 
 1. Enable Source Guard FIRST (before binding table exists)
@@ -148,7 +148,7 @@ Correct Order:
 
 ## Complete Cisco FHS Configuration
 
-```
+```text
 ! Complete IPv6 First Hop Security deployment
 
 ! RA Guard
@@ -189,4 +189,4 @@ interface GigabitEthernet1/0/24
 
 ## Conclusion
 
-IPv6 First Hop Security provides defense-in-depth for IPv6 networks at the switch level. RA Guard stops rogue router advertisements, DHCPv6 Guard stops rogue DHCP servers, ND Inspection validates NDP messages and tracks bindings, and IPv6 Source Guard enforces those bindings in the data plane. Deploy in order — RA Guard and DHCPv6 Guard first, then ND Inspection, then Source Guard — to avoid connectivity disruptions. This suite is the practical alternative to SEND for enterprise and campus networks.
+IPv6 First Hop Security provides defense-in-depth for IPv6 networks at the switch level. RA Guard stops rogue router advertisements, DHCPv6 Guard stops rogue DHCP servers, ND Inspection validates NDP messages and tracks bindings, and IPv6 Source Guard enforces those bindings in the data plane. Deploy in order - RA Guard and DHCPv6 Guard first, then ND Inspection, then Source Guard - to avoid connectivity disruptions. This suite is the practical alternative to SEND for enterprise and campus networks.

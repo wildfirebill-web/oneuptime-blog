@@ -121,6 +121,7 @@ This Python example demonstrates a simple ETL job that extracts user data from a
 
 ```python
 # simple_etl.py
+
 # A minimal but production-aware ETL pattern
 import logging
 from datetime import datetime, timedelta

@@ -50,6 +50,7 @@ kubectl version --short
 mkdir -p argocd-backup-2.9
 
 # Applications
+
 kubectl get applications -n argocd -o yaml > argocd-backup-2.9/applications.yaml
 
 # AppProjects

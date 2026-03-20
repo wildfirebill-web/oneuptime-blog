@@ -29,6 +29,7 @@ The most common pattern is giving each team its own state file per environment:
 
 ```hcl
 # Networking team's backend configuration
+
 # networking/production/backend.tf
 terraform {
   backend "s3" {

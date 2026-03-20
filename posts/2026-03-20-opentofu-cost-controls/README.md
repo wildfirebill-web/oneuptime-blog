@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Cost Management, Infrastructure as Code, IaC, FinOps, Cloud Costs
+Tags: OpenTofu, Cost Management, Infrastructure as Code, IaC, FinOps, Cloud Cost
 
 Description: Learn how to implement cost controls in OpenTofu with Infracost, tagging policies, and budget enforcement.
 
@@ -20,6 +20,7 @@ Learn how to implement cost controls in OpenTofu with Infracost, tagging policie
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

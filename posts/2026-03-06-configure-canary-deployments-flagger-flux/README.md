@@ -47,6 +47,7 @@ Create the base application deployment that Flagger will manage.
 
 ```yaml
 # apps/podinfo/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

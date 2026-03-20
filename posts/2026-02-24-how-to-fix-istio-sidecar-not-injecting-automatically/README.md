@@ -18,6 +18,7 @@ The most common reason for injection not happening is a missing or incorrect nam
 
 ```bash
 # Check namespace labels
+
 kubectl get namespace production --show-labels
 ```
 

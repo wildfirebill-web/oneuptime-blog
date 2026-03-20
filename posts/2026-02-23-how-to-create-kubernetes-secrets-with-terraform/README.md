@@ -16,6 +16,7 @@ This post covers creating different types of Kubernetes Secrets with Terraform, 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

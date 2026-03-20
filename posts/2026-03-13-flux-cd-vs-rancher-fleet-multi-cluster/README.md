@@ -26,6 +26,7 @@ Rancher Fleet uses a centralized Fleet Manager (hub cluster) that manages downst
 
 ```yaml
 # Rancher Fleet GitRepo resource
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:

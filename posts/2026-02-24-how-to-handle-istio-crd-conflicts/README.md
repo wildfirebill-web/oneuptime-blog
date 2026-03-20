@@ -59,6 +59,7 @@ Before (conflicting):
 
 ```yaml
 # Team A's VirtualService
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
@@ -223,7 +224,7 @@ If there's a conflict between what's installed and what's expected, you might ne
 kubectl replace -f <crd-file>.yaml
 ```
 
-## Resource Version Conflicts
+Resource Version Conflicts
 
 Kubernetes uses optimistic concurrency control. If two processes try to update the same Istio resource simultaneously, one will get a conflict error:
 

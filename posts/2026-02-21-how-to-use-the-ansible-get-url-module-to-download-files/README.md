@@ -16,6 +16,7 @@ The simplest use of `get_url` downloads a file from a URL to a specified path on
 
 ```yaml
 # Download the latest Docker Compose binary
+
 - name: Download Docker Compose
   ansible.builtin.get_url:
     url: "https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64"

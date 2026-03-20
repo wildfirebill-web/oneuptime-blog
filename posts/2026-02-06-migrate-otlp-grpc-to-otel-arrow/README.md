@@ -24,6 +24,7 @@ Current gateway config:
 
 ```yaml
 # Before: standard OTLP receiver
+
 receivers:
   otlp:
     protocols:

@@ -60,6 +60,7 @@ This PowerShell script creates the license assignment groups:
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Group.ReadWrite.All", "Directory.ReadWrite.All"
 
 # Create license assignment groups

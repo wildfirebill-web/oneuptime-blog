@@ -14,6 +14,7 @@ RESTCONF (RFC 8040) exposes YANG-modeled network configuration as a REST API ove
 
 ```python
 # restconf/client.py
+
 import requests
 import json
 from urllib3.exceptions import InsecureRequestWarning

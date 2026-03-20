@@ -59,6 +59,7 @@ OS="linux"
 ARCH="amd64"
 
 # List of providers to download
+
 declare -A PROVIDERS=(
     ["hashicorp/aws"]="5.31.0"
     ["hashicorp/azurerm"]="3.85.0"

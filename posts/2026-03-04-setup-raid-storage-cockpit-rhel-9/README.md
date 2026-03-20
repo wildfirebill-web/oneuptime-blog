@@ -44,6 +44,7 @@ Install mdadm if not present:
 
 ```bash
 # Install the RAID management tool
+
 sudo dnf install mdadm -y
 ```
 

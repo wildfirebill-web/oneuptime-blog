@@ -45,6 +45,7 @@ If you already have a VPC with internal-only VMs, skip to Step 2. Otherwise:
 
 ```bash
 # Create a custom VPC network
+
 gcloud compute networks create my-private-network \
   --subnet-mode=custom \
   --project=your-project-id

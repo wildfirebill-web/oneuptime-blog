@@ -376,6 +376,7 @@ class DLQConsumer:
 
 
 # Usage
+
 if __name__ == "__main__":
     consumer = DLQConsumer(
         source_topic="orders",

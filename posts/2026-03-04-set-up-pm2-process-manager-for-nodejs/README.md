@@ -82,6 +82,7 @@ pm2 start ecosystem.config.js
 ```bash
 pm2 startup systemd
 # Run the command PM2 outputs
+
 pm2 save
 ```
 

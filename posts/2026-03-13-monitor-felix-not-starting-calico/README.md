@@ -29,6 +29,7 @@ NODE_POD=<calico-node-pod>
 kubectl exec $NODE_POD -n kube-system -- \
   wget -qO- http://localhost:9099/readiness 2>/dev/null
 # Returns 200 if healthy
+
 ```
 
 ## Solution

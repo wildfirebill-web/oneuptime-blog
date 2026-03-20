@@ -28,6 +28,7 @@ Before you begin, ensure you have:
 
 ```yaml
 # clusters/my-cluster/otel/helm-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

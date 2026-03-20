@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, DNSSEC, BIND, IPv6, Security, Network
+Tags: DNS, DNSSEC, BIND, IPv6, Security, Networks
 
 Description: A step-by-step guide to enabling DNSSEC on a BIND nameserver with full IPv6 support for signing and serving AAAA records securely.
 
@@ -22,10 +22,11 @@ Edit `/etc/bind/named.conf.options` to listen on IPv6 interfaces:
 
 ```bash
 # Open the BIND options file
+
 sudo nano /etc/bind/named.conf.options
 ```
 
-```
+```text
 options {
     // Listen on all IPv6 addresses (::) and IPv4 (0.0.0.0)
     listen-on-v6 { any; };
@@ -58,13 +59,13 @@ dnssec-keygen -a ECDSAP256SHA256 -f KSK -n ZONE example.com
 
 Update your zone configuration to include the keys directory:
 
-```
+```text
 // /etc/bind/named.conf.local
 zone "example.com" {
     type master;
     file "/etc/bind/zones/db.example.com";
 
-    // Enable inline signing — BIND signs records automatically
+    // Enable inline signing - BIND signs records automatically
     dnssec-policy default;
     inline-signing yes;
 
@@ -77,7 +78,7 @@ zone "example.com" {
 
 Your zone file should include IPv6 addresses for your hosts:
 
-```
+```bash
 ; /etc/bind/zones/db.example.com
 $ORIGIN example.com.
 $TTL 300

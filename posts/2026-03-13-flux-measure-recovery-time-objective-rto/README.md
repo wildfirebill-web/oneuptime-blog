@@ -29,6 +29,7 @@ Different failure scenarios have different RTO targets based on business impact.
 
 ```yaml
 # rto-targets.yaml - Store in Git for version control
+
 rto_targets:
   scenarios:
     flux_controller_restart:

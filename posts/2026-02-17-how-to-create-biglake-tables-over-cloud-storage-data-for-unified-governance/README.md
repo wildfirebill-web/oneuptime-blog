@@ -24,6 +24,7 @@ Before creating BigLake tables, you need a few things in place. Make sure you ha
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable bigqueryconnection.googleapis.com
 gcloud services enable bigquery.googleapis.com
 

@@ -16,6 +16,7 @@ Netplan gives you three commands for managing configuration:
 
 ```bash
 # 1. Generate - converts YAML to backend config files without applying
+
 sudo netplan generate
 
 # 2. Try - applies changes with a 120-second timeout before automatic rollback

@@ -16,6 +16,7 @@ Ubuntu includes Git in its default repositories:
 
 ```bash
 # Update package index
+
 sudo apt update
 
 # Install Git

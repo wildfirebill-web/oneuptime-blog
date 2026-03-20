@@ -28,6 +28,7 @@ Set up the Cilium Helm repository and verify the latest available chart version.
 
 ```bash
 # Add the official Cilium Helm chart repository
+
 helm repo add cilium https://helm.cilium.io/
 
 # Update the Helm repository cache

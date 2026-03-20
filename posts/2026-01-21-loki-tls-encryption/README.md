@@ -51,6 +51,7 @@ flowchart LR
 # generate-ca.sh
 
 # Create directory structure
+
 mkdir -p certs/{ca,server,clients}
 cd certs
 

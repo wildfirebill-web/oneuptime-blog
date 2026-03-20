@@ -288,6 +288,7 @@ Post selectors enable a manual canary-style rollout. You can update the selector
 
 ```yaml
 # Phase 1: Deploy to canary only
+
 selector:
   matchLabels:
     rollout-group: canary

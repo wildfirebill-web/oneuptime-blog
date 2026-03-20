@@ -18,6 +18,7 @@ By default, Podman assigns subnets automatically. However, in production environ
 
 ```bash
 # Create a network with specific subnet and gateway
+
 podman network create \
   --subnet 10.50.0.0/24 \
   --gateway 10.50.0.1 \

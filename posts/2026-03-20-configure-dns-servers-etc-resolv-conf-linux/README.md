@@ -12,10 +12,11 @@ Description: Configure DNS nameservers in /etc/resolv.conf on Linux, prevent DHC
 
 ## Basic resolv.conf Format
 
-```
+```text
 # /etc/resolv.conf
 
 # Primary DNS server
+
 nameserver 8.8.8.8
 
 # Secondary DNS server
@@ -113,7 +114,7 @@ nmcli con mod "Wired connection 1" ipv4.dns-search "example.com,corp.local"
 
 Or in `/etc/resolv.conf`:
 
-```
+```text
 search example.com corp.local
 ```
 

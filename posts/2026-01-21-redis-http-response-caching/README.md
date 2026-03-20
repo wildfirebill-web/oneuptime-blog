@@ -106,6 +106,7 @@ def build_cache_key(request: Request, prefix: str) -> str:
     return f"{prefix}:{key_hash}"
 
 # Usage
+
 @app.get("/api/products")
 @cache_response(ttl=300)
 async def get_products(request: Request):

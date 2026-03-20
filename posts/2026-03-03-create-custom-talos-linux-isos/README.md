@@ -34,6 +34,7 @@ Start by defining what you want in your custom ISO.
 
 ```yaml
 # schematic.yaml
+
 customization:
   systemExtensions:
     officialExtensions:

@@ -26,6 +26,7 @@ Before troubleshooting Ansible, verify that basic SSH works:
 
 ```bash
 # Test SSH connection with the same parameters Ansible uses
+
 ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ubuntu@192.168.1.50
 
 # If using a non-standard port

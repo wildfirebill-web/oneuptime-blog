@@ -26,6 +26,7 @@ When multiple pods serve the same application, configure BGP to use ECMP for tra
 
 ```bash
 # Verify multiple BGP routes to the same destination
+
 ip route show | grep "10.48"
 # Should show multiple nexthops if ECMP is active
 ```

@@ -497,6 +497,7 @@ Create test configurations to verify validation works:
 
 ```hcl
 # test/invalid-replica-count.tfvars
+
 namespace     = "test"
 replica_count = 20  # Should fail validation (> 10)
 

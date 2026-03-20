@@ -20,6 +20,7 @@ Install Drone server with Docker:
 
 ```bash
 # Create docker-compose.yml for Drone
+
 cat > docker-compose.yml <<EOF
 version: '3'
 services:

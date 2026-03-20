@@ -14,6 +14,7 @@ Manually configuring ACLs on dozens of switches is error-prone. Ansible automate
 
 ```ini
 # /etc/ansible/hosts
+
 [access_switches]
 sw-01 ansible_host=10.0.1.1
 sw-02 ansible_host=10.0.1.2

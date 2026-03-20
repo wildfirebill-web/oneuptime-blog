@@ -22,6 +22,7 @@ Configure containerd to execute hooks at container lifecycle points.
 
 ```toml
 # /etc/containerd/config.toml
+
 version = 2
 
 [plugins."io.containerd.grpc.v1.cri".containerd]

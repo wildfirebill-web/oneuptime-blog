@@ -29,6 +29,7 @@ Before making any changes, export the current state as your baseline:
 
 ```bash
 # Export current resource to YAML
+
 calicoctl get stagedkubernetesnetworkpolicy -o yaml > stagedkubernetesnetworkpolicy-backup.yaml
 
 # Store the backup safely

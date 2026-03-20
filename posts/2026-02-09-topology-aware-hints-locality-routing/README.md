@@ -31,6 +31,7 @@ Enable topology-aware hints by adding an annotation to your service:
 
 ```yaml
 # topology-aware-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

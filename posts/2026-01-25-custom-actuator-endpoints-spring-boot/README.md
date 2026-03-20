@@ -47,6 +47,7 @@ Configure actuator in your application properties:
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

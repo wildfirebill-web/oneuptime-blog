@@ -40,6 +40,7 @@ For most purposes, use `tmpfs` with an explicit size limit. Use `ramfs` only if 
 
 ```bash
 # Create a mount point
+
 sudo mkdir -p /mnt/ramdisk
 
 # Mount a 2GB tmpfs RAM disk

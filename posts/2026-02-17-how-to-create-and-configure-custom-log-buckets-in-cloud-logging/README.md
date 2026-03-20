@@ -31,6 +31,7 @@ Create a bucket with a specific retention period:
 
 ```bash
 # Create a custom log bucket with 90-day retention
+
 gcloud logging buckets create application-logs \
   --location=global \
   --retention-days=90 \

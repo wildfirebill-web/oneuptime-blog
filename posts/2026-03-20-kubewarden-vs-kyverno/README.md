@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: kubewarden, kyverno, policy-engine, kubernetes, comparison
+Tags: Kubewarden, Kyverno, Policy-engine, Kubernetes, Comparison
 
 Description: A detailed comparison of Kubewarden and Kyverno for Kubernetes policy management, covering policy authoring, mutation, validation, and ease of use.
 
@@ -43,6 +43,7 @@ Kubewarden is a CNCF Sandbox policy engine from SUSE Rancher that uses WebAssemb
 
 ```yaml
 # Kyverno: Require resource limits on all containers
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:
@@ -139,7 +140,7 @@ spec:
     default_cpu_limit: "500m"
 ```
 
-## Resource Generation (Kyverno Exclusive)
+Resource Generation (Kyverno Exclusive)
 
 Kyverno can generate new Kubernetes resources in response to events. This is a unique capability not available in Kubewarden:
 
@@ -216,4 +217,4 @@ kwctl scaffold manifest \
 
 ## Conclusion
 
-Kyverno and Kubewarden both provide excellent Kubernetes policy enforcement. Kyverno's key advantage is its low barrier to entry — YAML-native policies require no additional toolchain. Kubewarden's key advantage is flexibility — any language that compiles to Wasm can be used to write policies, which is powerful for complex validation logic. Teams new to policy management should start with Kyverno for its simplicity. Teams with experienced engineers who want language flexibility should consider Kubewarden, especially in Rancher environments.
+Kyverno and Kubewarden both provide excellent Kubernetes policy enforcement. Kyverno's key advantage is its low barrier to entry - YAML-native policies require no additional toolchain. Kubewarden's key advantage is flexibility - any language that compiles to Wasm can be used to write policies, which is powerful for complex validation logic. Teams new to policy management should start with Kyverno for its simplicity. Teams with experienced engineers who want language flexibility should consider Kubewarden, especially in Rancher environments.

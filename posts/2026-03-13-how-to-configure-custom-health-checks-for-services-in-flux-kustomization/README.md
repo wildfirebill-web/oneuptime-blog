@@ -277,6 +277,7 @@ When a Service health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization platform-services
 
 # Check Service status

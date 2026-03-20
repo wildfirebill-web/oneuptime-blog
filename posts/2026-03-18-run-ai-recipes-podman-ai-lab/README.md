@@ -18,6 +18,7 @@ Podman AI Lab includes a collection of AI Recipes, which are complete applicatio
 
 ```bash
 # Ensure Podman machine has enough resources for recipe containers
+
 podman machine inspect --format 'CPUs: {{.Resources.CPUs}}, RAM: {{.Resources.Memory}}MB'
 
 # Recipes run multiple containers, so allocate enough resources

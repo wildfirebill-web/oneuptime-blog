@@ -36,6 +36,7 @@ Elasticsearch with Kibana provides a popular open-source SIEM solution.
 
 ```yaml
 # sidekick-values.yaml
+
 config:
   elasticsearch:
     hostport: "https://elasticsearch.example.com:9200"

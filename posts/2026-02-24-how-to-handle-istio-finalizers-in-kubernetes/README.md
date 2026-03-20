@@ -162,6 +162,7 @@ The proper uninstall order is:
 
 ```bash
 # First, uninstall Istio (which removes the IstioOperator resource)
+
 istioctl uninstall --purge
 
 # Then remove the namespace

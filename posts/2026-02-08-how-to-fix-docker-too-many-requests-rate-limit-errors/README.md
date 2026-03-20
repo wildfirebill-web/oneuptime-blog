@@ -46,6 +46,7 @@ For anonymous pulls:
 
 ```bash
 # Check rate limit status without authenticating
+
 TOKEN=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:ratelimitpreview/test:pull" | jq -r .token)
 
 curl -s -H "Authorization: Bearer $TOKEN" \

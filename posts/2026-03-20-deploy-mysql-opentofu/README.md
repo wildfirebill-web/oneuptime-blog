@@ -1,14 +1,14 @@
-# How to Deploy MySQL on AWS RDS with OpenTofu
+# How to Deploy MySQL on AWS RDS with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, MySQL, RDS, AWS, Database, Infrastructure as Code
 
-Description: Learn how to deploy a production MySQL database on AWS RDS using OpenTofu — with InnoDB configuration, binary logging for replication, read replicas, and proper security controls.
+Description: Learn how to deploy a production MySQL database on AWS RDS using OpenTofu - with InnoDB configuration, binary logging for replication, read replicas, and proper security controls.
 
 ## Introduction
 
-MySQL on AWS RDS with OpenTofu requires subnet groups, InnoDB-optimized parameter groups, security groups, and for production workloads — read replicas for read scaling. This guide covers the full setup.
+MySQL on AWS RDS with OpenTofu requires subnet groups, InnoDB-optimized parameter groups, security groups, and for production workloads - read replicas for read scaling. This guide covers the full setup.
 
 ## Parameter Group for MySQL 8.0
 
@@ -130,7 +130,7 @@ resource "aws_db_instance" "mysql_read_replica" {
   instance_class    = var.read_replica_instance_class
   storage_encrypted = true
 
-  # No db_name, username, password for replica — inherited from primary
+  # No db_name, username, password for replica - inherited from primary
   publicly_accessible = false
   multi_az            = false  # Read replicas don't need Multi-AZ
 

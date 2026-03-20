@@ -18,6 +18,7 @@ ss is the modern replacement for netstat on RHEL 9.
 
 ```bash
 # All TCP connections
+
 ss -t
 
 # All TCP connections with details

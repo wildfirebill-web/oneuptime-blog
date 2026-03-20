@@ -30,6 +30,7 @@ Dex runs as a separate deployment and serves two main functions:
 
 ```bash
 # Get Dex pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-dex-server -o wide
 
 # Check for restarts and crash reasons

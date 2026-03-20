@@ -35,6 +35,7 @@ Export your current Consul configuration:
 
 ```bash
 # List all services registered in Consul
+
 consul catalog services
 
 # Get service configuration

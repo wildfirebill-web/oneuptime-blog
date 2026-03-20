@@ -20,6 +20,7 @@ View the full JSON metadata for an image.
 
 ```bash
 # Inspect an image by name and tag
+
 podman inspect nginx:1.25
 
 # Inspect by image ID

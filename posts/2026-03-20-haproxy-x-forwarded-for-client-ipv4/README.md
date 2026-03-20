@@ -29,12 +29,12 @@ backend app_servers
 ```
 
 With `option forwardfor`, HAProxy adds:
-```
+```text
 X-Forwarded-For: 203.0.113.50
 ```
 
 If XFF already exists (from an upstream proxy), HAProxy appends:
-```
+```text
 X-Forwarded-For: 203.0.113.50, 10.0.0.1
 ```
 
@@ -112,6 +112,7 @@ Create a simple debug endpoint on the backend:
 
 ```python
 # Flask endpoint to echo request headers
+
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 

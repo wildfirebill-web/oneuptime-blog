@@ -20,6 +20,7 @@ Here is a fully documented configuration:
 
 ```bash
 # Directory where failure records are stored
+
 # Default: /var/run/faillock (cleared on reboot)
 # Use /var/lib/faillock for persistent storage
 dir = /var/run/faillock

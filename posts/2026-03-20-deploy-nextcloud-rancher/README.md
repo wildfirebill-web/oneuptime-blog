@@ -1,8 +1,8 @@
-# How to Deploy Nextcloud on Rancher
+# How to Deploy Nextcloud on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, nextcloud, file-sharing, kubernetes, helm
+Tags: Rancher, Nextcloud, File-sharing, Kubernetes, Helm
 
 Description: Guide to deploying Nextcloud on Rancher for self-hosted file sync and collaboration platform.
 
@@ -22,6 +22,7 @@ This guide covers deploying unextcloud on Rancher with production-ready configur
 
 ```bash
 # Add the chart repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

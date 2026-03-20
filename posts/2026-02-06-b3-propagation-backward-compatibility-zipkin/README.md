@@ -54,6 +54,7 @@ The B3 propagator for OpenTelemetry is available as a separate package. It is no
 
 ```bash
 # Install the B3 propagator package
+
 pip install opentelemetry-propagator-b3
 ```
 

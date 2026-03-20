@@ -30,6 +30,7 @@ Install the HashiCorp Vault collection:
 
 ```bash
 # Install the community HashiCorp collection
+
 ansible-galaxy collection install community.hashi_vault
 ```
 

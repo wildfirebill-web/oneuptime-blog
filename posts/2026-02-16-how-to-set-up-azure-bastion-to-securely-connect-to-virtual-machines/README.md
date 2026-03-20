@@ -42,6 +42,7 @@ Azure Bastion requires a dedicated subnet named exactly `AzureBastionSubnet` wit
 
 ```bash
 # Create a resource group (or use an existing one)
+
 az group create --name rg-bastion-demo --location eastus
 
 # Create a VNet (or use an existing one)

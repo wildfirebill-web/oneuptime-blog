@@ -150,6 +150,7 @@ locals {
 }
 
 # Look up shared platform infrastructure
+
 data "aws_vpc" "platform" {
   filter {
     name   = "tag:Platform"

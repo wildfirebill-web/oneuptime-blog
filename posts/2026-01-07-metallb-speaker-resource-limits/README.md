@@ -204,7 +204,7 @@ spec:
             memory: 512Mi
 ```
 
-## Resource Configuration Using Helm
+Resource Configuration Using Helm
 
 If you're installing MetalLB using Helm, you can configure speaker resources directly in your values file.
 
@@ -412,6 +412,7 @@ Create the base kustomization structure with the following files:
 
 ```yaml
 # base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -794,7 +795,7 @@ spec:
             memory: 256Mi
 ```
 
-## Resource Quota Considerations
+Resource Quota Considerations
 
 When using namespace resource quotas, ensure MetalLB has adequate allocation:
 
@@ -993,7 +994,7 @@ Ensure nodes have sufficient allocatable resources:
 kubectl describe nodes | grep -A 5 "Allocatable:"
 ```
 
-## Resource Tuning Workflow
+Resource Tuning Workflow
 
 The following diagram shows the recommended workflow for tuning resources:
 

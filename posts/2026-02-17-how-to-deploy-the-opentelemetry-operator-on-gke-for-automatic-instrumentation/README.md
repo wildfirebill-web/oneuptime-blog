@@ -27,6 +27,7 @@ The operator relies on cert-manager for TLS certificates on its admission webhoo
 
 ```bash
 # Install cert-manager if not already present
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.4/cert-manager.yaml
 
 # Wait for cert-manager pods to be ready

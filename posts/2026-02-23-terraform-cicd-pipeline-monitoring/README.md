@@ -26,6 +26,7 @@ The key metrics for Terraform CI/CD pipelines fall into a few categories:
 
 ```yaml
 # .github/workflows/terraform-monitored.yml
+
 name: Monitored Terraform Pipeline
 on:
   push:

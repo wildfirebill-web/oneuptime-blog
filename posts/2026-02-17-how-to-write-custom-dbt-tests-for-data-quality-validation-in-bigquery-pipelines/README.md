@@ -128,6 +128,7 @@ Apply it in your schema file:
 
 ```yaml
 # models/marts/schema.yml
+
 models:
   - name: fct_orders
     columns:

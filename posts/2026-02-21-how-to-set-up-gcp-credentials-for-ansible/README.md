@@ -37,6 +37,7 @@ You need the following before getting started:
 
 ```bash
 # Install the GCP collection
+
 ansible-galaxy collection install google.cloud
 
 # Install required Python libraries

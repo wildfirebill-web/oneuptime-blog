@@ -94,6 +94,7 @@ The `destination.host` field follows the same resolution rules. Short names are 
 
 ```yaml
 # These are equivalent when the VirtualService is in the default namespace:
+
 route:
   - destination:
       host: my-service

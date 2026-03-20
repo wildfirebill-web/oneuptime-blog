@@ -26,6 +26,7 @@ Without the Calico API server, Calico resources are managed as Kubernetes CRDs u
 
 ```bash
 # Without Calico API server - uses CRD API group
+
 kubectl get networkpolicies.crd.projectcalico.org --all-namespaces
 kubectl apply -f policy.yaml  # Uses crd.projectcalico.org/v1 schema
 ```
@@ -93,7 +94,7 @@ With the Calico API server enabled:
 4. **Audit logging**: Calico resource changes appear in the Kubernetes audit log
 5. **GitOps compatibility**: Tools that use `kubectl apply` work natively with Calico resources
 
-## Resource Differences: CRD vs. API Server
+Resource Differences: CRD vs. API Server
 
 | Aspect | crd.projectcalico.org/v1 | projectcalico.org/v3 |
 |---|---|---|

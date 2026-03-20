@@ -22,6 +22,7 @@ The simplest approach is to scan every image when it's pushed to the repository.
 
 ```bash
 # Enable scan-on-push for a new repository
+
 aws ecr create-repository \
   --repository-name my-web-app \
   --image-scanning-configuration scanOnPush=true

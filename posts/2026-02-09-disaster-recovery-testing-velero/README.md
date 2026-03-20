@@ -25,6 +25,7 @@ Design a structured testing framework:
 set -e
 
 # Configuration
+
 TEST_NAMESPACE="dr-test-$(date +%s)"
 BACKUP_NAME=$1
 TEST_DURATION=3600  # 1 hour

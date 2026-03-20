@@ -35,6 +35,7 @@ If the system drops into emergency mode, you already have a root shell:
 
 ```bash
 # You may need to enter the root password
+
 # First, check the current fstab
 cat /etc/fstab
 

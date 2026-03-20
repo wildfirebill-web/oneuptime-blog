@@ -28,6 +28,7 @@ Before we talk about recovery, let's make sure your backend is set up to survive
 
 ```hcl
 # S3 bucket for Terraform state
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "mycompany-terraform-state"
 

@@ -27,6 +27,7 @@ The easiest path is through Ubuntu Pro:
 
 ```bash
 # First attach Ubuntu Pro if not already attached
+
 sudo pro attach <your-pro-token>
 
 # Livepatch is enabled by default when attaching Pro

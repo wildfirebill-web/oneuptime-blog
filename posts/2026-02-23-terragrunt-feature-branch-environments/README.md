@@ -98,7 +98,7 @@ With this setup, the branch `feature/add-auth` produces state keys like:
 - `feat-add-auth/app/terraform.tfstate`
 - `feat-add-auth/database/terraform.tfstate`
 
-## Resource Naming
+Resource Naming
 
 Resources need unique names to avoid conflicts with other feature branches:
 
@@ -159,6 +159,7 @@ Here's a GitHub Actions workflow that creates and destroys feature environments:
 
 ```yaml
 # .github/workflows/feature-environment.yml
+
 name: Feature Environment
 
 on:

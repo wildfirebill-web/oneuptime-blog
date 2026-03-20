@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Azure, Null Resource, Provisioner, Automation, Infrastructure as Code, Scripting
+Tags: Terraform, Azure, Null Resource, Provisioners, Automation, Infrastructure as Code, Scripting
 
 Description: Learn how to use Terraform null_resource with provisioners to run post-provisioning scripts against Azure resources after infrastructure deployment.
 
@@ -24,6 +24,7 @@ Here is the simplest example - running an Azure CLI command after a resource is 
 
 ```hcl
 # Create a storage account
+
 resource "azurerm_storage_account" "main" {
   name                     = "stexampledata"
   resource_group_name      = azurerm_resource_group.main.name

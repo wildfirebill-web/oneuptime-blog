@@ -67,6 +67,7 @@ Stream inventory changes from your warehouse management system into BigQuery thr
 
 ```python
 # inventory_ingestion.py - Process inventory updates from WMS
+
 import functions_framework
 import base64
 import json

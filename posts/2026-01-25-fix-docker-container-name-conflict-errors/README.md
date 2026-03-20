@@ -14,6 +14,7 @@ The "Conflict: container name already in use" error occurs when you try to creat
 
 ```bash
 # The error message
+
 docker: Error response from daemon: Conflict. The container name "/myapp" is already in use by container "abc123...". You have to remove (or rename) that container to be able to reuse that name.
 
 # This happens because container names must be unique

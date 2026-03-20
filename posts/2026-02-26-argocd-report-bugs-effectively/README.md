@@ -18,6 +18,7 @@ Before opening a GitHub issue, take these preliminary steps to avoid duplicates 
 
 ```bash
 # Search for existing issues using GitHub CLI
+
 gh issue list --repo argoproj/argo-cd --state all --search "sync stuck degraded"
 
 # Check if there's a known issue in the troubleshooting docs

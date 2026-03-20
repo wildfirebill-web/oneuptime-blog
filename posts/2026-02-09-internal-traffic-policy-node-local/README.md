@@ -24,6 +24,7 @@ Configure internalTrafficPolicy in your service definition:
 
 ```yaml
 # node-local-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -332,7 +333,7 @@ Typical results show 30-50% latency reduction for node-local routing:
 - Cluster policy: avg 2.5ms, p99 8.2ms
 - Local policy: avg 1.2ms, p99 3.1ms
 
-## Resource Monitoring Patterns
+Resource Monitoring Patterns
 
 Node-local services create different resource usage patterns. Monitor pod resource consumption across nodes:
 

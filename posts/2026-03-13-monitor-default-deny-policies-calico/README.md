@@ -70,6 +70,7 @@ spec:
 
 ```bash
 # Query denied packets
+
 curl http://localhost:9091/metrics | grep felix_denied
 ```
 

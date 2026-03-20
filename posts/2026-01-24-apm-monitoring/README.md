@@ -50,6 +50,7 @@ OpenTelemetry provides vendor-neutral instrumentation that works with most APM b
 
 ```python
 # requirements.txt
+
 # opentelemetry-api
 # opentelemetry-sdk
 # opentelemetry-exporter-otlp

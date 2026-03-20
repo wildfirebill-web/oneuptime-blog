@@ -20,6 +20,7 @@ Define a GitRepository resource in the tenant's namespace that points to their a
 
 ```yaml
 # tenants/team-alpha/git-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

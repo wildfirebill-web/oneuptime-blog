@@ -44,6 +44,7 @@ Set up the write database:
 
 ```bash
 # Create Cloud SQL instance for the write model
+
 gcloud sql instances create orders-write-db \
   --database-version POSTGRES_15 \
   --tier db-custom-4-16384 \

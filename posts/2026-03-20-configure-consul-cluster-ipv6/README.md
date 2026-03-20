@@ -64,6 +64,7 @@ HashiCorp Consul provides service discovery, health checking, and service mesh c
 
 ```bash
 # Start Consul server
+
 consul agent -config-dir=/etc/consul/ &
 
 # Or using a specific config file

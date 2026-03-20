@@ -42,6 +42,7 @@ To list all CiliumCIDRGroup resources:
 
 ```bash
 # List all CiliumCIDRGroup resources
+
 kubectl get ciliumcidrgroups
 
 # View the full spec of a specific CIDRGroup

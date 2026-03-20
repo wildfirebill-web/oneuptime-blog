@@ -1,4 +1,4 @@
-# How to Deploy Drone CI via Portainer
+# How to Deploy Drone CI via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -85,6 +85,7 @@ volumes:
 
 ```bash
 # Generate a secure random secret
+
 openssl rand -hex 16
 ```
 

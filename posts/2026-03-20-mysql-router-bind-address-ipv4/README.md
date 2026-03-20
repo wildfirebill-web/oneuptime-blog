@@ -24,6 +24,7 @@ graph LR
 
 ```bash
 # Bootstrap MySQL Router against the InnoDB Cluster primary
+
 mysqlrouter --bootstrap root@10.0.0.10:3306 \
   --user mysqlrouter \
   --conf-use-sockets \
@@ -45,14 +46,14 @@ mysqlrouter --bootstrap root@10.0.0.10:3306 \
 bind_address = 10.0.0.5
 
 [routing:primary]
-# Read/Write routing — forward to primary
+# Read/Write routing - forward to primary
 bind_port = 6446
 destinations = metadata-cache://mycluster/?role=PRIMARY
 routing_strategy = first-available
 protocol = classic
 
 [routing:secondary]
-# Read-Only routing — forward to replicas
+# Read-Only routing - forward to replicas
 bind_port = 6447
 destinations = metadata-cache://mycluster/?role=SECONDARY
 routing_strategy = round-robin-with-fallback
@@ -108,6 +109,6 @@ mysql -h 10.0.0.5 -P 6447 -u appuser -p mydb -e "SELECT @@hostname;"
 ## Key Takeaways
 
 - `bind_address` in `[DEFAULT]` applies to all routing sections; override per-section as needed.
-- Port `6446` is the standard read/write port; `6447` is read-only — these are conventions but configurable.
+- Port `6446` is the standard read/write port; `6447` is read-only - these are conventions but configurable.
 - Run `mysqlrouter --bootstrap` to automatically generate the configuration from the cluster's metadata.
 - After changing `mysqlrouter.conf`, restart the service with `systemctl restart mysqlrouter`.

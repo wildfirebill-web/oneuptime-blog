@@ -18,6 +18,7 @@ WireGuard provides built-in tools for checking connection status.
 
 ```bash
 # Show all interfaces and peers
+
 sudo wg show
 
 # Output includes:

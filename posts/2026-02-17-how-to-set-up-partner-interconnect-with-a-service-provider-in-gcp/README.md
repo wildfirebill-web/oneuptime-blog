@@ -51,6 +51,7 @@ To see available providers for a region:
 
 ```bash
 # List Partner Interconnect locations and providers
+
 gcloud compute interconnects locations list \
     --filter="facilityProviderFacilityId:*" \
     --format="table(name, description, facilityProvider, city)"

@@ -29,6 +29,7 @@ This guide uses the official `jenkins` Helm chart, configures JCasC through Helm
 kubectl create namespace jenkins
 
 # Admin credentials (use Sealed Secrets in production)
+
 kubectl create secret generic jenkins-admin-secret \
   --namespace jenkins \
   --from-literal=jenkins-admin-user=admin \

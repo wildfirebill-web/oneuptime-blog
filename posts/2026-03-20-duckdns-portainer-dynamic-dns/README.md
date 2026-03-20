@@ -16,7 +16,7 @@ Most home internet connections have a dynamic IP that changes periodically. Duck
 
 1. Visit [duckdns.org](https://www.duckdns.org) and sign in with GitHub, Google, or another provider
 2. Create a subdomain (e.g., `myserver.duckdns.org`)
-3. Note your **token** — you'll need it for IP updates
+3. Note your **token** - you'll need it for IP updates
 4. Your current IP is automatically populated when you create the domain
 
 ---
@@ -27,6 +27,7 @@ Run the DuckDNS updater container as a Portainer stack. It pings the DuckDNS API
 
 ```yaml
 # duckdns-stack.yml
+
 version: "3.8"
 
 services:
@@ -152,7 +153,7 @@ networks:
 
 For external access, forward ports 80 and 443 from your router to your server's LAN IP.
 
-```
+```text
 Router Port Forwarding:
   External 80  → Internal 192.168.1.100:80
   External 443 → Internal 192.168.1.100:443

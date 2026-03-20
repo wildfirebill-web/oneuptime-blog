@@ -20,6 +20,7 @@ Note: Vaultwarden is not affiliated with Bitwarden, Inc. It reimplements the pub
 
 ```bash
 # Install Docker
+
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 

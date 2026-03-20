@@ -30,6 +30,7 @@ Docker and Docker Compose installed on your server. Apprise is lightweight and u
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

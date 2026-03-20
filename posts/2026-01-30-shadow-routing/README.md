@@ -717,6 +717,7 @@ async function sendWelcomeEmail(req: Request, user: User) {
 
 ```yaml
 # shadow-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

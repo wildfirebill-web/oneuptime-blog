@@ -32,6 +32,7 @@ Database failover is critical for maintaining availability when the primary serv
 
 ```bash
 # Check if primary is accessible
+
 pg_isready -h primary.example.com -p 5432
 
 # Check replication status on standby

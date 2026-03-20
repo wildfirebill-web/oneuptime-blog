@@ -30,6 +30,7 @@ The CIS (Center for Internet Security) benchmarks define security configurations
 
 ```yaml
 # roles/cis_baseline/tasks/main.yml
+
 # CIS Level 1 Server Benchmark for Ubuntu 22.04
 ---
 - name: "CIS 1.1.1 - Disable unused filesystems"

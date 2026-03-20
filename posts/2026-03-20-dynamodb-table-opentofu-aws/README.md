@@ -128,6 +128,7 @@ resource "aws_dynamodb_table" "high_throughput" {
 }
 
 # Auto-scaling for read capacity
+
 resource "aws_appautoscaling_target" "dynamodb_read" {
   max_capacity       = 100
   min_capacity       = 5

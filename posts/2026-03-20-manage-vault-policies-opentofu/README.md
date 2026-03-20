@@ -14,6 +14,7 @@ Vault policies use HCL syntax to define which paths a token can access and with 
 
 ```hcl
 # Create a read-only policy for application secrets
+
 resource "vault_policy" "app_readonly" {
   name = "prod-app-readonly"
 

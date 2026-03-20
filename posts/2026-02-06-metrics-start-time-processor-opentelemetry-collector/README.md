@@ -50,6 +50,7 @@ Here is a basic configuration:
 
 ```yaml
 # Basic Metrics Start Time processor configuration
+
 processors:
   metricsstarttime:
     # Track all cumulative metrics (default behavior)
@@ -134,7 +135,7 @@ service:
 
 When `detect_resets` is enabled, the processor monitors cumulative metric values. If a value decreases (indicating a reset), the processor updates the start time to reflect the reset point.
 
-## Resource Attribute Tracking
+Resource Attribute Tracking
 
 Different metric series (identified by unique label combinations) require independent start time tracking. The processor automatically handles this by tracking start times per metric series.
 

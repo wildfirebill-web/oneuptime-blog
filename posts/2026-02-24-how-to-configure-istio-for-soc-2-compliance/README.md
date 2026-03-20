@@ -33,6 +33,7 @@ Verify there are no exceptions:
 
 ```bash
 # List all PeerAuthentication resources
+
 kubectl get peerauthentication -A
 
 # Check for any PERMISSIVE or DISABLE overrides

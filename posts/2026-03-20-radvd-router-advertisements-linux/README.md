@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, radvd, Router Advertisement, Linux, SLAAC, Networking
+Tags: IPv6, Radvd, Router Advertisement, Linux, SLAAC, Networking
 
 Description: Install and configure radvd on Linux to send IPv6 Router Advertisements, enabling SLAAC-based address autoconfiguration for all devices on your network segment.
 
@@ -14,6 +14,7 @@ Description: Install and configure radvd on Linux to send IPv6 Router Advertisem
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install radvd
 
 # RHEL/CentOS/Fedora
@@ -106,7 +107,7 @@ rdisc6 eth1
 
 Example output:
 
-```
+```text
 Soliciting ff02::2 (ff02::2) on eth1...
 
 Hop limit                 :           64 (      0x40)

@@ -14,6 +14,7 @@ Hardware video acceleration offloads video decoding and encoding from the CPU to
 
 ```bash
 # Identify your GPU
+
 lspci | grep -E "VGA|3D"
 
 # Check the loaded GPU driver

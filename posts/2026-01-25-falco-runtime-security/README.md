@@ -50,6 +50,7 @@ The recommended deployment uses Helm with the eBPF driver (no kernel module need
 
 ```bash
 # Add the Falco Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 helm repo update
 

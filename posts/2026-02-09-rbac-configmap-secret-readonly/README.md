@@ -32,6 +32,7 @@ Start with a role that grants read-only access to ConfigMaps:
 
 ```yaml
 # configmap-reader-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

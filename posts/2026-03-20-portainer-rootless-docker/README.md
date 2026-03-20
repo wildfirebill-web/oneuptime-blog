@@ -23,6 +23,7 @@ Rootless Docker allows non-root users to run Docker without requiring root privi
 
 ```bash
 # Install required packages (Ubuntu/Debian)
+
 sudo apt-get install -y \
   uidmap \
   dbus-user-session \

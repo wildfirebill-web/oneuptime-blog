@@ -29,6 +29,7 @@ Before configuring auto-discovery, confirm your nodes have the expected default 
 
 ```bash
 # Check default gateway on a node
+
 kubectl debug node/worker-0 -it --image=busybox -- ip route show default
 
 # Expected output:

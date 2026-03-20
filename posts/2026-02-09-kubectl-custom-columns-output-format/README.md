@@ -16,6 +16,7 @@ Custom columns let you define your own table layout with column headers and JSON
 
 ```bash
 # Default pod output shows NAME, READY, STATUS, RESTARTS, AGE
+
 kubectl get pods
 
 # Custom columns show whatever you specify

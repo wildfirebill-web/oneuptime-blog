@@ -33,6 +33,7 @@ resource "kubernetes_namespace" "app" {
 }
 
 # Kubernetes namespace import ID format: NAMESPACE_NAME
+
 import {
   to = kubernetes_namespace.app
   id = "my-app"

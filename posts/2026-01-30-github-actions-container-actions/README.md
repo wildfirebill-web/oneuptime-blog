@@ -58,6 +58,7 @@ The action.yml file defines inputs, outputs, and tells GitHub to run this action
 
 ```yaml
 # action.yml - Defines the action interface and runtime
+
 name: 'Database Migration Action'
 description: 'Runs database migrations using Flyway'
 author: 'Your Name'

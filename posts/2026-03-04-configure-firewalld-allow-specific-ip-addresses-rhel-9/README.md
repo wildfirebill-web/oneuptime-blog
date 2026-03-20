@@ -18,6 +18,7 @@ Rich rules are the most flexible way to allow specific IPs:
 
 ```bash
 # Allow SSH only from the admin workstation
+
 firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="10.0.1.5" service name="ssh" accept' --permanent
 
 # Remove the general SSH allow (so only the rich rule applies)

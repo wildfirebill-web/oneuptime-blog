@@ -16,6 +16,7 @@ The `upper` function takes a string and returns it with all cased letters conver
 
 ```hcl
 # Basic syntax
+
 upper(string)
 ```
 

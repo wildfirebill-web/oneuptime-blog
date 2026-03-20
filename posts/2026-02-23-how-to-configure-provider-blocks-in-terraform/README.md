@@ -18,6 +18,7 @@ A provider block specifies the provider name and its configuration arguments:
 
 ```hcl
 # Minimal AWS provider configuration
+
 provider "aws" {
   region = "us-east-1"
 }

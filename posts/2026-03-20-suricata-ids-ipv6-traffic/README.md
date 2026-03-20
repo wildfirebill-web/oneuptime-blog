@@ -14,6 +14,7 @@ Suricata is a high-performance Network IDS, IPS, and Network Security Monitoring
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install suricata -y
 
 # RHEL/CentOS

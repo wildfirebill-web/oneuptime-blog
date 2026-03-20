@@ -1,4 +1,4 @@
-# How to Configure Longhorn Orphaned Replica Cleanup
+# How to Configure Longhorn Orphaned Replica Cleanup - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ Configure Longhorn to automatically detect and clean up orphaned replicas:
 
 ```bash
 # Enable orphaned replica auto cleanup in Longhorn settings
+
 kubectl patch setting.longhorn.io orphan-auto-deletion \
   -n longhorn-system \
   --type merge \
@@ -128,6 +129,6 @@ spec:
 ## Best Practices
 
 - Enable `orphan-auto-deletion` on all production clusters to prevent disk space accumulation.
-- Review orphans before mass deletion — occasionally an orphan may be a recoverable replica from a volume that still has data you need.
+- Review orphans before mass deletion - occasionally an orphan may be a recoverable replica from a volume that still has data you need.
 - Run orphan cleanup after any cluster restore operation to clear stale replica data.
-- Monitor disk usage trends — rapidly increasing orphan count can indicate a misconfigured or buggy workload deleting and recreating PVCs frequently.
+- Monitor disk usage trends - rapidly increasing orphan count can indicate a misconfigured or buggy workload deleting and recreating PVCs frequently.

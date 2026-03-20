@@ -14,6 +14,7 @@ Database backups are the safety net you hope you never need but absolutely must 
 
 ```yaml
 # roles/db_backup/defaults/main.yml - Database backup configuration
+
 backup_base_dir: /opt/backups
 backup_retention_days: 30
 backup_encryption_enabled: true

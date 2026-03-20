@@ -22,6 +22,7 @@ Before implementing your own retries, understand what Lambda already does:
 
 ```bash
 # Configure retry behavior for async invocations
+
 aws lambda put-function-event-invoke-config \
   --function-name my-function \
   --maximum-retry-attempts 1 \

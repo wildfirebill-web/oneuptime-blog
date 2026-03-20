@@ -19,6 +19,7 @@ AWS IAM Access Analyzer uses automated reasoning to analyze resource-based polic
 
 ```hcl
 # Account-level analyzer detects resources shared outside your account
+
 resource "aws_accessanalyzer_analyzer" "account" {
   analyzer_name = "${var.account_name}-account-analyzer"
   type          = "ACCOUNT"  # Or "ORGANIZATION" for org-level
@@ -131,4 +132,4 @@ tofu apply
 
 ## Conclusion
 
-IAM Access Analyzer provides continuous monitoring for unintended resource exposure. Enable it in every AWS account and organization, configure archive rules for known-good configurations, and set up EventBridge alerts for new findings so your security team can respond immediately. Use the policy validation feature in CI/CD pipelines to catch IAM policy errors before deployment—it can identify errors like referencing non-existent actions or over-permissive wildcards.
+IAM Access Analyzer provides continuous monitoring for unintended resource exposure. Enable it in every AWS account and organization, configure archive rules for known-good configurations, and set up EventBridge alerts for new findings so your security team can respond immediately. Use the policy validation feature in CI/CD pipelines to catch IAM policy errors before deployment-it can identify errors like referencing non-existent actions or over-permissive wildcards.

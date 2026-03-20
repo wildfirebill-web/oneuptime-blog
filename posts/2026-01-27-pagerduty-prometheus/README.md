@@ -52,6 +52,7 @@ Create or update your `alertmanager.yml` file with the following structure:
 
 ```yaml
 # alertmanager.yml
+
 # Basic configuration for routing Prometheus alerts to PagerDuty
 
 global:

@@ -1,4 +1,4 @@
-# How to Fix Slow Page Loading with Many Resources in Portainer
+# How to Fix Slow Page Loading with Many Resources in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Portainer's UI can become noticeably slow when managing environments with hundre
 
 ```bash
 # Check how long API calls take
+
 curl -w "\nTime: %{time_total}s\n" -s \
   -H "Authorization: Bearer $TOKEN" \
   http://localhost:9000/api/endpoints/1/docker/containers/json -o /dev/null
@@ -175,4 +176,4 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 
 ## Conclusion
 
-Portainer slowness with many resources is primarily a data volume issue — the more containers, stacks, and environments Portainer manages, the more data it needs to fetch and render. The most impactful fixes are: increasing the snapshot interval, cleaning up unused resources (containers, images, volumes), compacting the BoltDB database, and ensuring Portainer runs on SSD storage. For very large deployments, consider splitting into multiple Portainer instances per cluster.
+Portainer slowness with many resources is primarily a data volume issue - the more containers, stacks, and environments Portainer manages, the more data it needs to fetch and render. The most impactful fixes are: increasing the snapshot interval, cleaning up unused resources (containers, images, volumes), compacting the BoltDB database, and ensuring Portainer runs on SSD storage. For very large deployments, consider splitting into multiple Portainer instances per cluster.

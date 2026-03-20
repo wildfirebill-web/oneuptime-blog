@@ -22,6 +22,7 @@ Podman masks several sensitive paths by default to prevent information leakage f
 
 ```bash
 # View the default masked paths for a Podman container
+
 # These paths are mounted over with /dev/null or tmpfs
 podman run --rm docker.io/library/alpine:latest \
   sh -c "cat /proc/kcore 2>&1 || echo '/proc/kcore is masked'"

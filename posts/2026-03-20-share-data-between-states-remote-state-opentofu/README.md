@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Remote State, State Management, Data Sources, Cross-Stack
+Tags: OpenTofu, Terraform, Remote State, State Management, Data Source, Cross-Stack
 
 Description: Learn how to use terraform_remote_state data sources in OpenTofu to read outputs from one state file and use them as inputs in another, enabling loose coupling between state files.
 
 ## Introduction
 
-`terraform_remote_state` lets you read the outputs of one OpenTofu state file as a data source in another. This enables loose coupling between infrastructure components — the networking stack exposes VPC IDs and subnet IDs, and all other stacks consume them without tight code dependencies.
+`terraform_remote_state` lets you read the outputs of one OpenTofu state file as a data source in another. This enables loose coupling between infrastructure components - the networking stack exposes VPC IDs and subnet IDs, and all other stacks consume them without tight code dependencies.
 
 ## Defining Outputs for Remote State Consumption
 
@@ -16,6 +16,7 @@ The consuming state reads your outputs, so export everything that other stacks m
 
 ```hcl
 # networking/outputs.tf
+
 output "vpc_id" {
   description = "ID of the main VPC"
   value       = aws_vpc.main.id

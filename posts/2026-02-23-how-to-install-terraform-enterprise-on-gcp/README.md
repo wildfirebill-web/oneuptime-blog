@@ -56,6 +56,7 @@ provider "google" {
 # networking.tf
 
 # VPC network
+
 resource "google_compute_network" "tfe" {
   name                    = "tfe-network"
   auto_create_subnetworks = false

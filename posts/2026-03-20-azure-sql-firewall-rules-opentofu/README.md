@@ -14,6 +14,7 @@ Azure SQL Database is protected by a firewall that blocks all connections by def
 
 ```hcl
 # main.tf - SQL Server with firewall management
+
 resource "azurerm_mssql_server" "server" {
   name                         = "my-firewall-sql-server"
   resource_group_name          = azurerm_resource_group.rg.name

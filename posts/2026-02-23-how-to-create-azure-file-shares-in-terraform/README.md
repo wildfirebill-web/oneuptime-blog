@@ -16,6 +16,7 @@ This guide covers creating file shares in Terraform, configuring access tiers, s
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

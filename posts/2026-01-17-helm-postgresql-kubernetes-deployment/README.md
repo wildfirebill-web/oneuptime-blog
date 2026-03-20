@@ -46,6 +46,7 @@ flowchart TB
 
 ```bash
 # Add Bitnami repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Update repositories
@@ -554,7 +555,7 @@ SELECT client_addr, state, sent_lsn, write_lsn, flush_lsn, replay_lsn
 FROM pg_stat_replication;
 ```
 
-## Resource Sizing Guide
+Resource Sizing Guide
 
 | Workload Size | CPU | Memory | Storage | Connections |
 |---------------|-----|--------|---------|-------------|

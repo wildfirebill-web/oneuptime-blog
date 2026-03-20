@@ -16,6 +16,7 @@ Knowing your system's details is essential for troubleshooting, installing softw
 
 ```bash
 # Full release information
+
 lsb_release -a
 
 # Output:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher Desktop, Kubernetes, Versions, Local Development
+Tags: Rancher Desktop, Kubernetes, Version, Local Development
 
 Description: Select and switch between different Kubernetes versions in Rancher Desktop for testing compatibility and development.
 
@@ -30,6 +30,7 @@ Rancher Desktop simplifies local Kubernetes and container development by providi
 
 ```bash
 # Verify Rancher Desktop is installed and running
+
 rdctl version
 
 # Check Kubernetes cluster status

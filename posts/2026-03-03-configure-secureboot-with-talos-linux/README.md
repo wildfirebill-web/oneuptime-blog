@@ -34,6 +34,7 @@ Before configuring SecureBoot, verify that your hardware supports it:
 
 ```bash
 # Check current Talos version
+
 talosctl -n 10.0.1.10 version
 
 # Check if the node is using UEFI boot

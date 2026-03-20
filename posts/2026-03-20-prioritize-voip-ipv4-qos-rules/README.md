@@ -19,6 +19,7 @@ VoIP typically uses:
 
 ```bash
 # Mark SIP signaling packets (port 5060)
+
 sudo iptables -t mangle -A OUTPUT -p udp --dport 5060 -j MARK --set-mark 1
 sudo iptables -t mangle -A OUTPUT -p tcp --dport 5060 -j MARK --set-mark 1
 

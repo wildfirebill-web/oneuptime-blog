@@ -52,6 +52,7 @@ Istiod exposes Go pprof endpoints for memory profiling:
 kubectl port-forward -n istio-system deploy/istiod 15014:15014 &
 
 # Get a heap profile
+
 curl -s localhost:15014/debug/pprof/heap > /tmp/istiod-heap.prof
 
 # Get allocation data

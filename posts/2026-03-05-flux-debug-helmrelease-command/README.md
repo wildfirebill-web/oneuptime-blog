@@ -22,6 +22,7 @@ The simplest form of the command targets a specific HelmRelease:
 
 ```bash
 # Debug a HelmRelease in the default namespace
+
 flux debug helmrelease my-app
 
 # Debug a HelmRelease in a specific namespace

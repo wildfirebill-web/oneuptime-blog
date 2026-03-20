@@ -32,6 +32,7 @@ This matters for compliance because you can demonstrate to auditors that your ke
 
 ```bash
 # Enable Cloud KMS (Cloud HSM is part of the same API)
+
 gcloud services enable cloudkms.googleapis.com --project=my-project-id
 ```
 

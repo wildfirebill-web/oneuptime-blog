@@ -33,6 +33,7 @@ When something goes wrong, start with `helm status` to understand the current st
 
 ```bash
 # Get current release status
+
 helm status my-app -n production
 
 # Output shows:

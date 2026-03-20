@@ -107,6 +107,7 @@ If you manage ArgoCD via Helm:
 
 ```yaml
 # values.yaml
+
 repoServer:
   env:
     - name: ARGOCD_GIT_SHALLOW_CLONE

@@ -8,7 +8,7 @@ Description: Diagnose why some devices on a home network receive IPv6 addresses 
 
 ## Common Causes of Inconsistent IPv6
 
-```
+```text
 Device A: Has IPv6 ✓    Device B: No IPv6 ✗
 
 Possible reasons:
@@ -27,10 +27,11 @@ Possible reasons:
 Check the device that is missing IPv6.
 
 ```bash
-# Linux — check if IPv6 is disabled
+# Linux - check if IPv6 is disabled
+
 sysctl net.ipv6.conf.all.disable_ipv6
 sysctl net.ipv6.conf.eth0.disable_ipv6
-# If result is 1, IPv6 is disabled — enable:
+# If result is 1, IPv6 is disabled - enable:
 sysctl -w net.ipv6.conf.all.disable_ipv6=0
 sysctl -w net.ipv6.conf.eth0.disable_ipv6=0
 
@@ -49,7 +50,7 @@ sudo rdisc6 eth0
 dmesg | grep -i ipv6 | tail -20
 ```
 
-## Windows — Check IPv6 Status
+## Windows - Check IPv6 Status
 
 ```powershell
 # Check if IPv6 is enabled on adapter
@@ -72,7 +73,7 @@ netsh int ipv6 reset
 Restart-Computer
 ```
 
-## macOS — Check IPv6 Status
+## macOS - Check IPv6 Status
 
 ```bash
 # Check network interface IPv6
@@ -95,9 +96,9 @@ sudo ifconfig en0 down && sudo ifconfig en0 up
 ndp -r    # Show routing table with IPv6 routes
 ```
 
-## Android — IPv6 Limitations
+## Android - IPv6 Limitations
 
-```
+```text
 Android IPv6 behavior:
   - Android uses SLAAC (not DHCPv6 stateful)
   - Android ignores DHCPv6 completely (by design until Android 14)
@@ -108,7 +109,7 @@ Android 14+: supports DHCPv6 stateful
 Android < 14: SLAAC only
 
 Router fix (OpenWrt example):
-# radvd.conf — enable SLAAC in addition to DHCPv6
+# radvd.conf - enable SLAAC in addition to DHCPv6
 interface br-lan {
     AdvManagedFlag off;    # SLAAC preferred (M=0)
     AdvOtherConfigFlag on; # Stateless DHCPv6 for DNS only (O=1)
@@ -130,13 +131,13 @@ sudo ip6tables -L -n | grep -i "drop\|reject"
 # OpenVPN: look for block-ipv6 or redirect-gateway ipv6
 grep -r "block-ipv6\|redirect-gateway" /etc/openvpn/
 
-# WireGuard — check if IPv6 DNS is set
+# WireGuard - check if IPv6 DNS is set
 wg showconf wg0 | grep "DNS"
 
 # Temporary test: disconnect VPN and check if IPv6 appears
 # If yes, VPN is blocking IPv6
 
-# Fix for WireGuard — add IPv6 DNS and AllowedIPs
+# Fix for WireGuard - add IPv6 DNS and AllowedIPs
 # [Peer]
 # AllowedIPs = 0.0.0.0/0, ::/0    # Route all including IPv6
 # DNS = 2606:4700:4700::1111
@@ -146,7 +147,7 @@ wg showconf wg0 | grep "DNS"
 
 ```bash
 #!/bin/bash
-# diagnose-ipv6.sh — run on the problematic device
+# diagnose-ipv6.sh - run on the problematic device
 
 echo "=== IPv6 Diagnostic ==="
 
@@ -157,7 +158,7 @@ echo "2. Global addresses:"
 ip -6 addr show | grep "scope global" || echo "   NONE"
 
 echo "3. Link-local addresses (RA reception required):"
-ip -6 addr show | grep "scope link" || echo "   NONE — serious issue"
+ip -6 addr show | grep "scope link" || echo "   NONE - serious issue"
 
 echo "4. Default IPv6 route:"
 ip -6 route show default || echo "   NONE"
@@ -172,4 +173,4 @@ ping6 -c 2 2606:4700:4700::1111 || echo "   FAIL"
 
 ## Conclusion
 
-Inconsistent IPv6 across home network devices is usually caused by one of: IPv6 disabled in OS settings, VPN software blocking IPv6, the device using only DHCPv6 stateful (Android < 14) while the router offers only SLAAC, or the device missing the Router Advertisement during boot. The fix depends on the cause: enable IPv6 in OS settings, configure the router for both SLAAC and stateless DHCPv6 (M=0, O=1), or configure the VPN to allow IPv6 traffic. Always verify that the device has a link-local address first — if it does not, the NIC or driver has a fundamental problem with IPv6.
+Inconsistent IPv6 across home network devices is usually caused by one of: IPv6 disabled in OS settings, VPN software blocking IPv6, the device using only DHCPv6 stateful (Android < 14) while the router offers only SLAAC, or the device missing the Router Advertisement during boot. The fix depends on the cause: enable IPv6 in OS settings, configure the router for both SLAAC and stateless DHCPv6 (M=0, O=1), or configure the VPN to allow IPv6 traffic. Always verify that the device has a link-local address first - if it does not, the NIC or driver has a fundamental problem with IPv6.

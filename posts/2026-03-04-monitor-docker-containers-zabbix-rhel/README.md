@@ -14,6 +14,7 @@ Zabbix Agent 2 includes a native Docker monitoring plugin that communicates with
 
 ```bash
 # Docker must be installed and running
+
 sudo dnf install -y docker-ce
 sudo systemctl enable --now docker
 

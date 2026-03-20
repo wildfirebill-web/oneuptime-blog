@@ -205,6 +205,7 @@ SERVICES = {
 }
 
 # Essential services - composition fails if these fail
+
 ESSENTIAL = {'product', 'pricing', 'inventory'}
 
 async def fetch_service(session, name, url):

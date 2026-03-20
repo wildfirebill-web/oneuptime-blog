@@ -1,4 +1,4 @@
-# How to Set Up CI/CD with Portainer and GitHub Actions
+# How to Set Up CI/CD with Portainer and GitHub Actions - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ GitHub Actions combined with Portainer creates a powerful, free CI/CD pipeline: 
 
 ## Architecture
 
-```
+```text
 Push to main → GitHub Actions → Build image → Push to registry → Trigger Portainer webhook → Container updated
 ```
 
@@ -29,6 +29,7 @@ First, deploy a stack in Portainer that references your container image:
 
 ```yaml
 # docker-compose.yml (in your GitHub repo)
+
 version: "3.8"
 services:
   app:
@@ -224,7 +225,7 @@ jobs:
               echo "ERROR: Application health check failed after 2 minutes"
               exit 1
             fi
-            echo "Attempt $RETRY/$MAX_RETRIES — waiting 10s..."
+            echo "Attempt $RETRY/$MAX_RETRIES - waiting 10s..."
             sleep 10
           done
 

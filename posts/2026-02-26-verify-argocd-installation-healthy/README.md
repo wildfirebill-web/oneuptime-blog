@@ -18,6 +18,7 @@ If you just need a fast answer, run these three commands.
 
 ```bash
 # 1. All pods running?
+
 kubectl get pods -n argocd
 
 # 2. Can ArgoCD reach the Kubernetes API?

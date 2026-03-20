@@ -28,6 +28,7 @@ Pod affinity attracts pods to nodes where specific other pods are already runnin
 
 ```yaml
 # pod-affinity.yaml
+
 # Cache pod that should run on the same node as the web app for low latency
 apiVersion: apps/v1
 kind: Deployment

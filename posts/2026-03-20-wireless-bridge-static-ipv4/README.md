@@ -23,6 +23,7 @@ For a Linux wireless bridge to work, the AP must allow 4-address frames:
 
 ```bash
 # On the access point (hostapd), enable WDS
+
 # /etc/hostapd/hostapd.conf
 wds_sta=1
 

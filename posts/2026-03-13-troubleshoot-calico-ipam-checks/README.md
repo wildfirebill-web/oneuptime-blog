@@ -16,6 +16,7 @@ Calico IPAM issues manifest in two ways: pods fail to schedule due to IP exhaust
 
 ```bash
 # Check pod events for IPAM errors
+
 kubectl describe pod <stuck-pod> -n <namespace> | grep -A5 Events
 # Look for: "failed to allocate IP" or "no more free CIDR blocks"
 

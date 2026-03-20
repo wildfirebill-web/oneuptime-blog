@@ -18,6 +18,7 @@ Break the onboarding into progressive stages that build on each other:
 
 ```yaml
 # onboarding/program-structure.yaml
+
 # Terraform onboarding program for new team members
 
 program:

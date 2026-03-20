@@ -145,6 +145,7 @@ response = client.chat.completions.create(
 )
 
 # Check the content filter results on the response
+
 if hasattr(response.choices[0], 'content_filter_results'):
     filters = response.choices[0].content_filter_results
     print(f"Hate: {filters.get('hate', {}).get('severity', 'safe')}")

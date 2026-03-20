@@ -82,6 +82,7 @@ Attempt 5: Wait 30s (capped by maxDuration)
 
 ```yaml
 # Few retries with long waits - good for production
+
 syncPolicy:
   automated:
     prune: true

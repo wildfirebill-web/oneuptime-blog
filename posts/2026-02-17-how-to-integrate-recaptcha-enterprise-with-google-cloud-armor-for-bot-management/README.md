@@ -54,6 +54,7 @@ WAF integration requires a specific type of reCAPTCHA key:
 
 ```bash
 # Create a WAF-type reCAPTCHA Enterprise key for Cloud Armor integration
+
 gcloud recaptcha keys create \
   --display-name="Cloud Armor WAF Key" \
   --web \

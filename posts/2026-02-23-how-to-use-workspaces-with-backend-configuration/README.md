@@ -20,6 +20,7 @@ The S3 backend is the most popular choice for AWS-based infrastructure. It store
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "company-terraform-state"

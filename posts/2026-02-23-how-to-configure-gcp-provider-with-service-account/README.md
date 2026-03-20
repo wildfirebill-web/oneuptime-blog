@@ -26,6 +26,7 @@ Service accounts are the standard way to authenticate automated workloads includ
 
 ```bash
 # Set your project
+
 export PROJECT_ID="my-project-123"
 gcloud config set project $PROJECT_ID
 

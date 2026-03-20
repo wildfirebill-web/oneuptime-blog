@@ -22,6 +22,7 @@ The layered pattern organizes modules by infrastructure layers, where each layer
 
 ```hcl
 # Layer 1: Foundation (networking, DNS, shared resources)
+
 module "foundation" {
   source = "./modules/foundation"
 

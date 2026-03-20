@@ -150,6 +150,7 @@ resource "aws_eks_node_group" "main" {
 
 ```hcl
 # Variable validation: runs at plan time, before any resources are read
+
 variable "instance_type" {
   type = string
   validation {

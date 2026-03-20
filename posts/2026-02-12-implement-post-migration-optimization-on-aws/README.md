@@ -32,6 +32,7 @@ Let your workloads run for at least 2 weeks on AWS before right-sizing. You need
 
 ```bash
 # Use AWS Compute Optimizer to get recommendations
+
 aws compute-optimizer get-ec2-instance-recommendations \
     --filters 'name=Finding,values=OVER_PROVISIONED' \
     --query 'instanceRecommendations[].{

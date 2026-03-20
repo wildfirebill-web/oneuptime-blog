@@ -51,6 +51,7 @@ Let us create the zones for the services you are using. This script creates Priv
 
 ```bash
 # Resource group for DNS zones (centralized management)
+
 RG_DNS="rg-dns-zones"
 az group create --name $RG_DNS --location eastus
 

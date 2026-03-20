@@ -33,6 +33,7 @@ Create a GKE cluster that matches your EKS cluster configuration:
 
 ```hcl
 # gke-cluster.tf
+
 # GKE cluster matching EKS cluster specifications
 
 resource "google_container_cluster" "primary" {

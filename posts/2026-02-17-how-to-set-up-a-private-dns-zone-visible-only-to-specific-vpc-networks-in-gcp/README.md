@@ -22,6 +22,7 @@ When a VM in an authorized VPC makes a DNS query that matches a private zone, Cl
 
 ```bash
 # Create a private DNS zone visible to a specific VPC
+
 gcloud dns managed-zones create internal-zone \
     --dns-name="internal.mycompany.com." \
     --description="Private DNS for internal services" \

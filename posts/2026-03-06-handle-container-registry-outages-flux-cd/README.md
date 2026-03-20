@@ -25,6 +25,7 @@ Existing running pods are not affected unless they restart, because images are a
 
 ```yaml
 # alerts/registry-outage-alert.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

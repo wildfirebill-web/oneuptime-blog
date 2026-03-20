@@ -36,6 +36,7 @@ This set of alerting rules covers the most common failure modes for the OpenTele
 
 ```yaml
 # otel-operator-alerts.yaml
+
 # Prometheus alerting rules for the OpenTelemetry Operator
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule

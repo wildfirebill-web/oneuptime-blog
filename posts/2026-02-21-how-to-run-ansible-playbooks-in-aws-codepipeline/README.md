@@ -35,6 +35,7 @@ CodeBuild uses a `buildspec.yml` file to define what commands to run. Create one
 
 ```yaml
 # buildspec.yml - Ansible deployment build spec
+
 version: 0.2
 
 env:

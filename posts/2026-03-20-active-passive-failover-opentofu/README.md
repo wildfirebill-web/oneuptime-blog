@@ -14,6 +14,7 @@ Active-passive failover routes all traffic to the primary environment while keep
 
 ```hcl
 # main.tf - Comprehensive health check for active-passive
+
 resource "aws_route53_health_check" "primary_deep" {
   fqdn              = var.primary_alb_dns
   port              = 443

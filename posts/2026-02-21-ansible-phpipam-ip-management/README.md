@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, PhpIPAM, IPAM, Networks
+Tags: Ansible, phpIPAM, IPAM, Networks
 
 Description: Integrate Ansible with phpIPAM for automated IP address allocation and management during server provisioning.
 
@@ -14,6 +14,7 @@ phpIPAM is an open-source IP Address Management tool. Ansible can interact with 
 
 ```yaml
 # tasks/phpipam-allocate.yml
+
 ---
 - name: Get next available IP from phpIPAM
   ansible.builtin.uri:

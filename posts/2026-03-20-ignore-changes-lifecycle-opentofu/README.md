@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, ignore_changes, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Lifecycle, Ignore_changes, Infrastructure as Code, DevOps
 
 Description: A guide to using ignore_changes lifecycle in OpenTofu to prevent specific resource attributes from being managed by OpenTofu after initial creation.
 
@@ -104,6 +104,7 @@ resource "aws_ecs_task_definition" "app" {
 
 ```hcl
 # Ignore ALL changes - OpenTofu only manages creation and deletion
+
 resource "aws_instance" "manually_managed" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.micro"
@@ -167,4 +168,4 @@ resource "aws_eks_cluster" "main" {
 
 ## Conclusion
 
-`ignore_changes` bridges the gap between OpenTofu-managed infrastructure and externally-modified attributes. It's particularly valuable for autoscaling groups (managed capacity), password rotation, and resources with attributes modified by other automation. Use it judiciously — overusing it can cause OpenTofu to become unaware of significant drift, undermining the benefits of infrastructure as code. Document why each `ignore_changes` entry exists to help future engineers understand the intent.
+`ignore_changes` bridges the gap between OpenTofu-managed infrastructure and externally-modified attributes. It's particularly valuable for autoscaling groups (managed capacity), password rotation, and resources with attributes modified by other automation. Use it judiciously - overusing it can cause OpenTofu to become unaware of significant drift, undermining the benefits of infrastructure as code. Document why each `ignore_changes` entry exists to help future engineers understand the intent.

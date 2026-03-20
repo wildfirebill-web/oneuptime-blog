@@ -29,6 +29,7 @@ First, ensure your cluster has GPU nodes and the NVIDIA device plugin:
 
 ```bash
 # Verify GPU nodes
+
 kubectl get nodes -l nvidia.com/gpu.present=true
 
 # Check GPU capacity

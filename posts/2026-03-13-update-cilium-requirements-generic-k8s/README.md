@@ -30,6 +30,7 @@ Cilium requires specific kernel capabilities. Check each node thoroughly.
 
 ```bash
 # Check kernel version on all nodes
+
 kubectl get nodes -o custom-columns="NODE:.metadata.name,KERNEL:.status.nodeInfo.kernelVersion"
 
 # On individual nodes, check BPF support

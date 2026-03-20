@@ -18,6 +18,7 @@ The foundation of multi-region Terraform is provider aliases. Each alias creates
 
 ```hcl
 # Default provider - primary region
+
 provider "aws" {
   region = "us-east-1"
 }

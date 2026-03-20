@@ -31,6 +31,7 @@ Before upgrading, verify your manifests are compatible with the new Kubernetes v
 
 ```yaml
 # Pre-upgrade validation job
+
 apiVersion: batch/v1
 kind: Job
 metadata:

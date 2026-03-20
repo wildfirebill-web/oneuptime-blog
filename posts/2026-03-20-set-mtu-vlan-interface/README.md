@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTU, VLAN, Linux, 802.1Q, ip link, Networking, Jumbo Frames
+Tags: MTU, VLAN, Linux, 802.1Q, Ip link, Networking, Jumbo Frames
 
 Description: Learn how to set the MTU on a Linux VLAN interface, including the relationship between parent interface MTU and VLAN MTU, and how to configure jumbo frames for storage and high-performance networks.
 
@@ -14,6 +14,7 @@ The MTU (Maximum Transmission Unit) of a VLAN interface cannot exceed the MTU of
 
 ```bash
 # Set MTU on a standard VLAN interface
+
 ip link set eth0.100 mtu 1500
 
 # For jumbo frames on a VLAN:
@@ -117,4 +118,4 @@ ping -M do -s 8972 192.168.100.2   # 8972 + 28 header = 9000
 - The VLAN interface MTU cannot exceed the parent interface MTU; raise both together.
 - For jumbo frames, set the parent interface to 9000 and the VLAN interface to 9000.
 - In systemd-networkd, set `MTUBytes` in the `[Link]` section of both the parent and VLAN network files.
-- Test end-to-end jumbo frames with `ping -M do -s 8972` — even one hop without jumbo frame support causes failures.
+- Test end-to-end jumbo frames with `ping -M do -s 8972` - even one hop without jumbo frame support causes failures.

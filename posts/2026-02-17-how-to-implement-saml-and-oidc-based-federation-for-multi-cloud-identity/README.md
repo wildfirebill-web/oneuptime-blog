@@ -37,6 +37,7 @@ This allows AWS workloads to access Google Cloud resources without service accou
 
 ```bash
 # Create a Workload Identity Pool for AWS workloads
+
 gcloud iam workload-identity-pools create aws-workloads \
   --location=global \
   --display-name="AWS Workloads" \

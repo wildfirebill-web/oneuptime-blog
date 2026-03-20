@@ -669,6 +669,7 @@ Helm automatically validates values against the schema during install, upgrade, 
 
 ```bash
 # Schema validation happens automatically
+
 helm install my-release ./my-chart -f values.yaml
 
 # Validation also runs during template
@@ -810,7 +811,7 @@ helm schema -input values.yaml -output values.schema.json
 }
 ```
 
-### Resource Quantity Pattern
+Resource Quantity Pattern
 
 ```json
 {

@@ -16,7 +16,7 @@ When both team and individual user policies exist for an environment, the **most
 - Team Operator + User Standard User → User gets Operator access
 - Team Helpdesk + User Standard User → User gets Standard User access
 
-To restrict a user below their team level, you cannot use additive overrides — you'd need to remove them from the team and assign individually.
+To restrict a user below their team level, you cannot use additive overrides - you'd need to remove them from the team and assign individually.
 
 ## Assign Individual User Policy
 
@@ -28,6 +28,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # View current access policies for environment 1
+
 curl -s https://localhost:9443/api/endpoints/1 \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

@@ -8,7 +8,7 @@ Description: Add comprehensive health checks to every service in a Portainer sta
 
 ---
 
-A stack where every service has a health check is significantly more reliable — startup ordering is correct, failed containers are automatically replaced, and Portainer shows accurate health status for all services.
+A stack where every service has a health check is significantly more reliable - startup ordering is correct, failed containers are automatically replaced, and Portainer shows accurate health status for all services.
 
 ## Complete Stack with Health Checks
 
@@ -84,6 +84,7 @@ Design a dedicated `/health` endpoint that returns 200 when ready:
 
 ```python
 # health_endpoint.py
+
 @app.route("/health")
 def health():
     # Check database connectivity

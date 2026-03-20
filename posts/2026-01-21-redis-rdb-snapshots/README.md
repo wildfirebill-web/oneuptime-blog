@@ -24,6 +24,7 @@ The primary RDB configuration is done in your `redis.conf` file:
 
 ```bash
 # Save the dataset every 900 seconds (15 minutes) if at least 1 key changed
+
 save 900 1
 
 # Save the dataset every 300 seconds (5 minutes) if at least 10 keys changed

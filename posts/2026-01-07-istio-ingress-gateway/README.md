@@ -73,6 +73,7 @@ The following deployment creates a simple httpbin service that we will use throu
 
 ```yaml
 # httpbin-deployment.yaml
+
 # This deployment creates the httpbin application which is useful for testing HTTP scenarios
 apiVersion: apps/v1
 kind: Deployment

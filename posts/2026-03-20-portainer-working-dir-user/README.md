@@ -39,8 +39,9 @@ In the container creation form in Portainer:
 3. Find the **Working dir** field.
 4. Enter the desired directory path.
 
-```
+```text
 # Examples:
+
 Working dir: /app
 Working dir: /var/www/html
 Working dir: /home/appuser
@@ -53,7 +54,7 @@ This is equivalent to the `-w` flag in `docker run` or `WORKDIR` in a Dockerfile
 
 In the same section, find the **User** field:
 
-```
+```text
 # Run as a specific user by name:
 User: nginx
 User: www-data
@@ -155,7 +156,7 @@ sudo chmod -R g+rw /data/myapp
 ```
 
 In Portainer, if a container fails to start with a permissions error:
-1. Check the **Logs** — look for "Permission denied".
+1. Check the **Logs** - look for "Permission denied".
 2. On the host, fix ownership of the mounted path.
 3. Or set the container user to one that can read the files.
 
@@ -194,4 +195,4 @@ services:
 
 ## Conclusion
 
-Setting the working directory and user in Portainer are two simple configuration changes that meaningfully improve container security and application correctness. Always prefer running containers as non-root users — use established non-root users from official images, or create dedicated users in your Dockerfiles. The working directory ensures your application finds its files without relying on hardcoded absolute paths.
+Setting the working directory and user in Portainer are two simple configuration changes that meaningfully improve container security and application correctness. Always prefer running containers as non-root users - use established non-root users from official images, or create dedicated users in your Dockerfiles. The working directory ensures your application finds its files without relying on hardcoded absolute paths.

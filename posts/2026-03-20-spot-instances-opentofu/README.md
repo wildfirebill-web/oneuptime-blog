@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Spot Instances, AWS, EC2, Cost Optimization, Infrastructure as Code
 
-Description: Learn how to run EC2 Spot Instances with OpenTofu — configuring Spot requests, interruption handlers, mixed instance ASGs, and Spot Fleet for cost-optimized compute workloads.
+Description: Learn how to run EC2 Spot Instances with OpenTofu - configuring Spot requests, interruption handlers, mixed instance ASGs, and Spot Fleet for cost-optimized compute workloads.
 
 ## Introduction
 
-EC2 Spot Instances offer up to 90% cost savings over On-Demand pricing by using spare AWS capacity. The trade-off is a two-minute interruption notice when AWS reclaims capacity. OpenTofu manages Spot configuration for individual instances, Auto Scaling Groups, and Spot Fleets — with interruption handling built into the launch template.
+EC2 Spot Instances offer up to 90% cost savings over On-Demand pricing by using spare AWS capacity. The trade-off is a two-minute interruption notice when AWS reclaims capacity. OpenTofu manages Spot configuration for individual instances, Auto Scaling Groups, and Spot Fleets - with interruption handling built into the launch template.
 
 ## Spot Instance via Launch Template
 
@@ -42,6 +42,7 @@ resource "aws_launch_template" "spot" {
 ```bash
 #!/bin/bash
 # Install spot interruption handler
+
 # Polls IMDSv2 every 5 seconds for interruption notice
 cat > /usr/local/bin/spot-interrupt-handler.sh << 'EOF'
 #!/bin/bash
@@ -54,7 +55,7 @@ while true; do
     http://169.254.169.254/latest/meta-data/spot/termination-time)
 
   if [ "$STATUS" -eq 200 ]; then
-    echo "Spot interruption notice received — draining..."
+    echo "Spot interruption notice received - draining..."
     # Signal application to stop accepting new work
     systemctl stop app
     # Complete current work item then exit
@@ -155,7 +156,7 @@ resource "aws_cloudwatch_metric_alarm" "spot_capacity" {
   period              = 60
   statistic           = "Average"
   threshold           = var.asg_min_size
-  alarm_description   = "ASG desired capacity below minimum — possible Spot interruptions"
+  alarm_description   = "ASG desired capacity below minimum - possible Spot interruptions"
 
   dimensions = {
     AutoScalingGroupName = aws_autoscaling_group.spot_mixed.name

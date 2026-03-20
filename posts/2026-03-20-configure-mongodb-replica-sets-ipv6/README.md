@@ -28,6 +28,7 @@ security:
 
 ```bash
 # Generate a shared key for replica set authentication
+
 openssl rand -base64 756 > /etc/mongodb/keyfile
 chmod 400 /etc/mongodb/keyfile
 chown mongod:mongod /etc/mongodb/keyfile

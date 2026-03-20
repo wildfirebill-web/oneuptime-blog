@@ -27,6 +27,7 @@ Deploy Portainer on a dedicated VM or cloud instance. 4 vCPUs and 8 GB RAM comfo
 
 ```bash
 # Install Docker Engine
+
 curl -fsSL https://get.docker.com | sh
 
 # Deploy Portainer CE
@@ -57,7 +58,7 @@ Pre-load learning templates via Portainer's **App Templates** so students can de
   {
     "type": 1,
     "title": "Exercise 1: Hello World Nginx",
-    "description": "Deploy your first container — Nginx serving a static page",
+    "description": "Deploy your first container - Nginx serving a static page",
     "image": "nginx:alpine",
     "name": "exercise1-nginx",
     "ports": ["8080:80"],

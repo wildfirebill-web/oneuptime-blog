@@ -156,6 +156,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "app" {
 
 ```bash
 # Get kubeconfig
+
 az aks get-credentials \
   --resource-group $(tofu output -raw resource_group_name) \
   --name $(tofu output -raw cluster_name)

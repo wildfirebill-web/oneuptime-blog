@@ -251,6 +251,7 @@ After consumer tests pass, publish the generated contracts to the broker.
 
 ```bash
 # Using the Pact CLI
+
 pact-broker publish ./pacts \
   --consumer-app-version=$(git rev-parse HEAD) \
   --branch=$(git branch --show-current) \

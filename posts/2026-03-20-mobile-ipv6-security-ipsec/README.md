@@ -19,7 +19,7 @@ Without IPsec, an attacker could:
 
 ## Required IPsec Policies (RFC 3776)
 
-```
+```text
 Policy 1: MN → HA Binding Update
   Source: MN Home Address
   Destination: HA Address
@@ -47,6 +47,7 @@ Policy 3: MN → HA Tunnel (data traffic)
 # Using ip xfrm (kernel IPsec) to configure MIPv6 security associations
 
 # SPI values must be agreed upon (or negotiated via IKEv2)
+
 HA_ADDR="2001:db8:home::ha"
 MN_HOME="2001:db8:home::mn"
 MN_COA="fd00:foreign::mn"

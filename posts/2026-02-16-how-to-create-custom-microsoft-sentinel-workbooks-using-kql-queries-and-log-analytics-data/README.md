@@ -261,6 +261,7 @@ To export as an ARM template:
 
 ```bash
 # Export a workbook as an ARM template
+
 az monitor workbook show \
   --name "your-workbook-id" \
   --resource-group myResourceGroup \

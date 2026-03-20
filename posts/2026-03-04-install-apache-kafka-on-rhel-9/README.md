@@ -20,6 +20,7 @@ Apache Kafka is a distributed event streaming platform used for building real-ti
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install Java (required for Kafka)

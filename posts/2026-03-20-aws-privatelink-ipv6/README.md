@@ -20,6 +20,7 @@ AWS PrivateLink IPv6 enables private IPv6 connectivity between cloud resources a
 
 ```bash
 # Check VPC has IPv6 CIDR
+
 aws ec2 describe-vpcs --query 'Vpcs[].{VpcId:VpcId, IPv6CIDRs:Ipv6CidrBlockAssociationSet}'
 ```
 

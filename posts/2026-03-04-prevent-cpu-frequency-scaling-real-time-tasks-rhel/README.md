@@ -14,6 +14,7 @@ CPU frequency scaling (also called dynamic voltage and frequency scaling) adjust
 
 ```bash
 # View the active frequency governor for each CPU
+
 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
 # Check the current CPU frequencies

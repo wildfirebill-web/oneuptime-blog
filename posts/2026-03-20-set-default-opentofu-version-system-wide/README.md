@@ -1,8 +1,8 @@
-# How to Set a Default OpenTofu Version System-Wide
+# How to Set a Default OpenTofu Version System-Wide - System Wide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Version Management, tofuenv, asdf, Linux, macOS, Infrastructure as Code
+Tags: OpenTofu, Version Management, tofuenv, Asdf, Linux, macOS, Infrastructure as Code
 
 Description: Learn how to configure a system-wide default OpenTofu version that applies to all users and projects without a local version override.
 
@@ -16,6 +16,7 @@ A system-wide default OpenTofu version is the version used when no project-speci
 
 ```bash
 # Set the global (system-wide) default
+
 tofuenv use 1.9.0
 
 # tofuenv stores the global version in
@@ -112,7 +113,7 @@ tofuenv list
 For CI/CD systems (GitHub Actions, GitLab CI), pin the version in the workflow file to ensure consistent defaults.
 
 ```yaml
-# GitHub Actions — set system-wide default for the pipeline
+# GitHub Actions - set system-wide default for the pipeline
 - name: Install OpenTofu
   uses: opentofu/setup-opentofu@v1
   with:

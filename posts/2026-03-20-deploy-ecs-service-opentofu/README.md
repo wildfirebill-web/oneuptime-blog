@@ -29,6 +29,7 @@ resource "aws_ecs_cluster" "main" {
 
 ```hcl
 # Execution role: lets ECS pull images and write logs
+
 resource "aws_iam_role" "ecs_execution" {
   name               = "${var.service_name}-execution-role"
   assume_role_policy = data.aws_iam_policy_document.ecs_assume.json

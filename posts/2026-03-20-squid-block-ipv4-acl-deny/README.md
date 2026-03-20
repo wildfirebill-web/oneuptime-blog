@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, IPv4, ACL, Deny, Blocking, Access Control
+Tags: Squid, IPv4, ACL, DENY, Blocking, Access Control
 
 Description: Use Squid ACL deny rules to block specific IPv4 addresses, subnets, and ranges from using the proxy or accessing specific destinations.
 
@@ -16,6 +16,7 @@ Squid ACL deny rules block traffic based on client IP, destination IP, domain, o
 # /etc/squid/squid.conf
 
 # Define blocked client IPs
+
 acl blocked_clients src 192.0.2.100      # Single blocked IP
 acl blocked_clients src 198.51.100.0/24  # Blocked subnet
 

@@ -39,6 +39,7 @@ Before calculating anything, you need to know your numbers. If you already have 
 
 ```yaml
 # Telemetry volume inventory worksheet
+
 # Fill in your actual numbers
 services:
   total_count: 75

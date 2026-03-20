@@ -71,6 +71,7 @@ volumes:
 
 ```yaml
 # filebeat.yml
+
 filebeat.inputs:
   - type: container
     paths:

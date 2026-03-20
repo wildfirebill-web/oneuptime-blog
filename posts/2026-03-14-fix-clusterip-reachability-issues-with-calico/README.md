@@ -38,6 +38,7 @@ calicoctl get nodes -o yaml > backup-nodes.yaml
 
 ```bash
 # Restart kube-proxy to refresh iptables rules
+
 kubectl rollout restart daemonset -n kube-system kube-proxy
 kubectl rollout status daemonset -n kube-system kube-proxy
 ```

@@ -68,6 +68,7 @@ Common sort key patterns:
 
 ```text
 # Timestamp-based
+
 Sort key: createdAt (String)  - store ISO dates like "2026-02-12T10:30:00Z"
 
 # Hierarchical

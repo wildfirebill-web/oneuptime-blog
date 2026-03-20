@@ -30,6 +30,7 @@ The standard approach is to set environment variables on the ArgoCD components:
 
 ```yaml
 # argocd-repo-server-proxy.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -58,6 +58,7 @@ Here's a minimal pprof extension configuration:
 
 ```yaml
 # Basic pprof extension configuration
+
 extensions:
   pprof:
     # Endpoint for pprof HTTP server

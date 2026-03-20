@@ -26,6 +26,7 @@ MicroK8s installs via snap. You can choose a specific Kubernetes version track t
 
 ```bash
 # Install the latest stable release
+
 sudo snap install microk8s --classic
 
 # Or pin to a specific Kubernetes version

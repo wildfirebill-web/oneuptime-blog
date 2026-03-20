@@ -37,6 +37,7 @@ python3 << 'EOF'
 import subprocess, yaml, sys
 
 # Load policies
+
 with open('policies/production-policies.yaml') as f:
     policies = list(yaml.safe_load_all(f))
 

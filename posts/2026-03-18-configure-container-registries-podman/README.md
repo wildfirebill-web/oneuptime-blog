@@ -20,6 +20,7 @@ Podman reads registry configuration from TOML files. There are two primary locat
 
 ```bash
 # System-wide configuration (applies to all users)
+
 /etc/containers/registries.conf
 
 # User-level override (applies only to the current user)

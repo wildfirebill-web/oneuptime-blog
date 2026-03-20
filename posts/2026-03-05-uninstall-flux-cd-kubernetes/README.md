@@ -32,6 +32,7 @@ Before uninstalling, suspend all Flux resources to prevent reconciliation loops 
 
 ```bash
 # Suspend all Kustomizations across all namespaces
+
 flux suspend kustomization --all -A
 
 # Suspend all HelmReleases across all namespaces

@@ -41,6 +41,7 @@ wireguard-vpn/
 
 ```yaml
 # roles/wireguard/defaults/main.yml - WireGuard configuration defaults
+
 wireguard_port: 51820
 wireguard_interface: wg0
 wireguard_address: 10.100.0.1/24

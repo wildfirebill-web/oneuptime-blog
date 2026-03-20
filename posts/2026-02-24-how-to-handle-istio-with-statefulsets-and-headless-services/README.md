@@ -16,6 +16,7 @@ A regular Kubernetes Service has a ClusterIP that load-balances across pods. A h
 
 ```yaml
 # Regular Service - has a ClusterIP
+
 apiVersion: v1
 kind: Service
 metadata:

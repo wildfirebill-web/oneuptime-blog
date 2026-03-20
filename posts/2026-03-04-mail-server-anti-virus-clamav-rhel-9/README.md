@@ -33,6 +33,7 @@ graph LR
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install ClamAV and the milter interface

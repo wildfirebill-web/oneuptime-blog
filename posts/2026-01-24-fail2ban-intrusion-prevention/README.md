@@ -48,6 +48,7 @@ flowchart TD
 
 ```bash
 # Update package list and install fail2ban
+
 apt-get update
 apt-get install -y fail2ban
 

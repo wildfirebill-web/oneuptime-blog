@@ -26,6 +26,7 @@ Enable profiling on Flux controllers to identify bottlenecks.
 
 ```yaml
 # Enable pprof profiling on source-controller for CPU analysis
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

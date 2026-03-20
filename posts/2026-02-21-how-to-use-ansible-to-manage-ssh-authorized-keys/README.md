@@ -16,6 +16,7 @@ The most basic use case is deploying a public key for a user.
 
 ```yaml
 # Add an SSH public key for the deploy user
+
 - name: Add deploy user SSH key
   ansible.posix.authorized_key:
     user: deploy

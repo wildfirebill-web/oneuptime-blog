@@ -23,6 +23,7 @@ When Flux processes a HelmRelease, it:
 
 ```bash
 # Check which version Flux currently has installed
+
 kubectl get helmrelease -n my-namespace my-release -o jsonpath='{.status.lastAppliedRevision}'
 
 # Check which chart version is being used

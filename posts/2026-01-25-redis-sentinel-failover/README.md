@@ -53,6 +53,7 @@ graph TB
 
 ```bash
 # redis-master.conf
+
 bind 0.0.0.0
 port 6379
 requirepass your-secure-password

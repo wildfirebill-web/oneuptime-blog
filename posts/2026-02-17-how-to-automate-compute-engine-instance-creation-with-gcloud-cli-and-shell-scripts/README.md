@@ -18,6 +18,7 @@ Let us start with the simplest case. This command creates a single Compute Engin
 
 ```bash
 # Create a basic e2-medium instance in us-central1-a
+
 gcloud compute instances create my-vm \
   --zone=us-central1-a \
   --machine-type=e2-medium \

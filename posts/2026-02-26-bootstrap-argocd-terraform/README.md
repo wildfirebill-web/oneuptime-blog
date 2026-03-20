@@ -35,6 +35,7 @@ Start with your cluster. This example uses AWS EKS, but the same pattern works f
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

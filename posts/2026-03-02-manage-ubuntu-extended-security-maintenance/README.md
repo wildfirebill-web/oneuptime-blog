@@ -27,6 +27,7 @@ Without ESM, running Ubuntu 18.04 LTS past April 2023 (its standard EOL) means r
 
 ```bash
 # View overall Pro and ESM status
+
 pro status
 
 # Check specifically what ESM covers on your system

@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewall Testing, Packet Crafting, Security Testing, ip6tables, Scapy
+Tags: IPv6, Firewall Testing, Packet Crafting, Security Testing, Ip6tables, Scapy
 
 Description: A guide to testing IPv6 firewall rules using packet crafting tools to verify that ip6tables, pf, and hardware firewalls correctly filter IPv6 traffic.
 
-Testing firewall rules with crafted packets verifies that your IPv6 firewall actually blocks what it should block — and permits what it should permit. This is especially important for IPv6 where firewalls may have incomplete rule sets compared to their IPv4 counterparts.
+Testing firewall rules with crafted packets verifies that your IPv6 firewall actually blocks what it should block - and permits what it should permit. This is especially important for IPv6 where firewalls may have incomplete rule sets compared to their IPv4 counterparts.
 
 ## Testing Methodology
 
-```
+```text
 Blocked:  Crafted packet → Firewall → DROP (no response)
 Permitted: Crafted packet → Firewall → Passes through
 ```
@@ -19,6 +19,7 @@ Permitted: Crafted packet → Firewall → Passes through
 
 ```bash
 # View all IPv6 firewall rules
+
 sudo ip6tables -L -n -v --line-numbers
 
 # View specific table
@@ -98,7 +99,7 @@ send(pkt, iface='eth0')
 Test that critical ICMPv6 is permitted:
 
 ```bash
-# Packet Too Big — must be allowed (required for PMTUD)
+# Packet Too Big - must be allowed (required for PMTUD)
 python3 -c "
 from scapy.all import *
 from scapy.layers.inet6 import *
@@ -128,7 +129,7 @@ curl -6 --max-time 10 http://[2001:db8::target]/large-file
 
 ```bash
 #!/bin/bash
-# ipv6-fw-test.sh — Test IPv6 firewall rules
+# ipv6-fw-test.sh - Test IPv6 firewall rules
 
 TARGET="2001:db8::target"
 IFACE="eth0"
@@ -153,4 +154,4 @@ test_port 23 0
 test_port 3389 0
 ```
 
-Regular firewall testing with packet crafting ensures that IPv6 firewall rules are as complete and correct as IPv4 rules — a gap that often exists in organizations that added IPv6 without reviewing their complete security posture.
+Regular firewall testing with packet crafting ensures that IPv6 firewall rules are as complete and correct as IPv4 rules - a gap that often exists in organizations that added IPv6 without reviewing their complete security posture.

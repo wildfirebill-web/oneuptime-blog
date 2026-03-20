@@ -735,6 +735,7 @@ Configure your Kubernetes deployment with appropriate probe settings. The values
 
 ```yaml
 # k8s/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

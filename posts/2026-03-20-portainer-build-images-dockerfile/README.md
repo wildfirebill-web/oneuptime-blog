@@ -1,4 +1,4 @@
-# How to Build Docker Images from a Dockerfile in Portainer
+# How to Build Docker Images from a Dockerfile in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,13 +28,13 @@ You'll see a build form with several options.
 
 Enter a name and tag for the image being built:
 
-```
+```text
 Name: myorg/myapp:v2.1.0
 ```
 
 Or for a local-only image:
 
-```
+```text
 Name: myapp-local:latest
 ```
 
@@ -46,6 +46,7 @@ Click **Web editor** and paste your Dockerfile:
 
 ```dockerfile
 # Simple web application Dockerfile
+
 FROM node:20-alpine
 
 # Set working directory
@@ -100,7 +101,7 @@ COPY . .
 ```
 
 In Portainer's build form, add build arguments:
-```
+```text
 Name:  APP_VERSION     Value: 2.1.0
 Name:  PYTHON_VERSION  Value: 3.12
 Name:  BUILD_DATE      Value: 2026-03-20
@@ -193,7 +194,7 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -o /myapp .
 
 # ==================
-# Final image — scratch (no OS!)
+# Final image - scratch (no OS!)
 FROM scratch
 
 # Copy binary and certificates
@@ -213,7 +214,7 @@ After configuring the build:
 
 Portainer shows a live build log:
 
-```
+```yaml
 Step 1/8 : FROM node:20-alpine
  ---> 7abc...
 Step 2/8 : WORKDIR /app
@@ -237,18 +238,18 @@ After the build:
 
 ## Troubleshooting Build Failures
 
-```
+```bash
 # Error: "failed to solve with frontend dockerfile.v0"
-# Fix: Dockerfile syntax error — check the error message for the line
+# Fix: Dockerfile syntax error - check the error message for the line
 
 # Error: "error: exec: 'npm': executable file not found"
-# Fix: Wrong base image — verify FROM line
+# Fix: Wrong base image - verify FROM line
 
 # Error: "COPY failed: file not found in build context"
 # Fix: The file path in COPY doesn't exist in the uploaded context
 
 # Error: "no space left on device"
-# Fix: Docker host disk is full — clean up images:
+# Fix: Docker host disk is full - clean up images:
 docker image prune -af
 ```
 

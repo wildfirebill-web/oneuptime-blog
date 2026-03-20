@@ -14,6 +14,7 @@ NATS is a lightweight, high-performance messaging system designed for cloud-nati
 
 ```bash
 # Download the NATS server binary
+
 curl -L https://github.com/nats-io/nats-server/releases/download/v2.10.11/nats-server-v2.10.11-linux-amd64.tar.gz \
   -o /tmp/nats-server.tar.gz
 tar xzf /tmp/nats-server.tar.gz -C /tmp/

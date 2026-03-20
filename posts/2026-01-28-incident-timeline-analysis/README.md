@@ -434,6 +434,7 @@ Raw events without context are hard to interpret later:
 # Good vs bad timeline entries
 
 # Bad: Missing context
+
 bad_entry = "Restarted service"
 
 # Good: Full context

@@ -18,6 +18,7 @@ Compute Engine is the backbone of GCP's infrastructure. Whether you are running 
 
 ```bash
 # Install the GCP collection and dependencies
+
 ansible-galaxy collection install google.cloud
 pip install google-auth requests google-api-python-client
 ```

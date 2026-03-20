@@ -783,6 +783,7 @@ class UserServicer(user_pb2_grpc.UserServiceServicer):
 
 
 # Client-side error handling
+
 def handle_grpc_error(error: grpc.RpcError) -> None:
     """Handle gRPC error with rich details extraction."""
     # Get status

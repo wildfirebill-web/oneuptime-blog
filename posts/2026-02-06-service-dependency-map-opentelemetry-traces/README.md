@@ -36,6 +36,7 @@ This Collector config generates call metrics between services from trace data:
 
 ```yaml
 # dependency-map-collector.yaml
+
 receivers:
   otlp:
     protocols:

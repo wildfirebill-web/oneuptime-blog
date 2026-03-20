@@ -22,6 +22,7 @@ Validating the Calico VPP uplink configuration is critical because an incorrectl
 
 ```bash
 # On the node, verify the NIC is bound to vfio-pci (not Linux driver)
+
 dpdk-devbind.py --status-dev net
 
 # Expected output for DPDK mode:

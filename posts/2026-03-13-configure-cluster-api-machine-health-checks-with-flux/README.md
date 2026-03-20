@@ -27,6 +27,7 @@ This guide covers configuring MachineHealthChecks for different scenarios, setti
 
 ```yaml
 # clusters/workloads/production-cluster/machinehealthcheck-default.yaml
+
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: MachineHealthCheck
 metadata:

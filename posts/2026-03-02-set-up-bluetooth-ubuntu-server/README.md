@@ -16,6 +16,7 @@ Ubuntu Server doesn't install Bluetooth tools by default:
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install BlueZ (the Linux Bluetooth protocol stack) and utilities

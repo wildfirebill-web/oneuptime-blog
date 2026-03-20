@@ -45,6 +45,7 @@ sequenceDiagram
 
 ```bash
 # Create a WebSocket API with selection expression for routing messages
+
 aws apigatewayv2 create-api \
   --name my-websocket-api \
   --protocol-type WEBSOCKET \

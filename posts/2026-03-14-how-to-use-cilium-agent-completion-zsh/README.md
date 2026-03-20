@@ -32,6 +32,7 @@ Familiarize yourself with the tools and commands needed for cilium-agent shell c
 
 ```bash
 # Verify Cilium is installed and accessible
+
 cilium version
 
 # Check the current deployment status

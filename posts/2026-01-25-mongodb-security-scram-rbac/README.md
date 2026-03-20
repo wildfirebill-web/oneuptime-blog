@@ -63,6 +63,7 @@ Update the MongoDB configuration file:
 
 ```yaml
 # /etc/mongod.conf
+
 security:
   authorization: enabled
 

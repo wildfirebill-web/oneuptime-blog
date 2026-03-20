@@ -26,6 +26,7 @@ Verify your system meets these requirements:
 
 ```powershell
 # Check your Windows version
+
 winver
 
 # Check if WSL2 is installed

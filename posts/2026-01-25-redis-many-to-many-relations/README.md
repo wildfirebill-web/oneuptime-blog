@@ -20,6 +20,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 # Example: Students and Courses (many-to-many)
+
 # A student can enroll in many courses
 # A course can have many students
 

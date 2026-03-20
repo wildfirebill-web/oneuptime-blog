@@ -38,7 +38,7 @@ Netplan is strict about YAML formatting. Use spaces, never tabs.
 ```yaml
 network:
     ethernets:
-	ens3:          # TAB used here — causes error
+	ens3:          # TAB used here - causes error
     dhcp4: true
 ```
 
@@ -64,6 +64,7 @@ Verify your interface name:
 ```bash
 ip link show
 # or
+
 ls /sys/class/net/
 ```
 

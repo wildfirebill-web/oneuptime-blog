@@ -27,6 +27,7 @@ This guide covers the systematic verification of your Cilium performance test en
 
 ```bash
 # Verify all test nodes have identical hardware
+
 for node in $(kubectl get nodes -o name); do
   echo "=== $node ===" 
   kubectl get $node -o json | jq ".status.capacity"

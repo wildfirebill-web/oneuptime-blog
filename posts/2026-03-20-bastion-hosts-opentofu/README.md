@@ -83,6 +83,7 @@ output "bastion_ip" {
 
 ```bash
 # Direct SSH via bastion (ProxyJump)
+
 ssh -J ec2-user@<bastion-ip> ec2-user@<private-instance-ip>
 
 # Configure in ~/.ssh/config

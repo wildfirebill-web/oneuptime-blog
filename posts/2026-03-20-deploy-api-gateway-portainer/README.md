@@ -1,8 +1,8 @@
-# How to Deploy an API Gateway with Portainer
+# How to Deploy an API Gateway with Portainer - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API Gateway, Kong, NGINX, Microservices, Docker Compose, Rate Limiting
+Tags: Portainer, API Gateway, Kong, Nginx, Microservices, Docker Compose, Rate Limiting
 
 Description: Learn how to deploy Kong as an API gateway via Portainer for rate limiting, authentication, and request routing to backend microservices.
 
@@ -79,6 +79,7 @@ After deployment, configure Kong to route to your services:
 
 ```bash
 # Create a service pointing to your backend
+
 curl -X POST http://localhost:8001/services \
   -H "Content-Type: application/json" \
   -d '{

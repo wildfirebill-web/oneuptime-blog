@@ -42,7 +42,7 @@ Core maintainers have write access to the repository and are responsible for:
 
 ## Community Contribution Tiers
 
-```
+```text
 Casual Contributor    →  One-time or occasional PRs
 Regular Contributor   →  Consistent PRs over time
 Maintainer            →  Merge access, issue triage
@@ -85,6 +85,7 @@ This is enforced through:
 
 ```bash
 # 1. Join the community Slack
+
 # https://opentofu.org/slack
 
 # 2. Attend TSC meetings (public, recorded)

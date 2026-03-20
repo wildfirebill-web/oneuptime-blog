@@ -22,6 +22,7 @@ Create dedicated service accounts for each pipeline with permissions scoped to s
 
 ```yaml
 # service-accounts/app-deployer.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

@@ -40,6 +40,7 @@ Firehose needs a backup location for failed deliveries:
 
 ```bash
 # Create an S3 bucket for Firehose backup
+
 aws s3 mb s3://my-metrics-backup-bucket --region us-east-1
 ```
 

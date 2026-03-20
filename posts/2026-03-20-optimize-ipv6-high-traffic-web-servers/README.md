@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, NGINX, Web Server, Performance, Linux, Optimization
+Tags: IPv6, Nginx, Web Server, Performance, Linux, Optimization
 
 Description: Optimize NGINX and Linux kernel settings for high-concurrency IPv6 web server workloads, covering connection handling, buffer tuning, and hardware offloads.
 
 ## Introduction
 
-High-traffic web servers serving IPv6 clients need tuning at both the OS and application layer. The good news is that most IPv6 optimizations mirror IPv4 ones — you just need to ensure your web server is actually listening on IPv6 and that the OS is configured to handle it efficiently.
+High-traffic web servers serving IPv6 clients need tuning at both the OS and application layer. The good news is that most IPv6 optimizations mirror IPv4 ones - you just need to ensure your web server is actually listening on IPv6 and that the OS is configured to handle it efficiently.
 
 ## Step 1: Configure NGINX for Dual-Stack High Performance
 
@@ -19,6 +19,7 @@ worker_processes auto;
 worker_cpu_affinity auto;
 
 # Increase open file descriptor limit
+
 worker_rlimit_nofile 65536;
 
 events {
@@ -48,7 +49,7 @@ http {
     gzip_types text/plain text/css application/json;
 
     server {
-        # Listen on IPv4 and IPv6 — both wildcard addresses
+        # Listen on IPv4 and IPv6 - both wildcard addresses
         listen 80 default_server reuseport backlog=65536;
         listen [::]:80 default_server reuseport backlog=65536;
 
@@ -141,4 +142,4 @@ curl -6 http://[::1]/nginx_status
 
 ## Conclusion
 
-High-traffic IPv6 web server optimization combines NGINX `reuseport` listeners, increased socket buffers, TCP BBR, and NIC offloads. These changes compound — each layer contributes. Use OneUptime to continuously measure your p95/p99 response times across both IPv4 and IPv6 endpoints.
+High-traffic IPv6 web server optimization combines NGINX `reuseport` listeners, increased socket buffers, TCP BBR, and NIC offloads. These changes compound - each layer contributes. Use OneUptime to continuously measure your p95/p99 response times across both IPv4 and IPv6 endpoints.

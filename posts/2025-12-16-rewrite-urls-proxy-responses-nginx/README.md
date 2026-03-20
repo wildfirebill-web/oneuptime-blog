@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Reverse Proxy, URL Rewriting, Sub_filter, Proxy_redirect, Response Modification
+Tags: Nginx, Reverse Proxy, URL Rewriting, Sub_filter, Proxy_redirect, Response Modification
 
 Description: Learn how to rewrite URLs in proxy responses using Nginx, including modifying redirect headers, HTML content, and handling absolute URLs in backend responses.
 
@@ -364,6 +364,7 @@ server {
 
 ```bash
 # View original backend response headers
+
 curl -I http://backend:8080/api/resource
 
 # View proxied response headers

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, MongoDB, Atlas, Database, Infrastructure as Code, NoSQL
 
-Description: Learn how to deploy MongoDB Atlas clusters using OpenTofu — including project setup, cluster configuration, network peering, and database user management.
+Description: Learn how to deploy MongoDB Atlas clusters using OpenTofu - including project setup, cluster configuration, network peering, and database user management.
 
 ## Introduction
 
@@ -102,6 +102,7 @@ resource "mongodbatlas_advanced_cluster" "main" {
 
 ```hcl
 # Atlas side: create peering request
+
 resource "mongodbatlas_network_peering" "aws" {
   project_id             = mongodbatlas_project.main.id
   container_id           = mongodbatlas_advanced_cluster.main.replication_specs[0].region_configs[0].provider_name
@@ -190,4 +191,4 @@ output "cluster_id" {
 
 ## Conclusion
 
-MongoDB Atlas OpenTofu provider manages the full Atlas lifecycle: projects, clusters, network peering with AWS VPCs, and database users. Use VPC peering for production deployments — traffic stays within AWS's network without traversing the public internet. Prefer AWS IAM-based authentication over password users when your applications run on EC2, ECS, or Lambda with IAM roles. Enable cloud backup and encryption at rest for production clusters.
+MongoDB Atlas OpenTofu provider manages the full Atlas lifecycle: projects, clusters, network peering with AWS VPCs, and database users. Use VPC peering for production deployments - traffic stays within AWS's network without traversing the public internet. Prefer AWS IAM-based authentication over password users when your applications run on EC2, ECS, or Lambda with IAM roles. Enable cloud backup and encryption at rest for production clusters.

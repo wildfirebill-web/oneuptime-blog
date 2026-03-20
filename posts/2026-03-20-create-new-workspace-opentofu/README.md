@@ -14,6 +14,7 @@ OpenTofu workspaces allow you to manage multiple distinct instances of your infr
 
 ```bash
 # Create a new workspace named "staging"
+
 tofu workspace new staging
 
 # Output:
@@ -97,7 +98,7 @@ tofu apply -var-file=production.tfvars
 
 When you create a workspace, the state is stored at a different key in your backend:
 
-```
+```text
 S3 bucket:
 ├── app/terraform.tfstate           ← default workspace
 └── env:/

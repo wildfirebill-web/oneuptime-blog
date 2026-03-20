@@ -31,6 +31,7 @@ Deploy sample applications to test Service Profiles:
 
 ```yaml
 # sample-apps.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

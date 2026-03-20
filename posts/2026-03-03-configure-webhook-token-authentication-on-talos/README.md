@@ -128,6 +128,7 @@ Deploy the webhook inside the cluster:
 
 ```yaml
 # webhook-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

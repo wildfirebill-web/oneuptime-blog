@@ -14,6 +14,7 @@ Cilium is an eBPF-based CNI plugin for Kubernetes that provides high-performance
 
 ```bash
 # Install Cilium CLI
+
 CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt)
 curl -L --fail --remote-name-all \
     https://github.com/cilium/cilium-cli/releases/download/${CILIUM_CLI_VERSION}/cilium-linux-amd64.tar.gz

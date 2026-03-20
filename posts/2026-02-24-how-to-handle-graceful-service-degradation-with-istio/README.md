@@ -272,6 +272,7 @@ Set up alerts that fire when degradation is happening so your team knows about i
 
 ```bash
 # Error rate for recommendation service
+
 sum(rate(istio_requests_total{destination_service="recommendation-service.production.svc.cluster.local",response_code=~"5.*"}[5m])) / sum(rate(istio_requests_total{destination_service="recommendation-service.production.svc.cluster.local"}[5m]))
 
 # Circuit breaker ejections

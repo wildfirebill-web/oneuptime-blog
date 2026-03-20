@@ -1229,6 +1229,7 @@ If Laravel can't write to log files, check permissions on the logs directory.
 
 ```bash
 # Fix log directory permissions
+
 chmod 775 storage/logs
 chown -R www-data:www-data storage/logs
 

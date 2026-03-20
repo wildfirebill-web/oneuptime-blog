@@ -14,6 +14,7 @@ Rancher server logs are your primary window into what the management plane is do
 
 ```bash
 # Stream logs from all Rancher pods (for HA installations)
+
 kubectl logs -n cattle-system -l app=rancher -f --tail=100
 
 # Logs from a specific pod
@@ -31,7 +32,7 @@ kubectl logs -n cattle-system -l app=rancher --previous --tail=500
 
 Rancher logs use a structured JSON-like format in newer versions:
 
-```
+```text
 time="2026-03-20T10:15:30Z" level=info msg="Rancher startup complete" component=auth
 time="2026-03-20T10:15:31Z" level=warn msg="Failed to sync cluster" cluster=c-xxxxx error="context deadline exceeded"
 time="2026-03-20T10:15:32Z" level=error msg="Failed to connect to database" error="dial tcp: connection refused"

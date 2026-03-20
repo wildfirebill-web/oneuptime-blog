@@ -265,6 +265,7 @@ When you wrap resources in modules, consumers of your module cannot directly set
 
 ```hcl
 # modules/database/variables.tf
+
 variable "create_timeout" {
   description = "Timeout for database creation"
   type        = string

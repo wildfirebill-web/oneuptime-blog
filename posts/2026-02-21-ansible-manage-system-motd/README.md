@@ -27,6 +27,7 @@ This playbook deploys a static MOTD with a legal banner:
 
 ```yaml
 # configure-motd-static.yml - Deploy static MOTD
+
 ---
 - name: Configure Static MOTD
   hosts: all

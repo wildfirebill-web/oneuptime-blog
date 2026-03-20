@@ -22,6 +22,7 @@ Select the smallest base image that supports your application:
 
 ```dockerfile
 # Full Windows Server - 5+ GB (avoid unless necessary)
+
 FROM mcr.microsoft.com/windows:latest
 
 # Windows Server Core - 2.5 GB (for .NET Framework apps)

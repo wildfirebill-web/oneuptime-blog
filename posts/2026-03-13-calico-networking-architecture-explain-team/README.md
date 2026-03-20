@@ -73,6 +73,7 @@ Map each component to what you should monitor:
 
 ```bash
 # Felix health
+
 kubectl get pods -n calico-system -l k8s-app=calico-node
 kubectl logs -n calico-system -l k8s-app=calico-node -c calico-node | grep -i "error\|warn"
 

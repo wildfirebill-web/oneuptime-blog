@@ -18,6 +18,7 @@ XDP requires a kernel version of 4.8 or newer. Ubuntu 20.04+ ships with kernels 
 
 ```bash
 # Check kernel version
+
 uname -r
 
 # Verify eBPF support

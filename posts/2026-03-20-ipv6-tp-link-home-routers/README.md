@@ -1,4 +1,4 @@
-# How to Configure IPv6 on TP-Link Home Routers
+# How to Configure IPv6 on TP-Link Home Routers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,11 +14,11 @@ Most TP-Link Archer series (C6, AX20, AX50, AX73, AX6000) and Deco mesh systems 
 
 Access the router web interface at `192.168.0.1` or `tplinkwifi.net`.
 
-```
+```text
 Path: Advanced → IPv6
 
 WAN IPv6 Connection Type: DHCPv6
-  (Most ISPs — automatically requests address and prefix)
+  (Most ISPs - automatically requests address and prefix)
 
 Alternatively for SLAAC ISPs:
   WAN Type: SLAAC
@@ -31,7 +31,7 @@ LAN settings:
   Assign IPv6 address: Enable
   IPv6 Prefix: (auto-filled from delegated prefix)
   IPv6 Prefix Length: 64
-  DHCPv6 Server: Enable (stateless — SLAAC + DNS via RA)
+  DHCPv6 Server: Enable (stateless - SLAAC + DNS via RA)
 
 Enable IPv6 Firewall: Yes (recommended)
 ```
@@ -40,7 +40,7 @@ Enable IPv6 Firewall: Yes (recommended)
 
 Deco systems configure IPv6 through the Tether mobile app.
 
-```
+```sql
 Tether App → Select Deco network → More → Advanced → IPv6
 
 IPv6 Status: Enable
@@ -62,6 +62,7 @@ TP-Link OpenWrt-based routers support SSH for advanced verification.
 
 ```bash
 # Enable SSH: Advanced → System → Remote Management → SSH
+
 # or via Telnet on older models
 
 # Connect to router
@@ -137,4 +138,4 @@ curl -6 https://ifconfig.co
 
 ## Conclusion
 
-TP-Link Archer and Deco series routers configure IPv6 under Advanced → IPv6 in the web GUI or Tether app. Select DHCPv6 for the WAN connection type; the router will negotiate a prefix delegation from the ISP and automatically configure radvd to distribute /64 prefixes to LAN devices. Set the IPv6 firewall to enabled to block unsolicited inbound connections. If devices on the LAN do not receive IPv6 addresses, confirm that DHCPv6 LAN assignment is enabled and that radvd is running on the router. MTU issues are common on PPPoE — set the WAN MTU to 1452 if large IPv6 packets fail.
+TP-Link Archer and Deco series routers configure IPv6 under Advanced → IPv6 in the web GUI or Tether app. Select DHCPv6 for the WAN connection type; the router will negotiate a prefix delegation from the ISP and automatically configure radvd to distribute /64 prefixes to LAN devices. Set the IPv6 firewall to enabled to block unsolicited inbound connections. If devices on the LAN do not receive IPv6 addresses, confirm that DHCPv6 LAN assignment is enabled and that radvd is running on the router. MTU issues are common on PPPoE - set the WAN MTU to 1452 if large IPv6 packets fail.

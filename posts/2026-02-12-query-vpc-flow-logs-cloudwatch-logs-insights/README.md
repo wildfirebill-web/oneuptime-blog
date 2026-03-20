@@ -231,6 +231,7 @@ If you haven't set up flow logs yet, here's how:
 
 ```bash
 # Create a log group for flow logs
+
 aws logs create-log-group \
   --log-group-name "/vpc/flow-logs/prod-vpc"
 

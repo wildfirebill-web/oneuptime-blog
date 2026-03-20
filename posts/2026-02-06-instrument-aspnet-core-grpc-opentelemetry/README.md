@@ -22,6 +22,7 @@ Create a new ASP.NET Core gRPC service and add the necessary OpenTelemetry packa
 
 ```bash
 # Create a new gRPC service project
+
 dotnet new grpc -n GrpcObservabilityDemo
 cd GrpcObservabilityDemo
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Proximity Placement Groups, Low Latency, HPC, Virtual Machines, Infrastructure as Code
+Tags: OpenTofu, Azure, Proximity Placement Groups, Low Latency, HPC, Virtual Machine, Infrastructure as Code
 
 Description: Learn how to configure Azure Proximity Placement Groups with OpenTofu to co-locate VMs within the same Azure datacenter for ultra-low network latency between application tiers.
 
@@ -43,6 +43,7 @@ resource "azurerm_proximity_placement_group" "main" {
 
 ```hcl
 # Application server
+
 resource "azurerm_linux_virtual_machine" "app" {
   name                = "${var.project_name}-app-vm"
   resource_group_name = var.resource_group_name
@@ -217,4 +218,4 @@ az ppg show \
 
 ## Conclusion
 
-PPGs pin all VMs to the same physical cluster within a datacenter, which can limit capacity during high-demand periods. If Azure cannot place a new VM in the PPG location, the deployment fails—start with the largest VMs first (the "anchor" VM) to secure placement in the physical cluster. PPGs do not guarantee network bandwidth between VMs; for guaranteed bandwidth, use Accelerated Networking (`enable_accelerated_networking = true` on NICs). PPGs can reduce latency from ~1-2ms to sub-millisecond, which matters for applications doing thousands of internal round-trips per request.
+PPGs pin all VMs to the same physical cluster within a datacenter, which can limit capacity during high-demand periods. If Azure cannot place a new VM in the PPG location, the deployment fails-start with the largest VMs first (the "anchor" VM) to secure placement in the physical cluster. PPGs do not guarantee network bandwidth between VMs; for guaranteed bandwidth, use Accelerated Networking (`enable_accelerated_networking = true` on NICs). PPGs can reduce latency from ~1-2ms to sub-millisecond, which matters for applications doing thousands of internal round-trips per request.

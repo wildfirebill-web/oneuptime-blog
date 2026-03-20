@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Tcpdump, Debugging, Networking
+Tags: Kubernetes, MetalLB, tcpdump, Debugging, Networking
 
 Description: Learn how to use tcpdump to trace traffic from MetalLB through kube-proxy to backend pods when services are not responding.
 
@@ -32,6 +32,7 @@ First, figure out which node is currently handling the LoadBalancer IP. MetalLB 
 
 ```bash
 # List all MetalLB speaker pods and their node assignments
+
 # This helps identify which node is answering ARP for your LB IP
 kubectl get pods -n metallb-system \
   -l app=metallb,component=speaker \

@@ -16,6 +16,7 @@ In INI format, you use the `:children` suffix to declare that a group contains o
 
 ```ini
 # inventory.ini
+
 # Basic nested group structure
 
 [web_prod]

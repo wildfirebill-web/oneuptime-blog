@@ -18,6 +18,7 @@ You need a Kubernetes cluster with ArgoCD installed. Then install Crossplane:
 
 ```bash
 # Install Crossplane
+
 helm repo add crossplane-stable https://charts.crossplane.io/stable
 helm repo update
 

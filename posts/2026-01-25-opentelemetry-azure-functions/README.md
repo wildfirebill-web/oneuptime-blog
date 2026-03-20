@@ -374,6 +374,7 @@ Python Azure Functions can use the standard OpenTelemetry Python SDK.
 
 ```txt
 # requirements.txt
+
 azure-functions
 opentelemetry-api
 opentelemetry-sdk

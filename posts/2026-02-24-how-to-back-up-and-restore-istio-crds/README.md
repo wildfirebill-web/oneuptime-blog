@@ -45,6 +45,7 @@ Create a comprehensive backup of all Istio resource instances:
 mkdir -p istio-backup/resources
 
 # Networking resources
+
 for resource in virtualservices destinationrules gateways serviceentries sidecars envoyfilters workloadentries workloadgroups; do
   echo "Backing up $resource..."
   kubectl get $resource -A -o yaml > istio-backup/resources/$resource.yaml 2>/dev/null

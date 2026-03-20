@@ -29,6 +29,7 @@ Create an AKS cluster configured to use Azure CNI with Cilium IPAM delegation.
 
 ```bash
 # Set cluster configuration variables
+
 RESOURCE_GROUP="my-rg"
 CLUSTER_NAME="cilium-delegated-ipam"
 LOCATION="eastus"

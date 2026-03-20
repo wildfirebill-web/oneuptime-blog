@@ -27,6 +27,7 @@ Verify your cluster:
 
 ```bash
 # Check cluster connectivity
+
 kubectl cluster-info
 
 # Verify Flux components
@@ -300,7 +301,7 @@ kubectl get kustomization apps -n flux-system -o yaml \
 diff /tmp/staging-apps.yaml /tmp/prod-apps.yaml
 ```
 
-## Resource Editing
+Resource Editing
 
 Freelens lets you edit Flux resources directly:
 

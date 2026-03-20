@@ -16,6 +16,7 @@ This instruction is essential for containers that generate or manage persistent 
 
 ```dockerfile
 # Create a single volume mount point
+
 VOLUME /data
 
 # Create multiple volume mount points

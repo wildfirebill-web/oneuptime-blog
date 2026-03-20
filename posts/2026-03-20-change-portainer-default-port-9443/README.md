@@ -16,6 +16,7 @@ The simplest approach is to remap the port at the Docker level:
 
 ```bash
 # Run Portainer on custom port 8443 instead of 9443
+
 # Format: -p <host-port>:<container-port>
 # The container still listens on 9443 internally
 docker run -d \
@@ -36,7 +37,7 @@ To restrict Portainer to a specific network interface:
 
 ```bash
 # Bind only to localhost (127.0.0.1) on port 9443
-# Prevents external access — use with a reverse proxy
+# Prevents external access - use with a reverse proxy
 docker run -d \
   -p 127.0.0.1:9443:9443 \
   -p 127.0.0.1:8000:8000 \
@@ -104,7 +105,7 @@ volumes:
 
 ## Update Portainer Agent Communication
 
-If you use Portainer Agents, the tunnel port (8000) is separate from the UI port. Only change the UI port mapping — leave `8000:8000` unchanged unless required.
+If you use Portainer Agents, the tunnel port (8000) is separate from the UI port. Only change the UI port mapping - leave `8000:8000` unchanged unless required.
 
 ## Firewall Rules
 

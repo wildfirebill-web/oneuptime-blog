@@ -22,6 +22,7 @@ Define PDBs for your applications before performing node upgrades.
 
 ```yaml
 # Minimum available replicas PDB
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

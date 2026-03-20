@@ -17,6 +17,7 @@ Monitoring a Calico upgrade in real time provides the confidence to proceed or a
 ```bash
 #!/bin/bash
 # monitor-calico-upgrade.sh
+
 TARGET_VERSION="${1:?Provide target version}"
 START_TIME=$(date +%s)
 

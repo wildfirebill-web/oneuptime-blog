@@ -47,6 +47,7 @@ Both gateways share the GatewaySubnet. It must be large enough for both.
 
 ```bash
 # Check the current GatewaySubnet size
+
 az network vnet subnet show \
   --resource-group rg-hybrid \
   --vnet-name vnet-main \

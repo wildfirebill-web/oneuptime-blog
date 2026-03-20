@@ -53,6 +53,7 @@ Configure the application:
 
 ```properties
 # Spring Batch configuration
+
 spring.batch.jdbc.initialize-schema=always
 spring.batch.job.enabled=false
 

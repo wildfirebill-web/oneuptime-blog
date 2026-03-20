@@ -114,6 +114,7 @@ def cosine_similarity(vec_a: list[float], vec_b: list[float]) -> float:
     return dot / (mag_a * mag_b)
 
 # Example usage
+
 vec1 = [1.0, 2.0, 3.0]
 vec2 = [4.0, 5.0, 6.0]
 

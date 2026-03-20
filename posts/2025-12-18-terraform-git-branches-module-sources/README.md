@@ -14,6 +14,7 @@ Terraform supports several formats for Git module sources:
 
 ```hcl
 # HTTPS URL with branch
+
 module "vpc" {
   source = "git::https://github.com/myorg/terraform-modules.git//vpc?ref=feature/new-subnets"
 }

@@ -1,8 +1,8 @@
-# How to Implement Networking Best Practices in Rancher
+# How to Implement Networking Best Practices in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, networking, cni, best-practices, kubernetes
+Tags: Rancher, Networking, CNI, Best-practices, Kubernetes
 
 Description: Guide to networking best practices in Rancher for secure, performant, and manageable cluster networking.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

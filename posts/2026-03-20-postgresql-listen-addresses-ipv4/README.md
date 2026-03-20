@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, IPv4, listen_addresses, Configuration, Remote Connections, Database
+Tags: PostgreSQL, IPv4, Listen_addresses, Configuration, Remote Connections, Database
 
 Description: Configure PostgreSQL listen_addresses in postgresql.conf to listen on specific IPv4 addresses or all interfaces, and enable remote connections alongside pg_hba.conf.
 
@@ -25,6 +25,7 @@ PostgreSQL defaults to `listen_addresses = 'localhost'`, accepting only local so
 
 ```bash
 # Find postgresql.conf location
+
 sudo -u postgres psql -c "SHOW config_file;"
 # Usually: /etc/postgresql/16/main/postgresql.conf
 
@@ -40,11 +41,11 @@ listen_addresses = '10.0.0.5'        # Specific IP
 port = 5432
 ```
 
-## pg_hba.conf — Authorize Remote Clients
+## pg_hba.conf - Authorize Remote Clients
 
 ```bash
 # /etc/postgresql/16/main/pg_hba.conf
-# Must add entries for remote clients — postgresql.conf alone is not enough
+# Must add entries for remote clients - postgresql.conf alone is not enough
 
 # Format: TYPE  DATABASE  USER  ADDRESS  METHOD
 

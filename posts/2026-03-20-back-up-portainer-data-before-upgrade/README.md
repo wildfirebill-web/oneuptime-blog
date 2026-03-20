@@ -13,7 +13,7 @@ Portainer stores all its configuration in a BoltDB database inside the data volu
 ## What Gets Backed Up
 
 The Portainer data volume (`portainer_data`) contains:
-- Database (`portainer.db`) — all settings, users, environments, stacks
+- Database (`portainer.db`) - all settings, users, environments, stacks
 - TLS certificates
 - Compose files for managed stacks
 - Custom templates
@@ -25,6 +25,7 @@ The simplest and most reliable backup method:
 
 ```bash
 # Stop Portainer for a consistent backup (recommended)
+
 docker stop portainer
 
 # Create a timestamped tar archive of the entire data volume

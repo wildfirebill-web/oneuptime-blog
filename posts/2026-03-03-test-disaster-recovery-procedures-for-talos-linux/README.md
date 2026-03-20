@@ -28,6 +28,7 @@ Maintain a small Talos Linux cluster that mirrors your production topology. It d
 
 ```yaml
 # Minimal staging cluster config for DR testing
+
 # 3 control plane nodes + 2 workers
 cluster:
   name: dr-staging

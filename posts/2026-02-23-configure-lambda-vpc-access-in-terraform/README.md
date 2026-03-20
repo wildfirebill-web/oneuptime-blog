@@ -18,6 +18,7 @@ This guide walks through configuring Lambda VPC access in Terraform, handling th
 
 ```hcl
 # Lambda function with VPC access
+
 resource "aws_lambda_function" "api" {
   function_name = "myapp-api"
   handler       = "index.handler"

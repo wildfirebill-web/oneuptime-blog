@@ -116,6 +116,7 @@ spec:
 
 ```bash
 # Test that deny rule blocks traffic
+
 kubectl exec -n production regular-user-pod -- \
   curl -s -o /dev/null -w "%{http_code}" \
   http://api-server:8080/admin/users

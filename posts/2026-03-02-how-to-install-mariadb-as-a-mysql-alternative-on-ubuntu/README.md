@@ -44,6 +44,7 @@ For the latest stable release, use MariaDB's repository:
 
 ```bash
 # Install repository setup tools
+
 sudo apt install software-properties-common -y
 
 # Add the MariaDB repository for version 11.x (LTS)

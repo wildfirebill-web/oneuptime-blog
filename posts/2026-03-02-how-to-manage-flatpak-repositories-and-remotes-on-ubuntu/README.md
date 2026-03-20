@@ -20,6 +20,7 @@ Remotes can be configured at two levels:
 
 ```bash
 # List all configured remotes
+
 flatpak remotes
 
 # List with detailed information

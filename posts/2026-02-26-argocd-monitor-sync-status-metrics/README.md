@@ -52,6 +52,7 @@ To see which applications are currently Synced vs OutOfSync:
 
 ```promql
 # All OutOfSync applications
+
 argocd_app_info{sync_status="OutOfSync"}
 
 # Count of OutOfSync applications

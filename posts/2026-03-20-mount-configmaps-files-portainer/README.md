@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMap, Volume Mounts, Configuration
+Tags: Portainer, Kubernetes, ConfigMaps, Volume Mounts, Configuration
 
 Description: Learn how to mount Kubernetes ConfigMaps as files inside container pods using Portainer.
 
@@ -10,9 +10,9 @@ Description: Learn how to mount Kubernetes ConfigMaps as files inside container 
 
 Some applications expect configuration as files rather than environment variables:
 
-- Web servers (Nginx, Apache) — need `nginx.conf`, `.htaccess`.
-- Application frameworks — need `application.properties`, `config.yaml`.
-- Scripts and tools — need config files in specific filesystem paths.
+- Web servers (Nginx, Apache) - need `nginx.conf`, `.htaccess`.
+- Application frameworks - need `application.properties`, `config.yaml`.
+- Scripts and tools - need config files in specific filesystem paths.
 
 ## How File Mounting Works
 
@@ -22,6 +22,7 @@ Each key in the ConfigMap becomes a filename, and its value becomes the file con
 
 ```yaml
 # ConfigMap containing an Nginx configuration file
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -22,10 +22,11 @@ For example, if you want to ensure every S3 bucket configuration includes a `ser
 
 ```python
 # Standard import with alias
+
 import "tfconfig/v2" as tfconfig
 ```
 
-## Resources in tfconfig
+Resources in tfconfig
 
 The `tfconfig.resources` collection contains every resource defined in the Terraform configuration. Each resource has a different structure than what you see in `tfplan`.
 
@@ -43,7 +44,7 @@ for tfconfig.resources as address, resource {
 }
 ```
 
-### Resource Properties
+Resource Properties
 
 Each resource in `tfconfig.resources` has these key properties:
 

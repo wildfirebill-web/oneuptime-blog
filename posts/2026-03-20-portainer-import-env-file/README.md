@@ -21,6 +21,7 @@ A `.env` file is a simple text file with one `KEY=VALUE` pair per line:
 
 ```bash
 # .env file format
+
 # Lines starting with # are comments and are ignored
 # Blank lines are ignored
 
@@ -94,14 +95,14 @@ After importing, review the populated variables:
 - Add any additional variables not in the file.
 - Remove any variables you don't need.
 
-The import fills the form — you still have full control before deploying.
+The import fills the form - you still have full control before deploying.
 
 ## Step 4: Using .env Files with Stacks
 
 For Docker Compose stacks in Portainer, `.env` files work differently:
 
 ```yaml
-# docker-compose.yml — references variables from .env
+# docker-compose.yml - references variables from .env
 version: "3.8"
 
 services:
@@ -149,7 +150,7 @@ Never commit `.env` files with sensitive values to version control:
 `.env.example` template:
 
 ```bash
-# .env.example — commit this, not .env
+# .env.example - commit this, not .env
 APP_NAME=MyApplication
 APP_ENV=production
 APP_PORT=8080
@@ -162,7 +163,7 @@ JWT_SECRET=            # Generate with: openssl rand -hex 32
 
 Maintain separate `.env` files for each environment:
 
-```
+```text
 .env.development   → Local development
 .env.staging       → Staging environment
 .env.production    → Production (sensitive, keep secure!)

@@ -45,6 +45,7 @@ gp3 is the newest general purpose SSD type and should be your go-to for most wor
 
 ```bash
 # Create a gp3 volume with custom performance settings
+
 aws ec2 create-volume \
     --volume-type gp3 \
     --size 200 \

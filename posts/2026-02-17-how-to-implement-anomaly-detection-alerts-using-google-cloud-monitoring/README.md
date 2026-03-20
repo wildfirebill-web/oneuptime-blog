@@ -30,6 +30,7 @@ Here is how to create an anomaly detection alert policy using Terraform:
 
 ```hcl
 # Terraform: Anomaly detection alert for request latency
+
 resource "google_monitoring_alert_policy" "latency_anomaly" {
   display_name = "Latency Anomaly Detection"
   combiner     = "OR"
@@ -215,7 +216,7 @@ resource "google_monitoring_alert_policy" "error_anomaly" {
 }
 ```
 
-### Resource Utilization Anomalies
+Resource Utilization Anomalies
 
 Detect unusual resource consumption patterns:
 

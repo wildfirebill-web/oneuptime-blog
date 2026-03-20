@@ -46,6 +46,7 @@ Do not rush the failback. Just because Azure reports the region is back does not
 
 ```powershell
 # Verify the primary region's resource group and network infrastructure
+
 # These must exist for the VMs to fail back into
 
 # Check resource group

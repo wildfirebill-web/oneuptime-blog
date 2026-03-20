@@ -1,8 +1,8 @@
-# How to Configure ML Training Pipelines on Rancher
+# How to Configure ML Training Pipelines on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, ml, training-pipelines, argo, kubernetes
+Tags: Rancher, ML, Training-pipelines, Argo, Kubernetes
 
 Description: Guide to building automated ML training pipelines on Rancher using Argo Workflows and Kubeflow Pipelines.
 
@@ -14,6 +14,7 @@ ML training pipelines automate the process of data preparation, model training, 
 
 ```bash
 # Create namespace
+
 kubectl create namespace argo
 
 # Install Argo Workflows

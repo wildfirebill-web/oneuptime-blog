@@ -45,6 +45,7 @@ Configure the CLI's multipart upload behavior:
 
 ```bash
 # Set the threshold for when multipart kicks in (default is 8MB)
+
 aws configure set default.s3.multipart_threshold 100MB
 
 # Set the chunk size for each part

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, windows-server, docker, installation, enterprise
+Tags: Portainer, Windows-server, Docker, Installation, Enterprise
 
 Description: A guide to installing Portainer CE on Windows Server with Docker Engine (Linux containers via Hyper-V), covering enterprise deployment scenarios.
 
@@ -21,6 +21,7 @@ Windows Server can run Docker containers in two modes: Windows containers (nativ
 
 ```powershell
 # Enable Hyper-V and Containers features
+
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName Containers -All -NoRestart
 

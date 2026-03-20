@@ -22,6 +22,7 @@ Create the script locally:
 
 ```bash
 # scripts/check_disk.sh - Local script to check disk usage
+
 #!/bin/bash
 echo "=== Disk Usage Report ==="
 echo "Hostname: $(hostname)"

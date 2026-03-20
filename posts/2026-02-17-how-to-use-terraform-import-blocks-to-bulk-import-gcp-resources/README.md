@@ -18,6 +18,7 @@ Before import blocks, importing a GCP Compute instance looked like this:
 
 ```bash
 # The old way - imperative, one resource at a time
+
 terraform import google_compute_instance.web projects/my-project/zones/us-central1-a/instances/web-server-1
 terraform import google_compute_instance.api projects/my-project/zones/us-central1-a/instances/api-server-1
 terraform import google_compute_instance.db projects/my-project/zones/us-central1-a/instances/db-server-1

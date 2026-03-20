@@ -14,6 +14,7 @@ Wazuh is an open-source security platform combining SIEM, HIDS, and XDR capabili
 
 ```bash
 # Install Wazuh repository
+
 curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | \
   gpg --no-default-keyring --keyring gnupg-ring:/usr/share/keyrings/wazuh.gpg \
   --import

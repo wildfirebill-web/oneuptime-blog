@@ -58,7 +58,7 @@ graph LR
 
 Keep this diagram updated when services are added or removed. It should live in the same Git repository as your Istio configuration.
 
-## Resource Catalog
+Resource Catalog
 
 Create a catalog of all Istio resources with their purpose. This is the most referenced document during incidents:
 

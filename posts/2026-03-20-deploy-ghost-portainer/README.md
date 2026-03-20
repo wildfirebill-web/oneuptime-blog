@@ -84,7 +84,7 @@ networks:
 
 ## Environment Variables
 
-```
+```text
 MYSQL_DATABASE = ghost_production
 MYSQL_USER = ghost_user
 MYSQL_PASSWORD = ghost-db-password
@@ -115,6 +115,7 @@ The admin panel is at `https://blog.yourdomain.com/ghost`:
 
 ```bash
 # Via Portainer: Stacks > ghost > Editor
+
 # Change: ghost:5-alpine → ghost:5.x.y-alpine (specific version)
 # Click: Update the Stack
 
@@ -162,4 +163,4 @@ docker exec ghost-db mysqldump \
 
 ## Conclusion
 
-Ghost via Portainer is an excellent choice for professional blogs and newsletters. Its clean architecture — single Node.js process, MySQL backend, file-based content — makes it easy to manage, backup, and restore. Traefik handles HTTPS automatically, and Portainer simplifies version updates. Unlike WordPress, Ghost doesn't require plugin management for core functionality like memberships and email newsletters.
+Ghost via Portainer is an excellent choice for professional blogs and newsletters. Its clean architecture - single Node.js process, MySQL backend, file-based content - makes it easy to manage, backup, and restore. Traefik handles HTTPS automatically, and Portainer simplifies version updates. Unlike WordPress, Ghost doesn't require plugin management for core functionality like memberships and email newsletters.

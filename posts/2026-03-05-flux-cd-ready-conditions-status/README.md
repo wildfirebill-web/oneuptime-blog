@@ -180,6 +180,7 @@ Flux exports condition data as Prometheus metrics through the `gotk_reconcile_co
 
 ```promql
 # Find all resources that are not ready
+
 gotk_reconcile_condition{type="Ready", status="False"} == 1
 
 # Count ready resources by kind

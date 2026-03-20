@@ -29,6 +29,7 @@ Confirm the Azure subnet is correctly delegated for AKS pod subnets.
 
 ```bash
 # Check subnet delegation in Azure
+
 az network vnet subnet show \
   --resource-group <rg-name> \
   --vnet-name <vnet-name> \

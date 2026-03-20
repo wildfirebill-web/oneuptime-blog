@@ -116,6 +116,7 @@ The corresponding playbook variables would look like this:
 
 ```yaml
 # group_vars/all.yml - Backend server definitions
+
 web_backends:
   - name: web1
     host: 10.0.1.10

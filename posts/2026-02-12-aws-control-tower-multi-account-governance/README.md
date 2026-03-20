@@ -86,6 +86,7 @@ This is how to create a new account using the AWS CLI through Service Catalog:
 
 ```bash
 # List the Account Factory product
+
 PRODUCT_ID=$(aws servicecatalog search-products \
   --query "ProductViewSummaries[?Name=='AWS Control Tower Account Factory'].ProductId" \
   --output text)

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IS-IS, IPv6, TLV, Protocol, Networking
 
-Description: Understand the IS-IS TLVs used to carry IPv6 routing information — specifically TLV 232 (IPv6 Interface Addresses) and TLV 236 (IPv6 Reachability).
+Description: Understand the IS-IS TLVs used to carry IPv6 routing information - specifically TLV 232 (IPv6 Interface Addresses) and TLV 236 (IPv6 Reachability).
 
 ## Overview
 
@@ -23,7 +23,7 @@ IS-IS communicates routing information through TLVs (Type-Length-Value structure
 
 TLV 232 carries the IPv6 addresses configured on a router's interfaces. This is equivalent to the IP Interface Address TLV (132) for IPv4:
 
-```
+```yaml
 TLV 232 Structure:
 +------+--------+------------------------------------------+
 | Type | Length |  IPv6 Address (16 bytes per address)     |
@@ -37,7 +37,7 @@ Both link-local and global addresses are included. The link-local address is use
 
 TLV 236 carries IPv6 prefixes that this router can reach. It is the IPv6 equivalent of TLVs 128/130 (IPv4 Internal/External Reachability):
 
-```
+```yaml
 TLV 236 Structure per prefix:
 +--------+--------+-------------+-----------+------------------+
 | Metric | Up/Down| External Bit| SubTLV len| IPv6 prefix bits |
@@ -51,7 +51,7 @@ The Up/Down bit prevents routing loops between Level 1 and Level 2 areas.
 
 In multi-topology mode, TLV 235 replaces TLV 236 to include the topology ID:
 
-```
+```yaml
 TLV 235 starts with:
 +--------+------------------------------------------+
 | MT-ID  | followed by same format as TLV 236 entries |
@@ -60,7 +60,7 @@ TLV 235 starts with:
 
 ## Viewing TLVs in IS-IS Database
 
-```
+```text
 ! Cisco: Show verbose IS-IS database to see TLVs
 Router# show isis database verbose
 
@@ -76,6 +76,7 @@ R1.00-00            * 0x00000017   0xd55b        1196         1/0/0
 
 ```bash
 # FRRouting: Show IS-IS database with TLV details
+
 vtysh -c "show isis database detail"
 
 # Look for:

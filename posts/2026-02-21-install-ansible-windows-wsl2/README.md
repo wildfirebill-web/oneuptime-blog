@@ -20,6 +20,7 @@ Open PowerShell as Administrator and run:
 
 ```powershell
 # Enable WSL and install the default Ubuntu distribution
+
 wsl --install
 ```
 

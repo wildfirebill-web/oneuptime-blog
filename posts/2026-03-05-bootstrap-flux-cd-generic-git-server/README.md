@@ -41,6 +41,7 @@ For a bare Git server:
 
 ```bash
 # On the Git server, create a bare repository
+
 ssh git-server "git init --bare /srv/git/fleet-infra.git"
 
 # Or if using gitolite, add the repo to your gitolite-admin config

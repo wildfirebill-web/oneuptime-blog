@@ -89,6 +89,7 @@ WHERE NOT is_done;
 
 ```bash
 # Full backup before upgrade
+
 clickhouse-backup create pre_upgrade_$(date +%Y%m%d)
 
 # Upload to remote storage

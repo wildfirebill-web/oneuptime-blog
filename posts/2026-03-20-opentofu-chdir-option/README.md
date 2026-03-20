@@ -1,4 +1,4 @@
-# How to Use the -chdir Global Option in OpenTofu
+# How to Use the -chdir Global Option in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The `-chdir` global option tells OpenTofu to switch to a specified directory bef
 
 ```bash
 # Run plan against a configuration in a different directory
+
 tofu -chdir=infrastructure/production plan
 
 # Apply from any directory
@@ -31,13 +32,13 @@ tofu -chdir=/opt/terraform/production init
 # Correct
 tofu -chdir=production plan
 
-# Incorrect — -chdir must come before the subcommand
+# Incorrect - -chdir must come before the subcommand
 tofu plan -chdir=production  # This will fail
 ```
 
 ## Monorepo Pattern
 
-```
+```text
 infrastructure/
 ├── networking/
 │   ├── main.tf

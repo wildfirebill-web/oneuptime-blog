@@ -229,6 +229,7 @@ After applying the VirtualService, verify it is working correctly:
 
 ```bash
 # Check the VirtualService was applied
+
 kubectl get virtualservice my-app -o yaml
 
 # Test header-based routing

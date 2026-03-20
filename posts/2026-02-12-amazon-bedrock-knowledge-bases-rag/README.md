@@ -48,6 +48,7 @@ import time
 bedrock_agent = boto3.client('bedrock-agent', region_name='us-east-1')
 
 # Step 1: Create the knowledge base
+
 response = bedrock_agent.create_knowledge_base(
     name='company-docs-kb',
     description='Knowledge base for internal company documentation',

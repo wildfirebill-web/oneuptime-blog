@@ -49,6 +49,7 @@ kubectl exec -n kube-system \
   -- wget -qO- http://localhost:9153/metrics \
   | grep 'coredns_dns_responses_total{.*SERVFAIL.*}'
 # Rate should be near zero
+
 ```
 
 **Validation Step 3: Permanent fix confirmed and emergency policy removed**

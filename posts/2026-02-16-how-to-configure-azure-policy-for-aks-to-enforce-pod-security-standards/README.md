@@ -26,6 +26,7 @@ If you have an existing AKS cluster, enable the add-on with a single command.
 
 ```bash
 # Enable Azure Policy add-on on an existing AKS cluster
+
 az aks enable-addons \
   --addons azure-policy \
   --resource-group myResourceGroup \

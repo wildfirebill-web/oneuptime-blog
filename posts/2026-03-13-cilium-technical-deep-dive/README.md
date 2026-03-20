@@ -29,6 +29,7 @@ Configure key eBPF components:
 
 ```bash
 # Configure BPF map sizes (affects max connections/endpoints)
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

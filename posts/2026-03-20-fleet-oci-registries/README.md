@@ -33,6 +33,7 @@ OCI artifacts can contain:
 
 ```bash
 # Package a Helm chart as an OCI artifact
+
 helm package ./my-chart
 
 # Log into OCI registry (example: Docker Hub)

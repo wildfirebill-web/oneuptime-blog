@@ -30,6 +30,7 @@ If you have automated etcd backups (you should), restore the most recent snapsho
 
 ```bash
 # Download the latest snapshot from object storage
+
 aws s3 cp s3://my-etcd-backups/snapshot-2026-03-13.db /tmp/snapshot.db
 
 # Restore etcd data directory from snapshot

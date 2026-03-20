@@ -429,6 +429,7 @@ Automatic rollback when analysis fails:
 
 ```bash
 # Watch rollout with automatic rollback
+
 kubectl argo rollouts get rollout web-app --watch
 
 # If analysis fails, you'll see:

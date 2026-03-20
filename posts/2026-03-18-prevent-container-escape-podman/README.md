@@ -24,6 +24,7 @@ Privileged mode disables almost all container isolation. It is the easiest path 
 
 ```bash
 # DANGEROUS: This container has full host access
+
 # podman run --privileged docker.io/library/alpine:latest  # DO NOT DO THIS IN PRODUCTION
 
 # Instead, grant only the specific capability needed

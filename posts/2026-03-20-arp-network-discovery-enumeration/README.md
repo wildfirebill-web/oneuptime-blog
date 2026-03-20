@@ -10,7 +10,7 @@ Description: Learn how to use ARP scanning and monitoring techniques to discover
 
 ARP-based host discovery is faster and more reliable than ICMP ping for local subnet scanning because:
 
-- ARP operates at Layer 2 (MAC level) — cannot be blocked by IP firewalls
+- ARP operates at Layer 2 (MAC level) - cannot be blocked by IP firewalls
 - All hosts must respond to ARP requests on their subnet
 - Works even when hosts block ICMP
 - Reveals both IP and MAC addresses simultaneously
@@ -19,6 +19,7 @@ ARP-based host discovery is faster and more reliable than ICMP ping for local su
 
 ```bash
 # Install
+
 sudo apt install arp-scan          # Ubuntu/Debian
 sudo yum install arp-scan          # RHEL/CentOS
 brew install arp-scan              # macOS
@@ -35,7 +36,7 @@ sudo arp-scan --localnet --retry=3
 
 Sample output:
 
-```
+```text
 192.168.1.1     aa:bb:cc:dd:ee:ff    Cisco Systems
 192.168.1.10    00:11:22:33:44:55    Dell Inc.
 192.168.1.20    ff:ee:dd:cc:bb:aa    Apple Inc.

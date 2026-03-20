@@ -14,7 +14,7 @@ As your infrastructure codebase grows, test organisation becomes as important as
 
 For a standalone module with moderate complexity:
 
-```
+```text
 modules/networking/
 ├── main.tf
 ├── variables.tf
@@ -43,7 +43,7 @@ tofu test -test-directory=tests/unit
 
 For a platform team managing many modules:
 
-```
+```text
 infra/
 ├── modules/
 │   ├── networking/
@@ -72,6 +72,7 @@ Create a `fixtures/` directory with reusable variable files loaded by multiple t
 
 ```hcl
 # tests/fixtures/dev_variables.tfvars
+
 region      = "us-east-1"
 environment = "dev"
 vpc_cidr    = "10.0.0.0/16"
@@ -131,4 +132,4 @@ jobs:
 
 ## Conclusion
 
-A clear test directory structure is the scaffolding that makes a growing infrastructure codebase manageable. Invest in it early, document it in your CONTRIBUTING guide, and enforce it in code review—your future team members will thank you.
+A clear test directory structure is the scaffolding that makes a growing infrastructure codebase manageable. Invest in it early, document it in your CONTRIBUTING guide, and enforce it in code review-your future team members will thank you.

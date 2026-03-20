@@ -48,6 +48,7 @@ variable "domain" {
 
 ```hcl
 # a-records.tf
+
 resource "cloudflare_record" "root_a" {
   zone_id = var.zone_id
   name    = "@"

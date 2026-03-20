@@ -18,6 +18,7 @@ Counter is a dict subclass for counting hashable objects:
 from collections import Counter
 
 # Count elements in a list
+
 fruits = ["apple", "banana", "apple", "cherry", "banana", "apple"]
 counter = Counter(fruits)
 print(counter)  # Counter({'apple': 3, 'banana': 2, 'cherry': 1})

@@ -32,6 +32,7 @@ Use the `dependsOn` field in Kustomization resources:
 
 ```yaml
 # infrastructure/base/kustomization.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

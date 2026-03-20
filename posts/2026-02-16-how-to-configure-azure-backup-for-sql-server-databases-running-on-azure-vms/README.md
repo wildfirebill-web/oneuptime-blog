@@ -94,6 +94,7 @@ The SQL Server backup policy is different from the VM backup policy. It has sepa
 
 ```bash
 # Create a SQL Server backup policy with custom schedules
+
 # Full weekly, differential every 12 hours, logs every 15 minutes
 
 az backup policy create \

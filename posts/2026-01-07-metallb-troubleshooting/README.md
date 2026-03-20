@@ -115,6 +115,7 @@ The first step in troubleshooting is ensuring all MetalLB components are healthy
 
 ```bash
 # Check the status of all MetalLB pods in the metallb-system namespace
+
 # You should see one controller pod and one speaker pod per node
 kubectl get pods -n metallb-system -o wide
 ```

@@ -61,6 +61,7 @@ If you have not already configured Shared VPC, here is how:
 
 ```bash
 # Enable the Compute Engine API in the host project
+
 gcloud services enable compute.googleapis.com \
     --project=host-project-id
 

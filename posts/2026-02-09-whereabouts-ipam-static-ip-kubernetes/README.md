@@ -46,6 +46,7 @@ Create a network attachment definition using Whereabouts IPAM:
 
 ```yaml
 # whereabouts-network.yaml
+
 apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata:

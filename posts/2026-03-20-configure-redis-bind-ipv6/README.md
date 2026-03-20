@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Redis, bind, Database, Cache Configuration
+Tags: IPv6, Redis, BIND, Database, Cache Configuration
 
 Description: Learn how to configure Redis to listen on IPv6 addresses, including binding to specific IPv6 interfaces, enabling dual-stack support, and securing IPv6 Redis connections.
 
@@ -12,6 +12,7 @@ Description: Learn how to configure Redis to listen on IPv6 addresses, including
 # /etc/redis/redis.conf
 
 # Default: only localhost
+
 bind 127.0.0.1 -::1
 
 # Listen on all IPv4 and IPv6 interfaces (not recommended without firewall)
@@ -24,7 +25,7 @@ bind ::1 2001:db8::10 127.0.0.1
 bind ::1 2001:db8::10
 ```
 
-Note: The `-` prefix in `-::1` means "optional bind" — Redis won't fail if the address is unavailable.
+Note: The `-` prefix in `-::1` means "optional bind" - Redis won't fail if the address is unavailable.
 
 ## Configure Redis for Dual-Stack Access
 

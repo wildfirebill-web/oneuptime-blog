@@ -26,6 +26,7 @@ Ensure Felix is exporting Prometheus metrics that include iptables error counter
 
 ```bash
 # Check if Felix metrics are enabled
+
 calicoctl get felixconfiguration default -o yaml | grep -E "prometheus|metrics"
 
 # Enable Felix metrics if not already enabled

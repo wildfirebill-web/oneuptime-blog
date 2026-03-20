@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, Encapsulation, OSI Model, TCP/IP, Network Architecture
 
-Description: IPv4 encapsulation wraps upper-layer protocol data inside an IP datagram by prepending an IP header, while decapsulation at the destination strips that header to deliver the payload to the correct protocol handler.
+Description: IPv4 encapsulation wraps upper-layer protocol data inside an IP datagram by prepending an IP header, while decapsulation at the destination strips that header to deliver the payload to the correct...
 
 ## What Is Encapsulation?
 
@@ -51,6 +51,7 @@ def decapsulate_ethernet_ipv4(frame: bytes):
     return src_ip, dst_ip, protocol, ip_payload
 
 # Example: minimal synthetic frame (Ethernet + IP + 4 bytes payload)
+
 # Ethernet dst + src (12 bytes) + EtherType 0x0800 (2 bytes)
 eth_hdr = bytes(12) + b'\x08\x00'
 ip_hdr = struct.pack("!BBHHHBBH4s4s",

@@ -27,6 +27,7 @@ Calculate the appropriate MTU for your pods:
 
 ```bash
 # Check host interface MTU
+
 ip link show eth0 | grep mtu
 
 # Example output: mtu 1500

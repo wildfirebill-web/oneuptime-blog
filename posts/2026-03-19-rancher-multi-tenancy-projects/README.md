@@ -104,6 +104,7 @@ Each tenant should only see their own project. Assign roles accordingly:
 
 ```hcl
 # Terraform example for tenant RBAC
+
 resource "rancher2_project_role_template_binding" "alpha_owner" {
   name               = "alpha-owner"
   project_id         = rancher2_project.tenant_alpha.id

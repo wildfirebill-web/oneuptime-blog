@@ -14,6 +14,7 @@ CentOS Stream 9 sits between Fedora and RHEL in the Red Hat ecosystem. It gets u
 
 ```ini
 # inventory/hosts
+
 [centos9]
 dev01 ansible_host=10.0.2.10
 dev02 ansible_host=10.0.2.11

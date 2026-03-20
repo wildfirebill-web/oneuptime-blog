@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Ansible, Comparison, Infrastructure as Code, Configuration Management, DevOps
 
-Description: Compare OpenTofu and Ansible — their different purposes, how they complement each other, and when to use each for infrastructure provisioning vs configuration management.
+Description: Compare OpenTofu and Ansible - their different purposes, how they complement each other, and when to use each for infrastructure provisioning vs configuration management.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ OpenTofu provisions cloud resources:
 
 ```hcl
 # OpenTofu: Create the infrastructure
+
 resource "aws_instance" "web" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.medium"
@@ -97,7 +98,7 @@ output "web_server_ip" {
 ```
 
 ```ini
-# templates/inventory.tpl — Ansible inventory
+# templates/inventory.tpl - Ansible inventory
 [web_servers]
 %{ for ip in web_servers ~}
 ${ip} ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/deploy-key
@@ -136,7 +137,7 @@ ansible-playbook -i inventory/production.ini playbooks/web-server.yml
 For immutable infrastructure, use Packer to bake Ansible configurations into AMIs, then deploy with OpenTofu:
 
 ```hcl
-# packer.pkr.hcl — Build AMI with Ansible pre-applied
+# packer.pkr.hcl - Build AMI with Ansible pre-applied
 build {
   sources = ["source.amazon-ebs.ubuntu"]
 

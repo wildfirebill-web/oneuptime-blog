@@ -18,6 +18,7 @@ Action groups are the notification targets. They define email recipients, SMS nu
 
 ```hcl
 # Action group for critical alerts - pages the on-call team
+
 resource "azurerm_monitor_action_group" "critical" {
   name                = "ag-critical-alerts"
   resource_group_name = azurerm_resource_group.monitoring.name

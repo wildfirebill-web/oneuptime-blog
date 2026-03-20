@@ -18,6 +18,7 @@ Containers inherit DNS settings from the host by default, but sometimes you need
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=Application with custom DNS
 

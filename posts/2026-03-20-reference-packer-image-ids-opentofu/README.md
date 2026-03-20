@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Packer, Image IDs, Data Sources, Versioning
+Tags: OpenTofu, Packer, Image IDs, Data Source, Versioning
 
 Description: Learn multiple strategies for referencing Packer-built image IDs in OpenTofu configurations, from dynamic data source lookups to pinned version variables.
 
@@ -14,6 +14,7 @@ Referencing Packer image IDs in OpenTofu requires deciding between dynamic (alwa
 
 ```hcl
 # Always use the most recent image
+
 data "aws_ami" "app" {
   most_recent = true
   owners      = ["self"]
@@ -153,4 +154,4 @@ resource "aws_launch_template" "app" {
 
 ## Conclusion
 
-For development and staging, use data source lookups with tag filters to automatically pick up the latest image. For production, pin the AMI ID either as a variable or through SSM Parameter Store, with CI/CD updating the reference as part of the image promotion process. The SSM Parameter Store approach is the most flexible — it decouples the image registry from OpenTofu configurations and enables environment-specific promotion workflows.
+For development and staging, use data source lookups with tag filters to automatically pick up the latest image. For production, pin the AMI ID either as a variable or through SSM Parameter Store, with CI/CD updating the reference as part of the image promotion process. The SSM Parameter Store approach is the most flexible - it decouples the image registry from OpenTofu configurations and enables environment-specific promotion workflows.

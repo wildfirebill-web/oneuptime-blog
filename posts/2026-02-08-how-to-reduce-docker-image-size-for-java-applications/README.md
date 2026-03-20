@@ -16,6 +16,7 @@ Most Java developers start with something like this:
 
 ```dockerfile
 # BAD: Full JDK, build tools, and source code in the production image
+
 FROM maven:3.9-eclipse-temurin-21
 WORKDIR /app
 COPY . .

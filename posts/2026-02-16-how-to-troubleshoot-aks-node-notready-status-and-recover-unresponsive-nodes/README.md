@@ -29,6 +29,7 @@ Start by getting the full picture of what the node is reporting.
 
 ```bash
 # List all nodes with their status
+
 kubectl get nodes -o wide
 
 # Get detailed conditions for the NotReady node

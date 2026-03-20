@@ -24,6 +24,7 @@ This guide covers requirements for both approaches: using GKE Dataplane V2 (whic
 
 ```bash
 # Option A: GKE Dataplane V2 (Cilium managed by GKE)
+
 # - Cilium is installed and managed by GKE
 # - Limited customization
 # - Integrated with GKE networking features

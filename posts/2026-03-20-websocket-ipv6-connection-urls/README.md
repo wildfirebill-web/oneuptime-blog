@@ -10,13 +10,13 @@ Description: Correctly format WebSocket connection URLs with IPv6 addresses in b
 
 IPv6 addresses in URLs must be enclosed in square brackets per RFC 3986:
 
-```
+```text
 ws://[ipv6-address]:port/path
 wss://[ipv6-address]:port/path
 ```
 
 Examples:
-```
+```text
 ws://[::1]:8080/              # Loopback
 ws://[2001:db8::1]:8080/     # Specific IPv6 address
 wss://[2001:db8::1]:8443/ws  # Secure WebSocket with path
@@ -52,7 +52,7 @@ socket.addEventListener('close', (event) => {
 ## Dynamic URL Construction for Dual-Stack
 
 ```javascript
-// url-helper.js — construct WebSocket URLs for IPv4 or IPv6
+// url-helper.js - construct WebSocket URLs for IPv4 or IPv6
 
 function buildWebSocketURL({ host, port, path = '/', secure = false, preferIPv6 = true }) {
     const scheme = secure ? 'wss' : 'ws';
@@ -123,6 +123,7 @@ When using Nginx as a WebSocket proxy, clients connect to Nginx via IPv6:
 
 ```nginx
 # nginx.conf
+
 server {
     listen [::]:80;
     server_name example.com;

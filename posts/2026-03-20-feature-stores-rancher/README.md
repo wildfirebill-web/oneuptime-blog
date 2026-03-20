@@ -1,8 +1,8 @@
-# How to Configure Feature Stores on Rancher
+# How to Configure Feature Stores on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, feast, feature-store, mlops, kubernetes
+Tags: Rancher, Feast, Feature-store, MLOps, Kubernetes
 
 Description: Guide to deploying and configuring ML feature stores like Feast on Rancher for reusable feature engineering.
 
@@ -24,6 +24,7 @@ Deploying this component on Rancher follows Kubernetes-native patterns: using He
 
 ```bash
 # Add the appropriate Helm repository
+
 helm repo add stable https://charts.helm.sh/stable
 helm repo update
 

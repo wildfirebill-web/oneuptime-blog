@@ -39,6 +39,7 @@ You need a RHEL system (or a build server) with the following:
 
 ```bash
 # Install lorax and its dependencies
+
 sudo dnf install -y lorax
 
 # Verify mkksiso is available (included with lorax)

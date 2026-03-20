@@ -26,6 +26,7 @@ If you only need to install a small number of snaps on systems without internet 
 
 ```bash
 # On a machine WITH internet access:
+
 # Download the snap and all its assertions
 snap download firefox
 

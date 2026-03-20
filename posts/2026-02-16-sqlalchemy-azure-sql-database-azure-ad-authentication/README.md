@@ -28,6 +28,7 @@ You need an Azure SQL Database with Azure AD authentication enabled and the righ
 
 ```bash
 # Install required packages
+
 pip install sqlalchemy pyodbc azure-identity
 ```
 

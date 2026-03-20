@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, netem, IPv4, Packet Reordering, Network Testing, Linux
+Tags: tc, Netem, IPv4, Packet Reordering, Network Testing, Linux
 
 Description: Use tc netem to deliberately reorder IPv4 packets on a Linux interface to test how TCP stacks and applications handle out-of-order delivery.
 
@@ -16,6 +16,7 @@ netem implements reordering by delaying most packets by a fixed delay but sendin
 
 ```bash
 # Reorder 25% of packets, with a 10ms base delay for the others
+
 # This means 25% of packets are sent immediately, 75% are delayed 10ms
 sudo tc qdisc add dev eth0 root netem \
   delay 10ms \
@@ -26,7 +27,7 @@ sudo tc qdisc add dev eth0 root netem \
 
 ## Understanding Reorder Parameters
 
-```
+```text
 netem reorder <percent> [correlation]
 - percent: probability a packet is sent immediately (before delayed packets)
 - correlation: how much the delay of consecutive packets are related

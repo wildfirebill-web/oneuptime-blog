@@ -43,6 +43,7 @@ You need to enable the cross-account backup feature from the organization's mana
 
 ```bash
 # Enable cross-account backup in the organization
+
 aws backup update-region-settings \
   --region us-east-1 \
   --resource-type-management-preference '{

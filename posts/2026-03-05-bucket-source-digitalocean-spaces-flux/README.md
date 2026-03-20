@@ -26,6 +26,7 @@ Create a Space through the DigitalOcean console or CLI.
 
 ```bash
 # Create a Space using doctl
+
 doctl spaces create flux-manifests --region nyc3
 ```
 

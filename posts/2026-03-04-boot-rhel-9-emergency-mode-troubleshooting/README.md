@@ -48,6 +48,7 @@ flowchart TD
 
 ```bash
 # Switch to emergency mode (all services will stop)
+
 sudo systemctl emergency
 ```
 

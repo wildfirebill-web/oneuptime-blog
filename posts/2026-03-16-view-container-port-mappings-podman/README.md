@@ -20,6 +20,7 @@ The `podman port` command shows port mappings for a container:
 
 ```bash
 # Start a container with port mappings
+
 podman run -d --name web -p 8080:80 nginx:latest
 
 # View all port mappings

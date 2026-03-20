@@ -8,7 +8,7 @@ Description: Learn how to use tofu refresh to update OpenTofu state to match the
 
 ## Introduction
 
-`tofu refresh` queries all resources in the current state and updates the state file to reflect their actual current attributes. It is a read-only operation — it never creates, updates, or destroys resources. After a refresh, `tofu plan` will use the updated state to calculate accurate diffs.
+`tofu refresh` queries all resources in the current state and updates the state file to reflect their actual current attributes. It is a read-only operation - it never creates, updates, or destroys resources. After a refresh, `tofu plan` will use the updated state to calculate accurate diffs.
 
 ## Basic Usage
 
@@ -16,6 +16,7 @@ Description: Learn how to use tofu refresh to update OpenTofu state to match the
 tofu refresh
 
 # Output:
+
 # aws_s3_bucket.data: Refreshing state... [id=acme-data-production]
 # aws_instance.web: Refreshing state... [id=i-0abc123def456]
 ```
@@ -111,4 +112,4 @@ While `tofu refresh` still works, the OpenTofu and Terraform communities recomme
 
 ## Conclusion
 
-`tofu refresh` updates state to match reality without changing infrastructure. For new workflows, prefer `tofu plan -refresh-only` followed by `tofu apply -refresh-only` — this gives you visibility into what changed before committing the updated state. Use `tofu plan -refresh=false` when you want a fast plan and know the state is accurate.
+`tofu refresh` updates state to match reality without changing infrastructure. For new workflows, prefer `tofu plan -refresh-only` followed by `tofu apply -refresh-only` - this gives you visibility into what changed before committing the updated state. Use `tofu plan -refresh=false` when you want a fast plan and know the state is accurate.

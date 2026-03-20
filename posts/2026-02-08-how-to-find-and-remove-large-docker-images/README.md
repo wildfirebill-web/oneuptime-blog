@@ -18,6 +18,7 @@ Before hunting for large images specifically, get an overview of what Docker is 
 
 ```bash
 # Show a summary of Docker disk usage
+
 docker system df
 ```
 

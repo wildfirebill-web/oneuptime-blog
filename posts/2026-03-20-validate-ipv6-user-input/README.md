@@ -13,7 +13,7 @@ Validating IPv6 addresses in user input prevents injection attacks, database err
 ## What Makes IPv6 Validation Hard
 
 Valid IPv6 representations of the same address:
-```
+```text
 2001:0db8:0000:0000:0000:0000:0000:0001  # Full notation
 2001:db8::1                              # Compressed
 2001:DB8::1                              # Case-insensitive
@@ -81,6 +81,7 @@ def validate_ipv6_input(user_input: str) -> dict:
     return result
 
 # Test cases
+
 inputs = [
     '2001:db8::1',
     '  ::1  ',           # With whitespace

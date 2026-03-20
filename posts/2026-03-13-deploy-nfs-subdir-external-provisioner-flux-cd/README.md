@@ -25,6 +25,7 @@ While NFS has performance limitations compared to Ceph or distributed storage, i
 
 ```bash
 # On any Kubernetes node, test NFS mount
+
 showmount -e <nfs-server-ip>
 # Expected output:
 # Export list for <nfs-server-ip>:

@@ -207,6 +207,7 @@ npm install aws-embedded-metrics
 
 ```python
 # Python EMF metrics using aws-embedded-metrics
+
 from aws_embedded_metrics import metric_scope
 from aws_embedded_metrics.unit import Unit
 

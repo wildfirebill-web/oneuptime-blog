@@ -8,20 +8,21 @@ Description: Learn how to detect, investigate, and resolve state drift in OpenTo
 
 ## Introduction
 
-State drift occurs when the actual state of your infrastructure differs from what OpenTofu's state file records. This happens when changes are made directly in the cloud console, by other tools, or by manual CLI commands — bypassing OpenTofu. Left unaddressed, drift leads to failed plans, unexpected changes, or infrastructure inconsistencies.
+State drift occurs when the actual state of your infrastructure differs from what OpenTofu's state file records. This happens when changes are made directly in the cloud console, by other tools, or by manual CLI commands - bypassing OpenTofu. Left unaddressed, drift leads to failed plans, unexpected changes, or infrastructure inconsistencies.
 
 ## Types of Drift
 
 - **Resource modified**: An attribute was changed outside OpenTofu (e.g., instance type resized in the console)
 - **Resource deleted**: A resource was deleted manually but still exists in state
-- **Resource added**: A resource was created outside OpenTofu (not in state — requires import)
+- **Resource added**: A resource was created outside OpenTofu (not in state - requires import)
 
 ## Step 1: Detect Drift with tofu plan
 
-The simplest drift detection is running `tofu plan` — it refreshes state and shows differences:
+The simplest drift detection is running `tofu plan` - it refreshes state and shows differences:
 
 ```bash
 # Run a plan with refresh enabled (default)
+
 tofu plan
 
 # Example output showing drift:
@@ -58,7 +59,7 @@ tofu plan -out=drift.tfplan
 tofu show drift.tfplan
 ```
 
-## Step 4: Resolve Drift — Accept the Change
+## Step 4: Resolve Drift - Accept the Change
 
 If the external change is intentional and should be kept, update your configuration to match:
 
@@ -73,11 +74,11 @@ resource "aws_instance" "web" {
 ```
 
 ```bash
-# Run plan — should show no changes now
+# Run plan - should show no changes now
 tofu plan
 ```
 
-## Step 5: Resolve Drift — Revert the Change
+## Step 5: Resolve Drift - Revert the Change
 
 If the external change was unauthorized, revert by running `tofu apply`:
 

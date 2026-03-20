@@ -59,6 +59,7 @@ Operation processors handle the actual sync execution. If you have many applicat
 
 ```yaml
 # Operation processors control concurrent syncs
+
 # Default: 10
 - --operation-processors=50
 ```

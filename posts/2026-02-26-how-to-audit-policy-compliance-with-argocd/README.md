@@ -56,6 +56,7 @@ ArgoCD's sync status is itself a compliance indicator. If all applications are s
 
 ```bash
 # Get sync compliance across all applications
+
 TOTAL=$(argocd app list -o json | jq '. | length')
 SYNCED=$(argocd app list -o json | jq '[.[] | select(.status.sync.status == "Synced")] | length')
 OUT_OF_SYNC=$(argocd app list -o json | jq '[.[] | select(.status.sync.status != "Synced")] | length')

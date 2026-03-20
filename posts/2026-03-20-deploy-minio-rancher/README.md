@@ -1,8 +1,8 @@
-# How to Deploy Minio on Rancher
+# How to Deploy Minio on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, minio, object-storage, s3, kubernetes
+Tags: Rancher, MinIO, Object-storage, S3, Kubernetes
 
 Description: Guide to deploying MinIO distributed object storage on Rancher as an S3-compatible storage backend.
 
@@ -22,6 +22,7 @@ This guide covers deploying uminio on Rancher with production-ready configuratio
 
 ```bash
 # Add the chart repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

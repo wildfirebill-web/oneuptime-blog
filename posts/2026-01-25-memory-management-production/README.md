@@ -39,6 +39,7 @@ Container memory limits include ALL memory used by the process, not just heap. T
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

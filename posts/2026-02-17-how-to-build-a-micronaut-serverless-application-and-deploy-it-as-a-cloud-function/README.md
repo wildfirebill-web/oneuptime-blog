@@ -248,6 +248,7 @@ You can also run the function locally using the Functions Framework:
 
 ```bash
 # Build the shadow jar and run locally with the Functions Framework
+
 ./gradlew shadowJar
 
 java -jar build/libs/my-function-0.1-all.jar

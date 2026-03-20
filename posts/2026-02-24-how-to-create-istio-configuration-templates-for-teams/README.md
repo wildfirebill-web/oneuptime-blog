@@ -205,6 +205,7 @@ Teams use the template by providing their own values file:
 
 ```yaml
 # team-checkout-values.yaml
+
 service:
   name: checkout-api
   namespace: team-checkout

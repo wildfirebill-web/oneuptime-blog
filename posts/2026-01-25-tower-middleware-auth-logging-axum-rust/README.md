@@ -330,6 +330,7 @@ You can test the endpoints with curl:
 
 ```bash
 # This should return 401 Unauthorized
+
 curl -i http://localhost:3000/secret
 
 # This should succeed

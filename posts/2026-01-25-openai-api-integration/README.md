@@ -25,6 +25,7 @@ import os
 from openai import OpenAI
 
 # Set API key via environment variable (recommended)
+
 os.environ["OPENAI_API_KEY"] = "your-api-key"
 
 # Or pass directly to client

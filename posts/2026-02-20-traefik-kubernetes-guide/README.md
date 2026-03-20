@@ -35,6 +35,7 @@ graph TD
 
 ```bash
 # install-traefik.sh
+
 # Install Traefik using Helm with custom values
 
 # Add the Traefik Helm repository

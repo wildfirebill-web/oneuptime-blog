@@ -64,6 +64,7 @@ flowchart TB
 
 ```bash
 # Add the NPD Helm repository
+
 helm repo add deliveryhero https://charts.deliveryhero.io/
 helm repo update
 
@@ -1529,7 +1530,7 @@ spec:
 3. **Respect PodDisruptionBudgets** - Do not disrupt critical workloads
 4. **Log all actions** - Maintain audit trail for troubleshooting
 
-### Resource Management
+Resource Management
 
 1. **Set resource limits** - Prevent NPD from consuming node resources
 2. **Use priorityClass** - Ensure NPD runs even under resource pressure

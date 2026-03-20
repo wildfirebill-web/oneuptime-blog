@@ -22,6 +22,7 @@ k9s is a terminal-based UI for Kubernetes that makes navigating and managing clu
 
 ```bash
 # Get the latest k9s version
+
 K9S_VERSION=$(curl -s https://api.github.com/repos/derailed/k9s/releases/latest \
   | grep '"tag_name":' | sed 's/.*"v\([^"]*\)".*/\1/')
 

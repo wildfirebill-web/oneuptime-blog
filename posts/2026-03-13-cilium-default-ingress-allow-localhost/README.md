@@ -29,6 +29,7 @@ Understand the current default behavior:
 
 ```bash
 # Check if allow-localhost behavior is enabled
+
 kubectl -n kube-system get configmap cilium-config -o yaml | grep allow-localhost
 # Default: allow-localhost=policy (allows when policy is enforced)
 # Options: allow-localhost=always | policy | false

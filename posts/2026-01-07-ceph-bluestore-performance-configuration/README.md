@@ -117,6 +117,7 @@ The following command creates an OSD with dedicated DB and WAL devices. This con
 
 ```bash
 # Create an OSD with separate DB and WAL devices
+
 # --data: Primary data device (HDD in this case)
 # --block-db: Dedicated device partition for RocksDB database
 # --block-wal: Dedicated device partition for RocksDB write-ahead log

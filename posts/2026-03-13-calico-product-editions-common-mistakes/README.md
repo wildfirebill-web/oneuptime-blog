@@ -59,6 +59,7 @@ Each Calico version supports a specific range of Kubernetes versions. Installing
 
 ```bash
 # Check current Calico version
+
 kubectl get pods -n kube-system -l k8s-app=calico-node \
   -o jsonpath='{.items[0].spec.containers[0].image}'
 ```

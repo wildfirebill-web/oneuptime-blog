@@ -42,7 +42,7 @@ variable "location" {
 }
 ```
 
-## Resource Group
+Resource Group
 
 ```hcl
 resource "azurerm_resource_group" "apps" {
@@ -70,6 +70,7 @@ App Service Plans come in several tiers:
 
 ```hcl
 # Standard tier plan for production web apps
+
 resource "azurerm_service_plan" "standard" {
   name                = "asp-webapp-prod"
   location            = azurerm_resource_group.apps.location

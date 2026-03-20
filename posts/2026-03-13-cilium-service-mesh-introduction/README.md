@@ -39,6 +39,7 @@ helm upgrade cilium cilium/cilium \
 
 ```bash
 # Check Cilium Envoy DaemonSet
+
 kubectl get daemonset -n kube-system cilium-envoy
 
 # Verify Cilium agents report service mesh ready

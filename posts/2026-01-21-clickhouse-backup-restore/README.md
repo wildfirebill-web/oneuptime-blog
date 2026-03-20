@@ -27,6 +27,7 @@ The most popular backup tool for ClickHouse, supporting local and cloud storage.
 
 ```bash
 # Download latest release
+
 wget https://github.com/Altinity/clickhouse-backup/releases/latest/download/clickhouse-backup-linux-amd64.tar.gz
 tar -xzf clickhouse-backup-linux-amd64.tar.gz
 sudo mv clickhouse-backup /usr/local/bin/

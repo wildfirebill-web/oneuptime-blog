@@ -20,6 +20,7 @@ To see what callback plugins are available on your system:
 
 ```bash
 # List all callback plugins
+
 ansible-doc -t callback -l
 
 # Get details about a specific plugin

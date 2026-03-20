@@ -37,6 +37,7 @@ The most common cause is declaring a queue with different durability settings:
 
 ```python
 # First declaration - durable queue
+
 # Durable queues survive broker restarts
 channel.queue_declare(queue='orders', durable=True)
 

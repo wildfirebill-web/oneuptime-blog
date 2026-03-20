@@ -23,6 +23,7 @@ If you have not yet installed the Flux CLI, use the following command.
 
 ```bash
 # Install the Flux CLI on macOS or Linux
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 ```
 

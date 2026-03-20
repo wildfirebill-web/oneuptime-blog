@@ -55,6 +55,7 @@ AppProjects are the foundation of ArgoCD multi-tenancy. Each project defines wha
 
 ```yaml
 # appproject-team-alpha.yaml
+
 # This project restricts team-alpha to their own repos and namespaces
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject

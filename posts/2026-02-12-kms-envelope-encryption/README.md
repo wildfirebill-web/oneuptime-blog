@@ -68,6 +68,7 @@ KMS provides two API calls for generating data keys.
 
 ```bash
 # Generate a data key - returns both plaintext and encrypted versions
+
 aws kms generate-data-key \
   --key-id alias/production-data \
   --key-spec AES_256 \

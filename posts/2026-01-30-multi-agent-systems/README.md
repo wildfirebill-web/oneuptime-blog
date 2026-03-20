@@ -136,6 +136,7 @@ Start by creating a base agent class that all specialized agents will inherit fr
 
 ```python
 # agents/base.py
+
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Optional
 import json

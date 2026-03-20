@@ -30,6 +30,7 @@ First, register a consumer with the stream:
 
 ```bash
 # Register an enhanced fan-out consumer
+
 aws kinesis register-stream-consumer \
     --stream-arn "arn:aws:kinesis:us-east-1:123456789012:stream/orders-stream" \
     --consumer-name "analytics-processor"

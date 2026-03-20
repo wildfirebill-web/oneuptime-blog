@@ -40,6 +40,7 @@ Add the OpenTelemetry Rails instrumentation gem, which includes ActionController
 
 ```ruby
 # Gemfile
+
 gem 'opentelemetry-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-instrumentation-rails'

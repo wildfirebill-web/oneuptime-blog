@@ -35,6 +35,7 @@ Start with built-in linting to catch syntax and best practice issues.
 
 ```bash
 # Basic lint
+
 helm lint ./my-chart
 
 # Lint with values file

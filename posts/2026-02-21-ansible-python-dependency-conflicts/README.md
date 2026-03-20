@@ -18,6 +18,7 @@ System package managers (apt, dnf) install Python packages that can conflict wit
 
 ```bash
 # This shows conflicting packages
+
 pip check
 
 # Example output:

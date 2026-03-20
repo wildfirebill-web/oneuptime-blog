@@ -16,6 +16,7 @@ On RHEL, the tool for this is dnf-automatic. It integrates with systemd timers a
 
 ```bash
 # Install the dnf-automatic package
+
 dnf install -y dnf-automatic
 
 # Verify the installation

@@ -1,4 +1,4 @@
-# How to Deploy n8n Workflow Automation via Portainer
+# How to Deploy n8n Workflow Automation via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -126,6 +126,7 @@ return [{
 
 ```bash
 # Install community nodes via CLI
+
 docker exec n8n n8n install-community-nodes n8n-nodes-minio
 ```
 

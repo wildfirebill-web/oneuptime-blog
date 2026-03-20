@@ -35,6 +35,7 @@ Policy sets group policies together and attach them to workspaces.
 
 ```hcl
 # Create a Sentinel policy set from a VCS repository
+
 resource "tfe_policy_set" "security" {
   name         = "security-policies"
   description  = "Security and compliance policies"

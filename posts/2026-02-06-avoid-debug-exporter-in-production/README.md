@@ -49,6 +49,7 @@ Remove the debug exporter from your production pipeline entirely:
 
 ```yaml
 # production-config.yaml
+
 exporters:
   otlp:
     endpoint: "https://your-backend:4317"

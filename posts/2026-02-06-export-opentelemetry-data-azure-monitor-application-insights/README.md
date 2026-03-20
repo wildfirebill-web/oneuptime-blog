@@ -51,6 +51,7 @@ Install the distro package along with the core OpenTelemetry dependencies.
 
 ```bash
 # Install the Azure Monitor OpenTelemetry Distro
+
 # This includes the exporter and common auto-instrumentation libraries
 pip install azure-monitor-opentelemetry
 ```

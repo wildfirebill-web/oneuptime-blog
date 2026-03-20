@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv4, Node CIDR, Pod Allocation, kube-controller-manager, Networking
+Tags: Kubernetes, IPv4, Node CIDR, Pod Allocation, Kube-controller-manager, Networking
 
 Description: Adjust the node CIDR mask size in Kubernetes to control how many IPv4 pod addresses are allocated per node from the cluster's Pod CIDR range.
 
@@ -10,7 +10,7 @@ The node CIDR mask size determines how large a subnet each node receives from th
 
 ## How CIDR Allocation Works
 
-```
+```text
 Cluster Pod CIDR: 10.244.0.0/16 (65,534 addresses)
 Node CIDR mask:   /24 (256 addresses per node)
 Maximum nodes:    65,534 / 256 = 256 nodes
@@ -29,6 +29,7 @@ The mask is set on `kube-controller-manager` via `--node-cidr-mask-size`:
 
 ```yaml
 # kubeadm-config.yaml
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 networking:

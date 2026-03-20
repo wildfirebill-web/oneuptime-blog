@@ -408,6 +408,7 @@ class MultivariateFlagEvaluator:
 
 
 # Usage example
+
 evaluator = MultivariateFlagEvaluator()
 
 checkout_flow_test = MultivariateFlag(

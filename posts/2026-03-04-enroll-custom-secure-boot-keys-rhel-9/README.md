@@ -33,6 +33,7 @@ Create a key pair for signing:
 
 ```bash
 # Create a directory for Secure Boot keys
+
 sudo mkdir -p /root/secureboot-keys
 cd /root/secureboot-keys
 

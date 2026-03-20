@@ -14,6 +14,7 @@ Teredo on Windows is managed via `netsh interface teredo` commands and PowerShel
 
 ```powershell
 # PowerShell
+
 Get-NetTeredoConfiguration
 
 # Example output:
@@ -41,8 +42,8 @@ netsh interface teredo show state
 
 | State | Meaning |
 |---|---|
-| `dormant` | Installed but inactive — native IPv6 available |
-| `client` | Active — providing IPv6 via Teredo |
+| `dormant` | Installed but inactive - native IPv6 available |
+| `client` | Active - providing IPv6 via Teredo |
 | `offline` | No Teredo server reachable |
 | `disabled` | Fully disabled |
 | `probe` | Determining type of NAT |
@@ -78,7 +79,7 @@ ipconfig | findstr "2001:"
 :: Full interface details
 netsh interface ipv6 show address
 
-:: Check routing — Teredo should appear as a route
+:: Check routing - Teredo should appear as a route
 netsh interface ipv6 show route | findstr "2001"
 
 :: Test connectivity
@@ -114,7 +115,7 @@ Get-NetTeredoConfiguration | Select-Object Type
 
 ## Enterprise Disablement via Group Policy
 
-```
+```text
 Computer Configuration →
   Administrative Templates →
     Network →

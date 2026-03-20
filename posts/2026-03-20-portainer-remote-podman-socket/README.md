@@ -25,6 +25,7 @@ SSH tunneling is the safest approach as it does not expose the Podman socket dir
 
 ```bash
 # Enable Podman socket on the remote host
+
 systemctl --user enable --now podman.socket
 
 # Check the socket is active
@@ -66,13 +67,13 @@ autossh -M 0 -f \
 
 In Portainer, add the environment using the local forwarded socket:
 
-```
+```text
 unix:///tmp/podman.sock
 ```
 
 Or via TCP using the forwarded port:
 
-```
+```text
 tcp://localhost:9999
 ```
 
@@ -133,7 +134,7 @@ sudo systemctl restart podman.service
 
 In Portainer's "Add Environment" dialog:
 
-```
+```text
 Endpoint URL: tcp://remote-host:2376
 TLS: Enabled
 CA Certificate: ca.pem

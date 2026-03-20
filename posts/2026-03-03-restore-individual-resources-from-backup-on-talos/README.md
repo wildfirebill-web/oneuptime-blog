@@ -30,6 +30,7 @@ Before restoring, examine what is in the backup.
 
 ```bash
 # List all backups
+
 velero backup get
 
 # Describe a specific backup to see what it contains

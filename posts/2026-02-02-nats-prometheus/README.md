@@ -62,6 +62,7 @@ The following configuration enables the HTTP monitoring port on 8222, which serv
 
 ```hcl
 # nats-server.conf
+
 # Server identification for metrics labeling
 server_name: nats-1
 

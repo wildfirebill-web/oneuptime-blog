@@ -56,6 +56,7 @@ Create the green database alongside the existing blue one. Both are managed by A
 
 ```yaml
 # databases/green-postgres.yaml
+
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:

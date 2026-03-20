@@ -296,6 +296,7 @@ If TLS origination is not working, check these things:
 
 ```bash
 # Verify the ServiceEntry is recognized
+
 istioctl proxy-config cluster <pod-name> | grep "api.example.com"
 
 # Check the route configuration

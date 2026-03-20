@@ -28,6 +28,7 @@ for ns in phi-services clinical-services admin-services integration; do
 done
 
 # Label PHI namespace for policy targeting
+
 kubectl label namespace phi-services data-classification=phi
 ```
 

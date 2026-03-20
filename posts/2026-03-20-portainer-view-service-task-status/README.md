@@ -8,7 +8,7 @@ Description: Learn how to monitor individual Swarm service task status, placemen
 
 ## Introduction
 
-In Docker Swarm, services are composed of individual tasks — each task is a container running on a specific node. Understanding task status is crucial for diagnosing deployment issues, monitoring rollouts, and verifying service health. Portainer provides detailed task views for all Swarm services. This guide covers how to read and act on task status information.
+In Docker Swarm, services are composed of individual tasks - each task is a container running on a specific node. Understanding task status is crucial for diagnosing deployment issues, monitoring rollouts, and verifying service health. Portainer provides detailed task views for all Swarm services. This guide covers how to read and act on task status information.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Each task shows:
 
 In replicated services, task slots persist:
 
-```
+```text
 Before update:
   web.1 → worker-01 (running)  ← Slot 1
   web.2 → worker-02 (running)  ← Slot 2
@@ -76,10 +76,10 @@ Filter to show only current tasks or include history using the filter options.
 
 Click on a running task ID to navigate to the container detail:
 
-- **Logs** — View the container's stdout/stderr
-- **Stats** — CPU, memory, network usage
-- **Console** — Exec into the container
-- **Inspect** — Full container JSON details
+- **Logs** - View the container's stdout/stderr
+- **Stats** - CPU, memory, network usage
+- **Console** - Exec into the container
+- **Inspect** - Full container JSON details
 
 ## Step 6: Diagnose Common Task States
 
@@ -87,6 +87,7 @@ Click on a running task ID to navigate to the container detail:
 
 ```bash
 # Check why a task is not scheduled
+
 docker service ps --no-trunc web-frontend
 
 # Common reasons:
@@ -97,7 +98,7 @@ docker service ps --no-trunc web-frontend
 
 Check the **error** column in `docker service ps` for details:
 
-```
+```text
 no suitable node (scheduling constraints not satisfied on 4 nodes)
 ```
 
@@ -145,9 +146,9 @@ docker node rm --force <node-id>
 
 Use Portainer's filter options to narrow the task view:
 
-- **Show only running tasks** — Hide historical/failed tasks
-- **Filter by state** — Focus on pending or failed tasks
-- **Filter by node** — See tasks on a specific node
+- **Show only running tasks** - Hide historical/failed tasks
+- **Filter by state** - Focus on pending or failed tasks
+- **Filter by node** - See tasks on a specific node
 
 ## CLI Reference for Task Inspection
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ephemeral, ephemeralasnull, Functions, Infrastructure as Code, DevOps
+Tags: OpenTofu, Ephemeral, Ephemeralasnull, Functions, Infrastructure as Code, DevOps
 
 Description: A guide to using the ephemeralasnull function in OpenTofu to convert ephemeral values to null for use in contexts that don't support ephemeral values.
 
@@ -18,6 +18,7 @@ ephemeral "aws_secretsmanager_secret_version" "api_key" {
 }
 
 # ephemeralasnull converts the ephemeral value to null
+
 # This allows using ephemeral references in non-ephemeral contexts
 output "api_key_status" {
   # Can't use ephemeral value directly in regular output
@@ -165,4 +166,4 @@ output "db_creds_status" {
 
 ## Conclusion
 
-The `ephemeralasnull` function is a safety valve that allows ephemeral values to be referenced in non-ephemeral contexts by converting them to `null`. It is particularly useful for checking whether an ephemeral resource was successfully fetched, creating conditional logic based on the existence (not the value) of ephemeral data, and debugging configurations without accidentally exposing secrets. Remember that the actual value is always lost when using `ephemeralasnull` — you only retain the null/non-null distinction, not the content.
+The `ephemeralasnull` function is a safety valve that allows ephemeral values to be referenced in non-ephemeral contexts by converting them to `null`. It is particularly useful for checking whether an ephemeral resource was successfully fetched, creating conditional logic based on the existence (not the value) of ephemeral data, and debugging configurations without accidentally exposing secrets. Remember that the actual value is always lost when using `ephemeralasnull` - you only retain the null/non-null distinction, not the content.

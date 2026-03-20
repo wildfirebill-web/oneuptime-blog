@@ -16,6 +16,7 @@ Download and extract Gatling:
 
 ```bash
 # Download Gatling
+
 wget https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/3.9.5/gatling-charts-highcharts-bundle-3.9.5-bundle.zip
 
 # Extract

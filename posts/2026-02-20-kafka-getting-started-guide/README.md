@@ -59,6 +59,7 @@ The fastest way to start is with Docker Compose.
 
 ```yaml
 # docker-compose.yml
+
 # Spins up a single-node Kafka cluster with KRaft (no ZooKeeper)
 version: "3.9"
 services:

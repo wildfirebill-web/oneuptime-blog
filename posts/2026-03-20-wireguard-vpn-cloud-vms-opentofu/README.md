@@ -91,6 +91,7 @@ resource "aws_eip" "wireguard" {
 ```bash
 #!/bin/bash
 # scripts/wireguard-setup.sh.tpl
+
 apt-get update -y
 apt-get install -y wireguard
 
@@ -149,4 +150,4 @@ tofu apply tfplan
 
 ## Summary
 
-WireGuard on cloud VMs provides a lightweight, high-performance VPN solution that you fully control. OpenTofu provisions the VM, security groups, and Elastic IP, while cloud-init configures WireGuard — giving you a complete, reproducible VPN deployment.
+WireGuard on cloud VMs provides a lightweight, high-performance VPN solution that you fully control. OpenTofu provisions the VM, security groups, and Elastic IP, while cloud-init configures WireGuard - giving you a complete, reproducible VPN deployment.

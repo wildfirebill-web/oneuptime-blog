@@ -116,6 +116,7 @@ Fires after a fixed number of elements arrive.
 
 ```python
 # Pseudocode
+
 trigger = AfterCount(100)  # Emit after every 100 elements
 ```
 

@@ -28,6 +28,7 @@ For jobs that should run exactly once (like a database migration), use ArgoCD re
 
 ```yaml
 # apps/myapp/db-migration-job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

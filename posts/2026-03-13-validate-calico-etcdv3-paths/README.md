@@ -26,6 +26,7 @@ Verify that policies in etcd match what calicoctl reports:
 
 ```bash
 # Count policies via etcd
+
 ETCD_POLICY_COUNT=$(etcdctl get /calico/v1/policy/ --prefix --keys-only | wc -l)
 
 # Count policies via calicoctl

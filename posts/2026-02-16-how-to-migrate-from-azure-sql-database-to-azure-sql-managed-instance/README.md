@@ -30,6 +30,7 @@ Here is how to run a DMA assessment from the command line:
 
 ```bash
 # Run the DMA command-line assessment tool
+
 # This checks your source database for any features not supported in Managed Instance
 DmaCmd.exe /AssessmentName="MigrationAssessment" \
   /AssessmentSourcePlatform="SqlOnAzure" \

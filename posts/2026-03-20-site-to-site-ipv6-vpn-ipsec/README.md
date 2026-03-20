@@ -12,7 +12,7 @@ A site-to-site IPv6 VPN connects two geographically separate networks over an en
 
 ## Topology
 
-```
+```text
 Site 1 Network: 2001:db8:site1::/48
   Gateway 1 (GW1): 2001:db8:net::1 (public IPv6)
   Internal hosts: 2001:db8:site1::x
@@ -26,6 +26,7 @@ Site 2 Network: 2001:db8:site2::/48
 
 ```bash
 # Both gateways: Install strongSwan and enable forwarding
+
 apt install strongswan strongswan-swanctl libcharon-extra-plugins
 
 sysctl -w net.ipv6.conf.all.forwarding=1
@@ -39,7 +40,7 @@ systemctl enable --now strongswan
 
 ### /etc/swanctl/conf.d/s2s.conf
 
-```
+```text
 connections {
     site1-to-site2 {
         version = 2
@@ -88,7 +89,7 @@ secrets {
 
 ### /etc/swanctl/conf.d/s2s.conf
 
-```
+```text
 connections {
     site2-to-site1 {
         version = 2

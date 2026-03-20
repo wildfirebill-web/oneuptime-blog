@@ -1,4 +1,4 @@
-# How to Mark Variables as Sensitive in OpenTofu
+# How to Mark Variables as Sensitive in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The `sensitive = true` attribute in variable declarations tells OpenTofu to trea
 
 ```hcl
 # variables.tf
+
 variable "database_password" {
   type        = string
   description = "Password for the RDS database"

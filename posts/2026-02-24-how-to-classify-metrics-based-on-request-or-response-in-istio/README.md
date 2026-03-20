@@ -278,6 +278,7 @@ This gives you a two-dimensional view:
 
 ```promql
 # V2 API high-priority request rate
+
 sum(rate(istio_requests_total{
   api_category="v2",
   priority="high"

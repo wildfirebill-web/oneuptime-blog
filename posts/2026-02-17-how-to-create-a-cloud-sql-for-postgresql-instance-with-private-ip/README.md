@@ -34,6 +34,7 @@ Enable both APIs with these commands:
 
 ```bash
 # Enable the required APIs for Cloud SQL with private IP
+
 gcloud services enable sqladmin.googleapis.com
 gcloud services enable servicenetworking.googleapis.com
 ```

@@ -26,6 +26,7 @@ gcloud compute networks subnets list --project=$PROJECT_B --filter="network:vpc-
 
 ```bash
 # In Project A: peer to Project B's VPC
+
 gcloud compute networks peerings create a-to-b \
   --project=$PROJECT_A \
   --network=vpc-a \

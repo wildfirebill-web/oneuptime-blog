@@ -1,11 +1,10 @@
----
-title: "Using Private Module Registries in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, private-registry
-description: "Learn how to use private module registries in OpenTofu for sharing modules within your organization securely."
----
-
 # Using Private Module Registries in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Private-registry
+
+Description: Learn how to use private module registries in OpenTofu for sharing modules within your organization securely.
 
 Private module registries let organizations share and manage internal modules without exposing them publicly. OpenTofu supports several options for private registries, including Terraform Cloud/Enterprise, Spacelift, Scalr, and self-hosted solutions.
 
@@ -15,6 +14,7 @@ The most common private registry is Terraform Cloud (or Terraform Enterprise for
 
 ```hcl
 # Configure the registry hostname
+
 terraform {
   required_providers {
     aws = {
@@ -144,7 +144,7 @@ module "private_module" {
 
 ## Organizing Modules in a Monorepo
 
-```
+```text
 infrastructure-modules/           # Private GitHub repo
 ├── modules/
 │   ├── vpc/
@@ -181,7 +181,7 @@ module "eks" {
 ## Registry with Version Pinning Strategy
 
 ```hcl
-# versions.tf — centralize version management
+# versions.tf - centralize version management
 locals {
   module_versions = {
     vpc      = "2.1.0"

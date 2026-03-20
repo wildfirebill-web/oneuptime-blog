@@ -45,6 +45,7 @@ resource "aws_s3_bucket" "encrypted" {
 }
 
 # Apply SSE-KMS encryption to the bucket
+
 resource "aws_s3_bucket_server_side_encryption_configuration" "kms" {
   bucket = aws_s3_bucket.encrypted.id
 

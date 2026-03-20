@@ -80,6 +80,7 @@ Create it in IAM:
 
 ```bash
 # Create the permission boundary policy
+
 aws iam create-policy \
   --policy-name DeveloperBoundary \
   --policy-document file://boundary-policy.json \

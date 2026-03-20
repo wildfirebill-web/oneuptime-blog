@@ -24,6 +24,7 @@ Deploy Jaeger with the sampling manager component enabled:
 
 ```yaml
 # jaeger-deployment.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

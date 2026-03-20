@@ -8,7 +8,7 @@ Description: Learn how to deploy Jaeger on Kubernetes using OpenTofu for distrib
 
 ---
 
-Jaeger provides distributed tracing for microservices — it traces requests as they flow through services, identifying latency bottlenecks and failures. OpenTofu deploys Jaeger with a scalable Elasticsearch backend and configures sampling appropriate for each environment.
+Jaeger provides distributed tracing for microservices - it traces requests as they flow through services, identifying latency bottlenecks and failures. OpenTofu deploys Jaeger with a scalable Elasticsearch backend and configures sampling appropriate for each environment.
 
 ## Jaeger Architecture
 
@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # jaeger.tf
+
 resource "helm_release" "jaeger_operator" {
   name             = "jaeger-operator"
   repository       = "https://jaegertracing.github.io/helm-charts"
@@ -153,6 +154,6 @@ resource "helm_release" "otel_collector" {
 
 - Use probabilistic sampling (10%) in production to avoid overwhelming Elasticsearch with trace data.
 - Use constant sampling (100%) in dev/staging so all requests are traced during development.
-- Deploy the OpenTelemetry Collector as a gateway rather than having services send traces directly to Jaeger — it decouples your applications from the tracing backend.
-- Set Elasticsearch index retention policies for trace data — production traces are often useful for 7-14 days, not indefinitely.
-- Instrument services with OpenTelemetry SDK rather than Jaeger client libraries — OpenTelemetry is vendor-neutral and easier to migrate later.
+- Deploy the OpenTelemetry Collector as a gateway rather than having services send traces directly to Jaeger - it decouples your applications from the tracing backend.
+- Set Elasticsearch index retention policies for trace data - production traces are often useful for 7-14 days, not indefinitely.
+- Instrument services with OpenTelemetry SDK rather than Jaeger client libraries - OpenTelemetry is vendor-neutral and easier to migrate later.

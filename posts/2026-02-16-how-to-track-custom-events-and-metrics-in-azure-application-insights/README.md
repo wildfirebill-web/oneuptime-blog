@@ -134,6 +134,7 @@ function trackQueueDepth(queueName, depth) {
 
 ```python
 # Track custom telemetry using the OpenCensus Azure exporter
+
 from opencensus.ext.azure import metrics_exporter
 from opencensus.stats import aggregation, measure, stats, view
 

@@ -30,6 +30,7 @@ Create a dedicated storage account for log storage. Using a separate account fro
 
 ```bash
 # Create a resource group for logging resources
+
 az group create \
   --name rg-logging \
   --location eastus2

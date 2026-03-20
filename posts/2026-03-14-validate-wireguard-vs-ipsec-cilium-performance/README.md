@@ -28,6 +28,7 @@ The validation answers: Which protocol is faster for our hardware? Is the perfor
 ```bash
 #!/bin/bash
 # validate-encryption-protocol.sh
+
 PROTOCOLS=("wireguard" "ipsec")
 
 for PROTO in "${PROTOCOLS[@]}"; do

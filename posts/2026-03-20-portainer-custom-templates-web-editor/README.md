@@ -29,9 +29,10 @@ The Portainer web editor is the quickest way to create custom templates. You wri
 
 Complete the metadata section:
 
-```
+```text
 Title:       Monitoring Stack
 Description: Prometheus and Grafana monitoring with alerting
+
 Categories:  monitoring, observability
 Platform:    linux
 Type:        Stack
@@ -144,6 +145,7 @@ Portainer uses Mustache-style syntax for template variables:
 
 ```yaml
 # Basic variable substitution
+
 image: myapp:{{ .version }}
 
 # Variable with default value (uses pipe | default)

@@ -268,6 +268,7 @@ Update your DNS to point to the Istio gateway's load balancer. You can use weigh
 
 ```bash
 # Point 10% to Istio initially
+
 aws route53 change-resource-record-sets --hosted-zone-id Z123 --change-batch '{
   "Changes": [{
     "Action": "UPSERT",

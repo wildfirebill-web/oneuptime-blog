@@ -356,6 +356,7 @@ Deploy using the Azure CLI.
 
 ```bash
 # Deploy the Bicep template to a resource group
+
 az deployment group create \
   --resource-group my-rg \
   --template-file main.bicep \

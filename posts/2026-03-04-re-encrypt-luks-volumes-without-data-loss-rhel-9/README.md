@@ -38,6 +38,7 @@ Before starting reencryption:
 
 ```bash
 # Verify the device is LUKS2 (reencryption requires LUKS2)
+
 sudo cryptsetup luksDump /dev/sdb | head -5
 # Must show: Version: 2
 

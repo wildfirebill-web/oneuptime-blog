@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, selectors, IPv4, Sockets, Multiplexing, Networking, Non-Blocking
+Tags: Python, Selectors, IPv4, Sockets, Multiplexing, Networking, Non-Blocking
 
 Description: Learn how to use Python's selectors module to efficiently multiplex multiple IPv4 socket connections in a single thread without blocking.
 
@@ -18,6 +18,7 @@ import socket
 import types
 
 # DefaultSelector picks the best available implementation (epoll/kqueue/select)
+
 sel = selectors.DefaultSelector()
 
 HOST = "0.0.0.0"
@@ -80,10 +81,10 @@ try:
 
         for key, mask in events:
             if key.data is None:
-                # This is the server socket — accept a new connection
+                # This is the server socket - accept a new connection
                 accept_connection(key.fileobj)
             else:
-                # This is a client socket — service it
+                # This is a client socket - service it
                 service_connection(key, mask)
 
 except KeyboardInterrupt:

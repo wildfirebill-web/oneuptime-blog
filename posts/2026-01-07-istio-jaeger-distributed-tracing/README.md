@@ -62,6 +62,7 @@ The following configuration enables Istio's tracing extension provider and confi
 
 ```yaml
 # istio-operator-config.yaml
+
 # This configuration installs Istio with tracing enabled
 # and configures the mesh to send traces to Jaeger
 apiVersion: install.istio.io/v1alpha1
@@ -1936,7 +1937,7 @@ spec:
       randomSamplingPercentage: 100.0
 ```
 
-### Resource Allocation for Jaeger
+Resource Allocation for Jaeger
 
 ```yaml
 # jaeger-production-resources.yaml

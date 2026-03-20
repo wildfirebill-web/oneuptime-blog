@@ -20,6 +20,7 @@ Blocking registries serves several important purposes.
 
 ```bash
 # Reasons to block registries:
+
 # - Prevent pulling untrusted or unvetted images
 # - Enforce use of approved internal registries only
 # - Comply with organizational security policies

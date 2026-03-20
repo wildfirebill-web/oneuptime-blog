@@ -90,6 +90,7 @@ For production setups, define profiles in a YAML config:
 
 ```yaml
 # cluster-config.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

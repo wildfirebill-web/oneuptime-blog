@@ -26,6 +26,7 @@ ORAS (OCI Registry as Storage) is the standard tool for pushing non-container OC
 
 ```bash
 # macOS
+
 brew install oras
 
 # Linux (amd64)

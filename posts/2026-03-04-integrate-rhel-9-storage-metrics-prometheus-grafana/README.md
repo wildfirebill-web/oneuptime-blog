@@ -105,6 +105,7 @@ Add RHEL targets to your Prometheus configuration:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'rhel-nodes'
     scrape_interval: 15s

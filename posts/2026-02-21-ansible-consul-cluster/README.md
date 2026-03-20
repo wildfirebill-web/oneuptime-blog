@@ -26,6 +26,7 @@ graph TD
 
 ```yaml
 # roles/consul/defaults/main.yml - Consul cluster configuration
+
 consul_version: "1.17.1"
 consul_datacenter: dc1
 consul_domain: consul

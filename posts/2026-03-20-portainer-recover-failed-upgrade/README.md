@@ -14,6 +14,7 @@ A failed Portainer upgrade can leave the UI inaccessible or the database in a pa
 
 ```bash
 # Check Portainer logs for migration failures
+
 docker logs portainer 2>&1 | grep -i "migration\|panic\|fatal\|error"
 
 # Common failure messages:

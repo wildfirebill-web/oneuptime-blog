@@ -26,6 +26,7 @@ When you create or update a node pool on AKS, you can attach labels that apply t
 
 ```bash
 # Create a node pool with labels
+
 az aks nodepool add \
   --resource-group myRG \
   --cluster-name myAKS \

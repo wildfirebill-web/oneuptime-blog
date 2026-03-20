@@ -29,6 +29,7 @@ The most common cause is a mismatch between the issuer in the token and the issu
 
 ```bash
 # Check the provider configuration
+
 gcloud iam workload-identity-pools providers describe your-provider \
     --workload-identity-pool=your-pool \
     --location=global \

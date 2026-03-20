@@ -32,6 +32,7 @@ The platform has three layers:
 
 ```yaml
 # Developer writes this (simplified)
+
 apiVersion: platform.company.com/v1
 kind: ServiceConfig
 metadata:

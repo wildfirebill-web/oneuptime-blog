@@ -43,6 +43,7 @@ ArgoCD uses a ConfigMap called `argocd-cm` to store resource customizations, inc
 
 ```yaml
 # argocd-cm ConfigMap patch
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

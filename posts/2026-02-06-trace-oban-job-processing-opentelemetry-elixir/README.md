@@ -50,6 +50,7 @@ Configure Oban and OpenTelemetry in your application:
 
 ```elixir
 # config/config.exs
+
 import Config
 
 config :my_app, Oban,

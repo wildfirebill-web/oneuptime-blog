@@ -29,6 +29,7 @@ The CA is just an SSH key pair used to sign other keys. Keep the CA private key 
 
 ```bash
 # Create a directory for the CA (on a secure, offline machine ideally)
+
 mkdir -p ~/ssh-ca
 cd ~/ssh-ca
 

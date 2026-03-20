@@ -32,6 +32,7 @@ First, install Wrangler, the CLI for managing Workers:
 
 ```bash
 # Install wrangler globally
+
 npm install -g wrangler
 
 # Authenticate with your Cloudflare account

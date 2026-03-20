@@ -84,6 +84,7 @@ helm install cilium cilium/cilium \
 
 ```bash
 # Check node addresses
+
 kubectl get nodes -o wide
 
 # Check pod IPv6 addresses

@@ -30,6 +30,7 @@ You might wonder why you would use `read_terragrunt_config()` when you can use `
 
 ```hcl
 # Using include - MERGES the configuration
+
 include "env" {
   path   = find_in_parent_folders("env.hcl")
   expose = true

@@ -29,8 +29,9 @@ import ipaddress
 SRV6_SPACE = ipaddress.IPv6Network("5f00::/16")
 
 # Calculate sub-allocations available
+
 print(f"Total /48 locators available: {2**(48-16):,}")
-# 4,294,967,296 — over 4 billion /48 node locators
+# 4,294,967,296 - over 4 billion /48 node locators
 
 print(f"Total /128 SIDs: {2**(128-16):,}")
 # An astronomically large number

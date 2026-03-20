@@ -29,6 +29,7 @@ Install and update Cilium CRDs:
 
 ```bash
 # View installed Cilium CRDs
+
 kubectl get crds | grep cilium.io
 
 # Check schema validation is enabled (default in Cilium 1.12+)

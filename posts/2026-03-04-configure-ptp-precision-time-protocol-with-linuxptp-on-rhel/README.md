@@ -14,6 +14,7 @@ PTP (IEEE 1588) provides far more accurate time synchronization than NTP, achiev
 
 ```bash
 # Install the linuxptp package
+
 sudo dnf install -y linuxptp
 
 # Verify installation

@@ -53,6 +53,7 @@ appVersion: "1.0.0" # Application version
 
 ```yaml
 # .github/workflows/helm-release.yml
+
 name: Helm Chart Release
 
 on:

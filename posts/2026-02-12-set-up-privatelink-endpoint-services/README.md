@@ -47,6 +47,7 @@ PrivateLink requires an NLB (not ALB) as the frontend for your service.
 
 ```bash
 # Create an internal NLB for the endpoint service
+
 aws elbv2 create-load-balancer \
     --name my-service-nlb \
     --type network \

@@ -16,6 +16,7 @@ The cleanest way to combine conditions with AND is to use a YAML list. Each item
 
 ```yaml
 # and-list-syntax.yml - AND conditions using a YAML list
+
 ---
 - name: AND conditions with list syntax
   hosts: all

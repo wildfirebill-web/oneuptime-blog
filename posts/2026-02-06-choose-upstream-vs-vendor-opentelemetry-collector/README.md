@@ -135,6 +135,7 @@ Standard OTel Collector YAML config:
 
 ```yaml
 # Standard YAML config used by most distributions
+
 receivers:
   otlp:
     protocols:

@@ -14,6 +14,7 @@ SOC 2 compliance demonstrates to customers that your organization has effective 
 
 ```yaml
 # roles/soc2/defaults/main.yml - SOC 2 compliance settings
+
 soc2_criteria:
   security: true
   availability: true

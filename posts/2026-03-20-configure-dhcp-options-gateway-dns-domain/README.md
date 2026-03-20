@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, DHCP Options, DNS, Gateway, sysadmin
+Tags: DHCP, Networking, DHCP Options, DNS, Gateway, Sysadmin
 
-Description: DHCP options are additional configuration parameters delivered to clients alongside the IP address, including default gateway (option 3), DNS servers (option 6), and domain name (option 15), customizable per scope or globally.
+Description: DHCP options are additional configuration parameters delivered to clients alongside the IP address, including default gateway (option 3), DNS servers (option 6), and domain name (option 15)...
 
 ## Common DHCP Options
 
@@ -22,10 +22,11 @@ Description: DHCP options are additional configuration parameters delivered to c
 
 ## ISC dhcpd Configuration
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # Global options (apply to all scopes unless overridden)
+
 option domain-name "corp.example.com";
 option domain-name-servers 10.0.0.53, 10.0.0.54;
 option ntp-servers 10.0.0.123;
@@ -38,7 +39,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
     # Required: default gateway
     option routers 192.168.1.1;
 
-    # DNS — overrides global for this subnet
+    # DNS - overrides global for this subnet
     option domain-name-servers 192.168.1.53;
     option domain-name "branch.corp.example.com";
 
@@ -49,7 +50,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 
 ## dnsmasq Configuration
 
-```
+```text
 # /etc/dnsmasq.conf
 
 # Global defaults
@@ -101,7 +102,7 @@ ipconfig getpacket en0
 
 ## Custom Options (Option 43/Vendor Specific)
 
-```
+```text
 # Deliver custom data to devices that request it
 option space MY_VENDOR;
 option MY_VENDOR.config-server code 1 = ip-address;

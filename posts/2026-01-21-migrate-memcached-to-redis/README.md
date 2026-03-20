@@ -30,6 +30,7 @@ Common reasons for migration:
 
 ```bash
 # Check Memcached stats
+
 echo "stats" | nc localhost 11211 | grep -E "(bytes|curr_items|get_hits|get_misses)"
 
 # Sample output:

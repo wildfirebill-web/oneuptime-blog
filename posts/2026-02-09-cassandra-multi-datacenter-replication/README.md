@@ -33,6 +33,7 @@ First, install the K8ssandra operator on each Kubernetes cluster. Designate one 
 
 ```bash
 # On the control plane cluster
+
 helm repo add k8ssandra https://helm.k8ssandra.io/stable
 helm repo update
 

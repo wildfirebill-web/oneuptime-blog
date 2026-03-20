@@ -33,6 +33,7 @@ First, export your DynamoDB table to S3 using the built-in export feature:
 
 ```bash
 # Export DynamoDB table to S3 in JSON format
+
 aws dynamodb export-table-to-point-in-time \
   --table-arn arn:aws:dynamodb:us-east-1:123456789:table/my-table \
   --s3-bucket my-dynamo-exports \

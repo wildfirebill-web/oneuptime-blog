@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Service Discovery, IPv4, Monitoring, Configuration, file_sd, DNS SD
+Tags: Prometheus, Service Discovery, IPv4, Monitoring, Configuration, File_sd, DNS SD
 
 Description: Learn how to configure Prometheus service discovery mechanisms to automatically discover and scrape IPv4 metric endpoints.
 
@@ -12,10 +12,11 @@ Prometheus supports multiple service discovery mechanisms that automatically fin
 
 ## Static Configuration (Baseline)
 
-The simplest approach — explicitly list IPv4 targets.
+The simplest approach - explicitly list IPv4 targets.
 
 ```yaml
 # /etc/prometheus/prometheus.yml
+
 scrape_configs:
   - job_name: 'node_exporter'
     static_configs:

@@ -50,6 +50,7 @@ Here is the collector configuration that scrapes all three ArgoCD components.
 
 ```yaml
 # otel-collector-config.yaml
+
 # Scrapes Prometheus metrics from all ArgoCD components
 # and exports them via OTLP for unified observability.
 receivers:

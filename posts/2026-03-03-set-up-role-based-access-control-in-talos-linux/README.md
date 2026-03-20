@@ -30,6 +30,7 @@ RBAC is controlled through the machine configuration. To enable it, set the RBAC
 
 ```yaml
 # Machine configuration with RBAC enabled
+
 machine:
   features:
     rbac: true

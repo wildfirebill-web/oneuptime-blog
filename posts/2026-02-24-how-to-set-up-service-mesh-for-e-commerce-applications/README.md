@@ -363,6 +363,7 @@ E-commerce demands good observability. Track key metrics with Istio's built-in t
 
 ```bash
 # Overall request rate
+
 sum(rate(istio_requests_total{destination_workload_namespace="ecommerce"}[5m]))
 
 # Checkout success rate

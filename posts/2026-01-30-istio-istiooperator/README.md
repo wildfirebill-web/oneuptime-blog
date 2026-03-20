@@ -75,6 +75,7 @@ First, install the Istio operator controller that will manage IstioOperator reso
 
 ```bash
 # Download istioctl (the Istio CLI)
+
 curl -L https://istio.io/downloadIstio | sh -
 
 # Move to the Istio directory
@@ -630,7 +631,7 @@ spec:
               value: external
 ```
 
-## Resource Requests and Limits Configuration
+Resource Requests and Limits Configuration
 
 Proper resource configuration is critical for production deployments.
 
@@ -1103,7 +1104,7 @@ istioctl proxy-config all <pod-name>.<namespace>
 istioctl analyze -n default
 ```
 
-### Resource Monitoring
+Resource Monitoring
 
 ```bash
 # Check resource usage

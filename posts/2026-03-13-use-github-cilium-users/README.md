@@ -27,6 +27,7 @@ Searching GitHub issues is always the first step when you encounter a Cilium pro
 
 ```bash
 # Collect the error message or symptom to search for
+
 kubectl logs -n kube-system -l k8s-app=cilium --tail=30 | grep -i error
 
 # Example errors to search for:

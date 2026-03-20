@@ -79,6 +79,7 @@ What it does:
 
 ```yaml
 # ServiceEntry with static endpoints
+
 apiVersion: networking.istio.io/v1beta1
 kind: ServiceEntry
 metadata:

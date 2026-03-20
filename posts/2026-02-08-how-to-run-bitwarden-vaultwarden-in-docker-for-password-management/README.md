@@ -27,6 +27,7 @@ HTTPS is not optional here. The Bitwarden browser extensions and mobile apps enf
 
 ```bash
 # Create the Vaultwarden project directory
+
 mkdir -p ~/vaultwarden/data
 cd ~/vaultwarden
 ```

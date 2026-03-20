@@ -46,6 +46,7 @@ helm repo update
 
 ```yaml
 # oauth2-proxy-values.yaml
+
 config:
   # Client ID and secret from your OAuth2 provider
   clientID: "argocd-oauth2-client"

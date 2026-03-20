@@ -33,6 +33,7 @@ OpenSearch requires some OS-level tuning before installation:
 
 ```bash
 # Increase virtual memory map areas (required for Lucene)
+
 sudo tee -a /etc/sysctl.conf << 'EOF'
 # OpenSearch requirement
 vm.max_map_count = 262144

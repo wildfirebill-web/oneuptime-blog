@@ -8,12 +8,13 @@ Description: Configure and compare TCP congestion control algorithms for IPv6 co
 
 ## Introduction
 
-TCP congestion control algorithms manage how quickly data is sent to avoid overwhelming the network. For IPv6 connections — particularly over high-bandwidth or satellite links — choosing the right algorithm can dramatically affect throughput and latency.
+TCP congestion control algorithms manage how quickly data is sent to avoid overwhelming the network. For IPv6 connections - particularly over high-bandwidth or satellite links - choosing the right algorithm can dramatically affect throughput and latency.
 
 ## Available Algorithms
 
 ```bash
 # List all available congestion control modules
+
 cat /proc/sys/net/ipv4/tcp_available_congestion_control
 
 # Load all available modules
@@ -89,7 +90,7 @@ conn.connect(("2001:db8::1", 443, 0, 0))
 
 ```bash
 #!/bin/bash
-# compare-cc.sh — benchmark congestion control algorithms
+# compare-cc.sh - benchmark congestion control algorithms
 
 SERVER="2001:db8::1"
 DURATION=30

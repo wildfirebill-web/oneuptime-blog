@@ -72,6 +72,7 @@ Copy the downloaded executable to the machine where you want to mount the drives
 
 ```powershell
 # The script is a self-extracting executable
+
 # Run it from an elevated PowerShell prompt
 
 # Navigate to the download directory

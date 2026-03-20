@@ -16,6 +16,7 @@ The simplest install uses the `ansible-galaxy install` command with the role nam
 
 ```bash
 # Install a role from Ansible Galaxy
+
 ansible-galaxy install geerlingguy.nginx
 ```
 

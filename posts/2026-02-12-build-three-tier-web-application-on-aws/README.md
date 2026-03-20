@@ -41,6 +41,7 @@ Create the VPC with proper subnet separation:
 
 ```yaml
 # vpc.yml - CloudFormation template
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Three-tier VPC architecture
 

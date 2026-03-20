@@ -92,6 +92,7 @@ The simplest way to get proper linking is to use the Error Reporting client libr
 
 ```python
 # Using the Error Reporting client library for automatic Cloud Logging integration
+
 from google.cloud import error_reporting
 
 def setup_error_reporting():

@@ -67,6 +67,7 @@ The OTLP receiver is the standard receiver for OpenTelemetry data. It supports b
 
 ```yaml
 # Basic OTLP receiver configuration
+
 receivers:
   otlp:
     protocols:

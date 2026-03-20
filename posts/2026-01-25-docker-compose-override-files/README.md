@@ -21,6 +21,7 @@ If both exist, Compose merges them together. Values in the override file take pr
 
 ```yaml
 # docker-compose.yml - Base configuration for all environments
+
 # This file defines the core service structure
 version: '3.8'
 

@@ -54,6 +54,7 @@ Save this file as `idp-metadata.xml`.
 
 ```bash
 # Create an IAM SAML provider using your IdP's metadata
+
 aws iam create-saml-provider \
   --saml-metadata-document file://idp-metadata.xml \
   --name CompanyIdP

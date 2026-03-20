@@ -16,6 +16,7 @@ The plan can reveal destructive actions you didn't intend.
 
 ```bash
 # Running this without review is dangerous
+
 tofu apply -auto-approve  # DANGEROUS in production
 
 # What the plan might have shown you:
@@ -79,7 +80,7 @@ jobs:
 
 Make plan review part of the code review process.
 
-```yaml
+````yaml
 - name: Comment plan on PR
   uses: actions/github-script@v7
   if: github.event_name == 'pull_request'
@@ -87,9 +88,9 @@ Make plan review part of the code review process.
     script: |
       const planOutput = `
       ## OpenTofu Plan
-      \`\`\`
+      ```
       ${{ steps.plan.outputs.stdout }}
-      \`\`\`
+      ```
       `;
       github.rest.issues.createComment({
         issue_number: context.issue.number,
@@ -97,13 +98,13 @@ Make plan review part of the code review process.
         repo: context.repo.repo,
         body: planOutput
       });
-```
+````
 
 ## Watch for Destructive Change Signals
 
 Certain plan outputs demand extra scrutiny before applying.
 
-```
+```text
 HIGH RISK signals in plan output:
 ✗ "-/+" (destroy and recreate) on databases, load balancers, EKS clusters
 ✗ "-" (destroy) on any production resource
@@ -121,7 +122,7 @@ LOW RISK in plan output:
 
 Before applying in any environment, answer these questions.
 
-```
+```hcl
 Before every tofu apply in production:
 □ Did I run tofu plan and read the output?
 □ Are all changes expected based on what I changed in code?

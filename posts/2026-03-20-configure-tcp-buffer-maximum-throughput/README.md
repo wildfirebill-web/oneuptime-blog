@@ -14,6 +14,7 @@ TCP buffer sizes determine how much data can be in flight between sender and rec
 
 ```bash
 # Calculate your bandwidth-delay product first
+
 # BDP = bandwidth (bytes/sec) × RTT (seconds)
 
 # Example: 10 Gbps link, 5ms RTT

@@ -41,6 +41,7 @@ Document all Octopus projects that deploy to Kubernetes.
 
 ```bash
 # For each Octopus project, note:
+
 # 1. Project name and group
 # 2. Deployment process steps
 # 3. Variables and variable sets used

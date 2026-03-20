@@ -18,6 +18,7 @@ While piping a simple string works for passwords, many secrets are stored in fil
 
 ```bash
 # Create a secret from a file
+
 podman secret create my_cert /path/to/certificate.pem
 
 # The file contents become the secret value

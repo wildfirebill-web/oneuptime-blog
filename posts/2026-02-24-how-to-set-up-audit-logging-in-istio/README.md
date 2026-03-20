@@ -235,6 +235,7 @@ Once logs are in your storage backend, you need to be able to query them efficie
 
 ```bash
 # If using Elasticsearch
+
 curl -s "http://elasticsearch:9200/istio-audit-*/_search" -H 'Content-Type: application/json' -d '{
   "query": {
     "bool": {

@@ -1,4 +1,4 @@
-# How to Configure Longhorn V2 Data Engine
+# How to Configure Longhorn V2 Data Engine - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ Longhorn V2 Data Engine (introduced in Longhorn v1.5) uses SPDK (Storage Perform
 
 ```bash
 # Install required kernel modules
+
 modprobe nvme-tcp
 modprobe uio
 modprobe uio_pci_generic
@@ -148,6 +149,6 @@ kubectl run perf-test \
 
 ## Best Practices
 
-- V2 Data Engine is still maturing — use V1 for critical production workloads and V2 for performance-sensitive new deployments.
+- V2 Data Engine is still maturing - use V1 for critical production workloads and V2 for performance-sensitive new deployments.
 - Dedicate specific nodes to V2 storage using node labels and Longhorn's disk selector.
-- Monitor hugepage consumption — SPDK requires consistent hugepage availability to function.
+- Monitor hugepage consumption - SPDK requires consistent hugepage availability to function.

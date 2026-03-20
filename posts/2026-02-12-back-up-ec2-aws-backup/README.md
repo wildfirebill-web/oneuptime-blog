@@ -31,6 +31,7 @@ Create a backup vault:
 
 ```bash
 # Create a backup vault with default encryption
+
 aws backup create-backup-vault \
   --backup-vault-name ec2-backups \
   --backup-vault-tags Environment=production

@@ -683,6 +683,7 @@ Here is a Python script for automated changefeed monitoring.
 
 ```python
 # changefeed_monitor.py
+
 # Monitor CockroachDB changefeed health and alert on issues
 # Tracks lag, errors, and automatically restarts failed changefeeds
 
@@ -1111,7 +1112,7 @@ WITH
     }';
 ```
 
-### Resource Allocation Guidelines
+Resource Allocation Guidelines
 
 | Cluster Size | Changefeed Count | Recommended Settings |
 |--------------|------------------|---------------------|

@@ -36,6 +36,7 @@ This means the mutating webhook is configured but istiod is not reachable.
 
 ```bash
 # 1. Check if istiod is running
+
 kubectl get pods -n istio-system -l app=istiod
 
 # 2. Check istiod service endpoints

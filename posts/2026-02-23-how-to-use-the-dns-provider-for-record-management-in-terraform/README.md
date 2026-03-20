@@ -16,6 +16,7 @@ In this guide, we will explore both the read-only data sources for DNS lookups a
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

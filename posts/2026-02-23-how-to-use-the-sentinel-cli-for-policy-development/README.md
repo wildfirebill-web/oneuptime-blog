@@ -16,6 +16,7 @@ The CLI is distributed as a standalone binary. Download it from the HashiCorp re
 
 ```bash
 # Linux (amd64)
+
 curl -o sentinel.zip https://releases.hashicorp.com/sentinel/0.24.0/sentinel_0.24.0_linux_amd64.zip
 unzip sentinel.zip
 sudo mv sentinel /usr/local/bin/

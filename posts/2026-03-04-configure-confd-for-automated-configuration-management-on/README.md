@@ -31,6 +31,7 @@ Download the latest binary:
 
 ```bash
 # Download confd
+
 CONFD_VERSION="0.16.0"
 curl -LO https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64
 sudo mv confd-${CONFD_VERSION}-linux-amd64 /usr/local/bin/confd

@@ -12,12 +12,13 @@ Portainer uses BoltDB as its embedded database. Over time, especially on active 
 
 ## Understanding Portainer's Database
 
-The Portainer database is stored at `/data/portainer.db` inside the data volume. BoltDB is an append-only database—deleted records leave free space in the file that isn't automatically reclaimed. The compaction process rewrites the database, removing this unused space.
+The Portainer database is stored at `/data/portainer.db` inside the data volume. BoltDB is an append-only database-deleted records leave free space in the file that isn't automatically reclaimed. The compaction process rewrites the database, removing this unused space.
 
 ## Check Current Database Size
 
 ```bash
 # Check the size of the portainer.db file
+
 docker run --rm \
   -v portainer_data:/data \
   alpine \

@@ -22,6 +22,7 @@ Key considerations:
 
 ```bash
 # Example topology for two data centers:
+
 # DC1: idm1.example.com (primary)
 # DC2: idm2.example.com (replica)
 # Both replicate to each other

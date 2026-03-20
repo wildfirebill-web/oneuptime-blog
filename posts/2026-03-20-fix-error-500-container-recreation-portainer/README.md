@@ -1,4 +1,4 @@
-# How to Fix "Error 500 on Container Recreation" in Portainer
+# How to Fix 'Error 500 on Container Recreation' in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to diagnose and fix HTTP 500 errors that occur when recre
 
 ---
 
-A 500 Internal Server Error during container recreation in Portainer is a server-side failure. The error originates from Docker's API — Portainer is surfacing a failure from the Docker daemon. The real cause is almost always in the Docker daemon response.
+A 500 Internal Server Error during container recreation in Portainer is a server-side failure. The error originates from Docker's API - Portainer is surfacing a failure from the Docker daemon. The real cause is almost always in the Docker daemon response.
 
 ## Step 1: Check Portainer Logs for the Actual Error
 
 ```bash
 # Enable debug logging and look for the Docker API error
+
 docker logs portainer 2>&1 | grep -A 5 "error\|500" | tail -50
 
 # For more detail, restart Portainer with debug logging

@@ -47,6 +47,7 @@ ServerType    standalone
 DefaultServer on
 
 # --- Listening address ---
+
 # Bind to all IPv4 interfaces (internal address)
 Port          21
 
@@ -106,6 +107,6 @@ ftp 203.0.113.10
 ## Key Takeaways
 
 - `MasqueradeAddress` replaces the internal IP in PASV responses with the public IPv4.
-- `PassivePorts` limits which port range is used for passive data connections — forward this range through NAT.
+- `PassivePorts` limits which port range is used for passive data connections - forward this range through NAT.
 - You can use a DNS hostname for `MasqueradeAddress` when the public IP is dynamic.
 - FTP passive mode requires both the control port (21) and the passive port range to be forwarded through NAT.

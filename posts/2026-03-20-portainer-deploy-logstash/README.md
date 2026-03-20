@@ -1,4 +1,4 @@
-# How to Deploy Logstash via Portainer
+# How to Deploy Logstash via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -59,6 +59,7 @@ Create `logstash.yml`:
 
 ```yaml
 # logstash.yml
+
 http.host: "0.0.0.0"
 xpack.monitoring.enabled: false
 pipeline.workers: 2

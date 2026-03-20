@@ -16,6 +16,7 @@ Before sending emails, capture the plan output to a file.
 
 ```bash
 # Generate a readable plan output file
+
 tofu plan -out=tfplan -no-color 2>&1 | tee plan_output.txt
 
 # Generate a JSON summary for structured reporting

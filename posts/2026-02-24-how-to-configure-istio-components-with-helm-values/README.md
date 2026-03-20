@@ -49,6 +49,7 @@ Istiod is the brain of your mesh. Here is a values file that configures the most
 
 ```yaml
 # istiod-values.yaml
+
 pilot:
   resources:
     requests:

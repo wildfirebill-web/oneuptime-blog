@@ -1,4 +1,4 @@
-# How to Remove Unused Docker Images in Portainer
+# How to Remove Unused Docker Images in Portainer - Docker
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ In Portainer, navigate to **Images** in the left sidebar to see all available im
 
 ```bash
 # Pull from Docker Hub
+
 docker pull nginx:latest
 docker pull postgres:16
 
@@ -29,7 +30,7 @@ docker login registry.example.com
 docker pull registry.example.com/private/image:tag
 ```
 
-In Portainer: **Images > Pull image** — enter the image name and tag, optionally select a registry.
+In Portainer: **Images > Pull image** - enter the image name and tag, optionally select a registry.
 
 ## Build Images
 
@@ -44,7 +45,7 @@ docker build -f Dockerfile.prod -t myapp:prod .
 docker build --build-arg NODE_ENV=production -t myapp:prod .
 ```
 
-In Portainer: **Images > Build image** — paste Dockerfile content or upload a file.
+In Portainer: **Images > Build image** - paste Dockerfile content or upload a file.
 
 ## Import/Export Images
 

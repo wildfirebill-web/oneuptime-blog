@@ -33,6 +33,7 @@ This guide provides the specific steps for managing identity-relevant labels con
 echo "=== Identity Label Configuration Validation ==="
 
 # Check configuration exists
+
 LABELS=$(cilium config view | grep "^labels" | awk '{$1=""; print $0}' | xargs)
 if [ -z "$LABELS" ]; then
   echo "FAIL: No label restriction configured (all labels are identity-relevant)"

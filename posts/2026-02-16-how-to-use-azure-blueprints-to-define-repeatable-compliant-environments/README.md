@@ -54,6 +54,7 @@ Blueprints do not have full Azure CLI support, so we use the REST API:
 
 ```bash
 # Create a blueprint definition at a management group
+
 az rest --method put \
   --url "https://management.azure.com/providers/Microsoft.Management/managementGroups/Workloads/providers/Microsoft.Blueprint/blueprints/compliant-subscription?api-version=2018-11-01-preview" \
   --body '{

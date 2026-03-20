@@ -636,6 +636,7 @@ import json
 app = FastAPI()
 
 # In-memory store for example
+
 users_db = {}
 
 class UserBase(BaseModel):

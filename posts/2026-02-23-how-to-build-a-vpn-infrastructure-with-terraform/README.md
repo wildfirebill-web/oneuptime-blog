@@ -22,6 +22,7 @@ Client VPN needs TLS certificates. You can use AWS Certificate Manager Private C
 
 ```hcl
 # ACM Private CA for VPN certificates
+
 resource "aws_acmpca_certificate_authority" "vpn" {
   certificate_authority_configuration {
     key_algorithm     = "RSA_2048"

@@ -20,6 +20,7 @@ You can get the notifications CLI from the ArgoCD releases:
 
 ```bash
 # Download the notifications tools binary
+
 # Replace VERSION with your ArgoCD version
 VERSION=v2.10.0
 curl -sSL -o argocd-notifications \

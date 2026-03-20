@@ -37,6 +37,7 @@ For production automation, use short-lived service account tokens:
 
 ```bash
 # Create a dedicated service account per automation system
+
 kubectl create serviceaccount calico-automation -n automation-system
 
 # Grant minimal RBAC - only what is needed

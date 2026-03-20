@@ -46,7 +46,7 @@ async def client_loop(uri: str) -> None:
                     log.info("Received: %s", message)
                     # process message ...
         except (websockets.ConnectionClosed, OSError) as e:
-            log.warning("Disconnected: %s — retry in %ds", e, backoff)
+            log.warning("Disconnected: %s - retry in %ds", e, backoff)
             await asyncio.sleep(backoff)
             backoff = min(backoff * 2, 60)  # exponential backoff, cap at 60s
 
@@ -97,7 +97,7 @@ function connect(url) {
     });
 
     ws.on("close", (code, reason) => {
-        console.log(`Closed (${code}): ${reason} — reconnecting in ${reconnectDelay}ms`);
+        console.log(`Closed (${code}): ${reason} - reconnecting in ${reconnectDelay}ms`);
         setTimeout(() => connect(url), reconnectDelay);
         reconnectDelay = Math.min(reconnectDelay * 2, 60_000);
     });
@@ -145,4 +145,4 @@ func main() {
 
 ## Conclusion
 
-WebSocket client URLs use `ws://` for plain-text or `wss://` for TLS. The IPv4 server address goes directly in the URL host: `ws://192.168.1.10:8765`. Always implement reconnection logic with exponential backoff — the `async for message in ws` (Python) pattern cleanly handles disconnections via `ConnectionClosed` exceptions. In the browser, attach event listeners to `open`, `message`, `close`, and `error` events and rebuild the connection in the `close` handler.
+WebSocket client URLs use `ws://` for plain-text or `wss://` for TLS. The IPv4 server address goes directly in the URL host: `ws://192.168.1.10:8765`. Always implement reconnection logic with exponential backoff - the `async for message in ws` (Python) pattern cleanly handles disconnections via `ConnectionClosed` exceptions. In the browser, attach event listeners to `open`, `message`, `close`, and `error` events and rebuild the connection in the `close` handler.

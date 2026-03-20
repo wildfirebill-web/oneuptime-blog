@@ -68,6 +68,7 @@ Focus areas:
 
 ```yaml
 # Short-term capacity check - run weekly
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

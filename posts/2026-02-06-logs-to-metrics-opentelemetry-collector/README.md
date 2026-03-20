@@ -50,6 +50,7 @@ The `count` connector in the OpenTelemetry Collector sits between a logs pipelin
 
 ```yaml
 # otel-collector-config.yaml
+
 # Convert payment decline logs into metrics using the count connector
 receivers:
   otlp:

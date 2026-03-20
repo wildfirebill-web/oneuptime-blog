@@ -25,6 +25,7 @@ Parameters can be either **static** or **dynamic**. Dynamic parameters take effe
 
 ```hcl
 # Custom parameter group for PostgreSQL 16
+
 resource "aws_db_parameter_group" "postgres" {
   name        = "myapp-postgres16"
   family      = "postgres16"

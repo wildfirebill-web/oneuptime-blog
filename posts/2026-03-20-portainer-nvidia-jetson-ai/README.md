@@ -1,4 +1,4 @@
-# How to Install Portainer on NVIDIA Jetson for AI Edge Deployments
+# How to Install Portainer on NVIDIA Jetson for AI Edge Deployments (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ NVIDIA Jetson devices (Nano, Xavier NX, AGX Xavier, AGX Orin) are purpose-built 
 
 ```bash
 # Check JetPack version
+
 cat /etc/nv_tegra_release
 
 # Verify CUDA is available

@@ -70,6 +70,7 @@ You can also create it using the Azure CLI.
 
 ```bash
 # Create a self-hosted integration runtime using Azure CLI
+
 az datafactory integration-runtime create \
   --factory-name "my-data-factory" \
   --resource-group "my-resource-group" \
@@ -221,7 +222,7 @@ By default, the number of concurrent jobs is auto-calculated based on the machin
 
 A reasonable formula: for a machine with 8 cores and 16 GB RAM, you can typically handle 8-16 concurrent copy activities.
 
-### Resource Allocation
+Resource Allocation
 
 If the IR machine runs other workloads, limit the resources available to the IR:
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Terraform Enterprise, Agents, Custom Agents, Networking, DevOps
+Tags: Terraform, Terraform Enterprise, Agent, Custom Agents, Networking, DevOps
 
 Description: Learn how to deploy and configure custom Terraform Enterprise agents for running Terraform operations in private networks, restricted environments, and custom execution contexts.
 
@@ -35,6 +35,7 @@ The key advantage is that agents make outbound connections only. You do not need
 
 ```bash
 # Create an agent pool via the TFE API
+
 curl -s \
   --header "Authorization: Bearer $TFE_ORG_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

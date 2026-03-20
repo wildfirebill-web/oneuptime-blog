@@ -39,6 +39,7 @@ Once you have the metadata file:
 
 ```bash
 # Create the SAML identity provider in IAM
+
 aws iam create-saml-provider \
   --saml-metadata-document file://idp-metadata.xml \
   --name CompanyIdP

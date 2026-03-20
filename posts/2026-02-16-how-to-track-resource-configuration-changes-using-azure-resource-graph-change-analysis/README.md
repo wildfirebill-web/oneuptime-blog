@@ -36,6 +36,7 @@ For web app in-guest change tracking:
 
 ```bash
 # Enable the Application Change Analysis provider
+
 az provider register --namespace Microsoft.ChangeAnalysis
 
 # Enable in-guest change tracking for a web app

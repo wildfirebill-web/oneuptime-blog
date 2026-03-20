@@ -19,6 +19,7 @@ Service-linked roles are IAM roles pre-configured with the exact permissions nee
 
 ```hcl
 # Service-linked role for ECS to manage EC2 instances and load balancers
+
 resource "aws_iam_service_linked_role" "ecs" {
   aws_service_name = "ecs.amazonaws.com"
   description      = "Service-linked role for Amazon ECS"
@@ -118,4 +119,4 @@ tofu apply
 
 ## Conclusion
 
-Creating service-linked roles with OpenTofu in advance prevents deployment failures when AWS services try to create them automatically but encounter delays or permission issues. You cannot modify the permissions of service-linked roles—they are managed entirely by AWS—but you can view them for auditing purposes. Use `tofu import` to bring already-created service-linked roles under OpenTofu management to prevent duplication errors.
+Creating service-linked roles with OpenTofu in advance prevents deployment failures when AWS services try to create them automatically but encounter delays or permission issues. You cannot modify the permissions of service-linked roles-they are managed entirely by AWS-but you can view them for auditing purposes. Use `tofu import` to bring already-created service-linked roles under OpenTofu management to prevent duplication errors.

@@ -18,6 +18,7 @@ When you run it with the `-check` flag, it does not modify files. Instead, it ex
 
 ```bash
 # Check formatting without modifying files
+
 # Exit code 0 = all files formatted correctly
 # Exit code 3 = files need formatting
 terraform fmt -check -recursive

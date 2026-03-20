@@ -18,6 +18,7 @@ CloudTrail needs an S3 bucket to store log files. This bucket needs a specific b
 
 ```hcl
 # S3 bucket for CloudTrail logs
+
 resource "aws_s3_bucket" "cloudtrail_logs" {
   bucket = "${var.project}-cloudtrail-logs-${data.aws_caller_identity.current.account_id}"
 

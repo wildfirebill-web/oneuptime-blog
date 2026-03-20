@@ -31,12 +31,12 @@ Navigate to **System > Cert. Manager > Certificates > Add**:
 
 Navigate to **VPN > OpenVPN > Servers > Add**:
 
-```
+```text
 Server Mode:         Remote Access (SSL/TLS + User Auth)
 Protocol:            UDP on IPv4 only
 Interface:           WAN
 Local port:          1194
-TLS Configuration:   Use TLS Key — Generate
+TLS Configuration:   Use TLS Key - Generate
 Peer Certificate Authority: pfSense-CA
 Server Certificate:  openvpn-server
 DH Parameter Length: 4096 bit
@@ -51,15 +51,16 @@ Local Network:       192.168.1.0/24
 ## Step 4: Firewall Rules
 
 Navigate to **Firewall > Rules > WAN > Add**:
-```
+```text
 Protocol: UDP
 Destination: WAN address
 Destination port: 1194
 Description: Allow OpenVPN
+
 ```
 
 Navigate to **Firewall > Rules > OpenVPN > Add**:
-```
+```text
 Action: Pass
 Source: any
 Destination: any
@@ -83,7 +84,7 @@ Navigate to **System > User Manager > Add**:
 
 ## Client Configuration (.ovpn extract)
 
-```
+```text
 client
 dev tun
 proto udp4

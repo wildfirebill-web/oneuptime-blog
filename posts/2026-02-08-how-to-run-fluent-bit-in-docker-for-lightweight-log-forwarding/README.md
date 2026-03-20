@@ -22,6 +22,7 @@ You need Docker and Docker Compose installed. This guide also uses Elasticsearch
 
 ```bash
 # Verify Docker is available
+
 docker --version
 docker compose version
 ```

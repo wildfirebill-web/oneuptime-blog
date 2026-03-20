@@ -1,11 +1,10 @@
----
-title: "Testing OpenTofu Modules with tofu test"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, testing
-description: "Learn how to write and run unit and integration tests for your OpenTofu modules using the built-in tofu test command."
----
-
 # Testing OpenTofu Modules with tofu test
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Testing
+
+Description: Learn how to write and run unit and integration tests for your OpenTofu modules using the built-in tofu test command.
 
 OpenTofu's built-in testing framework lets you write tests directly in HCL. Tests verify that your modules behave correctly, validate outputs, and catch regressions before they reach production.
 
@@ -30,6 +29,7 @@ run "creates_vpc_with_correct_cidr" {
 
 ```bash
 # Run all tests
+
 tofu test
 
 # Run tests in a specific directory
@@ -173,7 +173,7 @@ mock_provider "aws" {
 }
 
 run "unit_test_with_mocks" {
-  command = apply  # Uses mock provider — no real AWS calls
+  command = apply  # Uses mock provider - no real AWS calls
 
   assert {
     condition     = output.vpc_id == "vpc-mock12345"

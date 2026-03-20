@@ -17,6 +17,7 @@ Before doing anything else, set up continuous monitoring to capture data when th
 ```bash
 #!/bin/bash
 # /usr/local/bin/network-monitor.sh
+
 # Runs in background, logs drops with timestamps and diagnostic info
 
 GATEWAY=$(ip route | awk '/default/ {print $3}' | head -1)

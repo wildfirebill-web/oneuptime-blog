@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Static IP, Networking, IP Addressing, sysadmin
+Tags: DHCP, Static IP, Networking, IP Addressing, Sysadmin
 
-Description: DHCP automates IP assignment for client devices while static IP provides stable, predictable addresses for servers and infrastructure, and choosing between them depends on device type, management overhead, and reliability requirements.
+Description: DHCP automates IP assignment for client devices while static IP provides stable, predictable addresses for servers and infrastructure, and choosing between them depends on device type, management...
 
 ## Side-by-Side Comparison
 
@@ -33,9 +33,9 @@ Description: DHCP automates IP assignment for client devices while static IP pro
 
 ## DHCP Reservation: The Best of Both
 
-DHCP reservations combine both approaches — the device uses DHCP but always gets the same IP:
+DHCP reservations combine both approaches - the device uses DHCP but always gets the same IP:
 
-```
+```text
 Advantages:
 ✓ Same IP every time (static behavior)
 ✓ Gateway, DNS, and options delivered automatically (DHCP convenience)

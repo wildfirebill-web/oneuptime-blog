@@ -127,6 +127,7 @@ You can track how well connection draining is working using Envoy's admin interf
 
 ```bash
 # Check active connections during a deployment
+
 kubectl exec deploy/api-server -c istio-proxy -- \
   pilot-agent request GET /stats | grep "cx_active"
 

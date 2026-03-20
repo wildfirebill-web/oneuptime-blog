@@ -32,6 +32,7 @@ Old Python 2.7 `app.yaml`:
 
 ```yaml
 # OLD - Python 2.7 app.yaml
+
 runtime: python27
 api_version: 1
 threadsafe: true

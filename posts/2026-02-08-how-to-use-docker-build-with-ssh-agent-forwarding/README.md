@@ -16,6 +16,7 @@ Here is what you should never do:
 
 ```dockerfile
 # BAD: Never copy SSH keys into Docker images
+
 COPY id_rsa /root/.ssh/id_rsa
 RUN git clone git@github.com:myorg/private-repo.git
 RUN rm /root/.ssh/id_rsa  # This does NOT remove it from previous layers

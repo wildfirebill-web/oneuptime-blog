@@ -82,6 +82,7 @@ Use the GitHub API to evaluate a component's maintenance status:
 ```bash
 #!/bin/bash
 # check-component-health.sh
+
 # Evaluates the health of a collector component repository
 
 REPO="${1:?Usage: $0 <owner/repo>}"

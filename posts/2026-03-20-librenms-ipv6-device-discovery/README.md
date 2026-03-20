@@ -14,6 +14,7 @@ LibreNMS must be able to reach its monitored devices over IPv6:
 
 ```bash
 # Test IPv6 connectivity from the LibreNMS host
+
 ping6 2001:db8::router1
 
 # Test SNMP over IPv6

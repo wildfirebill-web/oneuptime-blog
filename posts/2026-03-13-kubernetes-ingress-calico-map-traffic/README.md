@@ -58,6 +58,7 @@ The ingress enforcement happens at Felix on the receiving node, not the sending 
 In iptables mode, inspect the enforcement chain:
 ```bash
 # On the node running the backend pod
+
 sudo iptables -L cali-pi-<backend-interface> -n -v
 # Shows the allow rule for frontend pods
 ```

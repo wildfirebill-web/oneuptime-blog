@@ -24,6 +24,7 @@ The fix is visibility. Create dashboards that show budget status at a glance. He
 
 ```promql
 # Calculate remaining error budget percentage
+
 # SLO target: 99.9% (0.999)
 # Window: 30 days
 

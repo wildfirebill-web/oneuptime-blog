@@ -27,6 +27,7 @@ Kubernetes uses optimistic locking - when you update a resource, you must includ
 **Wrong approach**:
 ```bash
 # Missing resourceVersion - will fail with 409
+
 curl -s -X PUT -d '{"metadata":{"name":"my-policy"},"spec":{...}}' \
   $APIBASE/apis/projectcalico.org/v3/globalnetworkpolicies/my-policy
 ```

@@ -1,4 +1,4 @@
-# How to Run K3s in Docker (K3d)
+# How to Run K3s in Docker (K3d) - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ K3d is a lightweight wrapper that runs K3s in Docker. It creates multi-node Kube
 
 ```bash
 # Install K3d via curl
+
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 # Or via brew (macOS/Linux)

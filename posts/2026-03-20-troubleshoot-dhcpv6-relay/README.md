@@ -20,11 +20,12 @@ Description: Troubleshoot common DHCPv6 relay problems including clients not get
 
 ```bash
 #!/bin/bash
-# diagnose-no-address.sh — Run on relay agent
+# diagnose-no-address.sh - Run on relay agent
 
 echo "=== DHCPv6 Relay Diagnosis ==="
 
 # 1. Is relay daemon running?
+
 if systemctl is-active --quiet isc-dhcp-relay6; then
     echo "PASS: Relay daemon running"
 else
@@ -72,7 +73,7 @@ tcpdump -i eth0 -c 10 -n 'udp port 547'
 tcpdump -i eth1 -c 10 -n 'udp port 547'
 # Should see: IP6 relay-addr > dhcp-server-addr: dhcp6 relay-forw
 
-# If receiving but not forwarding — check:
+# If receiving but not forwarding - check:
 # 1. Is the server address correct?
 grep -r "dhcp-server" /etc/dhcp/ /etc/wide-dhcpv6/ 2>/dev/null
 
@@ -112,7 +113,7 @@ for subnet in config['Dhcp6']['subnet6']:
 # Cisco IOS
 # show ipv6 dhcp relay statistics | include [Dd]rop
 
-# Linux — check if relay is hitting resource limits
+# Linux - check if relay is hitting resource limits
 # Increase relay process limits
 cat /proc/$(pgrep dhcrelay)/limits | grep "Max open files"
 # If too low: increase ulimit

@@ -23,6 +23,7 @@ Weaveworks, the company that created Flux CD and Weave GitOps Enterprise, wound 
 
 ```bash
 # Check which Weave GitOps Enterprise components are installed
+
 kubectl get pods -n flux-system | grep weave
 
 # List GitOpsSets (enterprise feature)

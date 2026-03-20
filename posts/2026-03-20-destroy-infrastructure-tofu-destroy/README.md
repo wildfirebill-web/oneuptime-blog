@@ -1,14 +1,14 @@
-# How to Destroy Infrastructure with tofu destroy
+# How to Destroy Infrastructure with tofu destroy - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu destroy, Infrastructure as Code, DevOps, Lifecycle Management
+Tags: OpenTofu, Tofu destroy, Infrastructure as Code, DevOps, Lifecycle Management
 
 Description: Learn how to use tofu destroy to safely tear down infrastructure, understand the destroy plan, and target specific resources for deletion.
 
 ---
 
-`tofu destroy` removes all infrastructure managed by your OpenTofu configuration. It generates a destroy plan, shows you exactly what will be deleted, and waits for your confirmation. Understanding how destroy works — including its options and safeguards — is essential before running it on production environments.
+`tofu destroy` removes all infrastructure managed by your OpenTofu configuration. It generates a destroy plan, shows you exactly what will be deleted, and waits for your confirmation. Understanding how destroy works - including its options and safeguards - is essential before running it on production environments.
 
 ---
 
@@ -16,6 +16,7 @@ Description: Learn how to use tofu destroy to safely tear down infrastructure, u
 
 ```bash
 # First, preview what will be destroyed
+
 tofu plan -destroy
 
 # Then destroy all managed infrastructure
@@ -32,7 +33,7 @@ tofu destroy
 
 ## Understanding the Destroy Plan Output
 
-```
+```hcl
 OpenTofu will perform the following actions:
 
   # aws_instance.web will be destroyed
@@ -121,7 +122,7 @@ tofu destroy
 
 ## Destroy Order (Dependencies)
 
-OpenTofu respects the dependency graph when destroying. Resources are destroyed in reverse dependency order — dependents are removed before their dependencies.
+OpenTofu respects the dependency graph when destroying. Resources are destroyed in reverse dependency order - dependents are removed before their dependencies.
 
 ```mermaid
 graph LR

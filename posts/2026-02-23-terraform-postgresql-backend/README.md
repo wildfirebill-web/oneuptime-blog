@@ -58,6 +58,7 @@ Here is the basic configuration:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "pg" {
     # PostgreSQL connection string

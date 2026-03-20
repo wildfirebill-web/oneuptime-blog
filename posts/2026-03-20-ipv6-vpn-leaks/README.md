@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, VPN, Security, Privacy, Troubleshooting, DNS Leaks
+Tags: IPv6, VPN, Security, Privacy, Troubleshooting, DNS Leak
 
 Description: Detect and fix IPv6 traffic leaks through VPNs that only tunnel IPv4, exposing your real IPv6 address and location even when connected to a VPN.
 
@@ -14,6 +14,7 @@ IPv6 VPN leaks occur when a VPN tunnels IPv4 traffic but leaves IPv6 traffic unp
 
 ```bash
 # Check your current IPv6 address (before and after VPN)
+
 echo "Current IPv6 address:"
 curl -6 -s --max-time 5 https://api6.my-ip.io/ip 2>/dev/null || \
     echo "No IPv6 connectivity"
@@ -49,7 +50,7 @@ ip -6 addr show scope global
 # doesn't have IPv6, traffic will use eth0 directly
 ```
 
-## Step 3: Fix Option 1 — Block IPv6 Traffic When on VPN
+## Step 3: Fix Option 1 - Block IPv6 Traffic When on VPN
 
 For VPNs that don't support IPv6, block all IPv6 while connected:
 
@@ -68,7 +69,7 @@ sudo ip6tables -A OUTPUT -j DROP
 sudo ip6tables -F OUTPUT
 ```
 
-## Step 4: Fix Option 2 — Route IPv6 Through VPN
+## Step 4: Fix Option 2 - Route IPv6 Through VPN
 
 For OpenVPN with IPv6 support:
 
@@ -92,7 +93,7 @@ ip -6 route show default
 # Should show: default dev wg0
 ```
 
-## Step 5: Fix Option 3 — Disable IPv6 While on VPN
+## Step 5: Fix Option 3 - Disable IPv6 While on VPN
 
 ```bash
 # Create a script that VPN calls on connect/disconnect
@@ -148,7 +149,7 @@ POST_VPN_IPV6=$(curl -6 -s --max-time 5 https://api6.my-ip.io/ip 2>/dev/null)
 echo "IPv6 after VPN: ${POST_VPN_IPV6:-no IPv6}"
 
 if [ "$PRE_VPN_IPV6" = "$POST_VPN_IPV6" ] && [ -n "$PRE_VPN_IPV6" ]; then
-    echo "[LEAK DETECTED] IPv6 address unchanged — VPN is leaking IPv6!"
+    echo "[LEAK DETECTED] IPv6 address unchanged - VPN is leaking IPv6!"
 elif [ -z "$POST_VPN_IPV6" ]; then
     echo "[PROTECTED] No IPv6 connectivity through VPN (leak blocked)"
 else

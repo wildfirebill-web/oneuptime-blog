@@ -28,6 +28,7 @@ This guide provides the methodology and commands for baseline performance manage
 
 ```bash
 # Host-to-host throughput (no CNI overhead)
+
 kubectl run host-server --image=networkstatic/iperf3 \
   --overrides='{"spec":{"hostNetwork":true,"nodeSelector":{"kubernetes.io/hostname":"node-1"}}}' \
   -- -s

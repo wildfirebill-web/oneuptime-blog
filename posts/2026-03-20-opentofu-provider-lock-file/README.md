@@ -1,11 +1,10 @@
----
-title: "Understanding the OpenTofu Provider Lock File"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, lock-file
-description: "Learn how the .terraform.lock.hcl file works in OpenTofu and why committing it to version control ensures reproducible deployments."
----
-
 # Understanding the OpenTofu Provider Lock File
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Lock-file
+
+Description: Learn how the .terraform.lock.hcl file works in OpenTofu and why committing it to version control ensures reproducible deployments.
 
 The `.terraform.lock.hcl` file records the exact provider versions and checksums that were installed. Like `package-lock.json` in Node.js or `Pipfile.lock` in Python, it ensures every team member and CI/CD pipeline uses identical provider versions.
 
@@ -38,6 +37,7 @@ provider "registry.opentofu.org/hashicorp/random" {
 
 ```bash
 # Created or updated when you run tofu init
+
 tofu init
 
 # After init, a .terraform.lock.hcl is created/updated
@@ -57,7 +57,7 @@ tofu providers lock \
 ## Why Commit the Lock File
 
 ```bash
-# Without lock file — different developers might get different versions:
+# Without lock file - different developers might get different versions:
 # Developer A (runs tofu init on Monday): gets aws 5.38.0
 # Developer B (runs tofu init on Friday): gets aws 5.40.0
 # CI (runs tofu init on deploy): gets aws 5.40.0
@@ -65,12 +65,12 @@ tofu providers lock \
 
 # With lock file committed:
 # Everyone runs: tofu init (reads lock file)
-# Everyone gets: aws 5.38.0 — identical
+# Everyone gets: aws 5.38.0 - identical
 # Result: consistent, reproducible deployments
 ```
 
 ```bash
-# .gitignore — what to include vs exclude
+# .gitignore - what to include vs exclude
 # Commit this:
 # .terraform.lock.hcl
 
@@ -155,7 +155,7 @@ jobs:
 ```bash
 # If you remove a provider from your configuration:
 # 1. Remove the required_providers entry
-# 2. Run tofu init — OpenTofu removes unused providers from lock file
+# 2. Run tofu init - OpenTofu removes unused providers from lock file
 
 # Or manually remove the provider stanza from .terraform.lock.hcl
 # Then run tofu init to validate
@@ -163,4 +163,4 @@ jobs:
 
 ## Conclusion
 
-The `.terraform.lock.hcl` file is a critical part of reproducible infrastructure deployments. Always commit it to version control, use `tofu providers lock` to add platform-specific hashes for cross-platform teams, and update it deliberately via `tofu init -upgrade` when you're ready to upgrade providers. Treat provider version changes the same as code changes — with review and testing.
+The `.terraform.lock.hcl` file is a critical part of reproducible infrastructure deployments. Always commit it to version control, use `tofu providers lock` to add platform-specific hashes for cross-platform teams, and update it deliberately via `tofu init -upgrade` when you're ready to upgrade providers. Treat provider version changes the same as code changes - with review and testing.

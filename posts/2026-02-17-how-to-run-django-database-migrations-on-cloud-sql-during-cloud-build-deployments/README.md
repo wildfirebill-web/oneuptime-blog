@@ -20,6 +20,7 @@ The most common approach uses the Cloud SQL proxy as a step in your Cloud Build 
 
 ```yaml
 # cloudbuild.yaml - Run migrations with Cloud SQL proxy
+
 steps:
   # Step 1: Build the application image
   - name: 'gcr.io/cloud-builders/docker'

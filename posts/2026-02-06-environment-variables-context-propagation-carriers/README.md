@@ -52,6 +52,7 @@ Here is how you set up a parent process to inject trace context into the environ
 
 ```python
 # parent_process.py
+
 import os
 import subprocess
 from opentelemetry import trace, context

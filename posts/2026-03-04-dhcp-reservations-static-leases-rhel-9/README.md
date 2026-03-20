@@ -44,6 +44,7 @@ From the network (if you have access to the switch):
 
 ```bash
 # On the DHCP server, check the ARP table
+
 ip neigh show
 ```
 

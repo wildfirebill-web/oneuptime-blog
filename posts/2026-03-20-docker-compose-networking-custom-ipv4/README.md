@@ -14,6 +14,7 @@ Docker Compose automatically creates a network for each project, but the default
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:
@@ -98,4 +99,4 @@ COMPOSE_PROJECT_NAME=myapp docker compose up -d
 
 ## Conclusion
 
-Define networks in the `networks:` section with IPAM configuration to control subnets. Attach services to multiple networks for tier isolation — web servers on a frontend network, databases on a backend network, with application containers bridging both. This reflects real production network segmentation in a development environment.
+Define networks in the `networks:` section with IPAM configuration to control subnets. Attach services to multiple networks for tier isolation - web servers on a frontend network, databases on a backend network, with application containers bridging both. This reflects real production network segmentation in a development environment.

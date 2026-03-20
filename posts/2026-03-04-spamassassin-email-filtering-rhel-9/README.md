@@ -34,6 +34,7 @@ graph LR
 
 ```bash
 # Install SpamAssassin
+
 sudo dnf install -y spamassassin
 ```
 

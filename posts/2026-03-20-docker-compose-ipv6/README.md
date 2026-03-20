@@ -45,7 +45,7 @@ services:
 ## Full Stack with Multiple IPv6 Networks
 
 ```yaml
-# compose.yaml — production-grade dual-stack setup
+# compose.yaml - production-grade dual-stack setup
 
 networks:
   frontend:
@@ -98,7 +98,7 @@ volumes:
 ## Assign Static IPv6 Address to a Service
 
 ```yaml
-# compose.yaml — static IPv6 assignment
+# compose.yaml - static IPv6 assignment
 
 networks:
   appnet:
@@ -129,6 +129,7 @@ services:
 
 ```bash
 # Start the stack
+
 docker compose up -d
 
 # Check service IPv6 addresses

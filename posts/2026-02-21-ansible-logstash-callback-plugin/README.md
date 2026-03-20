@@ -20,6 +20,7 @@ You need:
 
 ```bash
 # Install the required Python library
+
 pip install python-logstash
 
 # Install the Ansible collection

@@ -18,6 +18,7 @@ Azure RBAC is built on three core concepts: security principals (who), role defi
 
 ```hcl
 # Configure the Azure provider
+
 terraform {
   required_providers {
     azurerm = {

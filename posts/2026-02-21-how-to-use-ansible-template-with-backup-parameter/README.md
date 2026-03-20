@@ -16,6 +16,7 @@ Add `backup: true` to any template task:
 
 ```yaml
 # Create a backup of the existing file before overwriting
+
 - name: Deploy nginx configuration with backup
   ansible.builtin.template:
     src: nginx.conf.j2

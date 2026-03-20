@@ -9,12 +9,12 @@ Description: Two hosts are on the same subnet if applying the subnet mask to bot
 ## The Test: Bitwise AND
 
 Two hosts are on the same subnet if:
-```
+```text
 IP_A AND mask == IP_B AND mask
 ```
 
 Example with mask /24:
-```
+```text
 192.168.1.50  AND 255.255.255.0 = 192.168.1.0  ✓ same
 192.168.1.200 AND 255.255.255.0 = 192.168.1.0  ✓ same
 192.168.2.1   AND 255.255.255.0 = 192.168.2.0  ✗ different
@@ -36,6 +36,7 @@ def same_subnet(ip1: str, ip2: str, prefix: int) -> bool:
     return n1 == n2
 
 # Using ipaddress module (simpler)
+
 def same_subnet_ipaddress(ip1: str, ip2: str, cidr_prefix: int) -> bool:
     """Check if two IPs are in the same subnet using ipaddress."""
     network = ipaddress.IPv4Network(f"{ip1}/{cidr_prefix}", strict=False)
@@ -70,7 +71,7 @@ print(same_subnet_ipaddress(ip1, ip2, 24))  # True (both in /24)
 
 A host checks if the destination is on-subnet to decide whether to send directly (layer 2) or via the default gateway:
 
-```
+```text
 If (dst_ip AND my_mask) == (my_ip AND my_mask):
     → Send directly to dst_ip (ARP for MAC)
 Else:

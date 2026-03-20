@@ -1,4 +1,4 @@
-# How to Deploy Jaeger on Rancher for Distributed Tracing
+# How to Deploy Jaeger on Rancher for Distributed Tracing - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Jaeger is an open-source distributed tracing system that helps developers monito
 
 ```bash
 # Add Jaeger Helm repository
+
 helm repo add jaegertracing https://jaegertracing.github.io/helm-charts
 helm repo update
 

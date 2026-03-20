@@ -138,6 +138,7 @@ sudo virsh domblkstat vmname vda
 
 ```bash
 # qcow2 to raw
+
 qemu-img convert -f qcow2 -O raw disk.qcow2 disk.raw
 
 # raw to qcow2

@@ -38,6 +38,7 @@ The following command creates a dead letter queue and configures the redrive pol
 
 ```bash
 # Create the dead letter queue
+
 aws sqs create-queue \
   --queue-name orders-dlq \
   --attributes '{

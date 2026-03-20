@@ -264,6 +264,7 @@ You can check what's embedded by examining the binary:
 
 ```bash
 # See approximate size contribution
+
 go build -o app .
 ls -lh app
 ```

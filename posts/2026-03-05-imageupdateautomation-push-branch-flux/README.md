@@ -96,6 +96,7 @@ One approach is to use a GitHub Actions workflow triggered by branch pushes:
 
 ```yaml
 # .github/workflows/auto-pr.yml
+
 name: Auto PR for Flux Image Updates
 on:
   push:

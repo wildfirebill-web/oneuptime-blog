@@ -418,6 +418,7 @@ Once your server is running, you can test it with curl commands:
 
 ```bash
 # Create a book
+
 curl -X POST http://localhost:8080/books \
   -H "Content-Type: application/json" \
   -d '{"title":"The Go Programming Language","author":"Alan Donovan","isbn":"978-0134190440","published":"2015-11-05"}'

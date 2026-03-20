@@ -154,6 +154,7 @@ Give workloads different service accounts in each cluster:
 
 ```yaml
 # In cluster1
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

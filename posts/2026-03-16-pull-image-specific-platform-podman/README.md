@@ -20,6 +20,7 @@ A multi-architecture image is actually a manifest list that points to platform-s
 
 ```bash
 # Inspect a multi-arch manifest to see available platforms
+
 podman manifest inspect docker.io/library/nginx:1.25
 
 # Use skopeo for a cleaner view of available platforms

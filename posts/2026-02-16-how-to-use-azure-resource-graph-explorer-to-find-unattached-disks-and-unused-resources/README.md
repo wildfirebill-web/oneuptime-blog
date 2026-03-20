@@ -231,6 +231,7 @@ Once you have identified orphaned resources, you can automate the cleanup. Here 
 ```bash
 #!/bin/bash
 # Find and delete unattached disks older than 30 days
+
 # CAUTION: Review the list before enabling deletion
 
 THIRTY_DAYS_AGO=$(date -u -v-30d '+%Y-%m-%dT%H:%M:%SZ' 2>/dev/null || date -u -d '30 days ago' '+%Y-%m-%dT%H:%M:%SZ')

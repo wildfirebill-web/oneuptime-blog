@@ -1,4 +1,4 @@
-# How to Switch Between Linux and Windows Containers in Portainer
+# How to Switch Between Linux and Windows Containers in Portainer - Switch
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ You can only run one mode at a time, and switching requires restarting Docker.
 
 ```powershell
 # Switch to Windows containers
+
 & "$Env:ProgramFiles\Docker\Docker\DockerCli.exe" -SwitchWindowsEngine
 
 # Switch to Linux containers

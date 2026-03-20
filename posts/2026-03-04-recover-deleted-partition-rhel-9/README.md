@@ -26,6 +26,7 @@ testdisk is the go-to tool for partition recovery on Linux.
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install testdisk

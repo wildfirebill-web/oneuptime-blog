@@ -41,6 +41,7 @@ Databases are just organizational containers. Create them to group related table
 
 ```python
 # Create databases for different data domains
+
 import boto3
 
 glue = boto3.client('glue', region_name='us-east-1')
@@ -281,7 +282,7 @@ Control who can see and modify catalog resources with IAM policies:
 
 For more granular access control, AWS Lake Formation provides column-level and row-level security on top of the Data Catalog.
 
-## Resource Policies
+Resource Policies
 
 You can share the Data Catalog across AWS accounts:
 

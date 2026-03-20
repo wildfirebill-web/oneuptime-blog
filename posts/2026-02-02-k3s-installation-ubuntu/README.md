@@ -39,6 +39,7 @@ Check your Ubuntu version to confirm compatibility.
 
 ```bash
 # Display Ubuntu version to verify you're on a supported release
+
 lsb_release -a
 ```
 

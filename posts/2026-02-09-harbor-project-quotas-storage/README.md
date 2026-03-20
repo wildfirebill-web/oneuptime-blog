@@ -55,6 +55,7 @@ First, authenticate and get a project ID:
 
 ```bash
 # Set Harbor credentials
+
 HARBOR_URL="https://harbor.example.com"
 HARBOR_USER="admin"
 HARBOR_PASSWORD="YourPassword"

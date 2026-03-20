@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, pfSense, Networking, Firewall, sysadmin
+Tags: DHCP, pfSense, Networking, Firewall, Sysadmin
 
-Description: pfSense's built-in DHCP server (based on ISC dhcpd) provides a web UI for configuring scopes, reservations, and options per interface, making it easy to manage DHCP alongside firewall and routing in one appliance.
+Description: pfSense's built-in DHCP server (based on ISC dhcpd) provides a web UI for configuring scopes, reservations, and options per interface, making it easy to manage DHCP alongside firewall and routing...
 
 ## Enabling DHCP via the Web UI
 
@@ -27,6 +27,7 @@ pfSense stores dhcpd.conf at `/var/dhcpd/etc/dhcpd.conf`. You can view it via SS
 
 ```bash
 # Connect via SSH (if enabled in pfSense: System > Advanced > Admin Access)
+
 ssh admin@192.168.1.1
 
 # View the generated config
@@ -45,14 +46,14 @@ Via Web UI:
 Via CLI script:
 ```php
 # pfSense uses PHP config functions
-# Add via Web API or GUI — direct config file editing not recommended
+# Add via Web API or GUI - direct config file editing not recommended
 ```
 
 ## Additional DHCP Options in pfSense
 
 In the DHCP Server settings, scroll to **Additional BOOTP/DHCP Options**:
 
-```
+```text
 Number: 150
 Type: IP Address
 Value: 10.0.0.100

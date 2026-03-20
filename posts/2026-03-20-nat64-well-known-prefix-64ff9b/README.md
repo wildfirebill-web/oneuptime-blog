@@ -1,4 +1,4 @@
-# How to Understand the NAT64 Well-Known Prefix (64:ff9b::/96)
+# How to Understand the NAT64 Well-Known Prefix (64:ff9b::/96) - 64ff9b
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ The NAT64 well-known prefix `64:ff9b::/96` (RFC 6052) is used by NAT64 translato
 
 ## How NAT64 Uses 64:ff9b::/96
 
-```
+```text
 IPv4 server: 93.184.216.34 (example.com)
 Synthesized IPv6: 64:ff9b::93.184.216.34
               or: 64:ff9b::5db8:d822
@@ -44,6 +44,7 @@ def synthesize_nat64_address(ipv4: str,
     return str(ipaddress.IPv6Address(synthesized))
 
 # Examples
+
 print(synthesize_nat64_address("93.184.216.34"))
 # 64:ff9b::5db8:d822
 
@@ -56,7 +57,7 @@ print(synthesize_nat64_address("8.8.8.8"))
 DNS64 synthesizes AAAA records for IPv4-only domains using the NAT64 prefix.
 
 ```bash
-# /etc/bind/named.conf.options — DNS64 configuration
+# /etc/bind/named.conf.options - DNS64 configuration
 options {
     # DNS64 prefix
     dns64 64:ff9b::/96 {

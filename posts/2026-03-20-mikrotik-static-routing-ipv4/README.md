@@ -14,6 +14,7 @@ Static routing on MikroTik RouterOS is configured with `/ip route add`. Routes a
 
 ```mikrotik
 # Add default route
+
 /ip route add dst-address=0.0.0.0/0 gateway=203.0.113.1 comment="Default via ISP"
 
 # Verify
@@ -36,14 +37,14 @@ Static routing on MikroTik RouterOS is configured with `/ip route add`. Routes a
 # Primary route via main ISP (default distance=1)
 /ip route add dst-address=0.0.0.0/0 gateway=203.0.113.1 distance=1 comment="Primary ISP"
 
-# Backup route via secondary ISP (higher distance — only used if primary fails)
+# Backup route via secondary ISP (higher distance - only used if primary fails)
 /ip route add dst-address=0.0.0.0/0 gateway=198.51.100.1 distance=5 comment="Backup ISP"
 ```
 
 ## Route with Check Gateway
 
 ```mikrotik
-# Automatic failover — removes route if gateway is unreachable
+# Automatic failover - removes route if gateway is unreachable
 /ip route add \
   dst-address=0.0.0.0/0 \
   gateway=203.0.113.1 \
@@ -55,7 +56,7 @@ Static routing on MikroTik RouterOS is configured with `/ip route add`. Routes a
 
 ```mikrotik
 # Route specific source traffic through a different gateway
-# Step 1: Mangle — mark connection
+# Step 1: Mangle - mark connection
 /ip firewall mangle add \
   chain=prerouting \
   src-address=192.168.2.0/24 \

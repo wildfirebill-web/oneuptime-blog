@@ -14,6 +14,7 @@ Ubuntu Desktop doesn't come with SSH server enabled by default. This guide shows
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install OpenSSH server

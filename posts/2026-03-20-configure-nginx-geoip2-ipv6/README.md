@@ -14,6 +14,7 @@ The Nginx GeoIP2 module uses MaxMind databases to determine the geographic locat
 
 ```bash
 # Ubuntu/Debian - install ngx_http_geoip2_module
+
 sudo apt install nginx libnginx-mod-http-geoip2 -y
 
 # Or install libmaxminddb and compile from source

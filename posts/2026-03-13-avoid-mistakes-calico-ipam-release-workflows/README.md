@@ -16,6 +16,7 @@ IPAM release workflow mistakes are high-risk because they can cause immediate, h
 
 ```bash
 # Run IPAM check to identify issues
+
 calicoctl ipam check
 
 # Verify specific IP before release

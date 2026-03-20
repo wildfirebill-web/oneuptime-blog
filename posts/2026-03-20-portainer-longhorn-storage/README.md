@@ -1,4 +1,4 @@
-# How to Deploy Longhorn Storage and Manage via Portainer
+# How to Deploy Longhorn Storage and Manage via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Longhorn is a cloud-native distributed block storage system for Kubernetes. It p
 
 ```bash
 # Install open-iscsi on all Kubernetes nodes
+
 # Ubuntu/Debian
 sudo apt-get update && sudo apt-get install -y open-iscsi
 
@@ -197,4 +198,4 @@ kubectl patch pvc pgdata-postgres-0 \
 
 ## Conclusion
 
-Longhorn provides enterprise-grade persistent storage for Kubernetes workloads managed by Portainer. Its built-in replication, snapshots, and backup capabilities make it ideal for production stateful workloads. Portainer handles the application lifecycle while Longhorn handles the storage lifecycle—a clean separation of concerns that simplifies operations.
+Longhorn provides enterprise-grade persistent storage for Kubernetes workloads managed by Portainer. Its built-in replication, snapshots, and backup capabilities make it ideal for production stateful workloads. Portainer handles the application lifecycle while Longhorn handles the storage lifecycle-a clean separation of concerns that simplifies operations.

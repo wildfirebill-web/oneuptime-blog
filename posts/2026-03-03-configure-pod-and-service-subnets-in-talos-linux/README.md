@@ -20,6 +20,7 @@ The default CIDR ranges in Talos Linux are:
 
 ```text
 # Default Talos Linux network configuration
+
 Pod CIDR:     10.244.0.0/16  (65,534 addresses)
 Service CIDR: 10.96.0.0/12   (1,048,574 addresses)
 ```

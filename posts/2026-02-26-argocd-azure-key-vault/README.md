@@ -32,6 +32,7 @@ First, deploy ESO itself through ArgoCD.
 
 ```yaml
 # external-secrets-operator-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -52,6 +52,7 @@ Here are the inventory files for staging and production.
 
 ```yaml
 # inventories/staging/hosts.yml
+
 # Staging environment servers - smaller fleet, lower specs
 all:
   children:

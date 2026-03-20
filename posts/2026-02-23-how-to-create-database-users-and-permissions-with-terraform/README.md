@@ -18,6 +18,7 @@ There are several ways to manage database users with Terraform. You can use IAM 
 
 ```hcl
 # Configure Terraform with multiple providers
+
 terraform {
   required_providers {
     aws = {

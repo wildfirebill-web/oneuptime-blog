@@ -33,6 +33,7 @@ This configuration defines a service with rolling update capabilities. The key s
 
 ```yaml
 # docker-compose.yml
+
 services:
   api:
     image: myapp:${VERSION:-latest}

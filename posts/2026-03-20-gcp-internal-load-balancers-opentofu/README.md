@@ -14,6 +14,7 @@ GCP Internal Load Balancers distribute traffic to backend instances using privat
 
 ```hcl
 # main.tf - Internal HTTP load balancer
+
 resource "google_compute_health_check" "internal_http_hc" {
   name               = "internal-app-health-check"
   check_interval_sec = 10

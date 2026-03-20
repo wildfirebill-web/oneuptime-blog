@@ -535,7 +535,7 @@ High cardinality group-by fields create many output documents. Limit cardinality
 }
 ```
 
-### Resource Limits
+Resource Limits
 
 Set `max_page_search_size` to control memory usage:
 
@@ -699,6 +699,7 @@ PUT _transform/api-metrics-summary
 
 ```bash
 # Start the transform
+
 curl -X POST "localhost:9200/_transform/api-metrics-summary/_start"
 
 # Check status after a few minutes

@@ -40,7 +40,7 @@ In your dashboard settings, go to Variables and add a new variable:
 
 This creates a dropdown at the top of the dashboard that lists all subscriptions. You reference it in queries as `$subscription`.
 
-### Resource Group Variable
+Resource Group Variable
 
 Add another variable:
 
@@ -50,7 +50,7 @@ Add another variable:
 - **Query type:** Resource Groups
 - **Subscription:** $subscription
 
-### Resource Name Variable
+Resource Name Variable
 
 - **Name:** vmName
 - **Type:** Query
@@ -282,6 +282,7 @@ Always export your dashboards to JSON and store them in version control:
 
 ```bash
 # Export a dashboard to JSON
+
 az grafana dashboard show \
     --name "my-grafana-workspace" \
     --resource-group "grafana-rg" \

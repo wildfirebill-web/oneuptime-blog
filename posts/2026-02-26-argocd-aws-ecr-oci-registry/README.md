@@ -16,6 +16,7 @@ First, create an ECR repository for your Helm charts. ECR stores each chart as a
 
 ```bash
 # Create a repository for your Helm chart
+
 aws ecr create-repository \
   --repository-name charts/my-web-app \
   --region us-east-1 \

@@ -14,6 +14,7 @@ Knowing which version of OpenTofu you are running is essential for troubleshooti
 
 ```bash
 # Display the current OpenTofu version
+
 tofu version
 
 # Example output:

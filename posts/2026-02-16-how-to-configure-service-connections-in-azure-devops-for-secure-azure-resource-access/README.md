@@ -52,6 +52,7 @@ First, create the service principal in Azure.
 
 ```bash
 # Create a service principal with a descriptive name
+
 az ad sp create-for-rbac \
   --name "sp-azuredevops-production" \
   --role Contributor \

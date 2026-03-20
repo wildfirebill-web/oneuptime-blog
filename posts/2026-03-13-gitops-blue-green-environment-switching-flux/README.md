@@ -29,6 +29,7 @@ Both deployments exist simultaneously. They differ only in image tag and version
 
 ```yaml
 # apps/my-app/base/deployment-blue.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

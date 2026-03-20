@@ -28,6 +28,7 @@ On Amazon Linux 2023 or Amazon Linux 2:
 
 ```bash
 # Install the CloudWatch agent on Amazon Linux
+
 sudo yum install -y amazon-cloudwatch-agent
 ```
 

@@ -35,6 +35,7 @@ Event Hubs uses a namespace as a container for one or more event hubs (similar t
 
 ```bash
 # Create a resource group for the trading platform
+
 az group create --name trading-platform-rg --location eastus
 
 # Create an Event Hubs namespace with Premium tier for low latency

@@ -84,6 +84,7 @@ spec:
 
 ```promql
 # Ready status across all clusters
+
 sum by (cluster, kind, name, namespace) (
   gotk_reconcile_condition{type="Ready", status="True"}
 )
@@ -105,7 +106,7 @@ histogram_quantile(0.99,
 )
 ```
 
-### Resource Counts
+Resource Counts
 
 ```promql
 # Total Flux resources per cluster

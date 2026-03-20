@@ -30,6 +30,7 @@ A license configuration defines the rules for a specific software license. You s
 
 ```bash
 # Create a license configuration for Windows Server
+
 aws license-manager create-license-configuration \
   --name "Windows Server 2022 Datacenter" \
   --description "BYOL Windows Server Datacenter licenses" \

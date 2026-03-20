@@ -68,6 +68,7 @@ The JVM heap is critical for Elasticsearch performance:
 
 ```yaml
 # jvm.options
+
 # Elasticsearch JVM configuration for a 64GB RAM server
 
 # Set heap size to 50% of available RAM, max 31GB

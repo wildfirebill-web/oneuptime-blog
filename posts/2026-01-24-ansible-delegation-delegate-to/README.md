@@ -41,6 +41,7 @@ flowchart TB
 ```yaml
 ---
 # basic-delegation.yml - Basic delegate_to usage
+
 - name: Demonstrate basic delegation
   hosts: webservers
   tasks:

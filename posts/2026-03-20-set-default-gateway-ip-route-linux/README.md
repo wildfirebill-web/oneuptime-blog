@@ -14,6 +14,7 @@ The default gateway is the next-hop router used for all traffic that does not ma
 
 ```bash
 # Set the default gateway to 192.168.1.1 via eth0
+
 sudo ip route add default via 192.168.1.1
 
 # Verify
@@ -72,7 +73,7 @@ ip route get 8.8.8.8
 
 Output shows the selected gateway and source address:
 
-```
+```text
 8.8.8.8 via 192.168.1.1 dev eth0 src 192.168.1.100
 ```
 
@@ -93,7 +94,7 @@ network:
 
 **Debian /etc/network/interfaces:**
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100
@@ -110,7 +111,7 @@ nmcli con up "Wired connection 1"
 
 **RHEL/CentOS /etc/sysconfig/network-scripts/ifcfg-eth0:**
 
-```
+```text
 GATEWAY=192.168.1.1
 ```
 

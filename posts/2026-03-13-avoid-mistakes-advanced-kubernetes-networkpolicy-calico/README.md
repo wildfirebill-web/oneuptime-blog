@@ -23,6 +23,7 @@ This guide covers avoid mistakes Advanced K8s NetworkPolicy in Calico with produ
 
 ```yaml
 # Advanced Kubernetes NetworkPolicy combining namespace and pod selectors
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

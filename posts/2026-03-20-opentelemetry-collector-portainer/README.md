@@ -1,4 +1,4 @@
-# How to Deploy OpenTelemetry Collector via Portainer
+# How to Deploy OpenTelemetry Collector via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The OpenTelemetry Collector is a vendor-neutral telemetry pipeline that receives
 
 ```yaml
 # docker-compose.yml - OpenTelemetry Collector with full observability stack
+
 version: "3.8"
 
 services:
@@ -287,4 +288,4 @@ datasources:
 
 ## Conclusion
 
-The OpenTelemetry Collector is the telemetry backbone of a modern observability stack. Its pipeline model — receivers to ingest, processors to transform, exporters to deliver — makes it trivial to change backends without touching application code. Deploying through Portainer gives you the full collector lifecycle management (deploy, update, restart) alongside the applications it monitors. The `otel-collector-contrib` image includes dozens of receivers and exporters, supporting virtually any telemetry source or destination in your infrastructure. Start with just traces (OTLP to Jaeger) and add metrics and log pipelines incrementally.
+The OpenTelemetry Collector is the telemetry backbone of a modern observability stack. Its pipeline model - receivers to ingest, processors to transform, exporters to deliver - makes it trivial to change backends without touching application code. Deploying through Portainer gives you the full collector lifecycle management (deploy, update, restart) alongside the applications it monitors. The `otel-collector-contrib` image includes dozens of receivers and exporters, supporting virtually any telemetry source or destination in your infrastructure. Start with just traces (OTLP to Jaeger) and add metrics and log pipelines incrementally.

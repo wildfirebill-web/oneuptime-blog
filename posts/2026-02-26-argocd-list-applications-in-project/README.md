@@ -18,6 +18,7 @@ This guide covers every method for listing project applications, from simple CLI
 
 ```bash
 # List all applications in a specific project
+
 argocd app list --project backend
 
 # Output:

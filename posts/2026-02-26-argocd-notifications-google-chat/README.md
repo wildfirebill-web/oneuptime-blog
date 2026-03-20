@@ -310,6 +310,7 @@ Google Chat supports threaded conversations. To send follow-up messages in the s
 
 ```bash
 # Check controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Test the webhook directly

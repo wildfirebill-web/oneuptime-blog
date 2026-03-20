@@ -36,6 +36,7 @@ TFE authenticates to Vault using JWT tokens. Configure Vault to trust TFE's JWT 
 
 ```bash
 # Enable the JWT auth backend for TFE
+
 vault auth enable -path=tfe jwt
 
 # Configure the JWT auth method with TFE's OIDC discovery URL

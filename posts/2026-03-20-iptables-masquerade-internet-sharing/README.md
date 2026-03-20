@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, MASQUERADE, NAT, Linux, Internet Sharing, Networking
+Tags: iptables, Masquerade, NAT, Linux, Internet Sharing, Networking
 
 Description: Configure iptables MASQUERADE to share an internet connection with hosts on a private network, automatically translating source IPs regardless of the gateway's public address.
 
@@ -10,7 +10,7 @@ IP Masquerading is the most common NAT configuration for Linux gateways and rout
 
 ## What Masquerading Does
 
-```
+```text
 Private network: 192.168.1.0/24
 Gateway: eth0 (public internet), eth1 (private LAN 192.168.1.1)
 
@@ -28,6 +28,7 @@ With masquerade:
 
 ```bash
 # Must enable before masquerading works
+
 sudo sysctl -w net.ipv4.ip_forward=1
 
 # Make permanent
@@ -55,7 +56,7 @@ sudo iptables -A FORWARD -i eth0 -o eth1 \
 
 ```bash
 #!/bin/bash
-# setup-gateway.sh — Complete internet sharing gateway
+# setup-gateway.sh - Complete internet sharing gateway
 
 LAN_IFACE="eth1"
 WAN_IFACE="eth0"
@@ -133,4 +134,4 @@ sudo apt install iptables-persistent -y
 sudo netfilter-persistent save
 ```
 
-Masquerading is the simplest form of outbound NAT — it requires just one rule and automatically handles dynamic IP changes, making it ideal for home gateways, VPN servers, and any Linux host sharing internet access.
+Masquerading is the simplest form of outbound NAT - it requires just one rule and automatically handles dynamic IP changes, making it ideal for home gateways, VPN servers, and any Linux host sharing internet access.

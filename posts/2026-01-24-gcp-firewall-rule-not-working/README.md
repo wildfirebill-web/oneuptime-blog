@@ -43,6 +43,7 @@ A higher-priority rule is overriding your rule.
 
 ```bash
 # List all firewall rules sorted by priority
+
 gcloud compute firewall-rules list \
     --format="table(name, network, direction, priority, allowed[], denied[], sourceRanges[], targetTags[])" \
     --sort-by=priority

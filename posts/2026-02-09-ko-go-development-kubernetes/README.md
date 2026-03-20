@@ -24,6 +24,7 @@ Install ko:
 
 ```bash
 # macOS
+
 brew install ko
 
 # Linux

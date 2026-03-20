@@ -35,6 +35,7 @@ roles/log_management/
 
 ```yaml
 # roles/log_management/defaults/main.yml
+
 # Rsyslog settings
 log_rsyslog_package: rsyslog
 log_rsyslog_service: rsyslog

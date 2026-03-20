@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, S3, Lifecycle Policies, AWS, Storage, Cost Optimization, Infrastructure as Code
 
-Description: Learn how to configure S3 Lifecycle Policies with OpenTofu — transitioning objects to cheaper storage classes, expiring old versions, managing incomplete multipart uploads, and optimizing storage costs.
+Description: Learn how to configure S3 Lifecycle Policies with OpenTofu - transitioning objects to cheaper storage classes, expiring old versions, managing incomplete multipart uploads, and optimizing storage...
 
 ## Introduction
 
-S3 Lifecycle Policies automatically move objects between storage classes and delete them when no longer needed. OpenTofu manages lifecycle rules as code — defining transitions to Intelligent-Tiering, Glacier, and Deep Archive, expiration of current and noncurrent versions, and cleanup of incomplete multipart uploads.
+S3 Lifecycle Policies automatically move objects between storage classes and delete them when no longer needed. OpenTofu manages lifecycle rules as code - defining transitions to Intelligent-Tiering, Glacier, and Deep Archive, expiration of current and noncurrent versions, and cleanup of incomplete multipart uploads.
 
 ## Basic Lifecycle Rule
 
@@ -55,7 +55,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "app_data" {
 resource "aws_s3_bucket_lifecycle_configuration" "logs" {
   bucket = aws_s3_bucket.logs.id
 
-  # Access logs — short retention
+  # Access logs - short retention
   rule {
     id     = "access-logs"
     status = "Enabled"
@@ -74,7 +74,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "logs" {
     }
   }
 
-  # Audit logs — long retention, cold storage
+  # Audit logs - long retention, cold storage
   rule {
     id     = "audit-logs"
     status = "Enabled"
@@ -98,7 +98,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "logs" {
     }
   }
 
-  # Temp files — expire quickly
+  # Temp files - expire quickly
   rule {
     id     = "temp-cleanup"
     status = "Enabled"
@@ -273,4 +273,4 @@ resource "aws_s3_bucket_lifecycle_configuration" "intelligent" {
 
 ## Conclusion
 
-S3 Lifecycle Policies with OpenTofu automate cost optimization by moving cold data to cheaper storage classes without manual intervention. Define prefix-based rules to differentiate retention policies for logs, user uploads, and compliance records. For versioned buckets, always configure `noncurrent_version_expiration` to prevent unlimited version accumulation. Add an `abort_incomplete_multipart_upload` rule to all buckets to reclaim storage from stalled uploads. Use tags for dynamic classification — applications tag objects at write time, and lifecycle rules act based on those tags.
+S3 Lifecycle Policies with OpenTofu automate cost optimization by moving cold data to cheaper storage classes without manual intervention. Define prefix-based rules to differentiate retention policies for logs, user uploads, and compliance records. For versioned buckets, always configure `noncurrent_version_expiration` to prevent unlimited version accumulation. Add an `abort_incomplete_multipart_upload` rule to all buckets to reclaim storage from stalled uploads. Use tags for dynamic classification - applications tag objects at write time, and lifecycle rules act based on those tags.

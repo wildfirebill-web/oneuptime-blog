@@ -34,6 +34,7 @@ The database cache (also called the DB cache or nsslapd-dbcachesize) should be l
 
 ```bash
 # Check the current database size
+
 sudo du -sh /var/lib/dirsrv/slapd-EXAMPLE-COM/db/
 
 # Check current cache settings

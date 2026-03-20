@@ -39,6 +39,7 @@ Create a cache rule that maps a prefix in your ECR to an upstream registry.
 
 ```bash
 # Cache Docker Hub images
+
 aws ecr create-pull-through-cache-rule \
   --ecr-repository-prefix docker-hub \
   --upstream-registry-url registry-1.docker.io

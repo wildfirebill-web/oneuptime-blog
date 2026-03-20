@@ -66,6 +66,7 @@ After startup, the container generates configs for each peer. View the QR code f
 
 ```bash
 # In Portainer, go to Containers > wireguard > Logs
+
 # Or exec into the container:
 docker exec -it wireguard /app/show-peer 1
 ```

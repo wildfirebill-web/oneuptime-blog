@@ -44,6 +44,7 @@ Create a directory for your function:
 
 ```bash
 # Create the function directory
+
 mkdir -p gcs-processor && cd gcs-processor
 ```
 

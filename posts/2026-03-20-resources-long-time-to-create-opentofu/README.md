@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Timeouts, AWS, RDS, Infrastructure as Code, Best Practices
+Tags: OpenTofu, Timeout, AWS, RDS, Infrastructure as Code, Best Practices
 
 Description: Learn how to configure timeouts, use depends_on, and implement retry logic for OpenTofu resources that take a long time to provision.
 
@@ -67,6 +67,7 @@ Some resources appear created in state but aren't functionally ready yet. Use `d
 
 ```hcl
 # EKS cluster must be fully ready before the node group
+
 resource "aws_eks_node_group" "main" {
   cluster_name    = aws_eks_cluster.main.name
   node_group_name = "main"

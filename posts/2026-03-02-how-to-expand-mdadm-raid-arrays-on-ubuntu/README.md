@@ -26,6 +26,7 @@ Before expanding, understand the current state:
 
 ```bash
 # Show all RAID arrays and their status
+
 sudo mdadm --detail --scan
 
 # Show detailed information for a specific array

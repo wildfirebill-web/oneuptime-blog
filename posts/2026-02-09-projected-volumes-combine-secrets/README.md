@@ -314,6 +314,7 @@ Your application can read pod information directly from files:
 
 ```python
 # Read pod name
+
 with open('/etc/config/pod-name', 'r') as f:
     pod_name = f.read().strip()
 

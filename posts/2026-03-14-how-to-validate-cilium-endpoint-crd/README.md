@@ -54,6 +54,7 @@ fi
 
 ```bash
 # Check for endpoints not in ready state
+
 cilium endpoint list -o json | \
   jq '[.[] | select(.status.state != "ready")] | length'
 

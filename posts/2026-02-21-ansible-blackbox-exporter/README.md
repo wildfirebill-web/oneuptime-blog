@@ -30,6 +30,7 @@ Define the Blackbox Exporter version, probe modules, and the targets to monitor.
 
 ```yaml
 # group_vars/monitoring.yml
+
 blackbox_version: "0.24.0"
 blackbox_listen_port: 9115
 blackbox_config_dir: /etc/blackbox_exporter

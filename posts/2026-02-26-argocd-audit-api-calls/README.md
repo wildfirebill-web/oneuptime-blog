@@ -227,6 +227,7 @@ If you use Loki, create a Grafana dashboard to visualize audit activity:
 # Loki queries for ArgoCD audit dashboard
 
 # All sync operations
+
 {namespace="argocd", pod=~"argocd-server.*"} |= "sync"
 
 # Failed login attempts

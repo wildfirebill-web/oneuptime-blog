@@ -25,6 +25,7 @@ Define a StorageClass with volume binding delay:
 
 ```yaml
 # topology-aware-storage.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

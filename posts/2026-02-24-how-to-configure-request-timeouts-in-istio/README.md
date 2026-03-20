@@ -78,6 +78,7 @@ Check your p50, p95, and p99 response times:
 
 ```bash
 # Using Istio metrics
+
 kubectl exec -n istio-system deploy/prometheus -- curl -s 'localhost:9090/api/v1/query?query=histogram_quantile(0.99,sum(rate(istio_request_duration_milliseconds_bucket{destination_service="product-service.production.svc.cluster.local"}[5m]))by(le))' | jq '.data.result[0].value[1]'
 ```
 

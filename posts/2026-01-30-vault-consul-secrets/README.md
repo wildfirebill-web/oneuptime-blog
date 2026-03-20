@@ -51,6 +51,7 @@ If ACLs are not enabled in Consul, add this to your Consul server configuration:
 
 ```hcl
 # /etc/consul.d/acl.hcl
+
 acl = {
   enabled        = true
   default_policy = "deny"

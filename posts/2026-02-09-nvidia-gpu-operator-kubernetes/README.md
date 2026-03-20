@@ -29,6 +29,7 @@ Ensure your cluster meets requirements:
 
 ```bash
 # Check kernel version (must be supported by NVIDIA drivers)
+
 kubectl debug node/<node-name> -it --image=ubuntu -- uname -r
 
 # Verify nodes have GPUs

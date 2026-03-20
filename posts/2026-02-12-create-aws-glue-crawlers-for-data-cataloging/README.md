@@ -50,6 +50,7 @@ For infrastructure-as-code workflows, create crawlers programmatically:
 
 ```python
 # Create a Glue Crawler to catalog S3 data
+
 import boto3
 
 glue = boto3.client('glue', region_name='us-east-1')

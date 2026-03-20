@@ -20,6 +20,7 @@ This is the most basic naming rule. Every task must have a `name` field.
 
 ```yaml
 # Tasks without names - hard to read in output
+
 ---
 - hosts: webservers
   tasks:

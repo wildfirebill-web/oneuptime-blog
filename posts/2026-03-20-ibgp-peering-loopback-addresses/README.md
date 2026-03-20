@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, iBGP, Cisco IOS, Routing, Loopback, OSPF
+Tags: BGP, IBGP, Cisco IOS, Routing, Loopback, OSPF
 
 Description: Learn how to configure iBGP sessions using loopback addresses for stability, including updating the source interface and enabling OSPF reachability.
 
 ## Why Use Loopback Addresses for iBGP?
 
-When iBGP peers use physical interface addresses, the BGP session drops whenever that specific interface goes down—even if the routers are still reachable via another path. By sourcing iBGP sessions from loopback interfaces, the session survives as long as any path between the routers exists. Loopbacks are always up unless the router itself is down.
+When iBGP peers use physical interface addresses, the BGP session drops whenever that specific interface goes down-even if the routers are still reachable via another path. By sourcing iBGP sessions from loopback interfaces, the session survives as long as any path between the routers exists. Loopbacks are always up unless the router itself is down.
 
 ## Topology
 
@@ -24,7 +24,7 @@ All three routers are in AS 65001. OSPF provides reachability between loopbacks.
 
 On each router, create a loopback interface with a unique /32 address:
 
-```
+```text
 ! On R1
 R1(config)# interface Loopback0
 R1(config-if)# ip address 1.1.1.1 255.255.255.255
@@ -43,7 +43,7 @@ R3(config-if)# ip address 3.3.3.3 255.255.255.255
 
 The loopback addresses must be reachable via OSPF (or another IGP) before iBGP sessions can form:
 
-```
+```text
 ! On R1 - advertise loopback and connected interfaces
 R1(config)# router ospf 1
 R1(config-router)# network 1.1.1.1 0.0.0.0 area 0
@@ -54,7 +54,7 @@ R1(config-router)# network 10.0.12.0 0.0.0.3 area 0
 
 Verify OSPF reachability before proceeding:
 
-```
+```text
 R1# ping 2.2.2.2 source 1.1.1.1
 ```
 
@@ -62,7 +62,7 @@ R1# ping 2.2.2.2 source 1.1.1.1
 
 The critical addition for loopback-based peering is the `update-source` command, which tells BGP to source the TCP session from the loopback:
 
-```
+```text
 ! On R1 - peer with R2 and R3
 R1(config)# router bgp 65001
 R1(config-router)# bgp router-id 1.1.1.1
@@ -72,7 +72,7 @@ R1(config-router)# neighbor 3.3.3.3 remote-as 65001
 R1(config-router)# neighbor 3.3.3.3 update-source Loopback0
 ```
 
-```
+```text
 ! On R2 - peer with R1 and R3
 R2(config)# router bgp 65001
 R2(config-router)# bgp router-id 2.2.2.2
@@ -84,7 +84,7 @@ R2(config-router)# neighbor 3.3.3.3 update-source Loopback0
 
 ## Step 4: Verify Sessions Are Established
 
-```
+```text
 R1# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
@@ -94,9 +94,9 @@ Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/Pfx
 
 ## Step 5: Note the iBGP Next-Hop Behavior
 
-iBGP does not change the next-hop attribute when forwarding routes between iBGP peers. If R1 learns a prefix from an eBGP peer with next-hop `203.0.113.1`, R2 will also see `203.0.113.1` as the next-hop—which may not be reachable from R2 unless you advertise it. Use `next-hop-self` to fix this:
+iBGP does not change the next-hop attribute when forwarding routes between iBGP peers. If R1 learns a prefix from an eBGP peer with next-hop `203.0.113.1`, R2 will also see `203.0.113.1` as the next-hop-which may not be reachable from R2 unless you advertise it. Use `next-hop-self` to fix this:
 
-```
+```text
 ! R1 sets itself as next-hop for all iBGP peers
 R1(config-router)# neighbor 2.2.2.2 next-hop-self
 R1(config-router)# neighbor 3.3.3.3 next-hop-self

@@ -16,6 +16,7 @@ Set up a Prometheus scrape of the Collector's internal metrics and graph the mem
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
 - job_name: 'otel-collector'
   scrape_interval: 30s

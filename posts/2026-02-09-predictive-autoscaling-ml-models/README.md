@@ -29,6 +29,7 @@ Install dependencies:
 
 ```python
 # requirements.txt
+
 prophet==1.1.5
 pandas==2.2.0
 prometheus-api-client==0.5.3

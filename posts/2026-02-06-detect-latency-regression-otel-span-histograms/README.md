@@ -42,6 +42,7 @@ Use the OpenTelemetry Collector's Span Metrics Connector to turn traces into his
 
 ```yaml
 # collector-config.yaml
+
 connectors:
   spanmetrics:
     histogram:

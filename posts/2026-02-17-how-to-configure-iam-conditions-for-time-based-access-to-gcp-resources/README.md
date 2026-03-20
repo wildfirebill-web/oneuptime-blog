@@ -29,6 +29,7 @@ Restrict access to Monday through Friday, 9 AM to 5 PM Eastern:
 
 ```bash
 # Grant role only during business hours (Mon-Fri, 9-17 ET)
+
 gcloud projects add-iam-policy-binding my-project \
     --member="group:support-team@example.com" \
     --role="roles/compute.instanceAdmin.v1" \

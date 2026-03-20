@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tcpdump, Linux, Network Interface, Packet Capture, Networking
+Tags: tcpdump, Linux, Network Interfaces, Packet Capture, Networking
 
 Description: Use tcpdump's -i flag to capture packets on a specific network interface, including VPN tunnels, bridges, loopback, and multiple interfaces simultaneously.
 
-On multi-interface systems — servers with multiple NICs, VPN tunnels, or Docker networking — specifying the right interface is critical for capturing the traffic you need.
+On multi-interface systems - servers with multiple NICs, VPN tunnels, or Docker networking - specifying the right interface is critical for capturing the traffic you need.
 
 ## List Available Interfaces
 
 ```bash
 # List all interfaces tcpdump can capture on
+
 sudo tcpdump -D
 
 # Output:
@@ -131,4 +132,4 @@ ping 10.200.0.1   # IP inside VPN
 # wg0: shows plain ICMP packets
 ```
 
-Specifying the correct interface is the foundation of effective tcpdump usage — capturing on the wrong interface shows either encrypted packets (useless) or no traffic at all.
+Specifying the correct interface is the foundation of effective tcpdump usage - capturing on the wrong interface shows either encrypted packets (useless) or no traffic at all.

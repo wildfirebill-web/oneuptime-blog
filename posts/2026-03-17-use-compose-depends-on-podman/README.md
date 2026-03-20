@@ -18,6 +18,7 @@ Multi-service applications often require specific startup ordering. A web applic
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

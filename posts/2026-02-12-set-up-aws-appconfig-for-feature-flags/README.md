@@ -33,6 +33,7 @@ AppConfig uses a three-level hierarchy: Application, Environment, and Configurat
 
 ```bash
 # Create an AppConfig application
+
 aws appconfig create-application \
     --name "my-web-app" \
     --description "Feature flags for the web application"

@@ -6,12 +6,13 @@ Tags: nftables, iptables, Linux, Migration, Firewall, Translation
 
 Description: Use iptables-translate and iptables-restore-translate to convert existing iptables rules to nftables syntax, enabling a smooth migration to the modern firewall framework.
 
-The `iptables-translate` tool converts iptables rule syntax to equivalent nftables syntax. This makes migration feasible even with complex rulesets — you don't need to rewrite rules from scratch.
+The `iptables-translate` tool converts iptables rule syntax to equivalent nftables syntax. This makes migration feasible even with complex rulesets - you don't need to rewrite rules from scratch.
 
 ## Install Translation Tools
 
 ```bash
 # iptables-translate comes with iptables (usually pre-installed)
+
 which iptables-translate
 # /usr/sbin/iptables-translate
 
@@ -106,7 +107,7 @@ iptables-translate -A INPUT -p tcp --dport 22 -j LOG --log-prefix "SSH: "
 
 ```bash
 #!/bin/bash
-# migrate-to-nftables.sh — Phased migration
+# migrate-to-nftables.sh - Phased migration
 
 # Step 1: Save current iptables rules
 sudo iptables-save > /tmp/iptables-backup.txt
@@ -133,4 +134,4 @@ sudo systemctl enable nftables
 sudo systemctl disable iptables
 ```
 
-Note that `iptables-translate` doesn't always produce optimal nftables syntax — review the output and refactor using nftables-native features like sets and verdict maps where appropriate.
+Note that `iptables-translate` doesn't always produce optimal nftables syntax - review the output and refactor using nftables-native features like sets and verdict maps where appropriate.

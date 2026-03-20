@@ -22,6 +22,7 @@ The resulting Netplan file looks like:
 
 ```yaml
 # /etc/netplan/00-installer-config.yaml
+
 network:
   version: 2
   ethernets:

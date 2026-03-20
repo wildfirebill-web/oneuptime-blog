@@ -34,6 +34,7 @@ The Docker provider connects to the Docker daemon to manage resources. By defaul
 
 ```hcl
 # Configure Terraform to use the Docker provider
+
 terraform {
   required_providers {
     docker = {

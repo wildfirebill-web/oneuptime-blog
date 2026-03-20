@@ -26,6 +26,7 @@ To track the latest tag matching a SemVer range, use the `spec.ref.semver` field
 
 ```yaml
 # gitrepository-semver.yaml - Track the latest patch version of v1.x
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

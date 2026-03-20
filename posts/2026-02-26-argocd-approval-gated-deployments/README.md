@@ -90,6 +90,7 @@ Use Git branch protection as the approval gate. The production branch requires s
 
 ```yaml
 # GitHub branch protection for 'production' branch:
+
 # - Required reviewers: 2
 # - Required review from code owners
 # - Dismiss stale reviews

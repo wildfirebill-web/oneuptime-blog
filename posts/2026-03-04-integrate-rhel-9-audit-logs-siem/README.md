@@ -39,6 +39,7 @@ The audispd plugin framework ships with RHEL and can forward events in real time
 
 ```bash
 # Install the audisp remote plugin package
+
 sudo dnf install audispd-plugins -y
 ```
 

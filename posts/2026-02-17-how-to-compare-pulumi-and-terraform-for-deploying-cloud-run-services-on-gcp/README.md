@@ -30,6 +30,7 @@ Here is the Terraform code:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

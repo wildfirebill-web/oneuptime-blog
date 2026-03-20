@@ -24,6 +24,7 @@ Start by configuring the official PagerDuty Terraform provider.
 
 ```hcl
 # providers.tf
+
 # Configure Terraform with the PagerDuty provider
 terraform {
   required_version = ">= 1.0"

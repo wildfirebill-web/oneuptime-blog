@@ -34,6 +34,7 @@ The delivery policy for HTTP endpoints has four retry phases.
 
 ```bash
 # Set a custom delivery policy on an HTTP/HTTPS subscription
+
 aws sns set-subscription-attributes \
   --subscription-arn arn:aws:sns:us-east-1:123456789012:alerts:abc123 \
   --attribute-name DeliveryPolicy \

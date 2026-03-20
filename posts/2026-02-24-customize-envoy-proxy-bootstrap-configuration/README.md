@@ -283,6 +283,7 @@ If a sidecar is not starting correctly after bootstrap customization:
 
 ```bash
 # Check pilot-agent logs
+
 kubectl logs <pod-name> -c istio-proxy
 
 # Check for bootstrap generation errors

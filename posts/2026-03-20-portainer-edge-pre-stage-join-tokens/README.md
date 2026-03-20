@@ -25,6 +25,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # The Edge Key is generated when you create an edge environment in Portainer
+
 # It's displayed in the deployment command
 
 # Via API - create edge environment and get its key

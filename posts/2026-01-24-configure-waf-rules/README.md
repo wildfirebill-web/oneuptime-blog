@@ -169,6 +169,7 @@ flowchart TD
 
 ```hcl
 # waf.tf
+
 resource "aws_wafv2_web_acl" "main" {
   name        = "production-waf"
   description = "Production WAF rules"

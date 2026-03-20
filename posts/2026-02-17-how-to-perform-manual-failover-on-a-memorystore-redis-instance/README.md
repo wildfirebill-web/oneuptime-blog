@@ -29,6 +29,7 @@ Verify your instance is Standard Tier:
 
 ```bash
 # Check the instance tier and current zone placement
+
 gcloud redis instances describe my-redis \
   --region=us-central1 \
   --format="table(name,tier,currentLocationId,locationId,alternativeLocationId,state)"

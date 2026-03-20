@@ -60,6 +60,7 @@ Metrics backends use resource attributes as labels for aggregation. You can calc
 
 ```python
 # Python example showing resource attributes for metrics
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.resources import Resource
@@ -340,7 +341,7 @@ spec:
           value: "service.namespace=production,k8s.pod.name=$(K8S_POD_NAME),k8s.namespace.name=$(K8S_NAMESPACE),k8s.node.name=$(K8S_NODE_NAME)"
 ```
 
-### Resource Detectors
+Resource Detectors
 
 OpenTelemetry provides resource detectors that automatically discover attributes from the environment:
 
@@ -490,7 +491,7 @@ CUSTOM_RESOURCE_ATTRIBUTES = {
 
 Documentation prevents confusion and ensures consistent usage across teams.
 
-## Resource Attributes in Practice
+Resource Attributes in Practice
 
 Understanding resource attributes theoretically is one thing; using them effectively requires seeing them in action. Your observability platform leverages these attributes for filtering, grouping, and correlation. Well-configured resource attributes make the difference between quick troubleshooting and hours of frustration.
 

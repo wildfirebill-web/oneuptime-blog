@@ -44,6 +44,7 @@ Verify Typha is running and how many replicas exist:
 
 ```bash
 # Check Typha deployment
+
 kubectl get deployment -n calico-system calico-typha
 
 # View Typha pods and their node placement

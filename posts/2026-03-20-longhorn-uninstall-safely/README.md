@@ -1,4 +1,4 @@
-# How to Uninstall Longhorn Safely
+# How to Safely Uninstall Longhorn from Kubernetes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ Before uninstalling, back up critical volumes:
 
 ```bash
 # Trigger backup of all volumes to S3/NFS backup target
+
 # Via Longhorn UI: each volume > Create Backup
 # Or via API:
 for vol in $(kubectl get lhvolume -n longhorn-system -o name); do
@@ -126,6 +127,6 @@ done
 
 ## Best Practices
 
-- Never delete the `longhorn-system` namespace directly — always use the proper uninstall procedure.
+- Never delete the `longhorn-system` namespace directly - always use the proper uninstall procedure.
 - Verify all backups are accessible in the backup store before uninstalling.
 - After uninstalling, verify that node-local Longhorn data is deleted to reclaim disk space.

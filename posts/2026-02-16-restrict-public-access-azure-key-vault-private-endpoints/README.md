@@ -27,6 +27,7 @@ If you already have a Key Vault, skip to Step 2.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-keyvault \
   --location eastus

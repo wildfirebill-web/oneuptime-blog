@@ -16,6 +16,7 @@ Ansible uses a set of built-in variables that control how it connects to each ho
 
 ```ini
 # inventory.ini
+
 # Per-host connection parameters
 [webservers]
 web1.example.com ansible_host=10.0.1.10 ansible_port=22 ansible_user=deploy

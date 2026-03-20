@@ -24,6 +24,7 @@ Start by installing in-toto and generating keys for your build system functionar
 
 ```bash
 # Install in-toto
+
 pip3 install in-toto
 
 # Generate functionary keys for each CI/CD stage

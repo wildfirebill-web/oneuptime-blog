@@ -47,6 +47,7 @@ Enable BGP peering while keeping existing encapsulation as a fallback:
 
 ```bash
 # Enable BGP (if not already enabled)
+
 calicoctl patch bgpconfiguration default --type merge \
   --patch '{"spec":{"nodeToNodeMeshEnabled":true,"asNumber":64512}}'
 ```

@@ -511,6 +511,7 @@ class ContextFilter:
         return filter_func
 
 # Usage example
+
 search_engine = HybridSearchEngine(vector_engine, keyword_engine, scorer)
 
 # Add context-aware filters

@@ -26,6 +26,7 @@ This guide is meant to be run interactively alongside your cluster. Do not skip 
 
 ```bash
 # Create the demo namespace (optional, demo uses default)
+
 kubectl create -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/http-sw-app.yaml
 
 # Wait for all pods to be running

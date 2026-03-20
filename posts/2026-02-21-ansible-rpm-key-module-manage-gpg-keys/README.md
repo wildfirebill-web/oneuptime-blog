@@ -22,6 +22,7 @@ The `rpm_key` module has a straightforward interface. You provide a key source a
 
 ```yaml
 # Import the EPEL GPG key from the Fedora project
+
 - name: Import EPEL GPG key
   ansible.builtin.rpm_key:
     key: https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8

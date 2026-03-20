@@ -18,6 +18,7 @@ This collector config enables the internal metrics you need for volume tracking:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

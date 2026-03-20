@@ -18,7 +18,7 @@ Juniper Junos handles IPv6 Router Advertisements through the `protocols router-a
 
 ## Basic Router Advertisement Configuration
 
-```
+```text
 # Enable IPv6 Router Advertisements on ge-0/0/1 (LAN interface)
 
 set interfaces ge-0/0/1 unit 0 family inet6 address 2001:db8:1:1::1/64
@@ -26,6 +26,7 @@ set interfaces ge-0/0/1 unit 0 family inet6 address 2001:db8:1:1::1/64
 set protocols router-advertisement interface ge-0/0/1.0 prefix 2001:db8:1:1::/64
 
 # Set advertisement interval (in seconds)
+
 set protocols router-advertisement interface ge-0/0/1.0 max-advertisement-interval 100
 set protocols router-advertisement interface ge-0/0/1.0 min-advertisement-interval 30
 
@@ -35,7 +36,7 @@ set protocols router-advertisement interface ge-0/0/1.0 default-lifetime 1800
 
 ## Configuring Prefix Options
 
-```
+```text
 # Configure prefix with custom lifetimes
 set protocols router-advertisement interface ge-0/0/1.0 prefix 2001:db8:1:1::/64 valid-lifetime 86400
 set protocols router-advertisement interface ge-0/0/1.0 prefix 2001:db8:1:1::/64 preferred-lifetime 14400
@@ -49,7 +50,7 @@ set protocols router-advertisement interface ge-0/0/1.0 prefix 2001:db8:1:1::/64
 
 ## Setting M and O Flags
 
-```
+```text
 # M flag (managed) = 1: clients should use DHCPv6 for addresses
 set protocols router-advertisement interface ge-0/0/1.0 managed-configuration
 
@@ -61,7 +62,7 @@ set protocols router-advertisement interface ge-0/0/1.0 other-stateful-configura
 
 Junos supports RFC 8106 RDNSS/DNSSL on modern versions:
 
-```
+```text
 # Advertise DNS server via Router Advertisement
 set protocols router-advertisement interface ge-0/0/1.0 dns-server-address 2001:db8:1:1::53
 
@@ -71,7 +72,7 @@ set protocols router-advertisement interface ge-0/0/1.0 dns-server-address 2001:
 
 ## Full Configuration in Stanza Format
 
-```
+```text
 protocols {
     router-advertisement {
         interface ge-0/0/1.0 {
@@ -91,14 +92,14 @@ protocols {
 
 ## Suppressing RA on Specific Interfaces
 
-```
+```text
 # Suppress RAs on the WAN/uplink interface
 set protocols router-advertisement interface ge-0/0/0.0 no-advertisement
 ```
 
 ## Verifying Router Advertisement Configuration
 
-```
+```text
 # Show RA configuration
 show protocols router-advertisement
 
@@ -114,7 +115,7 @@ show ipv6 neighbors
 
 Sample output of `show ipv6 router-advertisement`:
 
-```
+```text
 Interface: ge-0/0/1.0
   Advertisement interval: 30 - 100 seconds
   Default lifetime: 1800 seconds

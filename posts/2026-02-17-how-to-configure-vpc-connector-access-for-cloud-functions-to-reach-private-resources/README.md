@@ -34,6 +34,7 @@ First, enable the Serverless VPC Access API:
 
 ```bash
 # Enable the required API
+
 gcloud services enable vpcaccess.googleapis.com
 ```
 

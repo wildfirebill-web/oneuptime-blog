@@ -31,6 +31,7 @@ flowchart TB
 
 ```dockerfile
 # BAD: Source code copied early invalidates dependency cache
+
 FROM node:20
 WORKDIR /app
 COPY . .                    # ← Any file change invalidates cache

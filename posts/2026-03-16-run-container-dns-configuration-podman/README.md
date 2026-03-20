@@ -22,6 +22,7 @@ By default, Podman copies the host's DNS configuration into the container:
 
 ```bash
 # Check the default DNS configuration inside a container
+
 podman run --rm alpine cat /etc/resolv.conf
 ```
 

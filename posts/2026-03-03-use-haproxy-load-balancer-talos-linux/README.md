@@ -51,6 +51,7 @@ graph TD
 
 ```bash
 # Install HAProxy
+
 sudo apt update
 sudo apt install haproxy -y
 

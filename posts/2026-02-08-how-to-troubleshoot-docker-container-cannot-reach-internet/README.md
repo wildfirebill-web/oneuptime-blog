@@ -16,6 +16,7 @@ Before diving into Docker, confirm the host machine itself can reach the interne
 
 ```bash
 # Test basic connectivity from the host
+
 ping -c 3 8.8.8.8
 
 # Test DNS resolution from the host

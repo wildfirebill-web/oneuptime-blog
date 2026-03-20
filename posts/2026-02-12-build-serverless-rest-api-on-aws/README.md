@@ -31,6 +31,7 @@ We'll use the Serverless Framework to manage everything. It handles packaging, d
 
 ```bash
 # Create the project
+
 mkdir serverless-api
 cd serverless-api
 npm init -y

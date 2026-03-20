@@ -135,6 +135,7 @@ kubectl patch deployment calico-typha -n calico-system --patch '{
 
 ```bash
 # Check topology spread
+
 kubectl get pods -n calico-system -l k8s-app=calico-typha -o custom-columns=NAME:.metadata.name,NODE:.spec.nodeName,ZONE:.metadata.labels.'topology\.kubernetes\.io/zone'
 
 # Check PDB

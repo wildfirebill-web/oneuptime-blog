@@ -57,6 +57,7 @@ The following command creates a topic with ordering enabled using the gcloud CLI
 
 ```bash
 # Create a topic with message ordering enabled
+
 # The --message-ordering-enabled flag is required for ordering key support
 gcloud pubsub topics create orders-topic \
     --message-ordering-enabled \

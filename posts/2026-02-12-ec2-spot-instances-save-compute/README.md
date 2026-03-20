@@ -48,6 +48,7 @@ This command launches a single Spot Instance with a max price cap:
 
 ```bash
 # Launch a Spot Instance
+
 aws ec2 run-instances \
   --image-id ami-0abcdef1234567890 \
   --instance-type m5.large \

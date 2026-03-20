@@ -86,6 +86,7 @@ resource "oci_database_autonomous_database" "autoscale" {
 
 ```hcl
 # Allow access from specific IPs (private access endpoint is more secure)
+
 resource "oci_database_autonomous_database" "secure" {
   compartment_id           = var.compartment_id
   display_name             = "secure-atp"

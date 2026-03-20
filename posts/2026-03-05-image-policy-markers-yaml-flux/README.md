@@ -16,6 +16,7 @@ An image policy marker is a YAML inline comment that tells the Flux image automa
 
 ```yaml
 # {"$imagepolicy": "namespace:policy-name"}
+
 ```
 
 When Flux processes your manifests, it looks for these comments and replaces the image reference on the same line with the latest image resolved by the referenced ImagePolicy.

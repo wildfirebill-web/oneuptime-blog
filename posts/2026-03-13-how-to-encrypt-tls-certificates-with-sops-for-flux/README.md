@@ -243,6 +243,7 @@ When certificates expire and need renewal, update the encrypted secret:
 
 ```bash
 # Decrypt the existing secret
+
 sops --decrypt tls-secret.yaml > /tmp/tls-decrypted.yaml
 
 # Replace certificate and key content in /tmp/tls-decrypted.yaml

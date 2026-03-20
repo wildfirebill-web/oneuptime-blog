@@ -191,6 +191,7 @@ CREATE POLICY tenant_isolation ON projects
 
 ```python
 # Python example: Set tenant context for each request
+
 import psycopg2
 from flask import Flask, g, request
 

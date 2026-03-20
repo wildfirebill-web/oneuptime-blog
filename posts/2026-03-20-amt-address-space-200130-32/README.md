@@ -1,4 +1,4 @@
-# How to Understand the AMT Address Space (2001:3::/32)
+# How to Understand the AMT Address Space (2001:3::/32) - 200130
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,8 +28,8 @@ graph LR
 
 ## AMT Address Format
 
-```
-2001:3::/32 — AMT prefix
+```text
+2001:3::/32 - AMT prefix
   Allocated by IANA for AMT use
   Not for general routing
 
@@ -60,6 +60,7 @@ print(is_amt_address("2001:3::c000:1"))  # True (relay at 192.0.0.1)
 
 ```bash
 # Install amtrelayd (AMT relay daemon)
+
 sudo apt-get install amtrelayd
 
 # Configure AMT relay

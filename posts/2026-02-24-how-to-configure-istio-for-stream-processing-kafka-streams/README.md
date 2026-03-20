@@ -243,7 +243,7 @@ spec:
 
 This ensures the Envoy proxy is fully initialized before your Kafka Streams application starts connecting to brokers.
 
-## Resource Limits for the Sidecar
+Resource Limits for the Sidecar
 
 Stream processing applications are already resource-intensive. Keep the sidecar's footprint small:
 
@@ -269,6 +269,7 @@ Even though Kafka traffic is TCP, Istio still generates useful metrics:
 
 ```bash
 # Check TCP connections from stream processors
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'sum(istio_tcp_connections_opened_total{source_workload_namespace="stream-processing"}) by (source_workload, destination_service)'
 

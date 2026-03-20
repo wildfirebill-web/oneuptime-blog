@@ -33,6 +33,7 @@ Transition to IA after 30 days of no access:
 
 ```bash
 # Enable lifecycle transition to IA after 30 days
+
 aws efs put-lifecycle-configuration \
   --file-system-id "fs-0abc123def456789" \
   --lifecycle-policies '[

@@ -22,6 +22,7 @@ This playbook selects the right config file based on the OS:
 
 ```yaml
 # playbook.yml - Select config file based on OS
+
 ---
 - name: Deploy OS-specific configuration
   hosts: all

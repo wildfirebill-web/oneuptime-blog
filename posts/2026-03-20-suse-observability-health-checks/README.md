@@ -31,6 +31,7 @@ SUSE Observability consists of:
 
 ```bash
 # Add the SUSE Observability Helm repository
+
 helm repo add suse-observability https://charts.rancher.com/server-charts/prime/suse-observability
 helm repo update
 

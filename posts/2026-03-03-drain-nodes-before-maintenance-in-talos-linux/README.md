@@ -27,6 +27,7 @@ The standard drain command for a Talos Linux node:
 
 ```bash
 # Drain a node before maintenance
+
 kubectl drain <node-name> --ignore-daemonsets --delete-emptydir-data
 ```
 

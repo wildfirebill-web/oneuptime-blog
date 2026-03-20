@@ -44,6 +44,7 @@ Keep in mind that a shorter TTL means more frequent index downloads.
 
 ```yaml
 # clusters/my-cluster/flux-system/source-controller-cache-ttl-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

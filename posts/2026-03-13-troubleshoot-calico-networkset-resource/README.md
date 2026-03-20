@@ -25,6 +25,7 @@ Calico NetworkSet troubleshooting addresses scenarios where IP sets either aren'
 
 ```bash
 # Verify the IP is actually in the NetworkSet
+
 calicoctl get globalnetworkset blocked-ips -o yaml | grep "nets:" -A20
 
 # Is the IP in the right format? (CIDR notation required)

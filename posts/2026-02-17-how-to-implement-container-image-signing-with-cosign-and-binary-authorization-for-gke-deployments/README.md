@@ -40,6 +40,7 @@ Cosign uses key pairs for signing. You can store the keys in Google Cloud KMS fo
 
 ```bash
 # Create a KMS keyring and key for image signing
+
 gcloud kms keyrings create image-signing \
     --location=global
 

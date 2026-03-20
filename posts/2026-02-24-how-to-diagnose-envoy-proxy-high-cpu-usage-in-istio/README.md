@@ -16,6 +16,7 @@ First, verify that the CPU usage is actually abnormal:
 
 ```bash
 # Check current CPU usage
+
 kubectl top pod my-service-pod -n my-namespace --containers
 
 # Compare with other instances of the same service

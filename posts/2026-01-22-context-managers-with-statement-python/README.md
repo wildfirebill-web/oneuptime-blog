@@ -20,6 +20,7 @@ Python's context managers handle setup and teardown automatically. They are the 
 
 ```python
 # Without context manager - error prone
+
 f = open('data.txt', 'r')
 try:
     content = f.read()

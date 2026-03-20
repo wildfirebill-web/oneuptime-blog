@@ -34,6 +34,7 @@ On production servers that do not need debugging, disabling core dumps is often 
 
 ```yaml
 # disable-coredumps.yml - Disable core dumps for security compliance
+
 ---
 - name: Disable core dumps on production servers
   hosts: production

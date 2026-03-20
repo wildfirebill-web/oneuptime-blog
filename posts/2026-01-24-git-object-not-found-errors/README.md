@@ -40,6 +40,7 @@ These are the typical error patterns you'll encounter:
 
 ```bash
 # Missing blob (file content)
+
 error: object file .git/objects/ab/cdef1234567890 is missing
 
 # Missing tree (directory structure)

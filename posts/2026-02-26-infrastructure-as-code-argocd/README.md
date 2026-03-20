@@ -76,6 +76,7 @@ Then manage providers and infrastructure through additional Applications:
 
 ```yaml
 # Provider installation
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

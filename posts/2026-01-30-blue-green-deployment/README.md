@@ -37,6 +37,7 @@ First, define the two target groups that will represent our blue and green envir
 
 ```hcl
 # infrastructure/target-groups.tf
+
 # Define target groups for blue and green environments
 
 resource "aws_lb_target_group" "blue" {

@@ -18,6 +18,7 @@ Here is what a typical bad Dockerfile looks like.
 
 ```dockerfile
 # Bad example - do not use this in production
+
 FROM node:20
 WORKDIR /app
 COPY . .

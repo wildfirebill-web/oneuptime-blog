@@ -244,6 +244,7 @@ Policy tags are organized in taxonomies. Think of a taxonomy as a classification
 # policy_tags.tf - Data Catalog taxonomy for column-level security
 
 # Create a taxonomy to organize policy tags
+
 resource "google_data_catalog_taxonomy" "security" {
   project      = var.project_id
   region       = lower(var.region)

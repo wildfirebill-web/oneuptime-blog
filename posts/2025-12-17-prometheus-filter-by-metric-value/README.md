@@ -27,6 +27,7 @@ PromQL supports standard comparison operators that filter time series:
 
 ```promql
 # CPU usage above 80%
+
 node_cpu_utilization > 0.8
 
 # Memory usage above 90%

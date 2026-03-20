@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Google Deployment Manager, GCP, Comparison, Infrastructure as Code, DevOps
 
-Description: Compare OpenTofu and Google Cloud Deployment Manager for GCP infrastructure — their syntax, state management, and multi-cloud support — to choose the right IaC tool for Google Cloud.
+Description: Compare OpenTofu and Google Cloud Deployment Manager for GCP infrastructure - their syntax, state management, and multi-cloud support - to choose the right IaC tool for Google Cloud.
 
 ## Introduction
 
@@ -16,6 +16,7 @@ OpenTofu (HCL):
 
 ```hcl
 # OpenTofu: GCP resources
+
 resource "google_compute_network" "main" {
   name                    = "prod-vpc"
   auto_create_subnetworks = false
@@ -113,7 +114,7 @@ OpenTofu remains the better choice when you don't want a Kubernetes dependency f
 
 ## OpenTofu Advantages for GCP
 
-**Multi-cloud** — Manage GCP alongside AWS and Azure:
+**Multi-cloud** - Manage GCP alongside AWS and Azure:
 
 ```hcl
 provider "google" { project = var.gcp_project }
@@ -138,7 +139,7 @@ module "gke" {
 }
 ```
 
-**Unified security scanning** — Checkov includes GCP checks:
+**Unified security scanning** - Checkov includes GCP checks:
 
 ```bash
 checkov -d . --framework terraform --check CKV_GCP_62,CKV_GCP_65,CKV_GCP_79

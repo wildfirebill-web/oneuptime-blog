@@ -49,6 +49,7 @@ The simplest way to create a volume is with the `docker volume create` command.
 
 ```bash
 # Create a named volume for PostgreSQL data
+
 # Named volumes are easier to reference than anonymous volumes
 docker volume create postgres_data
 ```

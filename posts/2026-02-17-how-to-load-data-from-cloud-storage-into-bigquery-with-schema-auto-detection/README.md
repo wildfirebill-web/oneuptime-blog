@@ -26,6 +26,7 @@ Here is the simplest way to load a CSV file with auto-detection using the bq CLI
 
 ```bash
 # Load a CSV file with automatic schema detection
+
 bq load \
   --autodetect \
   --source_format=CSV \

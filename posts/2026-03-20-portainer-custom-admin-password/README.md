@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, password, security, setup, automation
+Tags: Portainer, Passwords, Security, Setup, Automation
 
 Description: A guide to setting a custom admin password for Portainer on first launch using multiple methods including the UI, CLI flags, and environment variables.
 
@@ -29,6 +29,7 @@ Set the password directly in the docker run command (useful for automated deploy
 
 ```bash
 # Step 1: Generate a bcrypt hash of your password
+
 # Method A: Using htpasswd
 docker run --rm httpd:2.4-alpine \
   htpasswd -nbB admin 'YourStrongPassword123!' \
@@ -154,11 +155,11 @@ echo "Portainer deployed with pre-configured admin password"
 
 ## Security Best Practices
 
-1. **Never use default passwords** — always set a strong, unique password
-2. **Use a password manager** — store Portainer admin credentials securely
-3. **Enable 2FA** — Portainer BE supports TOTP-based two-factor authentication
-4. **Rotate passwords regularly** — change admin passwords quarterly
-5. **Use LDAP/AD** — for team environments, use LDAP instead of local accounts
+1. **Never use default passwords** - always set a strong, unique password
+2. **Use a password manager** - store Portainer admin credentials securely
+3. **Enable 2FA** - Portainer BE supports TOTP-based two-factor authentication
+4. **Rotate passwords regularly** - change admin passwords quarterly
+5. **Use LDAP/AD** - for team environments, use LDAP instead of local accounts
 
 ## Conclusion
 

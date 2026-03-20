@@ -27,6 +27,7 @@ AWS App Mesh integrates natively with ECS and EKS. Let's build a mesh for an ECS
 
 ```hcl
 # mesh.tf - App Mesh configuration
+
 resource "aws_appmesh_mesh" "main" {
   name = "${var.project_name}-mesh"
 

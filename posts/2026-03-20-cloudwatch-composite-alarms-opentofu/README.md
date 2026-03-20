@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, AWS, CloudWatch, Composite Alarms, Monitoring, Alert Fatigue, Infrastructure as Code
 
-Description: Learn how to create CloudWatch Composite Alarms with OpenTofu to combine multiple metric alarms with boolean logic, reducing alert fatigue by only notifying when multiple conditions are met simultaneously.
+Description: Learn how to create CloudWatch Composite Alarms with OpenTofu to combine multiple metric alarms with boolean logic, reducing alert fatigue by only notifying when multiple conditions are met...
 
 ## Introduction
 
-CloudWatch Composite Alarms use logical (AND, OR, NOT) combinations of other alarms to reduce noise. Instead of being paged for every individual metric spike, a composite alarm can require multiple signals—like high CPU AND high error rate simultaneously—before triggering a notification. This dramatically reduces false positives in busy production environments.
+CloudWatch Composite Alarms use logical (AND, OR, NOT) combinations of other alarms to reduce noise. Instead of being paged for every individual metric spike, a composite alarm can require multiple signals-like high CPU AND high error rate simultaneously-before triggering a notification. This dramatically reduces false positives in busy production environments.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ CloudWatch Composite Alarms use logical (AND, OR, NOT) combinations of other ala
 
 ```hcl
 # Individual metric alarms that will feed into composite alarms
+
 resource "aws_cloudwatch_metric_alarm" "lambda_errors" {
   alarm_name          = "${var.project_name}-lambda-errors"
   comparison_operator = "GreaterThanThreshold"
@@ -142,4 +143,4 @@ aws cloudwatch describe-alarms \
 
 ## Conclusion
 
-Composite alarms are the most effective tool for reducing alert fatigue in AWS environments. Use AND conditions to create high-confidence critical alerts that only fire when multiple symptoms appear together, and OR conditions for broad coverage warning alerts. Nested composite alarms enable hierarchical alert structures—team-level alerts can feed into service-level composites for executive dashboards.
+Composite alarms are the most effective tool for reducing alert fatigue in AWS environments. Use AND conditions to create high-confidence critical alerts that only fire when multiple symptoms appear together, and OR conditions for broad coverage warning alerts. Nested composite alarms enable hierarchical alert structures-team-level alerts can feed into service-level composites for executive dashboards.

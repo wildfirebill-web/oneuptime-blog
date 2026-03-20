@@ -20,13 +20,14 @@ Scaling from a handful of edge devices to thousands introduces challenges in dep
 
 At thousands of devices, the way your edge agents communicate with Portainer matters. Portainer supports two connectivity modes:
 
-1. **Standard (direct)** — Portainer connects to the agent. Requires the agent to be reachable.
-2. **Edge (async polling)** — The agent polls Portainer at intervals. Works behind NAT/firewalls and with intermittent connectivity.
+1. **Standard (direct)** - Portainer connects to the agent. Requires the agent to be reachable.
+2. **Edge (async polling)** - The agent polls Portainer at intervals. Works behind NAT/firewalls and with intermittent connectivity.
 
 For large fleets, **Edge mode with async polling** is recommended.
 
-```
+```text
 # Portainer Edge Agent polling interval (set in Portainer UI or via env var)
+
 # Default: 5 seconds
 # For large fleets, increase to reduce server load:
 EDGE_POLL_FREQUENCY=30  # seconds
@@ -123,7 +124,7 @@ services:
 
 On the Portainer server, tune polling intervals to prevent thundering herd problems:
 
-```
+```text
 # In Portainer Settings > Edge Compute:
 # Edge agent default poll frequency: 30s (for large fleets)
 # Edge agent check-in interval: 60s
@@ -160,11 +161,11 @@ For zero-downtime updates across thousands of devices, use Edge Group targeting:
 
 ## Best Practices
 
-- **Never deploy directly to all devices at once** — use staged rollouts through group targeting.
-- **Keep images small** — bandwidth is precious on edge devices with metered connections.
+- **Never deploy directly to all devices at once** - use staged rollouts through group targeting.
+- **Keep images small** - bandwidth is precious on edge devices with metered connections.
 - **Pre-pull images** using Portainer's pre-pull feature before activating the new stack.
-- **Automate health checks** — use container healthchecks in your compose files.
-- **Document your tagging taxonomy** — consistency is critical at scale.
+- **Automate health checks** - use container healthchecks in your compose files.
+- **Document your tagging taxonomy** - consistency is critical at scale.
 
 ## Conclusion
 

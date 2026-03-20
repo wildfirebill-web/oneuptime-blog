@@ -35,6 +35,7 @@ Before upgrading, thoroughly review the release notes for every minor version be
 
 ```bash
 # Check your current Flux version
+
 flux version
 
 # View the installed component versions

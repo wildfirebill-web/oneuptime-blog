@@ -41,6 +41,7 @@ Start by listing all GitRepository sources and the Kustomizations that reference
 
 ```bash
 # List all GitRepository sources
+
 flux get sources git -A
 
 # List all Kustomizations and their source references

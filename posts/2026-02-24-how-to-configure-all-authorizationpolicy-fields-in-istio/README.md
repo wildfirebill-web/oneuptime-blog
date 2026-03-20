@@ -153,6 +153,7 @@ The `provider` field is only used with `action: CUSTOM`. The `name` references a
 
 ```yaml
 # In MeshConfig
+
 extensionProviders:
   - name: my-ext-authz
     envoyExtAuthzGrpc:

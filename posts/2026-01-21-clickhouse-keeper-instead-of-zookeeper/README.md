@@ -262,6 +262,7 @@ spec:
 
 ```bash
 # 1. Check ZooKeeper data size
+
 echo "stat" | nc zookeeper-1 2181
 
 # 2. Backup ZooKeeper data

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, support, diagnostics, troubleshooting, bug-report
+Tags: Portainer, Support, Diagnostics, Troubleshooting, Bug-report
 
 Description: A guide to generating a Portainer support bundle for submitting to the Portainer team or for self-service diagnostics.
 
@@ -39,6 +39,7 @@ PORTAINER_URL="https://portainer.example.com:9443"
 TOKEN="your-admin-token"
 
 # Download support bundle (BE)
+
 curl -X GET \
   "${PORTAINER_URL}/api/support/bundle" \
   -H "Authorization: Bearer ${TOKEN}" \

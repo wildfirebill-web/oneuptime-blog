@@ -12,7 +12,7 @@ Retail organizations are increasingly deploying software at the network edge: po
 
 ## Retail Edge Architecture
 
-```
+```text
 Central Portainer Server (Data Center / Cloud)
     |
     | (Portainer Edge Tunnel - no inbound firewall rules needed)
@@ -28,6 +28,7 @@ Store Edge Nodes (Raspberry Pi 4 or x86 mini-PCs)
 
 ```bash
 # Central Portainer deployment with Edge agent support
+
 docker run -d \
   --name portainer \
   --restart=always \

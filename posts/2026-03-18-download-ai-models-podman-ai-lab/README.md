@@ -20,6 +20,7 @@ Before downloading models, ensure the AI Lab extension is installed and your Pod
 
 ```bash
 # Verify Podman is running
+
 podman info --format '{{.Version.Version}}'
 
 # Check available disk space (models can be 2-10GB each)

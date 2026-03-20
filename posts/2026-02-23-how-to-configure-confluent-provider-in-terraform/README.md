@@ -30,6 +30,7 @@ This guide covers setting up the provider, creating Kafka clusters, managing top
 
 ```hcl
 # versions.tf - Declare the Confluent provider
+
 terraform {
   required_version = ">= 1.0"
 

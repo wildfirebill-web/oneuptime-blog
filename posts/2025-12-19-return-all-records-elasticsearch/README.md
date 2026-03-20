@@ -444,6 +444,7 @@ def stream_all_documents(index):
         yield doc
 
 # Process documents without loading all into memory
+
 for doc in stream_all_documents('products'):
     process_document(doc)  # Your processing logic
 ```

@@ -42,6 +42,7 @@ The most common cause is trying to execute a file without execute permissions:
 
 ```bash
 # Error message
+
 OCI runtime create failed: ... exec: "/app/start.sh": permission denied
 
 # Check file permissions in the image

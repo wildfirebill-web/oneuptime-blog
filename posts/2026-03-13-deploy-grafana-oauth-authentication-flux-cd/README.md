@@ -37,6 +37,7 @@ Store the OAuth client secret as a Kubernetes Secret encrypted with SOPS.
 
 ```yaml
 # clusters/my-cluster/grafana/oauth-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

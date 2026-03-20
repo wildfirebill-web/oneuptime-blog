@@ -37,6 +37,7 @@ The setup is straightforward. Create one topic and multiple subscriptions:
 
 ```bash
 # Create the shared topic
+
 gcloud pubsub topics create order-events
 
 # Create independent subscriptions for each consumer

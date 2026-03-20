@@ -20,6 +20,7 @@ Cloud Armor integrates with the external Application Load Balancer and provides 
 
 ```bash
 # Create a Cloud Armor security policy for geo-based filtering
+
 gcloud compute security-policies create geo-policy \
     --description="Geo-location based access control"
 ```

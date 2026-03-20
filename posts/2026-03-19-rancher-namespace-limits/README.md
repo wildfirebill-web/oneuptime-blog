@@ -29,6 +29,7 @@ Check what limits are currently applied to a namespace:
 
 ```bash
 # View ResourceQuota in a namespace
+
 kubectl get resourcequota -n <namespace-name> -o yaml
 
 # View LimitRange in a namespace

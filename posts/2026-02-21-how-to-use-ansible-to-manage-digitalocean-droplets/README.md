@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Install the DigitalOcean collection
+
 ansible-galaxy collection install community.digitalocean
 
 # Install Python dependencies

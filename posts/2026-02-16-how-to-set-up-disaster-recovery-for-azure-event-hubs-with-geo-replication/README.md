@@ -47,6 +47,7 @@ graph TB
 
 ```bash
 # Create the primary namespace in East US
+
 az eventhubs namespace create \
     --name evh-primary-eastus \
     --resource-group rg-evh-dr \

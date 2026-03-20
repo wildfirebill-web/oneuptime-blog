@@ -53,6 +53,7 @@ Controls the appearance of application windows. Ubuntu uses Yaru by default. Thi
 
 ```bash
 # Install theme from package (when available)
+
 sudo apt install gnome-themes-extra
 
 # Or manually install a downloaded theme

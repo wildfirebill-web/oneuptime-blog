@@ -16,6 +16,7 @@ APT provides two equivalent flags for simulation:
 
 ```bash
 # These two are identical in behavior
+
 sudo apt install --dry-run nginx
 sudo apt install --simulate nginx
 

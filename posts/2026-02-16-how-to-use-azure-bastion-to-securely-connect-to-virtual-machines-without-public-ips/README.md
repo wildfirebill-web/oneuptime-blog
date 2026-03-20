@@ -58,6 +58,7 @@ If your virtual network does not already have a `AzureBastionSubnet`:
 
 ```bash
 # Add the AzureBastionSubnet to your existing virtual network
+
 az network vnet subnet create \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

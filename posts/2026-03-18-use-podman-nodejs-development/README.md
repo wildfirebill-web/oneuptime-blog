@@ -22,6 +22,7 @@ The official Node.js images come in several variants:
 
 ```bash
 # Full image - Debian-based, includes build tools for native modules
+
 podman pull docker.io/library/node:20
 
 # Slim image - smaller Debian-based, no build tools

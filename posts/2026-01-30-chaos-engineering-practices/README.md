@@ -95,6 +95,7 @@ class ChaosExperiment:
 
 
 # Example: Create a latency injection experiment
+
 def create_database_latency_experiment() -> ChaosExperiment:
     """
     Test how your service handles slow database responses.

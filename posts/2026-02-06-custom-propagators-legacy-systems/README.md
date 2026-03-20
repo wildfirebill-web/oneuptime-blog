@@ -62,6 +62,7 @@ from opentelemetry.trace import NonRecordingSpan, SpanContext, TraceFlags
 import hashlib
 
 # Header name used by the legacy system
+
 _REQUEST_ID_HEADER = "X-Request-Id"
 
 

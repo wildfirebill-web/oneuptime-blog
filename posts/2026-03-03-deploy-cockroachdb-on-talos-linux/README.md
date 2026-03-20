@@ -27,6 +27,7 @@ CockroachDB was built from the ground up for Kubernetes. It handles its own repl
 
 ```yaml
 # cockroachdb-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

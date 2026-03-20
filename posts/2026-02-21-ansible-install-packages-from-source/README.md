@@ -18,6 +18,7 @@ Most source installations follow the classic `./configure && make && make instal
 
 ```yaml
 # Generic pattern for building software from source
+
 - name: Install build dependencies
   ansible.builtin.apt:
     name:

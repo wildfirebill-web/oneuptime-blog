@@ -26,6 +26,7 @@ When YAML interprets a template result as the wrong type:
 
 ```yaml
 # Problem: YAML auto-detects 'true' as boolean
+
 some_var: "{{ result }}"  # If result is 'true', YAML makes it a boolean
 
 # Fix: Force string type with the string filter

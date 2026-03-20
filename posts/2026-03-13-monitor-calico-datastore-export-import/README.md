@@ -16,6 +16,7 @@ Monitoring datastore export operations ensures backups are being created on sche
 
 ```bash
 # Export Calico datastore (backup or migration)
+
 calicoctl datastore migrate export > calico-backup-$(date +%Y%m%d).yaml
 
 # Verify export content

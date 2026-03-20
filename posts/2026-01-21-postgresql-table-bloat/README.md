@@ -71,6 +71,7 @@ VACUUM FULL users;
 
 ```bash
 # Install pg_repack
+
 sudo apt install postgresql-16-repack
 
 # Repack table without locking

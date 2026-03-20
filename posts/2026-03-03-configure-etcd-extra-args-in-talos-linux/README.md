@@ -18,6 +18,7 @@ etcd settings are configured under `cluster.etcd` in the Talos machine configura
 
 ```yaml
 # Basic etcd extra args configuration
+
 cluster:
   etcd:
     extraArgs:

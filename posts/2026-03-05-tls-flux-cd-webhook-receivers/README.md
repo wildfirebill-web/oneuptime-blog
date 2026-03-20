@@ -24,6 +24,7 @@ Generate a TLS certificate for the webhook receiver. For production, use cert-ma
 
 ```yaml
 # cert-manager-certificate.yaml
+
 # Use cert-manager to provision a TLS certificate for the webhook receiver
 apiVersion: cert-manager.io/v1
 kind: Certificate

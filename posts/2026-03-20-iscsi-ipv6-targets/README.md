@@ -14,6 +14,7 @@ iSCSI (Internet Small Computer Systems Interface) transports SCSI commands over 
 
 ```bash
 # Install targetcli (Linux LIO target)
+
 apt-get install -y targetcli-fb    # Debian/Ubuntu
 dnf install -y targetcli           # RHEL/CentOS
 
@@ -162,4 +163,4 @@ iscsiadm -m session -s
 
 ## Conclusion
 
-iSCSI works over IPv6 by configuring target portals with IPv6 addresses (using `ip_address=::` or a specific IPv6 address) in targetcli, and connecting initiators with bracket-notation portal addresses (`[2001:db8::10]:3260`). Discovery, login, and CHAP authentication work identically to IPv4 iSCSI. Use `/dev/disk/by-path/` entries in `/etc/fstab` with `_netdev` to ensure iSCSI disks are mounted only after network initialization. NFSv4-style IPv6 single-port operation makes iSCSI firewall rules straightforward — only TCP port 3260 needs to be permitted.
+iSCSI works over IPv6 by configuring target portals with IPv6 addresses (using `ip_address=::` or a specific IPv6 address) in targetcli, and connecting initiators with bracket-notation portal addresses (`[2001:db8::10]:3260`). Discovery, login, and CHAP authentication work identically to IPv4 iSCSI. Use `/dev/disk/by-path/` entries in `/etc/fstab` with `_netdev` to ensure iSCSI disks are mounted only after network initialization. NFSv4-style IPv6 single-port operation makes iSCSI firewall rules straightforward - only TCP port 3260 needs to be permitted.

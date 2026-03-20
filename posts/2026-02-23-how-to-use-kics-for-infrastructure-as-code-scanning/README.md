@@ -27,6 +27,7 @@ KICS has some characteristics that distinguish it from alternatives:
 
 ```bash
 # Docker (recommended for CI/CD)
+
 docker pull checkmarx/kics:latest
 
 # macOS with Homebrew

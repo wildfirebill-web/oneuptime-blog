@@ -16,6 +16,7 @@ When Ansible executes a task with `become: true`, it wraps the actual command in
 
 ```bash
 # What Ansible actually runs on the remote host
+
 sudo -H -S -n -u root /bin/sh -c 'echo BECOME-SUCCESS-randomstring; /usr/bin/python3 /home/deploy/.ansible/tmp/ansible-tmp-xxx/AnsiballZ_command.py'
 ```
 

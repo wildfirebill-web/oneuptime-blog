@@ -8,7 +8,7 @@ Description: Learn how to identify, diagnose, and fix routing loops in IPv4 netw
 
 ## Introduction
 
-A routing loop occurs when packets continuously circulate between two or more routers without ever reaching their destination. Each router forwards the packet to the next, believing the destination is reachable via that path — creating an infinite cycle. The primary protection against endless loops is the IP TTL (Time to Live) field, which decrements at each hop and eventually triggers an ICMP Time Exceeded message.
+A routing loop occurs when packets continuously circulate between two or more routers without ever reaching their destination. Each router forwards the packet to the next, believing the destination is reachable via that path - creating an infinite cycle. The primary protection against endless loops is the IP TTL (Time to Live) field, which decrements at each hop and eventually triggers an ICMP Time Exceeded message.
 
 ## Identifying a Routing Loop
 
@@ -18,6 +18,7 @@ Run traceroute to identify the loop:
 
 ```bash
 # Linux traceroute
+
 traceroute 10.10.5.1
 
 # Output showing a loop (same IPs repeat):
@@ -38,9 +39,9 @@ mtr --report --report-cycles 10 10.10.5.1
 
 ## Common Causes
 
-1. **Misconfigured static routes** — two routers each have a static route pointing to the other for the same subnet
-2. **Redistribution loops** — routes redistributed between OSPF and BGP without proper filtering
-3. **Default route propagation** — all routers forward unknown traffic to a default route that loops back
+1. **Misconfigured static routes** - two routers each have a static route pointing to the other for the same subnet
+2. **Redistribution loops** - routes redistributed between OSPF and BGP without proper filtering
+3. **Default route propagation** - all routers forward unknown traffic to a default route that loops back
 
 ## Diagnosing with Routing Tables
 
@@ -102,4 +103,4 @@ ping -c 1 -t 5 10.10.5.1   # Linux
 
 ## Conclusion
 
-Routing loops are disruptive but diagnosable. Start with traceroute to spot the repeating pattern, then investigate the routing tables on the involved routers. Whether caused by misconfigured static routes or redistribution errors, the fix almost always involves correcting the next-hop or adding proper route filtering. Monitoring with tools like OneUptime can alert you when TTL-exceeded errors spike — an early warning sign of loop activity.
+Routing loops are disruptive but diagnosable. Start with traceroute to spot the repeating pattern, then investigate the routing tables on the involved routers. Whether caused by misconfigured static routes or redistribution errors, the fix almost always involves correcting the next-hop or adding proper route filtering. Monitoring with tools like OneUptime can alert you when TTL-exceeded errors spike - an early warning sign of loop activity.

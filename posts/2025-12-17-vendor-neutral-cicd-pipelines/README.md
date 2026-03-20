@@ -43,6 +43,7 @@ This example demonstrates a typical GitHub Actions workflow that relies heavily 
 
 ```yaml
 # GitHub Actions - platform-specific syntax
+
 # This workflow uses vendor-specific actions that won't work on other CI platforms
 name: Build and Test
 on: [push]  # Trigger on every push to the repository

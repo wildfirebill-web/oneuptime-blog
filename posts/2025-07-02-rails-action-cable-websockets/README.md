@@ -115,6 +115,7 @@ Action Cable is included with Rails by default. First, ensure you have the neces
 # Gemfile
 
 # Redis adapter for Action Cable pub/sub
+
 gem 'redis', '~> 5.0'
 
 # Optional: For Redis connection pooling

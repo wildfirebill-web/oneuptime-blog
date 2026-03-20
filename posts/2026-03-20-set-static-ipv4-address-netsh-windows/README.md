@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, netsh, IPv4, Static IP, Network Configuration
+Tags: Windows, Networking, Netsh, IPv4, Static IP, Network Configuration
 
 Description: Set a static IPv4 address, subnet mask, and default gateway on a Windows network adapter using the netsh command-line tool from an elevated command prompt.
 
@@ -73,6 +73,7 @@ Via PsExec or WinRM:
 
 ```powershell
 # Using PowerShell remoting
+
 Invoke-Command -ComputerName REMOTE-HOST -ScriptBlock {
     netsh interface ipv4 set address name="Ethernet" `
         source=static `

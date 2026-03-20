@@ -18,6 +18,7 @@ Before changing anything, measure your baseline:
 
 ```bash
 # Time a full plan
+
 time terraform plan 2>&1 | tail -5
 
 # Time just the refresh phase

@@ -30,6 +30,7 @@ If not already enabled, set up IAM Identity Center in your AWS organization.
 
 ```bash
 # Verify IAM Identity Center is enabled
+
 aws sso-admin list-instances \
   --query 'Instances[0].InstanceArn' \
   --output text

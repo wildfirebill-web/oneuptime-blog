@@ -29,6 +29,7 @@ First, let us create a dedicated Pub/Sub topic for SCC findings. You want a sepa
 
 ```bash
 # Create a Pub/Sub topic specifically for SCC findings
+
 gcloud pubsub topics create scc-findings-notifications \
   --project=my-project-id
 ```

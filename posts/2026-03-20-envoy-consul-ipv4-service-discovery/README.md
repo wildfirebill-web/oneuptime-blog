@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Consul, IPv4, Service Discovery, xDS, EDS, Configuration
+Tags: Envoy, Consul, IPv4, Service Discovery, XDS, EDS, Configuration
 
 Description: Learn how to integrate Envoy with HashiCorp Consul to dynamically discover IPv4 service endpoints using Consul's xDS API support.
 
@@ -26,7 +26,7 @@ graph TD
 ## Registering a Service in Consul
 
 ```json
-// service-a.json — register with Consul agent
+// service-a.json - register with Consul agent
 {
   "service": {
     "name": "service-a",
@@ -44,6 +44,7 @@ graph TD
 
 ```bash
 # Register the service with the local Consul agent
+
 curl --request PUT \
   --data @service-a.json \
   http://127.0.0.1:8500/v1/agent/service/register

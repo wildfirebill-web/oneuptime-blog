@@ -27,6 +27,7 @@ This guide provisions a production-grade Kubernetes cluster on AWS EC2 using CAP
 
 ```bash
 # Set environment variables for cluster generation
+
 export CLUSTER_NAME="production-workload-01"
 export KUBERNETES_VERSION="v1.29.2"
 export AWS_REGION="us-east-1"

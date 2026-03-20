@@ -75,6 +75,7 @@ The following command installs the notifications controller in your cluster.
 
 ```bash
 # For ArgoCD 2.4+, notifications are included by default
+
 # Verify the notifications controller is running
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-notifications-controller
 

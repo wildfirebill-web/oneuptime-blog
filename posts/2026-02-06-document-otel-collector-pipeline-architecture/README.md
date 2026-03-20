@@ -52,6 +52,7 @@ For every receiver, processor, and exporter, write a short entry explaining what
 
 ```yaml
 # Collector pipeline documentation
+
 # Last updated: 2026-02-06
 
 receivers:

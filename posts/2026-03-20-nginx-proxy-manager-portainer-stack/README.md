@@ -1,8 +1,8 @@
-# How to Deploy Nginx Proxy Manager as a Portainer Stack
+# How to Deploy Nginx Proxy Manager as a Portainer Stack - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Nginx Proxy Manager, Stack, Docker Compose, Reverse Proxy
+Tags: Portainer, Nginx Proxy Manager, Stacks, Docker Compose, Reverse Proxy
 
 Description: Learn how to deploy Nginx Proxy Manager as a managed Portainer stack, giving you version-controlled configuration and easy stack updates through the Portainer UI.
 
@@ -91,7 +91,7 @@ networks:
 
 In the Portainer stack editor, scroll down to **Environment Variables** and add:
 
-```
+```text
 DB_PASSWORD=a-strong-database-password
 DB_ROOT_PASSWORD=an-even-stronger-root-password
 ```
@@ -114,7 +114,7 @@ Click **Deploy the Stack**. Portainer creates all services, volumes, and connect
 
 Monitor the deployment:
 
-```
+```text
 Stacks → nginx-proxy-manager → Logs
 ```
 
@@ -140,6 +140,7 @@ Portainer pulls the new image and recreates the NPM container while preserving d
 
 ```bash
 # Backup volumes
+
 docker run --rm \
   -v npm_data:/npm_data:ro \
   -v npm_letsencrypt:/npm_letsencrypt:ro \

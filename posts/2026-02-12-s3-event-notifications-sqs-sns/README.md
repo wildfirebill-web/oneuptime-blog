@@ -22,6 +22,7 @@ Create an SQS queue for S3 events:
 
 ```bash
 # Create a standard SQS queue
+
 QUEUE_URL=$(aws sqs create-queue \
     --queue-name s3-event-queue \
     --attributes '{

@@ -22,6 +22,7 @@ Burp Suite is a graphical application, so running it in Docker requires forwardi
 
 ```bash
 # Linux: Run Burp Suite with X11 forwarding
+
 # This shares your display with the container for GUI access
 docker run -d \
   --name burp-suite \

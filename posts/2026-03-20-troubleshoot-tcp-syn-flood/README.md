@@ -14,6 +14,7 @@ A SYN flood attack sends a large volume of TCP SYN packets without completing th
 
 ```bash
 # Sign 1: High number of SYN_RECV connections
+
 ss -tn state syn-received | wc -l
 # Normal: < 10; Under attack: thousands
 

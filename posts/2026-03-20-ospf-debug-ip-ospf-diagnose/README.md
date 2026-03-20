@@ -8,7 +8,7 @@ Description: Learn how to use OSPF debug commands to diagnose adjacency failures
 
 ---
 
-When `show` commands don't reveal the cause of an OSPF problem, debug commands provide real-time visibility into OSPF packet processing, neighbor state transitions, and database changes. Use them judiciously in production — high OSPF activity can generate large volumes of debug output.
+When `show` commands don't reveal the cause of an OSPF problem, debug commands provide real-time visibility into OSPF packet processing, neighbor state transitions, and database changes. Use them judiciously in production - high OSPF activity can generate large volumes of debug output.
 
 ## Debug Safety Guidelines
 
@@ -21,6 +21,7 @@ When `show` commands don't reveal the cause of an OSPF problem, debug commands p
 
 ```bash
 # Access FRR CLI
+
 vtysh
 
 # Enable OSPF Hello debugging (neighbor state transitions)
@@ -92,7 +93,7 @@ debug ospf spf
 
 ## Cisco IOS Debug Commands
 
-```
+```text
 ! Enable OSPF debugging
 debug ip ospf hello
 debug ip ospf events
@@ -109,7 +110,7 @@ undebug all
 
 ### Log to Buffer Instead of Terminal
 
-```
+```text
 ! Set a large buffer for debug output
 logging buffered 1048576 debugging
 
@@ -119,7 +120,7 @@ show logging
 
 ## Key Takeaways
 
-- Use `debug ospf hello` first — most adjacency problems are visible in hello packet processing.
+- Use `debug ospf hello` first - most adjacency problems are visible in hello packet processing.
 - On FRR, check `/var/log/frr/frr.log` for debug output; on Cisco, use `show logging` after `logging buffered`.
 - Always disable debugging with `no debug ospf all` / `undebug all` after diagnosis.
 - For production routers, consider using `show` commands and OSPF event logging instead of interactive debug to minimize CPU impact.

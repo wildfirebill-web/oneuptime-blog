@@ -12,7 +12,7 @@ Authentication with the Terraform Cloud backend requires an API token that grant
 
 ## Authentication Methods Overview
 
-```
+```hcl
 Method                    | Use Case
 --------------------------|----------------------------------------
 tofu login                | Interactive: developer machines
@@ -25,6 +25,7 @@ OIDC / Dynamic tokens     | GitHub Actions, HashiCorp Vault
 
 ```bash
 # Opens browser to generate API token
+
 tofu login
 
 # For Terraform Enterprise (custom hostname)
@@ -147,7 +148,7 @@ curl -X POST \
 
 ## Token Types and Permissions
 
-```
+```text
 Token Type         | Scope                     | Recommended For
 -------------------|---------------------------|------------------
 User Token         | User's access + teams     | Developer machines
@@ -230,4 +231,4 @@ curl -X DELETE \
 
 ## Conclusion
 
-For developer machines, use `tofu login` to store credentials interactively. For CI/CD pipelines, use the `TF_TOKEN_app_terraform_io` environment variable set from a secrets manager — team tokens for shared pipelines, workspace-specific tokens for maximum least-privilege isolation. The `opentofu/setup-opentofu` GitHub Actions action accepts a `cli_config_credentials_token` parameter that handles credential file creation automatically, making it the simplest authentication method for GitHub Actions workflows.
+For developer machines, use `tofu login` to store credentials interactively. For CI/CD pipelines, use the `TF_TOKEN_app_terraform_io` environment variable set from a secrets manager - team tokens for shared pipelines, workspace-specific tokens for maximum least-privilege isolation. The `opentofu/setup-opentofu` GitHub Actions action accepts a `cli_config_credentials_token` parameter that handles credential file creation automatically, making it the simplest authentication method for GitHub Actions workflows.

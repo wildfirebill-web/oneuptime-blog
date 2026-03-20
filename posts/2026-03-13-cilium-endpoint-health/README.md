@@ -26,6 +26,7 @@ This guide covers the endpoint lifecycle, how to monitor endpoint health, how to
 
 ```bash
 # List all endpoints and their states
+
 cilium endpoint list
 
 # Count endpoints by state

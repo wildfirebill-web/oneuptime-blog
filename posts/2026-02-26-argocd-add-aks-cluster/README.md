@@ -25,6 +25,7 @@ The quickest approach uses AKS local accounts. Note that many organizations disa
 
 ```bash
 # Get AKS credentials with local account
+
 az aks get-credentials \
   --resource-group my-rg \
   --name my-aks-cluster \

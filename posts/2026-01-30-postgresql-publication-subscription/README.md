@@ -52,6 +52,7 @@ Both publisher and subscriber need PostgreSQL 10 or later. The publisher require
 
 ```ini
 # Enable logical replication on the publisher
+
 wal_level = logical
 
 # Allow enough replication connections

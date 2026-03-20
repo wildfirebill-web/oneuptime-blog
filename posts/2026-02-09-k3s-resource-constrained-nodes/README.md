@@ -26,6 +26,7 @@ Reserve CPU and memory for system daemons and K3s components to prevent workload
 
 ```bash
 # Install K3s with system reservations
+
 curl -sfL https://get.k3s.io | sh -s - \
   --kubelet-arg="system-reserved=cpu=500m,memory=256Mi" \
   --kubelet-arg="kube-reserved=cpu=500m,memory=384Mi" \

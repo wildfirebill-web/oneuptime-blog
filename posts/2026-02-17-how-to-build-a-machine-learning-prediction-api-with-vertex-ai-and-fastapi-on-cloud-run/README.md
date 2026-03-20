@@ -28,6 +28,7 @@ You need a trained model deployed to a Vertex AI endpoint. If you do not have on
 
 ```bash
 # Install required packages
+
 pip install google-cloud-aiplatform fastapi uvicorn
 
 # Make sure you have a GCP project with Vertex AI API enabled

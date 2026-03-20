@@ -44,6 +44,7 @@ First, deploy both the stable and canary versions of your application.
 
 ```yaml
 # apps/my-app/deployment-stable.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

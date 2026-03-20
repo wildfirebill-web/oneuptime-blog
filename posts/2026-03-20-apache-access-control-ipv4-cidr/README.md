@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, IPv4, CIDR, Access Control, Security, mod_authz_host
+Tags: Apache, IPv4, CIDR, Access Control, Security, Mod_authz_host
 
 Description: Use CIDR notation in Apache's Require ip directive to allow or deny access from entire IPv4 network ranges with precise subnet masks.
 
@@ -16,6 +16,7 @@ Apache accepts multiple CIDR formats:
 
 ```apache
 # Full CIDR notation
+
 Require ip 192.168.1.0/24       # 192.168.1.0 to .255 (/24 = 256 addresses)
 Require ip 10.0.0.0/8           # Entire 10.x.x.x range
 Require ip 172.16.0.0/12        # 172.16.x.x through 172.31.x.x

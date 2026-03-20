@@ -14,6 +14,7 @@ ExternalDNS synchronizes Kubernetes Services and Ingresses with DNS providers li
 
 ```hcl
 # main.tf - Deploy ExternalDNS via Helm
+
 terraform {
   required_providers {
     helm = {

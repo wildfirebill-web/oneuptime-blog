@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Distributed Tracing, Context Propagation, Async, Threads, Promises, Concurrency
+Tags: OpenTelemetry, Distributed Tracing, Context Propagation, Async, Thread, Promises, Concurrency
 
 Description: Learn how to maintain OpenTelemetry trace context across async boundaries like threads, promises, and coroutines to avoid broken traces.
 
@@ -37,6 +37,7 @@ Python's threading module does not propagate context by default. Here is the bro
 
 ```python
 # broken_threading.py - Context is lost when spawning threads
+
 import threading
 from opentelemetry import trace
 

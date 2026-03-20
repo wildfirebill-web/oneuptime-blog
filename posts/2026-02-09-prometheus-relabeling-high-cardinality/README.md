@@ -24,6 +24,7 @@ High cardinality occurs when label values have many unique combinations:
 
 ```text
 # Bad: user_id has millions of values
+
 http_requests_total{user_id="12345", method="GET"}
 http_requests_total{user_id="67890", method="GET"}
 # Results in millions of time series

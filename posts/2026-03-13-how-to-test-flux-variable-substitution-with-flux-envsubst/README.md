@@ -84,6 +84,7 @@ Instead of exporting variables individually, create a variables file and source 
 
 ```bash
 # vars/production.env
+
 CLUSTER_NAME=production
 DOMAIN=prod.example.com
 REPLICAS=3

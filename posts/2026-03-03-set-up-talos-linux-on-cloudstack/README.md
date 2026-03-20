@@ -32,6 +32,7 @@ Before you start, gather the following:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install the CloudStack CLI (cloudmonkey)

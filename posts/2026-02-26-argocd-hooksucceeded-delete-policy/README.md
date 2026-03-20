@@ -192,6 +192,7 @@ The downside of using only `HookSucceeded` is that failed hooks accumulate. If a
 
 ```bash
 # After several failed sync attempts
+
 kubectl get jobs -n my-app
 # NAME              COMPLETIONS   DURATION   AGE
 # db-migrate        0/1           5m         2d    # Failed sync from 2 days ago

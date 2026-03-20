@@ -25,6 +25,7 @@ The IPv6 loopback address `::1/128` is the equivalent of IPv4's `127.0.0.1`. Any
 
 ```bash
 # Check the loopback interface
+
 ip -6 addr show lo
 # Output: inet6 ::1/128 scope host
 
@@ -38,7 +39,7 @@ ip -6 route show ::1
 
 ## Using ::1 in Applications
 
-### Python — Binding to IPv6 Loopback
+### Python - Binding to IPv6 Loopback
 
 ```python
 import socket
@@ -47,7 +48,7 @@ import socket
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-# Bind to ::1 (loopback only) — not accessible from network
+# Bind to ::1 (loopback only) - not accessible from network
 server.bind(("::1", 8080, 0, 0))
 server.listen(5)
 print("Server on [::1]:8080 (loopback only)")
@@ -79,9 +80,9 @@ print(is_loopback("::ffff:127.0.0.1"))  # True (IPv4-mapped loopback)
 ## Service Configuration Examples
 
 ```nginx
-# NGINX — listen on IPv6 loopback only (metrics endpoint)
+# NGINX - listen on IPv6 loopback only (metrics endpoint)
 server {
-    listen [::1]:9113;     # Prometheus metrics — loopback only
+    listen [::1]:9113;     # Prometheus metrics - loopback only
     server_name localhost;
 
     location /metrics {
@@ -94,10 +95,10 @@ server {
 ```
 
 ```bash
-# SSH — tunnel over IPv6 loopback for port forwarding
+# SSH - tunnel over IPv6 loopback for port forwarding
 ssh -6 -L [::1]:8080:[::1]:80 user@2001:db8::1
 
-# Redis — bind to IPv6 loopback
+# Redis - bind to IPv6 loopback
 # /etc/redis/redis.conf
 # bind ::1
 redis-cli -6 -h ::1 ping
@@ -105,7 +106,7 @@ redis-cli -6 -h ::1 ping
 
 ## ::1 vs 0:0:0:0:0:0:0:1
 
-These are identical — both are valid representations of the loopback address:
+These are identical - both are valid representations of the loopback address:
 
 ```bash
 ping6 ::1
@@ -117,7 +118,7 @@ ping6 "0000:0000:0000:0000:0000:0000:0000:0001"
 ## Firewall Rules for ::1
 
 ```bash
-# Allow loopback traffic (essential — do not block)
+# Allow loopback traffic (essential - do not block)
 ip6tables -A INPUT -i lo -j ACCEPT
 ip6tables -A OUTPUT -o lo -j ACCEPT
 

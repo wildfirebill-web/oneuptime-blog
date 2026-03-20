@@ -10,10 +10,11 @@ Description: Configure DHCPv6 relay on MikroTik RouterOS to forward DHCPv6 messa
 
 MikroTik RouterOS 7.x includes native DHCPv6 relay support:
 
-```
-# RouterOS CLI — Add DHCPv6 relay
+```text
+# RouterOS CLI - Add DHCPv6 relay
 
 # Step 1: Assign IPv6 address to client-facing interface
+
 /ipv6 address
 add address=2001:db8:1::1/64 interface=ether2 advertise=yes
 
@@ -30,7 +31,7 @@ add name=relay-ether2 \
 
 ## Multiple Subnets with DHCPv6 Relay
 
-```
+```text
 # Relay on multiple client interfaces to the same server
 /ipv6 dhcp-relay
 add name=relay-vlan10 interface=vlan10 dhcp-server=2001:db8::dhcp1 local-address=2001:db8:10::1
@@ -43,7 +44,7 @@ add name=relay-vlan30 interface=vlan30 dhcp-server=2001:db8::dhcp1 local-address
 
 ## Router Advertisement Configuration (M/O flags)
 
-```
+```text
 # Configure RA to tell clients to use DHCPv6
 /ipv6 nd
 set [find interface=ether2] \
@@ -64,7 +65,7 @@ add interface=ether2 prefix=2001:db8:1::/64 autonomous=yes on-link=yes
 
 ## Firewall Rules for DHCPv6 Relay
 
-```
+```text
 # Allow DHCPv6 relay traffic
 /ipv6 firewall filter
 
@@ -92,7 +93,7 @@ add chain=input \
 
 ## Monitoring DHCPv6 Relay
 
-```
+```text
 # Show relay status
 /ipv6 dhcp-relay print detail
 
@@ -124,7 +125,7 @@ Via Winbox GUI:
 
 ## Troubleshooting
 
-```
+```text
 # Check relay is enabled
 /ipv6 dhcp-relay print
 # Should show "disabled: no"
@@ -145,4 +146,4 @@ Via Winbox GUI:
 
 ## Conclusion
 
-MikroTik RouterOS 7.x provides simple DHCPv6 relay via the `/ipv6 dhcp-relay` menu with `interface`, `dhcp-server`, and `local-address` parameters. The local address should be the router's IPv6 address on the client-facing interface — this ensures relay messages originate from a reachable global unicast address. Always configure RA flags (`managed-address-configuration=yes`) to instruct clients to use DHCPv6. Firewall rules must explicitly allow UDP port 547 for relay traffic in both directions.
+MikroTik RouterOS 7.x provides simple DHCPv6 relay via the `/ipv6 dhcp-relay` menu with `interface`, `dhcp-server`, and `local-address` parameters. The local address should be the router's IPv6 address on the client-facing interface - this ensures relay messages originate from a reachable global unicast address. Always configure RA flags (`managed-address-configuration=yes`) to instruct clients to use DHCPv6. Firewall rules must explicitly allow UDP port 547 for relay traffic in both directions.

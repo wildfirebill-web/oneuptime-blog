@@ -25,6 +25,7 @@ The operator is available through its own GitHub releases or through the VMware 
 
 ```yaml
 # argocd/rabbitmq-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

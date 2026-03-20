@@ -64,6 +64,7 @@ Generate client SDKs for any programming language:
 
 ```bash
 # Generate Python SDK
+
 openapi-generator generate -i oneuptime-openapi.json -g python
 
 # Generate Go client

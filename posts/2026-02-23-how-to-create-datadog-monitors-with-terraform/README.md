@@ -35,6 +35,7 @@ variable "datadog_app_key" { type = string; sensitive = true }
 
 ```hcl
 # Monitor CPU utilization across hosts
+
 resource "datadog_monitor" "cpu_high" {
   name    = "High CPU Utilization"
   type    = "metric alert"

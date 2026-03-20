@@ -197,6 +197,7 @@ For better performance, keep project files inside the WSL2 filesystem rather tha
 
 ```bash
 # Fast - files in WSL2 filesystem
+
 podman run -v ~/projects/myapp:/app docker.io/library/node:20 npm test
 
 # Slower - files on Windows mount

@@ -40,6 +40,7 @@ First, write a Terraform resource block that describes the existing resource. Yo
 
 ```hcl
 # main.tf
+
 # Describe the existing EC2 instance
 resource "aws_instance" "web_server" {
   # Start with the values you know
@@ -256,7 +257,7 @@ resource "aws_internet_gateway" "main" {
 
 ## Handling Import Challenges
 
-### Resources with Complex IDs
+Resources with Complex IDs
 
 Some resources have composite IDs. Check the provider documentation for the correct format.
 
@@ -270,7 +271,7 @@ terraform import aws_security_group_rule.allow_https \
   "sg-0abc123_ingress_tcp_443_443_0.0.0.0/0"
 ```
 
-### Resources That Cannot Be Imported
+Resources That Cannot Be Imported
 
 Not every resource supports import. Check the Terraform provider docs. If a resource does not support import, you may need to:
 

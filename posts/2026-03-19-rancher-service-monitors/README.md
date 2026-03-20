@@ -33,6 +33,7 @@ You should see Prometheus-formatted metrics like:
 
 ```bash
 # HELP http_requests_total Total HTTP requests
+
 # TYPE http_requests_total counter
 http_requests_total{method="GET",status="200"} 1234
 ```

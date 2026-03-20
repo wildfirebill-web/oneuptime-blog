@@ -17,6 +17,7 @@ RESOURCE_GROUP="my-network-rg"
 VNET_NAME="prod-vnet"
 
 # Add a web tier subnet
+
 az network vnet subnet create \
   --resource-group $RESOURCE_GROUP \
   --vnet-name $VNET_NAME \
@@ -128,7 +129,7 @@ az network vnet subnet update \
 
 ## Subnet Planning Example
 
-```
+```text
 VNet: 10.100.0.0/16
 ├── web-subnet:      10.100.1.0/24   (web servers)
 ├── app-subnet:      10.100.2.0/24   (application tier)

@@ -24,6 +24,7 @@ The safest starting point is zero permissions. Then add exactly what's needed:
 
 ```hcl
 # Application role - starts with no permissions
+
 resource "aws_iam_role" "app" {
   name = "application-role"
 

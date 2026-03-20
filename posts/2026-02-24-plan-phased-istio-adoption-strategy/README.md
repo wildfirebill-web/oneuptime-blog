@@ -22,6 +22,7 @@ Create a spreadsheet or document listing every service in your cluster:
 
 ```bash
 # Get all deployments across namespaces
+
 kubectl get deployments --all-namespaces -o custom-columns=\
 NAMESPACE:.metadata.namespace,\
 NAME:.metadata.name,\

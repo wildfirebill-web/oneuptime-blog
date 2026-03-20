@@ -40,6 +40,7 @@ The safest starting point for a zero-trust architecture is to deny all traffic a
 
 ```yaml
 # deny-all.yaml
+
 # Denies all traffic in the namespace by default
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy

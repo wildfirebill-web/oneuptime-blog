@@ -39,6 +39,7 @@ Add the sync-wave annotation to your resources:
 
 ```yaml
 # Wave -1: Create the namespace first
+
 apiVersion: v1
 kind: Namespace
 metadata:

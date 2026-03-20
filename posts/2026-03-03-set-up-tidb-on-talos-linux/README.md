@@ -34,6 +34,7 @@ TiKV benefits from specific kernel parameters. Configure these through Talos mac
 
 ```yaml
 # talos-tidb-patch.yaml
+
 machine:
   sysctls:
     # TiKV needs these for optimal performance

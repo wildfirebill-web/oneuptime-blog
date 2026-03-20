@@ -28,6 +28,7 @@ Health checks are configured on the target group, not the ALB or listener.
 
 ```hcl
 # Target group with a basic health check
+
 resource "aws_lb_target_group" "app" {
   name_prefix = "app-"
   port        = 8080

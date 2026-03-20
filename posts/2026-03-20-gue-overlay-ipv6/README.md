@@ -8,7 +8,7 @@ Description: Configure Generic UDP Encapsulation (GUE) tunnels over IPv6 for lig
 
 ## GUE Overview
 
-Generic UDP Encapsulation (GUE) is a lightweight encapsulation standard that tunnels any network protocol in UDP. Unlike VXLAN and Geneve, GUE operates at a lower level — it can carry IPv4, IPv6, or any other protocol in its payload.
+Generic UDP Encapsulation (GUE) is a lightweight encapsulation standard that tunnels any network protocol in UDP. Unlike VXLAN and Geneve, GUE operates at a lower level - it can carry IPv4, IPv6, or any other protocol in its payload.
 
 Key GUE characteristics:
 - Lightweight: minimal header overhead
@@ -20,6 +20,7 @@ Key GUE characteristics:
 
 ```bash
 # Load Foo-over-UDP module (provides GUE)
+
 modprobe fou
 
 # Create a GUE tunnel: IPv4-in-GUE over IPv6 underlay
@@ -76,7 +77,7 @@ echo "IPv6-in-IPv6 GUE tunnel ready"
 
 ## GUE Overhead Analysis
 
-```
+```text
 GUE over IPv6 overhead breakdown:
 
   Outer Ethernet:  14 bytes

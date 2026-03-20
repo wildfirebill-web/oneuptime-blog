@@ -14,6 +14,7 @@ Chaos Mesh runs as a set of Kubernetes operators. Install it using Helm:
 
 ```bash
 # Add the Chaos Mesh Helm repo
+
 helm repo add chaos-mesh https://charts.chaos-mesh.org
 helm repo update
 

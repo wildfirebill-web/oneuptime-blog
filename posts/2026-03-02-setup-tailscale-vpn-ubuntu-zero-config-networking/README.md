@@ -25,6 +25,7 @@ Traditional VPNs route all traffic through a central server. Tailscale creates a
 
 ```bash
 # Add Tailscale's repository and install
+
 curl -fsSL https://tailscale.com/install.sh | sh
 
 # Alternatively, add the repository manually

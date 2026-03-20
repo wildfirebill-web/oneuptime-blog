@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, null, Collections, Functions, Filtering
+Tags: OpenTofu, Terraform, Null, Collections, Functions, Filtering
 
 Description: Learn how to filter null values from lists and maps in OpenTofu using for expressions, compact, and try to build clean, null-safe configurations from optional inputs.
 
@@ -38,6 +38,7 @@ locals {
 }
 
 # compact() is a shorthand for filtering nulls and empty strings from string lists
+
 locals {
   optional_security_groups = compact([
     aws_security_group.base.id,
@@ -227,4 +228,4 @@ output "healthy_private_ips" {
 
 ## Summary
 
-Filtering nulls from OpenTofu collections requires three techniques depending on the data type: `compact()` for simple string lists with nulls or empty strings, `for ... if value != null` for maps and typed lists, and `try(expr, null)` to safely convert potential errors into filterable nulls. Always filter before passing to `for_each`, `count`-indexed references, or `jsonencode` — all of which will error on null values.
+Filtering nulls from OpenTofu collections requires three techniques depending on the data type: `compact()` for simple string lists with nulls or empty strings, `for ... if value != null` for maps and typed lists, and `try(expr, null)` to safely convert potential errors into filterable nulls. Always filter before passing to `for_each`, `count`-indexed references, or `jsonencode` - all of which will error on null values.

@@ -34,6 +34,7 @@ The OpenTelemetry Collector's `servicegraph` connector processes traces and emit
 
 ```yaml
 # otel-collector-config.yaml
+
 # Extract service dependency graph metrics from trace data
 receivers:
   otlp:

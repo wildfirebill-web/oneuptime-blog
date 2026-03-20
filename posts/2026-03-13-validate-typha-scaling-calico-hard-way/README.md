@@ -29,6 +29,7 @@ This post provides a structured validation checklist and the commands to execute
 
 ```bash
 # All Typha pods must be Running with all containers ready
+
 kubectl get pods -n kube-system -l k8s-app=calico-typha -o wide
 # Expected: STATUS=Running, READY=1/1 for each pod
 

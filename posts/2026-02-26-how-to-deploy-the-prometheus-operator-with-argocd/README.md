@@ -310,6 +310,7 @@ Upgrading the kube-prometheus-stack requires updating both the CRD Application a
 
 ```bash
 # Check CRD sync status
+
 argocd app get prometheus-crds
 
 # Check stack sync status

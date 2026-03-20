@@ -40,6 +40,7 @@ defaults
     errorfile 503 /etc/haproxy/errors/503.http
 
 # ─── Frontend ───────────────────────────────────────────────────────────────
+
 frontend http_frontend
     bind 203.0.113.10:80          # Listen on public IPv4
     bind 203.0.113.10:8080        # Also on alternate port

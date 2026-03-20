@@ -27,6 +27,7 @@ You need three things from your New Relic account:
 
 ```bash
 # Set environment variables
+
 export NEW_RELIC_ACCOUNT_ID="1234567"
 export NEW_RELIC_API_KEY="NRAK-your-api-key-here"
 export NEW_RELIC_REGION="US"  # or "EU"

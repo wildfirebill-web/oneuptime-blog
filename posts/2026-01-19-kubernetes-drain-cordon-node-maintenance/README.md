@@ -44,6 +44,7 @@ flowchart LR
 
 ```bash
 # Cordon prevents new pods from scheduling on the node
+
 # Existing pods continue running
 kubectl cordon worker-node-1
 

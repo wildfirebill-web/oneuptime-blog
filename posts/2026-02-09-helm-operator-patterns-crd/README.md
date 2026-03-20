@@ -22,6 +22,7 @@ Start by defining a custom resource that represents your Helm release. This CRD 
 
 ```yaml
 # helmrelease-crd.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

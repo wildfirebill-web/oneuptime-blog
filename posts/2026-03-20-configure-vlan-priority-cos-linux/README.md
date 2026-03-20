@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VLAN, CoS, 802.1p, QoS, Linux, VLAN Priority, ip link, Networking
+Tags: VLAN, COS, 802.1p, QoS, Linux, VLAN Priority, Ip link, Networking
 
 Description: Learn how to configure 802.1p Class of Service (CoS) priority bits on VLAN interfaces in Linux to ensure VoIP and critical traffic is prioritized across 802.1Q trunks.
 
@@ -29,6 +29,7 @@ The egress map translates the Linux internal SKB priority to an 802.1p CoS value
 
 ```bash
 # Create VLAN interface
+
 ip link add link eth0 name eth0.100 type vlan id 100
 
 # Set egress QoS map: Linux priority → 802.1p CoS

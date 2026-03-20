@@ -245,6 +245,7 @@ For the best performance, serve your bundles through Cloud CDN. Set up a load ba
 
 ```bash
 # Create a backend bucket pointing to your bundle storage
+
 gcloud compute backend-buckets create bundle-backend \
   --gcs-bucket-name=my-app-bundles \
   --enable-cdn \

@@ -94,6 +94,7 @@ Now create an ArgoCD Application that points to your Jsonnet source. You can do 
 
 ```yaml
 # argocd-app.yaml - ArgoCD Application for Jsonnet source
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -220,6 +220,7 @@ Check the current health check status:
 
 ```bash
 # See probe configuration in the pod spec
+
 kubectl get pod <pod-name> -o jsonpath='{.spec.containers[0].livenessProbe}' | python3 -m json.tool
 
 # Check probe events

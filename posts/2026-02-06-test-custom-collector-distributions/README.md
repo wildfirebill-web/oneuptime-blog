@@ -29,6 +29,7 @@ The most basic check. Does your custom distribution actually compile?
 ```bash
 #!/bin/bash
 # build-test.sh
+
 # Verify that the custom distribution compiles without errors
 
 set -euo pipefail

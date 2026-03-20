@@ -20,6 +20,7 @@ Test files use the `.tftest.hcl` extension and live alongside your configuration
 # tests/networking.tftest.hcl
 
 # Define variables for the test
+
 variables {
   vpc_cidr = "10.0.0.0/16"
   region   = "us-east-1"

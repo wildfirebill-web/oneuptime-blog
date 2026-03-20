@@ -20,6 +20,7 @@ When a Flux controller is OOM-killed, you will see signs in multiple places:
 
 ```bash
 # Check pod status for OOMKilled
+
 kubectl get pods -n flux-system
 
 # Example output showing OOMKilled

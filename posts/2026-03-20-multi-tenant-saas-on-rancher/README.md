@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Multi-Tenant, SaaS, Kubernetes, Isolation, RBAC, Namespaces
 
-Description: Build a multi-tenant SaaS platform on Rancher with namespace-per-tenant isolation, tenant-specific resource quotas, network policies, and automated tenant provisioning for software-as-a-service applications.
+Description: Build a multi-tenant SaaS platform on Rancher with namespace-per-tenant isolation, tenant-specific resource quotas, network policies, and automated tenant provisioning for software-as-a-service...
 
 ## Introduction
 
@@ -20,7 +20,7 @@ Multi-tenant SaaS platforms on Kubernetes require isolation between tenants whil
 
 ## Architecture: Namespace-per-Tenant
 
-```
+```text
 Production Cluster
 ├── tenant-acme/          ← Acme Corp namespace
 │   └── All Acme workloads
@@ -102,6 +102,7 @@ TIER_QUOTAS = {
 
 ```yaml
 # Template function build_network_policy()
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -254,4 +255,4 @@ spec:
 
 ## Conclusion
 
-Multi-tenant SaaS on Rancher uses namespace isolation as the foundation, enhanced by network policies, resource quotas, and RBAC to create strong tenant boundaries on shared clusters. Automated provisioning scripts handle the full tenant lifecycle from onboarding to off-boarding. For tenants requiring stronger isolation (compliance requirements), escalate to dedicated node pools or dedicated clusters—Rancher's multi-cluster management handles all tiers from a single pane of glass. Monitor per-tenant resource usage with Prometheus for usage-based billing and capacity planning.
+Multi-tenant SaaS on Rancher uses namespace isolation as the foundation, enhanced by network policies, resource quotas, and RBAC to create strong tenant boundaries on shared clusters. Automated provisioning scripts handle the full tenant lifecycle from onboarding to off-boarding. For tenants requiring stronger isolation (compliance requirements), escalate to dedicated node pools or dedicated clusters-Rancher's multi-cluster management handles all tiers from a single pane of glass. Monitor per-tenant resource usage with Prometheus for usage-based billing and capacity planning.

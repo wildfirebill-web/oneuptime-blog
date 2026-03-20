@@ -16,6 +16,7 @@ Without source address validation, any host on a network segment can send packet
 
 ```bash
 # Example: Host sends packet with spoofed source
+
 python3 -c "
 from scapy.all import *
 # Spoof a packet claiming to come from the router
@@ -43,7 +44,7 @@ SAVI monitors address assignment protocols and builds a binding table that maps 
 
 For SLAAC-configured addresses:
 
-```
+```text
 Cisco Catalyst: SAVI-SLAAC via IPv6 ND Inspection
 
 ipv6 nd inspection policy SAVI-SLAAC
@@ -59,7 +60,7 @@ SAVI-SLAAC listens for Neighbor Solicitations (DAD) and builds a binding for eac
 
 For DHCPv6-assigned addresses:
 
-```
+```text
 ! Cisco: DHCPv6 Snooping provides SAVI for DHCPv6 addresses
 ipv6 dhcp snooping
 ipv6 dhcp snooping vlan 10
@@ -70,12 +71,12 @@ interface GigabitEthernet0/48
 
 ! Untrust client ports (validates DHCPv6 source)
 interface range GigabitEthernet0/1-24
-  ! Default: untrusted — will validate source
+  ! Default: untrusted - will validate source
 ```
 
 ### SAVI Binding Table
 
-```
+```text
 ! View SAVI binding table
 show ipv6 snooping binding
 
@@ -91,8 +92,8 @@ Unicast Reverse Path Forwarding validates that a route exists back to the source
 
 ### Strict Mode (Most Secure)
 
-```
-! Cisco: Strict uRPF — best for single-homed customers
+```text
+! Cisco: Strict uRPF - best for single-homed customers
 interface GigabitEthernet0/0
   ipv6 verify unicast source reachable-via rx
 
@@ -103,8 +104,8 @@ interface GigabitEthernet0/0
 
 ### Loose Mode (For Multi-Homed)
 
-```
-! Cisco: Loose uRPF — for networks with asymmetric routing
+```text
+! Cisco: Loose uRPF - for networks with asymmetric routing
 interface GigabitEthernet0/0
   ipv6 verify unicast source reachable-via any
   ! Just checks: "Is there ANY route to the source?" (not necessarily via this interface)
@@ -114,7 +115,7 @@ interface GigabitEthernet0/0
 
 ```bash
 # Linux: Enable reverse path filtering for IPv6
-# Note: IPv6 rp_filter is limited — use explicit routing tables
+# Note: IPv6 rp_filter is limited - use explicit routing tables
 
 # Create routing table for uRPF check
 ip -6 route add 2001:db8:cust::/48 dev eth1 table 100

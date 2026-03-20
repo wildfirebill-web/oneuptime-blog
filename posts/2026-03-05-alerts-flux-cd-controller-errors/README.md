@@ -37,6 +37,7 @@ Create a ServiceMonitor to ensure Prometheus discovers Flux CD metrics:
 
 ```yaml
 # servicemonitor.yaml - Tells Prometheus to scrape Flux CD controller metrics
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

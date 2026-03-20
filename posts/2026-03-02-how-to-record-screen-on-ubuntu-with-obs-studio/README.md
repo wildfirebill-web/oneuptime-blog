@@ -18,6 +18,7 @@ The OBS Project maintains an official PPA with the latest releases:
 
 ```bash
 # Add the OBS Studio PPA
+
 sudo add-apt-repository ppa:obsproject/obs-studio -y
 sudo apt-get update
 

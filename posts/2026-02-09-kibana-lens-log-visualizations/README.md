@@ -24,6 +24,7 @@ If you need to change the data source:
 
 ```bash
 # Click on the index pattern dropdown at the top
+
 # Select your log index pattern (e.g., "application-logs-*")
 # The field list updates to show available fields
 ```

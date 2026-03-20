@@ -16,6 +16,7 @@ Enabling Redis remote connections requires three steps: configure `bind` to incl
 # /etc/redis/redis.conf
 
 # Step 1: Bind to server IP (add your IP after 127.0.0.1)
+
 bind 127.0.0.1 10.0.0.5
 
 # Step 2: Set a strong password
@@ -96,4 +97,4 @@ redis://:YourStrongPasswordHere!@10.0.0.5:6379/0
 
 ## Conclusion
 
-Enable Redis remote connections by adding the server IPv4 to `bind`, setting `requirepass`, and disabling `protected-mode`. Use iptables to restrict which client IPs can reach port 6379—Redis has no built-in source IP filtering. Never expose Redis on a public IP without authentication; prefer SSH tunnels or VPN for accessing Redis over untrusted networks.
+Enable Redis remote connections by adding the server IPv4 to `bind`, setting `requirepass`, and disabling `protected-mode`. Use iptables to restrict which client IPs can reach port 6379-Redis has no built-in source IP filtering. Never expose Redis on a public IP without authentication; prefer SSH tunnels or VPN for accessing Redis over untrusted networks.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, kubeadm, Cluster Setup, Dual-Stack, Networking
+Tags: Kubernetes, IPv6, Kubeadm, Cluster Setup, Dual-Stack, Networking
 
 Description: Initialize a dual-stack or IPv6-only Kubernetes cluster with kubeadm, configure pod and service CIDRs for IPv6, and set up the necessary node networking for IPv6 support.
 
@@ -14,6 +14,7 @@ kubeadm supports dual-stack and IPv6-only Kubernetes clusters through the `--pod
 
 ```bash
 # Enable IPv6 on all control plane and worker nodes
+
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
 sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
 sudo sysctl -w net.ipv6.conf.all.forwarding=1

@@ -16,6 +16,7 @@ OPcache typically ships with PHP. Verify it is installed:
 
 ```bash
 # Check if OPcache is loaded
+
 php -m | grep -i opcache
 
 # If not installed, install it

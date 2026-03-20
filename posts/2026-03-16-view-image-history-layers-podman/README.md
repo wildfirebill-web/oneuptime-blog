@@ -20,6 +20,7 @@ See the build history of an image.
 
 ```bash
 # View history of an nginx image
+
 podman history nginx:1.25
 
 # Sample output:

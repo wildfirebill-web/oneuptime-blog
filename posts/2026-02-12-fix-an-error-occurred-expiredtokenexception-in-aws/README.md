@@ -39,6 +39,7 @@ If you're using `aws sts assume-role` and the session expired, just re-assume th
 
 ```bash
 # Re-assume the role
+
 aws sts assume-role \
   --role-arn arn:aws:iam::123456789:role/my-role \
   --role-session-name my-session \

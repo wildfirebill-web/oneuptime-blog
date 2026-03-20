@@ -29,6 +29,7 @@ Here's the simplest configuration for the OTLP gRPC exporter:
 
 ```yaml
 # Basic OTLP gRPC exporter configuration
+
 exporters:
   otlp:
     # The endpoint of your observability backend
@@ -253,7 +254,7 @@ service:
       exporters: [otlp]
 ```
 
-## Resource Detection and Attributes
+Resource Detection and Attributes
 
 Add resource attributes to identify the source:
 
@@ -644,7 +645,7 @@ exporters:
     compression: gzip
 ```
 
-### Resource-Constrained Configuration
+Resource-Constrained Configuration
 
 ```yaml
 # Optimized for limited resources

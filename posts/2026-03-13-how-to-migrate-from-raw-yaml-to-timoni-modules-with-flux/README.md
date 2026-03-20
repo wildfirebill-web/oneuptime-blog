@@ -27,6 +27,7 @@ Before migrating, catalog your existing Flux resources:
 
 ```bash
 # List all Flux sources
+
 flux get sources all -A
 
 # List all Kustomizations

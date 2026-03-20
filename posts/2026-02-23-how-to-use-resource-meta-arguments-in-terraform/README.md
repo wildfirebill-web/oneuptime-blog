@@ -30,6 +30,7 @@ The `count` meta-argument creates multiple copies of a resource. Each copy is id
 
 ```hcl
 # Create 3 EC2 instances
+
 resource "aws_instance" "web" {
   count = 3
 

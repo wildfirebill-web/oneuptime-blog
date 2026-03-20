@@ -742,6 +742,7 @@ SERVER_URL="http://localhost:8080"
 echo "=== Testing State Operations ==="
 
 # Test state not found
+
 echo "Testing GET state (should be 404)..."
 curl -s -o /dev/null -w "%{http_code}" "$SERVER_URL/state"
 echo ""

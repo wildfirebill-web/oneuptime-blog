@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, TLS 1.3, NGINX, Apache, Web Security
+Tags: Ansible, TLS 1.3, Nginx, Apache, Web Security
 
 Description: Configure TLS 1.3 on Nginx and Apache web servers using Ansible playbooks for faster, more secure HTTPS connections across your fleet.
 
@@ -41,6 +41,7 @@ This playbook configures Nginx with TLS 1.3 support:
 
 ```yaml
 # nginx_tls13.yml - Configure TLS 1.3 on Nginx
+
 ---
 - name: Configure TLS 1.3 on Nginx
   hosts: webservers

@@ -34,6 +34,7 @@ Or install it locally:
 
 ```bash
 # macOS
+
 brew install hadolint
 
 # Linux (download binary)

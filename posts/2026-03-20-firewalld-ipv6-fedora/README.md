@@ -14,6 +14,7 @@ Fedora uses firewalld with the nftables backend as its default firewall on recen
 
 ```bash
 # Fedora 34+ uses nftables backend by default
+
 cat /etc/firewalld/firewalld.conf | grep FirewallBackend
 # FirewallBackend=nftables
 

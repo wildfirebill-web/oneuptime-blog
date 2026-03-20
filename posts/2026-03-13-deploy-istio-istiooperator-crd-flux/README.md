@@ -28,6 +28,7 @@ The Istio Operator is installed via Helm before Flux manages the IstioOperator C
 
 ```yaml
 # clusters/my-cluster/istio/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

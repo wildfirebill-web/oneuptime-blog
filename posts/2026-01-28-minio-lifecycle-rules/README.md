@@ -45,6 +45,7 @@ Before configuring lifecycle rules, ensure you have:
 
 ```bash
 # Install MinIO Client
+
 curl -O https://dl.min.io/client/mc/release/linux-amd64/mc
 chmod +x mc
 sudo mv mc /usr/local/bin/

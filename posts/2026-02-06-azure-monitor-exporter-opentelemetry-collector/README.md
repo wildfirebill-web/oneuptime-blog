@@ -44,6 +44,7 @@ If you don't have an Application Insights resource, create one:
 
 ```bash
 # Using Azure CLI
+
 az monitor app-insights component create \
   --app my-application-insights \
   --location eastus \

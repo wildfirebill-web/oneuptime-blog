@@ -131,6 +131,7 @@ For more comprehensive parameter changes, use the full Application editor:
 
 ```yaml
 # Example: editing Helm overrides directly in the Application spec
+
 spec:
   source:
     repoURL: https://github.com/myorg/app-config.git

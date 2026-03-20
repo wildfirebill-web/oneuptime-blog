@@ -20,6 +20,7 @@ Kubernetes supports upgrading only one minor version at a time (e.g., 1.26 → 1
 
 ```bash
 # Check your current Kubernetes version
+
 kubectl version --short
 
 # Check your current RKE binary version

@@ -31,6 +31,7 @@ Install the first Istio with a revision name:
 
 ```yaml
 # istio-stable.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:
@@ -255,7 +256,7 @@ kubectl rollout restart deployment -n prod-namespace
 istioctl uninstall --revision stable
 ```
 
-## Resource Considerations
+Resource Considerations
 
 Each control plane consumes resources. A typical istiod instance needs:
 

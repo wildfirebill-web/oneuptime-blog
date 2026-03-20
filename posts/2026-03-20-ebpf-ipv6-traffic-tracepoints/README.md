@@ -62,6 +62,7 @@ char LICENSE[] SEC("license") = "GPL";
 
 ```bash
 # Compile eBPF program
+
 clang -O2 -target bpf -c program.c -o program.o
 
 # Load XDP program on interface

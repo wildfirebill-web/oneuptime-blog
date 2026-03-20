@@ -16,6 +16,7 @@ Calico troubleshooting commands can fail for reasons unrelated to the cluster pr
 
 ```bash
 # Check DATASTORE_TYPE and credentials
+
 echo "DATASTORE_TYPE: ${DATASTORE_TYPE}"
 echo "KUBECONFIG: ${KUBECONFIG}"
 

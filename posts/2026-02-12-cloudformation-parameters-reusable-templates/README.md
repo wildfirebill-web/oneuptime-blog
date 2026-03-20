@@ -18,6 +18,7 @@ Consider this template:
 
 ```yaml
 # Hard-coded template - only works for one environment
+
 Resources:
   Database:
     Type: AWS::RDS::DBInstance

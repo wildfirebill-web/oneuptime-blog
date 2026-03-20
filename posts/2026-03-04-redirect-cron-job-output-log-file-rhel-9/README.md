@@ -37,6 +37,7 @@ flowchart LR
 
 ```bash
 # Send normal output to a log file, errors still go to email
+
 30 2 * * * /usr/local/bin/backup.sh > /var/log/backup.log
 ```
 

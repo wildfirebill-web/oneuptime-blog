@@ -61,6 +61,7 @@ Only process readings that exceed defined thresholds. This is useful for anomaly
 
 ```python
 # threshold_filter.py
+
 # Filter sensor readings based on configurable thresholds
 # Reduces data volume by ignoring readings within normal ranges
 
@@ -666,7 +667,7 @@ if __name__ == "__main__":
         print(f"Value: {data['value']:6.1f}C -> {decision.action.value:15s} (reason: {decision.reason})")
 ```
 
-## Resource Constraints
+Resource Constraints
 
 Edge devices often have limited CPU, memory, and storage. Effective local processing must operate within these constraints.
 
@@ -695,7 +696,7 @@ flowchart LR
     style P fill:#c8e6c9
 ```
 
-### Resource-Aware Processor
+Resource-Aware Processor
 
 ```python
 # resource_manager.py

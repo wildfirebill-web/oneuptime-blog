@@ -35,6 +35,7 @@ The core setup involves configuring your logging system to automatically inject 
 
 ```python
 # correlated_logging.py
+
 import logging
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

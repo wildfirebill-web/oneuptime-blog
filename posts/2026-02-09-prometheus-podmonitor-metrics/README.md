@@ -31,6 +31,7 @@ Here's a simple PodMonitor that scrapes metrics from application pods:
 
 ```yaml
 # basic-podmonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:

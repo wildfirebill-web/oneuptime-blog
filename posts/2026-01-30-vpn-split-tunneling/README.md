@@ -105,6 +105,7 @@ Linux provides powerful tools for implementing split tunneling using routing tab
 # split-tunnel.sh - Configure split tunneling on Linux
 
 # Configuration
+
 VPN_INTERFACE="tun0"
 VPN_GATEWAY="10.8.0.1"
 CORPORATE_NETWORKS=("10.0.0.0/8" "172.16.0.0/12" "192.168.100.0/24")

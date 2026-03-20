@@ -20,6 +20,7 @@ The simplest idempotency pattern. Skip the command if a file exists (or does not
 
 ```yaml
 # creates_removes.yml - File-based idempotency
+
 ---
 - name: File-based idempotency
   hosts: all

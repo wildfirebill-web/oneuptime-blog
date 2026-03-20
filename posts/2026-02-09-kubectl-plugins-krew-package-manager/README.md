@@ -20,6 +20,7 @@ Install Krew on Linux or macOS:
 
 ```bash
 # Install Krew
+
 (
   set -x; cd "$(mktemp -d)" &&
   OS="$(uname | tr '[:upper:]' '[:lower:]')" &&
@@ -125,7 +126,7 @@ kubectl ns -
 
 These replace the verbose `kubectl config use-context` and `kubectl config set-context --current --namespace` commands. The `-` flag switches to the previous context or namespace, similar to `cd -` in bash.
 
-## Resource Analysis Plugins
+Resource Analysis Plugins
 
 Analyze cluster resource usage with capacity plugins:
 
@@ -174,7 +175,7 @@ diff dirty.yaml clean.yaml
 
 This strips out status fields, managed fields, and other cluster-generated data, leaving only the essential configuration. It's invaluable when copying resources between clusters or creating templates.
 
-## Resource Hierarchy Visualization
+Resource Hierarchy Visualization
 
 The `tree` plugin shows resource ownership hierarchies:
 

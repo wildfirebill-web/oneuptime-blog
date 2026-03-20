@@ -16,6 +16,7 @@ Before migrating, inventory your current usage:
 
 ```bash
 # List all workspaces
+
 terraform workspace list
 
 # Check provider versions in use
@@ -120,7 +121,7 @@ tofu validate
 tofu plan
 ```
 
-Review the plan carefully — it should show no changes if migration was successful.
+Review the plan carefully - it should show no changes if migration was successful.
 
 ## Conclusion
 

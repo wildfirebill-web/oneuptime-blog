@@ -28,6 +28,7 @@ graph LR
 
 ```bash
 # Add Elastic repository
+
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   sudo gpg --dearmor -o /usr/share/keyrings/elastic-keyring.gpg
 
@@ -99,7 +100,7 @@ sudo systemctl start elastiflow
 
 Send NetFlow from your Cisco router to ElastiFlow:
 
-```
+```bash
 ! NetFlow v9 to ElastiFlow
 Router(config)# ip flow-export destination 192.168.1.200 2055
 Router(config)# ip flow-export version 9

@@ -36,6 +36,7 @@ Let's create a Windows pod with host networking enabled. Here's a basic example:
 
 ```yaml
 # windows-host-network-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

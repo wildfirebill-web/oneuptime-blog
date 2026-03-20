@@ -18,6 +18,7 @@ The `podman network inspect` command provides detailed information about a netwo
 
 ```bash
 # Inspect a network by name
+
 podman network inspect mynetwork
 
 # Inspect the default network

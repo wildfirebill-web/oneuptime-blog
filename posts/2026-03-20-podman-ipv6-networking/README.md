@@ -14,6 +14,7 @@ Podman's default network configuration may not include IPv6. Enable it per-netwo
 
 ```bash
 # Check default network configuration
+
 podman network inspect podman
 
 # Check if IPv6 is enabled on default bridge

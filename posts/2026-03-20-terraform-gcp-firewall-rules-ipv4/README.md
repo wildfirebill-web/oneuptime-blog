@@ -89,7 +89,7 @@ resource "google_compute_firewall" "deny_all_ingress" {
   }
 
   source_ranges = ["0.0.0.0/0"]
-  description   = "Deny all inbound — catch-all"
+  description   = "Deny all inbound - catch-all"
 }
 ```
 
@@ -135,4 +135,4 @@ resource "google_compute_firewall" "allow_from_sa" {
 
 ## Conclusion
 
-GCP firewall rules in Terraform use `google_compute_firewall` resources with `allow` or `deny` blocks. Prefer tag-based targeting over CIDR-based for dynamic VM fleets — VMs automatically receive firewall rules when tagged. Service account-based rules are more secure for GCP-native workloads. Use priority 65534 for a deny-all catch-all rule.
+GCP firewall rules in Terraform use `google_compute_firewall` resources with `allow` or `deny` blocks. Prefer tag-based targeting over CIDR-based for dynamic VM fleets - VMs automatically receive firewall rules when tagged. Service account-based rules are more secure for GCP-native workloads. Use priority 65534 for a deny-all catch-all rule.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Git Branching, Environment
+Tags: ArgoCD, GitOps, Kubernetes, Git Branching, Environments
 
 Description: Learn how to implement the branch-per-environment pattern in ArgoCD where each Git branch represents a different deployment environment like dev, staging, and production.
 
@@ -25,6 +25,7 @@ Each ArgoCD Application points to a different `targetRevision` (branch) from the
 
 ```yaml
 # Dev application - tracks the develop branch
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

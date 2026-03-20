@@ -36,6 +36,7 @@ ansible all -i inventory.ini -m shell \
 
 ```bash
 # Remove Flannel
+
 kubectl delete -f kube-flannel.yml
 ```
 

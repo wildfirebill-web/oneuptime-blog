@@ -101,6 +101,7 @@ When a container tries to use more CPU than its limit, the kernel throttles it. 
 
 ```bash
 # Check CPU throttling for a pod
+
 kubectl top pod web-server
 
 # Get detailed throttling metrics from cgroups
@@ -345,7 +346,7 @@ spec:
       # No resources specified - defaults apply
 ```
 
-## ResourceQuota - Namespace Limits
+ResourceQuota - Namespace Limits
 
 ResourceQuota limits total resource consumption within a namespace. This prevents any single team or application from consuming all cluster resources.
 

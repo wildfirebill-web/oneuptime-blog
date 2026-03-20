@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Python, IPv4, Networking, asyncio, websockets
+Tags: WebSocket, Python, IPv4, Networking, Asyncio
 
 Description: Learn how to create a WebSocket server bound to a specific IPv4 address in Python using the websockets library, with connection handling, broadcasting, and graceful shutdown.
 
@@ -129,7 +129,7 @@ async def main():
     async with websockets.serve(handler, "0.0.0.0", 8765) as server:
         print("WebSocket server started")
         await stop
-        print("Shutting down — closing all connections")
+        print("Shutting down - closing all connections")
         for ws in list(connected):
             await ws.close(1001, "Server shutting down")
 

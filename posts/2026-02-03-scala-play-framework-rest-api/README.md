@@ -32,6 +32,7 @@ Play takes a different approach from traditional Java frameworks. Instead of XML
 
 ```bash
 # Create a new Play Scala project
+
 sbt new playframework/play-scala-seed.g8
 
 # You will be prompted for project details

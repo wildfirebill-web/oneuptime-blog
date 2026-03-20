@@ -104,6 +104,7 @@ FLUSH PRIVILEGES;
 
 ```bash
 # Test connection from IPv6 client
+
 mysql -h 2001:db8::10 -u webapp -p webapp_db
 
 # Show current connections

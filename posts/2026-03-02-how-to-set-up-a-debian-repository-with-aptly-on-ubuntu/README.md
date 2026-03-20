@@ -14,6 +14,7 @@ aptly is a feature-rich tool for managing Debian package repositories. It suppor
 
 ```bash
 # Add aptly repository
+
 wget -qO - https://www.aptly.info/pubkey.txt | sudo apt-key add -
 echo "deb http://repo.aptly.info/ squeeze main" | \
   sudo tee /etc/apt/sources.list.d/aptly.list

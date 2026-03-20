@@ -26,6 +26,7 @@ This guide covers automation patterns for cilium-dbg bgp operations, from schedu
 ```bash
 #!/bin/bash
 # collect-bgp-state.sh
+
 set -euo pipefail
 
 NAMESPACE="${CILIUM_NAMESPACE:-kube-system}"

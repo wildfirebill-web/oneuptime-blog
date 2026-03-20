@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, pathping, IPv4, Diagnostics, Network Troubleshooting
+Tags: Windows, Networking, Pathping, IPv4, Diagnostics, Network Troubleshooting
 
 Description: Use pathping on Windows to combine the hop-by-hop path discovery of tracert with the packet loss statistics of ping, identifying which specific hops have loss or delay.
 
@@ -31,7 +31,7 @@ pathping runs in two phases:
 
 ## Reading pathping Output
 
-```
+```text
 Tracing route to 8.8.8.8
   0  MY-PC [192.168.1.100]
   1  192.168.1.1

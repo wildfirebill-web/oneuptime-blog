@@ -23,6 +23,7 @@ Jenkins requires Java. The LTS versions of Jenkins (which is what you want for p
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install OpenJDK 21 (recommended for Jenkins LTS 2.x)

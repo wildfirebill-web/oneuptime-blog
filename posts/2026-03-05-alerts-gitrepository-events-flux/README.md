@@ -26,6 +26,7 @@ This alert watches every GitRepository resource in the `flux-system` namespace.
 
 ```yaml
 # Alert monitoring all GitRepository events in flux-system
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

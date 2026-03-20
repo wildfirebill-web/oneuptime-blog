@@ -935,6 +935,7 @@ spec:
 
 ```yaml
 # Kong Gateway configuration
+
 apiVersion: configuration.konghq.com/v1
 kind: KongIngress
 metadata:

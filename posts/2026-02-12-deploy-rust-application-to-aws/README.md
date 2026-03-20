@@ -20,6 +20,7 @@ Set up your dependencies in Cargo.toml:
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "my-rust-app"
 version = "0.1.0"

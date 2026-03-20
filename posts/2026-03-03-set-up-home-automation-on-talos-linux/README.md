@@ -30,6 +30,7 @@ First, identify the USB device on the Talos node:
 
 ```bash
 # Check USB devices on the node
+
 talosctl get usbdevices --nodes 192.168.1.101
 ```
 

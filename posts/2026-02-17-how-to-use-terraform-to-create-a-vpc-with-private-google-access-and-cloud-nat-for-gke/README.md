@@ -43,6 +43,7 @@ Start with the VPC itself. For GKE, you need a custom-mode VPC with subnets that
 
 ```hcl
 # vpc.tf - Custom VPC with subnets configured for GKE
+
 # Auto-create is disabled so we control the subnet configuration
 
 resource "google_compute_network" "main" {

@@ -138,6 +138,7 @@ The Dockerfile follows best practices: multi-stage build, non-root user, and hea
 
 ```dockerfile
 # Build stage: compile TypeScript and install dependencies
+
 FROM node:20-alpine AS builder
 
 WORKDIR /app

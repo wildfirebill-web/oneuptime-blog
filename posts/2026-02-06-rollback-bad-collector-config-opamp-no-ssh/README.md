@@ -126,6 +126,7 @@ Trigger a rollback with a simple curl command:
 
 ```bash
 # Roll back the default group to the previous configuration
+
 curl -X POST "https://opamp-server.internal/api/rollback?group=default"
 ```
 

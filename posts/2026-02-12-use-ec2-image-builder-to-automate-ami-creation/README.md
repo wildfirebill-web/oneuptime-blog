@@ -63,6 +63,7 @@ Components are the building blocks of your image. Each component is a YAML docum
 
 ```yaml
 # component-install-nginx.yml
+
 # This component installs Nginx, enables it, and creates a custom config
 name: InstallNginx
 description: Install and configure Nginx web server

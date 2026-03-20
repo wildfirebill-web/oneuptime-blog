@@ -30,6 +30,7 @@ Start by confirming the ClusterIP service is actually unreachable and not an app
 
 ```bash
 # Test ClusterIP connectivity from a debug pod
+
 kubectl run debug-net --image=nicolaka/netshoot --rm -it -- bash
 
 # Inside the pod, test the service

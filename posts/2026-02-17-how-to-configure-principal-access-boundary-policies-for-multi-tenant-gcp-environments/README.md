@@ -62,6 +62,7 @@ Create a PAB policy that defines the resource boundary for Tenant A:
 
 ```bash
 # Create a PAB policy for Tenant A
+
 # This defines the set of resources Tenant A principals can access
 gcloud iam principal-access-boundary-policies create tenant-a-boundary \
     --organization=ORG_ID \

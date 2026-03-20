@@ -33,6 +33,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 import time
 
 # Initialize tracing
+
 provider = TracerProvider()
 provider.add_span_processor(
     BatchSpanProcessor(OTLPSpanExporter(endpoint="http://otel-collector:4317"))

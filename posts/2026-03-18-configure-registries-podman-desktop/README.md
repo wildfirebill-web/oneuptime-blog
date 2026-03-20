@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Podman Desktop, Registries, Container Registry
+Tags: Podman, Containers, DevOps, Podman Desktop, Registry, Container Registry
 
 Description: Learn how to configure and manage container registries in Podman Desktop for pulling and pushing images to public and private repositories.
 
@@ -20,6 +20,7 @@ Podman searches registries in a defined order when you pull an image without spe
 
 ```bash
 # Pull an image using the full registry path
+
 podman pull docker.io/library/nginx:alpine
 
 # Pull from Quay.io

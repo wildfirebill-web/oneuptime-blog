@@ -50,6 +50,7 @@ helm-unittest is the most popular unit testing framework for Helm charts. It let
 
 ```bash
 # Install as a Helm plugin
+
 helm plugin install https://github.com/helm-unittest/helm-unittest.git
 
 # Verify

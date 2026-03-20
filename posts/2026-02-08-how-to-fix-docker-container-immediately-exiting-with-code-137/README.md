@@ -26,6 +26,7 @@ Check the container's exit status:
 
 ```bash
 # View the container's exit code and details
+
 docker inspect my-container --format '{{.State.ExitCode}} {{.State.OOMKilled}} {{.State.FinishedAt}}'
 
 # Check if the container was OOM killed

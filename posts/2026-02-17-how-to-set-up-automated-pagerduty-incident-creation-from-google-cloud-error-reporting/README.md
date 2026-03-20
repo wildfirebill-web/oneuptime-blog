@@ -20,6 +20,7 @@ Error Reporting surfaces errors as metrics in Cloud Monitoring. You can create a
 
 ```bash
 # Create a PagerDuty notification channel in Cloud Monitoring
+
 gcloud alpha monitoring channels create \
   --type=pagerduty \
   --display-name="PagerDuty - Application Errors" \

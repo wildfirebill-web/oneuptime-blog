@@ -26,6 +26,7 @@ Start by replicating the node topology:
 
 ```bash
 # If production has 3 control plane + 5 worker nodes,
+
 # staging should have at least 3 control plane + 2-3 worker nodes
 
 # Generate staging machine configs

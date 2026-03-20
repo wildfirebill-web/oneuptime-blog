@@ -321,6 +321,7 @@ dig @localhost db.example.com A +short
 
 dig @localhost gitlab.internal.corp A +short
 # Should return 192.168.1.70
+
 ```
 
 Test external view from an external client:

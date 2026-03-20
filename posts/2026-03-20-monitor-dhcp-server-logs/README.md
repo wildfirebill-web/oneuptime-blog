@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Monitoring, Logging, Linux, sysadmin, Network Diagnostics
+Tags: DHCP, Monitoring, Logging, Linux, Sysadmin, Network Diagnostics
 
 Description: DHCP server logs record every lease assignment, renewal, release, and error, providing an audit trail for network troubleshooting, security analysis, and capacity planning.
 
@@ -12,6 +12,7 @@ By default, ISC dhcpd logs to syslog (typically `/var/log/syslog` or via journal
 
 ```bash
 # Real-time log monitoring
+
 journalctl -u isc-dhcp-server -f
 
 # Recent log entries
@@ -27,7 +28,7 @@ grep dhcpd /var/log/syslog | tail -50
 
 ## Enabling Detailed Logging in dhcpd
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 log-facility local7;
 ```
@@ -40,7 +41,7 @@ sudo systemctl restart rsyslog
 ## Parsing Log Entries
 
 Typical log entries:
-```
+```text
 DHCPDISCOVER from aa:bb:cc:dd:ee:ff via eth0
 DHCPOFFER on 192.168.1.105 to aa:bb:cc:dd:ee:ff via eth0
 DHCPREQUEST for 192.168.1.105 (10.0.0.53) from aa:bb:cc:dd:ee:ff via eth0
@@ -87,7 +88,7 @@ grep -c "binding state active" /var/lib/dhcp/dhcpd.leases
 ## Windows Server DHCP Audit Logs
 
 Windows DHCP audit log location:
-```
+```text
 C:\Windows\System32\dhcp\DhcpSrvLog-Mon.log
 ```
 

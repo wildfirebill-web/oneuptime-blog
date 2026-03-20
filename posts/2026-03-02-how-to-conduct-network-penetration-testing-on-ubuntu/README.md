@@ -16,6 +16,7 @@ Before starting any engagement, prepare your tools:
 
 ```bash
 # Install core network testing tools
+
 sudo apt update
 sudo apt install nmap masscan netcat-openbsd nikto hydra john \
   smbclient enum4linux onesixtyone snmp sqlmap curl wget \
@@ -272,7 +273,7 @@ ss -tlnp
 
 The report is the primary deliverable. Document findings systematically:
 
-```bash
+````bash
 # Create a findings directory
 mkdir -p /tmp/${ENGAGEMENT}/reports
 
@@ -299,9 +300,9 @@ Base: X.X (CVSSv3)
 [Describe the vulnerability]
 
 ## Evidence
-\`\`\`
+```
 [Command output or screenshot description]
-\`\`\`
+```
 
 ## Impact
 [What an attacker could do with this vulnerability]
@@ -313,7 +314,7 @@ Base: X.X (CVSSv3)
 - CVE-XXXX-XXXX
 - https://vendor-advisory-url
 EOF
-```
+````
 
 ## Scope and Rules of Engagement
 

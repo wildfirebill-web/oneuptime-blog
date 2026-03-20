@@ -32,6 +32,7 @@ The EFI System Partition (ESP) is created on UEFI-based systems. It contains the
 
 ```bash
 # View the EFI partition details
+
 talosctl get volumes EFI --nodes 192.168.1.10 -o yaml
 ```
 

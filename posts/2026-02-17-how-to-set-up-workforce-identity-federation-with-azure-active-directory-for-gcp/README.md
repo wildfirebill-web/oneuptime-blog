@@ -58,6 +58,7 @@ Configure the token to include group claims:
 
 ```bash
 # Create a workforce identity pool for Azure AD users
+
 gcloud iam workforce-pools create azure-ad-pool \
   --organization=123456789 \
   --location=global \

@@ -45,6 +45,7 @@ First, generate a dedicated signing key for your project. Using a separate key f
 
 ```bash
 # Generate a new GPG key specifically for code signing
+
 # Use RSA with 4096 bits for strong security
 # Set an expiration date to limit exposure if compromised
 gpg --full-generate-key

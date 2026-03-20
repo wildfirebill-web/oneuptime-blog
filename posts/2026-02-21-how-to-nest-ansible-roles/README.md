@@ -28,6 +28,7 @@ The most flexible way to nest roles is using `include_role` inside your role's t
 
 ```yaml
 # roles/webapp/tasks/main.yml
+
 # Orchestrate sub-roles dynamically
 ---
 - name: Apply base system configuration

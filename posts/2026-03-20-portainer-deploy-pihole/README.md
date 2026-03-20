@@ -1,4 +1,4 @@
-# How to Deploy Pi-hole via Portainer
+# How to Deploy Pi-hole via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -88,6 +88,7 @@ In your router's DHCP settings, change the DNS server to Pi-hole's IP (e.g., `19
 
 ```bash
 # Add custom DNS entries via Pi-hole CLI
+
 docker exec pihole pihole -a --localrecord=mynas.local 192.168.1.50
 docker exec pihole pihole -a --localrecord=portainer.local 192.168.1.100
 

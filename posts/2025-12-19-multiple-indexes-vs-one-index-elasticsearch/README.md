@@ -438,6 +438,7 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch("http://localhost:9200")
 
 # Search across multiple indexes
+
 def search_all_entities(query_text):
     response = es.search(
         index="users,orders,products",

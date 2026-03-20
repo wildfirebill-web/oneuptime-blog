@@ -25,6 +25,7 @@ If the Talos node itself cannot resolve DNS names, you will see failures in imag
 
 ```bash
 # Check configured nameservers
+
 talosctl -n <node-ip> get resolvers
 
 # Check the host DNS configuration

@@ -26,6 +26,7 @@ Start with built-in Docker commands:
 
 ```bash
 # View container logs
+
 docker logs <container_id>
 
 # Follow logs in real-time (like tail -f)

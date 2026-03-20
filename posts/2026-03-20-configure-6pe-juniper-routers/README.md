@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, 6PE, Juniper, JunOS, MPLS, BGP, LDP
+Tags: IPv6, 6PE, Juniper, Junos, MPLS, BGP, LDP
 
 Description: Configure 6PE (IPv6 Provider Edge) on Juniper routers running JunOS, including MPLS LDP configuration, MP-BGP inet6 address family, and verification commands.
 
@@ -12,8 +12,9 @@ Juniper JunOS supports 6PE through the `inet6` address family in BGP with labele
 
 ## JunOS MPLS and LDP Configuration
 
-```
+```text
 # PE1 JunOS - Configure MPLS and LDP on backbone interfaces
+
 set protocols mpls interface ge-0/0/0.0
 set protocols ldp interface ge-0/0/0.0
 
@@ -30,7 +31,7 @@ show interfaces ge-0/0/0 | match mpls
 
 ## JunOS BGP IPv6 for 6PE
 
-```
+```text
 # PE1 - Configure BGP group for PE-PE 6PE sessions
 set protocols bgp group PE-iBGP type internal
 set protocols bgp group PE-iBGP local-address 10.0.0.1
@@ -52,7 +53,7 @@ set interfaces ge-0/0/1 unit 0 family inet6 address 2001:db8:pe1-ce1::1/64
 
 ## JunOS PE Router Full Configuration
 
-```
+```text
 # /etc/junos (equivalent set commands)
 
 # Interfaces
@@ -92,7 +93,7 @@ set protocols bgp group CE-PEERING neighbor 2001:db8:pe1-ce1::2
 
 ## CE Router JunOS Configuration
 
-```
+```bash
 # Customer Edge Router
 set interfaces ge-0/0/0 unit 0 family inet6 address 2001:db8:pe1-ce1::2/64
 
@@ -146,7 +147,7 @@ traceroute inet6 2001:db8:site2::10 source 2001:db8:site1::1
 
 ## Policy for 6PE Next-Hop
 
-```
+```bash
 # JunOS - BGP export policy for 6PE
 # Set IPv4-mapped IPv6 next-hop for iBGP advertisement
 

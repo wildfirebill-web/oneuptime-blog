@@ -63,6 +63,7 @@ Download and install the NATS server binary on each node.
 
 ```bash
 # Download the latest NATS server release
+
 curl -L https://github.com/nats-io/nats-server/releases/download/v2.10.7/nats-server-v2.10.7-linux-amd64.tar.gz -o nats-server.tar.gz
 
 # Extract the archive

@@ -61,6 +61,7 @@ Then use it in your Helm templates:
 
 ```yaml
 # charts/backend-api/templates/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

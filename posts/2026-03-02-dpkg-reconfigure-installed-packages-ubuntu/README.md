@@ -20,6 +20,7 @@ Not all packages use debconf, so not all packages respond meaningfully to `dpkg-
 
 ```bash
 # Reconfigure a package interactively
+
 sudo dpkg-reconfigure package-name
 
 # Run with lower priority (shows more questions, not just high-priority ones)

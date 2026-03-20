@@ -397,6 +397,7 @@ Guide your users toward secure credential management.
 
 ```hcl
 # BAD: Credentials hardcoded in configuration
+
 provider "myservice" {
   api_key = "sk-1234567890abcdef"  # Do not do this
 }

@@ -28,6 +28,7 @@ FedRAMP CM-2 requires a documented, controlled baseline configuration. Your Flux
 
 ```yaml
 # clusters/fedramp/flux-system/baseline-metadata.yaml
+
 # Document the baseline version in a ConfigMap for CM-2 evidence
 apiVersion: v1
 kind: ConfigMap

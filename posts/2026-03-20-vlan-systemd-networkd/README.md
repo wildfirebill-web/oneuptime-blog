@@ -21,6 +21,7 @@ The `.netdev` file defines the VLAN virtual device:
 
 ```ini
 # /etc/systemd/network/10-vlan100.netdev
+
 [NetDev]
 # Name of the VLAN interface
 Name=eth0.100

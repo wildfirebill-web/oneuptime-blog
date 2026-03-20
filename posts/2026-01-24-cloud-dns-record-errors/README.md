@@ -44,6 +44,7 @@ You created DNS records but they are not resolving.
 
 ```bash
 # Check if the record exists in Cloud DNS
+
 gcloud dns record-sets list \
     --zone=my-zone \
     --filter="name=api.example.com."

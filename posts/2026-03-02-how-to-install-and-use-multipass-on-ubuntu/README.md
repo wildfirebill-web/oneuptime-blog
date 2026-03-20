@@ -26,6 +26,7 @@ Multipass is distributed as a snap package:
 
 ```bash
 # Install multipass via snap
+
 sudo snap install multipass
 
 # Verify installation

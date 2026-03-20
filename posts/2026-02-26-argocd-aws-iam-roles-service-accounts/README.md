@@ -35,6 +35,7 @@ The flow:
 
 ```bash
 # Check if OIDC is already configured
+
 aws eks describe-cluster --name my-cluster --query "cluster.identity.oidc" --output text
 
 # If not, create it

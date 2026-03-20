@@ -56,6 +56,7 @@ connection = pika.BlockingConnection(
 channel = connection.channel()
 
 # Declare a quorum queue
+
 # x-queue-type: quorum makes it a quorum queue
 channel.queue_declare(
     queue='orders',

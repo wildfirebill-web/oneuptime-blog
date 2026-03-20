@@ -26,6 +26,7 @@ You can only use the wildcard as the leftmost label:
 
 ```yaml
 # Valid
+
 hosts:
   - "*.example.com"
   - "*.us-east-1.amazonaws.com"

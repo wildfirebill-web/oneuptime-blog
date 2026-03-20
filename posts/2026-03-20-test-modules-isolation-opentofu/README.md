@@ -8,7 +8,7 @@ Description: Discover strategies for testing OpenTofu modules in complete isolat
 
 ## Introduction
 
-Module isolation testing means verifying a module's logic independent of its dependencies—other modules, real cloud providers, or external data sources. This approach produces fast, deterministic tests that can run without any credentials.
+Module isolation testing means verifying a module's logic independent of its dependencies-other modules, real cloud providers, or external data sources. This approach produces fast, deterministic tests that can run without any credentials.
 
 ## The Isolation Testing Philosophy
 
@@ -28,6 +28,7 @@ Consider a VPC module with no child module dependencies:
 
 ```hcl
 # modules/vpc/main.tf
+
 resource "aws_vpc" "this" {
   cidr_block           = var.cidr_block
   enable_dns_hostnames = var.enable_dns_hostnames
@@ -142,7 +143,7 @@ run "application_layer_configuration" {
 
 ## Directory Structure for Isolated Tests
 
-```
+```text
 modules/
   networking/
     main.tf
@@ -171,4 +172,4 @@ tofu test -test-directory=tests/unit
 
 ## Conclusion
 
-Testing modules in isolation is the foundation of a reliable infrastructure testing strategy. By combining mock providers, resource overrides, and module overrides, you can achieve high test coverage across your entire module library—quickly, cheaply, and without cloud access.
+Testing modules in isolation is the foundation of a reliable infrastructure testing strategy. By combining mock providers, resource overrides, and module overrides, you can achieve high test coverage across your entire module library-quickly, cheaply, and without cloud access.

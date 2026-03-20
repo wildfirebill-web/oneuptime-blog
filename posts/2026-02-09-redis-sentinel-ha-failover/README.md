@@ -31,6 +31,7 @@ First, deploy a Redis master with replicas using StatefulSets:
 
 ```yaml
 # redis-master-replica.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

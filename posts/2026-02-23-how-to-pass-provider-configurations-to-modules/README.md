@@ -25,6 +25,7 @@ When you do not specify a `providers` argument, the module inherits the default 
 
 ```hcl
 # Root module configures a default AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

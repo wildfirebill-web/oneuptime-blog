@@ -20,6 +20,7 @@ Before creating a farm, you need at least one system connection:
 
 ```bash
 # List existing system connections
+
 podman system connection list
 
 # If you have no connections, add them first

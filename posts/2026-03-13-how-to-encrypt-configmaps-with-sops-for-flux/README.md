@@ -92,6 +92,7 @@ Alternatively, split your ConfigMap into sensitive and non-sensitive parts:
 
 ```yaml
 # plain-configmap.yaml (not encrypted)
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

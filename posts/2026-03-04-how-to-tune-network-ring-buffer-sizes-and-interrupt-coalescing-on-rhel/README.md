@@ -14,6 +14,7 @@ Network interface cards (NICs) use ring buffers to queue packets between the har
 
 ```bash
 # View current and maximum ring buffer sizes
+
 ethtool -g ens192
 
 # Output shows:

@@ -34,6 +34,7 @@ This enables S3 data event analysis on your existing GuardDuty detector:
 
 ```bash
 # Enable S3 Protection
+
 aws guardduty update-detector \
   --detector-id abc123def456 \
   --features '[

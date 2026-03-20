@@ -24,6 +24,7 @@ The most common quotas limit CPU and memory.
 
 ```yaml
 # compute-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

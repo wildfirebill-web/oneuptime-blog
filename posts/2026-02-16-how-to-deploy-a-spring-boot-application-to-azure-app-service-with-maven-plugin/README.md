@@ -155,6 +155,7 @@ Before deploying, you need to authenticate. The simplest way is through the Azur
 
 ```bash
 # Login to Azure
+
 az login
 
 # Verify your subscription

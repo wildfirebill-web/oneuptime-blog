@@ -288,6 +288,7 @@ echo "Create DNS A record: grafana.example.com -> $GATEWAY_IP"
 
 ```bash
 # Test HTTPS access
+
 curl -I https://grafana.example.com/api/health
 
 # Expected response:

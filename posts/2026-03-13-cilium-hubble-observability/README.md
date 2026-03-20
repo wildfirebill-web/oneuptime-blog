@@ -53,6 +53,7 @@ tar xzvf hubble-linux-amd64.tar.gz
 sudo mv hubble /usr/local/bin/
 
 # Configure Hubble CLI to connect through port-forward
+
 kubectl port-forward -n kube-system svc/hubble-relay 4245:80 &
 export HUBBLE_SERVER=localhost:4245
 ```

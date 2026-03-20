@@ -66,6 +66,7 @@ This configuration defines log categories with their retention periods and compl
 
 ```yaml
 # log-retention-config.yaml
+
 # Defines retention rules by log category
 
 log_categories:

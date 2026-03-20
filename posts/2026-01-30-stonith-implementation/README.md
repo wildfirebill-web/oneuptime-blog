@@ -90,6 +90,7 @@ The right agent depends on your infrastructure:
 
 ```bash
 # List all available STONITH agents
+
 pcs stonith list
 
 # Get detailed info about a specific agent

@@ -626,6 +626,7 @@ Alert when connection pool is near capacity:
 
 ```yaml
 # Prometheus alert rule
+
 - alert: MySQLHighConnectionUsage
   expr: |
     (mysql.threads.connected / mysql.connection.max) > 0.8

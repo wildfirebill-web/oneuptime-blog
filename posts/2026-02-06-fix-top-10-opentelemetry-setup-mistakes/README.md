@@ -46,6 +46,7 @@ Port 4317 is for gRPC. Port 4318 is for HTTP/protobuf. Sending HTTP traffic to 4
 
 ```yaml
 # Collector config - both receivers enabled
+
 receivers:
   otlp:
     protocols:

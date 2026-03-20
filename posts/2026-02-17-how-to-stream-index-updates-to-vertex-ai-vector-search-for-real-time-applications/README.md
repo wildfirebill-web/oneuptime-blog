@@ -43,6 +43,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Create the index with streaming updates enabled
+
 index = aiplatform.MatchingEngineIndex.create_tree_ah_index(
     display_name="product-embeddings-streaming",
     contents_delta_uri="gs://your-bucket/initial-vectors/",  # Initial vector data

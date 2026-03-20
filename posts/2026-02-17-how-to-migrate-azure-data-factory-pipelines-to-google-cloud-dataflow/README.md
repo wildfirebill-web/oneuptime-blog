@@ -46,6 +46,7 @@ For straightforward data movement, you have several options. Here is a Dataflow 
 
 ```bash
 # Use a Dataflow template for simple data movement
+
 # This replaces an ADF Copy Data activity from Cloud Storage to BigQuery
 gcloud dataflow jobs run copy-csv-to-bq \
     --gcs-location=gs://dataflow-templates/latest/GCS_Text_to_BigQuery \

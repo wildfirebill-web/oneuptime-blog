@@ -23,6 +23,7 @@ The most common fix: add explicit Allow rules for DNS and HTTPS egress in the na
 
 ```yaml
 # fix-external-api-egress.yaml
+
 # Namespace-scoped policy to allow external API access
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy

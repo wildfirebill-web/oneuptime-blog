@@ -78,6 +78,7 @@ compatibility_date = "2026-02-01"
 OTEL_EXPORTER_OTLP_ENDPOINT = "https://collector.example.com/v1/traces"
 
 # Store API keys as secrets (not in config)
+
 # wrangler secret put OTEL_API_KEY
 ```
 

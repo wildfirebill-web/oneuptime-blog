@@ -121,6 +121,7 @@ session.mount('http://', HTTPAdapter(max_retries=retries))
 session.mount('https://', HTTPAdapter(max_retries=retries))
 
 # This will retry up to 5 times with exponential backoff
+
 response = session.get('http://config-service:8080/config')
 ```
 

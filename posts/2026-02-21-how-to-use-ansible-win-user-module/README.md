@@ -16,6 +16,7 @@ The simplest operation is creating a new local user with a password.
 
 ```yaml
 # create-user.yml - Create a local Windows user
+
 ---
 - name: Create local users on Windows
   hosts: windows_servers

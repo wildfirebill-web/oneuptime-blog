@@ -18,6 +18,7 @@ The Metrics Server is a prerequisite for resource-based autoscaling. It collects
 
 ```bash
 # Install Metrics Server
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # On some Talos setups, you may need to patch for TLS

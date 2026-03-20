@@ -8,7 +8,7 @@ Description: Understand and configure NeuVector's Discover mode to automatically
 
 ## Introduction
 
-Discover mode is NeuVector's learning phase — it observes container activity without enforcing any rules or generating blocking actions. During Discover mode, NeuVector builds a comprehensive picture of your application's normal behavior: which processes run, what network connections are made, and which files are accessed. This baseline becomes the foundation for your security policies.
+Discover mode is NeuVector's learning phase - it observes container activity without enforcing any rules or generating blocking actions. During Discover mode, NeuVector builds a comprehensive picture of your application's normal behavior: which processes run, what network connections are made, and which files are accessed. This baseline becomes the foundation for your security policies.
 
 ## What Discover Mode Does
 
@@ -34,6 +34,7 @@ All newly discovered groups start in Discover mode by default:
 
 ```bash
 # Check which groups are in Discover mode
+
 curl -sk \
   "https://neuvector-manager:8443/v1/group?start=0&limit=100" \
   -H "X-Auth-Token: ${TOKEN}" | \

@@ -14,6 +14,7 @@ Open vSwitch (OVS) provides a more feature-rich alternative to the native Linux 
 
 ```bash
 # Install Open vSwitch
+
 apt install openvswitch-switch   # Ubuntu/Debian
 yum install openvswitch          # RHEL/CentOS
 

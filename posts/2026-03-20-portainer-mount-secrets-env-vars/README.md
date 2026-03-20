@@ -1,4 +1,4 @@
-# How to Mount Secrets as Environment Variables in Portainer
+# How to Mount Secrets as Environment Variables in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to inject Kubernetes Secret data as environment variables
 
 ## Introduction
 
-Injecting Secrets as environment variables is a common way to provide sensitive data — database passwords, API tokens, encryption keys — to applications without hardcoding them in source code or container images. Kubernetes Secrets are base64-encoded and access-controlled via RBAC, making them a better choice than ConfigMaps for sensitive data. Portainer supports Secret-backed environment variables through its form UI and YAML editor.
+Injecting Secrets as environment variables is a common way to provide sensitive data - database passwords, API tokens, encryption keys - to applications without hardcoding them in source code or container images. Kubernetes Secrets are base64-encoded and access-controlled via RBAC, making them a better choice than ConfigMaps for sensitive data. Portainer supports Secret-backed environment variables through its form UI and YAML editor.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Ensure the Secret exists before referencing it:
 
 ```bash
 # Verify Secret exists
+
 kubectl get secret my-app-secrets -n production
 
 # Check available keys (values are hidden)
@@ -51,7 +52,7 @@ When creating or editing an application in Portainer:
 1. Go to the **Environment variables** section
 2. Click **+ Add environment variable**
 3. Choose **Secret** as the source:
-   ```
+   ```text
    Environment variable name: DB_PASSWORD
    Source: Secret
    Secret name: my-app-secrets

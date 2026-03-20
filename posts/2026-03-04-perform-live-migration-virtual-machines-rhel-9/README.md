@@ -24,6 +24,7 @@ VMs being migrated must have their disk images on shared storage accessible from
 
 ```bash
 # Example: NFS shared storage on both hosts
+
 sudo mount nfs-server:/vm-images /var/lib/libvirt/images
 ```
 

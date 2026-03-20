@@ -31,6 +31,7 @@ You do NOT need to rebuild when:
 
 ```bash
 # Rebuild the initramfs for the currently running kernel
+
 sudo dracut --force
 
 # The --force flag is required when the initramfs file already exists

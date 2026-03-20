@@ -16,6 +16,7 @@ In this guide, we will cover how to implement active-active multi-region infrast
 
 ```hcl
 # providers.tf
+
 # Configure providers for each region
 
 provider "aws" {

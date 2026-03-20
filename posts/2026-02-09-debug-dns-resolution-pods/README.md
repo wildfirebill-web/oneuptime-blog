@@ -22,6 +22,7 @@ Start by checking if DNS resolution works at all from a test pod:
 
 ```bash
 # Create a debug pod with DNS tools
+
 kubectl run dns-debug --image=nicolaka/netshoot -it --rm -- /bin/bash
 
 # Inside the debug pod, test DNS resolution

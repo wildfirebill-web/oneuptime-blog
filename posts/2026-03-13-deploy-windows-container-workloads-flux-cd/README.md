@@ -29,6 +29,7 @@ This guide covers the fundamentals of deploying Windows container workloads with
 
 ```bash
 # Check that Windows nodes are present and ready
+
 kubectl get nodes -L kubernetes.io/os
 
 # Expected output:

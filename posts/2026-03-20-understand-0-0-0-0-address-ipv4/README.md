@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, Special Addresses, Socket Programming, Routing
 
-Description: The address 0.0.0.0 has multiple context-dependent meanings in IPv4, including the unspecified source address during DHCP, a wildcard binding address for servers, and the default route destination in routing tables.
+Description: The address 0.0.0.0 has multiple context-dependent meanings in IPv4, including the unspecified source address during DHCP, a wildcard binding address for servers, and the default route destination...
 
 ## The Three Contexts of 0.0.0.0
 
@@ -20,6 +20,7 @@ When a server binds to `0.0.0.0`, it listens on all available network interfaces
 import socket
 
 # Bind to ALL interfaces (wildcard)
+
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server.bind(("0.0.0.0", 8080))
@@ -32,7 +33,7 @@ print("Listening on all interfaces at port 8080")
 
 ### 3. Default Route
 
-In routing tables, `0.0.0.0/0` is the default route — it matches all destinations that have no more-specific route:
+In routing tables, `0.0.0.0/0` is the default route - it matches all destinations that have no more-specific route:
 
 ```bash
 # Linux: view default route

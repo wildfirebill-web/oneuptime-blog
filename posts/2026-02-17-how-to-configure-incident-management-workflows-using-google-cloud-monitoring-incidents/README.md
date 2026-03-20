@@ -26,6 +26,7 @@ Here is an example of creating a latency alerting policy using the gcloud CLI:
 
 ```bash
 # Create an alerting policy for high p99 latency on a Cloud Run service
+
 gcloud alpha monitoring policies create \
   --display-name="High Latency - Payment Service" \
   --condition-display-name="P99 latency > 2s" \

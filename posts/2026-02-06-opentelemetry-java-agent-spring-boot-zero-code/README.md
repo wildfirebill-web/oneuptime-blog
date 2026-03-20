@@ -37,6 +37,7 @@ First, download the latest OpenTelemetry Java agent JAR. This is a standalone fi
 
 ```bash
 # Download the latest agent (check for newer versions)
+
 curl -L https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v2.1.0/opentelemetry-javaagent.jar \
   -o opentelemetry-javaagent.jar
 

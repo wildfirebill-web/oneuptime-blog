@@ -16,6 +16,7 @@ Deploy Tempo using Docker or Kubernetes.
 
 ```yaml
 # tempo-config.yaml
+
 stream_over_http_enabled: true
 server:
   http_listen_port: 3200

@@ -30,6 +30,7 @@ Start by deploying Redis for low-latency feature serving:
 
 ```yaml
 # redis-deployment.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

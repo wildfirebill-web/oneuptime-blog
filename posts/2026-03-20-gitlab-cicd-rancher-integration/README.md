@@ -29,6 +29,7 @@ The following manifest creates a service account and binds it to the `edit` Clus
 
 ```yaml
 # gitlab-deploy-sa.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

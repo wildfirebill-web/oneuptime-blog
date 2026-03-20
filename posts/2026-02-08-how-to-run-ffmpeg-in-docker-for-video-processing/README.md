@@ -22,6 +22,7 @@ The simplest approach uses the linuxserver or jrottenberg FFmpeg images:
 
 ```bash
 # Transcode a video from MKV to MP4 using the jrottenberg/ffmpeg image
+
 docker run --rm \
   -v $(pwd)/media:/media \
   jrottenberg/ffmpeg:4.4-ubuntu \
@@ -271,7 +272,7 @@ docker run --rm -v $(pwd)/media:/media --entrypoint ffprobe \
   /media/video.mp4
 ```
 
-## Resource Management
+Resource Management
 
 Video transcoding is CPU-intensive. Limit container resources to prevent a transcoding job from starving other services:
 

@@ -73,6 +73,7 @@ Add these settings to your `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Persistent connections for network devices
+
 [persistent_connection]
 connect_timeout = 30
 connect_retry_timeout = 15

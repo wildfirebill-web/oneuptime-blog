@@ -45,6 +45,7 @@ Before upgrading, document your certificate setup:
 
 ```bash
 # Check if you are using a custom CA (cacerts secret)
+
 kubectl get secret cacerts -n istio-system -o yaml 2>/dev/null
 
 # Check the current root cert

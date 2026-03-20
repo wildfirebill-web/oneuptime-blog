@@ -26,6 +26,7 @@ Scaffold a Hono project:
 
 ```bash
 # Create a Hono project with the Node.js template
+
 npm create hono@latest my-hono-app
 cd my-hono-app
 npm install

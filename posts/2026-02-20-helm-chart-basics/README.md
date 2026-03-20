@@ -35,6 +35,7 @@ Before starting, make sure you have the following installed:
 
 ```bash
 # Install Helm (macOS)
+
 brew install helm
 
 # Verify installation

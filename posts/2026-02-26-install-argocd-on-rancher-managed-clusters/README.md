@@ -44,6 +44,7 @@ Rancher provides kubeconfig files for all managed clusters. You need the managem
 
 ```bash
 # Using Rancher CLI, login to Rancher
+
 rancher login https://rancher.yourdomain.com --token <your-api-token>
 
 # List available clusters

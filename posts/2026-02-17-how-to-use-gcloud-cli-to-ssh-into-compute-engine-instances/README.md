@@ -18,6 +18,7 @@ The simplest form of gcloud SSH requires just the instance name:
 
 ```bash
 # SSH into an instance (gcloud resolves the zone automatically)
+
 gcloud compute ssh my-instance --project=my-project
 ```
 

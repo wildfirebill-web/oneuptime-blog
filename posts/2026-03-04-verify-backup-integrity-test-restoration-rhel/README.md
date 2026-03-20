@@ -16,6 +16,7 @@ Test the archive without extracting:
 
 ```bash
 # Test the integrity of a gzip-compressed tar archive
+
 tar tzf /backup/full-backup-20260304.tar.gz > /dev/null
 echo "Exit code: $?"
 # Exit code 0 means the archive is intact

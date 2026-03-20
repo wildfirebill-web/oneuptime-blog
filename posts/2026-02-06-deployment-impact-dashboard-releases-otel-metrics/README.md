@@ -20,6 +20,7 @@ The simplest method is to call the Grafana Annotations API from your deployment 
 
 ```yaml
 # .github/workflows/deploy.yml (GitHub Actions example)
+
 # This step runs after the deployment succeeds
 - name: Annotate Grafana
   run: |

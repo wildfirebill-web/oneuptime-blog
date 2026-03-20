@@ -16,6 +16,7 @@ Before uninstalling Longhorn, complete these checks:
 
 ```bash
 # 1. List all PVCs using Longhorn
+
 kubectl get pvc --all-namespaces \
   -o json | \
   jq -r '.items[] | select(.spec.storageClassName == "longhorn") |
@@ -216,4 +217,4 @@ kubectl get pvc --all-namespaces | grep longhorn
 
 ## Conclusion
 
-Uninstalling Longhorn safely requires discipline and careful execution to prevent data loss. By following the sequence — migrate data first, scale down workloads, delete volumes, run the official uninstaller, then clean up remaining resources — you can completely remove Longhorn while maintaining control over your data. Never skip the data backup/migration step, as Longhorn data on local disks will not be recoverable once it is deleted.
+Uninstalling Longhorn safely requires discipline and careful execution to prevent data loss. By following the sequence - migrate data first, scale down workloads, delete volumes, run the official uninstaller, then clean up remaining resources - you can completely remove Longhorn while maintaining control over your data. Never skip the data backup/migration step, as Longhorn data on local disks will not be recoverable once it is deleted.

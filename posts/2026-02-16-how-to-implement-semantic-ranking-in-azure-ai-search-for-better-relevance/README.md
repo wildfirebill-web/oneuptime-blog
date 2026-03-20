@@ -40,6 +40,7 @@ You can also enable it via the Management REST API.
 
 ```bash
 # Enable semantic ranking on your search service using the Azure CLI
+
 az rest --method PATCH \
   --url "https://management.azure.com/subscriptions/<sub-id>/resourceGroups/<rg>/providers/Microsoft.Search/searchServices/<service-name>?api-version=2024-06-01-preview" \
   --body '{"properties": {"semanticSearch": "standard"}}'

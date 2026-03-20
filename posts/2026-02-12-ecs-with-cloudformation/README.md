@@ -339,6 +339,7 @@ Save the template and deploy:
 
 ```bash
 # Deploy the CloudFormation stack
+
 aws cloudformation deploy \
   --template-file ecs-stack.yaml \
   --stack-name production-app \

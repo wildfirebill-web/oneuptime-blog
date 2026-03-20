@@ -40,6 +40,7 @@ Scalar values are simply replaced:
 
 ```yaml
 # Base config has:
+
 machine:
   network:
     hostname: old-name

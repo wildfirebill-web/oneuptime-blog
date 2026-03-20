@@ -30,6 +30,7 @@ Start with a comprehensive multi-stream benchmark:
 
 ```bash
 # Deploy iperf3 server
+
 kubectl run iperf-server --image=networkstatic/iperf3 \
   --overrides='{"spec":{"nodeSelector":{"kubernetes.io/hostname":"node-1"}}}' \
   -- -s

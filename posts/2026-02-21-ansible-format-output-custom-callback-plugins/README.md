@@ -22,6 +22,7 @@ Adding timestamps to every line helps when reviewing long playbook runs:
 
 ```python
 # callback_plugins/timestamped.py - Add timestamps to all output
+
 from datetime import datetime
 from ansible.plugins.callback.default import CallbackModule as DefaultCallback
 

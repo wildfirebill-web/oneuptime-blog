@@ -181,6 +181,7 @@ Track when panic mode activates:
 
 ```promql
 # Check if any cluster is in panic mode
+
 envoy_cluster_membership_healthy{cluster_name=~"outbound.*my-service.*"}
 /
 envoy_cluster_membership_total{cluster_name=~"outbound.*my-service.*"}

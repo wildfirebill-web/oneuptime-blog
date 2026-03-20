@@ -81,6 +81,7 @@ From an internal client:
 ```bash
 dig @10.0.1.1 web.example.com
 # Should return 10.0.1.10
+
 ```
 
 From an external client:

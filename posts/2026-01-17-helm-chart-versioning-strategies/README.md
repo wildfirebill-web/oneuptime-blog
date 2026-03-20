@@ -43,6 +43,7 @@ flowchart TB
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: myapp
 description: My Application Helm Chart

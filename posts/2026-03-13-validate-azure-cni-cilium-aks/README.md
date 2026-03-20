@@ -29,6 +29,7 @@ Check that all Cilium agents are running and healthy across every node in the cl
 
 ```bash
 # Check Cilium DaemonSet rollout status
+
 kubectl -n kube-system rollout status daemonset/cilium
 
 # Verify all Cilium pods are in Running state

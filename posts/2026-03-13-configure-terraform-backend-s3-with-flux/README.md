@@ -32,6 +32,7 @@ You can use Terraform to bootstrap the state backend itself (stored locally for 
 # bootstrap/backend/main.tf
 
 # S3 bucket for Terraform state
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "my-org-terraform-state"
 

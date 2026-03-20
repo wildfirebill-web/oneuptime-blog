@@ -25,6 +25,7 @@ You need a Live USB to bootstrap the installation. Boot from an Ubuntu Server or
 
 ```bash
 # From the live environment, install ZFS tools
+
 sudo apt install -y zfsutils-linux debootstrap
 
 # Identify your target disk(s)

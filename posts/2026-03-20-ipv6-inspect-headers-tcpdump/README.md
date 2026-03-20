@@ -14,6 +14,7 @@ Description: Use tcpdump to capture and inspect IPv6 packet headers, including f
 
 ```bash
 # Capture all IPv6 traffic on eth0
+
 sudo tcpdump -i eth0 ip6
 
 # Verbose output (shows header fields)
@@ -139,7 +140,7 @@ sudo tcpdump -i eth0 -XX "ip6[6] == 44" | head -30
 
 ## Useful tcpdump Output Interpretation
 
-```
+```text
 Sample verbose output:
 20:30:00.000000 IP6 (class 0x10, flowlabel 0x2a3b4, hlim 64, next-header TCP (6), length 60)
 2001:db8::1.54321 > 2001:db8::2.443: Flags [S], seq 0, win 65535, options [mss 1440, sackOK, TS val 100 ecr 0], length 0

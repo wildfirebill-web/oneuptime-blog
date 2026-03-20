@@ -74,6 +74,7 @@ If you deploy MetalLB with Helm, set the class in your values file:
 
 ```yaml
 # values-metallb.yaml
+
 # Configure MetalLB to only handle services with this specific class
 # Services without this class will be ignored by MetalLB
 controller:

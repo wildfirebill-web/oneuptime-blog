@@ -20,6 +20,7 @@ Establish a standard set of tags for all resources:
 
 ```hcl
 # locals.tf - Define standard tags
+
 locals {
   # Required tags for every resource
   required_tags = {

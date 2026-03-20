@@ -28,6 +28,7 @@ Typha is configured through environment variables on the Typha deployment. The T
 
 ```bash
 # View current Typha environment variables
+
 kubectl get deployment -n calico-system calico-typha -o yaml | grep -A2 "name: TYPHA_"
 ```
 
@@ -55,7 +56,7 @@ Key configuration variables:
 
 Typha's connection settings control how many Felix instances each replica serves. If any single Typha pod is serving more than 150 connections, consider adding replicas. Connection rebalancing (enabled by default) helps distribute Felix connections evenly across Typha replicas when new replicas are added.
 
-## Resource Limits
+Resource Limits
 
 Set appropriate resource requests and limits for Typha pods:
 

@@ -31,6 +31,7 @@ This guide covers automated installation and version management of cilium-bugtoo
 ```bash
 #!/bin/bash
 # install-bugtool-fish-completion.sh
+
 # Automated installer for cilium-bugtool fish completions
 
 set -euo pipefail

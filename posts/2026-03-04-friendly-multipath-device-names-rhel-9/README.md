@@ -74,6 +74,7 @@ To set aliases, you need the WWID of each device:
 
 ```bash
 # From multipath
+
 sudo multipath -ll
 
 # From the device

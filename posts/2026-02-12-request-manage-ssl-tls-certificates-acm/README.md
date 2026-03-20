@@ -28,6 +28,7 @@ The most common case is requesting a certificate for a domain you control.
 
 ```bash
 # Request a certificate for a single domain
+
 aws acm request-certificate \
   --domain-name "app.example.com" \
   --validation-method DNS \

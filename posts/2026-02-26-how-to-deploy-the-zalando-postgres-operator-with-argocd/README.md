@@ -206,6 +206,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "-1"
 ---
 # Allow applications to access database secrets
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

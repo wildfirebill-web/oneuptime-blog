@@ -32,6 +32,7 @@ This guide provides a validation checklist that maps directly to the diagnosis a
 
 ```bash
 # Full cluster readiness overview
+
 kubectl get pods -n kube-system -l k8s-app=calico-node -o wide
 ```
 

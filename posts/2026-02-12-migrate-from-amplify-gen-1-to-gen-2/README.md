@@ -65,6 +65,7 @@ Before starting, inventory what your Gen 1 project uses:
 
 ```bash
 # List all Amplify resources in your Gen 1 project
+
 amplify status
 
 # Expected output:

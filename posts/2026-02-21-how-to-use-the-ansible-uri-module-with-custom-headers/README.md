@@ -18,6 +18,7 @@ The `headers` parameter accepts a dictionary of header name-value pairs:
 
 ```yaml
 # set custom HTTP headers on a request
+
 ---
 - name: Request with custom headers
   hosts: localhost

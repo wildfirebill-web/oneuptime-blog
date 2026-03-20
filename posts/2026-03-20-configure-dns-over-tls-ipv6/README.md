@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DoT, DNS over TLS, IPv6, Unbound, stunnel, Privacy, RFC 7858
+Tags: DoT, DNS over TLS, IPv6, Unbound, Stunnel, Privacy, RFC 7858
 
 Description: Configure DNS over TLS (DoT) on port 853 with IPv6 support using Unbound or stunnel, enabling encrypted DNS queries from IPv6 clients.
 
@@ -37,6 +37,7 @@ server:
 
 ```bash
 # Test
+
 unbound-checkconf
 systemctl restart unbound
 

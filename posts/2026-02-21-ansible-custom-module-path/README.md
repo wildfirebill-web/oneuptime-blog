@@ -40,6 +40,7 @@ The simplest approach is to add a `library` setting to your ansible.cfg:
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Colon-separated list of directories to search for modules
 library = ./library:~/shared-modules:/opt/ansible/custom-modules

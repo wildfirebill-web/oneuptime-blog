@@ -60,6 +60,7 @@ Generate your Talos configuration and commit it to Git:
 
 ```bash
 # Generate cluster configuration
+
 talosctl gen config production-cluster https://10.0.0.100:6443 \
   --output-dir ./clusters/production
 

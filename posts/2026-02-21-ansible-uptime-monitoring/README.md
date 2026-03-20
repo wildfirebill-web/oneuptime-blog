@@ -32,6 +32,7 @@ Define the services you want to monitor as Ansible variables.
 
 ```yaml
 # group_vars/monitoring.yml
+
 prometheus_version: "2.49.1"
 blackbox_exporter_version: "0.24.0"
 

@@ -20,6 +20,7 @@ You can inspect the current secret to see what is there.
 
 ```bash
 # View the argocd-secret contents
+
 kubectl get secret argocd-secret -n argocd -o yaml
 ```
 

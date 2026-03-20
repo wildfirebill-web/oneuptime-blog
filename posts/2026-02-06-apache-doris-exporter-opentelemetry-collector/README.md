@@ -151,6 +151,7 @@ Here's a basic configuration for the Apache Doris exporter:
 
 ```yaml
 # Basic Apache Doris exporter configuration
+
 exporters:
   doris:
     # Doris Frontend HTTP endpoint

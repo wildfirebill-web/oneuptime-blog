@@ -144,6 +144,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("wms.operations")
 
 # Track orders processed per stage
+
 orders_picked = meter.create_counter("wms.orders.picked", description="Orders completed picking")
 orders_packed = meter.create_counter("wms.orders.packed", description="Orders completed packing")
 orders_shipped = meter.create_counter("wms.orders.shipped", description="Orders shipped")

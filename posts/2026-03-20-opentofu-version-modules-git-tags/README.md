@@ -16,12 +16,13 @@ Follow semantic versioning (semver): `MAJOR.MINOR.PATCH`
 
 ```bash
 # Tag the current commit as v1.0.0
+
 git tag v1.0.0
 
 # Push the tag to the remote
 git push origin v1.0.0
 
-# Create an annotated tag (preferred — includes message and tagger info)
+# Create an annotated tag (preferred - includes message and tagger info)
 git tag -a v1.0.0 -m "Initial stable release"
 git push origin v1.0.0
 ```
@@ -47,13 +48,13 @@ module "vpc" {
 | `v1.0.0 → v1.0.1` | Bug fix: no interface change |
 
 ```bash
-# Bug fix — increment patch
+# Bug fix - increment patch
 git tag v1.0.1 && git push origin v1.0.1
 
-# New optional feature — increment minor
+# New optional feature - increment minor
 git tag v1.1.0 && git push origin v1.1.0
 
-# Breaking change — increment major
+# Breaking change - increment major
 git tag v2.0.0 && git push origin v2.0.0
 ```
 
@@ -121,11 +122,11 @@ module "vpc" {
 }
 ```
 
-Commit SHAs never change, making them the most stable reference — though less readable than version tags.
+Commit SHAs never change, making them the most stable reference - though less readable than version tags.
 
 ## Important Notes
 
-- Avoid referencing mutable branch names like `?ref=main` in production — the branch tip can change.
+- Avoid referencing mutable branch names like `?ref=main` in production - the branch tip can change.
 - For the public OpenTofu Registry, tags are the mechanism for publishing new versions.
 - Keep a CHANGELOG.md to document what changed in each version.
 

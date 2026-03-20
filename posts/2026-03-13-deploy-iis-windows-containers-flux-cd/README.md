@@ -28,6 +28,7 @@ The deployment manifest references a pre-built image. Here is a typical Dockerfi
 
 ```dockerfile
 # Dockerfile for IIS application
+
 # Build on Windows Server 2022 host or using Windows Buildkit
 FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
 

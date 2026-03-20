@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Windows, Networking, Network Diagnostics, sysadmin
+Tags: DHCP, Windows, Networking, Network Diagnostics, Sysadmin
 
 Description: Renewing a DHCP lease on Windows forces the system to release its current IP address and request a new one from the DHCP server, useful when changing networks or resolving IP conflict issues.
 
@@ -29,6 +29,7 @@ ipconfig /all
 
 ```powershell
 # Release all DHCP leases
+
 Get-NetAdapter | ForEach-Object {
     if ($_.Status -eq "Up") {
         ipconfig /release $_.Name

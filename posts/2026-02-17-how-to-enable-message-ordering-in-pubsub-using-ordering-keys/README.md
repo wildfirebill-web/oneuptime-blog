@@ -37,6 +37,7 @@ Create or update a subscription with message ordering enabled:
 
 ```bash
 # Create a new subscription with ordering enabled
+
 gcloud pubsub subscriptions create order-events-ordered-sub \
   --topic=order-events \
   --enable-message-ordering

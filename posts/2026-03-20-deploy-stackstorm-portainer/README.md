@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - StackStorm
+
 version: "3.8"
 
 services:
@@ -86,7 +87,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 ST2_PASSWORD=your-st2-admin-password
 RABBITMQ_PASSWORD=your-rabbitmq-password
 ```

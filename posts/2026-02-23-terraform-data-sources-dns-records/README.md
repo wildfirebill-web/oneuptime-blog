@@ -18,6 +18,7 @@ The `aws_route53_record` data source is the most direct way to query a specific 
 
 ```hcl
 # First, look up the hosted zone
+
 data "aws_route53_zone" "main" {
   name = "example.com"
 }

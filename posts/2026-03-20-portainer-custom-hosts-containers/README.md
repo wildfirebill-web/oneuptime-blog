@@ -1,4 +1,4 @@
-# How to Configure Custom Host File Entries for Containers in Portainer
+# How to Configure Custom Host File Entries for Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -36,6 +36,7 @@ Verify the entries are injected:
 ```bash
 docker exec -it $(docker ps -qf name=api) cat /etc/hosts
 # Should show custom entries at the bottom
+
 ```
 
 ## Accessing the Docker Host from a Container
@@ -81,14 +82,14 @@ services:
 
 Create `custom_hosts` on the host with your custom entries:
 
-```
+```text
 127.0.0.1   localhost
 ::1         localhost ip6-localhost
 192.168.1.50   legacy-db
 10.0.0.200     payment-gateway
 ```
 
-This approach lets you update hosts without restarting containers — however, the container's hostname and its own entry in the default hosts file are lost unless you include them manually.
+This approach lets you update hosts without restarting containers - however, the container's hostname and its own entry in the default hosts file are lost unless you include them manually.
 
 ## Common Use Cases
 

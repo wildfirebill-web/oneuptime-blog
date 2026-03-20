@@ -42,6 +42,7 @@ kubectl get etcdbackups.management.cattle.io
 
 ```bash
 # RKE2
+
 ls -la /var/lib/rancher/rke2/server/db/snapshots/
 
 # RKE

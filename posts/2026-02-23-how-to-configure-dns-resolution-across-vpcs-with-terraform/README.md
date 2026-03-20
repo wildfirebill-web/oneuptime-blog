@@ -24,6 +24,7 @@ The most straightforward approach is to create a private hosted zone and associa
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

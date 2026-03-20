@@ -8,7 +8,7 @@ Description: Learn how to integrate OpenTofu with TACOS (Terraform Automation an
 
 ## Introduction
 
-Continuous validation is a practice where your infrastructure configuration is periodically checked against the real-world state of your cloud resources. TACOS platforms—such as Spacelift, Scalr, env0, and Terrateam—provide built-in mechanisms to run these checks automatically, alerting teams when drift is detected.
+Continuous validation is a practice where your infrastructure configuration is periodically checked against the real-world state of your cloud resources. TACOS platforms-such as Spacelift, Scalr, env0, and Terrateam-provide built-in mechanisms to run these checks automatically, alerting teams when drift is detected.
 
 OpenTofu, as an open-source Terraform-compatible tool, integrates naturally with most TACOS platforms through standard workflows.
 
@@ -32,6 +32,7 @@ First, configure the Spacelift provider:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     spacelift = {
@@ -116,4 +117,4 @@ resource "aws_instance" "spot_worker" {
 
 ## Conclusion
 
-Continuous validation with TACOS platforms transforms OpenTofu from a deployment tool into a living compliance system. By scheduling regular drift detection runs, you close the gap between desired and actual infrastructure state—and catch problems before they become incidents.
+Continuous validation with TACOS platforms transforms OpenTofu from a deployment tool into a living compliance system. By scheduling regular drift detection runs, you close the gap between desired and actual infrastructure state-and catch problems before they become incidents.

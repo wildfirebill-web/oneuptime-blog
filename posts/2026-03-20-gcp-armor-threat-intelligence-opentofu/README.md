@@ -14,6 +14,7 @@ GCP Cloud Armor Threat Intelligence (available with Cloud Armor Managed Protecti
 
 ```hcl
 # main.tf - Cloud Armor security policy with Threat Intelligence
+
 resource "google_compute_security_policy" "threat_intel_policy" {
   name        = "threat-intelligence-policy"
   description = "WAF policy with Threat Intelligence feeds enabled"

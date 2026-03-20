@@ -31,6 +31,7 @@ Set up the migration infrastructure:
 
 ```bash
 # Create a GKE cluster that will run the migration processing components
+
 gcloud container clusters create migration-cluster \
   --zone us-central1-a \
   --machine-type e2-standard-4 \

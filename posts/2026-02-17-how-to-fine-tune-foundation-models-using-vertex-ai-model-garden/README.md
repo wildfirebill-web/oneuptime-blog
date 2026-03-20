@@ -24,6 +24,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # List models available for tuning
+
 models = aiplatform.Model.list(
     filter='labels.model_garden=true',
     order_by="display_name"

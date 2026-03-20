@@ -32,6 +32,7 @@ This Python example shows how a vulnerable query pattern leads to injection data
 
 ```python
 # VULNERABLE CODE - Do not do this in production
+
 # This concatenates user input directly into the query
 def get_user(username):
     query = f"SELECT * FROM users WHERE name = '{username}'"

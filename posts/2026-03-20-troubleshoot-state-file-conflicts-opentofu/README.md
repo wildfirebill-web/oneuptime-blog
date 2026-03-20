@@ -12,7 +12,7 @@ State file conflicts arise when multiple processes attempt to modify the same st
 
 ## Error: State Locked by Another Process
 
-```
+```text
 Error: Error acquiring the state lock
 Error message: ConditionalCheckFailedException: The conditional request failed
 Lock Info:
@@ -27,7 +27,8 @@ First, verify the lock is actually stale (the process is no longer running).
 
 ```bash
 # Check if the locking process is still alive
-# The "Who" field shows user@machine — check that machine
+
+# The "Who" field shows user@machine - check that machine
 ps aux | grep tofu
 
 # For DynamoDB locks (legacy), check the lock table
@@ -52,7 +53,7 @@ aws s3 rm s3://my-tofu-state/prod/terraform.tfstate.tflock
 
 ## Error: State File Corrupted or Empty
 
-```
+```text
 Error: Failed to load state: state file invalid
 ```
 
@@ -62,7 +63,7 @@ tofu state pull > current-state.json
 cat current-state.json | python3 -m json.tool | head -50
 
 # If the state is empty or malformed, restore from a backup
-# S3 with versioning — list previous versions
+# S3 with versioning - list previous versions
 aws s3api list-object-versions \
   --bucket my-tofu-state \
   --prefix prod/terraform.tfstate \
@@ -80,7 +81,7 @@ aws s3api get-object \
 tofu state push restored-state.json
 ```
 
-Always enable S3 versioning on your state bucket — it's your safety net.
+Always enable S3 versioning on your state bucket - it's your safety net.
 
 ```hcl
 resource "aws_s3_bucket_versioning" "state" {
@@ -154,4 +155,4 @@ tofu plan  # should show no changes
 
 ## Summary
 
-State conflicts fall into four categories: stale locks (verify the process is dead, then `tofu force-unlock`), corrupted state (restore from S3 versioned backup with `tofu state push`), state drift (use `tofu refresh` and then `tofu plan` to understand the delta), and address conflicts from refactoring (use `tofu state mv` to remap without destroying). Always enable S3 versioning and use a CI/CD concurrency group to serialize applies — prevention is far cheaper than recovery.
+State conflicts fall into four categories: stale locks (verify the process is dead, then `tofu force-unlock`), corrupted state (restore from S3 versioned backup with `tofu state push`), state drift (use `tofu refresh` and then `tofu plan` to understand the delta), and address conflicts from refactoring (use `tofu state mv` to remap without destroying). Always enable S3 versioning and use a CI/CD concurrency group to serialize applies - prevention is far cheaper than recovery.

@@ -26,6 +26,7 @@ The performance difference between a swap file and a swap partition is negligibl
 
 ```bash
 # See existing swap configuration
+
 swapon --show
 free -h
 ```

@@ -27,6 +27,7 @@ Reserve hugepages on each node before starting Kubernetes. Edit `/etc/sysctl.con
 
 ```bash
 # Reserve 1024 2MB hugepages (2GB total)
+
 vm.nr_hugepages=1024
 
 # Or reserve 4 1GB hugepages
@@ -195,7 +196,7 @@ spec:
 
 DPDK maps hugepages from `/mnt/huge` for zero-copy packet processing.
 
-## ResourceQuota for Hugepages
+ResourceQuota for Hugepages
 
 Limit hugepage usage per namespace:
 

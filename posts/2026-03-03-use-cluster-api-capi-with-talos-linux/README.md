@@ -51,6 +51,7 @@ Management Cluster (runs CAPI controllers)
 
 ```bash
 # macOS
+
 brew install clusterctl
 
 # Linux

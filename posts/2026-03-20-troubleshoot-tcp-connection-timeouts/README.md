@@ -14,6 +14,7 @@ A TCP connection timeout means a client sent a SYN but never received a SYN-ACK.
 
 ```bash
 # First confirm L3 connectivity
+
 ping -c 4 10.20.0.5
 
 # Then confirm the port responds at all

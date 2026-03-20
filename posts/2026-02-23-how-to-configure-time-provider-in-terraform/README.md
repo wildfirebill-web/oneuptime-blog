@@ -21,6 +21,7 @@ Unlike a simple `sleep` command, the Time provider's resources are stored in sta
 
 ```hcl
 # versions.tf - Declare the Time provider
+
 terraform {
   required_version = ">= 1.0"
 
@@ -40,7 +41,7 @@ No configuration needed.
 provider "time" {}
 ```
 
-## Resource Types
+Resource Types
 
 ### time_sleep
 

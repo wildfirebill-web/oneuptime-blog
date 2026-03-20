@@ -33,6 +33,7 @@ Run the SNMP Exporter with the default configuration, which includes modules for
 
 ```bash
 # Start the SNMP Exporter with default configuration
+
 # Port 9116 serves the metrics endpoint
 docker run -d \
   --name snmp-exporter \

@@ -40,6 +40,7 @@ First, install Cosign:
 
 ```bash
 # macOS
+
 brew install cosign
 
 # Linux

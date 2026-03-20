@@ -20,6 +20,7 @@ Homebrew is the easiest way to install and update the ArgoCD CLI on macOS.
 
 ```bash
 # Install ArgoCD CLI
+
 brew install argocd
 
 # Verify installation

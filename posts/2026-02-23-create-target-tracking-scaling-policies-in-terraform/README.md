@@ -24,6 +24,7 @@ The most common use case: scale based on average CPU across your instances.
 
 ```hcl
 # Auto Scaling Group (referenced by the policy)
+
 resource "aws_autoscaling_group" "app" {
   name_prefix         = "app-"
   desired_capacity    = 3

@@ -24,6 +24,7 @@ The AKS GitOps extension provides automatic upgrades, Azure support coverage, an
 
 ```bash
 # Install the k8s-extension CLI extension
+
 az extension add --name k8s-extension
 
 # Install the k8s-configuration CLI extension

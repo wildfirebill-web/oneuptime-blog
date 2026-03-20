@@ -39,6 +39,7 @@ kubectl -n kube-system exec "$CILIUM_POD" -c cilium-agent -- \
 ```bash
 #!/bin/bash
 # parse-bgp.sh
+
 INPUT="${1:-/tmp/bgp-output.txt}"
 
 # Extract data rows (skip header)

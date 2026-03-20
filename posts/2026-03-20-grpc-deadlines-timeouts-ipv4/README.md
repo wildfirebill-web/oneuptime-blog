@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, IPv4, Deadlines, Timeouts, Go, Python, Error Handling
+Tags: gRPC, IPv4, Deadlines, Timeout, Go, Python, Error Handling
 
 Description: Implement gRPC deadlines and timeouts for IPv4 connections in Go and Python, handle DeadlineExceeded errors, and propagate deadlines across service chains.
 
@@ -10,7 +10,7 @@ Description: Implement gRPC deadlines and timeouts for IPv4 connections in Go an
 
 gRPC uses deadlines (an absolute point in time) rather than timeouts (a duration). Every RPC should carry a deadline to prevent resource leaks when the network is slow or a server hangs. Proper deadline propagation is essential in microservice chains.
 
-## Go — Setting a Deadline
+## Go - Setting a Deadline
 
 ```go
 package main
@@ -36,7 +36,7 @@ func callWithDeadline(client pb.GreeterClient) {
         st, _ := status.FromError(err)
         switch st.Code() {
         case codes.DeadlineExceeded:
-            log.Println("RPC timed out — deadline exceeded")
+            log.Println("RPC timed out - deadline exceeded")
         case codes.Canceled:
             log.Println("RPC was cancelled")
         case codes.Unavailable:
@@ -50,7 +50,7 @@ func callWithDeadline(client pb.GreeterClient) {
 }
 ```
 
-## Go — Propagating Deadlines Downstream
+## Go - Propagating Deadlines Downstream
 
 ```go
 // Middleware: forward the incoming context deadline to downstream calls
@@ -69,7 +69,7 @@ func (s *server) ProcessOrder(ctx context.Context,
 }
 ```
 
-## Python — Deadline as timeout Parameter
+## Python - Deadline as timeout Parameter
 
 ```python
 import grpc
@@ -95,7 +95,7 @@ except grpc.RpcError as e:
         print(f"RPC error: {e.code()} - {e.details()}")
 ```
 
-## Python — Propagating Deadlines with Metadata
+## Python - Propagating Deadlines with Metadata
 
 ```python
 def call_downstream(context, stub, request):

@@ -41,6 +41,7 @@ edition = "2021"
 
 [dependencies]
 # HTTP server framework
+
 axum = "0.7"
 # Async runtime
 tokio = { version = "1", features = ["full"] }

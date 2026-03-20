@@ -63,6 +63,7 @@ Here's a simple OAuth2 client credentials configuration:
 
 ```yaml
 # Define the OAuth2 client auth extension
+
 extensions:
   # oauth2client extension configuration
   oauth2client:

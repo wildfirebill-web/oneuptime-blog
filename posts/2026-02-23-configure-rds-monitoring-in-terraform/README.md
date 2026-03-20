@@ -30,6 +30,7 @@ The value comes from setting up alarms on these metrics:
 
 ```hcl
 # SNS topic for database alerts
+
 resource "aws_sns_topic" "db_alerts" {
   name = "rds-alerts"
 }

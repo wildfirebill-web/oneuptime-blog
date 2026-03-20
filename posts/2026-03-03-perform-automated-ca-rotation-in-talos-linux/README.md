@@ -45,6 +45,7 @@ Start with a script that generates the new CA and creates the bundle.
 ```bash
 #!/bin/bash
 # generate-new-ca.sh
+
 # Generates new CA certificates and creates the transition bundle
 
 set -euo pipefail

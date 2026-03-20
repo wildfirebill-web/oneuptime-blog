@@ -18,6 +18,7 @@ Let's start by understanding the difference between the two functions.
 
 ```hcl
 # cidrsubnet - calculates a single subnet, you manage offsets
+
 # cidrsubnet(prefix, newbits, netnum)
 locals {
   # You have to manage netnum manually to avoid overlaps

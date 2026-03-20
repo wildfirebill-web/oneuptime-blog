@@ -1,11 +1,10 @@
----
-title: "Provider Version Constraints in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, versioning
-description: "Master provider version constraint syntax in OpenTofu to balance stability with access to new features."
----
-
 # Provider Version Constraints in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Versioning
+
+Description: Master provider version constraint syntax in OpenTofu to balance stability with access to new features.
 
 Version constraints control which provider versions OpenTofu will accept. Getting your constraints right balances stability (don't break existing infrastructure) with flexibility (benefit from bug fixes and new features).
 
@@ -18,7 +17,7 @@ terraform {
       source = "hashicorp/aws"
 
       # = (or no operator): exact match only
-      version = "= 5.38.0"   # Only 5.38.0 — very strict
+      version = "= 5.38.0"   # Only 5.38.0 - very strict
 
       # !=: exclude a specific version
       version = "!= 5.30.0"  # Any version except 5.30.0
@@ -70,7 +69,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      # AND logic — all constraints must be satisfied
+      # AND logic - all constraints must be satisfied
       version = ">= 5.0.0, < 6.0.0"
 
       # Exclude a known-bad version range
@@ -83,18 +82,19 @@ terraform {
 ## Version Strategy by Environment
 
 ```hcl
-# development/versions.tf — more permissive
+# development/versions.tf - more permissive
+
 terraform {
   required_version = ">= 1.6"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 5.0"  # Flexible — get latest bug fixes
+      version = ">= 5.0"  # Flexible - get latest bug fixes
     }
   }
 }
 
-# production/versions.tf — more restrictive
+# production/versions.tf - more restrictive
 terraform {
   required_version = ">= 1.6, < 2.0"
   required_providers {
@@ -109,7 +109,7 @@ terraform {
 ## Module vs Root Module Constraints
 
 ```hcl
-# modules/vpc/versions.tf — modules use minimum constraints
+# modules/vpc/versions.tf - modules use minimum constraints
 terraform {
   required_providers {
     aws = {
@@ -119,7 +119,7 @@ terraform {
   }
 }
 
-# root/versions.tf — root module sets the actual installed version
+# root/versions.tf - root module sets the actual installed version
 terraform {
   required_providers {
     aws = {
@@ -169,25 +169,25 @@ The lock file records the exact version chosen to satisfy your constraints. Comm
 ```hcl
 terraform {
   required_providers {
-    # Actively maintained provider — allow minor updates
+    # Actively maintained provider - allow minor updates
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
 
-    # Provider with frequent breaking changes — lock minor version
+    # Provider with frequent breaking changes - lock minor version
     google-beta = {
       source  = "hashicorp/google-beta"
       version = "~> 5.30"
     }
 
-    # Mature, stable provider — just set minimum
+    # Mature, stable provider - just set minimum
     null = {
       source  = "hashicorp/null"
       version = ">= 3.0"
     }
 
-    # Critical provider — exact version for maximum reproducibility
+    # Critical provider - exact version for maximum reproducibility
     vault = {
       source  = "hashicorp/vault"
       version = "= 3.23.0"

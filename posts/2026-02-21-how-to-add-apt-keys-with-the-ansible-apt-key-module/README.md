@@ -22,6 +22,7 @@ The `apt_key` module adds GPG keys to the system-wide trusted keyring. Here is t
 
 ```yaml
 # Add a GPG key from a URL
+
 - name: Add Docker GPG key
   ansible.builtin.apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg

@@ -39,6 +39,7 @@ The foundation of cost tracking is consistent labels. ArgoCD automatically adds 
 
 ```yaml
 # ArgoCD Application with cost tracking labels
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -8,11 +8,11 @@ Description: Learn how to configure a custom K3s data directory to separate clus
 
 ## Introduction
 
-By default, K3s stores all its data — container images, etcd snapshots, certificates, and volumes — in `/var/lib/rancher/k3s/`. This location can fill up the root partition on disk-constrained systems. Configuring a custom data directory allows you to mount a dedicated disk for K3s data, improving both performance (SSD vs. HDD) and system stability (preventing root partition exhaustion).
+By default, K3s stores all its data - container images, etcd snapshots, certificates, and volumes - in `/var/lib/rancher/k3s/`. This location can fill up the root partition on disk-constrained systems. Configuring a custom data directory allows you to mount a dedicated disk for K3s data, improving both performance (SSD vs. HDD) and system stability (preventing root partition exhaustion).
 
 ## What's Stored in the K3s Data Directory
 
-```
+```text
 /var/lib/rancher/k3s/
 ├── agent/
 │   ├── containerd/    # Container image layers
@@ -33,6 +33,7 @@ Setting the data directory before the first installation is the cleanest approac
 
 ```bash
 # Prepare the destination directory on a mounted disk
+
 # Example: /dev/sdb1 mounted at /opt/k3s-data
 sudo mkfs.ext4 /dev/sdb1
 sudo mkdir -p /opt/k3s-data

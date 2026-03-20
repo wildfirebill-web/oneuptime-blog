@@ -216,6 +216,7 @@ Laravel uses Tailwind CSS for pagination by default. You can publish and customi
 
 ```bash
 # Publish pagination views to resources/views/vendor/pagination
+
 php artisan vendor:publish --tag=laravel-pagination
 ```
 

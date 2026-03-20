@@ -27,6 +27,7 @@ A sophisticated scheduler designed for fairness between processes. It ensures in
 
 ```bash
 # Check scheduler for each block device
+
 # The active scheduler is shown in brackets
 cat /sys/block/sda/queue/scheduler
 # Example output: [none] mq-deadline bfq

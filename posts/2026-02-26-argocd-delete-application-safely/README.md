@@ -23,6 +23,7 @@ The behavior is controlled by finalizers on the Application resource and the del
 
 ```yaml
 # Application with cascade delete finalizer
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

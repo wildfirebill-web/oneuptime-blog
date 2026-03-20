@@ -22,6 +22,7 @@ touch: cannot touch '/data/test': Read-only file system
 
 ```bash
 # Check if volume is mounted read-only
+
 kubectl exec -n production myapp-pod -- mount | grep /data
 
 # Output showing read-only:

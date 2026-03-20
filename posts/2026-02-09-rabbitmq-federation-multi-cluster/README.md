@@ -34,6 +34,7 @@ Deploy RabbitMQ clusters in different regions or namespaces:
 
 ```yaml
 # Cluster in region us-east
+
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitMQCluster
 metadata:

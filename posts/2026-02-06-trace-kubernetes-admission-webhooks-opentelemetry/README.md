@@ -230,6 +230,7 @@ If your webhook is written in Python (for example, using Flask), the instrumenta
 
 ```python
 # Python admission webhook with OpenTelemetry tracing
+
 from flask import Flask, request, jsonify
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

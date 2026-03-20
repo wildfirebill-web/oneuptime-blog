@@ -19,11 +19,11 @@ GRE tunnels create a point-to-point virtual link, and the addresses assigned to 
 
 ## Recommended Subnet Sizes for Point-to-Point Links
 
-```
-/30 subnet: 4 IPs — network, 2 hosts, broadcast
+```text
+/30 subnet: 4 IPs - network, 2 hosts, broadcast
 Example: 172.16.0.0/30 → .1 and .2 are usable
 
-/31 subnet: 2 IPs — both are host addresses (RFC 3021)
+/31 subnet: 2 IPs - both are host addresses (RFC 3021)
 Example: 172.16.0.0/31 → .0 and .1 are both usable
 ```
 
@@ -31,6 +31,7 @@ Example: 172.16.0.0/31 → .0 and .1 are both usable
 
 ```bash
 # Host A: tunnel endpoint A uses the lower IP
+
 ip addr add 172.16.0.1/30 dev gre0
 ip link set gre0 up
 

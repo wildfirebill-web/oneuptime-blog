@@ -6,7 +6,7 @@ Tags: Wireshark, IPv6, Coloring Rules, Packet Analysis, Display, Visualization
 
 Description: A guide to creating and using Wireshark coloring rules to visually distinguish different types of IPv6 traffic in the packet list for faster analysis.
 
-Wireshark coloring rules apply background and foreground colors to packets based on display filter expressions. Creating IPv6-specific coloring rules makes it immediately apparent which packets are IPv6, NDP, DHCPv6, or carry anomalies — without having to read each row carefully.
+Wireshark coloring rules apply background and foreground colors to packets based on display filter expressions. Creating IPv6-specific coloring rules makes it immediately apparent which packets are IPv6, NDP, DHCPv6, or carry anomalies - without having to read each row carefully.
 
 ## Accessing Coloring Rules
 
@@ -21,6 +21,7 @@ Wireshark coloring rules apply background and foreground colors to packets based
 
 ```wireshark
 # Filter: DAD Neighbor Solicitations (source = ::)
+
 icmpv6.type == 135 && ipv6.src == ::
 # Color: Yellow background, black text
 # Purpose: Immediately spot DAD probes
@@ -121,6 +122,6 @@ Clear temporary colorization: **View → Reset Colorization** or Ctrl+Shift+`
 
 ## Using the Color Toolbar
 
-Enable the **Colorize Packet List** button in the toolbar (the red/yellow/green circle icon) to toggle all coloring on/off quickly — useful when you need a clean view without color distractions.
+Enable the **Colorize Packet List** button in the toolbar (the red/yellow/green circle icon) to toggle all coloring on/off quickly - useful when you need a clean view without color distractions.
 
 Well-designed IPv6 coloring rules reduce analysis time significantly by making protocol categories, error conditions, and anomalies visible at a glance without requiring constant filter changes.

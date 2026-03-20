@@ -1129,6 +1129,7 @@ Configure Prometheus alerting rules for WebSocket anomalies.
 
 ```yaml
 # websocket-alerts.yaml
+
 # Prometheus alerting rules for WebSocket monitoring
 
 groups:

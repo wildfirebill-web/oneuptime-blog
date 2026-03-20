@@ -37,6 +37,7 @@ Create the relay namespace and hybrid connection if you have not already.
 
 ```bash
 # Create the relay infrastructure
+
 az relay namespace create \
   --name api-relay-ns \
   --resource-group rg-relay \

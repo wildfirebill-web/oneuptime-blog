@@ -39,6 +39,7 @@ First, check the current certificate expiry:
 
 ```bash
 # Get the current certificate and check its expiry date
+
 kubectl get secret argocd-server-tls -n argocd -o jsonpath='{.data.tls\.crt}' | \
   base64 -d | openssl x509 -noout -dates
 ```

@@ -24,6 +24,7 @@ A NetworkSet audit verifies that all NetworkSets are referenced by active polici
 
 ```bash
 # List all namespace-scoped NetworkSets
+
 calicoctl get networksets -A -o wide
 
 # List all cluster-scoped GlobalNetworkSets

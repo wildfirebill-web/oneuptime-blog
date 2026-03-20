@@ -97,6 +97,7 @@ endpoints:
     name: my-app-7d4f5b8c9-def34
     namespace: default
 # ... more endpoints up to ~100
+
 ```
 
 Each endpoint includes:

@@ -45,6 +45,7 @@ flowchart TD
 
 ```bash
 # List all topics
+
 kafka-topics.sh --list --bootstrap-server localhost:9092
 
 # Describe specific topic to see its configuration

@@ -12,6 +12,7 @@ AWS automatically assigns a /56 IPv6 CIDR block from Amazon's pool when you enab
 
 ```hcl
 # provider.tf - AWS provider configuration
+
 terraform {
   required_providers {
     aws = {
@@ -78,7 +79,7 @@ resource "aws_subnet" "public_a" {
 
 ## Step 4: Create an Internet Gateway
 
-An Internet Gateway supports both IPv4 and IPv6 — no separate gateway is needed for IPv6 internet access from public subnets.
+An Internet Gateway supports both IPv4 and IPv6 - no separate gateway is needed for IPv6 internet access from public subnets.
 
 ```hcl
 # igw.tf - Internet Gateway (handles both IPv4 and IPv6)

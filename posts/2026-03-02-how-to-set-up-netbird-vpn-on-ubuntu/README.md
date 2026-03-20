@@ -36,6 +36,7 @@ NetBird provides a Docker Compose setup for self-hosting:
 
 ```bash
 # Download the setup script
+
 curl -fsSL https://github.com/netbirdio/netbird/releases/latest/download/setup.env.example -o setup.env
 
 # Edit the setup environment

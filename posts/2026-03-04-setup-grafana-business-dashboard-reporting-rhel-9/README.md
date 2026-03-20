@@ -20,6 +20,7 @@ Grafana is widely known for infrastructure monitoring, but it is also a powerful
 
 ```bash
 # Add the official Grafana repository
+
 sudo tee /etc/yum.repos.d/grafana.repo <<EOF
 [grafana]
 name=grafana

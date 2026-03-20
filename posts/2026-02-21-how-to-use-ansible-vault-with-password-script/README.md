@@ -23,6 +23,7 @@ Here is the simplest possible password script:
 ```bash
 #!/bin/bash
 # minimal_vault_pass.sh
+
 # Outputs a hardcoded password (not useful in production, but shows the concept)
 echo "my-vault-password"
 ```

@@ -40,6 +40,7 @@ Generate certificates using easy-rsa:
 
 ```bash
 # Clone easy-rsa
+
 git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
 

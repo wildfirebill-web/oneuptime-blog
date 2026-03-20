@@ -22,6 +22,7 @@ Enable KV v2 in your Vault cluster:
 
 ```bash
 # Enable KV v2 at the default path
+
 vault secrets enable -version=2 kv
 
 # Enable KV v2 at a custom path

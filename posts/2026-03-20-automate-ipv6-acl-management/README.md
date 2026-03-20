@@ -14,6 +14,7 @@ Managing IPv6 ACLs manually across dozens of routers is error-prone. Automation 
 
 ```yaml
 # policies/ipv6_acl_policy.yml
+
 acl_name: IPV6_INGRESS_FILTER
 direction: ingress
 interface: GigabitEthernet0/0/0/0

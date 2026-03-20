@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NTP, IPv6, Time Synchronization, ntpd, chrony, Server Configuration
+Tags: NTP, IPv6, Time Synchronization, ntpd, Chrony, Server Configuration
 
 Description: Configure an NTP server to accept time synchronization requests from IPv6 clients, covering ntpd and chrony configurations, access control, and firewall rules.
 
@@ -25,6 +25,7 @@ Edit the ntp.conf to listen on IPv6 interfaces:
 # /etc/ntp.conf
 
 # Upstream time sources (use pool servers with IPv6 support)
+
 pool 2.pool.ntp.org iburst
 server time.google.com iburst
 

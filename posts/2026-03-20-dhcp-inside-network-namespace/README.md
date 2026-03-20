@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Network Namespace, Linux, netns, dnsmasq, IPv4, Testing
+Tags: DHCP, Network Namespaces, Linux, Netns, Dnsmasq, IPv4, Testing
 
 Description: Learn how to run a DHCP server inside a Linux network namespace to provide IP addresses to interfaces within the namespace for isolated network testing and container networking.
 
@@ -12,7 +12,7 @@ Running DHCP inside a network namespace enables isolated IP management for test 
 
 ## Architecture
 
-```
+```text
 Host
   └── veth-host (10.0.100.1/24)
         |
@@ -30,6 +30,7 @@ Host
 
 ```bash
 # Create namespaces
+
 ip netns add dhcp-ns
 ip netns add client-ns
 

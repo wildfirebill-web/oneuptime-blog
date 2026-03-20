@@ -34,6 +34,7 @@ Use eksctl to create a cluster with Bottlerocket managed node groups.
 
 ```yaml
 # cluster-config.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

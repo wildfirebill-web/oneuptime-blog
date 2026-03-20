@@ -32,6 +32,7 @@ The quickest way to get started is with the official container images:
 
 ```yaml
 # docker-compose.yml - Galaxy NG deployment
+
 ---
 version: "3.8"
 

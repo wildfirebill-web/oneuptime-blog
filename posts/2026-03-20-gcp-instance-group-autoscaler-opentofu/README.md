@@ -14,6 +14,7 @@ GCP Autoscaler automatically adjusts the number of instances in a Managed Instan
 
 ```hcl
 # main.tf - Autoscaler based on CPU utilization
+
 resource "google_compute_autoscaler" "web_autoscaler" {
   name   = "web-server-autoscaler"
   zone   = "us-central1-a"

@@ -143,6 +143,7 @@ Do not rely on application Kustomizations to create their own namespaces. Create
 
 ```yaml
 # infrastructure/namespaces/production.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

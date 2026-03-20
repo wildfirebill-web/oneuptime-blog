@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Networking, Checksum, Packet Header, TCP/IP
+Tags: IPv4, Networking, Checksums, Packet Header, TCP/IP
 
 Description: Learn how the IPv4 header checksum is calculated, verified, and updated at each router hop, with step-by-step examples and Python implementation.
 
@@ -24,13 +24,13 @@ Verification uses the same algorithm: if the checksum is correct, summing all 16
 
 Given a minimal IPv4 header (hex bytes):
 
-```
+```text
 45 00 00 3c  1c 46 40 00  40 06 00 00  ac 10 0a 63  ac 10 0a 0c
 ```
 
 The checksum field at bytes 10-11 is `00 00` (zeroed for calculation).
 
-```
+```text
 Step 1: Group into 16-bit words
   4500  0040  1c46  4000  4006  0000  ac10  0a63  ac10  0a0c
 
@@ -90,6 +90,7 @@ def verify_ipv4_checksum(header_bytes: bytes) -> bool:
 
 
 # Example: build a header and calculate its checksum
+
 import struct, socket
 
 def build_ipv4_header(src: str, dst: str, protocol: int, payload_len: int) -> bytes:
@@ -151,7 +152,7 @@ def update_checksum_after_ttl_decrement(old_checksum: int, old_ttl: int) -> int:
 
 ```bash
 # tcpdump commonly shows "bad cksum" for locally generated packets
-# This is checksum offloading — the NIC computes the checksum in hardware
+# This is checksum offloading - the NIC computes the checksum in hardware
 # The kernel passes the packet with a placeholder checksum to the NIC
 
 # Disable checksum offloading to see real values (for debugging)
@@ -163,4 +164,4 @@ tcpdump -n -v --no-verify-checksums -i eth0 'ip'
 
 ## Summary
 
-The IPv4 checksum uses one's complement addition of all 16-bit header words: zero the checksum field, sum the words, fold in carry bits, then take the bitwise NOT. Verification sums all words including the checksum — a valid header produces 0xFFFF. Routers use RFC 1141 incremental updates after TTL decrement to avoid full recalculation. The `bad cksum` message in tcpdump almost always indicates hardware checksum offloading, not real corruption.
+The IPv4 checksum uses one's complement addition of all 16-bit header words: zero the checksum field, sum the words, fold in carry bits, then take the bitwise NOT. Verification sums all words including the checksum - a valid header produces 0xFFFF. Routers use RFC 1141 incremental updates after TTL decrement to avoid full recalculation. The `bad cksum` message in tcpdump almost always indicates hardware checksum offloading, not real corruption.

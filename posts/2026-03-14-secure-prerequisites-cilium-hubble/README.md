@@ -27,6 +27,7 @@ Configure kernel security settings that complement Cilium's eBPF-based networkin
 
 ```bash
 # Apply security-focused kernel settings on each node
+
 kubectl debug node/$(kubectl get nodes -o jsonpath='{.items[0].metadata.name}') \
   -it --image=ubuntu -- bash -c '
 # Enable BPF JIT (required, also better security than interpreter mode)

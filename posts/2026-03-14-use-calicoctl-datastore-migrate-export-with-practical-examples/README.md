@@ -28,6 +28,7 @@ This guide provides practical examples and step-by-step procedures for using `ca
 
 ```bash
 # Export all Calico resources from the current datastore
+
 calicoctl datastore migrate export > calico-export.yaml
 ```
 

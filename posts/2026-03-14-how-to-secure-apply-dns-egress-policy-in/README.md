@@ -32,6 +32,7 @@ Cilium intercepts DNS queries at the pod level, allowing you to create fine-grai
 
 ```yaml
 # First, ensure all pods can only resolve DNS through kube-dns
+
 # This prevents pods from using external DNS servers to bypass policies
 apiVersion: "cilium.io/v2"
 kind: CiliumNetworkPolicy

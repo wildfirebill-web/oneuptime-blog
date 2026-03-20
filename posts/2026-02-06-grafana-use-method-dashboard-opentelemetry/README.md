@@ -40,6 +40,7 @@ The OpenTelemetry Collector's `hostmetrics` receiver collects system-level metri
 
 ```yaml
 # otel-collector-config.yaml
+
 # Collect host-level metrics for USE method dashboard
 receivers:
   hostmetrics:

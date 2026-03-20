@@ -28,6 +28,7 @@ First, verify the API server pod is running and healthy:
 
 ```bash
 # Check pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server
 
 # Check for restarts or crash loops

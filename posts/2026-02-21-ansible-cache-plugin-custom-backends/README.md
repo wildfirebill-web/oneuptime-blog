@@ -22,6 +22,7 @@ Create the table with a simple partition key:
 
 ```bash
 # Create the DynamoDB table for Ansible fact caching
+
 aws dynamodb create-table \
   --table-name ansible-fact-cache \
   --attribute-definitions AttributeName=cache_key,AttributeType=S \

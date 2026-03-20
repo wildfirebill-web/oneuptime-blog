@@ -22,6 +22,7 @@ The snmpd service must be stopped when creating users:
 
 ```bash
 # Stop snmpd
+
 sudo systemctl stop snmpd
 
 # Create an SNMPv3 user with authentication and encryption

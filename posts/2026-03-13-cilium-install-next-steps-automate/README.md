@@ -26,6 +26,7 @@ All Cilium features can be configured via Helm values, making `helm install` a s
 
 ```bash
 # values-production.yaml
+
 cat > values-production.yaml <<EOF
 hubble:
   enabled: true

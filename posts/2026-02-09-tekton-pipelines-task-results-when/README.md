@@ -537,6 +537,7 @@ View task status and when expression evaluation:
 
 ```bash
 # Get PipelineRun details
+
 kubectl describe pipelinerun my-run
 
 # Check task status

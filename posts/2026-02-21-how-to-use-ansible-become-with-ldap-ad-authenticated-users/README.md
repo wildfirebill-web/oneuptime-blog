@@ -34,6 +34,7 @@ In your ansible.cfg:
 
 ```ini
 # ansible.cfg - Timeouts tuned for LDAP/AD environments
+
 [defaults]
 timeout = 60
 gather_timeout = 30

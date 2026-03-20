@@ -30,6 +30,7 @@ Felix uses Kubernetes service DNS to discover Typha. When the Service has multip
 
 ```bash
 # Check Typha service endpoints
+
 kubectl get endpoints calico-typha -n calico-system
 ```
 

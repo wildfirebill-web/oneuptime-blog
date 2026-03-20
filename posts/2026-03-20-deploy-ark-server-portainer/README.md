@@ -1,4 +1,4 @@
-# How to Deploy an ARK Server via Portainer
+# How to Deploy an ARK Server via Portainer - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ ARK requires substantial resources: at least 6GB RAM and 50GB+ disk space.
 
 ```yaml
 # ark-stack.yml
+
 version: "3.8"
 
 services:

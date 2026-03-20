@@ -59,6 +59,7 @@ The process is straightforward:
 
 ```bash
 # Create a spread placement group
+
 aws ec2 create-placement-group \
   --group-name critical-db-spread \
   --strategy spread \

@@ -16,6 +16,7 @@ Before adding bricks from a new server, the server must join the trusted storage
 
 ```bash
 # From any existing node
+
 sudo gluster peer probe newnode.example.com
 sudo gluster peer status
 ```

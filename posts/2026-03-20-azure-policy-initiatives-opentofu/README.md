@@ -14,6 +14,7 @@ Azure Policy Initiatives (also called Policy Sets) group multiple related policy
 
 ```hcl
 # main.tf - Define constituent policies for the initiative
+
 resource "azurerm_policy_definition" "require_https" {
   name         = "require-https-storage"
   policy_type  = "Custom"

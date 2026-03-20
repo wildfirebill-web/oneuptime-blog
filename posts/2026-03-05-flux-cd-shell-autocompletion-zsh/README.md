@@ -22,6 +22,7 @@ Check your Zsh version.
 
 ```bash
 # Verify Zsh version
+
 zsh --version
 ```
 

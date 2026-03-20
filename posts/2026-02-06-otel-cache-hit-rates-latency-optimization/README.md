@@ -14,6 +14,7 @@ Wrap your cache client to emit both spans and metrics on every operation:
 
 ```python
 # instrumented_cache.py
+
 import redis
 import time
 from opentelemetry import trace, metrics

@@ -14,6 +14,7 @@ Python's built-in `logging` module provides a flexible framework for emitting lo
 
 ```python
 # print() problems:
+
 # - No severity levels
 # - Hard to turn off in production
 # - No timestamps or context

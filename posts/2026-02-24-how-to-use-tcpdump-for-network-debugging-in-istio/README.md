@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, Tcpdump, Network Debugging, Packet Capture, Troubleshooting
+Tags: Istio, tcpdump, Network Debugging, Packet Capture, Troubleshooting
 
 Description: A hands-on guide to using tcpdump for low-level network debugging in Istio service mesh environments.
 
@@ -44,6 +44,7 @@ If you have node access:
 
 ```bash
 # Find the node running the pod
+
 NODE=$(kubectl get pod my-service-pod -n my-namespace -o jsonpath='{.spec.nodeName}')
 
 # Find the container PID

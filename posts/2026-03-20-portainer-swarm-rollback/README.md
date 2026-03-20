@@ -14,6 +14,7 @@ Rollbacks are critical for maintaining service availability when deployments fai
 
 ```yaml
 # services with auto-rollback
+
 version: '3.8'
 
 services:

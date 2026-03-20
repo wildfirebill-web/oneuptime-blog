@@ -19,6 +19,7 @@ sudo apt update
 sudo apt install openjdk-21-jdk-headless
 
 # Verify
+
 java -version
 ```
 

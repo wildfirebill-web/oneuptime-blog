@@ -41,6 +41,7 @@ Create OAuth credentials in Google Cloud Console:
 
 ```bash
 # Go to: https://console.cloud.google.com/apis/credentials
+
 # Create OAuth 2.0 Client ID
 # Application type: Web application
 # Authorized redirect URIs: http://localhost:8000 or your callback URL

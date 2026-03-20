@@ -26,6 +26,7 @@ Install the mdadm package if it is not already present.
 
 ```bash
 # Install mdadm from the base RHEL repos
+
 sudo dnf install -y mdadm
 ```
 

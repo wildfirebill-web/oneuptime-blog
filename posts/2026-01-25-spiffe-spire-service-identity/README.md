@@ -80,6 +80,7 @@ Deploy the SPIRE Server using Helm:
 
 ```yaml
 # spire-server-values.yaml
+
 # Helm values for SPIRE Server
 
 # Trust domain configuration

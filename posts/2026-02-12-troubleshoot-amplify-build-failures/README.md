@@ -41,6 +41,7 @@ The most common dependency failure. Your local machine runs Node 20, but Amplify
 
 ```yaml
 # amplify.yml - Specify the Node.js version
+
 version: 1
 frontend:
   phases:

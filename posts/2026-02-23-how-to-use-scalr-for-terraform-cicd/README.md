@@ -58,6 +58,7 @@ Account > New Environment
 
 Name: production
 Description: Production infrastructure
+
 Cost estimation: Enabled
 Policy groups: production-policies
 ```
@@ -96,6 +97,7 @@ Configure the workspace for automatic or manual applies:
 
 ```hcl
 # Using Scalr Terraform provider to manage workspaces
+
 provider "scalr" {
   hostname = "mycompany.scalr.io"
   token    = var.scalr_token

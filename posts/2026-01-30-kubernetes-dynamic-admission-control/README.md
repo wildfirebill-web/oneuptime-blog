@@ -73,6 +73,7 @@ Create a self-signed issuer for generating webhook certificates:
 
 ```yaml
 # issuer.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
@@ -930,7 +931,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
 ```
 
-### Resource Management
+Resource Management
 
 Always set appropriate resource limits:
 

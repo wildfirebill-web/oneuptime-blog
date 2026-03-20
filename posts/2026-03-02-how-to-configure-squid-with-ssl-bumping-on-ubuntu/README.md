@@ -44,6 +44,7 @@ If SSL bump is not present, install the Squid with SSL package:
 sudo apt update
 
 # On Ubuntu 22.04+, use the version with SSL support
+
 sudo apt install -y squid-openssl
 
 # Verify SSL bump is available

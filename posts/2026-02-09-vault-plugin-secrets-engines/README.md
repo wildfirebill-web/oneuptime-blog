@@ -22,6 +22,7 @@ Create a development environment for building plugins:
 
 ```bash
 # Create plugin project structure
+
 mkdir vault-custom-plugin
 cd vault-custom-plugin
 

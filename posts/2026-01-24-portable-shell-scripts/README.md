@@ -40,6 +40,7 @@ flowchart TD
 # POSIX-compliant script - maximum portability
 
 # POSIX features (work everywhere):
+
 # - Variable assignment: var=value
 # - Command substitution: $(command)
 # - Conditionals: [ test ] or test

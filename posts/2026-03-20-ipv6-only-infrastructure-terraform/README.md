@@ -24,6 +24,7 @@ flowchart TD
 
 ```hcl
 # vpc.tf - VPC set up for IPv6-only instance connectivity
+
 resource "aws_vpc" "ipv6_only" {
   cidr_block                       = "10.0.0.0/16"  # Required by AWS but not assigned to instances
   assign_generated_ipv6_cidr_block = true
@@ -93,7 +94,7 @@ resource "aws_internet_gateway" "main" {
 resource "aws_route_table" "ipv6_only" {
   vpc_id = aws_vpc.ipv6_only.id
 
-  # Only IPv6 default route — no IPv4 default route
+  # Only IPv6 default route - no IPv4 default route
   route {
     ipv6_cidr_block = "::/0"
     gateway_id      = aws_internet_gateway.main.id

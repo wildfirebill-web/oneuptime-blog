@@ -97,6 +97,7 @@ Many teams use a single S3 bucket for all Terraform state. Using `workspace_key_
 
 ```hcl
 # Project: networking
+
 # File: infrastructure/networking/backend.tf
 terraform {
   backend "s3" {

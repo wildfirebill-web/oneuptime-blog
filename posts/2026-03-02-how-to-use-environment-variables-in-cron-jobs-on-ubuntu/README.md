@@ -38,6 +38,7 @@ crontab -e
 
 ```text
 # Set environment variables for all jobs in this crontab
+
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 MAILTO=admin@example.com

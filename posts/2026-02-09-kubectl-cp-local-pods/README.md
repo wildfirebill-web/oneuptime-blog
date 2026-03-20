@@ -18,6 +18,7 @@ Copy files to and from pods:
 
 ```bash
 # Copy file from local to pod
+
 kubectl cp /local/path/file.txt pod-name:/container/path/file.txt
 
 # Copy file from pod to local

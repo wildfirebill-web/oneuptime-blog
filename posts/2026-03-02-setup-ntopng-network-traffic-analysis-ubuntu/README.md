@@ -25,6 +25,7 @@ ntopng provides official packages for Ubuntu:
 
 ```bash
 # Add the ntop repository
+
 wget https://packages.ntop.org/apt-stable/22.04/all/apt-ntop-stable.deb
 sudo dpkg -i apt-ntop-stable.deb
 

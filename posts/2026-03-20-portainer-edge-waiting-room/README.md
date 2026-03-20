@@ -1,4 +1,4 @@
-# How to Use the Edge Environment Waiting Room in Portainer
+# How to Use the Edge Environment Waiting Room in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -42,6 +42,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # List waiting room devices
+
 curl -s \
   -H "Authorization: Bearer $TOKEN" \
   https://portainer.example.com/api/edge/waiting-room \

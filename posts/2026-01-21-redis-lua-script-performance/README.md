@@ -25,6 +25,7 @@ Before optimizing, understand how Redis executes Lua scripts:
 
 ```bash
 # Configure slow log threshold (microseconds)
+
 redis-cli CONFIG SET slowlog-log-slower-than 10000  # 10ms
 
 # View slow queries

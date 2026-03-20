@@ -447,6 +447,7 @@ Apply security baselines across the entire mesh:
 
 ```yaml
 # In istio-system namespace for mesh-wide effect
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

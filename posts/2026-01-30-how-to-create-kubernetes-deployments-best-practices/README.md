@@ -10,7 +10,7 @@ Description: Learn best practices for creating robust Kubernetes Deployments wit
 
 Kubernetes Deployments are the standard way to manage stateless applications in production. A well-configured Deployment ensures your application runs reliably, scales efficiently, and updates smoothly. This guide covers essential best practices for creating production-ready Kubernetes Deployments.
 
-## Resource Requests and Limits
+Resource Requests and Limits
 
 Always define resource requests and limits for your containers. Requests guarantee minimum resources, while limits prevent runaway containers from affecting other workloads.
 

@@ -14,6 +14,7 @@ Cacti is an open-source network monitoring and graphing tool built on RRDtool. I
 
 ```bash
 # Install EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install Apache, MySQL, PHP, and SNMP tools

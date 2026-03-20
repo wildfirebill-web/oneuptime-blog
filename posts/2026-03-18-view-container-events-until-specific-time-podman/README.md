@@ -20,6 +20,7 @@ The `--until` flag supports relative time offsets, though it is most commonly us
 
 ```bash
 # View events that occurred up to 30 minutes ago
+
 podman events --until 30m
 
 # View events that occurred up to 1 hour ago

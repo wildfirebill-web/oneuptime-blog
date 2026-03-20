@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, Performance, IPv4, MaxClients, KeepAlive, Tuning, mpm_prefork
+Tags: Apache, Performance, IPv4, MaxClients, Keepalive, Tuning, Mpm_prefork
 
 Description: Learn how to tune Apache's MaxClients (MaxRequestWorkers) and KeepAlive settings to handle high IPv4 connection volumes without exhausting server memory.
 
@@ -16,20 +16,21 @@ Apache's concurrency model depends on which MPM (Multi-Processing Module) is act
 
 ```bash
 # Check which MPM is active
+
 apache2ctl -V | grep "Server MPM"
 # or
 apachectl -M | grep mpm
 ```
 
-- **prefork** — one process per connection (PHP legacy); uses `MaxRequestWorkers`.
-- **worker** — hybrid threads; uses `MaxRequestWorkers` and `ThreadsPerChild`.
-- **event** — best for keep-alive (default on modern Apache); similar to worker.
+- **prefork** - one process per connection (PHP legacy); uses `MaxRequestWorkers`.
+- **worker** - hybrid threads; uses `MaxRequestWorkers` and `ThreadsPerChild`.
+- **event** - best for keep-alive (default on modern Apache); similar to worker.
 
 ## Calculating MaxRequestWorkers
 
 The formula for prefork:
 
-```
+```text
 MaxRequestWorkers = (Available RAM) / (RAM per Apache process)
 ```
 

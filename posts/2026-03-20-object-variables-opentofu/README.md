@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, Object, Structural Types, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Objects, Structural Types, Infrastructure as Code, DevOps
 
 Description: A guide to using object type variables in OpenTofu for structured configuration with named, typed attributes.
 
@@ -14,6 +14,7 @@ Object variables define structured types with named attributes, where each attri
 
 ```hcl
 # Basic object variable
+
 variable "database_config" {
   type = object({
     engine          = string

@@ -47,6 +47,7 @@ a "resolveType" function or each possible type should provide an "isTypeOf" func
 
 ```graphql
 # schema.graphql
+
 union SearchResult = User | Post | Comment
 
 type Query {

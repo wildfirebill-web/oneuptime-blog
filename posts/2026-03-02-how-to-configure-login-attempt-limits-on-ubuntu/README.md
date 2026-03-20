@@ -26,6 +26,7 @@ sudo nano /etc/ssh/sshd_config
 
 ```ini
 # Maximum authentication attempts per connection
+
 # Default is 6; reduce to 3 for stricter enforcement
 MaxAuthTries 3
 

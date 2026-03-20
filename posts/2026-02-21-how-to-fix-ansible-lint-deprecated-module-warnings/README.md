@@ -30,6 +30,7 @@ The bare `include` module was deprecated in Ansible 2.7.
 
 ```yaml
 # Deprecated: bare include
+
 ---
 - name: Deploy application
   hosts: webservers

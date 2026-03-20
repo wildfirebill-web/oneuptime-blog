@@ -54,6 +54,7 @@ The cluster operator is the officially supported way to run RabbitMQ on Kubernet
 
 ```bash
 # Install the operator using kubectl
+
 kubectl apply -f "https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml"
 
 # Verify installation

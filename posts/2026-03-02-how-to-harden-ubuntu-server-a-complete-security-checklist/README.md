@@ -16,6 +16,7 @@ The most basic hardening measure is staying current with security patches:
 
 ```bash
 # Apply all pending updates
+
 sudo apt-get update && sudo apt-get upgrade -y
 
 # Install unattended-upgrades for automatic security updates

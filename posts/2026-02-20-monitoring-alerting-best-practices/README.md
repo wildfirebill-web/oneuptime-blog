@@ -32,6 +32,7 @@ If an alert fires and the on-call engineer cannot take a specific action to reso
 
 ```yaml
 # alert_rules.yaml
+
 # Example of non-actionable vs actionable alerts
 
 groups:

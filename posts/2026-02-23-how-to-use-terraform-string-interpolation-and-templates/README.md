@@ -58,6 +58,7 @@ A common mistake is wrapping a single expression in unnecessary interpolation:
 
 ```hcl
 # BAD - unnecessary interpolation
+
 instance_type = "${var.instance_type}"
 subnet_id     = "${aws_subnet.public.id}"
 count         = "${var.instance_count}"

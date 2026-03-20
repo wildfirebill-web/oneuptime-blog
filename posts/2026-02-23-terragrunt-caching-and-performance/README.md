@@ -33,6 +33,7 @@ By default, the cache lives inside each module's directory. You can change this 
 
 ```bash
 # Move all caches to a central location
+
 export TERRAGRUNT_DOWNLOAD="/tmp/terragrunt-cache"
 
 # This is especially useful in CI where you want to cache this directory

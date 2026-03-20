@@ -32,6 +32,7 @@ The `ignore_unreachable` directive tells Ansible to keep trying tasks on a host 
 
 ```yaml
 # Basic usage of ignore_unreachable at the task level
+
 - name: Gather uptime from all servers
   ansible.builtin.command:
     cmd: uptime

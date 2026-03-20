@@ -25,6 +25,7 @@ Terraform can generate SSH keys using the `tls` provider, then deploy them to cl
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     tls = {

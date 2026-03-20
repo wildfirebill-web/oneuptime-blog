@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, Gateway Timeout, Reverse Proxy, Performance, Timeout Configuration
+Tags: Nginx, Troubleshooting, Gateway Timeout, Reverse Proxy, Performance, Timeout Configuration
 
 Description: A comprehensive guide to diagnosing and fixing 504 Gateway Timeout errors in Nginx reverse proxy configurations, including timeout tuning, backend debugging, and performance optimization.
 
@@ -45,6 +45,7 @@ Default Nginx timeouts might be insufficient for your application:
 
 ```nginx
 # Default values (often too short)
+
 proxy_connect_timeout 60s;
 proxy_send_timeout 60s;
 proxy_read_timeout 60s;

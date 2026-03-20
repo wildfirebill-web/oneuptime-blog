@@ -36,6 +36,7 @@ Adding an approval job to your workflow requires only a few lines of configurati
 
 ```yaml
 # .circleci/config.yml
+
 # Version 2.1 enables workflow features and modern syntax
 version: 2.1
 

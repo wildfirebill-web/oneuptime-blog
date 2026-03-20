@@ -51,6 +51,7 @@ Next, configure the health endpoints in `application.yml`:
 
 ```yaml
 # application.yml
+
 # Enable Kubernetes-specific health endpoints
 management:
   endpoints:

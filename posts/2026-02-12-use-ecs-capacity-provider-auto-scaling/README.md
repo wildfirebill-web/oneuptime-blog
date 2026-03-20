@@ -32,6 +32,7 @@ The capacity provider wraps an ASG, so start there.
 
 ```bash
 # Create a launch template for ECS instances
+
 aws ec2 create-launch-template \
   --launch-template-name ecs-instance-template \
   --launch-template-data '{

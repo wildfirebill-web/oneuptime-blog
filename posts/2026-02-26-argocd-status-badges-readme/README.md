@@ -117,6 +117,7 @@ There is no reliable way to force GitHub to refresh cached images. The proxy res
 
 ```yaml
 # If using Nginx Ingress in front of ArgoCD
+
 annotations:
   nginx.ingress.kubernetes.io/configuration-snippet: |
     if ($request_uri ~* "/api/badge") {

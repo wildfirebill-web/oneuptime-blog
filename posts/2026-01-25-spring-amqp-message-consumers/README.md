@@ -43,6 +43,7 @@ Configure the RabbitMQ connection in `application.yml`:
 
 ```yaml
 # application.yml
+
 spring:
   rabbitmq:
     host: localhost

@@ -29,6 +29,7 @@ Flagsmith is a popular open-source feature flag platform with a clean UI and rob
 
 ```yaml
 # flagsmith-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -28,6 +28,7 @@ Create a staging cluster that replicates your production Flux CD setup.
 
 ```bash
 # Option 1: Create a kind cluster for local testing
+
 cat <<EOF | kind create cluster --name flux-staging --config=-
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

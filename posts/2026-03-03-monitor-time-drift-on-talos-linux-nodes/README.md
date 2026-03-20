@@ -31,6 +31,7 @@ echo "Time Drift Report - $(date -u)"
 echo "================================"
 
 # Get reference time from a known-good source
+
 reference_epoch=$(date +%s)
 
 for node in $NODES; do

@@ -222,6 +222,7 @@ data "http" "cert_check" {
 }
 
 # The response_headers can tell you about the connection
+
 output "server_header" {
   value = lookup(data.http.cert_check.response_headers, "Server", "unknown")
 }

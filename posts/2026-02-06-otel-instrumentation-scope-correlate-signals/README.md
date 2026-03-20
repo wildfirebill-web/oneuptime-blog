@@ -14,6 +14,7 @@ Every tracer, meter, and logger in OpenTelemetry is created with a name and vers
 
 ```python
 # Python: creating scoped instruments
+
 from opentelemetry import trace, metrics
 import logging
 

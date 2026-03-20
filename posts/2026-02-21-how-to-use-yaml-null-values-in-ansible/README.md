@@ -16,6 +16,7 @@ YAML has several ways to express null:
 
 ```yaml
 # All of these are null in YAML
+
 explicit_null: null
 tilde_null: ~
 empty_value:

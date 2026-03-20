@@ -38,6 +38,7 @@ Apache Cassandra is a highly scalable, distributed NoSQL database designed for h
 
 ```bash
 # Update system
+
 sudo apt update
 
 # Install Java 11

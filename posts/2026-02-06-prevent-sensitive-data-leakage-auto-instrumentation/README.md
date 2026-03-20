@@ -39,6 +39,7 @@ For Java, you can set environment variables to control which headers the OTLP au
 
 ```bash
 # Disable all HTTP request header capture
+
 export OTEL_INSTRUMENTATION_HTTP_CAPTURE_HEADERS_CLIENT_REQUEST=""
 export OTEL_INSTRUMENTATION_HTTP_CAPTURE_HEADERS_CLIENT_RESPONSE=""
 export OTEL_INSTRUMENTATION_HTTP_CAPTURE_HEADERS_SERVER_REQUEST=""

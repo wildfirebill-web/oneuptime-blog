@@ -8,12 +8,13 @@ Description: Learn how to write negative tests for OpenTofu modules that verify 
 
 ## Introduction
 
-Negative tests verify that your module correctly rejects invalid configurations. They are as important as positive tests — without them, invalid inputs might silently produce incorrect infrastructure. OpenTofu's native test framework makes negative testing straightforward with `expect_failures`.
+Negative tests verify that your module correctly rejects invalid configurations. They are as important as positive tests - without them, invalid inputs might silently produce incorrect infrastructure. OpenTofu's native test framework makes negative testing straightforward with `expect_failures`.
 
 ## Testing Variable Validation Rules
 
 ```hcl
 # modules/database/variables.tf
+
 variable "instance_class" {
   type        = string
   description = "RDS instance class"
@@ -216,4 +217,4 @@ run "rejects_wrong_type_for_name" {
 
 ## Conclusion
 
-Negative tests with `expect_failures` document your module's invariants and guard against regression when validation rules are accidentally removed or weakened. Write at least one negative test for every `validation` block, `precondition`, and `postcondition` in your modules. A module without negative tests is incomplete — it only documents what valid input looks like, not what the module protects against.
+Negative tests with `expect_failures` document your module's invariants and guard against regression when validation rules are accidentally removed or weakened. Write at least one negative test for every `validation` block, `precondition`, and `postcondition` in your modules. A module without negative tests is incomplete - it only documents what valid input looks like, not what the module protects against.

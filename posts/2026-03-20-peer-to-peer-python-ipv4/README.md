@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Peer-to-Peer, TCP, Networking, asyncio
+Tags: Python, IPv4, Peer-to-peer, TCP, Networking, Asyncio
 
 Description: Learn how to implement peer-to-peer communication over IPv4 in Python, where each node acts as both a server and client, enabling direct bidirectional communication without a central server.
 
@@ -95,6 +95,7 @@ async def main(listen_port: int, known_peers: list[tuple[str, int]]) -> None:
 
 ```bash
 # Node 1: port 9001, no known peers yet
+
 python node.py --port 9001
 
 # Node 2: port 9002, knows about Node 1

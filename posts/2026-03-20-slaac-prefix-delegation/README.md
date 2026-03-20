@@ -12,7 +12,7 @@ DHCPv6 Prefix Delegation (DHCPv6-PD, RFC 3633) allows a router to request a pref
 
 ## How Prefix Delegation Works
 
-```
+```text
 Prefix Delegation Flow:
 
 ISP → [DHCPv6-PD Server]
@@ -48,6 +48,7 @@ Step 5: CPE advertises /64 prefixes via SLAAC RA
 
 ```bash
 # Install dhcpcd (popular DHCPv6-PD client)
+
 sudo apt-get install dhcpcd5
 
 # Configure dhcpcd for prefix delegation
@@ -127,7 +128,7 @@ sudo systemctl start wide-dhcpv6-client
 
 ## Cisco Home Router / CPE Configuration
 
-```
+```text
 ! Cisco IOS CPE router with DHCPv6-PD
 
 ! WAN interface: request prefix from ISP
@@ -181,7 +182,7 @@ cat /var/lib/dhcpcd/dhcpcd-eth0.lease6
 
 ## Prefix Delegation Hierarchy
 
-```
+```text
 Typical ISP Prefix Delegation Hierarchy:
 
 ISP assigns:       /32 (ISP prefix)

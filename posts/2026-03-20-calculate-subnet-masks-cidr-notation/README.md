@@ -10,7 +10,7 @@ Description: Converting a CIDR prefix length to a dotted-decimal subnet mask inv
 
 A /N prefix length means the mask has N ones followed by (32 − N) zeros:
 
-```
+```text
 /24 = 11111111.11111111.11111111.00000000 = 255.255.255.0
 /20 = 11111111.11111111.11110000.00000000 = 255.255.240.0
 /28 = 11111111.11111111.11111111.11110000 = 255.255.255.240
@@ -51,6 +51,7 @@ def mask_to_cidr(mask: str) -> int:
     return bin(mask_int).count("1")
 
 # Examples
+
 for prefix in [8, 16, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32]:
     mask = cidr_to_mask(prefix)
     print(f"/{prefix:2d} -> {mask}")

@@ -33,6 +33,7 @@ Create target definitions for each environment:
 
 ```yaml
 # targets/dev-run.yaml - Development Cloud Run target
+
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:

@@ -285,6 +285,7 @@ Do not just rely on Kubernetes internal health checks. Set up external monitorin
 
 ```bash
 # Simple external health check
+
 curl -s -o /dev/null -w "%{http_code}" https://your-domain.com/healthz/ready
 
 # From your monitoring tool, check the status endpoint

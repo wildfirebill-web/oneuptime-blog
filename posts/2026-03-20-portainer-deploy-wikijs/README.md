@@ -1,8 +1,8 @@
-# How to Deploy WikiJS via Portainer
+# How to Deploy WikiJS via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, WikiJS, Wiki, Documentation, Self-Hosted
+Tags: Portainer, Docker, Wikijs, Wiki, Documentation, Self-Hosted
 
 Description: Deploy Wiki.js via Portainer as a powerful, modern wiki platform with multiple storage backends, rich editing options, and extensive authentication methods.
 
@@ -80,27 +80,27 @@ Wiki.js supports many auth providers:
 1. Navigate to **Administration > Authentication**
 2. Add a provider:
    - **Local** (default, users created in Wiki.js)
-   - **Google** — OAuth2
-   - **GitHub** — OAuth2
-   - **SAML 2.0** — Enterprise SSO
+   - **Google** - OAuth2
+   - **GitHub** - OAuth2
+   - **SAML 2.0** - Enterprise SSO
    - **LDAP/Active Directory**
 
 ## Page Management
 
 Wiki.js organizes content by path:
 
-- `/home` — Main page
-- `/engineering/docker/setup` — Nested path
-- `/hr/onboarding/day-one` — Any depth
+- `/home` - Main page
+- `/engineering/docker/setup` - Nested path
+- `/hr/onboarding/day-one` - Any depth
 
 ## Using Multiple Editors
 
 Wiki.js supports:
-- **Markdown** — Standard MD with extensions
-- **Visual Editor** — WYSIWYG HTML editing
-- **Code** — Raw HTML
-- **AsciiDoc** — Alternative markup
-- **Tabular** — Structured tabular data
+- **Markdown** - Standard MD with extensions
+- **Visual Editor** - WYSIWYG HTML editing
+- **Code** - Raw HTML
+- **AsciiDoc** - Alternative markup
+- **Tabular** - Structured tabular data
 
 ## Conclusion
 

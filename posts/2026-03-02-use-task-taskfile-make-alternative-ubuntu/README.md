@@ -26,6 +26,7 @@ Task is a task runner written in Go that uses YAML for task definitions instead 
 
 ```bash
 # Download and run the install script (installs to /usr/local/bin by default)
+
 sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
 
 # Verify installation

@@ -47,6 +47,7 @@ Now create the load balancer using gcloud:
 
 ```bash
 # Create a health check
+
 gcloud compute health-checks create http istio-health-check \
   --port 15021 \
   --request-path /healthz/ready

@@ -118,6 +118,7 @@ This configuration sets up JWT validation for your namespace. The `jwtRules` sec
 
 ```yaml
 # RequestAuthentication resource for validating JWTs
+
 # This resource tells Istio how to verify incoming JWT tokens
 apiVersion: security.istio.io/v1
 kind: RequestAuthentication

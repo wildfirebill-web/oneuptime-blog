@@ -1,4 +1,4 @@
-# How to Check If Your ISP Provides IPv6
+# How to Check If Your ISP Provides IPv6 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,6 +12,7 @@ The fastest check is to visit an IPv6 test site or ping a well-known IPv6 addres
 
 ```bash
 # Ping Cloudflare's IPv6 DNS resolver
+
 ping6 2606:4700:4700::1111
 
 # Ping Google's IPv6 address
@@ -54,14 +55,14 @@ Identify whether you have native IPv6, a tunnel, or no IPv6.
 ip -6 addr show | grep "scope global"
 
 # Address types:
-# 2001:xxxx::/32     — ARIN/RIPE/APNIC native allocation (good)
-# 2400:xxxx::/23     — APNIC native (good)
-# 2600:xxxx::/23     — ARIN native (good)
-# 2a00:xxxx::/23     — RIPE NCC native (good)
-# 2002:xxxx::/16     — 6to4 tunnel (legacy, often broken)
-# 2001:0::/32        — Teredo tunnel (Windows legacy)
-# fc00::/7           — ULA (not routable, internal only)
-# fe80::/10          — Link-local only (no internet, ISP not providing IPv6)
+# 2001:xxxx::/32     - ARIN/RIPE/APNIC native allocation (good)
+# 2400:xxxx::/23     - APNIC native (good)
+# 2600:xxxx::/23     - ARIN native (good)
+# 2a00:xxxx::/23     - RIPE NCC native (good)
+# 2002:xxxx::/16     - 6to4 tunnel (legacy, often broken)
+# 2001:0::/32        - Teredo tunnel (Windows legacy)
+# fc00::/7           - ULA (not routable, internal only)
+# fe80::/10          - Link-local only (no internet, ISP not providing IPv6)
 ```
 
 ## Test with Online Tools
@@ -78,7 +79,7 @@ dig AAAA ipv6.google.com
 # Test if your IPv6 DNS server is reachable
 dig @2606:4700:4700::1111 AAAA cloudflare.com
 
-# Check MTU — ISP may have issues with jumbo packets
+# Check MTU - ISP may have issues with jumbo packets
 ping6 -s 1400 2001:4860:4860::8888
 ping6 -s 1452 2001:4860:4860::8888
 ```
@@ -126,4 +127,4 @@ ip -6 addr show he-ipv6
 
 ## Conclusion
 
-To verify ISP IPv6 support: ping a public IPv6 address, check your router's WAN interface for a global IPv6 address (not fe80:: or fc00::), and confirm a delegated prefix (/56 or /48) was received via DHCPv6-PD. If your ISP does not provide native IPv6, use a Hurricane Electric tunnel as a free interim solution. Most major ISPs now support IPv6; if yours does not, contact support and request IPv6 be enabled on your account — it is often available but not provisioned by default.
+To verify ISP IPv6 support: ping a public IPv6 address, check your router's WAN interface for a global IPv6 address (not fe80:: or fc00::), and confirm a delegated prefix (/56 or /48) was received via DHCPv6-PD. If your ISP does not provide native IPv6, use a Hurricane Electric tunnel as a free interim solution. Most major ISPs now support IPv6; if yours does not, contact support and request IPv6 be enabled on your account - it is often available but not provisioned by default.

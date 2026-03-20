@@ -20,6 +20,7 @@ By default, `podman kill` sends SIGKILL to the container.
 
 ```bash
 # Start a container
+
 podman run -d --name my-app docker.io/library/alpine:latest sleep 3600
 
 # Kill with SIGKILL (default)

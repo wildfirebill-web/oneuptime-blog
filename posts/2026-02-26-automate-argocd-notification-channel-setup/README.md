@@ -26,6 +26,7 @@ Here is a script that configures Slack notifications for a team:
 ```bash
 #!/bin/bash
 # setup-slack-notifications.sh - Configure Slack notifications for ArgoCD
+
 set -euo pipefail
 
 TEAM_NAME="${1:?Usage: $0 <team-name> <slack-channel> <webhook-url>}"

@@ -27,6 +27,7 @@ The connection represents the physical circuit. In practice, you'll need to work
 
 ```hcl
 # Create a Direct Connect connection
+
 resource "aws_dx_connection" "main" {
   name      = "dc-to-aws-primary"
   bandwidth = "1Gbps"

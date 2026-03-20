@@ -21,6 +21,7 @@ Running your own Git server gives you complete control over your code repositori
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Git

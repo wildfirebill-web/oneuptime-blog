@@ -26,6 +26,7 @@ Most password managers treat sharing as an afterthought. Passbolt was designed f
 
 ```bash
 # Create the Passbolt project directory
+
 mkdir -p ~/passbolt/{gpg,jwt}
 cd ~/passbolt
 ```

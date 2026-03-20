@@ -41,6 +41,7 @@ Target: < 1ms for 99th percentile
 
 ```bash
 # Built-in latency test
+
 redis-cli --latency -h localhost -p 6379
 
 # Sample output:

@@ -29,6 +29,7 @@ The fix is straightforward. Add pipelining to your `ansible.cfg`:
 
 ```ini
 # ansible.cfg - enable pipelining to skip the temp file dance
+
 [ssh_connection]
 pipelining = True
 ```

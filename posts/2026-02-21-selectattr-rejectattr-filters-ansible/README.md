@@ -26,6 +26,7 @@ The simplest form checks if an attribute is truthy:
 
 ```yaml
 # Example data
+
 servers:
   - name: web-01
     ip: "10.0.1.10"

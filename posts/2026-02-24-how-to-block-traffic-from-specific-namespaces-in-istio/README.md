@@ -180,6 +180,7 @@ Test that traffic is properly blocked:
 
 ```bash
 # From the development namespace (should be blocked)
+
 kubectl exec deploy/test-client -n development -c test-client -- curl -s -o /dev/null -w "%{http_code}" http://payment-service.production.svc.cluster.local/api/charge
 # Expected: 403
 

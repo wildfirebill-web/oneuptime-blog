@@ -42,6 +42,7 @@ resources:
 
 ```yaml
 # clusters/my-cluster/ml-workloads/inference-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

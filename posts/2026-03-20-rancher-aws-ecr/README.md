@@ -21,6 +21,7 @@ Amazon Elastic Container Registry (ECR) is AWS's managed container registry serv
 
 ```bash
 # Create an ECR repository
+
 aws ecr create-repository \
   --repository-name my-app \
   --region us-east-1 \

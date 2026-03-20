@@ -35,6 +35,7 @@ Netplan is the standard for Ubuntu server installations. DNS configuration goes 
 
 ```yaml
 # /etc/netplan/01-network.yaml
+
 network:
   version: 2
   renderer: networkd

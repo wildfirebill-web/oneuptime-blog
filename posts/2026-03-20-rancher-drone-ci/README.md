@@ -1,4 +1,4 @@
-# How to Configure Drone CI with Rancher
+# How to Configure Drone CI with Rancher - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Drone CI is a lightweight, container-native CI/CD platform that runs each pipeli
 
 ```bash
 # Generate a shared secret between Drone server and runners
+
 DRONE_RPC_SECRET=$(openssl rand -hex 32)
 echo "Drone RPC Secret: ${DRONE_RPC_SECRET}"
 
@@ -131,7 +132,7 @@ helm install drone-runner-kube drone/drone-runner-kube \
 ## Step 5: Create a Basic Drone Pipeline
 
 ```yaml
-# .drone.yml — in the root of your application repository
+# .drone.yml - in the root of your application repository
 kind: pipeline
 type: kubernetes
 name: default
@@ -200,7 +201,7 @@ drone secret add \
 ## Step 7: Configure Multi-Stage Pipelines
 
 ```yaml
-# .drone.yml — Multi-stage with environment promotion
+# .drone.yml - Multi-stage with environment promotion
 kind: pipeline
 type: kubernetes
 name: staging

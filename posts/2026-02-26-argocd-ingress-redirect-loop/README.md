@@ -144,6 +144,7 @@ And ensure ArgoCD has `server.insecure: "true"`.
 
 ```yaml
 # Use IngressRoute instead of Ingress
+
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:

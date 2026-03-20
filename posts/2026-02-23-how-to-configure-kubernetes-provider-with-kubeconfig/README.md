@@ -26,6 +26,7 @@ The simplest setup points the provider at your kubeconfig file:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     kubernetes = {

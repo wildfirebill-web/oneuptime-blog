@@ -56,6 +56,7 @@ Enable BGP peering with your top-of-rack switches or routers to advertise pod ro
 
 ```yaml
 # bgp-config.yaml
+
 apiVersion: projectcalico.org/v3
 kind: BGPConfiguration
 metadata:

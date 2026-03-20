@@ -25,6 +25,7 @@ The key integration points are: etcd (shared between Calico and OpenStack in som
 
 ```bash
 # Diagnose Neutron ML2 agent issues after upgrade
+
 openstack network agent list | grep calico
 # Look for "down" agents
 

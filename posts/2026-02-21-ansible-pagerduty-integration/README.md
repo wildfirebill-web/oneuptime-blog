@@ -41,6 +41,7 @@ Store PagerDuty configuration as Ansible variables, with sensitive keys in Ansib
 
 ```yaml
 # group_vars/all.yml
+
 pagerduty_api_token: "{{ vault_pagerduty_api_token }}"
 pagerduty_events_url: "https://events.pagerduty.com/v2/enqueue"
 
@@ -205,6 +206,7 @@ Instance: {{ "{{ .Labels.instance }}" }}
 Severity: {{ "{{ .Labels.severity }}" }}
 Summary: {{ "{{ .Annotations.summary }}" }}
 Description: {{ "{{ .Annotations.description }}" }}
+
 Started: {{ "{{ .StartsAt.Format \"2006-01-02 15:04:05 MST\" }}" }}
 
 {{ "{{ end }}" }}

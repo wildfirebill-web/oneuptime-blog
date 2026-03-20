@@ -27,6 +27,7 @@ Before installing Calico, ensure EC2 security groups allow necessary traffic:
 
 ```bash
 # Allow VXLAN traffic between cluster nodes (for Calico VXLAN mode)
+
 aws ec2 authorize-security-group-ingress \
   --group-id sg-your-cluster-sg \
   --protocol udp \

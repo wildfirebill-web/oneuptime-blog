@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Routing, NGINX, Networking
+Tags: Kubernetes, Ingresses, Routing, Nginx, Networking
 
 Description: Master Kubernetes Ingress path types including Exact, Prefix, and ImplementationSpecific to configure precise URL routing rules for your applications and avoid common routing conflicts.
 
@@ -486,6 +486,7 @@ Verify your path configuration works as expected:
 
 ```bash
 # Test exact paths
+
 curl -I http://app.example.com/api/v1/users
 curl -I http://app.example.com/api/v1/users/  # Should differ if using Exact
 

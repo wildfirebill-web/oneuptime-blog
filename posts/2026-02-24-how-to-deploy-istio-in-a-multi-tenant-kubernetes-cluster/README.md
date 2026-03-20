@@ -31,6 +31,7 @@ kubectl create namespace tenant-a
 kubectl create namespace tenant-b
 
 # Enable sidecar injection per namespace
+
 kubectl label namespace tenant-a istio-injection=enabled
 kubectl label namespace tenant-b istio-injection=enabled
 ```

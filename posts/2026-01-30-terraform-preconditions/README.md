@@ -271,6 +271,7 @@ Preconditions work inside modules to enforce usage contracts.
 
 ```hcl
 # modules/web-server/main.tf
+
 variable "instance_type" {
   type = string
 }

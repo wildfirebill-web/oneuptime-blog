@@ -58,6 +58,7 @@ Calculate the total bytes per second flowing through a service:
 
 ```promql
 # Incoming data rate (request bodies)
+
 sum(rate(istio_request_bytes_sum{
   reporter="destination",
   destination_workload="api-service"

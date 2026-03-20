@@ -84,6 +84,7 @@ Ensure localhost entries are correct:
 
 ```bash
 # Ensure outbound DNS is not blocked
+
 sudo firewall-cmd --list-all
 sudo nft list ruleset | grep 53
 ```

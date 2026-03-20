@@ -24,6 +24,7 @@ Configure the Collector gateway to emit volume metrics per team and service:
 
 ```yaml
 # gateway-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

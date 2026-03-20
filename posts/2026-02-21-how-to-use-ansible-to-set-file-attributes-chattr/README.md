@@ -32,6 +32,7 @@ The `file` module has an `attributes` parameter that maps directly to chattr fla
 
 ```yaml
 # Make a critical config file immutable
+
 - name: Set immutable attribute on resolv.conf
   ansible.builtin.file:
     path: /etc/resolv.conf

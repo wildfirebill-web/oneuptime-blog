@@ -39,6 +39,7 @@ This creates a VPC with one NAT Gateway shared across all private subnets:
 
 ```hcl
 # Elastic IP for the NAT Gateway
+
 resource "aws_eip" "nat" {
   domain = "vpc"
 

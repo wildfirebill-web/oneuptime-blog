@@ -32,6 +32,7 @@ Start with a minimal Ubuntu container that includes a VNC server and a lightweig
 
 ```dockerfile
 # Dockerfile.vnc - Ubuntu container with VNC server and XFCE desktop
+
 FROM ubuntu:22.04
 
 # Prevent interactive prompts during package installation

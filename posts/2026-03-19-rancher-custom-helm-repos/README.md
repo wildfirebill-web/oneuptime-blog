@@ -225,6 +225,7 @@ Generate a chart index and serve it with nginx or a cloud storage bucket:
 helm package my-chart/
 helm repo index . --url https://charts.example.com
 # Upload index.yaml and .tgz files to your web server
+
 ```
 
 ## Summary

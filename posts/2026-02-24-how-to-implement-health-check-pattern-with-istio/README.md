@@ -247,6 +247,7 @@ Track health check outcomes with Prometheus:
 
 ```promql
 # Ejected endpoints
+
 envoy_cluster_outlier_detection_ejections_active{cluster_name=~"outbound.*my-service.*"}
 
 # Total ejections over time

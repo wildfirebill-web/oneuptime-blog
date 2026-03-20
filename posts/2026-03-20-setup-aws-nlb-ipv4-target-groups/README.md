@@ -16,6 +16,7 @@ AWS Network Load Balancer (NLB) operates at Layer 4 (TCP/UDP/TLS). It handles mi
 VPC_ID="vpc-0abc123def456"
 
 # TCP target group for web servers on port 80
+
 TG_ARN=$(aws elbv2 create-target-group \
   --name nlb-web-tg \
   --protocol TCP \

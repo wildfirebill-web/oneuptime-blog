@@ -27,6 +27,7 @@ Two modes for VPC creation:
 
 ```bash
 # Create a custom mode VPC (no auto-created subnets)
+
 gcloud compute networks create prod-vpc \
   --subnet-mode=custom \
   --bgp-routing-mode=regional

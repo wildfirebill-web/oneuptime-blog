@@ -24,6 +24,7 @@ Before you start, you need an organization-level access policy, the Access Conte
 
 ```bash
 # Verify your organization ID
+
 gcloud organizations list
 
 # Check that you have the required roles

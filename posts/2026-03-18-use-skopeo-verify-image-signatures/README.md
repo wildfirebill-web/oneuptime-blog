@@ -20,6 +20,7 @@ You need GPG keys and Skopeo installed for image signing.
 
 ```bash
 # Install Skopeo and GPG
+
 sudo dnf install -y skopeo gnupg2   # Fedora/RHEL
 sudo apt-get install -y skopeo gpg  # Ubuntu/Debian
 

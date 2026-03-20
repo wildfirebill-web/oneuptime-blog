@@ -210,6 +210,7 @@ sum(rate({service="api-server"} |= "error" [5m])) by (service)
 1. **Index Mapping to Labels**
 ```yaml
 # Elasticsearch field mapping
+
 mappings:
   properties:
     kubernetes.namespace: { type: keyword }

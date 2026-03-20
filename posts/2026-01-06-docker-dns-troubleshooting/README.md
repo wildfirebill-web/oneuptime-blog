@@ -24,6 +24,7 @@ This example demonstrates the critical difference between default and user-defin
 
 ```bash
 # Default bridge network - NO built-in DNS
+
 # Container names cannot be resolved on the default bridge network
 docker run --rm alpine ping other-container
 # FAILS: "bad address 'other-container'"

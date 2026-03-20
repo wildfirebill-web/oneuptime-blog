@@ -23,6 +23,7 @@ First, get Tracetest running alongside your application:
 
 ```yaml
 # docker-compose.yaml
+
 version: '3.8'
 services:
   tracetest:

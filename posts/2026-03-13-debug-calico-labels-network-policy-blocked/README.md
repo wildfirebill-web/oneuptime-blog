@@ -26,6 +26,7 @@ When debugging, the key question is always: does the policy selector actually ma
 
 ```bash
 # Check if the pod has the labels the policy expects
+
 kubectl get pod my-pod -n my-namespace --show-labels
 
 # Example output:

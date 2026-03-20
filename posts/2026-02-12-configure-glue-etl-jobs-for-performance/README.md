@@ -33,6 +33,7 @@ More workers doesn't always mean faster. There's overhead in coordinating work a
 
 ```python
 # Create a job with tuned worker settings
+
 glue.create_job(
     Name='optimized-transform',
     Role='arn:aws:iam::YOUR_ACCOUNT_ID:role/GlueETLRole',

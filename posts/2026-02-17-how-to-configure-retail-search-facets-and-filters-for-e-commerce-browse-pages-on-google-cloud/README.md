@@ -221,6 +221,7 @@ def browse_category(project_id, category, active_filters=None, page_size=24, pag
     }
 
 # Example: Browse men's running shoes, filtered by Nike brand
+
 results = browse_category(
     "my-project",
     "Shoes > Running Shoes > Men's",

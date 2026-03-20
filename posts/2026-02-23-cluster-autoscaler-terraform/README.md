@@ -28,6 +28,7 @@ EKS requires IAM permissions for the autoscaler to modify Auto Scaling Groups.
 
 ```hcl
 # IAM policy for Cluster Autoscaler
+
 resource "aws_iam_policy" "cluster_autoscaler" {
   name = "${var.cluster_name}-cluster-autoscaler"
 

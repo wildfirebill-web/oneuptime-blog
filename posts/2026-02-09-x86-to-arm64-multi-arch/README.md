@@ -21,6 +21,7 @@ Container images can support multiple CPU architectures.
 docker manifest inspect nginx:latest | jq '.manifests[] | {arch: .platform.architecture, os: .platform.os}'
 
 # Output shows supported architectures:
+
 # {"arch": "amd64", "os": "linux"}
 # {"arch": "arm64", "os": "linux"}
 # {"arch": "arm", "os": "linux"}

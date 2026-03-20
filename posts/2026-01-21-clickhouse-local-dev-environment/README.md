@@ -16,6 +16,7 @@ A well-configured local development environment accelerates ClickHouse developme
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

@@ -35,6 +35,7 @@ This method generates a new random encryption key at every boot. The swap conten
 
 ```bash
 # Find the current swap device
+
 swapon --show
 blkid | grep swap
 ```

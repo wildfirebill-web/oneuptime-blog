@@ -29,6 +29,7 @@ Create a secondary Flux `GitRepository` that watches a `hotfix` branch. This sou
 
 ```yaml
 # clusters/production/flux-system/hotfix-source.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

@@ -20,6 +20,7 @@ Use the `:ro` suffix to make a bind mount read-only inside the container:
 
 ```bash
 # Mount a configuration directory as read-only
+
 podman run -d --name webserver \
   -v /home/user/nginx-config:/etc/nginx/conf.d:ro \
   -p 8080:80 \

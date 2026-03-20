@@ -20,6 +20,7 @@ Guest access got more restricted in newer Samba versions due to security concern
 
 ```bash
 # Install Samba if not already present
+
 sudo apt update
 sudo apt install samba -y
 

@@ -16,6 +16,7 @@ This post covers all four Kubernetes Service types - ClusterIP, NodePort, LoadBa
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

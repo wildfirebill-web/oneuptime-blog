@@ -28,6 +28,7 @@ This playbook imports GPG keys for various package repositories:
 
 ```yaml
 # import-repo-keys.yml - Import GPG signing keys for package repos
+
 ---
 - name: Import Repository GPG Keys
   hosts: all

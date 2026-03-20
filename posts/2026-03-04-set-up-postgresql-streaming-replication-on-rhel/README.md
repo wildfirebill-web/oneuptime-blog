@@ -14,6 +14,7 @@ PostgreSQL streaming replication continuously ships WAL (Write-Ahead Log) record
 
 ```bash
 # Create a replication user
+
 sudo -u postgres psql -c "CREATE ROLE replicator WITH REPLICATION LOGIN PASSWORD 'replpass123';"
 
 # Edit postgresql.conf on the primary

@@ -34,6 +34,7 @@ Here is the complete workflow for uploading Terraform code and triggering a run 
 
 ```bash
 # Create a new configuration version
+
 WORKSPACE_ID="ws-abc123"
 
 RESPONSE=$(curl -s \

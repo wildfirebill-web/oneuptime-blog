@@ -32,6 +32,7 @@ Create a new Azure Functions project with the Pillow library for image processin
 
 ```bash
 # Create the function project
+
 func init image-pipeline --python --model V2
 cd image-pipeline
 

@@ -35,6 +35,7 @@ The first place to look is the application's sync status:
 
 ```bash
 # Get the sync status and any error messages
+
 argocd app get my-app
 
 # For more detail, check the conditions

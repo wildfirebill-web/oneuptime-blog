@@ -16,6 +16,7 @@ Start with a workflow that runs plan on PRs and apply on merge:
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform
 
 on:
@@ -77,7 +78,7 @@ jobs:
 
 Post the plan output as a comment on pull requests:
 
-```yaml
+````yaml
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -115,9 +116,9 @@ jobs:
 
             <details><summary>Show Plan</summary>
 
-            \`\`\`terraform
+            ```terraform
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
 
             </details>
 
@@ -151,7 +152,7 @@ terraform {
     encrypt        = true
   }
 }
-```
+````
 
 Workflow with OIDC authentication to AWS:
 
@@ -343,7 +344,7 @@ jobs:
 
 Schedule periodic drift checks:
 
-```yaml
+````yaml
 name: Terraform Drift Detection
 
 on:
@@ -409,9 +410,9 @@ jobs:
               <details>
               <summary>Plan Output</summary>
 
-              \`\`\`
+              ```
               ${plan.substring(0, 60000)}
-              \`\`\`
+              ```
               </details>
 
               Please review and either:
@@ -420,7 +421,7 @@ jobs:
               `,
               labels: ['infrastructure', 'drift']
             });
-```
+````
 
 ## Plan Approval Workflow
 

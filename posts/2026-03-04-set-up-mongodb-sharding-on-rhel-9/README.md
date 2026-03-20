@@ -22,6 +22,7 @@ Configure MongoDB sharding:
 
 ```bash
 # Start config servers
+
 mongod --configsvr --replSet configRS --port 27019 --dbpath /data/configdb
 
 # Start shard servers

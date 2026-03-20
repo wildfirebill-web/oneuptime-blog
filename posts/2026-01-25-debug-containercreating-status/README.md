@@ -41,6 +41,7 @@ Start with `kubectl describe` to see events:
 
 ```bash
 # Describe the stuck pod
+
 kubectl describe pod <pod-name> -n <namespace>
 
 # Look at the Events section at the bottom

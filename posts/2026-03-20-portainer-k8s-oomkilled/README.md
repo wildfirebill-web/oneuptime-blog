@@ -1,4 +1,4 @@
-# How to Debug OOMKilled Pods in Portainer
+# How to Debug OOMKilled Pods in Portainer - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ In Portainer's **Kubernetes > Applications** view, OOMKilled pods show:
 
 ```bash
 # Confirm OOMKilled via CLI
+
 kubectl get pods -n production
 # NAME              READY   STATUS      RESTARTS   AGE
 # my-app-abc123     0/1     OOMKilled   15         2h

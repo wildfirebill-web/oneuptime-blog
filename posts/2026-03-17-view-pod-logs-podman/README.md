@@ -18,6 +18,7 @@ Podman provides `podman pod logs` to aggregate logs from all containers in a pod
 
 ```bash
 # Create a pod with containers
+
 podman pod create --name app-pod -p 8080:80
 podman run -d --pod app-pod --name web docker.io/library/nginx:alpine
 podman run -d --pod app-pod --name app docker.io/library/alpine \

@@ -111,7 +111,7 @@ Note: `route` plugin routing uses record field values, not tag patterns. Use `re
 </filter>
 ```
 
-## Record Transformer — Add Subnet Tag
+## Record Transformer - Add Subnet Tag
 
 ```xml
 <filter nginx.access>

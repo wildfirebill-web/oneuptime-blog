@@ -29,6 +29,7 @@ The cilium-agent binary includes a built-in `completion zsh` subcommand that out
 
 ```bash
 # Generate zsh completion script from cilium-agent
+
 cilium-agent completion zsh > _cilium-agent
 
 # Verify the file was created and is not empty

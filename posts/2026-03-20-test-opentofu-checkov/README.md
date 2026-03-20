@@ -14,6 +14,7 @@ Checkov is a static code analysis tool for infrastructure-as-code that checks Op
 
 ```bash
 # Install Checkov
+
 pip install checkov
 
 # Scan a directory

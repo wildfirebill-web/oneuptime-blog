@@ -1,10 +1,10 @@
-# How to Write Custom Kubewarden Policies in AssemblyScript
+# How to Write Custom Kubewarden Policies in AssemblyScript - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Kubewarden, AssemblyScript, TypeScript, Policy as Code, Kubernetes, WebAssembly, Admission Control
 
-Description: Learn how to write custom Kubewarden admission policies in AssemblyScript — a TypeScript-like language that compiles to WebAssembly — for familiar JavaScript-style policy authoring.
+Description: Learn how to write custom Kubewarden admission policies in AssemblyScript - a TypeScript-like language that compiles to WebAssembly - for familiar JavaScript-style policy authoring.
 
 ---
 
@@ -16,6 +16,7 @@ AssemblyScript allows developers familiar with TypeScript to write Kubewarden po
 
 ```bash
 # Install Node.js 18+
+
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo bash
 sudo apt-get install -y nodejs
 
@@ -46,7 +47,7 @@ Edit `assembly/index.ts` to implement your policy:
 import { JSON } from "assemblyscript-json/assembly";
 import { validateSettings, Settings } from "./settings";
 
-// Main validation function — called for each admission request
+// Main validation function - called for each admission request
 export function validate(payload: string): string {
   const payloadObj = JSON.parse(payload) as JSON.Obj;
 
@@ -143,7 +144,7 @@ EOF
 
 # Run the policy test
 kwctl run build/release.wasm --request-path test-no-security-context.json
-# Expected: rejected — no securityContext
+# Expected: rejected - no securityContext
 ```
 
 ---
@@ -181,6 +182,6 @@ EOF
 
 ## Best Practices
 
-- AssemblyScript's JSON handling requires careful null checking — always handle `null` returns from JSON accessors.
+- AssemblyScript's JSON handling requires careful null checking - always handle `null` returns from JSON accessors.
 - Write tests using the AssemblyScript test runner before compiling to WASM.
 - For complex policies with many rules, prefer Rust or Go which have richer SDK support.

@@ -1,4 +1,4 @@
-# How to Choose the Right Shell for Container Console in Portainer
+# How to Choose the Right Shell for Container Console in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to select the correct shell when opening a container cons
 
 ## Introduction
 
-When opening a container console in Portainer, you must specify which shell to use. Choosing the wrong shell results in a "no such file or directory" error. The right shell depends on the base image — Alpine uses `/bin/sh`, Ubuntu/Debian have `/bin/bash`, and some minimal images have no shell at all.
+When opening a container console in Portainer, you must specify which shell to use. Choosing the wrong shell results in a "no such file or directory" error. The right shell depends on the base image - Alpine uses `/bin/sh`, Ubuntu/Debian have `/bin/bash`, and some minimal images have no shell at all.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Before choosing a shell, determine which shells are available in the container:
 
 ```bash
 # From Docker CLI (on the host), check available shells:
+
 docker exec my-container ls -la /bin/sh /bin/bash /bin/ash /bin/zsh 2>/dev/null
 
 # Or check /etc/shells:
@@ -31,12 +32,12 @@ docker exec my-container cat /etc/shells 2>/dev/null || echo "/etc/shells not fo
 
 ### Alpine Linux (`alpine:*`, `node:*-alpine`, `python:*-alpine`, etc.)
 
-```
+```text
 Available:   /bin/sh (BusyBox ash)
 NOT available: /bin/bash
 ```
 
-Use `/bin/sh` — not bash:
+Use `/bin/sh` - not bash:
 
 ```bash
 # In Portainer console dialog:
@@ -55,7 +56,7 @@ Alpine's shell is actually BusyBox `ash`, a minimal POSIX shell. Most bash scrip
 
 ### Ubuntu/Debian (`ubuntu:*`, `debian:*`, most full images)
 
-```
+```text
 Available:   /bin/bash (full bash), /bin/sh (dash), /bin/dash
 ```
 
@@ -74,7 +75,7 @@ Shell: /bin/bash
 
 ### Distroless Images
 
-```
+```text
 Available:   NONE (no shell at all)
 
 # Images:
@@ -108,7 +109,7 @@ postgres:15 → /bin/bash
 
 Some images include additional shells:
 
-```
+```text
 zsh:       /bin/zsh (rare in containers, common in developer images)
 fish:      /usr/bin/fish (developer tool images)
 dash:      /bin/dash (Debian/Ubuntu's default /bin/sh is dash)
@@ -145,7 +146,7 @@ done
 
 ### "exec: 'bash': executable file not found in $PATH"
 
-Same issue — the image doesn't have bash. Switch to `/bin/sh`.
+Same issue - the image doesn't have bash. Switch to `/bin/sh`.
 
 ### "rpc error: code = 2 desc = cannot find executable"
 
@@ -229,4 +230,4 @@ FROM gcr.io/distroless/java:17-debug
 
 ## Conclusion
 
-Choosing the right shell in Portainer's console dialog is a matter of knowing your base image. Alpine and minimal images use `/bin/sh`, while full distro images (Ubuntu, Debian, CentOS) offer `/bin/bash`. For distroless images, use Docker debug containers or alternate debugging strategies. When in doubt, try `/bin/sh` first — it's more universally available than `/bin/bash`.
+Choosing the right shell in Portainer's console dialog is a matter of knowing your base image. Alpine and minimal images use `/bin/sh`, while full distro images (Ubuntu, Debian, CentOS) offer `/bin/bash`. For distroless images, use Docker debug containers or alternate debugging strategies. When in doubt, try `/bin/sh` first - it's more universally available than `/bin/bash`.

@@ -34,6 +34,7 @@ The most common use case is constructing URLs with query parameters:
 
 ```yaml
 # api_call.yml - Build URL with encoded query parameters
+
 - name: Search API with encoded parameters
   ansible.builtin.uri:
     url: "https://api.example.com/v1/search?q={{ search_term | urlencode }}&category={{ category | urlencode }}"

@@ -35,6 +35,7 @@ Once setup completes, a terminal window opens. This is your Linux environment.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
@@ -127,7 +128,7 @@ graph TD
 
 Docker runs inside the Penguin container, which runs inside the Termina VM, which runs on ChromeOS. This nesting means there is a performance overhead, but for development workloads, it is manageable.
 
-## Resource Management
+Resource Management
 
 Chromebooks have limited RAM and CPU compared to typical development machines. Manage Docker's resource consumption carefully.
 

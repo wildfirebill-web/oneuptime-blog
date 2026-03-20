@@ -14,6 +14,7 @@ The `serial` keyword in Ansible controls how many hosts are processed at a time 
 
 ```yaml
 # rolling-update.yml - Deploy to 3 hosts at a time
+
 ---
 - name: Rolling update of web servers
   hosts: webservers

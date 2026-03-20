@@ -37,6 +37,7 @@ The task execution role is required for Fargate launch type and optional (but re
 
 ```hcl
 # Trust policy for ECS tasks
+
 data "aws_iam_policy_document" "ecs_task_trust" {
   statement {
     effect = "Allow"

@@ -33,6 +33,7 @@ provider "vault" {
 
 ```hcl
 # Enable the KV v2 secrets engine
+
 resource "vault_mount" "kv" {
   path        = "secret"
   type        = "kv"
@@ -174,4 +175,4 @@ resource "aws_ssm_parameter" "api_key" {
 
 ## Conclusion
 
-The Vault provider lets you manage Vault's own configuration — secrets engines, policies, roles, and auth methods — as code, ensuring your secret management infrastructure is reproducible and version-controlled. Combine resource management with data sources to both configure Vault and consume its secrets within the same OpenTofu configuration.
+The Vault provider lets you manage Vault's own configuration - secrets engines, policies, roles, and auth methods - as code, ensuring your secret management infrastructure is reproducible and version-controlled. Combine resource management with data sources to both configure Vault and consume its secrets within the same OpenTofu configuration.

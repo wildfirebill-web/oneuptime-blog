@@ -39,6 +39,7 @@ Let's say your corporate DNS server at `10.1.0.2` hosts records for `corp.exampl
 
 ```bash
 # Create a forwarding zone that sends corp.example.com queries to on-prem DNS
+
 gcloud dns managed-zones create corp-forwarding \
     --dns-name=corp.example.com. \
     --description="Forward corp.example.com queries to on-prem DNS" \

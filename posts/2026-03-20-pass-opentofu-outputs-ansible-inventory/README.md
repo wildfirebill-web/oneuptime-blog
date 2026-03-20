@@ -14,6 +14,7 @@ OpenTofu `output` values provide a structured way to pass infrastructure details
 
 ```hcl
 # outputs.tf
+
 output "web_servers" {
   description = "Web server connection details"
   value = {

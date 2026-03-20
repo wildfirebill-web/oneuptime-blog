@@ -8,12 +8,13 @@ Description: Learn how to set up pull request workflows that automatically run t
 
 ## Introduction
 
-Infrastructure changes deserve the same review rigor as application code — but reviewers need to see the *impact* of a change, not just the configuration diff. Automated PR workflows that post `tofu plan` output as comments give reviewers the information they need to approve confidently.
+Infrastructure changes deserve the same review rigor as application code - but reviewers need to see the *impact* of a change, not just the configuration diff. Automated PR workflows that post `tofu plan` output as comments give reviewers the information they need to approve confidently.
 
 ## GitHub Actions: Plan on PR
 
 ```yaml
 # .github/workflows/opentofu-plan.yml
+
 name: OpenTofu Plan
 
 on:
@@ -74,7 +75,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## OpenTofu Plan — ${{ matrix.environment }}\n\`\`\`\n${truncated}\n\`\`\``
+              body: `## OpenTofu Plan - ${{ matrix.environment }}\n```\n${truncated}\n````
             });
 ```
 
@@ -133,10 +134,10 @@ Document what reviewers should check:
 - [ ] No unexpected resource destructions (additions and modifications are fine)
 - [ ] Database instances are not being replaced (check for `forces replacement`)
 - [ ] All new resources have required tags
-- [ ] Sensitive values are shown as `(sensitive value)` — not as plaintext
+- [ ] Sensitive values are shown as `(sensitive value)` - not as plaintext
 - [ ] The number of resources to add/change/destroy is reasonable
 ```
 
 ## Conclusion
 
-Setting up automated `tofu plan` comments on pull requests transforms infrastructure code review from "does the HCL look right?" to "does the plan look right?" — a much more useful question. Combine plan automation with branch protection rules and a review checklist to create a robust, auditable infrastructure change management process.
+Setting up automated `tofu plan` comments on pull requests transforms infrastructure code review from "does the HCL look right?" to "does the plan look right?" - a much more useful question. Combine plan automation with branch protection rules and a review checklist to create a robust, auditable infrastructure change management process.

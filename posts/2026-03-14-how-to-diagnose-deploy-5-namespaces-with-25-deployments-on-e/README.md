@@ -32,6 +32,7 @@ Start by gathering information about the current state of your Cilium deployment
 
 ```bash
 # Check Cilium agent status on all nodes
+
 cilium status --verbose
 
 # Look for error patterns in agent logs

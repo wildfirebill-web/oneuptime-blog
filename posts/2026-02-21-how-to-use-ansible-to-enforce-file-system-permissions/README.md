@@ -44,6 +44,7 @@ This playbook sets proper permissions on critical system files:
 
 ```yaml
 # enforce_permissions.yml - Enforce permissions on critical files
+
 ---
 - name: Enforce file system permissions
   hosts: all

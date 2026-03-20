@@ -153,6 +153,7 @@ Check that the iptables rules were set up correctly:
 
 ```bash
 # Look at the istio-init container logs
+
 kubectl logs deploy/my-app -c istio-init -n default
 ```
 

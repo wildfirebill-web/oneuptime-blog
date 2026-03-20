@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HA, NGINX, High Availability, Reverse Proxy
+Tags: Rancher, HA, Nginx, High Availability, Reverse Proxy
 
 Description: Configure NGINX as the reverse proxy and load balancer for Rancher HA deployments with SSL termination, WebSocket support, and upstream health checking.
 
@@ -21,6 +21,7 @@ NGINX is a popular choice for load balancing Rancher HA deployments. Its stream 
 
 ```bash
 # Ubuntu/Debian - nginx-full includes stream module
+
 apt update && apt install -y nginx
 
 # Verify stream module is available

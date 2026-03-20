@@ -41,6 +41,7 @@ You need one or more unpartitioned disks or unused partitions. Check what is ava
 
 ```bash
 # List all block devices
+
 lsblk
 
 # Check for unused disks

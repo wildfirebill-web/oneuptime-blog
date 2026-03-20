@@ -16,6 +16,7 @@ This guide puts both options side by side with real-world examples so you can ma
 
 ```bash
 # Compare base image sizes
+
 docker pull ubuntu:22.04
 docker pull alpine:3.19
 

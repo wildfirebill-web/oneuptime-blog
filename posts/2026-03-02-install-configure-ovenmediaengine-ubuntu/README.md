@@ -23,6 +23,7 @@ OvenMediaEngine has specific dependencies. Before installing:
 
 ```bash
 # Update the system and install required base packages
+
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential cmake git pkg-config \
     libssl-dev libboost-all-dev libavahi-compat-libdnssd-dev \

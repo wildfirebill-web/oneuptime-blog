@@ -42,6 +42,7 @@ The image renderer is required for any screenshot-based reporting.
 
 ```bash
 # Plugin installation
+
 grafana-cli plugins install grafana-image-renderer
 
 # Or via Docker

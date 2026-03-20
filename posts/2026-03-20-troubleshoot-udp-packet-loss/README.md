@@ -8,12 +8,13 @@ Description: Diagnose and fix UDP packet loss by checking socket buffer overflow
 
 ## Introduction
 
-UDP packet loss is silent — unlike TCP, there is no retransmission, no notification to the sender, and no automatic recovery. Loss can occur at multiple points: the network path, the receiver's socket buffer, or the application itself. Identifying which layer drops the packets determines the fix. Kernel drop counters, `ss`, `netstat`, and packet capture together give a complete picture.
+UDP packet loss is silent - unlike TCP, there is no retransmission, no notification to the sender, and no automatic recovery. Loss can occur at multiple points: the network path, the receiver's socket buffer, or the application itself. Identifying which layer drops the packets determines the fix. Kernel drop counters, `ss`, `netstat`, and packet capture together give a complete picture.
 
 ## Step 1: Verify Loss is Occurring
 
 ```bash
 # Method 1: iperf3 UDP test with loss measurement
+
 # Sender:
 iperf3 -c 10.20.0.5 -u -b 100M -t 30
 # -u: UDP mode

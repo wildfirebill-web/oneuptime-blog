@@ -102,6 +102,7 @@ fn main() -> std::io::Result<()> {
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 ```

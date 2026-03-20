@@ -31,6 +31,7 @@ Docker Hub supports access tokens as a more secure alternative to passwords:
 
 ```bash
 # Test your credentials via CLI before adding to Portainer
+
 docker login -u your-username
 # Enter your access token when prompted for password
 ```

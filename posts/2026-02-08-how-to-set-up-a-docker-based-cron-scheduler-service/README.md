@@ -22,6 +22,7 @@ The simplest approach installs cron inside a Docker container and loads a cronta
 
 ```dockerfile
 # Dockerfile - Basic cron scheduler container
+
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \

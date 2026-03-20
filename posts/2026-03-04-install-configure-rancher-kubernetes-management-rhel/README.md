@@ -16,6 +16,7 @@ You need a Kubernetes cluster to host Rancher. For a quick single-node setup, us
 
 ```bash
 # Install K3s (lightweight Kubernetes) on your RHEL server
+
 curl -sfL https://get.k3s.io | sh -
 
 # Verify K3s is running

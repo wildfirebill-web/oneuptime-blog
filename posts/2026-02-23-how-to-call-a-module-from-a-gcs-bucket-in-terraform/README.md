@@ -18,6 +18,7 @@ Terraform downloads modules from GCS when you use the `gcs::` source prefix. It 
 
 ```hcl
 # Basic GCS module source
+
 module "network" {
   source = "gcs::https://www.googleapis.com/storage/v1/my-terraform-modules/network/v1.0.0.zip"
 

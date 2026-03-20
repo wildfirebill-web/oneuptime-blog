@@ -261,6 +261,7 @@ To verify your error handling is working, monitor these Prometheus metrics:
 
 ```promql
 # Retry count per service
+
 sum(rate(envoy_cluster_upstream_rq_retry{cluster_name=~"outbound.*product-service.*"}[5m]))
 
 # Circuit breaker trips

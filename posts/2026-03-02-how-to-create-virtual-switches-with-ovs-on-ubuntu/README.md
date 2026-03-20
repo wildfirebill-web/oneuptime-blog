@@ -14,6 +14,7 @@ Open vSwitch (OVS) virtual switches are more capable than standard Linux bridges
 
 ```bash
 # Ensure OVS is installed and running
+
 sudo apt install openvswitch-switch
 sudo systemctl status openvswitch-switch
 

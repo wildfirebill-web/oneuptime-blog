@@ -44,6 +44,7 @@ Macie must be enabled in each account before you can create classification jobs.
 
 ```hcl
 # Enable Macie in the account
+
 resource "aws_macie2_account" "main" {
   finding_publishing_frequency = "FIFTEEN_MINUTES"
 

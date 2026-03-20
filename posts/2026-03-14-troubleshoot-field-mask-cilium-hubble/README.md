@@ -29,6 +29,7 @@ When expected fields are not in the exported data:
 
 ```bash
 # Step 1: View a raw (unmasked) flow to see all available fields
+
 hubble observe --last 1 -o json | python3 -c "
 import json, sys
 

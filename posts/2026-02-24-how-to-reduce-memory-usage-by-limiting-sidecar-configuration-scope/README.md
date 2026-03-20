@@ -34,6 +34,7 @@ Before optimizing, measure your baseline:
 
 ```bash
 # Check memory usage of a sidecar proxy
+
 kubectl top pod -n backend -l app=my-service --containers | grep istio-proxy
 
 # Get detailed Envoy stats

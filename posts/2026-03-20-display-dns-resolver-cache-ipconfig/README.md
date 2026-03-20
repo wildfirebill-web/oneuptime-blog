@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, ipconfig, DNS, Cache, Diagnostics
+Tags: Windows, Networking, Ipconfig, DNS, Cache, Diagnostics
 
 Description: Display the contents of the Windows DNS resolver cache using ipconfig /displaydns to inspect cached hostname-to-IP mappings and identify stale or incorrect DNS entries.
 
@@ -18,7 +18,7 @@ ipconfig /displaydns
 
 Sample output for one entry:
 
-```
+```yaml
     google.com
     ----------------------------------------
     Record Name . . . . . : google.com
@@ -59,6 +59,7 @@ ipconfig /displaydns | findstr /c:"Record Name"
 
 ```powershell
 # Get all DNS cache entries as objects
+
 Get-DnsClientCache
 
 # Filter for a specific name

@@ -10,7 +10,7 @@ Description: Step-by-step guide to disabling IPv6 on Windows using the graphical
 
 This is the most direct GUI method to disable IPv6 per adapter:
 
-```
+```sql
 Steps:
 1. Press Win + R, type: ncpa.cpl, press Enter
    (Opens Network Connections)
@@ -32,7 +32,7 @@ Steps:
 
 ## Method 2: Network and Sharing Center
 
-```
+```text
 Steps:
 1. Click Start → Settings → Network & Internet
    OR right-click the network icon in the system tray
@@ -52,7 +52,7 @@ Steps:
 
 On Windows 10/11 with the new Settings app:
 
-```
+```text
 Steps:
 1. Start → Settings → Network & Internet
 
@@ -69,7 +69,7 @@ Steps:
 
 ## Verifying IPv6 is Disabled via GUI
 
-```
+```text
 Steps:
 1. Open Command Prompt (Win + R → cmd)
 
@@ -96,7 +96,7 @@ Steps:
 
 ## Re-enabling IPv6 via GUI
 
-```
+```text
 Steps:
 1. Open ncpa.cpl (Win + R → ncpa.cpl)
 
@@ -111,7 +111,7 @@ IPv6 is re-enabled immediately. No restart required.
 
 ## Important Considerations
 
-```
+```text
 Microsoft notes:
 - Disabling IPv6 is NOT recommended as Windows components
   rely on IPv6 internally (HomeGroup, DirectAccess, etc.)

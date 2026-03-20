@@ -22,6 +22,7 @@ Tagging is a lightweight operation that creates a new reference pointing to an e
 
 ```bash
 # Verify Flux CLI installation
+
 flux version --client
 
 # Ensure you have an artifact to tag

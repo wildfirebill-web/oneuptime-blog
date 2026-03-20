@@ -8,12 +8,13 @@ Description: Create an isolated Linux network namespace with its own IPv4 stack,
 
 ## Introduction
 
-Linux network namespaces provide complete isolation of the network stack — each namespace has its own interfaces, routing table, iptables rules, and sockets. This is the foundation of container networking in Docker and Kubernetes.
+Linux network namespaces provide complete isolation of the network stack - each namespace has its own interfaces, routing table, iptables rules, and sockets. This is the foundation of container networking in Docker and Kubernetes.
 
 ## Creating a Network Namespace
 
 ```bash
 # Create a named network namespace
+
 sudo ip netns add myns
 
 # List all namespaces
@@ -21,7 +22,7 @@ ip netns list
 # Output: myns
 ```
 
-The namespace is empty — it has only a loopback interface and no routing.
+The namespace is empty - it has only a loopback interface and no routing.
 
 ## Bringing Up Loopback in the Namespace
 
@@ -87,7 +88,7 @@ sudo ip netns exec myns ping -c 3 10.0.0.1
 
 # Run a shell inside the namespace
 sudo ip netns exec myns bash
-# Inside: ip addr, ping, etc. — all isolated
+# Inside: ip addr, ping, etc. - all isolated
 ```
 
 ## Running a Service Inside the Namespace

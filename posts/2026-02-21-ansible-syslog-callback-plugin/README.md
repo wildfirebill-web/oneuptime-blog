@@ -26,6 +26,7 @@ Add it to your callback whitelist:
 
 ```ini
 # ansible.cfg - Enable syslog logging
+
 [defaults]
 callback_whitelist = community.general.syslog
 ```

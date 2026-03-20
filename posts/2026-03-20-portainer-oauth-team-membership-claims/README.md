@@ -1,4 +1,4 @@
-# How to Configure Automatic Team Membership via OAuth Claims in Portainer
+# How to Configure Automatic Team Membership via OAuth Claims in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Use OAuth token claims to automatically assign users to Portainer t
 
 ## Introduction
 
-Portainer Business Edition can read group membership claims from OAuth tokens and automatically assign users to matching Portainer teams. This eliminates manual team management — changes in your IdP groups are reflected in Portainer at the user's next login.
+Portainer Business Edition can read group membership claims from OAuth tokens and automatically assign users to matching Portainer teams. This eliminates manual team management - changes in your IdP groups are reflected in Portainer at the user's next login.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Portainer Business Edition can read group membership claims from OAuth tokens an
 
 Add a Group Membership mapper to the client scope:
 
-```
+```text
 Mapper Type:       Group Membership
 Token Claim Name:  groups
 Full group path:   Off
@@ -72,6 +72,7 @@ Create a scope mapping that includes groups:
 
 ```python
 # Name: Portainer Groups
+
 # Scope name: groups
 return {
     "groups": [group.name for group in request.user.ak_groups.all()]
@@ -94,7 +95,7 @@ Verify the `groups` claim is present and contains the expected group names.
 
 In Settings → Authentication → OAuth (Portainer BE):
 
-```
+```text
 Team membership claim:   groups
 ```
 
@@ -164,4 +165,4 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 
 ## Conclusion
 
-OAuth claims-based team membership in Portainer Business Edition creates a fully automated user lifecycle — users' Portainer team memberships mirror their IdP group memberships and update on every login. The critical requirements are: IdP configured to include group names (not IDs) in tokens, the correct claim name configured in Portainer, and Portainer teams created with matching names.
+OAuth claims-based team membership in Portainer Business Edition creates a fully automated user lifecycle - users' Portainer team memberships mirror their IdP group memberships and update on every login. The critical requirements are: IdP configured to include group names (not IDs) in tokens, the correct claim name configured in Portainer, and Portainer teams created with matching names.

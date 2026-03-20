@@ -76,6 +76,7 @@ Now create the flow log:
 
 ```bash
 # Create a CloudWatch log group for flow logs
+
 aws logs create-log-group \
   --log-group-name "/vpc/flow-logs/vpc-abc123"
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NeuVector, CIS Benchmarks, Kubernetes Security, Compliance, Container Security
+Tags: NeuVector, CIS Benchmark, Kubernetes Security, Compliance, Container Security
 
 Description: Run and interpret CIS Benchmark compliance checks for Docker and Kubernetes using NeuVector to harden your container infrastructure.
 
@@ -39,6 +39,7 @@ NeuVector covers these CIS Benchmark sections:
 
 ```bash
 # Run Docker benchmark on all nodes
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/bench/host/all" \
   -H "X-Auth-Token: ${TOKEN}"

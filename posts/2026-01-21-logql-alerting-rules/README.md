@@ -115,6 +115,7 @@ Create rules in `/loki/rules/<tenant_id>/`:
 
 ```yaml
 # /loki/rules/fake/error-alerts.yaml
+
 groups:
   - name: error-alerts
     interval: 1m

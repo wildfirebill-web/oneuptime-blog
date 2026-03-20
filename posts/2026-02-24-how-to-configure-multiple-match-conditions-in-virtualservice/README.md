@@ -322,6 +322,7 @@ To verify your match conditions are working correctly:
 
 ```bash
 # Check the VirtualService config
+
 kubectl get vs order-service -o yaml
 
 # Use istioctl to validate

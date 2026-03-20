@@ -18,6 +18,7 @@ JSON Patch defines six operations: add, remove, replace, move, copy, and test. E
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

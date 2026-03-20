@@ -30,6 +30,7 @@ The simplest Pages deployment requires a `pages` job that creates a `public` art
 
 ```yaml
 # .gitlab-ci.yml
+
 pages:
   stage: deploy
   script:

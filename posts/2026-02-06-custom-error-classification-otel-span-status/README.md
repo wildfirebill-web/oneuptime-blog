@@ -24,6 +24,7 @@ First, define the categories you care about. Here is a practical starting point:
 
 ```python
 # error_categories.py - Define your error classification rules
+
 from enum import Enum
 
 class ErrorCategory(Enum):

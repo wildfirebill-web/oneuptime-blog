@@ -36,6 +36,7 @@ The syntax is identical to DeletionPolicy:
 
 ```yaml
 # Protect a database from replacement-triggered deletion
+
 Resources:
   ProductionDatabase:
     Type: AWS::RDS::DBInstance

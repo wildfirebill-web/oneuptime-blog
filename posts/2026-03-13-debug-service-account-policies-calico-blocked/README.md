@@ -23,6 +23,7 @@ Calico's `serviceAccountSelector` in `projectcalico.org/v3` evaluates the servic
 
 ```bash
 # Most important first step
+
 kubectl get pod my-pod -n production -o jsonpath='{.spec.serviceAccountName}'
 
 # Compare to what the policy expects

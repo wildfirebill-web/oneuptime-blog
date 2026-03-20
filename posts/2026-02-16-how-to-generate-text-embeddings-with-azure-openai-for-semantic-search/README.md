@@ -29,6 +29,7 @@ You need an Azure OpenAI resource with an embedding model deployed. In Azure Ope
 
 ```bash
 # Install the required packages
+
 pip install openai numpy
 ```
 

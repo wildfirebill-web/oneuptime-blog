@@ -45,6 +45,7 @@ The most visible symptom of missing resource attributes is seeing "unknown_servi
 
 ```python
 # Python: This creates an "unknown_service:python" resource
+
 from opentelemetry.sdk.trace import TracerProvider
 
 # No resource specified, so defaults are used
@@ -199,7 +200,7 @@ resource = Resource.create({
 }).merge(OTELResourceDetector().detect())
 ```
 
-## Resource Detectors: Automatic Attribute Discovery
+Resource Detectors: Automatic Attribute Discovery
 
 OpenTelemetry SDKs include resource detectors that automatically discover attributes about the runtime environment. These are easy to forget, but they add valuable context like host names, container IDs, and cloud provider details.
 

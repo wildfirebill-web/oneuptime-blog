@@ -40,6 +40,7 @@ Traefik uses `TraefikService` to define weighted routing between services:
 
 ```yaml
 # canary-services.yaml
+
 # Stable deployment - current production version
 apiVersion: apps/v1
 kind: Deployment

@@ -24,6 +24,7 @@ Install Cosign on your build system:
 
 ```bash
 # Download and install Cosign
+
 wget https://github.com/sigstore/cosign/releases/download/v2.2.0/cosign-linux-amd64
 chmod +x cosign-linux-amd64
 sudo mv cosign-linux-amd64 /usr/local/bin/cosign

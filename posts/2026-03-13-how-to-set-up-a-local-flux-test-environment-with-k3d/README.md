@@ -23,6 +23,7 @@ k3d is a lightweight wrapper that runs k3s (a minimal Kubernetes distribution) i
 
 ```bash
 # macOS (Homebrew)
+
 brew install k3d
 
 # Linux / macOS (install script)

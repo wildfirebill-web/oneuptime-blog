@@ -481,6 +481,7 @@ class GRPCConnectionPool:
 
 
 # Usage example
+
 if __name__ == "__main__":
     import my_service_pb2_grpc as pb2_grpc
     import my_service_pb2 as pb2

@@ -29,6 +29,7 @@ Start by scaffolding the provider project.
 
 ```bash
 # Create the project directory
+
 mkdir terraform-provider-azurecatalog
 cd terraform-provider-azurecatalog
 

@@ -17,6 +17,7 @@ Before squashing, your feature branch might look like this:
 ```bash
 git log --oneline feature-branch
 # d4e5f6g (HEAD -> feature-branch) Fix linting errors
+
 # c3d4e5f Add missing test case
 # b2c3d4e Oops, forgot to save file
 # a1b2c3d WIP: user authentication

@@ -22,6 +22,7 @@ First, understand your current PSP usage:
 
 ```bash
 # List all PodSecurityPolicies
+
 kubectl get psp
 
 # Check which PSPs are actually used

@@ -137,6 +137,7 @@ data "kubernetes_secret" "db_credentials" {
 }
 
 # Use the secret data in another resource
+
 resource "kubernetes_config_map" "app_config" {
   metadata {
     name      = "app-config"

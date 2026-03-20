@@ -71,6 +71,7 @@ ArgoCD identifies clusters by their server URL or a registered name. To find how
 
 ```bash
 # List all registered clusters
+
 argocd cluster list
 
 # Example output:

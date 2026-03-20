@@ -49,6 +49,7 @@ Start with a predefined role that is close to what you want, then add or remove 
 
 ```bash
 # List permissions in a predefined role
+
 gcloud iam roles describe roles/compute.instanceAdmin.v1 \
     --format="yaml(includedPermissions)"
 ```

@@ -47,6 +47,7 @@ etcdctl --endpoints="$ETCD_ENDPOINTS" \
 etcdctl snapshot status "$BACKUP_FILE" --write-out=table
 
 # Keep only last 7 days of backups
+
 find "$BACKUP_DIR" -name "etcd-snapshot-*.db" -mtime +7 -delete
 
 echo "Backup saved: ${BACKUP_FILE}"

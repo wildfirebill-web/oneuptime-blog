@@ -53,6 +53,7 @@ First, set up your project in the Google Cloud Console.
 
 ```bash
 # Using gcloud CLI to enable APIs
+
 gcloud services enable oauth2.googleapis.com
 gcloud services enable people.googleapis.com
 gcloud services enable plus.googleapis.com

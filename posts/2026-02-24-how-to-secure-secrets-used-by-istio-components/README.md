@@ -34,6 +34,7 @@ You can provide your own CA certificate and key, generated offline and stored se
 
 ```bash
 # Generate a root CA offline (do this on a secure workstation)
+
 openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 \
   -nodes -keyout ca-key.pem -out ca-cert.pem \
   -subj "/O=MyOrg/CN=Istio Root CA"

@@ -30,6 +30,7 @@ Description: Crafting custom IPv4 packets enables engineers to test firewall rul
 from scapy.all import IP, UDP, Raw, send
 
 # Test that DSCP EF marking survives across your network
+
 EF_DSCP = 46
 tos_byte = EF_DSCP << 2  # 0xB8
 
@@ -79,7 +80,7 @@ if reply:
 ```python
 from scapy.all import IP, ICMP, Raw, sr1
 
-# Send a large ICMP packet with DF set — should return ICMP Fragmentation Needed
+# Send a large ICMP packet with DF set - should return ICMP Fragmentation Needed
 oversized = IP(dst="192.168.1.1", flags="DF") / ICMP() / Raw(b"X" * 2000)
 reply = sr1(oversized, timeout=2, verbose=False)
 
@@ -96,12 +97,12 @@ from scapy.all import IP, TCP, send
 # Packet with invalid IHL (claims 60-byte header but only sends 20)
 malformed = IP(ihl=15, dst="10.0.0.1") / TCP(dport=80, flags="S")
 send(malformed, verbose=False)
-print("Sent malformed IHL packet — check IDS alerts")
+print("Sent malformed IHL packet - check IDS alerts")
 ```
 
 ## Key Takeaways
 
 - Custom packets enable precise testing of firewall rules, QoS markings, and edge cases.
 - Scapy gives full Python-level control; `hping3` provides fast CLI-based probing.
-- Always test on isolated or authorized networks — packet crafting can trigger IDS alerts.
+- Always test on isolated or authorized networks - packet crafting can trigger IDS alerts.
 - Use recognizable ID values or payloads to easily identify test packets in captures.

@@ -26,6 +26,7 @@ The write side captures commands and stores events. DynamoDB is a great fit beca
 
 ```hcl
 # write-store.tf - Command side infrastructure
+
 # Event store in DynamoDB
 resource "aws_dynamodb_table" "event_store" {
   name         = "${var.project_name}-event-store"

@@ -25,6 +25,7 @@ A single MongoDB instance is the simplest starting point:
 
 ```yaml
 # apps/mongodb/secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

@@ -38,6 +38,7 @@ Verify WireGuard is active:
 ```bash
 cilium encrypt status
 # Should show: Encryption: WireGuard
+
 # Keys should be listed for each node
 
 # Verify WireGuard interfaces exist on nodes

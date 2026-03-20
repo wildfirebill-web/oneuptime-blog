@@ -41,6 +41,7 @@ The default Kubernetes profile installs Flux with standard settings suitable for
 
 ```yaml
 # flux-instance-kubernetes.yaml
+
 # FluxInstance with standard Kubernetes profile
 apiVersion: fluxcd.controlplane.io/v1
 kind: FluxInstance

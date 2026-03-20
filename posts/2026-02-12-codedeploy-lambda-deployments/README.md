@@ -37,6 +37,7 @@ First, your Lambda function needs a published version and an alias:
 
 ```bash
 # Publish a version of your function
+
 aws lambda publish-version \
   --function-name my-function \
   --description "Version 1 - initial release"

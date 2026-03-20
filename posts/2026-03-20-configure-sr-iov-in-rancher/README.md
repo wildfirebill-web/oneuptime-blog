@@ -8,7 +8,7 @@ Description: Configure SR-IOV (Single Root I/O Virtualization) in Rancher for ha
 
 ## Introduction
 
-SR-IOV allows a single physical NIC to present multiple virtual functions (VFs) to the OS, each behaving like an independent NIC. Pods attached to SR-IOV VFs bypass the kernel networking stack entirely, achieving near bare-metal network performance—critical for telco, financial trading, and HPC workloads.
+SR-IOV allows a single physical NIC to present multiple virtual functions (VFs) to the OS, each behaving like an independent NIC. Pods attached to SR-IOV VFs bypass the kernel networking stack entirely, achieving near bare-metal network performance-critical for telco, financial trading, and HPC workloads.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ SR-IOV allows a single physical NIC to present multiple virtual functions (VFs) 
 
 ```bash
 # Check if SR-IOV is supported
+
 lspci | grep -i ethernet
 cat /sys/bus/pci/devices/0000:03:00.0/sriov_totalvfs
 

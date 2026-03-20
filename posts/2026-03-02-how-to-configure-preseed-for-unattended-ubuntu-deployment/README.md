@@ -33,6 +33,7 @@ d-i keyboard-configuration/xkb-keymap select us
 
 ## Network configuration
 # Use DHCP during installation
+
 d-i netcfg/choose_interface select auto
 d-i netcfg/get_hostname string ubuntu-server
 d-i netcfg/get_domain string example.com

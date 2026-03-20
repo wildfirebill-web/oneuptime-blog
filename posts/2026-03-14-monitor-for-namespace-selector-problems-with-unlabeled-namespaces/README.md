@@ -29,6 +29,7 @@ Deploy a lightweight exporter that exposes namespace label information as Promet
 
 ```yaml
 # namespace-label-exporter.yaml
+
 # Deployment that exposes namespace label metrics to Prometheus
 apiVersion: apps/v1
 kind: Deployment

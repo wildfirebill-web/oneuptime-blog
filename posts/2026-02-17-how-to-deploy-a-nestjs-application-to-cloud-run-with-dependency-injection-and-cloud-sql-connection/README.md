@@ -16,6 +16,7 @@ Create a new NestJS project and install the required dependencies.
 
 ```bash
 # Create a new NestJS project
+
 npx @nestjs/cli new my-api
 
 cd my-api

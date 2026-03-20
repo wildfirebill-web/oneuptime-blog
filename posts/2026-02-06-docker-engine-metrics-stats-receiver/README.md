@@ -161,6 +161,7 @@ With these metrics flowing into your backend, set up alerts for common failure s
 
 ```yaml
 # Example alert rules (Prometheus format for reference)
+
 # CPU usage above 90% for 5 minutes
 - alert: ContainerHighCPU
   expr: container_cpu_percent > 90

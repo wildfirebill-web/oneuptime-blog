@@ -14,6 +14,7 @@ OPA (Open Policy Agent) Gatekeeper is a Kubernetes admission controller that enf
 
 ```bash
 # Install Gatekeeper on your Kubernetes cluster
+
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.14.0/deploy/gatekeeper.yaml
 
 # Verify Gatekeeper is running

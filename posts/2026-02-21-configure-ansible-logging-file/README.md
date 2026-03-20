@@ -16,6 +16,7 @@ The simplest way to enable logging is to set `log_path` in your ansible.cfg:
 
 ```ini
 # ansible.cfg
+
 [defaults]
 log_path = /var/log/ansible/ansible.log
 ```

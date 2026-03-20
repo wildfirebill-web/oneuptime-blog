@@ -24,6 +24,7 @@ resource "aws_iam_user" "developer" {
 }
 
 # Create an access key for programmatic access
+
 resource "aws_iam_access_key" "developer" {
   user = aws_iam_user.developer.name
 }

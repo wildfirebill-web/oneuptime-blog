@@ -55,6 +55,7 @@ Receive Side Scaling distributes packets across queues based on 5-tuple hash:
 
 ```yaml
 # In VPP startup.conf
+
 dpdk {
   dev 0000:00:0a.0 {
     num-rx-queues 8

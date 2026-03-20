@@ -18,6 +18,7 @@ The gcloud credential helper plugs into Docker's authentication system. When Doc
 
 ```bash
 # Configure Docker to use gcloud as the credential helper for Artifact Registry
+
 gcloud auth configure-docker us-central1-docker.pkg.dev
 ```
 

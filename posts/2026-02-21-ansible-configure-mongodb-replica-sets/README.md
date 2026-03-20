@@ -43,6 +43,7 @@ A three-member replica set provides data redundancy and automatic failover. If t
 
 ```yaml
 # inventory/production/hosts.yml
+
 # MongoDB replica set cluster definition
 all:
   children:

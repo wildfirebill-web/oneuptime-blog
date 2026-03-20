@@ -79,6 +79,7 @@ You can also show specific IP details:
 
 ```bash
 # Show all IPs that are checked
+
 calicoctl ipam check --show-all-ips
 
 # Show only problem IPs (leaked or improperly allocated)

@@ -283,6 +283,7 @@ When you hit a 503, run through this checklist:
 
 ```bash
 # 1. Check access logs for response flags
+
 kubectl logs -n istio-system deploy/istio-ingressgateway --tail=20
 
 # 2. Verify the Gateway configuration

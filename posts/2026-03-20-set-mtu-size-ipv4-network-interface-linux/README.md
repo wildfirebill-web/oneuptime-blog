@@ -14,6 +14,7 @@ The MTU defines the maximum payload size of an Ethernet frame. The standard Ethe
 
 ```bash
 # Show MTU for all interfaces
+
 ip link show | grep mtu
 
 # Show MTU for a specific interface
@@ -76,7 +77,7 @@ nmcli con up "Wired connection 1"
 
 ## Setting MTU with /etc/network/interfaces (Debian)
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100

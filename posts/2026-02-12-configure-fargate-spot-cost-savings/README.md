@@ -29,6 +29,7 @@ Here's a basic CloudFormation example that runs a service primarily on Fargate S
 
 ```yaml
 # CloudFormation service definition using Fargate Spot
+
 Resources:
   WorkerService:
     Type: AWS::ECS::Service

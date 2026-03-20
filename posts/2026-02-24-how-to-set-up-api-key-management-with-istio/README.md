@@ -328,6 +328,7 @@ For JWT-based keys: Rotate the JWKS endpoint. Old keys remain valid until they e
 
 ```bash
 # Request without API key
+
 curl -s -o /dev/null -w "%{http_code}" https://api.example.com/api/v1/users
 # Should return 401
 

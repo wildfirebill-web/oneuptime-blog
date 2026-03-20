@@ -30,6 +30,7 @@ Cloud provider volumes, such as AWS EBS or GCP Persistent Disks, have their own 
 
 ```yaml
 # Example: Check what storage classes are available
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

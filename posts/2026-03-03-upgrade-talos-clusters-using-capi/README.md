@@ -28,6 +28,7 @@ To upgrade the Kubernetes version, update the `version` field on both the TalosC
 
 ```bash
 # Upgrade control plane Kubernetes version
+
 kubectl patch taloscontrolplane my-cluster-cp \
   --type merge \
   -p '{"spec":{"version":"v1.31.0"}}'

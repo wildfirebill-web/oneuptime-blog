@@ -42,6 +42,7 @@ This playbook installs the Google Authenticator PAM module on both Debian and RH
 
 ```yaml
 # install_2fa.yml - Install Google Authenticator PAM module
+
 ---
 - name: Install Two-Factor Authentication
   hosts: all

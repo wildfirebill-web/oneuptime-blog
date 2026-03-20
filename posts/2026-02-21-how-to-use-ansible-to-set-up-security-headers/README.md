@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Security, NGINX, HTTP Headers, DevOps
+Tags: Ansible, Security, Nginx, HTTP Headers, DevOps
 
 Description: Automate the deployment of HTTP security headers in Nginx using Ansible to protect your web applications from XSS, clickjacking, and other attacks.
 
@@ -53,6 +53,7 @@ These defaults represent a strict security posture. You will likely need to rela
 
 ```yaml
 # roles/security_headers/defaults/main.yml
+
 # Content-Security-Policy directives
 nginx_csp_default_src: "'self'"
 nginx_csp_script_src: "'self'"

@@ -185,6 +185,7 @@ class FlashSaleInventory:
         return int(count) if count else 0
 
 # Usage
+
 inventory = FlashSaleInventory()
 
 # Initialize a flash sale

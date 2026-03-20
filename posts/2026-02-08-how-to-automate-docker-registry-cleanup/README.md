@@ -18,6 +18,7 @@ A Docker registry stores images as a collection of manifests and layers (blobs).
 
 ```bash
 # Check the total size of a self-hosted registry's data directory
+
 du -sh /var/lib/registry/
 
 # Count tags across all repositories

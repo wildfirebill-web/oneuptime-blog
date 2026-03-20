@@ -39,6 +39,7 @@ Export your IAM configuration for analysis.
 
 ```bash
 # List all IAM users
+
 aws iam list-users \
   --query 'Users[*].{Name:UserName,Created:CreateDate,LastLogin:PasswordLastUsed}' \
   --output table

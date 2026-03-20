@@ -34,7 +34,7 @@ Before deploying, plan resource allocation:
 | Valheim | 4GB | 2 cores | 2GB | 10 |
 | Rust | 8GB | 4 cores | 20GB | 50 |
 | Factorio | 2GB | 1 core | 5GB | 10 |
-| **Total** | **18GB** | **9 cores** | **32GB** | — |
+| **Total** | **18GB** | **9 cores** | **32GB** | - |
 
 ## Step 2: Deploy with Resource Limits
 
@@ -42,6 +42,7 @@ Always set resource limits to prevent one server from starving others:
 
 ```yaml
 # minecraft-with-limits.yml
+
 version: "3.8"
 
 services:
@@ -159,11 +160,11 @@ done
 
 ## Tips for Multi-Game Hosting
 
-- **Separate stacks per game** — keeps resource limits and networks isolated
-- **Use named volumes** — makes backup scripts simpler
-- **Label all containers** — helps filter by game in Portainer's container list
-- **Monitor disk usage** — game servers accumulate large world files
-- **Schedule wipes/backups off-peak** — avoids impacting active players
+- **Separate stacks per game** - keeps resource limits and networks isolated
+- **Use named volumes** - makes backup scripts simpler
+- **Label all containers** - helps filter by game in Portainer's container list
+- **Monitor disk usage** - game servers accumulate large world files
+- **Schedule wipes/backups off-peak** - avoids impacting active players
 
 ## Summary
 

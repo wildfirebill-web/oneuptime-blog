@@ -14,6 +14,7 @@ Cloud Pub/Sub is a scalable, asynchronous messaging service. Subscriptions can b
 
 ```hcl
 # main.tf - Pub/Sub topic with dead-letter support
+
 resource "google_pubsub_topic" "orders_topic" {
   name = "order-events"
 

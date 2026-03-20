@@ -1,4 +1,4 @@
-# How to Replicate Workloads Across Clusters in Rancher
+# How to Replicate Workloads Across Rancher Clusters
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,7 +20,7 @@ Replicating workloads across clusters is essential for high availability (surviv
 
 ## Step 1: Structure the GitOps Repository
 
-```
+```text
 workload-replication/
 ├── base/
 │   ├── deployment.yaml      # Base deployment spec
@@ -46,6 +46,7 @@ workload-replication/
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -226,7 +227,7 @@ metadata:
 spec:
   repo: https://github.com/my-org/workload-replication
   branch: main
-  paused: true    # Standby — un-pause to promote
+  paused: true    # Standby - un-pause to promote
   targets:
     - clusterSelector:
         matchLabels:
@@ -234,7 +235,7 @@ spec:
 ```
 
 ```bash
-# Failover script — promote secondary to active
+# Failover script - promote secondary to active
 kubectl patch gitrepo myapp-secondary -n fleet-default \
   --type=merge \
   -p '{"spec":{"paused": false}}'

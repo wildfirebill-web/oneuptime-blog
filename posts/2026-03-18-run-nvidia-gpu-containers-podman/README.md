@@ -22,6 +22,7 @@ Before you can run NVIDIA GPU containers, your host system needs the NVIDIA prop
 
 ```bash
 # Check if your NVIDIA GPU is detected
+
 lspci | grep -i nvidia
 # Example output:
 # 01:00.0 VGA compatible controller: NVIDIA Corporation GA106 [GeForce RTX 3060] (rev a1)

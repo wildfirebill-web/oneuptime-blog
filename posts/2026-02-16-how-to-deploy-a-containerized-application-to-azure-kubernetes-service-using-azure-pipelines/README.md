@@ -26,6 +26,7 @@ If your AKS cluster does not have pull access to ACR, run this command.
 
 ```bash
 # Attach ACR to AKS for seamless image pulling
+
 az aks update \
   --resource-group my-rg \
   --name my-aks-cluster \

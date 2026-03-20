@@ -42,6 +42,7 @@ The broker cluster coordinates the exchange of metadata between connected cluste
 
 ```yaml
 # infrastructure/submariner/broker/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

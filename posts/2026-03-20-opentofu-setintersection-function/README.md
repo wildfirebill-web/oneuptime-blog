@@ -1,4 +1,4 @@
-# How to Use the setintersection Function in OpenTofu
+# How to Use the setintersection Function in OpenTofu - Function
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

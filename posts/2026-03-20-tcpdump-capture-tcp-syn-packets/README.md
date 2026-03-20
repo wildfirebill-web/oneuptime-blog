@@ -12,6 +12,7 @@ Capturing only SYN packets shows you every new TCP connection attempt without th
 
 ```bash
 # Capture TCP SYN packets (new connection initiation)
+
 sudo tcpdump -nn 'tcp[tcpflags] & tcp-syn != 0'
 
 # SYN packets on a specific interface
@@ -26,7 +27,7 @@ sudo tcpdump -nn 'tcp[tcpflags] & (tcp-syn|tcp-ack) == tcp-syn'
 
 The TCP flags are at byte 13 of the TCP header:
 
-```
+```text
 tcp[13] byte layout:
   Bit 7: CWR
   Bit 6: ECE

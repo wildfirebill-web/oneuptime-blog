@@ -39,6 +39,7 @@ CloudNativePG is one of the most mature PostgreSQL operators for Kubernetes:
 
 ```yaml
 # applications/cnpg-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -27,6 +27,7 @@ Start with a new Rust project and add the necessary dependencies:
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "redis-cluster-client"
 version = "0.1.0"

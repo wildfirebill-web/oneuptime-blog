@@ -40,6 +40,7 @@ Generate a strong encryption key:
 
 ```bash
 # Generate a random 32-byte key and base64 encode it
+
 head -c 32 /dev/urandom | base64
 
 # Example output: K7VqzJP8YhN9wX2mR5tF3nG8vL1cS6dE4pK9xZ0qW7Y=

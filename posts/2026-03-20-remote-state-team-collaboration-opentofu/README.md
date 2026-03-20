@@ -24,7 +24,8 @@ graph LR
 ## Bootstrap State Infrastructure
 
 ```hcl
-# bootstrap/main.tf — run once to create state infrastructure
+# bootstrap/main.tf - run once to create state infrastructure
+
 resource "aws_s3_bucket" "state" {
   bucket = "${var.company}-tofu-state-${var.account_id}"
 
@@ -150,6 +151,6 @@ resource "aws_iam_policy" "state_readwrite" {
 
 - Enable S3 versioning on the state bucket so you can recover from accidental state corruption or deletion.
 - Use separate state file paths (keys) per environment and per module to minimize blast radius of state operations.
-- Never store state locally in CI/CD — always use remote state with locking to prevent concurrent apply races.
+- Never store state locally in CI/CD - always use remote state with locking to prevent concurrent apply races.
 - Restrict S3 state access by IAM path prefix so dev teams can't access production state.
-- Use `terraform_remote_state` data sources sparingly — prefer SSM parameters or other well-defined outputs for cross-module communication.
+- Use `terraform_remote_state` data sources sparingly - prefer SSM parameters or other well-defined outputs for cross-module communication.

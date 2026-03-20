@@ -151,7 +151,7 @@ document.addEventListener('mouseover', (event) => {
 
 ---
 
-## Resource Hints: Beyond DNS Prefetch
+Resource Hints: Beyond DNS Prefetch
 
 DNS prefetch is just one of several resource hints available. Each provides a different level of preparation:
 

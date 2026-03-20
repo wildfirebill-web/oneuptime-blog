@@ -246,6 +246,7 @@ Create scaling profiles that can be activated through Git:
 
 ```yaml
 # scaling/normal/kustomization.yaml
+
 apiVersion: kustomize.io/v1beta1
 kind: Kustomization
 patches:

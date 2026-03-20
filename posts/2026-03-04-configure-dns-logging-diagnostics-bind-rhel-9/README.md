@@ -213,6 +213,7 @@ Trace a specific query (increase debug level):
 
 ```bash
 # Set debug level
+
 rndc trace 3
 
 # Watch the logs

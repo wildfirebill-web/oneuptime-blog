@@ -36,6 +36,7 @@ Here is an example adding a hypothetical third-party S3 exporter:
 
 ```yaml
 # manifest.yaml
+
 dist:
   name: otelcol-custom
   output_path: ./dist

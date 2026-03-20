@@ -84,6 +84,7 @@ The following script audits your system for NVMe readiness, checking CPU cores, 
 ```bash
 #!/bin/bash
 # NVMe Ceph Readiness Audit Script
+
 # This script checks if your system is ready for high-performance NVMe Ceph deployment
 
 echo "=== Ceph NVMe Readiness Audit ==="

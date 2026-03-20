@@ -8,7 +8,7 @@ Description: Learn how to use the -exclude flag introduced in OpenTofu 1.9 to sk
 
 ## Introduction
 
-OpenTofu 1.9 introduced the `-exclude` flag for `tofu plan` and `tofu apply`. While `-target` lets you focus on specific resources, `-exclude` does the opposite — it processes everything except the named resources. This is valuable when you need to apply most of your configuration but skip a problematic or long-running resource.
+OpenTofu 1.9 introduced the `-exclude` flag for `tofu plan` and `tofu apply`. While `-target` lets you focus on specific resources, `-exclude` does the opposite - it processes everything except the named resources. This is valuable when you need to apply most of your configuration but skip a problematic or long-running resource.
 
 ## Basic Usage
 
@@ -16,6 +16,7 @@ Exclude a single resource from a plan or apply.
 
 ```bash
 # Plan everything except the RDS instance
+
 tofu plan -exclude=aws_db_instance.main
 
 # Apply everything except the RDS instance

@@ -16,9 +16,10 @@ Modern TLS uses Perfect Forward Secrecy (PFS) with ephemeral key exchange, meani
 ## Step 1: Set SSLKEYLOGFILE Environment Variable
 
 ```bash
-# Linux/macOS — set before launching the application
+# Linux/macOS - set before launching the application
 
 # Method 1: For a single session
+
 export SSLKEYLOGFILE=/tmp/tls-keys.log
 google-chrome
 # or
@@ -35,7 +36,7 @@ tail -f /tmp/tls-keys.log
 ```
 
 ```cmd
-REM Windows — set before launching browser
+REM Windows - set before launching browser
 set SSLKEYLOGFILE=C:\temp\tls-keys.log
 start chrome.exe
 
@@ -47,7 +48,7 @@ REM Value: C:\Users\YourName\tls-keys.log
 
 ## Step 2: Configure Wireshark to Use Key File
 
-```
+```text
 In Wireshark:
 1. Edit → Preferences
 2. Expand: Protocols → TLS (or SSL in older versions)
@@ -94,7 +95,7 @@ kill %1   # Stop tcpdump
 ```
 
 ```python
-# Python requests — export keys via environment variable
+# Python requests - export keys via environment variable
 import os
 import requests
 
@@ -111,7 +112,7 @@ os.environ['SSLKEYLOGFILE'] = '/tmp/tls-keys.log'
 
 ## Step 5: Verify Decryption Is Working
 
-```
+```text
 In Wireshark after configuring key file:
 
 Before decryption: TLS packets show as "TLSv1.3 Application Data"
@@ -130,7 +131,7 @@ If still showing TLS Application Data:
 
 ## Step 6: Analyze Decrypted HTTPS
 
-```
+```text
 After successful decryption, apply filters:
 
 All HTTP/2 requests:
@@ -177,4 +178,4 @@ unset SSLKEYLOGFILE
 
 ## Conclusion
 
-TLS decryption in Wireshark uses the SSLKEYLOGFILE method: set `export SSLKEYLOGFILE=/tmp/tls-keys.log` before launching Chrome/Firefox/curl, capture traffic with `tcpdump -w capture.pcap`, then configure Wireshark under Edit → Preferences → TLS → Pre-Master-Secret log filename. After loading the key file, TLS Application Data packets become readable HTTP/2 or HTTP/1.1 frames. This method works with PFS/ephemeral keys that the server's private key cannot decrypt. Never use on production systems — restrict file permissions to `600` and delete the key file when done.
+TLS decryption in Wireshark uses the SSLKEYLOGFILE method: set `export SSLKEYLOGFILE=/tmp/tls-keys.log` before launching Chrome/Firefox/curl, capture traffic with `tcpdump -w capture.pcap`, then configure Wireshark under Edit → Preferences → TLS → Pre-Master-Secret log filename. After loading the key file, TLS Application Data packets become readable HTTP/2 or HTTP/1.1 frames. This method works with PFS/ephemeral keys that the server's private key cannot decrypt. Never use on production systems - restrict file permissions to `600` and delete the key file when done.

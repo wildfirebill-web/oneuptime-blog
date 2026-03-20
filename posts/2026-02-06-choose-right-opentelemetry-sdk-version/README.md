@@ -46,6 +46,7 @@ Here's how to check compatibility for different languages:
 
 ```bash
 # For Python, check the setup.py or pyproject.toml
+
 # Clone the repo and check the version you're considering
 git clone https://github.com/open-telemetry/opentelemetry-python.git
 cd opentelemetry-python

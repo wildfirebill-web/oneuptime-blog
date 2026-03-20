@@ -91,6 +91,7 @@ If you prefer to skip the Collector and send directly from your application, her
 
 ```python
 # main.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

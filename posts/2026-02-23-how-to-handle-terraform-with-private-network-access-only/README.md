@@ -28,6 +28,7 @@ AWS VPC endpoints let Terraform talk to AWS services without leaving the AWS net
 
 ```hcl
 # List of AWS services you use in Terraform
+
 locals {
   interface_endpoints = [
     "ec2",

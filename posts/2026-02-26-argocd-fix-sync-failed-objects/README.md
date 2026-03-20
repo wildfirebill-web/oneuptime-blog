@@ -33,6 +33,7 @@ The high-level error message does not tell you which resource failed. You need t
 
 ```bash
 # Get detailed sync result
+
 argocd app get my-app
 
 # Look at the resource status for "SyncFailed" entries

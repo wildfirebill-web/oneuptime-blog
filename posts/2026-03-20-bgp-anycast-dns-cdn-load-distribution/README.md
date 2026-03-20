@@ -34,6 +34,7 @@ On each server that will participate in anycast, assign the anycast IP to the lo
 
 ```bash
 # On each server (Linux)
+
 # Add the anycast IP to the loopback - use /32 to avoid ARP issues
 sudo ip addr add 192.0.2.1/32 dev lo label lo:anycast
 
@@ -51,7 +52,7 @@ sudo ip addr add 192.0.2.1/32 dev lo label lo:anycast
 
 On each site's border router, advertise the anycast prefix to upstream ISPs:
 
-```
+```text
 ! On the US site border router
 router bgp 65001
  bgp router-id 1.1.1.1
@@ -68,7 +69,7 @@ router bgp 65001
 
 Create a static null route to ensure the prefix stays in the routing table:
 
-```
+```text
 ! Keep the prefix in the routing table even if no servers are active
 ip route 192.0.2.0 255.255.255.0 Null0
 ```

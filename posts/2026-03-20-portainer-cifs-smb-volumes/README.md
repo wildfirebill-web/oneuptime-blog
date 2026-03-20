@@ -1,4 +1,4 @@
-# How to Create CIFS/SMB Volumes in Portainer
+# How to Create CIFS/SMB Volumes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ CIFS (Common Internet File System) / SMB (Server Message Block) is the protocol 
 
 ```bash
 # Ubuntu/Debian:
+
 sudo apt-get install -y cifs-utils
 
 # CentOS/RHEL:
@@ -62,14 +63,14 @@ sudo mount -t cifs //smb-server/share /mnt/test-smb -o credentials=/tmp/smb-cred
 2. Click **Add volume**.
 3. Configure:
 
-```
+```text
 Name:    smb-shared-files
 Driver:  local
 ```
 
 4. Under **Driver options**, add:
 
-```
+```text
 Key: type     Value: cifs
 Key: o        Value: addr=smb-server.example.com,username=myuser,password=mypassword,vers=3.0
 Key: device   Value: //smb-server.example.com/sharename
@@ -181,7 +182,7 @@ docker volume create \
 
 ## Step 7: SMB Version Compatibility
 
-```
+```text
 SMB Version   | Use When
 --------------|------------------------------------------
 vers=1.0      | Legacy Windows XP, very old Samba (insecure)

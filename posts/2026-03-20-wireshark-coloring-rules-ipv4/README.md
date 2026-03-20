@@ -32,43 +32,43 @@ Common default rules:
 
 **Highlight ICMP traffic:**
 
-```
+```text
 icmp
 ```
 
 **Highlight traffic from a specific subnet:**
 
-```
+```text
 ip.src == 192.168.1.0/24
 ```
 
 **Highlight high-latency TCP (retransmissions):**
 
-```
+```text
 tcp.analysis.retransmission || tcp.analysis.fast_retransmission
 ```
 
 **Highlight TCP connection resets:**
 
-```
+```text
 tcp.flags.reset == 1
 ```
 
 **Highlight multicast IPv4:**
 
-```
+```text
 ip.dst >= 224.0.0.0 and ip.dst <= 239.255.255.255
 ```
 
 **Highlight fragmented IPv4 packets:**
 
-```
+```text
 ip.flags.mf == 1 || ip.frag_offset > 0
 ```
 
 **Highlight duplicate ACKs:**
 
-```
+```text
 tcp.analysis.duplicate_ack
 ```
 
@@ -89,6 +89,7 @@ Export your rules to share with your team:
 
 ```bash
 # Rules are stored at:
+
 ~/.config/wireshark/colorfilters
 ```
 
@@ -98,7 +99,7 @@ Import: **View → Coloring Rules → Import**
 
 Apply a display filter to reduce noise, then use colors to categorize what remains:
 
-```
+```text
 # Display filter: only show one subnet
 ip.addr == 10.0.0.0/8
 

@@ -103,6 +103,7 @@ This YAML configuration enables slow operation profiling at server startup. Thes
 
 ```yaml
 # mongod.conf - MongoDB configuration file
+
 # Location: /etc/mongod.conf (Linux) or MongoDB installation directory (Windows)
 
 operationProfiling:

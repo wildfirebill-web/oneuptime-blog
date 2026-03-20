@@ -30,6 +30,7 @@ When a request comes in, ESP validates it against your OpenAPI spec, checks auth
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable \
   servicemanagement.googleapis.com \
   servicecontrol.googleapis.com \

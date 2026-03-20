@@ -14,6 +14,7 @@ Upgrading PHP from 7.4 to 8.x brings performance improvements and new features b
 
 ```bash
 # Check current PHP version and extensions
+
 php -v
 php -m > /tmp/php74-modules.txt
 

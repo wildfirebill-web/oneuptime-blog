@@ -35,6 +35,7 @@ Here is how to configure a node CPU utilization chart using MQL:
 
 ```text
 # Node CPU utilization as a fraction across all nodes
+
 fetch k8s_node
 | metric 'kubernetes.io/node/cpu/allocatable_utilization'
 | group_by [node_name], [val: mean(value.allocatable_utilization)]
@@ -145,7 +146,7 @@ gcloud monitoring dashboards create --config-from-file=gke-dashboard.json
 
 Based on running GKE in production, here are the metrics I always include on my dashboards:
 
-### Resource Requests vs Actual Usage
+Resource Requests vs Actual Usage
 
 One of the biggest waste areas in Kubernetes is over-provisioning. Comparing what pods request versus what they actually use helps you right-size your workloads.
 

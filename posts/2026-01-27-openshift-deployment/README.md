@@ -22,6 +22,7 @@ Download the oc CLI from your OpenShift cluster's web console or the Red Hat web
 
 ```bash
 # Log in to an OpenShift cluster
+
 oc login https://api.your-cluster.example.com:6443 --username=developer --password=secret
 
 # Or use token-based authentication (common for CI/CD)
@@ -857,7 +858,7 @@ spec:
       selectPolicy: Max
 ```
 
-### Resource Requests and Limits
+Resource Requests and Limits
 
 Proper resource configuration is essential for autoscaling and cluster stability:
 

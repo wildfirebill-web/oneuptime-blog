@@ -126,6 +126,7 @@ Copy the generated files to the VM and install the Istio sidecar:
 
 ```bash
 # On the VM
+
 # Download the Istio sidecar package
 curl -LO https://storage.googleapis.com/istio-release/releases/1.22.0/deb/istio-sidecar.deb
 sudo dpkg -i istio-sidecar.deb

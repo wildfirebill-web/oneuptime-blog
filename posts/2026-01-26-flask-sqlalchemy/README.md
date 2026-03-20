@@ -50,6 +50,7 @@ Install Flask-SQLAlchemy and a database driver:
 
 ```bash
 # Install Flask-SQLAlchemy
+
 pip install flask-sqlalchemy
 
 # Install database drivers based on your choice

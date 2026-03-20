@@ -1,4 +1,4 @@
-# How to Configure IPv6 for Data Center Interconnect (DCI)
+# How to Configure IPv6 for Data Center Interconnect (DCI) - Dci
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,8 +23,9 @@ flowchart LR
 
 Configure MP-BGP with IPv6 address family between data center border routers:
 
-```
+```text
 # Cisco IOS-XE - DC1 Border Router
+
 router bgp 65001
  bgp router-id 10.0.0.1
  neighbor 2001:db8:dci::2 remote-as 65002
@@ -37,7 +38,7 @@ router bgp 65001
  exit-address-family
 ```
 
-```
+```text
 # DC2 Border Router
 router bgp 65002
  bgp router-id 10.0.0.2
@@ -53,7 +54,7 @@ router bgp 65002
 
 Segment Routing with IPv6 (SRv6) is ideal for DCI as it provides traffic engineering without complex RSVP-TE:
 
-```
+```text
 # Enable SRv6 on IOS-XE
 segment-routing ipv6
  locator DC1_LOC
@@ -76,7 +77,7 @@ ip link show eth0
 
 Filter internal management prefixes from crossing DCI links unless explicitly required:
 
-```
+```text
 # Prefix list to block management prefixes from DCI advertisement
 ipv6 prefix-list BLOCK-MGMT seq 10 deny 2001:db8:ffff::/48
 ipv6 prefix-list BLOCK-MGMT seq 100 permit ::/0 le 128
@@ -86,7 +87,7 @@ ipv6 prefix-list BLOCK-MGMT seq 100 permit ::/0 le 128
 
 Enable BFD on DCI BGP sessions to detect link failures faster than BGP hold timers:
 
-```
+```text
 router bgp 65001
  neighbor 2001:db8:dci::2 fall-over bfd
 ```

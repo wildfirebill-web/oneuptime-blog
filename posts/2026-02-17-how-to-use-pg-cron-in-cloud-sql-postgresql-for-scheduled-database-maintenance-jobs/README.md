@@ -20,6 +20,7 @@ The following command enables the pg_cron extension by adding it to the shared_p
 
 ```bash
 # Enable pg_cron by updating the database flags on your Cloud SQL instance
+
 gcloud sql instances patch my-instance \
   --database-flags=cloudsql.enable_pg_cron=on
 ```

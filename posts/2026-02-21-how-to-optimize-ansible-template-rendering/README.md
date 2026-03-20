@@ -204,6 +204,7 @@ Complex logic belongs in Ansible tasks, not in templates. Keep templates simple:
 ```yaml
 ---
 # Do the complex work in Ansible
+
 - hosts: webservers
   tasks:
     - name: Calculate configuration values

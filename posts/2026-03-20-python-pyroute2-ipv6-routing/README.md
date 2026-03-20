@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Python, pyroute2, Routing, Linux Networking
+Tags: IPv6, Python, Pyroute2, Routing, Linux Networking
 
 Description: Use Python pyroute2 to programmatically manage IPv6 routes, addresses, and interfaces on Linux using netlink sockets without subprocess calls to ip commands.
 
@@ -55,6 +55,7 @@ def list_ipv6_addresses(interface: str):
             print(f"  {ip}/{prefix} scope={scope}")
 
 # Example usage (requires root):
+
 # add_ipv6_address("eth0", "2001:db8::1", 64)
 # list_ipv6_addresses("eth0")
 ```

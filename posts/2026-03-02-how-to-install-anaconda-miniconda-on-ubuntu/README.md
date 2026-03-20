@@ -25,6 +25,7 @@ Find the latest installers at the official conda documentation pages. Use `wget`
 
 ```bash
 # Download Miniconda for Linux x86_64
+
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 
 # Or download Anaconda (larger download)

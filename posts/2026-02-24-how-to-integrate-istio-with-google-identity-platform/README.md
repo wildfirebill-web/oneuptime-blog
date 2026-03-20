@@ -26,6 +26,7 @@ Configure your identity providers. Here is how to set up email/password and Goog
 
 ```bash
 # Enable email/password provider
+
 gcloud identity-platform config update \
   --project=your-project-id \
   --enable-email-signin

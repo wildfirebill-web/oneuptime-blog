@@ -22,6 +22,7 @@ Podman auto-update only checks containers that have the `io.containers.autoupdat
 
 ```ini
 # ~/.config/containers/systemd/frontend.container
+
 [Unit]
 Description=Frontend - auto-updates enabled
 

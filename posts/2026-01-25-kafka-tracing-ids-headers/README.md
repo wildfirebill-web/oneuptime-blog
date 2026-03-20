@@ -189,6 +189,7 @@ Spring Boot 3 integrates tracing directly.
 
 ```yaml
 # application.yml
+
 spring:
   kafka:
     bootstrap-servers: localhost:9092

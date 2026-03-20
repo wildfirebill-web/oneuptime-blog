@@ -20,6 +20,7 @@ Create `strategy_plugins/rolling_health.py`:
 
 ```python
 # rolling_health.py - Rolling deployment with health gate checks
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

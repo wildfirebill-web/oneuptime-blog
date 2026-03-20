@@ -45,6 +45,7 @@ Basic single-AZ deployment:
 
 ```bash
 # Create FSx for OpenZFS file system
+
 aws fsx create-file-system \
   --file-system-type OPENZFS \
   --storage-capacity 256 \

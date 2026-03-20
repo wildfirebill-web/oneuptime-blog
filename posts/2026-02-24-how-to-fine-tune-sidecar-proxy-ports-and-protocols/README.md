@@ -193,6 +193,7 @@ After applying your configuration, verify it with istioctl:
 
 ```bash
 # Check listeners and their protocols
+
 istioctl proxy-config listeners deploy/my-api -n default
 
 # Get detailed listener info including protocol

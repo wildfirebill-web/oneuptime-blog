@@ -43,6 +43,7 @@ Use AWS Application Discovery Service to inventory your environment. For details
 
 ```python
 # Start discovery to inventory your environment
+
 import boto3
 
 discovery = boto3.client('discovery')

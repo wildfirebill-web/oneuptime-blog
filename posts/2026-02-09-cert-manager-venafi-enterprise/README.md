@@ -40,6 +40,7 @@ For Venafi Trust Protection Platform deployments, start by creating credentials:
 
 ```bash
 # Create secret with TPP credentials
+
 kubectl create secret generic venafi-tpp-credentials \
   --from-literal=username='tpp-user@example.com' \
   --from-literal=password='your-tpp-password' \

@@ -22,6 +22,7 @@ Before deploying Druid, you need a Kubernetes cluster with sufficient resources 
 
 ```bash
 # Install the Druid operator
+
 kubectl create namespace druid-system
 kubectl apply -f https://raw.githubusercontent.com/druid-io/druid-operator/master/config/crd/bases/druid.apache.org_druids.yaml
 kubectl apply -f https://raw.githubusercontent.com/druid-io/druid-operator/master/deploy/operator.yaml

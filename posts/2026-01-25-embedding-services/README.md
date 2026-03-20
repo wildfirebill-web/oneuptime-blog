@@ -46,6 +46,7 @@ flowchart TD
 
 ```python
 # embeddings/openai_client.py
+
 from openai import OpenAI
 from typing import List, Dict, Any, Optional
 import hashlib

@@ -39,6 +39,7 @@ For most use cases, `bridge` mode is what you want.
 
 ```bash
 # Create a MacVLAN interface in bridge mode
+
 # Parent interface: eth0, new interface: macvlan0
 sudo ip link add macvlan0 link eth0 type macvlan mode bridge
 

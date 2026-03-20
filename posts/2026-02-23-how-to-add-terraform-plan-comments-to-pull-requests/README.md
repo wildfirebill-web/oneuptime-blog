@@ -18,6 +18,7 @@ The most basic implementation captures the plan output and posts it as a comment
 
 ```yaml
 # .github/workflows/terraform-plan.yml
+
 name: Terraform Plan
 
 on:
@@ -55,7 +56,7 @@ jobs:
         with:
           script: |
             const plan = `${{ steps.plan.outputs.stdout }}`;
-            const body = `### Terraform Plan\n\`\`\`\n${plan}\n\`\`\``;
+            const body = `### Terraform Plan\n```\n${plan}\n````;
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
@@ -71,7 +72,7 @@ This works, but it has problems. Every push to the PR creates a new comment, flo
 
 Instead of creating a new comment on every push, find and update the existing one:
 
-```yaml
+````yaml
 name: Terraform Plan
 
 on:
@@ -150,9 +151,9 @@ jobs:
             <details>
             <summary>Show Plan Output</summary>
 
-            \`\`\`hcl
+            ```hcl
             ${planOutput}
-            \`\`\`
+            ```
 
             </details>
 
@@ -270,9 +271,9 @@ jobs:
             <details>
             <summary>Show Plan</summary>
 
-            \`\`\`hcl
+            ```hcl
             ${plan}
-            \`\`\`
+            ```
 
             </details>
 
@@ -323,7 +324,7 @@ Terraform plans can contain sensitive values like passwords, API keys, or databa
     echo "plan_output=$(cat plan_output.txt)" >> $GITHUB_OUTPUT
   working-directory: terraform
   continue-on-error: true
-```
+````
 
 ## Using Third-Party Actions
 
@@ -347,7 +348,7 @@ These actions handle comment formatting, updating existing comments, and truncat
 
 For large plans, it helps to include a summary at the top showing the resource count:
 
-```yaml
+````yaml
 - name: Terraform Plan
   id: plan
   run: |
@@ -377,9 +378,9 @@ For large plans, it helps to include a summary at the top showing the resource c
       <details>
       <summary>Full Plan Output</summary>
 
-      \`\`\`hcl
+      ```hcl
       ${plan.substring(0, 60000)}
-      \`\`\`
+      ```
 
       </details>`;
 
@@ -404,7 +405,7 @@ You might want the workflow to fail (or at least warn) when the plan includes re
       echo "WARNING: This plan includes resource destruction!"
       echo "destructive=true" >> $GITHUB_OUTPUT
     fi
-```
+````
 
 ## Conclusion
 

@@ -108,6 +108,7 @@ Verify the compute setup via the local UI or CLI.
 
 ```bash
 # Check the Kubernetes cluster status (run on the device or via kubectl)
+
 kubectl get nodes -o wide
 kubectl get pods -A
 ```

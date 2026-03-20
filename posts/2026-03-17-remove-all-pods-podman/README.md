@@ -18,6 +18,7 @@ During development and testing, pods accumulate. When you need to start fresh, r
 
 ```bash
 # Remove all pods, whether running or stopped
+
 podman pod rm --all --force
 
 # Verify everything is gone

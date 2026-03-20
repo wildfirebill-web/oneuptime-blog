@@ -38,6 +38,7 @@ The alertmanager exporter is available in the `otelcol-contrib` distribution. If
 
 ```yaml
 # builder-config.yaml
+
 # OpenTelemetry Collector Builder manifest with alertmanager exporter
 
 dist:

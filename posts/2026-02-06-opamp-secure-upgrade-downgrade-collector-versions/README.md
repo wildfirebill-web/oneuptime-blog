@@ -73,6 +73,7 @@ The supervisor needs to be configured to accept package updates:
 
 ```yaml
 # supervisor.yaml
+
 server:
   endpoint: wss://opamp-server.internal:4320/v1/opamp
   tls:

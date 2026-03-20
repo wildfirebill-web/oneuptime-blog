@@ -70,6 +70,7 @@ ArgoCD has first-class multi-cluster support. Register a cluster, and you can de
 
 ```bash
 # Register a remote cluster
+
 argocd cluster add production-context --name production
 
 # Deploy to it

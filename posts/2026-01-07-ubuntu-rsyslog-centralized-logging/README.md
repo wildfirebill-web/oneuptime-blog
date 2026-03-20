@@ -116,6 +116,7 @@ The following command checks your Ubuntu version and installed rsyslog version:
 
 ```bash
 # Check Ubuntu version to ensure compatibility
+
 lsb_release -a
 
 # Verify rsyslog is installed (it comes pre-installed on Ubuntu)

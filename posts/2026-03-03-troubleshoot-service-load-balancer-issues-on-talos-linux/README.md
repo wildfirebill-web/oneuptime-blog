@@ -18,6 +18,7 @@ Without a load balancer controller:
 
 ```bash
 # Check service status
+
 kubectl get svc -A | grep LoadBalancer
 ```
 

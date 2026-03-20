@@ -18,6 +18,7 @@ IAM policies can have subtle interactions. A deny statement in one policy might 
 
 ```hcl
 # Configure providers for IAM policy testing
+
 terraform {
   required_providers {
     aws = {

@@ -71,6 +71,7 @@ First, install the RGW package on the node(s) that will serve as your gateway(s)
 
 ```bash
 # Install the Ceph RGW package on Ubuntu/Debian systems
+
 # This package provides the RADOS Gateway daemon and utilities
 sudo apt update
 sudo apt install -y radosgw

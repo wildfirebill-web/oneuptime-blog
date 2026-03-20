@@ -1,4 +1,4 @@
-# How to Deploy Outline Wiki via Portainer
+# How to Deploy Outline Wiki via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -124,13 +124,13 @@ docker exec minio mc anonymous set download local/outline-uploads
 
 Outline uses **Collections** (similar to Workspaces) to organize documents:
 
-- **Engineering** — Technical docs, runbooks
-- **Product** — Specs, roadmaps
-- **Company** — Policies, onboarding
+- **Engineering** - Technical docs, runbooks
+- **Product** - Specs, roadmaps
+- **Company** - Policies, onboarding
 
 Documents support nested structure:
 
-```
+```bash
 Engineering
 └── Infrastructure
     ├── Docker Setup

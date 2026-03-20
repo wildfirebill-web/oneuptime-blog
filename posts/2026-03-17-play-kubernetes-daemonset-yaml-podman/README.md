@@ -18,6 +18,7 @@ DaemonSets in Kubernetes run a pod on every node in the cluster. While Podman ca
 
 ```bash
 # Create a DaemonSet YAML manifest
+
 cat > /tmp/monitor-daemonset.yaml << 'EOF'
 apiVersion: apps/v1
 kind: DaemonSet

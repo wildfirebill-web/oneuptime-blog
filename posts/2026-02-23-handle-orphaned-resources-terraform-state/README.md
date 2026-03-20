@@ -32,6 +32,7 @@ The simplest way to spot orphans is to run a plan:
 
 ```bash
 # Run a plan and look for resources marked for destruction
+
 terraform plan
 ```
 

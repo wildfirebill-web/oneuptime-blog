@@ -39,6 +39,7 @@ Let's start with the tracer and metric setup. Since file processing often involv
 
 ```python
 # upload_tracing.py - OpenTelemetry setup for file processing service
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

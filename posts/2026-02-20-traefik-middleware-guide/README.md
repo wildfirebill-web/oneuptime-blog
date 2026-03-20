@@ -30,6 +30,7 @@ Protect your backend from traffic spikes and abuse by limiting requests per clie
 
 ```yaml
 # middleware-rate-limit.yaml
+
 # Limits each client IP to 100 requests per second
 # with a burst allowance of 200 requests
 apiVersion: traefik.io/v1alpha1

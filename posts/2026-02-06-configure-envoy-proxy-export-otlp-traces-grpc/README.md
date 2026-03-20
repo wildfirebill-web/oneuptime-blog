@@ -42,6 +42,7 @@ Let's start with a complete working configuration. This sets up Envoy to proxy H
 
 ```yaml
 # envoy.yaml - Complete Envoy config with OTLP trace export via gRPC
+
 static_resources:
   listeners:
     - name: main_listener

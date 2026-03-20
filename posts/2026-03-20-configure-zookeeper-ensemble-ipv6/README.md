@@ -16,6 +16,7 @@ Apache ZooKeeper provides distributed coordination services. Configuring ZooKeep
 # /etc/zookeeper/conf/zoo.cfg
 
 # Tick time in milliseconds
+
 tickTime=2000
 
 # Data and log directories

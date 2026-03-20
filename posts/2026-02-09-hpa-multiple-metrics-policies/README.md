@@ -393,6 +393,7 @@ Track which metrics drive scaling decisions.
 
 ```bash
 # View all current metrics and their values
+
 kubectl get hpa comprehensive-hpa -o json | jq '.status.currentMetrics'
 
 # Check which metric suggests most replicas

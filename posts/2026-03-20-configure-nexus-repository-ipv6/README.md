@@ -14,6 +14,7 @@ Sonatype Nexus Repository Manager is a popular artifact repository supporting Ma
 
 ```bash
 # Download Nexus Repository Manager
+
 wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
 tar xvf latest-unix.tar.gz
 sudo mv nexus-3* /opt/nexus

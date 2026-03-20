@@ -19,6 +19,7 @@ Use cases:
 
 ```bash
 # Enable NDP proxy on the interface facing upstream
+
 sysctl -w net.ipv6.conf.eth0.proxy_ndp=1
 
 # Persist
@@ -42,7 +43,7 @@ ISP gives a /48 prefix. The router has one address on the WAN side but needs to 
 
 ```bash
 #!/bin/bash
-# ndp-proxy-setup.sh — Proxy NDP for delegated /64
+# ndp-proxy-setup.sh - Proxy NDP for delegated /64
 
 WAN_IFACE="eth0"
 LAN_IFACE="eth1"
@@ -61,7 +62,7 @@ for ADDR in "2001:db8:1::10" "2001:db8:1::11" "2001:db8:1::12"; do
 done
 ```
 
-## ndppd — Automatic NDP Proxy Daemon
+## ndppd - Automatic NDP Proxy Daemon
 
 `ndppd` automates proxy NDP by watching for NS messages and proxying for matching prefixes:
 

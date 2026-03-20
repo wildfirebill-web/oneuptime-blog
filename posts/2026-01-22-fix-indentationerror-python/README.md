@@ -18,6 +18,7 @@ Unlike languages that use braces for blocks, Python relies on consistent indenta
 
 ```python
 # Python uses indentation for code blocks
+
 def greet(name):
     # This is indented - part of the function
     message = f"Hello, {name}!"

@@ -14,6 +14,7 @@ Rspamd is a high-performance spam filtering system used with Postfix, Exim, and 
 
 ```bash
 # Add Rspamd repository and install on Ubuntu
+
 curl https://rspamd.com/apt-stable/gpg.key | sudo apt-key add -
 echo "deb [arch=amd64] https://rspamd.com/apt-stable/ focal main" | sudo tee /etc/apt/sources.list.d/rspamd.list
 sudo apt update && sudo apt install -y rspamd

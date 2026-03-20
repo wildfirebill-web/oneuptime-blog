@@ -25,6 +25,7 @@ Before getting started, make sure you have the following tools installed and con
 
 ```bash
 # Verify Flux CLI version supports notation secrets
+
 flux version --client
 
 # Check cluster connectivity

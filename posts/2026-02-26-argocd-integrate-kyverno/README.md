@@ -75,6 +75,7 @@ Store policies in your GitOps repository and deploy them with ArgoCD:
 
 ```yaml
 # Git: policies/validation/require-labels.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

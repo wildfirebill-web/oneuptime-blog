@@ -457,6 +457,7 @@ app.prepare().then(() => {
 
 ```dockerfile
 # Dockerfile
+
 FROM node:20-alpine AS base
 
 # Dependencies

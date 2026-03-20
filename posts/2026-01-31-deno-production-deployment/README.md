@@ -172,6 +172,7 @@ This Dockerfile uses multi-stage builds to create a minimal production image wit
 
 ```dockerfile
 # Dockerfile - Multi-stage build for Deno application
+
 # Stage 1: Cache dependencies
 FROM denoland/deno:1.40.0 as cache
 

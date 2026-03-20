@@ -16,6 +16,7 @@ Each workspace has its own state file but uses the same configuration.
 
 ```bash
 # Default workspace (always exists)
+
 tofu workspace list
 # * default
 
@@ -63,7 +64,7 @@ resource "aws_instance" "app" {
 
 Each workspace gets a separate state file under the same backend prefix.
 
-```
+```text
 S3 Backend State Files:
 s3://my-state-bucket/
 ├── terraform.tfstate          # default workspace
@@ -78,9 +79,9 @@ s3://my-state-bucket/
 
 Workspaces have significant limitations that make them unsuitable for environment isolation in most team contexts.
 
-```
+```hcl
 Workspace limitations:
-1. Same code for all workspaces — hard to have env-specific config
+1. Same code for all workspaces - hard to have env-specific config
 2. Easy to accidentally apply to wrong workspace
 3. No access control between workspaces
 4. Workspace name is runtime state, not static config
@@ -92,7 +93,7 @@ Workspace limitations:
 
 The more common and safer pattern uses separate directories per environment.
 
-```
+```hcl
 environments/
 ├── dev/
 │   ├── main.tf          # dev-specific config

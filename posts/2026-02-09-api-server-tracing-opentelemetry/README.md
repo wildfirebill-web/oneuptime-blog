@@ -52,6 +52,7 @@ Create the tracing configuration file:
 
 ```yaml
 # /etc/kubernetes/tracing-config.yaml
+
 apiVersion: apiserver.config.k8s.io/v1beta1
 kind: TracingConfiguration
 # Endpoint to send traces (usually an OpenTelemetry collector)

@@ -31,6 +31,7 @@ The most fundamental mistake is running a split when IPAM is already inconsisten
 
 ```bash
 # Always check IPAM consistency before starting any split operation
+
 calicoctl ipam check
 
 # Expected output contains: "IPAM is consistent"

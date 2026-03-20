@@ -14,6 +14,7 @@ The Splunk Universal Forwarder sends log data from RHEL 9 servers to a Splunk de
 
 ```bash
 # Download from Splunk
+
 wget -O splunkforwarder.rpm 'https://download.splunk.com/products/universalforwarder/releases/9.1.0/linux/splunkforwarder-9.1.0-x86_64.rpm'
 sudo rpm -ivh splunkforwarder.rpm
 ```

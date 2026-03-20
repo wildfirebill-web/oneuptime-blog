@@ -30,6 +30,7 @@ If you don't have a Next.js project yet, here's how to create one:
 
 ```bash
 # Create a new Next.js app
+
 npx create-next-app@latest my-amplify-app
 cd my-amplify-app
 ```

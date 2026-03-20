@@ -35,6 +35,7 @@ EOF
 
 ```bash
 # Restart Docker to apply the change
+
 sudo systemctl restart docker
 
 # Verify docker0 now uses the new subnet
@@ -43,7 +44,7 @@ ip addr show docker0
 
 Expected output:
 
-```
+```text
 3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500
     inet 192.168.90.1/24 brd 192.168.90.255 scope global docker0
 ```

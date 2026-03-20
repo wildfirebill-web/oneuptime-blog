@@ -114,6 +114,7 @@ High availability is built into AlloyDB by default:
 
 ```bash
 # AlloyDB cluster is automatically highly available
+
 # Cross-zone replication is handled internally
 gcloud alloydb clusters create enterprise-db \
     --region=us-central1 \

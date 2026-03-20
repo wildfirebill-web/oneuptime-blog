@@ -29,6 +29,7 @@ The difference between `block` and `reject`: `block` prevents authorization but 
 
 ```bash
 # Allow a specific device model
+
 allow id 046d:c52b
 
 # Allow all devices from a vendor (Logitech)

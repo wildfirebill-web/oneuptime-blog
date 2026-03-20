@@ -25,6 +25,7 @@ Work through these checks in order:
 
 ```bash
 # From the Portainer host (or container)
+
 # Test TCP connectivity to LDAP port
 nc -zv ldap.example.com 389
 nc -zv ldap.example.com 636  # For LDAPS
@@ -161,4 +162,4 @@ docker run portainer/portainer-ce:latest --log-level=debug
 
 ## Conclusion
 
-LDAP troubleshooting follows a systematic path from network to application layer. Start with connectivity, verify the bind account, confirm user search works, and finally test the full authentication flow. The ldapsearch tool is your best diagnostic companion — it simulates exactly what Portainer does without going through the Portainer UI. Most issues fall into three categories: network problems, incorrect DN/filter configuration, and certificate issues.
+LDAP troubleshooting follows a systematic path from network to application layer. Start with connectivity, verify the bind account, confirm user search works, and finally test the full authentication flow. The ldapsearch tool is your best diagnostic companion - it simulates exactly what Portainer does without going through the Portainer UI. Most issues fall into three categories: network problems, incorrect DN/filter configuration, and certificate issues.

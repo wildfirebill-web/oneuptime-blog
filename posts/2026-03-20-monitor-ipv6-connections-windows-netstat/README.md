@@ -26,7 +26,7 @@ netstat -ano
 
 ## Understanding netstat Output for IPv6
 
-```
+```text
 Proto  Local Address              Foreign Address            State
 TCP    [::]:80                    [::]:0                     LISTENING
 TCP    [::]:443                   [::]:0                     LISTENING
@@ -36,9 +36,9 @@ UDP    [::]:53                    *:*
 ```
 
 IPv6 addresses in netstat output are enclosed in brackets `[...]`:
-- `[::]:80` — Listening on all IPv6 addresses, port 80
-- `[::1]:5432` — Loopback address with port
-- `[2001:db8::10]:443` — Specific global IPv6 address
+- `[::]:80` - Listening on all IPv6 addresses, port 80
+- `[::1]:5432` - Loopback address with port
+- `[2001:db8::10]:443` - Specific global IPv6 address
 
 ## Filtering IPv6 Connections
 
@@ -74,6 +74,7 @@ netstat -b -an 2>nul | findstr "\[.*\]"
 
 ```powershell
 # Show all IPv6 TCP connections
+
 Get-NetTCPConnection | Where-Object {
     $_.LocalAddress -like "*:*" -or $_.RemoteAddress -like "*:*"
 }

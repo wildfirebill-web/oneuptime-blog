@@ -22,6 +22,7 @@ Pass context values with the `-c` or `--context` flag.
 
 ```bash
 # Pass context values from the command line
+
 cdk deploy -c environment=production -c region=us-west-2
 
 # Multiple values

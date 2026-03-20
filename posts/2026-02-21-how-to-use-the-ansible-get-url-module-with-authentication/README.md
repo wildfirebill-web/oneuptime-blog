@@ -16,6 +16,7 @@ The most common authentication method uses a username and password combination. 
 
 ```yaml
 # Download from a server that requires basic HTTP authentication
+
 - name: Download artifact from Nexus repository
   ansible.builtin.get_url:
     url: "https://nexus.company.com/repository/releases/com/company/myapp/2.1.0/myapp-2.1.0.jar"

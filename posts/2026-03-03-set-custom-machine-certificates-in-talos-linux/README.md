@@ -25,6 +25,7 @@ Each of these has a CA certificate (public) and a CA key (private). The machine 
 
 ```yaml
 # Certificate structure in machine config (simplified)
+
 machine:
   ca:
     crt: <base64-encoded-talos-ca-cert>

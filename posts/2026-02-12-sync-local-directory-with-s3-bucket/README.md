@@ -20,6 +20,7 @@ Sync a local directory to S3:
 
 ```bash
 # Sync local directory to S3
+
 aws s3 sync ./my-website/ s3://my-bucket/website/
 
 # What sync does:

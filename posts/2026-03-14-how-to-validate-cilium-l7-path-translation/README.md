@@ -25,6 +25,7 @@ Validating path translation ensures that HTTP requests are rewritten correctly a
 echo "=== Path Translation Validation ==="
 
 # Check CiliumEnvoyConfig exists
+
 CONFIGS=$(kubectl get ciliumenvoyconfigs -n default --no-headers 2>/dev/null | wc -l)
 if [ "$CONFIGS" -gt 0 ]; then
   echo "PASS: $CONFIGS CiliumEnvoyConfig(s) found"

@@ -90,6 +90,7 @@ Determine the right cache size based on your cluster's query patterns. Start by 
 
 ```bash
 # Get metrics from CoreDNS
+
 kubectl port-forward -n kube-system svc/kube-dns 9153:9153
 
 # Query Prometheus metrics

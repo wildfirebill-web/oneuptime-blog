@@ -30,6 +30,7 @@ This guide deploys Gitea with a PostgreSQL database backend, SSH LoadBalancer se
 kubectl create namespace gitea
 
 # Admin credentials for Gitea
+
 kubectl create secret generic gitea-admin-secret \
   --namespace gitea \
   --from-literal=username=gitea_admin \

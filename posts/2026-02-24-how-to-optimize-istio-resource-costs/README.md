@@ -211,6 +211,7 @@ Periodically audit your Istio resources:
 
 ```bash
 # Find VirtualServices referencing services that do not exist
+
 for vs in $(kubectl get virtualservices -A -o jsonpath='{range .items[*]}{.metadata.namespace}/{.metadata.name}{"\n"}{end}'); do
   ns=$(echo $vs | cut -d/ -f1)
   name=$(echo $vs | cut -d/ -f2)

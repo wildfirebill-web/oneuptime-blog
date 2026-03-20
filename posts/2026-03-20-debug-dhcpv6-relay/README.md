@@ -28,7 +28,8 @@ flowchart TD
 ## Step 1: Verify Client is Sending DHCPv6 Solicit
 
 ```bash
-# On relay — capture client-facing interface
+# On relay - capture client-facing interface
+
 tcpdump -i eth0 -n 'udp port 546 or udp port 547'
 
 # Expected to see:
@@ -82,7 +83,7 @@ tshark -i eth1 -f 'udp port 547' \
 ## Step 4: Check Server Receives Messages
 
 ```bash
-# On DHCPv6 server — capture UDP 547
+# On DHCPv6 server - capture UDP 547
 tcpdump -i eth0 -n -v 'udp port 547'
 
 # Check ISC Kea server logs

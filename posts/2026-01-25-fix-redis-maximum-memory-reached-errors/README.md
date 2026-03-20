@@ -16,6 +16,7 @@ Redis can be configured with a memory limit:
 
 ```bash
 # Check current settings
+
 redis-cli CONFIG GET maxmemory
 redis-cli CONFIG GET maxmemory-policy
 

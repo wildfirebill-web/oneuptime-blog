@@ -49,6 +49,7 @@ The platform team defines and manages the shared Gateway that all teams attach t
 
 ```yaml
 # infrastructure/gateway/shared-gateway.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

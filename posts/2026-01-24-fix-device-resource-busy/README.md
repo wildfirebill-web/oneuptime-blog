@@ -48,6 +48,7 @@ The `lsof` (list open files) command is your primary tool for finding what is us
 
 ```bash
 # Find all processes using a specific mount point
+
 lsof +D /mnt/usb
 
 # Example output:

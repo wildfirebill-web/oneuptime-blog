@@ -37,6 +37,7 @@ The most common cause is that the subnet group simply has not been created. You 
 
 ```hcl
 # This references a subnet group that does not exist
+
 resource "aws_db_instance" "my_db" {
   identifier           = "my-database"
   engine               = "mysql"

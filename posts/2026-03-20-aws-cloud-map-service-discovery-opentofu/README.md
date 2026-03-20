@@ -14,6 +14,7 @@ AWS Cloud Map is a service registry that lets your applications discover cloud r
 
 ```hcl
 # Private DNS namespace tied to a VPC (internal service discovery)
+
 resource "aws_service_discovery_private_dns_namespace" "internal" {
   name        = "internal.${var.app_name}.local"
   description = "Private DNS namespace for ${var.app_name} services"

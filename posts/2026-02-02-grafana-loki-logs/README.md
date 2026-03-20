@@ -103,6 +103,7 @@ The following Docker Compose file defines a complete logging stack with all thre
 
 ```yaml
 # docker-compose.yml
+
 # Complete Loki stack with Grafana for visualization and Promtail for log collection
 
 version: "3.8"
@@ -849,7 +850,7 @@ overrides:
     retention_period: 2160h  # 90 days
 ```
 
-### Resource Limits
+Resource Limits
 
 Set appropriate resource limits in production:
 

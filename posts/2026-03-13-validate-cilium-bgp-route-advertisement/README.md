@@ -27,6 +27,7 @@ This guide provides a complete validation checklist for Cilium BGP route adverti
 
 ```bash
 # All sessions should show 'established'
+
 cilium bgp peers
 
 # Check session uptime and prefix counts

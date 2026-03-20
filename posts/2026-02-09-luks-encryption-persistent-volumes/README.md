@@ -26,6 +26,7 @@ First, ensure cryptsetup is available on your nodes:
 
 ```bash
 # Check if cryptsetup is installed
+
 ssh node01 "which cryptsetup"
 
 # Install on Ubuntu/Debian nodes

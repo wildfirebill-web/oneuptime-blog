@@ -10,8 +10,9 @@ Description: Learn how to configure the SSH AddressFamily directive in sshd_conf
 
 The `AddressFamily` directive controls which address families SSH will use. It applies to both the client (`~/.ssh/config` or `/etc/ssh/ssh_config`) and server (`/etc/ssh/sshd_config`).
 
-```
+```text
 # Values:
+
 # any   - Use both IPv4 and IPv6 (default)
 # inet  - IPv4 only
 # inet6 - IPv6 only
@@ -19,7 +20,7 @@ The `AddressFamily` directive controls which address families SSH will use. It a
 
 ## sshd_config (Server Configuration)
 
-```
+```text
 # /etc/ssh/sshd_config
 
 # IPv6 only server
@@ -42,7 +43,7 @@ ListenAddress 0.0.0.0
 
 ## Client ssh_config (System-wide)
 
-```
+```text
 # /etc/ssh/ssh_config
 
 # Default IPv6 for all users
@@ -58,7 +59,7 @@ Host production-server
 
 ## User ~/.ssh/config (Per-User)
 
-```
+```text
 # ~/.ssh/config
 
 # Global: prefer IPv6

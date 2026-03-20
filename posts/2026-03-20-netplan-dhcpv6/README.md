@@ -22,6 +22,7 @@ Netplan configuration files are in  with  extension. Files are processed in lexi
 
 ```bash
 # List existing Netplan configs
+
 ls /etc/netplan/
 
 # View current config

@@ -14,6 +14,7 @@ IPv6 DNS resolution failures prevent applications from connecting to IPv6-enable
 
 ```bash
 # Test if your DNS resolver returns AAAA records
+
 dig AAAA google.com
 dig +short AAAA google.com
 

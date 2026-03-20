@@ -25,6 +25,7 @@ The cleanest approach is to prevent these spans from being created in the first 
 
 ```yaml
 # otel-config.yaml
+
 file_format: "0.3"
 
 resource:

@@ -30,6 +30,7 @@ If you do not have Kubernetes set up, install it first using kubeadm.
 
 ```bash
 # Download the latest keadm release
+
 KUBEEDGE_VERSION=v1.17.0
 wget https://github.com/kubeedge/kubeedge/releases/download/${KUBEEDGE_VERSION}/keadm-${KUBEEDGE_VERSION}-linux-amd64.tar.gz
 

@@ -111,6 +111,7 @@ Use PromQL to query queue depth across all shards.
 
 ```promql
 # Current queue depth per shard controller
+
 workqueue_depth{namespace="flux-system", job=~".*shard.*"}
 
 # Queue depth by controller name

@@ -20,6 +20,7 @@ A pod gets the Guaranteed class when every container has both CPU and memory req
 
 ```yaml
 # guaranteed-pod.yaml
+
 # This pod receives Guaranteed QoS
 apiVersion: v1
 kind: Pod

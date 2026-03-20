@@ -28,6 +28,7 @@ Network namespaces on Linux provide isolated network stacks. Each namespace has 
 
 ```bash
 # Create a namespace
+
 sudo ip netns add myns
 
 # List namespaces

@@ -18,6 +18,7 @@ Before configuring TRIM, confirm your SSD supports it:
 
 ```bash
 # Check TRIM support for all block devices
+
 sudo hdparm -I /dev/sda | grep -i trim
 
 # If TRIM is supported, you'll see:

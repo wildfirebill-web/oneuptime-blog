@@ -37,6 +37,7 @@ When a pod starts, the kubelet calls the CNI chain sequentially:
 
 ```bash
 # Verify all nodes have kernel 5.4+ for eBPF support
+
 kubectl get nodes -o custom-columns='NAME:.metadata.name,KERNEL:.status.nodeInfo.kernelVersion'
 ```
 

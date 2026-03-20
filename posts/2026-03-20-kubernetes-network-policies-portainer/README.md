@@ -105,6 +105,7 @@ Use Portainer's built-in terminal or kubectl to test connectivity:
 
 ```bash
 # Test connectivity between pods
+
 kubectl exec -it frontend-pod -- curl http://backend-service:8080
 
 # List all network policies in a namespace

@@ -51,6 +51,7 @@ For Node.js Lambda functions:
 
 ```yaml
 # serverless.yml (Serverless Framework)
+
 service: my-otel-lambda
 
 provider:

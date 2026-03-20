@@ -21,6 +21,7 @@ The boot process shows messages like:
 
 ```bash
 # At the dracut:/# prompt, check available devices
+
 dracut:/# lvm vgscan
 dracut:/# lvm vgchange -ay
 

@@ -49,6 +49,7 @@ Create your DR plan with these core sections:
 
 ```yaml
 # dr-plan-structure.yaml
+
 dr_plan:
   version: "2.0"
   last_updated: "2026-01-30"

@@ -26,6 +26,7 @@ Plan the upgrade sequence and prepare for potential issues.
 
 ```bash
 # List all nodes and their roles
+
 kubectl get nodes -o wide
 
 # Check node resource utilization

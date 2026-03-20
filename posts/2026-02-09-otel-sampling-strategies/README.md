@@ -22,6 +22,7 @@ The always-on sampler records every trace. This provides complete visibility but
 
 ```python
 # always_on_sampling.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import ALWAYS_ON

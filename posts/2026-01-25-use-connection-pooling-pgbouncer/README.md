@@ -86,6 +86,7 @@ docker run -d \
 
 [databases]
 # database_name = connection_string
+
 mydb = host=localhost port=5432 dbname=mydb
 mydb_readonly = host=replica.example.com port=5432 dbname=mydb
 

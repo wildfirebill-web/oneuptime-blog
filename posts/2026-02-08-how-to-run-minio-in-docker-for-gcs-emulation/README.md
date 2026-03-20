@@ -24,6 +24,7 @@ Start MinIO with custom credentials:
 
 ```bash
 # Start MinIO configured for GCS emulation
+
 docker run -d \
   --name minio-gcs \
   -p 9000:9000 \

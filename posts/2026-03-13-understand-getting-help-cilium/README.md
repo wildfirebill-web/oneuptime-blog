@@ -30,6 +30,7 @@ Before reaching out to any support channel, collect the standard Cilium diagnost
 
 ```bash
 # Collect comprehensive Cilium status
+
 cilium status --verbose > cilium-status.txt
 
 # Collect Cilium version information

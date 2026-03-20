@@ -27,12 +27,13 @@ The collector is designed to be vertically scalable (bigger machines) and horizo
 
 Start by maximizing the performance of individual collector instances through resource allocation and configuration tuning.
 
-### Resource Allocation
+Resource Allocation
 
 The collector benefits significantly from adequate CPU and memory resources:
 
 ```yaml
 # Kubernetes deployment with generous resource allocation
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

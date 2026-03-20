@@ -657,6 +657,7 @@ from uuid import uuid4
 import json
 
 # Event Base Class
+
 @dataclass
 class Event:
     event_id: str = field(default_factory=lambda: str(uuid4()))

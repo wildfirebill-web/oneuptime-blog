@@ -20,6 +20,7 @@ View all filesystem changes in a container:
 
 ```bash
 # Start a container and make some changes
+
 podman run -d --name my-app nginx:latest
 podman exec my-app touch /tmp/newfile.txt
 podman exec my-app /bin/bash -c "echo 'modified' >> /etc/hostname"

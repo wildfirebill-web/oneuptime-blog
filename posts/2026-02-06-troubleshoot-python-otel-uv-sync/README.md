@@ -15,6 +15,7 @@ After running `uv sync`, the `opentelemetry-instrument` command fails:
 ```bash
 $ opentelemetry-instrument python app.py
 # No spans are produced, or you get import errors
+
 ```
 
 Or you see errors like:

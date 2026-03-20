@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Testing, Online Tools, Connectivity, DNS, test-ipv6.com
+Tags: IPv6, Testing, Online Tools, Connectivity, DNS, Test-ipv6.com
 
 Description: Use test-ipv6.com and other online tools to verify IPv6 connectivity, DNS resolution, and Happy Eyeballs behavior from your network or server.
 
@@ -16,6 +16,7 @@ The most comprehensive IPv6 connectivity tester:
 
 ```bash
 # Test your IPv6 connectivity from the command line
+
 curl -s https://ipv6.icanhazip.com
 # If this returns an IPv6 address, you have working IPv6
 

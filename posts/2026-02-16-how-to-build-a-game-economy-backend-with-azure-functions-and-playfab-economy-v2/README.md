@@ -71,6 +71,7 @@ def create_currency(currency_id: str, name: str, initial_deposit: int):
     return response.json()
 
 # Create soft and premium currencies
+
 create_currency("gold", "Gold Coins", 500)  # Players start with 500 gold
 create_currency("gems", "Premium Gems", 0)  # Purchased with real money
 create_currency("energy", "Energy", 100)    # Regenerating resource

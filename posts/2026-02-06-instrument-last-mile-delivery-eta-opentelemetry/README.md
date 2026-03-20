@@ -103,6 +103,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("delivery.tracking")
 
 # Histogram to track ETA prediction error in minutes
+
 eta_error_histogram = meter.create_histogram(
     "delivery.eta.error_minutes",
     description="Difference between predicted and actual delivery time",

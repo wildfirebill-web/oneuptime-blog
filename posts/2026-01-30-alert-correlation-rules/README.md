@@ -53,6 +53,7 @@ The simplest form of correlation: alerts that fire within a defined time window 
 
 ```yaml
 # Time-window correlation rule
+
 correlation_rules:
   - name: time-window-basic
     type: time_window

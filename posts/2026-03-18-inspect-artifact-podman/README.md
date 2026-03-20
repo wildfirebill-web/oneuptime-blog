@@ -20,6 +20,7 @@ Ensure Podman 5.x or later is installed with artifact support.
 
 ```bash
 # Verify Podman is available
+
 podman --version
 
 # Check the inspect subcommand

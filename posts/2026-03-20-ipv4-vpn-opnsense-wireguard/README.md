@@ -26,7 +26,7 @@ OPNsense supports WireGuard via a community plugin. The configuration workflow i
    - Click the key icon to **Generate** private/public key pair
    - **Tunnel Address:** `10.0.0.1/24`
    - **DNS Server:** Leave blank or set `8.8.8.8`
-4. Save and note the **Public Key** — clients will need this
+4. Save and note the **Public Key** - clients will need this
 
 ## Step 3: Add a Peer (Client)
 
@@ -56,11 +56,11 @@ OPNsense supports WireGuard via a community plugin. The configuration workflow i
 
 ## Step 6: Create Firewall Rules
 
-**WAN Rules** — Allow WireGuard handshake:
+**WAN Rules** - Allow WireGuard handshake:
 - Go to **Firewall → Rules → WAN**
 - Add rule: Protocol UDP, Destination Port 51820, Action Pass
 
-**WireGuard Interface Rules** — Allow client traffic:
+**WireGuard Interface Rules** - Allow client traffic:
 - Go to **Firewall → Rules → WireGuard**
 - Add rule: Source any, Destination any, Action Pass (or restrict as needed)
 
@@ -90,4 +90,4 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 25
 ```
 
-After applying, verify the tunnel status under **VPN → WireGuard → Status** — a successful handshake shows the peer's public key with a recent timestamp and data transfer stats.
+After applying, verify the tunnel status under **VPN → WireGuard → Status** - a successful handshake shows the peer's public key with a recent timestamp and data transfer stats.

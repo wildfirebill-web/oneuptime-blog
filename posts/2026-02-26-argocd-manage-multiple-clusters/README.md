@@ -49,6 +49,7 @@ First, register each cluster with labels for organization:
 
 ```yaml
 # clusters/staging.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

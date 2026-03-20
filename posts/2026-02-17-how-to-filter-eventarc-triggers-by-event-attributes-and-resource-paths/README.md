@@ -34,6 +34,7 @@ The most common pattern for audit logs is filtering by service and method.
 
 ```bash
 # Only trigger on Compute Engine instance creation
+
 gcloud eventarc triggers create vm-create-trigger \
   --location=us-central1 \
   --destination-run-service=my-handler \

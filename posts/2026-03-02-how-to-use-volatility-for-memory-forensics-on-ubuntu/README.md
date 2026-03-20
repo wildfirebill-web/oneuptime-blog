@@ -16,6 +16,7 @@ Volatility 3, the current major version, is a significant rewrite from Volatilit
 
 ```bash
 # Install Python 3 and pip if not already present
+
 sudo apt update
 sudo apt install -y python3 python3-pip python3-venv git
 

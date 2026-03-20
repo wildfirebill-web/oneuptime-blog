@@ -364,6 +364,7 @@ Deploy the backends that store and visualize telemetry:
 
 ```bash
 # Install Prometheus for metrics
+
 helm install prometheus prometheus-community/prometheus \
   -n observability \
   --set server.persistentVolume.size=50Gi

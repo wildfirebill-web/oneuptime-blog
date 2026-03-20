@@ -14,6 +14,7 @@ Weak TLS versions (1.0 and 1.1) and ciphers (RC4, 3DES, CBC-mode ciphers) are kn
 
 ```bash
 # See the current crypto policy
+
 update-crypto-policies --show
 
 # List all ciphers currently allowed by OpenSSL

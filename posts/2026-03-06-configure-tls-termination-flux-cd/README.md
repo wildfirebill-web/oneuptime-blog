@@ -49,6 +49,7 @@ This is the most common approach. The ingress controller terminates TLS and forw
 
 ```yaml
 # apps/my-app/tls/tls-secret.yaml
+
 # This secret can be created by cert-manager automatically
 # or manually for pre-existing certificates
 apiVersion: v1

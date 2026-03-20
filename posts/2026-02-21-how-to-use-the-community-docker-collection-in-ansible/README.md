@@ -32,6 +32,7 @@ The collection is not included in Ansible core, so you need to install it separa
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install a specific version

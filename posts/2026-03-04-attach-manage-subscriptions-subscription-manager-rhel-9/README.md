@@ -20,6 +20,7 @@ Start by looking at what is currently attached:
 
 ```bash
 # Show overall subscription status
+
 sudo subscription-manager status
 
 # List all consumed (attached) subscriptions

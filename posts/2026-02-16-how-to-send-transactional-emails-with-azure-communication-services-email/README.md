@@ -20,6 +20,7 @@ ACS Email requires a few setup steps before you can start sending.
 
 ```bash
 # Create an Email Communication Services resource
+
 az communication email create \
   --name my-email-service \
   --resource-group communication-rg \

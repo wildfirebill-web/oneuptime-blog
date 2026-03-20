@@ -295,6 +295,7 @@ In larger organizations, each team manages their own namespace. They can create 
 
 ```yaml
 # In team-orders namespace
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

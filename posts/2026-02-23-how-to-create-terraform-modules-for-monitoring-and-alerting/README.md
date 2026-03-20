@@ -26,6 +26,7 @@ Start with a module that creates notification topics and subscriptions.
 
 ```hcl
 # modules/notifications/variables.tf
+
 variable "name" {
   description = "Name prefix for notification resources"
   type        = string

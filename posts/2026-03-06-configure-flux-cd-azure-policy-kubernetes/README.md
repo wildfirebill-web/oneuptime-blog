@@ -38,6 +38,7 @@ graph TD
 
 ```bash
 # Set variables
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export CLUSTER_NAME="aks-fluxcd-demo"
 
@@ -209,7 +210,7 @@ spec:
         allowedRegex: "^(flux|helm|kustomize)$"
 ```
 
-### Resource Limits Constraint Template
+Resource Limits Constraint Template
 
 ```yaml
 # File: clusters/my-cluster/policies/templates/container-limits.yaml

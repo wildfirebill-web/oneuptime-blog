@@ -38,6 +38,7 @@ flowchart TD
 
 ```yaml
 # playbook.yml
+
 ---
 - name: Configure web servers
   hosts: webservers  # Typo or wrong name?

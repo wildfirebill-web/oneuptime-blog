@@ -32,6 +32,7 @@ Here is a basic example of a deployment with resource requests and limits:
 
 ```yaml
 # web-app-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

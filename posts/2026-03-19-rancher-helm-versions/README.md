@@ -101,6 +101,7 @@ To understand what changed between revisions, compare the values:
 
 ```bash
 # Get values from two revisions
+
 helm get values my-redis --revision 1 -n default > revision1.yaml
 helm get values my-redis --revision 2 -n default > revision2.yaml
 

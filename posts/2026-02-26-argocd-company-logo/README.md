@@ -93,6 +93,7 @@ Instead of referencing an external URL, you can mount your logo directly into th
 
 ```yaml
 # Step 1: Create a ConfigMap with the logo as binary data
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

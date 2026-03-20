@@ -366,6 +366,7 @@ Configure branch protection with conditional workflows:
 
 ```yaml
 # Always run this job, even if skipped due to path filters
+
 jobs:
   check:
     runs-on: ubuntu-latest

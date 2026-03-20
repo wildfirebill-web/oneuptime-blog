@@ -29,6 +29,7 @@ Start by understanding what the Tigera operator deploys by default and identify 
 
 ```bash
 # Check the current Calico API server deployment
+
 kubectl get deployment calico-apiserver -n calico-apiserver
 
 # Review replica count and resource limits

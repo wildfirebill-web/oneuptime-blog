@@ -16,6 +16,7 @@ The `lookup` plugin lets you read environment variables from the machine running
 
 ```yaml
 # read-env-vars.yml
+
 # Reads environment variables from the control node
 ---
 - name: Use environment variables from control node

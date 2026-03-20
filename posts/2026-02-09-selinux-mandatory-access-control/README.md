@@ -149,6 +149,7 @@ SELinux denials can be cryptic. When a pod fails to start or containers cannot a
 
 ```bash
 # Check SELinux denials on the node
+
 sudo ausearch -m avc -ts recent
 
 # View SELinux context of pod processes

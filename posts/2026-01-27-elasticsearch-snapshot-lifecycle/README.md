@@ -61,6 +61,7 @@ Before creating snapshots, you need to configure a repository where Elasticsearc
 
 ```bash
 # First, install the S3 repository plugin on all nodes
+
 # This step requires a cluster restart
 bin/elasticsearch-plugin install repository-s3
 

@@ -14,6 +14,7 @@ Kubeless is a Kubernetes-native serverless framework that uses Custom Resource D
 
 ```bash
 # Create the Kubeless namespace
+
 kubectl create namespace kubeless
 
 # Install Kubeless

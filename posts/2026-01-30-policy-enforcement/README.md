@@ -39,12 +39,13 @@ mindmap
       Holiday Schedules
 ```
 
-### Resource Limit Policies
+Resource Limit Policies
 
 These policies cap what resources teams can provision:
 
 ```yaml
 # resource-limits-policy.yaml
+
 apiVersion: policy.oneuptime.com/v1
 kind: CostPolicy
 metadata:

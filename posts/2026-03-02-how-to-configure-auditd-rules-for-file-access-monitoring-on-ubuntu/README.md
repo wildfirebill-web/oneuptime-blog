@@ -16,6 +16,7 @@ This guide focuses specifically on file access monitoring rules - watching who r
 
 ```bash
 # Install auditd
+
 sudo apt update
 sudo apt install auditd audispd-plugins -y
 

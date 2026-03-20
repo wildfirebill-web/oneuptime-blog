@@ -37,6 +37,7 @@ Producer -> Leader Broker -> Follower Brokers (async replication)
 # server.properties
 
 # Default replication factor for auto-created topics
+
 default.replication.factor=3
 
 # Minimum ISR for acks=all to succeed

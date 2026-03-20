@@ -29,6 +29,7 @@ Scan container images for CVEs before they are referenced in your GitOps reposit
 
 ```yaml
 # .github/workflows/image-scan.yaml
+
 name: Container Image Compliance Scan
 
 on:

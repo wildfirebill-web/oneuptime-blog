@@ -12,6 +12,7 @@ F5 BIG-IP has supported IPv6 since TMOS 9.x and provides enterprise-grade IPv6 l
 
 ```bash
 # Check TMOS version
+
 tmsh show sys version
 
 # Verify IPv6 is supported (should be on BIG-IP 9.x+)

@@ -42,6 +42,7 @@ Overseerr integrates with your existing media stack. It checks Plex or Jellyfin 
 
 ```bash
 # Create the Overseerr project directory
+
 mkdir -p ~/overseerr/config
 cd ~/overseerr
 ```

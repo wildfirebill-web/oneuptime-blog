@@ -59,6 +59,7 @@ Generate rules work well for:
 
 ```bash
 # Using Helm
+
 helm repo add kyverno https://kyverno.github.io/kyverno/
 helm repo update
 
@@ -484,7 +485,7 @@ spec:
 
 ## Generating ResourceQuotas and LimitRanges
 
-### ResourceQuota Based on Namespace Labels
+ResourceQuota Based on Namespace Labels
 
 ```yaml
 apiVersion: kyverno.io/v1

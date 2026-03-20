@@ -47,6 +47,7 @@ Mutating webhooks modify resources after ArgoCD creates or updates them. Common 
 
 ```bash
 # List all mutating webhooks
+
 kubectl get mutatingwebhookconfigurations
 
 # Check which namespaces they apply to

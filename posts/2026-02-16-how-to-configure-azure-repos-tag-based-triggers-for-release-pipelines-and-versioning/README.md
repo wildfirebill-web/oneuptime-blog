@@ -18,6 +18,7 @@ In your YAML pipeline, the `trigger` section accepts a `tags` property that spec
 
 ```yaml
 # azure-pipelines.yml - Trigger on version tags
+
 # This pipeline only runs when a tag matching v* is pushed
 
 trigger:

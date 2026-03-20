@@ -88,6 +88,7 @@ end)
 
 ```bash
 # Load from a file
+
 cat mylib.lua | redis-cli -x FUNCTION LOAD REPLACE
 
 # Or load directly

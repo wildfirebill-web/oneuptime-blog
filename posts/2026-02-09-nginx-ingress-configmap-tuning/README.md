@@ -41,6 +41,7 @@ Create a ConfigMap with worker tuning:
 
 ```yaml
 # nginx-ingress-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

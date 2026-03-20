@@ -16,7 +16,7 @@ arp -a
 
 Sample output:
 
-```
+```text
 gateway (192.168.1.1) at aa:bb:cc:dd:ee:ff on en0 ifscope [ethernet]
 myhost.local (192.168.1.20) at 00:11:22:33:44:55 on en0 ifscope [ethernet]
 ? (192.168.1.255) at ff:ff:ff:ff:ff:ff on en0 ifscope permanent [ethernet]
@@ -25,16 +25,17 @@ myhost.local (192.168.1.20) at 00:11:22:33:44:55 on en0 ifscope [ethernet]
 ### Output Format
 
 macOS uses BSD-style `arp` output:
-- `hostname (IP)` — resolved hostname and IP
-- `at MAC` — the associated MAC address
-- `on interface` — network interface
-- `ifscope` — entry is scoped to that interface
-- `permanent` — static entry
+- `hostname (IP)` - resolved hostname and IP
+- `at MAC` - the associated MAC address
+- `on interface` - network interface
+- `ifscope` - entry is scoped to that interface
+- `permanent` - static entry
 
 ## Numerical Output (No DNS Lookups)
 
 ```bash
 # Skip hostname resolution for faster output
+
 arp -an
 
 # Show entries for a specific interface

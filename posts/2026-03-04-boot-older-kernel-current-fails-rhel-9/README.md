@@ -49,6 +49,7 @@ After booting into a working older kernel, set it as the default:
 
 ```bash
 # List available kernels with their index
+
 sudo grubby --info=ALL | grep -E "^index|^kernel"
 ```
 

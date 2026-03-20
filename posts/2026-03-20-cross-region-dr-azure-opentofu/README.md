@@ -14,6 +14,7 @@ Azure cross-region DR uses Azure Site Recovery for VM/workload replication, geo-
 
 ```hcl
 # main.tf - GRS Storage Account for DR
+
 resource "azurerm_storage_account" "grs" {
   name                     = "appgrstorage"
   resource_group_name      = azurerm_resource_group.primary.name

@@ -14,6 +14,7 @@ EC2 instances are the core compute resource in AWS. OpenTofu's `aws_instance` re
 
 ```hcl
 # Look up the latest Ubuntu 22.04 AMI
+
 data "aws_ami" "ubuntu" {
   most_recent = true
   owners      = ["099720109477"]  # Canonical

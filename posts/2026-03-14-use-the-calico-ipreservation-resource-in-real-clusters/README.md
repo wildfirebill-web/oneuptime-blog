@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward IPReservation configura
 
 ```bash
 # Verify current IPReservation resources
+
 calicoctl get ipreservation -o yaml
 
 # Check the effective configuration on a specific node

@@ -40,6 +40,7 @@ Example: Migrating from a legacy provider source:
 
 ```bash
 # Replace the provider source in state
+
 terraform state replace-provider \
   "registry.terraform.io/-/aws" \
   "registry.terraform.io/hashicorp/aws"

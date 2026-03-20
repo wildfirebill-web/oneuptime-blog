@@ -28,6 +28,7 @@ terraform {
 }
 
 # Deploy in the primary region
+
 resource "aws_s3_bucket" "primary" {
   provider = aws.primary
   bucket   = "${var.name}-primary"

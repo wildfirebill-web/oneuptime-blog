@@ -27,6 +27,7 @@ Nginx can map IPv6 addresses to a prefix using `geo` module:
 # /etc/nginx/conf.d/rate_limit.conf
 
 # Map IPv6 addresses to their /64 prefix for rate limiting
+
 geo $rate_limit_key {
     default $binary_remote_addr;  # For IPv4, use full address
 

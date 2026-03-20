@@ -69,6 +69,7 @@ Once you have resolved the disk space issue, you must manually clear the read-on
 curl -X GET "localhost:9200/_cat/allocation?v"
 
 # Output example:
+
 shards disk.indices disk.used disk.avail disk.total disk.percent host      node
     42       50gb     180gb      20gb       200gb       90  10.0.0.1  node-1
 ```

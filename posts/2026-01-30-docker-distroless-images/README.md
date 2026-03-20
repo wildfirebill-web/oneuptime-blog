@@ -103,6 +103,7 @@ Now, create a multi-stage Dockerfile that builds the Go binary and packages it w
 
 ```dockerfile
 # Dockerfile for Go with distroless
+
 # Stage 1: Build the Go binary
 FROM golang:1.22-alpine AS builder
 

@@ -280,6 +280,7 @@ Track the resource reduction:
 
 ```promql
 # Before: total sidecar resources
+
 sum(kube_pod_container_resource_requests{container="istio-proxy", resource="cpu"})
 
 # After: ztunnel resources

@@ -56,6 +56,7 @@ One of the biggest advantages of label-based tracking is easy querying with kube
 
 ```bash
 # Find all resources managed by a specific ArgoCD application
+
 kubectl get all -l app.kubernetes.io/instance=my-app -n production
 
 # Find all resources across all namespaces

@@ -30,6 +30,7 @@ Configure S3-compatible storage for backups:
 
 ```yaml
 # backup-storage-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

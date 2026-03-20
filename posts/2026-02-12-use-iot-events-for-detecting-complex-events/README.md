@@ -54,6 +54,7 @@ Here is how to create an input using the AWS CLI:
 
 ```bash
 # Create the IoT Events input from the definition file
+
 aws iotevents create-input \
   --input-name "EnvironmentSensorInput" \
   --input-description "Temperature and humidity readings from zone sensors" \

@@ -8,7 +8,7 @@ Description: Learn how to create and manage AWS IAM Identity Center (SSO) permis
 
 ## Introduction
 
-AWS IAM Identity Center permission sets define the AWS access granted to users and groups when they sign in via SSO. Permission sets are templates—you create them once and assign them to users/groups in specific accounts. This guide covers creating permission sets from AWS-managed and custom policies.
+AWS IAM Identity Center permission sets define the AWS access granted to users and groups when they sign in via SSO. Permission sets are templates-you create them once and assign them to users/groups in specific accounts. This guide covers creating permission sets from AWS-managed and custom policies.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ AWS IAM Identity Center permission sets define the AWS access granted to users a
 
 ```hcl
 # Data source to get the SSO instance ARN and identity store ID
+
 data "aws_ssoadmin_instances" "main" {}
 
 locals {
@@ -149,4 +150,4 @@ tofu apply
 
 ## Conclusion
 
-AWS IAM Identity Center permission sets enable centralized, role-based access management across your entire AWS organization. Define permission sets once and assign them to different accounts—the same "Developer" set can have access in dev but not production. Set short session durations for privileged permission sets and use custom inline policies to add guardrails like preventing production resource termination by developer accounts.
+AWS IAM Identity Center permission sets enable centralized, role-based access management across your entire AWS organization. Define permission sets once and assign them to different accounts-the same "Developer" set can have access in dev but not production. Set short session durations for privileged permission sets and use custom inline policies to add guardrails like preventing production resource termination by developer accounts.

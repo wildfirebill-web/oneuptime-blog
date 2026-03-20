@@ -20,6 +20,7 @@ Head to the SES console and add your domain. You'll need to add some DNS records
 
 ```bash
 # You can also verify via the AWS CLI
+
 aws ses verify-domain-identity --domain yourdomain.com
 
 # Check verification status

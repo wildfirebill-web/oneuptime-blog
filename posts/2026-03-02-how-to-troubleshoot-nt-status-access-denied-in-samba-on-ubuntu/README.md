@@ -27,6 +27,7 @@ First, confirm the user can authenticate at all:
 
 ```bash
 # Test Samba authentication from the server itself
+
 smbclient //localhost/sharename -U username
 
 # If this succeeds (shows a prompt), authentication is fine

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cilium, IPv6, Kubernetes, LoadBalancer, eBPF, kube-proxy Replacement, BGP
+Tags: Cilium, IPv6, Kubernetes, LoadBalancer, eBPF, Kube-proxy Replacement, BGP
 
 Description: Configure Cilium's eBPF-based load balancer for Kubernetes services with IPv6 ClusterIPs and external load balancer IPs.
 
@@ -14,6 +14,7 @@ Configure Cilium's eBPF-based load balancer for Kubernetes services with IPv6 Cl
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

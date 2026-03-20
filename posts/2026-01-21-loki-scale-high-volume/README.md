@@ -35,6 +35,7 @@ Before starting, ensure you have:
 
 ```promql
 # Ingestion rate
+
 sum(rate(loki_distributor_bytes_received_total[5m]))
 
 # Write latency

@@ -204,6 +204,7 @@ Here is how you work with generated columns from application code. You simply ig
 
 ```python
 # Python example: inserting data into a table with generated columns
+
 from google.cloud import spanner
 
 client = spanner.Client(project='my-project')

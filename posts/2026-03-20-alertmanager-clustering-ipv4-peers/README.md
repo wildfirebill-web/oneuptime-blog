@@ -8,11 +8,11 @@ Description: Set up an Alertmanager cluster across IPv4 peers for high availabil
 
 ## Introduction
 
-Running a single Alertmanager is a single point of failure. An Alertmanager cluster uses a gossip protocol to deduplicate alerts across peers—even if one node fails, alerts are still processed. All cluster nodes share state and deduplicate notifications to prevent duplicate pages.
+Running a single Alertmanager is a single point of failure. An Alertmanager cluster uses a gossip protocol to deduplicate alerts across peers-even if one node fails, alerts are still processed. All cluster nodes share state and deduplicate notifications to prevent duplicate pages.
 
 ## Architecture
 
-```
+```text
 Prometheus 1 ─┐
                ├→ All 3 Alertmanager nodes (cluster)
 Prometheus 2 ─┘       ↓ gossip protocol
@@ -24,7 +24,8 @@ Prometheus 2 ─┘       ↓ gossip protocol
 ## Cluster Node Configuration
 
 ```bash
-# Node 1 (10.0.0.1) — start with peers
+# Node 1 (10.0.0.1) - start with peers
+
 alertmanager \
   --config.file=/etc/alertmanager/alertmanager.yml \
   --web.listen-address=10.0.0.1:9093 \
@@ -42,7 +43,7 @@ alertmanager \
   --cluster.peer=10.0.0.3:9094 \
   --storage.path=/var/lib/alertmanager
 
-# Node 3 (10.0.0.3) — same pattern
+# Node 3 (10.0.0.3) - same pattern
 ```
 
 ## systemd Service Unit (Per Node)
@@ -72,7 +73,7 @@ WantedBy=multi-user.target
 ## Alertmanager Configuration (Identical on All Nodes)
 
 ```yaml
-# /etc/alertmanager/alertmanager.yml — same on all nodes
+# /etc/alertmanager/alertmanager.yml - same on all nodes
 
 global:
   resolve_timeout: 5m
@@ -140,4 +141,4 @@ amtool alert add testAlert severity=warning \
 
 ## Conclusion
 
-Alertmanager clustering uses gossip protocol on port 9094 for state synchronization between peers. Each node runs with `--cluster.peer` pointing to all other nodes. Prometheus should be configured with all Alertmanager node addresses—it sends alerts to all of them, and the cluster deduplicates to prevent multiple notifications. All cluster nodes use the same `alertmanager.yml` configuration.
+Alertmanager clustering uses gossip protocol on port 9094 for state synchronization between peers. Each node runs with `--cluster.peer` pointing to all other nodes. Prometheus should be configured with all Alertmanager node addresses-it sends alerts to all of them, and the cluster deduplicates to prevent multiple notifications. All cluster nodes use the same `alertmanager.yml` configuration.

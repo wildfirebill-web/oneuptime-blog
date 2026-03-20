@@ -30,6 +30,7 @@ When you create a Talos Linux cluster with the default CNI, this is what you get
 
 ```yaml
 # Default Talos cluster config (Flannel is used automatically)
+
 cluster:
   network:
     cni:

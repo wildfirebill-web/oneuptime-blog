@@ -228,6 +228,7 @@ An application's destination namespace is defined in `spec.destination.namespace
 
 ```yaml
 # This application targets the 'platform' namespace
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

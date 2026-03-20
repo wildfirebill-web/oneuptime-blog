@@ -76,6 +76,7 @@ module "internal_module" {
 
 ```hcl
 # Embed credentials in URL (not recommended for sensitive passwords)
+
 module "secure_module" {
   source = "https://user:token@artifacts.mycompany.com/modules/private-module.zip"
 }
@@ -93,7 +94,7 @@ export HTTPS_PROXY="https://proxy.internal:3128"
 ### TLS Certificate Verification
 
 ```hcl
-# In provider config, not module source — for custom CA:
+# In provider config, not module source - for custom CA:
 provider "aws" {
   # ...
 }

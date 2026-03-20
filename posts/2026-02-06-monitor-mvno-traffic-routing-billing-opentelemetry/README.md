@@ -21,6 +21,7 @@ An MVNO typically operates:
 
 ```python
 # mvno_routing.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import time

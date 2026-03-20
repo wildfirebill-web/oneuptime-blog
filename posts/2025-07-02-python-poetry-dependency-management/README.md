@@ -20,6 +20,7 @@ Traditional Python dependency management has several pain points:
 
 ```text
 # Traditional approach - multiple files, manual management
+
 requirements.txt        # Production dependencies
 requirements-dev.txt    # Development dependencies
 setup.py                # Package configuration

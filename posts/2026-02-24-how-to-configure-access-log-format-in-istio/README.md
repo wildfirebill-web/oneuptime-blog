@@ -178,6 +178,7 @@ There is no built-in validator for access log formats. If you make a syntax erro
 
 ```bash
 # Apply config
+
 kubectl apply -f istio-config.yaml
 
 # Wait for propagation (about 30 seconds)

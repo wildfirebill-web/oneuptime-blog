@@ -31,6 +31,7 @@ Folders in GCP are similar to OUs in AWS. They let you group projects and apply 
 
 ```hcl
 # Reference the organization
+
 data "google_organization" "main" {
   domain = "company.com"
 }

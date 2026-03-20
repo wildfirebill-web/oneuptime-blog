@@ -286,6 +286,7 @@ Keep an eye on what's coming through your ingress:
 
 ```bash
 # Check access logs
+
 kubectl logs -l istio=ingressgateway -n istio-system -f
 
 # Query Prometheus for ingress metrics

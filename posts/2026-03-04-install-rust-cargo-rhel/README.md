@@ -14,6 +14,7 @@ Rust is a systems programming language focused on safety, concurrency, and perfo
 
 ```bash
 # Install build essentials
+
 sudo dnf install -y gcc gcc-c++ make curl
 ```
 

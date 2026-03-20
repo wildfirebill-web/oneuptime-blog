@@ -52,6 +52,7 @@ Spanner automatically splits your data across nodes based on primary key ranges.
 
 ```bash
 # Create a regional instance (lower cost, single region)
+
 gcloud spanner instances create my-instance \
     --config=regional-us-central1 \
     --description="Production Database" \

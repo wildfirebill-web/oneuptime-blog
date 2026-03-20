@@ -28,6 +28,7 @@ Before getting started, ensure you have:
 
 ```bash
 # Install on macOS
+
 brew install datawire/blackbird/telepresence-oss
 
 # Install on Linux

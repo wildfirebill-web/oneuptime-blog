@@ -31,6 +31,7 @@ flowchart LR
 ```bash
 #!/bin/bash
 # redis-backup.sh - Backup Redis to S3
+
 # Usage: ./redis-backup.sh
 
 set -e  # Exit on any error

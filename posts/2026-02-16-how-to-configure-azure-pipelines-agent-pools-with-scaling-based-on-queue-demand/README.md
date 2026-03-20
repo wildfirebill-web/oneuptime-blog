@@ -50,6 +50,7 @@ First, create a Virtual Machine Scale Set that will serve as the agent pool back
 
 ```bash
 # Create a resource group for the build agents
+
 az group create \
   --name "rg-build-agents" \
   --location "eastus2"

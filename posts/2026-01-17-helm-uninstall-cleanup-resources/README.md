@@ -14,6 +14,7 @@ The `helm uninstall` command removes a release and its associated Kubernetes res
 
 ```bash
 # Uninstall a release from the current namespace
+
 helm uninstall my-app
 
 # Uninstall from a specific namespace
@@ -48,7 +49,7 @@ flowchart TB
   end
 ```
 
-### Resources Helm Removes
+Resources Helm Removes
 
 By default, Helm deletes all resources created by the chart templates:
 
@@ -58,7 +59,7 @@ By default, Helm deletes all resources created by the chart templates:
 - ServiceAccounts, Roles, RoleBindings
 - Jobs (except those with `helm.sh/resource-policy: keep`)
 
-### Resources Helm Does NOT Remove
+Resources Helm Does NOT Remove
 
 These require manual cleanup:
 

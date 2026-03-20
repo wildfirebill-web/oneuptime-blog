@@ -24,6 +24,7 @@ Rust has several advantages for Wasm plugin development:
 
 ```bash
 # Install Rust if you have not already
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Add the wasm32-wasi target

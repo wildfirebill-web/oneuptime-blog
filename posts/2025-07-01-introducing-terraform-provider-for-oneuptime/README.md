@@ -73,6 +73,7 @@ provider "oneuptime" {
 }
 
 # Set up uptime monitoring
+
 resource "oneuptime_monitor" "api_monitor" {
   name         = "API Health Check"
   description  = "Monitor main API endpoint"

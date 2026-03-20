@@ -31,6 +31,7 @@ Using the built-in ValidatingAdmissionPolicy (Kubernetes 1.30+):
 
 ```yaml
 # validating-admission-policy.yaml
+
 # Requires namespaces to have environment and team labels
 apiVersion: admissionregistration.k8s.io/v1
 kind: ValidatingAdmissionPolicy

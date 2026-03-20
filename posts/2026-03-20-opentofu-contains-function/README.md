@@ -1,4 +1,4 @@
-# How to Use the contains Function in OpenTofu
+# How to Use the contains Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,8 +16,8 @@ The `contains` function in OpenTofu returns `true` if a given list or set contai
 contains(list, value)
 ```
 
-- **list** — a list or set of values
-- **value** — the value to search for
+- **list** - a list or set of values
+- **value** - the value to search for
 - Returns a boolean (`true` or `false`)
 
 ## Basic Examples

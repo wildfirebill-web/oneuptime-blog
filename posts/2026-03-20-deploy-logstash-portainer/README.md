@@ -44,8 +44,9 @@ networks:
 
 Create `logstash-pipeline/main.conf`:
 
-```
+```javascript
 # Receive logs from Filebeat or Beats agents
+
 input {
   beats {
     port => 5044

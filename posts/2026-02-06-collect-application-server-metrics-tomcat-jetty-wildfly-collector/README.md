@@ -36,6 +36,7 @@ Edit the `setenv.sh` (Linux) or `setenv.bat` (Windows) file in Tomcat's `bin` di
 
 ```bash
 # setenv.sh - Enable JMX remote access for Tomcat
+
 # Place this file in CATALINA_HOME/bin/
 
 export CATALINA_OPTS="$CATALINA_OPTS \

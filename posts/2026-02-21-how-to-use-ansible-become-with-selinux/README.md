@@ -23,6 +23,7 @@ Before troubleshooting, verify whether SELinux is actually the problem. This pla
 ```yaml
 ---
 # check-selinux.yml - Verify SELinux mode on target hosts
+
 - name: Check SELinux status
   hosts: all
   become: true

@@ -27,6 +27,7 @@ Before resuming, understand what Flux will apply when it starts reconciling.
 
 ```bash
 # Check if any commits were pushed to the platform repo during maintenance
+
 git log --oneline --since="2026-03-13T08:00:00Z" --until="now"
 
 # If there were commits, review them

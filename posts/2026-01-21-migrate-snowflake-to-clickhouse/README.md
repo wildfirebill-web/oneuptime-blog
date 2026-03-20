@@ -197,6 +197,7 @@ FILE_FORMAT = (TYPE = PARQUET);
 
 ```bash
 # snowsql export
+
 snowsql -c my_connection -q "
     COPY INTO @migration_stage/events/
     FROM analytics.events

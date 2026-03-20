@@ -16,6 +16,7 @@ When you use `register` on a task without a loop, you get a single result object
 
 ```yaml
 # Register results from a loop and inspect the structure
+
 - name: Check if config files exist
   ansible.builtin.stat:
     path: "{{ item }}"

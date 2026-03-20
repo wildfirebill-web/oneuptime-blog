@@ -33,6 +33,7 @@ Define the domains to monitor and alert thresholds.
 
 ```yaml
 # group_vars/all.yml
+
 # Domains and endpoints to check
 ssl_check_domains:
   - domain: api.example.com

@@ -30,6 +30,7 @@ Start with RBAC to control which users can create pods at all:
 
 ```yaml
 # pod-creator-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

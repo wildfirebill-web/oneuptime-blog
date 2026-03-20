@@ -80,6 +80,7 @@ Verify outputs conform to expected structure and types.
 
 ```python
 # Schema validation for API responses
+
 from pydantic import BaseModel, Field, validator
 from typing import List, Optional
 from decimal import Decimal

@@ -38,6 +38,7 @@ When you generate a Talos configuration using `talosctl gen config`, the tooling
 
 ```yaml
 # Example talosconfig structure
+
 context: my-cluster
 contexts:
     my-cluster:

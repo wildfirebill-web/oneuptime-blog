@@ -22,6 +22,7 @@ Kong provides a powerful request-transformer plugin that modifies requests befor
 
 ```bash
 # Add the request-transformer plugin to a service
+
 curl -X POST http://kong-admin:8001/services/user-service/plugins \
   --data "name=request-transformer" \
   --data "config.add.headers=X-Internal-Request:true" \

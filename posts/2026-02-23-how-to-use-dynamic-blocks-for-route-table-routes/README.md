@@ -16,6 +16,7 @@ A typical route table in a production VPC might look like this without dynamic b
 
 ```hcl
 # Without dynamic blocks - every route is a separate block
+
 resource "aws_route_table" "private" {
   vpc_id = aws_vpc.main.id
 

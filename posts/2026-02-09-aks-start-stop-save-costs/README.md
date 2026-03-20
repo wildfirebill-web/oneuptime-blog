@@ -65,6 +65,7 @@ Create an automation account to schedule start/stop:
 
 ```bash
 # Create automation account
+
 az automation account create \
   --name aks-automation \
   --resource-group myResourceGroup \

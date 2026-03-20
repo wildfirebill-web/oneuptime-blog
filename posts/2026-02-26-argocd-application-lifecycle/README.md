@@ -16,6 +16,7 @@ An ArgoCD Application starts when you create the Application custom resource. Yo
 
 ```yaml
 # Creating an Application via YAML
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

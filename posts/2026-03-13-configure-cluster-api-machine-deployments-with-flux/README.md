@@ -39,6 +39,7 @@ graph TD
 
 ```yaml
 # clusters/workloads/production-cluster/machinedeployment-default.yaml
+
 apiVersion: cluster.x-k8s.io/v1beta1
 kind: MachineDeployment
 metadata:

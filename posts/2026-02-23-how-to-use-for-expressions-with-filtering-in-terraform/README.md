@@ -18,6 +18,7 @@ Add an `if` clause at the end of a for expression:
 
 ```hcl
 # List comprehension with filter
+
 # [for item in collection : transform if condition]
 
 variable "numbers" {

@@ -34,6 +34,7 @@ This is not just an OTel problem. It can block ALL pod creation in your cluster 
 
 ```bash
 # Is cert-manager installed?
+
 kubectl get pods -n cert-manager
 
 # Are the cert-manager CRDs installed?

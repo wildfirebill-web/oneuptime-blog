@@ -162,6 +162,7 @@ The `--build` flag (or `-b`) is required when working with project references:
 
 ```bash
 # Build all projects in dependency order
+
 tsc --build
 
 # Build with verbose output to see what is happening

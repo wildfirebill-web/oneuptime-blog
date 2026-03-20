@@ -8,7 +8,7 @@ Description: Learn how to configure IPsec tunnel mode for IPv6 on Linux to creat
 
 ## Overview
 
-IPsec tunnel mode for IPv6 encapsulates the entire original IPv6 packet inside a new IPv6 packet with ESP encryption. This is the mode used for gateway-to-gateway (site-to-site) VPNs. Tunnel mode hides the original source and destination addresses — only the outer gateway addresses are visible on the network.
+IPsec tunnel mode for IPv6 encapsulates the entire original IPv6 packet inside a new IPv6 packet with ESP encryption. This is the mode used for gateway-to-gateway (site-to-site) VPNs. Tunnel mode hides the original source and destination addresses - only the outer gateway addresses are visible on the network.
 
 ## Architecture
 
@@ -20,22 +20,23 @@ sequenceDiagram
     participant Server as Host B\n2001:db8:site2::20
 
     Client->>GW1: [IPv6: src=site1::10, dst=site2::20][TCP]
-    Note over GW1,GW2: IPsec Tunnel — encrypted
+    Note over GW1,GW2: IPsec Tunnel - encrypted
     GW1->>GW2: [IPv6: src=gw1::1, dst=gw2::1][ESP][Encrypted: site1::10→site2::20][TCP]
     GW2->>Server: [IPv6: src=site1::10, dst=site2::20][TCP]
 ```
 
 ## Topology
 
-```
-Site 1: 2001:db8:site1::/48  —  GW1: 2001:db8:gw1::1
-Site 2: 2001:db8:site2::/48  —  GW2: 2001:db8:gw2::1
+```text
+Site 1: 2001:db8:site1::/48  -  GW1: 2001:db8:gw1::1
+Site 2: 2001:db8:site2::/48  -  GW2: 2001:db8:gw2::1
 ```
 
 ## Method 1: Manual ip xfrm
 
 ```bash
 # ============================================================
+
 # On Gateway 1 (GW1): 2001:db8:gw1::1
 # ============================================================
 
@@ -72,7 +73,7 @@ ip xfrm policy add \
 
 ```bash
 # ============================================================
-# On Gateway 2 (GW2): 2001:db8:gw2::1 — mirror configuration
+# On Gateway 2 (GW2): 2001:db8:gw2::1 - mirror configuration
 # ============================================================
 ip xfrm state add \
   src 2001:db8:gw2::1 dst 2001:db8:gw1::1 \
@@ -104,7 +105,7 @@ ip xfrm policy add \
 
 ### /etc/swanctl/conf.d/site-to-site.conf (on GW1)
 
-```
+```text
 connections {
     site-to-site {
         version = 2
@@ -183,4 +184,4 @@ ip -s xfrm state list | grep -A 10 'spi 0x1001'
 
 ## Summary
 
-IPsec tunnel mode for IPv6 on Linux requires matching SA pairs on both gateways (outbound on one = inbound on the other, same SPI and key), three policy directions (out, in, fwd), and IPv6 forwarding enabled. Use `aead "rfc4106(gcm(aes))"` for AES-GCM authenticated encryption. strongSwan with swanctl is the recommended production approach — it handles SA negotiation, dead peer detection (DPD), and rekeying automatically. Verify with `swanctl --list-sas` and `ip -s xfrm state list`.
+IPsec tunnel mode for IPv6 on Linux requires matching SA pairs on both gateways (outbound on one = inbound on the other, same SPI and key), three policy directions (out, in, fwd), and IPv6 forwarding enabled. Use `aead "rfc4106(gcm(aes))"` for AES-GCM authenticated encryption. strongSwan with swanctl is the recommended production approach - it handles SA negotiation, dead peer detection (DPD), and rekeying automatically. Verify with `swanctl --list-sas` and `ip -s xfrm state list`.

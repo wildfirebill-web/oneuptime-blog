@@ -28,6 +28,7 @@ Drift detection is enabled by default in the Tofu Controller. The `interval` fie
 
 ```yaml
 # infrastructure/terraform/production/iam-policies.yaml
+
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:

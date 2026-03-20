@@ -20,6 +20,7 @@ First, enable the required API:
 
 ```bash
 # Enable the Recommender API which powers Firewall Insights
+
 gcloud services enable recommender.googleapis.com --project=my-project
 ```
 

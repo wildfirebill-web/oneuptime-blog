@@ -83,7 +83,7 @@ int main(void) {
                              (struct sockaddr *)&sender, &len);
         if (n > 0) {
             buf[n] = '\0';
-            printf("From %s:%d — %s\n",
+            printf("From %s:%d - %s\n",
                    inet_ntoa(sender.sin_addr),
                    ntohs(sender.sin_port), buf);
         }
@@ -100,6 +100,7 @@ gcc -o sender sender.c
 gcc -o receiver receiver.c
 
 # Terminal 1
+
 ./receiver
 
 # Terminal 2

@@ -24,6 +24,7 @@ IOMMU protection via vfio-pci is the foundational security control for DPDK depl
 
 ```bash
 # Check IOMMU is enabled in kernel
+
 dmesg | grep -i iommu
 # Expected: "IOMMU: enabling"
 

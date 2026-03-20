@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Enable the Cloud KMS API
+
 gcloud services enable cloudkms.googleapis.com --project=my-project-id
 ```
 

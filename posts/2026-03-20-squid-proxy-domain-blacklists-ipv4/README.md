@@ -14,6 +14,7 @@ Squid is a widely-used open-source caching proxy that can enforce web access pol
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install squid
 
 # CentOS/RHEL
@@ -24,7 +25,7 @@ sudo yum install squid
 
 Squid uses Access Control Lists (ACLs) to match traffic and `http_access` rules to allow or deny it:
 
-```
+```text
 acl LIST_NAME type value
 http_access deny LIST_NAME
 ```
@@ -92,7 +93,7 @@ http_access deny blocked_paths
 Instead of returning an error, redirect to a custom block page:
 
 ```squid
-# In squid.conf — set a custom error directory
+# In squid.conf - set a custom error directory
 error_directory /usr/share/squid/errors/English
 
 # Create a custom denial page at /usr/share/squid/errors/English/ERR_ACCESS_DENIED

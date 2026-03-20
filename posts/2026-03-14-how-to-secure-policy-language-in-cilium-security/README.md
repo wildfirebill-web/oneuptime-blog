@@ -24,6 +24,7 @@ Mastering the policy language lets you express complex security requirements tha
 
 ```yaml
 # Allow traffic from specific entities
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

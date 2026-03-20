@@ -41,6 +41,7 @@ The API is more efficient for creating projects programmatically. Here is how to
 
 ```bash
 # Create a project pointing to a Git repository
+
 curl -X POST "https://awx.example.com/api/v2/projects/" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AWX_TOKEN" \

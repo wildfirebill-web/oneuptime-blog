@@ -25,6 +25,7 @@ Enable the required APIs:
 
 ```bash
 # Enable Cloud Build and related APIs
+
 gcloud services enable cloudbuild.googleapis.com \
   secretmanager.googleapis.com \
   iam.googleapis.com \

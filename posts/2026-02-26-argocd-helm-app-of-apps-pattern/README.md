@@ -47,6 +47,7 @@ The `Chart.yaml` is minimal:
 
 ```yaml
 # Chart.yaml - parent chart metadata
+
 apiVersion: v2
 name: argocd-apps
 description: Parent chart that generates ArgoCD child applications

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Null Provider, Provisioner, Trigger, Infrastructure as Code
+Tags: Terraform, Null Provider, Provisioners, Trigger, Infrastructure as Code
 
 Description: Learn how to use the Terraform null_resource and terraform_data for triggering provisioners, running scripts conditionally, and managing dependencies between resources.
 
@@ -20,6 +20,7 @@ The null_resource with its triggers argument lets you run provisioners whenever 
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

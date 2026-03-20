@@ -18,6 +18,7 @@ Network Watcher needs to be enabled for the region where your VMs run. It is usu
 
 ```bash
 # Check if Network Watcher is enabled in your region
+
 az network watcher list --output table
 
 # Enable it if not already enabled

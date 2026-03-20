@@ -21,6 +21,7 @@ As your Rancher deployment manages more clusters, you may need to scale the mana
 
 ```bash
 # Prepare the new node
+
 # On new-cp-node:
 mkdir -p /etc/rancher/rke2
 

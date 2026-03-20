@@ -1,4 +1,4 @@
-# How to Deploy a MySQL Cluster with Portainer
+# How to Deploy a MySQL Cluster with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ MySQL InnoDB Cluster provides high availability through automatic failover. It c
 
 ```yaml
 # docker-compose.yml - MySQL InnoDB Cluster
+
 version: "3.8"
 
 networks:

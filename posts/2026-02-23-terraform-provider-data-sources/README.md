@@ -392,6 +392,7 @@ Users interact with your data sources like this.
 
 ```hcl
 # Look up a single server by name
+
 data "yourservice_server" "main" {
   name = "production-web-01"
 }

@@ -14,7 +14,7 @@ Docker volumes are how containers persist state. Mismanaged volumes lead to data
 
 Use structured names that identify the owner and purpose:
 
-```
+```text
 <stack>-<service>-<type>
 
 Examples:
@@ -24,17 +24,18 @@ Examples:
 - api-redis-cache
 ```
 
-Avoid Docker's auto-generated random names — they're impossible to audit.
+Avoid Docker's auto-generated random names - they're impossible to audit.
 
 ## Named Volumes Over Anonymous Volumes
 
 ```yaml
-# Bad: Anonymous volume — Docker assigns a random UUID name
+# Bad: Anonymous volume - Docker assigns a random UUID name
+
 services:
   db:
     image: postgres:16
     volumes:
-      - /var/lib/postgresql/data  # Anonymous — hard to identify and backup
+      - /var/lib/postgresql/data  # Anonymous - hard to identify and backup
 
 # Good: Named volume with a meaningful name
 services:
@@ -44,7 +45,7 @@ services:
       - wordpress-db-data:/var/lib/postgresql/data
 
 volumes:
-  wordpress-db-data:  # Named — visible in Portainer, easy to backup
+  wordpress-db-data:  # Named - visible in Portainer, easy to backup
 ```
 
 ## Backup Strategy per Volume Type
@@ -110,7 +111,7 @@ Regularly prune orphaned volumes:
 
 ```bash
 #!/bin/bash
-# volume-cleanup.sh — schedule this as a Portainer job
+# volume-cleanup.sh - schedule this as a Portainer job
 
 # List volumes before cleanup
 echo "Volumes before cleanup:"

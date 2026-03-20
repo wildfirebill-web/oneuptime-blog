@@ -29,6 +29,7 @@ Log forwarding is configured in the machine configuration. Talos Linux supports 
 
 ```yaml
 # Machine configuration for log forwarding
+
 machine:
   logging:
     destinations:

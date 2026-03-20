@@ -30,6 +30,7 @@ Create a portable installation script that handles version management.
 ```bash
 #!/bin/bash
 # install-calicoctl.sh
+
 # Automated calicoctl installation script
 # Usage: ./install-calicoctl.sh [version]
 

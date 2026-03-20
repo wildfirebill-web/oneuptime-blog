@@ -20,6 +20,7 @@ The most common approach is filtering by the container name you assigned when cr
 
 ```bash
 # Start a named container
+
 podman run -d --name myapp alpine sleep 300
 
 # Filter events for this specific container

@@ -33,6 +33,7 @@ The `ps` command displays information about active processes. Here are the most 
 
 ```bash
 # Show processes for the current user in the current terminal
+
 ps
 
 # Example output:

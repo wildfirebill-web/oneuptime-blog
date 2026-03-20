@@ -20,6 +20,7 @@ Here is a simple example:
 
 ```yaml
 # cloudbuild.yaml - Using the default /workspace directory
+
 steps:
   # Step 1: Build the application and output to /workspace/dist
   - name: 'node:18'

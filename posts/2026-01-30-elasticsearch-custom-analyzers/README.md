@@ -43,6 +43,7 @@ Let us start with a simple custom analyzer. This example creates an analyzer for
 
 ```bash
 # Create an index with a custom product analyzer
+
 curl -X PUT "localhost:9200/products" -H 'Content-Type: application/json' -d'
 {
   "settings": {

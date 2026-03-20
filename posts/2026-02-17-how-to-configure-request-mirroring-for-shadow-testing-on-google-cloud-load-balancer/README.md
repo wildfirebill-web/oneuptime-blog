@@ -43,6 +43,7 @@ You need two separate backend services - one for production and one for the mirr
 
 ```bash
 # Create a health check
+
 gcloud compute health-checks create http app-hc \
     --port=8080 \
     --request-path=/healthz

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: TCP, RST, Reset, Connection, Debugging, Linux, Networking
 
-Description: Diagnose and fix TCP "connection reset by peer" errors by identifying whether the RST originates from the application, a proxy, a firewall, or the kernel.
+Description: Diagnose and fix TCP 'connection reset by peer' errors by identifying whether the RST originates from the application, a proxy, a firewall, or the kernel.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Description: Diagnose and fix TCP "connection reset by peer" errors by identifyi
 
 ```bash
 # Capture on the interface to see who sends the RST
+
 tcpdump -i eth0 -n 'tcp[tcpflags] & tcp-rst != 0' -w /tmp/rst.pcap
 
 # Analyze: who is the source IP of the RST?
@@ -125,4 +126,4 @@ nstat | grep -i "outofwindow\|outside"
 
 ## Conclusion
 
-TCP connection resets always have a sender. Use tcpdump to identify the RST source IP — that tells you which component is sending it. Application crashes cause RSTs from the remote host. Proxy/firewall timeouts cause RSTs after an idle period from the proxy/firewall IP. Kernel RSTs come from the peer host itself due to invalid sequence numbers or linger settings. Fix at the source: configure keepalives for timeout-related resets, fix application shutdown for crash-related resets, and tune firewall tables for conntrack exhaustion.
+TCP connection resets always have a sender. Use tcpdump to identify the RST source IP - that tells you which component is sending it. Application crashes cause RSTs from the remote host. Proxy/firewall timeouts cause RSTs after an idle period from the proxy/firewall IP. Kernel RSTs come from the peer host itself due to invalid sequence numbers or linger settings. Fix at the source: configure keepalives for timeout-related resets, fix application shutdown for crash-related resets, and tune firewall tables for conntrack exhaustion.

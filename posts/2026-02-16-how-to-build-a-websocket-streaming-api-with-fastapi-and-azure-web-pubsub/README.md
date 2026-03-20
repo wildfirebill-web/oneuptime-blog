@@ -36,6 +36,7 @@ The FastAPI server processes data from various sources and publishes it to Azure
 
 ```bash
 # Create the Web PubSub service
+
 az webpubsub create \
   --name streaming-pubsub \
   --resource-group streaming-rg \

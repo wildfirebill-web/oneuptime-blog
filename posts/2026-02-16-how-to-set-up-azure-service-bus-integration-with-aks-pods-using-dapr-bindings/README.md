@@ -28,6 +28,7 @@ If you do not have DAPR installed yet, install it with Helm.
 
 ```bash
 # Install DAPR on AKS
+
 helm repo add dapr https://dapr.github.io/helm-charts/
 helm repo update
 helm install dapr dapr/dapr --namespace dapr-system --create-namespace --wait

@@ -14,6 +14,7 @@ An Azure Landing Zone provides a governed multi-subscription environment with Ma
 
 ```hcl
 # main.tf - Azure Management Group structure
+
 resource "azurerm_management_group" "platform" {
   display_name               = "Platform"
   parent_management_group_id = data.azurerm_management_group.root.id

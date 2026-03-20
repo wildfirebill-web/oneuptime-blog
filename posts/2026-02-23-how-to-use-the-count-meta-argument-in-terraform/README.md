@@ -112,6 +112,7 @@ variable "enable_bastion" {
 }
 
 # Only create the CloudWatch dashboard if monitoring is enabled
+
 resource "aws_cloudwatch_dashboard" "main" {
   count = var.enable_monitoring ? 1 : 0
 

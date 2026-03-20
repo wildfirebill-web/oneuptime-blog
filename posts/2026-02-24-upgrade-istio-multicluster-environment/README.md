@@ -76,6 +76,7 @@ Before starting, make sure the multicluster mesh is healthy:
 
 ```bash
 # On each cluster, check service discovery
+
 istioctl remote-clusters --context=cluster-a
 istioctl remote-clusters --context=cluster-b
 ```

@@ -1,8 +1,8 @@
-# How to Use the strrev Function in OpenTofu
+# How to Use the strrev Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, strrev, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Strrev, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the strrev function in OpenTofu to reverse a string, and explore practical uses in infrastructure configurations.
 
@@ -97,6 +97,7 @@ Note: For domain part reversal, `reverse()` (the list function) is more appropri
 
 ```hcl
 # If you want to reverse a LIST, use reverse() not strrev()
+
 locals {
   my_list     = ["a", "b", "c"]
   reversed    = reverse(local.my_list)   # ["c", "b", "a"]
@@ -111,4 +112,4 @@ locals {
 
 ## Summary
 
-`strrev()` reverses the characters in a string, handling Unicode correctly. In infrastructure code, it has limited practical use — the most common scenarios involve symmetry checks and generating derived identifiers. For reversing ordered lists, use the `reverse()` function instead.
+`strrev()` reverses the characters in a string, handling Unicode correctly. In infrastructure code, it has limited practical use - the most common scenarios involve symmetry checks and generating derived identifiers. For reversing ordered lists, use the `reverse()` function instead.

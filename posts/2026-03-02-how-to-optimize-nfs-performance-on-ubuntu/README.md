@@ -29,6 +29,7 @@ Before tuning anything, measure current performance:
 
 ```bash
 # Install benchmarking tools
+
 sudo apt install -y fio nfs-common nfs-kernel-server
 
 # Basic sequential read test from NFS mount

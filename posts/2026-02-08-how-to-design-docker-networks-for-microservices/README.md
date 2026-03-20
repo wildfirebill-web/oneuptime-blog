@@ -18,6 +18,7 @@ The simplest approach puts all containers on a single network. Every container c
 
 ```yaml
 # DON'T do this in production
+
 services:
   frontend:
     networks: [everything]

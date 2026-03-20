@@ -243,6 +243,7 @@ docker start rancher
 
 ```bash
 # Check system resources
+
 free -h
 df -h
 

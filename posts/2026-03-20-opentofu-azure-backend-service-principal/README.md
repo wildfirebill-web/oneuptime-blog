@@ -1,19 +1,20 @@
-# How to Configure Azure Backend with Service Principal Authentication in OpenTofu
+# How to Configure Azure Backend with Service Principal Authentication in Op (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, Azure
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, Azure
 
 Description: Learn how to configure Service Principal authentication for the OpenTofu Azure Blob Storage backend for CI/CD and non-interactive deployments.
 
 ## Introduction
 
-Service Principal authentication is the standard approach for CI/CD pipelines accessing the Azure Blob Storage backend. A Service Principal is an application identity in Azure Active Directory with specific permissions — it enables non-interactive, automated access to Azure resources.
+Service Principal authentication is the standard approach for CI/CD pipelines accessing the Azure Blob Storage backend. A Service Principal is an application identity in Azure Active Directory with specific permissions - it enables non-interactive, automated access to Azure resources.
 
 ## Creating a Service Principal
 
 ```bash
 # Create a service principal and get credentials
+
 az ad sp create-for-rbac \
   --name "opentofu-state-sp" \
   --role "Storage Blob Data Contributor" \
@@ -127,7 +128,7 @@ az ad sp credential delete \
 Keep sensitive values out of source code:
 
 ```hcl
-# backend.tf — committed to source control
+# backend.tf - committed to source control
 terraform {
   backend "azurerm" {
     resource_group_name  = "terraform-state-rg"

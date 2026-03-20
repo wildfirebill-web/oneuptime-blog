@@ -32,6 +32,7 @@ If you are already using a load balancer with your scale set, configure a health
 
 ```bash
 # Create a health probe on the load balancer
+
 az network lb probe create \
   --resource-group myResourceGroup \
   --lb-name myLoadBalancer \

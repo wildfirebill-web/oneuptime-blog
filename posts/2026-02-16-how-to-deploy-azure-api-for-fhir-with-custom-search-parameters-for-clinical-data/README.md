@@ -45,6 +45,7 @@ Without custom search parameters, you would have to fetch all resources and filt
 
 ```bash
 # Create the FHIR service using Azure CLI
+
 # This deploys a fully managed FHIR R4 server
 az healthcareapis service create \
     --resource-group healthcare-rg \

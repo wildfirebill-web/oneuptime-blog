@@ -29,6 +29,7 @@ Before upgrading, check the current version and its compatibility with your clus
 
 ```bash
 # Check current cilium CLI version
+
 cilium version
 
 # Compare with the Cilium version in the cluster

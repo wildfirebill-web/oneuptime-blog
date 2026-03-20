@@ -16,6 +16,7 @@ This guide covers creating PVCs with Terraform, binding them to specific PVs, us
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

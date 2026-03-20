@@ -89,6 +89,7 @@ Apache Kafka is the most widely used platform for event streaming. Start by sett
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   zookeeper:

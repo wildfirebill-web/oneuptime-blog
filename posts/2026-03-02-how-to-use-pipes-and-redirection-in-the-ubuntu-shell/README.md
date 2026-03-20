@@ -28,6 +28,7 @@ By default, stdin reads from the keyboard, and stdout/stderr write to the termin
 
 ```bash
 # Overwrite: create or replace the file
+
 ls -la > file-list.txt
 
 # Append: add to the file without removing existing content

@@ -18,6 +18,7 @@ The `talosctl read` command lets you read the contents of a file on a Talos node
 
 ```bash
 # Read a file from a Talos node
+
 talosctl read --nodes 192.168.1.10 /etc/os-release
 ```
 

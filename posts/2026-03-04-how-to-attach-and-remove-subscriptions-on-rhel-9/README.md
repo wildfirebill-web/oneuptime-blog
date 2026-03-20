@@ -38,6 +38,7 @@ sudo subscription-manager attach --auto
 
 ```bash
 # List serial numbers
+
 sudo subscription-manager list --consumed
 
 # Remove by serial

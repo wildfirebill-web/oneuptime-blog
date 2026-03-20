@@ -486,6 +486,7 @@ Use the panel's time shift feature for sources with timezone issues. For Prometh
 
 ```promql
 # Shift Prometheus data by 1 hour if needed
+
 rate(http_requests_total[5m]) offset 1h
 ```
 

@@ -16,6 +16,7 @@ Take inventory of your existing plugins. They might live in any of these locatio
 
 ```text
 # Project-level plugins
+
 my_project/
   filter_plugins/
     my_filters.py

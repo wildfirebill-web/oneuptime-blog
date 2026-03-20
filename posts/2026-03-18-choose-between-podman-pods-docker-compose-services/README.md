@@ -22,6 +22,7 @@ Docker Compose creates a bridge network and connects all services to it. Each se
 
 ```yaml
 # docker-compose.yml
+
 services:
   web:
     image: nginx
@@ -176,7 +177,7 @@ spec:
 
 Docker Compose files require conversion tools like Kompose to generate Kubernetes manifests.
 
-## Resource Sharing
+Resource Sharing
 
 Pods share more than just the network:
 

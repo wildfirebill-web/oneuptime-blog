@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Socket, Docker Compose, API
+Tags: Podman, Containers, DevOps, Sockets, Docker Compose, API
 
 Description: Learn how to configure and manage the Podman socket for use with Docker Compose and other Docker-compatible tools.
 
@@ -18,6 +18,7 @@ Podman provides a systemd-managed socket that implements the Docker Engine API. 
 
 ```bash
 # Enable the socket for the current user
+
 systemctl --user enable podman.socket
 systemctl --user start podman.socket
 

@@ -32,6 +32,7 @@ Flatten an image using export/import:
 
 ```bash
 # Step 1: Create a container from the image (it does not need to run)
+
 docker create --name temp-container myapp:latest
 
 # Step 2: Export the container's filesystem to a tar file

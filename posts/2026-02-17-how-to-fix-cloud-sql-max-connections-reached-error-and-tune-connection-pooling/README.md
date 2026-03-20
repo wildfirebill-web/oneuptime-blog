@@ -135,6 +135,7 @@ If you cannot run a separate pooler, configure pooling in your application. Here
 from sqlalchemy import create_engine
 
 # Configure the connection pool
+
 engine = create_engine(
     "postgresql://user:password@cloud-sql-proxy:5432/mydb",
     # Keep a small pool of connections

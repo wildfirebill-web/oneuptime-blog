@@ -16,6 +16,7 @@ NVMe over Fabrics (NVMe-oF) extends the NVMe protocol over a network, allowing r
 
 ```bash
 # Install the nvme-cli and target tools
+
 sudo dnf install -y nvmetcli nvme-cli
 
 # Load the required kernel modules

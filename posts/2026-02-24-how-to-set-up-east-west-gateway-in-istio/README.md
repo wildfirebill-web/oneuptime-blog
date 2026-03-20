@@ -31,6 +31,7 @@ Istio provides a script that generates the IstioOperator configuration for the e
 
 ```bash
 # For cluster1 on network1
+
 samples/multicluster/gen-eastwest-gateway.sh \
   --network network1 | \
   istioctl install --context="${CTX_CLUSTER1}" -y -f -

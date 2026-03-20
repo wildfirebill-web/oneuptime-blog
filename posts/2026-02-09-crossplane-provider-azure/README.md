@@ -18,6 +18,7 @@ Install the provider package:
 
 ```bash
 # Install Azure provider
+
 kubectl crossplane install provider \
   xpkg.upbound.io/crossplane-contrib/provider-azure:v0.35.0
 

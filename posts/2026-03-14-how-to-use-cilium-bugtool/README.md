@@ -29,6 +29,7 @@ Execute cilium-bugtool inside a Cilium pod:
 
 ```bash
 # Identify a Cilium agent pod
+
 CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 

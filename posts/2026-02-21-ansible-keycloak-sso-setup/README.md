@@ -14,6 +14,7 @@ Keycloak is an open-source identity and access management solution that provides
 
 ```yaml
 # roles/keycloak/tasks/main.yml
+
 ---
 - name: Deploy Keycloak via Docker
   community.docker.docker_container:

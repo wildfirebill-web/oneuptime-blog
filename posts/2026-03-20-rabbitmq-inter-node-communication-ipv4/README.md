@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, IPv4, Inter-Node, Erlang Distribution, Clustering, Network
+Tags: RabbitMQ, IPv4, Inter-Node, Erlang Distribution, Clustering, Networks
 
 Description: Configure RabbitMQ inter-node communication ports on IPv4, including Erlang distribution (25672) and EPMD (4369), for reliable cluster operation.
 
@@ -25,6 +25,7 @@ RabbitMQ cluster nodes communicate via the Erlang Distribution Protocol. Two por
 # /etc/rabbitmq/rabbitmq.conf
 
 # Restrict inter-node communication to specific IP
+
 distribution.listener.interface = 10.0.0.1    # Node-specific IP
 
 # Or configure via kernel inet_dist_listen_min/max in advanced.config
@@ -102,4 +103,4 @@ sudo grep -i "connect\|distribution\|net_kernel" /var/log/rabbitmq/rabbit@*.log
 
 ## Conclusion
 
-RabbitMQ inter-node communication uses EPMD (4369) and Erlang distribution (25672). Both must be open between all cluster nodes. Use `distribution.listener.interface` in `rabbitmq.conf` to bind the distribution listener to a specific IPv4. Block these ports from non-cluster networks—only AMQP clients need port 5672. Fix the distribution port range in `advanced.config` to make iptables rules predictable.
+RabbitMQ inter-node communication uses EPMD (4369) and Erlang distribution (25672). Both must be open between all cluster nodes. Use `distribution.listener.interface` in `rabbitmq.conf` to bind the distribution listener to a specific IPv4. Block these ports from non-cluster networks-only AMQP clients need port 5672. Fix the distribution port range in `advanced.config` to make iptables rules predictable.

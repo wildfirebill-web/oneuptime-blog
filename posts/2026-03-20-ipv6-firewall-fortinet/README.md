@@ -8,12 +8,13 @@ Description: Learn how to configure IPv6 firewall policies on Fortinet FortiGate
 
 ## Overview
 
-Fortinet FortiGate supports IPv6 in its next-generation firewall policies. IPv6 is configured using the same policy framework as IPv4 — you create IPv6 address objects and firewall policies with IPv6 address family. FortiGate performs stateful inspection and deep packet inspection for IPv6 traffic.
+Fortinet FortiGate supports IPv6 in its next-generation firewall policies. IPv6 is configured using the same policy framework as IPv4 - you create IPv6 address objects and firewall policies with IPv6 address family. FortiGate performs stateful inspection and deep packet inspection for IPv6 traffic.
 
 ## Enable IPv6 on Interfaces
 
 ```bash
 # FortiOS CLI: Enable IPv6 on interfaces
+
 config system interface
     edit "wan1"
         set ip6 2001:db8:wan::1/64
@@ -60,7 +61,7 @@ end
 
 Navigate to **Policy & Objects → Firewall Policy → Create New → IPv6 Policy**:
 
-```
+```text
 Name:             Allow-Outbound-V6
 From:             LAN
 To:               WAN
@@ -123,7 +124,7 @@ config firewall service custom
     edit "ICMPV6-PTB"
         set protocol ICMP6
         set icmptype 2
-        set comment "Packet Too Big — required for PMTUD"
+        set comment "Packet Too Big - required for PMTUD"
         next
     edit "ICMPV6-ECHO"
         set protocol ICMP6
@@ -142,7 +143,7 @@ config firewall policy6
         set dstaddr "ALL_IPv6"
         set action accept
         set service "ICMPV6-PTB"
-        set comments "Packet Too Big — NEVER block"
+        set comments "Packet Too Big - NEVER block"
         next
 end
 ```
@@ -208,4 +209,4 @@ execute ping6 2001:db8:server::1
 
 ## Summary
 
-FortiGate IPv6 policies use the same zone-based framework as IPv4 but configured under `firewall policy6`. Create IPv6 address objects (`firewall address6`) and use them in policies with `srcaddr`/`dstaddr`. Always create an explicit policy allowing ICMPv6 Packet Too Big (type 2) on all paths — FortiGate may block it in a default-deny policy. Enable logging (`logtraffic all`) for security monitoring. Use `diagnose sys session6 list` to see active IPv6 sessions and `diagnose debug flow filter6` to trace specific IPv6 packet flows through the policy engine.
+FortiGate IPv6 policies use the same zone-based framework as IPv4 but configured under `firewall policy6`. Create IPv6 address objects (`firewall address6`) and use them in policies with `srcaddr`/`dstaddr`. Always create an explicit policy allowing ICMPv6 Packet Too Big (type 2) on all paths - FortiGate may block it in a default-deny policy. Enable logging (`logtraffic all`) for security monitoring. Use `diagnose sys session6 list` to see active IPv6 sessions and `diagnose debug flow filter6` to trace specific IPv6 packet flows through the policy engine.

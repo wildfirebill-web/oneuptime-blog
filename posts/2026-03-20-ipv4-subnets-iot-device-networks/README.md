@@ -8,11 +8,11 @@ Description: Design isolated IPv4 subnets for IoT device categories, apply firew
 
 ## Introduction
 
-IoT devices — sensors, cameras, thermostats, industrial controllers — are frequent attack targets. Isolating them in dedicated IPv4 subnets with restrictive firewall rules limits blast radius when a device is compromised.
+IoT devices - sensors, cameras, thermostats, industrial controllers - are frequent attack targets. Isolating them in dedicated IPv4 subnets with restrictive firewall rules limits blast radius when a device is compromised.
 
 ## IoT Network Segmentation Model
 
-```
+```text
 Corporate LAN:   10.1.0.0/16
 IoT Zone:        10.2.0.0/16   (isolated, separate VLAN)
 
@@ -28,7 +28,7 @@ IoT Subnets:
 
 ## Firewall Rules for IoT Zones
 
-```
+```text
 ALLOW  IoT → Internet (specific destinations only)
 ALLOW  IoT → IoT-gateway (10.2.100.x)
 DENY   IoT → Corporate LAN
@@ -61,12 +61,12 @@ for cat, (cidr, devices) in IOT_CATEGORIES.items():
 
 ## DHCP Configuration for IoT (ISC DHCP)
 
-```
+```text
 subnet 10.2.1.0 netmask 255.255.255.0 {
   range 10.2.1.10 10.2.1.200;
   option routers 10.2.1.1;
   option domain-name-servers 10.2.100.10;   # local resolver only
-  default-lease-time 1800;    # 30 min — short for churn
+  default-lease-time 1800;    # 30 min - short for churn
   max-lease-time    3600;
   deny unknown-clients;       # MAC whitelist required
 }
@@ -96,7 +96,7 @@ ip access-list extended IoT-SENSORS-ACL
 
 ## 802.1X Device Onboarding
 
-```
+```text
 For IoT devices that support 802.1X:
   - Assign to IoT VLAN upon successful EAP authentication
   - Fall back to a quarantine VLAN for unknown MACs

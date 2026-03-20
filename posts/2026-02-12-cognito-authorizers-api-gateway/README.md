@@ -40,6 +40,7 @@ Create the authorizer using CloudFormation or SAM:
 
 ```yaml
 # template.yaml (SAM)
+
 Resources:
   MyApi:
     Type: AWS::Serverless::Api

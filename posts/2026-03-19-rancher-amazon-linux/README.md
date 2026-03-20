@@ -139,6 +139,7 @@ For EC2 instances, consider using an EBS volume for Rancher data to ensure durab
 
 ```bash
 # If using the root volume
+
 sudo mkdir -p /opt/rancher
 
 # If using a separate EBS volume (recommended for production)

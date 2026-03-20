@@ -20,6 +20,7 @@ When you enable a service, systemd creates a symbolic link in the appropriate ta
 
 ```bash
 # Enable httpd to start at boot
+
 sudo systemctl enable httpd
 ```
 

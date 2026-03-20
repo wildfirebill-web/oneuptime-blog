@@ -32,6 +32,7 @@ MinIO is the most popular self-hosted S3-compatible storage solution. It runs as
 
 ```bash
 # Add the MinIO Helm repository
+
 helm repo add minio https://charts.min.io/
 helm repo update
 ```

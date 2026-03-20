@@ -135,6 +135,7 @@ fastify.listen({ port: 4000, host: '::' }, (err, address) => {
 
 ```python
 # server.py
+
 import strawberry
 from strawberry.fastapi import GraphQLRouter
 from fastapi import FastAPI, Request
@@ -158,7 +159,7 @@ app = FastAPI()
 app.include_router(graphql_app, prefix="/graphql")
 
 if __name__ == "__main__":
-    # Uvicorn — listen on all IPv6 interfaces
+    # Uvicorn - listen on all IPv6 interfaces
     uvicorn.run(app, host="::", port=4000)
     # Or from CLI: uvicorn server:app --host :: --port 4000
 ```

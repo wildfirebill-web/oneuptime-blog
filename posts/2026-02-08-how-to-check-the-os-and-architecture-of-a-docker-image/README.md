@@ -24,6 +24,7 @@ For images already pulled to your local machine, `docker inspect` gives you the 
 
 ```bash
 # Check the OS and architecture of a local image
+
 docker inspect --format '{{.Os}}/{{.Architecture}}' nginx:latest
 ```
 

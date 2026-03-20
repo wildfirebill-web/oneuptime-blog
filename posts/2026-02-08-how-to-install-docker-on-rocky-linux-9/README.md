@@ -23,6 +23,7 @@ Rocky Linux 9 includes Podman, Buildah, and related container tools by default. 
 
 ```bash
 # Remove Podman, Buildah, and any old Docker packages
+
 sudo dnf remove -y podman buildah docker docker-client docker-client-latest \
   docker-common docker-latest docker-latest-logrotate \
   docker-logrotate docker-engine

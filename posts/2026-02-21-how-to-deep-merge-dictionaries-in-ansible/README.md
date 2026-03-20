@@ -16,6 +16,7 @@ Without deep merging, nested dictionaries are replaced entirely:
 
 ```yaml
 # playbook-shallow-problem.yml
+
 # Demonstrates the data loss problem with shallow (default) merging
 - name: Demonstrate shallow merge problem
   hosts: localhost

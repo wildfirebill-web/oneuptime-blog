@@ -23,6 +23,7 @@ Every service failure investigation should follow these steps:
 
 ```bash
 # Step 1: Identify failing services
+
 talosctl services -n <node-ip>
 # Look for any service not showing Running/OK
 

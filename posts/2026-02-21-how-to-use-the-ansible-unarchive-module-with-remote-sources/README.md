@@ -16,6 +16,7 @@ When you pass an HTTP or HTTPS URL as the `src` parameter, the `unarchive` modul
 
 ```yaml
 # Download and extract Go 1.22 directly from the official website
+
 - name: Download and install Go
   ansible.builtin.unarchive:
     src: https://go.dev/dl/go1.22.0.linux-amd64.tar.gz

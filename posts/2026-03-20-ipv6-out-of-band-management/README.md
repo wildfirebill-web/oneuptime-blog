@@ -12,7 +12,7 @@ Out-of-band (OOB) management provides network access independent of the producti
 
 ## OOB Network Design with IPv6
 
-```
+```text
 Out-of-Band Management Architecture:
 
 Internet/Corporate WAN
@@ -39,6 +39,7 @@ OOB Addressing:
 # Opengear console server (Linux-based) IPv6
 
 # /etc/network/interfaces on console server
+
 auto eth0
 iface eth0 inet static
     address 192.168.200.100

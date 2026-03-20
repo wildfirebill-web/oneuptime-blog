@@ -22,6 +22,7 @@ Install CRI-O on Ubuntu 22.04 or later:
 
 ```bash
 # Set up environment variables for your Kubernetes version
+
 export OS=xUbuntu_22.04
 export VERSION=1.28
 

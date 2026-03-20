@@ -47,6 +47,7 @@ First, create the secret for your database.
 
 ```bash
 # Create a secret for an RDS database
+
 aws secretsmanager create-secret \
   --name "production/database/master" \
   --description "Production RDS master credentials" \

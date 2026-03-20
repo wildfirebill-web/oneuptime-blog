@@ -1,4 +1,4 @@
-# How to Set Up a Ruby on Rails Development Environment with Portainer
+# How to Set Up a Ruby on Rails Development Environment with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Build a complete Ruby on Rails development environment with live-re
 
 ## Introduction
 
-Rails development benefits enormously from containerization — you get the exact Ruby version, all gem dependencies, and supporting services in a reproducible environment. This guide covers deploying a full Rails development stack with PostgreSQL, Redis, Sidekiq, and Action Cable support using Portainer.
+Rails development benefits enormously from containerization - you get the exact Ruby version, all gem dependencies, and supporting services in a reproducible environment. This guide covers deploying a full Rails development stack with PostgreSQL, Redis, Sidekiq, and Action Cable support using Portainer.
 
 ## Step 1: Create the Rails Development Dockerfile
 
 ```dockerfile
 # Dockerfile.dev - Ruby on Rails development
+
 FROM ruby:3.3-alpine
 
 # Install system dependencies

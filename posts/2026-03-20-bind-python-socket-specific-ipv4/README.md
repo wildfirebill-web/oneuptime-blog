@@ -16,6 +16,7 @@ Servers with multiple network interfaces (e.g., public and private NICs) should 
 import socket
 
 # Only accept connections on this specific interface/IP
+
 BIND_IP = "192.168.1.50"   # Replace with your server's IP on the desired interface
 PORT = 9000
 

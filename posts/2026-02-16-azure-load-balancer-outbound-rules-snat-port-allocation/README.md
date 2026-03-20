@@ -47,6 +47,7 @@ Outbound rules give you explicit control over how SNAT ports are allocated. They
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-lb-outbound \
   --location eastus

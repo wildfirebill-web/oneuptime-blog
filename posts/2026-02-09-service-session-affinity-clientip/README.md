@@ -65,6 +65,7 @@ Check the iptables rules:
 
 ```bash
 # On a node
+
 sudo iptables-save | grep stateful-app
 ```
 

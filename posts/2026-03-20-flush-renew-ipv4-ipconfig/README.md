@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ipconfig, DHCP, Windows, IP Address, Release Renew
+Tags: Ipconfig, DHCP, Windows, IP Address, Release Renew
 
 Description: Learn how to use ipconfig /release and /renew to flush the current IPv4 address and request a new one from the DHCP server, fixing IP assignment and connectivity issues on Windows.
 
@@ -29,7 +29,7 @@ REM Ethernet adapter Ethernet:
 REM    Connection-specific DNS Suffix  . :
 REM    Link-local IPv6 Address . . . . . : fe80::...
 REM    Default Gateway . . . . . . . . . :
-REM (IP is now blank — adapter has no IPv4 address)
+REM (IP is now blank - adapter has no IPv4 address)
 
 REM Request new IP from DHCP server
 ipconfig /renew
@@ -61,7 +61,7 @@ ipconfig /renew "Wi*"
 ## Step 3: Flush DNS Alongside Renew
 
 ```cmd
-REM Complete IP refresh sequence — best practice
+REM Complete IP refresh sequence - best practice
 ipconfig /release
 ipconfig /flushdns
 ipconfig /renew
@@ -98,7 +98,8 @@ ipconfig /renew
 ## Step 5: Equivalent on Linux and macOS
 
 ```bash
-# Linux — release and renew via dhclient
+# Linux - release and renew via dhclient
+
 sudo dhclient -r eth0    # Release
 sudo dhclient eth0       # Renew
 
@@ -117,7 +118,7 @@ networksetup -setdhcp "Wi-Fi"
 
 ## Step 6: What Happens Under the Hood
 
-```
+```text
 DHCP Release and Renew sequence:
 
 ipconfig /release:

@@ -20,6 +20,7 @@ Setting up Flux CD takes about 1-2 hours for a basic installation. The learning 
 
 ```bash
 # Bootstrap Flux - this is the entire installation
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

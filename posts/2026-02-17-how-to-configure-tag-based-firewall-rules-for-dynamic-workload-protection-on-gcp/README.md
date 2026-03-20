@@ -36,6 +36,7 @@ Let me start with the traditional approach using network tags. First, apply tags
 
 ```bash
 # Add network tags to an existing VM instance
+
 # Tags identify the workload type for firewall rule targeting
 gcloud compute instances add-tags my-web-server \
     --tags=http-server,https-server \

@@ -47,6 +47,7 @@ For containerd, create or edit the systemd override.
 
 ```bash
 # On each node, configure containerd to use the proxy
+
 sudo mkdir -p /etc/systemd/system/containerd.service.d/
 ```
 

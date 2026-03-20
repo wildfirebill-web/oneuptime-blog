@@ -74,6 +74,7 @@ For critical operators, disable auto-sync before making version changes:
 
 ```bash
 # Disable auto-sync on the operator application
+
 argocd app set my-operator --sync-policy none
 
 # Disable auto-sync on the CRD application

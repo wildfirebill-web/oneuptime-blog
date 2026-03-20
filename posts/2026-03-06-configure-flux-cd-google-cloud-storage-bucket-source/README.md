@@ -40,6 +40,7 @@ Create a GCS bucket to store Kubernetes manifests.
 
 ```bash
 # Set environment variables
+
 export PROJECT_ID=$(gcloud config get-value project)
 export BUCKET_NAME="${PROJECT_ID}-flux-manifests"
 export REGION="us-central1"

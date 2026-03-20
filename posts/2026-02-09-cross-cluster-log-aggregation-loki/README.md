@@ -319,6 +319,7 @@ Create a template for cluster configuration that you can customize per cluster:
 
 ```yaml
 # promtail-cluster-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -20,6 +20,7 @@ VFS is the right choice in specific scenarios.
 
 ```bash
 # Check if your current driver is already VFS
+
 podman info --format '{{.Store.GraphDriverName}}'
 
 # Scenarios where VFS is appropriate:

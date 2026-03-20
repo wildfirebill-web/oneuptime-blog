@@ -367,6 +367,7 @@ Scout automatically syncs your models when they're created, updated, or deleted.
 
 ```bash
 # Import all products into the search index
+
 php artisan scout:import "App\Models\Product"
 
 # Flush the index and re-import

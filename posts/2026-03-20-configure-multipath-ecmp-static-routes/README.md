@@ -14,6 +14,7 @@ ECMP (Equal-Cost Multi-Path) routing sends traffic across multiple paths with eq
 
 ```bash
 # Route 192.168.2.0/24 through two gateways equally
+
 ip route add 192.168.2.0/24 \
     nexthop via 10.0.0.1 dev eth0 weight 1 \
     nexthop via 10.0.1.1 dev eth1 weight 1
@@ -65,7 +66,7 @@ The kernel hash policy for ECMP can be configured:
 sysctl net.ipv4.fib_multipath_hash_policy
 
 # 0 = L3 only (source/destination IP)
-# 1 = L3 + L4 (includes source/destination ports) — recommended
+# 1 = L3 + L4 (includes source/destination ports) - recommended
 # 2 = Layer 3 or inner layer 3 for encapsulated traffic
 sysctl -w net.ipv4.fib_multipath_hash_policy=1
 ```

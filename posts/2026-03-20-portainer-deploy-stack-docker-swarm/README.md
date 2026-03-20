@@ -1,4 +1,4 @@
-# How to Deploy a Stack on Docker Swarm via Portainer
+# How to Deploy a Stack on Docker Swarm via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -186,6 +186,7 @@ secrets:
 
 ```bash
 # Create secrets before deploying the stack
+
 echo "MySecureDbPassword123!" | docker secret create db-password -
 echo "MyApiSecretKey456!" | docker secret create api-secret-key -
 echo "MyRedisPassword789!" | docker secret create redis-password -
@@ -196,7 +197,7 @@ echo "MyRedisPassword789!" | docker secret create redis-password -
 1. Enter the **Stack name**: `my-production-app`
 2. Paste the Compose file in the web editor
 3. Add environment variables:
-   ```
+   ```text
    FRONTEND_VERSION=v2.1.0
    API_VERSION=v3.0.1
    ```

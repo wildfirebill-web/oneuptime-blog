@@ -205,6 +205,7 @@ Check that profiles are applied:
 
 ```bash
 # Check if AppArmor is enabled on nodes
+
 kubectl debug node/node-name -it --image=ubuntu -- sh -c "aa-status"
 
 # Check pod's AppArmor profile

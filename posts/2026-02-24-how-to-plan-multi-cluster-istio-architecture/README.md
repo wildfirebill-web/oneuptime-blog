@@ -45,6 +45,7 @@ Check by deploying a test pod in each cluster and seeing if they can communicate
 
 ```bash
 # Get a pod IP from cluster2
+
 POD_IP=$(kubectl get pod -l app=test -n default --context="${CTX_CLUSTER2}" -o jsonpath='{.items[0].status.podIP}')
 
 # Try to reach it from cluster1

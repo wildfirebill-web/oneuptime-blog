@@ -8,7 +8,7 @@ Description: Learn how to use the `self` object in OpenTofu provisioners to refe
 
 ## Introduction
 
-Inside a provisioner block, you cannot reference the enclosing resource by name—doing so would create a circular dependency. OpenTofu provides the `self` object as a special reference to the current resource's attributes within provisioner and connection blocks.
+Inside a provisioner block, you cannot reference the enclosing resource by name-doing so would create a circular dependency. OpenTofu provides the `self` object as a special reference to the current resource's attributes within provisioner and connection blocks.
 
 ## Basic Usage
 
@@ -161,4 +161,4 @@ resource "aws_instance" "web" {
 
 ## Conclusion
 
-The `self` object is the essential tool for writing provisioner scripts and connection blocks that reference the resource being created or destroyed. Use it freely within provisioner blocks—and remember that in destroy-time provisioners, it is the only safe way to access resource attributes.
+The `self` object is the essential tool for writing provisioner scripts and connection blocks that reference the resource being created or destroyed. Use it freely within provisioner blocks-and remember that in destroy-time provisioners, it is the only safe way to access resource attributes.

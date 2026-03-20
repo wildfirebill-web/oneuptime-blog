@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Docker, Networking, DevOps, Containers
+Tags: Nginx, Docker, Networking, DevOps, Containers
 
 Description: Learn how to configure Nginx inside a Docker container to connect to services running on your host machine's localhost, including solutions for different operating systems and Docker network modes.
 
@@ -121,6 +121,7 @@ Find the gateway IP of the Docker bridge network and use it to reach the host.
 
 ```bash
 # Get the gateway IP
+
 docker network inspect bridge | grep Gateway
 
 # Or inside a container

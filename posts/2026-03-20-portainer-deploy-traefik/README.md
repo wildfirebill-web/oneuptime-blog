@@ -1,4 +1,4 @@
-# How to Deploy Traefik via Portainer
+# How to Deploy Traefik via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Traefik v3 via Portainer as an automatic reverse proxy with 
 
 ## Introduction
 
-Traefik is a modern reverse proxy and load balancer that integrates directly with Docker. It automatically discovers containers and configures routing based on labels — no manual config updates needed when adding new services. This guide deploys Traefik with automatic HTTPS via Let's Encrypt.
+Traefik is a modern reverse proxy and load balancer that integrates directly with Docker. It automatically discovers containers and configures routing based on labels - no manual config updates needed when adding new services. This guide deploys Traefik with automatic HTTPS via Let's Encrypt.
 
 ## Deploy as a Stack
 
@@ -89,6 +89,7 @@ docker network create traefik-public
 
 ```bash
 # Install htpasswd
+
 sudo apt install -y apache2-utils
 
 # Generate password hash (escape $ with $$ in docker-compose)

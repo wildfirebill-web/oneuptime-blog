@@ -48,6 +48,7 @@ increase(counter_metric[time_range])
 
 ```promql
 # Requests in the last hour
+
 increase(http_requests_total[1h])
 
 # Errors in the last 24 hours

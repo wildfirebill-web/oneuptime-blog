@@ -129,6 +129,7 @@ ztunnel's behavior is configured through istiod. You can inspect its current con
 
 ```bash
 # View all workloads ztunnel knows about
+
 istioctl ztunnel-config workloads
 
 # View service information
@@ -153,7 +154,7 @@ bookinfo     allow-productpage   ALLOW     Namespace
 bookinfo     deny-ratings        DENY      Namespace
 ```
 
-## Resource Consumption
+Resource Consumption
 
 Monitor ztunnel resource usage:
 

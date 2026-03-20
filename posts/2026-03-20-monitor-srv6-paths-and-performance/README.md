@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SRv6, Monitoring, Performance, traceroute, Prometheus, Networking
+Tags: SRv6, Monitoring, Performance, Traceroute, Prometheus, Networking
 
 Description: Monitor SRv6 path health and performance using traceroute, ping, Prometheus metrics, and custom path probing to detect SID failures and latency issues.
 
@@ -14,6 +14,7 @@ SRv6 paths must be monitored at multiple levels: individual SID reachability, en
 
 ```bash
 # Ping each SID in a path to check reachability
+
 SIDS=(
     "5f00:1:2:0:e001::"   # Waypoint 1
     "5f00:2:3:0:e001::"   # Waypoint 2
@@ -32,7 +33,7 @@ done
 ## Step 2: End-to-End Path Tracing with traceroute
 
 ```bash
-# Trace path through SRv6 — requires kernel support for ICMP replies at SIDs
+# Trace path through SRv6 - requires kernel support for ICMP replies at SIDs
 traceroute6 5f00:3:1::1
 
 # Use ICMP type 3 (time exceeded) to measure per-hop RTT
@@ -61,7 +62,7 @@ ip -6 -s route show | grep seg6local
 
 ```python
 #!/usr/bin/env python3
-# srv6_exporter.py — Prometheus metrics for SRv6 path health
+# srv6_exporter.py - Prometheus metrics for SRv6 path health
 
 import subprocess
 import re

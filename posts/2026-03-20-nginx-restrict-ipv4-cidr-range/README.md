@@ -129,6 +129,7 @@ Test that your CIDR rules are working as expected:
 
 ```bash
 # Test from an IP within the allowed range (use curl --interface)
+
 curl --interface 10.10.5.50 http://finance.example.com/
 
 # Test from an IP outside the range

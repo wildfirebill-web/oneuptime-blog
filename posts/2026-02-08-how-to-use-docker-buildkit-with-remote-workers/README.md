@@ -30,6 +30,7 @@ On the remote build server, install Docker and ensure BuildKit is available.
 
 ```bash
 # On the remote server - install Docker
+
 curl -fsSL https://get.docker.com | sh
 
 # Add your user to the docker group

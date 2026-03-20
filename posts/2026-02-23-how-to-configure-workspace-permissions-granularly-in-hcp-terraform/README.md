@@ -28,6 +28,7 @@ Permissions are assigned through teams. First, create teams that map to your org
 
 ```bash
 # Create a "developers" team
+
 curl -s \
   --request POST \
   --header "Authorization: Bearer $TF_TOKEN" \

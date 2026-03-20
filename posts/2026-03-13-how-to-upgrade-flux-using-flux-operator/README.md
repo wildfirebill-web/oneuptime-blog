@@ -29,6 +29,7 @@ Before upgrading, verify the current state of your Flux installation.
 
 ```bash
 # Check current FluxInstance status
+
 kubectl get fluxinstance -n flux-system
 
 # Verify all Flux components are healthy

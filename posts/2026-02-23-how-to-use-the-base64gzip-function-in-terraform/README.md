@@ -14,6 +14,7 @@ The `base64gzip` function in Terraform compresses a string using gzip and then e
 
 ```hcl
 # base64gzip(string)
+
 base64gzip("Hello, World!")
 # Result: a base64 string representing the gzipped data
 ```

@@ -26,6 +26,7 @@ If you do not need any custom extensions, you can download standard images direc
 
 ```bash
 # Download the standard amd64 ISO
+
 curl -LO https://github.com/siderolabs/talos/releases/latest/download/talos-amd64.iso
 
 # Download the standard arm64 ISO

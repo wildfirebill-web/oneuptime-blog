@@ -23,7 +23,7 @@ This guide provides server configurations optimized for each benchmark type.
 - Node-level root access
 - Prometheus monitoring (recommended)
 
-## Resource-Optimized Server Deployment
+Resource-Optimized Server Deployment
 
 ```yaml
 apiVersion: v1
@@ -50,6 +50,7 @@ spec:
 
 ```bash
 # Inside the server container or via init container
+
 sysctl -w net.core.rmem_max=67108864
 sysctl -w net.core.wmem_max=67108864
 sysctl -w net.ipv4.tcp_rmem="4096 87380 67108864"

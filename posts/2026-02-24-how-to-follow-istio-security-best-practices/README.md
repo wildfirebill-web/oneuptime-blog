@@ -44,6 +44,7 @@ mTLS gives you encryption and identity. Authorization policies let you control w
 
 ```yaml
 # Deny all traffic by default
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -49,6 +49,7 @@ By default, non-root users cannot bind to ports below 1024. If you try to expose
 ```bash
 podman run -p 80:80 nginx
 # Error: rootlessport cannot expose privileged port 80
+
 ```
 
 **Solution 1**: Use a non-privileged port and redirect:

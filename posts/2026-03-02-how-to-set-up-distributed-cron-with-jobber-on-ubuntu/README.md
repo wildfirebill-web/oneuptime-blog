@@ -25,6 +25,7 @@ The term "distributed cron" in Jobber's context refers more to its ability to ru
 
 ```bash
 # Download Jobber package
+
 # Check https://github.com/dshearer/jobber/releases for latest version
 wget https://github.com/dshearer/jobber/releases/download/v1.4.4/jobber_1.4.4_linux_amd64.deb
 
@@ -232,7 +233,7 @@ curl -X POST "$WEBHOOK_URL" \
                 \"type\": \"section\",
                 \"text\": {
                     \"type\": \"mrkdwn\",
-                    \"text\": \"*Job Failed:* $JOB_NAME\n*Host:* $HOSTNAME\n*Command:* $JOB_CMD\n*Output:*\n\`\`\`$JOB_OUTPUT\`\`\`\"
+                    \"text\": \"*Job Failed:* $JOB_NAME\n*Host:* $HOSTNAME\n*Command:* $JOB_CMD\n*Output:*\n```$JOB_OUTPUT```\"
                 }
             }
         ]

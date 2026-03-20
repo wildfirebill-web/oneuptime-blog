@@ -36,6 +36,7 @@ The App Password looks like: `abcd efgh ijkl mnop` (with spaces - you can includ
 
 ```bash
 # Install Postfix and the SASL authentication library
+
 sudo apt update
 sudo apt install -y postfix libsasl2-modules mailutils
 

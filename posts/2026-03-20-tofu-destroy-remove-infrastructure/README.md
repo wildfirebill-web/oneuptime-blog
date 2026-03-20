@@ -1,4 +1,4 @@
-# How to Use tofu destroy to Remove Infrastructure
+# How to Use tofu destroy to Remove Infrastructure - Tofu Remove Infrastructure
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use tofu destroy to safely remove all managed infrastr
 
 ## Introduction
 
-`tofu destroy` removes all resources managed by your OpenTofu configuration. It's the cleanest way to decommission an environment — OpenTofu knows the dependency order and destroys resources in the correct sequence. This guide covers safe destroy practices and how to protect critical resources.
+`tofu destroy` removes all resources managed by your OpenTofu configuration. It's the cleanest way to decommission an environment - OpenTofu knows the dependency order and destroys resources in the correct sequence. This guide covers safe destroy practices and how to protect critical resources.
 
 ## Basic Usage
 
 ```bash
 # Destroy all managed infrastructure (with confirmation)
+
 tofu destroy
 
 # OpenTofu shows what will be destroyed and asks:
@@ -30,7 +31,7 @@ OpenTofu destroys resources in reverse dependency order:
 - Resources that depend on others are destroyed first
 - Foundational resources (VPCs, security groups) are destroyed last
 
-```
+```text
 Creation order:   VPC → Subnet → Security Group → EC2 Instance
 Destruction order: EC2 Instance → Security Group → Subnet → VPC
 ```
@@ -42,7 +43,7 @@ Destruction order: EC2 Instance → Security Group → Subnet → VPC
 tofu destroy -auto-approve
 ```
 
-Use extreme caution — this immediately destroys everything with no confirmation.
+Use extreme caution - this immediately destroys everything with no confirmation.
 
 ## Plan Before Destroy
 
@@ -173,7 +174,7 @@ fi
 tofu state rm aws_instance.web
 
 # The resource still exists in the cloud but is no longer managed
-# Use with caution — creates orphaned resources
+# Use with caution - creates orphaned resources
 ```
 
 ## Conclusion

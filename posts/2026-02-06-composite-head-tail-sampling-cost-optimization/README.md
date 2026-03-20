@@ -97,6 +97,7 @@ The Collector receives the 25% of traces that survived head sampling. Now you ap
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

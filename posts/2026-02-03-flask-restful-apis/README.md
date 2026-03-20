@@ -41,6 +41,7 @@ Create a minimal API to verify everything works:
 
 ```python
 # app.py
+
 from flask import Flask
 from flask_restful import Api, Resource
 
@@ -63,7 +64,7 @@ Run it and hit `http://localhost:5000` - you should see the JSON response.
 
 ---
 
-## Resource Classes
+Resource Classes
 
 Resources are the building blocks of your API. Each resource class maps HTTP methods to Python methods. This keeps your code organized and predictable.
 

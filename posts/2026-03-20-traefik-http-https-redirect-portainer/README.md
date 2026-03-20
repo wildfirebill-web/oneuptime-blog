@@ -1,4 +1,4 @@
-# How to Configure Traefik HTTP to HTTPS Redirect for Portainer
+# How to Configure Traefik HTTP to HTTPS Redirect for Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure Traefik to automatically redirect all HTTP t
 
 ## Why Force HTTPS?
 
-HTTP traffic is unencrypted and susceptible to interception. Configuring an HTTP to HTTPS redirect at the Traefik level ensures that all clients — whether they type `http://` or click an old bookmark — are automatically redirected to the secure version.
+HTTP traffic is unencrypted and susceptible to interception. Configuring an HTTP to HTTPS redirect at the Traefik level ensures that all clients - whether they type `http://` or click an old bookmark - are automatically redirected to the secure version.
 
 ## Method 1: Global Redirect via EntryPoint (Recommended)
 
@@ -16,6 +16,7 @@ Apply the redirect at the entrypoint level so it applies to all services automat
 
 ```yaml
 # traefik.yml
+
 entryPoints:
   web:
     address: ":80"
@@ -40,12 +41,12 @@ services:
   portainer:
     image: portainer/portainer-ce:latest
     labels:
-      # HTTP router — only purpose is to redirect
+      # HTTP router - only purpose is to redirect
       - "traefik.http.routers.portainer-http.rule=Host(`portainer.example.com`)"
       - "traefik.http.routers.portainer-http.entrypoints=web"
       - "traefik.http.routers.portainer-http.middlewares=redirect-to-https"
 
-      # HTTPS router — serves actual traffic
+      # HTTPS router - serves actual traffic
       - "traefik.http.routers.portainer-https.rule=Host(`portainer.example.com`)"
       - "traefik.http.routers.portainer-https.entrypoints=websecure"
       - "traefik.http.routers.portainer-https.tls=true"

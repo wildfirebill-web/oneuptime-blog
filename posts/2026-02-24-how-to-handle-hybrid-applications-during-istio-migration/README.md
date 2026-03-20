@@ -51,6 +51,7 @@ Monitor which services are using mTLS and which are not:
 
 ```bash
 # Check which pods have sidecars
+
 kubectl get pods --all-namespaces -o jsonpath='{range .items[*]}{.metadata.namespace}{"\t"}{.metadata.name}{"\t"}{range .spec.containers[*]}{.name}{","}{end}{"\n"}{end}' | grep "istio-proxy"
 ```
 

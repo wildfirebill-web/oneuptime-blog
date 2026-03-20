@@ -28,6 +28,7 @@ For clusters with fewer than 50 nodes, a straightforward GlobalNetworkPolicy con
 
 ```bash
 # Verify current GlobalNetworkPolicy resources
+
 calicoctl get globalnetworkpolicy -o yaml
 
 # Check the effective configuration on a specific node

@@ -129,6 +129,7 @@ class CASOperations:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 cas = CASOperations(r)
 

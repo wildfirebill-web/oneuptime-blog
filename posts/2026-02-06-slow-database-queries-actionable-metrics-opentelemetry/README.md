@@ -46,6 +46,7 @@ First, install the required packages for Python database instrumentation.
 
 ```bash
 # Install OpenTelemetry core packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 
 # Install the SQLAlchemy instrumentation library

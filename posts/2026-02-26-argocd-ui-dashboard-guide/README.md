@@ -18,6 +18,7 @@ After installing ArgoCD, you can access the UI by port-forwarding to the API ser
 
 ```bash
 # Port-forward the ArgoCD server to your local machine
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 # Open https://localhost:8080 in your browser
@@ -95,7 +96,7 @@ For more on health checks, see [how to implement health checks in ArgoCD](https:
 
 Click on any application tile to enter the detail view. This is where the real power of the UI shows.
 
-### Resource Tree
+Resource Tree
 
 The resource tree is the centerpiece of the detail view. It shows every Kubernetes resource managed by the application in a hierarchical tree structure.
 

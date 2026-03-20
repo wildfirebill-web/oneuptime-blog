@@ -20,6 +20,7 @@ Every HelmRelease contains a `spec.chart.spec` section with the following key fi
 
 ```yaml
 # Structure of the chart reference in a HelmRelease
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

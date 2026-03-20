@@ -103,6 +103,7 @@ def redact_image(project_id, input_path, output_path):
     return response
 
 # Redact PII from a screenshot
+
 redact_image(
     "my-project",
     "customer_record_screenshot.png",

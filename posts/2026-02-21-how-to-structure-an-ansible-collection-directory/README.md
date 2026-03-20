@@ -73,6 +73,7 @@ This is the only strictly required file. It defines who owns the collection, wha
 
 ```yaml
 # galaxy.yml - The collection's identity card
+
 ---
 namespace: acme_corp
 name: network_tools

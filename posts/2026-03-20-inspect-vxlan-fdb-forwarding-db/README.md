@@ -14,6 +14,7 @@ The VXLAN FDB (Forwarding Database) maps MAC addresses to remote VTEP IP address
 
 ```bash
 # Show all FDB entries for the VXLAN interface
+
 bridge fdb show dev vxlan0
 
 # Example output:
@@ -24,18 +25,18 @@ bridge fdb show dev vxlan0
 
 ## Interpret FDB Entries
 
-```
+```text
 00:00:00:00:00:00 dev vxlan0 dst 10.0.0.2 self permanent
 ```
-- `00:00:00:00:00:00` — zero MAC = flood/BUM entry
-- `dst 10.0.0.2` — send BUM traffic to this VTEP
-- `permanent` — static entry (won't age out)
+- `00:00:00:00:00:00` - zero MAC = flood/BUM entry
+- `dst 10.0.0.2` - send BUM traffic to this VTEP
+- `permanent` - static entry (won't age out)
 
-```
+```text
 aa:bb:cc:dd:ee:11 dev vxlan0 dst 10.0.0.2 self
 ```
 - Real MAC address = dynamically learned unicast entry
-- `dst 10.0.0.2` — this MAC is reachable via this VTEP
+- `dst 10.0.0.2` - this MAC is reachable via this VTEP
 - No `permanent` = dynamic (will age out)
 
 ## Add a Static MAC-to-VTEP Entry

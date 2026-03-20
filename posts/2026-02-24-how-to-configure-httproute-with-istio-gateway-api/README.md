@@ -434,6 +434,7 @@ If `Accepted` is False, check the `reason` and `message` fields for details. Com
 
 ```bash
 # Check the generated Envoy routes
+
 istioctl proxy-config route deploy/my-gateway-istio -n production -o json
 
 # Analyze for issues

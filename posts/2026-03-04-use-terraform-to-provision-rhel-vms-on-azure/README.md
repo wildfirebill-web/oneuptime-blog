@@ -31,6 +31,7 @@ provider "azurerm" {
 }
 
 # Resource group
+
 resource "azurerm_resource_group" "rg" {
   name     = "rhel-terraform-rg"
   location = "East US"

@@ -42,6 +42,7 @@ After deploying, get the initial admin password:
 
 ```bash
 # Via Portainer exec
+
 cat /var/jenkins_home/secrets/initialAdminPassword
 
 # Or from logs
@@ -65,7 +66,7 @@ COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN jenkins-plugin-cli --plugin-file /usr/share/jenkins/ref/plugins.txt
 ```
 
-```
+```text
 # plugins.txt
 blueocean:latest
 docker-plugin:latest
@@ -145,4 +146,4 @@ docker cp jenkins:/tmp/jenkins-backup-20260320.tar.gz /backup/
 
 ## Conclusion
 
-Jenkins deployed via Portainer with Docker socket access gives you a self-hosted CI/CD platform capable of building and pushing Docker images, then triggering Portainer webhooks to deploy. The Docker socket mount is the key enabler — it lets Jenkins build images and interact with the same Docker engine that Portainer manages.
+Jenkins deployed via Portainer with Docker socket access gives you a self-hosted CI/CD platform capable of building and pushing Docker images, then triggering Portainer webhooks to deploy. The Docker socket mount is the key enabler - it lets Jenkins build images and interact with the same Docker engine that Portainer manages.

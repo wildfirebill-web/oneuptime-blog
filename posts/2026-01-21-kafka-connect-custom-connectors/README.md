@@ -634,6 +634,7 @@ class HttpSourceConnectorIntegrationTest {
 
 ```bash
 # Structure
+
 my-connector/
 ├── lib/
 │   ├── my-connector-1.0.0.jar

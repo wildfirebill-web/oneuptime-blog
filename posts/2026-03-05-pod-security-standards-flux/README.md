@@ -26,6 +26,7 @@ Apply Pod Security Standards labels to the `flux-system` namespace to enforce th
 
 ```yaml
 # namespace-flux-system-pss.yaml
+
 # Enforce the Restricted Pod Security Standard on the flux-system namespace
 apiVersion: v1
 kind: Namespace

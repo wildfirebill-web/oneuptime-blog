@@ -225,6 +225,7 @@ The integration test Lambda:
 
 ```python
 # lambda/integration-tests/index.py - Post-deployment smoke tests
+
 import urllib.request
 import json
 import os

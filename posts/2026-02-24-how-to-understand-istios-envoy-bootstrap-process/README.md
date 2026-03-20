@@ -31,6 +31,7 @@ The `istio-init` container runs before any other container in the pod. Its job i
 
 ```bash
 # See the init container definition
+
 kubectl get pod my-app-xyz -o jsonpath='{.spec.initContainers[0]}' | python3 -m json.tool
 ```
 

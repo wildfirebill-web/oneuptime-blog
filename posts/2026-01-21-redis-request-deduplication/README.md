@@ -165,6 +165,7 @@ class IdempotencyConflictError(Exception):
     pass
 
 # Decorator for idempotent operations
+
 def idempotent(store: IdempotencyStore,
                key_extractor: Callable[[Dict], str] = None):
     """Decorator to make a function idempotent."""

@@ -94,6 +94,7 @@ The three digits represent user, group, others:
 
 ```bash
 # Check nginx config
+
 ls -la /etc/nginx/nginx.conf
 # -rw-r--r-- 1 root root 1234 Mar 2 09:00 nginx.conf
 # Owner (root) can read/write; group and others can read

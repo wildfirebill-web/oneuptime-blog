@@ -31,6 +31,7 @@ Sync settings are stored in the ArgoCD Application resource. Changing any sync s
 
 ```yaml
 # This permission allows modifying sync settings
+
 p, role:deployer, applications, update, myproject/*, allow
 
 # This permission does NOT allow modifying sync settings

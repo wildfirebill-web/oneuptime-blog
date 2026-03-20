@@ -30,6 +30,7 @@ Confirm that each Calico node has correctly detected its IPv6 address.
 
 ```bash
 # Check IPv6 addresses Calico has detected for each node
+
 calicoctl get nodes -o yaml | grep -A5 "ipv6"
 
 # Verify the IPv6 BGP address assigned to each node

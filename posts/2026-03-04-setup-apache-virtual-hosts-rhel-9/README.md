@@ -26,6 +26,7 @@ Set up separate directories for each site:
 
 ```bash
 # Create document root directories for two sites
+
 sudo mkdir -p /var/www/site-a.example.com/html
 sudo mkdir -p /var/www/site-b.example.com/html
 ```

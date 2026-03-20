@@ -214,6 +214,7 @@ Start conservative and increase if you see throttling. You can check for CPU thr
 
 ```bash
 # Check if the proxy container is being throttled
+
 kubectl exec -it deploy/my-app -c istio-proxy -- cat /sys/fs/cgroup/cpu/cpu.stat
 ```
 

@@ -39,6 +39,7 @@ ArgoCD provides dedicated HA manifests:
 
 ```bash
 # Create the argocd namespace
+
 kubectl create namespace argocd
 
 # Install HA manifests

@@ -30,6 +30,7 @@ The first line of defense is preventing secrets from being committed in the firs
 
 ```yaml
 # .pre-commit-config.yaml
+
 repos:
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.18.0

@@ -32,6 +32,7 @@ sudo tee /etc/audit/rules.d/40-privileged-users.rules << 'EOF'
 ## Monitor privileged user activity
 
 # Track all commands executed by root (uid 0)
+
 -a always,exit -F arch=b64 -S execve -F euid=0 -k root_commands
 -a always,exit -F arch=b32 -S execve -F euid=0 -k root_commands
 

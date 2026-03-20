@@ -32,6 +32,7 @@ Start with a high-level assessment of the Cilium deployment health.
 
 ```bash
 # Quick health check
+
 cilium status --verbose
 
 # Check for pods that are not running

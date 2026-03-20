@@ -20,6 +20,7 @@ KServe (formerly KFServing) is a Kubernetes-native model serving platform built 
 
 ```bash
 # Install KServe (requires Knative)
+
 kubectl apply -f https://github.com/kserve/kserve/releases/download/v0.12.0/kserve.yaml
 
 # Wait for controller to be ready

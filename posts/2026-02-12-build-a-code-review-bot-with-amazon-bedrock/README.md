@@ -34,6 +34,7 @@ Set up a GitHub webhook that fires on pull request events. The webhook handler v
 
 ```python
 # Lambda - GitHub webhook handler
+
 import boto3
 import json
 import hmac

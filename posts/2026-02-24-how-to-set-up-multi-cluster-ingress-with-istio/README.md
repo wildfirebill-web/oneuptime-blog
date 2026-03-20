@@ -20,6 +20,7 @@ Both clusters get an ingress gateway as part of the standard Istio installation:
 
 ```bash
 # Get the external IPs
+
 kubectl --context=cluster1 get svc -n istio-system istio-ingressgateway \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 

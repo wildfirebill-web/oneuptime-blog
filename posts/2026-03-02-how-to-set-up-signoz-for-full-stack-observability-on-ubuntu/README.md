@@ -26,6 +26,7 @@ SigNoz ships as a Docker Compose stack. If Docker is not installed:
 
 ```bash
 # Install Docker Engine
+
 curl -fsSL https://get.docker.com | sh
 
 # Add your user to the docker group

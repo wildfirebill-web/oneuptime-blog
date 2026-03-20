@@ -27,6 +27,7 @@ When ArgoCD shows a degraded application, start by checking the pod events:
 
 ```bash
 # Find the stuck pod
+
 kubectl get pods -n myapp --field-selector status.phase!=Running
 
 # Check events for the specific pod

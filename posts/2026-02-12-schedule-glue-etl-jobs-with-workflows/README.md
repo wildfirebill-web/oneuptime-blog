@@ -45,6 +45,7 @@ Let's build a three-stage ETL pipeline:
 
 ```python
 # Create the workflow
+
 import boto3
 
 glue = boto3.client('glue', region_name='us-east-1')

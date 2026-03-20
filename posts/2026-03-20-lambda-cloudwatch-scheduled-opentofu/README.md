@@ -64,6 +64,7 @@ resource "aws_lambda_function" "daily_report" {
 
 ```hcl
 # Daily report at 6 AM UTC using cron expression
+
 resource "aws_cloudwatch_event_rule" "daily_report" {
   name                = "daily-report-trigger"
   description         = "Trigger daily report generation every day at 6 AM UTC"

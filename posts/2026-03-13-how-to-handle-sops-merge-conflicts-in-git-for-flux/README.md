@@ -24,6 +24,7 @@ The safest approach is to accept one side of the conflict and manually re-apply 
 
 ```bash
 # When you encounter a merge conflict in an encrypted file
+
 git merge feature-branch
 # CONFLICT: secrets/app-secret.yaml
 

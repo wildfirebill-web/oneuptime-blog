@@ -468,6 +468,7 @@ When IPv6 monitors report failures, systematic troubleshooting identifies root c
 
 ```bash
 # Test from probe location if you have access
+
 ping6 -c 4 2001:db8::1
 
 # Check MTU

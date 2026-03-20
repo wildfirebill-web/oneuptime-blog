@@ -34,6 +34,7 @@ Start with a demo that shows the default open posture and progressively restrict
 
 ```bash
 # Deploy a simple two-tier app
+
 kubectl apply -f frontend-deployment.yaml
 kubectl apply -f backend-deployment.yaml
 

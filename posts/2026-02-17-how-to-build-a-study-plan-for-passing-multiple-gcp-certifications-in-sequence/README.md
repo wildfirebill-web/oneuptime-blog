@@ -214,6 +214,7 @@ GCP gives you $300 in free credits for new accounts. To make them last:
 
 ```bash
 # Set up a billing alert at $50 to avoid surprise charges
+
 gcloud billing budgets create \
   --billing-account=BILLING_ACCOUNT_ID \
   --display-name="Study Budget" \

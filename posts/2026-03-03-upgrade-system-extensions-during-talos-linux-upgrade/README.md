@@ -18,6 +18,7 @@ This means that when you upgrade Talos, you need a new installer image that incl
 
 ```bash
 # Check what extensions are currently installed on a node
+
 talosctl get extensions --nodes <node-ip>
 
 # Example output:

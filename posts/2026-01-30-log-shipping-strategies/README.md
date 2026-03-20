@@ -158,6 +158,7 @@ Fast but volatile. Logs in memory buffers are lost on process restart or crash.
 
 ```yaml
 # Fluentd memory buffer example
+
 <buffer>
   @type memory
   flush_mode interval
@@ -620,7 +621,7 @@ Before shipping logs to production, verify these items:
 - [ ] PII filtering applied before shipping
 - [ ] Network policies restrict shipper egress
 
-### Resource Limits
+Resource Limits
 - [ ] Memory limits set on shipper pods
 - [ ] CPU limits allow burst processing
 - [ ] Disk space monitored for buffer directories

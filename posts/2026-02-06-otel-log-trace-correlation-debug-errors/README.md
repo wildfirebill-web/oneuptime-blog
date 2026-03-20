@@ -22,6 +22,7 @@ from opentelemetry import trace
 from opentelemetry.instrumentation.logging import LoggingInstrumentor
 
 # Enable automatic injection of trace context into log records
+
 LoggingInstrumentor().instrument(set_logging_format=True)
 
 # Configure your logging format to include trace context

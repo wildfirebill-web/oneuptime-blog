@@ -22,6 +22,7 @@ You can set the revision mode when creating the app or update it later.
 
 ```bash
 # Create a container app in multiple revision mode
+
 az containerapp create \
   --name my-api \
   --resource-group my-rg \

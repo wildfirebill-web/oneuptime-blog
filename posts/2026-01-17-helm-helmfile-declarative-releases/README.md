@@ -50,6 +50,7 @@ flowchart TB
 
 ```bash
 # macOS
+
 brew install helmfile
 
 # Linux

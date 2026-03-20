@@ -20,6 +20,7 @@ The first step is always to check what state the container is in and what exit c
 
 ```bash
 # List all containers including stopped ones
+
 podman ps -a
 
 # Check the exit code of a specific container

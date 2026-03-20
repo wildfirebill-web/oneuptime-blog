@@ -18,6 +18,7 @@ The PGDG repository provides current PostgreSQL versions and is maintained by th
 
 ```bash
 # Install prerequisites
+
 sudo apt install -y postgresql-common
 
 # Add PGDG repository using the official script

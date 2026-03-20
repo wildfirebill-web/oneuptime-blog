@@ -53,6 +53,7 @@ A channel is the entry point for your live video. Each channel has two input end
 
 ```bash
 # Create a MediaPackage channel for live streaming
+
 aws mediapackage create-channel \
   --id "my-live-channel" \
   --description "Live streaming channel for sports events" \

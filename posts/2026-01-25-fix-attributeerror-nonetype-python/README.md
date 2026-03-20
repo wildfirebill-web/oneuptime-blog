@@ -16,6 +16,7 @@ The error message tells you exactly what went wrong: you tried to access an attr
 
 ```python
 # This will raise: AttributeError: 'NoneType' object has no attribute 'upper'
+
 text = None
 result = text.upper()
 ```

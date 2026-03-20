@@ -129,4 +129,4 @@ locals {
 
 ## Conclusion
 
-The `sort` function provides deterministic list ordering in OpenTofu. Use it to normalize input ordering, ensure consistent `for_each` expansion, and find alphabetically first or last elements. Remember it sorts lexicographically — for numeric sorting, use zero-padded strings.
+The `sort` function provides deterministic list ordering in OpenTofu. Use it to normalize input ordering, ensure consistent `for_each` expansion, and find alphabetically first or last elements. Remember it sorts lexicographically - for numeric sorting, use zero-padded strings.

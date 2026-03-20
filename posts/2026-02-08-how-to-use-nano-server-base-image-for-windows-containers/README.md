@@ -59,6 +59,7 @@ Nano Server does NOT work for:
 
 ```powershell
 # Pull the base Nano Server image
+
 docker pull mcr.microsoft.com/windows/nanoserver:ltsc2022
 
 # Check the image size - much smaller than Server Core

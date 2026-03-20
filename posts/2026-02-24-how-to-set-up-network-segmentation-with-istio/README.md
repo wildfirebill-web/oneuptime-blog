@@ -30,6 +30,7 @@ kubectl create namespace admin
 kubectl create namespace sensitive
 
 # Label namespaces for Istio injection
+
 kubectl label namespace public istio-injection=enabled
 kubectl label namespace application istio-injection=enabled
 kubectl label namespace data istio-injection=enabled

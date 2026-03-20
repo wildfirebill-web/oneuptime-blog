@@ -32,6 +32,7 @@ One of the most common runbook tasks is restarting a service that has become unr
 
 ```yaml
 # runbooks/restart-service.yml
+
 # Safely restart a service with pre and post checks
 ---
 - name: "RUNBOOK: Restart stuck service"

@@ -297,6 +297,7 @@ class Proposer:
 
 
 # Example usage demonstrating the protocol
+
 def run_paxos_example():
     """
     Demonstrate Basic Paxos with 3 acceptors.

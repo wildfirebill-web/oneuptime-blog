@@ -47,6 +47,7 @@ Policy reports are enabled by default in Kyverno. Verify they are working:
 
 ```bash
 # Check if PolicyReport CRDs exist
+
 kubectl get crd | grep policyreport
 
 # Expected output:

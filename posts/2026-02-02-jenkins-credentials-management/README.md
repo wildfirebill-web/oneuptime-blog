@@ -69,6 +69,7 @@ The following script demonstrates creating credentials programmatically using th
 ```bash
 #!/bin/bash
 # create-credential.sh
+
 # Creates a username/password credential via Jenkins CLI
 
 JENKINS_URL="https://jenkins.example.com"

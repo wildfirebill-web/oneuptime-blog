@@ -8,7 +8,7 @@ Description: Configure NGINX Plus active health checks for IPv6 upstream servers
 
 ## Introduction
 
-NGINX Plus extends the open source NGINX with active health checks — probing upstream servers on a schedule rather than detecting failures only from production traffic. This is particularly valuable for IPv6 backends where failures should be detected before users are affected. This guide covers NGINX Plus configuration for IPv6 active health checks.
+NGINX Plus extends the open source NGINX with active health checks - probing upstream servers on a schedule rather than detecting failures only from production traffic. This is particularly valuable for IPv6 backends where failures should be detected before users are affected. This guide covers NGINX Plus configuration for IPv6 active health checks.
 
 ## NGINX Plus Active Health Check Configuration
 
@@ -70,6 +70,7 @@ http {
 
 ```nginx
 # Stream module for TCP/UDP IPv6 health checks
+
 stream {
     upstream tcp_ipv6 {
         zone tcp_ipv6_zone 256k;
@@ -172,4 +173,4 @@ upstream app_ipv6 {
 
 ## Conclusion
 
-NGINX Plus active health checks work identically for IPv6 backends as for IPv4 — specify IPv6 server addresses in bracket notation in the `upstream` block, and the `health_check` directive handles IPv6 probes automatically. Use `match` blocks to define expected response criteria beyond HTTP status codes. The NGINX Plus API enables dynamic upstream management without reload, which is particularly valuable for updating IPv6 server lists as infrastructure changes. The slow start feature prevents IPv6 backends from being overwhelmed immediately after being added to the pool.
+NGINX Plus active health checks work identically for IPv6 backends as for IPv4 - specify IPv6 server addresses in bracket notation in the `upstream` block, and the `health_check` directive handles IPv6 probes automatically. Use `match` blocks to define expected response criteria beyond HTTP status codes. The NGINX Plus API enables dynamic upstream management without reload, which is particularly valuable for updating IPv6 server lists as infrastructure changes. The slow start feature prevents IPv6 backends from being overwhelmed immediately after being added to the pool.

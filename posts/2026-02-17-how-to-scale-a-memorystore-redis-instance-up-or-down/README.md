@@ -34,6 +34,7 @@ Before scaling, check your current memory allocation and usage:
 
 ```bash
 # Get current instance size and memory usage
+
 gcloud redis instances describe my-redis \
   --region=us-central1 \
   --format="table(memorySizeGb,name,tier)"

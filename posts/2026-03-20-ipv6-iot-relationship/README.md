@@ -14,7 +14,7 @@ The relationship between IPv6 and IoT is fundamental: the Internet of Things req
 
 IPv4 provides approximately 4.3 billion addresses. With IoT projections of 50-100 billion connected devices by 2030:
 
-```
+```text
 IPv4 maximum addresses: 4,294,967,296 (~4.3 billion)
 IoT devices projected by 2030: ~75 billion
 IPv4 shortfall: ~70 billion addresses
@@ -69,7 +69,7 @@ For constrained devices on IEEE 802.15.4, 6LoWPAN compresses IPv6 headers from 4
 
 ## IoT Protocol Stack with IPv6
 
-```
+```text
 Application Layer:   CoAP, MQTT, HTTP/2, Matter
 Transport Layer:     UDP, TCP, DTLS
 Network Layer:       IPv6
@@ -83,6 +83,7 @@ IPv6 direct addressability means IoT device security is critical:
 
 ```bash
 # Every IPv6-connected IoT device is reachable from the internet
+
 # Unless protected by firewall rules
 
 # Example: Allow only established/related connections inbound
@@ -96,4 +97,4 @@ ip6tables -A FORWARD -i eth1 -j DROP    # Block unsolicited inbound to devices
 
 ## Conclusion
 
-IPv6 is not merely a preference for IoT — it is a necessity. The address space alone justifies the transition, but the additional benefits of SLAAC, multicast, NDP, and the ecosystem of IoT-specific adaptations (6LoWPAN, Thread, Matter) built on IPv6 make it the definitive networking layer for the Internet of Things. The direct addressability that IPv6 enables also raises the importance of IoT device security, making firewall rules and device hardening essential components of any IPv6 IoT deployment.
+IPv6 is not merely a preference for IoT - it is a necessity. The address space alone justifies the transition, but the additional benefits of SLAAC, multicast, NDP, and the ecosystem of IoT-specific adaptations (6LoWPAN, Thread, Matter) built on IPv6 make it the definitive networking layer for the Internet of Things. The direct addressability that IPv6 enables also raises the importance of IoT device security, making firewall rules and device hardening essential components of any IPv6 IoT deployment.

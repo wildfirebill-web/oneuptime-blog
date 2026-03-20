@@ -31,6 +31,7 @@ Sign Calico images after mirroring them to verify authenticity:
 ```bash
 #!/bin/bash
 # sign-calico-images.sh
+
 # Sign mirrored Calico images with cosign
 
 set -euo pipefail

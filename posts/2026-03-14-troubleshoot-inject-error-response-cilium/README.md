@@ -28,6 +28,7 @@ When clients report unparseable error responses:
 
 ```bash
 # Capture traffic at the proxy level
+
 kubectl exec -n kube-system ds/cilium -- \
     tcpdump -i any -w /tmp/inject-debug.pcap port 9000 -c 100
 

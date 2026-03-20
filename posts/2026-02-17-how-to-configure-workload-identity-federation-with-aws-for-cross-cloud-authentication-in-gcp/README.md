@@ -39,6 +39,7 @@ The key insight is that GCP uses the AWS `GetCallerIdentity` API response as pro
 
 ```bash
 # Create a pool for AWS identities
+
 gcloud iam workload-identity-pools create "aws-pool" \
     --project="my-gcp-project" \
     --location="global" \

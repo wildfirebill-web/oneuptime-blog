@@ -37,6 +37,7 @@ Run the Dynatrace distribution in a container:
 
 ```bash
 # Run the Dynatrace OTel Collector
+
 docker run -d \
   --name dt-otel-collector \
   -e DT_ENDPOINT=https://your-environment.live.dynatrace.com/api/v2/otlp \

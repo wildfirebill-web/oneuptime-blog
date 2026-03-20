@@ -480,6 +480,7 @@ export { namedExport as named };
 
 ```bash
 # Add to package.json
+
 {
   "type": "module"
 }

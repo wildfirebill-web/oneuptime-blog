@@ -22,6 +22,7 @@ Get a TFTP server running in seconds.
 
 ```bash
 # Create a directory to serve files from
+
 mkdir -p /opt/tftp-data
 
 # Start a TFTP server using the popular tftpd-hpa image

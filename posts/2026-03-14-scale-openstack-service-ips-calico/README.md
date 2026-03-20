@@ -30,6 +30,7 @@ Create dedicated IP pools for service endpoints to separate them from VM network
 
 ```yaml
 # service-ippool.yaml
+
 # Dedicated IP pool for OpenStack service endpoints
 apiVersion: projectcalico.org/v3
 kind: IPPool

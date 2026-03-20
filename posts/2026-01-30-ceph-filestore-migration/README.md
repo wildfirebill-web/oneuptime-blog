@@ -94,6 +94,7 @@ Before any migration, verify your cluster health:
 
 ```bash
 # Check overall cluster health
+
 ceph health detail
 
 # View current OSD tree and status

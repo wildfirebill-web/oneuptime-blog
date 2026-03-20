@@ -38,6 +38,7 @@ require 'opentelemetry/exporter/otlp'
 require 'opentelemetry/instrumentation/all'
 
 # Configure the OpenTelemetry SDK
+
 OpenTelemetry::SDK.configure do |c|
   c.service_name = 'rails-app'
   c.use_all('OpenTelemetry::Instrumentation')

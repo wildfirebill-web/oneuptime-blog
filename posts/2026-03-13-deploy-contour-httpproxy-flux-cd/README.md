@@ -30,6 +30,7 @@ Register the Bitnami Helm chart repository which provides the Contour chart.
 
 ```yaml
 # infrastructure/contour/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

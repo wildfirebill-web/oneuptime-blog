@@ -18,6 +18,7 @@ You need the Azure CLI installed and authenticated.
 
 ```bash
 # Login to Azure
+
 az login
 
 # Set your default subscription

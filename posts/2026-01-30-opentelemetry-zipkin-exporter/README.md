@@ -193,6 +193,7 @@ You can also configure the exporter using environment variables:
 
 ```bash
 # Zipkin endpoint
+
 export OTEL_EXPORTER_ZIPKIN_ENDPOINT=http://zipkin:9411/api/v2/spans
 
 # Service name

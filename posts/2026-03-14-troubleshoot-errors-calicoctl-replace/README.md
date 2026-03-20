@@ -27,6 +27,7 @@ This guide covers the most common calicoctl replace errors with specific diagnos
 
 ```bash
 # Error
+
 calicoctl replace -f policy.yaml
 # Error: resource does not exist: GlobalNetworkPolicy(my-new-policy)
 

@@ -99,6 +99,7 @@ When Image Updater detects a digest change, it writes the full digest reference 
 
 ```yaml
 # kustomization.yaml
+
 images:
   - name: myregistry.com/myapp
     newTag: "latest"

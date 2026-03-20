@@ -18,6 +18,7 @@ Span names should behave like `http.method`, not like `user.id`.
 
 ```python
 # Bad - every user gets a unique span name
+
 tracer = trace.get_tracer("user-service")
 
 def get_user(user_id):

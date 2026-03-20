@@ -477,6 +477,7 @@ class GitMetadataCollector:
 
 
 # Usage example
+
 if __name__ == "__main__":
     collector = GitMetadataCollector("/path/to/repositories")
     all_metadata = collector.collect_all()

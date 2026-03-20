@@ -8,7 +8,7 @@ Description: Learn how to create and configure DynamoDB tables with OpenTofu, in
 
 ## Introduction
 
-DynamoDB is a fully managed NoSQL database delivering single-digit millisecond performance at any scale. Table design is critical—choosing the right partition key and secondary indexes determines query flexibility and performance. DynamoDB supports both on-demand and provisioned billing modes to balance cost and predictability.
+DynamoDB is a fully managed NoSQL database delivering single-digit millisecond performance at any scale. Table design is critical-choosing the right partition key and secondary indexes determines query flexibility and performance. DynamoDB supports both on-demand and provisioned billing modes to balance cost and predictability.
 
 ## Prerequisites
 
@@ -84,6 +84,7 @@ resource "aws_dynamodb_table" "main" {
 
 ```hcl
 # Use provisioned capacity for predictable workloads
+
 resource "aws_dynamodb_table" "sessions" {
   name         = "${var.project_name}-sessions"
   billing_mode = "PROVISIONED"
@@ -159,4 +160,4 @@ aws dynamodb describe-table --table-name my-project-orders
 
 ## Conclusion
 
-DynamoDB table design requires careful planning of access patterns before creation—secondary indexes cannot be changed after creation without rebuilding the table. Use `PAY_PER_REQUEST` for unpredictable or spiky workloads, and provisioned capacity with auto scaling for steady, predictable loads. Always enable point-in-time recovery and encryption for production tables.
+DynamoDB table design requires careful planning of access patterns before creation-secondary indexes cannot be changed after creation without rebuilding the table. Use `PAY_PER_REQUEST` for unpredictable or spiky workloads, and provisioned capacity with auto scaling for steady, predictable loads. Always enable point-in-time recovery and encryption for production tables.

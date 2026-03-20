@@ -32,6 +32,7 @@ The most relevant PCI DSS requirements for Kubernetes include:
 
 ```yaml
 # Create a dedicated namespace for CDE workloads
+
 kubectl create namespace cardholder-data-env
 kubectl label namespace cardholder-data-env pci-dss=cde
 

@@ -30,6 +30,7 @@ Store your migration files in the application repository, embedded in a ConfigMa
 
 ```yaml
 # apps/backend/migrations-configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

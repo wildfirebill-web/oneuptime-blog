@@ -344,6 +344,7 @@ Track cleanup operations:
 
 ```bash
 # View cleanup policies
+
 kubectl get clustercleanuppolicy
 
 # Check cleanup policy status

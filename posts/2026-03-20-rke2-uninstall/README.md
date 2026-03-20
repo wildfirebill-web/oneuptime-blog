@@ -21,6 +21,7 @@ Before uninstalling, gracefully evict all workloads from the node to avoid downt
 
 ```bash
 # From a node with kubectl access, drain the node
+
 # Replace <NODE_NAME> with the actual node name
 kubectl drain <NODE_NAME> \
   --ignore-daemonsets \

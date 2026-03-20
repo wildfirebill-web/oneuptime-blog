@@ -36,6 +36,7 @@ Start by installing a new IdM replica to add to the topology.
 
 ```bash
 # On the new RHEL system, install required packages
+
 sudo dnf install ipa-server ipa-server-dns ipa-server-ca -y
 
 # Install the replica (connects to an existing server automatically)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPSec, VPN, Site-to-Site, Pre-Shared Keys, StrongSwan, IPv4, Security
+Tags: IPsec, VPN, Site-to-Site, Pre-Shared Keys, strongSwan, IPv4, Security
 
 Description: Configure an IPSec site-to-site VPN tunnel between two Linux hosts using StrongSwan and pre-shared key authentication to securely connect two IPv4 networks.
 
@@ -12,7 +12,7 @@ IPSec is a suite of protocols that provides cryptographic security for IP commun
 
 ## Network Topology
 
-```
+```yaml
 Site A (192.168.1.0/24) --- [Public IP: 203.0.113.1] ===IPSec=== [Public IP: 203.0.113.2] --- Site B (192.168.2.0/24)
 ```
 
@@ -20,6 +20,7 @@ Site A (192.168.1.0/24) --- [Public IP: 203.0.113.1] ===IPSec=== [Public IP: 203
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install strongswan strongswan-pki
 
 # CentOS/RHEL
@@ -31,7 +32,7 @@ sudo yum install strongswan
 Edit `/etc/ipsec.conf`:
 
 ```bash
-# /etc/ipsec.conf — Site A
+# /etc/ipsec.conf - Site A
 
 config setup
     charondebug="ike 1, knl 1, cfg 0"
@@ -67,7 +68,7 @@ conn site-a-to-site-b
 Edit `/etc/ipsec.secrets`:
 
 ```bash
-# /etc/ipsec.secrets — Site A
+# /etc/ipsec.secrets - Site A
 # Format: local_ip remote_ip : PSK "pre-shared-key"
 203.0.113.1 203.0.113.2 : PSK "MyStrongPreSharedKey123!@#"
 ```

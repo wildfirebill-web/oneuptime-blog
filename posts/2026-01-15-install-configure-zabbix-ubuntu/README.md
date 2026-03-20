@@ -32,6 +32,7 @@ Zabbix is a powerful open-source monitoring solution for networks, servers, appl
 
 ```bash
 # Update system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install Apache, MySQL, and PHP

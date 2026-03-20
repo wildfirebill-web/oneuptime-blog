@@ -369,6 +369,7 @@ Use different notification channels for different environments:
 
 ```yaml
 # Dev: minimal notifications
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

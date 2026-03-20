@@ -69,6 +69,7 @@ Document the region reference table:
 ```bash
 #!/bin/bash
 # troubleshoot-cross-region.sh
+
 # Troubleshoot cross-region connectivity issues
 
 SRC_IP="${1:?Usage: $0 <source-ip> <dest-ip>}"

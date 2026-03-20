@@ -330,6 +330,7 @@ Deploy using the AWS CLI:
 
 ```bash
 # Deploy the CloudFormation stack
+
 aws cloudformation create-stack \
   --stack-name myapp-production-rds \
   --template-body file://rds-template.yaml \

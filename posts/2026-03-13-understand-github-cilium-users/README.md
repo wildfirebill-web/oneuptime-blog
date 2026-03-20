@@ -29,6 +29,7 @@ Understanding the repository layout helps you find relevant code and documentati
 
 ```bash
 # Key directories in the Cilium repository:
+
 # /pkg/           - Core Cilium Go packages
 # /daemon/        - Cilium agent daemon
 # /cilium-cli/    - The cilium CLI tool

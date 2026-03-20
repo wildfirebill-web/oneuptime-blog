@@ -12,7 +12,7 @@ IPv4 allowed overlapping fragments, which led to a class of attacks including th
 
 ## Why Overlapping Fragments Were Dangerous
 
-```
+```text
 IPv4 overlapping fragment attacks:
 
 Teardrop attack (1997):
@@ -34,7 +34,7 @@ Fragment 0 injection:
 
 RFC 8200 Section 4.5 is explicit:
 
-```
+```text
 RFC 8200 Section 4.5 reassembly rule:
 
 "If any of the fragments being reassembled overlap with any other
@@ -52,6 +52,7 @@ Additional rule:
 
 ```bash
 # Check for fragment overlap indicators in kernel logs
+
 sudo dmesg | grep -i "fragment\|overlap\|frag"
 
 # Watch for reassembly failures (could include overlaps)
@@ -122,7 +123,7 @@ def reassemble_or_discard(src: str, dst: str, ident: int,
 
 ## Comparison: IPv4 vs IPv6 Overlap Handling
 
-```
+```text
 IPv4 overlap handling (implementation-defined):
   - RFC 791 does not specify what to do with overlapping fragments
   - Different OS implementations chose different strategies:

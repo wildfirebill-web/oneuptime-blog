@@ -16,6 +16,7 @@ In this post, I will show you how to configure Multer with a custom storage engi
 
 ```bash
 # Initialize project and install dependencies
+
 mkdir multer-gcs && cd multer-gcs
 npm init -y
 npm install express multer @google-cloud/storage multer-cloud-storage uuid

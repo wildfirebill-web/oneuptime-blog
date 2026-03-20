@@ -14,6 +14,7 @@ Flushing the ARP table forces the kernel to re-resolve MAC addresses for all nei
 
 ```bash
 # Flush all non-permanent neighbor entries
+
 ip neigh flush all
 
 # Verify the cache is mostly empty
@@ -40,13 +41,13 @@ ip neigh flush nud failed
 ## Flush and Verify
 
 ```bash
-# Before flush — see current entries
+# Before flush - see current entries
 ip neigh show
 
 # Flush
 ip neigh flush dev eth0
 
-# After flush — most entries removed
+# After flush - most entries removed
 ip neigh show
 
 # Generate new ARP entries by pinging
@@ -67,7 +68,7 @@ ip -4 neigh flush dev eth0
 # Delete all entries including permanent ones
 ip neigh flush all nud all
 
-# This includes static entries — use with care
+# This includes static entries - use with care
 ```
 
 ## When to Flush the ARP Cache
@@ -91,10 +92,10 @@ done
 ## Difference from Delete
 
 ```bash
-# ip neigh flush — removes all matching entries at once
+# ip neigh flush - removes all matching entries at once
 ip neigh flush dev eth0
 
-# ip neigh del — removes a specific single entry
+# ip neigh del - removes a specific single entry
 ip neigh del 192.168.1.50 dev eth0
 ```
 

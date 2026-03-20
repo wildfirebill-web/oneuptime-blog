@@ -37,6 +37,7 @@ This command creates a Confidential VM with AMD SEV encryption.
 
 ```bash
 # Create a Confidential VM with AMD SEV memory encryption
+
 gcloud compute instances create confidential-workload \
   --zone=us-central1-a \
   --machine-type=n2d-standard-4 \

@@ -60,6 +60,7 @@ calicoctl get globalnetworkpolicy -o yaml | grep -B5 -A 20 "egress"
 KUBE_SVC_IP=$(kubectl get svc kubernetes -o jsonpath='{.spec.clusterIP}')
 echo "Kubernetes Service IP: $KUBE_SVC_IP"
 # Test direct access
+
 kubectl exec <pod-name> -- nc -zv $KUBE_SVC_IP 443
 ```
 

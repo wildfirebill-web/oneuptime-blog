@@ -47,6 +47,7 @@ flowchart TB
 
 ```bash
 # Fleet is automatically installed with Rancher
+
 # Access via Rancher UI: Continuous Delivery > Git Repos
 
 # Or install standalone

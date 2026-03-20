@@ -24,6 +24,7 @@ Start by enabling the API and creating the hub resource.
 
 ```bash
 # Enable the Network Connectivity API
+
 gcloud services enable networkconnectivity.googleapis.com \
   --project=hub-project
 

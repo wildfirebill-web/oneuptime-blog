@@ -43,6 +43,7 @@ flowchart LR
 
 ```bash
 # macOS
+
 brew install helmfile
 
 # Linux

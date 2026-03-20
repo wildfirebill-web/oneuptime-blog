@@ -47,6 +47,7 @@ Enable the GlusterFS repository and install the server package on both nodes:
 
 ```bash
 # On both gluster1 and gluster2
+
 sudo dnf install -y centos-release-gluster
 sudo dnf install -y glusterfs-server
 ```

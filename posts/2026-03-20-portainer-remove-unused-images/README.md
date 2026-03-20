@@ -52,6 +52,7 @@ For more control, use the Docker CLI:
 
 ```bash
 # Remove all dangling (untagged) images:
+
 docker image prune
 
 # Remove ALL unused images (including tagged but not used):
@@ -69,7 +70,7 @@ docker image prune -a --filter "label=environment=test"
 # Remove images with a specific name pattern:
 docker images -q "myorg/*" | xargs docker rmi -f
 
-# Remove all images (aggressive — removes everything including in-use):
+# Remove all images (aggressive - removes everything including in-use):
 # WARNING: This will break running containers if they need to restart
 docker images -aq | xargs docker rmi -f
 ```
@@ -137,10 +138,10 @@ docker system prune -a --volumes --force
 ```
 
 In Portainer, you can do this per-resource type:
-- **Images > Prune** — unused images
+- **Images > Prune** - unused images
 - **Containers > Remove** stopped containers
-- **Volumes > Prune** — unused volumes
-- **Networks > Prune** — unused networks
+- **Volumes > Prune** - unused volumes
+- **Networks > Prune** - unused networks
 
 ## Step 8: Protecting Images from Cleanup
 

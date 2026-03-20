@@ -18,6 +18,7 @@ Update your settings for production use.
 
 ```python
 # settings/production.py
+
 import os
 
 DEBUG = False

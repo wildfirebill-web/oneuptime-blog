@@ -24,6 +24,7 @@ A Talos-managed Kubernetes cluster uses several sets of certificates:
 
 ```bash
 # View the current certificates on a Talos node
+
 talosctl get certificates --nodes <node-ip>
 
 # Check certificate expiration dates

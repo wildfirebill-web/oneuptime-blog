@@ -19,6 +19,7 @@ VPC_NAME="vpc-main"
 SUBNET_NAME="subnet-web"
 
 # Create VPC first (if not exists)
+
 gcloud compute networks create "$VPC_NAME" \
     --subnet-mode=custom \
     --project="$PROJECT"
@@ -112,22 +113,22 @@ output "app_subnet_ipv6" {
 
 ## GCP IPv6 Architecture Concepts
 
-```
+```text
 GCP IPv6 Types:
-  External IPv6 — GCP-assigned globally routable /96 prefix
+  External IPv6 - GCP-assigned globally routable /96 prefix
     → VMs get addresses reachable from internet
     → Subnet gets /48 from GCP's public IPv6 range
     → Used for internet-facing workloads
 
-  Internal IPv6 — ULA (Unique Local Addresses) /96
+  Internal IPv6 - ULA (Unique Local Addresses) /96
     → VMs get addresses only reachable within VPC
     → Good for backend services not exposed to internet
     → Unique per-subnet, not globally routable
 
 Stack Types:
-  IPV4_ONLY    — Only IPv4 (default)
-  IPV4_IPV6    — Both IPv4 and IPv6 (dual-stack)
-  IPV6_ONLY    — Only IPv6 (requires DNS64/NAT64)
+  IPV4_ONLY    - Only IPv4 (default)
+  IPV4_IPV6    - Both IPv4 and IPv6 (dual-stack)
+  IPV6_ONLY    - Only IPv6 (requires DNS64/NAT64)
 ```
 
 ## Verify VPC IPv6 Configuration

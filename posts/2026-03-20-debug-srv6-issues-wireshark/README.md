@@ -14,6 +14,7 @@ Wireshark fully decodes SRv6 packets including the Segment Routing Header (SRH),
 
 ```bash
 # Capture all IPv6 traffic with Routing Header (SRH)
+
 # IPv6 Routing Header type = 43
 sudo tcpdump -i eth0 -n -w /tmp/srv6_capture.pcap \
   "ip6 proto 43"
@@ -30,7 +31,7 @@ sudo tcpdump -i eth0 -c 1000 -w /tmp/srv6_test.pcap \
 
 ## Step 2: Wireshark Display Filters for SRv6
 
-```
+```text
 # All SRv6 packets (Routing Header Type 4)
 ipv6.routing.type == 4
 
@@ -53,7 +54,7 @@ ipv6.routing.srh.sid contains 5f00:2:3:
 ## Step 3: Inspect SRH Fields in Wireshark
 
 When you open a capture, expand the packet tree:
-```
+```text
 Frame N
 └─ Ethernet II
 └─ Internet Protocol Version 6
@@ -101,7 +102,7 @@ tshark -r /tmp/srv6_capture.pcap \
 
 ### Issue 1: Packet Looping (SL Never Decrements)
 
-```
+```javascript
 Symptom: Multiple packets with same SL value
 Cause: SID not recognized by endpoint node
 Fix: Verify End function is configured for the SID
@@ -109,7 +110,7 @@ Fix: Verify End function is configured for the SID
 
 ### Issue 2: ICMPv6 "Routing Header Problem" (Type 4, Code 0)
 
-```
+```text
 Filter: icmpv6.type == 4 and icmpv6.code == 0
 Cause: SRH processing error at an intermediate node
 Common causes:
@@ -120,7 +121,7 @@ Common causes:
 
 ### Issue 3: SRH Not Being Added (Missing Service Chain)
 
-```
+```text
 Filter: ipv6.dst == 5f00:3:1::1 and not ipv6.routing.type == 4
 Cause: Ingress encap route not matching or installed
 Fix: Check "ip -6 route show | grep seg6"
@@ -128,7 +129,7 @@ Fix: Check "ip -6 route show | grep seg6"
 
 ## Step 6: Protocol Stats in Wireshark
 
-```
+```text
 Statistics → Protocol Hierarchy:
   Look for "IPv6 Routing Header" percentage
 

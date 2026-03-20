@@ -28,6 +28,7 @@ Always start by updating your system packages to ensure you have the latest secu
 
 ```bash
 # Update the package list and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

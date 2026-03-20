@@ -34,6 +34,7 @@ Here is a complete ArgoCD Application for the AWS EBS CSI driver:
 
 ```yaml
 # applications/ebs-csi-driver.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

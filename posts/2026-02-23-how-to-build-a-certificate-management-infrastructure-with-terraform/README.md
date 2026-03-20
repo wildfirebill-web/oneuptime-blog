@@ -20,6 +20,7 @@ AWS Certificate Manager provides free public certificates that automatically ren
 # modules/acm_certificate/main.tf
 
 # Request the certificate
+
 resource "aws_acm_certificate" "this" {
   domain_name               = var.domain_name
   subject_alternative_names = var.subject_alternative_names

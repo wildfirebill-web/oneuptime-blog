@@ -16,6 +16,7 @@ First, create a dedicated group for SFTP-only users and add a new user:
 
 ```bash
 # Create a group for SFTP-only access
+
 sudo groupadd sftpusers
 
 # Create a user with no shell access, assigned to the sftpusers group

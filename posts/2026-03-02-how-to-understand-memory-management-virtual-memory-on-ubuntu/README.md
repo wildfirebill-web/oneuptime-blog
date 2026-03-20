@@ -24,6 +24,7 @@ Key implications:
 
 ```bash
 # See process virtual vs resident memory
+
 ps aux --sort=-rss | head -10
 
 # VIRT = Virtual memory size (total address space claimed)

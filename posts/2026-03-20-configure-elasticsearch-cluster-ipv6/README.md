@@ -16,6 +16,7 @@ Elasticsearch is a distributed search and analytics engine. Configuring it for I
 # /etc/elasticsearch/elasticsearch.yml
 
 # Cluster name
+
 cluster.name: my-elasticsearch-cluster
 
 # Node name

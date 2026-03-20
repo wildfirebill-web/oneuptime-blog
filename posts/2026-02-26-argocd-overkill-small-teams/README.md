@@ -54,6 +54,7 @@ If you decide ArgoCD is worth it, keep the setup simple. Here is the minimal con
 
 ```bash
 # Create namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD - non-HA is fine for small teams

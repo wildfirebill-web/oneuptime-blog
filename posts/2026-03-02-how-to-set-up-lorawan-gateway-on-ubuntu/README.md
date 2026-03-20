@@ -39,6 +39,7 @@ ChirpStack provides an APT repository:
 
 ```bash
 # Add ChirpStack repository
+
 sudo apt-get install -y apt-transport-https dirmngr
 sudo gpg --dearmor -o /usr/share/keyrings/chirpstack-archive-keyring.gpg < \
   <(wget -qO - https://artifacts.chirpstack.io/downloads/chirpstack/chirpstack.gpg)

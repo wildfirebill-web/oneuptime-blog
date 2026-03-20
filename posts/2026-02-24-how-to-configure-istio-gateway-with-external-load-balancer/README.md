@@ -243,6 +243,7 @@ After deployment, check the load balancer is provisioned:
 
 ```bash
 # Get the external IP/hostname
+
 kubectl get svc istio-ingressgateway -n istio-system
 
 # Wait for provisioning (can take a few minutes)

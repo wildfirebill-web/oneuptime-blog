@@ -18,6 +18,7 @@ This is the most common approach and works on all platforms.
 
 ```bash
 # Retrieve and decode the initial admin password
+
 kubectl -n argocd get secret argocd-initial-admin-secret \
   -o jsonpath="{.data.password}" | base64 -d
 echo

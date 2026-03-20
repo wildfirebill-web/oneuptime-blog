@@ -33,6 +33,7 @@ Compared to other time series databases, ADX offers:
 
 ```bash
 # Create an Azure Data Explorer cluster
+
 az kusto cluster create \
     --name adx-metrics-cluster \
     --resource-group rg-monitoring \

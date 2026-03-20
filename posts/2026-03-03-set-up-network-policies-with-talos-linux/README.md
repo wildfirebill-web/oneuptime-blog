@@ -44,6 +44,7 @@ First, disable the default CNI in your Talos machine configuration:
 
 ```yaml
 # Disable default Flannel CNI
+
 cluster:
   network:
     cni:

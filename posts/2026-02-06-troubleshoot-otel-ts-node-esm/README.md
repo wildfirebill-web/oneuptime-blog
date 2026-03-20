@@ -192,6 +192,7 @@ For production TypeScript applications, always pre-compile:
 
 ```bash
 # Build step
+
 tsc --outDir dist
 
 # Start with proper OpenTelemetry hooks

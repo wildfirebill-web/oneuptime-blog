@@ -254,6 +254,7 @@ Both require matching, but `filter` does not affect scoring:
 
 ```bash
 # Using must - affects relevance score
+
 {
   "bool": {
     "must": [

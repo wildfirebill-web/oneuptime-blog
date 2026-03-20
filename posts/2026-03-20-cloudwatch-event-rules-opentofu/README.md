@@ -8,7 +8,7 @@ Description: Learn how to create CloudWatch Event Rules with OpenTofu to trigger
 
 ## Introduction
 
-CloudWatch Events (now Amazon EventBridge) routes events from AWS services, custom applications, and scheduled expressions to target services like Lambda, SQS, SNS, and Step Functions. Event rules are the foundation of event-driven automation in AWS—they enable scheduled jobs, infrastructure automation, and cross-service workflows without polling.
+CloudWatch Events (now Amazon EventBridge) routes events from AWS services, custom applications, and scheduled expressions to target services like Lambda, SQS, SNS, and Step Functions. Event rules are the foundation of event-driven automation in AWS-they enable scheduled jobs, infrastructure automation, and cross-service workflows without polling.
 
 ## Prerequisites
 
@@ -19,6 +19,7 @@ CloudWatch Events (now Amazon EventBridge) routes events from AWS services, cust
 
 ```hcl
 # Run a Lambda function on a schedule
+
 resource "aws_cloudwatch_event_rule" "daily_cleanup" {
   name                = "${var.project_name}-daily-cleanup"
   description         = "Trigger cleanup Lambda every day at 2 AM UTC"

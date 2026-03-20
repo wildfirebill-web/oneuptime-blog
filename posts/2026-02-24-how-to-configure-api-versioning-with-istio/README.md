@@ -229,6 +229,7 @@ Start with 10% on v2 and monitor. If things look good, increase:
 
 ```yaml
 # Week 2
+
 - destination:
     host: user-service.backend.svc.cluster.local
     subset: v1

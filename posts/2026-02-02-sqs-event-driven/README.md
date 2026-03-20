@@ -713,6 +713,7 @@ The following Terraform configuration creates a complete SQS setup with queues, 
 
 ```hcl
 # Provider configuration
+
 provider "aws" {
   region = var.aws_region
 }

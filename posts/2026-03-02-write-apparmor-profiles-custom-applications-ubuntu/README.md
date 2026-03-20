@@ -63,6 +63,7 @@ Examples:
 
 ```text
 # Read-only access to a config file
+
 /etc/myapp/config.conf r,
 
 # Read and write to a data directory

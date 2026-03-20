@@ -20,6 +20,7 @@ In Elixir, the `=` operator is called the match operator. It doesn't just assign
 
 ```elixir
 # This isn't assignment - it's a match
+
 x = 1
 # x is bound to 1 because the pattern "x" matches the value 1
 

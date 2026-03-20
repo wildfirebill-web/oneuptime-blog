@@ -20,6 +20,7 @@ The GitRepository resource is often the starting point for troubleshooting, sinc
 
 ```bash
 # Describe a specific GitRepository
+
 kubectl describe gitrepository fleet-infra -n flux-system
 ```
 

@@ -16,6 +16,7 @@ When Git says your branch is behind, it means the remote branch has commits that
 
 ```bash
 # Typical message after git fetch or git status
+
 Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 ```

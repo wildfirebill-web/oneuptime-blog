@@ -40,6 +40,7 @@ Key RKE2 characteristics:
 
 ```bash
 # Check RKE2 is running
+
 sudo systemctl status rke2-server
 
 # Set up kubeconfig

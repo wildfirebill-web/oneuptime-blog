@@ -27,6 +27,7 @@ You need the AWS collection for Ansible and properly configured AWS credentials:
 
 ```bash
 # Install the AWS Ansible collection
+
 ansible-galaxy collection install amazon.aws
 
 # Install the required Python libraries

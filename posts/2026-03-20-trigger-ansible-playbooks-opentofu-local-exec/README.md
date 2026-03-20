@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Ansible, local-exec, Provisioner, Automation
+Tags: OpenTofu, Ansible, local-exec, Provisioners, Automation
 
 Description: Learn how to use OpenTofu's local-exec provisioner to trigger Ansible playbooks immediately after infrastructure resources are created or modified.
 
@@ -161,4 +161,4 @@ Use separate pipeline stages when:
 
 ## Conclusion
 
-The `local-exec` + `null_resource` pattern is effective for initial server bootstrapping, but overusing it creates tight coupling between infrastructure state and application configuration. Use the `triggers` map carefully — it determines when Ansible re-runs, and accidentally triggering it on every `tofu apply` can cause unnecessary configuration churn.
+The `local-exec` + `null_resource` pattern is effective for initial server bootstrapping, but overusing it creates tight coupling between infrastructure state and application configuration. Use the `triggers` map carefully - it determines when Ansible re-runs, and accidentally triggering it on every `tofu apply` can cause unnecessary configuration churn.

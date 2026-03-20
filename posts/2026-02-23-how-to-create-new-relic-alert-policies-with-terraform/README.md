@@ -36,6 +36,7 @@ variable "api_key" { type = string; sensitive = true }
 
 ```hcl
 # Create alert policies for different severity levels
+
 resource "newrelic_alert_policy" "critical" {
   name                = "Critical Infrastructure Alerts"
   incident_preference = "PER_CONDITION_AND_TARGET"

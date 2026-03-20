@@ -16,6 +16,7 @@ Start by understanding what Pulumi manages.
 
 ```bash
 # Export the Pulumi stack state to JSON
+
 pulumi stack export --stack prod > pulumi-state.json
 
 # View a summary of resources in the stack
@@ -167,4 +168,4 @@ git commit -m "Archive Pulumi code - migrated to OpenTofu"
 
 ## Summary
 
-Migrating from Pulumi to OpenTofu follows the standard import workflow: export Pulumi state to understand existing resource IDs, write HCL configuration that matches your current infrastructure, import resources into OpenTofu state, validate with `tofu plan` (no changes expected), and remove resources from Pulumi state. The cloud resources themselves are never touched during migration — only the management layer changes.
+Migrating from Pulumi to OpenTofu follows the standard import workflow: export Pulumi state to understand existing resource IDs, write HCL configuration that matches your current infrastructure, import resources into OpenTofu state, validate with `tofu plan` (no changes expected), and remove resources from Pulumi state. The cloud resources themselves are never touched during migration - only the management layer changes.

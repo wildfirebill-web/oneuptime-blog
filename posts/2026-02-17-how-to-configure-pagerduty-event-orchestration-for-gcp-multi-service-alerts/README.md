@@ -28,6 +28,7 @@ Set up PagerDuty services that map to your team structure or service ownership.
 
 ```bash
 # Using PagerDuty API to create services
+
 # Create a service for the infrastructure team
 curl -X POST "https://api.pagerduty.com/services" \
   -H "Authorization: Token token=YOUR_PD_API_KEY" \

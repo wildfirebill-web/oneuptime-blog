@@ -143,6 +143,7 @@ def calculate_test_frequency_days(system: BackupSystem) -> int:
     return max(7, int(adjusted_days))  # Minimum weekly for any system
 
 # Example usage
+
 database_system = BackupSystem(
     name="Production PostgreSQL",
     data_criticality=DataCriticality.CRITICAL,

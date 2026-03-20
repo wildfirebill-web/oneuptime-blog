@@ -19,6 +19,7 @@ A Containerfile is a text file with instructions that describe how to assemble a
 ```bash
 cat > Containerfile << 'EOF'
 # Start from the UBI 9 minimal base image
+
 FROM registry.access.redhat.com/ubi9/ubi-minimal
 
 # Set maintainer label

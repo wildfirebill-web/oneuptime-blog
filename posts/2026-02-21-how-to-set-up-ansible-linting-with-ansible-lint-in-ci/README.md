@@ -16,6 +16,7 @@ This guide covers installing and configuring ansible-lint, setting up rules, and
 
 ```bash
 # Install the latest version
+
 pip install ansible-lint
 
 # Or pin to a specific version for consistency

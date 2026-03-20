@@ -41,6 +41,7 @@ Create a unified configuration system that works across all environments:
 
 ```yaml
 # config/base.yaml - Shared configuration
+
 app:
   name: myservice
   log_level: info

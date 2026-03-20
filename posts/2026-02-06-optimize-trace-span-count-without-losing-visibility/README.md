@@ -35,6 +35,7 @@ The built-in TraceIdRatioBased sampler in OpenTelemetry works well for this. It 
 
 ```python
 # Python SDK configuration with 10% sampling rate
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import TraceIdRatioBased

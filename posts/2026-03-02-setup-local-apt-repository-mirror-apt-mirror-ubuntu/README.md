@@ -22,6 +22,7 @@ A full Ubuntu mirror for a single release (like 22.04 Jammy) with amd64 architec
 
 ```bash
 # Install apt-mirror
+
 sudo apt install apt-mirror
 
 # The main configuration file

@@ -14,6 +14,7 @@ OpenVPN supports plugin-based authentication, allowing you to validate VPN crede
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get install openvpn-auth-ldap
 
 # The plugin library will be installed to:
@@ -149,11 +150,11 @@ ldapsearch -x \
 sudo journalctl -u openvpn@server -f
 
 # Common errors:
-# "LDAP bind failed" — wrong BindDN or password
-# "User not found" — wrong BaseDN or SearchFilter
-# "Group check failed" — user not in required group
+# "LDAP bind failed" - wrong BindDN or password
+# "User not found" - wrong BaseDN or SearchFilter
+# "Group check failed" - user not in required group
 ```
 
 ## Conclusion
 
-LDAP authentication for OpenVPN centralizes access control in your existing directory service. Users connect with corporate credentials, and access is revoked automatically when their account is disabled — eliminating the need to manually revoke VPN certificates when employees leave.
+LDAP authentication for OpenVPN centralizes access control in your existing directory service. Users connect with corporate credentials, and access is revoked automatically when their account is disabled - eliminating the need to manually revoke VPN certificates when employees leave.

@@ -27,6 +27,7 @@ The most basic form of Terraform auditing is version control. Every change to yo
 
 ```hcl
 # Example: .gitignore for Terraform projects
+
 # Never commit state files or secrets
 *.tfstate
 *.tfstate.backup

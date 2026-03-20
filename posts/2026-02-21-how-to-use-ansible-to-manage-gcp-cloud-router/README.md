@@ -27,6 +27,7 @@ Cloud Router serves several purposes depending on your architecture:
 
 ```bash
 # Install the GCP collection
+
 ansible-galaxy collection install google.cloud
 ```
 

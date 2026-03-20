@@ -106,6 +106,7 @@ kubectl logs deploy/my-service -c istio-proxy --tail=500 | grep " 503 "
 
 ```bash
 # Filter for 503s and extract the response flag
+
 kubectl logs deploy/my-service -c istio-proxy --tail=500 | grep " 503 " | awk '{print $6}' | sort | uniq -c | sort -rn
 ```
 

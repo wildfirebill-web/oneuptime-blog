@@ -1,4 +1,4 @@
-# How to Configure Casdoor SSO with Portainer
+# How to Configure Casdoor SSO with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Quick deployment with Docker:
 
 ```yaml
 # casdoor-stack.yml
+
 version: "3.8"
 
 services:
@@ -62,7 +63,7 @@ docker compose -f casdoor-stack.yml up -d
 2. Go to **Applications** → **Add**
 
 Fill in:
-```
+```sql
 Name:          portainer
 DisplayName:   Portainer
 Organization:  built-in

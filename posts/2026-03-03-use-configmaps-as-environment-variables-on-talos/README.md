@@ -29,6 +29,7 @@ Let us start by creating a ConfigMap that we will reference in our pod specifica
 
 ```yaml
 # app-settings.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

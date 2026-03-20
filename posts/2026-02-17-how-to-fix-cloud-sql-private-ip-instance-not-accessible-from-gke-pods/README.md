@@ -30,6 +30,7 @@ First, make sure your Cloud SQL instance actually has a private IP assigned.
 
 ```bash
 # Check the instance IP addresses
+
 gcloud sql instances describe my-instance \
     --project=my-project \
     --format="json(ipAddresses, settings.ipConfiguration)"

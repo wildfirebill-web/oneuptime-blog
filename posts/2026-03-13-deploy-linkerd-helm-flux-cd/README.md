@@ -29,6 +29,7 @@ Linkerd requires a trust anchor (root CA) certificate. Generate it locally and s
 
 ```bash
 # Generate trust anchor (valid for 10 years)
+
 step certificate create root.linkerd.cluster.local ca.crt ca.key \
   --profile root-ca \
   --no-password \

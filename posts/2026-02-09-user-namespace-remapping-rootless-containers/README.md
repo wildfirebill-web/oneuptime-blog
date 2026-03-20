@@ -22,6 +22,7 @@ Verify your kernel supports user namespaces:
 
 ```bash
 # Check kernel support
+
 ssh node01 "cat /proc/sys/user/max_user_namespaces"
 # Should return a positive number
 

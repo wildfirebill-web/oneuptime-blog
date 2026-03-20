@@ -27,6 +27,7 @@ Every Terraform resource has a set of required arguments. If you do not provide 
 
 ```hcl
 # MISSING REQUIRED ARGUMENTS
+
 resource "aws_instance" "web" {
   # Missing "ami" - required
   # Missing "instance_type" - required

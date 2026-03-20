@@ -35,6 +35,7 @@ We will cover both options, starting with single-node since it is simpler and su
 
 ```bash
 # Add the Victoria Metrics Helm repository
+
 helm repo add vm https://victoriametrics.github.io/helm-charts/
 helm repo update
 ```

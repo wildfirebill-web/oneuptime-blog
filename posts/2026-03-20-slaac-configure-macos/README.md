@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, macOS, IPv6, Address Autoconfiguration, networksetup, System Preferences
+Tags: SLAAC, macOS, IPv6, Address Autoconfiguration, Networksetup, System Preferences
 
 Description: Configure and verify IPv6 SLAAC on macOS using System Settings, networksetup command-line tool, and sysctl to manage automatic IPv6 address assignment.
 
@@ -14,6 +14,7 @@ macOS enables IPv6 SLAAC by default for all network interfaces. The macOS networ
 
 ```bash
 # Show all IPv6 addresses including SLAAC-generated
+
 ifconfig en0 inet6
 
 # Example output:
@@ -95,7 +96,7 @@ sudo sysctl -w net.inet6.ip6.temppltime=21600
 
 ## System Settings (macOS Ventura and later)
 
-```
+```sql
 Graphical configuration in macOS:
 
 1. Open System Settings → Network

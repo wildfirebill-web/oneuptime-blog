@@ -55,6 +55,7 @@ Define a single GitRepository source shared by all per-service Kustomizations.
 
 ```yaml
 # clusters/production/sources/app-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Load Balancing, Session Persistence, Sticky Sessions, HAProxy, NGINX, DevOps, High Availability, Infrastructure
+Tags: Load Balancing, Session Persistence, Sticky Sessions, HAProxy, Nginx, DevOps, High Availability, Infrastructure
 
 Description: A comprehensive guide to implementing session persistence in load-balanced environments using sticky sessions, cookie-based affinity, IP hash, and cloud load balancer configurations.
 
@@ -41,6 +41,7 @@ The best solution is often to eliminate the need for session persistence entirel
 
 ```python
 # Instead of storing session data in server memory...
+
 # Store it in Redis (accessible by all servers)
 
 import redis

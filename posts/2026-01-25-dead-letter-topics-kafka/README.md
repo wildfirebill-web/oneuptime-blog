@@ -189,6 +189,7 @@ Create the DLT with appropriate retention settings:
 
 ```bash
 # Create DLT with longer retention for investigation
+
 kafka-topics.sh --bootstrap-server kafka:9092 \
     --create \
     --topic orders.DLT \

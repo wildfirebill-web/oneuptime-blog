@@ -43,6 +43,7 @@ Create a separate settings file for production. Never use development settings i
 
 ```python
 # settings/production.py
+
 import os
 from .base import *
 

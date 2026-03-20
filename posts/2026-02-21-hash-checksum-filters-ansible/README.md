@@ -47,6 +47,7 @@ When deploying multiple environments or tenants, you often need unique but deter
 
 ```yaml
 # unique_names.yml - Generate unique resource names from inputs
+
 - name: Deploy tenant infrastructure
   hosts: localhost
   vars:

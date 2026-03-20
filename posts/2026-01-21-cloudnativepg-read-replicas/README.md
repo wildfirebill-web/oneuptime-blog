@@ -64,6 +64,7 @@ spec:
 
 ```bash
 # Add more replicas
+
 kubectl patch cluster postgres-cluster --type merge \
   -p '{"spec":{"instances":5}}'
 

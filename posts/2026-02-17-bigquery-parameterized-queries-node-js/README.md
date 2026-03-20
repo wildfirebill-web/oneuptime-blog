@@ -20,6 +20,7 @@ Install the BigQuery client library in your project.
 
 ```bash
 # Install the BigQuery library
+
 npm install @google-cloud/bigquery
 ```
 

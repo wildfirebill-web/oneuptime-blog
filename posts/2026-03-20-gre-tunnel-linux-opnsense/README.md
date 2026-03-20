@@ -12,7 +12,7 @@ A GRE tunnel between Linux and OPNsense creates a virtual point-to-point link fo
 
 ## Architecture
 
-```
+```text
 Linux Host (10.0.0.1)     ──GRE Tunnel──     OPNsense (10.0.0.2)
   172.16.1.1/30                                   172.16.1.2/30
   LAN: 192.168.1.0/24                             LAN: 192.168.2.0/24
@@ -22,6 +22,7 @@ Linux Host (10.0.0.1)     ──GRE Tunnel──     OPNsense (10.0.0.2)
 
 ```bash
 # Create the GRE tunnel
+
 ip tunnel add gre1 \
   mode gre \
   local 10.0.0.1 \
@@ -41,7 +42,7 @@ ip route add 192.168.2.0/24 via 172.16.1.2 dev gre1
 
 ## OPNsense Side Configuration
 
-```
+```text
 Interfaces → Other Types → GRE → Add
 
   Parent Interface: WAN (or the interface facing Linux host)
@@ -53,7 +54,7 @@ Interfaces → Other Types → GRE → Add
 
 After saving:
 
-```
+```text
 Interfaces → Assignments
   Assign the new GRE interface (greX)
   Enable the interface
@@ -62,7 +63,7 @@ Interfaces → Assignments
 
 ## Static Routes on OPNsense
 
-```
+```text
 System → Routes → Configuration → Add
 
   Network: 192.168.1.0/24
@@ -72,7 +73,7 @@ System → Routes → Configuration → Add
 
 ## Firewall Rules on OPNsense
 
-```
+```text
 Firewall → Rules → GRE interface
 
 Add rule:

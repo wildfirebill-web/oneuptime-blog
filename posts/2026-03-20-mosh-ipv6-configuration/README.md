@@ -22,6 +22,7 @@ On Ubuntu/Debian:
 
 ```bash
 # Install Mosh on server and client
+
 sudo apt update && sudo apt install -y mosh
 ```
 

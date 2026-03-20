@@ -54,6 +54,7 @@ Never hardcode configuration. Use environment variables with proper validation:
 
 ```python
 # app/config.py
+
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 

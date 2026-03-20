@@ -16,6 +16,7 @@ The `range` action iterates over arrays and maps, executing the template block f
 
 ```yaml
 # Iterating over an array
+
 {{- range .Values.environments }}
 - {{ . }}
 {{- end }}

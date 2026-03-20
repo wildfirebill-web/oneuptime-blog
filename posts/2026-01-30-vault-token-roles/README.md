@@ -47,6 +47,7 @@ The following command creates a basic token role with default settings:
 
 ```bash
 # Create a token role named "app-token-role"
+
 # This role will be used to generate tokens for application services
 vault write auth/token/roles/app-token-role \
     allowed_policies="app-read,app-write" \

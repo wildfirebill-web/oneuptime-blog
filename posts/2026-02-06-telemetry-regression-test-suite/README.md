@@ -14,6 +14,7 @@ Start by documenting what your telemetry should look like. Create a specificatio
 
 ```yaml
 # telemetry-spec.yaml
+
 spans:
   - name: "POST /api/orders"
     kind: SERVER

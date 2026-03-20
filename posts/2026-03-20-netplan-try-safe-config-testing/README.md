@@ -14,6 +14,7 @@ Description: Use netplan try to safely test Netplan configuration changes with a
 
 ```bash
 # Apply configuration with automatic rollback
+
 netplan try
 
 # Netplan shows:
@@ -53,7 +54,7 @@ netplan try
 # Step 5: If working, confirm in the original session
 # Press ENTER
 
-# If broken, do nothing — it auto-reverts after timeout
+# If broken, do nothing - it auto-reverts after timeout
 ```
 
 ## netplan try vs netplan apply
@@ -100,4 +101,4 @@ echo "" | timeout 10 netplan try || true
 
 ## Conclusion
 
-`netplan try` is the safest way to apply Netplan changes on remote servers. It applies changes immediately but auto-reverts to the previous configuration if not confirmed within the timeout. Always use `netplan try` before `netplan apply` on production servers — one lost SSH session is worth the extra step.
+`netplan try` is the safest way to apply Netplan changes on remote servers. It applies changes immediately but auto-reverts to the previous configuration if not confirmed within the timeout. Always use `netplan try` before `netplan apply` on production servers - one lost SSH session is worth the extra step.

@@ -49,6 +49,7 @@ First, upload some blobs with tags so you have data to work with:
 
 ```bash
 # Upload a blob with index tags
+
 # Tags are key-value pairs separated by '&'
 az storage blob upload \
   --account-name mystorageaccount \

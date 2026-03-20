@@ -18,6 +18,7 @@ pg_dump is PostgreSQL's built-in utility for creating database backups. It creat
 
 ```bash
 # Basic backup to SQL file
+
 pg_dump -h localhost -U postgres mydb > backup.sql
 
 # With password (prompted)

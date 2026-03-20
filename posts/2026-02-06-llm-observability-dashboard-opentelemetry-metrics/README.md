@@ -47,6 +47,7 @@ Let's define a comprehensive set of OpenTelemetry metrics for LLM observability.
 
 ```python
 # llm_metrics.py - Define all LLM observability metrics
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("llm-service")

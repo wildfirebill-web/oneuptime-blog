@@ -14,6 +14,7 @@ GCP Secret Manager stores sensitive data as versioned secrets and controls acces
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     google = {
@@ -84,7 +85,7 @@ resource "google_sql_database_instance" "main" {
 resource "google_sql_user" "app" {
   name     = "app"
   instance = google_sql_database_instance.main.name
-  # Inject the secret value — never hardcoded
+  # Inject the secret value - never hardcoded
   password = data.google_secret_manager_secret_version.db_password.secret_data
 }
 ```

@@ -49,6 +49,7 @@ On Debian/Ubuntu:
 
 ```bash
 # Update package list and install WireGuard
+
 sudo apt update
 sudo apt install wireguard wireguard-tools
 

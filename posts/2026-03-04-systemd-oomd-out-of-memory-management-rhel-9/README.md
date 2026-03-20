@@ -26,6 +26,7 @@ graph TD
 
 ```bash
 # systemd-oomd is included in RHEL by default
+
 # Enable and start the service
 sudo systemctl enable --now systemd-oomd
 

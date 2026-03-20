@@ -29,6 +29,7 @@ Access Alertmanager UI:
 ```bash
 kubectl port-forward -n monitoring svc/alertmanager-operated 9093:9093
 # Open http://localhost:9093
+
 ```
 
 Create a silence:

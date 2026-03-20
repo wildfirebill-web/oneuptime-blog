@@ -36,6 +36,7 @@ Create a PAT in GitLab at User Settings > Access Tokens. Grant the `read_reposit
 
 ```yaml
 # gitlab-pat-credentials.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

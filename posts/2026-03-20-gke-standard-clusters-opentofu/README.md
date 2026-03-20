@@ -14,6 +14,7 @@ GKE Standard clusters give you full control over node configuration, machine typ
 
 ```hcl
 # main.tf - Production-ready GKE Standard cluster
+
 resource "google_container_cluster" "primary" {
   name     = "production-gke-cluster"
   location = "us-central1"  # Regional cluster for HA

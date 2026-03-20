@@ -85,6 +85,7 @@ After setting up multiple replicas, check how proxies are distributed across the
 
 ```bash
 # Check which istiod each proxy is connected to
+
 istioctl proxy-status
 ```
 

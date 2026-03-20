@@ -70,6 +70,7 @@ Install Fluentd using the td-agent package, which bundles Fluentd with commonly 
 
 ```bash
 # Ubuntu/Debian installation
+
 curl -fsSL https://toolbelt.treasuredata.com/sh/install-ubuntu-jammy-fluent-package5-lts.sh | sh
 
 # Start the service

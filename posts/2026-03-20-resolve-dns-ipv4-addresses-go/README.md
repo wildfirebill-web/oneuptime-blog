@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, DNS, IPv4, net package, Hostname Resolution, Networking
+Tags: Go, DNS, IPv4, Net package, Hostname Resolution, Networking
 
 Description: Learn how to resolve DNS hostnames to IPv4 addresses in Go using the net package, including filtering for IPv4-only results and reverse lookups.
 

@@ -162,6 +162,7 @@ The Tiltfile is where Tilt learns how to build and deploy your services. Create 
 # Tiltfile
 
 # Deploy observability infrastructure first
+
 k8s_yaml('k8s/jaeger.yaml')
 k8s_yaml('k8s/otel-collector.yaml')
 

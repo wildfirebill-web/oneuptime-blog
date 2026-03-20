@@ -20,6 +20,7 @@ Git configuration exists at three levels, each with different scope and priority
 
 ```bash
 # System level - applies to all users on the machine
+
 # Located at /etc/gitconfig
 git config --system user.name "Default Name"
 

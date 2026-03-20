@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Container Networking, Linux Namespaces, Overlay Networks, Docker, Kubernetes
+Tags: Container Networking, Linux Namespaces, Overlay Network, Docker, Kubernetes
 
 Description: A deep dive into container networking from Linux network namespaces to overlay networks and container-to-container communication.
 
@@ -37,6 +37,7 @@ graph TB
 ```bash
 #!/bin/bash
 # Demonstrates how container networking works under the hood
+
 # by manually creating network namespaces and connecting them
 
 # Step 1: Create two network namespaces (simulating two containers)

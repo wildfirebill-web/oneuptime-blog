@@ -30,6 +30,7 @@ The `artifacts-keyring` package handles authentication automatically using your 
 
 ```bash
 # Install the Azure Artifacts keyring helper
+
 pip install artifacts-keyring
 
 # Configure pip to use your Azure Artifacts feed

@@ -12,6 +12,7 @@ On cloud providers, `LoadBalancer` services automatically get external IPs. On b
 
 ```bash
 # Install MetalLB using the official manifest
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.5/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready

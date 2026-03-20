@@ -14,6 +14,7 @@ The `ansible.builtin.known_hosts` module manages SSH host key entries in the `kn
 
 ```yaml
 # Add a host's SSH key to known_hosts
+
 - name: Add server SSH key to known_hosts
   ansible.builtin.known_hosts:
     name: server1.example.com

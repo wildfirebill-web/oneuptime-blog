@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, SSL, Self-Signed Certificate, TLS, Troubleshooting
+Tags: Portainer, SSL, Self-Signed Certificates, TLS, Troubleshooting
 
 Description: Learn how to fix browser and API client warnings about Portainer's self-signed certificate with trusted certificates or proper CA configuration.
 
@@ -23,6 +23,7 @@ Replace the self-signed cert with one from Let's Encrypt or your commercial CA:
 
 ```bash
 # Obtain a Let's Encrypt certificate (requires public domain)
+
 sudo certbot certonly --standalone \
   -d portainer.example.com \
   --email admin@example.com \
@@ -92,7 +93,7 @@ sudo update-ca-certificates
 
 ## Solution 3: Add Certificate Exception in the Browser
 
-For development environments only — permanently trust the certificate:
+For development environments only - permanently trust the certificate:
 
 **Chrome/Edge:**
 1. Click "Advanced" on the warning page

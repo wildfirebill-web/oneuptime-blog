@@ -60,6 +60,7 @@ echo "Done"
 
 ```bash
 # Method 1: Use grep to find lines with odd number of quotes
+
 grep -n '"' script.sh | awk -F'"' 'NF%2==0 {print "Line " NR ": possible unclosed quote"}'
 
 # Method 2: Use syntax highlighting in vim

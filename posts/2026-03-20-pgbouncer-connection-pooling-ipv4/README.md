@@ -32,6 +32,7 @@ dnf install pgbouncer -y    # RHEL/Rocky
 
 [databases]
 # Map client-facing database names to backend IPv4 addresses
+
 # Format: dbname = host=ip port=5432 dbname=actual_db
 myapp_db = host=10.0.0.10 port=5432 dbname=production_db
 reporting_db = host=10.0.0.11 port=5432 dbname=reporting
@@ -70,7 +71,7 @@ logfile = /var/log/pgbouncer/pgbouncer.log
 pidfile = /var/run/pgbouncer/pgbouncer.pid
 ```
 
-## userlist.txt — Authentication File
+## userlist.txt - Authentication File
 
 ```bash
 # /etc/pgbouncer/userlist.txt
@@ -106,5 +107,5 @@ psql -h 192.168.1.5 -p 5432 -U pgbouncer pgbouncer -c "SHOW POOLS;"
 
 - `transaction` pooling mode provides the best performance for web application backends.
 - Set `max_client_conn` to handle the maximum number of application connections expected.
-- `default_pool_size` is the key tuning parameter — it controls how many real PostgreSQL connections are maintained.
+- `default_pool_size` is the key tuning parameter - it controls how many real PostgreSQL connections are maintained.
 - Use `SHOW POOLS;` via the PgBouncer admin interface to monitor active and idle connections.

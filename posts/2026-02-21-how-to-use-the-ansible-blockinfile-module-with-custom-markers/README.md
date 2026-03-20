@@ -18,6 +18,7 @@ By default, `blockinfile` uses these markers:
 
 ```text
 # BEGIN ANSIBLE MANAGED BLOCK
+
 (your content here)
 # END ANSIBLE MANAGED BLOCK
 ```

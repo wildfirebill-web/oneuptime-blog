@@ -29,6 +29,7 @@ Trivy (which absorbed tfsec) is the fastest way to scan Terraform for security i
 
 ```bash
 # Install trivy
+
 brew install trivy
 
 # Scan a directory of Terraform files

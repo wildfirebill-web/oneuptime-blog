@@ -110,6 +110,7 @@ infrastructure/
 
 ```text
 # Team repos
+
 platform-infrastructure/
 application-team-a-infra/
 application-team-b-infra/

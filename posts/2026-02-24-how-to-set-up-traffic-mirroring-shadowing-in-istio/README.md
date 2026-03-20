@@ -150,6 +150,7 @@ Send a request and check that both services receive it:
 
 ```bash
 # Send a test request
+
 kubectl exec deploy/sleep -- curl -s http://product-service:8080/api/products
 
 # Check v1 logs
@@ -268,7 +269,7 @@ spec:
             subset: v1
 ```
 
-### Resource Usage
+Resource Usage
 
 Mirrored traffic consumes resources on the mirror service. If you are mirroring 100% of production traffic, the mirror needs enough capacity to handle it. Monitor CPU and memory on the mirror pods.
 

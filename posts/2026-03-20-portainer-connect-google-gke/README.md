@@ -1,4 +1,4 @@
-# How to Connect Portainer to a Google GKE Cluster
+# How to Connect Portainer to a Google GKE Cluster - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Google Kubernetes Engine (GKE) is Google Cloud's managed Kubernetes service. Con
 
 ```bash
 # Authenticate if needed
+
 gcloud auth login
 
 # Get credentials for your GKE cluster

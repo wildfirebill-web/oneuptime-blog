@@ -44,6 +44,7 @@ from opentelemetry.propagate import set_global_textmap
 import requests
 
 # Configure the propagator to include baggage
+
 # Both trace context and baggage must be propagated
 propagator = CompositePropagator([
     TraceContextTextMapPropagator(),

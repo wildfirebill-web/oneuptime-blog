@@ -43,6 +43,7 @@ This job only schedules on nodes labeled with hardware=gpu and zone=us-east-1a. 
 
 ```bash
 # Label nodes
+
 kubectl label nodes node-gpu-1 hardware=gpu
 kubectl label nodes node-gpu-1 zone=us-east-1a
 ```

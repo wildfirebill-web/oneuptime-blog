@@ -39,6 +39,7 @@ For this tutorial, assume:
 
 ```bash
 # Install BIND9
+
 sudo apt update
 sudo apt install -y bind9 bind9-utils
 

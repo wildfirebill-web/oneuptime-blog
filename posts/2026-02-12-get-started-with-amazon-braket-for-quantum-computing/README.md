@@ -54,6 +54,7 @@ Install the Braket SDK:
 
 ```bash
 # Install the Amazon Braket SDK and local simulator
+
 pip install amazon-braket-sdk amazon-braket-default-simulator
 ```
 

@@ -41,6 +41,7 @@ Check your current storage driver and switch to overlay:
 
 ```bash
 # Check current driver
+
 podman info --format '{{.Store.GraphDriverName}}'
 
 # If not overlay, reset storage and reconfigure

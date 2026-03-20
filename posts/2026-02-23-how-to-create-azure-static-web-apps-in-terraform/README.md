@@ -29,6 +29,7 @@ The Terraform configuration is straightforward:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

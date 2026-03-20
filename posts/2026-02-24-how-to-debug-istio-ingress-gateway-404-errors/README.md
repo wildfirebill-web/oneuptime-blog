@@ -30,6 +30,7 @@ Start by checking what the ingress gateway actually knows about:
 
 ```bash
 # List all listeners
+
 istioctl proxy-config listeners deploy/istio-ingressgateway -n istio-system
 
 # List all routes

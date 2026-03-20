@@ -99,6 +99,7 @@ Start by listing non-negotiable requirements:
 
 ```python
 # Region selection criteria framework
+
 region_criteria = {
     "latency_requirements": {
         "target_users": ["North America", "Europe"],

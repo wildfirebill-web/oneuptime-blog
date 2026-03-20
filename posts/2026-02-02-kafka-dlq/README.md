@@ -826,6 +826,7 @@ Configure alerts based on DLQ metrics to catch issues before they become critica
 
 ```yaml
 # Prometheus alerting rules for Kafka DLQ monitoring
+
 groups:
   - name: kafka_dlq_alerts
     rules:

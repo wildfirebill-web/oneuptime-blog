@@ -26,6 +26,7 @@ Check istiod in each cluster:
 
 ```bash
 # Basic health check
+
 for ctx in cluster1 cluster2; do
   echo "=== ${ctx} ==="
   kubectl --context=${ctx} get pods -n istio-system -l app=istiod

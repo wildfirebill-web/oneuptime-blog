@@ -29,6 +29,7 @@ Join the official Cilium Slack workspace to access all community channels.
 
 ```bash
 # Visit the self-invite page to join
+
 # URL: https://cilium.slack.com/join/shared_invite/...
 # Or use the link on the official Cilium website: cilium.io/slack
 ```

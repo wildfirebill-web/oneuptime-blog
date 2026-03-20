@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: containerd, IPv6, CNI, Container Runtime, Kubernetes, Networking
+Tags: Containerd, IPv6, CNI, Container Runtime, Kubernetes, Networking
 
 Description: A guide to configuring containerd container runtime with IPv6 and dual-stack networking, including CNI plugin configuration and Kubernetes integration.
 
@@ -10,7 +10,7 @@ containerd is the industry-standard container runtime used by Kubernetes. IPv6 c
 
 ## containerd Configuration Overview
 
-containerd itself does not manage IP addressing — that is delegated to CNI plugins. The containerd configuration (`/etc/containerd/config.toml`) specifies CNI plugin paths:
+containerd itself does not manage IP addressing - that is delegated to CNI plugins. The containerd configuration (`/etc/containerd/config.toml`) specifies CNI plugin paths:
 
 ```toml
 # /etc/containerd/config.toml
@@ -28,6 +28,7 @@ version = 2
 
 ```bash
 # Download CNI plugins
+
 CNI_VERSION="v1.4.0"
 curl -LO https://github.com/containernetworking/plugins/releases/download/${CNI_VERSION}/cni-plugins-linux-amd64-${CNI_VERSION}.tgz
 

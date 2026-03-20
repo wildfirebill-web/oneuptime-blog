@@ -37,6 +37,7 @@ Create a network that exists outside any single Compose project, then connect bo
 
 ```bash
 # Create a network manually (outside of any Compose project)
+
 docker network create shared-network
 
 # Verify it was created

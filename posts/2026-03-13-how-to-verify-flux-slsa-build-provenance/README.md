@@ -24,6 +24,7 @@ Install the SLSA verifier:
 
 ```bash
 # Install slsa-verifier
+
 curl -sSL https://github.com/slsa-framework/slsa-verifier/releases/latest/download/slsa-verifier-linux-amd64 -o /usr/local/bin/slsa-verifier
 chmod +x /usr/local/bin/slsa-verifier
 

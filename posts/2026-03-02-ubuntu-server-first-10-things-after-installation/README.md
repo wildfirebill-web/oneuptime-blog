@@ -16,6 +16,7 @@ Do this immediately after first login. The installer downloads packages from the
 
 ```bash
 # Update package lists and upgrade all installed packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Remove packages that are no longer needed

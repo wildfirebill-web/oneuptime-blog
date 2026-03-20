@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Session Persistence, Load Balancing, Sticky Sessions, HAProxy, nginx
+Tags: IPv6, Session Persistence, Load Balancing, Sticky Sessions, HAProxy, Nginx
 
 Description: A guide to configuring session persistence (sticky sessions) for IPv6 clients in HAProxy, nginx, and IPVS to ensure requests from the same client go to the same backend server.
 
@@ -23,7 +23,7 @@ Cookie-based persistence is unaffected by IPv6 address rotation:
 
 ### HAProxy Cookie Persistence
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 frontend ipv6_frontend
@@ -59,7 +59,7 @@ Source IP persistence maps a client IP to a backend. Less reliable for IPv6 due 
 
 ### HAProxy Source IP
 
-```
+```text
 backend ipv6_web
     balance source
     hash-type consistent    # Consistent hashing
@@ -72,6 +72,7 @@ backend ipv6_web
 
 ```bash
 # Enable persistence with 5-minute timeout
+
 sudo ipvsadm -A -6 -t [2001:db8::vip]:443 -s sh -p 300
 
 # -s sh = Source Hash scheduler
@@ -97,7 +98,7 @@ upstream ipv6_backends {
 
 For HTTPS traffic, TLS session ID can be used for persistence:
 
-```
+```text
 # HAProxy: TLS session-based persistence
 backend ipv6_ssl
     balance roundrobin
@@ -112,7 +113,7 @@ backend ipv6_ssl
 
 IPv6 clients with privacy extensions change their temporary address every hour:
 
-```
+```text
 # HAProxy: Use /56 or /48 prefix for persistence (subnet-level)
 # This groups all addresses from the same /56 subnet together
 backend ipv6_prefix_persist
@@ -143,9 +144,9 @@ sudo ipvsadm -Lnc | grep "2001:db8::client"
 
 ## Best Practice for IPv6 Session Persistence
 
-1. **Prefer cookie-based persistence** — immune to IPv6 address rotation
+1. **Prefer cookie-based persistence** - immune to IPv6 address rotation
 2. **For source IP persistence**, use prefix persistence (/48 or /64) rather than host persistence
-3. **Set appropriate timeouts** — IPv6 privacy addresses rotate hourly
-4. **Consider stateless applications** — design services to not require session affinity
+3. **Set appropriate timeouts** - IPv6 privacy addresses rotate hourly
+4. **Consider stateless applications** - design services to not require session affinity
 
 Cookie-based session persistence is the most reliable approach for IPv6 because it is unaffected by IPv6 privacy extension address rotation, which changes the client's IPv6 address hourly.

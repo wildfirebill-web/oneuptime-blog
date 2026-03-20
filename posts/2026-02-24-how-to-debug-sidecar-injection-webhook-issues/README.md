@@ -145,6 +145,7 @@ For self-managed clusters:
 
 ```bash
 # Check API server logs for webhook failures
+
 journalctl -u kube-apiserver | grep -i "webhook\|admission\|inject"
 ```
 

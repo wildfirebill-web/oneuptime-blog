@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Lists, Nested Structures, range, Data Generation
+Tags: OpenTofu, Terraform, HCL, Lists, Nested Structures, Range, Data Generation
 
 Description: Learn how to generate lists, sequences, and nested data structures in OpenTofu using range(), for expressions, and local values to build dynamic configurations.
 
@@ -121,6 +121,7 @@ locals {
 }
 
 # Create one task definition per env × service
+
 resource "aws_ecs_task_definition" "services" {
   for_each = local.env_services_map
 
@@ -214,9 +215,9 @@ echo 'local.all_subnets' | tofu console
 
 ## Best Practices
 
-1. **Use format() for zero-padded names** — `format("web-%02d", i)` gives consistent ordering
+1. **Use format() for zero-padded names** - `format("web-%02d", i)` gives consistent ordering
 2. **Test with tofu console** before deploying generated structures
-3. **Limit cartesian product size** — N environments × M services can grow quickly
+3. **Limit cartesian product size** - N environments × M services can grow quickly
 4. **Comment the expected output** in your code for maintainability
 5. **Use cidrsubnets() and cidrsubnet()** for VPC/subnet CIDR generation to avoid manual errors
 
@@ -228,4 +229,4 @@ OpenTofu's `range()`, for expressions, `flatten()`, and CIDR functions enable po
 
 ---
 
-*Manage your generated infrastructure with [OneUptime](https://oneuptime.com) — monitoring for everything you build.*
+*Manage your generated infrastructure with [OneUptime](https://oneuptime.com) - monitoring for everything you build.*

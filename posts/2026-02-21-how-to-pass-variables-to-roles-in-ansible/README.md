@@ -16,6 +16,7 @@ When you list a role under the `roles:` keyword, you can pass variables directly
 
 ```yaml
 # site.yml
+
 # Pass variables as role parameters
 ---
 - hosts: web_servers

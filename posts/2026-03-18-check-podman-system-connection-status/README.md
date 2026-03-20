@@ -20,6 +20,7 @@ View all configured Podman system connections.
 
 ```bash
 # List all configured system connections
+
 podman system connection ls
 
 # The output shows:

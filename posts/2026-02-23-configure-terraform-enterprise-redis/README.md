@@ -36,6 +36,7 @@ External Redis solves all of these problems and is a requirement for any TFE dep
 
 ```bash
 # Create a subnet group using your private subnets
+
 aws elasticache create-cache-subnet-group \
   --cache-subnet-group-name tfe-redis-subnet-group \
   --cache-subnet-group-description "Subnets for TFE Redis" \

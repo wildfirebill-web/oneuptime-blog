@@ -40,6 +40,7 @@ provider "azurerm" {
 
 ```hcl
 # A simple resource group
+
 resource "azurerm_resource_group" "main" {
   name     = "rg-myapp-prod-eastus"
   location = "East US"
@@ -167,7 +168,7 @@ variable "cost_center" {
 }
 ```
 
-## Resource Group Locks
+Resource Group Locks
 
 Locks prevent accidental deletion. This is especially important for production resource groups containing stateful resources like databases:
 

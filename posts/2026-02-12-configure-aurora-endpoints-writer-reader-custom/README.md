@@ -64,6 +64,7 @@ You can see all endpoints for your cluster with this CLI command:
 
 ```bash
 # List all endpoints for an Aurora cluster
+
 aws rds describe-db-clusters \
   --db-cluster-identifier my-aurora-cluster \
   --query 'DBClusters[0].{

@@ -18,6 +18,7 @@ The oldest and most common pattern for conditional resources uses `count` with a
 
 ```hcl
 # variables.tf
+
 variable "environment" {
   description = "Deployment environment"
   type        = string

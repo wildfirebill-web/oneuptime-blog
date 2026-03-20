@@ -297,6 +297,7 @@ After deploying everything, make sure logs are flowing:
 
 ```bash
 # Generate some traffic
+
 for i in $(seq 1 20); do
   kubectl exec deploy/sleep -- curl -s http://httpbin:8000/get > /dev/null
   kubectl exec deploy/sleep -- curl -s http://httpbin:8000/status/500 > /dev/null

@@ -171,6 +171,7 @@ The Harvester cloud provider supports DHCP and pool-based load balancers:
 
 ```yaml
 # The Harvester cloud provider automatically provisions load balancers
+
 # for Kubernetes Services of type LoadBalancer
 ```
 

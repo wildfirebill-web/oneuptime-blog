@@ -35,6 +35,7 @@ Routinator is a widely used open-source RPKI validator:
 
 ```bash
 # Install Routinator via package manager (Debian/Ubuntu)
+
 sudo apt-get install routinator
 
 # Or install via Cargo (Rust package manager)
@@ -80,7 +81,7 @@ curl "http://[::1]:8323/api/v1/validity/AS64496/2001:db8::/32"
 
 Configure your BGP router to use Routinator as an RTR server. Example for BIRD2:
 
-```
+```text
 # /etc/bird/bird.conf
 roa6 table rpki6;
 
@@ -100,7 +101,7 @@ protocol rpki routinator {
 
 ## Step 6: Apply Origin Validation in BGP
 
-```
+```nginx
 # Apply RPKI validation policy to BGP
 protocol bgp upstream {
     neighbor 2001:db8:peer::1 as 65001;

@@ -12,8 +12,9 @@ Wireshark provides the clearest view of IPv4 fragmentation: it shows individual 
 
 ## Wireshark Display Filters for Fragmentation
 
-```
+```text
 # Show fragmented packets (any fragment):
+
 ip.flags.mf == 1 or ip.frag_offset > 0
 
 # Show only first fragments (MF bit set, offset = 0):
@@ -37,7 +38,7 @@ icmp.type == 3 and icmp.code == 4
 
 ## Understanding Wireshark Fragment Display
 
-```
+```text
 In the packet list, fragmented packets look like:
 
 Frame 100: [First fragment, MF bit set]
@@ -93,7 +94,7 @@ tcpdump -i eth0 -n -v 'host 10.20.0.5 and (ip[6:2] & 0x3fff) != 0'
 
 ## Wireshark Expert Information for Fragmentation
 
-```
+```text
 In Wireshark:
   Analyze → Expert Information
 
@@ -127,4 +128,4 @@ Shows: packet count, bytes, fragments per source/destination
 
 ## Conclusion
 
-Wireshark fragmentation analysis uses two primary filters: `ip.flags.mf == 1 or ip.frag_offset > 0` to find all fragments, and `icmp.type == 3 and icmp.code == 4` to find PMTUD fragmentation needed messages. When fragmentation appears in a capture, the router between capture points is fragmenting (its outbound MTU is smaller than the incoming packet). MTU black holes are detected by large packets with DF bit being silently dropped — watch for retransmissions only affecting large frames. Fix by reducing MTU, enabling MSS clamping, or ensuring ICMP fragmentation needed messages are not blocked.
+Wireshark fragmentation analysis uses two primary filters: `ip.flags.mf == 1 or ip.frag_offset > 0` to find all fragments, and `icmp.type == 3 and icmp.code == 4` to find PMTUD fragmentation needed messages. When fragmentation appears in a capture, the router between capture points is fragmenting (its outbound MTU is smaller than the incoming packet). MTU black holes are detected by large packets with DF bit being silently dropped - watch for retransmissions only affecting large frames. Fix by reducing MTU, enabling MSS clamping, or ensuring ICMP fragmentation needed messages are not blocked.

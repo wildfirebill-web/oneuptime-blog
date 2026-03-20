@@ -8,16 +8,17 @@ Description: Learn how to configure Exim to listen and send email on a specific 
 
 ---
 
-On multi-homed servers with multiple IPv4 addresses, you may need Exim to listen on and originate connections from a specific IP — for instance, to ensure email comes from an IP with proper PTR/SPF records.
+On multi-homed servers with multiple IPv4 addresses, you may need Exim to listen on and originate connections from a specific IP - for instance, to ensure email comes from an IP with proper PTR/SPF records.
 
 ## Configuring the Listening Address
 
 The `local_interfaces` option in Exim's main configuration controls which IP:port combinations Exim listens on.
 
-```
+```text
 # /etc/exim4/exim4.conf.template (or /etc/exim4/conf.d/main/02_exim4-config_options)
 
 # Listen only on a specific IPv4 address on port 25
+
 local_interfaces = 192.168.1.10:25
 
 # Listen on multiple addresses (separated by colon-delimited list)
@@ -31,7 +32,7 @@ local_interfaces = 192.168.1.10:25
 
 The `smtp_bind_address` option sets the source IP for outgoing SMTP connections.
 
-```
+```text
 # /etc/exim4/exim4.conf.template
 
 # All outbound SMTP connections originate from this IPv4 address
@@ -49,7 +50,7 @@ On Debian-based systems, Exim uses a split configuration in `/etc/exim4/conf.d/`
 nano /etc/exim4/conf.d/main/02_exim4-config_options
 ```
 
-```
+```text
 # Add or modify these lines:
 local_interfaces = 192.168.1.10:25 : 127.0.0.1:25
 smtp_bind_address = 192.168.1.10
@@ -68,7 +69,7 @@ systemctl restart exim4
 
 ## Disabling IPv6 in Exim
 
-```
+```text
 # /etc/exim4/exim4.conf.template
 
 # Prevent Exim from creating IPv6 listening sockets

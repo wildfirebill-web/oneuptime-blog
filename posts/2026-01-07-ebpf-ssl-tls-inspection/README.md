@@ -28,6 +28,7 @@ Install the required packages on Ubuntu/Debian:
 
 ```bash
 # Install BCC tools and dependencies
+
 sudo apt-get update
 sudo apt-get install -y bpfcc-tools linux-headers-$(uname -r) python3-bpfcc
 

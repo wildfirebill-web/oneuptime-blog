@@ -56,6 +56,7 @@ The environment sets up networking between your VPCs. If your legacy app and new
 
 ```bash
 # Create a Refactor Spaces environment
+
 aws migration-hub-refactor-spaces create-environment \
   --name "app-modernization" \
   --description "Refactoring the legacy order management system" \

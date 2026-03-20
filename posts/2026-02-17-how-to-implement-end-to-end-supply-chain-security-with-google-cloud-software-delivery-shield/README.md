@@ -28,6 +28,7 @@ Start with Cloud Source Repositories or a connected GitHub/GitLab repository wit
 
 ```bash
 # Enable commit signing verification in your repository
+
 # First, set up GPG signing locally
 gpg --full-generate-key
 

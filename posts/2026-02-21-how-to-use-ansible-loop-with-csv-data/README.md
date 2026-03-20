@@ -18,6 +18,7 @@ The `community.general.read_csv` module is the most robust way to handle CSV dat
 
 ```yaml
 # read-csv-basic.yml
+
 # Reads a CSV file and creates user accounts from its contents
 - name: Create users from CSV
   hosts: all

@@ -29,6 +29,7 @@ The simplest case: you install a package and let the package manager resolve dep
 
 ```yaml
 # Install a package along with all its dependencies (automatic)
+
 - name: Install nginx
   ansible.builtin.apt:
     name: nginx

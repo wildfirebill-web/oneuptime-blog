@@ -20,6 +20,7 @@ Podman's remote mode uses a REST API served over SSH or a Unix socket. The local
 
 ```bash
 # Check if your local Podman supports remote connections
+
 podman system connection list
 
 # The connection list shows configured remote machines

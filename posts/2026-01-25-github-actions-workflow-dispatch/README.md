@@ -16,6 +16,7 @@ Add `workflow_dispatch` to your workflow triggers:
 
 ```yaml
 # .github/workflows/manual.yml
+
 name: Manual Workflow
 
 on:

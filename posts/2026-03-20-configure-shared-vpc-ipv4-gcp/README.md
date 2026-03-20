@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Shared VPC, IPv4, Networking, Organization, Multi-Project
+Tags: GCP, Shared VPC, IPv4, Networking, Organizations, Multi-Project
 
 Description: Configure GCP Shared VPC to allow multiple service projects to use subnets from a centrally managed host project, enabling consistent IPv4 networking across teams.
 
@@ -12,7 +12,7 @@ Shared VPC allows an organization to designate a host project that owns the VPC 
 
 ## Architecture
 
-```
+```text
 Organization
 ├── Host Project (network-host-project)
 │   └── prod-vpc
@@ -57,6 +57,7 @@ SERVICE_PROJECT_A="team-alpha-project"
 SERVICE_PROJECT_B="team-beta-project"
 
 # Attach service projects
+
 gcloud compute shared-vpc associated-projects add $HOST_PROJECT \
   --associated-project=$SERVICE_PROJECT_A
 

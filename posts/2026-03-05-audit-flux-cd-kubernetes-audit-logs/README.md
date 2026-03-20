@@ -25,6 +25,7 @@ Create an audit policy that captures Flux controller operations at the appropria
 
 ```yaml
 # audit-policy.yaml
+
 # Kubernetes audit policy for capturing Flux CD operations
 apiVersion: audit.k8s.io/v1
 kind: Policy

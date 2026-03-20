@@ -16,6 +16,7 @@ SonarQube requires Java 17 and PostgreSQL:
 
 ```bash
 # Install Java 17
+
 sudo dnf install -y java-17-openjdk
 
 # Install and configure PostgreSQL

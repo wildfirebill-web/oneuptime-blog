@@ -22,6 +22,7 @@ Most Ansible modules handle idempotency for you. Here are examples of naturally 
 
 ```yaml
 # These tasks are idempotent by design
+
 # Running them multiple times produces no extra changes
 
 - name: Ensure nginx is installed

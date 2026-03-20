@@ -22,6 +22,7 @@ virtio is a paravirtualization framework that provides high-performance device d
 
 ```bash
 # Create a VM with virtio disk and network from the start
+
 sudo virt-install \
   --name rhel9-virtio \
   --memory 4096 \

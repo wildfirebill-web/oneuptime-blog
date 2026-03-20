@@ -39,6 +39,7 @@ On your cloud cluster, install the FabEdge operator:
 
 ```bash
 # Add FabEdge Helm repository
+
 helm repo add fabedge https://fabedge.github.io/helm-chart
 helm repo update
 

@@ -14,6 +14,7 @@ GCP External HTTP(S) Load Balancer is a global, proxy-based load balancer that d
 
 ```hcl
 # main.tf - Backend service for the load balancer
+
 resource "google_compute_health_check" "http_hc" {
   name = "web-http-health-check"
 

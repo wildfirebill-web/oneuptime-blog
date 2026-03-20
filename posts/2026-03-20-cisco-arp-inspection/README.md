@@ -121,7 +121,7 @@ clear ip arp inspection statistics
 
 Sample output:
 
-```
+```text
  Vlan      Forwarded        Dropped   DHCP Drops   ACL Drops
  ----      ---------        -------   ----------   ---------
    10          34521            312            8         304
@@ -165,5 +165,4 @@ interface GigabitEthernet0/24
 **Related Reading:**
 
 - [How to Prevent ARP Poisoning with Dynamic ARP Inspection](https://oneuptime.com/blog/post/2026-03-20-prevent-arp-poisoning-dai/view)
-- [How to Implement DHCP Snooping on Switches](https://oneuptime.com/blog/post/2026-03-20-dhcp-snooping-switches/view)
 - [How to Detect ARP Spoofing Attacks on Your Network](https://oneuptime.com/blog/post/2026-03-20-arp-spoofing-detection-scapy-ipv4/view)

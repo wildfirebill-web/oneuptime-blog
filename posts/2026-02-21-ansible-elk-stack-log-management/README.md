@@ -24,6 +24,7 @@ graph LR
 
 ```yaml
 # roles/elasticsearch/tasks/main.yml
+
 ---
 - name: Add Elasticsearch GPG key
   ansible.builtin.apt_key:

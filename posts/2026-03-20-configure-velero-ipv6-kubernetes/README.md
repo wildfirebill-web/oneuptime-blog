@@ -14,6 +14,7 @@ Velero is the standard tool for Kubernetes cluster backup and disaster recovery.
 
 ```bash
 # Verify IPv6 Kubernetes cluster is running
+
 kubectl get nodes -o wide
 # Check for IPv6 addresses in the NODE_IPS column
 

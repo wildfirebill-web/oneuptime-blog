@@ -18,6 +18,7 @@ Run Azurite with a single command:
 
 ```bash
 # Start Azurite with all three storage services
+
 docker run -d \
   --name azurite \
   -p 10000:10000 \

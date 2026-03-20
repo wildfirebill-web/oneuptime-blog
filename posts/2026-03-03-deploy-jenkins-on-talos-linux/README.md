@@ -28,6 +28,7 @@ Deploy Jenkins using the official Helm chart.
 
 ```bash
 # Add the Jenkins Helm repository
+
 helm repo add jenkins https://charts.jenkins.io
 
 # Update the chart cache

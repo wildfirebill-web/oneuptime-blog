@@ -82,6 +82,7 @@ With debug logging enabled, reproduce the issue you are troubleshooting. This mi
 
 ```bash
 # Trigger a specific reconciliation
+
 flux reconcile source git <name> -n <namespace>
 flux reconcile kustomization <name> -n <namespace>
 flux reconcile helmrelease <name> -n <namespace>

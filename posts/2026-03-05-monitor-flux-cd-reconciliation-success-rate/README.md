@@ -25,6 +25,7 @@ The simplest success rate calculation uses the `gotk_reconcile_condition` gauge.
 
 ```yaml
 # PromQL: Percentage of resources in Ready state
+
 # Returns a value between 0 and 1
 sum(gotk_reconcile_condition{type="Ready", status="True"})
 /

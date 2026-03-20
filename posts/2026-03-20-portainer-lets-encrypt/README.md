@@ -1,8 +1,8 @@
-# How to Use Let's Encrypt Certificates with Portainer
+# How to Use Let's Encrypt Certificates with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, lets-encrypt, ssl, tls, certbot, acme
+Tags: Portainer, Lets-encrypt, SSL, TLS, Certbot, ACME
 
 Description: A guide to obtaining and configuring free Let's Encrypt SSL/TLS certificates for Portainer.
 
@@ -21,6 +21,7 @@ Let's Encrypt provides free, trusted SSL/TLS certificates via the ACME protocol.
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y certbot
 

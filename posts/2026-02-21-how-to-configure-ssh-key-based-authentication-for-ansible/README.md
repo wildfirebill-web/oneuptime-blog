@@ -20,6 +20,7 @@ If you do not already have an SSH key, generate one on your Ansible control node
 
 ```bash
 # Generate an Ed25519 key (recommended, modern and fast)
+
 ssh-keygen -t ed25519 -C "ansible-control-node" -f ~/.ssh/ansible_key
 ```
 

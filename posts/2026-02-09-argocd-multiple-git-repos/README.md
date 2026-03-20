@@ -29,6 +29,7 @@ SSH keys provide secure, password-less authentication to Git repositories. Here'
 
 ```yaml
 # repository-ssh.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

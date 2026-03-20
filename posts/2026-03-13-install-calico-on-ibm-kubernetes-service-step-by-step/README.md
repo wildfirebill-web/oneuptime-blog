@@ -25,6 +25,7 @@ However, configuring calicoctl, managing IP pools, and applying advanced Calico 
 
 ```bash
 # Log in to IBM Cloud
+
 ibmcloud login --sso
 
 # List available zones

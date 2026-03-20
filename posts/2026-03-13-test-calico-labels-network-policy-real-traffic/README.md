@@ -26,6 +26,7 @@ This guide provides a comprehensive test framework for Calico label-based polici
 
 ```bash
 # Check which pods match a selector
+
 calicoctl get workloadendpoints --all-namespaces -o wide | grep "tier=web"
 
 # Simulate selector evaluation

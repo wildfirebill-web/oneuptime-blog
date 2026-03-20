@@ -22,6 +22,7 @@ openSUSE is a powerful Linux distribution available in two flavors: Leap (stable
 
 ```bash
 # Add the OpenTofu RPM repository
+
 sudo zypper addrepo \
   --gpgcheck-strict \
   --refresh \

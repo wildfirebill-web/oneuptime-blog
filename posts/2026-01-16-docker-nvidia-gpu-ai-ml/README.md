@@ -20,6 +20,7 @@ Before configuring Docker for GPU access, ensure:
 
 ```bash
 # Check if NVIDIA GPU is detected
+
 lspci | grep -i nvidia
 
 # Check NVIDIA driver version

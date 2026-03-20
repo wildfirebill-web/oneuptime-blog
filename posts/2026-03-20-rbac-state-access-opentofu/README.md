@@ -8,7 +8,7 @@ Description: Learn how to implement role-based access control for OpenTofu state
 
 ---
 
-OpenTofu state files contain sensitive data — resource IDs, IP addresses, and sometimes secrets. Role-based access control ensures developers can only access the state for their environment and team, while CI/CD pipelines have scoped permissions appropriate for their function.
+OpenTofu state files contain sensitive data - resource IDs, IP addresses, and sometimes secrets. Role-based access control ensures developers can only access the state for their environment and team, while CI/CD pipelines have scoped permissions appropriate for their function.
 
 ## RBAC Model for State Access
 
@@ -28,6 +28,7 @@ graph TD
 # iam_roles.tf
 
 # Read-only access to all states (for plans and auditing)
+
 resource "aws_iam_policy" "state_read_only" {
   name = "tofu-state-read-only"
 
@@ -127,15 +128,15 @@ locals {
   roles = {
     "ci-plan" = {
       policies    = [aws_iam_policy.state_read_only.arn]
-      description = "CI plan role — read-only state access"
+      description = "CI plan role - read-only state access"
     }
     "ci-apply-dev" = {
       policies    = [aws_iam_policy.state_write_dev.arn]
-      description = "CI apply to dev — read/write dev state"
+      description = "CI apply to dev - read/write dev state"
     }
     "ci-apply-production" = {
       policies    = [aws_iam_policy.state_write_production.arn]
-      description = "CI apply to production — read/write production state"
+      description = "CI apply to production - read/write production state"
     }
   }
 }
@@ -186,8 +187,8 @@ resource "aws_iam_group_policy_attachment" "senior_staging" {
 
 ## Best Practices
 
-- Require MFA for production state writes using IAM condition keys — even for service accounts that have MFA capable credentials.
-- Use path-based permissions (S3 prefix conditions) rather than separate buckets per environment — it's easier to manage with fewer resources.
-- Give CI/CD plan roles read-only state access — only apply roles should have write access.
-- Audit state access with S3 server access logging and CloudTrail — you need to know who accessed state and when.
-- Never grant developers direct access to production state — use CI/CD pipelines as the only path to production applies.
+- Require MFA for production state writes using IAM condition keys - even for service accounts that have MFA capable credentials.
+- Use path-based permissions (S3 prefix conditions) rather than separate buckets per environment - it's easier to manage with fewer resources.
+- Give CI/CD plan roles read-only state access - only apply roles should have write access.
+- Audit state access with S3 server access logging and CloudTrail - you need to know who accessed state and when.
+- Never grant developers direct access to production state - use CI/CD pipelines as the only path to production applies.

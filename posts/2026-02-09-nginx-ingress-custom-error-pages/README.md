@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, NGINX, Error Handling
+Tags: Kubernetes, Nginx, Error Handling
 
 Description: Learn how to configure custom error pages and redirects in NGINX Ingress Controller to provide better user experience, brand consistency, and helpful error messages for various HTTP error codes.
 
@@ -27,6 +27,7 @@ Set up a simple error page service.
 
 ```yaml
 # error-page-service.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

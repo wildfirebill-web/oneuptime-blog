@@ -22,6 +22,7 @@ Building OpenTofu from source gives you the ability to run the latest developmen
 
 ```bash
 # Download Go (replace with latest version)
+
 GO_VERSION="1.22.0"
 curl -LO "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz"
 

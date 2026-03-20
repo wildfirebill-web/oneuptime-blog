@@ -211,4 +211,4 @@ tofu apply
 
 ## Conclusion
 
-Datadog synthetic tests managed with OpenTofu make API coverage reproducible and reviewable. Use `api` + `http` subtype for single endpoint checks, `api` + `multi` for multi-step workflows like login flows, and `api` + `ssl` for certificate expiry monitoring. Each synthetic test automatically creates a Datadog monitor — use `monitor_id` in the output to reference it in SLO definitions. Test from multiple `locations` to detect regional outages.
+Datadog synthetic tests managed with OpenTofu make API coverage reproducible and reviewable. Use `api` + `http` subtype for single endpoint checks, `api` + `multi` for multi-step workflows like login flows, and `api` + `ssl` for certificate expiry monitoring. Each synthetic test automatically creates a Datadog monitor - use `monitor_id` in the output to reference it in SLO definitions. Test from multiple `locations` to detect regional outages.

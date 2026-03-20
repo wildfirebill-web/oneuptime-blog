@@ -72,6 +72,7 @@ For Rails 7+, Hotwire is included by default. For older Rails versions:
 
 ```ruby
 # Gemfile
+
 gem 'turbo-rails'
 gem 'stimulus-rails'
 ```

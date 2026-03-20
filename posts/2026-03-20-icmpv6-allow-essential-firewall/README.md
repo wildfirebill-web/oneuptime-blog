@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Firewall, IPv6 Security, ip6tables, nftables
+Tags: ICMPv6, Firewall, IPv6 Security, Ip6tables, nftables
 
 Description: Configure firewall rules to allow essential ICMPv6 messages while blocking non-essential ones, using ip6tables, nftables, and firewalld with practical rule examples.
 
@@ -15,10 +15,11 @@ The minimal ICMPv6 allow-list for a working IPv6 network requires allowing speci
 ```bash
 # Host firewall minimum: allows IPv6 to function completely
 
-# Using ip6tables — flush existing ICMPv6 rules first if needed
+# Using ip6tables - flush existing ICMPv6 rules first if needed
+
 # sudo ip6tables -F
 
-# 1. Packet Too Big (PMTUD — CRITICAL)
+# 1. Packet Too Big (PMTUD - CRITICAL)
 sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 sudo ip6tables -A OUTPUT -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 
@@ -27,7 +28,7 @@ sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type destination-unreachable -j ACCE
 sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type time-exceeded -j ACCEPT
 sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 
-# 3. NDP (CRITICAL — without these, IPv6 doesn't work at all)
+# 3. NDP (CRITICAL - without these, IPv6 doesn't work at all)
 sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type router-advertisement   -j ACCEPT
 sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type neighbor-solicitation   -j ACCEPT
 sudo ip6tables -A INPUT  -p icmpv6 --icmpv6-type neighbor-advertisement  -j ACCEPT
@@ -61,7 +62,7 @@ sudo ip6tables -A FORWARD -p icmpv6 -m icmpv6 --icmpv6-type parameter-problem   
 sudo ip6tables -A FORWARD -p icmpv6 -m icmpv6 --icmpv6-type echo-request            -j ACCEPT
 sudo ip6tables -A FORWARD -p icmpv6 -m icmpv6 --icmpv6-type echo-reply              -j ACCEPT
 
-# Block NDP at transit (link-local only — should never be forwarded)
+# Block NDP at transit (link-local only - should never be forwarded)
 sudo ip6tables -A FORWARD -p icmpv6 -m icmpv6 --icmpv6-type router-solicitation    -j DROP
 sudo ip6tables -A FORWARD -p icmpv6 -m icmpv6 --icmpv6-type router-advertisement   -j DROP
 sudo ip6tables -A FORWARD -p icmpv6 -m icmpv6 --icmpv6-type neighbor-solicitation  -j DROP

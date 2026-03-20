@@ -16,6 +16,7 @@ PowerDNS Authoritative Server stores DNS records in a database backend (SQLite, 
 
 ```bash
 # List existing records in a zone
+
 pdnsutil list-zone example.com
 
 # Add an AAAA record for www.example.com

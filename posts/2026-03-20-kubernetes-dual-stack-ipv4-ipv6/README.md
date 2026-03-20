@@ -12,6 +12,7 @@ Kubernetes dual-stack networking allows pods and services to simultaneously have
 
 ```bash
 # Requires Kubernetes 1.21+ (stable dual-stack)
+
 kubectl version
 
 # The CNI plugin must support dual-stack (Calico, Cilium, Flannel with vxlan)
@@ -38,7 +39,7 @@ sudo kubeadm init --config kubeadm-dualstack.yaml
 ## Installing Calico for Dual-Stack
 
 ```yaml
-# calico-dualstack.yaml — IPAddressPool for both families
+# calico-dualstack.yaml - IPAddressPool for both families
 apiVersion: operator.tigera.io/v1
 kind: Installation
 metadata:

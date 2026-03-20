@@ -30,6 +30,7 @@ Once Crostini is running, you can SSH into it from a remote Ansible controller:
 
 ```ini
 # inventory/hosts
+
 [chromeos_linux]
 chromebook-dev01 ansible_host=192.168.1.50
 

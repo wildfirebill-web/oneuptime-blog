@@ -30,6 +30,7 @@ On the system that will serve as your Tang server:
 
 ```bash
 # Install the Tang server package
+
 sudo dnf install tang -y
 ```
 

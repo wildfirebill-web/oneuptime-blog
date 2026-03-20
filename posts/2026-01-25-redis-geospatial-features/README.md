@@ -18,6 +18,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Add locations: GEOADD key longitude latitude member
+
 r.geoadd('restaurants', [
     (-73.985428, 40.748817, 'empire_state'),      # NYC
     (-73.968285, 40.785091, 'central_park'),

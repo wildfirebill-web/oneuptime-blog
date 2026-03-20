@@ -16,6 +16,7 @@ The filter converts a number (assumed to be in bytes) into a human-friendly stri
 
 ```yaml
 # Convert byte values to human-readable format
+
 - name: Show disk space in readable format
   ansible.builtin.debug:
     msg: "{{ 107374182400 | human_readable }}"

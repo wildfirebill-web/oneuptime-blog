@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, Tcpdump, ARP, Debugging, Networking
+Tags: Kubernetes, MetalLB, tcpdump, ARP, Debugging, Networking
 
 Description: Learn how to use tcpdump to capture and analyze ARP traffic from MetalLB speaker pods. Debug unreachable services, duplicate MAC addresses, and ARP storms.
 
@@ -42,6 +42,7 @@ Install tcpdump on the host node or use a Kubernetes debug container:
 
 ```bash
 # Debian / Ubuntu
+
 sudo apt-get update && sudo apt-get install -y tcpdump
 
 # Or launch a debug container with host networking.

@@ -16,6 +16,7 @@ The `molecule destroy` command reverses what `molecule create` did. It removes c
 
 ```bash
 # Destroy all instances for the default scenario
+
 molecule destroy
 
 # Destroy instances for a specific scenario
@@ -332,7 +333,7 @@ Run it on a schedule via cron.
 0 3 * * * /usr/local/bin/cleanup-molecule.sh >> /var/log/molecule-cleanup.log 2>&1
 ```
 
-## Resource Monitoring
+Resource Monitoring
 
 Keep an eye on resource usage, especially in shared environments.
 

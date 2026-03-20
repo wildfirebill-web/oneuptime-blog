@@ -18,6 +18,7 @@ The `mynetworks` parameter in Postfix defines trusted networks whose hosts are p
 
 ```bash
 # Show current mynetworks setting
+
 postconf mynetworks
 
 # Example default output:
@@ -42,7 +43,7 @@ sudo systemctl reload postfix
 
 IPv6 addresses in mynetworks must follow this format:
 
-```
+```text
 [<ipv6-address>]/<prefix-length>
 ```
 

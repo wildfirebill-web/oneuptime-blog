@@ -18,6 +18,7 @@ Lambda functions need lightweight instrumentation since cold starts matter. Here
 
 ```python
 # lambda_function.py
+
 import json
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

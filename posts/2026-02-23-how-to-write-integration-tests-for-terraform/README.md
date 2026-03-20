@@ -36,6 +36,7 @@ Here is an integration test for a module that creates an S3 bucket with versioni
 
 ```hcl
 # tests/integration.tftest.hcl
+
 # Integration tests - these create real AWS resources
 
 # Provider configuration for testing

@@ -302,6 +302,7 @@ Before loading, you need to produce events. Here is a Python producer that gener
 
 ```python
 # event_producer.py
+
 # Produces sample events to Kafka for the streaming loading pipeline
 
 from kafka import KafkaProducer

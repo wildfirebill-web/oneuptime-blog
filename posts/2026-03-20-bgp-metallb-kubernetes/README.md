@@ -8,7 +8,7 @@ Description: Learn how to configure MetalLB in BGP mode to integrate Kubernetes 
 
 ## What Is MetalLB?
 
-MetalLB is a load balancer implementation for bare-metal Kubernetes clusters. In cloud environments, LoadBalancer services get IPs from the cloud provider automatically. On bare metal, MetalLB fills this role. In BGP mode, MetalLB peers with your network's BGP routers and advertises the service IPs via BGP—enabling proper routing to your Kubernetes services.
+MetalLB is a load balancer implementation for bare-metal Kubernetes clusters. In cloud environments, LoadBalancer services get IPs from the cloud provider automatically. On bare metal, MetalLB fills this role. In BGP mode, MetalLB peers with your network's BGP routers and advertises the service IPs via BGP-enabling proper routing to your Kubernetes services.
 
 ## Architecture
 
@@ -31,6 +31,7 @@ graph LR
 
 ```bash
 # Install MetalLB using the official manifest
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.5/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready
@@ -125,7 +126,7 @@ kubectl apply -f bgp-advertisement.yaml
 
 On your top-of-rack switch or router, configure BGP peering with each Kubernetes node:
 
-```
+```text
 router bgp 65000
  ! Peer with each Kubernetes node
  neighbor 192.168.1.10 remote-as 65001

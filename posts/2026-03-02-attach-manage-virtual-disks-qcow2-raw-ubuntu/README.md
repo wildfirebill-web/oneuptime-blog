@@ -36,6 +36,7 @@ Use raw format when maximum I/O performance matters and you do not need snapshot
 
 ```bash
 # Create a 20GB qcow2 image (thin provisioned)
+
 qemu-img create -f qcow2 /var/lib/libvirt/images/myvm-data.qcow2 20G
 
 # Create a 20GB raw image (preallocated)

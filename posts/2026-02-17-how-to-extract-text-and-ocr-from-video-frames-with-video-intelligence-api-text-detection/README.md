@@ -320,6 +320,7 @@ def detect_text_in_segment(video_uri, start_seconds, end_seconds):
     return texts
 
 # Extract text from a 30-second segment
+
 texts = detect_text_in_segment(
     "gs://your-bucket/long-video.mp4",
     start_seconds=60,

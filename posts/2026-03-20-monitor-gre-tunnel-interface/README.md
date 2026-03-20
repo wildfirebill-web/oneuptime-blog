@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GRE, Tunnel, Monitoring, Linux, IPv4, ip monitor, Prometheus, Alerting
+Tags: GRE, Tunnel, Monitoring, Linux, IPv4, Ip monitor, Prometheus, Alerting
 
 Description: Learn how to monitor GRE tunnel interface status on Linux including link state, traffic counters, packet loss, and how to set up alerts using standard tools and Prometheus.
 
@@ -14,6 +14,7 @@ Monitoring GRE tunnel health involves checking interface state, traffic flow, pa
 
 ```bash
 # Check interface operational state
+
 ip link show gre1
 
 # Output:

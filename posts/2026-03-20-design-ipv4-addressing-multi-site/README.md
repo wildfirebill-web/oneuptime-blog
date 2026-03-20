@@ -9,19 +9,19 @@ Description: Learn how to design a structured, hierarchical IPv4 addressing sche
 ## Principles of Enterprise IPv4 Addressing
 
 A good enterprise IPv4 addressing scheme provides:
-- **Summarizability** — each site's addresses should aggregate to a single prefix
-- **Hierarchy** — addresses reflect network topology (region → site → building → floor)
-- **Growth room** — each allocation has room to expand
-- **Uniqueness** — no overlapping ranges, especially for sites that may be connected
+- **Summarizability** - each site's addresses should aggregate to a single prefix
+- **Hierarchy** - addresses reflect network topology (region → site → building → floor)
+- **Growth room** - each allocation has room to expand
+- **Uniqueness** - no overlapping ranges, especially for sites that may be connected
 
 ## Step 1: Choose Your Address Space
 
 Use RFC 1918 private addressing for internal networks:
 
-```
-10.0.0.0/8    — largest, most flexible (16 million addresses)
-172.16.0.0/12 — medium (1 million addresses)
-192.168.0.0/16 — smallest (65K addresses)
+```text
+10.0.0.0/8    - largest, most flexible (16 million addresses)
+172.16.0.0/12 - medium (1 million addresses)
+192.168.0.0/16 - smallest (65K addresses)
 ```
 
 For multi-site enterprise, use **10.0.0.0/8** and divide it hierarchically.
@@ -30,64 +30,64 @@ For multi-site enterprise, use **10.0.0.0/8** and divide it hierarchically.
 
 Divide the 10.0.0.0/8 space into regional blocks:
 
-```
-10.0.0.0/8  — All Enterprise Networks
+```text
+10.0.0.0/8  - All Enterprise Networks
 
 Regional Division (using second octet for region):
-  10.1.0.0/16  — Region: Americas HQ
-  10.2.0.0/16  — Region: EMEA
-  10.3.0.0/16  — Region: APAC
-  10.10.0.0/16 — Region: Azure (cloud)
-  10.20.0.0/16 — Region: AWS (cloud)
-  10.254.0.0/16 — Network Infrastructure (WAN links, loopbacks)
+  10.1.0.0/16  - Region: Americas HQ
+  10.2.0.0/16  - Region: EMEA
+  10.3.0.0/16  - Region: APAC
+  10.10.0.0/16 - Region: Azure (cloud)
+  10.20.0.0/16 - Region: AWS (cloud)
+  10.254.0.0/16 - Network Infrastructure (WAN links, loopbacks)
 ```
 
 ## Step 3: Site Allocation Within a Region
 
 Divide each /16 into /24s (or /20s for large sites) per site:
 
-```
-10.1.0.0/16  — Americas
+```text
+10.1.0.0/16  - Americas
 
 Site Allocation (using third octet for site):
-  10.1.1.0/22   — NYC HQ (4x /24 = 1020 hosts, room to grow)
-  10.1.5.0/22   — Chicago Office
-  10.1.9.0/22   — Dallas Office
-  10.1.13.0/22  — LA Office
-  10.1.100.0/22 — Atlanta Datacenter
+  10.1.1.0/22   - NYC HQ (4x /24 = 1020 hosts, room to grow)
+  10.1.5.0/22   - Chicago Office
+  10.1.9.0/22   - Dallas Office
+  10.1.13.0/22  - LA Office
+  10.1.100.0/22 - Atlanta Datacenter
 ```
 
 ## Step 4: Floor/VLAN Allocation Within a Site
 
 Divide each site block into functional VLANs:
 
-```
-10.1.1.0/22 — NYC HQ (10.1.1.0 - 10.1.4.255)
+```text
+10.1.1.0/22 - NYC HQ (10.1.1.0 - 10.1.4.255)
 
 VLAN Allocation:
-  10.1.1.0/24   VLAN 10 — Corporate Users
-  10.1.2.0/24   VLAN 20 — Servers
-  10.1.3.0/24   VLAN 30 — WiFi Clients
-  10.1.4.0/28   VLAN 40 — Network Management
-  (10.1.4.16+)           — Reserved for growth
+  10.1.1.0/24   VLAN 10 - Corporate Users
+  10.1.2.0/24   VLAN 20 - Servers
+  10.1.3.0/24   VLAN 30 - WiFi Clients
+  10.1.4.0/28   VLAN 40 - Network Management
+  (10.1.4.16+)           - Reserved for growth
 ```
 
 ## Step 5: Infrastructure Addressing
 
 Reserve a dedicated block for network infrastructure:
 
-```
-10.254.0.0/16 — Infrastructure
+```text
+10.254.0.0/16 - Infrastructure
 
-10.254.1.0/24   — Loopback addresses (router IDs)
+10.254.1.0/24   - Loopback addresses (router IDs)
   10.254.1.1/32   Router01 loopback
   10.254.1.2/32   Router02 loopback
 
-10.254.2.0/24   — WAN point-to-point links (use /30 or /31)
+10.254.2.0/24   - WAN point-to-point links (use /30 or /31)
   10.254.2.0/30   NYC-Chicago WAN link
   10.254.2.4/30   Chicago-Dallas WAN link
 
-10.254.3.0/24   — Out-of-band management
+10.254.3.0/24   - Out-of-band management
   10.254.3.0/24   OOB management network
 ```
 
@@ -97,6 +97,7 @@ Create an IPAM spreadsheet or use tools like NetBox:
 
 ```python
 # Example using Python ipaddress module to validate the plan
+
 from ipaddress import ip_network
 
 # Verify no overlap between regions
@@ -124,7 +125,7 @@ print(f"NYC subnet fits in Americas: {nyc.subnet_of(americas)}")
 
 The hierarchical design enables clean route summarization:
 
-```
+```text
 From Chicago router to internet:
   Advertise: 10.1.0.0/16 (one route for all Americas)
   Instead of: 10.1.1.0/24, 10.1.5.0/24, 10.1.9.0/24... (individual sites)

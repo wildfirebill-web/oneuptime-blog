@@ -29,6 +29,7 @@ Measure baseline performance before your cluster is under load:
 
 ```bash
 # Record baseline CPU and memory usage
+
 kubectl -n kube-system top pod -l k8s-app=cilium > /tmp/cilium-baseline-$(date +%Y%m%d).txt
 
 # Baseline throughput test (same-node)

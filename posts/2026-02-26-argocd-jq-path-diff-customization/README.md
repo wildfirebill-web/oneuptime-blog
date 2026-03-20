@@ -18,6 +18,7 @@ Consider this scenario: Istio injects a sidecar container into your Deployment. 
 
 ```yaml
 # Fragile - what if container order changes?
+
 jsonPointers:
   - /spec/template/spec/containers/1
 ```

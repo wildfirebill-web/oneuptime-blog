@@ -14,6 +14,7 @@ There are four categories of metrics that make up a complete rate limiting dashb
 
 ```python
 # rate_limit_metrics.py
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("rate_limiting.dashboard")

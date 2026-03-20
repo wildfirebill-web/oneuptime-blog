@@ -79,6 +79,7 @@ HOSTED_ZONE_ID="Z1234567890ABC"
 DOMAIN="api.example.com"
 
 # Create a JSON file with multiple A records
+
 cat > dns-records.json << 'EOF'
 {
   "Changes": [

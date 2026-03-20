@@ -14,7 +14,7 @@ Managing K3s clusters at the edge requires secure remote access, centralized con
 
 ## Architecture
 
-```
+```text
 ┌─────────────────────────────────────┐
 │         Central Rancher             │
 │                                     │
@@ -46,6 +46,7 @@ On the Rancher management server, create an import command for the edge cluster:
 # In Rancher UI: Cluster Management → Import Existing → Generic
 
 # Run the generated command on the edge cluster
+
 kubectl apply -f https://rancher.example.com/v3/import/<token>.yaml
 
 # Verify the cluster appears in Rancher
@@ -185,6 +186,6 @@ kubectl patch gitrepo edge-apps -n fleet-default \
 
 ## Best Practices
 
-- Use Fleet for workload deployment to edge clusters — it works asynchronously and tolerates intermittent connectivity better than direct kubectl applies.
+- Use Fleet for workload deployment to edge clusters - it works asynchronously and tolerates intermittent connectivity better than direct kubectl applies.
 - Label edge clusters consistently (`cluster-type: edge`, `region: store-42`) to enable precise Fleet targeting without hardcoding cluster names.
-- Store kubeconfigs for edge clusters in a secure vault — if Rancher is unavailable, you can still access edge clusters directly using the kubeconfig.
+- Store kubeconfigs for edge clusters in a secure vault - if Rancher is unavailable, you can still access edge clusters directly using the kubeconfig.

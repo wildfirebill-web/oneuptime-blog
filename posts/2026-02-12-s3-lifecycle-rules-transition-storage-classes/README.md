@@ -244,6 +244,7 @@ Check what rules are currently active:
 
 ```bash
 # View current lifecycle configuration
+
 aws s3api get-bucket-lifecycle-configuration \
     --bucket my-bucket \
     --output json

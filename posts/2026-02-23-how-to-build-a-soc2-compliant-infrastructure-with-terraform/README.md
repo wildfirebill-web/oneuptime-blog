@@ -40,6 +40,7 @@ Start with the foundation: encryption, access controls, and network security.
 
 ```hcl
 # KMS key for data encryption
+
 resource "aws_kms_key" "main" {
   description             = "Primary encryption key for SOC2 compliance"
   deletion_window_in_days = 30

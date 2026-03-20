@@ -20,6 +20,7 @@ The order of instructions in your Containerfile directly impacts cache efficienc
 
 ```dockerfile
 # BAD: This invalidates the npm install cache on every code change
+
 FROM node:20-alpine
 WORKDIR /app
 COPY . .

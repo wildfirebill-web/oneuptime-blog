@@ -27,6 +27,7 @@ Here is how you set up a basic Cloud Armor security policy:
 
 ```bash
 # Create a security policy
+
 gcloud compute security-policies create my-waf-policy \
   --description "WAF policy for web application"
 

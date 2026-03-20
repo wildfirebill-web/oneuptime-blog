@@ -28,6 +28,7 @@ NVIDIA Jetson devices are powerful ARM64 edge computing platforms with integrate
 
 ```bash
 # Check JetPack version
+
 cat /etc/nv_tegra_release
 
 # Verify NVIDIA container runtime is available

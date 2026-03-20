@@ -21,6 +21,7 @@ How to Set Up Epinio Git Push Deployments demonstrates how Epinio simplifies app
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

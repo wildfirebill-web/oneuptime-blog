@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: InfluxDB, Grafana, IoT, Portainer, Time Series, Dashboard, Docker
+Tags: InfluxDB, Grafana, IoT, Portainer, Time Series, Dashboards, Docker
 
 Description: Deploy InfluxDB and Grafana together using a Portainer stack to store and visualize IoT time-series sensor data with rich dashboards and alerting.
 
@@ -16,6 +16,7 @@ In Portainer, go to **Stacks > Add Stack**:
 
 ```yaml
 # influxdb-grafana-iot.yml
+
 version: "3.8"
 
 services:

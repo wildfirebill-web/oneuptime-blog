@@ -14,6 +14,7 @@ IdM uses Kerberos as its primary authentication protocol. When a user authentica
 
 ```bash
 # Obtain a Kerberos ticket (TGT)
+
 kinit admin
 # Enter password when prompted
 

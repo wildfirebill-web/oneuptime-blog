@@ -33,6 +33,7 @@ Use kubectl to pause a deployment:
 
 ```bash
 # Pause a deployment
+
 kubectl rollout pause deployment/my-app
 
 # Verify it's paused

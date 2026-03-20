@@ -28,6 +28,7 @@ Before extending, see how much free space exists in the volume group:
 
 ```bash
 # Check volume group free space
+
 sudo vgs
 
 # More detailed view

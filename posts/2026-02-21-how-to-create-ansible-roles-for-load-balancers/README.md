@@ -30,6 +30,7 @@ roles/haproxy/
 
 ```yaml
 # roles/haproxy/defaults/main.yml
+
 # HAProxy version and package
 haproxy_package: haproxy
 haproxy_version: "2.8"

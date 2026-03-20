@@ -1,4 +1,4 @@
-# How to Deploy a Laravel + MySQL Stack via Portainer
+# How to Deploy a Laravel + MySQL Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Laravel is PHP's most popular web framework with an elegant syntax and a rich ec
 
 ```dockerfile
 # Dockerfile
+
 FROM php:8.3-fpm-alpine AS base
 
 # Install system dependencies and PHP extensions

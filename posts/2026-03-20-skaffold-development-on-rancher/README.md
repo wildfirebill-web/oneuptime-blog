@@ -1,4 +1,4 @@
-# How to Set Up Skaffold for Development on Rancher
+# How to Set Up Skaffold for Development on Rancher - Development
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Skaffold is a command-line tool that handles the development workflow for Kubern
 
 ```bash
 # macOS
+
 brew install skaffold
 
 # Linux

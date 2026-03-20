@@ -22,6 +22,7 @@ Automating a Calico eBPF installation ensures that every new cluster comes up wi
 
 ```hcl
 # main.tf
+
 module "kubernetes_cluster" {
   source = "./modules/k8s-cluster"
 

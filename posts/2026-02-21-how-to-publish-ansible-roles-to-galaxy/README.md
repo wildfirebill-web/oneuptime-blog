@@ -53,6 +53,7 @@ The `meta/main.yml` file is what Galaxy reads to understand your role. Fill it o
 
 ```yaml
 # meta/main.yml
+
 # Galaxy metadata - this information appears on your role's Galaxy page
 ---
 galaxy_info:

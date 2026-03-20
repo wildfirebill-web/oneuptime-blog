@@ -67,6 +67,7 @@ Project-scoped repositories are created by adding the `project` field to the rep
 
 ```yaml
 # project-scoped-repo.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

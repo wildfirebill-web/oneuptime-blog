@@ -32,6 +32,7 @@ Enable Prometheus metrics collection for Cilium to gain visibility into the netw
 
 ```bash
 # Enable Prometheus metrics in Cilium
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

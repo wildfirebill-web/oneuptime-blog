@@ -102,6 +102,7 @@ Before installing MicroK8s, ensure your system meets these requirements:
 ### Check your Ubuntu version
 ```bash
 # Display Ubuntu version information
+
 lsb_release -a
 ```
 
@@ -677,7 +678,7 @@ spec:
 EOF
 ```
 
-### Resource Quotas
+Resource Quotas
 
 Limit resource consumption per namespace:
 ```bash

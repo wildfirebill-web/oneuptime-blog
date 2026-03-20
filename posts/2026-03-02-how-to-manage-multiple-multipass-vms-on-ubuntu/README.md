@@ -16,6 +16,7 @@ Before diving into multi-VM management patterns, here are the essential commands
 
 ```bash
 # List all instances with status and IP
+
 multipass list
 
 # Detailed info for one instance

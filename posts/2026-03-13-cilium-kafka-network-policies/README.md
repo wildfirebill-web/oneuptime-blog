@@ -114,6 +114,7 @@ spec:
 
 ```bash
 # Test allowed production
+
 kubectl exec -n data-pipeline producer-pod -- \
   kafka-console-producer.sh \
   --bootstrap-server kafka:9092 \

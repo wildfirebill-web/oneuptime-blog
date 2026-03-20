@@ -18,6 +18,7 @@ Organization Policies work through constraints. Google provides a set of predefi
 
 ```hcl
 # Configure the Google Cloud provider with organization access
+
 terraform {
   required_providers {
     google = {

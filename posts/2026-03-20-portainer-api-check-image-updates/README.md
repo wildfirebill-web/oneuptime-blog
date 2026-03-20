@@ -1,4 +1,4 @@
-# How to Check Image Updates via the Portainer API
+# How to Check Image Updates via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ TOKEN="your-auth-token"
 ENDPOINT_ID=1
 
 # Get a container ID first
+
 CONTAINER_ID="abc123def456"
 
 # Check if a specific container's image has an update available
@@ -78,7 +79,7 @@ echo $CONTAINERS | jq -c '.[]' | while read -r CONTAINER; do
   elif [ "$STATUS" = "updated" ]; then
     echo "UP TO DATE: $CONTAINER_NAME ($IMAGE)"
   else
-    echo "UNKNOWN: $CONTAINER_NAME ($IMAGE) — $STATUS"
+    echo "UNKNOWN: $CONTAINER_NAME ($IMAGE) - $STATUS"
   fi
 done
 ```
@@ -196,7 +197,7 @@ curl -s -X DELETE \
 
 ```bash
 #!/bin/bash
-# notify-outdated-images.sh — Send Slack notification for outdated images
+# notify-outdated-images.sh - Send Slack notification for outdated images
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-token"

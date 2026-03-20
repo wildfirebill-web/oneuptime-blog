@@ -60,6 +60,7 @@ A decorator is a function that takes another function as input and returns a new
 
 ```python
 # basic_decorator.py
+
 # Demonstrates the fundamental decorator pattern in Python
 from functools import wraps
 from typing import Callable, Any

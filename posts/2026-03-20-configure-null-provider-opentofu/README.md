@@ -26,7 +26,7 @@ terraform {
 
 ## Provider Configuration
 
-The null provider requires no configuration — it has no external service to authenticate with:
+The null provider requires no configuration - it has no external service to authenticate with:
 
 ```hcl
 provider "null" {}

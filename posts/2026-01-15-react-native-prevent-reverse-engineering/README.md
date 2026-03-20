@@ -54,6 +54,7 @@ On Android, extracting is trivial:
 
 ```bash
 # Rename APK to ZIP and extract
+
 unzip myapp.apk -d extracted_app
 
 # The bundle is immediately accessible

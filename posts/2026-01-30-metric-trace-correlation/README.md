@@ -431,6 +431,7 @@ const meterProvider = new MeterProvider({
 
 ```yaml
 # prometheus.yml
+
 # Enable exemplar storage in Prometheus
 
 global:

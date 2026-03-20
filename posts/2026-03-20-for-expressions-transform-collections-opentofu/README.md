@@ -14,6 +14,7 @@ For expressions in OpenTofu allow you to transform one collection type into anot
 
 ```hcl
 # List output: [for <item> in <collection> : <expression>]
+
 # Map output:  {for <item> in <collection> : <key> => <value>}
 
 variable "names" {

@@ -20,6 +20,7 @@ Check your current Elasticsearch version first.
 
 ```bash
 # Check your current Elasticsearch version
+
 curl -s http://localhost:9200 | jq '.version.number'
 ```
 

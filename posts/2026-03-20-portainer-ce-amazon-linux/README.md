@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, amazon-linux, aws, docker, installation
+Tags: Portainer, Amazon-linux, AWS, Docker, Installation
 
 Description: A guide to installing Portainer Community Edition on Amazon Linux 2 and Amazon Linux 2023 with Docker for AWS EC2 deployments.
 
@@ -21,7 +21,7 @@ Amazon Linux is the default EC2 instance OS for many AWS users. This guide cover
 
 Before installation, configure your EC2 security group to allow Portainer access:
 
-```
+```text
 AWS Console → EC2 → Security Groups → Your SG → Inbound Rules
 
 Add rules:
@@ -33,6 +33,7 @@ Add rules:
 
 ```bash
 # Amazon Linux 2
+
 sudo yum update -y
 
 # Amazon Linux 2023
@@ -111,7 +112,7 @@ Navigate to the URL in your browser and complete the initial setup.
 
 For production deployments, route traffic through an ALB:
 
-```
+```text
 ALB Listener (HTTPS/443) → Target Group (HTTP/9000) → EC2 Instance
 ```
 

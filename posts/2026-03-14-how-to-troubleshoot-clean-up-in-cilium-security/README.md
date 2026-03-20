@@ -30,6 +30,7 @@ Start by assessing the overall health of your Cilium deployment:
 
 ```bash
 # Check Cilium agent health on all nodes
+
 kubectl -n kube-system get pods -l k8s-app=cilium -o wide
 ```
 

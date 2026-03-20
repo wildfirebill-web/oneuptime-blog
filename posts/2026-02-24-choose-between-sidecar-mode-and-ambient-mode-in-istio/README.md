@@ -67,6 +67,7 @@ Ambient mode takes effect immediately. Label a namespace and traffic interceptio
 
 ```bash
 # Ambient: instant enrollment
+
 kubectl label namespace my-app istio.io/dataplane-mode=ambient
 
 # Sidecar: label then restart all pods

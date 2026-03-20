@@ -81,6 +81,7 @@ The `distroless` variant is smaller and has a reduced attack surface (no shell, 
 
 ```yaml
 # Use debug image for a specific workload
+
 spec:
   selector:
     matchLabels:

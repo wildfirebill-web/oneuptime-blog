@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Link-Local, IPv6, SLAAC, fe80, Address Generation, No Router
+Tags: Link-Local, IPv6, SLAAC, Fe80, Address Generation, No Router
 
 Description: Understand how IPv6 hosts automatically generate link-local addresses independently of SLAAC and Router Advertisements, and when link-local-only communication is sufficient.
 
@@ -12,7 +12,7 @@ IPv6 hosts generate link-local addresses (fe80::/10 prefix) automatically when a
 
 ## Link-Local Address Generation
 
-```
+```text
 Link-Local Address Generation Process:
 
 Step 1: Interface enabled (UP)
@@ -41,7 +41,7 @@ Global SLAAC address requires RA with prefix
 
 ## Link-Local Address Properties
 
-```
+```text
 Link-Local Address Properties:
 
 Prefix: fe80::/10
@@ -72,6 +72,7 @@ Usage:
 
 ```bash
 # In a network segment with no router:
+
 # Hosts can still communicate via link-local addresses
 
 # Host A (eth0): fe80::1
@@ -147,7 +148,7 @@ sudo ip -6 addr add fe80::1/64 dev eth0
 
 ## Link-Local in Routing
 
-```
+```text
 Link-Local in Routing Protocols:
 
 OSPFv3:

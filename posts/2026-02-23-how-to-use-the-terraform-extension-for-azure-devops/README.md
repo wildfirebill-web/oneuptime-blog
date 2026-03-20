@@ -25,6 +25,7 @@ Alternatively, install it via the CLI:
 
 ```bash
 # Install the extension using Azure CLI
+
 az devops extension install \
     --publisher-id "ms-devlabs" \
     --extension-id "custom-terraform-tasks" \

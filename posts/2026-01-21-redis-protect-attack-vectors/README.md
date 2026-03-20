@@ -46,6 +46,7 @@ Thousands of Redis instances are exposed to the internet without authentication,
 
 ```bash
 # Shodan search
+
 port:6379 -auth
 
 # Masscan for quick discovery

@@ -20,6 +20,7 @@ The simplest way to get JSON events is with the `--format json` flag.
 
 ```bash
 # Output events in JSON format
+
 podman events --format json
 
 # View recent events in JSON format

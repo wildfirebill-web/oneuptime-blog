@@ -35,6 +35,7 @@ For security, create a dedicated API token instead of using your root password.
 
 ```hcl
 # versions.tf - Declare the Proxmox provider
+
 terraform {
   required_version = ">= 1.0"
 
@@ -384,7 +385,7 @@ resource "proxmox_virtual_environment_file" "cloud_image" {
 }
 ```
 
-## Resource Pools
+Resource Pools
 
 ```hcl
 # Create a resource pool for organizing VMs

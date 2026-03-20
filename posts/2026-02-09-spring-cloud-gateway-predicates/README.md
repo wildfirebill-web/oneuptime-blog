@@ -64,6 +64,7 @@ Spring Cloud Gateway routes are configured in `application.yaml`. Each route has
 
 ```yaml
 # application.yaml
+
 spring:
   cloud:
     gateway:

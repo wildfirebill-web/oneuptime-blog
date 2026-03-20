@@ -25,6 +25,7 @@ The safest way to test state operations is with a dedicated test environment tha
 
 ```hcl
 # test-environment/main.tf
+
 # Mirror of production config for testing state operations
 
 terraform {

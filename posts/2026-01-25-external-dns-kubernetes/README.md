@@ -47,6 +47,7 @@ ExternalDNS watches Kubernetes resources and syncs DNS records to match.
 
 ```bash
 # Add the ExternalDNS Helm repository
+
 helm repo add external-dns https://kubernetes-sigs.github.io/external-dns/
 helm repo update
 

@@ -33,6 +33,7 @@ The Plugin generator is not enabled by default. You need to configure it in the 
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

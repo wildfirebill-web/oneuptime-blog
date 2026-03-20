@@ -27,6 +27,7 @@ Start by understanding what you have.
 
 ```bash
 # See all connections and their state
+
 nmcli connection show
 
 # Check current IP configuration on an interface

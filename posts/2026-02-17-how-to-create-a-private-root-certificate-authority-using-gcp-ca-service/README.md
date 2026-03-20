@@ -49,6 +49,7 @@ CA pools are containers for certificate authorities. They define the issuance po
 
 ```bash
 # Create a CA pool for the root CA
+
 gcloud privateca pools create root-ca-pool \
   --location=us-central1 \
   --tier=enterprise \

@@ -27,6 +27,7 @@ HTTP/2 does not work with the prefork MPM. Check your current MPM:
 
 ```bash
 # Check which MPM is active
+
 httpd -V | grep MPM
 ```
 

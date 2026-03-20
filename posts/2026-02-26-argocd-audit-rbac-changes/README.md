@@ -35,6 +35,7 @@ Store your RBAC ConfigMap in a Git repository:
 
 ```yaml
 # argocd-config/argocd-rbac-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

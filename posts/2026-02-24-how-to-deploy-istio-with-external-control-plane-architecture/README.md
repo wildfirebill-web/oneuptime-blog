@@ -43,6 +43,7 @@ You need a gateway to expose Istiod to remote clusters. Install a minimal Istio 
 
 ```yaml
 # external-cluster-gateway.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

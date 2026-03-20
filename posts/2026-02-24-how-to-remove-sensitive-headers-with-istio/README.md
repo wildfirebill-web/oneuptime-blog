@@ -274,6 +274,7 @@ Use curl to check that headers are actually being stripped:
 
 ```bash
 # Before applying the configuration
+
 curl -sI http://app.example.com/ | grep -i "server\|x-powered-by\|x-envoy"
 
 # After applying

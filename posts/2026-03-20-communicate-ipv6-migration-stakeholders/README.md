@@ -31,10 +31,10 @@ flowchart TD
 
 ## Executive Communication
 
-Executives need business impact, risk, and timeline — not technical details:
+Executives need business impact, risk, and timeline - not technical details:
 
 ```markdown
-# Subject: IPv6 Migration Program Update — Q1 2026
+# Subject: IPv6 Migration Program Update - Q1 2026
 
 ## Why We're Doing This
 IPv6 migration is required for continued growth. IPv4 address exhaustion
@@ -65,7 +65,7 @@ segment of users.
 Developers need specific action items and technical context:
 
 ```markdown
-# Subject: IPv6 Migration — Developer Action Required by [DATE]
+# Subject: IPv6 Migration - Developer Action Required by [DATE]
 
 ## What You Need to Do
 
@@ -79,6 +79,7 @@ Your team owns these services that require changes:
 ### Socket Binding
 ```python
 # BEFORE
+
 server.bind(('0.0.0.0', 8080))
 
 # AFTER
@@ -95,7 +96,7 @@ ALTER TABLE sessions ALTER COLUMN client_ip TYPE VARCHAR(45);
 - Changes due in your service: by 2026-04-30
 - Testing window: 2026-05-01 to 2026-05-15
 - Questions: #ipv6-migration Slack channel
-```
+```text
 
 ## Operations Team Communication
 
@@ -130,14 +131,14 @@ See runbook: /wiki/IPv6-Rollback-Procedures
 ## Escalation
 IPv6 incidents: page network team + application team
 Rollback decision authority: on-call engineer can rollback DNS immediately
-```
+```text
 
 ## End User Communication
 
 For external-facing changes, brief communication prevents confusion:
 
 ```markdown
-# Subject: Network Upgrade — No Action Required
+# Subject: Network Upgrade - No Action Required
 
 We're upgrading our network to support IPv6, the next generation
 of internet addressing. This upgrade:

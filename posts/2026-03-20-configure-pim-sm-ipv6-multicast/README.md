@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PIM-SM, Multicast Routing, pimd, Network
+Tags: IPv6, PIM-SM, Multicast Routing, Pimd, Networks
 
 Description: A guide to configuring PIM-SM (Protocol Independent Multicast - Sparse Mode) for IPv6 multicast routing on Linux using the pimd daemon.
 
 ## What Is PIM-SM?
 
-PIM-SM (Protocol Independent Multicast — Sparse Mode) is a multicast routing protocol designed for networks where multicast group members are spread sparsely. It uses a Rendezvous Point (RP) to coordinate multicast distribution trees.
+PIM-SM (Protocol Independent Multicast - Sparse Mode) is a multicast routing protocol designed for networks where multicast group members are spread sparsely. It uses a Rendezvous Point (RP) to coordinate multicast distribution trees.
 
 For IPv6, PIM-SM is defined in RFC 7761 and works identically to its IPv4 counterpart, just using IPv6 addresses and `ff0x::` multicast groups.
 
@@ -18,6 +18,7 @@ The `pimd` daemon handles both PIM-SM and is available on most Linux distributio
 
 ```bash
 # Install FRRouting (supports IPv6 PIM)
+
 apt install frr
 
 # Enable the PIM daemon in FRR

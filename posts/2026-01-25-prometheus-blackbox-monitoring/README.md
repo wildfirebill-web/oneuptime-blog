@@ -34,6 +34,7 @@ You can run the Blackbox Exporter as a standalone binary, Docker container, or K
 
 ```bash
 # Pull and run the Blackbox Exporter container
+
 docker run -d \
   --name blackbox-exporter \
   -p 9115:9115 \

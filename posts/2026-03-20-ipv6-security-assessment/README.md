@@ -8,7 +8,7 @@ Description: Learn how to conduct a technical IPv6 security assessment using sca
 
 ## Overview
 
-An IPv6 security assessment goes beyond auditing configuration — it actively tests the network to verify that defenses work as expected. This includes probing for rogue RA vulnerabilities, testing extension header filtering, checking PMTUD behavior, and identifying IPv6 hosts that aren't in your inventory.
+An IPv6 security assessment goes beyond auditing configuration - it actively tests the network to verify that defenses work as expected. This includes probing for rogue RA vulnerabilities, testing extension header filtering, checking PMTUD behavior, and identifying IPv6 hosts that aren't in your inventory.
 
 ## Assessment Tools
 
@@ -26,17 +26,18 @@ An IPv6 security assessment goes beyond auditing configuration — it actively t
 ## Phase 1: IPv6 Host Discovery
 
 ```bash
-# Passive discovery — listen for NDP
+# Passive discovery - listen for NDP
+
 tcpdump -i eth0 'icmp6' -l -n | grep -E 'NS|NA|RS|RA' &
 
-# Active discovery — ping all-nodes multicast
+# Active discovery - ping all-nodes multicast
 ping6 -c 3 ff02::1%eth0
 
 # Scan known host patterns
 nmap -6 -sn 2001:db8:1::1-ff     # Sequential low addresses
 nmap -6 -sn "2001:db8:1::1,::2,::10,::100,::dead,::cafe"
 
-# EUI-64 pattern scan — if you know OUI of devices on link
+# EUI-64 pattern scan - if you know OUI of devices on link
 # MAC 00:50:56:xx:xx:xx (VMware) → ::0250:56ff:feXX:XXXX
 nmap -6 -sn 2001:db8:1::250:56ff:fe00:0/112   # VMware EUI-64 range
 ```
@@ -47,7 +48,7 @@ nmap -6 -sn 2001:db8:1::250:56ff:fe00:0/112   # VMware EUI-64 range
 # nmap: Full service scan of discovered IPv6 hosts
 nmap -6 -sV -A -p- 2001:db8:1::10
 
-# Check for dual-stack — same services exposed on IPv6?
+# Check for dual-stack - same services exposed on IPv6?
 nmap -6 -p 22,80,443,8080,3306 2001:db8:1::0/64 --open
 
 # DNS AAAA enumeration
@@ -59,9 +60,9 @@ dnsx -d example.com -aaaa
 ## Phase 3: Rogue RA Testing
 
 ```bash
-# Test RA Guard — are access ports protected?
+# Test RA Guard - are access ports protected?
 # From a host on the segment, try sending an RA
-# If other hosts reconfigure — RA Guard is NOT working
+# If other hosts reconfigure - RA Guard is NOT working
 
 # Method 1: Using fake_router6 (THC-IPv6)
 fake_router6 eth0 2001:db8:test::/64
@@ -76,7 +77,7 @@ ra = (Ether(dst='33:33:00:00:00:01') /
 sendp(ra, iface='eth0', count=5, inter=1)
 "
 
-# After sending — check if a victim host received the RA
+# After sending - check if a victim host received the RA
 # SSH to victim and check:
 ip -6 route show | grep 'proto ra'
 ```
@@ -90,7 +91,7 @@ from scapy.all import *
 pkt = IPv6(dst='target-ip')/IPv6ExtHdrRouting(type=0, addresses=['2001:db8::dead'])/TCP(dport=80)
 send(pkt, count=1)
 "
-# Should be blocked — if it arrives, RH0 filtering is missing
+# Should be blocked - if it arrives, RH0 filtering is missing
 
 # Test Hop-by-Hop header
 python3 -c "
@@ -130,12 +131,12 @@ hping3 -6 --icmpv6 -C 2 --icmpv6-code 0 target-ip
 
 # Test that echo requests are handled as expected
 ping6 -c 5 target-ip
-# Document response — note if rate limited
+# Document response - note if rate limited
 ```
 
 ## Assessment Report Template
 
-```
+```text
 IPv6 Security Assessment Report
 ================================
 Date:
@@ -150,7 +151,7 @@ Findings:
    - Recommendation: Deploy host firewall policy
 
 2. [HIGH] RA Guard not deployed on access switches
-   - Rogue RA test successful — hosts reconfigured
+   - Rogue RA test successful - hosts reconfigured
    - Recommendation: Deploy RA Guard on all access ports
 
 3. [MEDIUM] RH0 not filtered

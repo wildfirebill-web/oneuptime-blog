@@ -25,6 +25,7 @@ If you can connect briefly, try to gather information quickly:
 
 ```bash
 # Try to get logs before the node reboots again
+
 talosctl -n <node-ip> dmesg --insecure 2>/dev/null > dmesg-output.txt
 
 # Try to check service status

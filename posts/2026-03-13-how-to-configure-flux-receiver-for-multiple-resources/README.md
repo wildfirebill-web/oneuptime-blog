@@ -31,6 +31,7 @@ The `spec.resources` field accepts an array of resource references. You can incl
 
 ```yaml
 # multi-resource-receiver.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Receiver
 metadata:
@@ -301,7 +302,7 @@ kubectl -n flux-system get gitrepository --show-labels
 
 If a Receiver references a large number of resources, the notification-controller must patch each one. With dozens of resources this can take time. Consider splitting into multiple Receivers or using label selectors to keep the set manageable.
 
-### Resource in a different namespace
+Resource in a different namespace
 
 By default, the Receiver can only target resources in its own namespace. To target resources in other namespaces, see the cross-namespace configuration guide. You may need to use `namespace` in the resource reference and configure appropriate RBAC.
 

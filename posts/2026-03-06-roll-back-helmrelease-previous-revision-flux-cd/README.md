@@ -16,6 +16,7 @@ Every time Flux upgrades a HelmRelease, Helm creates a new revision. These revis
 
 ```bash
 # View Helm release history
+
 helm history my-app -n default
 
 # Example output:

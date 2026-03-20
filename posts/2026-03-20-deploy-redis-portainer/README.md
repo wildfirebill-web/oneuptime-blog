@@ -45,7 +45,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 REDIS_PASSWORD = a-strong-redis-password
 ```
 
@@ -53,7 +53,7 @@ REDIS_PASSWORD = a-strong-redis-password
 
 Key Redis settings explained:
 
-```
+```text
 --requirepass PASSWORD    : Enable authentication (always use in production)
 --appendonly yes          : Enable AOF persistence (survives restart)
 --maxmemory 256mb         : Memory limit for the cache
@@ -84,6 +84,7 @@ services:
 
 ```bash
 # Connect to Redis CLI
+
 docker exec -it redis redis-cli -a "${REDIS_PASSWORD}"
 
 # Test connection
@@ -149,4 +150,4 @@ docker restart redis
 
 ## Conclusion
 
-Redis via Portainer is straightforward to set up for caching and session storage. The critical security setting is `--requirepass` — never expose Redis without a password. The `allkeys-lru` eviction policy is appropriate for caching workloads, while `noeviction` suits persistent data stores where you want errors rather than data loss under memory pressure.
+Redis via Portainer is straightforward to set up for caching and session storage. The critical security setting is `--requirepass` - never expose Redis without a password. The `allkeys-lru` eviction policy is appropriate for caching workloads, while `noeviction` suits persistent data stores where you want errors rather than data loss under memory pressure.

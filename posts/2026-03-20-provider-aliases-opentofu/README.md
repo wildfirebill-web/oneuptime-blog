@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Providers
+Tags: OpenTofu, Infrastructure as Code, Terraform, IaC, DevOps, Provider
 
 Description: Learn how to configure and use provider aliases in OpenTofu to manage multiple instances of the same provider with different configurations.
 
 ## Introduction
 
-Provider aliases allow you to have multiple instances of the same provider with different configurations — different regions, accounts, or settings. Without aliases, you can only have one provider configuration per provider type. Aliases are essential for multi-region deployments, cross-account access, and any scenario requiring two differently-configured instances of the same provider.
+Provider aliases allow you to have multiple instances of the same provider with different configurations - different regions, accounts, or settings. Without aliases, you can only have one provider configuration per provider type. Aliases are essential for multi-region deployments, cross-account access, and any scenario requiring two differently-configured instances of the same provider.
 
 ## Defining Provider Aliases
 
 ```hcl
 # Default provider (no alias)
+
 provider "aws" {
   region = "us-east-1"
 }

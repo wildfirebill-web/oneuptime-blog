@@ -44,6 +44,7 @@ You can explore the REST API directly:
 
 ```bash
 # Get an auth token
+
 ARGOCD_TOKEN=$(argocd account generate-token)
 
 # List applications via REST API

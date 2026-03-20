@@ -12,7 +12,7 @@ Good IPv6 address planning at the rack level enables route summarization, simpli
 
 ## Recommended Hierarchy
 
-```
+```text
 /32  - Organization total
   /40  - Data Center site
     /48  - Pod or row
@@ -20,11 +20,11 @@ Good IPv6 address planning at the rack level enables route summarization, simpli
         /64  - Individual VLAN/subnet within rack
 ```
 
-This gives each rack a /56, providing 256 individual /64 subnets — enough for multiple VLANs per rack.
+This gives each rack a /56, providing 256 individual /64 subnets - enough for multiple VLANs per rack.
 
 ## Allocation Example
 
-```
+```text
 Site: DC-EAST     = 2001:db8:01::/40
 Pod A             = 2001:db8:01:00::/48
   Row 1           = 2001:db8:01:00::/52
@@ -54,6 +54,7 @@ Use Python's `ipaddress` module to generate rack allocations programmatically:
 import ipaddress
 
 # Start with a /48 for a pod
+
 pod_prefix = ipaddress.IPv6Network("2001:db8:1::/48")
 
 # Generate /56 prefixes for each rack (subnets of /48)
@@ -71,7 +72,7 @@ for i, rack in enumerate(rack_prefixes[:5]):
 
 Ensure each ToR (Top-of-Rack) switch advertises only the rack's /56 summary route upstream, not individual /64s:
 
-```
+```text
 # FRR - advertise rack summary only
 router bgp 65001
  address-family ipv6
@@ -81,7 +82,7 @@ router bgp 65001
 
 ## Avoiding Common Mistakes
 
-- Do not assign /128s to individual servers manually — use SLAAC or DHCPv6 within the /64.
+- Do not assign /128s to individual servers manually - use SLAAC or DHCPv6 within the /64.
 - Reserve a /64 per rack for OOB management (IPMI/iDRAC/iLO).
 - Document allocations in an IPAM system before deployment.
 

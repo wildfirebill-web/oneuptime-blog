@@ -18,6 +18,7 @@ Before you can do anything, the system needs to be registered with Red Hat. You 
 
 ```bash
 # Register the system with Red Hat using your credentials
+
 sudo subscription-manager register --username your-rh-username --password your-rh-password
 ```
 

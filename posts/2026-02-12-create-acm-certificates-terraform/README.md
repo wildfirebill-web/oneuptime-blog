@@ -41,6 +41,7 @@ This creates a certificate for a single domain and automatically creates the DNS
 
 ```hcl
 # Request the certificate
+
 resource "aws_acm_certificate" "main" {
   domain_name       = "app.example.com"
   validation_method = "DNS"

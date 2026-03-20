@@ -76,6 +76,7 @@ Identify your ingress controller namespace and pod labels:
 
 ```bash
 # For NGINX ingress controller
+
 kubectl get pods -n ingress-nginx --show-labels
 
 # For Traefik

@@ -28,6 +28,7 @@ Before you can plan for growth, you need to track it. Set up dashboards for thes
 
 ```promql
 # Total pods in the mesh over time
+
 count(kube_pod_labels{label_security_istio_io_tlsMode="istio"})
 
 # Total services

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Testing, tftest, HCL, Infrastructure as Code
+Tags: OpenTofu, Terraform, Testing, Tftest, HCL, Infrastructure as Code
 
 Description: Learn the syntax and structure of .tftest.hcl files used by OpenTofu's native testing framework, including run blocks, assertions, variables, and mock providers.
 
@@ -24,6 +24,7 @@ A `.tftest.hcl` file can contain:
 # tests/networking.tftest.hcl
 
 # Global variables applied to all runs
+
 variables {
   environment = "test"
   region      = "us-east-1"

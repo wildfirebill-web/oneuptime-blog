@@ -106,6 +106,7 @@ Use GitLab's managed Terraform state for collaboration.
 
 ```hcl
 # terraform/backend.tf
+
 terraform {
   backend "http" {
     # GitLab will provide these via CI variables

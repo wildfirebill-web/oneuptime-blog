@@ -28,6 +28,7 @@ Create a basic IngressRoute for HTTP routing to a backend service.
 
 ```yaml
 # apps/backend/ingressroute.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:

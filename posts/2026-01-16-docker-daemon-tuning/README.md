@@ -64,6 +64,7 @@ flowchart TB
 
 ```bash
 # Create separate partition for Docker
+
 # /etc/fstab
 /dev/sdb1  /var/lib/docker  xfs  defaults,noatime,nodiratime  0  2
 
@@ -155,7 +156,7 @@ services:
 }
 ```
 
-## Resource Management
+Resource Management
 
 ### Default Container Limits
 

@@ -40,6 +40,7 @@ ARG <name>[=<default value>]
 
 ```dockerfile
 # Declare a build argument
+
 ARG APP_VERSION
 
 # Use the argument in your Dockerfile

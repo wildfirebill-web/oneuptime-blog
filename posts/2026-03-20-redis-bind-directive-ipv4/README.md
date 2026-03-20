@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, IPv4, bind, Configuration, Security, Cache
+Tags: Redis, IPv4, BIND, Configuration, Security, Cache
 
 Description: Configure Redis bind directive in redis.conf to listen on specific IPv4 addresses, limit exposure to trusted interfaces, and verify the binding is correct.
 
@@ -16,6 +16,7 @@ Redis defaults to binding only to `127.0.0.1` since version 3.2. To allow remote
 # /etc/redis/redis.conf
 
 # Default (local only)
+
 bind 127.0.0.1
 
 # Allow remote connections on specific IP + loopback

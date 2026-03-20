@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, Reverse DNS, Zone Delegation, ip6.arpa
+Tags: IPv6, DNS, Reverse DNS, Zone Delegation, Ip6.arpa
 
 Description: Learn how to delegate IPv6 reverse DNS zones from a parent to a child DNS server, enabling organizations to manage their own PTR records.
 
@@ -80,6 +80,7 @@ $TTL 3600
 
 ```bash
 # From the ISP side: verify NS records are in the parent zone
+
 dig NS e.f.a.c.8.b.d.0.1.0.0.2.ip6.arpa @isp-nameserver
 
 # Expected:

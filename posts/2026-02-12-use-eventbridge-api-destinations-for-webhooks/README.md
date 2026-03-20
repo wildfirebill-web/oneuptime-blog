@@ -38,6 +38,7 @@ Here is an example creating a connection with an API key (common for services li
 
 ```bash
 # Create a connection with API key authentication for Slack
+
 aws events create-connection \
   --name slack-webhook-connection \
   --authorization-type API_KEY \

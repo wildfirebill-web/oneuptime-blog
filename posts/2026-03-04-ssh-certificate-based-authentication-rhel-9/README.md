@@ -35,6 +35,7 @@ Pick a secure machine to act as your CA. This could be a dedicated box or your e
 
 ```bash
 # Generate the user CA key
+
 ssh-keygen -t ed25519 -f /etc/ssh/ca/user_ca -C "User CA"
 
 # Generate the host CA key

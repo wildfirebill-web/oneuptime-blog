@@ -23,6 +23,7 @@ There is also a distinction between **opportunistic TLS** (try TLS, fall back to
 
 ```bash
 # Verify Postfix is installed
+
 postfix -v
 
 # Check that OpenSSL is available

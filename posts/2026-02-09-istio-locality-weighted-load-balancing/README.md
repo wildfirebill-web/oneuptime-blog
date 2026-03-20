@@ -32,6 +32,7 @@ Deploy your application across multiple zones. Use pod topology spread constrain
 
 ```yaml
 # deployment-multi-zone.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -31,6 +31,7 @@ Drift detection is configured at the GitRepo level:
 
 ```yaml
 # gitrepo-drift-detection.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:

@@ -1,14 +1,14 @@
-# How to Build a Self-Service Developer Portal with Portainer API
+# How to Build a Self-Service Developer Portal with Portainer API - Self Service
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, API, Developer Portal, Self-Service, Automation, Platform Engineering
 
-Description: Use the Portainer REST API as the backend for a self-service developer portal that lets engineering teams deploy preview environments, manage stacks, and view container status without direct Portainer access.
+Description: Use the Portainer REST API as the backend for a self-service developer portal that lets engineering teams deploy preview environments, manage stacks, and view container status without direct...
 
 ---
 
-A self-service developer portal abstracts Portainer's complexity behind a simplified interface tailored to your team's workflow. Developers request environments, deploy branches, and check service status through a friendly UI — the portal handles Portainer API calls behind the scenes.
+A self-service developer portal abstracts Portainer's complexity behind a simplified interface tailored to your team's workflow. Developers request environments, deploy branches, and check service status through a friendly UI - the portal handles Portainer API calls behind the scenes.
 
 ## Portal Architecture
 
@@ -25,7 +25,7 @@ graph LR
 
 Define what developers can request through the portal:
 
-```
+```text
 POST /environments          Create a preview environment for a branch
 DELETE /environments/:id    Tear down an environment
 GET  /environments          List the caller's active environments
@@ -38,7 +38,8 @@ The portal translates each request into Portainer API calls.
 ## Step 2: Environment Creation Endpoint
 
 ```python
-# Flask/FastAPI example — create a preview environment
+# Flask/FastAPI example - create a preview environment
+
 import requests
 import os
 

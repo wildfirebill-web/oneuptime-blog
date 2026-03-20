@@ -16,6 +16,7 @@ Prisma provides a type-safe database client that pairs excellently with GraphQL.
 
 ```bash
 # Initialize a new project
+
 npm init -y
 
 # Install dependencies

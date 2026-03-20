@@ -87,6 +87,7 @@ From the verbose output:
 
 ```bash
 # Get the statistics
+
 LOGICAL=$(sudo vdostats --verbose /dev/mapper/vg_vdo-vpool | grep "logical blocks used" | awk '{print $NF}')
 DATA=$(sudo vdostats --verbose /dev/mapper/vg_vdo-vpool | grep "data blocks used" | awk '{print $NF}')
 

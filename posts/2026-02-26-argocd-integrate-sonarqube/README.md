@@ -374,6 +374,7 @@ Define quality gates in SonarQube through the API (useful for automation):
 
 ```bash
 # Create a custom quality gate
+
 curl -s -u "$SONAR_TOKEN:" \
   -X POST "$SONAR_HOST/api/qualitygates/create" \
   -d "name=Production Gate"

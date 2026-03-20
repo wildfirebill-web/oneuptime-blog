@@ -21,6 +21,7 @@ HashiCorp Vault is a widely adopted secrets management solution that provides dy
 
 ```yaml
 # infrastructure/external-secrets/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

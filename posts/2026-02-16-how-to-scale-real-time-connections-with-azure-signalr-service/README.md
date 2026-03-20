@@ -190,6 +190,7 @@ Set up alerts on these metrics:
 
 ```bash
 # Create an alert for connection count exceeding 80% of capacity
+
 # Helps you scale before hitting the limit
 az monitor metrics alert create \
     --name "signalr-high-connections" \

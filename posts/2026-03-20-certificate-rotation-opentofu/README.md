@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, TLS, Certificates, Rotation, ACM, Key Vault, Security, Infrastructure as Code
 
-Description: Learn how to implement zero-downtime TLS certificate rotation using OpenTofu with create_before_destroy lifecycle, automated rotation workflows, and expiry monitoring for ACM, Key Vault, and self-managed certificates.
+Description: Learn how to implement zero-downtime TLS certificate rotation using OpenTofu with create_before_destroy lifecycle, automated rotation workflows, and expiry monitoring for ACM, Key Vault, and...
 
 ---
 
-Certificate rotation is a security requirement — certificates expire, keys may be compromised, and compliance frameworks mandate regular rotation. OpenTofu manages rotation using `create_before_destroy` lifecycle rules to ensure zero-downtime transitions.
+Certificate rotation is a security requirement - certificates expire, keys may be compromised, and compliance frameworks mandate regular rotation. OpenTofu manages rotation using `create_before_destroy` lifecycle rules to ensure zero-downtime transitions.
 
 ## Certificate Rotation Workflow
 
@@ -25,7 +25,8 @@ graph LR
 
 ```hcl
 # acm.tf
-# ACM auto-renews DNS-validated certificates — this pattern handles
+
+# ACM auto-renews DNS-validated certificates - this pattern handles
 # certificates that need explicit replacement (key algorithm changes, SAN changes)
 
 resource "aws_acm_certificate" "main" {
@@ -173,7 +174,7 @@ resource "aws_cloudwatch_metric_alarm" "cert_expiry_critical" {
   }
 
   alarm_actions = [aws_sns_topic.critical_alerts.arn]
-  alarm_description = "CRITICAL: Certificate expires in less than 14 days — rotate immediately"
+  alarm_description = "CRITICAL: Certificate expires in less than 14 days - rotate immediately"
 }
 
 resource "aws_cloudwatch_metric_alarm" "cert_expiry_warning" {
@@ -197,21 +198,21 @@ resource "aws_cloudwatch_metric_alarm" "cert_expiry_warning" {
 ## CI/CD Rotation Workflow
 
 ```hcl
-# outputs.tf — expose expiry for CI/CD rotation checks
+# outputs.tf - expose expiry for CI/CD rotation checks
 output "certificate_arn" {
   value = aws_acm_certificate_validation.main.certificate_arn
 }
 
 output "certificate_expiry" {
-  description = "Certificate expiry — schedule rotation before this date"
+  description = "Certificate expiry - schedule rotation before this date"
   value       = aws_acm_certificate.main.not_after
 }
 ```
 
 ## Best Practices
 
-- Always use `create_before_destroy = true` on certificate resources — without it, OpenTofu will destroy the old certificate before the new one is attached, causing downtime.
+- Always use `create_before_destroy = true` on certificate resources - without it, OpenTofu will destroy the old certificate before the new one is attached, causing downtime.
 - Use `allow_overwrite = true` on Route 53 validation records so rotation doesn't fail when the validation record already exists from the previous certificate.
-- Track certificate versions in secret names or annotations — this creates an audit trail of when rotations occurred.
-- Set two alarms: a 30-day warning and a 14-day critical alert — 30 days gives time for planned rotation, 14 days triggers emergency procedures.
-- For ACM certificates, rotation is usually automatic via DNS validation — but monitor anyway because validation can silently fail if DNS records are misconfigured.
+- Track certificate versions in secret names or annotations - this creates an audit trail of when rotations occurred.
+- Set two alarms: a 30-day warning and a 14-day critical alert - 30 days gives time for planned rotation, 14 days triggers emergency procedures.
+- For ACM certificates, rotation is usually automatic via DNS validation - but monitor anyway because validation can silently fail if DNS records are misconfigured.

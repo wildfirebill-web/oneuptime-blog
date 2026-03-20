@@ -14,6 +14,7 @@ Calico is a popular CNI for Kubernetes that supports BGP-based pod routing. It h
 
 ```bash
 # Install the Calico operator
+
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/tigera-operator.yaml
 
 # Configure dual-stack installation

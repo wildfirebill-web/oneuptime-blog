@@ -42,6 +42,7 @@ If you do not want to think about clusters, scaling, or shutdown:
 
 ```python
 # A Dataflow batch pipeline - no cluster management needed
+
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 

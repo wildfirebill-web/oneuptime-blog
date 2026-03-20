@@ -16,6 +16,7 @@ DHCPv6 uses UDP ports 546 (client) and 547 (server):
 
 ```bash
 # Capture DHCPv6 traffic on interface eth0 with verbose output
+
 sudo tcpdump -i eth0 -n -v "udp port 546 or udp port 547"
 ```
 
@@ -36,7 +37,7 @@ sudo tcpdump -r /tmp/dhcpv6_capture.pcap -v -n
 
 When a DHCPv6 exchange occurs, you will see output similar to:
 
-```
+```text
 # Solicit from client to All-DHCPv6-Servers multicast
 12:00:01.001 IP6 fe80::aabb:ccff:fedd:1234.546 > ff02::1:2.547:
   dhcp6 solicit
@@ -89,7 +90,7 @@ Note: When using `-i any`, link-local addresses may appear differently since the
 For full option decoding, combine `-vvv` (triple verbose):
 
 ```bash
-# Maximum verbosity — shows all DHCPv6 options decoded
+# Maximum verbosity - shows all DHCPv6 options decoded
 sudo tcpdump -i eth0 -n -vvv "udp port 546 or udp port 547"
 ```
 
@@ -104,10 +105,10 @@ This will output details like:
 
 | Scenario | tcpdump Observation |
 |----------|---------------------|
-| No server response | Only Solicit packets appear — no Advertise |
-| Server unreachable for Renew | Renew sent to unicast, no Reply — try Rebind check |
+| No server response | Only Solicit packets appear - no Advertise |
+| Server unreachable for Renew | Renew sent to unicast, no Reply - try Rebind check |
 | Prefix delegation failing | IA_PD in Solicit but no IA_PD in Reply |
-| Wrong interface capturing | No packets seen — confirm interface with `ip link show` |
+| Wrong interface capturing | No packets seen - confirm interface with `ip link show` |
 
 ## Summary
 

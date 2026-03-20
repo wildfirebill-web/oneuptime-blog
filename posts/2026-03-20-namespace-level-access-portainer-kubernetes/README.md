@@ -33,6 +33,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # List current access policies for environment ID 1
+
 curl -s https://localhost:9443/api/endpoints/1 \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

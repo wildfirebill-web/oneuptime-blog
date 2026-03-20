@@ -26,6 +26,7 @@ In a cluster with 50 Kustomizations and 30 HelmReleases, you can get thousands o
 
 ```bash
 # Count events from Flux controllers in the last hour
+
 kubectl get events -n flux-system --sort-by=.lastTimestamp | tail -50
 
 # Count events by type

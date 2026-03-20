@@ -16,6 +16,7 @@ An Elastic IP (EIP) is a static public IPv4 address that you allocate from Amazo
 
 ```bash
 # Allocate an EIP in the VPC domain
+
 aws ec2 allocate-address --domain vpc
 
 # Output:

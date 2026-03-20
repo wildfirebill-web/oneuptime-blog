@@ -47,6 +47,7 @@ Here is a simple example showing how handlers work with the notify directive:
 
 ```yaml
 # playbook.yml
+
 # Basic handler example demonstrating the notify mechanism
 ---
 - name: Configure web server

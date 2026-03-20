@@ -26,6 +26,7 @@ CAPZ supports both self-managed Kubernetes on Azure VMs and managed AKS clusters
 
 ```bash
 # Initialize clusterctl with the Azure provider
+
 export AZURE_SUBSCRIPTION_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 export AZURE_TENANT_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 export AZURE_CLIENT_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"

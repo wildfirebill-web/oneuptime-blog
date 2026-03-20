@@ -118,6 +118,7 @@ You can also use the Helm CLI through Rancher's kubectl shell:
 
 ```bash
 # Add the repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

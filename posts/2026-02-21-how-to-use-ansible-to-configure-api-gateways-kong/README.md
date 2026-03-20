@@ -30,6 +30,7 @@ graph LR
 
 ```yaml
 # roles/kong/defaults/main.yml
+
 # Default configuration for Kong API Gateway
 kong_version: "3.5"
 kong_mode: "db"  # or "dbless" for declarative mode

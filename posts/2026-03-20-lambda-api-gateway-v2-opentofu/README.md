@@ -8,12 +8,13 @@ Description: Learn how to deploy AWS Lambda functions connected to API Gateway v
 
 ---
 
-API Gateway v2 HTTP APIs are faster, cheaper, and simpler than REST APIs for most use cases. Pairing them with Lambda gives you a serverless backend that scales to zero. OpenTofu manages the entire stack — Lambda function, IAM roles, API Gateway, routes, and permissions — as reproducible code.
+API Gateway v2 HTTP APIs are faster, cheaper, and simpler than REST APIs for most use cases. Pairing them with Lambda gives you a serverless backend that scales to zero. OpenTofu manages the entire stack - Lambda function, IAM roles, API Gateway, routes, and permissions - as reproducible code.
 
 ## Creating the Lambda Function
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -164,7 +165,7 @@ output "function_name" {
 
 ## Best Practices
 
-- Use payload format version 2.0 for Lambda integrations — it provides a cleaner event structure than v1.0.
+- Use payload format version 2.0 for Lambda integrations - it provides a cleaner event structure than v1.0.
 - Enable access logging to CloudWatch for debugging API Gateway routing issues.
 - Use `$default` stage with `auto_deploy = true` for simple deployments, or create named stages for promotion workflows.
 - Set Lambda timeout lower than API Gateway's maximum (29 seconds) to get meaningful error messages when functions time out.

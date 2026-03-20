@@ -14,6 +14,7 @@ Cilium extends Kubernetes NetworkPolicy with CiliumNetworkPolicy (CNP), adding L
 
 ```yaml
 # Allow frontend pods to reach backend pods on port 8080
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:
@@ -84,7 +85,7 @@ spec:
 ## L7 HTTP Policy with IPv6
 
 ```yaml
-# Layer 7 policy — inspect HTTP methods and paths
+# Layer 7 policy - inspect HTTP methods and paths
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

@@ -118,6 +118,7 @@ Create a Loki configuration file that defines storage backends and retention pol
 
 ```yaml
 # loki-config.yaml
+
 # Loki server configuration for centralized logging
 
 auth_enabled: false

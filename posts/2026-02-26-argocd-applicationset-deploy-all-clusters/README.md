@@ -165,6 +165,7 @@ First, label your clusters:
 
 ```bash
 # Add labels to clusters
+
 argocd cluster set prod-us-east-1 \
   --label environment=production \
   --label region=us-east-1 \

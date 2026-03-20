@@ -22,6 +22,7 @@ Deploy Fluent Bit as a DaemonSet:
 
 ```yaml
 # fluent-bit-windows-daemonset.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -8,11 +8,11 @@ Description: Understand the IPv6 Fragment Header structure, how IPv6 fragmentati
 
 ## Introduction
 
-The IPv6 Fragment Header (Next Header = 44) enables packet fragmentation. In IPv6, fragmentation is fundamentally different from IPv4: only the source node can fragment packets — intermediate routers cannot. When a source needs to send data larger than the path MTU, it divides the packet into fragments, each containing the Fragment Header with identification and offset information.
+The IPv6 Fragment Header (Next Header = 44) enables packet fragmentation. In IPv6, fragmentation is fundamentally different from IPv4: only the source node can fragment packets - intermediate routers cannot. When a source needs to send data larger than the path MTU, it divides the packet into fragments, each containing the Fragment Header with identification and offset information.
 
 ## Fragment Header Format (8 bytes)
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -31,7 +31,7 @@ Identification:   32-bit value unique to this fragmented packet
 
 ## How IPv6 Fragmentation Works
 
-```
+```text
 Original packet (1600 bytes, MTU = 1500):
 
 IPv6 Header (40) + Extension Headers (0) + UDP (8) + Data (1552) = 1600 bytes
@@ -121,6 +121,7 @@ def fragment_ipv6_packet(
     return fragments
 
 # Example: fragment a 3000-byte UDP datagram
+
 large_payload = bytes(range(256)) * 12  # 3072 bytes
 frags = fragment_ipv6_packet("2001:db8::1", "2001:db8::2", 17, large_payload)
 print(f"Original payload: {len(large_payload)} bytes")
@@ -131,7 +132,7 @@ for i, f in enumerate(frags):
 
 ## Fragment Reassembly Rules
 
-```
+```text
 At the destination, fragments are reassembled when:
 1. All fragments with the same Identification + Source + Destination have arrived
 2. The last fragment (M=0) has been received
@@ -157,4 +158,4 @@ cat /proc/net/snmp6 | grep -i frag
 
 ## Conclusion
 
-The IPv6 Fragment Header is a fixed 8-byte structure that enables source-only fragmentation. The key fields — Fragment Offset (in 8-byte units), More Fragments bit, and Identification — allow the destination to reassemble fragments correctly. Unlike IPv4 where any router could fragment, IPv6's source-only fragmentation model places the burden on the source to discover the path MTU and create appropriately-sized packets. This simplifies router processing but requires applications and the OS to implement path MTU discovery correctly.
+The IPv6 Fragment Header is a fixed 8-byte structure that enables source-only fragmentation. The key fields - Fragment Offset (in 8-byte units), More Fragments bit, and Identification - allow the destination to reassemble fragments correctly. Unlike IPv4 where any router could fragment, IPv6's source-only fragmentation model places the burden on the source to discover the path MTU and create appropriately-sized packets. This simplifies router processing but requires applications and the OS to implement path MTU discovery correctly.

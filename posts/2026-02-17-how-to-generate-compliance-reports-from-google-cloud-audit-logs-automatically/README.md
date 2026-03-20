@@ -35,6 +35,7 @@ Create a log sink that sends all audit logs to BigQuery:
 
 ```bash
 # Create a BigQuery dataset for audit logs
+
 bq mk --dataset \
     --location=US \
     --description="Audit logs for compliance reporting" \

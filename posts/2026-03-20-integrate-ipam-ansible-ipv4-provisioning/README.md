@@ -12,6 +12,7 @@ Integrating IPAM into Ansible playbooks ensures every provisioned resource autom
 
 ```bash
 # Install the NetBox Ansible collection
+
 ansible-galaxy collection install netbox.netbox
 ```
 

@@ -30,6 +30,7 @@ If Cilium is running in tunnel mode (VXLAN or Geneve), the encapsulation overhea
 
 ```bash
 # Check current mode
+
 cilium config view | grep tunnel
 
 # Upgrade Cilium with native routing via Helm

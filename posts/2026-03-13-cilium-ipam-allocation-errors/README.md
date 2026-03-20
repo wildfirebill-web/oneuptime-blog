@@ -29,6 +29,7 @@ Proactively configure IPAM to minimize allocation errors:
 
 ```bash
 # Set generously sized per-node CIDRs
+
 # /22 = 1022 usable IPs per node (supports very dense pod deployments)
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \

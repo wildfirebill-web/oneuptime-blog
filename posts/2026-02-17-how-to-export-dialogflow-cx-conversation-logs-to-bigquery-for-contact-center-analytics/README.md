@@ -70,6 +70,7 @@ This sets up the log sink with a filter for Dialogflow CX interactions:
 
 ```bash
 # Create a BigQuery dataset for conversation logs
+
 bq mk --dataset \
   --location=us-central1 \
   --description="Dialogflow CX conversation logs" \

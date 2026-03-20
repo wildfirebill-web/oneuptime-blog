@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Linux, Keepalive, Networking, Connections, Kernel
+Tags: TCP, Linux, Keepalive, Networking, Connection, Kernel
 
 Description: Configure TCP keepalive parameters on Linux to detect dead connections and prevent long-lived connections from being terminated by firewalls and load balancers.
 
@@ -18,6 +18,7 @@ After a connection has been idle for `tcp_keepalive_time` seconds, the kernel se
 
 ```bash
 # View current keepalive settings
+
 sysctl net.ipv4.tcp_keepalive_time    # Idle time before starting probes (default: 7200s = 2hr)
 sysctl net.ipv4.tcp_keepalive_intvl   # Interval between probes (default: 75s)
 sysctl net.ipv4.tcp_keepalive_probes  # Number of probes before declaring dead (default: 9)

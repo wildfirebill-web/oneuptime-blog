@@ -14,6 +14,7 @@ ArgoCD needs access to your Git repositories and Helm chart repositories to fetc
 
 ```bash
 # List all configured repositories
+
 argocd repo list
 
 # Output:

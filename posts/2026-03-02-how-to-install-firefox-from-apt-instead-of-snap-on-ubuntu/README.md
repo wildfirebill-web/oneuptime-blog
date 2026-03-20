@@ -25,6 +25,7 @@ First, remove the existing Snap Firefox installation:
 
 ```bash
 # Check if Firefox is installed as a snap
+
 snap list | grep firefox
 
 # Remove the Snap Firefox

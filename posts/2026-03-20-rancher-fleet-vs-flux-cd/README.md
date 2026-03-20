@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: fleet, flux-cd, gitops, kubernetes, comparison
+Tags: Fleet, Flux-cd, GitOps, Kubernetes, Comparison
 
 Description: A comprehensive comparison of Rancher Fleet and Flux CD for GitOps-based Kubernetes management, focusing on multi-cluster support, tooling, and operational experience.
 
@@ -39,7 +39,7 @@ Fleet is SUSE Rancher's GitOps engine, designed specifically for managing applic
 
 ## Flux Toolkit Architecture
 
-```
+```text
 ┌─────────────────────────────────┐
 │         Flux Controllers         │
 │  ┌──────────────────────────┐   │
@@ -58,6 +58,7 @@ Fleet is SUSE Rancher's GitOps engine, designed specifically for managing applic
 
 ```yaml
 # Fleet: sync a Git repo to clusters labeled env=staging
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -165,7 +166,7 @@ spec:
 
 Flux multi-cluster management requires bootstrapping Flux on each cluster individually and using a central management repository to configure each cluster's Kustomizations. This works well but requires more planning.
 
-Fleet's multi-cluster management is centralized by design — a single Fleet controller in Rancher manages all clusters.
+Fleet's multi-cluster management is centralized by design - a single Fleet controller in Rancher manages all clusters.
 
 ## When to Choose Fleet
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, SSL/TLS, NGINX, Apache
+Tags: Ubuntu, SSL/TLS, Nginx, Apache
 
 Description: Learn how to configure OCSP stapling on Ubuntu with Nginx and Apache to improve TLS performance and certificate revocation checking without client-to-CA round trips.
 
@@ -37,6 +37,7 @@ Your certificate contains the URL of the CA's OCSP responder:
 
 ```bash
 # Extract the OCSP URL from your certificate
+
 openssl x509 -in /etc/letsencrypt/live/yourdomain.com/cert.pem -noout -text | \
     grep -A 3 "Authority Information Access"
 

@@ -31,6 +31,7 @@ Register the VictoriaMetrics Helm chart repository.
 
 ```yaml
 # infrastructure/victoriametrics-cluster/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

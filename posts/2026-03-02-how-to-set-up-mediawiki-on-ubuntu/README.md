@@ -27,6 +27,7 @@ sudo apt install nginx php-fpm php-mysql php-xml php-mbstring php-gd \
     php-intl php-apcu php-curl php-zip mysql-server curl unzip
 
 # Check PHP version
+
 php -v
 
 # Secure MySQL installation

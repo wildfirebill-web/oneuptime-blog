@@ -25,6 +25,7 @@ ElastiCache Redis provides different endpoints depending on your configuration:
 
 ```bash
 # Get the endpoints for your ElastiCache Redis cluster
+
 aws elasticache describe-replication-groups \
   --replication-group-id my-redis-cluster \
   --query 'ReplicationGroups[0].{

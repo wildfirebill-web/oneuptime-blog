@@ -108,6 +108,7 @@ TIMEOUT=10
 echo "Running smoke tests against $BASE_URL"
 
 # Test 1: Health endpoint
+
 echo -n "Health check... "
 HEALTH=$(curl -sf --max-time $TIMEOUT "$BASE_URL/health" || echo "FAILED")
 if echo "$HEALTH" | grep -q '"status":"healthy"'; then

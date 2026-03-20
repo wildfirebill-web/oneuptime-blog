@@ -43,6 +43,7 @@ Upload the manifest to S3.
 
 ```bash
 # Upload your manifest file
+
 aws s3 cp manifest.csv s3://my-batch-manifests/manifests/tag-update-manifest.csv
 ```
 

@@ -22,6 +22,7 @@ Start by creating an organization in HCP Terraform. Go to [app.terraform.io](htt
 
 ```hcl
 # In your Terraform configuration, connect to HCP Terraform
+
 terraform {
   cloud {
     organization = "my-startup"

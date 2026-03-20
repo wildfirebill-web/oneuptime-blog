@@ -38,6 +38,7 @@ Add these settings to your MySQL configuration file (`my.cnf` or `my.ini`):
 
 [mysqld]
 # Enable binary logging - required for Debezium
+
 server-id = 1
 
 # Binary log file name prefix

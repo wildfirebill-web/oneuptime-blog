@@ -98,6 +98,7 @@ The base contains resources common to all environments.
 
 ```yaml
 # base/kustomization.yaml
+
 # This file declares all resources and common labels/annotations
 # that will be inherited by all overlays
 

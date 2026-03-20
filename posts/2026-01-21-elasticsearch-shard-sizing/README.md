@@ -143,6 +143,7 @@ For time-series data, use rolling indices:
 
 ```bash
 # Create ILM policy
+
 curl -X PUT "https://localhost:9200/_ilm/policy/logs-policy" \
   -H "Content-Type: application/json" \
   -u elastic:password \

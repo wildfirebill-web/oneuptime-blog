@@ -18,6 +18,7 @@ When a container image declares exposed ports via the `EXPOSE` directive in its 
 
 ```bash
 # The -P flag maps all EXPOSE'd ports to random host ports
+
 podman run -d --name web -P docker.io/library/nginx:latest
 
 # Check which host ports were assigned

@@ -31,6 +31,7 @@ Ensure your Prometheus instance scrapes the source-controller metrics endpoint:
 
 ```yaml
 # source-controller-servicemonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

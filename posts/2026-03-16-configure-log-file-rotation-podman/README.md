@@ -24,6 +24,7 @@ When log rotation is configured, Podman does the following:
 
 ```bash
 # Example: max-size=10m, max-file=3 creates:
+
 # container-log         (current, up to 10MB)
 # container-log.1       (previous, 10MB)
 # container-log.2       (oldest, 10MB)

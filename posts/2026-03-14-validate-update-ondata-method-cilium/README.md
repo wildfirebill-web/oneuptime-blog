@@ -172,6 +172,7 @@ Run the fuzzer:
 
 ```bash
 # Run fuzzing for 60 seconds
+
 go test ./proxylib/myprotocol/... -fuzz=FuzzOnData -fuzztime=60s
 
 # Run with longer duration for thorough coverage

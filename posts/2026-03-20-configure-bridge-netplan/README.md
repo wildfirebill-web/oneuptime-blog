@@ -14,6 +14,7 @@ Netplan bridge configuration uses the `bridges` key. Member physical interfaces 
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:
@@ -105,7 +106,7 @@ network:
     br0:
       interfaces:
         - eth0
-      # No IP — VMs get IPs directly
+      # No IP - VMs get IPs directly
       dhcp4: false
       parameters:
         stp: false

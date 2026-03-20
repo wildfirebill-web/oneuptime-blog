@@ -47,6 +47,7 @@ graph TD
 
 ```bash
 # List all clusters with their status
+
 argocd cluster list
 
 # Output:

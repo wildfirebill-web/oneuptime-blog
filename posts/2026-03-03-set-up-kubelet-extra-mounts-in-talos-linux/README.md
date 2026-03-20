@@ -85,6 +85,7 @@ Once you have configured an extra mount, pods can access the path using a standa
 
 ```yaml
 # Pod spec using hostPath that relies on the extra mount
+
 apiVersion: v1
 kind: Pod
 metadata:

@@ -350,6 +350,7 @@ Define a ClickHouseInstallation custom resource. This creates a 2-shard, 2-repli
 
 ```yaml
 # clickhouse-cluster.yaml
+
 apiVersion: clickhouse.altinity.com/v1
 kind: ClickHouseInstallation
 metadata:
@@ -588,7 +589,7 @@ helm install clickhouse bitnami/clickhouse \
 
 ## Production Configuration Tips
 
-### Resource Limits
+Resource Limits
 
 ClickHouse performs best with consistent resources. Set requests equal to limits:
 

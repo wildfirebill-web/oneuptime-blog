@@ -12,7 +12,7 @@ IPv4-compatible IPv6 addresses (`::w.x.y.z` or `::0:w.x.y.z/96`) were an early I
 
 ## Address Structure
 
-```
+```yaml
 |<-------------- 96 bits of zeros ------------->|<-- 32 bits -->|
 |  0000:0000:0000:0000:0000:0000                 |  IPv4 address |
 
@@ -40,6 +40,7 @@ These two address types are easily confused:
 import ipaddress
 
 # IPv4-compatible (DEPRECATED - all zeros in bits 81-96)
+
 compat = ipaddress.IPv6Address("::192.168.1.1")
 print(f"IPv4-compatible: {compat}")
 print(f"Is v4-compatible: {compat.ipv4_mapped}")  # None in Python 3.x
@@ -57,7 +58,7 @@ IPv4-compatible addresses were designed for an automatic tunneling mechanism cal
 
 **Problems that led to deprecation:**
 1. Required every IPv4 host to also run IPv6, which never happened at scale
-2. Created security issues — any IPv4 host could send IPv6 packets to any other IPv4 host
+2. Created security issues - any IPv4 host could send IPv6 packets to any other IPv4 host
 3. The all-zeros prefix collided with the IPv6 unspecified address (`::`) and loopback (`::1`)
 4. More robust transition mechanisms (6to4, Teredo, NAT64) rendered it obsolete
 
@@ -66,7 +67,7 @@ IPv4-compatible addresses were designed for an automatic tunneling mechanism cal
 What replaced IPv4-compatible addresses:
 
 **6to4 (RFC 3056)**: Uses the `2002::/16` prefix with the IPv4 address embedded in bits 17-48:
-```
+```text
 IPv4: 198.51.100.1 → 6to4: 2002:c633:6401::/48
 ```
 

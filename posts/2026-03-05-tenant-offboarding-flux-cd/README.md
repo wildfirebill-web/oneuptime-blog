@@ -25,6 +25,7 @@ Before offboarding, suspend the tenant's Flux reconciliation to prevent new depl
 
 ```bash
 # Suspend all Kustomizations in the tenant namespace
+
 flux suspend kustomization team-alpha-apps -n team-alpha
 
 # Suspend source reconciliation

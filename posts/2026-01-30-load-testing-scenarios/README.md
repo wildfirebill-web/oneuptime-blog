@@ -870,6 +870,7 @@ Run with environment variables:
 
 ```bash
 # Staging environment
+
 k6 run -e BASE_URL=https://staging.example.com -e VUS=50 script.js
 
 # Production environment with higher load

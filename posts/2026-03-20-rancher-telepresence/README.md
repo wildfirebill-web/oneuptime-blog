@@ -21,6 +21,7 @@ Telepresence allows you to run a single service locally while connecting it to a
 
 ```bash
 # macOS
+
 brew install datawire/blackbird/telepresence
 
 # Linux

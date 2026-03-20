@@ -28,6 +28,7 @@ The `sefcontext` module adds a persistent rule to SELinux's file context databas
 
 ```yaml
 # Define the SELinux context for a custom web content directory
+
 - name: Set SELinux file context for custom web root
   community.general.sefcontext:
     target: '/opt/webapp/public(/.*)?'

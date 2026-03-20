@@ -8,7 +8,7 @@ Description: Learn how to configure persistent volumes and persistent volume cla
 
 ## Why Persistent Storage?
 
-Containers are ephemeral — their filesystems are destroyed when a pod is deleted. For stateful applications (databases, file stores), you need Persistent Volumes (PVs) that outlive individual pods.
+Containers are ephemeral - their filesystems are destroyed when a pod is deleted. For stateful applications (databases, file stores), you need Persistent Volumes (PVs) that outlive individual pods.
 
 ## Kubernetes Storage Concepts
 
@@ -41,6 +41,7 @@ When deploying an application:
 
 ```yaml
 # postgres-with-storage.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

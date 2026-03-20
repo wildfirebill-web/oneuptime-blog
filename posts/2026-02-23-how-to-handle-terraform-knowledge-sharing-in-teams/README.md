@@ -172,6 +172,7 @@ Transform code reviews from gatekeeping into teaching opportunities:
 ## Example Review Comments
 
 # BAD review comment:
+
 "This is wrong."
 
 # GOOD review comment:

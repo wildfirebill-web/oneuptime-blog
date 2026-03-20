@@ -247,6 +247,7 @@ This configuration is optimized for API latency monitoring with sub-second resol
 
 ```promql
 # Query
+
 sum(rate(http_request_duration_seconds_bucket{job="api-server"}[5m])) by (le)
 ```
 

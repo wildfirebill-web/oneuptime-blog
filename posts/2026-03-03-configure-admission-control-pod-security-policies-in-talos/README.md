@@ -28,6 +28,7 @@ In Talos Linux, you configure the API server admission plugins through the clust
 
 ```yaml
 # machine-config-patch.yaml
+
 # Configure Pod Security Admission defaults
 cluster:
   apiServer:

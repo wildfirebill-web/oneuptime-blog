@@ -55,6 +55,7 @@ Even though we are skipping domain controllers, session hosts still need a virtu
 
 ```bash
 # Create the virtual network for session hosts
+
 RESOURCE_GROUP="rg-avd-cloud"
 LOCATION="eastus"
 

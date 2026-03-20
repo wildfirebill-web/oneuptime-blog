@@ -48,6 +48,7 @@ The `manifest.yaml` file is critical. It describes the extension and its compati
 
 ```yaml
 # manifest.yaml
+
 version: v1alpha1
 metadata:
   name: my-custom-extension

@@ -26,6 +26,7 @@ First, verify that pod IPs are being advertised via BGP and reachable externally
 
 ```bash
 # Check BGP is advertising pod routes
+
 calicoctl node status
 kubectl exec -n calico-system ${NODE_POD} -- birdcl show route
 ```

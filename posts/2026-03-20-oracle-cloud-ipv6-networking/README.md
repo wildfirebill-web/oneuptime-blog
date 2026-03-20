@@ -14,6 +14,7 @@ Oracle Cloud Infrastructure IPv6 covers the provider-specific steps needed to en
 
 ```bash
 # Example commands for Oracle Cloud Infrastructure IPv6
+
 # Enable IPv6 networking at creation time or after
 # (Refer to provider-specific CLI or web console)
 echo "Enabling IPv6 for Oracle Cloud Infrastructure IPv6"

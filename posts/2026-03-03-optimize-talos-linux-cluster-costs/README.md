@@ -39,6 +39,7 @@ Many teams over-provision their control plane nodes. For Talos Linux clusters, h
 
 ```yaml
 # Control plane sizing recommendations
+
 # Small cluster (< 50 worker nodes, < 1000 pods)
 # Use 3 control plane nodes with:
 #   2 vCPUs, 4 GB RAM each

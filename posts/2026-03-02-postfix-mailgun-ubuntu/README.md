@@ -43,6 +43,7 @@ Using a subdomain (`mg.yourdomain.com`) is common practice - it isolates Mailgun
 
 ```bash
 # Install Postfix and SASL libraries
+
 sudo apt update
 sudo apt install -y postfix libsasl2-modules mailutils
 

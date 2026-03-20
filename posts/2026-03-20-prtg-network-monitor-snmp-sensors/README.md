@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PRTG, SNMP, Monitoring, IPv4, Network, OID, Sensors
+Tags: PRTG, SNMP, Monitoring, IPv4, Networks, OID, Sensors
 
 Description: Learn how to configure PRTG Network Monitor to collect metrics from network devices using SNMP sensors for bandwidth, CPU, and interface monitoring.
 
@@ -22,6 +22,7 @@ PRTG Network Monitor uses SNMP to poll network devices for metrics. Configuring 
 apt install snmpd -y   # Debian/Ubuntu
 
 # /etc/snmp/snmpd.conf
+
 # Allow SNMP v2c access from the PRTG probe
 rocommunity public 192.168.1.50   # PRTG probe's IPv4
 # Or allow the whole monitoring subnet
@@ -74,7 +75,7 @@ For monitoring a specific metric (e.g., disk IOPS from a custom MIB):
 SNMP v3 adds authentication and encryption.
 
 ```bash
-# /etc/snmp/snmpd.conf — SNMP v3 setup
+# /etc/snmp/snmpd.conf - SNMP v3 setup
 createUser prtguser SHA "AuthPass123!" AES "PrivPass456!"
 rouser prtguser priv
 ```
@@ -100,5 +101,5 @@ snmpwalk -v3 -u prtguser -l authPriv -a SHA -A "AuthPass123!" -x AES -X "PrivPas
 
 - Configure `snmpd.conf` to allow access from the PRTG probe's IPv4 address.
 - Use SNMP v3 with authentication (SHA) and encryption (AES) in production.
-- PRTG auto-discovers interfaces with the SNMP Traffic sensor — select only the interfaces you need.
+- PRTG auto-discovers interfaces with the SNMP Traffic sensor - select only the interfaces you need.
 - Use the **SNMP Custom Value** sensor for any specific OID not covered by PRTG's built-in sensor library.

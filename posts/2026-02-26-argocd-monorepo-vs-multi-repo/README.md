@@ -107,6 +107,7 @@ With multi-repo, each application or team gets its own manifest repository:
 
 ```text
 # Repo: myorg/frontend-manifests
+
 frontend/
   base/
     deployment.yaml

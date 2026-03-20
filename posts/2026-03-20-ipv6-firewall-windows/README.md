@@ -14,6 +14,7 @@ Windows Defender Firewall (formerly Windows Firewall) supports IPv6 natively alo
 
 ```powershell
 # PowerShell: List all inbound rules for IPv6
+
 Get-NetFirewallRule -Direction Inbound |
   Where-Object { $_.Enabled -eq "True" } |
   ForEach-Object {
@@ -90,7 +91,7 @@ Windows needs ICMPv6 for NDP and PMTUD. These are typically already configured:
 Get-NetFirewallRule | Where-Object { $_.DisplayName -like "*ICMPv6*" } |
   Select-Object DisplayName, Enabled, Action
 
-# Allow Packet Too Big (required for PMTUD) — should be pre-configured
+# Allow Packet Too Big (required for PMTUD) - should be pre-configured
 New-NetFirewallRule `
     -DisplayName "Allow ICMPv6 Packet Too Big" `
     -Direction Inbound `
@@ -147,7 +148,7 @@ Get-NetFirewallRule | ConvertTo-Json | Out-File "C:\firewall-rules.json"
 
 For domain-joined machines, manage firewall rules via Group Policy:
 
-```
+```text
 Computer Configuration → Windows Settings → Security Settings →
 Windows Defender Firewall with Advanced Security →
 Inbound Rules → New Rule
@@ -177,4 +178,4 @@ Get-Content "C:\Windows\System32\LogFiles\Firewall\pfirewall.log" |
 
 ## Summary
 
-Windows Firewall IPv6 rules use `New-NetFirewallRule` with `-RemoteAddress "prefix"` for IPv6 CIDR matching and `-AddressFamily IPv6` to restrict rules to IPv6 only. Ensure ICMPv6 Neighbor Discovery (types 133-136) and Packet Too Big (type 2) are allowed — Windows typically pre-configures these. Use `-Profile Any` for rules that should apply regardless of network profile. Export firewall rules with `netsh advfirewall export` for backup and change management. In enterprise environments, use Group Policy to consistently apply IPv6 firewall rules across domain machines.
+Windows Firewall IPv6 rules use `New-NetFirewallRule` with `-RemoteAddress "prefix"` for IPv6 CIDR matching and `-AddressFamily IPv6` to restrict rules to IPv6 only. Ensure ICMPv6 Neighbor Discovery (types 133-136) and Packet Too Big (type 2) are allowed - Windows typically pre-configures these. Use `-Profile Any` for rules that should apply regardless of network profile. Export firewall rules with `netsh advfirewall export` for backup and change management. In enterprise environments, use Group Policy to consistently apply IPv6 firewall rules across domain machines.

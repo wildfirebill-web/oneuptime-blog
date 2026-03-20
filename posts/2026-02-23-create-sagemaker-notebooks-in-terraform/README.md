@@ -20,6 +20,7 @@ Every SageMaker notebook needs an execution role. This role determines what AWS 
 
 ```hcl
 # Execution role for SageMaker notebooks
+
 resource "aws_iam_role" "sagemaker_execution" {
   name = "sagemaker-execution-role"
 

@@ -26,6 +26,7 @@ etcd membership tells you the ground truth about your cluster's control plane. E
 
 ```bash
 # List all etcd members from any control plane node
+
 talosctl etcd members --nodes <control-plane-ip>
 ```
 

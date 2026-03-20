@@ -27,6 +27,7 @@ This guide shows how to structure a dark launch using a feature flag ConfigMap m
 
 ```yaml
 # apps/my-app/base/dark-launch-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

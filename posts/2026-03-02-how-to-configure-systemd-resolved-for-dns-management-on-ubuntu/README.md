@@ -23,6 +23,7 @@ The stub resolver is accessible at two addresses:
 ```bash
 ls -la /etc/resolv.conf
 # Should show something like:
+
 # /etc/resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
 ```
 

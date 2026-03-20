@@ -188,6 +188,7 @@ You can have both L4 and L7 authorization policies. L4 policies are enforced by 
 
 ```yaml
 # L4 policy enforced by ztunnel
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

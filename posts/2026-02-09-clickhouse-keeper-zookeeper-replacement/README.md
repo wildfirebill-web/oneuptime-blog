@@ -22,6 +22,7 @@ Create a three-node Keeper ensemble:
 
 ```yaml
 # clickhouse-keeper.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

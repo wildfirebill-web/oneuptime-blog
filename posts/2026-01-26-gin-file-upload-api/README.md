@@ -26,6 +26,7 @@ Start by creating a new Go module and installing Gin:
 
 ```bash
 # Create project directory
+
 mkdir gin-file-upload && cd gin-file-upload
 
 # Initialize Go module

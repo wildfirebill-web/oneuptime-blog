@@ -52,6 +52,7 @@ This Docker Compose file sets up PostgreSQL with pgvector pre-installed.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   postgres:

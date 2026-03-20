@@ -36,6 +36,7 @@ First, train your model in the cloud using Azure ML:
 
 ```python
 # train_model.py
+
 # Train an image classification model using Azure Machine Learning
 from azure.ai.ml import MLClient
 from azure.ai.ml.entities import Environment, CommandJob

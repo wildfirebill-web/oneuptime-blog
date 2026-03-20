@@ -60,6 +60,7 @@ Create all required namespaces first:
 
 ```yaml
 # infrastructure/00-namespaces/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

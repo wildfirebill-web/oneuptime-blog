@@ -25,6 +25,7 @@ ScyllaDB, like Cassandra, performs best with swap disabled:
 
 ```bash
 # Disable swap
+
 sudo swapoff -a
 
 # Comment out the swap line in /etc/fstab to make it permanent

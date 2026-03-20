@@ -52,6 +52,7 @@ The most common cause is a simple typo:
 
 ```hcl
 # In the module (modules/network/outputs.tf)
+
 output "private_subnet_ids" {  # Note: plural "ids"
   value = aws_subnet.private[*].id
 }

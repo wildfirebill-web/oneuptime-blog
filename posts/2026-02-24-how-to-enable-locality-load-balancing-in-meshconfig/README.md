@@ -184,6 +184,7 @@ To test locality failover, simulate an unhealthy zone by scaling down the servic
 
 ```bash
 # Scale down in zone us-east-1a
+
 kubectl scale deployment my-service --replicas=0 -n default
 
 # Watch traffic shift to the next zone

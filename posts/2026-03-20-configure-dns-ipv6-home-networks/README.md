@@ -24,7 +24,7 @@ Most modern devices support both. Configure both for maximum compatibility.
 RDNSS embeds DNS server addresses in RA messages. Configure this on your router:
 
 **OpenWRT example:**
-```
+```text
 # /etc/config/network
 
 config interface 'lan'
@@ -34,6 +34,7 @@ config interface 'lan'
     list dns '2606:4700:4700::1111'
 
 # /etc/config/radvd (or radvd.conf)
+
 config interface
     option interface 'br-lan'
     list rdnss '2001:4860:4860::8888'
@@ -73,7 +74,7 @@ pihole restartdns
 
 Configure your router to advertise the Pi-hole as the DNS server:
 
-```
+```text
 # In router RDNSS/DHCPv6 config, point to Pi-hole:
 dns_server = 2001:db8:home::2   # Pi-hole's IPv6 address
 ```
@@ -82,7 +83,7 @@ dns_server = 2001:db8:home::2   # Pi-hole's IPv6 address
 
 For resolving local hostnames over IPv6, use a simple DNS server like `dnsmasq`:
 
-```
+```text
 # /etc/dnsmasq.conf
 
 # Listen on IPv6
@@ -126,7 +127,7 @@ Enable DNSSEC validation for added security. Pi-hole supports this out of the bo
 
 Or configure in Unbound (a more advanced DNS resolver):
 
-```
+```text
 # /etc/unbound/unbound.conf
 server:
     interface: ::0

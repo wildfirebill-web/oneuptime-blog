@@ -14,6 +14,7 @@ Portainer uses BoltDB for persistent storage. Power failures, OOM kills, or disk
 
 ```bash
 # Check Portainer logs for BoltDB errors
+
 docker logs portainer 2>&1 | grep -i "bolt\|corrupt\|database\|unexpected"
 
 # Common corruption messages:
@@ -74,7 +75,7 @@ If stacks were deployed from Git repositories, recovery is straightforward:
 3. Re-add environments.
 4. Re-deploy each stack from its Git repository.
 
-The containers and volumes are still running — only the Portainer metadata is lost.
+The containers and volumes are still running - only the Portainer metadata is lost.
 
 ## Step 5: Extract Compose from Running Containers
 

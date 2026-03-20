@@ -29,6 +29,7 @@ OpenVPN needs a place to store its configuration, certificates, and keys. Create
 
 ```bash
 # Create a named volume to persist OpenVPN configuration and PKI data
+
 podman volume create openvpn-data
 
 # Verify the volume was created

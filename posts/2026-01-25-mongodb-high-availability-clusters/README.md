@@ -378,6 +378,7 @@ await client.withRetry(async () => {
 
 ```bash
 # Regular backups from hidden secondary
+
 mongodump --host mongo-backup.example.com:27017 \
   --readPreference=secondary \
   --out=/backup/$(date +%Y%m%d_%H%M%S)

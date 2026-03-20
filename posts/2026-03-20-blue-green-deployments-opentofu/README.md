@@ -23,6 +23,7 @@ graph LR
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -173,9 +174,9 @@ resource "aws_ecs_service" "green" {
 tofu apply -var="blue_weight=100" -var="green_image=v2.0.0"
 
 # Step 2: Gradually shift traffic to green
-tofu apply -var="blue_weight=90"  # 10% to green — monitor errors
-tofu apply -var="blue_weight=50"  # 50/50 split — canary validation
-tofu apply -var="blue_weight=0"   # 100% to green — complete cutover
+tofu apply -var="blue_weight=90"  # 10% to green - monitor errors
+tofu apply -var="blue_weight=50"  # 50/50 split - canary validation
+tofu apply -var="blue_weight=0"   # 100% to green - complete cutover
 
 # Step 3: Rollback in seconds if issues arise
 tofu apply -var="blue_weight=100" # Instantly back to blue
@@ -185,6 +186,6 @@ tofu apply -var="blue_weight=100" # Instantly back to blue
 
 - Use session stickiness during the transition to prevent users from switching between versions mid-session.
 - Run automated smoke tests on the green environment before shifting any traffic.
-- Monitor error rates at each traffic split level — stop and rollback if errors increase.
+- Monitor error rates at each traffic split level - stop and rollback if errors increase.
 - Keep the blue environment running for at least 30 minutes after full cutover in case you need to roll back.
 - Automate the deployment workflow in your CI/CD pipeline with approval gates at key traffic milestones.

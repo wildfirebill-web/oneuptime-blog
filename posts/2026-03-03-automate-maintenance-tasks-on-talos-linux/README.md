@@ -86,6 +86,7 @@ ALERT_WEBHOOK="${SLACK_WEBHOOK_URL}"
 check_failed=false
 
 # Check node readiness
+
 NOT_READY=$(kubectl get nodes --no-headers | grep -cv "Ready")
 if [ "$NOT_READY" -gt 0 ]; then
     echo "WARNING: $NOT_READY nodes are not Ready"

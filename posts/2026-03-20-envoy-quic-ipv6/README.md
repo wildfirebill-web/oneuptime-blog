@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # Install via official distributions
+
 sudo apt-get install apt-transport-https gnupg2 curl lsb-release
 curl -sL 'https://deb.dl.getenvoy.io/public/gpg.8115BA8E629CC074.key' | sudo gpg --dearmor -o /usr/share/keyrings/getenvoy-keyring.gpg
 sudo apt-get update && sudo apt-get install getenvoy-envoy

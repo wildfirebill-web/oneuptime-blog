@@ -36,6 +36,7 @@ Detect values more than N standard deviations from the mean:
 
 ```promql
 # Current value
+
 http_requests_total
 
 # Mean over past week

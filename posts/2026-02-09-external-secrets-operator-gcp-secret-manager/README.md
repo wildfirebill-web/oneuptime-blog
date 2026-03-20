@@ -28,6 +28,7 @@ Enable Secret Manager API:
 
 ```bash
 # Set project
+
 PROJECT_ID="my-gcp-project"
 gcloud config set project $PROJECT_ID
 

@@ -69,6 +69,7 @@ flowchart LR
 set -e
 
 # Configuration
+
 DAYS_VALID=365
 KEY_SIZE=4096
 CA_SUBJECT="/C=US/ST=California/L=San Francisco/O=MyOrg/OU=Security/CN=MyOrg Root CA"

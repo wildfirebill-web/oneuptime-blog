@@ -59,6 +59,7 @@ Here is a basic configuration that converts all delta sum metrics to cumulative:
 
 ```yaml
 # RECEIVERS: Accept metrics via OTLP
+
 receivers:
   otlp:
     protocols:

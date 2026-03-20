@@ -21,6 +21,7 @@ Azure Container Registry (ACR) is Microsoft's managed container registry service
 
 ```bash
 # Create a resource group if needed
+
 az group create --name myResourceGroup --location eastus
 
 # Create an ACR instance

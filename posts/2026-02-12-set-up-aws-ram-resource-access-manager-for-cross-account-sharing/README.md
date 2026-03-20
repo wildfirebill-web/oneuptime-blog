@@ -43,6 +43,7 @@ If your accounts are part of an AWS Organization, enable resource sharing within
 
 ```bash
 # Enable RAM sharing within the organization (run from management account)
+
 aws ram enable-sharing-with-aws-organization
 ```
 

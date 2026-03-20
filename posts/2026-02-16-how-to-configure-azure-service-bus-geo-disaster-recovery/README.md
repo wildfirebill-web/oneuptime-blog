@@ -48,6 +48,7 @@ First, create both namespaces if they do not already exist.
 
 ```bash
 # Create the primary namespace in East US
+
 az servicebus namespace create \
   --name sb-myapp-primary \
   --resource-group rg-messaging \

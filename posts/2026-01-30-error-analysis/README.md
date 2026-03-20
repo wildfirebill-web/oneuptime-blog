@@ -636,6 +636,7 @@ Keep all error traces while sampling success:
 
 ```yaml
 # OpenTelemetry Collector config
+
 processors:
   tail_sampling:
     decision_wait: 10s

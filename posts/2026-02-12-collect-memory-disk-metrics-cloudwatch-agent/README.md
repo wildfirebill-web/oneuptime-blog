@@ -177,6 +177,7 @@ The whole point of collecting these metrics is to alarm before problems occur. H
 
 ```bash
 # Alert when memory usage exceeds 85% for 5 minutes
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "HighMemoryUsage-i-1234567890" \
   --namespace "CWAgent" \

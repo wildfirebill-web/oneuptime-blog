@@ -16,6 +16,7 @@ The `replace` function takes three arguments: the input string, the search patte
 
 ```hcl
 # Literal replacement
+
 replace("hello world", " ", "-")
 # Result: "hello-world"
 

@@ -73,7 +73,7 @@ sequenceDiagram
     Primary->>App: Index ready
 ```
 
-## Resource Management for Index Builds
+Resource Management for Index Builds
 
 Index builds consume CPU, memory, and disk I/O. Controlling these resources prevents index builds from starving your application.
 
@@ -190,6 +190,7 @@ Follow these steps for a rolling index build:
 
 ```bash
 # Connect to a secondary node
+
 mongosh --host secondary1.example.com:27017
 
 # In the mongo shell

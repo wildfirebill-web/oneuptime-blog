@@ -18,6 +18,7 @@ The key difference from a public hosted zone is that you must associate it with 
 
 ```bash
 # Create a private hosted zone associated with a VPC
+
 aws route53 create-hosted-zone \
   --name internal.mycompany.com \
   --caller-reference "internal-$(date +%s)" \

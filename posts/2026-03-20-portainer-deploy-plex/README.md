@@ -1,4 +1,4 @@
-# How to Deploy Plex Media Server via Portainer
+# How to Deploy Plex Media Server via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Plex Media Server via Portainer with access to your local me
 
 ## Introduction
 
-Plex Media Server organizes and streams your personal media library — movies, TV shows, music, and photos — to any device. Deploying via Portainer gives you easy updates and clear volume management for your media directories.
+Plex Media Server organizes and streams your personal media library - movies, TV shows, music, and photos - to any device. Deploying via Portainer gives you easy updates and clear volume management for your media directories.
 
 ## Deploy as a Stack
 

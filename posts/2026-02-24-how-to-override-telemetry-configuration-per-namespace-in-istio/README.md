@@ -179,6 +179,7 @@ Maybe one team uses Jaeger while another uses an OpenTelemetry Collector:
 
 ```yaml
 # Team A's namespace uses Jaeger
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

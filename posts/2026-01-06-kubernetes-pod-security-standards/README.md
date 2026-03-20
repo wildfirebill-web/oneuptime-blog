@@ -58,6 +58,7 @@ This namespace configuration applies the most restrictive security policy. All p
 
 ```yaml
 # Namespace with restricted Pod Security Standard
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -14,17 +14,17 @@ OSPF (Open Shortest Path First) is a link-state interior gateway protocol (IGP) 
 
 Start the OSPF process with a locally significant process ID (1–65535):
 
-```
+```text
 Router(config)# router ospf 1
 ```
 
-The process ID is local to the router and does not need to match between routers—unlike OSPF area numbers.
+The process ID is local to the router and does not need to match between routers-unlike OSPF area numbers.
 
 ## Step 2: Configure the Router ID
 
 Set an explicit Router ID to avoid ambiguity. If not set, OSPF uses the highest loopback IP or highest active interface IP:
 
-```
+```text
 ! Set explicit Router ID (recommended)
 Router(config-router)# router-id 1.1.1.1
 ```
@@ -33,7 +33,7 @@ Router(config-router)# router-id 1.1.1.1
 
 The `network` command specifies which interfaces OSPF activates on and which networks are advertised. The wildcard mask is the inverse of the subnet mask:
 
-```
+```text
 ! Advertise the 10.0.0.0/24 network in Area 0
 Router(config-router)# network 10.0.0.0 0.0.0.255 area 0
 
@@ -46,7 +46,7 @@ Router(config-router)# network 1.1.1.1 0.0.0.0 area 0
 
 Alternatively, use the interface-level `ip ospf` command (preferred on IOS XE):
 
-```
+```text
 ! Activate OSPF directly on the interface
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip ospf 1 area 0
@@ -56,7 +56,7 @@ Router(config-if)# ip ospf 1 area 0
 
 After both routers are configured, verify they've formed an adjacency:
 
-```
+```text
 Router# show ip ospf neighbor
 
 Neighbor ID     Pri   State       Dead Time   Address       Interface
@@ -64,12 +64,12 @@ Neighbor ID     Pri   State       Dead Time   Address       Interface
 3.3.3.3           1   FULL/BDR    00:00:39    10.0.0.3      Gig0/0
 ```
 
-- `FULL`: Full adjacency established—routing information is synchronized
+- `FULL`: Full adjacency established-routing information is synchronized
 - `DR/BDR`: Designated Router and Backup DR roles on multi-access networks
 
 ## Step 5: Check the OSPF Database
 
-```
+```text
 Router# show ip ospf database
 
 ! Lists all LSAs (Link State Advertisements) in the OSPF database
@@ -80,7 +80,7 @@ Router# show ip ospf database
 
 ## Step 6: Verify OSPF Routes in the Routing Table
 
-```
+```text
 Router# show ip route ospf
 
 ! OSPF routes appear with 'O' prefix
@@ -93,7 +93,7 @@ Router# show ip route ospf
 
 The default Hello interval is 10 seconds on Ethernet; the Dead interval is 40 seconds. Reduce for faster convergence:
 
-```
+```text
 Router(config)# interface GigabitEthernet0/0
 ! Reduce Hello to 5s, Dead to 20s for faster convergence
 Router(config-if)# ip ospf hello-interval 5
@@ -106,7 +106,7 @@ Both sides of a link must have matching Hello and Dead intervals.
 
 Prevent OSPF from sending Hellos out interfaces that connect to hosts (not routers):
 
-```
+```text
 router ospf 1
  ! Stop sending OSPF Hellos on the LAN interface to hosts
  passive-interface GigabitEthernet1/0

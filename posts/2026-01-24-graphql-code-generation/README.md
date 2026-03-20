@@ -38,6 +38,7 @@ Install the core packages and plugins for your stack.
 
 ```bash
 # Core packages
+
 npm install -D @graphql-codegen/cli @graphql-codegen/typescript
 
 # For TypeScript operations (queries, mutations)

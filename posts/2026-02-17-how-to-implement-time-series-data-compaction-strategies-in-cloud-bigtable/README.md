@@ -28,6 +28,7 @@ Here is a row key structure that supports multiple granularities:
 
 ```python
 # Row key format: <metric_id>#<granularity>#<reverse_timestamp>
+
 # Using reverse timestamps ensures recent data sorts first within each metric
 
 import struct

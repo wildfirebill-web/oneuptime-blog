@@ -25,6 +25,7 @@ Check CPU virtualization support:
 
 ```bash
 # On your current Ubuntu system before migration
+
 grep -E '(vmx|svm)' /proc/cpuinfo | head -5
 # vmx = Intel VT-x, svm = AMD-V
 # If no output, virtualization may be disabled in BIOS

@@ -34,6 +34,7 @@ Install the required packages first.
 
 ```bash
 # Install the OpenTelemetry SDK, exporter, and Memcached instrumentation
+
 pip install opentelemetry-api \
     opentelemetry-sdk \
     opentelemetry-exporter-otlp \

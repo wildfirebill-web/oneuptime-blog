@@ -27,6 +27,7 @@ Here is a StatefulSet for a Redis cluster managed through ArgoCD:
 
 ```yaml
 # apps/redis-cluster/statefulset.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

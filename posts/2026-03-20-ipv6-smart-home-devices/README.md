@@ -8,7 +8,7 @@ Description: Configure IPv6 for smart home devices using Matter/Thread, Zigbee I
 
 ## Smart Home IPv6 Protocols
 
-```
+```text
 Protocol    Transport       IPv6 Usage
 -------------------------------------------
 Matter/Thread  Thread mesh    IPv6 native (ULA internally)
@@ -26,6 +26,7 @@ Matter over Thread uses IPv6 as its native transport layer.
 
 ```bash
 # Thread network uses:
+
 # - ULA (fc00::/7) for internal mesh communication
 # - Border router maps to ISP-delegated global IPv6
 
@@ -53,7 +54,7 @@ sudo ot-ctl netdata show
 Isolate smart home devices on a separate IPv6 VLAN for security.
 
 ```bash
-# Router (OpenWrt) — create IoT VLAN with own /64
+# Router (OpenWrt) - create IoT VLAN with own /64
 # Assign prefix ID 1 from delegated /56
 
 # /etc/config/network
@@ -116,22 +117,22 @@ Most Wi-Fi smart home devices (bulbs, plugs, thermostats) use SLAAC automaticall
 ip -6 addr show | grep "scope global"
 
 # If not, check if IPv6 is disabled in device firmware
-# Philips Hue Bridge — check via API
+# Philips Hue Bridge - check via API
 curl -s http://192.168.x.x/api/$HUE_USER/config | python3 -m json.tool | grep ipaddress
 
-# Amazon Echo — no direct IPv6 config, uses SLAAC automatically
-# Google Nest Hub — uses SLAAC automatically
-# Apple HomePod — uses SLAAC automatically, also Thread border router
+# Amazon Echo - no direct IPv6 config, uses SLAAC automatically
+# Google Nest Hub - uses SLAAC automatically
+# Apple HomePod - uses SLAAC automatically, also Thread border router
 
 # For devices that support both IPv4 and IPv6:
 # They prefer IPv6 for internet traffic (Happy Eyeballs)
-# No configuration needed — just ensure router provides RA
+# No configuration needed - just ensure router provides RA
 ```
 
 ## Monitoring Smart Home IPv6 Traffic
 
 ```bash
-# On router — monitor IoT VLAN IPv6 traffic
+# On router - monitor IoT VLAN IPv6 traffic
 tcpdump -i br-iot -n -q 'ip6' | head -50
 
 # Check IPv6 neighbor table for IoT devices

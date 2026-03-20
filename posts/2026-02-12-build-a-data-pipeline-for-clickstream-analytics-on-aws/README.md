@@ -254,6 +254,7 @@ Kinesis Data Firehose delivers enriched events to S3 in Parquet format for effic
 
 ```bash
 # Create Firehose delivery stream with Parquet conversion
+
 aws firehose create-delivery-stream \
   --delivery-stream-name clickstream-to-s3 \
   --extended-s3-destination-configuration '{

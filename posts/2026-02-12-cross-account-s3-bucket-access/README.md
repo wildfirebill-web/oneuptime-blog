@@ -122,6 +122,7 @@ From Account B, users assume the role like this.
 
 ```bash
 # Assume the cross-account role and get temporary credentials
+
 aws sts assume-role \
   --role-arn arn:aws:iam::999988887777:role/CrossAccountS3Role \
   --role-session-name my-session \

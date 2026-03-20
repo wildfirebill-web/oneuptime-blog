@@ -63,6 +63,7 @@ The following workflow builds a Docker image and scans it for vulnerabilities on
 
 ```yaml
 # .github/workflows/trivy-scan.yml
+
 # This workflow builds a Docker image and scans it with Trivy
 # Runs on pushes to main and all pull requests
 

@@ -32,6 +32,7 @@ First, verify the action is defined in `argocd-cm`:
 
 ```bash
 # View all action configurations
+
 kubectl get configmap argocd-cm -n argocd -o yaml | grep "resource.customizations.actions"
 
 # View the specific action configuration

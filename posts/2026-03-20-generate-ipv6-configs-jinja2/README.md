@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Jinja2, Templates, Ansible, Configuration, Automation, Network
+Tags: IPv6, Jinja2, Templates, Ansible, Configuration, Automation, Networks
 
 Description: Use Jinja2 templates to generate device-specific IPv6 configurations for routers and switches in automated deployment pipelines.
 
@@ -14,6 +14,7 @@ Use Jinja2 templates to generate device-specific IPv6 configurations for routers
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

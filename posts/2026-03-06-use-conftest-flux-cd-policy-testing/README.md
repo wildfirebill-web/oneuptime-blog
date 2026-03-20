@@ -21,6 +21,7 @@ Conftest is an Open Policy Agent (OPA) based tool that lets you write policy tes
 
 ```bash
 # macOS
+
 brew install conftest
 
 # Linux

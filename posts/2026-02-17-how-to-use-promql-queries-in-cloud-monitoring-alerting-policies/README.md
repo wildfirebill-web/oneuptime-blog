@@ -45,6 +45,7 @@ Here is a simple example query that fires when CPU utilization on any Compute En
 
 ```promql
 # Alert when any VM instance CPU usage goes above 80%
+
 compute_googleapis_com:instance_cpu_utilization
   > 0.80
 ```

@@ -14,6 +14,7 @@ SES Configuration Sets let you apply rules to a group of emails you send, includ
 
 ```hcl
 # Base configuration set
+
 resource "aws_ses_configuration_set" "transactional" {
   name = "transactional-emails"
 

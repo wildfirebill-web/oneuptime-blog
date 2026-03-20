@@ -14,6 +14,7 @@ Strapi is the leading open-source headless CMS. It provides a customizable admin
 
 ```yaml
 # strapi-stack.yml
+
 version: "3.8"
 services:
   strapi:
@@ -71,7 +72,7 @@ networks:
 
 Set these in Portainer's stack environment variables for security:
 
-```
+```text
 DATABASE_PASSWORD=<strong-password>
 JWT_SECRET=<32-character-random-string>
 APP_KEYS=<key1>,<key2>,<key3>,<key4>

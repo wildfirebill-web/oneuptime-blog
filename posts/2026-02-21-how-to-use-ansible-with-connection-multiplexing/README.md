@@ -67,6 +67,7 @@ Ansible enables multiplexing by default with these settings:
 
 ```ini
 # Default SSH args in Ansible
+
 [ssh_connection]
 ssh_args = -o ControlMaster=auto -o ControlPersist=60s
 ```

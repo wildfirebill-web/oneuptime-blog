@@ -28,6 +28,7 @@ Docker sets `/dev/shm` to 64MB by default. You can verify this inside any contai
 
 ```bash
 # Check the default shared memory size
+
 docker run --rm alpine df -h /dev/shm
 # Output: Filesystem      Size    Used    Available   Use%  Mounted on
 #         shm             64.0M   0       64.0M       0%    /dev/shm

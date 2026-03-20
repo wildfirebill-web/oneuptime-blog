@@ -16,9 +16,10 @@ Bonding failover issues manifest as connectivity loss during link failures, slow
 cat /proc/net/bonding/bond0 | grep "Bonding Mode"
 
 # Failover-capable modes:
-# fault-tolerance (active-backup) — Mode 1
-# IEEE 802.3ad (LACP) — Mode 4
-# adaptive load balancing — Mode 5/6
+
+# fault-tolerance (active-backup) - Mode 1
+# IEEE 802.3ad (LACP) - Mode 4
+# adaptive load balancing - Mode 5/6
 ```
 
 ## Step 2: Check MII Monitoring is Enabled

@@ -33,6 +33,7 @@ Create a Google Cloud service account:
 
 ```bash
 # Create a service account for the application
+
 gcloud iam service-accounts create my-app-sa \
     --display-name="My Application Service Account"
 
@@ -311,7 +312,7 @@ If your application connects to multiple Cloud SQL instances:
       name: mysql
 ```
 
-## Resource Sizing for the Proxy
+Resource Sizing for the Proxy
 
 The Auth Proxy is lightweight but needs adequate resources:
 

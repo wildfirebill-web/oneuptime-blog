@@ -14,6 +14,7 @@ Registering your RHEL system with the Red Hat Customer Portal is the first step 
 
 ```bash
 # Register the system
+
 sudo subscription-manager register --username=your-rh-username --password=your-rh-password
 
 # The system is now registered but may not have a subscription attached

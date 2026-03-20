@@ -73,6 +73,7 @@ A common ETL task is converting CSV files to Parquet format for efficient queryi
 
 ```python
 # Transform CSV files from S3 into Parquet format
+
 import json
 import boto3
 import pandas as pd

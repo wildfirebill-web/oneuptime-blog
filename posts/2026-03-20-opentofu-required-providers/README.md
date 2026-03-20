@@ -1,11 +1,10 @@
----
-title: "Declaring Required Providers in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers
-description: "Learn how to properly declare required providers in OpenTofu with correct sources, version constraints, and best practices."
----
-
 # Declaring Required Providers in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider
+
+Description: Learn how to properly declare required providers in OpenTofu with correct sources, version constraints, and best practices.
 
 The `required_providers` block is how you tell OpenTofu which providers your configuration needs, where to find them, and which versions are compatible. Getting this right is essential for reproducible deployments.
 
@@ -75,7 +74,7 @@ terraform {
 
     google = {
       source = "hashicorp/google"
-      # Pessimistic constraint — allow patch and minor updates (>=5.0.0, <6.0.0)
+      # Pessimistic constraint - allow patch and minor updates (>=5.0.0, <6.0.0)
       version = "~> 5.0"
     }
 
@@ -87,7 +86,7 @@ terraform {
 
     kubernetes = {
       source = "hashicorp/kubernetes"
-      # Minimum version only (least restrictive — use carefully)
+      # Minimum version only (least restrictive - use carefully)
       version = ">= 2.20"
     }
   }
@@ -107,7 +106,7 @@ terraform {
       version = "~> 5.0"
     }
 
-    # Kubernetes provider — configured after cluster creation
+    # Kubernetes provider - configured after cluster creation
     kubernetes = {
       source  = "hashicorp/kubernetes"
       version = "~> 2.24"
@@ -148,6 +147,7 @@ terraform {
 
 ```hcl
 # Declare requirements
+
 terraform {
   required_providers {
     aws = {

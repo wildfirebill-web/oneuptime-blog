@@ -35,6 +35,7 @@ Packets are transmitted in sequential order across all slave interfaces. The fir
 
 ```bash
 # Create a balance-rr bond
+
 nmcli connection add type bond con-name bond0 ifname bond0 \
   bond.options "mode=balance-rr,miimon=100"
 ```

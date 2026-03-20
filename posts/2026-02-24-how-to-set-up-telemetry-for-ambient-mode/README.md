@@ -257,6 +257,7 @@ Key things to watch:
 
 ```bash
 # Check ztunnel resource usage
+
 kubectl top pods -n istio-system -l app=ztunnel
 
 # Check ztunnel logs for errors

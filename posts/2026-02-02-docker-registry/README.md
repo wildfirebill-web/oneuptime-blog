@@ -46,6 +46,7 @@ The simplest way to start a Docker Registry is by running the official image. Th
 
 ```bash
 # Start a basic Docker Registry on port 5000
+
 # The registry data is ephemeral and will be lost when the container stops
 docker run -d \
   --name registry \

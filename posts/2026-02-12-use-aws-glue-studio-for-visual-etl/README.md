@@ -143,6 +143,7 @@ When built-in transforms aren't enough, add a custom transform:
 
 ```python
 # Custom transform: Parse JSON strings and extract nested fields
+
 def MyTransform(glueContext, dfc) -> DynamicFrameCollection:
     from pyspark.sql.functions import from_json, col
     from pyspark.sql.types import StructType, StructField, StringType

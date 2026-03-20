@@ -16,6 +16,7 @@ Without multi-stage builds, a typical workflow puts everything in one Dockerfile
 
 ```dockerfile
 # Single-stage - DON'T do this for production
+
 FROM ubuntu:22.04
 
 # Install build tools AND runtime dependencies together

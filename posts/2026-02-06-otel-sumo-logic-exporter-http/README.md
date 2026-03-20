@@ -216,6 +216,7 @@ For organizations with staging and production environments sending to the same S
 
 ```yaml
 # Production Collector
+
 processors:
   resource:
     attributes:

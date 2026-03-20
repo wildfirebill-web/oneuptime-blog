@@ -24,6 +24,7 @@ For Python:
 
 ```python
 # Set version from environment variable or deployment metadata
+
 import os
 import googlecloudprofiler
 

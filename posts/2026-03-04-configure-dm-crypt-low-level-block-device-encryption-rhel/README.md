@@ -16,6 +16,7 @@ Make sure cryptsetup is installed:
 
 ```bash
 # Install cryptsetup if not already present
+
 sudo dnf install -y cryptsetup
 ```
 

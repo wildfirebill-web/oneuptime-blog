@@ -48,6 +48,7 @@ The following configuration enables the ruler with local storage and connects it
 
 ```yaml
 # loki-config.yaml
+
 ruler:
   # Enable the rules API for dynamic rule management
   enable_api: true

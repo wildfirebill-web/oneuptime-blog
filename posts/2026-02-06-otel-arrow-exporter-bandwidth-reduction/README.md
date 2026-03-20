@@ -64,6 +64,7 @@ Here is a complete agent-side Collector configuration using OTel Arrow:
 
 ```yaml
 # agent-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

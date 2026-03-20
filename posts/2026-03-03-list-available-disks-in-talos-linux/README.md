@@ -20,6 +20,7 @@ The primary tool for interacting with Talos Linux nodes is `talosctl`. To list a
 
 ```bash
 # List all disks on a specific node
+
 talosctl disks --nodes 192.168.1.10
 ```
 

@@ -30,6 +30,7 @@ Or:
 
 ```ini
 # inventory - Set the correct Python path per host or group
+
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
 

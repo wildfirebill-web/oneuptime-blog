@@ -16,6 +16,7 @@ Taints repel pods, tolerations allow pods to overcome taints:
 
 ```bash
 # Taint a node
+
 kubectl taint nodes worker-1 workload=gpu:NoSchedule
 
 # Pods without matching toleration cannot schedule on worker-1

@@ -258,6 +258,7 @@ Track Redis connections and throughput through Istio metrics:
 
 ```bash
 # Active connections to Redis
+
 istio_tcp_connections_opened_total{
   destination_service=~".*redislabs.*|.*cache.amazonaws.*"
 }

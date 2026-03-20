@@ -16,6 +16,7 @@ ResourceQuotas limit total namespace resources. LimitRanges limit individual pod
 
 ```yaml
 # ResourceQuota - namespace totals
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

@@ -8,11 +8,11 @@ Description: Configure Path MTU Discovery for IPv6 on Linux and other systems, u
 
 ## Introduction
 
-Path MTU Discovery (PMTUD) for IPv6 is defined in RFC 8201 and is essential for efficient packet delivery. Unlike IPv4 where router fragmentation can silently handle oversized packets, IPv6 requires PMTUD to avoid packet loss. When a packet is too large for a link, the router sends an ICMPv6 Packet Too Big message and drops the packet — PMTUD allows the source to learn this and adjust.
+Path MTU Discovery (PMTUD) for IPv6 is defined in RFC 8201 and is essential for efficient packet delivery. Unlike IPv4 where router fragmentation can silently handle oversized packets, IPv6 requires PMTUD to avoid packet loss. When a packet is too large for a link, the router sends an ICMPv6 Packet Too Big message and drops the packet - PMTUD allows the source to learn this and adjust.
 
 ## How IPv6 PMTUD Works
 
-```
+```text
 PMTUD Process:
 
 1. Source sends packet sized to local interface MTU (e.g., 1500 bytes)
@@ -33,6 +33,7 @@ PMTUD is enabled by default on Linux but can be tuned:
 
 ```bash
 # Check PMTU discovery status per interface
+
 cat /proc/sys/net/ipv6/conf/eth0/path_mtu_discovery
 # 1 = enabled (default)
 

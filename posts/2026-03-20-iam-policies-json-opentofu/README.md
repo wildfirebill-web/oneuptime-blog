@@ -19,6 +19,7 @@ IAM policies define what actions are allowed or denied for AWS resources. Creati
 
 ```hcl
 # Customer-managed IAM policy with JSON document
+
 resource "aws_iam_policy" "s3_read" {
   name        = "S3ReadOnlyPolicy"
   description = "Allow reading from specific S3 buckets"
@@ -175,4 +176,4 @@ aws iam get-policy-version \
 
 ## Conclusion
 
-IAM policies with JSON documents provide the most explicit control over AWS permissions. Use separate `Sid` identifiers to make policies self-documenting. Apply conditions like `aws:SourceVpce`, `aws:RequestedRegion`, and `aws:MultiFactorAuthPresent` to enforce security baselines. Always follow least-privilege—start with denying everything and explicitly allow only what's needed.
+IAM policies with JSON documents provide the most explicit control over AWS permissions. Use separate `Sid` identifiers to make policies self-documenting. Apply conditions like `aws:SourceVpce`, `aws:RequestedRegion`, and `aws:MultiFactorAuthPresent` to enforce security baselines. Always follow least-privilege-start with denying everything and explicitly allow only what's needed.

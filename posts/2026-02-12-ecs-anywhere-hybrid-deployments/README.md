@@ -53,6 +53,7 @@ Create a cluster or use an existing one. ECS Anywhere instances join the cluster
 
 ```bash
 # Create a cluster for hybrid workloads
+
 aws ecs create-cluster \
   --cluster-name hybrid-cluster \
   --settings "name=containerInsights,value=enabled"

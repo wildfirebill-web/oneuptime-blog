@@ -20,6 +20,7 @@ First, you need to enable the billing API and know your billing account ID:
 
 ```hcl
 # variables.tf - Budget-related variables
+
 variable "billing_account_id" {
   description = "GCP billing account ID (format: XXXXXX-XXXXXX-XXXXXX)"
   type        = string
@@ -318,7 +319,7 @@ def stop_non_essential_instances(project_id):
                     print(f"Stopped instance: {instance.name} in {zone_name}")
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Quotas limit how many resources can be created. While GCP has default quotas, you can request lower quotas for cost control:
 

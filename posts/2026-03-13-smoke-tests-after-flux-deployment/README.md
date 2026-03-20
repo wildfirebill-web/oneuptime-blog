@@ -27,6 +27,7 @@ This guide covers two approaches: in-cluster smoke tests as Kubernetes Jobs trig
 
 ```yaml
 # apps/myapp/smoke-test-job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # keycloak-values.yaml
+
 auth:
   adminUser: admin
   adminPassword: "securepassword"
@@ -117,4 +118,4 @@ Map Keycloak groups to Rancher cluster roles:
 
 ## Conclusion
 
-Keycloak on Rancher provides enterprise-grade identity management with SSO across all your applications. The OIDC integration with Rancher enables centralized user provisioning, group-based RBAC, and MFA enforcement—eliminating the need to manage user accounts separately in Rancher and every downstream application.
+Keycloak on Rancher provides enterprise-grade identity management with SSO across all your applications. The OIDC integration with Rancher enables centralized user provisioning, group-based RBAC, and MFA enforcement-eliminating the need to manage user accounts separately in Rancher and every downstream application.

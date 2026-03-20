@@ -1,4 +1,4 @@
-# How to Benchmark IPv6 with iperf3
+# How to Benchmark IPv6 with iperf3 - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,10 +19,11 @@ iperf3 is the standard tool for network performance benchmarking. Its `-6` flag 
 ## Step 1: Basic IPv6 TCP Throughput Test
 
 ```bash
-# On the server host — start iperf3 server
+# On the server host - start iperf3 server
+
 iperf3 -s -6
 
-# On the client — run a 30-second TCP test
+# On the client - run a 30-second TCP test
 iperf3 -6 -c 2001:db8::1 -t 30
 
 # Example output:
@@ -34,7 +35,7 @@ iperf3 -6 -c 2001:db8::1 -t 30
 ## Step 2: Parallel Streams (Simulating Multiple Connections)
 
 ```bash
-# 4 parallel TCP streams — simulates multi-user load
+# 4 parallel TCP streams - simulates multi-user load
 iperf3 -6 -c 2001:db8::1 -t 30 -P 4
 
 # 8 parallel streams for near-line-rate testing
@@ -68,7 +69,7 @@ iperf3 -6 -c 2001:db8::1 -u -b 10M -l 1316 -t 60
 # Simultaneous send and receive (full duplex)
 iperf3 -6 -c 2001:db8::1 -t 30 --bidir
 
-# Reverse test — server sends to client
+# Reverse test - server sends to client
 iperf3 -6 -c 2001:db8::1 -t 30 -R
 ```
 
@@ -76,7 +77,7 @@ iperf3 -6 -c 2001:db8::1 -t 30 -R
 
 ```bash
 #!/bin/bash
-# ipv6-benchmark-suite.sh — comprehensive IPv6 performance test
+# ipv6-benchmark-suite.sh - comprehensive IPv6 performance test
 
 SERVER="2001:db8::1"
 DURATION=30

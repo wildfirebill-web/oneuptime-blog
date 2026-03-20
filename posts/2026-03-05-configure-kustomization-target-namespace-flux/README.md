@@ -29,6 +29,7 @@ Cluster-scoped resources (like ClusterRole, ClusterRoleBinding, and Namespace ob
 
 ```yaml
 # kustomization-target-ns.yaml - Override namespace for all resources
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

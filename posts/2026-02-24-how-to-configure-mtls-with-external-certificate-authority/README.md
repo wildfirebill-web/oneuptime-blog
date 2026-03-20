@@ -28,6 +28,7 @@ If you are creating a new intermediate CA under an existing root:
 
 ```bash
 # Generate intermediate CA key
+
 openssl genrsa -out ca-key.pem 4096
 
 # Generate intermediate CA CSR

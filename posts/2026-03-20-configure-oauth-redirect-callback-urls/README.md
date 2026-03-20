@@ -21,11 +21,11 @@ The OAuth redirect URL (also called callback URL) is where your IdP sends the us
 
 The redirect URL is your Portainer's public-facing URL:
 
-```
+```text
 https://portainer.example.com/
 ```
 
-Note the trailing slash — it's required by Portainer. Without it, you'll get a `redirect_uri_mismatch` error.
+Note the trailing slash - it's required by Portainer. Without it, you'll get a `redirect_uri_mismatch` error.
 
 ## Common Redirect URL Formats
 
@@ -47,6 +47,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Set the correct redirect URI
+
 curl -X PUT \
   https://localhost:9443/api/settings \
   -H "Authorization: Bearer $TOKEN" \

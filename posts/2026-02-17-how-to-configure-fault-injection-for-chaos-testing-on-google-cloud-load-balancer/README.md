@@ -242,6 +242,7 @@ Build an automated chaos testing pipeline that injects faults, runs your test su
 
 ```python
 # chaos_test.py - Automated chaos testing with fault injection
+
 import subprocess
 import requests
 import time

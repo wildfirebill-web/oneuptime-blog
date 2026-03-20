@@ -27,6 +27,7 @@ This guide covers the software dependency audit for Cilium performance testing e
 
 ```bash
 # Check kernel version (5.10+ recommended for best Cilium performance)
+
 uname -r
 
 # Verify required kernel modules

@@ -43,6 +43,7 @@ Before you begin, make sure you have a Kubernetes cluster with MetalLB v0.13.2 o
 
 ```yaml
 # IPAddressPool defines the range of IPs MetalLB can assign
+
 # These should be routable on your data/public network
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

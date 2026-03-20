@@ -18,6 +18,7 @@ The GnuTLS library is usually already present, but you need the utils package fo
 
 ```bash
 # Install GnuTLS command-line utilities
+
 sudo dnf install gnutls-utils
 ```
 

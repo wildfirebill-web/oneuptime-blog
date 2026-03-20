@@ -200,6 +200,7 @@ mTLS overhead scales with payload size since encryption has to process more data
 
 ```bash
 # Small payload (default /get response, ~500 bytes)
+
 kubectl exec -n bench-test fortio-client -- fortio load \
   -c 16 -qps 0 -t 30s \
   http://httpbin.bench-test.svc.cluster.local:8000/get

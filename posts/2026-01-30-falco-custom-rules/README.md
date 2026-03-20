@@ -16,6 +16,7 @@ Exceptions let you create granular allow-lists without modifying the original ru
 
 ```yaml
 # Define a rule with exceptions support
+
 - rule: Shell Spawned in Container
   desc: Detect shell execution inside containers
   condition: >

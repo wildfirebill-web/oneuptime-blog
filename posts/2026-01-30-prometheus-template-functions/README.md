@@ -61,6 +61,7 @@ The simplest templates access predefined variables directly.
 
 ```yaml
 # prometheus-rules.yaml
+
 groups:
   - name: example-alerts
     rules:

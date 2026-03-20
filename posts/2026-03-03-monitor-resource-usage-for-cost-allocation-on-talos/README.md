@@ -27,6 +27,7 @@ The basis of cost allocation is consistent labeling. Establish a labeling conven
 
 ```yaml
 # Required labels for all workloads
+
 metadata:
   labels:
     # Business context

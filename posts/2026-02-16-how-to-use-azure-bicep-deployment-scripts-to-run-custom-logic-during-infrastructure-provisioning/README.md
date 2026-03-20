@@ -305,6 +305,7 @@ You can view logs through the Azure Portal by navigating to the deployment scrip
 
 ```bash
 # View deployment script logs from the CLI
+
 # The script resource is in the same resource group as the deployment
 az deployment-scripts show-log \
   --resource-group "my-rg" \

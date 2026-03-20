@@ -42,6 +42,7 @@ First, set up the services that will receive the routed messages.
 
 ```bash
 # Create a storage account for IoT telemetry archival
+
 az storage account create \
     --resource-group rg-iot-production \
     --name stiottelemetry2026 \

@@ -1,4 +1,4 @@
-# How to Fix WebSocket Connection Issues in Portainer Behind a Proxy
+# How to Fix WebSocket Connection Issues in Portainer Behind a Proxy (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Portainer uses WebSocket connections for several key features: container console
 
 ```bash
 # Check browser console for WebSocket errors
+
 # F12 → Console tab → look for:
 # "WebSocket connection to 'wss://...' failed"
 # "Error during WebSocket handshake"
@@ -37,7 +38,7 @@ wscat -c wss://portainer.yourdomain.com
 # Failure: "error: Unexpected server response: 400/502/etc"
 ```
 
-## Step 2: Nginx — Complete WebSocket Configuration
+## Step 2: Nginx - Complete WebSocket Configuration
 
 ```nginx
 server {
@@ -79,7 +80,7 @@ server {
 }
 ```
 
-## Step 3: Apache — WebSocket Configuration
+## Step 3: Apache - WebSocket Configuration
 
 ```apache
 <VirtualHost *:443>
@@ -117,7 +118,7 @@ server {
 </VirtualHost>
 ```
 
-## Step 4: Traefik — WebSocket Configuration
+## Step 4: Traefik - WebSocket Configuration
 
 Traefik supports WebSocket natively, but needs proper configuration:
 
@@ -160,9 +161,9 @@ serversTransport:
     idleTimeout: 3600s
 ```
 
-## Step 5: HAProxy — WebSocket Configuration
+## Step 5: HAProxy - WebSocket Configuration
 
-```
+```text
 frontend portainer_frontend
     bind *:443 ssl crt /etc/ssl/portainer.pem
     mode http

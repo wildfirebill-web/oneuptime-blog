@@ -54,6 +54,7 @@ The CLI gives you full control over clone settings. Here's the basic command:
 
 ```bash
 # Create a clone of an existing Aurora cluster
+
 aws rds restore-db-cluster-to-point-in-time \
   --source-db-cluster-identifier my-production-cluster \
   --db-cluster-identifier my-clone-cluster \

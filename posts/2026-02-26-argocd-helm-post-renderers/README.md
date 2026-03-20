@@ -18,6 +18,7 @@ In standard Helm usage, a post-renderer is an executable that receives rendered 
 
 ```bash
 # Standard Helm post-renderer usage (outside ArgoCD)
+
 helm install my-app ./chart --post-renderer ./my-transform.sh
 ```
 

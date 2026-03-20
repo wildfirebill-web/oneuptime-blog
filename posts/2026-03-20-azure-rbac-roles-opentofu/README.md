@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, RBAC, IAM, Role Assignment, Infrastructure as Code, Security
+Tags: OpenTofu, Azure, RBAC, IAM, Role Assignments, Infrastructure as Code, Security
 
 Description: Learn how to assign Azure Role-Based Access Control (RBAC) roles to users, groups, and service principals using OpenTofu for consistent and auditable permission management.
 
@@ -28,6 +28,7 @@ Built-in roles like Reader, Contributor, and Owner cover most common scenarios.
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -131,7 +132,7 @@ variable "service_principal_object_id" {
 
 # locals.tf
 locals {
-  # Map of role assignments to create — useful for multiple similar assignments
+  # Map of role assignments to create - useful for multiple similar assignments
   app_role_assignments = {
     storage_reader = {
       scope  = azurerm_storage_account.app_storage.id
@@ -158,7 +159,7 @@ resource "azurerm_role_assignment" "app_assignments" {
 
 ## Best Practices
 
-- Always assign roles at the narrowest scope possible — prefer resource group or resource scope over subscription scope.
-- Avoid assigning `Owner` — prefer `Contributor` plus specific data-plane roles.
+- Always assign roles at the narrowest scope possible - prefer resource group or resource scope over subscription scope.
+- Avoid assigning `Owner` - prefer `Contributor` plus specific data-plane roles.
 - Use Azure AD groups for user role assignments rather than assigning roles directly to individuals.
 - Regularly audit assignments using `tofu plan` to catch drift from manually added roles.

@@ -1,4 +1,4 @@
-# How to Enable Debug Logging with TF_LOG in OpenTofu
+# How to Enable Debug Logging with TF_LOG in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,7 +25,8 @@ graph TD
 
 ```bash
 # Levels from most to least verbose:
-export TF_LOG=TRACE   # Everything — API request bodies, responses, provider internals
+
+export TF_LOG=TRACE   # Everything - API request bodies, responses, provider internals
 export TF_LOG=DEBUG   # Provider logic and decisions
 export TF_LOG=INFO    # General operation information
 export TF_LOG=WARN    # Warnings that don't stop execution
@@ -102,7 +103,7 @@ tofu init 2>&1 | grep -i "version"
 
 ## Reading DEBUG Output
 
-```
+```text
 # Example TF_LOG=DEBUG output (truncated)
 2026-03-20T10:15:30.123Z [DEBUG] provider.terraform-provider-aws: Starting aws provider
 2026-03-20T10:15:30.456Z [DEBUG] provider.terraform-provider-aws: configuring provider with args
@@ -167,8 +168,8 @@ jobs:
 
 ## Best Practices
 
-- Use `TF_LOG=DEBUG` as your first debugging step — it reveals provider decisions without the overwhelming volume of TRACE output.
-- Always use `TF_LOG_PATH` to write logs to a file — debug output is voluminous and difficult to parse when mixed with normal plan output in the terminal.
-- Never commit `TF_LOG` to CI/CD configuration without a conditional — permanent debug logging in CI creates multi-megabyte log files and may expose sensitive API responses.
-- Use `TF_LOG_PROVIDER=TRACE` and `TF_LOG_CORE=ERROR` when debugging a specific provider — this reduces noise from the OpenTofu core while maximizing provider visibility.
-- After identifying the issue, reproduce it at ERROR log level to confirm — this ensures the fix works without debug logging overhead.
+- Use `TF_LOG=DEBUG` as your first debugging step - it reveals provider decisions without the overwhelming volume of TRACE output.
+- Always use `TF_LOG_PATH` to write logs to a file - debug output is voluminous and difficult to parse when mixed with normal plan output in the terminal.
+- Never commit `TF_LOG` to CI/CD configuration without a conditional - permanent debug logging in CI creates multi-megabyte log files and may expose sensitive API responses.
+- Use `TF_LOG_PROVIDER=TRACE` and `TF_LOG_CORE=ERROR` when debugging a specific provider - this reduces noise from the OpenTofu core while maximizing provider visibility.
+- After identifying the issue, reproduce it at ERROR log level to confirm - this ensures the fix works without debug logging overhead.

@@ -81,7 +81,7 @@ resource "hcloud_server" "web" {
 
 - Maximum of **10 servers** per placement group.
 - Servers must be in the **same location** (datacenter) as the placement group.
-- Placement groups can only be assigned at server **creation time** — you cannot add an existing server to a placement group.
+- Placement groups can only be assigned at server **creation time** - you cannot add an existing server to a placement group.
 - If no suitable physical host with available capacity exists, the server creation may fail. Hetzner recommends not creating more than 10 servers in a single group.
 
 ## Checking Placement Group Usage

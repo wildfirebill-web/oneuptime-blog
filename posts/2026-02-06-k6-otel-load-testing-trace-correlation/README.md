@@ -14,6 +14,7 @@ k6 has a built-in experimental OpenTelemetry output. Enable it by setting enviro
 
 ```bash
 # Run k6 with OTel output enabled
+
 K6_OTEL_GRPC_EXPORTER_INSECURE=true \
 K6_OTEL_METRIC_PREFIX=k6_ \
 K6_OTEL_EXPORTER_OTLP_ENDPOINT=localhost:4317 \

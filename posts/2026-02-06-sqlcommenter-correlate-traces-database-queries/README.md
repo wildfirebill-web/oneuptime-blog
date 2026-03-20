@@ -39,6 +39,7 @@ First, install the required packages.
 
 ```bash
 # Install SQLCommenter for Django and the OpenTelemetry integration
+
 pip install opentelemetry-sqlcommenter django
 ```
 

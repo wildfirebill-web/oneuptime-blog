@@ -18,6 +18,7 @@ The core concept uses a Service with a version selector:
 
 ```yaml
 # Production service pointing to blue
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -450,7 +451,7 @@ spec:
         image: api:v2.0.0
 ```
 
-## Resource Management
+Resource Management
 
 Scale down the old deployment after verification:
 

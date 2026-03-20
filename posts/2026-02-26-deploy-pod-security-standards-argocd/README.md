@@ -32,6 +32,7 @@ Pod Security Admission is enabled by default in Kubernetes 1.25+. It uses namesp
 
 ```yaml
 # Namespace labels for Pod Security Admission
+
 metadata:
   labels:
     pod-security.kubernetes.io/enforce: restricted

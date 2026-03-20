@@ -40,6 +40,7 @@ If you use cert-manager, certificate rotation is automatic.
 
 ```yaml
 # Certificate resource for ArgoCD server
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

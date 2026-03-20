@@ -1,4 +1,4 @@
-# How to Publish Services (ClusterIP, NodePort, LoadBalancer) in Portainer
+# How to Publish Services (ClusterIP, NodePort, LoadBalancer) in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ When deploying or editing an application in Portainer:
 
 ```yaml
 # Service accessible only within the cluster
+
 apiVersion: v1
 kind: Service
 metadata:

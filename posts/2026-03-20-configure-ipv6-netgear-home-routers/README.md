@@ -44,7 +44,7 @@ For most users: try **Auto Detect** first.
 
 When Auto Detect is selected, Netgear probes for SLAAC and DHCPv6 automatically:
 
-```
+```text
 IPv6 Connection Type: Auto Detect
 
 If connection succeeds, you'll see:
@@ -58,7 +58,7 @@ If connection succeeds, you'll see:
 
 If Auto Detect fails, configure DHCP explicitly:
 
-```
+```text
 IPv6 Connection Type: DHCP
 
 Router's IPv6 Address:
@@ -76,7 +76,7 @@ Prefix Delegation (PD):
 
 Under the **LAN Setup** section in IPv6 settings:
 
-```
+```text
 LAN IPv6 Address Mode:
   ☑ Enable IPv6 LAN
   Address Mode: Auto (derived from WAN prefix)
@@ -105,7 +105,7 @@ Orbi satellites automatically receive IPv6 configuration from the main node.
 
 From the Netgear admin panel, check **Advanced → Administration → Router Status**:
 
-```
+```text
 IPv6 Status:
   WAN IPv6 Address: (global address if ISP supports IPv6)
   Default IPv6 Gateway: fe80::xxxx
@@ -117,6 +117,7 @@ From a LAN device, test:
 
 ```powershell
 # Windows: check IPv6 address
+
 ipconfig | findstr /i "IPv6"
 
 # Ping test
@@ -125,7 +126,7 @@ ping -6 ipv6.google.com -n 4
 
 ## Firmware Updates
 
-Ensure your Netgear router has the latest firmware — IPv6 support and stability improves significantly in newer releases:
+Ensure your Netgear router has the latest firmware - IPv6 support and stability improves significantly in newer releases:
 
 1. Admin panel → Advanced → Administration → Firmware Update
 2. Click Check for Updates

@@ -48,6 +48,7 @@ For a new role with a Molecule scenario already set up:
 
 ```bash
 # Create a new role with the default scenario
+
 molecule init role my_webserver --driver-name docker
 
 # The generated structure looks like this

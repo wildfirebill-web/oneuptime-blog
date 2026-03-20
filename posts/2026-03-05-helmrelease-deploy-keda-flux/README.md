@@ -22,6 +22,7 @@ KEDA publishes its Helm charts through the KEDA core repository.
 
 ```yaml
 # helmrepository-keda.yaml - KEDA Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

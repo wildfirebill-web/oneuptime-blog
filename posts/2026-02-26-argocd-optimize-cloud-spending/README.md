@@ -35,6 +35,7 @@ Use ArgoCD Projects to restrict what resources teams can deploy:
 
 ```yaml
 # ArgoCD Project with resource restrictions
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

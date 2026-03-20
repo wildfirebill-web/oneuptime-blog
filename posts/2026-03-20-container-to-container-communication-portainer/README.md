@@ -8,7 +8,7 @@ Description: Configure reliable container-to-container communication using Docke
 
 ## Introduction
 
-Containers communicate through Docker networks using service names as hostnames. This guide covers all communication patterns: same-stack services, cross-stack communication, external network bridges, and service aliases — all managed through Portainer.
+Containers communicate through Docker networks using service names as hostnames. This guide covers all communication patterns: same-stack services, cross-stack communication, external network bridges, and service aliases - all managed through Portainer.
 
 ## Step 1: Same-Stack Communication
 
@@ -16,6 +16,7 @@ Containers in the same docker-compose stack communicate automatically via their 
 
 ```yaml
 # docker-compose.yml - Same stack communication
+
 version: "3.8"
 
 networks:

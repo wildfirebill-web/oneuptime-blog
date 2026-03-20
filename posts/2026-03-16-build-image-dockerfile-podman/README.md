@@ -20,6 +20,7 @@ Podman recognizes both `Dockerfile` and `Containerfile`. When both exist in the 
 
 ```bash
 # Podman file detection priority:
+
 # 1. Containerfile
 # 2. Dockerfile
 

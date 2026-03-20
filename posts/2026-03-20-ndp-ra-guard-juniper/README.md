@@ -14,7 +14,7 @@ Juniper EX Series switches implement RA Guard through the IPv6 Neighbor Discover
 
 Juniper implements RA Guard as part of the broader IPv6 ND security framework.
 
-```
+```text
 Juniper RA Guard Framework:
 
 Junos NDI Components:
@@ -41,8 +41,9 @@ Configuration Hierarchy:
 
 Configure RA Guard at the VLAN level and mark trusted ports.
 
-```
+```text
 # Step 1: Enable ND security on the VLAN
+
 set vlans v10 forwarding-options nd-security
 
 # Step 2: Mark trusted (router-facing) ports as ND-trusted
@@ -58,7 +59,7 @@ commit
 
 ## Full Configuration in Junos Hierarchy Format
 
-```
+```text
 # Complete RA Guard configuration for VLAN 10
 
 vlans {
@@ -106,7 +107,7 @@ interfaces {
 
 In production, deploy RA Guard alongside DHCPv6 snooping for complete first-hop protection.
 
-```
+```text
 # Enable both ND security and DHCPv6 snooping on VLAN
 set vlans v10 forwarding-options nd-security
 set vlans v10 forwarding-options dhcp-security
@@ -187,7 +188,7 @@ show nd-security interface ge-0/0/23
 
 ## Monitoring RA Guard with Syslog
 
-```
+```text
 # Configure logging for ND security events
 set system syslog file nd-security-log any info
 set system syslog file nd-security-log structured-data

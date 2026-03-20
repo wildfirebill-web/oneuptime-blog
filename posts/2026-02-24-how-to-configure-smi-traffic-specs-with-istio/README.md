@@ -300,6 +300,7 @@ Check what Istio resources the adapter created from your specs:
 
 ```bash
 # List all HTTPRouteGroups
+
 kubectl get httproutegroups
 
 # Describe a specific one

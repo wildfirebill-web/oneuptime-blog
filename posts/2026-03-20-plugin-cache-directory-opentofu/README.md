@@ -14,6 +14,7 @@ The plugin cache directory tells OpenTofu where to store downloaded provider bin
 
 ```bash
 # Set for the current session
+
 export TF_PLUGIN_CACHE_DIR="/home/ci/.terraform.d/plugin-cache"
 mkdir -p "$TF_PLUGIN_CACHE_DIR"
 
@@ -51,7 +52,7 @@ echo ".terraform.d/" >> .gitignore
 The cache is keyed on provider source, version, and platform. A new version automatically downloads to a new cache subdirectory:
 
 ```bash
-# Cache structure — each version is separate
+# Cache structure - each version is separate
 plugin-cache/
 └── registry.opentofu.org/hashicorp/aws/
     ├── 5.38.0/linux_amd64/  ← old version
@@ -89,7 +90,7 @@ plugin_cache_may_break_dependency_lock_file = true
 
 ```bash
 # If init reports "Failed to retrieve provider ... from cache"
-# The cache may have a corrupted binary — delete the specific version
+# The cache may have a corrupted binary - delete the specific version
 
 PROVIDER_CACHE="$HOME/.terraform.d/plugin-cache/registry.opentofu.org/hashicorp/aws/5.40.0"
 rm -rf "$PROVIDER_CACHE"

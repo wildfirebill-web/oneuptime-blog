@@ -14,6 +14,7 @@ CockroachDB is a distributed SQL database compatible with PostgreSQL. It provide
 
 ```yaml
 # docker-compose.yml - CockroachDB 3-node cluster
+
 version: "3.8"
 
 networks:

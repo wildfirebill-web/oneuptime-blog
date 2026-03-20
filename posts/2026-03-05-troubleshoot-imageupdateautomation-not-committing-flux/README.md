@@ -24,6 +24,7 @@ ImageUpdateAutomation depends on both ImageRepository and ImagePolicy. If either
 
 ```bash
 # Check all image resources in one view
+
 flux get image all -n flux-system
 ```
 

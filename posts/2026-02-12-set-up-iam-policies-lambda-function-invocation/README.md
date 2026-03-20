@@ -99,6 +99,7 @@ A Lambda function that serves an API typically needs DynamoDB and maybe S3:
 
 ```bash
 # Create the trust policy for Lambda
+
 cat > lambda-trust.json << 'EOF'
 {
   "Version": "2012-10-17",

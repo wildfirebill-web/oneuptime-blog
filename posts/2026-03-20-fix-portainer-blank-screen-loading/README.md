@@ -16,6 +16,7 @@ Browser cache is the most common culprit after a Portainer upgrade.
 
 ```bash
 # In Chrome/Edge: Ctrl+Shift+Delete → Clear cached images and files
+
 # Or hard reload: Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac)
 ```
 

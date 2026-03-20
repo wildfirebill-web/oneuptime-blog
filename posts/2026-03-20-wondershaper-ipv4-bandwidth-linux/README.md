@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: wondershaper, IPv4, Linux, Bandwidth, QoS, Traffic Shaping
+Tags: Wondershaper, IPv4, Linux, Bandwidth, QoS, Traffic Shaping
 
 Description: Install and use wondershaper to quickly apply download and upload bandwidth limits with interactive traffic prioritization on a Linux network interface.
 
@@ -12,6 +12,7 @@ Wondershaper is a simple bash script that wraps tc commands to apply bandwidth l
 
 ```bash
 # Install from package manager (Ubuntu/Debian)
+
 sudo apt install wondershaper -y
 
 # Or install from source for the latest version

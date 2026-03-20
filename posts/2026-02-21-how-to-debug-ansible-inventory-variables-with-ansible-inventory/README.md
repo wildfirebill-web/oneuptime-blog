@@ -16,6 +16,7 @@ The `--host` flag shows every variable that a specific host will receive, with a
 
 ```bash
 # Show all resolved variables for a host
+
 ansible-inventory -i inventory.ini --host web1.example.com
 ```
 

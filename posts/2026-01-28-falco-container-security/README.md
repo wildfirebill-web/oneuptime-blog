@@ -34,6 +34,7 @@ The recommended installation method is using Helm:
 
 ```bash
 # Add the Falcosecurity Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 helm repo update
 

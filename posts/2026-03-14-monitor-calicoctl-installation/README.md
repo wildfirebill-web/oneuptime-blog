@@ -30,6 +30,7 @@ Track calicoctl versions across all managed systems.
 ```bash
 #!/bin/bash
 # monitor-calicoctl-fleet.sh
+
 # Monitor calicoctl installations across the fleet
 
 HOSTS_FILE="${1:-/etc/calico/managed-hosts.txt}"

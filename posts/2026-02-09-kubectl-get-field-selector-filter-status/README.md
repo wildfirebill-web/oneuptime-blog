@@ -148,6 +148,7 @@ Find all pods on nodes that are about to be drained:
 
 ```bash
 # First mark node as unschedulable
+
 kubectl cordon worker-node-2
 
 # Then find all pods on it

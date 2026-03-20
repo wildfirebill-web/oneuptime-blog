@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure, VM Scale Sets, VMSS, Infrastructure as Code, Compute
 
-Description: Learn how to configure Azure Virtual Machine Scale Sets with OpenTofu — including autoscaling profiles, rolling upgrades, load balancer integration, and custom script extensions.
+Description: Learn how to configure Azure Virtual Machine Scale Sets with OpenTofu - including autoscaling profiles, rolling upgrades, load balancer integration, and custom script extensions.
 
 ## Introduction
 

@@ -30,6 +30,7 @@ First, create a 3-node RKE2 cluster inside Harvester:
 
 ```bash
 # Create 3 VMs for Rancher
+
 for i in 1 2 3; do
 kubectl apply -f - <<EOF
 apiVersion: kubevirt.io/v1
@@ -253,4 +254,4 @@ kubectl logs -n cattle-system \
 
 ## Conclusion
 
-Integrating Harvester with Rancher creates a powerful unified management platform for your entire infrastructure. From a single Rancher interface, you can manage VMs through Harvester, provision Kubernetes clusters on VM infrastructure, apply policies across all clusters, and gain unified monitoring and alerting. This integration is particularly valuable for organizations running both legacy VM workloads and modern containerized applications — it enables a gradual migration path while maintaining operational visibility across both paradigms.
+Integrating Harvester with Rancher creates a powerful unified management platform for your entire infrastructure. From a single Rancher interface, you can manage VMs through Harvester, provision Kubernetes clusters on VM infrastructure, apply policies across all clusters, and gain unified monitoring and alerting. This integration is particularly valuable for organizations running both legacy VM workloads and modern containerized applications - it enables a gradual migration path while maintaining operational visibility across both paradigms.

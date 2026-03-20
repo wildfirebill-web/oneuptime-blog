@@ -16,6 +16,7 @@ Fresh Debian 12 installations often only have root access via SSH with a passwor
 
 ```ini
 # inventory/hosts
+
 [debian12]
 srv01 ansible_host=10.0.1.10
 srv02 ansible_host=10.0.1.11

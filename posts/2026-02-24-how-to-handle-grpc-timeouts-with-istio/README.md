@@ -209,6 +209,7 @@ When you hit timeouts with gRPC in Istio, the symptoms can be confusing. Here ar
 
 ```bash
 # Check the response headers for timeout info
+
 kubectl exec -it <client-pod> -c istio-proxy -- \
   pilot-agent request GET stats | grep "upstream_rq_timeout"
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, Lease Duration, IP Addressing, sysadmin
+Tags: DHCP, Networking, Lease Duration, IP Addressing, Sysadmin
 
 Description: DHCP lease duration determines how long a client holds an IP address before renewing, with shorter leases freeing addresses faster and longer leases reducing network traffic and renewal overhead.
 
@@ -23,14 +23,15 @@ The lease duration (or lease time) is the period for which a DHCP server grants 
 
 ## ISC dhcpd Configuration
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # Global defaults (used if scope doesn't override)
+
 default-lease-time 86400;    # 24 hours in seconds
 max-lease-time 604800;       # 7 days maximum (client can request up to this)
 
-# Office LAN — 24 hour leases
+# Office LAN - 24 hour leases
 subnet 192.168.1.0 netmask 255.255.255.0 {
     range 192.168.1.100 192.168.1.200;
     option routers 192.168.1.1;
@@ -38,7 +39,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
     max-lease-time 604800;
 }
 
-# Guest WiFi — 30 minute leases
+# Guest WiFi - 30 minute leases
 subnet 192.168.99.0 netmask 255.255.255.0 {
     range 192.168.99.10 192.168.99.250;
     option routers 192.168.99.1;
@@ -49,7 +50,7 @@ subnet 192.168.99.0 netmask 255.255.255.0 {
 
 ## dnsmasq Configuration
 
-```
+```text
 # 24 hours for office VLAN
 dhcp-range=10.0.10.50,10.0.10.200,255.255.255.0,24h
 

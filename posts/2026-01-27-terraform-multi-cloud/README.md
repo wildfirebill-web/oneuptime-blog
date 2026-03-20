@@ -63,6 +63,7 @@ The foundation of multi-cloud Terraform is proper provider configuration. Each c
 
 ```hcl
 # versions.tf - Pin provider versions for reproducibility
+
 terraform {
   required_version = ">= 1.5.0"
 

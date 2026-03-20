@@ -92,6 +92,7 @@ For a typical self-service setup:
 
 ```bash
 # Create a BigQuery dataset for reporting views
+
 bq mk --dataset --description="Views for Looker Studio reporting" \
   my-project:reporting
 

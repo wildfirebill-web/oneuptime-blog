@@ -48,6 +48,7 @@ Before starting the upgrade, complete this checklist.
 
 ```bash
 # Record current ArgoCD version
+
 kubectl -n argocd exec deployment/argocd-server -- argocd version
 
 # Export current configuration

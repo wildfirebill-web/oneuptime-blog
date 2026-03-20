@@ -30,6 +30,7 @@ By default, data access logs are disabled to reduce log volume and cost. Enable 
 
 ```bash
 # Get the current audit log configuration
+
 gcloud projects get-iam-policy my-project-id \
     --format=json > /tmp/policy.json
 ```

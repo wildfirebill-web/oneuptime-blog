@@ -14,6 +14,7 @@ First, configure SNMP access on the BIG-IP device:
 
 ```bash
 # Using tmsh
+
 tmsh modify sys snmp allowed-addresses add { 10.0.0.0/24 }
 tmsh modify sys snmp communities add { otel_community { community-name "otel_read" access ro } }
 tmsh save sys config

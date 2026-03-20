@@ -308,6 +308,7 @@ Run the linter in your CI pipeline to enforce rules on every pull request:
 
 ```yaml
 # .github/workflows/bicep-lint.yml
+
 name: Bicep Lint
 
 on:

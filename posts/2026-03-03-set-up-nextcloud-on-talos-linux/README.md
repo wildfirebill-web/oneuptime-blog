@@ -30,6 +30,7 @@ While Nextcloud supports SQLite and MySQL, PostgreSQL is recommended for product
 
 ```yaml
 # nextcloud-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

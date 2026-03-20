@@ -8,12 +8,13 @@ Description: Use SSH ProxyJump (-J flag and ProxyJump directive) to connect to i
 
 ## Introduction
 
-`ProxyJump` (introduced in OpenSSH 7.3) is the modern, clean way to connect through SSH jump hosts. It establishes an SSH connection to the jump host and then creates a second SSH connection through it—using a single command and a single key authentication step.
+`ProxyJump` (introduced in OpenSSH 7.3) is the modern, clean way to connect through SSH jump hosts. It establishes an SSH connection to the jump host and then creates a second SSH connection through it-using a single command and a single key authentication step.
 
 ## Basic ProxyJump Usage
 
 ```bash
 # -J flag: specify jump host(s)
+
 # Connect to 10.0.0.10 via bastion at 203.0.113.10
 ssh -J user@203.0.113.10 admin@10.0.0.10
 

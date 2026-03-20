@@ -40,6 +40,7 @@ First, install ArgoCD in your cluster. This creates the ArgoCD namespace and dep
 
 ```bash
 # Create namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD

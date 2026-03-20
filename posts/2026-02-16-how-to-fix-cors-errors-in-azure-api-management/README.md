@@ -187,6 +187,7 @@ APIM has a built-in tracing feature that shows you exactly how policies are eval
 
 ```bash
 # Send a request with tracing enabled
+
 # The trace URL will be in the Ocp-Apim-Trace-Location response header
 curl -v -X OPTIONS \
   -H "Origin: https://myapp.com" \

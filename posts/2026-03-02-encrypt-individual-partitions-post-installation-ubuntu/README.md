@@ -46,6 +46,7 @@ This is the simplest case - a partition that is not mounted as root, home, or an
 
 ```bash
 # Example: backup /dev/sdb1 data to an external drive
+
 sudo rsync -av /mnt/data/ /backup/data-backup/
 
 # Or use tar

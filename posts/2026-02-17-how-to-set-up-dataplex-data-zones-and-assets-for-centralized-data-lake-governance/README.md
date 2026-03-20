@@ -36,6 +36,7 @@ Start by enabling the API and creating your first lake:
 
 ```bash
 # Enable the Dataplex API
+
 gcloud services enable dataplex.googleapis.com
 
 # Create a lake for your analytics domain

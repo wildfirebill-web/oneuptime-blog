@@ -32,6 +32,7 @@ This guide covers the setup of Prometheus-based alerting, Kubernetes event watch
 
 ```bash
 # Check current restart counts
+
 kubectl get pods -n kube-system -l k8s-app=calico-node \
   -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.containerStatuses[0].restartCount}{"\n"}{end}'
 

@@ -36,7 +36,7 @@ graph TD
 
 Using the format `FSZZ` (Function-Site-Zone-Zone):
 
-```
+```text
 Prefix: 2001:db8:corp::/48
 
 Bits 49-52 (first nibble): Region/Type
@@ -62,7 +62,7 @@ Bits 61-64 (fourth nibble): VLAN within zone
 
 ## Example Address Plan
 
-```
+```text
 HQ (Region 0, Site 0):
   2001:db8:corp:0010::/64  → HQ User LAN (VLAN 0)
   2001:db8:corp:0011::/64  → HQ User LAN (VLAN 1)
@@ -95,6 +95,7 @@ With this scheme, you can summarize entire regions:
 
 ```bash
 # HQ: all subnets summarize to
+
 2001:db8:corp::/52   (covers :0000: to :0fff:)
 
 # Branch NA (Region 1): all branches summarize to

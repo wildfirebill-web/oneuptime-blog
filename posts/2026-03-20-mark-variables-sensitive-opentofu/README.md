@@ -15,7 +15,7 @@ The `sensitive = true` attribute on an input variable tells OpenTofu to redact i
 ## Marking a Variable as Sensitive
 
 ```hcl
-# variables.tf — sensitive variables
+# variables.tf - sensitive variables
 
 variable "database_password" {
   type        = string
@@ -40,14 +40,14 @@ variable "jwt_secret" {
 ## Effect on Plan Output
 
 Without `sensitive = true`:
-```
+```hcl
   + resource "aws_db_instance" "main" {
       + password = "my-secret-password-123"  # visible!
     }
 ```
 
 With `sensitive = true`:
-```
+```hcl
   + resource "aws_db_instance" "main" {
       + password = (sensitive value)  # redacted
     }
@@ -78,6 +78,7 @@ Important: `sensitive = true` only affects **display**. The actual value is stil
 
 ```bash
 # The value IS in the state file (base64 or plain text depending on backend)
+
 # Always use a remote backend with encryption for sensitive state
 tofu state show aws_db_instance.main
 # password = (sensitive value)  ← shown redacted in CLI output
@@ -132,4 +133,4 @@ tofu apply -var-file="secrets.tfvars"
 
 ## Summary
 
-Mark variables as `sensitive = true` to prevent values from appearing in terminal output and CI/CD logs. The sensitive marking propagates to any output or resource attribute that uses the variable. Remember: sensitive variables still appear in plaintext in the state file — always use an encrypted remote state backend. For passing sensitive values, prefer `TF_VAR_` environment variables over `-var` flags to keep values out of shell history.
+Mark variables as `sensitive = true` to prevent values from appearing in terminal output and CI/CD logs. The sensitive marking propagates to any output or resource attribute that uses the variable. Remember: sensitive variables still appear in plaintext in the state file - always use an encrypted remote state backend. For passing sensitive values, prefer `TF_VAR_` environment variables over `-var` flags to keep values out of shell history.

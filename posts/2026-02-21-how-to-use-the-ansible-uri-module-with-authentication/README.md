@@ -18,6 +18,7 @@ Basic auth sends a username and password encoded in Base64 with each request. Th
 
 ```yaml
 # authenticate with HTTP Basic Auth
+
 ---
 - name: Basic auth example
   hosts: localhost

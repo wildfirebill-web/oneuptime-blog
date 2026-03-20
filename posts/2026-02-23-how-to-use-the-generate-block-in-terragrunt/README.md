@@ -20,6 +20,7 @@ Here is the simplest example:
 # terragrunt.hcl
 
 # Generate a provider configuration file
+
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite_terragrunt"

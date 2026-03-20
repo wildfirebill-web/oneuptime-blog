@@ -40,6 +40,7 @@ The most basic cause is simply not being authenticated.
 
 ```bash
 # Check your current login status
+
 az account show
 
 # If you see an error, log in again

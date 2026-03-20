@@ -55,6 +55,7 @@ Reload the zone:
 
 ```bash
 # Reload BIND configuration
+
 sudo rndc reload example.com
 ```
 

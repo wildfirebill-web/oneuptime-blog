@@ -8,7 +8,7 @@ Description: Deploy a complete monitoring stack with Prometheus, Grafana, and No
 
 ## Introduction
 
-A monitoring stack gives you real-time visibility into your infrastructure's health — CPU, memory, disk, network, and container metrics. This guide deploys the industry-standard Prometheus + Grafana stack, along with Node Exporter for host metrics and cAdvisor for container metrics, all managed through Portainer.
+A monitoring stack gives you real-time visibility into your infrastructure's health - CPU, memory, disk, network, and container metrics. This guide deploys the industry-standard Prometheus + Grafana stack, along with Node Exporter for host metrics and cAdvisor for container metrics, all managed through Portainer.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ A monitoring stack gives you real-time visibility into your infrastructure's hea
 
 ```yaml
 # docker-compose.yml - Complete Monitoring Stack
+
 version: "3.8"
 
 networks:
@@ -268,7 +269,7 @@ Import popular community dashboards:
 1. Go to Grafana > **Dashboards** > **Import**
 2. Enter dashboard ID from grafana.com
 
-```
+```bash
 Dashboard IDs to import:
 - 1860  → Node Exporter Full (host metrics)
 - 14282 → Portainer Metrics

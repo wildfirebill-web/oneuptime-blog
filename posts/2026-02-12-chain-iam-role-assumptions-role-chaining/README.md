@@ -41,6 +41,7 @@ Here's how to chain roles from the CLI:
 
 ```bash
 # Step 1: Assume the first role (hub role)
+
 FIRST_ROLE=$(aws sts assume-role \
   --role-arn arn:aws:iam::222222222222:role/HubRole \
   --role-session-name first-hop \

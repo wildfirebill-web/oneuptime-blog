@@ -54,6 +54,7 @@ Choose a time that minimizes impact.
 
 ```bash
 # Check when syncs are most active
+
 # Query Prometheus for sync activity by hour
 # This helps identify low-activity periods
 

@@ -53,6 +53,7 @@ Start with the default variables:
 
 ```yaml
 # roles/nginx_proxy/defaults/main.yml
+
 # Default variables for the nginx_proxy role
 ---
 nginx_proxy_listen_port: 80

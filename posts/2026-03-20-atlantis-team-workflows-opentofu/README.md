@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Atlantis, Pull Requests, GitOps, Team Workflow, Infrastructure as Code
+Tags: OpenTofu, Atlantis, Pull Requests, GitOps, Team Workflows, Infrastructure as Code
 
 Description: Learn how to set up Atlantis to automate OpenTofu plan and apply workflows directly from GitHub pull request comments, enabling GitOps for infrastructure with audit trails and approval gates.
 
@@ -30,7 +30,8 @@ sequenceDiagram
 ## Atlantis Configuration
 
 ```yaml
-# atlantis.yaml — project configuration
+# atlantis.yaml - project configuration
+
 version: 3
 automerge: true
 delete_source_branch_on_merge: true
@@ -167,6 +168,6 @@ resource "github_repository_webhook" "atlantis" {
 
 - Set `apply_requirements: [approved, mergeable]` in `atlantis.yaml` to prevent applies without PR approval and passing CI.
 - Use `autoplan: enabled: true` with `when_modified` patterns so Atlantis plans automatically when relevant files change.
-- Deploy Atlantis with persistent storage — it stores plan files between plan and apply operations.
+- Deploy Atlantis with persistent storage - it stores plan files between plan and apply operations.
 - Use separate webhook secrets per repository for security; rotate them like any credential.
 - Enable `automerge: true` for non-production environments to streamline low-risk changes.

@@ -114,7 +114,7 @@ db.createUser({
 
 Your application connection string uses all three hosts for automatic failover:
 
-```
+```text
 mongodb://admin:adminpassword@mongo1:27017,mongo2:27017,mongo3:27017/appdb?replicaSet=rs0&authSource=admin
 ```
 
@@ -136,7 +136,7 @@ If your application container is in the same stack, no port exposure is needed. 
 
 Use the external connection string with all three ports:
 
-```
+```text
 mongodb://admin:password@HOST:27017,HOST:27018,HOST:27019/appdb?replicaSet=rs0
 ```
 
@@ -146,6 +146,7 @@ Simulate a primary failure and confirm automatic election:
 
 ```bash
 # Stop the primary node
+
 docker stop $(docker ps -qf name=mongo1)
 
 # Within ~10 seconds, check which node became primary

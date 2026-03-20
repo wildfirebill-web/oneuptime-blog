@@ -16,6 +16,7 @@ The change is structural in the Application spec:
 
 ```yaml
 # Single-source (before)
+
 spec:
   source:
     repoURL: https://github.com/your-org/k8s-manifests.git

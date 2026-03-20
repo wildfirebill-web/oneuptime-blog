@@ -18,6 +18,7 @@ If your database is currently out of space, the fastest fix is to increase the a
 
 ```bash
 # Increase storage immediately (no downtime required)
+
 aws rds modify-db-instance \
   --db-instance-identifier my-database \
   --allocated-storage 200 \

@@ -128,4 +128,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure Batch enables large-scale parallel workloads without managing cluster infrastructure. OpenTofu provisions Batch accounts, pools with auto-scaling formulas, and application packages — giving you a fully automated, reproducible HPC platform.
+Azure Batch enables large-scale parallel workloads without managing cluster infrastructure. OpenTofu provisions Batch accounts, pools with auto-scaling formulas, and application packages - giving you a fully automated, reproducible HPC platform.

@@ -18,6 +18,7 @@ In rootless Podman, containers run in a separate user and network namespace. Ser
 
 ```bash
 # A service running on host localhost
+
 # Example: Node.js dev server on http://127.0.0.1:3000
 
 # By default, rootless containers cannot reach host localhost

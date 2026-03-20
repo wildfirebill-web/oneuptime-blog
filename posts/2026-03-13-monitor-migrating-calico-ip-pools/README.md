@@ -32,6 +32,7 @@ Add the new IP pool alongside the existing pool:
 
 ```yaml
 # new-ip-pool.yaml - target IP pool for migration
+
 apiVersion: projectcalico.org/v3
 kind: IPPool
 metadata:

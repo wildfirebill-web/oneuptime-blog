@@ -41,6 +41,7 @@ Create connections at two separate locations:
 
 ```bash
 # Connection at first Direct Connect location
+
 aws directconnect create-connection \
   --location EqDC2 \
   --bandwidth "1Gbps" \

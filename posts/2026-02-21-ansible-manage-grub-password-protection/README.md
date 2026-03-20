@@ -39,6 +39,7 @@ flowchart TD
 
 ```yaml
 # configure-grub-password.yml - Set GRUB bootloader password
+
 ---
 - name: Configure GRUB password protection
   hosts: all

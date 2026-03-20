@@ -33,6 +33,7 @@ First, add the sudo schema to your LDAP server. On an OpenLDAP server:
 
 ```bash
 # Download the sudo schema if not already present
+
 sudo cp /usr/share/doc/sudo/schema.OpenLDAP /etc/openldap/schema/sudo.schema
 
 # Convert to LDIF format and add to the server

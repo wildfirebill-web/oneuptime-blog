@@ -85,6 +85,7 @@ Anomaly alerts are currently available at the subscription level. Management gro
 
 ```bash
 # Create a scheduled action for anomaly alerting
+
 az costmanagement scheduled-action create \
   --name "daily-anomaly-alert" \
   --display-name "Daily Cost Anomaly Alert" \

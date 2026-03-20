@@ -18,6 +18,7 @@ Here is what a typical lock file entry looks like:
 
 ```hcl
 # .terraform.lock.hcl
+
 provider "registry.terraform.io/hashicorp/aws" {
   version     = "5.82.2"
   constraints = ">= 5.0.0"

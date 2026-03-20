@@ -19,6 +19,7 @@ When you run a `terraform import` command, you might see something like this:
 ```bash
 $ terraform import aws_instance.my_server i-0abc123def456789
 # Error: Cannot import non-existent remote object
+
 #
 # While attempting to import an existing object to
 # "aws_instance.my_server", the provider detected that no object

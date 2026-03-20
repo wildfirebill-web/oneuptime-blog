@@ -91,6 +91,7 @@ def get_costs_by_service(start_date, end_date):
     print(f"{'Total':<50} ${total:>9.2f}")
 
 # Current month
+
 now = datetime.utcnow()
 start = now.replace(day=1).strftime("%Y-%m-%d")
 end = now.strftime("%Y-%m-%d")

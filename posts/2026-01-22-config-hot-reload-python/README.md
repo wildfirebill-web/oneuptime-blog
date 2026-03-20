@@ -48,6 +48,7 @@ Let's start with the foundational classes for our config system.
 
 ```python
 # config_core.py
+
 # Core configuration system with type safety
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional, Callable, List, TypeVar, Generic

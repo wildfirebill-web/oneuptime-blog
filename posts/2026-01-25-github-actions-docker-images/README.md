@@ -16,6 +16,7 @@ Start with a simple workflow that builds and pushes an image:
 
 ```yaml
 # .github/workflows/docker.yml
+
 name: Docker Build
 
 on:

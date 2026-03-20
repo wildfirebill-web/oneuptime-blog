@@ -19,7 +19,7 @@ NAT worked, but it came with costs: broken protocols, complex firewalls, VPN com
 
 IPv6 has approximately 340 undecillion addresses (3.4 × 10^38). To put this in perspective:
 
-```
+```text
 IPv4:  ~4.3 billion (4.3 × 10^9) addresses
 IPv6:  ~340 undecillion (3.4 × 10^38) addresses
 
@@ -29,25 +29,25 @@ You could give every grain of sand on Earth its own IPv6 address
 (and have trillions of addresses to spare)
 ```
 
-With this many addresses, every device in the world — and trillions more — can have a unique, globally routable address. No NAT needed.
+With this many addresses, every device in the world - and trillions more - can have a unique, globally routable address. No NAT needed.
 
 ## What Your Home Network Looks Like with IPv6
 
 With IPv4 + NAT:
-```
+```text
 Internet ← 203.0.113.45 → [Router/NAT] → 192.168.1.0/24 (private)
                                              └─ 192.168.1.100 (your laptop)
                                              └─ 192.168.1.101 (your phone)
 ```
 
 With IPv6:
-```
+```text
 Internet ← 2001:db8:home::/56 → [Router] → 2001:db8:home:1::/64
                                                └─ 2001:db8:home:1::a1b2:c3d4 (laptop)
                                                └─ 2001:db8:home:1::e5f6:7890 (phone)
 ```
 
-Your laptop and phone are directly reachable from the internet — no translation layer.
+Your laptop and phone are directly reachable from the internet - no translation layer.
 
 ## Does This Mean Home Devices Are Exposed?
 
@@ -56,7 +56,7 @@ Not if the router firewall is configured correctly. The router still provides a 
 - **IPv4 NAT**: Provides security "accidentally" (no inbound unless explicitly forwarded)
 - **IPv6 Firewall**: Provides security deliberately (explicit block-all-inbound rule)
 
-The end result for security is the same — no unsolicited inbound access. But IPv6 does it through an explicit stateful firewall rather than translation.
+The end result for security is the same - no unsolicited inbound access. But IPv6 does it through an explicit stateful firewall rather than translation.
 
 ## The Benefits of No NAT
 
@@ -78,14 +78,15 @@ IPv6 addresses expose which ISP you use and potentially your rough location (fro
 
 ```bash
 # Check if privacy extensions are enabled on Linux
+
 sysctl net.ipv6.conf.eth0.use_tempaddr
 # 2 = enabled, use temporary addresses for outbound
 ```
 
-## NAT66 (IPv6 NAT) — Available But Discouraged
+## NAT66 (IPv6 NAT) - Available But Discouraged
 
 NAT66 exists (IPv6-to-IPv6 NAT) but is actively discouraged by the IETF (RFC 5902). It adds complexity without the address-saving benefit that motivated NAT in IPv4. Use proper firewall rules instead.
 
 ## Conclusion
 
-IPv6's vast address space makes NAT unnecessary. Every device gets a globally unique address, end-to-end connectivity is restored, and security is maintained through explicit firewall rules. The apparent complexity of home devices being "directly on the internet" is fully managed by your router's stateful IPv6 firewall — just as effective as NAT, but architecturally cleaner.
+IPv6's vast address space makes NAT unnecessary. Every device gets a globally unique address, end-to-end connectivity is restored, and security is maintained through explicit firewall rules. The apparent complexity of home devices being "directly on the internet" is fully managed by your router's stateful IPv6 firewall - just as effective as NAT, but architecturally cleaner.

@@ -279,6 +279,7 @@ Integrate this pattern into your deployment pipeline:
 
 ```yaml
 # .gitlab-ci.yml example
+
 deploy:
   stage: deploy
   script:

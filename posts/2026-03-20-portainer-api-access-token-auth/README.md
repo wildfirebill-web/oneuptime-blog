@@ -1,4 +1,4 @@
-# How to Authenticate with the Portainer API Using Access Tokens
+# How to Authenticate with the Portainer API Using Access Tokens - Token Auth
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create and use Portainer API access tokens for long-li
 
 ## Introduction
 
-While JWT tokens are the primary authentication method for interactive sessions, Portainer also supports **API access tokens** — long-lived, non-expiring tokens that are ideal for CI/CD pipelines, automation scripts, and service integrations. Unlike JWTs, access tokens do not expire automatically and can be revoked individually without affecting other sessions.
+While JWT tokens are the primary authentication method for interactive sessions, Portainer also supports **API access tokens** - long-lived, non-expiring tokens that are ideal for CI/CD pipelines, automation scripts, and service integrations. Unlike JWTs, access tokens do not expire automatically and can be revoked individually without affecting other sessions.
 
 ## Prerequisites
 
@@ -44,6 +44,7 @@ While JWT tokens are the primary authentication method for interactive sessions,
 
 ```bash
 # Step 1: Get a JWT first
+
 TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r '.jwt')

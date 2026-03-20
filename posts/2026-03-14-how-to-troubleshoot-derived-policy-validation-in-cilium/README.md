@@ -21,6 +21,7 @@ Derived policy issues occur when the effective policy on an endpoint does not ma
 
 ```bash
 # Check the derived policy on a specific endpoint
+
 cilium endpoint get <endpoint-id> -o json | \
   jq '.status.policy.realized'
 

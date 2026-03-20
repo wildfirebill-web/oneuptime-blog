@@ -35,6 +35,7 @@ Each node needs a configuration file that enables cluster mode.
 
 ```bash
 # Create the project structure
+
 mkdir -p redis-cluster
 ```
 

@@ -31,6 +31,7 @@ These commands create stage variables for different environments:
 
 ```bash
 # Set the Lambda function alias for the prod stage
+
 aws apigateway update-stage \
   --rest-api-id a1b2c3d4e5 \
   --stage-name prod \

@@ -37,6 +37,7 @@ Filestore offers several tiers with different performance characteristics:
 
 ```bash
 # Install the GCP collection
+
 ansible-galaxy collection install google.cloud
 
 # Enable the Filestore API

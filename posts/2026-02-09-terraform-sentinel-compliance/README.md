@@ -46,6 +46,7 @@ Ensure all containers have resource requests and limits defined:
 
 ```sentinel
 # require-resource-limits.sentinel
+
 import "tfplan/v2" as tfplan
 
 # Find all Kubernetes deployment resources

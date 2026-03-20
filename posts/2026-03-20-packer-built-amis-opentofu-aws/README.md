@@ -8,12 +8,13 @@ Description: Learn how to use Packer to build custom AMIs and reference them in 
 
 ## Introduction
 
-Packer builds machine images with all software pre-installed and configured. OpenTofu then uses those images to launch instances — no configuration management at instance launch time, just a pre-baked image that starts quickly and consistently. This immutable infrastructure pattern reduces deployment time and eliminates configuration drift.
+Packer builds machine images with all software pre-installed and configured. OpenTofu then uses those images to launch instances - no configuration management at instance launch time, just a pre-baked image that starts quickly and consistently. This immutable infrastructure pattern reduces deployment time and eliminates configuration drift.
 
 ## Packer Template for Custom AMI
 
 ```hcl
 # packer/web-server.pkr.hcl
+
 packer {
   required_plugins {
     amazon = {

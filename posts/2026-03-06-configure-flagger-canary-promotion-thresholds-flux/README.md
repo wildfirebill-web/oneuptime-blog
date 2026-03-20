@@ -38,6 +38,7 @@ First, add Flagger to your Flux configuration using a HelmRelease.
 
 ```yaml
 # flagger/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -252,6 +252,7 @@ Here are the commands you'll use most often:
 
 ```bash
 # Build everything from the parent directory
+
 mvn clean install
 
 # Build only the service module and its dependencies

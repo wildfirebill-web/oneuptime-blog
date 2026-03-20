@@ -186,6 +186,7 @@ Java can be configured to prefer IPv6 stack via system properties:
 
 ```bash
 # Prefer IPv6 stack for Java applications
+
 java -Djava.net.preferIPv6Addresses=true -jar app.jar
 
 # Or in code

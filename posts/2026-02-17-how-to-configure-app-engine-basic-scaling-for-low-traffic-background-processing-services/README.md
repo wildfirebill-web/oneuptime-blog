@@ -34,6 +34,7 @@ Here is the core `app.yaml` configuration:
 
 ```yaml
 # app.yaml - Background processing service with basic scaling
+
 runtime: python312
 service: worker
 

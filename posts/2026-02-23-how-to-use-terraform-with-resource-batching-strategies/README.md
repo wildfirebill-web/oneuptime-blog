@@ -52,6 +52,7 @@ Each batch is applied in order, and later batches reference earlier ones via rem
 
 ```hcl
 # batch-02-security/main.tf
+
 data "terraform_remote_state" "foundation" {
   backend = "s3"
   config = {

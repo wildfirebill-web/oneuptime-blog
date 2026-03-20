@@ -1,8 +1,8 @@
-# How to Configure the S3 Backend in OpenTofu
+# How to Configure the S3 Backend in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS
 
 Description: Learn how to configure the S3 backend in OpenTofu to store state in Amazon S3 with optional DynamoDB locking and encryption.
 
@@ -14,6 +14,7 @@ The S3 backend is the most popular remote backend for AWS users. It stores state
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket = "my-tofu-state"

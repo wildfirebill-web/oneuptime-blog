@@ -25,6 +25,7 @@ This guide covers installing Calico on a kubeadm Kubernetes cluster on GCE, usin
 
 ```bash
 # Set your project and cluster network variables
+
 PROJECT_ID="my-gcp-project"
 CLUSTER_NETWORK="default"
 CLUSTER_TAG="k8s-node"

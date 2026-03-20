@@ -20,6 +20,7 @@ tfsec is one of the most popular Terraform security scanners. It has been integr
 
 ```bash
 # Install tfsec
+
 brew install tfsec
 
 # Or install Trivy (which includes tfsec functionality)

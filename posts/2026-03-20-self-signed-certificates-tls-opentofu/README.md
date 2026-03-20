@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, TLS, Certificates, Self-Signed, PKI, Internal, Infrastructure as Code
+Tags: OpenTofu, TLS, Certificates, Self-Signed, PKI, Internals, Infrastructure as Code
 
 Description: Learn how to generate self-signed TLS certificates and private keys using OpenTofu's TLS provider for internal services, development environments, and bootstrapping private PKI infrastructure.
 
 ---
 
-Self-signed certificates are appropriate for internal services, development environments, and bootstrapping private PKI. OpenTofu's `tls` provider generates private keys, CSRs, and certificates as code — keeping certificate management reproducible and auditable.
+Self-signed certificates are appropriate for internal services, development environments, and bootstrapping private PKI. OpenTofu's `tls` provider generates private keys, CSRs, and certificates as code - keeping certificate management reproducible and auditable.
 
 ## Certificate Generation Flow
 
@@ -23,6 +23,7 @@ graph LR
 
 ```hcl
 # tls.tf
+
 terraform {
   required_providers {
     tls = {
@@ -206,8 +207,8 @@ resource "kubernetes_ingress_v1" "app" {
 
 ## Best Practices
 
-- Store private keys in AWS Secrets Manager or HashiCorp Vault — never in state files without encryption. Use `sensitive = true` on outputs containing key material.
+- Store private keys in AWS Secrets Manager or HashiCorp Vault - never in state files without encryption. Use `sensitive = true` on outputs containing key material.
 - Use a private CA (`tls_locally_signed_cert`) rather than individual self-signed certs so you can trust a single CA root across all internal services instead of trusting each certificate individually.
-- Set `validity_period_hours` to 8760 (1 year) for service certs and 87600 (10 years) for CA certs — then plan for annual rotation.
-- For production internal services, prefer AWS Private CA (`aws_acmpca_certificate_authority`) over self-signed certificates — it integrates with ACM for automated renewal.
+- Set `validity_period_hours` to 8760 (1 year) for service certs and 87600 (10 years) for CA certs - then plan for annual rotation.
+- For production internal services, prefer AWS Private CA (`aws_acmpca_certificate_authority`) over self-signed certificates - it integrates with ACM for automated renewal.
 - Mark all outputs containing private key material as `sensitive = true` to prevent accidental exposure in CI logs.

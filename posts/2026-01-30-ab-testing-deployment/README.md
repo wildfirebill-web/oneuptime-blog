@@ -54,6 +54,7 @@ Create two separate deployments for your control and experiment versions. The ke
 
 ```yaml
 # deployment-v1.yaml - Control version (Version A)
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

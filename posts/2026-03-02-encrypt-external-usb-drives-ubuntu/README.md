@@ -16,6 +16,7 @@ Before doing anything destructive, make sure you are targeting the right device:
 
 ```bash
 # List block devices before plugging in the USB
+
 lsblk
 
 # Plug in the USB drive, then run again

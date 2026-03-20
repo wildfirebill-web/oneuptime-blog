@@ -18,6 +18,7 @@ The simplest case is creating a single directory:
 
 ```yaml
 # Create a single directory on the remote host
+
 - name: Create the application directory
   ansible.builtin.file:
     path: /opt/myapp

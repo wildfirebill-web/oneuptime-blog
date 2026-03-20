@@ -14,6 +14,7 @@ MinIO provides S3-compatible object storage that you can run on your own hardwar
 
 ```yaml
 # roles/minio/defaults/main.yml - MinIO configuration
+
 minio_version: "RELEASE.2024-01-16T16-07-38Z"
 minio_domain: s3.example.internal
 minio_console_port: 9001

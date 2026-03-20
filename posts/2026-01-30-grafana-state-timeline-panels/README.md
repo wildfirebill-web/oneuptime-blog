@@ -50,6 +50,7 @@ Here is a basic PromQL query that converts a numeric gauge into states:
 
 ```promql
 # Convert response time to state categories
+
 label_replace(
   label_replace(
     label_replace(

@@ -77,6 +77,7 @@ tofu plan
 tofu apply
 
 # Query using LSI - get user activities sorted by timestamp
+
 aws dynamodb query \
   --table-name <table-name> \
   --index-name UserActivityByTime \
@@ -88,4 +89,4 @@ aws dynamodb query \
 
 ## Conclusion
 
-LSIs must be defined at table creation—unlike GSIs they cannot be added afterward, making schema design more critical upfront. LSIs are strongly consistent because they co-locate with the base table partition, making them preferable over GSIs when strong consistency is required. The 10 GB item collection limit per partition key applies to the total size of all items across the table and all its LSIs with that partition key—monitor item collection sizes to avoid `ItemCollectionSizeLimitExceededException` errors.
+LSIs must be defined at table creation-unlike GSIs they cannot be added afterward, making schema design more critical upfront. LSIs are strongly consistent because they co-locate with the base table partition, making them preferable over GSIs when strong consistency is required. The 10 GB item collection limit per partition key applies to the total size of all items across the table and all its LSIs with that partition key-monitor item collection sizes to avoid `ItemCollectionSizeLimitExceededException` errors.

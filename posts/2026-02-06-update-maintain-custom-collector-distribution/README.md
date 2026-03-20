@@ -37,6 +37,7 @@ Every component in your manifest must be compatible with the collector version y
 
 ```yaml
 # manifest.yaml - All versions must align
+
 dist:
   otelcol_version: "0.96.0"
 

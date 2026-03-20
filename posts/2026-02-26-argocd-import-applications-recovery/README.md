@@ -31,6 +31,7 @@ The simplest approach for a full restore:
 
 ```bash
 # Import from a backup created with argocd admin export
+
 argocd admin import -n argocd < argocd-backup.yaml
 ```
 

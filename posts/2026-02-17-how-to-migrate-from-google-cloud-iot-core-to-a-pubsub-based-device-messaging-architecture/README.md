@@ -59,6 +59,7 @@ from google.cloud import firestore
 import json
 
 # Initialize clients
+
 iot_client = iot_v1.DeviceManagerClient()
 db = firestore.Client()
 

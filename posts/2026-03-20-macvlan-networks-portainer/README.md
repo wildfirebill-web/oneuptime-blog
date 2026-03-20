@@ -8,7 +8,7 @@ Description: Configure Macvlan networks to give containers their own MAC and IP 
 
 ## Introduction
 
-Macvlan networks assign each container its own MAC address and IP address on your physical LAN. This makes containers appear as physical devices on your network — useful for IoT applications, legacy systems that require direct LAN access, or services that need to be reachable on specific IP addresses. This guide covers configuring Macvlan via Portainer.
+Macvlan networks assign each container its own MAC address and IP address on your physical LAN. This makes containers appear as physical devices on your network - useful for IoT applications, legacy systems that require direct LAN access, or services that need to be reachable on specific IP addresses. This guide covers configuring Macvlan via Portainer.
 
 ## When to Use Macvlan
 
@@ -23,6 +23,7 @@ Use Macvlan when you need:
 
 ```bash
 # Check if your network interface supports promiscuous mode
+
 ip link show eth0
 
 # Enable promiscuous mode (required for Macvlan)

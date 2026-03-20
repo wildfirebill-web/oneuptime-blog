@@ -45,6 +45,7 @@ Create the Dex configuration:
 
 ```yaml
 # dex-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

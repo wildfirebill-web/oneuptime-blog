@@ -347,6 +347,7 @@ FROM dates_raw;
 
 ```python
 # bulk_import.py
+
 # Efficient bulk import using COPY with psycopg2
 import psycopg2
 from io import StringIO

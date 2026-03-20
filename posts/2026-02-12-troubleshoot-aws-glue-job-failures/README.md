@@ -93,6 +93,7 @@ glueContext = GlueContext(sc)
 spark = glueContext.spark_session
 
 # Bad: Reading everything into memory at once
+
 # df = spark.read.parquet("s3://bucket/huge-dataset/")
 # df.collect()  # This will blow up memory
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, kube-apiserver, Configuration, Security, DevOps
+Tags: K3s, Kubernetes, Kube-apiserver, Configuration, Security, DevOps
 
 Description: Learn how to pass custom kube-apiserver flags in K3s to enable advanced features, security hardening, and compliance configurations.
 
@@ -18,6 +18,7 @@ K3s accepts kube-apiserver flags through two methods:
 
 ```yaml
 # /etc/rancher/k3s/config.yaml
+
 kube-apiserver-arg:
   - "flag-name=value"
   - "another-flag=another-value"

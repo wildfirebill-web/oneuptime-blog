@@ -31,6 +31,7 @@ Rails ships with an API-only mode that strips out middleware you do not need for
 
 ```bash
 # Create a new Rails API project
+
 rails new my_api --api --database=postgresql
 
 # Navigate into the project

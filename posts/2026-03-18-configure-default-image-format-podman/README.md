@@ -20,6 +20,7 @@ Podman can build and store images in OCI or Docker format.
 
 ```bash
 # Check the current default image format
+
 podman info --format json | python3 -c "
 import sys, json
 info = json.load(sys.stdin)

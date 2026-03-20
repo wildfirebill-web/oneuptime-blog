@@ -685,6 +685,7 @@ Here is how to test your upload endpoint using curl:
 
 ```bash
 # Single file upload
+
 curl -X POST http://localhost:3000/api/upload/single \
   -F "file=@/path/to/image.jpg"
 

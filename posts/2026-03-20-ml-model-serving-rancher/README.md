@@ -1,8 +1,8 @@
-# How to Deploy ML Model Serving on Rancher
+# How to Deploy ML Model Serving on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, ml, model-serving, kserve, kubernetes
+Tags: Rancher, ML, Model-serving, KServe, Kubernetes
 
 Description: Comprehensive guide to deploying machine learning model serving infrastructure on Rancher using KServe and Triton.
 
@@ -24,6 +24,7 @@ ML model serving is the production component of the ML lifecycle where trained m
 
 ```bash
 # Install Knative Serving first (prerequisite)
+
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.12.0/serving-crds.yaml
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.12.0/serving-core.yaml
 

@@ -30,6 +30,7 @@ Confirm Cilium is configured to use Alibaba Cloud ENI for IPAM.
 
 ```bash
 # Check Cilium ConfigMap for ENI IPAM settings
+
 kubectl get configmap cilium-config -n kube-system -o yaml | \
   grep -E "ipam|eni|alibaba"
 

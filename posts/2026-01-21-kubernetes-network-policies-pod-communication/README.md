@@ -22,6 +22,7 @@ Check your CNI supports Network Policies:
 
 ```bash
 # Check CNI plugin
+
 kubectl get pods -n kube-system | grep -E "calico|cilium|weave"
 ```
 

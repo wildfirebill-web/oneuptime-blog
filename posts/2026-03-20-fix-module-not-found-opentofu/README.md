@@ -1,8 +1,8 @@
-# How to Fix "Error: Module Not Found" in OpenTofu
+# How to Fix 'Error: Module Not Found' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Module, Error, Infrastructure as Code, Debugging
+Tags: OpenTofu, Troubleshooting, Modules, Error, Infrastructure as Code, Debugging
 
 Description: Learn how to diagnose and fix module not found errors in OpenTofu caused by incorrect source paths, missing tofu init, and registry connectivity issues.
 
@@ -12,7 +12,7 @@ Description: Learn how to diagnose and fix module not found errors in OpenTofu c
 
 ## Common Error Messages
 
-```
+```hcl
 Error: Module not installed
   on main.tf line 10, in module "vpc":
   10:   source = "./modules/vpc"
@@ -30,6 +30,7 @@ Most "module not installed" errors require simply running init:
 
 ```bash
 # Download and install all modules
+
 tofu init
 
 # If you added a new module source, init again
@@ -41,7 +42,7 @@ tofu init -upgrade
 Local paths are relative to the module file containing the `source` argument:
 
 ```hcl
-# WRONG — path doesn't match directory structure
+# WRONG - path doesn't match directory structure
 module "vpc" {
   source = "./module/vpc"   # Directory is actually ./modules/vpc
 }
@@ -61,12 +62,12 @@ ls -la ./modules/vpc/
 ## Fix 3: Fix Git Module Source
 
 ```hcl
-# WRONG — tag doesn't exist
+# WRONG - tag doesn't exist
 module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git//modules/vpc?ref=v1.2.0"
 }
 
-# CORRECT — verify the ref exists
+# CORRECT - verify the ref exists
 # Check: git ls-remote https://github.com/my-org/tf-modules.git | grep refs/tags/v1.2.0
 module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git//modules/vpc?ref=v1.3.0"
@@ -84,13 +85,13 @@ tofu init
 ## Fix 4: Fix Registry Module Source
 
 ```hcl
-# WRONG — module namespace/name is incorrect
+# WRONG - module namespace/name is incorrect
 module "vpc" {
   source  = "terraform-aws-modules/aws-vpc/aws"  # Wrong
   version = "5.0"
 }
 
-# CORRECT — format is <namespace>/<module>/<provider>
+# CORRECT - format is <namespace>/<module>/<provider>
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"
@@ -107,12 +108,12 @@ curl -s https://registry.opentofu.org/v1/modules/terraform-aws-modules/vpc/aws/v
 For Git and registry sources that include a subdirectory, use `//` (double slash):
 
 ```hcl
-# WRONG — single slash won't navigate into the subdirectory
+# WRONG - single slash won't navigate into the subdirectory
 module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git/modules/vpc"
 }
 
-# CORRECT — double slash separates repo root from subdirectory path
+# CORRECT - double slash separates repo root from subdirectory path
 module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git//modules/vpc?ref=main"
 }

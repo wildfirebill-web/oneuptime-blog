@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, Virtual Hosts, Server Blocks, Web Server, Tutorial
+Tags: Ubuntu, Nginx, Virtual Hosts, Server Blocks, Web Server, Tutorial
 
 Description: Complete guide to configuring Nginx server blocks on Ubuntu for hosting multiple websites on a single server.
 
@@ -37,6 +37,7 @@ Verify Nginx is installed and running:
 
 ```bash
 # Check Nginx version
+
 nginx -v
 
 # Check Nginx status

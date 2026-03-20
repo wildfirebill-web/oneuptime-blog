@@ -126,6 +126,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.sdk.trace import TracerProvider
 
 # Configure the exporter
+
 exporter = OTLPSpanExporter(
     # The gRPC endpoint
     endpoint="otel-collector.prod.svc.cluster.local:4317",

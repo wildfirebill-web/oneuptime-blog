@@ -472,6 +472,7 @@ Query tenant resource usage:
 
 ```promql
 # CPU usage by tenant
+
 sum(rate(container_cpu_usage_seconds_total{namespace=~"tenant-.*"}[5m])) by (namespace)
 
 # Memory usage by tenant

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, WiFi, Troubleshooting, Network, IP Address
+Tags: DHCP, WiFi, Troubleshooting, Networks, IP Address
 
 Description: Learn how to systematically troubleshoot DHCP failures on WiFi networks, from client-side failures to DHCP server configuration issues.
 
@@ -27,6 +27,7 @@ A failure at any step causes the client to get no IP or an APIPA address (169.25
 
 ```bash
 # Linux: Watch DHCP negotiation
+
 sudo dhclient -v -i wlan0 2>&1 | head -30
 
 # Or with journald

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, backup, automation, business-edition, s3
+Tags: Portainer, Backup, Automation, Business-edition, S3
 
 Description: A guide to scheduling automatic backups in Portainer Business Edition, including S3 configuration, retention policies, and backup verification.
 
@@ -32,6 +32,7 @@ Portainer Business Edition provides:
 
 ```bash
 # Create S3 bucket
+
 aws s3 mb s3://portainer-backups --region us-east-1
 
 # Create IAM policy

@@ -44,6 +44,7 @@ Create the necessary Azure resources before configuring Flux.
 
 ```bash
 # Create a resource group for Front Door
+
 az group create \
   --name rg-frontdoor \
   --location global

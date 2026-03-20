@@ -41,6 +41,7 @@ The kernel block layer sits between the filesystem and the storage driver. When 
 
 ```bash
 # Check scheduler for a specific device
+
 cat /sys/block/sda/queue/scheduler
 
 # Example output: [mq-deadline] kyber bfq none

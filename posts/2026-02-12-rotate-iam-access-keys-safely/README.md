@@ -37,6 +37,7 @@ First, see what keys a user currently has:
 
 ```bash
 # List access keys for a specific IAM user
+
 aws iam list-access-keys --user-name deploy-bot
 ```
 

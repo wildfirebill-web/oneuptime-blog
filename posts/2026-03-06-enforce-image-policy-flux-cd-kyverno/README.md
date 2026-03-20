@@ -25,6 +25,7 @@ This guide shows you how to deploy Kyverno with Flux CD and create comprehensive
 
 ```yaml
 # Recommended directory layout
+
 # clusters/
 #   my-cluster/
 #     kyverno/

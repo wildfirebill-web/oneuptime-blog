@@ -16,6 +16,7 @@ Initialize your Go module and pull in the AWS SDK v2 packages.
 
 ```bash
 # Initialize the module
+
 go mod init github.com/yourorg/dynamodb-api
 
 # Install the AWS SDK v2 modules

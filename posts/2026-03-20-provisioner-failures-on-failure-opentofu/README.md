@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, on_failure, Error Handling, Infrastructure as Code
+Tags: OpenTofu, Provisioners, On_failure, Error Handling, Infrastructure as Code
 
-Description: Learn how to use the `on_failure` argument in OpenTofu provisioners to control what happens when a provisioner command fails—either halting the apply or continuing gracefully.
+Description: Learn how to use the `on_failure` argument in OpenTofu provisioners to control what happens when a provisioner command fails-either halting the apply or continuing gracefully.
 
 ## Introduction
 
@@ -69,7 +69,7 @@ resource "aws_instance" "app" {
     on_failure = continue
 
     inline = [
-      # This might fail if the instance is unresponsive—that's OK
+      # This might fail if the instance is unresponsive-that's OK
       "sudo systemctl stop myapp",
       "sudo /opt/myapp/drain.sh",
     ]
@@ -119,6 +119,7 @@ After a failed apply, check for tainted resources:
 
 ```bash
 # List tainted resources in state
+
 tofu state list | xargs -I{} tofu state show {} | grep -A 5 "tainted"
 
 # Alternatively, use the newer show command

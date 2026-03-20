@@ -20,6 +20,7 @@ This simple example shows a WebSocket echo server that receives messages and sen
 
 ```python
 # websocket_basic.py
+
 # Simple WebSocket echo server
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 

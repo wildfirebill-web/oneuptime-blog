@@ -16,6 +16,7 @@ Ubuntu 24.04 ships with Python 3.12:
 
 ```ini
 # inventory/hosts
+
 [ubuntu24]
 app01 ansible_host=10.0.1.10
 app02 ansible_host=10.0.1.11

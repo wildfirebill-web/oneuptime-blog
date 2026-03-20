@@ -36,6 +36,7 @@ Each stream entry has a unique ID in the format: `<millisecondsTime>-<sequenceNu
 
 ```bash
 # Auto-generated ID
+
 XADD mystream * field value
 # Returns something like: 1234567890123-0
 

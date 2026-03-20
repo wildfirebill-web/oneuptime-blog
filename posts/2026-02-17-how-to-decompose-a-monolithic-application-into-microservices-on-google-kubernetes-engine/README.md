@@ -74,6 +74,7 @@ Set up the routing layer on GKE:
 
 ```yaml
 # Ingress configuration to route traffic between monolith and new services
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

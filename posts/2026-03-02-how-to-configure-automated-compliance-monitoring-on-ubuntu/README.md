@@ -23,6 +23,7 @@ OpenSCAP implements the Security Content Automation Protocol (SCAP) and can eval
 
 ```bash
 # Install OpenSCAP scanner and security content
+
 sudo apt update
 sudo apt install openscap-scanner scap-security-guide -y
 

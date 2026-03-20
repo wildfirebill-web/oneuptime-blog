@@ -18,6 +18,7 @@ Ansible has a `--syntax-check` flag that parses the playbook without executing i
 
 ```bash
 # Check a single playbook
+
 ansible-playbook --syntax-check playbooks/site.yml
 
 # Check with an inventory (catches inventory-related issues)

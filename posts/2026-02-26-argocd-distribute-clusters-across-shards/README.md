@@ -67,6 +67,7 @@ You can also assign shards using the CLI:
 
 ```bash
 # Set shard for a cluster
+
 argocd cluster set https://kubernetes.prod.us.example.com \
   --shard 1
 ```

@@ -14,6 +14,7 @@ Description: Learn how to use dmesg on Ubuntu to read kernel ring buffer message
 
 ```bash
 # Print all kernel messages
+
 dmesg
 
 # Follow new messages in real time (like tail -f)

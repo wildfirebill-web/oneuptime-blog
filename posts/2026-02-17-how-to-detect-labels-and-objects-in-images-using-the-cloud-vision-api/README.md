@@ -28,6 +28,7 @@ Enable the Vision API and install the client library:
 
 ```bash
 # Enable the Vision API in your project
+
 gcloud services enable vision.googleapis.com
 
 # Install the Python client

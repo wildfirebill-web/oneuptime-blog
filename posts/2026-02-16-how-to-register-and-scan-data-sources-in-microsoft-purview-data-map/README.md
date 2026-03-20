@@ -46,6 +46,7 @@ You can also register data sources programmatically using the Purview REST API:
 import requests
 
 # Register an Azure SQL Database source using the Purview REST API
+
 # First, get an access token using your service principal
 purview_account = "my-purview-account"
 base_url = f"https://{purview_account}.purview.azure.com"

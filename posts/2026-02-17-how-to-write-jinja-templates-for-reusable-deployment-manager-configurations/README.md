@@ -73,6 +73,7 @@ Now create the configuration file that uses this template.
 
 ```yaml
 # config.yaml
+
 # Configuration that uses the VM template with specific parameters
 imports:
 - path: vm-instance.jinja

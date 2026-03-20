@@ -18,6 +18,7 @@ The most straightforward way to check the Kubernetes version is through kubectl:
 
 ```bash
 # Check the server version (what the cluster is running)
+
 kubectl version
 
 # Output includes both client and server versions

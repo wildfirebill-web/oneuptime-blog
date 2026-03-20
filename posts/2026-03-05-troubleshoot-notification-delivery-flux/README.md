@@ -22,6 +22,7 @@ The notification controller is the component responsible for processing events a
 
 ```bash
 # Check if the notification controller pod is running
+
 kubectl get pods -n flux-system | grep notification
 
 # Check the controller deployment status

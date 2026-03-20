@@ -28,6 +28,7 @@ First, store the Ansible Vault password in HashiCorp Vault:
 
 ```bash
 # Store the Ansible Vault password in HashiCorp Vault's KV secrets engine
+
 vault kv put secret/ansible/vault-password value="your-ansible-vault-password"
 ```
 

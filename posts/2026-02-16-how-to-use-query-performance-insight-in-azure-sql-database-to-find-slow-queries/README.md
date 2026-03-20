@@ -49,7 +49,7 @@ You will see a dashboard with two main views: a timeline chart showing resource 
 
 ## Understanding the Dashboard
 
-### Resource Consumption Chart
+Resource Consumption Chart
 
 The top section shows a timeline of resource usage. You can switch between three metrics:
 

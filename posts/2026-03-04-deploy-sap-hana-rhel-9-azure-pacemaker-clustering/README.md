@@ -31,6 +31,7 @@ sudo subscription-manager repos --enable=rhel-9-for-x86_64-sap-netweaver-rpms
 ```bash
 sudo dnf install -y tuned-profiles-sap-hana resource-agents-sap-hana
 # For RHEL System Roles for SAP:
+
 sudo dnf install -y rhel-system-roles-sap
 ```
 

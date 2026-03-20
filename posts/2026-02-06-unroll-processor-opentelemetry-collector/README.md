@@ -36,6 +36,7 @@ Here is a basic configuration:
 
 ```yaml
 # Basic Unroll processor configuration
+
 processors:
   unroll:
     # Specify the array attribute to unroll

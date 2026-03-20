@@ -226,6 +226,7 @@ Check Rancher health:
 
 ```bash
 # Container status
+
 docker ps --filter name=rancher
 
 # Resource usage

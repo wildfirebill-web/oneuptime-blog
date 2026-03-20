@@ -27,6 +27,7 @@ Vertex AI RAG Engine handles much of this pipeline for you. Here is how to set i
 
 ```python
 # setup_rag.py
+
 # Set up a Vertex AI RAG corpus
 
 import vertexai

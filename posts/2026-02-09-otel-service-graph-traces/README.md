@@ -24,6 +24,7 @@ Enable the service graph connector in the OpenTelemetry Collector to generate se
 
 ```yaml
 # collector-servicegraph.yaml
+
 receivers:
   otlp:
     protocols:

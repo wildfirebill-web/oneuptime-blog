@@ -37,6 +37,7 @@ Here is a VirtualService that only works for internal cluster traffic:
 
 ```yaml
 # This VirtualService only matches internal cluster DNS
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

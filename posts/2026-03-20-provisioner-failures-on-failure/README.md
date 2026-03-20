@@ -12,8 +12,8 @@ When an OpenTofu provisioner (such as `remote-exec` or `local-exec`) encounters 
 
 OpenTofu supports two values:
 
-- **`fail`** (default) — The provisioner failure causes the resource to be tainted and the apply to fail
-- **`continue`** — The failure is logged as a warning but execution continues
+- **`fail`** (default) - The provisioner failure causes the resource to be tainted and the apply to fail
+- **`continue`** - The failure is logged as a warning but execution continues
 
 ## Default Behavior: fail
 
@@ -32,7 +32,7 @@ resource "aws_instance" "web" {
       host        = self.public_ip
     }
 
-    on_failure = fail   # Default — resource is tainted on failure
+    on_failure = fail   # Default - resource is tainted on failure
   }
 }
 ```
@@ -101,7 +101,7 @@ resource "aws_instance" "app" {
 }
 ```
 
-This is important for destroy-time provisioners — if the cleanup script fails, you still want the infrastructure to be destroyed.
+This is important for destroy-time provisioners - if the cleanup script fails, you still want the infrastructure to be destroyed.
 
 ## local-exec with on_failure
 
@@ -142,6 +142,7 @@ resource "null_resource" "notify_slack" {
 
 ```bash
 # Show tainted resources
+
 tofu state list | xargs -I{} tofu state show {} | grep -i tainted
 
 # Remove taint manually if you've fixed the issue
@@ -150,11 +151,11 @@ tofu untaint aws_instance.web
 
 ## Best Practices
 
-1. **Default to `fail`** — silent failures are harder to debug than explicit errors
+1. **Default to `fail`** - silent failures are harder to debug than explicit errors
 2. **Use `continue` for notify/register steps** that should not block resource creation
 3. **Always use `continue` for destroy provisioners** to prevent resource orphaning
 4. **Log extensively in provisioner scripts** so failures are diagnosable
-5. **Consider alternatives to provisioners** — user data, Packer images, or configuration management tools are more reliable
+5. **Consider alternatives to provisioners** - user data, Packer images, or configuration management tools are more reliable
 
 ## Conclusion
 

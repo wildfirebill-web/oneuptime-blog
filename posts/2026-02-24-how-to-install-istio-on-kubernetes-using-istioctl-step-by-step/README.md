@@ -224,6 +224,7 @@ Once Istio is installed, istioctl becomes your go-to tool for debugging and mana
 
 ```bash
 # Check proxy status for all sidecars
+
 istioctl proxy-status
 
 # Analyze your configuration for issues

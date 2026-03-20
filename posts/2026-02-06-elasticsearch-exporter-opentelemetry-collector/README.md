@@ -44,6 +44,7 @@ Here is a minimal configuration for the Elasticsearch exporter that sends data t
 
 ```yaml
 # Basic Elasticsearch exporter configuration
+
 exporters:
   elasticsearch:
     # Elasticsearch endpoint(s)

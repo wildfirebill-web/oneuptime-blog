@@ -54,6 +54,7 @@ Write the same data multiple times to measure maximum deduplication:
 
 ```bash
 # Create a 1GB reference file
+
 dd if=/dev/urandom of=/tmp/reference.dat bs=1M count=1024
 
 # Write 10 copies to VDO

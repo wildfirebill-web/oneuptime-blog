@@ -8,7 +8,7 @@ Description: Learn how to view and interpret stack deployment logs in Portainer 
 
 ## Introduction
 
-When deploying stacks in Portainer, understanding how to access deployment logs is essential for monitoring progress and diagnosing failures. Portainer provides several ways to view logs — from deployment-time output to real-time container logs. This guide covers all the methods available.
+When deploying stacks in Portainer, understanding how to access deployment logs is essential for monitoring progress and diagnosing failures. Portainer provides several ways to view logs - from deployment-time output to real-time container logs. This guide covers all the methods available.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ When you click **Deploy the stack**, Portainer shows a live deployment output pa
 
 ### Reading Deployment Output
 
-```
+```text
 Pulling frontend (nginx:alpine)...
 alpine: Pulling from library/nginx
 ...
@@ -69,11 +69,11 @@ If deployment fails, error messages appear inline with a descriptive explanation
 
 Portainer's log viewer offers several options:
 
-```
-[x] Auto-refresh logs       — Continuously poll for new log entries
-[x] Wrap lines              — Wrap long log lines in the viewer
-[ ] Show timestamps         — Prepend each line with ISO timestamp
-Lines to display: [100 ▼]  — Set number of lines to fetch
+```text
+[x] Auto-refresh logs       - Continuously poll for new log entries
+[x] Wrap lines              - Wrap long log lines in the viewer
+[ ] Show timestamps         - Prepend each line with ISO timestamp
+Lines to display: [100 ▼]  - Set number of lines to fetch
 ```
 
 ### Fetching More Log Lines
@@ -93,6 +93,7 @@ If you have CLI access to the Docker host, you can also view logs directly:
 
 ```bash
 # View logs for all containers in a stack (stack name: myapp)
+
 docker compose -p myapp logs
 
 # Follow logs in real time
@@ -157,10 +158,10 @@ services:
 
 ## Troubleshooting Log Access Issues
 
-- **No logs visible** — the container may have exited immediately; check its status
-- **Logs cut off** — increase the lines limit or use `All` option
-- **Log driver errors** — ensure the log driver is installed on the Docker host
-- **Permission denied** — verify your Portainer user has access to the environment and stack
+- **No logs visible** - the container may have exited immediately; check its status
+- **Logs cut off** - increase the lines limit or use `All` option
+- **Log driver errors** - ensure the log driver is installed on the Docker host
+- **Permission denied** - verify your Portainer user has access to the environment and stack
 
 ## Conclusion
 

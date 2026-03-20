@@ -55,6 +55,7 @@ SSL passthrough is disabled by default in Nginx Ingress Controller. You must ena
 
 ```bash
 # If installed with Helm
+
 helm upgrade ingress-nginx ingress-nginx/ingress-nginx \
   --namespace ingress-nginx \
   --set controller.extraArgs.enable-ssl-passthrough=""

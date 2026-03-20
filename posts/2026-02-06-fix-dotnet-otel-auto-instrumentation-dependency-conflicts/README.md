@@ -62,6 +62,7 @@ The auto-instrumentation agent stores its libraries in a specific directory. Che
 
 ```bash
 # The agent's library directory (Linux)
+
 ls /opt/opentelemetry-dotnet-instrumentation/
 
 # Or check the OTEL_DOTNET_AUTO_HOME environment variable

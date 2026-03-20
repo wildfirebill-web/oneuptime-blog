@@ -8,7 +8,7 @@ Description: Configure Cloudflare Load Balancing to distribute IPv4 traffic glob
 
 ## Introduction
 
-Cloudflare Load Balancing provides DNS-based global server load balancing (GSLB) that distributes traffic across origin servers in multiple regions. It combines health monitoring, geographic steering, and automatic failover — all managed through Cloudflare's edge network.
+Cloudflare Load Balancing provides DNS-based global server load balancing (GSLB) that distributes traffic across origin servers in multiple regions. It combines health monitoring, geographic steering, and automatic failover - all managed through Cloudflare's edge network.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Pools are groups of servers that receive traffic. Create pools per region:
 
 ```bash
 # Create a pool using the Cloudflare API
+
 curl -s -X POST "https://api.cloudflare.com/client/v4/user/load_balancers/pools" \
   -H "Authorization: Bearer $CF_API_TOKEN" \
   -H "Content-Type: application/json" \

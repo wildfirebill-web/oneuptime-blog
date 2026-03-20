@@ -32,6 +32,7 @@ Start by profiling your current Cilium deployment to identify areas for improvem
 
 ```bash
 # Profile current resource usage
+
 kubectl top pods -n kube-system -l k8s-app=cilium
 
 # Check identity management efficiency
@@ -46,7 +47,7 @@ cilium config view
 
 ## Applying Tuning Changes
 
-### Resource Tuning
+Resource Tuning
 
 ```yaml
 # cilium-tuning-values.yaml

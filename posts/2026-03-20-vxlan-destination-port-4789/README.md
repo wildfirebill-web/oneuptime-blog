@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: VXLAN, UDP Port, 4789, Linux, ip link, Networking, Firewall
+Tags: VXLAN, UDP Port, 4789, Linux, Ip link, Networking, Firewall
 
 Description: Learn how to set and verify the VXLAN destination UDP port, change it from the legacy 8472 default to the IANA-assigned port 4789, and update firewall rules accordingly.
 
@@ -12,7 +12,7 @@ VXLAN uses UDP for encapsulation. The IANA-assigned port is 4789 (RFC 7348), but
 
 ## Default Port History
 
-```
+```text
 Old Linux default: 8472 (before proper IANA assignment)
 IANA-assigned:     4789 (RFC 7348, 2014)
 VMware NSX:        8472
@@ -23,6 +23,7 @@ AWS/Azure VXLAN:   4789
 
 ```bash
 # Create VXLAN with explicit port 4789
+
 ip link add vxlan10 type vxlan \
   id 10 \
   dstport 4789 \

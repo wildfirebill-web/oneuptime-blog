@@ -40,6 +40,7 @@ Use Syft to generate SBOMs during your CI pipeline:
 
 ```yaml
 # .github/workflows/build-with-sbom.yaml
+
 name: Build with SBOM
 on:
   push:

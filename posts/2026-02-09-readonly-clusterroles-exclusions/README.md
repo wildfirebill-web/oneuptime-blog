@@ -16,6 +16,7 @@ Kubernetes includes a built-in view ClusterRole that grants read access to most 
 
 ```bash
 # Examine the default view role
+
 kubectl describe clusterrole view
 ```
 

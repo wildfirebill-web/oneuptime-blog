@@ -29,6 +29,7 @@ Start by creating a Web ACL. This is the container for all your rules.
 
 ```bash
 # Create a Web ACL for an ALB (use CLOUDFRONT scope for CloudFront)
+
 aws wafv2 create-web-acl \
   --name my-app-waf \
   --scope REGIONAL \

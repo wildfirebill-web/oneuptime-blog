@@ -287,6 +287,7 @@ def create_batch_jobs(work_items, ttl_seconds=600):
         print(f"Created job for item {item['id']}, will cleanup after {ttl_seconds}s")
 
 # Process 100 items, each job auto-cleans after 10 minutes
+
 work_items = [{"id": i} for i in range(100)]
 create_batch_jobs(work_items, ttl_seconds=600)
 ```
@@ -377,7 +378,7 @@ echo "Cleanup complete"
 
 Run this periodically as a CronJob itself to handle old jobs without TTL.
 
-## Resource Management
+Resource Management
 
 TTL cleanup helps with resource management in several ways. First, it reduces API server load by removing unused objects. Second, it frees up etcd storage. Third, it keeps kubectl output readable.
 

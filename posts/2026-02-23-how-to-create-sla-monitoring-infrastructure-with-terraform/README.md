@@ -35,6 +35,7 @@ provider "aws" {
 
 ```hcl
 # CloudWatch alarm for 99.9% availability SLA
+
 # This tracks the percentage of successful health checks
 resource "aws_cloudwatch_metric_alarm" "sla_availability" {
   alarm_name          = "sla-availability-breach-risk"

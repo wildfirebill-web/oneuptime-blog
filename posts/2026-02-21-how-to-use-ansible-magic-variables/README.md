@@ -36,6 +36,7 @@ This is the name of the current host as it appears in your inventory, not the ac
 ```yaml
 ---
 # inventory-hostname.yml
+
 # inventory_hostname is the inventory name, not the system hostname
 
 - hosts: webservers

@@ -129,6 +129,7 @@ Here's how to configure slots programmatically using the AWS CLI:
 
 ```bash
 # Update a slot configuration with prompts and elicitation settings
+
 aws lexv2-models update-slot \
   --bot-id YOUR_BOT_ID \
   --bot-version DRAFT \

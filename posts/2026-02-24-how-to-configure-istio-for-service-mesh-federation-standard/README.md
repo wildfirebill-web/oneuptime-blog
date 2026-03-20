@@ -80,6 +80,7 @@ Export the root certificate from each mesh:
 
 ```bash
 # From Mesh 1
+
 kubectl get secret cacerts -n istio-system --context="${CTX_MESH1}" \
   -o jsonpath='{.data.root-cert\.pem}' | base64 -d > mesh1-root-cert.pem
 

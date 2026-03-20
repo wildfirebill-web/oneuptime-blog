@@ -31,6 +31,7 @@ This guide covers the complete process of generating, installing, and using cili
 
 ```bash
 # Generate zsh completion
+
 cilium-bugtool completion zsh > /tmp/_cilium-bugtool
 ```
 

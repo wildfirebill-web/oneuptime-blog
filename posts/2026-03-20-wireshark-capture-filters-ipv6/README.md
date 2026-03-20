@@ -8,12 +8,13 @@ Description: Write Wireshark capture filters using BPF syntax to capture only IP
 
 ## Introduction
 
-Wireshark capture filters use Berkeley Packet Filter (BPF) syntax and are applied during capture — they determine which packets are saved to disk. Unlike display filters, capture filters cannot be changed after capture starts. For IPv6, capture filters use the `ip6` keyword and BPF primitives to selectively capture traffic.
+Wireshark capture filters use Berkeley Packet Filter (BPF) syntax and are applied during capture - they determine which packets are saved to disk. Unlike display filters, capture filters cannot be changed after capture starts. For IPv6, capture filters use the `ip6` keyword and BPF primitives to selectively capture traffic.
 
 ## Basic IPv6 Capture Filters
 
-```
+```text
 # Capture all IPv6 traffic
+
 ip6
 
 # Capture only ICMPv6
@@ -37,7 +38,7 @@ tcp port 80 or tcp port 443
 
 ## Filtering by IPv6 Address
 
-```
+```text
 # Capture traffic to/from a specific IPv6 address
 host 2001:db8::1
 
@@ -56,7 +57,7 @@ ip6[8:8] == 20:01:0d:b8:00:00:00:00 && ip6[16:8] != 00:00:00:00:00:00:00:01
 
 ## ICMPv6 Capture Filters
 
-```
+```text
 # All ICMPv6
 ip6 proto 58
 
@@ -122,7 +123,7 @@ tcpdump -i eth0 "ip6 && host 2001:db8::1"
 
 ## Compound Capture Filters
 
-```
+```text
 # IPv6 TCP SYN packets (connection initiations)
 ip6 && tcp[tcpflags] & tcp-syn != 0 && tcp[tcpflags] & tcp-ack == 0
 

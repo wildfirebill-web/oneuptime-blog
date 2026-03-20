@@ -39,6 +39,7 @@ Outline provides an install script that sets up everything:
 
 ```bash
 # Download and run the install script
+
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 ```
 

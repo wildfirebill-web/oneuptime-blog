@@ -51,6 +51,7 @@ The integrated cache requires:
 
 ```bash
 # Create a dedicated gateway for your Cosmos DB account
+
 # The SKU determines the cache size
 az cosmosdb service create \
     --account-name myCosmosAccount \

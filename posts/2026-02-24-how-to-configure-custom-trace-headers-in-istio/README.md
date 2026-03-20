@@ -300,6 +300,7 @@ Test which headers are being generated:
 
 ```bash
 # Check what headers Envoy adds to outgoing requests
+
 kubectl exec deploy/sleep -- curl -s http://httpbin:8000/headers | python3 -m json.tool
 
 # Test with explicit headers

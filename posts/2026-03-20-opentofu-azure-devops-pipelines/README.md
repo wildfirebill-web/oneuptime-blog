@@ -1,4 +1,4 @@
-# How to Set Up OpenTofu with Azure DevOps Pipelines
+# How to Set Up OpenTofu with Azure DevOps Pipelines - Pipelines
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to integrate OpenTofu into Azure DevOps pipelines with pl
 
 ## Introduction
 
-Azure DevOps Pipelines integrates natively with OpenTofu using YAML pipeline definitions. This guide covers a multi-stage pipeline with plan, approval gate, and apply—using Azure Service Connection for authentication.
+Azure DevOps Pipelines integrates natively with OpenTofu using YAML pipeline definitions. This guide covers a multi-stage pipeline with plan, approval gate, and apply-using Azure Service Connection for authentication.
 
 ## azure-pipelines.yml
 

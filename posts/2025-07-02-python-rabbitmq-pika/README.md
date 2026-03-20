@@ -61,6 +61,7 @@ graph LR
 
 ```bash
 # Install Pika - the official RabbitMQ Python client
+
 pip install pika
 
 # For async support

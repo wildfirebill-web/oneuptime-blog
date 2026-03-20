@@ -33,6 +33,7 @@ Combine multiple inventory sources into one:
 
 ```yaml
 # inventories/hybrid/hosts.yml
+
 # Static inventory for on-premises resources
 all:
   children:

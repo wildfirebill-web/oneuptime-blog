@@ -18,6 +18,7 @@ The `selectattr` filter selects items from a list of dictionaries based on an at
 
 ```yaml
 # basic-selectattr.yml
+
 # Demonstrates filtering a list by an attribute value
 - name: Basic selectattr example
   hosts: localhost

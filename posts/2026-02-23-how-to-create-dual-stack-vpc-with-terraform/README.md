@@ -26,6 +26,7 @@ Let us start with the VPC resource that supports both IPv4 and IPv6.
 
 ```hcl
 # Configure the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

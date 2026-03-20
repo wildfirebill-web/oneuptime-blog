@@ -38,6 +38,7 @@ You now have an Elastic IP, but it's not attached to anything yet.
 
 ```bash
 # Allocate a new Elastic IP address
+
 aws ec2 allocate-address --domain vpc
 
 # Output includes the allocation ID and public IP

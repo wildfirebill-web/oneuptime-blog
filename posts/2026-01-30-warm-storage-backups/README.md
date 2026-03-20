@@ -78,6 +78,7 @@ For S3, the break-even point between Standard and IA:
 
 ```python
 # Cost comparison: S3 Standard vs S3 Infrequent Access
+
 def calculate_monthly_cost(size_gb, access_count, storage_class):
     """
     Calculate monthly cost for different S3 storage classes.

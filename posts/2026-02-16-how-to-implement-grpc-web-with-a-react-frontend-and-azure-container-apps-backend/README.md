@@ -148,6 +148,7 @@ Envoy acts as the translation layer between gRPC-Web and native gRPC.
 
 ```yaml
 # envoy/envoy.yaml
+
 # Envoy configuration for gRPC-Web to gRPC translation
 admin:
   address:

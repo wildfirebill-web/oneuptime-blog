@@ -54,6 +54,7 @@ First, look at the built-in Virtual Machine Contributor role to understand what 
 
 ```powershell
 # Connect to your Azure account
+
 Connect-AzAccount
 
 # Get the definition of the Virtual Machine Contributor built-in role

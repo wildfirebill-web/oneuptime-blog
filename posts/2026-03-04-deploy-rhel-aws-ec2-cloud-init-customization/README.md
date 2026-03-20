@@ -16,6 +16,7 @@ Cloud-init is a standard tool for customizing cloud instances at boot time. When
 
 ```bash
 # Find the latest RHEL 9 AMI
+
 AMI_ID=$(aws ec2 describe-images \
   --owners 309956199498 \
   --filters "Name=name,Values=RHEL-9.*_HVM-*-x86_64-*-Hourly2-GP3" \

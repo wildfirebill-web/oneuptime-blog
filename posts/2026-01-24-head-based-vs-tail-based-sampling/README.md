@@ -112,6 +112,7 @@ process.on('SIGTERM', () => {
 
 ```python
 # tracing.py - Head-based sampling in Python
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

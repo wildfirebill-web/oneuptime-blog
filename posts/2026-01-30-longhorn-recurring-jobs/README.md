@@ -55,6 +55,7 @@ Snapshots capture the volume state instantly. They share storage with the volume
 
 ```yaml
 # RecurringJob for hourly snapshots
+
 apiVersion: longhorn.io/v1beta2
 kind: RecurringJob
 metadata:

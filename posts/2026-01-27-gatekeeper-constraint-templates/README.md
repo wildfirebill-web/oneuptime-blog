@@ -29,6 +29,7 @@ Before diving in, ensure you have Gatekeeper installed:
 
 ```bash
 # Install Gatekeeper using kubectl
+
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.14.0/deploy/gatekeeper.yaml
 
 # Verify installation

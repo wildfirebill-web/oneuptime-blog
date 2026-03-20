@@ -18,6 +18,7 @@ The vendor's library collects telemetry data, formats it in their proprietary sc
 
 ```python
 # Example of proprietary Datadog instrumentation
+
 from ddtrace import tracer
 
 @tracer.wrap(service="payment-api", resource="process_payment")

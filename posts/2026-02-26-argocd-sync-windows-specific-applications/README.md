@@ -69,6 +69,7 @@ Example naming convention: `{tier}-{service}-{environment}`
 
 ```yaml
 # Applications follow the naming convention
+
 # critical-payment-api-prod
 # critical-auth-service-prod
 # standard-order-service-prod

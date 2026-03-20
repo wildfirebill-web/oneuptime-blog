@@ -23,6 +23,7 @@ Verify your cluster:
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Check available resources

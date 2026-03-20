@@ -36,6 +36,7 @@ First, create the infrastructure for state storage. This is typically done once,
 
 ```hcl
 # bootstrap/main.tf
+
 # Run this once to create state storage infrastructure
 
 provider "aws" {

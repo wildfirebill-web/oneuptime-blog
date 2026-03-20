@@ -38,6 +38,7 @@ The simplest case - an ArgoCD Application with the same name already exists in t
 
 ```bash
 # List all applications
+
 argocd app list
 
 # Search for a specific app

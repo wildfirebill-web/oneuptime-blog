@@ -1,4 +1,4 @@
-# How to Use tofu import to Import Existing Resources
+# How to Use tofu import to Import Existing Resources - Tofu Existing Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Declare imports in your configuration:
 
 ```hcl
 # imports.tf
+
 import {
   to = aws_vpc.main
   id = "vpc-0a1b2c3d4e5f6789"
@@ -107,7 +108,7 @@ tofu plan
 
 Update your configuration to match the real resource state, then run plan again until you see:
 
-```
+```text
 No changes. Infrastructure is up-to-date.
 ```
 
@@ -143,7 +144,7 @@ tofu import aws_route53_record.www Z1PA6795UKMFR9/example.com/A
 OpenTofu 1.6+ can generate configuration from imported resources:
 
 ```hcl
-# imports.tf — just the import block, no resource block needed
+# imports.tf - just the import block, no resource block needed
 import {
   to = aws_vpc.main
   id = "vpc-0a1b2c3d4e5f6789"

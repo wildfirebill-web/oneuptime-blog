@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, ArgoCD, GitOps, Kubernetes, Helm, Infrastructure as Code
 
-Description: Learn how to combine OpenTofu for infrastructure provisioning with ArgoCD for application deployment, creating a complete GitOps pipeline where OpenTofu provisions clusters and ArgoCD manages applications.
+Description: Learn how to combine OpenTofu for infrastructure provisioning with ArgoCD for application deployment, creating a complete GitOps pipeline where OpenTofu provisions clusters and ArgoCD manages...
 
 ---
 
@@ -28,6 +28,7 @@ graph TD
 
 ```hcl
 # argocd.tf
+
 resource "helm_release" "argocd" {
   name             = "argocd"
   repository       = "https://argoproj.github.io/argo-helm"
@@ -192,8 +193,8 @@ resource "kubernetes_manifest" "app_set" {
 
 ## Best Practices
 
-- Use OpenTofu to install ArgoCD and define ArgoCD Projects and Applications as code — this makes the GitOps layer itself reproducible.
-- Enable `selfHeal = true` on ArgoCD applications — this automatically corrects any manual changes made to cluster resources.
+- Use OpenTofu to install ArgoCD and define ArgoCD Projects and Applications as code - this makes the GitOps layer itself reproducible.
+- Enable `selfHeal = true` on ArgoCD applications - this automatically corrects any manual changes made to cluster resources.
 - Use ApplicationSet to manage multiple environments from a single template instead of duplicating Application resources.
 - Restrict ArgoCD project destinations to team-specific namespaces (`${var.team}-*`) to prevent cross-team interference.
 - Enable ArgoCD notifications and wire them to Slack so teams know when deployments succeed or fail.

@@ -52,6 +52,7 @@ Configure detailed logging to see timeout patterns.
 
 ```yaml
 # otel-collector-config.yaml
+
 service:
   telemetry:
     logs:

@@ -27,6 +27,7 @@ Create a systematic directory structure that maps to audit control points. This 
 ```bash
 #!/bin/bash
 # create_evidence_structure.sh
+
 # Creates the directory structure for audit evidence collection
 
 AUDIT_DIR="audit-evidence-$(date +%Y-Q$(( ($(date +%-m)-1)/3+1 )))"

@@ -24,6 +24,7 @@ SSL certificates come in multiple formats, and different systems expect differen
 
 ```bash
 # PEM files start with text headers
+
 head -1 certificate.pem
 # Output: -----BEGIN CERTIFICATE-----
 

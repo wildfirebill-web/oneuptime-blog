@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv4, Display Filters, Subnet, Networking, Analysis
+Tags: Wireshark, IPv4, Display Filters, Subnets, Networking, Analysis
 
 Description: Filter Wireshark captures to show only traffic from or to specific IPv4 address ranges, subnets, or CIDR blocks using display filter syntax.
 
@@ -12,6 +12,7 @@ Filtering by address range lets you focus on specific network segments, investig
 
 ```wireshark
 # Traffic to or from a specific IP
+
 ip.addr == 192.168.1.100
 
 # Traffic FROM a specific IP (source)

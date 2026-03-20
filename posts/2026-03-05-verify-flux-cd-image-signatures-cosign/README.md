@@ -16,6 +16,7 @@ Install Cosign on your machine:
 
 ```bash
 # Install Cosign via Homebrew (macOS/Linux)
+
 brew install cosign
 
 # Or download directly from GitHub releases

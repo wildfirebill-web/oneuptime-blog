@@ -29,6 +29,7 @@ If you just need a PostgreSQL or MySQL database, Cloud SQL is cheaper and simple
 
 ```bash
 # Install the GCP Ansible collection
+
 ansible-galaxy collection install google.cloud
 
 # Enable the Spanner API

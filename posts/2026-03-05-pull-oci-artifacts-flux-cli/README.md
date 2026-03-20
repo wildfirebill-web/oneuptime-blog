@@ -27,6 +27,7 @@ Verify your Flux CLI installation.
 
 ```bash
 # Verify Flux CLI is installed and check the version
+
 flux version --client
 ```
 

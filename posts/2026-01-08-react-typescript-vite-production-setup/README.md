@@ -29,6 +29,7 @@ Vite is a modern build tool that offers lightning-fast development experience an
 
 ```bash
 # Create a new Vite project with React and TypeScript
+
 npm create vite@latest my-react-app -- --template react-ts
 
 # Navigate to project directory

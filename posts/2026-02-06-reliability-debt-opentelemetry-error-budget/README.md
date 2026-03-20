@@ -29,6 +29,7 @@ The foundation is accurate SLI measurement. For a request-based SLO, you need to
 
 ```python
 # sli_metrics.py - Track SLI data for error budget computation
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

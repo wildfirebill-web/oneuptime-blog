@@ -18,6 +18,7 @@ In CI/CD pipelines and automation scripts, sensitive data is often available as 
 
 ```bash
 # Set the environment variable (typically done by your CI/CD system)
+
 export DB_PASSWORD="my-secure-password"
 
 # Create a Podman secret from the environment variable

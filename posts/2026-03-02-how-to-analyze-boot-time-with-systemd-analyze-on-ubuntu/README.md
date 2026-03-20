@@ -14,6 +14,7 @@ Ubuntu's boot time is composed of firmware initialization, the bootloader, the k
 
 ```bash
 # Show overall boot time
+
 systemd-analyze time
 ```
 

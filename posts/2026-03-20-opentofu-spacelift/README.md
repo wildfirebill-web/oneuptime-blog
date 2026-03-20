@@ -20,6 +20,7 @@ Learn how to configure Spacelift stacks for OpenTofu deployments with policies a
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

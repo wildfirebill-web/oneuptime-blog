@@ -67,6 +67,7 @@ Flux CD is fully decentralized. Each cluster runs its own set of controllers wit
 
 ```yaml
 # Flux deployment -- modular controllers with separate concerns
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

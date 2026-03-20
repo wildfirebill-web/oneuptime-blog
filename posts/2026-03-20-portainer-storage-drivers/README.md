@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Storage, overlay2, devicemapper
+Tags: Portainer, Docker, Storage, Overlay2, Devicemapper
 
 Description: Configure and optimize container storage drivers in Docker environments managed by Portainer for maximum performance and compatibility.
 
 ## Introduction
 
-Docker storage drivers control how container image layers are stored and managed. The right storage driver improves performance, reduces disk usage, and ensures compatibility with your host OS. Portainer manages containers without enforcing a specific storage driver—the driver is configured at the Docker daemon level.
+Docker storage drivers control how container image layers are stored and managed. The right storage driver improves performance, reduces disk usage, and ensures compatibility with your host OS. Portainer manages containers without enforcing a specific storage driver-the driver is configured at the Docker daemon level.
 
 ## Supported Storage Drivers
 
@@ -25,6 +25,7 @@ Docker storage drivers control how container image layers are stored and managed
 
 ```bash
 # View current storage driver
+
 docker info | grep "Storage Driver"
 
 # Full storage driver details

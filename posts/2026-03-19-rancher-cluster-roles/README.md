@@ -69,6 +69,7 @@ For automation, you can assign cluster roles using the Rancher API. First, get y
 
 ```bash
 # Assign a user to a cluster with the Cluster Member role
+
 curl -X POST \
   'https://<rancher-url>/v3/clusterroletemplatebindings' \
   -H 'Authorization: Bearer <api-token>' \

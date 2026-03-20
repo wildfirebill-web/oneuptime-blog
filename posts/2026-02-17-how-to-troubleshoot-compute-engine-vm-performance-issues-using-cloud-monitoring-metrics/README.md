@@ -18,6 +18,7 @@ Before diving into specific metrics, get a quick snapshot of the VM's health:
 
 ```bash
 # Get basic instance information including machine type and status
+
 gcloud compute instances describe slow-vm \
   --zone=us-central1-a \
   --format="table(name, machineType.basename(), status, scheduling.preemptible)"

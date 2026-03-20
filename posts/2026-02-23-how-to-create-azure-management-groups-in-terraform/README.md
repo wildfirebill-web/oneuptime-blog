@@ -37,6 +37,7 @@ Let's build this hierarchy in Terraform:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

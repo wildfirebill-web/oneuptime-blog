@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GKE, Private Clusters, Kubernetes, OpenTofu, GCP, Security
+Tags: GKE, Private Cluster, Kubernetes, OpenTofu, GCP, Security
 
 Description: Learn how to create GKE private clusters with OpenTofu where nodes have no public IPs, providing enhanced security for production Kubernetes workloads.
 
@@ -14,6 +14,7 @@ GKE Private Clusters assign only internal IP addresses to nodes, preventing dire
 
 ```hcl
 # main.tf - VPC for GKE private cluster
+
 resource "google_compute_network" "vpc" {
   name                    = "gke-private-vpc"
   auto_create_subnetworks = false

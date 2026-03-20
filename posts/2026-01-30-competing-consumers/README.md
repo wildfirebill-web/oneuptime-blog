@@ -104,6 +104,7 @@ RabbitMQ uses the concept of queues with multiple consumers. The broker distribu
 
 ```python
 # rabbitmq_consumer.py
+
 # Competing consumers implementation with RabbitMQ using pika library
 
 import pika

@@ -30,6 +30,7 @@ For publicly accessible TFE instances, Let's Encrypt is the simplest path to tru
 
 ```bash
 # Install certbot
+
 sudo apt-get update && sudo apt-get install -y certbot
 
 # Generate a certificate using the standalone method

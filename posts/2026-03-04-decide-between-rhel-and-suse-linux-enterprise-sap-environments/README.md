@@ -16,6 +16,7 @@ Both distributions ship tools that automate SAP prerequisite configuration:
 
 ```bash
 # RHEL for SAP: Install SAP-specific tuning and tools
+
 sudo dnf install rhel-system-roles-sap
 sudo dnf install tuned-profiles-sap tuned-profiles-sap-hana
 

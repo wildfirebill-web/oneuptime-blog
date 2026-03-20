@@ -20,6 +20,7 @@ InstructLab is an open-source project that lets you contribute knowledge and ski
 
 ```bash
 # Install Python 3.11 and development tools
+
 sudo dnf install -y python3.11 python3.11-devel python3.11-pip gcc gcc-c++ make
 
 # Create a virtual environment

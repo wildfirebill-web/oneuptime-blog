@@ -12,6 +12,7 @@ Resource scheduling stops development and staging resources outside business hou
 
 ```hcl
 # Lambda function to start/stop EC2 instances on schedule
+
 resource "aws_lambda_function" "scheduler" {
   function_name = "resource-scheduler"
   runtime       = "python3.12"

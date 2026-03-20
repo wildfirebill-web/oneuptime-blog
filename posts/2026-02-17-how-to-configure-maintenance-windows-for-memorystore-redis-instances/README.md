@@ -44,6 +44,7 @@ Configure when maintenance can occur using the day of the week and hour:
 
 ```bash
 # Set the maintenance window to Sunday at 3 AM UTC
+
 gcloud redis instances update my-redis \
   --region=us-central1 \
   --maintenance-window-day=SUNDAY \

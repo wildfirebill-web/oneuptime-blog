@@ -25,6 +25,7 @@ The temporary credentials are valid for up to 36 hours (configurable), so you do
 
 ```bash
 # List MFA devices for your IAM user
+
 aws iam list-mfa-devices --user-name your-username \
   --query "MFADevices[].SerialNumber" \
   --output text

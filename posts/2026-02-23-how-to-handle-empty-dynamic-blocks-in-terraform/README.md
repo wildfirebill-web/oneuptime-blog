@@ -45,6 +45,7 @@ Some resources require at least one instance of a nested block. If your dynamic 
 
 ```hcl
 # aws_lb_listener requires exactly one default_action block
+
 # The default_action cannot be dynamic because it must always exist
 
 # But within the action, sub-blocks might be optional

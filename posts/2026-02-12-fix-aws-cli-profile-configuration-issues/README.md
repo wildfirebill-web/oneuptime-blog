@@ -29,6 +29,7 @@ If you're getting unexpected results, you might be using a different profile tha
 
 ```bash
 # See which AWS identity the CLI is currently using
+
 aws sts get-caller-identity
 ```
 

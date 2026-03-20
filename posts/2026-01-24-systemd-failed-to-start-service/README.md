@@ -40,6 +40,7 @@ Start with these commands to gather information:
 
 ```bash
 # Check service status - most important first step
+
 sudo systemctl status nginx.service
 
 # View full service status with all details

@@ -16,6 +16,7 @@ Anonymous FTP allows users to connect without a username/password, using "anonym
 # /etc/vsftpd.conf
 
 # --- Network ---
+
 listen=YES                    # IPv4 listener
 listen_ipv6=NO                # Disable IPv6
 # listen_address=203.0.113.10 # Bind to specific IPv4 (optional)

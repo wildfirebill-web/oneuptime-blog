@@ -20,6 +20,7 @@ Managing Datadog dashboards as code with OpenTofu ensures consistent monitoring 
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
@@ -46,7 +47,7 @@ resource "datadog_dashboard" "service_overview" {
   layout_type  = "ordered"
   reflow_type  = "fixed"
 
-  # Timeseries widget — request rate
+  # Timeseries widget - request rate
   widget {
     timeseries_definition {
       title       = "Request Rate"
@@ -69,7 +70,7 @@ resource "datadog_dashboard" "service_overview" {
     }
   }
 
-  # Query value widget — P99 latency
+  # Query value widget - P99 latency
   widget {
     query_value_definition {
       title       = "P99 Latency"
@@ -102,7 +103,7 @@ resource "datadog_dashboard" "service_overview" {
     }
   }
 
-  # Heatmap widget — error rate by service
+  # Heatmap widget - error rate by service
   widget {
     heatmap_definition {
       title = "Error Rate by Service"

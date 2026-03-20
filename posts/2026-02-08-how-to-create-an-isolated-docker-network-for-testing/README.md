@@ -16,6 +16,7 @@ The `--internal` flag creates a network with no external connectivity. Container
 
 ```bash
 # Create an isolated internal network
+
 docker network create --internal isolated-test
 ```
 

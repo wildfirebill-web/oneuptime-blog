@@ -20,6 +20,7 @@ On RHEL minimal installations, Cockpit may not be installed by default. Here is 
 
 ```bash
 # Install the Cockpit web console
+
 sudo dnf install cockpit
 
 # Enable and start the Cockpit socket (it listens on demand)

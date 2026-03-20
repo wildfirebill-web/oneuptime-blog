@@ -57,6 +57,7 @@ Before making changes, examine your current swap setup:
 
 ```bash
 # View swap summary
+
 swapon --show
 
 # Example output:

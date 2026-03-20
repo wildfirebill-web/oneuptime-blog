@@ -30,6 +30,7 @@ Let's create a setup where European users hit an EU endpoint, US users hit a US 
 
 ```bash
 # European users go to the EU endpoint
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEFGHIJ \
   --change-batch '{

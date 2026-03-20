@@ -75,6 +75,7 @@ First, launch an EC2 instance with Amazon Linux 2023 and SSH into it.
 
 ```bash
 # SSH into your EC2 instance
+
 ssh -i my-key.pem ec2-user@your-ec2-public-ip
 
 # Install Node.js

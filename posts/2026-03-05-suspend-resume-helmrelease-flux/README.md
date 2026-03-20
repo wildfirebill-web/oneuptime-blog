@@ -30,6 +30,7 @@ The simplest way to suspend a HelmRelease is with the Flux CLI.
 
 ```bash
 # Suspend a HelmRelease
+
 flux suspend helmrelease my-app -n default
 ```
 

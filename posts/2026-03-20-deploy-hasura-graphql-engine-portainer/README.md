@@ -14,6 +14,7 @@ Hasura connects to your PostgreSQL database and instantly generates a GraphQL AP
 
 ```yaml
 # hasura-stack.yml
+
 version: "3.8"
 services:
   hasura:
@@ -23,7 +24,7 @@ services:
       HASURA_GRAPHQL_DATABASE_URL: postgres://hasura:${DB_PASSWORD:-hasura_password}@postgres:5432/hasura
       # Enable the console (disable in production or protect with auth)
       HASURA_GRAPHQL_ENABLE_CONSOLE: "true"
-      # Admin secret — protect the console and API
+      # Admin secret - protect the console and API
       HASURA_GRAPHQL_ADMIN_SECRET: ${ADMIN_SECRET:-change-this-secret}
       # JWT configuration for user auth
       HASURA_GRAPHQL_JWT_SECRET: '{"type":"RS256","jwk_url":"https://auth.example.com/.well-known/jwks.json"}'
@@ -68,10 +69,10 @@ networks:
 
 Open `http://host:8080/console` and enter your admin secret. From the console:
 
-1. **Data** — track your tables and views to expose them via GraphQL
-2. **GraphiQL** — interactive GraphQL IDE for testing queries
-3. **Events** — configure event triggers on database changes
-4. **Remote Schemas** — merge external GraphQL APIs
+1. **Data** - track your tables and views to expose them via GraphQL
+2. **GraphiQL** - interactive GraphQL IDE for testing queries
+3. **Events** - configure event triggers on database changes
+4. **Remote Schemas** - merge external GraphQL APIs
 
 ## Sample GraphQL Queries
 

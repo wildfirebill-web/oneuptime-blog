@@ -255,6 +255,7 @@ Pick a low-risk namespace to migrate first. Here's the process:
 
 ```bash
 # 1. Remove Linkerd injection annotation
+
 kubectl annotate namespace test-namespace linkerd.io/inject-
 
 # 2. Add Istio injection label

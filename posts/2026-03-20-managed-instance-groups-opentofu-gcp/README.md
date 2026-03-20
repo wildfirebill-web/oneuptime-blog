@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Managed Instance Groups, Auto Scaling, Infrastructure as Code
+Tags: OpenTofu, GCP, Managed Instance Group, Auto Scaling, Infrastructure as Code
 
 Description: Learn how to create and manage Google Cloud Platform Managed Instance Groups (MIGs) with autoscaling and load balancing using OpenTofu.
 
@@ -185,6 +185,7 @@ resource "google_compute_instance_template" "app_v2" {
 }
 
 # Update the MIG to use the new template
+
 resource "google_compute_region_instance_group_manager" "app" {
   version {
     instance_template = google_compute_instance_template.app_v2.id

@@ -34,6 +34,7 @@ Before joining, make sure these are in place:
 
 ```bash
 # Verify DNS resolution to AD
+
 host ad.example.com
 nslookup _ldap._tcp.example.com
 

@@ -16,6 +16,7 @@ Ensure you have Vim 8.0+ for plugin compatibility:
 
 ```bash
 # Install latest Vim from Ubuntu repositories
+
 sudo apt update
 sudo apt install vim
 

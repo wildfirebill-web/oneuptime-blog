@@ -16,6 +16,7 @@ Relaying through a smarthost or SaaS email provider (SendGrid, Amazon SES, Mailg
 # /etc/postfix/main.cf
 
 # Relay all mail through this IPv4 address (brackets = skip MX lookup)
+
 relayhost = [203.0.113.100]:587
 
 # Or relay through a hostname

@@ -40,6 +40,7 @@ Before bootstrapping, prepare a directory with patches that Flux will apply to i
 
 ```bash
 # Create the staging directory for Flux patches
+
 mkdir -p flux-system-patches
 ```
 

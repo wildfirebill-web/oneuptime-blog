@@ -44,6 +44,7 @@ First, check what roles you currently have:
 
 ```bash
 # Check your current IAM roles on the project
+
 # Replace with your actual email and project ID
 gcloud projects get-iam-policy my-project \
     --flatten="bindings[].members" \

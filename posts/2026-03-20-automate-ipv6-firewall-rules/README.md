@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewall, Automation, Python, ip6tables, nftables, Ansible
+Tags: IPv6, Firewall, Automation, Python, Ip6tables, nftables, Ansible
 
 Description: Automate IPv6 firewall rule deployment using Ansible and Python scripts, including rule generation from policy models and idempotent deployment with nftables.
 
@@ -14,6 +14,7 @@ Managing ip6tables or nftables rules manually on many servers is fragile. Automa
 
 ```yaml
 # policies/ipv6_firewall.yml
+
 firewall:
   name: ipv6_host_firewall
   tables:
@@ -197,4 +198,4 @@ for rule, present in audit.items():
 
 ## Conclusion
 
-IPv6 firewall automation with nftables and Ansible enables consistent, version-controlled security policies. Generate nftables configuration from YAML policy definitions, validate before applying with `nft -c -f`, and audit compliance post-deployment. ICMPv6 rules are mandatory — never block all ICMPv6. Monitor firewall health and rule changes with OneUptime to detect unauthorized modifications.
+IPv6 firewall automation with nftables and Ansible enables consistent, version-controlled security policies. Generate nftables configuration from YAML policy definitions, validate before applying with `nft -c -f`, and audit compliance post-deployment. ICMPv6 rules are mandatory - never block all ICMPv6. Monitor firewall health and rule changes with OneUptime to detect unauthorized modifications.

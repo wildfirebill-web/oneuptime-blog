@@ -37,6 +37,7 @@ The `aws_iam_service_linked_role` resource creates a service-linked role for a g
 
 ```hcl
 # Create a service-linked role for Elasticsearch (OpenSearch)
+
 resource "aws_iam_service_linked_role" "elasticsearch" {
   aws_service_name = "es.amazonaws.com"
   description      = "Service-linked role for Amazon OpenSearch Service"

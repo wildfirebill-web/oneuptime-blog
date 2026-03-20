@@ -67,6 +67,7 @@ Apply the configuration:
 
 ```bash
 # Apply to worker nodes
+
 for node in 192.168.1.11 192.168.1.12 192.168.1.13; do
   talosctl apply-config --nodes "$node" --file worker-openebs.yaml
 done

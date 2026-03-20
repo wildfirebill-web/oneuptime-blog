@@ -27,6 +27,7 @@ Deploy Istio using the Istio operator managed by Flux:
 
 ```yaml
 # infrastructure/service-mesh/istio-helmrepo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

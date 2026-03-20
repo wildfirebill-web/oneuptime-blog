@@ -18,6 +18,7 @@ The unique filter removes duplicate values from a list while preserving the orde
 
 ```yaml
 # Remove duplicates from a simple list
+
 - name: Show unique packages
   ansible.builtin.debug:
     msg: "{{ packages | unique | list }}"

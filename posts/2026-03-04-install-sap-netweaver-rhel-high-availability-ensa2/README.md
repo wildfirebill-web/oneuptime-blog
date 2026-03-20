@@ -16,6 +16,7 @@ Prepare two RHEL nodes for SAP:
 
 ```bash
 # Install SAP preparation roles on both nodes
+
 sudo dnf install -y rhel-system-roles-sap
 
 # Run the SAP NetWeaver preparation role

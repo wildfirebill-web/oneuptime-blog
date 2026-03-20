@@ -56,6 +56,7 @@ MetalLB supports namespace-based allocation through the `serviceAllocation` fiel
 
 ```yaml
 # pool-team-a.yaml
+
 # IP pool restricted to the team-a namespace
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

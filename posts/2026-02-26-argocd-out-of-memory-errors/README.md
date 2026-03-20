@@ -16,6 +16,7 @@ First, confirm you are actually seeing OOM kills:
 
 ```bash
 # Check for OOMKilled events
+
 kubectl get events -n argocd --field-selector reason=OOMKilling --sort-by='.lastTimestamp'
 
 # Check pod restart counts and reasons

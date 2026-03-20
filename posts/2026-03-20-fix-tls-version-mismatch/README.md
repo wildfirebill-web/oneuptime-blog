@@ -14,6 +14,7 @@ A TLS version mismatch occurs when a client and server cannot agree on a common 
 
 ```bash
 # Test which TLS versions a server supports
+
 openssl s_client -connect example.com:443 -tls1_2 2>&1 | grep -E "Protocol|error"
 openssl s_client -connect example.com:443 -tls1_3 2>&1 | grep -E "Protocol|error"
 
@@ -102,7 +103,7 @@ java -jar -Djavax.net.debug=ssl:handshake TestSSL.jar
 ## OpenSSL System-Wide Configuration
 
 ```bash
-# /etc/ssl/openssl.cnf — set minimum TLS version system-wide
+# /etc/ssl/openssl.cnf - set minimum TLS version system-wide
 [system_default_sect]
 MinProtocol = TLSv1.2
 CipherString = DEFAULT@SECLEVEL=2

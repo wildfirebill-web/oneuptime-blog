@@ -42,6 +42,7 @@ The installation process adds the TimescaleDB repository and installs the extens
 
 ```bash
 # Add TimescaleDB repository
+
 sudo apt install gnupg postgresql-common apt-transport-https lsb-release wget
 
 # Add repository signing key

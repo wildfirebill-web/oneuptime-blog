@@ -64,6 +64,7 @@ Create a base Kustomization with variable substitution:
 
 ```yaml
 # clusters/production/apps/microservices.yaml
+
 # Three separate Kustomizations (one per service, replacing ApplicationSet)
 
 ---

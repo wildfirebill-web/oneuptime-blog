@@ -26,6 +26,7 @@ For producer routes, validation confirms that traffic to the Service is routed a
 kubectl get httproute <producer-route> -n <producer-ns> \
   -o jsonpath='{.status.parents[0].conditions[?(@.type=="Accepted")].status}'
 # Expected: True
+
 ```
 
 Send traffic from multiple consumer namespaces and verify all are affected:

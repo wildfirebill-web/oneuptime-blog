@@ -280,6 +280,7 @@ Check that traffic is going through the proxy:
 
 ```bash
 # Check the proxy logs to see if requests are coming through
+
 # (This depends on your proxy software)
 
 # From a pod, verify the proxy is being used

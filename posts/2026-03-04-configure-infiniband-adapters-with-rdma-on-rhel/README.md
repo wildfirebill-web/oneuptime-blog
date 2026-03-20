@@ -14,6 +14,7 @@ InfiniBand with RDMA (Remote Direct Memory Access) provides extremely low latenc
 
 ```bash
 # Install the RDMA core packages and InfiniBand utilities
+
 sudo dnf install -y rdma-core libibverbs libibverbs-utils \
     infiniband-diags perftest librdmacm-utils
 

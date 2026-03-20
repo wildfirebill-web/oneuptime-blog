@@ -14,6 +14,7 @@ OpenStack Neutron supports IPv6 through IPv6 subnets on networks, with three add
 
 ```bash
 # Create a network
+
 openstack network create my-network
 
 # Create IPv4 subnet
@@ -183,4 +184,4 @@ ps aux | grep -E "radvd|dnsmasq.*v6"
 
 ## Conclusion
 
-OpenStack Neutron supports three IPv6 subnet modes: SLAAC (VMs self-configure from RA), DHCPv6-stateless (SLAAC addressing with DNS from DHCPv6), and DHCPv6-stateful (full address assignment from Neutron's dnsmasq). Dual-stack networks combine an IPv4 subnet and an IPv6 subnet on the same Neutron network, and instances receive both addresses automatically. Security groups require explicit ICMPv6 rules — without them, NDP fails and IPv6 does not work even if addresses are assigned. IPv6 floating IPs are available when the provider network has IPv6 subnets, enabling direct IPv6 external access without NAT.
+OpenStack Neutron supports three IPv6 subnet modes: SLAAC (VMs self-configure from RA), DHCPv6-stateless (SLAAC addressing with DNS from DHCPv6), and DHCPv6-stateful (full address assignment from Neutron's dnsmasq). Dual-stack networks combine an IPv4 subnet and an IPv6 subnet on the same Neutron network, and instances receive both addresses automatically. Security groups require explicit ICMPv6 rules - without them, NDP fails and IPv6 does not work even if addresses are assigned. IPv6 floating IPs are available when the provider network has IPv6 subnets, enabling direct IPv6 external access without NAT.

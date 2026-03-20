@@ -108,6 +108,7 @@ class RedisWAL:
                 self.redis.set(self.checkpoint_key, 0)
 
 # Usage example
+
 def process_with_wal():
     r = redis.Redis()
     wal = RedisWAL(r)

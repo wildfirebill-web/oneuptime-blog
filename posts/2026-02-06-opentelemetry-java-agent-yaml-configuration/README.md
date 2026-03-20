@@ -25,6 +25,7 @@ The agent discovers configuration files through several mechanisms. Specify the 
 
 ```bash
 # Specify configuration file location
+
 java -javaagent:opentelemetry-javaagent.jar \
   -Dotel.javaagent.configuration-file=/etc/otel/agent-config.yaml \
   -jar your-application.jar

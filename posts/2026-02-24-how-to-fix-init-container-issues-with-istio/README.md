@@ -26,6 +26,7 @@ Check the init container status:
 
 ```bash
 # See if the init container succeeded
+
 kubectl get pod <pod-name> -n production -o jsonpath='{.status.initContainerStatuses[?(@.name=="istio-init")].state}'
 
 # Check the exit code

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, netem, IPv4, Packet Loss, Network Testing, Linux
+Tags: tc, Netem, IPv4, Packet Loss, Network Testing, Linux
 
 Description: Use tc netem to simulate IPv4 packet loss with configurable rates and correlation to test application resilience under poor network conditions.
 
@@ -12,9 +12,10 @@ Simulating packet loss helps validate how TCP applications handle retransmission
 
 ```bash
 # Drop 5% of all outgoing packets on eth0
+
 sudo tc qdisc add dev eth0 root netem loss 5%
 
-# Test with ping — some packets should not receive replies
+# Test with ping - some packets should not receive replies
 ping -c 20 8.8.8.8
 
 # Expected: ~1 out of 20 packets dropped (on the outgoing side)

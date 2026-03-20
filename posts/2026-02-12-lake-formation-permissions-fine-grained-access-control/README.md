@@ -18,6 +18,7 @@ Table-level permissions are the simplest form. You grant or deny access to entir
 
 ```bash
 # Grant SELECT on a specific table
+
 aws lakeformation grant-permissions \
   --principal '{"DataLakePrincipalIdentifier": "arn:aws:iam::123456789012:role/AnalystRole"}' \
   --resource '{"Table": {"DatabaseName": "sales_db", "Name": "orders"}}' \

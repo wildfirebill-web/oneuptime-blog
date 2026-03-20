@@ -125,6 +125,7 @@ Monitor pipeline health with these queries:
 
 ```promql
 # Ingestion rate
+
 rate(fluentbit_input_records_total[5m])
 
 # Buffer utilization

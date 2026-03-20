@@ -26,6 +26,7 @@ Use Terraform to provision the infrastructure for Backstage itself.
 
 ```hcl
 # backstage-infra.tf
+
 # Provision infrastructure for Backstage
 terraform {
   required_version = ">= 1.0"

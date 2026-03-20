@@ -45,6 +45,7 @@ The `--memory` flag sets the maximum amount of memory a container can use. Once 
 
 ```bash
 # Run nginx with a hard memory limit of 512MB
+
 # The container will be terminated if it tries to use more than 512MB
 docker run -d \
   --name nginx-limited \
@@ -330,7 +331,7 @@ docker inspect --format='CPUs: {{.HostConfig.NanoCpus}} Quota: {{.HostConfig.Cpu
 docker inspect --format='{{json .HostConfig.Resources}}' container_name | jq
 ```
 
-## Resource Limit Decision Flow
+Resource Limit Decision Flow
 
 Use the following decision process when setting resource limits:
 

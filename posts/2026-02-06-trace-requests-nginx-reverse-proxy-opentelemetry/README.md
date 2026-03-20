@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, Reverse Proxy, Distributed Tracing, Observability, Infrastructure
+Tags: OpenTelemetry, Nginx, Reverse Proxy, Distributed Tracing, Observability, Infrastructure
 
 Description: Step-by-step guide to tracing HTTP requests through NGINX reverse proxy using the OpenTelemetry module for complete end-to-end distributed tracing visibility.
 
@@ -35,6 +35,7 @@ Here's a Dockerfile that builds NGINX with the OpenTelemetry module compiled in.
 
 ```dockerfile
 # Start from the official NGINX base image
+
 FROM nginx:1.25
 
 # Install dependencies needed to build the OpenTelemetry module

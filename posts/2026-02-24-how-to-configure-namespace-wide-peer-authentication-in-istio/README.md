@@ -50,6 +50,7 @@ There are several scenarios where namespace-wide policies make sense.
 
 ```yaml
 # Production - locked down
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

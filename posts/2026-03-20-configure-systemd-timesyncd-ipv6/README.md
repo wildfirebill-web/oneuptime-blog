@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: systemd-timesyncd, NTP, IPv6, Time Synchronization, systemd, Linux
+Tags: Systemd-timesyncd, NTP, IPv6, Time Synchronization, Systemd, Linux
 
 Description: Configure systemd-timesyncd to synchronize system time over IPv6, pointing it to IPv6-capable NTP servers and verifying synchronization on modern systemd-based Linux systems.
 
@@ -12,10 +12,11 @@ systemd-timesyncd is a lightweight SNTP client built into systemd. It's the defa
 
 ## Understanding systemd-timesyncd
 
-systemd-timesyncd is simpler than chrony or ntpd — it's an SNTP (Simple NTP) client only. It can synchronize time but cannot serve NTP to other machines. It's suitable for workstations and client systems.
+systemd-timesyncd is simpler than chrony or ntpd - it's an SNTP (Simple NTP) client only. It can synchronize time but cannot serve NTP to other machines. It's suitable for workstations and client systems.
 
 ```bash
 # Check if timesyncd is active
+
 sudo systemctl status systemd-timesyncd
 
 # View current synchronization status

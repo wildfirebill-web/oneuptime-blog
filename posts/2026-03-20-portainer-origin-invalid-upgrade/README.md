@@ -1,10 +1,10 @@
-# How to Fix "Origin Invalid" Errors After Upgrading Portainer
+# How to Fix 'Origin Invalid' Errors After Upgrading Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Security, Upgrade, CORS
 
-Description: Resolve "Origin Invalid" or CORS-related errors that appear after upgrading Portainer, caused by stricter origin validation introduced in recent versions.
+Description: Resolve 'Origin Invalid' or CORS-related errors that appear after upgrading Portainer, caused by stricter origin validation introduced in recent versions.
 
 ## Introduction
 
@@ -18,6 +18,7 @@ Without origin validation, a malicious website could make cross-origin requests 
 
 ```bash
 # Check browser console for the error
+
 # Open F12 → Console
 # Error typically looks like:
 # "Invalid origin"
@@ -47,7 +48,7 @@ The most reliable fix is to access Portainer via a consistent, trusted URL:
 Portainer uses the `--tunnel-addr` value to determine valid origins. If your URL doesn't match:
 
 ```bash
-# This is NOT about Edge tunnels — when behind a reverse proxy
+# This is NOT about Edge tunnels - when behind a reverse proxy
 # you need to tell Portainer its external URL
 
 # Unfortunately, Portainer doesn't have a direct --external-url flag
@@ -105,7 +106,7 @@ http:
 
 ### Caddy
 
-```
+```text
 portainer.yourdomain.com {
     reverse_proxy localhost:9443 {
         transport http {

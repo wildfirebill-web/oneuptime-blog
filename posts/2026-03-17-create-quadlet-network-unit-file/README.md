@@ -18,6 +18,7 @@ Quadlet `.network` files declare Podman networks that are referenced by containe
 
 ```ini
 # ~/.config/containers/systemd/app-network.network
+
 [Network]
 # Creates a basic bridge network
 ```

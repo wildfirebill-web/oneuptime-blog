@@ -18,6 +18,7 @@ The HTTPRoute resource follows the Gateway API specification and integrates seam
 
 ```yaml
 # HTTPRoute basic structure
+
 # This resource defines how HTTP traffic should be routed to backend services
 apiVersion: policy.linkerd.io/v1beta3
 kind: HTTPRoute

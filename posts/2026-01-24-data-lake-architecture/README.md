@@ -51,6 +51,7 @@ The storage layer forms the foundation of your data lake. Most organizations use
 
 ```python
 # infrastructure/s3_data_lake.py
+
 # Configure S3 buckets for data lake zones using boto3
 
 import boto3

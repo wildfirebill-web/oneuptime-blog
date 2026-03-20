@@ -42,6 +42,7 @@ Add diagnostic output to your CI pipeline to understand the environment.
 
 ```yaml
 # .github/workflows/test.yml
+
 name: Tests
 
 on: [push, pull_request]

@@ -12,7 +12,7 @@ TCP MSS (Maximum Segment Size) is the largest amount of data that can be carried
 
 ## How MSS is Negotiated
 
-```
+```text
 Default Ethernet MTU = 1500 bytes
 MSS = 1500 - 20 (IP header) - 20 (TCP header) = 1460 bytes
 
@@ -31,6 +31,7 @@ If ICMP blocked: Black hole (connection hangs)
 
 ```bash
 # Check MSS negotiated in the handshake
+
 tcpdump -i eth0 -n -v 'tcp[tcpflags] & tcp-syn != 0' -c 5 2>/dev/null | grep mss
 
 # Example output:
@@ -109,4 +110,4 @@ tcpdump -i eth0 -n 'ip[6:2] & 0x3fff != 0'  # Fragmented packets
 
 ## Conclusion
 
-TCP MSS mismatches are a common source of mysterious connection failures in VPN and tunnel environments. The problem is always the same: the advertised MSS is too large for the actual path. MSS clamping with iptables is the most robust fix — it automatically adjusts MSS in SYN packets passing through the router without requiring changes to endpoints. Always apply clamping on the VPN gateway that introduces the overhead.
+TCP MSS mismatches are a common source of mysterious connection failures in VPN and tunnel environments. The problem is always the same: the advertised MSS is too large for the actual path. MSS clamping with iptables is the most robust fix - it automatically adjusts MSS in SYN packets passing through the router without requiring changes to endpoints. Always apply clamping on the VPN gateway that introduces the overhead.

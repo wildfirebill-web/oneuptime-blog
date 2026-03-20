@@ -52,6 +52,7 @@ ERROR! Syntax Error while loading YAML.
 
 ```yaml
 # WRONG - inconsistent indentation
+
 - name: Install packages
   apt:
    name: nginx    # 1 space instead of 2

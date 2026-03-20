@@ -22,6 +22,7 @@ Start by creating a new ASP.NET Core Web API project and adding the necessary Op
 
 ```bash
 # Create a new ASP.NET Core Web API project
+
 dotnet new webapi -n TracingDemo
 cd TracingDemo
 

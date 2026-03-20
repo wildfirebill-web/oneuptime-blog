@@ -33,6 +33,7 @@ Here is a Filelog receiver config that parses this format into structured fields
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   filelog/apache:
     include:

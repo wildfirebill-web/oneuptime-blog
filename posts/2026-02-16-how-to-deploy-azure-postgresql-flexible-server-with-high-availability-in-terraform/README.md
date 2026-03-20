@@ -42,6 +42,7 @@ Start with the standard Terraform setup and variables for the database configura
 
 ```hcl
 # Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

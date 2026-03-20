@@ -53,6 +53,7 @@ Before configuring KRaft mode, ensure you have:
 
 ```bash
 # Check Kafka version
+
 kafka-broker-api-versions.sh --version
 
 # Verify Java version

@@ -58,6 +58,7 @@ Before installing ExternalDNS, ensure you have:
 
 ```bash
 # Add the external-dns helm repository
+
 helm repo add external-dns https://kubernetes-sigs.github.io/external-dns/
 
 # Update repositories

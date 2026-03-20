@@ -62,6 +62,7 @@ Consistency beats intensity. A monthly review rhythm works well for most teams.
 
 ```yaml
 # alert-review-calendar.yaml
+
 reviews:
   monthly:
     - name: "Full Alert Review"

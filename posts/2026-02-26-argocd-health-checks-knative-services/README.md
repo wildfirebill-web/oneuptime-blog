@@ -317,6 +317,7 @@ Deploy a test Knative service and verify the health reporting:
 
 ```bash
 # Create a Knative Service through ArgoCD
+
 kubectl apply -f - <<EOF
 apiVersion: serving.knative.dev/v1
 kind: Service

@@ -52,6 +52,7 @@ Let's build an orchestrated saga for order processing. The orchestrator coordina
 
 ```python
 # saga_orchestrator.py - Orchestrated saga with OpenTelemetry tracing
+
 from opentelemetry import trace, context
 from opentelemetry.trace import StatusCode, SpanKind
 from opentelemetry.sdk.trace import TracerProvider

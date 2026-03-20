@@ -30,6 +30,7 @@ This validation checklist is designed to be run after the removal procedure befo
 
 ```bash
 # Quick summary check
+
 echo "=== Calico Removal Verification ==="
 kubectl get pods -n kube-system | grep calico | wc -l && echo "calico pods (expect 0)"
 kubectl get crd | grep calico | wc -l && echo "calico CRDs (expect 0)"

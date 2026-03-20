@@ -29,6 +29,7 @@ Create a privileged pod using kubectl run:
 
 ```bash
 # Quick privileged debug pod
+
 kubectl run debug-priv --image=nicolaka/netshoot -it --rm \
   --overrides='{"spec":{"containers":[{"name":"debug-priv","image":"nicolaka/netshoot","stdin":true,"tty":true,"securityContext":{"privileged":true}}]}}'
 ```

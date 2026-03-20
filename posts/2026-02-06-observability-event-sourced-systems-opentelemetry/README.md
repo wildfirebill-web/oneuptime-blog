@@ -44,6 +44,7 @@ When a command comes in, it triggers validation, domain logic, and event creatio
 
 ```python
 # command_handler.py - Tracing command handling with event generation
+
 from opentelemetry import trace
 from opentelemetry.trace import SpanKind, StatusCode
 import uuid

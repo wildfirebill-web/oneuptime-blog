@@ -84,6 +84,7 @@ When managing many applications, Kustomize is the best tool for applying consist
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

@@ -20,6 +20,7 @@ The `podman system df` command provides a summary of disk usage across all Podma
 
 ```bash
 # Display a summary of Podman disk usage
+
 podman system df
 ```
 

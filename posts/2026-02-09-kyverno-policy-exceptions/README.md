@@ -333,6 +333,7 @@ Create a GitOps workflow for exception management:
 
 ```yaml
 # exceptions/production/database-exception.yaml
+
 apiVersion: kyverno.io/v2beta1
 kind: PolicyException
 metadata:

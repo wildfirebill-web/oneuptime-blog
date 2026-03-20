@@ -8,7 +8,7 @@ Description: Deploy a self-hosted Mailtrap-compatible SMTP testing server using 
 
 ## Introduction
 
-Mailtrap is a popular email testing service, but you can achieve the same functionality with Mailpit — a fast, open-source SMTP testing tool — running entirely on your own infrastructure. Deploying it via Portainer lets you manage it alongside your other containers with zero configuration drift.
+Mailtrap is a popular email testing service, but you can achieve the same functionality with Mailpit - a fast, open-source SMTP testing tool - running entirely on your own infrastructure. Deploying it via Portainer lets you manage it alongside your other containers with zero configuration drift.
 
 Mailpit provides an SMTP server that captures all outgoing emails and displays them in a web UI, preventing accidental sends to real users during development.
 
@@ -26,13 +26,13 @@ Navigate to **Stacks** → **Add Stack** → **Web Editor** and paste:
 version: "3.8"
 
 services:
-  # Mailpit — self-hosted SMTP email testing tool
+  # Mailpit - self-hosted SMTP email testing tool
   mailpit:
     image: axllent/mailpit:latest
     container_name: mailpit
     restart: unless-stopped
     ports:
-      # SMTP port — configure your app to send mail here
+      # SMTP port - configure your app to send mail here
       - "1025:1025"
       # Web UI port
       - "8025:8025"
@@ -103,6 +103,7 @@ sendTestEmail();
 
 ```python
 # settings.py
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'your-host'
 EMAIL_PORT = 1025
@@ -176,4 +177,4 @@ environment:
 
 ## Conclusion
 
-Mailpit deployed via Portainer gives your team a zero-configuration email testing environment that's identical to Mailtrap but fully self-hosted. Every email your application sends during development is captured and inspectable — no more accidentally emailing real users, and no cloud service dependency.
+Mailpit deployed via Portainer gives your team a zero-configuration email testing environment that's identical to Mailtrap but fully self-hosted. Every email your application sends during development is captured and inspectable - no more accidentally emailing real users, and no cloud service dependency.

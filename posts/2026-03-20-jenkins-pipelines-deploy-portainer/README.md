@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Jenkins, CI/CD, Pipeline, Docker, Deployment
+Tags: Portainer, Jenkins, CI/CD, Pipelines, Docker, Deployment
 
 Description: Learn how to build Jenkins pipelines that build Docker images and deploy them to Portainer stacks automatically.
 

@@ -16,6 +16,7 @@ Before deleting anything, find out what's actually using disk space:
 
 ```bash
 # Overall disk usage
+
 df -h
 
 # Find the largest directories

@@ -26,6 +26,7 @@ Use the `trigger` keyword to start a pipeline in another project.
 
 ```yaml
 # In the upstream project (e.g., shared-library)
+
 stages:
   - build
   - test

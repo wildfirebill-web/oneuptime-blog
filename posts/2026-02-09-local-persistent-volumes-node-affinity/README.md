@@ -32,6 +32,7 @@ Identify nodes with local storage:
 
 ```bash
 # List nodes
+
 kubectl get nodes
 
 # Check node storage

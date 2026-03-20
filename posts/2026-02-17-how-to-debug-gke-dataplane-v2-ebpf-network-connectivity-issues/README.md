@@ -40,6 +40,7 @@ Confirm your cluster is actually using Dataplane V2:
 
 ```bash
 # Check if Dataplane V2 is enabled
+
 gcloud container clusters describe your-cluster \
   --zone us-central1-a \
   --format="value(networkConfig.datapathProvider)"

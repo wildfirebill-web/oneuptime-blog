@@ -24,6 +24,7 @@ Paste the copied content into a file:
 
 ```bash
 # Create the .kube directory if it doesn't exist
+
 mkdir -p ~/.kube
 
 # Paste the kubeconfig content (or save from the UI download)

@@ -51,6 +51,7 @@ Start by establishing baseline measurements:
 
 ```bash
 # Measure DNS resolution time
+
 dig +stats example.com | grep "Query time"
 
 # Measure TCP connection time

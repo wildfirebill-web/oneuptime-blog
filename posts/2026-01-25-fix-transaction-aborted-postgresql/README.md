@@ -91,6 +91,7 @@ ROLLBACK;
 
 ```python
 # Common mistake in application code
+
 conn = psycopg2.connect(...)
 cur = conn.cursor()
 

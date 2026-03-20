@@ -16,7 +16,7 @@ The OpenTelemetry Collector is a vendor-agnostic agent for receiving, processing
 # /etc/otelcol/config.yaml
 
 receivers:
-  # OTLP receiver — all interfaces (IPv4 and IPv6)
+  # OTLP receiver - all interfaces (IPv4 and IPv6)
   otlp:
     protocols:
       grpc:
@@ -161,6 +161,7 @@ service:
 
 ```bash
 # Run OTel Collector with IPv6 access
+
 docker run -d \
   --name otelcol \
   --network host \

@@ -123,6 +123,7 @@ Rate limiting and authentication middleware:
 
 ```yaml
 # In dynamic.yml
+
 http:
   routers:
     api:

@@ -18,6 +18,7 @@ Every piece of telemetry must have team and service ownership attributes:
 
 ```yaml
 # collector-config.yaml
+
 processors:
   resource:
     attributes:

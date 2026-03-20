@@ -41,6 +41,7 @@ graph LR
 
 ```bash
 # Enable IPv4 forwarding
+
 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 
 # Enable IPv6 forwarding

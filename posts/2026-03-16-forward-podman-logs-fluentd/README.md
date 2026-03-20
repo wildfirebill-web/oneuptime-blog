@@ -20,6 +20,7 @@ Run Fluent Bit alongside Podman to tail container log files.
 
 ```bash
 # Step 1: Create a Fluent Bit configuration
+
 mkdir -p /etc/fluent-bit
 
 cat > /etc/fluent-bit/fluent-bit.conf << 'EOF'

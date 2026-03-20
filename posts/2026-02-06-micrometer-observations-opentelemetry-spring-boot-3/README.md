@@ -98,6 +98,7 @@ Configure the observation bridge to export to OpenTelemetry:
 
 ```yaml
 # application.yml
+
 spring:
   application:
     name: payment-service

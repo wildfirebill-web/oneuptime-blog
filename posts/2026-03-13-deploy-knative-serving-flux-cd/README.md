@@ -26,6 +26,7 @@ This guide covers deploying Knative Serving with Kourier as the networking layer
 
 ```yaml
 # clusters/my-cluster/knative/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -53,6 +53,7 @@ Network Watcher is a regional service that must be enabled in each region where 
 
 ```powershell
 # Check if Network Watcher is enabled in your region
+
 $networkWatchers = Get-AzNetworkWatcher
 
 foreach ($nw in $networkWatchers) {

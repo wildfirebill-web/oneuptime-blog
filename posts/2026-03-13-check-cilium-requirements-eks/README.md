@@ -24,6 +24,7 @@ This guide covers all requirements for both approaches: the EKS version compatib
 
 ```bash
 # Check EKS cluster version
+
 kubectl version --short | grep Server
 
 # Or with AWS CLI

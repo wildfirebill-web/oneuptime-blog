@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher-desktop, docker-desktop, kubernetes, developer-tools, comparison
+Tags: Rancher-desktop, Docker-desktop, Kubernetes, Developer-tools, Comparison
 
 Description: A side-by-side comparison of Rancher Desktop and Docker Desktop to help developers choose the best local container development environment.
 
@@ -44,6 +44,7 @@ Docker Desktop is a commercial application from Docker Inc. for macOS, Windows, 
 
 ```bash
 # macOS with Homebrew
+
 brew install --cask rancher
 
 # Or download from https://rancherdesktop.io

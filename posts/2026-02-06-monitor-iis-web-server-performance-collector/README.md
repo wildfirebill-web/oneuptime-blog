@@ -40,6 +40,7 @@ Install the collector as a Windows service so it starts automatically:
 
 ```powershell
 # Download the OpenTelemetry Collector Contrib for Windows
+
 # Replace the version with the latest available
 Invoke-WebRequest -Uri "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.96.0/otelcol-contrib_0.96.0_windows_amd64.tar.gz" -OutFile otelcol-contrib.tar.gz
 

@@ -36,6 +36,7 @@ Make sure you have the following:
 
 ```bash
 # Add the Concourse Helm repository
+
 helm repo add concourse https://concourse-charts.storage.googleapis.com/
 
 # Update the chart cache
@@ -326,7 +327,7 @@ fly -t talos workers
 fly -t talos prune-worker -w <worker-name>
 ```
 
-## Resource Type Extensions
+Resource Type Extensions
 
 Concourse uses resource types to interact with external systems. Add custom resource types for your specific needs.
 

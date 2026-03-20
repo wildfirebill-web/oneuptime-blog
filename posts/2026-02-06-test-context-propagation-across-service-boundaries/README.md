@@ -46,6 +46,7 @@ The first level of testing checks that your HTTP client correctly injects trace 
 
 ```python
 # test_propagation_injection.py
+
 import unittest
 from unittest.mock import patch, MagicMock
 from opentelemetry import trace, context

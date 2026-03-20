@@ -16,6 +16,7 @@ Routinator exposes a built-in HTTP API for querying validation status:
 
 ```bash
 # Start Routinator with HTTP API enabled
+
 routinator server --http [::]:8323 --rtr [::]:3323
 
 # Query validation status for a specific prefix
@@ -119,7 +120,7 @@ if __name__ == "__main__":
 
 ## Grafana Dashboard Query
 
-```
+```text
 # PromQL: Alert when any prefix is not valid
 rpki_prefix_validity != 1
 

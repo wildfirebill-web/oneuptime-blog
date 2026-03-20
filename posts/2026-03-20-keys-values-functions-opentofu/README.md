@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, keys, values, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Keys, Values, Map Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the keys and values functions in OpenTofu to extract keys or values from a map as sorted lists.
 
@@ -99,6 +99,7 @@ locals {
 }
 
 # Note: validation with setsubtract checks for unknown keys
+
 # Use in postcondition or locals for early feedback
 ```
 

@@ -33,6 +33,7 @@ Before setting up AWS Backup for S3, your bucket needs versioning enabled.
 
 ```bash
 # Enable versioning on the bucket - required for AWS Backup
+
 aws s3api put-bucket-versioning \
   --bucket my-important-data \
   --versioning-configuration Status=Enabled

@@ -248,6 +248,7 @@ Tail sampling waits for a trace to complete before deciding whether to keep it. 
 
 ```yaml
 # OpenTelemetry Collector configuration for tail sampling
+
 # This configuration ensures you capture important traces while managing volume
 
 receivers:

@@ -68,6 +68,7 @@ flowchart LR
 
 ```bash
 # Upload directly to Glacier Flexible Retrieval
+
 aws s3 cp archive.tar.gz s3://my-archive-bucket/archives/ \
     --storage-class GLACIER
 

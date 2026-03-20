@@ -22,6 +22,7 @@ ERROR! Duplicate key "name" found in YAML
 
 ```yaml
 # WRONG: 'state' appears twice
+
 - name: Install nginx
   apt:
     name: nginx

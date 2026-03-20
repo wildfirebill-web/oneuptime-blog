@@ -29,6 +29,7 @@ This is the most straightforward method for Ubuntu systems.
 
 ```bash
 # Update the apt package index and install required packages
+
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl gnupg
 

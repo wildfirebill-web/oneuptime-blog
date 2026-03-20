@@ -122,6 +122,7 @@ The following configuration demonstrates a production-ready Collector pipeline. 
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   otlp:
     protocols:

@@ -26,6 +26,7 @@ Prepare nodes with LVM:
 
 ```bash
 # SSH to each storage node
+
 ssh node1
 
 # Check available disks

@@ -23,6 +23,7 @@ When you create a Cloud Run service, you choose whether it requires authenticati
 
 ```bash
 # Check the current IAM policy for your service
+
 gcloud run services get-iam-policy my-service \
     --region=us-central1
 ```

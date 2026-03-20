@@ -106,6 +106,7 @@ producer.close();
 from confluent_kafka import Producer, Consumer
 
 # Shared configuration for both producer and consumer
+
 common_config = {
     'bootstrap.servers': 'my-eventhubs-namespace.servicebus.windows.net:9093',
     'security.protocol': 'SASL_SSL',

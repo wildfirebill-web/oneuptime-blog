@@ -18,6 +18,7 @@ Before setting up automation, know how to check things by hand.
 
 ```bash
 # Quick status of all arrays
+
 cat /proc/mdstat
 
 # Detailed status of a specific array

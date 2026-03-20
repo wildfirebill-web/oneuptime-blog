@@ -65,6 +65,7 @@ SET GLOBAL log_throttle_queries_not_using_indexes = 10;
 ```ini
 [mysqld]
 # Enable slow query logging
+
 slow_query_log = 1
 
 # Set the log file path

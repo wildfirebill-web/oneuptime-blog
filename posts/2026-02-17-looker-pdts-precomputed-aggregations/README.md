@@ -33,6 +33,7 @@ Here is a simple PDT that precomputes daily order metrics:
 
 ```lookml
 # views/daily_order_metrics.view.lkml
+
 view: daily_order_metrics {
   derived_table: {
     sql: SELECT

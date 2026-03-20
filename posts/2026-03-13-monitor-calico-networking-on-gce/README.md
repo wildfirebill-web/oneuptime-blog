@@ -25,6 +25,7 @@ GCE-specific monitoring should also track VPC route table health - as the number
 
 ```bash
 # Enable flow logs on the worker subnet
+
 gcloud compute networks subnets update k8s-workers-subnet \
   --region us-central1 \
   --enable-flow-logs \

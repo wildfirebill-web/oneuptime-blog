@@ -173,4 +173,4 @@ tofu apply tfplan
 
 ## Summary
 
-CloudFront cache behaviors allow precise control over what gets cached, for how long, and what gets forwarded to origins. OpenTofu manages cache policies, origin request policies, and ordered behaviors together — ensuring consistent, auditable CDN configuration.
+CloudFront cache behaviors allow precise control over what gets cached, for how long, and what gets forwarded to origins. OpenTofu manages cache policies, origin request policies, and ordered behaviors together - ensuring consistent, auditable CDN configuration.

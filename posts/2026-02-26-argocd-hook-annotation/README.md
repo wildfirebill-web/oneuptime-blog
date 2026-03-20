@@ -16,6 +16,7 @@ ArgoCD defines five hook phases:
 
 ```yaml
 # PreSync - runs BEFORE the main sync operation
+
 argocd.argoproj.io/hook: PreSync
 
 # Sync - runs DURING the main sync (alongside normal resources)

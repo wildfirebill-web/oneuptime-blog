@@ -148,6 +148,7 @@ Here is a practical example of why label-based tracking causes problems. Conside
 
 ```yaml
 # What the Helm chart template generates
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

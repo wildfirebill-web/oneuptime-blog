@@ -25,6 +25,7 @@ The Tigera Operator selects ImageSets by a specific naming convention. Getting t
 
 ```yaml
 # WRONG - operator will not select this
+
 metadata:
   name: my-calico-images
   name: custom-imageset

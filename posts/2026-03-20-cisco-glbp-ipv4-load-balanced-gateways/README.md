@@ -43,13 +43,13 @@ interface GigabitEthernet0/0
 ## Load Balancing Methods
 
 ```cisco
-! Round-robin (default) — each ARP reply uses next virtual MAC
+! Round-robin (default) - each ARP reply uses next virtual MAC
 glbp 1 load-balancing round-robin
 
-! Weighted — distribute based on configured weights
+! Weighted - distribute based on configured weights
 glbp 1 load-balancing weighted
 
-! Host-dependent — same host always gets same virtual MAC
+! Host-dependent - same host always gets same virtual MAC
 glbp 1 load-balancing host-dependent
 ```
 
@@ -91,7 +91,7 @@ track 1 interface GigabitEthernet0/1 line-protocol
 
 interface GigabitEthernet0/0
  glbp 1 weighting track 1 decrement 60
- ! If WAN goes down, weight drops — AVG stops sending ARP for this forwarder
+ ! If WAN goes down, weight drops - AVG stops sending ARP for this forwarder
 ```
 
 ## GLBP vs HSRP vs VRRP

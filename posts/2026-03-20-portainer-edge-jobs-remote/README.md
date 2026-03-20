@@ -8,7 +8,7 @@ Description: Learn how to schedule and run one-off or recurring Edge Jobs across
 
 ## Introduction
 
-Edge Jobs in Portainer allow you to run a script or command on a Docker container across one or many remote edge devices — on a schedule or on demand. This is ideal for tasks like log rotation, health checks, certificate renewals, database backups, or any maintenance task that needs to run on edge hardware.
+Edge Jobs in Portainer allow you to run a script or command on a Docker container across one or many remote edge devices - on a schedule or on demand. This is ideal for tasks like log rotation, health checks, certificate renewals, database backups, or any maintenance task that needs to run on edge hardware.
 
 ## Prerequisites
 
@@ -37,11 +37,12 @@ Fill in the form:
 
 - **Name**: A descriptive label (e.g., `log-rotation-nightly`).
 - **Run mode**:
-  - **Recurring** — provide a cron expression.
-  - **Once** — runs as soon as agents receive the job.
+  - **Recurring** - provide a cron expression.
+  - **Once** - runs as soon as agents receive the job.
 
-```
+```text
 # Cron expression examples:
+
 # Run every night at 2:00 AM
 0 2 * * *
 
@@ -103,7 +104,7 @@ In Portainer's UI, enter the image name in the **Image** field of the Edge Job f
 
 If your job needs access to host files or Docker volumes, configure bind mounts:
 
-```
+```text
 Host path:       /var/log/myapp
 Container path:  /host-logs
 Mode:            Read/Write
@@ -127,7 +128,7 @@ After the job runs:
    - Exit code
    - Standard output/error from the container
 
-```
+```text
 # Example output in Portainer Edge Job results:
 Endpoint: device-berlin-001  | Status: Completed | Exit Code: 0
 Output: Log cleanup complete on device-berlin-001
@@ -139,7 +140,7 @@ Backup complete: device-berlin-001 at 20260320_020001
 - **Use lightweight images** (e.g., `alpine`) for simple shell scripts to minimize download time on edge devices.
 - **Log output to stdout/stderr** so Portainer captures it in the job results.
 - **Test jobs on a single endpoint** before targeting an entire edge group.
-- **Set sensible cron schedules** — avoid running heavy jobs during peak operational hours.
+- **Set sensible cron schedules** - avoid running heavy jobs during peak operational hours.
 - **Idempotent scripts**: Design scripts so that re-running them doesn't cause harm.
 
 ## Conclusion

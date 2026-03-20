@@ -59,6 +59,7 @@ flowchart TB
 
 ```yaml
 # fluent-bit/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

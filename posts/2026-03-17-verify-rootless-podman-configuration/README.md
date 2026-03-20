@@ -18,6 +18,7 @@ After setting up rootless Podman, it is important to verify that all components 
 
 ```bash
 # Verify Podman is running in rootless mode
+
 podman info --format '{{.Host.Security.Rootless}}'
 # Expected: true
 

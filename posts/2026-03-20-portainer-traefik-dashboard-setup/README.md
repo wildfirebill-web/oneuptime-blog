@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Traefik, Dashboard, Monitoring, Security
+Tags: Portainer, Traefik, Dashboards, Monitoring, Security
 
 Description: Learn how to deploy the Traefik dashboard alongside Portainer with secure authentication, HTTPS access, and IP-based access restrictions to monitor your reverse proxy configuration.
 
 ## Introduction
 
-The Traefik dashboard provides a real-time view of your routers, services, middlewares, and providers — an essential tool when running Traefik alongside Portainer. The dashboard must be secured before exposing it, as it reveals your full routing configuration. This guide covers deploying the Traefik dashboard with basic auth, HTTPS, and optional IP restrictions.
+The Traefik dashboard provides a real-time view of your routers, services, middlewares, and providers - an essential tool when running Traefik alongside Portainer. The dashboard must be secured before exposing it, as it reveals your full routing configuration. This guide covers deploying the Traefik dashboard with basic auth, HTTPS, and optional IP restrictions.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ The Traefik dashboard provides a real-time view of your routers, services, middl
 
 ```yaml
 # traefik.yml
+
 api:
   dashboard: true    # Enable the dashboard
   insecure: false    # Never use insecure mode in production (exposes on port 8080 without auth)
@@ -71,7 +72,7 @@ services:
     labels:
       - "traefik.enable=true"
 
-      # Dashboard router — HTTPS only
+      # Dashboard router - HTTPS only
       - "traefik.http.routers.traefik-dashboard.rule=Host(`traefik.example.com`)"
       - "traefik.http.routers.traefik-dashboard.entrypoints=websecure"
       - "traefik.http.routers.traefik-dashboard.tls=true"
@@ -126,23 +127,23 @@ curl -u admin:your-secure-password https://traefik.example.com/dashboard/
 
 The Traefik dashboard shows:
 
-```
+```bash
 HTTP Section:
-  Routers    — All configured routing rules with their status (enabled/disabled/error)
-  Services   — Backend services and their load balancer configuration
-  Middlewares — Auth, rate limiting, header manipulation, etc.
+  Routers    - All configured routing rules with their status (enabled/disabled/error)
+  Services   - Backend services and their load balancer configuration
+  Middlewares - Auth, rate limiting, header manipulation, etc.
 
 TCP Section:
-  Routers    — TCP routing rules (for non-HTTP services)
-  Services   — TCP backend services
+  Routers    - TCP routing rules (for non-HTTP services)
+  Services   - TCP backend services
 
 UDP Section:
   Routers, Services (UDP routing)
 
 Providers:
-  Docker    — Containers discovered via Docker socket
-  File      — Services from static config files
-  Kubernetes — K8s Ingress/CRD resources (if applicable)
+  Docker    - Containers discovered via Docker socket
+  File      - Services from static config files
+  Kubernetes - K8s Ingress/CRD resources (if applicable)
 ```
 
 ## Step 7: Access Dashboard API for Automation
@@ -166,4 +167,4 @@ curl -s -u "$AUTH" "${TRAEFIK_URL}/api/providers" | jq 'keys'
 
 ## Conclusion
 
-The Traefik dashboard is a critical observability tool when running Traefik alongside Portainer. Secure it with basic auth at minimum, add IP allowlisting for additional protection, and always serve it over HTTPS. The dashboard API is also useful for automated monitoring — you can script alerts when routers show errors or when expected services are missing from the routing table.
+The Traefik dashboard is a critical observability tool when running Traefik alongside Portainer. Secure it with basic auth at minimum, add IP allowlisting for additional protection, and always serve it over HTTPS. The dashboard API is also useful for automated monitoring - you can script alerts when routers show errors or when expected services are missing from the routing table.

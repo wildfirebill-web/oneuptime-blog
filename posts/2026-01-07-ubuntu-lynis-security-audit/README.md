@@ -64,6 +64,7 @@ The simplest way to install Lynis is through the default Ubuntu package reposito
 
 ```bash
 # Update the package index to ensure you have the latest package information
+
 sudo apt update
 
 # Install Lynis from the Ubuntu repositories

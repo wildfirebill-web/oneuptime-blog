@@ -30,6 +30,7 @@ Key characteristics:
 
 ```bash
 # Create a Spark pool with auto-scaling enabled
+
 az synapse spark pool create \
   --name sparkpool01 \
   --workspace-name my-synapse-workspace \

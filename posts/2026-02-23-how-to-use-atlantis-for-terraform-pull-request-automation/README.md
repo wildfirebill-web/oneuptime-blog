@@ -27,6 +27,7 @@ CI/CD platforms like GitHub Actions work fine for Terraform, but Atlantis has so
 
 ```bash
 # Run Atlantis as a Docker container
+
 docker run -d \
   --name atlantis \
   -p 4141:4141 \

@@ -14,6 +14,7 @@ Metasploit Framework supports IPv6 throughout its module ecosystem. Most exploit
 
 ```bash
 # Start Metasploit console
+
 msfconsole
 
 # Verify IPv6 support
@@ -146,6 +147,6 @@ msf6 > route add 2001:db8:internal::/48 <session_id>
 - Always set `RHOSTS` with the full IPv6 address
 - IPv6 addresses containing colons may need quoting in some contexts
 - Verify your listener interface supports IPv6: `ifconfig eth0 | grep inet6`
-- Many exploits that work on IPv4 services also work over IPv6 — IPv6 doesn't change application-layer vulnerabilities
+- Many exploits that work on IPv4 services also work over IPv6 - IPv6 doesn't change application-layer vulnerabilities
 
 Metasploit's transparent IPv6 support means most standard testing techniques work directly with IPv6 targets, making it straightforward to include IPv6 addresses in authorized penetration testing engagements.

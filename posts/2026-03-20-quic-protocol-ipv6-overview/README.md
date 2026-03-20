@@ -31,7 +31,7 @@ IPv6 and QUIC work well together because:
 
 QUIC dramatically reduces connection setup time:
 
-```
+```text
 TCP + TLS 1.3:
   1. SYN → SYN-ACK → ACK (1.5 RTT)
   2. TLS ClientHello → ServerHello → Finished (1 RTT)
@@ -42,7 +42,7 @@ QUIC (0-RTT for new connections):
   Total: 1 RTT
 
 QUIC (0-RTT for resumed connections):
-  1. Resumes with cached session ticket — data sent immediately
+  1. Resumes with cached session ticket - data sent immediately
   Total: 0 RTT
 ```
 
@@ -50,6 +50,7 @@ QUIC (0-RTT for resumed connections):
 
 ```bash
 # Install curl with HTTP/3 support (Ubuntu 22.04+)
+
 sudo apt-get install curl
 
 # Test HTTP/3 over IPv6
@@ -69,7 +70,7 @@ ngtcp2client --disable-early-data [2001:db8::1] 443 https://example.com/
 
 A QUIC packet over IPv6 looks like:
 
-```
+```text
 IPv6 Header (40 bytes)
   ├── Version: 6
   ├── Traffic Class: DSCP/ECN
@@ -104,7 +105,7 @@ import struct
 # Flow labels help identify connection streams at the network layer
 sock = socket.socket(socket.AF_INET6, socket.SOCK_DGRAM)
 
-# Flow label is embedded in the IPv6 header — set via IPV6_FLOWINFO socket option
+# Flow label is embedded in the IPv6 header - set via IPV6_FLOWINFO socket option
 # Value is (traffic class << 20) | flow_label
 flow_label = 0x12345  # 20-bit value
 traffic_class = 0b00000000  # Default
@@ -117,7 +118,7 @@ sock.connect(("2001:db8::1", 443, flowinfo, 0))
 
 ## Key QUIC Features for IPv6 Networks
 
-1. **Connection Migration**: QUIC connections survive IP address changes — useful for mobile IPv6
+1. **Connection Migration**: QUIC connections survive IP address changes - useful for mobile IPv6
 2. **Multiplexing**: Multiple streams over one connection without head-of-line blocking
 3. **0-RTT Resumption**: Reconnect without new handshake using IPv6 QUIC tokens
 4. **ECN Support**: Explicit Congestion Notification works natively with IPv6

@@ -82,6 +82,7 @@ This is critical for Kubernetes annotations and labels that contain slashes:
 
 ```text
 # Annotation key: sidecar.istio.io/inject
+
 # JSON Pointer: /metadata/annotations/sidecar.istio.io~1inject
 
 # Annotation key: app.kubernetes.io/name

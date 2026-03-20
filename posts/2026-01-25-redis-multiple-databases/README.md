@@ -18,6 +18,7 @@ Each Redis database is a separate keyspace within the same Redis instance. They 
 import redis
 
 # Connect to database 0 (default)
+
 r0 = redis.Redis(host='localhost', port=6379, db=0)
 
 # Connect to database 1

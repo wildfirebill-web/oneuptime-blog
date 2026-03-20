@@ -14,6 +14,7 @@ When ArgoCD deploys your application, it transforms your source (Helm chart, Kus
 
 ```bash
 # Show the generated manifests (desired state from Git)
+
 argocd app manifests my-app
 ```
 

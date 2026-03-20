@@ -378,6 +378,7 @@ With the DCR and custom tables in place, applications can send data using the Lo
 
 ```bash
 # Example: send data to the custom table via the Logs Ingestion API
+
 # First, get an access token
 TOKEN=$(az account get-access-token --resource "https://monitor.azure.com" --query accessToken -o tsv)
 

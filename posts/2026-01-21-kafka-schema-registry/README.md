@@ -48,6 +48,7 @@ services:
 
 ```properties
 # schema-registry.properties
+
 listeners=http://0.0.0.0:8081
 kafkastore.bootstrap.servers=PLAINTEXT://localhost:9092
 kafkastore.topic=_schemas

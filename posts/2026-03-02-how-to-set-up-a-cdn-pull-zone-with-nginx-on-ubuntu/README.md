@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, CDN, Web Server, Performance
+Tags: Ubuntu, Nginx, CDN, Web Server, Performance
 
 Description: Learn how to set up a CDN pull zone with Nginx on Ubuntu, using Nginx as a caching proxy that pulls content from an origin server and serves it with proper cache headers.
 
@@ -72,6 +72,7 @@ Configure the caching proxy (the CDN pull zone):
 
 ```bash
 # Create the cache directory
+
 sudo mkdir -p /var/cache/nginx/cdn
 sudo chown -R www-data:www-data /var/cache/nginx/cdn
 

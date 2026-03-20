@@ -16,6 +16,7 @@ Install the Google Cloud Ansible collection and the Python client library:
 
 ```bash
 # Install the GCP Ansible collection
+
 ansible-galaxy collection install google.cloud
 
 # Install the required Python libraries

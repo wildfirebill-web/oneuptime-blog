@@ -1,4 +1,4 @@
-# How to Check Container Health Status in Portainer
+# How to Check Container Health Status in Portainer - Status
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ For scripted or automated use cases, Docker CLI provides powerful filtering:
 
 ```bash
 # Filter running containers
+
 docker ps --filter "status=running"
 
 # Filter by label key=value

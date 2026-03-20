@@ -172,6 +172,7 @@ tofu plan
 tofu apply
 
 # View boot diagnostics (serial console output)
+
 az vm boot-diagnostics get-boot-log \
   --resource-group <rg> \
   --name <vm-name>
@@ -191,4 +192,4 @@ az serial-console connect \
 
 ## Conclusion
 
-Always enable Boot Diagnostics in production—omit `storage_account_uri` to use Azure-managed storage at no cost without managing storage accounts. Boot Diagnostics is the prerequisite for Azure Serial Console, which provides emergency VM access when the OS hangs or SSH becomes unavailable. For Scale Sets, use a shared storage account rather than individual accounts per instance. Combine Boot Diagnostics with Azure Monitor Agent for comprehensive VM observability: Boot Diagnostics for startup/crash debugging, Azure Monitor for runtime metrics and logs.
+Always enable Boot Diagnostics in production-omit `storage_account_uri` to use Azure-managed storage at no cost without managing storage accounts. Boot Diagnostics is the prerequisite for Azure Serial Console, which provides emergency VM access when the OS hangs or SSH becomes unavailable. For Scale Sets, use a shared storage account rather than individual accounts per instance. Combine Boot Diagnostics with Azure Monitor Agent for comprehensive VM observability: Boot Diagnostics for startup/crash debugging, Azure Monitor for runtime metrics and logs.

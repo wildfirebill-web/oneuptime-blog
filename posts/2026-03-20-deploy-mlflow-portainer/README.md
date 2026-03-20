@@ -8,12 +8,13 @@ Description: Deploy MLflow tracking server with PostgreSQL metadata storage and 
 
 ---
 
-MLflow is the standard open-source platform for managing the ML lifecycle — experiment tracking, model packaging, and model registry. Deploying it via Portainer gives your ML team a persistent, team-shared tracking server with proper backend storage.
+MLflow is the standard open-source platform for managing the ML lifecycle - experiment tracking, model packaging, and model registry. Deploying it via Portainer gives your ML team a persistent, team-shared tracking server with proper backend storage.
 
 ## Step 1: Deploy the MLflow Stack
 
 ```yaml
 # mlflow-stack.yml
+
 version: "3.8"
 
 services:
@@ -169,4 +170,4 @@ Open `http://<host>:5000` to view:
 
 ## Summary
 
-MLflow deployed via Portainer gives ML teams a shared, persistent experiment tracking and model registry. The PostgreSQL backend ensures metadata durability, and MinIO provides scalable artifact storage — all managed as a single Portainer stack.
+MLflow deployed via Portainer gives ML teams a shared, persistent experiment tracking and model registry. The PostgreSQL backend ensures metadata durability, and MinIO provides scalable artifact storage - all managed as a single Portainer stack.

@@ -382,6 +382,7 @@ For distributed applications, Redis allows multiple application instances to sha
 
 ```yaml
 # application.yml
+
 spring:
   redis:
     host: localhost

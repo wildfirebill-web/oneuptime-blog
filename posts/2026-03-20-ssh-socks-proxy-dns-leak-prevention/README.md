@@ -14,6 +14,7 @@ A DNS leak occurs when your browser sends DNS queries directly to your ISP's res
 
 ```bash
 # Create SOCKS5 proxy
+
 ssh -4 -fN -D 127.0.0.1:1080 user@203.0.113.10
 ```
 
@@ -31,7 +32,7 @@ curl --socks5-hostname 127.0.0.1:1080 http://httpbin.org/ip
 
 Configure Firefox to use SOCKS5 with remote DNS:
 
-```
+```text
 Settings → Network Settings → Manual proxy configuration
 SOCKS Host: 127.0.0.1   Port: 1080
 SOCKS v5: selected
@@ -39,7 +40,7 @@ SOCKS v5: selected
 ```
 
 Or set in `about:config`:
-```
+```text
 network.proxy.socks: 127.0.0.1
 network.proxy.socks_port: 1080
 network.proxy.socks_version: 5

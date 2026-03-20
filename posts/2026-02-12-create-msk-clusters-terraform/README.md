@@ -221,6 +221,7 @@ resource "aws_msk_cluster" "with_auth" {
 }
 
 # Create a secret for the Kafka user
+
 resource "aws_secretsmanager_secret" "kafka_user" {
   name       = "AmazonMSK_producer_user"  # Must start with "AmazonMSK_"
   kms_key_id = aws_kms_key.msk.arn

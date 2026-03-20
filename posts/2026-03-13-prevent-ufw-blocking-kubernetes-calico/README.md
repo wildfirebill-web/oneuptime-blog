@@ -30,6 +30,7 @@ The safest prevention strategy is to make the choice explicit: either use UFW fo
 
 ```bash
 # Check UFW state on all nodes
+
 for NODE in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   echo -n "$NODE: "
   ssh $NODE "sudo ufw status" 2>/dev/null || echo "SSH failed"

@@ -27,6 +27,7 @@ VPP achieves best performance with dedicated CPU cores that are not shared with 
 
 ```bash
 # Isolate CPUs from the Linux scheduler for VPP
+
 # Add to kernel boot parameters (GRUB_CMDLINE_LINUX)
 isolcpus=2,3,4,5 nohz_full=2,3,4,5 rcu_nocbs=2,3,4,5
 ```

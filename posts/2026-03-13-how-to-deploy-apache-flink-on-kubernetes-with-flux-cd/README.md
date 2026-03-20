@@ -28,6 +28,7 @@ In this guide you will deploy the Flink Kubernetes Operator using Flux CD HelmRe
 
 ```yaml
 # clusters/production/sources/flink-operator.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

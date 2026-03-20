@@ -22,6 +22,7 @@ A PreSync hook runs before ArgoCD applies any application resources. Use PreSync
 
 ```yaml
 # presync-migration-job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

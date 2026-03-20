@@ -40,6 +40,7 @@ Let's build a Lambda function that authenticates users against a DynamoDB table:
 
 ```bash
 # Create the DynamoDB table for storing user credentials
+
 aws dynamodb create-table \
   --table-name TransferFamilyUsers \
   --attribute-definitions \

@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, precondition, postcondition, Validation, HCL, Infrastructure as Code
+Tags: OpenTofu, Data Source, Preconditions, Postconditions, Validation, HCL, Infrastructure as Code
 
-Description: Learn how to add custom conditions — preconditions and postconditions — to data sources in OpenTofu to validate infrastructure before it is referenced in your configuration.
+Description: Learn how to add custom conditions - preconditions and postconditions - to data sources in OpenTofu to validate infrastructure before it is referenced in your configuration.
 
 ---
 
@@ -165,10 +165,10 @@ data "aws_vpc" "production" {
 ## When Conditions Are Evaluated
 
 - **Preconditions** run before the data source is read, during planning
-- **Postconditions** run after the data source is read — if the data source read fails (not found), the postcondition won't run; if it succeeds, postconditions run before the result is used
+- **Postconditions** run after the data source is read - if the data source read fails (not found), the postcondition won't run; if it succeeds, postconditions run before the result is used
 
 ---
 
 ## Summary
 
-Custom conditions on data sources let you validate both inputs and results at plan time. Use `precondition` to validate variables and configuration before querying, and `postcondition` to enforce that discovered infrastructure meets your standards — correct state, required settings, expected properties. The `self` reference inside `postcondition` gives access to all the data source's attributes.
+Custom conditions on data sources let you validate both inputs and results at plan time. Use `precondition` to validate variables and configuration before querying, and `postcondition` to enforce that discovered infrastructure meets your standards - correct state, required settings, expected properties. The `self` reference inside `postcondition` gives access to all the data source's attributes.

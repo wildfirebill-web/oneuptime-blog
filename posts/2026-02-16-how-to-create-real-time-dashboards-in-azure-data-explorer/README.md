@@ -303,6 +303,7 @@ You can export and import dashboard definitions as JSON for version control:
 
 ```bash
 # Export a dashboard definition
+
 # Use the ADX API to retrieve the dashboard JSON
 curl -H "Authorization: Bearer $TOKEN" \
   "https://dataexplorer.azure.com/api/dashboards/{dashboard-id}" \

@@ -114,6 +114,7 @@ hubble observe --output json --since 1h | \
 
 ```bash
 # Port-forward Hubble UI
+
 kubectl port-forward -n kube-system svc/hubble-ui 12000:80 &
 open http://localhost:12000
 ```

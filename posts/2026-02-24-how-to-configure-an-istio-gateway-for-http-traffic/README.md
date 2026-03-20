@@ -276,6 +276,7 @@ After applying your configuration, verify it is working:
 
 ```bash
 # Check the gateway is applied
+
 kubectl get gateway
 
 # Check the VirtualService is applied

@@ -71,6 +71,7 @@ Monitor the canary's behavior under mirrored traffic:
 
 ```promql
 # Error rate on mirrored traffic
+
 sum(rate(istio_requests_total{
   destination_workload="my-api",
   destination_version="v2",

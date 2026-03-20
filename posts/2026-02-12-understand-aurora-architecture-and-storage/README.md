@@ -145,6 +145,7 @@ If your workload is I/O-intensive, consider Aurora I/O-Optimized. This configura
 
 ```bash
 # Switch to I/O-Optimized storage
+
 aws rds modify-db-cluster \
   --db-cluster-identifier my-aurora-cluster \
   --storage-type aurora-iopt1 \

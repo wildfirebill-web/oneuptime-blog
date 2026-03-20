@@ -32,6 +32,7 @@ Start by collecting your CodeBuild buildspec files and CodePipeline definitions.
 
 ```bash
 # List all CodeBuild projects
+
 aws codebuild list-projects --output table
 
 # Export a CodeBuild project configuration

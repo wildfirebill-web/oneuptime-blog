@@ -84,7 +84,7 @@ with grpc.insecure_channel("192.168.1.10:50051") as channel:
         if e.code() == grpc.StatusCode.DEADLINE_EXCEEDED:
             print("Call timed out")
         else:
-            print(f"RPC failed: {e.code()} — {e.details()}")
+            print(f"RPC failed: {e.code()} - {e.details()}")
 ```
 
 ## Go: gRPC Client
@@ -106,7 +106,7 @@ import (
 func main() {
     addr := "192.168.1.10:50051"
 
-    // grpc.Dial is deprecated in newer versions — use grpc.NewClient
+    // grpc.Dial is deprecated in newer versions - use grpc.NewClient
     conn, err := grpc.NewClient(
         addr,
         grpc.WithTransportCredentials(insecure.NewCredentials()),

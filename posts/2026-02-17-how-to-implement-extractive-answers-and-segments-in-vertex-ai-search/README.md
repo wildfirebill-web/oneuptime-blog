@@ -99,6 +99,7 @@ def search_with_extractive_answers(
     return response
 
 # Get extractive answers for a factual question
+
 search_with_extractive_answers(
     project_id="your-project-id",
     location="global",

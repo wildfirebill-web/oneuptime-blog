@@ -53,6 +53,7 @@ Here is a configuration file defining IC responsibilities and escalation trigger
 
 ```yaml
 # incident-commander-config.yaml
+
 # Defines the Incident Commander role, responsibilities, and escalation triggers
 
 incident_commander:

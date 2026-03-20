@@ -26,6 +26,7 @@ The most effective way to limit alert volume is to use `spec.exclusionList` to f
 
 ```yaml
 # Alert with aggressive exclusion rules to reduce volume
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

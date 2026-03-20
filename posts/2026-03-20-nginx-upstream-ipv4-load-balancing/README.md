@@ -86,6 +86,7 @@ upstream app-servers {
 
 ```bash
 # Check Nginx config syntax
+
 sudo nginx -t
 
 # Reload without dropping connections

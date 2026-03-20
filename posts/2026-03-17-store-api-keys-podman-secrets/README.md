@@ -18,6 +18,7 @@ API keys for third-party services, payment processors, cloud providers, and inte
 
 ```bash
 # Create a secret from an API key value
+
 echo -n "sk-live-abc123def456ghi789" | podman secret create stripe_api_key -
 
 # Create secrets for multiple services

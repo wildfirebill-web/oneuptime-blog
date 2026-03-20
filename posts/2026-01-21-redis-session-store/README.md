@@ -220,6 +220,7 @@ import os
 app = Flask(__name__)
 
 # Configure Flask-Session with Redis
+
 app.config['SESSION_TYPE'] = 'redis'
 app.config['SESSION_REDIS'] = redis.Redis(
     host=os.getenv('REDIS_HOST', 'localhost'),

@@ -17,8 +17,8 @@ netsh interface teredo show state
 ```
 
 Teredo is a threat if state is `client` or `probe`:
-```
-Type              : client            ← ACTIVE — needs to be disabled
+```text
+Type              : client            ← ACTIVE - needs to be disabled
 Server Name       : teredo.ipv6.microsoft.com
 Mapped Address    : 203.0.113.50:32000
 Network           : unmanaged
@@ -29,7 +29,7 @@ Client Refresh    : No
 ```
 
 If state is `dormant`, Teredo is installed but inactive (native IPv6 present). Still disable it:
-```
+```text
 Type              : dormant           ← inactive but can become active
 ```
 
@@ -48,6 +48,7 @@ netsh interface teredo show state
 
 ```powershell
 # Disable Teredo
+
 Set-NetTeredoConfiguration -Type Disabled
 
 # Verify
@@ -100,7 +101,7 @@ Note: Registry changes require a reboot to take full effect.
 
 ## Group Policy for Enterprise
 
-```
+```text
 Computer Configuration →
   Administrative Templates →
     Network →
@@ -142,7 +143,7 @@ if (-not (Test-Path $regPath)) {
 }
 Set-ItemProperty -Path $regPath -Name "DisabledComponents" -Value 0x01 -Type DWord
 
-# Windows Firewall — block UDP 3544
+# Windows Firewall - block UDP 3544
 New-NetFirewallRule -DisplayName "Block Teredo UDP 3544 Outbound" `
     -Direction Outbound -Protocol UDP -RemotePort 3544 `
     -Action Block -Enabled True -Profile Any -ErrorAction SilentlyContinue

@@ -20,6 +20,7 @@ The simplest file upload in Flask uses the `request.files` object. Here's a mini
 
 ```python
 # basic_upload.py
+
 # Minimal Flask file upload example
 from flask import Flask, request, jsonify
 import os

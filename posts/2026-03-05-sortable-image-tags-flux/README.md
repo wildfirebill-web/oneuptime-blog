@@ -34,6 +34,7 @@ SemVer is the most widely used format. Tags follow the `MAJOR.MINOR.PATCH` patte
 
 ```bash
 # Example CI/CD step that tags images with semver
+
 # Assumes VERSION is set from your release process
 docker build -t ghcr.io/my-org/my-app:${VERSION} .
 docker push ghcr.io/my-org/my-app:${VERSION}

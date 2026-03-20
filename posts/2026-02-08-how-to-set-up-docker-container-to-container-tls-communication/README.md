@@ -27,6 +27,7 @@ Start by creating a CA (Certificate Authority) that signs certificates for your 
 
 ```bash
 # Create a directory structure for the CA
+
 mkdir -p docker-tls/{ca,server,client}
 cd docker-tls
 

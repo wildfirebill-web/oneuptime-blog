@@ -16,6 +16,7 @@ By default, Flux Kustomizations apply resources and immediately report success i
 
 ```yaml
 # Kustomization with wait enabled
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

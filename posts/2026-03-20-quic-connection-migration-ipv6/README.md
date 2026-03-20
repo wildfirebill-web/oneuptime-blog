@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: QUIC, IPv6, Connection Migration, Networking, Mobile
 
-Description: Understand QUIC connection migration — how connections survive IP address changes in IPv6 environments and how to enable and test this feature.
+Description: Understand QUIC connection migration - how connections survive IP address changes in IPv6 environments and how to enable and test this feature.
 
 ## What is QUIC Connection Migration?
 
@@ -34,6 +34,7 @@ IPv6 hosts with privacy extensions (RFC 4941) regularly rotate their source addr
 
 ```bash
 # See current IPv6 privacy addresses on Linux
+
 ip -6 addr show | grep "temporary"
 # inet6 2001:db8::abc1 scope global temporary dynamic
 # inet6 2001:db8::def2 scope global temporary dynamic (expired)
@@ -62,8 +63,8 @@ server {
 
 For connection migration to work through load balancers, backends must share connection state or the load balancer must route by CID:
 
-```
-# HAProxy — route QUIC by connection ID (consistent hashing)
+```text
+# HAProxy - route QUIC by connection ID (consistent hashing)
 # HAProxy 2.7+ supports QUIC CID-based routing
 backend quic_backends
     balance first  # Or use CID-based consistent routing
@@ -108,7 +109,7 @@ asyncio.run(test_migration())
 
 ## PATH_CHALLENGE Flow
 
-```
+```text
 Client (old IP)     Server
      |                |
      |-- Initial ---->|   Connection established with CID=abc123
@@ -120,7 +121,7 @@ Client (new IP)     Server
      |-- PATH_CHALLENGE (new path) -->|
      |<-- PATH_RESPONSE --------------|
      |                |
-     | [Path verified — migration complete]
+     | [Path verified - migration complete]
      |                |
      |-- QUIC frames with CID=abc123 -->|   Same connection!
 ```

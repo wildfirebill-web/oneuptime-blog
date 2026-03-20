@@ -10,9 +10,9 @@ Description: Learn how to enable GRO and TSO network offloads on Linux to reduce
 
 Modern NICs can offload CPU-intensive packet processing to hardware:
 
-- **TSO (TCP Segmentation Offload)** — The kernel sends large chunks of data to the NIC, which splits them into MTU-sized segments. Without TSO, the kernel CPU does the splitting.
+- **TSO (TCP Segmentation Offload)** - The kernel sends large chunks of data to the NIC, which splits them into MTU-sized segments. Without TSO, the kernel CPU does the splitting.
 
-- **GRO (Generic Receive Offload)** — The NIC (or kernel) combines multiple small incoming TCP segments into one large buffer before passing to the TCP stack. This reduces per-packet overhead for receives.
+- **GRO (Generic Receive Offload)** - The NIC (or kernel) combines multiple small incoming TCP segments into one large buffer before passing to the TCP stack. This reduces per-packet overhead for receives.
 
 These offloads can double or triple throughput on busy servers by reducing CPU cycles spent on packet processing.
 
@@ -20,6 +20,7 @@ These offloads can double or triple throughput on busy servers by reducing CPU c
 
 ```bash
 # View all offload settings for an interface
+
 ethtool -k eth0
 
 # Key offloads to check:
@@ -59,7 +60,7 @@ GRO reduces CPU usage for large TCP receives:
 # Enable GRO
 ethtool -K eth0 gro on
 
-# Some NICs support LRO (Large Receive Offload — hardware GRO)
+# Some NICs support LRO (Large Receive Offload - hardware GRO)
 # LRO is more efficient but can cause issues with routing
 ethtool -K eth0 lro on 2>/dev/null && echo "LRO enabled" || echo "LRO not supported"
 

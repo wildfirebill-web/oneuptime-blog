@@ -22,6 +22,7 @@ Before eviction kicks in, you need to set a memory limit:
 # redis.conf
 
 # Set maximum memory to 2 gigabytes
+
 maxmemory 2gb
 
 # Or use a percentage (requires Redis 7.0+)

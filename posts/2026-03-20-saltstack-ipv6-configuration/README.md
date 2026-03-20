@@ -10,7 +10,7 @@ SaltStack's event-driven architecture and flexible state system make it well-sui
 
 ## Salt State File Structure
 
-```
+```text
 /srv/salt/
 ├── ipv6/
 │   ├── init.sls         # Main state
@@ -93,6 +93,7 @@ ipv6tables_installed:
     - name: iptables
 
 # Allow loopback
+
 ipv6_allow_loopback:
   cmd.run:
     - name: ip6tables -A INPUT -i lo -j ACCEPT
@@ -179,4 +180,4 @@ salt '*' grains.get ipv6
 salt -G 'os:Ubuntu' state.apply ipv6
 ```
 
-SaltStack's event-driven remote execution and flexible state engine make it efficient for deploying IPv6 configuration changes across large fleets — states can be applied immediately to all matching minions or scheduled for maintenance windows.
+SaltStack's event-driven remote execution and flexible state engine make it efficient for deploying IPv6 configuration changes across large fleets - states can be applied immediately to all matching minions or scheduled for maintenance windows.

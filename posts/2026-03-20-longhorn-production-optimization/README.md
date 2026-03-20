@@ -1,4 +1,4 @@
-# How to Optimize Longhorn Performance for Production
+# How to Optimize Longhorn Performance for Production - Production
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,6 +29,7 @@ Never use the OS disk for Longhorn data:
 
 ```bash
 # Format and mount a dedicated disk for Longhorn
+
 mkfs.xfs -f /dev/nvme1n1
 mkdir -p /var/lib/longhorn
 echo "/dev/nvme1n1 /var/lib/longhorn xfs defaults,noatime,nodiratime 0 0" >> /etc/fstab

@@ -45,6 +45,7 @@ graph TD
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Java 17

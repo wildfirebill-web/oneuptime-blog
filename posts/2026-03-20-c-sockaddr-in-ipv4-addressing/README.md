@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, Sockets, IPv4, sockaddr_in, Networking, Systems Programming
+Tags: C, Sockets, IPv4, Sockaddr_in, Networking, Systems Programming
 
 Description: Learn how to correctly populate and use struct sockaddr_in for IPv4 addressing in C, covering all fields, byte order conversion, and common patterns for bind, connect, and accept.
 
@@ -19,7 +19,7 @@ struct sockaddr_in {
     sa_family_t    sin_family;   /* AF_INET */
     in_port_t      sin_port;     /* port in network byte order */
     struct in_addr sin_addr;     /* IPv4 address */
-    char           sin_zero[8];  /* padding — zero this out */
+    char           sin_zero[8];  /* padding - zero this out */
 };
 
 struct in_addr {

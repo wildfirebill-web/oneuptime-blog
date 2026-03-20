@@ -295,6 +295,7 @@ public class RequestLoggingConfig {
 
 ```yaml
 # application.yml
+
 logging:
   level:
     org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG

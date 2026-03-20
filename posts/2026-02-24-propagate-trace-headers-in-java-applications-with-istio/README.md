@@ -373,6 +373,7 @@ After implementing header propagation, verify it works:
 
 ```bash
 # Send a request with trace headers
+
 curl -H "x-b3-traceid: 463ac35c9f6413ad48485a3953bb6124" \
      -H "x-b3-spanid: 0020000000000001" \
      -H "x-b3-sampled: 1" \

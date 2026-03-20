@@ -119,6 +119,7 @@ ArgoCD compares resources using a three-way diff:
 
 ```yaml
 # Git declares 3 replicas
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -452,7 +453,7 @@ argocd app diff myapp
 # Add to ignoreDifferences if legitimate
 ```
 
-### Resources Being Deleted Unexpectedly
+Resources Being Deleted Unexpectedly
 
 ```bash
 # Check prune settings

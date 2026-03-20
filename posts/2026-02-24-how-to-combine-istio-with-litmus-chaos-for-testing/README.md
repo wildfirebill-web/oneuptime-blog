@@ -295,6 +295,7 @@ With 50% packet loss, many requests will fail. The Istio retry policy should rec
 
 ```bash
 # Run requests during the chaos experiment
+
 for i in $(seq 1 50); do
   kubectl exec -n litmus-istio-test deploy/productpage-v1 -- \
     curl -s -o /dev/null -w "%{http_code}\n" \

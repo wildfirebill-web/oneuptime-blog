@@ -14,6 +14,7 @@ NXDOMAIN (Non-Existent Domain) means the DNS server is definitively saying "this
 
 ```bash
 # NXDOMAIN = the DOMAIN NAME does not exist (not a specific record type)
+
 # Example:
 dig nonexistent.example.com
 # status: NXDOMAIN → the name nonexistent.example.com doesn't exist in DNS
@@ -129,4 +130,4 @@ echo "NXDOMAIN test: ${RESULT:-correctly returned empty (no hijacking)}"
 
 ## Conclusion
 
-NXDOMAIN troubleshooting requires distinguishing four causes: truly missing domain (verify on authoritative server), missing specific record type (different from NXDOMAIN - check for NOERROR + empty answer), search domain expansion gone wrong (use FQDN with trailing dot to test), and resolver-specific blocking (compare multiple resolvers). Negative caching means a just-created hostname won't resolve until the SOA negative TTL expires on the querying resolver — flush the resolver cache to force immediate re-query.
+NXDOMAIN troubleshooting requires distinguishing four causes: truly missing domain (verify on authoritative server), missing specific record type (different from NXDOMAIN - check for NOERROR + empty answer), search domain expansion gone wrong (use FQDN with trailing dot to test), and resolver-specific blocking (compare multiple resolvers). Negative caching means a just-created hostname won't resolve until the SOA negative TTL expires on the querying resolver - flush the resolver cache to force immediate re-query.

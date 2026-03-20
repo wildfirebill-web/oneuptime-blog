@@ -44,6 +44,7 @@ connection = pika.BlockingConnection(
 channel = connection.channel()
 
 # Step 1: Create the dead letter exchange
+
 # This is just a regular exchange
 channel.exchange_declare(
     exchange='dlx',

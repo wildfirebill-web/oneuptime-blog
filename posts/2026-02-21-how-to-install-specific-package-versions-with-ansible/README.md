@@ -16,6 +16,7 @@ On Debian-based systems, you append the version to the package name with an equa
 
 ```yaml
 # Install a specific version of PostgreSQL on Ubuntu
+
 - name: Install PostgreSQL 15.4
   ansible.builtin.apt:
     name: postgresql-15=15.4-1.pgdg22.04+1

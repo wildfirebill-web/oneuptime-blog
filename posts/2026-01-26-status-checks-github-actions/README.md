@@ -30,6 +30,7 @@ Every job in a workflow creates a status check:
 
 ```yaml
 # .github/workflows/ci.yml
+
 name: CI
 
 on:

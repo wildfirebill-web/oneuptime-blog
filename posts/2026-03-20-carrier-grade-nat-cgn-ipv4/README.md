@@ -10,7 +10,7 @@ Description: Learn how Carrier-Grade NAT (CGN) works, how to configure it using 
 
 Carrier-Grade NAT (CGN, also called NAT444 or Large-Scale NAT) adds an additional NAT layer between the ISP's network and the customer's router:
 
-```
+```text
 Customer Device → Customer Router NAT (RFC 1918)
                 → ISP CGN NAT (RFC 6598 100.64.0.0/10)
                 → Internet (Public IP)
@@ -32,6 +32,7 @@ IANA assigned 100.64.0.0/10 specifically for CGN use:
 # Configure a Linux server as a CGN gateway
 
 # Enable IP forwarding
+
 sysctl -w net.ipv4.ip_forward=1
 
 # Configure CGN NAT:
@@ -134,4 +135,4 @@ done
 
 ## Conclusion
 
-CGN uses RFC 6598 (100.64.0.0/10) shared address space to NAT many customers to few public IPs. Configure with iptables MASQUERADE, increase the conntrack table for high customer counts, and implement translation logging for compliance. CGN is a stopgap that delays IPv6 adoption — for long-term scalability, deploy IPv6 natively with NAT64 for IPv4 internet access rather than adding CGN complexity.
+CGN uses RFC 6598 (100.64.0.0/10) shared address space to NAT many customers to few public IPs. Configure with iptables MASQUERADE, increase the conntrack table for high customer counts, and implement translation logging for compliance. CGN is a stopgap that delays IPv6 adoption - for long-term scalability, deploy IPv6 natively with NAT64 for IPv4 internet access rather than adding CGN complexity.

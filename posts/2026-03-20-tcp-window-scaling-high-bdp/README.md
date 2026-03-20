@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Window Scaling, Performance, Linux, sysctl, High Latency
+Tags: TCP, Window Scaling, Performance, Linux, Sysctl, High Latency
 
 Description: Learn how TCP window scaling works and how to configure it on Linux to allow large TCP windows needed for high throughput on high-bandwidth-delay product connections.
 
@@ -10,7 +10,7 @@ Description: Learn how TCP window scaling works and how to configure it on Linux
 
 The original TCP specification limited the window size to 65,535 bytes (a 16-bit field). This cap was sufficient for 1980s networks but is entirely inadequate for modern links:
 
-```
+```text
 Max throughput = Window Size / RTT
 = 65,535 bytes / 0.1 seconds (100ms RTT)
 = 655,350 bytes/sec = ~5 Mbps
@@ -24,6 +24,7 @@ TCP Window Scaling (RFC 1323) extends the window to up to 1 GB using a multiplie
 
 ```bash
 # Check if TCP window scaling is enabled (should be 1 by default)
+
 sysctl net.ipv4.tcp_window_scaling
 
 # Expected: net.ipv4.tcp_window_scaling = 1

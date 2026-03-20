@@ -38,6 +38,7 @@ Install the Azure plugin and configure an additional storage location:
 
 ```bash
 # Install Azure plugin
+
 velero plugin add velero/velero-plugin-for-microsoft-azure:v1.9.0
 
 # Create Azure credentials secret

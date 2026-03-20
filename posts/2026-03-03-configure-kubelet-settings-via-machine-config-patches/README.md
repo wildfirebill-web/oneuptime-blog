@@ -37,6 +37,7 @@ Labels are key-value pairs attached to the Kubernetes node object. They are used
 
 ```yaml
 # node-labels-patch.yaml
+
 machine:
   kubelet:
     nodeLabels:

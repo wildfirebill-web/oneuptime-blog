@@ -972,6 +972,7 @@ Test the endpoints with curl:
 
 ```bash
 # Health check (no auth required)
+
 curl http://localhost:8080/api/v1/health
 
 # Get all books (requires API key)

@@ -20,6 +20,7 @@ The `-d` or `--detach` flag runs the exec command in the background:
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # Run a detached command

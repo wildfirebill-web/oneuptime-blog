@@ -27,6 +27,7 @@ FedRAMP requires FIPS 140-2 validated cryptographic modules for cryptographic op
 
 ```bash
 # Install Ubuntu's FIPS packages
+
 # Note: FIPS mode is available in Ubuntu Pro/Advantage
 sudo ua enable fips
 

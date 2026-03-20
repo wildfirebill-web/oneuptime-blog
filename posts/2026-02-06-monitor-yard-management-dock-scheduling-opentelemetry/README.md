@@ -147,6 +147,7 @@ def execute_yard_move(move_id: str, trailer_id: str, from_spot: str, to_spot: st
 
 ```python
 # Truck wait time from arrival to dock assignment
+
 truck_wait_time = meter.create_histogram(
     "yard.truck.wait_time_minutes",
     description="Minutes between truck check-in and dock door start",

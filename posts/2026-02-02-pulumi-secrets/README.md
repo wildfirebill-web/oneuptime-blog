@@ -41,6 +41,7 @@ The most common way to add secrets is through the Pulumi CLI. Using the `--secre
 
 ```bash
 # Set a secret value - Pulumi encrypts it automatically
+
 # The value is stored encrypted in Pulumi.<stack>.yaml
 pulumi config set dbPassword superSecretPass123 --secret
 

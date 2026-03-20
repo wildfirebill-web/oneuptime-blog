@@ -127,6 +127,7 @@ Most ORMs provide configuration to control identifier quoting. For example, with
 
 ```python
 # SQLAlchemy configuration to use lowercase names
+
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 

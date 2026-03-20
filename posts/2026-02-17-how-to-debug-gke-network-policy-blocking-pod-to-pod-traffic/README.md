@@ -31,6 +31,7 @@ GKE does not enforce network policies by default. Verify it is enabled:
 
 ```bash
 # Check if network policy is enabled on the cluster
+
 gcloud container clusters describe your-cluster \
   --zone us-central1-a \
   --format="value(networkPolicy.enabled, addonsConfig.networkPolicyConfig.disabled)"

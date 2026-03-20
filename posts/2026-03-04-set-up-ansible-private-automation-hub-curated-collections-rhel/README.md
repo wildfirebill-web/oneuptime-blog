@@ -16,6 +16,7 @@ PAH is distributed as part of the Ansible Automation Platform subscription.
 
 ```bash
 # Register the system and attach the AAP subscription
+
 sudo subscription-manager register
 sudo subscription-manager attach --pool=<your-pool-id>
 

@@ -233,6 +233,7 @@ Check MetalLB status:
 
 ```bash
 # View controller and speaker pods
+
 kubectl get pods -n metallb-system
 
 # Check assigned IPs

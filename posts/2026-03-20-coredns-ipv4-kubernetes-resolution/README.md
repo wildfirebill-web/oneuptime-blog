@@ -12,6 +12,7 @@ CoreDNS is the default DNS server in Kubernetes. It resolves service names to Cl
 
 ```bash
 # CoreDNS configuration is stored in a ConfigMap
+
 kubectl get configmap coredns -n kube-system -o yaml
 
 # Default Corefile:
@@ -37,7 +38,7 @@ kubectl get configmap coredns -n kube-system -o yaml
 
 ## How Kubernetes DNS Resolution Works
 
-```
+```text
 Pod queries: my-service.my-namespace.svc.cluster.local
 CoreDNS searches kubernetes zone: cluster.local
 Returns: ClusterIP 10.96.45.123
@@ -55,7 +56,7 @@ Forward queries for internal corporate domains to your internal DNS server:
 kubectl edit configmap coredns -n kube-system
 ```
 
-```
+```text
 # Corefile with stub zone for internal domain
 .:53 {
     errors
@@ -88,7 +89,7 @@ kubectl rollout restart deployment/coredns -n kube-system
 
 ## Increasing DNS Cache TTL
 
-```
+```text
 .:53 {
     # Increase cache TTL from 30s to 300s for better performance
     cache 300
@@ -98,7 +99,7 @@ kubectl rollout restart deployment/coredns -n kube-system
 
 ## Configuring Negative Caching
 
-```
+```text
 .:53 {
     # Cache NXDOMAIN responses for 30 seconds (reduces failed lookups)
     cache 300 {
@@ -143,4 +144,4 @@ kubectl exec dnstest -- nslookup kubernetes.default.svc.cluster.local
 kubectl logs -n kube-system -l k8s-app=kube-dns --tail=50
 ```
 
-Well-tuned CoreDNS is critical for cluster performance — DNS is the first step in every service discovery operation.
+Well-tuned CoreDNS is critical for cluster performance - DNS is the first step in every service discovery operation.

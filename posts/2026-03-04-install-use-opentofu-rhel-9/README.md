@@ -14,6 +14,7 @@ OpenTofu is a community-driven, open-source fork of Terraform that maintains com
 
 ```bash
 # Install the OpenTofu repository
+
 sudo dnf install -y 'dnf-command(config-manager)'
 
 # Add the OpenTofu stable repository

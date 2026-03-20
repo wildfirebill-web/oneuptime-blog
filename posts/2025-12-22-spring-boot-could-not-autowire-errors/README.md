@@ -267,6 +267,7 @@ public class BeanDebugger implements CommandLineRunner {
 
 ```properties
 # application.properties
+
 logging.level.org.springframework.beans=DEBUG
 logging.level.org.springframework.context=DEBUG
 ```

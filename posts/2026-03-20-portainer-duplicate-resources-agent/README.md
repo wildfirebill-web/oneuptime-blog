@@ -1,4 +1,4 @@
-# How to Fix Duplicate Resources Appearing with Agent Endpoints
+# How to Fix Duplicate Resources Appearing with Agent Endpoints - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ If you're seeing the same container listed twice in Portainer, or networks and v
 
 ```bash
 # List all environments via Portainer API
+
 TOKEN=$(curl -s -X POST http://localhost:9000/api/auth \
   -H "Content-Type: application/json" \
   -d '{"Username":"admin","Password":"yourpassword"}' | jq -r .jwt)
@@ -33,7 +34,7 @@ Look for two entries with the same URL or pointing to the same Docker host. This
    - Click the environment → **Remove**
    - Confirm deletion
 
-Only the Portainer configuration is removed — the Docker host and its containers are unaffected.
+Only the Portainer configuration is removed - the Docker host and its containers are unaffected.
 
 ## Step 3: Check for Multiple Agent Instances
 

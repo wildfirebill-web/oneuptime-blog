@@ -30,6 +30,7 @@ You can verify connectivity by running:
 
 ```bash
 # Check that kubectl can reach your Talos cluster
+
 kubectl cluster-info
 
 # Verify nodes are ready

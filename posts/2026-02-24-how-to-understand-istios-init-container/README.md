@@ -237,6 +237,7 @@ The downside is that it requires a DaemonSet running on every node and adds comp
 
 ```bash
 # Check init container logs
+
 kubectl logs my-app-xyz -c istio-init
 ```
 

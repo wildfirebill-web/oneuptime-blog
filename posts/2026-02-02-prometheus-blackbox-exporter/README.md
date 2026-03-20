@@ -72,6 +72,7 @@ Running Blackbox Exporter in Docker provides the simplest deployment path. The f
 
 ```bash
 # Pull and run the official Blackbox Exporter image
+
 # Port 9115 is the default port for the exporter
 docker run -d \
   --name blackbox-exporter \

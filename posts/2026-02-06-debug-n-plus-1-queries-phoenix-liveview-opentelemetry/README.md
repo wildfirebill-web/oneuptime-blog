@@ -229,6 +229,7 @@ N+1 problems often span multiple association levels:
 
 ```elixir
 # Template accessing nested associations
+
 <%= for post <- @posts do %>
   <h2><%= post.title %></h2>
   <p>By <%= post.author.name %></p>

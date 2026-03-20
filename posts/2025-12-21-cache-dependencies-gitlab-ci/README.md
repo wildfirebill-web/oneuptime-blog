@@ -109,6 +109,7 @@ stages:
   - test
 
 # Only push to cache, don't pull
+
 install_dependencies:
   stage: setup
   cache:

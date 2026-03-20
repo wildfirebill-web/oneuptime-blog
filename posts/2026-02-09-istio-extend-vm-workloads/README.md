@@ -34,6 +34,7 @@ First, enable VM workload support in your Istio installation. Update your IstioO
 
 ```yaml
 # istio-vm-config.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

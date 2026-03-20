@@ -30,6 +30,7 @@ Start by setting up the Function App.
 
 ```bash
 # Create a Function App
+
 az functionapp create \
   --name tasks-api-functions \
   --resource-group rg-api \

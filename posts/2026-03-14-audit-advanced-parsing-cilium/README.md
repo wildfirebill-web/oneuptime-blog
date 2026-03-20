@@ -30,6 +30,7 @@ Recursive parsing functions are the highest-risk component of advanced parsers:
 
 ```bash
 # Find all recursive functions
+
 grep -rn "func.*parse\|func.*read\|func.*decode" proxylib/myprotocol/*.go | grep -v test
 
 # Check for depth parameters

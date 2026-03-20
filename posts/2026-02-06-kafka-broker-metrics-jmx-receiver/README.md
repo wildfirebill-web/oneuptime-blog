@@ -14,6 +14,7 @@ Add JMX configuration to your Kafka broker startup:
 
 ```bash
 # In kafka-server-start.sh or via environment variable
+
 export KAFKA_JMX_OPTS="-Dcom.sun.management.jmxremote \
   -Dcom.sun.management.jmxremote.port=9999 \
   -Dcom.sun.management.jmxremote.authenticate=false \

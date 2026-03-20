@@ -30,6 +30,7 @@ Azure blocks IP-in-IP traffic, so VXLAN mode is mandatory.
 
 ```bash
 # Check the IP pool encapsulation mode
+
 calicoctl get ippool default-ipv4-ippool -o yaml | grep -E "ipipMode|vxlanMode"
 ```
 

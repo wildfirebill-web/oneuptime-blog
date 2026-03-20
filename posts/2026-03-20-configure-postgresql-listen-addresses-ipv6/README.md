@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, PostgreSQL, listen_addresses, Database Configuration
+Tags: IPv6, PostgreSQL, Listen_addresses, Database Configuration
 
 Description: Learn how to configure the PostgreSQL listen_addresses parameter to bind to IPv6 interfaces, including specific IPv6 addresses, all interfaces, and dual-stack configurations.
 
@@ -12,6 +12,7 @@ Description: Learn how to configure the PostgreSQL listen_addresses parameter to
 # postgresql.conf - listen_addresses parameter
 
 # Default: only localhost (IPv4 and IPv6 loopback)
+
 listen_addresses = 'localhost'
 
 # Wildcard: all available IPv4 and IPv6 interfaces
@@ -108,4 +109,4 @@ WHERE pending_restart = true OR name = 'listen_addresses';"
 
 ## Summary
 
-Configure PostgreSQL to listen on IPv6 by setting `listen_addresses = '*'` (all interfaces) or `listen_addresses = '::1, 2001:db8::10'` (specific addresses) in `postgresql.conf`. This parameter requires a PostgreSQL restart. Verify with `ss -6 -tlnp | grep 5432`. Remember to also update `pg_hba.conf` to allow connections from IPv6 clients — changing `listen_addresses` alone is not sufficient to allow remote IPv6 connections.
+Configure PostgreSQL to listen on IPv6 by setting `listen_addresses = '*'` (all interfaces) or `listen_addresses = '::1, 2001:db8::10'` (specific addresses) in `postgresql.conf`. This parameter requires a PostgreSQL restart. Verify with `ss -6 -tlnp | grep 5432`. Remember to also update `pg_hba.conf` to allow connections from IPv6 clients - changing `listen_addresses` alone is not sufficient to allow remote IPv6 connections.

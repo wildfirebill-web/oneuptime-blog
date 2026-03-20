@@ -307,6 +307,7 @@ Set up access to the Jaeger UI:
 
 ```bash
 # Port forward for quick access
+
 kubectl port-forward svc/jaeger-query -n observability 16686:16686
 ```
 

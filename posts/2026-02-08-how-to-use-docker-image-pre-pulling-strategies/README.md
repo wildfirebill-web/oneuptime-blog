@@ -29,6 +29,7 @@ The simplest approach runs a cron job that pulls images on a schedule:
 ```bash
 #!/bin/bash
 # pre-pull-images.sh
+
 # Pulls the latest versions of frequently used images
 
 IMAGES=(

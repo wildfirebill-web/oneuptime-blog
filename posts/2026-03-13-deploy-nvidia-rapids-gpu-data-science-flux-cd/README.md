@@ -27,6 +27,7 @@ This guide covers deploying RAPIDS JupyterLab and batch processing capabilities 
 
 ```yaml
 # clusters/my-cluster/rapids/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

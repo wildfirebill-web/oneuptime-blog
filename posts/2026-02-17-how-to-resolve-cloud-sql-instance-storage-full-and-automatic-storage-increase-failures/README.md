@@ -30,6 +30,7 @@ PANIC: could not write to file "pg_wal/...": No space left on device
 
 ```bash
 # Check instance storage usage
+
 gcloud sql instances describe my-instance \
     --project=my-project \
     --format="table(settings.dataDiskSizeGb, settings.dataDiskType, settings.storageAutoResize, settings.storageAutoResizeLimit)"

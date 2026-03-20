@@ -19,7 +19,7 @@ For organizations that cannot use public platforms like GitHub, hosting Portaine
 
 ## Architecture Overview
 
-```
+```text
 Portainer → HTTP GET → Web Server → templates.json
                                   → stacks/*/docker-compose.yml
 ```
@@ -32,6 +32,7 @@ Portainer fetches the `templates.json` file via HTTP/HTTPS. Stack templates refe
 
 ```bash
 # Create directory structure on the web server
+
 mkdir -p /opt/portainer-templates/stacks/{wordpress,monitoring,gitea}
 mkdir -p /opt/portainer-templates/logos
 ```
@@ -187,7 +188,7 @@ volumes:
   caddy-data:
 ```
 
-```
+```text
 # Caddyfile
 templates.company.com {
     root * /srv
@@ -214,7 +215,7 @@ python3 -m http.server 8080
 1. In Portainer, go to **Settings**
 2. Set the **App Templates URL**:
 
-```
+```text
 http://templates.internal.company.com:8080/templates.json
 # or with HTTPS:
 https://templates.internal.company.com/templates.json

@@ -36,6 +36,7 @@ Draft is available as an Azure CLI extension and as a standalone binary.
 
 ```bash
 # Install Draft as an Azure CLI extension
+
 az extension add --name aks-draft
 
 # Verify the installation

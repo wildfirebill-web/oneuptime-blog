@@ -29,6 +29,7 @@ Set `state: absent` to delete a resource. This is the mirror of `state: present`
 
 ```yaml
 # playbook: delete-deployment.yml
+
 # Deletes a specific Deployment by name
 ---
 - name: Delete Kubernetes Deployment

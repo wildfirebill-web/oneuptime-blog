@@ -39,6 +39,7 @@ Common use cases:
 
 ```bash
 # Add single element
+
 ZADD leaderboard 100 "player1"
 
 # Add multiple elements

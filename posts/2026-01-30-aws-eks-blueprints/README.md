@@ -65,6 +65,7 @@ Start with the provider setup and base cluster definition.
 
 ```hcl
 # versions.tf
+
 # Pin provider versions to avoid unexpected breaking changes
 terraform {
   required_version = ">= 1.0"

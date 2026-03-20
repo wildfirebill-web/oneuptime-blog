@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, PHP, PHP-FPM, Web Server
+Tags: Ubuntu, Nginx, PHP, PHP-FPM, Web Server
 
 Description: Configure Nginx to serve PHP applications using PHP-FPM on Ubuntu, including pool configuration, multiple PHP versions, and security hardening.
 
@@ -14,6 +14,7 @@ Nginx doesn't execute PHP natively. Instead, it passes PHP requests to PHP-FPM (
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Nginx

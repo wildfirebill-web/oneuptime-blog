@@ -66,6 +66,7 @@ Each cluster has its own entry point directory:
 
 ```yaml
 # clusters/staging/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

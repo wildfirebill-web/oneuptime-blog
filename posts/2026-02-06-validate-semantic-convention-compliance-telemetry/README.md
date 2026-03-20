@@ -35,6 +35,7 @@ The first layer of defense is in your application tests. Write tests that verify
 
 ```python
 # test_instrumentation.py
+
 # Unit tests that verify spans carry the correct semantic convention attributes.
 # These run in CI and catch convention drift before code is deployed.
 

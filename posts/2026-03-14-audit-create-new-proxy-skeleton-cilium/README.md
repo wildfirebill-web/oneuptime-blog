@@ -32,6 +32,7 @@ Start with automated analysis to catch low-hanging issues:
 cd cilium
 
 # Run go vet on the new parser package
+
 go vet ./proxylib/myprotocol/...
 
 # Run staticcheck for deeper analysis

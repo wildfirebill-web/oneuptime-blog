@@ -34,6 +34,7 @@ Both the MetalLB controller and speaker pods expose this metric on their metrics
 
 ```bash
 # Access speaker metrics via port-forward
+
 kubectl port-forward -n metallb-system \
   $(kubectl get pod -n metallb-system -l component=speaker -o name | head -1) \
   7472:7472 &

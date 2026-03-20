@@ -105,6 +105,7 @@ Electronic Codebook (ECB) mode encrypts identical plaintext blocks to identical 
 
 ```python
 # VULNERABLE: ECB mode reveals patterns in encrypted data
+
 from Crypto.Cipher import AES
 import os
 

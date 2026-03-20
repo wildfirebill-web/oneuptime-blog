@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: vsftpd, FTPS, SSL, TLS, IPv4, Encryption, Certificate
+Tags: vsftpd, FTPS, SSL, TLS, IPv4, Encryption, Certificates
 
 Description: Configure vsftpd to use SSL/TLS encryption (FTPS) on IPv4, generate or install a certificate, require encrypted connections, and verify with an FTPS client.
 
@@ -14,6 +14,7 @@ Plain FTP transmits credentials and data in cleartext. FTPS (FTP over SSL/TLS) a
 
 ```bash
 # Generate a self-signed certificate (for testing/internal use)
+
 sudo openssl req -x509 -nodes -days 365 \
   -newkey rsa:2048 \
   -keyout /etc/ssl/private/vsftpd.key \
@@ -59,7 +60,7 @@ write_enable=YES
 chroot_local_user=YES
 allow_writeable_chroot=YES
 
-# SSL/TLS — Enable FTPS
+# SSL/TLS - Enable FTPS
 ssl_enable=YES
 
 # Certificate and key paths

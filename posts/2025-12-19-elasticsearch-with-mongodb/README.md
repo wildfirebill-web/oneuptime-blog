@@ -59,6 +59,7 @@ import time
 from datetime import datetime
 
 # MongoDB connection
+
 mongo_client = MongoClient("mongodb://localhost:27017")
 mongo_db = mongo_client["myapp"]
 

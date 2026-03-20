@@ -39,6 +39,7 @@ Before starting, set up the MGN service in your target region.
 
 ```bash
 # Initialize MGN in the target region
+
 aws mgn initialize-service --region us-east-1
 ```
 

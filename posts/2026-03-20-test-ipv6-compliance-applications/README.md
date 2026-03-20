@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Compliance Testing, Applications, Web, API, Development
+Tags: IPv6, Compliance Testing, Application, Web, API, Development
 
 Description: Test applications for IPv6 compliance, including web applications, APIs, client software, and backend services to ensure correct behavior on IPv6 networks.
 
@@ -14,6 +14,7 @@ Application IPv6 compliance testing verifies that software correctly handles IPv
 
 ```bash
 # Test 1: Web application serves correctly over IPv6
+
 # Application must respond to IPv6 requests
 
 # Basic connectivity test

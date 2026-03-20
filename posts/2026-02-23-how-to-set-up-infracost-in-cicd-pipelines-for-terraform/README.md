@@ -18,6 +18,7 @@ Infracost runs during your CI/CD pipeline, analyzes the Terraform plan, calculat
 
 ```yaml
 # .github/workflows/infracost.yml
+
 name: Infracost
 on:
   pull_request:

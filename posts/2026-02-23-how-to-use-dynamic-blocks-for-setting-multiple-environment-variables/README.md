@@ -107,6 +107,7 @@ variable "container_env_vars" {
 }
 
 # ECS wants a JSON list of {name, value} objects
+
 locals {
   container_environment = [
     for key, value in var.container_env_vars : {

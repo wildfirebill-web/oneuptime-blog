@@ -31,6 +31,7 @@ Set up Prometheus to scrape ArgoCD metrics and create dashboards for memory trac
 
 ```yaml
 # ServiceMonitor for ArgoCD components
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

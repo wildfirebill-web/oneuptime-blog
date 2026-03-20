@@ -23,6 +23,7 @@ You can set environment variables when creating the container app.
 
 ```bash
 # Create a container app with environment variables
+
 az containerapp create \
   --name my-api \
   --resource-group my-rg \

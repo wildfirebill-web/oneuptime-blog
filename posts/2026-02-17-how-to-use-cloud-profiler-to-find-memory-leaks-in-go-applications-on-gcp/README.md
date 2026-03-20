@@ -249,6 +249,7 @@ Set up Cloud Monitoring alerts for memory growth to catch leaks early.
 
 ```bash
 # Alert when memory usage exceeds 80% of the container limit
+
 gcloud monitoring policies create \
   --display-name="Memory Leak Detection" \
   --condition-display-name="Memory usage growing" \

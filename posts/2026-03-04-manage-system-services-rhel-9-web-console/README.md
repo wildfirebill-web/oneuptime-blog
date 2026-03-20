@@ -47,6 +47,7 @@ This is the equivalent of running these commands combined:
 
 ```bash
 # What Cockpit shows you in one click
+
 systemctl status httpd.service
 journalctl -u httpd.service --no-pager -n 20
 systemctl is-enabled httpd.service

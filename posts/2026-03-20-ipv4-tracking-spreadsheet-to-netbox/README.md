@@ -8,7 +8,7 @@ Description: Migrate your IPv4 address inventory from spreadsheets to a proper I
 
 ## Introduction
 
-Many organizations track IP addresses in Excel or Google Sheets. While this works for small networks, it breaks down at scale — no conflict detection, no audit trail, no API integration. Migrating to NetBox (open-source, API-first) or phpIPAM gives you a proper IPAM system with automation capabilities.
+Many organizations track IP addresses in Excel or Google Sheets. While this works for small networks, it breaks down at scale - no conflict detection, no audit trail, no API integration. Migrating to NetBox (open-source, API-first) or phpIPAM gives you a proper IPAM system with automation capabilities.
 
 ## Why Migrate to a Proper IPAM Tool
 
@@ -27,6 +27,7 @@ Structure your existing data into a CSV with standard columns:
 
 ```csv
 # ip-inventory.csv
+
 ip_address,subnet,hostname,description,device,location,vlan,status
 10.1.1.10,10.1.1.0/24,web-01.example.com,Web server,Dell PowerEdge,NYC-DC,10,active
 10.1.1.11,10.1.1.0/24,web-02.example.com,Web server,Dell PowerEdge,NYC-DC,10,active
@@ -70,7 +71,7 @@ with open("ip-inventory.csv") as f:
         if r.status_code == 201:
             print(f"Created: {row['ip_address']}")
         else:
-            print(f"Error {r.status_code}: {row['ip_address']} — {r.text}")
+            print(f"Error {r.status_code}: {row['ip_address']} - {r.text}")
 PYEOF
 ```
 
@@ -127,4 +128,4 @@ curl -s "http://netbox.example.com/api/ipam/ip-addresses/?limit=1000" \
 
 ## Conclusion
 
-Migrating to NetBox or phpIPAM replaces fragile spreadsheets with a robust, API-driven IPAM platform. The bulk import process is straightforward — export to CSV, transform to the tool's format, and validate after import. Once live, integrate with your provisioning workflows to keep the IPAM database accurate automatically.
+Migrating to NetBox or phpIPAM replaces fragile spreadsheets with a robust, API-driven IPAM platform. The bulk import process is straightforward - export to CSV, transform to the tool's format, and validate after import. Once live, integrate with your provisioning workflows to keep the IPAM database accurate automatically.

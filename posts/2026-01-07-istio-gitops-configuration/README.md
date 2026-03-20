@@ -69,6 +69,7 @@ A well-organized repository structure is crucial for managing Istio configuratio
 
 ```text
 # Directory structure for Istio GitOps repository
+
 # Organized by environment and resource type for clarity
 
 istio-config/

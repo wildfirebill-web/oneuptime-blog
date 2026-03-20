@@ -29,6 +29,7 @@ The amtool CLI provides the simplest way to create silences:
 
 ```bash
 # Install amtool
+
 wget https://github.com/prometheus/alertmanager/releases/download/v0.26.0/alertmanager-0.26.0.linux-amd64.tar.gz
 tar xvf alertmanager-0.26.0.linux-amd64.tar.gz
 sudo cp alertmanager-0.26.0.linux-amd64/amtool /usr/local/bin/

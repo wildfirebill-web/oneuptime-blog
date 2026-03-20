@@ -268,6 +268,7 @@ Start with flags disabled, then gradually increase exposure:
 
 ```bash
 # Day 1: Deploy with flag disabled
+
 kubectl apply -f deployment.yaml
 
 # Day 2: Enable for internal users (via external flag service)

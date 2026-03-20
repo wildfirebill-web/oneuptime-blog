@@ -76,6 +76,7 @@ graph TB
 
 ```bash
 # First, publish a version (provisioned concurrency requires a version or alias)
+
 aws lambda publish-version \
   --function-name api-handler \
   --description "Production release v1.0"

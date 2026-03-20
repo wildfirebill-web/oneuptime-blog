@@ -20,6 +20,7 @@ Generate ECDSA certificates for a performance-optimized setup.
 
 ```bash
 # Generate ECDSA CA
+
 openssl ecparam -genkey -name prime256v1 -out /etc/calico/pki/typha-ca-ec.key
 openssl req -x509 -new -key /etc/calico/pki/typha-ca-ec.key \
   -out /etc/calico/pki/typha-ca-ec.crt \

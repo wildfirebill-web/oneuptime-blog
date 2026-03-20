@@ -40,6 +40,7 @@ The following Dockerfile demonstrates a multi-stage build for a Node.js applicat
 
 ```dockerfile
 # Stage 1: Build stage with all development dependencies
+
 # Using a specific version tag ensures reproducible builds across CI runs
 FROM node:20-alpine AS builder
 

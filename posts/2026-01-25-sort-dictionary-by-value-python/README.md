@@ -18,6 +18,7 @@ The most common approach uses `sorted()` with a key function.
 scores = {'Alice': 85, 'Bob': 92, 'Charlie': 78, 'Diana': 95}
 
 # Sort by value (ascending)
+
 sorted_scores = dict(sorted(scores.items(), key=lambda x: x[1]))
 print(sorted_scores)
 # {'Charlie': 78, 'Alice': 85, 'Bob': 92, 'Diana': 95}

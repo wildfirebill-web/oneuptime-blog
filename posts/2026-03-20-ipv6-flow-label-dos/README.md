@@ -12,7 +12,7 @@ The IPv6 Flow Label is a 20-bit field intended to allow routers to handle all pa
 
 ## IPv6 Flow Label: Intended Use
 
-```
+```text
 IPv6 Header (40 bytes):
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |Version| Traffic Class |            Flow Label                 |
@@ -32,6 +32,7 @@ Some load balancers and firewalls use the Flow Label as a fast-path session iden
 
 ```bash
 # Attacker: Sniff the flow label of victim's session
+
 tcpdump -i eth0 'ip6 and tcp and src host victim-ip' -e | grep 'flow'
 # → Capture: flowlabel 0xABC12
 
@@ -44,7 +45,7 @@ send(pkt)
 # If the load balancer routes by flow label alone → session injected
 ```
 
-**Defense:** Load balancers and firewalls should not rely solely on Flow Label for session identification — must also verify 5-tuple (src IP, dst IP, src port, dst port, protocol).
+**Defense:** Load balancers and firewalls should not rely solely on Flow Label for session identification - must also verify 5-tuple (src IP, dst IP, src port, dst port, protocol).
 
 ## Attack 2: Flow Label Collision DoS
 
@@ -108,7 +109,7 @@ nft add rule ip6 filter input tcp flags syn drop
 
 ### Router-Level Mitigation (Cisco)
 
-```
+```text
 ! Rate-limit flows from single source to prevent table exhaustion
 ! CoPP entry targeting high flow-label cardinality
 class-map match-any IPV6-FLOOD

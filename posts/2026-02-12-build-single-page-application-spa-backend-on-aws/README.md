@@ -38,6 +38,7 @@ Create the Cognito User Pool and app client:
 
 ```bash
 # Create the user pool
+
 aws cognito-idp create-user-pool \
   --pool-name spa-backend-users \
   --auto-verified-attributes email \

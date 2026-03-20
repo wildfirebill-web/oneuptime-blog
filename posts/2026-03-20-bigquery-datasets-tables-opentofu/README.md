@@ -14,6 +14,7 @@ BigQuery is Google Cloud's serverless, fully managed data warehouse. Managing da
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     google = {
@@ -35,7 +36,7 @@ resource "google_bigquery_dataset" "analytics" {
   description                 = "Contains processed analytics events and aggregated metrics"
   location                    = var.location  # e.g., US or EU
 
-  # Default table expiration — 2 years
+  # Default table expiration - 2 years
   default_table_expiration_ms = 63072000000
 
   # Default partition expiration for partitioned tables
@@ -192,4 +193,4 @@ resource "google_bigquery_table" "users" {
 - Add clustering on the columns most commonly used in WHERE clauses after the partition column.
 - Use `default_table_expiration_ms` on datasets to automatically clean up old data and control storage costs.
 - Apply policy tags to sensitive columns (PII, financial data) to enforce column-level access control.
-- Use OpenTofu to manage dataset-level IAM access — this ensures access grants are tracked and reviewable.
+- Use OpenTofu to manage dataset-level IAM access - this ensures access grants are tracked and reviewable.

@@ -26,6 +26,7 @@ Terrascan brings a few things to the table that other IaC scanners do not:
 
 ```bash
 # macOS with Homebrew
+
 brew install terrascan
 
 # Linux binary

@@ -16,6 +16,7 @@ This guide covers creating queue storage in Terraform, configuring multiple queu
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

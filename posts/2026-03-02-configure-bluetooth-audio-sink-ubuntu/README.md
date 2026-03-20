@@ -24,6 +24,7 @@ Ubuntu 22.04+ ships with PipeWire as the default audio server. Ubuntu 20.04 uses
 
 ```bash
 # Check if PipeWire is running
+
 systemctl --user status pipewire
 
 # Check if PulseAudio is running

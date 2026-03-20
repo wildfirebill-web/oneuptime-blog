@@ -22,6 +22,7 @@ When investigating incidents across distributed systems, correlating logs from m
 
 ```bash
 # Example: Trying to correlate logs from two servers with time drift
+
 # Server A (correct time): 2026-01-07 10:00:00 - User login request received
 # Server B (5 seconds behind): 2026-01-07 09:59:55 - Authentication service responded
 # This makes it appear the response came before the request!

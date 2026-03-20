@@ -27,6 +27,7 @@ PORTAINER_URL="https://portainer.mycompany.com"
 ENDPOINT_ID=1  # Your Docker environment ID
 
 # Read the compose file content
+
 STACK_CONTENT=$(cat docker-compose.yml)
 
 # Deploy the stack

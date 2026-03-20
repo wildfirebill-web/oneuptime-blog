@@ -14,6 +14,7 @@ Router Advertisements (RAs) are ICMPv6 messages sent by routers to announce IPv6
 
 ```bash
 # Send Router Solicitation and wait for RA response
+
 rdisc6 eth0
 
 # Wait longer (5 seconds) and try multiple times
@@ -135,9 +136,9 @@ echo ""
 echo "1. accept_ra setting:"
 val=$(cat /proc/sys/net/ipv6/conf/$IFACE/accept_ra 2>/dev/null)
 case "$val" in
-    0) echo "  [FAIL] accept_ra=0 — RAs will be ignored" ;;
-    1) echo "  [OK] accept_ra=1 — RAs will be processed" ;;
-    2) echo "  [OK] accept_ra=2 — RAs processed even with forwarding" ;;
+    0) echo "  [FAIL] accept_ra=0 - RAs will be ignored" ;;
+    1) echo "  [OK] accept_ra=1 - RAs will be processed" ;;
+    2) echo "  [OK] accept_ra=2 - RAs processed even with forwarding" ;;
     *) echo "  [?] accept_ra=$val" ;;
 esac
 
@@ -146,7 +147,7 @@ echo "2. IPv6 forwarding:"
 fwd=$(cat /proc/sys/net/ipv6/conf/$IFACE/forwarding 2>/dev/null)
 echo "  forwarding=$fwd"
 [ "$fwd" = "1" ] && [ "$val" = "1" ] && \
-    echo "  [WARN] forwarding=1 but accept_ra=1 — set accept_ra=2"
+    echo "  [WARN] forwarding=1 but accept_ra=1 - set accept_ra=2"
 
 echo ""
 echo "3. Actively soliciting RA (3s timeout)..."

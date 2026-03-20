@@ -1,4 +1,4 @@
-# How to Create a KMS Key with OpenTofu on AWS
+# How to Create a KMS Key with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -107,6 +107,7 @@ resource "aws_kms_key" "main" {
 
 ```hcl
 # Human-readable alias for the key
+
 resource "aws_kms_alias" "main" {
   name          = "alias/my-app-key"
   target_key_id = aws_kms_key.main.key_id

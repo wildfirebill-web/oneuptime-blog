@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, Logging, IPv4, Access Log, CustomLog, Security
+Tags: Apache, Logging, IPv4, Access Logs, CustomLog, Security
 
 Description: Configure Apache custom log formats to accurately record client IPv4 addresses, including real IPs from X-Forwarded-For headers when behind a proxy.
 
 ## Introduction
 
-Apache's access logs are your primary source for security auditing, traffic analysis, and debugging. Properly capturing client IPv4 addresses—especially when Apache sits behind load balancers—requires understanding log format directives and the `mod_remoteip` module.
+Apache's access logs are your primary source for security auditing, traffic analysis, and debugging. Properly capturing client IPv4 addresses-especially when Apache sits behind load balancers-requires understanding log format directives and the `mod_remoteip` module.
 
 ## Default Log Formats
 
@@ -16,6 +16,7 @@ Apache ships with two built-in formats:
 
 ```apache
 # combined: includes referer and user agent
+
 LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
 
 # common: basic format
@@ -37,7 +38,7 @@ Disable hostname lookups to log raw IPv4 addresses (faster):
 ```apache
 # /etc/apache2/apache2.conf or httpd.conf
 
-# Disable reverse DNS lookups — log IP addresses directly
+# Disable reverse DNS lookups - log IP addresses directly
 HostnameLookups Off
 ```
 
@@ -119,7 +120,7 @@ awk '{print $4}' /var/log/apache2/access.log | cut -c2-18 | uniq -c
 ## Log Rotation
 
 ```bash
-# Apache uses logrotate — check configuration
+# Apache uses logrotate - check configuration
 cat /etc/logrotate.d/apache2
 
 # Typical logrotate config:

@@ -14,6 +14,7 @@ Apache Cassandra is a distributed NoSQL database designed for handling large amo
 
 ```yaml
 # docker-compose.yml - Apache Cassandra Cluster
+
 version: "3.8"
 
 networks:

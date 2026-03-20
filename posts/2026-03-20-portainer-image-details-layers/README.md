@@ -32,6 +32,7 @@ Docker images are composed of stacked layers, each representing a filesystem cha
 
 ```bash
 # Full JSON inspection:
+
 docker inspect nginx:alpine
 
 # Format specific fields:
@@ -194,4 +195,4 @@ docker run --rm myapp:latest sh -c "apk list 2>/dev/null || dpkg -l 2>/dev/null"
 
 ## Conclusion
 
-Viewing image details and layers in Portainer and Docker CLI gives you a complete picture of what's inside a container image — its layers, environment variables, entry points, labels, and metadata. This information is essential for optimizing image sizes (reducing layers and removing unnecessary files), debugging startup issues (checking CMD and ENTRYPOINT), and auditing security (verifying no secrets in environment variables, checking the running user).
+Viewing image details and layers in Portainer and Docker CLI gives you a complete picture of what's inside a container image - its layers, environment variables, entry points, labels, and metadata. This information is essential for optimizing image sizes (reducing layers and removing unnecessary files), debugging startup issues (checking CMD and ENTRYPOINT), and auditing security (verifying no secrets in environment variables, checking the running user).

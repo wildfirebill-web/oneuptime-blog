@@ -21,7 +21,7 @@ Open browser DevTools (`F12`) > Network tab > Filter by **WS**. Click the contai
 | `502 Bad Gateway` | Proxy cannot reach Portainer backend |
 | `101` then immediate close | Timeout or proxy terminating idle connection |
 
-## Step 2: Fix Nginx — Full Configuration
+## Step 2: Fix Nginx - Full Configuration
 
 ```nginx
 server {
@@ -59,8 +59,9 @@ server {
 
 If using HAProxy as the load balancer:
 
-```
+```text
 # HAProxy configuration for WebSocket
+
 frontend portainer_frontend
     bind *:443 ssl crt /etc/ssl/portainer.pem
     default_backend portainer_backend

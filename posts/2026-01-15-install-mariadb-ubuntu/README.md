@@ -22,6 +22,7 @@ MariaDB is a community-developed fork of MySQL that's fully compatible with MySQ
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install MariaDB

@@ -288,6 +288,7 @@ Since SMTP is treated as TCP by Istio, you get TCP-level metrics:
 
 ```promql
 # Bytes sent to the mail server
+
 rate(istio_tcp_sent_bytes_total{destination_service="mail-server.mail.svc.cluster.local"}[5m])
 
 # Active connections to the mail server

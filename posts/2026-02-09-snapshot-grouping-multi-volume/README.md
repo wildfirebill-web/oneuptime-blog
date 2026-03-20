@@ -252,6 +252,7 @@ echo "=== Restoring snapshot group: $GROUP_ID ==="
 echo "Target namespace: $TARGET_NAMESPACE"
 
 # Get all snapshots in the group
+
 SNAPSHOTS=$(kubectl get volumesnapshot -l snapshot-group=$GROUP_ID \
   -o jsonpath='{.items[*].metadata.name}')
 

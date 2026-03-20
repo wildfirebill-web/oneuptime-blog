@@ -22,6 +22,7 @@ Each project has a unique Container Registry URL based on your GitLab instance a
 
 ```text
 # GitLab.com format
+
 registry.gitlab.com/group/project
 
 # Self-managed format

@@ -46,6 +46,7 @@ Geekbench for Linux is available from the Primate Labs website. It is not availa
 
 ```bash
 # Download the latest Geekbench 6 for Linux
+
 # Check https://www.geekbench.com/download/linux/ for the current version
 
 GB_VERSION="6.3.0"

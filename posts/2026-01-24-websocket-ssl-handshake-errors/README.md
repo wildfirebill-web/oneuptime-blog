@@ -107,6 +107,7 @@ Missing intermediate certificates cause verification failures.
 
 ```bash
 # Check certificate chain
+
 openssl s_client -connect example.com:443 -showcerts
 
 # Verify certificate chain

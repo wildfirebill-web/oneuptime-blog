@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, certbot, ssl, tls, acme, security
+Tags: Portainer, Certbot, SSL, TLS, ACME, Security
 
 Description: A detailed guide to using Certbot to obtain and manage SSL certificates for Portainer, including automated renewal and multiple ACME challenge methods.
 
@@ -20,6 +20,7 @@ Certbot is the official ACME client for Let's Encrypt. It automates the process 
 
 ```bash
 # Ubuntu 22.04/24.04
+
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
@@ -177,4 +178,4 @@ echo | openssl s_client -connect portainer.example.com:9443 2>/dev/null \
 
 ## Conclusion
 
-Certbot with multiple challenge methods covers Portainer deployments across all network environments — standalone for simple setups, webroot for servers already running Nginx, and DNS-01 for private/internal Portainer instances. Renewal hooks ensure certificates are automatically deployed to Portainer without manual intervention, maintaining continuous HTTPS availability.
+Certbot with multiple challenge methods covers Portainer deployments across all network environments - standalone for simple setups, webroot for servers already running Nginx, and DNS-01 for private/internal Portainer instances. Renewal hooks ensure certificates are automatically deployed to Portainer without manual intervention, maintaining continuous HTTPS availability.

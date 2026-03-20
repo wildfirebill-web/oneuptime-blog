@@ -24,6 +24,7 @@ graph LR
 
 ```yaml
 # tasks/jira-create.yml
+
 ---
 - name: Create JIRA change ticket
   community.general.jira:

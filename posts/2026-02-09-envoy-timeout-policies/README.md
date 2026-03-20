@@ -178,6 +178,7 @@ Track timeout occurrences:
 
 ```promql
 # Connection timeouts
+
 envoy_cluster_upstream_cx_connect_timeout
 
 # Request timeouts

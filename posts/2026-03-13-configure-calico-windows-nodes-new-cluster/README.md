@@ -96,6 +96,7 @@ calicoctl patch felixconfiguration default \
 
 ```powershell
 # On the Windows node
+
 Get-Service CalicoNode, CalicoFelix | Select-Object Name, Status
 ```
 

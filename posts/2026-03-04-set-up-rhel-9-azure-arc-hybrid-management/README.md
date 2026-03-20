@@ -39,6 +39,7 @@ graph TB
 
 ```bash
 # From Azure CLI, generate the onboarding script
+
 az connectedmachine generate-script \
   --resource-group rg-arc-servers \
   --location eastus \

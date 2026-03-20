@@ -44,6 +44,7 @@ The reverse timestamp is calculated as `Long.MAX_VALUE - timestamp_millis`. This
 
 ```python
 # Row key design for IoT telemetry data
+
 import time
 
 def create_row_key(device_type, device_id, timestamp_ms=None):

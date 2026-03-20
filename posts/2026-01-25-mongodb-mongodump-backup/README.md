@@ -40,6 +40,7 @@ mongodump is ideal when you need:
 
 ```bash
 # Backup all databases to ./dump directory
+
 mongodump --uri="mongodb://user:password@localhost:27017"
 
 # Specify output directory

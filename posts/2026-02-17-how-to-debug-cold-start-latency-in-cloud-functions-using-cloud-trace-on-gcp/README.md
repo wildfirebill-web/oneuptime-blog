@@ -30,6 +30,7 @@ First, set up OpenTelemetry to trace your Cloud Function, including cold start d
 
 ```python
 # main.py - Cloud Function with cold start instrumentation
+
 import os
 import time
 from functools import wraps

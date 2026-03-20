@@ -32,6 +32,7 @@ Create a comprehensive validation playbook:
 
 ```yaml
 # playbooks/validate-configs.yml
+
 ---
 - name: Validate Talos machine configurations
   hosts: all

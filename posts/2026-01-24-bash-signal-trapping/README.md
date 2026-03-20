@@ -74,6 +74,7 @@ flowchart LR
 
 ```bash
 # List all signals on your system
+
 kill -l
 
 # Output example:

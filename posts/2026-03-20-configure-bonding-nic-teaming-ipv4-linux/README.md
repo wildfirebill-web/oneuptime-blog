@@ -25,6 +25,7 @@ Linux bonding combines multiple physical NICs into a single logical interface. C
 
 ```bash
 # Load the bonding module
+
 sudo modprobe bonding
 
 # Create bond0 in active-backup mode
@@ -62,7 +63,7 @@ cat /proc/net/bonding/bond0
 
 Expected output for active-backup:
 
-```
+```text
 Bonding Mode: fault-tolerance (active-backup)
 Primary Slave: None
 Currently Active Slave: eth0

@@ -146,6 +146,7 @@ from datetime import datetime, timedelta
 import random
 
 # Connection with optimized settings for bulk inserts
+
 conn = psycopg2.connect(
     host="localhost",
     database="timescale_db",

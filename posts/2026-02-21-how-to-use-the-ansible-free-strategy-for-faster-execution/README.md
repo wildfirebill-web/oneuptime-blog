@@ -64,6 +64,7 @@ You can set the free strategy at the play level:
 ```yaml
 ---
 # Use free strategy for independent server setup
+
 - hosts: webservers
   strategy: free
   become: true

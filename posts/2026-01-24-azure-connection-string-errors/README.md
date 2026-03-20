@@ -56,6 +56,7 @@ AuthenticationFailed: Server failed to authenticate the request. Make sure the v
 
 ```bash
 # Get current storage account keys
+
 az storage account keys list \
   --account-name mystorageaccount \
   --resource-group rg-myapp \

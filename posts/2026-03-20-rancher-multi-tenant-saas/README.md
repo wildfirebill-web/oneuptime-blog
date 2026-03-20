@@ -1,8 +1,8 @@
-# How to Set Up Multi-Tenant SaaS Platform on Rancher
+# How to Set Up Multi-Tenant SaaS Platform on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, multi-tenant, saas, kubernetes, isolation, namespace
+Tags: Rancher, Multi-Tenant, SaaS, Kubernetes, Isolation, Namespaces
 
 Description: A guide to building a multi-tenant SaaS platform on Rancher, covering tenant isolation, resource quotas, network policies, and self-service provisioning.
 
@@ -12,7 +12,7 @@ Building a multi-tenant SaaS platform on Kubernetes requires robust isolation be
 
 ## Multi-Tenancy Architecture
 
-```
+```text
 Rancher Multi-Tenant SaaS Platform
 ├── Shared Infrastructure Cluster
 │   ├── Ingress Controller (nginx)
@@ -36,6 +36,7 @@ Rancher Multi-Tenant SaaS Platform
 
 ```yaml
 # Create tenant namespace with labels
+
 apiVersion: v1
 kind: Namespace
 metadata:

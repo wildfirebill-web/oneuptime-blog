@@ -32,6 +32,7 @@ Set your preferred queue driver in the environment file:
 
 ```bash
 # .env
+
 # Options: sync, database, redis, sqs, beanstalkd
 QUEUE_CONNECTION=redis
 REDIS_HOST=127.0.0.1

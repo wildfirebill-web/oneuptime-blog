@@ -47,6 +47,7 @@ Before setting up CI/CD, write tests that catch common DAG issues:
 
 ```python
 # tests/test_dag_integrity.py
+
 # Tests that verify all DAGs load correctly without import errors
 import pytest
 import os

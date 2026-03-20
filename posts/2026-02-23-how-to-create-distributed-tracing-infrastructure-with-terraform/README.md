@@ -22,6 +22,7 @@ Begin with the provider setup:
 
 ```hcl
 # main.tf - Provider configuration for tracing infrastructure
+
 terraform {
   required_version = ">= 1.5.0"
 

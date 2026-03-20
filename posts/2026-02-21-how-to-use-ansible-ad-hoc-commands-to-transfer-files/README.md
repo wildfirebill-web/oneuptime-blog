@@ -18,6 +18,7 @@ The `copy` module transfers files from the Ansible controller to remote hosts. I
 
 ```bash
 # Push a single file
+
 ansible webservers -m copy -a "src=./nginx.conf dest=/etc/nginx/nginx.conf owner=root group=root mode=0644" --become
 
 # Push a file with backup of the original

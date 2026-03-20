@@ -33,6 +33,7 @@ You can view the default NACL:
 
 ```bash
 # List NACLs in a VPC
+
 aws ec2 describe-network-acls \
   --filters "Name=vpc-id,Values=vpc-abc123" \
   --query "NetworkAcls[?IsDefault==\`true\`]"

@@ -66,6 +66,7 @@ spec:
 
 ```bash
 # Verify unauthorized access is blocked
+
 kubectl exec -n production unauthorized-pod -- curl -s --max-time 5 http://protected-service:8080
 echo "Should be DENIED: $?"
 ```

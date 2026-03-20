@@ -68,6 +68,7 @@ Here is a complete configuration for monitoring a vCenter environment:
 
 ```yaml
 # config.yaml - OpenTelemetry Collector for VMware vCenter
+
 receivers:
   vcenter:
     # vCenter Server connection settings

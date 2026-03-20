@@ -42,6 +42,7 @@ terraform {
 }
 
 # Configure the Azure DevOps provider
+
 provider "azuredevops" {
   org_service_url       = "https://dev.azure.com/my-organization"
   personal_access_token = var.azdo_pat # Store in environment variable or use managed identity

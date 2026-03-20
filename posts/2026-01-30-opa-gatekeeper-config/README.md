@@ -57,6 +57,7 @@ Create a Config resource to enable resource syncing:
 
 ```yaml
 # config.yaml
+
 # The Config resource must be named "config" in the "gatekeeper-system" namespace
 apiVersion: config.gatekeeper.sh/v1alpha1
 kind: Config
@@ -568,7 +569,7 @@ spec:
       # unless your policies specifically need them
 ```
 
-### Resource Usage Guidelines
+Resource Usage Guidelines
 
 | Resource Type | Memory Impact | Recommendation |
 |---------------|---------------|----------------|

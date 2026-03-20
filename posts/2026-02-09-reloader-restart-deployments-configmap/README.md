@@ -33,6 +33,7 @@ Install Reloader using Helm, the recommended method:
 
 ```bash
 # Add Stakater Helm repository
+
 helm repo add stakater https://stakater.github.io/stakater-charts
 helm repo update
 

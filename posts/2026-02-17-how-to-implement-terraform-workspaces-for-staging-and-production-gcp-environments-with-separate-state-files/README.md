@@ -18,6 +18,7 @@ A Terraform workspace is essentially a named state file. When you switch workspa
 
 ```bash
 # Create and switch to the staging workspace
+
 terraform workspace new staging
 
 # Create the production workspace

@@ -30,6 +30,7 @@ Is the interface physically connected and up?
 
 ```bash
 # Check interface link state
+
 ip link show dev ens192
 
 # Look for "state UP" or "state DOWN"

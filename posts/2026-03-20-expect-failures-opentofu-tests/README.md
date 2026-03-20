@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, expect_failures, Error Testing, Infrastructure as Code
+Tags: OpenTofu, Testing, Expect_failures, Error Testing, Infrastructure as Code
 
 Description: Learn how to use the `expect_failures` argument in OpenTofu test run blocks to verify that validation rules, preconditions, and postconditions produce the expected errors.
 
@@ -34,6 +34,7 @@ run "test_name" {
 
 ```hcl
 # The variable under test (in the module)
+
 # variable "environment" {
 #   type = string
 #   validation {
@@ -141,7 +142,7 @@ run "multiple_validation_failures" {
 
 ## Common Pitfalls
 
-**Do not use `expect_failures` and `assert` together for the same resource.** If a resource is listed in `expect_failures`, the run completes when that resource fails—there is nothing to assert on:
+**Do not use `expect_failures` and `assert` together for the same resource.** If a resource is listed in `expect_failures`, the run completes when that resource fails-there is nothing to assert on:
 
 ```hcl
 run "bad_example" {
@@ -157,7 +158,7 @@ run "bad_example" {
 }
 ```
 
-**Verify the right thing fails.** If a different resource or variable fails instead of the one listed in `expect_failures`, the test will still pass—which may mask a real issue. Be specific with your variable values to trigger exactly one failure path.
+**Verify the right thing fails.** If a different resource or variable fails instead of the one listed in `expect_failures`, the test will still pass-which may mask a real issue. Be specific with your variable values to trigger exactly one failure path.
 
 ## Conclusion
 

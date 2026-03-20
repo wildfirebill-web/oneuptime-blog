@@ -16,6 +16,7 @@ The `until` keyword works differently from the `loop` keyword. While `loop` iter
 
 ```yaml
 # Wait until a web service responds with HTTP 200
+
 - name: Wait for application to start
   ansible.builtin.uri:
     url: http://localhost:8080/health

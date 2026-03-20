@@ -24,6 +24,7 @@ Add `requireApproval: true` to your production target definition.
 
 ```yaml
 # prod-target.yaml - Production target with approval required
+
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:

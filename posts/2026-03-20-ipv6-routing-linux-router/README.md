@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Router, radvd, Forwarding, Networking
+Tags: IPv6, Linux, Router, Radvd, Forwarding, Networking
 
 Description: A complete guide to turning a Linux machine into a functional IPv6 router with forwarding, Router Advertisements, and static routing.
 
@@ -26,6 +26,7 @@ graph LR
 # /etc/sysctl.d/99-ipv6-router.conf
 
 # Enable forwarding globally
+
 net.ipv6.conf.all.forwarding = 1
 
 # Disable RA acceptance globally (routers should not reconfigure from RA)

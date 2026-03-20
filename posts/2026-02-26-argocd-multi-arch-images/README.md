@@ -18,6 +18,7 @@ Kubernetes nodes report their architecture through the `kubernetes.io/arch` labe
 
 ```bash
 # Check the architecture of your nodes
+
 kubectl get nodes -L kubernetes.io/arch
 
 # Output example:

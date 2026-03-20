@@ -34,6 +34,7 @@ The recommended installation method is via the official installer script:
 
 ```bash
 # Install via the standalone installer
+
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Or use pipx if you prefer

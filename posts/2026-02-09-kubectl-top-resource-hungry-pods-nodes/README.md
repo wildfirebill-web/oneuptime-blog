@@ -145,6 +145,7 @@ Combine top and sort to find the worst offenders:
 
 ```bash
 # Top 5 CPU consumers across all namespaces
+
 kubectl top pods --all-namespaces --sort-by=cpu | head -6
 
 # Top 5 memory consumers
@@ -255,7 +256,7 @@ kubectl top node worker-1
 
 If usage is low, draining is safe. If high, pods will cause disruption when rescheduled.
 
-## Resource Usage by Node
+Resource Usage by Node
 
 List all pods on a node with usage:
 

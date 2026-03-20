@@ -24,6 +24,7 @@ Define a hierarchy of priority classes for different workload types.
 
 ```hcl
 # System-critical: For core platform components
+
 # These should almost never be preempted
 resource "kubernetes_priority_class" "system_critical" {
   metadata {

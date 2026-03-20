@@ -21,6 +21,7 @@ Apache Superset is an open-source business intelligence and data visualization p
 
 ```bash
 # Generate a secure secret key for Superset
+
 openssl rand -base64 42
 ```
 
@@ -32,7 +33,7 @@ Navigate to **Stacks** → **Add Stack** → **Web Editor**:
 version: "3.8"
 
 services:
-  # Redis — Superset's cache and async query backend
+  # Redis - Superset's cache and async query backend
   superset-redis:
     image: redis:7.2-alpine
     container_name: superset-redis
@@ -47,7 +48,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # PostgreSQL — Superset's metadata database
+  # PostgreSQL - Superset's metadata database
   superset-db:
     image: postgres:16-alpine
     container_name: superset-db
@@ -66,7 +67,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # Superset — main application
+  # Superset - main application
   superset-app:
     image: apache/superset:4.0.2
     container_name: superset-app
@@ -148,7 +149,7 @@ networks:
 1. Go to **Settings** → **Database Connections** → **+ Database**
 2. Select your database type (PostgreSQL, MySQL, BigQuery, etc.)
 3. For PostgreSQL:
-   ```
+   ```text
    postgresql://username:password@your-db-host:5432/dbname
    ```
 4. Click **Test Connection** → **Connect**
@@ -209,4 +210,4 @@ Mount this as a config file in your compose volume.
 
 ## Conclusion
 
-Apache Superset deployed via Portainer provides your team with enterprise-grade business intelligence capabilities — SQL lab, interactive charts, and shareable dashboards — all self-hosted. Portainer makes it straightforward to monitor the Celery workers, view application logs, and update to new versions as they're released.
+Apache Superset deployed via Portainer provides your team with enterprise-grade business intelligence capabilities - SQL lab, interactive charts, and shareable dashboards - all self-hosted. Portainer makes it straightforward to monitor the Celery workers, view application logs, and update to new versions as they're released.

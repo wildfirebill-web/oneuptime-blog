@@ -23,6 +23,7 @@ Azure Storage offers multiple replication strategies to protect your data. OpenT
 
 ```hcl
 # variables.tf
+
 variable "replication_type" {
   description = "Storage replication type: LRS, ZRS, GRS, RAGRS, GZRS, RAGZRS"
   type        = string

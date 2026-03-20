@@ -91,6 +91,7 @@ The `rr_min_io_rq` parameter controls how many I/O requests are sent down one pa
 
 ```bash
 # Send 1 request per path (finest-grained balancing)
+
 rr_min_io_rq 1
 
 # Send 10 requests per path (less switching overhead)

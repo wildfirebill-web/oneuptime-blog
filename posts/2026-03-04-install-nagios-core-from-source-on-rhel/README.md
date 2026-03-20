@@ -14,6 +14,7 @@ Nagios Core is one of the most established open-source monitoring tools. While n
 
 ```bash
 # Install build tools and required libraries
+
 sudo dnf install -y gcc glibc glibc-common make gettext automake autoconf \
     wget httpd php gd gd-devel perl net-snmp openssl-devel unzip
 

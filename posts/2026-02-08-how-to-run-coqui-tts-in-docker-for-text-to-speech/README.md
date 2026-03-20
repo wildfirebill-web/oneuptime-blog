@@ -27,6 +27,7 @@ Run Coqui TTS with a single Docker command.
 
 ```bash
 # Run the Coqui TTS server with the default VITS model
+
 docker run -d \
   --name coqui-tts \
   -p 5002:5002 \

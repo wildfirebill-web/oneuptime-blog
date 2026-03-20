@@ -788,6 +788,7 @@ Configure Akka properly for production environments. Create an application.conf 
 
 ```hocon
 # src/main/resources/application.conf
+
 # Production Akka configuration
 
 akka {

@@ -54,6 +54,7 @@ Start by creating a Front Door profile. The Standard tier works for most use cas
 
 ```bash
 # Create resource group
+
 az group create \
   --name rg-frontdoor-prod \
   --location eastus

@@ -18,6 +18,7 @@ The most reliable way to read a file line by line:
 #!/bin/bash
 
 # Read each line of a file
+
 while IFS= read -r line; do
     echo "Line: $line"
 done < /etc/hosts

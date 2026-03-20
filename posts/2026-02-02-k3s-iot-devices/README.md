@@ -60,6 +60,7 @@ The installer script detects your architecture and downloads the appropriate bin
 
 ```bash
 # Install K3s with default settings on a single node
+
 # The INSTALL_K3S_EXEC flag sets server-specific options
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--write-kubeconfig-mode 644" sh -
 ```
@@ -325,7 +326,7 @@ spec:
             type: CharDevice
 ```
 
-### Resource Quotas for IoT Namespaces
+Resource Quotas for IoT Namespaces
 
 Prevent runaway workloads from consuming all device resources:
 

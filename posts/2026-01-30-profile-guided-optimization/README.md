@@ -188,6 +188,7 @@ int main() {
 # build_instrumented.sh - Create the instrumented binary
 
 # Clean previous builds
+
 rm -rf build_pgo
 mkdir -p build_pgo
 

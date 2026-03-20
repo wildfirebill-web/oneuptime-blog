@@ -14,6 +14,7 @@ CloudWatch alarms watch a single metric over a time period and perform actions w
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -129,7 +130,7 @@ Composite alarms combine multiple alarms with AND/OR logic to reduce alert noise
 # Only page on-call if BOTH CPU AND memory are high simultaneously
 resource "aws_cloudwatch_composite_alarm" "app_overloaded" {
   alarm_name = "app-overloaded"
-  alarm_description = "Trigger only when both CPU and memory are high — indicates genuine overload"
+  alarm_description = "Trigger only when both CPU and memory are high - indicates genuine overload"
 
   alarm_rule = "ALARM(${aws_cloudwatch_metric_alarm.high_cpu.alarm_name}) AND ALARM(${aws_cloudwatch_metric_alarm.ecs_memory["app"].alarm_name})"
 

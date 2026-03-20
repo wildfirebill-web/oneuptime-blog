@@ -12,7 +12,7 @@ GRE tunnels on MikroTik create virtual interfaces that encapsulate IPv4 packets 
 
 ## GRE Tunnel Configuration
 
-```
+```text
 Router A: WAN 203.0.113.1, LAN 192.168.1.0/24
 Router B: WAN 203.0.113.2, LAN 192.168.2.0/24
 Tunnel:   10.10.10.1/30 ←→ 10.10.10.2/30
@@ -22,6 +22,7 @@ Tunnel:   10.10.10.1/30 ←→ 10.10.10.2/30
 
 ```mikrotik
 # Create GRE tunnel interface
+
 /interface gre add \
   name=gre-to-routerB \
   remote-address=203.0.113.2 \

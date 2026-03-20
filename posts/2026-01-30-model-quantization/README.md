@@ -55,6 +55,7 @@ The simplest approach assumes weights are symmetric around zero.
 
 ```python
 # The scale factor maps the max absolute value to the max integer value
+
 # For INT8, we have 127 as the max positive integer
 scale = max(abs(weights)) / 127
 

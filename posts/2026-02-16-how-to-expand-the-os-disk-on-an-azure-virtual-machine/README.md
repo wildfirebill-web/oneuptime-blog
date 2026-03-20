@@ -27,6 +27,7 @@ Always create a snapshot before modifying your OS disk. This gives you a rollbac
 
 ```bash
 # Get the OS disk ID
+
 OS_DISK_ID=$(az vm show \
   --resource-group myResourceGroup \
   --name myVM \

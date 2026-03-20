@@ -8,7 +8,7 @@ Description: Learn how to configure GlusterFS distributed storage and use it as 
 
 ---
 
-GlusterFS is a distributed file system that aggregates storage across multiple servers. When used with Portainer-managed Docker Swarm clusters, it provides shared storage that's accessible from any node — essential for stateful services that need to run on different nodes without losing their data.
+GlusterFS is a distributed file system that aggregates storage across multiple servers. When used with Portainer-managed Docker Swarm clusters, it provides shared storage that's accessible from any node - essential for stateful services that need to run on different nodes without losing their data.
 
 ---
 
@@ -32,6 +32,7 @@ Run these commands on each server in your cluster.
 
 ```bash
 # Install GlusterFS server (Ubuntu/Debian)
+
 sudo apt update && sudo apt install -y glusterfs-server
 
 # Start and enable the GlusterFS service
@@ -99,7 +100,7 @@ echo "localhost:/portainer-vol /mnt/portainer-vol glusterfs defaults,_netdev 0 0
 With GlusterFS mounted on all nodes, you can use bind mounts in your Docker Compose stacks.
 
 ```yaml
-# app-stack.yml — using GlusterFS mount for shared storage
+# app-stack.yml - using GlusterFS mount for shared storage
 version: "3.8"
 
 services:

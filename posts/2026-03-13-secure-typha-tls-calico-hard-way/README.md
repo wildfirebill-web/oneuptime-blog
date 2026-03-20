@@ -18,6 +18,7 @@ The CA private key is the most sensitive artifact in the Typha TLS setup. If com
 
 ```bash
 # Verify CA key permissions
+
 ls -la /etc/calico/pki/typha-ca.key
 # Should show: -rw------- (600) owned by root
 chmod 600 /etc/calico/pki/typha-ca.key

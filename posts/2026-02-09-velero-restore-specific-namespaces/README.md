@@ -22,6 +22,7 @@ Before restoring, identify which namespaces are included in a backup:
 
 ```bash
 # Get detailed backup information
+
 velero backup describe my-backup --details
 
 # Extract namespace list

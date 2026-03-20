@@ -47,6 +47,7 @@ Let's start with the foundational classes that define validation rules and resul
 
 ```python
 # core.py
+
 # Core validation framework classes
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field

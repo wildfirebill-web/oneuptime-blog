@@ -12,7 +12,7 @@ A DHCPv6 relay agent forwards DHCPv6 messages between clients and a server when 
 
 ## DHCPv6 Relay Architecture
 
-```
+```yaml
 DHCPv6 Relay Flow:
 
 Client Network (2001:db8:1::/64)          Server Network
@@ -37,7 +37,7 @@ Client Network (2001:db8:1::/64)          Server Network
 
 ## RELAY-FORW and RELAY-REPL Messages
 
-```
+```text
 RELAY-FORW Message Format (Type 12):
 
   hop-count: number of relay agents in chain (max 32)
@@ -60,7 +60,7 @@ RELAY-REPL Message Format (Type 13):
 
 ## Cisco IOS DHCPv6 Relay Configuration
 
-```
+```text
 ! Configure DHCPv6 relay on the client-facing interface
 
 interface GigabitEthernet0/1
@@ -93,6 +93,7 @@ interface GigabitEthernet0/1
 
 ```bash
 # Install ISC dhcp-relay
+
 sudo apt-get install isc-dhcp-relay
 
 # Configure relay

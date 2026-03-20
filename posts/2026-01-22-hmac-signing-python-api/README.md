@@ -47,6 +47,7 @@ Let's start with a simple implementation that covers the fundamentals.
 
 ```python
 # hmac_basics.py
+
 # Basic HMAC signing for API requests
 import hmac
 import hashlib

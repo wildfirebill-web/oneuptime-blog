@@ -8,7 +8,7 @@ Description: Learn how to run Docker containers with a read-only root filesystem
 
 ---
 
-Running containers with a read-only root filesystem prevents any process inside the container from writing to the filesystem layer — including malware, accidental config overwrites, and exploitation payloads. Portainer supports this via the `read_only` flag or the UI.
+Running containers with a read-only root filesystem prevents any process inside the container from writing to the filesystem layer - including malware, accidental config overwrites, and exploitation payloads. Portainer supports this via the `read_only` flag or the UI.
 
 ## Enabling Read-Only Root Filesystem in a Stack
 
@@ -33,7 +33,7 @@ volumes:
   api_data:
 ```
 
-The `tmpfs` mounts provide writable scratch space in memory — essential for applications that need to write temporary files.
+The `tmpfs` mounts provide writable scratch space in memory - essential for applications that need to write temporary files.
 
 ## Enabling via Portainer UI
 
@@ -50,6 +50,7 @@ Before enabling read-only mode, identify all paths the application writes to:
 
 ```bash
 # Run the container with strace to find all write calls
+
 docker run --rm \
   --security-opt seccomp=unconfined \
   my-api:latest \
@@ -94,11 +95,11 @@ services:
 Confirm the filesystem is read-only:
 
 ```bash
-# Try writing to the root filesystem — should fail
+# Try writing to the root filesystem - should fail
 docker exec -it $(docker ps -qf name=api) \
   sh -c "echo test > /test.txt && echo 'FAIL: writable' || echo 'PASS: read-only'"
 
-# Try writing to tmpfs — should succeed
+# Try writing to tmpfs - should succeed
 docker exec -it $(docker ps -qf name=api) \
   sh -c "echo test > /tmp/test.txt && echo 'PASS: tmpfs writable' || echo 'FAIL'"
 ```

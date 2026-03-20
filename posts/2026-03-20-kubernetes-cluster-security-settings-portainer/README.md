@@ -40,6 +40,7 @@ Kubernetes v1.25+ uses Pod Security Standards (PSS) instead of Pod Security Poli
 
 ```bash
 # Apply the "restricted" security standard to a namespace
+
 kubectl label namespace my-namespace \
   pod-security.kubernetes.io/enforce=restricted \
   pod-security.kubernetes.io/audit=restricted \
@@ -114,4 +115,4 @@ kubectl get clusterrolebindings -o wide | grep -v "system:"
 
 ## Conclusion
 
-Portainer's cluster security settings combined with Kubernetes RBAC give you a layered security model. Always apply the principle of least privilege — give users only the permissions they need for their role.
+Portainer's cluster security settings combined with Kubernetes RBAC give you a layered security model. Always apply the principle of least privilege - give users only the permissions they need for their role.

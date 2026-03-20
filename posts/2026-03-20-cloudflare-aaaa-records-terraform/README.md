@@ -12,6 +12,7 @@ Cloudflare DNS supports AAAA records for IPv6 addresses. Managing these records 
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     cloudflare = {

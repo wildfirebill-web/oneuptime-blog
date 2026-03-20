@@ -18,6 +18,7 @@ When a deployment fails, the first thing to check is the overall status and erro
 
 ```bash
 # Get deployment details including error info
+
 aws deploy get-deployment \
   --deployment-id d-ABCDEF123 \
   --query 'deploymentInfo.{status:status,errorInfo:errorInformation,creator:creator,description:description}'

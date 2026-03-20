@@ -8,7 +8,7 @@ Description: Integrate ISC DHCP or Kea DHCP server with NetBox or phpIPAM to aut
 
 ## Introduction
 
-DHCP servers allocate IP addresses dynamically, but those assignments are often invisible to IPAM tools unless integrated. By connecting your DHCP server to your IPAM, every lease becomes a tracked record — giving you real-time visibility into which devices hold which IPs.
+DHCP servers allocate IP addresses dynamically, but those assignments are often invisible to IPAM tools unless integrated. By connecting your DHCP server to your IPAM, every lease becomes a tracked record - giving you real-time visibility into which devices hold which IPs.
 
 ## Approach 1: DHCP Hooks to Call phpIPAM API
 
@@ -16,10 +16,11 @@ ISC DHCP supports `on commit`, `on release`, and `on expiry` hooks that run scri
 
 ### ISC DHCP Configuration
 
-```
-# /etc/dhcp/dhcpd.conf — add at the end
+```text
+# /etc/dhcp/dhcpd.conf - add at the end
 
 # Hook script called when a lease is committed
+
 on commit {
     set clientIP = binary-to-ascii(10, 8, ".", leased-address);
     set clientMAC = binary-to-ascii(16, 8, ":", substring(hardware, 1, 6));
@@ -119,7 +120,7 @@ For simpler setups, periodically parse the DHCP lease file and sync to IPAM:
 
 ```python
 #!/usr/bin/env python3
-# sync-dhcp-to-ipam.py — Parse ISC DHCP leases and sync to phpIPAM
+# sync-dhcp-to-ipam.py - Parse ISC DHCP leases and sync to phpIPAM
 
 import re, requests, subprocess
 
@@ -140,7 +141,7 @@ with open(LEASES_FILE) as f:
 
 for ip, mac, hostname in lease_pattern.findall(content):
     print(f"Syncing: {ip} ({hostname} / {mac})")
-    # Update phpIPAM (simplified — add error handling in production)
+    # Update phpIPAM (simplified - add error handling in production)
     requests.post(f"{PHPIPAM_URL}/addresses/",
         headers={"token": TOKEN, "Content-Type": "application/json"},
         json={"subnetId": "5", "ip": ip, "hostname": hostname, "mac": mac, "tag": 2}
@@ -149,4 +150,4 @@ for ip, mac, hostname in lease_pattern.findall(content):
 
 ## Conclusion
 
-Integrating your DHCP server with an IPAM tool gives you automatic, real-time IP address tracking. The hook-based approach with ISC DHCP or Kea is the most accurate — every lease event immediately updates the IPAM database, ensuring your records are always current.
+Integrating your DHCP server with an IPAM tool gives you automatic, real-time IP address tracking. The hook-based approach with ISC DHCP or Kea is the most accurate - every lease event immediately updates the IPAM database, ensuring your records are always current.

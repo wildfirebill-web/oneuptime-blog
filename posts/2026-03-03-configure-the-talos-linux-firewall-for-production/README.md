@@ -52,6 +52,7 @@ Here is a complete production firewall configuration that restricts access appro
 
 ```yaml
 # firewall-patch.yaml
+
 machine:
   network:
     rules:

@@ -8,7 +8,7 @@ Description: Learn how to manage environment variables for Docker Compose stacks
 
 ## Introduction
 
-Environment variables are the standard mechanism for configuring Docker applications without hardcoding values in images or Compose files. In Portainer, stack environment variables serve a dual purpose: they substitute `${VARIABLE}` placeholders in your Compose YAML (configuring the stack structure itself), and they are passed directly to containers as runtime environment. Managing these correctly is critical for security — secrets should never be committed to Git.
+Environment variables are the standard mechanism for configuring Docker applications without hardcoding values in images or Compose files. In Portainer, stack environment variables serve a dual purpose: they substitute `${VARIABLE}` placeholders in your Compose YAML (configuring the stack structure itself), and they are passed directly to containers as runtime environment. Managing these correctly is critical for security - secrets should never be committed to Git.
 
 ## Prerequisites
 
@@ -25,6 +25,7 @@ Portainer stack environment variables are used for two levels of substitution:
 
 ```yaml
 # Both substitution types in one Compose file:
+
 services:
   api:
     image: myorg/api:${IMAGE_TAG}          # Compose-level: sets the image to pull
@@ -62,8 +63,8 @@ services:
       - DB_PORT=${DB_PORT:-5432}
       - DB_NAME=${DB_NAME}
       - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}          # Secret — set in Portainer, not in repo
-      - JWT_SECRET=${JWT_SECRET}            # Secret — never commit this
+      - DB_PASSWORD=${DB_PASSWORD}          # Secret - set in Portainer, not in repo
+      - JWT_SECRET=${JWT_SECRET}            # Secret - never commit this
       - REDIS_URL=redis://${REDIS_HOST:-redis}:6379
       - ENVIRONMENT=${ENVIRONMENT:-production}
 
@@ -83,7 +84,7 @@ networks:
 
 Create separate stacks for each environment with different variable sets:
 
-```
+```text
 Stack: myapp-production
   IMAGE_TAG=v1.2.3
   ENVIRONMENT=production
@@ -104,7 +105,7 @@ Instead of adding variables one by one, use Advanced mode to paste them all:
 1. Click **Advanced mode** in the Environment variables section.
 2. Paste in `KEY=VALUE` format:
 
-```
+```text
 IMAGE_TAG=v1.2.3
 ENVIRONMENT=production
 DB_HOST=postgres

@@ -39,6 +39,7 @@ flowchart TB
 
 ```bash
 # Run with read-only filesystem
+
 docker run --read-only nginx
 
 # This will likely fail because nginx needs to write

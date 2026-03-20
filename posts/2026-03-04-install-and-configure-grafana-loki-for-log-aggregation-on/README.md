@@ -20,6 +20,7 @@ Grafana Loki for Log Aggregation can be installed and configured on RHEL to prov
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Add Grafana repository

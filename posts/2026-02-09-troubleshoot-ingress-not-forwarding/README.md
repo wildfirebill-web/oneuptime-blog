@@ -24,6 +24,7 @@ Start by verifying your Ingress resource is correctly defined:
 
 ```bash
 # View your Ingress configuration
+
 kubectl get ingress my-ingress -n my-namespace -o yaml
 
 # Check for issues in the status field

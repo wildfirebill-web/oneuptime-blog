@@ -41,6 +41,7 @@ Running this command starts a RabbitMQ container with the management plugin enab
 
 ```bash
 # Start RabbitMQ with management UI enabled
+
 # -d runs in detached mode (background)
 # --hostname sets the Erlang node name (important for clustering)
 # -p maps container ports to host ports

@@ -27,6 +27,7 @@ The first challenge is figuring out which modules need to run. You don't want to
 
 ```bash
 # Only plan modules that changed or whose dependencies changed
+
 terragrunt run-all plan \
   --terragrunt-include-dir "$(git diff --name-only origin/main...HEAD | \
     xargs -I {} dirname {} | sort -u | tr '\n' ',')"
@@ -172,7 +173,7 @@ Most CI platforms let you cache directories between pipeline runs. Cache `$TF_PL
 
 Posting plan output directly on the PR is the best way to get reviews. Here's a shell script that formats the output:
 
-```bash
+````bash
 #!/bin/bash
 # post-plan-comment.sh - Format and post plan output to PR
 
@@ -189,16 +190,16 @@ fi
 # Format as markdown
 COMMENT="## Terragrunt Plan Output
 
-\`\`\`
+```
 $PLAN_OUTPUT
-\`\`\`
+```
 
 Exit code: $EXIT_CODE"
 
 # Post to PR using your CI platform's API
 # (GitHub example using gh CLI)
 gh pr comment "$PR_NUMBER" --body "$COMMENT"
-```
+````
 
 ## Environment Promotion Pattern
 

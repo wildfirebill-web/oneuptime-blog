@@ -256,6 +256,7 @@ Once your configs pass staging tests, promote them using a GitOps workflow. Keep
 
 ```bash
 # After staging tests pass, merge to main branch
+
 git checkout main
 git merge staging-istio-update
 git push origin main

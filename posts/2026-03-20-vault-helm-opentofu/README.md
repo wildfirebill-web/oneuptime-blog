@@ -14,6 +14,7 @@ HashiCorp Vault provides centralized secrets management, encryption as a service
 
 ```hcl
 # main.tf - Deploy HashiCorp Vault via Helm
+
 resource "helm_release" "vault" {
   name             = "vault"
   repository       = "https://helm.releases.hashicorp.com"

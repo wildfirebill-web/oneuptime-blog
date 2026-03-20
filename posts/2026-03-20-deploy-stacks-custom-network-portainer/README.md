@@ -56,15 +56,16 @@ To allow services in different stacks to communicate:
 
 ```yaml
 # stack-a.yml
+
 networks:
   shared-net:
     name: shared-application-network
     driver: bridge
 
-# stack-b.yml — connects to the same network
+# stack-b.yml - connects to the same network
 networks:
   shared-net:
-    external: true    # Don't create — use existing
+    external: true    # Don't create - use existing
     name: shared-application-network
 ```
 

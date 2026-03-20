@@ -1,8 +1,8 @@
-# How to Deploy a Kubernetes Application via Form in Portainer
+# How to Deploy a Kubernetes Application via Form in Portainer - Kubernetes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Deployment, Applications, DevOps
+Tags: Portainer, Kubernetes, Deployment, Application, DevOps
 
 Description: Learn how to deploy Kubernetes applications using Portainer's form-based interface without writing YAML manifests.
 
@@ -25,7 +25,7 @@ Portainer's form-based application deployment makes Kubernetes accessible to tea
 
 ## Step 2: Configure Basic Details
 
-```
+```text
 Application name:  my-web-app
 Namespace:        production
 ```
@@ -37,16 +37,16 @@ Namespace:        production
 
 ## Step 3: Configure the Image
 
-```
+```bash
 Image:           nginx:alpine
 Registry:        Docker Hub (or your private registry)
 ```
 
-For private registries, select the registry from the dropdown — Portainer uses stored credentials automatically.
+For private registries, select the registry from the dropdown - Portainer uses stored credentials automatically.
 
 ## Step 4: Configure Replicas and Resources
 
-```
+```text
 Replicas:        3
 
 Resource limits:
@@ -62,7 +62,7 @@ Resource requests:
 
 Click **+ Add environment variable** for each variable:
 
-```
+```text
 DATABASE_URL:    postgresql://postgres:5432/mydb
 NODE_ENV:        production
 LOG_LEVEL:       info
@@ -70,7 +70,7 @@ LOG_LEVEL:       info
 
 Or reference from ConfigMap/Secret:
 
-```
+```text
 DB_PASSWORD:     valueFrom → Secret: db-secret → key: password
 API_KEY:         valueFrom → ConfigMap: app-config → key: api_key
 ```
@@ -79,7 +79,7 @@ API_KEY:         valueFrom → ConfigMap: app-config → key: api_key
 
 Under **Volumes**, click **+ Add volume**:
 
-```
+```text
 Volume type:       Persistent volume
 Mount path:        /data
 Persistent volume claim:
@@ -94,7 +94,7 @@ Persistent volume claim:
 
 Under **Ports**, click **+ Publish a new port**:
 
-```
+```text
 Container port:    80
 Service type:      NodePort (or LoadBalancer, ClusterIP)
 Published port:    30080      (for NodePort)
@@ -102,7 +102,7 @@ Published port:    30080      (for NodePort)
 
 For internal services (ClusterIP):
 
-```
+```text
 Container port:    8080
 Service type:      ClusterIP
 ```
@@ -113,7 +113,7 @@ Under **Health checks**:
 
 ### Liveness Probe
 
-```
+```text
 Type:         HTTP
 Path:         /health
 Port:         80
@@ -124,7 +124,7 @@ Failure threshold: 3
 
 ### Readiness Probe
 
-```
+```text
 Type:         HTTP
 Path:         /ready
 Port:         80
@@ -134,7 +134,7 @@ Period:       5s
 
 ## Step 9: Configure Auto-Scaling (Optional)
 
-```
+```text
 Auto-scaling:    Enabled
 Minimum replicas: 2
 Maximum replicas: 10
@@ -147,7 +147,7 @@ This creates a HorizontalPodAutoscaler (HPA) automatically.
 
 ## Step 10: Configure Labels and Annotations
 
-```
+```text
 Labels:
   app: my-web-app
   environment: production
@@ -178,6 +178,7 @@ After deploying:
 
 ```bash
 # CLI verification
+
 kubectl get deployment my-web-app -n production
 kubectl get pods -n production -l app=my-web-app
 kubectl get svc -n production

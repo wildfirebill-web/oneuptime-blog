@@ -29,6 +29,7 @@ You need a GKE cluster with the right features enabled. Here is how to create on
 
 ```bash
 # Create a GKE cluster with features needed for multi-tenant isolation
+
 gcloud container clusters create multi-tenant-cluster \
   --region us-central1 \
   --num-nodes 3 \

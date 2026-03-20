@@ -16,6 +16,7 @@ The following command shows containers that appear to be running, but the "Up" s
 
 ```bash
 # List running containers - STATUS shows uptime but not application health
+
 docker ps
 CONTAINER ID   IMAGE    STATUS         PORTS
 abc123def456   myapp    Up 2 hours     8080/tcp

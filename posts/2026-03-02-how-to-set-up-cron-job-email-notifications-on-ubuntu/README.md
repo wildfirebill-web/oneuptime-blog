@@ -23,6 +23,7 @@ By default:
 
 ```bash
 # Check if an MTA is installed
+
 which sendmail
 which postfix
 which ssmtp

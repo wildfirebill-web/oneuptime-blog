@@ -32,6 +32,7 @@ If you exec into this pod, you'll find:
 ```bash
 kubectl exec -it example-pod -- ls -la /var/run/secrets/kubernetes.io/serviceaccount/
 # Output shows:
+
 # ca.crt
 # namespace
 # token

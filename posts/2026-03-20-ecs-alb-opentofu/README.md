@@ -20,6 +20,7 @@ Connecting ECS services to an Application Load Balancer enables high availabilit
 
 ```hcl
 # ALB in public subnets
+
 resource "aws_lb" "main" {
   name               = "${var.project_name}-alb"
   internal           = false
@@ -191,4 +192,4 @@ aws elbv2 describe-load-balancers \
 
 ## Conclusion
 
-Set `deregistration_delay` to a value lower than your connection timeout (30-60 seconds is typical) to minimize request failures during deployments. The ALB performs health checks using the `health_check.path` endpoint—ensure this endpoint responds quickly and doesn't require database connectivity for accurate health assessment. Use `ELBSecurityPolicy-TLS13-1-2-2021-06` to enforce TLS 1.3 while maintaining TLS 1.2 compatibility for older clients.
+Set `deregistration_delay` to a value lower than your connection timeout (30-60 seconds is typical) to minimize request failures during deployments. The ALB performs health checks using the `health_check.path` endpoint-ensure this endpoint responds quickly and doesn't require database connectivity for accurate health assessment. Use `ELBSecurityPolicy-TLS13-1-2-2021-06` to enforce TLS 1.3 while maintaining TLS 1.2 compatibility for older clients.

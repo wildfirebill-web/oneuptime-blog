@@ -176,4 +176,4 @@ output "dashboard_url" {
 
 ## Conclusion
 
-Datadog dashboards defined in OpenTofu bring monitoring configuration under the same version control and review process as infrastructure. Use template variables for environment-agnostic dashboards, conditional formatting to highlight SLO violations, and timeseries widgets for trend visualization. Store API keys in environment variables or a secrets manager — never hardcode them in configuration files.
+Datadog dashboards defined in OpenTofu bring monitoring configuration under the same version control and review process as infrastructure. Use template variables for environment-agnostic dashboards, conditional formatting to highlight SLO violations, and timeseries widgets for trend visualization. Store API keys in environment variables or a secrets manager - never hardcode them in configuration files.

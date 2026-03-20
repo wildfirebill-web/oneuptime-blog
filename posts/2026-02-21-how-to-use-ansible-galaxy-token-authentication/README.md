@@ -31,6 +31,7 @@ To interact with the public Galaxy server (publishing roles or collections):
 
 ```bash
 # Test the token
+
 curl -H "Authorization: Token your_galaxy_token" \
     https://galaxy.ansible.com/api/v3/namespaces/ | python3 -m json.tool | head -20
 ```

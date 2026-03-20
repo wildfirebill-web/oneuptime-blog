@@ -21,7 +21,7 @@ The Kubernetes Gateway API is the standard that the broader Kubernetes ecosystem
 
 That said, not everything in Istio's APIs has a Gateway API equivalent yet. Features like fault injection, request mirroring, and complex retry policies still need Istio resources.
 
-## Resource Mapping
+Resource Mapping
 
 Here's how Istio resources map to Gateway API resources:
 
@@ -44,6 +44,7 @@ Here's how Istio resources map to Gateway API resources:
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/standard-install.yaml
 
 # For experimental resources (TCPRoute, TLSRoute, GRPCRoute)
+
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/experimental-install.yaml
 ```
 

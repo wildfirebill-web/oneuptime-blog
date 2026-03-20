@@ -24,6 +24,7 @@ Before configuring peers, you need to generate key pairs. Each node in your Wire
 
 ```bash
 # Generate a private key
+
 wg genkey > node1-private.key
 
 # Derive the public key from the private key

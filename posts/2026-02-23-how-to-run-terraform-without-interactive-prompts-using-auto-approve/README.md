@@ -18,6 +18,7 @@ The `-auto-approve` flag works with both `apply` and `destroy`:
 
 ```bash
 # Apply changes without confirmation
+
 terraform apply -auto-approve
 
 # Destroy infrastructure without confirmation

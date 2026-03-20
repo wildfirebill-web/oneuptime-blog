@@ -36,6 +36,7 @@ Here's the simplest possible WebSocket endpoint in FastAPI. It accepts connectio
 
 ```python
 # main.py
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 
 app = FastAPI()

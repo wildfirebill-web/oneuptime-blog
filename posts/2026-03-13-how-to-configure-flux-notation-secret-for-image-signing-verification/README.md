@@ -36,6 +36,7 @@ Get the public certificate used to sign your images. This is the certificate fro
 
 ```bash
 # If you have the notation signing key, export the certificate
+
 notation cert list
 
 # Or obtain the certificate from your PKI team

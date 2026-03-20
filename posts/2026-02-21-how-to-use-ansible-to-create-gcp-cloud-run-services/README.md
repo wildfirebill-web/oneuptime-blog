@@ -46,6 +46,7 @@ Before deploying to Cloud Run, you need a container image:
 
 ```yaml
 # build-and-push.yml - Build a container and push to Artifact Registry
+
 ---
 - name: Build and Push Container Image
   hosts: localhost

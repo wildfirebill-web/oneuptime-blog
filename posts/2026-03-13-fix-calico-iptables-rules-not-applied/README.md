@@ -32,6 +32,7 @@ Felix is designed to be resilient: it retries iptables programming and will repr
 
 ```bash
 # Most common fix - restart calico-node on affected node
+
 NODE_POD=$(kubectl get pods -n kube-system -l k8s-app=calico-node \
   --field-selector spec.nodeName=<node-name> -o jsonpath='{.items[0].metadata.name}')
 

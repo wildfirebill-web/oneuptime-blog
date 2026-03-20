@@ -1,4 +1,4 @@
-# How to Configure Automatic HTTPS with Traefik and Portainer
+# How to Configure Automatic HTTPS with Traefik and Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Traefik integrates with Let's Encrypt to automatically issue and renew TLS certi
 
 ## How Traefik ACME Works
 
-```
+```text
 Browser → Traefik (443) → Checks certificate store
                         → If missing: ACME challenge → Let's Encrypt
                         → Issues cert → Stores in acme.json
@@ -32,6 +32,7 @@ Traefik supports two primary challenge types:
 
 ```yaml
 # traefik.yml
+
 certificatesResolvers:
   letsencrypt:
     acme:
@@ -44,7 +45,7 @@ certificatesResolvers:
 ## DNS Challenge Configuration (for Wildcard Certs)
 
 ```yaml
-# traefik.yml — DNS challenge with Cloudflare
+# traefik.yml - DNS challenge with Cloudflare
 certificatesResolvers:
   letsencrypt:
     acme:
@@ -58,7 +59,7 @@ certificatesResolvers:
 ```
 
 ```yaml
-# docker-compose.yml — pass Cloudflare credentials
+# docker-compose.yml - pass Cloudflare credentials
 services:
   traefik:
     image: traefik:v3.0
@@ -139,4 +140,4 @@ curl -I http://portainer.yourdomain.com
 
 ## Conclusion
 
-Traefik's ACME integration eliminates manual certificate management entirely. Once configured, every service deployed through Portainer can get a valid HTTPS certificate by simply adding a `tls.certresolver` label — no certificate renewal reminders, no manual uploads, and no expired certificates.
+Traefik's ACME integration eliminates manual certificate management entirely. Once configured, every service deployed through Portainer can get a valid HTTPS certificate by simply adding a `tls.certresolver` label - no certificate renewal reminders, no manual uploads, and no expired certificates.

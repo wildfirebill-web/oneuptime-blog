@@ -45,6 +45,7 @@ Start by denying all ingress traffic, then explicitly allow what is needed:
 
 ```yaml
 # default-deny-ingress.yaml
+
 # Apply this to each namespace to establish zero-trust baseline
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

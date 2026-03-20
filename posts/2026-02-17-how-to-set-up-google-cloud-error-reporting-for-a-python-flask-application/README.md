@@ -25,6 +25,7 @@ For Flask applications, the most practical approach combines both: use Cloud Log
 
 ```bash
 # Install the Google Cloud error reporting and logging libraries
+
 pip install google-cloud-error-reporting google-cloud-logging flask
 ```
 

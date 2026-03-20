@@ -14,6 +14,7 @@ When you have many tests across multiple files, running all of them for every ch
 
 ```bash
 # Run all tests in the current module's tests/ directory
+
 tofu test
 
 # Show verbose output with each assertion result

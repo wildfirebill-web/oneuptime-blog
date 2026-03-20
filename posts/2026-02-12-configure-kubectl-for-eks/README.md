@@ -26,6 +26,7 @@ For macOS:
 
 ```bash
 # Install kubectl on macOS via Homebrew
+
 brew install kubectl
 ```
 

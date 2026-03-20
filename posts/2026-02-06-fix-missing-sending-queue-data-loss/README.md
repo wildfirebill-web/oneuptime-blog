@@ -69,6 +69,7 @@ The queue size determines how much data you can buffer during an outage. Here is
 queue_size = (outage_duration_seconds / batch_timeout_seconds) * safety_factor
 
 # Example: buffer 5 minutes of data with 5-second batches
+
 # queue_size = (300 / 5) * 2 = 120
 # But round up generously for spikes
 # queue_size = 5000

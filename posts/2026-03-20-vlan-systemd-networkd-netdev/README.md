@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, VLAN, systemd-networkd, netdev, 802.1Q
+Tags: Linux, Networking, VLAN, systemd-networkd, Netdev, 802.1Q
 
 Description: Learn how to create and configure VLAN interfaces on Linux using systemd-networkd .netdev unit files, including IP assignment and VLAN tagging on physical interfaces.
 
@@ -73,6 +73,7 @@ For VLAN 100 and VLAN 200:
 
 ```ini
 # /etc/systemd/network/10-vlan100.netdev
+
 [NetDev]
 Name=vlan100
 Kind=vlan

@@ -1,4 +1,4 @@
-# How to Build a Self-Healing Container System with Portainer
+# How to Build a Self-Healing Container System with Portainer - Container System
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to build a self-healing container system that automatical
 
 ---
 
-A self-healing container system automatically detects failures and recovers without manual intervention. With Docker's built-in restart policies, health checks, and the Portainer API, you can build a system that monitors container health, restarts failing services, re-pulls updated images, and sends alerts — all automatically.
+A self-healing container system automatically detects failures and recovers without manual intervention. With Docker's built-in restart policies, health checks, and the Portainer API, you can build a system that monitors container health, restarts failing services, re-pulls updated images, and sends alerts - all automatically.
 
 ---
 
@@ -17,7 +17,8 @@ A self-healing container system automatically detects failures and recovers with
 The first and simplest layer of self-healing. Docker automatically restarts containers when they exit.
 
 ```yaml
-# self-healing-stack.yml — restart policies for each service type
+# self-healing-stack.yml - restart policies for each service type
+
 version: "3.8"
 
 services:
@@ -55,7 +56,7 @@ Build a watchdog service that polls Portainer for unhealthy containers and resta
 
 ```python
 #!/usr/bin/env python3
-# watchdog.py — self-healing watchdog that monitors and restarts containers
+# watchdog.py - self-healing watchdog that monitors and restarts containers
 
 import requests
 import time
@@ -93,7 +94,7 @@ def restart_container(env_id: int, container_id: str, name: str):
 
     if restart_counts[key] > MAX_RESTARTS:
         logging.error(
-            f"Container {name} has been restarted {MAX_RESTARTS}x — sending alert!"
+            f"Container {name} has been restarted {MAX_RESTARTS}x - sending alert!"
         )
         send_alert(name, restart_counts[key])
         return
@@ -105,7 +106,7 @@ def restart_container(env_id: int, container_id: str, name: str):
     )
 
 def send_alert(container_name: str, restart_count: int):
-    """Send alert when a container keeps failing — integrate with your alerting system."""
+    """Send alert when a container keeps failing - integrate with your alerting system."""
     # Example: POST to a webhook (Slack, PagerDuty, OneUptime, etc.)
     requests.post(
         "https://your-alerting-webhook.example.com/notify",
@@ -147,7 +148,7 @@ if __name__ == "__main__":
 Run the watchdog itself as a managed container in Portainer.
 
 ```yaml
-# watchdog-stack.yml — the self-healing watchdog as a Portainer service
+# watchdog-stack.yml - the self-healing watchdog as a Portainer service
 version: "3.8"
 
 services:

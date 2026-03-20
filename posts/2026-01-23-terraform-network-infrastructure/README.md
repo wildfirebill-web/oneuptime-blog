@@ -45,6 +45,7 @@ flowchart TB
 
 ```hcl
 # variables.tf
+
 variable "name" {
   description = "Name prefix for all resources"
   type        = string

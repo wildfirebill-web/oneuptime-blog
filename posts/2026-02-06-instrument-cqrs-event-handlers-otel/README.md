@@ -23,6 +23,7 @@ tracer = trace.get_tracer("cqrs.write")
 meter = metrics.get_meter("cqrs.write")
 
 # Metrics for the write side
+
 command_duration = meter.create_histogram(
     name="cqrs.command.duration",
     description="Time to process a command",

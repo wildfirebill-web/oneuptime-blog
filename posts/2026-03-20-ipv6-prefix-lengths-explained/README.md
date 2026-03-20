@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Subnetting, Prefix Length, CIDR, Address Planning
 
-Description: Understand the meaning and typical use cases for the most common IPv6 prefix lengths — /32, /48, /56, /64, and /128 — and when each is appropriate.
+Description: Understand the meaning and typical use cases for the most common IPv6 prefix lengths - /32, /48, /56, /64, and /128 - and when each is appropriate.
 
 ## Introduction
 
@@ -23,11 +23,11 @@ graph TD
     SUBNET --> HOST["/128 Host<br/>Single interface"]
 ```
 
-## /32 — ISP Allocation
+## /32 - ISP Allocation
 
 A /32 is the minimum allocation given to an ISP or large organization by a Regional Internet Registry (RIR):
 
-```
+```text
 Example: 2001:db8::/32
 
 Available /48s: 65,536
@@ -39,11 +39,11 @@ Typical users:
 - Large multinational corporations
 ```
 
-## /48 — Enterprise Organization
+## /48 - Enterprise Organization
 
 The standard allocation for a single organization or campus:
 
-```
+```text
 Example: 2001:db8:acad::/48
 
 Available /64s: 65,536 subnets
@@ -56,11 +56,11 @@ Typical users:
 - Data centers
 ```
 
-## /56 — Residential / Branch
+## /56 - Residential / Branch
 
 Given to residential customers or delegated to branch offices:
 
-```
+```text
 Example: 2001:db8:1100::/56
 
 Available /64s: 256 subnets
@@ -72,11 +72,11 @@ Typical users:
 - Remote workers with multiple devices
 ```
 
-## /60 — Very Small Allocations
+## /60 - Very Small Allocations
 
 Some ISPs give /60 to residential customers:
 
-```
+```text
 Example: 2001:db8:1100:f0::/60
 
 Available /64s: 16 subnets
@@ -87,11 +87,11 @@ Typical users:
 - Small home labs
 ```
 
-## /64 — Individual Subnet
+## /64 - Individual Subnet
 
 The standard prefix for a single network segment. Every subnet that hosts end devices should be a /64:
 
-```
+```text
 Example: 2001:db8:acad:1::/64
 
 Addresses: 2^64 ≈ 18.4 quintillion
@@ -108,11 +108,11 @@ Exceptions (do NOT use /64):
 - Loopback addresses (use /128)
 ```
 
-## /127 — Point-to-Point Links
+## /127 - Point-to-Point Links
 
 RFC 6164 recommends /127 for router-to-router links:
 
-```
+```text
 Example:
   Router A: 2001:db8:ffff::/127  (host bit = 0)
   Router B: 2001:db8:ffff::1/127 (host bit = 1)
@@ -123,11 +123,11 @@ Benefits:
 - Matches IPv4 /30 or /31 usage
 ```
 
-## /128 — Single Host
+## /128 - Single Host
 
 A /128 identifies exactly one IPv6 address:
 
-```
+```text
 Examples:
   ::1/128              → Loopback
   2001:db8::1/128      → Router loopback
@@ -146,6 +146,7 @@ Used for:
 import ipaddress
 
 # Python: calculate subnets available at each prefix length
+
 reference = [
     ("/32", 32, "ISP allocation"),
     ("/40", 40, "ISP to enterprise"),
@@ -167,7 +168,7 @@ for name, prefix_len, use_case in reference:
 ```
 
 Output:
-```
+```text
 /32   →       4,294,967,296 /64 subnets  (ISP allocation)
 /40   →          16,777,216 /64 subnets  (ISP to enterprise)
 /48   →              65,536 /64 subnets  (Enterprise org)

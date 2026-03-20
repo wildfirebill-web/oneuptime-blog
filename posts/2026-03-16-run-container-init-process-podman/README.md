@@ -22,6 +22,7 @@ Without an init process, orphaned child processes become zombies:
 
 ```bash
 # Demonstrate zombie process problem (without init)
+
 podman run --rm alpine sh -c "
   # Spawn a child process that creates an orphan
   sh -c 'sleep 1 &' &

@@ -48,6 +48,7 @@ You can check disk performance on an existing Linux system with:
 
 ```bash
 # Test sequential write speed (run on the target disk)
+
 dd if=/dev/zero of=/tmp/testfile bs=1M count=1024 oflag=dsync
 ```
 

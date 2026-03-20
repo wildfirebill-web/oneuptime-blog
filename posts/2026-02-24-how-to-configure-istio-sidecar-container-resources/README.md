@@ -98,6 +98,7 @@ Before tweaking resources, measure what your sidecars actually use:
 
 ```bash
 # Check current usage across all sidecars in a namespace
+
 kubectl top pods -n default --containers | grep istio-proxy
 ```
 

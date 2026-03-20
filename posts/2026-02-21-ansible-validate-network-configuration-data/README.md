@@ -35,6 +35,7 @@ The `ansible.utils` collection includes a `validate` module that checks data aga
 
 ```yaml
 # validate_schema.yml - Validate variable data against JSON schemas
+
 ---
 - name: Validate network configuration data
   hosts: localhost

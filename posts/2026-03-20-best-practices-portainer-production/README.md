@@ -44,6 +44,7 @@ docker run -d \
 
 ```yaml
 # portainer-production-stack.yml
+
 version: "3.8"
 services:
   portainer:
@@ -51,7 +52,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    # Do NOT expose ports — nginx handles TLS termination
+    # Do NOT expose ports - nginx handles TLS termination
     restart: always
     networks:
       - portainer-internal
@@ -127,7 +128,7 @@ Monitor Portainer's own health:
     restart: always
 ```
 
-Configure a monitor for `https://portainer.example.com/api/status` — this endpoint returns Portainer's operational status.
+Configure a monitor for `https://portainer.example.com/api/status` - this endpoint returns Portainer's operational status.
 
 ## Step 4: Security Hardening
 
@@ -150,15 +151,15 @@ For production environments where Portainer downtime is unacceptable:
 2. Use shared storage (NFS, S3-compatible) for the Portainer data volume
 3. Configure health checks and auto-restart
 
-Note: Portainer does not currently support active-active HA — this is a warm standby configuration.
+Note: Portainer does not currently support active-active HA - this is a warm standby configuration.
 
 ## Step 6: Regular Maintenance
 
-- **Update Portainer** — run updates monthly, following the upgrade guide
-- **Prune unused resources** — schedule weekly `docker system prune` on all hosts
-- **Review access** — quarterly user and permission review
-- **Test backups** — monthly restore test from backup
+- **Update Portainer** - run updates monthly, following the upgrade guide
+- **Prune unused resources** - schedule weekly `docker system prune` on all hosts
+- **Review access** - quarterly user and permission review
+- **Test backups** - monthly restore test from backup
 
 ## Summary
 
-Production Portainer deployments require TLS, proper resource sizing, monitoring, security hardening, and a backup/restore plan. Treat Portainer as a critical piece of infrastructure — its availability affects all the services it manages.
+Production Portainer deployments require TLS, proper resource sizing, monitoring, security hardening, and a backup/restore plan. Treat Portainer as a critical piece of infrastructure - its availability affects all the services it manages.

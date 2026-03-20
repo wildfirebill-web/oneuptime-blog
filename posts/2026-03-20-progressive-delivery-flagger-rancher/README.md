@@ -14,6 +14,7 @@ Progressive delivery extends continuous delivery by automatically controlling ho
 
 ```bash
 # Install Flagger with NGINX Ingress provider
+
 helm repo add flagger https://flagger.app
 helm repo update
 

@@ -255,6 +255,7 @@ Create a custom image with initialization:
 
 ```dockerfile
 # test-db/Dockerfile
+
 FROM postgres:15
 
 COPY schema.sql /docker-entrypoint-initdb.d/01-schema.sql

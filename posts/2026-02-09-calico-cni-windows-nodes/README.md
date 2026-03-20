@@ -51,6 +51,7 @@ First, deploy Calico on your Linux nodes. Use the operator-based installation fo
 
 ```bash
 # Install the Tigera Calico operator
+
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/tigera-operator.yaml
 
 # Wait for operator to be ready

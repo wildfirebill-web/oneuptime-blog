@@ -18,6 +18,7 @@ When you set `count = 3`, Terraform creates three instances of the resource. `co
 
 ```hcl
 # Create 3 EC2 instances
+
 resource "aws_instance" "server" {
   count = 3
 

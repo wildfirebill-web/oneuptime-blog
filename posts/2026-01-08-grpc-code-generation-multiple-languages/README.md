@@ -54,6 +54,7 @@ flowchart TB
 
 ```bash
 # Using Homebrew
+
 brew install protobuf
 
 # Verify installation

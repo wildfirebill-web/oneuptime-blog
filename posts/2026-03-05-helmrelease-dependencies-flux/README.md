@@ -29,6 +29,7 @@ Here is a simple example where an application depends on a PostgreSQL database.
 
 ```yaml
 # postgresql.yaml - Database HelmRelease (no dependencies)
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

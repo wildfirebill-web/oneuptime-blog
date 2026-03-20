@@ -1,4 +1,4 @@
-# How to Use Ansible to Automate Rancher Operations
+# How to Use Ansible to Automate Rancher Operations - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Automate Rancher installation, configuration, and cluster managemen
 
 ## Introduction
 
-Ansible complements Terraform for Rancher automation—while Terraform manages cloud resources and Rancher objects, Ansible excels at configuring the underlying Linux nodes, installing Rancher, and performing operational tasks like backups and upgrades. This guide covers using Ansible for Rancher node preparation, installation, and cluster management.
+Ansible complements Terraform for Rancher automation-while Terraform manages cloud resources and Rancher objects, Ansible excels at configuring the underlying Linux nodes, installing Rancher, and performing operational tasks like backups and upgrades. This guide covers using Ansible for Rancher node preparation, installation, and cluster management.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Ansible complements Terraform for Rancher automation—while Terraform manages c
 
 ```yaml
 # prepare-nodes.yml - Prepare Linux nodes for RKE2/Rancher
+
 ---
 - name: Prepare Rancher nodes
   hosts: rancher_nodes

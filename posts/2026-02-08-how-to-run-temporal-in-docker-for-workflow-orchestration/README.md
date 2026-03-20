@@ -39,6 +39,7 @@ Here is a complete Docker Compose configuration for Temporal:
 
 ```yaml
 # docker-compose.yml - Temporal server with all dependencies
+
 version: "3.8"
 
 services:

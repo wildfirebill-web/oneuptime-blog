@@ -10,14 +10,14 @@ Description: Learn how to integrate Teleport with Rancher-managed Kubernetes clu
 
 Teleport is an open-source identity-aware proxy for infrastructure access. It provides:
 
-- **Certificate-based authentication** — Short-lived X.509 certificates replace long-lived static keys
-- **Unified access plane** — SSH, Kubernetes, databases, and web apps through one proxy
-- **Session recording and replay** — Full audit trail of all sessions
-- **Role-based access control** — Fine-grained permissions per cluster or namespace
+- **Certificate-based authentication** - Short-lived X.509 certificates replace long-lived static keys
+- **Unified access plane** - SSH, Kubernetes, databases, and web apps through one proxy
+- **Session recording and replay** - Full audit trail of all sessions
+- **Role-based access control** - Fine-grained permissions per cluster or namespace
 
 ## Architecture
 
-```
+```text
 Developer → Teleport Proxy → Teleport Auth → Kubernetes API (Rancher)
                                            → SSH to nodes
 ```
@@ -58,6 +58,7 @@ tctl tokens add --type=kube --ttl=1h
 
 ```yaml
 # rancher-developer-role.yaml
+
 kind: role
 version: v6
 metadata:
@@ -165,7 +166,7 @@ Configure Rancher to use the same OIDC provider as Teleport for unified authenti
 
 ## Best Practices
 
-1. **Use short-lived certificates** (TTL of 8–24 hours) — Teleport default is excellent
+1. **Use short-lived certificates** (TTL of 8–24 hours) - Teleport default is excellent
 2. **Enable per-session MFA** for production cluster access
 3. **Store session recordings** in S3 or GCS for long-term audit compliance
 4. **Use Kubernetes impersonation** so pod exec sessions are attributed to the real user

@@ -26,6 +26,7 @@ This guide covers the most common installation issues and their resolutions.
 
 ```bash
 # Check agent pod status
+
 kubectl get pods -n kube-system -l k8s-app=cilium
 
 # View agent logs

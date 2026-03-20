@@ -22,6 +22,7 @@ Alpine Linux provides OpenTofu through its community repository:
 
 ```bash
 # Enable the community repository if not already enabled
+
 echo "https://dl-cdn.alpinelinux.org/alpine/v$(cut -d'.' -f1,2 /etc/alpine-release)/community" >> /etc/apk/repositories
 
 # Update the package index

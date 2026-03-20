@@ -1,4 +1,4 @@
-# How to Create a New Workspace in OpenTofu
+# How to Create a New Workspace in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Workspaces allow a single OpenTofu configuration to manage multiple independent 
 
 ```bash
 # Create a new workspace named "staging"
+
 tofu workspace new staging
 
 # Output:
@@ -53,7 +54,7 @@ This is useful when bootstrapping a new environment from an existing one.
 ## What Happens in the Backend
 
 For the local backend, workspaces create separate state files:
-```
+```text
 terraform.tfstate.d/
 ├── staging/
 │   └── terraform.tfstate
@@ -62,7 +63,7 @@ terraform.tfstate.d/
 ```
 
 For S3:
-```
+```text
 s3://bucket/prefix/env:/staging/terraform.tfstate
 s3://bucket/prefix/env:/production/terraform.tfstate
 ```

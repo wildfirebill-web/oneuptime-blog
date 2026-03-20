@@ -26,6 +26,7 @@ First, verify Portainer is actually running:
 
 ```bash
 # SSH into Synology
+
 ssh admin@<synology-ip>
 
 # Check container status
@@ -78,7 +79,7 @@ If the rules are missing, add them:
 
 DSM firewall rules are evaluated top-to-bottom. The first matching rule wins:
 
-```
+```text
 # Correct order:
 1. ALLOW TCP 9000 from 192.168.1.0/24  ← Must be ABOVE the deny rule
 2. ALLOW TCP 9443 from 192.168.1.0/24

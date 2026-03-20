@@ -30,6 +30,7 @@ CodeBuild handles testing and packaging your Lambda function. Create a `buildspe
 
 ```yaml
 # buildspec.yml - Defines the build process for CodeBuild
+
 version: 0.2
 
 phases:

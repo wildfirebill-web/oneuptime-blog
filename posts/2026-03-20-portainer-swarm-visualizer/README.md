@@ -8,7 +8,7 @@ Description: Learn how to use Portainer's Swarm Visualizer to get a graphical vi
 
 ## Introduction
 
-The Swarm Visualizer in Portainer provides a graphical representation of how Swarm services and tasks are distributed across your cluster nodes. It gives you an at-a-glance view of cluster balance, node utilization, and service placement — making it much easier to understand your cluster's state than reading CLI output.
+The Swarm Visualizer in Portainer provides a graphical representation of how Swarm services and tasks are distributed across your cluster nodes. It gives you an at-a-glance view of cluster balance, node utilization, and service placement - making it much easier to understand your cluster's state than reading CLI output.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ The Swarm Visualizer in Portainer provides a graphical representation of how Swa
 
 The visualizer displays your cluster as a grid:
 
-```
+```bash
 ┌─────────────────────────────────────────────────────────────────┐
 │                     Docker Swarm Visualizer                      │
 ├──────────────────┬──────────────────┬──────────────────────────┤
@@ -52,14 +52,14 @@ Each column represents a Swarm node. Each box represents a running task (contain
 
 Each node column shows:
 - **Node name** (hostname)
-- **Node role** — Leader, Manager, or Worker badge
-- **Task count** — Number of tasks running on the node
+- **Node role** - Leader, Manager, or Worker badge
+- **Task count** - Number of tasks running on the node
 
 ### Task Boxes
 
 Each task box shows:
 - **Service and replica name** (e.g., `web_frontend.2`)
-- **Color coding** — Green for running, red for failed, yellow for pending
+- **Color coding** - Green for running, red for failed, yellow for pending
 
 Click on any task box to navigate to that container's detail page.
 
@@ -68,12 +68,12 @@ Click on any task box to navigate to that container's detail page.
 Use the visualizer to spot uneven task distribution:
 
 **Balanced cluster:**
-```
+```text
 manager-01 (3 tasks) | worker-01 (3 tasks) | worker-02 (3 tasks)
 ```
 
 **Unbalanced cluster:**
-```
+```text
 manager-01 (8 tasks) | worker-01 (1 task) | worker-02 (0 tasks)
 ```
 
@@ -89,6 +89,7 @@ When tasks are failing or in an error state:
 
 ```bash
 # Check failed task details from CLI
+
 docker service ps --no-trunc web_frontend
 
 # View task logs
@@ -118,7 +119,7 @@ docker node update --availability drain worker-01
 ```
 
 In the visualizer, tasks from `worker-01` disappear and reappear on other nodes. This confirms:
-1. Service resilience — tasks automatically reschedule
+1. Service resilience - tasks automatically reschedule
 2. Node drain works correctly
 3. No tasks are lost during the transition
 
@@ -149,11 +150,11 @@ docker stack deploy -c visualizer.yml viz
 
 ## Practical Use Cases
 
-1. **Capacity planning** — See how many tasks are on each node
-2. **Deployment verification** — Confirm all replicas started after deploying
-3. **Node maintenance** — Drain a node and confirm tasks relocated
-4. **Troubleshooting** — Quickly spot failed tasks across the cluster
-5. **Load balance audit** — Check if tasks are evenly distributed
+1. **Capacity planning** - See how many tasks are on each node
+2. **Deployment verification** - Confirm all replicas started after deploying
+3. **Node maintenance** - Drain a node and confirm tasks relocated
+4. **Troubleshooting** - Quickly spot failed tasks across the cluster
+5. **Load balance audit** - Check if tasks are evenly distributed
 
 ## Conclusion
 

@@ -45,6 +45,7 @@ tracemalloc is Python's built-in memory tracer. It tracks every allocation with 
 
 ```python
 # tracemalloc_example.py
+
 import tracemalloc
 
 def find_memory_hogs():

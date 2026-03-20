@@ -52,6 +52,7 @@ Let's begin by installing the Amanda server package on your Ubuntu system.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

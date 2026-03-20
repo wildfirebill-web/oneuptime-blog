@@ -38,6 +38,7 @@ Push an OCI artifact and capture the digest from the output.
 
 ```bash
 # Push an artifact and note the digest in the output
+
 flux push artifact oci://registry.example.com/manifests/app:v1.0.0 \
   --path=./deploy \
   --source="$(git config --get remote.origin.url)" \

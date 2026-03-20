@@ -26,6 +26,7 @@ Create a GKE cluster with sufficient resources for Istio and Flagger:
 
 ```bash
 # Set your project and zone
+
 export PROJECT_ID=your-gcp-project-id
 export ZONE=us-central1-a
 

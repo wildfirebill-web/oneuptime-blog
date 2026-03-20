@@ -33,6 +33,7 @@ Install `talosctl` first:
 
 ```bash
 # Install the talosctl CLI
+
 curl -sL https://talos.dev/install | sh
 
 # Check the version

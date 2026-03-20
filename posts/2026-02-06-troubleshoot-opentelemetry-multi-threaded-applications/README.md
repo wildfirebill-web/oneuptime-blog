@@ -120,6 +120,7 @@ def worker_task(ctx):
         detach(token)
 
 # Create the parent span
+
 with tracer.start_as_current_span("parent-operation"):
     # Capture the current context before submitting to the pool
     ctx = context.get_current()

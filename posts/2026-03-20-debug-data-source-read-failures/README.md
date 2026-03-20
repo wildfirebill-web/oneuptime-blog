@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Data Sources, Debugging, Error, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Data Source, Debugging, Error, Infrastructure as Code
 
 Description: Learn how to diagnose and fix data source read failures in OpenTofu, including filter mismatches, permission errors, and dependency ordering issues.
 
@@ -12,7 +12,7 @@ Data sources in OpenTofu read existing infrastructure information at plan/apply 
 
 ## Common Data Source Errors
 
-```
+```text
 Error: no matching EC2 VPC found
   with data.aws_vpc.main, on main.tf line 5, in data "aws_vpc" "main":
   Your query returned no results. Please change your search criteria and try again.
@@ -27,10 +27,11 @@ Error: Error reading S3 Bucket (my-bucket): NoSuchBucket: The specified bucket d
 Check that your filter values exactly match the tag or attribute on the resource:
 
 ```hcl
-# WRONG — tag key is case-sensitive
+# WRONG - tag key is case-sensitive
+
 data "aws_vpc" "main" {
   filter {
-    name   = "tag:name"    # Wrong — tag key is "Name", not "name"
+    name   = "tag:name"    # Wrong - tag key is "Name", not "name"
     values = ["prod-vpc"]
   }
 }
@@ -57,7 +58,7 @@ aws ec2 describe-vpcs --filters "Name=tag:Name,Values=prod-vpc" \
 When a data source references a resource that is being created in the same apply:
 
 ```hcl
-# PROBLEM — the security group doesn't exist yet when data source runs
+# PROBLEM - the security group doesn't exist yet when data source runs
 resource "aws_security_group" "app" {
   name = "app-sg"
   # ...
@@ -70,7 +71,7 @@ data "aws_security_group" "app" {
   }
 }
 
-# SOLUTION — reference the resource directly instead of a data source
+# SOLUTION - reference the resource directly instead of a data source
 resource "aws_instance" "web" {
   vpc_security_group_ids = [aws_security_group.app.id]  # Direct reference
 }

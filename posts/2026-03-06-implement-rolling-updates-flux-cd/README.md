@@ -40,6 +40,7 @@ apps/
 
 ```yaml
 # clusters/my-cluster/apps.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

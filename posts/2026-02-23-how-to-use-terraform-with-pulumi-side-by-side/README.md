@@ -84,6 +84,7 @@ To read Pulumi outputs in Terraform, you can export Pulumi stack outputs to a fi
 
 ```python
 # __main__.py
+
 # Pulumi program that exports outputs for Terraform consumption
 import pulumi
 import pulumi_aws as aws

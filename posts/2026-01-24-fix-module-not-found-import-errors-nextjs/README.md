@@ -72,6 +72,7 @@ Ensure all required packages are installed.
 
 ```bash
 # Check if the package exists in package.json
+
 cat package.json | grep "package-name"
 
 # Install missing dependencies

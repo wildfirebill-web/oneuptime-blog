@@ -45,6 +45,7 @@ Create a Function App with the necessary configuration.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-shopify-integration --location eastus
 
 # Create a storage account for the function

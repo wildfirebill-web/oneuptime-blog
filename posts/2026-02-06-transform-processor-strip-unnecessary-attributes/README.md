@@ -28,6 +28,7 @@ Here is a PromQL query to find the most common span attribute keys (if your back
 
 ```promql
 # Count distinct attribute keys across spans in the last 7 days
+
 # This helps identify attributes that exist but may not be used anywhere
 topk(50, count by (attribute_key) (span_attribute_keys_total))
 ```

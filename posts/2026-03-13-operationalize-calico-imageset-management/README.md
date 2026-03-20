@@ -88,6 +88,7 @@ flowchart TD
 ```bash
 #!/bin/bash
 # emergency-rollback-imageset.sh
+
 PREVIOUS_VERSION="${1:-v3.26.0}"
 IMAGESET_NAME="calico-${PREVIOUS_VERSION}"
 

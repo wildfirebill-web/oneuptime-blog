@@ -26,6 +26,7 @@ This guide covers installing cert-manager with Flux CD, configuring various issu
 
 ```yaml
 # clusters/my-cluster/sources/cert-manager-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

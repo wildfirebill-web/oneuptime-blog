@@ -24,6 +24,7 @@ Before getting into management, the key differences:
 
 ```bash
 # Install a snap from the Snap Store
+
 sudo snap install vlc
 
 # Install from a specific channel (stable is default)

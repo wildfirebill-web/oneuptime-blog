@@ -20,6 +20,7 @@ Alternatively, generate keys from PowerShell if you have WireGuard tools install
 
 ```powershell
 # Generate private key
+
 wg genkey | Tee-Object -FilePath client_private.key | wg pubkey | Out-File client_public.key
 
 # Display keys

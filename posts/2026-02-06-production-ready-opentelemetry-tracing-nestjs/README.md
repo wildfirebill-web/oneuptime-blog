@@ -222,6 +222,7 @@ Create a comprehensive environment configuration that works across development, 
 # .env.production
 
 # Service identification
+
 SERVICE_NAME=my-nestjs-service
 SERVICE_VERSION=1.0.0
 SERVICE_NAMESPACE=production

@@ -45,6 +45,7 @@ DynamoDB allocates capacity evenly across partitions. If you provision 10,000 RC
 
 ```python
 # Understanding partition capacity allocation
+
 # This is conceptual - DynamoDB handles this internally
 
 def calculate_partition_capacity(

@@ -18,6 +18,7 @@ Before you can use Podman farms, you need system connections that define how to 
 
 ```bash
 # Basic syntax
+
 podman system connection add <name> ssh://<user>@<host>/<socket-path>
 
 # Add an amd64 builder

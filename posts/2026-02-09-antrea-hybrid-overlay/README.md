@@ -22,6 +22,7 @@ Deploy Antrea with hybrid overlay configuration:
 
 ```bash
 # Download Antrea manifest
+
 curl -L https://github.com/antrea-io/antrea/releases/download/v1.14.0/antrea.yml -o antrea.yml
 
 # Edit the ConfigMap to enable hybrid mode

@@ -46,6 +46,7 @@ Cloud Build triggers support an `includedFiles` filter that tells the trigger to
 
 ```bash
 # Create a trigger that only fires when files in services/api/ change
+
 gcloud builds triggers create github \
   --repo-name="my-monorepo" \
   --repo-owner="my-org" \

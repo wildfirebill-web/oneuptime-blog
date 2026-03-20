@@ -16,6 +16,7 @@ Azure Resource Groups are the container for all Azure resources. Importing them 
 RESOURCE_GROUP="my-app-rg"
 
 # Get resource group details
+
 az group show --name $RESOURCE_GROUP --output json | jq '{
   name: .name,
   location: .location,

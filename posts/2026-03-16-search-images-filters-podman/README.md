@@ -20,6 +20,7 @@ Podman supports three main search filters.
 
 ```bash
 # Filter by official image status
+
 podman search nginx --filter is-official=true
 
 # Filter by minimum star count

@@ -18,6 +18,7 @@ Every unnecessary package in a container image is a potential vulnerability and 
 
 ```bash
 # Compare common base image sizes
+
 podman pull ubuntu:22.04
 podman pull debian:bookworm-slim
 podman pull alpine:3.19

@@ -42,6 +42,7 @@ Install the new version of Istiod alongside the existing one using a revision la
 
 ```yaml
 # cluster1-upgrade.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

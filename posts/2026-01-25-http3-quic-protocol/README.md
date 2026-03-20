@@ -46,6 +46,7 @@ Nginx added HTTP/3 support in version 1.25. Here's how to configure it.
 
 ```bash
 # Ubuntu/Debian - Install mainline with QUIC
+
 apt install nginx-mainline
 
 # Or compile from source with quic support

@@ -37,6 +37,7 @@ Define subsets for different versions of a service:
 
 ```yaml
 # basic-destinationrule.yaml
+
 # DestinationRule defining subsets for the product service
 apiVersion: networking.istio.io/v1
 kind: DestinationRule

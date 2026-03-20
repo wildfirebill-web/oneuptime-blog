@@ -1,4 +1,4 @@
-# How to Pull Docker Images with OpenTofu
+# How to Pull Docker Images with OpenTofu - Pull
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,10 +27,11 @@ provider "docker" {
 }
 ```
 
-## Resource Configuration
+Resource Configuration
 
 ```hcl
 # Pull the image
+
 resource "docker_image" "app" {
   name         = "${var.image_name}:${var.image_tag}"
   keep_locally = false
@@ -87,4 +88,4 @@ variable "environment"    { type = string; default = "development" }
 
 ## Conclusion
 
-The Docker provider is excellent for managing local development environments and testing stacks. For production workloads, consider ECS, AKS, or GKE—but Docker provider is valuable for developer tooling, CI runners, and simple self-hosted services.
+The Docker provider is excellent for managing local development environments and testing stacks. For production workloads, consider ECS, AKS, or GKE-but Docker provider is valuable for developer tooling, CI runners, and simple self-hosted services.

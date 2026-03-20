@@ -45,6 +45,7 @@ The best way to ensure consistent tagging is to apply tags in your Infrastructur
 
 ```hcl
 # Define common tags as a local variable
+
 # These are applied to every resource automatically
 locals {
   common_tags = {

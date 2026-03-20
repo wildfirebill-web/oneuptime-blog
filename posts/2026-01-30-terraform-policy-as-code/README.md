@@ -76,6 +76,7 @@ tflint is the fastest way to add policy checks. It catches common mistakes and e
 
 ```bash
 # macOS
+
 brew install tflint
 
 # Linux

@@ -30,6 +30,7 @@ Always capture the current state before applying changes:
 ```bash
 #!/bin/bash
 # pre-apply-snapshot.sh
+
 # Captures the current state of Calico resources before applying changes
 
 set -euo pipefail

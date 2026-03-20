@@ -79,6 +79,7 @@ Replace the annotations in your chart values or use a Kustomize overlay:
 
 ```yaml
 # Original Helm hook
+
 apiVersion: batch/v1
 kind: Job
 metadata:

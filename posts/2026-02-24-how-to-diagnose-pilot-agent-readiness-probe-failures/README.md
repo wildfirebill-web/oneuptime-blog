@@ -43,6 +43,7 @@ Start by checking what the readiness probe returns:
 
 ```bash
 # Check the readiness probe directly
+
 kubectl exec my-service-pod -n my-namespace -c istio-proxy -- \
   curl -s -o /dev/null -w "%{http_code}" localhost:15021/healthz/ready
 

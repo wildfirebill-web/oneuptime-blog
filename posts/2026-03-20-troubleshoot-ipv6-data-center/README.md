@@ -16,6 +16,7 @@ Link-local addresses are auto-configured. If they are missing, there is a physic
 
 ```bash
 # Check IPv6 addresses on all interfaces
+
 ip -6 addr show
 
 # Expected output for a healthy interface:

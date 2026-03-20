@@ -57,6 +57,7 @@ flowchart TB
 
 ```bash
 # Check required APIs are enabled
+
 gcloud services enable dataflow.googleapis.com
 gcloud services enable compute.googleapis.com
 gcloud services enable storage.googleapis.com

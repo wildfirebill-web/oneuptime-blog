@@ -32,6 +32,7 @@ Before making any changes, document the current IPAM state:
 
 ```bash
 # List all IP pools with their CIDRs, block sizes, and selectors
+
 calicoctl get ippool -o wide
 
 # Show current block allocation - note which IPs are already in use

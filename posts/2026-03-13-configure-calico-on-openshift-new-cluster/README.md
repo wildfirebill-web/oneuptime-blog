@@ -84,6 +84,7 @@ OpenShift uses Routes (not Ingress) for external access. Ensure Calico does not 
 
 ```bash
 # Verify the OpenShift router pods are using host networking
+
 oc get pods -n openshift-ingress -o wide
 ```
 

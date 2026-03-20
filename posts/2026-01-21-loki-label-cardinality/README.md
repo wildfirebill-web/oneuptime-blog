@@ -53,6 +53,7 @@ flowchart TB
 
 ```bash
 # Current stream count per tenant
+
 curl -s 'http://loki:3100/loki/api/v1/label/__name__/values' | jq
 
 # Active streams metric

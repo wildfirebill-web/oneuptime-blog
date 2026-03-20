@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Load Balancer, Multi-Region, Route53, AWS, Infrastructure as Code
 
-Description: Learn how to configure multi-region load balancing with OpenTofu — deploying ALBs in multiple regions with Route53 latency-based routing and health checks for global traffic distribution.
+Description: Learn how to configure multi-region load balancing with OpenTofu - deploying ALBs in multiple regions with Route53 latency-based routing and health checks for global traffic distribution.
 
 ## Introduction
 
-Multi-region load balancing distributes traffic to the nearest healthy region. OpenTofu manages the full stack: regional ALBs, Route53 latency routing policies, health checks, and failover records — all as code.
+Multi-region load balancing distributes traffic to the nearest healthy region. OpenTofu manages the full stack: regional ALBs, Route53 latency routing policies, health checks, and failover records - all as code.
 
 ## Regional Application Load Balancers
 
 ```hcl
 # Deploy ALB in each region using provider aliases
+
 provider "aws" {
   alias  = "us_east_1"
   region = "us-east-1"
@@ -128,7 +129,7 @@ resource "aws_route53_record" "app_eu_west" {
 ## Route53 Failover (Active-Passive)
 
 ```hcl
-# Primary record — normally receives all traffic
+# Primary record - normally receives all traffic
 resource "aws_route53_record" "primary" {
   zone_id        = aws_route53_zone.public.zone_id
   name           = "api.${var.domain_name}"
@@ -148,7 +149,7 @@ resource "aws_route53_record" "primary" {
   }
 }
 
-# Secondary record — receives traffic only if primary is unhealthy
+# Secondary record - receives traffic only if primary is unhealthy
 resource "aws_route53_record" "secondary" {
   zone_id        = aws_route53_zone.public.zone_id
   name           = "api.${var.domain_name}"
@@ -159,7 +160,7 @@ resource "aws_route53_record" "secondary" {
     type = "SECONDARY"
   }
 
-  # No health check on secondary — always available as failover
+  # No health check on secondary - always available as failover
 
   alias {
     name                   = aws_lb.eu_west.dns_name
@@ -206,4 +207,4 @@ resource "google_compute_backend_service" "main" {
 
 ## Conclusion
 
-Multi-region load balancing with OpenTofu on AWS uses Route53 latency routing with health checks to direct users to the nearest healthy region. Use latency routing for active-active (traffic to nearest healthy region) and failover routing for active-passive (primary + backup). GCP's global HTTP(S) load balancer provides built-in anycast routing — a single IP routes to the nearest available backend globally. Always configure health checks so Route53 can automatically route around unhealthy regions.
+Multi-region load balancing with OpenTofu on AWS uses Route53 latency routing with health checks to direct users to the nearest healthy region. Use latency routing for active-active (traffic to nearest healthy region) and failover routing for active-passive (primary + backup). GCP's global HTTP(S) load balancer provides built-in anycast routing - a single IP routes to the nearest available backend globally. Always configure health checks so Route53 can automatically route around unhealthy regions.

@@ -65,6 +65,7 @@ zabbix/
 
 ```yaml
 # roles/zabbix_server/defaults/main.yml
+
 zabbix_version: "6.4"
 zabbix_server_listen_port: 10051
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, Providers, Multi-Region, Infrastructure as Code
+Tags: OpenTofu, Testing, Provider, Multi-Region, Infrastructure as Code
 
 Description: Learn how to configure and use provider aliases in OpenTofu test files to test multi-region, multi-account, and multi-provider infrastructure configurations.
 
@@ -51,6 +51,7 @@ When testing a module that requires an aliased provider:
 
 ```hcl
 # modules/replication/main.tf
+
 resource "aws_s3_bucket_replication_configuration" "replication" {
   provider = aws.destination
   ...

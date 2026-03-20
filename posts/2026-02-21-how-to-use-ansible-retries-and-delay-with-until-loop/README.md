@@ -19,6 +19,7 @@ If you use `until` without specifying `retries` or `delay`, Ansible uses these d
 
 ```yaml
 # Uses default retries=3 and delay=5
+
 - name: Check if service is up (defaults)
   ansible.builtin.uri:
     url: http://localhost:8080/health

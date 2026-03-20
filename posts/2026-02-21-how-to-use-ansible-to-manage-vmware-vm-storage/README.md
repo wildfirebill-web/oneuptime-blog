@@ -34,6 +34,7 @@ The `community.vmware.vmware_guest_disk` module manages VM disks without affecti
 
 ```yaml
 # add-disk.yml
+
 ---
 - name: Add a new disk to a virtual machine
   hosts: localhost

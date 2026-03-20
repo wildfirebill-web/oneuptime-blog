@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SSH, Link-Local, fe80, Scope ID, Zone ID
+Tags: IPv6, SSH, Link-Local, Fe80, Scope ID, Zone ID
 
 Description: Learn how to SSH to hosts using link-local IPv6 addresses (fe80::/10), including specifying the network interface scope ID required for link-local connections.
 
@@ -12,6 +12,7 @@ Link-local addresses (fe80::/10) are only reachable on the local network segment
 
 ```bash
 # View your link-local addresses
+
 ip -6 addr show | grep "fe80"
 # Example output:
 # inet6 fe80::1:2:3:4/64 scope link
@@ -60,7 +61,7 @@ ssh 'user@fe80::1:2:3:4%eth0'
 
 ## ~/.ssh/config with Link-Local
 
-```
+```text
 # ~/.ssh/config
 
 # SSH to link-local address via eth0

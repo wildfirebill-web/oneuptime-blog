@@ -24,6 +24,7 @@ mkdir -p ~/.config/containers/systemd/
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=My Application Service
 

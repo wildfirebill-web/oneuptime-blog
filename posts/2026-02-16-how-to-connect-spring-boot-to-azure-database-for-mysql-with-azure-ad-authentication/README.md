@@ -51,6 +51,7 @@ Create a MySQL Flexible Server with Azure AD authentication enabled.
 
 ```bash
 # Create a resource group
+
 az group create --name mysql-demo-rg --location eastus
 
 # Create a MySQL Flexible Server

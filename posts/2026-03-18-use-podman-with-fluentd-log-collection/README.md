@@ -40,6 +40,7 @@ Create the Fluentd configuration file:
 # ~/fluentd/config/fluent.conf
 
 # Accept logs from containers via forward protocol
+
 <source>
   @type forward
   port 24224

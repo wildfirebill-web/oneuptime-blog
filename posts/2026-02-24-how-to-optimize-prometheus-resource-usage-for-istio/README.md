@@ -28,6 +28,7 @@ Check your current stats:
 kubectl port-forward -n istio-system svc/prometheus 9090:9090 &
 
 # Active time series count
+
 curl -s localhost:9090/api/v1/status/tsdb | jq '.data.headStats.numSeries'
 
 # Ingestion rate

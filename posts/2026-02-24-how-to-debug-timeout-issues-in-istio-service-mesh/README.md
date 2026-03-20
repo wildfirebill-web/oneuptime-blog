@@ -24,6 +24,7 @@ Check the response headers for clues:
 
 ```bash
 # Send a request and look at response headers
+
 kubectl exec deploy/sleep -- curl -v http://my-service:8080/slow-endpoint 2>&1
 
 # Look for these headers:

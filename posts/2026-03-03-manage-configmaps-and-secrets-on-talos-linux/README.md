@@ -22,6 +22,7 @@ There are several ways to create ConfigMaps:
 
 ```bash
 # Create from literal key-value pairs
+
 kubectl create configmap app-config \
   --namespace my-app \
   --from-literal=DATABASE_HOST=postgres.db.svc.cluster.local \

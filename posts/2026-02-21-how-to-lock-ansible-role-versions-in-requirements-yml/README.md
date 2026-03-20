@@ -16,6 +16,7 @@ The `requirements.yml` file lists external roles (and collections) that your pro
 
 ```bash
 # Install all roles and collections from requirements.yml
+
 ansible-galaxy install -r requirements.yml
 ```
 

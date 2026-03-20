@@ -20,6 +20,7 @@ Ensure Podman Desktop is running and you have access to a container registry.
 
 ```bash
 # Verify Podman is available
+
 podman info
 
 # Check that you have images to push

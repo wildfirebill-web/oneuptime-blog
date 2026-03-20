@@ -57,6 +57,7 @@ The simplest approach is a bash script in `.git/hooks/pre-commit`. Create the fi
 #!/bin/bash
 
 # Find all staged YAML files that look like Istio configs
+
 STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.ya?ml$')
 
 if [ -z "$STAGED_FILES" ]; then

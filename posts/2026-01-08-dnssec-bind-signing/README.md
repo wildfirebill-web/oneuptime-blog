@@ -23,6 +23,7 @@ Before proceeding, ensure you have:
 
 ```bash
 # Verify BIND installation
+
 named -v
 # BIND 9.18.x
 

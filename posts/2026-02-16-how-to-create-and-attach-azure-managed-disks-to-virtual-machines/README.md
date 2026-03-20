@@ -26,6 +26,7 @@ Before creating a disk, you need to understand the key parameters.
 
 ```bash
 # Create a Premium SSD managed disk with 128 GiB capacity
+
 az disk create \
   --name data-disk-01 \
   --resource-group my-resource-group \

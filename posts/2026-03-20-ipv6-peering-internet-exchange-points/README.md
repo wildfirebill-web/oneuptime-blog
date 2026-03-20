@@ -1,4 +1,4 @@
-# How to Configure IPv6 Peering at Internet Exchange Points
+# How to Configure IPv6 Peering at Internet Exchange Points - Points
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,7 +16,7 @@ Major IXPs with IPv6 support include DE-CIX, AMS-IX, LINX, Equinix, and BCIX.
 
 IXPs assign IPv6 addresses from their own peering LAN prefix. Example:
 
-```
+```text
 IXP Peering LAN: 2001:7f8:4::/64 (DE-CIX example range)
 
 Your Router port: 2001:7f8:4::1234/64
@@ -27,8 +27,9 @@ IXP Route Server: 2001:7f8:4::1 (RS1), 2001:7f8:4::2 (RS2)
 
 Configure your border router with IPv6 BGP sessions to peering partners and the route server:
 
-```
+```text
 # Cisco IOS-XE - IPv6 BGP peering at IXP
+
 router bgp 65001
 
  ! Session to IXP Route Server 1
@@ -56,7 +57,7 @@ router bgp 65001
 
 Always filter routes at IXP connections. Accept only specific prefixes from peers, not defaults:
 
-```
+```text
 # IPv6 prefix-list to accept only valid prefixes from peers
 ipv6 prefix-list PEER-IN-FILTER seq 5  deny ::/0                    le 7   ! Block too-short prefixes
 ipv6 prefix-list PEER-IN-FILTER seq 10 deny ::/0                    ge 49  ! Block too-long prefixes
@@ -74,7 +75,7 @@ router bgp 65001
 
 Tag routes received at IXP with a community for traffic engineering:
 
-```
+```text
 # Tag all routes received from IXP with community 65001:200
 route-map IXP-IN permit 10
  set community 65001:200 additive
@@ -88,7 +89,7 @@ router bgp 65001
 
 Enable RPKI route origin validation to reject hijacked routes at the IXP:
 
-```
+```text
 ! Configure RPKI validator connection
 router bgp 65001
  bgp rpki server tcp 2001:db8:rpki::10 port 3323 refresh 600

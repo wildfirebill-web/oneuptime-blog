@@ -16,6 +16,7 @@ When you are writing Terraform configurations, sometimes you need to test an exp
 
 ```bash
 # Start the interactive console
+
 terraform console
 ```
 

@@ -27,6 +27,7 @@ Verify your setup:
 
 ```bash
 # Check kubectl connectivity
+
 kubectl cluster-info
 
 # Verify Flux installation
@@ -367,7 +368,7 @@ kubectl config current-context
 kubectl get namespaces
 ```
 
-### Resources Not Showing Up
+Resources Not Showing Up
 
 If the GitOps panel is empty:
 

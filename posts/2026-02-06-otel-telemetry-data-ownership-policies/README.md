@@ -24,6 +24,7 @@ Add these resource attributes to every service in your organization:
 
 ```yaml
 # Required ownership resource attributes
+
 resource:
   service.name: "order-service"
   service.namespace: "commerce"        # Business domain

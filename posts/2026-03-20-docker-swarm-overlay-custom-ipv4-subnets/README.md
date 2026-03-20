@@ -14,6 +14,7 @@ Docker Swarm uses two overlay networks by default: `ingress` (for published port
 
 ```bash
 # Initialize Swarm with a custom advertise address
+
 docker swarm init \
   --advertise-addr 192.168.1.10 \
   --default-addr-pool 10.50.0.0/16 \

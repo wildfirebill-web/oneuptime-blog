@@ -22,6 +22,7 @@ Always capture on the **parent interface** (e.g., `eth0`), not the VLAN subinter
 
 ```bash
 # Capture all 802.1Q-tagged frames on eth0
+
 tcpdump -i eth0 -e vlan
 
 # The -e flag shows Ethernet link-level headers including the 802.1Q tag
@@ -44,15 +45,15 @@ tcpdump -i eth0 -e vlan 100
 
 When tcpdump shows a tagged frame:
 
-```
+```text
 14:22:31.123456 eth0 802.1Q vlan#100, p 0, ethertype IPv4,
 10.100.0.1 > 10.100.0.2: ICMP echo request, id 1, seq 1
 ```
 
 Key fields:
-- `802.1Q vlan#100` — the VLAN ID in the 802.1Q tag
-- `p 0` — priority (0-7 in the 3-bit PCP field)
-- `ethertype IPv4` — the inner protocol
+- `802.1Q vlan#100` - the VLAN ID in the 802.1Q tag
+- `p 0` - priority (0-7 in the 3-bit PCP field)
+- `ethertype IPv4` - the inner protocol
 
 ## Generate Test Traffic to Verify
 
@@ -79,10 +80,10 @@ tcpdump -i eth0 vlan -w /tmp/vlan-capture.pcap
 ## Verify No Tag on VLAN Subinterface (Expected Behavior)
 
 ```bash
-# Capture on the VLAN subinterface — tags are stripped by the kernel
+# Capture on the VLAN subinterface - tags are stripped by the kernel
 tcpdump -i eth0.100 -e
 
-# You will NOT see 802.1Q tags here — the kernel removes them
+# You will NOT see 802.1Q tags here - the kernel removes them
 # This is normal and expected behavior
 ```
 

@@ -30,6 +30,7 @@ Start by checking the current status:
 
 ```bash
 # Check the overall certificate status
+
 gcloud compute ssl-certificates describe my-cert \
     --global \
     --format="yaml(managed)"

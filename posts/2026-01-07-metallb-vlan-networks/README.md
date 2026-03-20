@@ -109,6 +109,7 @@ The following Netplan configuration creates VLAN interfaces for production (VLAN
 
 ```yaml
 # /etc/netplan/01-vlan-config.yaml
+
 # This configuration file sets up VLAN interfaces for MetalLB
 # The parent interface (ens192) must be connected to a trunk port on your switch
 

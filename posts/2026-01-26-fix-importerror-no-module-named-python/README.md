@@ -27,6 +27,7 @@ If Python cannot find the module in any of these locations, it raises an ImportE
 
 ```python
 # This causes the error if 'requests' is not installed
+
 import requests  # ImportError: No module named 'requests'
 ```
 

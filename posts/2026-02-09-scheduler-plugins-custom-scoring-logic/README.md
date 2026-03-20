@@ -28,6 +28,7 @@ cd custom-scorer
 go mod init github.com/yourorg/custom-scorer
 
 # Install scheduler framework dependencies
+
 go get k8s.io/kubernetes/pkg/scheduler/framework@v1.28.0
 go get k8s.io/api@v0.28.0
 go get k8s.io/apimachinery@v0.28.0

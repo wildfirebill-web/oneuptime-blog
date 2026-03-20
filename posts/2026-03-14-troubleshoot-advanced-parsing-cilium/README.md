@@ -30,6 +30,7 @@ When nested structures fail to parse correctly, the error may cascade through th
 
 ```bash
 # Enable debug logging for the parser
+
 kubectl exec -n kube-system ds/cilium -- cilium config set debug true
 
 # Watch for parser errors in real time

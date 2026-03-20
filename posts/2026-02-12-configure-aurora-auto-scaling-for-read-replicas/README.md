@@ -49,6 +49,7 @@ This command registers your cluster with a minimum of 1 and maximum of 5 replica
 
 ```bash
 # Register the Aurora cluster as a scalable target
+
 aws application-autoscaling register-scalable-target \
   --service-namespace rds \
   --resource-id cluster:my-aurora-cluster \

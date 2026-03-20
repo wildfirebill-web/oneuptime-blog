@@ -40,6 +40,7 @@ EnhanceIO is compiled from source:
 
 ```bash
 # Install build dependencies
+
 sudo apt update
 sudo apt install -y \
   build-essential \

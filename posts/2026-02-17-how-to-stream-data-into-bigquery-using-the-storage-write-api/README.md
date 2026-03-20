@@ -38,6 +38,7 @@ The default stream is the simplest way to stream data. Here is a Python example.
 
 ```python
 # stream_to_bigquery.py - Stream data using the default stream
+
 from google.cloud import bigquery_storage_v1
 from google.cloud.bigquery_storage_v1 import types
 from google.cloud.bigquery_storage_v1 import writer

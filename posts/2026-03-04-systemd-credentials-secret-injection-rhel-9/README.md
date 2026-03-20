@@ -24,6 +24,7 @@ graph LR
 
 ```bash
 # Create a credential encrypted with the host key
+
 echo "my-secret-api-key-12345" | sudo systemd-creds encrypt - /etc/credstore/myapp.api-key
 
 # Create a credential from a file

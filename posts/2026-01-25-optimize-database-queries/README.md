@@ -291,6 +291,7 @@ LIMIT 20;
 
 ```python
 # batch_queries.py
+
 # Bad: N+1 queries
 def get_users_with_orders_bad(user_ids):
     users = []

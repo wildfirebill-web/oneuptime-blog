@@ -27,6 +27,7 @@ This guide covers migrate zero trust network policies in Calico, including the f
 
 ```yaml
 # Layer 1: Global default deny
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

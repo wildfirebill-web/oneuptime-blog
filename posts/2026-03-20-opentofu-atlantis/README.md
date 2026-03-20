@@ -20,6 +20,7 @@ Learn how to configure Atlantis for automated OpenTofu plan and apply from pull 
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

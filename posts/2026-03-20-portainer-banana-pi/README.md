@@ -1,4 +1,4 @@
-# How to Install Portainer on Banana Pi
+# How to Install Portainer on Banana Pi - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,10 +12,10 @@ Banana Pi boards offer competitive ARM hardware, with models like the Banana Pi 
 
 ## Recommended Models
 
-- **BPi-M5**: Amlogic S905X3, 4GB RAM — good for light home lab use
-- **BPi-M7**: Rockchip RK3588, up to 16GB RAM — capable of heavy workloads
-- **BPi-R3**: MediaTek MT7986, designed for networking — great for router/firewall
-- **BPi-W3**: RK3588, PCIe support — best for server use cases
+- **BPi-M5**: Amlogic S905X3, 4GB RAM - good for light home lab use
+- **BPi-M7**: Rockchip RK3588, up to 16GB RAM - capable of heavy workloads
+- **BPi-R3**: MediaTek MT7986, designed for networking - great for router/firewall
+- **BPi-W3**: RK3588, PCIe support - best for server use cases
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ Download the official Armbian image for your Banana Pi model from armbian.com or
 
 ```bash
 # SSH in (Armbian default: user=root, pass=1234)
+
 ssh root@<banana-pi-ip>
 
 # On first login, Armbian prompts to create a new user

@@ -16,6 +16,7 @@ Install the 1Password CLI:
 
 ```yaml
 # roles/onepassword_setup/tasks/main.yml
+
 ---
 - name: Install 1Password CLI
   ansible.builtin.get_url:

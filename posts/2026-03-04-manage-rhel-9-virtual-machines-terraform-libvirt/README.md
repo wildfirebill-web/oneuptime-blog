@@ -30,6 +30,7 @@ Install the required packages on your RHEL hypervisor:
 
 ```bash
 # Install KVM and libvirt
+
 sudo dnf install -y qemu-kvm libvirt virt-install
 
 # Start and enable libvirtd

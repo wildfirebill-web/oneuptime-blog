@@ -64,6 +64,7 @@ Create a comprehensive values file:
 
 ```yaml
 # istiod-values.yaml
+
 revision: ""
 
 pilot:

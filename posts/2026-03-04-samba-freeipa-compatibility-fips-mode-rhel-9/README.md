@@ -43,6 +43,7 @@ NTLM authentication hashes passwords with MD4 and uses MD5 in the challenge-resp
 
 ```bash
 # Configure Samba to use Kerberos instead of NTLM
+
 cat >> /etc/samba/smb.conf << 'EOF'
 
 [global]

@@ -455,6 +455,7 @@ func main() {
 
 ```bash
 # Build the CLI
+
 go build -o gcp-manager
 
 # List projects under an organization

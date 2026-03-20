@@ -174,6 +174,7 @@ class DeadLetterQueue:
         }
 
 # Usage
+
 dlq = DeadLetterQueue(redis.Redis())
 
 # Send failed message to DLQ

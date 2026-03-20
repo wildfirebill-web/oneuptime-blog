@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Environment, Infrastructure, DevOps
+Tags: Ansible, Environments, Infrastructure, DevOps
 
 Description: Learn how to manage multiple environments like development, staging, and production with Ansible using separate inventories and group variables.
 
@@ -70,6 +70,7 @@ Each environment has its own inventory file with its own hosts:
 
 ```ini
 # inventories/development/hosts.ini
+
 [webservers]
 dev-web1 ansible_host=192.168.56.10
 

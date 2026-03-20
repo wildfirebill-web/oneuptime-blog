@@ -53,6 +53,7 @@ server = true
 bootstrap_expect = 3
 
 # Enable Connect service mesh with built-in CA
+
 connect {
   enabled = true
   ca_provider = "consul"

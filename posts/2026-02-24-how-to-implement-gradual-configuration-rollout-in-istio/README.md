@@ -72,6 +72,7 @@ Start with 5% of traffic going to the new configuration, monitor your metrics, t
 
 ```bash
 # Check current routing weights
+
 kubectl get virtualservice my-service -n production -o yaml
 
 # Update to 20% canary

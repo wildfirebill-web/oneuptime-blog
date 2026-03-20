@@ -104,6 +104,7 @@ The better long-term approach is to replace multicast-based patterns with unicas
 
 ```yaml
 # Instead of multicast discovery, use Kubernetes headless service
+
 apiVersion: v1
 kind: Service
 metadata:

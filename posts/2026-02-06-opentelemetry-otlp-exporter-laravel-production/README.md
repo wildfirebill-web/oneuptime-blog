@@ -20,6 +20,7 @@ First, ensure you have the required packages with appropriate version constraint
 
 ```bash
 # Install the core OpenTelemetry SDK and OTLP exporter
+
 composer require open-telemetry/sdk:^1.0
 composer require open-telemetry/exporter-otlp:^1.0
 

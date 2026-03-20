@@ -27,6 +27,7 @@ The address of this resource is `aws_instance.web`.
 
 ```bash
 # Reference this resource in CLI commands
+
 terraform state show aws_instance.web
 terraform apply -replace="aws_instance.web"
 ```
@@ -48,7 +49,7 @@ Address: `data.aws_ami.ubuntu`
 terraform state show data.aws_ami.ubuntu
 ```
 
-## Resources with count
+Resources with count
 
 When a resource uses `count`, each instance gets a numeric index starting at 0:
 
@@ -76,7 +77,7 @@ terraform state show aws_instance.web
 
 Note the quoting: square brackets need to be protected from shell interpretation.
 
-## Resources with for_each
+Resources with for_each
 
 When using `for_each`, instances are keyed by the map key or set element:
 

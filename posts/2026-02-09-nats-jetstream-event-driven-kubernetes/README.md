@@ -24,6 +24,7 @@ Deploy NATS with JetStream enabled using Helm. First, add the NATS Helm reposito
 
 ```bash
 # Add NATS Helm repository
+
 helm repo add nats https://nats-io.github.io/k8s/helm/charts/
 helm repo update
 

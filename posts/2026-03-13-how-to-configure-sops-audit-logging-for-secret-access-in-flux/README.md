@@ -91,6 +91,7 @@ Flux emits Kubernetes events during reconciliation, including when it decrypts S
 
 ```bash
 # Watch Flux events in real time
+
 kubectl get events -n flux-system --watch --field-selector reason=ReconciliationSucceeded
 
 # Get events related to a specific Kustomization

@@ -1,4 +1,4 @@
-# How to Expose Portainer on Kubernetes via LoadBalancer
+# How to Expose Portainer on Kubernetes via LoadBalancer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ helm install portainer portainer/portainer \
   --set service.type=LoadBalancer
 
 # Or with custom values:
+
 ```
 
 ```yaml

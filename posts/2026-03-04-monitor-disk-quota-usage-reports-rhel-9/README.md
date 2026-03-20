@@ -18,6 +18,7 @@ The simplest check for a specific user:
 
 ```bash
 # Check quota for a specific user on all filesystems
+
 quota -u jsmith
 ```
 

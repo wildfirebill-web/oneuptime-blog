@@ -20,6 +20,7 @@ From a file:
 
 ```bash
 # Create an Nginx configuration as a Swarm config
+
 docker config create nginx-conf ./nginx.conf
 ```
 

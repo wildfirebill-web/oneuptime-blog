@@ -24,6 +24,7 @@ You'll need:
 
 ```bash
 # Get the Maven repository URL
+
 REPO_URL=$(aws codeartifact get-repository-endpoint \
   --domain my-org \
   --domain-owner 123456789012 \

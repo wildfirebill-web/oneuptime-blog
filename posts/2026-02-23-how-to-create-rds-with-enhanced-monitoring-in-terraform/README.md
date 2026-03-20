@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 # IAM role that allows RDS to publish Enhanced Monitoring metrics
+
 resource "aws_iam_role" "rds_enhanced_monitoring" {
   name = "rds-enhanced-monitoring-role"
 

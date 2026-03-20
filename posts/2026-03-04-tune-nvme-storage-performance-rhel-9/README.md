@@ -59,6 +59,7 @@ NVMe supports deep hardware queues. Ensure the software queue matches:
 
 ```bash
 # Check current setting
+
 cat /sys/block/nvme0n1/queue/nr_requests
 
 # Set to maximum

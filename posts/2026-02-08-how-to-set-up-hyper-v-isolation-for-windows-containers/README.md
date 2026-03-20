@@ -68,6 +68,7 @@ Hyper-V isolation requires:
 
 ```powershell
 # Check if Hyper-V is available
+
 Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V
 
 # Enable Hyper-V (requires restart)
@@ -197,7 +198,7 @@ services:
       - "9090:9090"
 ```
 
-## Resource Management
+Resource Management
 
 Hyper-V isolated containers consume more resources because each one runs its own kernel. Manage resources carefully.
 

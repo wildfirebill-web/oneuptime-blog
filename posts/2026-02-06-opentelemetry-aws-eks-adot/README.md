@@ -55,6 +55,7 @@ The ADOT Operator relies on cert-manager for webhook TLS certificates. Install i
 
 ```bash
 # Install cert-manager, which handles TLS certificates for the ADOT Operator webhooks
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.5/cert-manager.yaml
 
 # Wait for cert-manager pods to be ready before proceeding

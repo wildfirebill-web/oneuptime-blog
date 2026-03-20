@@ -33,6 +33,7 @@ Start by deploying backends in multiple regions with a clear primary-secondary h
 
 ```bash
 # Create the health check
+
 gcloud compute health-checks create http app-hc \
     --port=8080 \
     --request-path=/healthz \

@@ -22,6 +22,7 @@ First, deploy Argo Workflows to your cluster:
 
 ```bash
 # Create namespace
+
 kubectl create namespace argo
 
 # Install Argo Workflows

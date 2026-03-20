@@ -42,6 +42,7 @@ Suspend an active job using kubectl:
 
 ```bash
 # Suspend the job
+
 kubectl patch job batch-processor -p '{"spec":{"suspend":true}}'
 
 # Verify it's suspended
@@ -74,7 +75,7 @@ kubectl get pods -l job-name=batch-processor -w
 
 The job resumes from its last completion count. If 37 out of 100 completions were done before suspension, it continues from 37 when resumed.
 
-## Resource Management Use Cases
+Resource Management Use Cases
 
 Suspend jobs during peak hours to preserve resources for critical services:
 

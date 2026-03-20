@@ -22,6 +22,7 @@ Start by creating a new Pulumi project:
 
 ```bash
 # Create a new Pulumi project for Azure with TypeScript
+
 mkdir aks-cluster && cd aks-cluster
 pulumi new azure-typescript
 

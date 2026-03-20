@@ -64,6 +64,7 @@ Providers publish their API specification to the contract broker. This can be an
 
 ```yaml
 # provider-api.yaml
+
 # This OpenAPI spec describes what the Order Service actually provides
 openapi: 3.0.3
 info:

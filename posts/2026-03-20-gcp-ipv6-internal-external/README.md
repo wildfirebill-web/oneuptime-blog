@@ -14,6 +14,7 @@ Google Cloud offers two types of IPv6 for VPC subnets: external IPv6 (globally r
 
 ```bash
 # Create subnet with external IPv6
+
 gcloud compute networks subnets create subnet-external-ipv6 \
     --network=vpc-main \
     --region=us-east1 \
@@ -49,7 +50,7 @@ gcloud compute networks subnets create subnet-internal-ipv6 \
 
 # Internal IPv6 properties:
 # - Addresses from ULA range (fd::/8)
-# - NOT globally routable — only within VPC and connected networks
+# - NOT globally routable - only within VPC and connected networks
 # - No internet access without Cloud NAT for IPv6
 # - More secure for backend services
 # - Lower risk of accidental internet exposure
@@ -62,7 +63,7 @@ gcloud compute networks subnets describe subnet-internal-ipv6 \
 
 ## Use Case Comparison
 
-```
+```text
 External IPv6 Use Cases:
   - Web servers and public-facing APIs
   - CDN origin servers

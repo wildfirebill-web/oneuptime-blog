@@ -1,4 +1,4 @@
-# How to Debug Fleet Git Repository Sync Issues
+# How to Debug Fleet Git Repository Sync Issues - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Fleet sync failures prevent GitOps updates from reaching your clusters. Issues r
 
 ## Fleet Sync Flow
 
-```
+```text
 GitRepo (spec.repo)
     │
     ▼
@@ -36,6 +36,7 @@ BundleDeployment status updated
 
 ```bash
 # List all GitRepos and their sync status
+
 kubectl get gitrepo -n fleet-default
 
 # Describe a specific GitRepo for error details
@@ -47,9 +48,9 @@ kubectl describe gitrepo my-app -n fleet-default
 ```
 
 Common status conditions:
-- `Synced` — Repository was cloned/fetched successfully
-- `Ready` — All bundles are deployed
-- `Error` — Sync failed (check Message field)
+- `Synced` - Repository was cloned/fetched successfully
+- `Ready` - All bundles are deployed
+- `Error` - Sync failed (check Message field)
 
 ---
 
@@ -127,7 +128,7 @@ kubectl get bundle -n fleet-default | grep -v "1/1"
 # Describe the failing bundle
 kubectl describe bundle my-app -n fleet-default
 
-# Look for the status message — it shows the Helm template error
+# Look for the status message - it shows the Helm template error
 # Example: "Error: template: my-chart/templates/deployment.yaml:15:5: executing ..."
 ```
 
@@ -227,6 +228,6 @@ kubectl get clusterrolebinding | grep fleet
 
 ## Best Practices
 
-- Use HTTPS with token authentication for Git repos rather than SSH — it's easier to debug and doesn't require managing SSH keys.
+- Use HTTPS with token authentication for Git repos rather than SSH - it's easier to debug and doesn't require managing SSH keys.
 - Enable Fleet webhook integration with your Git provider to trigger immediate syncs on push rather than waiting for the polling interval.
-- Test `fleet.yaml` and Helm templates locally using `fleet apply --dry-run` before pushing to Git — this catches rendering errors without requiring a cluster sync.
+- Test `fleet.yaml` and Helm templates locally using `fleet apply --dry-run` before pushing to Git - this catches rendering errors without requiring a cluster sync.

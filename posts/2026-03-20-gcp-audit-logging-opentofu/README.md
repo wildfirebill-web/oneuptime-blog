@@ -30,6 +30,7 @@ provider "google" {
 
 ```hcl
 # Enable Data Access logs for all services at the project level
+
 resource "google_project_iam_audit_config" "all_services" {
   project = var.project_id
   service = "allServices"  # Apply to all Google Cloud services
@@ -135,7 +136,7 @@ resource "google_storage_bucket" "audit_logs" {
   uniform_bucket_level_access = true
 
   retention_policy {
-    is_locked        = true   # Compliance lock — cannot be removed
+    is_locked        = true   # Compliance lock - cannot be removed
     retention_period = 31536000  # 1 year in seconds
   }
 

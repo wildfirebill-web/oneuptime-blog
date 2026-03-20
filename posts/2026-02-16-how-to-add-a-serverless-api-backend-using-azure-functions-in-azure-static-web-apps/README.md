@@ -55,6 +55,7 @@ In your project root, create the `api` directory and initialize it.
 
 ```bash
 # Create the api directory and initialize a Node.js project
+
 mkdir api
 cd api
 npm init -y

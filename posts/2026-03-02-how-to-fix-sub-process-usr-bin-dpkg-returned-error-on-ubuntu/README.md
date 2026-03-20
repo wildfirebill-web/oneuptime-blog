@@ -32,6 +32,7 @@ The key information is:
 
 ```bash
 # Run dpkg --configure to see which packages are broken
+
 sudo dpkg --configure -a 2>&1 | grep -E "error|failed|subprocess"
 
 # List packages in broken states

@@ -20,6 +20,7 @@ Start a capture inside the pod, save to a file, then download it:
 
 ```bash
 # Start an ephemeral debug container with tcpdump
+
 kubectl debug -it my-service-pod -n my-namespace \
   --image=nicolaka/netshoot \
   --target=istio-proxy \

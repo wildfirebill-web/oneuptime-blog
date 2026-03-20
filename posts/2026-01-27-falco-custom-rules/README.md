@@ -16,6 +16,7 @@ Falco rules define what events to detect and how to alert on them. Each rule has
 
 ```yaml
 # Basic rule structure
+
 - rule: Detect Shell in Container
   desc: Alert when a shell is spawned inside a container
   condition: >

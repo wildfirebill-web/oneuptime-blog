@@ -16,6 +16,7 @@ The simplest way to spin up MongoDB is a single `docker run` command.
 
 ```bash
 # Pull the official MongoDB image
+
 docker pull mongo:7.0
 
 # Run MongoDB with port mapping and data persistence

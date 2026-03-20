@@ -27,6 +27,7 @@ The most basic improvement over hardcoding is to use input variables:
 
 ```hcl
 # Bad - hardcoded credentials
+
 resource "aws_db_instance" "main" {
   username = "admin"
   password = "SuperSecret123!"  # Never do this

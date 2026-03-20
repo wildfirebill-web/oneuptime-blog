@@ -138,6 +138,7 @@ Monitor when circuit breakers trip:
 
 ```promql
 # Connection overflow
+
 envoy_cluster_circuit_breakers_default_cx_open
 
 # Pending request overflow

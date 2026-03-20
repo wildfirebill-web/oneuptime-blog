@@ -54,6 +54,7 @@ This module provides the core JWT functionality: creating access tokens (short-l
 
 ```python
 # jwt_handler.py
+
 # Core JWT token creation and validation utilities
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any

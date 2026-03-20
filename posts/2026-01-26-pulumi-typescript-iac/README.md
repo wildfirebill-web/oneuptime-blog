@@ -40,6 +40,7 @@ TypeScript brings several advantages to infrastructure:
 
 ```bash
 # macOS
+
 brew install pulumi/tap/pulumi
 
 # Linux
@@ -83,7 +84,7 @@ my-infrastructure/
 
 ## Core Concepts
 
-### Resources
+Resources
 
 Resources are the building blocks of your infrastructure. Each resource represents a cloud object like an S3 bucket, EC2 instance, or Lambda function.
 

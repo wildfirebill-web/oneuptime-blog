@@ -40,6 +40,7 @@ If you do not already have k3s running, here is a quick setup. k3s installs as a
 
 ```bash
 # Install k3s with the default configuration
+
 # This gives you a single-node cluster in about 30 seconds
 curl -sfL https://get.k3s.io | sh -
 
@@ -293,7 +294,7 @@ receivers:
               regex: traefik
 ```
 
-## Resource Comparison
+Resource Comparison
 
 Here is how the collector resource usage compares between a standard and lightweight configuration.
 

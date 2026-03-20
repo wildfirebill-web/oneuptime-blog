@@ -31,6 +31,7 @@ The simplest way to verify overall Flux CD health is the built-in `flux check` c
 
 ```bash
 # Run a comprehensive Flux health check
+
 flux check
 ```
 

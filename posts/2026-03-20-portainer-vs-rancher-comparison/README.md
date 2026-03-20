@@ -1,4 +1,4 @@
-# Portainer vs Rancher: Container Management Comparison
+# Portainer vs Rancher: Container Management Comparison - Comparison
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -37,7 +37,7 @@ Rancher's Docker support was part of RKE1 and has been deprecated in newer versi
 
 Rancher has deeper Kubernetes integration:
 
-```
+```text
 Portainer Kubernetes:
 - Environment registration (import kubeconfig)
 - Basic workload management (deployments, services)
@@ -80,8 +80,8 @@ Rancher's edge story is primarily K3s clusters, which is powerful but requires m
 
 Both have web UIs, but with different philosophies:
 
-- **Portainer**: Simpler, flatter navigation — designed for operators who aren't Kubernetes experts
-- **Rancher**: Kubernetes-centric — assumes familiarity with K8s concepts; powerful but intimidating for beginners
+- **Portainer**: Simpler, flatter navigation - designed for operators who aren't Kubernetes experts
+- **Rancher**: Kubernetes-centric - assumes familiarity with K8s concepts; powerful but intimidating for beginners
 
 ## When to Choose Each
 

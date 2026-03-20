@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LangChain, Agents, AI, LLM, Python, OpenAI, Autonomous Systems, Machine Learning
+Tags: LangChain, Agent, AI, LLM, Python, OpenAI, Autonomous Systems, Machine Learning
 
 Description: A comprehensive guide to building intelligent AI agents with LangChain.
 
@@ -51,6 +51,7 @@ The following commands install LangChain and its dependencies for working with O
 
 ```bash
 # Install core LangChain packages
+
 pip install langchain langchain-openai langchain-core
 
 # Install additional dependencies for tools

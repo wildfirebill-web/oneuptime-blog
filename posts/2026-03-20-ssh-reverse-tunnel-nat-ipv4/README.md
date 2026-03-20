@@ -25,6 +25,7 @@ On the private host behind NAT:
 
 ```bash
 # Open port 2222 on the public server that tunnels back to port 22 here
+
 ssh -4 -fN \
   -R 2222:localhost:22 \
   -o "ServerAliveInterval 30" \

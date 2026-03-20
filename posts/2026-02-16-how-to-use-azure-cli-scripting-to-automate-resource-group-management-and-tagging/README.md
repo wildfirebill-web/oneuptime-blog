@@ -18,6 +18,7 @@ If you have not used the Azure CLI before, here is the quick setup.
 
 ```bash
 # Install Azure CLI (macOS)
+
 brew install azure-cli
 
 # Install Azure CLI (Linux)
@@ -218,7 +219,7 @@ else
 fi
 ```
 
-## Resource Group Lifecycle Management
+Resource Group Lifecycle Management
 
 ### Listing and Filtering Resource Groups
 
@@ -288,7 +289,7 @@ else
 fi
 ```
 
-## Resource Group Locking
+Resource Group Locking
 
 Locks prevent accidental deletion or modification of critical resources.
 

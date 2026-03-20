@@ -27,6 +27,7 @@ This guide provides a systematic migration from CIDR-based and coarse namespace 
 
 ```bash
 # Inventory existing policies by type
+
 kubectl get networkpolicies --all-namespaces -o json | jq '.items[] | {
   name: .metadata.name,
   namespace: .metadata.namespace,

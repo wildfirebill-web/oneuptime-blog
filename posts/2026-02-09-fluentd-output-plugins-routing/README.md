@@ -24,6 +24,7 @@ Start with a simple configuration that sends logs to multiple outputs:
 
 ```ruby
 # Send all logs to Elasticsearch
+
 <match **>
   @type elasticsearch
   host elasticsearch.example.com

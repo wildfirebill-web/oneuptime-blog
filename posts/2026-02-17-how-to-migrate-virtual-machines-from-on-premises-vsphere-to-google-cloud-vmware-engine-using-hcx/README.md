@@ -49,6 +49,7 @@ Establish network connectivity between your on-premises datacenter and GCP. Clou
 
 ```bash
 # Option A: Set up a Cloud VPN tunnel (for smaller migrations)
+
 gcloud compute vpn-tunnels create onprem-to-gcve \
   --region=us-central1 \
   --peer-address=YOUR_ONPREM_VPN_IP \

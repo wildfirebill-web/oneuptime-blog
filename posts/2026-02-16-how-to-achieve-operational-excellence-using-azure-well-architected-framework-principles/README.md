@@ -83,6 +83,7 @@ Here is how to enable diagnostic settings across your resources using the Azure 
 
 ```bash
 # Get the Log Analytics workspace ID
+
 WORKSPACE_ID=$(az monitor log-analytics workspace show \
   --resource-group rg-monitoring \
   --workspace-name law-production \

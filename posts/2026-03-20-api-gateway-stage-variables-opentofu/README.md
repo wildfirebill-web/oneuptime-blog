@@ -20,6 +20,7 @@ API Gateway stage variables act as environment variables for API stages, allowin
 
 ```hcl
 # Production stage with prod-specific variables
+
 resource "aws_api_gateway_stage" "prod" {
   deployment_id = var.deployment_id
   rest_api_id   = var.api_gateway_id

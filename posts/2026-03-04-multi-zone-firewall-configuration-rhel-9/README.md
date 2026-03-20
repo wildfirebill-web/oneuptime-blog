@@ -40,6 +40,7 @@ Before configuring, map out what each interface should allow:
 
 ```bash
 # Assign public-facing interface
+
 firewall-cmd --zone=public --change-interface=eth0 --permanent
 
 # Assign management interface

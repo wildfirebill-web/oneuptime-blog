@@ -432,6 +432,7 @@ This makes kubectl get output more useful:
 ```bash
 kubectl get databases
 # NAME        READY   ENVIRONMENT   SIZE     AGE
+
 # myapp-db    True    production    medium   5d
 ```
 

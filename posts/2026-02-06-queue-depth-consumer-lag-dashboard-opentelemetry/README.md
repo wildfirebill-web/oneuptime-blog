@@ -38,6 +38,7 @@ Here is how to instrument a Kafka producer and consumer with OpenTelemetry metri
 
 ```python
 # kafka_instrumentation.py
+
 from opentelemetry import metrics
 from opentelemetry import trace
 from confluent_kafka import Producer, Consumer

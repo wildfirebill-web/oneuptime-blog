@@ -39,6 +39,7 @@ When enabling a controller that was previously disabled, the controller starts p
 
 ```bash
 # Check current state
+
 calicoctl get kubecontrollersconfiguration default -o yaml
 ```
 

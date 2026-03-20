@@ -26,6 +26,7 @@ Flux CD controllers are built on the controller-runtime library, which uses clie
 
 ```yaml
 # limit-watch-namespaces.yaml
+
 # By default, Flux controllers watch all namespaces
 # Limiting this reduces memory usage significantly
 apiVersion: kustomize.config.k8s.io/v1beta1

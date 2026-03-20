@@ -30,6 +30,7 @@ Always capture the resource before patching:
 ```bash
 #!/bin/bash
 # safe-patch.sh
+
 # Patches a Calico resource with automatic pre-patch backup
 
 set -euo pipefail

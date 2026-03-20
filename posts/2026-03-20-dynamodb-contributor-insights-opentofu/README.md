@@ -60,6 +60,7 @@ resource "aws_dynamodb_table" "monitored" {
 }
 
 # Enable Contributor Insights on the table
+
 resource "aws_dynamodb_contributor_insights" "table" {
   table_name = aws_dynamodb_table.monitored.name
 }
@@ -145,4 +146,4 @@ aws dynamodb describe-contributor-insights \
 
 ## Conclusion
 
-Contributor Insights is essential for diagnosing hot partition issues that cause throttling and performance degradation. When Insights identifies a frequently accessed partition key, review your data model—common fixes include adding a random suffix to distribute writes, using write sharding, or caching hot items with DAX or ElastiCache. Enable Insights on both tables and GSIs since they have independent partition behavior.
+Contributor Insights is essential for diagnosing hot partition issues that cause throttling and performance degradation. When Insights identifies a frequently accessed partition key, review your data model-common fixes include adding a random suffix to distribute writes, using write sharding, or caching hot items with DAX or ElastiCache. Enable Insights on both tables and GSIs since they have independent partition behavior.

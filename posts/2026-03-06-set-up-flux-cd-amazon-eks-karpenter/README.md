@@ -32,6 +32,7 @@ Karpenter requires two IAM roles: one for the controller and one for the nodes i
 
 ```bash
 # Create the IAM role for Karpenter-provisioned nodes
+
 cat > karpenter-node-trust-policy.json <<EOF
 {
   "Version": "2012-10-17",

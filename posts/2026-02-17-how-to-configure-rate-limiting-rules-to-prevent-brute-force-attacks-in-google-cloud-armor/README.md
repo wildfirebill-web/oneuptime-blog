@@ -36,6 +36,7 @@ graph TD
 
 ```bash
 # Create a security policy for rate limiting
+
 gcloud compute security-policies create rate-limit-policy \
     --description="Rate limiting policy for brute-force protection" \
     --project=my-project

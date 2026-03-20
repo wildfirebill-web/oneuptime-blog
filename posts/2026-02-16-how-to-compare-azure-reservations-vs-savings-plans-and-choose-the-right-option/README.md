@@ -109,6 +109,7 @@ You can also pull recommendations programmatically using the Azure CLI:
 
 ```bash
 # Get reservation recommendations for a subscription
+
 # The lookBackPeriod can be Last7Days, Last30Days, or Last60Days
 az consumption reservation recommendation list \
   --scope "subscriptions/<your-subscription-id>" \

@@ -33,6 +33,7 @@ Create a new Rust project and add Clap to your dependencies:
 
 ```bash
 # Create a new project
+
 cargo new mycli
 cd mycli
 

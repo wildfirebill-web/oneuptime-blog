@@ -30,26 +30,26 @@ This guide covers extracting and analyzing data from cilium-bugtool fish complet
 
 
 
-\`\`\`bash
+```bash
 ## Capture the completion output
 cilium-bugtool completion fish > /tmp/bugtool-fish-completion.fish
-\`\`\`
+```
 
 ### Extracting Commands and Descriptions
 
 Fish completions use a consistent \`complete -c <command>\` format:
 
-\`\`\`bash
+```bash
 ## Extract subcommands with descriptions
 grep -oP "complete -c cilium-bugtool.*-a\s+(\S+)\s+-d\s+'([^']+)'"   /tmp/bugtool-fish-completion.fish |   sed "s/complete.*-a //" | sed "s/ -d '/: /" | sed "s/'$//"
 
 ## Extract all flags
 grep -oP "(-l|--)\s*[a-z][-a-z0-9]*" /tmp/bugtool-fish-completion.fish | sort -u
-\`\`\`
+```
 
 ### Python Parser for Fish Completions
 
-\`\`\`python
+```python
 #!/usr/bin/env python3
 """Parse cilium-bugtool fish completion output."""
 
@@ -95,12 +95,13 @@ if __name__ == '__main__':
     path = sys.argv[1] if len(sys.argv) > 1 else '/tmp/bugtool-fish-completion.fish'
     result = parse_fish_completion(path)
     print(json.dumps(result, indent=2))
-\`\`\`
+```
 
 ## Verification
 
 ```bash
 # Verify parsing
+
 python3 parse_fish_completion.py /tmp/bugtool-fish-completion.fish | jq '.commands | length'
 python3 parse_fish_completion.py /tmp/bugtool-fish-completion.fish | jq '.flags | length'
 ```

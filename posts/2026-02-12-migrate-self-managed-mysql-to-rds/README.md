@@ -30,6 +30,7 @@ Before starting, gather this information:
 
 ```bash
 # Check MySQL version on your source
+
 mysql -e "SELECT VERSION();"
 
 # Check database sizes

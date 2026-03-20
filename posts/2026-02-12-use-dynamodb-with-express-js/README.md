@@ -16,6 +16,7 @@ Initialize your project and install the dependencies.
 
 ```bash
 # Create the project
+
 mkdir dynamodb-express-api && cd dynamodb-express-api
 npm init -y
 

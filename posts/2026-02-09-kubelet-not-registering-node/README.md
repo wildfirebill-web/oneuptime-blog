@@ -22,6 +22,7 @@ First, verify which nodes the API server knows about and their conditions.
 
 ```bash
 # List all nodes
+
 kubectl get nodes -o wide
 
 # Check for nodes in NotReady state

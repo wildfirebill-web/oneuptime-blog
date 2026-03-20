@@ -112,6 +112,7 @@ app.post('/login', async (req, res) => {
 
 ```python
 # BAD: State parameter contains unvalidated redirect URL
+
 @app.route('/oauth/callback')
 def oauth_callback():
     code = request.args.get('code')

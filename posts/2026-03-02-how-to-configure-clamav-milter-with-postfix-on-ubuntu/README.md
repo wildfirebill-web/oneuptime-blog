@@ -21,6 +21,7 @@ sudo apt update
 sudo apt install -y clamav clamav-daemon clamav-milter
 
 # Verify installation
+
 clamscan --version
 ```
 

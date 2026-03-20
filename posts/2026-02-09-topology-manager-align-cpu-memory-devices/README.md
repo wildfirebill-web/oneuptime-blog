@@ -127,6 +127,7 @@ Check CPU and memory NUMA nodes:
 
 ```bash
 # Get container ID
+
 CONTAINER_ID=$(crictl ps | grep aligned-app | awk '{print $1}')
 
 # Check CPU NUMA node

@@ -1089,6 +1089,7 @@ export async function setupDefaultTopics(): Promise<void> {
 
 ```bash
 # Send to a specific device
+
 curl -X POST \
   https://fcm.googleapis.com/fcm/send \
   -H 'Authorization: key=YOUR_SERVER_KEY' \

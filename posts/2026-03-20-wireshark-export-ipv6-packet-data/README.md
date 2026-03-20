@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv6, Export, tshark, pcap, Data Analysis
+Tags: Wireshark, IPv6, Export, tshark, PCAP, Data Analysis
 
 Description: A guide to exporting IPv6 packet data from Wireshark in various formats for further analysis, reporting, and integration with other tools.
 
@@ -23,6 +23,7 @@ Wireshark and tshark provide multiple export formats for IPv6 packet data, from 
 
 ```bash
 # Export only IPv6 packets from a capture file
+
 tshark -r capture.pcap -Y "ipv6" -w ipv6-only.pcap
 
 # Export IPv6 HTTPS traffic

@@ -8,7 +8,7 @@ Description: Learn when to use check blocks versus postconditions in OpenTofu, a
 
 ## Introduction
 
-OpenTofu provides three validation mechanisms: variable validation, preconditions/postconditions, and check blocks. Understanding when to use each — and specifically when check blocks are more appropriate than postconditions — helps you build the right safety net for your infrastructure.
+OpenTofu provides three validation mechanisms: variable validation, preconditions/postconditions, and check blocks. Understanding when to use each - and specifically when check blocks are more appropriate than postconditions - helps you build the right safety net for your infrastructure.
 
 ## The Three Validation Mechanisms
 
@@ -90,7 +90,7 @@ check "naming_compliance" {
 
 ## Decision Guide
 
-```
+```text
 Did the resource provision correctly?
   → Postcondition (blocking)
 
@@ -114,6 +114,7 @@ Is this an input validation before provisioning?
 
 ```hcl
 # Variable validation: catch invalid inputs early
+
 variable "environment" {
   type = string
   validation {
@@ -145,7 +146,7 @@ resource "aws_db_instance" "main" {
 check "db_performance" {
   assert {
     condition     = aws_db_instance.main.allocated_storage >= 100
-    error_message = "Database storage below 100 GB — consider increasing before it fills."
+    error_message = "Database storage below 100 GB - consider increasing before it fills."
   }
 }
 ```
@@ -192,4 +193,4 @@ check "ha_compliance" {
 
 ## Conclusion
 
-The key distinction is consequence: postconditions block, check blocks warn. Use postconditions for invariants that must be true for the resource to be usable and for downstream resources to succeed. Use check blocks for continuous compliance monitoring, external system health checks, and advisory policies that should alert without stopping deployments. Combine all three mechanisms — variable validation (earliest), preconditions (before provisioning), postconditions (after provisioning), and check blocks (ongoing) — for comprehensive infrastructure safety at every stage.
+The key distinction is consequence: postconditions block, check blocks warn. Use postconditions for invariants that must be true for the resource to be usable and for downstream resources to succeed. Use check blocks for continuous compliance monitoring, external system health checks, and advisory policies that should alert without stopping deployments. Combine all three mechanisms - variable validation (earliest), preconditions (before provisioning), postconditions (after provisioning), and check blocks (ongoing) - for comprehensive infrastructure safety at every stage.

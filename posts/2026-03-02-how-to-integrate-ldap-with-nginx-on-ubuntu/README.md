@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, LDAP, NGINX, Authentication, Web Server
+Tags: Ubuntu, LDAP, Nginx, Authentication, Web Server
 
 Description: Configure Nginx on Ubuntu to authenticate users against an LDAP directory using the nginx-auth-ldap module or an authentication proxy for centralized access control.
 
@@ -24,6 +24,7 @@ The `nginx-ldap-auth-daemon` is a small Python daemon included in the official N
 
 ```bash
 # Install Python and required packages
+
 sudo apt install -y python3 python3-pip python3-ldap
 
 # Install the daemon

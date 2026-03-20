@@ -16,6 +16,7 @@ kubectl proxy runs a local HTTP server that authenticates to the Kubernetes API 
 
 ```bash
 # Start the proxy
+
 kubectl proxy
 
 # Output:

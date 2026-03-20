@@ -1,4 +1,4 @@
-# How to Assign the Administrator Role in Portainer
+# How to Assign the Administrator Role in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -44,6 +44,7 @@ An Administrator in Portainer can:
 
 ```bash
 # Get admin token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \

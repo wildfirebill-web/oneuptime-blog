@@ -27,6 +27,7 @@ Define a standard base image specification:
 
 ```yaml
 # golden-image-spec.yaml
+
 os_requirements:
   minimum_kernel: "5.4.0"
   distributions:

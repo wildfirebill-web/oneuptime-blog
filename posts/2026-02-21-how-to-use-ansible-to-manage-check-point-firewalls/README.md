@@ -27,6 +27,7 @@ The Ansible collection handles sessions automatically, but you still need to pub
 
 ```bash
 # Install the Check Point management collection
+
 ansible-galaxy collection install check_point.mgmt
 
 # Install the required Python SDK

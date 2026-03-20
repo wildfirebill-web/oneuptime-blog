@@ -162,6 +162,7 @@ Different namespaces can have different sampling rates:
 
 ```yaml
 # High sampling for staging
+
 apiVersion: telemetry.istio.io/v1alpha1
 kind: Telemetry
 metadata:

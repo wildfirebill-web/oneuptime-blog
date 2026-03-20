@@ -23,6 +23,7 @@ cluster-config-file nodes-7001.conf
 cluster-node-timeout 5000
 
 # Bind to IPv6
+
 bind 2001:db8::1 ::1
 
 # Announce this node's IPv6 address to other cluster members

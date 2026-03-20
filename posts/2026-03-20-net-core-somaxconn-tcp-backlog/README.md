@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Linux, sysctl, Performance, Server Tuning, Connection Backlog
+Tags: TCP, Linux, Sysctl, Performance, Server Tuning, Connection Backlog
 
 Description: Learn how to configure net.core.somaxconn and the TCP listen backlog to prevent connection drops on high-traffic servers accepting many simultaneous connections.
 
@@ -10,8 +10,8 @@ Description: Learn how to configure net.core.somaxconn and the TCP listen backlo
 
 When a server calls `listen()`, the OS maintains a queue of incoming TCP connections waiting to be accepted by the application. If this queue fills up, new connections are dropped. Two kernel parameters control the maximum queue depth:
 
-- `net.core.somaxconn` — system-wide cap on the listen backlog
-- `net.ipv4.tcp_max_syn_backlog` — SYN queue for incomplete (half-open) connections
+- `net.core.somaxconn` - system-wide cap on the listen backlog
+- `net.ipv4.tcp_max_syn_backlog` - SYN queue for incomplete (half-open) connections
 
 Applications pass a `backlog` value to `listen()`, but the OS caps it at `somaxconn`.
 
@@ -19,6 +19,7 @@ Applications pass a `backlog` value to `listen()`, but the OS caps it at `somaxc
 
 ```bash
 # Check current somaxconn limit
+
 sysctl net.core.somaxconn
 # Default: 128 (very low for production)
 

@@ -33,17 +33,17 @@ Results show:
 
 Official images are maintained by Docker and verified:
 
-```
+```text
 ✓ Official images:
-  nginx          — Official Nginx
-  postgres       — Official PostgreSQL
-  redis          — Official Redis
-  node           — Official Node.js
-  python         — Official Python
-  mysql          — Official MySQL
-  mongodb        — Official MongoDB (mongo)
-  ubuntu         — Official Ubuntu
-  alpine         — Official Alpine Linux
+  nginx          - Official Nginx
+  postgres       - Official PostgreSQL
+  redis          - Official Redis
+  node           - Official Node.js
+  python         - Official Python
+  mysql          - Official MySQL
+  mongodb        - Official MongoDB (mongo)
+  ubuntu         - Official Ubuntu
+  alpine         - Official Alpine Linux
 ```
 
 Official images:
@@ -56,18 +56,18 @@ Official images:
 
 These are from companies verified by Docker:
 
-```
-bitnami/nginx       — Bitnami's production-hardened Nginx
-bitnami/postgresql  — Bitnami's PostgreSQL
-grafana/grafana     — Official Grafana from Grafana Labs
-elastic/elasticsearch — Official from Elastic
-hashicorp/vault     — Official from HashiCorp
+```text
+bitnami/nginx       - Bitnami's production-hardened Nginx
+bitnami/postgresql  - Bitnami's PostgreSQL
+grafana/grafana     - Official Grafana from Grafana Labs
+elastic/elasticsearch - Official from Elastic
+hashicorp/vault     - Official from HashiCorp
 ```
 
 ### Community Images
 
-```
-myorg/myapp  — Organization/username prefixed
+```text
+myorg/myapp  - Organization/username prefixed
 ```
 
 Evaluate community images carefully:
@@ -80,6 +80,7 @@ Evaluate community images carefully:
 
 ```bash
 # Search Docker Hub from command line:
+
 docker search nginx
 
 # Output:
@@ -105,7 +106,7 @@ Before pulling an unfamiliar image, check:
 
 ### Criteria for Image Selection
 
-```
+```bash
 Factor              | Indicator of Quality
 --------------------|--------------------------------------------
 Official badge      | Maintained by Docker or original vendor
@@ -130,7 +131,7 @@ After finding the right image, choose the appropriate tag:
 
 ```bash
 # PostgreSQL tag options:
-postgres:latest         → Latest version (changes over time — risky for prod)
+postgres:latest         → Latest version (changes over time - risky for prod)
 postgres:15             → Major version (gets minor/patch updates)
 postgres:15.5           → Specific version (stable, predictable)
 postgres:15-alpine      → Alpine-based (smaller image)
@@ -210,7 +211,7 @@ docker search ruby
 After finding the right image and tag:
 
 ```yaml
-# docker-compose.yml — always pin versions in production
+# docker-compose.yml - always pin versions in production
 services:
   web:
     # Bad: image: nginx:latest (changes without notice)

@@ -16,6 +16,7 @@ The `extra_arguments` block lives inside the `terraform` block:
 
 ```hcl
 # terragrunt.hcl
+
 terraform {
   source = "../../modules/vpc"
 

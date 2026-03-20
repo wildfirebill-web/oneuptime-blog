@@ -39,6 +39,7 @@ Create the Nginx configuration:
 
 ```nginx
 # /etc/nginx/conf.d/canary.conf
+
 # Traffic splitting configuration for canary analysis
 
 # Upstream for the stable version

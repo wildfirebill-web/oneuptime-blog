@@ -56,6 +56,7 @@ Create or update your `config/runtime.exs` to configure the OpenTelemetry SDK:
 import Config
 
 # Configure the OpenTelemetry resource attributes
+
 # These identify your service in the observability backend
 config :opentelemetry,
   resource: [

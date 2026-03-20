@@ -16,8 +16,8 @@ The `templatestring` function in OpenTofu renders a template string (provided di
 templatestring(template, vars)
 ```
 
-- **template** — a string containing the template content
-- **vars** — a map of variables to pass into the template
+- **template** - a string containing the template content
+- **vars** - a map of variables to pass into the template
 - Returns the rendered string
 
 ## Basic Examples
@@ -169,4 +169,4 @@ locals {
 
 ## Conclusion
 
-The `templatestring` function in OpenTofu enables dynamic template rendering when the template content itself is a variable — read from SSM parameters, S3 objects, or input variables. This separates template content from deployment code, enabling template management through configuration management systems.
+The `templatestring` function in OpenTofu enables dynamic template rendering when the template content itself is a variable - read from SSM parameters, S3 objects, or input variables. This separates template content from deployment code, enabling template management through configuration management systems.

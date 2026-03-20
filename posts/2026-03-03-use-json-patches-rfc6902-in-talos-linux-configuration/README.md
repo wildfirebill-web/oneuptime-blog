@@ -111,6 +111,7 @@ JSON Patches can be passed inline or from files:
 
 ```bash
 # Inline JSON Patch
+
 talosctl gen config my-cluster https://10.0.1.100:6443 \
     --config-patch '[{"op": "add", "path": "/machine/network/hostname", "value": "cp-1"}]'
 

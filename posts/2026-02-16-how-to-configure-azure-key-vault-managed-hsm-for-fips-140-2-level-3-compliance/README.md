@@ -36,6 +36,7 @@ Create the Managed HSM pool with the Azure CLI. You need to specify at least one
 
 ```bash
 # Create a resource group for the Managed HSM
+
 az group create \
   --name hsm-resource-group \
   --location eastus2

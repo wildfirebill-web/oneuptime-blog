@@ -8,7 +8,7 @@ Description: Learn how to configure RabbitMQ federation to replicate exchanges a
 
 ---
 
-RabbitMQ federation allows exchanges and queues to be federated — messages published to one broker can flow to another broker on a different IPv4 network without clients needing to know about both brokers. This enables geographic distribution and WAN-friendly message routing.
+RabbitMQ federation allows exchanges and queues to be federated - messages published to one broker can flow to another broker on a different IPv4 network without clients needing to know about both brokers. This enables geographic distribution and WAN-friendly message routing.
 
 ## How Federation Works
 
@@ -23,6 +23,7 @@ graph LR
 
 ```bash
 # Enable federation and federation management plugins on both brokers
+
 rabbitmq-plugins enable rabbitmq_federation rabbitmq_federation_management
 
 # Verify the plugins are active
@@ -41,9 +42,9 @@ rabbitmqctl set_parameter federation-upstream upstream-dc-a \
 ```
 
 Parameters:
-- `uri` — AMQP connection URI to the upstream broker (IPv4 address)
-- `max-hops` — Maximum number of federation hops before a message is dropped
-- `ack-mode` — `on-confirm` for reliable delivery
+- `uri` - AMQP connection URI to the upstream broker (IPv4 address)
+- `max-hops` - Maximum number of federation hops before a message is dropped
+- `ack-mode` - `on-confirm` for reliable delivery
 
 ## Step 2: Create a Federation Policy
 

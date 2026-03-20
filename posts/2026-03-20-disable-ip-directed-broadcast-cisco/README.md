@@ -27,7 +27,7 @@ graph LR
 
 ## Checking Current Configuration
 
-```
+```text
 ! Check whether directed broadcast is enabled on an interface
 show running-config interface GigabitEthernet0/1 | include directed-broadcast
 ```
@@ -36,7 +36,7 @@ If the command returns no output, directed broadcast is **disabled** (default si
 
 ## Disabling Directed Broadcast on an Interface
 
-```
+```text
 ! Disable directed broadcast on each interface
 interface GigabitEthernet0/0
  no ip directed-broadcast
@@ -52,7 +52,7 @@ interface GigabitEthernet0/2
 
 For large deployments, apply to all interfaces using a TCL script or EEM applet:
 
-```
+```text
 ! IOS TCL script to disable directed broadcast on all interfaces
 tclsh
 foreach iface [exec "show interfaces | include ^[A-Z]"] {
@@ -62,7 +62,7 @@ foreach iface [exec "show interfaces | include ^[A-Z]"] {
 
 ## Verifying the Change
 
-```
+```text
 ! Confirm no interfaces have directed broadcast enabled
 show running-config | include directed-broadcast
 ```
@@ -73,13 +73,13 @@ If the output is empty, no interfaces are exposing this vulnerability.
 
 The most legitimate use case is **Wake-on-LAN** across subnets. If you need it, enable it only on the specific interface facing the target subnet, and consider an ACL to limit which source addresses can send directed broadcasts:
 
-```
+```text
 ! Create an ACL allowing WoL broadcasts only from management VLAN
 ip access-list extended DIRECTED-BCAST-ACL
  permit udp 10.0.0.0 0.0.0.255 255.255.255.255 0.0.0.0 eq 9
  deny   ip any any
 
-! Apply to specific interface — enable directed broadcast with ACL filter
+! Apply to specific interface - enable directed broadcast with ACL filter
 interface GigabitEthernet0/2
  ip directed-broadcast DIRECTED-BCAST-ACL
 ```
@@ -88,7 +88,7 @@ interface GigabitEthernet0/2
 
 Even with directed broadcasts disabled internally, block ICMP echo to broadcast addresses at the perimeter:
 
-```
+```nginx
 ! Block ICMP echo requests to broadcast at the upstream interface
 ip access-list extended ANTI-SMURF
  deny   icmp any 192.168.0.0 0.0.255.255 echo

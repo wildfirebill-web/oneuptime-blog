@@ -41,6 +41,7 @@ First, configure the default controller to only handle resources without a shard
 
 ```yaml
 # default-controller-patch.yaml
+
 # Configure the default kustomize-controller to handle unsharded resources
 apiVersion: apps/v1
 kind: Deployment

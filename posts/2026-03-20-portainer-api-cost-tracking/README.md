@@ -23,6 +23,7 @@ Define your cost model based on your infrastructure:
 
 ```python
 # cost_model.py
+
 # Adjust prices based on your actual infrastructure costs
 
 COST_MODEL = {

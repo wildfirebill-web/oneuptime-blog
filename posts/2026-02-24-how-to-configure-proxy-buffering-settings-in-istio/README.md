@@ -240,6 +240,7 @@ You can monitor this through Envoy stats:
 kubectl exec <pod> -c istio-proxy -- curl -s localhost:15000/stats | grep flow_control
 
 # Key metrics:
+
 # downstream_flow_control_paused_reading_total
 # downstream_flow_control_resumed_reading_total
 # upstream_flow_control_paused_reading_total

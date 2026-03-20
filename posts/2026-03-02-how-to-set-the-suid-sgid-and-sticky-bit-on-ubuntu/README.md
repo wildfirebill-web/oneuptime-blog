@@ -19,6 +19,7 @@ The most well-known example is `passwd`:
 ```bash
 ls -la /usr/bin/passwd
 # -rwsr-xr-x 1 root root 59976 Mar  2 09:00 /usr/bin/passwd
+
 # Note the 's' in the owner execute position
 ```
 

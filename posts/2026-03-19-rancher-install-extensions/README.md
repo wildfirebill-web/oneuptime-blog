@@ -87,6 +87,7 @@ After installation, the extension appears in the **Installed** tab. Navigate to 
 
 ```yaml
 # extension-repo.yaml
+
 apiVersion: catalog.cattle.io/v1
 kind: ClusterRepo
 metadata:

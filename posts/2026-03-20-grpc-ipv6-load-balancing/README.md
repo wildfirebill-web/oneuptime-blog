@@ -34,6 +34,7 @@ conn, err := grpc.NewClient(
 
 ```python
 # Python: round-robin over IPv6
+
 import grpc
 
 channel = grpc.insecure_channel(
@@ -49,13 +50,13 @@ channel = grpc.insecure_channel(
 ## Option 2: Kubernetes Headless Service for IPv6 gRPC
 
 ```yaml
-# headless-service.yaml — returns all pod IPv6 addresses from DNS
+# headless-service.yaml - returns all pod IPv6 addresses from DNS
 apiVersion: v1
 kind: Service
 metadata:
   name: grpc-service
 spec:
-  # Headless service — no cluster IP, DNS returns all pod IPs
+  # Headless service - no cluster IP, DNS returns all pod IPs
   clusterIP: None
   # Enable IPv6 dual-stack
   ipFamilies:
@@ -70,7 +71,7 @@ spec:
 ```
 
 ```go
-// Connect to Kubernetes headless service — round-robin across IPv6 pods
+// Connect to Kubernetes headless service - round-robin across IPv6 pods
 conn, err := grpc.NewClient(
     "dns:///grpc-service.default.svc.cluster.local:50051",
     grpc.WithDefaultServiceConfig(`{"loadBalancingPolicy":"round_robin"}`),
@@ -81,7 +82,7 @@ conn, err := grpc.NewClient(
 ## Option 3: Envoy L7 Proxy for gRPC over IPv6
 
 ```yaml
-# envoy.yaml — Envoy handles gRPC load balancing over IPv6
+# envoy.yaml - Envoy handles gRPC load balancing over IPv6
 static_resources:
   listeners:
     - address:

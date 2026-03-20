@@ -59,6 +59,7 @@ First, check which domains are available at your Interconnect location:
 
 ```bash
 # List interconnect locations with availability domain info
+
 gcloud compute interconnects locations describe iad-zone1-1 \
     --format="yaml(name, availabilityZone, city, facilityProvider)"
 ```

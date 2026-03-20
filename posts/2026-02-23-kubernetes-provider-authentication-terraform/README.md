@@ -18,6 +18,7 @@ The Kubernetes provider (and the Helm provider, which uses the same authenticati
 
 ```hcl
 # The simplest possible configuration - use local kubeconfig
+
 provider "kubernetes" {
   config_path    = "~/.kube/config"
   config_context = "my-cluster"

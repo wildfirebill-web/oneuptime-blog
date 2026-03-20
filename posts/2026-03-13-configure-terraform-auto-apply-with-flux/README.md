@@ -27,6 +27,7 @@ This guide covers configuring auto-apply with appropriate safeguards including d
 
 ```yaml
 # infrastructure/terraform/staging/main.yaml
+
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:

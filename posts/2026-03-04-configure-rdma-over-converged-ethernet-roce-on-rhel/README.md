@@ -18,6 +18,7 @@ You need a NIC that supports RoCE (most Mellanox/NVIDIA ConnectX-4 and later, Br
 
 ```bash
 # Install RDMA core libraries and tools
+
 sudo dnf install -y rdma-core libibverbs libibverbs-utils \
     librdmacm-utils perftest
 

@@ -16,6 +16,7 @@ Start by understanding how much space old snap revisions are consuming:
 
 ```bash
 # List all installed snaps with their revision numbers
+
 snap list --all
 
 # Example output:

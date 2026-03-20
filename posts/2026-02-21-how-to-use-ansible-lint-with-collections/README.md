@@ -22,6 +22,7 @@ Create a `requirements.yml` file listing all collections your project depends on
 
 ```yaml
 # collections/requirements.yml - Collection dependencies
+
 ---
 collections:
   - name: community.general

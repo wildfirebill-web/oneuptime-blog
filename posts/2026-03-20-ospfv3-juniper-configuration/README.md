@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OSPFv3, Juniper, IPv6, JunOS, Routing
+Tags: OSPFv3, Juniper, IPv6, Junos, Routing
 
 Description: Step-by-step guide to configuring OSPFv3 for IPv6 routing on Juniper routers using JunOS, with verification and troubleshooting commands.
 
@@ -12,8 +12,9 @@ Juniper JunOS uses a clean hierarchical configuration model for OSPFv3. The prot
 
 ## Basic OSPFv3 Configuration
 
-```
-# Juniper JunOS — OSPFv3 configuration
+```text
+# Juniper JunOS - OSPFv3 configuration
+
 set protocols ospf3 area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf3 area 0.0.0.0 interface ge-0/0/1.0
 set protocols ospf3 area 0.0.0.0 interface lo0.0 passive
@@ -24,7 +25,7 @@ set routing-options router-id 1.1.1.1
 
 ## Full Configuration Example
 
-```
+```text
 # Complete JunOS OSPFv3 configuration
 protocols {
     ospf3 {
@@ -52,7 +53,7 @@ routing-options {
 
 ## Configuring Multi-Area OSPFv3
 
-```
+```text
 # Area 0 (backbone) and Area 1
 set protocols ospf3 area 0.0.0.0 interface ge-0/0/0.0
 set protocols ospf3 area 0.0.0.1 interface ge-0/0/1.0
@@ -72,7 +73,7 @@ protocols {
 
 ## Configuring a Stub Area
 
-```
+```text
 # Configure area 1 as a stub (no external routes)
 set protocols ospf3 area 0.0.0.1 stub
 set protocols ospf3 area 0.0.0.1 stub default-metric 10
@@ -81,7 +82,7 @@ set protocols ospf3 area 0.0.0.1 interface ge-0/0/1.0
 
 ## Route Redistribution into OSPFv3
 
-```
+```bash
 # Redistribute static IPv6 routes into OSPFv3
 set protocols ospf3 export REDISTRIBUTE_STATIC
 
@@ -95,7 +96,7 @@ set policy-options policy-statement REDISTRIBUTE_STATIC {
 
 ## Verification Commands
 
-```
+```text
 # Show OSPFv3 neighbor state
 show ospf3 neighbor
 
@@ -117,7 +118,7 @@ show route protocol ospf3 table inet6.0
 
 ## Sample Verification Output
 
-```
+```text
 user@router> show ospf3 neighbor
 ID               Interface            State      Pri   Dead
 2.2.2.2          ge-0/0/0.0           Full       128   38
@@ -131,7 +132,7 @@ Prefix                            Path  Route      NH       Metric  NextHop
 
 ## Enabling OSPFv3 Authentication (IPsec)
 
-```
+```text
 # JunOS OSPFv3 IPsec authentication
 set security ipsec security-association SA1 mode transport
 set security ipsec security-association SA1 manual direction bidirectional protocol ah

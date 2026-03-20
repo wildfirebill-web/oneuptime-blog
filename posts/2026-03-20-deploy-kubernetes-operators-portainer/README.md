@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Operators, CRD, Automation, Infrastructure
+Tags: Portainer, Kubernetes, Operator, CRD, Automation, Infrastructure
 
 Description: Deploy and manage Kubernetes Operators through Portainer's manifest interface to automate complex stateful application lifecycle operations like database provisioning, backup, and scaling.
 
@@ -28,6 +28,7 @@ Example: Install Cert-Manager:
 
 ```bash
 # Apply the Cert-Manager CRDs and Operator in one manifest
+
 # Copy the URL to Portainer's manifest import or paste content
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/latest/download/cert-manager.yaml
 ```
@@ -43,7 +44,7 @@ Via Portainer's URL manifest import:
 
 Check the Operator is running via Portainer's namespace view:
 
-```
+```text
 Namespace: cert-manager
 Pods:
   cert-manager-xxxxxx         Running

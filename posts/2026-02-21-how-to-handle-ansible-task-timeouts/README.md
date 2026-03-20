@@ -20,6 +20,7 @@ This example runs a long package update with a 5-minute timeout:
 
 ```yaml
 # task-timeout-basic.yml - Using async/poll for task-level timeouts
+
 ---
 - name: Update packages with timeout
   hosts: webservers

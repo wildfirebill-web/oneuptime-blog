@@ -35,6 +35,7 @@ First, identify the VPC and subnets your EKS cluster uses:
 
 ```bash
 # Get the VPC ID for your EKS cluster
+
 VPC_ID=$(aws eks describe-cluster --name my-cluster --query "cluster.resourcesVpcConfig.vpcId" --output text)
 
 # Get the CIDR block for security group rules

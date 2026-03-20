@@ -16,6 +16,7 @@ ArgoCD supports three hook delete policies:
 
 ```yaml
 # Policy 1: Delete before creating a new instance
+
 argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 
 # Policy 2: Delete after the hook succeeds

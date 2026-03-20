@@ -29,6 +29,7 @@ First, verify that your repository actually uses submodules by inspecting the `.
 
 ```bash
 # Check for submodules in your repository
+
 cat .gitmodules
 ```
 

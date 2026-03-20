@@ -79,6 +79,7 @@ Create a compacted topic with the following configuration.
 
 ```bash
 # Create a compacted topic using kafka-topics command
+
 kafka-topics.sh --create \
   --bootstrap-server localhost:9092 \
   --topic user-profiles \

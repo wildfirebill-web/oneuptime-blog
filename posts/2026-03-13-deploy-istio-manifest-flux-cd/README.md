@@ -28,6 +28,7 @@ Generate manifests from an IstioOperator config:
 
 ```yaml
 # istio-config/istio-operator.yaml (local file used for generation)
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

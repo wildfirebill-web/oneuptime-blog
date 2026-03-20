@@ -29,6 +29,7 @@ Terraform uses its own language, HCL (HashiCorp Configuration Language). It is c
 
 ```hcl
 # main.tf
+
 # Terraform configuration for a web application on AWS
 
 # Specify the required provider and version

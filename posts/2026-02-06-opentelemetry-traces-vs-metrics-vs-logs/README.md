@@ -552,6 +552,7 @@ Different signals have different costs:
 
 ```yaml
 # Collector tail sampling config
+
 processors:
   tail_sampling:
     decision_wait: 10s

@@ -92,6 +92,7 @@ Configure the table with these field overrides:
 
 ```promql
 # Successful syncs
+
 sum(rate(argocd_app_sync_total{phase="Succeeded"}[5m])) * 300
 
 # Failed syncs

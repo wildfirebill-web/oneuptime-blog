@@ -18,6 +18,7 @@ When troubleshooting storage issues or auditing your container environment, you 
 
 ```bash
 # Inspect a volume by name
+
 podman volume inspect mydata
 ```
 

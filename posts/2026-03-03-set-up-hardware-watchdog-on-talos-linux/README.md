@@ -25,6 +25,7 @@ To identify which watchdog hardware your system has, check the kernel messages o
 
 ```bash
 # Check for watchdog devices
+
 talosctl dmesg --nodes 10.0.0.1 | grep -i watchdog
 
 # Example output:

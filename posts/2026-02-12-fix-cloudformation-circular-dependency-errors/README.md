@@ -31,6 +31,7 @@ The most common circular dependency involves security groups that reference each
 
 ```yaml
 # This creates a circular dependency
+
 Resources:
   AppSecurityGroup:
     Type: AWS::EC2::SecurityGroup

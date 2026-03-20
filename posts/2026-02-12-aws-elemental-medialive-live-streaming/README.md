@@ -36,6 +36,7 @@ We start with MediaPackage because MediaLive needs to know where to send its out
 
 ```bash
 # Create a MediaPackage channel
+
 aws mediapackage create-channel \
   --id "my-live-channel" \
   --description "Primary live streaming channel"

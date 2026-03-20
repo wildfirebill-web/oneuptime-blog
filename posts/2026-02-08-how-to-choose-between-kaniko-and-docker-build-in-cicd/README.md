@@ -22,6 +22,7 @@ Here is a GitHub Actions workflow using standard Docker build:
 
 ```yaml
 # .github/workflows/build.yml - Standard Docker build with GitHub Actions
+
 name: Build and Push
 on:
   push:

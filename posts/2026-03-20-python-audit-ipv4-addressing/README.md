@@ -88,6 +88,7 @@ def get_structured_ips(device_info):
     return result
 
 # Collect from all devices
+
 devices = [
     {'driver': 'ios', 'host': '192.168.1.1', 'username': 'admin', 'password': 'pass', 'optional_args': {'secret': 'ep'}},
 ]

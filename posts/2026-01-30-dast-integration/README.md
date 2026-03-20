@@ -64,6 +64,7 @@ OWASP ZAP is the most popular open-source DAST tool. Here is how to configure it
 
 ```yaml
 # docker-compose.yml for ZAP
+
 # This sets up ZAP in daemon mode for API-driven scanning
 version: '3.8'
 services:

@@ -97,6 +97,7 @@ BACKUP_NAME="$1"
 LOG_FILE="/var/log/backup-metrics.log"
 
 # Record start time
+
 START_TIME=$(date +%s)
 START_TIMESTAMP=$(date -Iseconds)
 
@@ -632,7 +633,7 @@ flowchart TB
 
 ---
 
-## Resource Throttling
+Resource Throttling
 
 ### I/O Throttling with ionice and cgroups
 

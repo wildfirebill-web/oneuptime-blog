@@ -8,7 +8,7 @@ Description: Learn how to use Portainer Edge to manage containerized application
 
 ## Introduction
 
-Programmable Logic Controllers (PLCs) and industrial gateways are the backbone of operational technology (OT) environments. While you cannot containerize a PLC itself, you can containerize the software that communicates with it — protocol converters, data collectors, and SCADA connectors — and manage these containers centrally with Portainer Edge.
+Programmable Logic Controllers (PLCs) and industrial gateways are the backbone of operational technology (OT) environments. While you cannot containerize a PLC itself, you can containerize the software that communicates with it - protocol converters, data collectors, and SCADA connectors - and manage these containers centrally with Portainer Edge.
 
 ## Prerequisites
 
@@ -32,6 +32,7 @@ The most common pattern is OPC-UA → MQTT conversion:
 
 ```yaml
 # plc-integration-stack.yml
+
 version: "3.8"
 
 services:
@@ -232,7 +233,7 @@ Portainer rolls out the update to all gateways in the group without any SSH acce
 
 ## Best Practices
 
-- **Never expose PLC ports directly** — always route through a container bridge.
+- **Never expose PLC ports directly** - always route through a container bridge.
 - **Use dedicated network interfaces** for PLC communication (separate from management).
 - **Log all PLC communication** for audit and troubleshooting purposes.
 - **Test connector updates on a single gateway** before fleet-wide deployment.
@@ -240,4 +241,4 @@ Portainer rolls out the update to all gateways in the group without any SSH acce
 
 ## Conclusion
 
-Portainer Edge makes managing the software layer around PLCs and industrial gateways as straightforward as managing any cloud application. By containerizing protocol converters, historians, and analytics engines — and managing them through Portainer Edge Stacks — you can apply modern DevOps practices to OT environments while preserving the reliability requirements of industrial operations.
+Portainer Edge makes managing the software layer around PLCs and industrial gateways as straightforward as managing any cloud application. By containerizing protocol converters, historians, and analytics engines - and managing them through Portainer Edge Stacks - you can apply modern DevOps practices to OT environments while preserving the reliability requirements of industrial operations.

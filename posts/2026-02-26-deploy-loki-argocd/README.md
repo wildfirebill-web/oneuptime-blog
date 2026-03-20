@@ -41,6 +41,7 @@ Create a wrapper chart that pulls in the official Loki Helm chart.
 
 ```yaml
 # logging/loki/Chart.yaml
+
 apiVersion: v2
 name: loki
 description: Wrapper chart for Grafana Loki

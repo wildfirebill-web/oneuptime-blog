@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # roles/consul/tasks/main.yml
+
 # Install and configure Consul agent
 ---
 - name: Create Consul user

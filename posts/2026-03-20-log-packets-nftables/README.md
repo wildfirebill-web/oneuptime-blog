@@ -18,10 +18,11 @@ Packet logging is essential for security auditing, debugging firewall rules, and
 
 ## Basic Logging Before Drop
 
-The `log` statement is placed before the terminal action (drop, accept, reject). It does not stop rule processing — it is a non-terminal action.
+The `log` statement is placed before the terminal action (drop, accept, reject). It does not stop rule processing - it is a non-terminal action.
 
 ```bash
 # Log all dropped packets with a prefix for easy grepping
+
 nft add rule inet filter input log prefix "INPUT DROP: " level warn drop
 ```
 
@@ -113,7 +114,7 @@ nft add rule inet filter input drop log prefix "FW: " group 0
 
 Then in `/etc/rsyslog.d/nftables.conf`:
 
-```
+```text
 :msg, startswith, "FW: " /var/log/nftables.log
 & stop
 ```

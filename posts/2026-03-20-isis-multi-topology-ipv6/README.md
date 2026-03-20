@@ -24,7 +24,7 @@ Without multi-topology, IPv6 prefixes are flooded in the same IS-IS topology as 
 
 ## Configuring MT-ISIS on Cisco IOS
 
-```
+```text
 ! Enable IS-IS with multi-topology for IPv6
 Router(config)# router isis
 Router(config-router)# net 49.0001.0001.0001.0001.00    ! NSAP address
@@ -44,8 +44,9 @@ Router(config-if)# ipv6 router isis       ! IPv6 IS-IS
 
 ## Configuring MT-ISIS on Juniper
 
-```
+```text
 # JunOS MT-ISIS configuration
+
 set protocols isis interface ge-0/0/0.0 level 2 metric 10
 set protocols isis interface ge-0/0/1.0
 
@@ -83,7 +84,7 @@ write memory
 
 MT-ISIS allows setting different metrics for IPv4 and IPv6 on the same interface:
 
-```
+```text
 ! Cisco: Set different IPv4 and IPv6 IS-IS metrics
 interface GigabitEthernet0/0
  isis metric 10              ! IPv4 metric
@@ -94,7 +95,7 @@ This allows IPv6 traffic to prefer different paths than IPv4 for traffic enginee
 
 ## Verifying MT-ISIS
 
-```
+```text
 ! Cisco
 Router# show isis topology ipv6
 
@@ -115,7 +116,7 @@ vtysh -c "show ipv6 route isis"
 
 When migrating an existing single-topology IS-IS network to MT:
 
-```
+```text
 ! Cisco: Use transition mode to allow compatibility with non-MT routers
 Router(config)# router isis
 Router(config-router)# address-family ipv6

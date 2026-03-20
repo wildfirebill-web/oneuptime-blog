@@ -12,7 +12,7 @@ IPv6 offers three address assignment mechanisms: SLAAC (stateless, automatic fro
 
 ## Three Address Assignment Models
 
-```
+```text
 IPv6 Address Assignment Models:
 
 Model 1: Pure SLAAC (M=0, O=0)
@@ -39,7 +39,7 @@ Model 3: Stateful DHCPv6 (M=1)
 
 ## M and O Flag Decision Matrix
 
-```
+```text
 RA Flag Settings and Their Effects:
 
 M=0, O=0 (Pure SLAAC):
@@ -72,7 +72,7 @@ Note: A=1 (prefix AdvAutonomous=on) in RA Prefix Info triggers SLAAC
 
 ## Feature Comparison
 
-```
+```yaml
 SLAAC vs DHCPv6 Comparison Table:
 
 Feature                  | SLAAC        | Stateful DHCPv6
@@ -92,7 +92,7 @@ Privacy by default       | Yes (temp)   | No (server assigns stable)
 
 ## When to Use SLAAC
 
-```
+```text
 SLAAC is appropriate when:
 
 1. Simplified deployment is priority:
@@ -119,7 +119,7 @@ SLAAC is appropriate when:
 
 ## When to Use Stateful DHCPv6
 
-```
+```text
 Stateful DHCPv6 is appropriate when:
 
 1. Address tracking required:
@@ -150,6 +150,7 @@ Stateful DHCPv6 is appropriate when:
 
 ```bash
 # Model 1: Pure SLAAC (M=0, O=0, with RDNSS)
+
 # radvd.conf:
 # AdvManagedFlag off;    # M=0
 # AdvOtherConfigFlag off; # O=0
@@ -178,4 +179,4 @@ Stateful DHCPv6 is appropriate when:
 
 ## Conclusion
 
-SLAAC and DHCPv6 each have appropriate use cases. SLAAC excels in simplicity — hosts configure themselves with no server infrastructure. Stateful DHCPv6 provides address tracking, reservations, and controlled assignment. The M flag in RA signals which to use: M=0 for SLAAC, M=1 for stateful DHCPv6. The O flag enables stateless DHCPv6 for DNS when using SLAAC addresses. For most enterprise environments, stateful DHCPv6 provides the address visibility and control that compliance and security teams require. For home and small office environments, pure SLAAC with RDNSS is the simpler choice.
+SLAAC and DHCPv6 each have appropriate use cases. SLAAC excels in simplicity - hosts configure themselves with no server infrastructure. Stateful DHCPv6 provides address tracking, reservations, and controlled assignment. The M flag in RA signals which to use: M=0 for SLAAC, M=1 for stateful DHCPv6. The O flag enables stateless DHCPv6 for DNS when using SLAAC addresses. For most enterprise environments, stateful DHCPv6 provides the address visibility and control that compliance and security teams require. For home and small office environments, pure SLAAC with RDNSS is the simpler choice.

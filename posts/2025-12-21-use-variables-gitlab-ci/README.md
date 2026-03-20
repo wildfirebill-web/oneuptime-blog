@@ -123,6 +123,7 @@ When creating project variables, you can configure:
 
 ```yaml
 # If API_URL is set to "https://$DOMAIN/api" with expansion enabled
+
 # and DOMAIN is "example.com", API_URL becomes "https://example.com/api"
 
 test:

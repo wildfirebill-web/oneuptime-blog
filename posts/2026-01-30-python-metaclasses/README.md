@@ -38,6 +38,7 @@ The built-in `type` function serves dual purposes: checking types and creating n
 
 ```python
 # metaclass_basics.py
+
 # Demonstrating how type creates classes dynamically
 
 # Normal class definition

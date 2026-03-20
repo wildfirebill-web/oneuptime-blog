@@ -39,6 +39,7 @@ The most portable method is using Python's built-in `crypt` module. This works o
 
 ```bash
 # Generate SHA-512 hash with auto-generated salt
+
 python3 -c "import crypt; print(crypt.crypt('YourPassword', crypt.mksalt(crypt.METHOD_SHA512)))"
 ```
 

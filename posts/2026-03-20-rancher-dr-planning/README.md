@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, kubernetes, backup, planning
+Tags: Rancher, Disaster-recovery, Kubernetes, Backup, Planning
 
 Description: A comprehensive guide to planning disaster recovery strategies for Rancher environments to minimize downtime and data loss.
 
@@ -37,6 +37,7 @@ Before building your DR plan, define your recovery objectives:
 
 ```bash
 # List all managed clusters
+
 rancher cluster ls
 
 # Export cluster configurations

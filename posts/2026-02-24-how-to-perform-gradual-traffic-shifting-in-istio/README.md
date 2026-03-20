@@ -150,6 +150,7 @@ Watch error rates and latency for v2. Compare them against v1 using Istio's metr
 
 ```bash
 # Check error rates for both versions
+
 # In Prometheus or Grafana:
 # rate(istio_requests_total{destination_service="my-service",response_code=~"5.."}[5m])
 # grouped by destination_version

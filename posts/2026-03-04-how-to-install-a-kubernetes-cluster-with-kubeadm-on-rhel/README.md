@@ -14,6 +14,7 @@ kubeadm is the official Kubernetes tool for bootstrapping production-ready clust
 
 ```bash
 # Disable swap (required by Kubernetes)
+
 sudo swapoff -a
 sudo sed -i '/ swap / s/^/#/' /etc/fstab
 

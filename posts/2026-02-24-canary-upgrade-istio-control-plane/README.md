@@ -127,6 +127,7 @@ Once you are satisfied the canary revision is stable, migrate the rest of your n
 
 ```bash
 # Migrate namespace by namespace
+
 for ns in app-frontend app-backend app-payments; do
   kubectl label namespace $ns istio-injection- istio.io/rev=canary --overwrite
   kubectl rollout restart deployment -n $ns

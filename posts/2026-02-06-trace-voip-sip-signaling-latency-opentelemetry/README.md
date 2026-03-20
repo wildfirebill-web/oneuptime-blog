@@ -28,6 +28,7 @@ Let's instrument a SIP proxy (like Kamailio or OpenSIPS) using OpenTelemetry. We
 
 ```python
 # sip_otel_middleware.py
+
 from opentelemetry import trace
 from opentelemetry.trace import StatusCode
 from opentelemetry.sdk.trace import TracerProvider

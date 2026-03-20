@@ -175,6 +175,7 @@ Test connectivity:
 
 ```bash
 # Verify GitHub Enterprise API is accessible from Rancher
+
 kubectl exec -it $(kubectl get pod -l app=rancher -n cattle-system -o jsonpath='{.items[0].metadata.name}') \
   -n cattle-system -- \
   curl -sk "https://github.company.com/api/v3" | head -5

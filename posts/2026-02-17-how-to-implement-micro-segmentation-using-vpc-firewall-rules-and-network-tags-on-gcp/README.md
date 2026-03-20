@@ -36,6 +36,7 @@ Network tags are labels you attach to VMs. Firewall rules reference these tags t
 
 ```bash
 # Create VMs with appropriate network tags
+
 # Web server VMs
 gcloud compute instances create web-server-1 \
     --zone=us-central1-a \

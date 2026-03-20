@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provider Versions, Upgrades, Lock File, Migration, Infrastructure as Code
+Tags: OpenTofu, Provider Versions, Upgrade, Lock File, Migration, Infrastructure as Code
 
 Description: Learn how to safely upgrade OpenTofu provider versions with a tested, step-by-step process including constraint management, breaking change review, and rollback planning.
 
@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # Check what versions are currently installed
+
 tofu providers
 
 # Check what the lock file specifies
@@ -52,7 +53,7 @@ tofu plan -out=before_upgrade.plan
 ## Updating Version Constraints
 
 ```hcl
-# providers.tf — before upgrade
+# providers.tf - before upgrade
 terraform {
   required_providers {
     aws = {
@@ -62,7 +63,7 @@ terraform {
   }
 }
 
-# providers.tf — pin to specific version for gradual rollout
+# providers.tf - pin to specific version for gradual rollout
 terraform {
   required_providers {
     aws = {
@@ -72,7 +73,7 @@ terraform {
   }
 }
 
-# providers.tf — after successful validation, widen constraint
+# providers.tf - after successful validation, widen constraint
 terraform {
   required_providers {
     aws = {
@@ -118,7 +119,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [aws_security_group.web.id]
 }
 
-# After (aws provider 5.x — same in this case, but some attrs change)
+# After (aws provider 5.x - same in this case, but some attrs change)
 resource "aws_s3_bucket_acl" "example" {
   # In provider 4.x, ACL was set on the bucket resource
   # In provider 5.x, it's a separate resource
@@ -135,7 +136,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "= 5.39.0"  # Exact pin — no updates
+      version = "= 5.39.0"  # Exact pin - no updates
     }
   }
 }
@@ -152,7 +153,7 @@ tofu plan
 ## Automated Upgrade PR with Renovate
 
 ```json
-// renovate.json — auto-create PRs for provider upgrades
+// renovate.json - auto-create PRs for provider upgrades
 {
   "extends": ["config:base"],
   "terraform": {
@@ -195,8 +196,8 @@ done
 
 ## Best Practices
 
-- Never upgrade providers directly in production — test in dev → staging → production, with validation at each stage.
-- Read the BREAKING CHANGES section of every provider release you're jumping across — even minor version bumps occasionally include behavior changes for previously-accepted configurations.
-- Use exact version pins (`= 5.45.0`) when testing an upgrade, then widen to `~> 5.45` after successful validation — this prevents unexpected upgrades during the testing window.
-- Run `tofu plan` before and after the upgrade and compare the output — plan diffs that reference resource replacements or attribute changes indicate breaking changes that need configuration updates.
-- Automate upgrade discovery with Renovate or Dependabot — these tools create PRs for provider upgrades automatically, ensuring upgrades are handled regularly rather than in large batches.
+- Never upgrade providers directly in production - test in dev → staging → production, with validation at each stage.
+- Read the BREAKING CHANGES section of every provider release you're jumping across - even minor version bumps occasionally include behavior changes for previously-accepted configurations.
+- Use exact version pins (`= 5.45.0`) when testing an upgrade, then widen to `~> 5.45` after successful validation - this prevents unexpected upgrades during the testing window.
+- Run `tofu plan` before and after the upgrade and compare the output - plan diffs that reference resource replacements or attribute changes indicate breaking changes that need configuration updates.
+- Automate upgrade discovery with Renovate or Dependabot - these tools create PRs for provider upgrades automatically, ensuring upgrades are handled regularly rather than in large batches.

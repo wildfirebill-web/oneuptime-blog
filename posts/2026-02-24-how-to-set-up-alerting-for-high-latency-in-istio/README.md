@@ -28,6 +28,7 @@ Start by establishing baselines. Query your current latency distribution:
 
 ```promql
 # P50, P90, P95, P99 for all services
+
 histogram_quantile(0.50, sum(rate(istio_request_duration_milliseconds_bucket{reporter="source"}[1h])) by (le, destination_workload, destination_workload_namespace))
 
 histogram_quantile(0.90, sum(rate(istio_request_duration_milliseconds_bucket{reporter="source"}[1h])) by (le, destination_workload, destination_workload_namespace))

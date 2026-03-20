@@ -18,6 +18,7 @@ The quickest way to access any telemetry addon is through port-forwarding:
 
 ```bash
 # Grafana
+
 kubectl port-forward svc/grafana -n istio-system 3000:3000
 
 # Kiali

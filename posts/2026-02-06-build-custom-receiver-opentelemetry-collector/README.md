@@ -37,6 +37,7 @@ Create a new Go module for your custom receiver.
 
 ```bash
 # Create project directory
+
 mkdir custom-receiver
 cd custom-receiver
 

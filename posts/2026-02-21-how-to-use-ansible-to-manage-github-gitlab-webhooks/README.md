@@ -14,6 +14,7 @@ Webhooks connect your Git repositories to external systems like CI/CD pipelines,
 
 ```yaml
 # playbook-github-webhook.yml
+
 # Creates a webhook on a GitHub repository for push events
 - name: Create GitHub webhook
   hosts: localhost

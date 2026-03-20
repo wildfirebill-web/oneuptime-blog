@@ -410,6 +410,7 @@ Track how score plugins affect scheduling:
 
 ```bash
 # View scheduler metrics
+
 kubectl get --raw /metrics | grep scheduler_framework_extension_point_duration_seconds
 
 # Filter for score plugins

@@ -20,6 +20,7 @@ Since Talos Linux is immutable and does not have SSH, you need two tools for cgr
 
 ```bash
 # Read cgroup files directly from the node
+
 talosctl read /sys/fs/cgroup/kubepods.slice/cpu.stat --nodes <node-ip>
 
 # List cgroup directory contents

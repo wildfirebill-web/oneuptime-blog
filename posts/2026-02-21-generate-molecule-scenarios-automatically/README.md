@@ -16,6 +16,7 @@ Molecule ships with a built-in init command that creates the basic scenario stru
 
 ```bash
 # Initialize a new role with Molecule scenario
+
 molecule init role my_role --driver-name docker
 
 # Add a new scenario to an existing role

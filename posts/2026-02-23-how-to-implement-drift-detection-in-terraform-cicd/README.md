@@ -28,6 +28,7 @@ The simplest form of drift detection is running `terraform plan` and checking if
 
 ```bash
 # Run plan and capture the exit code
+
 terraform plan -detailed-exitcode -no-color -out=driftcheck.tfplan
 
 # Exit codes:
@@ -50,7 +51,7 @@ The `-detailed-exitcode` flag is the key. Without it, `terraform plan` always ex
 
 ## GitHub Actions Drift Detection Workflow
 
-```yaml
+````yaml
 # .github/workflows/drift-detection.yml
 name: Terraform Drift Detection
 
@@ -128,16 +129,16 @@ jobs:
 
             Terraform detected the following drift from the expected state:
 
-            \`\`\`
+            ```
             ${summary}
-            \`\`\`
+            ```
 
             <details>
             <summary>Full plan output</summary>
 
-            \`\`\`
+            ```
             ${fullPlan.substring(0, 60000)}
-            \`\`\`
+            ```
             </details>
 
             **Action Required**: Review the drift and either:
@@ -182,7 +183,7 @@ jobs:
                 }
               ]
             }'
-```
+````
 
 ## Drift Detection with JSON Output
 

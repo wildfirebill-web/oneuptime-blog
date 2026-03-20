@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Wi-Fi, Access Points, SLAAC, DHCPv6, Wireless, 802.11
+Tags: IPv6, Wi-Fi, Access Point, SLAAC, DHCPv6, Wireless, 802.11
 
 Description: Configure IPv6 on Wi-Fi access points including enabling router advertisement forwarding, SLAAC, DHCPv6 relay, and proper IPv6 prefix delegation for wireless clients.
 
@@ -12,7 +12,7 @@ Wi-Fi access points bridge wireless clients to the wired network. IPv6 on access
 
 ## How IPv6 Works on Wi-Fi Networks
 
-```
+```text
 IPv6 Wi-Fi Architecture:
 Internet
     |
@@ -33,6 +33,7 @@ Internet
 # Many APs run embedded Linux - configure via SSH
 
 # Enable IPv6 on wireless bridge interface
+
 ip -6 addr add 2001:db8::ap1/64 dev br0
 ip -6 route add ::/0 via 2001:db8::1 dev br0
 

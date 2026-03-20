@@ -1,8 +1,8 @@
-# How to Deploy Knative on Rancher
+# How to Deploy Knative on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, knative, serverless, kubernetes, eventing
+Tags: Rancher, Knative, Serverless, Kubernetes, Eventing
 
 Description: Complete guide to deploying Knative on Rancher for serverless workloads and event-driven applications.
 
@@ -21,6 +21,7 @@ Knative extends Kubernetes to provide serverless workloads with automatic scalin
 
 ```bash
 # Install Knative Operator
+
 kubectl apply -f https://github.com/knative/operator/releases/download/knative-v1.12.0/operator.yaml
 
 # Verify operator is running

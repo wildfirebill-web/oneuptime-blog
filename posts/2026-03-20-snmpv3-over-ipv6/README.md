@@ -21,6 +21,7 @@ SNMPv3 defines three security levels:
 
 ```bash
 # Stop snmpd before creating users
+
 sudo systemctl stop snmpd
 
 # Create SNMPv3 user with SHA authentication and AES privacy
@@ -114,7 +115,7 @@ snmpget udp6:[2001:db8::server]:161 sysDescr.0
 
 ## SNMPv3 on Cisco Devices over IPv6
 
-```
+```text
 ! Cisco IOS - SNMPv3 over IPv6
 
 ! Create SNMPv3 user group
@@ -135,7 +136,7 @@ show snmp group
 
 ## SNMPv3 on Juniper Devices over IPv6
 
-```
+```text
 # Juniper JunOS - SNMPv3
 
 set snmp v3 usm local-engine user ipv6monitor \

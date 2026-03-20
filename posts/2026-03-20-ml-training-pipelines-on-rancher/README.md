@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, ML Pipelines, Kubeflow, Argo Workflows, Kubernetes, MLOps
+Tags: Rancher, ML Pipeline, Kubeflow, Argo Workflows, Kubernetes, MLOps
 
 Description: Build automated ML training pipelines on Rancher using Argo Workflows or Kubeflow Pipelines with data preparation, training, evaluation, and model registry steps.
 
@@ -14,6 +14,7 @@ ML training pipelines automate the repetitive work of data preparation, model tr
 
 ```bash
 # Install Argo Workflows
+
 kubectl create namespace argo
 kubectl apply -n argo \
   -f https://github.com/argoproj/argo-workflows/releases/download/v3.5.0/install.yaml

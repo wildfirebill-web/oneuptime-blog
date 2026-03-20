@@ -25,6 +25,7 @@ Alternatively, use the **Manifests** section in the sidebar if available, or go 
 
 ```yaml
 # Complete application manifest with Deployment, Service, and ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

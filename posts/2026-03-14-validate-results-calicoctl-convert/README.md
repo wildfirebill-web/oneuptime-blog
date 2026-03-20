@@ -28,6 +28,7 @@ First, verify the converted output is valid Calico YAML:
 ```bash
 #!/bin/bash
 # validate-converted.sh
+
 # Validates converted Calico policies
 
 set -euo pipefail

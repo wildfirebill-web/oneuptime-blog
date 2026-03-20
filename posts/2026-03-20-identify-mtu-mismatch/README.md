@@ -14,6 +14,7 @@ MTU mismatches occur when different parts of a network path expect different max
 
 ```bash
 # List all interfaces with their MTUs:
+
 ip link show | grep -E "^[0-9]|mtu"
 # Shows: mtu 1500 for each interface
 

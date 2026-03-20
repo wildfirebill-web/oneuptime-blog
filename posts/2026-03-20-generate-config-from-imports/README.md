@@ -8,14 +8,15 @@ Description: Learn how to use OpenTofu's -generate-config-out flag to automatica
 
 ## Introduction
 
-OpenTofu 1.6 introduced the `-generate-config-out` flag for `tofu plan`. When used with import blocks, it automatically generates the HCL resource configuration based on the actual imported resource's attributes. This dramatically speeds up brownfield infrastructure adoption — you don't need to manually write every resource configuration.
+OpenTofu 1.6 introduced the `-generate-config-out` flag for `tofu plan`. When used with import blocks, it automatically generates the HCL resource configuration based on the actual imported resource's attributes. This dramatically speeds up brownfield infrastructure adoption - you don't need to manually write every resource configuration.
 
 ## Basic Usage
 
 ### Step 1: Write Only the Import Block
 
 ```hcl
-# imports.tf — just the import block, no resource block required
+# imports.tf - just the import block, no resource block required
+
 import {
   to = aws_vpc.main
   id = "vpc-0a1b2c3d4e5f6789"
@@ -148,4 +149,4 @@ tofu plan -generate-config-out=buckets-generated.tf
 
 ## Conclusion
 
-The `-generate-config-out` flag eliminates the most tedious part of brownfield IaC adoption — manually writing resource configurations for every existing resource. Use it to bootstrap your OpenTofu configurations, then clean up the generated code to remove unnecessary attributes, improve readability, and ensure the configuration reflects your desired state rather than just the current state.
+The `-generate-config-out` flag eliminates the most tedious part of brownfield IaC adoption - manually writing resource configurations for every existing resource. Use it to bootstrap your OpenTofu configurations, then clean up the generated code to remove unnecessary attributes, improve readability, and ensure the configuration reflects your desired state rather than just the current state.

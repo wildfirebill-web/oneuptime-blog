@@ -70,6 +70,7 @@ from functools import lru_cache
 import time
 
 # Simple memoization with unbounded cache
+
 # All unique inputs are stored forever (until process restart)
 @lru_cache(maxsize=None)
 def fibonacci(n: int) -> int:

@@ -20,6 +20,7 @@ Quadlet looks for system-level unit files in these directories:
 
 ```bash
 # Primary location for administrator-created files
+
 /etc/containers/systemd/
 
 # Distribution-provided defaults (do not edit)

@@ -37,6 +37,7 @@ Verify buildx is available on your system. It comes pre-installed with Docker De
 
 ```bash
 # Check buildx version - should be installed with Docker Desktop
+
 docker buildx version
 # docker buildx version v0.12.0
 

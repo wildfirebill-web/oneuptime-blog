@@ -32,6 +32,7 @@ Pull the data from Prometheus:
 
 ```bash
 # Query: Percentage of mTLS traffic across the mesh
+
 curl -s "http://prometheus:9090/api/v1/query" \
   --data-urlencode 'query=
     sum(istio_requests_total{connection_security_policy="mutual_tls"})

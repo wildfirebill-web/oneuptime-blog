@@ -40,6 +40,7 @@ Register each regional cluster with ArgoCD:
 
 ```bash
 # Register clusters using ArgoCD CLI
+
 argocd cluster add us-east-1-cluster \
   --name us-east-1 \
   --label region=us-east-1 \

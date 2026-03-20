@@ -43,6 +43,7 @@ Ensures each task runs on a different container instance. No two tasks from the 
 
 ```bash
 # Each task runs on its own instance
+
 aws ecs create-service \
   --cluster my-cluster \
   --service-name isolated-service \

@@ -126,6 +126,7 @@ If the annotation was set intentionally (maybe by a Helm chart), you can overrid
 
 ```yaml
 # Helm values example
+
 podAnnotations:
   sidecar.istio.io/inject: "true"
 ```

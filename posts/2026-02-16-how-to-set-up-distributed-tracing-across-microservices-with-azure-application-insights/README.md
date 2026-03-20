@@ -35,6 +35,7 @@ For .NET services, install the Application Insights SDK:
 
 ```bash
 # Install Application Insights for ASP.NET Core
+
 dotnet add package Microsoft.ApplicationInsights.AspNetCore
 ```
 

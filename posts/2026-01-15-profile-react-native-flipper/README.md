@@ -51,6 +51,7 @@ First, download and install the Flipper desktop application:
 
 ```bash
 # For macOS using Homebrew
+
 brew install --cask flipper
 
 # For Windows using Chocolatey

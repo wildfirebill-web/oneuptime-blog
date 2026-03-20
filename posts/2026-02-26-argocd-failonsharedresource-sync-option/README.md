@@ -26,6 +26,7 @@ ArgoCD tracks which application owns each resource using labels and annotations.
 
 ```yaml
 # ArgoCD adds these labels to track ownership
+
 metadata:
   labels:
     app.kubernetes.io/instance: my-app-name

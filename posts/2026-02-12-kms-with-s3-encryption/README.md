@@ -29,6 +29,7 @@ First, create a KMS key for S3 encryption, then configure your bucket to use it 
 
 ```bash
 # Create a KMS key for S3
+
 aws kms create-key \
   --description "S3 encryption key for production data" \
   --tags '[{"TagKey": "Service", "TagValue": "s3"}]'

@@ -30,6 +30,7 @@ Let's define a clear schema for tracking model versions and experiments as OpenT
 
 ```python
 # model_version.py - Define the model version configuration
+
 from dataclasses import dataclass
 
 @dataclass

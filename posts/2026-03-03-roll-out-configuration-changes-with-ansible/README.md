@@ -22,6 +22,7 @@ The safest approach is to apply changes to a single "canary" node first, verify 
 
 ```yaml
 # playbooks/canary-rollout.yml
+
 ---
 - name: Apply configuration to canary node first
   hosts: workers[0]

@@ -57,6 +57,7 @@ Before touching anything, read the release notes for the target version. Look fo
 
 ```bash
 # Check what will change
+
 istioctl manifest diff <old-manifest.yaml> <new-manifest.yaml>
 ```
 

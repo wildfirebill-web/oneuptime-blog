@@ -18,6 +18,7 @@ Here is what I commonly see in GCP projects:
 
 ```hcl
 # DO NOT do this - overly permissive
+
 resource "google_project_iam_member" "bad_example" {
   project = "my-project"
   role    = "roles/editor"

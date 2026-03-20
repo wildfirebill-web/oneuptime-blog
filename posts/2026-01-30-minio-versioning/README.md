@@ -23,6 +23,7 @@ Set up your MinIO client alias to connect to your MinIO server.
 
 ```bash
 # Configure mc alias for your MinIO server
+
 mc alias set myminio http://localhost:9000 minioadmin minioadmin
 
 # Verify the connection

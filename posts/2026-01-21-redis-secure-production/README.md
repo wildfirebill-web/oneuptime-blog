@@ -34,6 +34,7 @@ Internet -> Firewall -> VPN/Private Network -> TLS Encryption -> Authentication 
 
 ```bash
 # Set password in redis.conf
+
 requirepass YourStrongPasswordHere123!
 
 # Or set via command (doesn't persist restart)

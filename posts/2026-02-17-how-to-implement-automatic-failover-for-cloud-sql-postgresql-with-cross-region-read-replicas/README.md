@@ -18,6 +18,7 @@ Start with a properly configured primary instance with high availability enabled
 
 ```bash
 # Create the primary Cloud SQL instance with HA enabled
+
 gcloud sql instances create primary-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-4-16384 \

@@ -22,6 +22,7 @@ Before making changes, look at what journald is currently doing:
 
 ```bash
 # Show current journal disk usage
+
 sudo journalctl --disk-usage
 
 # Check current journald configuration

@@ -60,6 +60,7 @@ Linux's `tc` command is the foundation for network fault injection. It manipulat
 
 ```bash
 # Install iproute2 (contains tc)
+
 # Debian/Ubuntu
 sudo apt-get install iproute2
 

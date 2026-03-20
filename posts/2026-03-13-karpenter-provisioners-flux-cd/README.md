@@ -40,6 +40,7 @@ fleet-infra/
 
 ```yaml
 # infrastructure/karpenter/kustomization.yaml - Karpenter resources Kustomize file
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

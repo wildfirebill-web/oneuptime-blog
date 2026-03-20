@@ -24,6 +24,7 @@ Your CI pipeline needs a place to run the application with a collector and Jaege
 
 ```yaml
 # docker-compose.ci.yml
+
 version: '3.8'
 
 services:

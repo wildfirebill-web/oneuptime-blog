@@ -34,6 +34,7 @@ Extract the registration URL and CA cert from your MachineRegistration:
 
 ```bash
 # Get registration URL
+
 REG_URL=$(kubectl get machineregistration my-nodes \
   -n fleet-default \
   -o jsonpath='{.status.registrationURL}')

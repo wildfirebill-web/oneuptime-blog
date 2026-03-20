@@ -38,6 +38,7 @@ The basic success rate formula:
 
 ```promql
 # Success rate for a specific service (last 5 minutes)
+
 sum(rate(istio_requests_total{
   destination_service="my-service.default.svc.cluster.local",
   response_code!~"5.."

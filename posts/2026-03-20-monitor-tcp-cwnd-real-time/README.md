@@ -8,12 +8,13 @@ Description: Monitor the TCP congestion window size in real time using ss and ns
 
 ## Introduction
 
-The TCP Congestion Window (CWND) limits how many bytes the sender can have in-flight beyond the receiver window constraint. Monitoring CWND during a transfer reveals how the congestion control algorithm is behaving — growing during slow start, limited by the receive window, or shrinking in response to detected congestion.
+The TCP Congestion Window (CWND) limits how many bytes the sender can have in-flight beyond the receiver window constraint. Monitoring CWND during a transfer reveals how the congestion control algorithm is behaving - growing during slow start, limited by the receive window, or shrinking in response to detected congestion.
 
 ## Monitoring CWND with ss
 
 ```bash
 # Show CWND for all established connections
+
 ss -tin state established | grep cwnd
 
 # Example output:
@@ -81,7 +82,7 @@ nstat -a | grep "TcpExt.*Cwnd"
 
 ## Interpreting CWND Patterns
 
-```
+```text
 CWND Pattern        | Meaning
 --------------------|-------------------------------------------
 Exponential growth  | Slow start phase (healthy)
@@ -112,4 +113,4 @@ for interval in data['intervals']:
 
 ## Conclusion
 
-CWND monitoring reveals the congestion control algorithm's internal behavior in real time. During a healthy transfer, you should see CWND grow rapidly in slow start, then more gradually in congestion avoidance. Sudden drops indicate loss events. CWND plateauing at small values relative to your bandwidth-delay product means the window is the bottleneck — either due to packet loss forcing reduction or the receive window capping growth.
+CWND monitoring reveals the congestion control algorithm's internal behavior in real time. During a healthy transfer, you should see CWND grow rapidly in slow start, then more gradually in congestion avoidance. Sudden drops indicate loss events. CWND plateauing at small values relative to your bandwidth-delay product means the window is the bottleneck - either due to packet loss forcing reduction or the receive window capping growth.

@@ -20,7 +20,7 @@ IPv6 Router Advertisements contain three critical flags that control how clients
 - **O=0**: Clients do not use DHCPv6 for anything
 - **O=1**: Clients use DHCPv6 for configuration options (DNS, NTP, etc.) but NOT for addresses
 
-### A Flag (Autonomous Address Configuration) — Per Prefix
+### A Flag (Autonomous Address Configuration) - Per Prefix
 - **A=1** (AdvAutonomous on): Clients may form a SLAAC address from this prefix
 - **A=0** (AdvAutonomous off): Clients should NOT form a SLAAC address from this prefix
 
@@ -86,7 +86,7 @@ interface eth1 {
 };
 ```
 
-### DHCPv6 + SLAAC (M=1, O=1, A=1) — "Mixed Mode"
+### DHCPv6 + SLAAC (M=1, O=1, A=1) - "Mixed Mode"
 
 Clients get a DHCPv6 address AND a SLAAC address. Unusual but valid:
 
@@ -116,6 +116,7 @@ interface eth1 {
 
 ```bash
 # View the flags set in the RA received by a client
+
 rdisc6 eth0 | grep -E "Stateful|Stateless|conf"
 
 # Or from the kernel's accepted RA state

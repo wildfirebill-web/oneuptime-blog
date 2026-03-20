@@ -1,4 +1,4 @@
-# How to Deploy Stacks with Named Volumes and NFS Mounts in Portainer
+# How to Deploy Stacks with Named Volumes and NFS Mounts in Portainer (3)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,6 +31,7 @@ services:
       - app-config:/var/app/config
 
 # Declare all named volumes at the top level
+
 volumes:
   postgres-data:
     name: production-postgres-data   # Explicit name (optional but recommended)

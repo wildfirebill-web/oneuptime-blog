@@ -24,6 +24,7 @@ my-app   LoadBalancer   10.96.1.50    <pending>     80:31234/TCP   10m
 
 ```bash
 # Step 1: Check if a load balancer controller is installed
+
 kubectl get pods --all-namespaces | grep -E "metallb|kube-vip|cloud-controller"
 
 # Step 2: If MetalLB, check if address pools are configured

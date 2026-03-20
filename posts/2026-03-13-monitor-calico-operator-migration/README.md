@@ -27,6 +27,7 @@ Set up a tmux session for parallel monitoring:
 ```bash
 #!/bin/bash
 # start-migration-monitoring.sh
+
 tmux new-session -d -s calico-migration
 
 # Pane 1: TigeraStatus watch

@@ -48,6 +48,7 @@ Using gcloud to create the taxonomy and policy tags:
 
 ```bash
 # Create the top-level taxonomy
+
 gcloud data-catalog taxonomies create \
   --display-name="GDPR Data Classification" \
   --description="Classification system for GDPR compliance" \

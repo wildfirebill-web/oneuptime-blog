@@ -18,6 +18,7 @@ You can browse the Data Exchange catalog through the console or the AWS Marketpl
 
 ```bash
 # List available data sets from the Data Exchange catalog
+
 aws dataexchange list-data-sets \
     --query "DataSets[?OriginDetails.ProductId!=null]" \
     --output table

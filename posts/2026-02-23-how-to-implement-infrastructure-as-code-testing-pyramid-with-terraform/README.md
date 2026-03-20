@@ -35,6 +35,7 @@ Static analysis is the fastest and cheapest layer. Run these on every commit:
 
 ```yaml
 # .github/workflows/static-analysis.yaml
+
 name: Static Analysis
 
 on: [pull_request]

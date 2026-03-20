@@ -27,6 +27,7 @@ This guide deploys Vector as a DaemonSet agent collecting Kubernetes logs, enric
 
 ```yaml
 # infrastructure/sources/vector-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

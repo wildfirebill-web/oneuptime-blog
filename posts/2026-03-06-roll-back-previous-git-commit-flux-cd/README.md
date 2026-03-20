@@ -44,6 +44,7 @@ This is the cleanest approach when a single commit caused the issue.
 
 ```bash
 # View recent commits to find the problematic one
+
 git log --oneline --graph -20
 
 # Example output:

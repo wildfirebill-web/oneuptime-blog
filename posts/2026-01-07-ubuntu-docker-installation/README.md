@@ -49,6 +49,7 @@ Let us first verify your Ubuntu version and architecture:
 
 ```bash
 # Check your Ubuntu version
+
 lsb_release -a
 
 # Verify you are running a 64-bit system

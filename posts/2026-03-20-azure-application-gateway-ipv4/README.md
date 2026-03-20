@@ -20,6 +20,7 @@ Azure Application Gateway is a layer-7 load balancer with built-in SSL terminati
 
 ```bash
 # Step 1: Create a dedicated subnet for the gateway (must not contain other resources)
+
 az network vnet subnet create \
   --resource-group rg-web \
   --vnet-name my-vnet \

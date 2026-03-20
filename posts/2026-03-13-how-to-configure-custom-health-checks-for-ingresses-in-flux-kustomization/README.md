@@ -311,6 +311,7 @@ When an Ingress health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization web-app
 
 # Check Ingress status

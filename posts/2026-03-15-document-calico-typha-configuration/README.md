@@ -31,6 +31,7 @@ Typha configuration comes from multiple sources. Extract each one:
 
 ```bash
 # Export the Typha deployment
+
 kubectl get deployment -n calico-system calico-typha -o yaml > typha-deployment.yaml
 
 # Extract key configuration from environment variables

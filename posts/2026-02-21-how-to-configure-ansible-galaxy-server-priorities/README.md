@@ -22,6 +22,7 @@ Configure server priority in `ansible.cfg`:
 
 ```ini
 # ansible.cfg - server list defines priority (first = highest)
+
 [galaxy]
 server_list = private_hub, automation_hub, galaxy
 

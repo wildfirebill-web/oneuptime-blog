@@ -211,6 +211,7 @@ Create a full cluster exploration hierarchy:
 # Variable definitions
 
 # 1. Cluster
+
 name: cluster
 query: label_values(kube_node_info, cluster)
 

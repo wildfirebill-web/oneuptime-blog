@@ -27,6 +27,7 @@ CloudNativePG is distributed as a Helm chart. Create an ArgoCD Application that 
 
 ```yaml
 # argocd/cloudnativepg-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

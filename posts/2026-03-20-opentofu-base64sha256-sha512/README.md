@@ -1,4 +1,4 @@
-# How to Use the base64sha256 and base64sha512 Functions in OpenTofu
+# How to Use the base64sha256 and base64sha512 Functions in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -61,7 +61,7 @@ resource "aws_lambda_function" "api" {
 }
 ```
 
-Note: `data.archive_file` provides `output_base64sha256` directly, so you typically don't need to call `base64sha256()` for Lambda — use the archive file attribute.
+Note: `data.archive_file` provides `output_base64sha256` directly, so you typically don't need to call `base64sha256()` for Lambda - use the archive file attribute.
 
 ### Custom Deployment Verification
 

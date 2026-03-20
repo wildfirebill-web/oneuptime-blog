@@ -38,6 +38,7 @@ Edit `/etc/squid/squid.conf`:
 # /etc/squid/squid.conf
 
 # Format: cache_dir TYPE DIRECTORY SIZE_MB L1_DIRS L2_DIRS
+
 # SIZE_MB: Maximum disk usage for this cache directory
 # L1_DIRS: Number of first-level subdirectories (default 16)
 # L2_DIRS: Number of second-level subdirectories (default 256)

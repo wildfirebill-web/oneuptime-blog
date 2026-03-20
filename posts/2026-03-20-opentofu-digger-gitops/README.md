@@ -20,6 +20,7 @@ Learn how to configure Digger for open-source GitOps-style OpenTofu orchestratio
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

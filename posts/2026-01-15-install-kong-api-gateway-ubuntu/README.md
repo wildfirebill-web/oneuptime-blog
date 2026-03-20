@@ -69,6 +69,7 @@ Update your Ubuntu system and install required dependencies:
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential dependencies

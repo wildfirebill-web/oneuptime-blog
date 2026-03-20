@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Dependency Cycle, Graph, Error, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Dependency Cycles, Graph, Error, Infrastructure as Code
 
 Description: Learn how to identify and resolve circular dependency errors in OpenTofu by understanding the dependency graph and restructuring resource references.
 
@@ -12,7 +12,7 @@ OpenTofu builds a directed acyclic graph (DAG) of your resources before applying
 
 ## Error Message
 
-```
+```hcl
 Error: Cycle: aws_security_group.app, aws_security_group.db
   OpenTofu detected a configuration dependency cycle among the following resources:
   - aws_security_group.app
@@ -25,6 +25,7 @@ Use `tofu graph` to visualize the dependency graph and locate the cycle:
 
 ```bash
 # Generate the dependency graph
+
 tofu graph | dot -Tsvg -o graph.svg
 
 # Or pipe to a text format for terminal review
@@ -35,10 +36,10 @@ tofu graph 2>&1 | grep -A 5 "security_group"
 
 ### Cause 1: Circular Security Group References
 
-This is the most common cycle — two security groups each referencing the other in ingress rules:
+This is the most common cycle - two security groups each referencing the other in ingress rules:
 
 ```hcl
-# WRONG — creates a cycle
+# WRONG - creates a cycle
 resource "aws_security_group" "app" {
   name = "app-sg"
   ingress {
@@ -55,7 +56,7 @@ resource "aws_security_group" "db" {
     from_port       = 443
     to_port         = 443
     protocol        = "tcp"
-    security_groups = [aws_security_group.app.id]  # References app — CYCLE!
+    security_groups = [aws_security_group.app.id]  # References app - CYCLE!
   }
 }
 ```
@@ -99,7 +100,7 @@ resource "aws_security_group_rule" "app_to_db" {
 ## Cause 2: Module Circular Imports
 
 ```hcl
-# Module A calls Module B, Module B calls Module A — not allowed
+# Module A calls Module B, Module B calls Module A - not allowed
 # Fix: extract shared resources into a third module
 module "shared" { source = "./modules/shared" }
 module "module_a" {
@@ -115,7 +116,7 @@ module "module_b" {
 ## Cause 3: Unnecessary depends_on
 
 ```hcl
-# WRONG — explicit depends_on creating a cycle
+# WRONG - explicit depends_on creating a cycle
 resource "aws_iam_role" "app" {
   depends_on = [aws_iam_role_policy.app]  # Policy already depends on role
 }
@@ -124,7 +125,7 @@ resource "aws_iam_role_policy" "app" {
   role = aws_iam_role.app.id
 }
 
-# CORRECT — remove the unnecessary depends_on
+# CORRECT - remove the unnecessary depends_on
 resource "aws_iam_role" "app" {
   name = "app-role"
   # No explicit depends_on needed

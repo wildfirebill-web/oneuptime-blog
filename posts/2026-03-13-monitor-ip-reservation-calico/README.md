@@ -32,6 +32,7 @@ Scan the pod CIDR range to find pre-existing IP assignments:
 
 ```bash
 # List all IPs currently allocated to non-pod infrastructure in your pod CIDR
+
 # Example: scan for existing services using nmap or ping sweep
 kubectl debug node/<node-name> -it --image=nicolaka/netshoot -- \
   nmap -sn 192.168.0.0/24 -oG - | grep "Up" | awk '{print $2}'

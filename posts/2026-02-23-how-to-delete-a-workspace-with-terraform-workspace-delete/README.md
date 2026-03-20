@@ -16,6 +16,7 @@ The command takes the name of the workspace to delete:
 
 ```bash
 # Delete the "test" workspace
+
 terraform workspace delete test
 ```
 

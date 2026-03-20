@@ -31,6 +31,7 @@ First, create the table:
 
 ```bash
 # Create a DynamoDB table for tasks
+
 aws dynamodb create-table \
   --table-name Tasks \
   --attribute-definitions \

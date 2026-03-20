@@ -8,7 +8,7 @@ Description: Learn how to enable and manage secrets encryption at rest in K3s to
 
 ## Introduction
 
-By default, Kubernetes stores secrets as base64-encoded data in etcd (or SQLite in K3s) — which is **not** encryption. Anyone with access to the datastore can read all secrets. Enabling secrets encryption at rest ensures that sensitive data like passwords, API keys, and certificates is encrypted using AES-256-CBC or AES-256-GCM before being stored. This is a critical security requirement for compliance standards like PCI-DSS, HIPAA, and SOC 2.
+By default, Kubernetes stores secrets as base64-encoded data in etcd (or SQLite in K3s) - which is **not** encryption. Anyone with access to the datastore can read all secrets. Enabling secrets encryption at rest ensures that sensitive data like passwords, API keys, and certificates is encrypted using AES-256-CBC or AES-256-GCM before being stored. This is a critical security requirement for compliance standards like PCI-DSS, HIPAA, and SOC 2.
 
 ## Understanding K3s Secrets Encryption
 
@@ -18,10 +18,11 @@ K3s supports two approaches:
 
 ## Step 1: Enable Secrets Encryption (Simple Method)
 
-The simplest approach — let K3s manage everything:
+The simplest approach - let K3s manage everything:
 
 ```bash
 # Install K3s with secrets encryption enabled
+
 curl -sfL https://get.k3s.io | \
   INSTALL_K3S_EXEC="--secrets-encryption" \
   sh -
@@ -240,4 +241,4 @@ echo "WARNING: Losing these keys means losing access to all encrypted secrets!"
 
 ## Conclusion
 
-Secrets encryption at rest is a critical security control for any K3s cluster storing sensitive data. K3s's `--secrets-encryption` flag provides a simple, managed approach, while custom EncryptionConfiguration gives full control over key material and rotation schedules. Always backup your encryption keys in a secure, separate location — losing them means permanently losing access to all encrypted secrets. For compliance requirements, combine secrets encryption with RBAC policies, audit logging, and TLS to create a comprehensive security posture.
+Secrets encryption at rest is a critical security control for any K3s cluster storing sensitive data. K3s's `--secrets-encryption` flag provides a simple, managed approach, while custom EncryptionConfiguration gives full control over key material and rotation schedules. Always backup your encryption keys in a secure, separate location - losing them means permanently losing access to all encrypted secrets. For compliance requirements, combine secrets encryption with RBAC policies, audit logging, and TLS to create a comprehensive security posture.

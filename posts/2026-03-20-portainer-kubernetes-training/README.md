@@ -16,6 +16,7 @@ Kubernetes has a steep learning curve, with dozens of resource types, YAML manif
 
 ```bash
 # Use k3s for lightweight training clusters (one per trainee)
+
 # On each training VM:
 curl -sfL https://get.k3s.io | sh -
 
@@ -98,7 +99,7 @@ spec:
   type: ClusterIP
 ```
 
-In Portainer: **Kubernetes > Networking > Services** — show how the service selects pods by label.
+In Portainer: **Kubernetes > Networking > Services** - show how the service selects pods by label.
 
 ## Module 2: Deployments and ReplicaSets
 
@@ -130,8 +131,8 @@ spec:
 Exercise steps in Portainer:
 1. Deploy the manifest
 2. View the 3 pods in **Kubernetes > Workloads**
-3. Delete one pod manually — watch it recreate
-4. Scale to 5 replicas — observe new pods starting
+3. Delete one pod manually - watch it recreate
+4. Scale to 5 replicas - observe new pods starting
 
 ### Exercise 2.2: Rolling Updates
 
@@ -190,7 +191,7 @@ spec:
         name: app-secrets
 ```
 
-In Portainer: **Kubernetes > Configuration > ConfigMaps/Secrets** — show that secret values are masked.
+In Portainer: **Kubernetes > Configuration > ConfigMaps/Secrets** - show that secret values are masked.
 
 ## Module 4: Persistent Storage
 

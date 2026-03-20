@@ -16,6 +16,7 @@ Automating Calico upgrades on OpenShift builds on the standard Kubernetes automa
 
 ```bash
 # Verify oc CLI is available for OpenShift-specific commands
+
 oc version
 
 # Check current OCP cluster state is healthy before automation

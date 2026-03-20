@@ -277,6 +277,7 @@ For a more detailed comparison, use Prometheus:
 
 ```promql
 # Compare average CPU usage between versions
+
 avg(rate(container_cpu_usage_seconds_total{
   container="istio-proxy",
   namespace="bench-v120"

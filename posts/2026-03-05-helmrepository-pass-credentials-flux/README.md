@@ -22,6 +22,7 @@ Here is how to set up a HelmRepository with `passCredentials` enabled along with
 
 ```yaml
 # Create a Secret containing the Helm repository credentials
+
 apiVersion: v1
 kind: Secret
 metadata:

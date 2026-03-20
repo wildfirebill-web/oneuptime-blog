@@ -52,6 +52,7 @@ Check that your collector includes the processor by looking at its components:
 
 ```bash
 # List all available components in your collector binary
+
 otelcol-contrib components
 
 # Look for the interval processor in the output

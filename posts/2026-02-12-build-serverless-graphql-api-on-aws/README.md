@@ -22,6 +22,7 @@ Create a GraphQL schema that AppSync will use:
 
 ```graphql
 # schema.graphql
+
 type Query {
   getPost(id: ID!): Post
   listPosts(limit: Int, nextToken: String): PostConnection!

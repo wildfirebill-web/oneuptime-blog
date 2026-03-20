@@ -26,6 +26,7 @@ Here's a complete example of a Lambda function that runs every 5 minutes:
 
 ```hcl
 # Provider configuration
+
 terraform {
   required_providers {
     aws = {

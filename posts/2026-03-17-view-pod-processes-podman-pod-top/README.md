@@ -18,6 +18,7 @@ When debugging a pod, you need to see what processes are running across all cont
 
 ```bash
 # Create a pod with containers
+
 podman pod create --name app-pod
 podman run -d --pod app-pod --name web docker.io/library/nginx:alpine
 podman run -d --pod app-pod --name worker docker.io/library/alpine \

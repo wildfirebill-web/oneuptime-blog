@@ -72,6 +72,7 @@ resource "aws_rds_cluster" "wordpress" {
 }
 
 # Writer instance
+
 resource "aws_rds_cluster_instance" "writer" {
   identifier         = "${var.project_name}-wordpress-writer"
   cluster_identifier = aws_rds_cluster.wordpress.id

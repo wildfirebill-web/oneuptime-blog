@@ -1,17 +1,16 @@
----
-title: "OpenTofu Module Structure and File Layout"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules
-description: "Learn the standard file structure for OpenTofu modules including main.tf, variables.tf, outputs.tf, and versions.tf."
----
-
 # OpenTofu Module Structure and File Layout
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules
+
+Description: Learn the standard file structure for OpenTofu modules including main.tf, variables.tf, outputs.tf, and versions.tf.
 
 A well-structured module is predictable and easy to navigate. OpenTofu doesn't enforce a specific file layout, but the community has converged on a standard structure that makes modules easier to understand, test, and maintain.
 
 ## Standard Module Structure
 
-```
+```hcl
 terraform-aws-webapp/
 ├── main.tf          # Primary resource definitions
 ├── variables.tf     # Input variable declarations
@@ -30,10 +29,10 @@ terraform-aws-webapp/
         └── README.md
 ```
 
-## main.tf — Resource Definitions
+## main.tf - Resource Definitions
 
 ```hcl
-# main.tf — contains the core resources this module creates
+# main.tf - contains the core resources this module creates
 
 resource "aws_vpc" "main" {
   cidr_block           = var.vpc_cidr
@@ -61,10 +60,10 @@ resource "aws_subnet" "public" {
 }
 ```
 
-## variables.tf — Input Declarations
+## variables.tf - Input Declarations
 
 ```hcl
-# variables.tf — all input variables with descriptions
+# variables.tf - all input variables with descriptions
 
 variable "name" {
   description = "Name prefix for all resources created by this module"
@@ -94,10 +93,10 @@ variable "tags" {
 }
 ```
 
-## outputs.tf — Output Values
+## outputs.tf - Output Values
 
 ```hcl
-# outputs.tf — expose useful values to callers
+# outputs.tf - expose useful values to callers
 
 output "vpc_id" {
   description = "ID of the created VPC"
@@ -115,10 +114,10 @@ output "public_subnet_ids" {
 }
 ```
 
-## versions.tf — Provider Requirements
+## versions.tf - Provider Requirements
 
 ```hcl
-# versions.tf — specify required OpenTofu and provider versions
+# versions.tf - specify required OpenTofu and provider versions
 
 terraform {
   required_version = ">= 1.6"
@@ -132,10 +131,10 @@ terraform {
 }
 ```
 
-## locals.tf — Computed Values
+## locals.tf - Computed Values
 
 ```hcl
-# locals.tf — internal computations
+# locals.tf - internal computations
 
 locals {
   default_tags = merge(

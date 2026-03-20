@@ -57,6 +57,7 @@ The runbook is the most critical document. It should be executable by any qualif
 
 ```yaml
 # pre-migration-audit-policy.yaml
+
 # Apply this during the audit phase to log traffic patterns
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy

@@ -37,6 +37,7 @@ Configure Terraform to deploy in GovCloud.
 
 ```hcl
 # AWS GovCloud provider
+
 provider "aws" {
   region = "us-gov-west-1"
 

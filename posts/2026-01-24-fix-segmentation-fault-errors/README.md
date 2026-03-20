@@ -41,6 +41,7 @@ flowchart TD
 
 ```bash
 # View kernel messages for segfault details
+
 dmesg | grep -i segfault
 
 # Example output:

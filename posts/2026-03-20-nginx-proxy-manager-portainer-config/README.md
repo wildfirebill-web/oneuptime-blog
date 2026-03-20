@@ -18,6 +18,7 @@ NPM must be able to reach Portainer by container name:
 
 ```yaml
 # docker-compose.yml
+
 services:
   npm:
     image: jc21/nginx-proxy-manager:latest
@@ -28,7 +29,7 @@ services:
     image: portainer/portainer-ce:latest
     networks:
       - proxy    # Same network as NPM
-    # Do NOT publish port 9000 externally — let NPM handle routing
+    # Do NOT publish port 9000 externally - let NPM handle routing
 
 networks:
   proxy:
@@ -41,7 +42,7 @@ Log into NPM at `http://server:81` and go to **Hosts → Proxy Hosts → Add Pro
 
 ### Details Tab
 
-```
+```text
 Domain Names:         portainer.yourdomain.com
 Scheme:               http
 Forward Hostname/IP:  portainer      (container name)
@@ -53,7 +54,7 @@ Websockets Support:   Enabled       (required for Portainer console)
 
 ### SSL Tab
 
-```
+```text
 SSL Certificate:      Request new SSL Certificate
 Force SSL:            Enabled
 HTTP/2 Support:       Enabled
@@ -117,7 +118,7 @@ Restrict Portainer access by IP:
 
 If you run Portainer with HTTPS enabled (`-H tcp://...` with TLS):
 
-```
+```text
 Scheme:               https
 Forward Port:         9443
 SSL Certificate:      (same process)

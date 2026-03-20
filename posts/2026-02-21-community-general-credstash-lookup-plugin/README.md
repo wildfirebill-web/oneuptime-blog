@@ -20,6 +20,7 @@ Install the required tools:
 
 ```bash
 # Install the community.general Ansible collection
+
 ansible-galaxy collection install community.general
 
 # Install credstash and its dependencies

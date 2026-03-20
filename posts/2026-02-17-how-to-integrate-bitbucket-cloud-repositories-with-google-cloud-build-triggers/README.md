@@ -27,6 +27,7 @@ First, you need to create a connection to Bitbucket Cloud in Cloud Build:
 
 ```bash
 # Create a connection to Bitbucket Cloud
+
 gcloud builds connections create bitbucket-cloud my-bitbucket-connection \
   --region=us-central1 \
   --authorizer-token-secret-version="projects/my-project/secrets/bitbucket-token/versions/latest" \

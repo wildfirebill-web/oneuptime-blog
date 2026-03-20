@@ -33,6 +33,7 @@ Here is a playbook that uses all three task sections.
 
 ```yaml
 # deploy.yml - demonstrates pre_tasks, tasks, and post_tasks
+
 ---
 - name: Deploy application
   hosts: webservers

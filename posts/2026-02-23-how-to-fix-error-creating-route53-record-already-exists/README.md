@@ -35,6 +35,7 @@ The most common scenario is that someone created the DNS record manually through
 
 ```bash
 # Check if the record already exists
+
 aws route53 list-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEF \
   --query "ResourceRecordSets[?Name=='api.example.com.']"

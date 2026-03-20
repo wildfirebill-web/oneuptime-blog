@@ -35,6 +35,7 @@ To see all installed PAM modules on your Ubuntu system:
 
 ```bash
 # List all PAM modules
+
 ls -la /lib/x86_64-linux-gnu/security/
 
 # Get information about a specific module

@@ -86,6 +86,7 @@ Test IPv6 connectivity between containers:
 podman run -d --name ipv6-app2 --network ipv6-net docker.io/library/alpine sleep 3600
 
 # Get the first container's IPv6 address
+
 IPV6_ADDR=$(podman inspect ipv6-app --format '{{range .NetworkSettings.Networks}}{{.GlobalIPv6Address}}{{end}}')
 
 # Ping from the second container

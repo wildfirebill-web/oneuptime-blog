@@ -12,6 +12,7 @@ GCP Internal Load Balancer enables IPv6 for traffic within your VPC, useful for 
 
 ```bash
 # Enable required APIs
+
 gcloud services enable compute.googleapis.com
 
 # Verify your VPC subnet supports IPv6
@@ -88,7 +89,7 @@ resource "google_compute_region_health_check" "main" {
 ## Internal HTTP(S) Load Balancer with IPv6
 
 ```hcl
-# Internal HTTP LB — proxy-based, supports IPv6 frontend
+# Internal HTTP LB - proxy-based, supports IPv6 frontend
 resource "google_compute_address" "internal_http_ipv6" {
   name         = "internal-http-lb-ipv6"
   address_type = "INTERNAL"

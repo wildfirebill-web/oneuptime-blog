@@ -45,6 +45,7 @@ The first challenge is simply connecting to multiple clusters. The kubeconfig fi
 
 ```yaml
 # kubeconfig with multiple clusters
+
 apiVersion: v1
 kind: Config
 clusters:

@@ -42,6 +42,7 @@ spec:
 
 ```yaml
 # Security tier - high priority
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

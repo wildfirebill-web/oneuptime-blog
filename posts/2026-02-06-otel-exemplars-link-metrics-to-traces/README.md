@@ -20,6 +20,7 @@ Exemplars are configured in the meter provider section. Here is how to enable th
 
 ```yaml
 # otel-config.yaml
+
 file_format: "0.3"
 
 resource:

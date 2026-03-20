@@ -26,7 +26,7 @@ graph TD
 
 Using the prefix `2001:db8:dc::/48`:
 
-```
+```text
 Subnet field (16 bits): TTSS
   TT = Tier/Zone (2 hex digits)
   SS = Segment within tier (2 hex digits)
@@ -43,7 +43,7 @@ Zone assignments:
 
 ## Detailed Subnet Assignments
 
-```
+```text
 Infrastructure (Core):
   2001:db8:dc:0001::/64  → Management VLAN
   2001:db8:dc:0002::/64  → NTP / DNS servers
@@ -84,6 +84,7 @@ Loopbacks (using /128):
 
 ```bash
 # Configure a server in Pod 1, Row A
+
 sudo ip -6 addr add 2001:db8:dc:0110::15/64 dev eth0
 
 # Set default gateway (Leaf 1 router)

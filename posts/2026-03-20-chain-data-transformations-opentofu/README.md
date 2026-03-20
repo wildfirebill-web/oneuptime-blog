@@ -8,7 +8,7 @@ Description: Learn how to chain multiple OpenTofu functions and local values to 
 
 ---
 
-OpenTofu's HCL supports a rich set of built-in functions and local values that you can chain together to transform data — parsing strings, reshaping maps, filtering lists, and generating structured outputs — without external scripting.
+OpenTofu's HCL supports a rich set of built-in functions and local values that you can chain together to transform data - parsing strings, reshaping maps, filtering lists, and generating structured outputs - without external scripting.
 
 ---
 
@@ -29,6 +29,7 @@ locals {
   }
 }
 # Result: { env = "prod", team = "platform", owner = "ops" }
+
 ```
 
 ---

@@ -46,6 +46,7 @@ The easiest way to run ChartMuseum is using its own Helm chart. This configurati
 
 ```bash
 # Add the ChartMuseum repository
+
 helm repo add chartmuseum https://chartmuseum.github.io/charts
 helm repo update
 

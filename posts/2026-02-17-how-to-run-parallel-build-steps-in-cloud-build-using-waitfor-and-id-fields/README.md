@@ -16,6 +16,7 @@ Without any `id` or `waitFor` fields, Cloud Build runs steps sequentially in the
 
 ```yaml
 # Default sequential execution - each step waits for the previous one
+
 steps:
   - name: 'node:20'
     args: ['npm', 'ci']          # Takes ~60s

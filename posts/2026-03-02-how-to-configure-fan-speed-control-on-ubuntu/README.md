@@ -24,6 +24,7 @@ Hardware support varies by manufacturer and motherboard. Not all hardware expose
 
 ```bash
 # Install fan control tools
+
 sudo apt update
 sudo apt install -y fancontrol lm-sensors
 

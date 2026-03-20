@@ -14,6 +14,7 @@ Network segmentation divides infrastructure into isolated zones (public, applica
 
 ```hcl
 # main.tf - Network zones for segmentation
+
 locals {
   zones = {
     public = {

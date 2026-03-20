@@ -25,6 +25,7 @@ This test suite validates each fundamental behavior with explicit test cases and
 
 ```bash
 # Deploy pods with distinct labels
+
 kubectl run pod-alpha --image=nginx --labels="role=alpha,tier=web"
 kubectl run pod-beta --image=nicolaka/netshoot \
   --labels="role=beta,tier=web" -- sleep 3600

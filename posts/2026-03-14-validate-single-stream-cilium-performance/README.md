@@ -30,6 +30,7 @@ Before running any tests, define what "good" looks like:
 
 ```yaml
 # validation-criteria.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

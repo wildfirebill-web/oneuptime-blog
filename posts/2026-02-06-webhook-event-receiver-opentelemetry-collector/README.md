@@ -61,6 +61,7 @@ With this configuration, send events using curl:
 
 ```bash
 # Send a simple event
+
 curl -X POST http://localhost:8080/events \
   -H "Content-Type: application/json" \
   -d '{

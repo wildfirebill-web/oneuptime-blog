@@ -14,6 +14,7 @@ The Maximum Transmission Unit (MTU) defines the largest packet size that a netwo
 
 ```bash
 # Check the current MTU on all interfaces
+
 ip link show
 
 # Check MTU for a specific interface

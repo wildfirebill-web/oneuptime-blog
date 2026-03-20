@@ -151,6 +151,7 @@ When working with AWS EKS, use the AWS provider to fetch cluster credentials dyn
 # providers.tf - EKS Authentication
 
 # Configure AWS provider with region and default tags
+
 provider "aws" {
   region = var.aws_region
 

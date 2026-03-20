@@ -30,6 +30,7 @@ The standard way to install CABPT is through `clusterctl`:
 
 ```bash
 # Install CABPT along with other providers
+
 clusterctl init --bootstrap talos --control-plane talos --infrastructure aws
 
 # Verify CABPT is running

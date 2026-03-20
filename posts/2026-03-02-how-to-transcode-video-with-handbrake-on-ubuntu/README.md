@@ -16,6 +16,7 @@ HandBrake is a robust open-source video transcoder built on top of FFmpeg, x264,
 
 ```bash
 # Install Flatpak if not already installed
+
 sudo apt-get install -y flatpak
 
 # Add Flathub repository

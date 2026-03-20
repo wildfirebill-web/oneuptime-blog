@@ -37,6 +37,7 @@ In a playbook task:
 
 ```yaml
 # Sort a list and display the result
+
 - name: Show sorted packages
   ansible.builtin.debug:
     msg: "{{ packages | sort }}"

@@ -415,6 +415,7 @@ Track these key listener metrics:
 
 ```promql
 # Total connections accepted
+
 envoy_listener_downstream_cx_total
 
 # Active connections

@@ -20,6 +20,7 @@ Envoy is a high-performance proxy designed for cloud-native applications. It pro
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

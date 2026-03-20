@@ -8,7 +8,7 @@ Description: Learn how to use `override_data` in OpenTofu tests to provide contr
 
 ## Introduction
 
-Data sources in OpenTofu modules look up existing infrastructure—finding the latest AMI, reading a secret from AWS Secrets Manager, or resolving a VPC ID. During tests, these lookups either fail (no credentials) or return unpredictable results. The `override_data` block solves this by substituting a fixed return value for any data source.
+Data sources in OpenTofu modules look up existing infrastructure-finding the latest AMI, reading a secret from AWS Secrets Manager, or resolving a VPC ID. During tests, these lookups either fail (no credentials) or return unpredictable results. The `override_data` block solves this by substituting a fixed return value for any data source.
 
 ## Basic `override_data` Syntax
 
@@ -43,6 +43,7 @@ Apply an override to every `run` block in the file by placing it at the top leve
 
 ```hcl
 # Override the account identity data source for all runs
+
 override_data {
   target = data.aws_caller_identity.current
 
@@ -136,7 +137,7 @@ run "full_network_configuration" {
 
 ## When Data Overrides Are Not Needed
 
-If you are using a `mock_provider`, data sources automatically return generated mock values. Use `override_data` only when you need a specific value that your assertions depend on—otherwise the auto-generated mock values are sufficient.
+If you are using a `mock_provider`, data sources automatically return generated mock values. Use `override_data` only when you need a specific value that your assertions depend on-otherwise the auto-generated mock values are sufficient.
 
 ## Conclusion
 

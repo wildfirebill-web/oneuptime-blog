@@ -20,6 +20,7 @@ API Gateway authorizers control access to API endpoints. Lambda authorizers exec
 
 ```hcl
 # Lambda function that validates tokens and returns IAM policy
+
 resource "aws_lambda_function" "authorizer" {
   filename         = "authorizer.zip"
   function_name    = "${var.project_name}-api-authorizer"
@@ -158,4 +159,4 @@ curl -H "Authorization: Bearer <your-jwt-token>" \
 
 ## Conclusion
 
-Lambda authorizers provide maximum flexibility for custom authentication logic, including API key validation, OAuth token introspection, or multi-tenant isolation checks. Cognito authorizers are simpler when your user base is already in Cognito. Both support result caching (up to 3600 seconds) to reduce Lambda invocations and latency—use a cache TTL that balances security (token revocation visibility) with performance.
+Lambda authorizers provide maximum flexibility for custom authentication logic, including API key validation, OAuth token introspection, or multi-tenant isolation checks. Cognito authorizers are simpler when your user base is already in Cognito. Both support result caching (up to 3600 seconds) to reduce Lambda invocations and latency-use a cache TTL that balances security (token revocation visibility) with performance.

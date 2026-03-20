@@ -22,6 +22,7 @@ Helm is one of the most popular ways to install Longhorn on Kubernetes. Helm cha
 
 ```bash
 # Check your Helm version
+
 helm version
 # Expected output: version.BuildInfo{Version:"v3.x.x", ...}
 ```

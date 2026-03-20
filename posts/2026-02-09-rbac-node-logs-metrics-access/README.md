@@ -32,6 +32,7 @@ Build a role that allows reading node information and accessing logs without mod
 
 ```yaml
 # node-observer-clusterrole.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

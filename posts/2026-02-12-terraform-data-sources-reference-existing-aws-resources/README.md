@@ -18,6 +18,7 @@ A data source is a read-only query that fetches information about existing infra
 
 ```hcl
 # This CREATES a VPC (resource)
+
 resource "aws_vpc" "new" {
   cidr_block = "10.0.0.0/16"
 }

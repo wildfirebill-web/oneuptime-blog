@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Install the required collection
+
 ansible-galaxy collection install amazon.aws
 ```
 

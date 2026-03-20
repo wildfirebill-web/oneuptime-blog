@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, FinOps, Cost Optimization, Cloud, Kubernetes, Chargeback
 
-Description: Implement FinOps practices with Rancher including cost allocation, chargeback/showback reporting, rightsizing automation, budget enforcement, and building a culture of cost awareness across engineering teams.
+Description: Implement FinOps practices with Rancher including cost allocation, chargeback/showback reporting, rightsizing automation, budget enforcement, and building a culture of cost awareness across...
 
 ## Introduction
 
@@ -24,6 +24,7 @@ Consistent labels are the foundation of cost allocation:
 
 ```yaml
 # Labeling standard - enforce via admission webhook
+
 # Every deployment MUST have these labels:
 
 metadata:
@@ -244,4 +245,4 @@ panels:
 
 ## Conclusion
 
-FinOps with Rancher transforms Kubernetes cost management from invisible to accountable. The key steps are consistent labeling for allocation, OpenCost for measurement, chargeback reports for team accountability, and ResourceQuotas for budget enforcement. The biggest cultural shift is making teams see their own costs—once teams see that a forgotten development deployment costs $500/month, they clean it up. Monthly FinOps review meetings with cost data create the organizational feedback loop that drives continuous optimization.
+FinOps with Rancher transforms Kubernetes cost management from invisible to accountable. The key steps are consistent labeling for allocation, OpenCost for measurement, chargeback reports for team accountability, and ResourceQuotas for budget enforcement. The biggest cultural shift is making teams see their own costs-once teams see that a forgotten development deployment costs $500/month, they clean it up. Monthly FinOps review meetings with cost data create the organizational feedback loop that drives continuous optimization.

@@ -39,6 +39,7 @@ terraform output vpc_id
 
 terraform output instance_public_ip
 # "54.123.45.67"
+
 ```
 
 Note that string values are wrapped in quotes. To get the raw value without quotes, use the `-raw` flag.

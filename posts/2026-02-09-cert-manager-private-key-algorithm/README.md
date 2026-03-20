@@ -28,6 +28,7 @@ RSA is the default and most compatible option:
 
 ```yaml
 # rsa-certificate.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

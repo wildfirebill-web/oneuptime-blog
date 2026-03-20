@@ -22,6 +22,7 @@ Start with a simple matrix that deploys to multiple clusters:
 
 ```yaml
 # .github/workflows/deploy-multi-cluster.yml
+
 name: Multi-Cluster Deployment
 
 on:

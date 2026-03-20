@@ -312,6 +312,7 @@ The Git file generator pattern enables a self-service workflow where developers 
 
 ```text
 # Developer creates: apps/my-new-service/config.json
+
 {
   "app_name": "my-new-service",
   "namespace": "my-new-service",

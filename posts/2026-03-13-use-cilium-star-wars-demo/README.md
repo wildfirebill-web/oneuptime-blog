@@ -27,6 +27,7 @@ This tutorial is intentionally hands-on. Rather than describing what the demo do
 
 ```bash
 # Deploy the Star Wars application
+
 kubectl create -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/http-sw-app.yaml
 
 # Wait for pods to be ready

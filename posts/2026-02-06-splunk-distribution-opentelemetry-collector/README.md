@@ -43,6 +43,7 @@ Splunk provides a one-liner installer that handles everything. It sets up the co
 
 ```bash
 # Download and run the Splunk OTel Collector installer
+
 # This configures the collector, sets up systemd services, and starts collection
 curl -sSL https://dl.signalfx.com/splunk-otel-collector.sh > /tmp/splunk-otel-collector.sh
 sudo sh /tmp/splunk-otel-collector.sh \

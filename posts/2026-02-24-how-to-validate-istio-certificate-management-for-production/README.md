@@ -18,6 +18,7 @@ First, figure out what CA Istio is using. By default, Istio uses a self-signed C
 
 ```bash
 # Check if a custom CA is installed
+
 kubectl get secret istio-ca-secret -n istio-system -o jsonpath='{.data.ca-cert\.pem}' | base64 -d | openssl x509 -text -noout
 ```
 

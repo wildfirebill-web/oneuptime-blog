@@ -28,6 +28,7 @@ Velero enables metrics by default, but you need to configure Prometheus to scrap
 
 ```bash
 # Port-forward to Velero metrics endpoint
+
 kubectl port-forward -n velero deployment/velero 8085:8085
 
 # Check metrics in another terminal

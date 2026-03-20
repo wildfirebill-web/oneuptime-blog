@@ -30,6 +30,7 @@ Provision a lab cluster that mirrors your production networking topology. Use th
 
 ```bash
 # Create an install-config.yaml matching production network settings
+
 cat > install-config.yaml << 'EOF'
 apiVersion: v1
 metadata:

@@ -8,11 +8,11 @@ Description: Understand IPv6 extension headers, their purpose, how they are chai
 
 ## Introduction
 
-IPv6 extension headers are optional headers placed between the IPv6 base header and the upper-layer protocol header. They provide a flexible mechanism for adding features (routing, fragmentation, security, mobility) without modifying the base header. Extension headers are chained using the Next Header field — each header points to the next one in the chain.
+IPv6 extension headers are optional headers placed between the IPv6 base header and the upper-layer protocol header. They provide a flexible mechanism for adding features (routing, fragmentation, security, mobility) without modifying the base header. Extension headers are chained using the Next Header field - each header points to the next one in the chain.
 
 ## Extension Header Chain Structure
 
-```
+```text
 IPv6 Base Header (40 bytes)
   Next Header = 0 → Hop-by-Hop Options Header
                 ↓
@@ -37,7 +37,7 @@ IPv6 Base Header (40 bytes)
 | 44 | Fragment Header | Destination only |
 | 50 | ESP (IPsec) | Destination only |
 | 51 | AH (IPsec Auth) | Destination only |
-| 59 | No Next Header | — |
+| 59 | No Next Header | - |
 | 60 | Destination Options | Destination only |
 | 135 | Mobility Header | Destination only |
 | 139 | HIP (Host Identity) | Destination only |
@@ -47,7 +47,7 @@ IPv6 Base Header (40 bytes)
 
 Most extension headers (except Fragment) share a common format:
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -67,6 +67,7 @@ Hdr Ext Len:  Length of this header in 8-byte units, NOT including the first 8 b
 import struct
 
 # Extension header type codes
+
 EXT_HEADERS = {
     0:   ("Hop-by-Hop Options", "variable"),
     43:  ("Routing Header", "variable"),
@@ -125,7 +126,7 @@ def parse_extension_headers(packet: bytes, start_offset: int = 40) -> list:
 
 The most critical distinction:
 
-```
+```text
 Hop-by-Hop Options (Next Header = 0):
   ✗ MUST be processed by EVERY router along the path
   ✗ MUST be the FIRST extension header if present
@@ -177,4 +178,4 @@ sudo ip6tables -A INPUT -m frag --fraglast -j ACCEPT  # Last fragment
 
 ## Conclusion
 
-IPv6 extension headers provide a flexible mechanism for optional features that would otherwise require a larger, more complex base header. The key insight is that only Hop-by-Hop Options require per-hop processing — all other extension headers are processed only at the destination. This means transit routers are not burdened by extension header processing in the common case. However, extension headers do present security challenges, and many network operators filter them at boundaries.
+IPv6 extension headers provide a flexible mechanism for optional features that would otherwise require a larger, more complex base header. The key insight is that only Hop-by-Hop Options require per-hop processing - all other extension headers are processed only at the destination. This means transit routers are not burdened by extension header processing in the common case. However, extension headers do present security challenges, and many network operators filter them at boundaries.

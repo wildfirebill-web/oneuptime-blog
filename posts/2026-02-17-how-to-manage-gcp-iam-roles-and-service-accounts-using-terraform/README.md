@@ -39,6 +39,7 @@ This adds a single member to a role without affecting other members of that role
 
 ```hcl
 # SAFE - adds a member without affecting others
+
 resource "google_project_iam_member" "viewer" {
   project = var.project_id
   role    = "roles/viewer"
@@ -226,7 +227,7 @@ resource "google_service_account_iam_member" "workload_identity_binding" {
 }
 ```
 
-## Resource-Level IAM
+Resource-Level IAM
 
 Some resources need their own IAM policies separate from project-level IAM:
 

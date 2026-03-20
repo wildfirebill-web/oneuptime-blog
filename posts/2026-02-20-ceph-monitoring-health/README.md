@@ -31,6 +31,7 @@ Ceph has a comprehensive built-in health check system. Start with the basics bef
 
 ```bash
 # Overall cluster health summary
+
 # HEALTH_OK means everything is fine
 # HEALTH_WARN means something needs attention
 # HEALTH_ERR means data is at risk

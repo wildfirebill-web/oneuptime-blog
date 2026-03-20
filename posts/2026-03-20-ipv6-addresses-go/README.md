@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Networking, net Package, Socket Programming, Development
+Tags: Go, IPv6, Networking, Net package, Socket Programming, Development
 
 Description: Handle, parse, validate, and use IPv6 addresses in Go applications using the net package for both server-side listeners and client connections.
 

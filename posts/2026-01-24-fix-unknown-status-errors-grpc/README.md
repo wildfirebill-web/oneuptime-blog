@@ -757,6 +757,7 @@ func createSecureClient(target string) (*grpc.ClientConn, error) {
 
 ```yaml
 # nginx.conf
+
 # Problem: NGINX not configured for gRPC
 
 # Incorrect configuration

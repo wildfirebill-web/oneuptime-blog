@@ -321,6 +321,7 @@ When policies don't work as expected, use the IAM Policy Simulator to test them.
 
 ```bash
 # Simulate a policy evaluation
+
 aws iam simulate-principal-policy \
   --policy-source-arn arn:aws:iam::123456789012:user/testuser \
   --action-names s3:GetObject \

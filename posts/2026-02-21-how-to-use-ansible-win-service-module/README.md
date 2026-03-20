@@ -16,6 +16,7 @@ The most common operations are starting and stopping services.
 
 ```yaml
 # start-stop-services.yml - Basic service management
+
 ---
 - name: Manage Windows services
   hosts: windows_servers

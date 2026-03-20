@@ -100,6 +100,7 @@ Before you begin, ensure you have:
 
 ```bash
 # macOS (using Homebrew)
+
 brew tap heroku/brew && brew install heroku
 
 # Ubuntu/Debian

@@ -12,6 +12,7 @@ Validating IPv6 in a Kubernetes deployment requires testing at multiple layers: 
 
 ```bash
 # Deploy a test workload
+
 kubectl create deployment ipv6-test --image=nginx:stable --replicas=2
 
 # Wait for pods to be ready

@@ -20,6 +20,7 @@ Podman tracks events for containers, images, pods, volumes, and the system itsel
 
 ```bash
 # View all recent events
+
 podman events
 
 # This command will stream events in real-time

@@ -51,6 +51,7 @@ When someone submits a PR that changes an Istio resource, require a documentatio
 # ci-check-docs.sh
 
 # Get changed Istio configuration files
+
 CHANGED_CONFIG=$(git diff --name-only origin/main | grep -E '\.(yaml|yml)$' | grep istio/)
 
 if [ -n "$CHANGED_CONFIG" ]; then

@@ -47,6 +47,7 @@ Test it:
 
 ```bash
 # These should all hit the same pod
+
 for i in $(seq 1 10); do
   curl -H "x-user-id: user-123" http://backend-service:8080/api/data
 done

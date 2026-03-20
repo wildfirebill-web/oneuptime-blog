@@ -33,6 +33,7 @@ Create a Terraform Cloud account at app.terraform.io and set up your organizatio
 
 ```bash
 # Install the Terraform CLI (if not already installed)
+
 brew install terraform
 
 # Login to Terraform Cloud

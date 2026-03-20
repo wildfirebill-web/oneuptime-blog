@@ -115,6 +115,7 @@ Steps:
 ```bash
 #!/bin/bash
 # collect-fips-audit-evidence.sh
+
 AUDIT_DIR="fips-audit-$(date +%Y%m%d)"
 mkdir -p "${AUDIT_DIR}"
 

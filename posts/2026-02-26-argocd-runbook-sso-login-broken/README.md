@@ -32,6 +32,7 @@ ArgoCD supports two SSO methods: built-in Dex and direct OIDC. Check which one i
 
 ```bash
 # Check ArgoCD configuration
+
 kubectl get configmap argocd-cm -n argocd -o yaml | grep -A 20 "dex.config\|oidc.config"
 
 # If dex.config is present: using Dex

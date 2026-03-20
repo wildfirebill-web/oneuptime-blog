@@ -30,6 +30,7 @@ Sometimes you want to enter the emergency shell on purpose to debug boot issues:
 
 ```bash
 # Add rd.break to the kernel command line in GRUB
+
 # At the GRUB menu, press 'e' to edit, find the linux line, and add:
 rd.break
 

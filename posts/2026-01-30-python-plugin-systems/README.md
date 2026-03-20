@@ -44,6 +44,7 @@ The most straightforward approach uses abstract base classes to define a plugin 
 
 ```python
 # plugin_base.py
+
 # Define the interface all plugins must implement
 
 from abc import ABC, abstractmethod

@@ -22,6 +22,7 @@ S3 Intelligent-Tiering automatically moves data between access tiers based on us
 
 ```hcl
 # S3 bucket with intelligent tiering for cost optimization
+
 resource "aws_s3_bucket" "optimized_storage" {
   bucket = "company-optimized-storage-${var.environment}"
 }

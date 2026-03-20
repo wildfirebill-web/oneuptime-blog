@@ -24,6 +24,7 @@ Start by configuring your repository with branch protection and audit logging:
 
 ```bash
 # Create a Cloud Source Repository
+
 gcloud source repos create my-application
 
 # Clone and configure it

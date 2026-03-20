@@ -16,6 +16,7 @@ Ubuntu cloud images are available in multiple formats from cloud-images.ubuntu.c
 
 ```bash
 # Create a working directory
+
 mkdir ~/image-work && cd ~/image-work
 
 # Download the Ubuntu 22.04 LTS cloud image (QCOW2 format)

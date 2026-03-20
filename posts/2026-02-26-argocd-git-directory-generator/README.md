@@ -366,6 +366,7 @@ If a directory is not being picked up:
 
 ```bash
 # Check the ApplicationSet status
+
 kubectl get applicationset microservices -n argocd -o json | jq '.status'
 
 # Check controller logs for directory discovery

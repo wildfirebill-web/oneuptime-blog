@@ -66,6 +66,7 @@ Create a route filter resource:
 
 ```bash
 # Create a route filter
+
 az network route-filter create \
   --name myRouteFilter \
   --resource-group myResourceGroup \

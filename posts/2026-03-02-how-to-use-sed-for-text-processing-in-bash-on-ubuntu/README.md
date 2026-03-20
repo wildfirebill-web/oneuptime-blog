@@ -31,6 +31,7 @@ The `s` command substitutes text:
 
 ```bash
 # Basic substitution: s/find/replace/
+
 # Replace the first occurrence on each line
 sed 's/foo/bar/' file.txt
 

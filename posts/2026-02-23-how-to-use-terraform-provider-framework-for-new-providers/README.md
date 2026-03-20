@@ -18,6 +18,7 @@ In this guide, we will walk through building a complete Terraform provider from 
 
 ```bash
 # Create the project directory
+
 mkdir terraform-provider-example
 cd terraform-provider-example
 

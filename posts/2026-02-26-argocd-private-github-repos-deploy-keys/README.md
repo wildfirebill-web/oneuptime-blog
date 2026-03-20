@@ -29,6 +29,7 @@ Generate a dedicated SSH key pair for each repository. Never reuse keys across r
 
 ```bash
 # Generate an Ed25519 key pair (recommended)
+
 ssh-keygen -t ed25519 -C "argocd-deploy-key-my-repo" -f /tmp/argocd-deploy-key -N ""
 
 # This creates two files:

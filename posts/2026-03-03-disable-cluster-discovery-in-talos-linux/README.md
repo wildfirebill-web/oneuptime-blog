@@ -28,6 +28,7 @@ The service registry is the component that communicates with the external discov
 
 ```yaml
 # disable-service-registry.yaml
+
 cluster:
   discovery:
     enabled: true

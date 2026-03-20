@@ -20,6 +20,7 @@ Learn how to manage OpenTofu configurations across multiple AWS accounts or Azur
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

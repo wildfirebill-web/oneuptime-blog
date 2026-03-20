@@ -16,6 +16,7 @@ The core idea is simple: create a service that runs a setup task and exits, then
 
 ```yaml
 # docker-compose.yml - basic init container pattern
+
 version: "3.8"
 
 services:

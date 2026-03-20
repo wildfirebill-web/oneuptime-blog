@@ -16,6 +16,7 @@ By default, pods use the cluster DNS (CoreDNS) configured in `/etc/resolv.conf`:
 
 ```bash
 # Inside a pod
+
 cat /etc/resolv.conf
 
 # Output:

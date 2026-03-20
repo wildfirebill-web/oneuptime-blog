@@ -50,6 +50,7 @@ Start by creating namespaces for each tenant with appropriate labels.
 
 ```yaml
 # tenant-namespaces.yaml
+
 # Namespace definitions for each tenant with identifying labels
 apiVersion: v1
 kind: Namespace

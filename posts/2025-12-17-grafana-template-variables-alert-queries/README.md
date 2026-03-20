@@ -47,6 +47,7 @@ The most common solution is replacing variables with explicit label matchers or 
 
 ```promql
 # This query uses template variables - won't work in alerts
+
 rate(http_requests_total{instance="$instance", namespace="$namespace"}[5m])
 ```
 

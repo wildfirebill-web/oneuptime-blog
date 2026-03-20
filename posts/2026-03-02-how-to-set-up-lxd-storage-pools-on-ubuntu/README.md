@@ -30,6 +30,7 @@ For development where you don't have a dedicated disk:
 
 ```bash
 # Create a ZFS pool using a loop file
+
 lxc storage create default zfs size=50GiB
 
 # LXD creates a file at /var/snap/multipass/... and sets up ZFS automatically

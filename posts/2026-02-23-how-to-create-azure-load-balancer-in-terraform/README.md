@@ -16,6 +16,7 @@ This guide walks through creating both public and internal load balancers in Ter
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

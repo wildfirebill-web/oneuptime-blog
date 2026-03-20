@@ -17,7 +17,7 @@ Docker Compose supports loading environment variables from a `.env` file automat
 
 ## How .env Files Work in Docker Compose
 
-```
+```bash
 .env file (auto-loaded by Docker Compose):
   DB_PASSWORD=secret
   IMAGE_TAG=v1.2.3
@@ -35,7 +35,8 @@ Result: Docker Compose substitutes variables before processing
 Structure your `.env` file with all stack variables:
 
 ```bash
-# .env — loaded automatically by Docker Compose
+# .env - loaded automatically by Docker Compose
+
 # This file should NOT be committed to Git if it contains secrets
 
 # Application settings
@@ -67,7 +68,7 @@ SMTP_PASSWORD=change-this-smtp-password
 Always create a `.env.example` file for Git:
 
 ```bash
-# .env.example — safe to commit, shows required variables
+# .env.example - safe to commit, shows required variables
 APP_NAME=myapp
 ENVIRONMENT=production
 IMAGE_TAG=latest
@@ -87,7 +88,7 @@ SMTP_PASSWORD=         # Set in deployment environment
 For Git-based stacks in Portainer:
 
 **Option A: Commit a non-secret .env file to Git** (safe for non-sensitive configs):
-```
+```text
 repository/
 ├── docker-compose.yml
 ├── .env                  # Contains non-secret config, committed to Git
@@ -97,10 +98,10 @@ repository/
 Then in Portainer, set only the sensitive variables via the UI (they override `.env` file values).
 
 **Option B: Do not commit .env, set everything in Portainer**:
-```
+```text
 repository/
 ├── docker-compose.yml
-└── .env.example          # Template only — not the actual .env
+└── .env.example          # Template only - not the actual .env
 ```
 
 Set all variables in Portainer's **Environment variables** section.
@@ -135,7 +136,7 @@ To use an existing `.env` file with any stack type:
 4. Copy the contents of your `.env` file and paste them in.
 5. Remove or blank out any comment lines (lines starting with `#`).
 6. Click **Simple mode** to verify parsing.
-7. Remove lines with empty values for secrets — add those as separate entries.
+7. Remove lines with empty values for secrets - add those as separate entries.
 
 ## Step 5: Multiple Environment Files
 
@@ -168,7 +169,7 @@ When creating stacks in Portainer:
 # Load variables and check what Compose generates:
 docker compose --env-file .env.production config
 
-# This shows the fully-substituted Compose file — confirms all variables resolve
+# This shows the fully-substituted Compose file - confirms all variables resolve
 
 # Check for missing variables (undefined with no default):
 docker compose config 2>&1 | grep "variable is not set"

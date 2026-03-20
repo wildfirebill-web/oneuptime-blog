@@ -34,6 +34,7 @@ Deploy Strimzi using the official Helm chart.
 
 ```bash
 # Add the Strimzi Helm repository
+
 helm repo add strimzi https://strimzi.io/charts/
 
 # Update the repository cache

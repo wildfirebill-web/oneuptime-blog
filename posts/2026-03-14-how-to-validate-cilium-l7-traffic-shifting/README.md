@@ -44,6 +44,7 @@ echo "v2: $V2_COUNT ($((V2_COUNT * 100 / TOTAL))%)"
 
 ```bash
 # Check both backends are responding correctly
+
 kubectl exec deploy/client -- curl -s http://backend-v1/ | head -5
 kubectl exec deploy/client -- curl -s http://backend-v2/ | head -5
 

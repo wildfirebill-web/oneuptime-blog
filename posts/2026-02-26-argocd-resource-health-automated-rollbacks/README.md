@@ -202,6 +202,7 @@ Use ArgoCD notifications to trigger a rollback when health degrades. Configure a
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

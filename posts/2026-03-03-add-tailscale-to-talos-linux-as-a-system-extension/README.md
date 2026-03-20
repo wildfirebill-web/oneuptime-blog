@@ -30,6 +30,7 @@ The Tailscale extension is maintained by Sidero Labs and is available in the off
 
 ```yaml
 # worker.yaml or controlplane.yaml
+
 machine:
   install:
     extensions:

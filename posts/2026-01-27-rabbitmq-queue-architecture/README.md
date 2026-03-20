@@ -30,6 +30,7 @@ Routes messages to queues where the binding key exactly matches the routing key.
 import pika
 
 # Establish connection
+
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 

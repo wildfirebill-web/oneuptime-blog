@@ -45,6 +45,7 @@ from opentelemetry.sdk.trace.export import (
 )
 
 # Create span limits with custom max events and links
+
 # Default for both is 128; here we reduce to 64 for tighter control
 span_limits = SpanLimits(
     max_events=64,

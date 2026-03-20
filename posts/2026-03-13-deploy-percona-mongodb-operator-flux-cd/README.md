@@ -25,6 +25,7 @@ Managing MongoDB clusters through Flux CD ensures that topology, backup configur
 
 ```yaml
 # infrastructure/sources/percona-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

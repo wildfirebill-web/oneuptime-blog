@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MTU, Packet Too Large, PMTUD, ICMP, Troubleshooting
 
-Description: Learn how to diagnose and fix MTU-related connectivity issues where large packets are silently dropped, causing partial connectivity — small packets work but large transfers fail.
+Description: Learn how to diagnose and fix MTU-related connectivity issues where large packets are silently dropped, causing partial connectivity - small packets work but large transfers fail.
 
 ## The MTU Problem Pattern
 
@@ -20,6 +20,7 @@ This happens when ICMP "Packet Too Big" (type 3 code 4) messages are blocked, br
 
 ```bash
 # Test with increasing packet sizes to find the MTU limit
+
 # -M do = Don't Fragment, -s = payload size
 
 # Linux
@@ -56,7 +57,7 @@ echo "Path MTU to $TARGET: $((LOW + 28)) bytes (payload: $LOW)"
 ```
 
 ```bash
-# tracepath — automatically discovers PMTU at each hop
+# tracepath - automatically discovers PMTU at each hop
 tracepath 8.8.8.8
 # Look for: pmtu XXXX entries showing where MTU decreases
 ```
@@ -80,7 +81,7 @@ networksetup -getMTU "Ethernet"
 ## Step 4: Fix by Lowering MTU on the Interface
 
 ```bash
-# Linux — lower MTU to match network requirements
+# Linux - lower MTU to match network requirements
 sudo ip link set eth0 mtu 1450    # Common for PPPoE networks
 sudo ip link set tun0 mtu 1400    # VPN tunnels typically need lower MTU
 
@@ -112,7 +113,7 @@ netsh interface ipv4 show subinterfaces
 When ICMP "Fragmentation Needed" packets are blocked, use TCP MSS clamping as a workaround:
 
 ```bash
-# Linux — clamp TCP MSS at the WAN interface
+# Linux - clamp TCP MSS at the WAN interface
 # MSS = MTU - 40 (20 IP header + 20 TCP header)
 # For MTU 1450: MSS = 1410
 
@@ -130,7 +131,7 @@ sudo iptables-save > /etc/iptables/rules.v4
 ## Step 6: Verify ICMP Is Not Blocked
 
 ```bash
-# ICMP type 3 code 4 = "Fragmentation Needed" — must not be blocked
+# ICMP type 3 code 4 = "Fragmentation Needed" - must not be blocked
 # Check iptables
 sudo iptables -L -n | grep -i icmp
 
@@ -138,7 +139,7 @@ sudo iptables -L -n | grep -i icmp
 sudo iptables -I INPUT -p icmp --icmp-type fragmentation-needed -j ACCEPT
 sudo iptables -I FORWARD -p icmp --icmp-type fragmentation-needed -j ACCEPT
 
-# Windows Firewall — ensure ICMP is allowed through
+# Windows Firewall - ensure ICMP is allowed through
 netsh advfirewall firewall show rule name="Core Networking - Destination Unreachable"
 ```
 

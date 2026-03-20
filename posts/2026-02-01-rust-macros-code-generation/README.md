@@ -190,6 +190,7 @@ First, create a separate crate for your macros:
 
 ```toml
 # Cargo.toml for your proc-macro crate
+
 [package]
 name = "my_macros"
 version = "0.1.0"

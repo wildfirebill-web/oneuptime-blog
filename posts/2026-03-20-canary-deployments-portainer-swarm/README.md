@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Swarm, Canary Deployment, CI/CD, Zero Downtime, DevOps
+Tags: Portainer, Docker Swarm, Canary Deployments, CI/CD, Zero Downtime, DevOps
 
 Description: Implement canary deployments on Docker Swarm with Portainer to gradually roll out new versions to a percentage of users.
 
 ## Introduction
 
-Canary deployment gradually shifts traffic from the current version to a new version — starting with a small percentage (5-10%) and increasing as confidence grows. If issues arise, you roll back only the canary, limiting blast radius. Docker Swarm's replica system makes this straightforward. This guide shows you how using Portainer.
+Canary deployment gradually shifts traffic from the current version to a new version - starting with a small percentage (5-10%) and increasing as confidence grows. If issues arise, you roll back only the canary, limiting blast radius. Docker Swarm's replica system makes this straightforward. This guide shows you how using Portainer.
 
 ## How Canary Works with Docker Swarm
 
@@ -21,6 +21,7 @@ With 10 service replicas:
 
 ```bash
 # Initialize Swarm if not done
+
 docker swarm init
 
 # Create overlay network
@@ -266,4 +267,4 @@ echo "PASS: Canary metrics are healthy. Proceeding."
 
 ## Conclusion
 
-Canary deployments on Docker Swarm with Portainer give you granular control over traffic percentage by adjusting replica ratios. The automated analysis script checks error rates and latency before promoting — stopping bad deployments before they affect all users. Portainer's Services view makes it easy to see the current state, scale services, and roll back if needed. This pattern is especially valuable for APIs where even small changes can have unexpected performance impacts.
+Canary deployments on Docker Swarm with Portainer give you granular control over traffic percentage by adjusting replica ratios. The automated analysis script checks error rates and latency before promoting - stopping bad deployments before they affect all users. Portainer's Services view makes it easy to see the current state, scale services, and roll back if needed. This pattern is especially valuable for APIs where even small changes can have unexpected performance impacts.

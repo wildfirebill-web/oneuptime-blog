@@ -27,6 +27,7 @@ Enable API key requirement on a method:
 
 ```bash
 # Update a method to require an API key
+
 aws apigateway update-method \
   --rest-api-id abc123api \
   --resource-id res456 \

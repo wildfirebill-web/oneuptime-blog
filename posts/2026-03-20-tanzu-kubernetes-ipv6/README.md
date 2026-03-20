@@ -24,6 +24,7 @@ CLUSTER_NAME: mgmt-cluster
 CLUSTER_PLAN: prod
 
 # Network configuration
+
 SERVICE_CIDR: "100.64.0.0/13,fd00:svc::/108"
 CLUSTER_CIDR: "100.96.0.0/11,fd00:pod::/48"
 

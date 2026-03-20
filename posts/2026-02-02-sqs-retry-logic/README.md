@@ -66,6 +66,7 @@ The following CloudFormation template creates an SQS queue with a Dead Letter Qu
 
 ```yaml
 # CloudFormation template for SQS queue with DLQ
+
 # The redrive policy configures automatic routing of failed messages
 # maxReceiveCount determines how many times a message can be received before moving to DLQ
 

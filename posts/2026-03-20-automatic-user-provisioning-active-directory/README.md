@@ -8,7 +8,7 @@ Description: Configure Portainer to automatically create user accounts on first 
 
 ---
 
-With auto-provisioning enabled, Portainer creates a user account the first time someone logs in via Active Directory — no pre-registration required. Users inherit team memberships from their AD group assignments.
+With auto-provisioning enabled, Portainer creates a user account the first time someone logs in via Active Directory - no pre-registration required. Users inherit team memberships from their AD group assignments.
 
 ## Enable Auto-Create Users
 
@@ -22,6 +22,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Enable automatic user provisioning
+
 curl -X PUT \
   https://localhost:9443/api/settings \
   -H "Authorization: Bearer $TOKEN" \

@@ -28,6 +28,7 @@ Verify your KubeEdge setup:
 
 ```bash
 # Check cloud core status
+
 kubectl get nodes
 
 # Verify edge nodes are ready

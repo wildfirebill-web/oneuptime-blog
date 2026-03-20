@@ -1,4 +1,4 @@
-# How to Configure Content-Security-Policy Headers in Portainer
+# How to Configure Content-Security-Policy Headers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -97,6 +97,7 @@ server {
 }
 
 # HTTP to HTTPS redirect
+
 server {
     listen 80;
     server_name portainer.example.com;
@@ -129,7 +130,7 @@ add_header Content-Security-Policy "
 ## Step 3: Configure Headers in Traefik
 
 ```yaml
-# traefik-dynamic.yml — Security headers middleware
+# traefik-dynamic.yml - Security headers middleware
 
 http:
   middlewares:

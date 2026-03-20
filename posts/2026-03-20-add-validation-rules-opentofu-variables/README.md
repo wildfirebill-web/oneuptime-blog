@@ -8,14 +8,14 @@ Description: Learn how to add validation blocks to OpenTofu variables to catch i
 
 ---
 
-Variable validation lets you define business rules for your variable values beyond just type checking. If a user passes an invalid value, OpenTofu shows a custom error message at plan time — before any infrastructure changes are attempted. This guide shows how to write effective validation rules.
+Variable validation lets you define business rules for your variable values beyond just type checking. If a user passes an invalid value, OpenTofu shows a custom error message at plan time - before any infrastructure changes are attempted. This guide shows how to write effective validation rules.
 
 ---
 
 ## Basic Validation Block
 
 ```hcl
-# variables.tf — variables with validation rules
+# variables.tf - variables with validation rules
 
 variable "environment" {
   type        = string
@@ -31,6 +31,7 @@ variable "environment" {
 
 ```bash
 # Testing with an invalid value:
+
 tofu plan -var="environment=test"
 
 # Error output:
@@ -162,4 +163,4 @@ variable "database_url" {
 
 ## Summary
 
-Variable validation blocks enforce business rules on input values with clear, user-friendly error messages. Use `contains()` for allowed values, `regex()` with `can()` for format validation, range checks for numbers, and multiple validation blocks for multi-rule enforcement. Validation runs at `tofu plan` time — before any infrastructure changes are attempted.
+Variable validation blocks enforce business rules on input values with clear, user-friendly error messages. Use `contains()` for allowed values, `regex()` with `can()` for format validation, range checks for numbers, and multiple validation blocks for multi-rule enforcement. Validation runs at `tofu plan` time - before any infrastructure changes are attempted.

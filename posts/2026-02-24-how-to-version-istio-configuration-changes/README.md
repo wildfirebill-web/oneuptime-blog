@@ -37,6 +37,7 @@ Every change goes through a pull request, gets reviewed, and creates a commit wi
 ```bash
 git log --oneline --graph
 # a1b2c3d Update order-service timeout from 10s to 30s
+
 # d4e5f6g Add canary routing for payment-service
 # h7i8j9k Enable mTLS strict mode for production
 ```

@@ -20,6 +20,7 @@ Check for gaps in expected metrics:
 
 ```bash
 # Query Prometheus for time series that suddenly stopped reporting
+
 curl -s "http://prometheus:9090/api/v1/query?query=changes(up{job='kubernetes-pods'}[1h])" | \
   jq '.data.result[] | select(.value[1] | tonumber > 2)'
 ```

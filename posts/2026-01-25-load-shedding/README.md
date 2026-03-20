@@ -45,6 +45,7 @@ Without load shedding, an overloaded system enters a death spiral. Load shedding
 
 ```python
 # load_shedding.py
+
 import asyncio
 import time
 from typing import Callable, Any, Optional

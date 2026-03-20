@@ -106,6 +106,7 @@ GATEWAY_IP=$(kubectl get gateway my-gateway \
   -o jsonpath='{.status.addresses[0].value}')
 
 # Check headers sent to backend (using debug endpoint)
+
 curl -v http://${GATEWAY_IP}/headers 2>&1 | grep "X-"
 
 # Check response headers

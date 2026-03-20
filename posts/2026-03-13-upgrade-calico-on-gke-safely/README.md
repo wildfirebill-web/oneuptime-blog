@@ -30,6 +30,7 @@ Verify compatibility between target Calico version and current GKE Kubernetes ve
 
 ```bash
 # Check GKE cluster Kubernetes version
+
 gcloud container clusters describe <cluster-name> \
   --zone <zone> \
   --format="value(currentMasterVersion)"

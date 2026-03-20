@@ -47,6 +47,7 @@ This Collector config sends data to the hot tier and a parallel write to cheap l
 
 ```yaml
 # tiered-storage-collector.yaml
+
 receivers:
   otlp:
     protocols:

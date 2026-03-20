@@ -27,6 +27,7 @@ Ollama provides official Docker images that work out of the box.
 
 ```bash
 # Pull the official Ollama image
+
 docker pull ollama/ollama
 
 # Run Ollama container

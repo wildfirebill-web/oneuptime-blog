@@ -12,7 +12,7 @@ VXLAN adds significant overhead to each packet: outer IP header (20 bytes) + out
 
 ## VXLAN MTU Calculation
 
-```
+```text
 Physical MTU:        1500 bytes
 VXLAN overhead:       -50 bytes (20 IP + 8 UDP + 8 VXLAN + 14 inner Ethernet)
 VXLAN payload MTU:   1450 bytes
@@ -25,6 +25,7 @@ The commonly used value is 1450 bytes.
 
 ```bash
 # Set MTU on the VXLAN interface
+
 ip link set vxlan0 mtu 1450
 
 # Verify

@@ -26,6 +26,7 @@ These limits are enforced at the kernel level, not by the container process itse
 
 ```bash
 # Allow a container to use at most 2 CPUs worth of time
+
 lxc config set mycontainer limits.cpu 2
 
 # Verify

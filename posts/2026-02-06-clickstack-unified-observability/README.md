@@ -18,6 +18,7 @@ Deploy ClickStack using Docker Compose:
 
 ```yaml
 # docker-compose.yaml
+
 version: "3.8"
 services:
   clickhouse:

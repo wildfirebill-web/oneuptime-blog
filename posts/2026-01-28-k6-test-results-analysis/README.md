@@ -165,6 +165,7 @@ k6 run --out json=results.json script.js
 
 ```python
 # analyze_results.py
+
 import json
 import statistics
 from collections import defaultdict

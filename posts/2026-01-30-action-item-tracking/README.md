@@ -40,6 +40,7 @@ Not all action items are equal. Categorizing them helps teams prioritize and all
 
 ```python
 # Action item urgency classification
+
 # Use this to determine SLA for completion
 
 class ActionItemUrgency:

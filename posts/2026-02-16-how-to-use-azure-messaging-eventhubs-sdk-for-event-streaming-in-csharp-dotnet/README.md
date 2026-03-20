@@ -43,6 +43,7 @@ Create a new .NET solution with a producer and consumer project.
 
 ```bash
 # Create the solution
+
 dotnet new sln -n EventHubsDemo
 
 # Create the producer console app

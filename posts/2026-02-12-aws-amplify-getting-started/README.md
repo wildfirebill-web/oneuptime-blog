@@ -44,6 +44,7 @@ Install and configure:
 
 ```bash
 # Install the Amplify CLI globally
+
 npm install -g @aws-amplify/cli
 
 # Configure with your AWS credentials

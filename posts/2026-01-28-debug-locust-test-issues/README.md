@@ -54,6 +54,7 @@ Start with verbose logging to understand what Locust is doing:
 
 ```bash
 # Set log level via command line
+
 locust --loglevel=DEBUG --host=https://api.example.com
 
 # Or via environment variable

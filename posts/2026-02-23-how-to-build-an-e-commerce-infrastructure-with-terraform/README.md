@@ -32,6 +32,7 @@ ECS Fargate runs the microservices without managing servers.
 
 ```hcl
 # ECS cluster for e-commerce services
+
 resource "aws_ecs_cluster" "ecommerce" {
   name = "ecommerce-${var.environment}"
 

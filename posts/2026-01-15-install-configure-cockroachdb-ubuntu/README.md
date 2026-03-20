@@ -46,6 +46,7 @@ graph TB
 
 ```bash
 # Create directory
+
 sudo mkdir -p /opt/cockroach
 cd /opt/cockroach
 

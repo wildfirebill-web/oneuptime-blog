@@ -47,6 +47,7 @@ Optional query parameters:
 
 ```bash
 # Watch all application events
+
 curl -s -k -N \
   -H "Authorization: Bearer $ARGOCD_TOKEN" \
   "https://argocd.example.com/api/v1/stream/applications"

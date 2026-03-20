@@ -59,6 +59,7 @@ First, create a subnet group:
 
 ```bash
 # Create a subnet group for MemoryDB
+
 aws memorydb create-subnet-group \
   --subnet-group-name my-memorydb-subnets \
   --subnet-ids subnet-abc123 subnet-def456 subnet-ghi789 \

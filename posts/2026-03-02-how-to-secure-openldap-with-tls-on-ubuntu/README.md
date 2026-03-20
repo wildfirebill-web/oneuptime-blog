@@ -33,6 +33,7 @@ Use this for internal infrastructure where you control all clients.
 
 ```bash
 # Create a directory for certificates
+
 sudo mkdir -p /etc/ldap/ssl
 cd /etc/ldap/ssl
 

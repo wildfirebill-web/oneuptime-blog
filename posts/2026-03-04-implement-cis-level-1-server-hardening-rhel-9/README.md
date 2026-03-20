@@ -42,6 +42,7 @@ flowchart TD
 
 ```bash
 # Ensure /tmp has its own partition with restrictive options
+
 # Check if /tmp is a separate mount
 findmnt /tmp
 

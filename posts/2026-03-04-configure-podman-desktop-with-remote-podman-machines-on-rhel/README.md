@@ -16,6 +16,7 @@ On the remote RHEL server:
 
 ```bash
 # Install Podman
+
 sudo dnf install -y podman
 
 # Enable the Podman socket for the user (rootless)

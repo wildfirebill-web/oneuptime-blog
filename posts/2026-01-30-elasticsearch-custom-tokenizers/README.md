@@ -551,6 +551,7 @@ Before going live, test with actual data samples:
 
 ```bash
 # Extract sample data
+
 curl -s "localhost:9200/production_index/_search?size=100" | \
   jq -r '.hits.hits[]._source.text_field' > samples.txt
 

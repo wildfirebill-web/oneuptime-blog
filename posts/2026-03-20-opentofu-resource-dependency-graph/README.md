@@ -37,6 +37,7 @@ digraph {
 
 ```bash
 # Plan graph (default)
+
 tofu graph -type=plan
 
 # Apply graph
@@ -90,7 +91,7 @@ Different node shapes indicate resource types:
 ### Edge Direction
 
 Arrows point from dependent to dependency:
-```
+```text
 aws_instance.web → aws_subnet.public → aws_vpc.main
 ```
 
@@ -104,7 +105,7 @@ Nodes without an edge between them are created in parallel:
 resource "aws_s3_bucket" "logs" { ... }
 resource "aws_s3_bucket" "assets" { ... }
 resource "aws_s3_bucket" "backups" { ... }
-# All three have no dependency on each other — created in parallel
+# All three have no dependency on each other - created in parallel
 ```
 
 ## Filtering the Graph

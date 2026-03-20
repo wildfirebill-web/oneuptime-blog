@@ -32,6 +32,7 @@ This guide provides systematic troubleshooting steps for resolving cilium-bugtoo
 
 ```bash
 # Check if bash-completion is installed
+
 dpkg -l bash-completion 2>/dev/null || rpm -q bash-completion 2>/dev/null
 
 # Install if missing

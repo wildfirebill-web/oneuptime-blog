@@ -93,6 +93,7 @@ Deploy and verify:
 
 ```bash
 # Create StatefulSet
+
 kubectl apply -f statefulset.yaml
 
 # Watch pods come up in order

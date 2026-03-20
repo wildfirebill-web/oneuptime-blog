@@ -16,6 +16,7 @@ OpenMPI is in Ubuntu's default repositories. For production HPC use, you may wan
 
 ```bash
 # Install OpenMPI runtime and development libraries
+
 sudo apt update
 sudo apt install -y openmpi-bin openmpi-common libopenmpi-dev
 

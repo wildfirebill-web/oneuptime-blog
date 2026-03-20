@@ -32,6 +32,7 @@ Start with a simple script that handles the essentials.
 # backup_postgres.sh - Basic PostgreSQL backup script
 
 # Configuration
+
 BACKUP_DIR="/var/backups/postgresql"
 PGHOST="localhost"
 PGPORT="5432"

@@ -33,6 +33,7 @@ Generate a long-lived API token for your automation:
 
 ```bash
 # Login first
+
 argocd login argocd.example.com --grpc-web
 
 # Generate a token for the admin account

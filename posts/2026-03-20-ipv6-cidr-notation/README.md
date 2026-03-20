@@ -8,11 +8,11 @@ Description: Understand IPv6 CIDR (Classless Inter-Domain Routing) notation, how
 
 ## Introduction
 
-IPv6 uses CIDR (Classless Inter-Domain Routing) notation exclusively — there are no "classful" networks in IPv6. A prefix like `2001:db8:1:2::/64` consists of an IPv6 address followed by a slash and a number indicating how many bits constitute the network prefix. Understanding CIDR notation is the foundation of all IPv6 subnetting and routing.
+IPv6 uses CIDR (Classless Inter-Domain Routing) notation exclusively - there are no "classful" networks in IPv6. A prefix like `2001:db8:1:2::/64` consists of an IPv6 address followed by a slash and a number indicating how many bits constitute the network prefix. Understanding CIDR notation is the foundation of all IPv6 subnetting and routing.
 
 ## Anatomy of IPv6 CIDR Notation
 
-```
+```yaml
 2001:0db8:0001:0002:0000:0000:0000:0000/64
 |<------------ 64 bits --------------->|/64
         Network prefix (64 bits)
@@ -57,6 +57,7 @@ def explain_prefix(prefix_str: str):
     print(f"       (network part): {'^' * prefix_len}{' ' * (128-prefix_len-64)}...")
 
 # Examples
+
 for prefix in ["2001:db8::/32", "2001:db8:1::/48", "2001:db8:1:1::/64"]:
     explain_prefix(prefix)
     print()
@@ -66,7 +67,7 @@ for prefix in ["2001:db8::/32", "2001:db8:1::/48", "2001:db8:1:1::/64"]:
 
 The prefix length defines a bitmask. Only bits within the prefix are significant for routing:
 
-```
+```text
 Prefix: 2001:db8:1::/48
 Mask:   ffff:ffff:ffff:0000:0000:0000:0000:0000
 
@@ -111,7 +112,7 @@ for addr_str in test_addresses:
 
 ## Longest Prefix Match
 
-Routing in IPv6 uses longest-prefix-match — the most specific route wins:
+Routing in IPv6 uses longest-prefix-match - the most specific route wins:
 
 ```bash
 # Routing table example
@@ -149,4 +150,4 @@ print([str(n) for n in collapsed])
 
 ## Conclusion
 
-IPv6 CIDR notation is the universal language for describing network prefixes. The prefix length after the slash defines exactly which bits identify the network, enabling both routing decisions (longest-prefix-match) and address containment checks. Mastering CIDR notation — reading prefixes, understanding masks, and knowing which addresses fall within a given prefix — is the prerequisite skill for all IPv6 networking work.
+IPv6 CIDR notation is the universal language for describing network prefixes. The prefix length after the slash defines exactly which bits identify the network, enabling both routing decisions (longest-prefix-match) and address containment checks. Mastering CIDR notation - reading prefixes, understanding masks, and knowing which addresses fall within a given prefix - is the prerequisite skill for all IPv6 networking work.

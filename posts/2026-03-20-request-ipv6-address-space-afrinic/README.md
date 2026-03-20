@@ -37,7 +37,7 @@ Create an account at `https://my.afrinic.net`:
 
 Navigate to **Resources → Request IPv6 Address Space**:
 
-```
+```text
 Required documentation:
 - Description of network topology
 - Current number of customers or end-sites
@@ -56,8 +56,9 @@ Required documentation:
 
 After allocation, register your objects in the AFRINIC Whois database:
 
-```
+```text
 # inet6num object
+
 inet6num: 2001:db8::/32
 netname:  YOUR-NET-AF
 descr:    Your ISP Name - Africa

@@ -30,6 +30,7 @@ Kubernetes events provide immediate visibility into CSI driver operations:
 
 ```bash
 # Watch all CSI-related events in real-time
+
 kubectl get events --all-namespaces --watch | grep -i csi
 
 # Check events for specific PVC provisioning

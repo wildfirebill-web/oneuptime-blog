@@ -20,6 +20,7 @@ If you try to use a certificate from any other region, it simply won't appear in
 
 ```bash
 # Request the certificate in us-east-1 (required for CloudFront)
+
 aws acm request-certificate \
   --region us-east-1 \
   --domain-name "cdn.example.com" \

@@ -179,6 +179,7 @@ After changing the algorithm, verify the distribution:
 
 ```bash
 # Send 100 requests and check the distribution
+
 for i in $(seq 1 100); do
     curl -s http://your-haproxy/health
 done

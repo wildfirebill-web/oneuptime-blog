@@ -19,12 +19,13 @@ Deploy tokens are the preferred way to grant Portainer read access to your GitLa
 3. Create a new token with:
    - **Name**: `portainer-pull`
    - **Scopes**: Check `read_registry`
-4. Copy the **username** and **token** — you won't see the token again.
+4. Copy the **username** and **token** - you won't see the token again.
 
 ## Creating a Personal Access Token (Alternative)
 
 ```bash
 # In GitLab UI: User Settings > Access Tokens
+
 # Create a token with scope: read_registry
 # Token acts as password, your GitLab username as username
 ```
@@ -43,11 +44,11 @@ Deploy tokens are the preferred way to grant Portainer read access to your GitLa
 
 If you run GitLab on your own server, use your instance's registry URL:
 
-```
+```text
 registry.yourcompany.com
 ```
 
-The setup is identical — create a deploy token in your self-hosted GitLab and use it in Portainer.
+The setup is identical - create a deploy token in your self-hosted GitLab and use it in Portainer.
 
 ## Using GitLab Registry Images in a Stack
 

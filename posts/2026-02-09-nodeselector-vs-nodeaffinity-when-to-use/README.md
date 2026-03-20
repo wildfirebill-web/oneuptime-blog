@@ -73,6 +73,7 @@ Use nodeSelector for simple, straightforward scheduling requirements:
 
 ```yaml
 # Use case: Require SSD storage
+
 nodeSelector:
   disktype: ssd
 

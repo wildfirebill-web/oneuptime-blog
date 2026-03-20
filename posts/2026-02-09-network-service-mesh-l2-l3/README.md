@@ -44,6 +44,7 @@ Start by deploying NSM core components to your cluster.
 
 ```bash
 # Add the NSM Helm repository
+
 helm repo add nsm https://helm.nsm.dev/
 helm repo update
 

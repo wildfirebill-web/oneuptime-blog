@@ -98,6 +98,7 @@ The following command checks the overall health status of your Ceph cluster and 
 
 ```bash
 # Check Ceph cluster status
+
 ceph -s
 
 # Example output should show:

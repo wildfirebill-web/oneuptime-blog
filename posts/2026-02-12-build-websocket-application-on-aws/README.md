@@ -44,6 +44,7 @@ First, set up your CDK project and install the necessary packages.
 
 ```bash
 # Initialize a new CDK project
+
 mkdir websocket-app && cd websocket-app
 cdk init app --language typescript
 npm install @aws-cdk/aws-apigatewayv2 @aws-cdk/aws-lambda @aws-cdk/aws-dynamodb

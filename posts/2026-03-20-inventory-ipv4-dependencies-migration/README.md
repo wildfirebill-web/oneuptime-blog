@@ -14,9 +14,10 @@ IPv4-only dependencies are the most common source of migration failures. They in
 
 ```bash
 #!/bin/bash
-# scan_ipv4_code.sh — Find IPv4 addresses hardcoded in source code
+# scan_ipv4_code.sh - Find IPv4 addresses hardcoded in source code
 
 # IPv4 pattern: avoid matching version numbers (1.2.3) and similar
+
 IPV4_RE='(^|[^0-9./])((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])([^0-9./]|$)'
 
 echo "=== IPv4 Addresses in Source Code ==="
@@ -34,7 +35,7 @@ grep -rn -E "$IPV4_RE" \
 
 ```python
 #!/usr/bin/env python3
-# find_socket_binding.py — Find code that binds IPv4-only sockets
+# find_socket_binding.py - Find code that binds IPv4-only sockets
 
 import subprocess
 import os
@@ -85,7 +86,7 @@ for f in all_findings:
 
 ```bash
 #!/bin/bash
-# inventory_configs.sh — Find IPv4-only settings in config files
+# inventory_configs.sh - Find IPv4-only settings in config files
 
 echo "=== Configuration File Audit ==="
 
@@ -127,7 +128,7 @@ done
 
 ```python
 #!/usr/bin/env python3
-# check_third_party_ipv6.py — Check IPv6 support for external services
+# check_third_party_ipv6.py - Check IPv6 support for external services
 
 import socket
 import dns.resolver
@@ -171,7 +172,7 @@ for name, hostname in THIRD_PARTY_SERVICES:
 
 ## High Priority (blocking migration)
 1. **payment-service**: Hardcodes payment gateway IPv4 (no AAAA available)
-2. **user-auth**: Binds to `0.0.0.0:8080` — needs `:::8080`
+2. **user-auth**: Binds to `0.0.0.0:8080` - needs `:::8080`
 3. **legacy-api**: Uses `socket.AF_INET` throughout codebase
 
 ## Medium Priority
@@ -179,8 +180,8 @@ for name, hostname in THIRD_PARTY_SERVICES:
 2. 45 K8s services need `ipFamilyPolicy: PreferDualStack`
 
 ## External Dependencies Without IPv6
-1. vendor-x.com — contact vendor for IPv6 timeline
-2. analytics.internal — upgrade required
+1. vendor-x.com - contact vendor for IPv6 timeline
+2. analytics.internal - upgrade required
 ```
 
 ## Conclusion

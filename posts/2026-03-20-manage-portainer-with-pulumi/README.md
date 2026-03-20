@@ -21,6 +21,7 @@ Pulumi is a modern infrastructure as code platform that lets you use familiar pr
 
 ```bash
 # Create new Pulumi project
+
 mkdir portainer-pulumi && cd portainer-pulumi
 pulumi new typescript
 

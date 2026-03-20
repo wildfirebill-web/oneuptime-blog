@@ -1,4 +1,4 @@
-# How to Set Up IPv6 for Containers in Portainer
+# How to Set Up IPv6 for Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,7 +28,7 @@ Restart Docker after changing daemon config:
 sudo systemctl restart docker
 ```
 
-The `fixed-cidr-v6` range is a ULA (Unique Local Address) prefix — suitable for internal container networking. Use a public IPv6 prefix if your host has one.
+The `fixed-cidr-v6` range is a ULA (Unique Local Address) prefix - suitable for internal container networking. Use a public IPv6 prefix if your host has one.
 
 ## Step 2: Create an IPv6-Enabled Network
 
@@ -87,6 +87,7 @@ networks:
 
 ```bash
 # Check the container's IPv6 address
+
 docker inspect $(docker ps -qf name=api) | \
   jq '.[0].NetworkSettings.Networks[].GlobalIPv6Address'
 

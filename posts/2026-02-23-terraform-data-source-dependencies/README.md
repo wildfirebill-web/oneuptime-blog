@@ -18,6 +18,7 @@ Data sources follow the same rules, but with an important distinction: Terraform
 
 ```hcl
 # This data source has no dependencies on managed resources
+
 # Terraform reads it during the plan phase
 data "aws_ami" "ubuntu" {
   most_recent = true

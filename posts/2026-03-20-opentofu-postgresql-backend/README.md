@@ -1,8 +1,8 @@
-# How to Configure the PostgreSQL Backend in OpenTofu
+# How to Configure the PostgreSQL Backend in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to configure the PostgreSQL backend in OpenTofu to store state in a PostgreSQL database with built-in locking using advisory locks.
 
@@ -24,6 +24,7 @@ terraform {
 
 ```hcl
 # With SSL
+
 terraform {
   backend "pg" {
     conn_str = "postgres://user:password@postgresql.acme-corp.com:5432/terraform_state?sslmode=require"

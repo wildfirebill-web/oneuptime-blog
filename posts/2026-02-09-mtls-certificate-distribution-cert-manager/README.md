@@ -28,6 +28,7 @@ Start by creating an internal CA for issuing mTLS certificates:
 
 ```bash
 # Generate CA private key
+
 openssl genrsa -out mtls-ca.key 4096
 
 # Create self-signed CA certificate

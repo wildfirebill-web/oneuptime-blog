@@ -80,6 +80,7 @@ sequenceDiagram
 
 ```nginx
 # NGINX upstream configuration with cookie-based sticky sessions
+
 # This uses the sticky cookie directive (requires nginx-plus or sticky module)
 
 upstream backend_servers {

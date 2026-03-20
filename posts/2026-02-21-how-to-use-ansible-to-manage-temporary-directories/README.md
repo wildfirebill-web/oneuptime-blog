@@ -18,6 +18,7 @@ Here is the basic usage for creating a temporary directory:
 
 ```yaml
 # Create a temporary directory on the remote host
+
 - name: Create temp directory for build artifacts
   ansible.builtin.tempfile:
     state: directory

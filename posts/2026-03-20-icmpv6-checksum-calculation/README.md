@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMPv6, Checksum, IPv6 Pseudo-Header, RFC 4443, Networking
+Tags: ICMPv6, Checksums, IPv6 Pseudo-Header, RFC 4443, Networking
 
 Description: Understand how ICMPv6 checksums are calculated using the IPv6 pseudo-header, implement checksum calculation in Python, and verify checksums for debugging.
 
@@ -14,7 +14,7 @@ ICMPv6 checksums differ from ICMPv4 checksums in one important way: they are man
 
 The checksum calculation includes a pseudo-header that is not actually transmitted but is derived from the IPv6 header:
 
-```
+```text
 IPv6 Pseudo-Header for checksum calculation:
 
  0                   1                   2                   3
@@ -132,6 +132,7 @@ def verify_icmpv6_checksum(src_addr: str, dst_addr: str,
     return result == 0xFFFF
 
 # Test
+
 src = "2001:db8::1"
 dst = "2001:db8::2"
 echo_request = build_icmpv6_echo_request(src, dst, 12345, 1)
@@ -147,7 +148,7 @@ print(f"Checksum value: 0x{checksum:04X}")
 
 ## Checksum When Source Address Changes
 
-A subtle issue occurs when ICMPv6 messages are forwarded or NAT64 is applied — the checksum must be recalculated because the source address is part of the checksum input:
+A subtle issue occurs when ICMPv6 messages are forwarded or NAT64 is applied - the checksum must be recalculated because the source address is part of the checksum input:
 
 ```python
 def update_icmpv6_checksum_for_new_src(

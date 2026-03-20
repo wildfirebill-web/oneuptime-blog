@@ -152,6 +152,7 @@ Set up the DHCP server to send dynamic updates to BIND:
 ```bash
 cat > /etc/dhcp/dhcpd.conf << 'EOF'
 # DDNS configuration
+
 ddns-updates on;
 ddns-update-style interim;
 update-static-leases on;

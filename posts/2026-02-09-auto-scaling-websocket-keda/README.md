@@ -102,6 +102,7 @@ Deploy the WebSocket server:
 
 ```yaml
 # websocket-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

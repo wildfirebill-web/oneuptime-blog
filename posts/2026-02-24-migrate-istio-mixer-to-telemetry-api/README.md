@@ -29,6 +29,7 @@ First, check if you have any Mixer-related resources in your cluster:
 
 ```bash
 # Look for old Mixer resources
+
 kubectl get instances --all-namespaces 2>/dev/null
 kubectl get handlers --all-namespaces 2>/dev/null
 kubectl get rules --all-namespaces 2>/dev/null

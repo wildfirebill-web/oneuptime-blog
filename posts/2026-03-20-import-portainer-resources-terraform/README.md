@@ -19,6 +19,7 @@ If you've been managing Portainer manually via the UI, importing existing resour
 
 ```bash
 # Get environment (endpoint) IDs
+
 curl -s "https://portainer.mycompany.com/api/endpoints" \
   -H "Authorization: Bearer ${API_TOKEN}" | \
   jq '[.[] | {id: .Id, name: .Name}]'

@@ -236,6 +236,7 @@ Simple port connectivity test. Fast but only confirms the port is open.
 
 ```nginx
 # NGINX TCP health check configuration
+
 # This verifies that backend servers are accepting TCP connections
 # on the specified port at regular intervals
 

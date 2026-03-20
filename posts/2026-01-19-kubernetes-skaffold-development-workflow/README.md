@@ -46,6 +46,7 @@ flowchart LR
 
 ```bash
 # macOS
+
 brew install skaffold
 
 # Linux

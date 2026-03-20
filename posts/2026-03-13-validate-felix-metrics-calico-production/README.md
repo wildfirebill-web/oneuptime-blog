@@ -16,6 +16,7 @@ Validating Felix metrics requires confirming that all nodes are reporting metric
 
 ```bash
 # Enable Felix metrics (if not already enabled)
+
 kubectl patch felixconfiguration default   --type=merge   -p '{"spec":{"prometheusMetricsEnabled":true,"prometheusMetricsPort":9091}}'
 
 # Test Felix metrics endpoint

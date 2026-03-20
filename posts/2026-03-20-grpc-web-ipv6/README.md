@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, gRPC-Web, IPv6, JavaScript, Browser
+Tags: gRPC, GRPC-Web, IPv6, JavaScript, Browser
 
 Description: Configure gRPC-Web proxy and browser clients to communicate with gRPC backends over IPv6 addresses.
 
@@ -22,6 +22,7 @@ graph LR
 
 ```yaml
 # envoy-grpcweb.yaml
+
 static_resources:
   listeners:
     - address:
@@ -89,7 +90,7 @@ const { HelloRequest, HelloReply } = require('./hello_pb.js');
 const { GreeterClient } = require('./hello_grpc_web_pb.js');
 
 // Connect to gRPC-Web proxy over IPv6
-// Browsers use the URL format — IPv6 in square brackets
+// Browsers use the URL format - IPv6 in square brackets
 const client = new GreeterClient(
     'http://[2001:db8::1]:8080',
     null,  // credentials

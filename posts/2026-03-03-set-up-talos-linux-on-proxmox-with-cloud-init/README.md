@@ -32,6 +32,7 @@ Download the Talos Linux image for the nocloud platform, which is compatible wit
 
 ```bash
 # Download the Talos nocloud image on your Proxmox host
+
 wget https://github.com/siderolabs/talos/releases/download/v1.7.0/nocloud-amd64.raw.xz
 
 # Decompress the image

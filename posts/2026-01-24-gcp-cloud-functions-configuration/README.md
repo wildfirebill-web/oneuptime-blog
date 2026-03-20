@@ -53,6 +53,7 @@ Cloud Functions automatically scales based on incoming requests, spinning up new
 
 ```python
 # main.py
+
 import functions_framework
 from flask import jsonify
 

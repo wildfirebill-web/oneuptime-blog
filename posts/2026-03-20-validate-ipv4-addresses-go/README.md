@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv4, Validation, net package, Networking
+Tags: Go, IPv4, Validation, Net package, Networking
 
 Description: Learn multiple ways to validate IPv4 addresses in Go using net.ParseIP, net.ParseCIDR, and custom validation logic.
 

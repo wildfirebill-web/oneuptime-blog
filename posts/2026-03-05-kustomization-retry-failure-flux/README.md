@@ -20,6 +20,7 @@ The `spec.retryInterval` field tells Flux how quickly to retry after a failed re
 
 ```yaml
 # Kustomization with retry configuration
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

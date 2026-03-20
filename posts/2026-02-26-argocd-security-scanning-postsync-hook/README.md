@@ -415,6 +415,7 @@ Use sync waves to run scans in order, from fastest to slowest:
 
 ```yaml
 # Wave 1: Quick checks (< 30 seconds)
+
 # - Network policy validation
 # - SecurityContext checks
 

@@ -8,7 +8,7 @@ Description: Learn how to configure automatic HTTPS certificate management using
 
 ## Introduction
 
-Traefik's built-in ACME (Automatic Certificate Management Environment) client integrates directly with Let's Encrypt to provision and renew TLS certificates automatically. When combined with Portainer, every service you deploy can get HTTPS with just a few labels — no manual certificate management required. This guide covers configuring Traefik's ACME resolver for HTTP and DNS challenges alongside Portainer.
+Traefik's built-in ACME (Automatic Certificate Management Environment) client integrates directly with Let's Encrypt to provision and renew TLS certificates automatically. When combined with Portainer, every service you deploy can get HTTPS with just a few labels - no manual certificate management required. This guide covers configuring Traefik's ACME resolver for HTTP and DNS challenges alongside Portainer.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Traefik's built-in ACME (Automatic Certificate Management Environment) client in
 
 ```bash
 # Create directory structure
+
 mkdir -p /opt/traefik/data
 
 # Create the ACME certificate storage file with correct permissions
@@ -29,7 +30,7 @@ chmod 600 /opt/traefik/data/acme.json    # Required: Traefik won't start without
 
 ## Step 2: Configure Traefik with HTTP Challenge
 
-The HTTP challenge (httpChallenge) is the simplest method — Let's Encrypt sends a request to your server on port 80 to verify domain ownership.
+The HTTP challenge (httpChallenge) is the simplest method - Let's Encrypt sends a request to your server on port 80 to verify domain ownership.
 
 ```yaml
 # /opt/traefik/traefik.yml
@@ -71,7 +72,7 @@ log:
 For wildcard certificates (`*.example.com`) or servers without port 80 access, use DNS challenge:
 
 ```yaml
-# /opt/traefik/traefik.yml — DNS challenge variant
+# /opt/traefik/traefik.yml - DNS challenge variant
 certificatesResolvers:
   letsencrypt:
     acme:
@@ -185,7 +186,7 @@ labels:
 Always test with Let's Encrypt staging to avoid rate limits:
 
 ```yaml
-# traefik.yml — Staging resolver
+# traefik.yml - Staging resolver
 certificatesResolvers:
   letsencrypt-staging:
     acme:

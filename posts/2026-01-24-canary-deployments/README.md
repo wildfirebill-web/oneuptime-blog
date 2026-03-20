@@ -37,6 +37,7 @@ Create two deployments with different replica counts to control traffic distribu
 
 ```yaml
 # stable-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

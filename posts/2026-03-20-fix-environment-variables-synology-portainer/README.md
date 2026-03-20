@@ -21,6 +21,7 @@ Synology NAS devices run a customized version of DSM (DiskStation Manager) with 
 
 ```bash
 # SSH into your Synology (enable SSH in DSM Control Panel > Terminal)
+
 # Check if a container received its env vars
 docker exec <container-name> env | sort
 

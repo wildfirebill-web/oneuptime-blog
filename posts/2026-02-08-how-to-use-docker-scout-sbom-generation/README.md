@@ -26,6 +26,7 @@ Generate an SBOM for a local image:
 
 ```bash
 # Generate an SBOM in the default SPDX JSON format
+
 docker scout sbom myapp:latest
 
 # Generate an SBOM and save it to a file

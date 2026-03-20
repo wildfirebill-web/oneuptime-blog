@@ -8,7 +8,7 @@ Description: Understand and configure Unique Local Addresses (ULA) for internal 
 
 ## Introduction
 
-Google Cloud's internal IPv6 subnets use Unique Local Addresses (ULA) from the `fd00::/8` range as defined by RFC 4193. When you create a subnet with `ipv6-access-type=INTERNAL`, GCP automatically assigns a unique `/48` prefix from the ULA space. These addresses are only routable within the VPC and connected networks — they cannot reach or be reached from the public internet. ULA is ideal for backend services, databases, and inter-service communication that should not be internet-accessible.
+Google Cloud's internal IPv6 subnets use Unique Local Addresses (ULA) from the `fd00::/8` range as defined by RFC 4193. When you create a subnet with `ipv6-access-type=INTERNAL`, GCP automatically assigns a unique `/48` prefix from the ULA space. These addresses are only routable within the VPC and connected networks - they cannot reach or be reached from the public internet. ULA is ideal for backend services, databases, and inter-service communication that should not be internet-accessible.
 
 ## Create Subnets with ULA IPv6
 
@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Create internal (ULA) IPv6 subnet
+
 gcloud compute networks subnets create subnet-db \
     --project="$PROJECT" \
     --network=vpc-main \
@@ -32,7 +33,7 @@ gcloud compute networks subnets describe subnet-db \
     --format="get(ipv6CidrRange)"
 # Returns: fd20:0:0:3::/64  (example ULA prefix)
 
-# Create multiple internal subnets — each gets a unique ULA /48
+# Create multiple internal subnets - each gets a unique ULA /48
 gcloud compute networks subnets create subnet-app \
     --project="$PROJECT" \
     --network=vpc-main \
@@ -45,7 +46,7 @@ gcloud compute networks subnets describe subnet-app \
     --region=us-west1 \
     --project="$PROJECT" \
     --format="get(ipv6CidrRange)"
-# Returns a different ULA prefix — GCP ensures uniqueness
+# Returns a different ULA prefix - GCP ensures uniqueness
 ```
 
 ## Understand ULA Prefix Assignment
@@ -116,7 +117,7 @@ resource "google_compute_network" "main" {
   project                 = var.project_id
 }
 
-# Database subnet — internal ULA only (most secure)
+# Database subnet - internal ULA only (most secure)
 resource "google_compute_subnetwork" "db" {
   name          = "subnet-db"
   ip_cidr_range = "10.0.3.0/24"
@@ -128,7 +129,7 @@ resource "google_compute_subnetwork" "db" {
   ipv6_access_type = "INTERNAL"  # ULA addresses
 }
 
-# App subnet — internal ULA
+# App subnet - internal ULA
 resource "google_compute_subnetwork" "app" {
   name          = "subnet-app"
   ip_cidr_range = "10.0.2.0/24"

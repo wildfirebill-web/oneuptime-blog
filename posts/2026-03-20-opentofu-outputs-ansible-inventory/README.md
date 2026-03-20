@@ -59,6 +59,7 @@ Use `tofu output` with a local-exec provisioner or a shell script:
 set -euo pipefail
 
 # Get outputs as JSON
+
 OUTPUTS=$(tofu output -json)
 
 # Generate inventory file

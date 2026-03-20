@@ -35,6 +35,7 @@ For automation and version control, use the Cloud Monitoring API.
 
 ```bash
 # Create a group for all production VMs using curl
+
 ACCESS_TOKEN=$(gcloud auth print-access-token)
 
 curl -X POST \

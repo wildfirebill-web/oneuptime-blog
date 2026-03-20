@@ -10,6 +10,7 @@ Description: Learn how to configure Apache HTTP Server with SSL/TLS encryption f
 
 ```bash
 # Debian/Ubuntu
+
 a2enmod ssl headers
 systemctl restart apache2
 

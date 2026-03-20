@@ -96,6 +96,7 @@ interface TeamMember {
 
 ```yaml
 # service-catalog.yaml
+
 services:
   - id: payment-api
     name: Payment API

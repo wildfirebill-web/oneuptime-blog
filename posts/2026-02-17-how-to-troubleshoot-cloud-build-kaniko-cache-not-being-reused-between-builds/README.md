@@ -22,6 +22,7 @@ Check your `cloudbuild.yaml` to make sure caching flags are correct:
 
 ```yaml
 # Kaniko step with caching enabled
+
 steps:
   - name: 'gcr.io/kaniko-project/executor:latest'
     args:

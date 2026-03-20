@@ -27,6 +27,7 @@ Install LangChain with the providers you need:
 
 ```bash
 # Core LangChain package
+
 pip install langchain langchain-core
 
 # Provider-specific packages

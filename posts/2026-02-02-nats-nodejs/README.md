@@ -51,6 +51,7 @@ Run NATS locally using Docker for development and testing purposes.
 
 ```bash
 # Run NATS server with JetStream enabled for persistence
+
 docker run -d --name nats-server \
   -p 4222:4222 \
   -p 8222:8222 \

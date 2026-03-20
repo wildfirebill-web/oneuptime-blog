@@ -42,6 +42,7 @@ Never store state locally. Use remote backends with locking to prevent concurren
 
 ```hcl
 # backend.tf - Remote state configuration with S3 and DynamoDB locking
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -401,7 +402,7 @@ Scan for security misconfigurations:
 
 Automatically comment Terraform plans on pull requests:
 
-```yaml
+````yaml
   plan:
     runs-on: ubuntu-latest
     needs: validate
@@ -426,9 +427,9 @@ Automatically comment Terraform plans on pull requests:
         with:
           script: |
             const output = `#### Terraform Plan
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
             `;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -436,7 +437,7 @@ Automatically comment Terraform plans on pull requests:
               repo: context.repo.repo,
               body: output
             })
-```
+````
 
 ## Version Pinning and Upgrades
 

@@ -31,6 +31,7 @@ For Compose projects, the Dashboard groups all related containers together. You 
 
 ```bash
 # These CLI commands have Dashboard button equivalents
+
 docker compose up -d
 docker compose stop
 docker compose restart

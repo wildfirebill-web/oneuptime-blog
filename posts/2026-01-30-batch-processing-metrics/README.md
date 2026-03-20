@@ -1043,6 +1043,7 @@ graph TB
 
 ```promql
 # Job duration over time (P95)
+
 histogram_quantile(0.95,
   rate(batch_job_duration_seconds_bucket{job="data-sync"}[5m])
 )

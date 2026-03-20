@@ -931,6 +931,7 @@ class SpendForecaster:
 
 ```python
 # Initialize with historical data
+
 cost_data = get_aws_cost_data(months_back=12)
 forecaster = SpendForecaster(cost_data)
 

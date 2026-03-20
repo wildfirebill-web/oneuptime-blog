@@ -27,6 +27,7 @@ The simplest way to take an etcd backup on Talos Linux is with talosctl:
 
 ```bash
 # Take a snapshot and save it to a local file
+
 talosctl -n 192.168.1.10 etcd snapshot ./etcd-backup-$(date +%Y%m%d-%H%M%S).snapshot
 
 # Verify the snapshot file was created

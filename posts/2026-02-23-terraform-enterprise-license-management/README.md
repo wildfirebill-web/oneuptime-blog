@@ -29,6 +29,7 @@ The license is delivered as a `.rli` file (for legacy installs) or a license str
 
 ```bash
 # For Docker-based deployments, set the license as an environment variable
+
 TFE_LICENSE=02MV4UU43BK5HGYYTOJZ...your-license-string
 
 # Or point to a license file

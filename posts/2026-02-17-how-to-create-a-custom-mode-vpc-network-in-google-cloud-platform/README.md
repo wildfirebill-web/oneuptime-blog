@@ -29,6 +29,7 @@ Let us create a custom mode VPC from scratch:
 
 ```bash
 # Create a custom mode VPC network
+
 # Custom mode means no subnets are created automatically
 gcloud compute networks create production-vpc \
   --subnet-mode=custom \

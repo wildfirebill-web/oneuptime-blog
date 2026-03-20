@@ -41,6 +41,7 @@ First, confirm Workload Identity is enabled on the cluster and node pool:
 
 ```bash
 # Check if Workload Identity is enabled on the cluster
+
 gcloud container clusters describe your-cluster \
   --zone us-central1-a \
   --format="value(workloadIdentityConfig.workloadPool)"

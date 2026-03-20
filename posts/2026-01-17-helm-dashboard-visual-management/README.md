@@ -42,6 +42,7 @@ flowchart TB
 
 ```bash
 # Install as Helm plugin
+
 helm plugin install https://github.com/komodorio/helm-dashboard.git
 
 # Run the dashboard
@@ -412,7 +413,7 @@ kubectl config get-contexts
 +        image: myapp:v1.1
 ```
 
-### Resource Visualization
+Resource Visualization
 
 ```text
 Release Resources View:

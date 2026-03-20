@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, AWS, Azure, Multi-Cloud, Infrastructure as Code, DevOps
 
-Description: Learn how to use OpenTofu to provision resources across both AWS and Azure simultaneously — managing multi-cloud deployments from a single configuration with provider aliases and shared module patterns.
+Description: Learn how to use OpenTofu to provision resources across both AWS and Azure simultaneously - managing multi-cloud deployments from a single configuration with provider aliases and shared module...
 
 ## Introduction
 
-OpenTofu can manage resources across AWS and Azure in the same configuration. This is useful for multi-cloud strategies where workloads span providers — for example, compute on AWS with Azure Active Directory for identity, or disaster recovery across clouds.
+OpenTofu can manage resources across AWS and Azure in the same configuration. This is useful for multi-cloud strategies where workloads span providers - for example, compute on AWS with Azure Active Directory for identity, or disaster recovery across clouds.
 
 ## Configuring Both Providers
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     aws = {

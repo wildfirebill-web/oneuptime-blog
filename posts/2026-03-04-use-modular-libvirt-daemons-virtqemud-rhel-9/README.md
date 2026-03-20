@@ -59,6 +59,7 @@ If your system is still using libvirtd:
 
 ```bash
 # Stop and disable the monolithic daemon
+
 sudo systemctl stop libvirtd
 sudo systemctl disable libvirtd
 sudo systemctl stop libvirtd.socket

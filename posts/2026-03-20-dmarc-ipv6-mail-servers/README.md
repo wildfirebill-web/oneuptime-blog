@@ -22,7 +22,7 @@ For IPv6 senders, SPF must include `ip6:` mechanisms, and DKIM must be configure
 
 A DMARC record is a DNS TXT record at `_dmarc.<your-domain>`:
 
-```
+```text
 v=DMARC1; p=<policy>; rua=<aggregate-report-address>; ruf=<forensic-report-address>; pct=<percentage>
 ```
 
@@ -70,6 +70,7 @@ _dmarc.example.com.  300  IN  TXT  "v=DMARC1; p=reject; pct=100; rua=mailto:dmar
 
 ```bash
 # Check DMARC record is published correctly
+
 dig TXT _dmarc.example.com +short
 
 # Expected output:
@@ -134,4 +135,4 @@ _dmarc.example.com.  300  IN  TXT  "v=DMARC1; p=reject; sp=quarantine; rua=mailt
 
 ## Conclusion
 
-DMARC policy setup for IPv6 mail servers follows the same process as IPv4 — publish a `_dmarc` TXT record, start with `p=none` to collect reports, verify your IPv6 SPF `ip6:` entries and DKIM signatures pass, then progressively enforce `quarantine` and `reject` policies. Proper DMARC is essential for IPv6 mail deliverability to major providers like Google, Microsoft, and Yahoo.
+DMARC policy setup for IPv6 mail servers follows the same process as IPv4 - publish a `_dmarc` TXT record, start with `p=none` to collect reports, verify your IPv6 SPF `ip6:` entries and DKIM signatures pass, then progressively enforce `quarantine` and `reject` policies. Proper DMARC is essential for IPv6 mail deliverability to major providers like Google, Microsoft, and Yahoo.

@@ -80,6 +80,7 @@ spec:
 ```bash
 #!/bin/bash
 # Run before kernel or Cilium upgrades
+
 echo "Current encryption performance:"
 kubectl exec iperf-client -- iperf3 -c $SERVER_IP -t 20 -P 1 -J | \
   jq '.end.sum_sent.bits_per_second / 1000000000'

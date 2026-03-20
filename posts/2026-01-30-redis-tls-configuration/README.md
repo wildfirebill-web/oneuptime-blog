@@ -57,6 +57,7 @@ First, create a private Certificate Authority (CA) for signing your certificates
 # generate-ca.sh - Create a private Certificate Authority
 
 # Set variables
+
 CA_DIR="/etc/redis/tls"
 CA_DAYS=3650  # 10 years validity
 CA_KEY_SIZE=4096

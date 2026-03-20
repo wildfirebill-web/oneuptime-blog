@@ -16,6 +16,7 @@ The most common scenario is when two teams independently add the same resource t
 
 ```yaml
 # Source 1 (platform-infra repo): networkpolicy.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

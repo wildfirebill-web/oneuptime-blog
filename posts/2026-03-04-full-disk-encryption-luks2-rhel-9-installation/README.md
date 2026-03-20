@@ -81,6 +81,7 @@ Recommended custom layout:
 
 ```bash
 # /boot/efi - 600 MB, EFI System Partition (no encryption)
+
 # /boot     - 1 GB, ext4 (no encryption)
 # /         - Remaining space, xfs, encrypted with LUKS2
 # swap      - RAM size, encrypted with LUKS2

@@ -12,7 +12,7 @@ Terragrunt adds a configuration layer on top of OpenTofu that enables DRY multi-
 
 ## Recommended Directory Structure
 
-```
+```text
 infrastructure/
 ├── terragrunt.hcl              # Root config (backend, provider, tags)
 ├── _envcommon/                 # Shared config snippets
@@ -47,6 +47,7 @@ infrastructure/
 
 ```hcl
 # terragrunt.hcl (root)
+
 # This is the root configuration inherited by all child configs
 
 locals {

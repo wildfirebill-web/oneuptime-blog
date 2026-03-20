@@ -27,6 +27,7 @@ Create firewall rules to allow Calico's required protocols between nodes.
 
 ```bash
 # Create a firewall rule allowing IPIP (protocol 4) between nodes
+
 gcloud compute firewall-rules create allow-calico-ipip \
   --network <network-name> \
   --allow tcp:179,udp:4789,udp:5473,protocol:4 \

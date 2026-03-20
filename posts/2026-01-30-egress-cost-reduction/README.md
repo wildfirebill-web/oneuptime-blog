@@ -73,6 +73,7 @@ A CDN moves content closer to users and shifts egress from your cloud to the CDN
 
 ```hcl
 # Terraform: CloudFront distribution for S3 static assets
+
 resource "aws_cloudfront_distribution" "assets" {
   origin {
     domain_name              = aws_s3_bucket.assets.bucket_regional_domain_name

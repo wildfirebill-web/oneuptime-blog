@@ -16,6 +16,7 @@ The set command updates specific fields on resources:
 
 ```bash
 # General syntax
+
 kubectl set <subcommand> <resource> <arguments>
 
 # Common subcommands

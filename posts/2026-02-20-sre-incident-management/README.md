@@ -32,6 +32,7 @@ Define clear severity levels so responders know how to prioritize and escalate.
 
 ```yaml
 # severity-definitions.yaml
+
 # Severity levels define the impact and urgency of an incident.
 # These guide response actions and escalation paths.
 

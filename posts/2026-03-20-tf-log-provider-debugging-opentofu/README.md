@@ -8,16 +8,17 @@ Description: Learn how to use TF_LOG_PROVIDER to capture verbose debug logging o
 
 ## Introduction
 
-Provider errors — authentication failures, rate limits, unexpected API responses — are best debugged by looking at what the provider is actually sending to and receiving from the cloud API. `TF_LOG_PROVIDER` enables verbose logging only for providers, keeping core engine output clean.
+Provider errors - authentication failures, rate limits, unexpected API responses - are best debugged by looking at what the provider is actually sending to and receiving from the cloud API. `TF_LOG_PROVIDER` enables verbose logging only for providers, keeping core engine output clean.
 
 ## Enabling Provider-Level Logging
 
 ```bash
 # Debug all providers
+
 export TF_LOG_PROVIDER=DEBUG
 tofu plan
 
-# TRACE level — includes raw HTTP request/response bodies
+# TRACE level - includes raw HTTP request/response bodies
 export TF_LOG_PROVIDER=TRACE
 tofu apply
 
@@ -31,7 +32,7 @@ tofu plan
 
 Provider TRACE logs expose every detail of provider communication:
 
-```
+```text
 2026-03-20T10:05:00.000Z [TRACE] provider.terraform-provider-aws: starting provider
 2026-03-20T10:05:00.100Z [DEBUG] provider.terraform-provider-aws: AWS SDK Go v2 Request
   Method: POST

@@ -58,6 +58,7 @@ A Desktop application group is created automatically with every host pool. Check
 
 ```bash
 # List application groups for your host pool
+
 az desktopvirtualization applicationgroup list \
   --resource-group myResourceGroup \
   --output table

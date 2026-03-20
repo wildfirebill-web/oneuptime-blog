@@ -32,6 +32,7 @@ S3 bucket policies are one of the most common resource-based policies.
 
 ```hcl
 # Create an S3 bucket
+
 resource "aws_s3_bucket" "data" {
   bucket = "my-app-data-bucket"
 }

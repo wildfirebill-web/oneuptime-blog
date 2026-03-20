@@ -25,7 +25,7 @@ interface GigabitEthernet0/24
  description Uplink-to-Distribution
  ip dhcp snooping trust
 
-! Access ports are untrusted by default — no additional config needed
+! Access ports are untrusted by default - no additional config needed
 interface GigabitEthernet0/1
  description User-Workstation
  switchport mode access

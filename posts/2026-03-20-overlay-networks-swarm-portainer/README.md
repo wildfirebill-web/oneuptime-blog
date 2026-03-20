@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker Swarm, Overlay Networks, Portainer, Networking, Container Networking
+Tags: Docker Swarm, Overlay Network, Portainer, Networking, Container Networking
 
 Description: Learn how to create and configure overlay networks for Docker Swarm services using Portainer.
 
@@ -31,6 +31,7 @@ Overlay networks connect multiple Docker daemons together, enabling containers r
 
 ```bash
 # Create a basic overlay network
+
 docker network create --driver overlay my-overlay-net
 
 # Create an encrypted overlay network (data plane encryption)

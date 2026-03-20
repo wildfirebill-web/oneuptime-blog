@@ -18,6 +18,7 @@ Prometheus is not in the Ubuntu repositories in a current version, so download i
 
 ```bash
 # Create a dedicated user for Prometheus
+
 sudo useradd --no-create-home --shell /bin/false prometheus
 
 # Create configuration and data directories

@@ -160,6 +160,7 @@ flowchart TD
 
 ```python
 # flag_expiration_checker.py
+
 # A scheduled job that checks for expiring flags and sends notifications
 
 from datetime import datetime, timedelta

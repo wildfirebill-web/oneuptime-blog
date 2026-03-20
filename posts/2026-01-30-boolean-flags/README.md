@@ -63,6 +63,7 @@ Boolean flags excel when you need:
 
 ```python
 # Good use cases for boolean flags
+
 ENABLE_NEW_PAYMENT_GATEWAY = True      # Release toggle
 MAINTENANCE_MODE = False                # Ops toggle
 ENABLE_RATE_LIMITING = True            # Kill switch candidate

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Networking, Tcpdump, Debugging, Containers, DevOps
+Tags: Docker, Networking, tcpdump, Debugging, Containers, DevOps
 
 Description: Learn how to capture and analyze network packets from Docker containers using tcpdump for troubleshooting and debugging.
 
@@ -18,6 +18,7 @@ Install and run tcpdump in a running container:
 
 ```bash
 # Install tcpdump in a Debian/Ubuntu-based container
+
 docker exec my-app apt-get update && docker exec my-app apt-get install -y tcpdump
 
 # Capture all packets on eth0 inside the container

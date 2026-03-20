@@ -18,6 +18,7 @@ Pasta is the recommended replacement for slirp4netns in rootless Podman. The mig
 
 ```bash
 # Check which backend is currently in use
+
 podman info --format '{{ .Host.NetworkBackend }}'
 
 # Check available backends

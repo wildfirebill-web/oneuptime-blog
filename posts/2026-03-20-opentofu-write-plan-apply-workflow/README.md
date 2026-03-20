@@ -18,6 +18,7 @@ You write HCL configuration describing your desired infrastructure state.
 
 ```hcl
 # main.tf - Write phase: describe what you want
+
 terraform {
   required_version = ">= 1.6.0"
 
@@ -85,7 +86,7 @@ tofu plan -out=infra.tfplan
 ```
 
 Plan output shows:
-```
+```text
 + aws_vpc.main will be created
 + aws_subnet.public will be created
 

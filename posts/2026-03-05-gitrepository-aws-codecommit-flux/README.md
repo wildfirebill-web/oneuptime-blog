@@ -25,6 +25,7 @@ CodeCommit URL formats:
 
 ```bash
 # HTTPS format
+
 https://git-codecommit.{region}.amazonaws.com/v1/repos/{repo-name}
 
 # SSH format

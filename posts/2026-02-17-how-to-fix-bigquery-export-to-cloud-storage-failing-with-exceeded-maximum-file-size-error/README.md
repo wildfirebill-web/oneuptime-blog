@@ -28,6 +28,7 @@ The simplest fix is to use a wildcard (`*`) in the destination URI. BigQuery wil
 
 ```bash
 # Bad: single file that might exceed the 1GB limit
+
 bq extract \
     --destination_format=CSV \
     my_dataset.large_table \

@@ -48,6 +48,7 @@ If you do not already have a Front Door Premium profile:
 
 ```bash
 # Create a Front Door Premium profile
+
 az afd profile create \
   --profile-name myFrontDoorPremium \
   --resource-group myResourceGroup \

@@ -29,6 +29,7 @@ Redshift clusters should live in private subnets. We will set up a VPC with a Re
 
 ```hcl
 # Dedicated subnet group for Redshift
+
 resource "aws_redshift_subnet_group" "main" {
   name       = "${var.project_name}-redshift-subnet-group"
   subnet_ids = var.private_subnet_ids

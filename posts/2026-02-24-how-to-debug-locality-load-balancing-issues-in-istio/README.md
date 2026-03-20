@@ -153,6 +153,7 @@ Look for route rules that might bypass locality:
 
 ```yaml
 # This VirtualService overrides locality by specifying exact routing
+
 http:
   - route:
       - destination:

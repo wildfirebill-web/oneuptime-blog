@@ -1,4 +1,4 @@
-# How to Understand the Dummy IPv6 Prefix (100:0:0:1::/64)
+# How to Understand the Dummy IPv6 Prefix (100:0:0:1::/64) - 100
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,11 +16,12 @@ The `100:0:0:1::/64` prefix is sometimes used as a "dummy" or placeholder IPv6 a
 import ipaddress
 
 # 100:0:0:1::/64 is within the discard-only 100::/64
+
 discard_block = ipaddress.IPv6Network("100::/64")
 dummy_prefix = ipaddress.IPv6Network("100:0:0:1::/64")
 
 # Check if dummy prefix is within discard block
-print(dummy_prefix.subnet_of(discard_block))  # False — different /64
+print(dummy_prefix.subnet_of(discard_block))  # False - different /64
 # 100::/64 and 100:0:0:1::/64 are different /64 subnets within 100::/56
 
 # Correctly checking the discard block
@@ -52,7 +53,7 @@ curl --connect-timeout 3 http://[100::1]/ || \
 ```nginx
 # Use dummy IPv6 in config templates before real IP is known
 upstream backend {
-    server [100:0:0:1::1]:8080 down;  # Placeholder — marked down
+    server [100:0:0:1::1]:8080 down;  # Placeholder - marked down
     server [2001:db8::10]:8080;        # Real server
 }
 ```
@@ -75,7 +76,7 @@ ip -6 route del blackhole 100::/64
 
 For documentation and examples, always prefer `2001:db8::/32`:
 
-```
+```text
 # WRONG for documentation:
 ip -6 addr add 100:0:0:1::1/64 dev lo
 

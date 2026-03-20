@@ -16,6 +16,7 @@ Chrome DevTools is not just for browser debugging. You can use it to debug Node.
 
 ```bash
 # Start Node.js in debug mode
+
 node --inspect app.js
 
 # With a specific port

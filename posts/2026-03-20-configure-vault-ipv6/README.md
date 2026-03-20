@@ -12,6 +12,7 @@ Description: Learn how to configure HashiCorp Vault to listen on IPv6 addresses 
 # /etc/vault.d/vault.hcl
 
 # TCP listener on IPv6 address
+
 listener "tcp" {
   address         = "[2001:db8::10]:8200"
   tls_disable     = false

@@ -157,6 +157,7 @@ class CostDataCollector:
 
 
 # Example usage
+
 collector = CostDataCollector()
 
 # Get last 30 days of costs

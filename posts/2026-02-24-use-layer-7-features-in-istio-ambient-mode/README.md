@@ -368,6 +368,7 @@ Query these in Prometheus:
 
 ```promql
 # Request rate by response code
+
 sum(rate(istio_requests_total{destination_service="reviews.bookinfo.svc.cluster.local"}[5m])) by (response_code)
 
 # P99 latency

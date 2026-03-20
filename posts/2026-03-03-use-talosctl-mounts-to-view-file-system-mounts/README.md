@@ -16,6 +16,7 @@ To view all file system mounts on a node:
 
 ```bash
 # List all mounts on a node
+
 talosctl mounts --nodes 192.168.1.10
 ```
 

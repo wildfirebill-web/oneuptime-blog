@@ -14,6 +14,7 @@ Grafana is the leading open-source analytics and visualization platform used alo
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -214,5 +215,5 @@ resource "kubernetes_secret" "grafana_smtp" {
 - Store the admin password in a secrets manager (AWS Secrets Manager, Azure Key Vault, GCP Secret Manager) and reference it via a Kubernetes secret rather than embedding it in Terraform variables.
 - Use Grafana provisioning (datasources, dashboards, alerting) rather than manual UI configuration so everything is code.
 - Pin the Helm chart version to avoid unexpected upgrades that might change the admin API or dashboard schema.
-- Enable `disableDeletion = false` for dashboard providers during initial setup — set to `true` only after stabilizing your dashboard set.
+- Enable `disableDeletion = false` for dashboard providers during initial setup - set to `true` only after stabilizing your dashboard set.
 - Back up Grafana's SQLite database (or use PostgreSQL for HA deployments) before upgrading major versions.

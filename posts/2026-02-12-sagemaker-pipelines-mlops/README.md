@@ -51,6 +51,7 @@ bucket = session.default_bucket()
 region = session.boto_region_name
 
 # Define pipeline parameters - these can be changed at execution time
+
 input_data = ParameterString(
     name='InputDataUrl',
     default_value=f's3://{bucket}/raw-data/dataset.csv'

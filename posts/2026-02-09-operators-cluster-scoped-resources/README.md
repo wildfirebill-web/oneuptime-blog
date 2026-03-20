@@ -78,6 +78,7 @@ metadata:
   name: cluster-manager
 rules:
 # Manage cluster-scoped custom resource
+
 - apiGroups: ["example.com"]
   resources: ["clusters"]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]

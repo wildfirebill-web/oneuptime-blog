@@ -29,6 +29,7 @@ Sonarr needs a configuration directory and access to your media and download dir
 
 ```bash
 # Create the Sonarr configuration directory
+
 mkdir -p ~/sonarr/config
 
 # Ensure your TV show library directory exists

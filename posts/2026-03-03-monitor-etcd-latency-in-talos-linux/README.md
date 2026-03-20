@@ -36,6 +36,7 @@ etcd in Talos Linux exposes Prometheus metrics on port 2381. To scrape these, co
 
 ```yaml
 # etcd-service-monitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

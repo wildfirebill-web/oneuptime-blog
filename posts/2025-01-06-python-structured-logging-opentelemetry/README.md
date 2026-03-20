@@ -55,6 +55,7 @@ The following code sets up OpenTelemetry for both tracing and logging. It create
 
 ```python
 # telemetry.py
+
 # Import core logging and OpenTelemetry modules for traces and logs
 import logging
 from opentelemetry import trace

@@ -30,6 +30,7 @@ First, create an AKS cluster with Azure AD integration enabled, or update an exi
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-flux-demo \
   --location eastus

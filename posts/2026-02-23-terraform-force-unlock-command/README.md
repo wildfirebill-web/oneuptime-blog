@@ -60,6 +60,7 @@ The syntax is straightforward:
 
 ```bash
 # Force-unlock with the lock ID from the error message
+
 terraform force-unlock a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ```
 

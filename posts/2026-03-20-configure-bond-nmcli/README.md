@@ -14,6 +14,7 @@ NetworkManager supports bonding through nmcli. The process involves creating a b
 
 ```bash
 # Create a bond interface with active-backup mode
+
 nmcli connection add \
     type bond \
     con-name "bond0" \

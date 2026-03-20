@@ -1,4 +1,4 @@
-# How to Configure the Kubernetes Provider in OpenTofu
+# How to Configure the Kubernetes Provider in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -101,6 +101,7 @@ provider "kubernetes" {
 }
 
 # Deploy to specific cluster
+
 resource "kubernetes_namespace" "staging_ns" {
   provider = kubernetes.staging
   metadata {

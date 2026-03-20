@@ -8,7 +8,7 @@ Description: Learn how to use the floor function in OpenTofu to round numbers do
 
 ## Introduction
 
-The `floor` function in OpenTofu returns the largest integer less than or equal to a given number — in other words, it rounds down. This is useful when you want conservative resource allocation, such as computing how many batches fit within a limit, or converting a float to a whole number without exceeding a budget.
+The `floor` function in OpenTofu returns the largest integer less than or equal to a given number - in other words, it rounds down. This is useful when you want conservative resource allocation, such as computing how many batches fit within a limit, or converting a float to a whole number without exceeding a budget.
 
 ## Syntax
 
@@ -16,7 +16,7 @@ The `floor` function in OpenTofu returns the largest integer less than or equal 
 floor(number)
 ```
 
-- **number** — any numeric value (integer or float)
+- **number** - any numeric value (integer or float)
 - Returns the largest integer less than or equal to the input.
 
 ## Basic Examples
@@ -76,7 +76,7 @@ variable "batch_size" {
 }
 
 locals {
-  # Full batches only — partial batch handled separately
+  # Full batches only - partial batch handled separately
   full_batch_count = floor(var.record_count / var.batch_size)
   remainder        = var.record_count - (local.full_batch_count * var.batch_size)
 }

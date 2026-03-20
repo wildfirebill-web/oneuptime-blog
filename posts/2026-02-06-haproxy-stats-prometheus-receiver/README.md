@@ -14,6 +14,7 @@ Configure HAProxy to expose a Prometheus metrics endpoint:
 
 ```text
 # haproxy.cfg
+
 global
     log stdout format raw local0
 

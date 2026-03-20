@@ -34,6 +34,7 @@ flowchart LR
 
 ```bash
 # Display NUMA node information
+
 numactl --hardware
 
 # Show per-node memory statistics

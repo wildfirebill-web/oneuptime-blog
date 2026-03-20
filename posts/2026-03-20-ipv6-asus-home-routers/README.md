@@ -1,8 +1,8 @@
-# How to Configure IPv6 on ASUS Home Routers
+# How to Configure IPv6 on ASUS Home Routers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ASUS, Home Router, DHCPv6, Router Configuration
+Tags: IPv6, Asus, Home Router, DHCPv6, Router Configuration
 
 Description: Enable and configure IPv6 on ASUS routers running ASUSWRT firmware, including DHCPv6-PD, SLAAC, DNS settings, and firewall configuration.
 
@@ -14,16 +14,16 @@ ASUS routers running ASUSWRT (and Merlin) support multiple IPv6 connection types
 
 Navigate to the IPv6 settings page in the ASUS web interface.
 
-```
+```text
 Path: Advanced Settings → IPv6
 
 Connection Type options:
-  - Native               — DHCPv6 WAN + SLAAC on LAN (most ISPs)
-  - Native with DHCP-PD  — Explicit prefix delegation (/56 or /48)
-  - Static IPv6          — Fixed WAN IPv6 address (business)
-  - 6in4 Static          — Hurricane Electric tunnel
-  - Automatic 6to4       — Legacy tunnel (avoid)
-  - FLET's IPv6 Service  — Japan NTT specific
+  - Native               - DHCPv6 WAN + SLAAC on LAN (most ISPs)
+  - Native with DHCP-PD  - Explicit prefix delegation (/56 or /48)
+  - Static IPv6          - Fixed WAN IPv6 address (business)
+  - 6in4 Static          - Hurricane Electric tunnel
+  - Automatic 6to4       - Legacy tunnel (avoid)
+  - FLET's IPv6 Service  - Japan NTT specific
 
 Recommended settings for most ISPs:
   Connection Type: Native with DHCP-PD
@@ -41,6 +41,7 @@ Advanced configuration via SSH on Merlin firmware.
 
 ```bash
 # SSH into ASUS router (enable SSH in Administration → System)
+
 ssh admin@192.168.1.1
 
 # Check current IPv6 WAN address
@@ -64,7 +65,7 @@ cat /tmp/odhcp6c.log 2>/dev/null | tail -20
 For advanced users who need custom RA settings.
 
 ```bash
-# /jffs/configs/radvd.conf.add — extra radvd options appended by Merlin
+# /jffs/configs/radvd.conf.add - extra radvd options appended by Merlin
 # (do not replace the whole file)
 
 interface br0 {
@@ -82,12 +83,12 @@ interface br0 {
 
 ASUS routers have an IPv6 firewall that may block inbound connections.
 
-```
+```text
 GUI Path: IPv6 → IPv6 Firewall
 
 Default: Block all inbound IPv6 connections
 Options:
-  - Disable (allow all inbound — not recommended)
+  - Disable (allow all inbound - not recommended)
   - Enable (block all inbound)
   - Custom rules via IPv6 Firewall tab
 

@@ -36,6 +36,7 @@ This minimal example shows how to connect to a WebSocket server, send a message,
 
 ```python
 # basic_client.py
+
 # Simple WebSocket client that sends one message and receives a response
 import asyncio
 import websockets

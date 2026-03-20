@@ -30,6 +30,7 @@ Here is the simplest example of creating an IAM policy with `jsonencode`.
 
 ```hcl
 # Create an IAM policy using jsonencode
+
 resource "aws_iam_policy" "s3_read_only" {
   name        = "s3-read-only"
   description = "Allows read-only access to S3 buckets"

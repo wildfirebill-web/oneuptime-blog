@@ -147,6 +147,7 @@ Check kubelet logs on the node:
 
 ```bash
 # SSH to the node
+
 ssh worker-node-1
 
 # View kubelet logs

@@ -25,6 +25,7 @@ HTTPS to an FQDN requires DNS resolution first. If DNS is blocked, the IP is nev
 
 ```yaml
 # WRONG: Missing DNS rule
+
 spec:
   egress:
     - toFQDNs:

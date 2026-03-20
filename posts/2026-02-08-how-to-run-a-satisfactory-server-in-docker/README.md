@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Satisfactory, Game Servers, Containers, Self-Hosted, Gaming, Multiplayer, Factory Building
+Tags: Docker, Satisfactory, Game Server, Containers, Self-Hosted, Gaming, Multiplayer, Factory Building
 
 Description: Deploy a dedicated Satisfactory server in Docker with save management, server settings, and automated maintenance for collaborative factory building.
 
@@ -24,6 +24,7 @@ You need:
 
 ```bash
 # Verify Docker
+
 docker --version
 docker compose version
 ```

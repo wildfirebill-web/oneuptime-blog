@@ -22,6 +22,7 @@ Podman supports several logging drivers. The default depends on your system, but
 
 ```bash
 # View container logs
+
 podman logs my-container
 
 # Follow logs in real time

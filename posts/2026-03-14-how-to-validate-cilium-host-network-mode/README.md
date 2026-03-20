@@ -25,6 +25,7 @@ Validating host network mode ensures that pods running in the node network names
 echo "=== Host Network Validation ==="
 
 # Check host endpoint exists on each node
+
 for node in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   CILIUM_POD=$(kubectl get pods -n kube-system -l k8s-app=cilium \
     --field-selector spec.nodeName="$node" -o jsonpath='{.items[0].metadata.name}')

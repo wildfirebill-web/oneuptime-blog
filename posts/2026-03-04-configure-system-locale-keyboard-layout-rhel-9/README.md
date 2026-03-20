@@ -20,6 +20,7 @@ The simplest way to see your current locale settings is with `localectl`.
 
 ```bash
 # Display current locale and keyboard configuration
+
 localectl status
 ```
 

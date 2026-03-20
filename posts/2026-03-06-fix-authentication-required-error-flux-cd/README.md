@@ -18,6 +18,7 @@ You will typically see this error in the GitRepository or HelmRepository status:
 
 ```bash
 # Check for authentication errors
+
 kubectl get gitrepositories -A
 kubectl describe gitrepository <name> -n flux-system
 ```

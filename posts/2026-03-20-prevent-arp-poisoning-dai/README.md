@@ -10,7 +10,7 @@ Description: Learn how to configure Dynamic ARP Inspection (DAI) on Cisco switch
 
 ARP poisoning (also called ARP spoofing) is when an attacker sends forged ARP replies to associate their MAC address with a legitimate IP, redirecting traffic through the attacker's machine.
 
-```
+```text
 Attack Flow:
   Attacker sends: "192.168.1.1 is at attacker_MAC"
   Attacker sends: "192.168.1.10 is at attacker_MAC"
@@ -113,7 +113,7 @@ show arp access-list
 
 Sample output:
 
-```
+```text
 Vlan    Forwarded  Dropped  DHCP Drops  ACL Drops
 ----    ---------  -------  ----------  ---------
   10        12548       45           2         43
@@ -148,4 +148,3 @@ ip arp inspection validate src-mac dst-mac ip
 
 - [How to Detect ARP Spoofing Attacks on Your Network](https://oneuptime.com/blog/post/2026-03-20-arp-spoofing-detection-scapy-ipv4/view)
 - [How to Configure ARP Inspection on Cisco Switches](https://oneuptime.com/blog/post/2026-03-20-cisco-arp-inspection/view)
-- [How to Implement DHCP Snooping on Switches](https://oneuptime.com/blog/post/2026-03-20-dhcp-snooping-switches/view)

@@ -45,6 +45,7 @@ If the dashboard isn't already imported, you can find it in the Grafana dashboar
 
 ```bash
 # The Istio mesh dashboard is typically available at
+
 # Grafana -> Dashboards -> Browse -> Istio -> Istio Mesh Dashboard
 ```
 

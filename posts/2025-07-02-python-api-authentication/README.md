@@ -72,6 +72,7 @@ Let's set up a FastAPI project with all the dependencies needed for authenticati
 
 ```bash
 # Create project directory and virtual environment
+
 mkdir python-api-auth && cd python-api-auth
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate

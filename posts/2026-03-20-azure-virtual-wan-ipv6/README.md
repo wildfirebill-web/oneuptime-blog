@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Virtual WAN, IPv6, Hub, Spoke, Dual-Stack, SD-WAN
+Tags: Azure, Virtual WAN, IPv6, Hubs, Spoke, Dual-Stack, SD-WAN
 
 Description: Configure Azure Virtual WAN hubs and spoke connections for IPv6 routing in a global hub-spoke topology.
 
@@ -20,6 +20,7 @@ Azure Virtual WAN IPv6 enables private IPv6 connectivity between cloud resources
 
 ```bash
 # Check VPC has IPv6 CIDR
+
 az network vnet show --resource-group myRG --name myVNet --query 'addressSpace'
 ```
 

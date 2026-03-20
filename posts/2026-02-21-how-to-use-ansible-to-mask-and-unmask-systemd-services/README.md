@@ -275,6 +275,7 @@ Mask services based on server role using group variables:
 
 ```yaml
 # group_vars/web_servers.yml
+
 masked_services:
   - bluetooth.service
   - cups.service

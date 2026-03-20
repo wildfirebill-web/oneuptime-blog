@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Routing, /32, Host Route, Networking, Loopback
+Tags: IPv4, Routing, /32, Host Routes, Networking, Loopback
 
 Description: A /32 host route identifies exactly one IPv4 address with a 32-bit mask, used for loopback interfaces, anycast IPs, policy routing, and precise static route injection.
 
 ## What Is a /32 Route?
 
-A /32 mask is 255.255.255.255 — all 32 bits are the network bits. This means the "network" contains exactly one address: itself. There is no host portion and no broadcast.
+A /32 mask is 255.255.255.255 - all 32 bits are the network bits. This means the "network" contains exactly one address: itself. There is no host portion and no broadcast.
 
 ## Common Uses
 
@@ -24,6 +24,7 @@ A /32 mask is 255.255.255.255 — all 32 bits are the network bits. This means t
 
 ```bash
 # Route a specific host through a specific gateway
+
 sudo ip route add 8.8.8.8/32 via 192.168.1.1 dev eth0
 
 # Add a /32 to loopback (anycast or virtual service IP)
@@ -76,4 +77,4 @@ for cidr in ["10.0.0.1/32", "10.0.0.0/31", "10.0.0.0/24"]:
 - A /32 identifies exactly one IP address with no broadcast or network distinction.
 - Common on loopback interfaces, anycast VIPs, and precise policy routing entries.
 - BGP blackhole routes often use /32 to drop traffic to compromised or abusive hosts.
-- In routing table management, keep /32s controlled — they add entries without summarizing.
+- In routing table management, keep /32s controlled - they add entries without summarizing.

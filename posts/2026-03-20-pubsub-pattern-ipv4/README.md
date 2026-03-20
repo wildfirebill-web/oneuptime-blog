@@ -10,6 +10,7 @@ Description: Learn how to implement the publish-subscribe pattern over IPv4 usin
 
 ```python
 # --- publisher.py ---
+
 import zmq
 import time
 import json
@@ -126,4 +127,4 @@ publish_events()
 
 ## Conclusion
 
-ZeroMQ `PUB`/`SUB` sockets provide low-latency fanout with topic prefix filtering. Bind the `PUB` socket on the server side and `connect` on the subscriber side. An empty SUBSCRIBE filter subscribes to all topics. For Python-only deployments, a custom asyncio queue-based broker is simpler and avoids the ZeroMQ dependency. Redis pub/sub is a popular middle ground — it's persistent, widely available, and easy to monitor. All three approaches work over standard IPv4 TCP connections.
+ZeroMQ `PUB`/`SUB` sockets provide low-latency fanout with topic prefix filtering. Bind the `PUB` socket on the server side and `connect` on the subscriber side. An empty SUBSCRIBE filter subscribes to all topics. For Python-only deployments, a custom asyncio queue-based broker is simpler and avoids the ZeroMQ dependency. Redis pub/sub is a popular middle ground - it's persistent, widely available, and easy to monitor. All three approaches work over standard IPv4 TCP connections.

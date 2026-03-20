@@ -822,6 +822,7 @@ class NatsHealthMonitor {
 
     return `
 # HELP nats_client_connected Connection status (1 = connected, 0 = disconnected)
+
 # TYPE nats_client_connected gauge
 nats_client_connected ${this.metrics.connected ? 1 : 0}
 

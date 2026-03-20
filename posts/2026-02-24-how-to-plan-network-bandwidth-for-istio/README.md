@@ -39,6 +39,7 @@ The xDS protocol streams configuration from istiod to sidecars. The bandwidth de
 
 ```bash
 # Check the size of configuration pushed to a single proxy
+
 istioctl proxy-config all <pod-name> -n <namespace> -o json | wc -c
 ```
 

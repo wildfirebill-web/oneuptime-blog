@@ -12,7 +12,7 @@ ICMPv6 Destination Unreachable (Type 1) is an error message generated when a pac
 
 ## Destination Unreachable Message Format
 
-```
+```text
 ICMPv6 Destination Unreachable (Type 1):
 
  0                   1                   2                   3
@@ -32,7 +32,7 @@ by the receiver (reserved for future use).
 
 ## Destination Unreachable Codes
 
-```
+```text
 Code 0: No route to destination
   → Router has no routing table entry for the destination
   → Returned by the last router that had a route prefix match
@@ -130,13 +130,14 @@ def parse_destination_unreachable(icmpv6_data: bytes) -> dict:
 
 ```bash
 # Capture all ICMPv6 Destination Unreachable messages
+
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 1"
 
 # Filter specific codes (e.g., Code 4: Port unreachable)
 # ip6[40] = Type, ip6[41] = Code
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 1 and ip6[41] == 4"
 
-# Filter Code 1 (administratively prohibited — may indicate firewall drops)
+# Filter Code 1 (administratively prohibited - may indicate firewall drops)
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 1 and ip6[41] == 1"
 
 # Test: connect to a closed port (should trigger Code 4)

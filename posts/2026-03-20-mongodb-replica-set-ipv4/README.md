@@ -13,7 +13,7 @@ A MongoDB replica set provides redundancy and automatic failover. A minimum of 3
 ## Configuration (All Nodes)
 
 ```yaml
-# /etc/mongod.conf — apply to each node, adjust bindIp per node
+# /etc/mongod.conf - apply to each node, adjust bindIp per node
 
 net:
   port: 27017
@@ -35,6 +35,7 @@ storage:
 
 ```bash
 # Generate keyfile (same content on all nodes)
+
 openssl rand -base64 756 | sudo tee /etc/mongodb/keyfile > /dev/null
 sudo chmod 400 /etc/mongodb/keyfile
 sudo chown mongodb:mongodb /etc/mongodb/keyfile
@@ -111,4 +112,4 @@ mongosh "mongodb://appuser:pass@10.0.0.1:27017,10.0.0.2:27017,10.0.0.3:27017/app
 
 ## Conclusion
 
-MongoDB replica sets require identical `replSetName` in all nodes' config, a shared keyfile for authentication, and open ports between all members. Initiate the set from any node with `rs.initiate()` specifying all member hostnames. Applications connect with a replica set URI listing all members—the driver handles primary discovery and failover automatically.
+MongoDB replica sets require identical `replSetName` in all nodes' config, a shared keyfile for authentication, and open ports between all members. Initiate the set from any node with `rs.initiate()` specifying all member hostnames. Applications connect with a replica set URI listing all members-the driver handles primary discovery and failover automatically.

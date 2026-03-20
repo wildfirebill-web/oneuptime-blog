@@ -29,6 +29,7 @@ You can see this DNS configuration inside any container:
 
 ```bash
 # Check the DNS configuration inside a container on a custom network
+
 docker run --rm --network my-network alpine cat /etc/resolv.conf
 ```
 

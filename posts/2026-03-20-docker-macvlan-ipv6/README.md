@@ -14,6 +14,7 @@ Docker Macvlan networks allow containers to have their own MAC addresses and rec
 
 ```bash
 # Prerequisites:
+
 # 1. Host interface (eth0) on a network with IPv6 routing
 # 2. Physical router configured to route the container IPv6 subnet
 
@@ -130,4 +131,4 @@ ping6 2001:db8:lan::10
 
 ## Conclusion
 
-Docker Macvlan networks give containers routable IPv6 addresses directly on the physical network by specifying `--driver macvlan`, `--opt parent=eth0`, `--ipv6`, and appropriate subnets. Containers appear as separate devices to the physical network and can be accessed by IPv6 address from other hosts. Use VLAN sub-interfaces (`eth0.100`) for VLAN-tagged macvlan networks. Note that macvlan containers cannot communicate directly with the host — use a host-side macvlan interface as a workaround for host-to-container IPv6 communication.
+Docker Macvlan networks give containers routable IPv6 addresses directly on the physical network by specifying `--driver macvlan`, `--opt parent=eth0`, `--ipv6`, and appropriate subnets. Containers appear as separate devices to the physical network and can be accessed by IPv6 address from other hosts. Use VLAN sub-interfaces (`eth0.100`) for VLAN-tagged macvlan networks. Note that macvlan containers cannot communicate directly with the host - use a host-side macvlan interface as a workaround for host-to-container IPv6 communication.

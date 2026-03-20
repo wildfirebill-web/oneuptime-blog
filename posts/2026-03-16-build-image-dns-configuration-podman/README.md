@@ -20,6 +20,7 @@ By default, Podman uses the host's DNS configuration from `/etc/resolv.conf` for
 
 ```bash
 # Check your host DNS configuration
+
 cat /etc/resolv.conf
 
 # See what DNS the build uses by default

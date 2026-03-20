@@ -20,6 +20,7 @@ Used when you need to reference outputs from another module:
 
 ```hcl
 # ecs/terragrunt.hcl
+
 dependency "vpc" {
   config_path = "../vpc"
 }

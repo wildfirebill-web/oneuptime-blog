@@ -20,6 +20,7 @@ Deploy metrics collection to track real resource usage:
 
 ```yaml
 # Deploy metrics-server for resource tracking
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

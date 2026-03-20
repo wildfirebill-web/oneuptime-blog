@@ -153,6 +153,7 @@ If you are using the Podman socket for API access and encounter permission denie
 
 ```bash
 # Start the socket for your user
+
 systemctl --user enable --now podman.socket
 
 # Verify the socket path

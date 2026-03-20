@@ -60,7 +60,7 @@ To request a /31 or /30, demonstrate utilization of your current /32:
 
 Non-ISP organizations can receive a PI /48 directly from APNIC:
 
-```
+```text
 Request criteria:
 - Demonstrate the need for globally unique IPv6 addressing
 - Provide a basic network plan
@@ -71,8 +71,9 @@ Request criteria:
 
 After allocation, register your network objects:
 
-```
+```text
 # inet6num object
+
 inet6num: 2001:db8::/32
 netname:  YOUR-NET-AP
 descr:    Your ISP Name

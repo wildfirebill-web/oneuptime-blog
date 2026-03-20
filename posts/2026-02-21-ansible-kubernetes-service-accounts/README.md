@@ -29,6 +29,7 @@ A Service Account on its own is just an identity. Its permissions come from Role
 
 ```yaml
 # playbook: create-service-account.yml
+
 # Creates a Service Account for an application workload
 ---
 - name: Create Kubernetes Service Account

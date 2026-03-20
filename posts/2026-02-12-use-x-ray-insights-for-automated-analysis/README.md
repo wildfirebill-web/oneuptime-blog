@@ -43,6 +43,7 @@ X-Ray groups let you define a collection of traces using a filter expression. In
 
 ```bash
 # Create an X-Ray group for your production services
+
 aws xray create-group \
   --group-name "production-services" \
   --filter-expression 'service("order-service") OR service("payment-service") OR service("inventory-service")' \

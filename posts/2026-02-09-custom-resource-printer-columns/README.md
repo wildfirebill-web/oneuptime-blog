@@ -95,6 +95,7 @@ The jsonPath field uses JSONPath syntax to extract values from your resource. Co
 
 ```yaml
 # Access spec fields
+
 jsonPath: .spec.version
 
 # Access nested fields

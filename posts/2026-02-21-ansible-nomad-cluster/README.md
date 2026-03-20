@@ -27,6 +27,7 @@ graph TD
 
 ```yaml
 # roles/nomad/defaults/main.yml - Nomad cluster configuration
+
 nomad_version: "1.7.2"
 nomad_datacenter: dc1
 nomad_region: global

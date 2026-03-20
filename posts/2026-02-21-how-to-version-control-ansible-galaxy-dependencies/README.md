@@ -26,6 +26,7 @@ First, exclude downloaded content from version control:
 
 ```gitignore
 # .gitignore - exclude Galaxy downloads
+
 roles/
 collections/
 *.retry

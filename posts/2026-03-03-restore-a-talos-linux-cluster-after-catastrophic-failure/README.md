@@ -16,6 +16,7 @@ Before jumping into recovery, understand what you are dealing with:
 
 ```bash
 # Try to reach any node
+
 talosctl version --nodes <cp-node-1> 2>&1
 talosctl version --nodes <cp-node-2> 2>&1
 talosctl version --nodes <cp-node-3> 2>&1

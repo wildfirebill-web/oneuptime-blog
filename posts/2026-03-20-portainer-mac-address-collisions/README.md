@@ -1,4 +1,4 @@
-# How to Fix MAC Address Collisions in Docker Compose via Portainer
+# How to Fix MAC Address Collisions in Docker Compose via Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Docker automatically assigns unique MAC addresses to containers. Problems arise 
 
 ```bash
 # Look for MAC address errors in Portainer logs
+
 docker logs portainer 2>&1 | grep -i "mac\|address already\|ARP"
 
 # Check Docker daemon logs
@@ -45,12 +46,12 @@ docker ps -q | xargs docker inspect \
   --format '{{range .NetworkSettings.Networks}}{{.MacAddress}}{{end}}' | sort | uniq -d
 ```
 
-## Step 3: Fix — Remove Explicit MAC Addresses from Compose Files
+## Step 3: Fix - Remove Explicit MAC Addresses from Compose Files
 
 The simplest fix is to let Docker assign MAC addresses automatically:
 
 ```yaml
-# BEFORE (problematic — causes collision on recreation)
+# BEFORE (problematic - causes collision on recreation)
 version: "3.8"
 services:
   myapp:
@@ -59,7 +60,7 @@ services:
       mynet:
         mac_address: "02:42:ac:11:00:02"  # Remove this
 
-# AFTER (correct — Docker auto-assigns unique MAC)
+# AFTER (correct - Docker auto-assigns unique MAC)
 version: "3.8"
 services:
   myapp:
@@ -70,7 +71,7 @@ services:
 
 In Portainer, edit the stack and remove the `mac_address` entries, then redeploy.
 
-## Step 4: Fix — Assign Unique MAC Addresses
+## Step 4: Fix - Assign Unique MAC Addresses
 
 If you need explicit MAC addresses (e.g., for DHCP reservations), ensure uniqueness:
 
@@ -97,7 +98,7 @@ services:
         mac_address: "02:42:ac:11:00:12"
 ```
 
-## Step 5: Fix — Reset the Network
+## Step 5: Fix - Reset the Network
 
 If MAC collisions have corrupted the network state:
 

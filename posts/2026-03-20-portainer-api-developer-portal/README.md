@@ -12,7 +12,7 @@ A self-service developer portal empowers developers to spin up, manage, and tear
 
 ## Architecture Overview
 
-```
+```text
 Developers → Portal UI (React/Vue) → Backend API (Node.js) → Portainer API → Docker/K8s
                                         ↓
                                     Auth (Keycloak/Auth0)

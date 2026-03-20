@@ -27,6 +27,7 @@ Verify your Helm installation:
 ```bash
 helm version
 # version.BuildInfo{Version:"v3.14.0", GitCommit:"...", GitTreeState:"clean", GoVersion:"go1.21.6"}
+
 ```
 
 ## Understanding Chart Dependencies

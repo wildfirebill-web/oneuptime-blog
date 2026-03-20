@@ -16,6 +16,7 @@ When Ansible connects to a host, it gathers system facts automatically. The key 
 
 ```yaml
 # Key facts for OS detection:
+
 # ansible_os_family: "Debian", "RedHat", "Suse", "Archlinux", etc.
 # ansible_distribution: "Ubuntu", "CentOS", "Fedora", "Amazon", etc.
 # ansible_distribution_major_version: "22", "9", "2023", etc.

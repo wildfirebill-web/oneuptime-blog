@@ -1,14 +1,14 @@
-# How to Manage Multiple Game Servers with Portainer
+# How to Manage Multiple Game Servers with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Game Servers, Docker, Self-Hosted, Management
+Tags: Portainer, Game Server, Docker, Self-Hosted, Management
 
 Description: Centrally manage multiple game servers across different titles using Portainer stacks and resource management.
 
 ## Introduction
 
-Running multiple game servers on a single machine or across multiple hosts requires careful resource management and centralized control. Portainer excels in this scenario — you can deploy Minecraft, Valheim, Counter-Strike, and more as separate stacks, manage their resources, monitor performance, and handle updates all from a single interface.
+Running multiple game servers on a single machine or across multiple hosts requires careful resource management and centralized control. Portainer excels in this scenario - you can deploy Minecraft, Valheim, Counter-Strike, and more as separate stacks, manage their resources, monitor performance, and handle updates all from a single interface.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Running multiple game servers on a single machine or across multiple hosts requi
 
 ## Architecture Overview
 
-```
+```text
 Portainer Server
 ├── Stack: minecraft-server (Port 25565)
 ├── Stack: valheim-server (Port 2456-2458)
@@ -46,6 +46,7 @@ Use Portainer's Stack Labels to organize servers:
 
 ```yaml
 # minecraft-stack labels
+
 version: "3.8"
 
 services:

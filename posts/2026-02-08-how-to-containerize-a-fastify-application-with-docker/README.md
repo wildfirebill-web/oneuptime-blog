@@ -26,6 +26,7 @@ Create and initialize a new project:
 
 ```bash
 # Create a new directory and initialize the project
+
 mkdir my-fastify-app && cd my-fastify-app
 npm init -y
 npm install fastify

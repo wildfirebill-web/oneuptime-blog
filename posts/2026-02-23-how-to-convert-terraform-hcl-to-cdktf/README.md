@@ -16,6 +16,7 @@ The `cdktf convert` command reads HCL and outputs equivalent CDKTF code:
 
 ```bash
 # Convert a single Terraform file to TypeScript
+
 cat main.tf | cdktf convert --language typescript
 
 # Convert from a file directly

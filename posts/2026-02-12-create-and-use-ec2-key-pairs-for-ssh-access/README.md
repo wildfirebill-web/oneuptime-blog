@@ -55,6 +55,7 @@ The private key file downloads automatically. This is the only time you can down
 
 ```bash
 # Move the key to your SSH directory and set proper permissions
+
 mv ~/Downloads/dev-team-2026.pem ~/.ssh/
 chmod 400 ~/.ssh/dev-team-2026.pem
 ```

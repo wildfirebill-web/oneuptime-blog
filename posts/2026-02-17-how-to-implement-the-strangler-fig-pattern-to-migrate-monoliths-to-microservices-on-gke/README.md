@@ -36,6 +36,7 @@ The first step is containerizing the monolith and deploying it to GKE. This gets
 
 ```dockerfile
 # Dockerfile for the monolith
+
 FROM node:20-slim
 
 WORKDIR /app

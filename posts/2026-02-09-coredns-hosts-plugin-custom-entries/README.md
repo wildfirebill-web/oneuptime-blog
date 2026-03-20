@@ -36,6 +36,7 @@ Edit the CoreDNS ConfigMap to add the hosts plugin:
 
 ```bash
 # Get current configuration
+
 kubectl get configmap coredns -n kube-system -o yaml > coredns-config.yaml
 ```
 

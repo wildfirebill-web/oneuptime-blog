@@ -21,6 +21,7 @@ Policy language issues in Cilium range from simple syntax errors to complex rule
 
 ```bash
 # Validate policy YAML before applying
+
 kubectl apply --dry-run=client -f policy.yaml
 
 # Check for rejected policies

@@ -1,4 +1,4 @@
-# How to Use Traefik Labels for Portainer Service Discovery
+# How to Use Traefik Labels for Portainer Service Discovery - Service
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,9 +8,9 @@ Description: Learn how to use Docker labels to configure Traefik routing rules f
 
 ## How Traefik Label-Based Discovery Works
 
-Traefik watches the Docker socket and automatically detects containers with `traefik.enable=true`. When Portainer deploys a container with the right labels, Traefik picks it up and starts routing traffic to it — no restarts needed.
+Traefik watches the Docker socket and automatically detects containers with `traefik.enable=true`. When Portainer deploys a container with the right labels, Traefik picks it up and starts routing traffic to it - no restarts needed.
 
-```
+```bash
 Portainer deploys container with labels
         ↓
 Traefik detects new container via Docker socket
@@ -43,6 +43,7 @@ labels:
 
 ```yaml
 # Match by hostname
+
 - "traefik.http.routers.app.rule=Host(`app.example.com`)"
 
 # Match by path prefix

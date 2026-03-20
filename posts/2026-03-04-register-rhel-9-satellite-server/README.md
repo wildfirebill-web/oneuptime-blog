@@ -48,6 +48,7 @@ The RHEL system needs to trust the Satellite Server's SSL certificate. Download 
 
 ```bash
 # Download and install the Satellite CA certificate
+
 sudo dnf install -y http://satellite.example.com/pub/katello-ca-consumer-latest.noarch.rpm
 ```
 

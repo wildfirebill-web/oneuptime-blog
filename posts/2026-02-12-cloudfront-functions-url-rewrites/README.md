@@ -47,6 +47,7 @@ Create the function:
 
 ```bash
 # Create the CloudFront function
+
 aws cloudfront create-function \
   --name "add-index-html" \
   --function-config '{

@@ -18,6 +18,7 @@ By default, gcloud has one active configuration called "default." When you run `
 
 ```bash
 # The common mistake: deploying to the wrong project
+
 gcloud config set project staging-project
 # ... do some work ...
 # ... time passes ...

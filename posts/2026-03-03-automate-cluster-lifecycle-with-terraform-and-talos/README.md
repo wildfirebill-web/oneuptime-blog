@@ -30,6 +30,7 @@ The creation stage is covered in detail in our cluster creation guide. Here is t
 
 ```hcl
 # Create secrets, generate configs, apply to nodes, bootstrap
+
 resource "talos_machine_secrets" "this" {
   talos_version = var.talos_version
 }

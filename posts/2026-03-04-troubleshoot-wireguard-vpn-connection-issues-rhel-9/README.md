@@ -31,6 +31,7 @@ This is the most common issue. The tunnel is up but `wg show` shows no "latest h
 
 ```bash
 # Check current WireGuard status
+
 sudo wg show wg0
 ```
 

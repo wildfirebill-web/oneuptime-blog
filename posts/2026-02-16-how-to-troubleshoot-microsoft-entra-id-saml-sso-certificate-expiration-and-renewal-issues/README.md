@@ -28,6 +28,7 @@ This PowerShell script checks all SAML-configured applications and reports certi
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Application.Read.All"
 
 # Get all service principals with SAML SSO configured

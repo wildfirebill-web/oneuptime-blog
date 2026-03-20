@@ -191,6 +191,7 @@ To simulate a zone failure, scale down the pods in one zone or use a pod disrupt
 
 ```bash
 # Find pods in a specific zone
+
 kubectl get pods -n failover-test -o wide
 
 # Delete pods on a specific node to simulate zone failure

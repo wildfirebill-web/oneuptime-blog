@@ -35,6 +35,7 @@ The collector exposes Prometheus-format metrics about its own operations. These 
 
 ```bash
 # Fetch collector internal metrics
+
 # Default metrics endpoint is port 8888
 curl -s http://localhost:8888/metrics | grep -E "memory|queue|batch|process_runtime"
 ```

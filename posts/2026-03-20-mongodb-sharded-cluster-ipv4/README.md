@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MongoDB, Sharding, IPv4, Config Server, mongos, Distributed Database, Configuration
+Tags: MongoDB, Sharding, IPv4, Config Server, Mongos, Distributed Database, Configuration
 
 Description: Learn how to set up a MongoDB sharded cluster with IPv4 config servers and shards to horizontally scale a large dataset across multiple servers.
 
@@ -24,6 +24,7 @@ graph TD
 
 ```yaml
 # /etc/mongod-configsvr.conf (on 10.0.0.10)
+
 net:
   bindIp: 10.0.0.10,127.0.0.1
   port: 27019
@@ -117,5 +118,5 @@ sh.status()
 
 - Config servers require a replica set; production deployments use 3 members for high availability.
 - `clusterRole: configsvr` and `shardsvr` must be set correctly in `mongod.conf` for each role.
-- mongos is stateless — run multiple mongos instances for high availability without data concerns.
+- mongos is stateless - run multiple mongos instances for high availability without data concerns.
 - Always bind to specific IPv4 addresses rather than `0.0.0.0` to limit the attack surface.

@@ -41,6 +41,7 @@ Check the cloud-init logs to see what is happening.
 
 ```bash
 # If you can SSH into the VM despite the error, check cloud-init status
+
 cloud-init status --long
 
 # View the detailed cloud-init log

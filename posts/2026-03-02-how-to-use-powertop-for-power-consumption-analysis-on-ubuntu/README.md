@@ -17,6 +17,7 @@ sudo apt update
 sudo apt install powertop
 
 # Verify installation
+
 powertop --version
 ```
 

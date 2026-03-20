@@ -30,6 +30,7 @@ Download the Windows installer from virtualbox.org and run it. Install the Exten
 
 ```bash
 # Install via Homebrew
+
 brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
 ```

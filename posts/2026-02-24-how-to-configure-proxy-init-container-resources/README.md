@@ -212,6 +212,7 @@ If pods fail to start because of init container problems:
 
 ```bash
 # Check init container status
+
 kubectl get pod -l app=my-service -o jsonpath='{.items[0].status.initContainerStatuses}' | jq .
 
 # Look at init container logs

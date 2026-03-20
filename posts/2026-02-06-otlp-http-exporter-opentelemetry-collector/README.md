@@ -34,6 +34,7 @@ Here is a minimal OTLP HTTP exporter configuration. This sends telemetry to a ba
 
 ```yaml
 # receivers configuration (how telemetry enters the Collector)
+
 receivers:
   otlp:
     protocols:

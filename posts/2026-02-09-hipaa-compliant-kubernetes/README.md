@@ -24,6 +24,7 @@ Start by configuring comprehensive audit logging that captures all access to res
 
 ```yaml
 # audit-policy-hipaa.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 metadata:

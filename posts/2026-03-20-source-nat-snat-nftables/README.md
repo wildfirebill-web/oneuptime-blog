@@ -29,6 +29,7 @@ SNAT rules go in the `postrouting` chain, just like masquerade. The key differen
 
 ```bash
 # Create the nat table
+
 nft add table ip nat
 
 # Create the postrouting chain

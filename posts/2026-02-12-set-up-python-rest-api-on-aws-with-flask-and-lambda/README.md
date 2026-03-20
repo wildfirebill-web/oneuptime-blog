@@ -49,6 +49,7 @@ Create your Flask app with proper error handling and logging:
 
 ```python
 # src/app.py
+
 from flask import Flask, jsonify, request
 import logging
 import json

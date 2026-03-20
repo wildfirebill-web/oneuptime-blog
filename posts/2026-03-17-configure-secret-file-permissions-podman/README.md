@@ -18,6 +18,7 @@ By default, secret files mounted in Podman containers have permissions that allo
 
 ```bash
 # Create a secret
+
 echo -n "sensitive-data" | podman secret create my_secret -
 
 # Mount with specific file permissions (read-only for owner)

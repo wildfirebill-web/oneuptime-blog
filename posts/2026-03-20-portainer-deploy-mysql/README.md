@@ -1,4 +1,4 @@
-# How to Deploy MySQL via Portainer
+# How to Deploy MySQL via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -73,6 +73,7 @@ Create `my.cnf`:
 ```ini
 [mysqld]
 # Character set
+
 character-set-server = utf8mb4
 collation-server = utf8mb4_unicode_ci
 

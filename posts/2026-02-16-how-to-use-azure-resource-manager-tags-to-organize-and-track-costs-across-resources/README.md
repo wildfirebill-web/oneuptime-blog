@@ -53,6 +53,7 @@ The Azure CLI makes it straightforward to add tags to resources. Here are the co
 
 ```bash
 # Add tags to a resource group
+
 az group update \
   --name my-resource-group \
   --tags Environment=Production CostCenter=CC-1234 Team=PlatformEng

@@ -29,6 +29,7 @@ Image Builder (composer-cli) is RHEL's native tool for creating system images:
 
 ```bash
 # Install Image Builder
+
 dnf install -y osbuild-composer composer-cli
 systemctl enable --now osbuild-composer.socket
 

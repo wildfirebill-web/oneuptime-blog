@@ -14,6 +14,7 @@ VMware provides paravirtual drivers that outperform emulated hardware. VMXNET3 i
 
 ```bash
 # Check the network adapter type
+
 lspci | grep -i ethernet
 # VMXNET3 shows as: "VMware VMXNET3"
 

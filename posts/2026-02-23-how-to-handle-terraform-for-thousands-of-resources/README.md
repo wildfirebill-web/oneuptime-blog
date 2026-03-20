@@ -22,6 +22,7 @@ The most effective strategy for large-scale Terraform is splitting your state in
 
 ```hcl
 # Instead of one massive state file managing everything:
+
 # infrastructure/terraform.tfstate (5000+ resources)
 
 # Split into focused state files:

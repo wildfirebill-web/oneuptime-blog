@@ -18,6 +18,7 @@ If you installed the kube-prometheus-stack, Grafana is already included. If not,
 
 ```bash
 # Add the Grafana Helm repository
+
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 

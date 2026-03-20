@@ -14,6 +14,7 @@ RHEL provides Node.js through its AppStream repository using modular packages. T
 
 ```bash
 # List available Node.js module streams
+
 sudo dnf module list nodejs
 
 # Output shows available streams like:

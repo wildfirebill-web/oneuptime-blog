@@ -24,6 +24,7 @@ Start by examining the service details:
 
 ```bash
 # View service status
+
 kubectl get svc my-loadbalancer -n my-namespace
 
 # Example pending output:

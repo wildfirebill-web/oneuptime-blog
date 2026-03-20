@@ -29,6 +29,7 @@ Register the Cilium Helm chart repository with Flux.
 
 ```yaml
 # infrastructure/sources/cilium-helmrepo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

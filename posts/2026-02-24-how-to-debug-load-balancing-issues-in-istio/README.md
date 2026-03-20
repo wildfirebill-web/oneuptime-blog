@@ -16,6 +16,7 @@ Before digging into runtime behavior, make sure your configuration is syntactica
 
 ```bash
 # Analyze for configuration issues
+
 istioctl analyze -n default
 
 # Check for warnings and errors

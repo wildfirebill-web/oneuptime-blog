@@ -32,6 +32,7 @@ A cache rule maps a source registry path to a target repository in your ACR.
 
 ```bash
 # Create a cache rule for Docker Hub official images
+
 az acr cache create \
   --registry myregistry \
   --name docker-hub-cache \

@@ -16,6 +16,7 @@ Traditional updates replace the entire kernel package and require a reboot to ta
 
 ```bash
 # Check current kernel version
+
 uname -r
 
 # List available kernel updates

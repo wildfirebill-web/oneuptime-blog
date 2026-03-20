@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Migration, Dashboard, DevOps
+Tags: Portainer, Kubernetes, Migration, Dashboards, DevOps
 
 Description: Migrate your Kubernetes workload management from the default Kubernetes Dashboard to Portainer for enhanced RBAC and multi-cluster support.
 
@@ -23,6 +23,7 @@ The Kubernetes Dashboard is the default web UI for Kubernetes clusters, but it h
 
 ```bash
 # Install Portainer on your Kubernetes cluster via Helm
+
 helm repo add portainer https://portainer.github.io/k8s/
 helm repo update
 
@@ -147,4 +148,4 @@ One of Portainer's key advantages over the Dashboard:
 
 ## Conclusion
 
-Migrating from the Kubernetes Dashboard to Portainer provides multi-cluster management, proper team RBAC, Helm chart deployment, and GitOps integration—features absent from the default Dashboard. The migration is non-disruptive: Portainer sits alongside your existing cluster without changing workload configurations, making it a safe, incremental upgrade.
+Migrating from the Kubernetes Dashboard to Portainer provides multi-cluster management, proper team RBAC, Helm chart deployment, and GitOps integration-features absent from the default Dashboard. The migration is non-disruptive: Portainer sits alongside your existing cluster without changing workload configurations, making it a safe, incremental upgrade.

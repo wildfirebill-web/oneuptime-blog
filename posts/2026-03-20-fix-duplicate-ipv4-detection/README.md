@@ -27,6 +27,7 @@ A duplicate IP address occurs when two devices on the same network segment use t
 
 ```bash
 # Look for ARP conflict messages
+
 dmesg | grep -i "duplicate\|conflict"
 # Example: [1234.567890] IPv4: Gratuitous ARP conflict detected! IP=192.168.1.100
 
@@ -53,7 +54,7 @@ sudo arping -D -I eth0 -c 3 192.168.1.100
 ### Check ARP Cache for Conflicts
 
 ```bash
-# View ARP table — look for duplicate MACs
+# View ARP table - look for duplicate MACs
 arp -a | sort -k 4
 
 # Or with ip command
@@ -216,7 +217,7 @@ netsh trace stop
 
 ## Best Practices
 
-1. **Use DHCP with conflict detection** for dynamic environments — `ping-check` in dhcpd
+1. **Use DHCP with conflict detection** for dynamic environments - `ping-check` in dhcpd
 2. **Document static IP assignments** in your IPAM system to prevent overlaps
 3. **Use DHCP reservations** instead of static IPs on client devices
 4. **Run periodic ARP scans** with tools like arp-scan to detect conflicts proactively
@@ -230,4 +231,4 @@ Duplicate IP addresses are diagnosable with `arping` and ARP cache inspection. F
 
 ---
 
-*Monitor your network and detect connectivity issues with [OneUptime](https://oneuptime.com) — real-time uptime monitoring.*
+*Monitor your network and detect connectivity issues with [OneUptime](https://oneuptime.com) - real-time uptime monitoring.*

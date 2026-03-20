@@ -230,6 +230,7 @@ Create the topic and subscriptions for different consumers:
 
 ```bash
 # Create the Service Bus namespace and topic
+
 az servicebus namespace create \
   --name sb-dynamics-events \
   --resource-group rg-d365-integrations \

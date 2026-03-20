@@ -16,6 +16,7 @@ The `lookup()` function returns a comma-separated string by default. The `query(
 
 ```yaml
 # Demonstrating the difference between lookup and query return types
+
 - hosts: localhost
   gather_facts: false
   tasks:

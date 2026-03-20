@@ -35,6 +35,7 @@ etcd uses the Raft consensus algorithm to maintain consistency across nodes. A c
 
 ```bash
 # For kubeadm-based clusters, etcd runs as a static pod
+
 # Find the etcd pod
 kubectl get pods -n kube-system -l component=etcd
 

@@ -29,6 +29,7 @@ Kubernetes has a built-in ImagePolicyWebhook admission controller that can check
 
 ```yaml
 # talos-image-policy.yaml
+
 # Enable ImagePolicyWebhook admission controller
 cluster:
   apiServer:

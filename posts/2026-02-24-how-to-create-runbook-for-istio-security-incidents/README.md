@@ -34,6 +34,7 @@ A service is receiving traffic from a source that should be blocked by Authoriza
 
 ```bash
 # Check which authorization policies apply to the affected service
+
 kubectl get authorizationpolicies -n <namespace>
 
 # View the specific policy

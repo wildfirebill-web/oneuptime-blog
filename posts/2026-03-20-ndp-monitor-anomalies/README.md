@@ -12,7 +12,7 @@ Continuous monitoring of NDP traffic is essential for detecting IPv6 first-hop a
 
 ## Key NDP Metrics to Monitor
 
-```
+```text
 NDP Anomaly Indicators:
 
 1. RA Rate (should be ~1 per 200 seconds per router):
@@ -49,6 +49,7 @@ NDP Anomaly Indicators:
 ```bash
 #!/bin/bash
 # NDP Anomaly Monitor
+
 # Run as: sudo bash ndp-monitor.sh eth0
 
 IFACE=${1:-eth0}
@@ -131,7 +132,7 @@ sudo ndpmon
 
 Use Wireshark's statistics features for traffic analysis.
 
-```
+```text
 Wireshark NDP Monitoring:
 
 Capture Filter (for live capture):
@@ -186,7 +187,7 @@ done
 
 ## SNMP/IPFIX-Based Monitoring
 
-```
+```bash
 For enterprise monitoring systems (SNMP/IPFIX):
 
 SNMP OIDs for IPv6 NDP:

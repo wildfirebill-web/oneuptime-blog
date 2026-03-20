@@ -20,6 +20,7 @@ Nginx Proxy Manager (NPM) provides a web interface for managing Nginx reverse pr
 
 ```yaml
 # /opt/proxy-manager/docker-compose.yml
+
 version: "3.8"
 
 services:
@@ -28,8 +29,8 @@ services:
     container_name: nginx-proxy-manager
     restart: unless-stopped
     ports:
-      - "80:80"      # HTTP — required for Let's Encrypt HTTP challenge
-      - "443:443"    # HTTPS — your services
+      - "80:80"      # HTTP - required for Let's Encrypt HTTP challenge
+      - "443:443"    # HTTPS - your services
       - "81:81"      # NPM admin interface
     environment:
       DB_MYSQL_HOST: "npm-db"
@@ -114,7 +115,7 @@ docker logs nginx-proxy-manager --follow
 
 Create DNS A records for both services:
 
-```
+```text
 portainer.example.com   A   YOUR_SERVER_IP
 npm.example.com         A   YOUR_SERVER_IP   # For NPM admin itself (optional)
 ```
@@ -125,7 +126,7 @@ npm.example.com         A   YOUR_SERVER_IP   # For NPM admin itself (optional)
 2. Click **Hosts** → **Proxy Hosts** → **Add Proxy Host**
 3. Configure:
 
-```
+```bash
 Details tab:
   Domain Names: portainer.example.com
   Scheme: http
@@ -142,7 +143,7 @@ SSL tab:
   Let's Encrypt checkbox: checked
 ```
 
-4. Click **Save** — NPM will automatically request and configure the Let's Encrypt certificate.
+4. Click **Save** - NPM will automatically request and configure the Let's Encrypt certificate.
 
 ## Step 6: Verify the Setup
 
@@ -183,4 +184,4 @@ ssh -L 8181:127.0.0.1:81 user@your-server
 
 ## Conclusion
 
-Nginx Proxy Manager paired with Portainer gives teams a fully GUI-managed Docker infrastructure — no command line required for day-to-day operations. NPM handles SSL certificate provisioning and renewal automatically while Portainer manages container deployments. The key is connecting both on the same Docker network so NPM can reach Portainer containers by name, and enabling WebSocket support for Portainer's terminal functionality.
+Nginx Proxy Manager paired with Portainer gives teams a fully GUI-managed Docker infrastructure - no command line required for day-to-day operations. NPM handles SSL certificate provisioning and renewal automatically while Portainer manages container deployments. The key is connecting both on the same Docker network so NPM can reach Portainer containers by name, and enabling WebSocket support for Portainer's terminal functionality.

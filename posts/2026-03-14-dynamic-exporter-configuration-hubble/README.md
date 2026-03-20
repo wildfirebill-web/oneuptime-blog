@@ -29,6 +29,7 @@ Enable the dynamic exporter through Helm values:
 
 ```yaml
 # cilium-dynamic-exporter.yaml
+
 hubble:
   enabled: true
   export:

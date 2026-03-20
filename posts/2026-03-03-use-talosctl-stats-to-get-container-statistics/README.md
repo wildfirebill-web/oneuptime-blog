@@ -16,6 +16,7 @@ The `talosctl stats` command queries containerd on the target node and returns r
 
 ```bash
 # Get container statistics for a node
+
 talosctl stats --nodes 192.168.1.20
 ```
 

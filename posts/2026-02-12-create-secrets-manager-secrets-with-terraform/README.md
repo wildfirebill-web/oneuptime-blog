@@ -18,6 +18,7 @@ Here's the simplest way to create a secret. We'll create the secret resource and
 
 ```hcl
 # Create the secret container
+
 resource "aws_secretsmanager_secret" "db_password" {
   name        = "myapp/production/db-password"
   description = "Database password for the production application"
@@ -209,7 +210,7 @@ resource "aws_iam_role_policy" "rotator" {
 }
 ```
 
-## Resource Policy for Cross-Account Access
+Resource Policy for Cross-Account Access
 
 Allow another AWS account to retrieve your secrets:
 

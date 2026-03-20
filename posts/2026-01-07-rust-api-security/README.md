@@ -44,6 +44,7 @@ graph TD
 ```toml
 [dependencies]
 # Web framework
+
 axum = "0.7"
 tokio = { version = "1", features = ["full"] }
 

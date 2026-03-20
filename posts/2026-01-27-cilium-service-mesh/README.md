@@ -52,6 +52,7 @@ Check your kernel version:
 
 ```bash
 # Verify kernel version supports eBPF features
+
 # Cilium requires kernel 4.19+, but 5.10+ enables all features
 uname -r
 ```

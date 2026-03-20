@@ -30,6 +30,7 @@ Here is a basic bulkhead setup for two downstream services:
 
 ```yaml
 # Bulkhead for Service B (payment service - critical)
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

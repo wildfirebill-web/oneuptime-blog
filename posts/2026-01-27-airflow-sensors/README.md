@@ -40,6 +40,7 @@ The `FileSensor` monitors a filesystem path and succeeds when the file or direct
 
 ```python
 # file_sensor_example.py
+
 # Demonstrates using FileSensor to wait for a data file before processing
 
 from airflow import DAG

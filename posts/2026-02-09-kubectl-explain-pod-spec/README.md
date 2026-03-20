@@ -16,6 +16,7 @@ Get information about any Kubernetes resource:
 
 ```bash
 # Explain pod resource
+
 kubectl explain pod
 
 # Explain deployment

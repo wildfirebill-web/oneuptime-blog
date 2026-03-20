@@ -37,6 +37,7 @@ OpsLevel provides a Kubernetes integration that can discover and sync ArgoCD App
 
 ```bash
 # Install the OpsLevel Kubernetes agent
+
 helm repo add opslevel https://opslevel.github.io/helm-charts
 helm repo update
 

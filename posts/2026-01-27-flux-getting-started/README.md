@@ -106,6 +106,7 @@ Before installing Flux, ensure you have:
 
 ```bash
 # Check Kubernetes cluster access
+
 kubectl cluster-info
 
 # Verify kubectl version (1.20+)

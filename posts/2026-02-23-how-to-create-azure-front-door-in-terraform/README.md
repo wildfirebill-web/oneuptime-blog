@@ -16,6 +16,7 @@ This guide covers setting up Azure Front Door using Terraform, including the new
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -32,7 +33,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group
+Resource Group
 
 ```hcl
 # main.tf

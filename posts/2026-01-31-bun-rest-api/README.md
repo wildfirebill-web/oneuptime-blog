@@ -956,6 +956,7 @@ You can test the API using curl commands:
 
 ```bash
 # Health check
+
 curl http://localhost:3000/health
 
 # Create a user

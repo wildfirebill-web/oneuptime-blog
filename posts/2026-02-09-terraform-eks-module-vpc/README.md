@@ -26,6 +26,7 @@ We will use the popular `terraform-aws-modules/vpc/aws` community module as a fo
 
 ```hcl
 # modules/eks-vpc/variables.tf
+
 variable "cluster_name" {
   type        = string
   description = "Name of the EKS cluster (used for subnet tagging)"

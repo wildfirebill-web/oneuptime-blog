@@ -14,6 +14,7 @@ By default, `tofu plan` and `tofu apply` refresh the state by querying each trac
 
 ```bash
 # Plan without refreshing state
+
 tofu plan -refresh=false
 
 # Apply without refreshing state
@@ -40,7 +41,7 @@ With `-refresh=false`, step 1 is skipped.
 ```bash
 # Safe: right after a fresh apply (state is definitely accurate)
 tofu apply
-tofu apply -refresh=false  # Safe — just applied, no drift possible
+tofu apply -refresh=false  # Safe - just applied, no drift possible
 
 # Safe: in a tightly controlled automated pipeline where no manual changes occur
 tofu plan -refresh=false   # Fast plan for configuration changes only
@@ -79,11 +80,11 @@ tofu plan -target=aws_lambda_function.processor -refresh=false
 # Plan step
 tofu plan -out=tfplan -refresh=false -input=false
 
-# Apply step (uses the saved plan — no refresh needed at apply time)
+# Apply step (uses the saved plan - no refresh needed at apply time)
 tofu apply tfplan
 ```
 
-When applying a saved plan file, the refresh question is moot — the plan already captured state at plan time.
+When applying a saved plan file, the refresh question is moot - the plan already captured state at plan time.
 
 ## Alternative: -refresh-only for Explicit Drift Detection
 

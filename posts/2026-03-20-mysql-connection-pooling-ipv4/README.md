@@ -14,6 +14,7 @@ MySQL has a connection limit and each connection consumes memory. ProxySQL acts 
 
 ```bash
 # Debian/Ubuntu
+
 curl -O https://github.com/sysown/proxysql/releases/download/v2.5.5/proxysql_2.5.5-debian-bullseye_amd64.deb
 sudo dpkg -i proxysql_2.5.5-debian-bullseye_amd64.deb
 

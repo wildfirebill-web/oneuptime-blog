@@ -348,6 +348,7 @@ func TestTerraformPlan(t *testing.T) {
 
 ```bash
 # Run all tests
+
 cd modules/cloud-run/test
 GCP_PROJECT_ID=my-test-project go test -v -timeout 30m
 

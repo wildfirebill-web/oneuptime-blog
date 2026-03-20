@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Backup, Backup Plans, Infrastructure as Code
+Tags: OpenTofu, AWS, Backup, Backup Plan, Infrastructure as Code
 
 Description: Learn how to create comprehensive AWS Backup plans with OpenTofu for multi-tier retention policies, cross-region replication, and compliance-driven backup schedules.
 
@@ -14,7 +14,7 @@ AWS Backup plans define when backups run, how long they're retained, and whether
 resource "aws_backup_plan" "production_tiered" {
   name = "production-tiered-backup"
 
-  # Hourly backups for databases — 24-hour retention
+  # Hourly backups for databases - 24-hour retention
   rule {
     rule_name         = "hourly-db-backup"
     target_vault_name = aws_backup_vault.hot.name
@@ -25,7 +25,7 @@ resource "aws_backup_plan" "production_tiered" {
     }
   }
 
-  # Daily backups — 30-day retention with cold storage transition
+  # Daily backups - 30-day retention with cold storage transition
   rule {
     rule_name         = "daily-backup"
     target_vault_name = aws_backup_vault.main.name
@@ -50,7 +50,7 @@ resource "aws_backup_plan" "production_tiered" {
     }
   }
 
-  # Weekly backups — 1-year retention
+  # Weekly backups - 1-year retention
   rule {
     rule_name         = "weekly-backup"
     target_vault_name = aws_backup_vault.main.name
@@ -71,7 +71,7 @@ resource "aws_backup_plan" "production_tiered" {
     }
   }
 
-  # Monthly backups — 7-year retention (compliance)
+  # Monthly backups - 7-year retention (compliance)
   rule {
     rule_name         = "monthly-backup"
     target_vault_name = aws_backup_vault.compliance.name

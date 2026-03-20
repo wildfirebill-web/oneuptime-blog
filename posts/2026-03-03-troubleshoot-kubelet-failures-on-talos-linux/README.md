@@ -18,6 +18,7 @@ The first thing you should do is check whether the kubelet service is running at
 
 ```bash
 # Check the status of the kubelet service
+
 talosctl -n <node-ip> service kubelet
 ```
 

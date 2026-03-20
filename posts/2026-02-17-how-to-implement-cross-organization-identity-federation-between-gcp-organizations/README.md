@@ -41,6 +41,7 @@ In Organization A (the one that owns the resources):
 
 ```bash
 # Create a workload identity pool to accept identities from the partner organization
+
 gcloud iam workload-identity-pools create partner-org-pool \
     --project=org-a-project \
     --location=global \

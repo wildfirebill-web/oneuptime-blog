@@ -111,6 +111,7 @@ Column-level security uses policy tags from Data Catalog. You create a taxonomy 
 
 ```bash
 # Create a taxonomy for data sensitivity levels
+
 gcloud data-catalog taxonomies create \
   --location=us \
   --display-name="Data Sensitivity" \

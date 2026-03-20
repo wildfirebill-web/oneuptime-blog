@@ -14,6 +14,7 @@ Here is a minimal AsyncAPI spec describing an order processing system:
 
 ```yaml
 # asyncapi.yaml
+
 asyncapi: "2.6.0"
 info:
   title: Order Processing Service

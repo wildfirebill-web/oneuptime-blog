@@ -20,6 +20,7 @@ Create a `versions.tf` file to pin the provider version:
 
 ```hcl
 # versions.tf - Pin the Terraform and provider versions for reproducibility
+
 terraform {
   required_version = ">= 1.5.0"
 

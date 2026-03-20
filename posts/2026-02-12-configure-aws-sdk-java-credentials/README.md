@@ -45,6 +45,7 @@ The most common approach for containers and CI/CD.
 
 ```bash
 # Set these in your environment
+
 export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 export AWS_SESSION_TOKEN=FwoGZXIvYXdzEBY...  # optional, for temp credentials

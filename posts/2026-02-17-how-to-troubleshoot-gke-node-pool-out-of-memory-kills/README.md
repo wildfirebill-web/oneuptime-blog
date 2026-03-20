@@ -18,6 +18,7 @@ First, confirm that OOM is actually the problem:
 
 ```bash
 # Check pod status for OOMKilled
+
 kubectl get pods -n my-namespace -o wide
 
 # Look at the last termination reason

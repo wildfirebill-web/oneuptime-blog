@@ -25,6 +25,7 @@ The main interaction points are:
 
 ```bash
 # Check Weave Net status
+
 kubectl get pods -n kube-system -l name=weave-net
 
 # Check Weave Net version

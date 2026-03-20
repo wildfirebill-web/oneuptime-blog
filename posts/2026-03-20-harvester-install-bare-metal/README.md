@@ -37,6 +37,7 @@ Download the latest stable Harvester ISO from the GitHub releases page:
 
 ```bash
 # Download the latest Harvester ISO
+
 wget https://releases.rancher.com/harvester/v1.3.0/harvester-v1.3.0-amd64.iso
 
 # Verify the checksum
@@ -71,7 +72,7 @@ Before booting from the installation media, configure your server's BIOS/UEFI:
 1. Insert the USB drive into the server
 2. Power on the server and enter the boot menu (typically F12, F10, or Del)
 3. Select the USB drive as the boot device
-4. The Harvester installer GRUB menu will appear — select **Install Harvester**
+4. The Harvester installer GRUB menu will appear - select **Install Harvester**
 
 ## Step 5: Run the Interactive Installer
 
@@ -81,7 +82,7 @@ The Harvester installer is a text-based UI that guides you through the setup:
 Choose **Create a new Harvester cluster** for the first node, or **Join an existing Harvester cluster** for additional nodes.
 
 ### Network Configuration
-```
+```text
 # Example network settings for the management interface
 Management NIC:   eth0
 IP Address:       192.168.1.10/24
@@ -92,7 +93,7 @@ DNS:              8.8.8.8, 8.8.4.4
 ### Cluster VIP
 The Virtual IP (VIP) is the highly available endpoint for the cluster API and UI:
 
-```
+```text
 Cluster VIP: 192.168.1.100
 ```
 
@@ -101,7 +102,7 @@ This VIP must be on the same subnet as the management network and must not be as
 ### Storage Configuration
 Select the disk(s) for the Harvester OS installation. Harvester will use the remaining disks for VM storage via Longhorn.
 
-```
+```text
 OS Disk:      /dev/sda  (250 GB SSD - for the operating system)
 Data Disks:   /dev/sdb, /dev/sdc  (auto-detected by Longhorn)
 ```

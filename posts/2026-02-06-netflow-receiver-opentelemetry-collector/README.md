@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Collector, NetFlow, Network Monitoring, IPFIX, SFlow
+Tags: OpenTelemetry, Collector, NetFlow, Network Monitoring, IPFIX, sFlow
 
 Description: Learn how to configure the Netflow Receiver in the OpenTelemetry Collector to collect and analyze network flow data from routers and switches.
 
@@ -504,7 +504,7 @@ service:
       exporters: [otlp]
 ```
 
-## Resource Attributes
+Resource Attributes
 
 Add contextual information to flow data.
 

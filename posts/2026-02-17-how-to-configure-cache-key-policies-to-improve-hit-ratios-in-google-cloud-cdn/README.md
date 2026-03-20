@@ -44,6 +44,7 @@ The most common optimization is excluding query parameters that do not affect th
 
 ```bash
 # Exclude specific query string parameters from the cache key
+
 gcloud compute backend-services update my-backend \
     --cache-key-include-query-string \
     --cache-key-query-string-blacklist="utm_source,utm_medium,utm_campaign,fbclid,gclid,_ga" \

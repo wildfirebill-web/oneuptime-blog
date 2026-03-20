@@ -8,7 +8,7 @@ Description: Configure Nginx as a Layer 4 TCP and UDP load balancer using the st
 
 ## Introduction
 
-Nginx's `stream` module enables Layer 4 (TCP/UDP) load balancing. This is separate from the `http` module and handles any TCP or UDP protocol — MySQL, PostgreSQL, Redis, DNS, MQTT, and more. The stream block goes in the main `nginx.conf`.
+Nginx's `stream` module enables Layer 4 (TCP/UDP) load balancing. This is separate from the `http` module and handles any TCP or UDP protocol - MySQL, PostgreSQL, Redis, DNS, MQTT, and more. The stream block goes in the main `nginx.conf`.
 
 ## Enabling the Stream Module
 
@@ -17,6 +17,7 @@ The stream module is included in most Nginx installations. Verify:
 ```bash
 nginx -V 2>&1 | grep stream
 # Should show: --with-stream
+
 ```
 
 ## TCP Load Balancing

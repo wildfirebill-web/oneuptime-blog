@@ -35,6 +35,7 @@ The global load balancer uses anycast routing. Users' requests go to the nearest
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   run.googleapis.com \
   compute.googleapis.com

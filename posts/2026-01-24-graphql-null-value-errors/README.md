@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Error Handling, Resolvers, Debugging, Node.js
+Tags: GraphQL, Error Handling, Resolver, Debugging, Node.js
 
 Description: Learn how to diagnose and fix null value errors in GraphQL resolvers, understand nullable vs non-nullable fields, and implement proper error handling.
 
@@ -58,6 +58,7 @@ The most common cause is when the database returns null for a field marked as no
 
 ```graphql
 # schema.graphql - The problematic schema
+
 type User {
   id: ID!
   email: String!     # Non-nullable, but might be null in database

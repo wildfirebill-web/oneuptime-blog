@@ -40,6 +40,7 @@ Debezium stores schema history to track changes over time. Configure storage loc
 
 ```properties
 # For PostgreSQL connector
+
 schema.history.internal.kafka.bootstrap.servers=kafka:9092
 schema.history.internal.kafka.topic=schema-changes.inventory
 

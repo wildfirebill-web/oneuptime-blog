@@ -58,6 +58,7 @@ Create a Dockerfile that combines Docker and Podman tooling:
 FROM quay.io/podman/stable
 
 # Install build tools
+
 RUN dnf install -y \
     git \
     make \

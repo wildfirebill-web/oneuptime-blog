@@ -95,6 +95,7 @@ The webhook runs inside istiod. If istiod is down or the API server can't reach 
 
 ```bash
 # Check istiod is running
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check istiod's webhook port is responding

@@ -25,6 +25,7 @@ The validation must confirm: all calico-felix agents on compute nodes are update
 
 ```bash
 # Standard Kubernetes validation
+
 kubectl get tigerastatus
 kubectl get pods -n calico-system
 

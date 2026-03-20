@@ -30,6 +30,7 @@ Verify that Calico components expose Prometheus metrics:
 
 ```bash
 # Check if calico-node metrics are enabled
+
 kubectl get daemonset -n calico-system calico-node -o yaml | grep -i "prometheus\|metrics"
 
 # Verify metrics endpoint is accessible

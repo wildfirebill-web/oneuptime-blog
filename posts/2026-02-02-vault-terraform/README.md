@@ -58,6 +58,7 @@ For testing purposes, you can start a development Vault server. Keep in mind tha
 
 ```bash
 # Start Vault in development mode with a root token
+
 # The -dev flag enables an in-memory backend with auto-unsealing
 vault server -dev -dev-root-token-id="dev-token"
 

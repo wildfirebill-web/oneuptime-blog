@@ -20,6 +20,7 @@ MongoDB is a document-oriented NoSQL database that stores data in flexible JSON-
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Add MongoDB repository

@@ -10,7 +10,7 @@ Description: Systematically validate IPv6 lab connectivity including reachabilit
 
 ```bash
 #!/bin/bash
-# validate-ipv6-lab.sh — Run after building IPv6 lab
+# validate-ipv6-lab.sh - Run after building IPv6 lab
 
 PASS=0
 FAIL=0
@@ -23,6 +23,7 @@ warn() { echo "  WARN: $1"; ((WARN++)); }
 section() { echo ""; echo "=== $1 ==="; }
 
 # ─────────────────────────────────────────────────────────
+
 section "1. Basic IPv6 Configuration"
 
 # Check IPv6 is enabled on kernel
@@ -37,7 +38,7 @@ GLOBAL=$(ip -6 addr show scope global | grep -c inet6)
 if [ "${GLOBAL}" -gt 0 ]; then
     pass "Global unicast address present (${GLOBAL} addresses)"
 else
-    warn "No global unicast address — only link-local?"
+    warn "No global unicast address - only link-local?"
 fi
 
 # Check forwarding (for routers)
@@ -174,4 +175,4 @@ check_port "2001:db8::2" 22 "SSH Router2"
 
 ## Conclusion
 
-IPv6 lab validation requires checking multiple layers: kernel configuration, address assignment, routing, DNS, MTU path discovery, and application port reachability. A systematic pass/fail script catches issues immediately after topology changes. MTU validation is particularly important because IPv6 mandates a minimum 1280-byte MTU — anything below this breaks NDP and routing protocol traffic. Run validation after every topology change or provisioning update to ensure the lab remains functional.
+IPv6 lab validation requires checking multiple layers: kernel configuration, address assignment, routing, DNS, MTU path discovery, and application port reachability. A systematic pass/fail script catches issues immediately after topology changes. MTU validation is particularly important because IPv6 mandates a minimum 1280-byte MTU - anything below this breaks NDP and routing protocol traffic. Run validation after every topology change or provisioning update to ensure the lab remains functional.

@@ -53,6 +53,7 @@ Open `http://<host>:8080` to view the built-in dashboard with:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: cadvisor
     static_configs:

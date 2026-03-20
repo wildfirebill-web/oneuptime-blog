@@ -47,6 +47,7 @@ Key metrics:
 
 ```promql
 # CES reconciliation duration
+
 histogram_quantile(0.99, rate(cilium_operator_ces_sync_total_bucket[5m]))
 
 # Number of CES resources

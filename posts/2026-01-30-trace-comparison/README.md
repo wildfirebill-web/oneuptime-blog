@@ -351,6 +351,7 @@ Run trace comparison as part of your deployment pipeline:
 
 ```yaml
 # .github/workflows/trace-comparison.yml
+
 name: Trace Comparison Check
 
 on:

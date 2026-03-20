@@ -147,6 +147,7 @@ For the apex domain, create a TXT record for validation, then an ALIAS or A reco
 
 ```text
 # Validation TXT record
+
 example.com  TXT  <validation-token-from-output>
 
 # After validation, point to the app

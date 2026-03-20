@@ -14,6 +14,7 @@ SNMP (Simple Network Management Protocol) allows monitoring systems to query hos
 
 ```bash
 # Install SNMP daemon and utilities
+
 sudo dnf install -y net-snmp net-snmp-utils net-snmp-libs
 ```
 

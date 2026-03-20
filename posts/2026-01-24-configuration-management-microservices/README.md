@@ -48,6 +48,7 @@ flowchart LR
 
 ```yaml
 # config/base-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

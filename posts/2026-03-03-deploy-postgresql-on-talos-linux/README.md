@@ -31,6 +31,7 @@ PostgreSQL needs reliable persistent storage. On Talos Linux, you will typically
 
 ```yaml
 # local-path-provisioner-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

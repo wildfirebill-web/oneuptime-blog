@@ -192,6 +192,7 @@ Regularly check who has admin access:
 
 ```bash
 # List all administrators
+
 echo "=== Current Administrators ==="
 kubectl get globalrolebindings -o json | \
   jq -r '.items[] | select(.globalRoleName == "admin") | "\(.userName)\t\(.metadata.creationTimestamp)"' | \

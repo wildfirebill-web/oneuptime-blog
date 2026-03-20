@@ -32,6 +32,7 @@ This guide covers deploying a synthetic connectivity probe DaemonSet, setting up
 
 ```bash
 # Check if Felix metrics are enabled
+
 calicoctl get felixconfiguration default -o yaml | grep prometheus
 
 # Check current drop counters

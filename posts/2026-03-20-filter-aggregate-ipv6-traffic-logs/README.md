@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Log Analysis, Aggregation, Python, awk
+Tags: IPv6, Log Analysis, Aggregation, Python, Awk
 
 Description: Filter and aggregate IPv6 traffic log data using command-line tools, Python, and SQL to produce traffic reports by subnet, address type, and time period.
 
@@ -14,7 +14,7 @@ Log aggregation for IPv6 traffic involves grouping by address, subnet prefix, ad
 
 ```bash
 #!/bin/bash
-# aggregate_ipv6_logs.sh — Quick IPv6 log analysis
+# aggregate_ipv6_logs.sh - Quick IPv6 log analysis
 
 LOG_FILE="${1:-/var/log/nginx/access.log}"
 
@@ -23,6 +23,7 @@ echo "File: $LOG_FILE"
 echo ""
 
 # Count total IPv6 requests
+
 IPV6_COUNT=$(grep -cE '^\[?[0-9a-fA-F]{1,4}:[0-9a-fA-F:]+\]?' "$LOG_FILE" 2>/dev/null || echo 0)
 echo "Total IPv6 requests: $IPV6_COUNT"
 

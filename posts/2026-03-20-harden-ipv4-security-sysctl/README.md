@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: sysctl, Linux, Security, IPv4, Hardening, Kernel
+Tags: Sysctl, Linux, Security, IPv4, Hardening, Kernel
 
 Description: Apply a comprehensive set of sysctl parameters to harden the Linux kernel's IPv4 networking stack against spoofing, floods, and reconnaissance attacks.
 
@@ -12,7 +12,7 @@ The Linux kernel exposes hundreds of tunable security parameters via sysctl. App
 
 The most important parameters fall into these categories:
 
-```
+```text
 Category              Parameters
 --------------------  ------------------------------------------
 Spoofing prevention   rp_filter, martian logging
@@ -28,6 +28,7 @@ Logging               log_martians
 # /etc/sysctl.d/99-security.conf
 
 # Enable strict reverse path filtering (drop spoofed source IPs)
+
 net.ipv4.conf.all.rp_filter = 1
 net.ipv4.conf.default.rp_filter = 1
 

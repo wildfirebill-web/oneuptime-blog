@@ -38,6 +38,7 @@ First, let's configure Spring Boot to handle large files properly. Add these pro
 
 ```properties
 # Maximum file size (default is 1MB)
+
 spring.servlet.multipart.max-file-size=10GB
 
 # Maximum request size (includes all files and form data)

@@ -194,6 +194,7 @@ If you must store secrets in git (for full GitOps), use Sealed Secrets. They are
 
 ```bash
 # Install kubeseal CLI
+
 brew install kubeseal
 
 # Create a sealed secret from a regular secret

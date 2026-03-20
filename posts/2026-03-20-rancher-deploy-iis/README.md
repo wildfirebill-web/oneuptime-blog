@@ -1,4 +1,4 @@
-# How to Deploy IIS on Windows Nodes in Rancher
+# How to Deploy IIS on Windows Nodes in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Internet Information Services (IIS) is Microsoft's web server for hosting ASP.NE
 
 ```dockerfile
 # Dockerfile - IIS with ASP.NET Framework 4.8
+
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022
 
 # Install additional IIS features
@@ -280,4 +281,4 @@ public partial class healthcheck : System.Web.UI.Page
 
 ## Conclusion
 
-Deploying IIS on Windows nodes in Rancher brings legacy ASP.NET applications into the Kubernetes ecosystem without rewriting them. The ServiceMonitor.exe binary in the Windows Server Core IIS image is essential—it properly manages the IIS worker process lifecycle inside containers. Key configuration points are using longer readiness probe initial delays (90-120 seconds) for IIS startup time, configuring appropriate resource limits for the application pool, and using persistent volumes for IIS logs to support debugging. This approach enables gradual modernization by running IIS applications alongside newer microservices.
+Deploying IIS on Windows nodes in Rancher brings legacy ASP.NET applications into the Kubernetes ecosystem without rewriting them. The ServiceMonitor.exe binary in the Windows Server Core IIS image is essential-it properly manages the IIS worker process lifecycle inside containers. Key configuration points are using longer readiness probe initial delays (90-120 seconds) for IIS startup time, configuring appropriate resource limits for the application pool, and using persistent volumes for IIS logs to support debugging. This approach enables gradual modernization by running IIS applications alongside newer microservices.

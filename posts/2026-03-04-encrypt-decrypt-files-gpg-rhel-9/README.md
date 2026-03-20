@@ -32,6 +32,7 @@ Symmetric encryption uses a single passphrase. Anyone who knows the passphrase c
 
 ```bash
 # Encrypt a file with a passphrase (interactive prompt)
+
 gpg --symmetric --cipher-algo AES256 myfile.txt
 
 # This creates myfile.txt.gpg

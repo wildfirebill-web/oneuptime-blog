@@ -137,6 +137,7 @@ Here is what a basic init script template looks like:
 ```bash
 #!/bin/bash
 # /etc/init.d/myapp
+
 # chkconfig: 2345 95 05
 # description: My Application Service
 

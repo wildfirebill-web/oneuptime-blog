@@ -32,6 +32,7 @@ Pull rightsizing recommendations programmatically:
 
 ```bash
 # List rightsizing recommendations for a specific project and zone
+
 gcloud recommender recommendations list \
   --recommender=google.compute.instance.MachineTypeRecommender \
   --location=us-central1-a \

@@ -29,6 +29,7 @@ UFW-induced failures are particularly insidious because they often appear interm
 
 ```bash
 # Check UFW and FORWARD policy on all nodes
+
 for NODE in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   echo -n "$NODE UFW: "
   ssh $NODE "sudo ufw status | grep Status" 2>/dev/null

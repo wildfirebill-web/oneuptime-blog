@@ -94,6 +94,7 @@ spec:
 
 ```bash
 # Confirm environment variables are set (never log actual values in production)
+
 kubectl exec -it <pod-name> --namespace=production \
   -- env | grep -E "PASSWORD|API_KEY|TOKEN" | cut -d= -f1
 # Output: only the variable names, not values

@@ -27,6 +27,7 @@ Before configuring networking, understand what Windows nodes support.
 
 ```bash
 # Check which CNI plugin is in use
+
 kubectl get pods -n kube-system | grep -E "calico|antrea|azure-cni|flannel"
 
 # Windows network mode affects what is supported:

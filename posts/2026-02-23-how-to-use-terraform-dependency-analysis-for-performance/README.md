@@ -22,6 +22,7 @@ resource "aws_vpc" "main" {
 }
 
 # Implicit dependency on aws_vpc.main through subnet_id reference
+
 resource "aws_subnet" "private" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.1.0/24"

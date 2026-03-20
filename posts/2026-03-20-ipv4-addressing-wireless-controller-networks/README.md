@@ -12,12 +12,12 @@ Wireless networks have unique IPv4 addressing needs: the wireless LAN controller
 
 ## Wireless Network Address Layers
 
-```
+```text
 Layer               VLAN   Subnet             Purpose
 ──────────────────────────────────────────────────────────────
 WLC Management       99   10.1.99.0/28       Controller web/SSH
 AP Management        50   10.1.50.0/22       One IP per AP
-CAPWAP Tunnels        —   (uses AP mgmt IP)  Control/data tunnel
+CAPWAP Tunnels        -   (uses AP mgmt IP)  Control/data tunnel
 SSID-Corp          100   10.1.100.0/22       Employee Wi-Fi
 SSID-Guest         200   10.1.200.0/22       Guest Wi-Fi
 SSID-IoT           300   10.1.50.0/23        IoT devices
@@ -25,7 +25,7 @@ SSID-IoT           300   10.1.50.0/23        IoT devices
 
 ## AP Addressing Strategy
 
-```
+```text
 For 500 APs across a campus:
   AP management subnet: 10.1.50.0/22  (1022 usable IPs)
   Allocate by building:
@@ -54,8 +54,9 @@ for i, building in enumerate(BUILDINGS):
 
 ## DHCP Option 43 for AP Discovery (Cisco WLC)
 
-```
-# ISC DHCP — DHCP option 43 for LWAPP/CAPWAP
+```text
+# ISC DHCP - DHCP option 43 for LWAPP/CAPWAP
+
 option space Cisco;
 option Cisco.wlc-address code 241 = ip-address;
 
@@ -70,7 +71,7 @@ subnet 10.1.50.0 netmask 255.255.252.0 {
 
 ## Cisco WLC Interface Configuration
 
-```
+```text
 ! WLC management interface
 Interface Name:    management
 VLAN:              99
@@ -94,8 +95,8 @@ DHCP Server:       10.1.1.20
 
 ## Client DHCP Scopes
 
-```
-# Corporate SSID — 1000 concurrent clients
+```text
+# Corporate SSID - 1000 concurrent clients
 subnet 10.1.100.0 netmask 255.255.252.0 {
   range 10.1.100.10 10.1.103.250;
   option routers 10.1.100.1;
@@ -104,7 +105,7 @@ subnet 10.1.100.0 netmask 255.255.252.0 {
   max-lease-time    7200;
 }
 
-# Guest SSID — limited to internet only, shorter lease
+# Guest SSID - limited to internet only, shorter lease
 subnet 10.1.200.0 netmask 255.255.252.0 {
   range 10.1.200.10 10.1.203.250;
   option routers 10.1.200.1;

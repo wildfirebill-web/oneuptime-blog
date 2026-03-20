@@ -33,6 +33,7 @@ Security Command Center Premium includes built-in CIS benchmark scanning through
 
 ```bash
 # Enable Security Health Analytics
+
 gcloud scc settings services enable \
   --organization=123456789 \
   --service=SECURITY_HEALTH_ANALYTICS

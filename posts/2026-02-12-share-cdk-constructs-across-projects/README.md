@@ -18,6 +18,7 @@ A construct library is just an npm package that exports CDK constructs. Here's h
 
 ```bash
 # Create the construct library project
+
 mkdir company-cdk-constructs && cd company-cdk-constructs
 npx cdk init lib --language typescript
 ```

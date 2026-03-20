@@ -193,6 +193,7 @@ After configuring cipher suites, verify with `openssl` or `nmap`:
 
 ```bash
 # Test a specific cipher suite
+
 openssl s_client -connect gateway-ip:443 \
   -servername app.example.com \
   -cipher ECDHE-RSA-AES256-GCM-SHA384

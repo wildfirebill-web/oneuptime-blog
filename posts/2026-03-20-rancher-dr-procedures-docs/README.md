@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, documentation, runbooks, kubernetes
+Tags: Rancher, Disaster-recovery, Documentation, Runbook, Kubernetes
 
 Description: Best practices for creating clear, actionable disaster recovery documentation for Rancher that teams can follow under pressure.
 
@@ -20,7 +20,7 @@ Good DR documentation is as important as the technical implementation. When a di
 
 ## DR Documentation Structure
 
-```
+```text
 dr-documentation/
 ├── README.md                    # Overview and quick-start guide
 ├── contacts.md                  # Emergency contacts and escalation
@@ -66,6 +66,7 @@ dr-documentation/
 ### 1. Verify the Failure (5 minutes)
 ```bash
 # Attempt to reach Rancher API
+
 curl -I https://rancher.example.com/v3/ping
 
 # Check DNS resolution
@@ -94,7 +95,7 @@ BACKUP_FILE="rancher-backup-YYYY-MM-DDTHH-MM-SSZ.tar.gz"
 
 ### 4. Execute Restore (30-60 minutes)
 ...
-```
+```text
 
 ## Emergency Contacts Template
 

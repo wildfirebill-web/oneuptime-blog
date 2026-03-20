@@ -14,6 +14,7 @@ nload is a terminal-based network traffic monitor that shows incoming and outgoi
 
 ```bash
 # Install nload from the Ubuntu repositories
+
 sudo apt-get update
 sudo apt-get install -y nload
 

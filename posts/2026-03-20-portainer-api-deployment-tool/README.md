@@ -19,7 +19,7 @@ Teams often need deployment tools tailored to their workflows. By wrapping the P
 
 ## Project Structure
 
-```
+```text
 portainer-deploy/
 ├── deploy.py        # Main CLI tool
 ├── config.yaml      # Configuration file
@@ -33,6 +33,7 @@ portainer-deploy/
 
 ```bash
 # Create project directory
+
 mkdir portainer-deploy && cd portainer-deploy
 
 # Create requirements.txt

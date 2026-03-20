@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
     spanner.googleapis.com \
     aiplatform.googleapis.com \

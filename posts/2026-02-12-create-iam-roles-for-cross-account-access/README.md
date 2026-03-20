@@ -36,6 +36,7 @@ In the target account (Account B), create a role with a trust policy that allows
 
 ```bash
 # In Account B: Create the trust policy
+
 cat > trust-policy.json << 'EOF'
 {
     "Version": "2012-10-17",

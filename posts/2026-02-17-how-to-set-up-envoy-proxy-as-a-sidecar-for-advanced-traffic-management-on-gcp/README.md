@@ -24,6 +24,7 @@ Let us start with a deployment that includes an Envoy sidecar.
 
 ```yaml
 # deployment-with-envoy-sidecar.yaml
+
 # Application deployment with Envoy proxy running as a sidecar container
 apiVersion: apps/v1
 kind: Deployment

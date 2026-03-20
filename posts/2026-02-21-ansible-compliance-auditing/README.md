@@ -14,6 +14,7 @@ Compliance auditing is a recurring burden for organizations subject to PCI DSS, 
 
 ```yaml
 # roles/compliance/defaults/main.yml - Compliance audit configuration
+
 compliance_report_dir: /opt/compliance-reports
 compliance_framework: cis_ubuntu_22
 compliance_auto_remediate: false

@@ -43,6 +43,7 @@ Check throttling metrics directly from cgroup files:
 
 ```bash
 # Find container ID
+
 kubectl get pod <pod-name> -o jsonpath='{.status.containerStatuses[0].containerID}'
 
 # On the node, view throttling stats

@@ -36,6 +36,7 @@ You can also use the API:
 
 ```bash
 # Create a schematic with iscsi-tools
+
 curl -X POST https://factory.talos.dev/schematics \
   -H "Content-Type: application/json" \
   -d '{

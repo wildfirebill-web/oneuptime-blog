@@ -20,6 +20,7 @@ A golden path is more than just a module. It is a complete, opinionated solution
 
 ```yaml
 # golden-paths/web-service.yaml
+
 # Golden path definition for web services
 
 name: "Web Service Golden Path"

@@ -1,4 +1,4 @@
-# How to Use for_each with Sets to Create Resources in OpenTofu
+# How to Use for_each with Sets to Create Resources in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: A guide to using for_each with set values in OpenTofu to create uni
 
 ```hcl
 # Create IAM users for a set of names
+
 resource "aws_iam_user" "team" {
   for_each = toset(["alice", "bob", "charlie"])
 

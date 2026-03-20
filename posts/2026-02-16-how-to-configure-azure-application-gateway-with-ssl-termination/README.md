@@ -43,6 +43,7 @@ Application Gateway requires its own dedicated subnet. This subnet cannot contai
 
 ```bash
 # Create a resource group
+
 az group create --name rg-appgw-demo --location eastus
 
 # Create a VNet with a subnet for Application Gateway and one for backends

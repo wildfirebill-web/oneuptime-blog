@@ -8,7 +8,7 @@ Description: Create and manage AAAA records in Google Cloud DNS for IPv6 address
 
 ## Introduction
 
-Google Cloud DNS supports IPv6 through AAAA records for forward resolution and PTR records in reverse zones for reverse DNS lookups. Cloud DNS managed zones work identically for IPv4 and IPv6 — you create AAAA records pointing hostnames to IPv6 addresses. Private zones support AAAA records for internal service discovery over IPv6.
+Google Cloud DNS supports IPv6 through AAAA records for forward resolution and PTR records in reverse zones for reverse DNS lookups. Cloud DNS managed zones work identically for IPv4 and IPv6 - you create AAAA records pointing hostnames to IPv6 addresses. Private zones support AAAA records for internal service discovery over IPv6.
 
 ## Create AAAA Records with gcloud
 
@@ -18,6 +18,7 @@ ZONE_NAME="example-com"
 DNS_NAME="example.com."
 
 # Create a managed public DNS zone (if not existing)
+
 gcloud dns managed-zones create "$ZONE_NAME" \
     --project="$PROJECT" \
     --dns-name="$DNS_NAME" \
@@ -186,4 +187,4 @@ dig -x 2600:1900:4000:abc1:8000::
 
 ## Conclusion
 
-GCP Cloud DNS AAAA records work exactly like A records — use `type = "AAAA"` in Terraform or `--type=AAAA` in gcloud with the IPv6 address as the record data. Create both A and AAAA records pointing to your IPv4 and IPv6 addresses for dual-stack name resolution. Private zones support AAAA records for internal service discovery using ULA addresses. For reverse DNS, create a PTR record in the appropriate `ip6.arpa.` reverse zone. Use `dig AAAA hostname` or `dig -x ipv6-address` to verify DNS resolution.
+GCP Cloud DNS AAAA records work exactly like A records - use `type = "AAAA"` in Terraform or `--type=AAAA` in gcloud with the IPv6 address as the record data. Create both A and AAAA records pointing to your IPv4 and IPv6 addresses for dual-stack name resolution. Private zones support AAAA records for internal service discovery using ULA addresses. For reverse DNS, create a PTR record in the appropriate `ip6.arpa.` reverse zone. Use `dig AAAA hostname` or `dig -x ipv6-address` to verify DNS resolution.

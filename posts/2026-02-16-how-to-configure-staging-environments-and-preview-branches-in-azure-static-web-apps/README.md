@@ -47,6 +47,7 @@ When Azure creates the GitHub Actions workflow file, it already includes support
 
 ```yaml
 # The workflow triggers on both pushes and pull requests
+
 on:
   push:
     branches:

@@ -235,6 +235,7 @@ Each replica gets its own PVC (db-data-database-0, db-data-database-1, etc.).
 
 ```bash
 # View all PVs and their status
+
 kubectl get pv
 
 # View all PVCs

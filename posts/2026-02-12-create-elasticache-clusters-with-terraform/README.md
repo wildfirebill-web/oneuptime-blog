@@ -18,6 +18,7 @@ ElastiCache runs in your VPC and needs a subnet group and security group:
 
 ```hcl
 # Subnet group for ElastiCache
+
 resource "aws_elasticache_subnet_group" "main" {
   name       = "cache-subnet-group"
   subnet_ids = var.private_subnet_ids

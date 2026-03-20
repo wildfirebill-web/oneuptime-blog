@@ -79,6 +79,7 @@ Find or add the `Banner` directive:
 
 ```bash
 # Show this file's content before authentication
+
 Banner /etc/issue.net
 ```
 

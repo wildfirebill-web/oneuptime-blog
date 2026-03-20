@@ -24,6 +24,7 @@ If you need a fresh project to follow along:
 
 ```bash
 # Create a new AdonisJS application with the web starter kit
+
 npm init adonisjs@latest my-adonis-app -- -K=web
 cd my-adonis-app
 ```

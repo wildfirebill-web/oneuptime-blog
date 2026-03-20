@@ -40,6 +40,7 @@ The first step is recording which flags are active for each request. Add flag ev
 
 ```python
 # feature_flags.py
+
 # Integrate feature flag evaluations with OpenTelemetry spans
 
 from opentelemetry import trace

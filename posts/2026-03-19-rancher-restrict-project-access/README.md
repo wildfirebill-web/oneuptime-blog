@@ -77,6 +77,7 @@ For each project, add only the team members who should have access:
 
 ```bash
 # Add frontend-team group as Project Members to the frontend project
+
 curl -X POST 'https://<rancher-url>/v3/projectroletemplatebindings' \
   -H 'Authorization: Bearer <api-token>' \
   -H 'Content-Type: application/json' \

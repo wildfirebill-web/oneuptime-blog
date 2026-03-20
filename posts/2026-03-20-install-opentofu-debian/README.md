@@ -22,6 +22,7 @@ OpenTofu is the open-source, community-driven alternative to Terraform under the
 
 ```bash
 # Update the package list
+
 sudo apt-get update
 
 # Install required packages

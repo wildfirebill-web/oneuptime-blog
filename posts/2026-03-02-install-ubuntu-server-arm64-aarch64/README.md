@@ -29,6 +29,7 @@ Systems like AWS Graviton, Ampere Altra-based servers (Hetzner Ampere servers, O
 
 ```bash
 # Download Ubuntu Server 24.04 LTS ARM64 ISO
+
 wget https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04-live-server-arm64.iso
 
 # Verify checksum

@@ -24,6 +24,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 # Standard naming pattern: type:id
+
 r.set('user:1001', '{"name": "Alice", "email": "alice@example.com"}')
 r.set('user:1002', '{"name": "Bob", "email": "bob@example.com"}')
 

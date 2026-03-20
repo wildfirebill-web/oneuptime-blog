@@ -26,6 +26,7 @@ Monitoring the echo app ensures your test environment is reliable. If the echo a
 echo "=== Echo App Health Monitor ==="
 
 # Pod health
+
 kubectl get pods -n cilium-test -o wide
 
 # Service endpoints

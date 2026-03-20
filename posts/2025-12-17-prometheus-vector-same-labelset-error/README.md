@@ -33,6 +33,7 @@ When multiple Prometheus scrape jobs produce metrics with the same name and labe
 
 ```yaml
 # Problem: Two jobs scraping the same metric
+
 scrape_configs:
   - job_name: 'app-primary'
     static_configs:

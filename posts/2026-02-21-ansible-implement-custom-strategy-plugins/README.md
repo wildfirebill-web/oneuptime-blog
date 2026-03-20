@@ -25,6 +25,7 @@ Here is the simplest possible strategy plugin that runs tasks one host at a time
 
 ```python
 # strategy_plugins/one_at_a_time.py - Run all tasks on one host before the next
+
 from ansible.plugins.strategy import StrategyBase
 from ansible.plugins.strategy.linear import StrategyModule as LinearStrategy
 

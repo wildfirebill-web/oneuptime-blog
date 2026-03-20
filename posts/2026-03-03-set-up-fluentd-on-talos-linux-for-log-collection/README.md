@@ -24,6 +24,7 @@ The quickest way to deploy Fluentd is with the official Helm chart:
 
 ```bash
 # Add the Fluentd Helm repository
+
 helm repo add fluent https://fluent.github.io/helm-charts
 helm repo update
 

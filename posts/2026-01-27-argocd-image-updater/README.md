@@ -46,6 +46,7 @@ You need ArgoCD running in your cluster. If you don't have it yet, check out our
 
 ```bash
 # Install Image Updater in the argocd namespace
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj-labs/argocd-image-updater/stable/manifests/install.yaml
 
 # Verify the installation

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, netsh, DNS, IPv4, Network Configuration
+Tags: Windows, Networking, Netsh, DNS, IPv4, Network Configuration
 
 Description: Set, change, and remove DNS server addresses on a Windows network adapter using netsh interface ipv4 commands from an elevated command prompt.
 
@@ -43,6 +43,7 @@ netsh interface ipv4 add dns name="Ethernet" address=9.9.9.9 index=3
 
 ```powershell
 # Set primary and secondary DNS simultaneously with PowerShell
+
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses @("8.8.8.8", "1.1.1.1")
 ```
 
@@ -68,7 +69,7 @@ ipconfig /all | findstr /i "DNS"
 
 Expected output with static DNS:
 
-```
+```text
    DNS Servers . . . . . . . . . . . : 8.8.8.8
                                        1.1.1.1
 ```

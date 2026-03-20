@@ -108,6 +108,7 @@ You can adjust parallelism while a job runs. This lets you scale up when resourc
 
 ```bash
 # Start with low parallelism
+
 kubectl create -f batch-job.yaml
 
 # Monitor progress
@@ -264,7 +265,7 @@ SUCCEEDED=$(kubectl get job image-processor -o jsonpath='{.status.succeeded}')
 echo "Progress: $((SUCCEEDED * 100 / TOTAL))%"
 ```
 
-## Resource-Based Parallelism Calculation
+Resource-Based Parallelism Calculation
 
 Calculate optimal parallelism based on available resources:
 

@@ -1,8 +1,8 @@
-# How to Implement Logging Best Practices in Rancher
+# How to Implement Logging Best Practices in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, logging, fluentd, elasticsearch, best-practices
+Tags: Rancher, Logging, Fluentd, Elasticsearch, Best-practices
 
 Description: Guide to logging best practices in Rancher for centralized log management and efficient troubleshooting.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

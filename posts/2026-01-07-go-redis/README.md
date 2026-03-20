@@ -24,6 +24,7 @@ The go-redis library is the most popular Redis client for Go, offering a type-sa
 
 ```bash
 # Initialize your Go module if you haven't already
+
 go mod init your-project-name
 
 # Install the go-redis package

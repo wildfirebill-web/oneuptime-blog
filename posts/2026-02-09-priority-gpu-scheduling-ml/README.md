@@ -30,6 +30,7 @@ Create a priority hierarchy for ML workloads:
 
 ```yaml
 # ml-priorities.yaml
+
 ---
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass

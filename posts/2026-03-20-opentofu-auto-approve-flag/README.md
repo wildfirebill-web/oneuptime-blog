@@ -1,4 +1,4 @@
-# How to Use the -auto-approve Flag in OpenTofu
+# How to Use the -auto-approve Flag in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ By default, `tofu apply` and `tofu destroy` show a plan and ask for confirmation
 
 ```bash
 # Apply without confirmation prompt
+
 tofu apply -auto-approve
 
 # Destroy without confirmation prompt
@@ -31,7 +32,7 @@ tofu apply
 #   OpenTofu will perform the actions described above.
 #   Only 'yes' will be accepted to approve.
 #
-# Enter a value:  ← PROMPT — requires human input
+# Enter a value:  ← PROMPT - requires human input
 
 # With -auto-approve
 tofu apply -auto-approve
@@ -44,7 +45,7 @@ tofu apply -auto-approve
 ```bash
 # Applying a saved plan file NEVER prompts for confirmation
 tofu plan -out=tfplan
-tofu apply tfplan    # No -auto-approve needed — plan is already approved
+tofu apply tfplan    # No -auto-approve needed - plan is already approved
 ```
 
 This is the recommended pattern: use plan files so the apply step is implicitly approved by the plan review step.
@@ -113,7 +114,7 @@ jobs:
 # Fail if plan includes destroy operations
 DESTROY_COUNT=$(tofu show -json tfplan | jq '[.resource_changes[] | select(.change.actions[] == "delete")] | length')
 if [ "$DESTROY_COUNT" -gt 0 ]; then
-  echo "Error: Plan includes $DESTROY_COUNT resource deletions — manual review required"
+  echo "Error: Plan includes $DESTROY_COUNT resource deletions - manual review required"
   exit 1
 fi
 tofu apply tfplan
@@ -121,4 +122,4 @@ tofu apply tfplan
 
 ## Conclusion
 
-`-auto-approve` is for automated pipelines only — never use it for local development where reviewing the plan before applying is a critical safety step. The preferred pattern in CI/CD is to save the plan with `tofu plan -out=tfplan`, have it reviewed (in a PR or approval gate), and then apply with `tofu apply tfplan` — the plan file itself serves as the approval mechanism. Reserve `-auto-approve` for non-production automated deployments where a human review occurred at the PR/merge level.
+`-auto-approve` is for automated pipelines only - never use it for local development where reviewing the plan before applying is a critical safety step. The preferred pattern in CI/CD is to save the plan with `tofu plan -out=tfplan`, have it reviewed (in a PR or approval gate), and then apply with `tofu apply tfplan` - the plan file itself serves as the approval mechanism. Reserve `-auto-approve` for non-production automated deployments where a human review occurred at the PR/merge level.

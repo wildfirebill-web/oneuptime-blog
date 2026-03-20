@@ -211,6 +211,7 @@ All proxy-config commands support multiple output formats:
 
 ```bash
 # Table (default)
+
 istioctl pc clusters pod.namespace
 
 # JSON

@@ -25,6 +25,7 @@ Deploying CockroachDB through Flux CD gives you GitOps control over cluster topo
 
 ```yaml
 # infrastructure/sources/cockroachdb-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

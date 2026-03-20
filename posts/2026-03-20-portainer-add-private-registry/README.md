@@ -1,4 +1,4 @@
-# How to Add a Custom Private Registry to Portainer
+# How to Add a Custom Private Registry to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to add and configure a custom private container registry 
 
 ## Introduction
 
-Organizations often run their own container registries for security, compliance, or latency reasons. Portainer supports adding custom private registries — whether self-hosted with Docker Registry, Harbor, Nexus Repository, or any other OCI-compliant registry. This guide covers configuring custom private registries in Portainer.
+Organizations often run their own container registries for security, compliance, or latency reasons. Portainer supports adding custom private registries - whether self-hosted with Docker Registry, Harbor, Nexus Repository, or any other OCI-compliant registry. This guide covers configuring custom private registries in Portainer.
 
 ## Prerequisites
 
@@ -34,6 +34,7 @@ If you don't already have a registry, deploy one quickly:
 
 ```yaml
 # registry.yml
+
 version: "3"
 services:
   registry:
@@ -71,7 +72,7 @@ docker compose -f registry.yml up -d
 
 ## Step 3: Fill in Registry Details
 
-```
+```text
 Name:       My Private Registry
 URL:        registry.company.com         (or IP:port like 10.0.0.5:5000)
 
@@ -83,7 +84,7 @@ Authentication:
 
 For registries using a different port:
 
-```
+```text
 URL: registry.company.com:5000
 ```
 

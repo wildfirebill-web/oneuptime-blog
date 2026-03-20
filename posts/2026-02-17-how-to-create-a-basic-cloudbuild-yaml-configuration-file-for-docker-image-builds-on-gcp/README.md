@@ -22,6 +22,7 @@ Let's start with the simplest possible example - building a Docker image and pus
 
 ```yaml
 # Basic cloudbuild.yaml that builds a Docker image and pushes it
+
 steps:
   # Step 1: Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'

@@ -1,4 +1,4 @@
-# How to View Authentication Logs in Portainer Business Edition
+# How to View Authentication Logs in Portainer Business
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to view and analyze authentication logs in Portainer Busi
 
 ---
 
-Portainer Business Edition logs every authentication event — successful logins, failed attempts, token usage, and OAuth flows. These logs are essential for security auditing and identifying brute-force attacks or compromised accounts.
+Portainer Business Edition logs every authentication event - successful logins, failed attempts, token usage, and OAuth flows. These logs are essential for security auditing and identifying brute-force attacks or compromised accounts.
 
 ## Accessing Authentication Logs
 
@@ -31,6 +31,7 @@ Portainer Business Edition logs every authentication event — successful logins
 
 ```bash
 # Via API - get authentication logs
+
 TOKEN="ptr_xxxx"
 
 curl -H "X-API-Key: $TOKEN" \

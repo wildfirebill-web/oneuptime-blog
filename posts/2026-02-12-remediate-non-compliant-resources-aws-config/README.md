@@ -39,6 +39,7 @@ First, make sure you've got the Config rule in place.
 
 ```bash
 # The Config rule that checks for S3 encryption
+
 aws configservice put-config-rule \
   --config-rule '{
     "ConfigRuleName": "s3-bucket-server-side-encryption",

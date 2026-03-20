@@ -23,6 +23,7 @@ Get the Filestore connection details if you do not have them handy:
 
 ```bash
 # Get the IP address and share name of your Filestore instance
+
 gcloud filestore instances describe my-filestore \
   --zone=us-central1-a \
   --format="value(networks[0].ipAddresses[0],fileShares[0].name)"

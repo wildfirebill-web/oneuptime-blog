@@ -31,6 +31,7 @@ Start with the basic installation:
 
 ```bash
 # Add the Kubecost Helm repository
+
 helm repo add kubecost https://kubecost.github.io/cost-analyzer/
 helm repo update
 

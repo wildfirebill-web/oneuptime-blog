@@ -18,6 +18,7 @@ The most straightforward method is `dnf downgrade`. It works much like `dnf inst
 
 ```bash
 # Downgrade a package to the previous available version
+
 sudo dnf downgrade httpd
 ```
 

@@ -38,6 +38,7 @@ Enable components with the `--optional-components` flag when creating a cluster.
 
 ```bash
 # Create a cluster with Jupyter and Hive enabled
+
 gcloud dataproc clusters create analytics-cluster \
   --region=us-central1 \
   --optional-components=JUPYTER,HIVE_WEBHCAT \

@@ -53,6 +53,7 @@ To enable health checking, set `spec.wait` to `true` in your Kustomization:
 
 ```yaml
 # Kustomization with wait-for-ready enabled
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

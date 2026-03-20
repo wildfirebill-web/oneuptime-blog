@@ -37,6 +37,7 @@ Add Devise to your Gemfile:
 
 ```ruby
 # Gemfile
+
 gem 'devise'
 ```
 

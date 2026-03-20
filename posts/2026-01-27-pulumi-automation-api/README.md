@@ -50,6 +50,7 @@ flowchart TB
 
 ```bash
 # TypeScript/JavaScript
+
 npm install @pulumi/pulumi @pulumi/aws
 
 # Python

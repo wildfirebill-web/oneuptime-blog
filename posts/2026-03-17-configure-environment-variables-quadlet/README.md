@@ -20,6 +20,7 @@ Use the `Environment` directive in the `[Container]` section:
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=My application
 

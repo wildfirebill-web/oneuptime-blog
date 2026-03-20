@@ -16,6 +16,7 @@ Before configuring, identify what displays are connected and their capabilities:
 
 ```bash
 # List all connected displays and their modes
+
 xrandr
 # Or on Wayland:
 gnome-randr 2>/dev/null || xrandr

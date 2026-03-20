@@ -54,6 +54,7 @@ Install SQLAlchemy along with the appropriate database driver for your chosen da
 
 ```bash
 # Install SQLAlchemy
+
 pip install sqlalchemy
 
 # Database drivers

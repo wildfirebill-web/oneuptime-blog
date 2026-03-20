@@ -42,6 +42,7 @@ flowchart TD
 
 ```bash
 # Add NoSchedule taint
+
 kubectl taint nodes node-1 dedicated=gpu:NoSchedule
 
 # Add NoExecute taint

@@ -44,6 +44,7 @@ Point-in-time restore depends on versioning, change feed, and soft delete. Enabl
 
 ```bash
 # Enable blob versioning
+
 az storage account blob-service-properties update \
   --account-name stappdata2026 \
   --resource-group rg-app \

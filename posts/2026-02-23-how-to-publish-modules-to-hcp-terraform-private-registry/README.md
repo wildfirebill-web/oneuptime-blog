@@ -69,6 +69,7 @@ Here is a minimal example of what the root module files might look like:
 
 ```hcl
 # versions.tf - Pin your provider versions
+
 terraform {
   required_version = ">= 1.5.0"
 

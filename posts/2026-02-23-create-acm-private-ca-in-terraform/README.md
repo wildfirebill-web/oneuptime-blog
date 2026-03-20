@@ -44,6 +44,7 @@ The root CA sits at the top of your certificate chain. It signs subordinate CAs,
 
 ```hcl
 # Root Certificate Authority
+
 resource "aws_acmpca_certificate_authority" "root" {
   type = "ROOT"
 

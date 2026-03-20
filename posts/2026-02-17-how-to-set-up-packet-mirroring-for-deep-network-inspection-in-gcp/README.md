@@ -39,6 +39,7 @@ Start by creating the VMs that will receive and inspect the mirrored traffic.
 
 ```bash
 # Create a collector VM with enough resources for traffic analysis
+
 gcloud compute instances create ids-collector-1 \
   --zone=us-central1-a \
   --machine-type=e2-standard-4 \

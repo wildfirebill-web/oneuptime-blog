@@ -35,6 +35,7 @@ Store the Bitbucket credentials in a Kubernetes secret. The token should be in t
 
 ```bash
 # Create a secret containing the Bitbucket credentials
+
 kubectl create secret generic bitbucket-token \
   --namespace=flux-system \
   --from-literal=token=YOUR_BITBUCKET_USERNAME:YOUR_APP_PASSWORD

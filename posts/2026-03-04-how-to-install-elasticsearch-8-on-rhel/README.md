@@ -14,6 +14,7 @@ Elasticsearch 8 enables security (TLS and authentication) by default. This guide
 
 ```bash
 # Import the Elasticsearch GPG key
+
 sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
 # Add the repository

@@ -73,6 +73,7 @@ Configure your log shipper to batch aggressively before sending to Loki:
 
 ```yaml
 # Promtail configuration with optimized batching
+
 clients:
   - url: http://loki:3100/loki/api/v1/push
     # Wait up to 5 seconds to fill a batch

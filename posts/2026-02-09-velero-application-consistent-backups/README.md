@@ -430,6 +430,7 @@ Track hook performance and failures:
 
 ```bash
 # View backup logs including hook execution
+
 velero backup logs consistent-app-backup
 
 # Check for hook failures

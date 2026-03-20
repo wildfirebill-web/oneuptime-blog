@@ -30,6 +30,7 @@ import tensorflow as tf
 from tensorflow import keras
 
 # Create a simple model
+
 model = keras.Sequential([
     keras.layers.Dense(64, activation='relu', input_shape=(10,)),
     keras.layers.Dense(32, activation='relu'),

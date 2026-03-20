@@ -157,6 +157,7 @@ ipa idrange-mod AD.EXAMPLE.COM_id_range --base-id=200000 --range-size=200000
 
 ```bash
 # Create a group for AD users
+
 ipa group-add ad-users --desc="Active Directory users" --external
 
 # Add AD groups as external members

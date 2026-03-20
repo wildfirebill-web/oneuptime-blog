@@ -65,6 +65,7 @@ redis.exceptions.AuthenticationError: NOAUTH Authentication required
 
 ```bash
 # Is Redis running?
+
 systemctl status redis
 # or
 docker ps | grep redis

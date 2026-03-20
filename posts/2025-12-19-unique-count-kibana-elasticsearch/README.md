@@ -450,6 +450,7 @@ def get_dashboard_metrics(index, days=30):
     }
 
 # Usage
+
 metrics = get_dashboard_metrics("events-*", days=30)
 print(f"MAU: {metrics['total_unique_users']}")
 ```

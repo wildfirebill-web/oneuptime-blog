@@ -44,6 +44,7 @@ Define a namespace for the ACK controller.
 
 ```yaml
 # ack-sqs-namespace.yaml
+
 # Namespace for ACK SQS controller components
 apiVersion: v1
 kind: Namespace

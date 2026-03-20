@@ -16,6 +16,7 @@ The simplest chain is two tasks where the second depends on the first.
 
 ```yaml
 # Basic two-task chain
+
 ---
 - name: Sequential task chaining
   hosts: all

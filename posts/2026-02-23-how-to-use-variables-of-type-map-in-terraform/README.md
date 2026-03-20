@@ -20,6 +20,7 @@ A map variable is declared with `type = map(value_type)`:
 # variables.tf
 
 # Map of strings - the most common type
+
 variable "tags" {
   description = "Resource tags to apply to all resources"
   type        = map(string)
@@ -326,7 +327,7 @@ resource "aws_instance" "app" {
 }
 ```
 
-### Resource Tagging Strategy
+Resource Tagging Strategy
 
 ```hcl
 variable "required_tags" {

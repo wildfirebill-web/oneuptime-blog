@@ -38,6 +38,7 @@ The value hierarchy (from lowest to highest priority):
 
 ```bash
 # Show the default values
+
 helm show values bitnami/redis --version 19.0.0
 
 # Show the chart README for documentation

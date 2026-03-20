@@ -35,6 +35,7 @@ The most basic custom strategy is syncing specific resources rather than everyth
 
 ```bash
 # Sync only the ConfigMap and then the Deployment separately
+
 # Step 1: Sync the ConfigMap first
 curl -s -k -X POST "$ARGOCD_URL/api/v1/applications/my-app/sync" \
   -H "$AUTH_HEADER" \

@@ -36,6 +36,7 @@ The `spec.timeout` field accepts a duration string using Go's duration format. C
 
 ```yaml
 # kustomization-timeout.yaml - Set a 5-minute timeout
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

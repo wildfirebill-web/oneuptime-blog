@@ -18,6 +18,7 @@ The first thing to internalize is that Terraform configuration is declarative. T
 
 ```hcl
 # This works fine even though the subnet is defined before the VPC
+
 resource "aws_subnet" "public" {
   vpc_id     = aws_vpc.main.id  # references a resource defined below
   cidr_block = "10.0.1.0/24"

@@ -31,6 +31,7 @@ First, set up the backend infrastructure. You can do this manually or with a boo
 
 ```bash
 # Create the S3 bucket for state storage
+
 aws s3api create-bucket \
   --bucket my-terraform-state-bucket \
   --region us-east-1

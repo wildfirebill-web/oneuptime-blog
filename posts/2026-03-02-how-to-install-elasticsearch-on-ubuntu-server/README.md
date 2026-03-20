@@ -23,6 +23,7 @@ Check available resources:
 
 ```bash
 # Check available memory
+
 free -h
 
 # Check disk space

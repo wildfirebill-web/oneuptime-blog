@@ -1,4 +1,4 @@
-# How to Use Portainer Terraform Provider with Podman
+# How to Use Portainer Terraform Provider with Podman - Provider
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The Portainer Terraform provider lets you manage Portainer resources (environmen
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     portainer = {

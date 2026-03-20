@@ -68,6 +68,7 @@ resource "aws_route53_record" "custom_mx" {
 }
 
 # A records for the mail servers
+
 resource "aws_route53_record" "mail1" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "mail1.example.com"

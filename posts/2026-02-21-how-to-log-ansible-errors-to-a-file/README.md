@@ -16,6 +16,7 @@ The quickest way to log all Ansible output to a file is the `log_path` setting.
 
 ```ini
 # ansible.cfg - Enable file logging
+
 [defaults]
 log_path = /var/log/ansible/ansible.log
 

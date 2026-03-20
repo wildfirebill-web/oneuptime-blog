@@ -37,6 +37,7 @@ The simplest approach sets proxy environment variables that Grafana uses for all
 
 ```bash
 # Set in /etc/grafana/grafana.env or as environment variables
+
 HTTP_PROXY=http://proxy.corp.example.com:8080
 HTTPS_PROXY=http://proxy.corp.example.com:8080
 NO_PROXY=localhost,127.0.0.1,.internal.example.com,10.0.0.0/8

@@ -31,6 +31,7 @@ You need a Google Cloud account with a project. You also need the `gcloud` CLI i
 
 ```bash
 # Set your project ID
+
 export PROJECT_ID=your-gcp-project-id
 
 # Create a bucket for registry storage

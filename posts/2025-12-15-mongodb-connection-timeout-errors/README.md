@@ -48,6 +48,7 @@ The most common cause of connection timeouts is network connectivity.
 
 ```bash
 # Test if MongoDB port is reachable
+
 nc -zv mongodb-host.example.com 27017
 
 # Or using telnet

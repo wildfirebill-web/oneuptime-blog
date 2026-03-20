@@ -35,6 +35,7 @@ The recommended approach is using Spot with Auto Scaling Groups for automatic re
 
 ```hcl
 # Launch template with Spot configuration
+
 resource "aws_launch_template" "spot_workers" {
   name_prefix   = "spot-worker-"
   image_id      = var.ami_id

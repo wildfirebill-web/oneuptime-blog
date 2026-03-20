@@ -77,6 +77,7 @@ The primary cluster gets the full Istio installation with the control plane conf
 
 ```yaml
 # primary-cluster.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

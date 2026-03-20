@@ -22,6 +22,7 @@ Generate a new project with Leiningen:
 
 ```bash
 # Create a new Clojure app project
+
 lein new app clojure-docker-demo
 cd clojure-docker-demo
 ```

@@ -47,6 +47,7 @@ The most common approach is to configure bonding at the host level using Network
 
 ```bash
 # Create the bond interface
+
 sudo nmcli connection add type bond \
   con-name bond0 \
   ifname bond0 \

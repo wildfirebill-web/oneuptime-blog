@@ -33,6 +33,7 @@ This opens a Slack authorization page. You need to be a Slack workspace admin to
 
 ```bash
 # Create a Slack channel configuration via CLI
+
 aws chatbot create-slack-channel-configuration \
   --configuration-name "ops-alerts" \
   --slack-workspace-id "T01XXXXXXXX" \

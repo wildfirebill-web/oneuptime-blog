@@ -28,6 +28,7 @@ RHEL ships with several predefined attribute groups in `/etc/aide.conf`. Here ar
 
 ```bash
 # View the predefined groups in the config
+
 sudo grep "^[A-Z].*=" /etc/aide.conf | head -20
 ```
 

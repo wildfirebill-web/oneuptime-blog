@@ -33,6 +33,7 @@ For production, you should use certificates from a trusted Certificate Authority
 ```bash
 #!/bin/bash
 # generate-redis-certs.sh
+
 # Creates a complete certificate chain for Redis TLS
 
 # Create directory structure for certificates

@@ -14,6 +14,7 @@ Microservices on AWS use EKS for container orchestration, API Gateway for extern
 
 ```hcl
 # main.tf - EKS cluster for microservices
+
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 20.0"

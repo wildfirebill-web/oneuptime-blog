@@ -19,6 +19,7 @@ PCI passthrough assigns a physical PCI device (GPU, NIC, NVMe controller, etc.) 
 
 ```bash
 # Enable IOMMU in kernel parameters
+
 sudo grubby --update-kernel=ALL --args="intel_iommu=on iommu=pt"
 # For AMD: amd_iommu=on iommu=pt
 

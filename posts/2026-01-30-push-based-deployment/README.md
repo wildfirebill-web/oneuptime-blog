@@ -51,6 +51,7 @@ Here is a straightforward GitHub Actions workflow that deploys to a server via S
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy to Production
 
 on:

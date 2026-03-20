@@ -129,6 +129,7 @@ Memorystore Redis requires private service access to your VPC. This creates a pe
 # private-access.tf - Private service access for Memorystore
 
 # Reserve an IP range for Google managed services
+
 resource "google_compute_global_address" "redis_range" {
   project       = var.project_id
   name          = "${var.name}-redis-ip-range"

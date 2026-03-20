@@ -16,6 +16,7 @@ The `sha512` function computes the SHA-512 hash of a given string and returns it
 
 ```hcl
 # Compute the SHA-512 hash of a string
+
 output "hash" {
   value = sha512("hello world")
   # Result is a 128-character hex string

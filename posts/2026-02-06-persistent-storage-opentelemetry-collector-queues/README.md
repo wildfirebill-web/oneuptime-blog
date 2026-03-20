@@ -59,6 +59,7 @@ The persistent queue feature uses the `file_storage` extension. Add it to your c
 
 ```yaml
 # config.yaml
+
 # Enable persistent storage for export queues
 
 extensions:

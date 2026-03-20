@@ -22,7 +22,7 @@ Envoy is configured via a YAML file (or dynamically via xDS APIs). The key compo
 ## Static Configuration Example
 
 ```yaml
-# envoy.yaml — reverse proxy for an IPv4 backend service
+# envoy.yaml - reverse proxy for an IPv4 backend service
 
 static_resources:
   listeners:
@@ -88,6 +88,7 @@ static_resources:
 
 ```bash
 # Run with Docker
+
 docker run --rm \
   -v $(pwd)/envoy.yaml:/etc/envoy/envoy.yaml \
   -p 8080:8080 \

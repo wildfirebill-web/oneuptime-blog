@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Gzip, Performance, DevOps
+Tags: Ansible, Nginx, Gzip, Performance, DevOps
 
 Description: Automate Nginx gzip compression configuration using Ansible to reduce bandwidth usage and improve page load times across your web infrastructure.
 
@@ -56,6 +56,7 @@ These defaults provide a good balance between compression ratio and CPU usage fo
 
 ```yaml
 # roles/nginx_gzip/defaults/main.yml
+
 # Enable gzip compression
 nginx_gzip_enabled: true
 

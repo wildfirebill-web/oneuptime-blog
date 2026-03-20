@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Strict DNS, IPv4, Clusters, Service Discovery, Dynamic
+Tags: Envoy, Strict DNS, IPv4, Cluster, Service Discovery, Dynamic
 
 Description: Configure Envoy STRICT_DNS clusters to continuously resolve hostnames to IPv4 endpoint addresses, automatically updating the load balancing pool when DNS records change.
 
 ## Introduction
 
-`STRICT_DNS` clusters in Envoy continuously resolve DNS names and use all returned IPv4 A records as endpoints. When DNS changes, Envoy immediately updates its endpoint list—making it ideal for services that scale in and out.
+`STRICT_DNS` clusters in Envoy continuously resolve DNS names and use all returned IPv4 A records as endpoints. When DNS changes, Envoy immediately updates its endpoint list-making it ideal for services that scale in and out.
 
 ## STRICT_DNS vs LOGICAL_DNS
 
@@ -120,6 +120,7 @@ clusters:
 
 ```bash
 # Start Envoy and watch endpoint changes
+
 envoy -c /etc/envoy/envoy.yaml --log-level debug 2>&1 | \
   grep -i "DNS\|endpoint\|STRICT_DNS"
 

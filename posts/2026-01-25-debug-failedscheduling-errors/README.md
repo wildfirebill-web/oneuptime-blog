@@ -33,6 +33,7 @@ Start by examining the pod events:
 
 ```bash
 # Check pod status
+
 kubectl get pods -n production
 
 # Look for scheduling errors in events

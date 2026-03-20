@@ -1,4 +1,4 @@
-# How to Connect Portainer to an AWS EKS Cluster
+# How to Connect Portainer to an AWS EKS Cluster - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Amazon EKS (Elastic Kubernetes Service) is AWS's managed Kubernetes service. Con
 
 ```bash
 # Update kubeconfig for your EKS cluster
+
 aws eks update-kubeconfig \
   --region us-east-1 \
   --name my-eks-cluster \
@@ -171,7 +172,7 @@ kubectl get svc -n portainer --kubeconfig=eks-portainer.kubeconfig
 
 ### IAM Authentication
 
-EKS uses AWS IAM for authentication, but Portainer needs a plain kubeconfig with a static token (service account token). The `aws-iam-authenticator` method in the standard kubeconfig won't work with Portainer — always use a Kubernetes service account token.
+EKS uses AWS IAM for authentication, but Portainer needs a plain kubeconfig with a static token (service account token). The `aws-iam-authenticator` method in the standard kubeconfig won't work with Portainer - always use a Kubernetes service account token.
 
 ### Private Cluster Access
 

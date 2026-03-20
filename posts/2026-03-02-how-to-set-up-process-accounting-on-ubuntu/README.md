@@ -33,6 +33,7 @@ sudo apt-get update
 sudo apt-get install -y acct
 
 # The installation automatically enables the accounting daemon
+
 # Check its status
 sudo systemctl status acct
 

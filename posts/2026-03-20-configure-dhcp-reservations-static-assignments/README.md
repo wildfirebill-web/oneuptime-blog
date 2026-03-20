@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, Reservations, Static IP, sysadmin, MAC Address
+Tags: DHCP, Networking, Reservations, Static IP, Sysadmin, MAC Address
 
 Description: DHCP reservations (also called static DHCP or DHCP binding) assign a specific IP address to a device based on its MAC address, combining the convenience of DHCP with the predictability of a static IP.
 
@@ -12,7 +12,7 @@ A reservation tells the DHCP server: "Whenever you see this MAC address, always 
 
 ## ISC dhcpd: Adding Reservations
 
-```
+```nginx
 # /etc/dhcp/dhcpd.conf
 
 subnet 192.168.1.0 netmask 255.255.255.0 {
@@ -21,6 +21,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 }
 
 # Reservation for web server
+
 host webserver {
     hardware ethernet AA:BB:CC:DD:EE:01;
     fixed-address 192.168.1.10;
@@ -49,7 +50,7 @@ sudo systemctl restart isc-dhcp-server
 
 ## dnsmasq: Adding Reservations
 
-```
+```text
 # /etc/dnsmasq.conf
 
 # Format: dhcp-host=MAC,IP[,hostname[,lease-time]]

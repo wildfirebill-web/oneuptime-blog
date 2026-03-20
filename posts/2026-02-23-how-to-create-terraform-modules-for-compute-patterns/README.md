@@ -16,6 +16,7 @@ The simplest compute module wraps an EC2 instance with sensible defaults and sec
 
 ```hcl
 # modules/ec2-instance/variables.tf
+
 variable "name" {
   description = "Name for the EC2 instance"
   type        = string

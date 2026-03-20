@@ -38,6 +38,7 @@ Index users by their email:
 
 ```bash
 # Store user data
+
 HSET user:1 name "John Doe" email "john@example.com" age 30 city "New York"
 HSET user:2 name "Jane Smith" email "jane@example.com" age 25 city "Boston"
 HSET user:3 name "Bob Wilson" email "bob@example.com" age 35 city "New York"

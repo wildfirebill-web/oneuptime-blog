@@ -35,6 +35,7 @@ Create `plugins/lookup/db_query.py`:
 
 ```python
 # db_query.py - Lookup plugin that queries a PostgreSQL database
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 

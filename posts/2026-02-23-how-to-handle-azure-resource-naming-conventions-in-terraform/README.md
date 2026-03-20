@@ -64,6 +64,7 @@ The simplest approach uses `locals` to build names:
 
 ```hcl
 # variables.tf
+
 variable "workload" {
   description = "Name of the workload or application"
   type        = string

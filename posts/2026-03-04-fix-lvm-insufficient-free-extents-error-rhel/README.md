@@ -14,6 +14,7 @@ The "Insufficient free extents" error occurs when you try to create or extend a 
 
 ```bash
 # The error looks like this:
+
 # Insufficient free space (0 extents): 1280 required
 
 # This means the volume group has 0 free extents

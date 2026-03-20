@@ -29,6 +29,7 @@ Start with a fresh cluster for the cleanest deployment. If using kubeadm, skip k
 
 ```bash
 # Initialize without kube-proxy
+
 kubeadm init --skip-phases=addon/kube-proxy \
   --pod-network-cidr=10.244.0.0/16
 ```

@@ -1440,6 +1440,7 @@ Here is how to use the complete semantic memory system:
 
 ```python
 # Initialize the semantic memory
+
 memory = SemanticMemory()
 
 # Add some foundational knowledge

@@ -16,6 +16,7 @@ On most Ubuntu Server installs, `unattended-upgrades` is already installed. Veri
 
 ```bash
 # Check if it's installed
+
 dpkg -l unattended-upgrades
 
 # Install if missing

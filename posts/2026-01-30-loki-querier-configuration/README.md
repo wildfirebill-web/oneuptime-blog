@@ -47,6 +47,7 @@ The querier section in your Loki configuration file controls how queries are exe
 
 ```yaml
 # loki-config.yaml
+
 querier:
   # Maximum duration for which the live tailing requests are served
   # Increase this for long-running tail queries

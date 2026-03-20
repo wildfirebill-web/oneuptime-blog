@@ -14,6 +14,7 @@ A maturity model defines levels that services progress through as they become mo
 
 ```yaml
 # service-maturity-model.yaml
+
 levels:
   level_1_basic:
     name: "Basic"

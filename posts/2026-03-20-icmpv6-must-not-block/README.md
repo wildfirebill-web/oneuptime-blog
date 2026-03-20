@@ -4,15 +4,15 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: ICMPv6, Firewall, IPv6 Security, RFC 4890, Network Policy
 
-Description: Understand why blocking ICMPv6 breaks IPv6 functionality, which message types are essential, and why the "block all ICMP" approach used for IPv4 is catastrophically wrong for IPv6.
+Description: Understand why blocking ICMPv6 breaks IPv6 functionality, which message types are essential, and why the 'block all ICMP' approach used for IPv4 is catastrophically wrong for IPv6.
 
 ## Introduction
 
-A common security misconfiguration is to block all ICMPv6 traffic, treating it like ICMPv4 where many administrators block most ICMP. This is dangerously wrong for IPv6. ICMPv6 is not just a diagnostic protocol — it is a fundamental part of IPv6 operation. Neighbor Discovery (NDP) and Path MTU Discovery both depend entirely on ICMPv6. Blocking ICMPv6 will break IPv6 connectivity in ways that are often difficult to diagnose.
+A common security misconfiguration is to block all ICMPv6 traffic, treating it like ICMPv4 where many administrators block most ICMP. This is dangerously wrong for IPv6. ICMPv6 is not just a diagnostic protocol - it is a fundamental part of IPv6 operation. Neighbor Discovery (NDP) and Path MTU Discovery both depend entirely on ICMPv6. Blocking ICMPv6 will break IPv6 connectivity in ways that are often difficult to diagnose.
 
 ## What Breaks When ICMPv6 Is Blocked
 
-```
+```text
 If you block all ICMPv6:
 
 1. NDP (Neighbor Discovery) fails completely
@@ -46,7 +46,7 @@ If you block all ICMPv6:
 
 ## Essential ICMPv6 Types That Must Never Be Blocked
 
-```
+```text
 CRITICAL - Blocking these breaks IPv6 entirely:
 
 Type 2  (Packet Too Big)          - PMTUD; blocking = PMTU black holes
@@ -75,6 +75,7 @@ Type 137 (Redirect)               - Router redirect; safe to block on hosts
 # CORRECT IPv6 firewall: allow critical ICMPv6
 
 # Allow all ICMPv6 that is ESSENTIAL for IPv6 operation
+
 # (This is the recommended minimum; adjust based on RFC 4890)
 
 # Allow Packet Too Big (CRITICAL - PMTUD)
@@ -106,7 +107,7 @@ sudo ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type 129 -j ACCEPT
 
 ## The IPv4 ICMPv6 Analogy Problem
 
-```
+```text
 Why "block ICMP like in IPv4" is wrong for IPv6:
 
 IPv4:

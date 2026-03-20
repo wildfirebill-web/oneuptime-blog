@@ -8,12 +8,13 @@ Description: Create, list, delete, and manage Linux network namespaces using ip 
 
 ## Introduction
 
-`ip netns` manages Linux network namespaces — isolated network stacks with their own interfaces, routing tables, iptables rules, and sockets. They are the foundation of container networking. Each namespace is independent; creating one gives you a blank network environment.
+`ip netns` manages Linux network namespaces - isolated network stacks with their own interfaces, routing tables, iptables rules, and sockets. They are the foundation of container networking. Each namespace is independent; creating one gives you a blank network environment.
 
 ## Create a Network Namespace
 
 ```bash
 # Create a new network namespace named "test"
+
 ip netns add test
 
 # List all namespaces

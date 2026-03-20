@@ -16,7 +16,7 @@ The **limited broadcast** address `255.255.255.255` is never forwarded by any ro
 
 Characteristics:
 - Destination: `255.255.255.255`
-- Routers always drop it — never forwarded
+- Routers always drop it - never forwarded
 - Used by DHCP Discover, BOOTP
 - Reaches every host on the directly-connected segment
 
@@ -24,6 +24,7 @@ Example: a newly-booted host has no IP address yet. It cannot send to its subnet
 
 ```bash
 # Capture limited broadcast packets on a segment
+
 sudo tcpdump -i eth0 -n "dst 255.255.255.255"
 ```
 
@@ -37,13 +38,13 @@ Characteristics:
 - Disabled by default on most modern routers (Cisco `no ip directed-broadcast` is the default since IOS 12.0)
 - Used historically by Smurf attacks
 
-```
+```text
 Network:           192.168.10.0 / 24
 Directed Broadcast: 192.168.10.255
 ```
 
 For a `192.168.10.0/25` subnet:
-```
+```text
 Usable hosts:       192.168.10.1 – 192.168.10.126
 Directed Broadcast: 192.168.10.127
 ```
@@ -75,7 +76,7 @@ for subnet in ["192.168.10.0/24", "10.0.0.0/8", "172.16.5.0/26"]:
 ```
 
 Output:
-```
+```text
 192.168.10.0/24      → 192.168.10.255
 10.0.0.0/8           → 10.255.255.255
 172.16.5.0/26        → 172.16.5.63
@@ -87,8 +88,8 @@ Directed broadcasts enabled on a router are the basis of the **Smurf attack**: a
 
 **Always disable directed broadcasts on router interfaces:**
 
-```
-! Cisco IOS — disable directed broadcast (good practice even though it is the default since IOS 12)
+```text
+! Cisco IOS - disable directed broadcast (good practice even though it is the default since IOS 12)
 interface GigabitEthernet0/1
  no ip directed-broadcast
 ```

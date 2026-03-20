@@ -32,6 +32,7 @@ This creates a root CA with RSA 2048-bit key. The root CA is the trust anchor fo
 
 ```bash
 # Create the root CA
+
 aws acm-pca create-certificate-authority \
   --certificate-authority-configuration '{
     "KeyAlgorithm": "RSA_2048",

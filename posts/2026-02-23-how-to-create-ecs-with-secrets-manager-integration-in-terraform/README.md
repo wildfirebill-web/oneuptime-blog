@@ -34,6 +34,7 @@ provider "aws" {
 }
 
 # KMS key for encrypting secrets
+
 resource "aws_kms_key" "secrets" {
   description             = "KMS key for ECS secrets"
   deletion_window_in_days = 7

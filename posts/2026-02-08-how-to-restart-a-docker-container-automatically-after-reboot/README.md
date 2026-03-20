@@ -22,6 +22,7 @@ The container restarts under all circumstances, including after a daemon restart
 
 ```bash
 # Start a container with the "always" restart policy
+
 docker run -d --restart always --name web -p 80:80 nginx:latest
 ```
 

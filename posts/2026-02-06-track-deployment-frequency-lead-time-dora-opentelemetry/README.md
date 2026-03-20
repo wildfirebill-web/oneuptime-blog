@@ -49,6 +49,7 @@ Here is a Python module that you can call from your deployment pipeline to recor
 
 ```python
 # dora_telemetry.py
+
 # Records DORA deployment frequency and lead time metrics via OpenTelemetry
 
 import time

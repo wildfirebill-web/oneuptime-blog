@@ -47,6 +47,7 @@ First, enable the collector's internal metrics to monitor cardinality:
 
 ```yaml
 # otel-collector-config.yaml
+
 # Enable internal telemetry to monitor the collector itself
 service:
   telemetry:

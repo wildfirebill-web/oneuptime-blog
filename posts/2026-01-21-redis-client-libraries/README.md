@@ -34,6 +34,7 @@ pip install redis[hiredis]
 import redis
 
 # Simple connection
+
 client = redis.Redis(
     host='localhost',
     port=6379,

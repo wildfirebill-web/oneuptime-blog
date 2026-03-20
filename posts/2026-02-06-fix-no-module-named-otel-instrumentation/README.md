@@ -16,6 +16,7 @@ You installed with one Python but run with another:
 
 ```bash
 # Installed with system pip
+
 pip install opentelemetry-instrumentation-flask
 
 # But running with a virtualenv Python

@@ -40,6 +40,7 @@ flowchart TB
 
 ```yaml
 # loki-config.yaml
+
 auth_enabled: true
 
 server:

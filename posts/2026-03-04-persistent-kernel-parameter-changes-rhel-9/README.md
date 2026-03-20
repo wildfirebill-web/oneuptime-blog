@@ -35,6 +35,7 @@ The recommended approach is to create drop-in files in `/etc/sysctl.d/` with des
 
 ```bash
 # Create a file for network tuning parameters
+
 sudo tee /etc/sysctl.d/90-network-tuning.conf <<EOF
 # Increase connection backlog for web servers
 net.core.somaxconn = 65535

@@ -27,6 +27,7 @@ This guide shows you how to configure both levels of logging, correlate policy d
 
 ```yaml
 # /etc/kubernetes/audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

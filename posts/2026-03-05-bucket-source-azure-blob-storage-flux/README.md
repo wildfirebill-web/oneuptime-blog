@@ -26,6 +26,7 @@ Create a storage account and container, then upload your manifests.
 
 ```bash
 # Create a resource group
+
 az group create --name flux-rg --location eastus
 
 # Create a storage account

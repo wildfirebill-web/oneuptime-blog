@@ -80,6 +80,7 @@ Only services that need access to cardholder data should have it:
 
 ```yaml
 # Deny all access by default
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

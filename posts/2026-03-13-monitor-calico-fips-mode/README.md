@@ -25,6 +25,7 @@ The monitoring strategy for Calico FIPS must be proactive: alert before a certif
 
 ```yaml
 # prometheus-rules-fips-certs.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

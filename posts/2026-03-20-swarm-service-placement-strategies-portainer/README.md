@@ -1,4 +1,4 @@
-# How to Configure Swarm Service Placement Strategies in Portainer
+# How to Configure Swarm Service Placement Strategies in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,8 +12,8 @@ Docker Swarm placement strategies control which nodes run your service replicas.
 
 ## Placement Concepts
 
-- **Constraints**: Hard filters — a node must match for a replica to run on it
-- **Preferences**: Soft suggestions — spread or pack replicas according to a label value
+- **Constraints**: Hard filters - a node must match for a replica to run on it
+- **Preferences**: Soft suggestions - spread or pack replicas according to a label value
 
 ## Step 1: Add Node Labels
 
@@ -21,6 +21,7 @@ From Portainer's terminal or the Nodes view, add labels to classify nodes:
 
 ```bash
 # Label nodes by hardware type
+
 docker node update --label-add tier=gpu node-gpu-1
 docker node update --label-add tier=standard node-worker-2
 docker node update --label-add zone=us-east-1a node-worker-2

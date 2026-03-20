@@ -1010,6 +1010,7 @@ Server-side settings for production deployments focused on throughput.
 # nats-server.conf - High performance configuration
 
 # Server identification
+
 server_name: nats-1
 
 # Networking

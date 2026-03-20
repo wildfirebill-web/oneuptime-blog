@@ -49,6 +49,7 @@ First, install Apache and set up the installation tree. The HTTP server hosts th
 
 ```bash
 # Install Apache web server
+
 sudo dnf install -y httpd
 ```
 

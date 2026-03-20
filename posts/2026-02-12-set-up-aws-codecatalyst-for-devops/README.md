@@ -45,6 +45,7 @@ To connect your AWS account programmatically:
 
 ```bash
 # Verify the connection from your AWS account side
+
 aws codecatalyst list-spaces
 ```
 

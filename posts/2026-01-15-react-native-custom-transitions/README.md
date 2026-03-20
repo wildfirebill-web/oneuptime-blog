@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React Native, React Navigation, Animations, Transitions, Mobile Development, UX
+Tags: React Native, React Navigation, Animations, Transition, Mobile Development, UX
 
 Description: Learn how to create custom screen transitions and animations in React Navigation for a polished user experience.
 

@@ -285,6 +285,7 @@ Create Prometheus queries to track pod distribution:
 
 ```promql
 # Pods per zone
+
 sum(kube_pod_info{namespace="production"}) by (node, topology_zone)
 
 # Maximum skew across zones

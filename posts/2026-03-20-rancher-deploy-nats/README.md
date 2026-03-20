@@ -1,8 +1,8 @@
-# How to Deploy NATS on Rancher
+# How to Deploy NATS on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, NATS, Message Queue, Cloud Native Messaging
+Tags: Rancher, Kubernetes, NATS, Message Queues, Cloud Native Messaging
 
 Description: Deploy NATS messaging system on Rancher-managed clusters for lightweight, high-performance pub/sub messaging and streaming with JetStream.
 
@@ -21,6 +21,7 @@ NATS is a simple, secure, high-performance open-source messaging system designed
 
 ```bash
 # Add NATS Helm repository
+
 helm repo add nats https://nats-io.github.io/k8s/helm/charts/
 helm repo update
 

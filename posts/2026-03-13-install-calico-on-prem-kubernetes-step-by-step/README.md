@@ -56,6 +56,7 @@ kubectl wait --for=condition=Available deployment/tigera-operator -n tigera-oper
 
 ```yaml
 # calico-installation.yaml
+
 apiVersion: operator.tigera.io/v1
 kind: Installation
 metadata:

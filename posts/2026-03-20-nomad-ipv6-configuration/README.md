@@ -17,6 +17,7 @@ data_dir  = "/opt/nomad/data"
 bind_addr = "::"    # Bind to all interfaces, including IPv6
 
 # Advertise IPv6 address for client registration
+
 advertise {
   http = "2001:db8::nomad-client:4646"
   rpc  = "2001:db8::nomad-client:4647"

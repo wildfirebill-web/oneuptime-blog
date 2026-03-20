@@ -22,6 +22,7 @@ Terraform state stores the actual values of all resources, including sensitive o
 
 ```hcl
 # This resource creates a secret, but the value is stored in state
+
 resource "aws_db_instance" "main" {
   password = var.database_password
   # The password is visible in the state file!

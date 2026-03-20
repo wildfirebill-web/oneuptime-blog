@@ -81,6 +81,7 @@ Use this when children are completely independent. If your web scrapers each han
 
 ```elixir
 # One-for-one is ideal when children don't depend on each other
+
 # A database pool and a cache can restart independently
 Supervisor.init(children, strategy: :one_for_one)
 ```

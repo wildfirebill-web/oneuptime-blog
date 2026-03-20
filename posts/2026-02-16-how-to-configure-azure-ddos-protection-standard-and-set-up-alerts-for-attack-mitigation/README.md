@@ -66,6 +66,7 @@ Before enabling DDoS Protection Standard:
 
 ```powershell
 # Create a DDoS Protection Plan
+
 $ddosPlan = New-AzDdosProtectionPlan `
     -ResourceGroupName "networking-rg" `
     -Name "ddos-protection-plan" `

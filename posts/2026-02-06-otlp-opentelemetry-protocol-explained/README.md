@@ -379,6 +379,7 @@ from opentelemetry.exporter.otlp.proto.http.metric_exporter import OTLPMetricExp
 from opentelemetry.sdk.resources import Resource
 
 # Define resource attributes
+
 resource = Resource.create({"service.name": "my-service"})
 
 # Configure OTLP trace exporter

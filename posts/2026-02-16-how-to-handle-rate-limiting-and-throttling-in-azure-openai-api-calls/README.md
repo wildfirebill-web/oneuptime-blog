@@ -113,6 +113,7 @@ from tenacity import (
 import openai
 
 # Define a retry decorator for Azure OpenAI calls
+
 @retry(
     retry=retry_if_exception_type(openai.RateLimitError),
     wait=wait_exponential_jitter(

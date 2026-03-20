@@ -182,7 +182,7 @@ resource "aws_route53_zone" "private" {
 
 ## Best Practices
 
-- Use alias records instead of CNAME for AWS resources — they resolve faster and are free.
+- Use alias records instead of CNAME for AWS resources - they resolve faster and are free.
 - Set appropriate TTLs: low TTLs for records that change frequently, high TTLs for stable records.
 - Use health checks with failover routing for high availability.
 - Import existing Route 53 resources before managing them with OpenTofu.

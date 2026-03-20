@@ -169,6 +169,7 @@ Istiod exposes several debug endpoints on port 15014:
 
 ```bash
 # List all debug endpoints
+
 kubectl exec -n istio-system deploy/istiod -- curl -s localhost:15014/debug
 
 # View the Envoy config for a specific proxy
@@ -186,7 +187,7 @@ kubectl exec -n istio-system deploy/istiod -- curl -s localhost:15014/debug/sync
 
 These are invaluable for debugging. The `/debug/config_dump` endpoint shows you exactly what configuration istiod has generated for a specific proxy, which you can compare with what the proxy actually has.
 
-## Resource Scaling Characteristics
+Resource Scaling Characteristics
 
 Each subsystem has different scaling characteristics:
 

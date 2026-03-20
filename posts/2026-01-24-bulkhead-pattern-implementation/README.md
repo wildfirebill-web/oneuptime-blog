@@ -53,6 +53,7 @@ Isolates operations using dedicated thread pools:
 
 ```python
 # bulkhead.py
+
 import threading
 from concurrent.futures import ThreadPoolExecutor, TimeoutError
 from typing import Callable, Any, Dict

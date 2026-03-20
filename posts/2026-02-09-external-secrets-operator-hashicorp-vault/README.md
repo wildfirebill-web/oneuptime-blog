@@ -56,6 +56,7 @@ Create a KV v2 secrets engine in Vault:
 
 ```bash
 # Enable KV v2 secrets engine
+
 vault secrets enable -path=secret kv-v2
 
 # Store some secrets

@@ -86,6 +86,7 @@ The key insight is separating infrastructure into common components (same on eve
 
 ```yaml
 # infrastructure/base/common/cert-manager/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

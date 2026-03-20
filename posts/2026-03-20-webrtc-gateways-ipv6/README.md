@@ -12,7 +12,7 @@ WebRTC gateways bridge browser-based WebRTC clients with traditional SIP/VoIP sy
 
 ## Janus WebRTC Gateway IPv6
 
-```
+```text
 Janus is a popular open-source WebRTC gateway.
 Configuration: /etc/janus/janus.cfg
 ```
@@ -22,6 +22,7 @@ Configuration: /etc/janus/janus.cfg
 
 [general]
 # Admin API
+
 admin_secret=janusoverride
 
 [nat]
@@ -44,7 +45,7 @@ icev6=true
 rtp_port_range=10000-60000
 ```
 
-```
+```text
 # /etc/janus/janus.transport.http.cfg
 [general]
 # HTTPS with IPv6

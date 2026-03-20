@@ -347,6 +347,7 @@ When CORS is not working, here is how to troubleshoot:
 
 ```bash
 # Send a preflight request manually
+
 curl -X OPTIONS \
   -H "Origin: https://app.example.com" \
   -H "Access-Control-Request-Method: POST" \

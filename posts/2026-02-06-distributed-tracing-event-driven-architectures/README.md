@@ -51,6 +51,7 @@ Here's how this looks in practice with a generic message:
 
 ```python
 # producer.py - Injecting trace context into message headers
+
 from opentelemetry import trace, context
 from opentelemetry.propagate import inject
 

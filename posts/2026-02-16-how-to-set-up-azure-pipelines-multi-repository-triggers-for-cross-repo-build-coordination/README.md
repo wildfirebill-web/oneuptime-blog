@@ -18,6 +18,7 @@ At its simplest, a multi-repo pipeline declares additional repositories as resou
 
 ```yaml
 # azure-pipelines.yml - Pipeline that monitors two repositories
+
 # This pipeline lives in the "frontend" repo but also watches "shared-lib"
 
 trigger:

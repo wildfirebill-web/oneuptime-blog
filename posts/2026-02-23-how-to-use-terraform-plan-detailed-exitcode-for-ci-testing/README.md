@@ -27,6 +27,7 @@ This distinction is critical. Exit code 2 tells your CI system that the plan suc
 
 ```bash
 # Run plan with detailed exit codes
+
 terraform plan -detailed-exitcode
 
 # The exit code tells you what happened
@@ -167,7 +168,7 @@ jobs:
               ? output.substring(0, maxLength) + '\n\n... (truncated)'
               : output;
 
-            const body = `## Terraform Plan\n\nChanges detected.\n\n\`\`\`\n${truncated}\n\`\`\``;
+            const body = `## Terraform Plan\n\nChanges detected.\n\n```\n${truncated}\n````;
 
             github.rest.issues.createComment({
               issue_number: context.issue.number,

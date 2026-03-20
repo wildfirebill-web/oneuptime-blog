@@ -50,6 +50,7 @@ Use the Consul CLI or HTTP API to manage key-value pairs:
 
 ```bash
 # Set a key
+
 consul kv put config/api/database_url "postgresql://localhost:5432/mydb"
 
 # Get a key

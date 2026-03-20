@@ -41,6 +41,7 @@ graph TD
 
 ```bash
 # Install Java 11 (Flink's recommended runtime)
+
 sudo dnf install -y java-11-openjdk java-11-openjdk-devel
 
 # Set JAVA_HOME

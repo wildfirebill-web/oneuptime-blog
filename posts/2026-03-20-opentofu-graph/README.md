@@ -14,6 +14,7 @@ Description: Learn how to use tofu graph to generate a visual dependency graph o
 
 ```bash
 # Generate DOT graph output
+
 tofu graph
 
 # Output (DOT format):
@@ -114,7 +115,7 @@ tofu graph | dot -Tjson -o graph.json
 
 A simple configuration with an S3 bucket and policy produces:
 
-```
+```text
 aws_s3_bucket.data
     ↑
 aws_s3_bucket_policy.data (depends on bucket)

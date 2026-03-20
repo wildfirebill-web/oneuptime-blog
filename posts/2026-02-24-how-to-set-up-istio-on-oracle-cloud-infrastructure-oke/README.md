@@ -89,6 +89,7 @@ Create an OCI-specific configuration:
 
 ```yaml
 # istio-oke.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

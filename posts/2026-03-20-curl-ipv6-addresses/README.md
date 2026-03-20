@@ -14,6 +14,7 @@ Description: Use curl to make HTTP requests over IPv6, force IPv6 connections, t
 
 ```bash
 # Connect to an IPv6 address directly (brackets required in URL)
+
 curl http://[2001:db8::1]/
 
 # HTTPS over IPv6

@@ -82,6 +82,7 @@ The default consistency level applies to all requests that do not explicitly spe
 
 ```bash
 # Set the default consistency level to Session
+
 az cosmosdb update \
     --name myCosmosAccount \
     --resource-group myResourceGroup \

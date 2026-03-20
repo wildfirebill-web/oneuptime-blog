@@ -29,6 +29,7 @@ Everything starts with audit logs. Make sure you have Data Access logs enabled f
 
 ```hcl
 # audit-config.tf
+
 # Enable comprehensive IAM audit logging
 
 resource "google_project_iam_audit_config" "iam_audit" {

@@ -36,6 +36,7 @@ Set up the billing export from the GCP Console or using the CLI:
 
 ```bash
 # Create a BigQuery dataset for billing data
+
 bq mk --dataset \
   --location=us \
   --description="GCP billing export data" \

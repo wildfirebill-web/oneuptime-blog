@@ -27,6 +27,7 @@ The `ansible.builtin.add_host` module adds a host to the in-memory inventory dur
 
 ```yaml
 # Provision and configure in one playbook
+
 - name: Provision new servers
   hosts: localhost
   connection: local

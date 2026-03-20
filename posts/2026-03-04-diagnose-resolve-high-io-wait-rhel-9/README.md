@@ -72,6 +72,7 @@ Fix:
 
 ```bash
 # Reduce log verbosity in the application configuration
+
 # Rotate logs more aggressively
 sudo vi /etc/logrotate.d/application
 ```

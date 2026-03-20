@@ -40,6 +40,7 @@ Query logs for public hosted zones must go to CloudWatch Logs in the us-east-1 r
 
 ```bash
 # Create a log group in us-east-1
+
 aws logs create-log-group \
     --log-group-name /aws/route53/example.com \
     --region us-east-1

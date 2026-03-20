@@ -50,6 +50,7 @@ Start by deploying the current version as the "blue" environment.
 
 ```yaml
 # blue-deployment.yaml
+
 # Blue environment - current production version
 apiVersion: apps/v1
 kind: Deployment

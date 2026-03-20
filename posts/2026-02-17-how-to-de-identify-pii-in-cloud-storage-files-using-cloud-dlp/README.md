@@ -40,6 +40,7 @@ Create separate buckets for source and destination to keep things clean:
 
 ```bash
 # Create a bucket for de-identified output
+
 gsutil mb -p PROJECT_ID -l us-central1 gs://my-project-deidentified/
 
 # Set appropriate permissions - restrict access to the de-identified bucket

@@ -155,6 +155,7 @@ Create an optimized multi-stage Dockerfile for the gRPC service:
 
 ```dockerfile
 # Build stage
+
 FROM golang:1.21-alpine AS builder
 
 WORKDIR /app

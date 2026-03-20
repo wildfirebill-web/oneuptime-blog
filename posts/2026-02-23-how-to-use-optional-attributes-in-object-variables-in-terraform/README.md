@@ -32,6 +32,7 @@ The caller must provide all five attributes:
 
 ```hcl
 # This works
+
 server_config = {
   instance_type = "t3.large"
   disk_size_gb  = 100

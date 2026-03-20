@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, for_each, count, Refactoring, Infrastructure as Code
+Tags: OpenTofu, for_each, Count, Refactoring, Infrastructure as Code
 
 Description: Learn how to safely migrate OpenTofu resources from count-based indexing to for_each-based keying using moved blocks.
 
@@ -12,6 +12,7 @@ Description: Learn how to safely migrate OpenTofu resources from count-based ind
 
 ```hcl
 # Original: count-based
+
 resource "aws_subnet" "public" {
   count      = 3
   vpc_id     = aws_vpc.main.id

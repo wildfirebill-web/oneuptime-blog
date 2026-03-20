@@ -16,6 +16,7 @@ The `now()` function returns the current timestamp. You can format it using the 
 
 ```yaml
 # timestamps-basic.yml - Basic now() usage
+
 ---
 - name: Demonstrate now() function
   hosts: localhost

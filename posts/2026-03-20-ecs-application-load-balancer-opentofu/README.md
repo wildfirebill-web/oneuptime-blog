@@ -14,7 +14,7 @@ Running ECS containers behind an Application Load Balancer (ALB) provides high a
 
 ## Architecture
 
-```
+```text
 Internet → ALB (port 443) → Target Group → ECS Fargate Tasks
                               (health checks)
 ```
@@ -25,6 +25,7 @@ Internet → ALB (port 443) → Target Group → ECS Fargate Tasks
 
 ```hcl
 # network.tf
+
 data "aws_vpc" "main" {
   tags = { Name = "main" }
 }
@@ -258,10 +259,10 @@ output "alb_zone_id" {
 
 ## Best Practices
 
-1. **Use target_type = "ip"** for Fargate — tasks don't have EC2 instance IDs
-2. **Configure health checks** before deploying — unhealthy tasks will drain and restart
-3. **Use HTTPS with ACM certificates** — never run production on HTTP only
-4. **Deploy tasks to private subnets** — only the ALB needs public access
+1. **Use target_type = "ip"** for Fargate - tasks don't have EC2 instance IDs
+2. **Configure health checks** before deploying - unhealthy tasks will drain and restart
+3. **Use HTTPS with ACM certificates** - never run production on HTTP only
+4. **Deploy tasks to private subnets** - only the ALB needs public access
 5. **Enable Container Insights** on ECS clusters for CloudWatch metrics
 
 ---
@@ -272,4 +273,4 @@ OpenTofu makes ECS + ALB deployments reproducible and version-controlled. Define
 
 ---
 
-*Monitor your ECS services and ALB health with [OneUptime](https://oneuptime.com) — synthetic monitoring with uptime checks.*
+*Monitor your ECS services and ALB health with [OneUptime](https://oneuptime.com) - synthetic monitoring with uptime checks.*

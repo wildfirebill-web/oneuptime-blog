@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Kubeconfig, Import, DevOps
+Tags: Portainer, Kubernetes, kubeconfig, Import, DevOps
 
 Description: Learn how to import an existing Kubernetes cluster into Portainer using a kubeconfig file for immediate management access.
 
@@ -22,6 +22,7 @@ Ensure the kubeconfig has the correct context and server URL:
 
 ```bash
 # View your kubeconfig
+
 cat ~/.kube/config
 
 # Set the correct context

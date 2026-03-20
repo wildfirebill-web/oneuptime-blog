@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BIND, DNS, IPv6, AAAA, Authoritative, named, RFC 3596
+Tags: BIND, DNS, IPv6, AAAA, Authoritative, Named, RFC 3596
 
 Description: Configure BIND9 as an authoritative DNS server that serves AAAA records over IPv6 transport, including zone configuration, listen-on-v6, and ACLs.
 
@@ -14,6 +14,7 @@ BIND9 (Berkeley Internet Name Domain) is the most widely deployed authoritative 
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y bind9 bind9utils
 
 # RHEL/CentOS

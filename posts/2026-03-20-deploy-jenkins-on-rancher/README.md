@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # jenkins-values.yaml
+
 controller:
   adminUser: admin
   adminPassword: "securepassword"

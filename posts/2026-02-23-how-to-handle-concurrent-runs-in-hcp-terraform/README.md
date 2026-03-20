@@ -23,6 +23,7 @@ A "concurrent run" means an active plan or apply operation. Runs in other states
 
 ```text
 # Visualization of run concurrency
+
 Worker 1: [Planning workspace-A]  [Applying workspace-A]  [idle]
 Worker 2: [Planning workspace-B]  [idle]                   [Planning workspace-C]
 Worker 3: [Applying workspace-D]  [Planning workspace-E]   [idle]

@@ -112,6 +112,7 @@ def create_task_with_context(coro):
     return asyncio.create_task(wrapped())
 
 # Usage
+
 async def handle_request(items):
     with tracer.start_as_current_span("handle_request"):
         tasks = [

@@ -111,6 +111,7 @@ Define which services can talk to each other:
 
 ```yaml
 # Order service can call payment and inventory
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

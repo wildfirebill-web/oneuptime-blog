@@ -1,4 +1,4 @@
-# How to View Pod Events and Logs in Portainer
+# How to View Pod Events and Logs in Portainer - View Logs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -13,7 +13,7 @@ Kubernetes pod logs and events are your primary diagnostic tools. Portainer surf
 ## Difference Between Logs and Events
 
 - **Container Logs**: stdout/stderr output from your application code. Updated in real time as the application runs.
-- **Pod Events**: Kubernetes control plane messages about pod lifecycle — scheduling decisions, image pulls, container starts/stops, health check failures.
+- **Pod Events**: Kubernetes control plane messages about pod lifecycle - scheduling decisions, image pulls, container starts/stops, health check failures.
 
 ## Viewing Container Logs in Portainer
 
@@ -21,7 +21,7 @@ Navigate to **Kubernetes > Namespaces > [namespace] > Pods > [pod name] > Logs**
 
 Available options:
 
-```
+```sql
 Container selector: Select which container (for multi-container pods or init containers)
 Follow logs: Enable real-time log streaming
 Wrap lines: Toggle line wrapping for long log lines
@@ -35,6 +35,7 @@ When a container crashes and restarts, the current logs show the new instance. T
 
 ```bash
 # kubectl equivalent
+
 kubectl logs <pod-name> -c <container-name> --previous -n <namespace>
 ```
 
@@ -44,7 +45,7 @@ This is the most important log view when diagnosing CrashLoopBackOff errors.
 
 Open the pod detail view in Portainer and scroll to the **Events** section. Events appear in chronological order with timestamps:
 
-```
+```text
 REASON              MESSAGE
 Scheduled           Successfully assigned production/api-v2 to node-worker-2
 Pulling             Pulling image "my-registry/api:1.5.0"
@@ -59,9 +60,9 @@ Killing             Container api failed liveness probe, will be restarted
 
 For pods with sidecars (service mesh, log forwarder, etc.), Portainer's container selector dropdown lets you switch between containers:
 
-- `api` — main application container
-- `istio-proxy` — Envoy sidecar
-- `filebeat` — log shipper sidecar
+- `api` - main application container
+- `istio-proxy` - Envoy sidecar
+- `filebeat` - log shipper sidecar
 
 ## Log Filtering and Search
 

@@ -61,6 +61,7 @@ datadog/
 
 ```yaml
 # roles/datadog_agent/defaults/main.yml
+
 # Datadog API key (required)
 datadog_api_key: ""
 datadog_site: "datadoghq.com"

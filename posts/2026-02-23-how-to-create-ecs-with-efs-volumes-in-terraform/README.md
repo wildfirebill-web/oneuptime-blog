@@ -49,6 +49,7 @@ data "aws_subnets" "private" {
 }
 
 # Security group for EFS mount targets
+
 resource "aws_security_group" "efs" {
   name_prefix = "efs-"
   vpc_id      = data.aws_vpc.main.id

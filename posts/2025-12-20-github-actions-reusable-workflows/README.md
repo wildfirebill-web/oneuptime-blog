@@ -32,6 +32,7 @@ Define a workflow with the `workflow_call` trigger:
 
 ```yaml
 # .github/workflows/ci-node.yml
+
 name: Node.js CI
 
 on:

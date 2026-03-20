@@ -36,6 +36,7 @@ Create a capacity pool with the service level that matches your workload require
 
 ```bash
 # Create a Standard tier pool for dev/test workloads
+
 az netappfiles pool create \
   --resource-group rg-netapp \
   --account-name na-production \

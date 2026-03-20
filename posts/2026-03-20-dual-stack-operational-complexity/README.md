@@ -32,7 +32,7 @@ Every network change must be applied twice, tested twice, and monitored twice. A
 
 Different paths for IPv4 and IPv6 traffic create troubleshooting challenges:
 
-```
+```text
 Source: user laptop (dual-stack)
 Destination: example.com (dual-stack)
 
@@ -63,11 +63,12 @@ Result:
 
 Every BGP prefix filter must exist in two versions:
 
-```
+```text
 # IPv4 prefix list
+
 ip prefix-list CUSTOMER-PREFIXES seq 5 permit 203.0.113.0/24
 
-# IPv6 prefix list — separate list, must be maintained in parallel
+# IPv6 prefix list - separate list, must be maintained in parallel
 ipv6 prefix-list CUSTOMER-PREFIXES-V6 seq 5 permit 2001:db8::/32
 
 # Missing the IPv6 version → customer's IPv6 prefixes leak or are dropped
@@ -77,7 +78,7 @@ ipv6 prefix-list CUSTOMER-PREFIXES-V6 seq 5 permit 2001:db8::/32
 
 The most common dual-stack operational failure is IPv4 and IPv6 configs diverging over time:
 
-```
+```text
 Incident example:
 1. Team adds new VLAN 100 with IPv4 10.1.100.0/24
 2. IPv4 firewall rules updated: permit 10.1.100.0/24 → server

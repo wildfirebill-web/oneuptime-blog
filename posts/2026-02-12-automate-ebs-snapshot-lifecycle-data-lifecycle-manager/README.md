@@ -30,6 +30,7 @@ First, tag the EBS volumes you want to back up:
 
 ```bash
 # Tag EBS volumes for automated snapshots
+
 aws ec2 create-tags \
   --resources vol-0abc123 vol-0def456 \
   --tags Key=DLMBackup,Value=true

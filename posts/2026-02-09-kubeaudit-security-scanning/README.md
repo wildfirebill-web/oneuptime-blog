@@ -26,6 +26,7 @@ First, install Kubeaudit on your system. You can download pre-built binaries fro
 
 ```bash
 # Download the latest release for Linux
+
 curl -L https://github.com/Shopify/kubeaudit/releases/download/v0.22.0/kubeaudit_0.22.0_linux_amd64.tar.gz -o kubeaudit.tar.gz
 
 # Extract the binary

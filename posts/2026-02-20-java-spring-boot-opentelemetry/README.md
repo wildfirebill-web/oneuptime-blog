@@ -66,6 +66,7 @@ Configure the OpenTelemetry SDK through application properties.
 
 ```yaml
 # application.yml - OpenTelemetry configuration
+
 otel:
   # Service name appears in traces and metrics
   service:

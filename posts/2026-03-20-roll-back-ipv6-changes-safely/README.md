@@ -12,18 +12,18 @@ IPv6 migration rollback requires removing IPv6 enablement without disrupting the
 
 ## Rollback Planning Principles
 
-1. **Keep IPv4 running throughout** — never remove IPv4 configuration before IPv6 is validated
-2. **Use low DNS TTL** — set TTL to 60 seconds before publishing AAAA records
-3. **Document every change** — log what was changed, when, and by whom
-4. **Test rollback in staging** — practice the rollback procedure before production
+1. **Keep IPv4 running throughout** - never remove IPv4 configuration before IPv6 is validated
+2. **Use low DNS TTL** - set TTL to 60 seconds before publishing AAAA records
+3. **Document every change** - log what was changed, when, and by whom
+4. **Test rollback in staging** - practice the rollback procedure before production
 
 ## DNS Rollback (Most Common)
 
-DNS is the first thing to roll back — removing AAAA records stops all new IPv6 connections within the TTL window:
+DNS is the first thing to roll back - removing AAAA records stops all new IPv6 connections within the TTL window:
 
 ```bash
 #!/bin/bash
-# rollback_dns_ipv6.sh — Remove AAAA records
+# rollback_dns_ipv6.sh - Remove AAAA records
 
 DNS_ZONE="example.com"
 DNS_SERVER="ns1.example.com"
@@ -32,6 +32,7 @@ echo "Rolling back IPv6 DNS changes..."
 echo "Start time: $(date)"
 
 # Remove AAAA records for public-facing services
+
 # (adjust hostnames and addresses for your environment)
 HOSTNAMES=(
     "www.example.com"
@@ -52,7 +53,7 @@ del ${hostname} AAAA ${CURRENT_AAAA}
 send
 EOF
     else
-        echo "No AAAA record for $hostname — skipping"
+        echo "No AAAA record for $hostname - skipping"
     fi
 done
 
@@ -128,7 +129,7 @@ Always create backups before making changes:
 
 ```bash
 #!/bin/bash
-# pre_change_backup.sh — Run BEFORE any IPv6 change
+# pre_change_backup.sh - Run BEFORE any IPv6 change
 
 BACKUP_DIR="/var/backup/ipv6-migration/$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$BACKUP_DIR"
@@ -187,4 +188,4 @@ Roll back if any of the following occur:
 
 ## Conclusion
 
-Safe IPv6 rollback relies on additive-only changes (AAAA records added on top of A records, `::` listeners added alongside `0.0.0.0` listeners) and low DNS TTLs during migration. Create backups before every change. The fastest rollback is DNS — removing AAAA records stops new IPv6 connections within 60 seconds when TTL is set low. Design rollback runbooks before starting each migration phase, and practice them in staging to ensure they work correctly under pressure.
+Safe IPv6 rollback relies on additive-only changes (AAAA records added on top of A records, `::` listeners added alongside `0.0.0.0` listeners) and low DNS TTLs during migration. Create backups before every change. The fastest rollback is DNS - removing AAAA records stops new IPv6 connections within 60 seconds when TTL is set low. Design rollback runbooks before starting each migration phase, and practice them in staging to ensure they work correctly under pressure.

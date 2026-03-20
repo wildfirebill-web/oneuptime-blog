@@ -43,6 +43,7 @@ Implement a complete RBAC system with role checking decorators and user authenti
 
 ```python
 # rbac.py
+
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from enum import Enum

@@ -32,6 +32,7 @@ After installing Certbot from EPEL, check if the timer is already active:
 
 ```bash
 # Check the status of the Certbot renewal timer
+
 sudo systemctl status certbot-renew.timer
 ```
 

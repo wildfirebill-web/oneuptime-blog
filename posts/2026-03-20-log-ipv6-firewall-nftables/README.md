@@ -16,6 +16,7 @@ nftables provides a `log` statement for firewall event logging. Compared to ip6t
 # Syntax: log [prefix "text"] [level <syslog-level>] [flags <flag>]
 
 # Log before dropping
+
 nft add rule ip6 filter input drop log prefix "IPv6-DROP: "
 # NOTE: log statement must come BEFORE the terminal action
 
@@ -36,9 +37,9 @@ table ip6 filter {
 # emerg, alert, crit, err, warn (default), notice, info, debug
 
 # Flags:
-# skuid         — Log UID of sending process
-# ether         — Log Ethernet frame header
-# all           — Log all flags
+# skuid         - Log UID of sending process
+# ether         - Log Ethernet frame header
+# all           - Log all flags
 
 # Example with full options
 nft add rule ip6 filter input \
@@ -113,7 +114,7 @@ table ip6 log-control {
 
 ```bash
 # NFLOG sends logs to userspace daemon (ulogd2, conntrackd, etc.)
-# Better for high-volume logging — doesn't fill kernel log
+# Better for high-volume logging - doesn't fill kernel log
 
 nft add rule ip6 filter input \
   log group 1 prefix "IPv6-DROP"

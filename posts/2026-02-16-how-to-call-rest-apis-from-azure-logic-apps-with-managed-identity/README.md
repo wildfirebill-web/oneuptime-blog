@@ -36,6 +36,7 @@ Logic Apps supports both system-assigned and user-assigned managed identities.
 
 ```bash
 # Enable system-assigned managed identity on a Logic App Standard
+
 az logicapp identity assign \
   --name logic-order-workflows \
   --resource-group rg-workflows

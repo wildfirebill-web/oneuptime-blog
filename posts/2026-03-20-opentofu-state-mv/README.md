@@ -1,13 +1,12 @@
----
-title: "Using tofu state mv in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Learn how to use tofu state mv to rename resources, move them between modules, and refactor your infrastructure configuration without recreation."
----
-
 # Using tofu state mv in OpenTofu
 
-The `tofu state mv` command moves resources within the state file — renaming them, reorganizing module structure, or migrating between configurations — without destroying and recreating the actual infrastructure.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Learn how to use tofu state mv to rename resources, move them between modules, and refactor your infrastructure configuration without recreation.
+
+The `tofu state mv` command moves resources within the state file - renaming them, reorganizing module structure, or migrating between configurations - without destroying and recreating the actual infrastructure.
 
 ## Basic Syntax
 
@@ -19,6 +18,7 @@ tofu state mv [options] SOURCE DESTINATION
 
 ```bash
 # Rename aws_instance.server to aws_instance.web_server
+
 tofu state mv aws_instance.server aws_instance.web_server
 
 # Output:
@@ -162,7 +162,7 @@ tofu state mv -backup=pre-move.tfstate aws_instance.web aws_instance.app
 For collaborative teams, prefer `moved` blocks in code:
 
 ```hcl
-# Prefer this for team environments — changes are tracked in version control
+# Prefer this for team environments - changes are tracked in version control
 moved {
   from = aws_instance.server
   to   = aws_instance.web_server

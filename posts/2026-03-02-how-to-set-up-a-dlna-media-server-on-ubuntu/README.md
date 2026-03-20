@@ -26,6 +26,7 @@ sudo apt-get update
 sudo apt-get install -y minidlna
 
 # Check version
+
 minidlnad -V
 ```
 

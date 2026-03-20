@@ -16,6 +16,7 @@ Deploy Loki using Docker or Kubernetes.
 
 ```yaml
 # loki-config.yaml
+
 auth_enabled: false
 
 server:

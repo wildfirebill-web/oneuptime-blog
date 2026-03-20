@@ -34,6 +34,7 @@ The inventory reports need to go somewhere. You can use the same bucket or a sep
 
 ```bash
 # Create a destination bucket for inventory reports
+
 aws s3api create-bucket \
   --bucket my-inventory-reports \
   --region us-east-1

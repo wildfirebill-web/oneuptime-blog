@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Distributed Systems, Node Discovery, Service Discovery, DNS-SD, mDNS
+Tags: IPv6, Distributed Systems, Node Discovery, Service Discovery, DNS-SD, MDNS
 
 Description: Handle IPv6 addressing challenges in distributed system node discovery, covering DNS-based discovery, multicast, gossip bootstrap, and static seed configuration patterns.
 
@@ -16,6 +16,7 @@ The most common mistake when adding IPv6 addresses to distributed system configs
 
 ```bash
 # WRONG: IPv6 address without brackets in URL context
+
 cassandra_seeds: "2001:db8::1:9042"  # Ambiguous - is :9042 part of address?
 
 # CORRECT: IPv6 address with brackets in URL context
@@ -177,4 +178,4 @@ def get_preferred_address(hostname):
     return results[0][4][0]
 ```
 
-Implementing IPv6-aware node discovery — through proper address formatting, DNS AAAA/SRV records, and multicast — ensures your distributed systems can find and communicate with peers reliably on modern IPv6 networks.
+Implementing IPv6-aware node discovery - through proper address formatting, DNS AAAA/SRV records, and multicast - ensures your distributed systems can find and communicate with peers reliably on modern IPv6 networks.

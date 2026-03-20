@@ -108,6 +108,7 @@ This collector configuration is the foundation of the migration strategy. It acc
 
 ```yaml
 # otel-collector-jaeger-migration.yaml
+
 # This ConfigMap contains the collector configuration for the migration phase
 apiVersion: v1
 kind: ConfigMap

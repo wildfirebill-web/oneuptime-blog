@@ -1,4 +1,4 @@
-# How to Configure Service Replicas in Portainer
+# How to Configure Service Replicas in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Run a fixed number of replicas distributed across available nodes:
 
 ```bash
 # Run exactly 3 replicas anywhere in the cluster
+
 docker service create --replicas 3 --name my-service nginx:alpine
 ```
 
@@ -98,14 +99,14 @@ docker node update --label-add gpu=true gpu-node-01
 
 Under **Placement** when creating/editing a service:
 
-```
+```text
 Add constraint:
   Key:      node.role
   Operator: ==
   Value:    worker
 ```
 
-```
+```text
 Add constraint:
   Key:      node.labels.zone
   Operator: ==

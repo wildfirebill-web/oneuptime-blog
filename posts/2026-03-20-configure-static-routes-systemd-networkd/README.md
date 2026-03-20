@@ -14,6 +14,7 @@ Static routes in systemd-networkd are defined in `[Route]` sections within `.net
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 
@@ -118,4 +119,4 @@ networkctl status eth0
 
 ## Conclusion
 
-Static routes in systemd-networkd are defined in `[Route]` sections within `.network` files. Each `[Route]` section takes `Destination`, `Gateway`, `Metric`, `Type`, and other parameters. Routes follow the interface lifecycle — applied when up, removed when down. Verify with `ip route show` after applying.
+Static routes in systemd-networkd are defined in `[Route]` sections within `.network` files. Each `[Route]` section takes `Destination`, `Gateway`, `Metric`, `Type`, and other parameters. Routes follow the interface lifecycle - applied when up, removed when down. Verify with `ip route show` after applying.

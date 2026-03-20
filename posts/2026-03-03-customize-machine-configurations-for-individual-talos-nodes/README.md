@@ -27,6 +27,7 @@ The simplest way to customize individual nodes is to use config patches when app
 
 ```bash
 # Generate base configurations
+
 talosctl gen config my-cluster https://10.0.1.100:6443
 
 # Apply base config with a node-specific patch to worker-1

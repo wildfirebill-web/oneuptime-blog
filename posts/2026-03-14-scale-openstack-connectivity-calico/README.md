@@ -30,6 +30,7 @@ In a full-mesh BGP topology, every node peers with every other node. This does n
 
 ```yaml
 # route-reflector-node.yaml
+
 # Configure dedicated nodes as BGP route reflectors
 apiVersion: projectcalico.org/v3
 kind: Node

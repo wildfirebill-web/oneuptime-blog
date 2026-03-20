@@ -18,6 +18,7 @@ Ubuntu offers several base images with different trade-offs:
 
 ```dockerfile
 # Full Ubuntu - largest, most complete
+
 FROM ubuntu:22.04  # ~70 MB compressed
 
 # Ubuntu minimal - stripped packages

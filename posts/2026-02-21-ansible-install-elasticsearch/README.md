@@ -23,6 +23,7 @@ This post walks through installing Elasticsearch using Ansible, covering package
 
 ```ini
 # inventory/elasticsearch.ini
+
 [elasticsearch_nodes]
 es-node-1 ansible_host=10.0.4.10
 es-node-2 ansible_host=10.0.4.11

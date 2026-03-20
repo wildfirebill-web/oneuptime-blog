@@ -42,6 +42,7 @@ First, let's create a simple weather client that makes HTTP requests. This is th
 
 ```python
 # app/client.py
+
 # Weather API client for fetching weather data
 import requests
 

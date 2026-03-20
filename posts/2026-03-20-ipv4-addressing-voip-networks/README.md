@@ -12,10 +12,10 @@ VoIP traffic is sensitive to latency (< 150 ms), jitter (< 30 ms), and packet lo
 
 ## VoIP Network Architecture
 
-```
-Data VLAN   (VLAN 10):  10.1.10.0/24   — workstations
-Voice VLAN  (VLAN 20):  10.1.20.0/24   — IP phones
-Call Server (VLAN 30):  10.1.30.0/24   — PBX, SIP proxy, voicemail
+```text
+Data VLAN   (VLAN 10):  10.1.10.0/24   - workstations
+Voice VLAN  (VLAN 20):  10.1.20.0/24   - IP phones
+Call Server (VLAN 30):  10.1.30.0/24   - PBX, SIP proxy, voicemail
 ```
 
 ## Subnet Sizing for VoIP
@@ -36,8 +36,9 @@ for count in [20, 50, 100, 250, 500]:
 
 ## DHCP Configuration with Option 150 (Cisco TFTP)
 
-```
+```text
 # ISC DHCP for voice VLAN
+
 subnet 10.1.20.0 netmask 255.255.255.0 {
   range 10.1.20.10 10.1.20.200;
   option routers 10.1.20.1;
@@ -52,7 +53,7 @@ subnet 10.1.20.0 netmask 255.255.255.0 {
 ## Cisco Switch Voice VLAN
 
 ```cisco
-! Access port — data + voice
+! Access port - data + voice
 interface GigabitEthernet1/0/1
  description IP-Phone-Port
  switchport mode access
@@ -91,10 +92,10 @@ interface GigabitEthernet0/1
 
 ## NAT Considerations for SIP
 
-```
+```text
 SIP signaling contains private IPv4 addresses in SDP bodies.
 With NAT, use one of:
-  1. SIP ALG (Application Layer Gateway) — built into most routers
+  1. SIP ALG (Application Layer Gateway) - built into most routers
   2. STUN/TURN servers for media traversal
   3. Session Border Controller (SBC) at the network edge
   4. SIP over TLS with a hosted SBC (recommended for production)
@@ -105,10 +106,10 @@ Disable SIP ALG if using a dedicated SBC:
 
 ## Sample IPv4 Plan for 200-Person Office
 
-```
-VLAN 20 — Voice:    10.1.20.0/24  (200 phones, 54 spare)
-VLAN 30 — Servers:  10.1.30.0/28  (PBX, TFTP, Voicemail, NTP)
-VLAN 10 — Data:     10.1.10.0/23  (workstations — separate)
+```text
+VLAN 20 - Voice:    10.1.20.0/24  (200 phones, 54 spare)
+VLAN 30 - Servers:  10.1.30.0/28  (PBX, TFTP, Voicemail, NTP)
+VLAN 10 - Data:     10.1.10.0/23  (workstations - separate)
 ```
 
 ## Conclusion

@@ -14,6 +14,7 @@ Network connectivity failures have a finite set of causes. Working through a str
 
 ```bash
 # Is the interface UP and has it detected a link?
+
 ip link show eth0
 # Look for: LOWER_UP (physical link detected), UP (interface enabled)
 ```
@@ -50,7 +51,7 @@ If gateway ping fails: check ARP (`ip neigh show`), check if the gateway IP is c
 ## Step 5: Ping a Known External IP
 
 ```bash
-# Skip DNS — ping a raw IP to test internet reachability
+# Skip DNS - ping a raw IP to test internet reachability
 ping -c 3 8.8.8.8
 ```
 
@@ -133,4 +134,4 @@ graph TD
 
 ## Conclusion
 
-Work through the layers: physical link → IP address → gateway reachability → internet IP → DNS. Each step narrows the search space. Most Linux connectivity issues are resolved by step 6 (DNS) — the IP stack is working but name resolution is broken.
+Work through the layers: physical link → IP address → gateway reachability → internet IP → DNS. Each step narrows the search space. Most Linux connectivity issues are resolved by step 6 (DNS) - the IP stack is working but name resolution is broken.

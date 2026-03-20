@@ -16,6 +16,7 @@ Initialize Playwright in your project:
 
 ```bash
 # Create a new project with Playwright
+
 npm init playwright@latest
 
 # Or add to existing project

@@ -71,6 +71,7 @@ Once the build environment variables are passed as Helm values, you can use them
 
 ```yaml
 # templates/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

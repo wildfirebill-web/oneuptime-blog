@@ -63,6 +63,7 @@ Before setting up MirrorMaker 2.0, ensure you have:
 # mm2.properties - MirrorMaker 2.0 configuration file
 
 # Define the cluster aliases
+
 clusters = source, target
 
 # Source cluster connection settings

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, wsl2, windows, docker-desktop, installation
+Tags: Portainer, WSL2, Windows, Docker-desktop, Installation
 
 Description: A guide to installing and running Portainer CE on Windows using WSL2 and Docker Desktop for local container development and management.
 
@@ -21,6 +21,7 @@ WSL2 (Windows Subsystem for Linux 2) with Docker Desktop provides a Linux-native
 
 ```powershell
 # In PowerShell (as Administrator)
+
 wsl --install
 wsl --set-default-version 2
 wsl --install -d Ubuntu
@@ -69,7 +70,7 @@ docker ps | grep portainer
 
 Since Docker Desktop maps WSL2 ports to Windows localhost:
 
-```
+```text
 https://localhost:9443
 ```
 

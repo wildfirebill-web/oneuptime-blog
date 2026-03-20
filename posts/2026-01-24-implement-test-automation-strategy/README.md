@@ -222,6 +222,7 @@ Calculate the return on investment for automation:
 
 ```python
 # roi_calculator.py
+
 def calculate_automation_roi(
     manual_test_time_hours: float,
     test_frequency_per_month: int,

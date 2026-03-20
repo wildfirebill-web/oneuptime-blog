@@ -45,6 +45,7 @@ First, create a namespace for the gateway:
 
 ```bash
 # Create a dedicated namespace for the APIM gateway
+
 kubectl create namespace apim-gateway
 ```
 

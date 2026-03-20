@@ -42,6 +42,7 @@ The backup captures both the persistent volume data (through CSI snapshots) and 
 
 ```bash
 # Install the required Azure CLI extensions
+
 az extension add --name aks-preview --upgrade
 az extension add --name dataprotection --upgrade
 ```

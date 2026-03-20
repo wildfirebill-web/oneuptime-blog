@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, DaemonSets, OpenTofu, Infrastructure, Monitoring, Logging
+Tags: Kubernetes, DaemonSet, OpenTofu, Infrastructure, Monitoring, Logging
 
 Description: Learn how to create Kubernetes DaemonSets with OpenTofu to ensure monitoring agents, log collectors, and node configuration tools run on every node in your cluster.
 
@@ -14,6 +14,7 @@ DaemonSets ensure that a pod runs on all (or selected) nodes in a cluster. They'
 
 ```hcl
 # main.tf - Fluentd DaemonSet for log collection
+
 resource "kubernetes_daemon_set_v1" "fluentd" {
   metadata {
     name      = "fluentd-log-collector"

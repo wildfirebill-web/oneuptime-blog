@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, BDP, Performance, Network Tuning, sysctl, Bandwidth
+Tags: TCP, BDP, Performance, Network Tuning, Sysctl, Bandwidth
 
 Description: Learn how to calculate the Bandwidth Delay Product (BDP) for any network path and use it to correctly size TCP socket buffers for maximum throughput.
 
 ## What Is the Bandwidth Delay Product?
 
-The Bandwidth Delay Product (BDP) is the amount of data that can be "in flight" on a network path at any given time — the product of bandwidth and round-trip time:
+The Bandwidth Delay Product (BDP) is the amount of data that can be "in flight" on a network path at any given time - the product of bandwidth and round-trip time:
 
-```
+```text
 BDP = Bandwidth (bits/sec) × Round-Trip Time (seconds)
 ```
 
@@ -20,6 +20,7 @@ TCP must buffer this much data to keep the pipe full. If the TCP buffer is small
 
 ```bash
 # Measure RTT to a target host
+
 ping -c 20 192.168.1.100
 # Output:
 # rtt min/avg/max/mdev = 0.312/0.441/0.612/0.087 ms
@@ -34,7 +35,7 @@ ping -c 100 8.8.8.8
 
 ## Step 2: Calculate BDP
 
-```
+```text
 BDP = Bandwidth × RTT
 
 Examples:
@@ -67,7 +68,7 @@ echo "BDP = $bdp_bytes bytes = $(echo "$bdp_bytes / 1048576" | bc) MB"
 
 Set TCP buffers to at least **2× BDP** to provide headroom:
 
-```
+```text
 Required buffer = 2 × BDP
 
 For 10 Gbps WAN, 100ms RTT:
@@ -100,7 +101,7 @@ After tuning, verify that TCP is actually using large windows:
 # Check active connection window sizes
 ss -tin | grep rcv_space
 
-# Look for "rcv_space:XXXXX" — should be close to your max buffer
+# Look for "rcv_space:XXXXX" - should be close to your max buffer
 # Also check:
 ss -tin | grep -E "wscale|snd_wnd|rcv_wnd"
 ```
@@ -129,4 +130,4 @@ iperf3 -c server-ip -t 30
 
 ## Conclusion
 
-The BDP calculation — bandwidth multiplied by RTT — tells you exactly how large TCP buffers must be to fill a network pipe. Use `ping` to measure RTT, multiply by your link bandwidth, double it for safety margin, and set `net.ipv4.tcp_rmem` and `tcp_wmem` max values accordingly. For LAN connections the default buffers are usually adequate; for high-latency WAN links, buffer sizing is the most impactful TCP tuning you can do.
+The BDP calculation - bandwidth multiplied by RTT - tells you exactly how large TCP buffers must be to fill a network pipe. Use `ping` to measure RTT, multiply by your link bandwidth, double it for safety margin, and set `net.ipv4.tcp_rmem` and `tcp_wmem` max values accordingly. For LAN connections the default buffers are usually adequate; for high-latency WAN links, buffer sizing is the most impactful TCP tuning you can do.

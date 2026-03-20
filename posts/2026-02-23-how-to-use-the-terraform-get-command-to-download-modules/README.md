@@ -16,6 +16,7 @@ When you reference a module in your Terraform configuration, the source code for
 
 ```bash
 # Basic usage - download all modules referenced in the current directory
+
 terraform get
 ```
 

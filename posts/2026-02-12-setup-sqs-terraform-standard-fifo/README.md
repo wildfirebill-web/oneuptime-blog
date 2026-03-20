@@ -53,6 +53,7 @@ resource "aws_sqs_queue" "orders" {
 }
 
 # Dead letter queue for failed messages
+
 resource "aws_sqs_queue" "orders_dlq" {
   name                      = "orders-queue-dlq"
   message_retention_seconds = 1209600  # Keep failed messages for 14 days

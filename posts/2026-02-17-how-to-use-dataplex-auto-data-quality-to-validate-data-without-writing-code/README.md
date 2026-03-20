@@ -29,6 +29,7 @@ Start with a basic scan against a BigQuery table:
 
 ```bash
 # Create a data quality scan for a BigQuery table
+
 gcloud dataplex datascans create data-quality orders-quality-scan \
   --location=us-central1 \
   --data-source-entity="projects/my-project/locations/us-central1/lakes/analytics-lake/zones/curated-analytics/entities/orders" \

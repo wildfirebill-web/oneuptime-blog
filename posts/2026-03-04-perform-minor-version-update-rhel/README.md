@@ -14,6 +14,7 @@ RHEL minor version updates bring new features, bug fixes, and security patches w
 
 ```bash
 # Display the current RHEL version
+
 cat /etc/redhat-release
 
 # Get detailed version info

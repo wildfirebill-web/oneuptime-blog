@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NTP, IPv6, Time Synchronization, IPv6-Only, chrony, Network Design
+Tags: NTP, IPv6, Time Synchronization, IPv6-Only, Chrony, Network Design
 
 Description: Design and configure time synchronization infrastructure for pure IPv6-only networks, including upstream source selection, internal NTP hierarchy, and client configuration.
 
 ---
 
-IPv6-only networks — those with no IPv4 connectivity whatsoever — require time synchronization infrastructure that works entirely over IPv6. This involves selecting IPv6-capable NTP sources, building an internal NTP hierarchy, and ensuring all clients are configured for IPv6.
+IPv6-only networks - those with no IPv4 connectivity whatsoever - require time synchronization infrastructure that works entirely over IPv6. This involves selecting IPv6-capable NTP sources, building an internal NTP hierarchy, and ensuring all clients are configured for IPv6.
 
 ## Assessing IPv6-Only NTP Requirements
 
 ```bash
 # Verify there is no IPv4 connectivity
+
 ping -4 8.8.8.8 2>&1
 # Should fail: "Network is unreachable" or "No route to host"
 
@@ -30,7 +31,7 @@ dig AAAA ipv6.pool.ntp.org +short
 
 For IPv6-only networks, build a three-tier hierarchy:
 
-```
+```text
 Tier 1: IPv6-capable public NTP servers (internet)
     ↓
 Tier 2: Internal NTP masters (your network, synced from Tier 1)

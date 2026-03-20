@@ -62,6 +62,7 @@ For e-commerce workloads, you want a cluster that can handle traffic spikes. Use
 
 ```bash
 # Create the AKS cluster with autoscaling enabled
+
 az aks create \
   --name commerce-aks \
   --resource-group commerce-rg \

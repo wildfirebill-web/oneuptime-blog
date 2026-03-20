@@ -109,6 +109,7 @@ Install the pack CLI and build.
 
 ```bash
 # Build using Google Cloud Buildpacks
+
 pack build express-demo \
     --builder=gcr.io/buildpacks/builder:v1
 

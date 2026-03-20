@@ -16,6 +16,7 @@ Infrastructure A/B testing means deploying two variations of your setup simultan
 
 ```bash
 # Create two workspaces for the A/B test
+
 terraform workspace new ab-test-variant-a
 terraform workspace new ab-test-variant-b
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, S3, Versioning, AWS, Data Protection, Infrastructure as Code
 
-Description: Learn how to configure S3 bucket versioning with OpenTofu — enabling versioning, managing MFA delete, combining versioning with lifecycle rules for cost control, and restoring deleted objects.
+Description: Learn how to configure S3 bucket versioning with OpenTofu - enabling versioning, managing MFA delete, combining versioning with lifecycle rules for cost control, and restoring deleted objects.
 
 ## Introduction
 
@@ -31,7 +31,8 @@ resource "aws_s3_bucket_versioning" "app" {
 
 ```hcl
 # MFA delete requires the bucket owner's MFA device for permanent deletion
-# Must be configured via CLI or SDK — OpenTofu can represent the desired state
+
+# Must be configured via CLI or SDK - OpenTofu can represent the desired state
 resource "aws_s3_bucket_versioning" "critical" {
   bucket = aws_s3_bucket.critical.id
 
@@ -198,4 +199,4 @@ resource "aws_s3_bucket_replication_configuration" "crr" {
 
 ## Conclusion
 
-S3 Versioning with OpenTofu provides a safety net against accidental object deletion and overwrites. Always pair versioning with lifecycle rules to control storage costs — without them, every version of every object accumulates indefinitely. Use Object Lock in COMPLIANCE mode for audit trails that regulators require to be immutable. Enable the `expired_object_delete_marker` expiration rule to clean up orphaned delete markers that accumulate in heavily-updated versioned buckets.
+S3 Versioning with OpenTofu provides a safety net against accidental object deletion and overwrites. Always pair versioning with lifecycle rules to control storage costs - without them, every version of every object accumulates indefinitely. Use Object Lock in COMPLIANCE mode for audit trails that regulators require to be immutable. Enable the `expired_object_delete_marker` expiration rule to clean up orphaned delete markers that accumulate in heavily-updated versioned buckets.

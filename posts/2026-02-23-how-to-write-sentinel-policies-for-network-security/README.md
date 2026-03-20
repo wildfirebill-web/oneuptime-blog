@@ -29,6 +29,7 @@ Security groups are the most common source of network security issues. Here is a
 
 ```python
 # network-security.sentinel
+
 # Enforces network security standards
 
 import "tfplan/v2" as tfplan

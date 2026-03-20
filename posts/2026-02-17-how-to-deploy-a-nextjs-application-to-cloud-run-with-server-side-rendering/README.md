@@ -57,6 +57,7 @@ This Dockerfile uses a multi-stage build to keep the final image lean:
 
 ```dockerfile
 # Dockerfile for Next.js with standalone output
+
 # Stage 1: Install dependencies
 FROM node:20-alpine AS deps
 WORKDIR /app

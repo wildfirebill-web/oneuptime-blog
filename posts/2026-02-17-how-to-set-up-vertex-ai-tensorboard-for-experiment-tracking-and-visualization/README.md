@@ -16,6 +16,7 @@ First, you need to create a TensorBoard instance. This is a persistent resource 
 
 ```python
 # create_tensorboard.py
+
 # Create a Vertex AI TensorBoard instance
 
 from google.cloud import aiplatform

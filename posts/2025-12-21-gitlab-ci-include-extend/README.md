@@ -32,6 +32,7 @@ Include files from the same repository.
 
 ```yaml
 # .gitlab-ci.yml
+
 include:
   - local: '/ci/build.yml'
   - local: '/ci/test.yml'

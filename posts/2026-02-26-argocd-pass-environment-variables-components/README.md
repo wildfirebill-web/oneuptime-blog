@@ -178,6 +178,7 @@ When installing ArgoCD with the official Helm chart, use the `extraEnv` field:
 
 ```yaml
 # values.yaml
+
 global:
   logging:
     level: info

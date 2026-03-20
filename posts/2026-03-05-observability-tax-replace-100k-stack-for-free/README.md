@@ -132,6 +132,7 @@ If you're already using OpenTelemetry, you're halfway there - just add another e
 
 ```yaml
 # otel-collector-config.yaml
+
 exporters:
   otlp/oneuptime:
     endpoint: "your-oneuptime-instance:4317"

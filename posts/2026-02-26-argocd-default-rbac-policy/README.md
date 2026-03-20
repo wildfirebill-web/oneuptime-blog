@@ -137,6 +137,7 @@ To change the default policy:
 
 ```bash
 # Edit the ConfigMap directly
+
 kubectl edit configmap argocd-rbac-cm -n argocd
 
 # Or apply a patch

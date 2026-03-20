@@ -26,6 +26,7 @@ Make sure you have:
 
 ```bash
 # Check your Helm version
+
 helm version
 
 # Ensure Artifact Registry API is enabled

@@ -41,6 +41,7 @@ Start with a storage bucket abstraction that works across cloud providers.
 
 ```yaml
 # infrastructure/crossplane/xrds/xstoragebucket.yaml
+
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:

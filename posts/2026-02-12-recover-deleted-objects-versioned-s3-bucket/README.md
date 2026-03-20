@@ -22,6 +22,7 @@ The object appears gone when you list the bucket normally, but it's still there.
 
 ```bash
 # This creates a delete marker - it does NOT remove data
+
 aws s3 rm s3://my-bucket/important-file.csv
 
 # This shows nothing (the file appears deleted)

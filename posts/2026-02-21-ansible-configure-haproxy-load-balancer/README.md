@@ -23,6 +23,7 @@ Start with a playbook that installs HAProxy and ensures it starts on boot:
 
 ```yaml
 # install_haproxy.yml - Install HAProxy load balancer
+
 ---
 - name: Install HAProxy
   hosts: load_balancers

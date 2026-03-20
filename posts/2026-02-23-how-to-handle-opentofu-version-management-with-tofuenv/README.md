@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTofu, Tofuenv, Version Management, IaC, DevOps
+Tags: OpenTofu, tofuenv, Version Management, IaC, DevOps
 
 Description: Learn how to manage multiple OpenTofu versions using tofuenv, including installation, switching versions, pinning per project, and integrating with CI/CD pipelines.
 
@@ -18,6 +18,7 @@ tofuenv is a shell script that works on macOS and Linux. Here is how to install 
 
 ```bash
 # Clone the repository
+
 git clone https://github.com/tofuutils/tofuenv.git ~/.tofuenv
 
 # Add tofuenv to your PATH

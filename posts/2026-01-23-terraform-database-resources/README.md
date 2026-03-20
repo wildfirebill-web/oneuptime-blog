@@ -16,6 +16,7 @@ Start with a basic but production-ready PostgreSQL deployment.
 
 ```hcl
 # Database subnet group
+
 resource "aws_db_subnet_group" "main" {
   name        = "main-db-subnet-group"
   description = "Subnet group for main database"

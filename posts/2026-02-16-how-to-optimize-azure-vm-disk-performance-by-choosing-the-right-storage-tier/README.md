@@ -34,6 +34,7 @@ On Linux:
 
 ```bash
 # Install iostat if not already available
+
 sudo apt-get install sysstat -y
 
 # Monitor disk I/O for 60 seconds with 5-second intervals

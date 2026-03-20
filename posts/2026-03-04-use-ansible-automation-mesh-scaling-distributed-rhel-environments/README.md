@@ -21,6 +21,7 @@ Automation mesh uses three node types:
 
 ```bash
 # Edit the AAP installer inventory
+
 sudo vi /opt/ansible-automation-platform/installer/inventory
 ```
 

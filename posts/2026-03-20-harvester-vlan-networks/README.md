@@ -19,7 +19,7 @@ VLANs (Virtual Local Area Networks) are a fundamental networking primitive for i
 
 ## Network Design Example
 
-```
+```text
 VLAN 10  - Management   10.0.10.0/24
 VLAN 100 - Production   10.0.100.0/24
 VLAN 200 - Staging      10.0.200.0/24
@@ -30,7 +30,7 @@ VLAN 300 - DMZ          10.0.300.0/24
 
 Configure the switch port connected to each Harvester node as a trunk port:
 
-```
+```text
 ! Cisco IOS example - configure trunk port for Harvester nodes
 interface GigabitEthernet0/1
   description Harvester-Node-01-eth1
@@ -40,8 +40,9 @@ interface GigabitEthernet0/1
   no shutdown
 ```
 
-```
+```text
 # Linux bridge example (if using a software switch)
+
 # Create bridge and VLAN filtering
 ip link add br0 type bridge
 ip link set br0 type bridge vlan_filtering 1
@@ -111,7 +112,7 @@ kubectl get nodenetwork -n harvester-system
 2. Click **Create**
 
 For VLAN 100 (Production):
-```
+```text
 Name:            prod-vlan-100
 Cluster Network: vlan
 VLAN ID:         100
@@ -119,7 +120,7 @@ Namespace:       default
 ```
 
 Repeat for each VLAN:
-```
+```text
 Name:            staging-vlan-200
 Cluster Network: vlan
 VLAN ID:         200

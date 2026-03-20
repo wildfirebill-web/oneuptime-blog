@@ -1,4 +1,4 @@
-# How to Clean Up Dangling Images in Portainer
+# How to Clean Up Dangling Images in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Dangling images are Docker images that have no tag and are not referenced by any
 
 ```bash
 # Dangling images appear as <none>:<none> in docker images:
+
 docker images
 
 REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
@@ -74,7 +75,7 @@ Or use the **Prune** function:
 ## Step 3: Remove Dangling Images via CLI
 
 ```bash
-# Remove only dangling images (safe — no tags or containers reference them):
+# Remove only dangling images (safe - no tags or containers reference them):
 docker image prune
 
 # With confirmation bypass:
@@ -186,7 +187,7 @@ docker image prune -a  # Removes EVERYTHING not used by a container
 # WARNING: This also removes base images you might want to keep cached
 ```
 
-Be careful with `docker image prune -a` — it removes all images not used by any container, including base images you use frequently. Dangling-only pruning is safer.
+Be careful with `docker image prune -a` - it removes all images not used by any container, including base images you use frequently. Dangling-only pruning is safer.
 
 ## Step 7: Monitor Disk Usage
 

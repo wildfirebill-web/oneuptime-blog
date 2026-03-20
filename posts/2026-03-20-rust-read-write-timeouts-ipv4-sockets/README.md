@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Sockets, IPv4, TCP, Timeouts, Networking, std::net
+Tags: Rust, Sockets, IPv4, TCP, Timeout, Networking, Std::net
 
 Description: Configure read and write timeouts on Rust TcpStream sockets over IPv4 using set_read_timeout and set_write_timeout to prevent blocking operations from hanging indefinitely.
 
@@ -67,7 +67,7 @@ fn send_request(host: &str, port: u16) -> io::Result<String> {
             Ok(0) => break,  // EOF
             Ok(_) => response.push_str(&line),
             Err(e) if e.kind() == io::ErrorKind::WouldBlock => {
-                eprintln!("Read timeout — no data from server");
+                eprintln!("Read timeout - no data from server");
                 break;
             }
             Err(e) if e.kind() == io::ErrorKind::TimedOut => {
@@ -126,7 +126,7 @@ fn handle_client(stream: TcpStream) {
             }
             Err(e) if e.kind() == std::io::ErrorKind::WouldBlock 
                    || e.kind() == std::io::ErrorKind::TimedOut => {
-                println!("Client {} idle for 30s — closing", peer);
+                println!("Client {} idle for 30s - closing", peer);
                 let _ = write_stream.write_all(b"Idle timeout\n");
                 break;
             }

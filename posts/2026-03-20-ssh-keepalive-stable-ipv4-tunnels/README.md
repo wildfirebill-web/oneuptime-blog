@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSH, KeepAlive, IPv4, Tunneling, Configuration, Networking, Reliability
+Tags: SSH, Keepalive, IPv4, Tunneling, Configuration, Networking, Reliability
 
 Description: Learn how to configure SSH client and server keepalive settings to prevent idle IPv4 tunnels from being dropped by firewalls or NAT devices.
 
@@ -12,7 +12,7 @@ Idle SSH tunnels are commonly dropped by firewalls, NAT gateways, and cloud load
 
 ## How SSH Keepalives Work
 
-```
+```text
 Client                    Server
   |   (idle for 30s)       |
   |--ServerAliveMessage--->|  (probe packet)
@@ -36,6 +36,7 @@ Host *
     ServerAliveCountMax 3
 
 # Apply stricter settings for tunnel connections specifically
+
 Host *-tunnel
     ServerAliveInterval 20
     ServerAliveCountMax 5
@@ -110,7 +111,7 @@ sysctl -p
 
 ## Key Takeaways
 
-- `ServerAliveInterval` is the most important setting — set it lower than your network's idle timeout.
+- `ServerAliveInterval` is the most important setting - set it lower than your network's idle timeout.
 - `ServerAliveCountMax` controls how many missed keepalives trigger a disconnect.
 - `TCPKeepAlive yes` adds OS-level TCP keepalives for additional protection against dead connections.
 - For cloud environments (AWS, GCP, Azure), set `ServerAliveInterval 60` to beat the typical 5-minute NAT idle timeout.

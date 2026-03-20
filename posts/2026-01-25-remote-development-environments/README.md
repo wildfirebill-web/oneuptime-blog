@@ -28,6 +28,7 @@ VS Code's Remote SSH extension is the most popular solution:
 
 ```bash
 # Install VS Code Remote SSH extension
+
 code --install-extension ms-vscode-remote.remote-ssh
 
 # Generate SSH key if you don't have one

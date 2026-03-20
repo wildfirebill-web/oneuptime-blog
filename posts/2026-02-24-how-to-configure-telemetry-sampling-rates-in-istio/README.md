@@ -175,6 +175,7 @@ Sometimes you want to force tracing for specific requests without changing the g
 
 ```bash
 # Force sampling with B3 headers
+
 curl -H "x-b3-sampled: 1" -H "x-b3-traceid: $(openssl rand -hex 16)" -H "x-b3-spanid: $(openssl rand -hex 8)" http://my-service/api/endpoint
 
 # Force sampling with W3C trace context

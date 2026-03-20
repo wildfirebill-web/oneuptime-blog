@@ -31,6 +31,7 @@ Tekton components are installed directly from their release manifests.
 
 ```bash
 # Install Tekton Pipelines
+
 kubectl apply --filename \
   https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 

@@ -14,6 +14,7 @@ IdM with integrated DNS runs a BIND DNS server managed through the IdM API. This
 
 ```bash
 # Authenticate to IdM
+
 kinit admin
 
 # List existing DNS zones

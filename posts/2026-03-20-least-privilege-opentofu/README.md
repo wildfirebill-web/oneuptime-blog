@@ -8,7 +8,7 @@ Description: Learn how to implement least-privilege access across AWS, Azure, an
 
 ---
 
-Least privilege is the security principle that every identity should have access only to what it needs to do its job — nothing more. OpenTofu enables you to encode this principle as code, making over-permissive access visible in pull requests and drift detectable via plan.
+Least privilege is the security principle that every identity should have access only to what it needs to do its job - nothing more. OpenTofu enables you to encode this principle as code, making over-permissive access visible in pull requests and drift detectable via plan.
 
 ## The Blast Radius Problem
 
@@ -26,6 +26,7 @@ graph LR
 
 ```hcl
 # aws_least_privilege.tf
+
 # Instead of attaching AmazonS3FullAccess, define exactly what the app needs
 resource "aws_iam_policy" "app_s3_policy" {
   name        = "AppS3AccessPolicy"
@@ -110,7 +111,7 @@ Use input variables to require explicit resource ARNs/IDs in policy definitions.
 variable "allowed_s3_bucket_arns" {
   description = "List of S3 bucket ARNs the application is allowed to access"
   type        = list(string)
-  # No default — must be explicitly provided
+  # No default - must be explicitly provided
 }
 
 resource "aws_iam_policy" "scoped_s3" {
@@ -149,7 +150,7 @@ variable "iam_policy_json" {
 
 ## Best Practices
 
-- Start with zero permissions and add what's needed incrementally — it's easier to grant more than to revoke.
+- Start with zero permissions and add what's needed incrementally - it's easier to grant more than to revoke.
 - Use tagging and conditions in policies to restrict access by environment (e.g., only allow access to production resources from production roles).
 - Run regular access reviews using tools like AWS IAM Access Analyzer, Azure Access Reviews, or GCP Policy Analyzer.
 - Make policy documents variables when possible so they can be reviewed in PRs independently of resource configs.

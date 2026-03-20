@@ -156,6 +156,7 @@ For Airflow 2.x, use smart sensors to reduce resource consumption:
 
 ```python
 # airflow.cfg
+
 [smart_sensor]
 use_smart_sensor = true
 shard_code_upper_limit = 10000

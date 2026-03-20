@@ -8,7 +8,7 @@ Description: Learn how to pass resource attributes, variables, and computed valu
 
 ## Introduction
 
-Provisioner scripts often need information about the resource being created or other parts of your configuration — IP addresses, resource IDs, database endpoints, and so on. OpenTofu provides several ways to pass this data to provisioner scripts: environment variables in `local-exec`, string interpolation in `remote-exec` inline commands, and the `file` provisioner for config files.
+Provisioner scripts often need information about the resource being created or other parts of your configuration - IP addresses, resource IDs, database endpoints, and so on. OpenTofu provides several ways to pass this data to provisioner scripts: environment variables in `local-exec`, string interpolation in `remote-exec` inline commands, and the `file` provisioner for config files.
 
 ## Method 1: Environment Variables in local-exec
 
@@ -43,6 +43,7 @@ resource "aws_instance" "web" {
 ```bash
 #!/bin/bash
 # scripts/post-create.sh
+
 set -euo pipefail
 
 echo "Configuring instance $INSTANCE_ID"

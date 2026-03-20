@@ -34,6 +34,7 @@ The error message includes a policy definition ID, but it is usually truncated o
 
 ```bash
 # Get details about the policy that blocked your request
+
 # Use the policy definition ID from the error message
 az policy definition show \
   --name "<policy-definition-name>" \

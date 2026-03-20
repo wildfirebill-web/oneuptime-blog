@@ -27,6 +27,7 @@ Navigate to GitLab > User Settings > Access Tokens and create a token with the f
 
 ```bash
 # Export the GitLab token and username
+
 export GITLAB_TOKEN=<your-gitlab-personal-access-token>
 export GITLAB_USER=<your-gitlab-username>
 ```

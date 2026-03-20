@@ -1,4 +1,4 @@
-# How to Optimize Cluster Provisioning Speed in Rancher
+# How to Optimize Cluster Provisioning Speed in Rancher - Speed
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Slow cluster provisioning frustrates operators and slows down development workfl
 
 ```bash
 # Create a base AMI with Kubernetes dependencies pre-installed
+
 # This eliminates package installation time during provisioning
 
 # On a base EC2 instance, run:
@@ -204,4 +205,4 @@ kubectl get clusters.provisioning.cattle.io \
 
 ## Conclusion
 
-Cluster provisioning speed in Rancher is primarily determined by three factors: node image preparation time, container image pull speed, and Rancher agent connection latency. By using pre-baked AMIs with Kubernetes binaries and images pre-loaded, combined with internal registry mirrors, you can reduce provisioning time from 20+ minutes to under 5 minutes. For organizations that frequently provision new clusters—such as in CI/CD workflows or auto-scaling scenarios—these optimizations are essential for operational efficiency.
+Cluster provisioning speed in Rancher is primarily determined by three factors: node image preparation time, container image pull speed, and Rancher agent connection latency. By using pre-baked AMIs with Kubernetes binaries and images pre-loaded, combined with internal registry mirrors, you can reduce provisioning time from 20+ minutes to under 5 minutes. For organizations that frequently provision new clusters-such as in CI/CD workflows or auto-scaling scenarios-these optimizations are essential for operational efficiency.

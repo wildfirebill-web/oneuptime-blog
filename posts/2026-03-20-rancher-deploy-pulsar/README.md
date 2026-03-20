@@ -1,8 +1,8 @@
-# How to Deploy Apache Pulsar on Rancher
+# How to Deploy Apache Pulsar on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Pulsar, Message Queue, Streaming
+Tags: Rancher, Kubernetes, Pulsar, Message Queues, Streaming
 
 Description: Deploy Apache Pulsar on Rancher for multi-tenant, geo-replicated messaging with built-in multi-tenancy, schema registry, and tiered storage.
 
@@ -22,6 +22,7 @@ Apache Pulsar is a cloud-native distributed messaging and streaming platform tha
 
 ```bash
 # Add the Apache Pulsar Helm chart repository
+
 helm repo add apache https://pulsar.apache.org/charts
 helm repo update
 

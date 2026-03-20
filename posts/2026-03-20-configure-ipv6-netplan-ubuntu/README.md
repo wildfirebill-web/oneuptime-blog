@@ -14,6 +14,7 @@ Netplan is Ubuntu's default network configuration tool since 18.04. It uses YAML
 
 ```bash
 # Check Netplan version
+
 netplan --version
 
 # Check which renderer is active

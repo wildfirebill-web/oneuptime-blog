@@ -17,7 +17,8 @@ Infisical is an open-source secrets manager with end-to-end encryption, a develo
 Infisical requires PostgreSQL for storage and Redis for caching. Deploy them together as a stack.
 
 ```yaml
-# infisical-stack.yml — complete Infisical self-hosted deployment
+# infisical-stack.yml - complete Infisical self-hosted deployment
+
 version: "3.8"
 
 services:
@@ -130,7 +131,7 @@ services:
 ## Step 5: Use Infisical SDK in Python
 
 ```python
-# app.py — fetching secrets from Infisical using the Python SDK
+# app.py - fetching secrets from Infisical using the Python SDK
 from infisical_client import ClientSettings, InfisicalClient, GetSecretOptions
 
 # Initialize the Infisical client

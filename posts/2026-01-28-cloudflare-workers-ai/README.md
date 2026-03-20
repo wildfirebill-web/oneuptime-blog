@@ -37,6 +37,7 @@ Add the AI binding to your wrangler.toml:
 
 ```toml
 # wrangler.toml
+
 name = "ai-worker"
 main = "src/worker.ts"
 compatibility_date = "2024-01-01"

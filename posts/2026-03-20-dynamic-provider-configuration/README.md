@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Infrastructure as Code, AWS, Terraform, IaC, DevOps, Providers
+Tags: OpenTofu, Infrastructure as Code, AWS, Terraform, IaC, DevOps, Provider
 
 Description: Learn how to create dynamic provider configurations in OpenTofu using variables, locals, and for_each on provider blocks to manage multiple provider instances.
 
@@ -78,6 +78,7 @@ variable "aws_regions" {
 }
 
 # Create one provider instance per region
+
 provider "aws" {
   for_each = var.aws_regions
   alias    = each.key

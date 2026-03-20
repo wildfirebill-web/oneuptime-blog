@@ -18,6 +18,7 @@ There are several ways to enable the Ansible debugger. The most common is using 
 
 ```yaml
 # Enable debugger on a specific task
+
 - name: Deploy application config
   ansible.builtin.template:
     src: app.conf.j2

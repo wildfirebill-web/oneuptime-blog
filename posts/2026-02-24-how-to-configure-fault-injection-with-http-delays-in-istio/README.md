@@ -161,6 +161,7 @@ Only requests with `x-test-delay: true` get the delay. Normal traffic is unaffec
 
 ```bash
 # This request gets delayed
+
 curl -H "x-test-delay: true" http://product-api:8080/products
 
 # This request is normal

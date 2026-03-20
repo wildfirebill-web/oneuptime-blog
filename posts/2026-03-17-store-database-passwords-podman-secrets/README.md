@@ -18,6 +18,7 @@ Database credentials are among the most sensitive data in any application. Expos
 
 ```bash
 # Create the password secret
+
 echo -n "secure-postgres-password-2026" | podman secret create pg_password -
 
 # Run PostgreSQL using the secret with _FILE suffix

@@ -24,6 +24,7 @@ WireGuard is a modern, fast VPN. Deploy it on the same server as Portainer, or o
 
 ```bash
 # Install WireGuard on Ubuntu
+
 apt-get update && apt-get install -y wireguard
 
 # Generate server keys

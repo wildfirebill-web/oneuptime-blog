@@ -48,6 +48,7 @@ Verify it is working:
 
 ```bash
 # Check if DNS capture is active
+
 kubectl exec deploy/my-app -c istio-proxy -- pilot-agent request GET /dns_resolve/my-service.my-namespace.svc.cluster.local
 
 # Check iptables rules

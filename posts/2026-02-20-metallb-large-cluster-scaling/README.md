@@ -43,6 +43,7 @@ Instead of one massive pool, create purpose-specific pools. This reduces the sea
 
 ```yaml
 # multiple-pools.yaml
+
 # Separate pools for different workload categories
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

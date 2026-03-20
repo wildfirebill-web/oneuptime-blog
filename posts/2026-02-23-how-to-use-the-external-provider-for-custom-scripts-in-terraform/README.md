@@ -20,6 +20,7 @@ The external data source works by executing a program and exchanging data throug
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

@@ -55,6 +55,7 @@ First, create a Lex V2 bot with the intents your IVR needs to handle.
 
 ```bash
 # Create a Lex V2 bot
+
 aws lexv2-models create-bot \
   --bot-name "ContactCenterBot" \
   --description "IVR bot for customer service" \

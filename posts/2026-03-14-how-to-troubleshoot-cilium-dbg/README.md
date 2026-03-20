@@ -28,7 +28,7 @@ This guide provides structured troubleshooting for common cilium-dbg failures.
 ## Diagnosing Connection Failures
 
 
-\`\`\`bash
+```bash
 CILIUM_POD=\$(kubectl -n kube-system get pods -l k8s-app=cilium   -o jsonpath='{.items[0].metadata.name}')
 
 ## Check pod status
@@ -39,7 +39,7 @@ kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent -- echo "exec works"
 
 ## Test agent API connectivity
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   cilium-dbg status 2>&1 | head -5
-\`\`\`
+```
 
 ```mermaid
 flowchart TD
@@ -50,31 +50,32 @@ flowchart TD
     D -->|Yes| F{Command returns error?}
     F -->|Yes| G[Check command syntax and version]
     F -->|No| H[Agent may be degraded - check logs]
-\`\`\`
+```
 
 ### Agent API Socket Issues
 
-\`\`\`bash
+```bash
 # Verify the API socket exists
+
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   ls -la /var/run/cilium/cilium.sock
 
 # Test direct API access
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   curl -s --unix-socket /var/run/cilium/cilium.sock http://localhost/v1/healthz
-\`\`\`
+```
 
 ### Version Mismatch
 
-\`\`\`bash
+```bash
 # Check cilium-dbg version
 kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   cilium-dbg version
 
 # Ensure CLI version matches agent version
 # Version mismatch can cause unexpected errors
-\`\`\`
+```
 
 ### Common Error Messages
 
-\`\`\`bash
+```bash
 # "Unable to reach agent" - agent process may be down
 kubectl -n kube-system logs "\$CILIUM_POD" -c cilium-agent --tail=20
 
@@ -83,7 +84,7 @@ kubectl -n kube-system exec "\$CILIUM_POD" -c cilium-agent --   which cilium-dbg
 
 # "permission denied" - check RBAC
 kubectl auth can-i create pods/exec -n kube-system
-\`\`\`
+```
 
 
 ## Verification

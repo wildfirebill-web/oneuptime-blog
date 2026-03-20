@@ -48,6 +48,7 @@ Elastic APM agents integrate directly with popular frameworks. The Python agent 
 
 ```python
 # settings.py - Django with Elastic APM
+
 INSTALLED_APPS = [
     'elasticapm.contrib.django',
     # ... other apps

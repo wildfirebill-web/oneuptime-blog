@@ -18,6 +18,7 @@ First, set up the Terraform provider and enable the required APIs:
 
 ```hcl
 # main.tf - Provider configuration and API enablement
+
 terraform {
   required_version = ">= 1.5.0"
 

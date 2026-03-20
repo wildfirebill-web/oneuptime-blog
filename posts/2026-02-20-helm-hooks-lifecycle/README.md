@@ -30,6 +30,7 @@ Helm supports the following hook annotations:
 
 ```yaml
 # Available hook types and when they fire
+
 # pre-install     - Before any resources are installed
 # post-install    - After all resources are installed
 # pre-delete      - Before any resources are deleted

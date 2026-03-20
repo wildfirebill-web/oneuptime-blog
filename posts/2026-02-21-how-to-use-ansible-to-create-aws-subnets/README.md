@@ -53,6 +53,7 @@ Leave gaps between ranges so you can add more subnets later without CIDR conflic
 
 ```yaml
 # create-subnet.yml
+
 ---
 - name: Create a subnet
   hosts: localhost

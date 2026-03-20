@@ -16,6 +16,7 @@ Calico VPP troubleshooting requires exec access to privileged pods in the `calic
 
 ```yaml
 # vpp-troubleshoot-role.yaml
+
 # Grants read-only pod exec access to VPP pods
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role

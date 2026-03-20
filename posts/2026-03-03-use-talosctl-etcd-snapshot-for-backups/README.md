@@ -30,6 +30,7 @@ The basic command to create an etcd snapshot is straightforward:
 
 ```bash
 # Create an etcd snapshot and save it locally
+
 talosctl etcd snapshot /path/to/backup/etcd-backup.snapshot --nodes 192.168.1.10
 ```
 

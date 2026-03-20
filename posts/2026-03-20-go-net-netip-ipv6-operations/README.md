@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, Golang, net/netip, IPv6, Standard Library, netip.Addr, Prefix
+Tags: Go, Golang, Net/netip, IPv6, Standard Library, Netip.Addr, Prefix
 
 Description: Use Go's net/netip package (introduced in Go 1.18) for efficient, allocation-free IPv6 address parsing, prefix operations, and network calculations.
 
 ## Introduction
 
-Go 1.18 introduced `net/netip` — a new package with value-type IP addresses (`netip.Addr`) that are significantly more efficient than the older `net.IP` slice type. `netip.Addr` is comparable, zero-allocation, and supports IPv6 natively including IPv4-in-IPv6 addresses.
+Go 1.18 introduced `net/netip` - a new package with value-type IP addresses (`netip.Addr`) that are significantly more efficient than the older `net.IP` slice type. `netip.Addr` is comparable, zero-allocation, and supports IPv6 natively including IPv4-in-IPv6 addresses.
 
 ## Basic IPv6 Operations
 
@@ -86,7 +86,7 @@ import (
     "net/netip"
 )
 
-// Iterate over addresses in a /64 prefix (demonstration — not for full /64!)
+// Iterate over addresses in a /64 prefix (demonstration - not for full /64!)
 func iterateSubnet(prefix netip.Prefix, maxCount int) []netip.Addr {
     addrs := make([]netip.Addr, 0, maxCount)
     addr := prefix.Addr()

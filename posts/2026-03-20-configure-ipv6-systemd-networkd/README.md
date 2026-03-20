@@ -14,6 +14,7 @@ Description: A guide to configuring IPv6 addresses, routing, and DNS using syste
 
 ```bash
 # Check if systemd-networkd is running
+
 systemctl status systemd-networkd
 
 # Start and enable if not running
@@ -28,7 +29,7 @@ networkctl list
 
 systemd-networkd uses `.network` files (for interface configuration) and `.netdev` files (for virtual devices):
 
-```
+```text
 /etc/systemd/network/
     10-eth0.network     # eth0 network configuration
     20-eth1.network     # eth1 network configuration

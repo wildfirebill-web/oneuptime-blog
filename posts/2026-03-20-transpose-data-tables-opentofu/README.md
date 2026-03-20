@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, HCL, Functions, Data Transformation, transpose
+Tags: OpenTofu, Terraform, HCL, Functions, Data Transformation, Transpose
 
 Description: Learn how to use OpenTofu's transpose function to flip rows and columns in map-of-lists structures, enabling flexible data restructuring for infrastructure configurations.
 
 ## Introduction
 
-The `transpose` function in OpenTofu inverts a map of lists — turning rows into columns and columns into rows. This is powerful when your data is organized one way but you need to query it another way.
+The `transpose` function in OpenTofu inverts a map of lists - turning rows into columns and columns into rows. This is powerful when your data is organized one way but you need to query it another way.
 
 ## Understanding transpose
 
@@ -58,6 +58,7 @@ locals {
 }
 
 # Create Route53 health checks for each service in each of its regions
+
 resource "aws_route53_health_check" "service" {
   for_each = {
     for pair in flatten([

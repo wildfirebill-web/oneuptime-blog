@@ -84,6 +84,7 @@ Note: IPv6 addresses in URLs must be wrapped in square brackets as per RFC 2732.
 
 ```bash
 # Restart Tyk Gateway
+
 sudo systemctl restart tyk-gateway
 
 # Check that Tyk is listening on IPv6
@@ -128,4 +129,4 @@ redis-cli -6 -h ::1 ping
 
 ## Conclusion
 
-Tyk's Go runtime makes IPv6 configuration straightforward — the primary change is the `listen_address` binding and ensuring upstream `target_url` values use bracket notation for IPv6 addresses. Monitor your Tyk gateway using OneUptime to ensure both IPv4 and IPv6 paths remain healthy.
+Tyk's Go runtime makes IPv6 configuration straightforward - the primary change is the `listen_address` binding and ensuring upstream `target_url` values use bracket notation for IPv6 addresses. Monitor your Tyk gateway using OneUptime to ensure both IPv4 and IPv6 paths remain healthy.

@@ -36,6 +36,7 @@ Create a stream for each camera:
 
 ```python
 # Create a Kinesis Video Stream for a camera
+
 import boto3
 
 kvs = boto3.client('kinesisvideo')

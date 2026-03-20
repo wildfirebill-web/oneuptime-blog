@@ -20,6 +20,7 @@ You need a configured farm with reachable system connections:
 
 ```bash
 # Verify your farm exists and has connections
+
 podman farm list
 
 # Test connectivity to all nodes

@@ -12,6 +12,7 @@ Tokio's async I/O model handles thousands of IPv6 connections with minimal overh
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 ```

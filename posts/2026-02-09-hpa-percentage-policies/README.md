@@ -304,6 +304,7 @@ Track how percentage policies affect scaling velocity.
 
 ```bash
 # Monitor replica changes over time
+
 kubectl get hpa percentage-scaling-hpa -w
 
 # Calculate scaling rate

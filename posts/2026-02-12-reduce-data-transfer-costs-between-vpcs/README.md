@@ -30,6 +30,7 @@ For simple point-to-point connections between two VPCs, VPC peering is the cheap
 
 ```bash
 # Create a VPC peering connection
+
 aws ec2 create-vpc-peering-connection \
   --vpc-id vpc-0a1b2c3d4e5f67890 \
   --peer-vpc-id vpc-0f9e8d7c6b5a43210 \

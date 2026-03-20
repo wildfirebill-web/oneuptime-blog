@@ -209,6 +209,7 @@ Create production services using Quadlet on SLES:
 
 ```ini
 # /etc/containers/systemd/enterprise-app.container
+
 [Container]
 ContainerName=enterprise-app
 Image=registry.suse.com/my-org/enterprise-app:latest

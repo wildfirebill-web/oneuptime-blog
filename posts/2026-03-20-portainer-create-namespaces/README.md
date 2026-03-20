@@ -1,8 +1,8 @@
-# How to Create Namespaces in Portainer for Kubernetes
+# How to Create Namespaces in Portainer for Kubernetes - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Organization, DevOps
+Tags: Portainer, Kubernetes, Namespaces, Organizations, DevOps
 
 Description: Learn how to create and configure Kubernetes namespaces in Portainer for organizing workloads and implementing multi-tenancy.
 
@@ -17,7 +17,7 @@ Kubernetes namespaces provide a mechanism for isolating groups of resources with
 
 ## When to Use Namespaces
 
-```
+```text
 Single namespace (default):     Small projects, learning environments
 Multiple namespaces:
   By environment:               production, staging, development
@@ -33,7 +33,7 @@ Multiple namespaces:
 3. Click **+ Add namespace**
 4. Configure:
 
-```
+```text
 Name:         production
 Annotations:
   description: "Production environment namespace"
@@ -68,6 +68,7 @@ metadata:
 
 ```bash
 # Or via kubectl
+
 kubectl create namespace production \
   --dry-run=client -o yaml | kubectl apply -f -
 ```
@@ -119,7 +120,7 @@ Or configure per-user default namespace in user settings.
 
 Best practices for namespace names:
 
-```
+```text
 # By environment + team
 production-backend
 staging-frontend
@@ -147,11 +148,11 @@ Rules:
 
 Do not use these reserved namespaces for application workloads:
 
-```
-kube-system       — Kubernetes system components
-kube-public       — Public cluster information
-kube-node-lease   — Node heartbeat leases
-default           — OK for small projects, but prefer dedicated namespaces
+```text
+kube-system       - Kubernetes system components
+kube-public       - Public cluster information
+kube-node-lease   - Node heartbeat leases
+default           - OK for small projects, but prefer dedicated namespaces
 ```
 
 ## Step 7: Verify Namespace Creation
@@ -190,7 +191,7 @@ kubectl get pods    # Lists pods in production
 
 Most Kubernetes resources are namespace-scoped:
 
-```
+```text
 Namespace-scoped:     Pods, Deployments, Services, PVCs, ConfigMaps, Secrets
 Cluster-scoped:       Nodes, PersistentVolumes, StorageClasses, ClusterRoles
 ```

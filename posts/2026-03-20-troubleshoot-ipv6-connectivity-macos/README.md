@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, Troubleshooting, Network Diagnostics, ping6
+Tags: IPv6, macOS, Troubleshooting, Network Diagnostics, Ping6
 
 Description: A systematic guide to diagnosing and fixing IPv6 connectivity problems on macOS, covering address assignment, routing, DNS, and firewall issues.
 
@@ -10,6 +10,7 @@ Description: A systematic guide to diagnosing and fixing IPv6 connectivity probl
 
 ```bash
 # Show all IPv6 addresses
+
 ifconfig | grep inet6
 
 # Check for global IPv6 address (should start with 2xxx or fcxx)

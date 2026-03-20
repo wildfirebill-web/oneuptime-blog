@@ -18,6 +18,7 @@ Here is what a fully specified backend looks like in Terraform:
 
 ```hcl
 # Do NOT do this in shared code
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "rg-terraform-state"

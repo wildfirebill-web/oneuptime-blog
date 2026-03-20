@@ -14,6 +14,7 @@ flagd is a lightweight feature flag daemon that implements the OpenFeature speci
 
 ```bash
 # Install flagd
+
 brew install flagd
 
 # Or run as a container

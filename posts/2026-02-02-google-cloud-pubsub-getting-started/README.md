@@ -54,6 +54,7 @@ First, authenticate and set your project:
 
 ```bash
 # Authenticate with Google Cloud
+
 gcloud auth login
 
 # Set your project

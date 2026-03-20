@@ -45,6 +45,7 @@ First, install Django Channels and the Redis channel layer:
 
 ```bash
 # Install Django Channels and Redis support
+
 pip install channels channels-redis
 ```
 

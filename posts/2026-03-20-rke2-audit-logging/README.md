@@ -28,6 +28,7 @@ Each audit event can be recorded at one of four levels:
 
 ```bash
 # Create the audit policy directory
+
 sudo mkdir -p /etc/rancher/rke2/
 
 # Create a comprehensive audit policy

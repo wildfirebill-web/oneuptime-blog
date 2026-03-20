@@ -51,6 +51,7 @@ Not a good fit for:
 
 ```bash
 # Create a Standard HDD disk
+
 az disk create \
   --name backup-disk \
   --resource-group my-resource-group \

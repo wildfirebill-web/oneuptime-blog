@@ -320,6 +320,7 @@ TLS routing problems can be tricky because you cannot inspect the encrypted payl
 
 ```bash
 # Check the proxy config for TLS routes
+
 istioctl proxy-config routes deploy/istio-ingressgateway -n istio-system -o json
 
 # Check listeners for TLS config

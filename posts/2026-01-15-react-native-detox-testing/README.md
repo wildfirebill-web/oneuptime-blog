@@ -325,6 +325,7 @@ Build and run your tests with these commands:
 
 ```bash
 # Build the app for iOS
+
 detox build --configuration ios.sim.debug
 
 # Run tests on iOS

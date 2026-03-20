@@ -29,6 +29,7 @@ Identify the container runtime in use:
 
 ```bash
 # Check container runtime for each node
+
 kubectl get nodes -o wide
 # CONTAINER-RUNTIME column shows: containerd://1.7.x or cri-o://1.29.x
 

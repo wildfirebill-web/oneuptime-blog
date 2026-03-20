@@ -12,6 +12,7 @@ DNS is the foundation of internet connectivity. When applications fail to reach 
 
 ```bash
 # Capture DNS traffic (UDP port 53)
+
 sudo tcpdump -nn -i eth0 udp port 53
 
 # Include DNS over TCP (zone transfers, large responses)
@@ -106,7 +107,7 @@ sudo tcpdump -nn -r /tmp/dns-audit.pcap | \
 
 ```bash
 #!/bin/bash
-# dns-latency.sh — Measure DNS resolution times
+# dns-latency.sh - Measure DNS resolution times
 
 echo "Measuring DNS latency to 8.8.8.8..."
 
@@ -119,4 +120,4 @@ for i in $(seq 1 5); do
 done
 ```
 
-Capturing DNS traffic with tcpdump is the definitive way to debug resolution problems — if you can see queries going out and responses coming back, DNS is working; if you see queries but no responses, you've found your problem.
+Capturing DNS traffic with tcpdump is the definitive way to debug resolution problems - if you can see queries going out and responses coming back, DNS is working; if you see queries but no responses, you've found your problem.

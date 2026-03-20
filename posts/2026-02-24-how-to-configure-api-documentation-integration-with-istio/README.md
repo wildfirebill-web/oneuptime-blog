@@ -463,6 +463,7 @@ Track how often your documentation is accessed using Istio's built-in metrics:
 
 ```bash
 # Check documentation request volume
+
 kubectl exec -n istio-system deploy/prometheus -- \
   curl -s 'localhost:9090/api/v1/query?query=istio_requests_total{destination_service="swagger-ui.default.svc.cluster.local"}'
 ```

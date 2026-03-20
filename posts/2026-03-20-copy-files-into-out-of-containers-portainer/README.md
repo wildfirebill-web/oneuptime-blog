@@ -1,4 +1,4 @@
-# How to Copy Files Into and Out of Containers in Portainer
+# How to Copy Files Into and Out of Containers in Portainer - Into Out
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Use Portainer's file browser and Docker CLI to copy files into runn
 
 ---
 
-Sometimes you need to get files in or out of a running container — copy a configuration file, extract a log file, or update an asset. Portainer provides a built-in file browser for some operations, while `docker cp` is the primary tool for copying files.
+Sometimes you need to get files in or out of a running container - copy a configuration file, extract a log file, or update an asset. Portainer provides a built-in file browser for some operations, while `docker cp` is the primary tool for copying files.
 
 ## Method 1: Portainer's Built-in File Browser
 
@@ -27,6 +27,7 @@ The Files tab provides a read-only browser with download capability. For uploads
 
 ```bash
 # Copy FROM container TO host
+
 docker cp container_name:/path/inside/container /path/on/host
 
 # Examples:
@@ -104,7 +105,7 @@ cp ./uploads-restore/* /var/lib/docker/volumes/webapp-data/_data/uploads/
 
 ## Security Consideration
 
-Copying files into containers bypasses the image build process and creates configuration drift — the container no longer matches its image. For persistent changes, rebuild the image or use volume mounts. Use direct file copying only for emergency fixes and debugging.
+Copying files into containers bypasses the image build process and creates configuration drift - the container no longer matches its image. For persistent changes, rebuild the image or use volume mounts. Use direct file copying only for emergency fixes and debugging.
 
 ## Summary
 

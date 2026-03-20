@@ -37,6 +37,7 @@ Start by deploying a Windows 11 multi-session VM that you will customize and cap
 
 ```bash
 # Create a VM from the Windows 11 multi-session marketplace image
+
 az vm create \
   --resource-group myImageRG \
   --name avd-image-builder \

@@ -18,7 +18,7 @@ Storage for Windows containers in Kubernetes has specific requirements and limit
 
 ## Step 1: Understand Windows Volume Limitations
 
-```
+```text
 Windows Container Storage Limitations:
 - Volume mounts use Windows paths (C:\mountpath)
 - No support for file permissions/ownership (chmod/chown)
@@ -40,6 +40,7 @@ Supported volume types:
 
 ```bash
 # Install local path provisioner with Windows support
+
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
 
 # Create Windows-specific storage class

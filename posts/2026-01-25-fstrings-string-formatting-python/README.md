@@ -19,6 +19,7 @@ name = "Alice"
 age = 30
 
 # Basic variable interpolation
+
 greeting = f"Hello, {name}!"
 print(greeting)  # Hello, Alice!
 

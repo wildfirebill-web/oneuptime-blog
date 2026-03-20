@@ -24,6 +24,7 @@ When you create a table, you define its column families. You can also add or mod
 
 ```bash
 # Create a table with multiple column families
+
 cbt -instance=my-instance createtable sensor-data
 
 # Create column families for different data categories

@@ -34,6 +34,7 @@ Before sharding, understand your current resource distribution.
 
 ```bash
 # Count Flux resources by type
+
 echo "GitRepositories: $(kubectl get gitrepositories -A --no-headers | wc -l)"
 echo "HelmRepositories: $(kubectl get helmrepositories -A --no-headers | wc -l)"
 echo "Kustomizations: $(kubectl get kustomizations -A --no-headers | wc -l)"

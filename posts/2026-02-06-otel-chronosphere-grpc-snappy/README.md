@@ -168,6 +168,7 @@ resource = Resource.create({
 })
 
 # Configure with Snappy compression
+
 exporter = OTLPMetricExporter(
     endpoint=CHRONOSPHERE_ENDPOINT,
     headers=(("api-token", CHRONOSPHERE_TOKEN),),

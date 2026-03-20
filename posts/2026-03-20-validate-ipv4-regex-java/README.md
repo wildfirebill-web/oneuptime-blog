@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Regex, IPv4, Validation, Pattern, Networking
+Tags: Java, Regex, IPv4, Validation, Patterns, Networking
 
 Description: Learn how to validate IPv4 address strings using regular expressions in Java, with a strict pattern that correctly enforces the 0-255 octet range and rejects leading zeros.
 
@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 Pattern naive = Pattern.compile("^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$");
 
 System.out.println(naive.matcher("192.168.1.1").matches());    // true
-System.out.println(naive.matcher("999.999.999.999").matches()); // true — WRONG
+System.out.println(naive.matcher("999.999.999.999").matches()); // true - WRONG
 ```
 
 ## Strict Regex (Validates 0-255)
@@ -78,7 +78,7 @@ public final class IpPatterns {
         "^(?:25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]\\d|\\d)" +
         "(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]\\d|\\d)){3}$";
 
-    // Compile once — Pattern is thread-safe
+    // Compile once - Pattern is thread-safe
     public static final Pattern IPV4_PATTERN = Pattern.compile(IPV4_REGEX);
 
     private IpPatterns() {}
@@ -163,4 +163,4 @@ public @interface ValidIPv4 {
 
 ## Conclusion
 
-Compile the `Pattern` once as a `static final` field — `Pattern` is thread-safe and reuse is free. The strict octet alternation `(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)` correctly encodes the 0-255 range and rejects leading zeros. For log parsing, drop the `^$` anchors and add word boundaries. In Spring/Jakarta applications, wrap the pattern in a custom `ConstraintValidator` for declarative field-level validation.
+Compile the `Pattern` once as a `static final` field - `Pattern` is thread-safe and reuse is free. The strict octet alternation `(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)` correctly encodes the 0-255 range and rejects leading zeros. For log parsing, drop the `^$` anchors and add word boundaries. In Spring/Jakarta applications, wrap the pattern in a custom `ConstraintValidator` for declarative field-level validation.

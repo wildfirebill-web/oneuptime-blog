@@ -31,6 +31,7 @@ ansible-galaxy collection install cyberark.pas
 
 ```yaml
 # playbooks/deploy-with-cyberark.yml
+
 ---
 - name: Deploy with CyberArk credentials
   hosts: app_servers

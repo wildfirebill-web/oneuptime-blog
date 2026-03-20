@@ -22,6 +22,7 @@ Install Istio with namespace-aware configuration:
 
 ```bash
 # Install Istio CLI
+
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-*
 export PATH=$PWD/bin:$PATH

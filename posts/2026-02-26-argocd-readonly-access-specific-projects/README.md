@@ -18,6 +18,7 @@ When you assign `role:readonly` to a user, they can see every application across
 
 ```yaml
 # This gives visibility into EVERYTHING
+
 g, dev-user@company.com, role:readonly
 ```
 

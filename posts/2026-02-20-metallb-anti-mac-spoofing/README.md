@@ -44,6 +44,7 @@ Before changing any hypervisor settings, confirm that anti-MAC spoofing is actua
 
 ```bash
 # Check the MetalLB speaker pods for ARP announcement activity
+
 # The speaker is responsible for sending gratuitous ARP replies
 kubectl logs -n metallb-system -l app=metallb-speaker --tail=100
 ```

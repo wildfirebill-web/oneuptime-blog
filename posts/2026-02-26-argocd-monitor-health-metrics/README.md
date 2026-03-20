@@ -44,6 +44,7 @@ The primary metric for health status is `argocd_app_info`, which includes the `h
 
 ```promql
 # All applications with their health status
+
 argocd_app_info
 
 # Only Healthy applications

@@ -74,6 +74,7 @@ The translated file will contain nft commands that create tables, chains, and ru
 
 ```bash
 # Sample translated output
+
 add table ip filter
 add chain ip filter INPUT { type filter hook input priority 0; policy accept; }
 add chain ip filter FORWARD { type filter hook forward priority 0; policy accept; }

@@ -20,6 +20,7 @@ DNS queries take seconds instead of milliseconds. You can measure this from with
 
 ```bash
 # Time a DNS lookup
+
 kubectl exec -it my-pod -- time nslookup kubernetes.default.svc.cluster.local
 
 # Healthy response: under 10ms

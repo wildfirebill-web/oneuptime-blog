@@ -52,6 +52,7 @@ graph TD
 # postgresql.conf on primary server
 
 # Enable WAL archiving for replication
+
 wal_level = replica
 max_wal_senders = 10
 wal_keep_size = 1GB

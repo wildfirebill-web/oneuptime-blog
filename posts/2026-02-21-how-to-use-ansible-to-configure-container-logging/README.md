@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # roles/container_logging/tasks/docker_logging.yml
+
 # Configure Docker daemon logging settings
 - name: Configure Docker daemon logging driver
   ansible.builtin.template:

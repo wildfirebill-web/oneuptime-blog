@@ -14,6 +14,7 @@ TLS certificates for services accessed via IPv6 must include the IPv6 address as
 
 ```bash
 # Generate a CA key and certificate
+
 openssl genrsa -out ca.key 4096
 openssl req -new -x509 -days 3650 -key ca.key -out ca.crt \
   -subj "/CN=Service Mesh CA"
@@ -57,7 +58,7 @@ openssl x509 -in service.crt -noout -text | grep -A 5 "Subject Alternative Name"
 Istio uses SPIFFE identity in certificates (`spiffe://cluster.local/ns/default/sa/service`), not IP SANs. This means mTLS works automatically for IPv6 because identity is service-account based, not IP-based:
 
 ```yaml
-# PeerAuthentication — enforce STRICT mTLS
+# PeerAuthentication - enforce STRICT mTLS
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:

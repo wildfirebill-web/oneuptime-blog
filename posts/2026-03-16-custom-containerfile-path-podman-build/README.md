@@ -20,6 +20,7 @@ The `-f` or `--file` flag tells Podman where to find the Containerfile. The buil
 
 ```bash
 # Basic syntax
+
 podman build -f /path/to/Containerfile -t image:tag BUILD_CONTEXT
 ```
 

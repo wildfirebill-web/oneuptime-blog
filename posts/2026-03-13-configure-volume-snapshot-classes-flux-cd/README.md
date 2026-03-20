@@ -28,6 +28,7 @@ The external snapshotter provides the VolumeSnapshot CRDs and controller:
 
 ```yaml
 # infrastructure/storage/snapshots/external-snapshotter.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

@@ -1,4 +1,4 @@
-# How to Configure Reverse Proxy Rules per Service in Portainer
+# How to Configure Reverse Proxy Rules per Service in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,7 +30,7 @@ Configure per-service reverse proxy routing rules in Portainer for efficient req
 
 Design your network topology before implementation:
 
-```
+```text
 Internet
    |
 [Nginx/Traefik] (DMZ network)
@@ -48,6 +48,7 @@ Navigate to **Networks** > **Add Network**:
 
 ```yaml
 # Define networks in your stack
+
 version: "3.8"
 
 networks:

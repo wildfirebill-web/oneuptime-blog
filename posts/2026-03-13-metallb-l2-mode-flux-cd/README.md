@@ -23,6 +23,7 @@ MetalLB's Layer 2 (L2) mode uses ARP (for IPv4) or NDP (for IPv6) to advertise S
 
 ```yaml
 # clusters/production/sources/metallb-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

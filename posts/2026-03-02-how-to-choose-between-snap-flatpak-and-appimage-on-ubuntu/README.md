@@ -34,6 +34,7 @@ Ubuntu users today have access to three universal package formats alongside trad
 
 ```bash
 # Scenarios where snap is the right choice:
+
 sudo snap install code --classic          # VS Code with full filesystem access
 sudo snap install kubectl --classic       # Kubernetes CLI
 sudo snap install multipass               # VM management (requires system integration)

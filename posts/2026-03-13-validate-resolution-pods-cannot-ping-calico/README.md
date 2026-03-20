@@ -32,6 +32,7 @@ This guide provides a step-by-step validation checklist organized to catch both 
 
 ```bash
 # Check current state before starting validation
+
 kubectl get pods --all-namespaces | grep -v Running | grep -v Completed
 calicoctl node status
 ```

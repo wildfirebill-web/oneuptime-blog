@@ -365,6 +365,7 @@ Track hook execution through Velero logs and metrics:
 
 ```bash
 # View backup logs including hook execution
+
 velero backup logs database-backup
 
 # Check for hook failures

@@ -54,6 +54,7 @@ Document every file share, its size, and its purpose:
 
 ```powershell
 # List all SMB shares on the file server
+
 Get-SmbShare | Where-Object { $_.Special -eq $false } | Format-Table Name, Path, Description
 
 # Get the size of each share

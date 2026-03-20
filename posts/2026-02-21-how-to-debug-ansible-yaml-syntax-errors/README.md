@@ -32,6 +32,7 @@ YAML does not allow tab characters. This is the number one cause of syntax error
 
 ```yaml
 # WRONG: Tab character before 'name' (invisible but fatal)
+
 - hosts: webservers
 	name: Deploy app
 ```

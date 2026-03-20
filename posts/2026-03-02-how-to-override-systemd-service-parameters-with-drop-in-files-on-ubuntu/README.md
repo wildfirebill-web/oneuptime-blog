@@ -35,6 +35,7 @@ Here is an example that increases file descriptor limits for nginx:
 
 ```bash
 # Create the drop-in directory
+
 sudo mkdir -p /etc/systemd/system/nginx.service.d/
 
 # Create the drop-in file

@@ -120,6 +120,7 @@ Check that all components are running:
 
 ```bash
 # Check pods
+
 kubectl get pods -n cattle-logging-system
 
 # Check the logging operator

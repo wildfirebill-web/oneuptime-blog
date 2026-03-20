@@ -41,6 +41,7 @@ The `value()` format is your best friend for scripting:
 
 ```bash
 # Get just the project ID
+
 gcloud config get-value project
 
 # Get just the names of running VMs

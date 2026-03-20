@@ -36,6 +36,7 @@ Packer is the standard tool for building machine images. It uses Ansible as a pr
 
 ```hcl
 # packer/web-server.pkr.hcl
+
 # Build an AMI with Ansible provisioning
 
 packer {

@@ -32,6 +32,7 @@ Create a file at `lookup_plugins/hello.py` in your project directory:
 
 ```python
 # lookup_plugins/hello.py
+
 # A minimal lookup plugin that returns a greeting for each term passed in
 
 from ansible.plugins.lookup import LookupBase

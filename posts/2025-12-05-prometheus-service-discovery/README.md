@@ -436,6 +436,7 @@ scrape_configs:
 
 ```promql
 # Monitor discovered targets
+
 prometheus_sd_discovered_targets
 
 # Monitor scrape failures

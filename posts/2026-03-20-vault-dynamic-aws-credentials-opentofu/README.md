@@ -14,6 +14,7 @@ Vault's AWS secrets engine generates temporary IAM access keys or assumed-role c
 
 ```hcl
 # Enable the AWS secrets engine
+
 resource "vault_mount" "aws" {
   path = "aws"
   type = "aws"

@@ -20,6 +20,7 @@ Before installing the profiling agent, verify your system meets the requirements
 
 ```bash
 # Check kernel version (needs 4.19+ for eBPF, 5.8+ recommended)
+
 uname -r
 
 # Verify eBPF support
@@ -193,7 +194,7 @@ sudo otel-profiling-agent \
   -process-filter "java|python|go"
 ```
 
-### Resource Limits
+Resource Limits
 
 Set resource limits to prevent the agent itself from consuming too many resources:
 

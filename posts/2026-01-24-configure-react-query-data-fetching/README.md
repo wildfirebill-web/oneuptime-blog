@@ -34,6 +34,7 @@ Install React Query (now part of TanStack Query) and the DevTools for debugging:
 
 ```bash
 # Install React Query and DevTools
+
 npm install @tanstack/react-query @tanstack/react-query-devtools
 
 # Or with yarn

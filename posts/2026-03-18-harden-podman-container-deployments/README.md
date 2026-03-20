@@ -20,6 +20,7 @@ The security of your containers starts with the host operating system.
 
 ```bash
 # Ensure Podman and dependencies are up to date
+
 sudo dnf update -y podman containers-common 2>/dev/null || \
 sudo apt-get update && sudo apt-get upgrade -y podman 2>/dev/null
 
@@ -156,7 +157,7 @@ podman run --rm -d \
   docker.io/library/nginx:alpine
 ```
 
-## Resource Limit Hardening
+Resource Limit Hardening
 
 Prevent resource exhaustion attacks with strict limits.
 

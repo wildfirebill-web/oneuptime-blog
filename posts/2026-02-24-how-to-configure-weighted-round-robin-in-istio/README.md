@@ -156,6 +156,7 @@ After applying the resources, verify everything is configured correctly:
 
 ```bash
 # Check the VirtualService
+
 kubectl get virtualservice payment-service-vs -o yaml
 
 # Check the DestinationRule

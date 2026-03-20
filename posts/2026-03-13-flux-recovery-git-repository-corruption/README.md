@@ -29,6 +29,7 @@ Flux will report errors on the GitRepository source object when it cannot access
 
 ```bash
 # Check GitRepository status
+
 flux get sources git -A
 
 # Describe the failing source for details

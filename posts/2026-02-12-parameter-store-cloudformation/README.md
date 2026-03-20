@@ -20,6 +20,7 @@ CloudFormation parameter types let you reference Parameter Store values as stack
 
 ```yaml
 # template.yml - Using SSM parameter types
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Application stack with Parameter Store references
 

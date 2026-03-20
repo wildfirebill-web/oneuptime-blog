@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, IPv4, inet_protocols, Email, Configuration, Dual Stack
+Tags: Postfix, IPv4, Inet_protocols, Email, Configuration, Dual Stack
 
 Description: Configure Postfix to send and receive mail exclusively over IPv4 by setting inet_protocols = ipv4, preventing delivery failures on systems with broken IPv6 connectivity.
 
@@ -16,6 +16,7 @@ On dual-stack servers, Postfix may attempt SMTP delivery over IPv6 when AAAA rec
 # /etc/postfix/main.cf
 
 # Use only IPv4 for listening and delivery
+
 inet_protocols = ipv4
 
 # Apply changes

@@ -193,6 +193,7 @@ Mount USB SSD:
 
 ```bash
 # Create mount point
+
 sudo mkdir -p /mnt/usb
 
 # Get UUID of USB drive

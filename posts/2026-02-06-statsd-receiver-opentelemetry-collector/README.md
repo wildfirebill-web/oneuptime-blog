@@ -402,6 +402,7 @@ service:
 import statsd
 
 # Create StatsD client
+
 client = statsd.StatsClient(
     host='otel-collector',
     port=8125,

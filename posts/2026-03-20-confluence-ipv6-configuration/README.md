@@ -40,6 +40,7 @@ Confluence, like other Atlassian products, runs on Apache Tomcat. Enabling IPv6 
 
 ```bash
 # Restart Confluence after changing server.xml
+
 sudo systemctl restart confluence
 
 # Verify IPv6 listening

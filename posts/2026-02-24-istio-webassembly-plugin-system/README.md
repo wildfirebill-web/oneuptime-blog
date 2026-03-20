@@ -84,6 +84,7 @@ Choosing the right phase matters because it determines what information is avail
 
 ```yaml
 # Authentication plugin - runs early in the chain
+
 apiVersion: extensions.istio.io/v1alpha1
 kind: WasmPlugin
 metadata:

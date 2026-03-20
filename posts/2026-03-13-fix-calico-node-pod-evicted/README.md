@@ -35,6 +35,7 @@ kubectl describe node <node-name> | grep -i "pressure\|conditions"
 
 ```bash
 # Delete evicted pod (will reschedule automatically)
+
 kubectl delete pod <evicted-calico-node-pod> -n kube-system
 
 # Address disk pressure on the node

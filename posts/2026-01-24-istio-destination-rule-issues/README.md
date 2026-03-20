@@ -37,6 +37,7 @@ The most common error is referencing a subset in a VirtualService that doesn't e
 
 ```bash
 # In proxy logs
+
 kubectl logs <pod-name> -c istio-proxy | grep "no healthy upstream"
 ```
 

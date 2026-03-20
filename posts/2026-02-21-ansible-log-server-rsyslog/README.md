@@ -16,6 +16,7 @@ rsyslog comes pre-installed on most Linux distributions, which means you don't n
 
 ```yaml
 # roles/rsyslog_server/defaults/main.yml - Centralized log server configuration
+
 rsyslog_listen_port_tcp: 514
 rsyslog_listen_port_udp: 514
 rsyslog_tls_port: 6514

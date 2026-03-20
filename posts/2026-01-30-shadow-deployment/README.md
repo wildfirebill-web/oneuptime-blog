@@ -50,6 +50,7 @@ First, deploy your primary and shadow services:
 
 ```yaml
 # primary-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

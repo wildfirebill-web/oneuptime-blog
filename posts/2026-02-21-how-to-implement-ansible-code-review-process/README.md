@@ -16,6 +16,7 @@ Start with enforcing reviews through branch protection:
 
 ```yaml
 # .github/settings.yml (using probot/settings app)
+
 # Or configure manually in GitHub repository settings
 branches:
   - name: main

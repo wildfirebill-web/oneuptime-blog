@@ -37,6 +37,7 @@ First, you need to tell the Config Connector operator to run in namespaced mode.
 
 ```yaml
 # config-connector.yaml
+
 # Sets Config Connector to run in namespaced mode
 apiVersion: core.cnrm.cloud.google.com/v1beta1
 kind: ConfigConnector
@@ -258,7 +259,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-## Resource Quotas per Namespace
+Resource Quotas per Namespace
 
 You can also set resource quotas to limit how many Config Connector resources each team can create.
 

@@ -145,6 +145,7 @@ Cassandra has built-in protection against runaway tombstone scans.
 
 ```yaml
 # In cassandra.yaml
+
 # Warn when query scans this many tombstones
 tombstone_warn_threshold: 1000
 

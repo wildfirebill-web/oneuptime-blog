@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, MIB, IPv6, Network Monitoring, Interface Monitoring, OIDs
+Tags: SNMP, MIB, IPv6, Network Monitoring, Interface Monitoring, OID
 
 Description: Monitor IPv6 interface statistics and address information using SNMP MIBs, including the IF-MIB for interface counters and IPV6-MIB for IPv6-specific data.
 
@@ -12,7 +12,7 @@ SNMP MIBs (Management Information Bases) provide structured access to device dat
 
 ## Key MIBs for IPv6 Monitoring
 
-```
+```text
 Relevant MIBs for IPv6:
 - IF-MIB (RFC 2863): Interface statistics (ifInOctets, ifOutOctets)
 - IP-MIB (RFC 4293): IPv6 addresses and routing table
@@ -25,6 +25,7 @@ Relevant MIBs for IPv6:
 
 ```bash
 # Get all interface descriptions (IF-MIB)
+
 snmpwalk -v2c -c public udp6:[2001:db8::device]:161 ifDescr
 
 # Get interface operational status

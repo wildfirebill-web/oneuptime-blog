@@ -25,6 +25,7 @@ The most common cause is initializing OpenTelemetry twice:
 
 ```python
 # app.py
+
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 
 # First initialization (maybe in a setup function)

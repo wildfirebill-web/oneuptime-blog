@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Headers, Checksum, Performance, Protocol Design
+Tags: IPv6, Headers, Checksums, Performance, Protocol Design
 
 Description: Understand the reasoning behind IPv6's decision to remove the header checksum present in IPv4, and how data integrity is maintained at other layers.
 
@@ -20,7 +20,7 @@ IPv4 was designed in the 1970s when network hardware was unreliable. Bit errors 
 
 In IPv4, the TTL field changes at every hop. Since the checksum covers the entire header (including TTL), it must be recalculated at every router:
 
-```
+```text
 IPv4 router processing:
   1. Verify header checksum (read all 20 bytes, compute checksum)
   2. Decrement TTL
@@ -35,7 +35,7 @@ At 10 Gbps, this is millions of operations per second.
 
 Modern network technologies all provide their own error detection:
 
-```
+```text
 Ethernet: 32-bit CRC (Frame Check Sequence)
   → Catches all single-bit errors and most burst errors
   → Verified by every NIC, every switch, every router
@@ -55,6 +55,7 @@ IPv6 made TCP and UDP checksums mandatory (UDP checksum is optional in IPv4 but 
 
 ```python
 # IPv6 mandates checksum in all upper-layer protocols:
+
 # TCP:    Checksum required (was already required in IPv4)
 # UDP:    Checksum required (optional in IPv4 over IPv4)
 # ICMPv6: Checksum required (optional in IPv4)
@@ -107,7 +108,7 @@ print(f"Savings: {result['savings_percent']:.0f}%")
 
 The legitimate concern about removing the header checksum is **silent misrouting**:
 
-```
+```text
 Scenario without header checksum:
 1. A bit error corrupts a destination address in the IPv6 header
 2. The link-layer CRC does NOT catch it (bit error after CRC calculation)
@@ -123,4 +124,4 @@ The IPv6 designers accepted this tradeoff: silent packet loss is acceptable; the
 
 ## Conclusion
 
-IPv6's removal of the header checksum was a deliberate tradeoff: accept occasional silent packet loss in exchange for dramatic router performance improvements. The rationale is sound — link-layer error detection has become reliable, upper-layer checksums provide end-to-end protection, and UDP checksums are mandatory in IPv6. The result is that routers do not need to perform per-hop checksumming, enabling significantly higher forwarding rates in hardware.
+IPv6's removal of the header checksum was a deliberate tradeoff: accept occasional silent packet loss in exchange for dramatic router performance improvements. The rationale is sound - link-layer error detection has become reliable, upper-layer checksums provide end-to-end protection, and UDP checksums are mandatory in IPv6. The result is that routers do not need to perform per-hop checksumming, enabling significantly higher forwarding rates in hardware.

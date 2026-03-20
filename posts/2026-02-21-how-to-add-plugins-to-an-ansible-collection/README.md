@@ -41,6 +41,7 @@ Here is a filter plugin with several useful data transformation functions:
 
 ```python
 # plugins/filter/data_filters.py
+
 # Filter plugins for common data transformations
 
 from __future__ import absolute_import, division, print_function

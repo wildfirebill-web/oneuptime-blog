@@ -88,6 +88,7 @@ Now connect QuickSight to your Athena data. You can do this through the QuickSig
 
 ```bash
 # Create a QuickSight data source pointing to Athena
+
 aws quicksight create-data-source \
   --aws-account-id "123456789012" \
   --data-source-id "iot-athena-source" \

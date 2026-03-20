@@ -1,17 +1,16 @@
----
-title: "Understanding Nested Modules in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, nested
-description: "Learn how nested modules work in OpenTofu, when to use them, and how to structure multi-level module hierarchies."
----
-
 # Understanding Nested Modules in OpenTofu
 
-Nested modules — modules that call other modules — allow you to build infrastructure abstractions at multiple levels. A high-level "application" module might call a "network" module, a "compute" module, and a "database" module, each of which may call even lower-level modules.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Nested
+
+Description: Learn how nested modules work in OpenTofu, when to use them, and how to structure multi-level module hierarchies.
+
+Nested modules - modules that call other modules - allow you to build infrastructure abstractions at multiple levels. A high-level "application" module might call a "network" module, a "compute" module, and a "database" module, each of which may call even lower-level modules.
 
 ## Basic Nested Module Structure
 
-```
+```text
 infrastructure/
 ├── main.tf              # Root module
 ├── variables.tf
@@ -34,7 +33,8 @@ infrastructure/
 ## Creating a Nested Module Hierarchy
 
 ```hcl
-# modules/networking/main.tf — calls sub-modules
+# modules/networking/main.tf - calls sub-modules
+
 module "vpc" {
   source = "./modules/vpc"
 
@@ -75,7 +75,7 @@ output "public_subnet_ids" {
 ```
 
 ```hcl
-# Root main.tf — uses the high-level networking module
+# Root main.tf - uses the high-level networking module
 module "networking" {
   source = "./modules/networking"
 
@@ -143,7 +143,7 @@ output "api_url" {
   value       = module.api_tier.endpoint
 }
 
-# Root outputs.tf — reference the application module's output
+# Root outputs.tf - reference the application module's output
 output "application_url" {
   description = "Application URL"
   value       = module.application.web_url
@@ -185,14 +185,14 @@ module "addons" {
 Avoid more than 2-3 levels of nesting:
 
 ```hcl
-# TOO DEEP — hard to understand and debug
+# TOO DEEP - hard to understand and debug
 module "root" {
   source = "./modules/level1"
 }
 # level1 calls level2 which calls level3 which calls level4
 # When something breaks, tracing the issue is painful
 
-# BETTER — keep it flat where possible
+# BETTER - keep it flat where possible
 module "vpc" {
   source = "./modules/vpc"
 }

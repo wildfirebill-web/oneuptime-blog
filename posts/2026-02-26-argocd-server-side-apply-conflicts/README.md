@@ -32,6 +32,7 @@ Before handling conflicts, here is how you enable SSA for an application. You ad
 
 ```yaml
 # Application manifest with server-side apply enabled
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

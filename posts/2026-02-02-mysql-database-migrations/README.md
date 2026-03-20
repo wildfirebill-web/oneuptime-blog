@@ -268,6 +268,7 @@ This script automates running migrations in order.
 ```bash
 #!/bin/bash
 # scripts/migrate.sh
+
 # Run pending database migrations in order
 # Usage: ./migrate.sh [database_name]
 

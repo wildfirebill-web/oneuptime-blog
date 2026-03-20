@@ -96,6 +96,7 @@ class DatabaseConnection:
 
 
 # Usage example
+
 with DatabaseConnection("myapp.db") as cursor:
     cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER, name TEXT)")
     cursor.execute("INSERT INTO users VALUES (1, 'Alice')")

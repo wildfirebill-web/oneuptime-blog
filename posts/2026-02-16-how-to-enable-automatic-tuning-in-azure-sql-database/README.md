@@ -92,6 +92,7 @@ Click "Save" to apply the configuration. Changes take effect immediately.
 
 ```bash
 # Enable all three automatic tuning options at the server level
+
 az sql server update \
     --resource-group myResourceGroup \
     --name myserver \

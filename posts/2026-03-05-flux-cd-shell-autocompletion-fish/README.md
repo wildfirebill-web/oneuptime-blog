@@ -22,6 +22,7 @@ If you do not have Fish installed, you can install it on most systems.
 
 ```bash
 # Install Fish on Ubuntu/Debian
+
 sudo apt-get install -y fish
 
 # Install Fish on Fedora

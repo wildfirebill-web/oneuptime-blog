@@ -30,6 +30,7 @@ List all your function apps and their configurations.
 
 ```bash
 # List all function apps
+
 az functionapp list \
   --query '[*].{Name:name,Runtime:siteConfig.linuxFxVersion,Region:location,Plan:appServicePlanId}' \
   --output table

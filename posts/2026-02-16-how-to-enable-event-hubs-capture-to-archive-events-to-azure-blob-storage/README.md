@@ -40,6 +40,7 @@ my-namespace/user-events/1/2026/02/16/14/30/00.avro
 
 ```bash
 # Enable Capture on an existing Event Hub
+
 # Events will be written to Blob Storage every 5 minutes or every 300MB
 az eventhubs eventhub update \
   --resource-group my-resource-group \

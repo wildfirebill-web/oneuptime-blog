@@ -218,6 +218,7 @@ If connections are timing out, check if the iptables rules are redirecting traff
 
 ```bash
 # Check if Envoy is listening on 15001 and 15006
+
 kubectl exec deploy/my-app -c istio-proxy -- ss -tlnp | grep -E "15001|15006"
 ```
 

@@ -20,6 +20,7 @@ The simplest batch processing pattern is running a container for each unit of wo
 
 ```bash
 # Process a single file
+
 podman run --rm \
   -v /input:/input:ro,Z \
   -v /output:/output:Z \

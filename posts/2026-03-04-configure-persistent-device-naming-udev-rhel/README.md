@@ -16,6 +16,7 @@ RHEL provides several persistent naming schemes:
 
 ```bash
 # View all persistent name symlinks for a block device
+
 ls -la /dev/disk/by-id/
 ls -la /dev/disk/by-uuid/
 ls -la /dev/disk/by-path/

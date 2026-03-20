@@ -24,6 +24,7 @@ The advantage over Kubernetes-native canary approaches (like adjusting replica c
 
 ```bash
 # Enable Traffic Director and related APIs
+
 gcloud services enable trafficdirector.googleapis.com
 gcloud services enable compute.googleapis.com
 gcloud services enable container.googleapis.com

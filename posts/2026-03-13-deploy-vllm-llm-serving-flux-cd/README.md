@@ -28,6 +28,7 @@ This guide covers deploying vLLM on Kubernetes with GPU support using Flux CD, i
 
 ```yaml
 # clusters/my-cluster/vllm/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

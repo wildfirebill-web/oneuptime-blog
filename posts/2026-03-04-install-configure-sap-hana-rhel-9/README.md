@@ -41,6 +41,7 @@ graph TB
 
 ```bash
 # Register with Red Hat Subscription Manager
+
 sudo subscription-manager register --username=your_username --password=your_password
 
 # Attach the SAP Solutions subscription

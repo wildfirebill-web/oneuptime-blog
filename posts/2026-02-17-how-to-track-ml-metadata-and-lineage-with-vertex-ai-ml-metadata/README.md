@@ -28,6 +28,7 @@ Vertex AI ML Metadata is available automatically in your project. You just need 
 
 ```python
 # metadata_setup.py
+
 from google.cloud import aiplatform
 
 # Initialize Vertex AI - the metadata store is created automatically

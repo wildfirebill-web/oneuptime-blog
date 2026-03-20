@@ -44,6 +44,7 @@ Install the required tools:
 
 ```bash
 # Install Erlang (version should match your RabbitMQ server)
+
 # On macOS with Homebrew
 brew install erlang@26
 

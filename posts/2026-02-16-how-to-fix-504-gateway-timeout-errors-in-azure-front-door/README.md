@@ -29,6 +29,7 @@ The most common cause of 504 errors is simply that your backend is too slow. Sta
 
 ```bash
 # Hit the backend origin directly to measure response time
+
 # Replace with your actual backend URL
 curl -o /dev/null -s -w "Total time: %{time_total}s\nConnect: %{time_connect}s\nTTFB: %{time_starttransfer}s\n" https://mybackend.azurewebsites.net/api/slow-endpoint
 

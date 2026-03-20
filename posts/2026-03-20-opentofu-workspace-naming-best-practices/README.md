@@ -16,6 +16,7 @@ Use lowercase letters, numbers, and hyphens only:
 
 ```bash
 # Good names
+
 tofu workspace new production
 tofu workspace new staging
 tofu workspace new development
@@ -123,10 +124,10 @@ tofu workspace select -or-create "$WORKSPACE"
 
 ## What to Avoid
 
-- Long names with special characters: `my_production_environment_2024` — hard to type and prone to errors
-- Generic names: `test`, `temp`, `new` — unclear purpose, hard to clean up
-- Numbers only: `1`, `2`, `3` — no semantic meaning
-- Names that are too similar: `prod` and `production` in the same project — confusing
+- Long names with special characters: `my_production_environment_2024` - hard to type and prone to errors
+- Generic names: `test`, `temp`, `new` - unclear purpose, hard to clean up
+- Numbers only: `1`, `2`, `3` - no semantic meaning
+- Names that are too similar: `prod` and `production` in the same project - confusing
 
 ## Conclusion
 

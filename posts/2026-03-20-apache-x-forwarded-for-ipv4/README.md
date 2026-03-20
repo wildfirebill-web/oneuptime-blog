@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, X-Forwarded-For, IPv4, Reverse Proxy, mod_remoteip, Logging
+Tags: Apache, X-Forwarded-For, IPv4, Reverse Proxy, Mod_remoteip, Logging
 
 Description: Configure Apache to correctly parse and trust X-Forwarded-For headers from trusted IPv4 reverse proxies using mod_remoteip to log and use real client addresses.
 
@@ -14,10 +14,11 @@ When Apache sits behind a reverse proxy (Nginx, AWS ALB, Cloudflare), the client
 
 ```bash
 # Enable the module (Ubuntu/Debian)
+
 sudo a2enmod remoteip
 sudo systemctl reload apache2
 
-# On RHEL/CentOS — mod_remoteip is usually included in the base install
+# On RHEL/CentOS - mod_remoteip is usually included in the base install
 # Add to /etc/httpd/conf.modules.d/00-base.conf:
 # LoadModule remoteip_module modules/mod_remoteip.so
 ```
@@ -133,7 +134,7 @@ Send a test request from behind the proxy and verify `REMOTE_ADDR` shows the cli
 
 ## Security Consideration
 
-Never trust `X-Forwarded-For` from unknown sources. A malicious client can set this header to spoof IP addresses. The `RemoteIPTrustedProxy` directive limits trust to only the specified proxy addresses — only their `X-Forwarded-For` values are processed.
+Never trust `X-Forwarded-For` from unknown sources. A malicious client can set this header to spoof IP addresses. The `RemoteIPTrustedProxy` directive limits trust to only the specified proxy addresses - only their `X-Forwarded-For` values are processed.
 
 ## Conclusion
 

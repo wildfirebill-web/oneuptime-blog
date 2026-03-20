@@ -14,6 +14,7 @@ Description: Learn how to use wget on Ubuntu for downloading files, resuming int
 
 ```bash
 # Download a file to the current directory (keeps original filename)
+
 wget https://example.com/file.tar.gz
 
 # Download with a custom output filename

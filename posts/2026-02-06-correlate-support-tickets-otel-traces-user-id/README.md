@@ -66,6 +66,7 @@ When your service calls another service, the trace context propagates automatica
 
 ```python
 # In the calling service, add user ID to outgoing headers
+
 import requests
 from opentelemetry.propagate import inject
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bonding, systemd-networkd, Linux, Persistent Configuration, Network, IPv4, .netdev
+Tags: Bonding, systemd-networkd, Linux, Persistent Configuration, Networks, IPv4, .netdev
 
 Description: Learn how to configure a persistent Linux network bond using systemd-networkd .netdev and .network files for reproducible, declarative network configuration.
 
@@ -16,6 +16,7 @@ systemd-networkd manages bonds through `.netdev` files (create virtual devices) 
 
 ```ini
 # /etc/systemd/network/10-bond0.netdev
+
 [NetDev]
 Name=bond0
 Kind=bond

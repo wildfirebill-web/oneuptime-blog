@@ -58,6 +58,7 @@ The most common cause is forgetting to install a package:
 
 ```bash
 # Error message
+
 Error: Cannot find module 'axios'
 
 # Solution: Install the package

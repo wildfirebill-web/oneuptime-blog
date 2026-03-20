@@ -45,6 +45,7 @@ Self-service sign-up is enabled at the tenant level. If it is not already enable
 
 ```bash
 # Check current external collaboration settings
+
 az rest --method GET \
   --url "https://graph.microsoft.com/v1.0/policies/authorizationPolicy" \
   --query "allowedToSignUpEmailBasedSubscriptions"

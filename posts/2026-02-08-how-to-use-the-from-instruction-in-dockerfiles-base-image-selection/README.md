@@ -18,6 +18,7 @@ At its simplest, FROM takes an image name:
 
 ```dockerfile
 # Pull the latest Ubuntu image
+
 FROM ubuntu
 ```
 

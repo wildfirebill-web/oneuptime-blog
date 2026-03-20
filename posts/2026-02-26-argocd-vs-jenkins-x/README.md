@@ -40,6 +40,7 @@ ArgoCD runs as a set of components in a single namespace. It watches Git reposit
 
 ```yaml
 # ArgoCD components (typical deployment)
+
 # - argocd-server (API + UI)
 # - argocd-application-controller (sync engine)
 # - argocd-repo-server (manifest generation)

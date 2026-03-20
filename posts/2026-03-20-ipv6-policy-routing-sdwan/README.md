@@ -17,6 +17,7 @@ IPv6 policy-based routing (PBR) in SD-WAN directs IPv6 traffic based on policies
 # ipv6-policy-routing.sh - Policy routing for SD-WAN IPv6
 
 # Create routing tables for different WAN paths
+
 # Table 200: MPLS (low latency, premium)
 # Table 201: Broadband (high bandwidth, cheaper)
 # Table 202: LTE (backup)
@@ -103,7 +104,7 @@ ip -6 rule add fwmark 202 lookup 202 prio 120
 
 ## Cisco IOS XE IPv6 Policy Routing
 
-```
+```text
 ! Create IPv6 access-lists for classification
 ipv6 access-list VOIP-IPV6
  permit udp 2001:db8:lan::/64 any range 10000 20000 dscp ef
@@ -142,7 +143,7 @@ show route-map PBR-VOIP-IPV6
 
 ## Juniper IPv6 Policy Routing
 
-```
+```text
 # Juniper firewall filter for IPv6 PBR
 set firewall family inet6 filter PBR-SD-WAN-IPV6 term VOIP-TRAFFIC from \
     destination-port [5060 10000-20000] dscp ef

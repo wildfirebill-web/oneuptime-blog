@@ -52,6 +52,7 @@ echo "Errors: $ERRORS"
 
 ```bash
 # Check endpoints are enforcing ingress policy
+
 kubectl get ciliumendpoints -n default -o json | jq '.items[] | {
   name: .metadata.name,
   enforcing: .status.policy.ingress.enforcing

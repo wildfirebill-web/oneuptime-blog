@@ -250,6 +250,7 @@ metadata:
   namespace: default
 rules:
 # Permission to read databases
+
 - apiGroups: ["example.com"]
   resources: ["databases"]
   verbs: ["get", "list", "watch"]

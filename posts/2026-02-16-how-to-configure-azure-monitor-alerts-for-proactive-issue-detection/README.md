@@ -28,6 +28,7 @@ Before creating alerts, define what happens when an alert fires. Action groups s
 
 ```bash
 # Create an action group that sends email and posts to a webhook
+
 az monitor action-group create \
   --resource-group monitoring-rg \
   --name ops-team-alerts \

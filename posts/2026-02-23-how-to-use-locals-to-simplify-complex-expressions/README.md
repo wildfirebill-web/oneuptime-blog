@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Local, Infrastructure as Code, Best Practices
+Tags: Terraform, HCL, Locals, Infrastructure as Code, Best Practices
 
 Description: Learn how to use Terraform locals to break down complex expressions into readable, named components that make your infrastructure code easier to understand and maintain.
 
@@ -18,6 +18,7 @@ Consider this resource definition where everything is computed inline:
 
 ```hcl
 # This works, but it is hard to read
+
 resource "aws_instance" "app" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = var.environment == "production" ? "m5.xlarge" : (var.environment == "staging" ? "m5.large" : "t3.micro")

@@ -55,6 +55,7 @@ Zone-redundant HA is the stronger option. If the primary's entire availability z
 
 ```bash
 # Create a PostgreSQL Flexible Server with zone-redundant HA
+
 az postgres flexible-server create \
   --resource-group myResourceGroup \
   --name my-pg-ha-server \

@@ -70,6 +70,7 @@ For a custom storefront built with Node.js:
 
 ```dockerfile
 # Dockerfile
+
 FROM docker.io/library/node:20-alpine
 WORKDIR /app
 COPY package*.json ./

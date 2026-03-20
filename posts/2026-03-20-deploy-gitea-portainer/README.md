@@ -72,7 +72,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 GITEA_DB_PASSWORD = secure-db-password
 SMTP_USER = your-email@gmail.com
 SMTP_PASSWORD = your-app-password
@@ -89,6 +89,7 @@ SMTP_PASSWORD = your-app-password
 
 ```bash
 # Via Portainer exec on gitea container
+
 # Create an admin user
 gitea admin user create \
   --username admin \
@@ -119,7 +120,7 @@ Host gitea.yourdomain.com
 
 Gitea Actions is compatible with GitHub Actions workflows. Enable in app.ini:
 
-```
+```text
 GITEA__actions__ENABLED=true
 ```
 

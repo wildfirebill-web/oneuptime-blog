@@ -34,6 +34,7 @@ Deploy Step-CA using Helm:
 
 ```bash
 # Add Smallstep Helm repository
+
 helm repo add smallstep https://smallstep.github.io/helm-charts/
 helm repo update
 

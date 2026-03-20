@@ -52,6 +52,7 @@ This configuration sets up the kubelet stats receiver to collect volume metrics 
 
 ```yaml
 # otel-collector-pv-config.yaml
+
 # Collect PersistentVolume metrics from kubelet stats
 receivers:
   kubeletstats:

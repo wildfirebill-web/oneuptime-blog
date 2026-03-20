@@ -36,6 +36,7 @@ The ArgoCD repo-server needs proxy environment variables to route Helm requests 
 
 ```yaml
 # argocd-repo-server-proxy.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

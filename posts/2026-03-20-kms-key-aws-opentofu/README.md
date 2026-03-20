@@ -88,6 +88,7 @@ data "aws_iam_policy_document" "kms_policy" {
 
 ```hcl
 # Primary key in us-east-1
+
 resource "aws_kms_key" "primary" {
   provider                = aws.us_east
   description             = "Multi-region primary key"

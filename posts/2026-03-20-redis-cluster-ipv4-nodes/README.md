@@ -16,6 +16,7 @@ Redis Cluster distributes data across multiple nodes using hash slots (16384 slo
 # /etc/redis/redis.conf (apply to each node, adjust bind per node)
 
 # Node-specific bind address
+
 bind 127.0.0.1 10.0.0.1      # Node 1 IP
 
 port 6379

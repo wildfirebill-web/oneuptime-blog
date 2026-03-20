@@ -16,6 +16,7 @@ The `toset` function converts a list (or other collection) into a set. Sets have
 
 ```hcl
 # Convert a list to a set
+
 > toset(["b", "a", "c", "a"])
 toset([
   "a",

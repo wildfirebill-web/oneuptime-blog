@@ -29,6 +29,7 @@ Create the socket unit file:
 
 ```bash
 # Create the socket unit that listens on port 8080
+
 sudo tee /etc/systemd/system/myapp.socket << 'UNITEOF'
 [Unit]
 Description=MyApp Socket

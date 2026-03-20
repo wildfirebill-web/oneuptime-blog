@@ -24,6 +24,7 @@ First, create a Redis instance. A basic tier instance is fine for caching since 
 
 ```bash
 # Create a basic tier Redis instance for caching
+
 gcloud redis instances create app-cache \
   --size=1 \
   --region=us-central1 \

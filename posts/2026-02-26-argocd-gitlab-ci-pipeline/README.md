@@ -33,6 +33,7 @@ Here is the complete `.gitlab-ci.yml` for the application repository:
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - test
   - build

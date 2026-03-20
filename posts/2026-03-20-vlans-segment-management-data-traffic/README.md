@@ -12,26 +12,26 @@ Separating management traffic (SSH, SNMP, iDRAC/iLO) from data traffic (user or 
 
 ## VLAN Design for Traffic Segmentation
 
-```
-VLAN 10 — Management  (10.10.0.0/24)
+```text
+VLAN 10 - Management  (10.10.0.0/24)
   - Switches, routers, firewalls (management ports)
   - BMC/iDRAC/iLO interfaces
   - SNMP collectors, NTP servers
 
-VLAN 20 — Servers     (10.20.0.0/24)
+VLAN 20 - Servers     (10.20.0.0/24)
   - Application servers
   - Database servers
 
-VLAN 30 — Workstations (10.30.0.0/24)
+VLAN 30 - Workstations (10.30.0.0/24)
   - User endpoints
 
-VLAN 99 — Native/Trunk (untagged)
+VLAN 99 - Native/Trunk (untagged)
   - Trunk ports between switches
 ```
 
 ## Switch Configuration (Cisco IOS)
 
-```
+```text
 ! Create VLANs
 vlan 10
   name Management
@@ -60,6 +60,7 @@ ip access-list standard MGMT-ONLY
 # /etc/network/interfaces (Debian)
 
 # Management interface (dedicated NIC or VLAN)
+
 auto eth1.10
 iface eth1.10 inet static
   address 10.10.0.50
@@ -92,7 +93,7 @@ iptables -A INPUT -p udp --dport 161 -j DROP
 ## SNMP Binding to Management Interface
 
 ```bash
-# /etc/snmp/snmpd.conf — listen only on management VLAN
+# /etc/snmp/snmpd.conf - listen only on management VLAN
 agentaddress 10.10.0.50:161
 
 # Bind SSH daemon to management interface

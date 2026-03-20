@@ -32,6 +32,7 @@ Always provision one more unit than required for peak load. For stateful systems
 
 ```yaml
 # Kubernetes Deployment with N+1 buffer
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -340,7 +341,7 @@ data:
         maxSize: 10
 ```
 
-## Resource-Specific Buffers
+Resource-Specific Buffers
 
 Different resources require different buffer strategies.
 

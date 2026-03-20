@@ -71,6 +71,7 @@ Define the shared base that both environments inherit from.
 
 ```yaml
 # apps/myapp/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

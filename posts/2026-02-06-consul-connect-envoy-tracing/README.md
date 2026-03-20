@@ -25,6 +25,7 @@ Add tracing configuration to your Consul proxy defaults:
 
 ```hcl
 # consul-proxy-defaults.hcl
+
 Kind = "proxy-defaults"
 Name = "global"
 Config {

@@ -39,6 +39,7 @@ Here is how to perform a read-only transaction with the Python client library:
 from google.cloud import spanner
 
 # Set up the client and database reference
+
 client = spanner.Client()
 instance = client.instance("my-instance")
 database = instance.database("my-database")

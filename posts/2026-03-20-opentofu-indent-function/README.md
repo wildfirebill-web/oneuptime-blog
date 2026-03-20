@@ -1,4 +1,4 @@
-# How to Use the indent Function in OpenTofu
+# How to Use the indent Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,8 +16,8 @@ The `indent` function in OpenTofu adds a specified number of spaces to the begin
 indent(num_spaces, string)
 ```
 
-- **num_spaces** — the number of spaces to prepend to each line (except the first)
-- **string** — the multi-line string to indent
+- **num_spaces** - the number of spaces to prepend to each line (except the first)
+- **string** - the multi-line string to indent
 - Returns the string with all lines after the first indented by the given amount
 
 ## Basic Examples
@@ -36,7 +36,7 @@ output "yaml_indent" {
 }
 ```
 
-Note: The first line is NOT indented. This is intentional — it allows you to position the first line inline in a template.
+Note: The first line is NOT indented. This is intentional - it allows you to position the first line inline in a template.
 
 ## Practical Use Cases
 
@@ -44,6 +44,7 @@ Note: The first line is NOT indented. This is intentional — it allows you to p
 
 ```hcl
 # templates/cloud-init.yaml.tpl
+
 # user_data:
 #   - path: /etc/setup.sh
 #     content: |
@@ -150,7 +151,7 @@ tofu console
 
 The design allows this pattern in templates:
 
-```
+```text
 key: |
   ${indent(2, multi_line_value)}
 ```

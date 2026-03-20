@@ -123,6 +123,7 @@ Each backend has different performance characteristics, so separate batch proces
 
 ```yaml
 # Traces: smaller batches, faster flush for low-latency delivery
+
 batch/traces:
   send_batch_size: 512
   timeout: 5s

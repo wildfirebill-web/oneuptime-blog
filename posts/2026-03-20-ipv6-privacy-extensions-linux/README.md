@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Privacy Extensions, Linux, SLAAC, sysctl, NetworkManager
+Tags: IPv6, Privacy Extensions, Linux, SLAAC, Sysctl, NetworkManager
 
 Description: A guide to enabling and configuring IPv6 privacy extensions (RFC 8981) on Linux to use temporary random interface IDs for outbound connections, protecting user privacy.
 
@@ -12,6 +12,7 @@ IPv6 privacy extensions (RFC 8981, formerly RFC 4941) generate temporary, random
 
 ```bash
 # Check current privacy extension settings
+
 sysctl net.ipv6.conf.all.use_tempaddr
 sysctl net.ipv6.conf.eth0.use_tempaddr
 
@@ -150,7 +151,7 @@ ip -6 route get 2001:4860:4860::8888
 
 # Verify in a real connection
 traceroute6 ipv6.google.com | head -2
-# First hop shows your source address — should be the temporary one
+# First hop shows your source address - should be the temporary one
 
 # Use ss to see connections and their source addresses
 ss -6 -t | grep ESTAB

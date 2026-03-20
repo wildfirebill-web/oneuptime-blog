@@ -35,6 +35,7 @@ sudo nano /etc/sssd/sssd.conf
 [sssd]
 config_file_version = 2
 # List all domains - searched in this order
+
 domains = internal.example.com, partner.com
 services = nss, pam
 

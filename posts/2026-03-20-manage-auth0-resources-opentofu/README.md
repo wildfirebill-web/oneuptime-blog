@@ -71,6 +71,7 @@ resource "auth0_client" "api_client" {
 }
 
 # Register an API
+
 resource "auth0_resource_server" "api" {
   name        = "My API"
   identifier  = "https://api.example.com"

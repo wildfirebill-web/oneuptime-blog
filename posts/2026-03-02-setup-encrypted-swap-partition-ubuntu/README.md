@@ -56,6 +56,7 @@ Add a line for your swap partition:
 
 ```text
 # Format: <name>  <device>  <key>  <options>
+
 cryptswap1  /dev/sda2  /dev/urandom  swap,cipher=aes-xts-plain64,size=256
 ```
 

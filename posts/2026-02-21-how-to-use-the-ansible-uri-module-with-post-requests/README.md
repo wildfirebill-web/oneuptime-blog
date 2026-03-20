@@ -18,6 +18,7 @@ The simplest POST request sends a body to a URL:
 
 ```yaml
 # send a basic POST request with a JSON body
+
 ---
 - name: Create a new resource
   hosts: localhost

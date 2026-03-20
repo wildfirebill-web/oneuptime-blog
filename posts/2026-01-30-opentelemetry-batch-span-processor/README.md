@@ -605,6 +605,7 @@ Configure your deployment with these environment variables.
 
 ```bash
 # Service identification
+
 OTEL_SERVICE_NAME=checkout-service
 SERVICE_VERSION=1.2.3
 

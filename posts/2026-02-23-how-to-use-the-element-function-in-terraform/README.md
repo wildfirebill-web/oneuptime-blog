@@ -18,6 +18,7 @@ The `element` function retrieves a single element from a list by its index. If t
 
 ```hcl
 # Retrieves list[index % length(list)]
+
 element(list, index)
 ```
 

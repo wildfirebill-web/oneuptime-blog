@@ -16,6 +16,7 @@ Terraform identifies resources by their full address in state. When a resource m
 
 ```text
 # Resource at the root level
+
 aws_instance.web
 
 # Same resource inside a module

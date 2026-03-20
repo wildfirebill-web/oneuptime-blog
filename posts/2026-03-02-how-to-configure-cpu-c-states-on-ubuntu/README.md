@@ -26,6 +26,7 @@ The tradeoff: deeper states save more power but take longer to return to C0. For
 
 ```bash
 # View available and active C-states via cpupower
+
 sudo apt install linux-tools-common linux-tools-$(uname -r)
 sudo cpupower idle-info
 

@@ -1,20 +1,20 @@
-# How to Set Up Edge Agent Behind a NAT or Firewall
+# How to Set Up Edge Agent Behind a NAT or Firewall - Portainer Behind
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, NAT, Firewall, Network, Remote Access
+Tags: Portainer, Edge Agent, NAT, Firewall, Networks, Remote Access
 
 Description: Deploy and configure Portainer Edge Agents in NAT or firewalled environments where devices don't have public IP addresses.
 
 ## Introduction
 
-NAT (Network Address Translation) is ubiquitous — most edge devices sit behind a home router, office NAT gateway, or corporate firewall without a public IP. The Portainer Edge Agent is specifically designed for this scenario: it initiates outbound connections, making it transparent to NAT devices.
+NAT (Network Address Translation) is ubiquitous - most edge devices sit behind a home router, office NAT gateway, or corporate firewall without a public IP. The Portainer Edge Agent is specifically designed for this scenario: it initiates outbound connections, making it transparent to NAT devices.
 
 ## How Edge Agent Works Through NAT
 
 The key design principle:
 
-```
+```yaml
 [Edge Device behind NAT]                [Internet]           [Portainer Server]
     |                                                              |
     |------ TCP SYN to portainer.example.com:8000 ------------>  |
@@ -37,6 +37,7 @@ From the edge device (outbound only):
 
 ```bash
 # Test from behind NAT
+
 curl -sv https://portainer.example.com/api/system/version 2>&1 | head -20
 # Should succeed if port 443 is allowed outbound
 
@@ -108,7 +109,7 @@ Then set the tunnel server address to use port 443:
 
 For devices behind multiple NAT layers (common in enterprise):
 
-```
+```text
 Device → Office NAT → ISP NAT → Portainer
 ```
 

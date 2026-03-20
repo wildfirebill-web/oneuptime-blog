@@ -18,6 +18,7 @@ The filter takes a list of dictionaries and merges them into a single dictionary
 
 ```yaml
 # basic-items2dict.yml
+
 # Demonstrates the basic items2dict transformation
 - name: Demonstrate items2dict
   hosts: localhost

@@ -23,6 +23,7 @@ A single USN often covers multiple CVEs. The `pro fix` command works with both.
 
 ```bash
 # The pro fix command requires ubuntu-advantage-tools
+
 sudo apt update
 sudo apt install --only-upgrade ubuntu-advantage-tools
 

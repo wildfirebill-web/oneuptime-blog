@@ -48,6 +48,7 @@ First, export your data from the Datastore mode database. You can do this throug
 
 ```bash
 # Export all data from your Datastore mode database to a GCS bucket
+
 gcloud firestore export gs://my-backup-bucket/datastore-export \
   --project=my-datastore-project
 

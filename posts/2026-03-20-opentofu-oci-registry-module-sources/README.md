@@ -1,4 +1,4 @@
-# How to Use OCI Registry Module Sources in OpenTofu
+# How to Use OCI Registry Module Sources in OpenTofu - Registry
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ module "name" {
 
 ```hcl
 # Fetch a module stored as an OCI artifact
+
 module "vpc" {
   source = "oci://registry.acme-corp.com/terraform-modules/vpc:v2.1.0"
 

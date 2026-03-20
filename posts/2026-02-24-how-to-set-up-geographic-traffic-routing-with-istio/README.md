@@ -28,6 +28,7 @@ This part happens outside of Istio. You need a DNS provider that supports geogra
 
 ```bash
 # Create geolocation records pointing to each region's ingress
+
 aws route53 change-resource-record-sets --hosted-zone-id ZXXXXX --change-batch '{
   "Changes": [
     {

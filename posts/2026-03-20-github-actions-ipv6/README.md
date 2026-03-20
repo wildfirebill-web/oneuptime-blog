@@ -18,6 +18,7 @@ Deploy a self-hosted runner on a host with IPv6 connectivity:
 # On a Linux host with IPv6 access
 
 # Install GitHub Actions runner
+
 mkdir actions-runner && cd actions-runner
 curl -o actions-runner-linux-x64-2.312.0.tar.gz -L \
     https://github.com/actions/runner/releases/download/v2.312.0/actions-runner-linux-x64-2.312.0.tar.gz

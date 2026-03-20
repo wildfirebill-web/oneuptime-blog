@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Security, Starvation Attack, Network Security, sysadmin
+Tags: DHCP, Security, Starvation Attack, Network Security, Sysadmin
 
-Description: DHCP starvation attacks exhaust the address pool by sending thousands of DHCP requests with fake MAC addresses, and can be mitigated through DHCP snooping, rate limiting, port security, and MAC filtering.
+Description: DHCP starvation attacks exhaust the address pool by sending thousands of DHCP requests with fake MAC addresses, and can be mitigated through DHCP snooping, rate limiting, port security, and MAC...
 
 ## How DHCP Starvation Works
 
@@ -12,7 +12,7 @@ An attacker uses tools like `dhcpstarv` or `yersinia` to flood the network with 
 
 ## Mitigation 1: DHCP Snooping with Rate Limiting (Cisco)
 
-```
+```text
 ! Enable DHCP snooping
 ip dhcp snooping
 ip dhcp snooping vlan 10
@@ -30,7 +30,7 @@ interface GigabitEthernet0/48
 
 Port security limits the number of MAC addresses per port, preventing MAC spoofing:
 
-```
+```text
 interface GigabitEthernet0/2
   switchport mode access
   switchport port-security
@@ -43,12 +43,13 @@ interface GigabitEthernet0/2
 
 While not foolproof, smaller pools mean fewer wasted addresses during an attack:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
+
 # Short lease times force faster pool recovery
 subnet 192.168.1.0 netmask 255.255.255.0 {
-    range 192.168.1.100 192.168.1.150;  # Small pool — 50 addresses
-    default-lease-time 300;              # 5 min lease — reclaim quickly
+    range 192.168.1.100 192.168.1.150;  # Small pool - 50 addresses
+    default-lease-time 300;              # 5 min lease - reclaim quickly
     max-lease-time 600;
 }
 ```
@@ -57,7 +58,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 
 Only serve known devices:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 subnet 10.0.10.0 netmask 255.255.255.0 {
     deny unknown-clients;           # Only serve known hosts

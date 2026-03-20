@@ -52,6 +52,7 @@ NAMESPACE="production"
 VPA_NAME="my-app-vpa"
 
 # Get current recommendations
+
 kubectl get vpa $VPA_NAME -n $NAMESPACE -o jsonpath='{.status.recommendation.containerRecommendations[0]}' | jq '.'
 
 # Compare with current resource settings

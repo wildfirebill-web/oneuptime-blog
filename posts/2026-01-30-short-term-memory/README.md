@@ -563,6 +563,7 @@ class ShortTermMemorySystem:
 
 ```python
 # Initialize the system
+
 memory = ShortTermMemorySystem(
     max_tokens=8000,
     enable_attention=True,

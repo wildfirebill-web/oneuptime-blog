@@ -173,6 +173,7 @@ Confirm the process is running inside the chroot:
 
 ```bash
 # Find the named PID
+
 pidof named
 
 # Check the root directory of the process

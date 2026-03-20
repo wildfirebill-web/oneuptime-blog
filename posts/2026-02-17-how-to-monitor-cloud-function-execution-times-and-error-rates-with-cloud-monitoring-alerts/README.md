@@ -39,6 +39,7 @@ This is the most important alert to set up. Create an alerting policy that fires
 
 ```bash
 # Create a YAML file for the error rate alert policy
+
 cat > error-rate-alert.yaml << 'YAMLEOF'
 displayName: "Cloud Function High Error Rate"
 documentation:

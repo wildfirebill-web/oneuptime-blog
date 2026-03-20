@@ -1,4 +1,4 @@
-# How to Configure IPv6 for BRAS/BNG Equipment
+# How to Configure IPv6 for BRAS/BNG Equipment - Equipment
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,8 +19,8 @@ flowchart LR
 
 ## Cisco ASR9K BNG: IPv6 PPPoE
 
-```
-! Cisco ASR9K IOS-XR — IPv6 BNG configuration
+```text
+! Cisco ASR9K IOS-XR - IPv6 BNG configuration
 
 ! DHCPv6 pool for WAN addresses
 ipv6 dhcp pool WAN_POOL
@@ -50,8 +50,8 @@ show ipv6 subscribers
 
 ## Juniper MX BNG: IPv6 Configuration
 
-```
-# Juniper MX — IPv6 BNG with DHCPv6
+```text
+# Juniper MX - IPv6 BNG with DHCPv6
 
 set interfaces ge-0/0/0 unit 0 family pppoe
 
@@ -70,6 +70,7 @@ set access address-assignment pool PD_POOL
     range PD_RANGE prefix-length 56    # /56 per home router
 
 # Verify
+
 show subscribers detail
 show dhcpv6 server statistics
 ```
@@ -114,7 +115,7 @@ show dhcpv6 server statistics
 ## RADIUS Integration for IPv6
 
 ```bash
-# FreeRADIUS users file — per-subscriber IPv6 assignment
+# FreeRADIUS users file - per-subscriber IPv6 assignment
 # /etc/freeradius/3.0/users
 
 pppoe_user Cleartext-Password := "password"
@@ -128,7 +129,7 @@ pppoe_user Cleartext-Password := "password"
 
 ```bash
 #!/bin/bash
-# monitor-bng.sh — BNG subscriber statistics
+# monitor-bng.sh - BNG subscriber statistics
 
 # Active IPv6 sessions
 ACTIVE=$(mysql -u radius -p${PASS} radius \

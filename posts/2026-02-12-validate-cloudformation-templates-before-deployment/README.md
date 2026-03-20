@@ -31,6 +31,7 @@ The most basic check - is the file valid YAML or JSON?
 
 ```bash
 # Validate YAML syntax with Python
+
 python3 -c "import yaml; yaml.safe_load(open('template.yaml'))"
 
 # Validate JSON syntax

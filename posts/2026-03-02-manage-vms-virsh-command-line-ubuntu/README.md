@@ -18,6 +18,7 @@ virsh connects to the libvirt daemon and accepts commands in two modes:
 
 ```bash
 # Run a single command
+
 virsh list
 
 # Enter interactive shell

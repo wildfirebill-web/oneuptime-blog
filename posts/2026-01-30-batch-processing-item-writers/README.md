@@ -716,6 +716,7 @@ public Step transactionProcessingStep(
 
 ```yaml
 # application.yml - DataSource configuration for batch workloads
+
 spring:
   datasource:
     hikari:
@@ -1106,7 +1107,7 @@ public class OrderItemWriter implements ItemWriter<Order> {
 }
 ```
 
-### Resource Management
+Resource Management
 
 ```java
 // ItemWriter with proper resource lifecycle management

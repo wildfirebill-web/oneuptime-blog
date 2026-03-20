@@ -41,6 +41,7 @@ TTL must be enabled at the container level before individual documents can use i
 
 ```bash
 # Create a container with a default TTL of 1 hour (3600 seconds)
+
 # All documents expire after 1 hour unless they specify their own TTL
 az cosmosdb sql container create \
     --account-name myCosmosAccount \

@@ -50,6 +50,7 @@ This stage runs automatically when a new Istio version is available or when some
 
 ```yaml
 # GitHub Actions example
+
 name: Istio Upgrade
 on:
   pull_request:

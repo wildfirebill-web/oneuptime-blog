@@ -14,6 +14,7 @@ Description: Use Ansible's ansible.posix.firewalld module to manage IPv4 firewal
 
 ```yaml
 # configure_firewalld.yml
+
 ---
 - name: Configure IPv4 firewall rules with firewalld
   hosts: linux_servers
@@ -70,7 +71,7 @@ Description: Use Ansible's ansible.posix.firewalld module to manage IPv4 firewal
       changed_when: false
 ```
 
-## Rich Rules — Block Specific IP
+## Rich Rules - Block Specific IP
 
 ```yaml
     - name: Block specific IPv4 address

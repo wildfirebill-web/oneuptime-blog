@@ -1,10 +1,10 @@
-# How to Fix "Failed to Obtain IP Address" on Android WiFi
+# How to Fix 'Failed to Obtain IP Address' on Android WiFi
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Android, WiFi, DHCP, IP Address, Troubleshooting, Mobile
 
-Description: Learn how to fix the "Failed to obtain IP address" error on Android WiFi by troubleshooting DHCP issues, router configuration, and Android network settings.
+Description: Learn how to fix the 'Failed to obtain IP address' error on Android WiFi by troubleshooting DHCP issues, router configuration, and Android network settings.
 
 ## What Causes "Failed to Obtain IP Address"?
 
@@ -24,12 +24,12 @@ Android shows this error when it cannot complete the DHCP process after connecti
 3. Reconnect and enter the password carefully
 
 **Toggle WiFi:**
-```
+```text
 Settings → WiFi → Toggle OFF (10 seconds) → Toggle ON
 ```
 
 **Airplane Mode Toggle:**
-```
+```text
 Settings → Enable Airplane Mode (5 seconds) → Disable
 ```
 
@@ -51,8 +51,9 @@ If DHCP consistently fails, set a static IP:
 ## Step 3: Check Router-Side DHCP Settings
 
 On the router:
-```
+```text
 # Log into router (usually 192.168.1.1 or 192.168.0.1)
+
 # Check DHCP settings:
 # - Pool range: should have available addresses
 # - Max clients: should not be exceeded
@@ -75,19 +76,19 @@ Android 10+ uses random MAC addresses by default, which can cause issues:
 - Router may block unknown MACs
 - DHCP reservations won't work
 
-```
+```sql
 Settings → WiFi → Select network → Privacy
 Change from "Use randomized MAC" to "Use device MAC"
 ```
 
 Or on older Android:
-```
+```text
 Developer Options → WiFi → Disable MAC randomization
 ```
 
 ## Step 5: Clear Android Network Settings
 
-```
+```text
 Settings → General Management → Reset → Reset Network Settings
 ```
 
@@ -102,7 +103,7 @@ Some routers block DNS queries from unknown devices:
 3. Enter DNS 1: 8.8.8.8, DNS 2: 1.1.1.1
 
 Or use Private DNS:
-```
+```text
 Settings → Network & Internet → Advanced → Private DNS
 Enter: dns.google
 ```
@@ -127,4 +128,4 @@ sudo tcpdump -i wlan0 port 67 or port 68 -n
 
 ## Conclusion
 
-"Failed to obtain IP address" on Android is most commonly resolved by setting a static IP or expanding the router's DHCP pool. Check for MAC randomization (Android 10+) that may be triggering MAC-based filtering on the router. If a static IP works but DHCP fails, the router's DHCP service has an issue — capture packets with `tcpdump port 67 or 68` on the router to identify where the DORA sequence breaks down.
+"Failed to obtain IP address" on Android is most commonly resolved by setting a static IP or expanding the router's DHCP pool. Check for MAC randomization (Android 10+) that may be triggering MAC-based filtering on the router. If a static IP works but DHCP fails, the router's DHCP service has an issue - capture packets with `tcpdump port 67 or 68` on the router to identify where the DORA sequence breaks down.

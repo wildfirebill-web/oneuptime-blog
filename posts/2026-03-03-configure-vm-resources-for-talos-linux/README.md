@@ -33,6 +33,7 @@ On VMware vSphere, you configure CPU through the VM settings:
 
 ```bash
 # Using govc to set CPU count for a Talos VM
+
 govc vm.change -vm talos-cp-1 -cpu 4
 
 # You can also set CPU reservation to guarantee resources
@@ -174,7 +175,7 @@ talosctl -n <NODE_IP> usage /var
 
 If you notice consistent high memory or CPU usage, adjust VM resources and apply updates. Talos supports live configuration changes for some settings, but CPU and memory changes typically require a VM restart.
 
-## Resource Allocation Patterns
+Resource Allocation Patterns
 
 For a typical development cluster, a good starting configuration is:
 

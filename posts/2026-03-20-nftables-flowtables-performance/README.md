@@ -36,6 +36,7 @@ A flowtable is declared in a table and references the physical interfaces that p
 
 ```bash
 # Create a flowtable for interfaces eth0 and eth1
+
 nft add flowtable inet filter my_flowtable { hook ingress priority 0 \; devices = { eth0, eth1 } \; }
 ```
 

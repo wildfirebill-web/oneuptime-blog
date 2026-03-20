@@ -31,6 +31,7 @@ Check kernel versions across all RKE nodes:
 
 ```bash
 # List nodes with kernel version using kubectl
+
 kubectl get nodes -o custom-columns="NAME:.metadata.name,KERNEL:.status.nodeInfo.kernelVersion,OS:.status.nodeInfo.osImage"
 
 # For RKE2, check node status in the rke2 server logs

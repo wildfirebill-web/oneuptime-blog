@@ -20,6 +20,7 @@ Without `--replace`, reusing a container name fails:
 
 ```bash
 # Start a container with a name
+
 podman run -d --name myapp alpine sleep infinity
 
 # Trying to start another container with the same name fails

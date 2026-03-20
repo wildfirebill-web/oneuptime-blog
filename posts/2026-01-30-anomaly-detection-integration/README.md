@@ -41,6 +41,7 @@ The simplest method: measure how many standard deviations a point is from the me
 
 ```python
 # z_score_detector.py
+
 # Simple Z-score based anomaly detection for time series metrics
 # Works well for normally distributed data with stable variance
 

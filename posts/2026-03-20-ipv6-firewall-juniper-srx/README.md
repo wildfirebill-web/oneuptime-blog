@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Juniper SRX, Firewall, Security Zones, JunOS
+Tags: IPv6, Juniper SRX, Firewall, Security Zones, Junos
 
 Description: Learn how to configure IPv6 security policies on Juniper SRX firewalls, including zone-based policies, address book entries, stateful inspection, and ICMPv6 handling.
 
 ## Overview
 
-Juniper SRX uses zone-based security policies for firewalling. IPv6 traffic is controlled by the same security zones and policies as IPv4 — you simply use IPv6 addresses in the address book and policy rules. SRX performs stateful inspection by default, tracking IPv6 TCP, UDP, and ICMPv6 sessions.
+Juniper SRX uses zone-based security policies for firewalling. IPv6 traffic is controlled by the same security zones and policies as IPv4 - you simply use IPv6 addresses in the address book and policy rules. SRX performs stateful inspection by default, tracking IPv6 TCP, UDP, and ICMPv6 sessions.
 
 ## Security Zone Configuration for IPv6
 
-```
+```text
 # Define security zones with IPv6 host-inbound services
+
 set security zones security-zone OUTSIDE interfaces ge-0/0/0.0
 set security zones security-zone OUTSIDE host-inbound-traffic system-services ping
 set security zones security-zone OUTSIDE host-inbound-traffic protocols ospf
@@ -24,7 +25,7 @@ set security zones security-zone INSIDE host-inbound-traffic system-services all
 
 ## IPv6 Address Book Entries
 
-```
+```text
 # Add IPv6 addresses to global address book
 set security address-book global address INSIDE-NET-V6 2001:db8:lan::/48
 set security address-book global address OUTSIDE-ANY-V6 ::/0
@@ -40,7 +41,7 @@ set security address-book global address-set TRUSTED-V6 address INSIDE-NET-V6
 
 ### Allow IPv6 from Inside to Outside
 
-```
+```text
 # Allow all outbound IPv6 from inside zone
 set security policies from-zone INSIDE to-zone OUTSIDE policy ALLOW-OUTBOUND-V6
     match source-address INSIDE-NET-V6
@@ -52,7 +53,7 @@ set security policies from-zone INSIDE to-zone OUTSIDE policy ALLOW-OUTBOUND-V6
 
 ### Allow Specific Inbound IPv6
 
-```
+```text
 # Allow HTTPS inbound from internet to web server
 set security policies from-zone OUTSIDE to-zone INSIDE policy ALLOW-HTTPS-V6
     match source-address OUTSIDE-ANY-V6
@@ -72,7 +73,7 @@ set security policies from-zone OUTSIDE to-zone INSIDE policy ALLOW-SSH-MGMT-V6
 
 ### Logging Policy
 
-```
+```text
 # Enable logging on critical policies
 set security policies from-zone OUTSIDE to-zone INSIDE policy ALLOW-HTTPS-V6 then log session-init
 set security policies from-zone OUTSIDE to-zone INSIDE policy ALLOW-HTTPS-V6 then log session-close
@@ -90,7 +91,7 @@ set security policies from-zone OUTSIDE to-zone INSIDE policy DENY-ALL-V6
 
 Juniper SRX automatically handles certain ICMPv6 messages (Neighbor Discovery). For additional control:
 
-```
+```text
 # Create an application for ICMPv6 Packet Too Big
 set applications application ICMPV6-PTB protocol icmp6 icmp-type 2
 
@@ -116,7 +117,7 @@ set security policies from-zone OUTSIDE to-zone INSIDE policy ICMPV6-PING-MONITO
 
 ## Verification
 
-```
+```text
 # Show security policies
 show security policies from-zone OUTSIDE to-zone INSIDE
 
@@ -145,4 +146,4 @@ show route table inet6.0
 
 ## Summary
 
-Juniper SRX IPv6 firewalling uses security zones and policies with IPv6 addresses in the address book. Create address book entries (`set security address-book global address NAME prefix/len`) and reference them in policies (`match source-address NAME`). SRX performs stateful inspection by default — return traffic for permitted sessions is automatically allowed. Create application objects for ICMPv6 types not covered by default (`set applications application NAME protocol icmp6 icmp-type N`). Verify with `show security flow session ipv6` for active sessions and `show security policies hit-count` for policy statistics.
+Juniper SRX IPv6 firewalling uses security zones and policies with IPv6 addresses in the address book. Create address book entries (`set security address-book global address NAME prefix/len`) and reference them in policies (`match source-address NAME`). SRX performs stateful inspection by default - return traffic for permitted sessions is automatically allowed. Create application objects for ICMPv6 types not covered by default (`set applications application NAME protocol icmp6 icmp-type N`). Verify with `show security flow session ipv6` for active sessions and `show security policies hit-count` for policy statistics.

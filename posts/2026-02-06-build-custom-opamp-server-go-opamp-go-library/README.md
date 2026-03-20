@@ -318,6 +318,7 @@ Test the API:
 
 ```bash
 # List connected agents
+
 curl http://localhost:8080/api/agents
 
 # Push a config to a specific agent

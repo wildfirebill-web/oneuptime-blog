@@ -35,6 +35,7 @@ No restrictions. Allows all pod configurations.
 
 ```yaml
 # Use for trusted system components only
+
 # kube-system namespace typically uses this
 ```
 

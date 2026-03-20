@@ -31,6 +31,7 @@ provider "aws" {
 }
 
 # Look up the latest official RHEL AMI
+
 data "aws_ami" "rhel9" {
   most_recent = true
   owners      = ["309956199498"] # Red Hat's AWS account

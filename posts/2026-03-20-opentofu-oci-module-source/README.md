@@ -1,13 +1,12 @@
----
-title: "Using OCI Registries as Module Sources in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, oci
-description: "Learn how to use OCI (Open Container Initiative) registries as module sources in OpenTofu."
----
-
 # Using OCI Registries as Module Sources in OpenTofu
 
-OpenTofu can source modules from OCI (Open Container Initiative) registries — the same infrastructure used for container images. This allows organizations to use existing registry infrastructure like ECR, GCR, Docker Hub, or Harbor for module distribution.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, OCI
+
+Description: Learn how to use OCI (Open Container Initiative) registries as module sources in OpenTofu.
+
+OpenTofu can source modules from OCI (Open Container Initiative) registries - the same infrastructure used for container images. This allows organizations to use existing registry infrastructure like ECR, GCR, Docker Hub, or Harbor for module distribution.
 
 ## OCI Module Source Syntax
 
@@ -24,6 +23,7 @@ module "vpc" {
 
 ```hcl
 # Docker Hub
+
 module "example" {
   source = "oci://docker.io/myorg/terraform-vpc:v1.0.0"
 }

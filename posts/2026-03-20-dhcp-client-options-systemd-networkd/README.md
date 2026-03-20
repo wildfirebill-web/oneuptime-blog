@@ -14,6 +14,7 @@ systemd-networkd includes a built-in DHCP client. Client behavior is controlled 
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 

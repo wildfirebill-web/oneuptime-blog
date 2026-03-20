@@ -114,6 +114,7 @@ def create_intent(agent_name, display_name, training_phrases):
     return response
 
 # Create intents for order management
+
 agent_name = "projects/my-project/locations/us-central1/agents/AGENT_ID"
 
 create_intent(agent_name, "check.order.status", [

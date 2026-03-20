@@ -16,6 +16,7 @@ In INI inventory, you define group variables using the `[groupname:vars]` sectio
 
 ```ini
 # inventory.ini
+
 # Define groups and their variables
 
 [webservers]

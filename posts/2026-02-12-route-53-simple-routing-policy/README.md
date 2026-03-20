@@ -18,6 +18,7 @@ With simple routing, you create a single record for a name, and that record can 
 
 ```bash
 # Create a simple A record with a single IP
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEFGHIJ \
   --change-batch '{

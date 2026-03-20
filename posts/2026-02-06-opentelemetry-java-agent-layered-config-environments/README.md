@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Java Agent, Configuration, Environment, Layered Config
+Tags: OpenTelemetry, Java Agent, Configuration, Environments, Layered Config
 
 Description: Learn how to implement layered configuration for the OpenTelemetry Java agent across multiple environments using environment variables, system properties, and configuration files.
 
@@ -27,6 +27,7 @@ Create a base configuration file that contains settings common across all enviro
 
 ```properties
 # otel-config-base.properties
+
 # Service identification
 otel.service.name=payment-service
 otel.service.version=1.0.0

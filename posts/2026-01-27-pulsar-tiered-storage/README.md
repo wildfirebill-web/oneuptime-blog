@@ -80,6 +80,7 @@ Add these settings to your `broker.conf` file:
 
 ```properties
 # Enable tiered storage with S3
+
 # This activates the offload mechanism in the broker
 managedLedgerOffloadDriver=aws-s3
 

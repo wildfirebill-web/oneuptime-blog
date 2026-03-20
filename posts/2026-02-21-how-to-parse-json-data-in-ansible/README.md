@@ -16,6 +16,7 @@ When a command returns JSON as stdout, you can parse it with the `from_json` fil
 
 ```yaml
 # playbook-parse-stdout.yml
+
 # Parses JSON output from a docker inspect command
 - name: Parse JSON from command output
   hosts: localhost

@@ -82,6 +82,7 @@ Cloud SQL reserves some memory for the OS and MySQL overhead. Do not set the buf
 
 ```bash
 # Set the buffer pool size to 22 GB on a db-n1-standard-8
+
 gcloud sql instances patch MY_INSTANCE \
   --database-flags=innodb_buffer_pool_size=23622320128
 ```

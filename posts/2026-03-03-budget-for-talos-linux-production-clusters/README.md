@@ -110,6 +110,7 @@ With reserved + spot mix (50% savings): $7,708.80/month
 
 ```yaml
 # Typical storage costs (AWS us-east-1 pricing)
+
 # gp3 SSD: $0.08/GB/month
 # io2 SSD: $0.125/GB/month + $0.065/IOPS/month
 # sc1 HDD: $0.015/GB/month

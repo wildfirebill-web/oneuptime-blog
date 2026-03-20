@@ -29,6 +29,7 @@ Create servers that will form your Kubernetes cluster.
 
 ```bash
 # Create the control plane node
+
 hcloud server create \
   --name k8s-control-1 \
   --type cx31 \

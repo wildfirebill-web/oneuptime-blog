@@ -8,12 +8,13 @@ Description: Learn how to safely handle sensitive variables in OpenTofu tests, i
 
 ## Introduction
 
-Sensitive variables in OpenTofu — database passwords, API keys, TLS certificates — require careful handling in tests. You should never hardcode real secrets in test files. OpenTofu's testing framework supports several patterns for providing sensitive values safely while ensuring your tests still validate the right behavior.
+Sensitive variables in OpenTofu - database passwords, API keys, TLS certificates - require careful handling in tests. You should never hardcode real secrets in test files. OpenTofu's testing framework supports several patterns for providing sensitive values safely while ensuring your tests still validate the right behavior.
 
 ## Defining Sensitive Variables in Modules
 
 ```hcl
 # variables.tf
+
 variable "db_password" {
   description = "Database admin password"
   type        = string
@@ -35,7 +36,7 @@ variable "api_key" {
 ## Method 1: Environment Variables (Recommended for CI)
 
 ```bash
-# In CI environment — set secrets from CI secret store
+# In CI environment - set secrets from CI secret store
 export TF_VAR_db_password="test-password-at-least-16-chars"
 export TF_VAR_api_key="test-api-key-for-unit-tests"
 
@@ -51,7 +52,7 @@ For unit tests, use clearly fake test values:
 mock_provider "aws" {}
 
 variables {
-  # Fake test values — clearly not production secrets
+  # Fake test values - clearly not production secrets
   db_password = "test-password-for-unit-tests-only"
   api_key     = "test-api-key-not-real"
 }
@@ -78,7 +79,7 @@ run "rejects_short_password" {
   command = plan
 
   variables {
-    db_password = "short"  # Too short — less than 16 chars
+    db_password = "short"  # Too short - less than 16 chars
   }
 
   # Expect the validation to fail
@@ -92,7 +93,7 @@ run "accepts_long_enough_password" {
     db_password = "this-is-a-valid-test-password"
   }
 
-  # No failures expected — password meets requirements
+  # No failures expected - password meets requirements
   assert {
     condition     = true
     error_message = "Should accept password that meets length requirement"

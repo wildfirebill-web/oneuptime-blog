@@ -28,6 +28,7 @@ This is the quickest way to get started but not recommended for production becau
 
 ```python
 # Set the storage account key in the Spark configuration
+
 spark.conf.set(
     "fs.azure.account.key.<storage-account>.dfs.core.windows.net",
     "<your-storage-account-key>"

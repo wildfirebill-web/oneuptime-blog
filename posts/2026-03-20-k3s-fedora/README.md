@@ -19,6 +19,7 @@ Fedora is a cutting-edge Linux distribution that often ships with the latest ker
 
 ```bash
 # Update all packages
+
 sudo dnf update -y
 
 # Install useful tools

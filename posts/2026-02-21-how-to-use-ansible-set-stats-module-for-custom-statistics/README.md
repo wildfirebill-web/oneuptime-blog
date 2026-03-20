@@ -72,6 +72,7 @@ Here are several practical scenarios where this module proves essential in real-
 
 ```yaml
 # Complete workflow incorporating this module
+
 - name: Infrastructure provisioning
   hosts: all
   become: true

@@ -103,6 +103,7 @@ For the enterprise pattern, create management groups that reflect your governanc
 
 ```bash
 # Create the hierarchy
+
 az account management-group create --name "contoso" --display-name "Contoso"
 
 # Platform groups

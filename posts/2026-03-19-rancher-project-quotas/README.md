@@ -29,6 +29,7 @@ Before configuring quotas, calculate how to distribute cluster resources:
 
 ```bash
 # Check total cluster capacity
+
 kubectl describe nodes | grep -A 5 "Capacity:"
 
 # Check current resource usage

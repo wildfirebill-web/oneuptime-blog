@@ -1,8 +1,8 @@
-# How to Deploy Portainer on DigitalOcean Droplets
+# How to Deploy Portainer on DigitalOcean Droplets - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, DigitalOcean, Droplet, Docker, Cloud, Self-Hosted, DevOps
+Tags: Portainer, DigitalOcean, Droplets, Docker, Cloud, Self-Hosted, DevOps
 
 Description: Deploy Portainer on a DigitalOcean Droplet with firewall rules, optional block storage, and DigitalOcean Container Registry integration.
 
@@ -33,6 +33,7 @@ DigitalOcean Droplets provide simple, affordable cloud VMs that are popular for 
 
 ```bash
 # Authenticate
+
 doctl auth init
 
 # Get your SSH key fingerprint

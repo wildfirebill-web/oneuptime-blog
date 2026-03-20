@@ -66,6 +66,7 @@ For 500 applications averaging 20 resources each:
 ```text
 500MB + (10,000 * 10KB) + 50% buffer = 500MB + 100MB + 300MB = 900MB
 # Round up to 1Gi request, 4Gi limit for spikes
+
 ```
 
 ## API Server Resources

@@ -16,6 +16,7 @@ Pre-bake Kubernetes images into your machine image (AMI, GCE Image) to eliminate
 
 ```bash
 # On a base node, pre-pull all RKE2 images
+
 systemctl start rke2-agent
 
 # Run RKE2 to pull all container images

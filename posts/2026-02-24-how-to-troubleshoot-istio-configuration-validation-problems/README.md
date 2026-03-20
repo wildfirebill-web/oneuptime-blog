@@ -38,6 +38,7 @@ Check if the validation webhook is running:
 
 ```bash
 # Check the validating webhook configuration
+
 kubectl get validatingwebhookconfiguration
 
 # Look for istio-validator or istiod-<revision>

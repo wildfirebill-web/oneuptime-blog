@@ -60,6 +60,7 @@ The simplest option runs inside each querier pod. No external dependencies, but 
 
 ```yaml
 # loki-config.yaml
+
 # In-memory cache for index queries
 # Suitable for development or single-node deployments
 

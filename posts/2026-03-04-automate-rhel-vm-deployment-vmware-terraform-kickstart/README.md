@@ -23,6 +23,7 @@ Host this file on an HTTP server accessible from your vSphere network.
 
 ```bash
 # /var/www/html/ks/rhel9-base.cfg
+
 cat > rhel9-base.cfg << 'EOF'
 # RHEL 9 Kickstart for VMware deployment
 lang en_US.UTF-8

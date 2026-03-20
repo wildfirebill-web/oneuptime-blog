@@ -16,6 +16,7 @@ Calico troubleshooting commands include both safe read-only queries (calicoctl g
 
 ```yaml
 # calico-read-only-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

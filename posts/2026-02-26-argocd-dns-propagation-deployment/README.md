@@ -38,6 +38,7 @@ When ArgoCD deploys a new Ingress resource or updates an existing one, ExternalD
 
 ```yaml
 # ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

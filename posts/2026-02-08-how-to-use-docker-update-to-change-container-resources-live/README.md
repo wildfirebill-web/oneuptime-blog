@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Docker update, Resource Limits, Cgroups, Memory, CPU, Live configuration
+Tags: Docker, Docker Update, Resource Limits, Cgroups, Memory, CPU, Live configuration
 
 Description: Learn how to modify CPU, memory, and restart policies on running Docker containers without downtime using docker update.
 
@@ -32,6 +32,7 @@ Increase the memory limit of a running container:
 
 ```bash
 # Increase memory limit to 1GB for a running container
+
 docker update --memory 1g --memory-swap 2g my-container
 ```
 

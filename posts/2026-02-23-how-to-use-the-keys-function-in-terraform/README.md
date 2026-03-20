@@ -18,6 +18,7 @@ The `keys` function takes a map and returns a list of all its keys, sorted in le
 
 ```hcl
 # Returns a sorted list of all keys in the map
+
 keys(map)
 ```
 

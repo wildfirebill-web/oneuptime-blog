@@ -44,6 +44,7 @@ The easiest way to install Istio is with the Istioctl CLI or Helm. Here is a qui
 
 ```bash
 # Download the latest Istio release (includes istioctl CLI)
+
 curl -L https://istio.io/downloadIstio | sh -
 # Navigate into the istio directory (version number varies)
 cd istio-*/

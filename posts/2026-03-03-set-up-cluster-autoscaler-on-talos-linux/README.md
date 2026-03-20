@@ -30,6 +30,7 @@ The autoscaler communicates with your cloud provider's API to add or remove virt
 
 ```bash
 # Verify your cluster is healthy
+
 kubectl get nodes
 kubectl cluster-info
 ```

@@ -16,6 +16,7 @@ The `argocd admin` commands are included in the standard ArgoCD CLI binary. Some
 
 ```bash
 # Check available admin commands
+
 argocd admin --help
 
 # Most admin commands need kubeconfig access to the argocd namespace

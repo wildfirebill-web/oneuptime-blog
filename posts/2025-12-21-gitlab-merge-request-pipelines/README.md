@@ -33,6 +33,7 @@ Use the `rules` keyword to create jobs that only run for merge requests.
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test

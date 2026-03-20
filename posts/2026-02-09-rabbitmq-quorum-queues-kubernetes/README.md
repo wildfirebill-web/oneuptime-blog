@@ -24,6 +24,7 @@ Start by installing the RabbitMQ cluster operator:
 
 ```bash
 # Install RabbitMQ operator
+
 kubectl apply -f https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml
 
 # Verify operator is running

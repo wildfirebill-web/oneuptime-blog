@@ -1,4 +1,4 @@
-# How to Understand Mobile IPv6 Terminology (Home Address, Care-of Address, Home Agent)
+# How to Understand Mobile IPv6 Terminology
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,7 +16,7 @@ Mobile IPv6 introduces a set of specialized terms that differ from standard IPv6
 
 The Home Address is the permanent, topologically fixed IPv6 address assigned to the Mobile Node. It belongs to the home network prefix.
 
-```
+```text
 Home Network Prefix: 2001:db8:home::/64
 Mobile Node HoA:     2001:db8:home::100
 ```
@@ -29,7 +29,7 @@ Mobile Node HoA:     2001:db8:home::100
 
 The Care-of Address is the temporary address the Mobile Node acquires at its current point of attachment (the foreign network).
 
-```
+```text
 Foreign Network Prefix: 2001:db8:foreign::/64
 Mobile Node CoA:        2001:db8:foreign::50 (assigned via SLAAC/DHCPv6)
 ```
@@ -69,7 +69,7 @@ Primarily a MIPv4 concept; in MIPv6, the MN acquires its own CoA directly.
 
 A binding is a mapping between a Mobile Node's HoA and its current CoA, along with a lifetime value.
 
-```
+```text
 Binding Entry Example:
   HoA:       2001:db8:home::100
   CoA:       2001:db8:foreign::50
@@ -81,7 +81,7 @@ Binding Entry Example:
 
 Sent by the MN to the HA (and optionally to CNs) to register a new CoA.
 
-```
+```text
 BU Message Fields:
   Sequence Number: monotonically increasing (replay protection)
   Lifetime:        registration lifetime in 4-second units
@@ -94,7 +94,7 @@ BU Message Fields:
 
 The HA's response to a BU, confirming the new binding.
 
-```
+```text
 BA Message Fields:
   Status:    0 = Binding Update accepted
   Lifetime:  granted lifetime (may be less than requested)

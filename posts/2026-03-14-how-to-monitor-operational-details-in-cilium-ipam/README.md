@@ -40,6 +40,7 @@ Key IPAM metrics:
 
 ```promql
 # Available IPs per node
+
 cilium_ipam_available
 
 # Used IPs per node

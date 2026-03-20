@@ -20,6 +20,7 @@ The `podman save` command writes one or more images to a file or standard output
 
 ```bash
 # Basic syntax
+
 podman save [options] IMAGE [IMAGE...]
 ```
 

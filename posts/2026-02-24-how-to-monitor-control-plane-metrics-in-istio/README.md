@@ -30,6 +30,7 @@ xDS is the protocol Envoy uses to receive configuration from istiod. The "x" sta
 
 ```promql
 # Total xDS pushes
+
 rate(pilot_xds_pushes[5m])
 
 # xDS push errors
@@ -147,7 +148,7 @@ pilot_conflict_outbound_listener_tcp_over_current_tcp
 
 Configuration conflicts happen when multiple resources try to control the same listener or route. A non-zero value here usually means you have conflicting VirtualService or Gateway definitions.
 
-## Resource Usage Monitoring
+Resource Usage Monitoring
 
 istiod is a Go application, so standard Go runtime metrics are available:
 

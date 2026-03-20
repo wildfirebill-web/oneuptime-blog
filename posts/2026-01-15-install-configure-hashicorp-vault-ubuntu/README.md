@@ -31,6 +31,7 @@ HashiCorp Vault is a tool for securely storing and accessing secrets such as API
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y curl gnupg software-properties-common
 

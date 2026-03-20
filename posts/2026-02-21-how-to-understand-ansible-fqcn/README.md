@@ -96,6 +96,7 @@ Here is a concrete example of the problem:
 
 ```yaml
 # This playbook has an ambiguity problem
+
 ---
 - name: Deploy application
   hosts: servers

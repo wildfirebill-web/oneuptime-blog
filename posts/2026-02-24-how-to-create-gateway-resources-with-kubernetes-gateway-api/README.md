@@ -16,6 +16,7 @@ Make sure you have the Gateway API CRDs and Istio installed:
 
 ```bash
 # Install Gateway API CRDs
+
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.0/standard-install.yaml
 
 # Verify Istio's GatewayClass exists

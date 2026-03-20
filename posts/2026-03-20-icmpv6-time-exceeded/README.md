@@ -8,11 +8,11 @@ Description: Understand ICMPv6 Time Exceeded messages (Type 3), when routers and
 
 ## Introduction
 
-ICMPv6 Time Exceeded (Type 3) is generated in two situations: when a router decrements a packet's Hop Limit to zero (Code 0), or when a destination discards an incomplete packet because its fragment reassembly timer expired (Code 1). Both codes serve diagnostic purposes — Code 0 is fundamental to how `traceroute6` works, while Code 1 signals reassembly failures.
+ICMPv6 Time Exceeded (Type 3) is generated in two situations: when a router decrements a packet's Hop Limit to zero (Code 0), or when a destination discards an incomplete packet because its fragment reassembly timer expired (Code 1). Both codes serve diagnostic purposes - Code 0 is fundamental to how `traceroute6` works, while Code 1 signals reassembly failures.
 
 ## Time Exceeded Message Format
 
-```
+```text
 ICMPv6 Time Exceeded (Type 3):
 
  0                   1                   2                   3
@@ -38,7 +38,7 @@ Code 1: Fragment reassembly time exceeded
 
 ## How traceroute6 Uses Time Exceeded
 
-```
+```text
 traceroute6 algorithm:
 
 1. Send probe packet (UDP to high port, or ICMPv6 Echo Request)
@@ -58,6 +58,7 @@ traceroute6 algorithm:
 
 ```bash
 # Basic traceroute6 to a destination
+
 traceroute6 2001:db8::1
 # or
 traceroute -6 2001:db8::1
@@ -88,7 +89,7 @@ sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 3"
 # Example loop:
 # 1  2001:db8::1 (router-a)
 # 2  2001:db8::2 (router-b)
-# 3  2001:db8::1 (router-a again — LOOP)
+# 3  2001:db8::1 (router-a again - LOOP)
 # 4  2001:db8::2 (router-b again)
 
 # Detect loops: same address appearing multiple times

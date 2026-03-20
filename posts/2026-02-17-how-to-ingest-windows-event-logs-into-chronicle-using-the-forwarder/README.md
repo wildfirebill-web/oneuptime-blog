@@ -47,6 +47,7 @@ On the collector server, run these PowerShell commands to configure the WEC (Win
 
 ```powershell
 # Enable the Windows Event Collector service
+
 wecutil qc /q
 
 # Create a subscription for security events

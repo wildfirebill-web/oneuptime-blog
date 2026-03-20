@@ -16,7 +16,7 @@ Replicating workloads across clusters ensures that if one cluster fails, users a
 
 Organize your Git repository so Fleet can deliver the same workload with environment-specific overrides:
 
-```
+```text
 workloads/
   my-app/
     fleet.yaml            # Bundle definition
@@ -39,6 +39,7 @@ workloads/
 
 ```yaml
 # workloads/my-app/fleet.yaml
+
 defaultNamespace: my-app
 
 kustomize:

@@ -20,6 +20,7 @@ The Kubernetes Cluster Autoscaler automatically adjusts the number of nodes in a
 
 ```hcl
 # IAM role allowing the Cluster Autoscaler to manage Auto Scaling Groups
+
 resource "aws_iam_role" "cluster_autoscaler" {
   name = "${var.cluster_name}-cluster-autoscaler"
 

@@ -411,6 +411,7 @@ class NetworkTopology:
         self.client.close()
 
 # Usage
+
 topo = NetworkTopology()
 topo.add_network("web-tier", subnet="172.30.0.0/24")
 topo.add_network("data-tier", subnet="172.31.0.0/24", internal=True)

@@ -53,6 +53,7 @@ Configure OpenTelemetry and your messaging connectors in `application.properties
 
 ```properties
 # OpenTelemetry configuration
+
 quarkus.otel.enabled=true
 quarkus.otel.exporter.otlp.endpoint=http://localhost:4317
 quarkus.otel.service.name=reactive-messaging-service

@@ -217,6 +217,7 @@ After applying a policy, test it with curl:
 
 ```bash
 # From a machine with an allowed IP
+
 curl -v https://your-service.example.com/admin/
 
 # Check response headers for RBAC info

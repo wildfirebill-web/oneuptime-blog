@@ -1,4 +1,4 @@
-# How to Rotate Encryption Keys for OpenTofu State
+# How to Rotate Encryption Keys for OpenTofu State - State
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to safely rotate encryption keys for OpenTofu state files
 
 ## Introduction
 
-Regular key rotation is a security best practice that limits the exposure window if a key is compromised. OpenTofu's encryption framework supports key rotation through the `fallback` mechanism — you configure a new key while keeping the old key available for reading existing encrypted state, then migrate.
+Regular key rotation is a security best practice that limits the exposure window if a key is compromised. OpenTofu's encryption framework supports key rotation through the `fallback` mechanism - you configure a new key while keeping the old key available for reading existing encrypted state, then migrate.
 
 ## Key Rotation Strategies
 
@@ -23,6 +23,7 @@ Update your encryption configuration to include both old and new keys:
 
 ```hcl
 # encryption.tf
+
 terraform {
   encryption {
     # New key (will be used for all new writes)
@@ -135,7 +136,7 @@ terraform {
     state {
       method   = method.aes_gcm.new_method
       enforced = true
-      # Fallback removed — old key is no longer used
+      # Fallback removed - old key is no longer used
     }
   }
 }

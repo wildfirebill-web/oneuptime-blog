@@ -34,6 +34,7 @@ Deploy the controller itself as an ArgoCD Application. This is the GitOps-native
 
 ```yaml
 # sealed-secrets-controller.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

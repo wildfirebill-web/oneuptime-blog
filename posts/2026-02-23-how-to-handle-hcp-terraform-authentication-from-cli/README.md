@@ -26,6 +26,7 @@ The simplest way to authenticate for local development is `terraform login`:
 
 ```bash
 # Start the login flow
+
 terraform login
 
 # Terraform opens your browser to app.terraform.io

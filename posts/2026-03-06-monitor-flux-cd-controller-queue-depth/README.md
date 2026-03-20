@@ -31,6 +31,7 @@ Each controller exposes Prometheus metrics including work queue depth, processin
 
 ```bash
 # Check that each controller exposes metrics on port 8080
+
 kubectl get pods -n flux-system -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.spec.containers[0].ports[*].containerPort}{"\n"}{end}'
 
 # Port-forward to check metrics directly

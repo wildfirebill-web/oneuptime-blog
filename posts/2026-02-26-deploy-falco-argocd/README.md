@@ -42,6 +42,7 @@ security/
 
 ```yaml
 # security/falco/Chart.yaml
+
 apiVersion: v2
 name: falco
 description: Wrapper chart for Falco runtime security

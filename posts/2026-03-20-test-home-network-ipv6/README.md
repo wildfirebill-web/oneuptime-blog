@@ -22,7 +22,8 @@ flowchart LR
 Verify the router received a prefix from the ISP.
 
 ```bash
-# OpenWrt router shell — check WAN IPv6
+# OpenWrt router shell - check WAN IPv6
+
 ip -6 addr show dev eth0.2    # WAN interface
 
 # Check delegated prefix
@@ -95,7 +96,7 @@ curl -6 -v https://ipv6.google.com 2>&1 | grep "IPv6\|Connected\|200"
 # Check your public IPv6 address as seen by the internet
 curl -6 https://ifconfig.co
 
-# Traceroute — verify traffic takes IPv6 path
+# Traceroute - verify traffic takes IPv6 path
 traceroute6 2001:4860:4860::8888
 # or on macOS:
 traceroute6 2001:4860:4860::8888
@@ -151,4 +152,4 @@ echo "Results: ${PASS} passed, ${FAIL} failed"
 
 ## Conclusion
 
-Home network IPv6 testing follows the stack: ISP to router (DHCPv6-PD), router to LAN (RA/SLAAC), device address assignment, and end-to-end internet reachability. Capture Router Advertisements with `tcpdump` to confirm the router is advertising the correct /64 prefix. Test from multiple devices and check both ping and HTTP over IPv6. MTU issues are common with PPPoE connections — reduce WAN MTU to 1480 or enable IPv6 PMTUD (`net.ipv6.conf.all.disable_ipv6=0` and ensure RA includes MTU option). Use the automated test script to quickly verify all layers at once.
+Home network IPv6 testing follows the stack: ISP to router (DHCPv6-PD), router to LAN (RA/SLAAC), device address assignment, and end-to-end internet reachability. Capture Router Advertisements with `tcpdump` to confirm the router is advertising the correct /64 prefix. Test from multiple devices and check both ping and HTTP over IPv6. MTU issues are common with PPPoE connections - reduce WAN MTU to 1480 or enable IPv6 PMTUD (`net.ipv6.conf.all.disable_ipv6=0` and ensure RA includes MTU option). Use the automated test script to quickly verify all layers at once.

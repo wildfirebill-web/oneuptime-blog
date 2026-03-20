@@ -16,6 +16,7 @@ Before optimizing, measure. Find out exactly where time is being spent:
 
 ```bash
 # Check reconciliation times per application
+
 kubectl exec -n argocd statefulset/argocd-application-controller -- \
   curl -s localhost:8082/metrics | grep argocd_app_reconcile
 

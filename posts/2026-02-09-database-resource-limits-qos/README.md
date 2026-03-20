@@ -24,6 +24,7 @@ Deploy PostgreSQL with properly sized resources:
 
 ```yaml
 # postgres-guaranteed-qos.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

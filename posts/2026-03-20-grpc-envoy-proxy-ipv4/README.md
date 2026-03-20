@@ -14,6 +14,7 @@ Envoy understands gRPC natively: it decodes gRPC status codes, collects per-meth
 
 ```yaml
 # envoy.yaml
+
 static_resources:
   listeners:
     - name: grpc_listener
@@ -120,7 +121,7 @@ services:
 ## Viewing gRPC Metrics
 
 ```bash
-# Envoy admin API — gRPC stats per method
+# Envoy admin API - gRPC stats per method
 curl http://localhost:9901/stats | grep grpc
 
 # Example metrics:

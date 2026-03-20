@@ -64,6 +64,7 @@ Here is a ScaledObject that scales a worker deployment based on RabbitMQ queue d
 
 ```yaml
 # scaled-object.yaml
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

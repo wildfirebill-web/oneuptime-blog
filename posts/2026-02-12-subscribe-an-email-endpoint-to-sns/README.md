@@ -16,6 +16,7 @@ Subscribe an email address using the CLI.
 
 ```bash
 # Subscribe an email address to an SNS topic
+
 aws sns subscribe \
   --topic-arn arn:aws:sns:us-east-1:123456789012:order-notifications \
   --protocol email \

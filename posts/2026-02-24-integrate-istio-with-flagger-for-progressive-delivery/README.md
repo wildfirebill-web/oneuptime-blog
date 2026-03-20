@@ -160,6 +160,7 @@ Flagger detects the change and starts the analysis. Watch the progress:
 kubectl describe canary my-app
 
 # Or watch Flagger's logs
+
 kubectl logs -n istio-system -l app.kubernetes.io/name=flagger -f
 ```
 

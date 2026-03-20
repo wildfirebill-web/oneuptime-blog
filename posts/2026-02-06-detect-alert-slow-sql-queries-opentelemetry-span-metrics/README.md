@@ -33,6 +33,7 @@ First, install the required packages.
 
 ```bash
 # Install OpenTelemetry SDK and database instrumentation packages
+
 pip install opentelemetry-api \
     opentelemetry-sdk \
     opentelemetry-exporter-otlp \

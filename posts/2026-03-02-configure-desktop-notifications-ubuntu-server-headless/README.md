@@ -30,6 +30,7 @@ Even on headless servers, you can install the notification tools:
 
 ```bash
 # Install libnotify tools
+
 sudo apt update
 sudo apt install -y libnotify-bin
 

@@ -47,6 +47,7 @@ The most common cause of 403 errors is the Key Vault firewall blocking the reque
 
 ```bash
 # Check the Key Vault's network ACL settings
+
 az keyvault show \
   --name myKeyVault \
   --resource-group myResourceGroup \

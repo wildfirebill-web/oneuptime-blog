@@ -18,6 +18,7 @@ By default, when you deploy a Gen 2 function with `--allow-unauthenticated`, any
 
 ```bash
 # Deploy WITHOUT --allow-unauthenticated to require authentication
+
 gcloud functions deploy my-secure-api \
   --gen2 \
   --runtime=nodejs20 \

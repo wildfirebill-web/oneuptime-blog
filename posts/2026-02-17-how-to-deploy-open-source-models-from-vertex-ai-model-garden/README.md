@@ -32,6 +32,7 @@ Here is how to install the required Python library:
 
 ```bash
 # Install the Vertex AI Python SDK
+
 pip install google-cloud-aiplatform
 ```
 

@@ -31,6 +31,7 @@ Verify your node pool image type:
 
 ```bash
 # List node pools and their image types for the cluster
+
 gcloud container node-pools list \
   --cluster=<cluster-name> \
   --region=<region> \

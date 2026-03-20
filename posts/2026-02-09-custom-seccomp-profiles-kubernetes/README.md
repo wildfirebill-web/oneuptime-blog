@@ -171,6 +171,7 @@ To build an accurate profile, discover which syscalls your application needs:
 
 ```bash
 # Run application with audit mode seccomp profile
+
 strace -c -f -S name nginx 2>&1 | grep -v -e '^SYS' -e '^---' | awk '{print $NF}' | sort -u
 ```
 

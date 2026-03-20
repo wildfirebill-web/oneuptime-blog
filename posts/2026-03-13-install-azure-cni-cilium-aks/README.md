@@ -25,6 +25,7 @@ This guide covers enabling Cilium CNI on a new AKS cluster and verifying the ins
 
 ```bash
 # Register the required Azure feature flags for AKS Cilium CNI
+
 az feature register \
   --namespace Microsoft.ContainerService \
   --name AzureOverlayPreview

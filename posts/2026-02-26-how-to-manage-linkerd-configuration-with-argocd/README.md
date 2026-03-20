@@ -145,6 +145,7 @@ spec:
   proxyProtocol: HTTP/2
 ---
 # No ServerAuthorization = deny all by default
+
 ```
 
 ### Allow Specific Communication

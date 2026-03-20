@@ -34,6 +34,7 @@ The following code configures a simple logging setup that writes to both console
 
 ```python
 # app.py
+
 # Basic Flask logging configuration using Python's logging module
 import logging
 from flask import Flask

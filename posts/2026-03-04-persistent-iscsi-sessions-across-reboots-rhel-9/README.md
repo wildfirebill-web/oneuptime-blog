@@ -16,6 +16,7 @@ When you discover and log in to a target, you can set the `node.startup` paramet
 
 ```bash
 # Set automatic login for a specific target
+
 sudo iscsiadm -m node -T iqn.2024.com.example:target1 -p 192.168.1.10:3260 \
     -o update -n node.startup -v automatic
 ```

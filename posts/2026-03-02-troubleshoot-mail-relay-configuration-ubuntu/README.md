@@ -16,6 +16,7 @@ Before diving into specific problems, know the tools:
 
 ```bash
 # The mail log - your primary diagnostic source
+
 sudo tail -f /var/log/mail.log
 
 # View the mail queue

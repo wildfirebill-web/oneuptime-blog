@@ -22,6 +22,7 @@ Always start with a fresh package database.
 
 ```bash
 # Refresh repositories and update the system
+
 sudo zypper refresh
 sudo zypper update -y
 ```

@@ -14,6 +14,7 @@ Port mapping errors in Portainer manifest as Docker API errors when deploying co
 
 ```bash
 # Check what is using a port on the host
+
 sudo ss -tlnp | grep :8080
 # Or
 sudo lsof -i :8080

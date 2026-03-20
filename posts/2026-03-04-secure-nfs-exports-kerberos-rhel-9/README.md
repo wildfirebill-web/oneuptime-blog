@@ -31,6 +31,7 @@ On both the NFS server and clients:
 
 ```bash
 # Install Kerberos client packages
+
 sudo dnf install -y krb5-workstation
 
 # Verify /etc/krb5.conf points to your KDC

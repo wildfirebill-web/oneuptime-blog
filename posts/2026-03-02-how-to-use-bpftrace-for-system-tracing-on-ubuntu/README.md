@@ -14,6 +14,7 @@ bpftrace is a high-level tracing language built on Linux's eBPF infrastructure. 
 
 ```bash
 # Install from Ubuntu repositories (Ubuntu 20.04+)
+
 sudo apt update
 sudo apt install bpftrace
 

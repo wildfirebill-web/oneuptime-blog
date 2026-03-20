@@ -16,6 +16,7 @@ The `extends` keyword copies configuration from a base service:
 
 ```yaml
 # common.yml - Base service definitions
+
 services:
   web-base:
     image: nginx:alpine

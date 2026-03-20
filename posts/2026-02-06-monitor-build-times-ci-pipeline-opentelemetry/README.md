@@ -48,6 +48,7 @@ Install it in your workflow:
 
 ```yaml
 # .github/workflows/build.yml
+
 # GitHub Actions workflow with OpenTelemetry instrumentation
 
 name: Build and Test

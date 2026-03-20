@@ -28,6 +28,7 @@ Most fields on Kubernetes resources support in-place updates. Terraform detects 
 
 ```hcl
 # Updating replica count or image triggers an in-place update
+
 resource "kubernetes_deployment" "app" {
   metadata {
     name      = "my-app"

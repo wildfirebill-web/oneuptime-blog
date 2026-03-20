@@ -47,6 +47,7 @@ Start by deploying cert-manager to manage TLS certificates.
 
 ```yaml
 # infrastructure/cert-manager/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -120,6 +120,7 @@ CloudWatch Logs Insights lets you query structured logs with a SQL-like syntax. 
 
 ```text
 # Find all errors in the last hour
+
 fields @timestamp, @message, level, error, requestId
 | filter level = "ERROR"
 | sort @timestamp desc

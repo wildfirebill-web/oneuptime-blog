@@ -22,6 +22,7 @@ Before uninstalling the server, gracefully remove workloads:
 
 ```bash
 # From the server, drain all nodes
+
 kubectl get nodes
 
 # Drain each worker node first

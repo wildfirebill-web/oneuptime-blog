@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Broadcast, Networking, Linux, Socket, LAN
+Tags: UDP, Broadcast, Networking, Linux, Sockets, LAN
 
 Description: Send and receive UDP broadcast messages on a local network using the SO_BROADCAST socket option, with practical examples for service discovery and local network communication.
 
 ## Introduction
 
-UDP broadcast allows a single packet to be delivered to all hosts on a local network segment without knowing individual addresses. This is useful for service discovery (finding servers without prior configuration), DHCP (clients broadcast to discover servers), Wake-on-LAN, and legacy protocols. Broadcast is limited to the local network — routers do not forward broadcast packets by default.
+UDP broadcast allows a single packet to be delivered to all hosts on a local network segment without knowing individual addresses. This is useful for service discovery (finding servers without prior configuration), DHCP (clients broadcast to discover servers), Wake-on-LAN, and legacy protocols. Broadcast is limited to the local network - routers do not forward broadcast packets by default.
 
 ## Broadcast Addresses
 
-```
+```text
 Broadcast types:
 - Limited broadcast:  255.255.255.255 (never forwarded by any router)
 - Directed broadcast: 192.168.1.255   (last host address of a subnet)
@@ -45,6 +45,7 @@ MESSAGE = b"Hello LAN! This is a broadcast message"
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # REQUIRED: enable broadcast permission on this socket
+
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 
 # Optional: allow rapid restart without "address in use" error
@@ -162,7 +163,7 @@ tcpdump -i eth0 -n 'dst 255.255.255.255'
 
 ## Broadcast Limitations
 
-```
+```text
 Limitations of UDP broadcast:
 - Limited to single network segment (routers block broadcasts)
 - All hosts receive the packet, even if they don't need it (CPU overhead)
@@ -176,4 +177,4 @@ For internet-facing discovery: use unicast with a known rendezvous server
 
 ## Conclusion
 
-UDP broadcast requires the `SO_BROADCAST` socket option on both sender and receiver. It is ideal for LAN-local service discovery and protocols like DHCP where the destination host is not yet known. Use `255.255.255.255` for simplicity (works on any subnet), or calculate the directed broadcast address for your specific subnet. For anything beyond the local segment, switch to multicast — it provides group delivery without the overhead of delivering to every host on the network.
+UDP broadcast requires the `SO_BROADCAST` socket option on both sender and receiver. It is ideal for LAN-local service discovery and protocols like DHCP where the destination host is not yet known. Use `255.255.255.255` for simplicity (works on any subnet), or calculate the directed broadcast address for your specific subnet. For anything beyond the local segment, switch to multicast - it provides group delivery without the overhead of delivering to every host on the network.

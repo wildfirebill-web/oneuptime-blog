@@ -51,6 +51,7 @@ If you suspect a network partition:
 
 ```bash
 # Check etcd status from different nodes
+
 talosctl etcd status --nodes 192.168.1.10
 talosctl etcd status --nodes 192.168.1.11
 talosctl etcd status --nodes 192.168.1.12

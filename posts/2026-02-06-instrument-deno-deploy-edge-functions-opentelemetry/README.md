@@ -20,6 +20,7 @@ To enable it, you set environment variables in your Deno Deploy project settings
 
 ```bash
 # Environment variables for Deno Deploy project
+
 # These configure the built-in OpenTelemetry integration
 
 OTEL_EXPORTER_OTLP_ENDPOINT=https://your-collector.example.com:4318

@@ -188,6 +188,7 @@ LOCK_ID="migration-$(date +%s)-$$"
 MAX_LOCK_WAIT=300  # 5 minutes
 
 # Database connection
+
 export PGPASSWORD="$DB_PASSWORD"
 DB_HOST="${DB_HOST:-postgres}"
 DB_PORT="${DB_PORT:-5432}"

@@ -31,6 +31,7 @@ Deploy test VMs in each region for connectivity testing.
 ```bash
 #!/bin/bash
 # setup-multi-region-test.sh
+
 # Deploy test VMs in each region
 
 REGIONS=("region-a" "region-b")

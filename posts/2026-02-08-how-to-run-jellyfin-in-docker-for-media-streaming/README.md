@@ -29,6 +29,7 @@ Organize your project and media directories:
 
 ```bash
 # Create the Jellyfin project directory and config folder
+
 mkdir -p ~/jellyfin/config
 
 # Your media should be organized in a structure like this:

@@ -307,6 +307,7 @@ Track WebSocket connection metrics:
 
 ```promql
 # Active connections
+
 envoy_cluster_upstream_cx_active{cluster_name=~"outbound.*ws-app.*"}
 
 # Connection duration

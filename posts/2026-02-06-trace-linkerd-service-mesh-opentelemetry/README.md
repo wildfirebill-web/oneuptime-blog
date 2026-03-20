@@ -94,6 +94,7 @@ You can verify that headers are being propagated correctly by checking the Linke
 
 ```bash
 # Check Linkerd proxy logs for a specific pod to verify trace header forwarding
+
 # Look for traceparent headers in the proxy output
 kubectl logs deployment/order-service -c linkerd-proxy | grep -i "traceparent"
 ```

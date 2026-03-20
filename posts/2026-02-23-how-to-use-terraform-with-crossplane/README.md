@@ -28,6 +28,7 @@ Use Terraform to create the foundational infrastructure including the Kubernetes
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

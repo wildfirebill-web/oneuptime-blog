@@ -18,6 +18,7 @@ Quadlet `.kube` files point to Kubernetes YAML manifests and run them with `podm
 
 ```ini
 # ~/.config/containers/systemd/webapp.kube
+
 [Kube]
 Yaml=webapp.yaml
 

@@ -31,6 +31,7 @@ The most common setup is an HTTPS credential template for an entire Git organiza
 
 ```yaml
 # github-org-cred-template.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

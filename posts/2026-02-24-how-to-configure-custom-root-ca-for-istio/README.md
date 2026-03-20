@@ -34,6 +34,7 @@ Here is how to generate them:
 
 ```bash
 # Create a directory for the certificates
+
 mkdir -p istio-certs && cd istio-certs
 
 # Generate the root CA private key

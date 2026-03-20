@@ -1236,6 +1236,7 @@ ScalaTest integrates with sbt, Maven, and Gradle. Here are common sbt commands f
 
 ```bash
 # Run all tests
+
 sbt test
 
 # Run a specific test class

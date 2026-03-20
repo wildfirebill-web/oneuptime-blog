@@ -20,6 +20,7 @@ The build context is the directory you pass to `podman build`. All files in it b
 
 ```bash
 # The dot (.) is the build context
+
 podman build -t myapp:latest .
 
 # See how large your build context is

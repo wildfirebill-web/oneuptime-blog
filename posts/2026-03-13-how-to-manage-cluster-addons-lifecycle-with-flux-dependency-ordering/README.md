@@ -73,6 +73,7 @@ Define the Helm repositories first since all HelmReleases depend on them.
 
 ```yaml
 # infrastructure/sources/helm-repos.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

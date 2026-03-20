@@ -1,4 +1,4 @@
-# How to Set Up Per-Group Access Control in Portainer
+# How to Set Up Per-Group Access Control in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Use Portainer environment groups to assign access policies to multi
 
 ## Introduction
 
-When you have many environments, configuring access policies one-by-one becomes tedious. Portainer supports grouping environments and assigning access at the group level — changes to a group's access policies apply to all environments in that group. This guide covers environment groups and group-level access control.
+When you have many environments, configuring access policies one-by-one becomes tedious. Portainer supports grouping environments and assigning access at the group level - changes to a group's access policies apply to all environments in that group. This guide covers environment groups and group-level access control.
 
 ## What Are Environment Groups?
 
@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create a group
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -77,7 +78,7 @@ When an environment belongs to a group:
 - Individual environment access policies can add to (not replace) the group's policies
 - The most permissive role wins when there are overlapping assignments
 
-```
+```text
 Group "Production" → DevOps team (Standard User)
   ├── Environment A → inherits DevOps (Standard User)
   │                → also has QA team (Helpdesk) directly
@@ -94,7 +95,7 @@ Group "Production" → DevOps team (Standard User)
 
 ### By Environment Type
 
-```
+```text
 Production Group:
   - All production environments
   - DevOps team: Standard User
@@ -114,7 +115,7 @@ Development Group:
 
 ### By Geographic Region
 
-```
+```text
 US-East Group:
   - us-east-prod, us-east-staging, us-east-dev
   - US Operations team: Standard User

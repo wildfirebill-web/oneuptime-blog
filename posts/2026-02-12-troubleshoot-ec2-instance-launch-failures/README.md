@@ -46,6 +46,7 @@ Try a different AZ:
 
 ```bash
 # List available AZs and try each one
+
 for AZ in us-east-1a us-east-1b us-east-1c us-east-1d us-east-1e us-east-1f; do
   echo "Trying $AZ..."
   aws ec2 run-instances \

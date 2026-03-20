@@ -14,6 +14,7 @@ A forward proxy sits between your internal network and the internet, giving you 
 
 ```yaml
 # roles/squid/defaults/main.yml - Squid proxy configuration
+
 squid_port: 3128
 squid_cache_dir: /var/spool/squid
 squid_cache_size_mb: 10000

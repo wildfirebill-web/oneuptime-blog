@@ -14,6 +14,7 @@ BBR (Bottleneck Bandwidth and RTT) is Google's TCP congestion control algorithm,
 
 ```bash
 # Check kernel version (BBR requires 4.9+)
+
 uname -r
 # Should show 4.9 or higher
 
@@ -56,7 +57,7 @@ echo "tcp_bbr" >> /etc/modules
 
 ## Why BBR Needs the fq Qdisc
 
-BBR controls sending rate through pacing — sending packets at a calculated rate rather than bursting them all at once. The `fq` (Fair Queue) qdisc implements per-flow pacing at the kernel level:
+BBR controls sending rate through pacing - sending packets at a calculated rate rather than bursting them all at once. The `fq` (Fair Queue) qdisc implements per-flow pacing at the kernel level:
 
 ```bash
 # Check current qdisc on each interface
@@ -107,7 +108,7 @@ tc qdisc del dev eth0 root
 
 ## When BBR Excels vs When to Stick with CUBIC
 
-```
+```text
 Use BBR for:
 - WAN links with RTT > 50ms
 - Satellite links (300-600ms RTT)
@@ -122,4 +123,4 @@ Keep CUBIC for:
 
 ## Conclusion
 
-BBR is now the recommended congestion control for most internet-facing services. Enabling it takes two sysctl settings: `tcp_congestion_control=bbr` and `default_qdisc=fq`. The performance improvement is most dramatic on high-latency or lossy paths — expect 3-10× throughput improvement compared to CUBIC on satellite or transcontinental links.
+BBR is now the recommended congestion control for most internet-facing services. Enabling it takes two sysctl settings: `tcp_congestion_control=bbr` and `default_qdisc=fq`. The performance improvement is most dramatic on high-latency or lossy paths - expect 3-10× throughput improvement compared to CUBIC on satellite or transcontinental links.

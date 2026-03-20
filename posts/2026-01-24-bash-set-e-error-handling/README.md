@@ -40,6 +40,7 @@ echo "This will NOT print because 'false' failed"
 #!/bin/bash
 
 # Common combination for strict error handling
+
 set -euo pipefail
 
 # -e: Exit on error

@@ -1,8 +1,8 @@
-# How to Configure Rancher HA with NGINX
+# How to Configure Rancher HA with NGINX - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, NGINX, High Availability, Load Balancer, SSL, Stream Module
+Tags: Rancher, Nginx, High Availability, Load Balancer, SSL, Stream Module
 
 Description: Use NGINX as a TCP/SSL load balancer for Rancher HA with stream module configuration, upstream health checks, and Kubernetes API proxying.
 
@@ -20,6 +20,7 @@ NGINX's stream module provides TCP load balancing capabilities ideal for Rancher
 
 ```bash
 # Check NGINX stream module is compiled in
+
 nginx -V 2>&1 | grep stream
 
 # Install NGINX with stream support (Ubuntu)

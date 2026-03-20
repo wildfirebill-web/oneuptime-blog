@@ -47,6 +47,7 @@ Add Ecto and your database adapter to your `mix.exs` file:
 
 ```elixir
 # mix.exs
+
 defp deps do
   [
     # Ecto with SQL support

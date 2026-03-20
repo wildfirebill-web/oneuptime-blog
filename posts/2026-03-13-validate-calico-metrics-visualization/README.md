@@ -17,6 +17,7 @@ Validating Calico dashboards goes beyond confirming they load - it requires veri
 ```bash
 #!/bin/bash
 # validate-calico-dashboards.sh
+
 GRAFANA_URL="${GRAFANA_URL:-http://grafana.monitoring.svc:3000}"
 GRAFANA_TOKEN="${GRAFANA_TOKEN}"
 PROMETHEUS_URL="${PROMETHEUS_URL:-http://prometheus-operated.monitoring.svc:9090}"

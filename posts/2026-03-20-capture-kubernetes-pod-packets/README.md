@@ -16,6 +16,7 @@ Capturing packets from a running Kubernetes pod is essential for debugging netwo
 
 ```bash
 # If the pod has tcpdump installed
+
 kubectl exec -it my-pod -- tcpdump -i eth0 -w /tmp/capture.pcap
 
 # Copy the capture file to your local machine

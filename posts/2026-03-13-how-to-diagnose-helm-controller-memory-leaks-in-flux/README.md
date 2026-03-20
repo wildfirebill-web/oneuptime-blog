@@ -85,6 +85,7 @@ Clean up excess historical secrets:
 
 ```bash
 # List all revision secrets for a specific release
+
 kubectl get secrets -n <namespace> -l name=<release-name>,owner=helm --sort-by=.metadata.creationTimestamp
 
 # Delete old revisions, keeping only the latest few

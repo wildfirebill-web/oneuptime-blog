@@ -28,6 +28,7 @@ Start by verifying basic connectivity before L7 policy:
 
 ```bash
 # Check pod status
+
 kubectl get pods -n cilium-parser-test -o wide
 
 # Check Cilium endpoint status

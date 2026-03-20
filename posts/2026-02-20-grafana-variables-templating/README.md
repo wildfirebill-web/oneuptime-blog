@@ -52,6 +52,7 @@ Type: Query
 Data source: Prometheus
 
 # This query returns all unique namespace label values
+
 Query: label_values(kube_pod_info, namespace)
 
 # Sort alphabetically

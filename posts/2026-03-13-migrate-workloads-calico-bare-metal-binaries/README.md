@@ -80,6 +80,7 @@ For each node:
 
 ```bash
 # Cordon the node
+
 kubectl cordon <node-name>
 kubectl drain <node-name> --ignore-daemonsets --delete-emptydir-data
 

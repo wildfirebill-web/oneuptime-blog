@@ -32,6 +32,7 @@ For two EKS clusters in the same AWS account:
 
 ```hcl
 # vpc-peering-eks.tf
+
 resource "aws_vpc_peering_connection" "eks_peering" {
   vpc_id      = aws_vpc.eks_cluster_1.id
   peer_vpc_id = aws_vpc.eks_cluster_2.id

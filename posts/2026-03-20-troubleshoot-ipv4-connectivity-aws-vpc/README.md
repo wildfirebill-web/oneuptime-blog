@@ -20,10 +20,11 @@ aws ec2 describe-instances \
 
 ## Step 2: Check Security Groups
 
-Security groups are stateful — verify both inbound and outbound rules:
+Security groups are stateful - verify both inbound and outbound rules:
 
 ```bash
 # List security groups for instance
+
 aws ec2 describe-instances \
   --instance-ids i-xxxxxxxxxxxxxxxxx \
   --query 'Reservations[0].Instances[0].SecurityGroups'
@@ -63,7 +64,7 @@ Ensure the IGW is attached to your VPC and state is `available`.
 
 ## Step 5: Check Network ACLs
 
-NACLs are stateless — both inbound and outbound rules must allow traffic:
+NACLs are stateless - both inbound and outbound rules must allow traffic:
 
 ```bash
 aws ec2 describe-network-acls \
@@ -94,7 +95,7 @@ aws ec2 create-flow-logs \
 
 Query rejected traffic in CloudWatch Logs Insights:
 
-```
+```text
 fields @timestamp, srcAddr, dstAddr, dstPort, action
 | filter action = "REJECT"
 | sort @timestamp desc

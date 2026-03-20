@@ -31,6 +31,7 @@ Configure `ansible.cfg` to load your plugin:
 
 ```ini
 # ansible.cfg
+
 [defaults]
 strategy_plugins = ./strategy_plugins
 strategy = canary

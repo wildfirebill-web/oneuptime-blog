@@ -27,6 +27,7 @@ Start with a robust backup script that creates snapshots and uploads to S3:
 set -e
 
 # Configuration
+
 ETCD_ENDPOINTS="https://127.0.0.1:2379"
 ETCD_CACERT="/etc/kubernetes/pki/etcd/ca.crt"
 ETCD_CERT="/etc/kubernetes/pki/etcd/server.crt"

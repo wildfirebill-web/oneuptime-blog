@@ -33,6 +33,7 @@ Here is a Cloud Build configuration that starts the proxy as a background step:
 
 ```yaml
 # cloudbuild.yaml - Main build configuration with Cloud SQL Proxy
+
 steps:
   # Step 1: Start Cloud SQL Auth Proxy in the background
   - name: 'gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0'

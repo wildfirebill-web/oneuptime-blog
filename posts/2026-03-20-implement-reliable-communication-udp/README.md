@@ -25,6 +25,7 @@ TIMEOUT = 0.5  # 500ms retransmit timeout
 MAX_RETRIES = 5
 
 # Packet format: 4-byte seq_num + 1-byte flags + data
+
 # Flags: 0x01 = ACK, 0x02 = DATA
 HEADER_FORMAT = '!IB'  # network byte order: uint32 seq_num, uint8 flags
 HEADER_SIZE = struct.calcsize(HEADER_FORMAT)
@@ -140,7 +141,7 @@ class SlidingWindowSender:
 
 ## When to Use Custom Reliable UDP vs TCP
 
-```
+```text
 Use custom reliable UDP when:
   ✓ You need selective reliability (some messages need ACK, others don't)
   ✓ You want message-level framing (not byte-stream like TCP)
@@ -156,4 +157,4 @@ Use TCP or QUIC when:
 
 ## Conclusion
 
-Reliable UDP is not about reimplementing TCP — it is about implementing exactly the reliability your application needs. Stop-and-wait works for low-rate request/response. Sliding window enables higher throughput. Selective acknowledgment (only ACK important packets) works for game state. The key advantage over TCP is granular control: you decide which messages need reliability, how long to wait for ACKs, and how many times to retry before giving up.
+Reliable UDP is not about reimplementing TCP - it is about implementing exactly the reliability your application needs. Stop-and-wait works for low-rate request/response. Sliding window enables higher throughput. Selective acknowledgment (only ACK important packets) works for game state. The key advantage over TCP is granular control: you decide which messages need reliability, how long to wait for ACKs, and how many times to retry before giving up.

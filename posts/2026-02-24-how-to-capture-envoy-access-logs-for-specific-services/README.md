@@ -121,6 +121,7 @@ Some other useful filter expressions:
 
 ```yaml
 # Only log slow requests (over 1 second)
+
 filter:
   expression: "duration > duration('1s')"
 

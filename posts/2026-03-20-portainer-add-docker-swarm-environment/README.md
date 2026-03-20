@@ -1,4 +1,4 @@
-# How to Add a Docker Swarm Environment to Portainer
+# How to Add a Docker Swarm Environment to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ This is the recommended approach. Portainer runs as a Swarm service with access 
 
 ```yaml
 # portainer-swarm-stack.yml
+
 version: "3.8"
 
 services:
@@ -154,17 +155,17 @@ for env in json.load(sys.stdin):
 Once the Swarm environment is added:
 
 **Services**: Deploy and scale Docker Swarm services
-```
+```text
 Swarm → Services → Add service
 ```
 
 **Stacks**: Deploy multi-service applications as a stack
-```
+```text
 Stacks → Add stack → (paste docker-compose.yml with version "3")
 ```
 
 **Nodes**: View and manage Swarm nodes
-```
+```text
 Swarm → Nodes → view manager/worker status
 ```
 

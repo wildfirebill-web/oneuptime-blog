@@ -47,6 +47,7 @@ HNSW is the go-to index for most production workloads. It builds a multi-layer g
 
 ```python
 # Configuring HNSW index in Milvus
+
 # Higher M = better recall, more memory, slower builds
 # Higher ef_construction = better recall, slower builds
 

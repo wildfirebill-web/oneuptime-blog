@@ -29,6 +29,7 @@ The `terraform_remote_state` data source reads outputs from another Terraform co
 
 ```hcl
 # data.tf - Read outputs from the networking team's state
+
 data "terraform_remote_state" "networking" {
   backend = "s3"
 

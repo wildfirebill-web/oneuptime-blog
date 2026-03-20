@@ -50,6 +50,7 @@ ping6 -c 3 "${RADIUS_IPV6}" && echo "PASS: IPv6 reachable" || echo "FAIL: IPv6 u
 echo ""
 echo "2. UDP port test:"
 # netcat UDP test
+
 nc -6 -z -u -w3 "${RADIUS_IPV6}" "${RADIUS_PORT}" 2>/dev/null
 echo "RADIUS UDP port status: $?"
 
@@ -107,7 +108,7 @@ systemctl reload freeradius
 ## Step 4: Diagnose Missing IPv6 Attributes
 
 ```bash
-# Test with full debug — check what attributes are returned
+# Test with full debug - check what attributes are returned
 radclient -x [2001:db8::radius]:1812 auth testing123 << 'EOF' | grep -i "ipv6\|prefix\|pool"
 User-Name = "alice"
 User-Password = "secret"
@@ -153,7 +154,7 @@ tshark -r /tmp/radius-capture.pcap -Y "radius" -V 2>/dev/null | \
 # Fix: Add NAS to clients.conf or verify NAS source IP
 
 # Error: "Invalid user (Home Server)"
-# Fix: Check User-Name format — ensure no domain mangling
+# Fix: Check User-Name format - ensure no domain mangling
 
 # Error: "mschap: FAILED: No NT-Password"
 # Fix: For PEAP/MSCHAPv2, store NT-Password in users/SQL
@@ -178,7 +179,7 @@ ip6tables -A INPUT -p udp --dport 1813 -j ACCEPT
 
 ```bash
 #!/bin/bash
-# diagnose-radius-ipv6.sh — Full diagnostic report
+# diagnose-radius-ipv6.sh - Full diagnostic report
 
 RADIUS="2001:db8::radius"
 SECRET="testing123"

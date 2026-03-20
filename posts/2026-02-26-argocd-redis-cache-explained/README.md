@@ -111,6 +111,7 @@ ArgoCD installs a single Redis instance as a Deployment:
 
 ```bash
 # Check the Redis deployment
+
 kubectl get deployment argocd-redis -n argocd
 
 # Check the Redis service

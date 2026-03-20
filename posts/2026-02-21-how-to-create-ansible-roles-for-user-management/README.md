@@ -45,6 +45,7 @@ roles/user_management/
 
 ```yaml
 # roles/user_management/defaults/main.yml
+
 # Users to manage
 um_users: []
 # Example:

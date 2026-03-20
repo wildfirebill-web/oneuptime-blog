@@ -206,6 +206,7 @@ Mark services that should be discoverable from other clusters:
 
 ```yaml
 # In Cluster B - export the payment service
+
 apiVersion: multicluster.x-k8s.io/v1alpha1
 kind: ServiceExport
 metadata:

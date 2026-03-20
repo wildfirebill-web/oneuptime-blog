@@ -1,4 +1,4 @@
-# How to Reference Local Values in OpenTofu Resources
+# How to Reference Local Values in OpenTofu Resources - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to define local values and reference them in resource blo
 
 ---
 
-Local values are referenced using the `local.<name>` syntax — with `local` (singular) as the prefix, not `locals`. Once defined in a `locals` block, they're available throughout the entire module in resources, data sources, outputs, and other local expressions.
+Local values are referenced using the `local.<name>` syntax - with `local` (singular) as the prefix, not `locals`. Once defined in a `locals` block, they're available throughout the entire module in resources, data sources, outputs, and other local expressions.
 
 ---
 
@@ -16,6 +16,7 @@ Local values are referenced using the `local.<name>` syntax — with `local` (si
 
 ```hcl
 # Define locals in a locals block
+
 locals {
   environment = var.environment
   name_prefix = "${var.project}-${var.environment}"
@@ -142,7 +143,7 @@ output "tags" {
 
 ```hcl
 locals {
-  # Locals can reference other locals (but not themselves — no cycles)
+  # Locals can reference other locals (but not themselves - no cycles)
   base_name    = "${var.project}-${var.environment}"
   full_name    = "${local.base_name}-${var.component}"
   s3_key_prefix = "${local.full_name}/data"
@@ -156,4 +157,4 @@ locals {
 
 ## Summary
 
-Reference local values with `local.<name>` (singular prefix) throughout your module — in resources, data sources, outputs, and other locals. Locals can reference other locals as long as there are no circular references. Use the `tofu console` to quickly check what a local expression evaluates to during development: `> local.name_prefix`.
+Reference local values with `local.<name>` (singular prefix) throughout your module - in resources, data sources, outputs, and other locals. Locals can reference other locals as long as there are no circular references. Use the `tofu console` to quickly check what a local expression evaluates to during development: `> local.name_prefix`.

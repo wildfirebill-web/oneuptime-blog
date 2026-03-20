@@ -31,6 +31,7 @@ Add Sidekiq and Redis to your Gemfile:
 
 ```ruby
 # Gemfile
+
 gem 'sidekiq'          # Background job processing
 gem 'sidekiq-cron'     # Scheduled/recurring jobs
 gem 'redis', '>= 4.0'  # Redis client

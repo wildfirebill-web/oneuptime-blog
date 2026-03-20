@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, mynetworks, IPv4, SMTP Relay, Trusted Networks, Email
+Tags: Postfix, Mynetworks, IPv4, SMTP Relay, Trusted Networks, Email
 
 Description: Configure Postfix mynetworks to define trusted IPv4 subnets that are allowed to relay mail without authentication, controlling which servers can use your SMTP relay.
 
@@ -16,6 +16,7 @@ Description: Configure Postfix mynetworks to define trusted IPv4 subnets that ar
 # /etc/postfix/main.cf
 
 # Only allow localhost and specific trusted subnets
+
 mynetworks = 127.0.0.0/8, 10.0.0.0/8, 192.168.1.0/24
 
 # Or list specific hosts only
@@ -35,7 +36,7 @@ Alternative to explicit `mynetworks`:
 # Let Postfix auto-detect local networks
 mynetworks_style = subnet   # Trust all IPs on same subnet as server
 # mynetworks_style = host     # Trust only 127.0.0.1
-# mynetworks_style = class    # Trust by IP class (A/B/C) — avoid this
+# mynetworks_style = class    # Trust by IP class (A/B/C) - avoid this
 
 # Or override auto-detection with explicit list:
 mynetworks = 127.0.0.0/8 [::1]/128
@@ -119,4 +120,4 @@ sudo tail -f /var/log/mail.log | grep "relay access\|NOQUEUE"
 
 ## Conclusion
 
-`mynetworks` defines which IPv4 addresses can relay mail through Postfix without authentication. Keep it minimal—`127.0.0.0/8` plus your internal network ranges. Always test from an external IP to confirm relay is rejected, and combine with `permit_sasl_authenticated` for authenticated users who may connect from outside trusted networks. Running an open relay results in blacklisting and mail delivery failures.
+`mynetworks` defines which IPv4 addresses can relay mail through Postfix without authentication. Keep it minimal-`127.0.0.0/8` plus your internal network ranges. Always test from an external IP to confirm relay is rejected, and combine with `permit_sasl_authenticated` for authenticated users who may connect from outside trusted networks. Running an open relay results in blacklisting and mail delivery failures.

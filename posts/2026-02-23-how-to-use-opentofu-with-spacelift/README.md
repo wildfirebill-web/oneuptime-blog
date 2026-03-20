@@ -54,6 +54,7 @@ You can also create stacks programmatically using the Spacelift Terraform provid
 
 ```hcl
 # Configure the Spacelift provider
+
 terraform {
   required_providers {
     spacelift = {

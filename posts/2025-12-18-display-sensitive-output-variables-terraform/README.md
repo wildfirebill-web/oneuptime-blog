@@ -14,6 +14,7 @@ When you mark an output as sensitive, Terraform redacts its value in the CLI out
 
 ```hcl
 # outputs.tf
+
 output "database_password" {
   value       = random_password.db_password.result
   description = "Generated database password"

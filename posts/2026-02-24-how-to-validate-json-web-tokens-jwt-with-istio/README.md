@@ -166,6 +166,7 @@ Generate a test token using a tool like `jwt.io` or the `jwt` CLI, then test:
 
 ```bash
 # Valid token
+
 curl -s -o /dev/null -w "%{http_code}" \
   -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtleS0xIn0.eyJpc3MiOiJodHRwczovL2F1dGgubXljb21wYW55LmNvbSIsInN1YiI6InVzZXIxIiwiYXVkIjoiYXBpLm15Y29tcGFueS5jb20iLCJleHAiOjk5OTk5OTk5OTl9.signature" \
   http://api-gateway.api/endpoint

@@ -1,14 +1,14 @@
-# How to Deploy Nginx Proxy Manager as a Portainer Stack
+# How to Deploy Nginx Proxy Manager as a Portainer Stack - Npm
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Nginx Proxy Manager, Stack, Docker Compose, Deployment
+Tags: Portainer, Nginx Proxy Manager, Stacks, Docker Compose, Deployment
 
 Description: Learn how to deploy Nginx Proxy Manager as a Portainer stack with both SQLite and MariaDB backends, manage it through the Portainer UI, and integrate it with other stacks.
 
 ## Introduction
 
-Deploying Nginx Proxy Manager as a Portainer stack brings NPM under Portainer's lifecycle management — you can deploy, update, and monitor NPM through the same interface you use for all other containers. This creates a cohesive infrastructure where Portainer manages everything, including the proxy that sits in front of it.
+Deploying Nginx Proxy Manager as a Portainer stack brings NPM under Portainer's lifecycle management - you can deploy, update, and monitor NPM through the same interface you use for all other containers. This creates a cohesive infrastructure where Portainer manages everything, including the proxy that sits in front of it.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Navigate to **Stacks** → **Add Stack** in Portainer.
 
 Name the stack: `nginx-proxy-manager`
 
-**Option A: SQLite Backend (Simpler — recommended for single-host)**
+**Option A: SQLite Backend (Simpler - recommended for single-host)**
 
 ```yaml
 version: "3.8"
@@ -136,13 +136,14 @@ Other stacks that need NPM to proxy them should join the `proxy` network:
 
 ```yaml
 # In any other Portainer stack
+
 version: "3.8"
 
 services:
   myapp:
     image: myapp:latest
     networks:
-      - proxy    # Joins the proxy network — NPM can forward to it
+      - proxy    # Joins the proxy network - NPM can forward to it
 
 networks:
   proxy:
@@ -154,17 +155,17 @@ networks:
 
 After deploying, Portainer shows the NPM stack in the Stacks list with:
 
-```
+```text
 Stack: nginx-proxy-manager
 Services: npm (running), npm-db (running)
 Status: Running
 
 Actions available:
-  Start/Stop — Bring NPM down for maintenance
-  Update — Pull new image version
-  Edit — Modify compose file inline
-  Logs — View NPM and MariaDB logs
-  Console — Access container shell for debugging
+  Start/Stop - Bring NPM down for maintenance
+  Update - Pull new image version
+  Edit - Modify compose file inline
+  Logs - View NPM and MariaDB logs
+  Console - Access container shell for debugging
 ```
 
 ## Step 5: Update NPM Through Portainer

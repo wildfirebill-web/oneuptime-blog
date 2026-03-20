@@ -22,6 +22,7 @@ Let's start by creating a custom topic.
 
 ```bash
 # Create a resource group for our Event Grid resources
+
 az group create --name rg-events --location eastus2
 
 # Create a custom topic

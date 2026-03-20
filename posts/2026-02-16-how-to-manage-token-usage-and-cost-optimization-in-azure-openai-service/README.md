@@ -66,6 +66,7 @@ response = client.chat.completions.create(
 )
 
 # Extract token usage from the response
+
 usage = response.usage
 print(f"Prompt tokens: {usage.prompt_tokens}")
 print(f"Completion tokens: {usage.completion_tokens}")

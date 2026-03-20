@@ -127,6 +127,7 @@ Build the Wasm module:
 
 ```bash
 # Add the wasm32 target
+
 rustup target add wasm32-wasip1
 
 # Build

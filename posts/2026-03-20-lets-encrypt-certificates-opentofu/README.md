@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     acme = {
@@ -38,7 +39,7 @@ terraform {
   }
 }
 
-# Use staging for testing — switch to production URL for real certs
+# Use staging for testing - switch to production URL for real certs
 provider "acme" {
   server_url = var.environment == "production" ? (
     "https://acme-v02.api.letsencrypt.org/directory"
@@ -169,15 +170,15 @@ resource "kubernetes_secret" "tls" {
 
 ```hcl
 output "certificate_expiry" {
-  description = "Certificate expiry date — run tofu apply to renew when approaching"
+  description = "Certificate expiry date - run tofu apply to renew when approaching"
   value       = acme_certificate.main.certificate_not_after
 }
 ```
 
 ## Best Practices
 
-- Always test with the Let's Encrypt staging server (`acme-staging-v02`) before switching to production — staging has much higher rate limits and prevents hitting production rate limits during development.
-- Use wildcard certificates (`*.example.com`) to cover all subdomains with a single certificate — wildcard certs require DNS-01 challenge (not HTTP-01), which is why the DNS integration is important.
-- Set `min_days_remaining = 30` — Let's Encrypt certificates are valid for 90 days, so renewing at 30 days gives a comfortable buffer.
-- Store the full chain (`certificate_pem + issuer_pem`) when importing to ACM or Kubernetes — incomplete chains cause TLS warnings in some clients.
+- Always test with the Let's Encrypt staging server (`acme-staging-v02`) before switching to production - staging has much higher rate limits and prevents hitting production rate limits during development.
+- Use wildcard certificates (`*.example.com`) to cover all subdomains with a single certificate - wildcard certs require DNS-01 challenge (not HTTP-01), which is why the DNS integration is important.
+- Set `min_days_remaining = 30` - Let's Encrypt certificates are valid for 90 days, so renewing at 30 days gives a comfortable buffer.
+- Store the full chain (`certificate_pem + issuer_pem`) when importing to ACM or Kubernetes - incomplete chains cause TLS warnings in some clients.
 - Run `tofu apply` on a schedule (e.g., weekly via CI/CD) so certificate renewal is detected and applied automatically before expiry.

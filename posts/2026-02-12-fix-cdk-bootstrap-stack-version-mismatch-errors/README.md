@@ -25,6 +25,7 @@ Each version of CDK may require a minimum bootstrap version. When your CDK app r
 
 ```bash
 # Check the bootstrap version in your account
+
 aws ssm get-parameter \
     --name /cdk-bootstrap/hnb659fds/version \
     --query 'Parameter.Value'

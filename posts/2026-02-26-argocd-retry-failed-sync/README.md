@@ -18,6 +18,7 @@ When an ArgoCD sync fails, the application enters a specific state. The sync sta
 
 ```bash
 # Check the status of a failed sync
+
 argocd app get my-app
 
 # Output shows something like:
@@ -119,7 +120,7 @@ argocd app sync my-app
 
 But if the image tag does not exist, retrying will not help. Fix the image reference in Git first.
 
-### Resource Quota Exceeded
+Resource Quota Exceeded
 
 ```bash
 # Check resource quotas

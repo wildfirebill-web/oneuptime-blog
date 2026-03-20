@@ -16,6 +16,7 @@ Check current Portainer memory consumption:
 
 ```bash
 # Real-time memory stats
+
 docker stats portainer --no-stream --format "{{.MemUsage}}"
 
 # Detailed memory breakdown
@@ -24,10 +25,10 @@ docker exec -it portainer cat /proc/1/status | grep -E "VmRSS|VmSwap|VmPeak"
 
 The main memory consumers in Portainer are:
 
-1. **DockerSnapshotRaw** — raw Docker API responses cached in BoltDB
-2. **Go runtime** — garbage collector heap
-3. **Active HTTP connections** — WebSocket sessions for logs/console
-4. **BoltDB mmap** — memory-mapped database file
+1. **DockerSnapshotRaw** - raw Docker API responses cached in BoltDB
+2. **Go runtime** - garbage collector heap
+3. **Active HTTP connections** - WebSocket sessions for logs/console
+4. **BoltDB mmap** - memory-mapped database file
 
 ## Step 1: Increase Snapshot Interval
 

@@ -22,6 +22,7 @@ Store sensitive data in Docker Secrets:
 
 ```bash
 # Create Let's Encrypt account credentials as a secret
+
 echo "admin@example.com" | docker secret create acme_email -
 
 # Create an empty acme.json for certificate storage

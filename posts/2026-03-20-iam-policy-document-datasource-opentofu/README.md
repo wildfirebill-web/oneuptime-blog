@@ -19,6 +19,7 @@ The `aws_iam_policy_document` data source generates IAM policy JSON from HCL blo
 
 ```hcl
 # Construct an IAM policy document using HCL
+
 data "aws_iam_policy_document" "s3_access" {
   statement {
     sid    = "AllowS3BucketOperations"

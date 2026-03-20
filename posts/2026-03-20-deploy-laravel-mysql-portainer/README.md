@@ -93,6 +93,7 @@ volumes:
 
 ```nginx
 # nginx.conf
+
 server {
     listen 80;
     root /var/www/html/public;

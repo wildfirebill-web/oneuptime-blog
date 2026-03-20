@@ -48,7 +48,7 @@ volumes:
 
 In the Portainer stack editor, under **Environment Variables**:
 
-```
+```text
 MYSQL_ROOT_PASSWORD = a-very-strong-root-password
 MYSQL_DATABASE = myapp
 MYSQL_USER = appuser
@@ -64,6 +64,7 @@ Create `mysql-conf/custom.cnf`:
 ```ini
 [mysqld]
 # InnoDB settings
+
 innodb_buffer_pool_size = 256M
 innodb_log_file_size = 64M
 innodb_flush_log_at_trx_commit = 2

@@ -26,6 +26,7 @@ Ansible handles all of these scenarios with its `community.docker.docker_image` 
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Docker Python SDK

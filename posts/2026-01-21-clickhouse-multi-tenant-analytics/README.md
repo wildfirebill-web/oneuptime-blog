@@ -153,7 +153,7 @@ WHERE tenant_id = 123;
 GRANT SELECT ON tenant_123_events TO tenant_123_user;
 ```
 
-## Resource Quotas and Limits
+Resource Quotas and Limits
 
 ### Setting User Quotas
 
@@ -230,6 +230,7 @@ ALTER USER tenant_123 SETTINGS PROFILE 'tenant_standard_profile';
 
 ```python
 # Python example of query routing
+
 import clickhouse_driver
 
 class TenantQueryRouter:
@@ -388,7 +389,7 @@ GROUP BY tenant_id
 ORDER BY total_queries DESC;
 ```
 
-### Resource Consumption Dashboard
+Resource Consumption Dashboard
 
 ```sql
 -- Current running queries per tenant

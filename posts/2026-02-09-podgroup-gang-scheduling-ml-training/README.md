@@ -29,6 +29,7 @@ Gang scheduling requires the Kubernetes scheduler-plugins project. Install it us
 
 ```bash
 # Add the scheduler-plugins Helm repository
+
 helm repo add scheduler-plugins https://kubernetes-sigs.github.io/scheduler-plugins
 helm repo update
 

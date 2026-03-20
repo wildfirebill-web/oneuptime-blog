@@ -50,6 +50,7 @@ Each region runs a full agent-gateway collector stack. The gateway is configured
 
 ```yaml
 # region-a-gateway-config.yaml
+
 # Gateway collector for Region A (US-East)
 receivers:
   otlp:

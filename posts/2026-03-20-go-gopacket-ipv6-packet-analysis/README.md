@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, gopacket, IPv6, Packet Analysis, Network Security, libpcap
+Tags: Go, Gopacket, IPv6, Packet Analysis, Network Security, Libpcap
 
 Description: Use the Go gopacket library to capture and analyze IPv6 packets from network interfaces for monitoring and security research.
 
@@ -10,6 +10,7 @@ Description: Use the Go gopacket library to capture and analyze IPv6 packets fro
 
 ```bash
 # Install gopacket and libpcap dependency
+
 go get github.com/google/gopacket
 go get github.com/google/gopacket/pcap
 

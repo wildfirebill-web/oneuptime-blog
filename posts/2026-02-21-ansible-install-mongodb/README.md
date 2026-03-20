@@ -31,6 +31,7 @@ roles/mongodb_install/
 
 ```yaml
 # roles/mongodb_install/defaults/main.yml
+
 # Default settings for MongoDB installation
 ---
 mongodb_version: "7.0"

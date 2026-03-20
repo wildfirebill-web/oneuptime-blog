@@ -1,4 +1,4 @@
-# How to Configure Rancher Server for 1000+ Clusters
+# How to Configure Rancher Server for 1000+ Clusters - Server
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ At 1000+ clusters, the embedded database cannot handle the load:
 
 ```yaml
 # rancher-values.yaml
+
 extraEnv:
   - name: CATTLE_DB_CATTLE_MYSQL_HOST
     value: "postgres-ha.databases.svc.cluster.local"

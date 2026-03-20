@@ -8,7 +8,7 @@ Description: Implement WebSocket ping/pong heartbeat mechanisms over IPv4 connec
 
 ## Introduction
 
-WebSocket connections can silently die when a network path becomes unreachable — firewalls drop idle connections, NAT mappings expire, or intermediate routers fail. A heartbeat (ping/pong) mechanism detects these dead connections before your application tries to use them.
+WebSocket connections can silently die when a network path becomes unreachable - firewalls drop idle connections, NAT mappings expire, or intermediate routers fail. A heartbeat (ping/pong) mechanism detects these dead connections before your application tries to use them.
 
 ## WebSocket Ping/Pong Protocol
 
@@ -66,7 +66,7 @@ wss.on('connection', (ws, req) => {
 const heartbeatTimer = setInterval(() => {
   wss.clients.forEach((ws) => {
     if (!ws.isAlive) {
-      // No pong received since last ping — terminate the connection
+      // No pong received since last ping - terminate the connection
       console.log('Terminating dead connection (no pong received)');
       ws.terminate();
       return;
@@ -109,14 +109,14 @@ function createConnection() {
   });
   
   ws.on('ping', () => {
-    // Automatically handled by the ws library — sends pong immediately
-    console.log('Received ping from server — pong sent automatically');
+    // Automatically handled by the ws library - sends pong immediately
+    console.log('Received ping from server - pong sent automatically');
   });
   
   ws.on('pong', () => {
-    // Our ping was answered — clear the pong timeout
+    // Our ping was answered - clear the pong timeout
     clearTimeout(pongTimeout);
-    console.log('Pong received from server — connection is alive');
+    console.log('Pong received from server - connection is alive');
   });
   
   ws.on('message', (data) => {
@@ -144,7 +144,7 @@ function createConnection() {
         
         // If pong is not received within timeout, close the connection
         pongTimeout = setTimeout(() => {
-          console.log('Pong timeout — connection appears dead, closing');
+          console.log('Pong timeout - connection appears dead, closing');
           ws.terminate();
         }, PONG_TIMEOUT);
       }
@@ -208,7 +208,7 @@ class HeartbeatWebSocket {
         this.ws.send('__ping__');
         
         this.pongTimeout = setTimeout(() => {
-          console.log('Heartbeat failed — reconnecting');
+          console.log('Heartbeat failed - reconnecting');
           this.ws.close();
         }, 5000);
       }

@@ -41,6 +41,7 @@ Network Watcher is automatically enabled for each Azure region when you create o
 
 ```bash
 # List Network Watcher instances
+
 az network watcher list --output table
 ```
 

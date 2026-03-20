@@ -21,7 +21,7 @@ graph LR
 
 In your GitHub repository, go to **Settings > Secrets and variables > Actions** and add:
 
-```
+```text
 REGISTRY_URL=registry.mycompany.com
 REGISTRY_USERNAME=myuser
 REGISTRY_PASSWORD=mypassword
@@ -32,6 +32,7 @@ PORTAINER_WEBHOOK_URL=https://portainer.mycompany.com/api/webhooks/abc123...
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Build and Deploy
 
 on:

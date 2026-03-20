@@ -28,6 +28,7 @@ The most direct way to discover volumes is through the `talosctl` command:
 
 ```bash
 # List all volumes on a node
+
 talosctl get volumes --nodes 192.168.1.10
 ```
 

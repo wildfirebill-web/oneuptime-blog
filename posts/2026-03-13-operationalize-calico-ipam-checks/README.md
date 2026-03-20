@@ -42,6 +42,7 @@ If growing >5%/week: escalate to capacity planning review
 ```bash
 #!/bin/bash
 # add-calico-ippool.sh
+
 # Run after peer/network team approves new CIDR
 
 NEW_CIDR="${1:?Provide new CIDR e.g. 10.250.0.0/16}"

@@ -16,6 +16,7 @@ Open the dashboard for any node in your cluster:
 
 ```bash
 # Launch the dashboard for a specific node
+
 talosctl dashboard --nodes <node-ip>
 ```
 

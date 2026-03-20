@@ -33,6 +33,7 @@ The host pool is the core resource. It defines how sessions are distributed and 
 
 ```hcl
 # main.tf
+
 # Deploys Azure Virtual Desktop infrastructure
 
 terraform {

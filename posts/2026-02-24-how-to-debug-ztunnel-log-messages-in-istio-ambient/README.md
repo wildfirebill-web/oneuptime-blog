@@ -16,6 +16,7 @@ ztunnel runs as a DaemonSet in the istio-system namespace. To view logs for a sp
 
 ```bash
 # List all ztunnel pods and their nodes
+
 kubectl get pods -n istio-system -l app=ztunnel -o wide
 
 # View logs for a specific ztunnel pod

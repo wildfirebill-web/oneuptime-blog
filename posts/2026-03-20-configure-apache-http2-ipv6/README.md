@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Apache, HTTP/2, IPv6, Web Server, TLS, Performance, mod_http2
+Tags: Apache, HTTP/2, IPv6, Web Server, TLS, Performance, Mod_http2
 
 Description: Configure Apache HTTP Server with HTTP/2 protocol support on IPv6 interfaces, enabling modern multiplexed connections for improved web performance.
 
@@ -14,6 +14,7 @@ Apache HTTP Server supports HTTP/2 through the `mod_http2` module. Enabling HTTP
 
 ```bash
 # Enable HTTP/2 module
+
 sudo a2enmod http2
 sudo a2enmod ssl
 

@@ -30,6 +30,7 @@ A thorough validation also confirms that the permanent fix is in place and the e
 
 ```bash
 # Baseline check
+
 kubectl get networkpolicy --all-namespaces | grep -v "No resources"
 ```
 

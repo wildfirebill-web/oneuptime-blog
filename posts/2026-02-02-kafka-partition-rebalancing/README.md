@@ -890,6 +890,7 @@ Proper configuration significantly reduces unnecessary rebalances and improves c
 # Consumer configuration for stable consumer groups
 
 # Session and heartbeat settings
+
 session.timeout.ms=45000
 heartbeat.interval.ms=15000
 

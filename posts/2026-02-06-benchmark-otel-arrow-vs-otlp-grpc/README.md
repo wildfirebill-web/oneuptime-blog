@@ -14,6 +14,7 @@ You need two Collector pipelines running side by side: one using standard OTLP a
 
 ```yaml
 # benchmark-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

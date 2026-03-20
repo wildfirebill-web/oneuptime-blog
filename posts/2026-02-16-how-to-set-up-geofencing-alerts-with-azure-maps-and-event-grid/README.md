@@ -28,6 +28,7 @@ Define the geofence as a GeoJSON feature collection. Each feature is a polygon r
 
 ```python
 # create_geofence.py - Upload geofence geometry to Azure Maps
+
 import requests
 import json
 

@@ -149,6 +149,7 @@ EOF
 
 ```bash
 # allowed-client (role=frontend) should succeed
+
 kubectl exec -n gke-policy-test allowed-client -- \
   wget -qO- http://api-svc:8080
 

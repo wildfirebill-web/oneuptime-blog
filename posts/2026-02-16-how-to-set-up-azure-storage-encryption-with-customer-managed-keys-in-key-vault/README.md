@@ -40,6 +40,7 @@ The Key Vault must have soft delete and purge protection enabled. These are requ
 
 ```bash
 # Create a Key Vault with required protections
+
 az keyvault create \
   --name my-storage-cmk-kv \
   --resource-group my-resource-group \

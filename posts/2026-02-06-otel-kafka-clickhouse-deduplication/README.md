@@ -61,6 +61,7 @@ For real-time dedup before data reaches ClickHouse, use a Bloom filter in a cons
 
 ```python
 # kafka_dedup_consumer.py
+
 from pybloom_live import ScalableBloomFilter
 from kafka import KafkaConsumer, KafkaProducer
 import json

@@ -23,6 +23,7 @@ Annotations and labels serve similar purposes but are stored differently and hav
 
 ```bash
 # Labels: runtime metadata visible inside the container
+
 # Annotations: manifest metadata visible at the registry level
 ```
 

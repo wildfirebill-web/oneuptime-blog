@@ -14,6 +14,7 @@ BGP (Border Gateway Protocol) is the routing protocol of the internet. MikroTik 
 
 ```mikrotik
 # Create BGP instance (your ASN)
+
 /routing bgp template add \
   name=default \
   as=65001 \
@@ -55,7 +56,7 @@ BGP (Border Gateway Protocol) is the routing protocol of the internet. MikroTik 
   network=203.0.113.0/24 \
   comment="Advertise our prefix"
 
-# RouterOS v7 — use address-list for prefix advertisement
+# RouterOS v7 - use address-list for prefix advertisement
 /ip firewall address-list add list=BGP-PREFIXES address=203.0.113.0/24
 ```
 

@@ -1,4 +1,4 @@
-# How to Deploy Node-RED via Portainer
+# How to Deploy Node-RED via Portainer - Nodered
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -45,6 +45,7 @@ Enable authentication in `settings.js`:
 
 ```bash
 # Access Node-RED container
+
 docker exec -it nodered bash
 
 # Generate a password hash
@@ -73,11 +74,11 @@ Via the Node-RED UI:
 3. Search for and install nodes
 
 Popular packages:
-- `node-red-contrib-mqtt` — MQTT support
-- `node-red-contrib-influxdb` — InfluxDB integration
-- `node-red-contrib-home-assistant-websocket` — Home Assistant
-- `node-red-node-postgresql` — PostgreSQL
-- `node-red-dashboard` — Dashboard UI
+- `node-red-contrib-mqtt` - MQTT support
+- `node-red-contrib-influxdb` - InfluxDB integration
+- `node-red-contrib-home-assistant-websocket` - Home Assistant
+- `node-red-node-postgresql` - PostgreSQL
+- `node-red-dashboard` - Dashboard UI
 
 Or via command line:
 
@@ -115,7 +116,7 @@ docker restart nodered
 
 ### HTTP Webhook to Slack
 
-```
+```javascript
 HTTP In → Function → HTTP Request (Slack webhook) → HTTP Response
 ```
 

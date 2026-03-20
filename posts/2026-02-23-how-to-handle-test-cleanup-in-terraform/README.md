@@ -141,6 +141,7 @@ Use cloud-nuke for aggressive cleanup of test resources:
 
 ```bash
 # Install cloud-nuke
+
 brew install gruntwork-io/tap/cloud-nuke
 
 # Dry run - see what would be deleted

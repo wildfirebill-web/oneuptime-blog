@@ -28,6 +28,7 @@ Before writing plugins, set up a proper development environment:
 
 ```bash
 # Clone CoreDNS
+
 git clone https://github.com/coredns/coredns.git
 cd coredns
 

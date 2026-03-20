@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Kubernetes, NGINX, Ingresses, LoadBalancer, DevOps
+Tags: Kubernetes, Nginx, Ingresses, LoadBalancer, DevOps
 
 Description: Learn how to resolve the 'External IP Pending' status for Kubernetes services when using Nginx Ingress, including solutions for bare-metal clusters, cloud environments, and local development.
 
@@ -48,6 +48,7 @@ MetalLB provides a network load balancer implementation for bare-metal Kubernete
 
 ```bash
 # Install MetalLB
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.12/config/manifests/metallb-native.yaml
 
 # Wait for pods to be ready

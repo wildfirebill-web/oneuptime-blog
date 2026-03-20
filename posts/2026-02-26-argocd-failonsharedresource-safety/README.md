@@ -65,6 +65,7 @@ The most common approach is to enable this option on individual applications tha
 
 ```yaml
 # For a single application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

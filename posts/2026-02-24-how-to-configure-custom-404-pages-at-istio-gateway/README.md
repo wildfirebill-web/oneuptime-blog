@@ -315,6 +315,7 @@ Then the catch-all VirtualService from Approach 1 will handle requests for unkno
 export GATEWAY_IP=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Test with a known host but unknown path
+
 curl -v -H "Host: app.example.com" http://$GATEWAY_IP/this-does-not-exist
 
 # Test with an unknown host

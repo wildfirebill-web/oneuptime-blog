@@ -12,7 +12,7 @@ Portainer stack webhooks allow external systems to trigger a stack redeployment 
 
 ## Prerequisites
 
-- Portainer BE (Business Edition) — stack webhooks are a BE feature
+- Portainer BE (Business Edition) - stack webhooks are a BE feature
 - An existing deployed stack in Portainer
 - CI/CD pipeline or automation system to call the webhook
 
@@ -23,7 +23,7 @@ Portainer stack webhooks allow external systems to trigger a stack redeployment 
 3. Toggle **Enable stack webhook**.
 4. Portainer generates a unique URL:
 
-```
+```text
 https://your-portainer.example.com/api/stacks/webhooks/a1b2c3d4e5f6...
 ```
 
@@ -36,6 +36,7 @@ Test the webhook manually:
 
 ```bash
 # Basic POST request to trigger redeployment:
+
 curl -X POST \
   "https://your-portainer.example.com/api/stacks/webhooks/a1b2c3d4e5f6..."
 
@@ -191,4 +192,4 @@ Protect webhook URLs from unauthorized access:
 
 ## Conclusion
 
-Stack redeployment webhooks in Portainer provide a simple, secure HTTP trigger for integrating with any CI/CD system. After building and pushing a new container image, a single `curl -X POST` to the webhook URL is enough to trigger a full stack redeployment in Portainer. This is simpler to set up than the Portainer API and more flexible than Git-based auto-updates when you need precise control over when deployments occur — for example, only after tests pass. Store webhook URLs as CI/CD secrets and rotate them periodically for security.
+Stack redeployment webhooks in Portainer provide a simple, secure HTTP trigger for integrating with any CI/CD system. After building and pushing a new container image, a single `curl -X POST` to the webhook URL is enough to trigger a full stack redeployment in Portainer. This is simpler to set up than the Portainer API and more flexible than Git-based auto-updates when you need precise control over when deployments occur - for example, only after tests pass. Store webhook URLs as CI/CD secrets and rotate them periodically for security.

@@ -18,6 +18,7 @@ When you define a container image in Terraform like this:
 
 ```hcl
 # This will cause issues when the image is updated
+
 resource "aws_ecs_task_definition" "app" {
   family = "my-app"
 

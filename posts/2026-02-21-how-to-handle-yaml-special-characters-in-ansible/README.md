@@ -32,6 +32,7 @@ Single quotes preserve everything literally except single quotes themselves (whi
 
 ```yaml
 # Single quotes - literal strings, no escape sequences
+
 paths:
   windows: 'C:\Users\admin'      # Backslashes preserved literally
   url: 'https://example.com:8080'  # Colon is safe

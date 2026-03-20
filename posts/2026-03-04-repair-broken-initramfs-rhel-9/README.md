@@ -30,6 +30,7 @@ Boot into the working kernel (select it from the GRUB menu), then rebuild:
 
 ```bash
 # List installed kernels
+
 ls /boot/vmlinuz-*
 
 # Rebuild initramfs for a specific kernel

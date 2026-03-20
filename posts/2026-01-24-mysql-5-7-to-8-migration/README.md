@@ -41,6 +41,7 @@ Run the MySQL Shell upgrade checker to identify issues:
 
 ```bash
 # Install MySQL Shell if not present
+
 sudo apt-get install mysql-shell
 
 # Run the upgrade checker

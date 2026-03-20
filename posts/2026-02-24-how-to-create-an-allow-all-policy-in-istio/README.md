@@ -70,6 +70,7 @@ Let's be very clear about the syntax because this is where people make mistakes:
 
 ```yaml
 # Allow-all: single empty rule that matches everything
+
 rules:
   - {}
 

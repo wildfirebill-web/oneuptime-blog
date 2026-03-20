@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Backup, Virtual Machines, Infrastructure as Code
+Tags: OpenTofu, Azure, Backup, Virtual Machine, Infrastructure as Code
 
 Description: Learn how to configure Azure Backup for virtual machines with OpenTofu, including recovery services vaults, backup policies, and VM protection.
 
@@ -119,6 +119,7 @@ resource "azurerm_backup_protected_vm" "db_vm" {
 
 ```hcl
 # Get all VMs and protect them
+
 data "azurerm_resources" "vms" {
   resource_group_name = var.app_resource_group
   type                = "Microsoft.Compute/virtualMachines"

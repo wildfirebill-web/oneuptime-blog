@@ -68,6 +68,7 @@ Use the AWS CLI to create queues programmatically or in automation scripts. The 
 
 ```bash
 # Create a basic standard queue
+
 aws sqs create-queue \
   --queue-name my-application-queue \
   --region us-east-1

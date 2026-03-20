@@ -32,6 +32,7 @@ You can view these with kubectl:
 ```bash
 kubectl describe pod example-pod
 # Look for Conditions section
+
 ```
 
 ## Creating a Custom Controller

@@ -163,6 +163,7 @@ class ShardRouter:
 
 
 # Usage example
+
 shard_configs = [
     {"host": "shard1.db.example.com", "database": "app", "user": "admin", "password": "secret"},
     {"host": "shard2.db.example.com", "database": "app", "user": "admin", "password": "secret"},

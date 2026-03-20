@@ -87,6 +87,7 @@ Install Trivy using Homebrew on macOS:
 
 ```bash
 # Install Trivy via Homebrew
+
 brew install trivy
 
 # Verify the installation

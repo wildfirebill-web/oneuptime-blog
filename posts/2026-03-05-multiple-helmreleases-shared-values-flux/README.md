@@ -28,6 +28,7 @@ First, create a ConfigMap with shared values:
 
 ```yaml
 # shared-values-configmap.yaml - Common values shared across all app HelmReleases
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

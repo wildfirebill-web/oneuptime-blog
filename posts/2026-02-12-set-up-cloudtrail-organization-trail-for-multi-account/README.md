@@ -44,6 +44,7 @@ The S3 bucket needs a specific bucket policy to allow CloudTrail from all organi
 
 ```bash
 # Create the centralized log bucket
+
 aws s3 mb s3://org-cloudtrail-logs-123456789012 \
   --region us-east-1
 ```

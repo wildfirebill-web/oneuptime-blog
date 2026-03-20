@@ -139,6 +139,7 @@ If your Kustomize overlay includes a `namespace` transformer, ensure it matches 
 
 ```yaml
 # kustomization.yaml
+
 namespace: production  # Should match the Application's destination.namespace
 resources:
 - deployment.yaml

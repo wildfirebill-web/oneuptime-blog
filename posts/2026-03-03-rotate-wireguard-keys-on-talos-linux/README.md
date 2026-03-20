@@ -45,6 +45,7 @@ Let us walk through rotating the key for a single node (node1) in a three-node W
 
 ```bash
 # Generate the new key pair for node1
+
 wg genkey | tee node1-new-private.key | wg pubkey > node1-new-public.key
 
 echo "New private key: $(cat node1-new-private.key)"

@@ -43,6 +43,7 @@ Start by getting the current status of all Kustomizations:
 
 ```bash
 # List all Kustomizations and their status
+
 flux get ks
 ```
 

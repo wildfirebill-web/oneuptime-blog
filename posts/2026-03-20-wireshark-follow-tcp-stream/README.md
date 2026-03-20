@@ -6,11 +6,11 @@ Tags: Wireshark, TCP, Networking, HTTP, Packet Analysis, Diagnostics
 
 Description: Use Wireshark's Follow TCP Stream feature to reassemble and view the complete conversation of a TCP connection, including HTTP request/response pairs.
 
-"Follow TCP Stream" reassembles all packets from a single TCP connection into a readable conversation — showing the complete HTTP request, response, or any application-layer exchange. It's the fastest way to understand what an application is actually doing on the network.
+"Follow TCP Stream" reassembles all packets from a single TCP connection into a readable conversation - showing the complete HTTP request, response, or any application-layer exchange. It's the fastest way to understand what an application is actually doing on the network.
 
 ## Open Follow TCP Stream
 
-```
+```text
 Method 1: Right-click on any packet in a TCP stream
   Right-click → Follow → TCP Stream
 
@@ -24,7 +24,7 @@ Method 3: Display filter shortcut
 
 ## Reading the Stream View
 
-```
+```text
 Color coding:
   Blue (dark)  → Client to Server (outbound)
   Red (darker) → Server to Client (inbound)
@@ -49,7 +49,7 @@ Example HTTP GET:
 
 ## Navigate Between Streams
 
-```
+```text
 The stream dialog shows: "Stream 0 of 47"
   ← → arrows navigate between TCP streams
   Or: enter stream number directly
@@ -64,6 +64,7 @@ Find a specific stream:
 
 ```wireshark
 # First, filter to find HTTP streams
+
 http
 
 # Find specific request
@@ -77,7 +78,7 @@ http.request.uri contains "/api/login"
 
 The stream dialog allows saving content:
 
-```
+```text
 In the Follow TCP Stream dialog:
 
 "Save as..." → saves the raw stream data to a file
@@ -112,11 +113,11 @@ tcp.stream == 0
 
 Wireshark can follow streams for other protocols too:
 
-```
+```text
 Analyze → Follow → UDP Stream  (for DNS, QUIC)
-Analyze → Follow → TLS Stream  (encrypted — shows client/server hello)
+Analyze → Follow → TLS Stream  (encrypted - shows client/server hello)
 Analyze → Follow → HTTP/2 Stream (modern web traffic)
 Analyze → Follow → QUIC Stream
 ```
 
-Following TCP streams transforms raw packet analysis into reading application conversations — essential for debugging API calls, authentication flows, and any plaintext protocol behavior.
+Following TCP streams transforms raw packet analysis into reading application conversations - essential for debugging API calls, authentication flows, and any plaintext protocol behavior.

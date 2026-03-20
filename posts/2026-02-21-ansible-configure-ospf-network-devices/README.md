@@ -42,6 +42,7 @@ Define router groups that map to OSPF areas.
 
 ```yaml
 # inventory/network.yml - Router inventory organized by OSPF area
+
 ---
 all:
   children:

@@ -32,6 +32,7 @@ If BitLocker is encrypting your Windows drive, suspend it before repartitioning:
 
 ```powershell
 # Run in PowerShell as Administrator to check status
+
 Get-BitLockerVolume -MountPoint C:
 
 # Suspend BitLocker temporarily

@@ -28,6 +28,7 @@ GitHub Actions is probably the most common use case. Here is how to let GitHub A
 
 ```hcl
 # Create a Workload Identity Pool
+
 resource "google_iam_workload_identity_pool" "github" {
   project                   = var.project_id
   workload_identity_pool_id = "github-pool"

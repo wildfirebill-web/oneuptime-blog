@@ -14,6 +14,7 @@ A NAT Gateway allows instances in private subnets to initiate outbound connectio
 
 ```hcl
 # One EIP per AZ for high-availability NAT Gateways
+
 resource "aws_eip" "nat" {
   count  = var.az_count
   domain = "vpc"
@@ -91,7 +92,7 @@ resource "aws_route" "private_single_nat" {
 
 | Configuration | Monthly Cost (est.) | Availability |
 |---|---|---|
-| 1 NAT Gateway | ~$32/month + data | Single AZ — not HA |
+| 1 NAT Gateway | ~$32/month + data | Single AZ - not HA |
 | 3 NAT Gateways (one per AZ) | ~$96/month + data | Fully HA |
 | NAT Instance (t3.nano) | ~$3/month | Manually managed |
 
@@ -104,4 +105,4 @@ output "nat_public_ips"   { value = aws_eip.nat[*].public_ip }
 
 ## Conclusion
 
-For production, deploy one NAT Gateway per AZ to ensure private instances remain reachable even if an AZ fails. For development and staging, a single NAT Gateway significantly reduces cost. The EIP addresses are stable—whitelist them in external systems that need to accept traffic from your instances.
+For production, deploy one NAT Gateway per AZ to ensure private instances remain reachable even if an AZ fails. For development and staging, a single NAT Gateway significantly reduces cost. The EIP addresses are stable-whitelist them in external systems that need to accept traffic from your instances.

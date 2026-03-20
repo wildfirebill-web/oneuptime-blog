@@ -71,6 +71,7 @@ The pg_repack client runs on your local machine or a Compute Engine VM and conne
 
 ```bash
 # On Debian/Ubuntu
+
 sudo apt-get update
 sudo apt-get install -y postgresql-client pg-repack
 

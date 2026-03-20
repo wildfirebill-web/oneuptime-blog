@@ -18,6 +18,7 @@ Terraform plan output follows a consistent structure. Understanding this structu
 
 ```text
 # Example plan output structure
+
 Terraform will perform the following actions:
 
   # aws_instance.web will be created
@@ -54,7 +55,7 @@ The symbols tell you the type of change. A `+` means a new resource or attribute
 
 Before you can review plans in PRs, you need to post them there. Here is a robust approach that handles large outputs:
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
 name: Terraform Plan Review
 
@@ -107,9 +108,9 @@ jobs:
             <details>
             <summary>Click to expand full plan</summary>
 
-            \`\`\`hcl
+            ```hcl
             ${truncated}
-            \`\`\`
+            ```
             </details>
 
             **Plan Summary:** Check the bottom of the plan output above.
@@ -141,7 +142,7 @@ The most dangerous operations are destroys and recreations. Look for the `-/+` s
         name              = "production-db"
       ~ engine_version    = "13.4" -> "14.1"  # Forces replacement
     }
-```
+````
 
 A database replacement means data loss unless you have taken precautions. Always verify whether the change truly requires replacement or if an in-place update is possible.
 

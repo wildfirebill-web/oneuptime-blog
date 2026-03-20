@@ -2,11 +2,11 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Refactoring, moved Blocks, Infrastructure as Code
+Tags: OpenTofu, Modules, Refactoring, Moved Blocks, Infrastructure as Code
 
 Description: Learn how to safely consolidate multiple OpenTofu modules into a single module using moved blocks to avoid infrastructure disruption.
 
-Sometimes the opposite of splitting is needed — small modules that are always deployed together and share tight dependencies are better as a single module. Merging them reduces complexity, eliminates cross-module output wiring, and simplifies the root configuration.
+Sometimes the opposite of splitting is needed - small modules that are always deployed together and share tight dependencies are better as a single module. Merging them reduces complexity, eliminates cross-module output wiring, and simplifies the root configuration.
 
 ## When to Merge
 
@@ -19,7 +19,7 @@ Merge modules when:
 
 Given two modules:
 
-```
+```text
 modules/
 ├── security-groups/   (aws_security_group resources)
 └── compute/           (aws_instance resources, depends on security-groups)
@@ -27,7 +27,7 @@ modules/
 
 You want to merge them into:
 
-```
+```text
 modules/
 └── compute/           (includes both SGs and instances)
 ```
@@ -40,6 +40,7 @@ Copy the security group resources from `modules/security-groups/main.tf` into `m
 # modules/compute/main.tf (after merge)
 
 # Security groups (moved from modules/security-groups)
+
 resource "aws_security_group" "web" {
   name   = "web-sg"
   vpc_id = var.vpc_id
@@ -99,7 +100,7 @@ tofu plan
 
 Expected output should only show `moved` annotations with no creates or destroys. Verify each one:
 
-```
+```text
 # module.security_groups.aws_security_group.web has moved to module.compute.aws_security_group.web
 # module.security_groups.aws_security_group.app has moved to module.compute.aws_security_group.app
 ```
@@ -123,7 +124,7 @@ tofu apply
 rm -rf modules/security-groups
 ```
 
-Remove the `moved` blocks after confirming the apply succeeded — they are no longer needed once all states are updated.
+Remove the `moved` blocks after confirming the apply succeeded - they are no longer needed once all states are updated.
 
 ## Updating Module Outputs
 
@@ -139,4 +140,4 @@ output "web_sg_id" { value = module.compute.web_sg_id }
 
 ## Conclusion
 
-Merging modules is the mirror of splitting — use `moved` blocks to map old addresses to new ones, verify with `tofu plan`, and only proceed with the apply when no destroys are planned. The key is patience: get the `moved` blocks exactly right before running `apply`.
+Merging modules is the mirror of splitting - use `moved` blocks to map old addresses to new ones, verify with `tofu plan`, and only proceed with the apply when no destroys are planned. The key is patience: get the `moved` blocks exactly right before running `apply`.

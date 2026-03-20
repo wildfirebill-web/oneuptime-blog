@@ -29,6 +29,7 @@ AIDE is available in the standard RHEL repositories. Install it with dnf:
 
 ```bash
 # Install AIDE from the base repository
+
 sudo dnf install aide -y
 ```
 

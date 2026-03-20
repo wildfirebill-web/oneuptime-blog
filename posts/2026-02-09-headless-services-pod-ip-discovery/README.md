@@ -87,6 +87,7 @@ Apply the configuration:
 
 ```bash
 # Create service and deployment
+
 kubectl apply -f headless-service.yaml
 kubectl apply -f deployment.yaml
 

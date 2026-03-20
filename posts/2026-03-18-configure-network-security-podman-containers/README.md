@@ -20,6 +20,7 @@ Podman supports several network modes: bridge (default), host, none, and custom 
 
 ```bash
 # View the default Podman network
+
 podman network ls
 
 # Inspect the default network configuration

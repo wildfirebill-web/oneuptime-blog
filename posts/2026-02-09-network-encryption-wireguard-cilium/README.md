@@ -24,6 +24,7 @@ Before enabling WireGuard encryption, ensure your cluster meets these requiremen
 
 ```bash
 # Check Linux kernel version (must be 5.6 or newer)
+
 kubectl get nodes -o wide
 # SSH to a node and check
 uname -r  # Should be >= 5.6

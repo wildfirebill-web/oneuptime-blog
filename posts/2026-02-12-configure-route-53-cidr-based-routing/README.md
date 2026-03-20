@@ -46,6 +46,7 @@ A CIDR collection is a container that holds your CIDR blocks organized into loca
 
 ```bash
 # Create a CIDR collection
+
 aws route53 create-cidr-collection \
     --name "traffic-routing-cidrs" \
     --caller-reference "cidr-collection-2026-02-12"

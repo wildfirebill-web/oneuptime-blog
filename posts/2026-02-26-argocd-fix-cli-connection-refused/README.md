@@ -31,6 +31,7 @@ This is the most basic error. The CLI cannot establish a TCP connection to the s
 
 ```bash
 # Verify the argocd-server pod is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server
 
 # Check for crash loops or pending status

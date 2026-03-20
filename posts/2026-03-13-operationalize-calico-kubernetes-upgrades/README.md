@@ -36,6 +36,7 @@ gantt
 ```bash
 #!/bin/bash
 # upgrade-readiness-check.sh
+
 TARGET_VERSION="${1:?Provide target version}"
 echo "=== Upgrade Readiness Check for ${TARGET_VERSION} ==="
 

@@ -18,6 +18,7 @@ This is hardware-level remote management: power on/off, sensor readings, BIOS-le
 
 ```bash
 # Install ipmitool
+
 sudo apt update
 sudo apt install -y ipmitool
 

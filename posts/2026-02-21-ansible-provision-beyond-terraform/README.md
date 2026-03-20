@@ -16,6 +16,7 @@ Terraform's provider ecosystem is extensive but not unlimited. There are resourc
 # Things Terraform cannot do but Ansible can:
 
 # 1. Configure legacy systems via SSH
+
 - name: Configure legacy application server
   hosts: legacy_servers
   tasks:

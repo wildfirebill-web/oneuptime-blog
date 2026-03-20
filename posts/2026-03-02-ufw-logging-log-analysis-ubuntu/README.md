@@ -16,6 +16,7 @@ UFW has multiple logging levels:
 
 ```bash
 # Check current logging status
+
 sudo ufw status verbose | grep Logging
 
 # Enable logging (default level is 'low')

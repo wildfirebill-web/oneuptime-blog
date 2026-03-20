@@ -62,6 +62,7 @@ import os
 app = Flask(__name__)
 
 # Set up the tracer with Cloud Trace exporter
+
 def init_tracing():
     exporter = CloudTraceSpanExporter(project_id=os.getenv("GOOGLE_CLOUD_PROJECT"))
     provider = TracerProvider()

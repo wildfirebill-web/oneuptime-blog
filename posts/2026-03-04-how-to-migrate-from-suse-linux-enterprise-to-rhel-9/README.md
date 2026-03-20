@@ -14,6 +14,7 @@ Migrating from SUSE Linux Enterprise to RHEL 9 requires a parallel deployment ap
 
 ```bash
 # On SLES, document current state
+
 zypper se --installed-only > /tmp/sles-packages.txt
 systemctl list-unit-files --state=enabled > /tmp/sles-services.txt
 ```

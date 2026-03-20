@@ -26,6 +26,7 @@ The following commands install the Flux CLI on your local machine and verify tha
 
 ```bash
 # Install flux CLI
+
 # macOS - using Homebrew package manager
 brew install fluxcd/tap/flux
 

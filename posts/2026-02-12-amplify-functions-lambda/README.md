@@ -18,6 +18,7 @@ The simplest way to create a Lambda function in Amplify is through the CLI:
 
 ```bash
 # Add a new Lambda function to your project
+
 amplify add function
 
 # When prompted:

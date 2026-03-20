@@ -43,6 +43,7 @@ Start with a resource group and a virtual network:
 
 ```bash
 # Create a resource group
+
 az group create \
   --name lbResourceGroup \
   --location eastus

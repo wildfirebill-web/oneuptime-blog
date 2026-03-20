@@ -43,6 +43,7 @@ graph TD
 
 ```bash
 # Get application status in a format suitable for scripting
+
 argocd app get my-app \
   --server $ARGOCD_SERVER \
   --auth-token $ARGOCD_TOKEN \

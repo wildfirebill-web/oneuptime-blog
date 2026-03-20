@@ -184,6 +184,7 @@ You should test your draining configuration before relying on it in production. 
 
 ```bash
 # Start a deployment
+
 kubectl apply -f my-app.yaml
 
 # In one terminal, send a slow request

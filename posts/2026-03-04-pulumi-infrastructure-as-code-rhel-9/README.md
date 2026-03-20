@@ -14,6 +14,7 @@ Pulumi takes a different approach to infrastructure as code. Instead of a domain
 
 ```bash
 # Install Pulumi using the official installer
+
 curl -fsSL https://get.pulumi.com | sh
 
 # Add Pulumi to your PATH

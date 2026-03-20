@@ -387,6 +387,7 @@ public class Product
 
 ```bash
 # Get JSON (default)
+
 curl https://localhost:5001/api/products
 
 # Get CSV using Accept header

@@ -32,6 +32,7 @@ Create a k0s configuration file with Cilium CNI settings:
 
 ```yaml
 # k0s-config.yaml - k0s configuration with Cilium CNI
+
 apiVersion: k0s.k0sproject.io/v1beta1
 kind: ClusterConfig
 metadata:

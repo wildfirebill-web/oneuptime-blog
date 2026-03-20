@@ -29,6 +29,7 @@ The first step in any rollback is stopping the current node cleanly:
 
 ```bash
 # Graceful stop using calicoctl
+
 sudo calicoctl node stop
 
 # If calicoctl node stop fails, use Docker directly

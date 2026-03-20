@@ -43,6 +43,7 @@ You need a running Vault instance. For testing:
 
 ```bash
 # Start Vault in dev mode (not for production)
+
 vault server -dev -dev-root-token-id="root"
 
 # In another terminal, set environment variables

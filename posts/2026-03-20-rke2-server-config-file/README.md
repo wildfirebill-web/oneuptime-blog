@@ -12,6 +12,7 @@ The RKE2 server configuration file (`/etc/rancher/rke2/config.yaml`) is the prim
 
 ```bash
 # Configuration file path
+
 /etc/rancher/rke2/config.yaml
 
 # The file uses YAML format

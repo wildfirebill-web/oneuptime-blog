@@ -66,6 +66,7 @@ ztunnel exposes Prometheus metrics that help you understand its performance:
 
 ```promql
 # CPU usage per ztunnel instance
+
 rate(container_cpu_usage_seconds_total{container="ztunnel"}[5m])
 ```
 

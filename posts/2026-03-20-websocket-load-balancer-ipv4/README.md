@@ -64,7 +64,7 @@ const sub = redis.createClient({ url: "redis://localhost:6379" });
     wss.on("connection", (ws) => {
         local.add(ws);
         ws.on("message", (data) => {
-            // Publish to Redis — all server instances will receive it
+            // Publish to Redis - all server instances will receive it
             pub.publish(CHANNEL, data.toString());
         });
         ws.on("close", () => local.delete(ws));
@@ -125,4 +125,4 @@ asyncio.run(main())
 
 ## Conclusion
 
-Use Nginx `ip_hash` for sticky sessions to ensure WebSocket clients always reach the same backend server. For broadcast across multiple server instances, use Redis pub/sub — each server subscribes to a channel and forwards received messages to its local WebSocket clients. This pattern scales horizontally with no direct server-to-server communication. In Kubernetes, use a `ClusterIP` Service fronted by an Nginx Ingress with `nginx.ingress.kubernetes.io/affinity: "cookie"` for session stickiness.
+Use Nginx `ip_hash` for sticky sessions to ensure WebSocket clients always reach the same backend server. For broadcast across multiple server instances, use Redis pub/sub - each server subscribes to a channel and forwards received messages to its local WebSocket clients. This pattern scales horizontally with no direct server-to-server communication. In Kubernetes, use a `ClusterIP` Service fronted by an Nginx Ingress with `nginx.ingress.kubernetes.io/affinity: "cookie"` for session stickiness.

@@ -22,6 +22,7 @@ HashiCorp publishes official Helm charts through their releases repository.
 
 ```yaml
 # helmrepository-hashicorp.yaml - HashiCorp Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

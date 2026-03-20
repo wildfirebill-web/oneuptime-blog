@@ -16,6 +16,7 @@ Consider a security group with multiple ingress rules. Without dynamic blocks, y
 
 ```hcl
 # Without dynamic blocks - repetitive and hard to maintain
+
 resource "aws_security_group" "web" {
   name   = "web-sg"
   vpc_id = aws_vpc.main.id

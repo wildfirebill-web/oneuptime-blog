@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kafka, ksqlDB, IPv4, Streaming, Configuration, SQL
+Tags: Kafka, KsqlDB, IPv4, Streaming, Configuration, SQL
 
 Description: Configure ksqlDB server to listen on a specific IPv4 address, connect to Kafka brokers over IPv4, and restrict access to the ksqlDB REST API.
 
@@ -15,13 +15,14 @@ ksqlDB is a streaming SQL engine built on Kafka Streams. It exposes a REST API f
 ```properties
 # /etc/ksqldb/ksql-server.properties
 
-# REST API listener — bind to specific IPv4
+# REST API listener - bind to specific IPv4
+
 listeners=http://10.0.0.5:8088
 
 # Or for HTTPS:
 # listeners=https://10.0.0.5:8088
 
-# Bootstrap server(s) — Kafka broker IPv4 addresses
+# Bootstrap server(s) - Kafka broker IPv4 addresses
 bootstrap.servers=10.0.0.1:9092,10.0.0.2:9092,10.0.0.3:9092
 
 # ksqlDB service URL (advertised to clients)

@@ -1,10 +1,10 @@
-# How to Troubleshoot MySQL "Can't Connect" Errors on IPv4
+# How to Troubleshoot MySQL 'Can't Connect' Errors on IPv4
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MySQL, IPv4, Troubleshooting, Connection Refused, Debug, Database
 
-Description: Diagnose and fix MySQL connection failures including "Can't connect to MySQL server", "Host not allowed", and "Access denied" errors on IPv4 networks.
+Description: Diagnose and fix MySQL connection failures including 'Can't connect to MySQL server', 'Host not allowed', and 'Access denied' errors on IPv4 networks.
 
 ## Introduction
 
@@ -23,6 +23,7 @@ MySQL connection failures fall into three categories: network issues (can't reac
 
 ```bash
 # Step 1: Is MySQL running?
+
 sudo systemctl status mysql
 sudo systemctl start mysql   # If not running
 

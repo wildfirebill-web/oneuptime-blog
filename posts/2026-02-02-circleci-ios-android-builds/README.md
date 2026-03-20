@@ -54,6 +54,7 @@ CircleCI orbs package reusable configuration for common tasks. The following bas
 
 ```yaml
 # .circleci/config.yml
+
 version: 2.1
 
 # Import official orbs for Android and iOS tooling

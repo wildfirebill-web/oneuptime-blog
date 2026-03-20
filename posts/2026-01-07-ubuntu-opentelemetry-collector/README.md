@@ -52,6 +52,7 @@ Before installing the OpenTelemetry Collector, ensure your Ubuntu system meets t
 
 ```bash
 # Check Ubuntu version - Ubuntu 20.04 LTS or later is recommended
+
 lsb_release -a
 
 # Ensure you have sudo privileges
@@ -400,7 +401,7 @@ processors:
         action: hash
 ```
 
-### Resource Processor
+Resource Processor
 
 Modify resource attributes that describe the entity producing telemetry:
 

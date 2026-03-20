@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Verify Docker and Docker Compose versions
+
 docker --version
 docker compose version
 ```

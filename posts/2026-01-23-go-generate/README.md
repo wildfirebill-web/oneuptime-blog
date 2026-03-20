@@ -487,6 +487,7 @@ build: generate
 
 ```yaml
 # GitHub Actions
+
 - name: Check generated code
   run: |
     go generate ./...

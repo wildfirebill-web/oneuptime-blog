@@ -20,6 +20,7 @@ Check the current configuration size for a proxy:
 
 ```bash
 # Configuration size in bytes
+
 istioctl proxy-config all deploy/my-app -n production -o json | wc -c
 
 # Number of clusters (upstream services) configured

@@ -229,6 +229,7 @@ If you already have Prometheus running, you can use remote write to send metrics
 
 ```yaml
 # Add to your Prometheus configuration
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

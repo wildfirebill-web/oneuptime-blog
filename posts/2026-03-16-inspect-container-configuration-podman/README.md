@@ -20,6 +20,7 @@ The simplest form returns the full JSON configuration:
 
 ```bash
 # Start a container for testing
+
 podman run -d --name my-app -p 8080:80 -e APP_ENV=production nginx:latest
 
 # Inspect the container (returns full JSON)
@@ -103,7 +104,7 @@ podman inspect vol-app --format '{{json .Mounts}}' | python3 -m json.tool
 podman inspect vol-app --format '{{range .Mounts}}{{.Source}} -> {{.Destination}} ({{.Type}}){{println}}{{end}}'
 ```
 
-### Resource Limits
+Resource Limits
 
 ```bash
 # Start a container with resource limits

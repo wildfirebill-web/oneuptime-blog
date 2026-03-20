@@ -30,6 +30,7 @@ Start with the pod status:
 
 ```bash
 # Check if the sidecar is running
+
 kubectl get pod my-app-pod -o jsonpath='{.status.containerStatuses[?(@.name=="istio-proxy")].state}'
 
 # Check restart count

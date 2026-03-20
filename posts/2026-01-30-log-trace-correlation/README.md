@@ -76,6 +76,7 @@ First, install the required OpenTelemetry packages for your language.
 
 ```bash
 # Install OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 ```
 

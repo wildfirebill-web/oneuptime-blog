@@ -22,6 +22,7 @@ First, create a resource policy that defines the schedule:
 
 ```bash
 # Create a schedule that stops VMs at 7 PM Friday and starts them at 8 AM Monday
+
 gcloud compute resource-policies create instance-schedule weekday-schedule \
   --region=us-central1 \
   --vm-start-schedule="0 8 * * 1" \

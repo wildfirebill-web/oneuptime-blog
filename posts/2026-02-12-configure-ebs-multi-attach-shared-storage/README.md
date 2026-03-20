@@ -39,6 +39,7 @@ Create an io2 volume with Multi-Attach enabled:
 
 ```bash
 # Create an io2 volume with Multi-Attach
+
 aws ec2 create-volume \
     --volume-type io2 \
     --size 100 \

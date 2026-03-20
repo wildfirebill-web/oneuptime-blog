@@ -189,6 +189,7 @@ WHERE DATE(event_timestamp) = '2024-01-15';
 
 ```bash
 # Export to GCS
+
 bq extract \
   --destination_format PARQUET \
   --compression SNAPPY \

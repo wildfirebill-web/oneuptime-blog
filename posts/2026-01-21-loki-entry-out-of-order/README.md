@@ -47,6 +47,7 @@ If Entry 4 arrives with timestamp=1000, it is rejected as out of order.
 
 ```bash
 # Check for out-of-order rejections
+
 curl -s http://loki:3100/metrics | grep "loki_distributor_lines_received_total"
 
 # Check stream creation rate

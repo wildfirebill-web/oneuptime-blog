@@ -17,12 +17,12 @@ The 8-bit ToS field at byte 1 of the IPv4 header has been redefined multiple tim
 
 ## Original ToS Flags (RFC 791)
 
-```
+```text
 Bits 3-5 (Precedence): 0=Routine, 7=Network Control
-Bit 4: D — Minimize Delay
-Bit 5: T — Maximize Throughput
-Bit 6: R — Maximize Reliability
-Bit 7: C — Minimize Monetary Cost
+Bit 4: D - Minimize Delay
+Bit 5: T - Maximize Throughput
+Bit 6: R - Maximize Reliability
+Bit 7: C - Minimize Monetary Cost
 ```
 
 ## DSCP and ECN (Modern)
@@ -43,6 +43,7 @@ Modern networks use DSCP (Differentiated Services Code Point) in the upper 6 bit
 import socket
 
 # DSCP value 46 (EF) is shifted left 2 bits to occupy bits 7-2 of the ToS byte
+
 DSCP_EF = 46
 tos = DSCP_EF << 2  # = 0xB8 = 184
 

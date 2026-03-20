@@ -235,6 +235,7 @@ Adaptive sampling adjusts sampling rates based on system load:
 
 ```yaml
 # fluent-bit-adaptive.conf
+
 [FILTER]
     Name    lua
     Match   kube.*

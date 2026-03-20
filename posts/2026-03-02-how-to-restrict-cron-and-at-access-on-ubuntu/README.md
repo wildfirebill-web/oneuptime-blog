@@ -29,6 +29,7 @@ Create the allow file with only the users who need cron access:
 
 ```bash
 # Create cron.allow with authorized users
+
 sudo tee /etc/cron.allow <<EOF
 root
 deploy

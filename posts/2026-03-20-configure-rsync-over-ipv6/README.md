@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rsync, IPv6, File Transfer, Backup, SSH, Linux, Networking
+Tags: Rsync, IPv6, File Transfer, Backup, SSH, Linux, Networking
 
 Description: Configure rsync to transfer files over IPv6, using both SSH tunneling and the rsync daemon, with address format handling and practical transfer examples.
 
@@ -16,6 +16,7 @@ When using rsync over SSH, the IPv6 address format depends on your shell:
 
 ```bash
 # Basic rsync over SSH to IPv6 host (quoting the address)
+
 rsync -avz -e ssh \
   /local/data/ \
   user@'[2001:db8::1]':/remote/data/

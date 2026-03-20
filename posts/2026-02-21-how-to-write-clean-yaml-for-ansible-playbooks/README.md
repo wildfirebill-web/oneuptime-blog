@@ -18,6 +18,7 @@ Always use 2 spaces for indentation. Never use tabs. Configure your editor to en
 
 ```yaml
 # Good: consistent 2-space indentation
+
 - name: Install packages
   ansible.builtin.apt:
     name:

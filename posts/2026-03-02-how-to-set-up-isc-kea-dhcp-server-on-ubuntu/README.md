@@ -27,6 +27,7 @@ sudo apt install -y kea-dhcp4-server kea-admin kea-common
 
 ```bash
 # Add the ISC repository
+
 curl -1sLf 'https://dl.cloudsmith.io/public/isc/kea-2-4/setup.deb.sh' | sudo bash
 
 # Install the packages

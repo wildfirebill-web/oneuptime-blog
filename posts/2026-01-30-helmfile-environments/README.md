@@ -41,6 +41,7 @@ Install Helmfile on your system.
 
 ```bash
 # macOS
+
 brew install helmfile
 
 # Linux

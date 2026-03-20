@@ -54,6 +54,7 @@ The most widely used driver wraps the official SQLite C library. It provides ful
 
 ```bash
 # Install the CGO-based driver
+
 go get github.com/mattn/go-sqlite3
 ```
 

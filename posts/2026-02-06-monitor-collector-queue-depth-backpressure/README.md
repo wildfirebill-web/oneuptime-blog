@@ -47,6 +47,7 @@ The OpenTelemetry Collector exposes metrics that reveal queue health. Understand
 
 ```yaml
 # otel-collector-config.yaml
+
 service:
   telemetry:
     # Enable detailed internal metrics

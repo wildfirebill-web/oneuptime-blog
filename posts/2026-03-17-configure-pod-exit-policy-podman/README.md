@@ -18,6 +18,7 @@ When all non-infra containers in a pod exit, the pod can either continue running
 
 ```bash
 # By default, the pod continues running even if all containers exit
+
 podman pod create --name default-pod
 
 podman run --pod default-pod --name task docker.io/library/alpine echo "done"

@@ -22,6 +22,7 @@ Start by configuring multiple runtime handlers in containerd. This creates the b
 
 ```toml
 # /etc/containerd/config.toml
+
 version = 2
 
 # Default configuration

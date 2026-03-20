@@ -14,6 +14,7 @@ You cannot install both MariaDB and MySQL via RPM on the same RHEL system becaus
 
 ```bash
 # Create a persistent data directory for MariaDB
+
 sudo mkdir -p /opt/mariadb/data
 
 # Run MariaDB on port 3306

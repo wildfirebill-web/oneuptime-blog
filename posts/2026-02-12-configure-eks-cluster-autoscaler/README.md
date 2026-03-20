@@ -71,6 +71,7 @@ Save this as `cluster-autoscaler-policy.json` and create the IAM policy:
 
 ```bash
 # Create the IAM policy for Cluster Autoscaler
+
 aws iam create-policy \
   --policy-name ClusterAutoscalerPolicy \
   --policy-document file://cluster-autoscaler-policy.json

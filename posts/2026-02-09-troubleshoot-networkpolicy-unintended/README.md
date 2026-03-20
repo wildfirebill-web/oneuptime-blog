@@ -24,6 +24,7 @@ Start by testing if policies actually enforce restrictions:
 
 ```bash
 # From a pod that should be blocked
+
 kubectl exec -it unauthorized-pod -- curl http://protected-service:8080
 
 # This should timeout or fail

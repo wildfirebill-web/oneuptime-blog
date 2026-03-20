@@ -16,6 +16,7 @@ The simplest reboot requires no parameters at all.
 
 ```yaml
 # basic-reboot.yml - Reboot a Windows server
+
 ---
 - name: Reboot Windows servers
   hosts: windows_servers

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Fortinet, SD-WAN, FortiGate, FortiOS, WAN, Routing
+Tags: IPv6, Fortinet, SD-WAN, FortiGate, Fortios, WAN, Routing
 
 Description: Configure IPv6 in Fortinet SD-WAN on FortiGate including IPv6 SD-WAN rules, interface configuration, health monitoring for IPv6 paths, and BGP IPv6 with SD-WAN.
 
@@ -16,6 +16,7 @@ Fortinet SD-WAN is built into FortiOS on FortiGate firewalls. IPv6 support in Fo
 # FortiOS CLI - Configure SD-WAN with IPv6 support
 
 # Configure WAN interfaces for SD-WAN
+
 config system interface
     edit "wan1"
         set mode static

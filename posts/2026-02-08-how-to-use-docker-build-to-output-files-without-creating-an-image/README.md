@@ -20,6 +20,7 @@ BuildKit's `--output` (or `-o`) flag controls where build results go. The most c
 
 ```bash
 # Export the build output to a local directory called "dist"
+
 docker buildx build --output type=local,dest=./dist .
 ```
 

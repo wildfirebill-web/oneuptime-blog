@@ -18,6 +18,7 @@ First, install the Bigtable client library:
 
 ```bash
 # Install the Google Cloud Bigtable Python client
+
 pip install google-cloud-bigtable
 ```
 

@@ -14,6 +14,7 @@ Snapcraft is the official tool for building snap packages. It reads your `snapcr
 
 ```bash
 # Install snapcraft
+
 sudo snap install snapcraft --classic
 
 # Snapcraft uses either LXD or Multipass for clean builds

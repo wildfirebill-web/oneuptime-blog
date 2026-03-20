@@ -14,6 +14,7 @@ Event-Driven Ansible (EDA) enables you to create automated responses to system e
 
 ```bash
 # Install ansible-rulebook on the control node
+
 pip install ansible-rulebook
 
 # Install the required Java dependency (for Drools rule engine)

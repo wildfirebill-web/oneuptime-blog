@@ -356,6 +356,7 @@ Start Redis and run the service:
 
 ```bash
 # Start Redis (Docker)
+
 docker run -d -p 6379:6379 redis:alpine
 
 # Run the service

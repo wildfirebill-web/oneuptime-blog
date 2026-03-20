@@ -40,6 +40,7 @@ Organize your Git repository for PDB management:
 
 ```yaml
 # clusters/my-cluster/
+
 # kustomization.yaml references the PDB definitions
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

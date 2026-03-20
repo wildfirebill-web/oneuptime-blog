@@ -147,6 +147,7 @@ For bare React Native projects:
 ```bash
 npm install react-native-sqlite-storage
 # or
+
 yarn add react-native-sqlite-storage
 ```
 

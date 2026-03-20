@@ -25,6 +25,7 @@ On modern Ubuntu systems, systemd-logind also handles many ACPI events. Understa
 
 ```bash
 # Install acpid and ACPI utilities
+
 sudo apt update
 sudo apt install -y acpid acpi acpi-support acpitools
 

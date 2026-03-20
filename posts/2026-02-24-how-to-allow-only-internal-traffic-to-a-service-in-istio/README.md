@@ -208,6 +208,7 @@ Test that internal traffic works:
 
 ```bash
 # From a pod within the mesh
+
 kubectl exec deploy/frontend -n production -c frontend -- curl -s http://admin-api.internal-services.svc.cluster.local/health
 # Expected: 200 OK
 ```

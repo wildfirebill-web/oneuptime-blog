@@ -178,6 +178,7 @@ class SynchronousReplicationManager:
 
 
 # Example usage
+
 async def main():
     replicas = [
         ReplicaNode("replica-1", latency_ms=5),

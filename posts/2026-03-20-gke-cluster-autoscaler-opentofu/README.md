@@ -14,6 +14,7 @@ GKE Cluster Autoscaler automatically adjusts the number of nodes in a node pool 
 
 ```hcl
 # main.tf - Node pool with autoscaling enabled
+
 resource "google_container_node_pool" "autoscaling_pool" {
   name     = "autoscaling-pool"
   location = "us-central1"

@@ -31,6 +31,7 @@ tracer = trace.get_tracer("ecommerce.coupons", "1.0.0")
 meter = metrics.get_meter("ecommerce.coupons", "1.0.0")
 
 # Validation outcome counter
+
 validation_counter = meter.create_counter(
     name="coupon.validations_total",
     description="Coupon validation attempts and results",

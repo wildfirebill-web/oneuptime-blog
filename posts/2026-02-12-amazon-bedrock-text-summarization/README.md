@@ -51,6 +51,7 @@ def summarize_text(text, style="concise", max_length=200):
     return result['content'][0]['text']
 
 # Example usage
+
 article = """
 Amazon Web Services announced today that Amazon Bedrock now supports
 fine-tuning for additional foundation models. The update includes support

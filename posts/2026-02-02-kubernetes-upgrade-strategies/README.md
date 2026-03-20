@@ -78,6 +78,7 @@ The following deployment configuration demonstrates how to set up rolling update
 
 ```yaml
 # rolling-update-deployment.yaml
+
 # Deployment with rolling update strategy for zero-downtime upgrades
 apiVersion: apps/v1
 kind: Deployment

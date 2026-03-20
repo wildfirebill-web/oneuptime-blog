@@ -22,6 +22,7 @@ Deploy the Scylla Operator to manage cluster lifecycle:
 
 ```bash
 # Install cert-manager (required by Scylla Operator)
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.0/cert-manager.yaml
 
 # Wait for cert-manager to be ready

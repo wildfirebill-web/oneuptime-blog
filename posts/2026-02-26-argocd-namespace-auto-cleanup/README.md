@@ -18,6 +18,7 @@ Start by understanding the scope of namespace sprawl in your cluster.
 
 ```bash
 # List all namespaces with their age and resource usage
+
 kubectl get namespaces -o json | jq -r '.items[] |
   "\(.metadata.name)\t\(.metadata.creationTimestamp)\t\(.status.phase)"' | \
   sort -k2

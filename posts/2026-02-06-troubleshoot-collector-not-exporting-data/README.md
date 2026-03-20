@@ -42,6 +42,7 @@ Before diagnosing export issues, verify the collector is receiving data:
 
 ```bash
 # Check receiver metrics
+
 curl -s http://localhost:8888/metrics | grep "otelcol_receiver_accepted_spans"
 
 # Should show non-zero values:

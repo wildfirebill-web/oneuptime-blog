@@ -45,6 +45,7 @@ FREE=$(calicoctl ipam show 2>/dev/null | grep -i "free" | grep -oP '\d+' | head 
 kubectl get pods --all-namespaces | grep Pending | head -10
 kubectl get events --all-namespaces | grep "FailedScheduling\|failed to allocate" | tail -10
 # Expected: no IP allocation events newer than the fix timestamp
+
 ```
 
 **Validation Step 3: New pods get IPs successfully**

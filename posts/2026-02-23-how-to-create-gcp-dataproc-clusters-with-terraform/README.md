@@ -18,6 +18,7 @@ Before creating any Dataproc resources, enable the necessary APIs.
 
 ```hcl
 # Enable Dataproc API
+
 resource "google_project_service" "dataproc" {
   project = var.project_id
   service = "dataproc.googleapis.com"

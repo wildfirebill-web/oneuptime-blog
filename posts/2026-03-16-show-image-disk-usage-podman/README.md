@@ -20,6 +20,7 @@ Get an overview of all Podman storage consumption.
 
 ```bash
 # Show disk usage summary
+
 podman system df
 
 # Sample output:

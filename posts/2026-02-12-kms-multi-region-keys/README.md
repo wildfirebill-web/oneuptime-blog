@@ -38,6 +38,7 @@ First, create the primary key in your home region. You must specify `MultiRegion
 
 ```bash
 # Create a multi-region primary key
+
 aws kms create-key \
   --region us-east-1 \
   --description "Multi-region key for global data encryption" \

@@ -40,6 +40,7 @@ RDS Proxy authenticates to your database using credentials from Secrets Manager.
 
 ```bash
 # Create a secret with the database credentials
+
 aws secretsmanager create-secret \
   --name "rds-proxy/db-credentials" \
   --secret-string '{

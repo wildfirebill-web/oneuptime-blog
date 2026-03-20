@@ -28,6 +28,7 @@ Filters use a name-value syntax. The name is the API attribute, the values are w
 
 ```bash
 # Find running instances
+
 aws ec2 describe-instances \
   --filters "Name=instance-state-name,Values=running"
 

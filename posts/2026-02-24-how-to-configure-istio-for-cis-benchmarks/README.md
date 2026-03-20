@@ -290,11 +290,12 @@ Verify mTLS is enforced everywhere:
 
 ```bash
 # Check for any permissive policies
+
 kubectl get peerauthentication --all-namespaces -o json | \
   jq '.items[] | select(.spec.mtls.mode != "STRICT") | {name: .metadata.name, namespace: .metadata.namespace, mode: .spec.mtls.mode}'
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Apply resource quotas to the istio-system namespace:
 

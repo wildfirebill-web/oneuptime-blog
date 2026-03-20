@@ -1,4 +1,4 @@
-# How to Restrict Public Repository Usage in Portainer
+# How to Restrict Public Repository Usage in Portainer - Repo Usage
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -54,6 +54,7 @@ If Portainer doesn't have a native allowlist, enforce at the Docker daemon level
 
 ```yaml
 # OPA Gatekeeper ConstraintTemplate
+
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:

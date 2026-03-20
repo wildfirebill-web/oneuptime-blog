@@ -54,6 +54,7 @@ Key concepts:
 
 ```bash
 # Create an S3 bucket for workspace resources (3D models, scenes)
+
 aws s3 mb s3://my-twinmaker-workspace --region us-east-1
 
 # Create the IAM role for TwinMaker

@@ -32,6 +32,7 @@ This curl command creates a silence that suppresses all alerts for the `checkout
 
 ```bash
 # Create a 2-hour silence for checkout-service alerts
+
 curl -X POST http://alertmanager:9093/api/v2/silences \
   -H "Content-Type: application/json" \
   -d '{

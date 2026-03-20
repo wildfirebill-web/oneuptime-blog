@@ -49,6 +49,7 @@ console.log(`Target: ${target}`);
 ```bash
 node cli.js build ./src
 # Arguments: [ 'build', './src' ]
+
 # Command: build
 # Target: ./src
 ```

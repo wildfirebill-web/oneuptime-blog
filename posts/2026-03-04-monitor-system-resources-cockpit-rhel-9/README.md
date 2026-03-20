@@ -20,6 +20,7 @@ Make sure Cockpit is installed and running.
 
 ```bash
 # Install Cockpit if not already present
+
 sudo dnf install cockpit
 
 # Enable and start the socket

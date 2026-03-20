@@ -21,10 +21,11 @@ Even when a variable is marked `sensitive = true`, its value is still stored in 
 
 ## Using Write-Only Attributes
 
-Write-only attributes are defined by the provider, not by you. You simply assign them as you would any attribute — the provider handles them specially:
+Write-only attributes are defined by the provider, not by you. You simply assign them as you would any attribute - the provider handles them specially:
 
 ```hcl
 # Example: creating an IAM user login profile
+
 # The password attribute is write-only in the AWS provider
 resource "aws_iam_user_login_profile" "ops" {
   user                    = aws_iam_user.ops.name
@@ -52,14 +53,14 @@ resource "aws_db_instance" "main" {
 Ephemeral resources fetch values that are used during the apply but never written to state:
 
 ```hcl
-# An ephemeral resource provides values only during apply — not stored in state
+# An ephemeral resource provides values only during apply - not stored in state
 ephemeral "aws_secretsmanager_secret_version" "db_pass" {
   secret_id = "prod/db/password"
 }
 
 resource "aws_db_instance" "main" {
   username = "admin"
-  # Reference the ephemeral value — never stored in state
+  # Reference the ephemeral value - never stored in state
   password = ephemeral.aws_secretsmanager_secret_version.db_pass.secret_string
 }
 ```

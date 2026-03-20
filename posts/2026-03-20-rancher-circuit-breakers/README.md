@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Circuit Breakers, Istio, Resilience, Service Mesh
+Tags: Rancher, Kubernetes, Circuit Breaker, Istio, Resilience, Service Mesh
 
 Description: Implement circuit breakers in Rancher using Istio's DestinationRule to prevent cascade failures and improve system resilience when downstream services degrade.
 
@@ -29,6 +29,7 @@ Connection pool limits prevent overwhelming downstream services:
 
 ```yaml
 # connection-pool-limits.yaml - Limit concurrent connections
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

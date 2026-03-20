@@ -43,6 +43,7 @@ Create a PAT in Azure DevOps with the appropriate permissions.
 
 ```bash
 # Export the Azure DevOps PAT
+
 export AZURE_DEVOPS_PAT=<your-personal-access-token>
 
 # Export the organization and project details

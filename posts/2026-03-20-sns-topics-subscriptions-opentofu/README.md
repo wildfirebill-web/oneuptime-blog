@@ -8,12 +8,13 @@ Description: Learn how to create AWS SNS topics, subscriptions, and access polic
 
 ---
 
-Amazon SNS is the fully managed pub/sub messaging service that fans out messages to multiple subscribers simultaneously. With OpenTofu, you define your entire messaging topology — topics, subscriptions, filter policies, and access controls — as reproducible infrastructure code.
+Amazon SNS is the fully managed pub/sub messaging service that fans out messages to multiple subscribers simultaneously. With OpenTofu, you define your entire messaging topology - topics, subscriptions, filter policies, and access controls - as reproducible infrastructure code.
 
 ## Creating SNS Topics
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -172,7 +173,7 @@ data "aws_caller_identity" "current" {}
 
 ## Best Practices
 
-- Use SQS as a subscriber rather than HTTP/HTTPS for reliable processing — SQS buffers messages and handles retries automatically.
+- Use SQS as a subscriber rather than HTTP/HTTPS for reliable processing - SQS buffers messages and handles retries automatically.
 - Use `raw_message_delivery = true` for SQS subscribers when your consumer doesn't need SNS metadata.
 - Set filter policies to route messages to the right subscribers without building complex routing logic in consumers.
 - Enable KMS encryption for topics containing sensitive business data.

@@ -25,6 +25,7 @@ The certificate **must** be in us-east-1. This is a hard requirement because Cog
 
 ```hcl
 # ACM certificate - must be in us-east-1
+
 provider "aws" {
   alias  = "us_east_1"
   region = "us-east-1"

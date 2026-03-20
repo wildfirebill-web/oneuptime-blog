@@ -37,6 +37,7 @@ Deploy a sample application:
 
 ```yaml
 # client-app.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

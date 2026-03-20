@@ -26,6 +26,7 @@ In your `.tftest.hcl` file, add a `mock_provider` block:
 
 ```hcl
 # tests/unit.tftest.hcl
+
 # Unit tests using mock providers
 
 # Mock the AWS provider - no real API calls

@@ -71,7 +71,7 @@ resource "aws_instance" "app" {
 
 Each resource node is connected to its provider node. Providers must be initialized before resources can be created:
 
-```
+```text
 aws_instance.app → provider["registry.opentofu.org/hashicorp/aws"]
 ```
 
@@ -92,9 +92,9 @@ Nodes that are not reachable from the root walk (e.g., resources targeted with `
 
 ### Step 9: Validate and Detect Cycles
 
-OpenTofu validates the graph is a DAG (directed acyclic graph) — no circular dependencies. If a cycle exists, OpenTofu reports an error:
+OpenTofu validates the graph is a DAG (directed acyclic graph) - no circular dependencies. If a cycle exists, OpenTofu reports an error:
 
-```
+```text
 Error: Cycle: aws_security_group.app, aws_security_group.db
 ```
 
@@ -109,7 +109,8 @@ Resources without dependencies between them are processed in parallel:
 ```hcl
 resource "aws_s3_bucket" "logs" { ... }
 resource "aws_s3_bucket" "assets" { ... }
-# These two have no dependency — OpenTofu creates them in parallel
+# These two have no dependency - OpenTofu creates them in parallel
+
 ```
 
 ### Controlling Parallelism
@@ -128,7 +129,7 @@ If a resource is being created/destroyed in the wrong order:
 
 ### The Destroy Graph
 
-During `tofu destroy`, the graph is reversed — resources are destroyed in the opposite order of creation:
+During `tofu destroy`, the graph is reversed - resources are destroyed in the opposite order of creation:
 
 ```bash
 tofu graph -type=destroy-plan
@@ -146,7 +147,7 @@ tofu graph | grep -E "aws_(vpc|subnet|security_group|instance)"
 
 ## Best Practices
 
-- Avoid unnecessary `depends_on` — use explicit references instead so OpenTofu can track attribute values.
+- Avoid unnecessary `depends_on` - use explicit references instead so OpenTofu can track attribute values.
 - Use `depends_on` only when the dependency is behavioral, not data-driven.
 - Split large configurations into modules to keep the dependency graph manageable.
 - Run `tofu graph` in CI to visualize planned changes before applying them.

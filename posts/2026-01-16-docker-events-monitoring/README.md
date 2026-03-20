@@ -14,6 +14,7 @@ Docker events provide real-time information about container lifecycle, image ope
 
 ```bash
 # Watch all events
+
 docker events
 
 # Filter by container

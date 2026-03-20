@@ -1,4 +1,4 @@
-# OpenTofu vs AWS CDK: Choosing the Right IaC Tool
+# OpenTofu vs AWS CDK: Choosing the Right IaC Tool - Choice
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -152,6 +152,7 @@ CDK's L2 construct is significantly more concise for common patterns.
 
 ```hcl
 # tests/s3.tftest.hcl
+
 run "bucket_has_versioning" {
   assert {
     condition     = aws_s3_bucket_versioning.app.versioning_configuration[0].status == "Enabled"
@@ -178,7 +179,7 @@ test('Bucket has versioning', () => {
 Some teams use CDK for application infrastructure and OpenTofu for shared platform resources:
 
 - **OpenTofu**: VPCs, DNS zones, IAM roles, shared RDS instances
-- **CDK**: Application-specific resources — ECS services, Lambda functions, API Gateway
+- **CDK**: Application-specific resources - ECS services, Lambda functions, API Gateway
 
 OpenTofu can read CDK-deployed resource ARNs from SSM Parameter Store:
 

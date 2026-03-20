@@ -12,10 +12,11 @@ Removing an incorrect or obsolete static route restores normal routing behavior.
 
 ## Deleting a Route by Destination
 
-The simplest form — specify only the destination network:
+The simplest form - specify only the destination network:
 
 ```bash
 # Delete the route to 10.10.0.0/16
+
 sudo ip route del 10.10.0.0/16
 
 # Verify removal
@@ -79,7 +80,7 @@ if ip route show | grep -q "$ROUTE"; then
     sudo ip route del "$ROUTE"
     echo "Route $ROUTE deleted"
 else
-    echo "Route $ROUTE not found — nothing to delete"
+    echo "Route $ROUTE not found - nothing to delete"
 fi
 ```
 

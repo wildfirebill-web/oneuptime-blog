@@ -26,6 +26,7 @@ Create a simple REST routing configuration:
 
 ```yaml
 # rest-virtualservice.yaml
+
 apiVersion: gateway.solo.io/v1
 kind: VirtualService
 metadata:

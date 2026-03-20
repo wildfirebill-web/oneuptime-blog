@@ -42,6 +42,7 @@ Before starting, ensure you have:
 
 ```hcl
 # consul-server.hcl
+
 datacenter = "dc1"
 server = true
 bootstrap_expect = 3

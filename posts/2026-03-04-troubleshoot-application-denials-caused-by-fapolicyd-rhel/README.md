@@ -16,6 +16,7 @@ The first step is to confirm that fapolicyd is actually blocking the application
 
 ```bash
 # Check if fapolicyd is running and enforcing
+
 sudo systemctl status fapolicyd
 
 # Check the current mode (permissive vs enforcing)

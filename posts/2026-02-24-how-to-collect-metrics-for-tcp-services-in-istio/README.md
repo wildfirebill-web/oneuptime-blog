@@ -68,6 +68,7 @@ Once your TCP services are running with sidecars, you can query their metrics:
 
 ```promql
 # New connections per second to PostgreSQL
+
 sum(rate(istio_tcp_connections_opened_total{
   reporter="destination",
   destination_workload="postgres",

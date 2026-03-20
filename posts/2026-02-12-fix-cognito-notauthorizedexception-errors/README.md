@@ -46,6 +46,7 @@ Check the user's status with the CLI.
 
 ```bash
 # Check the user's current status in the user pool
+
 aws cognito-idp admin-get-user \
   --user-pool-id us-east-1_ABC123 \
   --username testuser

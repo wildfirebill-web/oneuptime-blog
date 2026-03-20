@@ -29,6 +29,7 @@ Here is a minimal healthcheck for a web server that verifies the HTTP endpoint r
 
 ```yaml
 # docker-compose.yml - Basic healthcheck for an Nginx service
+
 version: "3.8"
 
 services:

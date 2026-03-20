@@ -35,6 +35,7 @@ Start with the official scaffolding tool:
 
 ```bash
 # Using npm
+
 npm create vite@latest my-vue-app -- --template vue-ts
 
 # Using yarn

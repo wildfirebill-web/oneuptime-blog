@@ -21,6 +21,7 @@ Helm is the preferred method for installing NeuVector in production environments
 
 ```bash
 # Add the NeuVector Helm chart repository
+
 helm repo add neuvector https://neuvector.github.io/neuvector-helm/
 
 # Update your local Helm chart cache

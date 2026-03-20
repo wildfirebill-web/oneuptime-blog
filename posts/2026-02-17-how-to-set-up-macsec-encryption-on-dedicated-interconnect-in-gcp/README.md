@@ -64,6 +64,7 @@ When creating a new Dedicated Interconnect, specify MACsec support:
 
 ```bash
 # Create a Dedicated Interconnect with MACsec enabled
+
 gcloud compute interconnects create my-macsec-interconnect \
     --interconnect-type=DEDICATED \
     --link-type=LINK_TYPE_ETHERNET_10G_LR \

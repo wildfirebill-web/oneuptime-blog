@@ -102,6 +102,7 @@ This class represents a single model version with all its associated metadata. E
 
 ```python
 # registry.py
+
 import hashlib
 import json
 from dataclasses import dataclass, field

@@ -8,7 +8,7 @@ Description: Learn how to deploy and configure K3s for edge computing scenarios 
 
 ## Introduction
 
-K3s was designed with edge computing in mind — it's a lightweight Kubernetes distribution that runs on resource-constrained hardware at the edge of the network. Edge deployments have unique requirements: limited connectivity, resource constraints, autonomous operation, and the need for centralized management from a remote headquarters. This guide covers best practices for deploying K3s in edge environments.
+K3s was designed with edge computing in mind - it's a lightweight Kubernetes distribution that runs on resource-constrained hardware at the edge of the network. Edge deployments have unique requirements: limited connectivity, resource constraints, autonomous operation, and the need for centralized management from a remote headquarters. This guide covers best practices for deploying K3s in edge environments.
 
 ## What Makes K3s Ideal for Edge Computing
 
@@ -40,6 +40,7 @@ Common edge hardware for K3s:
 
 ```bash
 # Raspberry Pi 4 (4GB RAM recommended)
+
 # NVIDIA Jetson Nano/Xavier
 # Intel NUC
 # Industrial PC with x86/ARM CPU

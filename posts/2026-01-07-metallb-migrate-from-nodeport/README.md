@@ -440,6 +440,7 @@ Example DNS update using a common DNS provider API:
 
 ```bash
 # Example for updating A record
+
 # Replace with your DNS provider's API
 curl -X PUT "https://api.dns-provider.com/zones/example.com/records/my-app" \
   -H "Authorization: Bearer $DNS_API_TOKEN" \

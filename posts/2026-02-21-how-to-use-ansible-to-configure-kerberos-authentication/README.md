@@ -38,6 +38,7 @@ This playbook installs Kerberos packages on both Debian and RHEL systems:
 
 ```yaml
 # install_kerberos.yml - Install Kerberos client packages
+
 ---
 - name: Install Kerberos client
   hosts: all

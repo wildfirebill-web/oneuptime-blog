@@ -59,6 +59,7 @@ Create your migrations directory and your first migration:
 
 ```bash
 # Create the migrations directory
+
 mkdir -p db/migrations
 
 # Create a new migration with timestamp versioning

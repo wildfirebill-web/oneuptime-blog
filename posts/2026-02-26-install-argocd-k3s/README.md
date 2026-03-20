@@ -33,6 +33,7 @@ You need a Linux machine (physical or virtual) with:
 
 ```bash
 # Verify system resources
+
 free -h
 nproc
 df -h /

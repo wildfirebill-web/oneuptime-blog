@@ -14,6 +14,7 @@ A Linux network bridge operates as a software Layer 2 switch, forwarding frames 
 
 ```bash
 # Create a new bridge named br0
+
 ip link add br0 type bridge
 
 # Bring it up
@@ -22,7 +23,7 @@ ip link set br0 up
 
 ## Add Physical Interface to the Bridge
 
-When you add a physical interface to a bridge, it becomes a "bridge port" — it no longer handles IP traffic directly:
+When you add a physical interface to a bridge, it becomes a "bridge port" - it no longer handles IP traffic directly:
 
 ```bash
 # Remove the IP from eth0 first (if it has one)

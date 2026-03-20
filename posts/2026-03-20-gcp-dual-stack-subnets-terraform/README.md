@@ -12,6 +12,7 @@ GCP VPC subnets support a `stack_type` of `IPV4_IPV6` to enable dual-stack. When
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     google = {

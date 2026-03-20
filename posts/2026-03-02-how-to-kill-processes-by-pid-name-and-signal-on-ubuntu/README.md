@@ -36,6 +36,7 @@ The `kill` command sends a signal to a process identified by PID:
 
 ```bash
 # Find the PID first
+
 ps aux | grep nginx
 pgrep nginx
 

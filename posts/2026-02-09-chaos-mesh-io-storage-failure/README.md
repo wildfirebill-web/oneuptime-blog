@@ -80,6 +80,7 @@ spec:
 
 ```bash
 # Watch pod logs during IO chaos
+
 kubectl logs -f -l app=database
 
 # Check IO metrics

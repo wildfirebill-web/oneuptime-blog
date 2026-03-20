@@ -33,6 +33,7 @@ This instrumentation tracks both total requests and good requests:
 
 ```python
 # Python OpenTelemetry SLI instrumentation
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.resources import Resource

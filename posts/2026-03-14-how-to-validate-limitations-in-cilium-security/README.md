@@ -30,6 +30,7 @@ Create a dedicated namespace and test workloads to validate policies without aff
 
 ```bash
 # Create a test namespace for validation
+
 kubectl create namespace cilium-validation
 
 # Deploy test client and server pods

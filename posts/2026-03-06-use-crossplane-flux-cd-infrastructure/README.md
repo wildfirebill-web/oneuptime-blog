@@ -42,6 +42,7 @@ Create a HelmRelease to install Crossplane through Flux.
 
 ```yaml
 # infrastructure/crossplane/namespace.yaml
+
 # Dedicated namespace for Crossplane system components
 apiVersion: v1
 kind: Namespace

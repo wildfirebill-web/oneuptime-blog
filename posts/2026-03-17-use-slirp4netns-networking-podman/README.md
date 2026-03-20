@@ -18,6 +18,7 @@ slirp4netns is a user-space networking tool that creates a TAP device in the con
 
 ```bash
 # Check if slirp4netns is installed
+
 which slirp4netns
 
 # Check the version

@@ -35,6 +35,7 @@ Graphing raw counter values produces misleading visualizations:
 
 ```promql
 # DON'T DO THIS - raw counter is rarely useful
+
 http_requests_total
 ```
 

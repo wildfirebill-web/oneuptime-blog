@@ -36,6 +36,7 @@ Check your current mount options:
 
 ```bash
 # See mount options for all filesystems
+
 mount | grep -E "ext4|xfs"
 ```
 

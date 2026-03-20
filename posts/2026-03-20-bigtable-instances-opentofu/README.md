@@ -14,6 +14,7 @@ Cloud Bigtable is a petabyte-scale, fully managed NoSQL database designed for hi
 
 ```hcl
 # main.tf - Production Bigtable instance with SSD storage
+
 resource "google_bigtable_instance" "production" {
   name = "my-bigtable-instance"
 

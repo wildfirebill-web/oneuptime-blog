@@ -29,6 +29,7 @@ This guide covers the most common CNI plugin failures and their resolutions.
 ```bash
 kubectl describe pod failing-pod
 # Look for events like:
+
 # Failed to create pod sandbox: ... failed to set up CNI network
 
 # Check CNI logs on the node where the pod is scheduled

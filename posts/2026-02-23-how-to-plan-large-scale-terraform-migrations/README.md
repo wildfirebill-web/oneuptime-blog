@@ -20,6 +20,7 @@ A migration is "large-scale" when it involves multiple Terraform state files or 
 
 ```bash
 # Count resources across all state files
+
 find . -name "terraform.tfstate" -exec sh -c '
   echo "State: {}"
   terraform state list -state="{}" 2>/dev/null | wc -l

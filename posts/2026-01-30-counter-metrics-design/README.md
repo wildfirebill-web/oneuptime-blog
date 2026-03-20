@@ -61,6 +61,7 @@ Follow the pattern: `<namespace>_<name>_<unit>_total`
 
 ```text
 # Good names
+
 http_requests_total
 payment_transactions_processed_total
 email_sends_total

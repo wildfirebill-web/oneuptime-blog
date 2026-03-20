@@ -53,6 +53,7 @@ flowchart TB
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="storage-rg"
 STORAGE_ACCOUNT="myappstorage2026"
 LOCATION="eastus"

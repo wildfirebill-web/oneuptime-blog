@@ -14,6 +14,7 @@ Cloud Dataproc is a managed Apache Spark and Hadoop service on GCP. OpenTofu cre
 
 ```hcl
 # main.tf - Standard Dataproc cluster for Spark jobs
+
 resource "google_dataproc_cluster" "spark_cluster" {
   name   = "spark-processing-cluster"
   region = "us-central1"

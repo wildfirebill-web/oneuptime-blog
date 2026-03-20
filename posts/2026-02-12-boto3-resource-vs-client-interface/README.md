@@ -20,6 +20,7 @@ Here's what basic S3 operations look like with the client interface.
 import boto3
 
 # Create an S3 client
+
 s3_client = boto3.client('s3')
 
 # List all buckets

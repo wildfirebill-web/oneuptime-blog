@@ -63,7 +63,7 @@ volumes:
 
 ## Environment Variables
 
-```
+```text
 ELASTIC_PASSWORD = your-elastic-password
 KIBANA_PASSWORD = kibana-system-password
 ```
@@ -74,6 +74,7 @@ Elasticsearch requires a higher value for virtual memory maps:
 
 ```bash
 # On the Docker host
+
 sudo sysctl -w vm.max_map_count=262144
 
 # Make permanent

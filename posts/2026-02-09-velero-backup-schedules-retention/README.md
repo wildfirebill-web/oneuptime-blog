@@ -22,6 +22,7 @@ Before creating schedules, install Velero with appropriate backup storage config
 
 ```bash
 # Install Velero with AWS S3 backend
+
 velero install \
   --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.9.0 \

@@ -32,6 +32,7 @@ For smaller GPUs, quantized models (GPTQ, AWQ, bitsandbytes) reduce VRAM require
 
 ```bash
 # Check GPU and driver
+
 nvidia-smi
 
 # Check CUDA version

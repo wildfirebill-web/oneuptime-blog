@@ -288,6 +288,7 @@ Python code for loading data programmatically:
 
 ```python
 # snowflake_loader.py
+
 # Load data into Snowflake using Python
 
 import snowflake.connector

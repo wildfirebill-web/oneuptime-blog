@@ -27,6 +27,7 @@ Enable the required APIs.
 
 ```bash
 # Enable Cloud Run and Cloud Scheduler APIs
+
 gcloud services enable run.googleapis.com cloudscheduler.googleapis.com
 ```
 

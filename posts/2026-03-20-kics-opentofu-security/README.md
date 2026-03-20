@@ -20,6 +20,7 @@ Learn how to use KICS to perform comprehensive security scans of OpenTofu config
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

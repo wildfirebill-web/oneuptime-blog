@@ -22,6 +22,7 @@ resource "aws_backup_vault" "main" {
 }
 
 # Lock the vault to prevent deletion (compliance requirement)
+
 resource "aws_backup_vault_lock_configuration" "compliance" {
   backup_vault_name   = aws_backup_vault.main.name
   min_retention_days  = 7

@@ -32,6 +32,7 @@ The fastest way to get Semaphore running is with Docker Compose.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

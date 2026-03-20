@@ -411,6 +411,7 @@ def update_by_query_with_progress(index, query, script, batch_size=1000):
     return status.get("response", {})
 
 # Usage
+
 result = update_by_query_with_progress(
     index="products",
     query={"term": {"category": "electronics"}},

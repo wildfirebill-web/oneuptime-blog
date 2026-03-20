@@ -16,6 +16,7 @@ Sometimes the troubleshooting tools themselves fail to work - bpftool is not ins
 
 ```bash
 # calico-node pod may not have bpftool installed
+
 kubectl exec -n calico-system ds/calico-node -c calico-node -- bpftool version
 # Error: bpftool: command not found
 

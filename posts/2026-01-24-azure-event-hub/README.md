@@ -60,6 +60,7 @@ Start by creating the Event Hub infrastructure using Azure CLI.
 
 ```bash
 # Create a resource group for Event Hub resources
+
 az group create \
   --name myEventHubRG \
   --location eastus

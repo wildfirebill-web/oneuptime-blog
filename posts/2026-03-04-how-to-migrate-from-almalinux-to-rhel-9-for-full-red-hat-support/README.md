@@ -36,6 +36,7 @@ cat /etc/redhat-release
 sudo subscription-manager status
 
 # Verify no AlmaLinux packages remain
+
 rpm -qa | grep almalinux
 # Should return nothing
 

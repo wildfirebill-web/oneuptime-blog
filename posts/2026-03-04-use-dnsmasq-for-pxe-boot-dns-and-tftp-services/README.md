@@ -34,6 +34,7 @@ interface=eth0
 bind-interfaces
 
 # DHCP range
+
 dhcp-range=192.168.1.100,192.168.1.200,12h
 
 # PXE boot options

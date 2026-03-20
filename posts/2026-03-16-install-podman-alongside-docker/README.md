@@ -26,6 +26,7 @@ First, confirm Docker is working:
 
 ```bash
 # Check Docker version
+
 docker --version
 
 # Check Docker service status

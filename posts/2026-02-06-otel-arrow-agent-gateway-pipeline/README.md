@@ -24,6 +24,7 @@ Each agent Collector runs on the host, receives OTLP from local applications, an
 
 ```yaml
 # agent-config.yaml
+
 receivers:
   otlp:
     protocols:

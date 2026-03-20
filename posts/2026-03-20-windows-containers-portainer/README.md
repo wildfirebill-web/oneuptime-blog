@@ -1,4 +1,4 @@
-# How to Manage Windows Containers with Portainer
+# How to Manage Windows Containers with Portainer - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ Windows containers run the Windows kernel and are suited for:
 
 ```powershell
 # Docker Desktop (Windows 10/11)
+
 & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
 
 # Verify mode
@@ -58,7 +59,7 @@ docker run -d `
 
 In Portainer: **Containers → Add Container**
 
-```
+```text
 Name: my-iis
 Image: mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
 Port Mapping: 8080 → 80/tcp
@@ -119,4 +120,4 @@ C:\> powershell Get-Service
 
 ## Conclusion
 
-Portainer provides workable management for Windows containers with the same web UI familiar to Linux container users. While Windows containers are heavier and slower to start than Linux equivalents, Portainer simplifies deployment, log viewing, and console access — making Windows container workflows more accessible to teams used to Portainer on Linux.
+Portainer provides workable management for Windows containers with the same web UI familiar to Linux container users. While Windows containers are heavier and slower to start than Linux equivalents, Portainer simplifies deployment, log viewing, and console access - making Windows container workflows more accessible to teams used to Portainer on Linux.

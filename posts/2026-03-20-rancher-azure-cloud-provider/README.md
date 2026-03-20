@@ -20,6 +20,7 @@ The Azure cloud provider integration lets your Rancher-managed Kubernetes cluste
 
 ```bash
 # Log in to Azure CLI
+
 az login
 
 # Create a service principal with Contributor role on the resource group

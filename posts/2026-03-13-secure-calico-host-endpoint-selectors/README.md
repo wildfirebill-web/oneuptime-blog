@@ -26,6 +26,7 @@ Design selectors so that a missing label results in the most restrictive policy 
 
 ```yaml
 # UNSAFE: A missing 'trusted' label means no restriction
+
 selector: "trusted == 'true'"
 
 # SAFER: A missing 'unrestricted' label means policy applies

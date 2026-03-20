@@ -35,6 +35,7 @@ DOMAIN="portainer.example.com"
 echo "[$(date)] Starting certificate renewal for $DOMAIN"
 
 # Step 1: Renew the certificate (using Certbot)
+
 sudo certbot renew --cert-name "$DOMAIN" --quiet
 
 # Step 2: Copy renewed certs to Portainer's cert directory
@@ -97,7 +98,7 @@ Set up proactive alerts before certificates expire:
 
 ```bash
 #!/bin/bash
-# check-cert-expiry.sh — run via cron daily
+# check-cert-expiry.sh - run via cron daily
 
 DOMAIN="portainer.example.com"
 PORT="9443"

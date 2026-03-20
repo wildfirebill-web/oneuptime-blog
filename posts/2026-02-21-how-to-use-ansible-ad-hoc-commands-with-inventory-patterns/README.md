@@ -16,6 +16,7 @@ Let us start with the fundamentals. Every Ansible ad hoc command starts with a h
 
 ```bash
 # Target all hosts in the inventory
+
 ansible all -a "hostname"
 
 # Target a specific group

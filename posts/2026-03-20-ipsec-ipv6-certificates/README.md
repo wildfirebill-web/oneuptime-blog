@@ -14,6 +14,7 @@ Certificate-based authentication for IPv6 IPsec uses X.509 certificates to authe
 
 ```bash
 # ============================================================
+
 # Step 1: Create Certificate Authority
 # ============================================================
 # Generate CA private key
@@ -75,7 +76,7 @@ scp /tmp/gw2.cert.pem root@gw2:/etc/swanctl/x509/    # (generated separately on 
 
 ### GW1 /etc/swanctl/conf.d/vpn-cert.conf
 
-```
+```text
 connections {
     gw1-to-gw2 {
         version = 2
@@ -179,4 +180,4 @@ swanctl --initiate conn:gw1-to-gw2   # Rekeys with new cert
 
 ## Summary
 
-Certificate-based IPv6 IPsec uses strongSwan's `pki` tool to create a CA, generate per-gateway certificates with IPv6 Subject Alternative Names, and configure `auth = pubkey` with `certs =` in swanctl.conf. Distribute only certificates and the CA cert — never private keys. strongSwan validates certificates against the CA in `/etc/swanctl/x509ca/` and checks CRLs if present. For large deployments, integrate with an enterprise CA (Active Directory, Vault) and use SCEP or EST for automated certificate enrollment.
+Certificate-based IPv6 IPsec uses strongSwan's `pki` tool to create a CA, generate per-gateway certificates with IPv6 Subject Alternative Names, and configure `auth = pubkey` with `certs =` in swanctl.conf. Distribute only certificates and the CA cert - never private keys. strongSwan validates certificates against the CA in `/etc/swanctl/x509ca/` and checks CRLs if present. For large deployments, integrate with an enterprise CA (Active Directory, Vault) and use SCEP or EST for automated certificate enrollment.

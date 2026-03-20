@@ -24,6 +24,7 @@ The general troubleshooting principle for post-installation issues is regression
 
 ```bash
 # Run with verbose output to see specific failures
+
 cilium connectivity test --verbose 2>&1 | tee /tmp/ct-output.log
 
 # Identify which test scenarios fail

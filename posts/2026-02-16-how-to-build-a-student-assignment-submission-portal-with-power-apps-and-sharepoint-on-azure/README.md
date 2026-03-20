@@ -73,6 +73,7 @@ Create these lists using the SharePoint REST API or PnP PowerShell.
 
 ```powershell
 # Connect to the SharePoint site
+
 Connect-PnPOnline -Url "https://yourtenent.sharepoint.com/sites/AssignmentPortal" -Interactive
 
 # Create the Courses list

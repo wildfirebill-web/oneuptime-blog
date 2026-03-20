@@ -18,6 +18,7 @@ Before we migrate, let us understand what `with_nested` did. Given two lists, it
 
 ```yaml
 # OLD: with_nested creates all combinations of users and directories
+
 - name: Create user directories
   ansible.builtin.file:
     path: "/home/{{ item[0] }}/{{ item[1] }}"

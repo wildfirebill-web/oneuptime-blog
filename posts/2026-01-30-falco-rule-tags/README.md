@@ -16,6 +16,7 @@ Tags in Falco are labels attached to rules that help categorize them by purpose,
 
 ```yaml
 # Basic rule with tags
+
 - rule: Detect Shell in Container
   desc: Detects when a shell is spawned inside a container
   condition: >

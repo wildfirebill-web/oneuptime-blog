@@ -22,6 +22,7 @@ Ansible supports several pattern types:
 
 ```yaml
 # Single host
+
 - hosts: web1.example.com
 
 # Group name

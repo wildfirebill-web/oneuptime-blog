@@ -84,6 +84,7 @@ The destination payload includes:
 
 ```bash
 # Create SQS queue for successful executions
+
 aws sqs create-queue --queue-name order-processing-success
 
 # Get queue ARN

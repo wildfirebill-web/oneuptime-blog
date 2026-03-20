@@ -341,6 +341,7 @@ app.get('/events', (req, res) => {
 
 ```bash
 # Deploy with streaming support
+
 gcloud run deploy sse-service \
   --source . \
   --region us-central1 \

@@ -16,6 +16,7 @@ Configure the collector to push metrics to Prometheus via remote write.
 
 ```yaml
 # collector-prometheus-remote-write.yaml
+
 receivers:
   otlp:
     protocols:

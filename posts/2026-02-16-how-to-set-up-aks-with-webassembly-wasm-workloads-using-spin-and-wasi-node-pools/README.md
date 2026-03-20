@@ -36,6 +36,7 @@ WASI node pools require the aks-preview extension.
 
 ```bash
 # Install or update the aks-preview extension
+
 az extension add --name aks-preview --upgrade
 
 # Register the WasmNodePoolPreview feature flag

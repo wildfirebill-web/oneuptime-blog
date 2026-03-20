@@ -20,6 +20,7 @@ VeraCrypt is not in the Ubuntu default repositories. You install it either from 
 
 ```bash
 # Add the VeraCrypt PPA
+
 sudo add-apt-repository ppa:unit193/encryption
 sudo apt update
 

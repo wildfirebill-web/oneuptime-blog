@@ -113,6 +113,7 @@ The separate branch pattern is most useful when combined with pull request autom
 
 ```yaml
 # GitHub Actions workflow triggered when the automation branch is pushed
+
 name: Create Image Update PR
 on:
   push:

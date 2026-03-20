@@ -44,6 +44,7 @@ First, create a child template for networking:
 
 ```yaml
 # templates/network.yaml - Child stack for VPC and subnets
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Network infrastructure - VPC and subnets
 

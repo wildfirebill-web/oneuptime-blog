@@ -18,7 +18,7 @@ AWS API Gateway stages allow you to manage multiple deployments of your API, eac
 
 ## Project Structure
 
-```
+```text
 api-gateway/
 ├── main.tf
 ├── variables.tf
@@ -32,6 +32,7 @@ Before creating a stage, you need a REST API and a deployment resource. A deploy
 
 ```hcl
 # main.tf - REST API definition
+
 resource "aws_api_gateway_rest_api" "example" {
   name        = var.api_name
   description = "Example REST API managed by OpenTofu"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Reverse Proxy, DevOps, Troubleshooting
+Tags: Nginx, Reverse Proxy, DevOps, Troubleshooting
 
 Description: Learn how to fix trailing slash issues in Nginx proxy_pass directives that cause 404 errors, incorrect routing, and broken URLs in your reverse proxy configuration.
 
@@ -18,6 +18,7 @@ Consider these two configurations that look almost identical:
 
 ```nginx
 # Configuration A - WITHOUT trailing slash
+
 location /api {
     proxy_pass http://backend:3000;
 }

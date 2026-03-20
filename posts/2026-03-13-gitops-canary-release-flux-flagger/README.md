@@ -29,6 +29,7 @@ Manage Flagger itself as a Flux HelmRelease so its installation is GitOps-manage
 
 ```yaml
 # infrastructure/controllers/flagger.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

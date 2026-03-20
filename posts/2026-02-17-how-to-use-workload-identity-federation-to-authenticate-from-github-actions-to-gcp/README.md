@@ -42,6 +42,7 @@ The identity pool is a container for external identity providers:
 
 ```bash
 # Create a Workload Identity Pool
+
 gcloud iam workload-identity-pools create "github-pool" \
   --location="global" \
   --display-name="GitHub Actions Pool" \

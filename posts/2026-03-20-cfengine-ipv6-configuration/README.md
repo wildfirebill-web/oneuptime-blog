@@ -10,7 +10,7 @@ CFEngine is one of the oldest configuration management tools, designed for high 
 
 ## CFEngine Policy Structure
 
-```
+```text
 /var/cfengine/inputs/
 ├── promises.cf          # Main policy
 ├── ipv6/
@@ -173,6 +173,7 @@ bundle edit_line ip6tables_rules {
 
 ```bash
 # Test policy syntax
+
 cf-promises -f /var/cfengine/inputs/promises.cf
 
 # Run agent (apply policy)
@@ -186,4 +187,4 @@ systemctl start cfengine3
 systemctl enable cfengine3
 ```
 
-CFEngine's convergence model — continuously checking and correcting configuration drift — makes it effective for maintaining IPv6 settings across long-lived server fleets where manual changes might otherwise cause configuration drift over time.
+CFEngine's convergence model - continuously checking and correcting configuration drift - makes it effective for maintaining IPv6 settings across long-lived server fleets where manual changes might otherwise cause configuration drift over time.

@@ -1,4 +1,4 @@
-# How to Set Up a Python Development Environment with Portainer
+# How to Set Up a Python Development Environment with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Containerized development environments ensure every team member uses the same Py
 
 ```dockerfile
 # Dockerfile.dev - Python development environment
+
 FROM python:3.12-slim
 
 # Set working directory
@@ -299,4 +300,4 @@ docker exec python_app alembic downgrade -1
 
 ## Conclusion
 
-Your Python development environment is now fully containerized and managed through Portainer. The setup includes hot-reload for rapid iteration, remote debugging for VS Code, a PostgreSQL database, Redis cache, and Celery worker — everything you need for modern Python development. Portainer makes it easy to view logs, restart services, and monitor resource usage across all components of your dev stack.
+Your Python development environment is now fully containerized and managed through Portainer. The setup includes hot-reload for rapid iteration, remote debugging for VS Code, a PostgreSQL database, Redis cache, and Celery worker - everything you need for modern Python development. Portainer makes it easy to view logs, restart services, and monitor resource usage across all components of your dev stack.

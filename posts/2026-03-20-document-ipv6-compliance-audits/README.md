@@ -12,7 +12,7 @@ IPv6 compliance audits require systematic documentation of your IPv6 deployment,
 
 ## IPv6 Audit Documentation Framework
 
-```
+```text
 Required Documentation Categories:
 
 1. Network Architecture Documentation
@@ -51,6 +51,7 @@ mkdir -p $OUTPUT_DIR
 echo "Collecting IPv6 compliance evidence..."
 
 # 1. IPv6 address assignments
+
 ip -6 addr show > "$OUTPUT_DIR/ipv6_addresses.txt"
 
 # 2. IPv6 routing table

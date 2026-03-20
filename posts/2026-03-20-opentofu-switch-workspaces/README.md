@@ -14,6 +14,7 @@ The `tofu workspace select` command switches the active workspace. After switchi
 
 ```bash
 # Switch to the production workspace
+
 tofu workspace select production
 
 # Output:
@@ -68,7 +69,7 @@ tofu state list
 tofu plan
 ```
 
-The configuration files (`*.tf`) are shared — only the state changes.
+The configuration files (`*.tf`) are shared - only the state changes.
 
 ## Workspace-Aware Resource Naming
 

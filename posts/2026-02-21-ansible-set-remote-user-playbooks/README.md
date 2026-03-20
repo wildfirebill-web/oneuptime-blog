@@ -16,6 +16,7 @@ By default, Ansible uses the username of the user running the playbook on the co
 
 ```bash
 # If you are logged in as 'deploy', this connects as 'deploy'
+
 ansible-playbook -i inventory.ini site.yml
 ```
 

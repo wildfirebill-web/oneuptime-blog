@@ -28,6 +28,7 @@ For automated installations using Autoinstall, specify minimal packages:
 
 ```yaml
 # autoinstall.yaml - minimal configuration
+
 version: 1
 locale: en_US.UTF-8
 keyboard:

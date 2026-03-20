@@ -14,6 +14,7 @@ OpenTofu creates, updates, and destroys resources concurrently to reduce deploym
 
 ```bash
 # Default parallelism (10 concurrent operations)
+
 tofu apply
 
 # Increase concurrency for faster deployments
@@ -79,11 +80,11 @@ tofu apply -parallelism=4
 Parallelism is always constrained by the dependency graph:
 
 ```hcl
-# These two resources have no dependency — can run in parallel
+# These two resources have no dependency - can run in parallel
 resource "aws_s3_bucket" "a" { bucket = "bucket-a" }
 resource "aws_s3_bucket" "b" { bucket = "bucket-b" }
 
-# This depends on "a" — runs after a, even with high parallelism
+# This depends on "a" - runs after a, even with high parallelism
 resource "aws_s3_bucket_versioning" "a" {
   bucket = aws_s3_bucket.a.id
 }

@@ -28,6 +28,7 @@ Check which admission controllers are currently enabled:
 
 ```bash
 # View the API server configuration
+
 talosctl -n 192.168.1.10 get machineconfig -o yaml | grep -A 5 "enable-admission-plugins"
 
 # Check the API server pod spec for admission plugin flags

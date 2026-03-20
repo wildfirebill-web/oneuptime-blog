@@ -14,6 +14,7 @@ Monitoring hardware health is essential for preventing unexpected failures. lm_s
 
 ```bash
 # Install lm_sensors for temperature and voltage monitoring
+
 sudo dnf install -y lm_sensors
 
 # Install smartmontools for disk health monitoring

@@ -33,6 +33,7 @@ First, enable the AnyVolumeDataSource and CrossNamespaceVolumeDataSource feature
 
 ```yaml
 # For kubeadm clusters, add to kube-apiserver manifest
+
 apiVersion: v1
 kind: Pod
 metadata:

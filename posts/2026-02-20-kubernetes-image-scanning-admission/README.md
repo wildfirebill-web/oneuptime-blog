@@ -62,6 +62,7 @@ Trivy is an open-source vulnerability scanner that can run as a Kubernetes admis
 
 ```bash
 # Install Trivy Operator using Helm
+
 helm repo add aqua https://aquasecurity.github.io/helm-charts
 helm repo update
 

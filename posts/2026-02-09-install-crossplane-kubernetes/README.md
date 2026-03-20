@@ -18,6 +18,7 @@ Before installing Crossplane, ensure your cluster meets these requirements:
 
 ```bash
 # Check Kubernetes version (1.19+)
+
 kubectl version --short
 
 # Verify RBAC is enabled

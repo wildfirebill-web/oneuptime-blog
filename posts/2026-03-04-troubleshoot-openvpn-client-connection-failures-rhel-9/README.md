@@ -40,6 +40,7 @@ First, get more information from both sides.
 
 ```bash
 # On the server, increase verbosity temporarily
+
 # In /etc/openvpn/server/server.conf, change:
 # verb 3
 # to:

@@ -36,6 +36,7 @@ Enabling GuardDuty is remarkably simple. One API call and it starts analyzing yo
 
 ```bash
 # Enable GuardDuty in the current region
+
 aws guardduty create-detector \
   --enable \
   --finding-publishing-frequency FIFTEEN_MINUTES

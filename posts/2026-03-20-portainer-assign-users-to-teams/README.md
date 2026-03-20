@@ -41,6 +41,7 @@ Once you've created users and teams in Portainer, the next step is assigning use
 
 ```bash
 # Get admin token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \

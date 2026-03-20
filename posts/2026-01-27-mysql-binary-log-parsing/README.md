@@ -63,6 +63,7 @@ To enable binary logging, add these settings to your MySQL configuration:
 
 [mysqld]
 # Enable binary logging with a unique server ID
+
 server-id = 1
 log_bin = /var/lib/mysql/mysql-bin
 

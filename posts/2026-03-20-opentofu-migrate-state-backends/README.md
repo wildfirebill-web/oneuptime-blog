@@ -1,8 +1,8 @@
-# How to Migrate State Between Backends in OpenTofu
+# How to Migrate State Between Backends in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, State, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, State, Backend
 
 Description: Learn how to migrate OpenTofu state between backends safely, including from local to S3, between S3 buckets, and across different backend types.
 
@@ -16,6 +16,7 @@ The simplest migration is changing the backend configuration and running `tofu i
 
 ```bash
 # Step 1: Update backend.tf to the new backend
+
 # (change the bucket, region, or backend type)
 
 # Step 2: Run init with migration flag

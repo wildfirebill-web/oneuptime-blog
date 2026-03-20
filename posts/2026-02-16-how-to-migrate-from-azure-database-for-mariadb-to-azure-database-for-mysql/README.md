@@ -117,6 +117,7 @@ Best for larger databases. Uses continuous replication for a smooth cutover.
 
 ```bash
 # Create the target Azure Database for MySQL Flexible Server
+
 az mysql flexible-server create \
   --resource-group myResourceGroup \
   --name my-mysql-target \

@@ -665,6 +665,7 @@ Service graph metrics can be visualized in Grafana, Prometheus, or other visuali
 
 ```promql
 # Request rate between service pairs
+
 rate(traces_service_graph_request_total[5m])
 
 # Error rate between service pairs

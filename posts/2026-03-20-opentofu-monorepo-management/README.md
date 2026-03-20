@@ -20,6 +20,7 @@ Learn how to organize and manage multiple OpenTofu projects in a monorepo with s
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

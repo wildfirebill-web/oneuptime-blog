@@ -16,6 +16,7 @@ By default, Istio allows all outbound traffic from the mesh. But this behavior d
 
 ```bash
 # Check the current outbound traffic policy
+
 kubectl get configmap istio -n istio-system -o yaml | grep -A2 outboundTrafficPolicy
 ```
 

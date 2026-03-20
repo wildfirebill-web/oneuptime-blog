@@ -69,6 +69,7 @@ import time
 kinesis = boto3.client('kinesis', region_name='us-east-1')
 
 # Benchmark: 4-shard stream
+
 # Theoretical max: 4 MB/sec or 4000 records/sec
 start = time.time()
 batch_count = 0

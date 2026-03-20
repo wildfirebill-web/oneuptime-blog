@@ -28,6 +28,7 @@ Start by checking the StatefulSet status and associated PVC states.
 
 ```bash
 # Check StatefulSet status
+
 kubectl get statefulset database -o wide
 
 # View StatefulSet events

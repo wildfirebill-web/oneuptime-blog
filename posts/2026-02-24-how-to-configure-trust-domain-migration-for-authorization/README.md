@@ -135,6 +135,7 @@ Update your authorization policies to use the new trust domain:
 
 ```yaml
 # Before
+
 principals: ["cluster.local/ns/backend/sa/api-service"]
 
 # After

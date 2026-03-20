@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Web Server, Linux
+Tags: RHEL, Nginx, Web Server, Linux
 
 Description: A complete guide to installing, configuring, and running Nginx as a web server on Red Hat Enterprise Linux 9.
 
@@ -24,6 +24,7 @@ Nginx is available in the RHEL AppStream repository:
 
 ```bash
 # Install Nginx
+
 sudo dnf install -y nginx
 ```
 

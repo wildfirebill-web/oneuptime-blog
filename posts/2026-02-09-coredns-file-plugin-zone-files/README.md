@@ -299,6 +299,7 @@ After deploying your configuration, test DNS resolution from within the cluster:
 
 ```bash
 # Create a test pod
+
 kubectl run dns-test --image=busybox --restart=Never -- sleep 3600
 
 # Test A record lookup

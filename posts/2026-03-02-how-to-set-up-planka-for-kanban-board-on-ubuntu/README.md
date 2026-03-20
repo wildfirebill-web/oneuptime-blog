@@ -22,6 +22,7 @@ If you need a simple, self-hosted Kanban board and don't need the full project m
 
 ```bash
 # Install Docker
+
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker $USER
 newgrp docker

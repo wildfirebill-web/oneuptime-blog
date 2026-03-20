@@ -65,6 +65,7 @@ sudo vi /etc/security/access.conf
 
 ```bash
 # Allow admin group from anywhere
+
 + : @admins : ALL
 
 # Allow developers only from the office network

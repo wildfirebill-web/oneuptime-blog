@@ -50,6 +50,7 @@ The most common cause is accidental whitespace. This happens frequently with she
 
 ```bash
 # Bad - trailing newline or space in the variable
+
 IMAGE="nginx:latest "
 podman run $IMAGE
 # Error: invalid reference format

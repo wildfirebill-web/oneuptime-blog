@@ -60,6 +60,7 @@ The `__consumer_offsets` and `__transaction_state` topics must exist for coordin
 
 ```bash
 # Check if internal topics exist
+
 kafka-topics.sh --bootstrap-server localhost:9092 --list | grep __
 
 # Expected output:

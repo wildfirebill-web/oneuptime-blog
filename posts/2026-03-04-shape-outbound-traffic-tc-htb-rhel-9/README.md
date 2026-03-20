@@ -32,6 +32,7 @@ Key concepts:
 
 ```bash
 # Step 1: Add the root HTB qdisc
+
 # "default 30" means unmatched traffic goes to class 1:30
 sudo tc qdisc add dev ens192 root handle 1: htb default 30
 

@@ -43,6 +43,7 @@ If Tekton is not already installed, deploy it to your cluster.
 
 ```bash
 # Install Tekton Pipelines
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Install Tekton Triggers

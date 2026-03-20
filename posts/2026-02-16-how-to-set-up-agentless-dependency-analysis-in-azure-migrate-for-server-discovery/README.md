@@ -53,6 +53,7 @@ Here is an example of creating a dedicated service account for this purpose on W
 
 ```powershell
 # Create a local admin account on Windows servers for Azure Migrate dependency analysis
+
 # This account will be used by the appliance to remotely collect network connection data
 $Password = ConvertTo-SecureString "YourSecurePassword123!" -AsPlainText -Force
 New-LocalUser -Name "azuremigrate-dep" -Password $Password -Description "Azure Migrate dependency analysis"

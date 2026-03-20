@@ -20,7 +20,7 @@ A typical ISP receives a /32 from their RIR. The ISP's job is to delegate portio
 
 ## High-Level Address Plan
 
-```
+```text
 ISP prefix: 2001:db8::/32
 
 Allocation map:
@@ -55,6 +55,7 @@ Allocation map:
 import ipaddress
 
 # Generate loopback addresses for core routers
+
 # One /128 per router from infrastructure block
 LOOPBACK_PREFIX = "2001:db8:0000:ff00::/120"  # 256 loopbacks
 
@@ -121,7 +122,7 @@ allocator.allocate_business("BIZ-001")
 
 ## Route Summarization Strategy
 
-```
+```nginx
 The ISP announces these summaries to upstream providers:
   2001:db8::/32  ← Full ISP block (single announcement)
 

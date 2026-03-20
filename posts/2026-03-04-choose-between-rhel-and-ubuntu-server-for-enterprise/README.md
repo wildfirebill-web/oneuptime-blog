@@ -47,6 +47,7 @@ Choosing between RHEL and Ubuntu Server is one of the most common decisions for 
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

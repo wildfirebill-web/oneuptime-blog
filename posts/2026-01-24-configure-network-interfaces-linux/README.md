@@ -37,6 +37,7 @@ Start by understanding your current network setup.
 
 ```bash
 # List all network interfaces with details
+
 ip addr show
 ip a    # Short form
 

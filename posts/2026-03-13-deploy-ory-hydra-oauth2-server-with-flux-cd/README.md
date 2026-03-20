@@ -29,6 +29,7 @@ This guide deploys Ory Hydra with PostgreSQL using the official Ory Helm chart m
 kubectl create namespace hydra
 
 # System secret for cookie encryption and HMAC signing
+
 kubectl create secret generic hydra-secrets \
   --namespace hydra \
   --from-literal=secretsSystem=$(openssl rand -hex 32) \

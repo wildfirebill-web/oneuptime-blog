@@ -33,6 +33,7 @@ The AWS provider exposes functions for parsing and constructing ARNs.
 
 ```hcl
 # Parse an ARN into its components
+
 locals {
   bucket_arn = "arn:aws:s3:::my-example-bucket"
 

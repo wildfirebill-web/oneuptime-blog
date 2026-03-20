@@ -16,6 +16,7 @@ Ansible's `vyos.vyos` collection provides modules specifically designed for VyOS
 
 ```bash
 # Install the VyOS collection
+
 ansible-galaxy collection install vyos.vyos
 ansible-galaxy collection install ansible.netcommon
 ```

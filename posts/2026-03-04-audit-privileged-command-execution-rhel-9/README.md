@@ -35,6 +35,7 @@ First, identify all setuid and setgid binaries on your system:
 
 ```bash
 # Find all setuid executables
+
 sudo find / -xdev -type f -perm -4000 2>/dev/null
 
 # Find all setgid executables

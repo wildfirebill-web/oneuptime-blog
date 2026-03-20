@@ -85,6 +85,7 @@ Credit card numbers appear in several formats in practice. Your regex needs to h
 
 ```text
 # No separators
+
 4532015112830366
 
 # Space-separated groups

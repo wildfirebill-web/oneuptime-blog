@@ -70,6 +70,7 @@ set -e
 echo "=== Kubernetes Service Mesh Readiness Check ==="
 
 # Check Kubernetes version (minimum 1.25 recommended)
+
 KUBE_VERSION=$(kubectl version --short 2>/dev/null | grep Server | awk '{print $3}')
 echo "Kubernetes version: $KUBE_VERSION"
 
@@ -958,7 +959,7 @@ Before going to production, verify these items are properly configured.
 
 ---
 
-## Resource Impact
+Resource Impact
 
 Service meshes add overhead. Understanding the resource impact helps with capacity planning.
 

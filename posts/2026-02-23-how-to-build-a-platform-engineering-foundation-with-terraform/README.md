@@ -27,6 +27,7 @@ Every team needs networking, DNS, and observability. The platform provides this 
 
 ```hcl
 # shared/networking.tf - Shared VPC and networking
+
 module "platform_vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"

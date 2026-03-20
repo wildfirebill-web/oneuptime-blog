@@ -20,6 +20,7 @@ from google.cloud import bigquery
 client = bigquery.Client()
 
 # This will fail if the data doesn't match the table schema
+
 rows = [
     {"user_id": "123", "score": "not_a_number", "created_at": "invalid-date"},
 ]

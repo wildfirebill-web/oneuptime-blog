@@ -48,6 +48,7 @@ Download and install Consul on your servers. The installation is straightforward
 
 ```bash
 # Download Consul (Linux)
+
 curl -fsSL https://releases.hashicorp.com/consul/1.17.0/consul_1.17.0_linux_amd64.zip -o consul.zip
 
 # Extract and install

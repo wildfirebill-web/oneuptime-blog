@@ -37,6 +37,7 @@ Before creating your first application, make sure:
 
 ```bash
 # Verify ArgoCD is running
+
 kubectl get pods -n argocd
 
 # Access ArgoCD (if using port-forward)

@@ -69,6 +69,7 @@ Start by collecting the desired state from your Git repository. This example use
 
 ```python
 # state_collector.py
+
 import yaml
 import subprocess
 from pathlib import Path

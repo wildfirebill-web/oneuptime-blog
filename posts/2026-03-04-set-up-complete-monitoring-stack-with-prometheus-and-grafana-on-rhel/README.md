@@ -14,6 +14,7 @@ A Prometheus and Grafana stack gives you full observability for your RHEL infras
 
 ```bash
 # Create a Prometheus user
+
 sudo useradd --no-create-home --shell /bin/false prometheus
 
 # Create directories

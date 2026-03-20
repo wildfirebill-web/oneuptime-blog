@@ -14,6 +14,7 @@ systemd-networkd can request an IPv4 address via DHCP by setting `DHCP=yes` or `
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 

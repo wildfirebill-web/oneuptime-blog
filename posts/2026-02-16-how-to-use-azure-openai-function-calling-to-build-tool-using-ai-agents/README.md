@@ -52,6 +52,7 @@ Tools are defined as JSON schemas that tell the model what functions are availab
 
 ```python
 # tools.py - Tool definitions for the AI agent
+
 # Each tool is described with a JSON schema that the model reads
 tools = [
     {

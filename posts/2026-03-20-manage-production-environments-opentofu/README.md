@@ -8,12 +8,13 @@ Description: Learn how to manage production environments with OpenTofu using cha
 
 ---
 
-Production infrastructure demands higher standards than dev or staging. Every change needs review, rollback must be instant, and partial deployments must be safe. OpenTofu's production practices go beyond just writing good HCL — they're operational disciplines that prevent incidents.
+Production infrastructure demands higher standards than dev or staging. Every change needs review, rollback must be instant, and partial deployments must be safe. OpenTofu's production practices go beyond just writing good HCL - they're operational disciplines that prevent incidents.
 
 ## Production Configuration
 
 ```hcl
 # environments/production/main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -74,7 +75,7 @@ resource "aws_s3_bucket" "production_data" {
   }
 }
 
-# Object lock for compliance — prevents deletion for 7 years
+# Object lock for compliance - prevents deletion for 7 years
 resource "aws_s3_bucket_object_lock_configuration" "production" {
   bucket = aws_s3_bucket.production_data.id
 
@@ -91,7 +92,7 @@ resource "aws_s3_bucket_object_lock_configuration" "production" {
 
 ```hcl
 # production_iam.tf
-# Production apply role — limited to CI/CD system, requires MFA for humans
+# Production apply role - limited to CI/CD system, requires MFA for humans
 resource "aws_iam_role" "production_deploy" {
   name = "ProductionDeployRole"
 
@@ -172,8 +173,8 @@ output "deployment_summary" {
 ## Best Practices
 
 - Use `prevent_destroy = true` lifecycle rule on databases, storage, and other critical stateful resources.
-- Set `deletion_protection = true` on RDS instances — this is a secondary guard that prevents deletion even if `prevent_destroy` is removed.
+- Set `deletion_protection = true` on RDS instances - this is a secondary guard that prevents deletion even if `prevent_destroy` is removed.
 - Require MFA for human operators assuming the production deploy role.
-- Never run `tofu apply` directly against production from a laptop — always go through CI/CD with proper approvals.
-- Set `skip_final_snapshot = false` on all production databases — you want that snapshot if the worst happens.
-- Keep production state backend separate from staging/dev — use a dedicated S3 bucket with strict access controls.
+- Never run `tofu apply` directly against production from a laptop - always go through CI/CD with proper approvals.
+- Set `skip_final_snapshot = false` on all production databases - you want that snapshot if the worst happens.
+- Keep production state backend separate from staging/dev - use a dedicated S3 bucket with strict access controls.

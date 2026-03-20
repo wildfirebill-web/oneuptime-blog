@@ -117,6 +117,7 @@ Python Lambda functions can use boto3, which comes pre-installed in the Lambda r
 
 ```python
 # dynamodb_client.py
+
 import boto3
 from botocore.config import Config
 

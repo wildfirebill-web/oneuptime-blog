@@ -37,6 +37,7 @@ First, create a Vertex AI Search datastore for your legal documents:
 
 ```bash
 # Enable Vertex AI Search
+
 gcloud services enable discoveryengine.googleapis.com
 
 # Create a GCS bucket for document storage

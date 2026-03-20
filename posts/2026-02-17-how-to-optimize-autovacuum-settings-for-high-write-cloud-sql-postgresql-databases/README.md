@@ -83,6 +83,7 @@ In Cloud SQL, you set these as database flags through the console or gcloud CLI.
 
 ```bash
 # Increase the number of autovacuum workers
+
 gcloud sql instances patch MY_INSTANCE \
   --database-flags=autovacuum_max_workers=6
 ```

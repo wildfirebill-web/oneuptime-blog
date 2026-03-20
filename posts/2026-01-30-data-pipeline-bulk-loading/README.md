@@ -145,6 +145,7 @@ Different databases provide different mechanisms for bulk loading. Here are the 
 
 ```python
 # Python example using psycopg2 COPY for PostgreSQL
+
 # COPY is the fastest way to load data into PostgreSQL
 
 import psycopg2

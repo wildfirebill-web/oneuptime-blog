@@ -100,6 +100,7 @@ output "kubeconfig" {
 
 ```bash
 # Save kubeconfig
+
 tofu output -raw kubeconfig > kubeconfig.yaml
 export KUBECONFIG=./kubeconfig.yaml
 kubectl get nodes

@@ -26,6 +26,7 @@ graph LR
 
 ```promql
 # Instant vector - current value
+
 http_requests_total
 
 # Range vector - values over time (required for rate calculations)

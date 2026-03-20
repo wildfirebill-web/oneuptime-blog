@@ -26,6 +26,7 @@ This guide covers deploying KEDA and configuring ScaledObjects using Flux CD.
 
 ```yaml
 # clusters/my-cluster/keda/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -31,6 +31,7 @@ Install Calico Enterprise operator:
 
 ```bash
 # Add Tigera operator repository
+
 kubectl create -f https://downloads.tigera.io/ee/v3.17.0/manifests/tigera-operator.yaml
 
 # Create pull secret for Calico Enterprise images

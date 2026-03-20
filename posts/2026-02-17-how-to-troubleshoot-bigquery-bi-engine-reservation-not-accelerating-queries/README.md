@@ -24,6 +24,7 @@ First, confirm that your BI Engine reservation is actually set up and active.
 
 ```bash
 # List BI Engine reservations
+
 bq ls --reservation --project_id=my-project --location=US --bi_reservation
 
 # Or using gcloud

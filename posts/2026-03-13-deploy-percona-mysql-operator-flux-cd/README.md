@@ -25,6 +25,7 @@ Deploying the Percona MySQL Operator through Flux CD ensures your MySQL cluster 
 
 ```yaml
 # infrastructure/sources/percona-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

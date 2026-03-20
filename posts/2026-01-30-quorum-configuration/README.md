@@ -84,6 +84,7 @@ etcd is the backbone of Kubernetes and uses Raft consensus, which requires quoru
 
 ```yaml
 # etcd.yaml - 3-node cluster configuration
+
 name: etcd-node-1
 data-dir: /var/lib/etcd
 initial-advertise-peer-urls: https://10.0.1.10:2380

@@ -33,6 +33,7 @@ By default, containers do not restart when they stop:
 
 ```bash
 # This container runs once and stops - no restart
+
 podman run -d --name one-shot --restart no alpine echo "Done"
 
 # Check the status after it exits

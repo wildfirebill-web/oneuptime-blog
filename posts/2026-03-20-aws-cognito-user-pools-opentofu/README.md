@@ -115,6 +115,7 @@ resource "aws_cognito_user_pool" "ses_email" {
 
 ```hcl
 # Custom domain for the hosted UI
+
 resource "aws_cognito_user_pool_domain" "main" {
   domain       = "auth.example.com"
   user_pool_id = aws_cognito_user_pool.main.id

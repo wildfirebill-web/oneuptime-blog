@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Internals, Dependency Graph, Algorithm, Infrastructure as Code
+Tags: OpenTofu, Internals, Dependency Graph, Algorithms, Infrastructure as Code
 
-Description: Understand the nine steps OpenTofu performs when walking the resource dependency graph — from configuration loading to post-apply checks — giving you insight into how plan and apply work internally.
+Description: Understand the nine steps OpenTofu performs when walking the resource dependency graph - from configuration loading to post-apply checks - giving you insight into how plan and apply work internally.
 
 ## Introduction
 
@@ -18,9 +18,10 @@ OpenTofu parses and merges all `.tf` files in the directory:
 
 ```bash
 # What happens in this step:
+
 # - Reads all *.tf and *.tf.json files
 # - Parses HCL syntax
-# - Validates block structure (not values — that's step 4)
+# - Validates block structure (not values - that's step 4)
 # - Merges multi-file configurations
 
 # Errors at this step look like:
@@ -89,7 +90,7 @@ tofu plan -refresh-only
 
 Computes the diff between desired state (config) and actual state:
 
-```
+```text
 For each resource:
   - No diff → no-op (shown as no changes)
   - Config resource, no state → create
@@ -147,14 +148,14 @@ check "health_check" {
 
 ## Error Behavior by Step
 
-```
+```text
 Step 1-3 (Loading): Error stops execution immediately
 Step 4 (Validate): Error stops plan
 Step 5 (Refresh): Error stops plan (unless -refresh=false)
 Step 6 (Plan): Error stops plan
 Step 7 (Plan output): User can cancel here
-Step 8 (Apply): Partial apply — completed resources are saved to state
-Step 9 (Checks): Warning only — does not revert completed changes
+Step 8 (Apply): Partial apply - completed resources are saved to state
+Step 9 (Checks): Warning only - does not revert completed changes
 ```
 
 ## Debugging with TF_LOG
@@ -166,9 +167,9 @@ Each step produces log output at different levels:
 TF_LOG=TRACE tofu plan 2>&1 | head -200
 
 # Step-specific log messages:
-# "Building and walking apply graph" — Step 8
-# "Checking for post-conditions" — Step 9
-# "Refreshing state" — Step 5
+# "Building and walking apply graph" - Step 8
+# "Checking for post-conditions" - Step 9
+# "Refreshing state" - Step 5
 ```
 
 ## Conclusion

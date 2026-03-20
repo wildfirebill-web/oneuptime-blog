@@ -12,7 +12,7 @@ Description: Step-by-step configuration of 6PE (IPv6 Provider Edge) on Cisco IOS
 
 ## Lab Topology
 
-```
+```text
 Lab Topology:
 [CE1] ─── [PE1] ─── [P] ─── [PE2] ─── [CE2]
 IPv6       10.0.0.1   10.0.0.3  10.0.0.2   IPv6
@@ -25,7 +25,7 @@ MP-BGP IPv6 AF runs between PE1 and PE2
 
 ## Step 1: Enable MPLS on Backbone
 
-```
+```text
 ! PE1 - Enable LDP on backbone interface
 !
 mpls ldp router-id Loopback0 force
@@ -47,7 +47,7 @@ show mpls ldp bindings
 
 ## Step 2: Configure IPv6 on PE-CE Interface
 
-```
+```text
 ! PE1 - Configure dual-stack interface toward CE1
 interface GigabitEthernet0/1
  description To CE1 (IPv6 customer)
@@ -63,7 +63,7 @@ show ipv6 neighbors
 
 ## Step 3: Configure MP-BGP with IPv6 Address Family
 
-```
+```text
 ! PE1 - Configure MP-BGP for IPv6
 router bgp 65000
  bgp router-id 10.0.0.1
@@ -96,7 +96,7 @@ router bgp 65000
 
 ## Step 4: Configure CE Routers
 
-```
+```text
 ! CE1 - Customer edge router
 interface GigabitEthernet0/0
  description To PE1
@@ -122,7 +122,7 @@ ipv6 route 2001:db8:site1::/48 Null0
 
 ## Step 5: Verify 6PE
 
-```
+```text
 ! Check MP-BGP IPv6 neighbors
 show bgp ipv6 unicast summary
 ! Should show: PE2 iBGP neighbor, State = Established
@@ -154,7 +154,7 @@ show bgp ipv6 unicast 2001:db8:site2::/48
 
 ## Troubleshoot Common 6PE Issues
 
-```
+```text
 1. BGP neighbor not establishing:
 show bgp ipv6 unicast summary → check state
 ! Fix: Ensure neighbor is using update-source Loopback0

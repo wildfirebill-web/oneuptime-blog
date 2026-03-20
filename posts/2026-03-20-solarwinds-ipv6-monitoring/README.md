@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SolarWinds, IPv6, Network Monitoring, NPM, SNMP, Enterprise
+Tags: SolarWinds, IPv6, Network Monitoring, Npm, SNMP, Enterprise
 
 Description: Configure SolarWinds Network Performance Monitor (NPM) to discover, monitor, and alert on IPv6-addressed network devices and interfaces.
 
@@ -12,7 +12,7 @@ SolarWinds NPM provides enterprise-grade IPv6 monitoring capabilities including 
 
 ## SolarWinds NPM IPv6 Prerequisites
 
-```
+```text
 Requirements:
 - SolarWinds NPM 12.x or later (for full IPv6 support)
 - Polling engine with IPv6 connectivity
@@ -27,7 +27,7 @@ Check IPv6 Polling is enabled
 
 ## Adding IPv6 Nodes to SolarWinds
 
-```
+```sql
 Method 1: Manual Add
 1. My Dashboards > Network > Manage Nodes > Add Node
 2. Enter IPv6 address: 2001:db8::router1
@@ -53,7 +53,7 @@ Method 2: Network Discovery
 
 ## IPv6 Interface Monitoring in NPM
 
-```
+```sql
 After node is added:
 1. Node Details page > Interfaces tab
 2. Select interfaces to monitor
@@ -72,7 +72,7 @@ For IPv6-specific interface stats:
 
 ## SolarWinds NCM (Network Configuration Manager) for IPv6
 
-```
+```text
 Configure NCM for IPv6 device management:
 1. Settings > NCM Settings
 2. Enable SSH for device connection
@@ -88,7 +88,7 @@ NCM can back up configs from:
 
 ## Alerting on IPv6 Node Issues
 
-```
+```text
 Create IPv6-specific alerts:
 1. Alerts & Activity > Manage Alerts > Add Alert
 2. Object Type: Node
@@ -107,7 +107,7 @@ Custom Properties for IPv6:
 
 ## IPv6 Topology in NetPath and NPM
 
-```
+```text
 SolarWinds NetPath with IPv6:
 1. My Dashboards > NetPath > New Service
 2. Target: [2001:db8::destination]:80
@@ -124,6 +124,7 @@ Network Atlas/Maps:
 
 ```powershell
 # Query SolarWinds API for IPv6 nodes (PowerShell)
+
 $swis = Connect-Swis -Hostname localhost -Username admin -Password pass
 
 # Get all IPv6 nodes

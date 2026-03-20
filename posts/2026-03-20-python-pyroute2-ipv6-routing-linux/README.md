@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, pyroute2, IPv6, Linux, Routing, Netlink, Network Automation
+Tags: Python, Pyroute2, IPv6, Linux, Routing, Netlink, Network Automation
 
 Description: Use pyroute2 to manage IPv6 routes, addresses, and interfaces on Linux using the Netlink API from Python.
 
@@ -163,6 +163,7 @@ def monitor_ipv6_routes():
                     print(f"Event: {event} → {dst}/{prefix_len}")
 
 # Start monitoring in background
+
 monitor_thread = threading.Thread(target=monitor_ipv6_routes, daemon=True)
 monitor_thread.start()
 ```

@@ -105,6 +105,7 @@ Snapshots can take time depending on database size.
 
 ```bash
 # Wait for snapshot to complete
+
 aws rds wait db-snapshot-available \
   --db-snapshot-identifier my-db-before-migration-2026-02-12
 

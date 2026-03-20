@@ -18,6 +18,7 @@ Every ansible-lint rule is a Python class that extends `AnsibleLintRule`. The cl
 
 ```python
 # anatomy_of_a_rule.py - Shows all available hook methods
+
 """Demonstrates the full rule API."""
 from ansiblelint.rules import AnsibleLintRule
 from ansiblelint.file_utils import Lintable

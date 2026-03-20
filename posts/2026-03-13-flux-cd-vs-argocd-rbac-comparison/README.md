@@ -20,6 +20,7 @@ Flux CD is designed as a Kubernetes-native operator and delegates all access con
 
 ```yaml
 # Flux multi-tenant setup: tenant gets their own namespace
+
 # clusters/production/tenants/team-a.yaml
 apiVersion: v1
 kind: Namespace

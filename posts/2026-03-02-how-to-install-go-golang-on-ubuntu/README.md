@@ -16,6 +16,7 @@ Ubuntu's apt repositories include Go, but it's often several versions behind. Go
 
 ```bash
 # What apt provides (often outdated)
+
 apt show golang | grep Version
 
 # Compare with the current version at golang.org

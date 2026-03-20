@@ -24,6 +24,7 @@ Without tracing, subprocess failures are difficult to debug. You lose visibility
 
 ```bash
 # Install OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk
 pip install opentelemetry-exporter-otlp
 

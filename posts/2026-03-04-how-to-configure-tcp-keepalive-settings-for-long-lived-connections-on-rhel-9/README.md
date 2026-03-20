@@ -23,6 +23,7 @@ sysctl net.ipv4.tcp_keepalive_probes
 ```bash
 sudo tee /etc/sysctl.d/99-keepalive.conf <<EOF
 # Start sending keepalive probes after 300 seconds of idle
+
 net.ipv4.tcp_keepalive_time = 300
 
 # Send probes every 60 seconds

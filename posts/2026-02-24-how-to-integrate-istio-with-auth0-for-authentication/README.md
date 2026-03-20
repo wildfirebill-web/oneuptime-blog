@@ -217,6 +217,7 @@ Verify the setup end to end:
 
 ```bash
 # Get a token
+
 TOKEN=$(curl -s -X POST "https://mycompany.auth0.com/oauth/token" \
   -H "Content-Type: application/json" \
   -d '{

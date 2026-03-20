@@ -16,6 +16,7 @@ DNF keeps a full history of every package transaction:
 
 ```bash
 # View the complete DNF transaction history
+
 sudo dnf history list
 
 # Get details of a specific transaction

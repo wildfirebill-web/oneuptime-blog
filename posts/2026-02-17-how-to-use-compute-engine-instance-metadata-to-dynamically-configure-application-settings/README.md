@@ -28,6 +28,7 @@ You can attach custom metadata key-value pairs when creating a VM:
 
 ```bash
 # Create an instance with custom metadata for app configuration
+
 gcloud compute instances create app-server \
   --zone=us-central1-a \
   --machine-type=e2-medium \

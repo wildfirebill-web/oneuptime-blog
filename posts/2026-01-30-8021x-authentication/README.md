@@ -74,6 +74,7 @@ FreeRADIUS is the most widely deployed RADIUS server. Here is how to set it up o
 
 ```bash
 # Install FreeRADIUS and utilities
+
 sudo apt update
 sudo apt install freeradius freeradius-utils -y
 

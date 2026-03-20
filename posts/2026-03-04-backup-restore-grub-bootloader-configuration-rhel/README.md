@@ -16,6 +16,7 @@ Save copies of all critical GRUB files:
 
 ```bash
 # Create a backup directory
+
 sudo mkdir -p /backup/grub
 
 # Backup the main GRUB configuration

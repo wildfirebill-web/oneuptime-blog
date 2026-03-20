@@ -80,6 +80,7 @@ On startup, pilot-agent reads the service account token from the mounted volume:
 
 ```bash
 # The token is mounted at this path
+
 /var/run/secrets/tokens/istio-token
 ```
 

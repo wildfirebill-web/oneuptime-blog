@@ -58,6 +58,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/vpa/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

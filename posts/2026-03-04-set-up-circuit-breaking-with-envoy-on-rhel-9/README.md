@@ -33,6 +33,7 @@ Add circuit breaker thresholds to your cluster definition:
 
 ```yaml
 # envoy-circuit-breaker.yaml
+
 static_resources:
   listeners:
   - name: main_listener

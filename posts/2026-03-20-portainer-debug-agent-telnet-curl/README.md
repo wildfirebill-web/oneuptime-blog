@@ -1,4 +1,4 @@
-# How to Debug Agent Connectivity with Telnet and Curl
+# How to Debug Agent Connectivity with Telnet and Curl - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ When the Portainer UI shows an agent as offline or unreachable, low-level networ
 
 ```bash
 # Test basic IP connectivity to the agent host
+
 ping -c 4 agent-host
 
 # Expected: 0% packet loss, RTT < 50ms for LAN, < 200ms for WAN
@@ -60,7 +61,7 @@ Once TCP connectivity is confirmed, test the HTTP layer:
 # Test the agent ping endpoint
 curl -v http://agent-host:9001/ping
 
-# Expected response: some HTTP response (even 404 is OK — it means HTTP works)
+# Expected response: some HTTP response (even 404 is OK - it means HTTP works)
 # "Connection refused" = TCP level issue
 # "Empty reply from server" = TCP connects but no HTTP response
 
@@ -109,7 +110,7 @@ curl -s http://agent-host:9001 | head -50
 ## Debug from Inside the Portainer Container
 
 ```bash
-# Portainer server debugging — test connectivity from inside the Portainer container
+# Portainer server debugging - test connectivity from inside the Portainer container
 docker exec -it portainer sh
 
 # Inside the container:

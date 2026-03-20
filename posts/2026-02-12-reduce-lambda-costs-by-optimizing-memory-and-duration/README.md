@@ -29,6 +29,7 @@ Before optimizing, get a baseline. Here's how to pull your most expensive Lambda
 
 ```bash
 # Find Lambda functions with the highest invocation counts and durations
+
 aws cloudwatch get-metric-data \
   --metric-data-queries '[
     {

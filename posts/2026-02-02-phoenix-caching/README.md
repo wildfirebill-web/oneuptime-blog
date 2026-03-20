@@ -196,6 +196,7 @@ Cachex provides a more feature-rich caching solution with TTL, limits, and hooks
 
 ```elixir
 # mix.exs
+
 defp deps do
   [
     {:cachex, "~> 3.6"}

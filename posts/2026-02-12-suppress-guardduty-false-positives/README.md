@@ -26,6 +26,7 @@ Create a text file with your trusted IPs, one per line, and upload it to S3.
 
 ```bash
 # Create the trusted IPs file
+
 # Each line should be an IP address or CIDR range
 # Example content:
 # 203.0.113.10

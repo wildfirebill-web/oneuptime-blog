@@ -52,6 +52,7 @@ gcloud compute routes list \
 
 ```bash
 # Problem: VM in dual-stack subnet has no IPv6 address
+
 # Diagnosis:
 gcloud compute instances describe vm-name \
     --zone="$ZONE" \

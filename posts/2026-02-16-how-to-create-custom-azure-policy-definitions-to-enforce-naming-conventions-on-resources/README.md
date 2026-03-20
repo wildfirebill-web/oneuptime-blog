@@ -153,6 +153,7 @@ Save the policy definition JSON to a file and deploy it:
 
 ```powershell
 # Define the custom policy at the subscription level
+
 # The policy enforces naming conventions with configurable patterns
 $definition = New-AzPolicyDefinition `
     -Name "enforce-naming-convention" `

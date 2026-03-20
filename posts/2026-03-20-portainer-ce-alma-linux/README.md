@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, almalinux, docker, installation, rhel-compatible
+Tags: Portainer, AlmaLinux, Docker, Installation, Rhel-compatible
 
 Description: A guide to installing Portainer Community Edition on AlmaLinux 8 and 9 with Docker, a RHEL-compatible distribution and popular CentOS replacement.
 
@@ -26,6 +26,7 @@ sudo dnf update -y
 
 ```bash
 # Remove any existing docker/podman packages
+
 sudo dnf remove -y docker docker-common docker-selinux \
   docker-engine podman runc 2>/dev/null
 

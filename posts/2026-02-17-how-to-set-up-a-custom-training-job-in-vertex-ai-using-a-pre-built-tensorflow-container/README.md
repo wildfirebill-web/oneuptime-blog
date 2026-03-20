@@ -25,6 +25,7 @@ Install the Vertex AI Python SDK if you have not already:
 
 ```bash
 # Install the Vertex AI SDK
+
 pip install google-cloud-aiplatform
 ```
 

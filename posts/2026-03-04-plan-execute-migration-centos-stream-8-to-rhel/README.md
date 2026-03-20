@@ -14,6 +14,7 @@ CentOS Stream 8 reaches end of life in May 2024. Convert2RHEL supports convertin
 
 ```bash
 # Verify your CentOS Stream version
+
 cat /etc/centos-release
 # CentOS Stream release 8
 

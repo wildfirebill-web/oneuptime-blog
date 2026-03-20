@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azuread = {
@@ -67,7 +68,7 @@ resource "azuread_application_password" "cicd_secret" {
   application_id = azuread_application.cicd_app.id
   display_name   = "cicd-secret"
 
-  # Secret expires after 1 year — plan for rotation
+  # Secret expires after 1 year - plan for rotation
   end_date = timeadd(timestamp(), "8760h")
 
   lifecycle {
@@ -133,7 +134,7 @@ output "application_client_id" {
 
 # Mark secret as sensitive so it doesn't appear in logs
 output "client_secret" {
-  description = "Client secret — store this securely"
+  description = "Client secret - store this securely"
   value       = azuread_application_password.cicd_secret.value
   sensitive   = true
 }
@@ -143,7 +144,7 @@ output "client_secret" {
 
 - Prefer certificate-based authentication over client secrets for production workloads.
 - Set explicit expiry dates on secrets and automate rotation using Key Vault rotation policies.
-- Assign the minimum required role — avoid `Owner` or `Contributor` at subscription scope unless absolutely necessary.
+- Assign the minimum required role - avoid `Owner` or `Contributor` at subscription scope unless absolutely necessary.
 - Use federated credentials for GitHub Actions and Azure Pipelines to eliminate secrets entirely via OIDC.
 
 With OpenTofu managing your service principals, every change is tracked in version control and reproducible across environments.

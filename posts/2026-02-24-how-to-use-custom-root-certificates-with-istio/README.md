@@ -32,6 +32,7 @@ If your organization does not already have a root CA, you can create one with Op
 
 ```bash
 # Generate root CA private key (use 4096 bits for production)
+
 openssl genrsa -out root-key.pem 4096
 
 # Create a configuration file for the root certificate

@@ -76,6 +76,7 @@ Configure the minimum and maximum values in the panel options. For percentage me
 
 ```yaml
 # Panel Options
+
 min: 0
 max: 100
 unit: percent

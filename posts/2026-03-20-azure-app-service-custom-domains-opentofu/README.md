@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, App Service, Custom Domains, OpenTofu, DNS, Web Hosting
+Tags: Azure, App Service, Custom Domain, OpenTofu, DNS, Web Hosting
 
 Description: Learn how to configure custom domains for Azure App Service with OpenTofu, including domain verification and DNS record management.
 
@@ -14,6 +14,7 @@ Azure App Service allows you to bind custom domains to your web apps. OpenTofu m
 
 ```hcl
 # main.tf - Web App to attach a custom domain to
+
 resource "azurerm_linux_web_app" "app" {
   name                = "my-custom-domain-app"
   location            = azurerm_resource_group.rg.location

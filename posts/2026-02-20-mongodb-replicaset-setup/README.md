@@ -41,6 +41,7 @@ Create configuration files for each member. In production, each member should ru
 
 ```bash
 # Create data directories for each member
+
 mkdir -p /data/rs0-0 /data/rs0-1 /data/rs0-2
 ```
 

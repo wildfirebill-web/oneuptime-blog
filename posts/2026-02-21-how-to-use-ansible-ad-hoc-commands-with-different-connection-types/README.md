@@ -16,6 +16,7 @@ By default, Ansible uses SSH (specifically the `ssh` connection plugin) to reach
 
 ```bash
 # Default SSH connection
+
 ansible webservers -m ping
 
 # Explicitly specify SSH connection

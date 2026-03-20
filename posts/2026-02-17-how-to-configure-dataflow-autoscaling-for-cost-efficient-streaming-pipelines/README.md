@@ -29,6 +29,7 @@ When launching a streaming pipeline, you control autoscaling through these param
 
 ```bash
 # Launch with throughput-based autoscaling
+
 gcloud dataflow jobs run my-streaming-job \
   --gcs-location=gs://my-bucket/templates/my-template \
   --region=us-central1 \

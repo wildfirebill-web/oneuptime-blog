@@ -52,6 +52,7 @@ In production, you must save your cluster secrets separately. This allows you to
 
 ```bash
 # Generate and save cluster secrets
+
 talosctl gen secrets --output-file cluster-secrets.yaml
 
 # Store this file securely (encrypted vault, secrets manager, etc.)

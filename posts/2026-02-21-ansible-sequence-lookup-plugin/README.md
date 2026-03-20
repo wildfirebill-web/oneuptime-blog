@@ -22,6 +22,7 @@ This playbook creates multiple directories numbered 1 through 5:
 
 ```yaml
 # playbook.yml - Generate a simple numeric sequence
+
 ---
 - name: Create numbered directories
   hosts: localhost

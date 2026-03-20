@@ -45,6 +45,7 @@ Create a `.woodpecker.yml` file in the root of your application repository. This
 
 ```yaml
 # .woodpecker.yml
+
 # Woodpecker CI pipeline for building and triggering Flux CD deployments
 
 variables:

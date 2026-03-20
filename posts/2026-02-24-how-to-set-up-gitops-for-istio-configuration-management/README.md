@@ -160,6 +160,7 @@ You can also manage the Istio installation itself through GitOps. Use the IstioO
 
 ```yaml
 # base/mesh-config/istio-operator.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

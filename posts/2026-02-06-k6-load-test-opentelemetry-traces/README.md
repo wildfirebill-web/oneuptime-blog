@@ -18,6 +18,7 @@ First, install k6 and the xk6-distributed-tracing extension:
 
 ```bash
 # Build k6 with the OpenTelemetry output extension
+
 xk6 build --with github.com/grafana/xk6-distributed-tracing
 
 # Verify the build

@@ -69,6 +69,7 @@ terraform output -json instance_ids
 
 terraform output -json subnet_map
 # {"public":["subnet-abc","subnet-def"],"private":["subnet-ghi","subnet-jkl"]}
+
 ```
 
 This is more convenient for scripts because you do not need to navigate the `value` wrapper.

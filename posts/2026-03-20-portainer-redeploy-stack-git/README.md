@@ -51,7 +51,7 @@ Portainer periodically checks the repository for new commits and automatically r
 2. Enable **Auto update**
 3. Set the **Fetch interval** (e.g., every 5 minutes):
 
-```
+```text
 Fetch interval: 5m    # Check every 5 minutes
 ```
 
@@ -67,7 +67,7 @@ For faster, event-driven updates, use Portainer's stack webhook:
 2. Toggle **Enable webhook** to ON
 3. Copy the generated webhook URL:
 
-```
+```text
 https://portainer.example.com:9443/api/stacks/webhooks/abc123def456...
 ```
 
@@ -85,6 +85,7 @@ Now every push to the repository triggers an automatic redeploy.
 
 ```bash
 # Trigger a stack redeploy via webhook
+
 curl -X POST \
   "https://portainer.example.com:9443/api/stacks/webhooks/abc123def456" \
   --insecure
@@ -111,7 +112,7 @@ To deploy a specific version instead of always tracking HEAD:
 1. Edit the stack
 2. Change **Repository reference** from `refs/heads/main` to:
 
-```
+```text
 refs/tags/v1.2.3           # Pin to a tag
 refs/heads/release/1.2     # Track a release branch
 abc1234def5678...          # Pin to a specific commit SHA
@@ -121,7 +122,7 @@ abc1234def5678...          # Pin to a specific commit SHA
 
 Structure your repository to support multiple environments:
 
-```
+```text
 myapp/
 ├── docker-compose.yml           # Base configuration
 ├── docker-compose.prod.yml      # Production overrides

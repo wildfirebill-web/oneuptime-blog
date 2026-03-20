@@ -43,7 +43,7 @@ FLUSH PRIVILEGES;
 -- Two-octet wildcard
 'user'@'10.0.%'           -- Any 10.0.x.x address
 
--- Any host (insecure — avoid for production)
+-- Any host (insecure - avoid for production)
 'user'@'%'                -- Any IP anywhere
 
 -- Localhost only
@@ -98,6 +98,7 @@ GRANT ALL ON appdb.* TO 'appuser'@'10.0.0.%';
 
 ```bash
 # Test from allowed IP (10.0.0.5)
+
 mysql -h 203.0.113.10 -u appuser -p appdb
 # Expected: connection successful
 

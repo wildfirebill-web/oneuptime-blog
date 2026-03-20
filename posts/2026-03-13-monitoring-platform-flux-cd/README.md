@@ -27,6 +27,7 @@ In this guide you will build a complete monitoring stack with the kube-prometheu
 
 ```yaml
 # infrastructure/sources/prometheus-community.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

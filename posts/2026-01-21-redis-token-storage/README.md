@@ -127,6 +127,7 @@ class TokenBlacklist:
             return False
 
 # Usage
+
 blacklist = TokenBlacklist()
 
 # Create a token

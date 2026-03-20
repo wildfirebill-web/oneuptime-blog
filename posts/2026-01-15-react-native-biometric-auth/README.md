@@ -56,6 +56,7 @@ Before implementing biometric authentication, ensure your React Native project i
 
 ```bash
 # Ensure you have React Native CLI installed
+
 npx react-native --version
 
 # For Expo projects

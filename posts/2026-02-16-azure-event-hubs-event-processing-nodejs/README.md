@@ -44,6 +44,7 @@ Create an Event Hubs namespace and an event hub:
 
 ```bash
 # Create a resource group
+
 az group create --name eventhubs-demo-rg --location eastus
 
 # Create an Event Hubs namespace

@@ -6,7 +6,7 @@ Tags: AWS, Terraform, IPv6, Subnets, VPC, Networking
 
 Description: A guide to assigning IPv6 /64 CIDR blocks to AWS subnets using Terraform, enabling dual-stack EC2 instances and EKS nodes.
 
-When you enable IPv6 on an AWS VPC, it receives a /56 CIDR block. You can then carve this into up to 256 /64 subnets — one per subnet. This guide shows how to automate that allocation with Terraform's `cidrsubnet` function.
+When you enable IPv6 on an AWS VPC, it receives a /56 CIDR block. You can then carve this into up to 256 /64 subnets - one per subnet. This guide shows how to automate that allocation with Terraform's `cidrsubnet` function.
 
 ## Understanding IPv6 Subnet Math in AWS
 
@@ -14,6 +14,7 @@ AWS always assigns a /56 to your VPC. You then assign /64 blocks to subnets. The
 
 ```hcl
 # cidrsubnet(prefix, newbits, netnum)
+
 # For /56 -> /64: newbits = 64 - 56 = 8
 # netnum is the subnet index (0-255)
 cidrsubnet("2600:1f18:1234:5678::/56", 8, 0)  # -> 2600:1f18:1234:5678::/64

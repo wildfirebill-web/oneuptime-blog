@@ -20,6 +20,7 @@ Install Kind and verify Podman is ready:
 
 ```bash
 # Install Kind on macOS
+
 brew install kind
 
 # Or download the binary directly

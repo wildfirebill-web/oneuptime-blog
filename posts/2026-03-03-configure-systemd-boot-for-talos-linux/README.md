@@ -54,6 +54,7 @@ You can inspect the boot configuration on a running Talos system:
 
 ```bash
 # Check which boot entry is currently active
+
 talosctl read /proc/cmdline
 
 # View the boot loader entries

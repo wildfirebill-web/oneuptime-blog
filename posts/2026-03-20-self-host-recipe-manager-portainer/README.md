@@ -1,4 +1,4 @@
-# How to Self-Host a Recipe Manager with Portainer
+# How to Self-Host a Recipe Manager with Portainer - Self Host
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -49,6 +49,7 @@ Change these immediately after first login.
 
 ```bash
 # Mealie stores everything in /app/data:
+
 # /app/data/recipes   - Recipe content and images
 # /app/data/backups   - Automated backups
 # /app/data/users     - User data

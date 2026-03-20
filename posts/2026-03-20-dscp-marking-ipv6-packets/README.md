@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DSCP, IPv6, QoS, Traffic Marking, ip6tables, nftables, Linux
+Tags: DSCP, IPv6, QoS, Traffic Marking, Ip6tables, nftables, Linux
 
 Description: Configure DSCP marking for IPv6 packets on Linux using ip6tables, nftables, and tc to enable differentiated service treatment for different traffic types.
 
@@ -16,6 +16,7 @@ DSCP (Differentiated Services Code Point) marking sets priority bits in the IPv6
 # Basic DSCP marking rules for IPv6 using ip6tables
 
 # Mark VoIP signaling (SIP) with CS5
+
 sudo ip6tables -t mangle -A PREROUTING \
   -p tcp --dport 5060 \
   -j DSCP --set-dscp-class CS5

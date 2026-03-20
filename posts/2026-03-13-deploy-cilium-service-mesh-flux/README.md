@@ -26,6 +26,7 @@ This guide covers deploying Cilium with service mesh features enabled using Flux
 
 ```yaml
 # clusters/my-cluster/cilium/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

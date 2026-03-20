@@ -178,6 +178,7 @@ Beyond visual dashboards, automate the comparison with a script that decides whe
 
 ```python
 # canary_analysis.py
+
 import requests
 import sys
 

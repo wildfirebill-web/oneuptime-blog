@@ -80,6 +80,7 @@ def process_form(project_id, location, processor_id, file_path, mime_type):
     return result.document
 
 # Process a scanned form
+
 document = process_form(
     project_id="my-gcp-project",
     location="us",

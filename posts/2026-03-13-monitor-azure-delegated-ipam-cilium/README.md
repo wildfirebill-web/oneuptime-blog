@@ -32,6 +32,7 @@ Check Cilium's IPAM mode and delegation configuration:
 
 ```bash
 # Verify Cilium is using Azure delegated IPAM
+
 cilium config view | grep -E "ipam|azure-subnet-id"
 
 # Check the Cilium IPAM status

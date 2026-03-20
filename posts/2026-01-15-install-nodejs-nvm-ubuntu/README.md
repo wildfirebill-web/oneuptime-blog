@@ -29,6 +29,7 @@ First, download and run the NVM installation script:
 
 ```bash
 # Download and run the NVM install script
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 

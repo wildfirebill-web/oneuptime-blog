@@ -93,6 +93,7 @@ Save that file as `lifecycle-policy.json` and then apply it with the CLI:
 
 ```bash
 # Apply the lifecycle policy to your storage account
+
 az storage account management-policy create \
   --account-name mystorageaccount \
   --resource-group myresourcegroup \

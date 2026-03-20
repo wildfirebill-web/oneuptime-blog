@@ -26,6 +26,7 @@ Start by deploying a CNI that supports network policies. On Talos Linux, Cilium 
 
 ```bash
 # Install Cilium with network policy support
+
 helm install cilium cilium/cilium \
   --namespace kube-system \
   --set policyEnforcementMode=default

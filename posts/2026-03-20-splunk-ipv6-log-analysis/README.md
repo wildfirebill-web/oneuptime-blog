@@ -16,6 +16,7 @@ Splunk can receive logs from IPv6-addressed sources via UDP/TCP syslog inputs, a
 # $SPLUNK_HOME/etc/system/local/inputs.conf
 
 # Listen on all IPv6 interfaces for syslog
+
 [udp://:::]
 connection_host = dns
 sourcetype = syslog
@@ -150,4 +151,4 @@ fc00::/7,Unique local,ula
 
 ## Conclusion
 
-Splunk handles IPv6 log collection by binding syslog inputs to `[:::]` (all IPv6 interfaces) and configuring Universal Forwarders to send to IPv6 indexers. Field extractions using REGEX transforms in `transforms.conf` pull IPv6 addresses from various log formats. SPL's `match()`, `where`, and `regex` commands enable flexible IPv6 filtering, and `timechart` provides time-series analysis by IPv6 source — all without requiring native CIDR support, unlike Elasticsearch's `ip` field type.
+Splunk handles IPv6 log collection by binding syslog inputs to `[:::]` (all IPv6 interfaces) and configuring Universal Forwarders to send to IPv6 indexers. Field extractions using REGEX transforms in `transforms.conf` pull IPv6 addresses from various log formats. SPL's `match()`, `where`, and `regex` commands enable flexible IPv6 filtering, and `timechart` provides time-series analysis by IPv6 source - all without requiring native CIDR support, unlike Elasticsearch's `ip` field type.

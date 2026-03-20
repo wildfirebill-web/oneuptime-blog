@@ -22,6 +22,7 @@ Your staging cluster needs to replicate production conditions accurately. This i
 
 ```bash
 # Script to create staging cluster matching production specs
+
 #!/bin/bash
 # create-staging-cluster.sh
 

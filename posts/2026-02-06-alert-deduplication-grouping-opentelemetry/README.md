@@ -41,6 +41,7 @@ This SDK configuration adds resource attributes that Alertmanager can use for gr
 
 ```python
 # Python OpenTelemetry SDK setup with resource attributes
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.resources import Resource

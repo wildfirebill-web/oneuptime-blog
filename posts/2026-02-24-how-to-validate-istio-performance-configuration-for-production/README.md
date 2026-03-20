@@ -18,6 +18,7 @@ Before you start tuning, you need numbers. Run a load test without the mesh and 
 
 ```bash
 # Deploy a test application
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/httpbin/httpbin.yaml
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.22/samples/sleep/sleep.yaml
 

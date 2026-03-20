@@ -24,6 +24,7 @@ Add the Service Graph Connector to your OpenTelemetry Collector configuration:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

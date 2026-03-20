@@ -53,6 +53,7 @@ API Gateway offers two flavors: REST API (v1) and HTTP API (v2). Choosing the ri
 
 ```bash
 # Check which API types exist in your account
+
 aws apigateway get-rest-apis --query 'items[].name'
 aws apigatewayv2 get-apis --query 'Items[].Name'
 ```

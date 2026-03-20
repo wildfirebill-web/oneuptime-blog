@@ -55,6 +55,7 @@ Use ApplicationSets with Git generator to automatically create and remove applic
 
 ```yaml
 # preview-appset.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

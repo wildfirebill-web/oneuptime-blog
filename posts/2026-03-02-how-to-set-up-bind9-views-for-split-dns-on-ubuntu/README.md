@@ -31,6 +31,7 @@ sudo apt update
 sudo apt install -y bind9 bind9utils bind9-doc dnsutils
 
 # Enable and start
+
 sudo systemctl enable named
 sudo systemctl start named
 sudo systemctl status named

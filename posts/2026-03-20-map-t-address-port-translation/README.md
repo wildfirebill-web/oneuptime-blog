@@ -11,7 +11,7 @@ Description: A clear explanation of MAP-T (Mapping of Address and Port using Tra
 MAP-T (Mapping of Address and Port using Translation) is defined in RFC 7599. It is a stateless IPv6 transition technology designed for ISP deployments that:
 
 - Provides IPv4 connectivity over an IPv6-only access network
-- Is **stateless** — no NAT state tables needed at the ISP level
+- Is **stateless** - no NAT state tables needed at the ISP level
 - Uses **algorithmic mapping** between IPv4 addresses and port ranges and IPv6 prefixes
 - Uses **translation** (not encapsulation) to convert between IPv4 and IPv6
 
@@ -27,12 +27,12 @@ MAP-T is similar to DS-Lite in goals but eliminates the need for per-subscriber 
 
 ## The Stateless Mapping Concept
 
-The key innovation in MAP-T is that both the CPE and the ISP Border Router compute IPv4↔IPv6 mappings **from a rule** — no state table is needed. Given a subscriber's IPv6 prefix, you can deterministically compute:
+The key innovation in MAP-T is that both the CPE and the ISP Border Router compute IPv4↔IPv6 mappings **from a rule** - no state table is needed. Given a subscriber's IPv6 prefix, you can deterministically compute:
 
 - Which IPv4 address the subscriber uses
 - Which port range they are assigned
 
-This is the "Mapping of Address and Port" — ports are divided among subscribers sharing the same IPv4 address.
+This is the "Mapping of Address and Port" - ports are divided among subscribers sharing the same IPv4 address.
 
 ## MAP-T Rule Parameters
 
@@ -48,7 +48,7 @@ A MAP-T deployment uses "MAP rules" pushed to CPEs via DHCPv6. Each rule specifi
 
 With MAP-T, multiple subscribers share a single public IPv4 address. The public port range is divided:
 
-```
+```text
 IPv4 address: 203.0.113.1 (shared by 16 subscribers)
 Port range (subscriber 0): 1024-2047
 Port range (subscriber 1): 2048-3071
@@ -62,7 +62,7 @@ The PSID (Port Set Identifier) identifies which subscriber "owns" a given port r
 
 For a subscriber with IPv6 prefix `2001:db8:0000::/56` and MAP rule:
 
-```
+```text
 Rule IPv6 Prefix: 2001:db8::/40
 Rule IPv4 Prefix: 203.0.113.0/24
 EA bits: 16 (8 for IPv4 address + 8 for PSID)
@@ -104,7 +104,7 @@ The DMR uses the NAT64 well-known prefix or a configured prefix to translate ext
 
 ## Advantages of MAP-T
 
-- **Stateless**: No session tables at the BR — each packet translates independently
+- **Stateless**: No session tables at the BR - each packet translates independently
 - **Scalable**: BR handles millions of subscribers without state
 - **Auditable**: IPv4 addresses and ports map deterministically to IPv6 addresses, simplifying abuse investigation
 - **No tunneling overhead**: Translation adds no extra headers (unlike DS-Lite or MAP-E)

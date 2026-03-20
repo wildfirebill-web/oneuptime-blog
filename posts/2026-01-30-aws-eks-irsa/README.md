@@ -61,6 +61,7 @@ You can verify your setup with these commands:
 
 ```bash
 # Check EKS cluster access
+
 kubectl cluster-info
 
 # Verify AWS CLI configuration

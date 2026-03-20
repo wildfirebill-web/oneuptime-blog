@@ -448,6 +448,7 @@ This collector configuration demonstrates multiple layers of security processing
 
 ```yaml
 # OpenTelemetry Collector configuration with security-focused processors
+
 # This configuration implements defense-in-depth for telemetry data
 
 receivers:

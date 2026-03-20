@@ -86,6 +86,7 @@ Pub/Sub has a built-in Schema Registry that validates messages against registere
 
 ```bash
 # Create the schema in the Pub/Sub Schema Registry
+
 gcloud pubsub schemas create user-event-schema \
   --type=AVRO \
   --definition-file=schemas/user_event_v1.avsc \

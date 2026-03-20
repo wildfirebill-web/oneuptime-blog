@@ -55,6 +55,7 @@ resource "digitalocean_kubernetes_cluster" "main" {
 
 ```hcl
 # Add a high-memory node pool for memory-intensive workloads
+
 resource "digitalocean_kubernetes_node_pool" "highmem" {
   cluster_id = digitalocean_kubernetes_cluster.main.id
 

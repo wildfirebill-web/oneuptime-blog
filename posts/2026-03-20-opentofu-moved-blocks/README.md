@@ -1,13 +1,12 @@
----
-title: "Using moved Blocks in OpenTofu for Safe Refactoring"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, refactoring, moved
-description: "Learn how to use moved blocks in OpenTofu to safely rename and reorganize resources without destroying and recreating them."
----
-
 # Using moved Blocks in OpenTofu for Safe Refactoring
 
-The `moved` block is one of OpenTofu's most useful features for refactoring infrastructure code. It lets you rename resources, move them between modules, or change from `count` to `for_each` — all without destroying and recreating the actual infrastructure.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Refactoring, Moved
+
+Description: Learn how to use moved blocks in OpenTofu to safely rename and reorganize resources without destroying and recreating them.
+
+The `moved` block is one of OpenTofu's most useful features for refactoring infrastructure code. It lets you rename resources, move them between modules, or change from `count` to `for_each` - all without destroying and recreating the actual infrastructure.
 
 ## Basic moved Block Syntax
 
@@ -18,18 +17,19 @@ moved {
 }
 ```
 
-This tells OpenTofu: "the resource that was previously tracked as `aws_instance.old_name` is now `aws_instance.new_name` — don't recreate it."
+This tells OpenTofu: "the resource that was previously tracked as `aws_instance.old_name` is now `aws_instance.new_name` - don't recreate it."
 
 ## Renaming a Resource
 
 ```hcl
-# Before refactoring — resource was called "server"
+# Before refactoring - resource was called "server"
+
 resource "aws_instance" "server" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.medium"
 }
 
-# After refactoring — renamed to "web_server"
+# After refactoring - renamed to "web_server"
 resource "aws_instance" "web_server" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.medium"
@@ -92,13 +92,13 @@ moved {
 This is one of the most powerful uses of `moved`:
 
 ```hcl
-# Before: using count (fragile — index-based)
+# Before: using count (fragile - index-based)
 resource "aws_iam_user" "developers" {
   count = length(var.developer_names)
   name  = var.developer_names[count.index]
 }
 
-# After: using for_each (stable — key-based)
+# After: using for_each (stable - key-based)
 resource "aws_iam_user" "developers" {
   for_each = toset(var.developer_names)
   name     = each.key
@@ -153,7 +153,7 @@ module "networking" {
   az_count   = 2
 }
 
-# moved blocks — all in one file (moved.tf)
+# moved blocks - all in one file (moved.tf)
 moved {
   from = aws_vpc.main
   to   = module.networking.aws_vpc.main

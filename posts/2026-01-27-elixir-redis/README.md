@@ -34,6 +34,7 @@ Add Redix to your `mix.exs`:
 
 ```elixir
 # mix.exs
+
 defp deps do
   [
     # Core Redis client for Elixir

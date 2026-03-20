@@ -916,6 +916,7 @@ class FeatureFlagClient:
 
 
 # Usage example
+
 async def main():
     client = FeatureFlagClient(
         api_url="http://localhost:3000",

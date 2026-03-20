@@ -12,8 +12,9 @@ An internal OpenTofu provider registry serves two purposes: distributing interna
 
 ## Registry Protocol Overview
 
-```
+```text
 # Service discovery
+
 GET /.well-known/terraform.json
 
 # List provider versions

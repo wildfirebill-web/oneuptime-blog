@@ -30,6 +30,7 @@ Ghost supports MySQL as its production database:
 
 ```yaml
 # ghost-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

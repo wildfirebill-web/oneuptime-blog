@@ -27,6 +27,7 @@ Configure the Kubernetes provider to manage Flux resources.
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

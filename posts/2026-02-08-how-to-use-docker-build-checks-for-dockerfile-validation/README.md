@@ -20,6 +20,7 @@ Verify your Docker version supports build checks:
 
 ```bash
 # Check your Docker version
+
 docker version
 
 # Verify BuildKit is the active builder

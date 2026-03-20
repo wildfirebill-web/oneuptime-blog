@@ -12,11 +12,11 @@ The IPv6 loopback address `::1` (0000:...0001) functions identically to IPv4's `
 
 ## Properties of ::1
 
-```
+```text
 Address:     ::1
 Full form:   0000:0000:0000:0000:0000:0000:0000:0001
 CIDR:        ::1/128
-Prefix:      (unique — no prefix defines loopback; it's a single address)
+Prefix:      (unique - no prefix defines loopback; it's a single address)
 
 RFC 4291 rules:
   - Must NOT be assigned to a physical interface
@@ -28,6 +28,7 @@ RFC 4291 rules:
 
 ```bash
 # Linux
+
 ip -6 addr show lo
 # Output: inet6 ::1/128 scope host
 
@@ -72,7 +73,7 @@ print(response.decode())
 client.close()
 ```
 
-### Go — Loopback Server
+### Go - Loopback Server
 
 ```go
 lis, err := net.Listen("tcp6", "[::1]:9000")
@@ -92,7 +93,7 @@ nc -6 ::1 9000
 ss -6 -tlnp | grep ::1
 ```
 
-## nginx — Listen on ::1 Only (Local Proxy)
+## nginx - Listen on ::1 Only (Local Proxy)
 
 ```nginx
 server {
@@ -123,4 +124,4 @@ print(ipaddress.IPv6Address("::").is_loopback)    # False (unspecified)
 
 ## Conclusion
 
-IPv6 `::1` is the single loopback address — unlike IPv4's entire 127.0.0.0/8 block. Bind services to `[::1]:port` for localhost-only access, use `ping6 ::1` to verify IPv6 stack health, and use `ipaddress.IPv6Address(addr).is_loopback` in Python for programmatic checks. IPv6 loopback cannot be routed or assigned to a physical interface.
+IPv6 `::1` is the single loopback address - unlike IPv4's entire 127.0.0.0/8 block. Bind services to `[::1]:port` for localhost-only access, use `ping6 ::1` to verify IPv6 stack health, and use `ipaddress.IPv6Address(addr).is_loopback` in Python for programmatic checks. IPv6 loopback cannot be routed or assigned to a physical interface.

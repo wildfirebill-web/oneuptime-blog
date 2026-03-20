@@ -34,6 +34,7 @@ Here's a function that validates an incoming order event against a strict schema
 from aws_lambda_powertools.utilities.validation import validator
 
 # Define the expected input schema
+
 INPUT_SCHEMA = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",

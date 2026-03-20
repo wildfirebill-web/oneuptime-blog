@@ -22,6 +22,7 @@ Podman uses Linux Control Groups (cgroups) to enforce resource limits. When you 
 
 ```bash
 # Check which cgroup version your system uses
+
 podman info --format '{{.Host.CgroupVersion}}'
 ```
 
@@ -179,7 +180,7 @@ podman run --rm --cpus 1 alpine sh -c "
 "
 ```
 
-## Resource Limits in Pod Context
+Resource Limits in Pod Context
 
 When running pods, you can set limits on individual containers within the pod:
 

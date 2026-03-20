@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Networking, DHCP Relay, DHCP Agent, Multi-VLAN, sysadmin
+Tags: DHCP, Networking, DHCP Relay, DHCP Agent, Multi-VLAN, Sysadmin
 
 Description: A DHCP relay agent forwards DHCP broadcast messages from clients on one subnet to a DHCP server on another, enabling a single DHCP server to serve multiple VLANs across a routed network.
 
@@ -22,6 +22,7 @@ flowchart LR
 
 ```bash
 # Install
+
 sudo apt install isc-dhcp-relay
 
 # Configure /etc/default/isc-dhcp-relay
@@ -42,7 +43,7 @@ sudo dhcrelay -i eth1 -i eth2 192.168.0.1
 
 On a Cisco router or Layer-3 switch, configure the helper address on each VLAN interface:
 
-```
+```text
 ! VLAN 10 interface
 interface Vlan10
   ip address 10.0.10.1 255.255.255.0

@@ -34,6 +34,7 @@ Add the DRBD extension to your worker node configuration.
 
 ```yaml
 # worker.yaml
+
 machine:
   install:
     extensions:

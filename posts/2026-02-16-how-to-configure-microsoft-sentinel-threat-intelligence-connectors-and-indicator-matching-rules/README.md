@@ -41,6 +41,7 @@ This is the simplest connector - it pulls indicators from Microsoft's own threat
 
 ```bash
 # Enable the Microsoft Defender Threat Intelligence connector
+
 az sentinel data-connector create \
   --resource-group sentinel-rg \
   --workspace-name sentinel-workspace \

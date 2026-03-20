@@ -29,6 +29,7 @@ Select and configure the appropriate IPAM mode:
 
 ```bash
 # Available IPAM modes:
+
 # cluster-pool: Default for bare metal/on-prem, Cilium manages per-node CIDRs
 # kubernetes: Delegate to kube-controller-manager
 # aws-eni: AWS Elastic Network Interfaces (native routing)

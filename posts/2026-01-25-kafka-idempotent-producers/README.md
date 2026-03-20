@@ -336,6 +336,7 @@ Ensure brokers support idempotent producers.
 # server.properties
 
 # Enable idempotent producers (default since Kafka 3.0)
+
 enable.idempotence=true
 
 # Max time to remember producer IDs (default 7 days)

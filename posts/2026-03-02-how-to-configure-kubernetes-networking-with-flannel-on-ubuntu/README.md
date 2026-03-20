@@ -26,6 +26,7 @@ A Kubernetes cluster initialized with kubeadm where you have not yet applied a C
 
 ```bash
 # Verify nodes are waiting for CNI
+
 kubectl get nodes
 # NAME           STATUS     ROLES           AGE
 # k8s-control    NotReady   control-plane   2m

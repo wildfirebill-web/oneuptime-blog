@@ -12,7 +12,7 @@ TCP Maximum Segment Size (MSS) is negotiated during the handshake and controls t
 
 ## How MSS Clamping Works
 
-```
+```text
 Without clamping:
   Host A negotiates MSS = 1460 (standard Ethernet: 1500 - 40 headers)
   Traffic goes through VPN tunnel with MTU 1420
@@ -31,6 +31,7 @@ With MSS clamping:
 
 ```bash
 # Clamp MSS to path MTU (dynamic, recommended):
+
 iptables -t mangle -A FORWARD -p tcp --tcp-flags SYN,RST SYN \
   -j TCPMSS --clamp-mss-to-pmtu
 

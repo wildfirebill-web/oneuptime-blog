@@ -51,6 +51,7 @@ When you create an app in Azure Spring Apps, it automatically gets a "default" d
 
 ```bash
 # Create the Spring Apps instance and application
+
 RESOURCE_GROUP="rg-spring-production"
 SERVICE_NAME="myorg-spring-apps"
 APP_NAME="payment-service"

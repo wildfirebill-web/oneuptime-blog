@@ -28,6 +28,7 @@ The most common time to apply patches is when generating your initial configurat
 
 ```bash
 # Apply a patch to all generated configs (both controlplane and worker)
+
 talosctl gen config my-cluster https://10.0.1.100:6443 \
     --config-patch @common-settings.yaml
 

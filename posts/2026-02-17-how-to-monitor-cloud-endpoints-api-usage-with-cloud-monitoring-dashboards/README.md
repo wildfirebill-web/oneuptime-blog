@@ -32,6 +32,7 @@ Start with a dashboard that gives you a high-level view of your API health.
 
 ```bash
 # Create the API overview dashboard
+
 gcloud monitoring dashboards create --config='
 {
   "displayName": "Cloud Endpoints - API Overview",

@@ -152,6 +152,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Create a custom job targeting TPU
+
 job = aiplatform.CustomJob(
     display_name="tpu-training-job",
     worker_pool_specs=[

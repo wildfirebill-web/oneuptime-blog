@@ -16,6 +16,7 @@ Felix metrics troubleshooting focuses on three issues: the metrics endpoint not 
 
 ```bash
 # Enable Felix metrics (if not already enabled)
+
 kubectl patch felixconfiguration default   --type=merge   -p '{"spec":{"prometheusMetricsEnabled":true,"prometheusMetricsPort":9091}}'
 
 # Test Felix metrics endpoint

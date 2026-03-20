@@ -18,6 +18,7 @@ In Flux v1, image automation was configured through workload annotations:
 
 ```yaml
 # Flux v1 style - annotations on the Deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

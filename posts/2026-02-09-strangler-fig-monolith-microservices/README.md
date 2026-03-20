@@ -16,6 +16,7 @@ The pattern involves routing traffic selectively between the monolith and new mi
 
 ```yaml
 # High-level architecture
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

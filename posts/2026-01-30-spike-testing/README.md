@@ -55,6 +55,7 @@ First, install k6 and create the project structure:
 
 ```bash
 # Install k6 on macOS
+
 brew install k6
 
 # Or on Linux

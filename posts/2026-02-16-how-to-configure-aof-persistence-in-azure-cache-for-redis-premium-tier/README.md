@@ -46,6 +46,7 @@ The following command creates a Premium P1 cache in East US with AOF persistence
 
 ```bash
 # Create a resource group for the Redis cache
+
 az group create --name rg-redis-prod --location eastus
 
 # Create a Premium tier Redis cache (P1 is the smallest Premium SKU)

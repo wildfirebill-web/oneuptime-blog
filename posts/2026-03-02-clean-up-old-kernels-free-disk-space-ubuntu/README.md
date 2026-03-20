@@ -23,6 +23,7 @@ E: mkinitramfs failure cpio 141 gzip 1
 
 ```bash
 # See all installed kernel packages
+
 dpkg -l | grep linux-image
 
 # Check which kernel is currently running

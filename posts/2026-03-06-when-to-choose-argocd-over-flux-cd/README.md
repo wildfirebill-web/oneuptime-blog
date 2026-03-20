@@ -16,6 +16,7 @@ The most visible difference is ArgoCD's built-in web interface. If your organiza
 
 ```yaml
 # ArgoCD Application resource
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

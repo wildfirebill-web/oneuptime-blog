@@ -14,6 +14,7 @@ Databricks is the unified analytics platform built on Apache Spark. Provisioning
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -172,5 +173,5 @@ resource "databricks_cluster" "shared" {
 - Use VPC injection (customer-managed VPC) for production workspaces to maintain network security policies.
 - Configure cluster policies with auto-termination to prevent idle clusters from running indefinitely.
 - Use Unity Catalog for centralized data governance across all workspaces.
-- Grant workspace access via groups rather than individual users — groups are easier to manage at scale.
+- Grant workspace access via groups rather than individual users - groups are easier to manage at scale.
 - Enable cluster-level logging to S3/ADLS to retain job logs for debugging and compliance.

@@ -38,6 +38,7 @@ AWX LDAP settings are configured through the Settings API or the web UI under Se
 
 ```bash
 # Configure LDAP authentication via API
+
 curl -X PATCH "https://awx.example.com/api/v2/settings/ldap/" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AWX_TOKEN" \

@@ -24,6 +24,7 @@ Start by initializing a management cluster. You can use any Kubernetes cluster, 
 
 ```bash
 # Install clusterctl CLI
+
 curl -L https://github.com/kubernetes-sigs/cluster-api/releases/download/v1.6.0/clusterctl-linux-amd64 -o clusterctl
 chmod +x clusterctl
 sudo mv clusterctl /usr/local/bin/

@@ -30,6 +30,7 @@ Compliance reporting is a critical requirement for organizations operating Kuber
 
 ```bash
 # List all scan reports
+
 kubectl get clusterscanreport -A
 
 # Get the most recent scan report name

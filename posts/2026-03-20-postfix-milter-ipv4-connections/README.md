@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, Milter, IPv4, Email, DKIM, SpamAssassin, Configuration, Security
+Tags: Postfix, Milters, IPv4, Email, DKIM, SpamAssassin, Configuration, Security
 
 Description: Learn how to configure Postfix milter integration over IPv4 TCP sockets to connect to mail filtering services like OpenDKIM and SpamAssassin.
 
 ---
 
-Milters (mail filters) integrate with Postfix to process messages in real time — signing with DKIM, checking SPF, filtering spam, or running virus scans. Milters communicate via Unix sockets or TCP sockets; using a TCP socket on an IPv4 address allows milters to run on remote servers.
+Milters (mail filters) integrate with Postfix to process messages in real time - signing with DKIM, checking SPF, filtering spam, or running virus scans. Milters communicate via Unix sockets or TCP sockets; using a TCP socket on an IPv4 address allows milters to run on remote servers.
 
 ## Milter Connection Types
 
-```
+```text
 Unix socket:  unix:/run/opendkim/opendkim.sock
 TCP socket:   inet:12301@127.0.0.1     (local IPv4)
 TCP socket:   inet:12301@10.0.0.5      (remote IPv4)
@@ -26,6 +26,7 @@ TCP socket:   inet:12301@10.0.0.5      (remote IPv4)
 # /etc/opendkim.conf
 
 # Listen on a TCP socket on the loopback IPv4 address
+
 Socket inet:12301@127.0.0.1
 
 # Signing mode

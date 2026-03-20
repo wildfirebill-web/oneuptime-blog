@@ -34,6 +34,7 @@ Verify your cluster health before making changes:
 
 ```bash
 # Check cluster status
+
 ceph status
 
 # List current OSDs

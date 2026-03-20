@@ -44,6 +44,7 @@ Host1 in Subnet A reaches Host2 in Subnet C by going through both routers.
 
 ```bash
 # Create namespaces for hosts and routers
+
 sudo ip netns add host1
 sudo ip netns add router1
 sudo ip netns add router2

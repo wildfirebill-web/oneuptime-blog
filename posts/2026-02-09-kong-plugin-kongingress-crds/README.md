@@ -57,6 +57,7 @@ Configure request transformation to modify incoming requests:
 
 ```yaml
 # request-transformer.yaml
+
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:

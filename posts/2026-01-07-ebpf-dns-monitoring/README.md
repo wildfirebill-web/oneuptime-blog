@@ -78,6 +78,7 @@ The following commands install the necessary dependencies on Ubuntu/Debian syste
 
 ```bash
 # Install BCC tools and development dependencies
+
 sudo apt-get update
 sudo apt-get install -y bpfcc-tools linux-headers-$(uname -r) \
     python3-bpfcc libbpf-dev clang llvm

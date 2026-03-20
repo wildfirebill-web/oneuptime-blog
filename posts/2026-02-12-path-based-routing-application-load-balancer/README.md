@@ -32,6 +32,7 @@ First, create separate target groups for each backend service:
 
 ```bash
 # API target group
+
 API_TG=$(aws elbv2 create-target-group \
   --name api-targets \
   --protocol HTTP \

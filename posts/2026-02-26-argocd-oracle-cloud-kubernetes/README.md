@@ -23,6 +23,7 @@ This guide covers deploying ArgoCD on OKE, integrating with Oracle Cloud Contain
 
 ```bash
 # Generate kubeconfig for your OKE cluster
+
 oci ce cluster create-kubeconfig \
   --cluster-id ocid1.cluster.oc1.iad.xxxx \
   --file ~/.kube/oke-config \

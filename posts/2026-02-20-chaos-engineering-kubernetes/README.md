@@ -40,6 +40,7 @@ Litmus Chaos is a Kubernetes-native chaos engineering framework. Install it with
 
 ```bash
 # Add the Litmus Helm repository
+
 helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
 helm repo update
 

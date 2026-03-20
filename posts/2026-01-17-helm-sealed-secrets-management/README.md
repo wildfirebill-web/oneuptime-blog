@@ -51,6 +51,7 @@ flowchart TB
 
 ```bash
 # Add Sealed Secrets Helm repository
+
 helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
 helm repo update
 

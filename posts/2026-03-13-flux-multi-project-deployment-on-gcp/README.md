@@ -56,6 +56,7 @@ Run bootstrap separately for each cluster, using the project-specific path.
 
 ```bash
 # Bootstrap the dev cluster
+
 gcloud container clusters get-credentials dev-cluster \
   --region us-central1 --project my-org-dev
 

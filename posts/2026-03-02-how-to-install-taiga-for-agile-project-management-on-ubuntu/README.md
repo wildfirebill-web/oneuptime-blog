@@ -23,6 +23,7 @@ The recommended deployment method is Docker Compose, which handles the multiple 
 
 ```bash
 # Install Docker
+
 curl -fsSL https://get.docker.com | sudo sh
 
 # Add your user to the docker group

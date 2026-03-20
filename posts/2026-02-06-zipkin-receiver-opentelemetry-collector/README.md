@@ -391,6 +391,7 @@ class HTTPTransport(BaseTransportHandler):
         return None
 
 # Use in your application
+
 with zipkin_span(
     service_name='python-service',
     span_name='operation_name',

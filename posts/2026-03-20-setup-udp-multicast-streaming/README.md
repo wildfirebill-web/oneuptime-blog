@@ -27,6 +27,7 @@ TTL = 32  # How many router hops multicast can traverse
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Set multicast TTL (how far it travels):
+
 sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, TTL)
 
 # Optional: set source interface for multicast:
@@ -135,4 +136,4 @@ iptables -A INPUT -d 239.1.2.3 -p udp --dport 5004 -j ACCEPT
 
 ## Conclusion
 
-UDP multicast streaming sends a single packet stream that all subscribed receivers receive, making it ideal for live video/audio distribution on a LAN or IPTV systems. Use addresses in the 239.0.0.0/8 range (administratively scoped, won't escape your network). Set TTL appropriately — use 1 for LAN only, higher for routed networks. Verify group membership with `ip maddr show` and multicast traffic flow with `tcpdump -n 'multicast'`. For internet delivery, multicast does not scale; use CDN or unicast replication instead.
+UDP multicast streaming sends a single packet stream that all subscribed receivers receive, making it ideal for live video/audio distribution on a LAN or IPTV systems. Use addresses in the 239.0.0.0/8 range (administratively scoped, won't escape your network). Set TTL appropriately - use 1 for LAN only, higher for routed networks. Verify group membership with `ip maddr show` and multicast traffic flow with `tcpdump -n 'multicast'`. For internet delivery, multicast does not scale; use CDN or unicast replication instead.

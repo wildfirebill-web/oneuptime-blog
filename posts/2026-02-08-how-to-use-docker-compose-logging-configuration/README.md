@@ -30,6 +30,7 @@ The `logging` directive sits under a service definition. The most common configu
 
 ```yaml
 # Configure logging for a service with json-file driver
+
 version: "3.8"
 
 services:

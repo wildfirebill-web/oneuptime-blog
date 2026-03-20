@@ -20,6 +20,7 @@ To create a container, send a POST request to the container create endpoint with
 
 ```bash
 # Create a simple container from the nginx image
+
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   -H "Content-Type: application/json" \

@@ -1,4 +1,4 @@
-# How to Plan and Preview Imports Before Applying in OpenTofu
+# How to Plan and Preview Imports Before Applying in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ When import blocks are present, `tofu plan` shows them distinctly:
 tofu plan
 
 # Output:
+
 # OpenTofu will perform the following actions:
 #
 #   # aws_vpc.main will be imported
@@ -128,4 +129,4 @@ tofu plan
 
 ## Conclusion
 
-Previewing imports with `tofu plan` before applying is essential for understanding what will be imported and catching configuration mismatches early. Save import plans with `-out` for reproducible, reviewable deployments. The goal of every import is for `tofu plan` to show no changes after the import is applied — your configuration should accurately describe the existing resource.
+Previewing imports with `tofu plan` before applying is essential for understanding what will be imported and catching configuration mismatches early. Save import plans with `-out` for reproducible, reviewable deployments. The goal of every import is for `tofu plan` to show no changes after the import is applied - your configuration should accurately describe the existing resource.

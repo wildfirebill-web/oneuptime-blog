@@ -36,6 +36,7 @@ ArgoCD-managed workloads need AWS credentials to access secrets. IRSA is the rec
 
 ```bash
 # Create an IAM policy for reading secrets
+
 aws iam create-policy \
   --policy-name ExternalSecretsPolicy \
   --policy-document '{

@@ -1043,6 +1043,7 @@ test('memory should not grow excessively during navigation', async ({ page }) =>
 
 ```yaml
 # .github/workflows/memory-test.yml
+
 name: Memory Leak Tests
 
 on:

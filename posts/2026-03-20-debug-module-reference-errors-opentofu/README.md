@@ -12,7 +12,7 @@ Module reference errors occur when a calling module accesses an output that the 
 
 ## Common Module Reference Errors
 
-```
+```hcl
 Error: Unsupported attribute
   on main.tf line 25, in resource "aws_instance" "web":
   module.vpc.subnet_id has no attribute "subnet_id".
@@ -30,10 +30,11 @@ Error: Unexpected value
 
 ## Fix 1: Missing Output in Child Module
 
-The most common module reference error — the calling module references an output that doesn't exist:
+The most common module reference error - the calling module references an output that doesn't exist:
 
 ```hcl
-# module/vpc/outputs.tf — add the missing output
+# module/vpc/outputs.tf - add the missing output
+
 output "subnet_ids" {
   description = "IDs of the private subnets"
   value       = aws_subnet.private[*].id
@@ -45,14 +46,14 @@ output "vpc_id" {
 ```
 
 ```hcl
-# main.tf — calling module
+# main.tf - calling module
 module "vpc" {
   source = "./modules/vpc"
   cidr   = "10.0.0.0/16"
 }
 
 resource "aws_instance" "app" {
-  # CORRECT — matches output name in modules/vpc/outputs.tf
+  # CORRECT - matches output name in modules/vpc/outputs.tf
   subnet_id = module.vpc.subnet_ids[0]
 }
 ```
@@ -73,7 +74,7 @@ variable "environment" {
 ```
 
 ```hcl
-# main.tf — must pass all required variables
+# main.tf - must pass all required variables
 module "vpc" {
   source      = "./modules/vpc"
   vpc_cidr    = "10.0.0.0/16"
@@ -84,14 +85,14 @@ module "vpc" {
 ## Fix 3: Passing Undefined Variable to Module
 
 ```hcl
-# WRONG — module/vpc doesn't declare extra_arg
+# WRONG - module/vpc doesn't declare extra_arg
 module "vpc" {
   source    = "./modules/vpc"
   vpc_cidr  = "10.0.0.0/16"
   extra_arg = "value"   # Error: not declared in the module
 }
 
-# CORRECT — only pass declared variables
+# CORRECT - only pass declared variables
 module "vpc" {
   source   = "./modules/vpc"
   vpc_cidr = "10.0.0.0/16"
@@ -101,14 +102,14 @@ module "vpc" {
 ## Fix 4: Wrong Module Output Syntax
 
 ```hcl
-# WRONG — module output syntax
+# WRONG - module output syntax
 resource "aws_ecs_service" "app" {
   # Incorrect ways to reference module output
   cluster = vpc.module.cluster_id       # Wrong order
-  cluster = module_vpc.cluster_id       # Wrong — underscore not dot
+  cluster = module_vpc.cluster_id       # Wrong - underscore not dot
 }
 
-# CORRECT — module.<module_name>.<output_name>
+# CORRECT - module.<module_name>.<output_name>
 resource "aws_ecs_service" "app" {
   cluster = module.vpc.cluster_id
 }
@@ -130,7 +131,7 @@ resource "aws_instance" "app" {
 ```
 
 ```hcl
-# modules/infrastructure/outputs.tf — must re-export nested module outputs
+# modules/infrastructure/outputs.tf - must re-export nested module outputs
 output "vpc_subnet_id" {
   value = module.vpc.subnet_ids[0]
 }

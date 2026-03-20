@@ -31,6 +31,7 @@ The fundamental operations for storing and retrieving values:
 
 ```bash
 # Basic SET
+
 SET user:1:name "Alice"
 
 # GET the value

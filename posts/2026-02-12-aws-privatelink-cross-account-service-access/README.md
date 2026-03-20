@@ -50,6 +50,7 @@ If you already have an ALB, put an NLB in front of it or use the ALB as a target
 
 ```bash
 # Create a Network Load Balancer for the service
+
 NLB_ARN=$(aws elbv2 create-load-balancer \
   --name privatelink-nlb \
   --type network \

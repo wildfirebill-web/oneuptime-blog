@@ -18,6 +18,7 @@ Think of it as the last resort in the SELinux troubleshooting toolkit. Booleans 
 
 ```bash
 # Install the tools
+
 sudo dnf install -y policycoreutils-python-utils setools-console
 ```
 

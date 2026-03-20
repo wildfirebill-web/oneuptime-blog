@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Logging, Loki, Fluentd, ELK, Kubernetes, Observability
 
-Description: Implement logging best practices in Rancher using structured logging, centralized log aggregation with Loki or Elasticsearch, log retention policies, and alerting on log patterns for production Kubernetes clusters.
+Description: Implement logging best practices in Rancher using structured logging, centralized log aggregation with Loki or Elasticsearch, log retention policies, and alerting on log patterns for production...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Install via Rancher UI: **Cluster > Apps > Charts > Logging**
 
 ```bash
 # Or install via Helm
+
 helm repo add rancher-charts https://charts.rancher.io
 helm install rancher-logging rancher-charts/rancher-logging \
   --namespace cattle-logging-system \

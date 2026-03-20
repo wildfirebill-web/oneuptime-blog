@@ -27,6 +27,7 @@ Verify your setup:
 
 ```bash
 # Check Flux installation
+
 flux check
 ```
 
@@ -301,7 +302,7 @@ flux logs --kind=Kustomization --name=apps --level=error
 
 ## Troubleshooting
 
-### Resource Not Found
+Resource Not Found
 
 If the resource cannot be found:
 

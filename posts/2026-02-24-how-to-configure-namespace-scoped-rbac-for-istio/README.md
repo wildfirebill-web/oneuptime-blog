@@ -131,6 +131,7 @@ Then bind them separately:
 
 ```yaml
 # All developers can manage routing
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:

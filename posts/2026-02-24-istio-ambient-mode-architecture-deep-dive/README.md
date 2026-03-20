@@ -44,6 +44,7 @@ You can visualize this by looking at the components on a node:
 
 ```bash
 # Check ztunnel pods running as a DaemonSet
+
 kubectl get pods -n istio-system -l app=ztunnel -o wide
 
 # Check waypoint proxies in a namespace
@@ -114,7 +115,7 @@ The Istio control plane (istiod) in ambient mode still handles certificate issua
 
 This means istiod generates different xDS configurations for different proxy types. Ztunnel uses a simplified protocol since it does not need the full Envoy API surface.
 
-## Resource Comparison
+Resource Comparison
 
 Here is a rough comparison of resource usage between sidecar and ambient modes for a namespace with 100 pods:
 

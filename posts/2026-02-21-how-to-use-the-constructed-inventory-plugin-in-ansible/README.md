@@ -35,6 +35,7 @@ Create a file ending in `.yml` with `plugin: ansible.builtin.constructed`:
 
 ```yaml
 # inventory/constructed.yml
+
 # Constructed inventory plugin configuration
 plugin: ansible.builtin.constructed
 strict: false

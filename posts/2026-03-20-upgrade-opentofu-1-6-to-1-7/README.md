@@ -21,6 +21,7 @@ OpenTofu 1.7 introduced several important features including improved provider-d
 
 ```bash
 # 1. Check current version
+
 tofu version
 # OpenTofu v1.6.x
 

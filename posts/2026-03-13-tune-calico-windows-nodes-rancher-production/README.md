@@ -49,6 +49,7 @@ On each Windows node:
 
 ```powershell
 # Enable RSS for multi-core NIC utilization
+
 Get-NetAdapter | Enable-NetAdapterRss
 
 # Tune TCP

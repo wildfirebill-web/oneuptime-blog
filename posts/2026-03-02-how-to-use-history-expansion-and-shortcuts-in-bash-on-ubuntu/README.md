@@ -14,6 +14,7 @@ Bash keeps a record of every command you run. Knowing how to navigate and reuse 
 
 ```bash
 # Print the full history list
+
 history
 
 # Show last 20 commands

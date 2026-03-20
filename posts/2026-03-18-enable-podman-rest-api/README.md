@@ -26,6 +26,7 @@ Before enabling the API, ensure Podman is installed on your system.
 
 ```bash
 # Install Podman on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y podman
 

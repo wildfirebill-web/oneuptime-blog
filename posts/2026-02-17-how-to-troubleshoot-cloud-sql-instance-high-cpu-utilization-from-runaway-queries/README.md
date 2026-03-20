@@ -16,6 +16,7 @@ First, confirm that CPU usage is the bottleneck and that it correlates with quer
 
 ```bash
 # Check current CPU utilization
+
 gcloud monitoring time-series list \
     --filter='resource.type="cloudsql_database" AND resource.labels.database_id="my-project:my-instance" AND metric.type="cloudsql.googleapis.com/database/cpu/utilization"' \
     --interval-start-time=$(date -u -v-1H +%Y-%m-%dT%H:%M:%SZ) \

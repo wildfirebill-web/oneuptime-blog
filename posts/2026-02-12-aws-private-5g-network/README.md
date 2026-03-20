@@ -54,6 +54,7 @@ Create a private 5G network:
 
 ```bash
 # Create the network
+
 aws private-networks create-network \
   --network-name "warehouse-network" \
   --description "Warehouse floor cellular coverage" \

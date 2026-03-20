@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, DNS, Proxy, IPv4, UDP, stream Module, Networking
+Tags: Nginx, DNS, Proxy, IPv4, UDP, Stream Module, Networking
 
 Description: Configure Nginx's stream module to proxy UDP and TCP DNS traffic over IPv4 to upstream DNS resolvers with load balancing and health checks.
 
@@ -16,6 +16,7 @@ Nginx must be compiled with `--with-stream` and `--with-stream_udp` modules:
 
 ```bash
 # Check if stream module is available
+
 nginx -V 2>&1 | grep -o 'with-stream'
 ```
 

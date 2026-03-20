@@ -9,7 +9,7 @@ Description: Learn how to validate IPv4 address strings in TypeScript using rege
 ## Strict Regex Validator
 
 ```typescript
-// Compile once at module level — RegExp is reusable
+// Compile once at module level - RegExp is reusable
 const IPV4_REGEX =
     /^(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]\d|\d)){3}$/;
 
@@ -41,7 +41,7 @@ for (const [ip, expected] of tests) {
 ## Type Guard for Narrowing
 
 ```typescript
-// Branded type — opaque string that has been validated
+// Branded type - opaque string that has been validated
 type IPv4Address = string & { readonly __brand: "IPv4Address" };
 
 function isIPv4(s: string): s is IPv4Address {

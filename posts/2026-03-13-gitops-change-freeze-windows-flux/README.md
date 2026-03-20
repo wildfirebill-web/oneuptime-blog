@@ -29,6 +29,7 @@ Every Flux reconciler (Kustomization, HelmRelease, ImageUpdateAutomation, etc.) 
 
 ```yaml
 # When suspend: true, Flux skips reconciliation on the next interval
+
 # The resource stays in place; Flux just does nothing new
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

@@ -35,6 +35,7 @@ The Azure Monitor Agent (AMA) is the replacement for the legacy Log Analytics Ag
 
 ```bash
 # Install Azure Monitor Agent on an Azure VM
+
 az vm extension set \
   --name AzureMonitorLinuxAgent \
   --publisher Microsoft.Azure.Monitor \

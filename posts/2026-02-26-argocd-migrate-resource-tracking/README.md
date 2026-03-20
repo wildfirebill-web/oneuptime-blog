@@ -36,6 +36,7 @@ Before changing the tracking method:
 
 ```bash
 # For each application, disable auto-sync
+
 argocd app set my-app --sync-policy none
 
 # Or patch all at once
@@ -196,7 +197,7 @@ Sync all applications again. ArgoCD now tracks via labels and stops setting anno
 
 ## Handling Problems During Migration
 
-### Resources Show as "Missing"
+Resources Show as "Missing"
 
 If resources appear as Missing after migration:
 
@@ -208,7 +209,7 @@ argocd app get my-app --hard-refresh
 argocd app sync my-app --prune=false
 ```
 
-### Resources Show as "OutOfSync"
+Resources Show as "OutOfSync"
 
 The tracking metadata itself might cause OutOfSync status:
 
@@ -233,7 +234,7 @@ kubectl get deployment my-deployment -o yaml | grep -A 3 "annotations"
 argocd app sync correct-app --force
 ```
 
-### Resources Being Pruned Incorrectly
+Resources Being Pruned Incorrectly
 
 If ArgoCD tries to prune resources it should keep:
 

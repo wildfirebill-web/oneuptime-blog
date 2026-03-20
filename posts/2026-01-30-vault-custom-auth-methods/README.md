@@ -44,6 +44,7 @@ Here is a production-ready AppRole configuration with custom constraints:
 
 ```hcl
 # approle-config.hcl
+
 # Custom AppRole configuration with security constraints
 
 # Enable AppRole auth method at a custom path

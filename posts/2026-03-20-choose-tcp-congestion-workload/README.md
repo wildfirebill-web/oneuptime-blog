@@ -30,6 +30,7 @@ graph TD
 
 ```bash
 # Check your network characteristics first
+
 ping -c 20 target-host
 iperf3 -c target-host -t 10
 

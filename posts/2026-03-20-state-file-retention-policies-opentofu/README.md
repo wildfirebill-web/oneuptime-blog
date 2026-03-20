@@ -14,6 +14,7 @@ State file retention policies define how long historical versions of state files
 
 ```hcl
 # Keep recent versions in S3 Standard, older versions in cheaper storage
+
 resource "aws_s3_bucket_lifecycle_configuration" "state" {
   bucket = aws_s3_bucket.state.id
 

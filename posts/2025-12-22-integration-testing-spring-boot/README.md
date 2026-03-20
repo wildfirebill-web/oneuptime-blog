@@ -449,6 +449,7 @@ class SecurityIntegrationTest {
 
 ```yaml
 # src/test/resources/application-test.yml
+
 spring:
   datasource:
     url: jdbc:tc:postgresql:15-alpine:///testdb

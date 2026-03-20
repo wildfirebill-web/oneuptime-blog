@@ -45,6 +45,7 @@ You can enforce this through a single environment variable that works across all
 
 ```bash
 # Set this in your deployment configuration for every service,
+
 # regardless of language. All OpenTelemetry SDKs read this variable.
 export OTEL_PROPAGATORS=tracecontext,baggage
 ```

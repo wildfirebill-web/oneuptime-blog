@@ -22,6 +22,7 @@ Install Envoy if you have not already:
 
 ```bash
 # Install Envoy from the GetEnvoy project
+
 curl -L https://func-e.io/install.sh | bash -s -- -b /usr/local/bin
 func-e run --version
 ```

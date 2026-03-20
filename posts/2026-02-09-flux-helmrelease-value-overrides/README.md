@@ -24,6 +24,7 @@ Define common configuration shared across environments:
 
 ```yaml
 # base/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

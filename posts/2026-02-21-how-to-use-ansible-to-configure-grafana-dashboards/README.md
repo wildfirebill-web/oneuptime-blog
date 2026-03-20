@@ -58,6 +58,7 @@ grafana-dashboards/
 
 ```yaml
 # roles/grafana_dashboards/defaults/main.yml
+
 grafana_url: "http://localhost:3000"
 grafana_admin_user: "admin"
 grafana_admin_password: "changeme"

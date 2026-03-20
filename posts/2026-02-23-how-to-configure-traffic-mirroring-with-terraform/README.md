@@ -26,6 +26,7 @@ Start with the VPC and subnet configuration:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

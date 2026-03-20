@@ -200,6 +200,7 @@ Once you've identified what to buy, purchase through the CLI.
 
 ```bash
 # First, find available RI offerings
+
 aws ec2 describe-reserved-instances-offerings \
   --instance-type m5.xlarge \
   --product-description "Linux/UNIX" \

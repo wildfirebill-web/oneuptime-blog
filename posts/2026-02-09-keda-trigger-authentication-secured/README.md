@@ -282,6 +282,7 @@ spec:
     key: AWS_SECRET_ACCESS_KEY
 ---
 # Reference from any namespace
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

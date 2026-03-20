@@ -32,6 +32,7 @@ If you prefer doing this with the CLI, here is how you set up the dataset:
 
 ```bash
 # Create a dedicated dataset for billing data in the US multi-region
+
 bq mk --dataset \
   --description "GCP Billing Export Data" \
   --location US \

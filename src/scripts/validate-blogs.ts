@@ -2122,7 +2122,7 @@ function checkTagNormalization(blogsJson: BlogEntry[]): void {
 
   // False positive singular/plural pairs — these are different concepts, not variants.
   const falsePluralPairs = new Set([
-    'http|https', 'nat|nats', 'io|ios', 'ftp|ftps',
+    'http|https', 'nat|nats', 'io|ios', 'ftp|ftps', 'amqp|amqps',
     'ip|ips', 'os|oss', 'dr|drs', 'gc|gcs',
     'ps|pss', 'vm|vms', 'vms|vmss',
     'label|labels', 'join|joins', 'array|arrays',

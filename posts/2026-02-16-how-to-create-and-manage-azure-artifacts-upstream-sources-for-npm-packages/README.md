@@ -63,6 +63,7 @@ You can also add other Azure Artifacts feeds as upstream sources. This is useful
 
 ```bash
 # You can also configure upstream sources via the Azure CLI
+
 az artifacts universal upstream add \
   --feed npm-packages \
   --name npmjs \

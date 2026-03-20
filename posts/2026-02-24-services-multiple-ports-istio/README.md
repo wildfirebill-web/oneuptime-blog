@@ -318,6 +318,7 @@ When a specific port is not working as expected, check the proxy configuration f
 
 ```bash
 # List all listeners
+
 istioctl proxy-config listener deploy/backend -n my-namespace
 
 # Check the specific port listener

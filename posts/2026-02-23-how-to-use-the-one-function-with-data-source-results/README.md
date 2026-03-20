@@ -16,6 +16,7 @@ The `one` function takes a list or set and returns its element if the collection
 
 ```hcl
 # one(list)
+
 # Returns the single element, null for empty, or errors for 2+ elements
 one(["hello"])  # Returns "hello"
 one([])         # Returns null

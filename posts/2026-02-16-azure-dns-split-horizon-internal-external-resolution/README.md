@@ -49,6 +49,7 @@ The public DNS zone handles resolution for external users.
 
 ```bash
 # Create a resource group for DNS resources
+
 az group create \
   --name rg-dns \
   --location eastus

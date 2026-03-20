@@ -14,6 +14,7 @@ SSSD authentication failures with Active Directory can be caused by DNS issues, 
 
 ```bash
 # Check if the system is joined to the domain
+
 realm list
 
 # If not joined, rejoin

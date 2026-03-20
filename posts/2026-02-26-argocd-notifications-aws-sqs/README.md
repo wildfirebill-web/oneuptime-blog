@@ -36,6 +36,7 @@ Create the SQS queue using the AWS CLI or Terraform:
 
 ```bash
 # Create a standard SQS queue
+
 aws sqs create-queue \
   --queue-name argocd-deployment-events \
   --attributes '{

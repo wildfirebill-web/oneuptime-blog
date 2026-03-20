@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, TLS, SMTP, IPv4, Email Security, Certificate
+Tags: Postfix, TLS, SMTP, IPv4, Email Security, Certificates
 
 Description: Configure Postfix TLS encryption for both inbound SMTP connections and outbound delivery over IPv4, protecting email in transit.
 
@@ -14,6 +14,7 @@ Postfix supports TLS for both inbound (smtpd) and outbound (smtp) connections. O
 
 ```bash
 # Use Let's Encrypt for trusted certificates
+
 sudo certbot certonly --standalone -d mail.example.com
 
 # Or generate self-signed for testing

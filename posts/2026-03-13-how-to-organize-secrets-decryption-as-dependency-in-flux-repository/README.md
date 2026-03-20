@@ -47,6 +47,7 @@ First, define the infrastructure layer that installs the secrets operator or con
 
 ```yaml
 # clusters/production/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

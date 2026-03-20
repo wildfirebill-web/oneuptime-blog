@@ -69,6 +69,7 @@ This Python example uses SQLAlchemy and the OpenTelemetry API:
 
 ```python
 # order_service.py
+
 import json
 from opentelemetry import trace, context
 from opentelemetry.propagate import inject

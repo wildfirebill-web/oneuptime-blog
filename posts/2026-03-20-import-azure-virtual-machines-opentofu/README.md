@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Azure, Virtual Machines, Import, Compute
+Tags: OpenTofu, Terraform, Azure, Virtual Machine, Import, Compute
 
 Description: Learn how to import existing Azure Virtual Machines into OpenTofu state, including network interfaces, managed disks, and OS disk configurations.
 
@@ -17,6 +17,7 @@ RG="my-app-rg"
 VM_NAME="my-app-vm"
 
 # Get VM details
+
 az vm show --resource-group $RG --name $VM_NAME --output json | jq '{
   location: .location,
   vm_size: .hardwareProfile.vmSize,

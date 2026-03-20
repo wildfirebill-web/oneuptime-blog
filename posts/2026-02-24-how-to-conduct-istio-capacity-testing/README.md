@@ -29,6 +29,7 @@ Use a synthetic workload that generates controllable traffic patterns. The `fort
 
 ```bash
 # Deploy fortio server (acts as an upstream service)
+
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment

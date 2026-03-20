@@ -624,6 +624,7 @@ Many JavaScript libraries don't include TypeScript type definitions. Here's how 
 
 ```bash
 # Many popular libraries have community-maintained types
+
 npm install --save-dev @types/react @types/react-native @types/lodash
 ```
 

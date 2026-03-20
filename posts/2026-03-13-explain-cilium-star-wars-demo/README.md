@@ -36,6 +36,7 @@ graph LR
 
 ```bash
 # Inspect Cilium endpoints and their identities
+
 kubectl exec -n kube-system ds/cilium -- cilium endpoint list
 
 # Check identity for a specific pod

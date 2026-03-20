@@ -75,6 +75,7 @@ The rewrite transforms:
 
 ```yaml
 # Original
+
 readinessProbe:
   httpGet:
     path: /ready

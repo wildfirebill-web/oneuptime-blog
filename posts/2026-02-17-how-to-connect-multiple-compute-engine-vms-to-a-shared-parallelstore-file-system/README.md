@@ -38,6 +38,7 @@ First, enable the Parallelstore API in your project.
 
 ```bash
 # Enable the Parallelstore API for your project
+
 gcloud services enable parallelstore.googleapis.com
 ```
 

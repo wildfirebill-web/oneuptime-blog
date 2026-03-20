@@ -15,6 +15,7 @@ DNS is the critical enabler for IPv6 migration. Clients use AAAA records to disc
 ```python
 #!/usr/bin/env python3
 # dns_migration_inventory.py
+
 import dns.resolver
 import subprocess
 
@@ -66,7 +67,7 @@ www     IN  AAAA  2001:db8:1::1
 api     IN  AAAA  2001:db8:1::2
 mail    IN  AAAA  2001:db8:1::3
 
-; MX record — mail server needs both A and AAAA
+; MX record - mail server needs both A and AAAA
 @       IN  MX 10 mail.example.com.
 ```
 
@@ -110,7 +111,7 @@ for addr, hostname in addresses.items():
 ```
 
 Output:
-```
+```text
 ; IPv6 PTR records for ip6.arpa zone
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.8.b.d.0.1.0.0.2.ip6.arpa. IN PTR www.example.com.
 ```
@@ -118,7 +119,7 @@ Output:
 ## Step 4: Update Recursive Resolvers
 
 ```bash
-# /etc/bind/named.conf — enable IPv6 for resolver
+# /etc/bind/named.conf - enable IPv6 for resolver
 
 options {
     listen-on-v6 { any; };      # Listen on all IPv6 interfaces
@@ -144,7 +145,7 @@ Use low TTL during migration to enable fast rollback:
 # 1. Lower TTL well before migration (24 hours before)
 #    Change: $TTL 86400 -> $TTL 60
 # 2. Publish AAAA record
-# 3. Monitor for 30 minutes — check logs, error rates
+# 3. Monitor for 30 minutes - check logs, error rates
 # 4. If issues: remove AAAA record (clients revert within 60 seconds)
 # 5. If successful after 2 hours: increase TTL back to 300-3600
 
@@ -156,7 +157,7 @@ tail -f /var/log/nginx/access.log | grep -E '^[0-9a-fA-F:]{3,39} '
 
 ## Step 6: DNSSEC for IPv6 Zones
 
-DNSSEC works identically for AAAA records as for A records — no additional configuration is needed beyond standard DNSSEC signing:
+DNSSEC works identically for AAAA records as for A records - no additional configuration is needed beyond standard DNSSEC signing:
 
 ```bash
 # Sign zone with DNSSEC (BIND)
@@ -166,4 +167,4 @@ dnssec-signzone -S -o example.com example.com.zone
 
 ## Conclusion
 
-DNS changes for IPv6 migration follow a three-step pattern: add AAAA records for services, configure PTR records in the `ip6.arpa` delegation, and ensure recursive resolvers listen on IPv6. Use a 60-second TTL during AAAA record publication to enable fast rollback if issues arise. The IPv6 PTR record format requires generating nibble-reversed addresses under `ip6.arpa` — use a script to generate these accurately rather than manually constructing the format.
+DNS changes for IPv6 migration follow a three-step pattern: add AAAA records for services, configure PTR records in the `ip6.arpa` delegation, and ensure recursive resolvers listen on IPv6. Use a 60-second TTL during AAAA record publication to enable fast rollback if issues arise. The IPv6 PTR record format requires generating nibble-reversed addresses under `ip6.arpa` - use a script to generate these accurately rather than manually constructing the format.

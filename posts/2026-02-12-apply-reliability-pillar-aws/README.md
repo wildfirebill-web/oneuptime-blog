@@ -30,6 +30,7 @@ Before you can build reliable systems, you need solid foundations. That starts w
 
 ```hcl
 # Monitor service quota usage
+
 resource "aws_cloudwatch_metric_alarm" "ec2_instance_limit" {
   alarm_name          = "ec2-instance-limit-warning"
   comparison_operator = "GreaterThanThreshold"

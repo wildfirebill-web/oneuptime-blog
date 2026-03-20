@@ -16,6 +16,7 @@ This guide covers deploying FreeRADIUS with Ansible, including client definition
 
 ```yaml
 # roles/freeradius/defaults/main.yml - FreeRADIUS configuration
+
 radius_listen_address: "*"
 radius_auth_port: 1812
 radius_acct_port: 1813

@@ -26,6 +26,7 @@ A typical ArgoCD sync wave setup:
 
 ```yaml
 # Wave -10: Namespace (must exist first)
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -36,6 +36,7 @@ This script creates the virtual network with three subnets and three NSGs - one 
 
 ```bash
 # Define variables
+
 RG="rg-multitier-app"
 LOCATION="eastus"
 VNET_NAME="vnet-multitier"

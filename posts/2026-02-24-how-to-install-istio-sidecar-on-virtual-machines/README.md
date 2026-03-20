@@ -27,6 +27,7 @@ Before installing the sidecar, you need the bootstrap files generated from the K
 
 ```bash
 # Generate on a machine with kubectl access
+
 istioctl x workload entry configure \
   --name my-vm-workload \
   --namespace vm-apps \

@@ -225,6 +225,7 @@ A Docker Compose file defines the test infrastructure. Health checks ensure serv
 
 ```yaml
 # docker-compose.test.yml
+
 # Defines services required for integration testing
 version: '3.8'
 

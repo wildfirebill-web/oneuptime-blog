@@ -64,6 +64,7 @@ For additional integrations, install the relevant packages:
 
 ```bash
 # For local models with Ollama
+
 pip install llama-index-llms-ollama llama-index-embeddings-ollama
 
 # For Anthropic Claude

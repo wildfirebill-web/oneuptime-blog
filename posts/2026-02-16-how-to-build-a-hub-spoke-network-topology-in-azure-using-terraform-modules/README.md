@@ -95,6 +95,7 @@ variable "address_space" {
 }
 
 # Create the hub virtual network
+
 resource "azurerm_virtual_network" "hub" {
   name                = "vnet-${var.hub_name}-hub"
   location            = var.location

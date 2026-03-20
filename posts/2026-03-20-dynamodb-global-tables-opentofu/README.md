@@ -20,6 +20,7 @@ DynamoDB Global Tables provides a fully managed, multi-region, multi-active data
 
 ```hcl
 # DynamoDB Global Table with replicas in multiple regions
+
 resource "aws_dynamodb_table" "global" {
   name             = "${var.project_name}-global-table"
   billing_mode     = "PAY_PER_REQUEST"
@@ -147,4 +148,4 @@ aws dynamodb describe-table \
 
 ## Conclusion
 
-DynamoDB Global Tables enable active-active multi-region architectures without custom replication code. Direct traffic to the nearest regional endpoint using Route 53 latency-based routing, and design your application to handle eventual consistency—reads from non-writer regions may briefly lag behind. Use separate KMS keys per region for encryption, and ensure all replicas have the same GSI configuration which is enforced automatically by DynamoDB.
+DynamoDB Global Tables enable active-active multi-region architectures without custom replication code. Direct traffic to the nearest regional endpoint using Route 53 latency-based routing, and design your application to handle eventual consistency-reads from non-writer regions may briefly lag behind. Use separate KMS keys per region for encryption, and ensure all replicas have the same GSI configuration which is enforced automatically by DynamoDB.

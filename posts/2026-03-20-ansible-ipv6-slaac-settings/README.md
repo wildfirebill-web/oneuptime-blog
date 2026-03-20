@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, SLAAC, sysctl, Networking, Linux
+Tags: Ansible, IPv6, SLAAC, Sysctl, Networking, Linux
 
 Description: A guide to configuring IPv6 Stateless Address Autoconfiguration (SLAAC) behavior on Linux hosts using Ansible sysctl tasks.
 
@@ -21,6 +21,7 @@ SLAAC allows IPv6 hosts to automatically configure their own addresses using Rou
 
 ```yaml
 # configure-slaac-clients.yml - Enable SLAAC on client Linux hosts
+
 ---
 - name: Configure SLAAC settings on client hosts
   hosts: client_hosts
@@ -69,7 +70,7 @@ SLAAC allows IPv6 hosts to automatically configure their own addresses using Rou
 
 ## Playbook: Disable SLAAC on Server/Router Hosts
 
-Servers that route traffic should not use SLAAC — they need static IPv6 addresses:
+Servers that route traffic should not use SLAAC - they need static IPv6 addresses:
 
 ```yaml
 # disable-slaac-servers.yml - Disable SLAAC on server/router hosts
@@ -139,4 +140,4 @@ ansible-playbook disable-slaac-servers.yml -i inventory.ini
 ansible-playbook verify-slaac.yml -i inventory.ini
 ```
 
-Managing SLAAC settings with Ansible ensures each host type — clients, servers, and routers — gets the appropriate SLAAC behavior, balancing automatic address configuration with security and stability requirements.
+Managing SLAAC settings with Ansible ensures each host type - clients, servers, and routers - gets the appropriate SLAAC behavior, balancing automatic address configuration with security and stability requirements.

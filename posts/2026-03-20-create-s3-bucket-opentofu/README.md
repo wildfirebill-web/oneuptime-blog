@@ -8,7 +8,7 @@ Description: Learn how to create and configure an AWS S3 bucket with OpenTofu, i
 
 ## Introduction
 
-Amazon S3 is the most commonly used AWS storage service. OpenTofu's AWS provider splits S3 configuration across multiple resource types—bucket, versioning, encryption, ACL, and lifecycle—following the AWS provider v4+ pattern where each configuration concern is its own resource.
+Amazon S3 is the most commonly used AWS storage service. OpenTofu's AWS provider splits S3 configuration across multiple resource types-bucket, versioning, encryption, ACL, and lifecycle-following the AWS provider v4+ pattern where each configuration concern is its own resource.
 
 ## Basic Bucket
 

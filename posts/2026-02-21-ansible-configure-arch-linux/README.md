@@ -27,6 +27,7 @@ Arch minimal installations may not include Python. Use the `raw` module to boots
 ```yaml
 ---
 # bootstrap_arch.yml
+
 - name: Bootstrap Arch Linux for Ansible
   hosts: arch
   gather_facts: false

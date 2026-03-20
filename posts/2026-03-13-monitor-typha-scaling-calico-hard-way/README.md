@@ -30,6 +30,7 @@ Confirm Typha is serving metrics on the configured port:
 
 ```bash
 # Port-forward to Typha's metrics port
+
 TYPHA_POD=$(kubectl get pods -n kube-system -l k8s-app=calico-typha -o name | head -1)
 kubectl port-forward -n kube-system $TYPHA_POD 9093:9093 &
 

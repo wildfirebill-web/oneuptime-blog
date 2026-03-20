@@ -203,6 +203,7 @@ Configure the Serverless Framework to deploy your API:
 
 ```yaml
 # serverless.yml
+
 service: express-lambda-api
 
 provider:

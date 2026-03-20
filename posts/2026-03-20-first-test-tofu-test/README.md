@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Testing, tofu test, Infrastructure as Code, Quality Assurance
+Tags: OpenTofu, Terraform, Testing, Tofu test, Infrastructure as Code, Quality Assurance
 
 Description: Learn how to write your first infrastructure test using OpenTofu's built-in testing framework to validate resource configurations before deployment.
 
@@ -24,7 +24,7 @@ OpenTofu 1.6+ includes a native testing framework (`tofu test`) that lets you wr
 
 ## Project Structure
 
-```
+```text
 my-module/
 ├── main.tf
 ├── variables.tf
@@ -42,6 +42,7 @@ my-module/
 # tests/unit.tftest.hcl
 
 # Test that the S3 bucket has the expected name and versioning
+
 run "s3_bucket_name_is_correct" {
   command = plan  # Use 'plan' for fast unit tests
 
@@ -165,7 +166,7 @@ tofu test -verbose
 ```hcl
 # tests/integration.tftest.hcl
 
-# Uses 'apply' command — actually creates resources
+# Uses 'apply' command - actually creates resources
 run "create_real_bucket" {
   command = apply
 
@@ -207,10 +208,10 @@ run "test_with_mock" {
 
 ## Best Practices
 
-1. **Use `command = plan`** for unit tests — faster and doesn't require AWS credentials
+1. **Use `command = plan`** for unit tests - faster and doesn't require AWS credentials
 2. **Use `command = apply`** only for integration tests that need real infrastructure
 3. **Use mock providers** for truly offline tests in CI where no cloud access is available
-4. **Test edge cases** — empty inputs, maximum values, and boundary conditions
+4. **Test edge cases** - empty inputs, maximum values, and boundary conditions
 5. **Run tests in CI** on every pull request before allowing merges
 
 ---

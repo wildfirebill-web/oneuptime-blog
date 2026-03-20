@@ -26,6 +26,7 @@ Start with the obvious stuff. Is the sidecar running? Are certificates valid?
 
 ```bash
 # Is the sidecar injected and running?
+
 kubectl get pod <pod-name> -n <namespace> -o jsonpath='{.spec.containers[*].name}'
 
 # Check sidecar certificate status

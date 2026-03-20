@@ -24,6 +24,7 @@ Define a rollup job that summarizes application logs:
 
 ```bash
 # Create rollup job for daily aggregation
+
 curl -X PUT "http://elasticsearch:9200/_rollup/job/app-logs-daily-rollup" \
   -H "Content-Type: application/json" \
   -u elastic:password \

@@ -32,6 +32,7 @@ Create the requirements file:
 
 ```text
 # requirements.txt - Production dependencies
+
 Flask==3.1.0
 gunicorn==22.0.0
 google-cloud-firestore==2.19.0

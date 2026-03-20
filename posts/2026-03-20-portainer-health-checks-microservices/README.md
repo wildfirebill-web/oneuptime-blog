@@ -1,4 +1,4 @@
-# How to Set Up Health Checks for Microservices in Portainer
+# How to Set Up Health Checks for Microservices in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

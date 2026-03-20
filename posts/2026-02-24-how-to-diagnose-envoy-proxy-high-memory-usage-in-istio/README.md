@@ -16,6 +16,7 @@ Start by understanding the current situation:
 
 ```bash
 # Container-level memory usage
+
 kubectl top pod my-service-pod -n my-namespace --containers
 
 # Detailed memory breakdown from Envoy

@@ -166,6 +166,7 @@ Once deployed, verify everything is working:
 
 ```bash
 # List scale set instances
+
 az vmss list-instances \
   --resource-group myResourceGroup \
   --name webserver-prod-vmss \

@@ -142,6 +142,7 @@ The RED method focuses on request-driven services. Alerts should cover rate anom
 
 ```yaml
 # Rate: Sudden drop in traffic might indicate upstream issues
+
 - alert: LowRequestRate
   expr: |
     sum(rate(http_requests_total[5m])) < 10

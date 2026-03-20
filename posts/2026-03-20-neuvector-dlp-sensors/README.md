@@ -27,6 +27,7 @@ A DLP sensor consists of:
 
 ```bash
 # Create a DLP sensor for PII detection
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/dpi/dlp/sensor" \
   -H "Content-Type: application/json" \

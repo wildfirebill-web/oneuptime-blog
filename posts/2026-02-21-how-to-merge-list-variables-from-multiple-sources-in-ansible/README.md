@@ -16,6 +16,7 @@ Consider a role that defines a default package list:
 
 ```yaml
 # roles/base/defaults/main.yml
+
 base_packages:
   - curl
   - wget

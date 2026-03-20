@@ -28,6 +28,7 @@ This guide covers deploying Flux on a KubeEdge cloud cluster, configuring edge-s
 
 ```bash
 # Verify edge nodes appear as Kubernetes nodes
+
 kubectl get nodes
 # Expected output includes edge nodes with type="edge" label:
 # NAME              STATUS   ROLES        AGE

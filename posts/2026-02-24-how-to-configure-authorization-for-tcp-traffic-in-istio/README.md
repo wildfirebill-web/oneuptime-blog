@@ -299,6 +299,7 @@ If a TCP service doesn't have an Istio sidecar (common for third-party databases
 
 ```yaml
 # This won't work if the external DB has no sidecar
+
 # Instead, use a ServiceEntry + egress policy approach
 
 apiVersion: networking.istio.io/v1

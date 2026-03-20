@@ -34,6 +34,7 @@ Always use the official PyTorch installer at `https://pytorch.org/get-started/lo
 
 ```bash
 # Check if GPU is detected
+
 lspci | grep -i nvidia
 
 # Install recommended driver

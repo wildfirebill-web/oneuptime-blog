@@ -41,6 +41,7 @@ The simplest default deny policy blocks all incoming traffic to pods in a namesp
 
 ```yaml
 # deny-all-ingress.yaml
+
 # Block all incoming traffic to every pod in this namespace
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

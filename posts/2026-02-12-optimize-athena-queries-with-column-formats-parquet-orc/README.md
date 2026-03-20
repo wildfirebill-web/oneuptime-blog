@@ -108,6 +108,7 @@ For data pipelines, generate Parquet files directly:
 
 ```python
 # Convert a CSV file to Parquet using PyArrow
+
 import pyarrow as pa
 import pyarrow.parquet as pq
 import pyarrow.csv as csv

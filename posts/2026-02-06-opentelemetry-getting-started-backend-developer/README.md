@@ -36,6 +36,7 @@ Pick your language and install the OpenTelemetry SDK. Here's Node.js as an examp
 
 ```bash
 # Install core OpenTelemetry packages
+
 npm install @opentelemetry/api \
             @opentelemetry/sdk-node \
             @opentelemetry/auto-instrumentations-node \

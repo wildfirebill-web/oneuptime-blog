@@ -34,6 +34,7 @@ flowchart LR
 
 ```ini
 # inventory/databases.ini
+
 [postgres_servers]
 pg-primary ansible_host=10.0.9.10 db_port=5432
 

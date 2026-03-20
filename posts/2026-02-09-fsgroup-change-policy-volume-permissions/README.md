@@ -133,6 +133,7 @@ You can measure the impact of fsGroupChangePolicy by checking pod events and sta
 
 ```bash
 # Check pod events for mount-related messages
+
 kubectl describe pod nginx-optimized | grep -A 5 Events
 
 # Measure time from pod creation to running state

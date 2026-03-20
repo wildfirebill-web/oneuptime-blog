@@ -24,6 +24,7 @@ Deploy the controller using Helm.
 
 ```bash
 # Add the Sealed Secrets Helm repository
+
 helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
 
 # Update the repo index

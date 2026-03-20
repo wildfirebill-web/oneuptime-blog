@@ -38,6 +38,7 @@ Podman is available through system package managers:
 
 ```bash
 # Fedora/RHEL
+
 sudo dnf install podman
 
 # Ubuntu/Debian

@@ -57,6 +57,7 @@ grafana-install/
 
 ```yaml
 # roles/grafana/defaults/main.yml
+
 # Grafana version (use "latest" or a specific version like "10.2.3")
 grafana_version: "latest"
 

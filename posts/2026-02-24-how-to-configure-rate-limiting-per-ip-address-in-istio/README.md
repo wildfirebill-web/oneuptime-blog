@@ -250,6 +250,7 @@ Send requests from different source IPs and verify each gets its own limit:
 
 ```bash
 # From one IP
+
 for i in $(seq 1 70); do
   curl -s -o /dev/null -w "%{http_code} " http://my-service.example.com/api/test
 done

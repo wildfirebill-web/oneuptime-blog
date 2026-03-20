@@ -31,6 +31,7 @@ Start by defining your scopes and creating an OAuth2 scheme:
 
 ```python
 # scopes.py
+
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm, SecurityScopes
 from pydantic import BaseModel

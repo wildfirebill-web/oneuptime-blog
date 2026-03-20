@@ -20,6 +20,7 @@ Always review your connections before removing any.
 
 ```bash
 # List all configured connections
+
 podman system connection ls
 
 # Display detailed information in a table

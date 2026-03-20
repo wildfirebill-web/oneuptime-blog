@@ -27,6 +27,7 @@ By the end of this tutorial, you will have a GitOps workflow where adding a new 
 
 ```yaml
 # clusters/my-cluster/chaos-toolkit/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

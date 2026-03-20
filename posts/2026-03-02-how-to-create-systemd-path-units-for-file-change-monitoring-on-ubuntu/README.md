@@ -24,6 +24,7 @@ Path units live in `/etc/systemd/system/` like service units:
 
 ```ini
 # /etc/systemd/system/example.path
+
 [Unit]
 Description=Watch /var/spool/incoming for new files
 Documentation=man:systemd.path(5)

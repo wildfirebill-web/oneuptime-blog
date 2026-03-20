@@ -37,6 +37,7 @@ Before optimizing, know how big the side input actually is:
 
 ```python
 # Measure the side input before using it
+
 class MeasureSize(beam.DoFn):
     def process(self, element):
         import sys

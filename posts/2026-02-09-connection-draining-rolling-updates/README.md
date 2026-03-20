@@ -337,6 +337,7 @@ SERVICE_URL="http://web-service.production.svc.cluster.local"
 echo "Starting connection draining test..."
 
 # Start background requests
+
 for i in {1..20}; do
   (
     curl -s -w "\nRequest $i: %{http_code} in %{time_total}s\n" \

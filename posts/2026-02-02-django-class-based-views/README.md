@@ -18,6 +18,7 @@ Before diving into CBVs, let's see what we're replacing. Here's a typical functi
 
 ```python
 # Function-based view for listing articles
+
 def article_list(request):
     articles = Article.objects.all()
     return render(request, 'articles/list.html', {'articles': articles})

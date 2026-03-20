@@ -16,6 +16,7 @@ Make sure you have the following ready:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install govc (vSphere CLI tool)

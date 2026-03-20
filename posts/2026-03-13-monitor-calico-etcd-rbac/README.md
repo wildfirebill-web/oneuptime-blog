@@ -27,6 +27,7 @@ Configure etcd to log all access attempts:
 
 ```yaml
 # etcd configuration
+
 --audit-log-path=/var/log/etcd/audit.log
 --audit-log-maxsize=100
 --audit-log-maxbackups=5

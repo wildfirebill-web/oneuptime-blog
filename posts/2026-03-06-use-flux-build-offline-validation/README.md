@@ -46,6 +46,7 @@ Here is the base kustomization:
 
 ```yaml
 # infrastructure/base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

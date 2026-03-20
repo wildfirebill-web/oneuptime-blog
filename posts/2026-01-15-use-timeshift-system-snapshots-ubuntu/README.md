@@ -54,6 +54,7 @@ RSYNC mode creates snapshots using hard links and the rsync utility. This is the
 
 ```bash
 # Example: Check if your system uses ext4 (common for RSYNC mode)
+
 df -T /
 
 # Output example:

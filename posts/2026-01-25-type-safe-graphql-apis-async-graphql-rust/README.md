@@ -18,6 +18,7 @@ Start by creating a new Rust project and adding the necessary dependencies. We'l
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "graphql-api"
 version = "0.1.0"

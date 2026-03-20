@@ -27,6 +27,7 @@ The most secure approach avoids static credentials entirely:
 
 ```bash
 # Create an IAM OIDC provider for the EKS cluster
+
 eksctl utils associate-iam-oidc-provider --cluster my-cluster --approve
 
 # Create an IAM role for Cilium

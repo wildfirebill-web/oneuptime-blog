@@ -28,6 +28,7 @@ Here is a minimal ImageRepository manifest that scans a public Docker Hub image.
 
 ```yaml
 # imagerepository.yaml
+
 # Scan the nginx image on Docker Hub for available tags
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

@@ -35,6 +35,7 @@ variable "grafana_auth" { type = string; sensitive = true }
 
 ```hcl
 # Create folders for organizing dashboards
+
 resource "grafana_folder" "infrastructure" {
   title = "Infrastructure"
 }

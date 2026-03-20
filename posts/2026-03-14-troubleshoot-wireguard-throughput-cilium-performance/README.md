@@ -26,6 +26,7 @@ The most common issues are MTU fragmentation, CPU saturation from ChaCha20 encry
 
 ```bash
 # Check Cilium encryption status
+
 cilium encrypt status
 
 # Verify WireGuard interface exists

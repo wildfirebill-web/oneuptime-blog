@@ -34,6 +34,7 @@ An OpenAPI document has several main sections. Here is a minimal example:
 
 ```yaml
 # openapi.yaml
+
 # This is the root of your OpenAPI specification
 
 openapi: 3.0.3  # Specifies the OpenAPI version

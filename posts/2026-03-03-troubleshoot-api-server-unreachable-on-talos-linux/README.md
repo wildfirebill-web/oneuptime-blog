@@ -18,6 +18,7 @@ You will typically notice the problem when `kubectl` commands fail:
 
 ```bash
 # This is what you see when the API server is unreachable
+
 kubectl get nodes
 # Error: Unable to connect to the server: dial tcp 10.0.0.10:6443: connect: connection refused
 ```

@@ -43,6 +43,7 @@ Enable the API first:
 
 ```bash
 # Enable the Batch API
+
 gcloud services enable batch.googleapis.com
 ```
 

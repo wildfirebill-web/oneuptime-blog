@@ -28,6 +28,7 @@ Here is a pipeline that demonstrates the most common parameter types:
 
 ```yaml
 # Parameters with different types and defaults
+
 trigger: none  # Manual trigger only
 
 parameters:

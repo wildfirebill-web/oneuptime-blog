@@ -98,6 +98,7 @@ A complete project specification provides fine-grained control over all aspects 
 
 ```yaml
 # argocd-projects/team-backend.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

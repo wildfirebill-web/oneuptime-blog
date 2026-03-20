@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, debian, docker, installation, container-management
+Tags: Portainer, Debian, Docker, Installation, Container-management
 
 Description: A step-by-step guide to installing Portainer Community Edition on Debian Linux with Docker, covering Docker setup and Portainer initial configuration.
 
@@ -21,6 +21,7 @@ Portainer CE provides a user-friendly web interface for managing Docker containe
 
 ```bash
 # Update package index
+
 sudo apt-get update && sudo apt-get upgrade -y
 
 # Install required packages

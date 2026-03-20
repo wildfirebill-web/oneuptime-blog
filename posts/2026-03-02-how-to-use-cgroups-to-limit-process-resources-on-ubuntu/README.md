@@ -18,6 +18,7 @@ On Ubuntu 22.04+, cgroups v2 is the default. You can verify this:
 
 ```bash
 # Check which cgroup version is in use
+
 mount | grep cgroup
 
 # cgroups v2 shows a single unified mount:

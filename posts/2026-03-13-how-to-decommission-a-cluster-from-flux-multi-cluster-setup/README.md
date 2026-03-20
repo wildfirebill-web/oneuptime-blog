@@ -31,6 +31,7 @@ Before starting the decommission process, verify the following:
 
 ```bash
 # Set the cluster context
+
 export CLUSTER_NAME="staging-us-east"
 export CLUSTER_CONTEXT="staging-us-east"
 

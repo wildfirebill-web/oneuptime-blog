@@ -38,6 +38,7 @@ Add new local users:
 Username: jdoe
 Display Name: John Doe
 Description: Backend developer
+
 Password: <strong-password>
 Confirm Password: <strong-password>
 ```
@@ -57,6 +58,7 @@ Create multiple users via the Rancher API:
 
 ```bash
 # Create a local user via API
+
 curl -s -k \
   -X POST \
   -H "Authorization: Bearer $RANCHER_TOKEN" \

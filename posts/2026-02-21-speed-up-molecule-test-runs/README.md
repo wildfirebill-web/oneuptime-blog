@@ -32,6 +32,7 @@ This is the single biggest time saver. Instead of using bare OS images and insta
 
 ```dockerfile
 # Dockerfile.molecule-ubuntu - Pre-built test image
+
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive

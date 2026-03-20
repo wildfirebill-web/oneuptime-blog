@@ -18,6 +18,7 @@ Rego is a declarative query language. Policies define rules that evaluate to tru
 package example
 
 # Simple rule
+
 allow {
   input.user == "admin"
 }

@@ -27,6 +27,7 @@ Before switching, confirm every node has the required kernel modules.
 
 ```bash
 # Run on each node or via DaemonSet
+
 lsmod | grep nf_tables
 nft list tables 2>/dev/null && echo "nftables ready"
 uname -r  # Must be 5.2+

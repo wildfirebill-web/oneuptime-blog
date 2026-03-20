@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Backstage, IPv6, Scaffolder, Infrastructure, IDP
+Tags: Backstage, IPv6, Scaffolder, Infrastructure, IdP
 
 Description: Create Backstage scaffolder templates that provision IPv6-enabled infrastructure through Crossplane or Terraform.
 
@@ -24,6 +24,7 @@ Crossplane manages cloud infrastructure as Kubernetes custom resources. For IPv6
 
 ```yaml
 # vpc-ipv6.yaml
+
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: VPC
 metadata:

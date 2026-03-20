@@ -36,6 +36,7 @@ sequenceDiagram
 
 ```bash
 # View the PMTU cache (kernel maintains per-destination MTU values)
+
 ip -6 route show cache
 
 # Example output:
@@ -134,7 +135,7 @@ def simulate_pmtud(destination: str, start_mtu: int = 1500,
 
 ## Common PMTUD Failure Patterns
 
-```
+```text
 Pattern 1: PTB is blocked by firewall
   Symptom: Large packets fail, small succeed, no PTB in tcpdump
   Fix:     Allow ICMPv6 Type 2 at the blocking firewall

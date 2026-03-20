@@ -32,6 +32,7 @@ Ingress defines rules that route external HTTP/HTTPS traffic to services inside 
 
 ```yaml
 # simple-ingress.yaml
+
 # Route traffic based on hostname
 apiVersion: networking.k8s.io/v1
 kind: Ingress

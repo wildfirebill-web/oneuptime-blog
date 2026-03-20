@@ -16,6 +16,7 @@ The `expect` module requires the `pexpect` Python library on the target host. In
 
 ```yaml
 # install_pexpect.yml - Install pexpect dependency
+
 ---
 - name: Install pexpect for expect module
   hosts: all

@@ -205,6 +205,7 @@ Use prefixes or dedicated parameters for numeric ranges:
 
 ```text
 # Option 1: Separate min/max parameters (recommended for clarity)
+
 GET /products?min_price=100&max_price=500
 
 # Option 2: Range syntax with brackets

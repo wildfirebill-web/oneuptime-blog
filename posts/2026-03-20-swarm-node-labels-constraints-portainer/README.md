@@ -1,4 +1,4 @@
-# How to Manage Swarm Node Labels and Constraints in Portainer
+# How to Manage Swarm Node Labels and Constraints in Portainer - Constraints
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Assign and manage Docker Swarm node labels through Portainer to imp
 
 ---
 
-Node labels in Docker Swarm are key-value metadata attached to nodes. They enable placement constraints that direct services to specific hardware — GPU nodes for ML workloads, SSD nodes for databases, or geographic zones for latency-sensitive services.
+Node labels in Docker Swarm are key-value metadata attached to nodes. They enable placement constraints that direct services to specific hardware - GPU nodes for ML workloads, SSD nodes for databases, or geographic zones for latency-sensitive services.
 
 ## Step 1: View and Add Labels via Portainer
 
@@ -18,6 +18,7 @@ Via terminal:
 
 ```bash
 # Add labels to nodes
+
 docker node update --label-add tier=gpu node-gpu-1
 docker node update --label-add tier=standard node-worker-1
 docker node update --label-add zone=us-east-1a node-worker-1
@@ -92,4 +93,4 @@ fi
 
 ## Summary
 
-Node labels give you a flexible system for classifying Swarm cluster capacity. By pairing labels with placement constraints in your stack YAML, you ensure each service runs on appropriate infrastructure — making GPU workloads land on GPU nodes, stateful services land on high-IOPS nodes, and replicas spread across failure domains.
+Node labels give you a flexible system for classifying Swarm cluster capacity. By pairing labels with placement constraints in your stack YAML, you ensure each service runs on appropriate infrastructure - making GPU workloads land on GPU nodes, stateful services land on high-IOPS nodes, and replicas spread across failure domains.

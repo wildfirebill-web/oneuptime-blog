@@ -8,7 +8,7 @@ Description: Learn how to use tofu init to initialize an OpenTofu working direct
 
 ## Introduction
 
-`tofu init` is the first command you run in any OpenTofu project. It prepares the working directory by downloading required providers, fetching modules, and configuring the backend. You must run it before any `plan`, `apply`, or other commands. It is safe to run repeatedly — it is idempotent.
+`tofu init` is the first command you run in any OpenTofu project. It prepares the working directory by downloading required providers, fetching modules, and configuring the backend. You must run it before any `plan`, `apply`, or other commands. It is safe to run repeatedly - it is idempotent.
 
 ## Basic Usage
 
@@ -17,6 +17,7 @@ cd my-infrastructure
 tofu init
 
 # Output:
+
 # Initializing the backend...
 # Initializing provider plugins...
 # - Finding hashicorp/aws versions matching "~> 5.0"...
@@ -124,4 +125,4 @@ tofu init \
 
 ## Conclusion
 
-`tofu init` must run before any other OpenTofu command. It downloads providers and modules, configures the backend, and sets up the `.terraform/` directory. Use `-upgrade` to refresh provider versions, `-migrate-state` when changing backends, and `TF_PLUGIN_CACHE_DIR` in CI/CD to avoid repeated downloads. Running `tofu init` is always safe — it will not modify your infrastructure.
+`tofu init` must run before any other OpenTofu command. It downloads providers and modules, configures the backend, and sets up the `.terraform/` directory. Use `-upgrade` to refresh provider versions, `-migrate-state` when changing backends, and `TF_PLUGIN_CACHE_DIR` in CI/CD to avoid repeated downloads. Running `tofu init` is always safe - it will not modify your infrastructure.

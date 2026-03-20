@@ -64,6 +64,7 @@ First, enable the PKI secrets engine for the Root CA. We mount it at a separate 
 
 ```bash
 # Enable PKI secrets engine for Root CA at a dedicated path
+
 vault secrets enable -path=pki_root pki
 
 # Configure a long max TTL for the Root CA (10 years)

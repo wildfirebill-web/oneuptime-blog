@@ -54,6 +54,7 @@ If you are using AWS, S3 Cross-Region Replication (CRR) is the simplest approach
 
 ```bash
 # Primary bucket in us-east-1
+
 aws s3api create-bucket \
   --bucket talos-backups-primary \
   --region us-east-1

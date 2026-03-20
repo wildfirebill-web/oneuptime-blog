@@ -14,6 +14,7 @@ IPv6 compliance automation ensures every device follows your security and operat
 
 ```yaml
 # compliance/ipv6_policy.yml
+
 ipv6_compliance:
   rules:
     - id: IPV6-001
@@ -192,7 +193,7 @@ def generate_html_report(results: list, output_file: str):
     html = f"""<!DOCTYPE html>
 <html>
 <body>
-<h1>IPv6 Compliance Report — {datetime.now().isoformat()}</h1>
+<h1>IPv6 Compliance Report - {datetime.now().isoformat()}</h1>
 <p>Passed: {passed} | Failed: {failed}</p>
 <table border="1">
   <tr><th>Rule</th><th>Status</th><th>Violations</th></tr>
@@ -206,4 +207,4 @@ def generate_html_report(results: list, output_file: str):
 
 ## Conclusion
 
-IPv6 compliance automation provides continuous visibility into configuration drift and security policy violations. Define rules in YAML, implement checks with NAPALM for vendor-agnostic retrieval, and enforce compliance as a CI/CD gate. Critical violations — especially blocked ICMPv6 — should trigger immediate alerts. Use OneUptime to monitor compliance check job execution and alert on failures.
+IPv6 compliance automation provides continuous visibility into configuration drift and security policy violations. Define rules in YAML, implement checks with NAPALM for vendor-agnostic retrieval, and enforce compliance as a CI/CD gate. Critical violations - especially blocked ICMPv6 - should trigger immediate alerts. Use OneUptime to monitor compliance check job execution and alert on failures.

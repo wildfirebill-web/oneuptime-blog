@@ -23,6 +23,7 @@ graph LR
 
 ```yaml
 # roles/splunk_forwarder/tasks/main.yml
+
 ---
 - name: Download Splunk Universal Forwarder
   ansible.builtin.get_url:

@@ -20,6 +20,7 @@ On RHEL, the kernel's memory management defaults work well for general-purpose s
 
 ```bash
 # View detailed memory information
+
 cat /proc/meminfo
 ```
 

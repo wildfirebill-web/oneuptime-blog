@@ -22,6 +22,7 @@ Start by checking what extensions are currently installed:
 
 ```bash
 # List all extensions on the node
+
 talosctl -n 192.168.1.10 get extensions
 
 # Get detailed information

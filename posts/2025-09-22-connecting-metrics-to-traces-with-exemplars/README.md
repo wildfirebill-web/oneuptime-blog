@@ -74,6 +74,7 @@ This pseudocode illustrates the core pattern for exemplar attachment. The key in
 
 ```pseudo
 # Initialize OpenTelemetry tracer and meter providers
+
 tracer = getTracer()
 meter = getMeter()
 

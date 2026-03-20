@@ -29,6 +29,7 @@ sudo apt update
 sudo apt install apache2 libapache2-mod-wsgi-py3 -y
 
 # Enable required modules
+
 sudo a2enmod wsgi
 sudo a2enmod headers
 sudo a2enmod ssl  # For HTTPS

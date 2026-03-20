@@ -20,6 +20,7 @@ CDKTF requires Terraform CLI version 1.2.0 or later:
 
 ```bash
 # macOS
+
 brew install terraform
 
 # Or download from HashiCorp

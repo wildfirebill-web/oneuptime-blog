@@ -39,6 +39,7 @@ Before or after setup, check what bindings exist on a LUKS device:
 
 ```bash
 # List all Clevis bindings on /dev/sda3
+
 sudo clevis luks list -d /dev/sda3
 ```
 

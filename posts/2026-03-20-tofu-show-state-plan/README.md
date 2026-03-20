@@ -1,4 +1,4 @@
-# How to Use tofu show to Display State or Plan
+# How to Use tofu show to Display State or Plan - Tofu State Plan
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Learn how to use tofu show to display human-readable and machine-re
 
 ```bash
 # Show all resources in the current state (human-readable)
+
 tofu show
 
 # Output:

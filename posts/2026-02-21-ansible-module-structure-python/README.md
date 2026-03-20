@@ -19,6 +19,7 @@ Every module should include these sections in order:
 # -*- coding: utf-8 -*-
 
 # Copyright: (c) 2026, Your Name
+
 # GNU General Public License v3.0+
 
 # 1. DOCUMENTATION string

@@ -31,6 +31,7 @@ SSSD takes the RID (the last portion of the SID) and adds it to a base ID to pro
 
 ```bash
 # Check the current ID mapping configuration
+
 sudo cat /etc/sssd/sssd.conf | grep -A 20 "\[domain/"
 ```
 

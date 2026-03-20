@@ -30,6 +30,7 @@ source 'https://rubygems.org'
 gem 'sinatra'
 
 # OpenTelemetry core SDK
+
 gem 'opentelemetry-sdk'
 
 # OTLP exporter for sending traces

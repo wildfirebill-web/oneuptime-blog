@@ -22,6 +22,7 @@ You need Terraform 1.0 or later, an AWS account with VPCs in multiple regions, a
 
 ```hcl
 # Primary region
+
 provider "aws" {
   region = "us-east-1"
   alias  = "primary"

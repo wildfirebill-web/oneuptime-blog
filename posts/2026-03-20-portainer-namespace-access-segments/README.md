@@ -19,7 +19,7 @@ Namespace-based segmentation is the primary method for multi-tenancy in Kubernet
 
 ## Architecture: Team-to-Namespace Mapping
 
-```
+```text
 Portainer Team: backend-engineers
     → Kubernetes Namespace: backend
     → Access level: Standard (can deploy)
@@ -38,6 +38,7 @@ Portainer Team: platform-devops
 
 ```bash
 # Create team-specific namespaces
+
 kubectl create namespace backend
 kubectl create namespace frontend
 kubectl create namespace operations
@@ -114,7 +115,7 @@ After this:
 Add Kubernetes NetworkPolicies to prevent cross-namespace communication:
 
 ```yaml
-# network-policy-isolate.yaml — Deny all cross-namespace traffic
+# network-policy-isolate.yaml - Deny all cross-namespace traffic
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -154,7 +155,7 @@ done
 Portainer's access control maps to Kubernetes RBAC. For additional control, create Kubernetes Roles:
 
 ```yaml
-# role-developer.yaml — Developer role for a namespace
+# role-developer.yaml - Developer role for a namespace
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

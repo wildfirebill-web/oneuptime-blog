@@ -18,6 +18,7 @@ The simplest approach uses the built-in reboot module:
 
 ```yaml
 # basic-reboot.yml - Simple reboot and wait
+
 ---
 - name: Reboot servers and wait for return
   hosts: "{{ target_hosts | default('staging') }}"

@@ -32,6 +32,7 @@ This guide covers the major low-power protocols and implementation patterns for 
 
 ```python
 # lorawan_device.py
+
 # LoRaWAN device implementation
 
 import time

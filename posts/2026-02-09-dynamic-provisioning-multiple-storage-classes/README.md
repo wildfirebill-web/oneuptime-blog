@@ -26,6 +26,7 @@ Create a set of StorageClasses for different performance tiers:
 
 ```yaml
 # High-performance storage for databases
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

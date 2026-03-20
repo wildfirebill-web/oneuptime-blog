@@ -52,6 +52,7 @@ The following script monitors an application's error rate by calling a metrics e
 
 ```python
 # alert_monitor.py
+
 # Monitors error rate and triggers alerts when thresholds are exceeded
 
 import requests

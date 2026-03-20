@@ -31,6 +31,7 @@ Classic symptoms of MTU issues:
 
 ```bash
 # Check for large numbers of fragmented packets
+
 netstat -s | grep -i fragment
 cat /proc/net/snmp | awk '/IpFragCreates/{print "Fragments created:", $2}'
 ```

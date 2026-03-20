@@ -24,6 +24,7 @@ The trade-off compared to RAID 1 is that rebuilds are slower and more stressful 
 
 ```bash
 # Install mdadm
+
 sudo dnf install -y mdadm
 
 # Wipe signatures on all target disks

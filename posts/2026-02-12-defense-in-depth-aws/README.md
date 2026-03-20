@@ -35,6 +35,7 @@ This CloudFormation template sets up a CloudFront distribution with AWS WAF and 
 
 ```yaml
 # CloudFormation template for edge protection
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   # WAF Web ACL with common rule sets

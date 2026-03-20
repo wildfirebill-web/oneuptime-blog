@@ -26,6 +26,7 @@ This playbook creates different filesystem types based on the intended use:
 
 ```yaml
 # create-filesystems.yml - Create and configure file systems
+
 ---
 - name: Create and Configure File Systems
   hosts: all

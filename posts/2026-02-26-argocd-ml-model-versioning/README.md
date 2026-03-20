@@ -51,6 +51,7 @@ Create a ConfigMap that tracks the current model version and its artifact locati
 
 ```yaml
 # models/recommendation-model/model-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

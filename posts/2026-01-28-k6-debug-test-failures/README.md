@@ -358,6 +358,7 @@ export default function () {
 
 ```bash
 # Test DNS resolution before running k6
+
 dig api.example.com
 nslookup api.example.com
 

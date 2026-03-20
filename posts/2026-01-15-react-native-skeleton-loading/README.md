@@ -248,6 +248,7 @@ This is one of the most popular skeleton libraries for React Native.
 ```bash
 npm install react-native-skeleton-placeholder
 # or
+
 yarn add react-native-skeleton-placeholder
 ```
 

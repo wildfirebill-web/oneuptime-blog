@@ -18,6 +18,7 @@ The most basic GET request checks if a URL is reachable and returns a 200 status
 
 ```yaml
 # make a simple GET request and verify the status code
+
 ---
 - name: Basic GET examples
   hosts: localhost

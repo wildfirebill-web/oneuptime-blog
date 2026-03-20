@@ -189,6 +189,7 @@ Common strategies to handle this:
 
 ```python
 # Example: checking for shadow traffic in your app
+
 def handle_request(request):
     is_shadow = '-shadow' in request.headers.get('Host', '')
     if is_shadow:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: GitHub Actions, CI/CD, Environment, Automation
+Tags: GitHub Actions, CI/CD, Environments, Automation
 
 Description: A comprehensive guide to building and managing environment files in GitHub Actions. Learn how to use GITHUB_ENV, GITHUB_OUTPUT, and GITHUB_STEP_SUMMARY for dynamic workflows.
 
@@ -593,6 +593,7 @@ Create a reusable workflow that accepts inputs and produces outputs:
 
 ```yaml
 # .github/workflows/reusable-build.yml
+
 name: Reusable Build
 
 on:

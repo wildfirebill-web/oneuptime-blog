@@ -1,19 +1,18 @@
----
-title: "What Providers Do in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers
-description: "Understand what providers are in OpenTofu, how they work, and why they are central to managing infrastructure."
----
-
 # What Providers Do in OpenTofu
 
-Providers are the plugins that allow OpenTofu to interact with external services — cloud platforms, SaaS products, APIs, and more. Every resource in your configuration is managed by a provider, which handles authentication and API communication.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider
+
+Description: Understand what providers are in OpenTofu, how they work, and why they are central to managing infrastructure.
+
+Providers are the plugins that allow OpenTofu to interact with external services - cloud platforms, SaaS products, APIs, and more. Every resource in your configuration is managed by a provider, which handles authentication and API communication.
 
 ## The Provider Architecture
 
 OpenTofu itself knows nothing about AWS, GCP, Azure, or any other service. Providers are separately compiled plugins that extend OpenTofu's capabilities:
 
-```
+```hcl
 OpenTofu Core
      |
      |-- hashicorp/aws    (manages EC2, S3, RDS, etc.)
@@ -48,18 +47,19 @@ provider "aws" {
 
 Each provider exposes:
 
-1. **Resources** — Infrastructure objects you create, update, and delete
-2. **Data sources** — Read-only queries of existing infrastructure
-3. **Functions** — Provider-defined functions (OpenTofu 1.7+)
+1. **Resources** - Infrastructure objects you create, update, and delete
+2. **Data sources** - Read-only queries of existing infrastructure
+3. **Functions** - Provider-defined functions (OpenTofu 1.7+)
 
 ```hcl
-# Resource — creates and manages an EC2 instance
+# Resource - creates and manages an EC2 instance
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.medium"
 }
 
-# Data source — reads an existing VPC
+# Data source - reads an existing VPC
 data "aws_vpc" "existing" {
   filter {
     name   = "tag:Name"
@@ -98,7 +98,7 @@ tofu init
 Providers authenticate with external services using credentials you configure:
 
 ```hcl
-# AWS — multiple authentication methods
+# AWS - multiple authentication methods
 provider "aws" {
   region = "us-east-1"
 
@@ -175,4 +175,4 @@ Always commit this file to version control to ensure consistent provider version
 
 ## Conclusion
 
-Providers are the bridge between OpenTofu's declarative language and the external APIs that manage real infrastructure. Understanding how providers work — their authentication, versioning, and the resources/data sources they expose — is fundamental to working effectively with OpenTofu.
+Providers are the bridge between OpenTofu's declarative language and the external APIs that manage real infrastructure. Understanding how providers work - their authentication, versioning, and the resources/data sources they expose - is fundamental to working effectively with OpenTofu.

@@ -52,6 +52,7 @@ graph TB
 
 ```python
 # artifact_manager.py
+
 # Manages firmware artifacts for OTA updates
 
 import hashlib

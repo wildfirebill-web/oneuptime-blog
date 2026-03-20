@@ -27,6 +27,7 @@ The solution is to plan on feature branches but only apply on main.
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform Feature Branch Workflow
 on:
   pull_request:

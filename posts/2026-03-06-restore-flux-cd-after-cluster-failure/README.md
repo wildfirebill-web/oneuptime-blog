@@ -43,6 +43,7 @@ Ensure your new cluster matches the requirements of your workloads.
 
 ```bash
 # Example: Create a new cluster with the same configuration
+
 # Using eksctl for AWS EKS
 eksctl create cluster \
   --name production-restored \

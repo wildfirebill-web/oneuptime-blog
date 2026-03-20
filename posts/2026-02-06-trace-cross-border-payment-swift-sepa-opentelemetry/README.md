@@ -142,6 +142,7 @@ SWIFT gpi provides status updates via the tracker. When you receive a status upd
 
 ```python
 # Payment lifecycle metrics
+
 payment_duration = meter.create_histogram(
     name="payment.e2e_duration_minutes",
     description="End-to-end payment duration from initiation to credit",

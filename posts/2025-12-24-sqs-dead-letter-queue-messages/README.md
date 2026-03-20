@@ -36,6 +36,7 @@ Always create the DLQ first, then reference it in your main queue.
 
 ```bash
 # Create the DLQ
+
 aws sqs create-queue \
   --queue-name my-app-dlq \
   --attributes '{

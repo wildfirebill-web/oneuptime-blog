@@ -46,6 +46,7 @@ Cloud CDN uses HMAC-SHA1 keys for URL signing. Generate a random key and store i
 
 ```bash
 # Generate a random 128-bit signing key (base64 encoded)
+
 head -c 16 /dev/urandom | base64 > cdn-signing-key.txt
 
 # View the key (keep this secret)

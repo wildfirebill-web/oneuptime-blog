@@ -243,6 +243,7 @@ Applications connect to VTGate using a standard MySQL client. VTGate speaks the 
 
 ```bash
 # Port-forward VTGate for local testing
+
 kubectl port-forward svc/ecommerce-vtgate-zone1 3306:3306 -n vitess
 ```
 

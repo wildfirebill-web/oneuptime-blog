@@ -56,6 +56,7 @@ Each service has its own repository, with a separate config repo for deployment 
 
 ```text
 # deployment-config repo
+
 environments/
   staging/
     user-service/

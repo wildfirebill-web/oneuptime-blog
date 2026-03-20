@@ -25,12 +25,13 @@ DHCPv6 status codes are included in Reply messages to inform the client of the o
 
 ## Status Code Location in Messages
 
-Status codes appear inside the **IA_NA**, **IA_TA**, or **IA_PD** options within a Reply message — not at the top level of the DHCPv6 message. This means you must look inside the IA option to find the status.
+Status codes appear inside the **IA_NA**, **IA_TA**, or **IA_PD** options within a Reply message - not at the top level of the DHCPv6 message. This means you must look inside the IA option to find the status.
 
 ## Diagnosing Status Codes with tcpdump
 
 ```bash
 # Capture DHCPv6 Reply messages and show full option decode
+
 sudo tcpdump -i eth0 -n -vvv "udp port 547 and ip6[40] == 7"
 
 # ip6[40] == 7 filters for DHCPv6 Reply messages (message type 7)

@@ -84,6 +84,7 @@ resource "aws_cloudwatch_metric_alarm" "rds_connections_high" {
 
 ```hcl
 # Individual alarms
+
 resource "aws_cloudwatch_metric_alarm" "cpu" {
   alarm_name          = "${var.name}-cpu"
   namespace           = "AWS/EC2"

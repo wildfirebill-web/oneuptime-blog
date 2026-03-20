@@ -32,6 +32,7 @@ The most common approach is using Jinja2 templates:
 
 ```yaml
 # roles/app_config/tasks/main.yml
+
 # Deploy application configuration files
 ---
 - name: Create config directory

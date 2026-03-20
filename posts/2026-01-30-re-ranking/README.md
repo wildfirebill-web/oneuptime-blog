@@ -127,6 +127,7 @@ from sentence_transformers import CrossEncoder
 from typing import List, Tuple
 
 # Load a pre-trained cross-encoder model optimized for re-ranking
+
 # ms-marco models are trained on search relevance data
 model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', max_length=512)
 

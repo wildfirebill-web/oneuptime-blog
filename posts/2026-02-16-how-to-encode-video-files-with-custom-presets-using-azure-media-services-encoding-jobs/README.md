@@ -38,6 +38,7 @@ You need an Azure Media Services account with a running streaming endpoint.
 
 ```bash
 # Create a Media Services account
+
 az ams account create \
   --name my-media-services \
   --resource-group media-rg \

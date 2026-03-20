@@ -452,6 +452,7 @@ Outputs:
 
 ```bash
 # Deploy with default settings (3 NAT gateways, full HA)
+
 aws cloudformation create-stack \
   --stack-name production-vpc \
   --template-body file://vpc-template.yaml \

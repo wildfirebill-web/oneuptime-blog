@@ -89,6 +89,7 @@ You can match headers in several ways:
 
 ```yaml
 # Exact match
+
 headers:
   x-api-version:
     exact: "2.0"

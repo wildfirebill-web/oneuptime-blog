@@ -1,11 +1,10 @@
----
-title: "Using S3 as a Module Source in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, s3, aws
-description: "Learn how to use Amazon S3 buckets as module sources in OpenTofu for private module distribution."
----
-
 # Using S3 as a Module Source in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, S3, AWS
+
+Description: Learn how to use Amazon S3 buckets as module sources in OpenTofu for private module distribution.
 
 Amazon S3 is a natural choice for hosting private OpenTofu modules within AWS environments. OpenTofu can download module archives directly from S3 using standard AWS authentication.
 
@@ -24,6 +23,7 @@ module "vpc" {
 
 ```hcl
 # Path-style URL (works in all regions)
+
 module "vpc" {
   source = "s3::https://s3.amazonaws.com/my-modules-bucket/modules/vpc-v2.1.0.zip"
 }
@@ -49,8 +49,8 @@ export AWS_DEFAULT_REGION="us-east-1"
 # aws_access_key_id = AKIAIOSFODNN7EXAMPLE
 # aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-# IAM roles (on EC2/ECS/Lambda — best for production)
-# No credentials needed — uses instance profile
+# IAM roles (on EC2/ECS/Lambda - best for production)
+# No credentials needed - uses instance profile
 ```
 
 ## S3 Bucket Policy for Module Distribution

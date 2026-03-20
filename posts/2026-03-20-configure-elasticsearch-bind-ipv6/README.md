@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Elasticsearch, Database, network.host, Search Engine
+Tags: IPv6, Elasticsearch, Database, Network.host, Search Engine
 
 Description: Learn how to configure Elasticsearch to bind to IPv6 addresses for HTTP and transport communication, enabling IPv6-only and dual-stack deployments.
 
@@ -12,6 +12,7 @@ Description: Learn how to configure Elasticsearch to bind to IPv6 addresses for 
 # /etc/elasticsearch/elasticsearch.yml
 
 # Bind to all interfaces (IPv4 and IPv6)
+
 network.host: 0.0.0.0
 
 # Bind to specific IPv6 address

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Network Bonding, Nmcli, High Availability, Linux
+Tags: RHEL, Network Bonding, nmcli, High Availability, Linux
 
 Description: A hands-on guide to setting up network bonding on RHEL with nmcli, covering bond creation, slave interfaces, and verification steps for production environments.
 
@@ -24,6 +24,7 @@ Check that NetworkManager is active:
 
 ```bash
 # Verify NetworkManager is running
+
 systemctl status NetworkManager
 ```
 

@@ -38,6 +38,7 @@ The best approach is to include your AWS account ID or a unique identifier in bu
 
 ```bash
 # Get your AWS account ID
+
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
 # Create a bucket with account ID prefix

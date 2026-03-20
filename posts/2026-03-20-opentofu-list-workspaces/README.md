@@ -1,4 +1,4 @@
-# How to List All Workspaces in OpenTofu
+# How to List All Workspaces in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ The `tofu workspace list` command shows all workspaces available in the current 
 tofu workspace list
 
 # Output:
+
 #   default
 # * staging
 #   production

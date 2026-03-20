@@ -52,6 +52,7 @@ Enable the federation plugin on all nodes that will participate:
 
 ```bash
 # Enable federation plugin
+
 rabbitmq-plugins enable rabbitmq_federation
 
 # Enable management UI extension (optional but helpful)

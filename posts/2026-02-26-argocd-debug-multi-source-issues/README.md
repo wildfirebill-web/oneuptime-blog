@@ -30,6 +30,7 @@ Start by getting the complete application status:
 
 ```bash
 # Full application details including conditions and errors
+
 argocd app get my-multi-source-app
 
 # JSON output for detailed inspection

@@ -42,6 +42,7 @@ Here is a basic nginx configuration for an origin server that works well with CD
 
 ```nginx
 # Origin server configuration for video streaming
+
 # This configuration sets up proper caching headers for CDN integration
 
 server {

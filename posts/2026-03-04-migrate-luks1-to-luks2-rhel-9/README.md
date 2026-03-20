@@ -28,6 +28,7 @@ Before starting the migration:
 
 ```bash
 # Check the current LUKS version
+
 sudo cryptsetup luksDump /dev/sdb | head -5
 
 # If it shows "Version: 1", it is LUKS1

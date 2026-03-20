@@ -16,6 +16,7 @@ Portainer accepts a bcrypt-hashed password via the `--admin-password` flag. Firs
 
 ```bash
 # Install htpasswd to generate a bcrypt hash
+
 # On Ubuntu/Debian:
 sudo apt-get install apache2-utils
 

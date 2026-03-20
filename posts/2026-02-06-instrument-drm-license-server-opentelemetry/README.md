@@ -23,6 +23,7 @@ tracer = trace.get_tracer("drm.license.server", "1.0.0")
 meter = metrics.get_meter("drm.license.metrics", "1.0.0")
 
 # License request latency
+
 license_latency = meter.create_histogram(
     name="drm.license.latency",
     description="Time to process a license request",

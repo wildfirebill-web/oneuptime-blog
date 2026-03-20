@@ -31,6 +31,7 @@ Here is a CRD manifest with a sync wave annotation:
 
 ```yaml
 # crd-definition.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

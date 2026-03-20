@@ -43,6 +43,7 @@ PASS=0
 FAIL=0
 
 # Test function that checks HTTP status
+
 test_endpoint() {
     local name=$1
     local url=$2

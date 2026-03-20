@@ -18,6 +18,7 @@ First, quantify the failure rate and pattern:
 
 ```bash
 # Run continuous connectivity tests
+
 kubectl run test-pod --rm -it --image=curlimages/curl -- sh
 
 # Inside the pod, run loop

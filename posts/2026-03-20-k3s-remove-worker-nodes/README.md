@@ -20,6 +20,7 @@ Removing a worker node from a K3s cluster is a two-phase process: first, gracefu
 
 ```bash
 # List all nodes with their status and roles
+
 kubectl get nodes -o wide
 
 # Example output:

@@ -151,6 +151,7 @@ steps:
 
 ```yaml
 # Disable interactive prompts
+
 - name: Install dependencies
   run: npm ci
   env:

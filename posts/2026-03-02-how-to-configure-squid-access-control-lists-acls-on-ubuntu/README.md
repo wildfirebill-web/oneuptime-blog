@@ -24,6 +24,7 @@ The configuration file is `/etc/squid/squid.conf`. Here are the most commonly us
 
 ```squid
 # Match by source IP address or network
+
 acl internal_users src 192.168.1.0/24
 acl management src 192.168.1.100/32
 

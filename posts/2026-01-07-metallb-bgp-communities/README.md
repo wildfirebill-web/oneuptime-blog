@@ -78,6 +78,7 @@ First, create a BGPCommunity resource that defines the community values you want
 
 ```yaml
 # BGPCommunity resource defines a named set of community values
+
 # These communities will be attached to route advertisements
 apiVersion: metallb.io/v1beta1
 kind: Community

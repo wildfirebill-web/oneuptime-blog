@@ -20,6 +20,7 @@ Start with the security group.
 
 ```hcl
 # Security group for the ALB
+
 resource "aws_security_group" "alb" {
   name_prefix = "alb-"
   description = "Security group for the Application Load Balancer"

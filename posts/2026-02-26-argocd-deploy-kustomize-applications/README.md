@@ -18,6 +18,7 @@ ArgoCD inspects the source directory for a `kustomization.yaml`, `kustomization.
 
 ```yaml
 # ArgoCD auto-detects Kustomize, but you can be explicit
+
 spec:
   source:
     directory:

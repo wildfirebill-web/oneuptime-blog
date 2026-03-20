@@ -24,6 +24,7 @@ Ensure only packets with valid source addresses exit:
 
 ```bash
 # nftables: Only allow legitimate source prefixes on egress
+
 nft add table ip6 egress
 nft add chain ip6 egress output { type filter hook output priority 0\; }
 
@@ -85,7 +86,7 @@ ip6tables -A OUTPUT -p tcp --dport 53 -j DROP
 
 ## Cisco Egress ACL
 
-```
+```text
 ! Cisco: Egress ACL on internet-facing interface
 ipv6 access-list EGRESS-INTERNET
   permit ipv6 2001:db8:corp::/48 any   ! Allow our prefix
@@ -102,7 +103,7 @@ interface GigabitEthernet0/0
 
 ## Juniper Egress Firewall Policy
 
-```
+```text
 # JunOS: Egress filtering on internet interface
 set firewall family inet6 filter EGRESS-INTERNET term allow-corp from source-address 2001:db8:corp::/48
 set firewall family inet6 filter EGRESS-INTERNET term allow-corp then accept

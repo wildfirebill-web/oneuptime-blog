@@ -16,6 +16,7 @@ Start by creating a new CDKTF project and installing the Azure provider:
 
 ```bash
 # Create and initialize the project
+
 mkdir cdktf-azure && cd cdktf-azure
 cdktf init --template=typescript --local
 

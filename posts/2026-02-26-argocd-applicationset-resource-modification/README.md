@@ -297,6 +297,7 @@ A common production pattern is to start with full management and loosen control 
 
 ```yaml
 # Phase 1: New services - fully managed
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

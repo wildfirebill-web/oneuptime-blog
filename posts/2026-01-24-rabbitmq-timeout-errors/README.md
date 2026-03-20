@@ -44,6 +44,7 @@ Socket timeout during connection
 
 ```bash
 # Test basic connectivity to RabbitMQ
+
 nc -zv rabbitmq-host 5672
 
 # Check if port is open

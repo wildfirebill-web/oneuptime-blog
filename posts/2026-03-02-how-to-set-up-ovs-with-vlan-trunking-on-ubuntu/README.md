@@ -22,6 +22,7 @@ OVS models VLAN membership at the port level:
 
 ```bash
 # Install OVS if needed
+
 sudo apt install openvswitch-switch
 
 # Create a bridge for the VLAN infrastructure

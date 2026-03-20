@@ -288,6 +288,7 @@ Track which IPs are hitting your services:
 
 ```bash
 # Check access logs for source IPs
+
 kubectl logs deploy/istio-ingressgateway -n istio-system | grep "x-forwarded-for"
 ```
 

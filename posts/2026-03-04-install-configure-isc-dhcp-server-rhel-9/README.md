@@ -27,6 +27,7 @@ Create a basic DHCP configuration:
 ```bash
 cat > /etc/dhcp/dhcpd.conf << 'EOF'
 # Global settings
+
 option domain-name "example.com";
 option domain-name-servers 192.168.1.10, 8.8.8.8;
 

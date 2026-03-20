@@ -36,6 +36,7 @@ Use the metrics server and Prometheus to gather CPU and memory data across your 
 
 ```bash
 # Get current resource usage for all pods in a namespace
+
 kubectl top pods -n production --containers
 
 # View resource requests vs actual usage

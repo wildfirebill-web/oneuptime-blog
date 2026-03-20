@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Redis, ElastiCache, AWS, Cache, Infrastructure as Code
 
-Description: Learn how to deploy Redis on AWS ElastiCache using OpenTofu — including replication groups, subnet groups, security groups, and cluster mode configuration.
+Description: Learn how to deploy Redis on AWS ElastiCache using OpenTofu - including replication groups, subnet groups, security groups, and cluster mode configuration.
 
 ## Introduction
 

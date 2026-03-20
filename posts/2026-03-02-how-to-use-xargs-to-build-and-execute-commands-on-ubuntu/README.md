@@ -16,6 +16,7 @@ Many commands do not read from standard input. `rm`, `cp`, `mv`, `chmod` - they 
 
 ```bash
 # Without xargs - this does NOT work
+
 find . -name "*.log" | rm
 
 # With xargs - this works

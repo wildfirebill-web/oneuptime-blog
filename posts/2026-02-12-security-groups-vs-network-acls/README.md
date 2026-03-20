@@ -63,6 +63,7 @@ NACLs support both allow and deny rules. This is a big deal when you need to blo
 
 ```bash
 # Block a malicious IP at the NACL level - not possible with security groups
+
 aws ec2 create-network-acl-entry \
   --network-acl-id acl-0123456789abcdef0 \
   --rule-number 10 \

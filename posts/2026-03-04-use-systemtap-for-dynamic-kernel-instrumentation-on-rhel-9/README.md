@@ -22,6 +22,7 @@ Install and use SystemTap:
 
 ```bash
 # Install SystemTap and kernel debug info
+
 sudo dnf install -y systemtap systemtap-runtime
 sudo stap-prep
 

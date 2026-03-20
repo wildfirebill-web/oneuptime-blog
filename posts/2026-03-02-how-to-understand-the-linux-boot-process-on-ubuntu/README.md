@@ -24,6 +24,7 @@ UEFI has a more sophisticated boot manager. It reads the EFI System Partition (E
 
 ```bash
 # Check if your system uses UEFI
+
 ls /sys/firmware/efi
 
 # View EFI boot entries

@@ -15,7 +15,8 @@ A compromised or tampered provider binary could silently modify your infrastruct
 Every `tofu init` generates or updates `.terraform.lock.hcl`, which records the exact provider version and checksums:
 
 ```hcl
-# .terraform.lock.hcl — commit this file to version control
+# .terraform.lock.hcl - commit this file to version control
+
 provider "registry.opentofu.org/hashicorp/aws" {
   version     = "5.40.0"
   constraints = "~> 5.0"
@@ -104,7 +105,7 @@ git commit -m "chore: update provider lock file checksums"
 In CI, `tofu init` will fail if the downloaded provider's checksum does not match the lock file:
 
 ```bash
-# In CI — fail if lock file is inconsistent
+# In CI - fail if lock file is inconsistent
 tofu init -lockfile=readonly
 ```
 

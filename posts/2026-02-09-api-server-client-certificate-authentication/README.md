@@ -36,6 +36,7 @@ Find the cluster CA certificate and key:
 
 ```bash
 # For kubeadm clusters
+
 CA_CERT=/etc/kubernetes/pki/ca.crt
 CA_KEY=/etc/kubernetes/pki/ca.key
 

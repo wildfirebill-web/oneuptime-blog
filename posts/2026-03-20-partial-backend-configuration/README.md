@@ -1,4 +1,4 @@
-# How to Use Partial Backend Configuration in OpenTofu
+# How to Use Partial Backend Configuration in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -15,7 +15,8 @@ Partial backend configuration allows you to leave some backend parameters unspec
 Hardcoding all backend details is problematic:
 
 ```hcl
-# Don't do this — credentials in version control!
+# Don't do this - credentials in version control!
+
 terraform {
   backend "s3" {
     bucket     = "my-terraform-state"
@@ -32,7 +33,7 @@ terraform {
 Leave sensitive or environment-specific values unspecified:
 
 ```hcl
-# backend.tf — safe to commit
+# backend.tf - safe to commit
 terraform {
   backend "s3" {
     # Non-sensitive, stable values
@@ -62,7 +63,7 @@ tofu init \
 Create environment-specific config files (not committed to version control):
 
 ```hcl
-# prod.backend.hcl — NOT committed to git
+# prod.backend.hcl - NOT committed to git
 bucket         = "my-company-terraform-state-prod"
 key            = "networking/terraform.tfstate"
 dynamodb_table = "terraform-state-locks-prod"
@@ -98,7 +99,7 @@ tofu init \
 Leave the backend completely empty and provide all values at init:
 
 ```hcl
-# backend.tf — absolute minimum
+# backend.tf - absolute minimum
 terraform {
   backend "s3" {}
 }

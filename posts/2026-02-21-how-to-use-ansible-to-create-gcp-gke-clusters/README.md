@@ -44,6 +44,7 @@ Here is a VPC-native cluster with reasonable production defaults:
 
 ```yaml
 # create-gke-cluster.yml - Create a production-ready GKE cluster
+
 ---
 - name: Create GKE Cluster
   hosts: localhost

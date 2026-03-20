@@ -163,6 +163,7 @@ Deploy the DaemonSet:
 kubectl apply -f seccomp-installer.yaml
 
 # Verify installation on all nodes
+
 kubectl get pods -n kube-system -l app=seccomp-installer
 
 # Check profile files on a node

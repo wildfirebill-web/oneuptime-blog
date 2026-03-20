@@ -50,6 +50,7 @@ First, enable the Azure secrets engine in Vault:
 
 ```bash
 # Enable the Azure secrets engine at the default path
+
 vault secrets enable azure
 
 # Alternatively, enable at a custom path

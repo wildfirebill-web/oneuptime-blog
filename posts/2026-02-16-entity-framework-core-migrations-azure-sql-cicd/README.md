@@ -26,6 +26,7 @@ Create a .NET Web API project with Entity Framework Core:
 
 ```bash
 # Create the solution and project
+
 dotnet new webapi -n MigrationDemo
 cd MigrationDemo
 

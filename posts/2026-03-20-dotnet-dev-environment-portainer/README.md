@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, .NET, C#, Development Environment, Docker, Hot Reload, Debugging
+Tags: Portainer, .NET, C#, Development Environments, Docker, Hot Reload, Debugging
 
 Description: Learn how to set up a .NET development environment with hot-reload and VS Code debugging in a Docker container managed by Portainer.
 
@@ -57,7 +57,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/health", () => new { Status = "ok", Environment = app.Environment.EnvironmentName });
 
-// Edit and save — dotnet watch reloads automatically
+// Edit and save - dotnet watch reloads automatically
 app.MapGet("/", () => "Hello from .NET dev environment");
 
 app.Run();
@@ -69,6 +69,7 @@ Install vsdbg inside the container:
 
 ```bash
 # Via Portainer Exec console:
+
 curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -v latest -l /vsdbg
 ```
 

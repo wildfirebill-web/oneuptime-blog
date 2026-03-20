@@ -18,6 +18,7 @@ Before throwing more resources at the problem, figure out where the bottleneck a
 
 ```bash
 # Check run queue depth - high numbers mean concurrency is the bottleneck
+
 curl -s \
   --header "Authorization: Bearer $TFE_ADMIN_TOKEN" \
   "https://tfe.example.com/api/v2/admin/runs?filter[status]=pending" | \

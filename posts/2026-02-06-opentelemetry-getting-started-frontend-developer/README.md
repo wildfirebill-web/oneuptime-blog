@@ -429,6 +429,7 @@ Set up a local collector to test before deploying:
 
 ```yaml
 # docker-compose.yml
+
 version: '3'
 services:
   otel-collector:

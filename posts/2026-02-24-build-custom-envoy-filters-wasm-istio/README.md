@@ -16,6 +16,7 @@ A common EnvoyFilter pattern is adding a custom Lua filter:
 
 ```yaml
 # The old way - fragile EnvoyFilter with Lua
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

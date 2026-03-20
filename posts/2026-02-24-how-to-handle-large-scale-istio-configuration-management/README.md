@@ -29,6 +29,7 @@ Instead of writing individual YAML files for each service, generate them from a 
 
 ```yaml
 # service-registry.yaml
+
 services:
   - name: order-service
     namespace: production

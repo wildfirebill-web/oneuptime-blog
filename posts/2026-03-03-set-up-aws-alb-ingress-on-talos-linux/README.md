@@ -33,6 +33,7 @@ The controller needs broad permissions to manage ALBs, target groups, listeners,
 
 ```bash
 # Download the recommended IAM policy for the AWS Load Balancer Controller
+
 curl -o alb-iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
 
 # Create the policy in AWS

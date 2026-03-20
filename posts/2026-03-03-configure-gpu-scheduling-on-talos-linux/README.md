@@ -38,6 +38,7 @@ Time-slicing lets you oversubscribe a GPU, allowing multiple pods to share it. T
 
 ```yaml
 # gpu-time-slicing-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -247,7 +248,7 @@ spec:
           nvidia.com/gpu: 1
 ```
 
-## Resource Quotas for GPU
+Resource Quotas for GPU
 
 Enforce per-namespace GPU limits to ensure fair sharing:
 

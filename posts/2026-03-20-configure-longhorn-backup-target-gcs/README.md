@@ -21,6 +21,7 @@ Google Cloud Storage (GCS) is Google's object storage service, providing high du
 
 ```bash
 # Set your project and bucket configuration
+
 PROJECT_ID="your-gcp-project-id"
 BUCKET_NAME="longhorn-backups-$(echo $PROJECT_ID | tr -d -)"
 REGION="us-central1"

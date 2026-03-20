@@ -45,6 +45,7 @@ Let's create a template for order confirmations:
 
 ```bash
 # Create an email template
+
 aws ses create-template \
   --template '{
     "TemplateName": "OrderConfirmation",

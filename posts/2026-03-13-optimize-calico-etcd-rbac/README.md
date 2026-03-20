@@ -27,6 +27,7 @@ A user assigned multiple roles requires the authorization layer to union all per
 
 ```bash
 # Check how many roles each user has
+
 etcdctl ... user get calico-felix
 etcdctl ... user get calico-cni
 

@@ -34,6 +34,7 @@ The most common patch type. You write a partial resource that gets merged into t
 
 ```yaml
 # overlays/production/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

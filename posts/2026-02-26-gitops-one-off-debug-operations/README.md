@@ -33,6 +33,7 @@ You can spin up a debug pod using kubectl debug:
 
 ```bash
 # Attach a debug container to a running pod
+
 kubectl debug -it my-app-pod-abc123 \
   --image=nicolaka/netshoot \
   --target=my-app-container \

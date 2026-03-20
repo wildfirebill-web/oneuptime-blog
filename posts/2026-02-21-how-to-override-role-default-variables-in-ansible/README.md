@@ -16,6 +16,7 @@ Role defaults live in `roles/<role_name>/defaults/main.yml`. They have the lowes
 
 ```yaml
 # roles/nginx/defaults/main.yml
+
 # Default values - users are expected to override these
 nginx_port: 80
 nginx_worker_processes: auto

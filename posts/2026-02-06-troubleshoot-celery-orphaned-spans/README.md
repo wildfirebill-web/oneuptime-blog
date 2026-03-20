@@ -12,6 +12,7 @@ When a web request triggers a Celery task, the task execution should appear as a
 
 ```python
 # views.py - Django view triggers a Celery task
+
 from myapp.tasks import process_order
 
 def create_order(request):

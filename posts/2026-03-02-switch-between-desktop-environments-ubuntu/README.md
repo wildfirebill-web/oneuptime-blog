@@ -16,6 +16,7 @@ Each installed desktop environment places a `.desktop` file in `/usr/share/xsess
 
 ```bash
 # See what desktop sessions are available
+
 ls /usr/share/xsessions/
 
 # Read a session file to understand it

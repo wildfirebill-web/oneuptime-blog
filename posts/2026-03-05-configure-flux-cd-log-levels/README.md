@@ -37,6 +37,7 @@ For quick debugging, patch the deployment directly:
 
 ```bash
 # Set source-controller to debug log level
+
 kubectl patch deployment source-controller -n flux-system --type=json \
   -p='[{"op": "replace", "path": "/spec/template/spec/containers/0/args", "value": [
     "--events-addr=http://notification-controller.flux-system.svc.cluster.local./",

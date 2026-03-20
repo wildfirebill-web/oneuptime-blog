@@ -176,6 +176,7 @@ Configure your CI pipeline to run acceptance tests with proper environment varia
 
 ```yaml
 # .github/workflows/test.yml
+
 name: Acceptance Tests
 on: [push, pull_request]
 

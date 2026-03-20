@@ -24,6 +24,7 @@ Install required tools:
 
 ```bash
 # Install Go 1.21+
+
 brew install go
 
 # Install Crossplane CLI

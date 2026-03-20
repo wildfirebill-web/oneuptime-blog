@@ -18,6 +18,7 @@ Install Calico using the manifest:
 
 ```bash
 # Download Calico manifest
+
 curl https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml -O
 
 # Edit the manifest to configure BGP

@@ -12,7 +12,7 @@ A hub-spoke network topology connects multiple spoke VPCs to a central hub VPC t
 
 ## Architecture
 
-```
+```text
 Spoke VPC A (dev)  ─┐
 Spoke VPC B (staging) ─── Transit Gateway ─── Hub VPC (shared services)
 Spoke VPC C (prod) ─┘
@@ -56,6 +56,7 @@ resource "aws_ec2_transit_gateway" "main" {
 }
 
 # Hub attachment
+
 resource "aws_ec2_transit_gateway_vpc_attachment" "hub" {
   subnet_ids         = aws_subnet.hub_private[*].id
   transit_gateway_id = aws_ec2_transit_gateway.main.id
@@ -76,7 +77,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "spokes" {
 ## Route Tables
 
 ```hcl
-# Hub route table — routes to all spokes
+# Hub route table - routes to all spokes
 resource "aws_ec2_transit_gateway_route_table" "hub" {
   transit_gateway_id = aws_ec2_transit_gateway.main.id
   tags = { Name = "hub-rt" }
@@ -88,7 +89,7 @@ resource "aws_ec2_transit_gateway_route_table_association" "hub" {
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.hub.id
 }
 
-# Spoke route table — default route to hub only
+# Spoke route table - default route to hub only
 resource "aws_ec2_transit_gateway_route_table" "spokes" {
   transit_gateway_id = aws_ec2_transit_gateway.main.id
   tags = { Name = "spoke-rt" }
@@ -110,11 +111,11 @@ resource "aws_ec2_transit_gateway_route_table_propagation" "hub_to_spokes" {
 
 ## Best Practices
 
-1. **Disable default route table** on the TGW — explicit is safer than implicit
+1. **Disable default route table** on the TGW - explicit is safer than implicit
 2. **Use separate route tables** for hub and spokes to enforce isolation
 3. **Enable spoke-to-spoke isolation** by NOT propagating spoke routes to each other
 4. **Use VPC Flow Logs** on all VPCs for security auditing
-5. **Size TGW subnets at /28** — they only need a few IPs per AZ
+5. **Size TGW subnets at /28** - they only need a few IPs per AZ
 
 ## Conclusion
 

@@ -167,6 +167,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("sis.registration")
 
 # Track concurrent active registration sessions
+
 active_sessions = meter.create_up_down_counter(
     "sis.active_registration_sessions",
     description="Number of students currently in the registration flow",

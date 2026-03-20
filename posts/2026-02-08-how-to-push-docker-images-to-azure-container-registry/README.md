@@ -18,6 +18,7 @@ Install the Azure CLI:
 
 ```bash
 # macOS
+
 brew install azure-cli
 
 # Linux

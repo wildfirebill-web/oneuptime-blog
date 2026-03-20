@@ -12,6 +12,7 @@ On dual-stack systems, socket listings mix IPv4 and IPv6, making output harder t
 
 ```bash
 # All IPv4 sockets
+
 ss -4
 
 # All IPv4 TCP sockets

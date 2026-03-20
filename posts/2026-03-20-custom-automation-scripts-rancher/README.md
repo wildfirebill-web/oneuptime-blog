@@ -14,6 +14,7 @@ While Rancher provides built-in automation through Fleet, Terraform, and the UI,
 
 ```python
 # rancher_client.py - Reusable Rancher API client
+
 import requests
 import json
 import os

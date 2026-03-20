@@ -14,6 +14,7 @@ GitLab Runner is the agent that executes CI/CD jobs defined in your `.gitlab-ci.
 
 ```bash
 # Add the GitLab Runner repository
+
 curl -sS https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | sudo bash
 
 # Install GitLab Runner

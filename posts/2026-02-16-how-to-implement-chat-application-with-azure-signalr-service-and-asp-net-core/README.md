@@ -16,6 +16,7 @@ Start by creating a new ASP.NET Core project and adding the SignalR and Azure Si
 
 ```bash
 # Create a new ASP.NET Core web application
+
 dotnet new web -n ChatApp
 cd ChatApp
 

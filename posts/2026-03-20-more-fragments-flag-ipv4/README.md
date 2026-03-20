@@ -36,6 +36,7 @@ The last fragment has MF=0, telling the receiver that reassembly can begin once 
 from scapy.all import IP, UDP, Raw, fragment
 
 # Create a large UDP datagram that will require fragmentation
+
 pkt = IP(dst="192.168.1.10") / UDP(dport=9999) / Raw(b"D" * 4000)
 
 # Fragment into pieces fitting a 1500-byte MTU

@@ -69,6 +69,7 @@ import logging
 app = func.FunctionApp()
 
 # Trigger on events from the user-events Event Hub
+
 # The function receives a batch of events for efficient processing
 @app.event_hub_message_trigger(
     arg_name="events",

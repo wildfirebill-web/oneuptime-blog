@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with workspace_key_prefix in OpenTofu
+# How to Configure S3 Backend with workspace_key_prefix in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,13 @@ Description: Learn how to use the workspace_key_prefix setting in the OpenTofu S
 
 ## Introduction
 
-When using OpenTofu workspaces with the S3 backend, workspace state files are stored in a subdirectory structure. The `workspace_key_prefix` parameter controls the prefix used for this directory — by default it's `env:`, but you can customize it to match your organization's naming conventions.
+When using OpenTofu workspaces with the S3 backend, workspace state files are stored in a subdirectory structure. The `workspace_key_prefix` parameter controls the prefix used for this directory - by default it's `env:`, but you can customize it to match your organization's naming conventions.
 
 ## Default Workspace Key Structure
 
 Without `workspace_key_prefix`, workspaces use `env:` as the prefix:
 
-```
+```text
 S3 bucket structure (default):
 my-terraform-state/
 ├── prod/terraform.tfstate           ← default workspace
@@ -29,6 +29,7 @@ my-terraform-state/
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket   = "my-terraform-state"
@@ -44,7 +45,7 @@ terraform {
 
 With this configuration:
 
-```
+```text
 S3 bucket structure:
 my-terraform-state/
 ├── app/terraform.tfstate                    ← default workspace
@@ -133,7 +134,7 @@ terraform {
 }
 ```
 
-```
+```text
 S3 structure:
 ├── networking/terraform.tfstate          ← networking/default
 ├── compute/terraform.tfstate             ← compute/default
@@ -187,4 +188,4 @@ aws s3 mv \
 
 ## Conclusion
 
-The `workspace_key_prefix` parameter gives you control over how workspace state files are organized in your S3 bucket. Choose a meaningful prefix that aligns with your team's conventions — `environments`, `workspaces`, `envs`, or an empty string for a flat structure. Establish this convention early and keep it consistent across all configurations using the same bucket to maintain a clean, navigable state file hierarchy.
+The `workspace_key_prefix` parameter gives you control over how workspace state files are organized in your S3 bucket. Choose a meaningful prefix that aligns with your team's conventions - `environments`, `workspaces`, `envs`, or an empty string for a flat structure. Establish this convention early and keep it consistent across all configurations using the same bucket to maintain a clean, navigable state file hierarchy.

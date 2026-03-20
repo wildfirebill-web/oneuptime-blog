@@ -26,6 +26,7 @@ Hot reloading in a container involves three components:
 
 ```bash
 # The fundamental pattern: mount source code and run a file watcher
+
 podman run -it --rm \
   -v $(pwd):/app:Z \
   -w /app \

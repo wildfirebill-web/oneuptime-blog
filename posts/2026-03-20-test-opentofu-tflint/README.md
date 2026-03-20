@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tflint, Linting, Code Quality, Best Practices
+Tags: OpenTofu, TFLint, Linting, Code Quality, Best Practices
 
 Description: Learn how to use tflint to lint OpenTofu configurations, catch deprecated syntax, enforce naming conventions, and validate provider-specific best practices before applying.
 
 ## Introduction
 
-tflint is a linter for OpenTofu/Terraform that catches errors not detectable by `tofu validate` — deprecated resource arguments, invalid instance types, naming convention violations, and provider-specific issues. It's faster than running `tofu plan` and works without cloud credentials.
+tflint is a linter for OpenTofu/Terraform that catches errors not detectable by `tofu validate` - deprecated resource arguments, invalid instance types, naming convention violations, and provider-specific issues. It's faster than running `tofu plan` and works without cloud credentials.
 
 ## Installation and Configuration
 
 ```bash
 # Install tflint
+
 brew install tflint  # macOS
 # or
 curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
@@ -195,4 +196,4 @@ resource "aws_s3_bucket" "S3Bucket" {
 
 ## Conclusion
 
-tflint catches a class of errors that `tofu validate` misses — provider-specific invalid values, deprecated syntax, and convention violations. Run it in pre-commit hooks for immediate developer feedback and as a required CI check. The recursive mode (`--recursive`) lints all modules in a monorepo with a single command, making it practical for large infrastructure codebases.
+tflint catches a class of errors that `tofu validate` misses - provider-specific invalid values, deprecated syntax, and convention violations. Run it in pre-commit hooks for immediate developer feedback and as a required CI check. The recursive mode (`--recursive`) lints all modules in a monorepo with a single command, making it practical for large infrastructure codebases.

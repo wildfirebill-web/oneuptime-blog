@@ -28,6 +28,7 @@ The following CLI commands create a resource group, a Notification Hubs namespac
 
 ```bash
 # Create a resource group in East US
+
 az group create --name rg-notifications --location eastus
 
 # Create a Notification Hubs namespace (must be globally unique)

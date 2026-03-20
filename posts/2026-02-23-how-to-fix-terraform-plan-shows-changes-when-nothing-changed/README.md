@@ -28,6 +28,7 @@ The most common phantom diff:
 
 ```text
 # aws_instance.web will be updated in-place
+
 ~ resource "aws_instance" "web" {
     ~ tags = {
         + "LastModifiedBy" = "terraform"

@@ -18,6 +18,7 @@ First, create a dedicated network:
 
 ```bash
 # Create a bridge network for your application stack
+
 docker network create app-network
 ```
 

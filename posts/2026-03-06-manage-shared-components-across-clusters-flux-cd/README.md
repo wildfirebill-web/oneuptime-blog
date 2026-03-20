@@ -69,6 +69,7 @@ Start by defining shared Helm repository sources that all clusters will use.
 
 ```yaml
 # infrastructure/sources/kustomization.yaml
+
 # Lists all shared Helm repository sources
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

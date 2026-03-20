@@ -31,6 +31,7 @@ The safest approach is to use different metrics:
 
 ```yaml
 # HPA for horizontal scaling based on CPU
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

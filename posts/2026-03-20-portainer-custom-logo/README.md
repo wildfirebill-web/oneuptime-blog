@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, customization, branding, logo, white-label
+Tags: Portainer, Customization, Branding, Logo, White-Label
 
 Description: A guide to replacing the default Portainer logo with a custom logo for white-labeling or corporate branding purposes.
 
@@ -26,7 +26,7 @@ Portainer Business Edition supports custom logo branding to replace the default 
    - Use a CDN, web server, or public URL
 5. Click **Save**
 
-```
+```text
 Logo URL example:
 https://cdn.example.com/logos/company-logo.png
 https://yourcompany.com/assets/portainer-logo.png
@@ -36,6 +36,7 @@ https://yourcompany.com/assets/portainer-logo.png
 
 ```bash
 # Create a simple logo server alongside Portainer
+
 mkdir -p /opt/portainer-branding
 
 # Place your logo in the directory

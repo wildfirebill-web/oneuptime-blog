@@ -43,6 +43,7 @@ Every global anycast setup starts with a global static IP address:
 
 ```bash
 # Reserve a global anycast IP address
+
 gcloud compute addresses create my-global-ip \
   --global \
   --ip-version=IPV4

@@ -43,6 +43,7 @@ The following manifest creates a LimitRange in the development namespace. It set
 
 ```yaml
 # basic-limitrange.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

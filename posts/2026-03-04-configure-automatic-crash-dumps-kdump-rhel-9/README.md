@@ -36,6 +36,7 @@ On a minimal RHEL install, kdump might not be installed. Let's fix that:
 
 ```bash
 # Install the kdump tools and crash analysis utility
+
 sudo dnf install kexec-tools crash kernel-debuginfo -y
 ```
 

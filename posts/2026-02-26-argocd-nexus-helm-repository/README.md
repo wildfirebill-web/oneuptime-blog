@@ -78,6 +78,7 @@ https://nexus.example.com/repository/helm-hosted/
 
 ```bash
 # Add Nexus Helm repository with basic authentication
+
 argocd repo add https://nexus.example.com/repository/helm-hosted/ \
   --type helm \
   --name nexus-helm \

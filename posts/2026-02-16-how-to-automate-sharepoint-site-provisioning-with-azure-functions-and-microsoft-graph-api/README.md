@@ -33,6 +33,7 @@ The Azure Function needs application-level permissions to create SharePoint site
 
 ```bash
 # Create the app registration
+
 az ad app create \
   --display-name "SharePoint Site Provisioner" \
   --sign-in-audience "AzureADMyOrg"

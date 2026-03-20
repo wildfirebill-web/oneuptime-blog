@@ -40,6 +40,7 @@ Create a Direct Connect Gateway:
 
 ```bash
 # Create the Direct Connect Gateway
+
 aws directconnect create-direct-connect-gateway \
   --direct-connect-gateway-name "prod-dx-gateway" \
   --amazon-side-asn 64512

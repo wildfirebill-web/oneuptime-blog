@@ -20,6 +20,7 @@ USB devices on the host appear as device files. First, identify the device you w
 
 ```bash
 # List USB devices on macOS
+
 system_profiler SPUSBDataType
 
 # List USB devices on Linux

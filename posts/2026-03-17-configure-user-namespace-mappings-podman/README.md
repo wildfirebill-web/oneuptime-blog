@@ -18,6 +18,7 @@ User namespaces allow a process to have a different set of UIDs and GIDs than wh
 
 ```bash
 # View the default UID mapping
+
 podman unshare cat /proc/self/uid_map
 # Output:
 #          0       1000          1    <- container root maps to host UID 1000

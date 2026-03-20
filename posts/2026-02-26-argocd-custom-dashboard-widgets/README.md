@@ -30,6 +30,7 @@ This widget shows how often an application has been deployed over time.
 
 ```python
 # deployment_tracker.py
+
 from flask import Flask, jsonify, request
 from datetime import datetime, timedelta
 import requests

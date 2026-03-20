@@ -14,6 +14,7 @@ HAProxy requires SSL certificates in a specific format - a single PEM file that 
 
 ```bash
 # Install HAProxy
+
 sudo apt update
 sudo apt install haproxy
 

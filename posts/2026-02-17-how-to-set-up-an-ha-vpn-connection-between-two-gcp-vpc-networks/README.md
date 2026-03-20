@@ -38,6 +38,7 @@ Create the gateway in the first VPC:
 
 ```bash
 # Create HA VPN gateway in vpc-network-1
+
 gcloud compute vpn-gateways create ha-vpn-gw-1 \
     --network=vpc-network-1 \
     --region=us-central1

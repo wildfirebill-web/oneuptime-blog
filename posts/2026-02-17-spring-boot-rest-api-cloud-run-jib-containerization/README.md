@@ -109,6 +109,7 @@ Use Spring Initializr to create the project or set it up manually with Maven.
 
 ```yaml
 # src/main/resources/application.yml
+
 server:
   # Cloud Run sets the PORT environment variable
   port: ${PORT:8080}

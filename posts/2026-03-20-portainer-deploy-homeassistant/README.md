@@ -1,4 +1,4 @@
-# How to Deploy Home Assistant via Portainer
+# How to Deploy Home Assistant via Portainer - Homeassistant
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -69,6 +69,7 @@ In **Settings > Automations > Create automation**:
 
 ```yaml
 # automation.yaml - Turn on lights at sunset
+
 alias: "Turn on lights at sunset"
 description: ""
 trigger:

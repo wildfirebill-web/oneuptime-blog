@@ -64,6 +64,7 @@ The Linkerd CLI is essential for installing, managing, and debugging your Linker
 
 ```bash
 # macOS - use Homebrew for easy installation and updates
+
 brew install linkerd
 
 # Linux - download the installation script from the official source
@@ -545,7 +546,7 @@ Key metrics to monitor:
 - Latency (P50, P95, P99)
 - Connection pool utilization
 
-## Resource Overhead Comparison
+Resource Overhead Comparison
 
 ### Linkerd (Minimal)
 

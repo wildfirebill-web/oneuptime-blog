@@ -18,6 +18,7 @@ The most basic form of `encrypt_string` looks like this:
 
 ```bash
 # This works but leaves the secret in shell history - avoid this
+
 ansible-vault encrypt_string 'MySecretPassword' --name 'db_password'
 ```
 

@@ -321,6 +321,7 @@ Test each error scenario:
 
 ```bash
 # Test 404 - request a path that does not exist
+
 curl -v http://app.example.com/nonexistent-path
 
 # Test 503 - scale down the backend to zero

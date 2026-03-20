@@ -42,6 +42,7 @@ Route users to the nearest cluster based on their location:
 
 ```bash
 # Create health checks for each cluster
+
 aws route53 create-health-check --caller-reference "talos-eu-$(date +%s)" \
     --health-check-config '{
         "IPAddress": "203.0.113.10",

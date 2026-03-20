@@ -18,6 +18,7 @@ This playbook demonstrates retry patterns for common flaky operations:
 
 ```yaml
 # task-retries.yml - Task-level retry examples
+
 ---
 - name: Demonstrate task-level retries
   hosts: webservers

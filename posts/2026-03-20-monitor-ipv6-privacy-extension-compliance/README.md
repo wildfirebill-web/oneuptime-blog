@@ -23,6 +23,7 @@ A compliant system should:
 ```bash
 #!/bin/bash
 # check_ipv6_privacy.sh
+
 # Check IPv6 privacy extension compliance on a local system
 
 PASS=0
@@ -173,4 +174,4 @@ groups:
 
 ## Conclusion
 
-Monitoring IPv6 privacy extension compliance requires checking both kernel sysctl values and the actual addresses assigned to interfaces. The approaches above — from a standalone shell script to a full Prometheus/Alertmanager pipeline — can be layered based on the size and complexity of your environment. Regular compliance auditing ensures that system updates or configuration drift do not silently revert your privacy settings.
+Monitoring IPv6 privacy extension compliance requires checking both kernel sysctl values and the actual addresses assigned to interfaces. The approaches above - from a standalone shell script to a full Prometheus/Alertmanager pipeline - can be layered based on the size and complexity of your environment. Regular compliance auditing ensures that system updates or configuration drift do not silently revert your privacy settings.

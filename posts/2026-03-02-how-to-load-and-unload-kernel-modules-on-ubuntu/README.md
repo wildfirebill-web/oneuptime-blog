@@ -14,6 +14,7 @@ Kernel modules are pieces of code that can be loaded into and removed from the L
 
 ```bash
 # List all currently loaded kernel modules
+
 lsmod
 
 # lsmod reads from /proc/modules

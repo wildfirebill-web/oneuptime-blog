@@ -22,6 +22,7 @@ You will need a few tools installed:
 
 ```bash
 # Install Rust (works on both x86 and ARM)
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Add the wasm32 target

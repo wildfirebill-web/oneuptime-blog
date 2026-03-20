@@ -258,6 +258,7 @@ Track which users have 2FA enabled:
 
 ```bash
 # For GitHub-based auth, check organization members
+
 curl -H "Authorization: token $GITHUB_TOKEN" \
   "https://api.github.com/orgs/your-org/members?filter=2fa_disabled"
 

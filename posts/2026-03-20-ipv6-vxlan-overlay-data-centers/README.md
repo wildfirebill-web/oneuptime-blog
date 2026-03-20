@@ -12,7 +12,7 @@ VXLAN (Virtual Extensible LAN) creates overlay Layer 2 networks over Layer 3 und
 
 ## VXLAN IPv6 Architecture
 
-```
+```text
 VXLAN IPv6 Overlay Components:
 
 Underlay (IPv4 or IPv6 fabric):
@@ -38,6 +38,7 @@ VXLAN Packet Structure:
 # Cumulus Linux - VXLAN with IPv6 hosts
 
 # Configure VTEP
+
 # /etc/network/interfaces
 
 auto lo
@@ -100,7 +101,7 @@ router bgp 65101
 
 ## Arista EOS VXLAN IPv6 Configuration
 
-```
+```text
 ! Arista EOS - VXLAN with IPv6 hosts
 
 ! VTEP source interface

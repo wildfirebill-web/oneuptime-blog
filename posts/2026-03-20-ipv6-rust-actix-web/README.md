@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv6, Actix-Web, HTTP, Web Framework, Networking
+Tags: Rust, IPv6, Actix-web, HTTP, Web Framework, Networking
 
 Description: Build IPv6-capable web applications with Rust's Actix-Web framework including binding, client IP extraction, and rate limiting by IPv6 prefix.
 
@@ -10,6 +10,7 @@ Description: Build IPv6-capable web applications with Rust's Actix-Web framework
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 actix-web = "4"
 tokio = { version = "1", features = ["full"] }
@@ -90,34 +91,34 @@ use std::net::IpAddr;
 
 pub struct IPv6Logger;
 
-impl<S, B> Transform<S, ServiceRequest> for IPv6Logger
+impl<Svc, Body> Transform<Svc, ServiceRequest> for IPv6Logger
 where
-    S: Service<ServiceRequest, Response = ServiceResponse<B>, Error = Error>,
-    S::Future: 'static,
-    B: 'static,
+    Svc: Service<ServiceRequest, Response = ServiceResponse<Body>, Error = Error>,
+    Svc::Future: 'static,
+    Body: 'static,
 {
-    type Response = ServiceResponse<B>;
+    type Response = ServiceResponse<Body>;
     type Error = Error;
-    type Transform = IPv6LoggerMiddleware<S>;
+    type Transform = IPv6LoggerMiddleware<Svc>;
     type InitError = ();
     type Future = Ready<Result<Self::Transform, Self::InitError>>;
 
-    fn new_transform(&self, service: S) -> Self::Future {
+    fn new_transform(&self, service: Svc) -> Self::Future {
         ready(Ok(IPv6LoggerMiddleware { service }))
     }
 }
 
-pub struct IPv6LoggerMiddleware<S> {
-    service: S,
+pub struct IPv6LoggerMiddleware<Svc> {
+    service: Svc,
 }
 
-impl<S, B> Service<ServiceRequest> for IPv6LoggerMiddleware<S>
+impl<Svc, Body> Service<ServiceRequest> for IPv6LoggerMiddleware<Svc>
 where
-    S: Service<ServiceRequest, Response = ServiceResponse<B>, Error = Error>,
-    S::Future: 'static,
-    B: 'static,
+    Svc: Service<ServiceRequest, Response = ServiceResponse<Body>, Error = Error>,
+    Svc::Future: 'static,
+    Body: 'static,
 {
-    type Response = ServiceResponse<B>;
+    type Response = ServiceResponse<Body>;
     type Error = Error;
     type Future = LocalBoxFuture<'static, Result<Self::Response, Self::Error>>;
 

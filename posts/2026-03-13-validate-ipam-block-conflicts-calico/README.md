@@ -34,6 +34,7 @@ calicoctl ipam check
 
 ```bash
 # Run multiple times to confirm stable
+
 for i in 1 2 3; do
   echo "IPAM check run $i:"
   calicoctl ipam check 2>/dev/null && echo "PASS" || echo "FAIL"

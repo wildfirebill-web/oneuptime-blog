@@ -20,6 +20,7 @@ Before going deep into Istio-specific debugging, verify the fundamentals.
 
 ```bash
 # Get the east-west gateway IP in cluster B
+
 EW_IP=$(kubectl get svc -n istio-system istio-eastwestgateway --context=cluster-b \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 

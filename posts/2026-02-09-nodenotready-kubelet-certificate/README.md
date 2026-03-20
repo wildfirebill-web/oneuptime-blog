@@ -26,6 +26,7 @@ When a node shows NotReady status, check the node condition messages first.
 
 ```bash
 # List nodes and their status
+
 kubectl get nodes
 
 # Output shows:

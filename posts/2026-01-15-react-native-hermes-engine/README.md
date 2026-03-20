@@ -102,6 +102,7 @@ First, ensure your project is configured to use the new architecture settings:
 # android/gradle.properties
 
 # Enable Hermes
+
 hermesEnabled=true
 
 # Optional: Enable new architecture

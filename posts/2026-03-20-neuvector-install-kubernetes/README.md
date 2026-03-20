@@ -25,6 +25,7 @@ NeuVector components run in a dedicated namespace. Create it first:
 
 ```bash
 # Create the neuvector namespace
+
 kubectl create namespace neuvector
 ```
 

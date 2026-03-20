@@ -43,6 +43,7 @@ strace is available in the default Ubuntu repositories. Install it using apt:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install strace

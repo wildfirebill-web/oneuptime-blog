@@ -33,6 +33,7 @@ First, create the AppConfig resources. You need an application, an environment, 
 
 ```yaml
 # CloudFormation for AppConfig feature flag infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   FeatureFlagApp:

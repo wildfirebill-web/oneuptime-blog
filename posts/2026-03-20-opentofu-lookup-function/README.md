@@ -1,4 +1,4 @@
-# How to Use the lookup Function in OpenTofu
+# How to Use the lookup Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,9 +16,9 @@ The `lookup` function in OpenTofu retrieves the value of a key from a map, retur
 lookup(map, key, default)
 ```
 
-- **map** — the map to search
-- **key** — the key to look up
-- **default** — returned if the key is not in the map
+- **map** - the map to search
+- **key** - the key to look up
+- **default** - returned if the key is not in the map
 - Note: the `default` argument is optional in some contexts, but always recommended for safe usage
 
 ## Basic Examples

@@ -23,6 +23,7 @@ Create a Kubernetes secret for authenticating Harbor webhook requests.
 
 ```bash
 # Generate a random token
+
 TOKEN=$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f1)
 
 # Create the secret in flux-system namespace

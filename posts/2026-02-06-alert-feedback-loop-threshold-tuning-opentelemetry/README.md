@@ -38,6 +38,7 @@ Store alert outcomes alongside the OpenTelemetry metric values at the time of fi
 
 ```python
 # alert_outcome_tracker.py
+
 # Records alert outcomes with the metric context from when the alert fired
 from dataclasses import dataclass
 from datetime import datetime

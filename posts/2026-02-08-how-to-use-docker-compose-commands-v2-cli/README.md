@@ -250,6 +250,7 @@ Define profiles in your compose file:
 
 ```yaml
 # docker-compose.yml
+
 services:
   api:
     image: my-api:latest

@@ -31,6 +31,7 @@ Deploy Gloo using the CLI:
 
 ```bash
 # Install glooctl CLI
+
 curl -sL https://run.solo.io/gloo/install | sh
 export PATH=$HOME/.gloo/bin:$PATH
 

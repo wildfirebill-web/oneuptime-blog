@@ -83,6 +83,7 @@ Configure Prometheus to scrape the collector:
 
 ```yaml
 # prometheus-config addition
+
 scrape_configs:
   - job_name: otel-spanmetrics
     scrape_interval: 15s

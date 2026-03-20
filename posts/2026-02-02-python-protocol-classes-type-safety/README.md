@@ -20,6 +20,7 @@ Let's start with a simple example. Say you want to write a function that works w
 
 ```python
 # protocols_basics.py
+
 from typing import Protocol
 
 # Define a Protocol that specifies the interface we expect

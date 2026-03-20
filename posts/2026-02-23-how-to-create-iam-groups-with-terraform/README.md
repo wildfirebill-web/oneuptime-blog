@@ -33,6 +33,7 @@ Start by configuring the AWS provider in your Terraform configuration.
 
 ```hcl
 # main.tf - Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

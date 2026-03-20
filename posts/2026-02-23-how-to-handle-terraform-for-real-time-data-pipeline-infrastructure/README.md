@@ -16,6 +16,7 @@ In this guide, we will cover how to build real-time data pipeline infrastructure
 
 ```hcl
 # data-pipeline/kinesis.tf
+
 # Kinesis-based real-time data pipeline
 
 resource "aws_kinesis_stream" "events" {

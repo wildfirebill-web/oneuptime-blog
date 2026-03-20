@@ -477,6 +477,7 @@ The `clusterName` in your Cluster Decision Resource must exactly match the `name
 
 ```bash
 # List registered clusters
+
 argocd cluster list
 
 # Check cluster secret names

@@ -36,6 +36,7 @@ ArgoCD provides these relevant metrics:
 
 ```promql
 # Total sync attempts by phase
+
 argocd_app_sync_total{phase="Succeeded"}
 argocd_app_sync_total{phase="Failed"}
 argocd_app_sync_total{phase="Error"}

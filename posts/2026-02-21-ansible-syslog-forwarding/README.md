@@ -39,6 +39,7 @@ graph TD
 
 ```bash
 # Standard Ansible project structure
+
 syslog-forwarding/
   inventory/
     hosts.ini

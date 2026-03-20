@@ -82,6 +82,7 @@ Smaller improvements follow the standard pull request process:
 
 ```bash
 # Clone the repository
+
 git clone https://github.com/opentofu/opentofu.git
 cd opentofu
 
@@ -112,7 +113,7 @@ OpenTofu maintains feature parity with open-source Terraform while adding its ow
 
 ## Community Channels
 
-- **GitHub**: `github.com/opentofu/opentofu` — code, issues, and RFCs
+- **GitHub**: `github.com/opentofu/opentofu` - code, issues, and RFCs
 - **Slack**: OpenTofu Slack workspace for real-time discussion
 - **Community meetings**: Bi-weekly community calls (recorded and publicly available)
 - **Mailing list**: For governance announcements

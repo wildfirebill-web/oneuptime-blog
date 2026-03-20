@@ -121,6 +121,7 @@ Check VPA recommendations and manually trigger updates when appropriate.
 
 ```bash
 # Check current VPA recommendations
+
 kubectl describe vpa api-server-vpa -n production
 
 # View recommended resources

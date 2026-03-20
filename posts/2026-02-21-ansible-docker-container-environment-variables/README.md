@@ -16,6 +16,7 @@ The simplest way to pass environment variables is through the `env` parameter, w
 
 ```yaml
 # basic_env.yml - Pass environment variables to a container
+
 ---
 - name: Run Container with Environment Variables
   hosts: docker_hosts

@@ -37,6 +37,7 @@ The `journalctl` command is your main tool for reading journal entries. Without 
 
 ```bash
 # Show the last 50 log entries
+
 journalctl -n 50
 
 # Follow new log entries in real time, similar to tail -f

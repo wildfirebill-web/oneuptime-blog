@@ -57,6 +57,7 @@ If you do not already have a target database, create one:
 
 ```bash
 # Create a logical SQL server
+
 az sql server create \
   --name my-azure-sql-server \
   --resource-group rg-migration \

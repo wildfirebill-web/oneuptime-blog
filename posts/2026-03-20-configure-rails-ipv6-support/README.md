@@ -16,6 +16,7 @@ Rails uses Puma as its default web server. Binding Puma to an IPv6 address requi
 # config/puma.rb
 
 # Bind to all IPv6 interfaces (dual-stack)
+
 bind "tcp://[::]:3000"
 
 # Bind to both IPv4 and IPv6 explicitly

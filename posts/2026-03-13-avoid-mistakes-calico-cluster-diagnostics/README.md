@@ -16,6 +16,7 @@ Cluster-level Calico diagnostic mistakes are more damaging than node-level mista
 
 ```bash
 # WRONG: Immediately restarting components when TigeraStatus is degraded
+
 kubectl rollout restart deployment/calico-typha -n calico-system
 # This destroys the pre-failure state needed for root cause analysis
 

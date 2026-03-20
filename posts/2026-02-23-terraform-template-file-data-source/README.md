@@ -51,6 +51,7 @@ The template file (`templates/userdata.sh.tpl`) uses `${variable_name}` for inte
 echo "Configuring for environment: ${environment}"
 
 # Install application
+
 apt-get update
 apt-get install -y docker.io
 

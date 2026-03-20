@@ -38,6 +38,7 @@ Linkerd Viz is the quickest way to get traffic visibility. Install it:
 
 ```bash
 # Install Linkerd Viz extension
+
 linkerd viz install | kubectl apply -f -
 
 # Verify installation

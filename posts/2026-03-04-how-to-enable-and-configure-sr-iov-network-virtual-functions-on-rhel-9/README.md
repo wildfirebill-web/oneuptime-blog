@@ -15,6 +15,7 @@ SR-IOV (Single Root I/O Virtualization) provides hardware-level network virtual 
 ```bash
 lspci -v | grep -i "single root"
 # Or check specific NIC
+
 lspci -s 03:00.0 -v | grep -i "SR-IOV"
 ```
 

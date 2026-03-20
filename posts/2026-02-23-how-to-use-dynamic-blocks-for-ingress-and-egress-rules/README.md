@@ -16,6 +16,7 @@ The most common use case is AWS security groups. Here is a complete pattern that
 
 ```hcl
 # variables.tf
+
 variable "ingress_rules" {
   description = "Ingress rules for the security group"
   type = list(object({

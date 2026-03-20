@@ -14,6 +14,7 @@ The OpenTelemetry SDK has configurable limits on attribute value length. While t
 
 ```python
 # Check the current limit in Python
+
 from opentelemetry.sdk.trace import TracerProvider
 
 provider = TracerProvider()

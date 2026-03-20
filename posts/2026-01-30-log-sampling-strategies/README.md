@@ -59,6 +59,7 @@ This configuration demonstrates level-based sampling in an OpenTelemetry Collect
 
 ```yaml
 # otel-collector-config.yaml
+
 processors:
   # Filter out debug logs in production
   filter/logs:

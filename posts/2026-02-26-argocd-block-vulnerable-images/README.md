@@ -34,6 +34,7 @@ The simplest approach is a PreSync hook that scans images and blocks the sync on
 
 ```yaml
 # hooks/vulnerability-gate.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

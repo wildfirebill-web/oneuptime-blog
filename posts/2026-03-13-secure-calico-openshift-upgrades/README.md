@@ -16,6 +16,7 @@ Securing Calico upgrades on OpenShift involves additional considerations: Red Ha
 
 ```bash
 # Before upgrading, check if there are related Red Hat Security Advisories
+
 # that affect OpenShift networking
 
 # Check OpenShift errata for the current OCP version

@@ -57,6 +57,7 @@ Here is an example of initializing a new project with Bun:
 
 ```bash
 # Initialize a new project with default settings
+
 bun init
 
 # Initialize with specific options

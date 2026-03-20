@@ -30,6 +30,7 @@ The relay server accepts email from your internal network and forwards it to an 
 
 ```yaml
 # setup-relay-server.yml - Configure a Postfix email relay server
+
 ---
 - name: Set up email relay server
   hosts: mail_relay

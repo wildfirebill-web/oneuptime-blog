@@ -24,6 +24,7 @@ First, you need to define the tags (called LF-Tags) in Lake Formation. Think of 
 
 ```bash
 # Create an LF-Tag for data classification level
+
 aws lakeformation create-lf-tag \
     --tag-key "classification" \
     --tag-values '["public", "internal", "confidential", "restricted"]'

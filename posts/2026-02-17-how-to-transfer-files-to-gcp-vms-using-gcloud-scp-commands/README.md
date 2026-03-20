@@ -18,6 +18,7 @@ This post covers the different ways to use gcloud scp, from simple file copies t
 
 ```bash
 # Copy a local file to the home directory on the VM
+
 gcloud compute scp ./config.yaml my-instance:~ \
   --zone=us-central1-a \
   --project=my-project

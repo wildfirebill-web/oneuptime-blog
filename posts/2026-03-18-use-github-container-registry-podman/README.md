@@ -20,6 +20,7 @@ Include ghcr.io in your Podman search configuration.
 
 ```bash
 # Check current search registries
+
 podman info --format '{{.Registries.Search}}'
 
 # Add ghcr.io to the configuration

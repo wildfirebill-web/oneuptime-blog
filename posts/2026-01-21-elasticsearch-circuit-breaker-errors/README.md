@@ -83,6 +83,7 @@ Response:
 
 ```bash
 # JVM memory stats
+
 curl -u elastic:password -X GET "localhost:9200/_nodes/stats/jvm?pretty"
 
 # Field data cache stats

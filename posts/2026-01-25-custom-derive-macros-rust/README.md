@@ -48,6 +48,7 @@ Procedural macros must live in their own crate with `proc-macro = true` in Cargo
 
 ```toml
 # Cargo.toml for the macro crate
+
 [package]
 name = "query_params_derive"
 version = "0.1.0"

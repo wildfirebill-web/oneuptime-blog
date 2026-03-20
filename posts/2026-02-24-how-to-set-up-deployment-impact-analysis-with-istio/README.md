@@ -231,6 +231,7 @@ THRESHOLD_ERROR_RATE=0.01
 THRESHOLD_P99_MS=500
 
 # Wait for enough data to accumulate
+
 sleep 300
 
 # Check error rate for new version

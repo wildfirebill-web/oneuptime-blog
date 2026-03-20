@@ -52,6 +52,7 @@ Note the `aws:CalledVia` exception: CloudFormation sometimes makes calls in mult
 
 ```bash
 # Create the region restriction policy
+
 aws iam create-policy \
   --policy-name RegionRestriction \
   --policy-document file://region-restriction.json

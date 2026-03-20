@@ -25,9 +25,9 @@ pfSense has built-in NAT reflection support:
 1. Go to **System → Advanced → Firewall & NAT**
 2. Find **Network Address Translation** section
 3. Set **NAT Reflection mode for port forwards**:
-   - **Disabled** — no reflection (default)
-   - **Enable (NAT + Proxy)** — uses proxy, works with split DNS
-   - **Enable (Pure NAT)** — uses iptables-style NAT, more reliable
+   - **Disabled** - no reflection (default)
+   - **Enable (NAT + Proxy)** - uses proxy, works with split DNS
+   - **Enable (Pure NAT)** - uses iptables-style NAT, more reliable
 4. Check **Enable automatic outbound NAT for Reflection**
 5. Click **Save**
 
@@ -37,6 +37,7 @@ pfSense has built-in NAT reflection support:
 
 ```bash
 # Assumption:
+
 # eth0 = LAN interface (192.168.1.1/24)
 # eth1 = WAN interface
 # Web server: 192.168.1.10:80

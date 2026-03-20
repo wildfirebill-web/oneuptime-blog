@@ -27,6 +27,7 @@ Your Istio sidecar is multi-arch, but your application images need to be too. Us
 
 ```bash
 # Create a builder that supports multiple platforms
+
 docker buildx create --name multiarch --driver docker-container --use
 
 # Build and push multi-arch image

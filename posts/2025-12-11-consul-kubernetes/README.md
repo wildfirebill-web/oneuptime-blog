@@ -49,6 +49,7 @@ Add the HashiCorp Helm repository and install Consul.
 
 ```bash
 # Add HashiCorp Helm repo
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo update
 

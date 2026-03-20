@@ -27,6 +27,7 @@ Before setting up autoscaling, let me show the manual scaling baseline. This is 
 
 ```bash
 # Scale an app to a specific number of instances manually
+
 # Each instance gets the configured CPU and memory allocation
 az spring app scale \
     --name order-service \

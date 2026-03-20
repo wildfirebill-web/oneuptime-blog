@@ -18,6 +18,7 @@ This guide assumes Prometheus is already installed. If not, set it up first on p
 
 ```bash
 # Download mysqld_exporter
+
 EXPORTER_VERSION="0.15.1"
 cd /tmp
 wget "https://github.com/prometheus/mysqld_exporter/releases/download/v${EXPORTER_VERSION}/mysqld_exporter-${EXPORTER_VERSION}.linux-amd64.tar.gz"

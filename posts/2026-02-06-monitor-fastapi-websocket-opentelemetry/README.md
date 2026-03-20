@@ -67,6 +67,7 @@ import json
 import time
 
 # Configure OpenTelemetry
+
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter(
     endpoint="http://localhost:4317",

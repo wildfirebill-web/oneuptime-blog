@@ -16,6 +16,7 @@ In Terraform, string interpolation uses the `${}` syntax inside double-quoted st
 
 ```hcl
 # Simple variable reference
+
 resource "aws_instance" "web" {
   tags = {
     Name = "web-${var.environment}"

@@ -20,6 +20,7 @@ The simplest method uses Podman's journald log driver, then forwards from the jo
 
 ```bash
 # Step 1: Run the container with the journald driver
+
 podman run -d \
   --log-driver journald \
   --log-opt tag="myapp" \

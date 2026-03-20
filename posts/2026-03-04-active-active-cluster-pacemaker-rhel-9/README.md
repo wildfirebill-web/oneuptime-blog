@@ -40,6 +40,7 @@ Clone resources run on multiple nodes simultaneously:
 
 ```bash
 # Create the base resource
+
 sudo pcs resource create WebServer ocf:heartbeat:apache \
     configfile=/etc/httpd/conf/httpd.conf \
     statusurl="http://127.0.0.1/server-status" \

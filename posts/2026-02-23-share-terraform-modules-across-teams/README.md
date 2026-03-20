@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Modules, Team, Collaboration, DevOps
+Tags: Terraform, Modules, Teams, Collaboration, DevOps
 
 Description: Strategies for sharing Terraform modules across multiple teams including module ownership, versioning policies, contribution workflows, and governance models.
 
@@ -74,6 +74,7 @@ Any team can contribute to any module through pull requests, with designated mai
 
 ```yaml
 # CODEOWNERS file in the module repository
+
 * @platform-team
 
 # Specific teams have ownership of specific modules

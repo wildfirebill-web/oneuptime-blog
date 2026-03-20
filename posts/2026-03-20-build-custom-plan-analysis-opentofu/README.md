@@ -26,7 +26,7 @@ flowchart LR
 
 ```python
 #!/usr/bin/env python3
-# plan_analyzer.py — reusable OpenTofu plan analysis framework
+# plan_analyzer.py - reusable OpenTofu plan analysis framework
 
 import json
 from dataclasses import dataclass, field
@@ -132,6 +132,7 @@ if __name__ == "__main__":
 
 ```yaml
 # .github/workflows/plan-analysis.yml
+
 - name: Generate Plan JSON
   run: |
     tofu init

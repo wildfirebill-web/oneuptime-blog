@@ -24,6 +24,7 @@ The most reliable way to track per-service telemetry volume is using the Count C
 
 ```yaml
 # otel-collector-config.yaml
+
 connectors:
   count:
     traces:

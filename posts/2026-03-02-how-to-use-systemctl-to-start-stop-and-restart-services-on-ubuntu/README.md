@@ -18,6 +18,7 @@ Before starting or stopping anything, check the current state:
 
 ```bash
 # Show detailed status of a service
+
 sudo systemctl status nginx
 
 # The output includes:

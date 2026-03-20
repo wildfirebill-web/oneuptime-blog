@@ -22,6 +22,7 @@ Cloud Run uses a cookie-based affinity mechanism. When a client first connects, 
 
 ```bash
 # Initialize project and install dependencies
+
 mkdir websocket-cloud-run && cd websocket-cloud-run
 npm init -y
 npm install express ws

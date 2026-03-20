@@ -27,6 +27,7 @@ Rancher Turtles introduces a `CAPIProvider` CRD for managing providers:
 
 ```yaml
 # enable-aws-provider.yaml
+
 apiVersion: turtles-capi.cattle.io/v1alpha1
 kind: CAPIProvider
 metadata:

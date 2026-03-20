@@ -26,6 +26,7 @@ If the migration has not been finalized (lock step not completed):
 
 ```bash
 # Reconnect to the original datastore
+
 export DATASTORE_TYPE=etcdv3  # Or kubernetes, depending on your original
 
 # Verify the original data is still intact

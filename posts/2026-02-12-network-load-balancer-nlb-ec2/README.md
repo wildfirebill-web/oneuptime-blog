@@ -53,6 +53,7 @@ This creates an internet-facing NLB across multiple AZs:
 
 ```bash
 # Create the NLB
+
 NLB_ARN=$(aws elbv2 create-load-balancer \
   --name my-tcp-nlb \
   --type network \

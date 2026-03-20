@@ -28,6 +28,7 @@ Before installing Velero, you need:
 
 ```bash
 # Install Velero CLI on macOS
+
 brew install velero
 
 # Or download directly

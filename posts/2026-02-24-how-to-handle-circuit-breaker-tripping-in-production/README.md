@@ -16,6 +16,7 @@ Not all 503 errors come from circuit breaking. Before you start adjusting circui
 
 ```bash
 # Check for circuit breaker overflow
+
 kubectl exec deploy/affected-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep -E "overflow|ejections_active"
 

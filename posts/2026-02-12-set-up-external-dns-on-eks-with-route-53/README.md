@@ -67,6 +67,7 @@ Save this as `external-dns-policy.json` and create the policy:
 
 ```bash
 # Create the IAM policy for ExternalDNS
+
 aws iam create-policy \
   --policy-name ExternalDNSPolicy \
   --policy-document file://external-dns-policy.json

@@ -20,6 +20,7 @@ NFSv4 uses a single port, which makes firewall configuration clean:
 
 ```bash
 # Open the NFS service (port 2049/TCP)
+
 sudo firewall-cmd --permanent --add-service=nfs
 sudo firewall-cmd --reload
 

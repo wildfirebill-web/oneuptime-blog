@@ -20,6 +20,7 @@ Here is a basic example to see how it works.
 
 ```yaml
 # Demonstrate skip detection with a simple conditional
+
 ---
 - name: Skip detection demo
   hosts: localhost

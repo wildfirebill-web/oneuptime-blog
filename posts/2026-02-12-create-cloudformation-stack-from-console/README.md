@@ -47,6 +47,7 @@ Here's a simple template you can use to follow along:
 
 ```yaml
 # Simple template for creating an S3 bucket and SNS topic
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Demo stack - creates an S3 bucket and SNS notification topic
 

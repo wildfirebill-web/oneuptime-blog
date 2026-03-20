@@ -18,6 +18,7 @@ Many applications, especially those following the twelve-factor methodology, rea
 
 ```bash
 # Create a secret
+
 echo -n "my-database-password" | podman secret create db_password -
 
 # Expose the secret as an environment variable

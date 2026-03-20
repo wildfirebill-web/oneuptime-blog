@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Syslog, SNMP, Monitoring, IPv4, rsyslog, SNMP Traps, Network, Operations
+Tags: Syslog, SNMP, Monitoring, IPv4, Rsyslog, SNMP Traps, Networks, Operations
 
 Description: Learn how to combine syslog and SNMP to build comprehensive network device monitoring by collecting event logs and polling performance metrics over IPv4.
 
@@ -31,6 +31,7 @@ graph TD
 # /etc/rsyslog.conf (on the central syslog server)
 
 # Enable UDP syslog reception on port 514
+
 module(load="imudp")
 input(type="imudp" port="514" address="10.0.0.50")
 
@@ -69,8 +70,8 @@ ss -ulnp | grep 162   # Verify listening on UDP 162
 
 ## Step 3: Send Syslog and SNMP Traps from a Cisco Device
 
-```
-! Cisco IOS — configure syslog
+```text
+! Cisco IOS - configure syslog
 logging host 10.0.0.50
 logging trap informational
 logging source-interface Loopback0
@@ -86,7 +87,7 @@ snmp-server enable traps ospf state-change
 ## Step 4: Poll SNMP Metrics with Prometheus
 
 ```yaml
-# prometheus.yml — use SNMP Exporter for metrics
+# prometheus.yml - use SNMP Exporter for metrics
 scrape_configs:
   - job_name: 'snmp'
     static_configs:

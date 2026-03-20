@@ -1,4 +1,4 @@
-# How to Use the index Function in OpenTofu
+# How to Use the index Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,8 +16,8 @@ The `index` function in OpenTofu returns the position (0-based) of the first occ
 index(list, value)
 ```
 
-- **list** — the list to search
-- **value** — the value to find
+- **list** - the list to search
+- **value** - the value to find
 - Returns the zero-based index of the first match
 - Raises an error if the value is not found
 
@@ -132,4 +132,4 @@ locals {
 
 ## Conclusion
 
-The `index` function is the inverse of `element` — use it when you know the value and need its position. It is particularly useful for parallel list lookups and position-based CIDR or configuration generation in OpenTofu.
+The `index` function is the inverse of `element` - use it when you know the value and need its position. It is particularly useful for parallel list lookups and position-based CIDR or configuration generation in OpenTofu.

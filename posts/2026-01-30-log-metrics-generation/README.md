@@ -77,6 +77,7 @@ Start by defining a recording rule configuration file. Recording rules run on a 
 
 ```yaml
 # loki-rules.yaml
+
 # Recording rules for generating metrics from logs
 
 groups:

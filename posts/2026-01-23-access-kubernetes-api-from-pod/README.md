@@ -34,6 +34,7 @@ The simplest way to test API access:
 
 ```bash
 # Start a shell in a pod
+
 kubectl run curl-test --rm -it --image=curlimages/curl -- sh
 
 # Inside the pod, set up variables

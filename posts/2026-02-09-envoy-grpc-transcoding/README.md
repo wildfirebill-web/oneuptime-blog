@@ -115,6 +115,7 @@ Envoy needs a compiled proto descriptor file that contains all the type informat
 
 ```bash
 # Install required dependencies
+
 apt-get install -y protobuf-compiler
 
 # Get the googleapis proto files (for google/api/annotations.proto)

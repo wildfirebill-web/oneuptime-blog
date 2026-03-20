@@ -38,6 +38,7 @@ Understand your data structure, sizes, and query patterns.
 
 ```bash
 # Get Cosmos DB account information
+
 az cosmosdb show \
   --name my-cosmos-account \
   --resource-group my-rg \

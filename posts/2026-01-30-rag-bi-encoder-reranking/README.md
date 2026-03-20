@@ -125,6 +125,7 @@ Consider cross-encoders instead when:
 
 ```bash
 # Install required packages
+
 pip install sentence-transformers torch numpy faiss-cpu
 ```
 

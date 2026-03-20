@@ -30,6 +30,7 @@ The fastest resolution is to install a replacement CNI immediately. If the clust
 
 ```bash
 # Quick check
+
 NODE=$(kubectl get pod <stuck-pod> -o jsonpath='{.spec.nodeName}')
 ssh $NODE "ls /etc/cni/net.d/ && ls /opt/cni/bin/ | grep -E 'calico|flannel|cilium'"
 ```

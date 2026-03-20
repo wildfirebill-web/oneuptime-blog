@@ -20,6 +20,7 @@ AKS Azure AD integration (managed AAD) allows users to authenticate to Kubernete
 
 ```hcl
 # Azure AD groups for access control
+
 data "azuread_group" "cluster_admins" {
   display_name     = "${var.project_name}-aks-admins"
   security_enabled = true
@@ -207,4 +208,4 @@ az aks get-credentials \
 
 ## Conclusion
 
-Enable `workload_identity_enabled = true` with `oidc_issuer_enabled = true` for pod-to-Azure service authentication—this replaces the deprecated AAD Pod Identity and provides a standardized OIDC-based approach. Set `local_account_disabled = true` in production to enforce Azure AD for all authentication and prevent use of static kubeconfig credentials. For Kubernetes RBAC subjects mapped to Azure AD groups, use the group's Object ID (not display name) as the subject name in RoleBindings—Kubernetes doesn't resolve AAD group names, only object IDs.
+Enable `workload_identity_enabled = true` with `oidc_issuer_enabled = true` for pod-to-Azure service authentication-this replaces the deprecated AAD Pod Identity and provides a standardized OIDC-based approach. Set `local_account_disabled = true` in production to enforce Azure AD for all authentication and prevent use of static kubeconfig credentials. For Kubernetes RBAC subjects mapped to Azure AD groups, use the group's Object ID (not display name) as the subject name in RoleBindings-Kubernetes doesn't resolve AAD group names, only object IDs.

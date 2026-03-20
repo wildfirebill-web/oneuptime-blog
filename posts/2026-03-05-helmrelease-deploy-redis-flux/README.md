@@ -25,6 +25,7 @@ If Flux is not yet installed, bootstrap it with:
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Bootstrap Flux with your Git repository

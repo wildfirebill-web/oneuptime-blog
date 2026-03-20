@@ -50,6 +50,7 @@ Pipelining is disabled by default. Enable it in your `ansible.cfg`:
 
 ```ini
 # ansible.cfg
+
 [ssh_connection]
 pipelining = True
 ```

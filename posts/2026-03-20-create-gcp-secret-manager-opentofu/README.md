@@ -51,6 +51,7 @@ resource "google_secret_manager_secret" "db_password" {
 }
 
 # Create the first version (actual secret value)
+
 resource "google_secret_manager_secret_version" "db_password" {
   secret      = google_secret_manager_secret.db_password.id
   secret_data = var.db_password  # Pass via TF_VAR or separate secrets pipeline

@@ -44,6 +44,7 @@ Geo-replication is only available on the Premium SKU. If you have an existing Ba
 
 ```bash
 # Create a new Premium ACR
+
 az acr create \
   --resource-group myResourceGroup \
   --name myregistry \

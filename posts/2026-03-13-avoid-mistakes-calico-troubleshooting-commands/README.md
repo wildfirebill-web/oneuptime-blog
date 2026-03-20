@@ -16,6 +16,7 @@ Calico troubleshooting commands have subtle failure modes that lead engineers to
 
 ```bash
 # WRONG: Accidentally deleting instead of reading
+
 calicoctl delete bgppeer my-peer   # DESTRUCTIVE - removes BGP peer
 
 # CORRECT: Read first, then decide

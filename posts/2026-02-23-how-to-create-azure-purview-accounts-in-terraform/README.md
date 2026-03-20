@@ -30,6 +30,7 @@ Let's start with the basic account setup:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

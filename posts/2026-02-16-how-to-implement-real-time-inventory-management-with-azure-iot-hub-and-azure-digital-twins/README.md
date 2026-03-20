@@ -57,6 +57,7 @@ IoT Hub is the central message broker for all your warehouse sensors. Start with
 
 ```bash
 # Create IoT Hub
+
 az iot hub create \
   --name inventory-iot-hub \
   --resource-group inventory-rg \

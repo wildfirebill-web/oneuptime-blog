@@ -218,6 +218,7 @@ You can also use local caching for even faster builds. This keeps the cache on t
 
 ```bash
 # Configure local caching when creating the project
+
 aws codebuild create-project \
   --name my-project \
   --cache '{

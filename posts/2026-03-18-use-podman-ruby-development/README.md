@@ -22,6 +22,7 @@ The official Ruby images come in several variants:
 
 ```bash
 # Full image - Debian-based, includes build tools for native gem extensions
+
 podman pull docker.io/library/ruby:3.3
 
 # Slim image - smaller, fewer pre-installed packages

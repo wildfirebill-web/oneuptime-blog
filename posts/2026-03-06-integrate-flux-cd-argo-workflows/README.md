@@ -44,6 +44,7 @@ Create the Flux HelmRelease to install Argo Workflows on your cluster.
 
 ```yaml
 # infrastructure/argo-workflows/namespace.yaml
+
 # Dedicated namespace for Argo Workflows
 apiVersion: v1
 kind: Namespace

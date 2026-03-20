@@ -16,6 +16,7 @@ The `depends_on` directive controls startup order, but it does not wait for serv
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

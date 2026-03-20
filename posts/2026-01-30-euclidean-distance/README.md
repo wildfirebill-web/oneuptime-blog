@@ -87,6 +87,7 @@ def euclidean_distance(vector_a: List[float], vector_b: List[float]) -> float:
 
 
 # Example usage
+
 vector1 = [1.0, 2.0, 3.0]
 vector2 = [4.0, 5.0, 6.0]
 

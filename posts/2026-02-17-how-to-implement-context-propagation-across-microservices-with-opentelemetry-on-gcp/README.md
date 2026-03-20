@@ -32,6 +32,7 @@ Here is a complete setup for a Python service using Flask that both receives and
 
 ```python
 # app.py - Flask service with OpenTelemetry context propagation
+
 from flask import Flask
 import requests
 from opentelemetry import trace

@@ -14,6 +14,7 @@ RabbitMQ is the widely deployed open-source message broker that implements AMQP,
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -180,6 +181,6 @@ resource "kubernetes_manifest" "orders_exchange" {
 
 - Deploy with 3 replicas (odd number) to maintain quorum in split-brain scenarios.
 - Enable the Prometheus plugin and scrape metrics for monitoring queue depth, consumer counts, and message rates.
-- Use quorum queues instead of classic mirrored queues — they are more reliable and have better performance.
+- Use quorum queues instead of classic mirrored queues - they are more reliable and have better performance.
 - Set `x-dead-letter-exchange` on queues so rejected/expired messages are routed to a DLQ rather than silently dropped.
-- Use TLS for all AMQP connections in production — the default unencrypted connections are not appropriate for sensitive data.
+- Use TLS for all AMQP connections in production - the default unencrypted connections are not appropriate for sensitive data.

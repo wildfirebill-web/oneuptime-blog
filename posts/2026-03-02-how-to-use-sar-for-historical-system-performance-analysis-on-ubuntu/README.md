@@ -30,6 +30,7 @@ Verify data collection is enabled:
 
 ```bash
 # Check the sysstat config
+
 cat /etc/default/sysstat
 ```
 

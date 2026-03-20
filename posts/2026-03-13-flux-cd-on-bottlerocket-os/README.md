@@ -29,6 +29,7 @@ Using `eksctl`:
 
 ```yaml
 # bottlerocket-nodegroup.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:

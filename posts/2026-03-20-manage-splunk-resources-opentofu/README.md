@@ -1,4 +1,4 @@
-# How to Manage Splunk Resources with OpenTofu
+# How to Manage Splunk Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -158,7 +158,7 @@ resource "splunk_admin_saml_groups" "ops" {
 - Set appropriate `frozen_time_period_in_secs` based on compliance and retention requirements.
 - Store HEC tokens in a secrets manager; never hardcode them.
 - Use SAML group mappings for role assignments rather than managing individual users.
-- Use scheduled saved searches sparingly — favor summary indexes for high-volume data.
+- Use scheduled saved searches sparingly - favor summary indexes for high-volume data.
 
 ## Conclusion
 

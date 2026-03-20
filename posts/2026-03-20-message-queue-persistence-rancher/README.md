@@ -18,6 +18,7 @@ RabbitMQ persistence operates at two levels: broker-level storage via PVCs, and 
 
 ```yaml
 # rabbitmq-values.yaml (persistence section)
+
 persistence:
   enabled: true                # Enable PVC creation
   storageClass: "longhorn"

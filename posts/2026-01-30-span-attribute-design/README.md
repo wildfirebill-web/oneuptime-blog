@@ -682,6 +682,7 @@ Even with careful SDK instrumentation, add a collector-level safety net:
 
 ```yaml
 # collector-config.yaml - Attribute sanitization in OTel Collector
+
 processors:
   # Remove any attributes that might contain PII
   attributes/sanitize:

@@ -14,6 +14,7 @@ Policy-based routing in Netplan uses the `routing-policy` key under each interfa
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

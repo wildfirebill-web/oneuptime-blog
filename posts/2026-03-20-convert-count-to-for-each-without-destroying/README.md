@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, count, for_each, State Migration, tofu state mv
+Tags: OpenTofu, Terraform, Count, for_each, State Migration, Tofu state mv
 
 Description: Learn how to safely convert count-based resources to for_each in OpenTofu without destroying and recreating existing infrastructure by using state move operations.
 
@@ -14,6 +14,7 @@ Resources created with `count` are identified as `resource.name[0]`, `resource.n
 
 ```hcl
 # count-based resource - addresses: aws_instance.app[0], aws_instance.app[1]
+
 resource "aws_instance" "app" {
   count         = 2
   ami           = "ami-abc123"

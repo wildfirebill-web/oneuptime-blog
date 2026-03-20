@@ -31,6 +31,7 @@ Red Hat OpenShift GitOps includes a FIPS-compliant build of ArgoCD. If you are o
 
 ```bash
 # Install OpenShift GitOps operator (includes FIPS-compliant ArgoCD)
+
 # This is done through the OperatorHub in OpenShift
 
 # Verify the operator is installed

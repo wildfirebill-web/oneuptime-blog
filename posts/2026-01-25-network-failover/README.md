@@ -94,6 +94,7 @@ Implement DNS-based failover using Route 53:
 
 ```python
 # dns_failover.py - AWS Route 53 DNS failover configuration
+
 import boto3
 
 route53 = boto3.client('route53')

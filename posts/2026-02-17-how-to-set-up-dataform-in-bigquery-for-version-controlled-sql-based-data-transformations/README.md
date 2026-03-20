@@ -28,6 +28,7 @@ Dataform is available directly in the BigQuery console. Start by creating a repo
 
 ```bash
 # Enable the Dataform API
+
 gcloud services enable dataform.googleapis.com
 
 # Create a Dataform repository

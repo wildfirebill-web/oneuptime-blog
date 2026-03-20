@@ -45,6 +45,7 @@ The kernel calculates an "OOM score" for each process based on:
 
 ```bash
 # Search for OOM killer messages in system log
+
 dmesg | grep -i "oom"
 
 # Check kernel ring buffer for recent OOM events

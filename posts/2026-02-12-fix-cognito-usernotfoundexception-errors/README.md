@@ -28,6 +28,7 @@ Verify the user exists in the correct pool.
 
 ```bash
 # Check if a user exists in the specified user pool
+
 aws cognito-idp admin-get-user \
   --user-pool-id us-east-1_ABC123 \
   --username testuser

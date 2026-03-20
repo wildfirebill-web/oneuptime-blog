@@ -148,6 +148,7 @@ Tests that pass individually but fail when run together often have session state
 
 ```python
 # test_auth.py
+
 import pytest
 from flask import Flask
 from flask.testing import FlaskClient

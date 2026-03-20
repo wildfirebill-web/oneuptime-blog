@@ -198,6 +198,7 @@ The most flexible approach is to have your CI pipeline inject the build URL into
 
 ```yaml
 # .github/workflows/deploy.yml
+
 - name: Update deployment manifest
   run: |
     # Add the build URL as an annotation

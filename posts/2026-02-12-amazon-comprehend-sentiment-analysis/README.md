@@ -38,6 +38,7 @@ def get_sentiment(text, language='en'):
     }
 
 # Test with various sentiments
+
 examples = [
     "This is the best product I've ever purchased. Amazing quality!",
     "Horrible experience. The item broke after one day of use.",

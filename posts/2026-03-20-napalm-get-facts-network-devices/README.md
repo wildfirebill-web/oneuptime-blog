@@ -11,11 +11,11 @@ Description: Learn how to use NAPALM (Network Automation and Programmability Abs
 NAPALM provides a unified Python API for interacting with multiple vendor network operating systems. The same Python code works for Cisco IOS, Cisco NX-OS, Juniper JunOS, Arista EOS, and others.
 
 Supported operations:
-- `get_facts()` — hostname, model, OS version, serial
-- `get_interfaces()` — interface status and MAC addresses
-- `get_interfaces_ip()` — IP addresses on each interface
-- `get_bgp_neighbors()` — BGP peer status
-- `get_route_to()` — routing table lookup
+- `get_facts()` - hostname, model, OS version, serial
+- `get_interfaces()` - interface status and MAC addresses
+- `get_interfaces_ip()` - IP addresses on each interface
+- `get_bgp_neighbors()` - BGP peer status
+- `get_route_to()` - routing table lookup
 
 ## Step 1: Install NAPALM
 
@@ -23,6 +23,7 @@ Supported operations:
 pip install napalm
 
 # Install specific driver dependencies
+
 pip install napalm[ios]    # Cisco IOS (uses Netmiko)
 pip install napalm[eos]    # Arista EOS (uses EAPI)
 pip install napalm[junos]  # Juniper JunOS (uses PyEZ)

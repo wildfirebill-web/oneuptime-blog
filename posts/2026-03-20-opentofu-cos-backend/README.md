@@ -1,8 +1,8 @@
-# How to Configure the COS Backend (Tencent Cloud) in OpenTofu
+# How to Configure the COS Backend (Tencent Cloud) in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to configure the COS (Cloud Object Storage) backend in OpenTofu to store state in Tencent Cloud Object Storage with built-in locking.
 
@@ -52,6 +52,7 @@ tofu init
 
 ```bash
 # Using tccli (Tencent Cloud CLI)
+
 tccli cos create-bucket \
   --bucket acme-tofu-state-1234567890 \
   --region ap-guangzhou
@@ -146,7 +147,7 @@ tofu workspace list
 ```
 
 State is organized as:
-```
+```text
 production/
 ├── terraform.tfstate      (default workspace)
 ├── env:/staging/          (staging workspace)

@@ -42,8 +42,9 @@ Each node runs:
 
 Before installation, document your network plan:
 
-```
+```text
 # Cluster Network Plan
+
 Cluster VIP:     192.168.1.100  (Kubernetes API + Harvester UI)
 Node 1 (seed):   192.168.1.11
 Node 2:          192.168.1.12

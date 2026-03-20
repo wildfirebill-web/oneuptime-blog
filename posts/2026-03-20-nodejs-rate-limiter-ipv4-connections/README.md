@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Rate Limiting, IPv4, TCP, Security, net Module, DDoS Protection
+Tags: Node.js, Rate Limiting, IPv4, TCP, Security, Net Module, DDoS Protection
 
 Description: Implement per-IP rate limiting for IPv4 TCP connections in Node.js to protect your server from connection floods, brute-force attacks, and resource exhaustion.
 
@@ -65,10 +65,10 @@ class IPRateLimiter {
     let timestamps = (this.rateWindow.get(ip) || []).filter(ts => ts > windowStart);
     
     if (timestamps.length >= this.maxRate) {
-      // Too many new connections — apply block
+      // Too many new connections - apply block
       const blockUntil = now + this.blockDurationMs;
       this.blocked.set(ip, blockUntil);
-      return { allowed: false, reason: `Rate limit exceeded — IP blocked for ${this.blockDurationMs / 1000}s` };
+      return { allowed: false, reason: `Rate limit exceeded - IP blocked for ${this.blockDurationMs / 1000}s` };
     }
     
     // Record this connection attempt
@@ -187,6 +187,7 @@ server.listen(8080, '0.0.0.0', () => {
 
 ```bash
 # Rapidly open connections to trigger the rate limit
+
 for i in {1..15}; do
   nc -z localhost 8080 &
 done

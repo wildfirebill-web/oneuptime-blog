@@ -116,6 +116,7 @@ This example shows what happens when self-healing is enabled.
 
 ```bash
 # Someone manually scales the deployment
+
 kubectl scale deployment myapp --replicas=10 -n production
 
 # Within 5 seconds, ArgoCD detects drift and reverts

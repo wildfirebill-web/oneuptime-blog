@@ -27,6 +27,7 @@ This guide provides a structured troubleshooting workflow for Cilium BGP, from c
 
 ```bash
 # Check all BGP peers across all nodes
+
 cilium bgp peers
 
 # Filter for non-established sessions

@@ -35,6 +35,7 @@ Confirm the installed version supports the required vfs modules:
 ```bash
 smbd --version
 # Should show 4.8 or higher
+
 ```
 
 ## Preparing the Backup Volume

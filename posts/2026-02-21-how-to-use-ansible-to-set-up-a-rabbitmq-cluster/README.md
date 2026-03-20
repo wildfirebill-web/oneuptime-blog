@@ -14,6 +14,7 @@ RabbitMQ clustering provides message queue high availability. When nodes are clu
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     rabbitmq_cluster:

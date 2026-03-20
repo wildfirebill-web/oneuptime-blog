@@ -28,6 +28,7 @@ The activity stream is AWX's built-in audit log. Every create, update, and delet
 
 ```bash
 # Query the activity stream for recent events
+
 curl -s -H "Authorization: Bearer ${AWX_TOKEN}" \
   "https://awx.example.com/api/v2/activity_stream/?order_by=-timestamp&page_size=10" \
   | python3 -c "

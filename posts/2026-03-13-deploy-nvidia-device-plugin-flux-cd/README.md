@@ -27,6 +27,7 @@ This guide walks through deploying the NVIDIA device plugin via Flux CD using bo
 
 ```yaml
 # clusters/my-cluster/device-plugin/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

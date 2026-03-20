@@ -30,6 +30,7 @@ By making node CIDR ipBlock a mandatory element of every ingress NetworkPolicy t
 
 ```bash
 # Verify node CIDRs cover all nodes
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.addresses[?(@.type=="InternalIP")].address}{"\n"}{end}'
 # Confirm all IPs fall within the CIDR used in policies
 ```

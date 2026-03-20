@@ -53,6 +53,7 @@ Each parameter is equivalent to running `helm install --set key=value`.
 
 ```bash
 # Set a single parameter
+
 argocd app set my-app -p image.tag=v2.0.0
 
 # Set multiple parameters

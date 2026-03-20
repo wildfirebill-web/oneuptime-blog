@@ -27,6 +27,7 @@ Before installing Wine, ensure your system is up to date.
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

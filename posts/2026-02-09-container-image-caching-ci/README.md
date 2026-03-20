@@ -26,6 +26,7 @@ FROM node:18-alpine AS dependencies
 WORKDIR /app
 
 # Cache mount for npm
+
 RUN --mount=type=cache,target=/root/.npm \
     npm set cache /root/.npm --global
 

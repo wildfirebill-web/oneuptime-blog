@@ -70,6 +70,7 @@ Knative's behavior is controlled through ConfigMaps in the knative-serving names
 
 ```yaml
 # platform/knative/config-defaults.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

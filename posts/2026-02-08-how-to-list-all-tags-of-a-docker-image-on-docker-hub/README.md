@@ -18,6 +18,7 @@ The Docker Registry HTTP API v2 provides endpoints for listing tags. For officia
 
 ```bash
 # List tags for an official image (e.g., nginx)
+
 # Step 1: Get an authentication token
 TOKEN=$(curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/nginx:pull" | jq -r .token)
 

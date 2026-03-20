@@ -8,11 +8,11 @@ Description: Understand how TCP slow start limits throughput for short-lived con
 
 ## Introduction
 
-TCP slow start is the initial phase of congestion control where the sender begins with a small congestion window and doubles it each RTT until it reaches a threshold or detects congestion. For long-lived bulk transfers, slow start is a brief startup cost. But for short connections — web requests, API calls, database queries — slow start may dominate the entire transfer time, severely limiting effective throughput.
+TCP slow start is the initial phase of congestion control where the sender begins with a small congestion window and doubles it each RTT until it reaches a threshold or detects congestion. For long-lived bulk transfers, slow start is a brief startup cost. But for short connections - web requests, API calls, database queries - slow start may dominate the entire transfer time, severely limiting effective throughput.
 
 ## Understanding Slow Start Impact
 
-```
+```text
 Example: HTTP request for a 100KB file, RTT = 50ms
 
 Without slow start issues:
@@ -30,6 +30,7 @@ Effective throughput: 100KB / 0.150s = 5.3 Mbps (out of 1 Gbps available!)
 
 ```bash
 # Time a small file download to see slow start dominance
+
 time curl -o /dev/null http://10.20.0.5/100kb.bin -w "time_total: %{time_total}s\n"
 
 # Compare with multiple sequential requests (later ones benefit from cached windows)
@@ -63,7 +64,7 @@ ip route show
 # For local routes where you know bandwidth is available
 ip route change 10.0.0.0/8 via 10.0.0.1 initcwnd 32
 
-# For the default route (use carefully — only if you have excess bandwidth)
+# For the default route (use carefully - only if you have excess bandwidth)
 ip route change default via 192.168.1.1 initcwnd 32
 
 # To see if kernel supports initcwnd
@@ -79,7 +80,7 @@ ip route change default via 192.168.1.1 initcwnd 32 2>&1
 
 # Check current setting
 sysctl net.ipv4.tcp_slow_start_after_idle
-# Default: 1 (enabled — resets CWND after idle period)
+# Default: 1 (enabled - resets CWND after idle period)
 
 # Disable for persistent connections (HTTP keep-alive, WebSockets)
 # This preserves the CWND from the previous transfer
@@ -95,7 +96,7 @@ echo "net.ipv4.tcp_slow_start_after_idle=0" >> /etc/sysctl.conf
 # Use connection pooling to avoid repeated slow starts
 import requests
 
-# Session with connection reuse — avoids slow start on subsequent requests
+# Session with connection reuse - avoids slow start on subsequent requests
 session = requests.Session()
 session.mount('http://', requests.adapters.HTTPAdapter(
     pool_connections=5,

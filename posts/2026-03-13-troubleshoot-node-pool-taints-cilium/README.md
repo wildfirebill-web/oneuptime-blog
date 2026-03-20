@@ -30,6 +30,7 @@ Find nodes without Cilium pods:
 
 ```bash
 # Count total nodes vs Cilium pods
+
 echo "Total nodes: $(kubectl get nodes --no-headers | wc -l)"
 echo "Cilium pods: $(kubectl -n kube-system get pods -l k8s-app=cilium --no-headers | wc -l)"
 

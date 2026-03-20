@@ -20,6 +20,7 @@ A transparent bridge forwards packets at Layer 2 without an IP address. Because 
 
 ```bash
 # Create bridge (no IP)
+
 ip link add br0 type bridge
 ip link set br0 type bridge stp_state 0
 
@@ -36,7 +37,7 @@ ip link set br0 up
 ip addr show br0
 # 2: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 ...
 #     link/ether ...
-#     (no inet line — no IP address)
+#     (no inet line - no IP address)
 ```
 
 ## Verify Transparent Bridging
@@ -96,7 +97,7 @@ tcpdump -i eth0 -n
 ```bash
 # /etc/network/interfaces (Debian)
 auto br0
-iface br0 inet manual    # No IP — manual mode
+iface br0 inet manual    # No IP - manual mode
     bridge_ports eth0 eth1
     bridge_stp off
     bridge_fd 0

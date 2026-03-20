@@ -27,7 +27,7 @@ Check blocks can include an optional scoped data source:
 
 ```hcl
 check "s3_bucket_exists" {
-  # Scoped data source — only available within this check block
+  # Scoped data source - only available within this check block
   data "aws_s3_bucket" "state" {
     bucket = "my-terraform-state"
   }
@@ -72,6 +72,7 @@ Check blocks produce **warnings**, not errors:
 tofu apply
 
 # Output:
+
 # ╷
 # │ Warning: Check block assertion failed
 # │
@@ -81,7 +82,7 @@ tofu apply
 # │ Production database must have Multi-AZ enabled
 # ╵
 # Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
-# (apply still succeeds — checks are warnings, not blockers)
+# (apply still succeeds - checks are warnings, not blockers)
 ```
 
 ## Using Check Blocks for Security Compliance

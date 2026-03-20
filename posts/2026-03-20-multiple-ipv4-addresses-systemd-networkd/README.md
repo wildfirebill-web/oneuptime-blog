@@ -14,6 +14,7 @@ Multiple IPv4 addresses on one interface are common for web servers hosting mult
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 

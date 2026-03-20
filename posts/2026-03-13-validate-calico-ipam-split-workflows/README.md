@@ -31,6 +31,7 @@ The first check is always consistency:
 
 ```bash
 # Run the authoritative IPAM consistency check
+
 calicoctl ipam check
 
 # Expected output includes: "IPAM is consistent"

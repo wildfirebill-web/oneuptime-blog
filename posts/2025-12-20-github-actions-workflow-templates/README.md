@@ -49,6 +49,7 @@ Create a Node.js CI template:
 
 ```yaml
 # workflow-templates/nodejs-ci.yml
+
 name: Node.js CI
 
 on:

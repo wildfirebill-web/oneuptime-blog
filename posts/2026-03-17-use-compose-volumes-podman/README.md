@@ -20,6 +20,7 @@ Named volumes persist data across container restarts and are managed by Podman.
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   db:

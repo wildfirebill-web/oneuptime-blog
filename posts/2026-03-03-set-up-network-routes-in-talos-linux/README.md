@@ -191,6 +191,7 @@ For existing nodes:
 
 ```bash
 # Add routes to a running node
+
 talosctl patch machineconfig --nodes 192.168.1.10 \
   --patch '{"machine": {"network": {"interfaces": [{"interface": "eth0", "addresses": ["192.168.1.10/24"], "routes": [{"network": "0.0.0.0/0", "gateway": "192.168.1.1"}, {"network": "10.10.0.0/16", "gateway": "192.168.1.254"}]}]}}}'
 ```

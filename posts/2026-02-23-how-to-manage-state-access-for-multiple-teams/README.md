@@ -48,6 +48,7 @@ This structure lets you set IAM policies at the S3 prefix level, giving each tea
 
 ```hcl
 # iam-platform-team.tf - Full access for the platform team
+
 resource "aws_iam_policy" "platform_team_state" {
   name        = "terraform-state-platform-team"
   description = "Full state access for the platform team"

@@ -19,6 +19,7 @@ sudo apt update
 sudo apt install meson ninja-build
 
 # Verify installation
+
 meson --version
 ninja --version
 ```

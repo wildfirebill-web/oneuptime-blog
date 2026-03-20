@@ -20,6 +20,7 @@ The simplest way to list all local images.
 
 ```bash
 # List all local images
+
 podman images
 
 # This is equivalent to

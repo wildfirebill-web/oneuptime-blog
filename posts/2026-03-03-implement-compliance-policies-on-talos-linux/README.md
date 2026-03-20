@@ -35,6 +35,7 @@ kube-bench is a tool that checks your cluster against the CIS benchmark.
 
 ```bash
 # Run kube-bench as a job
+
 kubectl apply -f - <<EOF
 apiVersion: batch/v1
 kind: Job

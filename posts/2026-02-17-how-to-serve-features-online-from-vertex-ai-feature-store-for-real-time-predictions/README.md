@@ -28,6 +28,7 @@ First, create a Feature Online Store with Bigtable as the serving backend:
 
 ```python
 # create_online_store.py
+
 # Create a Feature Online Store backed by Bigtable
 
 from google.cloud import aiplatform

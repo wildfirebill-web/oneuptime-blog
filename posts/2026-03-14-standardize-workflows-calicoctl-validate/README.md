@@ -29,6 +29,7 @@ Use a shared pre-commit configuration that all team members install:
 
 ```yaml
 # .pre-commit-config.yaml
+
 repos:
   - repo: local
     hooks:

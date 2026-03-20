@@ -8,12 +8,13 @@ Description: Monitor how TCP window size changes dynamically during a data trans
 
 ## Introduction
 
-TCP window sizes are dynamic — they grow and shrink in response to buffer availability, application read speed, and congestion events. Monitoring window size changes during a live transfer reveals whether throughput is limited by the network, receiver buffer, or application processing speed.
+TCP window sizes are dynamic - they grow and shrink in response to buffer availability, application read speed, and congestion events. Monitoring window size changes during a live transfer reveals whether throughput is limited by the network, receiver buffer, or application processing speed.
 
 ## Monitoring with ss During a Transfer
 
 ```bash
 # Start a large file transfer in the background
+
 scp /tmp/largefile user@10.20.0.5:/dev/null &
 
 # Monitor the connection's window sizes in real time
@@ -43,7 +44,7 @@ tshark -r /tmp/window_monitor.pcap \
 
 ## Visualizing with Wireshark
 
-```
+```text
 # In Wireshark: Statistics → TCP Stream Graphs → Window Scaling
 # This shows the receiver's advertised window over time
 
@@ -83,7 +84,7 @@ awk -F, 'NR>1{sum+=$2; count++; if($2<min||min=="")min=$2; if($2>max)max=$2}
 
 ## Interpreting Window Size Patterns
 
-```
+```text
 Pattern                  | Meaning
 -------------------------|------------------------------------------
 Steadily increasing      | Normal slow start, no congestion
@@ -97,4 +98,4 @@ Gradual decline          | Receiver getting slower (processing backlog)
 
 ## Conclusion
 
-Window size monitoring during transfers provides real-time visibility into TCP flow control behavior. A steadily increasing window indicates healthy growth. A plateau means you've hit the buffer limit — consider increasing `tcp_rmem`. Zero Window events indicate receiver-side processing can't keep up with incoming data. This information directly guides whether the fix is buffer tuning, application optimization, or congestion control changes.
+Window size monitoring during transfers provides real-time visibility into TCP flow control behavior. A steadily increasing window indicates healthy growth. A plateau means you've hit the buffer limit - consider increasing `tcp_rmem`. Zero Window events indicate receiver-side processing can't keep up with incoming data. This information directly guides whether the fix is buffer tuning, application optimization, or congestion control changes.

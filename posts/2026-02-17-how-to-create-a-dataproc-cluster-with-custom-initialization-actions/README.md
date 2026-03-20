@@ -40,6 +40,7 @@ An initialization action is a regular bash script. Here is one that installs Pyt
 ```bash
 #!/bin/bash
 # init-python-packages.sh
+
 # Installs Python packages needed by PySpark jobs
 
 set -euxo pipefail

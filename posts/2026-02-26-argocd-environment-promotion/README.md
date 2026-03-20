@@ -56,6 +56,7 @@ Each environment's `version.yaml` contains the image reference:
 
 ```yaml
 # overlays/dev/version.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -49,6 +49,7 @@ Start with a fresh CDK project and install the required dependencies.
 
 ```bash
 # Initialize a new CDK project
+
 npx cdk init app --language typescript
 
 # Install CDK Pipelines and ECS constructs

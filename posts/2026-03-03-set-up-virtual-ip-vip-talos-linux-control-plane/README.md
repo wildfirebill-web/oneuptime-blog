@@ -74,6 +74,7 @@ The cleanest approach is to configure the VIP when you first generate your clust
 
 ```yaml
 # vip-patch.yaml
+
 machine:
   network:
     interfaces:

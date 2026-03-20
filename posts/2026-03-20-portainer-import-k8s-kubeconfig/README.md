@@ -1,8 +1,8 @@
-# How to Import an Existing Kubernetes Cluster into Portainer via Kubeconfig
+# How to Import an Existing Kubernetes Cluster into Portainer via Kubeconfig - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Kubeconfig, Import, Environments
+Tags: Portainer, Kubernetes, kubeconfig, Import, Environments
 
 Description: Import an existing Kubernetes cluster into Portainer using a kubeconfig file for immediate visual management without deploying an agent.
 
@@ -20,6 +20,7 @@ The kubeconfig import method lets you connect any Kubernetes cluster to Portaine
 
 ```bash
 # View your current kubeconfig
+
 kubectl config view --raw
 
 # Get kubeconfig for a specific context
@@ -175,4 +176,4 @@ curl -s \
 
 ## Conclusion
 
-Kubeconfig import is the fastest way to add an existing Kubernetes cluster to Portainer. It works with any Kubernetes distribution — EKS, AKS, GKE, on-premises, or minikube. For production use, create a dedicated service account with appropriate permissions rather than using admin credentials. The agent-based method provides deeper integration (namespace-level RBAC, resource quotas), but kubeconfig import is perfect for quickly getting a cluster under Portainer management.
+Kubeconfig import is the fastest way to add an existing Kubernetes cluster to Portainer. It works with any Kubernetes distribution - EKS, AKS, GKE, on-premises, or minikube. For production use, create a dedicated service account with appropriate permissions rather than using admin credentials. The agent-based method provides deeper integration (namespace-level RBAC, resource quotas), but kubeconfig import is perfect for quickly getting a cluster under Portainer management.

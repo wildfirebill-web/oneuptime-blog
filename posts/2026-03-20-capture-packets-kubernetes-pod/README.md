@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, tcpdump, Pod Network, Container, Packet Capture
+Tags: Kubernetes, tcpdump, Pod Network, Containers, Packet Capture
 
-Description: Learn how to capture network packets on Kubernetes pod networks using tcpdump inside pods, ephemeral debug containers, or directly on the node's pod network interface for troubleshooting container networking issues.
+Description: Learn how to capture network packets on Kubernetes pod networks using tcpdump inside pods, ephemeral debug containers, or directly on the node's pod network interface for troubleshooting container...
 
 ## Kubernetes Network Capture Challenges
 
@@ -18,6 +18,7 @@ Kubernetes pods have isolated network namespaces. To capture pod traffic you hav
 
 ```bash
 # Check if tcpdump is available in the pod
+
 kubectl exec -it my-pod -- which tcpdump
 
 # If available, capture directly
@@ -175,11 +176,11 @@ ssh user@k8s-worker-1 "sudo nsenter -t $PID -n tcpdump -i eth0 -n -w -" | \
 ## Step 7: Capture CNI-Specific Traffic
 
 ```bash
-# Calico — capture BGP and overlay traffic
+# Calico - capture BGP and overlay traffic
 # On node
 sudo tcpdump -i tunl0 -n -w /tmp/calico-tunnel.pcap
 
-# Flannel — capture VXLAN overlay
+# Flannel - capture VXLAN overlay
 sudo tcpdump -i flannel.1 -n -w /tmp/flannel-overlay.pcap
 
 # Capture encapsulated traffic and inner packets

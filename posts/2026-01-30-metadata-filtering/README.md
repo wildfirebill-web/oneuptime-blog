@@ -151,6 +151,7 @@ flowchart TD
 
 ```python
 # Document metadata schema
+
 metadata_schema = {
     # Categorical - use for exact matching
     "document_type": {

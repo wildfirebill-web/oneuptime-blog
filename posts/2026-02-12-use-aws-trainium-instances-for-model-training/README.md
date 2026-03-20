@@ -26,6 +26,7 @@ The trn1n.32xlarge variant doubles the network bandwidth, which is critical for 
 
 ```bash
 # Launch a Trn1 instance with the Neuron Deep Learning AMI
+
 aws ec2 run-instances \
   --image-id ami-0abc123-neuron-dlami \
   --instance-type trn1.32xlarge \

@@ -25,6 +25,7 @@ Here's a setup with three categories of routes:
 
 ```yaml
 # Step 1: Configure token validation (applies globally)
+
 apiVersion: security.istio.io/v1
 kind: RequestAuthentication
 metadata:

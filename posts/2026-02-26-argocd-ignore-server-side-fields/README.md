@@ -28,6 +28,7 @@ Before configuring ignore rules, you need to identify which fields are causing t
 
 ```bash
 # Show the raw diff for an application
+
 argocd app diff my-app
 
 # Show detailed diff with more context

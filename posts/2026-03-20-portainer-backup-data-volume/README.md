@@ -1,4 +1,4 @@
-# How to Back Up Portainer Data Volume
+# How to Back Up Portainer Data Volume - Backup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,22 +8,23 @@ Description: Create reliable backups of the Portainer data volume to protect you
 
 ## Introduction
 
-Portainer stores everything — user accounts, environments, stacks, registry credentials, access control settings, and all configuration — in its data volume (`portainer_data`). Backing this up regularly ensures you can recover from hardware failures, accidental resets, or corruption without losing your setup.
+Portainer stores everything - user accounts, environments, stacks, registry credentials, access control settings, and all configuration - in its data volume (`portainer_data`). Backing this up regularly ensures you can recover from hardware failures, accidental resets, or corruption without losing your setup.
 
 ## What the Data Volume Contains
 
 The `portainer_data` volume contains:
-- `portainer.db` — BoltDB database with all Portainer configuration
+- `portainer.db` - BoltDB database with all Portainer configuration
 - TLS certificates (if configured)
 - Portainer-managed Docker compose files
 - Cache files
 
-Your actual Docker containers, images, and volumes are NOT in this volume — they live in Docker's storage and are unaffected by Portainer backups.
+Your actual Docker containers, images, and volumes are NOT in this volume - they live in Docker's storage and are unaffected by Portainer backups.
 
 ## Step 1: Manual Backup (Tar Archive)
 
 ```bash
 # Best practice: stop Portainer during backup to ensure consistency
+
 docker stop portainer
 
 # Create a backup using an Alpine container
@@ -47,7 +48,7 @@ ls -lh /opt/backups/portainer/
 For minimal downtime, backup with Portainer running (slight risk of inconsistency):
 
 ```bash
-# Online backup — acceptable for most use cases
+# Online backup - acceptable for most use cases
 # BoltDB uses MVCC, so reads during writes are generally safe
 
 docker run --rm \
@@ -217,4 +218,4 @@ EOF
 
 ## Conclusion
 
-Backing up the Portainer data volume is a five-minute setup that prevents hours of manual reconfiguration after a failure. The simplest approach is stopping Portainer, running `tar` via an Alpine container to compress the volume contents, and restarting — this gives you a clean, consistent backup. Supplement volume backups with exported stack compose files, which give you a human-readable record of all your stack configurations.
+Backing up the Portainer data volume is a five-minute setup that prevents hours of manual reconfiguration after a failure. The simplest approach is stopping Portainer, running `tar` via an Alpine container to compress the volume contents, and restarting - this gives you a clean, consistent backup. Supplement volume backups with exported stack compose files, which give you a human-readable record of all your stack configurations.

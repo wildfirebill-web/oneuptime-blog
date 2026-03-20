@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Essential components for a 3-node cluster
+
 # ==========================================
 
 # Raspberry Pi 4 (4GB recommended) x3
@@ -356,7 +357,7 @@ flowchart TB
     Containerd2 --> Pod2
 ```
 
-## Resource Optimization for Pi
+Resource Optimization for Pi
 
 Raspberry Pi has limited resources. These optimizations help K3s run efficiently.
 
@@ -488,7 +489,7 @@ kubelet-arg:
 # K3s defaults to SQLite which is lighter for Pi
 ```
 
-### Resource Limits for Workloads
+Resource Limits for Workloads
 
 ```yaml
 # example-deployment.yaml

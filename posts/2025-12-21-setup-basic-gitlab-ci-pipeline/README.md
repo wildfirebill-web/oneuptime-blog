@@ -37,6 +37,7 @@ Every GitLab CI pipeline starts with a `.gitlab-ci.yml` file in your repository 
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test

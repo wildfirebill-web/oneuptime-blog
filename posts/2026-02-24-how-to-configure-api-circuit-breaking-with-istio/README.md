@@ -240,6 +240,7 @@ Use Fortio (a load testing tool that comes with Istio samples) to test circuit b
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/httpbin/httpbin.yaml
 
 # Normal load - should all succeed
+
 kubectl exec deploy/fortio -- fortio load -c 2 -qps 0 -n 20 http://httpbin:8000/get
 
 # Overload - should trigger circuit breaking

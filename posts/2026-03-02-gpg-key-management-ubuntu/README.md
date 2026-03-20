@@ -16,6 +16,7 @@ Before generating keys, understand where GPG stores data:
 
 ```bash
 # Main GPG directory
+
 ls -la ~/.gnupg/
 
 # Key files:

@@ -83,6 +83,7 @@ Each cluster gets its own bootstrap configuration that points Flux to the correc
 
 ```bash
 # Bootstrap the development cluster
+
 flux bootstrap github \
   --owner=myorg \
   --repository=fleet-repo \

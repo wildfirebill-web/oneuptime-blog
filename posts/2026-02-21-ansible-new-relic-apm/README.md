@@ -26,6 +26,7 @@ graph TD
 
 ```yaml
 # roles/newrelic_infra/tasks/main.yml
+
 ---
 - name: Add New Relic GPG key
   ansible.builtin.apt_key:

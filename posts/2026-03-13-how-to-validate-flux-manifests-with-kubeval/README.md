@@ -22,6 +22,7 @@ kubeval is a tool for validating Kubernetes configuration files against the Kube
 
 ```bash
 # macOS (Homebrew)
+
 brew install kubeval
 
 # Linux (binary download)

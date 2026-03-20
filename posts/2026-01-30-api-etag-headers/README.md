@@ -200,6 +200,7 @@ def generate_weak_etag(content: Any, version: str) -> str:
     return f'W/"{version}-{hash_value}"'
 
 # Example usage
+
 product = {"id": 42, "name": "Widget", "price": 29.99}
 print(generate_etag(product))           # "8f14e45fceea167a5a36dedd4bea2543"
 print(generate_weak_etag(product, "v1")) # W/"v1-a1b2c3d4e5f67890"

@@ -30,6 +30,7 @@ This Dockerfile creates a minimal Node.js API container:
 
 ```dockerfile
 # Dockerfile
+
 FROM node:20-slim
 
 WORKDIR /app

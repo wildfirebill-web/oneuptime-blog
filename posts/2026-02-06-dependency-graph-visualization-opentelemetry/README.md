@@ -39,6 +39,7 @@ The first step is processing your trace data to extract service-to-service relat
 
 ```python
 # dependency_extractor.py
+
 from dataclasses import dataclass, field
 from collections import defaultdict
 from datetime import datetime, timedelta

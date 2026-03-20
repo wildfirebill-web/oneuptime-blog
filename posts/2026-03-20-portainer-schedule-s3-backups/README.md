@@ -1,4 +1,4 @@
-# How to Schedule Automatic Backups to S3 in Portainer Business Edition
+# How to Schedule Automatic Backups to S3 in Portainer Business Edition (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -72,8 +72,9 @@ For self-hosted backup storage, use a local MinIO instance:
 
 ## Cron Schedule Examples
 
-```
+```text
 # Every day at 2 AM
+
 0 2 * * *
 
 # Every 6 hours

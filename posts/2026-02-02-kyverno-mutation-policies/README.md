@@ -46,6 +46,7 @@ The following commands add the Kyverno Helm repository, update your local chart 
 
 ```bash
 # Add the official Kyverno Helm repository
+
 helm repo add kyverno https://kyverno.github.io/kyverno/
 
 # Fetch the latest charts

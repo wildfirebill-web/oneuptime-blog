@@ -65,6 +65,7 @@ The most straightforward fix is to install the version the configuration require
 
 ```bash
 # Check your current version
+
 terraform version
 
 # Install the required version using tfenv

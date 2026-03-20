@@ -18,6 +18,7 @@ Install Boto3 and configure your credentials.
 
 ```bash
 # Install boto3
+
 pip install boto3
 
 # Configure credentials (if not using IAM roles)

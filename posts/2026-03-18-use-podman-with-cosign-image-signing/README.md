@@ -20,6 +20,7 @@ Install Cosign on your system:
 
 ```bash
 # On Fedora/RHEL
+
 sudo dnf install cosign
 
 # On macOS

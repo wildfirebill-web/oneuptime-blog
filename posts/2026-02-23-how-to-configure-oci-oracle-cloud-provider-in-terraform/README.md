@@ -32,6 +32,7 @@ OCI authentication requires several pieces of information. Here is where to find
 
 ```bash
 # Generate an RSA key pair for OCI API signing
+
 mkdir -p ~/.oci
 openssl genrsa -out ~/.oci/oci_api_key.pem 2048
 chmod 600 ~/.oci/oci_api_key.pem

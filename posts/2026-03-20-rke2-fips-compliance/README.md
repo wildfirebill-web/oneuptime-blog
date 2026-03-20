@@ -35,6 +35,7 @@ Approved algorithms include:
 
 ```bash
 # Enable FIPS mode on RHEL 8/9
+
 sudo fips-mode-setup --enable
 
 # Reboot to apply FIPS mode
@@ -215,4 +216,4 @@ sudo /tmp/fips-compliance-check.sh
 
 ## Conclusion
 
-Enabling FIPS mode in RKE2 involves both OS-level FIPS configuration and RKE2-specific TLS cipher suite restrictions. The combination ensures all cryptographic operations in the Kubernetes cluster use only FIPS 140-2 approved algorithms. For government customers and regulated industries, starting with a FIPS-enabled OS (RHEL with FIPS mode or Ubuntu with FIPS kernel) and the RKE2 FIPS build provides the foundation for a fully compliant Kubernetes environment. Remember that FIPS compliance is a system-wide requirement — applications deployed on the cluster must also use FIPS-compliant cryptography.
+Enabling FIPS mode in RKE2 involves both OS-level FIPS configuration and RKE2-specific TLS cipher suite restrictions. The combination ensures all cryptographic operations in the Kubernetes cluster use only FIPS 140-2 approved algorithms. For government customers and regulated industries, starting with a FIPS-enabled OS (RHEL with FIPS mode or Ubuntu with FIPS kernel) and the RKE2 FIPS build provides the foundation for a fully compliant Kubernetes environment. Remember that FIPS compliance is a system-wide requirement - applications deployed on the cluster must also use FIPS-compliant cryptography.

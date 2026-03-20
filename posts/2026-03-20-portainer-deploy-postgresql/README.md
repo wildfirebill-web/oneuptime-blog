@@ -1,4 +1,4 @@
-# How to Deploy PostgreSQL via Portainer
+# How to Deploy PostgreSQL via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -73,6 +73,7 @@ Create `postgresql.conf`:
 # postgresql.conf - custom configuration
 
 # Connections
+
 max_connections = 100
 superuser_reserved_connections = 3
 
@@ -186,4 +187,4 @@ find "$BACKUP_DIR" -name "*.dump" -mtime +7 -delete
 
 ## Conclusion
 
-PostgreSQL deployed via Portainer with pgAdmin provides a powerful database platform with excellent tooling. The custom configuration file allows fine-tuning for your hardware, and the initialization scripts ensure consistent database setup. PostgreSQL's robust feature set — including JSONB, full-text search, and window functions — makes it suitable for complex application requirements.
+PostgreSQL deployed via Portainer with pgAdmin provides a powerful database platform with excellent tooling. The custom configuration file allows fine-tuning for your hardware, and the initialization scripts ensure consistent database setup. PostgreSQL's robust feature set - including JSONB, full-text search, and window functions - makes it suitable for complex application requirements.

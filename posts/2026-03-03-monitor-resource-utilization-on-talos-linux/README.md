@@ -18,6 +18,7 @@ The talosctl command provides direct access to system information through the Ta
 
 ```bash
 # CPU and memory overview
+
 talosctl stats --nodes 10.0.0.1
 
 # Detailed memory information

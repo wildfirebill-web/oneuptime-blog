@@ -28,6 +28,7 @@ A single-stage Dockerfile for React includes everything needed for building in t
 
 ```dockerfile
 # BAD: Single stage - includes Node.js, npm, and all dependencies
+
 FROM node:20
 
 WORKDIR /app

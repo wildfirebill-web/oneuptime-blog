@@ -18,6 +18,7 @@ The `dict2items` filter converts a dictionary into a list of key-value pairs tha
 
 ```yaml
 # dict-loop.yml
+
 # Creates system users from a dictionary of usernames and properties
 - name: Create users from dictionary
   hosts: all

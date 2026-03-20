@@ -50,6 +50,7 @@ Label your nodes so Kubernetes and your applications know which zone each node i
 
 ```yaml
 # Zone labels in Talos machine config for Zone A nodes
+
 machine:
   nodeLabels:
     topology.kubernetes.io/zone: zone-a

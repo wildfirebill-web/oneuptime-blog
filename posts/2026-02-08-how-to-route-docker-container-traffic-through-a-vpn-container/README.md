@@ -34,6 +34,7 @@ Create the directory structure:
 
 ```bash
 # Create a directory for the VPN configuration
+
 mkdir -p /opt/vpn/config
 ```
 

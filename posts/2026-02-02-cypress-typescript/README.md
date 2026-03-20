@@ -18,6 +18,7 @@ Start by installing Cypress and the TypeScript dependencies:
 
 ```bash
 # Install Cypress
+
 npm install --save-dev cypress
 
 # Install TypeScript (if you don't have it already)

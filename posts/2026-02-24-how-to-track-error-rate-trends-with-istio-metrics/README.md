@@ -168,6 +168,7 @@ Use a Grafana variable `$service` to let users select which service to view. A 3
 
 ```promql
 # Client errors (4xx)
+
 sum(rate(istio_requests_total{reporter="destination", destination_service_name="$service", response_code=~"4.."}[5m]))
 
 # Server errors (5xx)

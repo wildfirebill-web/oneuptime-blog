@@ -33,6 +33,7 @@ tracer = trace.get_tracer("livestream.pipeline", "1.0.0")
 meter = metrics.get_meter("livestream.metrics", "1.0.0")
 
 # Histogram for overall glass-to-glass latency
+
 e2e_latency = meter.create_histogram(
     name="livestream.e2e.latency",
     description="End-to-end latency from ingest to playback",

@@ -28,6 +28,7 @@ Start with the PVC and work outward:
 
 ```bash
 # List all PVCs and their status
+
 kubectl get pvc --all-namespaces
 
 # Describe the pending PVC to see events

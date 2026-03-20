@@ -49,6 +49,7 @@ First, deploy the eBPF agent as a DaemonSet in your Kubernetes cluster:
 
 ```yaml
 # ebpf-agent-daemonset.yaml
+
 # This deploys an eBPF-based OpenTelemetry agent on every node
 # It automatically discovers and instruments all running services
 apiVersion: apps/v1

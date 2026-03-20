@@ -43,6 +43,7 @@ ArgoCD maintains a history of previous sync operations. You can roll back to any
 
 ```bash
 # List previous sync history
+
 argocd app history my-app \
   --server $ARGOCD_SERVER \
   --auth-token $ARGOCD_TOKEN \

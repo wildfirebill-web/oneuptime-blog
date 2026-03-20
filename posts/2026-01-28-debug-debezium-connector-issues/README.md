@@ -43,6 +43,7 @@ Start with the connector status API:
 
 ```bash
 # Get connector status
+
 curl -s http://localhost:8083/connectors/inventory-connector/status | jq .
 ```
 

@@ -35,6 +35,7 @@ Before implementing, understand what JWTs can and cannot do:
 ```toml
 [dependencies]
 # JWT handling
+
 jsonwebtoken = "9"
 
 # Web framework

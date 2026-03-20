@@ -21,6 +21,7 @@ instance_count = 2
 instance_type  = "t3.micro"
 
 # List values
+
 availability_zones = ["us-east-1a", "us-east-1b"]
 
 # Map values

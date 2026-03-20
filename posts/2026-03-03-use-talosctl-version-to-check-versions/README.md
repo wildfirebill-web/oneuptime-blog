@@ -16,6 +16,7 @@ The `talosctl version` command reports two pieces of information: the version of
 
 ```bash
 # Check versions
+
 talosctl version --nodes 192.168.1.10
 ```
 

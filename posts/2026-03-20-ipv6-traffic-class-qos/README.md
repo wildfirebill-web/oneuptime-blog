@@ -12,7 +12,7 @@ The IPv6 Traffic Class field is an 8-bit field that serves the same purpose as t
 
 ## Traffic Class Field Layout
 
-```
+```text
  7  6  5  4  3  2  1  0
 +--+--+--+--+--+--+--+--+
 | DSCP (6 bits)  | ECN  |
@@ -44,6 +44,7 @@ ECN bits  [1:0]: 4 possible values (00, 01, 10, 11)
 # Linux: set DSCP/ToS on outgoing packets using tc (traffic control)
 
 # Mark all TCP traffic on port 5060 (SIP/VoIP) with EF (DSCP 46)
+
 # EF DSCP value = 46 = 0x2E, shifted: 0x2E << 2 = 0xB8
 sudo tc qdisc add dev eth0 root handle 1: prio
 sudo tc filter add dev eth0 protocol ipv6 parent 1:0 prio 1 \

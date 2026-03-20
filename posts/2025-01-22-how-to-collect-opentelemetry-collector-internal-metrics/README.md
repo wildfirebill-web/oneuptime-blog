@@ -22,6 +22,7 @@ The `service.telemetry.metrics` section configures how the Collector reports its
 
 ```yaml
 # Add this to your existing Collector config.yaml
+
 # This configures the Collector's self-monitoring capabilities
 service:
   telemetry:

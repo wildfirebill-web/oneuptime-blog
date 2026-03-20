@@ -252,6 +252,7 @@ Configure database connection in Kubernetes:
 
 ```yaml
 # payment-service-deployment.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

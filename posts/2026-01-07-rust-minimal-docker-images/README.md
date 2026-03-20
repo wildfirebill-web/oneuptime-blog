@@ -31,6 +31,7 @@ Start with a standard multi-stage build that separates the build environment fro
 
 ```dockerfile
 # Dockerfile
+
 # Basic multi-stage build for Rust
 
 # Build stage

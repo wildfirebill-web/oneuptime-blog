@@ -42,6 +42,7 @@ The error typically looks like this:
 
 ```text
 # Error from the receiver when it gets HTTP data on the gRPC port
+
 rpc error: code = Internal desc = grpc: failed to unmarshal the received message:
 proto: cannot parse invalid wire-format data
 

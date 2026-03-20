@@ -31,6 +31,7 @@ For Gen 2 functions, set the `--min-instances` flag during deployment:
 
 ```bash
 # Deploy with 2 minimum instances always warm
+
 gcloud functions deploy my-api \
   --gen2 \
   --runtime=nodejs20 \

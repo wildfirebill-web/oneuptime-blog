@@ -279,6 +279,7 @@ Set up a BigQuery scheduled query to run your assertions after your data pipelin
 
 ```bash
 # Schedule the quality check suite to run daily at 7 AM UTC
+
 # This should run after your data pipeline finishes
 bq query \
   --use_legacy_sql=false \

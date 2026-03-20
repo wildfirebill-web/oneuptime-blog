@@ -59,6 +59,7 @@ You cannot reduce what you do not measure. Track toil systematically.
 
 ```python
 # toil_tracker.py
+
 # Track and categorize toil activities for an SRE team.
 # This helps quantify how much time is spent on toil
 # versus engineering work each sprint.

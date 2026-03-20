@@ -26,6 +26,7 @@ If drivers are not installed:
 
 ```bash
 # Check if GPU is present
+
 lspci | grep -i nvidia
 
 # Install recommended driver

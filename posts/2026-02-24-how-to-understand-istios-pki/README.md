@@ -27,6 +27,7 @@ The root certificate is the top of the trust chain. All workload certificates ch
 
 ```bash
 # View the root certificate
+
 kubectl get secret istio-ca-secret -n istio-system -o jsonpath='{.data.ca-cert\.pem}' | base64 -d | openssl x509 -text -noout
 ```
 

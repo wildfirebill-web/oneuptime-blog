@@ -24,6 +24,7 @@ Create an Azure Key Vault and generate an encryption key for SOPS.
 
 ```bash
 # Create a resource group (if not already existing)
+
 az group create --name rg-flux-sops --location eastus
 
 # Create an Azure Key Vault

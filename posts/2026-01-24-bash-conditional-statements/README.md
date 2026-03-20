@@ -46,6 +46,7 @@ flowchart TD
 # Basic if statement syntax
 
 # Form 1: Single line with semicolons
+
 if [ condition ]; then command; fi
 
 # Form 2: Multi-line (preferred for readability)

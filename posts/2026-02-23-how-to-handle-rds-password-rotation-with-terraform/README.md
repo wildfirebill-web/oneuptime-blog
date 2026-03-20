@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 # Generate a random password for the initial RDS setup
+
 resource "aws_secretsmanager_secret" "rds_credentials" {
   name        = "production/rds/master-credentials"
   description = "Master credentials for production RDS instance"

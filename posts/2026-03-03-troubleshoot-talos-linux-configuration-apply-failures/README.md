@@ -30,6 +30,7 @@ Always validate before applying:
 
 ```bash
 # Validate the configuration locally
+
 talosctl validate --config worker.yaml --mode metal
 
 # For cloud deployments

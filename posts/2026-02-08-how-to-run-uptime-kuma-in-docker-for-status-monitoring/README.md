@@ -22,6 +22,7 @@ The fastest way to get Uptime Kuma running is a single Docker command.
 
 ```bash
 # Run Uptime Kuma with a persistent volume for data
+
 docker run -d \
   --name uptime-kuma \
   --restart unless-stopped \
@@ -214,7 +215,7 @@ docker cp uptime-kuma:/app/data/kuma.db ./kuma-backup.db
 
 To restore, stop the container, replace the `kuma.db` file in the volume, and start it again.
 
-## Resource Usage
+Resource Usage
 
 Uptime Kuma is lightweight. With 50 monitors checking every 60 seconds, it uses roughly 80MB of RAM and negligible CPU. The SQLite database grows slowly, typically staying under 100MB even after months of data. For larger deployments with hundreds of monitors, you might see memory usage climb to 200-300MB.
 

@@ -50,6 +50,7 @@ Configure these variables in GitLab under Settings > CI/CD > Variables.
 
 ```yaml
 # .gitlab-ci.yml
+
 # Define the stages of the pipeline
 stages:
   - build

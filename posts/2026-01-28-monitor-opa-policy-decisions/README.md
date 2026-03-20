@@ -44,6 +44,7 @@ Decision logs capture every policy evaluation with full context.
 
 ```yaml
 # opa-config.yaml
+
 decision_logs:
   console: true  # Log to stdout (development)
 

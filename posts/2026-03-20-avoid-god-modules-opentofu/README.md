@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Modules, Best Practices, Refactoring, Infrastructure as Code, Architecture
 
-Description: Learn how to identify and break down OpenTofu god modules — modules that try to manage too many unrelated resources — into smaller, composable, single-responsibility modules.
+Description: Learn how to identify and break down OpenTofu god modules - modules that try to manage too many unrelated resources - into smaller, composable, single-responsibility modules.
 
 ## Introduction
 
@@ -13,7 +13,8 @@ A "god module" in OpenTofu is a module that manages too many unrelated concerns:
 ## Signs of a God Module
 
 ```hcl
-# BAD — a module that does everything
+# BAD - a module that does everything
+
 module "our_application" {
   source = "./modules/our-application"  # This module has 2000+ lines
   # Creates: VPC, subnets, security groups, EKS, RDS,
@@ -30,7 +31,7 @@ Signs:
 
 ## Refactoring into Single-Responsibility Modules
 
-```
+```text
 Before (god module):
   modules/application/    → everything
 
@@ -49,7 +50,7 @@ After (decomposed):
 ### Before (God Module)
 
 ```hcl
-# modules/app/main.tf — 2000 lines
+# modules/app/main.tf - 2000 lines
 resource "aws_vpc" "main" { ... }
 resource "aws_subnet" "private" { ... }
 resource "aws_subnet" "public" { ... }
@@ -64,7 +65,7 @@ resource "aws_elasticache_cluster" "main" { ... }
 ### After (Composable Modules)
 
 ```hcl
-# main.tf — clean composition
+# main.tf - clean composition
 module "networking" {
   source      = "./modules/networking"
   vpc_cidr    = var.vpc_cidr
@@ -110,7 +111,7 @@ tofu init && tofu validate
 
 ## Guidelines for Module Size
 
-```
+```text
 A module is too large if:
   - It has more than 150 lines in main.tf
   - It manages resources from more than 3 cloud service categories
@@ -120,4 +121,4 @@ A module is too large if:
 
 ## Conclusion
 
-God modules are a maintenance liability. Break them apart along service category boundaries (networking, compute, data, IAM) so each module has a single reason to change. Smaller modules are testable, reusable in different contexts, and approachable by new team members — all properties that make infrastructure code sustainable as the system grows.
+God modules are a maintenance liability. Break them apart along service category boundaries (networking, compute, data, IAM) so each module has a single reason to change. Smaller modules are testable, reusable in different contexts, and approachable by new team members - all properties that make infrastructure code sustainable as the system grows.

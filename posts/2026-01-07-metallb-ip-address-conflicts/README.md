@@ -61,6 +61,7 @@ The Address Resolution Protocol (ARP) is your primary tool for detecting IP conf
 
 ```bash
 # Check ARP entries for a specific IP
+
 arp -a | grep "192.168.1.100"
 
 # On Linux, use the ip command for more details

@@ -1,4 +1,4 @@
-# How to Troubleshoot Longhorn Replica Rebuilding
+# How to Troubleshoot Longhorn Replica Rebuilding Loops
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ Longhorn volumes become degraded when a replica fails or a node goes offline. Th
 
 ```bash
 # List all volumes and their robustness
+
 kubectl get volume -n longhorn-system \
   -o custom-columns='NAME:.metadata.name,STATE:.status.state,ROBUSTNESS:.status.robustness'
 
@@ -150,7 +151,7 @@ kubectl scale deployment <deployment-name> --replicas=0
 # Wait for the volume to detach
 kubectl get volume -n longhorn-system <volume-name> -w
 
-# Scale back up — Longhorn will reattach and trigger rebuild
+# Scale back up - Longhorn will reattach and trigger rebuild
 kubectl scale deployment <deployment-name> --replicas=1
 ```
 
@@ -173,6 +174,6 @@ kubectl get replica -n longhorn-system \
 
 ## Best Practices
 
-- Monitor Longhorn volume robustness with Prometheus alerts — a volume in `degraded` state means rebuilding is needed and the risk of data loss is elevated.
-- Set `concurrent-replica-rebuild-per-node-limit` to a value that won't overwhelm node I/O during peak hours — rebuilding is I/O intensive.
-- Keep at least 30% free disk space on Longhorn nodes — rebuilding requires temporary extra space on the target node.
+- Monitor Longhorn volume robustness with Prometheus alerts - a volume in `degraded` state means rebuilding is needed and the risk of data loss is elevated.
+- Set `concurrent-replica-rebuild-per-node-limit` to a value that won't overwhelm node I/O during peak hours - rebuilding is I/O intensive.
+- Keep at least 30% free disk space on Longhorn nodes - rebuilding requires temporary extra space on the target node.

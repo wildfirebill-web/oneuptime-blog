@@ -54,6 +54,7 @@ resource "aws_security_group" "bastion" {
 }
 
 # Security group for private instances that accept SSH from the bastion
+
 resource "aws_security_group" "private_ssh" {
   name_prefix = "${var.project_name}-private-ssh-"
   vpc_id      = var.vpc_id

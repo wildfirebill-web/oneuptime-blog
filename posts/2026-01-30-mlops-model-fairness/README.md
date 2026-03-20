@@ -88,6 +88,7 @@ Install the required libraries for fairness analysis:
 
 ```bash
 # Install Fairlearn for fairness-aware ML
+
 pip install fairlearn
 
 # Install AIF360 (AI Fairness 360) from IBM

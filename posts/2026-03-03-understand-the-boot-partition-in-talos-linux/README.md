@@ -46,6 +46,7 @@ The BOOT partition stores several key files:
 
 ```bash
 # You can check what version of Talos is running (and thus what kernel)
+
 talosctl version --nodes 192.168.1.10
 
 # Example output:

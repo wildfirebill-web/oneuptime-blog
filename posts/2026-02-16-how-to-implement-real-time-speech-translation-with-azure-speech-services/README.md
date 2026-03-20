@@ -43,6 +43,7 @@ graph LR
 
 ```bash
 # Install the Azure Speech SDK
+
 pip install azure-cognitiveservices-speech
 ```
 

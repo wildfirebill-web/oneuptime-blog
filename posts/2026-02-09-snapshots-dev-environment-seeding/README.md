@@ -40,6 +40,7 @@ TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 echo "=== Seeding Development Environment ==="
 
 # Step 1: Create production snapshot
+
 echo "Creating production snapshot..."
 
 kubectl apply -n $PROD_NAMESPACE -f - <<EOF

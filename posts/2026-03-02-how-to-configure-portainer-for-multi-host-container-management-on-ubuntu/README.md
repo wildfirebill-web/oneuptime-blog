@@ -22,6 +22,7 @@ Choose a host to be your Portainer server. It should be accessible from your bro
 
 ```bash
 # Create a named volume for Portainer's data (certificates, settings, stack configs)
+
 docker volume create portainer_data
 
 # Run Portainer Community Edition

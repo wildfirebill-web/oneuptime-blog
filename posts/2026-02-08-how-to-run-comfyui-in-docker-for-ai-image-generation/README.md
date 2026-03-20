@@ -21,6 +21,7 @@ ComfyUI performs best with GPU acceleration. Here is what you need:
 
 ```bash
 # Verify GPU is available to Docker
+
 docker run --rm --gpus all nvidia/cuda:12.0-base nvidia-smi
 
 # Check available VRAM

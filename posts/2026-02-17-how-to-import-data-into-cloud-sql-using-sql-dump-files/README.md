@@ -39,6 +39,7 @@ Use `mysqldump` to create a dump from your source MySQL database:
 
 ```bash
 # Create a MySQL dump file
+
 # --single-transaction ensures consistency without locking tables
 # --routines includes stored procedures and functions
 # --triggers includes triggers

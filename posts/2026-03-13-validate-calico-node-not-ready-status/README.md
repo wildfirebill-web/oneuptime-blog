@@ -37,6 +37,7 @@ kubectl get pods -n kube-system -l k8s-app=calico-node -o wide
 ```bash
 kubectl get node <node-name>
 # Expected: STATUS=Ready
+
 ```
 
 **Validation Step 2: calico-node pod is 1/1 Running**

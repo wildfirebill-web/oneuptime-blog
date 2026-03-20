@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Manufacturing, OT, IIoT, Edge, Industry 4.0, Kubernetes
 
-Description: Configure Rancher for manufacturing Industry 4.0 environments with OT/IT convergence, edge computing for factory floor systems, air-gapped deployments, and integration with industrial protocols like MQTT and OPC-UA.
+Description: Configure Rancher for manufacturing Industry 4.0 environments with OT/IT convergence, edge computing for factory floor systems, air-gapped deployments, and integration with industrial protocols...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Manufacturing Kubernetes deployments bridge IT and OT (Operational Technology) n
 
 ## Manufacturing Architecture
 
-```
+```text
 Cloud
 ┌───────────────────────────────────────┐
 │  Digital Twin Platform                │
@@ -38,6 +38,7 @@ OT Network (Air-Gapped)
 
 ```bash
 # K3s on industrial PCs (ruggedized hardware)
+
 # Often air-gapped, requires private registry
 
 # Install K3s with air-gapped private registry

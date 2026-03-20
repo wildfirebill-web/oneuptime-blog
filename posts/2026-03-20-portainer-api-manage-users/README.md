@@ -1,4 +1,4 @@
-# How to Create and Manage Users via the Portainer API
+# How to Create and Manage Users via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"
 
 # List all users
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/users" | jq '.[] | {id: .Id, username: .Username, role: .Role}'
 
@@ -148,7 +149,7 @@ curl -s -X DELETE -H "Authorization: Bearer $TOKEN" \
 
 ```bash
 #!/bin/bash
-# provision-users.sh — Create users from a CSV file
+# provision-users.sh - Create users from a CSV file
 
 # users.csv format: username,password,role
 # john.doe,TempPass123!,2
@@ -186,7 +187,7 @@ echo "User provisioning complete."
 
 ```python
 #!/usr/bin/env python3
-# sync-users.py — Sync Portainer users from an external list
+# sync-users.py - Sync Portainer users from an external list
 
 import requests
 import json

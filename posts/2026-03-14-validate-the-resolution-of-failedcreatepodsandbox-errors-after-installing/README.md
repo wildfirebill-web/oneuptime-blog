@@ -30,6 +30,7 @@ Test pod creation on every node to confirm the fix is cluster-wide, not just on 
 ```bash
 #!/bin/bash
 # validate-sandbox-all-nodes.sh
+
 # Creates a test pod on each node and verifies successful sandbox creation
 
 NAMESPACE="sandbox-validation"

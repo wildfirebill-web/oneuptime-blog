@@ -29,6 +29,7 @@ Determine which CRDs were deleted and what custom resources depended on them.
 
 ```bash
 # Check which Flux CRDs are missing
+
 kubectl get crd | grep -E "fluxcd|toolkit"
 
 # Expected Flux CRDs:

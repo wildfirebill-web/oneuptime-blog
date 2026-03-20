@@ -24,6 +24,7 @@ gsutil comes bundled with the Google Cloud SDK. If you have gcloud installed, yo
 
 ```bash
 # Verify gsutil is available
+
 gsutil version
 
 # Authenticate if you have not already

@@ -12,7 +12,7 @@ When a Mobile Node is away from home, traffic sent to its Home Address (HoA) arr
 
 ## The Problem Without Proxy NDP
 
-```
+```text
 Home Network: 2001:db8:home::/64
 Home Router: fe80::1 (2001:db8:home::1)
 MN's HoA: 2001:db8:home::100 (MN is currently away)
@@ -22,7 +22,7 @@ Correspondent Node sends:
 
 Home Router receives packet and needs to forward it:
   1. Looks up 2001:db8:home::100 in ND cache
-  2. Not found — sends Neighbor Solicitation
+  2. Not found - sends Neighbor Solicitation
      dst: 2001:db8:home::100's solicited-node multicast
   3. No response (MN is not on the link)
   4. Packet dropped!
@@ -51,6 +51,7 @@ sequenceDiagram
 
 ```bash
 # Enable proxy NDP on the HA's home interface
+
 echo "net.ipv6.conf.eth0.proxy_ndp = 1" | \
   sudo tee -a /etc/sysctl.d/99-ha.conf
 
@@ -132,4 +133,4 @@ sudo tcpdump -i eth0 -n \
 
 ## Conclusion
 
-Proxy Neighbor Advertisements are how the Home Agent intercepts traffic for absent Mobile Nodes. The HA answers NDP queries for each registered MN's HoA, attracting traffic that it then tunnels to the MN's CoA. Proxy NDP failures are a common cause of MIPv6 connectivity problems — monitor HA proxy NDP entries with Linux commands and cross-reference with OneUptime's connectivity checks.
+Proxy Neighbor Advertisements are how the Home Agent intercepts traffic for absent Mobile Nodes. The HA answers NDP queries for each registered MN's HoA, attracting traffic that it then tunnels to the MN's CoA. Proxy NDP failures are a common cause of MIPv6 connectivity problems - monitor HA proxy NDP entries with Linux commands and cross-reference with OneUptime's connectivity checks.

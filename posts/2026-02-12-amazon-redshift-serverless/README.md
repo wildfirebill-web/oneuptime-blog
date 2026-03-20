@@ -30,6 +30,7 @@ Create a namespace and workgroup:
 
 ```bash
 # Create a namespace (storage layer)
+
 aws redshift-serverless create-namespace \
   --namespace-name analytics \
   --admin-username admin \

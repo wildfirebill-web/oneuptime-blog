@@ -41,6 +41,7 @@ chrony supports several hardware reference clocks through shared memory (SHM) or
 
 ```bash
 # In /etc/chrony.conf on the primary NTP server
+
 # SHM reference clock from gpsd
 refclock SHM 0 offset 0.0 delay 0.2 refid GPS
 refclock SHM 1 offset 0.0 delay 0.0 refid PPS prefer

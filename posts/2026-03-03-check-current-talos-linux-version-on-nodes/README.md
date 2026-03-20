@@ -16,6 +16,7 @@ The most direct way to check the Talos version on a node is the `talosctl versio
 
 ```bash
 # Check version on a specific node
+
 talosctl version --nodes 192.168.1.10
 
 # Example output:

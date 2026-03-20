@@ -83,6 +83,7 @@ Before migrating, document your current mTLS setup:
 
 ```bash
 # Find all TLS-related configuration files
+
 find /app/config -name "*.pem" -o -name "*.jks" -o -name "*.p12" -o -name "*.crt" -o -name "*.key"
 
 # Check for TLS configuration in application properties

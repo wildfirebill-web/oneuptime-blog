@@ -18,6 +18,7 @@ Phoenix ships with a flag specifically for API projects. This skips the HTML vie
 
 ```bash
 # Install Phoenix if you haven't already
+
 mix archive.install hex phx_new
 
 # Create a new API-only project

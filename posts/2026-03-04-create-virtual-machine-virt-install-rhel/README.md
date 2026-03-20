@@ -14,6 +14,7 @@ Description: Learn how to create and configure virtual machines on RHEL using th
 
 ```bash
 # Create a VM with 2 vCPUs, 2GB RAM, and a 20GB disk
+
 sudo virt-install \
   --name rhel9-vm \
   --memory 2048 \

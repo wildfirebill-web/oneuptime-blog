@@ -18,7 +18,7 @@ The `aggregate-address` command creates a summary route in the BGP table. By def
 
 Aggregation only works when at least one more-specific route exists in the BGP table. Verify this first:
 
-```
+```text
 Router# show ip bgp | include 192.168
 
 ! You should see individual routes like:
@@ -31,7 +31,7 @@ Router# show ip bgp | include 192.168
 
 Create an aggregate that covers the range you want to summarize:
 
-```
+```text
 router bgp 65001
  ! Aggregate all /24s within 192.168.0.0/16
  aggregate-address 192.168.0.0 255.255.0.0
@@ -45,9 +45,9 @@ With `summary-only`, only `192.168.0.0/16` is advertised to neighbors; the indiv
 
 ## Step 3: Use as-set to Preserve AS-Path Information
 
-By default, the aggregate route has an empty AS path (locally originated). Use `as-set` to include a set of all AS numbers from the component routes—this preserves routing policy information:
+By default, the aggregate route has an empty AS path (locally originated). Use `as-set` to include a set of all AS numbers from the component routes-this preserves routing policy information:
 
-```
+```text
 router bgp 65001
  ! Include AS-path information from all component routes
  aggregate-address 192.168.0.0 255.255.0.0 summary-only as-set
@@ -59,7 +59,7 @@ The aggregate will now carry an AS_SET attribute listing all contributing ASes, 
 
 Instead of suppressing all components, use an unsuppress map to continue advertising specific prefixes alongside the summary:
 
-```
+```text
 ! Define which prefixes to still advertise despite summary-only
 ip prefix-list KEEP_ADVERTISED seq 10 permit 192.168.1.0/24
 
@@ -74,7 +74,7 @@ router bgp 65001
 
 ## Step 5: Verify the Aggregate in the BGP Table
 
-```
+```text
 Router# show ip bgp 192.168.0.0/16
 
 BGP routing table entry for 192.168.0.0/16
@@ -89,7 +89,7 @@ The `Atomic aggregate` flag indicates component routes have been suppressed.
 
 ## Step 6: Verify Suppressed Routes
 
-```
+```text
 ! Check that component routes are suppressed (shown with 's' flag)
 Router# show ip bgp
 

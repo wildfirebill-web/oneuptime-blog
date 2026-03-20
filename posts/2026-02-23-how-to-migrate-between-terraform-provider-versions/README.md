@@ -29,6 +29,7 @@ Version constraints control which versions Terraform uses:
 
 ```hcl
 # Exact version
+
 version = "= 5.0.0"
 
 # Minimum version

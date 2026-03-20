@@ -16,6 +16,7 @@ Before SSHing into the VM, check the metrics from the Azure side. This gives you
 
 ```bash
 # Get CPU percentage over the last hour with 5-minute intervals
+
 az monitor metrics list \
   --resource "/subscriptions/{sub-id}/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM" \
   --metric "Percentage CPU" \

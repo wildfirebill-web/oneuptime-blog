@@ -48,6 +48,7 @@ sudo systemctl status openstack-neutron
 
 ```bash
 # On each compute node
+
 sudo dnf update calico-felix
 sudo systemctl restart calico-felix
 sudo systemctl status calico-felix

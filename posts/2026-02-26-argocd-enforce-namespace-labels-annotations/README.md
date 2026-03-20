@@ -35,6 +35,7 @@ First, establish which labels and annotations are mandatory in your organization
 
 ```yaml
 # Example required labels for a well-governed namespace
+
 apiVersion: v1
 kind: Namespace
 metadata:

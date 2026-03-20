@@ -1,4 +1,4 @@
-# How to Monitor Nginx IPv4 Connections with Prometheus and Grafana
+# How to Monitor Nginx IPv4 Connections with Prometheus and Grafana (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ server {
 sudo nginx -t && sudo systemctl reload nginx
 
 # Test stub status
+
 curl http://10.0.0.5:8080/nginx_status
 # Output:
 # Active connections: 42

@@ -26,6 +26,7 @@ The most basic pattern is submitting a single PySpark job on a schedule. Here is
 
 ```python
 # daily_etl_dag.py - Submit a PySpark job to Dataproc on a daily schedule
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.providers.google.cloud.operators.dataproc import DataprocSubmitJobOperator

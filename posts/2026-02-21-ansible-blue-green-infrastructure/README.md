@@ -25,6 +25,7 @@ graph TD
 
 ```yaml
 # roles/blue_green/defaults/main.yml - Blue-green configuration
+
 bg_active_env: blue
 bg_blue_servers: "{{ groups['blue'] }}"
 bg_green_servers: "{{ groups['green'] }}"

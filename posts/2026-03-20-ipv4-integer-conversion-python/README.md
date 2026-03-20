@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Integer, Conversion, ipaddress, Networking
+Tags: Python, IPv4, Integer, Conversion, Ipaddress, Networking
 
 Description: Learn how to convert IPv4 addresses to 32-bit integers and back in Python using the ipaddress module and struct, useful for arithmetic operations, sorting, and range checks.
 
@@ -12,6 +12,7 @@ Description: Learn how to convert IPv4 addresses to 32-bit integers and back in 
 import ipaddress
 
 # String → integer
+
 ip = ipaddress.IPv4Address("192.168.1.1")
 n = int(ip)
 print(n)           # 3232235777

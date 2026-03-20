@@ -45,6 +45,7 @@ Each ansible.cfg is tailored to its environment:
 
 ```ini
 # development/ansible.cfg
+
 [defaults]
 inventory = inventory.ini
 host_key_checking = False

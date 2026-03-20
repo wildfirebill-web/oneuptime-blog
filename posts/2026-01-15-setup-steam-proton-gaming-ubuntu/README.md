@@ -18,6 +18,7 @@ Steam is available through multiple installation methods. The recommended approa
 
 ```bash
 # Update package index to ensure you get the latest version information
+
 sudo apt update
 
 # Install Steam from Ubuntu's multiverse repository

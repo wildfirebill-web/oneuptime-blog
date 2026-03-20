@@ -18,6 +18,7 @@ By default, Podman binds published ports to all interfaces (0.0.0.0). On servers
 
 ```bash
 # Bind to a specific interface IP
+
 podman run -d --name web \
   -p 192.168.1.100:8080:80 \
   docker.io/library/nginx:latest

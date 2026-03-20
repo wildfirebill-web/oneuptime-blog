@@ -455,6 +455,7 @@ from elasticsearch import Elasticsearch
 es = Elasticsearch("http://localhost:9200")
 
 # Term query for exact match
+
 def find_by_status(status):
     return es.search(
         index="products",

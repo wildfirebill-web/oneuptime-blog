@@ -1,4 +1,4 @@
-# How to Deploy Squid Proxy Cache via Portainer
+# How to Deploy Squid Proxy Cache via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ cat > /opt/squid/conf/squid.conf << 'EOF'
 # /etc/squid/squid.conf
 
 # ACLs
+
 acl localnet src 10.0.0.0/8
 acl localnet src 172.16.0.0/12
 acl localnet src 192.168.0.0/16
@@ -139,7 +140,7 @@ docker run --rm ubuntu/squid htpasswd -bc /opt/squid/passwords/squid_users proxy
 
 Add to `squid.conf`:
 
-```
+```text
 auth_param basic program /usr/lib/squid/basic_ncsa_auth /etc/squid/passwords/squid_users
 auth_param basic realm Squid Proxy
 acl authenticated proxy_auth REQUIRED
@@ -159,4 +160,4 @@ curl http://localhost:3128/squid-internal-mgr/info
 
 ## Conclusion
 
-Squid caches HTTP/HTTPS content, reducing bandwidth for environments with many clients accessing the same external resources (e.g., container image pulls, package downloads). The `cache_mem` parameter controls RAM used for hot objects, while `cache_dir ufs` stores larger objects on disk. Monitor the cache hit ratio — below 50% suggests most content is not cacheable, and you should review whether the cache is beneficial for your workload.
+Squid caches HTTP/HTTPS content, reducing bandwidth for environments with many clients accessing the same external resources (e.g., container image pulls, package downloads). The `cache_mem` parameter controls RAM used for hot objects, while `cache_dir ufs` stores larger objects on disk. Monitor the cache hit ratio - below 50% suggests most content is not cacheable, and you should review whether the cache is beneficial for your workload.

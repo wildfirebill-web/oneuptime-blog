@@ -16,6 +16,7 @@ To create a new role called `webserver`:
 
 ```bash
 # Initialize a new role skeleton
+
 ansible-galaxy role init webserver
 ```
 

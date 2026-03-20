@@ -30,6 +30,7 @@ tracer = trace.get_tracer("ecommerce.payments", "1.0.0")
 meter = metrics.get_meter("ecommerce.payments", "1.0.0")
 
 # Track which gateway handled each payment
+
 payment_attempt_counter = meter.create_counter(
     name="payment.attempts_total",
     description="Payment attempts per gateway",

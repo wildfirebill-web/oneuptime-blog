@@ -45,6 +45,7 @@ Before configuring the receiver, ensure the RabbitMQ management plugin is enable
 
 ```bash
 # Enable management plugin on RabbitMQ
+
 rabbitmq-plugins enable rabbitmq_management
 
 # Verify the management API is accessible

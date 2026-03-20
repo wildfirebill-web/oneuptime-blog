@@ -88,6 +88,7 @@ The official Swift Docker images provide a solid foundation:
 
 ```dockerfile
 # Basic Dockerfile for Swift application
+
 FROM swift:5.9-jammy
 
 WORKDIR /app
@@ -317,7 +318,7 @@ RUN --mount=type=cache,target=/app/.build \
     cp .build/release/App /app/App
 ```
 
-## Resource Limits for Production
+Resource Limits for Production
 
 Swift applications can consume significant memory during traffic spikes. Set appropriate limits:
 

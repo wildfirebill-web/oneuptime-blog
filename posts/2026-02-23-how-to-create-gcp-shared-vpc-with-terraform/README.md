@@ -25,6 +25,7 @@ A service project can use the shared network while also having its own project-l
 
 ```hcl
 # Enable Shared VPC on the host project
+
 resource "google_compute_shared_vpc_host_project" "host" {
   project = var.host_project_id
 }

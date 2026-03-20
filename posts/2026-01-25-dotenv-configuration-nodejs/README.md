@@ -22,6 +22,7 @@ Create a `.env` file in your project root:
 
 ```env
 # Database
+
 DATABASE_URL=postgresql://user:password@localhost:5432/mydb
 DATABASE_POOL_SIZE=10
 

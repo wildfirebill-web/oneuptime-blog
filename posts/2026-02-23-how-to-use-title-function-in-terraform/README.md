@@ -16,6 +16,7 @@ The `title` function converts a string to title case. Each word's first characte
 
 ```hcl
 # Basic syntax
+
 title(string)
 ```
 

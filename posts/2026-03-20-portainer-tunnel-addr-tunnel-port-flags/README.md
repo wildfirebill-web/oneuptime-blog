@@ -61,7 +61,7 @@ graph LR
     B -->|Management traffic| A
 ```
 
-The Edge Agent dials out — no inbound firewall rules needed at the remote site. Only the Portainer server needs port `8000` (or your custom port) publicly accessible.
+The Edge Agent dials out - no inbound firewall rules needed at the remote site. Only the Portainer server needs port `8000` (or your custom port) publicly accessible.
 
 ## Configuring Edge Agent to Use Custom Tunnel Port
 
@@ -69,6 +69,7 @@ When creating an Edge environment in Portainer, the generated deployment command
 
 ```bash
 # The edge key encodes the tunnel endpoint
+
 # If tunnel-port changes, generate a new Edge environment and redeploy agents
 ```
 

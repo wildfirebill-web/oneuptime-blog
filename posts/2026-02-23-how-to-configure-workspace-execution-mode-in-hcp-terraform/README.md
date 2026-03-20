@@ -82,6 +82,7 @@ Developer -> terraform plan -> HCP Terraform -> Agent (your network) -> Private 
 
 ```hcl
 # Remote execution (default)
+
 resource "tfe_workspace" "remote_ws" {
   name           = "cloud-infrastructure"
   organization   = "your-org"

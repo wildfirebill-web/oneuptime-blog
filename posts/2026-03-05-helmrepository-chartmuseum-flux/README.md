@@ -27,6 +27,7 @@ If you do not already have a ChartMuseum instance, you can deploy one in your cl
 
 ```yaml
 # chartmuseum-deployment.yaml
+
 # Deploy ChartMuseum with local storage inside the cluster
 apiVersion: apps/v1
 kind: Deployment

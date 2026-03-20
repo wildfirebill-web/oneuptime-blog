@@ -20,6 +20,7 @@ Launch the instance with the right security group:
 
 ```bash
 # Create a security group for the LAMP server
+
 aws ec2 create-security-group \
   --group-name lamp-server-sg \
   --description "LAMP stack security group" \

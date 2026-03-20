@@ -49,6 +49,7 @@ Here is how to create a stream with automatic backfill:
 
 ```bash
 # Create a stream with automatic backfill (default behavior)
+
 gcloud datastream streams create my-cdc-stream \
   --display-name="CDC with Auto Backfill" \
   --location=us-central1 \

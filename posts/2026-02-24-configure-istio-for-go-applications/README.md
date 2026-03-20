@@ -416,7 +416,7 @@ spec:
 
 Go apps can handle many concurrent connections efficiently, so the connection limits can be higher than for Python or Ruby.
 
-## Resource Considerations
+Resource Considerations
 
 Go apps compile to a single binary with no runtime dependencies. They are very efficient:
 

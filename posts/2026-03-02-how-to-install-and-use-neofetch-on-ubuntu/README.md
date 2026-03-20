@@ -29,6 +29,7 @@ If you need the latest features:
 
 ```bash
 # Clone the repository
+
 git clone https://github.com/dylanaraps/neofetch.git
 cd neofetch
 

@@ -29,6 +29,7 @@ Kafka benefits from specific network and file system tuning:
 
 ```yaml
 # talos-kafka-patch.yaml
+
 machine:
   sysctls:
     # Kafka needs higher network buffer sizes

@@ -46,6 +46,7 @@ The processing script reads input, processes it, and writes output:
 
 ```python
 # process.py - Main batch processing script
+
 import os
 import json
 import csv

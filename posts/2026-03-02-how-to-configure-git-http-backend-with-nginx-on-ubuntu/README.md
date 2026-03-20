@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Git, NGINX, Self-Hosted, Version Control
+Tags: Ubuntu, Git, Nginx, Self-Hosted, Version Control
 
 Description: Configure git-http-backend with Nginx on Ubuntu to serve Git repositories over HTTP and HTTPS with basic authentication, enabling smart HTTP protocol for efficient clone and push operations.
 
@@ -20,6 +20,7 @@ This is lighter than running Gitea or GitLab, and appropriate when you need repo
 
 ```bash
 # Install Git, Nginx, and fcgiwrap (CGI-to-FastCGI bridge)
+
 sudo apt update
 sudo apt install -y git nginx fcgiwrap apache2-utils
 

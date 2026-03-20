@@ -32,6 +32,7 @@ Orphaned replicas can result from:
 
 ```bash
 # Check for orphaned replicas in Longhorn
+
 kubectl get orphans.longhorn.io -n longhorn-system
 
 # Get details about orphaned resources
@@ -152,7 +153,7 @@ done
 
 1. **Always delete volumes properly** via the Longhorn UI or by deleting PVCs
 2. **Ensure nodes are online** before deleting volumes
-3. **Monitor disk usage** — sudden drops in available space may indicate orphan accumulation
+3. **Monitor disk usage** - sudden drops in available space may indicate orphan accumulation
 4. **Enable auto-deletion** in production environments
 
 ### Configure Delete Confirmation
@@ -187,4 +188,4 @@ chmod +x check-orphans.sh
 
 ## Conclusion
 
-Orphaned replica cleanup is an important maintenance task for keeping Longhorn storage healthy and preventing unnecessary disk space consumption. By enabling automatic orphan deletion and setting up monitoring for orphan accumulation, you can maintain a clean storage environment with minimal manual intervention. Always verify an orphan is truly orphaned before deleting it — Longhorn's orphan detection is reliable, but a brief review before bulk deletion is good practice in production environments.
+Orphaned replica cleanup is an important maintenance task for keeping Longhorn storage healthy and preventing unnecessary disk space consumption. By enabling automatic orphan deletion and setting up monitoring for orphan accumulation, you can maintain a clean storage environment with minimal manual intervention. Always verify an orphan is truly orphaned before deleting it - Longhorn's orphan detection is reliable, but a brief review before bulk deletion is good practice in production environments.

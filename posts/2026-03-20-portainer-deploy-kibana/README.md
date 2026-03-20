@@ -1,4 +1,4 @@
-# How to Deploy Kibana via Portainer
+# How to Deploy Kibana via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -91,6 +91,7 @@ Import log data using Filebeat or directly via API:
 
 ```bash
 # Send sample log to Elasticsearch
+
 curl -X POST "http://localhost:9200/app-logs/_doc" \
   -u elastic:elastic_password \
   -H "Content-Type: application/json" \

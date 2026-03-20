@@ -26,6 +26,7 @@ Flagger uses NGINX's traffic splitting capabilities through canary annotations. 
 
 ```bash
 # Add the ingress-nginx Helm repository
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

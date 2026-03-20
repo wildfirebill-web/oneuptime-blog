@@ -28,6 +28,7 @@ If you do not already have Graphite running, you can deploy it in your cluster. 
 
 ```yaml
 # graphite-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

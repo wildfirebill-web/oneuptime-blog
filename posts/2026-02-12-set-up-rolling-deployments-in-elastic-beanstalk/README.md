@@ -41,6 +41,7 @@ Rolling deployments update your instances in batches. While one batch is being u
 
 ```yaml
 # .ebextensions/rolling.config - Rolling deployment configuration
+
 option_settings:
   aws:elasticbeanstalk:command:
     DeploymentPolicy: Rolling

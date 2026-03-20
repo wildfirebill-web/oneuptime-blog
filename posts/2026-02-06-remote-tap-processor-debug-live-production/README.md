@@ -153,6 +153,7 @@ def filtered_tap(tap_endpoint, filters):
 
 
 # Usage during debugging
+
 for span in filtered_tap("collector:12001", {
     "service_name": "payment-service",
     "has_error": True,

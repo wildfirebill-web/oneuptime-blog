@@ -8,7 +8,7 @@ Description: A guide to using ephemeral outputs in OpenTofu to expose temporary 
 
 ## Introduction
 
-Ephemeral outputs in OpenTofu (introduced in 1.11) are output values that exist only during the plan/apply execution and are never written to the state file. Unlike sensitive outputs (which are stored in state but masked in display), ephemeral outputs are truly transient — they cannot be persisted.
+Ephemeral outputs in OpenTofu (introduced in 1.11) are output values that exist only during the plan/apply execution and are never written to the state file. Unlike sensitive outputs (which are stored in state but masked in display), ephemeral outputs are truly transient - they cannot be persisted.
 
 ## Declaring Ephemeral Outputs
 
@@ -37,6 +37,7 @@ output "session_credentials" {
 
 ```hcl
 # Sensitive output: stored in state (encrypted ideally), masked in display
+
 output "db_password" {
   value     = aws_db_instance.main.password
   sensitive = true
@@ -135,4 +136,4 @@ output "client_certificate" {
 
 ## Conclusion
 
-Ephemeral outputs provide the strongest security guarantee for truly transient values — they are provably not stored in state. This is essential for temporary credentials, one-time tokens, and other values that should exist only for the duration of a deployment. Use ephemeral outputs for any value that would be a security risk if persisted, and combine them with ephemeral variables and resources for a comprehensive ephemeral secret management strategy.
+Ephemeral outputs provide the strongest security guarantee for truly transient values - they are provably not stored in state. This is essential for temporary credentials, one-time tokens, and other values that should exist only for the duration of a deployment. Use ephemeral outputs for any value that would be a security risk if persisted, and combine them with ephemeral variables and resources for a comprehensive ephemeral secret management strategy.

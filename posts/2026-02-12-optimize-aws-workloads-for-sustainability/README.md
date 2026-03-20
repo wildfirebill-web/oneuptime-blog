@@ -52,6 +52,7 @@ Most organizations run instances that are 40-60% oversized. AWS Compute Optimize
 
 ```bash
 # Get recommendations for oversized EC2 instances
+
 aws compute-optimizer get-ec2-instance-recommendations \
   --filters "Name=Finding,Values=OVER_PROVISIONED" \
   --output table \

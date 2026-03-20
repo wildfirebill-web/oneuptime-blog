@@ -62,6 +62,7 @@ This configuration creates a pool named "production-pool" with IP addresses from
 
 ```yaml
 # Basic IPAddressPool configuration
+
 # This pool defines a range of 11 IP addresses for production services
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, DMS, Database Migration, Data Replication, Infrastructure as Code
+Tags: OpenTofu, AWS, DMS, Database Migrations, Data Replication, Infrastructure as Code
 
 Description: Learn how to create AWS Database Migration Service replication instances, endpoints, and tasks for full-load and CDC migrations using OpenTofu.
 
@@ -156,4 +156,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS DMS provides managed database migration with full-load and CDC replication. OpenTofu manages replication instances, source and target endpoints, and replication tasks — creating a reproducible migration pipeline for database moves and ongoing replication.
+AWS DMS provides managed database migration with full-load and CDC replication. OpenTofu manages replication instances, source and target endpoints, and replication tasks - creating a reproducible migration pipeline for database moves and ongoing replication.

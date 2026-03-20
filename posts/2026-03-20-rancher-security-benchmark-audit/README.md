@@ -19,6 +19,7 @@ Security auditing of Kubernetes clusters is an ongoing process that requires sys
 
 ```bash
 # Run the hardened profile for the most thorough scan
+
 kubectl apply -f - <<EOF
 apiVersion: cis.cattle.io/v1
 kind: ClusterScan

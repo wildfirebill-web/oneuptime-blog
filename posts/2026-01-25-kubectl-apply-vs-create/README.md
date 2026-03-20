@@ -25,6 +25,7 @@ Use `create` for one-time operations, quick experiments, or generating resource 
 
 ```bash
 # Create a deployment imperatively
+
 # This will fail if the deployment already exists
 kubectl create deployment nginx --image=nginx:1.24
 

@@ -75,6 +75,7 @@ Let's create this layout from the command line. First, you need to know which AZ
 
 ```bash
 # List available AZs in your current region
+
 aws ec2 describe-availability-zones \
   --query 'AvailabilityZones[?State==`available`].ZoneName' \
   --output table

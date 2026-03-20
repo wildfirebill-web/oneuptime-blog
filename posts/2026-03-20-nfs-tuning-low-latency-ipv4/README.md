@@ -16,6 +16,7 @@ The biggest single improvement is usually increasing `rsize` and `wsize` from th
 
 ```bash
 # Optimized NFSv4 mount for low-latency LAN
+
 sudo mount -t nfs4 \
   -o rsize=1048576,wsize=1048576,timeo=14,retrans=3,hard,intr,noatime,nconnect=4 \
   10.0.0.1:/exports/data /mnt/data
@@ -27,14 +28,14 @@ sudo mount -t nfs4 \
 | `wsize=1048576` | 1 MiB | Write block size |
 | `timeo=14` | 1.4 seconds | RPC timeout (not too low for busy servers) |
 | `retrans=3` | 3 | Retransmissions before error |
-| `hard` | — | Retry forever (safe for LAN) |
-| `intr` | — | Allow interrupt of hung mount |
-| `noatime` | — | Skip access time updates (reduces write amplification) |
+| `hard` | - | Retry forever (safe for LAN) |
+| `intr` | - | Allow interrupt of hung mount |
+| `noatime` | - | Skip access time updates (reduces write amplification) |
 | `nconnect=4` | 4 | Use 4 TCP connections (Linux 5.3+, increases throughput) |
 
 ## fstab Entry for Persistent Mount
 
-```
+```text
 # /etc/fstab
 10.0.0.1:/exports/data  /mnt/data  nfs4  rsize=1048576,wsize=1048576,timeo=14,retrans=3,hard,intr,noatime,nconnect=4,_netdev  0  0
 ```
@@ -149,4 +150,4 @@ ping -M do -s 8972 10.0.0.1   # 8972 + 28 header = 9000 bytes
 
 ## Conclusion
 
-NFS low-latency tuning on IPv4 starts with `rsize=1048576,wsize=1048576` in mount options — this single change often doubles throughput. Add `nconnect=4` on Linux 5.3+ to parallelize TCP connections. Use `async` exports only for non-critical data where durability can be traded for speed. Increase TCP buffer sizes via sysctl and bump RPC slot table entries for high-concurrency workloads. Measure with `dd` and `nfsstat -c` before and after changes to confirm improvements.
+NFS low-latency tuning on IPv4 starts with `rsize=1048576,wsize=1048576` in mount options - this single change often doubles throughput. Add `nconnect=4` on Linux 5.3+ to parallelize TCP connections. Use `async` exports only for non-critical data where durability can be traded for speed. Increase TCP buffer sizes via sysctl and bump RPC slot table entries for high-concurrency workloads. Measure with `dd` and `nfsstat -c` before and after changes to confirm improvements.

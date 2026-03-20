@@ -19,6 +19,7 @@ The fundamental workflow for updating a Docker container is straightforward: pul
 ```bash
 #!/bin/bash
 # update-container.sh
+
 # Updates a single Docker container to the latest version of its image
 
 CONTAINER_NAME="$1"

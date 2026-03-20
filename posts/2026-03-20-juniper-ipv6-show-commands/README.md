@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Juniper, IPv6, show Commands, Verification, Junos
+Tags: Juniper, IPv6, Show Commands, Verification, Junos
 
 Description: Use Juniper Junos show commands to verify IPv6 addresses, routing, NDP neighbors, and connectivity.
 
@@ -26,8 +26,9 @@ Junos uses a hierarchical configuration syntax. IPv6 configuration lives primari
 
 ### Interface IPv6 Configuration
 
-```
+```text
 # Junos configuration hierarchy
+
 set interfaces ge-0/0/0 unit 0 family inet6 address 2001:db8::1/64
 
 # Or in curly-brace syntax:
@@ -44,7 +45,7 @@ interfaces {
 
 ### IPv6 Static Route
 
-```
+```text
 set routing-options rib inet6.0 static route 2001:db8:remote::/48 next-hop 2001:db8:wan::254
 
 # Discard route (black hole)
@@ -53,7 +54,7 @@ set routing-options rib inet6.0 static route ::/0 reject
 
 ### IPv6 Firewall Filter
 
-```
+```text
 firewall {
     family inet6 {
         filter IPV6-INGRESS {
@@ -97,7 +98,7 @@ interfaces {
 
 ### DHCPv6 Server
 
-```
+```nginx
 system {
     services {
         dhcp-local-server {
@@ -133,7 +134,7 @@ access {
 
 ## Verification Commands
 
-```
+```text
 # Show IPv6 addresses
 show interfaces ge-0/0/0 detail | match "IPv6|inet6"
 
@@ -152,7 +153,7 @@ ping inet6 2001:db8::1 routing-instance default count 5
 
 ## Traceoptions Debugging
 
-```
+```text
 # Enable IPv6 routing debug
 set protocols router-advertisement traceoptions file ra-debug.log
 set protocols router-advertisement traceoptions flag all

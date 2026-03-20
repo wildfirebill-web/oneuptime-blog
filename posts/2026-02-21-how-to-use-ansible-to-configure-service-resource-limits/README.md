@@ -42,6 +42,7 @@ Ansible template with comprehensive ulimit settings:
 
 ```jinja2
 # roles/service_limits/templates/service.j2
+
 [Unit]
 Description={{ svc_description }}
 After=network.target

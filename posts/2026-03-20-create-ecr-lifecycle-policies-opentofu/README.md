@@ -107,6 +107,7 @@ resource "aws_ecr_lifecycle_policy" "services" {
 
 ```hcl
 # Reusable lifecycle policy as a local
+
 locals {
   standard_lifecycle_policy = jsonencode({
     rules = [

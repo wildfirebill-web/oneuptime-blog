@@ -22,6 +22,7 @@ Here's the basic structure:
 
 ```graphql
 # Define a fragment on a specific type
+
 fragment UserBasicInfo on User {
   id
   email

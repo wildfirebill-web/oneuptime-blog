@@ -31,6 +31,7 @@ Traefik is a modern cloud-native edge router and reverse proxy. It automatically
 
 ```bash
 # Download Traefik
+
 wget https://github.com/traefik/traefik/releases/download/v3.0.0/traefik_v3.0.0_linux_amd64.tar.gz
 
 # Extract

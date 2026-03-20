@@ -71,6 +71,7 @@ Or simply attach the AWS managed policy `AmazonSSMManagedInstanceCore`:
 
 ```bash
 # Create IAM role for EC2 with SSM access
+
 aws iam create-role \
   --role-name EC2-SSM-Role \
   --assume-role-policy-document '{

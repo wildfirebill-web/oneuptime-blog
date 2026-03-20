@@ -18,6 +18,7 @@ Running Podman as a non-root user provides better security but changes how file 
 
 ```bash
 # Check your user namespace mapping
+
 podman unshare cat /proc/self/uid_map
 # Output: 0 1000 1        (container root maps to host UID 1000)
 #         1 100000 65536   (container UIDs 1-65536 map to host 100000+)

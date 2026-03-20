@@ -28,6 +28,7 @@ You can check the size of your state:
 
 ```bash
 # Check state file size
+
 terraform state pull | wc -c
 
 # Count resources in state

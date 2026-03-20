@@ -28,6 +28,7 @@ ML training typically requires GPUs. Set up a compute environment with the right
 
 ```bash
 # Create a GPU compute environment for ML training
+
 aws batch create-compute-environment \
   --compute-environment-name ml-training-env \
   --type MANAGED \

@@ -76,6 +76,7 @@ Override the global setting for a specific pod:
 
 ```yaml
 # Enable probe rewriting (usually the default)
+
 metadata:
   annotations:
     sidecar.istio.io/rewriteAppHTTPProbers: "true"

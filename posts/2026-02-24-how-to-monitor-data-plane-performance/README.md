@@ -66,6 +66,7 @@ Some useful Envoy stats to watch:
 
 ```bash
 # Active connections
+
 kubectl exec deploy/my-app -c istio-proxy -- curl -s localhost:15000/stats | grep "downstream_cx_active"
 
 # Upstream connection pool stats

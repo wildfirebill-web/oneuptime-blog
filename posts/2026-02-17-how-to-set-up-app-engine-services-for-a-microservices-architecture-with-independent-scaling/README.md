@@ -53,6 +53,7 @@ The default service is typically your frontend or main web application. Here is 
 
 ```yaml
 # frontend/app.yaml - Default service configuration
+
 runtime: python312
 service: default  # This is the default service (can omit this line)
 

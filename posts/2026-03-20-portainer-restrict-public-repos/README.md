@@ -31,6 +31,7 @@ TOKEN="your-admin-token"
 PORTAINER_URL="https://portainer.example.com"
 
 # Add your private registry
+
 curl -s -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -84,7 +85,7 @@ When restricting public registries, mirror commonly needed images to your privat
 
 ```bash
 #!/bin/bash
-# mirror-images.sh — Mirror approved public images to private registry
+# mirror-images.sh - Mirror approved public images to private registry
 
 PRIVATE_REGISTRY="registry.company.com"
 APPROVED_IMAGES=(
@@ -127,7 +128,7 @@ For a complete supply chain security solution, scan images before mirroring:
 
 ```bash
 #!/bin/bash
-# scan-and-mirror.sh — Scan public images before adding to private registry
+# scan-and-mirror.sh - Scan public images before adding to private registry
 
 PRIVATE_REGISTRY="registry.company.com"
 IMAGE=$1  # e.g., "nginx:1.25"
@@ -187,7 +188,7 @@ fi
 Document an exception process for approved public images:
 
 ```yaml
-# image-approval-request.yml — Template for requesting public image approval
+# image-approval-request.yml - Template for requesting public image approval
 request:
   requester: "developer@company.com"
   image: "docker.io/library/nginx:1.25"

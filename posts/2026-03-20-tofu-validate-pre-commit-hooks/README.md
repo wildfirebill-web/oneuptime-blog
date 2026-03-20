@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu validate, Pre-Commit, Validation, Syntax Checking
+Tags: OpenTofu, Tofu validate, Pre-Commit, Validation, Syntax Checking
 
 Description: Learn how to run tofu validate in pre-commit hooks to catch syntax errors, undefined references, and type mismatches in OpenTofu configurations before they reach CI/CD.
 
@@ -14,6 +14,7 @@ Description: Learn how to run tofu validate in pre-commit hooks to catch syntax 
 
 ```bash
 # Initialize first (required for validate to work)
+
 tofu init -backend=false  # Skip backend configuration for validation
 
 # Validate the current directory
@@ -186,4 +187,4 @@ tofu validate -var-file=/tmp/test.tfvars
 
 ## Conclusion
 
-`tofu validate` in pre-commit hooks provides a first line of defense against syntax and reference errors before they reach CI/CD. The key challenge is handling `tofu init` — you need it to download provider schemas for proper validation, but the `-backend=false` flag skips the backend configuration that requires credentials. Combine it with `tofu fmt -check` in the same hook set for a complete local validation workflow.
+`tofu validate` in pre-commit hooks provides a first line of defense against syntax and reference errors before they reach CI/CD. The key challenge is handling `tofu init` - you need it to download provider schemas for proper validation, but the `-backend=false` flag skips the backend configuration that requires credentials. Combine it with `tofu fmt -check` in the same hook set for a complete local validation workflow.

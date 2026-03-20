@@ -26,6 +26,7 @@ from fastapi import FastAPI, Depends, Query
 app = FastAPI()
 
 # A simple dependency that extracts and validates pagination params
+
 def get_pagination(
     skip: int = Query(0, ge=0, description="Number of items to skip"),
     limit: int = Query(10, ge=1, le=100, description="Max items to return")

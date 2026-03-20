@@ -30,6 +30,7 @@ CoreDNS metrics are particularly valuable as early warning signals. A spike in N
 
 ```bash
 # Check CoreDNS query metrics
+
 kubectl exec -n kube-system \
   $(kubectl get pods -n kube-system -l k8s-app=kube-dns -o name | head -1) \
   -- wget -qO- http://localhost:9153/metrics | grep "coredns_dns_requests_total"

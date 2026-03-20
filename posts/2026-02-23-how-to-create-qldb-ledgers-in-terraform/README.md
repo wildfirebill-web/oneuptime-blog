@@ -20,6 +20,7 @@ QLDB uses a document-oriented data model and a SQL-compatible query language cal
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

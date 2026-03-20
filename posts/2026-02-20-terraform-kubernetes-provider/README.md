@@ -45,6 +45,7 @@ First, configure the Kubernetes provider in your Terraform configuration.
 
 ```hcl
 # versions.tf
+
 # Pin provider versions for reproducible builds
 terraform {
   required_version = ">= 1.5.0"
@@ -202,7 +203,7 @@ resource "kubernetes_service" "web_app" {
 }
 ```
 
-## Resource Dependency Flow
+Resource Dependency Flow
 
 Terraform automatically determines the order in which resources should be created.
 

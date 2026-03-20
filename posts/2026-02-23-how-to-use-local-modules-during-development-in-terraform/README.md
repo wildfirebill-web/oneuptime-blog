@@ -16,6 +16,7 @@ Local modules use relative file paths as their source. Terraform recognizes a so
 
 ```hcl
 # Reference a module in a subdirectory of your project
+
 module "networking" {
   source = "./modules/networking"
 

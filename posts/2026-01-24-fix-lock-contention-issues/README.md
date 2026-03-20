@@ -164,6 +164,7 @@ flowchart LR
 
 ```python
 # Bad: External API call inside transaction holds locks
+
 def process_order(order_id):
     with database.transaction():
         order = Order.get(order_id)

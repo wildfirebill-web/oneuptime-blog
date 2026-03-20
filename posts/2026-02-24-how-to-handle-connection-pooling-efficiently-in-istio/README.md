@@ -94,6 +94,7 @@ To figure out the right size, look at the current connection usage:
 
 ```bash
 # Check active connections per upstream
+
 kubectl exec deploy/my-app -c istio-proxy -- curl -s localhost:15000/stats | grep "upstream_cx_active"
 
 # Check connection pool overflow (requests rejected due to full pool)

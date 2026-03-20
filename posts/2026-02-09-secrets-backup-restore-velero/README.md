@@ -27,6 +27,7 @@ By default, Velero backs up secrets along with other resources:
 
 ```bash
 # Backup includes secrets by default
+
 velero backup create full-backup \
   --include-namespaces production
 ```

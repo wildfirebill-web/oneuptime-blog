@@ -50,6 +50,7 @@ graph TD
 
 ```bash
 # Enable fleet indexing with thing connectivity and shadow indexing
+
 aws iot update-indexing-configuration \
   --thing-indexing-configuration '{
     "thingIndexingMode": "REGISTRY_AND_SHADOW",

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WebSocket, Timeouts, Reconnection, IPv4, Node.js, Resilience, Error Handling
+Tags: WebSocket, Timeout, Reconnection, IPv4, Node.js, Resilience, Error Handling
 
 Description: Implement robust WebSocket timeout detection, automatic reconnection, and graceful disconnection handling for IPv4 connections in Node.js applications.
 
@@ -72,7 +72,7 @@ const heartbeat = setInterval(() => {
     }
     
     if (!ws.isAlive) {
-      // No pong since last ping — dead connection
+      // No pong since last ping - dead connection
       console.log('Terminating dead connection (no pong)');
       ws.terminate();
       return;
@@ -189,7 +189,7 @@ class ReconnectingWebSocket {
         this.ws.send('__ping__');
         
         this.pongTimer = setTimeout(() => {
-          console.log('Pong timeout — closing for reconnect');
+          console.log('Pong timeout - closing for reconnect');
           this.ws.close(1001, 'Ping timeout');
         }, this.options.pongTimeout);
       }

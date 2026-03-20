@@ -306,6 +306,7 @@ Verify that routing works correctly:
 
 ```bash
 # This request should go to the canary
+
 curl -H "x-canary: insider" http://web.example.com/api/info
 
 # This request should go to the primary

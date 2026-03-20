@@ -25,6 +25,7 @@ Follow Prometheus naming conventions for consistency:
 
 ```text
 # General format
+
 <namespace>_<subsystem>_<name>_<unit>
 
 # Examples

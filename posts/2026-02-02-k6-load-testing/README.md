@@ -26,6 +26,7 @@ k6 runs as a single binary. Install it based on your platform.
 
 ```bash
 # macOS
+
 brew install k6
 
 # Linux (Debian/Ubuntu)

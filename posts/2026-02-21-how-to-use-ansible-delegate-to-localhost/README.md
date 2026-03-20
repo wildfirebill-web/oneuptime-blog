@@ -16,6 +16,7 @@ Consider a deployment scenario. You are deploying to 50 web servers. For each se
 
 ```yaml
 # why-delegate-localhost.yml - API calls from the controller
+
 ---
 - name: Deploy with service discovery management
   hosts: webservers

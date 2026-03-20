@@ -89,6 +89,7 @@ from prometheus_client import Gauge, start_http_server
 import time
 
 # Define version information
+
 VERSION = "1.0.0"
 COMMIT = "abc123def"
 BUILD_DATE = "2026-01-30"

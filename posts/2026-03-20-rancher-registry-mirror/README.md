@@ -28,6 +28,7 @@ Registry mirroring works as a pull-through cache. When a node requests an image:
 
 ```bash
 # Deploy a pull-through cache for Docker Hub using Docker Registry
+
 docker run -d \
   --restart=always \
   --name registry-mirror \

@@ -12,7 +12,7 @@ Palo Alto Networks Prisma SD-WAN uses ION (Intelligent Orchestrated Network) dev
 
 ## Prisma SD-WAN ION Device IPv6
 
-```
+```text
 Prisma SD-WAN Portal Configuration:
 Navigate to: Manage > Configuration > Elements > [ION Device]
 
@@ -132,6 +132,7 @@ if __name__ == '__main__':
 
 ```bash
 # SSH into ION device (if local access enabled)
+
 ssh admin@ion-device-ip
 
 # Show IPv6 interfaces
@@ -153,7 +154,7 @@ show dhcpv6 bindings
 
 ## Prisma Access with IPv6 SASE
 
-```
+```text
 Prisma SASE (SD-WAN + ZTNA + SWG):
 
 IPv6 client → Prisma Access Tunnel → Security Inspection → Internet

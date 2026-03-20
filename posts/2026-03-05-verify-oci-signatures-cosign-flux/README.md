@@ -28,6 +28,7 @@ Generate a key pair that will be used to sign and verify OCI artifacts.
 
 ```bash
 # Generate a Cosign key pair (you will be prompted for a password)
+
 cosign generate-key-pair
 ```
 

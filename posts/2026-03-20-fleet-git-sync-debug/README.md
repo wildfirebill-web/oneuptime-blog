@@ -1,4 +1,4 @@
-# How to Debug Fleet Git Repository Sync Issues
+# How to Debug Fleet Git Repository Sync Issues - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,15 +16,16 @@ Fleet GitRepo sync failures prevent your desired state from being applied to clu
 
 ```bash
 # Check the GitRepo sync status
+
 kubectl get gitrepo -n fleet-default
 
 # Get detailed status
 kubectl describe gitrepo my-app -n fleet-default
 
 # Common status fields to look for:
-# - .status.commit — last synced commit
-# - .status.readyClusters — number of ready clusters
-# - .status.conditions — detailed condition messages
+# - .status.commit - last synced commit
+# - .status.readyClusters - number of ready clusters
+# - .status.conditions - detailed condition messages
 ```
 
 ---
@@ -101,7 +102,7 @@ kubectl get bundledeployment -n fleet-default | grep my-app
 
 ## Issue 4: Bundle Stuck in Modified State
 
-**Symptom**: Bundle shows `Modified` — cluster state differs from Git
+**Symptom**: Bundle shows `Modified` - cluster state differs from Git
 
 ```bash
 # Check what is different (drift detection)
@@ -155,5 +156,5 @@ kubectl logs -n cattle-fleet-system \
 ## Best Practices
 
 - Use PATs (Personal Access Tokens) with minimum required permissions for Fleet credentials.
-- Set `clientSecretName` in the GitRepo spec to a proper credential secret — do not rely on public repos in production.
+- Set `clientSecretName` in the GitRepo spec to a proper credential secret - do not rely on public repos in production.
 - Test your Helm chart or Kustomize overlay locally before pushing to the Fleet-watched branch.

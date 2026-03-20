@@ -82,6 +82,7 @@ The `retryOn` field determines which failures trigger a retry. Using `5xx` is al
 
 ```yaml
 # BAD: Retries all 5xx errors
+
 retries:
   attempts: 3
   retryOn: 5xx

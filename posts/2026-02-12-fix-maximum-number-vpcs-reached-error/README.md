@@ -24,6 +24,7 @@ First, let's see how many VPCs you actually have:
 
 ```bash
 # Count VPCs in the current region
+
 aws ec2 describe-vpcs \
   --query 'length(Vpcs)' \
   --output text

@@ -24,6 +24,7 @@ First, ensure you have Prometheus running in your cluster and collecting metrics
 
 ```bash
 # Add the Prometheus community Helm repository
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

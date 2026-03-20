@@ -59,6 +59,7 @@ First, create a YAML file describing the trust config:
 
 ```bash
 # Create the trust config YAML file
+
 cat > trust-config.yaml << 'EOF'
 name: my-trust-config
 trustStores:

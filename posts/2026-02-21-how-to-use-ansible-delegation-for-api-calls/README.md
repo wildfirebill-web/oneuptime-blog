@@ -16,6 +16,7 @@ The standard pattern delegates API calls to localhost while iterating over remot
 
 ```yaml
 # basic-api-delegation.yml - API calls from the controller
+
 ---
 - name: Deploy and register with external services
   hosts: appservers

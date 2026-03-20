@@ -111,6 +111,7 @@ A trust anchor is a DNSKEY that a resolver trusts implicitly. The root zone's DN
 
 ```bash
 # View the root trust anchor
+
 dig . DNSKEY +dnssec
 
 # Example root DNSKEY (KSK)

@@ -1435,6 +1435,7 @@ Use curl to test your rate limits:
 
 ```bash
 # Test rate limit by sending multiple requests
+
 for i in {1..10}; do
   curl -i http://localhost:3000/api/data
   echo ""

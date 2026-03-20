@@ -1163,6 +1163,7 @@ Configure Cypress for continuous integration. Example GitHub Actions workflow:
 
 ```yaml
 # .github/workflows/e2e.yml
+
 name: E2E Tests
 
 on:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Licensing, Open Source, BSL, MPL
+Tags: OpenTofu, Terraform, Licensing, Open Source, BSL, MPLS
 
 Description: Learn the key differences between OpenTofu's Mozilla Public License and HashiCorp Terraform's Business Source License, and what each means for your organization.
 
@@ -14,10 +14,10 @@ In August 2023, HashiCorp changed Terraform's license from the Mozilla Public Li
 
 OpenTofu uses the Mozilla Public License 2.0, a weak copyleft license that is:
 
-- **Open source** — OSI-approved and recognized by the Free Software Foundation
-- **File-level copyleft** — MPL-licensed files must remain MPL-licensed if redistributed
-- **Compatible with proprietary software** — MPL code can be combined with proprietary code
-- **Patent grant included** — Contributors grant patent rights to users
+- **Open source** - OSI-approved and recognized by the Free Software Foundation
+- **File-level copyleft** - MPL-licensed files must remain MPL-licensed if redistributed
+- **Compatible with proprietary software** - MPL code can be combined with proprietary code
+- **Patent grant included** - Contributors grant patent rights to users
 
 ### What You Can Do Under MPL 2.0
 
@@ -37,10 +37,10 @@ OpenTofu uses the Mozilla Public License 2.0, a weak copyleft license that is:
 
 HashiCorp relicensed Terraform under BSL 1.1. BSL is:
 
-- **Source-available, not open source** — Not OSI-approved
-- **Time-limited restriction** — After a conversion period (typically 4 years), code converts to a more permissive license (Apache 2.0 for HashiCorp)
+- **Source-available, not open source** - Not OSI-approved
+- **Time-limited restriction** - After a conversion period (typically 4 years), code converts to a more permissive license (Apache 2.0 for HashiCorp)
 - **Production use allowed** with restrictions
-- **Competitive use restricted** — The key restriction
+- **Competitive use restricted** - The key restriction
 
 ### The BSL 1.1 Additional Use Grant
 
@@ -111,7 +111,7 @@ Most providers published on `registry.terraform.io` are also available on `regis
 
 - Consult your legal team before making a final decision on Terraform vs. OpenTofu for commercial use cases.
 - Review the BSL Additional Use Grant at `hashicorp.com/license-faq` for specific use case guidance.
-- If migrating from Terraform to OpenTofu, the technical migration is minimal — the syntax is identical.
+- If migrating from Terraform to OpenTofu, the technical migration is minimal - the syntax is identical.
 - Document your license rationale for compliance records.
 
 ## Conclusion

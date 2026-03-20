@@ -361,6 +361,7 @@ Since Istio's status reporting is not always comprehensive, supplement health ch
 
 ```bash
 # Analyze Istio configuration for problems
+
 istioctl analyze -n production
 
 # Common issues detected:

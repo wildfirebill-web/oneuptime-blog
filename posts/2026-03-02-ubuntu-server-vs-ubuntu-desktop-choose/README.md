@@ -33,7 +33,7 @@ The fundamental difference between Ubuntu Server and Desktop is what gets instal
 
 Both editions use the same Ubuntu repositories, so you can install anything from either starting point. The difference is purely what ships by default.
 
-## Resource Usage Comparison
+Resource Usage Comparison
 
 This matters if you are constrained on RAM or disk, or if you want to minimize attack surface.
 
@@ -102,6 +102,7 @@ You can install a desktop environment on Ubuntu Server at any time:
 
 ```bash
 # Install minimal GNOME (no extra apps)
+
 sudo apt install ubuntu-gnome-desktop --no-install-recommends
 
 # Install full GNOME desktop

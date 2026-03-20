@@ -37,6 +37,7 @@ See how the current range is being used:
 
 ```bash
 # Describe the subnet to see its current range
+
 gcloud compute networks subnets describe my-subnet \
   --region=us-central1 \
   --format="yaml(ipCidrRange, secondaryIpRanges, gatewayAddress)"

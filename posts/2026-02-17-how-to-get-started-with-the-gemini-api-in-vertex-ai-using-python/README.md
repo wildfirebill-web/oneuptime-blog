@@ -18,6 +18,7 @@ Install the required packages:
 
 ```bash
 # Install the Vertex AI SDK with Generative AI support
+
 pip install google-cloud-aiplatform
 ```
 

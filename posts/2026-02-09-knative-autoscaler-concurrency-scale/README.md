@@ -22,6 +22,7 @@ Start with a simple service and add autoscaling configuration:
 
 ```yaml
 # basic-autoscaling.yaml
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

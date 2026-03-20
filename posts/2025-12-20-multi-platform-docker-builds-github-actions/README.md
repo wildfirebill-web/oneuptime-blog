@@ -211,6 +211,7 @@ Optimize for multi-platform:
 
 ```dockerfile
 # Build stage
+
 FROM --platform=$BUILDPLATFORM golang:1.22 AS builder
 
 ARG TARGETOS

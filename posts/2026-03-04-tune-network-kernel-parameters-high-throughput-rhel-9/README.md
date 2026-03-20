@@ -20,6 +20,7 @@ Before changing anything, measure your current performance so you have a baselin
 
 ```bash
 # Install iperf3 for throughput testing
+
 sudo dnf install iperf3 -y
 
 # Run a quick throughput test (on the server side)

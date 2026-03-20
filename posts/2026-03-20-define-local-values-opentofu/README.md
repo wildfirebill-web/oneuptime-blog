@@ -8,7 +8,7 @@ Description: A guide to defining and using local values in OpenTofu to reduce re
 
 ## Introduction
 
-Local values in OpenTofu are named expressions that can be referenced multiple times within a module. They are similar to local variables in programming languages — they compute a value once and allow you to reference it by name throughout the configuration.
+Local values in OpenTofu are named expressions that can be referenced multiple times within a module. They are similar to local variables in programming languages - they compute a value once and allow you to reference it by name throughout the configuration.
 
 ## Basic Local Definition
 
@@ -72,7 +72,7 @@ locals {
 
 ## Common Patterns
 
-### Resource Naming
+Resource Naming
 
 ```hcl
 locals {
@@ -146,6 +146,7 @@ locals {
 }
 
 # Reference with local.<name>
+
 resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
 
@@ -172,4 +173,4 @@ resource "aws_subnet" "public" {
 
 ## Conclusion
 
-Local values are one of the most useful tools in OpenTofu for eliminating repetition and making configurations more readable. By computing values once in a `locals` block — like tag maps, naming prefixes, and environment-based selections — you ensure consistency across all resources that use those values. Any change in a local value automatically propagates to all resources that reference it.
+Local values are one of the most useful tools in OpenTofu for eliminating repetition and making configurations more readable. By computing values once in a `locals` block - like tag maps, naming prefixes, and environment-based selections - you ensure consistency across all resources that use those values. Any change in a local value automatically propagates to all resources that reference it.

@@ -18,6 +18,7 @@ Pods in Podman are not static. You can add containers to a running pod to introd
 
 ```bash
 # Create a pod
+
 podman pod create --name app-pod -p 8080:80
 
 # Add the first container

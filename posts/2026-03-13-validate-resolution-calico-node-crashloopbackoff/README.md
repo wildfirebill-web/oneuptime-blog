@@ -32,6 +32,7 @@ This guide provides a verification checklist that should be completed in order b
 
 ```bash
 # Baseline: check all calico-node pods
+
 kubectl get pods -n kube-system -l k8s-app=calico-node -o wide
 ```
 

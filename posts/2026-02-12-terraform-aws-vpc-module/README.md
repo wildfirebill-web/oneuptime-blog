@@ -245,6 +245,7 @@ The VPC module exposes everything you need to connect other resources.
 
 ```hcl
 # Reference VPC outputs in other resources
+
 resource "aws_security_group" "app" {
   vpc_id = module.vpc.vpc_id
   name   = "app-sg"

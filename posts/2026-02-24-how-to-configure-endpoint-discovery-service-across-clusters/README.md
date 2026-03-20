@@ -41,6 +41,7 @@ Check what endpoints Istiod knows about:
 
 ```bash
 # See all endpoints for a specific service
+
 istioctl proxy-config endpoints deployment/sleep -n sample --context="${CTX_CLUSTER1}" | grep helloworld
 ```
 

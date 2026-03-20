@@ -50,6 +50,7 @@ def say_hello(name):
     return f"Hello, {name}!"
 
 # Equivalent to: say_hello = repeat(times=3)(say_hello)
+
 print(say_hello("World"))
 # Output: ['Hello, World!', 'Hello, World!', 'Hello, World!']
 ```

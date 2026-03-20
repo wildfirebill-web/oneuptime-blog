@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, sysctl, Network Configuration, Security
+Tags: IPv6, Linux, Sysctl, Network Configuration, Security
 
 Description: A step-by-step guide to disabling IPv6 on Linux systems using sysctl parameters, both temporarily at runtime and permanently across reboots.
 
@@ -20,6 +20,7 @@ Disabling IPv6 is sometimes necessary for:
 
 ```bash
 # Disable IPv6 on all interfaces immediately
+
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
 
 # Disable on the default profile for new interfaces

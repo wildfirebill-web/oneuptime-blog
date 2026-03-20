@@ -18,6 +18,7 @@ tmpfs mounts create a temporary filesystem in RAM. Data stored in tmpfs is fast 
 
 ```bash
 # Simple tmpfs mount
+
 podman run -d --name app \
   --tmpfs /tmp \
   docker.io/library/nginx:latest

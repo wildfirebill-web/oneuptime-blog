@@ -29,6 +29,7 @@ Create the service through the Azure CLI:
 
 ```bash
 # Create a resource group
+
 az group create --name pubsub-demo-rg --location eastus
 
 # Create a Web PubSub service instance

@@ -16,6 +16,7 @@ The Calico Flow Logs API enables programmatic queries against historical flow da
 
 ```bash
 # Enable Felix metrics (if not already enabled)
+
 kubectl patch felixconfiguration default   --type=merge   -p '{"spec":{"prometheusMetricsEnabled":true,"prometheusMetricsPort":9091}}'
 
 # Test Felix metrics endpoint

@@ -217,6 +217,7 @@ Azure Application Gateway and Load Balancer use health probes to determine which
 
 ```bash
 # Configure Application Gateway health probe
+
 az network application-gateway probe create \
   --resource-group myResourceGroup \
   --gateway-name myAppGateway \

@@ -25,6 +25,7 @@ Rancher Turtles integrates Cluster API (CAPI) with Rancher to provide a unified,
 
 ```bash
 # Verify Rancher Turtles is running
+
 kubectl get pods -n rancher-turtles-system
 
 # Check installed CAPI providers

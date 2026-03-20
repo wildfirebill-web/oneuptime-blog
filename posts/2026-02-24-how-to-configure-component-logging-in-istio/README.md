@@ -262,6 +262,7 @@ Istio ingress and egress gateways use the same Envoy proxy, so logging works the
 
 ```bash
 # Set gateway log level
+
 istioctl proxy-config log istio-ingressgateway-abc123.istio-system --level debug
 
 # View gateway logs

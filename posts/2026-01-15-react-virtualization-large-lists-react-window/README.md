@@ -77,6 +77,7 @@ First, install `react-window` using npm or yarn:
 
 ```bash
 # Using npm
+
 npm install react-window
 
 # Using yarn

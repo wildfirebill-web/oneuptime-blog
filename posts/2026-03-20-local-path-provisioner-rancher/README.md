@@ -8,7 +8,7 @@ Description: Configure the Local Path Provisioner in Rancher for development clu
 
 ## Introduction
 
-The Local Path Provisioner provides a lightweight dynamic provisioner for development and test environments where cloud storage is unavailable or overkill. It automatically creates hostPath PersistentVolumes on the node where the pod is scheduled—ideal for K3s-based development clusters.
+The Local Path Provisioner provides a lightweight dynamic provisioner for development and test environments where cloud storage is unavailable or overkill. It automatically creates hostPath PersistentVolumes on the node where the pod is scheduled-ideal for K3s-based development clusters.
 
 ## When to Use Local Path Provisioner
 
@@ -30,6 +30,7 @@ kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisione
 
 ```bash
 # Check the provisioner pod is running
+
 kubectl get pods -n local-path-storage
 
 # Verify the StorageClass was created

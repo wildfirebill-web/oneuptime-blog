@@ -34,6 +34,7 @@ sudo apt update
 sudo apt install -y docker.io docker-compose-v2 git curl
 
 # Add your user to the docker group
+
 sudo usermod -aG docker $USER
 newgrp docker
 

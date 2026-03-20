@@ -42,6 +42,7 @@ flowchart TB
 
 ```yaml
 # values.yaml
+
 database:
   host: localhost
   port: 5432

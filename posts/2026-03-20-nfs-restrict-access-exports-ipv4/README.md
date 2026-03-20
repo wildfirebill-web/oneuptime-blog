@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, Security, Exports, Access Control, Firewall
+Tags: NFS, IPv4, Security, Export, Access Control, Firewall
 
 Description: Restrict NFS share access to specific IPv4 clients using /etc/exports rules, iptables firewall policies, and TCP wrappers for defense-in-depth security.
 
 ## Introduction
 
-NFS has limited built-in authentication—it trusts IP addresses. Securing NFS requires multiple layers: `/etc/exports` defines which IPs can mount, iptables restricts which IPs can even reach NFS ports, and optional TCP wrappers add another filter. All three layers together provide meaningful access control.
+NFS has limited built-in authentication-it trusts IP addresses. Securing NFS requires multiple layers: `/etc/exports` defines which IPs can mount, iptables restricts which IPs can even reach NFS ports, and optional TCP wrappers add another filter. All three layers together provide meaningful access control.
 
 ## Layer 1: /etc/exports (Primary Access Control)
 
@@ -16,6 +16,7 @@ NFS has limited built-in authentication—it trusts IP addresses. Securing NFS r
 # /etc/exports
 
 # Grant specific IPs read-write
+
 /srv/data  10.0.0.5(rw,sync,no_subtree_check) \
            10.0.0.6(rw,sync,no_subtree_check)
 
@@ -23,7 +24,7 @@ NFS has limited built-in authentication—it trusts IP addresses. Securing NFS r
 /srv/data  192.168.1.0/24(ro,sync,no_subtree_check)
 
 # Deny everyone else (NFS denies by default if not listed)
-# No entry needed — unlisted IPs cannot mount
+# No entry needed - unlisted IPs cannot mount
 
 # Verify no wildcard exports exist:
 grep "\*" /etc/exports  # Should return nothing for production
@@ -33,9 +34,9 @@ grep "\*" /etc/exports  # Should return nothing for production
 
 ```bash
 # NFS ports to restrict:
-# 111  — portmapper/rpcbind
-# 2049 — NFS service
-# (Additional ports for NFS v3: mountd, statd, lockd — use static ports)
+# 111  - portmapper/rpcbind
+# 2049 - NFS service
+# (Additional ports for NFS v3: mountd, statd, lockd - use static ports)
 
 # Allow NFS only from trusted subnets
 sudo iptables -A INPUT -p tcp --dport 2049 -s 10.0.0.0/24 -j ACCEPT

@@ -21,6 +21,7 @@ PostgreSQL has hundreds of configuration parameters. In Flexible Server, you can
 
 ```bash
 # View a parameter's current value
+
 az postgres flexible-server parameter show \
   --resource-group myResourceGroup \
   --server-name my-pg-server \

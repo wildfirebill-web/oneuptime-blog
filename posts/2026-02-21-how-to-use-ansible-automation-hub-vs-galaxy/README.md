@@ -77,6 +77,7 @@ Most organizations use both. Configure `ansible.cfg` to check Automation Hub fir
 
 ```ini
 # ansible.cfg - use both Automation Hub and Galaxy
+
 [galaxy]
 server_list = automation_hub, galaxy
 

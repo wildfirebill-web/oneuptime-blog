@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Reverse Proxy, Configuration, Subpath
+Tags: Portainer, Docker, Reverse Proxy, Configuration, Subpaths
 
 Description: Configure Portainer to run on a URL subpath (e.g., /portainer/) using the --base-url flag along with reverse proxy path stripping.
 
@@ -20,6 +20,7 @@ By default, Portainer expects to be served at the root (`/`) of a domain. In env
 
 ```bash
 # Run Portainer with a base URL of /portainer
+
 docker run -d \
   --name portainer \
   --restart always \

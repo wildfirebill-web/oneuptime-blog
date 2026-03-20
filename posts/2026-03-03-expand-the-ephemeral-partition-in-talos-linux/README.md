@@ -45,6 +45,7 @@ Check current usage before deciding:
 
 ```bash
 # Check EPHEMERAL partition usage
+
 talosctl get mounts --nodes 192.168.1.10
 
 # Look for the EPHEMERAL mount point

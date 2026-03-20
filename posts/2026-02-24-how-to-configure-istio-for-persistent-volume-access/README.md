@@ -95,6 +95,7 @@ If your application accesses storage through a network API (like S3, GCS, or a c
 
 ```yaml
 # This traffic flows through Envoy
+
 # App -> Envoy sidecar -> Storage Service
 ```
 

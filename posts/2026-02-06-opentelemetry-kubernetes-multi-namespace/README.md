@@ -55,6 +55,7 @@ Start by creating a dedicated namespace for your observability stack. This keeps
 
 ```yaml
 # Create a dedicated namespace for observability components
+
 apiVersion: v1
 kind: Namespace
 metadata:

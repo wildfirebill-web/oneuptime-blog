@@ -36,6 +36,7 @@ Clone the repository and start the demo with Docker Compose:
 
 ```bash
 # Clone the OpenTelemetry Demo repository
+
 git clone https://github.com/open-telemetry/opentelemetry-demo.git
 cd opentelemetry-demo
 

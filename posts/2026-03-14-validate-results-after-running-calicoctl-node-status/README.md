@@ -61,6 +61,7 @@ fi
 ```bash
 #!/bin/bash
 # validate-session-stability.sh
+
 # Checks that BGP sessions have been stable (not recently reset)
 
 MIN_UPTIME_MINUTES=10

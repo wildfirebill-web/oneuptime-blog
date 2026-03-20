@@ -31,6 +31,7 @@ Velero is the standard backup tool for Kubernetes. It backs up cluster resources
 
 ```bash
 # macOS
+
 brew install velero
 
 # Linux

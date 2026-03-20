@@ -55,6 +55,7 @@ A cost-effective OpenTelemetry architecture separates concerns and optimizes eac
 
 ```yaml
 # Architecture overview configuration
+
 # This represents the complete pipeline from SDK to storage
 
 # Layer 1: SDK Configuration

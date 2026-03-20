@@ -36,6 +36,7 @@ All of these are labeled with `destination_version`, which is how you split metr
 
 ```promql
 # Success rate for each version
+
 sum(rate(istio_requests_total{
   destination_service="my-app.production.svc.cluster.local",
   response_code!~"5.*",

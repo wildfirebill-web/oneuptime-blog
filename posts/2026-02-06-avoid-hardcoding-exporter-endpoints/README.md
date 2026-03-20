@@ -38,6 +38,7 @@ The most important ones:
 
 ```bash
 # General endpoint for all signals (traces, metrics, logs)
+
 OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4318
 
 # Signal-specific endpoints (override the general one)

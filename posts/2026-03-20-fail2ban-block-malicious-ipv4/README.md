@@ -12,6 +12,7 @@ Fail2Ban monitors log files for failed authentication attempts and automatically
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install fail2ban -y
 
 # RHEL/CentOS
@@ -24,7 +25,7 @@ sudo systemctl start fail2ban
 
 ## Basic Configuration
 
-Fail2Ban's main config is `/etc/fail2ban/jail.conf`. Never edit it directly — create a local override:
+Fail2Ban's main config is `/etc/fail2ban/jail.conf`. Never edit it directly - create a local override:
 
 ```bash
 # Create local jail config (overrides jail.conf)
@@ -32,7 +33,7 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 ```
 
 ```ini
-# /etc/fail2ban/jail.local — key defaults
+# /etc/fail2ban/jail.local - key defaults
 
 [DEFAULT]
 # Ban IPs for 1 hour
@@ -158,4 +159,4 @@ findtime  = 86400
 maxretry  = 3
 ```
 
-Fail2Ban is the most practical tool for automated IP blocking — it converts log noise into actionable firewall rules with minimal configuration.
+Fail2Ban is the most practical tool for automated IP blocking - it converts log noise into actionable firewall rules with minimal configuration.

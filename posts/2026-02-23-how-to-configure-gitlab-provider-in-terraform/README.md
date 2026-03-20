@@ -25,6 +25,7 @@ The GitLab provider supports personal access tokens, group tokens, and project t
 
 ```bash
 # Set the token as an environment variable
+
 export GITLAB_TOKEN="glpat-your-token-here"
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, Sockets, IPv4, TCP, Chat, POSIX, select(), Networking
+Tags: C, Sockets, IPv4, TCP, Chat, POSIX, Select(), Networking
 
 Description: Build a multi-client chat server and terminal client in C using POSIX TCP sockets and select() for multiplexing multiple IPv4 connections.
 
@@ -211,6 +211,7 @@ int main(int argc, char *argv[]) {
 
 ```bash
 # Compile server and client
+
 gcc -o chat_server chat_server.c
 gcc -o chat_client chat_client.c
 

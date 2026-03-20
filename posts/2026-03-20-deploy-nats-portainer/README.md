@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
 # docker-compose.yml - NATS with JetStream
+
 version: "3.8"
 
 services:

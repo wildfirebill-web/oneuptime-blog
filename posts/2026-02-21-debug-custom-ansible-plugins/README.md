@@ -39,6 +39,7 @@ Then run with increasing verbosity:
 
 ```bash
 # Normal output
+
 ansible-playbook test.yml
 
 # Show -v messages

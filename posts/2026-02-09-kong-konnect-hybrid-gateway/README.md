@@ -24,6 +24,7 @@ Runtime groups organize data planes by environment (development, staging, produc
 
 ```bash
 # Download the runtime group certificates from Konnect UI
+
 # You'll receive three files:
 # - tls.crt (certificate)
 # - tls.key (private key)

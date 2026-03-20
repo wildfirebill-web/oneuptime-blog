@@ -64,6 +64,7 @@ Alternatively, add to `postgresql.conf` on the standby:
 
 ```ini
 # postgresql.conf on standby
+
 hot_standby_feedback = on
 ```
 

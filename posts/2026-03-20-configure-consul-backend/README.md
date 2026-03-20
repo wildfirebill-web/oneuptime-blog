@@ -20,6 +20,7 @@ The Consul backend stores OpenTofu state in HashiCorp Consul's key-value (KV) st
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "consul" {
     address = "consul.example.com:8500"  # Consul HTTP API address

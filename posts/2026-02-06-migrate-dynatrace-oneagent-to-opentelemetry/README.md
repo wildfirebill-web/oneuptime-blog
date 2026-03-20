@@ -48,6 +48,7 @@ This script queries the Dynatrace API to list all process groups and their techn
 
 ```bash
 # Query Dynatrace API for all monitored process groups
+
 # This returns the technology type (Java, Node.js, .NET, etc.) for each process
 # You need this list to know which OpenTelemetry SDKs to deploy
 curl -s -X GET \

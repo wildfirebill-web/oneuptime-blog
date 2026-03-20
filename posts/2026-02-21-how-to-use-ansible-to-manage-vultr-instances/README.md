@@ -22,6 +22,7 @@ You need:
 
 ```bash
 # Install the Vultr Ansible collection
+
 ansible-galaxy collection install vultr.cloud
 
 # Install Python dependencies

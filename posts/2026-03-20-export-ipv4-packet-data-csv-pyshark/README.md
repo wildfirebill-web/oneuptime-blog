@@ -14,6 +14,7 @@ PyShark is a Python wrapper for the Wireshark command-line tool `tshark`. It pro
 
 ```bash
 # Install tshark (required by PyShark)
+
 sudo apt-get install tshark   # Ubuntu/Debian
 # brew install wireshark      # macOS
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, ipaddr, Jinja2, Filters, Network Automation
+Tags: Ansible, IPv6, IPAddr, Jinja2, Filter, Network Automation
 
 Description: A practical guide to using Ansible's ipaddr() Jinja2 filter to validate, parse, and manipulate IPv6 addresses and subnets in playbooks.
 
@@ -18,6 +18,7 @@ ansible-galaxy collection install ansible.netcommon
 
 ```yaml
 # ipaddr-basics.yml
+
 ---
 - name: Demonstrate ipaddr() filter basics for IPv6
   hosts: localhost

@@ -1,4 +1,4 @@
-# How to Create an Elasticsearch/OpenSearch Domain with OpenTofu on AWS
+# How to Create an Elasticsearch/OpenSearch Domain with OpenTofu on AWS (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

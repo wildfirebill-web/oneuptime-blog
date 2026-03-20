@@ -20,6 +20,7 @@ Here is the basic syntax:
 
 ```bash
 # Show the current state
+
 terraform show
 
 # Show a saved plan file

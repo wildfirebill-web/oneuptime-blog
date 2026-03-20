@@ -54,6 +54,7 @@ OpenTelemetry SDKs support temporality configuration through metric readers. Her
 
 ```python
 # Configure delta temporality for all instruments
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import (

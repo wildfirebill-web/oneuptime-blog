@@ -31,6 +31,7 @@ Create a directory for global packages in your home folder:
 
 ```bash
 # Create directory
+
 mkdir -p ~/.npm-global
 
 # Configure npm to use it

@@ -205,6 +205,7 @@ The managed application package is a ZIP file containing both templates. Package
 
 ```bash
 # Create the application package
+
 cd /path/to/your/templates
 
 # Validate the ARM template first

@@ -34,6 +34,7 @@ Deploy Kubecost itself through ArgoCD for a fully GitOps-managed cost monitoring
 
 ```yaml
 # ArgoCD Application for Kubecost
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -30,6 +30,7 @@ The quickest solution is a Docker registry in proxy mode:
 
 ```bash
 # Run on a dedicated host outside the cluster
+
 docker run -d \
   --name docker-mirror \
   --restart always \

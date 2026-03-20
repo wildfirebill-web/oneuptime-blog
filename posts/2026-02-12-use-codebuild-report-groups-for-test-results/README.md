@@ -40,6 +40,7 @@ For Jest (JavaScript/TypeScript):
 
 ```bash
 # Install the JUnit reporter for Jest
+
 npm install --save-dev jest-junit
 ```
 

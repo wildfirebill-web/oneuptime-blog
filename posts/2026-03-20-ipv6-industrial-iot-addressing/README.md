@@ -26,7 +26,7 @@ flowchart TB
 
 ## IPv6 Addressing Scheme
 
-```
+```text
 Enterprise /32
 └── Industrial Site /40 (2001:db8:industrial::/40)
     ├── Level 4 - Enterprise       /64 (::4:0::/64)
@@ -41,6 +41,7 @@ Enterprise /32
 
 ```text
 # Level 1 addressing plan - PLCs and RTUs
+
 # Base: 2001:db8:industrial:1::/64
 
 # Address structure for PLCs:

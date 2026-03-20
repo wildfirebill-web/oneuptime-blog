@@ -71,6 +71,7 @@ Set up the schedule:
 
 ```bash
 # Create a scheduled query that runs every hour
+
 bq query --use_legacy_sql=false \
   --schedule="every 1 hours" \
   --display_name="Hourly Event Load" \

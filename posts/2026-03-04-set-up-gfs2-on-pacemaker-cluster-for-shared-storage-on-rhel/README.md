@@ -16,6 +16,7 @@ You need a working Pacemaker/Corosync cluster with fencing configured, and a sha
 
 ```bash
 # Install required packages on all nodes
+
 sudo dnf install -y gfs2-utils dlm lvm2-lockd
 
 # Verify the shared block device is visible on all nodes

@@ -14,6 +14,7 @@ AWS Elastic File System (EFS) provides scalable NFS storage that can be shared a
 
 ```bash
 # Create the EFS filesystem
+
 EFS_ID=$(aws efs create-file-system \
   --performance-mode generalPurpose \
   --throughput-mode elastic \

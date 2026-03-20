@@ -41,6 +41,7 @@ Rekognition can detect several categories of unsafe content in images: nudity, v
 
 ```python
 # Lambda to moderate images using Rekognition
+
 import boto3
 import json
 

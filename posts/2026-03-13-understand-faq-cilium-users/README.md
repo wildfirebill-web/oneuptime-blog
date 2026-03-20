@@ -33,6 +33,7 @@ Cilium relies on eBPF, which requires kernel features introduced in Linux 4.9+. 
 
 ```bash
 # Check your kernel version to verify compatibility
+
 uname -r
 
 # Check what Cilium features are available on your kernel

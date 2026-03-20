@@ -90,6 +90,7 @@ You can query these metrics through Prometheus:
 
 ```bash
 # Request rate for a specific service
+
 istio_requests_total{destination_service="my-service.default.svc.cluster.local"}
 
 # P99 latency

@@ -18,6 +18,7 @@ You need the Azure Ansible collection and proper authentication configured.
 
 ```bash
 # Install the Azure Ansible collection
+
 ansible-galaxy collection install azure.azcollection
 
 # Install Python dependencies

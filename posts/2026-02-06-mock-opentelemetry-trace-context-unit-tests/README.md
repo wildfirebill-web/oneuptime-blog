@@ -180,6 +180,7 @@ Python's OpenTelemetry SDK provides a similar in-memory exporter pattern:
 
 ```python
 # test_trace_context.py
+
 import unittest
 from opentelemetry import trace, context
 from opentelemetry.sdk.trace import TracerProvider

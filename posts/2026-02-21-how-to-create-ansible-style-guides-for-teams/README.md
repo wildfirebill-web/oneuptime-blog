@@ -29,6 +29,7 @@ Define consistent YAML formatting:
 
 ```yaml
 # .yamllint.yml
+
 # Enforce consistent YAML formatting
 extends: default
 

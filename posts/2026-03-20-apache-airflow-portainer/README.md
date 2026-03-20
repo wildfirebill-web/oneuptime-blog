@@ -21,6 +21,7 @@ Apache Airflow is the industry-standard platform for authoring, scheduling, and 
 
 ```bash
 # Create directories for Airflow
+
 mkdir -p /opt/airflow/{dags,logs,plugins,config}
 
 # Set AIRFLOW_UID (required by official image)
@@ -65,7 +66,7 @@ x-airflow-common: &airflow-common
     - airflow-net
 
 services:
-  # PostgreSQL — Airflow metadata database
+  # PostgreSQL - Airflow metadata database
   airflow-db:
     image: postgres:16
     container_name: airflow-db
@@ -83,7 +84,7 @@ services:
     networks:
       - airflow-net
 
-  # Redis — Celery message broker
+  # Redis - Celery message broker
   airflow-redis:
     image: redis:7.2-bookworm
     container_name: airflow-redis
@@ -98,7 +99,7 @@ services:
     networks:
       - airflow-net
 
-  # Airflow Webserver — UI
+  # Airflow Webserver - UI
   airflow-webserver:
     <<: *airflow-common
     container_name: airflow-webserver
@@ -112,7 +113,7 @@ services:
       timeout: 10s
       retries: 5
 
-  # Airflow Scheduler — triggers DAG runs
+  # Airflow Scheduler - triggers DAG runs
   airflow-scheduler:
     <<: *airflow-common
     container_name: airflow-scheduler
@@ -124,7 +125,7 @@ services:
       timeout: 10s
       retries: 5
 
-  # Airflow Worker — executes tasks
+  # Airflow Worker - executes tasks
   airflow-worker:
     <<: *airflow-common
     container_name: airflow-worker
@@ -139,7 +140,7 @@ services:
       timeout: 10s
       retries: 5
 
-  # Airflow Init — initializes the database
+  # Airflow Init - initializes the database
   airflow-init:
     <<: *airflow-common
     container_name: airflow-init

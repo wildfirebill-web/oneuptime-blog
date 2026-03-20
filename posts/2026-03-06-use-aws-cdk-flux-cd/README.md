@@ -28,6 +28,7 @@ Initialize a new CDK project.
 
 ```bash
 # Create a new CDK project
+
 mkdir flux-cdk-infra && cd flux-cdk-infra
 npx cdk init app --language typescript
 

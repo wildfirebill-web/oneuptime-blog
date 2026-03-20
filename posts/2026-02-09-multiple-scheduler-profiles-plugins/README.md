@@ -24,6 +24,7 @@ Start by understanding the default profile configuration:
 
 ```yaml
 # scheduler-config.yaml
+
 apiVersion: kubescheduler.config.k8s.io/v1
 kind: KubeSchedulerConfiguration
 profiles:

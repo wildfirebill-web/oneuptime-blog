@@ -51,6 +51,7 @@ For comprehensive file handling, you'll need several libraries:
 
 ```bash
 # Core file system operations
+
 npm install react-native-fs
 
 # File and image picking

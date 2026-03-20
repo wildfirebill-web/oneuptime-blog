@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Add Apache Airflow repository
+
 helm repo add apache-airflow https://airflow.apache.org
 helm repo update
 

@@ -32,6 +32,7 @@ Before creating new routes, see what is already there:
 
 ```bash
 # List all routes in the VPC network
+
 gcloud compute routes list \
   --filter="network=production-vpc" \
   --format="table(name, destRange, nextHopGateway, nextHopInstance, nextHopIp, priority, tags[])"

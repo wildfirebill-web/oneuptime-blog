@@ -36,6 +36,7 @@ resource "aws_api_gateway_method_settings" "throttle" {
 }
 
 # Per-method throttling (more restrictive than stage level)
+
 resource "aws_api_gateway_method_settings" "expensive_endpoint" {
   rest_api_id = var.rest_api_id
   stage_name  = aws_api_gateway_stage.prod.stage_name
@@ -111,4 +112,4 @@ aws apigateway get-usage \
 
 ## Conclusion
 
-Stage-level throttling uses a token bucket algorithm where `rate_limit` is the refill rate and `burst_limit` is the bucket size—clients can burst above the rate limit until tokens are exhausted. Usage Plans require API key authentication (`authorization = "API_KEY"` on methods); any client with a valid key is subject to its plan's limits. Monitor `5XXError` and `ThrottledRequests` CloudWatch metrics to detect when clients are being throttled more than expected and adjust limits accordingly.
+Stage-level throttling uses a token bucket algorithm where `rate_limit` is the refill rate and `burst_limit` is the bucket size-clients can burst above the rate limit until tokens are exhausted. Usage Plans require API key authentication (`authorization = "API_KEY"` on methods); any client with a valid key is subject to its plan's limits. Monitor `5XXError` and `ThrottledRequests` CloudWatch metrics to detect when clients are being throttled more than expected and adjust limits accordingly.

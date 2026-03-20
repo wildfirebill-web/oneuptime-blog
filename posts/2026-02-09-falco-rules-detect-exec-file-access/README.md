@@ -360,6 +360,7 @@ Validate detection capabilities:
 
 ```bash
 # Test shell execution detection
+
 kubectl exec -it nginx-pod -- /bin/bash
 
 # Test file access detection

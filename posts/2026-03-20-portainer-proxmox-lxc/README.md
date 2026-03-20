@@ -1,4 +1,4 @@
-# How to Deploy Portainer in a Proxmox LXC Container
+# How to Deploy Portainer in a Proxmox LXC Container - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Proxmox LXC containers use significantly less RAM than full VMs (typically 50-10
 
 ```bash
 # SSH to Proxmox host
+
 ssh root@<proxmox-ip>
 
 # Download Ubuntu 22.04 LXC template
@@ -167,7 +168,7 @@ vzdump 300 --compress zstd --storage local --mode snapshot
 # Select CT 300, schedule daily
 ```
 
-## Resource Comparison: LXC vs VM
+Resource Comparison: LXC vs VM
 
 | Feature | LXC Container | Full VM |
 |---------|--------------|---------|

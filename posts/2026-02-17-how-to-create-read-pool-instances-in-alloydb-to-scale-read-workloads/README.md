@@ -32,6 +32,7 @@ Creating a read pool instance is straightforward:
 
 ```bash
 # Create a read pool with 2 nodes, each with 4 CPUs
+
 gcloud alloydb instances create my-read-pool \
   --cluster=my-alloydb-cluster \
   --region=us-central1 \

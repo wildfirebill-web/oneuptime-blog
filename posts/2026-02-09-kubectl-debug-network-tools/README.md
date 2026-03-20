@@ -24,6 +24,7 @@ Start with simple connectivity tests using kubectl debug:
 
 ```bash
 # Attach ephemeral container with network tools
+
 kubectl debug -it pod/my-app-pod --image=nicolaka/netshoot
 
 # Inside the debug container, test connectivity

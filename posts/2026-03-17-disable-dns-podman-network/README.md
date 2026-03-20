@@ -18,6 +18,7 @@ By default, custom Podman networks run the aardvark-dns plugin for container nam
 
 ```bash
 # Create a network with DNS disabled
+
 podman network create --disable-dns no-dns-network
 
 # Verify DNS is disabled

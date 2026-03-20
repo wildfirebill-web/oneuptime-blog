@@ -20,6 +20,7 @@ Start by extracting or generating the correlation ID at the API gateway or the f
 
 ```python
 # gateway.py
+
 import uuid
 from opentelemetry import trace, baggage, context
 

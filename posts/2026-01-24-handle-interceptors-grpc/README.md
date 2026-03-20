@@ -996,6 +996,7 @@ Implement interceptors in Python.
 
 ```python
 # interceptors/logging.py
+
 import logging
 import time
 from typing import Any, Callable

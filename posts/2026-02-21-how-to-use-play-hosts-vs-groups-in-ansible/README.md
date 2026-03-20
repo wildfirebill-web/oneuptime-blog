@@ -16,6 +16,7 @@ The `groups` variable is a dictionary that maps group names to lists of hostname
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     webservers:

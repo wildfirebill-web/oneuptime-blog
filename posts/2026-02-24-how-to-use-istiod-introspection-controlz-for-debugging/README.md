@@ -133,6 +133,7 @@ Istiod also exposes debug endpoints on port 15014. These aren't part of ControlZ
 
 ```bash
 # List all debug endpoints
+
 kubectl exec -n istio-system deployment/istiod -- curl -s localhost:15014/debug
 
 # Configuration distribution to proxies

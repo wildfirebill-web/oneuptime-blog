@@ -22,6 +22,7 @@ Before making any changes:
 
 ```bash
 # Check if UFW is installed
+
 which ufw
 
 # Check current status

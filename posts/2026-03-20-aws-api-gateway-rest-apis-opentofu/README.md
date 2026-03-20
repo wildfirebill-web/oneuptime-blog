@@ -12,6 +12,7 @@ AWS API Gateway REST APIs provide a fully managed service for creating, publishi
 
 ```hcl
 # Create the REST API
+
 resource "aws_api_gateway_rest_api" "main" {
   name        = "${var.service_name}-api"
   description = "REST API for ${var.service_name}"

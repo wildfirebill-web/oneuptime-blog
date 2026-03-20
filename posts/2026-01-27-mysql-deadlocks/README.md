@@ -296,6 +296,7 @@ def execute_with_retry(connection, operation, max_retries=3):
 
 
 # Usage example
+
 def transfer_funds(cursor):
     """Transfer funds between accounts."""
     # Always lock accounts in consistent order (by ID)

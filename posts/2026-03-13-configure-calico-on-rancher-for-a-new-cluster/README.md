@@ -70,6 +70,7 @@ After cluster creation, fine-tune Calico settings:
 
 ```bash
 # Install calicoctl
+
 curl -L https://github.com/projectcalico/calico/releases/download/v3.27.0/calicoctl-linux-amd64 \
   -o /usr/local/bin/calicoctl
 chmod +x /usr/local/bin/calicoctl

@@ -24,6 +24,7 @@ You need a Cloud Storage bucket to store both your input documents and the API o
 
 ```bash
 # Enable the Vision API
+
 gcloud services enable vision.googleapis.com
 
 # Create buckets for input and output

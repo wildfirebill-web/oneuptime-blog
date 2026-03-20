@@ -14,6 +14,7 @@ Here is a concrete example. You have three sources of resource attributes:
 
 ```python
 # Source 1: Code defaults
+
 code_resource = Resource.create({
     "service.name": "my-service",
     "host.name": "localhost",

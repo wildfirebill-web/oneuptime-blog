@@ -26,6 +26,7 @@ Start by checking what Azure Spring Apps reports about the failure.
 
 ```bash
 # Check the deployment status
+
 az spring app deployment show \
   --app order-service \
   --service my-spring-service \

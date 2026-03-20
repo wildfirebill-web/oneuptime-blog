@@ -78,6 +78,7 @@ Add access filters to your Explore definition in LookML:
 
 ```lookml
 # models/analytics.model.lkml
+
 explore: orders {
   label: "Order Analysis"
   description: "Explore orders filtered by user's region access"

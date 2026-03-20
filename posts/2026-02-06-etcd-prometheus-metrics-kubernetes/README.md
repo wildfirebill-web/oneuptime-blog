@@ -70,6 +70,7 @@ spec:
 
 ```yaml
 # ConfigMap: otel-collector-etcd-config
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

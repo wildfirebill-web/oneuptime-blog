@@ -46,6 +46,7 @@ from typing import Dict, List, Optional
 from dataclasses import dataclass, asdict
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
 
 # Cart expiration time (7 days in seconds)

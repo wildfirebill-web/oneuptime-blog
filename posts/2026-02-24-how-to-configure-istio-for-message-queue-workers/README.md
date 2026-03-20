@@ -324,6 +324,7 @@ Even though workers do not receive inbound HTTP traffic, Istio tracks their outb
 
 ```bash
 # See which services workers are calling
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'sum(rate(istio_requests_total{source_workload_namespace="workers"}[5m])) by (source_workload, destination_service)'
 

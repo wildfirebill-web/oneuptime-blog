@@ -38,6 +38,7 @@ Create `mm2.properties`:
 
 ```properties
 # Cluster definitions
+
 clusters = source, target
 
 source.bootstrap.servers = source-kafka:9092

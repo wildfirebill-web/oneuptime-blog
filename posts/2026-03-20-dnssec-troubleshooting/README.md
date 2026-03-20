@@ -14,7 +14,7 @@ Description: Diagnose and fix common DNSSEC problems including SERVFAIL response
 | SERVFAIL after zone update | Unsigned zone pushed over signed |
 | SERVFAIL after nameserver change | DS record not updated |
 | SERVFAIL for AAAA only | Missing RRSIG for AAAA records |
-| NXDOMAIN for existing name | Clock skew — future signature not yet valid |
+| NXDOMAIN for existing name | Clock skew - future signature not yet valid |
 | Works without validation (+cd) | Bogus/expired signatures |
 
 ## Diagnostic Flowchart
@@ -38,7 +38,7 @@ flowchart TD
 
 ```bash
 #!/bin/bash
-# diagnose-dnssec.sh — DNSSEC diagnostic
+# diagnose-dnssec.sh - DNSSEC diagnostic
 
 ZONE=${1:-"example.com"}
 RECORD_TYPE=${2:-"AAAA"}
@@ -49,6 +49,7 @@ echo "=== DNSSEC Diagnostic: ${NAME} (${RECORD_TYPE}) ==="
 echo ""
 
 # 1. Check with validation
+
 echo "1. Query WITH validation:"
 RESULT=$(dig +dnssec +short +comments "${RECORD_TYPE}" "${NAME}" @"${RESOLVER}" 2>&1)
 echo "${RESULT}" | grep -E "status:|flags:|RRSIG|AAAA|A\b" | head -10
@@ -134,7 +135,7 @@ fi
 
 ```bash
 #!/bin/bash
-# re-sign-zone.sh — Emergency re-signing
+# re-sign-zone.sh - Emergency re-signing
 
 ZONE="example.com"
 ZONE_FILE="/var/named/${ZONE}.zone"
@@ -179,7 +180,7 @@ dnssec-signzone -3 - -H 0 -A -N INCREMENT -o example.com \
     -k Kexample.com.+013+KSK /var/named/example.com.zone \
     Kexample.com.+013+ZSK
 
-# Fix 2: Clock skew — signatures not yet valid
+# Fix 2: Clock skew - signatures not yet valid
 # Symptom: SERVFAIL but zone looks fine
 # Check server time
 timedatectl status | grep "Local time\|NTP"
@@ -189,7 +190,7 @@ chronyc makestep
 # Fix 3: AAAA record not signed (only A is)
 # Symptom: AAAA queries SERVFAIL, A queries work
 dig +dnssec AAAA www.example.com @localhost | grep RRSIG
-# If no RRSIG for AAAA — zone was partially signed
+# If no RRSIG for AAAA - zone was partially signed
 # Fix: re-sign with all record types
 
 # Fix 4: BIND not using signed zone
@@ -207,7 +208,7 @@ dig +tcp +dnssec AAAA www.example.com @localhost
 
 ```bash
 #!/bin/bash
-# check-sig-expiry.sh — Run from cron, alert before expiry
+# check-sig-expiry.sh - Run from cron, alert before expiry
 
 ZONE="example.com"
 WARN_DAYS=14  # Alert 14 days before expiry
@@ -231,4 +232,4 @@ echo "OK: ${ZONE} signatures valid for ${DAYS_LEFT} days"
 
 ## Conclusion
 
-DNSSEC troubleshooting starts with `dig +dnssec` (with validation) vs `dig +dnssec +cd` (without validation). If the +cd query succeeds but normal validation fails, signatures are present but invalid — check expiry dates and DS record matching. If both fail, signatures are missing entirely — zone was likely replaced or re-signed without RRSIG records. Always verify after re-signing with `dnssec-verify`. Monitor signature expiry with a cron job alerting 14 days before expiry. For IPv6 zones, pay special attention to AAAA record signatures — they can be accidentally dropped if zone editing tools don't preserve signed zone format.
+DNSSEC troubleshooting starts with `dig +dnssec` (with validation) vs `dig +dnssec +cd` (without validation). If the +cd query succeeds but normal validation fails, signatures are present but invalid - check expiry dates and DS record matching. If both fail, signatures are missing entirely - zone was likely replaced or re-signed without RRSIG records. Always verify after re-signing with `dnssec-verify`. Monitor signature expiry with a cron job alerting 14 days before expiry. For IPv6 zones, pay special attention to AAAA record signatures - they can be accidentally dropped if zone editing tools don't preserve signed zone format.

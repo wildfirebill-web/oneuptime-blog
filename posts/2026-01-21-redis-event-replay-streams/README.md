@@ -151,6 +151,7 @@ class EventReplayer:
         )
 
 # Usage
+
 r = redis.Redis()
 replayer = EventReplayer(r, "events:orders")
 

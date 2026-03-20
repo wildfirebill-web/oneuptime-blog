@@ -22,16 +22,17 @@ This guide provides a systematic approach to troubleshooting Fleet deployment fa
 
 When a Fleet deployment fails, follow this systematic approach:
 
-1. **Check GitRepo status** — Is the Git repository being synced?
-2. **Check Bundle status** — Are bundles being created and updated?
-3. **Check BundleDeployment status** — Are deployments reaching clusters?
-4. **Check Fleet Agent logs** — Is the agent on the downstream cluster working?
-5. **Check Kubernetes events** — Are there resource-level errors?
+1. **Check GitRepo status** - Is the Git repository being synced?
+2. **Check Bundle status** - Are bundles being created and updated?
+3. **Check BundleDeployment status** - Are deployments reaching clusters?
+4. **Check Fleet Agent logs** - Is the agent on the downstream cluster working?
+5. **Check Kubernetes events** - Are there resource-level errors?
 
 ## Step 1: Check GitRepo Status
 
 ```bash
 # Get the status of all GitRepos
+
 kubectl get gitrepo -A
 
 # Look for non-Ready states
@@ -175,7 +176,7 @@ kubectl get namespace my-app
 kubectl create namespace my-app
 ```
 
-### Resource Conflicts
+Resource Conflicts
 
 ```bash
 # Check for resource ownership conflicts
@@ -232,4 +233,4 @@ kubectl logs -n cattle-fleet-system \
 
 ## Conclusion
 
-Troubleshooting Fleet deployment failures requires a methodical approach — starting at the GitRepo level and working down through bundles, bundle deployments, and finally the agents and resources on downstream clusters. By using the commands in this guide, you can quickly identify whether a failure is due to Git connectivity, YAML syntax errors, RBAC issues, or resource conflicts, and take targeted corrective action. Maintaining good logging and monitoring practices makes ongoing incident response faster and more reliable.
+Troubleshooting Fleet deployment failures requires a methodical approach - starting at the GitRepo level and working down through bundles, bundle deployments, and finally the agents and resources on downstream clusters. By using the commands in this guide, you can quickly identify whether a failure is due to Git connectivity, YAML syntax errors, RBAC issues, or resource conflicts, and take targeted corrective action. Maintaining good logging and monitoring practices makes ongoing incident response faster and more reliable.

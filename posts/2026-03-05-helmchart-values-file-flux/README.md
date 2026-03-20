@@ -16,6 +16,7 @@ The simplest approach is specifying values directly in the HelmRelease manifest 
 
 ```yaml
 # HelmRelease with inline values
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

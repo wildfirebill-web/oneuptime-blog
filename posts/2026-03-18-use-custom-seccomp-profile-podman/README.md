@@ -22,6 +22,7 @@ Seccomp profiles are JSON files that define a whitelist or blacklist of system c
 
 ```bash
 # Check if seccomp is enabled in your kernel
+
 # The output should include CONFIG_SECCOMP=y
 grep CONFIG_SECCOMP /boot/config-$(uname -r)
 

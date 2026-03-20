@@ -16,6 +16,7 @@ GitHub Enterprise Server uses your organization's domain instead of github.com. 
 
 ```text
 # GitHub.com
+
 https://github.com/org/repo.git
 
 # GitHub Enterprise Server

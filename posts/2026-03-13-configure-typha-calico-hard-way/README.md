@@ -93,6 +93,7 @@ Felix also supports a static Typha address for non-Kubernetes environments.
 
 ```bash
 # In /etc/calico/felix.cfg on each node
+
 TyphaAddr = <typha-node-ip>:5473
 ```
 

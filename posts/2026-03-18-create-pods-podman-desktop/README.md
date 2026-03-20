@@ -20,6 +20,7 @@ A pod in Podman is a group of one or more containers that share the same network
 
 ```bash
 # Check your Podman version to ensure pod support
+
 podman --version
 
 # List existing pods (if any)

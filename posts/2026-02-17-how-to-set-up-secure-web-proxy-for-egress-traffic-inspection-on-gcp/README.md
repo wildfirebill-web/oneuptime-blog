@@ -31,6 +31,7 @@ Unlike a network firewall that operates at the IP/port level, Secure Web Proxy u
 
 ```bash
 # Enable required APIs
+
 gcloud services enable networksecurity.googleapis.com
 gcloud services enable certificatemanager.googleapis.com
 gcloud services enable compute.googleapis.com

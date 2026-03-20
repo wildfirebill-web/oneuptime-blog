@@ -25,6 +25,7 @@ Before rebalancing, identify which shards are overloaded.
 
 ```bash
 # Count resources per shard
+
 echo "=== Shard Distribution ==="
 for shard in shard-1 shard-2 shard-3; do
   ks_count=$(kubectl get kustomizations -A \

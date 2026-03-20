@@ -16,6 +16,7 @@ It's particularly useful when you're building centralized log infrastructure and
 
 ```bash
 # Install syslog-ng from Ubuntu repositories
+
 sudo apt update
 sudo apt install syslog-ng syslog-ng-core
 

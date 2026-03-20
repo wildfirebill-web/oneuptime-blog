@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Socket, Error Handling, Python, Linux, Programming
+Tags: UDP, Sockets, Error Handling, Python, Linux, Programming
 
 Description: Handle UDP socket errors including ICMP port unreachable delivery, ENOBUFS, ECONNREFUSED, and timeout errors correctly in application code.
 
 ## Introduction
 
-UDP error handling is counterintuitive because UDP is connectionless. However, the kernel does deliver some errors to UDP sockets — most notably, ICMP port unreachable messages are delivered back to the sender. Proper error handling means catching these asynchronous errors, handling buffer overflow (`ENOBUFS`), implementing timeouts for `recvfrom()`, and deciding when to retry versus give up.
+UDP error handling is counterintuitive because UDP is connectionless. However, the kernel does deliver some errors to UDP sockets - most notably, ICMP port unreachable messages are delivered back to the sender. Proper error handling means catching these asynchronous errors, handling buffer overflow (`ENOBUFS`), implementing timeouts for `recvfrom()`, and deciding when to retry versus give up.
 
 ## ICMP Errors Delivered to UDP Sockets
 
@@ -22,6 +22,7 @@ import errno
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Send to a port that's not listening (will get ICMP port unreachable back)
+
 # With connected UDP socket, this error is delivered on the NEXT sendto/recvfrom:
 sock.connect(('10.20.0.5', 9999))  # Port nothing is listening on
 
@@ -154,4 +155,4 @@ except BlockingIOError:
 
 ## Conclusion
 
-UDP error handling requires attention to three error classes: ICMP errors delivered asynchronously (`ECONNREFUSED` for port unreachable), send buffer overflow (`ENOBUFS`/`EAGAIN`), and receive timeouts. Use connected UDP sockets to receive ICMP error delivery automatically. Implement exponential backoff retry for `ENOBUFS`. Set receive timeout with `sock.settimeout()` for all `recvfrom()` calls — blocking forever on a UDP socket is always a bug. For unconnected sockets that need ICMP errors, use `IP_RECVERR` with `MSG_ERRQUEUE`.
+UDP error handling requires attention to three error classes: ICMP errors delivered asynchronously (`ECONNREFUSED` for port unreachable), send buffer overflow (`ENOBUFS`/`EAGAIN`), and receive timeouts. Use connected UDP sockets to receive ICMP error delivery automatically. Implement exponential backoff retry for `ENOBUFS`. Set receive timeout with `sock.settimeout()` for all `recvfrom()` calls - blocking forever on a UDP socket is always a bug. For unconnected sockets that need ICMP errors, use `IP_RECVERR` with `MSG_ERRQUEUE`.

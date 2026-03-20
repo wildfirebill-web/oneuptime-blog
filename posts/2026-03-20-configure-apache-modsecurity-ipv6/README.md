@@ -14,6 +14,7 @@ ModSecurity is a Web Application Firewall (WAF) that protects against SQL inject
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install libapache2-mod-security2 -y
 sudo a2enmod security2
 sudo a2enmod headers

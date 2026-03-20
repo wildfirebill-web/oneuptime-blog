@@ -38,6 +38,7 @@ Each cluster's Flux reads from its own path in the fleet repository:
 
 ```yaml
 # clusters/cluster-01/flux-system/gotk-sync.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

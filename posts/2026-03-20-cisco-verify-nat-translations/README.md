@@ -30,7 +30,7 @@ show ip nat translations icmp
 
 ## Interpreting the Translation Table
 
-```
+```yaml
 show ip nat translations
 
 Pro  Inside global      Inside local        Outside local       Outside global
@@ -65,7 +65,7 @@ show ip nat statistics
 ## Debug NAT (Use with Caution on Production)
 
 ```cisco
-! Enable debug — shows real-time NAT decisions
+! Enable debug - shows real-time NAT decisions
 debug ip nat
 
 ! Filtered debug for a specific host
@@ -96,7 +96,7 @@ clear ip nat translation tcp inside 203.0.113.2 1024 outside 8.8.8.8 80
 
 ## Troubleshooting Checklist
 
-```
+```text
 [ ] Are inside/outside interfaces correctly marked?
     show ip interface GigabitEthernet0/0 | include NAT
 

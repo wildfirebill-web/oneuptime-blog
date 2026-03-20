@@ -33,6 +33,7 @@ The simplest approach is adding a `USER` instruction to your Dockerfile:
 
 ```dockerfile
 # Node.js example with non-root user
+
 FROM node:20-alpine
 
 WORKDIR /app

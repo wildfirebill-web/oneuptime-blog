@@ -26,6 +26,7 @@ On AWS with EKS:
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/autoscaler/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml
 
 # Configure for your cluster
+
 kubectl -n kube-system edit deployment cluster-autoscaler
 
 # Add these arguments to the container:

@@ -16,6 +16,7 @@ Document everything running on the Ubuntu server:
 
 ```bash
 # On Ubuntu: List all installed packages
+
 dpkg --get-selections | grep -v deinstall > /tmp/ubuntu-packages.txt
 
 # List running services

@@ -14,6 +14,7 @@ NFS (Network File System) supports IPv6 starting with NFSv4 and Linux kernel 2.6
 
 ```bash
 # Debian/Ubuntu
+
 apt-get install -y nfs-kernel-server
 
 # RHEL/CentOS/Rocky

@@ -14,6 +14,7 @@ The Linux OOM killer terminates processes when the system runs out of memory. Wh
 
 ```bash
 # Check for OOM killer events in the system log
+
 sudo journalctl -k | grep -i "out of memory\|oom-kill\|killed process"
 
 # Get detailed OOM information

@@ -22,6 +22,7 @@ RBAC errors clearly indicate the missing permission.
 
 ```bash
 # Common error format
+
 Error from server (Forbidden): pods is forbidden:
 User "system:serviceaccount:production:app-sa" cannot list resource "pods"
 in API group "" in the namespace "production"
@@ -198,7 +199,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-## Resource Names for Specific Permissions
+Resource Names for Specific Permissions
 
 Grant access to specific resources by name for fine-grained control.
 

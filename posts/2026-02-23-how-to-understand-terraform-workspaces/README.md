@@ -56,6 +56,7 @@ With the default local backend, workspace state files live in a `terraform.tfsta
 
 ```bash
 # Check the directory structure after creating workspaces
+
 ls -la terraform.tfstate.d/
 # drwxr-xr-x  dev/
 # drwxr-xr-x  staging/

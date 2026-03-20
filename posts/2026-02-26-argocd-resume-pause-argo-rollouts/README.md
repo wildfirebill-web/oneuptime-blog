@@ -193,6 +193,7 @@ When the rollout reaches the first pause step:
 
 ```bash
 # Check the rollout status
+
 argocd app resources my-app --kind Rollout
 
 # Resume a paused rollout

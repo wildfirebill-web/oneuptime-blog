@@ -20,6 +20,7 @@ Start by checking your actual memory and CPU utilization:
 
 ```bash
 # Check memory utilization for an ElastiCache Redis cluster
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/ElastiCache \
   --metric-name DatabaseMemoryUsagePercentage \

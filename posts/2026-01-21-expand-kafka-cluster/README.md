@@ -32,6 +32,7 @@ Create the configuration file for each new broker. Here is an example `server.pr
 
 ```properties
 # Unique broker ID - must be unique across the cluster
+
 broker.id=4
 
 # Listeners

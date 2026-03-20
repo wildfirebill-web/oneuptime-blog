@@ -235,6 +235,7 @@ You can have both MESH_EXTERNAL and MESH_INTERNAL ServiceEntries in the same nam
 
 ```yaml
 # External third-party API
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

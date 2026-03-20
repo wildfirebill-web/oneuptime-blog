@@ -23,6 +23,7 @@ Several tools exist for hosting APT repositories (`apt-ftparchive`, `reprepro`, 
 
 ```bash
 # Install reprepro and GPG
+
 sudo apt install reprepro gnupg
 
 # You'll also need nginx or Apache to serve the repository
@@ -83,6 +84,7 @@ Codename: jammy
 Architectures: amd64 arm64 all
 Components: main
 Description: MyCompany internal Ubuntu 22.04 packages
+
 SignWith: ABCDEF1234567890ABCDEF1234567890ABCDEF12
 
 # Ubuntu 20.04 Focal distribution (if supporting older servers)

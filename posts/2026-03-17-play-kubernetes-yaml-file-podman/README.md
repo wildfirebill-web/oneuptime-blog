@@ -18,6 +18,7 @@ Podman can consume Kubernetes YAML files and create the corresponding pods, cont
 
 ```bash
 # Create a simple Kubernetes Pod YAML file
+
 cat > /tmp/web-pod.yaml << 'EOF'
 apiVersion: v1
 kind: Pod

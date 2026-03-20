@@ -34,6 +34,7 @@ graph TD
 
 ```yaml
 # CloudFormation for chatbot infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ConversationTable:

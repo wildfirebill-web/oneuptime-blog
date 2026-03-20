@@ -27,6 +27,7 @@ Start with the Azure provider configuration:
 
 ```hcl
 # versions.tf - Pin provider versions for consistency
+
 terraform {
   required_version = ">= 1.5.0"
 

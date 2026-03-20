@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: cgroups, tc, Traffic Control, Bandwidth, IPv4, Linux, QoS
+Tags: Cgroups, tc, Traffic Control, Bandwidth, IPv4, Linux, QoS
 
 Description: Use Linux cgroups (v2) combined with tc and eBPF or net_cls to apply per-application IPv4 bandwidth limits by tagging traffic by cgroup membership.
 
@@ -18,6 +18,7 @@ The `net_cls` cgroup subsystem assigns a class ID to packets from processes in a
 
 ```bash
 # Mount net_cls cgroup hierarchy (cgroup v1)
+
 sudo mkdir -p /sys/fs/cgroup/net_cls
 sudo mount -t cgroup -o net_cls net_cls /sys/fs/cgroup/net_cls
 
@@ -45,7 +46,7 @@ sudo cgexec -g net_cls:myapp myapp --option1 --option2
 # Create a root HTB qdisc on the interface
 sudo tc qdisc add dev eth0 root handle 1: htb default 99
 
-# Default class — unlimited (for all other traffic)
+# Default class - unlimited (for all other traffic)
 sudo tc class add dev eth0 parent 1: classid 1:99 htb \
   rate 1gbit \
   ceil 1gbit

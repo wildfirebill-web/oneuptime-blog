@@ -32,6 +32,7 @@ resource "aws_organizations_organization" "main" {
 
 ```hcl
 # Top-level OUs
+
 resource "aws_organizations_organizational_unit" "workloads" {
   name      = "Workloads"
   parent_id = aws_organizations_organization.main.roots[0].id

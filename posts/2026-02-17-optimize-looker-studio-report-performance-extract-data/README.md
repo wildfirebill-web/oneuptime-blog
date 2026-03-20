@@ -86,6 +86,7 @@ BI Engine is a BigQuery feature that caches query results in memory. It sits bet
 
 ```bash
 # Create a BI Engine reservation
+
 bq mk --bi_reservation --location=us --size=1G --project_id=my-project
 ```
 

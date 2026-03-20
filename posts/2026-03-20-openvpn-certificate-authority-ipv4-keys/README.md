@@ -14,6 +14,7 @@ OpenVPN uses TLS certificates for authentication. Each VPN endpoint (server and 
 
 ```bash
 # Download and extract EasyRSA
+
 wget https://github.com/OpenVPN/easy-rsa/releases/download/v3.1.7/EasyRSA-3.1.7.tgz
 tar xvf EasyRSA-3.1.7.tgz
 cd EasyRSA-3.1.7/
@@ -31,8 +32,8 @@ cd EasyRSA-3.1.7/
 ```
 
 This creates:
-- `pki/ca.crt` — The CA certificate (distribute to all clients)
-- `pki/private/ca.key` — The CA private key (keep secret, never distribute)
+- `pki/ca.crt` - The CA certificate (distribute to all clients)
+- `pki/private/ca.key` - The CA private key (keep secret, never distribute)
 
 ## Generating the Server Certificate
 
@@ -46,8 +47,8 @@ This creates:
 ```
 
 This creates:
-- `pki/issued/server.crt` — Signed server certificate
-- `pki/private/server.key` — Server private key
+- `pki/issued/server.crt` - Signed server certificate
+- `pki/private/server.key` - Server private key
 
 ## Generating the Diffie-Hellman Parameters
 

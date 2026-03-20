@@ -16,6 +16,7 @@ The simplest invocation creates a role in the current directory:
 
 ```bash
 # Create a new role called "loadbalancer" with the standard directory structure
+
 ansible-galaxy init loadbalancer
 ```
 

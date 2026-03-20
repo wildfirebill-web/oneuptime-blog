@@ -18,6 +18,7 @@ Python 3.4 introduced `pathlib`, which provides an object-oriented approach to f
 from pathlib import Path
 
 # Create path objects
+
 current_dir = Path(".")
 home_dir = Path.home()
 config_file = Path("/etc/config.json")

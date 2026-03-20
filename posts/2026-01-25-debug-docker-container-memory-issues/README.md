@@ -18,6 +18,7 @@ Check if a container was OOM killed:
 
 ```bash
 # Inspect container state
+
 docker inspect mycontainer --format='{{.State.OOMKilled}}'
 
 # Get more details about the exit

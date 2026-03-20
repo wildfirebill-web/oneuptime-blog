@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, Rate Limiting, DoS Protection, Linux
+Tags: IPv6, Ip6tables, Rate Limiting, DoS Protection, Linux
 
 Description: Learn how to implement IPv6 connection rate limiting with ip6tables using the limit, hashlimit, and recent modules to protect against DoS attacks and brute force.
 
@@ -16,6 +16,7 @@ The `limit` module applies a rate limit globally across all sources:
 
 ```bash
 # Limit incoming ping requests to 10 per second (global)
+
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-request \
   -m limit --limit 10/second --limit-burst 30 \
   -j ACCEPT
@@ -35,8 +36,8 @@ ip6tables -A INPUT -p tcp --syn -j DROP
 ```
 
 **limit parameters:**
-- `--limit N/unit` — Allow N packets per unit (second, minute, hour)
-- `--limit-burst B` — Initial burst allowance (tokens)
+- `--limit N/unit` - Allow N packets per unit (second, minute, hour)
+- `--limit-burst B` - Initial burst allowance (tokens)
 
 ## Module 2: hashlimit (Per-Source Rate Limiting)
 
@@ -66,10 +67,10 @@ ip6tables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -j DROP
 ```
 
 **hashlimit parameters:**
-- `--hashlimit-name` — Unique name for hash table
-- `--hashlimit-upto N/unit` — Allow up to N packets per unit
-- `--hashlimit-burst B` — Burst allowance
-- `--hashlimit-mode srcip` — Track per source IP (or srcport, dstip, dstport)
+- `--hashlimit-name` - Unique name for hash table
+- `--hashlimit-upto N/unit` - Allow up to N packets per unit
+- `--hashlimit-burst B` - Burst allowance
+- `--hashlimit-mode srcip` - Track per source IP (or srcport, dstip, dstport)
 
 ## Module 3: recent (Recent Connection Tracking)
 
@@ -153,4 +154,4 @@ ls /proc/net/ | grep hashlimit
 
 ## Summary
 
-ip6tables rate limiting uses three modules: `limit` for global rates (all sources combined), `hashlimit` for per-source rates (most useful — limits each attacker individually), and `recent` for connection-count-based blocking (SSH brute force). For IPv6, always rate-limit ICMPv6 echo requests, new SSH connections, new HTTP connections, and Neighbor Solicitations (to prevent NDP exhaustion). The `hashlimit` module with `--hashlimit-mode srcip` is the most effective for per-source protection. Log rate-limited drops to detect ongoing attacks.
+ip6tables rate limiting uses three modules: `limit` for global rates (all sources combined), `hashlimit` for per-source rates (most useful - limits each attacker individually), and `recent` for connection-count-based blocking (SSH brute force). For IPv6, always rate-limit ICMPv6 echo requests, new SSH connections, new HTTP connections, and Neighbor Solicitations (to prevent NDP exhaustion). The `hashlimit` module with `--hashlimit-mode srcip` is the most effective for per-source protection. Log rate-limited drops to detect ongoing attacks.

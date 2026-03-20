@@ -40,6 +40,7 @@ clusters/
 
 ```yaml
 # clusters/production/airflow/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

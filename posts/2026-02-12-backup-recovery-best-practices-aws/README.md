@@ -37,6 +37,7 @@ This Terraform configuration creates a comprehensive backup plan with multiple s
 
 ```hcl
 # Backup vault with encryption and access controls
+
 resource "aws_backup_vault" "production" {
   name        = "production-vault"
   kms_key_arn = aws_kms_key.backup.arn

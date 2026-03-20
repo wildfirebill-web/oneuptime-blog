@@ -29,6 +29,7 @@ Start with a ConfigMap containing Fluentd configuration:
 
 ```yaml
 # fluentd-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

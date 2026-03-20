@@ -14,6 +14,7 @@ Extreme Networks switches running ExtremeXOS support IPv6 with a configuration s
 
 ```bash
 # Enable IPv6 unicast routing
+
 configure forwarding ipv6 enable
 
 # Verify

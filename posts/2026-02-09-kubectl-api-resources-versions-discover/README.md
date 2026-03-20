@@ -16,6 +16,7 @@ API resources represent the types of objects you can create in Kubernetes. Each 
 
 ```bash
 # List all available resources
+
 kubectl api-resources
 
 # Output includes:

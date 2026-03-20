@@ -44,6 +44,7 @@ Install pytest using pip. You can add it to your requirements file or install it
 
 ```bash
 # Install pytest
+
 pip install pytest
 
 # Install with common plugins

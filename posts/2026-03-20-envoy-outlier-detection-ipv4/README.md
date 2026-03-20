@@ -112,6 +112,7 @@ clusters:
 
 ```bash
 # View current outlier detection stats
+
 curl http://127.0.0.1:9901/stats | grep outlier_detection
 
 # Key metrics:

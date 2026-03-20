@@ -105,6 +105,7 @@ OpenTelemetry is the standard. It provides SDKs for most languages and exports t
 
 ```python
 # OpenTelemetry tracing setup for a Python Flask service
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

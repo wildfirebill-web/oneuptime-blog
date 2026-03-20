@@ -24,6 +24,7 @@ To install Cilium on Talos, update your machine configuration to disable the def
 
 ```yaml
 # talos-patch-cni.yaml
+
 cluster:
   network:
     cni:

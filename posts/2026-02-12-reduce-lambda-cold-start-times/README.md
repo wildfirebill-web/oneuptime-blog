@@ -45,6 +45,7 @@ For Python:
 
 ```bash
 # Remove unnecessary files from your package
+
 cd build/
 find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null
 find . -type d -name "*.dist-info" -exec rm -rf {} + 2>/dev/null

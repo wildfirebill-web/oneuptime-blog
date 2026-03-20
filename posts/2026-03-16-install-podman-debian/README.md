@@ -26,6 +26,7 @@ Start by refreshing your package lists and upgrading existing packages:
 
 ```bash
 # Update package lists and upgrade installed packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

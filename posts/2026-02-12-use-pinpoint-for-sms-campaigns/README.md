@@ -18,6 +18,7 @@ Start by enabling SMS in your Pinpoint project.
 
 ```bash
 # Enable SMS channel
+
 aws pinpoint update-sms-channel \
   --application-id YOUR_APP_ID \
   --sms-channel-request '{

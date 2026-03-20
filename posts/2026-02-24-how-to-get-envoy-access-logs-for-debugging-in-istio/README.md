@@ -68,6 +68,7 @@ Apply it, do your debugging, then delete it:
 ```bash
 kubectl apply -f debug-logging.yaml
 # ... debug ...
+
 kubectl delete -f debug-logging.yaml
 ```
 

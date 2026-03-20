@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Aurora, Serverless, Auto-scaling, Cost Optimization, Infrastructure as Code
+Tags: OpenTofu, AWS, Aurora, Serverless, Auto-Scaling, Cost Optimization, Infrastructure as Code
 
 Description: Learn how to deploy Aurora Serverless v2 with OpenTofu to automatically scale database capacity between minimum and maximum ACUs based on actual workload demand.
 
@@ -62,6 +62,7 @@ resource "aws_rds_cluster" "serverless_v2" {
 
 ```hcl
 # Writer instance using db.serverless instance class
+
 resource "aws_rds_cluster_instance" "serverless_writer" {
   identifier         = "${var.project_name}-serverless-writer"
   cluster_identifier = aws_rds_cluster.serverless_v2.id

@@ -59,6 +59,7 @@ If you need to install Python, use your package manager:
 
 ```bash
 # Fedora/RHEL
+
 sudo dnf install python3 python3-pip
 
 # Ubuntu/Debian

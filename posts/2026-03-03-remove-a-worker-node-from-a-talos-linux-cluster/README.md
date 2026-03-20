@@ -18,6 +18,7 @@ Before removing a node, assess the impact on your cluster.
 
 ```bash
 # Check which pods are running on the node you want to remove
+
 kubectl get pods -A -o wide --field-selector spec.nodeName=worker-04
 
 # Check the node's resource usage

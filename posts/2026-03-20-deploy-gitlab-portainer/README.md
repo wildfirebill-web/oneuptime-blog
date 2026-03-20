@@ -80,6 +80,7 @@ After the container starts (5-10 minutes to initialize):
 
 ```bash
 # Get the initial root password
+
 docker exec gitlab cat /etc/gitlab/initial_root_password
 
 # Or from Portainer: Containers > gitlab > Console
@@ -145,4 +146,4 @@ docker cp gitlab:/var/opt/gitlab/backups/ /backup/gitlab-$(date +%Y%m%d)
 
 ## Conclusion
 
-Self-hosted GitLab via Portainer gives you a complete DevOps platform — source code management, CI/CD pipelines, container registry, and issue tracking — all running on your own infrastructure. The GitLab Runner container, also managed by Portainer, executes CI jobs using Docker-in-Docker or the Docker socket.
+Self-hosted GitLab via Portainer gives you a complete DevOps platform - source code management, CI/CD pipelines, container registry, and issue tracking - all running on your own infrastructure. The GitLab Runner container, also managed by Portainer, executes CI jobs using Docker-in-Docker or the Docker socket.

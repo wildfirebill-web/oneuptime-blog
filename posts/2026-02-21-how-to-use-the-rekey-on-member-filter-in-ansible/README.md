@@ -16,6 +16,7 @@ Say you have a list of servers, and you want to look them up by hostname. Instea
 
 ```yaml
 # playbook-basic-rekey.yml
+
 # Transforms a list of servers into a dictionary keyed by hostname
 - name: Basic rekey_on_member usage
   hosts: localhost

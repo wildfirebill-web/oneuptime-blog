@@ -14,6 +14,7 @@ GCP cross-region DR uses Cloud SQL cross-region read replicas for database repli
 
 ```hcl
 # main.tf - Cloud SQL with cross-region read replica
+
 resource "google_sql_database_instance" "primary" {
   name             = "app-db-primary"
   database_version = "POSTGRES_15"

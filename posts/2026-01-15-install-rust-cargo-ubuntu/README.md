@@ -16,6 +16,7 @@ Before installing Rust, ensure your Ubuntu system is up to date and has the nece
 
 ```bash
 # Update your package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential build tools required for compiling Rust programs

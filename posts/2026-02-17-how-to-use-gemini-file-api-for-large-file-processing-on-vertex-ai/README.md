@@ -30,6 +30,7 @@ from vertexai.generative_models import GenerativeModel, Part
 from google.cloud import aiplatform
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Upload a video file using the File API

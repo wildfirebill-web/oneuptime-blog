@@ -231,6 +231,7 @@ kubectl apply -f pod-resource-alerts.yaml
 
 ```bash
 # Top CPU consuming pods
+
 kubectl top pods --all-namespaces --sort-by=cpu | head -20
 
 # Top memory consuming pods

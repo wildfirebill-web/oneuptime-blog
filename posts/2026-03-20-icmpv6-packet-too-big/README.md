@@ -12,7 +12,7 @@ ICMPv6 Packet Too Big (Type 2) messages notify a sending application that a pack
 
 ## How the Kernel Delivers PTB to Applications
 
-```
+```text
 ICMPv6 PTB delivery to applications:
 
 TCP:
@@ -122,6 +122,7 @@ def receive_with_pmtu(s: socket.socket, bufsize: int = 4096):
 
 ```bash
 # Check cached PMTU for a destination before sending
+
 ip -6 route get 2001:db8::server
 
 # If an MTU entry is in the cache, the system has learned the PMTU

@@ -41,6 +41,7 @@ With pooling, 200 application connections get multiplexed through 30 actual data
 
 ```ini
 # inventory/pooling.ini
+
 [pgbouncer_servers]
 pgbouncer-1 ansible_host=10.0.10.10
 pgbouncer-2 ansible_host=10.0.10.11

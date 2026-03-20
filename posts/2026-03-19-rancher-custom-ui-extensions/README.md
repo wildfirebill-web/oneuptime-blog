@@ -24,6 +24,7 @@ The `@rancher/shell` package provides the tools for creating and building extens
 
 ```bash
 # Create a new extension project
+
 npx @rancher/create-extension my-extension
 
 cd my-extension

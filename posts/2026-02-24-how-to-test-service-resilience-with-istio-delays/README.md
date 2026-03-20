@@ -217,6 +217,7 @@ Run load with the delay active:
 
 ```bash
 # First, baseline without delay
+
 kubectl delete virtualservice ratings-delay -n delay-test 2>/dev/null
 kubectl exec -n delay-test fortio-client -- fortio load \
   -c 16 -qps 0 -t 30s \

@@ -278,6 +278,7 @@ Common issues and how to fix them:
 
 ```bash
 # Decode and check the issuer
+
 echo $TOKEN | cut -d'.' -f2 | base64 -d 2>/dev/null | jq .iss
 ```
 

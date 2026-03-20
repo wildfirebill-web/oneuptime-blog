@@ -16,6 +16,7 @@ The first sign is usually a module failing to load:
 
 ```bash
 # Try loading a module and check for errors
+
 sudo modprobe vboxdrv
 # modprobe: ERROR: could not insert 'vboxdrv': Required key not available
 

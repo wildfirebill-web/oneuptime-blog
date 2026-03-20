@@ -1,4 +1,4 @@
-# How to Configure IPv6 for Cross-Data-Center Replication
+# How to Configure IPv6 for Cross-Data-Center Replication - Datacenter
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,7 +10,7 @@ Description: Configure IPv6 networking for cross-data-center storage and databas
 
 Cross-DC replication needs dedicated IPv6 paths to prevent competing with production traffic:
 
-```
+```text
 DC1 (2001:db8:dc1::/48)
   Storage VLAN:  2001:db8:dc1:storage::/64
   DB Repl VLAN:  2001:db8:dc1:dbreplica::/64
@@ -24,8 +24,8 @@ DC2 (2001:db8:dc2::/48)
 
 ## Dedicated Replication VRF
 
-```
-! Cisco — Separate VRF for replication traffic
+```text
+! Cisco - Separate VRF for replication traffic
 
 vrf definition REPLICATION
   rd 65001:999
@@ -47,6 +47,7 @@ router bgp 65001
 
 ```bash
 # Linux tc: QoS for IPv6 replication traffic
+
 # Limit replication to 1Gbps to protect production
 
 tc qdisc add dev eth-dci root handle 1: htb default 30
@@ -116,7 +117,7 @@ primary_conninfo = "host=2001:db8:dc1:dbreplica::10 user=replicator"
 
 ```bash
 #!/bin/bash
-# monitor-replication.sh — Track cross-DC replication lag
+# monitor-replication.sh - Track cross-DC replication lag
 
 # MySQL lag
 MYSQL_LAG=$(mysql -h [2001:db8:dc2:dbreplica::10] -u monitor \
@@ -136,4 +137,4 @@ echo "PostgreSQL replication lag: ${PG_LAG}s"
 
 ## Conclusion
 
-Cross-DC replication over IPv6 benefits from dedicated VRFs and VLANs to isolate replication traffic from production workloads. Use separate /64 subnets for storage and database replication within each DC's /48 prefix. Apply QoS with Linux tc htb to limit replication bandwidth and prevent saturation of DCI links. MySQL and PostgreSQL both support IPv6 natively — bracket the IPv6 address in connection strings where required. Monitor replication lag as a KPI, setting alerts at 30 seconds (MySQL) and 60 seconds (PostgreSQL) for latency-sensitive cross-DC replication.
+Cross-DC replication over IPv6 benefits from dedicated VRFs and VLANs to isolate replication traffic from production workloads. Use separate /64 subnets for storage and database replication within each DC's /48 prefix. Apply QoS with Linux tc htb to limit replication bandwidth and prevent saturation of DCI links. MySQL and PostgreSQL both support IPv6 natively - bracket the IPv6 address in connection strings where required. Monitor replication lag as a KPI, setting alerts at 30 seconds (MySQL) and 60 seconds (PostgreSQL) for latency-sensitive cross-DC replication.

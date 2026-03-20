@@ -36,6 +36,7 @@ Map a drive letter from the command line:
 
 ```cmd
 # Map Z: drive to the Samba share
+
 net use Z: \\192.168.1.50\data /user:sambauser yourpassword /persistent:yes
 
 # List currently mapped drives

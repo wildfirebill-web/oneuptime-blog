@@ -135,6 +135,7 @@ Use the stats socket to check server health in real time:
 
 ```bash
 # Show the status of all backends
+
 echo "show stat" | sudo socat stdio /var/lib/haproxy/stats | cut -d',' -f1,2,18 | column -s',' -t
 ```
 

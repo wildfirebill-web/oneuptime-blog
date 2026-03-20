@@ -17,8 +17,8 @@ Without explicit configuration, Sendmail listens on all interfaces (both IPv4 an
 ## Locating the Sendmail Configuration
 
 Sendmail uses two configuration files:
-- `/etc/mail/sendmail.cf` — compiled binary config (do not edit directly)
-- `/etc/mail/sendmail.mc` — human-readable source (edit this, then recompile)
+- `/etc/mail/sendmail.cf` - compiled binary config (do not edit directly)
+- `/etc/mail/sendmail.mc` - human-readable source (edit this, then recompile)
 
 ## Configuring DaemonPortOptions in sendmail.mc
 
@@ -26,6 +26,7 @@ Sendmail uses two configuration files:
 # /etc/mail/sendmail.mc
 
 # --- Bind SMTP to a specific IPv4 address on port 25 ---
+
 DAEMON_OPTIONS(`Port=smtp, Addr=192.168.1.10, Name=MTA, Family=inet')dnl
 
 # --- Also listen on localhost for local delivery ---
@@ -36,11 +37,11 @@ DAEMON_OPTIONS(`Port=submission, Addr=192.168.1.10, Name=MSA, M=Ea, Family=inet'
 ```
 
 Field meanings:
-- `Port=smtp` — Port 25 (or use a number like `Port=587`)
-- `Addr=` — IPv4 address to bind to (`0.0.0.0` for all interfaces)
-- `Name=` — Descriptive name used in logs
-- `Family=inet` — IPv4 only (use `inet6` for IPv6)
-- `M=Ea` — MSA flags: `E` = no ETRN, `a` = require authentication
+- `Port=smtp` - Port 25 (or use a number like `Port=587`)
+- `Addr=` - IPv4 address to bind to (`0.0.0.0` for all interfaces)
+- `Name=` - Descriptive name used in logs
+- `Family=inet` - IPv4 only (use `inet6` for IPv6)
+- `M=Ea` - MSA flags: `E` = no ETRN, `a` = require authentication
 
 ## Listen on All IPv4 Interfaces
 
@@ -91,6 +92,6 @@ tail -f /var/log/maillog
 ## Key Takeaways
 
 - `DaemonPortOptions` entries in `sendmail.mc` control IPv4 binding; use `Family=inet` for IPv4-only.
-- Always edit `sendmail.mc` and recompile with `m4` — never edit `sendmail.cf` directly.
+- Always edit `sendmail.mc` and recompile with `m4` - never edit `sendmail.cf` directly.
 - Add separate `DAEMON_OPTIONS` lines for port 25, port 587, and loopback as needed.
 - Use `ss -tlnp | grep sendmail` to confirm Sendmail is bound to the correct IPv4 addresses after restart.

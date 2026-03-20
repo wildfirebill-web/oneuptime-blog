@@ -48,6 +48,7 @@ Key points to remember:
 
 ```bash
 # General syntax
+
 flux delete <resource-type> <name> [--namespace=<namespace>] [--silent]
 
 # The --silent flag skips the confirmation prompt

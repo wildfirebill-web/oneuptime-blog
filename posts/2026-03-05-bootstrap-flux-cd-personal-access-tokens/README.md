@@ -23,6 +23,7 @@ Run the pre-flight checks to verify cluster compatibility.
 
 ```bash
 # Verify cluster meets Flux requirements
+
 flux check --pre
 ```
 

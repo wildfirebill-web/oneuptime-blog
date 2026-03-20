@@ -31,6 +31,7 @@ Start by creating an ArgoCD Application for the MinIO Operator:
 
 ```yaml
 # applications/minio-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

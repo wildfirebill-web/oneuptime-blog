@@ -14,6 +14,7 @@ OpenFaaS (Functions as a Service) runs on Kubernetes and inherits IPv6 capabilit
 
 ```bash
 # Prerequisites: dual-stack Kubernetes cluster
+
 # kubectl get nodes -o wide shows both IPv4 and IPv6 node addresses
 
 # Install OpenFaaS via arkade or Helm
@@ -66,7 +67,7 @@ kubectl get svc -n openfaas gateway-external \
 ## IPv6-Aware Function Handler
 
 ```python
-# handler.py — Python function that handles IPv6 clients
+# handler.py - Python function that handles IPv6 clients
 
 def handle(event, context):
     """
@@ -140,9 +141,9 @@ curl http://localhost:8080/function/ipv6-info
 kubectl port-forward -n openfaas deploy/prometheus 9090:9090
 
 # Key metrics for IPv6 functions:
-# gateway_functions_seconds_bucket — function invocation latency
-# gateway_functions_total — total invocations
-# gateway_function_invocation_started — in-flight invocations
+# gateway_functions_seconds_bucket - function invocation latency
+# gateway_functions_total - total invocations
+# gateway_function_invocation_started - in-flight invocations
 
 # Monitor with Grafana
 # Import OpenFaaS dashboard: https://grafana.com/dashboards/3434

@@ -39,6 +39,7 @@ Here is the CloudFormation template for the Location Service resources:
 
 ```yaml
 # CloudFormation template for Amazon Location Service resources
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   # Map resource for rendering interactive maps

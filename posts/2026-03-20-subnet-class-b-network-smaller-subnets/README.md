@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnetting, Class B, Networking, CIDR
 
-Description: Subnetting a Class B (/16) network into /24 subnets creates 256 networks of 254 hosts each, while other prefix lengths offer flexibility for different segment sizes across large enterprise deployments.
+Description: Subnetting a Class B (/16) network into /24 subnets creates 256 networks of 254 hosts each, while other prefix lengths offer flexibility for different segment sizes across large enterprise...
 
 ## Class B Basics
 
@@ -40,7 +40,7 @@ for s in subnets_24[:5]:
 ```
 
 Output:
-```
+```text
 Total /24 subnets: 256
 First 5 subnets:
   172.16.0.0/24  (254 hosts)
@@ -56,6 +56,7 @@ First 5 subnets:
 parent = ipaddress.IPv4Network("172.16.0.0/16")
 
 # Allocate /20 blocks per site (4094 hosts each, 16 sites)
+
 site_blocks = list(parent.subnets(new_prefix=20))
 print(f"Site blocks (/20): {len(site_blocks)}")
 
@@ -86,6 +87,6 @@ for site, cidr in site_allocations.items():
 ## Key Takeaways
 
 - A /16 provides 16 bits of host space; every borrowed bit doubles subnet count.
-- Dividing /16 into /24s gives 256 subnets of 254 hosts each — suitable for floor/VLAN-per-subnet designs.
+- Dividing /16 into /24s gives 256 subnets of 254 hosts each - suitable for floor/VLAN-per-subnet designs.
 - Use hierarchical allocation: /20 per site, /24 per VLAN within a site.
 - The entire /16 can always be summarized in BGP/routing as a single advertisement.

@@ -67,6 +67,7 @@ slack_client = WebClient(token=os.environ["SLACK_BOT_TOKEN"])
 verifier = SignatureVerifier(signing_secret=os.environ["SLACK_SIGNING_SECRET"])
 
 # Allowed channels for Terraform operations
+
 ALLOWED_CHANNELS = {
     "C0123456789": "infrastructure-ops",
     "C9876543210": "platform-team"
@@ -362,7 +363,7 @@ jobs:
           PLAN=$(cat plan_output.txt | tail -20)
           curl -X POST "${{ secrets.SLACK_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
-            -d "{\"text\": \"Terraform Plan for ${{ steps.parse.outputs.environment }}:\n\`\`\`${PLAN}\`\`\`\"}"
+            -d "{\"text\": \"Terraform Plan for ${{ steps.parse.outputs.environment }}:\n```${PLAN}```\"}"
 ```
 
 ## Best Practices

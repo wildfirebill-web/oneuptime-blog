@@ -58,6 +58,7 @@ The limit for resource type 'Regional vCPUs' is 350 per region.
 
 ```bash
 # Check VM compute quotas for a region
+
 az vm list-usage \
     --location eastus \
     --output table

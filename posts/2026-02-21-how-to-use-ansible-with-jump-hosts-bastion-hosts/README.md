@@ -43,6 +43,7 @@ The simplest and most modern approach uses SSH's `ProxyJump` directive. Availabl
 
 ```ini
 # ansible.cfg
+
 [ssh_connection]
 ssh_args = -o ProxyJump=bastion_user@bastion.example.com
 ```

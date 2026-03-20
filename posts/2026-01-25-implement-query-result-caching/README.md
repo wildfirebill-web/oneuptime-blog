@@ -217,6 +217,7 @@ def cached_query(ttl: int = 300, key_prefix: str = None):
 
 
 # Usage with decorator
+
 @cached_query(ttl=600)
 def get_products_by_category(category: str):
     conn = get_db_connection()

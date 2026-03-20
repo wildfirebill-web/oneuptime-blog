@@ -202,6 +202,7 @@ Before running an expensive query, check how much data it will scan.
 
 ```bash
 # Dry run to check bytes scanned
+
 bq query --nouse_legacy_sql --dry_run \
     "SELECT * FROM \`my-project-id.analytics.events_*\` WHERE _TABLE_SUFFIX >= '20260201'"
 ```

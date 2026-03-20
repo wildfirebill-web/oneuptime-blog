@@ -496,6 +496,7 @@ dnssec-policy "ecdsa256-policy" {
 
 ```bash
 # Generate ECDSA keys with pdnsutil
+
 pdnsutil secure-zone example.com
 pdnsutil set-nsec3 example.com '1 0 10 auto' narrow
 

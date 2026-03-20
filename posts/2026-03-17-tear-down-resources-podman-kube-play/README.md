@@ -18,6 +18,7 @@ After testing or when you need to redeploy, you must clean up the resources that
 
 ```bash
 # Deploy a pod from YAML
+
 podman kube play deployment.yaml
 
 # Tear down all resources created by that YAML

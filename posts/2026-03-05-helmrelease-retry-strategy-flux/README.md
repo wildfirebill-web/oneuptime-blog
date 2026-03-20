@@ -202,6 +202,7 @@ Use the following commands to monitor retry behavior:
 
 ```bash
 # Check the current retry count and status
+
 flux get helmrelease my-application -n production
 
 # View detailed status including failure count

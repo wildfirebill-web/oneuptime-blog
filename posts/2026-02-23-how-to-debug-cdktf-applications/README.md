@@ -27,6 +27,7 @@ Synthesis errors happen when `cdktf synth` fails. These are typically TypeScript
 
 ```bash
 # Run synthesis with verbose output
+
 cdktf synth --log-level debug
 
 # Or set the environment variable

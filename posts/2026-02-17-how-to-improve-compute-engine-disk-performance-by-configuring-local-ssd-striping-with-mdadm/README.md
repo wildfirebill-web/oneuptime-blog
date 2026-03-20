@@ -22,6 +22,7 @@ Start by creating a Compute Engine instance with multiple local SSDs attached:
 
 ```bash
 # Create a VM with 4 local SSDs attached
+
 # Each local SSD is 375GB, giving us 1.5TB total
 gcloud compute instances create high-perf-vm \
   --zone us-central1-a \

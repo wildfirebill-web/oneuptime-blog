@@ -23,6 +23,7 @@ Create an API integration in Opsgenie:
 ```bash
 #!/bin/bash
 # /usr/local/bin/opsgenie-alert.sh
+
 # Send alerts to Opsgenie from RHEL
 
 OPSGENIE_API_KEY="YOUR_API_KEY"

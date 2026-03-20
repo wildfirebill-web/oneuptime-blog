@@ -20,6 +20,7 @@ Deploy Cluster Autoscaler with optimized settings:
 
 ```yaml
 # cluster-autoscaler-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

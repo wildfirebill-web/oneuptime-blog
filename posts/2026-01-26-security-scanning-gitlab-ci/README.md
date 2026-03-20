@@ -44,6 +44,7 @@ build:
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
 
 # Templates add their own jobs to the security stage
+
 ```
 
 These templates automatically detect your project's languages and run appropriate scanners.

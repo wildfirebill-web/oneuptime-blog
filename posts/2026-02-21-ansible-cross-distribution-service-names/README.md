@@ -14,6 +14,7 @@ Just like package names, service names differ across Linux distributions. The SS
 
 ```yaml
 # Works on RHEL, fails on Debian
+
 - name: Restart SSH
   ansible.builtin.systemd:
     name: sshd

@@ -20,6 +20,7 @@ Start by testing basic pod-to-pod communication:
 
 ```bash
 # Create a debug pod
+
 kubectl run netshoot --image=nicolaka/netshoot --rm -it -- bash
 
 # From inside the debug pod, test connectivity to another pod

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Troubleshooting, Mtr, Network Diagnostics
+Tags: Ubuntu, Networking, Troubleshooting, mtr, Network Diagnostics
 
 Description: Practical guide to using mtr on Ubuntu to diagnose network packet loss and latency, including how to read mtr output, identify problem hops, and interpret common patterns.
 
@@ -14,6 +14,7 @@ When users report slow connections or intermittent drops, the first question is 
 
 ```bash
 # Install mtr
+
 sudo apt-get update
 sudo apt-get install -y mtr-tiny
 

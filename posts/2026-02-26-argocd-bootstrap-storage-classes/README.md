@@ -39,6 +39,7 @@ Create your StorageClass manifests in the bootstrap repository. Here is a set fo
 
 ```yaml
 # bootstrap/storage-classes/gp3-encrypted.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

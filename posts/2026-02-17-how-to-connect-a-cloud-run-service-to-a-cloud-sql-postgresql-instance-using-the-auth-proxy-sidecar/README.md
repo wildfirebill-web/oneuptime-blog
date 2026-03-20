@@ -31,6 +31,7 @@ If you do not have a Cloud SQL instance yet:
 
 ```bash
 # Create a Cloud SQL PostgreSQL instance
+
 gcloud sql instances create my-postgres \
   --database-version=POSTGRES_15 \
   --tier=db-f1-micro \

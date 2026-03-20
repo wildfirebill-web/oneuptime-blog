@@ -73,6 +73,7 @@ Create a connection in BigQuery that references the AWS IAM role:
 
 ```bash
 # Create a BigQuery connection to AWS
+
 # The connection runs in an AWS region (aws-us-east-1)
 bq mk --connection \
   --connection_type='AWS' \

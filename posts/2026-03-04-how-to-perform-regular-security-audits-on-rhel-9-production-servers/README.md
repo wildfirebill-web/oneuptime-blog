@@ -16,6 +16,7 @@ Regular security audits on RHEL 9 production servers identify vulnerabilities an
 sudo dnf install -y openscap-scanner scap-security-guide
 
 # Run CIS benchmark scan
+
 sudo oscap xccdf eval \
   --profile xccdf_org.ssgproject.content_profile_cis \
   --results /var/log/audit/scap-results.xml \

@@ -24,6 +24,7 @@ The safest migration approach involves first setting the new (lower) MTU, then r
 
 ```bash
 # Check current configuration
+
 calicoctl get felixconfiguration default -o yaml | grep -i mtu
 
 # Check current pod MTU

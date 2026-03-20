@@ -14,6 +14,7 @@ Unbound supports DNS64 synthesis natively. It synthesizes AAAA records for domai
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install unbound
 
 # RHEL/CentOS

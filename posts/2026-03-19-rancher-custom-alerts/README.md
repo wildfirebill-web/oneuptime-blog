@@ -213,6 +213,7 @@ Here are useful PromQL expressions for common alert scenarios:
 
 ```promql
 # Node memory usage above 90%
+
 (1 - node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) > 0.9
 
 # Deployment has fewer ready replicas than desired

@@ -14,6 +14,7 @@ Use `validation` blocks in variable declarations to catch invalid IPv6 CIDRs ear
 
 ```hcl
 # variables.tf - Validate IPv6 CIDR inputs
+
 variable "ipv6_vpc_cidr" {
   type        = string
   description = "IPv6 CIDR block for the VPC"
@@ -165,4 +166,4 @@ go test -v -timeout 30m ./test/...
 ./test-ipv6-terraform.sh
 ```
 
-A multi-layered testing approach — combining build-time validation, post-apply checks, and integration tests — gives the highest confidence that IPv6 Terraform configurations work correctly in production.
+A multi-layered testing approach - combining build-time validation, post-apply checks, and integration tests - gives the highest confidence that IPv6 Terraform configurations work correctly in production.

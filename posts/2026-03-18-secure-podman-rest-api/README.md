@@ -35,6 +35,7 @@ The first layer of defense is controlling access to the Podman socket file.
 
 ```bash
 # Set strict permissions
+
 sudo chmod 600 /run/podman/podman.sock
 sudo chown root:root /run/podman/podman.sock
 
@@ -450,7 +451,7 @@ Use this checklist to verify your Podman API security:
 - [ ] Certificate rotation is scheduled and automated.
 - [ ] SSH tunneling is used when direct TCP exposure is not needed.
 
-## Resource Limits
+Resource Limits
 
 Prevent denial-of-service through resource exhaustion:
 

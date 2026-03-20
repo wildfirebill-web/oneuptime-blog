@@ -29,6 +29,7 @@ Here is how to create a daily snapshot schedule that keeps snapshots for 14 days
 
 ```bash
 # Create a snapshot schedule that runs daily at 2 AM UTC and retains snapshots for 14 days
+
 gcloud compute resource-policies create snapshot-schedule daily-backup-policy \
     --region=us-central1 \
     --max-retention-days=14 \

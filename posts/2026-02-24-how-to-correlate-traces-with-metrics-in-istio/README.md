@@ -112,6 +112,7 @@ Grafana is the natural tool for metrics-to-traces correlation because it support
 
 ```yaml
 # Grafana data source for Tempo
+
 apiVersion: 1
 datasources:
   - name: Tempo

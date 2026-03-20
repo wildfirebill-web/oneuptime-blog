@@ -198,6 +198,7 @@ Complete the setup:
 
 ```bash
 # Check current filesystem
+
 df -T /
 
 # The daemon.json already specifies overlay2 as the storage driver

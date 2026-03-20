@@ -33,6 +33,7 @@ HNC runs as a controller in your Talos Linux cluster. Install it using kubectl.
 
 ```bash
 # Install HNC v1.1.0 (check for latest version)
+
 kubectl apply -f https://github.com/kubernetes-sigs/hierarchical-namespaces/releases/download/v1.1.0/default.yaml
 
 # Verify the installation

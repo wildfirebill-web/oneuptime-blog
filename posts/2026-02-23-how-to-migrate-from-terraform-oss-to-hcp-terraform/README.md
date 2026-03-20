@@ -20,6 +20,7 @@ Before starting the migration:
 
 ```bash
 # Install or update Terraform CLI
+
 terraform version  # Ensure 1.x or later
 
 # Create an HCP Terraform account

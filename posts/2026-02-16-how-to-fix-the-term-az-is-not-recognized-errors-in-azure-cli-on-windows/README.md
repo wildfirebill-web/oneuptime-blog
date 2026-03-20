@@ -46,6 +46,7 @@ Open File Explorer and check if these directories exist and contain `az.cmd`.
 
 ```powershell
 # Check if az.cmd exists in the expected locations
+
 Test-Path "C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin\az.cmd"
 Test-Path "C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin\az.cmd"
 ```

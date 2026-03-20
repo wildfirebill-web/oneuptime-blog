@@ -20,6 +20,7 @@ Learn how to set up Terralist as a private module and provider registry for Open
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

@@ -35,6 +35,7 @@ Before requesting production access, make sure you have these in place. AWS revi
 
 ```bash
 # Verify your domain (not just an email address)
+
 aws sesv2 create-email-identity \
   --email-identity "example.com" \
   --region us-east-1

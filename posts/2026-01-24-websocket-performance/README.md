@@ -531,6 +531,7 @@ async function sendToUser(userId, payload) {
 
 ```nginx
 # Nginx configuration for WebSocket load balancing
+
 upstream websocket_servers {
     # Use IP hash for sticky sessions
     # WebSocket connections must stay on the same server

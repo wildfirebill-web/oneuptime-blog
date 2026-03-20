@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Reverse Proxy, Load Balancing, DevOps
+Tags: Ansible, Nginx, Reverse Proxy, Load Balancing, DevOps
 
 Description: Learn how to configure Nginx as a reverse proxy using Ansible with upstream backends, SSL termination, caching, and WebSocket support.
 
@@ -23,6 +23,7 @@ First, install Nginx from the official repository for the latest stable version:
 
 ```yaml
 # install_nginx.yml - Install Nginx from official repo
+
 ---
 - name: Install Nginx
   hosts: proxy_servers

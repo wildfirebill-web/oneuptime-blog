@@ -18,6 +18,7 @@ The simplest customization is modifying Amplify's `amplify.yml` build specificat
 
 ```yaml
 # amplify.yml - Custom build specification
+
 version: 1
 backend:
   phases:

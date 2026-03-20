@@ -59,6 +59,7 @@ flowchart TD
 
 ```bash
 # Test basic connectivity to broker
+
 nc -zv broker1.example.com 9092
 
 # Check DNS resolution

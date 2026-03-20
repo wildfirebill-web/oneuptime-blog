@@ -31,6 +31,7 @@ The simplest source type. Point to a directory on the local filesystem:
 
 ```hcl
 # Relative path from the current directory
+
 module "vpc" {
   source = "./modules/vpc"
 }

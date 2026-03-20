@@ -14,6 +14,7 @@ snmpwalk is a command-line tool that queries an SNMP agent and walks the OID (Ob
 
 ```bash
 # Install the SNMP tools package
+
 sudo apt update
 sudo apt install snmp snmp-mibs-downloader
 

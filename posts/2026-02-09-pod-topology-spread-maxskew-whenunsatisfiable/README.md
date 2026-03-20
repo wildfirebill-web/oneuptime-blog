@@ -250,6 +250,7 @@ Create custom topology domains with labels:
 
 ```bash
 # Label nodes by rack
+
 kubectl label node node-1 rack=rack-a
 kubectl label node node-2 rack=rack-a
 kubectl label node node-3 rack=rack-b

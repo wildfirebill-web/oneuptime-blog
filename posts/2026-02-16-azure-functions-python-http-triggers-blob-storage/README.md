@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure Functions, Python, Serverless, HTTP Trigger, Blob Storage, Bindings, Cloud
+Tags: Azure Functions, Python, Serverless, HTTP Trigger, Blob Storage, Binding, Cloud
 
 Description: Build serverless Azure Functions in Python with HTTP triggers and Blob Storage input/output bindings for event-driven file processing.
 
@@ -16,6 +16,7 @@ You need the Azure Functions Core Tools and the Azure CLI.
 
 ```bash
 # Install Azure Functions Core Tools (macOS)
+
 brew tap azure/functions
 brew install azure-functions-core-tools@4
 

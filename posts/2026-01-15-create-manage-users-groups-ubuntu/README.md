@@ -34,6 +34,7 @@ User and group management is fundamental to Linux security and system administra
 
 ```bash
 # View current user
+
 whoami
 
 # View current user's groups

@@ -32,6 +32,7 @@ P5 instances are in high demand. You will likely need to request a service quota
 
 ```bash
 # Check your current P5 quota
+
 aws service-quotas get-service-quota \
   --service-code ec2 \
   --quota-code L-417A185B \

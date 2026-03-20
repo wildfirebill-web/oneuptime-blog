@@ -35,6 +35,7 @@ Create the Invoice Processor and install the client library.
 
 ```bash
 # Enable the Document AI API
+
 gcloud services enable documentai.googleapis.com
 
 # Install the client library

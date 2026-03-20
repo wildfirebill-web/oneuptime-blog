@@ -56,6 +56,7 @@ flowchart TD
 
 ```bash
 # Set ingress to internal-only during deployment
+
 gcloud run deploy my-internal-service \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/my-app:latest \
   --region=us-central1 \

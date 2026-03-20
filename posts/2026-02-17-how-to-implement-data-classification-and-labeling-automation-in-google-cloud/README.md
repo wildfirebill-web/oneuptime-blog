@@ -169,6 +169,7 @@ from google.cloud import datacatalog_v1
 from google.cloud import dlp_v2
 
 # Classification rules based on info types found
+
 CLASSIFICATION_RULES = {
     "RESTRICTED": [
         "US_SOCIAL_SECURITY_NUMBER",

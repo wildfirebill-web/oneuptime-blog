@@ -102,6 +102,7 @@ Teams create HTTPRoutes in their own namespaces that reference the shared gatewa
 
 ```yaml
 # In team-a namespace
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:

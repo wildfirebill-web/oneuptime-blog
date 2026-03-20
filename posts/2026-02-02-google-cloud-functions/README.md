@@ -39,6 +39,7 @@ Install and configure gcloud CLI:
 
 ```bash
 # Install gcloud CLI (macOS)
+
 brew install --cask google-cloud-sdk
 
 # Initialize gcloud and authenticate

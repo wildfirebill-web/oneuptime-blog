@@ -16,6 +16,7 @@ Before starting, make sure you have the following tools installed:
 
 ```bash
 # Install talosctl - the Talos management CLI
+
 curl -sL https://talos.dev/install | sh
 
 # Verify the installation

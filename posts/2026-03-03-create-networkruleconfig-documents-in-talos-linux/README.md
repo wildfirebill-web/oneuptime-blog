@@ -20,6 +20,7 @@ A NetworkRuleConfig document is a standalone configuration document that can be 
 
 ```yaml
 # A basic NetworkRuleConfig document
+
 apiVersion: v1alpha1
 kind: NetworkRuleConfig
 name: allow-kubernetes-api

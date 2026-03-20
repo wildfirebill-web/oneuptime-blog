@@ -24,6 +24,7 @@ The cluster DNS domain must be set when you generate the Talos configuration. It
 
 ```bash
 # Generate Talos configuration with a custom DNS domain
+
 talosctl gen config my-cluster https://192.168.1.10:6443 \
   --dns-domain="k8s.example.com"
 ```

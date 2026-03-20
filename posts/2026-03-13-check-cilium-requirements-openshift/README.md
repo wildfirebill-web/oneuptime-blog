@@ -28,6 +28,7 @@ Verify your OpenShift version maps to a supported Kubernetes version for Cilium.
 
 ```bash
 # Check OpenShift version
+
 oc version
 
 # Check Kubernetes version (embedded in OpenShift)

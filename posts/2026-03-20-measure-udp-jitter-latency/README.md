@@ -8,12 +8,13 @@ Description: Measure UDP one-way latency, round-trip time, and jitter using iper
 
 ## Introduction
 
-Latency and jitter are the critical metrics for real-time UDP applications. Latency is how long a packet takes to travel from sender to receiver. Jitter is the variation in latency between consecutive packets — high jitter causes audio dropouts and video stutters even when average latency is acceptable. VoIP requires jitter under 30ms, gaming requires under 10ms for smooth play.
+Latency and jitter are the critical metrics for real-time UDP applications. Latency is how long a packet takes to travel from sender to receiver. Jitter is the variation in latency between consecutive packets - high jitter causes audio dropouts and video stutters even when average latency is acceptable. VoIP requires jitter under 30ms, gaming requires under 10ms for smooth play.
 
 ## Measuring RTT with ping (ICMP baseline)
 
 ```bash
 # ping gives RTT (round-trip) and jitter (mdev):
+
 ping -c 100 -i 0.1 10.20.0.5 | tail -3
 # rtt min/avg/max/mdev = 0.4/0.6/2.1/0.3 ms
 # mdev = mean deviation = approximation of jitter
@@ -134,7 +135,7 @@ done
 
 ## Network Quality Thresholds
 
-```
+```yaml
 Metric       | Excellent | Acceptable | Poor
 -------------|-----------|------------|------
 RTT          | < 20ms    | 20-100ms   | > 100ms
@@ -150,4 +151,4 @@ Live streaming:   RTT < 3s,    Jitter < 50ms, Loss < 0.5%
 
 ## Conclusion
 
-iperf3 UDP mode provides the most accurate jitter measurement — run with small packets at the target bitrate to simulate your specific application. Monitor `mdev` from ping for quick jitter checks. For production monitoring, run the jitter logging script continuously and alert when jitter exceeds application-specific thresholds. P99 latency is more actionable than average for user-facing applications — a P99 > 50ms is noticeable even when average is low.
+iperf3 UDP mode provides the most accurate jitter measurement - run with small packets at the target bitrate to simulate your specific application. Monitor `mdev` from ping for quick jitter checks. For production monitoring, run the jitter logging script continuously and alert when jitter exceeds application-specific thresholds. P99 latency is more actionable than average for user-facing applications - a P99 > 50ms is noticeable even when average is low.

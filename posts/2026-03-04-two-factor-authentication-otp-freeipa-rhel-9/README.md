@@ -35,6 +35,7 @@ First, configure IdM to require OTP authentication globally or per-user.
 
 ```bash
 # Set OTP as the default authentication method for all users
+
 ipa config-mod --user-auth-type=otp
 
 # Or enable both password and OTP (users can use either)

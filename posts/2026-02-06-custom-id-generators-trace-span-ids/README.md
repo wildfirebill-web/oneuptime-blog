@@ -90,6 +90,7 @@ To use this generator, pass it to the `TracerProvider`:
 
 ```python
 # Create the provider with the custom ID generator
+
 provider = TracerProvider(id_generator=TimestampIdGenerator())
 
 # Add an exporter

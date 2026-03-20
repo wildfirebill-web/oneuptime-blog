@@ -20,6 +20,7 @@ This configures providers for three regions:
 
 ```hcl
 # Default provider - us-east-1
+
 provider "aws" {
   region = "us-east-1"
 

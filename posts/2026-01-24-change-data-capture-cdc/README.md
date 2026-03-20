@@ -40,6 +40,7 @@ The most reliable approach reads the database's transaction log directly.
 
 ```yaml
 # docker-compose.yml for Debezium CDC
+
 version: '3'
 services:
   postgres:

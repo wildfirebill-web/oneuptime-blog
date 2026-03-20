@@ -243,6 +243,7 @@ After configuring traffic policies, verify them:
 
 ```bash
 # Check the effective configuration on a proxy
+
 istioctl proxy-config routes \
   $(kubectl get pod -n shop -l app=frontend -o jsonpath='{.items[0].metadata.name}') \
   --name 8080 -o json

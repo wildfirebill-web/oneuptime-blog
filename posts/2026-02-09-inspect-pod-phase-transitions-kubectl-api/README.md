@@ -26,6 +26,7 @@ View current pod phase:
 
 ```bash
 # Quick status view
+
 kubectl get pods
 
 # Show phase explicitly

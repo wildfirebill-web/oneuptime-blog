@@ -14,6 +14,7 @@ Server patching is the unglamorous but critical task that keeps your infrastruct
 
 ```yaml
 # roles/patching/defaults/main.yml - Patching configuration
+
 patching_reboot_enabled: true
 patching_reboot_timeout: 600
 patching_pre_check_enabled: true

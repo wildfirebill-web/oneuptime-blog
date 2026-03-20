@@ -32,6 +32,7 @@ NeuVector includes built-in threat detection for common patterns:
 
 ```bash
 # Enable threat detection in NeuVector
+
 curl -sk -X PATCH \
   "https://neuvector-manager:8443/v1/system/config" \
   -H "Content-Type: application/json" \

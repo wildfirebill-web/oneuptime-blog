@@ -59,6 +59,7 @@ import hello_pb2
 import hello_pb2_grpc
 
 # DNS-based round-robin: resolve all A records and balance across them
+
 channel = grpc.insecure_channel(
     "dns:///greeter.default.svc.cluster.local:50051",
     options=[("grpc.lb_policy_name", "round_robin")],
@@ -106,7 +107,7 @@ server {
 ## Kubernetes: Headless Service for Client-Side LB
 
 ```yaml
-# Headless service — DNS returns all pod IPs
+# Headless service - DNS returns all pod IPs
 apiVersion: v1
 kind: Service
 metadata:
@@ -119,7 +120,7 @@ spec:
     - port: 50051
 ```
 
-```
+```text
 # DNS A record resolution
 nslookup greeter.default.svc.cluster.local
 → 10.244.1.5

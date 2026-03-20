@@ -6,7 +6,7 @@ Tags: Wireshark, IPv4, Display Filters, Networking, Packet Analysis
 
 Description: Use Wireshark display filters to show only IPv4 packets of interest from a larger capture, filtering by address, port, protocol, and field values.
 
-Display filters in Wireshark are applied after capture — they show/hide packets without deleting them. Unlike capture filters, you can change display filters on the fly to explore different views of the same capture.
+Display filters in Wireshark are applied after capture - they show/hide packets without deleting them. Unlike capture filters, you can change display filters on the fly to explore different views of the same capture.
 
 ## Basic IPv4 Display Filters
 
@@ -14,6 +14,7 @@ Enter these in the filter bar at the top of the Wireshark window:
 
 ```wireshark
 # Show only IPv4 packets
+
 ip
 
 # Show all IPv4 and IPv6
@@ -139,10 +140,10 @@ http.response.code >= 400
 
 After applying a display filter to find relevant packets, export them:
 
-```
+```bash
 File → Export Specified Packets → check "Displayed" → Save
 ```
 
-This creates a new PCAP containing only the filtered packets — useful for sharing specific traffic with colleagues.
+This creates a new PCAP containing only the filtered packets - useful for sharing specific traffic with colleagues.
 
-Display filters are Wireshark's most powerful feature — they let you interactively explore a capture, progressively narrowing your focus without losing context of surrounding traffic.
+Display filters are Wireshark's most powerful feature - they let you interactively explore a capture, progressively narrowing your focus without losing context of surrounding traffic.

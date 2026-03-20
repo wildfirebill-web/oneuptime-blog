@@ -86,6 +86,7 @@ Create separate age keys for each environment:
 
 ```bash
 # Generate keys
+
 age-keygen -o dev.agekey 2> dev.pub
 age-keygen -o staging.agekey 2> staging.pub
 age-keygen -o production.agekey 2> production.pub

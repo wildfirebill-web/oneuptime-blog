@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Plan Approval, Dashboard, CI/CD, Infrastructure as Code
+Tags: OpenTofu, Plan Approval, Dashboards, CI/CD, Infrastructure as Code
 
 Description: Learn how to build plan approval dashboards for OpenTofu that give operators a clear view of pending infrastructure changes before approving deployments.
 
@@ -24,7 +24,7 @@ flowchart LR
 
 ```python
 #!/usr/bin/env python3
-# dashboard-summary.py — generate an HTML plan approval dashboard
+# dashboard-summary.py - generate an HTML plan approval dashboard
 
 import json, sys
 from datetime import datetime
@@ -70,7 +70,7 @@ html = f"""<!DOCTYPE html>
 if deletes or replaces:
     html += "<h2 style='color:red'>⚠️ Destructive Changes</h2><ul>"
     for c in deletes + replaces:
-        html += f"<li class='delete'>{'+'.join(c['change']['actions'])} — <strong>{c['address']}</strong></li>"
+        html += f"<li class='delete'>{'+'.join(c['change']['actions'])} - <strong>{c['address']}</strong></li>"
     html += "</ul>"
 
 html += "<h2>All Changes</h2><table><tr><th>Action</th><th>Resource</th><th>Type</th></tr>"
@@ -98,6 +98,7 @@ print("Dashboard written to plan-dashboard.html")
 
 ```yaml
 # .github/workflows/plan-dashboard.yml
+
 - name: Generate Dashboard
   run: python3 scripts/dashboard-summary.py plan.json
 

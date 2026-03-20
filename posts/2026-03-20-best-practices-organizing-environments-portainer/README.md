@@ -1,8 +1,8 @@
-# Best Practices for Organizing Environments in Portainer
+# Best Practices for Organizing Environments in Portainer - Organizing
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Best Practices, Environments, Organization, DevOps, Multi-Environment
+Tags: Portainer, Best Practices, Environments, Organizations, DevOps, Multi-Environment
 
 Description: Learn how to organize Portainer environments effectively using naming conventions, tags, groups, and access policies to scale container management across multiple hosts.
 
@@ -14,7 +14,7 @@ As your Portainer deployment grows from one or two environments to dozens, organ
 
 Consistent naming makes environments discoverable. Use a structured format:
 
-```
+```text
 <type>-<location>-<purpose>-<index>
 
 Examples:
@@ -40,6 +40,7 @@ Apply tags via the Portainer API when automating environment registration:
 
 ```bash
 # Register a new environment with tags via Portainer API
+
 curl -X POST "https://portainer.example.com/api/endpoints" \
   -H "Authorization: Bearer $PORTAINER_TOKEN" \
   -H "Content-Type: application/json" \
@@ -54,16 +55,16 @@ curl -X POST "https://portainer.example.com/api/endpoints" \
 
 Group related environments for bulk operations and access control:
 
-- **Production Group** — all prod environments with restricted access
-- **Staging Group** — all staging environments, accessible to developers
-- **Development Group** — all dev environments, accessible to everyone
-- **Edge Group** — edge devices managed as a fleet
+- **Production Group** - all prod environments with restricted access
+- **Staging Group** - all staging environments, accessible to developers
+- **Development Group** - all dev environments, accessible to everyone
+- **Edge Group** - edge devices managed as a fleet
 
 ## Access Control Pattern
 
 Map teams to environment groups with appropriate roles:
 
-```
+```text
 Platform Engineers → All Environments (Admin)
 Backend Team      → Staging + Dev Environments (Standard User)
 Developers        → Dev Environments only (Standard User)
@@ -82,7 +83,7 @@ Create a naming convention that makes unhealthy environments visually obvious:
 
 Each environment should have a clear single purpose:
 
-```
+```text
 prod-01:      Running production workloads
               - Strict RBAC, no developer access
               - Auto-restart policies on all containers
@@ -113,4 +114,4 @@ Keep this documentation updated when environments change.
 
 ## Summary
 
-Well-organized Portainer environments reduce operational toil and prevent access mistakes. Consistent naming, systematic tagging, environment groups, and clear access control policies are the foundation of a scalable Portainer deployment. Invest in this structure early — retrofitting organization into a large, unstructured environment list is painful.
+Well-organized Portainer environments reduce operational toil and prevent access mistakes. Consistent naming, systematic tagging, environment groups, and clear access control policies are the foundation of a scalable Portainer deployment. Invest in this structure early - retrofitting organization into a large, unstructured environment list is painful.

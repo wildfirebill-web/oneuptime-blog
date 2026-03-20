@@ -16,6 +16,7 @@ To check memory usage on a node:
 
 ```bash
 # Check memory usage on a single node
+
 talosctl memory --nodes 192.168.1.10
 ```
 

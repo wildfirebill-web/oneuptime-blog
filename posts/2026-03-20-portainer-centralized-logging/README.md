@@ -1,4 +1,4 @@
-# How to Set Up Centralized Logging for Containers via Portainer
+# How to Set Up Centralized Logging for Containers via Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -105,6 +105,7 @@ Configure all containers to send logs to Fluentd:
 
 ```yaml
 # In each application stack, add the log driver
+
 services:
   api:
     image: my-api:latest
@@ -134,7 +135,7 @@ services:
 
 ## Option 3: Syslog Driver
 
-The syslog driver is the simplest option — it sends logs to any syslog server:
+The syslog driver is the simplest option - it sends logs to any syslog server:
 
 ```yaml
 services:

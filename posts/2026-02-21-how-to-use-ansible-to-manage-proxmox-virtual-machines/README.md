@@ -24,6 +24,7 @@ You need:
 
 ```bash
 # Install required collection and Python libraries
+
 ansible-galaxy collection install community.general
 pip install proxmoxer requests
 ```

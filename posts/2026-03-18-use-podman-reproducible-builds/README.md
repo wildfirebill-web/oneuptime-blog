@@ -26,6 +26,7 @@ The foundation of reproducible builds is a precisely defined build environment. 
 
 ```dockerfile
 # Bad: tag can change
+
 FROM golang:1.22
 
 # Good: digest is immutable

@@ -29,6 +29,7 @@ PCI DSS requires network segmentation to isolate the cardholder data environment
 
 ```python
 # pci-req1-network-segmentation.sentinel
+
 # PCI DSS Requirement 1.3: Network access to and from the CDE is restricted
 # Enforce that CDE-tagged resources do not allow unrestricted inbound access
 

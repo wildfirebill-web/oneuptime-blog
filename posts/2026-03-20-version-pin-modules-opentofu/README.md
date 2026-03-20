@@ -14,6 +14,7 @@ Module version pinning ensures that updating a shared module in one place does n
 
 ```hcl
 # Use version constraint for registry modules
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.0"   # >= 5.0.0, < 6.0.0
@@ -41,12 +42,12 @@ module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git//modules/vpc?ref=v2.1.0"
 }
 
-# Pin to a specific commit SHA (maximum stability — immune to tag overwrites)
+# Pin to a specific commit SHA (maximum stability - immune to tag overwrites)
 module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git//modules/vpc?ref=abc123def456"
 }
 
-# AVOID — unpinned branch reference (changes on every push)
+# AVOID - unpinned branch reference (changes on every push)
 module "vpc" {
   source = "git::https://github.com/my-org/tf-modules.git//modules/vpc?ref=main"
 }
@@ -54,12 +55,12 @@ module "vpc" {
 
 ## Pinning Local Modules
 
-Local modules do not have version pinning — they are referenced by path. Use a monorepo tag or directory versioning pattern:
+Local modules do not have version pinning - they are referenced by path. Use a monorepo tag or directory versioning pattern:
 
 ```hcl
-# Local module — version managed by the monorepo tag
+# Local module - version managed by the monorepo tag
 module "vpc" {
-  source = "../../modules/vpc"  # No version — controlled by repo tag
+  source = "../../modules/vpc"  # No version - controlled by repo tag
 }
 ```
 
@@ -111,4 +112,4 @@ updates:
 
 ## Conclusion
 
-Pin registry modules with `version = "~> X.Y"` (pessimistic constraint) and Git modules with `ref=v1.2.3` (tag-based). Avoid branch references for Git modules — they make infrastructure non-reproducible. Use Dependabot or a similar tool to receive automated PRs when pinned versions have updates, so modules stay current without manual tracking.
+Pin registry modules with `version = "~> X.Y"` (pessimistic constraint) and Git modules with `ref=v1.2.3` (tag-based). Avoid branch references for Git modules - they make infrastructure non-reproducible. Use Dependabot or a similar tool to receive automated PRs when pinned versions have updates, so modules stay current without manual tracking.

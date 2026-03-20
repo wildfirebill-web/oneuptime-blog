@@ -34,6 +34,7 @@ First, install the Protocol Buffers compiler and Go plugins required for code ge
 
 ```bash
 # Install protoc on macOS using Homebrew
+
 brew install protobuf
 
 # Install protoc on Ubuntu/Debian

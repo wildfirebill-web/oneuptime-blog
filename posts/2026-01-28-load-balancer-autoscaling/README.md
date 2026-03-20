@@ -35,6 +35,7 @@ AWS provides native integration between ALB and Auto Scaling Groups. Here is a p
 
 ```hcl
 # Auto Scaling Group with launch template
+
 resource "aws_launch_template" "app" {
   name_prefix   = "app-"
   image_id      = var.ami_id

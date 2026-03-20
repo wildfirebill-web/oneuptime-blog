@@ -23,6 +23,7 @@ MAIL_IPV6="2001:db8::10"
 ALERT_EMAIL="ops@example.com"
 
 # Check IPv6 SMTP connectivity
+
 check_smtp_ipv6() {
     timeout 10 nc -6 -z -w 5 "$MAIL_IPV6" 25
     return $?

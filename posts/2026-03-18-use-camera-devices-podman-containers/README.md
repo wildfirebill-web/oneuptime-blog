@@ -20,6 +20,7 @@ Linux uses the Video4Linux2 (V4L2) framework to provide a unified interface for 
 
 ```bash
 # List all video devices
+
 ls -la /dev/video*
 # Example output:
 # crw-rw----+ 1 root video 81, 0 Mar 18 08:00 /dev/video0

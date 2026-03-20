@@ -24,6 +24,7 @@ Create a cluster configuration that includes both Graviton (ARM) and optionally 
 
 ```yaml
 # cluster-config.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

@@ -76,6 +76,7 @@ Save this as `.azuredevops/pull_request_template.md` in your repository:
 
 ```bash
 # Create the template directory and file
+
 mkdir -p .azuredevops
 ```
 

@@ -18,6 +18,7 @@ First, check the pod events to see the exact error message:
 
 ```bash
 # Check pod status
+
 kubectl get pods -n my-namespace
 
 # Get detailed error information

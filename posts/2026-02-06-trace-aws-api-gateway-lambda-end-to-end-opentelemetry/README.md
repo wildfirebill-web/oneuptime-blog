@@ -47,6 +47,7 @@ For HTTP API (API Gateway v2), trace context propagation is simpler because the 
 
 ```yaml
 # serverless.yml with API Gateway v2 (HTTP API)
+
 service: traced-api
 
 provider:

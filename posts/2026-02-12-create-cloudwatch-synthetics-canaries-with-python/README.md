@@ -27,6 +27,7 @@ The API runtime is lighter and faster. Use it for endpoint monitoring. The Selen
 
 ```python
 # api_canary.py
+
 from aws_synthetics.selenium import synthetics_webdriver as syn_webdriver
 from aws_synthetics.common import synthetics_logger as logger
 from aws_synthetics.common import synthetics_configuration as syn_config

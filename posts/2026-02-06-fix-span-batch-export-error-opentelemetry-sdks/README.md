@@ -34,6 +34,7 @@ The batch processor has several configurable parameters that control this behavi
 
 ```python
 # Python: BatchSpanProcessor configuration with all parameters
+
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
 processor = BatchSpanProcessor(

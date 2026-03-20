@@ -27,6 +27,7 @@ If you need to generate client certificates, you can use `openssl`.
 
 ```bash
 # Generate a private key for the client
+
 openssl genrsa -out client.key 4096
 
 # Create a certificate signing request (CSR)

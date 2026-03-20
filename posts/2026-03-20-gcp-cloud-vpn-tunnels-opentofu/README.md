@@ -64,6 +64,7 @@ resource "google_compute_router" "vpn" {
 
 ```hcl
 # Tunnel 1 – connects interface 0 to on-premises device interface 0
+
 resource "google_compute_vpn_tunnel" "tunnel_1" {
   name                            = "${var.app_name}-tunnel-1"
   project                         = var.project_id
@@ -138,4 +139,4 @@ tofu apply tfplan
 
 ## Summary
 
-GCP HA VPN provides highly available hybrid connectivity using two active tunnels. OpenTofu manages the entire stack — HA gateways, external gateways, Cloud Router, BGP configuration, and tunnel resources — in a reproducible and auditable way.
+GCP HA VPN provides highly available hybrid connectivity using two active tunnels. OpenTofu manages the entire stack - HA gateways, external gateways, Cloud Router, BGP configuration, and tunnel resources - in a reproducible and auditable way.

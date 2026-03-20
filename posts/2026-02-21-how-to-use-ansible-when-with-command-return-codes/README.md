@@ -16,6 +16,7 @@ By default, Ansible treats a non-zero return code as a failure and stops the pla
 
 ```yaml
 # Basic return code conditional
+
 ---
 - name: Return code basics
   hosts: all

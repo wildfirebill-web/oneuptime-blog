@@ -1,4 +1,4 @@
-# How to Set Up Multi-Cluster Logging in Rancher
+# How to Set Up Multi-Cluster Logging in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ graph LR
 
 ```bash
 # Add Rancher charts repo
+
 helm repo add rancher-charts https://charts.rancher.io
 helm repo update
 
@@ -38,7 +39,7 @@ helm install rancher-logging rancher-charts/rancher-logging \
 ## Step 2: Create a ClusterFlow and ClusterOutput for OpenSearch
 
 ```yaml
-# opensearch-output.yaml — defines where to ship logs
+# opensearch-output.yaml - defines where to ship logs
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterOutput
 metadata:
@@ -69,7 +70,7 @@ spec:
 ```
 
 ```yaml
-# cluster-flow.yaml — defines what logs to collect and how to process them
+# cluster-flow.yaml - defines what logs to collect and how to process them
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:
@@ -105,7 +106,7 @@ spec:
 ## Step 3: Ship to Multiple Outputs
 
 ```yaml
-# multi-output-flow.yaml — ship to both OpenSearch and S3 for archive
+# multi-output-flow.yaml - ship to both OpenSearch and S3 for archive
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:
@@ -150,7 +151,7 @@ spec:
 ## Step 4: Configure Per-Namespace Flows
 
 ```yaml
-# application-flow.yaml — collect only application logs in the production namespace
+# application-flow.yaml - collect only application logs in the production namespace
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Flow
 metadata:
@@ -191,7 +192,7 @@ spec:
     - clusterSelector: {}   # Apply to all clusters
 ```
 
-```
+```text
 logging/
 ├── cluster-output-opensearch.yaml    # Shared output config
 ├── cluster-flow-production.yaml      # Production log flow

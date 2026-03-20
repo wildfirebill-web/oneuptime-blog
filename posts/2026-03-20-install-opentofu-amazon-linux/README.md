@@ -22,6 +22,7 @@ Amazon Linux is AWS's own Linux distribution optimized for running on EC2 instan
 
 ```bash
 # Add the OpenTofu repository
+
 cat <<EOF | sudo tee /etc/yum.repos.d/opentofu.repo
 [opentofu]
 name=opentofu

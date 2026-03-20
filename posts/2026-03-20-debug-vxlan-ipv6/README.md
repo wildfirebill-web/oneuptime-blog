@@ -20,7 +20,7 @@ flowchart TD
     G -->|Yes| I{MTU issue?}
     I -->|Yes| J[Fix MTU on all layers]
     I -->|No| K[Check inner frame / ARP]
-    B -->|Yes| L[Intermittent — check drops]
+    B -->|Yes| L[Intermittent - check drops]
 ```
 
 ## Step 1: Verify Underlay IPv6 Connectivity
@@ -38,11 +38,12 @@ for VTEP in "${REMOTE_VTEPS[@]}"; do
         RTT=$(ping6 -c 3 ${VTEP} | tail -1 | awk '{print $4}' | cut -d'/' -f2)
         echo "OK  ${VTEP} (avg ${RTT}ms)"
     else
-        echo "FAIL ${VTEP} — UNREACHABLE"
+        echo "FAIL ${VTEP} - UNREACHABLE"
     fi
 done
 
 # Check routing path
+
 echo ""
 echo "=== Route to Remote VTEP ==="
 ip -6 route get 2001:db8:2::1
@@ -74,7 +75,7 @@ bridge fdb show dev vxlan100
 # Expected FDB entry for remote VTEP:
 # 00:00:00:00:00:00 dev vxlan100 dst 2001:db8:2::1 self permanent
 
-# If FDB is empty — no traffic will reach remote VMs
+# If FDB is empty - no traffic will reach remote VMs
 # Add manual entry
 bridge fdb append 00:00:00:00:00:00 dev vxlan100 dst 2001:db8:2::1
 
@@ -160,4 +161,4 @@ vtysh -c "show bgp l2vpn evpn route local"
 
 ## Conclusion
 
-VXLAN over IPv6 debugging follows a layered approach: verify underlay IPv6 routing first, then VTEP UDP reachability, then FDB/EVPN control plane, then MTU. `tcpdump` with `udp port 4789` on the physical interface captures the full encapsulated VXLAN frames. `bridge fdb show` reveals the control plane state. MTU issues are the most common production problem — test with progressively larger ping sizes using the `do` option to prohibit fragmentation.
+VXLAN over IPv6 debugging follows a layered approach: verify underlay IPv6 routing first, then VTEP UDP reachability, then FDB/EVPN control plane, then MTU. `tcpdump` with `udp port 4789` on the physical interface captures the full encapsulated VXLAN frames. `bridge fdb show` reveals the control plane state. MTU issues are the most common production problem - test with progressively larger ping sizes using the `do` option to prohibit fragmentation.

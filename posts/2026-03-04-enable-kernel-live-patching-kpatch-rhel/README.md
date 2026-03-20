@@ -16,6 +16,7 @@ You need an active RHEL subscription that includes kernel live patching support.
 
 ```bash
 # Verify your subscription
+
 sudo subscription-manager status
 
 # Enable the kernel live patching repository

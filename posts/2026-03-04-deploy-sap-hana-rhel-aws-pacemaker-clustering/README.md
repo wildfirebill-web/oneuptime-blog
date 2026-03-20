@@ -16,6 +16,7 @@ Set up the required AWS resources:
 
 ```bash
 # Create an overlay IP address for the HANA virtual IP
+
 # This is configured as a secondary private IP or an overlay route
 
 # Tag EC2 instances for the cluster

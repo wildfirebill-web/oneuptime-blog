@@ -28,6 +28,7 @@ Crossplane resources expose health through standard Kubernetes conditions.
 
 ```bash
 # Check the conditions of a Crossplane managed resource
+
 kubectl get instance.rds.aws.upbound.io production-postgres \
   -o jsonpath='{.status.conditions}' | jq .
 

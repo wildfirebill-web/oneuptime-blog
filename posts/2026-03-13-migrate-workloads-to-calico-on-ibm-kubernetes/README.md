@@ -32,6 +32,7 @@ Download the IKS Calico configuration and configure calicoctl:
 
 ```bash
 # Log in to IBM Cloud and set the cluster context
+
 ibmcloud login -a https://cloud.ibm.com
 ibmcloud ks cluster config --cluster <cluster-name>
 

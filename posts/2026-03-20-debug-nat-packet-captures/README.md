@@ -10,7 +10,7 @@ Description: Learn how to use packet captures on both NAT interfaces to verify t
 
 To verify NAT is working correctly, capture on both the inside and outside interfaces simultaneously. The source IP should change between inside and outside captures.
 
-```
+```text
 Inside capture (eth0): src=192.168.1.10 → dst=8.8.8.8
 Outside capture (eth1): src=203.0.113.1 → dst=8.8.8.8  ← Translation confirmed
 ```
@@ -19,6 +19,7 @@ Outside capture (eth1): src=203.0.113.1 → dst=8.8.8.8  ← Translation confirm
 
 ```bash
 # Terminal 1: capture inside interface
+
 sudo tcpdump -n -i eth0 -w /tmp/inside.pcap host 192.168.1.10
 
 # Terminal 2: capture outside interface  

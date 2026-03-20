@@ -98,6 +98,7 @@ Load the tracing file before your application:
 
 ```bash
 # Using --require flag
+
 node --require ./tracing.js app.js
 
 # Or in package.json

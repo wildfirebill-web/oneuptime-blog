@@ -37,6 +37,7 @@ For example, in a typical web application, you might identify:
 
 ```text
 # Current flat structure
+
 resource "aws_vpc" "main" { ... }
 resource "aws_subnet" "public" { ... }
 resource "aws_subnet" "private" { ... }

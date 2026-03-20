@@ -16,6 +16,7 @@ Start with a proper `.gitignore`:
 
 ```gitignore
 # .gitignore for Ansible projects
+
 # Ignore retry files generated on playbook failures
 *.retry
 

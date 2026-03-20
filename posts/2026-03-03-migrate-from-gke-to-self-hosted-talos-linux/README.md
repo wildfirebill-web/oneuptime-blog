@@ -24,6 +24,7 @@ GKE clusters tend to accumulate GCP service dependencies. Before you can migrate
 
 ```bash
 # Check for GKE-specific Ingress (GCE Ingress Controller)
+
 kubectl get ingress --all-namespaces -o json | \
   jq '.items[] | select(.metadata.annotations["kubernetes.io/ingress.class"]=="gce" or .spec.ingressClassName=="gce")'
 

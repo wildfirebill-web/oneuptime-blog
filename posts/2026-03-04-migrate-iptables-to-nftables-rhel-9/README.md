@@ -103,6 +103,7 @@ Stop the iptables service and switch to nftables:
 
 ```bash
 # Stop and disable iptables
+
 systemctl stop iptables
 systemctl disable iptables
 

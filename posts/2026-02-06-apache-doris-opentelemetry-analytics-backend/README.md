@@ -40,6 +40,7 @@ Deploy a minimal Doris cluster using Docker Compose. This configuration runs one
 
 ```yaml
 # docker-compose.yml for Apache Doris
+
 version: "3"
 
 services:

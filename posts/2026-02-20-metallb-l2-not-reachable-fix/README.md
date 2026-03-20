@@ -42,6 +42,7 @@ First, verify that MetalLB actually assigned an IP to your service.
 
 ```bash
 # Check the external IP assigned to your LoadBalancer service
+
 # Look for the EXTERNAL-IP column - it should show an IP, not <pending>
 kubectl get svc -A | grep LoadBalancer
 ```

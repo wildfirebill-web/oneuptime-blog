@@ -16,6 +16,7 @@ When Ansible gathers facts, it populates several OS-related keys in the `ansible
 
 ```yaml
 # os-facts-overview.yml
+
 # Displays all major OS-related facts
 ---
 - name: Show OS facts

@@ -38,6 +38,7 @@ Operationalizing Calico log collection means defining clear procedures for routi
 ```bash
 #!/bin/bash
 # incident-calico-log-bundle.sh
+
 # Standard bundle for all Calico incidents
 
 INCIDENT_ID="${1:?Provide incident ID}"

@@ -8,7 +8,7 @@ Description: Configure NeuVector's Monitor mode to detect policy violations and 
 
 ## Introduction
 
-Monitor mode is NeuVector's middle tier between the permissive Discover mode and the enforcing Protect mode. In Monitor mode, NeuVector actively detects policy violations and generates security events — but does not block any traffic or processes. This makes Monitor mode ideal for validating your security policies without risking application disruption.
+Monitor mode is NeuVector's middle tier between the permissive Discover mode and the enforcing Protect mode. In Monitor mode, NeuVector actively detects policy violations and generates security events - but does not block any traffic or processes. This makes Monitor mode ideal for validating your security policies without risking application disruption.
 
 ## What Monitor Mode Does
 
@@ -33,6 +33,7 @@ Move groups from Discover to Monitor mode:
 
 ```bash
 # Move a specific group to Monitor mode
+
 curl -sk -X PATCH \
   "https://neuvector-manager:8443/v1/group/nv.webapp.production" \
   -H "Content-Type: application/json" \
@@ -234,4 +235,4 @@ fi
 
 ## Conclusion
 
-Monitor mode is the safety net between learning and enforcement. Spending adequate time in Monitor mode — typically 1-2 weeks for production workloads — dramatically reduces the risk of false positives disrupting your applications when you switch to Protect mode. Use the violation data to progressively refine your policies until you're confident that only genuine threats will be blocked.
+Monitor mode is the safety net between learning and enforcement. Spending adequate time in Monitor mode - typically 1-2 weeks for production workloads - dramatically reduces the risk of false positives disrupting your applications when you switch to Protect mode. Use the violation data to progressively refine your policies until you're confident that only genuine threats will be blocked.

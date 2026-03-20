@@ -85,6 +85,7 @@ Removing an Accept rule narrows the set of allowed routes. Verify no active serv
 
 ```bash
 # Check which routes are currently exchanged
+
 calicoctl node status
 
 # Verify no services use the CIDR being removed

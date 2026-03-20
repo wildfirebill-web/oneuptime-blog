@@ -12,7 +12,7 @@ IPv6 multicast addresses always start with the prefix `ff00::/8`. The high byte 
 
 The full 128-bit structure is:
 
-```
+```text
 |  8 bits  |  4 bits  |  4 bits  |        112 bits          |
 |  FF      |  flags   |  scope   |  group ID                |
 ```
@@ -21,7 +21,7 @@ The full 128-bit structure is:
 
 The 4 flag bits have specific meanings:
 
-```
+```text
 Bit 8  (highest): Reserved (must be 0)
 Bit 9:  R flag  - Rendezvous Point Embedded (RFC 3956)
 Bit 10: P flag  - Prefix-based (RFC 3306)
@@ -52,7 +52,7 @@ The 4-bit scope field determines the reach of the multicast traffic:
 
 ## Common Multicast Address Examples
 
-```
+```text
 ff01::1  - All nodes, interface-local scope
 ff02::1  - All nodes, link-local scope (most common)
 ff02::2  - All routers, link-local scope
@@ -72,7 +72,7 @@ ff0e::1  - All nodes, global scope
 
 To construct a multicast address:
 
-```
+```text
 1. Start with: ff
 2. Add flags nibble: 0 (well-known) or 1x (transient, set T bit)
 3. Add scope nibble: 2 (link-local), 5 (site-local), e (global)
@@ -90,7 +90,7 @@ Result: ff02::1
 
 A special multicast derived from a unicast address, used for Neighbor Discovery:
 
-```
+```text
 Format: ff02::1:ff00:0/104 + last 24 bits of unicast address
 
 Example: Unicast 2001:db8::1
@@ -102,6 +102,7 @@ Solicited-node: ff02::1:ff00:0001 = ff02::1:ff00:1
 
 ```bash
 # View multicast groups the system has joined
+
 ip -6 maddr show
 
 # Example output:
@@ -118,7 +119,7 @@ ip -6 maddr show dev eth0
 
 RFC 3306 defines prefix-based multicast addresses where the group ID is derived from a unicast prefix:
 
-```
+```text
 Format with P=1, T=1:
 ff3<scope>::<plen><prefix><group>
 

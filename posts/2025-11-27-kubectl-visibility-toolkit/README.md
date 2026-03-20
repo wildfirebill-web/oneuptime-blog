@@ -18,6 +18,7 @@ These three commands give you a quick snapshot of your cluster's infrastructure.
 
 ```bash
 # List all nodes with extra details (IPs, OS, kubelet version)
+
 # The -o wide flag adds columns for internal IP, external IP, OS image, and kernel version
 kubectl get nodes -o wide
 

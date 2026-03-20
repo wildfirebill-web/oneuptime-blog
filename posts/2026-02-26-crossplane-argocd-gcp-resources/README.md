@@ -18,6 +18,7 @@ After Crossplane is installed in your cluster, add the GCP provider:
 
 ```yaml
 # crossplane/provider-gcp.yaml
+
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:

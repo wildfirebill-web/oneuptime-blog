@@ -18,6 +18,7 @@ Before upgrading, verify cluster health and backup critical data.
 
 ```bash
 # Check current cluster version
+
 kubectl version --short
 kubectl get nodes
 

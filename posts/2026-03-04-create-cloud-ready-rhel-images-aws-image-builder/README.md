@@ -14,6 +14,7 @@ RHEL Image Builder can produce Amazon Machine Images (AMIs) ready for deployment
 
 ```toml
 # aws-webserver.toml
+
 name = "aws-webserver"
 description = "Custom RHEL image for AWS web servers"
 version = "1.0.0"

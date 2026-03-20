@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Migration, Linux, sysadmin, Network Management
+Tags: DHCP, Migration, Linux, Sysadmin, Network Management
 
 Description: Migrating a DHCP server involves exporting the configuration and lease database from the old server, importing on the new server, and performing a controlled cutover to minimize client disruption.
 
@@ -21,6 +21,7 @@ flowchart LR
 
 ```bash
 # On the old DHCP server
+
 # Backup configuration
 sudo cp /etc/dhcp/dhcpd.conf /tmp/dhcpd.conf.backup
 

@@ -28,6 +28,7 @@ BlockAffinity resources track which nodes have affinity to which IP blocks.
 
 ```bash
 # List all BlockAffinity resources in the cluster
+
 calicoctl get blockaffinity -o wide
 
 # View a specific BlockAffinity in detail

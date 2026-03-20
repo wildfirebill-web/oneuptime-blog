@@ -34,6 +34,7 @@ Metabase runs on the JVM and requires Java 11 or later.
 
 ```bash
 # Install OpenJDK 17
+
 sudo dnf install -y java-17-openjdk java-17-openjdk-devel
 
 # Verify the installation

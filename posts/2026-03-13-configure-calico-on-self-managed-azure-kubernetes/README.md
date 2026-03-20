@@ -29,6 +29,7 @@ Configure the VMs and network before initializing the cluster.
 
 ```bash
 # On all nodes - disable swap (required for Kubernetes)
+
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 

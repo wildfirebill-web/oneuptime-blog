@@ -38,6 +38,7 @@ You can enable approval when creating a new trigger or update an existing one:
 
 ```bash
 # Create a trigger with manual approval required
+
 gcloud builds triggers create github \
   --name="deploy-production" \
   --repo-name="my-app" \

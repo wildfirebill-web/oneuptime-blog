@@ -30,6 +30,7 @@ This command shows the maximum ENI count and IPs per interface for a given insta
 
 ```bash
 # Check ENI limits for an instance type
+
 aws ec2 describe-instance-types \
   --instance-types m5.large \
   --query 'InstanceTypes[].NetworkInfo.{MaxENIs: MaximumNetworkInterfaces, IPv4PerENI: Ipv4AddressesPerInterface}'

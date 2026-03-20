@@ -34,6 +34,7 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock
 
 ```bash
 # Check Docker status
+
 sudo systemctl status docker
 
 # Start Docker if stopped

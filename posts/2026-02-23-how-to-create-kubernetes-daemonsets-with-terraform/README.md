@@ -16,6 +16,7 @@ This guide walks through creating DaemonSets with Terraform for common use cases
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

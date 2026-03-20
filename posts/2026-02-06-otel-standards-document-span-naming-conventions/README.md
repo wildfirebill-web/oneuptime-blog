@@ -21,12 +21,13 @@ Your standards document should have four major sections:
 
 Keep each section focused and include plenty of examples. Engineers will skim this document looking for the section relevant to their current task.
 
-## Resource Attributes
+Resource Attributes
 
 Resource attributes describe the service itself. They are attached to every piece of telemetry a service emits. Define the required set:
 
 ```yaml
 # Required resource attributes for all services
+
 resource:
   service.name: "order-service"          # Must match the Kubernetes deployment name
   service.version: "2.4.1"               # Semantic version from build pipeline

@@ -30,6 +30,7 @@ Determine how Cilium was originally installed.
 
 ```bash
 # Check if Cilium was installed via Helm (check for Helm release)
+
 helm list -A | grep -i cilium
 
 # Check if installed via raw manifests

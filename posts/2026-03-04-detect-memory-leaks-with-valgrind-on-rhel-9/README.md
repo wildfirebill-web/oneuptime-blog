@@ -22,6 +22,7 @@ Run Valgrind to detect memory leaks:
 
 ```bash
 # Install Valgrind
+
 sudo dnf install -y valgrind
 
 # Run with leak detection

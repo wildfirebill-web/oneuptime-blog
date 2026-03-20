@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, rc.conf, Network Configuration, SLAAC
+Tags: IPv6, FreeBSD, Rc.conf, Network Configuration, SLAAC
 
 Description: A comprehensive reference for IPv6-related rc.conf settings on FreeBSD, covering SLAAC, static addressing, routing, and system-wide IPv6 options.
 
@@ -10,6 +10,7 @@ Description: A comprehensive reference for IPv6-related rc.conf settings on Free
 
 ```bash
 # /etc/rc.conf is the primary configuration file for FreeBSD services
+
 # IPv6 networking variables:
 
 # Enable IPv6 on all interfaces

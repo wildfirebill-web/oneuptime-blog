@@ -88,6 +88,7 @@ Note that many legitimate daemons also have PPID 1, so not all results are probl
 ```bash
 #!/bin/bash
 # Use wait to reap children
+
 child_process &
 wait $!
 ```

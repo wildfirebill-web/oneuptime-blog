@@ -45,6 +45,7 @@ Here's the static configuration file that enables OTLP trace export.
 
 ```yaml
 # traefik.yaml
+
 # Traefik static configuration with OpenTelemetry tracing enabled
 
 # Enable the API dashboard for debugging

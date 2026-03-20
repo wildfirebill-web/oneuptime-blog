@@ -70,6 +70,7 @@ repo/
 
 ```yaml
 # infrastructure/sources/kyverno-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

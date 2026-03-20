@@ -33,6 +33,7 @@ This template file accepts parameters for the project path and build configurati
 
 ```yaml
 # templates/steps/dotnet-build.yml
+
 # Reusable step template for building and testing .NET projects
 parameters:
   - name: projectPath

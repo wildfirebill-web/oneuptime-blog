@@ -53,6 +53,7 @@ For scripted or automated removal across multiple environments:
 
 ```bash
 # Authenticate
+
 TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r '.jwt')

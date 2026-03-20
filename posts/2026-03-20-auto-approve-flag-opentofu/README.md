@@ -14,6 +14,7 @@ The `-auto-approve` flag skips the interactive "yes/no" confirmation prompt in `
 
 ```bash
 # Apply without confirmation
+
 tofu apply -auto-approve
 
 # Destroy without confirmation
@@ -21,7 +22,7 @@ tofu destroy -auto-approve
 ```
 
 Without `-auto-approve`:
-```
+```hcl
 Do you want to perform these actions?
   OpenTofu will perform the actions described above.
   Only 'yes' will be accepted to approve.
@@ -111,14 +112,14 @@ tofu apply -refresh-only -auto-approve
 ENVIRONMENT="${1}"
 
 if [ "$ENVIRONMENT" = "production" ]; then
-  echo "Production deployment — requiring manual review..."
+  echo "Production deployment - requiring manual review..."
   tofu plan -out=prod.tfplan
   tofu show prod.tfplan
   echo "Type 'yes' to apply to production:"
   read -r CONFIRM
   [ "$CONFIRM" = "yes" ] && tofu apply prod.tfplan
 else
-  echo "Non-production deployment — auto-approving..."
+  echo "Non-production deployment - auto-approving..."
   tofu apply -auto-approve -var="environment=${ENVIRONMENT}"
 fi
 ```

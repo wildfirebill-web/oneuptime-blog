@@ -26,6 +26,7 @@ There are two types:
 
 ```bash
 # Watch context switches system-wide
+
 vmstat 1
 
 # The 'cs' column shows context switches per second

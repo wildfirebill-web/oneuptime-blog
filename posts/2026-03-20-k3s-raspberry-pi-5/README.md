@@ -34,6 +34,7 @@ Use the official 64-bit Raspberry Pi OS Lite for the Pi 5:
 
 ```bash
 # SSH into the Pi 5
+
 ssh pi@raspberrypi5.local
 
 # Update the system
@@ -242,4 +243,4 @@ kubectl logs cpu-test
 
 ## Conclusion
 
-The Raspberry Pi 5 is a compelling upgrade for K3s deployments. Its faster CPU, PCIe/NVMe storage capability, and improved power management make it suitable for production edge workloads that would overwhelm a Pi 4. The key setup steps are the same as Pi 4 — enable cgroup memory, disable swap, and configure appropriate resource limits — but you'll find the Pi 5 handles Kubernetes workloads with much more headroom. Paired with an NVMe SSD via the M.2 HAT, it becomes a genuine small-form-factor Kubernetes server.
+The Raspberry Pi 5 is a compelling upgrade for K3s deployments. Its faster CPU, PCIe/NVMe storage capability, and improved power management make it suitable for production edge workloads that would overwhelm a Pi 4. The key setup steps are the same as Pi 4 - enable cgroup memory, disable swap, and configure appropriate resource limits - but you'll find the Pi 5 handles Kubernetes workloads with much more headroom. Paired with an NVMe SSD via the M.2 HAT, it becomes a genuine small-form-factor Kubernetes server.

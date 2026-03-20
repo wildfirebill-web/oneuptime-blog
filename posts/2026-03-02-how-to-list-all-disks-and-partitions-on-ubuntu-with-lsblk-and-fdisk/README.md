@@ -36,6 +36,7 @@ nvme0n1 259:0   0  500G  0 disk
 
 ```bash
 # Show filesystem type and UUID
+
 lsblk -f
 
 # Show size in bytes instead of human-readable

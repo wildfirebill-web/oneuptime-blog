@@ -53,6 +53,7 @@ Create the shared services VPC with endpoint subnets:
 
 ```bash
 # Create the shared services VPC
+
 aws ec2 create-vpc \
   --cidr-block 10.0.0.0/16 \
   --tag-specifications 'ResourceType=vpc,Tags=[{Key=Name,Value=shared-services-vpc}]'

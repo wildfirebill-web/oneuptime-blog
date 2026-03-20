@@ -1,4 +1,4 @@
-# How to Capture IPv4 Packets with tcpdump on Linux
+# How to Capture IPv4 Packets with tcpdump on Linux - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,6 +12,7 @@ tcpdump is the standard packet capture tool on Linux. It captures network packet
 
 ```bash
 # Install (usually pre-installed)
+
 sudo apt install tcpdump -y
 
 # Capture all packets on default interface
@@ -142,4 +143,4 @@ sudo tcpdump -nn 'udp port 53'
 sudo tcpdump -nn -A 'tcp port 80 and tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420'
 ```
 
-tcpdump is indispensable for network debugging — it lets you see exactly what's on the wire when application logs and connection tools aren't giving you enough information.
+tcpdump is indispensable for network debugging - it lets you see exactly what's on the wire when application logs and connection tools aren't giving you enough information.

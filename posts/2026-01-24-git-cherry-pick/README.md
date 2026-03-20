@@ -42,6 +42,7 @@ Find the commit hash and apply it to your current branch.
 
 ```bash
 # View commits on another branch
+
 git log develop --oneline
 # abc1234 Add feature B
 # def5678 Fix critical login bug   <-- this one

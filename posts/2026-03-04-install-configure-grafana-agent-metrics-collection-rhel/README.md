@@ -14,6 +14,7 @@ The Grafana Agent (now called Grafana Alloy) is a lightweight telemetry collecto
 
 ```bash
 # Add the Grafana repository
+
 sudo tee /etc/yum.repos.d/grafana.repo << 'EOF'
 [grafana]
 name=grafana

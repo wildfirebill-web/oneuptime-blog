@@ -18,6 +18,7 @@ When you do not specify a module with `-m`, Ansible uses the `command` module by
 
 ```bash
 # These two are identical - command is the default module
+
 ansible webservers -a "uptime"
 ansible webservers -m command -a "uptime"
 

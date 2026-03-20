@@ -43,6 +43,7 @@ Block or allow traffic from specific countries:
 
 ```bash
 # Block traffic from two specific countries
+
 gcloud compute security-policies rules create 1000 \
   --security-policy=my-policy \
   --expression="origin.region_code == 'XX' || origin.region_code == 'YY'" \

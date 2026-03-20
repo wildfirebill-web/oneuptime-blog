@@ -30,6 +30,7 @@ The most important step is pinning all dependencies to exact versions.
 
 ```dockerfile
 # Dockerfile with fully pinned dependencies for reproducibility
+
 # Pin the base image by digest, not just tag
 FROM python:3.12.2-slim@sha256:abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890
 

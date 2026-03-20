@@ -18,6 +18,7 @@ The most aggressive approach is blacklisting the USB storage kernel module entir
 
 ```bash
 # Check if usb-storage is currently loaded
+
 lsmod | grep usb_storage
 
 # Blacklist the module permanently

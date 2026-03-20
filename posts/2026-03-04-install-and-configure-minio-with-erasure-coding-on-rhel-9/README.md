@@ -20,6 +20,7 @@ Minio with Erasure Coding can be installed and configured on RHEL to provide rob
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

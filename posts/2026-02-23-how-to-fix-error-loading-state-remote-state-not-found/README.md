@@ -43,6 +43,7 @@ First, check that your backend configuration is correct:
 
 ```hcl
 # Check the backend block in your configuration
+
 terraform {
   backend "s3" {
     bucket = "my-terraform-state"       # Is this the right bucket?

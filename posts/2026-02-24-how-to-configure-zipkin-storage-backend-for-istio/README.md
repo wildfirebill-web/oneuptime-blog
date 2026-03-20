@@ -383,6 +383,7 @@ Check that Zipkin is connected to the storage backend and traces are being persi
 
 ```bash
 # Check Zipkin logs
+
 kubectl logs -n istio-system -l app=zipkin --tail=50
 
 # Access the Zipkin UI

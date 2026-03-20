@@ -16,6 +16,7 @@ Before tuning anything, you need to know what normal looks like. Collect these m
 
 ```bash
 # Current active connections per service
+
 kubectl exec deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "cx_active"
 

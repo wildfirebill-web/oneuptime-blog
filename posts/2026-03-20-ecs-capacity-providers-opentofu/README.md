@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, ECS, Capacity Providers, Auto Scaling, EC2, Infrastructure as Code
+Tags: OpenTofu, AWS, ECS, Capacity Provider, Auto Scaling, EC2, Infrastructure as Code
 
 Description: Learn how to configure ECS capacity providers with OpenTofu using managed scaling for EC2 Auto Scaling groups, enabling automatic EC2 instance provisioning based on task placement needs.
 
@@ -19,6 +19,7 @@ ECS Capacity Providers manage the relationship between an ECS cluster and its co
 
 ```hcl
 # Launch template for ECS EC2 instances
+
 resource "aws_launch_template" "ecs" {
   name_prefix   = "${var.project_name}-ecs-"
   image_id      = data.aws_ami.ecs_optimized.id

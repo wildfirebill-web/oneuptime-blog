@@ -126,6 +126,7 @@ A typical canary rollout progresses through multiple weight adjustments:
 
 ```bash
 # Stage 1: 5% canary
+
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1
 kind: VirtualService

@@ -41,6 +41,7 @@ The OpenTelemetry Collector's `kafkametrics` receiver connects to Kafka brokers 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Kafka metrics receiver scrapes broker and consumer group metrics
   kafkametrics:

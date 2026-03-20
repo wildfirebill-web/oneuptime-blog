@@ -45,6 +45,7 @@ Mosquitto serves as the message broker that IoT gateways push data to.
 
 ```bash
 # Enable the EPEL repository for Mosquitto
+
 sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 
 # Install the Mosquitto MQTT broker

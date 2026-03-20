@@ -14,6 +14,7 @@ Chiron is a Python-based IPv6 security assessment framework built on top of Scap
 
 ```bash
 # Install dependencies
+
 sudo apt-get install python3 python3-pip scapy
 
 # Install Chiron

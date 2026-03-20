@@ -93,6 +93,7 @@ Before installing Bacula, ensure your system meets the following requirements:
 
 ```bash
 # Update system packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required dependencies

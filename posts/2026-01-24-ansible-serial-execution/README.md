@@ -42,6 +42,7 @@ flowchart TB
 ```yaml
 ---
 # Update 2 hosts at a time
+
 - name: Rolling application update
   hosts: webservers
   serial: 2

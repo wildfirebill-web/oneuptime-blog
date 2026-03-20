@@ -8,7 +8,7 @@ Description: Learn how to create an AWS Application Load Balancer with OpenTofu,
 
 ## Introduction
 
-An Application Load Balancer (ALB) distributes HTTP/HTTPS traffic across multiple targets. OpenTofu manages the ALB, its listeners, target groups, and routing rules as code—making it easy to configure HTTPS with ACM certificates, path-based routing, and automatic HTTP-to-HTTPS redirects.
+An Application Load Balancer (ALB) distributes HTTP/HTTPS traffic across multiple targets. OpenTofu manages the ALB, its listeners, target groups, and routing rules as code-making it easy to configure HTTPS with ACM certificates, path-based routing, and automatic HTTP-to-HTTPS redirects.
 
 ## Security Group for ALB
 

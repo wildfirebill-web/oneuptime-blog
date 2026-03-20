@@ -48,6 +48,7 @@ First, enable the feature through the ArgoCD configuration:
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

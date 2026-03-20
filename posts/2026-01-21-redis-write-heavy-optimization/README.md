@@ -339,6 +339,7 @@ class AsyncBatchWriter:
 
 
 # Usage example
+
 def main():
     client = redis.Redis(decode_responses=True)
 

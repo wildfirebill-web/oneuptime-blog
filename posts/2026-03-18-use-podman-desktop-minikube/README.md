@@ -20,6 +20,7 @@ Install Minikube and configure it for Podman:
 
 ```bash
 # Install Minikube on macOS
+
 brew install minikube
 
 # Or download directly for Linux

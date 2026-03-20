@@ -27,6 +27,7 @@ The first thing to check is whether your backends are actually healthy.
 
 ```bash
 # Check the health status of backends in the backend service
+
 gcloud compute backend-services get-health my-backend-service \
     --global \
     --project=my-project

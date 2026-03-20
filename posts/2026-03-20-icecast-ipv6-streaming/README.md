@@ -14,6 +14,7 @@ Icecast is a streaming media server for audio and video. It supports IPv6 throug
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install icecast2 -y
 
 # Configuration wizard runs during install

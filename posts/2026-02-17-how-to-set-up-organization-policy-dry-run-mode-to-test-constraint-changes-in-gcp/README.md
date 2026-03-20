@@ -45,6 +45,7 @@ First, create the policy YAML file with the dry-run spec:
 
 ```yaml
 # vm-external-ip-dryrun.yaml
+
 # Test restricting external IP access without enforcing it
 name: projects/my-project-id/policies/compute.vmExternalIpAccess
 spec:
@@ -123,7 +124,7 @@ Then create a dashboard or alert based on this metric to track how violations tr
 
 Here are dry-run configurations for other commonly used constraints.
 
-### Resource Location Restriction
+Resource Location Restriction
 
 ```yaml
 # location-restriction-dryrun.yaml

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, Angular, Caching, Deployment, Web Development
+Tags: Nginx, Angular, Caching, Deployment, Web Development
 
 Description: Learn how to configure Nginx to properly handle Angular application caching after deployments, ensuring users always get the latest version while maintaining optimal performance.
 
@@ -208,6 +208,7 @@ If you're using Angular's PWA features with service workers, special attention i
 
 ```nginx
 # Service worker files must NEVER be cached
+
 location ~ ^/(ngsw-worker\.js|ngsw\.json|safety-worker\.js)$ {
     expires -1;
     add_header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0";

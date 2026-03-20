@@ -53,6 +53,7 @@ First, create the global database resource:
 
 ```bash
 # Create the global database cluster
+
 aws rds create-global-cluster \
   --global-cluster-identifier my-global-db \
   --source-db-cluster-identifier arn:aws:rds:us-east-1:123456789012:cluster:my-primary-cluster \

@@ -191,6 +191,7 @@ Deploy the Cloud Function:
 
 ```bash
 # Deploy the geo API function
+
 gcloud functions deploy bigquery-geo-api \
   --gen2 \
   --runtime=python311 \

@@ -22,6 +22,7 @@ You need a Docker Hub account and a local image to push.
 # Create a Docker Hub account at https://hub.docker.com if you don't have one
 
 # Verify Podman is installed
+
 podman --version
 
 # Have an image ready to push

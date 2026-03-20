@@ -79,6 +79,7 @@ Create a workflow that enables auto-merge for qualifying PRs:
 
 ```yaml
 # .github/workflows/auto-merge.yaml
+
 name: Auto-Merge Low Risk Changes
 on:
   pull_request:

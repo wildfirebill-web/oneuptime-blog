@@ -112,6 +112,7 @@ First, update your package index and install the mdadm package, which provides a
 
 ```bash
 # Update package lists to ensure we get the latest version
+
 sudo apt update
 
 # Install mdadm along with useful utilities for disk management

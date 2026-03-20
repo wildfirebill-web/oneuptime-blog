@@ -39,6 +39,7 @@ You need a private pool when your builds need to:
 
 ```bash
 # Enable the Cloud Build and Service Networking APIs
+
 gcloud services enable cloudbuild.googleapis.com
 gcloud services enable servicenetworking.googleapis.com
 gcloud services enable compute.googleapis.com

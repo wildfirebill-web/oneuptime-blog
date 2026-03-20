@@ -26,6 +26,7 @@ Create the Prometheus configuration:
 
 ```yaml
 # ~/prometheus/config/prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

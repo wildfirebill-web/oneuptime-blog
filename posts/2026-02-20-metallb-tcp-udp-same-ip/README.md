@@ -16,6 +16,7 @@ Consider a DNS server that needs to listen on port 53 for both TCP and UDP. In K
 
 ```yaml
 # THIS DOES NOT WORK for LoadBalancer type
+
 # Kubernetes rejects mixed protocols on LoadBalancer services
 apiVersion: v1
 kind: Service

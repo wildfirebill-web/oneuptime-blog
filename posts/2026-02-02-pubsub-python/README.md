@@ -78,6 +78,7 @@ Enable the Pub/Sub API in your GCP project using the gcloud CLI.
 
 ```bash
 # Set your project ID
+
 export PROJECT_ID="your-project-id"
 
 # Set the project

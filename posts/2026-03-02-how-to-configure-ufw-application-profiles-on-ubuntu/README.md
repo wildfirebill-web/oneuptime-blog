@@ -18,6 +18,7 @@ UFW profiles are stored as text files in `/etc/ufw/applications.d/`. Many packag
 
 ```bash
 # List all available application profiles
+
 sudo ufw app list
 ```
 
@@ -66,6 +67,7 @@ sudo ufw app info 'Apache Full'
 Profile: Apache Full
 Title: Web Server (HTTP,HTTPS)
 Description: Apache v2 is the next generation of the omnipresent Apache web
+
 server.
 
 Ports:

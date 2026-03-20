@@ -28,6 +28,7 @@ First, we need a Kubernetes cluster where ArgoCD will run and deploy workloads.
 
 ```hcl
 # eks.tf - Kubernetes cluster for GitOps
+
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 19.0"

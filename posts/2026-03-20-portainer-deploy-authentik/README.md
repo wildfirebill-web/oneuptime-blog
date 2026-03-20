@@ -1,4 +1,4 @@
-# How to Deploy Authentik via Portainer
+# How to Deploy Authentik via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -142,6 +142,7 @@ Enable LDAP for integrating with other services:
 
 ```bash
 # Generate a strong secret key
+
 python3 -c "import secrets; print(secrets.token_hex(50))"
 ```
 

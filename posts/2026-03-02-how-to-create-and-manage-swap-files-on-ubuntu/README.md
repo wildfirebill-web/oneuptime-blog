@@ -14,6 +14,7 @@ Swap provides overflow memory capacity when physical RAM is exhausted. Ubuntu 22
 
 ```bash
 # Show all swap spaces
+
 swapon --show
 
 # Or

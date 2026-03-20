@@ -26,6 +26,7 @@ This guide covers deploying Fission on Kubernetes using Flux CD HelmRelease and 
 
 ```yaml
 # clusters/my-cluster/fission/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

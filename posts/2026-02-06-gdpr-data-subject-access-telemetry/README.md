@@ -29,6 +29,7 @@ Here is a Python span processor that pseudonymizes user identifiers:
 
 ```python
 # Pseudonymize user identifiers in spans before export
+
 import hashlib
 import hmac
 from opentelemetry.sdk.trace.export import SpanExporter

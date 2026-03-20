@@ -197,6 +197,7 @@ In your Flux configuration repository, set up the `ImageRepository` to scan for 
 
 ```yaml
 # clusters/my-cluster/image-repos/app-image-repo.yaml
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

@@ -12,6 +12,7 @@ DNS failures in pods are a common issue that often presents as application conne
 
 ```bash
 # Deploy a debug pod with DNS tools
+
 kubectl run dnstest --image=alpine --restart=Never -- sleep 3600
 
 # Test basic Kubernetes service resolution

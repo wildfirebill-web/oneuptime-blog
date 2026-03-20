@@ -340,6 +340,7 @@ Here's a full security configuration for a three-tier application:
 
 ```yaml
 # Deny all by default
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

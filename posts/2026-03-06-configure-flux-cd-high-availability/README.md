@@ -35,6 +35,7 @@ Before configuring HA, ensure you have:
 
 ```bash
 # Bootstrap Flux with HA components
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

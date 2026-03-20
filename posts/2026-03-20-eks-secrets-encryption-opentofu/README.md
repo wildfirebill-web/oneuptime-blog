@@ -8,7 +8,7 @@ Description: Learn how to enable envelope encryption for Kubernetes Secrets in E
 
 ## Introduction
 
-By default, Kubernetes Secrets are stored in base64-encoded format in etcd—not encrypted. EKS envelope encryption uses AWS KMS to encrypt the envelope encryption key that protects Secrets, providing a strong security layer for credentials, tokens, and certificates stored as Kubernetes Secrets.
+By default, Kubernetes Secrets are stored in base64-encoded format in etcd-not encrypted. EKS envelope encryption uses AWS KMS to encrypt the envelope encryption key that protects Secrets, providing a strong security layer for credentials, tokens, and certificates stored as Kubernetes Secrets.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ By default, Kubernetes Secrets are stored in base64-encoded format in etcd—not
 
 ```hcl
 # Dedicated KMS key for encrypting Kubernetes Secrets
+
 resource "aws_kms_key" "eks_secrets" {
   description             = "KMS key for EKS secrets encryption - ${var.cluster_name}"
   deletion_window_in_days = 30
@@ -155,4 +156,4 @@ tofu apply
 
 ## Conclusion
 
-EKS envelope encryption protects Kubernetes Secrets using AWS KMS, ensuring that even if etcd storage were compromised, secrets would remain encrypted. Once enabled, encryption cannot be disabled, so plan your KMS key management carefully—including key rotation policies, backup, and cross-account access if needed. Monitor KMS API call volumes in CloudTrail as each secret creation or retrieval generates KMS API calls.
+EKS envelope encryption protects Kubernetes Secrets using AWS KMS, ensuring that even if etcd storage were compromised, secrets would remain encrypted. Once enabled, encryption cannot be disabled, so plan your KMS key management carefully-including key rotation policies, backup, and cross-account access if needed. Monitor KMS API call volumes in CloudTrail as each secret creation or retrieval generates KMS API calls.

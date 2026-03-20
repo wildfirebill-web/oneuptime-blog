@@ -18,6 +18,7 @@ The trick here is to use two pipelines with complementary sampling rates. The pr
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:
@@ -158,7 +159,7 @@ curl -s "http://localhost:8888/metrics" | \
   grep otelcol_exporter_send_failed_spans
 ```
 
-## Resource Attribute Tagging
+Resource Attribute Tagging
 
 Add an attribute so you know which routing path a trace took. This is invaluable for debugging:
 

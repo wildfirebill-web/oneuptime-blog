@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers, Go
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider, Go
 
 Description: Learn the fundamentals of developing a custom OpenTofu provider in Go using the Plugin Framework to manage resources in any API.
 
 ## Introduction
 
-A custom OpenTofu provider lets you manage resources in any API — internal services, proprietary systems, or APIs not covered by community providers. Providers are written in Go using the Terraform Plugin Framework, which is also compatible with OpenTofu.
+A custom OpenTofu provider lets you manage resources in any API - internal services, proprietary systems, or APIs not covered by community providers. Providers are written in Go using the Terraform Plugin Framework, which is also compatible with OpenTofu.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ A custom OpenTofu provider lets you manage resources in any API — internal ser
 
 ```bash
 # Create a new provider project
+
 mkdir terraform-provider-petstore
 cd terraform-provider-petstore
 
@@ -32,7 +33,7 @@ go get github.com/hashicorp/terraform-plugin-framework@latest
 
 ## Provider Structure
 
-```
+```text
 terraform-provider-petstore/
 ├── main.go                   # Entry point
 ├── internal/
@@ -75,7 +76,7 @@ func (p *PetstoreProvider) Schema(_ context.Context, _ provider.SchemaRequest, r
 }
 ```
 
-## Resource Implementation
+Resource Implementation
 
 ```go
 // internal/provider/pet_resource.go

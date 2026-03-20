@@ -16,6 +16,7 @@ The `tostring` function converts a value to a string type. It works with numbers
 
 ```hcl
 # Convert a number to string
+
 > tostring(42)
 "42"
 

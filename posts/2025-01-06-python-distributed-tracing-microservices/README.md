@@ -42,6 +42,7 @@ First, let's set up a shared OpenTelemetry configuration that all microservices 
 
 ```python
 # telemetry.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

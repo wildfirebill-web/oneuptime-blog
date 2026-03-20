@@ -97,6 +97,7 @@ Istio 1.22 and later supports Kubernetes native sidecar containers (a feature th
 
 ```bash
 # Make sure your Istio installation uses native sidecars
+
 istioctl install --set values.pilot.env.ENABLE_NATIVE_SIDECARS=true
 ```
 
@@ -223,7 +224,7 @@ spec:
 
 This allows your batch job's service account to access the data API.
 
-## Resource Configuration for Sidecar in Batch Jobs
+Resource Configuration for Sidecar in Batch Jobs
 
 Batch jobs often run on nodes with limited resources. Keep the sidecar lightweight:
 

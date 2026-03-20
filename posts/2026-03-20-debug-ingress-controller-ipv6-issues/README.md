@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Ingress, Networking, Debugging, NGINX
+Tags: Kubernetes, IPv6, Ingress, Networking, Debugging, Nginx
 
 Description: A practical guide to diagnosing and resolving common IPv6 connectivity problems with Kubernetes Ingress controllers.
 
@@ -21,7 +21,8 @@ IPv6 support in Kubernetes Ingress controllers can be tricky to debug because is
 First, confirm that your cluster's API server and nodes are configured for IPv6 or dual-stack.
 
 ```bash
-# Check node addresses — look for IPv6 entries
+# Check node addresses - look for IPv6 entries
+
 kubectl get nodes -o wide
 
 # Inspect the node's podCIDR for IPv6 range

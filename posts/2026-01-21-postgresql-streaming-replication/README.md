@@ -33,6 +33,7 @@ flowchart TB
 
 ```conf
 # Connection settings
+
 listen_addresses = '*'
 port = 5432
 

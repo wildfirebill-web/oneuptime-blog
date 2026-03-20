@@ -36,6 +36,7 @@ Here is a complete Makefile for a Docker build pipeline. Each section is explain
 
 ```makefile
 # Makefile - Docker build pipeline
+
 # Usage: make [target]
 # Run 'make help' to see all available targets
 

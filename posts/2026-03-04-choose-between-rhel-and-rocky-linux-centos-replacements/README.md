@@ -16,6 +16,7 @@ Rocky Linux rebuilds RHEL source packages to produce a binary-compatible distrib
 
 ```bash
 # Rocky Linux: Check the release
+
 cat /etc/rocky-release
 # Rocky Linux release 9.3 (Blue Onyx)
 

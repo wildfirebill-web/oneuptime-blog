@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Ping, Traceroute, Mtr, Troubleshooting
+Tags: Ubuntu, Networking, Ping, Traceroute, mtr, Troubleshooting
 
 Description: Use ping, traceroute, and mtr effectively on Ubuntu to diagnose network connectivity issues, measure latency, and identify routing problems.
 
@@ -18,6 +18,7 @@ Network connectivity troubleshooting almost always starts with three tools: `pin
 
 ```bash
 # Ping a hostname
+
 ping google.com
 
 # Ping an IP address

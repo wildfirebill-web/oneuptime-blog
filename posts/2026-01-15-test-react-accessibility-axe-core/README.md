@@ -897,6 +897,7 @@ describe('ResponsiveNav accessibility', () => {
 
 ```yaml
 # .github/workflows/accessibility.yml
+
 name: Accessibility Tests
 
 on:

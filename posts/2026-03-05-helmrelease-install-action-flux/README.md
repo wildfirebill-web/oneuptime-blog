@@ -22,6 +22,7 @@ Here is a HelmRelease with common install options.
 
 ```yaml
 # helmrelease.yaml - HelmRelease with install configuration
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

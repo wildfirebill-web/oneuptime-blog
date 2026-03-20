@@ -25,6 +25,7 @@ Different eBPF features require different kernel minimum versions:
 
 ```bash
 # Just checking major.minor is not enough
+
 # Some cloud providers backport security fixes but not all features
 
 # WRONG - only checking major version

@@ -308,6 +308,7 @@ TEAM_NAME=$1
 TEAM_GROUP=$2
 
 # Create namespace
+
 kubectl create namespace "$TEAM_NAME"
 kubectl label namespace "$TEAM_NAME" istio-injection=enabled team="$TEAM_NAME"
 

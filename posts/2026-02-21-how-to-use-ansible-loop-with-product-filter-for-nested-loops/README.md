@@ -26,6 +26,7 @@ That is 2 x 3 = 6 combinations.
 
 ```yaml
 # Generate all combinations of users and databases
+
 - name: Grant database access for all user-database combinations
   ansible.builtin.debug:
     msg: "Granting {{ item.0 }} access to {{ item.1 }}"

@@ -25,6 +25,7 @@ The simplest approach is a cron job that runs AIDE daily and logs the output:
 
 ```bash
 # Create a cron job for daily AIDE checks at 3 AM
+
 sudo crontab -e
 ```
 

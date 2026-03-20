@@ -52,6 +52,7 @@ Each environment's inventory file defines its own hosts:
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     webservers:

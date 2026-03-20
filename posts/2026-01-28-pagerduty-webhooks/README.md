@@ -75,6 +75,7 @@ def create_webhook(api_key, service_id, endpoint_url, events):
     return response.json()
 
 # Create a webhook for incident lifecycle events
+
 create_webhook(
     api_key="YOUR_API_KEY",
     service_id="PSERVICE123",

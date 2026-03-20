@@ -1,4 +1,4 @@
-# How to Manage SendGrid Resources with OpenTofu
+# How to Manage SendGrid Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -29,6 +29,7 @@ All Calico resources should be stored in Git and applied through automation:
 
 ```bash
 # Repository structure
+
 calico-gitops/
   ├── clusters/
   │   ├── production/

@@ -80,6 +80,7 @@ Lambda functions have a different set of resource attributes because they are se
 
 ```python
 # lambda_resource.py - AWS Lambda resource detection in Python
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

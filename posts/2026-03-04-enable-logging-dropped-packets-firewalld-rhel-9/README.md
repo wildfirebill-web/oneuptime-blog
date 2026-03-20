@@ -16,6 +16,7 @@ Firewalld has a built-in `LogDenied` option that logs all denied packets:
 
 ```bash
 # Check the current LogDenied setting
+
 firewall-cmd --get-log-denied
 
 # Enable logging for all denied packets

@@ -27,6 +27,7 @@ HashiCorp Nomad is a flexible workload orchestrator that supports containers, VM
 
 ```bash
 # List all jobs
+
 nomad job list
 
 # Inspect a job

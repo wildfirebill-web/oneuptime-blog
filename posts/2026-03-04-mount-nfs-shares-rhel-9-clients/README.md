@@ -22,6 +22,7 @@ Mounting an NFS share on a RHEL client is simple once the server is configured. 
 
 ```bash
 # Install NFS client tools
+
 sudo dnf install -y nfs-utils
 ```
 

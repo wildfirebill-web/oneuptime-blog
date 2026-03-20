@@ -140,6 +140,7 @@ Test that fencing works properly by simulating a failure:
 
 ```bash
 # On node2, crash the kernel (for testing only)
+
 echo c | sudo tee /proc/sysrq-trigger
 ```
 

@@ -16,7 +16,7 @@ Description: A well-planned IPv4 addressing scheme assigns logical, hierarchical
 
 ## Example: Multi-Site Enterprise
 
-```
+```text
 Total space: 10.0.0.0/8
 
 Site A (HQ):     10.0.0.0/16    (65,534 addresses)
@@ -59,6 +59,7 @@ def allocate_subnets(parent: str, allocations: list) -> list:
     return results
 
 # Simpler sequential allocation
+
 parent = ipaddress.IPv4Network("10.0.0.0/16")
 vlans = [
     ("Servers",   24),  # 254 hosts

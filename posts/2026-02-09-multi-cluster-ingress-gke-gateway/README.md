@@ -35,6 +35,7 @@ Create multiple GKE clusters in different regions:
 
 ```bash
 # Create cluster in us-central1
+
 gcloud container clusters create prod-central \
   --region us-central1 \
   --num-nodes 3 \

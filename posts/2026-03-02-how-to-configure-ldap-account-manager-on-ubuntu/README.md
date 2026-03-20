@@ -22,6 +22,7 @@ LDAP Account Manager (LAM) is a web-based front-end for managing LDAP directorie
 
 ```bash
 # Update the package list
+
 sudo apt update
 
 # Install LDAP Account Manager and its dependencies

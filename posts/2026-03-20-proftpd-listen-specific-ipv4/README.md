@@ -16,6 +16,7 @@ ProFTPD defaults to listening on all interfaces. In multi-homed servers, restric
 # /etc/proftpd/proftpd.conf
 
 # Server identity
+
 ServerName    "FTP Server"
 ServerType    standalone
 DefaultServer on

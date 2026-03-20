@@ -29,6 +29,7 @@ If you need guaranteed ordering, message sessions, or complex routing, look at A
 
 ```bash
 # Create a queue in a storage account
+
 az storage queue create \
   --account-name mystorageaccount \
   --name task-queue

@@ -18,6 +18,7 @@ Without conditions, a single IAM binding gives unrestricted tunnel access:
 
 ```bash
 # This grants tunnel access to ALL VMs on ALL ports - too broad
+
 gcloud projects add-iam-policy-binding my-project-id \
     --member="user:developer@company.com" \
     --role="roles/iap.tunnelResourceAccessor"

@@ -22,6 +22,7 @@ Here's a simple patch that adds environment variables:
 
 ```yaml
 # base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

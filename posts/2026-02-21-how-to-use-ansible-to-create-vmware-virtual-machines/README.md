@@ -16,6 +16,7 @@ Make sure you have the VMware collection and dependencies installed.
 
 ```bash
 # Install required components
+
 pip install ansible-core pyVmomi
 ansible-galaxy collection install community.vmware
 ```

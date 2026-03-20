@@ -52,6 +52,7 @@ Install Jest and the React testing utilities in your project:
 
 ```bash
 # Install Jest as a development dependency
+
 npm install --save-dev jest
 
 # For React projects, add the testing library and renderer

@@ -145,6 +145,7 @@ class LargeMessagePublisher:
 
 
 # Example usage demonstrating large message publishing
+
 if __name__ == '__main__':
     publisher = LargeMessagePublisher(
         project_id='my-project',

@@ -39,6 +39,7 @@ Before asking for help anywhere, gather basic diagnostic information. This drama
 
 ```bash
 # Cilium version and status
+
 cilium version
 cilium status --verbose
 

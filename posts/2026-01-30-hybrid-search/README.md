@@ -607,6 +607,7 @@ class HybridSearch:
 
 
 # Usage example
+
 def main():
     """Demonstrate hybrid search usage."""
     connection_string = "postgresql://user:pass@localhost/searchdb"

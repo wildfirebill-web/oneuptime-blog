@@ -27,6 +27,7 @@ Feature flags typically start as opt-in experimental features and eventually bec
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -96,7 +97,7 @@ data:
 
 Server-side diff sends manifests to the Kubernetes API server's dry-run endpoint to compute diffs. This is more accurate than client-side diff because it accounts for defaulting, validation, and mutation webhooks.
 
-### Resource Tracking Method
+Resource Tracking Method
 
 ```yaml
 apiVersion: v1

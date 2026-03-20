@@ -30,6 +30,7 @@ Firestore offers several properties that make it well-suited for storing chat hi
 
 ```bash
 # Install required packages
+
 pip install langchain langchain-google-firestore langchain-google-vertexai google-cloud-firestore
 ```
 

@@ -12,7 +12,7 @@ firewalld is the default firewall management tool on CentOS, RHEL, and Fedora. I
 
 ## firewalld Basic Concepts
 
-```
+```text
 Zones:          public, internal, trusted, dmz, drop, block, external
 Zone assignment: Interfaces or source addresses → zones
 Rules:          Services, ports, protocols, or rich rules
@@ -23,6 +23,7 @@ Runtime vs Permanent: Changes are runtime unless --permanent flag is used
 
 ```bash
 # Check firewalld status
+
 systemctl status firewalld
 
 # Start and enable

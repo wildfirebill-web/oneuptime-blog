@@ -105,6 +105,7 @@ def create_client_with_role(service, role_arn, session_name):
 
 
 # Example: Access S3 in another account using assumed role
+
 s3 = create_client_with_role(
     "s3",
     "arn:aws:iam::987654321098:role/S3ReadRole",

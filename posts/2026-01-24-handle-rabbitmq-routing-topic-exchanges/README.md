@@ -38,6 +38,7 @@ First, create the topic exchange and demonstrate basic routing patterns.
 
 ```python
 # topic_exchange_setup.py
+
 # This script demonstrates setting up a topic exchange with multiple binding patterns
 # Run this to create the exchange and queues before publishing messages
 

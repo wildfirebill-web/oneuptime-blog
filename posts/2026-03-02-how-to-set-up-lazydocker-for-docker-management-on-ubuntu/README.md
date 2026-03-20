@@ -20,6 +20,7 @@ lazydocker is a simple terminal UI for managing Docker and Docker Compose from t
 
 ```bash
 # Quick install via official script
+
 curl -fsSL https://get.docker.com | sudo bash
 
 # Add your user to the docker group to run docker without sudo

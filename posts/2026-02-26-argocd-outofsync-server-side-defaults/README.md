@@ -211,6 +211,7 @@ Before applying any fix, first identify exactly what fields are causing the OutO
 
 ```bash
 # Show the detailed diff
+
 argocd app diff my-app
 
 # Or view it in the UI by clicking on the application then App Diff

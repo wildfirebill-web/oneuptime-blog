@@ -60,6 +60,7 @@ flowchart LR
 
 ```bash
 # redis.conf - Master in DC1
+
 bind 0.0.0.0
 port 6379
 requirepass your-password

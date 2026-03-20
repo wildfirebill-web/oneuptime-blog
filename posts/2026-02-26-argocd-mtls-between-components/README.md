@@ -57,6 +57,7 @@ You need a CA and individual certificates for each component.
 
 ```bash
 # Generate CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Generate CA certificate (valid for 10 years)

@@ -254,6 +254,7 @@ Check the effective security context:
 
 ```bash
 # Get effective security context
+
 kubectl get pod hierarchy-demo -o jsonpath='{.spec.securityContext}' | jq
 
 # Check container-specific settings

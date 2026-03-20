@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provisioner, Infrastructure as Code, Configuration Management, DevOps
+Tags: Terraform, Provisioners, Infrastructure as Code, Configuration Management, DevOps
 
 Description: Learn how to attach provisioners to Terraform resources for post-creation configuration, bootstrapping, and integration with external systems during the resource lifecycle.
 
@@ -145,7 +145,7 @@ Remote provisioners (`remote-exec` and `file`) need a way to connect to the reso
 
 You can define the connection block at the resource level (shared by all provisioners) or at the provisioner level (specific to that provisioner).
 
-### Resource-Level Connection
+Resource-Level Connection
 
 ```hcl
 resource "aws_instance" "web" {

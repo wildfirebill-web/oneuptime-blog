@@ -43,6 +43,7 @@ Add a `serviceAllocation.serviceSelectors` field to your IPAddressPool:
 
 ```yaml
 # pool-premium.yaml
+
 # Pool that automatically serves any service labeled tier=premium
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

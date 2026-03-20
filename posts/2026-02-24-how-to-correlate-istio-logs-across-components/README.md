@@ -33,6 +33,7 @@ To search for all log entries related to a single request across your entire mes
 
 ```bash
 # If using Elasticsearch
+
 curl -s "http://elasticsearch:9200/istio-*/_search" -H 'Content-Type: application/json' -d '{
   "query": {
     "match": {

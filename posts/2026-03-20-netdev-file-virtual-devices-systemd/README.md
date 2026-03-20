@@ -14,6 +14,7 @@ Description: Create .netdev files for systemd-networkd to define virtual network
 
 ```ini
 # /etc/systemd/network/20-vlan10.netdev
+
 [NetDev]
 Name=eth0.10
 Kind=vlan
@@ -117,7 +118,7 @@ networkctl list
 
 ## File Processing Order
 
-```
+```text
 /etc/systemd/network/
   10-br0.netdev    ← bridge (created first)
   10-br0.network   ← bridge network config
@@ -126,7 +127,7 @@ networkctl list
   20-vlan10.network
 ```
 
-`.netdev` files are processed before `.network` files — devices must exist before they can be configured.
+`.netdev` files are processed before `.network` files - devices must exist before they can be configured.
 
 ## Conclusion
 

@@ -52,6 +52,7 @@ Create an AnalysisTemplate that acts as your circuit breaker:
 
 ```yaml
 # circuit-breaker-analysis.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AnalysisTemplate
 metadata:

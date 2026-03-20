@@ -238,6 +238,7 @@ Before deploying policies to production, test them in a staging environment:
 
 ```bash
 # Check which policies apply to a specific pod
+
 kubectl get pods -n production -o wide
 calicoctl get networkpolicy -n production -o yaml
 

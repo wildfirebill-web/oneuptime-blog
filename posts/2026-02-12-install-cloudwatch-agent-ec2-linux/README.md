@@ -18,6 +18,7 @@ Before installing the agent, your EC2 instance needs an IAM role with the right 
 
 ```bash
 # Create the IAM role for EC2 instances running the CloudWatch Agent
+
 aws iam create-role \
   --role-name CloudWatchAgentRole \
   --assume-role-policy-document '{

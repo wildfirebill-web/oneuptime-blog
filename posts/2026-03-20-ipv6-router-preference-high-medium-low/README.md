@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Preference, RFC4191, radvd, Routing, Networking
+Tags: IPv6, Router Preference, RFC4191, Radvd, Routing, Networking
 
 Description: Configure IPv6 router preference levels in Router Advertisements to control which default gateway clients select in multi-router environments, enabling primary/backup failover.
 
@@ -74,7 +74,7 @@ interface eth1 {
 
 ## Configuring on Cisco IOS
 
-```
+```text
 ! Set high preference on the primary router's LAN interface
 Router-Primary(config)# interface GigabitEthernet0/0
 Router-Primary(config-if)# ipv6 nd router-preference High
@@ -86,8 +86,9 @@ Router-Backup(config-if)# ipv6 nd router-preference Low
 
 ## Configuring on Juniper Junos
 
-```
+```text
 # Primary router
+
 set protocols router-advertisement interface ge-0/0/1.0 default-preference high
 
 # Backup router

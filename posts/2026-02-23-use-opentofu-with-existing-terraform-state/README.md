@@ -16,6 +16,7 @@ OpenTofu and Terraform use the same state file format. The state file is a JSON 
 
 ```bash
 # Examine your current state file format
+
 cat terraform.tfstate | python3 -m json.tool | head -10
 
 # Typical output:

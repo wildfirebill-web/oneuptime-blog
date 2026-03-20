@@ -18,6 +18,7 @@ Machine-level environment variables are set in the `machine.env` section of the 
 
 ```yaml
 # machine-config.yaml
+
 machine:
   env:
     # HTTP proxy settings

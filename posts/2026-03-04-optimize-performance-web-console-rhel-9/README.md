@@ -136,6 +136,7 @@ Extend the Web Console with additional modules:
 
 ```bash
 # PCP integration for detailed performance charts
+
 sudo dnf install cockpit-pcp -y
 
 # Package management

@@ -52,6 +52,7 @@ Initialize a new Go module and install the Prometheus client library:
 
 ```bash
 # Create project directory
+
 mkdir go-metrics-exporter
 cd go-metrics-exporter
 

@@ -27,6 +27,7 @@ The most basic configuration tells APT to use an HTTP proxy for all requests. Th
 
 ```yaml
 # Configure APT to use an HTTP proxy
+
 - name: Configure APT HTTP proxy
   ansible.builtin.copy:
     dest: /etc/apt/apt.conf.d/90proxy

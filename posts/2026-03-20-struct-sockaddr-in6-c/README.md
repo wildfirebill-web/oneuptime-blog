@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv6, sockaddr_in6, Socket Programming, POSIX, Systems Programming, Networking
+Tags: C, IPv6, Sockaddr_in6, Socket Programming, POSIX, Systems Programming, Networking
 
 Description: Understand the struct sockaddr_in6 data structure used in C IPv6 socket programming, including all fields, byte ordering, and practical usage patterns.
 

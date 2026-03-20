@@ -66,6 +66,7 @@ Start by understanding your current environment.
 
 ```bash
 # Create a resource group for migration resources
+
 az group create \
     --name rg-migration \
     --location eastus

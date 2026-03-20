@@ -52,6 +52,7 @@ Start by documenting every virtual IP managed by Keepalived. Typically you will 
 
 ```bash
 # List all virtual IPs from keepalived config
+
 # This helps identify which IPs need to be migrated
 grep -A 5 "virtual_ipaddress" /etc/keepalived/keepalived.conf
 ```

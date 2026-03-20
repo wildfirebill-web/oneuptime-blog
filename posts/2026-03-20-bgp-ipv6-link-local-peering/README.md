@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, IPv6, Link-Local, fe80, Peering
+Tags: BGP, IPv6, Link-Local, Fe80, Peering
 
 Description: Learn how to configure BGP peering over IPv6 link-local addresses for direct connected peers, including the interface requirement and next-hop handling.
 
@@ -12,10 +12,10 @@ BGP can peer using IPv6 link-local addresses (fe80::/10) when two routers are di
 
 ## Why Use Link-Local BGP Peering?
 
-- **Simplified addressing** — No need to allocate global /64 or /126 for each router link
-- **Automatic availability** — Link-local addresses are always present on IPv6 interfaces
-- **Unnumbered interfaces** — Common in modern data center spine-leaf designs
-- **Standard at IXPs** — Many IXPs support link-local BGP peering on route servers
+- **Simplified addressing** - No need to allocate global /64 or /126 for each router link
+- **Automatic availability** - Link-local addresses are always present on IPv6 interfaces
+- **Unnumbered interfaces** - Common in modern data center spine-leaf designs
+- **Standard at IXPs** - Many IXPs support link-local BGP peering on route servers
 
 ## Configuration on FRRouting
 
@@ -26,7 +26,7 @@ configure terminal
 router bgp 65001
  bgp router-id 1.1.1.1
 
- ! Peer using link-local address — MUST specify interface
+ ! Peer using link-local address - MUST specify interface
  neighbor fe80::2%eth0 remote-as 65002
  neighbor fe80::2%eth0 interface eth0     ! Required for link-local peers
  neighbor fe80::2%eth0 description "Link-local BGP peer on eth0"
@@ -42,7 +42,7 @@ write memory
 
 ## Configuration on Cisco IOS-XE (BGP Unnumbered)
 
-```
+```text
 ! Enable BGP peering on an unnumbered interface
 interface GigabitEthernet0/0
  ipv6 address fe80::1 link-local
@@ -65,7 +65,8 @@ router bgp 65001
 When BGP receives a route with a link-local next hop from a link-local peer, the next hop is only valid on that specific link. This creates a challenge for iBGP route reflection:
 
 ```bash
-# FRRouting — next-hop-self required for iBGP when link-local peers exist
+# FRRouting - next-hop-self required for iBGP when link-local peers exist
+
 router bgp 65001
  address-family ipv6 unicast
   neighbor 2001:db8::route-reflector next-hop-self    # Replace link-local NH
@@ -75,7 +76,7 @@ router bgp 65001
 ## Verifying Link-Local BGP Sessions
 
 ```bash
-# FRRouting — check peer state
+# FRRouting - check peer state
 vtysh -c "show bgp ipv6 unicast summary"
 
 # Neighbor should show with link-local address

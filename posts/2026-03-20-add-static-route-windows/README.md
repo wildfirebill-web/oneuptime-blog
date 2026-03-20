@@ -16,6 +16,7 @@ route add DESTINATION MASK GATEWAY [METRIC n] [IF interface_index]
 
 ```cmd
 # Route to 10.0.0.0/24 via 192.168.1.254
+
 route add 10.0.0.0 mask 255.255.255.0 192.168.1.254
 
 # Route with specific metric

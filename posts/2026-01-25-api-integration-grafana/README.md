@@ -29,6 +29,7 @@ Create an API key in Grafana: Configuration > API Keys > Add API key.
 
 ```bash
 # Using an API key
+
 curl -H "Authorization: Bearer eyJrIjoiT0tTcG1pUlY2..." \
      https://grafana.example.com/api/health
 ```

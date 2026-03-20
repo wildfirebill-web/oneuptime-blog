@@ -14,6 +14,7 @@ AWS Batch manages the provisioning of compute resources for batch processing wor
 
 ```hcl
 # Service role for Batch to manage EC2 instances
+
 resource "aws_iam_role" "batch_service" {
   name = "aws-batch-service-role"
 

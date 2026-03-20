@@ -20,6 +20,7 @@ The time_sleep resource pauses Terraform execution for a specified duration duri
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

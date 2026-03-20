@@ -20,6 +20,7 @@ The simplest way to check your Podman version is with the `--version` flag.
 
 ```bash
 # Display the Podman version string
+
 podman --version
 
 # Example output: podman version 4.9.3

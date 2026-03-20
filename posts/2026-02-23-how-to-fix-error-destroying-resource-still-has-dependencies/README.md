@@ -51,6 +51,7 @@ The security group is still attached to instances, ENIs, or other security group
 
 ```bash
 # Find what is using the security group
+
 aws ec2 describe-network-interfaces \
   --filters "Name=group-id,Values=sg-0123456789abcdef0" \
   --query "NetworkInterfaces[].{ID:NetworkInterfaceId,Description:Description,InstanceId:Attachment.InstanceId}"

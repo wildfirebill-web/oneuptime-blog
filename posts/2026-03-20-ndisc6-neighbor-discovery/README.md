@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ndisc6, Neighbor Discovery, NDP, Network Diagnostics, Linux
+Tags: IPv6, Ndisc6, Neighbor Discovery, NDP, Network Diagnostics, Linux
 
 Description: Use ndisc6 to send Neighbor Solicitation messages and discover the link-layer addresses of IPv6 neighbors for connectivity and NDP troubleshooting.
 
 ## Introduction
 
-`ndisc6` is a command-line tool that sends IPv6 Neighbor Solicitation messages and waits for Neighbor Advertisement responses. It is the IPv6 equivalent of `arping` for IPv4 — it resolves an IPv6 address to its MAC address and verifies Layer 2 reachability. It is part of the `ndisc6` package which also includes `rdisc6` for router discovery.
+`ndisc6` is a command-line tool that sends IPv6 Neighbor Solicitation messages and waits for Neighbor Advertisement responses. It is the IPv6 equivalent of `arping` for IPv4 - it resolves an IPv6 address to its MAC address and verifies Layer 2 reachability. It is part of the `ndisc6` package which also includes `rdisc6` for router discovery.
 
 ## Installation
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install -y ndisc6
 
 # RHEL/CentOS
@@ -41,7 +42,7 @@ ndisc6 -w 3000 2001:db8::1 eth0  # 3000ms timeout
 
 ## Understanding the Output
 
-```
+```text
 Soliciting 2001:db8::1 (2001:db8::1) on eth0...
 
 Target link-layer address: 52:54:00:ab:cd:ef

@@ -51,6 +51,7 @@ Save this to `/etc/cni/net.d/10-bridge.conflist` and restart your container runt
 ```bash
 systemctl restart containerd
 # or
+
 systemctl restart crio
 ```
 

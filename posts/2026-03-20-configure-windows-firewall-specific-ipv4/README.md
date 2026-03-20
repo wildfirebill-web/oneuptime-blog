@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Firewall, IPv4, Security, netsh, PowerShell
+Tags: Windows, Firewall, IPv4, Security, Netsh, PowerShell
 
 Description: Create Windows Firewall rules that allow or block traffic to and from specific IPv4 addresses using netsh advfirewall and PowerShell New-NetFirewallRule.
 
@@ -53,6 +53,7 @@ PowerShell provides richer firewall management:
 
 ```powershell
 # Allow inbound HTTPS only from a specific IP range
+
 New-NetFirewallRule `
     -Name "Allow HTTPS from 192.168.1.0/24" `
     -DisplayName "Allow HTTPS from Internal Subnet" `
@@ -73,7 +74,7 @@ netsh advfirewall firewall show rule name=all | findstr "192.168.1.50"
 ```
 
 ```powershell
-# PowerShell — find rules with a specific remote address
+# PowerShell - find rules with a specific remote address
 Get-NetFirewallRule | Get-NetFirewallAddressFilter | Where-Object {$_.RemoteAddress -like "*192.168.1.50*"}
 ```
 

@@ -16,6 +16,7 @@ The `debug` module has two main parameters: `msg` for displaying messages and `v
 
 ```yaml
 # basic-debug.yml - Show messages and variables
+
 ---
 - name: Debug module basics
   hosts: all

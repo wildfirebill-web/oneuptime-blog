@@ -31,6 +31,7 @@ The first step in building an escalation system is defining when escalation shou
 
 ```yaml
 # Example: OneUptime escalation rule configuration
+
 escalation_rules:
   - name: "Unacknowledged Alert"
     condition:

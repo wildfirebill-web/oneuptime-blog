@@ -49,6 +49,7 @@ Use commit messages to determine version bumps automatically:
 
 ```bash
 # Commit message format
+
 # feat: new feature (bumps MINOR)
 # fix: bug fix (bumps PATCH)
 # feat!: breaking change (bumps MAJOR)

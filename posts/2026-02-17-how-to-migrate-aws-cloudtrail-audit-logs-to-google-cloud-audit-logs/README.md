@@ -37,6 +37,7 @@ Before configuring anything, check what Google Cloud already logs automatically.
 
 ```bash
 # View recent Admin Activity audit logs
+
 gcloud logging read \
   'logName:"cloudaudit.googleapis.com/activity"' \
   --limit=10 \

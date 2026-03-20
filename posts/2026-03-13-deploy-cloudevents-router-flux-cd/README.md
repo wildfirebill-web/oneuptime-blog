@@ -27,6 +27,7 @@ This guide covers deploying a Kubernetes-native CloudEvents router (using Knativ
 
 ```yaml
 # clusters/my-cluster/cloudevents-router/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

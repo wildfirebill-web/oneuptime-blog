@@ -31,6 +31,7 @@ LibreNMS requires a web server, PHP, MariaDB, Redis, and several background work
 
 ```yaml
 # docker-compose.yml - Complete LibreNMS monitoring stack
+
 # Includes the web UI, database, cache, and background workers
 version: "3.8"
 

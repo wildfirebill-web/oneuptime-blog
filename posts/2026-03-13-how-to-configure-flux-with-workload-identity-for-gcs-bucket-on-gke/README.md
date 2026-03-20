@@ -177,6 +177,7 @@ You can integrate bucket updates into your CI/CD pipeline. When manifests change
 
 ```bash
 # In your CI/CD pipeline
+
 gsutil rsync -r -d ./manifests/ gs://my-flux-manifests/
 ```
 

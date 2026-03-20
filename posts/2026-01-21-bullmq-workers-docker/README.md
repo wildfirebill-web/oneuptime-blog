@@ -16,6 +16,7 @@ Start with a simple Dockerfile for your BullMQ worker:
 
 ```dockerfile
 # Dockerfile
+
 FROM node:20-alpine
 
 # Create app directory

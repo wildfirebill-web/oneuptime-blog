@@ -30,6 +30,7 @@ The quickest way to force ArgoCD to re-read everything from Git is a hard refres
 
 ```bash
 # Hard refresh forces ArgoCD to invalidate cache and re-clone the repo
+
 argocd app get my-app --hard-refresh
 
 # Or trigger a hard refresh and sync in one step

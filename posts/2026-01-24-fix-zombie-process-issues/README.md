@@ -56,6 +56,7 @@ Zombies consume minimal resources (just a process table entry), but large number
 
 ```bash
 # List all zombie processes
+
 ps aux | grep -w Z
 
 # Count zombie processes

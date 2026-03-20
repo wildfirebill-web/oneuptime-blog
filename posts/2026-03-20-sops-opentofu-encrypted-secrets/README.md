@@ -14,6 +14,7 @@ SOPS (Secrets OPerationS) is a Mozilla open-source tool that encrypts specific v
 
 ```bash
 # macOS
+
 brew install sops
 
 # Linux
@@ -70,7 +71,7 @@ rm secrets/db.yaml
 The encrypted file looks like:
 
 ```yaml
-# secrets/db.enc.yaml — safe to commit
+# secrets/db.enc.yaml - safe to commit
 db_password: ENC[AES256_GCM,data:abc123...,tag:xyz...]
 api_key: ENC[AES256_GCM,data:def456...,tag:uvw...]
 sops:
@@ -97,7 +98,7 @@ Or use a wrapper script:
 
 ```bash
 #!/bin/bash
-# apply.sh — decrypt, apply, clean up
+# apply.sh - decrypt, apply, clean up
 set -euo pipefail
 
 DECRYPTED=$(mktemp)
@@ -126,7 +127,7 @@ provider "sops" {}
 ```
 
 ```hcl
-# main.tf — read encrypted secrets directly
+# main.tf - read encrypted secrets directly
 data "sops_file" "db_secrets" {
   source_file = "${path.module}/secrets/db.enc.yaml"
 }
@@ -140,7 +141,7 @@ resource "aws_db_instance" "main" {
 ## CI/CD Integration
 
 ```yaml
-# GitHub Actions — provide the age key via a secret
+# GitHub Actions - provide the age key via a secret
 - name: Tofu Apply
   env:
     SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TLS, SSL, Load Balancer, Health Check, HAProxy, Nginx, Backend, HTTPS
+Tags: TLS, SSL, Load Balancer, Health Checks, HAProxy, Nginx, Backend, HTTPS
 
 Description: Learn how to configure SSL/TLS termination on a load balancer and enable HTTPS health checks for backend servers to ensure encrypted end-to-end connectivity validation.
 
@@ -81,7 +81,7 @@ server {
 
 ## AWS ALB: HTTPS Health Check
 
-```
+```text
 Target group settings:
   Protocol: HTTPS
   Port: 443
@@ -97,6 +97,7 @@ Target group settings:
 
 ```bash
 # Test backend HTTPS health endpoint directly
+
 curl -v --cacert /etc/ssl/certs/ca-bundle.crt https://10.0.0.11/health
 
 # Check certificate validity on backend

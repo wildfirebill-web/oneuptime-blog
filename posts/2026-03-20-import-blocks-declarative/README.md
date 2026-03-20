@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu import blocks to declaratively import exi
 
 ## Introduction
 
-OpenTofu 1.5 introduced `import` blocks — a declarative way to import existing cloud resources. Unlike the imperative `tofu import` CLI command, import blocks live in your configuration files, making imports reviewable, version-controlled, and repeatable.
+OpenTofu 1.5 introduced `import` blocks - a declarative way to import existing cloud resources. Unlike the imperative `tofu import` CLI command, import blocks live in your configuration files, making imports reviewable, version-controlled, and repeatable.
 
 ## Basic Import Block Syntax
 
 ```hcl
 # Import an existing EC2 instance
+
 import {
   to = aws_instance.web
   id = "i-0123456789abcdef0"
@@ -52,7 +53,7 @@ import {
   id = "i-0123456789abcdef0"
 }
 
-# resources.tf — write the resource configuration
+# resources.tf - write the resource configuration
 resource "aws_vpc" "production" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true
@@ -101,14 +102,14 @@ tofu apply
 After a successful import, remove the import blocks (they're one-time operations):
 
 ```hcl
-# imports.tf — remove after successful import
+# imports.tf - remove after successful import
 # import {
 #   to = aws_vpc.production
 #   id = "vpc-0a1b2c3d4e5f6789"
 # }
 ```
 
-Then run `tofu plan` — it should show no changes.
+Then run `tofu plan` - it should show no changes.
 
 ## Import Block with for_each (OpenTofu 1.7+)
 
@@ -147,4 +148,4 @@ resource "aws_instance" "web" {
 
 ## Conclusion
 
-Import blocks transform resource imports from one-off CLI operations into code-reviewed, version-controlled infrastructure changes. Use them as part of a standard PR workflow to bring existing resources under OpenTofu management. After the import is applied and verified, remove the import blocks from your configuration — they've served their purpose.
+Import blocks transform resource imports from one-off CLI operations into code-reviewed, version-controlled infrastructure changes. Use them as part of a standard PR workflow to bring existing resources under OpenTofu management. After the import is applied and verified, remove the import blocks from your configuration - they've served their purpose.

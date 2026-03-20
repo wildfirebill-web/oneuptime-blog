@@ -38,6 +38,7 @@ The general rule for Calico is:
 
 ```bash
 # Check the current versions of each component
+
 echo "=== Current Typha version ==="
 kubectl get deployment calico-typha -n kube-system \
   -o jsonpath='{.spec.template.spec.containers[0].image}{"\n"}'

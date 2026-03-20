@@ -31,6 +31,7 @@ By default, `argocd app sync` waits for the sync operation to complete:
 
 ```bash
 # Default: wait for sync to complete (synchronous)
+
 argocd app sync my-app
 
 # Async: trigger sync and return immediately
@@ -254,7 +255,7 @@ Solution: Use force sync to replace the resource:
 argocd app sync my-app --force --resource 'apps:Deployment:my-app'
 ```
 
-### Resource Already Exists
+Resource Already Exists
 
 ```text
 error: the object already exists

@@ -115,7 +115,7 @@ public class WebhooksController : ControllerBase
 }
 ```
 
-## Resource Filters
+Resource Filters
 
 Resource filters run early in the pipeline and are ideal for caching:
 

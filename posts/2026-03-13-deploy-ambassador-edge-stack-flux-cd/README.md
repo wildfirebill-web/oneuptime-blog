@@ -30,6 +30,7 @@ Register the Ambassador Helm chart repository with Flux CD.
 
 ```yaml
 # infrastructure/ambassador/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

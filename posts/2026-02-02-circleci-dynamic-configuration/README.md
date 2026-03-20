@@ -40,6 +40,7 @@ The following configuration shows the minimal setup required to enable dynamic c
 
 ```yaml
 # .circleci/config.yml
+
 version: 2.1
 
 # Enable the setup workflow feature

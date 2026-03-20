@@ -45,6 +45,7 @@ The simplest alarm triggers when the error count exceeds a threshold in a given 
 
 ```bash
 # Create an alarm that fires when errors exceed 5 in a 5-minute period
+
 aws cloudwatch put-metric-alarm \
   --alarm-name "my-function-error-count" \
   --alarm-description "Triggers when my-function has more than 5 errors in 5 minutes" \

@@ -41,6 +41,7 @@ HTTP health checks are the most common. They send an HTTP GET request to a speci
 
 ```bash
 # Create an HTTP health check that checks the /healthz endpoint
+
 gcloud compute health-checks create http my-http-check \
     --port=8080 \
     --request-path="/healthz" \

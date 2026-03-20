@@ -28,6 +28,7 @@ After `istio-init` runs, all traffic is redirected to the Envoy proxy. But the p
 
 ```bash
 # The OTel init container gets stuck or fails
+
 kubectl describe pod my-app-pod
 
 # Events might show:

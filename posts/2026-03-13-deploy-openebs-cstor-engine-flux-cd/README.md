@@ -24,6 +24,7 @@ Deploying OpenEBS cStor through Flux CD gives you GitOps control over storage po
 
 ```yaml
 # infrastructure/sources/openebs-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

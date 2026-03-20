@@ -20,6 +20,7 @@ The `terraform.tfvars` file is a plain text file that assigns values to your dec
 # terraform.tfvars
 
 # These values are automatically loaded by Terraform
+
 environment    = "production"
 region         = "us-east-1"
 instance_count = 3

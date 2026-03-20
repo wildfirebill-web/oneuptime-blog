@@ -96,6 +96,7 @@ Search synthetic fields like any other field:
 
 ```bash
 # Search by full name
+
 curl -X GET "localhost:9200/employees/_search" -H 'Content-Type: application/json' -d'
 {
   "query": {

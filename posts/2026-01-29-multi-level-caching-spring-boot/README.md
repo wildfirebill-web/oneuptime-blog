@@ -81,6 +81,7 @@ Define cache configuration in `application.yml`:
 
 ```yaml
 # application.yml
+
 spring:
   cache:
     type: none  # We'll configure custom cache managers

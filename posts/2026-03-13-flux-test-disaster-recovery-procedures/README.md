@@ -31,6 +31,7 @@ Use kind or k3d to create a lightweight local cluster that mirrors your producti
 ```bash
 #!/bin/bash
 # create-dr-test-cluster.sh
+
 set -euo pipefail
 
 CLUSTER_NAME="dr-test-$(date +%Y%m%d)"

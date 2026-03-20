@@ -35,6 +35,7 @@ Usage plans in API Gateway let you define rate limits, burst limits, and monthly
 
 ```yaml
 # API Gateway with tiered usage plans
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MonetizedAPI:

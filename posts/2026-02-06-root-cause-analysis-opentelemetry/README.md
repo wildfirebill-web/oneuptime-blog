@@ -37,6 +37,7 @@ The first step is understanding exactly what is going wrong and how bad it is. U
 
 ```python
 # symptom_analysis.py
+
 from opentelemetry import metrics
 from datetime import datetime, timedelta
 

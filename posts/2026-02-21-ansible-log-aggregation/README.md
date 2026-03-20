@@ -33,6 +33,7 @@ First, let us set up a clean Ansible project structure for this.
 
 ```bash
 # Create the project layout
+
 mkdir -p log-aggregation/{roles,group_vars,host_vars}
 mkdir -p log-aggregation/roles/{rsyslog-client,rsyslog-server,elasticsearch,kibana}/{tasks,templates,handlers,defaults}
 ```

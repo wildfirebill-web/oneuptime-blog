@@ -67,6 +67,7 @@ Before installing the agent, verify your on-premises AD is ready:
 
 ```powershell
 # Verify the AD forest and domain functional levels
+
 # Cloud Sync requires at minimum Windows Server 2003 forest functional level
 $forest = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest()
 Write-Host "Forest: $($forest.Name)"

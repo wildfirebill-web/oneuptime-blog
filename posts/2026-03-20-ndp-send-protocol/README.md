@@ -12,7 +12,7 @@ SEND (Secure Neighbor Discovery, RFC 3971) adds cryptographic authentication to 
 
 ## SEND Architecture
 
-```
+```text
 SEND Security Model:
 
 Without SEND:
@@ -41,7 +41,7 @@ SEND Requirements:
 
 ## How CGA Works
 
-```
+```text
 Cryptographically Generated Addresses (RFC 3972):
 
 1. Node generates an RSA key pair
@@ -66,7 +66,7 @@ Attack resistance:
 
 ## SEND Message Extensions
 
-```
+```text
 Additional NDP options used by SEND:
 
 CGA Option (Type 11):
@@ -89,7 +89,7 @@ Nonce Option (Type 14):
 
 ## SEND Deployment Considerations
 
-```
+```text
 SEND Challenges:
 
 1. Computational overhead:

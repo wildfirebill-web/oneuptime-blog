@@ -78,6 +78,7 @@ headers = {
 }
 
 # Create a glossary term for "Active Customer"
+
 term_payload = {
     "name": "Active Customer",
     "qualifiedName": "Active Customer@Glossary",

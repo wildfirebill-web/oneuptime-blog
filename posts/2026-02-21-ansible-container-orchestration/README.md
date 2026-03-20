@@ -18,6 +18,7 @@ Before you can run containers, you need Docker installed and configured on your 
 
 ```yaml
 # roles/docker/tasks/main.yml
+
 # Install and configure Docker on target hosts
 ---
 - name: Install Docker prerequisites

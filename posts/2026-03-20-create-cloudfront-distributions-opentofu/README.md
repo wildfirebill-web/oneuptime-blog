@@ -1,4 +1,4 @@
-# How to Create CloudFront Distributions with OpenTofu
+# How to Create CloudFront Distributions with OpenTofu - Create
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ CloudFront is AWS's CDN (Content Delivery Network). A distribution sits in front
 
 ```hcl
 # CloudFront certificates MUST be in us-east-1
+
 provider "aws" {
   alias  = "us_east_1"
   region = "us-east-1"

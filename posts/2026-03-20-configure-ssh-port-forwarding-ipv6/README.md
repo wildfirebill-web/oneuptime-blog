@@ -12,6 +12,7 @@ Local port forwarding tunnels a local port through an SSH server to a remote des
 
 ```bash
 # Forward local port 8080 to remote service over IPv6 SSH connection
+
 ssh -L 8080:remote-service.local:80 user@2001:db8::10
 
 # Bind tunnel to specific IPv6 address on local machine
@@ -68,7 +69,7 @@ curl --socks5 "[::1]:1080" http://internal-service/
 
 ## SSH Config for Port Forwarding
 
-```
+```text
 # ~/.ssh/config
 
 # Database tunnel over IPv6
@@ -97,7 +98,7 @@ Host socks-proxy
 
 ## sshd_config for Remote Forwarding
 
-```
+```text
 # /etc/ssh/sshd_config (on the SSH server)
 
 # Allow remote port forwarding to bind to all interfaces

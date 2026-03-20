@@ -22,6 +22,7 @@ Add a client configuration to Authelia's `configuration.yml`:
 
 ```yaml
 # authelia/configuration.yml (excerpt)
+
 identity_providers:
   oidc:
     hmac_secret: "your-hmac-secret-min-64-chars"

@@ -8,7 +8,7 @@ Description: Learn how to build a production-grade multi-tier AWS VPC with publi
 
 ---
 
-A multi-tier VPC separates infrastructure into layers — public (load balancers), private (application servers), and isolated (databases) — each with its own subnet, routing, and security controls. OpenTofu manages the entire network stack as code with consistent configurations across AZs.
+A multi-tier VPC separates infrastructure into layers - public (load balancers), private (application servers), and isolated (databases) - each with its own subnet, routing, and security controls. OpenTofu manages the entire network stack as code with consistent configurations across AZs.
 
 ## Multi-Tier VPC Architecture
 
@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # vpc.tf
+
 locals {
   azs = slice(data.aws_availability_zones.available.names, 0, var.az_count)
 
@@ -63,7 +64,7 @@ resource "aws_internet_gateway" "main" {
 ```hcl
 # subnets.tf
 
-# Public subnets — internet-facing resources
+# Public subnets - internet-facing resources
 resource "aws_subnet" "public" {
   count = length(local.azs)
 
@@ -79,7 +80,7 @@ resource "aws_subnet" "public" {
   }
 }
 
-# Private subnets — application tier
+# Private subnets - application tier
 resource "aws_subnet" "private" {
   count = length(local.azs)
 
@@ -94,7 +95,7 @@ resource "aws_subnet" "private" {
   }
 }
 
-# Database subnets — isolated tier
+# Database subnets - isolated tier
 resource "aws_subnet" "database" {
   count = length(local.azs)
 
@@ -136,7 +137,7 @@ resource "aws_eip" "nat" {
   depends_on = [aws_internet_gateway.main]
 }
 
-# NAT gateways — one per AZ for HA, or single for cost savings
+# NAT gateways - one per AZ for HA, or single for cost savings
 resource "aws_nat_gateway" "main" {
   count = var.single_nat_gateway ? 1 : length(local.azs)
 
@@ -176,7 +177,7 @@ resource "aws_route_table" "private" {
 
 resource "aws_route_table" "database" {
   vpc_id = aws_vpc.main.id
-  # No route to internet — database tier is fully isolated
+  # No route to internet - database tier is fully isolated
   tags = { Name = "${var.prefix}-database-rt" }
 }
 
@@ -203,7 +204,7 @@ resource "aws_route_table_association" "database" {
 ## Network ACLs for Database Tier
 
 ```hcl
-# nacl.tf — additional layer of defense for database subnets
+# nacl.tf - additional layer of defense for database subnets
 
 resource "aws_network_acl" "database" {
   vpc_id     = aws_vpc.main.id
@@ -263,15 +264,15 @@ output "database_subnet_ids" {
 }
 
 output "nat_gateway_ips" {
-  description = "NAT gateway public IPs — allowlist these at external services"
+  description = "NAT gateway public IPs - allowlist these at external services"
   value       = aws_eip.nat[*].public_ip
 }
 ```
 
 ## Best Practices
 
-- Use `single_nat_gateway = true` in development and `false` (one per AZ) in production — NAT gateways cost ~$32/month each, but losing a single NAT gateway takes down all private subnets in that AZ.
-- Set `var.az_count = 3` for production — three AZs provides redundancy without adding significant cost.
-- Use `cidrsubnet()` to calculate subnet CIDRs programmatically — this prevents CIDR overlap errors and makes it easy to add more subnets later without manual calculation.
-- Tag subnets with `kubernetes.io/role/elb` and `kubernetes.io/role/internal-elb` if you plan to run EKS — the AWS Load Balancer Controller uses these tags to discover subnets for load balancers.
-- Never route database subnets to the internet — use VPC endpoints for AWS services and application-level connectivity for any external dependencies.
+- Use `single_nat_gateway = true` in development and `false` (one per AZ) in production - NAT gateways cost ~$32/month each, but losing a single NAT gateway takes down all private subnets in that AZ.
+- Set `var.az_count = 3` for production - three AZs provides redundancy without adding significant cost.
+- Use `cidrsubnet()` to calculate subnet CIDRs programmatically - this prevents CIDR overlap errors and makes it easy to add more subnets later without manual calculation.
+- Tag subnets with `kubernetes.io/role/elb` and `kubernetes.io/role/internal-elb` if you plan to run EKS - the AWS Load Balancer Controller uses these tags to discover subnets for load balancers.
+- Never route database subnets to the internet - use VPC endpoints for AWS services and application-level connectivity for any external dependencies.

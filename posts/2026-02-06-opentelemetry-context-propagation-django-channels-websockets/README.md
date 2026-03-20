@@ -73,6 +73,7 @@ from opentelemetry.instrumentation.asgi import OpenTelemetryMiddleware
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
 
 # Initialize OpenTelemetry
+
 resource = Resource.create({
     "service.name": "django-channels-app",
     "service.version": "1.0.0",

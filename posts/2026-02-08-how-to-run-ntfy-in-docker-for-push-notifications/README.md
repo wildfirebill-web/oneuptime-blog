@@ -30,6 +30,7 @@ Docker and Docker Compose are all you need. ntfy uses minimal resources, around 
 
 ```bash
 # Check that Docker is installed
+
 docker --version
 docker compose version
 ```

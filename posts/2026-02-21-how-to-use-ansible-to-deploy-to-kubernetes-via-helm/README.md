@@ -16,6 +16,7 @@ I have used this combination to manage dozens of Helm releases across multiple c
 
 ```bash
 # Install the kubernetes.core collection which includes helm modules
+
 ansible-galaxy collection install kubernetes.core
 pip install kubernetes
 ```

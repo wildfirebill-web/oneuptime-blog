@@ -35,6 +35,7 @@ For development and testing, a single-node Elasticsearch cluster is the easiest 
 
 ```bash
 # Start a single-node Elasticsearch instance for development
+
 docker run -d \
   --name elasticsearch \
   -p 9200:9200 \

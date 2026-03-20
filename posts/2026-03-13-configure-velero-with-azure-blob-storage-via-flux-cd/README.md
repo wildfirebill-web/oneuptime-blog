@@ -25,6 +25,7 @@ When running on AKS, you can use AAD Pod Identity or Workload Identity to authen
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="velero-backup-rg"
 STORAGE_ACCOUNT="myclustervelerobackups"
 CONTAINER="backups"

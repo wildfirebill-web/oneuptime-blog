@@ -45,6 +45,7 @@ Use Databricks widgets to accept parameters at runtime.
 # 01_ingest_raw_data.py - Ingest raw data from source
 
 # Define input parameters using widgets
+
 dbutils.widgets.text("source_path", "abfss://raw@storage.dfs.core.windows.net/")
 dbutils.widgets.text("target_table", "bronze.raw_events")
 dbutils.widgets.text("processing_date", "2026-02-16")

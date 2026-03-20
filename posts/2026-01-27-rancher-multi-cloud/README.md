@@ -55,6 +55,7 @@ Before managing multiple clouds, you need a Rancher management server. Here is h
 
 ```bash
 # Add the Rancher Helm repository
+
 # This provides access to Rancher charts for installation
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 

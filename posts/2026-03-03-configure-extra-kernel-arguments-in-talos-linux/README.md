@@ -28,6 +28,7 @@ The machine configuration has a dedicated field for kernel arguments under `mach
 
 ```yaml
 # machine-config.yaml
+
 machine:
   install:
     disk: /dev/sda

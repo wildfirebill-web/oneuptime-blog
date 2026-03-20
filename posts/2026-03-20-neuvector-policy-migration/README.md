@@ -1,4 +1,4 @@
-# How to Migrate NeuVector Policies Between Clusters
+# How to Migrate NeuVector Policies Between Clusters - Policy Migration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -35,6 +35,7 @@ Or export via the NeuVector REST API:
 
 ```bash
 # Get NeuVector access token
+
 TOKEN=$(curl -sk -X POST \
   https://neuvector.example.com/auth \
   -H "Content-Type: application/json" \

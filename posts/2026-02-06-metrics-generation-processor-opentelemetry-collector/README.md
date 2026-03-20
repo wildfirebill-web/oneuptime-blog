@@ -43,6 +43,7 @@ Here's a minimal Metrics Generation Processor configuration that creates basic R
 
 ```yaml
 # Configure receivers to accept traces
+
 receivers:
   otlp:
     protocols:
@@ -264,7 +265,7 @@ processors:
         name: "summary.calls.total"
 ```
 
-### Resource Attribute Integration
+Resource Attribute Integration
 
 Include resource attributes as metric dimensions:
 

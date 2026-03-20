@@ -22,6 +22,7 @@ Deploy fio for direct storage benchmarking.
 
 ```yaml
 # fio-benchmark.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

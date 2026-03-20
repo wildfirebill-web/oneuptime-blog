@@ -132,6 +132,7 @@ Compile and load the program:
 
 ```bash
 # Compile
+
 clang -O2 -g -target bpf -c xdp_syn_flood.c -o xdp_syn_flood.o
 
 # Load onto interface

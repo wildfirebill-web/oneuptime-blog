@@ -37,6 +37,7 @@ You can enable Defender at the subscription level (covers all AKS clusters) or o
 
 ```bash
 # Enable Defender for Containers on the entire subscription
+
 az security pricing create \
   --name Containers \
   --tier Standard

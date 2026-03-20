@@ -1,4 +1,4 @@
-# How to Plan IPv6 for Multi-Tenant Data Centers
+# How to Plan IPv6 for Multi-Tenant Data Centers - Centers
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,7 +17,7 @@ Multi-tenant data centers require IPv6 isolation between tenants while sharing p
 
 ## Address Allocation Strategy
 
-```
+```text
 ISP assigns: 2001:db8::/32 (or /28 for large DC)
 
 Tenant allocation:
@@ -37,7 +37,7 @@ Infrastructure:
 
 ## VRF Configuration per Tenant
 
-```
+```bash
 ! Cisco NX-OS: VRF per tenant with IPv6
 
 vrf context TENANT_A
@@ -62,6 +62,7 @@ router bgp 65001
 
 ```bash
 # Create namespace for each tenant
+
 ip netns add tenant_a
 ip netns add tenant_b
 
@@ -75,7 +76,7 @@ ip netns exec tenant_a ip -6 route add default via 2001:db8:a000::1
 
 # Verify isolation
 ip netns exec tenant_a ping6 2001:db8:a000::1
-ip netns exec tenant_a ping6 2001:db8:b000::1  # Should fail — different namespace
+ip netns exec tenant_a ping6 2001:db8:b000::1  # Should fail - different namespace
 ```
 
 ## Firewall Policies for Tenant Isolation
@@ -129,7 +130,7 @@ EOF
 
 ```python
 #!/usr/bin/env python3
-# tenant-ipam.py — Simple IPv6 IPAM for multi-tenant DC
+# tenant-ipam.py - Simple IPv6 IPAM for multi-tenant DC
 
 import ipaddress
 from typing import Dict, List

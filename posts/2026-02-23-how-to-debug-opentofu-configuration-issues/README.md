@@ -16,6 +16,7 @@ The first tool in your debugging arsenal is OpenTofu's built-in logging. By defa
 
 ```bash
 # Enable trace-level logging (most verbose)
+
 export TF_LOG=TRACE
 tofu plan
 

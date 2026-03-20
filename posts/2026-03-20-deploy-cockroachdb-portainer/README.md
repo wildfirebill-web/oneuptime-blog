@@ -1,4 +1,4 @@
-# How to Deploy CockroachDB via Portainer
+# How to Deploy CockroachDB via Portainer - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

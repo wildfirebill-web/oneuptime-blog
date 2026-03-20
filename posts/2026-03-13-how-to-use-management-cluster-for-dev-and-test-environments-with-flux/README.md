@@ -360,6 +360,7 @@ From the management cluster, get a complete view of all environments:
 kubectl config use-context management
 
 # See all Kustomizations and their status
+
 flux get kustomizations
 
 # Filter by environment

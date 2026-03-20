@@ -68,6 +68,7 @@ resource "aws_s3_bucket" "app" {
 
 ```hcl
 # config.txt contains: "  us-east-1  \n"
+
 locals {
   region = trimspace(file("${path.module}/config/region.txt"))
 }

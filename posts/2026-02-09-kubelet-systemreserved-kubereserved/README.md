@@ -39,6 +39,7 @@ Check existing reservations:
 
 ```bash
 # View kubelet config
+
 cat /var/lib/kubelet/config.yaml | grep -A 5 "Reserved"
 
 # Check node allocatable resources

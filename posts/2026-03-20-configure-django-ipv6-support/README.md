@@ -16,6 +16,7 @@ Django requires explicit configuration to work with IPv6. The key settings are `
 # settings.py
 
 # Allow IPv6 addresses and hostnames
+
 ALLOWED_HOSTS = [
     "example.com",
     "www.example.com",
@@ -156,7 +157,7 @@ uvicorn myproject.asgi:application \
 # Ensure session cookies work for IPv6 clients
 SESSION_COOKIE_DOMAIN = None  # Use the request's host
 
-# CSRF trusted origins — include IPv6 addresses
+# CSRF trusted origins - include IPv6 addresses
 CSRF_TRUSTED_ORIGINS = [
     "https://example.com",
     "https://[2001:db8::1]",

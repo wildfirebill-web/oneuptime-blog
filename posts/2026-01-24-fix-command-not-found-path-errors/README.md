@@ -29,6 +29,7 @@ flowchart LR
 
 ```bash
 # Display PATH variable
+
 echo $PATH
 
 # Example output:

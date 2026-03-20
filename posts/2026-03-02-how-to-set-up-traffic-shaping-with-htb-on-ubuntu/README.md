@@ -46,6 +46,7 @@ LINK_SPEED="1gbit"
 echo "Configuring HTB on $IFACE (link speed: $LINK_SPEED)"
 
 # Clean up any existing rules
+
 tc qdisc del dev "$IFACE" root 2>/dev/null || true
 
 # Step 1: Add root HTB qdisc

@@ -37,7 +37,7 @@ docker run -d \
   --ssl --sslcert /certs/portainer.crt --sslkey /certs/portainer.key
 ```
 
-Disable HTTP access at the firewall level — all traffic must use HTTPS.
+Disable HTTP access at the firewall level - all traffic must use HTTPS.
 
 ## Step 2: Configure LDAP/AD Authentication
 
@@ -52,7 +52,7 @@ For healthcare organizations with Active Directory:
 
 Create separate Portainer environments for each clinical system to enforce isolation:
 
-```
+```text
 Environment: ehr-production       (EHR application containers)
 Environment: imaging-pacs         (DICOM/PACS workloads)
 Environment: lab-lis              (Laboratory Information System)
@@ -67,6 +67,7 @@ For services handling Protected Health Information, enforce encrypted volume sto
 
 ```yaml
 # ehr-stack.yml
+
 version: "3.8"
 services:
   ehr-api:

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, Filtering, Conditionals, HCL
+Tags: OpenTofu, Terraform, for_each, Filtering, Conditional, HCL
 
 Description: Learn how to filter map and list inputs before passing them to for_each in OpenTofu, creating only the resources that meet your specified criteria.
 
 ## Introduction
 
-`for_each` creates one resource per element in a map or set. By filtering the collection before passing it to `for_each`, you can create resources selectively based on any condition — environment flags, tier requirements, feature flags, or complex multi-field criteria.
+`for_each` creates one resource per element in a map or set. By filtering the collection before passing it to `for_each`, you can create resources selectively based on any condition - environment flags, tier requirements, feature flags, or complex multi-field criteria.
 
 ## Filtering with if in for Expression
 
@@ -28,6 +28,7 @@ variable "users" {
 }
 
 # Create IAM users only for active users
+
 resource "aws_iam_user" "active_users" {
   for_each = {
     for name, user in var.users : name => user
@@ -168,4 +169,4 @@ locals {
 
 ## Conclusion
 
-Filtering before `for_each` is cleaner than using `count = condition ? 1 : 0` on individual resources when you have a collection. The `for ... if ...` expression syntax is readable and composable — define filtered views as named `locals` and reference them in multiple resource blocks for consistent selection logic.
+Filtering before `for_each` is cleaner than using `count = condition ? 1 : 0` on individual resources when you have a collection. The `for ... if ...` expression syntax is readable and composable - define filtered views as named `locals` and reference them in multiple resource blocks for consistent selection logic.

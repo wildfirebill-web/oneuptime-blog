@@ -47,6 +47,7 @@ Classify the types of data that appear in telemetry:
 
 ```yaml
 # data-classification.yaml
+
 # Classification of telemetry data types and their handling requirements.
 classifications:
   public:

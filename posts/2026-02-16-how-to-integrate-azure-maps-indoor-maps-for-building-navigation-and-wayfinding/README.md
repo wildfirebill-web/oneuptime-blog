@@ -43,6 +43,7 @@ graph TD
 
 ```bash
 # Create an Azure Maps account with the Gen2 pricing tier
+
 RESOURCE_GROUP="rg-maps"
 MAPS_ACCOUNT="maps-indoor-nav"
 LOCATION="eastus"

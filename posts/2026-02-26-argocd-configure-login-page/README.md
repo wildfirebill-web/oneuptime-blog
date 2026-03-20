@@ -423,6 +423,7 @@ Here is a full CSS configuration that creates a branded login experience:
 
 ```bash
 # Create or update the CSS ConfigMap
+
 kubectl create configmap argocd-custom-css \
   --from-file=custom.css=./login-custom.css \
   -n argocd --dry-run=client -o yaml | kubectl apply -f -

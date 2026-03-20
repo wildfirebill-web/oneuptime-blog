@@ -29,6 +29,7 @@ Add services to a job using the `services` keyword.
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - test
 

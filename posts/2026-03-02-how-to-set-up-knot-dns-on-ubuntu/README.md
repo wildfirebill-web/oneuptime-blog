@@ -16,6 +16,7 @@ CZ.NIC maintains a PPA for Ubuntu with up-to-date Knot DNS packages:
 
 ```bash
 # Add the Knot DNS PPA
+
 sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:cz.nic-labs/knot-dns
 

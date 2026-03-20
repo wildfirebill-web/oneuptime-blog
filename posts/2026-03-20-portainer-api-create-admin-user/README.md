@@ -1,4 +1,4 @@
-# How to Create the Initial Admin User via the Portainer API
+# How to Create the Initial Admin User via the Portainer API - User
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,7 +20,7 @@ When deploying Portainer in automated environments (CI/CD, infrastructure-as-cod
 
 After installing Portainer, there is a time window (typically 5 minutes by default) during which an admin user can be created without authentication. After this window closes, you must already be authenticated to create users.
 
-When you access Portainer for the first time, it shows the "Create initial admin user" screen — the API replicates this behavior.
+When you access Portainer for the first time, it shows the "Create initial admin user" screen - the API replicates this behavior.
 
 ## Step 1: Check If Portainer Needs Initialization
 
@@ -28,6 +28,7 @@ When you access Portainer for the first time, it shows the "Create initial admin
 PORTAINER_URL="https://portainer.example.com"
 
 # Check initialization status
+
 STATUS=$(curl -s "${PORTAINER_URL}/api/system/status")
 echo $STATUS | jq .
 
@@ -88,7 +89,7 @@ Here is a complete script for automated Portainer initialization:
 
 ```bash
 #!/bin/bash
-# init-portainer.sh — Fully automated Portainer initialization
+# init-portainer.sh - Fully automated Portainer initialization
 
 set -euo pipefail
 
@@ -205,4 +206,4 @@ volumes:
 
 ## Conclusion
 
-Creating the initial Portainer admin user via the API is essential for fully automated, reproducible deployments. Use the `/api/users/admin/init` endpoint during the initialization window, combine it with health checks to ensure Portainer is ready, and run it as part of your infrastructure provisioning scripts. Never store the admin password in the script file itself — always use environment variables or a secrets manager.
+Creating the initial Portainer admin user via the API is essential for fully automated, reproducible deployments. Use the `/api/users/admin/init` endpoint during the initialization window, combine it with health checks to ensure Portainer is ready, and run it as part of your infrastructure provisioning scripts. Never store the admin password in the script file itself - always use environment variables or a secrets manager.

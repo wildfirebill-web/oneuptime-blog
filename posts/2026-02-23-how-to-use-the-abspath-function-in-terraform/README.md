@@ -16,6 +16,7 @@ The `abspath` function takes a string containing a filesystem path and returns t
 
 ```hcl
 # If Terraform is running from /home/user/terraform/project,
+
 # this returns "/home/user/terraform/project/configs/app.json"
 output "config_path" {
   value = abspath("configs/app.json")

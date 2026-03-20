@@ -18,6 +18,7 @@ Your inventory file:
 
 ```ini
 # inventory/hosts
+
 [ubuntu_servers]
 web01 ansible_host=10.0.1.10
 web02 ansible_host=10.0.1.11

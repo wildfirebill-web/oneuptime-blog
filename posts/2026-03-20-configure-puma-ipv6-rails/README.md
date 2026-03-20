@@ -16,6 +16,7 @@ Puma is the default web server for Ruby on Rails. It supports IPv6 binding using
 # config/puma.rb
 
 # Bind to all IPv6 interfaces (dual-stack)
+
 bind "tcp://[::]:3000"
 
 # Bind to IPv6 loopback only (local only)
@@ -174,4 +175,4 @@ bundle exec pumactl -S /var/run/puma/puma.state stats
 
 ## Conclusion
 
-Puma uses bracket notation for IPv6 binds: `bind "tcp://[::]:3000"`. Multiple `bind` lines support dual-stack. Use Unix sockets between Puma and NGINX for best performance — the IPv6 binding matters for direct access and health checks. Monitor Puma with OneUptime's HTTPS checks and set up alerts for worker restarts.
+Puma uses bracket notation for IPv6 binds: `bind "tcp://[::]:3000"`. Multiple `bind` lines support dual-stack. Use Unix sockets between Puma and NGINX for best performance - the IPv6 binding matters for direct access and health checks. Monitor Puma with OneUptime's HTTPS checks and set up alerts for worker restarts.

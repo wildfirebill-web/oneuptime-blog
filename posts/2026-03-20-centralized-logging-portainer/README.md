@@ -27,6 +27,7 @@ Docker containers write logs to stdout/stderr by default. Without centralized lo
 
 ```bash
 # Apply and verify
+
 sudo systemctl restart docker
 docker info | grep -A 5 "Logging Driver"
 ```
@@ -237,4 +238,4 @@ services:
 
 ## Conclusion
 
-Centralized logging transforms troubleshooting from container-by-container log inspection to cross-service search and correlation. The PLG stack (Promtail + Loki + Grafana) is resource-efficient — Loki indexes only log metadata (labels), not the log content, keeping storage costs low. Promtail's Docker service discovery automatically picks up new containers without configuration changes. Portainer's log viewer remains useful for quick checks, while Grafana Explore and Loki's LogQL handle complex cross-service queries, error aggregation, and alerting.
+Centralized logging transforms troubleshooting from container-by-container log inspection to cross-service search and correlation. The PLG stack (Promtail + Loki + Grafana) is resource-efficient - Loki indexes only log metadata (labels), not the log content, keeping storage costs low. Promtail's Docker service discovery automatically picks up new containers without configuration changes. Portainer's log viewer remains useful for quick checks, while Grafana Explore and Loki's LogQL handle complex cross-service queries, error aggregation, and alerting.

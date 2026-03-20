@@ -16,6 +16,7 @@ On Ubuntu, pcs is available through the standard repositories:
 
 ```bash
 # Install pcs and the cluster stack
+
 sudo apt update
 sudo apt install -y pacemaker corosync pcs
 
@@ -99,7 +100,7 @@ sudo pcs resource show cluster-vip
 sudo pcs resource history cluster-vip
 ```
 
-## Resource Groups
+Resource Groups
 
 Groups allow multiple resources to run on the same node and start/stop in order:
 
@@ -117,7 +118,7 @@ sudo pcs resource show webservice
 sudo pcs resource ungroup webservice apache-web
 ```
 
-## Resource Clones
+Resource Clones
 
 Clones run on multiple nodes simultaneously - useful for services that should run everywhere:
 
@@ -143,7 +144,7 @@ sudo pcs resource promotable mydata \
   notify=true
 ```
 
-## Resource Constraints
+Resource Constraints
 
 Constraints control where and when resources run.
 
@@ -230,7 +231,7 @@ sudo pcs property set maintenance-mode=true
 sudo pcs property set maintenance-mode=false
 ```
 
-## Resource Operations
+Resource Operations
 
 You can update resource operation intervals and timeouts:
 

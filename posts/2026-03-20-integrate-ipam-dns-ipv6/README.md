@@ -8,13 +8,14 @@ Description: Automate the creation and management of DNS AAAA and PTR records fr
 
 ## Introduction
 
-When IPv6 addresses are assigned in IPAM, corresponding DNS AAAA records and PTR records in the `ip6.arpa` zone should be created automatically. Manual DNS management creates drift between IPAM and DNS — automation ensures they stay synchronized.
+When IPv6 addresses are assigned in IPAM, corresponding DNS AAAA records and PTR records in the `ip6.arpa` zone should be created automatically. Manual DNS management creates drift between IPAM and DNS - automation ensures they stay synchronized.
 
 ## Generate AAAA Records from NetBox
 
 ```python
 #!/usr/bin/env python3
 # netbox_to_dns.py
+
 # Generate DNS zone file additions from NetBox IPv6 addresses
 
 import pynetbox
@@ -219,4 +220,4 @@ print(f"\nSync status: {mismatches} mismatches found")
 
 ## Conclusion
 
-IPAM-DNS integration automates the most error-prone part of IPv6 address management — keeping AAAA and PTR records synchronized with assignments. Use nsupdate or the PowerDNS API for dynamic updates triggered by IPAM changes. Run a periodic validation script to detect and alert on drift between IPAM and DNS. The most important practice is making IPAM the source of truth: address assignments happen in IPAM first, and DNS records are derived from those assignments, never the other way around.
+IPAM-DNS integration automates the most error-prone part of IPv6 address management - keeping AAAA and PTR records synchronized with assignments. Use nsupdate or the PowerDNS API for dynamic updates triggered by IPAM changes. Run a periodic validation script to detect and alert on drift between IPAM and DNS. The most important practice is making IPAM the source of truth: address assignments happen in IPAM first, and DNS records are derived from those assignments, never the other way around.

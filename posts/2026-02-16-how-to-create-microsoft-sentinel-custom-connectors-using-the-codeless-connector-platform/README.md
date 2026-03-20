@@ -237,6 +237,7 @@ This creates the custom table and DCR for the connector:
 
 ```bash
 # Create a custom table in Log Analytics for the connector data
+
 az monitor log-analytics workspace table create \
   --resource-group rg-sentinel \
   --workspace-name law-sentinel-prod \

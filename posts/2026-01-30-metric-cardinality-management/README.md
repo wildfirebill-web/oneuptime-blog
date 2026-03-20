@@ -52,6 +52,7 @@ Configure sample limits per scrape target to prevent any single service from ove
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'application'
     scrape_interval: 15s

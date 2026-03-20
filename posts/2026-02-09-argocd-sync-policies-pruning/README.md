@@ -22,6 +22,7 @@ Start with a basic automated sync policy in your Application manifest:
 
 ```yaml
 # application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

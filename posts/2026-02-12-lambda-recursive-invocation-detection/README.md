@@ -45,6 +45,7 @@ View the current setting for your function:
 
 ```bash
 # Check if recursive loop detection is enabled
+
 aws lambda get-function-recursive-config \
   --function-name my-function
 

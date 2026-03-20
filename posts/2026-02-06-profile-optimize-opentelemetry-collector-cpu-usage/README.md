@@ -20,6 +20,7 @@ Add the pprof extension to your collector configuration:
 
 ```yaml
 # collector-config.yaml - Enable pprof for profiling
+
 extensions:
   # Expose Go pprof profiling endpoints on port 1777
   pprof:

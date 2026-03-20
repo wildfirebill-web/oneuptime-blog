@@ -8,12 +8,13 @@ Description: Use nmtui (NetworkManager Text User Interface) to configure network
 
 ## Introduction
 
-`nmtui` is a curses-based text user interface for NetworkManager. It provides a menu-driven approach to network configuration without requiring knowledge of `nmcli` syntax — useful for initial server setup, remote SSH sessions, or when a GUI is unavailable.
+`nmtui` is a curses-based text user interface for NetworkManager. It provides a menu-driven approach to network configuration without requiring knowledge of `nmcli` syntax - useful for initial server setup, remote SSH sessions, or when a GUI is unavailable.
 
 ## Launch nmtui
 
 ```bash
 # Start the nmtui text interface (requires root/sudo)
+
 nmtui
 
 # Or explicitly call it with sudo
@@ -24,7 +25,7 @@ sudo nmtui
 
 When launched, nmtui presents three options:
 
-```
+```sql
 ┌─────────────────────────────────┐
 │ NetworkManager TUI              │
 │                                 │
@@ -46,9 +47,9 @@ Navigate to **Edit a connection** to:
 - Delete a connection
 
 Navigation:
-- `Tab` — move between fields
-- `Space` / `Enter` — select/confirm
-- `Esc` — go back
+- `Tab` - move between fields
+- `Space` / `Enter` - select/confirm
+- `Esc` - go back
 
 ## Activate a Connection
 

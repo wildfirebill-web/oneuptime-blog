@@ -1,4 +1,4 @@
-# How to Add AWS ECR as a Registry in Portainer
+# How to Add AWS ECR as a Registry in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -50,6 +50,7 @@ Save this as a policy named `PortainerECRReadOnly` and attach it to your IAM use
 
 ```bash
 # Using AWS CLI to create the policy
+
 aws iam create-policy \
   --policy-name PortainerECRReadOnly \
   --policy-document file://ecr-policy.json
@@ -75,7 +76,7 @@ aws iam create-access-key --user-name portainer-ecr
 
 ## Step 3: Fill in ECR Configuration
 
-```
+```text
 Registry type:  AWS ECR
 Region:         us-east-1         (your AWS region)
 Access key ID:  AKIAIOSFODNN7EXAMPLE
@@ -84,7 +85,7 @@ Secret key:     wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 For cross-account ECR access:
 
-```
+```text
 Registry URL:   123456789012.dkr.ecr.us-east-1.amazonaws.com
 ```
 
@@ -94,7 +95,7 @@ Registry URL:   123456789012.dkr.ecr.us-east-1.amazonaws.com
 
 Your ECR registry URL follows this format:
 
-```
+```text
 {account-id}.dkr.ecr.{region}.amazonaws.com
 ```
 
@@ -173,7 +174,7 @@ In Portainer settings, leave the access key fields empty and Portainer will use 
 
 If you have repositories in multiple AWS regions, add a separate registry entry for each region:
 
-```
+```text
 Registry 1: us-east-1 ECR (production)
   Region: us-east-1
   Access Key: AKIA...
@@ -187,7 +188,7 @@ Registry 2: eu-west-1 ECR (Europe)
 
 ### No Basic Auth Credentials
 
-```
+```text
 Error: no basic auth credentials
 ```
 
@@ -195,7 +196,7 @@ ECR token has expired. Refresh it manually or via cron (CE) or wait for Portaine
 
 ### Access Denied
 
-```
+```text
 Error: AccessDeniedException: User is not authorized to perform: ecr:GetAuthorizationToken
 ```
 
@@ -203,7 +204,7 @@ Add `ecr:GetAuthorizationToken` to the IAM policy.
 
 ### Image Not Found
 
-```
+```bash
 Error: repository does not exist or may require 'docker login'
 ```
 

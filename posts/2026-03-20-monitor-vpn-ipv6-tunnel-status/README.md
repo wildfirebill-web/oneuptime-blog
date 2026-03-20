@@ -12,6 +12,7 @@ Monitoring VPN IPv6 tunnel status involves checking tunnel connectivity, IPv6 ad
 
 ```bash
 # Real-time WireGuard status
+
 sudo wg show
 
 # Example output showing IPv6 peer:
@@ -100,7 +101,7 @@ go install github.com/MindFlavor/prometheus_wireguard_exporter@latest
 sudo prometheus_wireguard_exporter -n wg0
 
 # Key metrics:
-# wireguard_peer_last_handshake_seconds — alert if > 180 seconds
+# wireguard_peer_last_handshake_seconds - alert if > 180 seconds
 # wireguard_peer_receive_bytes_total
 # wireguard_peer_transmit_bytes_total
 ```

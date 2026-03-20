@@ -36,6 +36,7 @@ Define the platform in a central configuration:
 
 ```yaml
 # platform/config.yml
+
 # SaaS platform global configuration
 ---
 platform_name: myplatform

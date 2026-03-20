@@ -16,6 +16,7 @@ Here is the simplest case, adding a repository with its URL and GPG key:
 
 ```yaml
 # Add the EPEL repository
+
 - name: Add EPEL repository
   ansible.builtin.yum_repository:
     name: epel

@@ -25,6 +25,7 @@ This model is consistent across all information. Whether you are looking at IP a
 
 ```bash
 # Get all resources of a type
+
 talosctl get <type> --nodes <node-ip>
 
 # Get a specific resource by ID

@@ -59,6 +59,7 @@ Check the error:
 ```bash
 kubectl logs readonly-pod
 # Error: cannot write to /var/run/nginx.pid: Read-only file system
+
 ```
 
 This is expected. We need to provide writable volumes for locations where the application needs to write.

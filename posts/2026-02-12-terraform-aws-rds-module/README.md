@@ -310,6 +310,7 @@ The module stores the master password in AWS Secrets Manager by default. Access 
 
 ```hcl
 # Output the connection details
+
 output "db_endpoint" {
   value       = module.db.db_instance_endpoint
   description = "Database connection endpoint"

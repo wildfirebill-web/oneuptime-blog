@@ -40,6 +40,7 @@ This creates a base firewall policy with global network and application rules:
 
 ```bash
 # Create the base firewall policy
+
 az network firewall policy create \
   --name fw-policy-base \
   --resource-group rg-firewall-policies \

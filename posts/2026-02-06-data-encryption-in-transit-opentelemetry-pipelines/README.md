@@ -46,6 +46,7 @@ The Python OTLP exporter accepts TLS configuration through environment variables
 
 ```python
 # Configure the Python OTel SDK to export traces over TLS
+
 # The OTLP exporter will use the specified certificate to verify the collector
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

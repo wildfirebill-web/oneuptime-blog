@@ -34,6 +34,7 @@ operator:
 
 ```promql
 # Operator API call rates (cloud provider)
+
 rate(cilium_operator_api_call_duration_seconds_count[5m])
 
 # API errors

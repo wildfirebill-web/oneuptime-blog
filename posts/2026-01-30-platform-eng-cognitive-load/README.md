@@ -52,6 +52,7 @@ Golden paths are opinionated, well-supported ways for developers to accomplish c
 
 ```yaml
 # golden-path-templates/microservice/template.yaml
+
 # This template defines a standard microservice structure
 # that includes all necessary boilerplate and configurations
 

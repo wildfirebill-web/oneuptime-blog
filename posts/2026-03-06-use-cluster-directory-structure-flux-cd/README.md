@@ -65,6 +65,7 @@ Each cluster is bootstrapped independently, pointing to its own directory:
 
 ```bash
 # Bootstrap the production US East cluster
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

@@ -1,8 +1,8 @@
-# How to Deploy Redis on Rancher
+# How to Deploy Redis on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Redis, Caching, Databases
+Tags: Rancher, Kubernetes, Redis, Caching, Database
 
 Description: Deploy Redis on Rancher-managed Kubernetes clusters with high availability using Redis Sentinel or Redis Cluster mode for caching, session management, and message brokering.
 
@@ -21,6 +21,7 @@ Redis is an in-memory data structure store used for caching, session management,
 
 ```yaml
 # redis-values.yaml - Redis with Sentinel for HA
+
 architecture: replication
 
 auth:

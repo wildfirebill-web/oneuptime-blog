@@ -69,6 +69,7 @@ Before working with Pub/Sub schemas, you need the Google Cloud SDK installed and
 
 ```bash
 # Install Google Cloud SDK on macOS using Homebrew
+
 brew install google-cloud-sdk
 
 # Authenticate with your Google Cloud account

@@ -1,4 +1,4 @@
-# How to Deploy a Rust Game Server via Portainer
+# How to Deploy a Rust Game Server via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Running your own dedicated game server gives you full control over game settings
 
 ```bash
 # Open game server ports
+
 ufw allow 28015:28015/udp 28016:28016/tcp
 ufw reload
 ```

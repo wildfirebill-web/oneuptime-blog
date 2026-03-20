@@ -16,6 +16,7 @@ Before you start, your Docker host needs the CIFS utilities installed. On Ubuntu
 
 ```bash
 # Install the CIFS utilities package required for SMB mounts
+
 sudo apt-get update && sudo apt-get install -y cifs-utils
 ```
 

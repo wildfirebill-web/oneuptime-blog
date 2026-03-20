@@ -28,6 +28,7 @@ Create an ArgoCD Application for the GPU operator:
 
 ```yaml
 # gpu-operator-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

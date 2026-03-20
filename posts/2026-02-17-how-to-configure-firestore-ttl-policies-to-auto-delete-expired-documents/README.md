@@ -34,6 +34,7 @@ Using gcloud CLI:
 
 ```bash
 # Create a TTL policy on the 'sessions' collection group
+
 # The 'expireAt' field determines when each document should be deleted
 gcloud firestore fields ttls update expireAt \
   --collection-group=sessions \

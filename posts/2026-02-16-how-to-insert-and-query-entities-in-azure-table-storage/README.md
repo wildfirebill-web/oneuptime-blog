@@ -26,6 +26,7 @@ First, install the Azure Data Tables SDK. This is the newer SDK that replaces th
 
 ```bash
 # Python
+
 pip install azure-data-tables
 
 # .NET

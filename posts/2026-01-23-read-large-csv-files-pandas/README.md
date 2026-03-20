@@ -20,6 +20,7 @@ When a CSV file is too large to fit in memory, Pandas provides several strategie
 import pandas as pd
 
 # This might crash with a 10GB file
+
 df = pd.read_csv('huge_file.csv')  # MemoryError!
 
 # Why? Pandas loads everything into memory at once

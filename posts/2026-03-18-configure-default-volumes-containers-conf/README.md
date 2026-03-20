@@ -20,6 +20,7 @@ Define volumes that are automatically mounted in all containers.
 
 ```bash
 # Create user-level configuration
+
 mkdir -p ~/.config/containers
 
 cat > ~/.config/containers/containers.conf << 'EOF'

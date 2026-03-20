@@ -30,6 +30,7 @@ For programmatic access, use the Resource Health Events API:
 
 ```bash
 # Query health history events for the past 30 days
+
 # The filter uses OData syntax to narrow down results
 az rest --method get \
   --url "https://management.azure.com/subscriptions/<sub-id>/providers/Microsoft.ResourceHealth/events?api-version=2022-10-01&\$filter=eventType eq 'ServiceIssue' and properties.impactStartTime ge 2026-01-17" \

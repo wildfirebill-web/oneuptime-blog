@@ -27,6 +27,7 @@ A Task is the fundamental building block in Tekton. It defines a sequence of ste
 
 ```yaml
 # task-example.yaml
+
 # A basic Tekton Task that clones a repository and lists its contents
 apiVersion: tekton.dev/v1
 kind: Task

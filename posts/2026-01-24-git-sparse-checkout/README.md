@@ -45,6 +45,7 @@ Git 2.25 introduced cone mode, which is the recommended approach for sparse chec
 
 ```bash
 # Clone with no checkout
+
 git clone --no-checkout https://github.com/company/monorepo.git
 cd monorepo
 

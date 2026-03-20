@@ -64,6 +64,7 @@ Verify your Istio installation:
 
 ```bash
 # Check Istio version and status
+
 istioctl version
 
 # Verify Istiod is running

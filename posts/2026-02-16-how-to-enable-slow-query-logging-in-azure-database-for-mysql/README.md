@@ -34,6 +34,7 @@ By default, the slow query log is disabled on Azure Database for MySQL Flexible 
 
 ```bash
 # Enable the slow query log
+
 az mysql flexible-server parameter set \
   --resource-group myResourceGroup \
   --server-name my-mysql-server \

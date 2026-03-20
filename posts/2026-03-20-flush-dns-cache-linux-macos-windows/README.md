@@ -8,12 +8,13 @@ Description: Clear DNS cache on Linux (systemd-resolved, nscd, dnsmasq), macOS, 
 
 ## Introduction
 
-DNS caches store recently resolved names to improve performance. When DNS records change — during migrations, failovers, or IP changes — old cached entries prevent clients from picking up the new values until the TTL expires. Flushing the DNS cache forces an immediate re-query, allowing clients to resolve to new IP addresses without waiting for TTL expiration.
+DNS caches store recently resolved names to improve performance. When DNS records change - during migrations, failovers, or IP changes - old cached entries prevent clients from picking up the new values until the TTL expires. Flushing the DNS cache forces an immediate re-query, allowing clients to resolve to new IP addresses without waiting for TTL expiration.
 
 ## Linux - systemd-resolved
 
 ```bash
 # Most modern Linux distributions use systemd-resolved:
+
 # Check if it's running:
 systemctl status systemd-resolved
 
@@ -148,4 +149,4 @@ echo "After:  $IP_AFTER"
 
 ## Conclusion
 
-DNS cache flushing procedures differ by OS and resolver: use `resolvectl flush-caches` on systemd-resolved Linux, `sudo killall -HUP mDNSResponder` on macOS, and `ipconfig /flushdns` on Windows. After flushing, verify the correct IP is returned. For production DNS record changes, set the TTL low (e.g., 60 seconds) before the change to minimize cache propagation time — this is more reliable than relying on clients to flush their caches.
+DNS cache flushing procedures differ by OS and resolver: use `resolvectl flush-caches` on systemd-resolved Linux, `sudo killall -HUP mDNSResponder` on macOS, and `ipconfig /flushdns` on Windows. After flushing, verify the correct IP is returned. For production DNS record changes, set the TTL low (e.g., 60 seconds) before the change to minimize cache propagation time - this is more reliable than relying on clients to flush their caches.

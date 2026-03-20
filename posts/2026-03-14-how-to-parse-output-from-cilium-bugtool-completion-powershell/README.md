@@ -30,14 +30,14 @@ This guide covers parsing techniques for cilium-bugtool PowerShell completion ou
 
 
 
-\`\`\`powershell
+```powershell
 ## Generate and save the completion script
 cilium-bugtool completion powershell > C:\temp\bugtool-completion.ps1
-\`\`\`
+```
 
 ### Extracting Commands with PowerShell
 
-\`\`\`powershell
+```powershell
 \$content = Get-Content C:\temp\bugtool-completion.ps1 -Raw
 
 ## Extract Register-ArgumentCompleter blocks
@@ -45,11 +45,11 @@ cilium-bugtool completion powershell > C:\temp\bugtool-completion.ps1
 [regex]::Matches(\$content, \$pattern) | ForEach-Object {
     \$_.Groups[1].Value
 } | Sort-Object -Unique
-\`\`\`
+```
 
 ### Python-Based Parser
 
-\`\`\`python
+```python
 #!/usr/bin/env python3
 """Parse cilium-bugtool PowerShell completion output."""
 
@@ -85,12 +85,13 @@ if __name__ == '__main__':
     path = sys.argv[1] if len(sys.argv) > 1 else 'bugtool-completion.ps1'
     result = parse_powershell_completion(path)
     print(json.dumps(result, indent=2))
-\`\`\`
+```
 
 ## Verification
 
 ```powershell
 # Verify parsing
+
 python3 parse_ps_completion.py bugtool-completion.ps1 | python3 -m json.tool | head -20
 ```
 

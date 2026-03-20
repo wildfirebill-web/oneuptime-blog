@@ -117,6 +117,7 @@ spec:
 
 ```bash
 # Simulate connectivity failure to verify alerts fire
+
 kubectl get pods -n monitoring | grep blackbox
 
 # Check current probe status in Prometheus

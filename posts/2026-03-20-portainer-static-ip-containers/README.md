@@ -1,4 +1,4 @@
-# How to Configure Static IP Addresses for Containers in Portainer
+# How to Configure Static IP Addresses for Containers in Portainer - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to assign fixed static IP addresses to Docker containers 
 
 ## Introduction
 
-By default, Docker assigns container IP addresses dynamically from a network's subnet pool. While this works for most applications, some use cases require predictable, fixed IPs: legacy applications that hardcode connection strings, firewall rules that target specific container IPs, or monitoring configurations that reference fixed endpoints. Static IPs in Docker require a custom network with a defined subnet — the default bridge network does not support static IP assignment.
+By default, Docker assigns container IP addresses dynamically from a network's subnet pool. While this works for most applications, some use cases require predictable, fixed IPs: legacy applications that hardcode connection strings, firewall rules that target specific container IPs, or monitoring configurations that reference fixed endpoints. Static IPs in Docker require a custom network with a defined subnet - the default bridge network does not support static IP assignment.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ The default `bridge` network (`docker0`) manages its address pool automatically 
 
 ```bash
 # Create a custom bridge network with a specific subnet:
+
 docker network create \
   --driver bridge \
   --subnet 172.25.0.0/24 \
@@ -78,7 +79,7 @@ docker inspect dns-server --format '{{.NetworkSettings.Networks.static-ip-networ
 version: "3.8"
 
 services:
-  # DNS server — always at .10
+  # DNS server - always at .10
   coredns:
     image: coredns/coredns:latest
     restart: unless-stopped
@@ -86,7 +87,7 @@ services:
       infra-net:
         ipv4_address: 172.25.0.10   # Fixed: other containers use this as DNS
 
-  # Prometheus — always at .20
+  # Prometheus - always at .20
   prometheus:
     image: prom/prometheus:latest
     restart: unless-stopped
@@ -94,7 +95,7 @@ services:
       infra-net:
         ipv4_address: 172.25.0.20   # Fixed: Grafana points here
 
-  # Grafana — always at .21
+  # Grafana - always at .21
   grafana:
     image: grafana/grafana:latest
     restart: unless-stopped
@@ -119,7 +120,7 @@ networks:
 
 Divide the subnet to avoid DHCP/static conflicts:
 
-```
+```bash
 172.25.0.0/24 layout:
   172.25.0.1        → Gateway
   172.25.0.2-9      → Reserved
@@ -153,7 +154,7 @@ docker inspect dns-server --format '{{.NetworkSettings.Networks.static-ip-networ
 docker rm dns-server
 docker run -d --name dns-server --network static-ip-network coredns/coredns:latest
 docker inspect dns-server --format '{{.NetworkSettings.Networks.static-ip-network.IPAddress}}'
-# Dynamic IP now — must specify --ip again
+# Dynamic IP now - must specify --ip again
 ```
 
 Always define static IPs in your Compose file or deployment scripts so they are reproduced consistently.

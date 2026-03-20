@@ -55,6 +55,7 @@ Deploy in each cluster:
 
 ```yaml
 # prometheus-thanos.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

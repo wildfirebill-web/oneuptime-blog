@@ -60,6 +60,7 @@ This enables the Defender for DNS plan on your subscription:
 
 ```bash
 # Enable Microsoft Defender for DNS
+
 az security pricing create \
   --name Dns \
   --tier Standard

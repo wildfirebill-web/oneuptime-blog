@@ -28,6 +28,7 @@ VPP requires hugepages for its memory allocator.
 
 ```bash
 # On each node
+
 echo 'vm.nr_hugepages = 512' >> /etc/sysctl.d/99-hugepages.conf
 sysctl -p /etc/sysctl.d/99-hugepages.conf
 

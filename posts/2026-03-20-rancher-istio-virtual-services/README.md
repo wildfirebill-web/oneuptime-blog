@@ -23,6 +23,7 @@ A VirtualService defines a set of traffic routing rules to apply when a host is 
 
 ```yaml
 # basic-virtual-service.yaml
+
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:

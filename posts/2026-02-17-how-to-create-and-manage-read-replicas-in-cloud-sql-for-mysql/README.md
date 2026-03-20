@@ -41,6 +41,7 @@ Check your current configuration:
 
 ```bash
 # Verify that backups and binary logging are enabled
+
 gcloud sql instances describe my-primary-instance \
     --format="json(settings.backupConfiguration)"
 ```

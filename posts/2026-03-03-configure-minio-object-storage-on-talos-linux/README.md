@@ -25,6 +25,7 @@ The recommended way to deploy MinIO on Kubernetes is through the MinIO Operator:
 
 ```bash
 # Add the MinIO Helm repository
+
 helm repo add minio-operator https://operator.min.io
 helm repo update
 

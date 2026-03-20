@@ -16,6 +16,7 @@ Felix metric alerts detect data plane problems before they manifest as pod conne
 
 ```bash
 # Enable Felix metrics (if not already enabled)
+
 kubectl patch felixconfiguration default   --type=merge   -p '{"spec":{"prometheusMetricsEnabled":true,"prometheusMetricsPort":9091}}'
 
 # Test Felix metrics endpoint

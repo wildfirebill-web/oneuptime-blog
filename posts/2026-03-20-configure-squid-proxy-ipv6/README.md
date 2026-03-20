@@ -22,6 +22,7 @@ apt-get install -y squid
 # /etc/squid/squid.conf
 
 # Listen on all IPv6 interfaces on port 3128
+
 http_port [::]:3128
 
 # Also listen on IPv4
@@ -92,7 +93,7 @@ ssl_bump server-first all
 ```nginx
 # /etc/squid/squid.conf
 
-# Log format includes %>a (client IP — IPv6 addresses logged natively)
+# Log format includes %>a (client IP - IPv6 addresses logged natively)
 logformat combined %{%Y-%m-%dT%H:%M:%S}tl.%03tu %6tr %>a %Ss/%03>Hs %<st %rm %ru
 
 access_log /var/log/squid/access.log combined

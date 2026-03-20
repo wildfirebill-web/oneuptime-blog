@@ -22,6 +22,7 @@ To list all etcd members in your cluster:
 
 ```bash
 # List etcd members
+
 talosctl etcd members --nodes 192.168.1.10
 ```
 

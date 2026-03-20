@@ -71,6 +71,7 @@ Apply the ConfigMap:
 ```bash
 kubectl apply -f ratelimit-config.yaml
 # Restart the rate limit service to pick up the new config
+
 kubectl rollout restart deployment/ratelimit -n rate-limit
 ```
 

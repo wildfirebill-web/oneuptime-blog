@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, HCL, Infrastructure as Code, DevOps, Read-Only
+Tags: OpenTofu, Data Source, HCL, Infrastructure as Code, DevOps, Read-Only
 
 Description: Learn how to use data sources in OpenTofu to read existing infrastructure information and reference it in your resource configurations.
 
 ---
 
-Data sources let you read information from external systems without creating or managing infrastructure. They query existing resources — like fetching the latest AMI, looking up a VPC ID, or reading a secret — and make that data available for use in your resources and locals.
+Data sources let you read information from external systems without creating or managing infrastructure. They query existing resources - like fetching the latest AMI, looking up a VPC ID, or reading a secret - and make that data available for use in your resources and locals.
 
 ---
 
@@ -16,6 +16,7 @@ Data sources let you read information from external systems without creating or 
 
 ```hcl
 # data.<provider_type>.<local_name>
+
 data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]

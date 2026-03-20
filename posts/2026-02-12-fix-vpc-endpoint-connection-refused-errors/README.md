@@ -27,6 +27,7 @@ Check the endpoint's security group.
 
 ```bash
 # Find the security groups attached to your VPC endpoint
+
 aws ec2 describe-vpc-endpoints \
   --vpc-endpoint-ids vpce-0abc123def456 \
   --query 'VpcEndpoints[].Groups'

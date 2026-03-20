@@ -1,4 +1,4 @@
-# How to Configure Kubernetes Cluster Policies in Portainer
+# How to Configure Kubernetes Cluster Policies in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,13 +25,13 @@ Portainer provides cluster-level policy configuration for Kubernetes environment
 
 Portainer BE allows restricting what users can deploy:
 
-```
+```text
 Deployment options:
-  [ ] Require resources on namespaces   — Force resource quotas before allowing deployments
-  [x] Allow web editor                  — Users can write raw YAML
-  [x] Allow Helm charts                 — Users can deploy Helm charts
-  [x] Allow use of node ports           — Allow NodePort service creation
-  [ ] Restrict privileged containers    — Block privileged container deployments
+  [ ] Require resources on namespaces   - Force resource quotas before allowing deployments
+  [x] Allow web editor                  - Users can write raw YAML
+  [x] Allow Helm charts                 - Users can deploy Helm charts
+  [x] Allow use of node ports           - Allow NodePort service creation
+  [ ] Restrict privileged containers    - Block privileged container deployments
 ```
 
 ## Step 3: Configure Default Namespace Resource Quotas
@@ -40,6 +40,7 @@ Set default resource quotas for new namespaces:
 
 ```yaml
 # Apply default resource quota via Portainer YAML editor
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:
@@ -189,9 +190,9 @@ spec:
 
 Configure in Portainer BE under **Settings → Cluster**:
 
-### Resource Over-commit
+Resource Over-commit
 
-```
+```text
 Allow resource over-commit:  [ ] disabled
 # When disabled: sum of resource requests cannot exceed cluster capacity
 # Prevents scheduling failures due to over-commitment
@@ -199,7 +200,7 @@ Allow resource over-commit:  [ ] disabled
 
 ### Default Namespace Isolation
 
-```
+```text
 Restrict default namespace: [x] enabled
 # Prevents deployments to the 'default' namespace
 # Forces use of dedicated namespaces

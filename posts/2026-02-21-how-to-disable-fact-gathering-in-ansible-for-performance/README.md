@@ -22,6 +22,7 @@ The simplest optimization is setting `gather_facts: no` at the play level.
 
 ```yaml
 # no-facts-playbook.yml
+
 # Skips fact gathering entirely for faster execution
 ---
 - name: Quick config deployment

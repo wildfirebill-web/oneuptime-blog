@@ -125,6 +125,7 @@ Configure RSpec with sensible defaults:
 # spec/spec_helper.rb
 
 # Load SimpleCov before anything else
+
 require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter '/spec/'

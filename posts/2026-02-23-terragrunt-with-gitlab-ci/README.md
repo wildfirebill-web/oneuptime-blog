@@ -46,6 +46,7 @@ First, create a Docker image with Terraform and Terragrunt pre-installed, or use
 
 ```dockerfile
 # Dockerfile.ci
+
 FROM hashicorp/terraform:1.7.0
 
 # Install Terragrunt
@@ -71,7 +72,7 @@ docker push registry.gitlab.com/your-group/infra-tools:latest
 
 Here's a complete `.gitlab-ci.yml` for Terragrunt:
 
-```yaml
+````yaml
 # .gitlab-ci.yml
 
 image: registry.gitlab.com/your-group/infra-tools:latest
@@ -136,9 +137,9 @@ plan:dev:
       BODY=$(cat <<HEREDOC
       ## Dev Environment Plan
 
-      \`\`\`
+      ```
       $PLAN
-      \`\`\`
+      ```
       HEREDOC
       )
       curl --request POST \
@@ -217,7 +218,7 @@ apply:prod:
   script:
     - cd infrastructure/prod
     - terragrunt run-all apply --terragrunt-non-interactive -auto-approve -no-color
-```
+````
 
 ## AWS Authentication with OIDC
 

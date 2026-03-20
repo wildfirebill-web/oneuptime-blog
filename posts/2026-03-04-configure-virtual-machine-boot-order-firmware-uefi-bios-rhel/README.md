@@ -14,6 +14,7 @@ KVM virtual machines on RHEL can use either traditional BIOS (SeaBIOS) or UEFI (
 
 ```bash
 # View the firmware configuration of a VM
+
 sudo virsh dumpxml rhel9-vm | grep -A5 '<os>'
 
 # BIOS firmware (default):

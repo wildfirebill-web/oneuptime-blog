@@ -47,6 +47,7 @@ Let me walk through a real-world example of deploying a web application with a d
 
 ```yaml
 # PreSync Wave 0: Back up the database before anything else
+
 apiVersion: batch/v1
 kind: Job
 metadata:

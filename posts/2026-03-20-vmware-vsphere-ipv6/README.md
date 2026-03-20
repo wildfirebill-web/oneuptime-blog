@@ -16,6 +16,7 @@ VMware vSphere supports IPv6 for ESXi host management interfaces, vCenter Server
 # Via esxcli (SSH to ESXi host)
 
 # Enable IPv6 on the ESXi host
+
 esxcli network ip set --ipv6-enabled=true
 
 # List current IPv6 addresses
@@ -39,7 +40,7 @@ esxcli network ip interface ipv6 address list
 
 ## vSphere Client: Enable IPv6 on ESXi Host
 
-```
+```sql
 1. Connect to ESXi host in vSphere Client
 2. Navigate to: Host → Configure → Networking → VMkernel Adapters
 3. Select vmk0 (Management Network)
@@ -95,7 +96,7 @@ esxcli network firewall ruleset list
 esxcli network firewall ruleset set --ruleset-id sshServer --enabled=true
 esxcli network firewall ruleset set --ruleset-id vCenter --enabled=true
 
-# ESXi firewall doesn't distinguish IPv4/IPv6 — rules apply to both
+# ESXi firewall doesn't distinguish IPv4/IPv6 - rules apply to both
 # For host-based IPv6 filtering, use the physical network firewall
 ```
 
@@ -164,4 +165,4 @@ esxcli network ip interface ipv6 address list
 
 ## Conclusion
 
-VMware vSphere supports IPv6 on ESXi host management interfaces (VMkernel adapters) configured via esxcli or the vSphere Client. IPv6 must be explicitly enabled on the ESXi host, and VMkernel adapters get static IPv6 addresses or DHCPv6/SLAAC addresses. Virtual machines receive IPv6 addresses through their guest OS configuration — the ESXi host is transparent to VM network traffic. vMotion and vSAN can also operate over IPv6 when VMkernel adapters for these services are configured with IPv6 addresses. vCenter Server connectivity over IPv6 works when the vCenter host has a dual-stack address and DNS provides AAAA records.
+VMware vSphere supports IPv6 on ESXi host management interfaces (VMkernel adapters) configured via esxcli or the vSphere Client. IPv6 must be explicitly enabled on the ESXi host, and VMkernel adapters get static IPv6 addresses or DHCPv6/SLAAC addresses. Virtual machines receive IPv6 addresses through their guest OS configuration - the ESXi host is transparent to VM network traffic. vMotion and vSAN can also operate over IPv6 when VMkernel adapters for these services are configured with IPv6 addresses. vCenter Server connectivity over IPv6 works when the vCenter host has a dual-stack address and DNS provides AAAA records.

@@ -44,6 +44,7 @@ Install the required packages first. The `@vercel/otel` package provides a thin 
 
 ```bash
 # Install OpenTelemetry packages for Next.js on Vercel
+
 npm install @vercel/otel @opentelemetry/sdk-node \
   @opentelemetry/exporter-trace-otlp-http \
   @opentelemetry/resources \

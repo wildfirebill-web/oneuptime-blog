@@ -88,6 +88,7 @@ Check the istio-cni logs for the relevant node:
 
 ```bash
 # Find the CNI pod on the same node as your workload
+
 NODE=$(kubectl get pod my-pod -n my-namespace -o jsonpath='{.spec.nodeName}')
 kubectl logs -l k8s-app=istio-cni-node -n istio-system --field-selector spec.nodeName=$NODE --tail=50
 ```

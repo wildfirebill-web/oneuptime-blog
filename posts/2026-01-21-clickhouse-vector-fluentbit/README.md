@@ -57,6 +57,7 @@ graph LR
 
 ```bash
 # Install Vector
+
 curl -fsSL https://vector.dev/install.sh | bash
 
 # Or via package manager

@@ -1,4 +1,4 @@
-# How to Deploy Watchtower Alongside Portainer
+# How to Deploy Watchtower Alongside Portainer - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to deploy Watchtower as a Portainer stack to automaticall
 
 ## What Is Watchtower?
 
-Watchtower monitors your running containers and automatically updates them when a newer image is available in the registry. It pulls the new image, stops the old container, and starts a new one with the same configuration — all without manual intervention.
+Watchtower monitors your running containers and automatically updates them when a newer image is available in the registry. It pulls the new image, stops the old container, and starts a new one with the same configuration - all without manual intervention.
 
 ## When to Use Watchtower with Portainer
 
@@ -111,7 +111,7 @@ In Portainer: **Stacks → watchtower → watchtower service → Logs**
 
 Successful update:
 
-```
+```text
 level=info msg="Found new registry image for containrrr/portainer-ce"
 level=info msg="Updating container /portainer"
 level=info msg="Pulled image portainer/portainer-ce:latest"

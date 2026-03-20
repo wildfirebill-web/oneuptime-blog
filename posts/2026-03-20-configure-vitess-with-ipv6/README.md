@@ -12,7 +12,7 @@ Vitess is a database clustering system for MySQL horizontal scaling, widely used
 
 ## Vitess Component Overview
 
-```
+```text
 vtgate (Query Router)    vtctld (Control)    vttablet (MySQL proxy)
 [2001:db8::1]:15001     [2001:db8::1]:15000  [2001:db8::2]:15100
 Client-facing           Management          Per-MySQL-instance
@@ -24,6 +24,7 @@ vtctld is the Vitess control plane service:
 
 ```bash
 # Start vtctld with IPv6 addresses
+
 vtctld \
   --topo_implementation etcd2 \
   --topo_global_server_address "[2001:db8::etcd]:2379" \
@@ -66,7 +67,7 @@ vttablet \
 
 ## Configuring vtgate for IPv6
 
-vtgate is the query router — the entry point for application connections:
+vtgate is the query router - the entry point for application connections:
 
 ```bash
 # Start vtgate with IPv6

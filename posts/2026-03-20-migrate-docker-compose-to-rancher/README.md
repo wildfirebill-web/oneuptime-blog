@@ -1,4 +1,4 @@
-# How to Migrate from Docker Compose to Rancher
+# How to Migrate from Docker Compose to Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -60,6 +60,7 @@ Kompose translates Docker Compose files to Kubernetes manifests:
 
 ```bash
 # Install Kompose
+
 curl -L https://github.com/kubernetes/kompose/releases/latest/download/kompose-linux-amd64 \
   -o kompose && chmod +x kompose
 
@@ -193,7 +194,7 @@ spec:
 
 ## Best Practices
 
-- Always add resource requests and limits — absent in Docker Compose, required in Kubernetes.
+- Always add resource requests and limits - absent in Docker Compose, required in Kubernetes.
 - Replace hardcoded secrets with Kubernetes Secrets or an external vault.
 - Add health check probes (`readinessProbe`, `livenessProbe`) to all containers.
 - Use namespaces to separate environments.

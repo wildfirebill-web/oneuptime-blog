@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, each.key, each.value, HCL
+Tags: OpenTofu, Terraform, for_each, Each.key, Each.value, HCL
 
 Description: Learn how to use each.key and each.value inside for_each resource blocks in OpenTofu to access the current iteration's identifier and configuration data.
 
@@ -144,6 +144,7 @@ variable "clusters" {
 }
 
 # Flatten to one resource per cluster-nodegroup pair
+
 locals {
   node_groups = {
     for item in flatten([

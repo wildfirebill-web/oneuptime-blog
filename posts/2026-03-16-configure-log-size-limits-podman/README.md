@@ -20,6 +20,7 @@ Before setting limits, understand your current log disk usage.
 
 ```bash
 # Check log file size for a specific container
+
 LOG_PATH=$(podman inspect --format '{{.LogPath}}' my-container)
 ls -lh "$LOG_PATH"
 

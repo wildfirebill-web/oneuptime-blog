@@ -22,6 +22,7 @@ Ensure your cluster meets CSI snapshot requirements:
 
 ```bash
 # Check if CSI snapshot CRDs are installed
+
 kubectl get crd | grep volumesnapshot
 
 # Expected output:

@@ -26,6 +26,7 @@ Install MicroK8s using snap.
 
 ```bash
 # Install the latest stable MicroK8s
+
 sudo snap install microk8s --classic --channel=1.28/stable
 
 # Add your user to the microk8s group so you don't need sudo

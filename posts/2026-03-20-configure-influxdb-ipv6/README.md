@@ -31,6 +31,7 @@ Description: Learn how to configure InfluxDB to listen on IPv6 addresses for HTT
 # /etc/influxdb/config.yml (InfluxDB 2.x)
 
 # HTTP bind address
+
 http-bind-address: "[2001:db8::10]:8086"
 
 # Or listen on all interfaces

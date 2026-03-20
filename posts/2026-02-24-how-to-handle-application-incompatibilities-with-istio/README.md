@@ -151,6 +151,7 @@ If your application binds to port 15000, 15001, 15006, 15020, 15021, or 15090, i
 
 ```bash
 # Check which ports Istio uses
+
 # 15000 - Envoy admin interface
 # 15001 - Envoy outbound
 # 15006 - Envoy inbound

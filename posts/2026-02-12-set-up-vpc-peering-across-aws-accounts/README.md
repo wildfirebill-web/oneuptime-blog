@@ -45,6 +45,7 @@ From Account A, create the peering connection request. You'll need Account B's a
 
 ```bash
 # Run this in Account A (requester)
+
 PEERING_ID=$(aws ec2 create-vpc-peering-connection \
   --vpc-id vpc-prod-aaa \
   --peer-owner-id 222222222222 \

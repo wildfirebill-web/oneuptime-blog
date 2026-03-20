@@ -34,6 +34,7 @@ The Cilium API reference is available at the official Cilium documentation site.
 
 ```bash
 # The agent API is accessible via Unix socket inside the Cilium pod
+
 CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 

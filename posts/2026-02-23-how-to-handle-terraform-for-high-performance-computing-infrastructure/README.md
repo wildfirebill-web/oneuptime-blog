@@ -16,6 +16,7 @@ In this guide, we will cover how to provision HPC infrastructure with Terraform.
 
 ```hcl
 # hpc/gpu-cluster.tf
+
 # GPU compute cluster for HPC workloads
 
 resource "aws_placement_group" "hpc" {

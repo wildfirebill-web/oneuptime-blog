@@ -8,7 +8,7 @@ Description: Learn how to use the fileexists function in OpenTofu to conditional
 
 ## Introduction
 
-The `fileexists` function in OpenTofu returns `true` if a file exists at the given path, and `false` otherwise. It enables conditional file reading — you can check whether an optional override file exists before attempting to read it, preventing errors.
+The `fileexists` function in OpenTofu returns `true` if a file exists at the given path, and `false` otherwise. It enables conditional file reading - you can check whether an optional override file exists before attempting to read it, preventing errors.
 
 ## Syntax
 

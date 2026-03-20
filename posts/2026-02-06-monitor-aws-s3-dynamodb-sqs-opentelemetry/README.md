@@ -43,6 +43,7 @@ S3 publishes request-level metrics to CloudWatch when you enable request metrics
 
 ```yaml
 # otel-collector-s3.yaml
+
 receivers:
   awscloudwatch:
     region: us-east-1

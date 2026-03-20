@@ -18,6 +18,7 @@ The `podman ps` command displays running containers with details like names, IDs
 
 ```bash
 # List all running containers
+
 podman ps
 ```
 

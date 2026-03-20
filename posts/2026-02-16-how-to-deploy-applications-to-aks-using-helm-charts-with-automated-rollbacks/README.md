@@ -32,6 +32,7 @@ Start with the Helm scaffold command to generate a chart structure.
 
 ```bash
 # Create a new Helm chart named my-app
+
 # This generates a directory with templates, values, and Chart.yaml
 helm create my-app
 ```

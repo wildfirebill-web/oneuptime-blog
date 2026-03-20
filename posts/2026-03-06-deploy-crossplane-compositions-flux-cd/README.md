@@ -41,6 +41,7 @@ The XRD defines the schema for your custom API.
 
 ```yaml
 # platform/definitions/xstoragebucket.yaml
+
 # Define a custom API for creating storage buckets
 # This is what developers will interact with
 apiVersion: apiextensions.crossplane.io/v1

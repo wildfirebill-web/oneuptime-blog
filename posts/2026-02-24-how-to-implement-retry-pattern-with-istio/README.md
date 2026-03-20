@@ -200,6 +200,7 @@ Track retry metrics to understand how often retries are happening and whether th
 
 ```promql
 # Retry rate
+
 rate(envoy_cluster_upstream_rq_retry{cluster_name=~"outbound.*service-b.*"}[5m])
 
 # Successful retries (the retry worked)

@@ -45,6 +45,7 @@ Add watch configurations to your Consul agent.
 
 ```hcl
 # Watch for service health changes
+
 watches = [
   {
     type = "service"

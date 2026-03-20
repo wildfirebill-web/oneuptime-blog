@@ -45,6 +45,7 @@ You need a RHEL server that will act as your deployment server. This machine nee
 
 ```bash
 # Install all required packages
+
 sudo dnf install -y \
   dhcp-server \
   tftp-server \

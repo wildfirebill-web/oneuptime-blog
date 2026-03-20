@@ -50,6 +50,7 @@ Wait - that's not quite right. When `run_on_error = true`, the hook runs on both
 ```bash
 #!/bin/bash
 # scripts/on-error-only.sh
+
 # This script checks if the previous command failed
 # It's called by an after_hook with run_on_error=true
 

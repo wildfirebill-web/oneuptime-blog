@@ -17,6 +17,7 @@ datacenter = "dc1"
 data_dir   = "/opt/consul"
 
 # Bind to all interfaces including IPv6
+
 bind_addr = "::"
 
 # Advertise specific IPv6 address
@@ -25,7 +26,7 @@ advertise_addr = "2001:db8::consul-node"
 # Also advertise the IPv4 address
 advertise_addr_wan = "203.0.113.10"
 
-# Client address — bind to all
+# Client address - bind to all
 client_addr = "::"
 
 # Enable Connect (service mesh)

@@ -14,6 +14,7 @@ The Center for Internet Security (CIS) benchmarks are the gold standard for syst
 
 ```bash
 # Install the scanner and content
+
 dnf install -y openscap-scanner scap-security-guide
 
 # Verify the installation

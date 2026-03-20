@@ -44,6 +44,7 @@ If you do not already have a VPC, create one:
 
 ```bash
 # Create a VPC network
+
 gcloud compute networks create cloudrun-vpc \
   --subnet-mode=custom \
   --project=your-project-id

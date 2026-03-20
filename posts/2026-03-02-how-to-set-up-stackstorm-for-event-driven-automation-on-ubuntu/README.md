@@ -27,6 +27,7 @@ StackStorm requires at minimum 2GB RAM and 2 CPU cores. Ubuntu 20.04 or 22.04 is
 
 ```bash
 # Check system resources
+
 free -h
 nproc
 df -h /

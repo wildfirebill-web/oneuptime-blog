@@ -34,6 +34,7 @@ Start by examining the pod's current state and recent events. Events often revea
 
 ```bash
 # Get pod status with restart count
+
 kubectl get pods -n your-namespace
 
 # Example output showing CrashLoopBackOff

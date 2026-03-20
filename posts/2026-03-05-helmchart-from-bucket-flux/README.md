@@ -57,6 +57,7 @@ First, create a secret with your S3 credentials, then define the Bucket resource
 
 ```bash
 # Create a secret with AWS S3 access credentials
+
 kubectl create secret generic s3-bucket-creds \
   --namespace flux-system \
   --from-literal=accesskey=AKIAIOSFODNN7EXAMPLE \

@@ -1,8 +1,8 @@
-# How to Manage LaunchDarkly Feature Flags with OpenTofu
+# How to Manage LaunchDarkly Feature Flags with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, LaunchDarkly, Feature Flags, Feature Management, Release
+Tags: OpenTofu, LaunchDarkly, Feature Flags, Feature Management, Releases
 
 Description: Learn how to manage LaunchDarkly projects, environments, feature flags, and targeting rules using OpenTofu for code-driven feature flag management.
 
@@ -94,6 +94,7 @@ resource "launchdarkly_feature_flag" "new_checkout" {
 
 ```hcl
 # Enable flag for 20% of users in production
+
 resource "launchdarkly_feature_flag_environment" "new_checkout_prod" {
   flag_id     = launchdarkly_feature_flag.new_checkout.id
   env_key     = "production"
@@ -190,4 +191,4 @@ resource "launchdarkly_feature_flag" "recommendation_algo" {
 
 ## Conclusion
 
-LaunchDarkly managed with OpenTofu makes feature flags first-class infrastructure. New flags go through code review, old flags get removed when features are fully rolled out (preventing flag debt), and targeting percentages are change-managed rather than being ad-hoc UI clicks. The lifecycle of a flag — creation, gradual rollout, full enablement, cleanup — is visible in the git history.
+LaunchDarkly managed with OpenTofu makes feature flags first-class infrastructure. New flags go through code review, old flags get removed when features are fully rolled out (preventing flag debt), and targeting percentages are change-managed rather than being ad-hoc UI clicks. The lifecycle of a flag - creation, gradual rollout, full enablement, cleanup - is visible in the git history.

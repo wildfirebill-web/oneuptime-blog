@@ -29,6 +29,7 @@ Start by getting an overview of all Flux controller pods:
 
 ```bash
 # List all pods in the flux-system namespace
+
 kubectl get pods -n flux-system
 
 # Get detailed output with node placement and IP

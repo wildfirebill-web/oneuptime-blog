@@ -12,7 +12,7 @@ Packer builds machine images (AMIs, GCE images, Azure images) that are pre-confi
 
 ## The Immutable Infrastructure Workflow
 
-```
+```hcl
 Code Change → Packer Build → New AMI → OpenTofu Apply → New Instances
 ```
 
@@ -101,6 +101,7 @@ Packer outputs the AMI ID: `ami-0123456789abcdef0`
 
 ```hcl
 # variables.tf
+
 variable "app_ami_id" {
   type        = string
   description = "AMI ID built by Packer"

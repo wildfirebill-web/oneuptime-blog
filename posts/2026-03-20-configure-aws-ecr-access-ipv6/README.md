@@ -13,14 +13,15 @@ AWS ECR supports IPv6 through dual-stack endpoints. Accessing ECR from IPv6-capa
 ## ECR IPv6 Support Overview
 
 AWS ECR provides IPv6 support through:
-1. **Public ECR endpoints** — `public.ecr.aws` has IPv6 support.
-2. **Private VPC endpoints** — ECR VPC endpoints support dual-stack (IPv4/IPv6).
-3. **Direct internet access** — ECR's regional endpoints support IPv6.
+1. **Public ECR endpoints** - `public.ecr.aws` has IPv6 support.
+2. **Private VPC endpoints** - ECR VPC endpoints support dual-stack (IPv4/IPv6).
+3. **Direct internet access** - ECR's regional endpoints support IPv6.
 
 ## Checking ECR IPv6 Availability
 
 ```bash
 # Check if ECR regional endpoint resolves to IPv6
+
 dig AAAA 123456789.dkr.ecr.us-east-1.amazonaws.com +short
 
 # Check ECR API endpoint

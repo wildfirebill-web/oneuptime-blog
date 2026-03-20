@@ -28,6 +28,7 @@ The most basic conditional checks test for equality:
 
 ```yaml
 # Basic equality checks
+
 processors:
   transform:
     log_statements:

@@ -18,6 +18,7 @@ The simplest approach is defining variables directly in your YAML file. These ar
 
 ```yaml
 # Inline variables defined directly in the pipeline
+
 variables:
   buildConfiguration: 'Release'
   dotnetVersion: '8.0'

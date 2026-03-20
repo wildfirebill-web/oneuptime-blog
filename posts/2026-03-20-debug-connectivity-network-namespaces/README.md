@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Namespace, Debugging, Linux, IPv4, Connectivity, tcpdump, ip route
+Tags: Network Namespaces, Debugging, Linux, IPv4, Connectivity, tcpdump, Ip route
 
 Description: Learn how to systematically debug connectivity failures between Linux network namespaces using ip, tcpdump, iptables, and route inspection tools.
 
@@ -12,7 +12,7 @@ Connectivity failures between network namespaces are usually caused by missing r
 
 ## Checklist for Namespace Connectivity Debugging
 
-```
+```text
 1. Interface is UP and has correct IP
 2. Route exists to destination
 3. ARP/neighbor table has the next hop
@@ -25,6 +25,7 @@ Connectivity failures between network namespaces are usually caused by missing r
 
 ```bash
 # Check both sides of the connection
+
 ip netns exec ns1 ip addr show
 ip netns exec ns2 ip addr show
 

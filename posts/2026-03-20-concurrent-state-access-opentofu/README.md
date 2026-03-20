@@ -14,6 +14,7 @@ OpenTofu uses state locking to prevent concurrent modifications. Without locking
 
 ```hcl
 # S3 backend with DynamoDB locking
+
 terraform {
   backend "s3" {
     bucket         = "my-company-tofu-state"
@@ -154,4 +155,4 @@ resource "aws_cloudwatch_metric_alarm" "lock_contention" {
 
 ## Conclusion
 
-DynamoDB state locking is the standard mechanism for coordinating concurrent OpenTofu access. Always configure the DynamoDB table alongside your S3 backend — running without locking in a team environment will eventually cause state corruption. When removing stale locks with `force-unlock`, first confirm the process that held the lock is no longer running.
+DynamoDB state locking is the standard mechanism for coordinating concurrent OpenTofu access. Always configure the DynamoDB table alongside your S3 backend - running without locking in a team environment will eventually cause state corruption. When removing stale locks with `force-unlock`, first confirm the process that held the lock is no longer running.

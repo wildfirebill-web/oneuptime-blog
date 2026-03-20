@@ -43,6 +43,7 @@ Create shared CA and install Istio on both clusters. Here's the config for clust
 
 ```yaml
 # cluster1.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

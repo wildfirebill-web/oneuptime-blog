@@ -181,6 +181,7 @@ After creating the configuration, verify it is active:
 
 ```bash
 # Check the configuration
+
 calicoctl get kubecontrollersconfiguration default -o yaml
 
 # Verify the controller pod is running and healthy

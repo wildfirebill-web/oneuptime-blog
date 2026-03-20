@@ -12,7 +12,7 @@ Portainer's team feature allows instructors to create isolated environments wher
 
 ## Architecture Overview
 
-```
+```text
 Portainer Instance
 ├── Admin Account (Instructor)
 ├── Team: class-a-fall2025
@@ -36,6 +36,7 @@ PORTAINER_URL="https://portainer.edu.local"
 ADMIN_TOKEN="your-admin-token"
 
 # Create a team for each lab group
+
 for group_num in $(seq 1 10); do
   TEAM_NAME="lab-group-${group_num}"
   

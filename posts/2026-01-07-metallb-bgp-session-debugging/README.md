@@ -411,6 +411,7 @@ kubectl logs -n metallb-system speaker-node1 | grep established
 
 kubectl logs -n metallb-system speaker-node2 | grep established
 # Shows nothing
+
 ```
 
 **Root Causes and Solutions**

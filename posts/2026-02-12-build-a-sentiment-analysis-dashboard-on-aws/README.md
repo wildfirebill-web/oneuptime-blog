@@ -35,6 +35,7 @@ Customer feedback arrives from multiple sources. We use Kinesis Data Streams as 
 
 ```yaml
 # CloudFormation for sentiment analysis pipeline
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   FeedbackStream:

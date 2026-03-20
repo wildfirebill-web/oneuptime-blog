@@ -26,6 +26,7 @@ For TypeScript projects, Jest is the standard choice:
 
 ```bash
 # Install testing dependencies
+
 npm install --save-dev jest @types/jest ts-jest
 
 # Install CDKTF testing utilities

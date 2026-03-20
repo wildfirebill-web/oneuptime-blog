@@ -202,6 +202,7 @@ If you manage many namespaces, create a Helm chart that generates the RBAC resou
 
 ```yaml
 # values.yaml
+
 teams:
   - name: checkout-team
     namespace: checkout

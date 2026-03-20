@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Static Route, Source Address, Policy Routing, Linux, ip rule, ip route, IPv4
+Tags: Static Routes, Source Address, Policy Routing, Linux, Ip rule, Ip route, IPv4
 
 Description: Learn how to add static routes based on the source IP address using Linux policy routing (ip rule and ip route) to control which path traffic takes based on its source.
 
@@ -20,6 +20,7 @@ Policy-based routing routes packets based on the source IP address rather than j
 
 ```bash
 # Scenario:
+
 # eth0: 192.168.1.10/24 via gateway 192.168.1.1 (ISP1)
 # eth1: 10.0.0.10/24 via gateway 10.0.0.1 (ISP2)
 
@@ -55,7 +56,7 @@ ip route get 8.8.8.8 from 10.0.0.10
 ## Named Routing Tables
 
 ```bash
-# /etc/iproute2/rt_tables — assign friendly names
+# /etc/iproute2/rt_tables - assign friendly names
 # Add: 100 isp2
 echo "100 isp2" >> /etc/iproute2/rt_tables
 

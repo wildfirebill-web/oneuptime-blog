@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     google = {
@@ -160,8 +161,8 @@ resource "google_compute_url_map" "default" {
 
 ## Best Practices
 
-- Use `CACHE_ALL_STATIC` cache mode for static asset backends — it automatically caches images, JS, CSS, and other static types.
-- Set `serve_while_stale` to serve cached content while refreshing in the background — this eliminates cache miss latency for users.
-- Use managed SSL certificates rather than self-managed certificates — GCP handles renewal automatically.
-- Monitor Cache Hit Rate in Cloud Monitoring — low hit rates indicate over-personalized responses or missing cache headers.
+- Use `CACHE_ALL_STATIC` cache mode for static asset backends - it automatically caches images, JS, CSS, and other static types.
+- Set `serve_while_stale` to serve cached content while refreshing in the background - this eliminates cache miss latency for users.
+- Use managed SSL certificates rather than self-managed certificates - GCP handles renewal automatically.
+- Monitor Cache Hit Rate in Cloud Monitoring - low hit rates indicate over-personalized responses or missing cache headers.
 - Enable Cloud Armor (WAF) on the backend service for DDoS protection and security policy enforcement.

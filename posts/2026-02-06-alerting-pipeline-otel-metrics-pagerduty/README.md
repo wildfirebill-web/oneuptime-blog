@@ -77,6 +77,7 @@ The Collector receives OTLP metrics and exports them in Prometheus format. Use t
 
 ```yaml
 # otel-collector-config.yaml
+
 # Receive OTLP metrics and expose them for Prometheus scraping
 
 receivers:

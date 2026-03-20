@@ -22,6 +22,7 @@ The most important logging practice is to write all logs to stdout and stderr, n
 
 ```dockerfile
 # Good: application logs to stdout
+
 CMD ["node", "server.js"]
 
 # Bad: application logs to a file inside the container

@@ -25,6 +25,7 @@ The requirements fall into three categories: hard requirements (must be met or C
 
 ```bash
 # Check kernel version
+
 uname -r
 
 # Minimum: 4.9.17 (basic CNI function only)

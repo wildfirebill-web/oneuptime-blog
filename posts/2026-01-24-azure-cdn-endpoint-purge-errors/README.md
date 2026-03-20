@@ -74,6 +74,7 @@ Implement rate limiting and batching in your purge logic:
 
 ```bash
 # Check current purge limits for your CDN profile
+
 az cdn endpoint show \
     --resource-group myResourceGroup \
     --profile-name myCDNProfile \

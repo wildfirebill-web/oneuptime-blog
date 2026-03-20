@@ -47,6 +47,7 @@ Build both:
 
 ```bash
 # Build all matrix variants
+
 docker buildx bake
 
 # Build a specific variant

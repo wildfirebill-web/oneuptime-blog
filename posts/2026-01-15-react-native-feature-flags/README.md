@@ -129,6 +129,7 @@ Let us implement LaunchDarkly in a React Native application step by step.
 ```bash
 npm install launchdarkly-react-native-client-sdk
 # or
+
 yarn add launchdarkly-react-native-client-sdk
 ```
 
@@ -1234,6 +1235,7 @@ Created: ${flag.createdAt.toISOString()}
 Expected Removal: ${flag.expectedRemovalDate?.toISOString()}
 Ticket: ${flag.jiraTicket || 'N/A'}
 Description: ${flag.description}
+
     `);
   });
 };

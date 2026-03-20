@@ -20,6 +20,7 @@ Creating a CodeCommit repository is straightforward:
 
 ```hcl
 # A basic CodeCommit repository
+
 resource "aws_codecommit_repository" "app" {
   repository_name = "my-application"
   description     = "Main application repository"

@@ -52,6 +52,7 @@ Before configuring Private Link, ensure you have:
 
 ```bash
 # Verify Azure CLI is installed and logged in
+
 az --version
 az account show
 

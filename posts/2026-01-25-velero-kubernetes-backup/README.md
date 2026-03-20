@@ -33,6 +33,7 @@ Before installing Velero, ensure you have:
 
 ```bash
 # Install Velero CLI on macOS
+
 brew install velero
 
 # Or download the binary directly

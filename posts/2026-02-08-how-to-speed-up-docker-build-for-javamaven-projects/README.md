@@ -16,6 +16,7 @@ Here is the Dockerfile most Java developers start with:
 
 ```dockerfile
 # BAD: Downloads ALL Maven dependencies on every code change
+
 FROM maven:3.9-eclipse-temurin-21
 WORKDIR /app
 COPY . .

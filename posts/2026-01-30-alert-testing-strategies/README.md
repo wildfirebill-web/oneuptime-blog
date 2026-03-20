@@ -57,6 +57,7 @@ Prometheus provides a built-in testing framework through `promtool`. Define test
 
 ```yaml
 # alert_rules.yaml
+
 groups:
   - name: slo_alerts
     rules:

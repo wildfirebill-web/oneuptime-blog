@@ -25,6 +25,7 @@ The recommended approach is to let Cilium handle the CNI basics (IP management, 
 
 ```bash
 # Check Cilium version and status
+
 cilium status
 cilium version
 

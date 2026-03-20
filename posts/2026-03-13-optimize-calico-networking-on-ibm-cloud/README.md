@@ -33,6 +33,7 @@ IBM Cloud VPC instance profiles with high network bandwidth:
 
 ```bash
 # View available profiles with network performance
+
 ibmcloud is instance-profiles --output json | \
   jq '.[] | {name: .name, vcpu: .vcpu.count, bandwidth: .bandwidth}'
 ```

@@ -36,6 +36,7 @@ Deploy the relay proxy as an ArgoCD Application:
 
 ```yaml
 # ld-relay-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

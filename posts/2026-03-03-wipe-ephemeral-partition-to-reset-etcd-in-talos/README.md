@@ -25,6 +25,7 @@ The EPHEMERAL partition is the largest partition and holds everything that accum
 
 ```bash
 # View the partition layout on a Talos node
+
 talosctl get disks --nodes <node-ip>
 
 # View mount points

@@ -46,6 +46,7 @@ Here is a PromQL query that calculates the linear prediction of disk usage 30 da
 
 ```promql
 # Predict disk usage 30 days out based on the last 14 days of data
+
 predict_linear(
   node_filesystem_avail_bytes{mountpoint="/data"}[14d],
   30 * 24 * 3600

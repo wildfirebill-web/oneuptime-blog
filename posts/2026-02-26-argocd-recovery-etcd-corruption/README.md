@@ -40,6 +40,7 @@ First, determine the extent of the damage:
 
 ```bash
 # Check if etcd is running
+
 kubectl get pods -n kube-system -l component=etcd
 
 # Check etcd logs for corruption indicators

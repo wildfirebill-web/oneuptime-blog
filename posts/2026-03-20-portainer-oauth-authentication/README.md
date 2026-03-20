@@ -71,7 +71,7 @@ curl -X PUT \
 
 The redirect URL is where the IdP sends users back after authentication. It must be registered in your IdP application settings:
 
-```
+```text
 https://portainer.example.com/
 ```
 
@@ -81,7 +81,7 @@ Note the trailing slash. This is Portainer's root URL. Ensure it exactly matches
 
 Common OIDC scopes:
 
-```
+```text
 openid           - Required for OIDC
 profile          - Name, given_name, family_name
 email            - email, email_verified

@@ -57,6 +57,7 @@ Confirm that sidecars are exporting traces:
 
 ```bash
 # Check Envoy tracing stats
+
 POD=$(kubectl get pod -l app=my-service -o jsonpath='{.items[0].metadata.name}')
 kubectl exec $POD -c istio-proxy -- pilot-agent request GET /stats | grep tracing
 

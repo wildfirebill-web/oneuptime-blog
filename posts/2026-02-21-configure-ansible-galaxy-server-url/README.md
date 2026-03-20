@@ -28,6 +28,7 @@ The simplest way to change the Galaxy server URL:
 
 ```ini
 # ansible.cfg
+
 [galaxy]
 server_list = my_galaxy
 

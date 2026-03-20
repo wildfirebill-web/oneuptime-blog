@@ -20,6 +20,7 @@ On-call schedules change frequently as team members join, leave, or go on vacati
 
 ```hcl
 # main.tf - Configure the PagerDuty provider
+
 terraform {
   required_version = ">= 1.5.0"
 

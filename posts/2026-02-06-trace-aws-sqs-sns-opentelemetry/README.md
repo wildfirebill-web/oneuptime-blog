@@ -37,6 +37,7 @@ Install the required packages:
 
 ```bash
 # Install OpenTelemetry and the botocore instrumentation
+
 pip install opentelemetry-api \
     opentelemetry-sdk \
     opentelemetry-exporter-otlp \

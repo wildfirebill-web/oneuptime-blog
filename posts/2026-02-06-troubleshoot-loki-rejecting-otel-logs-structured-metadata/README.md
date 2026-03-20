@@ -33,6 +33,7 @@ By default, this feature is disabled because it changes how data is stored and i
 
 ```yaml
 # loki-config.yaml
+
 limits_config:
   allow_structured_metadata: true
   max_structured_metadata_entries_count: 128

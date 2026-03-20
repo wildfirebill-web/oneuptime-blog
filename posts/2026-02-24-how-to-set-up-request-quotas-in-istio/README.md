@@ -314,6 +314,7 @@ Test with different API keys:
 
 ```bash
 # Free tier - should be limited to 1000/day
+
 for i in $(seq 1 20); do
   curl -s -o /dev/null -w "%{http_code} " \
     -H "x-api-key: key-ghi789" \

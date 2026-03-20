@@ -73,6 +73,7 @@ The following configuration sets up the OTel Collector to receive Zipkin-formatt
 
 ```yaml
 # otel-collector-config.yaml
+
 # This configuration enables the collector to act as a transparent proxy
 # for existing Zipkin instrumentation while establishing the OTel pipeline
 

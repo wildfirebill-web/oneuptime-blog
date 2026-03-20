@@ -62,6 +62,7 @@ Exec into the pod and inspect what's visible:
 kubectl exec -it proc-test -- bash
 
 # Check for masked paths
+
 ls -la /proc/scsi
 # ls: cannot access '/proc/scsi': No such file or directory
 

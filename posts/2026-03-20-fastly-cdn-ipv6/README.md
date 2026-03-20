@@ -27,6 +27,7 @@ Fastly's POPs are dual-stack. When a client connects via IPv6:
 
 ```bash
 # Create a Fastly service with IPv6 backend
+
 FASTLY_API_KEY="your-api-key"
 SERVICE_ID="your-service-id"
 VERSION="1"
@@ -67,7 +68,7 @@ resource "fastly_service_vcl" "main" {
     use_ssl = true
 
     # Fastly will use IPv6 if origin has AAAA records
-    # No explicit IPv6 flag needed — handled automatically
+    # No explicit IPv6 flag needed - handled automatically
   }
 
   # VCL for IPv6-aware logic
@@ -147,4 +148,4 @@ sub vcl_recv {
 }
 ```
 
-Fastly's automatic IPv6 support means minimal configuration is needed — dual-stack delivery is handled by the edge network, and VCL's `client.ip` provides the real IPv6 client address for any custom logic.
+Fastly's automatic IPv6 support means minimal configuration is needed - dual-stack delivery is handled by the edge network, and VCL's `client.ip` provides the real IPv6 client address for any custom logic.

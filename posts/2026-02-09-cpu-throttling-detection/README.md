@@ -24,6 +24,7 @@ The throttling ratio tells you how often throttling occurs:
 
 ```promql
 # Throttling ratio (0 to 1, where 1 means always throttled)
+
 rate(container_cpu_cfs_throttled_periods_total{container!=""}[5m])
 /
 rate(container_cpu_cfs_periods_total{container!=""}[5m])

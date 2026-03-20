@@ -51,6 +51,7 @@ Set up a .NET Azure Functions project with the Durable Functions extension. Here
 
 ```bash
 # Create the project
+
 func init LongRunningWorkflow --dotnet
 cd LongRunningWorkflow
 

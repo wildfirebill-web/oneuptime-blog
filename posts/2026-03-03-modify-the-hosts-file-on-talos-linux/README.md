@@ -28,6 +28,7 @@ First, check what is currently in the hosts file:
 
 ```bash
 # Read the hosts file from a Talos node
+
 talosctl read --nodes 192.168.1.10 /etc/hosts
 ```
 

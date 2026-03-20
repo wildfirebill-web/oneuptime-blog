@@ -38,6 +38,7 @@ Neptune runs inside a VPC and is not publicly accessible.
 
 ```bash
 # Create a DB subnet group for Neptune
+
 aws neptune create-db-subnet-group \
   --db-subnet-group-name neptune-serverless-subnets \
   --db-subnet-group-description "Subnets for Neptune Serverless" \

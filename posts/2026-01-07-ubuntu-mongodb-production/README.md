@@ -97,6 +97,7 @@ Let's verify the system requirements and prepare the server:
 
 ```bash
 # Check Ubuntu version - MongoDB 7.0 supports Ubuntu 20.04, 22.04, and 24.04
+
 lsb_release -a
 
 # Check available memory - minimum 4GB recommended for production

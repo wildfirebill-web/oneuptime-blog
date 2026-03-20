@@ -23,6 +23,7 @@ Make sure you have these tools ready:
 
 ```bash
 # Verify your Docker setup
+
 docker --version
 docker compose version
 git --version

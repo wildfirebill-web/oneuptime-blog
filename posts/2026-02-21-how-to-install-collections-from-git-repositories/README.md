@@ -16,6 +16,7 @@ Install a collection from a Git repository with the `git+` prefix:
 
 ```bash
 # Install a collection from a public Git repository
+
 ansible-galaxy collection install git+https://github.com/ansible-collections/community.general.git
 ```
 

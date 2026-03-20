@@ -30,6 +30,7 @@ Before writing alert rules, confirm that Prometheus is scraping MetalLB metrics:
 
 ```bash
 # Port-forward to Prometheus and query for BGP metrics
+
 kubectl port-forward -n monitoring svc/prometheus 9090:9090
 
 # Query BGP session status

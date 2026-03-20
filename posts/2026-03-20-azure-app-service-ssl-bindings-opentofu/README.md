@@ -14,6 +14,7 @@ Azure App Service supports multiple SSL/TLS certificate options: App Service Man
 
 ```hcl
 # main.tf - Free managed certificate for custom domains
+
 # Requires: custom domain already bound to the app
 resource "azurerm_app_service_managed_certificate" "managed_cert" {
   custom_hostname_binding_id = azurerm_app_service_custom_hostname_binding.www.id

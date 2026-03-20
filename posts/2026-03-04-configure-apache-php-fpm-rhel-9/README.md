@@ -23,6 +23,7 @@ Install PHP and the FPM package from the AppStream repository:
 
 ```bash
 # Install PHP, PHP-FPM, and common extensions
+
 sudo dnf install -y php php-fpm php-mysqlnd php-json php-mbstring php-xml php-zip
 ```
 

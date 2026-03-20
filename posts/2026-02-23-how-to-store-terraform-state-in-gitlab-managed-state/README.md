@@ -24,6 +24,7 @@ Configure the HTTP backend in your Terraform configuration:
 
 ```hcl
 # backend.tf
+
 # Configure GitLab managed Terraform state
 
 terraform {

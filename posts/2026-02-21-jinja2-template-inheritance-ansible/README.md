@@ -112,6 +112,7 @@ Here is how you would use these templates in a playbook:
 
 ```yaml
 # deploy_services.yml - Deploy services using inherited templates
+
 - name: Deploy web application
   hosts: web_servers
   vars:

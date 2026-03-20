@@ -68,6 +68,7 @@ A model registry is the foundation of rollback capability. It stores versioned m
 
 ```python
 # model_registry.py
+
 # MLflow-based model registry with versioning and rollback support
 
 import mlflow

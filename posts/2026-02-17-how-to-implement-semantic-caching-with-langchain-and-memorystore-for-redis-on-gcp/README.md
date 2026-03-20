@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Install required packages
+
 pip install langchain langchain-google-vertexai langchain-community redis google-cloud-aiplatform
 ```
 

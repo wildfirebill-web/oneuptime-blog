@@ -82,6 +82,7 @@ echo "Shell: $SHELL"
 echo "Bash version: ${BASH_VERSION:-Not Bash}"
 
 # Check if running as Bash
+
 if [[ -n "$BASH_VERSION" ]]; then
     echo "Running in Bash"
 else

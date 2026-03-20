@@ -55,6 +55,7 @@ Prometheus scrapes metrics from your applications at regular intervals. Start wi
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s          # How often to collect metrics
   evaluation_interval: 15s       # How often to evaluate alerting rules

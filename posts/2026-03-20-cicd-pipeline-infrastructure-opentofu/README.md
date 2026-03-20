@@ -8,7 +8,7 @@ Description: Learn how to build the infrastructure for a CI/CD pipeline on AWS w
 
 ## Introduction
 
-CI/CD pipeline infrastructure includes more than the pipeline itself — it requires ECR repositories for container images, deployment targets (ECS clusters), IAM roles for pipeline runners, artifact storage (S3), and notification channels. This guide provisions all of these with OpenTofu.
+CI/CD pipeline infrastructure includes more than the pipeline itself - it requires ECR repositories for container images, deployment targets (ECS clusters), IAM roles for pipeline runners, artifact storage (S3), and notification channels. This guide provisions all of these with OpenTofu.
 
 ## ECR Repositories
 
@@ -174,6 +174,7 @@ resource "aws_sns_topic_subscription" "slack" {
 }
 
 # EventBridge rule to catch ECS deployment events
+
 resource "aws_cloudwatch_event_rule" "ecs_deployments" {
   name        = "ecs-deployment-events"
   description = "Capture ECS service deployment state changes"
@@ -196,4 +197,4 @@ resource "aws_cloudwatch_event_target" "deployment_sns" {
 
 ## Summary
 
-CI/CD pipeline infrastructure includes ECR repositories with lifecycle policies to manage image storage costs, OIDC-based IAM roles for GitHub Actions (no static credentials), S3 for build artifact storage, and EventBridge + SNS for deployment notifications. The GitHub Actions OIDC integration uses web identity federation — GitHub generates short-lived tokens, AWS validates them, and issues temporary credentials scoped to the specific repository and deployment role.
+CI/CD pipeline infrastructure includes ECR repositories with lifecycle policies to manage image storage costs, OIDC-based IAM roles for GitHub Actions (no static credentials), S3 for build artifact storage, and EventBridge + SNS for deployment notifications. The GitHub Actions OIDC integration uses web identity federation - GitHub generates short-lived tokens, AWS validates them, and issues temporary credentials scoped to the specific repository and deployment role.

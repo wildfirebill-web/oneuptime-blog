@@ -20,6 +20,7 @@ Download the official Zookeeper image.
 
 ```bash
 # Pull the latest Zookeeper image
+
 podman pull docker.io/library/zookeeper:3.9
 
 # Verify the image

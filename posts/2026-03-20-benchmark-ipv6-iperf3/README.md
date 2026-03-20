@@ -14,6 +14,7 @@ iperf3 is the de facto standard for active network throughput measurement. It na
 
 ```bash
 # Server side (listen on all IPv6 interfaces)
+
 iperf3 -s -6 -p 5201
 
 # Client side: TCP test from client to server
@@ -29,7 +30,7 @@ iperf3 -c 2001:db8::server -6 -t 30 -P 4
 ## UDP Bandwidth and Jitter Test
 
 ```bash
-# UDP test — useful for measuring packet loss and jitter
+# UDP test - useful for measuring packet loss and jitter
 # Server
 iperf3 -s -6
 

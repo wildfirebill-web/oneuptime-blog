@@ -14,6 +14,7 @@ Description: Use the ss command as a modern, faster replacement for netstat to i
 
 ```bash
 # Show all IPv4 connections (TCP + UDP + raw)
+
 ss -4
 
 # More useful: show with numeric ports and addresses
@@ -112,4 +113,4 @@ ss -s
 
 ## Conclusion
 
-`ss -4tlnp` shows all IPv4 listening ports with process information — the most common diagnostic command. Use `ss -4tn state established` for active connections. `ss` is faster than `netstat` especially on busy systems with thousands of connections. The `-4` flag restricts output to IPv4 only.
+`ss -4tlnp` shows all IPv4 listening ports with process information - the most common diagnostic command. Use `ss -4tn state established` for active connections. `ss` is faster than `netstat` especially on busy systems with thousands of connections. The `-4` flag restricts output to IPv4 only.

@@ -35,6 +35,7 @@ SUSE provides an open-source tool for collecting support bundles:
 
 ```bash
 # Install the support bundle kit
+
 curl -Lo support-bundle-kit \
   https://github.com/rancher/support-bundle-kit/releases/latest/download/support-bundle-kit-linux-amd64
 chmod +x support-bundle-kit
@@ -57,7 +58,7 @@ For environments where the above tools aren't available:
 
 ```bash
 #!/usr/bin/env bash
-# manual-support-bundle.sh — Collect Rancher diagnostics manually
+# manual-support-bundle.sh - Collect Rancher diagnostics manually
 
 BUNDLE_DIR="/tmp/rancher-bundle-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "${BUNDLE_DIR}"/{logs,manifests,events}

@@ -60,6 +60,7 @@ Here is the basic structure of a PolicyException:
 
 ```yaml
 # PolicyException allows specific resources to bypass policy rules
+
 # This creates a targeted exemption without modifying the original policy
 apiVersion: kyverno.io/v2beta1
 kind: PolicyException
@@ -126,7 +127,7 @@ spec:
             - legacy-services
 ```
 
-### Resource Name Scoping
+Resource Name Scoping
 
 Target specific resources by name pattern:
 

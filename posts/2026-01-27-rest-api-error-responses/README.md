@@ -314,6 +314,7 @@ Validation errors deserve special attention since they are the most common error
 
 ```python
 # validation_errors.py
+
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError

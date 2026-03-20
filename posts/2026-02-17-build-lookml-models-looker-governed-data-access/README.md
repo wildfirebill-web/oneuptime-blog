@@ -38,6 +38,7 @@ A view maps to a BigQuery table and defines its dimensions and measures.
 
 ```lookml
 # views/orders.view.lkml
+
 # This view maps to the orders table in BigQuery
 view: orders {
   sql_table_name: `my-project.analytics.orders` ;;

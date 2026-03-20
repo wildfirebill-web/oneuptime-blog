@@ -18,6 +18,7 @@ First, confirm you are running Apple Silicon:
 
 ```bash
 # Check your processor architecture
+
 uname -m
 # Should output: arm64
 

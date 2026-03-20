@@ -10,6 +10,7 @@ Description: Build IPv6-ready web services with Rust's Axum framework including 
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 axum = "0.7"
 tokio = { version = "1", features = ["full"] }
@@ -95,13 +96,13 @@ struct IPv6Query {
 pub struct ValidIPv6(Ipv6Addr);
 
 #[async_trait]
-impl<S> FromRequestParts<S> for ValidIPv6
+impl<St> FromRequestParts<St> for ValidIPv6
 where
-    S: Send + Sync,
+    St: Send + Sync,
 {
     type Rejection = Response;
 
-    async fn from_request_parts(parts: &mut Parts, state: &S) -> Result<Self, Self::Rejection> {
+    async fn from_request_parts(parts: &mut Parts, state: &St) -> Result<Self, Self::Rejection> {
         let Query(q) = Query::<IPv6Query>::from_request_parts(parts, state)
             .await
             .map_err(|e| e.into_response())?;
@@ -208,4 +209,4 @@ async fn main() {
 
 ## Conclusion
 
-Axum supports IPv6 through Tokio's `TcpListener::bind("[::]:port")`. The `ConnectInfo<SocketAddr>` extractor provides the client's socket address including IPv6 addresses. Custom extractors encode validation logic — including IPv6 checks — into the type system. `into_make_service_with_connect_info` is required to enable `ConnectInfo` extraction. Tower middleware via `TraceLayer` provides structured logging that includes IPv6 peer addresses automatically.
+Axum supports IPv6 through Tokio's `TcpListener::bind("[::]:port")`. The `ConnectInfo<SocketAddr>` extractor provides the client's socket address including IPv6 addresses. Custom extractors encode validation logic - including IPv6 checks - into the type system. `into_make_service_with_connect_info` is required to enable `ConnectInfo` extraction. Tower middleware via `TraceLayer` provides structured logging that includes IPv6 peer addresses automatically.

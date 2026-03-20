@@ -178,6 +178,7 @@ If your Azure AD emits group names instead of GUIDs:
 
 ```bash
 # Restart ArgoCD server
+
 kubectl -n argocd rollout restart deployment argocd-server
 ```
 

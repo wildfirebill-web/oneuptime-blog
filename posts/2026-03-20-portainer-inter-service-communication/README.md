@@ -1,8 +1,8 @@
-# How to Set Up Inter-Service Communication in Portainer
+# How to Set Up Inter-Service Communication in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Microservices, Docker Networks, Service Communication, DNS, Container Networking
+Tags: Portainer, Microservices, Docker Network, Service Communication, DNS, Container Networking
 
 Description: Learn how to configure inter-service communication between containers in Portainer using Docker networks and DNS-based service discovery.
 
@@ -16,6 +16,7 @@ When containers share a Docker network, they can reach each other by container n
 
 ```bash
 # From inside container A, reach container B by service name
+
 curl http://user-service:3001/api/users
 #           ^^^^^^^^^^^  Service name from compose
 #                        resolves to container IP automatically

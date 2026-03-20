@@ -59,6 +59,7 @@ podman run -d --pod nextcloud \
   docker.io/library/redis:7-alpine
 
 # Configure Nextcloud to use Redis
+
 podman exec -u www-data nextcloud-app php occ config:system:set \
   redis host --value=127.0.0.1
 podman exec -u www-data nextcloud-app php occ config:system:set \

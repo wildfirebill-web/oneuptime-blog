@@ -30,6 +30,7 @@ AWS EC2 instances within a VPC support MTU up to 9001 bytes. Configuring Calico 
 
 ```bash
 # Check the current MTU on EC2 instance network interfaces
+
 ip link show eth0
 
 # Set Felix vethMTU to match EC2 jumbo frame MTU for VXLAN

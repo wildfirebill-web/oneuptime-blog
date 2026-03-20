@@ -45,6 +45,7 @@ Projects are the primary isolation boundary. Each team gets their own project:
 
 ```yaml
 # team-a-project.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
@@ -197,7 +198,7 @@ subjects:
     namespace: argocd
 ```
 
-## Resource Restrictions
+Resource Restrictions
 
 Control what resources each project can create:
 

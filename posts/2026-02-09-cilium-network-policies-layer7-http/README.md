@@ -47,6 +47,7 @@ Allow only GET and POST requests to a service:
 
 ```yaml
 # http-method-policy.yaml
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

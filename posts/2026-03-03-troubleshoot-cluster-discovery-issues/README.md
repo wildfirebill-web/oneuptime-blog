@@ -26,6 +26,7 @@ Start with the fundamental checks:
 
 ```bash
 # Is discovery enabled?
+
 talosctl get machineconfig --nodes <node-ip> -o yaml | grep -A15 "discovery:"
 
 # Are there any discovered members?

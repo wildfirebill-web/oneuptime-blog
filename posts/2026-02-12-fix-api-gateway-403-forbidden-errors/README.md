@@ -31,6 +31,7 @@ Check if your API method requires a key:
 
 ```bash
 # Check if the method requires an API key
+
 aws apigateway get-method \
   --rest-api-id abc123 \
   --resource-id xyz789 \

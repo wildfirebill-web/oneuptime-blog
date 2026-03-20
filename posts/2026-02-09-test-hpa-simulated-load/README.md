@@ -156,6 +156,7 @@ Deploy the test application with HPA configuration:
 
 ```yaml
 # test-app-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

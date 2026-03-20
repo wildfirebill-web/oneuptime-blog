@@ -24,6 +24,7 @@ Start with a new Cargo project and add the dependencies you will need:
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "crawler"
 version = "0.1.0"

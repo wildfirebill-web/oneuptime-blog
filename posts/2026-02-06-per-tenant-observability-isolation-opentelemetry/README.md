@@ -20,6 +20,7 @@ Here is how you can build a custom resource detector that pulls tenant informati
 
 ```python
 # tenant_resource.py
+
 from opentelemetry.sdk.resources import Resource, ResourceDetector
 from contextvars import ContextVar
 

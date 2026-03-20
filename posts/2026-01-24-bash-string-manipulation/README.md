@@ -53,6 +53,7 @@ flowchart TD
 my_string="Hello, World!"
 
 # Method 1: Using ${#variable}
+
 length=${#my_string}
 echo "Length: $length"  # Output: Length: 13
 

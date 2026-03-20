@@ -92,6 +92,7 @@ Install the OpenTelemetry Collector Contrib distribution:
 
 ```bash
 # Download the latest release for your platform
+
 # Example for Linux amd64
 curl -LO https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.96.0/otelcol-contrib_0.96.0_linux_amd64.tar.gz
 tar -xzf otelcol-contrib_0.96.0_linux_amd64.tar.gz

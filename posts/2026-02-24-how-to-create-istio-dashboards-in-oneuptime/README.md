@@ -38,6 +38,7 @@ A time-series chart showing total request rate across the mesh:
 
 ```text
 # Total mesh request rate
+
 sum(rate(istio_requests_total[5m]))
 
 # Broken down by response code class

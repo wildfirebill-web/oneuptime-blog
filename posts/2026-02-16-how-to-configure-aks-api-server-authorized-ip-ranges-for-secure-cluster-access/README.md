@@ -18,6 +18,7 @@ You can enable authorized IP ranges when creating a cluster or on an existing cl
 
 ```bash
 # Enable on a new cluster
+
 # Allow access from your office IP and a CI/CD pipeline
 az aks create \
   --resource-group myRG \

@@ -16,6 +16,7 @@ Check the current situation:
 
 ```bash
 # How full is the filesystem?
+
 df -h /var/lib/postgresql
 
 # How much free space is in the Volume Group?

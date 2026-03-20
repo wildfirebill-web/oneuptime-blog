@@ -501,6 +501,7 @@ Define test-specific properties in `application-test.properties`:
 # src/test/resources/application-test.properties
 
 # Use embedded database
+
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driver-class-name=org.h2.Driver
 

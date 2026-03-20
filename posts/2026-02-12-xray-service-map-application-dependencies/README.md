@@ -57,6 +57,7 @@ You can also retrieve the service graph programmatically:
 
 ```bash
 # Get the service graph for the last hour
+
 aws xray get-service-graph \
   --start-time $(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S)

@@ -30,6 +30,7 @@ CLUSTER_NAME="production-aks"
 echo "Checking AKS node image versions..."
 
 # Get cluster details
+
 az aks show \
   --resource-group $RESOURCE_GROUP \
   --name $CLUSTER_NAME \

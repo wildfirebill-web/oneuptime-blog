@@ -1,4 +1,4 @@
-# How to Back Up OpenTofu State Files
+# How to Back Up OpenTofu State Files - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to back up OpenTofu state files using backend versioning,
 
 ## Introduction
 
-State file loss or corruption is one of the most serious incidents in infrastructure management — it can make OpenTofu unable to track existing resources, potentially leading to duplicate resource creation or inability to update infrastructure. A robust backup strategy prevents this.
+State file loss or corruption is one of the most serious incidents in infrastructure management - it can make OpenTofu unable to track existing resources, potentially leading to duplicate resource creation or inability to update infrastructure. A robust backup strategy prevents this.
 
 ## Automatic Backups: Local State
 
@@ -16,6 +16,7 @@ For local state (`terraform.tfstate`), OpenTofu automatically creates a backup b
 
 ```bash
 # After every apply, this file is created/updated
+
 ls -la terraform.tfstate.backup
 ```
 
@@ -84,7 +85,7 @@ jq '.resources | length' state-backup-*.json
 
 ```bash
 #!/bin/bash
-# backup-state.sh — run before major infrastructure changes
+# backup-state.sh - run before major infrastructure changes
 
 set -e
 

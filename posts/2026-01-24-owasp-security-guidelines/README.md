@@ -653,6 +653,7 @@ Use this checklist to verify your implementation covers key OWASP requirements.
 
 ```yaml
 # owasp-compliance-checklist.yml
+
 compliance_checklist:
 
   authentication:

@@ -154,6 +154,7 @@ Create a shared volume and mount it in two containers simultaneously:
 
 ```bash
 # Create the shared volume
+
 docker volume create shared-logs
 
 # Writer container that generates logs

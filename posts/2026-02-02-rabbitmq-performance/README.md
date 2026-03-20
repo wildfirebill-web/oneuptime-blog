@@ -79,6 +79,7 @@ Implement a connection pool that reuses connections and channels across multiple
 
 ```python
 # connection_pool.py
+
 # A thread-safe connection pool for RabbitMQ that reuses connections
 # and channels to minimize connection overhead
 

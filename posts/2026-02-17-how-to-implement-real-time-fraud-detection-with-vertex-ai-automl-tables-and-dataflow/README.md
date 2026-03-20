@@ -67,6 +67,7 @@ from google.cloud import aiplatform
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Create a tabular dataset from the BigQuery table
+
 dataset = aiplatform.TabularDataset.create(
     display_name="fraud-detection-training-data",
     bq_source="bq://your-project.fraud_detection.training_data",

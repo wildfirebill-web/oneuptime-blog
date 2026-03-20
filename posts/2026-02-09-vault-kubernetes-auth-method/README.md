@@ -22,6 +22,7 @@ Ensure Vault is running and you have admin access:
 
 ```bash
 # Set Vault address
+
 export VAULT_ADDR='http://vault.vault.svc.cluster.local:8200'
 
 # Login with root token or admin credentials

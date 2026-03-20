@@ -32,6 +32,7 @@ Velero has built-in scheduling support using cron syntax.
 
 ```bash
 # Hourly backup of production and critical system namespaces
+
 velero schedule create hourly-critical \
   --schedule "0 * * * *" \
   --include-namespaces production,payments,auth \

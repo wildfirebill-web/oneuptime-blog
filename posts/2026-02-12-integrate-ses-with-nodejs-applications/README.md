@@ -16,6 +16,7 @@ The AWS SDK v3 is modular - you only install the packages you need. For SES, tha
 
 ```bash
 # Install the SES client and required dependencies
+
 npm install @aws-sdk/client-ses @aws-sdk/client-sesv2
 ```
 

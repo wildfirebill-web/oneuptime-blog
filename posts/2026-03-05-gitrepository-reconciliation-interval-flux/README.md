@@ -39,6 +39,7 @@ The interval is specified as a Go duration string. Common values include `1m` (o
 
 ```yaml
 # gitrepository-interval.yaml
+
 # GitRepository with a 5-minute reconciliation interval
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository

@@ -28,6 +28,7 @@ Preventing calico-node eviction is primarily about ensuring the pod has the `sys
 kubectl get daemonset calico-node -n kube-system \
   -o jsonpath='{.spec.template.spec.priorityClassName}'
 # Expected: system-node-critical
+
 ```
 
 ## Solution

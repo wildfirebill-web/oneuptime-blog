@@ -94,6 +94,7 @@ Start by bootstrapping Flux on your management cluster.
 
 ```bash
 # Set the kubectl context to the management cluster
+
 kubectl config use-context management-cluster
 
 # Bootstrap Flux CD on the management cluster

@@ -31,6 +31,7 @@ Store the Slack token in the ArgoCD notifications secret:
 
 ```bash
 # Create or update the secret with the Slack token
+
 kubectl patch secret argocd-notifications-secret -n argocd \
   --type merge \
   -p '{"stringData": {"slack-token": "xoxb-your-bot-token-here"}}'

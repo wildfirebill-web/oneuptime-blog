@@ -17,6 +17,7 @@ The `default` filter provides a fallback value when a variable is not defined:
 ```yaml
 ---
 # default-filter.yml
+
 # Using the default filter to prevent undefined variable errors
 
 - hosts: webservers

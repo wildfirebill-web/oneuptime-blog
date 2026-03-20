@@ -14,6 +14,7 @@ Netplan disables IPv6 per-interface using `dhcp6: false` and `accept-ra: no`. Fo
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

@@ -24,6 +24,7 @@ The `--subscriptions` parameter lets you specify which subscriptions to query:
 
 ```bash
 # Query specific subscriptions by ID
+
 az graph query -q "resources | summarize count() by type | top 10 by count_" \
     --subscriptions "sub-id-1" "sub-id-2" "sub-id-3" \
     --output table

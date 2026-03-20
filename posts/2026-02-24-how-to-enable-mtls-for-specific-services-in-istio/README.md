@@ -118,6 +118,7 @@ Here is a concrete example showing all three levels:
 
 ```yaml
 # Mesh-wide: permissive (in istio-system)
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

@@ -27,6 +27,7 @@ Trivy is Aqua's open-source vulnerability scanner. It scans container images, fi
 
 ```bash
 # Add the Trivy apt repository
+
 sudo apt install -y wget apt-transport-https gnupg lsb-release
 
 wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | \

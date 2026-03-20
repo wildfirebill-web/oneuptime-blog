@@ -26,6 +26,7 @@ Verify your installation:
 
 ```bash
 # Check that Flux is installed and healthy
+
 flux check
 ```
 

@@ -14,7 +14,8 @@ Changing the default gateway requires removing the old route and adding a new on
 
 ```bash
 # Replace replaces an existing route atomically
-# This is the safest method — no gap in connectivity
+
+# This is the safest method - no gap in connectivity
 ip route replace default via 192.168.1.254
 ```
 

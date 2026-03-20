@@ -77,6 +77,7 @@ Each module should do one thing well. Instead of creating a module that provisio
 
 ```hcl
 # This module does too much
+
 module "application" {
   source = "./modules/monolithic-app"
 

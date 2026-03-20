@@ -68,6 +68,7 @@ Container limits alone are not enough. The Collector needs internal limits that 
 
 ```yaml
 # Collector config that matches a 2Gi container limit
+
 processors:
   memory_limiter:
     check_interval: 1s

@@ -18,6 +18,7 @@ Deploy Dockge:
 
 ```yaml
 # dockge-stack.yml
+
 version: "3.8"
 services:
   dockge:
@@ -54,7 +55,7 @@ volumes:
 
 Dockge's key differentiator is that stacks are stored as actual `docker-compose.yml` files on the host:
 
-```
+```text
 /opt/stacks/
 ├── nginx/
 │   └── compose.yaml
@@ -77,7 +78,7 @@ Portainer stores stack definitions in its internal database, which requires expo
 
 Portainer manages the full container ecosystem:
 
-```
+```bash
 Portainer capabilities beyond Compose stacks:
 - Individual container management
 - Volume management

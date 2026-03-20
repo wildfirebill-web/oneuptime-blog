@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu for expressions to transform, reshape, an
 
 ---
 
-For expressions in OpenTofu let you create new lists and maps by transforming existing collections. They are similar to Python list comprehensions or JavaScript's `map()` and `filter()` methods — a concise way to reshape data without writing complex functions.
+For expressions in OpenTofu let you create new lists and maps by transforming existing collections. They are similar to Python list comprehensions or JavaScript's `map()` and `filter()` methods - a concise way to reshape data without writing complex functions.
 
 ---
 
@@ -16,6 +16,7 @@ For expressions in OpenTofu let you create new lists and maps by transforming ex
 
 ```hcl
 # Create a new list
+
 [for item in list : transform(item)]
 
 # Create a map from a list
@@ -194,18 +195,18 @@ locals {
 
 ## Best Practices
 
-1. **Store complex expressions in locals** — don't embed long for expressions directly in resources
+1. **Store complex expressions in locals** - don't embed long for expressions directly in resources
 2. **Use meaningful variable names** in expressions: `for subnet in var.subnets` vs `for s in var.s`
 3. **Test with tofu console** before deploying: `echo 'local.dns_records' | tofu console`
-4. **Avoid deeply nested for expressions** — split into multiple local values for readability
+4. **Avoid deeply nested for expressions** - split into multiple local values for readability
 5. **Add type constraints** to variables to prevent unexpected input shapes
 
 ---
 
 ## Conclusion
 
-For expressions are one of OpenTofu's most powerful features for data manipulation. Use them to transform lists, build maps, combine collections, and reshape data into the exact format your resources need — all in a concise, readable syntax.
+For expressions are one of OpenTofu's most powerful features for data manipulation. Use them to transform lists, build maps, combine collections, and reshape data into the exact format your resources need - all in a concise, readable syntax.
 
 ---
 
-*Manage your infrastructure with [OneUptime](https://oneuptime.com) — monitoring and observability.*
+*Manage your infrastructure with [OneUptime](https://oneuptime.com) - monitoring and observability.*

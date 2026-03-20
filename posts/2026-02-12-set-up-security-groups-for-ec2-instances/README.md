@@ -41,6 +41,7 @@ A few key things to understand upfront:
 
 ```bash
 # Create a security group in the default VPC
+
 aws ec2 create-security-group \
     --group-name web-server-sg \
     --description "Security group for web servers" \

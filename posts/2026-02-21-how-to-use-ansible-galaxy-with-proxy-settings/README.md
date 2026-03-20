@@ -29,6 +29,7 @@ The most common and reliable approach is to set the standard proxy environment v
 
 ```bash
 # Set proxy environment variables
+
 export HTTP_PROXY="http://proxy.corp.com:8080"
 export HTTPS_PROXY="http://proxy.corp.com:8080"
 export NO_PROXY="localhost,127.0.0.1,.corp.com,galaxy.internal.com"

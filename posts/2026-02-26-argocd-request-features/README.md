@@ -55,6 +55,7 @@ We wrote a bash script that calls the ArgoCD API in a loop:
 ```bash
 #!/bin/bash
 # Current workaround - fragile and lacks proper error handling
+
 APPS=$(argocd app list -l cluster=production -o name)
 for app in $APPS; do
     argocd app sync "$app" --async

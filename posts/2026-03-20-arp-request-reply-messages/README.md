@@ -47,7 +47,7 @@ ARP packets are 28 bytes for IPv4/Ethernet:
 - **Target MAC**: `00:00:00:00:00:00` (unknown, asking)
 - **Target IP**: IP being resolved
 
-```
+```text
 ARP Request:
   Who has 192.168.1.20? Tell 192.168.1.10
   Sender MAC:  aa:bb:cc:dd:ee:01
@@ -63,7 +63,7 @@ ARP Request:
 - **Sender MAC**: The actual MAC of the target
 - **Target MAC**: The requester's MAC
 
-```
+```text
 ARP Reply:
   192.168.1.20 is at 00:11:22:33:44:55
   Sender MAC:  00:11:22:33:44:55
@@ -78,6 +78,7 @@ ARP Reply:
 from scapy.all import ARP, Ether, srp, sendp
 
 # Build ARP Request
+
 def arp_request(target_ip, iface='eth0'):
     ether = Ether(dst='ff:ff:ff:ff:ff:ff')  # broadcast
     arp = ARP(pdst=target_ip, op=1)          # op=1: request

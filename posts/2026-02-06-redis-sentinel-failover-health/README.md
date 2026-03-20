@@ -71,6 +71,7 @@ import time
 import json
 
 # Connect to Sentinel
+
 sentinel = redis.Redis(host='sentinel-1', port=26379)
 
 def collect_sentinel_metrics():

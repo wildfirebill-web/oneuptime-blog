@@ -14,7 +14,7 @@ A single k6 instance can generate substantial load, but testing at scale require
 
 Before distributing tests, maximize what one machine can do.
 
-### Resource Requirements
+Resource Requirements
 
 k6 is lightweight but still needs resources:
 
@@ -148,6 +148,7 @@ The k6 Operator runs distributed tests on Kubernetes.
 
 ```bash
 # Using Helm
+
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 helm install k6-operator grafana/k6-operator

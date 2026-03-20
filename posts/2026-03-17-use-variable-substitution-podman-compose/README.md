@@ -18,6 +18,7 @@ podman-compose supports shell-style variable substitution in compose files. You 
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

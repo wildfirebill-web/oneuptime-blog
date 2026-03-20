@@ -1,11 +1,10 @@
----
-title: "How to Use format() and formatlist() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, strings
-description: "Learn how to use the format() and formatlist() functions in OpenTofu for sprintf-style string formatting."
----
-
 # How to Use format() and formatlist() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, String
+
+Description: Learn how to use the format() and formatlist() functions in OpenTofu for sprintf-style string formatting.
 
 `format()` produces a formatted string using printf-style directives, while `formatlist()` applies the same formatting to a list of values. They give you precise control over string output.
 
@@ -18,31 +17,32 @@ format(format_string, values...)
 ## Format Verbs
 
 ```hcl
-# %s — string
+# %s - string
+
 > format("Hello, %s!", "world")
 "Hello, world!"
 
-# %d — decimal integer
+# %d - decimal integer
 > format("Port: %d", 8080)
 "Port: 8080"
 
-# %f — float
+# %f - float
 > format("%.2f GB", 1.5)
 "1.50 GB"
 
-# %05d — zero-padded integer
+# %05d - zero-padded integer
 > format("%05d", 42)
 "00042"
 
-# %q — quoted string
+# %q - quoted string
 > format("Name: %q", "my resource")
 "Name: \"my resource\""
 
-# %v — value in default format
+# %v - value in default format
 > format("Value: %v", true)
 "Value: true"
 
-# %% — literal percent sign
+# %% - literal percent sign
 > format("Progress: %d%%", 75)
 "Progress: 75%"
 ```

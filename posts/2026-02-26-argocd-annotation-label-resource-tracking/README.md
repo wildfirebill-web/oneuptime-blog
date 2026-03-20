@@ -51,6 +51,7 @@ With Helm:
 
 ```yaml
 # values.yaml for argo-cd chart
+
 server:
   config:
     application.resourceTrackingMethod: "annotation+label"

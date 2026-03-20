@@ -31,6 +31,7 @@ Create a monitoring configuration that watches Flux controllers and sends alerts
 
 ```yaml
 # monitoring/flux-health-check.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

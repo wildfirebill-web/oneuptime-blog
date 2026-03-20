@@ -30,6 +30,7 @@ Create a fully automated pipeline that keeps your registry in sync with Calico r
 
 ```yaml
 # .github/workflows/calico-image-sync.yaml
+
 name: Calico Image Sync
 on:
   schedule:

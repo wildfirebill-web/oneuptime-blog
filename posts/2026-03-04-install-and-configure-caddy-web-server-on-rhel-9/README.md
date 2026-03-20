@@ -20,6 +20,7 @@ Caddy is a web server that automatically provisions and renews TLS certificates 
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

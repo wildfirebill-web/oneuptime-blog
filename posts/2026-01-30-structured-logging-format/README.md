@@ -79,6 +79,7 @@ First, create the core logger class:
 
 ```python
 # structured_logger.py
+
 # A production-ready structured logging implementation
 
 import json

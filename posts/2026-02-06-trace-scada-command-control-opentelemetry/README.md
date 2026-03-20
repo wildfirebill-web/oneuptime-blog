@@ -68,6 +68,7 @@ class FileSpanExporter(SpanExporter):
         pass
 
 # Set up tracing with file-based export
+
 provider = TracerProvider()
 # Use SimpleSpanProcessor for immediate export -- we want command traces written right away
 provider.add_span_processor(SimpleSpanProcessor(FileSpanExporter()))

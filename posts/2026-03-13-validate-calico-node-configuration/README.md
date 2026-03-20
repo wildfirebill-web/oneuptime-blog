@@ -24,6 +24,7 @@ This guide covers systematic validation of all key Calico node configuration com
 
 ```bash
 # View current FelixConfiguration
+
 kubectl get felixconfiguration default -o yaml
 
 # Verify key settings

@@ -89,6 +89,7 @@ If the endpoint is not reachable from where Terraform runs, no timeout configura
 
 ```bash
 # Test from the machine running Terraform
+
 curl -v https://api.example.com/config
 
 # Check DNS resolution

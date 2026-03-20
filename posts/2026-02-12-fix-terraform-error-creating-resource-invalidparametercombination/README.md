@@ -37,6 +37,7 @@ Not every AMI works with every instance type. ARM-based AMIs don't work with x86
 
 ```hcl
 # This fails - ARM AMI with x86 instance type
+
 resource "aws_instance" "web" {
   ami           = "ami-0abcdef1234567890"  # ARM64 AMI
   instance_type = "t3.micro"               # x86 instance type

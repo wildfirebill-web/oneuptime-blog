@@ -112,6 +112,7 @@ def find_overlapping_spans(trace_data, span_names_that_should_not_overlap):
     return overlaps
 
 # Example usage: these operations should not overlap
+
 races = find_overlapping_spans(trace, [
     "reserve_inventory",
     "charge_payment",

@@ -31,6 +31,7 @@ If you're migrating from v1 to v2, update all your imports:
 
 ```bash
 # Find all v1-style imports in your project
+
 grep -r "@aws-cdk/" lib/ bin/ --include="*.ts"
 ```
 

@@ -66,6 +66,7 @@ sudo systemctl enable --now nomad
 
 ```hcl
 # web.nomad
+
 job "web" {
   datacenters = ["dc1"]
   type        = "service"

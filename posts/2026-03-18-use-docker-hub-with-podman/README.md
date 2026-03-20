@@ -20,6 +20,7 @@ Docker Hub should already be in your default search registries.
 
 ```bash
 # Check if docker.io is in the search list
+
 podman info --format '{{.Registries.Search}}'
 
 # If not, add it to registries.conf

@@ -31,6 +31,7 @@ A typical traditional deployment step looks like this:
 
 ```yaml
 # GitHub Actions - Traditional CI/CD Deploy
+
 name: Deploy
 on:
   push:

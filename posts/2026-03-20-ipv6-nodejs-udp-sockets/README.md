@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, IPv6, UDP, dgram, Multicast, Networking
+Tags: Node.js, IPv6, UDP, Dgram, Multicast, Networking
 
 Description: Use IPv6 UDP sockets in Node.js with the dgram module for unicast messaging, multicast groups, and low-latency communication.
 
@@ -191,4 +191,4 @@ setInterval(() => {
 
 ## Conclusion
 
-Node.js `dgram.createSocket('udp6')` creates an IPv6-only UDP socket. Bind to `'::'` to receive from any IPv6 address. Multicast requires joining a group with `addMembership(multicastAddr, ifaceName)` after binding. For multicast sending, use `setMulticastInterface()` to specify the outgoing interface. IPv6 zone IDs in multicast addresses are specified as `'ff02::1%eth0'`. When you need both IPv4 and IPv6 UDP, create two separate sockets — one `'udp4'` and one `'udp6'`.
+Node.js `dgram.createSocket('udp6')` creates an IPv6-only UDP socket. Bind to `'::'` to receive from any IPv6 address. Multicast requires joining a group with `addMembership(multicastAddr, ifaceName)` after binding. For multicast sending, use `setMulticastInterface()` to specify the outgoing interface. IPv6 zone IDs in multicast addresses are specified as `'ff02::1%eth0'`. When you need both IPv4 and IPv6 UDP, create two separate sockets - one `'udp4'` and one `'udp6'`.

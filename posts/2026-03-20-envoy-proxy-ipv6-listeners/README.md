@@ -13,7 +13,7 @@ Envoy Proxy is the data plane for Istio and many custom service mesh implementat
 ## Static Bootstrap Configuration
 
 ```yaml
-# envoy-ipv6.yaml — Static Envoy config with IPv6
+# envoy-ipv6.yaml - Static Envoy config with IPv6
 
 admin:
   address:
@@ -130,6 +130,7 @@ static_resources:
 
 ```yaml
 # Dual-stack cluster: Envoy tries IPv6 first, falls back to IPv4
+
 clusters:
   - name: dual_stack_cluster
     type: STRICT_DNS

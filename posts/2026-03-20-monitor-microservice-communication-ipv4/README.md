@@ -8,12 +8,13 @@ Description: Monitor inter-service TCP/HTTP communication over IPv4 using Promet
 
 ## Introduction
 
-Microservices communicate over IPv4 TCP, and failures — latency spikes, connection resets, retries — are hard to diagnose without proper instrumentation. Combining metrics, traces, and network-level visibility gives a complete picture.
+Microservices communicate over IPv4 TCP, and failures - latency spikes, connection resets, retries - are hard to diagnose without proper instrumentation. Combining metrics, traces, and network-level visibility gives a complete picture.
 
-## Prometheus Node Exporter — Network Metrics
+## Prometheus Node Exporter - Network Metrics
 
 ```yaml
 # prometheus.yml scrape config
+
 scrape_configs:
   - job_name: node
     static_configs:

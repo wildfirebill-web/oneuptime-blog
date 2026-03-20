@@ -52,6 +52,7 @@ This creates a file named `container-webserver.service` in the current directory
 
 ```bash
 # Generate with restart policy
+
 podman generate systemd --name webserver --restart-policy=always --files
 
 # Generate with a specific stop timeout

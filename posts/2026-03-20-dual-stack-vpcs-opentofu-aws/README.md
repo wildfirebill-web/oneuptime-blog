@@ -19,6 +19,7 @@ Dual-stack VPCs run IPv4 and IPv6 simultaneously, enabling gradual migration to 
 
 ```hcl
 # Enable both IPv4 and the Amazon-provided IPv6 /56 block
+
 resource "aws_vpc" "dual_stack" {
   cidr_block                       = "10.10.0.0/16"
   assign_generated_ipv6_cidr_block = true

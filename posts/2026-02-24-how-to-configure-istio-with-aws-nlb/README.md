@@ -197,6 +197,7 @@ If you need static IP addresses for your Istio gateway (useful for DNS or firewa
 
 ```bash
 # Allocate EIPs
+
 aws ec2 allocate-address --domain vpc
 aws ec2 allocate-address --domain vpc
 ```

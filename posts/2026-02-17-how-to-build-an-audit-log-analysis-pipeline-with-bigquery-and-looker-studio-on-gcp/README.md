@@ -33,6 +33,7 @@ Set up a dedicated dataset for audit logs with appropriate access controls and l
 
 ```bash
 # Create a BigQuery dataset in the audit project
+
 bq mk --dataset \
   --location=US \
   --default_table_expiration=0 \

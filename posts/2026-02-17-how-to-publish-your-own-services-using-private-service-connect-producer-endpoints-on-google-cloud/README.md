@@ -36,6 +36,7 @@ On the producer side, you need:
 
 ```bash
 # Enable the Compute Engine API
+
 gcloud services enable compute.googleapis.com
 ```
 

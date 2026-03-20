@@ -31,6 +31,7 @@ Chaos Mesh is a Kubernetes-native chaos engineering platform. Install it:
 
 ```bash
 # Add Chaos Mesh Helm repository
+
 helm repo add chaos-mesh https://charts.chaos-mesh.org
 
 # Create namespace

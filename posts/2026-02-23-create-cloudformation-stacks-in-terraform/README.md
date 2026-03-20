@@ -24,6 +24,7 @@ You will need:
 
 ```hcl
 # Standard AWS provider setup
+
 terraform {
   required_version = ">= 1.0"
 

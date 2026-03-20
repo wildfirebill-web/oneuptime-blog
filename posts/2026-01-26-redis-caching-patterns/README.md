@@ -244,6 +244,7 @@ module.exports = { getUserById, updateUser, deleteUser };
 
 ```python
 # cache_aside.py
+
 # Cache-Aside pattern implementation with Redis and PostgreSQL
 
 import json

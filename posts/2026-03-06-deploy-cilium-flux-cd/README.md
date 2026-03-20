@@ -25,6 +25,7 @@ This guide covers deploying Cilium using Flux CD, configuring network policies, 
 
 ```yaml
 # clusters/my-cluster/sources/cilium-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

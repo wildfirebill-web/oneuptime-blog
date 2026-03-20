@@ -64,6 +64,7 @@ All three receivers need permission to query the Kubernetes API. Here's the Serv
 
 ```yaml
 # rbac.yaml
+
 # Grants the collector permission to read Kubernetes resources for metrics collection
 apiVersion: v1
 kind: ServiceAccount

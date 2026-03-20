@@ -14,7 +14,7 @@ Extensive measurement research has revealed that IPv6 extension headers are drop
 
 Research papers and IETF working group documents have measured:
 
-```
+```text
 Extension Header Type     | Approximate Drop Rate (internet paths)
 Fragment (NH=44)         | ~30-50% of paths (critical - breaks fragmentation)
 Routing (NH=43)          | ~40-60% of paths
@@ -28,7 +28,7 @@ Note: These rates vary significantly by measurement methodology, path, and time.
 
 ## Why Extension Headers Are Dropped
 
-```
+```text
 1. Misconfigured firewalls:
    Many firewall default policies drop anything "unusual"
    Including packets with extension headers as a "precaution"
@@ -58,6 +58,7 @@ Note: These rates vary significantly by measurement methodology, path, and time.
 
 ```bash
 # Test if a path drops Fragment Header packets
+
 # Method: Compare reachability with and without fragmentation
 
 # Test 1: Normal packet (no extension headers)
@@ -122,7 +123,7 @@ print(f"Fragment Header: {'DROPPED' if result.get('dropped') else 'PASSED'}")
 
 ## Operational Implications
 
-```
+```text
 For network operators deploying new protocols:
   → Cannot rely on extension headers for critical functionality
   → Design protocols to work WITHOUT extension headers when possible

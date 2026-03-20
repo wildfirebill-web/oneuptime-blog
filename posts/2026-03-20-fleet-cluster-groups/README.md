@@ -29,6 +29,7 @@ A `ClusterGroup` is a Fleet custom resource that acts as a named collection of c
 
 ```yaml
 # clustergroup-production.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterGroup
 metadata:
@@ -127,7 +128,7 @@ kubectl get clusters.fleet.cattle.io -n fleet-default \
 ```
 
 Expected output:
-```
+```text
 NAME         CLUSTERS-READY   CLUSTERS-DESIRED   AGE
 production   5                5                  2d
 staging      3                3                  2d
@@ -263,7 +264,7 @@ kubectl get bundledeployments -A \
 
 ## Updating ClusterGroup Membership
 
-ClusterGroup membership is dynamic — update the selector to change which clusters belong:
+ClusterGroup membership is dynamic - update the selector to change which clusters belong:
 
 ```bash
 # Update the selector to add a new label requirement

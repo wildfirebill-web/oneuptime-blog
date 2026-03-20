@@ -79,6 +79,7 @@ exports.cleanupExpiredSessions = async (req, res) => {
 
 ```bash
 # Deploy the Cloud Function
+
 gcloud functions deploy cleanup-sessions \
   --gen2 \
   --runtime nodejs20 \

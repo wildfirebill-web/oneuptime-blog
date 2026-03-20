@@ -87,6 +87,7 @@ Configure your application properties:
 
 ```yaml
 # application.yml
+
 spring:
   batch:
     # Create batch tables automatically

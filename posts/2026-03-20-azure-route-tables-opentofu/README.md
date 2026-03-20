@@ -46,6 +46,7 @@ resource "azurerm_route_table" "app" {
 }
 
 # Associate route table with subnet
+
 resource "azurerm_subnet_route_table_association" "app" {
   subnet_id      = var.app_subnet_id
   route_table_id = azurerm_route_table.app.id
@@ -169,4 +170,4 @@ az network watcher test-ip-flow \
 
 ## Conclusion
 
-Set `disable_bgp_route_propagation = true` in spoke subnets to prevent VPN/ExpressRoute BGP routes from overriding your UDRs—this is critical when routing all traffic through Azure Firewall because an on-prem BGP route could create a routing loop. Use `next_hop_type = "VirtualNetworkGateway"` (not a specific IP) for on-premises routes so the traffic takes the active gateway without hardcoding the gateway IP. AKS with kubenet networking requires a pre-existing route table on the node subnet—Azure needs write permissions to the route table to add pod CIDR routes during node pool operations.
+Set `disable_bgp_route_propagation = true` in spoke subnets to prevent VPN/ExpressRoute BGP routes from overriding your UDRs-this is critical when routing all traffic through Azure Firewall because an on-prem BGP route could create a routing loop. Use `next_hop_type = "VirtualNetworkGateway"` (not a specific IP) for on-premises routes so the traffic takes the active gateway without hardcoding the gateway IP. AKS with kubenet networking requires a pre-existing route table on the node subnet-Azure needs write permissions to the route table to add pod CIDR routes during node pool operations.

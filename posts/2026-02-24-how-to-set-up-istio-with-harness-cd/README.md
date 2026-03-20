@@ -315,6 +315,7 @@ You can also monitor from the Istio side:
 
 ```bash
 # Check current VirtualService weights
+
 kubectl get virtualservice my-app-vsvc -n production -o yaml
 
 # Watch canary pods

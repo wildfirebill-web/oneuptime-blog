@@ -60,6 +60,7 @@ variable "environment" {
 
 ```hcl
 # Enable required GCP service APIs
+
 resource "google_project_service" "required_apis" {
   for_each = toset([
     "compute.googleapis.com",

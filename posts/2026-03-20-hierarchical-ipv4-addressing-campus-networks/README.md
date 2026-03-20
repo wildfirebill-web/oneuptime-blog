@@ -12,33 +12,33 @@ Campus networks follow a three-tier hierarchy: core (fast routing between buildi
 
 ## Hierarchical Addressing Model
 
-```
-10.0.0.0/8          — Enterprise total allocation
-  10.SITE.0.0/16    — One /16 per campus site
-    10.1.0.0/16     — Main Campus
-      10.1.BLDG.0/24  — One /24 per building/floor
-        10.1.10.0/24  — Building A, Floor 0
-        10.1.11.0/24  — Building A, Floor 1
-        10.1.20.0/24  — Building B, Floor 0
-      10.1.200.0/21  — Wired infrastructure (switches, routers)
-      10.1.210.0/24  — Wireless controllers / APs
-      10.1.220.0/24  — VoIP phones
-      10.1.230.0/24  — Printers / IoT
-      10.1.240.0/24  — Security cameras
+```text
+10.0.0.0/8          - Enterprise total allocation
+  10.SITE.0.0/16    - One /16 per campus site
+    10.1.0.0/16     - Main Campus
+      10.1.BLDG.0/24  - One /24 per building/floor
+        10.1.10.0/24  - Building A, Floor 0
+        10.1.11.0/24  - Building A, Floor 1
+        10.1.20.0/24  - Building B, Floor 0
+      10.1.200.0/21  - Wired infrastructure (switches, routers)
+      10.1.210.0/24  - Wireless controllers / APs
+      10.1.220.0/24  - VoIP phones
+      10.1.230.0/24  - Printers / IoT
+      10.1.240.0/24  - Security cameras
 ```
 
 ## Sample Campus Plan
 
-```
+```text
 Site: Main Campus (10.1.0.0/16)
 
-Building A — 10.1.10.0/22 (allocates 4 × /24)
+Building A - 10.1.10.0/22 (allocates 4 × /24)
   VLAN 110  Students      10.1.10.0/24   GW: 10.1.10.1
   VLAN 111  Staff         10.1.11.0/24   GW: 10.1.11.1
   VLAN 112  APs           10.1.12.0/24   GW: 10.1.12.1
   VLAN 113  Phones        10.1.13.0/24   GW: 10.1.13.1
 
-Building B — 10.1.20.0/22
+Building B - 10.1.20.0/22
   VLAN 120  Students      10.1.20.0/24
   VLAN 121  Staff         10.1.21.0/24
 
@@ -93,7 +93,7 @@ ip route 10.1.10.0 255.255.252.0 Null0
 
 ## Summarization Benefits
 
-```
+```text
 Without summarization: core routing table has 50+ /24 entries
 With summarization:    core sees one /22 per building cluster
                        one /16 per site

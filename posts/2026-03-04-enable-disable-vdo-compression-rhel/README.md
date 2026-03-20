@@ -14,6 +14,7 @@ VDO on RHEL provides both deduplication and compression. While deduplication is 
 
 ```bash
 # Check if compression is enabled on a VDO volume
+
 sudo vdo status --name=vdo0 | grep "Compression"
 # Output: Compression: enabled
 

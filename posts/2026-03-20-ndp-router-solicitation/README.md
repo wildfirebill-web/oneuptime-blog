@@ -12,7 +12,7 @@ Router Solicitation (RS) is ICMPv6 Type 133, sent by hosts to discover routers o
 
 ## Router Solicitation Message Format
 
-```
+```text
 ICMPv6 Router Solicitation (Type 133):
 
  0                   1                   2                   3
@@ -37,7 +37,7 @@ Options (optional):
 
 ## RS Timing and Behavior
 
-```
+```text
 RFC 4861 RS timing parameters:
 
 MAX_RTR_SOLICITATIONS:     3 (maximum RS attempts)
@@ -58,6 +58,7 @@ Process:
 
 ```bash
 # Capture Router Solicitation messages
+
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 133"
 
 # Example verbose output:
@@ -118,7 +119,7 @@ print(f"RS message ({len(rs_message)} bytes): {rs_message.hex()}")
 
 ## Security Considerations
 
-```
+```text
 RS security issues:
 
 1. RS flood attack:

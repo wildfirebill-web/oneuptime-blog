@@ -30,6 +30,7 @@ Create a comprehensive health check that runs non-interactively:
 ```bash
 #!/bin/bash
 # cilium-health-check.sh
+
 # Automated health check using cilium-agent commands
 
 set -euo pipefail

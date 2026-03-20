@@ -18,6 +18,7 @@ The most straightforward use case is ensuring a list of services are running.
 
 ```yaml
 # start-services.yml
+
 # Ensures all required services are running
 - name: Start application services
   hosts: webservers

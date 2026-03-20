@@ -6,12 +6,13 @@ Tags: OpenTofu, ISO 27001, Compliance, Security, Infrastructure as Code
 
 Description: Learn how to implement ISO 27001 Annex A technical controls with OpenTofu for cloud infrastructure that supports information security certification.
 
-ISO 27001 Annex A defines 93 controls across 4 themes. The technical controls — access control, cryptography, physical security, operations, communications, supplier relationships, and incident management — have direct mappings to cloud infrastructure configurations that OpenTofu can codify.
+ISO 27001 Annex A defines 93 controls across 4 themes. The technical controls - access control, cryptography, physical security, operations, communications, supplier relationships, and incident management - have direct mappings to cloud infrastructure configurations that OpenTofu can codify.
 
 ## A.5 Organizational Controls
 
 ```hcl
-# A.5.14 — Information transfer: enforce HTTPS
+# A.5.14 - Information transfer: enforce HTTPS
+
 resource "aws_alb_listener" "http_redirect" {
   load_balancer_arn = aws_lb.main.arn
   port              = "80"
@@ -31,7 +32,7 @@ resource "aws_alb_listener" "http_redirect" {
 ## A.8 Technological Controls
 
 ```hcl
-# A.8.5 — Secure authentication: MFA enforcement via Cognito
+# A.8.5 - Secure authentication: MFA enforcement via Cognito
 resource "aws_cognito_user_pool" "main" {
   name = "app-users"
 
@@ -51,23 +52,23 @@ resource "aws_cognito_user_pool" "main" {
   }
 }
 
-# A.8.7 — Protection against malware: GuardDuty
+# A.8.7 - Protection against malware: GuardDuty
 resource "aws_guardduty_detector" "iso27001" {
   enable = true
 }
 
-# A.8.8 — Management of technical vulnerabilities: Inspector
+# A.8.8 - Management of technical vulnerabilities: Inspector
 resource "aws_inspector2_enabler" "main" {
   account_ids    = [data.aws_caller_identity.current.account_id]
   resource_types = ["EC2", "ECR", "LAMBDA"]
 }
 
-# A.8.12 — Data leakage prevention: Macie
+# A.8.12 - Data leakage prevention: Macie
 resource "aws_macie2_account" "main" {
   status = "ENABLED"
 }
 
-# A.8.24 — Use of cryptography: S3 encryption
+# A.8.24 - Use of cryptography: S3 encryption
 resource "aws_s3_bucket_server_side_encryption_configuration" "iso27001" {
   bucket = aws_s3_bucket.data.id
 
@@ -80,11 +81,11 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "iso27001" {
   }
 }
 
-# A.8.25 — Secure development lifecycle: CodeGuru security scanning
+# A.8.25 - Secure development lifecycle: CodeGuru security scanning
 # (Integrated via CI/CD pipeline, not a direct Terraform resource)
 ```
 
-## A.8.15 — Logging
+## A.8.15 - Logging
 
 ```hcl
 # Comprehensive logging for all critical services
@@ -94,7 +95,7 @@ resource "aws_cloudwatch_log_group" "application" {
   kms_key_id        = aws_kms_key.logs.arn
 }
 
-# A.8.16 — Monitoring: CloudWatch alarms for key security events
+# A.8.16 - Monitoring: CloudWatch alarms for key security events
 resource "aws_cloudwatch_metric_alarm" "high_error_rate" {
   alarm_name          = "high-error-rate"
   comparison_operator = "GreaterThanThreshold"
@@ -108,7 +109,7 @@ resource "aws_cloudwatch_metric_alarm" "high_error_rate" {
 }
 ```
 
-## A.8.20 — Networks Security
+## A.8.20 - Networks Security
 
 ```hcl
 # Segment networks by sensitivity level
@@ -119,7 +120,7 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "private_data" {
   vpc_id     = aws_vpc.main.id
   cidr_block = "10.0.10.0/24"
-  # No route to internet gateway — data tier isolated
+  # No route to internet gateway - data tier isolated
 }
 
 resource "aws_network_acl" "data_tier" {

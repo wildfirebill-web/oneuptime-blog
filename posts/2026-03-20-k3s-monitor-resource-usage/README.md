@@ -22,6 +22,7 @@ Before installing any additional tools, kubectl provides basic visibility:
 
 ```bash
 # List nodes with their status
+
 kubectl get nodes -o wide
 
 # Describe a node to see resource capacity and allocated resources
@@ -230,4 +231,4 @@ kubectl apply -f k3s-resource-alerts.yaml
 
 ## Conclusion
 
-Monitoring K3s resource usage ranges from simple `kubectl top` commands to full Prometheus/Grafana stacks depending on your needs. Start with the Metrics Server for basic visibility, then invest in Prometheus/Grafana for production monitoring with alerting. Always set resource requests and limits on your workloads — this not only prevents resource starvation but also improves the accuracy of resource metrics and scheduling decisions.
+Monitoring K3s resource usage ranges from simple `kubectl top` commands to full Prometheus/Grafana stacks depending on your needs. Start with the Metrics Server for basic visibility, then invest in Prometheus/Grafana for production monitoring with alerting. Always set resource requests and limits on your workloads - this not only prevents resource starvation but also improves the accuracy of resource metrics and scheduling decisions.

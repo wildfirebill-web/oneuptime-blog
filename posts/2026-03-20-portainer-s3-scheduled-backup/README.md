@@ -21,6 +21,7 @@ Portainer Business Edition includes built-in scheduled backup functionality that
 
 ```bash
 # Using AWS CLI
+
 aws s3 mb s3://my-portainer-backups --region us-east-1
 
 # Enable versioning (recommended for backups)
@@ -165,7 +166,7 @@ curl -X PUT \
 
 The schedule uses standard cron syntax:
 
-```
+```text
 # Examples:
 "0 2 * * *"     # Daily at 2 AM
 "0 */12 * * *"  # Every 12 hours
@@ -206,7 +207,7 @@ docker run --rm \
   -v /tmp:/backup \
   alpine tar xzf /backup/portainer-backup-test.tar.gz -C /data
 
-# The backup is encrypted — restore via Portainer's restore UI
+# The backup is encrypted - restore via Portainer's restore UI
 # Settings → Backup → Restore → Upload the downloaded file
 # Enter the encryption password
 ```
@@ -223,4 +224,4 @@ docker logs portainer 2>&1 | grep -i "backup\|s3" | tail -10
 
 ## Conclusion
 
-Portainer Business Edition's S3 backup integration provides automated, encrypted backups with zero operational overhead. Configure it once, verify it works by testing a restore, and then forget about it — your Portainer configuration is protected. Use the lifecycle policy on your S3 bucket to automatically age out old backups and control storage costs.
+Portainer Business Edition's S3 backup integration provides automated, encrypted backups with zero operational overhead. Configure it once, verify it works by testing a restore, and then forget about it - your Portainer configuration is protected. Use the lifecycle policy on your S3 bucket to automatically age out old backups and control storage costs.

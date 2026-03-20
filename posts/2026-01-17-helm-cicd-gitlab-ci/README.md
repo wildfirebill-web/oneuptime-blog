@@ -55,6 +55,7 @@ Create `.gitlab-ci.yml` in your repository root:
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - lint
   - test

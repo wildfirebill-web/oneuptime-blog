@@ -33,6 +33,7 @@ Create a ServiceMonitor that matches all services created by Flagger for your ap
 
 ```yaml
 # servicemonitor.yaml
+
 # ServiceMonitor that matches primary and canary services
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor

@@ -24,6 +24,7 @@ Podman supports three events logger backends:
 
 ```bash
 # Check the current events logger
+
 podman info --format '{{.Host.EventLogger}}'
 ```
 

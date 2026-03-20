@@ -380,6 +380,7 @@ ANALYZE orders;
 
 ```python
 # index_analyzer.py
+
 # Script to suggest indexes based on query patterns
 
 import psycopg2

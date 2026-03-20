@@ -57,6 +57,7 @@ The ArgoCD CLI provides several ways to inspect sync history:
 
 ```bash
 # View the current sync status and last operation
+
 argocd app get my-app
 
 # Output includes:

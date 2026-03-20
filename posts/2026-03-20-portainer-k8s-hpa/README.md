@@ -1,4 +1,4 @@
-# How to Configure Horizontal Pod Autoscaler via Portainer
+# How to Configure Horizontal Pod Autoscaler via Portainer - K8s Hpa
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ The Horizontal Pod Autoscaler (HPA) automatically scales the number of pods in a
 
 ```bash
 # Install Metrics Server (required for HPA)
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify Metrics Server is running

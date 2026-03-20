@@ -134,6 +134,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
 
 # Configure the exporter
+
 exporter = OTLPSpanExporter(
     endpoint="http://localhost:4318/v1/traces"
 )

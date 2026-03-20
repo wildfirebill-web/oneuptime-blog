@@ -14,6 +14,7 @@ Trivy is a comprehensive security scanner from Aqua Security that scans containe
 
 ```bash
 # Install Trivy
+
 brew install trivy  # macOS
 # or
 curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
@@ -186,4 +187,4 @@ jobs:
 
 ## Conclusion
 
-Trivy is particularly valuable when you want a single security scanner across both container images and infrastructure code — the same tool that scans your Docker images can scan your OpenTofu configurations. Use the SARIF output for GitHub Security tab integration, and apply `.trivyignore.yaml` for false positives with documented reasons rather than silently ignoring findings.
+Trivy is particularly valuable when you want a single security scanner across both container images and infrastructure code - the same tool that scans your Docker images can scan your OpenTofu configurations. Use the SARIF output for GitHub Security tab integration, and apply `.trivyignore.yaml` for false positives with documented reasons rather than silently ignoring findings.

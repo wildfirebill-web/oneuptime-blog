@@ -19,7 +19,7 @@ A home subscriber typically gets:
 
 ## Attribute Wire Format (RFC 4818)
 
-```
+```text
 Delegated-IPv6-Prefix (Attribute 123):
   Type:    123
   Length:  Variable
@@ -35,8 +35,9 @@ Example: 2001:db8:user:a000::/56
 
 ## FreeRADIUS Configuration
 
-```
+```text
 # /etc/freeradius/3.0/users
+
 # Assign delegated prefix to subscriber (CPE router)
 
 subscriber1  Cleartext-Password := "secret"
@@ -56,8 +57,8 @@ INSERT INTO radreply (username, attribute, op, value) VALUES
 
 ## Cisco BNG: DHCPv6-PD with RADIUS
 
-```
-! Cisco IOS XE BNG — DHCPv6-PD from RADIUS
+```text
+! Cisco IOS XE BNG - DHCPv6-PD from RADIUS
 ! RADIUS returns Delegated-IPv6-Prefix, BNG performs DHCPv6-PD toward CPE
 
 ipv6 dhcp pool DELEGATED_POOL
@@ -80,8 +81,8 @@ show ipv6 dhcp binding
 
 ## Juniper MX BNG: Delegated Prefix
 
-```
-# Juniper MX — DHCPv6-PD with RADIUS-assigned prefix
+```text
+# Juniper MX - DHCPv6-PD with RADIUS-assigned prefix
 
 set access address-assignment pool DELEGATED_POOL
     family inet6

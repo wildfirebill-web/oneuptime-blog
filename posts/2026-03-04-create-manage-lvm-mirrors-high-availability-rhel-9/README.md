@@ -126,6 +126,7 @@ If a disk fails, the mirror enters a degraded state. Replace the failed disk and
 
 ```bash
 # Add a new physical volume
+
 sudo pvcreate /dev/sdd
 sudo vgextend vg_mirror /dev/sdd
 

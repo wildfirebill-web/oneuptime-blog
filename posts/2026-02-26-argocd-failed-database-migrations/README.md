@@ -33,6 +33,7 @@ The good news is that your application continues running the previous version. T
 
 ```bash
 # Find the failed migration job
+
 kubectl get jobs -n production -l app=schema-migration
 
 # Check job events

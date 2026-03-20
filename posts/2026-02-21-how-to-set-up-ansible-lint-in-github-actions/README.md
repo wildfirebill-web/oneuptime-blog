@@ -16,6 +16,7 @@ Start with a simple workflow that installs ansible-lint and runs it:
 
 ```yaml
 # .github/workflows/ansible-lint.yml - Basic ansible-lint workflow
+
 ---
 name: Ansible Lint
 

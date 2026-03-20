@@ -32,6 +32,7 @@ Start with the fundamentals - minimum and maximum instance counts and the scalin
 
 ```yaml
 # .ebextensions/autoscaling.config - Basic auto scaling setup
+
 option_settings:
   # Instance count boundaries
   aws:autoscaling:asg:

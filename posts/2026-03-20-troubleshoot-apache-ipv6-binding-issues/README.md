@@ -10,6 +10,7 @@ Description: Learn how to diagnose and fix Apache HTTP Server IPv6 binding issue
 
 ```bash
 # Error 1: Address already in use
+
 # AH00072: make_sock: could not bind to address [::]:80
 # AH00455: Apache unable to open logs
 
@@ -164,4 +165,4 @@ aa-status    # AppArmor
 
 ## Summary
 
-Common Apache IPv6 binding issues: "Address already in use" — check `ss -6 -tlnp | grep ':80'` for port conflicts and verify `bindv6only` setting; "Cannot assign requested address" — the IPv6 address doesn't exist, add it with `ip -6 addr add`. Always use brackets in Apache config: `Listen [::]:80`. Check syntax with `apache2ctl configtest` and virtual host layout with `apache2ctl -S`.
+Common Apache IPv6 binding issues: "Address already in use" - check `ss -6 -tlnp | grep ':80'` for port conflicts and verify `bindv6only` setting; "Cannot assign requested address" - the IPv6 address doesn't exist, add it with `ip -6 addr add`. Always use brackets in Apache config: `Listen [::]:80`. Check syntax with `apache2ctl configtest` and virtual host layout with `apache2ctl -S`.

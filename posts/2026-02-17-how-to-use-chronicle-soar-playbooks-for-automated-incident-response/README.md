@@ -112,6 +112,7 @@ Now add a condition block that evaluates the enrichment results.
 
 ```python
 # Decision logic for the phishing playbook
+
 # This runs after enrichment actions complete
 
 # Check if the URL is malicious based on VirusTotal score

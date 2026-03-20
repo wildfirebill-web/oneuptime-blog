@@ -22,6 +22,7 @@ Sloth generates Prometheus recording rules and alerts from SLO specifications.
 
 ```bash
 # Install Sloth CLI
+
 go install github.com/slok/sloth/cmd/sloth@latest
 
 # Or download binary

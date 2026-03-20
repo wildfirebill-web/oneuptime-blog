@@ -1,4 +1,4 @@
-# How to Set Up Auto-Admin Assignment for OAuth Groups in Portainer
+# How to Set Up Auto-Admin Assignment for OAuth Groups in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,6 +31,7 @@ Manually assigning admin roles to users after OAuth login creates management ove
 
 ```powershell
 # Create a security group for Portainer admins
+
 New-AzureADGroup -DisplayName "portainer-admins" `
   -MailEnabled $false `
   -SecurityEnabled $true `
@@ -151,4 +152,4 @@ curl -s -H "Authorization: Bearer $ALICE_TOKEN" \
 
 ## Conclusion
 
-Auto-admin assignment based on OAuth groups centralizes role management in your identity provider. Granting or revoking Portainer admin privileges is now a matter of adding or removing users from the admin group in your IdP — no Portainer UI interaction required. This is particularly valuable in organizations where the IdP team manages group membership independently from the infrastructure team managing Portainer.
+Auto-admin assignment based on OAuth groups centralizes role management in your identity provider. Granting or revoking Portainer admin privileges is now a matter of adding or removing users from the admin group in your IdP - no Portainer UI interaction required. This is particularly valuable in organizations where the IdP team manages group membership independently from the infrastructure team managing Portainer.

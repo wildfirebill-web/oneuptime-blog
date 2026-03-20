@@ -18,6 +18,7 @@ Before registering, check if your desired domain is available.
 
 ```bash
 # Check if a domain is available
+
 aws route53domains check-domain-availability \
   --domain-name example.com
 

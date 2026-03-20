@@ -47,6 +47,7 @@ First, figure out how many IPs are used and how many are available.
 
 ```bash
 # Check the subnet configuration and address prefix
+
 az network vnet subnet show \
   --resource-group my-rg \
   --vnet-name my-vnet \

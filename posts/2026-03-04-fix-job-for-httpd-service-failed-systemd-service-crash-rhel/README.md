@@ -14,6 +14,7 @@ When you see "Job for httpd.service failed because the control process exited wi
 
 ```bash
 # Get detailed status information
+
 sudo systemctl status httpd.service
 
 # Read the full journal for httpd

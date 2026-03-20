@@ -52,6 +52,7 @@ Create feature groups that define the schema for your features:
 
 ```python
 # create_feature_groups.py - Define feature groups in SageMaker Feature Store
+
 import boto3
 import sagemaker
 from sagemaker.feature_store.feature_group import FeatureGroup

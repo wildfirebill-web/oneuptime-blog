@@ -8,7 +8,7 @@ Description: Learn how to restore virtual machines from backups in Harvester, in
 
 ## Introduction
 
-Restoring VMs from backups is a critical disaster recovery capability. Harvester supports restoring VMs from backups stored in S3-compatible object storage or NFS. You can restore a VM in-place (overwriting the existing VM), to a new VM on the same cluster, or import a backup into a completely different Harvester cluster — enabling cross-cluster migration and disaster recovery.
+Restoring VMs from backups is a critical disaster recovery capability. Harvester supports restoring VMs from backups stored in S3-compatible object storage or NFS. You can restore a VM in-place (overwriting the existing VM), to a new VM on the same cluster, or import a backup into a completely different Harvester cluster - enabling cross-cluster migration and disaster recovery.
 
 ## Restore Scenarios
 
@@ -34,6 +34,7 @@ Navigate to **VM Backups** (under the **Backup & Snapshot** section) to see all 
 
 ```bash
 # List all VM backups
+
 kubectl get virtualmachinebackup -n default
 
 # Get details about a specific backup
@@ -314,4 +315,4 @@ echo "=== DR Test Complete ==="
 
 ## Conclusion
 
-Restoring VMs from backups in Harvester is a straightforward process that supports multiple recovery scenarios from simple in-place restores to full cross-cluster disaster recovery. The Kubernetes-native API makes it easy to automate restore testing, which is a critical practice often overlooked in disaster recovery planning. Test your restore procedures regularly — ideally monthly — to ensure your backup strategy actually works when you need it most.
+Restoring VMs from backups in Harvester is a straightforward process that supports multiple recovery scenarios from simple in-place restores to full cross-cluster disaster recovery. The Kubernetes-native API makes it easy to automate restore testing, which is a critical practice often overlooked in disaster recovery planning. Test your restore procedures regularly - ideally monthly - to ensure your backup strategy actually works when you need it most.

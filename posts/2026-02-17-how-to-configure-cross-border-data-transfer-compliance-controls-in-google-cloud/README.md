@@ -61,6 +61,7 @@ def map_data_flows(org_id):
     return location_map
 
 # Generate a report of all data resources by region
+
 flows = map_data_flows("123456789")
 for location, resources in sorted(flows.items()):
     print(f"\n{location}: {len(resources)} resources")

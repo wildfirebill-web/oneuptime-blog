@@ -46,6 +46,7 @@ First, verify the annotation is actually on the pod (not just the Deployment).
 
 ```bash
 # Check if the annotation made it to the pod spec
+
 kubectl get pod <pod-name> -n <namespace> -o jsonpath='{.metadata.annotations}' | jq .
 ```
 

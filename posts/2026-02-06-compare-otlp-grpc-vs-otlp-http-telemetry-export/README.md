@@ -32,6 +32,7 @@ Setting up a collector to receive both protocols:
 
 ```yaml
 # OTel Collector receiver configuration accepting both transports
+
 # Most deployments enable both for maximum compatibility
 receivers:
   otlp:

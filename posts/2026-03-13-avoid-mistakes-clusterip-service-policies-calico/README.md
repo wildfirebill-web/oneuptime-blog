@@ -67,6 +67,7 @@ spec:
 
 ```bash
 # Apply the policy
+
 calicoctl apply -f avoid-mistakes-clusterip-services.yaml
 
 # Verify traffic behavior

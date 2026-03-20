@@ -55,6 +55,7 @@ Build a reusable validation script:
 
 ```python
 # validate_metrics.py
+
 import requests
 import sys
 import time

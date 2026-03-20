@@ -27,6 +27,7 @@ Here's a stateless rule group that handles some quick decisions before handing e
 
 ```bash
 # Create a stateless rule group with multiple rules
+
 aws network-firewall create-rule-group \
   --rule-group-name "quick-decisions" \
   --type STATELESS \

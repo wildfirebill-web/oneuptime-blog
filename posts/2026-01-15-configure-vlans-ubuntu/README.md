@@ -68,6 +68,7 @@ Check that your network interface is up and connected.
 
 ```bash
 # List network interfaces
+
 ip link show
 
 # Check interface status

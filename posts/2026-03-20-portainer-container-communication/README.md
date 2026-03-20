@@ -1,4 +1,4 @@
-# How to Set Up Container-to-Container Communication in Portainer
+# How to Set Up Container-to-Container Communication in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -41,6 +41,7 @@ When services are in separate stacks, use an external named network:
 
 ```yaml
 # Stack 1: database stack
+
 services:
   postgres:
     networks:
@@ -120,7 +121,7 @@ networks:
     internal: true   # No internet egress
 ```
 
-This pattern ensures Nginx cannot directly query the database — it must go through the API layer.
+This pattern ensures Nginx cannot directly query the database - it must go through the API layer.
 
 ## Overlay Networks for Swarm
 
@@ -151,4 +152,4 @@ From Portainer's **Networks** view, click any network to see:
 - IPAM subnet configuration
 - Network driver and options
 
-Cross-reference with container logs if a service can't reach another — the most common cause is the two containers being on different networks despite appearing in the same stack.
+Cross-reference with container logs if a service can't reach another - the most common cause is the two containers being on different networks despite appearing in the same stack.

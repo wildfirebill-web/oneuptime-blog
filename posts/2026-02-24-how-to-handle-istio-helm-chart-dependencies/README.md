@@ -59,6 +59,7 @@ Define the chart metadata:
 
 ```yaml
 # istio-umbrella/Chart.yaml
+
 apiVersion: v2
 name: istio-umbrella
 description: Umbrella chart for Istio installation

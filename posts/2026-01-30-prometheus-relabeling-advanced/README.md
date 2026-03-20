@@ -291,6 +291,7 @@ Each Prometheus instance uses the same config but with different `__shard` value
 
 ```yaml
 # prometheus-shard-0.yml
+
 global:
   external_labels:
     prometheus_shard: '0'

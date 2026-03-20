@@ -15,7 +15,8 @@ pip install pyzmq
 ## Basic REQ/REP Pattern
 
 ```python
-# --- server.py (REP socket — receives request, sends reply) ---
+# --- server.py (REP socket - receives request, sends reply) ---
+
 import zmq
 
 ctx    = zmq.Context()
@@ -29,7 +30,7 @@ while True:
     socket.send_string(f"Reply to: {message}")
 
 
-# --- client.py (REQ socket — sends request, receives reply) ---
+# --- client.py (REQ socket - sends request, receives reply) ---
 import zmq
 
 ctx    = zmq.Context()
@@ -127,4 +128,4 @@ asyncio.run(server())
 
 ## Conclusion
 
-ZeroMQ's `REQ`/`REP` sockets implement the request-reply pattern with zero application-level framing code — messages are delivered atomically. Bind the `REP` socket to `tcp://0.0.0.0:port` to accept on all IPv4 interfaces. The `REQ` socket's strict alternating send/recv discipline means you must always receive a reply before sending the next request — for concurrent requests use `DEALER`/`ROUTER` sockets instead. Set `RCVTIMEO` on client sockets to avoid blocking forever when the server is unavailable.
+ZeroMQ's `REQ`/`REP` sockets implement the request-reply pattern with zero application-level framing code - messages are delivered atomically. Bind the `REP` socket to `tcp://0.0.0.0:port` to accept on all IPv4 interfaces. The `REQ` socket's strict alternating send/recv discipline means you must always receive a reply before sending the next request - for concurrent requests use `DEALER`/`ROUTER` sockets instead. Set `RCVTIMEO` on client sockets to avoid blocking forever when the server is unavailable.

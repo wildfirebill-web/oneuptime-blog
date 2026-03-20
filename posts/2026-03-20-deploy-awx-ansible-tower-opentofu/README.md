@@ -103,6 +103,7 @@ provider "kubernetes" {
 }
 
 # Create the external DB secret for AWX
+
 resource "kubernetes_secret" "awx_db" {
   metadata {
     name      = "awx-db-secret"

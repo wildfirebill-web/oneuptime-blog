@@ -24,6 +24,7 @@ The following command creates the necessary firewall rule:
 
 ```bash
 # Create a firewall rule to allow health check probes from Google's ranges
+
 gcloud compute firewall-rules create allow-health-check \
     --network=your-vpc-network \
     --action=allow \

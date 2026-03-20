@@ -67,6 +67,7 @@ Start by creating reusable component templates:
 
 ```bash
 # Settings component for hot data
+
 curl -X PUT "localhost:9200/_component_template/hot_settings" -H 'Content-Type: application/json' -d'
 {
   "template": {

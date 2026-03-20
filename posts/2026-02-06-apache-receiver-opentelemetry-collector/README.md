@@ -35,6 +35,7 @@ For Debian/Ubuntu:
 
 ```bash
 # Enable mod_status module
+
 sudo a2enmod status
 
 # Restart Apache

@@ -22,6 +22,7 @@ First, create an app registration in Azure AD. This represents your function app
 
 ```bash
 # Create an app registration for your function app
+
 az ad app create \
   --display-name "my-function-app-auth" \
   --sign-in-audience AzureADMyOrg \

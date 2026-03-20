@@ -63,6 +63,7 @@ Track version changes when the feature schema changes (data types, column additi
 
 ```python
 # feature_schema.py
+
 # Schema-based versioning tracks structural changes to features.
 # Each schema change increments the version number.
 

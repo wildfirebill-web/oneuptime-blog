@@ -54,6 +54,7 @@ Create a file called `locustfile.py`. Locust automatically finds this file in th
 
 ```python
 # locustfile.py
+
 # Basic Locust load test for a REST API
 from locust import HttpUser, task, between
 

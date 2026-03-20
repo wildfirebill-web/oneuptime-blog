@@ -31,6 +31,7 @@ The diags command needs root privileges to access iptables, routing tables, and 
 
 ```bash
 # Always run with sudo
+
 sudo calicoctl node diags
 
 # In Kubernetes, exec into the calico-node pod (which runs as privileged)

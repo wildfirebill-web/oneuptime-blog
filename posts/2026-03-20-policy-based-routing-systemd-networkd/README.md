@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Policy-Based Routing, systemd-networkd, Linux, ip rule, Routing Table, IPv4, Multi-homing
+Tags: Policy-Based Routing, systemd-networkd, Linux, Ip rule, Routing Table, IPv4, Multi-homing
 
 Description: Learn how to configure policy-based routing using systemd-networkd .network files with RoutingPolicyRule sections to route traffic based on source IP, destination, or interface.
 
@@ -12,7 +12,7 @@ Policy-based routing (PBR) uses routing rules to select different routing tables
 
 ## Basic Policy-Based Routing Scenario
 
-```
+```text
 eth0: 192.168.1.10/24 (Office LAN, ISP1)
 eth1: 10.0.0.10/24 (Secondary, ISP2)
 
@@ -25,6 +25,7 @@ Goal: Traffic from 192.168.1.10 uses ISP1; traffic from 10.0.0.10 uses ISP2
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 [Match]
 Name=eth0
 
@@ -44,7 +45,7 @@ Name=eth1
 
 [Network]
 Address=10.0.0.10/24
-# No Gateway here — we'll add it to a custom table
+# No Gateway here - we'll add it to a custom table
 
 [Route]
 Destination=0.0.0.0/0

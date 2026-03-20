@@ -19,10 +19,11 @@ graph TD
     E[google_project_iam_member] --> F[Adds ONE member<br/>Does not affect other members]
 ```
 
-## iam_member — Additive (Recommended)
+## iam_member - Additive (Recommended)
 
 ```hcl
-# Adds a single member to a role — does NOT remove existing members
+# Adds a single member to a role - does NOT remove existing members
+
 resource "google_project_iam_member" "ci_storage_viewer" {
   project = var.project_id
   role    = "roles/storage.objectViewer"
@@ -35,7 +36,7 @@ resource "google_project_iam_member" "dev_team_viewer" {
   member  = "group:dev-team@example.com"
 }
 
-# Conditional binding — only during business hours
+# Conditional binding - only during business hours
 resource "google_project_iam_member" "conditional_access" {
   project = var.project_id
   role    = "roles/editor"
@@ -49,7 +50,7 @@ resource "google_project_iam_member" "conditional_access" {
 }
 ```
 
-## iam_binding — Authoritative for One Role
+## iam_binding - Authoritative for One Role
 
 ```hcl
 # Owns ALL members for this specific role
@@ -65,7 +66,7 @@ resource "google_project_iam_binding" "storage_admins" {
 }
 ```
 
-## iam_policy — Authoritative for Entire Project
+## iam_policy - Authoritative for Entire Project
 
 ```hcl
 # DANGEROUS: Replaces ALL IAM bindings on the project
@@ -90,7 +91,7 @@ resource "google_project_iam_policy" "project" {
 }
 ```
 
-## Resource-Level Bindings
+Resource-Level Bindings
 
 ```hcl
 # GCS bucket
@@ -138,8 +139,8 @@ resource "google_project_iam_member" "app_roles" {
 
 ## Best Practices
 
-- Prefer `iam_member` for additive grants — it's the safest option and won't accidentally remove access granted outside OpenTofu.
+- Prefer `iam_member` for additive grants - it's the safest option and won't accidentally remove access granted outside OpenTofu.
 - Use `iam_binding` only when you need to own all members of a specific role.
-- Never use `iam_policy` on a project unless you want OpenTofu to manage 100% of the project's IAM — it removes any manually added bindings on the next apply.
+- Never use `iam_policy` on a project unless you want OpenTofu to manage 100% of the project's IAM - it removes any manually added bindings on the next apply.
 - Apply IAM at the narrowest scope (resource > folder > project > organization) to minimize blast radius.
-- Use conditional bindings for temporary access grants — they expire automatically without manual cleanup.
+- Use conditional bindings for temporary access grants - they expire automatically without manual cleanup.

@@ -76,7 +76,7 @@ resource "azurerm_container_registry" "private" {
   sku                 = "Premium"
   admin_enabled       = false
 
-  # Disable public access — require private endpoint
+  # Disable public access - require private endpoint
   public_network_access_enabled = false
 
   network_rule_set {
@@ -95,6 +95,7 @@ resource "azurerm_container_registry" "private" {
 }
 
 # Private endpoint for AKS access
+
 resource "azurerm_private_endpoint" "acr" {
   name                = "acr-private-endpoint"
   location            = azurerm_resource_group.registry.location
@@ -167,4 +168,4 @@ output "login_server" {
 
 ## Conclusion
 
-Azure Container Registry in OpenTofu provides secure, managed container storage. Use the Premium SKU for private endpoints, geo-replication, and content trust. Always disable the admin account and use RBAC — AcrPull for compute identities, AcrPush for CI/CD. Set a retention policy to automatically clean up untagged manifests and reduce storage costs.
+Azure Container Registry in OpenTofu provides secure, managed container storage. Use the Premium SKU for private endpoints, geo-replication, and content trust. Always disable the admin account and use RBAC - AcrPull for compute identities, AcrPush for CI/CD. Set a retention policy to automatically clean up untagged manifests and reduce storage costs.

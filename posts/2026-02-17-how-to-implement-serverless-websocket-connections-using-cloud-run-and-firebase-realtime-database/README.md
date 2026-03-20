@@ -247,6 +247,7 @@ server.listen(PORT, () => {
 
 ```dockerfile
 # Dockerfile for the WebSocket server
+
 FROM node:20-slim
 
 WORKDIR /app

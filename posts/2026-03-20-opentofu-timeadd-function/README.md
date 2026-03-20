@@ -16,8 +16,8 @@ The `timeadd` function in OpenTofu adds a duration to a timestamp, returning a n
 timeadd(timestamp, duration)
 ```
 
-- **timestamp** — an RFC 3339 timestamp string
-- **duration** — a duration string (e.g., `"24h"`, `"-30m"`, `"168h"`)
+- **timestamp** - an RFC 3339 timestamp string
+- **duration** - a duration string (e.g., `"24h"`, `"-30m"`, `"168h"`)
 - Returns a new RFC 3339 timestamp
 
 ## Duration Formats

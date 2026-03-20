@@ -16,6 +16,7 @@ The most basic timeout controls how long Ansible waits to establish a connection
 
 ```ini
 # ansible.cfg - Connection timeout settings
+
 [defaults]
 # How long to wait for SSH connections (seconds)
 timeout = 30

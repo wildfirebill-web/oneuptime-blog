@@ -33,6 +33,7 @@ First, you need to configure SCC to publish findings to Pub/Sub. This Terraform 
 
 ```hcl
 # scc-notifications.tf
+
 # Creates Pub/Sub topic and SCC notification config for findings
 
 resource "google_pubsub_topic" "scc_findings" {

@@ -34,6 +34,7 @@ The ArgoCD CLI does not have an explicit "force delete" flag, but you can combin
 
 ```bash
 # Try normal delete with cascade first
+
 argocd app delete my-app -y
 
 # If that hangs, try non-cascade to at least remove the Application

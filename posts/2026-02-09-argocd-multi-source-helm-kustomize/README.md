@@ -293,6 +293,7 @@ Use sync waves to control order:
 
 ```yaml
 # In custom-resources manifests
+
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"

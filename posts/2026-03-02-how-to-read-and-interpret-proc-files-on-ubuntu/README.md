@@ -16,6 +16,7 @@ The `/proc` directory contains two types of entries: files with system-wide info
 
 ```bash
 # Quick overview
+
 ls /proc
 
 # You'll see entries like:

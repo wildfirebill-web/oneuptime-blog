@@ -71,6 +71,7 @@ The following configuration shows how to set the outbound traffic policy in Isti
 
 ```yaml
 # Istio MeshConfig - Configure how Istio handles outbound traffic
+
 # REGISTRY_ONLY: Only allow traffic to services registered in the mesh
 # ALLOW_ANY: Allow traffic to any external service (less secure)
 apiVersion: install.istio.io/v1alpha1

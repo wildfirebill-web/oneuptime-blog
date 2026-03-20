@@ -32,6 +32,7 @@ Set up a clean environment for accurate benchmarking results.
 
 ```bash
 # Record baseline state
+
 cilium status
 echo "Baseline identities: $(cilium identity list | wc -l)"
 echo "Baseline endpoints: $(cilium endpoint list | wc -l)"

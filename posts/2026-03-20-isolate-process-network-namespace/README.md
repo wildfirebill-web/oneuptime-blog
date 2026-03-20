@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, Process Isolation, Security, Networking, unshare, nsenter
+Tags: Linux, Network Namespaces, Process Isolation, Security, Networking, unshare, Nsenter
 
 Description: Run a process in its own network namespace to isolate its network access, using unshare for new processes or ip netns exec for existing namespaces.
 
@@ -20,6 +20,7 @@ Running a process inside a network namespace restricts it to only the network in
 
 ```bash
 # Create and configure the namespace
+
 ip netns add isolated-ns
 ip netns exec isolated-ns ip link set lo up
 
@@ -72,9 +73,9 @@ ip netns add no-net
 
 # Run a process with no network access
 ip netns exec no-net bash -c "
-    # Only loopback is available — no external network
+    # Only loopback is available - no external network
     ip link show
-    # Try to connect to internet — will fail
+    # Try to connect to internet - will fail
     curl --connect-timeout 2 http://1.1.1.1 || echo 'Network blocked as expected'
 "
 ```

@@ -302,6 +302,7 @@ class RequestCoalescer:
 
 
 # Usage example
+
 coalescer = RequestCoalescer(ttl=300)
 
 async def get_user(user_id: int) -> dict:

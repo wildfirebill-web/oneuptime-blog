@@ -14,6 +14,7 @@ The `base64decode` function in Terraform converts a base64-encoded string back t
 
 ```hcl
 # base64decode(string)
+
 base64decode("SGVsbG8sIFdvcmxkIQ==")
 # Result: "Hello, World!"
 

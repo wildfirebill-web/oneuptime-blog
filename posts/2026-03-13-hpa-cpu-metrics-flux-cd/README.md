@@ -23,6 +23,7 @@ The Horizontal Pod Autoscaler (HPA) automatically scales the number of pod repli
 ```bash
 kubectl get deployment metrics-server -n kube-system
 # If not running, install via Flux:
+
 ```
 
 ```yaml

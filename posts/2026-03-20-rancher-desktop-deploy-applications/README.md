@@ -30,6 +30,7 @@ Rancher Desktop simplifies local Kubernetes and container development by providi
 
 ```bash
 # Verify Rancher Desktop is installed and running
+
 rdctl version
 
 # Check Kubernetes cluster status

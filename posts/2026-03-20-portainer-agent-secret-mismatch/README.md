@@ -1,4 +1,4 @@
-# How to Fix Agent Secret Mismatch Between Server and Agent
+# How to Fix Agent Secret Mismatch Between Server and Agent - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -15,12 +15,13 @@ When using `AGENT_SECRET` for secure agent-to-server communication, both sides m
 The `AGENT_SECRET` is a pre-shared key used to authenticate connections between the Portainer server and the Agent. When set:
 - The Agent only accepts connections from a Portainer server that sends the matching secret
 - The Portainer server sends the secret when connecting to the environment
-- Both must be identical — case-sensitive
+- Both must be identical - case-sensitive
 
 ## Step 1: Check the Agent's Secret
 
 ```bash
 # Check what secret the agent is configured with
+
 docker inspect portainer-agent | grep -i "AGENT_SECRET"
 
 # Example output showing the secret is set:
@@ -39,7 +40,7 @@ docker exec portainer-agent env | grep AGENT_SECRET
 
 If the field is empty but the agent has a secret set, that's the mismatch.
 
-## Step 3: Fix — Update the Environment in Portainer
+## Step 3: Fix - Update the Environment in Portainer
 
 1. In **Environments** → Edit the failing environment
 2. Find the **Agent secret** field
@@ -47,7 +48,7 @@ If the field is empty but the agent has a secret set, that's the mismatch.
 4. Click **Save**
 5. Portainer will retry the connection immediately
 
-## Step 4: Fix — Update the Agent Secret
+## Step 4: Fix - Update the Agent Secret
 
 If you want to change the secret to match what Portainer expects:
 
@@ -147,7 +148,7 @@ docker logs -f portainer-agent | grep -i "auth\|secret\|signature\|invalid"
 
 ```bash
 # WRONG: Secret with trailing newline (common when using echo)
-echo "mysecret" > /tmp/secret  # Adds newline — don't do this
+echo "mysecret" > /tmp/secret  # Adds newline - don't do this
 AGENT_SECRET=$(cat /tmp/secret)  # Will include the newline
 
 # CORRECT: Use printf or specify exact value

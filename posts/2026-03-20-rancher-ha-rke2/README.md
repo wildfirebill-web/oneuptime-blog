@@ -1,4 +1,4 @@
-# How to Set Up Rancher HA on RKE2
+# How to Set Up Rancher HA on RKE2 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Running Rancher in High Availability (HA) mode on RKE2 ensures your management p
 
 ```nginx
 # nginx-lb.conf - Load balancer for RKE2 HA
+
 stream {
     upstream rke2_servers_api {
         least_conn;

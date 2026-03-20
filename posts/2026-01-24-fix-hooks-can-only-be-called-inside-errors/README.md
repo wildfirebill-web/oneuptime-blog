@@ -281,6 +281,7 @@ If you have multiple versions of React in your project, hooks will fail:
 
 ```bash
 # Check for duplicate React versions
+
 npm ls react
 
 # If you see multiple versions, dedupe

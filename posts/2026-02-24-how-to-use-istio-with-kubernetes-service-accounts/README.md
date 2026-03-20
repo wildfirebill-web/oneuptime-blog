@@ -264,6 +264,7 @@ Use Helm or Kustomize to ensure every service gets its own Service Account:
 
 ```yaml
 # Helm template
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

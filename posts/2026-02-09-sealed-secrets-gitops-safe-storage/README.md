@@ -32,6 +32,7 @@ Install the Sealed Secrets controller:
 
 ```bash
 # Install using kubectl
+
 kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.24.0/controller.yaml
 
 # Or using Helm

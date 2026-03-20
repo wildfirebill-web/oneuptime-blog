@@ -34,6 +34,7 @@ Document your namespaces, queues, topics, and subscriptions.
 
 ```bash
 # List all Service Bus namespaces
+
 az servicebus namespace list \
   --resource-group my-rg \
   --query '[*].{Name:name,Tier:sku.tier,Location:location}' \

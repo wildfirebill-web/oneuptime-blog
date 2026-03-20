@@ -8,11 +8,11 @@ Description: Bind server applications to the IPv6 wildcard address (::) to liste
 
 ## Introduction
 
-The IPv6 wildcard address `::` is the equivalent of IPv4's `0.0.0.0` — it instructs the kernel to accept connections on all available network interfaces. Binding to `::` is the standard way to make an IPv6 server accessible from any interface, and with `IPV6_V6ONLY=0`, also from IPv4 clients through IPv4-mapped addresses.
+The IPv6 wildcard address `::` is the equivalent of IPv4's `0.0.0.0` - it instructs the kernel to accept connections on all available network interfaces. Binding to `::` is the standard way to make an IPv6 server accessible from any interface, and with `IPV6_V6ONLY=0`, also from IPv4 clients through IPv4-mapped addresses.
 
 ## The IPv6 Wildcard Address
 
-```
+```text
 ::            = All zeros = 0:0:0:0:0:0:0:0
               = IPv6 equivalent of 0.0.0.0
 
@@ -159,6 +159,7 @@ func main() {
 
 ```bash
 # After starting your server, verify it's bound to :: (IPv6 wildcard)
+
 ss -tlnp | grep <port>
 
 # Expected output for dual-stack on Linux:

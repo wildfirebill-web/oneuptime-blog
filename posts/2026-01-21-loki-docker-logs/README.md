@@ -543,6 +543,7 @@ volumes:
 
 ```bash
 # View driver logs
+
 docker plugin inspect loki --format '{{.Settings.Mounts}}'
 
 # Check plugin is enabled

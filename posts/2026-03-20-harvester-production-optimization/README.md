@@ -1,4 +1,4 @@
-# How to Optimize Harvester for Production
+# How to Optimize Harvester for Production - Optimization
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -30,6 +30,7 @@ Apply these settings on each Harvester node:
 
 ```bash
 # Increase inotify limits for high VM density
+
 cat >> /etc/sysctl.d/99-harvester.conf <<EOF
 # Increase network buffers
 net.core.rmem_max = 134217728
@@ -140,6 +141,6 @@ kubectl patch kubevirt kubevirt -n harvester-system --type merge -p '{
 
 ## Best Practices
 
-- Never run a 2-node Harvester cluster in production — etcd requires an odd quorum.
+- Never run a 2-node Harvester cluster in production - etcd requires an odd quorum.
 - Monitor VM density per node and alert when it exceeds planned capacity.
 - Schedule regular maintenance windows for OS updates using Harvester's built-in drain workflow.

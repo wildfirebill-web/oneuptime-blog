@@ -59,6 +59,7 @@ Check that eBPF programs are loaded on the nodes:
 
 ```bash
 # SSH into a node or use a debug pod
+
 kubectl debug node/my-node -it --image=ubuntu
 # Inside the debug container:
 # bpftool prog list | grep istio

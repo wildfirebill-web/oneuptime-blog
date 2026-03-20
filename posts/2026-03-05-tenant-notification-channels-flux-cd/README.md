@@ -20,6 +20,7 @@ Define a notification provider in the tenant's namespace. This example uses Slac
 
 ```yaml
 # tenants/team-alpha/notification-provider.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

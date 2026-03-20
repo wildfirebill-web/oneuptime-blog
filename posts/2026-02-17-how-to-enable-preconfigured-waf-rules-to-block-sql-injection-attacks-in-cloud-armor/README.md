@@ -42,6 +42,7 @@ Start with a lower sensitivity level and increase it gradually after monitoring 
 
 ```bash
 # Create a security policy for WAF rules
+
 gcloud compute security-policies create waf-policy \
     --description="WAF security policy with SQL injection protection" \
     --project=my-project

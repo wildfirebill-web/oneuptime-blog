@@ -32,6 +32,7 @@ rule [family="ipv4|ipv6"]
 
 ```bash
 # Allow SSH only from the 10.0.1.0/24 network
+
 firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="10.0.1.0/24" service name="ssh" accept' --permanent
 firewall-cmd --reload
 ```

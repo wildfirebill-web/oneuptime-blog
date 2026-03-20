@@ -475,7 +475,7 @@ void InitializeOpenTelemetry() {
 
 Every span created by this SDK instance will automatically include the resource attributes.
 
-## Resource Hierarchy Visualization
+Resource Hierarchy Visualization
 
 Understanding how resources flow through your telemetry pipeline helps with debugging.
 

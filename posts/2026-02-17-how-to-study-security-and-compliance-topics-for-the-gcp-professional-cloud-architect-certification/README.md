@@ -28,6 +28,7 @@ When the exam asks about compliance requirements around key management, the answ
 
 ```bash
 # Create a key ring and key in Cloud KMS
+
 gcloud kms keyrings create my-keyring \
   --location=us-central1
 

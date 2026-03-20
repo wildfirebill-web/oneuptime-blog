@@ -100,6 +100,7 @@ First, stop the monitor daemon on the node you're backing up from to ensure cons
 
 ```bash
 # Stop the monitor service on the current node
+
 # Replace 'mon1' with your actual monitor hostname
 sudo systemctl stop ceph-mon@mon1
 ```

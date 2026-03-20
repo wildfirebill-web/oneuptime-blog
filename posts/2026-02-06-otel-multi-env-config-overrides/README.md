@@ -24,6 +24,7 @@ Your development configuration optimizes for debugging:
 
 ```yaml
 # config/otel-dev.yaml
+
 file_format: "0.3"
 
 resource:

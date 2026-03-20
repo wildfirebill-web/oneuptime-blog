@@ -8,7 +8,7 @@ Description: Use the Portainer Terraform provider to manage Podman-backed Portai
 
 ## Introduction
 
-The Portainer Terraform provider (`portainer/portainer`) allows you to manage Portainer resources — environments, stacks, users, teams, and settings — using Terraform HCL. When Portainer is connected to a Podman backend via the Docker-compatible socket, the same provider works seamlessly. This guide shows how to configure and use the Terraform provider against a Podman-backed Portainer instance.
+The Portainer Terraform provider (`portainer/portainer`) allows you to manage Portainer resources - environments, stacks, users, teams, and settings - using Terraform HCL. When Portainer is connected to a Podman backend via the Docker-compatible socket, the same provider works seamlessly. This guide shows how to configure and use the Terraform provider against a Podman-backed Portainer instance.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ The Portainer Terraform provider (`portainer/portainer`) allows you to manage Po
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.0"
 
@@ -34,7 +35,7 @@ terraform {
 ```
 
 ```bash
-# Initialize Terraform — downloads the provider
+# Initialize Terraform - downloads the provider
 terraform init
 ```
 
@@ -46,7 +47,7 @@ provider "portainer" {
   # Portainer server URL
   endpoint = "https://portainer.yourdomain.com:9443"
 
-  # Authentication — use API key (recommended for automation)
+  # Authentication - use API key (recommended for automation)
   api_key = var.portainer_api_key
 
   # Or use username/password

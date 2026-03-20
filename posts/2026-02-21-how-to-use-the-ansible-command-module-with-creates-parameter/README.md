@@ -22,6 +22,7 @@ Here is the simplest example. If the binary already exists, do not compile again
 
 ```yaml
 # basic_creates.yml - Skip command if output file exists
+
 ---
 - name: Compile application only if binary is missing
   hosts: all

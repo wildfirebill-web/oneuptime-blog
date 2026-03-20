@@ -1,8 +1,8 @@
-# How to Set Up Rancher for Government and FedRAMP
+# How to Set Up Rancher for Government and FedRAMP - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, government, fedramp, fips, kubernetes, compliance
+Tags: Rancher, Government, FedRAMP, FIPS, Kubernetes, Compliance
 
 Description: A comprehensive guide to configuring Rancher for US government FedRAMP compliance, covering FIPS 140-2, STIG hardening, and FedRAMP High authorization requirements.
 
@@ -24,6 +24,7 @@ FIPS must be enabled at the OS level before installing RKE2:
 
 ```bash
 # Enable FIPS on RHEL/Rocky Linux
+
 fips-mode-setup --enable
 reboot
 
@@ -176,7 +177,7 @@ spec:
 
 FedRAMP requires PIV/CAC card authentication:
 
-```
+```text
 Rancher UI → Global Settings → Auth Configuration → SAML
 - Configure SAML with DoD ADFS
 - Enforce PIV/CAC card authentication via ADFS
@@ -227,4 +228,4 @@ Configure NeuVector to automatically respond to security events:
 
 ## Conclusion
 
-Achieving FedRAMP compliance with Rancher requires FIPS 140-2 enabled RKE2, STIG hardening, comprehensive audit logging, PIV/CAC authentication, and continuous monitoring. The SUSE Rancher stack — including RKE2, NeuVector, and Longhorn — provides most of the required controls out of the box. Plan to engage a FedRAMP 3PAO (Third Party Assessment Organization) for your official authorization and review. Maintain your Plan of Action and Milestones (POA&M) and conduct monthly continuous monitoring to preserve your authorization.
+Achieving FedRAMP compliance with Rancher requires FIPS 140-2 enabled RKE2, STIG hardening, comprehensive audit logging, PIV/CAC authentication, and continuous monitoring. The SUSE Rancher stack - including RKE2, NeuVector, and Longhorn - provides most of the required controls out of the box. Plan to engage a FedRAMP 3PAO (Third Party Assessment Organization) for your official authorization and review. Maintain your Plan of Action and Milestones (POA&M) and conduct monthly continuous monitoring to preserve your authorization.

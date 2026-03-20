@@ -39,6 +39,7 @@ Here's a minimal Interval Processor configuration that aggregates metrics every 
 
 ```yaml
 # Configure receivers to accept metrics
+
 receivers:
   otlp:
     protocols:
@@ -203,7 +204,7 @@ processors:
       sum: cumulative
 ```
 
-### Resource-Aware Aggregation
+Resource-Aware Aggregation
 
 Aggregate metrics while preserving important resource attributes:
 

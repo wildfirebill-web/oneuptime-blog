@@ -74,6 +74,7 @@ The Tailscale Kubernetes Operator automates Tailscale integration:
 
 ```yaml
 # tailscale-operator-values.yaml
+
 # Helm values for Tailscale Operator
 
 # OAuth credentials for operator authentication

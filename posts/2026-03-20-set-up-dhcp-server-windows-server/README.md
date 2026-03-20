@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Windows Server, Networking, Server Configuration, sysadmin
+Tags: DHCP, Windows Server, Networking, Server Configuration, Sysadmin
 
 Description: Windows Server's DHCP role provides centralized IP address management with a graphical console and PowerShell cmdlets for scope creation, reservation management, and failover configuration.
 
@@ -10,6 +10,7 @@ Description: Windows Server's DHCP role provides centralized IP address manageme
 
 ```powershell
 # Install DHCP Server role
+
 Install-WindowsFeature -Name DHCP -IncludeManagementTools
 
 # Authorize the DHCP server in Active Directory (required for AD environments)

@@ -47,6 +47,7 @@ Before configuring Calico for IPv6, ensure your environment meets these requirem
 
 ```bash
 # Check kernel IPv6 support
+
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 # Output should be 0 (IPv6 enabled)
 

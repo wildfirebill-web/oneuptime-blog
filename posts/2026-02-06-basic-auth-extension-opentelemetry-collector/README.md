@@ -56,6 +56,7 @@ Here's a minimal configuration using Basic Authentication to secure an HTTP expo
 
 ```yaml
 # Define the basic auth extension
+
 extensions:
   # basicauth extension with inline credentials
   basicauth:

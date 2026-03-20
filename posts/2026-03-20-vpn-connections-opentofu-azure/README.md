@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group and VNet
+Resource Group and VNet
 
 ```hcl
 resource "azurerm_resource_group" "vpn" {
@@ -113,4 +113,4 @@ Note: Azure VPN Gateway deployment takes 30-45 minutes.
 
 ## Conclusion
 
-OpenTofu manages the full Azure VPN Gateway stack — from the gateway subnet and public IP to the Local Network Gateway and connection resource. Managing this as code ensures consistent VPN deployments and makes it easy to replicate across regions or environments.
+OpenTofu manages the full Azure VPN Gateway stack - from the gateway subnet and public IP to the Local Network Gateway and connection resource. Managing this as code ensures consistent VPN deployments and makes it easy to replicate across regions or environments.

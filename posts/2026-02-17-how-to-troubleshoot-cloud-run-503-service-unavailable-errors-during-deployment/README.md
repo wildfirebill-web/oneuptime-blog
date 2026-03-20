@@ -30,6 +30,7 @@ Start by looking at the revision that is failing:
 
 ```bash
 # List recent revisions and their status
+
 gcloud run revisions list --service=my-service \
   --region=us-central1 \
   --format="table(name, status.conditions[0].type, status.conditions[0].status, status.conditions[0].message)" \

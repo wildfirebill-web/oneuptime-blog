@@ -25,6 +25,7 @@ Here are the symptoms that tell you your state has outgrown its current structur
 
 ```bash
 # Check your state file size
+
 terraform state pull | wc -c
 # 15234567  <- 15 MB is a sign you need to take action
 

@@ -14,17 +14,18 @@ TACOS (Terraform Automation and Collaboration Software) like Spacelift, Atlantis
 
 ## What Continuous Validation Provides
 
-- **Drift detection** — periodic `tofu plan` runs reveal when infrastructure diverges from code
-- **Policy enforcement** — OPA/Sentinel policies run against every plan
-- **Collaboration** — PR-based plan approval workflows
-- **Audit trail** — all applies logged with user, time, and change summary
+- **Drift detection** - periodic `tofu plan` runs reveal when infrastructure diverges from code
+- **Policy enforcement** - OPA/Sentinel policies run against every plan
+- **Collaboration** - PR-based plan approval workflows
+- **Audit trail** - all applies logged with user, time, and change summary
 
 ---
 
 ## Atlantis: Self-Hosted TACOS
 
 ```yaml
-# atlantis.yaml — in your repository root
+# atlantis.yaml - in your repository root
+
 version: 3
 projects:
   - name: networking

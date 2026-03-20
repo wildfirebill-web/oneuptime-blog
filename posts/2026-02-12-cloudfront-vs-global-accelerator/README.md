@@ -69,6 +69,7 @@ Example setup for a web application:
 
 ```bash
 # CloudFront is ideal for this kind of setup
+
 aws cloudfront create-distribution \
   --distribution-config '{
     "Origins": {

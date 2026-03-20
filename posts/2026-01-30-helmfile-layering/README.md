@@ -41,6 +41,7 @@ Here is a minimal helmfile.yaml that defines releases and their values.
 
 ```yaml
 # helmfile.yaml
+
 repositories:
   - name: bitnami
     url: https://charts.bitnami.com/bitnami

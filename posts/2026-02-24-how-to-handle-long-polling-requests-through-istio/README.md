@@ -328,6 +328,7 @@ Verify the configuration works:
 
 ```bash
 # Test a long-poll request (should hold for server's timeout, e.g., 60 seconds)
+
 time curl -v http://polling-service:8080/poll
 
 # Test through the gateway

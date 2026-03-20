@@ -23,6 +23,7 @@ Also useful:
 
 ```bash
 # Install linux-tools for additional CPU freq tools
+
 sudo apt install linux-tools-$(uname -r) -y
 ```
 

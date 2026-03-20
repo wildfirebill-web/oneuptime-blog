@@ -131,6 +131,7 @@ Run and view results:
 kubectl apply -f fio-random-read.yaml
 
 # Wait for job completion
+
 kubectl wait --for=condition=complete job/fio-random-read-iops --timeout=300s
 
 # View results

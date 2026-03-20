@@ -82,6 +82,7 @@ Both tools are available from the default package repositories on Red Hat-based 
 
 ```bash
 # Install buildah and podman from dnf repositories
+
 sudo dnf install -y buildah podman
 
 # Verify the installed versions

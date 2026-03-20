@@ -16,6 +16,7 @@ Your application knows things that network tools do not: which user accounts are
 
 ```python
 # auth_security.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 from collections import defaultdict

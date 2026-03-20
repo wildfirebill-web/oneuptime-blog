@@ -32,6 +32,7 @@ Install the Azure CLI and Terraform:
 
 ```bash
 # Install Azure CLI
+
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm
 sudo dnf install -y azure-cli
@@ -89,7 +90,7 @@ variable "ssh_public_key_path" {
 }
 ```
 
-## Resource Group and Network
+Resource Group and Network
 
 ```hcl
 # network.tf - Resource group, VNet, and subnet

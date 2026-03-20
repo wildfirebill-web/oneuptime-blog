@@ -44,6 +44,7 @@ If you are running on a GCE instance or GKE cluster, the easiest method is to de
 
 ```bash
 # Download the contrib distribution which includes the googlecloud exporter
+
 curl -LO https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.96.0/otelcol-contrib_0.96.0_linux_amd64.tar.gz
 
 # Extract the binary
@@ -198,7 +199,7 @@ OpenTelemetry metric types map to Google Cloud Monitoring types as follows:
 
 Understanding this mapping matters because Cloud Monitoring treats cumulative and gauge metrics differently in queries and dashboards. Counters become cumulative time series, which means Cloud Monitoring tracks their rate of change automatically.
 
-## Resource Detection
+Resource Detection
 
 When running on GCP infrastructure, the `resourcedetection` processor in the Collector can automatically populate resource attributes like `cloud.provider`, `cloud.region`, `host.id`, and `cloud.availability_zone`. This metadata shows up in Cloud Monitoring as monitored resource labels, making it much easier to filter and group metrics by instance, zone, or service.
 

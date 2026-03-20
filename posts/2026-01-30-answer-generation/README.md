@@ -1329,6 +1329,7 @@ class QueryResponse(BaseModel):
     latency_ms: float
 
 # Initialize service
+
 generation_service = AnswerGenerationService(
     llm_client=get_llm_client(),
     retriever=get_retriever(),

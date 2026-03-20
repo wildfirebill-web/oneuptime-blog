@@ -16,6 +16,7 @@ Traditional approach (avoid this):
 
 ```yaml
 # DON'T DO THIS - stores long-lived credentials
+
 - uses: aws-actions/configure-aws-credentials@v4
   with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}

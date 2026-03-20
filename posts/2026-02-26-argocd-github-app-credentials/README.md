@@ -46,6 +46,7 @@ On the GitHub App settings page, scroll down to the "Private keys" section and c
 
 ```bash
 # The downloaded file will look something like this
+
 ls ~/Downloads/argocd-gitops-production.2026-02-26.private-key.pem
 ```
 

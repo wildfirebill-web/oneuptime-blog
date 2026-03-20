@@ -33,6 +33,7 @@ Start by understanding what is still in the cluster:
 
 ```bash
 # Define the namespace your application used
+
 NAMESPACE="my-app"
 APP_NAME="my-app"
 

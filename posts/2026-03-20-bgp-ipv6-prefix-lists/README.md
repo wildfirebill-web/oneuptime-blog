@@ -12,10 +12,11 @@ IPv6 prefix lists are ordered permit/deny rules that match prefixes based on the
 
 ## Prefix List Syntax
 
-```
+```text
 ipv6 prefix-list <name> seq <number> [permit|deny] <prefix>/<length> [ge <min-len>] [le <max-len>]
 
 # ge = greater than or equal (minimum prefix length)
+
 # le = less than or equal (maximum prefix length)
 ```
 
@@ -66,8 +67,8 @@ write memory
 
 ## Cisco IPv6 Prefix Lists
 
-```
-! Cisco IOS — Same syntax, same logic
+```text
+! Cisco IOS - Same syntax, same logic
 Router(config)# ipv6 prefix-list PEER_ROUTES seq 10 permit 2001:db8:peer::/48 le 64
 Router(config)# ipv6 prefix-list PEER_ROUTES seq 99 deny ::/0 le 128
 

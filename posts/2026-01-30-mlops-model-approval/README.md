@@ -55,6 +55,7 @@ The model registry serves as the central hub for managing model versions and the
 
 ```bash
 # Install MLflow and related packages
+
 pip install mlflow boto3 sqlalchemy psycopg2-binary
 
 # Set up the tracking server (using PostgreSQL for production)

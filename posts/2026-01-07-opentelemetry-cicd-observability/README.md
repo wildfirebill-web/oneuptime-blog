@@ -68,6 +68,7 @@ The following Docker Compose configuration sets up an OTel Collector with Jaeger
 
 ```yaml
 # docker-compose.yml
+
 # OpenTelemetry Collector setup for CI/CD observability
 version: '3.8'
 

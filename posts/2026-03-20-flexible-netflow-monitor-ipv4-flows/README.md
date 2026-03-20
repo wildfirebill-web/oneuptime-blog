@@ -25,7 +25,7 @@ graph TD
 
 Define which IPv4 fields to match (keys) and collect (non-keys).
 
-```
+```text
 ! Cisco IOS/IOS-XE
 ip flow record IPV4-FLOW-RECORD
 
@@ -50,7 +50,7 @@ ip flow record IPV4-FLOW-RECORD
 
 Configure where to send flow records.
 
-```
+```text
 ip flow exporter NETFLOW-COLLECTOR
   destination 10.0.0.50         ! Collector's IPv4 address
   source GigabitEthernet0/0    ! Source interface for flow packets
@@ -63,7 +63,7 @@ ip flow exporter NETFLOW-COLLECTOR
 
 Tie the record and exporter together.
 
-```
+```bash
 ip flow monitor IPV4-MONITOR
   record IPV4-FLOW-RECORD
   exporter NETFLOW-COLLECTOR
@@ -73,7 +73,7 @@ ip flow monitor IPV4-MONITOR
 
 ## Step 4: Apply the Monitor to an Interface
 
-```
+```text
 interface GigabitEthernet0/1
   ip flow monitor IPV4-MONITOR input   ! Monitor inbound traffic
   ip flow monitor IPV4-MONITOR output  ! Monitor outbound traffic
@@ -83,7 +83,7 @@ interface GigabitEthernet0/1
 
 For high-traffic interfaces, use sampling to reduce CPU overhead:
 
-```
+```text
 ! Define a 1-in-1000 sampler
 sampler NETFLOW-SAMPLER
   mode random 1 out-of 1000
@@ -94,7 +94,7 @@ interface GigabitEthernet0/1
 
 ## Verifying Flexible NetFlow
 
-```
+```text
 ! Show active flow caches
 show flow monitor IPV4-MONITOR cache
 
@@ -112,6 +112,7 @@ show flow interface GigabitEthernet0/1
 
 ```bash
 # Install nfdump/nfcapd collector
+
 apt install nfdump -y
 
 # Start capturing NetFlow on UDP 9999 (from the Cisco device's IPv4)

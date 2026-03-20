@@ -126,6 +126,7 @@ OpenTelemetry reads resource attributes from environment variables, but they mig
 
 ```bash
 # Check if OTEL environment variables are set
+
 echo $OTEL_SERVICE_NAME
 echo $OTEL_RESOURCE_ATTRIBUTES
 
@@ -503,7 +504,7 @@ const baseResource = new Resource({
 const finalResource = baseResource.merge(k8sResource);
 ```
 
-## Resource Attribute Flow
+Resource Attribute Flow
 
 ```mermaid
 sequenceDiagram

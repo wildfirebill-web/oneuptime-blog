@@ -39,6 +39,7 @@ Open your `pubspec.yaml` and add the provider package:
 
 ```yaml
 # pubspec.yaml
+
 # Provider is the officially recommended state management solution
 # Version 6.x includes null safety and improved performance
 dependencies:

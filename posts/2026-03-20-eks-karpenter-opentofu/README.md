@@ -20,6 +20,7 @@ Karpenter is an open-source Kubernetes node autoprovisioner that launches nodes 
 
 ```hcl
 # Karpenter controller role using Pod Identity or IRSA
+
 resource "aws_iam_role" "karpenter_controller" {
   name = "KarpenterControllerRole-${var.cluster_name}"
 

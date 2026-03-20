@@ -34,6 +34,7 @@ Here's how to check stability in different languages:
 
 ```python
 # Python: Check the documentation or release notes
+
 # Most stable components are in main packages
 from opentelemetry import trace  # Stable API
 from opentelemetry.sdk.trace import TracerProvider  # Stable SDK

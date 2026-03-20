@@ -25,6 +25,7 @@ Certbot is the most common way to get and rotate Let's Encrypt certificates on U
 
 ```bash
 # Install certbot
+
 sudo apt-get install -y certbot
 
 # Get a certificate for a domain

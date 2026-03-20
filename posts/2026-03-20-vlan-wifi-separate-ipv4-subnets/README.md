@@ -33,6 +33,7 @@ graph TB
 
 ```bash
 # Create VLAN sub-interfaces on the router's LAN interface (eth0)
+
 # VLAN 10 - Corporate
 ip link add link eth0 name eth0.10 type vlan id 10
 ip addr add 192.168.10.1/24 dev eth0.10
@@ -82,7 +83,7 @@ subnet 192.168.30.0 netmask 255.255.255.0 {
 ## Step 4: Configure the Managed Switch
 
 **Cisco IOS switch configuration:**
-```
+```text
 ! Create VLANs
 vlan 10
  name CORPORATE

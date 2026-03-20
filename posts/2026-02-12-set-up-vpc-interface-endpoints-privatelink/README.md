@@ -34,6 +34,7 @@ Let's create an endpoint for SQS:
 
 ```bash
 # Create an interface endpoint for SQS
+
 SQS_ENDPOINT=$(aws ec2 create-vpc-endpoint \
   --vpc-id $VPC_ID \
   --vpc-endpoint-type Interface \

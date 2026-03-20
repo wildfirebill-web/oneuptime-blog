@@ -32,6 +32,7 @@ from vertexai.generative_models import (
 )
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Define safety settings - customize per category

@@ -16,6 +16,7 @@ The NeuVector Enforcer is a DaemonSet that runs on every node and enforces secur
 
 ```bash
 # Check all enforcer pods across the cluster
+
 kubectl get pods -n neuvector -l app=neuvector-enforcer-pod -o wide
 
 # Confirm each node has one enforcer pod
@@ -74,7 +75,7 @@ kubectl exec -n neuvector \
   $(kubectl get pod -n neuvector -l app=neuvector-enforcer-pod -o jsonpath='{.items[0].metadata.name}') \
   -- wget -qO- http://neuvector-svc-controller.neuvector.svc.cluster.local:10443 || true
 
-# Check NetworkPolicy — the enforcer needs TCP access to the controller
+# Check NetworkPolicy - the enforcer needs TCP access to the controller
 kubectl get networkpolicy -n neuvector
 ```
 
@@ -141,5 +142,5 @@ curl -sk -X PATCH \
 ## Best Practices
 
 - Use `tolerations: [{operator: "Exists"}]` on the Enforcer DaemonSet to ensure it runs on all nodes including tainted ones.
-- Ensure kernel 4.1+ on all nodes — older kernels have limited eBPF support.
-- Monitor Enforcer pod memory — on busy nodes with many containers, the Enforcer may need 512MB+.
+- Ensure kernel 4.1+ on all nodes - older kernels have limited eBPF support.
+- Monitor Enforcer pod memory - on busy nodes with many containers, the Enforcer may need 512MB+.

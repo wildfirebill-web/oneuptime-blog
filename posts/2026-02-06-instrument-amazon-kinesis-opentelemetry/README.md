@@ -39,6 +39,7 @@ Set up your tracer provider with resource attributes that identify your Kinesis 
 
 ```python
 # OpenTelemetry setup for Kinesis producer/consumer services
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

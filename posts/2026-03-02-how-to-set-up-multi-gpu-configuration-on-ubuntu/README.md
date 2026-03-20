@@ -28,6 +28,7 @@ For large-scale distributed training across many GPU nodes. Used in NVIDIA DGX s
 
 ```bash
 # List all GPUs
+
 nvidia-smi -L
 
 # Detailed view of all GPUs

@@ -1,4 +1,4 @@
-# How to Set Up Continuous Delivery with Rancher Fleet
+# How to Set Up Continuous Delivery with Rancher Fleet - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Build a production-ready continuous delivery pipeline using Rancher
 
 ## Introduction
 
-Rancher Fleet is built for large-scale GitOps — it can manage thousands of clusters from a single Rancher instance. This guide goes beyond basic GitRepo setup and covers building a complete, production-grade continuous delivery pipeline: multi-environment promotion, secret management, drift detection, and observability.
+Rancher Fleet is built for large-scale GitOps - it can manage thousands of clusters from a single Rancher instance. This guide goes beyond basic GitRepo setup and covers building a complete, production-grade continuous delivery pipeline: multi-environment promotion, secret management, drift detection, and observability.
 
 ## CD Pipeline Architecture
 
@@ -23,7 +23,7 @@ graph LR
 
 ## Step 1: Structure Your Repository for Multi-Environment CD
 
-```
+```text
 my-app-gitops/
 ├── base/
 │   ├── deployment.yaml
@@ -49,6 +49,7 @@ my-app-gitops/
 
 ```yaml
 # overlays/dev/fleet.yaml
+
 defaultNamespace: dev
 kustomize:
   dir: .
@@ -134,7 +135,7 @@ spec:
     - clusterSelector:
         matchLabels:
           environment: production
-  # Pause auto-sync — require manual promotion to production
+  # Pause auto-sync - require manual promotion to production
   paused: true
 ```
 
@@ -191,7 +192,7 @@ kubectl patch gitrepo myapp-production \
 # Watch the deployment progress
 kubectl get bundledeployment -A -w | grep production
 
-# Pause again after sync completes (optional — to prevent accidental auto-sync)
+# Pause again after sync completes (optional - to prevent accidental auto-sync)
 kubectl patch gitrepo myapp-production \
   -n fleet-default \
   --type=merge \

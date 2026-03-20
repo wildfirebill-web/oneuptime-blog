@@ -74,6 +74,7 @@ If the boot partition is corrupted:
 
 ```bash
 # Identify the boot partition
+
 lsblk
 blkid
 

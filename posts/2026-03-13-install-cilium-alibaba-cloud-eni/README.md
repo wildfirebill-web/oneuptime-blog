@@ -28,6 +28,7 @@ Using the Alibaba Cloud console or CLI to create an ACK cluster with Cilium:
 
 ```bash
 # Create an ACK cluster with Cilium CNI using aliyun CLI
+
 aliyun cs POST /clusters \
   --header "Content-Type=application/json" \
   --body '{

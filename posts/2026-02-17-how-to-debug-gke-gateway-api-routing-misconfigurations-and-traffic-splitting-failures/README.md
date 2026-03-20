@@ -36,6 +36,7 @@ Start by verifying the Gateway is ready:
 
 ```bash
 # Check Gateway status
+
 kubectl get gateway your-gateway -n your-namespace
 
 # Get detailed status including conditions and addresses

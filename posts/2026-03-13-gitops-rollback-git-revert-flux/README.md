@@ -29,6 +29,7 @@ Use `git log` to find the commit that introduced the problem:
 
 ```bash
 # See recent commits with one-line summaries
+
 git log --oneline -20
 
 # Example output:

@@ -39,6 +39,7 @@ Here is the complete pipeline definition. I will break down each section after s
 
 ```yaml
 # azure-pipelines.yml
+
 trigger:
   branches:
     include:

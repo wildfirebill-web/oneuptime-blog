@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, NFS, Mount, Linux, Storage, fstab
+Tags: IPv6, NFS, Mount, Linux, Storage, Fstab
 
 Description: Mount NFS shares from IPv6-addressed servers using various methods including mount command, fstab, systemd mount units, and autofs, with performance and troubleshooting guidance.
 
@@ -14,6 +14,7 @@ Mounting NFS shares over IPv6 follows the same patterns as IPv4 NFS, with the ke
 
 ```bash
 # Verify IPv6 connectivity to NFS server
+
 ping6 2001:db8::1
 # or
 ping -6 2001:db8::1
@@ -33,10 +34,10 @@ dnf install -y nfs-utils         # RHEL/CentOS
 ## Mount Command Syntax for IPv6
 
 ```bash
-# NFSv4 (recommended) — server address in brackets
+# NFSv4 (recommended) - server address in brackets
 mount -t nfs4 [2001:db8::1]:/srv/data /mnt/data
 
-# NFSv3 — specify nfsvers
+# NFSv3 - specify nfsvers
 mount -t nfs -o nfsvers=3 [2001:db8::1]:/srv/data /mnt/data
 
 # With performance options
@@ -55,7 +56,7 @@ mount | grep nfs
 ## /etc/fstab Persistent Mounts
 
 ```bash
-# /etc/fstab — NFS shares over IPv6
+# /etc/fstab - NFS shares over IPv6
 
 # NFSv4 (preferred for IPv6)
 [2001:db8::1]:/srv/data     /mnt/data     nfs4   rw,hard,intr,rsize=1048576,wsize=1048576,_netdev,auto   0 0
@@ -101,7 +102,7 @@ WantedBy=multi-user.target
 
 ```ini
 # /etc/systemd/system/mnt-data.automount
-# Companion automount unit — mounts on first access
+# Companion automount unit - mounts on first access
 
 [Unit]
 Description=Automount NFS /srv/data over IPv6
@@ -188,4 +189,4 @@ iostat -n     # NFS I/O statistics (if sysstat installed)
 
 ## Conclusion
 
-Mounting NFS shares over IPv6 requires bracket notation for the server address in mount commands and `/etc/fstab`. The `_netdev` fstab option is essential for IPv6 NFS mounts because it prevents mount attempts before the network stack is fully initialized. NFSv4 is strongly preferred for IPv6 because it operates over a single port (2049), simplifying firewall rules compared to NFSv3's use of rpcbind and portmapper. For automounting, both systemd automount units and autofs work with IPv6 NFS — autofs requires escaping colons in IPv6 addresses. Performance tuning parameters like `rsize`, `wsize`, and `timeo` are identical for IPv4 and IPv6 NFS.
+Mounting NFS shares over IPv6 requires bracket notation for the server address in mount commands and `/etc/fstab`. The `_netdev` fstab option is essential for IPv6 NFS mounts because it prevents mount attempts before the network stack is fully initialized. NFSv4 is strongly preferred for IPv6 because it operates over a single port (2049), simplifying firewall rules compared to NFSv3's use of rpcbind and portmapper. For automounting, both systemd automount units and autofs work with IPv6 NFS - autofs requires escaping colons in IPv6 addresses. Performance tuning parameters like `rsize`, `wsize`, and `timeo` are identical for IPv4 and IPv6 NFS.

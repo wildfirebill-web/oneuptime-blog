@@ -18,6 +18,7 @@ The error appears in the HelmRelease status:
 
 ```bash
 # Check HelmRelease status
+
 flux get helmreleases -A
 
 # Get detailed error

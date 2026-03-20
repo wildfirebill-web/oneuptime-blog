@@ -16,6 +16,7 @@ Hurl provides prebuilt packages for Ubuntu. The easiest installation path is thr
 
 ```bash
 # Download the latest hurl deb package (check https://github.com/Orange-OpenSource/hurl/releases for latest version)
+
 HURL_VERSION="4.3.0"
 curl -LO "https://github.com/Orange-OpenSource/hurl/releases/download/${HURL_VERSION}/hurl_${HURL_VERSION}_amd64.deb"
 

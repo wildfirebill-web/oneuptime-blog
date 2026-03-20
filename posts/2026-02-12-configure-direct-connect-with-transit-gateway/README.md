@@ -59,6 +59,7 @@ If you don't already have one:
 
 ```bash
 # Create the Direct Connect Gateway
+
 DXGW_ID=$(aws directconnect create-direct-connect-gateway \
   --direct-connect-gateway-name "hybrid-dx-gateway" \
   --amazon-side-asn 64512 \

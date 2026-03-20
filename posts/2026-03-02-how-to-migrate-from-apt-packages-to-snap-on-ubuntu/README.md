@@ -28,6 +28,7 @@ Before removing any APT packages:
 
 ```bash
 # Document what you have installed
+
 dpkg -l | grep <package-name> > before-migration.txt
 
 # Note the version currently installed

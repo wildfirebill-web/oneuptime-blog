@@ -71,6 +71,7 @@ After creation, check the PVC status:
 kubectl get pvc app-data -n production
 
 # Output shows Pending status
+
 # NAME       STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 # app-data   Pending                                      fast-ssd       10s
 ```

@@ -27,6 +27,7 @@ defaults
     option forwardfor
 
 # Frontend: dual-stack listeners
+
 frontend web_ipv4
     bind 0.0.0.0:80
     bind 0.0.0.0:443 ssl crt /etc/ssl/certs/example.com.pem
@@ -176,4 +177,4 @@ flowchart LR
 
 ## Conclusion
 
-Load balancer IPv6 migration requires adding `[::]:port` listeners for IPv6 frontend VIPs alongside existing IPv4 listeners, specifying backend addresses in bracket notation for IPv6 backends, and verifying that health check mechanisms support IPv6. Ensure applications correctly parse IPv6 addresses from `X-Forwarded-For` headers — IPv6 addresses with colons can break naive string-parsing code that assumes the first colon marks a port separator. Test health checks with `curl -6` before trusting automated check results.
+Load balancer IPv6 migration requires adding `[::]:port` listeners for IPv6 frontend VIPs alongside existing IPv4 listeners, specifying backend addresses in bracket notation for IPv6 backends, and verifying that health check mechanisms support IPv6. Ensure applications correctly parse IPv6 addresses from `X-Forwarded-For` headers - IPv6 addresses with colons can break naive string-parsing code that assumes the first colon marks a port separator. Test health checks with `curl -6` before trusting automated check results.

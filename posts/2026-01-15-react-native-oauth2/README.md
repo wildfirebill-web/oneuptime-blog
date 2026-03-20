@@ -53,6 +53,7 @@ The `react-native-app-auth` library is the most robust solution for implementing
 
 ```bash
 # Using npm
+
 npm install react-native-app-auth
 
 # Using yarn

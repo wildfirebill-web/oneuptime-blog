@@ -44,6 +44,7 @@ flowchart LR
 
 ```bash
 # Using npm
+
 npm install pinia
 
 # Using yarn

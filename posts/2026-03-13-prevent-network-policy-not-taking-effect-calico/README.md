@@ -42,6 +42,7 @@ Before applying any NetworkPolicy:
 
 ```bash
 # Before applying policy: confirm baseline traffic
+
 kubectl run pre-test --image=busybox --restart=Never -- sleep 120
 TARGET_IP=$(kubectl get pod <target-pod> -o jsonpath='{.status.podIP}')
 kubectl exec pre-test -- nc -zv $TARGET_IP <port> 2>&1

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Servers, Infrastructure as Code, Linux
+Tags: OpenTofu, Hetzner Cloud, Server, Infrastructure as Code, Linux
 
 Description: Learn how to create Hetzner Cloud servers with OpenTofu using the hcloud provider, including SSH keys, user data, and network placement.
 
@@ -119,6 +119,7 @@ resource "hcloud_server" "workers" {
 
 ```hcl
 # Prevent unnecessary rebuilds by ignoring user_data changes after initial creation
+
 resource "hcloud_server" "stable" {
   name        = "stable-app"
   image       = "ubuntu-24.04"

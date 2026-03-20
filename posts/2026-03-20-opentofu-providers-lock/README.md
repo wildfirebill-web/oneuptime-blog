@@ -1,18 +1,18 @@
----
-title: "Using tofu providers lock in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, lock
-description: "Learn how to use the tofu providers lock command to manage provider checksums for multiple platforms in your lock file."
----
-
 # Using tofu providers lock in OpenTofu
 
-The `tofu providers lock` command updates the `.terraform.lock.hcl` file with checksums for the current provider selections. It's particularly useful when you need to add checksums for platforms you're not currently developing on — like adding Linux checksums from a macOS development machine.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Locks
+
+Description: Learn how to use the tofu providers lock command to manage provider checksums for multiple platforms in your lock file.
+
+The `tofu providers lock` command updates the `.terraform.lock.hcl` file with checksums for the current provider selections. It's particularly useful when you need to add checksums for platforms you're not currently developing on - like adding Linux checksums from a macOS development machine.
 
 ## Basic Usage
 
 ```bash
 # Update lock file with checksums for current platform
+
 tofu providers lock
 
 # This reads your required_providers and updates .terraform.lock.hcl

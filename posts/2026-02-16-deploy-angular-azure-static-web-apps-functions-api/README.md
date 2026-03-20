@@ -26,6 +26,7 @@ Generate a new Angular project:
 
 ```bash
 # Create a new Angular application with routing and SCSS
+
 ng new angular-swa-app --routing --style=scss
 cd angular-swa-app
 ```

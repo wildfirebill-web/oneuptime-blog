@@ -35,6 +35,7 @@ Test the constraint:
 
 ```bash
 # Fails - missing labels
+
 kubectl create namespace test
 
 # Succeeds

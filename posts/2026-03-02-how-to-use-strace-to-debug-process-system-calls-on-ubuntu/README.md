@@ -31,6 +31,7 @@ Trace a command from the start:
 
 ```bash
 # Trace all system calls made by the ls command
+
 strace ls /tmp
 ```
 

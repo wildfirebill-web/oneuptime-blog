@@ -28,6 +28,7 @@ Start with a resource group to hold all the Batch-related resources.
 
 ```bash
 # Create a resource group for Batch resources
+
 az group create \
   --name batch-rg \
   --location eastus

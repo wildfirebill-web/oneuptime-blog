@@ -113,6 +113,7 @@ Verify database connectivity before accepting traffic:
 
 ```python
 # Python Flask example
+
 from flask import Flask, jsonify
 import psycopg2
 import redis

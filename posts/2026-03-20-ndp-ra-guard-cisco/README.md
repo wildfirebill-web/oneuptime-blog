@@ -14,7 +14,7 @@ Cisco Catalyst switches support RA Guard as part of the IPv6 First Hop Security 
 
 Create policies for router ports and host ports, then apply them to interfaces.
 
-```
+```text
 ! Step 1: Create policy for host-facing ports (blocks RA)
 ipv6 nd raguard policy HOST_POLICY
  device-role host
@@ -44,7 +44,7 @@ interface GigabitEthernet1/0/0
 
 Enhanced RA Guard policies can validate RA content in addition to port role.
 
-```
+```text
 ! Enhanced policy: validate RA content on router ports
 ipv6 nd raguard policy ROUTER_VALIDATED
  device-role router
@@ -70,7 +70,7 @@ interface GigabitEthernet1/0/24
 
 For switches with multiple VLANs, apply RA Guard at the VLAN level.
 
-```
+```text
 ! Apply RA Guard policy per VLAN (affects all ports in that VLAN)
 vlan configuration 10
  ipv6 nd raguard attach-policy HOST_POLICY
@@ -90,7 +90,7 @@ vlan configuration 100
 
 RA Guard works best with IPv6 snooping enabled to build the binding table.
 
-```
+```text
 ! Enable IPv6 snooping globally (required for full FHS)
 ipv6 snooping policy SNOOP_HOST
  security-level guard
@@ -112,7 +112,7 @@ interface GigabitEthernet1/0/1
 
 Use these commands to confirm RA Guard is active and blocking correctly.
 
-```
+```text
 ! Show all RA Guard policies defined
 show ipv6 nd raguard policy
 
@@ -138,7 +138,7 @@ show ipv6 first-hop-security summary
 
 ## Troubleshooting RA Guard
 
-```
+```text
 ! Enable RA Guard debug (use carefully in production)
 debug ipv6 nd raguard
 
@@ -168,7 +168,7 @@ show version | include IOS
 
 ## Complete Configuration Example
 
-```
+```text
 ! Complete RA Guard deployment for a Cisco access switch
 
 ! Global: enable IPv6 routing and FHS

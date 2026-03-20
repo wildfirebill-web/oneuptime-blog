@@ -32,6 +32,7 @@ Create a dedicated verification container with the tools you need:
 
 ```dockerfile
 # Dockerfile for verification scripts
+
 FROM python:3.12-slim
 
 RUN pip install requests pytest pyyaml

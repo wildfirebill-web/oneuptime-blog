@@ -1,4 +1,4 @@
-# How to Create a Stack from a Custom Template in Portainer
+# How to Create a Stack from a Custom Template in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create reusable custom app templates in Portainer that
 
 ## Introduction
 
-Portainer's App Templates let you define reusable Docker Compose configurations that team members can deploy with a single click, filling in only the values that change between deployments. Custom templates are ideal for standardizing how your team deploys common services — databases, monitoring stacks, web applications — ensuring consistency and reducing the chance of misconfiguration. Portainer BE (Business Edition) also supports custom template categories and visibility controls.
+Portainer's App Templates let you define reusable Docker Compose configurations that team members can deploy with a single click, filling in only the values that change between deployments. Custom templates are ideal for standardizing how your team deploys common services - databases, monitoring stacks, web applications - ensuring consistency and reducing the chance of misconfiguration. Portainer BE (Business Edition) also supports custom template categories and visibility controls.
 
 ## Prerequisites
 
@@ -26,9 +26,10 @@ Portainer's App Templates let you define reusable Docker Compose configurations 
 
 Fill in the template details:
 
-```
+```text
 Title:       WordPress with MySQL
 Description: Deploys WordPress CMS with a MySQL 8 database and persistent volumes
+
 Note:        Change DB_PASSWORD before deploying to production
 Logo:        https://cdn.example.com/wordpress-logo.png  (optional)
 Platform:    linux
@@ -41,6 +42,7 @@ In the **Web editor** tab, enter the Compose YAML:
 
 ```yaml
 # Custom template: WordPress + MySQL
+
 version: "3.8"
 
 services:
@@ -166,4 +168,4 @@ Use categories to group related templates:
 
 ## Conclusion
 
-Custom App Templates in Portainer enable self-service deployments while maintaining standards. Define the Compose YAML once, expose the values that vary (passwords, ports, image tags) as environment variable fields, and team members can deploy correctly configured stacks without knowing Docker Compose syntax. For organizations with multiple environments, host templates in a Git repository and configure Portainer to load from that URL — template updates flow to all Portainer instances automatically.
+Custom App Templates in Portainer enable self-service deployments while maintaining standards. Define the Compose YAML once, expose the values that vary (passwords, ports, image tags) as environment variable fields, and team members can deploy correctly configured stacks without knowing Docker Compose syntax. For organizations with multiple environments, host templates in a Git repository and configure Portainer to load from that URL - template updates flow to all Portainer instances automatically.

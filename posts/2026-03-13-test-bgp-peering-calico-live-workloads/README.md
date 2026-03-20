@@ -55,6 +55,7 @@ Simulate a node failure by cordoning and draining a node, then measuring pod rec
 
 ```bash
 # Get pod IPs before the test
+
 kubectl get pods -o wide -l app=bgp-test
 
 # Start continuous ping between pods on different nodes

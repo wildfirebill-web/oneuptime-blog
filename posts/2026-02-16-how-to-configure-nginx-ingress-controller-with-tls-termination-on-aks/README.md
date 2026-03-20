@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AKS, NGINX, Ingress Controller, TLS, Kubernetes, Azure, HTTPS
+Tags: AKS, Nginx, Ingress Controller, TLS, Kubernetes, Azure, HTTPS
 
 Description: Step-by-step guide to deploying NGINX Ingress Controller on AKS and configuring TLS termination with certificates for secure HTTPS traffic.
 
@@ -40,6 +40,7 @@ The official NGINX Ingress Controller is maintained by the Kubernetes community.
 
 ```bash
 # Add the ingress-nginx Helm repository
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 # Update your local Helm chart repository cache

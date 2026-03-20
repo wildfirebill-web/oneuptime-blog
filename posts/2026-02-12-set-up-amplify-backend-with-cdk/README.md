@@ -43,6 +43,7 @@ flowchart LR
 
 ```bash
 # Create a new CDK project
+
 mkdir my-amplify-backend && cd my-amplify-backend
 cdk init app --language typescript
 

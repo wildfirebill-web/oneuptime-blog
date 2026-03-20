@@ -27,6 +27,7 @@ The primary setting controlled by `calicoctl ipam configure` is strict affinity:
 
 ```bash
 # View current IPAM configuration
+
 calicoctl ipam configure show
 ```
 

@@ -107,6 +107,7 @@ def layout_to_text(layout, full_text):
     return text.strip()
 
 # Get text from page 1 (0-indexed)
+
 page_one_text = get_page_text(document, 0)
 print(f"Page 1 text:\n{page_one_text[:500]}")
 ```

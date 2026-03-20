@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Install the Hetzner Cloud collection and Python SDK
+
 ansible-galaxy collection install hetzner.hcloud
 pip install hcloud
 ```

@@ -31,6 +31,7 @@ Deploy cAdvisor and Prometheus to collect container CPU/memory metrics.
 
 ```yaml
 # metrics-stack.yml
+
 version: "3.8"
 
 services:
@@ -149,13 +150,13 @@ def autoscale(service_name: str, min_replicas: int = 1, max_replicas: int = 10):
     if cpu > 80.0 and current < max_replicas:
         # Scale up: add 2 replicas
         new_count = min(current + 2, max_replicas)
-        print(f"CPU high ({cpu:.1f}%) — scaling UP from {current} to {new_count}")
+        print(f"CPU high ({cpu:.1f}%) - scaling UP from {current} to {new_count}")
         scale_service(service_name, new_count)
 
     elif cpu < 20.0 and current > min_replicas:
         # Scale down: remove 1 replica
         new_count = max(current - 1, min_replicas)
-        print(f"CPU low ({cpu:.1f}%) — scaling DOWN from {current} to {new_count}")
+        print(f"CPU low ({cpu:.1f}%) - scaling DOWN from {current} to {new_count}")
         scale_service(service_name, new_count)
     else:
         print("No scaling action needed.")

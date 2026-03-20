@@ -27,6 +27,7 @@ First, create a tag template that defines what metadata you want to track:
 
 ```bash
 # Create a tag template for data classification
+
 gcloud data-catalog tag-templates create data_classification \
   --location=us-central1 \
   --display-name="Data Classification" \

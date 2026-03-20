@@ -38,6 +38,7 @@ The simplest pattern: poll the Deployment status until all replicas are updated 
 
 ```yaml
 # playbook: deploy-and-wait.yml
+
 # Deploys a new version and waits for rollout completion
 ---
 - name: Deploy and wait for readiness

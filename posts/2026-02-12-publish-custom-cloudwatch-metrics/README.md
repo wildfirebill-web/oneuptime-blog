@@ -36,6 +36,7 @@ Here's a simple example that publishes a single data point:
 
 ```bash
 # Publish a single custom metric data point
+
 aws cloudwatch put-metric-data \
   --namespace "MyApp/Production" \
   --metric-name "OrdersProcessed" \

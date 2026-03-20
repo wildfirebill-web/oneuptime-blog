@@ -57,6 +57,7 @@ Start by creating a Backstage app and configuring the basic settings.
 
 ```yaml
 # app-config.yaml
+
 # Core Backstage configuration
 
 app:

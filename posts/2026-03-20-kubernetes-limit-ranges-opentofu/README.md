@@ -14,6 +14,7 @@ Kubernetes Limit Ranges set default resource requests/limits for containers that
 
 ```hcl
 # main.tf - LimitRange with defaults for containers
+
 resource "kubernetes_limit_range_v1" "default_limits" {
   metadata {
     name      = "default-container-limits"

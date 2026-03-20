@@ -55,6 +55,7 @@ You can specify the exact socket path using the `base_url` parameter:
 from podman import PodmanClient
 
 # Connect to rootless socket explicitly
+
 with PodmanClient(base_url="unix:///run/user/1000/podman/podman.sock") as client:
     print(client.version())
 ```

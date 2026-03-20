@@ -1,4 +1,4 @@
-# How to Manage Docker Secrets in Portainer on Swarm
+# How to Manage Docker Secrets in Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to securely create, manage, and attach Docker Swarm secre
 
 ## Introduction
 
-Docker Secrets provide a secure mechanism for distributing sensitive data — passwords, API keys, TLS certificates, and SSH keys — to Swarm services. Unlike environment variables, secrets are encrypted at rest in the Swarm raft log, transmitted over encrypted channels, and mounted as in-memory files in containers. Portainer provides a UI for managing secrets that is easier than the Docker CLI. This guide covers the complete secrets management workflow.
+Docker Secrets provide a secure mechanism for distributing sensitive data - passwords, API keys, TLS certificates, and SSH keys - to Swarm services. Unlike environment variables, secrets are encrypted at rest in the Swarm raft log, transmitted over encrypted channels, and mounted as in-memory files in containers. Portainer provides a UI for managing secrets that is easier than the Docker CLI. This guide covers the complete secrets management workflow.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Docker Secrets provide a secure mechanism for distributing sensitive data — pa
 - Secrets are **encrypted at rest** in the Swarm raft log
 - Only distributed to services that **explicitly request** them
 - Mounted as files under `/run/secrets/<secret-name>` in the container
-- **In-memory only** on worker nodes — not written to disk
+- **In-memory only** on worker nodes - not written to disk
 - Secrets are **immutable** after creation
 
 ## Step 1: View Existing Secrets
@@ -29,7 +29,7 @@ Docker Secrets provide a secure mechanism for distributing sensitive data — pa
 1. Select your Swarm environment in Portainer
 2. Click **Swarm → Secrets**
 
-The list shows secret names and creation dates (but NOT the secret values — they are never shown after creation).
+The list shows secret names and creation dates (but NOT the secret values - they are never shown after creation).
 
 ## Step 2: Create a New Secret
 
@@ -37,7 +37,7 @@ The list shows secret names and creation dates (but NOT the secret values — th
 2. Enter a **Secret name** (e.g., `db-password`)
 3. Enter the secret **Value**:
 
-```
+```text
 Secret name:  db-password
 Value:        MyStr0ng!P@ssw0rd#2024
 ```
@@ -50,6 +50,7 @@ Value:        MyStr0ng!P@ssw0rd#2024
 
 ```bash
 # Create from string (visible in shell history - avoid in production)
+
 echo "MyStr0ng!P@ssw0rd" | docker secret create db-password -
 
 # Create from file (preferred - avoids shell history exposure)
@@ -77,7 +78,7 @@ docker secret inspect db-password
 4. Select the secret name
 5. Configure mount options:
 
-```
+```text
 Secret:       db-password
 Target file:  db-password           (filename in /run/secrets/)
 UID:          0                     (file owner UID)

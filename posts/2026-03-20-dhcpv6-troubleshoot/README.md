@@ -8,7 +8,7 @@ Description: A practical guide to diagnosing and fixing common DHCPv6 problems i
 
 ---
 
-DHCPv6 problems can be subtle because they often occur silently — the client falls back to SLAAC or link-local addresses without obvious errors. This guide provides systematic troubleshooting steps for the most common DHCPv6 issues.
+DHCPv6 problems can be subtle because they often occur silently - the client falls back to SLAAC or link-local addresses without obvious errors. This guide provides systematic troubleshooting steps for the most common DHCPv6 issues.
 
 ---
 
@@ -18,6 +18,7 @@ Before diving in, verify these basics:
 
 ```bash
 # 1. Is IPv6 enabled on the interface?
+
 ip -6 addr show eth0
 
 # 2. Is there a link-local address?
@@ -41,7 +42,7 @@ sudo tcpdump -i eth0 udp port 546 or udp port 547
 ### Diagnosis
 
 ```bash
-# Check Router Advertisements — is M flag set?
+# Check Router Advertisements - is M flag set?
 rdisc6 eth0
 # Look for: "Managed address configuration: Yes"
 
@@ -78,7 +79,7 @@ sudo systemctl status isc-dhcp-server6
 ### Diagnosis
 
 ```bash
-# On relay host — check if dhcrelay is running
+# On relay host - check if dhcrelay is running
 systemctl status dhcrelay6
 
 # Capture on client-facing interface
@@ -152,11 +153,11 @@ sudo systemctl restart kea-dhcp6-server
 ### Diagnosis
 
 ```bash
-# ISC DHCP — check leases file
+# ISC DHCP - check leases file
 wc -l /var/lib/dhcp/dhcpd6.leases
 grep "binding state active" /var/lib/dhcp/dhcpd6.leases | wc -l
 
-# Kea — check via REST API
+# Kea - check via REST API
 curl http://localhost:8000/ -d '{"command":"lease6-get-all","service":["dhcp6"]}' | python3 -m json.tool
 
 # Check for stale leases (clients that are gone)
@@ -208,7 +209,7 @@ ip -6 neighbor show | sort | uniq -D
 # Enable DAD on interface
 sysctl net.ipv6.conf.eth0.dad_transmits=1
 
-# On server — clear conflicting lease
+# On server - clear conflicting lease
 # ISC DHCP: remove the entry from dhcpd6.leases and restart
 ```
 
@@ -246,8 +247,8 @@ tcpdump -r /tmp/dhcpv6.pcap -vv
 
 ## Best Practices for Prevention
 
-1. **Monitor pool utilization** — alert at 80% full
-2. **Set appropriate lease times** — shorter for dynamic environments
+1. **Monitor pool utilization** - alert at 80% full
+2. **Set appropriate lease times** - shorter for dynamic environments
 3. **Use DHCPv6 failover/HA** to eliminate single points of failure
 4. **Log all DHCPv6 events** to a centralized syslog server
 5. **Test relay configuration** after any network change
@@ -256,8 +257,8 @@ tcpdump -r /tmp/dhcpv6.pcap -vv
 
 ## Conclusion
 
-DHCPv6 troubleshooting follows a logical path from client to relay to server. Packet captures with `tcpdump` or Wireshark are the most reliable diagnostic tool. Fix issues at the right layer — client, relay, or server — and always verify with a fresh DHCP request.
+DHCPv6 troubleshooting follows a logical path from client to relay to server. Packet captures with `tcpdump` or Wireshark are the most reliable diagnostic tool. Fix issues at the right layer - client, relay, or server - and always verify with a fresh DHCP request.
 
 ---
 
-*Monitor your network's IPv6 health with [OneUptime](https://oneuptime.com) — real-time uptime monitoring with alerting.*
+*Monitor your network's IPv6 health with [OneUptime](https://oneuptime.com) - real-time uptime monitoring with alerting.*

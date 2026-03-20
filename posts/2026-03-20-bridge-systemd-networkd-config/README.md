@@ -16,6 +16,7 @@ A network bridge is a Layer 2 device that connects multiple network segments. On
 
 ```ini
 # /etc/systemd/network/10-br0.netdev
+
 [NetDev]
 Name=br0
 Kind=bridge

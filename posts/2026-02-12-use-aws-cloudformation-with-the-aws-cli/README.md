@@ -18,6 +18,7 @@ Start with a simple template that creates an S3 bucket. Save this as `template.y
 
 ```yaml
 # template.yml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: A simple S3 bucket with versioning enabled
 

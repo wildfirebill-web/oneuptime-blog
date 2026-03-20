@@ -26,6 +26,7 @@ The simplest way to suspend a HelmRepository is with the Flux CLI:
 
 ```bash
 # Suspend a specific HelmRepository
+
 flux suspend source helm prometheus-community -n flux-system
 ```
 

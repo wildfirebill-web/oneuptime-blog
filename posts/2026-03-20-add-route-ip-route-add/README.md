@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Routing, Linux, Networking, ip-command, IPv4, Troubleshooting
+Tags: Routing, Linux, Networking, Ip-command, IPv4, Troubleshooting
 
 Description: Add static IPv4 routes on Linux using the ip route add command to direct traffic through specific gateways or interfaces.
 
 ## Introduction
 
-The `ip route add` command adds entries to the Linux kernel routing table. Static routes are essential when traffic to specific networks must go through a particular gateway — for example, reaching a remote office through a VPN gateway rather than the default internet router.
+The `ip route add` command adds entries to the Linux kernel routing table. Static routes are essential when traffic to specific networks must go through a particular gateway - for example, reaching a remote office through a VPN gateway rather than the default internet router.
 
 ## Viewing the Routing Table
 
@@ -16,6 +16,7 @@ Before adding routes, examine the current routing table:
 
 ```bash
 # Show the full routing table
+
 ip route show
 
 # Show routes for a specific table

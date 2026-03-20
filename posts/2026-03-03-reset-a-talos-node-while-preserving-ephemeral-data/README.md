@@ -31,6 +31,7 @@ The key is using the `--system-labels-to-wipe` flag to target only the STATE par
 
 ```bash
 # Reset only the STATE partition, keeping EPHEMERAL intact
+
 talosctl reset --nodes 10.0.0.50 \
   --graceful=true \
   --reboot=true \

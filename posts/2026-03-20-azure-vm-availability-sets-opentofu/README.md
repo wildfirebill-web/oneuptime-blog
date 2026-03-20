@@ -128,6 +128,7 @@ tofu plan
 tofu apply
 
 # Check availability set configuration
+
 az vm availability-set show \
   --resource-group <rg> \
   --name <avset-name>
@@ -141,4 +142,4 @@ az vm show \
 
 ## Conclusion
 
-Availability Sets cannot be changed after VM creation—plan the architecture before deploying. You cannot mix Availability Zones and Availability Sets for the same VM. For new deployments targeting 99.99% SLA, use Availability Zones instead of Availability Sets. Availability Sets work best when you need to keep VMs in the same datacenter for low-latency communication while still protecting against rack-level failures. Always deploy at least 2 VMs in an Availability Set—a single VM provides no high availability protection.
+Availability Sets cannot be changed after VM creation-plan the architecture before deploying. You cannot mix Availability Zones and Availability Sets for the same VM. For new deployments targeting 99.99% SLA, use Availability Zones instead of Availability Sets. Availability Sets work best when you need to keep VMs in the same datacenter for low-latency communication while still protecting against rack-level failures. Always deploy at least 2 VMs in an Availability Set-a single VM provides no high availability protection.

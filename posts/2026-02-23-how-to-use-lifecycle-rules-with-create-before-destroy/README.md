@@ -23,6 +23,7 @@ For an EC2 instance where the AMI changes, this means the old instance is termin
 
 ```hcl
 # Default behavior: destroy-then-create
+
 resource "aws_instance" "app" {
   ami           = var.ami_id  # Changing this forces replacement
   instance_type = "t3.micro"
@@ -56,7 +57,7 @@ Now when the AMI changes:
 
 There is a brief period where both instances exist simultaneously.
 
-## Resources That Commonly Need create_before_destroy
+Resources That Commonly Need create_before_destroy
 
 ### Security Groups
 

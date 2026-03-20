@@ -20,6 +20,7 @@ Podman implements the Docker-compatible API, which means most Docker CLI command
 
 ```bash
 # Podman supports most Docker CLI commands natively
+
 podman pull nginx:alpine
 podman run -d --name test nginx:alpine
 podman ps

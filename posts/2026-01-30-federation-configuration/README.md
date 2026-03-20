@@ -238,6 +238,7 @@ The following Python example demonstrates OIDC authentication using the Authlib 
 
 ```python
 # oidc_config.py
+
 # Configure OIDC authentication for Flask
 
 from authlib.integrations.flask_client import OAuth

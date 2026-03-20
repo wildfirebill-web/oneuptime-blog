@@ -45,6 +45,7 @@ This enables the Config recorder in a source account to track all supported reso
 
 ```bash
 # Enable Config recorder in each source account
+
 aws configservice put-configuration-recorder \
   --configuration-recorder name=default,roleARN=arn:aws:iam::222222222222:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig \
   --recording-group allSupported=true,includeGlobalResourceTypes=true

@@ -38,6 +38,7 @@ Create the `Chart.yaml` that references the upstream Helm chart as a dependency.
 
 ```yaml
 # monitoring/kube-prometheus-stack/Chart.yaml
+
 apiVersion: v2
 name: kube-prometheus-stack
 description: Wrapper chart for kube-prometheus-stack
@@ -205,7 +206,7 @@ spec:
 
 ## Dealing with Common Sync Issues
 
-### Resource Too Large Errors
+Resource Too Large Errors
 
 The kube-prometheus-stack generates large ConfigMaps and Secrets for Grafana dashboards. If you see annotation size errors, `ServerSideApply=true` is the fix.
 

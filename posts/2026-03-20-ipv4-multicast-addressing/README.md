@@ -12,7 +12,7 @@ IPv4 multicast uses the address range 224.0.0.0/4 (224.0.0.0 to 239.255.255.255)
 
 ## IPv4 Multicast Address Ranges
 
-```
+```text
 Multicast Address Space: 224.0.0.0/4
 
 Subranges and their purposes:
@@ -48,7 +48,7 @@ Subranges and their purposes:
 
 ## Multicast IP to Ethernet MAC Mapping
 
-```
+```text
 IPv4 multicast IP addresses map to Ethernet multicast MAC addresses:
 
 Formula:
@@ -74,6 +74,7 @@ Ambiguity:
 
 ```bash
 # Capture all multicast traffic on interface:
+
 tcpdump -i eth0 -n 'dst net 224.0.0.0/4'
 
 # Capture specific multicast group:

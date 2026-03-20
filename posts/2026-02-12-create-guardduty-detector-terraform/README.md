@@ -126,6 +126,7 @@ This routes high-severity findings to PagerDuty and lower-severity findings to a
 
 ```hcl
 # High severity findings (7.0-8.9) - page the on-call
+
 resource "aws_cloudwatch_event_rule" "guardduty_high" {
   name = "guardduty-high-severity"
 

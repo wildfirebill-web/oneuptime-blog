@@ -16,6 +16,7 @@ By default, Ansible treats any non-zero return code as a failure and stops execu
 
 ```yaml
 # default_behavior.yml - Default return code handling
+
 ---
 - name: Default return code behavior
   hosts: all

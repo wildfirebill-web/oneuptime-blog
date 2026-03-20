@@ -37,6 +37,7 @@ List all instances across all regions:
 
 ```bash
 # Get a summary of EC2 instances across all regions
+
 aws ec2 describe-instance-type-offerings \
   --location-type region \
   --query 'InstanceTypeOfferings[0:5]'

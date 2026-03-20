@@ -34,6 +34,7 @@ Default output on RHEL: `DEFAULT`
 
 ```bash
 # Server-side crypto settings
+
 cat /etc/crypto-policies/back-ends/opensshserver.config
 
 # Client-side crypto settings

@@ -29,6 +29,7 @@ VM migration in Harvester allows you to move running or stopped virtual machines
 
 ```bash
 # See which node each VM is running on
+
 kubectl get vmi -n default \
     -o custom-columns=\
 'NAME:.metadata.name,NODE:.status.nodeName,PHASE:.status.phase'
@@ -244,4 +245,4 @@ kubectl logs -n default \
 
 ## Conclusion
 
-VM migration in Harvester is a powerful capability that enables zero-downtime maintenance and flexible workload placement. Live migration allows VMs to continue serving traffic while moving between nodes — an essential feature for production environments with strict availability requirements. By combining node cordoning, draining, and targeted migration policies, you can maintain your cluster infrastructure without scheduling maintenance windows that impact users. Always verify sufficient resources on the destination nodes before initiating large-scale migrations.
+VM migration in Harvester is a powerful capability that enables zero-downtime maintenance and flexible workload placement. Live migration allows VMs to continue serving traffic while moving between nodes - an essential feature for production environments with strict availability requirements. By combining node cordoning, draining, and targeted migration policies, you can maintain your cluster infrastructure without scheduling maintenance windows that impact users. Always verify sufficient resources on the destination nodes before initiating large-scale migrations.

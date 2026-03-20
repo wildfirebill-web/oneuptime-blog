@@ -37,6 +37,7 @@ First, create a small service that receives Spinnaker webhook calls and converts
 
 ```python
 # spinnaker_otel_bridge.py
+
 # This service acts as a bridge between Spinnaker webhook notifications
 # and OpenTelemetry. It receives pipeline and stage events from Spinnaker
 # and emits corresponding spans to the collector. Each pipeline execution

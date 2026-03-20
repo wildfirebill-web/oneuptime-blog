@@ -43,6 +43,7 @@ flowchart TB
 
 ```bash
 # Java 11+ GC logging
+
 java -Xlog:gc*:file=gc.log:time,uptime,level,tags \
      -Xlog:gc+heap=debug \
      -Xlog:safepoint \

@@ -22,6 +22,7 @@ Tempo's tail sampling requires specific configuration and enough memory to buffe
 
 ```yaml
 # tempo-config.yaml
+
 server:
   http_listen_port: 3200
 

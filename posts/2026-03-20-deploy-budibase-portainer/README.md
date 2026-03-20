@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Budibase
+
 version: "3.8"
 
 services:
@@ -57,7 +58,7 @@ The `budibase/budibase` image bundles all services (app server, worker, CouchDB,
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 JWT_SECRET=your-random-jwt-secret-min-32-chars
 MINIO_ACCESS_KEY=your-minio-access-key
 MINIO_SECRET_KEY=your-minio-secret-key
@@ -107,4 +108,4 @@ curl http://budibase-host/api/applications \
 
 ## Conclusion
 
-Budibase's single Docker image simplifies deployment — all internal services are managed by a supervisor process within the container. The `budibase_data` volume persists CouchDB data and MinIO object storage. For production, replace the bundled MinIO with external S3 or a dedicated MinIO instance and configure external PostgreSQL instead of the embedded CouchDB.
+Budibase's single Docker image simplifies deployment - all internal services are managed by a supervisor process within the container. The `budibase_data` volume persists CouchDB data and MinIO object storage. For production, replace the bundled MinIO with external S3 or a dedicated MinIO instance and configure external PostgreSQL instead of the embedded CouchDB.

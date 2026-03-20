@@ -33,6 +33,7 @@ hubble:
 
 ```promql
 # Traffic dropped by policy
+
 rate(hubble_drop_total{reason="POLICY_DENIED"}[5m])
 
 # Policy verdict breakdown

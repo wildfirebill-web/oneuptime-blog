@@ -18,6 +18,7 @@ First, emit audit events as OpenTelemetry log records from your application. Eac
 
 ```python
 # audit_logger.py
+
 # Emits structured audit events via OpenTelemetry logging SDK
 import hashlib
 import json

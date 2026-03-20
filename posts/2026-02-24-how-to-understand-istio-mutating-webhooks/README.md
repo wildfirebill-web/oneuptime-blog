@@ -191,6 +191,7 @@ You can test webhook behavior without actually creating a pod:
 
 ```bash
 # Generate the injection template for a deployment
+
 istioctl kube-inject -f my-deployment.yaml --meshConfigFile /dev/null
 
 # See what would be injected in a specific namespace

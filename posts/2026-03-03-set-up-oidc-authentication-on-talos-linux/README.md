@@ -67,6 +67,7 @@ In Talos Linux, you configure the API server through the machine configuration. 
 
 ```yaml
 # oidc-patch.yaml
+
 cluster:
   apiServer:
     extraArgs:

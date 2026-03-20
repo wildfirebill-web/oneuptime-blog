@@ -90,6 +90,7 @@ Here's a minimal configuration to start reading logs from an S3 bucket. This exa
 
 ```yaml
 # Configure the S3 receiver to read log files
+
 receivers:
   # The awss3 receiver pulls data from S3 buckets
   awss3:

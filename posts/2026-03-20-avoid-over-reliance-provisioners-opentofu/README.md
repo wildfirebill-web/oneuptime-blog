@@ -16,6 +16,7 @@ The core issues with provisioners.
 
 ```hcl
 # This looks convenient but has serious problems
+
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t3.medium"
@@ -30,7 +31,7 @@ resource "aws_instance" "web" {
     # 1. Only runs on initial creation, never on updates
     # 2. If the script fails, resource is "tainted" and will be replaced
     # 3. Requires SSH access (security concern)
-    # 4. Not idempotent — can fail if packages changed
+    # 4. Not idempotent - can fail if packages changed
     # 5. Can't be tested in isolation
   }
 }
@@ -85,7 +86,7 @@ data "aws_ami" "app_server" {
 resource "aws_instance" "web" {
   ami           = data.aws_ami.app_server.id  # software pre-installed
   instance_type = "t3.medium"
-  # No provisioners needed — everything is in the AMI
+  # No provisioners needed - everything is in the AMI
 }
 ```
 
@@ -132,7 +133,7 @@ resource "aws_ssm_association" "install_cloudwatch_agent" {
 
 ## When Provisioners Are Actually Appropriate
 
-```
+```text
 Legitimate provisioner use cases (rare):
 ✓ Destroying resources that require external cleanup before deletion
   (use destroy-time provisioner)

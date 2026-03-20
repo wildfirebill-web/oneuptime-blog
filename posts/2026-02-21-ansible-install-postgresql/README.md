@@ -33,6 +33,7 @@ roles/postgresql_install/
 
 ```yaml
 # roles/postgresql_install/defaults/main.yml
+
 # Default variables for PostgreSQL installation
 ---
 postgresql_version: "16"

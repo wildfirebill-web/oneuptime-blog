@@ -31,6 +31,7 @@ Check that the calicoctl configuration file is syntactically correct:
 CONFIG_FILE="/etc/calico/calicoctl.cfg"
 
 # Verify YAML syntax
+
 python3 -c "import yaml; yaml.safe_load(open('${CONFIG_FILE}'))" && echo "YAML syntax: OK" || echo "YAML syntax: FAILED"
 
 # Check required fields

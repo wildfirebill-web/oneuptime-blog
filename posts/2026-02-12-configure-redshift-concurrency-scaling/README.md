@@ -29,6 +29,7 @@ Enable it through the parameter group:
 
 ```bash
 # Modify the WLM configuration to enable concurrency scaling
+
 aws redshift modify-cluster-parameter-group \
   --parameter-group-name my-cluster-params \
   --parameters '[

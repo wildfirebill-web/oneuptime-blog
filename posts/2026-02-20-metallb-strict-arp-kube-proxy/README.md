@@ -70,6 +70,7 @@ You can check which mode kube-proxy is using with this command:
 
 ```bash
 # Check the kube-proxy configuration to see what mode it's running in
+
 # An empty string for mode means iptables (the default)
 kubectl get configmap kube-proxy -n kube-system -o jsonpath='{.data.config\.conf}' | grep mode
 ```

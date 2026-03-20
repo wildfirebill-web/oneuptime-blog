@@ -39,6 +39,7 @@ Here is an example pointing to a public OCI registry.
 
 ```yaml
 # helmrepository-oci-public.yaml
+
 # OCI-based HelmRepository pointing to a public container registry
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

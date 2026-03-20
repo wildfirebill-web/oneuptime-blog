@@ -104,6 +104,7 @@ from aws_lambda_powertools.utilities.idempotency import (
 logger = Logger(service="payment-service")
 
 # Configure the persistence layer
+
 persistence = DynamoDBPersistenceLayer(table_name="idempotency-store")
 
 # Configure idempotency behavior

@@ -48,6 +48,7 @@ Configure ArgoCD Notifications to detect when a region's applications become unh
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

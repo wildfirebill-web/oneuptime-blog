@@ -74,6 +74,7 @@ Test connectivity from another pod:
 kubectl run test-pod --image=busybox --rm -it -- sh
 
 # Inside the pod
+
 wget -qO- http://backend-service.default.svc.cluster.local
 wget -qO- http://backend-service.default
 wget -qO- http://backend-service

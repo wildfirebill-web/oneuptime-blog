@@ -46,6 +46,7 @@ Here is a complete GitHub Actions workflow that runs Ansible with become.
 
 ```yaml
 # .github/workflows/deploy.yml
+
 # Deploy using Ansible with become in GitHub Actions
 name: Deploy with Ansible
 

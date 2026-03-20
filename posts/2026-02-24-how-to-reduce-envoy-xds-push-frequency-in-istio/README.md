@@ -24,6 +24,7 @@ Check your current push rate:
 
 ```bash
 # Total pushes over the last 5 minutes
+
 kubectl exec deploy/istiod -n istio-system -- curl -s localhost:15014/metrics | grep "pilot_xds_pushes"
 
 # Push triggers by type

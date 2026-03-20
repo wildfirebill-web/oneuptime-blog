@@ -277,6 +277,7 @@ Having backups is only useful if you can restore from them. Here is a restore sc
 ```bash
 #!/bin/bash
 # restore-argocd.sh - Restore ArgoCD from backup
+
 set -euo pipefail
 
 BACKUP_FILE="${1:?Usage: $0 <backup-file.tar.gz>}"

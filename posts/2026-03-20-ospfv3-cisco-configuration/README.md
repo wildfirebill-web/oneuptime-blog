@@ -12,7 +12,7 @@ Cisco supports OSPFv3 on IOS, IOS-XE, and IOS-XR. There are two configuration st
 
 ## Prerequisites
 
-```
+```text
 ! Verify IPv6 unicast routing is enabled
 Router# show running-config | include ipv6 unicast-routing
 ipv6 unicast-routing
@@ -23,7 +23,7 @@ Router(config)# ipv6 unicast-routing
 
 ## Classic OSPFv3 Configuration (IOS)
 
-```
+```text
 ! Create the OSPFv3 process with process ID 1
 Router(config)# ipv6 router ospf 1
 Router(config-rtr)# router-id 1.1.1.1
@@ -43,7 +43,7 @@ Router(config-if)# ipv6 ospf 1 area 0
 
 The `ospfv3` address-family syntax is preferred on modern IOS-XE:
 
-```
+```text
 ! Configure OSPFv3 with address-family syntax
 Router(config)# router ospfv3 1
 Router(config-router)# router-id 1.1.1.1
@@ -61,7 +61,7 @@ Router(config-if)# ospfv3 1 ipv6 area 0
 
 ## Setting Interface Cost
 
-```
+```text
 ! Set OSPFv3 cost on an interface (lower = preferred)
 Router(config-if)# ospfv3 1 ipv6 cost 10
 
@@ -74,7 +74,7 @@ Router(config-if)# ospfv3 1 ipv6 dead-interval 40
 
 Prevent OSPFv3 Hello packets from being sent on a stub interface (e.g., loopback):
 
-```
+```text
 Router(config)# router ospfv3 1
 Router(config-router)# address-family ipv6 unicast
 Router(config-router-af)# passive-interface Loopback0
@@ -82,7 +82,7 @@ Router(config-router-af)# passive-interface Loopback0
 
 ## Verification Commands
 
-```
+```text
 ! Show OSPFv3 neighbor state
 Router# show ospfv3 neighbor
 
@@ -101,7 +101,7 @@ Router# show ospfv3 neighbor detail
 
 ## Sample Output
 
-```
+```text
 Router# show ospfv3 neighbor
 
 OSPFv3 1 address-family ipv6 (router-id 1.1.1.1)
@@ -113,7 +113,7 @@ Neighbor ID     Pri   State           Dead Time   Interface ID    Interface
 
 ## Troubleshooting Adjacency Issues
 
-```
+```text
 ! Enable OSPFv3 debugging (caution: verbose output)
 Router# debug ospfv3 adj
 

@@ -21,6 +21,7 @@ Easy-RSA is a certificate authority toolkit bundled with OpenVPN.
 
 ```bash
 # Create and navigate to the Easy-RSA directory
+
 make-cadir ~/openvpn-ca
 cd ~/openvpn-ca
 

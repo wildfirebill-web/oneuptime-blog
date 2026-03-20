@@ -31,6 +31,7 @@ Here's how to create an S3 VPC endpoint using the AWS CLI:
 
 ```bash
 # Create a VPC Gateway Endpoint for S3
+
 aws ec2 create-vpc-endpoint \
   --vpc-id vpc-0a1b2c3d4e5f67890 \
   --service-name com.amazonaws.us-east-1.s3 \

@@ -36,6 +36,7 @@ Inspect the media type of an image:
 
 ```bash
 # Check the manifest media type using docker buildx
+
 docker buildx imagetools inspect nginx:alpine --raw | head -5
 
 # Using skopeo to inspect the manifest

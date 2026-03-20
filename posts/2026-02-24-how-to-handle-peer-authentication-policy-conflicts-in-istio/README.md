@@ -55,6 +55,7 @@ Two workload-specific policies that match the same pod:
 
 ```yaml
 # Policy A
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

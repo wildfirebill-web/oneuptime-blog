@@ -27,6 +27,7 @@ The approach for containerizing GUI applications differs depending on which prot
 
 ```bash
 # Check the current display server
+
 echo $XDG_SESSION_TYPE
 
 # X11 will show: x11

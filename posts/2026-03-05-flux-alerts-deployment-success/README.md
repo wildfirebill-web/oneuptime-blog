@@ -26,6 +26,7 @@ The simplest approach is to create an info-level alert that captures all events,
 
 ```yaml
 # Alert that captures all events including success notifications
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

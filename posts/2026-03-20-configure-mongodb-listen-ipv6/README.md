@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MongoDB, Database, net.bindIp, Network Configuration
+Tags: IPv6, MongoDB, Database, Net.bindIp, Network Configuration
 
 Description: Learn how to configure MongoDB to listen on IPv6 addresses by updating the net.bindIp configuration, enabling dual-stack support, and verifying IPv6 connectivity.
 
@@ -49,6 +49,7 @@ security:
 
 ```bash
 # Restart MongoDB after configuration change
+
 systemctl restart mongod
 
 # Verify listening
@@ -101,7 +102,7 @@ db.createUser({
 
 ## IPv6 Connection String Format
 
-```
+```text
 # MongoDB connection string with IPv6 address (brackets required)
 mongodb://[2001:db8::10]:27017
 

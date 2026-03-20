@@ -20,6 +20,7 @@ The most fundamental verification step is running `terraform plan` immediately a
 
 ```bash
 # Run plan to see what Terraform wants to change
+
 terraform plan
 ```
 

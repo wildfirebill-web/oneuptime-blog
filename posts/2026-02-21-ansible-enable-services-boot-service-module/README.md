@@ -16,6 +16,7 @@ The `enabled` parameter controls whether a service starts at boot time.
 
 ```yaml
 # Enable nginx to start at boot
+
 - name: Enable nginx at boot
   ansible.builtin.service:
     name: nginx

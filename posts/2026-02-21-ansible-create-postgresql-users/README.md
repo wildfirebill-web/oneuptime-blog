@@ -18,6 +18,7 @@ Make sure you have the PostgreSQL community collection installed.
 
 ```bash
 # Install the PostgreSQL collection
+
 ansible-galaxy collection install community.postgresql
 ```
 

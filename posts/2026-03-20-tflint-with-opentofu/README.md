@@ -1,4 +1,4 @@
-# How to Use TFLint with OpenTofu
+# How to Use TFLint with OpenTofu - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure and use TFLint with OpenTofu to enforce codi
 
 ## Introduction
 
-TFLint is a pluggable linter designed for Terraform and OpenTofu. While `tofu validate` checks syntax, TFLint goes further by checking for provider-specific errors, deprecated arguments, and enforcing custom rules — all before you run `tofu plan`.
+TFLint is a pluggable linter designed for Terraform and OpenTofu. While `tofu validate` checks syntax, TFLint goes further by checking for provider-specific errors, deprecated arguments, and enforcing custom rules - all before you run `tofu plan`.
 
 ## Installation
 
@@ -56,6 +56,7 @@ tflint --init
 
 ```bash
 # Lint current directory
+
 tflint
 
 # Show detailed output

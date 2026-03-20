@@ -18,6 +18,7 @@ The say callback uses the `say` command on macOS or `espeak`/`spd-say` on Linux 
 
 ```ini
 # ansible.cfg - Enable the say callback
+
 [defaults]
 callback_whitelist = community.general.say
 ```

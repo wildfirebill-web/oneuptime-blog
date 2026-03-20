@@ -54,6 +54,7 @@ Jobs require `restartPolicy` to be `Never` or `OnFailure`. For hooks, `Never` is
 
 ```yaml
 # Never: Pod fails once, Job creates a new Pod (up to backoffLimit)
+
 restartPolicy: Never
 
 # OnFailure: Kubernetes restarts the same Pod on failure
@@ -296,7 +297,7 @@ ArgoCD determines Job health as follows:
 
 During a sync, ArgoCD waits for hook Jobs to become either Healthy or Degraded before proceeding.
 
-## Resource Requests and Limits
+Resource Requests and Limits
 
 Always set resource requests and limits on hook Jobs to prevent them from consuming excessive cluster resources:
 

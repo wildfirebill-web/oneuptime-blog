@@ -265,6 +265,7 @@ Before deploying to production, test each legacy app in a staging environment:
 
 ```bash
 # Deploy with sidecar
+
 kubectl apply -f legacy-app.yaml
 
 # Check if the app is healthy

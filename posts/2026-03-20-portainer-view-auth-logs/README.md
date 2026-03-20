@@ -31,13 +31,13 @@ The logs display:
 
 ## Step 2: Authentication Log Types
 
-```
-LOGIN_SUCCESS     — Successful authentication
-LOGIN_FAILURE     — Failed login attempt (wrong password)
-LOGIN_UNKNOWN     — Login attempt with unknown username
-LOGOUT            — User explicitly logged out
-SESSION_EXPIRED   — Session timed out
-API_KEY_ACCESS    — Access via API key (not password)
+```text
+LOGIN_SUCCESS     - Successful authentication
+LOGIN_FAILURE     - Failed login attempt (wrong password)
+LOGIN_UNKNOWN     - Login attempt with unknown username
+LOGOUT            - User explicitly logged out
+SESSION_EXPIRED   - Session timed out
+API_KEY_ACCESS    - Access via API key (not password)
 ```
 
 ## Step 3: View Logs via the API
@@ -47,6 +47,7 @@ PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"
 
 # Get authentication logs
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/auth/logs" | jq .
 
@@ -132,7 +133,7 @@ echo $LOGS | jq -r '.[] | select(.Type == "success") |
 
 ```bash
 #!/bin/bash
-# export-auth-logs-monthly.sh — For compliance reporting
+# export-auth-logs-monthly.sh - For compliance reporting
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"

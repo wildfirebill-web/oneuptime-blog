@@ -45,6 +45,7 @@ Revenue is your most important business metric. Track it at the point where a tr
 
 ```python
 # revenue_metrics.py
+
 from opentelemetry import metrics, trace
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

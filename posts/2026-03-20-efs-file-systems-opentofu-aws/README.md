@@ -16,6 +16,7 @@ Amazon Elastic File System (EFS) provides scalable, shared NFS storage for AWS w
 
 ```hcl
 # efs.tf
+
 resource "aws_efs_file_system" "main" {
   creation_token   = "app-shared-storage"
   performance_mode = "generalPurpose"
@@ -55,7 +56,7 @@ resource "aws_efs_mount_target" "main" {
   security_groups = [aws_security_group.efs.id]
 }
 
-# Security group for EFS — allow NFS from EC2/ECS
+# Security group for EFS - allow NFS from EC2/ECS
 resource "aws_security_group" "efs" {
   name   = "efs-sg"
   vpc_id = data.aws_vpc.main.id
@@ -251,7 +252,7 @@ output "efs_dns_name" {
 2. **Enable encryption at rest and in transit** for all production file systems
 3. **Create mount targets in every AZ** your instances use to avoid cross-AZ traffic costs
 4. **Enable lifecycle policies** to move infrequently accessed files to IA storage
-5. **Monitor with CloudWatch** — watch BurstCreditBalance and PercentIOLimit
+5. **Monitor with CloudWatch** - watch BurstCreditBalance and PercentIOLimit
 
 ---
 

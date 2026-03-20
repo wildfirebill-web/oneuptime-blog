@@ -26,6 +26,7 @@ Pluto scans Kubernetes manifests and Helm releases for deprecated APIs.
 
 ```bash
 # Install pluto
+
 wget https://github.com/FairwindsOps/pluto/releases/download/v5.19.0/pluto_5.19.0_linux_amd64.tar.gz
 tar -xvf pluto_5.19.0_linux_amd64.tar.gz
 sudo mv pluto /usr/local/bin/

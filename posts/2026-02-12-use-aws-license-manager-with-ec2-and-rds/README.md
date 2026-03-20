@@ -44,6 +44,7 @@ First, enable License Manager and grant it the necessary permissions:
 
 ```bash
 # Create the service-linked role for License Manager
+
 aws license-manager create-service-linked-role
 
 # Update License Manager settings

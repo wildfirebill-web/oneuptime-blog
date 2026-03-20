@@ -16,6 +16,7 @@ Start with a minimal workflow that runs Molecule on every push and pull request.
 
 ```yaml
 # .github/workflows/molecule.yml - basic Molecule CI
+
 name: Molecule Test
 
 on:

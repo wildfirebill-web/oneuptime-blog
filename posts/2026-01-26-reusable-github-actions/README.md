@@ -42,6 +42,7 @@ Create a directory with an `action.yml` file:
 
 ```yaml
 # .github/actions/setup-node-project/action.yml
+
 name: 'Setup Node.js Project'
 description: 'Install Node.js, cache dependencies, and run npm install'
 

@@ -16,6 +16,7 @@ This collector config gathers the four resource dimensions needed for instance t
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   hostmetrics:
     collection_interval: 30s

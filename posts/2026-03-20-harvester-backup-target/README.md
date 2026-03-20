@@ -24,6 +24,7 @@ Configuring a backup target is a critical step in any production Harvester deplo
 
 ```bash
 # First, create an S3 bucket for Harvester backups
+
 aws s3 mb s3://my-harvester-backups --region us-east-1
 
 # Create an IAM policy for Harvester backup access
@@ -75,7 +76,7 @@ aws iam create-access-key --user-name harvester-backup
 2. Click **Edit** on **Backup Target**
 3. Configure:
 
-```
+```text
 Type:                   S3
 Endpoint:               https://s3.amazonaws.com
 Bucket Name:            my-harvester-backups
@@ -311,4 +312,4 @@ aws s3api put-bucket-lifecycle-configuration \
 
 ## Conclusion
 
-Configuring a reliable backup target is non-negotiable for production Harvester deployments. S3-compatible storage offers the best combination of durability, scalability, and operational simplicity — AWS S3 for cloud-connected deployments, MinIO for on-premises. NFS is a viable option for environments with existing NAS infrastructure. Whichever target you choose, verify it works by creating a test backup and performing a test restore before relying on it for production data protection. With the backup target configured, you can enable scheduled backups and sleep soundly knowing your VM data is protected off-cluster.
+Configuring a reliable backup target is non-negotiable for production Harvester deployments. S3-compatible storage offers the best combination of durability, scalability, and operational simplicity - AWS S3 for cloud-connected deployments, MinIO for on-premises. NFS is a viable option for environments with existing NAS infrastructure. Whichever target you choose, verify it works by creating a test backup and performing a test restore before relying on it for production data protection. With the backup target configured, you can enable scheduled backups and sleep soundly knowing your VM data is protected off-cluster.

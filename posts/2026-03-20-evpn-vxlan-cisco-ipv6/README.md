@@ -29,8 +29,8 @@ graph TB
 
 ## IPv6 Underlay Configuration (Leaf)
 
-```
-! Leaf-1 — NX-OS configuration
+```text
+! Leaf-1 - NX-OS configuration
 ! Enable required features
 feature ospfv3
 feature bgp
@@ -57,7 +57,7 @@ router ospfv3 1
 
 ## EVPN BGP Configuration (Leaf)
 
-```
+```text
 ! BGP with EVPN address family over IPv6
 router bgp 65001
   router-id 1.1.1.1
@@ -76,8 +76,8 @@ router bgp 65001
 
 ## VXLAN NVE Interface
 
-```
-! Network Virtual Edge (NVE) — VTEP definition
+```text
+! Network Virtual Edge (NVE) - VTEP definition
 interface nve1
   no shutdown
   source-interface loopback0  ! Uses IPv6 address 2001:db8:1::1
@@ -93,7 +93,7 @@ interface nve1
 
 ## VLAN and VNI Mapping
 
-```
+```text
 ! Create VLANs and map to VNIs
 vlan 100
   vn-segment 10100  ! VNI 10100
@@ -117,7 +117,7 @@ vrf context tenant1
 
 ## SVI for Distributed Anycast Gateway
 
-```
+```text
 ! Anycast gateway for hosts on VLAN 100
 interface vlan100
   no shutdown
@@ -132,7 +132,7 @@ fabric forwarding anycast-gateway-mac 0000.dead.beef
 
 ## Verification Commands
 
-```
+```text
 ! Verify NVE peers (remote VTEPs)
 show nve peers
 show nve peers detail

@@ -98,6 +98,7 @@ The mesh-wide PeerAuthentication resource should be named `default`. While Istio
 
 ```bash
 # Check existing policies in the root namespace
+
 kubectl get peerauthentication -n istio-system
 ```
 

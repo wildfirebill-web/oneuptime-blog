@@ -29,10 +29,10 @@ For private registries, add credentials first:
 
 ### Docker Hub
 
-```
+```bash
 Registry type: Docker Hub
 Username:      myusername
-Password:      mydockerpassword  (or access token — recommended)
+Password:      mydockerpassword  (or access token - recommended)
 ```
 
 To generate a Docker Hub access token:
@@ -42,7 +42,7 @@ To generate a Docker Hub access token:
 
 ### Private Registry
 
-```
+```text
 Registry type: Custom registry
 Name:          My Private Registry
 Registry URL:  registry.example.com:5000
@@ -52,7 +52,7 @@ Password:      mypassword
 
 ### GitHub Container Registry (GHCR)
 
-```
+```text
 Registry type: Custom registry
 Name:          GitHub Container Registry
 Registry URL:  ghcr.io
@@ -62,7 +62,7 @@ Password:      ghp_xxxxxxxxxxxxxxxx  (GitHub personal access token with read:pac
 
 ### AWS ECR
 
-```
+```text
 Registry type: AWS ECR
 Region:        us-east-1
 Access Key ID: AKIAXXXXXXXXXXXXXXXX
@@ -75,7 +75,7 @@ Secret Key:    xxxxxxxxxxxxxxxxxxxxxxxxx
 2. Click **Pull image**.
 3. Fill in the image details:
 
-```
+```bash
 Image: nginx:latest           (Docker Hub public image)
 Image: myorg/myapp:v2.1.0     (Docker Hub private image)
 Image: ghcr.io/myorg/myapp:latest  (GHCR)
@@ -87,17 +87,18 @@ Image: registry.example.com/myapp:v1  (private registry)
 
 ## Step 3: Pull Images During Container Creation
 
-You don't need to pre-pull — Portainer pulls automatically:
+You don't need to pre-pull - Portainer pulls automatically:
 
 1. Navigate to **Containers > Add container**.
 2. Enter the image name.
 3. Select the registry (for private images).
-4. Click **Deploy the container** — image is pulled automatically.
+4. Click **Deploy the container** - image is pulled automatically.
 
 ## Step 4: Pull Using Docker CLI Syntax
 
 ```bash
 # Pull from Docker Hub (public):
+
 docker pull nginx:alpine
 docker pull redis:7-alpine
 docker pull postgres:15

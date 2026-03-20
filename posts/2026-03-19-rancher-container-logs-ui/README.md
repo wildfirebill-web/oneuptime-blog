@@ -103,6 +103,7 @@ For more advanced log viewing, use kubectl commands from the Rancher UI's built-
 
 ```bash
 # View current logs
+
 kubectl logs <pod-name> -n <namespace>
 
 # Follow logs in real-time

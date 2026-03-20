@@ -36,6 +36,7 @@ Portainer sends a Docker-compatible API call to Podman, which creates and starts
 
 ```bash
 # Equivalent Podman command for what Portainer does:
+
 podman logs <container-name>
 
 # Portainer provides real-time log streaming via the API
@@ -46,7 +47,7 @@ podman logs <container-name>
 
 In Portainer go to **Containers > [container] > Console** and click **Connect**.
 
-Portainer opens a WebSocket terminal that calls Podman's exec API — identical to `podman exec -it <container> /bin/sh`.
+Portainer opens a WebSocket terminal that calls Podman's exec API - identical to `podman exec -it <container> /bin/sh`.
 
 ## Known Differences from Docker
 

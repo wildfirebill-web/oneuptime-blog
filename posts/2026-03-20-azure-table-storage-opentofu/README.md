@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Azure, Storage, Table, OpenTofu, NoSQL, Infrastructure
+Tags: Azure, Storage, Tables, OpenTofu, NoSQL, Infrastructure
 
 Description: Learn how to create and configure Azure Table Storage with OpenTofu for storing structured NoSQL data at massive scale with low cost.
 
@@ -14,6 +14,7 @@ Azure Table Storage is a NoSQL key-value store ideal for storing structured, non
 
 ```hcl
 # main.tf - Storage account for table storage
+
 resource "azurerm_resource_group" "rg" {
   name     = "my-table-storage-rg"
   location = "eastus"

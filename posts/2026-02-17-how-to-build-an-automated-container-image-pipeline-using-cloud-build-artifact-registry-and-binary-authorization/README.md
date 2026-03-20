@@ -33,6 +33,7 @@ Create a Docker repository in Artifact Registry:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   artifactregistry.googleapis.com \
   cloudbuild.googleapis.com \

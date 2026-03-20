@@ -55,6 +55,7 @@ Create `/etc/mysql/mysql.conf.d/group_replication.cnf`:
 ```ini
 [mysqld]
 # Server identification
+
 server_id = 1
 bind-address = 0.0.0.0
 

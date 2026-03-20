@@ -700,6 +700,7 @@ Each service needs its own `application.yml`:
 
 ```yaml
 # Order Service (port 8080)
+
 spring:
   application:
     name: order-service

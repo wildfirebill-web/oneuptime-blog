@@ -205,6 +205,7 @@ singleBinary:
       memory: 4Gi
 
 # Disable components not needed in single binary mode
+
 backend:
   replicas: 0
 read:

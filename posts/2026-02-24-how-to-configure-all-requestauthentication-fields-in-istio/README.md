@@ -80,6 +80,7 @@ There are two ways to provide the keys used to verify JWT signatures:
 
 ```yaml
 # Option 1: JWKS URI (recommended)
+
 jwtRules:
   - issuer: "https://accounts.google.com"
     jwksUri: "https://www.googleapis.com/oauth2/v3/certs"

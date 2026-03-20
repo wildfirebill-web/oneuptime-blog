@@ -58,6 +58,7 @@ Your VirtualService references a host that doesn't match any Kubernetes Service.
 
 ```yaml
 # Same namespace
+
 hosts:
   - api-service
 

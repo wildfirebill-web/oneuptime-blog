@@ -36,6 +36,7 @@ First, boot your server into the rescue system through the Robot panel. Then SSH
 
 ```bash
 # SSH into the Hetzner rescue system
+
 ssh root@<server-ip>
 
 # Download the Talos metal image

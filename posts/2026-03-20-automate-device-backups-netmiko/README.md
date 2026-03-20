@@ -22,6 +22,7 @@ from concurrent.futures import ThreadPoolExecutor
 from netmiko import ConnectHandler, NetmikoTimeoutException, NetmikoAuthenticationException
 
 # Configuration
+
 BACKUP_DIR = '/var/backups/network-configs'
 INVENTORY_FILE = '/etc/network-automation/inventory.yaml'
 LOG_FILE = '/var/log/network-backup.log'
@@ -154,7 +155,7 @@ if __name__ == '__main__':
 
 ## Step 3: Set Up a Dedicated Backup User on Devices
 
-```
+```text
 ! Cisco IOS - create read-only backup user
 username backup_user privilege 5 secret 0 backup_pass
 

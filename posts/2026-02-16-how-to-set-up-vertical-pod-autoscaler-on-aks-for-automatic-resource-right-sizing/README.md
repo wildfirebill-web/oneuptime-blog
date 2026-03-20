@@ -44,6 +44,7 @@ VPA is not installed by default on AKS. Install it using the official manifests 
 
 ```bash
 # Clone the VPA repository
+
 git clone https://github.com/kubernetes/autoscaler.git
 cd autoscaler/vertical-pod-autoscaler
 

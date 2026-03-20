@@ -22,6 +22,7 @@ Before starting:
 
 ```bash
 # Enable Cloud Build API
+
 gcloud services enable cloudbuild.googleapis.com --project=your-project-id
 ```
 

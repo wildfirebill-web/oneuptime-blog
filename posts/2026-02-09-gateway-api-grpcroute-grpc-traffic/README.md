@@ -33,6 +33,7 @@ Create a Gateway that accepts gRPC traffic:
 
 ```yaml
 # grpc-gateway.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

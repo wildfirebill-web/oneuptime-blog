@@ -75,6 +75,7 @@ First, install Elasticsearch on each server. We'll use version 8.x which include
 
 ```bash
 # Import the Elasticsearch GPG key
+
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 
 # Add the repository

@@ -14,6 +14,7 @@ Every completed span in OpenTelemetry has a status code: `UNSET`, `OK`, or `ERRO
 
 ```python
 # error_budget.py - Calculate error budgets from OpenTelemetry span metrics
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

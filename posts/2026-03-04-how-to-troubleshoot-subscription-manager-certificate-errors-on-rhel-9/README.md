@@ -28,6 +28,7 @@ sudo subscription-manager list --consumed
 
 ```bash
 # List installed certificates
+
 ls -la /etc/pki/consumer/
 ls -la /etc/pki/entitlement/
 ls -la /etc/pki/product/

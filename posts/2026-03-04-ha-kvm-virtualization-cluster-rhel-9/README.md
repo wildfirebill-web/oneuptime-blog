@@ -97,6 +97,7 @@ For live migration, set up passwordless SSH between nodes for the root user:
 
 ```bash
 # On node1
+
 sudo ssh-keygen -t rsa -N ""
 sudo ssh-copy-id root@node2
 

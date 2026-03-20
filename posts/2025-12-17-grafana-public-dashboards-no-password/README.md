@@ -37,6 +37,7 @@ For Grafana 9.x/10.x, enable the feature in Grafana configuration:
 
 ```ini
 # grafana.ini (Grafana 9.x / 10.x only)
+
 [feature_toggles]
 enable = publicDashboards
 ```

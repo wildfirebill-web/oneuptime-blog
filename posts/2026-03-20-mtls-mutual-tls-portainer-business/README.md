@@ -27,6 +27,7 @@ In standard TLS, only the server presents a certificate. In mTLS:
 
 ```bash
 # Create a directory for CA management
+
 mkdir -p /opt/portainer-ca/{ca,server,client}
 cd /opt/portainer-ca
 

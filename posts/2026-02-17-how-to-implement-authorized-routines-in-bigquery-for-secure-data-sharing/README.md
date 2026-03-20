@@ -97,6 +97,7 @@ Now authorize this routine to access the protected dataset. You do this by addin
 
 ```bash
 # Authorize the routine to access the protected dataset
+
 # This grants the routine (not the user) access to query protected_data
 bq update --authorized_routine \
   my_project:shared_analytics.get_customer_demographics \

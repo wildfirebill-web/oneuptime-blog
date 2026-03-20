@@ -33,6 +33,7 @@ provider "azurerm" {
 
 ```hcl
 # Azure reservations are managed via the azapi provider or Azure CLI
+
 # The azurerm provider does not yet support purchasing reservations directly
 
 resource "azapi_resource" "vm_reservation" {

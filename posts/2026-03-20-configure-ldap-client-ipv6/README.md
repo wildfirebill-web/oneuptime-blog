@@ -2,19 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LDAP, IPv6, ldap.conf, SSSD, nslcd, Authentication, Linux
+Tags: LDAP, IPv6, Ldap.conf, SSSD, Nslcd, Authentication, Linux
 
 Description: Configure Linux LDAP clients to connect to directory servers over IPv6 using ldap.conf, SSSD, and nslcd for centralized authentication on IPv6 networks.
 
 ---
 
-LDAP clients on Linux — whether using ldap-utils, SSSD, or nslcd — need specific configuration to connect to LDAP servers over IPv6. The key difference from IPv4 is the bracket notation for IPv6 addresses in LDAP URIs.
+LDAP clients on Linux - whether using ldap-utils, SSSD, or nslcd - need specific configuration to connect to LDAP servers over IPv6. The key difference from IPv4 is the bracket notation for IPv6 addresses in LDAP URIs.
 
 ## LDAP URI Format for IPv6
 
 IPv6 addresses in LDAP URIs require bracket notation:
 
-```
+```text
 ldap://[2001:db8::1]:389/dc=example,dc=com
 ldaps://[2001:db8::1]:636/dc=example,dc=com
 ```
@@ -27,6 +27,7 @@ The global LDAP client configuration at `/etc/ldap/ldap.conf` (or `/etc/openldap
 # /etc/ldap/ldap.conf
 
 # LDAP server URI with IPv6 address (brackets required)
+
 URI ldap://[2001:db8::1] ldap://[2001:db8::2]
 
 # Or using a hostname with AAAA record

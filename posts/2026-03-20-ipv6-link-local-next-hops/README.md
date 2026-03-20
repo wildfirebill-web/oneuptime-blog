@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Link-Local, Routing, fe80, Networking
+Tags: IPv6, Link-Local, Routing, Fe80, Networking
 
 Description: Understand why IPv6 routing uses link-local addresses as next hops, how to work with them correctly, and why you must always specify the interface.
 
@@ -13,9 +13,9 @@ In IPv6, router next hops are almost always **link-local addresses** (fe80::/10)
 ## Why Link-Local Addresses Are Used as Next Hops
 
 Link-local addresses are:
-1. **Automatically assigned** to every IPv6-capable interface — they exist even before global addresses are configured
-2. **Not route-dependent** — they don't require a routing entry to be reachable on the local link
-3. **Independent of global address assignment** — renumbering global prefixes doesn't affect router-to-router communication
+1. **Automatically assigned** to every IPv6-capable interface - they exist even before global addresses are configured
+2. **Not route-dependent** - they don't require a routing entry to be reachable on the local link
+3. **Independent of global address assignment** - renumbering global prefixes doesn't affect router-to-router communication
 
 This means routers can establish adjacencies and exchange routing information using fe80:: addresses, and the global prefix can be changed without breaking routing protocols.
 
@@ -25,6 +25,7 @@ Link-local addresses are only unique **within a single link**. The address `fe80
 
 ```bash
 # WRONG: Linux doesn't know which interface to use
+
 sudo ip -6 route add 2001:db8:1::/48 via fe80::1
 # Error: RTNETLINK answers: No route to host
 

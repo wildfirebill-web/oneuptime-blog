@@ -27,6 +27,7 @@ Navigate to your extension project and compile the production assets.
 
 ```bash
 # Install dependencies
+
 yarn install
 
 # Build the extension for production

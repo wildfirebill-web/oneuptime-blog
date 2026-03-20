@@ -264,6 +264,7 @@ This creates separate cache entries for gzip, brotli, and uncompressed responses
 
 ```http
 # Good: Cache per encoding and language
+
 Vary: Accept-Encoding, Accept-Language
 
 # Bad: Unique cache for every user

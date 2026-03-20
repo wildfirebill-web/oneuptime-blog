@@ -16,6 +16,7 @@ A development-focused Docker Compose file typically includes your application, d
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

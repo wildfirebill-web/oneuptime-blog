@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Tcpdump, Packet Capture, Networking, Linux
+Tags: RHEL, tcpdump, Packet Capture, Networking, Linux
 
 Description: A practical guide to using tcpdump on RHEL for capturing and analyzing network traffic, covering filters, output formats, file captures, and real-world troubleshooting examples.
 
@@ -16,6 +16,7 @@ It's usually installed by default, but verify:
 
 ```bash
 # Install tcpdump if needed
+
 sudo dnf install -y tcpdump
 ```
 

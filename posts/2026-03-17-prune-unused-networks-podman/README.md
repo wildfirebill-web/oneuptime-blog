@@ -18,6 +18,7 @@ As you create and tear down containers, networks accumulate. Unused networks con
 
 ```bash
 # List all Podman networks
+
 podman network ls
 
 # Example output:

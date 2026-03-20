@@ -29,12 +29,12 @@ The `dependsOn` field in `fleet.yaml` tells Fleet that a bundle should not be de
 ## Basic Dependency Configuration
 
 Consider this application stack:
-1. **Namespace** — Must be created first
-2. **Database** — Requires namespace, deployed second
-3. **Backend API** — Requires database, deployed third
-4. **Frontend** — Requires backend API, deployed last
+1. **Namespace** - Must be created first
+2. **Database** - Requires namespace, deployed second
+3. **Backend API** - Requires database, deployed third
+4. **Frontend** - Requires backend API, deployed last
 
-```
+```text
 app-stack/
 ├── 01-namespaces/
 │   ├── fleet.yaml
@@ -57,6 +57,7 @@ app-stack/
 
 ```yaml
 # 01-namespaces/fleet.yaml
+
 namespace: ""  # Namespaces don't need a target namespace
 targets:
   - clusterSelector: {}
@@ -153,7 +154,7 @@ targets:
 
 For a complete platform with ordered components:
 
-```
+```text
 platform/
 ├── crds/
 │   ├── fleet.yaml

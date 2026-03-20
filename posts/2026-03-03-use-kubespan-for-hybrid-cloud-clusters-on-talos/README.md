@@ -39,6 +39,7 @@ Start by generating the cluster configuration. The on-premises data center will 
 
 ```bash
 # Generate cluster configuration with KubeSpan enabled
+
 talosctl gen config hybrid-cluster https://10.10.0.10:6443 \
   --with-kubespan \
   --config-patch='[

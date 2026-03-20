@@ -31,6 +31,7 @@ Service Bus is better when you need:
 
 ```bash
 # Create a new Azure Functions project with TypeScript
+
 func init queue-processor --typescript
 cd queue-processor
 

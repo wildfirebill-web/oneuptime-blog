@@ -38,6 +38,7 @@ Here is a basic Pester test file that checks resource tagging compliance.
 
 ```powershell
 # TagPolicy.Tests.ps1
+
 # Validates that all resources in the target resource group have required tags
 
 param(

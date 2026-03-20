@@ -30,6 +30,7 @@ The `talosctl` command is your primary tool for observing upgrade progress.
 
 ```bash
 # Watch events on the node being upgraded
+
 talosctl events --nodes <node-ip> --follow
 
 # This shows real-time events including:

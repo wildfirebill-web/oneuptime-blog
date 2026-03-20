@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, Linux, IPv6, Address Autoconfiguration, sysctl, NetworkManager
+Tags: SLAAC, Linux, IPv6, Address Autoconfiguration, Sysctl, NetworkManager
 
 Description: Configure IPv6 SLAAC on Linux using sysctl, NetworkManager, and systemd-networkd to automatically obtain IPv6 addresses from Router Advertisements.
 
@@ -16,6 +16,7 @@ The key kernel parameters controlling SLAAC behavior.
 
 ```bash
 # Accept Router Advertisements and perform SLAAC
+
 # 0 = disabled, 1 = accept if forwarding disabled, 2 = always accept
 cat /proc/sys/net/ipv6/conf/eth0/accept_ra
 # Expected: 1 (on non-routing hosts)

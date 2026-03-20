@@ -58,6 +58,7 @@ While the default bridge network works, creating custom bridge networks provides
 
 ```bash
 # Create a custom bridge network
+
 docker network create --driver bridge my-bridge-network
 
 # Verify the network was created

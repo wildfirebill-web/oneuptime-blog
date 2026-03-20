@@ -30,6 +30,7 @@ Create a structured label scheme that supports efficient policy selectors.
 
 ```yaml
 # label-taxonomy-example.yaml
+
 # Example workload endpoint with structured labels
 apiVersion: projectcalico.org/v3
 kind: WorkloadEndpoint

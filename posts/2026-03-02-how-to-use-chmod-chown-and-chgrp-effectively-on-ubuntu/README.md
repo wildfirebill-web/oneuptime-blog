@@ -18,6 +18,7 @@ Three commands handle the bulk of permission management on Linux: `chmod` sets p
 
 ```bash
 # Set specific permissions directly
+
 chmod 644 filename      # rw-r--r--
 chmod 755 dirname       # rwxr-xr-x (standard directory or executable)
 chmod 600 ~/.ssh/id_rsa # rw------- (private key)

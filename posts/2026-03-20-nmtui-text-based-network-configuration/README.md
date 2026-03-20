@@ -1,4 +1,4 @@
-# How to Use nmtui for Text-Based Network Configuration
+# How to Use nmtui for Text-Based Network Configuration - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use nmtui (NetworkManager Text User Interface) to conf
 
 ## Introduction
 
-nmtui is a curses-based text user interface for NetworkManager, available on most modern Linux distributions. It provides an interactive menu for configuring network connections without needing a GUI or memorizing complex `nmcli` syntax — ideal for server environments and remote SSH sessions.
+nmtui is a curses-based text user interface for NetworkManager, available on most modern Linux distributions. It provides an interactive menu for configuring network connections without needing a GUI or memorizing complex `nmcli` syntax - ideal for server environments and remote SSH sessions.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ nmtui is a curses-based text user interface for NetworkManager, available on mos
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install network-manager
 
 # RHEL/CentOS/Fedora
@@ -36,9 +37,9 @@ nmtui
 ```
 
 The main menu offers three options:
-1. **Edit a connection** — configure existing connections
-2. **Activate a connection** — bring connections up or down
-3. **Set system hostname** — change the hostname
+1. **Edit a connection** - configure existing connections
+2. **Activate a connection** - bring connections up or down
+3. **Set system hostname** - change the hostname
 
 Navigate with arrow keys, select with Enter, and go back with Escape.
 

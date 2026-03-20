@@ -27,6 +27,7 @@ Each region's Collector receives local data and forwards a copy to the other reg
 
 ```yaml
 # otel-collector-region-us-east.yaml
+
 # Collector config for US-East region with cross-region forwarding
 
 receivers:

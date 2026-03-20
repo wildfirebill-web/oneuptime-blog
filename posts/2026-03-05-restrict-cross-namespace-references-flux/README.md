@@ -18,6 +18,7 @@ By default, a Flux Kustomization in one namespace can reference a GitRepository 
 
 ```yaml
 # This Kustomization in namespace "team-alpha" references a source in "flux-system"
+
 # Without restrictions, any tenant can reference any source in any namespace
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

@@ -20,6 +20,7 @@ Download the official Keycloak image.
 
 ```bash
 # Pull the latest Keycloak image
+
 podman pull quay.io/keycloak/keycloak:latest
 
 # Verify the image

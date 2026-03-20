@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, ISC dhcpd, Linux, IPv6, DHCP Server, dhcp6
+Tags: DHCPv6, ISC dhcpd, Linux, IPv6, DHCP Server, Dhcp6
 
 Description: Configure ISC dhcpd as a DHCPv6 server on Linux with subnet definitions, address pools, host reservations, and prefix delegation using the classic dhcpd6.conf syntax.
 
@@ -14,6 +14,7 @@ ISC dhcpd (the original ISC DHCP server) supports DHCPv6 via a separate daemon i
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install isc-dhcp-server
 
 # RHEL/CentOS

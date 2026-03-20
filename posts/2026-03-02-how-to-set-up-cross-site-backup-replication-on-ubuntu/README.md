@@ -26,6 +26,7 @@ Replication runs unattended, so password-less SSH authentication is required:
 
 ```bash
 # On the primary site server - generate a dedicated replication key
+
 sudo -u backup ssh-keygen -t ed25519 -f /home/backup/.ssh/replication_key -N ""
 
 # Copy the public key to the secondary site

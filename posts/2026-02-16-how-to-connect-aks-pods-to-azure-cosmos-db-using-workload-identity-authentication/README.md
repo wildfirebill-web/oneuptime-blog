@@ -31,6 +31,7 @@ If your cluster does not already have OIDC issuer and workload identity enabled,
 
 ```bash
 # Enable OIDC issuer and workload identity on existing cluster
+
 az aks update \
   --resource-group myResourceGroup \
   --name myAKSCluster \

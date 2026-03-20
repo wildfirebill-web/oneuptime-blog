@@ -26,6 +26,7 @@ Set up providers for both AWS accounts:
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

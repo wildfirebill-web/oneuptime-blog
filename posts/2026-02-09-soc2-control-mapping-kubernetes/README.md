@@ -26,6 +26,7 @@ Start by installing OPA Gatekeeper, which provides policy enforcement through co
 
 ```bash
 # Install OPA Gatekeeper
+
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/master/deploy/gatekeeper.yaml
 
 # Wait for Gatekeeper to be ready

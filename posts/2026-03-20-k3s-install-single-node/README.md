@@ -8,7 +8,7 @@ Description: A beginner-friendly guide to installing K3s on a single Linux node 
 
 ## Introduction
 
-K3s is a lightweight, certified Kubernetes distribution from Rancher designed for resource-constrained environments. A single K3s binary contains everything needed to run a full Kubernetes cluster — API server, scheduler, controller manager, kubelet, and kube-proxy — making it perfect for development, edge deployments, and single-node production workloads.
+K3s is a lightweight, certified Kubernetes distribution from Rancher designed for resource-constrained environments. A single K3s binary contains everything needed to run a full Kubernetes cluster - API server, scheduler, controller manager, kubelet, and kube-proxy - making it perfect for development, edge deployments, and single-node production workloads.
 
 ## System Requirements
 
@@ -24,6 +24,7 @@ K3s provides a simple one-liner installation script:
 
 ```bash
 # Install K3s using the official install script
+
 curl -sfL https://get.k3s.io | sudo sh -
 
 # The script automatically:

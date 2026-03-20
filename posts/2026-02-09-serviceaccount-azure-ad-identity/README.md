@@ -24,6 +24,7 @@ Enable OIDC issuer on your AKS cluster:
 
 ```bash
 # For new clusters
+
 az aks create \
     --resource-group my-rg \
     --name my-cluster \

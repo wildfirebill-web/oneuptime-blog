@@ -20,6 +20,7 @@ Pass a Git URL directly to `podman build`.
 
 ```bash
 # Build from a public GitHub repository
+
 podman build -t myapp:latest https://github.com/myorg/myapp.git
 
 # Build from a GitLab repository

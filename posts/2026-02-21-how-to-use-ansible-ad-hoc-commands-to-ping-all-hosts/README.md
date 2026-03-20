@@ -25,6 +25,7 @@ This means a successful ping tells you much more than network reachability. It c
 
 ```bash
 # Ping all hosts in the default inventory
+
 ansible all -m ping
 ```
 

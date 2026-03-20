@@ -217,6 +217,7 @@ SOURCE="registry.staging.example.com/my-app:${BUILD_TAG}"
 DEST="registry.prod.example.com/my-app:${BUILD_TAG}"
 
 # Verify the source image exists and is valid
+
 skopeo inspect docker://${SOURCE} > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "Source image not found: ${SOURCE}"

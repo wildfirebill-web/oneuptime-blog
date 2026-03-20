@@ -27,6 +27,7 @@ Configure your Spring Boot application to connect to PostgreSQL through the Clou
 
 ```yaml
 # src/main/resources/application-gke.yml
+
 spring:
   datasource:
     # Cloud SQL Proxy runs as a sidecar, exposing the database on localhost

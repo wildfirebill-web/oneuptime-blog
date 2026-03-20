@@ -33,6 +33,7 @@ The cleanest approach is using External Secrets Operator (ESO) to sync credentia
 
 ```yaml
 # external-secret for ArgoCD namespace
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

@@ -18,6 +18,7 @@ If you don't have CDK installed yet, grab it globally:
 
 ```bash
 # Install the AWS CDK CLI globally
+
 npm install -g aws-cdk
 ```
 

@@ -78,6 +78,7 @@ spec:
 EOF
 
 # Ping should now fail
+
 kubectl exec pod-a -- ping -c3 $POD_B_IP && echo "FAIL: traffic not blocked" || echo "PASS: traffic blocked"
 kubectl delete networkpolicy isolate-pod-b
 ```

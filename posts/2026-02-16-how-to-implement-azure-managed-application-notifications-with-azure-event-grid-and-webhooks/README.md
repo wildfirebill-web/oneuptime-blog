@@ -45,6 +45,7 @@ First, create a system topic that captures events from your managed application 
 
 ```bash
 # Create an Event Grid system topic for managed application events
+
 az eventgrid system-topic create \
   --name topic-managed-app-events \
   --resource-group rg-saas-operations \

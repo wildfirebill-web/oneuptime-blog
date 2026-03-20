@@ -21,7 +21,7 @@ graph LR
 
 In your GitLab project, go to **Settings > CI/CD > Variables** and add:
 
-```
+```text
 PORTAINER_WEBHOOK_URL   - Your Portainer webhook URL (masked)
 PORTAINER_API_TOKEN     - Your Portainer API access token (masked)
 ```
@@ -30,6 +30,7 @@ PORTAINER_API_TOKEN     - Your Portainer API access token (masked)
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - test
   - build

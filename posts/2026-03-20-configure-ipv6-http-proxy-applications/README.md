@@ -14,8 +14,9 @@ Configuring an HTTP proxy for IPv6 traffic requires understanding how IPv6 addre
 
 Before configuring a proxy, understand the correct URL format for IPv6:
 
-```
+```text
 # Incorrect (ambiguous)
+
 http://2001:db8::1:8080
 
 # Correct (brackets wrap the address)

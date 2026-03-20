@@ -39,6 +39,7 @@ The simplest approach is to use the official OpenTelemetry Lambda Layer:
 
 ```yaml
 # serverless.yml configuration for AWS Lambda
+
 # This configuration adds the OpenTelemetry collector layer and environment variables
 
 service: my-service

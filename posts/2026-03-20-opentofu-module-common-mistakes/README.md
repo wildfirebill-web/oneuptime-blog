@@ -1,11 +1,10 @@
----
-title: "Common Mistakes When Writing OpenTofu Modules"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, best-practices
-description: "Avoid these common pitfalls when writing OpenTofu modules to keep your infrastructure code maintainable and reliable."
----
-
 # Common Mistakes When Writing OpenTofu Modules
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Best-practices
+
+Description: Avoid these common pitfalls when writing OpenTofu modules to keep your infrastructure code maintainable and reliable.
 
 Writing OpenTofu modules seems straightforward, but many teams fall into recurring patterns that make their modules brittle, hard to use, or difficult to maintain. Here are the most common mistakes and how to fix them.
 
@@ -13,6 +12,7 @@ Writing OpenTofu modules seems straightforward, but many teams fall into recurri
 
 ```hcl
 # BAD: hardcoded region inside module
+
 provider "aws" {
   region = "us-east-1"  # Never do this in a module
 }
@@ -24,12 +24,12 @@ resource "aws_vpc" "main" {
 
 ```hcl
 # GOOD: let the caller configure the provider
-# modules/vpc/main.tf — no provider block
+# modules/vpc/main.tf - no provider block
 resource "aws_vpc" "main" {
   cidr_block = var.cidr_block
 }
 
-# Root module — caller configures provider
+# Root module - caller configures provider
 provider "aws" {
   region = var.aws_region
 }
@@ -95,7 +95,7 @@ output "endpoint" {
 ## Mistake 4: Exposing Too Few Outputs
 
 ```hcl
-# BAD: only exposes one output — callers can't do much with it
+# BAD: only exposes one output - callers can't do much with it
 output "id" {
   value = aws_instance.app.id
 }
@@ -117,12 +117,12 @@ output "private_ip" {
 }
 
 output "security_group_id" {
-  description = "Security group ID — use to grant access from other resources"
+  description = "Security group ID - use to grant access from other resources"
   value       = aws_security_group.main.id
 }
 
 output "iam_role_name" {
-  description = "IAM role name — use to attach additional policies"
+  description = "IAM role name - use to attach additional policies"
   value       = aws_iam_role.main.name
 }
 ```
@@ -130,7 +130,7 @@ output "iam_role_name" {
 ## Mistake 5: Creating Resources the Caller Already Has
 
 ```hcl
-# BAD: always creates a VPC — what if caller has one?
+# BAD: always creates a VPC - what if caller has one?
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }
@@ -164,7 +164,7 @@ variable "user_names" {
 resource "aws_iam_user" "users" {
   count = length(var.user_names)
   name  = var.user_names[count.index]
-  # Removing "bob" shifts indices — destroys alice!
+  # Removing "bob" shifts indices - destroys alice!
 }
 
 # GOOD: use for_each with set

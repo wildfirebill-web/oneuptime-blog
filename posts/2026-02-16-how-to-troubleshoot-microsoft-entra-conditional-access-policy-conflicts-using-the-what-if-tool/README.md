@@ -170,6 +170,7 @@ For large policy sets, manually running What If in the portal for every scenario
 
 ```powershell
 # Evaluate Conditional Access policies for a specific scenario
+
 # This uses the Microsoft Graph API What If endpoint
 Connect-MgGraph -Scopes "Policy.Read.All", "Directory.Read.All"
 

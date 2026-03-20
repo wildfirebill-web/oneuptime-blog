@@ -32,6 +32,7 @@ Check if your workload fits the T3 burst model:
 
 ```bash
 # Monitor CPU credit balance on a T3 instance
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/EC2 \
   --metric-name CPUCreditBalance \

@@ -29,6 +29,7 @@ Longhorn uses the Linux `cryptsetup` utility with LUKS2 to encrypt volumes:
 
 ```bash
 # Check cryptsetup is installed on each node
+
 cryptsetup --version
 
 # Ensure dm_crypt module is loaded
@@ -227,4 +228,4 @@ kubectl patch secret longhorn-crypto \
 
 ## Conclusion
 
-Longhorn's LUKS-based volume encryption provides strong data-at-rest protection for sensitive workloads. By creating encrypted StorageClasses backed by Kubernetes Secrets, you can ensure that persistent data is always encrypted on disk. For production environments, use strong randomly generated passphrases, store them securely (consider using external secret management like Vault), and ensure that encryption keys are backed up — without the key, encrypted data cannot be recovered.
+Longhorn's LUKS-based volume encryption provides strong data-at-rest protection for sensitive workloads. By creating encrypted StorageClasses backed by Kubernetes Secrets, you can ensure that persistent data is always encrypted on disk. For production environments, use strong randomly generated passphrases, store them securely (consider using external secret management like Vault), and ensure that encryption keys are backed up - without the key, encrypted data cannot be recovered.

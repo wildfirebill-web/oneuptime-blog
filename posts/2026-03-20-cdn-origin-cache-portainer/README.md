@@ -22,6 +22,7 @@ Navigate to **Stacks** > **Add Stack** and use the following configuration:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

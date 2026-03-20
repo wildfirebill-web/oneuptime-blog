@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, ipaddress, IPv6, Standard Library, Validation, Subnetting, RFC 5952
+Tags: Python, Ipaddress, IPv6, Standard Library, Validation, Subnetting, RFC 5952
 
 Description: Master Python's built-in ipaddress module for IPv6 address parsing, validation, comparison, subnetting, and network calculations without external dependencies.
 
 ## Introduction
 
-Python's `ipaddress` module (stdlib since 3.3) provides comprehensive IPv6 support. It handles address parsing, prefix normalization, subnet operations, and address type classification — all without installing additional packages.
+Python's `ipaddress` module (stdlib since 3.3) provides comprehensive IPv6 support. It handles address parsing, prefix normalization, subnet operations, and address type classification - all without installing additional packages.
 
 ## Basic Address Operations
 
@@ -16,6 +16,7 @@ Python's `ipaddress` module (stdlib since 3.3) provides comprehensive IPv6 suppo
 import ipaddress
 
 # Parse IPv6 address
+
 addr = ipaddress.IPv6Address("2001:DB8::1")
 print(str(addr))          # 2001:db8::1 (canonical lowercase)
 print(repr(addr))         # IPv6Address('2001:db8::1')
@@ -27,7 +28,7 @@ print(addr.compressed)    # 2001:db8::1
 # Equality and comparison
 a1 = ipaddress.IPv6Address("::1")
 a2 = ipaddress.IPv6Address("0::1")
-print(a1 == a2)  # True — same address
+print(a1 == a2)  # True - same address
 
 # Check address properties
 addr = ipaddress.IPv6Address("::1")

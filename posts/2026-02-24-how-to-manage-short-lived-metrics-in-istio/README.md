@@ -51,6 +51,7 @@ The `rate()` function handles counter resets (from pod restarts) automatically. 
 
 ```promql
 # This works for pods that live at least 2 scrape intervals
+
 sum(rate(istio_requests_total{
   reporter="destination",
   destination_workload="my-service"

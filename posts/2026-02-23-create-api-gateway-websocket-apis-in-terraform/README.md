@@ -18,6 +18,7 @@ The foundation is the `aws_apigatewayv2_api` resource with the `WEBSOCKET` proto
 
 ```hcl
 # The WebSocket API
+
 resource "aws_apigatewayv2_api" "websocket" {
   name                       = "realtime-api"
   protocol_type              = "WEBSOCKET"

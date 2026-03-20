@@ -63,6 +63,7 @@ The minimal `automated: {}` enables auto-sync without pruning or self-healing.
 
 ```bash
 # Enable auto-sync on an existing application
+
 argocd app set my-app --sync-policy automated
 
 # Disable auto-sync

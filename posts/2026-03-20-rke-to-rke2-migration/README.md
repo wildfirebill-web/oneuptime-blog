@@ -26,6 +26,7 @@ Inventory everything running in your existing cluster:
 export KUBECONFIG=kube_config_cluster.yml
 
 # Export a full inventory
+
 kubectl get all --all-namespaces -o yaml > all-resources-backup.yaml
 
 # List all namespaces

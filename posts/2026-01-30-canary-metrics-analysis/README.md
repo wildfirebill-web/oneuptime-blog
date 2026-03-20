@@ -46,6 +46,7 @@ Here is a configuration structure that defines which metrics to analyze.
 
 ```yaml
 # canary-analysis-config.yaml
+
 metrics:
   - name: request_latency_p99
     query: histogram_quantile(0.99, rate(http_request_duration_seconds_bucket{version="{{version}}"}[5m]))

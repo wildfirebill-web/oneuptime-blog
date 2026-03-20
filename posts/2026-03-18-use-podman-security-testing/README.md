@@ -22,6 +22,7 @@ Trivy is a popular vulnerability scanner for container images:
 
 ```bash
 # Run Trivy to scan an image
+
 podman run --rm \
   -v /tmp/trivy-cache:/root/.cache/ \
   aquasec/trivy:latest \

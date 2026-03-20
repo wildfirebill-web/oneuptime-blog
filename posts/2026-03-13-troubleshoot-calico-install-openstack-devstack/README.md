@@ -24,6 +24,7 @@ DevStack provides a `logs/` directory with detailed logs from each service's ins
 
 ```bash
 # Main DevStack log
+
 less /opt/stack/logs/stack.sh.log | grep -iE "error|fail|calico"
 
 # Calico-specific service logs

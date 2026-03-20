@@ -20,6 +20,7 @@ Define budgets in a central configuration:
 
 ```yaml
 # budgets.yaml
+
 observability_budgets:
   fiscal_month: "2026-02"
 

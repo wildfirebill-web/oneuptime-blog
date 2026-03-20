@@ -33,6 +33,7 @@ lamp-stack/
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     lamp_servers:

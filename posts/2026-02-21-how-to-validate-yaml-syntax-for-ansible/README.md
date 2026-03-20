@@ -16,6 +16,7 @@ The simplest validation is Ansible's built-in syntax checker:
 
 ```bash
 # Check playbook syntax without executing
+
 ansible-playbook site.yml --syntax-check
 ```
 

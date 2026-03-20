@@ -24,6 +24,7 @@ Snapshots are:
 
 ```bash
 # First, configure path in elasticsearch.yml
+
 # path.repo: ["/mount/backups", "/mount/backup2"]
 
 # Register repository

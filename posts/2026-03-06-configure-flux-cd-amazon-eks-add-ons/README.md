@@ -35,6 +35,7 @@ EKS supports several categories of add-ons:
 
 ```bash
 # List all available EKS add-ons
+
 aws eks describe-addon-versions \
   --query 'addons[].{Name:addonName,Versions:addonVersions[0].addonVersion}' \
   --output table

@@ -40,6 +40,7 @@ Create a Cloud Tasks queue configured to stay within the target API's rate limit
 
 ```bash
 # Create a queue that dispatches at a rate safe for the target API
+
 # Example: Slack allows ~1 request per second per method
 gcloud tasks queues create slack-notification-buffer \
   --location=us-central1 \

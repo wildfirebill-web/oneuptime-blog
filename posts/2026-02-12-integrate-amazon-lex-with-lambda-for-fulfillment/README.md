@@ -50,6 +50,7 @@ Using the CLI:
 
 ```bash
 # Create an IAM role for the Lambda function
+
 aws iam create-role \
   --role-name LexFulfillmentRole \
   --assume-role-policy-document '{

@@ -134,6 +134,7 @@ flowchart LR
 
 ```yaml
 # templates/hooks/pre-upgrade-backup.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

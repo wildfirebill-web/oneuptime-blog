@@ -22,6 +22,7 @@ When you suspect a compromise, the first priority is to isolate the affected res
 
 ```bash
 # Step 1a: Snapshot the boot and data disks of the affected VM
+
 # Do this BEFORE any other action to capture the current state
 gcloud compute disks snapshot compromised-vm-boot \
   --project=PROJECT_ID \

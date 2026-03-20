@@ -22,6 +22,7 @@ Before pulling the trigger, make sure you actually need the upgrade. Here are th
 
 ```bash
 # Check your current resource count via the API
+
 curl -s \
   --header "Authorization: Bearer $TF_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

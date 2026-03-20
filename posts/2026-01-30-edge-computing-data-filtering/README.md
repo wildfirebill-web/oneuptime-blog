@@ -72,6 +72,7 @@ from datetime import datetime, timedelta
 import logging
 
 # Configure logging for filter decisions
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("edge_filter")
 

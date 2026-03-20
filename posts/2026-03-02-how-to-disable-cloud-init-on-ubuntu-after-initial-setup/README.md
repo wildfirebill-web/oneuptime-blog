@@ -26,6 +26,7 @@ The recommended way to disable cloud-init entirely:
 
 ```bash
 # Create the disable marker file
+
 sudo touch /etc/cloud/cloud-init.disabled
 
 # Verify it's there

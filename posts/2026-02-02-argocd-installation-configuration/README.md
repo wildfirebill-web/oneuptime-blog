@@ -55,6 +55,7 @@ The simplest way to get ArgoCD running is using the official manifests. This ins
 
 ```bash
 # Create the argocd namespace
+
 kubectl create namespace argocd
 
 # Apply the installation manifest
@@ -530,7 +531,7 @@ spec:
         - /spec/clusterIP
 ```
 
-### Resource Limits Exceeded
+Resource Limits Exceeded
 
 If ArgoCD is running slow, increase resource limits:
 

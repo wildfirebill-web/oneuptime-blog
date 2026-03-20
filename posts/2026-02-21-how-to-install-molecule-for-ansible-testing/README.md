@@ -34,6 +34,7 @@ Check your Python version first.
 
 ```bash
 # Verify Python version
+
 python3 --version
 
 # Verify pip is available

@@ -49,6 +49,7 @@ The first thing to do is increase the grace period from the default 30 seconds t
 
 ```yaml
 # long-running-deployment.yaml
+
 # Deployment with extended termination grace period for long-running jobs
 apiVersion: apps/v1
 kind: Deployment

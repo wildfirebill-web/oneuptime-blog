@@ -14,6 +14,7 @@ Password policies and account lockout rules are essential for securing any LDAP 
 
 ```bash
 # Display the current password policy settings
+
 dsconf localhost pwpolicy get
 ```
 

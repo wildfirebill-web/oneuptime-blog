@@ -22,6 +22,7 @@ AKS clusters frequently rely on Azure services. You need to identify every one o
 
 ```bash
 # Check for Azure Disk PVs
+
 kubectl get pv -o json | \
   jq '.items[] | select(.spec.csi.driver=="disk.csi.azure.com") | {name: .metadata.name, size: .spec.capacity.storage}'
 

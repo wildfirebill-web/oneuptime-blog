@@ -80,6 +80,7 @@ The most common use case is Kubernetes service discovery for monitoring pod metr
 
 ```yaml
 # extensions section defines observer configuration
+
 extensions:
   # Kubernetes observer discovers pods and services
   k8s_observer:

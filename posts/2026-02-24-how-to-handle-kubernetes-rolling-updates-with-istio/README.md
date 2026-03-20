@@ -219,6 +219,7 @@ Here is a script to verify zero-downtime during a rolling update:
 #!/bin/bash
 
 # Start continuous traffic in background
+
 echo "Starting traffic generator..."
 while true; do
   CODE=$(kubectl exec -n default deploy/sleep -c sleep -- \

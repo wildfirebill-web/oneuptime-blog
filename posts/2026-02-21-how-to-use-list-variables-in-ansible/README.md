@@ -17,6 +17,7 @@ YAML supports two formats for lists:
 ```yaml
 ---
 # list-definitions.yml
+
 # Different ways to define list variables
 
 - hosts: localhost

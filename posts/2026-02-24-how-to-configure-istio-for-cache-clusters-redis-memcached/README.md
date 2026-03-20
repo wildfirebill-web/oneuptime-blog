@@ -262,6 +262,7 @@ Even though Istio can't parse Redis or Memcached protocols, it still provides va
 
 ```promql
 # Bytes per second to/from cache
+
 rate(istio_tcp_sent_bytes_total{destination_service="redis.cache.svc.cluster.local"}[5m])
 rate(istio_tcp_received_bytes_total{destination_service="redis.cache.svc.cluster.local"}[5m])
 

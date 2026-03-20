@@ -52,6 +52,7 @@ When both tools are used for Kubernetes deployment, they take very different app
 
 ```yaml
 # ArgoCD understands Kubernetes deeply
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

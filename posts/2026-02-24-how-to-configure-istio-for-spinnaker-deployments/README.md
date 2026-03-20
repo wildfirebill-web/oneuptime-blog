@@ -18,6 +18,7 @@ Assuming you have Spinnaker installed (via Halyard or the Operator), configure t
 
 ```bash
 # Using Halyard
+
 hal config provider kubernetes account add my-k8s-account \
   --context $(kubectl config current-context) \
   --provider-version v2 \

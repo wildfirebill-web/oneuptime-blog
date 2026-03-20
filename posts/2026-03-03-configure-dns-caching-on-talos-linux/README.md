@@ -69,6 +69,7 @@ Let me break down each cache directive:
 
 ```text
 # success <max_entries> <max_ttl> <min_ttl>
+
 # Cache up to 9984 successful responses
 # Use the record's TTL but cap at 300 seconds
 # Minimum cache time is 30 seconds even if the record says less

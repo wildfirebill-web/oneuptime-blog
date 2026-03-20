@@ -1,4 +1,4 @@
-# How to Fix "Error: State Lock" in OpenTofu
+# How to Fix 'Error: State Lock' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,11 +8,11 @@ Description: Learn how to diagnose and resolve state lock errors in OpenTofu, in
 
 ## Introduction
 
-OpenTofu acquires a state lock before any plan or apply to prevent concurrent modifications that could corrupt state. The "Error acquiring the state lock" message means another process already holds the lock — or a previous process crashed without releasing it.
+OpenTofu acquires a state lock before any plan or apply to prevent concurrent modifications that could corrupt state. The "Error acquiring the state lock" message means another process already holds the lock - or a previous process crashed without releasing it.
 
 ## Common Error Message
 
-```
+```text
 Error: Error acquiring the state lock
 
 Error message: ConditionalCheckFailedException: The conditional request failed
@@ -32,10 +32,11 @@ First, check whether another `tofu` process is genuinely running:
 
 ```bash
 # Check for running tofu processes
+
 ps aux | grep tofu
 
-# Check CI/CD — is there a parallel pipeline run?
-# Check the lock's "Who" field — is that user/machine active?
+# Check CI/CD - is there a parallel pipeline run?
+# Check the lock's "Who" field - is that user/machine active?
 ```
 
 If a legitimate process is running, wait for it to finish.
@@ -51,7 +52,7 @@ tofu force-unlock 12345678-1234-1234-1234-123456789012
 
 You will be prompted to confirm:
 
-```
+```hcl
 Do you really want to force-unlock?
   OpenTofu will remove the lock on the remote state.
   This will allow local OpenTofu commands to modify this state, even though it
@@ -108,7 +109,7 @@ terraform {
     key            = "prod/vpc/tofu.tfstate"
     region         = "us-east-1"
     dynamodb_table = "opentofu-state-locks"
-    # Lock timeout — fail after 5 minutes instead of waiting forever
+    # Lock timeout - fail after 5 minutes instead of waiting forever
   }
 }
 ```

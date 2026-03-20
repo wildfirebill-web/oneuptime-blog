@@ -18,6 +18,7 @@ Scheduler settings are configured under `cluster.scheduler` in the Talos machine
 
 ```yaml
 # Basic scheduler extra args
+
 cluster:
   scheduler:
     extraArgs:

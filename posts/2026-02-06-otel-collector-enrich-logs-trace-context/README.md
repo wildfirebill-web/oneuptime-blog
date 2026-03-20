@@ -30,6 +30,7 @@ The OpenTelemetry Collector's `transform` processor can copy attributes between 
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

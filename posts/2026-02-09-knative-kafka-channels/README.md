@@ -24,6 +24,7 @@ Install the Kafka Channel controller:
 
 ```bash
 # Install Knative Kafka Channel
+
 kubectl apply -f https://github.com/knative-extensions/eventing-kafka/releases/latest/download/channel-consolidated.yaml
 
 # Verify installation

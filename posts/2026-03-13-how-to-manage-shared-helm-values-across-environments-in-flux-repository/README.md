@@ -44,6 +44,7 @@ Flux HelmRelease supports multiple values sources that are merged in order. Defi
 
 ```yaml
 # helm/releases/nginx/base-values.yaml
+
 replicaCount: 1
 image:
   registry: docker.io

@@ -57,6 +57,7 @@ The recommended way to install the descheduler is via Helm:
 
 ```bash
 # Add the descheduler Helm repository
+
 helm repo add descheduler https://kubernetes-sigs.github.io/descheduler/
 
 # Update your Helm repositories

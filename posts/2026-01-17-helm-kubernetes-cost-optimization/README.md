@@ -76,6 +76,7 @@ helm install kubecost kubecost/cost-analyzer \
 
 ```yaml
 # kubecost-values.yaml
+
 # Global settings
 global:
   prometheus:
@@ -414,9 +415,9 @@ spec:
     Environment: production
 ```
 
-## Resource Quotas and Limits
+Resource Quotas and Limits
 
-### ResourceQuota Template
+ResourceQuota Template
 
 ```yaml
 # templates/resourcequota.yaml

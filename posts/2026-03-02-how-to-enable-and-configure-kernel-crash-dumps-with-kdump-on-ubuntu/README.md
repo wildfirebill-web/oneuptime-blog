@@ -26,6 +26,7 @@ The capture kernel writes a dump file (typically `/var/crash/`) that you can the
 
 ```bash
 # Install the kdump-tools package
+
 sudo apt update
 sudo apt install kdump-tools
 

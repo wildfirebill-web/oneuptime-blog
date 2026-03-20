@@ -1,4 +1,4 @@
-# How to Add a Kubernetes Environment to Portainer
+# How to Add a Kubernetes Environment to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Portainer can manage Kubernetes clusters, providing a visual interface for deplo
 
 ```bash
 # Create namespace
+
 kubectl create namespace portainer
 
 # Create service account and RBAC
@@ -182,4 +183,4 @@ After connecting, configure the environment:
 
 ## Conclusion
 
-Kubernetes environments in Portainer provide a user-friendly interface to manage complex Kubernetes resources. The agent-based method is recommended for security and functionality — it provides deeper integration including the Portainer-specific RBAC for namespace-level access control. Once connected, your team can deploy applications, manage configurations, and troubleshoot Kubernetes workloads without kubectl expertise.
+Kubernetes environments in Portainer provide a user-friendly interface to manage complex Kubernetes resources. The agent-based method is recommended for security and functionality - it provides deeper integration including the Portainer-specific RBAC for namespace-level access control. Once connected, your team can deploy applications, manage configurations, and troubleshoot Kubernetes workloads without kubectl expertise.

@@ -69,6 +69,7 @@ spec:
 ```bash
 #!/bin/bash
 # auto-cleanup-ipam.sh
+
 # Automatically cleans up leaked IPs and orphaned blocks
 
 LOG="/var/log/calico-ipam-cleanup.log"

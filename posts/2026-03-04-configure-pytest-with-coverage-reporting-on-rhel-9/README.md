@@ -20,6 +20,7 @@ Code coverage tells you which parts of your codebase are exercised by your tests
 
 ```bash
 # Install pytest and coverage plugins
+
 pip3 install --user pytest pytest-cov coverage
 ```
 

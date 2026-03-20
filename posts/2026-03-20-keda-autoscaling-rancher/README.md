@@ -1,8 +1,8 @@
-# How to Configure KEDA Autoscaling in Rancher
+# How to Configure KEDA Autoscaling in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, keda, autoscaling, kubernetes, event-driven, scaling
+Tags: Rancher, KEDA, Autoscaling, Kubernetes, Event-Driven, Scaling
 
 Description: Complete guide to installing and configuring KEDA (Kubernetes Event-Driven Autoscaling) in Rancher for event-based workload scaling.
 
@@ -21,6 +21,7 @@ KEDA adds three components to Kubernetes:
 
 ```bash
 # Add KEDA Helm repository
+
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 

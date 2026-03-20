@@ -18,6 +18,7 @@ Before optimizing, measure your actual cold start duration. You can identify col
 
 ```bash
 # Search for cold starts in your Lambda logs
+
 aws logs filter-log-events \
   --log-group-name /aws/lambda/my-function \
   --filter-pattern "Init Duration" \

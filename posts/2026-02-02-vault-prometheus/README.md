@@ -48,6 +48,7 @@ The following configuration enables Prometheus metrics output and sets reasonabl
 
 ```hcl
 # vault.hcl - Vault server configuration
+
 storage "raft" {
   path = "/opt/vault/data"
   node_id = "vault-1"

@@ -67,6 +67,7 @@ The base EE contains what every team needs:
 
 ```yaml
 # ee-base/execution-environment.yml
+
 ---
 version: 3
 

@@ -43,6 +43,7 @@ If you do not have a Sentinel workspace yet, here is how to create one:
 
 ```powershell
 # Create a resource group for Sentinel
+
 New-AzResourceGroup -Name "sentinel-rg" -Location "eastus"
 
 # Create a Log Analytics workspace

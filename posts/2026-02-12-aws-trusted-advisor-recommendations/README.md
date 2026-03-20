@@ -46,6 +46,7 @@ To list all available checks:
 
 ```bash
 # List all Trusted Advisor checks (must use us-east-1)
+
 aws support describe-trusted-advisor-checks \
   --language "en" \
   --region us-east-1 \

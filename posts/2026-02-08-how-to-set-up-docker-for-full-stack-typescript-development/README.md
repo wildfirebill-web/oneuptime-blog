@@ -266,6 +266,7 @@ Backend Dockerfile:
 
 ```dockerfile
 # backend/Dockerfile - production build for Express backend
+
 FROM node:21-alpine AS builder
 
 WORKDIR /app

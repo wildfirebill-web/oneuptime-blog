@@ -18,6 +18,7 @@ The simplest use of `cli_command` is sending a single show command and capturing
 
 ```yaml
 # playbook-basic-cli.yml
+
 # Sends a show command to a network device and captures the output
 - name: Basic cli_command usage
   hosts: ios_routers

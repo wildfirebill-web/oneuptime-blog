@@ -20,6 +20,7 @@ Install and configure the AWS CLI:
 
 ```bash
 # Check if AWS CLI is installed
+
 aws --version
 
 # If not installed, install it

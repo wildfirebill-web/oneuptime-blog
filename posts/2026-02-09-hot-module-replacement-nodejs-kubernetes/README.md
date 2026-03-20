@@ -30,6 +30,7 @@ Syncthing provides reliable bidirectional file sync between local and container:
 
 ```yaml
 # deployment-dev.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

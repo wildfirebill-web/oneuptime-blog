@@ -1188,6 +1188,7 @@ Run the server with the necessary Deno permissions. The `--allow-net` flag enabl
 
 ```bash
 # Set required environment variable
+
 export JWT_SECRET="your-secure-secret-at-least-32-chars-long"
 
 # Run the server

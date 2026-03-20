@@ -39,6 +39,7 @@ You can verify this by checking the `otelcol_receiver_accepted_spans` and `otelc
 
 ```bash
 # Check how many spans the Collector receives vs drops
+
 # A large gap indicates aggressive sampling somewhere in the pipeline
 curl -s http://localhost:8888/metrics | grep otelcol_receiver_accepted_spans
 

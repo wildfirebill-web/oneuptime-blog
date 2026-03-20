@@ -85,6 +85,7 @@ spring:
       # authentication-database: admin
 
 # Logging for debugging queries (optional)
+
 logging:
   level:
     org.springframework.data.mongodb.core.MongoTemplate: DEBUG

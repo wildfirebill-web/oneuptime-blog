@@ -41,6 +41,7 @@ The detection is near real-time. From the moment the API call happens to the tim
 
 ```bash
 # Create an SNS topic for security alerts
+
 aws sns create-topic --name security-alerts
 
 # Subscribe your security team's email

@@ -20,6 +20,7 @@ First, make sure you have a validated certificate. Unlike CloudFront, ALBs use c
 
 ```bash
 # Request a certificate (same region as your ALB)
+
 CERT_ARN=$(aws acm request-certificate \
   --domain-name "app.example.com" \
   --validation-method DNS \

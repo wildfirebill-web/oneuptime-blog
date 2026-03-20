@@ -30,6 +30,7 @@ The most common use case - you change a resource name in your configuration:
 
 ```hcl
 # Before: the resource was called "server"
+
 # resource "aws_instance" "server" { ... }
 
 # After: you renamed it to "web_server"

@@ -44,6 +44,7 @@ The simplest approach uses health-checked DNS records to route traffic away from
 
 ```yaml
 # infrastructure/health/deployment.yaml
+
 # Health check endpoint that external monitors can probe
 apiVersion: apps/v1
 kind: Deployment

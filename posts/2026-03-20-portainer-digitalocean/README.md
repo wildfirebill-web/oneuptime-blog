@@ -1,8 +1,8 @@
-# How to Deploy Portainer on DigitalOcean Droplets
+# How to Deploy Portainer on DigitalOcean Droplets - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, DigitalOcean, Droplet, Docker, Cloud
+Tags: Portainer, DigitalOcean, Droplets, Docker, Cloud
 
 Description: Learn how to quickly deploy Portainer on a DigitalOcean Droplet using cloud-init user data for automated setup, with firewall configuration and optional managed DNS.
 
@@ -38,6 +38,7 @@ runcmd:
 
 ```bash
 # Install doctl and authenticate
+
 snap install doctl
 doctl auth init
 
@@ -119,4 +120,4 @@ doctl compute droplet-action enable-backups portainer-droplet
 
 ## Conclusion
 
-DigitalOcean Droplets provide a simple, affordable platform for Portainer. The cloud-init user data approach makes deployment fully automated — create a Droplet with the user data script and Portainer is running before you've finished your first coffee. DigitalOcean's Marketplace Docker image provides the fastest manual path.
+DigitalOcean Droplets provide a simple, affordable platform for Portainer. The cloud-init user data approach makes deployment fully automated - create a Droplet with the user data script and Portainer is running before you've finished your first coffee. DigitalOcean's Marketplace Docker image provides the fastest manual path.

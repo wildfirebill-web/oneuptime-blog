@@ -133,6 +133,7 @@ If you see actual values instead of templates, check that you are using the late
 
 ```bash
 # Update to the latest version
+
 dotnet add package OpenTelemetry.Instrumentation.AspNetCore --version 1.9.0
 ```
 

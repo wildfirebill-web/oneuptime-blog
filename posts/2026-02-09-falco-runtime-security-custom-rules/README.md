@@ -192,6 +192,7 @@ Mount the custom rules:
 
 ```yaml
 # Update the DaemonSet to include custom rules
+
 volumeMounts:
 - name: falco-custom-rules
   mountPath: /etc/falco/rules.d

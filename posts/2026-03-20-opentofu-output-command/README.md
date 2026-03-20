@@ -14,6 +14,7 @@ Description: Learn how to use tofu output to read output values from OpenTofu st
 
 ```bash
 # Show all outputs
+
 tofu output
 
 # Output:
@@ -55,7 +56,7 @@ echo "Deploying to bucket: $BUCKET"
 ## Raw Output (No Quotes)
 
 ```bash
-# Raw string output without quotes — useful in scripts
+# Raw string output without quotes - useful in scripts
 ENDPOINT=$(tofu output -raw cluster_endpoint)
 kubectl config set-cluster production --server="$ENDPOINT"
 ```
@@ -119,10 +120,10 @@ resource "aws_instance" "web" {
 # Display output as a table (default)
 tofu output
 
-# JSON format — full metadata
+# JSON format - full metadata
 tofu output -json
 
-# Raw string — no formatting or quotes
+# Raw string - no formatting or quotes
 tofu output -raw bucket_name
 ```
 

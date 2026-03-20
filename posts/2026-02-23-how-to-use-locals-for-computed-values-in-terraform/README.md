@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Local, Computed Values, Infrastructure as Code
+Tags: Terraform, HCL, Locals, Computed Values, Infrastructure as Code
 
 Description: Learn how to use Terraform locals to compute derived values from variables, data sources, and other resources for cleaner and more maintainable infrastructure configurations.
 
@@ -50,6 +50,7 @@ Data sources fetch information about existing infrastructure. Locals let you pro
 
 ```hcl
 # Fetch the current AWS account details
+
 data "aws_caller_identity" "current" {}
 data "aws_region" "current" {}
 

@@ -26,6 +26,7 @@ Plugins run as containers themselves, managed separately from your application c
 
 ```bash
 # Install a plugin from Docker Hub
+
 docker plugin install <plugin-name>
 
 # Install with specific settings

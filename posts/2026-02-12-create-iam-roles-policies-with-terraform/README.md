@@ -29,6 +29,7 @@ This policy allows listing and reading objects from a single S3 bucket:
 
 ```hcl
 # IAM policy granting read-only access to a specific S3 bucket
+
 resource "aws_iam_policy" "s3_read_only" {
   name        = "s3-read-only-app-bucket"
   description = "Allows read-only access to the application S3 bucket"

@@ -56,6 +56,7 @@ Here is a typical example with a Counter and Histogram:
 
 ```python
 # Python - Synchronous instruments for request tracking
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("my-service")

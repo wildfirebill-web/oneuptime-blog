@@ -89,6 +89,7 @@ Start by creating the Pub/Sub infrastructure that mirrors your Kafka topology. T
 # main.tf - Pub/Sub infrastructure for migrated Kafka topics
 
 # Define the project and region variables
+
 variable "project_id" {
   description = "GCP project ID"
   type        = string

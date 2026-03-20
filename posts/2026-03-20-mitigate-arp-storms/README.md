@@ -17,17 +17,17 @@ An ARP storm occurs when a network is flooded with excessive ARP broadcast packe
 
 ## Common Causes
 
-1. **Large flat networks** — /16 or /8 subnets with thousands of hosts all sharing one broadcast domain
-2. **Misconfigured hosts** — hosts rapidly cycling through IP addresses, each triggering ARP
-3. **ARP spoofing tools** — malicious tools flooding ARP
-4. **Network loops** — spanning tree failures causing broadcasts to circulate
-5. **VM migrations** — large numbers of VMs coming online simultaneously
+1. **Large flat networks** - /16 or /8 subnets with thousands of hosts all sharing one broadcast domain
+2. **Misconfigured hosts** - hosts rapidly cycling through IP addresses, each triggering ARP
+3. **ARP spoofing tools** - malicious tools flooding ARP
+4. **Network loops** - spanning tree failures causing broadcasts to circulate
+5. **VM migrations** - large numbers of VMs coming online simultaneously
 
 ## Mitigation Strategy 1: Segment into Smaller Subnets
 
 The most effective mitigation is reducing the broadcast domain size:
 
-```
+```text
 Before: One /16 with 65,534 hosts → massive ARP domain
 After:  128 /24 subnets with 254 hosts each → small ARP domains
 ```
@@ -36,6 +36,7 @@ After:  128 /24 subnets with 254 hosts each → small ARP domains
 import ipaddress
 
 # Show how /16 breaks into /24 subnets
+
 network = ipaddress.ip_network('10.0.0.0/16')
 subnets = list(network.subnets(new_prefix=24))
 print(f"Number of /24 subnets: {len(subnets)}")

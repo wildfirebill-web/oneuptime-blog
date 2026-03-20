@@ -20,6 +20,7 @@ Cross-account VPC peering allows private connectivity between VPCs owned by diff
 
 ```hcl
 # Requester account provider (default)
+
 provider "aws" {
   region = "us-east-1"
 }

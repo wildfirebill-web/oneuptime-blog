@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCPv6, Relay, Linux, ISC Kea, dibbler, Networking
+Tags: DHCPv6, Relay, Linux, ISC Kea, Dibbler, Networking
 
 Description: Configure DHCPv6 relay agents on Linux using ISC Kea, dibbler, and wide-dhcpv6 to forward DHCPv6 messages between clients and servers on different subnets.
 
@@ -28,9 +28,10 @@ sequenceDiagram
 
 ```bash
 # Install ISC Kea on Ubuntu
+
 apt-get install -y kea
 
-# Kea does not have a built-in relay — use kea-dhcp6 on the server
+# Kea does not have a built-in relay - use kea-dhcp6 on the server
 # For relay functionality, use wide-dhcpv6 or dibbler-relay
 ```
 

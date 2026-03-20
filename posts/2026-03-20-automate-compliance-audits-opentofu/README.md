@@ -29,7 +29,7 @@ flowchart TD
 
 ```python
 #!/usr/bin/env python3
-# compliance-check.py — check plan JSON for compliance violations
+# compliance-check.py - check plan JSON for compliance violations
 
 import json, sys
 
@@ -74,6 +74,7 @@ else:
 
 ```yaml
 # .github/workflows/compliance-drift.yml
+
 name: Compliance Drift Detection
 
 on:
@@ -96,7 +97,7 @@ jobs:
       - name: Check for Configuration Drift
         if: steps.plan.outputs.exit_code == '2'
         run: |
-          echo "DRIFT DETECTED — infrastructure differs from code"
+          echo "DRIFT DETECTED - infrastructure differs from code"
           jq -r '.resource_changes[] | select(.change.actions != ["no-op"]) | "\(.change.actions | join("+"))\t\(.address)"' plan.json
           exit 1
 

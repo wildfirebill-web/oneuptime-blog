@@ -20,6 +20,7 @@ Alerting pipelines that grow organically become a maintenance nightmare. Differe
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

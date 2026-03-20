@@ -48,6 +48,7 @@ Use `trap` to ensure cleanup code runs regardless of how the script exits:
 
 ```bash
 # Cleanup function that removes temporary files and restores state
+
 cleanup() {
     local exit_code=$?
     rm -f "$TMPFILE"

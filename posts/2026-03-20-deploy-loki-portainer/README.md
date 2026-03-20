@@ -50,6 +50,7 @@ volumes:
 
 ```yaml
 # loki-config.yml
+
 auth_enabled: false
 
 server:
@@ -177,4 +178,4 @@ Install the Loki Docker driver: `docker plugin install grafana/loki-docker-drive
 
 ## Conclusion
 
-Loki via Portainer is a lightweight, resource-efficient alternative to Elasticsearch for log aggregation. Promtail automatically collects and labels logs from all Docker containers on the host. Combined with Grafana, you get native log correlation with Prometheus metrics — switching between metrics and logs for the same container with a single click.
+Loki via Portainer is a lightweight, resource-efficient alternative to Elasticsearch for log aggregation. Promtail automatically collects and labels logs from all Docker containers on the host. Combined with Grafana, you get native log correlation with Prometheus metrics - switching between metrics and logs for the same container with a single click.

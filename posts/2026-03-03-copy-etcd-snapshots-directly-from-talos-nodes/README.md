@@ -16,6 +16,7 @@ The primary way to get an etcd snapshot from a Talos node is the `talosctl etcd 
 
 ```bash
 # Download an etcd snapshot to your local machine
+
 talosctl etcd snapshot ./my-etcd-backup.db --nodes <control-plane-ip>
 
 # The file is saved on the machine running talosctl,

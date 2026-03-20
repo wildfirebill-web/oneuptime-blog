@@ -25,6 +25,7 @@ Let's create sample data to work with:
 
 ```bash
 # Create a sample index with products
+
 curl -X POST "localhost:9200/products/_bulk" -H 'Content-Type: application/json' -d'
 {"index": {"_id": "1"}}
 {"name": "iPhone 15 Pro", "description": "Latest Apple smartphone with A17 chip", "price": 999, "category": "electronics", "brand": "Apple", "rating": 4.8, "in_stock": true, "created_at": "2024-09-22"}

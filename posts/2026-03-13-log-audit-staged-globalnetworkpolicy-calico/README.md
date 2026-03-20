@@ -59,6 +59,7 @@ spec:
 
 ```bash
 # 1. Apply the policy
+
 calicoctl apply -f log-audit-staged-globalnetworkpolicy.yaml
 
 # 2. Verify it's active

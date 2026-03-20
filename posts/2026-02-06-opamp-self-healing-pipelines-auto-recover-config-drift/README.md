@@ -252,6 +252,7 @@ Set up an alert rule:
 
 ```yaml
 # prometheus-rules.yaml
+
 groups:
   - name: opamp-drift
     rules:

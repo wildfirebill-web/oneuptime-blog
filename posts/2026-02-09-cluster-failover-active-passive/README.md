@@ -26,6 +26,7 @@ Start by provisioning two identical Kubernetes clusters. They should have the sa
 
 ```bash
 # Create active cluster (us-east-1)
+
 gcloud container clusters create production-active \
   --region us-east1 \
   --num-nodes 5 \

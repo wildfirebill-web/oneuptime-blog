@@ -28,6 +28,7 @@ The primary validation tool is `talosctl validate`. It checks a machine configur
 
 ```bash
 # Validate a control plane configuration
+
 talosctl validate --config controlplane.yaml --mode metal
 
 # Validate a worker configuration

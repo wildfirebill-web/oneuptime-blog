@@ -21,6 +21,7 @@ Mutable objects like lists, dictionaries, and sets cannot be hashed because thei
 
 ```python
 # Hashable types
+
 hash(42)           # Works - integers are hashable
 hash("hello")      # Works - strings are hashable
 hash((1, 2, 3))    # Works - tuples are hashable (if contents are hashable)

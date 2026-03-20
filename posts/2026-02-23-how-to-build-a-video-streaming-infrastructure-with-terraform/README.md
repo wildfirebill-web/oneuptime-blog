@@ -31,6 +31,7 @@ Two buckets: one for uploaded source files and one for transcoded output.
 
 ```hcl
 # Source video bucket - where uploads land
+
 resource "aws_s3_bucket" "source_video" {
   bucket = "company-video-source-${var.environment}"
 

@@ -21,6 +21,7 @@ def add_item(item, shopping_list=[]):
     return shopping_list
 
 # First call - works as expected
+
 result1 = add_item('apples')
 print(result1)  # ['apples']
 

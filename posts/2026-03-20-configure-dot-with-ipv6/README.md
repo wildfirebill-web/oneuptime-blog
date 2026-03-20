@@ -16,6 +16,7 @@ Unbound supports DoT natively:
 
 ```bash
 # Install Unbound
+
 apt install unbound
 
 # Generate a TLS certificate (or use Let's Encrypt)

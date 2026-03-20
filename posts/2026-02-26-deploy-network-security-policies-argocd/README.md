@@ -62,6 +62,7 @@ Start with a default deny policy for every namespace. This is the foundation of 
 
 ```yaml
 # network-policies/base/default-deny-all.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

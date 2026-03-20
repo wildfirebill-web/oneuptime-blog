@@ -51,6 +51,7 @@ This measures how long ArgoCD takes to detect a change and compute the diff:
 
 ```promql
 # P50 reconciliation duration
+
 histogram_quantile(0.5, sum(rate(argocd_app_reconcile_bucket[5m])) by (le))
 
 # P95 reconciliation duration

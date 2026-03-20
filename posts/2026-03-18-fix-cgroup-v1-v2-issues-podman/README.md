@@ -20,6 +20,7 @@ The first step in troubleshooting is identifying which cgroup version your syste
 
 ```bash
 # Check the mounted cgroup filesystem
+
 mount | grep cgroup
 ```
 

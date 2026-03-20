@@ -74,6 +74,7 @@ A strategy plugin inherits from `StrategyBase` and overrides the `run()` method 
 
 ```bash
 # Create plugin directory
+
 mkdir -p ~/.ansible/plugins/strategy
 
 # Or in your project

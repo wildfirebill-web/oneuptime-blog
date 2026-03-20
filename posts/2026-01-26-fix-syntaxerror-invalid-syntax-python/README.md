@@ -20,6 +20,7 @@ When Python encounters a syntax error, it stops parsing and shows you where it g
 
 ```python
 # Python reports the error here
+
 def greet(name)  # Missing colon
     print(f"Hello, {name}")  # SyntaxError: invalid syntax
 

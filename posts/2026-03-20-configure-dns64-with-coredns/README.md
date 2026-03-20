@@ -16,6 +16,7 @@ CoreDNS ships with the DNS64 plugin built in since version 1.7.0. No additional 
 
 ```bash
 # Check CoreDNS version
+
 coredns --version
 
 # Download CoreDNS binary if not installed

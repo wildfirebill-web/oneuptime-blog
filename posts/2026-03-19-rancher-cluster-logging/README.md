@@ -171,6 +171,7 @@ Send different types of logs to different destinations:
 
 ```yaml
 # Security logs to a dedicated index
+
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:

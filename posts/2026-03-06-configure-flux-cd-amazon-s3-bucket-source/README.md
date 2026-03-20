@@ -30,6 +30,7 @@ First, create an S3 bucket to store your Kubernetes manifests.
 
 ```bash
 # Create the S3 bucket in your desired region
+
 aws s3api create-bucket \
   --bucket flux-manifests-production \
   --region us-east-1

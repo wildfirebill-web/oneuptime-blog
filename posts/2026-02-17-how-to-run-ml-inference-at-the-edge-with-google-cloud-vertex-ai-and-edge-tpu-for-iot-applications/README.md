@@ -38,6 +38,7 @@ The cycle is continuous. Edge devices send inference results and raw data back t
 
 ```bash
 # Install required packages
+
 pip install google-cloud-aiplatform tensorflow pycoral
 ```
 

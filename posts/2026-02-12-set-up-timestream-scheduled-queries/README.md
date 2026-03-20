@@ -36,6 +36,7 @@ The target table holds the pre-computed results.
 
 ```bash
 # Create a table for pre-computed hourly metrics
+
 # Longer retention since this is aggregated data
 aws timestream-write create-table \
   --database-name iot_data \

@@ -20,6 +20,7 @@ Configure your PostgreSQL connection in Laravel's `.env` file. These environment
 
 ```env
 # Database connection type - tells Laravel to use PostgreSQL driver
+
 DB_CONNECTION=pgsql
 
 # PostgreSQL server hostname (use localhost for local dev)

@@ -48,6 +48,7 @@ import time
 app = Flask(__name__)
 
 # Define custom metrics
+
 http_requests_total = Counter(
     'http_requests_total',
     'Total HTTP requests',

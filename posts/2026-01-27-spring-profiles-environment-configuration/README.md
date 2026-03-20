@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Spring Boot, Java, Configuration, Environment, Profiles, DevOps
+Tags: Spring Boot, Java, Configuration, Environments, Profiles, DevOps
 
 Description: Learn how to use Spring Profiles to manage environment-specific configuration for development, staging, and production environments with practical examples.
 
@@ -29,6 +29,7 @@ Spring Boot automatically loads properties from files named `application-{profil
 
 ```yaml
 # application.yml - shared configuration across all profiles
+
 spring:
   application:
     name: my-service

@@ -16,6 +16,7 @@ GKE Autopilot is a fully managed Kubernetes mode where Google manages the contro
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     google = {
@@ -249,18 +250,18 @@ spec:
 
 ## Best Practices
 
-1. **Use private clusters** for production — enable_private_nodes = true
+1. **Use private clusters** for production - enable_private_nodes = true
 2. **Configure Cloud NAT** for private clusters to pull images from the internet
 3. **Use Workload Identity** instead of node service accounts for pod GCP access
-4. **Set resource requests** on all pods — Autopilot requires them for scheduling
-5. **Use REGULAR release channel** — it receives updates after they've been validated
+4. **Set resource requests** on all pods - Autopilot requires them for scheduling
+5. **Use REGULAR release channel** - it receives updates after they've been validated
 
 ---
 
 ## Conclusion
 
-GKE Autopilot with OpenTofu gives you a fully managed Kubernetes cluster with minimal configuration. Enable Autopilot mode, configure VPC and secondary ranges, set up Workload Identity, and deploy — Google handles everything else.
+GKE Autopilot with OpenTofu gives you a fully managed Kubernetes cluster with minimal configuration. Enable Autopilot mode, configure VPC and secondary ranges, set up Workload Identity, and deploy - Google handles everything else.
 
 ---
 
-*Monitor your GKE Autopilot workloads with [OneUptime](https://oneuptime.com) — Kubernetes-native observability.*
+*Monitor your GKE Autopilot workloads with [OneUptime](https://oneuptime.com) - Kubernetes-native observability.*

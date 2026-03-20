@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Troubleshooting, Routing, Network Diagnostics, Default Route, ICMPv6
 
-Description: Diagnose and fix IPv6 "No route to host" errors by checking the routing table, default gateway, and Router Advertisement configuration.
+Description: Diagnose and fix IPv6 'No route to host' errors by checking the routing table, default gateway, and Router Advertisement configuration.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Description: Diagnose and fix IPv6 "No route to host" errors by checking the rou
 
 ```bash
 # Show entire IPv6 routing table
+
 ip -6 route show
 
 # Show default route specifically
@@ -30,7 +31,7 @@ ip -6 route show dev eth0
 ```
 
 Example healthy routing table:
-```
+```text
 2001:db8:cafe::/64 dev eth0 proto kernel scope link src 2001:db8:cafe::100
 fe80::/64 dev eth0 proto kernel scope link src fe80::1
 default via fe80::1 dev eth0 proto ra metric 100 expires 1775sec
@@ -153,4 +154,4 @@ sudo sysctl -w net.ipv6.conf.eth0.accept_ra=2  # if forwarding=1
 
 ## Conclusion
 
-IPv6 "No route to host" is most often caused by a missing default route, which is normally installed by a Router Advertisement. Check `ip -6 route show default` first — if empty, use `rdisc6` to determine whether the router is sending RAs. If forwarding is enabled on the host (it's acting as a router), set `accept_ra=2` instead of `1`. For static configurations, add the default route with `ip -6 route add default via fe80::1 dev eth0` and persist it in your network configuration.
+IPv6 "No route to host" is most often caused by a missing default route, which is normally installed by a Router Advertisement. Check `ip -6 route show default` first - if empty, use `rdisc6` to determine whether the router is sending RAs. If forwarding is enabled on the host (it's acting as a router), set `accept_ra=2` instead of `1`. For static configurations, add the default route with `ip -6 route add default via fe80::1 dev eth0` and persist it in your network configuration.

@@ -31,6 +31,7 @@ This guide covers both approaches.
 
 ```bash
 # Add Elastic repository key and source (same as Elasticsearch)
+
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | \
   sudo gpg --dearmor -o /usr/share/keyrings/elastic-archive-keyring.gpg
 

@@ -8,7 +8,7 @@ Description: Learn how to use SUSE Observability to monitor Kubernetes cluster h
 
 ---
 
-SUSE Observability provides a topology-aware view of your Kubernetes cluster — showing not just metrics, but the relationships between components and how changes propagate through your system.
+SUSE Observability provides a topology-aware view of your Kubernetes cluster - showing not just metrics, but the relationships between components and how changes propagate through your system.
 
 ---
 
@@ -37,7 +37,7 @@ After logging in to SUSE Observability:
 
 ## Step 1: Explore Cluster Health
 
-```
+```ini
 Topology Map Navigation:
   ┌────────────────────────────────────────┐
   │  Filter bar: namespace, label, type    │
@@ -53,7 +53,7 @@ Topology Map Navigation:
 
 Filter the topology by namespace to focus on a specific workload:
 
-```
+```text
 Views → Kubernetes → Filter by: namespace = production
 ```
 
@@ -77,6 +77,7 @@ SUSE Observability provides a query language (STQL) for searching topology:
 
 ```stql
 # Find all pods in the production namespace with RED health
+
 type = "kubernetes-pod"
   AND label = "namespace:production"
   AND healthState = "RED"
@@ -157,7 +158,7 @@ This makes it easy to correlate a performance degradation with a specific deploy
 
 Save a filtered topology view for your team:
 
-```
+```text
 1. Apply filters: namespace = production, type = Pod
 2. Click "Save View" in the top right
 3. Name the view: "Production Pods"
@@ -171,7 +172,7 @@ Save a filtered topology view for your team:
 
 From the component metrics panel, use these metric names:
 
-```
+```text
 # CPU usage by pod
 container_cpu_usage_seconds_total
 
@@ -194,4 +195,4 @@ kube_node_status_condition{condition="DiskPressure",status="true"}
 
 - Use topology filtering (by namespace or label) to create focused views for each team rather than giving everyone access to the full cluster topology.
 - Set up health monitors for critical workloads so your team is alerted before users notice issues.
-- Use the Change History feature to correlate incidents with recent deployments — this dramatically reduces mean time to identify the root cause.
+- Use the Change History feature to correlate incidents with recent deployments - this dramatically reduces mean time to identify the root cause.

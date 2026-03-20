@@ -22,6 +22,7 @@ First, create a Cloud SQL PostgreSQL instance if you do not have one.
 
 ```bash
 # Create a Cloud SQL PostgreSQL instance
+
 gcloud sql instances create my-postgres \
   --database-version=POSTGRES_15 \
   --tier=db-f1-micro \

@@ -16,6 +16,7 @@ fapolicyd uses the RPM database as its primary trust source. When you install a 
 
 ```bash
 # Verify that RPM is configured as a trust backend
+
 grep "trust" /etc/fapolicyd/fapolicyd.conf
 
 # The default trust setting includes rpm

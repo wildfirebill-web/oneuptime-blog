@@ -56,6 +56,7 @@ For production, you want a static IP address. Create one in the AKS node resourc
 
 ```bash
 # Get the node resource group name
+
 NODE_RG=$(az aks show --resource-group myResourceGroup \
   --name myAKSCluster \
   --query nodeResourceGroup -o tsv)

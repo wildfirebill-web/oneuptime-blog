@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Monitoring, Prometheus, Grafana, Alerting, Observability
 
-Description: Implement monitoring best practices in Rancher using the Prometheus stack, defining SLOs, configuring alerting, and establishing dashboards that cover cluster health, application metrics, and infrastructure utilization.
+Description: Implement monitoring best practices in Rancher using the Prometheus stack, defining SLOs, configuring alerting, and establishing dashboards that cover cluster health, application metrics, and...
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Monitoring in Rancher must cover multiple layers: the Rancher management plane, 
 
 ```bash
 # Enable from Rancher UI:
+
 # Cluster > Apps > Charts > Monitoring
 # Or install via Helm
 
@@ -93,7 +94,7 @@ spec:
           expr: histogram_quantile(0.99, rate(etcd_disk_backend_commit_duration_seconds_bucket[5m])) > 0.25
           for: 5m
           annotations:
-            summary: "etcd commit latency is high — storage performance issue"
+            summary: "etcd commit latency is high - storage performance issue"
 ```
 
 ## Step 4: Essential Grafana Dashboards
@@ -171,7 +172,7 @@ receivers:
 - Alertmanager routing: critical → PagerDuty, warning → Slack
 - Multi-cluster metrics aggregated via Thanos/Mimir
 - Dashboards reviewed and updated quarterly
-- Alert fatigue reviewed — suppress noise, fix root causes
+- Alert fatigue reviewed - suppress noise, fix root causes
 
 ## Conclusion
 

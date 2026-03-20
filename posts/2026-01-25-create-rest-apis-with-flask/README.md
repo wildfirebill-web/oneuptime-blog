@@ -20,6 +20,7 @@ This guide walks through building a complete REST API with Flask, from basic end
 
 ```bash
 # Install Flask and useful extensions
+
 pip install flask flask-cors python-dotenv
 ```
 

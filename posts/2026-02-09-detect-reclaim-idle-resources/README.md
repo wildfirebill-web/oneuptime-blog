@@ -16,6 +16,7 @@ Use Kubecost API to find pods with low utilization:
 
 ```bash
 # Find pods with < 20% CPU utilization
+
 curl -G http://kubecost.kubecost.svc:9090/model/allocation \
   --data-urlencode 'window=7d' \
   --data-urlencode 'aggregate=pod' | \

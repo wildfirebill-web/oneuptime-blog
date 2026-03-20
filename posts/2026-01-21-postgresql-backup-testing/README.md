@@ -66,6 +66,7 @@ MAX_AGE_HOURS=24
 MIN_SIZE_MB=100
 
 # Check latest backup exists
+
 LATEST_BACKUP=$(ls -t "$BACKUP_DIR"/*.dump 2>/dev/null | head -1)
 
 if [ -z "$LATEST_BACKUP" ]; then

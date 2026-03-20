@@ -129,6 +129,7 @@ def categorize_errors(error_traces):
     return error_sources.most_common(10)
 
 # Output might look like:
+
 # [
 #     ("payment.charge: Connection refused to payment-gateway:443", 42),
 #     ("inventory.check: Timeout after 5000ms", 8),

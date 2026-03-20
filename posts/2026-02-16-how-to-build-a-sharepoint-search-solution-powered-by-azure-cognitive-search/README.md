@@ -34,6 +34,7 @@ Create the search service and define the index:
 
 ```bash
 # Create the search service
+
 az search service create \
   --name search-sharepoint \
   --resource-group rg-sp-search \

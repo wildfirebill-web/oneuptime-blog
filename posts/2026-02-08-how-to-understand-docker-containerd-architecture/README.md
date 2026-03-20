@@ -31,6 +31,7 @@ On systems with Docker installed, containerd is already running as a separate pr
 
 ```bash
 # Check if containerd is running as a system service
+
 systemctl status containerd
 
 # View the containerd process

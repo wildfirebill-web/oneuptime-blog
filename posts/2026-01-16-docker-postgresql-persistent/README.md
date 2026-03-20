@@ -45,6 +45,7 @@ The official `postgres` image provides several features:
 
 ```bash
 # Create volume
+
 docker volume create pgdata
 
 # Run with volume

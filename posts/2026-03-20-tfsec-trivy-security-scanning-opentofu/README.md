@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tfsec, trivy, Security Scanning, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tfsec, Trivy, Security Scanning, Infrastructure as Code, DevOps
 
 Description: Learn how to use tfsec (now integrated into Trivy) to scan OpenTofu configurations for security misconfigurations and enforce security standards in CI/CD pipelines.
 
@@ -14,6 +14,7 @@ tfsec was a popular standalone Terraform/OpenTofu security scanner. Aqua Securit
 
 ```bash
 # macOS
+
 brew install aquasecurity/trivy/trivy
 
 # Linux
@@ -46,7 +47,7 @@ trivy config . --exit-code 1 --severity HIGH,CRITICAL
 
 ## Sample Output
 
-```
+```hcl
 main.tf (terraform)
 
 Tests: 47 (SUCCESSES: 44, FAILURES: 3, EXCEPTIONS: 0)
@@ -68,7 +69,7 @@ Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
 ## Fixing Common tfsec/trivy Findings
 
 ```hcl
-# Fix: AVD-AWS-0107 — no unrestricted SSH
+# Fix: AVD-AWS-0107 - no unrestricted SSH
 resource "aws_security_group" "web" {
   name = "web-sg"
 
@@ -82,14 +83,14 @@ resource "aws_security_group" "web" {
   }
 }
 
-# Fix: AVD-AWS-0086 — RDS should not be publicly accessible
+# Fix: AVD-AWS-0086 - RDS should not be publicly accessible
 resource "aws_db_instance" "main" {
   identifier         = "prod-postgres"
   publicly_accessible = false  # Must be false
   # ...
 }
 
-# Fix: AVD-AWS-0028 — EBS volumes should be encrypted
+# Fix: AVD-AWS-0028 - EBS volumes should be encrypted
 resource "aws_instance" "web" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.medium"
@@ -112,7 +113,7 @@ resource "aws_security_group" "public_alb" {
     to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-    # tfsec:ignore:AVD-AWS-0107 — Public ALB must accept traffic from the internet
+    # tfsec:ignore:AVD-AWS-0107 - Public ALB must accept traffic from the internet
   }
 }
 ```
@@ -138,13 +139,13 @@ resource "aws_security_group" "public_alb" {
     sarif_file: trivy-results.sarif
 ```
 
-## .trivyignore — Shared Suppressions
+## .trivyignore - Shared Suppressions
 
-```
-# .trivyignore — project-wide finding suppressions
+```text
+# .trivyignore - project-wide finding suppressions
 # Format: AVD-ID[=reason]
 
-# Public website S3 bucket — intentionally public
+# Public website S3 bucket - intentionally public
 AVD-AWS-0089
 
 # Public ALB for internet-facing web tier
@@ -153,4 +154,4 @@ AVD-AWS-0107
 
 ## Conclusion
 
-Trivy (encompassing tfsec) provides fast, comprehensive security scanning of OpenTofu configurations. Run it in pre-commit hooks and CI/CD pipelines to catch HIGH and CRITICAL security misconfigurations — unrestricted SSH, public databases, unencrypted storage — before they reach production. Use the SARIF output format to surface findings in GitHub Security without blocking developers.
+Trivy (encompassing tfsec) provides fast, comprehensive security scanning of OpenTofu configurations. Run it in pre-commit hooks and CI/CD pipelines to catch HIGH and CRITICAL security misconfigurations - unrestricted SSH, public databases, unencrypted storage - before they reach production. Use the SARIF output format to surface findings in GitHub Security without blocking developers.

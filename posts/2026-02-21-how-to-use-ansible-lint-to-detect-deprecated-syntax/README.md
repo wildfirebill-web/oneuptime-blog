@@ -27,6 +27,7 @@ Start by installing the latest version of ansible-lint since deprecation rules a
 
 ```bash
 # Install or upgrade ansible-lint
+
 pip install ansible-lint --upgrade
 
 # Check which version you are running

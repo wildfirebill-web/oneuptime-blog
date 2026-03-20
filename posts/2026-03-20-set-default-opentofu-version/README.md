@@ -14,6 +14,7 @@ Setting a system-wide default OpenTofu version ensures that all users and proces
 
 ```bash
 # Install tofuenv system-wide
+
 sudo git clone --depth=1 https://github.com/tofuutils/tofuenv.git /usr/local/tofuenv
 
 # Add to system PATH

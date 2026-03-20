@@ -59,6 +59,7 @@ The JSON output includes much more detail:
 
 ```bash
 # Get full history with deployment parameters
+
 argocd app history my-app -o json | jq '.[].revision'
 
 # Get deployment dates

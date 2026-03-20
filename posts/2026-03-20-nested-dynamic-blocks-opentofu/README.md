@@ -250,6 +250,7 @@ data "aws_iam_policy_document" "complex" {
 
 ```hcl
 # Always use explicit iterator names in nested blocks
+
 # to avoid confusion between inner and outer iterators
 
 # Bad: Hard to tell which iterator 'key' and 'value' refer to

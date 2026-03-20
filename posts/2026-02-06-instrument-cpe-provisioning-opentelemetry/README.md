@@ -25,6 +25,7 @@ Each of these steps can fail, and the failure modes are different. Let's instrum
 
 ```python
 # acs_provisioning.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import time

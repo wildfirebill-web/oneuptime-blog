@@ -26,6 +26,7 @@ This guide covers the most common ImageSet troubleshooting scenarios with concre
 
 ```bash
 # Identify affected pods
+
 kubectl get pods -n calico-system | grep -v Running
 
 # Get the exact error

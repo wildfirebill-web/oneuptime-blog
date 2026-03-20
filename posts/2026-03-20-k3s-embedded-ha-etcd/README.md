@@ -8,7 +8,7 @@ Description: Learn how to set up a highly available K3s cluster using embedded e
 
 ## Introduction
 
-K3s supports embedded etcd for high availability, allowing you to run multiple server nodes without an external database. This is the simplest HA approach for K3s — all you need are 3 server nodes and a load balancer. The embedded etcd forms a quorum, and the cluster can tolerate one server node failure at a time.
+K3s supports embedded etcd for high availability, allowing you to run multiple server nodes without an external database. This is the simplest HA approach for K3s - all you need are 3 server nodes and a load balancer. The embedded etcd forms a quorum, and the cluster can tolerate one server node failure at a time.
 
 ## Why Embedded etcd?
 
@@ -37,6 +37,7 @@ On each server node, perform system preparation:
 
 ```bash
 # On all 3 server nodes
+
 # Disable swap
 sudo swapoff -a
 sudo sed -i '/ swap / s/^/#/' /etc/fstab

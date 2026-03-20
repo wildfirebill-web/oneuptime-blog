@@ -35,6 +35,7 @@ The most common way to use the `files/` directory is with the `copy` module:
 
 ```yaml
 # roles/myapp/tasks/main.yml
+
 # Ansible looks in roles/myapp/files/ for these source files
 ---
 - name: Deploy startup script

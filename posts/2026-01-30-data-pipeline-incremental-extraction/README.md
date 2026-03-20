@@ -217,6 +217,7 @@ incremental_pipeline/
 
 ```python
 # watermark.py
+
 # Manages watermark state for incremental extraction
 # Supports multiple storage backends
 

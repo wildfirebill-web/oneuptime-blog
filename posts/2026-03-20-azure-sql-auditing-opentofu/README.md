@@ -14,6 +14,7 @@ Azure SQL Auditing tracks database events and writes them to an audit log in Azu
 
 ```hcl
 # main.tf - SQL Server and dedicated audit storage
+
 resource "azurerm_storage_account" "audit_storage" {
   name                     = "sqlauditlogs"
   resource_group_name      = azurerm_resource_group.rg.name

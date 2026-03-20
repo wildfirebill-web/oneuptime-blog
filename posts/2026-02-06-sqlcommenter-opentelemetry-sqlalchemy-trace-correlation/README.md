@@ -64,6 +64,7 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.instrumentation.sqlalchemy import SQLAlchemyInstrumentor
 
 # Configure the tracer provider with service information
+
 resource = Resource(attributes={
     "service.name": "order-service",
     "service.version": "2.1.0",

@@ -18,6 +18,7 @@ If you haven't already, install the CDK CLI and create a new project:
 
 ```bash
 # Install the CDK CLI globally
+
 npm install -g aws-cdk
 
 # Create a new CDK project with TypeScript

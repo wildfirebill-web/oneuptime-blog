@@ -25,6 +25,7 @@ Configure the Azure infrastructure provider:
 
 ```bash
 # Login to Azure
+
 az login
 
 # Set the subscription

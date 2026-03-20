@@ -18,6 +18,7 @@ Access logging is disabled by default. Enable it in Traefik's static configurati
 
 ```yaml
 # traefik-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -14,6 +14,7 @@ Production RHEL servers need continuous monitoring to catch problems before they
 
 ```bash
 # Check current load average (1, 5, 15 minutes)
+
 uptime
 
 # Monitor CPU usage with sar (requires sysstat)

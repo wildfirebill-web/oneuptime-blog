@@ -29,6 +29,7 @@ The default Cloud Workstations base image runs as the `user` account, but it gra
 
 ```dockerfile
 # Custom workstation image without root access
+
 FROM us-central1-docker.pkg.dev/cloud-workstations-images/predefined/base:latest
 
 # Install all required development tools as root during build

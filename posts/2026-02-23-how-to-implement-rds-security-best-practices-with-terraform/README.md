@@ -18,6 +18,7 @@ The first rule of database security: your database should never be publicly acce
 
 ```hcl
 # DB subnet group using private subnets only
+
 resource "aws_db_subnet_group" "main" {
   name       = "production-db-subnet"
   subnet_ids = aws_subnet.data[*].id  # Data-tier subnets

@@ -30,6 +30,7 @@ redis-stat is written in Ruby, so you need Ruby installed along with the Redis g
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install Ruby and build dependencies

@@ -33,6 +33,7 @@ Each alert rule gets a runbook template that specifies which diagnostic queries 
 
 ```yaml
 # runbooks/checkout-error-rate.yaml
+
 # Runbook template for checkout service error rate alerts
 alert: CheckoutHighErrorRate
 template:

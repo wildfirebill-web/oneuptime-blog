@@ -54,6 +54,7 @@ Modern Linux distributions use systemd-resolved for DNS caching:
 
 ```bash
 # Check if systemd-resolved is running
+
 systemctl status systemd-resolved
 
 # View current DNS configuration

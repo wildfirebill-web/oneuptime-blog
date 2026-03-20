@@ -18,6 +18,7 @@ Heredocs require the BuildKit frontend. Add this directive at the very top of yo
 
 ```dockerfile
 # syntax=docker/dockerfile:1
+
 ```
 
 This line tells Docker to use the latest stable Dockerfile frontend, which includes heredoc support. If you are using Docker 23.0 or newer, BuildKit is already the default builder. For older versions, set the environment variable:

@@ -14,6 +14,7 @@ The "OOM command not allowed when used memory > 'maxmemory'" error occurs when R
 
 ```python
 # Error message variants:
+
 # OOM command not allowed when used memory > 'maxmemory'
 # -OOM command not allowed when used memory > 'maxmemory'
 

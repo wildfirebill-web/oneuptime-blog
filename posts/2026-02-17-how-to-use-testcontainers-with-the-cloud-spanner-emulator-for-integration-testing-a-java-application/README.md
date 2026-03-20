@@ -336,6 +336,7 @@ The Testcontainers approach works in CI/CD pipelines as long as Docker is availa
 
 ```yaml
 # .github/workflows/test.yml
+
 name: Integration Tests
 on: [push, pull_request]
 jobs:

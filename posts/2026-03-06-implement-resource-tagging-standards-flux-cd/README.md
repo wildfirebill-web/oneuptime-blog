@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Resource tagging, Kubernetes, GitOps, Labels, Annotations, Governance
+Tags: Flux CD, Resource Tagging, Kubernetes, GitOps, Labels, Annotations, Governance
 
 Description: A practical guide to implementing and enforcing consistent resource tagging and labeling standards across Kubernetes clusters using Flux CD.
 
@@ -27,6 +27,7 @@ Before implementing tagging in Flux CD, define a clear standard. Here is a recom
 
 ```yaml
 # docs/tagging-standard.yaml
+
 # Reference document defining required and optional labels
 # Required labels - must be present on every resource
 required_labels:

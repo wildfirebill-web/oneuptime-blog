@@ -95,6 +95,7 @@ Before auto mTLS, you had to create DestinationRules for every service to enable
 
 ```yaml
 # The old way - not needed with auto mTLS
+
 apiVersion: networking.istio.io/v1
 kind: DestinationRule
 metadata:

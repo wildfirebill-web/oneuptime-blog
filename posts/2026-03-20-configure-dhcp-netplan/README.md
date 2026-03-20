@@ -8,12 +8,13 @@ Description: Configure DHCP-based IPv4 addressing using Netplan YAML on Ubuntu a
 
 ## Introduction
 
-Netplan enables DHCP with `dhcp4: true`. This is the simplest network configuration — the DHCP server assigns the IP address, gateway, and DNS. Additional DHCP options can be controlled via the `dhcp4-overrides` section.
+Netplan enables DHCP with `dhcp4: true`. This is the simplest network configuration - the DHCP server assigns the IP address, gateway, and DNS. Additional DHCP options can be controlled via the `dhcp4-overrides` section.
 
 ## Basic DHCP Configuration
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

@@ -8,7 +8,7 @@ Description: Configure Google Cloud HTTP(S), TCP, and Network load balancers to 
 
 ## Introduction
 
-Google Cloud Load Balancing supports IPv6 at the frontend through Global HTTP(S) Load Balancers and Network Load Balancers. The global HTTP(S) load balancer accepts IPv6 connections from clients and translates them to IPv4 when forwarding to backends — a process called IPv6 termination. This allows backends to remain IPv4-only while clients connect over IPv6.
+Google Cloud Load Balancing supports IPv6 at the frontend through Global HTTP(S) Load Balancers and Network Load Balancers. The global HTTP(S) load balancer accepts IPv6 connections from clients and translates them to IPv4 when forwarding to backends - a process called IPv6 termination. This allows backends to remain IPv4-only while clients connect over IPv6.
 
 ## Global HTTP(S) Load Balancer with IPv6
 
@@ -16,6 +16,7 @@ Google Cloud Load Balancing supports IPv6 at the frontend through Global HTTP(S)
 PROJECT="my-project"
 
 # Step 1: Reserve a global IPv6 address
+
 gcloud compute addresses create lb-ipv6-vip \
     --project="$PROJECT" \
     --network-tier=PREMIUM \

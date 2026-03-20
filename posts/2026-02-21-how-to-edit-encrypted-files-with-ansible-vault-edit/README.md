@@ -27,6 +27,7 @@ At no point does the decrypted content exist as the original file on disk. The p
 
 ```bash
 # Edit an encrypted file
+
 ansible-vault edit group_vars/production/vault.yml
 ```
 

@@ -10,13 +10,13 @@ Description: Understand NDP cache overflow (neighbor cache exhaustion) attacks o
 
 IPv6 neighbor discovery is vulnerable to cache exhaustion attacks. An attacker scans or sends traffic to many addresses within a /64 prefix:
 
-```
+```text
 Attacker sends packets to:
   2001:db8:1::1, 2001:db8:1::2, ..., 2001:db8:1::ffff
 ```
 
 The router must:
-1. Check neighbor cache — not found
+1. Check neighbor cache - not found
 2. Send NS to solicited-node multicast
 3. Create INCOMPLETE cache entry
 
@@ -26,6 +26,7 @@ With /64 = 2^64 addresses, an attacker can flood the router's neighbor cache wit
 
 ```bash
 # Check number of INCOMPLETE/FAILED NDP entries
+
 ip -6 neigh show nud incomplete | wc -l
 ip -6 neigh show nud failed | wc -l
 
@@ -103,8 +104,8 @@ ip6tables -A FORWARD -d 2001:db8:1::/64 \
 
 ## Defense 4: Cisco First Hop Security
 
-```
-! Cisco IOS — IPv6 First Hop Security (RA Guard + NDP Inspection)
+```text
+! Cisco IOS - IPv6 First Hop Security (RA Guard + NDP Inspection)
 ipv6 nd inspection policy INSPECT
  validate source-mac
  validate address
@@ -165,4 +166,4 @@ done
 
 ## Conclusion
 
-NDP cache overflow attacks exploit the 2^64 address space of /64 prefixes to exhaust router neighbor tables. Defenses are layered: reduce NDP retransmit counts (1 retry vs 3), aggressive GC settings, nftables rate limiting on NS messages, and first-hop security features on Cisco/Juniper. Monitoring INCOMPLETE entry counts is the primary detection method — alert when exceeding 500-1000 entries. Consider limiting the effective host space to a /96 subset to reduce attack surface from 2^64 to a manageable 2^32 addresses.
+NDP cache overflow attacks exploit the 2^64 address space of /64 prefixes to exhaust router neighbor tables. Defenses are layered: reduce NDP retransmit counts (1 retry vs 3), aggressive GC settings, nftables rate limiting on NS messages, and first-hop security features on Cisco/Juniper. Monitoring INCOMPLETE entry counts is the primary detection method - alert when exceeding 500-1000 entries. Consider limiting the effective host space to a /96 subset to reduce attack surface from 2^64 to a manageable 2^32 addresses.

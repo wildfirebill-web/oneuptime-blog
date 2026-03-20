@@ -31,6 +31,7 @@ Create a Kubernetes secret with your Docker Hub credentials:
 
 ```bash
 # Option 1: Using kubectl create secret
+
 kubectl create secret docker-registry dockerhub-creds \
   -n argocd \
   --docker-server=https://registry-1.docker.io \

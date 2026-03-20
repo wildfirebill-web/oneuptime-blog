@@ -14,6 +14,7 @@ Default PostgreSQL settings are intentionally conservative to run on minimal har
 
 ```bash
 # Edit postgresql.conf
+
 sudo vi /var/lib/pgsql/data/postgresql.conf
 ```
 

@@ -84,6 +84,7 @@ Configure OpenTelemetry with OTLP exporter for sending telemetry data to your ob
 
 ```python
 # otel_config.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

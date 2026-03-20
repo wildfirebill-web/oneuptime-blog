@@ -278,6 +278,7 @@ class RetryTrackingInterceptor(grpc.UnaryUnaryClientInterceptor):
 
 ```promql
 # Retry rate: what fraction of calls needed retries
+
 sum(rate(grpc_client_call_total{grpc_retry_occurred="true"}[5m]))
 /
 sum(rate(grpc_client_call_total[5m]))

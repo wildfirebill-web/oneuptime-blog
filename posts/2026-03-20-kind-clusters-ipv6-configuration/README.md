@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: kind, Kubernetes, IPv6, Dual-Stack, Local Development, Testing
+Tags: Kind, Kubernetes, IPv6, Dual-Stack, Local Development, Testing
 
 Description: A guide to creating kind (Kubernetes in Docker) clusters with IPv6 or dual-stack networking for local development and testing.
 
@@ -39,6 +39,7 @@ sudo systemctl restart docker
 
 ```yaml
 # kind-dual-stack.yaml - kind cluster configuration for dual-stack
+
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 networking:

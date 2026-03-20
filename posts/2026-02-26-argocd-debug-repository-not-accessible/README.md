@@ -33,6 +33,7 @@ Start by getting the detailed error:
 
 ```bash
 # Check repository status with full error
+
 argocd repo list
 
 # Get detailed info about a specific repo

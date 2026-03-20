@@ -44,6 +44,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/databases/mysql/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

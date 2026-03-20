@@ -14,6 +14,7 @@ The MikroTik mangle table pre-processes packets before routing and queuing decis
 
 ```mikrotik
 # Step 1: Mark the connection (first packet only)
+
 /ip firewall mangle add \
   chain=prerouting \
   connection-state=new \

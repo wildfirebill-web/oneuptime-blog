@@ -25,6 +25,7 @@ Flux CD's source-controller periodically fetches the Git repository and checks f
 
 ```bash
 # Check the current revision Flux has fetched
+
 kubectl get gitrepository -n flux-system flux-system -o jsonpath='{.status.artifact.revision}'
 
 # Compare with the latest commit in your repository

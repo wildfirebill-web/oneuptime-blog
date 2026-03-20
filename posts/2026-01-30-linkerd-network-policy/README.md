@@ -66,6 +66,7 @@ Ensure you have the following installed:
 
 ```bash
 # Verify Linkerd installation
+
 linkerd check
 
 # Verify your CNI supports NetworkPolicy

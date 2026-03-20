@@ -215,6 +215,7 @@ Both clusters use the same root CA. You create the CA secret in both clusters be
 
 ```bash
 # Same CA secret in both clusters
+
 kubectl create secret generic cacerts -n istio-system \
     --from-file=ca-cert.pem \
     --from-file=ca-key.pem \

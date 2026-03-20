@@ -55,6 +55,7 @@ The DNS Private Resolver needs its own subnet in your VNet. The subnet must be d
 
 ```bash
 # Create a dedicated subnet for the DNS Private Resolver inbound endpoint
+
 az network vnet subnet create \
   --name dns-resolver-inbound \
   --resource-group myResourceGroup \

@@ -55,6 +55,7 @@ Configure the Alertmanager component in your Mimir configuration file:
 
 ```yaml
 # mimir-config.yaml
+
 # Alertmanager component configuration
 
 alertmanager:

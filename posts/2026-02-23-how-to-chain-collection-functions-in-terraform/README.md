@@ -16,6 +16,7 @@ In Terraform, you chain functions by nesting them - the output of one function b
 
 ```hcl
 # Single function
+
 sort(["c", "a", "b"])
 # Result: ["a", "b", "c"]
 

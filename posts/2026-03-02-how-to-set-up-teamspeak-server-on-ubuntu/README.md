@@ -25,6 +25,7 @@ Never run TeamSpeak as root. Create a dedicated system user:
 
 ```bash
 # Create a system user with no login shell
+
 sudo useradd -r -m -d /opt/teamspeak -s /bin/false teamspeak
 
 # Switch to the teamspeak home directory

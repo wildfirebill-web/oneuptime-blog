@@ -57,6 +57,7 @@ The simplest circuit breaker monitors the ratio of network errors:
 
 ```yaml
 # traefik-circuit-breaker.yaml
+
 # Basic circuit breaker that trips when network error ratio exceeds 50%
 
 apiVersion: traefik.io/v1alpha1

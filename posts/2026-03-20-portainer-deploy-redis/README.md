@@ -1,4 +1,4 @@
-# How to Deploy Redis via Portainer
+# How to Deploy Redis via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -62,6 +62,7 @@ Create `redis.conf`:
 # redis.conf
 
 # Authentication
+
 requirepass your_redis_password
 
 # Bind to all interfaces (adjust for production)

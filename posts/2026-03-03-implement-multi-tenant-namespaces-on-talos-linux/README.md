@@ -32,6 +32,7 @@ Each tenant gets its own roles and role bindings, scoped to their namespaces.
 
 ```yaml
 # tenant-rbac.yaml
+
 # Admin role for the tenant
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role

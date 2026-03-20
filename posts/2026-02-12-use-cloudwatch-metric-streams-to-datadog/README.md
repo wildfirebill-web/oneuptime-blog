@@ -51,6 +51,7 @@ Firehose needs a backup S3 bucket for any records that fail to deliver to the HT
 
 ```bash
 # Create a backup bucket for failed metric deliveries
+
 aws s3 mb s3://my-datadog-metric-stream-backup \
   --region us-east-1
 ```

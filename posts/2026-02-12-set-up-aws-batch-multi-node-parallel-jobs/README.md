@@ -46,6 +46,7 @@ For multi-node jobs, you want instances in a placement group for low-latency net
 
 ```bash
 # Create a compute environment suitable for multi-node jobs
+
 aws batch create-compute-environment \
   --compute-environment-name mpi-compute-env \
   --type MANAGED \

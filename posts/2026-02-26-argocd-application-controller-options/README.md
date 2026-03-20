@@ -43,6 +43,7 @@ Like the server, you modify controller options in the deployment spec.
 
 ```yaml
 # kustomization.yaml
+
 patches:
   - target:
       kind: StatefulSet
@@ -199,7 +200,7 @@ spec:
 
 Each controller instance automatically picks up its shard based on its ordinal index in the StatefulSet.
 
-## Resource Tracking Options
+Resource Tracking Options
 
 ### --resource-parallelism-limit
 

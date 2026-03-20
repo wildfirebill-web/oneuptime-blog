@@ -182,6 +182,7 @@ Configure index templates that define data stream behavior:
 
 ```bash
 # Create index template for Kubernetes logs
+
 curl -X PUT "https://opensearch:9200/_index_template/kubernetes-logs" \
   -H 'Content-Type: application/json' \
   -d '{

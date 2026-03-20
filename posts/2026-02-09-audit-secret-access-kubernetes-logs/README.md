@@ -41,6 +41,7 @@ Create audit policy:
 
 ```yaml
 # /etc/kubernetes/audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

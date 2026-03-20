@@ -16,6 +16,7 @@ systemd includes an `analyze security` subcommand that scores services based on 
 
 ```bash
 # Check security exposure score for a specific service
+
 sudo systemd-analyze security nginx
 
 # Check all running services and sort by exposure

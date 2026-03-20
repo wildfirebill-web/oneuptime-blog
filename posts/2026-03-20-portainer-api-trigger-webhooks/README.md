@@ -8,7 +8,7 @@ Description: Learn how to create and trigger Portainer webhooks to automate cont
 
 ## Introduction
 
-Portainer webhooks provide a simple HTTP endpoint that, when called, triggers a service or stack update — typically pulling the latest image and restarting the container. This is the simplest way to integrate Portainer with CI/CD pipelines, registry push events, and other automation triggers.
+Portainer webhooks provide a simple HTTP endpoint that, when called, triggers a service or stack update - typically pulling the latest image and restarting the container. This is the simplest way to integrate Portainer with CI/CD pipelines, registry push events, and other automation triggers.
 
 ## Prerequisites
 
@@ -32,10 +32,10 @@ Portainer webhooks provide a simple HTTP endpoint that, when called, triggers a 
 1. Go to **Containers**.
 2. Click on the container name.
 3. Scroll to the **Container webhook** section.
-4. Click **Copy link** — this is your webhook URL.
+4. Click **Copy link** - this is your webhook URL.
 
 The webhook URL format:
-```
+```text
 https://portainer.example.com/api/webhooks/{token}
 ```
 
@@ -48,6 +48,7 @@ ENDPOINT_ID=1
 CONTAINER_ID="abc123def456"
 
 # Create a webhook for a container
+
 WEBHOOK=$(curl -s -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -166,7 +167,7 @@ Configure Docker Hub to automatically trigger Portainer redeployment after a pus
 2. Navigate to your repository → **Webhooks**.
 3. Click **Create a Webhook**.
 4. Enter your Portainer webhook URL:
-   ```
+   ```text
    https://portainer.example.com/api/webhooks/{your-token}
    ```
 5. Click **Create Webhook**.
@@ -206,4 +207,4 @@ Webhook URLs are essentially bearer tokens. Protect them by:
 
 ## Conclusion
 
-Portainer webhooks provide a dead-simple integration point for automated redeployments. Create a webhook for your container or service, store the URL securely in your CI/CD system, and call it after every successful image push. This pattern enables continuous deployment without complex pipeline integrations — a simple HTTP POST is all it takes to trigger a rolling update.
+Portainer webhooks provide a dead-simple integration point for automated redeployments. Create a webhook for your container or service, store the URL securely in your CI/CD system, and call it after every successful image push. This pattern enables continuous deployment without complex pipeline integrations - a simple HTTP POST is all it takes to trigger a rolling update.

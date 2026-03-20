@@ -31,6 +31,7 @@ Let us start with a minimal module that creates a Compute Engine instance.
 
 ```hcl
 # modules/compute-instance/versions.tf
+
 # Define the required provider and version
 terraform {
   required_version = ">= 1.5.0"

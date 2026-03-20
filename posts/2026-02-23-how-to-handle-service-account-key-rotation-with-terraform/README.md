@@ -18,6 +18,7 @@ Static credentials that never change become increasingly dangerous over time. Th
 
 ```hcl
 # Configure providers for multi-cloud key rotation
+
 terraform {
   required_providers {
     aws = {

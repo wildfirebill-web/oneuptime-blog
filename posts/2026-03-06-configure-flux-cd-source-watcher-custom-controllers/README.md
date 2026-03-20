@@ -49,6 +49,7 @@ Initialize a new controller project using kubebuilder:
 
 ```bash
 # Create the project directory
+
 mkdir flux-source-watcher && cd flux-source-watcher
 
 # Initialize the Go module

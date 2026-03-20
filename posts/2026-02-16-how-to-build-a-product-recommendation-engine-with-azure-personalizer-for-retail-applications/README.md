@@ -41,6 +41,7 @@ The beauty of this approach is that the model adapts to changing preferences and
 
 ```bash
 # Create a Personalizer resource
+
 az cognitiveservices account create \
   --name retail-personalizer \
   --resource-group retail-rg \

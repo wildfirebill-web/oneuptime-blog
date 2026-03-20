@@ -86,6 +86,7 @@ OneUptime can monitor Kubernetes resources directly. Set up a connection to your
 
 ```bash
 # First, make sure your services have proper health checks defined
+
 # This is important because Istio modifies health check behavior
 ```
 

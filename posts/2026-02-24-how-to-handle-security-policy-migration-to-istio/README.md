@@ -18,6 +18,7 @@ Before migrating anything, document what you have. Get a complete picture of you
 
 ```bash
 # List all NetworkPolicies
+
 kubectl get networkpolicies --all-namespaces
 
 # List all RBAC roles and bindings

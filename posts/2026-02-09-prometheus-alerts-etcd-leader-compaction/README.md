@@ -358,6 +358,7 @@ Create queries for Grafana dashboard showing leader stability:
 
 ```promql
 # Current leader
+
 max(etcd_server_is_leader) by (instance)
 
 # Leader changes over time

@@ -148,6 +148,7 @@ Variables come from the workspace settings in HCP Terraform or from `terraform.a
 
 ```hcl
 # terraform.auto.tfvars - Committed to the repo
+
 environment = "production"
 vpc_cidr    = "10.0.0.0/16"
 aws_region  = "us-east-1"

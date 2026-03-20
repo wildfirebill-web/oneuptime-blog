@@ -14,8 +14,8 @@ Portainer's `--log-level` and `--log-mode` flags control how verbose and in what
 
 | Level | Description |
 |---|---|
-| `DEBUG` | Most verbose — API calls, internal state transitions |
-| `INFO` | Default — startup, connections, significant events |
+| `DEBUG` | Most verbose - API calls, internal state transitions |
+| `INFO` | Default - startup, connections, significant events |
 | `WARN` | Only warnings and errors |
 | `ERROR` | Only errors |
 
@@ -23,6 +23,7 @@ Portainer's `--log-level` and `--log-mode` flags control how verbose and in what
 
 ```bash
 # Default (INFO level)
+
 docker run -d \
   --name portainer \
   -v /var/run/docker.sock:/var/run/docker.sock \
@@ -50,9 +51,9 @@ docker run -d \
 
 | Mode | Description |
 |---|---|
-| `PRETTY` | Default — colored, human-readable output |
-| `JSON` | Machine-parseable JSON — ideal for log aggregation systems |
-| `NOCOLOR` | Human-readable without ANSI color codes — for plain log files |
+| `PRETTY` | Default - colored, human-readable output |
+| `JSON` | Machine-parseable JSON - ideal for log aggregation systems |
+| `NOCOLOR` | Human-readable without ANSI color codes - for plain log files |
 
 ## Setting the Log Mode
 

@@ -30,6 +30,7 @@ You can install the Sentinel CLI by downloading it from the HashiCorp releases p
 
 ```bash
 # Download the Sentinel CLI (adjust version and OS as needed)
+
 wget https://releases.hashicorp.com/sentinel/0.24.0/sentinel_0.24.0_linux_amd64.zip
 
 # Unzip and move to your PATH

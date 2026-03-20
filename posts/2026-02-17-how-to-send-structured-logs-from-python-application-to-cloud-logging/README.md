@@ -20,6 +20,7 @@ Install the Cloud Logging client library.
 
 ```bash
 # Install the Cloud Logging Python client
+
 pip install google-cloud-logging
 ```
 

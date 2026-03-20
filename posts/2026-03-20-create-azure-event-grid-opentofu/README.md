@@ -47,6 +47,7 @@ resource "azurerm_eventgrid_topic" "application" {
 }
 
 # Output endpoint and key for application configuration
+
 output "topic_endpoint" {
   value = azurerm_eventgrid_topic.application.endpoint
 }
@@ -112,7 +113,7 @@ resource "azurerm_eventgrid_event_subscription" "to_eventhub" {
 
   eventhub_endpoint_id = azurerm_eventhub.events.id
 
-  # Advanced filter — only forward high-value orders
+  # Advanced filter - only forward high-value orders
   advanced_filter {
     number_greater_than_or_equals {
       key   = "data.amount"

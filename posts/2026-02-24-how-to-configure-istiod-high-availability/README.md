@@ -114,7 +114,7 @@ affinity:
         topologyKey: topology.kubernetes.io/zone
 ```
 
-## Resource Allocation
+Resource Allocation
 
 Under-provisioned istiod replicas hurt availability because they crash under load or respond slowly. Size your replicas based on mesh size:
 
@@ -271,6 +271,7 @@ With Istio multi-primary setup, each cluster runs its own istiod:
 
 ```yaml
 # Cluster 1
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

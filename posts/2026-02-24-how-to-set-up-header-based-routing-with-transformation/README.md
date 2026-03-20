@@ -398,6 +398,7 @@ Verify your routing works:
 
 ```bash
 # Test beta route
+
 curl -H "x-user-group: beta" http://api.example.com/version
 
 # Test default route

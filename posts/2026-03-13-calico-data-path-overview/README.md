@@ -42,6 +42,7 @@ Viewing these chains:
 ```bash
 sudo iptables -L cali-FORWARD -n --line-numbers
 # Shows the jump rules to per-interface policy chains
+
 ```
 
 ## Calico's iptables Chain Structure

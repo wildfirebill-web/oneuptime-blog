@@ -17,6 +17,7 @@ The `hostvars` magic variable is a dictionary containing all variables for every
 ```yaml
 ---
 # cross-host-basic.yml
+
 # Access variables from another host
 
 - hosts: webservers

@@ -8,7 +8,7 @@ Description: Learn how to configure AWS Firewall Manager with OpenTofu to centra
 
 ## Introduction
 
-AWS Firewall Manager provides centralized security policy management across accounts in AWS Organizations. A single policy can enforce WAF Web ACLs, security group rules, Shield Advanced protections, and Network Firewall configurations across hundreds of accounts and resources—new accounts automatically receive the policy when they join the organization.
+AWS Firewall Manager provides centralized security policy management across accounts in AWS Organizations. A single policy can enforce WAF Web ACLs, security group rules, Shield Advanced protections, and Network Firewall configurations across hundreds of accounts and resources-new accounts automatically receive the policy when they join the organization.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ AWS Firewall Manager provides centralized security policy management across acco
 
 ```hcl
 # Designate an account as Firewall Manager admin (done once in the management account)
+
 resource "aws_fms_admin_account" "main" {
   account_id = var.security_account_id  # Security/audit account
 }
@@ -137,4 +138,4 @@ aws fms list-compliance-status \
 
 ## Conclusion
 
-Firewall Manager is the most efficient tool for security governance at scale in AWS Organizations—a single policy definition enforces security controls across dozens or hundreds of accounts without per-account configuration. Enable `remediation_enabled = true` to automatically apply policies to resources that should be protected but aren't, ensuring new accounts and new resources are automatically covered. Use OUs in `include_map` to apply different policies to production vs. development environments.
+Firewall Manager is the most efficient tool for security governance at scale in AWS Organizations-a single policy definition enforces security controls across dozens or hundreds of accounts without per-account configuration. Enable `remediation_enabled = true` to automatically apply policies to resources that should be protected but aren't, ensuring new accounts and new resources are automatically covered. Use OUs in `include_map` to apply different policies to production vs. development environments.

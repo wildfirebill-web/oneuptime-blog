@@ -18,6 +18,7 @@ A Podman pod groups containers that share the same network namespace, meaning th
 
 ```ini
 # ~/.config/containers/systemd/webapp.pod
+
 [Pod]
 PublishPort=8080:80
 PublishPort=5432:5432

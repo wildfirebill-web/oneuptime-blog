@@ -48,6 +48,7 @@ Create a personal access token with `read_registry` and `write_registry` scopes:
 
 ```bash
 # Login to GitLab Container Registry
+
 docker login registry.gitlab.com -u YOUR_GITLAB_USERNAME -p YOUR_PERSONAL_ACCESS_TOKEN
 
 # Or use stdin for security

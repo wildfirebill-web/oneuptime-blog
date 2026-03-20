@@ -18,6 +18,7 @@ When you stop a pod, Podman sends a termination signal to each container in the 
 
 ```bash
 # Stop a running pod by name
+
 podman pod stop my-pod
 
 # Verify the pod is stopped

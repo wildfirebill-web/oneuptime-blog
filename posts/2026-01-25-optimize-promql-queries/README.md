@@ -63,6 +63,7 @@ More specific selectors reduce the number of series Prometheus must process:
 
 ```promql
 # Bad: Matches all http_requests_total metrics
+
 rate(http_requests_total[5m])
 
 # Better: Filter by job and status early

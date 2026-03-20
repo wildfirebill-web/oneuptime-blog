@@ -47,6 +47,7 @@ This graph tells you:
 
 ```yaml
 # clusters/production/sources/app-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

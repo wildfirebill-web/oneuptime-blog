@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, testing, kubernetes, failover
+Tags: Rancher, Disaster-recovery, Testing, Kubernetes, Failover
 
 Description: Learn how to conduct thorough disaster recovery failover tests for Rancher to validate your recovery procedures and meet RTO/RPO targets.
 
@@ -27,6 +27,7 @@ Testing your DR plan regularly is the only way to be confident it will work when
 echo "=== DR Test Pre-flight Check ==="
 
 # 1. Verify backup availability
+
 echo "1. Checking backup availability..."
 BACKUP_COUNT=$(aws s3 ls s3://rancher-dr-backups/ --recursive | wc -l)
 echo "   Available backups: $BACKUP_COUNT"

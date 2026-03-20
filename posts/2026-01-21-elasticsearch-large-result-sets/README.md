@@ -16,6 +16,7 @@ Retrieving large amounts of data from Elasticsearch requires special techniques.
 
 ```bash
 # Default limit is 10,000
+
 curl -X GET "https://localhost:9200/products/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

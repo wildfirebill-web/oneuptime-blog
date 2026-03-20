@@ -35,6 +35,7 @@ The load balancer handles splitting traffic between variants. Here is an Ansible
 
 ```yaml
 # roles/ab_testing_nginx/tasks/main.yml
+
 # Configure Nginx for A/B traffic splitting
 ---
 - name: Deploy A/B testing Nginx configuration

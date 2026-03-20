@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # List all firewall rules sorted by priority (lowest number = highest priority)
+
 gcloud compute firewall-rules list \
     --filter="network=my-vpc" \
     --sort-by=priority \

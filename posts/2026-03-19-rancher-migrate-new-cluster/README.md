@@ -24,6 +24,7 @@ Record the current setup for reference:
 
 ```bash
 # Current Rancher version
+
 kubectl get settings server-version -o jsonpath='{.value}' -n cattle-system
 
 # Current Helm values

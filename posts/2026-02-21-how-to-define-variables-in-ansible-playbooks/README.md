@@ -17,6 +17,7 @@ The most straightforward way to define variables is directly in the play:
 ```yaml
 ---
 # inline-vars.yml
+
 # Variables defined under the vars keyword are scoped to this play
 
 - hosts: webservers

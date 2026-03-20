@@ -18,6 +18,7 @@ When a Podman container cannot reach other containers, the host, or external ser
 
 ```bash
 # Verify the container is running
+
 podman ps --filter name=myapp
 
 # Check which network the container is on

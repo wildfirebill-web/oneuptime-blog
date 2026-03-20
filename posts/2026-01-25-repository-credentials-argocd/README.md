@@ -43,6 +43,7 @@ argocd repo add https://github.com/myorg/myrepo.git \
 
 ```yaml
 # repo-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

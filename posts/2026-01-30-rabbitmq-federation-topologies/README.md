@@ -49,6 +49,7 @@ Run this command on each RabbitMQ server to enable the federation plugin and its
 
 ```bash
 # Enable the federation plugin
+
 rabbitmq-plugins enable rabbitmq_federation
 
 # Enable the management UI extension for federation

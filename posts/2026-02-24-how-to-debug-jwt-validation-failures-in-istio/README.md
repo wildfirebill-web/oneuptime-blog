@@ -28,6 +28,7 @@ Before blaming Istio, check the token itself:
 
 ```bash
 # Decode the header
+
 echo "$TOKEN" | cut -d. -f1 | base64 -d 2>/dev/null | python3 -m json.tool
 
 # Decode the payload

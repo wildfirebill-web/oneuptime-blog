@@ -20,6 +20,7 @@ Start by measuring the actual lag.
 
 ```bash
 # Check replica status and lag using gcloud
+
 gcloud sql instances describe my-replica \
     --project=my-project \
     --format="json(replicaConfiguration, state, settings.databaseFlags)"

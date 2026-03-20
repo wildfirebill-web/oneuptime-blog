@@ -30,6 +30,7 @@ When `calicoctl node status` shows peers in a non-Established state:
 
 ```bash
 # Restart calico-node on the affected node to re-establish BGP
+
 kubectl delete pod <calico-node-pod> -n calico-system
 
 # If using node-to-node mesh, verify it is enabled

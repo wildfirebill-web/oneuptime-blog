@@ -33,6 +33,7 @@ In Compose v2, the top-level `version` key is optional and ignored. You can omit
 
 ```yaml
 # Compose v2 - no version key needed
+
 services:
   web:
     image: nginx:alpine
@@ -201,9 +202,9 @@ Portainer automatically uses the Docker Compose v2 plugin when deploying on stan
 
 ## Troubleshooting
 
-- **"version is obsolete" warning** — safe to ignore or remove the `version` key
-- **Profile not activating** — set `COMPOSE_PROFILES=profile-name` in stack environment variables
-- **`include` not found** — ensure referenced files exist in the repository when using Git-based stacks
+- **"version is obsolete" warning** - safe to ignore or remove the `version` key
+- **Profile not activating** - set `COMPOSE_PROFILES=profile-name` in stack environment variables
+- **`include` not found** - ensure referenced files exist in the repository when using Git-based stacks
 
 ## Conclusion
 

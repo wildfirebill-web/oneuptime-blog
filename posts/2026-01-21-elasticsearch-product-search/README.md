@@ -794,6 +794,7 @@ class ProductSearch:
         return [hit["_source"] for hit in result["hits"]["hits"]]
 
 # Usage
+
 search = ProductSearch(["http://localhost:9200"], ("elastic", "password"))
 results = search.search(
     query="wireless headphones",

@@ -42,6 +42,7 @@ On each node, set up a dedicated brick directory. Using a dedicated partition pr
 
 ```bash
 # Format and mount a dedicated disk on each node
+
 sudo mkfs.xfs /dev/sdb -f -L gluster-brick
 echo "LABEL=gluster-brick /data/gluster xfs defaults,noatime 0 0" | sudo tee -a /etc/fstab
 sudo mount -a

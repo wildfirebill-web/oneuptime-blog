@@ -18,6 +18,7 @@ The `reverse` function takes a list and returns a new list with the elements in 
 
 ```hcl
 # Returns the list in reverse order
+
 reverse(list)
 ```
 

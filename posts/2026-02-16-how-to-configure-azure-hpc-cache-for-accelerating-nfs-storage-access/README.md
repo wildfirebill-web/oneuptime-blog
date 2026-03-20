@@ -55,6 +55,7 @@ You need the following before setting up HPC Cache:
 
 ```bash
 # Register the HPC Cache resource provider
+
 az provider register --namespace Microsoft.StorageCache
 
 # Verify registration

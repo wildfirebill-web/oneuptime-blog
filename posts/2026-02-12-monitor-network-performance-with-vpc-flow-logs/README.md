@@ -88,6 +88,7 @@ This command creates a VPC-level flow log that publishes to CloudWatch Logs.
 
 ```bash
 # Create a flow log for the entire VPC, publishing to CloudWatch Logs
+
 aws ec2 create-flow-logs \
   --resource-type VPC \
   --resource-ids vpc-0abc123def456789 \

@@ -49,6 +49,7 @@ Before migrating, identify which resources need updates:
 
 ```bash
 # Check Flux installation health (will report API issues)
+
 flux check
 
 # Look for deprecation warnings in controller logs

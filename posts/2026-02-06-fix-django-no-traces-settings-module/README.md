@@ -12,6 +12,7 @@ The OpenTelemetry Django instrumentation requires `DJANGO_SETTINGS_MODULE` to be
 
 ```bash
 # This produces no traces
+
 opentelemetry-instrument python manage.py runserver
 ```
 

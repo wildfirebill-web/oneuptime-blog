@@ -12,7 +12,7 @@ Leaf-spine (Clos) architecture is the standard modern data center fabric design.
 
 ## Leaf-Spine IPv6 BGP Topology
 
-```
+```text
 Leaf-Spine IPv6 BGP Design:
                 AS 65001      AS 65002
                 [Spine-1]    [Spine-2]
@@ -31,7 +31,7 @@ eBGP Peering:
 
 ## Leaf Switch BGP Configuration (Arista EOS)
 
-```
+```text
 ! Leaf-1 (AS 65101) - Arista EOS configuration
 
 ipv6 unicast-routing
@@ -75,7 +75,7 @@ router bgp 65101
 
 ## Spine Switch BGP Configuration (Arista EOS)
 
-```
+```text
 ! Spine-1 (AS 65001) - BGP configuration
 
 interface Loopback0
@@ -116,7 +116,7 @@ ip prefix-list ALLOWED-PREFIXES seq 20 permit 2001:db8:dc1:2000::/52 le 64
 
 ## Anycast Gateway for Server IPv6
 
-```
+```text
 ! Distributed anycast gateway: same IPv6 address on all leaves
 ! Servers get one gateway IP regardless of which leaf they're on
 
@@ -134,6 +134,7 @@ interface Vlan100
 
 ! Server configuration:
 # Default gateway: 2001:db8:dc1:2001::1
+
 # Works regardless of which leaf the server connects to
 # No VM mobility issues when VM migrates between racks
 ```
@@ -164,7 +165,7 @@ show interfaces Ethernet1-2 counters rates
 
 ## BFD for Fast Failure Detection
 
-```
+```text
 ! Configure BFD on spine-leaf BGP sessions
 ! Arista EOS:
 

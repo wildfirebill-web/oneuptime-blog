@@ -36,6 +36,7 @@ For this example, we'll package a simple monitoring script:
 
 ```bash
 # Create the top-level package directory
+
 PKGNAME="mycompany-monitor"
 VERSION="1.0.0"
 ARCH="all"  # use 'amd64' for compiled binaries
@@ -127,6 +128,7 @@ Section: admin
 Priority: optional
 Homepage: https://internal.mycompany.com/tools
 Description: MyCompany System Monitor
+
  Lightweight system monitoring daemon that reports disk usage
  and load averages to the central monitoring infrastructure.
  .

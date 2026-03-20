@@ -1228,6 +1228,7 @@ To scrape metrics from your Go application, add this to your `prometheus.yml`:
 
 ```yaml
 # prometheus.yml configuration for scraping your Go application
+
 scrape_configs:
   - job_name: 'myapp'
     # How often to scrape

@@ -24,6 +24,7 @@ Security hardening for FIPS-enabled Calico focuses on five areas: enforcing mini
 
 ```yaml
 # felixconfiguration-fips-tls.yaml
+
 apiVersion: projectcalico.org/v3
 kind: FelixConfiguration
 metadata:

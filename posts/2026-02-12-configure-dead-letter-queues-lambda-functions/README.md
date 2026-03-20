@@ -151,6 +151,7 @@ This command attaches an SQS DLQ to an existing Lambda function:
 
 ```bash
 # First, make sure your Lambda role has sqs:SendMessage permission
+
 # Then configure the DLQ
 aws lambda update-function-configuration \
   --function-name order-processor \

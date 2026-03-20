@@ -77,6 +77,7 @@ flowchart LR
 
 ```python
 # Grid Search implementation using scikit-learn
+
 # This approach tests every combination of specified hyperparameters
 
 from sklearn.model_selection import GridSearchCV

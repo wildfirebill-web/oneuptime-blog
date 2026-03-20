@@ -47,6 +47,7 @@ The most common cause is missing or incorrect credentials.
 
 ```bash
 # Verify AWS CLI can authenticate
+
 aws sts get-caller-identity
 
 # Check which credentials are being used

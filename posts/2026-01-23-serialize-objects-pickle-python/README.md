@@ -22,6 +22,7 @@ Python's `pickle` module converts Python objects into a byte stream (serializati
 import pickle
 
 # Sample data
+
 data = {
     'users': ['Alice', 'Bob', 'Charlie'],
     'scores': [95, 87, 92],

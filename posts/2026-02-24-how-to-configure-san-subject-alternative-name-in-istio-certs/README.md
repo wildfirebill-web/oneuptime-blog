@@ -154,6 +154,7 @@ The certificate stored in the `my-tls-cert` secret needs a SAN entry for `api.ex
 
 ```bash
 # Create a certificate with a DNS SAN
+
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 \
   -subj "/CN=api.example.com" \
   -addext "subjectAltName=DNS:api.example.com,DNS:*.example.com" \

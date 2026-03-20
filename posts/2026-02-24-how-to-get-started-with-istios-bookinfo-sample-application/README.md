@@ -143,6 +143,7 @@ Pin all traffic to reviews v1 (no ratings):
 
 ```yaml
 # reviews-v1-only.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

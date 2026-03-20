@@ -79,6 +79,7 @@ Pacemaker is the most widely used cluster resource manager, and it has excellent
 
 ```bash
 # List available fence agents
+
 pcs stonith list
 
 # Common fence agents:

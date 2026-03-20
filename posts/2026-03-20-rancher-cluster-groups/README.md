@@ -1,4 +1,4 @@
-# How to Manage Cluster Groups in Rancher
+# How to Manage Cluster Groups in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ As the number of Rancher-managed clusters grows, managing them individually beco
 
 ## What are Cluster Groups?
 
-A `ClusterGroup` is a Fleet resource that dynamically selects clusters based on label selectors. When you target a deployment at a ClusterGroup, Fleet automatically deploys to all current and future clusters that match the selector — no manual cluster enumeration required.
+A `ClusterGroup` is a Fleet resource that dynamically selects clusters based on label selectors. When you target a deployment at a ClusterGroup, Fleet automatically deploys to all current and future clusters that match the selector - no manual cluster enumeration required.
 
 ## Step 1: Label Your Clusters
 
@@ -22,6 +22,7 @@ Labels are the foundation for all ClusterGroup selectors:
 # Apply consistent labels to all clusters as you register them
 
 # Production clusters in AWS
+
 kubectl label cluster.management.cattle.io c-aws-prod-1 \
   environment=production cloud=aws region=us-east-1 tier=1
 
@@ -208,7 +209,7 @@ kubectl get clustergroup -n fleet-default -o json | jq -r '
 
 ```bash
 #!/usr/bin/env bash
-# drain-group.sh — Cordon all nodes in a cluster group for maintenance
+# drain-group.sh - Cordon all nodes in a cluster group for maintenance
 
 GROUP_NAME="${1:?Usage: drain-group.sh <group-name>}"
 

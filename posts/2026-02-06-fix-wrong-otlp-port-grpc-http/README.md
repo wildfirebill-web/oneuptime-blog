@@ -71,6 +71,7 @@ const exporter = new OTLPTraceExporter({
 
 ```python
 # HTTP exporter - port 4318
+
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
 
 exporter = OTLPSpanExporter(

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Eventual Consistency, Infrastructure as Code, IaC, Troubleshooting, Cloud APIs
+Tags: OpenTofu, Eventual Consistency, Infrastructure as Code, IaC, Troubleshooting, Cloud API
 
 Description: Learn how to handle eventual consistency issues in OpenTofu with time_sleep, depends_on, and retry patterns.
 
@@ -20,6 +20,7 @@ Learn how to handle eventual consistency issues in OpenTofu with time_sleep, dep
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

@@ -18,6 +18,7 @@ Let's start with a Flask application:
 
 ```bash
 # Create a project directory
+
 mkdir python-docker-demo && cd python-docker-demo
 
 # Create a virtual environment and install dependencies

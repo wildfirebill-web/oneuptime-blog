@@ -22,6 +22,7 @@ Get your storage account key:
 
 ```bash
 # List storage account keys using Azure CLI
+
 az storage account keys list \
   --account-name mystorageaccount \
   --resource-group myresourcegroup \

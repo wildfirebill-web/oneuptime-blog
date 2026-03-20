@@ -43,6 +43,7 @@ The basic syntax publishes a port using the ingress routing mesh:
 
 ```bash
 # Create a service with an ingress-published port
+
 docker service create \
   --name webapp \
   --replicas 3 \

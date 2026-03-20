@@ -35,6 +35,7 @@ If this fails, it's your problem to debug.
 
 ```bash
 # Check status for a specific instance
+
 aws ec2 describe-instance-status \
   --instance-ids i-0abc123 \
   --query 'InstanceStatuses[0].{

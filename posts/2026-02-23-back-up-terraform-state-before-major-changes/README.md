@@ -20,6 +20,7 @@ The simplest approach:
 
 ```bash
 # Create a timestamped backup
+
 terraform state pull > "terraform.tfstate.backup-$(date +%Y%m%d-%H%M%S)"
 ```
 

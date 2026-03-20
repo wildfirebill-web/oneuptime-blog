@@ -43,6 +43,7 @@ Connect to your server using the IP address provided:
 
 ```bash
 # Replace YOUR_SERVER_IP with your actual server IP address
+
 ssh root@YOUR_SERVER_IP
 ```
 
@@ -60,6 +61,7 @@ You should see output similar to:
 ```text
 Distributor ID: Ubuntu
 Description:    Ubuntu 24.04 LTS
+
 Release:        24.04
 Codename:       noble
 ```

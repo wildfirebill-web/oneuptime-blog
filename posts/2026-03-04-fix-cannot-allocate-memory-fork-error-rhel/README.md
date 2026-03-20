@@ -14,6 +14,7 @@ The "Cannot allocate memory" error during fork() can be caused by insufficient m
 
 ```bash
 # Check available memory
+
 free -h
 
 # Check process count against limits

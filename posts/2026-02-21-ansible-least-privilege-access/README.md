@@ -22,6 +22,7 @@ This inventory structure organizes access by server role:
 
 ```yaml
 # group_vars/all.yml - Base access policies
+
 ---
 # Default users present on all servers
 base_users:

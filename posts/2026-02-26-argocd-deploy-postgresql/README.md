@@ -24,6 +24,7 @@ For development or small workloads, a simple Deployment works:
 
 ```yaml
 # apps/postgres/secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

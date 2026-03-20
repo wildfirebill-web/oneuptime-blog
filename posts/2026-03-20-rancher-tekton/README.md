@@ -20,6 +20,7 @@ Tekton is a Kubernetes-native CI/CD framework that runs pipelines as Kubernetes 
 
 ```bash
 # Install Tekton Pipelines (latest stable)
+
 kubectl apply -f \
   https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
@@ -59,7 +60,7 @@ tkn version
 ## Step 3: Create Reusable Tasks
 
 ```yaml
-# tasks/git-clone.yaml — Clone a Git repository
+# tasks/git-clone.yaml - Clone a Git repository
 apiVersion: tekton.dev/v1
 kind: Task
 metadata:
@@ -81,7 +82,7 @@ spec:
         cd $(workspaces.source.path)
         git checkout $(params.revision)
 ---
-# tasks/build-push.yaml — Build and push a Docker image
+# tasks/build-push.yaml - Build and push a Docker image
 apiVersion: tekton.dev/v1
 kind: Task
 metadata:
@@ -112,7 +113,7 @@ spec:
           - key: .dockerconfigjson
             path: config.json
 ---
-# tasks/kubectl-deploy.yaml — Deploy to Kubernetes
+# tasks/kubectl-deploy.yaml - Deploy to Kubernetes
 apiVersion: tekton.dev/v1
 kind: Task
 metadata:
@@ -247,7 +248,7 @@ tkn pipelinerun logs deploy-myapp-run-1 -f
 ## Step 6: Configure Webhook Triggers
 
 ```yaml
-# trigger/eventlistener.yaml — Trigger pipeline on GitHub push
+# trigger/eventlistener.yaml - Trigger pipeline on GitHub push
 apiVersion: triggers.tekton.dev/v1beta1
 kind: EventListener
 metadata:

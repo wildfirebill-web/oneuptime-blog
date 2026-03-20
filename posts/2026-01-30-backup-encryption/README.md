@@ -104,6 +104,7 @@ flowchart TB
 ```bash
 #!/bin/bash
 # backup-encrypt.sh
+
 # Encrypts backup files using AES-256-GCM with a password
 
 # Configuration

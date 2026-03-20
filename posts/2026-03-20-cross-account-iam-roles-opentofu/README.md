@@ -27,6 +27,7 @@ In the production account, create an IAM role with a trust policy that allows th
 
 ```hcl
 # production/iam.tf
+
 # The role that will be assumed from the tools account
 resource "aws_iam_role" "cross_account_deploy" {
   name = "CrossAccountDeployRole"
@@ -163,7 +164,7 @@ variable "external_id" {
 ## Best Practices
 
 - Always use an `external_id` when creating roles for third-party access to prevent confused deputy attacks.
-- Scope permissions in the assumed role to the minimum required — never attach `AdministratorAccess`.
+- Scope permissions in the assumed role to the minimum required - never attach `AdministratorAccess`.
 - Use descriptive session names to identify OpenTofu sessions in CloudTrail logs.
 - Store the `external_id` in a secrets manager, not in plain-text variable files.
 

@@ -14,6 +14,7 @@ Harbor is an open-source container registry that provides security features like
 
 ```bash
 # Docker and Docker Compose must be installed
+
 docker version
 docker compose version
 

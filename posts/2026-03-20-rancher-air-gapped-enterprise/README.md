@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, air-gap, enterprise, disconnected, kubernetes, security
+Tags: Rancher, Air-Gap, Enterprise, Disconnected, Kubernetes, Security
 
 Description: A step-by-step guide to deploying Rancher in air-gapped enterprise environments, covering image mirroring, private registry setup, and disconnected cluster management.
 
 ## Overview
 
-Air-gapped environments — systems with no direct internet connectivity — are common in government, financial services, and high-security enterprise environments. Deploying Rancher in an air-gapped environment requires mirroring all container images to a private registry, configuring package repositories, and setting up an internal Helm chart repository. This guide covers the complete air-gapped Rancher deployment process.
+Air-gapped environments - systems with no direct internet connectivity - are common in government, financial services, and high-security enterprise environments. Deploying Rancher in an air-gapped environment requires mirroring all container images to a private registry, configuring package repositories, and setting up an internal Helm chart repository. This guide covers the complete air-gapped Rancher deployment process.
 
 ## Architecture
 
-```
+```text
 Internet (outside)
         |
   [One-way sync/mirror process]
@@ -43,6 +43,7 @@ REGISTRY_SERVER="harbor.internal.company.com"
 REGISTRY_PROJECT="rancher"
 
 # Download Rancher image lists
+
 curl -O https://github.com/rancher/rancher/releases/download/${RANCHER_VERSION}/rancher-images.txt
 curl -O https://github.com/rancher/rancher/releases/download/${RANCHER_VERSION}/rancher-save-images.sh
 curl -O https://github.com/rancher/rancher/releases/download/${RANCHER_VERSION}/rancher-load-images.sh

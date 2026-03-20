@@ -24,6 +24,7 @@ For new setups, Ed25519 is the recommended choice. If you need to connect to old
 
 ```bash
 # Generate an Ed25519 key pair
+
 # -t specifies the key type
 # -C adds a comment to identify the key (commonly your email or hostname)
 ssh-keygen -t ed25519 -C "your_email@example.com"

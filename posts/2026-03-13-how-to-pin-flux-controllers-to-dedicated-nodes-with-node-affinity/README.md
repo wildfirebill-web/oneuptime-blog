@@ -35,6 +35,7 @@ Use a Kustomize patch to add node affinity to each Flux controller deployment.
 
 ```yaml
 # clusters/my-cluster/flux-system/node-affinity-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

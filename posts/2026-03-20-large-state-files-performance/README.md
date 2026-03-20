@@ -8,7 +8,7 @@ Description: Learn practical strategies to manage large OpenTofu state files and
 
 ## Introduction
 
-As your infrastructure grows, the OpenTofu state file can become very large — sometimes tens of megabytes with thousands of resources. This leads to slow `tofu plan` and `tofu apply` operations as OpenTofu must parse, refresh, and diff the entire state on every run. This guide covers strategies to keep performance manageable.
+As your infrastructure grows, the OpenTofu state file can become very large - sometimes tens of megabytes with thousands of resources. This leads to slow `tofu plan` and `tofu apply` operations as OpenTofu must parse, refresh, and diff the entire state on every run. This guide covers strategies to keep performance manageable.
 
 ## Understanding Performance Impact
 
@@ -24,7 +24,7 @@ With 1,000+ resources, the refresh phase alone can take 10-20 minutes.
 
 The most impactful fix is splitting a large monolith into smaller, focused state files:
 
-```
+```text
 infrastructure/
 ├── networking/       # VPCs, subnets, routing
 ├── compute/          # EC2, ECS, EKS
@@ -36,6 +36,7 @@ Each configuration manages fewer resources, making plans fast:
 
 ```bash
 # Apply only the networking changes
+
 cd infrastructure/networking
 tofu plan  # Refreshes 20 resources instead of 1000
 

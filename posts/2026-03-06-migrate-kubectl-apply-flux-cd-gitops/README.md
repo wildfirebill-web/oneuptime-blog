@@ -28,6 +28,7 @@ Flux CD addresses all of these by continuously reconciling your cluster with you
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify prerequisites

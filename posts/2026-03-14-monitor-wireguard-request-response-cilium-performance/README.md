@@ -78,6 +78,7 @@ spec:
 
 ```bash
 # Enable Hubble TCP metrics for flow-level latency
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set hubble.metrics.enabled="{dns,drop,tcp,flow}"
 

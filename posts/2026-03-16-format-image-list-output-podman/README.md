@@ -20,6 +20,7 @@ The standard `podman images` output includes five columns.
 
 ```bash
 # Default output
+
 podman images
 
 # Output columns:

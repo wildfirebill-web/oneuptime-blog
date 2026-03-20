@@ -29,6 +29,7 @@ OpenFaaS uses two namespaces by default - one for the platform, one for function
 
 ```yaml
 # clusters/my-cluster/openfaas/namespaces.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

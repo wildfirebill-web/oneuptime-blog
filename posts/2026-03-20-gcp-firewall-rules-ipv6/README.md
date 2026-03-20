@@ -17,6 +17,7 @@ PROJECT="my-project"
 VPC_NAME="vpc-main"
 
 # Allow all inbound IPv6 traffic (use with caution)
+
 gcloud compute firewall-rules create allow-all-ipv6 \
     --network="$VPC_NAME" \
     --direction=INGRESS \
@@ -60,7 +61,7 @@ gcloud compute firewall-rules create allow-icmpv6-essential \
     --project="$PROJECT"
 
 # GCP simplification: use protocol name 'icmpv6'
-# This allows all ICMPv6 types — you cannot filter by ICMPv6 type in basic firewall rules
+# This allows all ICMPv6 types - you cannot filter by ICMPv6 type in basic firewall rules
 # Use Cloud Armor or Google Cloud IDS for granular ICMPv6 filtering
 
 # Verify the rule
@@ -185,4 +186,4 @@ gcloud compute firewall-rules describe allow-web-ipv6 \
 
 ## Conclusion
 
-GCP VPC firewall rules for IPv6 use `::/0` for all IPv6 traffic ranges and the `icmpv6` protocol identifier for ICMPv6. Always allow ICMPv6 to ensure NDP (Neighbor Discovery) and Path MTU Discovery work correctly — blocking ICMPv6 breaks IPv6 connectivity. Use target-tags to scope rules to specific VM groups. Terraform's `google_compute_firewall` resource uses `source_ranges = ["::/0"]` for IPv6 ingress rules and `destination_ranges` for egress. Audit firewall rules regularly with `gcloud compute firewall-rules list --filter="sourceRanges:(*:*)"`.
+GCP VPC firewall rules for IPv6 use `::/0` for all IPv6 traffic ranges and the `icmpv6` protocol identifier for ICMPv6. Always allow ICMPv6 to ensure NDP (Neighbor Discovery) and Path MTU Discovery work correctly - blocking ICMPv6 breaks IPv6 connectivity. Use target-tags to scope rules to specific VM groups. Terraform's `google_compute_firewall` resource uses `source_ranges = ["::/0"]` for IPv6 ingress rules and `destination_ranges` for egress. Audit firewall rules regularly with `gcloud compute firewall-rules list --filter="sourceRanges:(*:*)"`.

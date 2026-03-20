@@ -16,6 +16,7 @@ When a web service isn't behaving, curl and wget are the tools that let you poke
 
 ```bash
 # Simple GET request
+
 curl https://example.com
 
 # Show response headers along with the body

@@ -24,6 +24,7 @@ First, install cert-manager in your cluster using kubectl. The official installa
 
 ```yaml
 # Install cert-manager CRDs and controller
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.0/cert-manager.yaml
 
 # Verify the installation

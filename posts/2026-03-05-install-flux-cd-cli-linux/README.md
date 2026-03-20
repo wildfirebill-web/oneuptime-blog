@@ -25,6 +25,7 @@ The simplest way to install the Flux CLI on Linux is using the official install 
 
 ```bash
 # Download and run the official Flux install script
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 ```
 

@@ -30,6 +30,7 @@ Ensure Cilium exposes metrics for Prometheus:
 
 ```bash
 # Verify metrics are enabled
+
 cilium config view | grep prometheus
 
 # If not enabled, upgrade Cilium with metrics

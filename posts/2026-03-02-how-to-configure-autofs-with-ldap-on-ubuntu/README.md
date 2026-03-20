@@ -25,6 +25,7 @@ You need:
 
 ```bash
 # Install autofs and LDAP client libraries
+
 sudo apt update
 sudo apt install -y autofs autofs-ldap ldap-utils
 

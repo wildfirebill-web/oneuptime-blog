@@ -36,6 +36,7 @@ You can set minimum and maximum sizes for the EPHEMERAL volume in your machine c
 
 ```yaml
 # Machine config with EPHEMERAL size constraints
+
 machine:
   install:
     disk: /dev/sda

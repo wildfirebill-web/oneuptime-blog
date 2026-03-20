@@ -39,6 +39,7 @@ Organize your bucket into zones. Each zone represents a different stage of data 
 
 ```bash
 # Create the data lake bucket with versioning
+
 aws s3 mb s3://mycompany-data-lake --region us-east-1
 
 aws s3api put-bucket-versioning \

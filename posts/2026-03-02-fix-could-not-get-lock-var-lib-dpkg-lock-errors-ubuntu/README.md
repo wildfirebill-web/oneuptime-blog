@@ -34,6 +34,7 @@ Before deleting any lock files, verify whether a legitimate process holds the lo
 
 ```bash
 # Check for running apt or dpkg processes
+
 ps aux | grep -E '(apt|dpkg)' | grep -v grep
 
 # A more targeted check

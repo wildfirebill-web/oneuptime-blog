@@ -84,6 +84,7 @@ Before customizing, check the default values for each chart:
 
 ```bash
 # View istiod defaults
+
 helm show values istio/istiod > istiod-default-values.yaml
 
 # View gateway defaults

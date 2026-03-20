@@ -22,6 +22,7 @@ Before starting, inventory your current registry:
 
 ```bash
 # List all repositories in Docker Registry v2
+
 curl -X GET https://registry.example.com/v2/_catalog | jq .
 
 # For each repository, list tags

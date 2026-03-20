@@ -19,6 +19,7 @@ OpenSearch is an open-source, community-driven fork of Elasticsearch and Kibana.
 
 ```bash
 # Required for OpenSearch/Elasticsearch
+
 sudo sysctl -w vm.max_map_count=262144
 
 # Make it persistent
@@ -92,7 +93,7 @@ networks:
 
 ## Step 3: Set Environment Variables in Portainer
 
-```
+```text
 OPENSEARCH_ADMIN_PASSWORD=Admin@123Secure!
 ```
 
@@ -130,4 +131,4 @@ Open `http://<host>:5601` and log in with username `admin` and your `OPENSEARCH_
 
 ## Conclusion
 
-OpenSearch uses HTTPS and the security plugin by default in versions 2.x+. The `OPENSEARCH_INITIAL_ADMIN_PASSWORD` env var sets the admin user password on first run. For single-node deployments set `discovery.type=single-node` to avoid cluster bootstrap issues. The `vm.max_map_count=262144` kernel parameter is mandatory — without it, OpenSearch will fail to start.
+OpenSearch uses HTTPS and the security plugin by default in versions 2.x+. The `OPENSEARCH_INITIAL_ADMIN_PASSWORD` env var sets the admin user password on first run. For single-node deployments set `discovery.type=single-node` to avoid cluster bootstrap issues. The `vm.max_map_count=262144` kernel parameter is mandatory - without it, OpenSearch will fail to start.

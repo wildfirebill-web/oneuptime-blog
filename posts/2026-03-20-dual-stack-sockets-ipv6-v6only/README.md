@@ -83,7 +83,7 @@ int main(void) {
 
 When `IPV6_V6ONLY=0`, an IPv4 client connecting to an IPv6 socket gets mapped:
 
-```
+```text
 IPv4 client:  192.168.1.5:12345
   ↓ (mapped by OS)
 IPv6 socket sees: ::ffff:192.168.1.5
@@ -141,6 +141,7 @@ def create_ipv6_only_server(port: int) -> socket.socket:
     return sock
 
 # Check system default
+
 test_sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 v6only = test_sock.getsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY)
 print(f"System default IPV6_V6ONLY: {v6only}")

@@ -72,6 +72,7 @@ Securing network access to ClickHouse is critical for protecting your data. This
 
 ```bash
 # Allow from internal network only
+
 iptables -A INPUT -p tcp -s 10.0.0.0/8 --dport 9440 -j ACCEPT
 iptables -A INPUT -p tcp -s 10.0.0.0/8 --dport 8443 -j ACCEPT
 iptables -A INPUT -p tcp --dport 9440 -j DROP

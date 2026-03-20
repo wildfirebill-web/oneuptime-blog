@@ -193,6 +193,7 @@ mindmap
 
 ```yaml
 # grafana-panels.yaml
+
 # CPU Utilization Panel
 - title: "CPU Utilization by Node"
   type: timeseries

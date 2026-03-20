@@ -30,6 +30,7 @@ Add and verify the official Calico Helm chart repository.
 
 ```bash
 # Add the Tigera Calico Helm repository
+
 helm repo add projectcalico https://docs.tigera.io/calico/charts
 
 # Update the local Helm chart cache

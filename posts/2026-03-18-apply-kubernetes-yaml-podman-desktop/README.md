@@ -20,6 +20,7 @@ Kubernetes resources are defined in YAML format with a standard structure:
 
 ```yaml
 # Every Kubernetes resource follows this pattern
+
 apiVersion: v1          # API version for the resource type
 kind: Pod               # Type of resource
 metadata:

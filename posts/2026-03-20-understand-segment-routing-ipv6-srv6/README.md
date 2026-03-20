@@ -1,4 +1,4 @@
-# How to Understand Segment Routing over IPv6 (SRv6)
+# How to Understand Segment Routing over IPv6 (SRv6) - Understand
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,7 +16,7 @@ Segment Routing over IPv6 (SRv6) is a source routing architecture where the pack
 
 A SID is an IPv6 address in the `5f00::/16` space (RFC 9602) that encodes:
 
-```
+```javascript
  |   Locator (N bits)   | Function (F bits) | Args (A bits) |
  +----------------------+-------------------+---------------+
  | 5f00:node::/48       |  :e001:           |    ::         |
@@ -29,7 +29,7 @@ A SID is an IPv6 address in the `5f00::/16` space (RFC 9602) that encodes:
 
 ### Segment Routing Header (SRH)
 
-```
+```text
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
  | Next Header   |  Hdr Ext Len  | Routing Type  | Segments Left |
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -47,7 +47,7 @@ A SID is an IPv6 address in the `5f00::/16` space (RFC 9602) that encodes:
 
 ## How SRv6 Forwarding Works
 
-```
+```text
 Packet flow through R1 → R2 → R3:
   Ingress (R1):
     IPv6 dst = 5f00:2:0:e001::  (R2's End.X SID)
@@ -79,7 +79,7 @@ Packet flow through R1 → R2 → R3:
 
 ## SRv6 vs MPLS
 
-```
+```text
 MPLS:
   Label stack: [label1, label2, label3] + IP payload
   Requires LDP/RSVP-TE for label distribution
@@ -95,7 +95,7 @@ SRv6:
 
 ## Practical SRv6 Use Cases
 
-```
+```text
 1. Traffic Engineering:
    Steer flows through specific paths
    SID list = [R2's SID, R4's SID, R6's SID, destination]

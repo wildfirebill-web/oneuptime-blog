@@ -1163,7 +1163,7 @@ spec:
   - action: Deny
 ```
 
-### Resource Management
+Resource Management
 
 Set resource limits for MetalLB:
 

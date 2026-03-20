@@ -60,6 +60,7 @@ Invalid YAML, missing bases, or incompatible overlays cause the build step to fa
 
 ```bash
 # Test the build locally
+
 kustomize build ./path/to/kustomization
 ```
 

@@ -31,6 +31,7 @@ For public images, no authentication is required. However, Docker Hub enforces r
 
 ```yaml
 # imagerepository-nginx.yaml
+
 # Scan the official nginx image on Docker Hub
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

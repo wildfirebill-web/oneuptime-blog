@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Snapshots, Automation, API, Reporting, DevOps, Backup
+Tags: Portainer, Snapshot, Automation, API, Reporting, DevOps, Backup
 
 Description: Learn how to automate Portainer environment snapshots and generate reports on container, stack, and resource usage across your environments.
 
 ---
 
-Portainer's snapshot feature captures a point-in-time view of each environment's resources — containers, stacks, images, volumes, and networks. Automating snapshots and generating reports helps with capacity planning, compliance auditing, and change tracking. This guide covers using the Portainer API to trigger snapshots and export environment reports.
+Portainer's snapshot feature captures a point-in-time view of each environment's resources - containers, stacks, images, volumes, and networks. Automating snapshots and generating reports helps with capacity planning, compliance auditing, and change tracking. This guide covers using the Portainer API to trigger snapshots and export environment reports.
 
 ---
 
@@ -18,7 +18,7 @@ Portainer Business Edition supports explicit snapshot triggering. For CE, you ca
 
 ```bash
 #!/bin/bash
-# trigger-snapshots.sh — force snapshot refresh for all environments
+# trigger-snapshots.sh - force snapshot refresh for all environments
 
 PORTAINER_URL="https://portainer.example.com"
 API_KEY="ptr_your_api_key_here"
@@ -26,6 +26,7 @@ API_KEY="ptr_your_api_key_here"
 echo "Triggering environment snapshots..."
 
 # Get all environments
+
 ENDPOINTS=$(curl -s -H "X-API-Key: $API_KEY" \
   "$PORTAINER_URL/api/endpoints" | \
   python3 -c "
@@ -55,7 +56,7 @@ Query the Portainer API to build a comprehensive report on each environment's re
 
 ```python
 #!/usr/bin/env python3
-# portainer-report.py — generate environment resource report
+# portainer-report.py - generate environment resource report
 
 import requests
 import json

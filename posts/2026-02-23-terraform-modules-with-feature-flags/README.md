@@ -34,6 +34,7 @@ Using a single `features` object instead of separate variables has advantages. I
 
 ```hcl
 # Usage - callers pick exactly what they need
+
 module "api_service" {
   source = "./modules/app-service"
 

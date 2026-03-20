@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, count, count.index, HCL, Loops, Infrastructure as Code
+Tags: OpenTofu, Count, Count.index, HCL, Loops, Infrastructure as Code
 
-Description: Learn how to use count and count.index in OpenTofu to create multiple instances of a resource — including patterns for naming, subnet allocation, and when to use for_each instead.
+Description: Learn how to use count and count.index in OpenTofu to create multiple instances of a resource - including patterns for naming, subnet allocation, and when to use for_each instead.
 
 ## Introduction
 
@@ -29,13 +29,14 @@ resource "aws_instance" "web" {
 }
 
 # Reference specific instances
+
 output "first_instance_ip"  { value = aws_instance.web[0].private_ip }
 output "all_instance_ips"   { value = aws_instance.web[*].private_ip }
 ```
 
 ## Subnets Across Availability Zones
 
-A common pattern — create subnets in multiple AZs:
+A common pattern - create subnets in multiple AZs:
 
 ```hcl
 data "aws_availability_zones" "available" {
@@ -175,4 +176,4 @@ output "subnet_info" {
 
 ## Conclusion
 
-`count` and `count.index` are the right tool for creating multiple sequential or identical resources, optional resources (`count = 0/1`), and subnet/AZ distribution patterns where the index correlates with list positions. For production workloads where resources have meaningful names (services, users, environments), prefer `for_each` — it provides stable state addresses that don't cascade changes when items are removed from the middle of a list.
+`count` and `count.index` are the right tool for creating multiple sequential or identical resources, optional resources (`count = 0/1`), and subnet/AZ distribution patterns where the index correlates with list positions. For production workloads where resources have meaningful names (services, users, environments), prefer `for_each` - it provides stable state addresses that don't cascade changes when items are removed from the middle of a list.

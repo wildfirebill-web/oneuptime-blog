@@ -16,6 +16,7 @@ Ensure SNMP is configured on the target RHEL servers (see the SNMP monitoring gu
 
 ```bash
 # Install SNMP utilities and Nagios SNMP plugins on the Nagios server
+
 sudo dnf install -y net-snmp-utils perl-Net-SNMP
 
 # Download and install additional SNMP plugins for Nagios

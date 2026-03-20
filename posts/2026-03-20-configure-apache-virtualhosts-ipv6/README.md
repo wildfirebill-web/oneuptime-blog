@@ -12,6 +12,7 @@ Description: Learn how to configure Apache VirtualHost directives for IPv6 addre
 # IPv6 addresses in VirtualHost directives must be in brackets
 
 # IPv6-only virtual host
+
 <VirtualHost [2001:db8::10]:80>
     ServerName example.com
     DocumentRoot /var/www/example
@@ -129,4 +130,4 @@ curl -6 -v http://[2001:db8::10]/ 2>&1 | grep Server
 
 ## Summary
 
-Configure Apache IPv6 VirtualHosts with `<VirtualHost [::]:80>` (all IPv6) or `<VirtualHost [2001:db8::10]:80>` (specific address). IPv6 addresses must be in brackets. Use `<VirtualHost *:80>` to match both IPv4 and IPv6 Listen directives. For dual-stack, create two VirtualHost blocks — one for IPv4 and one for IPv6 — pointing to the same DocumentRoot. Verify with `apache2ctl -S` and test with `curl -6`.
+Configure Apache IPv6 VirtualHosts with `<VirtualHost [::]:80>` (all IPv6) or `<VirtualHost [2001:db8::10]:80>` (specific address). IPv6 addresses must be in brackets. Use `<VirtualHost *:80>` to match both IPv4 and IPv6 Listen directives. For dual-stack, create two VirtualHost blocks - one for IPv4 and one for IPv6 - pointing to the same DocumentRoot. Verify with `apache2ctl -S` and test with `curl -6`.

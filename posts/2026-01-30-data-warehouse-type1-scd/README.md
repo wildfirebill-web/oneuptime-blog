@@ -406,6 +406,7 @@ SELECT * FROM final
 
 ```yaml
 # models/marts/schema.yml
+
 version: 2
 
 models:

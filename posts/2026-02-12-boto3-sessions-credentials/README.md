@@ -26,6 +26,7 @@ Here's the basic usage.
 import boto3
 
 # Default session (uses default credential chain)
+
 session = boto3.Session()
 
 # Create a client from the session

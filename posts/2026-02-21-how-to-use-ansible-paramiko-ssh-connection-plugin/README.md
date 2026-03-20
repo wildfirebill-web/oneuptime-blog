@@ -39,6 +39,7 @@ Paramiko is usually installed alongside Ansible, but verify it:
 
 ```bash
 # Check if paramiko is installed
+
 python3 -c "import paramiko; print(paramiko.__version__)"
 
 # Install if missing

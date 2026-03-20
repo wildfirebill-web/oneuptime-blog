@@ -21,6 +21,7 @@ CloudNativePG is a Kubernetes operator that covers the full lifecycle of a Postg
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Verify cluster access

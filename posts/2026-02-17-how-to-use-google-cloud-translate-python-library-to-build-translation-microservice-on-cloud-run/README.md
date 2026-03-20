@@ -16,6 +16,7 @@ Install the Translation API client library.
 
 ```bash
 # Install the Translation API client and FastAPI
+
 pip install google-cloud-translate fastapi uvicorn
 
 # Enable the Translation API

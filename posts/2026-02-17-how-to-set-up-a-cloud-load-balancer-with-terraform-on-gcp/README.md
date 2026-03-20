@@ -37,6 +37,7 @@ Start with a static external IP address:
 
 ```hcl
 # ip.tf - Reserve a static external IP for the load balancer
+
 resource "google_compute_global_address" "lb_ip" {
   name    = "lb-static-ip"
   project = var.project_id

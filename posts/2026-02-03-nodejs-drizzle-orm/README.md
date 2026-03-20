@@ -30,6 +30,7 @@ Install Drizzle and the PostgreSQL driver:
 
 ```bash
 # Install Drizzle ORM and PostgreSQL driver
+
 npm install drizzle-orm postgres
 
 # Install drizzle-kit for migrations (dev dependency)

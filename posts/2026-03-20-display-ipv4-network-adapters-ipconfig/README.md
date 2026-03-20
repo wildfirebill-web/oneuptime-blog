@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, ipconfig, IPv4, Network Diagnostics
+Tags: Windows, Networking, Ipconfig, IPv4, Network Diagnostics
 
 Description: Use ipconfig and ipconfig /all to display IPv4 addresses, subnet masks, gateways, and DNS servers for all network adapters on Windows.
 
@@ -18,7 +18,7 @@ ipconfig
 
 Shows a summary of IPv4 and IPv6 addresses, subnet masks, and gateways for each adapter:
 
-```
+```text
 Windows IP Configuration
 
 Ethernet adapter Ethernet:
@@ -39,7 +39,7 @@ ipconfig /all
 
 Adds MAC addresses, DHCP server, lease times, DNS servers, and WINS:
 
-```
+```text
 Ethernet adapter Ethernet:
    DHCP Enabled. . . . . . . . . . . : No
    IPv4 Address. . . . . . . . . . . : 192.168.1.100(Preferred)
@@ -87,6 +87,7 @@ ipconfig /all
 
 ```powershell
 # Show all IPv4 addresses for all adapters
+
 Get-NetIPAddress -AddressFamily IPv4 | Select-Object InterfaceAlias, IPAddress, PrefixLength, SuffixOrigin
 
 # Show adapter with gateway

@@ -36,6 +36,7 @@ The simplest way to detect drift is to run `terraform plan` regularly:
 # drift-check.sh - Run drift detection and alert on changes
 
 # Run plan in machine-readable format
+
 terraform plan -detailed-exitcode -out=drift-check.plan 2>&1
 
 EXIT_CODE=$?

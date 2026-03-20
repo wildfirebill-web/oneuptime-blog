@@ -29,6 +29,7 @@ Start by listing all releases in a pipeline to get an overview of your deploymen
 
 ```bash
 # List all releases for a pipeline, most recent first
+
 gcloud deploy releases list \
   --delivery-pipeline=my-app-pipeline \
   --region=us-central1

@@ -117,6 +117,7 @@ Use the `influx` CLI inside the container for quick writes and queries:
 
 ```bash
 # Write a test data point
+
 docker exec -it $(docker ps -qf name=influxdb) influx write \
   --org myorg \
   --bucket metrics \

@@ -47,6 +47,7 @@ Start with these commands to identify the problem area:
 
 ```bash
 # Get pipeline run status
+
 kubectl get pipelineruns -n kubeflow-user
 
 # Get all pods for a specific run

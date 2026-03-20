@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, apparmor, security, linux, kubernetes
+Tags: Rancher, AppArmor, Security, Linux, Kubernetes
 
 Description: Step-by-step guide to creating and enforcing AppArmor profiles on containerized workloads in Rancher.
 
@@ -31,6 +31,7 @@ How to Configure AppArmor Profiles in Rancher addresses these challenges by addi
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

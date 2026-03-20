@@ -28,6 +28,7 @@ This guide provides practical examples and step-by-step procedures for using `ca
 
 ```bash
 # Import Calico resources into the target datastore
+
 calicoctl datastore migrate import -f calico-export.yaml
 ```
 

@@ -32,6 +32,7 @@ Create an OCIRepository source that points to your OCI-hosted Helm chart:
 
 ```yaml
 # OCIRepository source for a Helm chart in an OCI registry
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:

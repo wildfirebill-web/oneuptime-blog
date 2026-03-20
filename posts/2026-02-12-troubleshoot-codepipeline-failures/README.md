@@ -18,6 +18,7 @@ Before diving into specific failures, here's how to get the basic info:
 
 ```bash
 # Get the current pipeline state showing which stage failed
+
 aws codepipeline get-pipeline-state \
   --name my-app-pipeline \
   --query 'stageStates[*].{Stage:stageName,Status:latestExecution.status}'

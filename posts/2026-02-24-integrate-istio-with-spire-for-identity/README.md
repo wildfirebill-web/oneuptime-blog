@@ -30,6 +30,7 @@ Start by deploying the SPIRE server and agent on your cluster. The SPIRE server 
 kubectl create namespace spire
 
 # Deploy SPIRE server
+
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: StatefulSet

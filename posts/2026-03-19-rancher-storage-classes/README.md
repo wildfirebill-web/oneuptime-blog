@@ -68,6 +68,7 @@ Mark a StorageClass as the default:
 
 ```bash
 # Remove default from current default
+
 kubectl patch storageclass <current-default> -p '{"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "false"}}}'
 
 # Set new default

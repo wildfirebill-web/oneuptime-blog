@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitLab, CI/CD, Kubernetes, Runners, Helm, Auto Scaling, Infrastructure as Code
+Tags: OpenTofu, GitLab, CI/CD, Kubernetes, Runner, Helm, Auto Scaling, Infrastructure as Code
 
 Description: Learn how to deploy GitLab Runner on Kubernetes using the Helm chart with OpenTofu, enabling elastic CI/CD scaling with Kubernetes executor for isolated, ephemeral job pods.
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # gitlab_runner.tf
+
 resource "kubernetes_namespace" "gitlab_runner" {
   metadata {
     name = "gitlab-runner"
@@ -137,7 +138,7 @@ resource "kubernetes_service_account" "runner" {
     namespace = kubernetes_namespace.gitlab_runner.metadata[0].name
 
     annotations = {
-      # IRSA annotation for AWS — runner pods can access AWS services
+      # IRSA annotation for AWS - runner pods can access AWS services
       "eks.amazonaws.com/role-arn" = aws_iam_role.runner.arn
     }
   }
@@ -224,8 +225,8 @@ resource "kubernetes_horizontal_pod_autoscaler_v2" "runner" {
 
 ## Best Practices
 
-- Use the Kubernetes executor instead of Docker+Machine on Kubernetes — it creates native pods with proper resource limits and scheduling constraints.
-- Configure node selectors and tolerations for dedicated CI nodes — runner jobs consume bursty resources and shouldn't compete with production workloads.
+- Use the Kubernetes executor instead of Docker+Machine on Kubernetes - it creates native pods with proper resource limits and scheduling constraints.
+- Configure node selectors and tolerations for dedicated CI nodes - runner jobs consume bursty resources and shouldn't compete with production workloads.
 - Use IRSA (on EKS) or Workload Identity (on GKE) to give runner pods AWS/GCP access without static credentials.
-- Enable S3 cache sharing — shared caches dramatically reduce build times by sharing dependency caches across all runner pods.
-- Set `concurrent` to match the maximum number of jobs your cluster can handle — without this limit, GitLab Runner will accept more jobs than the cluster can schedule.
+- Enable S3 cache sharing - shared caches dramatically reduce build times by sharing dependency caches across all runner pods.
+- Set `concurrent` to match the maximum number of jobs your cluster can handle - without this limit, GitLab Runner will accept more jobs than the cluster can schedule.

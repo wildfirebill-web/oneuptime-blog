@@ -16,6 +16,7 @@ The simplest invocation downloads the entire state:
 
 ```bash
 # Pull the current state and display it
+
 terraform state pull
 ```
 

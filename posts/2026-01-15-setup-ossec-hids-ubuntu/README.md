@@ -84,6 +84,7 @@ Before installing OSSEC, ensure your Ubuntu system meets these requirements:
 
 ```bash
 # Update your system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required dependencies

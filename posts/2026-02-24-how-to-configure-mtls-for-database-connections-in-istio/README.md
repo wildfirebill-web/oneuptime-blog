@@ -107,6 +107,7 @@ Your application connects to PostgreSQL normally, without any TLS settings:
 
 ```yaml
 # Application deployment
+
 env:
 - name: DATABASE_URL
   value: "postgres://myuser:password@postgres.database.svc.cluster.local:5432/mydb?sslmode=disable"

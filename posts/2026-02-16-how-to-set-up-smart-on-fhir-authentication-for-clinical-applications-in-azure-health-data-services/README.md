@@ -49,6 +49,7 @@ Each SMART on FHIR application needs an Azure AD app registration:
 
 ```bash
 # Register the SMART app in Azure AD
+
 SMART_APP_NAME="clinical-dashboard"
 REDIRECT_URI="https://myapp.example.com/callback"
 

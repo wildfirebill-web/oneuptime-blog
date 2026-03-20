@@ -20,6 +20,7 @@ Before load testing your application, establish a baseline by measuring the side
 
 ```bash
 # From inside the mesh (goes through both sidecars)
+
 kubectl exec -n default deploy/sleep -c sleep -- \
   curl -s -o /dev/null -w "Time: %{time_total}s\n" http://httpbin:8000/status/200
 

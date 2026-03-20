@@ -43,6 +43,7 @@ def synthesize_speech(text, voice_id='Joanna', output_format='mp3'):
     return None
 
 # Generate speech with different voices
+
 text = "Welcome to OneUptime. Your infrastructure monitoring starts here."
 
 synthesize_speech(text, 'Joanna')   # US English, female

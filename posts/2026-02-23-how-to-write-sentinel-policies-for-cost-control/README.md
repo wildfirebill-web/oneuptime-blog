@@ -28,6 +28,7 @@ HCP Terraform can estimate the monthly cost of planned changes. Sentinel can acc
 
 ```python
 # cost-limit.sentinel
+
 # Enforces maximum monthly cost and cost increase limits
 
 import "tfrun"
@@ -202,7 +203,7 @@ main = rule {
 }
 ```
 
-## Resource Count Limits
+Resource Count Limits
 
 Limit how many of an expensive resource type can exist:
 

@@ -119,6 +119,7 @@ If your app sends HTTPS requests, the ServiceEntry port protocol should be `TLS`
 
 ```yaml
 # Wrong for HTTPS traffic
+
   ports:
     - number: 443
       name: http

@@ -111,6 +111,7 @@ resource "aws_elasticache_global_replication_group" "global" {
 }
 
 # Secondary in another region
+
 resource "aws_elasticache_replication_group" "secondary" {
   provider = aws.us_west_2  # Different region
 

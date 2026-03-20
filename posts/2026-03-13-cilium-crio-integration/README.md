@@ -30,6 +30,7 @@ Install or configure Cilium for CRI-O:
 
 ```bash
 # Verify CRI-O is the runtime
+
 kubectl get nodes -o wide | awk '{print $1, $11}'
 # Should show: cri-o://x.y.z in CONTAINER-RUNTIME column
 

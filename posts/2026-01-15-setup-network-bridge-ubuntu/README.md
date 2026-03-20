@@ -50,6 +50,7 @@ graph TB
 
 ```bash
 # Check current network configuration
+
 cat /etc/netplan/*.yaml
 
 # View current interfaces

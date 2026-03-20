@@ -30,6 +30,7 @@ Create a pod that runs Podman:
 
 ```yaml
 # podman-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -390,7 +391,7 @@ spec:
       restartPolicy: Never
 ```
 
-## Resource Limits and Quotas
+Resource Limits and Quotas
 
 Set appropriate resource limits for Podman build pods:
 

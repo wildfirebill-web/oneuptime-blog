@@ -33,6 +33,7 @@ Enable secret scanning in NeuVector's scan configuration:
 
 ```bash
 # Enable secret scanning via API
+
 curl -sk -X PATCH \
   "https://neuvector-manager:8443/v1/scan/config" \
   -H "Content-Type: application/json" \

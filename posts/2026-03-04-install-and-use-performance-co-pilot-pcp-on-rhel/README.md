@@ -14,6 +14,7 @@ Performance Co-Pilot (PCP) is an open-source performance monitoring framework th
 
 ```bash
 # Install the core PCP packages
+
 sudo dnf install -y pcp pcp-system-tools pcp-gui
 
 # Start and enable the PCP collector daemon

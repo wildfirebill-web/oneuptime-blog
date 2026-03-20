@@ -20,6 +20,7 @@ Debian-based systems use `dpkg` selections to hold packages. Ansible provides th
 
 ```yaml
 # Hold nginx at its current version (prevent upgrades)
+
 - name: Hold nginx package
   ansible.builtin.dpkg_selections:
     name: nginx

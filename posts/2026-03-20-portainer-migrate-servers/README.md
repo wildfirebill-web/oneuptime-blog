@@ -1,4 +1,4 @@
-# How to Migrate Portainer Data Between Servers
+# How to Migrate Portainer Data Between Servers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,7 +22,8 @@ Before starting:
 ## Step 1: Create a Full Backup on Source Server
 
 ```bash
-# On source server — stop Portainer for consistent backup
+# On source server - stop Portainer for consistent backup
+
 docker stop portainer
 
 # Create backup

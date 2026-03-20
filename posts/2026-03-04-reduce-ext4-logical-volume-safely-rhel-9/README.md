@@ -37,6 +37,7 @@ The filesystem must always be smaller than or equal to the LV. If you shrink the
 
 ```bash
 # Create a backup before any shrink operation
+
 sudo tar czf /root/data-backup-$(date +%Y%m%d).tar.gz /data/
 ```
 

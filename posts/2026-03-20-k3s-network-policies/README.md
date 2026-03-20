@@ -22,6 +22,7 @@ K3s's default Flannel does not support Network Policies. Enable support by switc
 
 ```bash
 # Install K3s with Canal CNI for Network Policy support
+
 curl -sfL https://get.k3s.io | \
   INSTALL_K3S_EXEC="--flannel-backend=none --disable-network-policy" \
   sh -

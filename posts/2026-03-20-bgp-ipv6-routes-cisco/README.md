@@ -12,7 +12,7 @@ Verifying BGP IPv6 routes on Cisco IOS involves checking the BGP table, the IPv6
 
 ## Primary Verification Commands
 
-```
+```text
 ! Overview of all BGP IPv6 neighbors and prefix counts
 Router# show bgp ipv6 unicast summary
 
@@ -28,7 +28,7 @@ Router# show bgp neighbors <peer-address>
 
 ## Interpreting show bgp ipv6 unicast summary
 
-```
+```text
 Router# show bgp ipv6 unicast summary
 
 BGP router identifier 1.1.1.1, local AS number 65001
@@ -39,12 +39,12 @@ Neighbor        V   AS     MsgRcvd  MsgSent  TblVer  InQ  OutQ  Up/Down  State/P
 2001:db8::ibgp  4   65001   2100     2098      15     0    0   5d10h    8
 ```
 
-- **TblVer** matches the BGP table version — if different, routes are being processed
+- **TblVer** matches the BGP table version - if different, routes are being processed
 - **PfxRcd** = prefixes received from this neighbor; `Idle` or `Active` = session not established
 
 ## Interpreting show bgp ipv6 unicast
 
-```
+```text
 Router# show bgp ipv6 unicast
 
    Network                    Next Hop             Metric  LocPrf  Weight  Path
@@ -62,7 +62,7 @@ Route codes:
 
 ## Checking a Specific Prefix
 
-```
+```text
 Router# show bgp ipv6 unicast 2001:db8:peer::/48
 
 BGP routing table entry for 2001:DB8:PEER::/48, version 8
@@ -77,7 +77,7 @@ Paths: (1 available, best #1, table default)
 
 ## Routes Advertised to a Specific Peer
 
-```
+```text
 Router# show bgp ipv6 unicast neighbors 2001:db8::peer advertised-routes
 
    Network                    Next Hop             Metric  LocPrf  Weight  Path
@@ -89,7 +89,7 @@ Total number of prefixes 2
 
 ## Routes Received from a Peer
 
-```
+```text
 Router# show bgp ipv6 unicast neighbors 2001:db8::peer routes
 
    Network                    Next Hop             Metric  LocPrf  Weight  Path
@@ -98,7 +98,7 @@ Router# show bgp ipv6 unicast neighbors 2001:db8::peer routes
 
 ## BGP IPv6 in the Routing Table
 
-```
+```text
 Router# show ipv6 route bgp
 
 B   2001:db8:peer::/48 [20/0]

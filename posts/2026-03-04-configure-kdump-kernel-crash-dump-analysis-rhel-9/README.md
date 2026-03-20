@@ -35,6 +35,7 @@ flowchart TD
 
 ```bash
 # Install kdump and crash analysis tools
+
 sudo dnf install kexec-tools crash -y
 
 # Enable the kdump service

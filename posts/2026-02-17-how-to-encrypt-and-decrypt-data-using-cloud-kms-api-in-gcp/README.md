@@ -24,6 +24,7 @@ The gcloud CLI makes encryption straightforward. You provide the plaintext (as a
 
 ```bash
 # Write some plaintext to a file
+
 echo -n "This is sensitive data that needs encryption" > plaintext.txt
 
 # Encrypt the file using Cloud KMS

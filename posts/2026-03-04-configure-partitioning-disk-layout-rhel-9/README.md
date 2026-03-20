@@ -101,6 +101,7 @@ If you are automating installations with Kickstart, here is a partition configur
 
 ```bash
 # Kickstart partitioning section for a UEFI system with a 200 GB disk
+
 # Clear existing partitions
 clearpart --all --initlabel
 

@@ -76,6 +76,7 @@ spec:
 DB_IP=$(kubectl get pod db-pod -n test -o jsonpath='{.status.podIP}')
 
 # Test 1: authorized service account
+
 kubectl exec -n test authorized-pod -- nc -zv $DB_IP 5432
 echo "Test 1 (authorized SA - should pass): $?"
 

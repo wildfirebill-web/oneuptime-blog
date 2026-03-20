@@ -22,6 +22,7 @@ Start by generating a root CA certificate that both clusters will trust. You can
 
 ```bash
 # Create a root CA
+
 mkdir -p certs
 openssl req -new -newkey rsa:4096 -x509 -sha256 \
   -days 3650 -nodes \

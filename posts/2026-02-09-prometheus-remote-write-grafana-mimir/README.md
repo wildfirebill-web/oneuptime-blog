@@ -205,6 +205,7 @@ remoteWrite:
     capacity: 10000
 
 # Separate remote write for staging with different tenant
+
 - url: http://mimir-write.mimir.svc.cluster.local:8080/api/v1/push
   headers:
     X-Scope-OrgID: staging-cluster

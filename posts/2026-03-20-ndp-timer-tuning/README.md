@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, NDP, Timers, Performance, sysctl, Linux, Networking
+Tags: IPv6, NDP, Timers, Performance, Sysctl, Linux, Networking
 
 Description: Tune NDP timers and neighbor cache parameters on Linux for optimal IPv6 performance including reachability, cache size, and garbage collection.
 
@@ -22,6 +22,7 @@ Description: Tune NDP timers and neighbor cache parameters on Linux for optimal 
 
 ```bash
 # Show all NDP timers for an interface
+
 sysctl net.ipv6.neigh.eth0
 
 # Key timers
@@ -115,13 +116,13 @@ watch -n 5 "echo 'IPv6 neighbors:'; ip -6 neigh show | awk '{print \$5}' | sort 
 
 Routers can announce recommended timer values in Router Advertisements:
 
-```
-# /etc/radvd.conf — Set RA-announced timer values
+```text
+# /etc/radvd.conf - Set RA-announced timer values
 interface eth0 {
     AdvSendAdvert on;
 
     # Announce preferred reachability time (1/10th of actual)
-    AdvReachableTime 15000;    # ms — hint for hosts
+    AdvReachableTime 15000;    # ms - hint for hosts
 
     # Announce retransmit timer
     AdvRetransTimer 1000;      # ms

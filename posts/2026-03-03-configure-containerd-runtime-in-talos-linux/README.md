@@ -213,6 +213,7 @@ Apply containerd configuration changes to your nodes:
 
 ```bash
 # Apply the full machine configuration
+
 talosctl apply-config --nodes 10.0.0.5 --file worker.yaml
 
 # Verify containerd picked up the changes

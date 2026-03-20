@@ -16,6 +16,7 @@ Calico provides multiple observability mechanisms: Felix Prometheus metrics (por
 
 ```bash
 # Enable Felix metrics
+
 kubectl patch felixconfiguration default \
   --type=merge \
   -p '{"spec":{"prometheusMetricsEnabled":true,"prometheusMetricsPort":9091}}'

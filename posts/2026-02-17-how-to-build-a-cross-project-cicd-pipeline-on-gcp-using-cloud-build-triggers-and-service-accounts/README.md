@@ -34,6 +34,7 @@ Cloud Build uses a default service account or a user-specified one. Let us find 
 
 ```bash
 # Get the Cloud Build default service account for the CI/CD project
+
 PROJECT_NUMBER=$(gcloud projects describe ci-cd-project --format='value(projectNumber)')
 echo "Cloud Build SA: ${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com"
 ```

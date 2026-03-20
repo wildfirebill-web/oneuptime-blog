@@ -33,6 +33,7 @@ This playbook installs the required packages:
 
 ```yaml
 # install_luks.yml - Install LUKS prerequisites
+
 ---
 - name: Install LUKS prerequisites
   hosts: all

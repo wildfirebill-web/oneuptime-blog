@@ -176,6 +176,7 @@ The simplest approach. Every cache entry has a time-to-live. After it expires, t
 
 ```python
 # Simple TTL-based invalidation
+
 # Good for data that can tolerate some staleness
 redis_client.setex("config:feature_flags", 60, json.dumps(flags))  # 60 second TTL
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bridge, Ageing Time, FDB, Linux, brctl, MAC Address Table, Networking
+Tags: Bridge, Ageing Time, FDB, Linux, Brctl, MAC Address Table, Networking
 
 Description: Learn how to configure the MAC address ageing time on a Linux bridge to control how long learned MAC-to-port mappings are retained in the forwarding database.
 
@@ -12,7 +12,7 @@ Bridge ageing time determines how long the bridge remembers which port a MAC add
 
 ## What is Ageing Time?
 
-```
+```text
 MAC table entry: aa:bb:cc:dd:ee:ff → port eth0 (learned 120 seconds ago)
                                           ↑
                  If no traffic for <ageing_time> seconds: entry deleted
@@ -27,6 +27,7 @@ MAC table entry: aa:bb:cc:dd:ee:ff → port eth0 (learned 120 seconds ago)
 
 ```bash
 # Show current ageing time
+
 brctl showstp br0 | grep "ageing time"
 # ageing time               300.00
 
@@ -42,7 +43,7 @@ cat /sys/class/net/br0/bridge/ageing_time
 # Set ageing time to 60 seconds
 brctl setageing br0 60
 
-# Disable ageing (never expire — use with caution)
+# Disable ageing (never expire - use with caution)
 brctl setageing br0 0
 
 # Verify

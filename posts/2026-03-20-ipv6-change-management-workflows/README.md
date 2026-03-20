@@ -12,7 +12,7 @@ Manual change management for IPv6 configurations is error-prone and slow. A Git-
 
 ## Workflow Overview
 
-```
+```text
 1. Engineer creates change in Git branch
 2. Pre-commit hooks validate IPv6 syntax and policy
 3. Pull request triggers CI validation pipeline
@@ -27,6 +27,7 @@ Manual change management for IPv6 configurations is error-prone and slow. A Git-
 
 ```yaml
 # changes/2026-03-20-add-r1-peering.yml
+
 ---
 change_id: CHG-2026-031
 description: "Add IPv6 BGP peering between R1 and R4"

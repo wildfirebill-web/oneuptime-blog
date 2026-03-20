@@ -236,6 +236,7 @@ Deploy a test pod and verify that OPA is making authorization decisions:
 
 ```bash
 # This should be allowed (health check)
+
 kubectl exec deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" http://my-service:8080/healthz
 
 # This should be denied (no matching policy)

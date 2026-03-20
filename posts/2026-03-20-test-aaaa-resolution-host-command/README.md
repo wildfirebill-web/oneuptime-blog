@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, host command, AAAA Records, DNS Testing
+Tags: IPv6, DNS, Host command, AAAA Records, DNS Testing
 
 Description: Learn how to use the `host` command to query IPv6 AAAA records and perform reverse DNS lookups for IPv6 addresses.
 
@@ -14,6 +14,7 @@ The `host` command is a simple DNS lookup utility available on Linux and macOS. 
 
 ```bash
 # Query all records for a domain (shows both A and AAAA)
+
 host example.com
 
 # Query only AAAA records

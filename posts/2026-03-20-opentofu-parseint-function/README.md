@@ -16,8 +16,8 @@ The `parseint` function in OpenTofu parses a string as an integer in a specified
 parseint(string, base)
 ```
 
-- **string** — the string representation of an integer
-- **base** — the radix/base to interpret the string in (2–36)
+- **string** - the string representation of an integer
+- **base** - the radix/base to interpret the string in (2–36)
 - Returns an integer
 
 ## Basic Examples

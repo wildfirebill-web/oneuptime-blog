@@ -49,6 +49,7 @@ Bucket boundaries must be strictly increasing.
 
 ```python
 # Incorrect: Boundaries not in ascending order
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.view import View, ExplicitBucketHistogramAggregation

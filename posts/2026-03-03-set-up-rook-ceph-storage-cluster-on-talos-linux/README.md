@@ -25,6 +25,7 @@ Verify your cluster is ready:
 
 ```bash
 # Check node status
+
 kubectl get nodes
 
 # Verify the raw disks are available on worker nodes

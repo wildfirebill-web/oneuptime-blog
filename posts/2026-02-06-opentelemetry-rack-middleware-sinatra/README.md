@@ -74,6 +74,7 @@ require 'sinatra'
 require_relative 'config/instrumentation'
 
 # Register the Rack middleware
+
 use OpenTelemetry::Instrumentation::Rack::Middlewares::TracerMiddleware
 
 get '/' do

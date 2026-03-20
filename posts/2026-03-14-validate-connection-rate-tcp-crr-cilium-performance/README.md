@@ -25,6 +25,7 @@ A proper TCP_CRR validation must confirm that connection rates meet minimum thre
 
 ```yaml
 # crr-acceptance-criteria.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -31,6 +31,7 @@ First, generate a strong encryption key.
 
 ```bash
 # Generate a 32-byte random key encoded as base64
+
 head -c 32 /dev/urandom | base64
 # Output example: dGhpcyBpcyBhIHRlc3Qga2V5IGZvciBlbmNyeXB0aW9u
 ```

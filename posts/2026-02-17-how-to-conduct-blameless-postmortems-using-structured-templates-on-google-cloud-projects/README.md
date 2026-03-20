@@ -91,6 +91,7 @@ Use Cloud Logging to reconstruct exactly what happened and when.
 
 ```bash
 # Query logs for a specific time window during an incident
+
 # This pulls all error-level logs from the affected service
 gcloud logging read \
   'severity>=ERROR AND resource.type="cloud_run_revision" AND resource.labels.service_name="my-service"' \

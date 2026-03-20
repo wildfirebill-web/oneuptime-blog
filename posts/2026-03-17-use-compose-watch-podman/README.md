@@ -18,6 +18,7 @@ The Compose `watch` feature (introduced in Docker Compose v2.22) monitors your l
 
 ```bash
 # Enable the Podman socket
+
 systemctl --user enable --now podman.socket
 
 # Set DOCKER_HOST for Docker Compose

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, protect_destroy, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Lifecycle, Protect_destroy, Infrastructure as Code, DevOps
 
 Description: A guide to using prevent_destroy lifecycle in OpenTofu to protect critical resources from accidental deletion.
 
@@ -29,6 +29,7 @@ resource "aws_rds_cluster" "production" {
 
 ```bash
 # Attempt to destroy:
+
 tofu destroy
 
 # Error:
@@ -46,7 +47,7 @@ tofu destroy
 # from the resource configuration.
 ```
 
-## Resources to Protect
+Resources to Protect
 
 ```hcl
 # Database cluster

@@ -18,6 +18,7 @@ The quickest way to set environment variables is through the EB CLI.
 
 ```bash
 # Set a single environment variable
+
 eb setenv DATABASE_URL=postgresql://user:pass@host:5432/mydb
 
 # Set multiple variables at once

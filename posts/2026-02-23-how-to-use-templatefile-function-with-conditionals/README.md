@@ -32,6 +32,7 @@ You can also use `%{if condition}...%{elseif other_condition}...%{else}...%{endi
 
 ```hcl
 # templates/config.yaml.tpl
+
 app:
   name: ${app_name}
   port: ${port}

@@ -25,6 +25,7 @@ Use the `Require` directive to limit access by IP address:
 
 ```apache
 # Only allow access from the 10.0.0.0/24 subnet
+
 <Directory /var/www/html/internal>
     Require ip 10.0.0.0/24
 </Directory>

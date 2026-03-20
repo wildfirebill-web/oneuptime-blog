@@ -87,6 +87,7 @@ Dynamic shovels are stored in RabbitMQ's internal database and survive node rest
 
 ```bash
 # Enable the shovel plugin
+
 rabbitmq-plugins enable rabbitmq_shovel
 
 # Enable the management UI for shovels (optional but recommended)

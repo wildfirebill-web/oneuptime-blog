@@ -37,6 +37,7 @@ calicoctl get ippool -o yaml | grep cidr:
 ```bash
 calicoctl ipam check 2>&1
 # Expected: "IPAM allocations are consistent" or similar clean output
+
 ```
 
 **Validation Step 2: No pods with old CIDR IPs**

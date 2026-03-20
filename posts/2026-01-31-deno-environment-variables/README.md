@@ -123,6 +123,7 @@ Your `.env` file should contain key-value pairs, one per line. Here is an exampl
 
 ```bash
 # Database Configuration
+
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=myapp_development

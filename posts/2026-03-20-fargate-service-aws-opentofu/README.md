@@ -123,6 +123,7 @@ resource "aws_ecs_service" "app" {
 }
 
 # Auto scaling
+
 resource "aws_appautoscaling_target" "ecs" {
   max_capacity       = var.max_capacity
   min_capacity       = var.min_capacity

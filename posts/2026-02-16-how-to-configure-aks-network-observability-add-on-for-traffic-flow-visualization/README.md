@@ -18,6 +18,7 @@ The network observability add-on is available for AKS clusters using Azure CNI (
 
 ```bash
 # Enable on a new cluster with Azure CNI
+
 az aks create \
   --resource-group myRG \
   --name myAKS \

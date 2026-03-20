@@ -28,6 +28,7 @@ flowchart LR
 
 ```bash
 # Create a new Laravel project using Composer
+
 composer create-project laravel/laravel my-api
 
 # Navigate into the project

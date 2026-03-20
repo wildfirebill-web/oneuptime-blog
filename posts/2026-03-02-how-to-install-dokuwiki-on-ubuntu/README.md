@@ -27,6 +27,7 @@ sudo apt update
 sudo apt install nginx php-fpm php-xml php-mbstring php-gd php-zip unzip curl
 
 # Verify PHP is installed
+
 php -v
 
 # Check which PHP-FPM version is running

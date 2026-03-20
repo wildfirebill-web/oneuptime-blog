@@ -343,6 +343,7 @@ module.exports = securityHeaders;
 # /etc/nginx/conf.d/security-headers.conf
 
 # Content-Security-Policy
+
 add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" always;
 
 # HSTS - Force HTTPS for 1 year

@@ -47,6 +47,7 @@ flowchart TD
 
 ```ini
 # inventory/rabbitmq-cluster.ini
+
 [rabbitmq_cluster]
 rabbit-1 ansible_host=10.0.7.10 rabbitmq_nodename=rabbit@rabbit-1
 rabbit-2 ansible_host=10.0.7.11 rabbitmq_nodename=rabbit@rabbit-2

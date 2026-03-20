@@ -10,7 +10,7 @@ VPN IPv6 connectivity issues can stem from routing misconfiguration, DNS problem
 
 ## Troubleshooting Decision Tree
 
-```
+```text
 IPv6 over VPN not working?
 ├─ VPN connected? (check wg show / openvpn status)
 │   ├─ No → Fix tunnel establishment first
@@ -31,6 +31,7 @@ IPv6 over VPN not working?
 
 ```bash
 # WireGuard
+
 ip -6 addr show wg0
 
 # OpenVPN
@@ -165,4 +166,4 @@ sudo journalctl -u openvpn@client -f
 sudo swanctl --log-level ike:4,knl:4,cfg:3
 ```
 
-Systematic IPv6 VPN troubleshooting — working from the tunnel interface through routing, forwarding, and NAT — quickly identifies the layer where connectivity breaks down.
+Systematic IPv6 VPN troubleshooting - working from the tunnel interface through routing, forwarding, and NAT - quickly identifies the layer where connectivity breaks down.

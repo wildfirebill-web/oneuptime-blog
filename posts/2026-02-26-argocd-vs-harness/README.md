@@ -48,6 +48,7 @@ When comparing just the GitOps deployment capabilities, here is how they stack u
 
 ```yaml
 # ArgoCD Application - straightforward GitOps
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

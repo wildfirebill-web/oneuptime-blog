@@ -20,6 +20,7 @@ Rootless Podman cannot create real network bridges or manipulate iptables. It re
 
 ```bash
 # Check the current network backend
+
 podman info --format '{{.Host.NetworkBackend}}'
 
 # Check if slirp4netns is installed

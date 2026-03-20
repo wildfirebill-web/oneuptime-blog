@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, moved Blocks, Modules, Refactoring, Infrastructure as Code
+Tags: OpenTofu, Moved Blocks, Modules, Refactoring, Infrastructure as Code
 
 Description: Learn how to use OpenTofu moved blocks to relocate resources between modules without destroying and recreating your infrastructure.
 
@@ -23,6 +23,7 @@ Suppose you have a root-level security group that you want to move into a `netwo
 
 ```hcl
 # Before: root-level resource
+
 # resource "aws_security_group" "web" { ... }
 
 # After: resource lives inside module.networking
@@ -112,11 +113,11 @@ tofu plan
 
 Expected output for a successful move:
 
-```
+```text
 # module.networking.aws_security_group.web has moved to aws_security_group.web
 ```
 
-There should be no `+` (create) or `-` (destroy) lines for the moved resources — only a `moved` annotation.
+There should be no `+` (create) or `-` (destroy) lines for the moved resources - only a `moved` annotation.
 
 If you see both a destroy and a create, the addresses in your `moved` block are incorrect. Check the exact state addresses with `tofu state list`.
 

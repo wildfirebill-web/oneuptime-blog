@@ -33,6 +33,7 @@ First, you need to authorize AWS to access your GitHub repositories. This is don
 
 ```bash
 # Create a GitHub connection
+
 aws apprunner create-connection \
   --connection-name my-github-connection \
   --provider-type GITHUB

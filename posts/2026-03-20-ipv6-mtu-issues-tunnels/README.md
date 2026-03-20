@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MTU, Tunnels, GRE, IPsec, VPN
+Tags: IPv6, MTU, Tunnel, GRE, IPsec, VPN
 
 Description: Identify and fix MTU issues in IPv6 tunnels, calculate correct tunnel MTU values, and prevent fragmentation overhead in GRE, IPsec, and VPN configurations.
 
@@ -12,7 +12,7 @@ Tunnels introduce additional header overhead that reduces the effective MTU for 
 
 ## Overhead Calculation for Common Tunnels
 
-```
+```text
 Tunnel overhead reference table (assuming 1500-byte outer link):
 
 Tunnel Type               Overhead    Inner IPv6 MTU
@@ -34,6 +34,7 @@ MPLS (2 labels)           8 bytes     1492 bytes
 
 ```bash
 # 6in4 tunnel (Hurricane Electric style)
+
 sudo ip tunnel add he-ipv6 mode sit remote <HE_SERVER_IP> local <YOUR_IP> ttl 255
 sudo ip link set he-ipv6 mtu 1480   # 1500 - 20 (IPv4 header)
 sudo ip link set he-ipv6 up

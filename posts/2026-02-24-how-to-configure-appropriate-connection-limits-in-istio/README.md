@@ -48,6 +48,7 @@ Start by measuring your current traffic patterns:
 
 ```bash
 # Check current active connections to a service
+
 kubectl exec deploy/caller-app -c istio-proxy -- curl -s localhost:15000/stats | grep "outbound|8080|my-namespace|my-service" | grep "upstream_cx_active"
 
 # Check peak concurrent requests

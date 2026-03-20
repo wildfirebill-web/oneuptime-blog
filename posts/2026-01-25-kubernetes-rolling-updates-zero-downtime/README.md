@@ -125,6 +125,7 @@ Your application should expose a health endpoint:
 
 ```python
 # Python Flask example
+
 from flask import Flask, jsonify
 import time
 

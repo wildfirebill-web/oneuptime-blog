@@ -259,6 +259,7 @@ Create the `.air.toml` file in your project root. This file controls how Air wat
 
 ```toml
 # .air.toml - Air Configuration for Hot Reloading
+
 # This file configures how Air watches and rebuilds your Go application
 
 # Root directory for watching - use "." for current directory

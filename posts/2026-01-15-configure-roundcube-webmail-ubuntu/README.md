@@ -41,6 +41,7 @@ Verify your mail server is working:
 
 ```bash
 # Test IMAP connectivity (replace mail.example.com with your server)
+
 # This attempts a TLS connection to the IMAP port
 openssl s_client -connect mail.example.com:993 -quiet
 

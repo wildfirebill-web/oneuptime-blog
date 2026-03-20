@@ -1,4 +1,4 @@
-# How to Self-Host a Code Server (VS Code) with Portainer
+# How to Self-Host a Code Server (VS Code) with Portainer - Self Host
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -50,6 +50,7 @@ From the code-server terminal, install development tools:
 
 ```bash
 # Install Node.js via nvm
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.bashrc
 nvm install 20

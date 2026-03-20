@@ -24,6 +24,7 @@ Enable KEDA on existing AKS clusters or during creation:
 
 ```bash
 # Enable on existing cluster
+
 az aks update \
   --resource-group production-rg \
   --name production-cluster \

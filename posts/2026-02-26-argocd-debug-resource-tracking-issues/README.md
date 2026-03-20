@@ -22,6 +22,7 @@ Check your current tracking method:
 
 ```bash
 # Check the configured tracking method
+
 kubectl get configmap argocd-cm -n argocd -o jsonpath='{.data.application\.resourceTrackingMethod}'
 ```
 

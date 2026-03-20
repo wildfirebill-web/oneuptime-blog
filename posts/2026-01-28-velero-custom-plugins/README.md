@@ -69,6 +69,7 @@ Create the basic project structure:
 
 ```bash
 # Create the plugin project directory structure
+
 mkdir -p velero-plugin-example/{objectstore,volumesnapshotter,backupitemaction}
 
 # Initialize the Go module

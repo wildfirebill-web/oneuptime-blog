@@ -54,6 +54,7 @@ Every pod gets a `/etc/resolv.conf` file automatically:
 
 ```bash
 # View DNS configuration in a pod
+
 kubectl exec -it my-pod -- cat /etc/resolv.conf
 ```
 

@@ -31,6 +31,7 @@ The simplest incremental approach uses a watermark column - a timestamp or auto-
 
 ```python
 # watermark_ingestion.py - Incremental load using a watermark column
+
 from pyspark.sql import functions as F
 from delta.tables import DeltaTable
 

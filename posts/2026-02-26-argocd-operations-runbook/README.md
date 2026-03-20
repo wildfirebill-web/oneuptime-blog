@@ -60,6 +60,7 @@ Every runbook should start with a section of common diagnostic commands that app
 
 ```bash
 # Check ArgoCD component health
+
 kubectl get pods -n argocd
 
 # Check component logs

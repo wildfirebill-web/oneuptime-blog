@@ -159,6 +159,7 @@ Set up monitoring to know when circuit breakers are tripping:
 
 ```promql
 # Connection pool overflow (circuit breaker trips)
+
 rate(envoy_cluster_upstream_rq_pending_overflow{cluster_name=~"outbound.*service-b.*"}[5m])
 
 # Ejected endpoints from outlier detection

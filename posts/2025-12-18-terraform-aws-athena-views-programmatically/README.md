@@ -29,6 +29,7 @@ Before creating views, you need a Glue database and an Athena workgroup. Here's 
 
 ```hcl
 # Provider configuration
+
 provider "aws" {
   region = "us-east-1"
 }

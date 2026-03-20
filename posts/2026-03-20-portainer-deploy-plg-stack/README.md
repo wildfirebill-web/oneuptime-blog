@@ -1,4 +1,4 @@
-# How to Deploy the PLG Stack (Promtail, Loki, Grafana) via Portainer
+# How to Deploy the PLG Stack (Promtail, Loki, Grafana) via Portainer - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -183,6 +183,7 @@ In Grafana's Explore view with the Loki data source:
 
 ```logql
 # All logs from a stack
+
 {stack="my-app"}
 
 # Error logs from the API service

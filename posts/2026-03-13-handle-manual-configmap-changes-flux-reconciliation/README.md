@@ -26,6 +26,7 @@ Flux reverts ConfigMap changes because it owns the fields it declared in Git.
 
 ```bash
 # Manual change to a ConfigMap managed by Flux
+
 kubectl patch configmap my-service-config -n team-alpha \
   --type=merge \
   -p '{"data": {"FEATURE_FLAG_NEW_UI": "true"}}'

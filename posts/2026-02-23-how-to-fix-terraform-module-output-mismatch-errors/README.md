@@ -45,6 +45,7 @@ Check what outputs the module actually exposes:
 
 ```bash
 # If using a local module
+
 grep -n "output" ./modules/vpc/outputs.tf
 ```
 

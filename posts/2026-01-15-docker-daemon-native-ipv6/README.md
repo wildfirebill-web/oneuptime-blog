@@ -34,6 +34,7 @@ Before configuring Docker for IPv6, ensure your environment meets these requirem
 
 ```bash
 # Test IPv6 connectivity to a public server
+
 ping6 -c 4 ipv6.google.com
 
 # Check your host's IPv6 addresses

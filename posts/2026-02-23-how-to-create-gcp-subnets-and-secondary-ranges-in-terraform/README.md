@@ -27,6 +27,7 @@ Start with a custom mode VPC and add subnets:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

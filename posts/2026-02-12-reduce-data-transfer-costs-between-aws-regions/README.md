@@ -18,6 +18,7 @@ Before optimizing, you need visibility. Use AWS Cost Explorer to break down data
 
 ```bash
 # Get data transfer costs broken down by usage type (which includes region info)
+
 aws ce get-cost-and-usage \
   --time-period Start=2026-01-01,End=2026-02-01 \
   --granularity MONTHLY \

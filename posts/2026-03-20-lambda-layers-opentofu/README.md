@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Lambda, Layers, Dependencies, Serverless, Infrastructure as Code
+Tags: OpenTofu, AWS, Lambda, Layer, Dependencies, Serverless, Infrastructure as Code
 
 Description: Learn how to create and manage AWS Lambda Layers with OpenTofu to share common dependencies, libraries, and configuration across multiple Lambda functions.
 
@@ -20,6 +20,7 @@ Lambda Layers let you package dependencies, libraries, and shared code separatel
 
 ```bash
 # Build Python dependencies for the Lambda layer
+
 mkdir -p layer/python
 pip install -r requirements.txt -t layer/python/ --platform manylinux2014_x86_64 --python-version 3.12
 
@@ -141,4 +142,4 @@ tofu apply
 
 ## Conclusion
 
-Lambda Layers reduce deployment package sizes and enable consistent dependency management across functions. Layer contents are available at `/opt` inside the Lambda execution environment—Python packages at `/opt/python/`, Node.js modules at `/opt/nodejs/node_modules/`. Use `skip_destroy = true` to preserve old layer versions when deploying updates, as functions referencing previous versions will continue to work.
+Lambda Layers reduce deployment package sizes and enable consistent dependency management across functions. Layer contents are available at `/opt` inside the Lambda execution environment-Python packages at `/opt/python/`, Node.js modules at `/opt/nodejs/node_modules/`. Use `skip_destroy = true` to preserve old layer versions when deploying updates, as functions referencing previous versions will continue to work.

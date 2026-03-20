@@ -36,6 +36,7 @@ You need the AWS Ansible collection and boto3 installed:
 
 ```bash
 # Install the AWS Ansible collection
+
 ansible-galaxy collection install amazon.aws
 
 # Install boto3 for Python

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Resource Detector, Custom SDK, Auto-Discovery, Environment
+Tags: OpenTelemetry, Resource Detector, Custom SDK, Auto-Discovery, Environments
 
 Description: Implement a custom OpenTelemetry resource detector that automatically discovers and populates deployment environment attributes from your infrastructure.
 
@@ -32,6 +32,7 @@ The built-in detectors fill in the standard attributes. Your custom detector fil
 
 ```python
 # custom_resource_detector.py
+
 import os
 import json
 import socket

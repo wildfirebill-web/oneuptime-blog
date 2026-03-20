@@ -14,7 +14,7 @@ Longest Prefix Match (LPM) is the algorithm used by routers to select the most s
 
 ## Simple Example
 
-```
+```text
 Routing Table:
   10.0.0.0/8     → Router A  (matches all 10.x.x.x)
   10.1.0.0/16    → Router B  (matches 10.1.x.x)
@@ -55,7 +55,7 @@ print(f"\nBest match: {matches[0][0]}")
 ```
 
 Output:
-```
+```text
 All matches for 10.1.1.1:
   /32  10.1.1.1/32
   /24  10.1.1.0/24
@@ -72,10 +72,10 @@ Best match: 10.1.1.1/32
 
 ISPs aggregate many small prefixes into one larger announcement to reduce routing table size. LPM ensures more-specific routes still work:
 
-```
+```text
 BGP global table might have:
   10.0.0.0/8    via AS100 (aggregate)
-  10.1.1.0/24   via AS200 (more specific — AS200's actual prefix)
+  10.1.1.0/24   via AS200 (more specific - AS200's actual prefix)
 
 Traffic to 10.1.1.10:
   LPM selects /24 → goes to AS200 (correct!)
@@ -88,6 +88,7 @@ A /32 blackhole drops traffic to one specific IP without affecting the surroundi
 ```bash
 ip route add blackhole 10.1.1.5/32
 # All other traffic to 10.1.1.0/24 works fine
+
 ```
 
 ### Null Routes for Security
@@ -100,8 +101,8 @@ ip route add blackhole 203.0.113.99/32
 ## LPM in Hardware
 
 Real routers implement LPM in hardware using:
-- **TCAM** (Ternary Content-Addressable Memory) — parallel lookup
-- **Trie structures** — tree-based prefix matching
+- **TCAM** (Ternary Content-Addressable Memory) - parallel lookup
+- **Trie structures** - tree-based prefix matching
 
 Linux uses a hash table + LPC-trie for software routing.
 

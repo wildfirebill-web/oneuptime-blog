@@ -32,6 +32,7 @@ Here is how to set up authentication in a script. The API uses Basic authenticat
 
 ```bash
 # Set your organization details and PAT
+
 ORG="myorganization"
 PROJECT="myproject"
 PAT="your-personal-access-token"

@@ -366,6 +366,7 @@ Install sharp for production optimization:
 
 ```bash
 # Install sharp
+
 npm install sharp
 
 # For specific platforms

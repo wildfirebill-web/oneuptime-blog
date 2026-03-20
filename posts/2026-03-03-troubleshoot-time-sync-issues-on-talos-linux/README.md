@@ -34,6 +34,7 @@ Start by comparing the time across all your nodes:
 
 ```bash
 # Check time on individual nodes
+
 talosctl -n 192.168.1.10 time
 talosctl -n 192.168.1.11 time
 talosctl -n 192.168.1.12 time

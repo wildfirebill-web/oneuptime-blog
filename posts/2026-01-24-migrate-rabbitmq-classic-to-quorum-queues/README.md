@@ -156,6 +156,7 @@ if __name__ == '__main__':
 echo "Checking for incompatible features..."
 
 # Check for priority queues
+
 echo "Priority queues:"
 rabbitmqctl list_queues name arguments --formatter=json | \
     jq -r '.[] | select(.arguments["x-max-priority"] != null) | .name'

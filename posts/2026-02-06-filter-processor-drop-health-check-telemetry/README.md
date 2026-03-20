@@ -26,6 +26,7 @@ This configuration drops all spans from common health check endpoints:
 
 ```yaml
 # health-check-filter.yaml
+
 receivers:
   otlp:
     protocols:

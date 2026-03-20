@@ -41,6 +41,7 @@ First, let's install the required packages for React Navigation. Open your termi
 
 ```bash
 # Install the core package
+
 npm install @react-navigation/native
 
 # Install dependencies for React Native

@@ -661,6 +661,7 @@ Configure OpenTelemetry through environment variables for different deployment e
 
 ```bash
 # .env.production
+
 # OpenTelemetry configuration for SvelteKit production deployment
 
 # OTLP exporter endpoint

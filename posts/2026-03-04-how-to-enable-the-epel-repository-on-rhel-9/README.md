@@ -73,6 +73,7 @@ To prioritize base RHEL repos over EPEL, install the priorities plugin:
 
 ```bash
 # Set priority in the repo file
+
 sudo vi /etc/yum.repos.d/epel.repo
 # Add: priority=10
 ```

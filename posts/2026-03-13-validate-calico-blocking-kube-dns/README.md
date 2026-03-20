@@ -56,6 +56,7 @@ kubectl exec -n kube-system \
   -- wget -qO- http://localhost:9153/metrics \
   | grep "coredns_dns_requests_total" | tail -5
 # Expected: increasing counter (queries being processed)
+
 ```
 
 **Validation Step 3: Immutable DNS allow policy deployed**

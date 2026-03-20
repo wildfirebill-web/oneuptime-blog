@@ -16,6 +16,7 @@ Kubeconfig files contain three components:
 
 ```bash
 # View current config
+
 kubectl config view
 
 # Components:

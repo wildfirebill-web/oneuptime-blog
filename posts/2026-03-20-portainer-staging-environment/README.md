@@ -84,6 +84,7 @@ Copy a sanitized snapshot of production data to staging periodically:
 # sanitize-and-seed-staging.sh
 
 # Dump production database
+
 docker exec $(docker ps -qf name=postgres_prod) \
   pg_dump -U appuser appdb > /tmp/prod-dump.sql
 

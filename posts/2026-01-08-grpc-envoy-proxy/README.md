@@ -143,6 +143,7 @@ Create `envoy/envoy.yaml`:
 
 ```yaml
 # Envoy configuration for gRPC proxy
+
 admin:
   address:
     socket_address:

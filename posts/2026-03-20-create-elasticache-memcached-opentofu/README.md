@@ -100,7 +100,8 @@ output "cache_nodes" {
 ## Scaling Memcached
 
 ```hcl
-# Development cluster — 2 nodes
+# Development cluster - 2 nodes
+
 resource "aws_elasticache_cluster" "memcached_dev" {
   cluster_id      = "myapp-memcached-dev"
   engine          = "memcached"
@@ -113,7 +114,7 @@ resource "aws_elasticache_cluster" "memcached_dev" {
   security_group_ids = [aws_security_group.memcached.id]
 }
 
-# Production cluster — scale to 6 nodes
+# Production cluster - scale to 6 nodes
 resource "aws_elasticache_cluster" "memcached_prod" {
   cluster_id      = "myapp-memcached-prod"
   engine          = "memcached"
@@ -140,7 +141,7 @@ resource "aws_cloudwatch_metric_alarm" "cache_miss_rate" {
   period              = 60
   statistic           = "Sum"
   threshold           = 1000
-  alarm_description   = "High cache miss rate — consider increasing cache size"
+  alarm_description   = "High cache miss rate - consider increasing cache size"
   alarm_actions       = [aws_sns_topic.alerts.arn]
 
   dimensions = {

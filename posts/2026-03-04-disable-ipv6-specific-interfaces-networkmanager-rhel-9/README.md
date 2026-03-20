@@ -26,6 +26,7 @@ First, see which interfaces have IPv6 addresses.
 
 ```bash
 # Show IPv6 addresses on all interfaces
+
 ip -6 addr show
 
 # Check the IPv6 method for a specific connection

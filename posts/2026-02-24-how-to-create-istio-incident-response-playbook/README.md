@@ -51,6 +51,7 @@ When an alert fires, run through this checklist in order:
 
 ```bash
 # 1. Is istiod healthy?
+
 kubectl get pods -n istio-system -l app=istiod
 # Expected: Multiple pods in Running state
 

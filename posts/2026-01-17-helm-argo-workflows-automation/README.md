@@ -63,6 +63,7 @@ flowchart TB
 
 ```bash
 # Add Argo Helm repository
+
 helm repo add argo https://argoproj.github.io/argo-helm
 helm repo update
 

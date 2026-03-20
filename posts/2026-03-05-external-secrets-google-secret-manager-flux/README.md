@@ -27,6 +27,7 @@ gcloud services enable secretmanager.googleapis.com
 
 ```yaml
 # infrastructure/external-secrets/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

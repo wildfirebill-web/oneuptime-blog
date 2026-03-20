@@ -39,6 +39,7 @@ The `community.vmware.vmware_dvswitch` module creates and configures dvSwitches.
 
 ```yaml
 # create-dvswitch.yml
+
 ---
 - name: Create a VMware distributed switch
   hosts: localhost

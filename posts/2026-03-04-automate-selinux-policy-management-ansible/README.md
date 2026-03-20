@@ -25,6 +25,7 @@ graph TD
 
 ```yaml
 # playbook-selinux-mode.yml
+
 # Ensure SELinux is in enforcing mode everywhere
 ---
 - name: Configure SELinux mode

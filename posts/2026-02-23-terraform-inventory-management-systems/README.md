@@ -22,6 +22,7 @@ Terraform state contains detailed information about every managed resource. You 
 
 ```hcl
 # main.tf - Infrastructure with inventory-relevant tags
+
 resource "aws_instance" "application" {
   count         = 3
   ami           = var.ami_id

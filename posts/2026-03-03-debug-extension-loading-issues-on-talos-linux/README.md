@@ -32,6 +32,7 @@ When an extension is not working, run through these checks in order:
 
 ```bash
 # 1. Is the extension listed as installed?
+
 talosctl -n 192.168.1.10 get extensions
 
 # 2. Are there any extension-related errors in dmesg?

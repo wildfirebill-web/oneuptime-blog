@@ -82,6 +82,7 @@ kubectl create secret generic otel-exporter-secrets -n observability \
   --from-literal=grafana-cloud-auth='your-token'
 
 # Reference in deployment
+
 env:
 - name: ONEUPTIME_API_KEY
   valueFrom:

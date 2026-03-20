@@ -29,6 +29,7 @@ The RabbitMQ Cluster Operator is the recommended way to run RabbitMQ on Kubernet
 
 ```bash
 # Install the RabbitMQ Cluster Operator
+
 kubectl apply -f https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml
 
 # Verify the operator is running

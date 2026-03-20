@@ -31,6 +31,7 @@ The primary connection timeout controls how long Ansible waits to establish an S
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Time in seconds to wait for a connection to a host
 timeout = 30

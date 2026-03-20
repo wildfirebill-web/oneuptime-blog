@@ -1,4 +1,4 @@
-# How to Deploy Azure Functions with OpenTofu
+# How to Deploy Azure Functions with OpenTofu - Deploy
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Azure Functions is Microsoft's serverless compute platform. You pay only for exe
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.6.0"
   required_providers {
@@ -35,7 +36,7 @@ provider "azurerm" {
 }
 ```
 
-## Step 2: Core Resources — Resource Group, Storage, App Service Plan
+## Step 2: Core Resources - Resource Group, Storage, App Service Plan
 
 ```hcl
 # main.tf
@@ -171,4 +172,4 @@ az functionapp deployment source config-zip \
 
 ## Conclusion
 
-Azure Functions on a Consumption (`Y1`) plan provides true serverless scaling — you pay only per execution and the runtime scales to zero when idle. Use `SystemAssigned` managed identity to grant the function app access to other Azure resources (Key Vault, Storage, SQL) without storing credentials. Application Insights integration provides distributed tracing and live metrics. For predictable, high-throughput workloads, consider the Premium (`EP1/EP2/EP3`) plan which eliminates cold starts.
+Azure Functions on a Consumption (`Y1`) plan provides true serverless scaling - you pay only per execution and the runtime scales to zero when idle. Use `SystemAssigned` managed identity to grant the function app access to other Azure resources (Key Vault, Storage, SQL) without storing credentials. Application Insights integration provides distributed tracing and live metrics. For predictable, high-throughput workloads, consider the Premium (`EP1/EP2/EP3`) plan which eliminates cold starts.

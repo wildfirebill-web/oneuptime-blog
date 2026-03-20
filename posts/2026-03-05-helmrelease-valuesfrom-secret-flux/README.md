@@ -27,6 +27,7 @@ Create a Kubernetes Secret containing your sensitive Helm values. The values are
 
 ```yaml
 # secret-values.yaml - Secret containing sensitive Helm values
+
 apiVersion: v1
 kind: Secret
 metadata:

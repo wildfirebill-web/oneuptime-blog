@@ -35,6 +35,7 @@ Ephemeral containers require Kubernetes 1.25 or later (where they became stable)
 
 ```bash
 # Check your Kubernetes version
+
 # Ephemeral containers are stable in 1.25+
 kubectl version --short
 

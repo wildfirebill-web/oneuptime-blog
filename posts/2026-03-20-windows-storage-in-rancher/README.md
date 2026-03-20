@@ -1,4 +1,4 @@
-# How to Configure Windows Storage in Rancher
+# How to Configure Windows Storage in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ SMB is the recommended persistent storage option for Windows containers:
 
 ```bash
 # Install SMB CSI driver on the cluster (runs on Linux control plane)
+
 helm repo add csi-driver-smb https://raw.githubusercontent.com/kubernetes-csi/csi-driver-smb/master/charts
 helm install csi-driver-smb csi-driver-smb/csi-driver-smb \
   --namespace kube-system \

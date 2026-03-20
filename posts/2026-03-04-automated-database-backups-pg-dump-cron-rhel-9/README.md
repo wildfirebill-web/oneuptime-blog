@@ -79,6 +79,7 @@ If remote connections are needed, update the listen address and authentication r
 ```bash
 sudo firewall-cmd --permanent --add-service=postgresql
 # or
+
 sudo firewall-cmd --permanent --add-service=mysql
 sudo firewall-cmd --reload
 ```

@@ -69,6 +69,7 @@ Here's the typical NAT gateway setup:
 
 ```bash
 # Create a NAT gateway - the managed way
+
 EIP=$(aws ec2 allocate-address --domain vpc --query 'AllocationId' --output text)
 
 NAT_GW=$(aws ec2 create-nat-gateway \

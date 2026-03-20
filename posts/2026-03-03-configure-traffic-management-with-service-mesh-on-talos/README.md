@@ -30,6 +30,7 @@ Before configuring traffic management, deploy two versions of a service:
 
 ```yaml
 # v1-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -29,6 +29,7 @@ Use the unique identifier from the error message to find the exact log entry.
 
 ```bash
 # Search for a specific VPC SC violation using the unique ID
+
 gcloud logging read \
   'protoPayload.metadata.@type="type.googleapis.com/google.cloud.audit.VpcServiceControlAuditMetadata" AND protoPayload.status.message:"UNIQUE_ID_HERE"' \
   --limit=1 \

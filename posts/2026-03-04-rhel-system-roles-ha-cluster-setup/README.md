@@ -35,6 +35,7 @@ The role handles:
 
 ```bash
 # Install system roles on the control node
+
 sudo dnf install rhel-system-roles
 
 # Ensure the HA add-on repository is enabled on target nodes

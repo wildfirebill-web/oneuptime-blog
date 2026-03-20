@@ -16,6 +16,7 @@ The most common symptoms are TLS handshake failures, SSH connection refusals, or
 
 ```bash
 # Check the current crypto policy
+
 update-crypto-policies --show
 
 # Look for crypto-related errors in the journal

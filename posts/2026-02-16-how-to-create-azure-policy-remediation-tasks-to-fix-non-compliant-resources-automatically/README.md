@@ -50,6 +50,7 @@ Check the assignment through the CLI.
 
 ```bash
 # List policy assignments and check for managed identity
+
 az policy assignment show \
   --name "require-diagnostics-settings" \
   --scope "/subscriptions/YOUR_SUBSCRIPTION_ID" \

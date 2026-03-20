@@ -1,4 +1,4 @@
-# How to Use HTTP URL Module Sources in OpenTofu
+# How to Use HTTP URL Module Sources in OpenTofu - Url
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ The URL must point to an archive file (`.zip`, `.tar.gz`, `.tar.bz2`, or `.tar.x
 
 ```hcl
 # Download a module from an HTTPS URL
+
 module "vpc" {
   source = "https://artifacts.acme-corp.com/terraform-modules/vpc-v2.1.0.zip"
 

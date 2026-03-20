@@ -123,6 +123,7 @@ Ensure you have the necessary tools installed:
 
 ```bash
 # Check BIND version (requires 9.9+)
+
 named -v
 
 # Check for dnssec-keygen

@@ -53,6 +53,7 @@ Here is how to generate one using OpenSSL:
 
 ```bash
 # Generate the intermediate CA private key
+
 openssl genrsa -out intermediate-ca.key 4096
 
 # Create a certificate signing request for the intermediate CA

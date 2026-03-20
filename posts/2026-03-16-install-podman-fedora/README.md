@@ -28,6 +28,7 @@ Always start by updating your system packages to ensure you have the latest secu
 
 ```bash
 # Update all installed packages
+
 sudo dnf update -y
 ```
 

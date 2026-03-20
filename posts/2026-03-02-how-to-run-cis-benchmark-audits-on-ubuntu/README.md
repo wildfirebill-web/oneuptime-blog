@@ -28,6 +28,7 @@ Lynis is an open-source security auditing tool that checks many CIS benchmark it
 
 ```bash
 # Install from the CISOfy repository for the latest version
+
 wget -O - https://packages.cisofy.com/keys/cisofy-software-public.key | sudo apt-key add -
 echo "deb https://packages.cisofy.com/community/lynis/deb/ stable main" | \
   sudo tee /etc/apt/sources.list.d/cisofy-lynis.list

@@ -14,6 +14,7 @@ By default, Linux does not forward packets between network interfaces. Enable it
 
 ```bash
 # Check current status (1 = enabled, 0 = disabled)
+
 sysctl net.ipv4.ip_forward
 
 # Enable immediately (non-persistent)

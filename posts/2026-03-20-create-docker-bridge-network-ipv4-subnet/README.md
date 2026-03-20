@@ -14,6 +14,7 @@ Docker's default bridge network (`docker0`) uses `172.17.0.0/16`. In production,
 
 ```bash
 # Create a network with a custom subnet and gateway
+
 docker network create \
   --driver bridge \
   --subnet 192.168.100.0/24 \

@@ -28,6 +28,7 @@ Make sure both the Cloud KMS and BigQuery APIs are enabled in your project.
 
 ```bash
 # Enable Cloud KMS and BigQuery APIs
+
 gcloud services enable cloudkms.googleapis.com bigquery.googleapis.com \
     --project=my-project-id
 ```

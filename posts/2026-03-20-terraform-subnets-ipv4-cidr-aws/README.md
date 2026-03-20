@@ -14,6 +14,7 @@ AWS subnets partition a VPC's IPv4 CIDR into smaller blocks. Terraform's `aws_su
 
 ```hcl
 # subnets.tf
+
 data "aws_availability_zones" "available" {
   state = "available"
 }

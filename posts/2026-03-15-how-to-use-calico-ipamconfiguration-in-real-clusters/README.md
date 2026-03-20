@@ -136,6 +136,7 @@ Set up regular IPAM health checks in production:
 
 ```bash
 # Check overall utilization
+
 calicoctl ipam show
 
 # Check per-node block allocation

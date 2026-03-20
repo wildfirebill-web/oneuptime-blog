@@ -27,6 +27,7 @@ This guide uses the OpenTelemetry Operator and a `Collector` custom resource to 
 
 ```yaml
 # clusters/my-cluster/otel/otel-operator-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

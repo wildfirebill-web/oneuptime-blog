@@ -44,6 +44,7 @@ Create the Pub/Sub topic, BigQuery dataset, and table.
 
 ```bash
 # Create the clickstream topic
+
 gcloud pubsub topics create clickstream-events
 gcloud pubsub subscriptions create clickstream-sub \
   --topic=clickstream-events \

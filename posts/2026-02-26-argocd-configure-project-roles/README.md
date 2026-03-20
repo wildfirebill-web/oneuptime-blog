@@ -206,7 +206,7 @@ roles:
 
 ## Policy Syntax Deep Dive
 
-### Resources and Actions
+Resources and Actions
 
 Available resources and their actions:
 
@@ -317,6 +317,7 @@ If either grants a permission, the user has it (unless a deny rule exists).
 
 ```yaml
 # Global RBAC (argocd-rbac-cm)
+
 p, role:everyone, applications, get, */*, allow
 
 # Project role (AppProject spec)

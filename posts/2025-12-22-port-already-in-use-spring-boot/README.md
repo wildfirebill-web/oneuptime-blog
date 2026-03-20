@@ -59,6 +59,7 @@ flowchart TD
 
 ```bash
 # Find process using port 8080
+
 lsof -i :8080
 
 # Output shows process details

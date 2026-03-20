@@ -32,6 +32,7 @@ Start with a VPN connection for immediate connectivity. You can add Direct Conne
 
 ```hcl
 # Virtual Private Gateway on AWS side
+
 resource "aws_vpn_gateway" "main" {
   vpc_id          = aws_vpc.main.id
   amazon_side_asn = 64512

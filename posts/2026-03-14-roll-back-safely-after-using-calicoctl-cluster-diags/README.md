@@ -40,6 +40,7 @@ tar xzf "$AFTER" -C "$AFTER_DIR"
 echo "=== Cluster Configuration Changes ==="
 
 # Compare each resource file
+
 for AFTER_FILE in $(find "$AFTER_DIR" -name "*.yaml"); do
   RESOURCE=$(basename "$AFTER_FILE")
   BEFORE_FILE=$(find "$BEFORE_DIR" -name "$RESOURCE")

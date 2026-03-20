@@ -30,35 +30,35 @@ This guide covers techniques for extracting structured data from cilium-bugtool 
 
 
 
-\`\`\`bash
+```bash
 ## Capture completion output for analysis
 cilium-bugtool completion bash > /tmp/bugtool-completion.bash
 cilium-bugtool completion zsh > /tmp/bugtool-completion.zsh
-\`\`\`
+```
 
 ### Extracting Subcommands
 
-\`\`\`bash
+```bash
 ## From bash completion, extract registered commands
 grep -oP "commands=\(\K[^)]*" /tmp/bugtool-completion.bash |   tr ' ' '\n' | sed 's/"//g' | sort -u
 
 ## From zsh completion, extract command descriptions
 grep -oP "'[a-z][-a-z]*\[.*?\]" /tmp/bugtool-completion.zsh |   sed "s/'//g" | sort -u
-\`\`\`
+```
 
 ### Extracting Flags
 
-\`\`\`bash
+```bash
 ## Extract all flags from bash completion
 grep -oP '\-\-[a-z][-a-z0-9]*' /tmp/bugtool-completion.bash | sort -u
 
 ## Extract flags with descriptions from zsh completion
 grep -oP "'--[a-z][-a-z0-9]*\[.*?\]" /tmp/bugtool-completion.zsh |   sed "s/'//g;s/\[/: /;s/\]//" | sort -u
-\`\`\`
+```
 
 ### Python Parser
 
-\`\`\`python
+```python
 #!/usr/bin/env python3
 """Parse cilium-bugtool completion output."""
 import re
@@ -79,12 +79,13 @@ if __name__ == '__main__':
     filepath = sys.argv[1] if len(sys.argv) > 1 else '/tmp/bugtool-completion.bash'
     result = parse_bash_completion(filepath)
     print(json.dumps(result, indent=2))
-\`\`\`
+```
 
 ## Verification
 
 ```bash
 # Verify parsing produces output
+
 python3 parse_bugtool_completion.py /tmp/bugtool-completion.bash | jq .flags | head
 
 # Verify extracted commands list

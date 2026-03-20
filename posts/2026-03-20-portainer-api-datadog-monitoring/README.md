@@ -1,4 +1,4 @@
-# How to Integrate Portainer API with Datadog for Monitoring
+# How to Integrate Portainer API with Datadog for Monitoring - Monitoring
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -24,6 +24,7 @@ Navigate to Dashboard Settings, then Variables, and click Add Variable. Configur
 
 ```yaml
 # Variable configuration for namespace selection
+
 Name: namespace
 Type: Query
 Label: Namespace

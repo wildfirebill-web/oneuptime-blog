@@ -24,6 +24,7 @@ Let's set up an Express application that publishes ordered messages.
 
 ```bash
 # Initialize project and install dependencies
+
 mkdir pubsub-ordered && cd pubsub-ordered
 npm init -y
 npm install express @google-cloud/pubsub

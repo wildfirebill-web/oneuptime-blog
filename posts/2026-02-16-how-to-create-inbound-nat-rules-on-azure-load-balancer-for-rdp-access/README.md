@@ -39,6 +39,7 @@ Let us create a load balancer with backend Windows VMs.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-nat-rules-demo --location eastus
 
 # Create a VNet

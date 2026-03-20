@@ -33,6 +33,7 @@ Container checkpointing requires CRIU, which must be installed on the host:
 
 ```bash
 # Fedora/RHEL/CentOS
+
 sudo dnf install criu
 
 # Ubuntu/Debian

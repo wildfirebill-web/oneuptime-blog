@@ -33,6 +33,7 @@ For most use cases (save state before a change, revert if something breaks), int
 
 ```bash
 # Create a snapshot of a running VM (disk only, no memory state)
+
 virsh snapshot-create-as \
   --domain myvm \
   --name "before-nginx-upgrade" \

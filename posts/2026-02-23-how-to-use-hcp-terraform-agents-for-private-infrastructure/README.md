@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Terraform Cloud, Agents, Private Infrastructure, Networking, Security
+Tags: Terraform, HCP Terraform, Terraform Cloud, Agent, Private Infrastructure, Networking, Security
 
 Description: Learn how to deploy and use HCP Terraform agents to manage infrastructure behind firewalls, VPNs, and private networks without opening inbound ports.
 
@@ -66,6 +66,7 @@ If you are behind a proxy:
 
 ```bash
 # Configure proxy settings for the agent
+
 export HTTPS_PROXY="http://proxy.internal:8080"
 export HTTP_PROXY="http://proxy.internal:8080"
 export NO_PROXY="internal.company.com,10.0.0.0/8"

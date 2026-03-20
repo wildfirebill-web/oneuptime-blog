@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, FTP, Firewall, Networking, Vsftpd
+Tags: RHEL, FTP, Firewall, Networking, vsftpd
 
 Description: Configure vsftpd in passive mode on RHEL and open the necessary firewall ports so FTP clients can connect through firewalls and NAT gateways.
 
@@ -14,6 +14,7 @@ FTP active mode often fails when clients sit behind NAT or firewalls. Passive mo
 
 ```bash
 # Install vsftpd
+
 sudo dnf install -y vsftpd
 
 # Enable and start the service

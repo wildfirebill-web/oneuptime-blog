@@ -42,6 +42,7 @@ Create workflows for testing and deployment.
 
 ```yaml
 # .github/workflows/ansible-test.yml
+
 name: Ansible Tests
 
 on:

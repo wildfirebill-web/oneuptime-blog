@@ -58,6 +58,7 @@ Here is a minimal collector configuration that monitors a single MariaDB instanc
 
 ```yaml
 # otel-collector-config.yaml - Basic MariaDB monitoring setup
+
 receivers:
   # MySQL receiver connects to MariaDB using the MySQL wire protocol
   mysql:

@@ -72,6 +72,7 @@ The package in Ubuntu repositories may be outdated. Here's how to install the la
 
 ```bash
 # Install restic from Ubuntu repositories (may not be latest)
+
 sudo apt update
 sudo apt install restic
 

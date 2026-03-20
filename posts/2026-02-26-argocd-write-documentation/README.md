@@ -34,6 +34,7 @@ To preview your documentation changes, you need to run the MkDocs development se
 
 ```bash
 # Clone the repository
+
 git clone https://github.com/argoproj/argo-cd.git
 cd argo-cd
 

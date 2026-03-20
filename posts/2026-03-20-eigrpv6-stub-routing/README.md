@@ -8,7 +8,7 @@ Description: Learn how to configure EIGRPv6 stub routing on Cisco routers to red
 
 ## Overview
 
-EIGRPv6 stub routing designates a router as a stub — it will not be queried during DUAL active route computations. This significantly reduces convergence time in hub-and-spoke networks by preventing query propagation to stub (branch) routers.
+EIGRPv6 stub routing designates a router as a stub - it will not be queried during DUAL active route computations. This significantly reduces convergence time in hub-and-spoke networks by preventing query propagation to stub (branch) routers.
 
 ## Why Use Stub Routing?
 
@@ -34,7 +34,7 @@ With stub routing:
 
 ## Classic EIGRPv6 Stub Configuration (Spoke Router)
 
-```
+```text
 ! On the spoke/branch router
 Router-Spoke(config)# ipv6 router eigrp 1
 Router-Spoke(config-rtr)# eigrp stub connected    ! Advertise only connected routes
@@ -43,7 +43,7 @@ Router-Spoke(config-rtr)# no shutdown
 
 ## Named EIGRPv6 Stub Configuration
 
-```
+```text
 ! Named EIGRP stub on spoke router
 Router-Spoke(config)# router eigrp MY_WAN
 Router-Spoke(config-router)# address-family ipv6 unicast autonomous-system 1
@@ -57,8 +57,8 @@ The hub router does not need special configuration to recognize stub routers. EI
 
 ## Verifying Stub Status
 
-```
-! On the hub router — verify spoke is recognized as stub
+```text
+! On the hub router - verify spoke is recognized as stub
 Router-Hub# show ipv6 eigrp neighbors detail
 
 IPv6-EIGRP neighbors for process 1
@@ -68,7 +68,7 @@ IPv6-EIGRP neighbors for process 1
     Suppressing queries
     ↑ "Stub Peer" and "Suppressing queries" confirm stub recognition
 
-! On the spoke router — verify stub mode is active
+! On the spoke router - verify stub mode is active
 Router-Spoke# show ipv6 eigrp
 
 IPv6-EIGRP AS 1
@@ -80,7 +80,7 @@ Stub: connected
 
 A receive-only stub accepts all EIGRP routes but advertises nothing:
 
-```
+```text
 ! Perfect for WAN-facing spokes that should not inject any routes
 Router-Spoke(config)# ipv6 router eigrp 1
 Router-Spoke(config-rtr)# eigrp stub receive-only
@@ -89,7 +89,7 @@ Router-Spoke(config-rtr)# no shutdown
 
 ## Convergence Improvement Measurement
 
-```
+```text
 ! Before stub: hub queries all spokes on failure
 ! After stub: hub resolves locally without querying stubs
 

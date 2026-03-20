@@ -8,11 +8,11 @@ Description: Diagnose and fix Happy Eyeballs (RFC 8305) connection delays, unexp
 
 ## Introduction
 
-Happy Eyeballs (RFC 8305) is the algorithm applications use to race IPv4 and IPv6 connection attempts, using whichever responds first. When implemented correctly, users get the best of both protocols. Problems arise when IPv6 connections consistently fail or are slow, causing 250ms+ delays before IPv4 fallback — or when IPv6 is preferred but should fall back to IPv4.
+Happy Eyeballs (RFC 8305) is the algorithm applications use to race IPv4 and IPv6 connection attempts, using whichever responds first. When implemented correctly, users get the best of both protocols. Problems arise when IPv6 connections consistently fail or are slow, causing 250ms+ delays before IPv4 fallback - or when IPv6 is preferred but should fall back to IPv4.
 
 ## Understanding Happy Eyeballs
 
-```
+```text
 Happy Eyeballs flow:
 1. DNS query for both A and AAAA records (in parallel)
 2. Sort addresses by preference (IPv6 preferred per RFC 6724)
@@ -26,6 +26,7 @@ Happy Eyeballs flow:
 
 ```bash
 # Check which protocol curl actually uses
+
 curl -w "Connected to: %{remote_ip}\n" -s -o /dev/null https://example.com
 
 # Force IPv6 to see if it succeeds
@@ -175,4 +176,4 @@ sudo sysctl -w net.ipv6.conf.eth0.disable_ipv6=1
 
 ## Conclusion
 
-Happy Eyeballs delays are caused by IPv6 connection attempts that fail silently — the SYN is sent but never acknowledged. The fix is almost always to either repair IPv6 connectivity (fix the default route or unblock ICMPv6) or remove broken IPv6 routes that cause fruitless connection attempts. Measure with `curl -w "%{remote_ip}"` to confirm which protocol is actually used and `time curl -6` vs `time curl -4` to quantify the latency difference. A properly working dual-stack network shows similar response times for both protocols.
+Happy Eyeballs delays are caused by IPv6 connection attempts that fail silently - the SYN is sent but never acknowledged. The fix is almost always to either repair IPv6 connectivity (fix the default route or unblock ICMPv6) or remove broken IPv6 routes that cause fruitless connection attempts. Measure with `curl -w "%{remote_ip}"` to confirm which protocol is actually used and `time curl -6` vs `time curl -4` to quantify the latency difference. A properly working dual-stack network shows similar response times for both protocols.

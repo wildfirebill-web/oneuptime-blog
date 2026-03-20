@@ -53,6 +53,7 @@ If you are using EnvoyFilters to add response headers, use VirtualService instea
 
 ```yaml
 # BAD: EnvoyFilter for response headers
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

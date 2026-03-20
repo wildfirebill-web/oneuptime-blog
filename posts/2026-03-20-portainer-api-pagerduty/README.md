@@ -42,6 +42,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Configuration
+
 PORTAINER_URL = "https://portainer.example.com"
 PORTAINER_API_KEY = "your-portainer-api-key"
 PAGERDUTY_ROUTING_KEY = "your-pagerduty-integration-key"
@@ -238,4 +239,4 @@ docker start my-container
 
 ## Conclusion
 
-The Portainer-PagerDuty integration provides automated incident management for containerized workloads. Container failures automatically create PagerDuty incidents with deduplication, and recovery automatically resolves them—reducing alert fatigue and ensuring your on-call team is notified only when action is needed.
+The Portainer-PagerDuty integration provides automated incident management for containerized workloads. Container failures automatically create PagerDuty incidents with deduplication, and recovery automatically resolves them-reducing alert fatigue and ensuring your on-call team is notified only when action is needed.

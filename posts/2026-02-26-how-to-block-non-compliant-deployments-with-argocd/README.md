@@ -35,6 +35,7 @@ ArgoCD AppProjects provide the first line of defense. They restrict what can be 
 
 ```yaml
 # production-project.yaml
+
 # Strict project for production deployments
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject

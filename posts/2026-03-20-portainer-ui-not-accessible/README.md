@@ -1,4 +1,4 @@
-# How to Fix "Portainer UI Not Accessible After Installation"
+# How to Fix 'Portainer UI Not Accessible After Installation'
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ You've installed Portainer, but navigating to port 9000 or 9443 gives you a conn
 
 ```bash
 # Check Portainer container status
+
 docker ps | grep portainer
 
 # If not listed, check all containers including stopped ones
@@ -34,7 +35,7 @@ docker logs portainer
 
 If the container exited immediately, the logs will show the error. Common log errors:
 
-```
+```text
 # Permission denied on data volume
 Error: open /data/portainer.db: permission denied
 
@@ -83,11 +84,11 @@ sudo iptables -L INPUT -n | grep 9000
 The most common installation mistake is missing the port mapping:
 
 ```bash
-# WRONG — no port mapping
+# WRONG - no port mapping
 docker run -d -v /var/run/docker.sock:/var/run/docker.sock \
   -v portainer_data:/data portainer/portainer-ce:latest
 
-# CORRECT — with port mapping
+# CORRECT - with port mapping
 docker run -d -p 9000:9000 -p 9443:9443 \
   --name portainer \
   --restart=unless-stopped \

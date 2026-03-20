@@ -16,6 +16,7 @@ RHEL classifies updates into three categories. Prioritize accordingly:
 
 ```bash
 # View available updates by type
+
 sudo dnf updateinfo summary
 
 # List only security updates

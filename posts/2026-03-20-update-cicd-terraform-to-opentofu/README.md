@@ -1,4 +1,4 @@
-# How to Update CI/CD Pipelines from Terraform to OpenTofu
+# How to Update CI/CD Pipelines from Terraform to OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -94,6 +94,7 @@ jobs:
 
 ```yaml
 # .gitlab-ci.yml
+
 variables:
   TOFU_VERSION: "1.8.0"
 
@@ -132,4 +133,4 @@ tofu version
 
 ## Conclusion
 
-Updating CI/CD pipelines from Terraform to OpenTofu requires minimal changes — install OpenTofu using the official action or script, and replace `terraform` commands with `tofu`. The semantic equivalence of commands means existing pipeline logic works without modification.
+Updating CI/CD pipelines from Terraform to OpenTofu requires minimal changes - install OpenTofu using the official action or script, and replace `terraform` commands with `tofu`. The semantic equivalence of commands means existing pipeline logic works without modification.

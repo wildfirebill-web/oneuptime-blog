@@ -43,6 +43,7 @@ Check what is in your BaseOS repo:
 
 ```bash
 # List all packages available from the BaseOS repository
+
 dnf repo-pkgs rhel-9-for-x86_64-baseos-rpms list available
 ```
 

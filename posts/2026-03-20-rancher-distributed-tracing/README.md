@@ -1,4 +1,4 @@
-# How to Configure Distributed Tracing in Rancher
+# How to Configure Distributed Tracing in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -84,6 +84,7 @@ public OrderResponse processOrder(OrderRequest request) {
 
 ```python
 # Python app with OpenTelemetry
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

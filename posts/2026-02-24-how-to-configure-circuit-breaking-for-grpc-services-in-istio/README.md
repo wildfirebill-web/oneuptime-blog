@@ -213,6 +213,7 @@ gRPC metrics show up slightly differently in Envoy stats:
 
 ```bash
 # Check gRPC-specific stats
+
 kubectl exec deploy/grpc-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "grpc"
 

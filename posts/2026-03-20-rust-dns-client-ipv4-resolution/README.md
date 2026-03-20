@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, DNS, IPv4, UDP, Networking, Protocol, std::net
+Tags: Rust, DNS, IPv4, UDP, Networking, Protocol, Std::net
 
 Description: Build a DNS A record resolver in Rust that sends UDP DNS queries directly to a resolver and parses the IPv4 address responses without external DNS libraries.
 
 ## Introduction
 
-Understanding DNS at the protocol level is valuable for network programmers. This Rust implementation constructs a DNS A record query packet, sends it via UDP to a resolver (8.8.8.8), and parses the response to extract IPv4 addresses — all without external crates.
+Understanding DNS at the protocol level is valuable for network programmers. This Rust implementation constructs a DNS A record query packet, sends it via UDP to a resolver (8.8.8.8), and parses the response to extract IPv4 addresses - all without external crates.
 
 ## DNS Packet Structure
 
-```
+```text
 Header  (12 bytes): ID, flags, question/answer/authority/additional counts
 Question section:  QNAME (labels), QTYPE, QCLASS
 Answer section:    NAME, TYPE, CLASS, TTL, RDLENGTH, RDATA (IPv4 = 4 bytes)
@@ -36,7 +36,7 @@ fn build_dns_query(hostname: &str, query_id: u16) -> Vec<u8> {
     packet.extend_from_slice(&[0x00, 0x00]);           // NSCOUNT: 0
     packet.extend_from_slice(&[0x00, 0x00]);           // ARCOUNT: 0
     
-    // Question section — encode hostname as DNS labels
+    // Question section - encode hostname as DNS labels
     for label in hostname.split('.') {
         packet.push(label.len() as u8);                // Label length
         packet.extend_from_slice(label.as_bytes());    // Label bytes
@@ -67,13 +67,13 @@ fn parse_dns_response(response: &[u8]) -> Vec<Ipv4Addr> {
     let _id = u16::from_be_bytes([response[0], response[1]]);
     let flags = u16::from_be_bytes([response[2], response[3]]);
     
-    // Check QR bit (bit 15) — should be 1 for response
+    // Check QR bit (bit 15) - should be 1 for response
     if flags & 0x8000 == 0 {
         eprintln!("Not a DNS response");
         return ips;
     }
     
-    // Check RCODE (lower 4 bits) — 0 = no error
+    // Check RCODE (lower 4 bits) - 0 = no error
     let rcode = flags & 0x000F;
     if rcode != 0 {
         eprintln!("DNS error code: {}", rcode);
@@ -178,4 +178,4 @@ For production DNS resolution in Rust, use the `trust-dns-resolver` or `hickory-
 
 ## Conclusion
 
-This raw DNS client demonstrates UDP socket programming, binary protocol construction, and byte-level parsing in Rust. The `parse_dns_response` function handles DNS name compression pointers — a key feature of the DNS wire format. For production use, lean on well-maintained DNS resolver crates.
+This raw DNS client demonstrates UDP socket programming, binary protocol construction, and byte-level parsing in Rust. The `parse_dns_response` function handles DNS name compression pointers - a key feature of the DNS wire format. For production use, lean on well-maintained DNS resolver crates.

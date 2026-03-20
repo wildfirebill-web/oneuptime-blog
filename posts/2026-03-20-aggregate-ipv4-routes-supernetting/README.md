@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Supernetting, Routing, BGP, Route Aggregation, OSPF
 
-Description: IPv4 route aggregation combines multiple specific routes into a single summary advertisement, reducing routing table size and improving convergence by hiding internal topology changes behind the summary.
+Description: IPv4 route aggregation combines multiple specific routes into a single summary advertisement, reducing routing table size and improving convergence by hiding internal topology changes behind the...
 
 ## Why Aggregate Routes?
 
@@ -32,7 +32,7 @@ def find_summary(networks: list) -> str:
     if len(collapsed) == 1:
         return str(collapsed[0])
 
-    # Multiple blocks needed — return the covering supernet of first and last
+    # Multiple blocks needed - return the covering supernet of first and last
     all_addrs = sorted(nets, key=lambda n: n.network_address)
     first, last = all_addrs[0], all_addrs[-1]
 
@@ -47,6 +47,7 @@ def find_summary(networks: list) -> str:
     return str(summary)
 
 # Example: 8 contiguous /24s → should summarize to /21
+
 routes = [f"10.1.{i}.0/24" for i in range(8)]  # 10.1.0.0 through 10.1.7.0
 print(f"8 × /24 summarize to: {find_summary(routes)}")
 
@@ -58,7 +59,7 @@ print(f"Collapsed: {collapsed}")
 
 ## Configuring Aggregation in BGP (FRRouting)
 
-```
+```text
 # /etc/frr/frr.conf
 router bgp 65001
   address-family ipv4 unicast
@@ -72,7 +73,7 @@ router bgp 65001
 
 ## OSPF Area Summarization
 
-```
+```text
 # ABR summarization in OSPF
 router ospf 1
   area 1 range 10.1.0.0 255.255.248.0

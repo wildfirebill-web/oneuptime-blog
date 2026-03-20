@@ -24,6 +24,7 @@ The simplest source type is a directory containing raw Kubernetes YAML or JSON m
 
 ```yaml
 # Application using a plain directory source
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

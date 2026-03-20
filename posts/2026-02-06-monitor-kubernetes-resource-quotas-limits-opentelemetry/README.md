@@ -49,6 +49,7 @@ The OpenTelemetry Collector has a `k8s_cluster` receiver that collects resource 
 
 ```yaml
 # OpenTelemetry Collector configuration for Kubernetes resource monitoring
+
 apiVersion: opentelemetry.io/v1beta1
 kind: OpenTelemetryCollector
 metadata:

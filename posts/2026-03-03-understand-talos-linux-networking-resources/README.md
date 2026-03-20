@@ -20,6 +20,7 @@ Each aspect of network configuration is represented as a separate resource type.
 
 ```bash
 # List all network-related resource types
+
 talosctl -n 10.0.0.11 get rd | grep -i network
 
 # Key resource types:

@@ -28,6 +28,7 @@ When a user runs `terraform init`, Terraform downloads provider binaries from th
 
 ```bash
 # Generate a new GPG key pair
+
 gpg --full-generate-key
 
 # When prompted, choose:

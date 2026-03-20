@@ -14,6 +14,7 @@ Description: Use dig with +short and AAAA query type for fast IPv6 address looku
 
 ```bash
 # Quick IPv6 address lookup (just the IP)
+
 dig +short AAAA google.com
 
 # Full AAAA query with all details
@@ -51,7 +52,7 @@ dig +short PTR 8.8.8.8.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.8.4.0.6.8.4.1.0.0.2.i
 
 ```bash
 #!/bin/bash
-# check-ipv6-dns.sh — Verify AAAA records for a list of hostnames
+# check-ipv6-dns.sh - Verify AAAA records for a list of hostnames
 
 HOSTNAMES=(
     "google.com"
@@ -117,7 +118,7 @@ dig AAAA example.com +dnssec | grep "RRSIG\|NODATA"
 
 ```bash
 #!/bin/bash
-# batch-aaaa-lookup.sh — Lookup AAAA for many domains
+# batch-aaaa-lookup.sh - Lookup AAAA for many domains
 
 domains_file="${1:-/tmp/domains.txt}"
 

@@ -32,6 +32,7 @@ The primary mechanism for controlling apply order in Flux is the `spec.dependsOn
 
 ```yaml
 # Layer 1: Cluster-wide prerequisites (CRDs, namespaces)
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

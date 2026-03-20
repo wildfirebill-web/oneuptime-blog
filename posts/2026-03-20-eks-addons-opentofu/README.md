@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EKS, Add-Ons, Kubernetes, VPC CNI, CoreDNS, Infrastructure as Code
+Tags: OpenTofu, AWS, EKS, Add-ons, Kubernetes, VPC CNI, CoreDNS, Infrastructure as Code
 
 Description: Learn how to install and manage EKS managed add-ons including VPC CNI, CoreDNS, kube-proxy, and EBS CSI Driver using OpenTofu for automated lifecycle management.
 
@@ -19,6 +19,7 @@ EKS managed add-ons are AWS-maintained Kubernetes operational software component
 
 ```hcl
 # VPC CNI enables pods to get VPC IP addresses
+
 # Required for pod-to-pod and pod-to-service networking
 resource "aws_eks_addon" "vpc_cni" {
   cluster_name             = var.cluster_name

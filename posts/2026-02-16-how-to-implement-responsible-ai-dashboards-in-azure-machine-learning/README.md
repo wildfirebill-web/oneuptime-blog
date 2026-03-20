@@ -30,6 +30,7 @@ You need:
 
 ```bash
 # Install the required packages
+
 pip install azure-ai-ml azure-identity raiwidgets responsibleai
 ```
 

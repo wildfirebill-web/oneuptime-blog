@@ -22,6 +22,7 @@ provider "aws" {
 }
 
 # Primary vault
+
 resource "aws_backup_vault" "primary" {
   provider    = aws.primary
   name        = "primary-vault"

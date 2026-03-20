@@ -23,13 +23,14 @@ sequenceDiagram
     Note over C,S: "I accept 192.168.1.100 from you"
 
     S->>C: DHCP Acknowledge (unicast/broadcast)
-    Note over C,S: "Confirmed — lease valid for 24h"
+    Note over C,S: "Confirmed - lease valid for 24h"
 ```
 
 ## Step 1: Capture DHCP Traffic
 
 ```bash
 # Using tcpdump to capture DHCP
+
 sudo tcpdump -i eth0 -n port 67 or port 68 -v -w /tmp/dhcp-capture.pcap
 
 # Trigger DHCP renewal to capture
@@ -37,8 +38,8 @@ sudo dhclient -r eth0 && sudo dhclient eth0    # Linux
 # ipconfig /release && ipconfig /renew          # Windows
 ```
 
-```
-Wireshark — capture filter to see only DHCP:
+```text
+Wireshark - capture filter to see only DHCP:
 Capture → Capture Filters → New
 Name: DHCP
 Filter: port 67 or port 68
@@ -46,7 +47,7 @@ Filter: port 67 or port 68
 
 ## Step 2: Apply Display Filter in Wireshark
 
-```
+```text
 In Wireshark display filter bar, type:
 bootp
 
@@ -66,7 +67,7 @@ bootp.hw.mac_addr == aa:bb:cc:dd:ee:ff
 
 ## Step 3: Analyze a Successful DORA Exchange
 
-```
+```text
 In Wireshark, with 'bootp' filter applied:
 
 Packet 1: DHCP Discover
@@ -75,7 +76,7 @@ Packet 1: DHCP Discover
   Details pane → DHCP:
     Message type: Discover (1)
     Client MAC: [client's MAC]
-    Requested IP: 192.168.1.100 (optional — previous IP)
+    Requested IP: 192.168.1.100 (optional - previous IP)
     Hostname: [client hostname]
     Parameter Request List: Subnet Mask, Router, DNS, Lease Time
 
@@ -91,7 +92,7 @@ Packet 2: DHCP Offer
 
 Packet 3: DHCP Request
   Source: 0.0.0.0 (still no IP)
-  Destination: 255.255.255.255 (broadcast — tells other DHCP servers too)
+  Destination: 255.255.255.255 (broadcast - tells other DHCP servers too)
   Details:
     Requested IP: 192.168.1.100 (accepting the offer)
     Server ID: 192.168.1.1 (which server's offer we're accepting)
@@ -106,7 +107,7 @@ Packet 4: DHCP Acknowledge (ACK)
 
 ## Step 4: Diagnose DHCP Failures
 
-```
+```bash
 Problem: No DHCP Offer received
 
 What you see in Wireshark:
@@ -126,7 +127,7 @@ If no packets arrive: relay agent misconfigured
 If packets arrive but no response: check DHCPD logs
 ```
 
-```
+```text
 Problem: DHCP NAck received
 
 What you see:
@@ -142,7 +143,7 @@ Fix: ipconfig /release then /renew (forces fresh Discover)
 
 ## Step 5: Check DHCP Options in Wireshark
 
-```
+```text
 In Wireshark, expand a DHCP Offer packet:
 Bootstrap Protocol (Offer)
   ├─ Hardware type: Ethernet
@@ -161,7 +162,7 @@ Bootstrap Protocol (Offer)
 
 ## Step 6: Measure DHCP Response Time
 
-```
+```text
 In Wireshark: Statistics → Expert Information
 Look for DHCP timing anomalies
 

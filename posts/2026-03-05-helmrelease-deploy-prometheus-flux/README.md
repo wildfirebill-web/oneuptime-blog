@@ -22,6 +22,7 @@ The Prometheus community maintains the official Helm charts.
 
 ```yaml
 # helmrepository-prometheus.yaml - Prometheus community Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

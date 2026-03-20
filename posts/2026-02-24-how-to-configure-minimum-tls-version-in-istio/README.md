@@ -155,6 +155,7 @@ Test the gateway from outside the cluster:
 
 ```bash
 # This should fail if minimum is TLS 1.2
+
 openssl s_client -connect gateway-ip:443 -tls1_1 -servername app.example.com
 
 # This should succeed

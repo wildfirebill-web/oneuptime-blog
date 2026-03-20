@@ -495,6 +495,7 @@ Ensure merge key values match exactly across generators:
 
 ```yaml
 # Good - consistent naming
+
 - environment: prod-us-east-1
 # ...
 - environment: prod-us-east-1

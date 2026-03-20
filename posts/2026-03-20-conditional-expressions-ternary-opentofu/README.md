@@ -18,13 +18,14 @@ variable "environment" {
 }
 
 # Syntax: condition ? value_if_true : value_if_false
+
 resource "aws_instance" "app" {
   ami           = var.ami_id
   instance_type = var.environment == "prod" ? "t3.large" : "t3.micro"
 }
 ```
 
-## Resource Sizing by Environment
+Resource Sizing by Environment
 
 ```hcl
 variable "environment" {

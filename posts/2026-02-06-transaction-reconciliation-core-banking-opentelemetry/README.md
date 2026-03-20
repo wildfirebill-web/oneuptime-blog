@@ -18,6 +18,7 @@ We start with OpenTelemetry metrics to track the health of the reconciliation pr
 
 ```python
 # recon_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

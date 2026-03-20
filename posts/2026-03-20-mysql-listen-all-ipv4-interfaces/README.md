@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, IPv4, bind-address, All Interfaces, Database, Configuration
+Tags: MySQL, IPv4, Bind-address, All Interfaces, Database, Configuration
 
 Description: Set MySQL bind-address to 0.0.0.0 to listen on all IPv4 interfaces, while using firewall rules and user grants to control actual access.
 
 ## Introduction
 
-Setting `bind-address = 0.0.0.0` makes MySQL accept connections on all network interfaces. This is common in multi-homed servers or containerized environments. Access control is then managed through MySQL user grants and firewall rules—not by binding to a specific IP.
+Setting `bind-address = 0.0.0.0` makes MySQL accept connections on all network interfaces. This is common in multi-homed servers or containerized environments. Access control is then managed through MySQL user grants and firewall rules-not by binding to a specific IP.
 
 ## Configuration
 
 ```bash
 # /etc/mysql/mysql.conf.d/mysqld.cnf (Debian/Ubuntu)
+
 # /etc/my.cnf (RHEL/CentOS)
 
 [mysqld]

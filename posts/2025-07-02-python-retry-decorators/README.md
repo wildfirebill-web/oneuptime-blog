@@ -76,6 +76,7 @@ def simple_decorator(func: Callable) -> Callable:
 
 
 # Usage example
+
 @simple_decorator
 def greet(name: str) -> str:
     """Return a greeting message."""

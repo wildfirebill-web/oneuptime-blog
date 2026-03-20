@@ -24,6 +24,7 @@ System containers (LXC/LXD) package an entire operating system userspace. They r
 
 ```bash
 # Podman: runs a single application
+
 podman run -d --name web nginx
 # One process, one purpose
 
@@ -57,7 +58,7 @@ Host Kernel
            └── cron
 ```
 
-## Resource Model
+Resource Model
 
 Podman containers are lightweight and start in milliseconds:
 

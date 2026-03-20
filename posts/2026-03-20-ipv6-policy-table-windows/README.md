@@ -14,6 +14,7 @@ Windows implements RFC 6724 address selection with a configurable policy table m
 
 ```powershell
 # PowerShell: view the address selection policy table
+
 Get-NetIPv6Protocol | Select-Object -Property *
 
 # View current prefix policies (Windows Server 2012+)
@@ -60,7 +61,7 @@ netsh interface ipv6 reset
 netsh interface ipv6 add prefixpolicy ::ffff:0:0/96 precedence=100 label=4
 
 # Method 2: Disable IPv6 on specific adapters
-# (nuclear option — removes IPv6 entirely from adapter)
+# (nuclear option - removes IPv6 entirely from adapter)
 Disable-NetAdapterBinding -Name "Ethernet" -ComponentID ms_tcpip6
 
 # Method 3: Prefer IPv4 via registry (legacy)
@@ -97,7 +98,7 @@ netsh interface ipv6 reset
 # Check if ULA addresses (fc00::/7) have correct label
 netsh interface ipv6 show prefixpolicies | Select-String "fc00"
 
-# ULA label should be 13 — same as ULA sources
+# ULA label should be 13 - same as ULA sources
 # This keeps ULA-to-ULA communication preferred
 
 # Add explicit ULA entry if missing

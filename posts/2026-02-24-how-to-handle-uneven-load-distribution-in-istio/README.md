@@ -28,6 +28,7 @@ Start by checking the actual distribution across pods:
 
 ```bash
 # Check request counts per pod using Prometheus
+
 # Query in Prometheus or Grafana:
 # sum(rate(istio_requests_total{destination_service="my-service.default.svc.cluster.local"}[5m])) by (destination_workload_namespace, destination_app, pod)
 ```

@@ -35,6 +35,7 @@ Set in `postgresql.conf` for all connections:
 
 ```ini
 # postgresql.conf
+
 statement_timeout = '30s'  # Kill queries after 30 seconds
 ```
 

@@ -26,12 +26,13 @@ Always use the v2 version of the import:
 
 ```python
 # The standard way to import tfplan
+
 import "tfplan/v2" as tfplan
 ```
 
 The alias `tfplan` is a convention, but you can name it whatever you want. Sticking with `tfplan` keeps your policies consistent and readable.
 
-## Resource Changes
+Resource Changes
 
 The `tfplan.resource_changes` collection is what you will work with most often. It contains every resource that Terraform plans to create, update, delete, or read.
 

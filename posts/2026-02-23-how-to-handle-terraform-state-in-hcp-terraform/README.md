@@ -37,6 +37,7 @@ You do not need to configure S3 buckets, DynamoDB tables, or storage accounts. I
 
 ```bash
 # List all resources in the current state
+
 terraform state list
 
 # Show details for a specific resource

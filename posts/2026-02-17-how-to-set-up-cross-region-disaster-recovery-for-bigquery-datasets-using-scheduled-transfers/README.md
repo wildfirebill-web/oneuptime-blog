@@ -31,6 +31,7 @@ Create a mirror dataset in a different region.
 
 ```bash
 # Create the primary dataset (if it does not already exist)
+
 bq mk --location=us-central1 --dataset my_project:analytics_primary
 
 # Create the DR dataset in a different region

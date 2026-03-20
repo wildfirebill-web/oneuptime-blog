@@ -27,6 +27,7 @@ Start with a Collector config that receives OTLP data and filters for security e
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

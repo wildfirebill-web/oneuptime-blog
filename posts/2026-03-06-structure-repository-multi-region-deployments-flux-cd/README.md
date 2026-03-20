@@ -79,6 +79,7 @@ Define your application resources in the base directory with sensible defaults.
 
 ```yaml
 # base/apps/kustomization.yaml
+
 # Declares all application components
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

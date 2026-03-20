@@ -34,6 +34,7 @@ Structured logs enable:
 
 ```text
 # Unstructured (hard to parse)
+
 2024-01-15 10:30:00 ERROR Failed to process order 12345 for user john@example.com
 
 # Structured JSON (easy to parse)

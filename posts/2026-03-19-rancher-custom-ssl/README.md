@@ -27,6 +27,7 @@ Check that the certificate and key match:
 
 ```bash
 # Check the certificate modulus
+
 openssl x509 -noout -modulus -in tls.crt | md5sum
 
 # Check the key modulus

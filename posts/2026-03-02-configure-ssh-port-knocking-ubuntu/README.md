@@ -23,6 +23,7 @@ Port knocking is a security technique where your SSH port is firewalled by defau
 
 ```bash
 # Install knockd
+
 sudo apt update
 sudo apt install knockd
 

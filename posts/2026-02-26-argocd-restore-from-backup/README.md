@@ -36,6 +36,7 @@ The simplest restore method uses the built-in admin tool:
 
 ```bash
 # Import from a backup file created with argocd admin export
+
 argocd admin import -n argocd < argocd-backup.yaml
 ```
 
@@ -319,7 +320,7 @@ kubectl logs deployment/argocd-server -n argocd --tail=50
 
 ## Handling Common Restore Issues
 
-### Resource Already Exists
+Resource Already Exists
 
 ```bash
 # Use server-side apply to handle conflicts

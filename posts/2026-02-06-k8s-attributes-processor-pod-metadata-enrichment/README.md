@@ -41,6 +41,7 @@ This configuration extracts the most commonly needed Kubernetes metadata fields 
 
 ```yaml
 # collector-config.yaml
+
 processors:
   k8sattributes:
     # Use the collector's service account for API access

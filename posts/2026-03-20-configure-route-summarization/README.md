@@ -14,7 +14,7 @@ Route summarization (also called route aggregation or supernetting) combines mul
 
 To summarize 10.1.0.0/24 through 10.1.3.0/24 into a single prefix:
 
-```
+```text
 10.1.0.0  = 00001010.00000001.00000000.00000000
 10.1.1.0  = 00001010.00000001.00000001.00000000
 10.1.2.0  = 00001010.00000001.00000010.00000000
@@ -30,6 +30,7 @@ OSPF summarization is performed at Area Border Routers (ABRs) to reduce the numb
 
 ```bash
 # Configure OSPF area range for summarization at ABR
+
 # vtysh configuration
 router ospf
   area 1 range 10.1.0.0/22

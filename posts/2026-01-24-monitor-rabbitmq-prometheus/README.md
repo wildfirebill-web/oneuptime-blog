@@ -46,6 +46,7 @@ flowchart TD
 
 ```bash
 # Enable the Prometheus plugin on all nodes
+
 rabbitmq-plugins enable rabbitmq_prometheus
 
 # Verify the plugin is enabled

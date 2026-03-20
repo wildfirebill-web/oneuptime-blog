@@ -274,6 +274,7 @@ After applying a Telemetry resource, verify it's being used:
 
 ```bash
 # Check the resource was created
+
 kubectl get telemetry -A
 
 # Check for validation errors

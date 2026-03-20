@@ -34,6 +34,7 @@ This Collector config routes recent high-priority data to the primary backend an
 
 ```yaml
 # retention-aware-collector.yaml
+
 receivers:
   otlp:
     protocols:

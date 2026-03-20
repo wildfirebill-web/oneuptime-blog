@@ -36,6 +36,7 @@ First, define the target environments. Each target represents a GKE cluster and 
 
 ```yaml
 # targets/dev.yaml - Development target definition
+
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:

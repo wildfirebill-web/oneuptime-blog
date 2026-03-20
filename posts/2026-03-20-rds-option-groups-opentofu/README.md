@@ -19,6 +19,7 @@ RDS option groups enable additional features for specific database engines that 
 
 ```hcl
 # MySQL option group enabling memcached plugin for caching
+
 resource "aws_db_option_group" "mysql_memcached" {
   name                     = "${var.project_name}-mysql-memcached"
   option_group_description = "MySQL with InnoDB memcached plugin"

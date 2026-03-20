@@ -18,6 +18,7 @@ Before making any API calls, you need an authentication token. There are two way
 
 ```bash
 # Method 1: Login with username/password to get a bearer token
+
 TOKEN=$(curl -s -k https://argocd.company.com/api/v1/session \
   -d '{"username":"admin","password":"your-password"}' \
   | jq -r '.token')

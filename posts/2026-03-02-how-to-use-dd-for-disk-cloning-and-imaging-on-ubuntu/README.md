@@ -36,6 +36,7 @@ Common options:
 
 ```bash
 # Clone sda to sdb - copies everything including partition table
+
 # WARNING: This completely overwrites /dev/sdb
 sudo dd if=/dev/sda of=/dev/sdb bs=4M status=progress conv=fsync
 ```

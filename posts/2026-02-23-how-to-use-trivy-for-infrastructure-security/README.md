@@ -27,6 +27,7 @@ For Terraform specifically, Trivy includes all the rules from tfsec (which Aqua 
 
 ```bash
 # macOS
+
 brew install trivy
 
 # Linux (Debian/Ubuntu)

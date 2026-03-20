@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Multicast, IGMP, Linux, Routing, igmpproxy
+Tags: Networking, Multicast, IGMP, Linux, Routing, Igmpproxy
 
 Description: Set up igmpproxy on a Linux router to forward multicast traffic from an upstream interface to downstream LAN segments without running a full PIM routing daemon.
 
@@ -14,6 +14,7 @@ Description: Set up igmpproxy on a Linux router to forward multicast traffic fro
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update && sudo apt install -y igmpproxy
 
 # RHEL/CentOS/Fedora
@@ -59,11 +60,11 @@ sudo tee /etc/igmpproxy.conf << 'EOF'
 ## igmpproxy configuration
 ##
 
-# Upstream interface — where multicast sources are reachable
+# Upstream interface - where multicast sources are reachable
 phyint eth0 upstream  ratelimit 0  threshold 1
     altnet 0.0.0.0/0
 
-# Downstream interface — where LAN receivers are
+# Downstream interface - where LAN receivers are
 phyint eth1 downstream  ratelimit 0  threshold 1
 
 # Disable all other interfaces

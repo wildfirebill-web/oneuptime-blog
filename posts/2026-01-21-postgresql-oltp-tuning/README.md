@@ -38,6 +38,7 @@ Buffer cache for frequently accessed data:
 # postgresql.conf
 
 # OLTP: 25% of RAM, but cap at 8-16GB
+
 # For 32GB RAM server:
 shared_buffers = 8GB
 

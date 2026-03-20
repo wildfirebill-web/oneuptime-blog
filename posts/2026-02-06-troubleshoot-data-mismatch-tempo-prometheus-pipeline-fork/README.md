@@ -81,6 +81,7 @@ Now `spanmetrics` sees all spans (unfiltered), while Tempo only receives error s
 
 ```yaml
 # WRONG: tail sampling reduces data before spanmetrics sees it
+
 service:
   pipelines:
     traces:

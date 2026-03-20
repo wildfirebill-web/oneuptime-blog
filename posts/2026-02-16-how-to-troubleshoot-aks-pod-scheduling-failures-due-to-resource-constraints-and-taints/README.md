@@ -16,6 +16,7 @@ The first thing to do with any Pending pod is check its events. Kubernetes tells
 
 ```bash
 # Get pods in Pending status
+
 kubectl get pods --field-selector status.phase=Pending
 
 # Describe the pending pod to see scheduling events

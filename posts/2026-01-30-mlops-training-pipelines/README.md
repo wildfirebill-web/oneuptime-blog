@@ -95,6 +95,7 @@ Kubeflow Pipelines (KFP) is the most widely adopted framework for ML pipelines o
 
 ```bash
 # Install Kubeflow Pipelines on an existing Kubernetes cluster
+
 export PIPELINE_VERSION=2.0.5
 
 kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"

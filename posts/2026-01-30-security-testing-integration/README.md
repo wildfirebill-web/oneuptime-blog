@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Testing, Security, DevSecOps, CICD
+Tags: Testing, Security, DevSecOps, CI/CD
 
 Description: A practical guide to integrating SAST, DAST, and SCA security testing into CI/CD pipelines with automated vulnerability management and security gates.
 
@@ -86,6 +86,7 @@ Semgrep is an open-source SAST tool that supports multiple languages. This workf
 
 ```yaml
 # .github/workflows/sast.yml
+
 name: SAST Security Scan
 
 on:

@@ -185,6 +185,7 @@ Without `atomic`, a failed upgrade leaves resources in their partially updated s
 
 ```yaml
 # Without atomic - resources remain in failed state between retries
+
 upgrade:
   atomic: false
   remediation:

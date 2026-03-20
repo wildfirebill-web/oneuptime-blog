@@ -8,7 +8,7 @@ Description: Learn how to configure EKS Pod Identity using OpenTofu as the moder
 
 ## Introduction
 
-EKS Pod Identity is the newer, simplified alternative to IRSA for granting IAM permissions to Kubernetes pods. Unlike IRSA, it doesn't require creating OIDC providers or complex trust policies—you simply associate an IAM role with a service account using the EKS API.
+EKS Pod Identity is the newer, simplified alternative to IRSA for granting IAM permissions to Kubernetes pods. Unlike IRSA, it doesn't require creating OIDC providers or complex trust policies-you simply associate an IAM role with a service account using the EKS API.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ EKS Pod Identity is the newer, simplified alternative to IRSA for granting IAM p
 
 ```hcl
 # The Pod Identity Agent must be installed on each node
+
 # It handles credential injection for pods
 resource "aws_eks_addon" "pod_identity" {
   cluster_name             = var.cluster_name

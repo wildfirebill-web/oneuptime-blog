@@ -18,6 +18,7 @@ V3 is modular - you install only the packages you need instead of the entire SDK
 
 ```bash
 # Install S3 client and required utilities
+
 npm install @aws-sdk/client-s3 @aws-sdk/lib-storage @aws-sdk/s3-request-presigner
 ```
 

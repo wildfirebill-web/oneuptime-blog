@@ -1,4 +1,4 @@
-# How to Debug Ingress Routing Problems in Portainer
+# How to Debug Ingress Routing Problems in Portainer - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Ingress routing problems are among the most frustrating Kubernetes issues to deb
 
 An Ingress request flows through multiple layers:
 
-```
+```text
 Client → DNS → Load Balancer → Ingress Controller Pod → Service → Pod
 ```
 
@@ -29,11 +29,12 @@ Navigate to **Kubernetes > Networking > Ingresses** in Portainer. Verify:
 
 ```bash
 # Also check via CLI
+
 kubectl get ingress -A
 kubectl describe ingress my-app-ingress -n production
 ```
 
-Look for the `Address` field in the describe output — it should show the load balancer IP or hostname. If it's empty, the Ingress Controller isn't assigning an address.
+Look for the `Address` field in the describe output - it should show the load balancer IP or hostname. If it's empty, the Ingress Controller isn't assigning an address.
 
 ## Step 2: Verify the Ingress Controller is Running
 

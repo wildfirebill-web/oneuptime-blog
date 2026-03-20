@@ -1,4 +1,4 @@
-# How to Deploy the ELK Stack via Portainer
+# How to Deploy the ELK Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -159,6 +159,7 @@ output {
 
 ```bash
 # Set kibana_system password
+
 curl -X POST "http://localhost:9200/_security/user/kibana_system/_password" \
   -u elastic:elastic_password \
   -H "Content-Type: application/json" \

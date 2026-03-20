@@ -43,6 +43,7 @@ The structure is preserved, unencrypted values remain plaintext, and the `sops` 
 
 ```bash
 # Download the latest SOPS binary
+
 SOPS_VERSION=$(curl -s https://api.github.com/repos/getsops/sops/releases/latest | grep tag_name | cut -d'"' -f4)
 curl -Lo sops.deb "https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops_${SOPS_VERSION#v}_amd64.deb"
 sudo dpkg -i sops.deb

@@ -14,6 +14,7 @@ Netplan configures bonds under the `bonds` key. Bond parameters like mode and MI
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

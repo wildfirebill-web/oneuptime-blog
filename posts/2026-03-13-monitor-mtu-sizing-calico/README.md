@@ -31,6 +31,7 @@ The correct pod MTU depends on the physical network MTU minus encapsulation over
 
 ```bash
 # Check current MTU configuration in Calico
+
 cilium config view 2>/dev/null || \
   kubectl get configmap calico-config -n kube-system -o yaml | grep "^  veth_mtu"
 

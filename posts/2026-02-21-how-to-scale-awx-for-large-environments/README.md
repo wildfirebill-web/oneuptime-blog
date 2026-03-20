@@ -16,6 +16,7 @@ AWX calculates capacity based on the CPU and memory available on each execution 
 
 ```bash
 # Check current capacity utilization
+
 curl -s -H "Authorization: Bearer ${AWX_TOKEN}" \
   https://awx.example.com/api/v2/instances/ \
   | python3 -c "

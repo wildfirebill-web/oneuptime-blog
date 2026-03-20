@@ -24,6 +24,7 @@ When a client exceeds the threshold, mod_evasive returns a 403 response and can 
 
 ```bash
 # Update packages and install mod_evasive
+
 sudo apt-get update
 sudo apt-get install -y libapache2-mod-evasive
 

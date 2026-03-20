@@ -20,6 +20,7 @@ Use the `Label` directive in the `[Container]` section:
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application with labels
 

@@ -61,6 +61,7 @@ The OpenTelemetry Collector serves as the foundation for log ingestion and routi
 
 ```yaml
 # otel-collector-config.yaml
+
 # OpenTelemetry Collector configuration for log archival pipeline
 
 receivers:

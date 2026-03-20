@@ -236,6 +236,7 @@ curl -X GET "localhost:9200/cluster-east:logs-*,cluster-west:logs-*/_search?pret
 
 ```bash
 # Search all indices on remote cluster
+
 curl -X GET "localhost:9200/cluster-east:*/_search?pretty" -H 'Content-Type: application/json' -d'
 {
   "query": {

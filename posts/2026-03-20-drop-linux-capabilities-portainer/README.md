@@ -14,6 +14,7 @@ Linux capabilities break root privileges into distinct units. Docker grants cont
 
 ```bash
 # Docker grants these capabilities by default:
+
 # CHOWN          - Change file ownership
 # DAC_OVERRIDE   - Bypass file permission checks
 # FSETID         - Set file setuid/setgid bits
@@ -35,7 +36,7 @@ docker inspect my_container --format '{{.HostConfig.CapAdd}} {{.HostConfig.CapDr
 
 ## Step 2: Drop All Capabilities, Add Only What's Needed
 
-The safest approach — start with nothing, add only what your app needs:
+The safest approach - start with nothing, add only what your app needs:
 
 ```yaml
 # docker-compose.yml - Minimal capabilities
@@ -144,7 +145,7 @@ docker run --rm \
 
 ## Step 5: Remove NET_RAW to Prevent Network Sniffing
 
-`NET_RAW` is granted by default but allows raw socket access — a significant risk:
+`NET_RAW` is granted by default but allows raw socket access - a significant risk:
 
 ```yaml
 services:

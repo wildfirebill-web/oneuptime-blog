@@ -16,13 +16,13 @@ Resource limits in Docker Swarm prevent any single service from consuming all av
 - Running Swarm cluster
 - Understanding of Docker resource management concepts
 
-## Resource Management Concepts
+Resource Management Concepts
 
 ### Limits vs Reservations
 
 | Setting | Description | Effect |
 |---------|-------------|--------|
-| **CPU Limit** | Maximum CPU the service can use | Hard cap — cgroup enforcement |
+| **CPU Limit** | Maximum CPU the service can use | Hard cap - cgroup enforcement |
 | **CPU Reservation** | Minimum CPU guaranteed | Used by scheduler for placement |
 | **Memory Limit** | Maximum RAM; task is OOM-killed if exceeded | Hard cap |
 | **Memory Reservation** | Minimum RAM guaranteed | Used by scheduler for placement |
@@ -36,7 +36,7 @@ CPU values are in fractional vCPUs:
 
 ### Memory Units
 
-```
+```text
 128m, 256m, 512m, 1g, 2g, etc.
 ```
 
@@ -46,7 +46,7 @@ CPU values are in fractional vCPUs:
 2. Scroll to the **Resources** section
 3. Set values:
 
-```
+```text
 CPU reservation:   0.25    # Reserve 25% of a CPU
 CPU limit:         0.5     # Cap at 50% of a CPU
 
@@ -121,6 +121,7 @@ When a container exceeds its memory limit, the Linux OOM (Out of Memory) killer 
 
 ```bash
 # Check if a container was OOM-killed
+
 docker inspect <container-id> --format '{{.State.OOMKilled}}'
 # Returns: true or false
 
@@ -148,7 +149,7 @@ docker stats --no-stream --format "{{.Container}}: CPU={{.CPUPerc}}, Mem={{.MemU
 - Set **limit** to 150-200% of normal peak usage
 - Set **reservation** to 50-75% of normal average usage
 
-```
+```text
 Example: API service normally uses 200MB, peaks at 350MB
   Memory limit:       512M    (50% above peak)
   Memory reservation: 128M    (slightly above average)
@@ -171,7 +172,7 @@ The stats view shows:
 
 The Swarm scheduler uses reservations for bin-packing:
 
-```
+```text
 Node worker-01: 4 CPU, 8GB RAM
   Existing reservations: 2 CPU, 4GB RAM used
   Available for scheduling: 2 CPU, 4GB RAM

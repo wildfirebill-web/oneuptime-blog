@@ -111,6 +111,7 @@ def import_grounding_documents(
     return result
 
 # Import company documentation
+
 import_grounding_documents(
     project_id="your-project-id",
     location="global",

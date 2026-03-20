@@ -16,6 +16,7 @@ Monitoring Kafka Connect is essential for maintaining reliable data pipelines. T
 
 ```bash
 # Get Connect cluster info
+
 curl http://localhost:8083/ | jq
 
 # Response:

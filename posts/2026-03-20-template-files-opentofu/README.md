@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, templatefile, Templates, User Data, HCL, Infrastructure as Code
 
-Description: Learn how to use the templatefile() function in OpenTofu to render dynamic configuration files — generating user data scripts, YAML configs, and JSON policies with variable interpolation.
+Description: Learn how to use the templatefile() function in OpenTofu to render dynamic configuration files - generating user data scripts, YAML configs, and JSON policies with variable interpolation.
 
 ## Introduction
 
-The `templatefile()` function renders a file template with variable substitutions. It replaces the deprecated `template_file` data source and is the standard way to generate dynamic content — EC2 user data scripts, Kubernetes manifests, IAM policies, and configuration files.
+The `templatefile()` function renders a file template with variable substitutions. It replaces the deprecated `template_file` data source and is the standard way to generate dynamic content - EC2 user data scripts, Kubernetes manifests, IAM policies, and configuration files.
 
 ## Basic templatefile() Usage
 
 ```hcl
 # Template file: templates/user-data.sh.tpl
+
 # ${variable} syntax for substitution
 
 # main.tf
@@ -211,4 +212,4 @@ resource "aws_instance" "complex" {
 
 ## Conclusion
 
-The `templatefile()` function is the standard way to generate dynamic content in OpenTofu. Use `${variable}` for simple substitutions, `%{ for item in list }...%{ endfor }` for loops, and `%{ if condition }...%{ endif }` for conditionals. Always use `path.module` (not relative paths) for template files inside modules. Prefer `templatefile()` over inline heredocs for multi-line content with complex logic — it keeps `.tf` files clean and makes templates independently readable and testable.
+The `templatefile()` function is the standard way to generate dynamic content in OpenTofu. Use `${variable}` for simple substitutions, `%{ for item in list }...%{ endfor }` for loops, and `%{ if condition }...%{ endif }` for conditionals. Always use `path.module` (not relative paths) for template files inside modules. Prefer `templatefile()` over inline heredocs for multi-line content with complex logic - it keeps `.tf` files clean and makes templates independently readable and testable.

@@ -748,6 +748,7 @@ def main():
 
 
 # Example task handlers
+
 def analyze_code(task: Task) -> dict:
     """Analyze code and return findings."""
     # In a real implementation, this would read and analyze actual files

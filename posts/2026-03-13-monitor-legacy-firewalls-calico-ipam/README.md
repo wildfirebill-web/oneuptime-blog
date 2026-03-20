@@ -32,6 +32,7 @@ Map firewall rules to Calico IP pool CIDRs:
 
 ```bash
 # List all Calico IP pools that the legacy firewall needs to know about
+
 calicoctl get ippools -o yaml | grep -E "name:|cidr:|disabled:"
 
 # Document the mapping between pools and firewall rule purposes

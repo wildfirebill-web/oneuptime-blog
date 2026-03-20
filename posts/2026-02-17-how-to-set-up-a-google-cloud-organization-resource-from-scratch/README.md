@@ -69,6 +69,7 @@ Google needs to verify that you own the domain. The process depends on your doma
 
 ```text
 # Example TXT record to add to your DNS
+
 # Record type: TXT
 # Host: @
 # Value: google-site-verification=XXXXXXXXXXXXXXXXXX

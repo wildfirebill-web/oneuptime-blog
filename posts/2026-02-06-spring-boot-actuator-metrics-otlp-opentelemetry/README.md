@@ -91,6 +91,7 @@ management:
       region: us-east-1
 
 # OpenTelemetry configuration
+
 otel:
   service:
     name: ${spring.application.name}

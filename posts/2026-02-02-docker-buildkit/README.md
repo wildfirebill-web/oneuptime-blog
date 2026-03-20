@@ -50,6 +50,7 @@ Check if BuildKit is active with this command:
 
 ```bash
 # Check current builder
+
 docker buildx ls
 
 # Output shows available builders

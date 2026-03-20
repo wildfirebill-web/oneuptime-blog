@@ -31,6 +31,7 @@ Install Rust and TinyGo for Wasm development (optional if using pre-built module
 
 ```bash
 # Rust
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup target add wasm32-wasi
 

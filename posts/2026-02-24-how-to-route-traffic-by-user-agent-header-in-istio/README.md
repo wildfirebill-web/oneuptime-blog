@@ -189,6 +189,7 @@ You can test with curl by setting a custom User-Agent:
 
 ```bash
 # Simulate a mobile request
+
 kubectl exec deploy/sleep -c sleep -- curl -s -H "User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) Mobile/15E148" http://my-app.default.svc.cluster.local/
 
 # Simulate a Googlebot request

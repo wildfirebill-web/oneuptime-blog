@@ -23,6 +23,7 @@ Before creating VLAN interfaces, the 8021q kernel module must be loaded. Here is
 
 ```yaml
 # load_vlan_module.yml - Load the 802.1Q VLAN kernel module
+
 ---
 - name: Prepare system for VLAN configuration
   hosts: all

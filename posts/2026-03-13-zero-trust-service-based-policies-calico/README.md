@@ -49,6 +49,7 @@ spec:
 
 ```bash
 # Verify service exists and has endpoints
+
 kubectl get service backend-api -n production
 kubectl get endpoints backend-api -n production
 

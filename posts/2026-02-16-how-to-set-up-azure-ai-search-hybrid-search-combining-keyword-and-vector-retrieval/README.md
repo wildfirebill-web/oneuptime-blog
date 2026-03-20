@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Install required packages
+
 pip install azure-search-documents azure-identity openai
 ```
 

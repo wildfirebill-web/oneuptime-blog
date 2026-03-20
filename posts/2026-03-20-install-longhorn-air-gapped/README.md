@@ -23,6 +23,7 @@ On an internet-connected machine, get the list of images for the Longhorn versio
 
 ```bash
 # Download the image list for Longhorn v1.7.0
+
 curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.7.0/deploy/longhorn-images.txt \
   -o longhorn-images.txt
 

@@ -12,7 +12,7 @@ Running WordPress on AWS with OpenTofu provides a scalable, managed infrastructu
 
 ## Architecture
 
-```
+```text
 CloudFront Distribution
       ↓
 Application Load Balancer

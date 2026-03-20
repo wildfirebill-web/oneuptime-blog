@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Local, Conditional Logic, Infrastructure as Code
+Tags: Terraform, HCL, Locals, Conditional Logic, Infrastructure as Code
 
 Description: Learn how to use Terraform locals with conditional expressions, ternary operators, and map lookups to build flexible infrastructure configurations that adapt to different environments.
 
@@ -58,6 +58,7 @@ When you have more than two options, nested ternaries get ugly fast. Use a map l
 
 ```hcl
 # Bad - nested ternaries are hard to read
+
 locals {
   instance_type = var.environment == "production" ? "m5.xlarge" : (var.environment == "staging" ? "m5.large" : (var.environment == "qa" ? "t3.large" : "t3.micro"))
 }

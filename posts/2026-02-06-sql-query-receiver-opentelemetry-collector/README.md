@@ -41,6 +41,7 @@ The SQL Query receiver requires three main components: database connection detai
 
 ```yaml
 # Receivers section - defines how telemetry enters the Collector
+
 receivers:
   # SQL Query receiver for custom database monitoring
   sqlquery:

@@ -20,6 +20,7 @@ This guide covers everything you need to know about working with environment var
 
 ```python
 # basic_env.py
+
 # Reading environment variables with os.environ
 import os
 

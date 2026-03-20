@@ -18,6 +18,7 @@ The simplest use case is making a GET request and checking the response:
 
 ```yaml
 # make a basic GET request and check the status code
+
 ---
 - name: Basic HTTP requests
   hosts: localhost

@@ -27,6 +27,7 @@ my-app/
 
 ```dockerfile
 # Containerfile
+
 FROM docker.io/library/python:3.12-slim
 WORKDIR /app
 COPY app.py .

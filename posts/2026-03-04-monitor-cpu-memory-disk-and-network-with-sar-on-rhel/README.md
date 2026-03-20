@@ -14,6 +14,7 @@ The `sar` command from the sysstat package collects and reports system activity 
 
 ```bash
 # Install sysstat
+
 sudo dnf install -y sysstat
 
 # Enable and start the data collection service

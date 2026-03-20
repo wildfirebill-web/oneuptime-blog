@@ -22,6 +22,7 @@ If Chocolatey is not already installed, run the following in an elevated PowerSh
 
 ```powershell
 # Open PowerShell as Administrator, then run:
+
 Set-ExecutionPolicy Bypass -Scope Process -Force
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))

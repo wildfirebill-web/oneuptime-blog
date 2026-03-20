@@ -25,7 +25,7 @@ Volumes in Harvester are backed by Longhorn, a distributed block storage system 
 3. Click **Create**
 4. Fill in the volume configuration:
 
-```
+```text
 Name:           web-server-data
 Namespace:      default
 Size:           100 Gi
@@ -33,7 +33,7 @@ Storage Class:  longhorn  (default)
 Access Mode:    ReadWriteOnce (for single VM attachment)
 ```
 
-5. Click **Create** — the volume is created immediately
+5. Click **Create** - the volume is created immediately
 
 ## Step 2: Create a Volume via kubectl
 
@@ -41,6 +41,7 @@ Access Mode:    ReadWriteOnce (for single VM attachment)
 
 ```yaml
 # data-volume.yaml
+
 # Create an empty 100 GB data volume for a VM
 
 apiVersion: v1

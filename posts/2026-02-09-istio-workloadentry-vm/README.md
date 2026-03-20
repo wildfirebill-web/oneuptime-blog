@@ -24,6 +24,7 @@ Download the Istio sidecar installation files to your VM:
 
 ```bash
 # On your VM
+
 curl -LO https://storage.googleapis.com/istio-release/releases/1.20.0/deb/istio-sidecar.deb
 sudo dpkg -i istio-sidecar.deb
 ```

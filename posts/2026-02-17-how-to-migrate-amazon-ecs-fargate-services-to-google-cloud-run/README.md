@@ -32,6 +32,7 @@ Document all your Fargate services and their configurations.
 
 ```bash
 # List all ECS clusters
+
 aws ecs list-clusters --output table
 
 # List services in a cluster

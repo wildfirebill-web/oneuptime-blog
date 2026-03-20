@@ -20,6 +20,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 # Add some test data
+
 for i in range(100):
     r.set(f'user:{i}', f'data_{i}')
     r.set(f'session:{i}', f'session_{i}')

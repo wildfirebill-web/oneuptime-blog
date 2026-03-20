@@ -28,6 +28,7 @@ First, create the Key Vault itself:
 data "azurerm_client_config" "current" {}
 
 # Create a Key Vault with RBAC-based access control
+
 resource "azurerm_key_vault" "main" {
   name                       = "kv-myapp-${var.environment}"
   location                   = azurerm_resource_group.main.location

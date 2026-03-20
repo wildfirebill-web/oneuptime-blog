@@ -28,6 +28,7 @@ Start with the high-level status of the failing resource.
 
 ```bash
 # Get the overall status
+
 kubectl get terraform my-failing-resource -n flux-system
 
 # Example failing output:

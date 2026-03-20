@@ -235,6 +235,7 @@ This is where the image size optimization happens. A multi-stage build compiles 
 
 ```dockerfile
 # Stage 1: Build the Go binary
+
 FROM golang:1.22-alpine AS build
 
 WORKDIR /app

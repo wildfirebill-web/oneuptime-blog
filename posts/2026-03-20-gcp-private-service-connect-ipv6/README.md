@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Ensure subnet is dual-stack
+
 gcloud compute networks subnets describe subnet-private \
     --region="$REGION" \
     --project="$PROJECT" \

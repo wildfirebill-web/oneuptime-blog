@@ -26,6 +26,7 @@ Redis PIPE mode is the fastest way to bulk load data. It uses the Redis protocol
 
 ```bash
 # Generate Redis protocol format
+
 cat data.txt | redis-cli --pipe
 
 # With authentication

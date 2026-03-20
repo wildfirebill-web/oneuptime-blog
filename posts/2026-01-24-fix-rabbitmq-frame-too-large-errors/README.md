@@ -37,6 +37,7 @@ flowchart TD
 import pika
 
 # Default frame size is often 131072 bytes (128KB)
+
 # Sending a larger message without proper configuration fails
 
 connection = pika.BlockingConnection(

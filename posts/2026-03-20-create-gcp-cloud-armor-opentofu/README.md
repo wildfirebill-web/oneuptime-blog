@@ -33,7 +33,7 @@ resource "google_compute_security_policy" "main" {
   name        = "myapp-security-policy"
   description = "Security policy for myapp production"
 
-  # Default rule — allow all traffic
+  # Default rule - allow all traffic
   rule {
     action   = "allow"
     priority = "2147483647"  # Maximum value = default rule

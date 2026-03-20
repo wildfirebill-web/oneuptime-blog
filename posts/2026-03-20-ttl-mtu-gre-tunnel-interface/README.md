@@ -14,6 +14,7 @@ GRE tunnels add overhead to packets: the outer IP header (20 bytes) plus GRE hea
 
 ```bash
 # Create GRE tunnel with TTL=255 (maximum)
+
 ip tunnel add gre0 mode gre \
     local 10.0.0.1 \
     remote 10.0.0.2 \
@@ -38,14 +39,14 @@ ip tunnel show gre0
 
 ## Understanding GRE MTU
 
-```
+```text
 Physical MTU:   1500 bytes
 GRE overhead:    -24 bytes (20 IP + 4 GRE headers)
 GRE tunnel MTU: 1476 bytes
 ```
 
 For GRE over IPv6 (6 bytes larger outer header):
-```
+```text
 GRE overhead: -44 bytes (40 IPv6 + 4 GRE)
 GRE tunnel MTU: 1456 bytes
 ```
@@ -97,7 +98,7 @@ ip -d tunnel show gre0
 ## Test for Fragmentation
 
 ```bash
-# Test with a large packet — should work without fragmentation
+# Test with a large packet - should work without fragmentation
 ping -s 1448 -M do -c 3 172.16.0.2
 # -s 1448: payload size (1448 + 20 IP + 8 ICMP = 1476 total, exactly fits GRE tunnel MTU)
 # -M do: don't fragment

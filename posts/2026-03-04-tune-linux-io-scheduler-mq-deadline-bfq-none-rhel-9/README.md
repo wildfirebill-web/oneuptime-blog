@@ -81,6 +81,7 @@ Set mq-deadline for HDDs and none for NVMe:
 
 ```text
 # Set mq-deadline for rotational disks
+
 ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", ATTR{queue/scheduler}="mq-deadline"
 
 # Set none for SSDs

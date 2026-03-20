@@ -39,6 +39,7 @@ First, determine what URL ArgoCD is actually sending to the IdP:
 
 ```bash
 # Get the ArgoCD base URL
+
 kubectl get configmap argocd-cm -n argocd -o jsonpath='{.data.url}'
 echo ""
 ```

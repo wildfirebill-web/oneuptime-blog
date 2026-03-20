@@ -169,6 +169,7 @@ You can find Azure resource IDs through the portal or CLI:
 
 ```bash
 # List all resources in a resource group
+
 az resource list --resource-group production-rg --output table
 
 # Get a specific resource's ID

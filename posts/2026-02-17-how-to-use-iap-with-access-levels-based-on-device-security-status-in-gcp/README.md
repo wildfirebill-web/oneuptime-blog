@@ -34,6 +34,7 @@ Before setting up device-based access levels, you need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable accesscontextmanager.googleapis.com \
     --project=my-project-id
 ```

@@ -12,6 +12,7 @@ ZeroTier is a software-defined networking platform that creates virtual Layer 2 
 
 ```bash
 # Linux (official script)
+
 curl -s https://install.zerotier.com | sudo bash
 
 # Debian/Ubuntu
@@ -44,7 +45,7 @@ ZeroTier can auto-assign a unique-local (`fd00::/8`) address based on the networ
 ZeroTier's 6PLANE mode assigns each node an IPv6 address that encodes routing information:
 
 1. Enable "6PLANE" in network settings
-2. Each node gets a `/80` prefix — allowing that node to further subdivide
+2. Each node gets a `/80` prefix - allowing that node to further subdivide
 3. This enables VM-to-VM connectivity without additional routing configuration
 
 ### Option 3: Public IPv6 Delegation

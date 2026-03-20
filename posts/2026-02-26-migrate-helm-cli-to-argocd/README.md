@@ -35,6 +35,7 @@ Before migrating, capture everything about your current Helm releases:
 
 ```bash
 # List all Helm releases across namespaces
+
 helm list --all-namespaces
 
 # Export the values for each release

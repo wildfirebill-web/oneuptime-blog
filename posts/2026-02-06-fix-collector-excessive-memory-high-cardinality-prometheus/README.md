@@ -29,6 +29,7 @@ Use the Collector's Prometheus scrape target to find problematic metrics:
 
 ```bash
 # Scrape a target and count unique series
+
 curl -s http://your-app:8080/metrics | \
   grep -v "^#" | \
   awk -F'{' '{print $1}' | \

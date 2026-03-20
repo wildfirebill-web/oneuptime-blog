@@ -42,6 +42,7 @@ For ACME-issued certificates (Let's Encrypt, ZeroSSL), revoke through the certif
 # Install acme.sh or certbot for revocation
 
 # Using certbot to revoke Let's Encrypt certificate
+
 certbot revoke --cert-path /path/to/cert.pem \
   --key-path /path/to/privkey.pem \
   --reason keycompromise

@@ -16,6 +16,7 @@ The whole workflow - write Markdown, run a build command, serve static files - i
 
 ```bash
 # Install Python and pip
+
 sudo apt update
 sudo apt install python3 python3-pip python3-venv
 

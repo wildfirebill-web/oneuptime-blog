@@ -316,6 +316,7 @@ Hit the service rapidly from a tenant namespace and verify that rate limiting ki
 
 ```bash
 # Send 200 requests quickly from tenant-a
+
 for i in $(seq 1 200); do
   kubectl exec -n tenant-a deploy/sleep -- \
     curl -s -o /dev/null -w "%{http_code}\n" \

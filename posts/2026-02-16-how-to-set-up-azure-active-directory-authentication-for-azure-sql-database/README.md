@@ -42,6 +42,7 @@ The first step is designating an Azure AD admin for your SQL server. This admin 
 
 ```bash
 # Set an Azure AD admin for the SQL server
+
 az sql server ad-admin create \
     --resource-group myResourceGroup \
     --server myserver \

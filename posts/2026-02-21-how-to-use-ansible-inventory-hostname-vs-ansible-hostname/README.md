@@ -16,6 +16,7 @@ The `inventory_hostname` variable contains the name of the host as it appears in
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     webservers:

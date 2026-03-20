@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, supply-chain, slsa, security, kubernetes
+Tags: Rancher, Supply-Chain, SLSA, Security, Kubernetes
 
 Description: Comprehensive guide to implementing software supply chain security controls in Rancher deployments.
 
@@ -31,6 +31,7 @@ How to Configure Supply Chain Security in Rancher addresses these challenges by 
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

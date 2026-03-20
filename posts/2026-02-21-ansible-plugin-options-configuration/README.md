@@ -139,6 +139,7 @@ Call `set_options()` to load all options, then use `get_option()` to retrieve th
 
 ```python
 # For lookup plugins
+
 class LookupModule(LookupBase):
     def run(self, terms, variables=None, **kwargs):
         # Load options from all sources

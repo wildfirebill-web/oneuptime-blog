@@ -1,4 +1,4 @@
-# How to Troubleshoot RKE2 Installation Failures
+# How to Troubleshoot RKE2 Installation Failures - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ RKE2 installation failures typically occur during service startup, node join, or
 
 ```bash
 # Check if the service is running
+
 systemctl status rke2-server
 # or for agent nodes:
 systemctl status rke2-agent
@@ -107,7 +108,7 @@ journalctl -u rke2-agent -n 100 --no-pager
 
 # Verify the server token matches
 cat /var/lib/rancher/rke2/server/node-token  # on server
-cat /etc/rancher/rke2/config.yaml            # on agent — check token field
+cat /etc/rancher/rke2/config.yaml            # on agent - check token field
 
 # Verify the server URL is reachable from the agent
 curl -k https://<server-ip>:9345/v1-rke2/readyz
@@ -200,6 +201,6 @@ curl -sfL https://get.rke2.io | sh -
 
 ## Best Practices
 
-- Always check port availability and firewall rules before installation — these are the most common causes of failure.
+- Always check port availability and firewall rules before installation - these are the most common causes of failure.
 - Verify system prerequisites (kernel modules, sysctl settings, swap disabled) before starting the installer.
 - For multi-node clusters, always get the first server node fully healthy before joining additional nodes or agents.

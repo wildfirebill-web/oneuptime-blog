@@ -18,6 +18,7 @@ Without a private registry, sharing modules typically means:
 
 ```hcl
 # Git source - works but has downsides
+
 module "vpc" {
   source = "git::https://github.com/acme/terraform-modules.git//modules/vpc?ref=v1.2.0"
 }

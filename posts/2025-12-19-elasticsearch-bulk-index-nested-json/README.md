@@ -103,6 +103,7 @@ from elasticsearch import Elasticsearch, helpers
 import json
 
 # Connect to Elasticsearch
+
 es = Elasticsearch(['http://localhost:9200'])
 
 def prepare_documents(source_data):

@@ -48,6 +48,7 @@ Here is a Deployment with rolling update settings that work well for most applic
 
 ```yaml
 # deployment.yaml - Rolling update configuration for a web application
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

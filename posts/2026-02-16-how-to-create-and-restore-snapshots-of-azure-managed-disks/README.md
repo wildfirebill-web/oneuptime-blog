@@ -25,6 +25,7 @@ A few important details:
 
 ```bash
 # Create a snapshot of an existing managed disk
+
 az snapshot create \
   --name data-disk-snap-20260216 \
   --resource-group my-resource-group \

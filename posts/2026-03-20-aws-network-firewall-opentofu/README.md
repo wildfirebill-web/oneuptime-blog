@@ -20,6 +20,7 @@ AWS Network Firewall is a managed stateful firewall service that provides fine-g
 
 ```hcl
 # Stateless rule group for fast-path traffic decisions
+
 resource "aws_networkfirewall_rule_group" "stateless" {
   capacity = 100
   name     = "stateless-rules"

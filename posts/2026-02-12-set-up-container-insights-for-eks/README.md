@@ -37,6 +37,7 @@ First, create the service account with the necessary permissions:
 
 ```bash
 # Create IRSA for the CloudWatch agent
+
 eksctl create iamserviceaccount \
   --cluster my-cluster \
   --namespace amazon-cloudwatch \

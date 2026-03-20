@@ -73,6 +73,7 @@ Check your current configuration:
 
 ```bash
 # View current endpoint access settings
+
 aws eks describe-cluster --name my-cluster \
   --query "cluster.resourcesVpcConfig.{PublicAccess:endpointPublicAccess,PrivateAccess:endpointPrivateAccess,PublicCIDRs:publicAccessCidrs}"
 ```

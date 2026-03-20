@@ -29,6 +29,7 @@ Map the success rate to a 0-100 score:
 
 ```promql
 # Success rate as a percentage
+
 (
   sum(rate(istio_requests_total{reporter="destination", response_code!~"5.."}[5m])) by (destination_service_name)
   /

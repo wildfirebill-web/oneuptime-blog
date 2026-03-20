@@ -20,6 +20,7 @@ Start with simple field extraction. The root object is `$`, fields use dot notat
 
 ```bash
 # Get pod names
+
 kubectl get pods -o jsonpath='{.items[*].metadata.name}'
 
 # Get first pod's status phase

@@ -36,6 +36,7 @@ When operators set proper owner references on secondary resources, Kubernetes an
 
 ```yaml
 # Example: The operator creates a StatefulSet with ownerReferences
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

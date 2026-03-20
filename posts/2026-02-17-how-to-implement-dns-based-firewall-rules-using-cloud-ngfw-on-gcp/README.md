@@ -30,6 +30,7 @@ First, enable the Cloud NGFW Enterprise API if you have not already done so.
 
 ```bash
 # Enable the Network Security API and Compute Engine API
+
 gcloud services enable networksecurity.googleapis.com
 gcloud services enable compute.googleapis.com
 ```

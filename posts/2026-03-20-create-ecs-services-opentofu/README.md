@@ -29,6 +29,7 @@ resource "aws_ecs_cluster" "main" {
 
 ```hcl
 # Task execution role (used by ECS to pull images and write logs)
+
 resource "aws_iam_role" "task_execution" {
   name = "${var.environment}-ecs-task-execution-role"
 

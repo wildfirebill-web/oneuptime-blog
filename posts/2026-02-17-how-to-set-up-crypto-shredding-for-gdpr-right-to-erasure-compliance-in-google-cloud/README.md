@@ -50,6 +50,7 @@ Start by creating a key ring dedicated to user data encryption.
 
 ```bash
 # Create a key ring for user data encryption keys
+
 gcloud kms keyrings create user-data-keys \
   --location=us-central1 \
   --project=my-kms-project

@@ -18,6 +18,7 @@ When you need to debug networking issues, verify port mappings, or understand a 
 
 ```bash
 # Create a pod with some configuration
+
 podman pod create --name my-pod -p 8080:80
 
 # Inspect the pod

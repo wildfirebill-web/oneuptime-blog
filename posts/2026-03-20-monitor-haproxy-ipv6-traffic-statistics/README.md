@@ -12,6 +12,7 @@ Description: Learn how to monitor HAProxy traffic statistics for IPv6 connection
 # /etc/haproxy/haproxy.cfg
 
 # Stats frontend accessible over IPv6
+
 frontend stats
     bind *:8404
     bind [::]:8404

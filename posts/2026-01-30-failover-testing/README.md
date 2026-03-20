@@ -38,6 +38,7 @@ Before running any failover test, you need a comprehensive plan that covers scop
 
 ```yaml
 # failover-test-plan.yaml
+
 apiVersion: testing.sre/v1
 kind: FailoverTestPlan
 metadata:

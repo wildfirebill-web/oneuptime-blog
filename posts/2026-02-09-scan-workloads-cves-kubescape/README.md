@@ -24,6 +24,7 @@ The Kubescape operator runs continuously in your cluster, performing scheduled s
 
 ```bash
 # Install using Helm
+
 helm repo add kubescape https://kubescape.github.io/helm-charts/
 helm repo update
 

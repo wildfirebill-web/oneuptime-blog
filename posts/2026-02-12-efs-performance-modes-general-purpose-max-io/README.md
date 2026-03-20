@@ -57,6 +57,7 @@ General Purpose (default):
 
 ```bash
 # Create with General Purpose performance mode (default)
+
 aws efs create-file-system \
   --performance-mode generalPurpose \
   --encrypted \

@@ -374,6 +374,7 @@ You can rate limit by API key or other custom headers:
 
 ```yaml
 # In the ratelimit ConfigMap
+
 data:
   config.yaml: |
     domain: production-gateway

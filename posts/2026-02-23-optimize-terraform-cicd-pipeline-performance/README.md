@@ -18,6 +18,7 @@ Before changing anything, understand where time is spent:
 
 ```yaml
 # .github/workflows/terraform-timed.yml
+
 - name: Terraform Init (timed)
   run: |
     START=$(date +%s%N)

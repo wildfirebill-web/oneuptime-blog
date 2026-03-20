@@ -31,6 +31,7 @@ SonarQube is an open-source platform for continuous inspection of code quality. 
 
 ```bash
 # Configure kernel parameters
+
 sudo nano /etc/sysctl.conf
 ```
 

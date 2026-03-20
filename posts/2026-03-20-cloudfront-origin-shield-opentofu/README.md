@@ -26,6 +26,7 @@ Without Origin Shield, each edge location makes its own request to the origin on
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -61,7 +62,7 @@ resource "aws_cloudfront_distribution" "with_origin_shield" {
       origin_keepalive_timeout = 60
     }
 
-    # Enable Origin Shield — choose the region closest to your origin
+    # Enable Origin Shield - choose the region closest to your origin
     origin_shield {
       enabled              = true
       origin_shield_region = var.origin_shield_region  # e.g., "us-west-2"
@@ -108,7 +109,7 @@ data "aws_acm_certificate" "site" {
 ```hcl
 # variables.tf
 variable "origin_shield_region" {
-  description = "Origin Shield region — pick the AWS region closest to your origin"
+  description = "Origin Shield region - pick the AWS region closest to your origin"
   type        = string
 
   # Valid values: us-east-1, us-east-2, us-west-2, ap-south-1,
@@ -147,15 +148,15 @@ resource "aws_cloudwatch_metric_alarm" "origin_shield_requests" {
     Region         = "Global"
   }
 
-  alarm_description = "More requests than expected are reaching the origin — check Origin Shield cache hit rate"
+  alarm_description = "More requests than expected are reaching the origin - check Origin Shield cache hit rate"
   alarm_actions     = [var.alert_sns_topic_arn]
 }
 ```
 
 ## Best Practices
 
-- Choose the Origin Shield region closest to your origin, not to your users — the goal is to minimize origin-to-Shield latency.
-- Origin Shield adds cost ($0.0080/10,000 HTTP requests) — calculate break-even point based on your origin egress cost savings.
-- Monitor the `OriginShieldHit` metric to measure Shield effectiveness — aim for a hit rate above 70%.
+- Choose the Origin Shield region closest to your origin, not to your users - the goal is to minimize origin-to-Shield latency.
+- Origin Shield adds cost ($0.0080/10,000 HTTP requests) - calculate break-even point based on your origin egress cost savings.
+- Monitor the `OriginShieldHit` metric to measure Shield effectiveness - aim for a hit rate above 70%.
 - Use Origin Shield with high-traffic, slow-changing content (product images, documentation) for maximum benefit.
-- Combine Origin Shield with a long TTL cache policy — Shield only helps when content is actually cached.
+- Combine Origin Shield with a long TTL cache policy - Shield only helps when content is actually cached.

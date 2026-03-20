@@ -32,6 +32,7 @@ sudo nano /etc/sssd/sssd.conf
 ```ini
 [sssd]
 # List all configured domains
+
 domains = example.com
 config_file_version = 2
 services = nss, pam

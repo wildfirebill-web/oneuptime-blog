@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, pf, Firewall, BSD
+Tags: IPv6, macOS, Pf, Firewall, BSD
 
 Description: Learn how to configure IPv6 firewall rules on macOS using pf (Packet Filter), including configuration file syntax, IPv6 address filtering, ICMPv6 rules, and persistent configuration.
 
@@ -14,6 +14,7 @@ macOS uses pf (Packet Filter), the same BSD firewall as OpenBSD and FreeBSD. IPv
 
 ```bash
 # Check if pf is enabled
+
 sudo pfctl -s info | grep Status
 
 # Enable pf (disabled by default on macOS)
@@ -32,7 +33,7 @@ sudo pfctl -s rules | grep inet6
 ## Basic pf.conf Configuration
 
 ```bash
-# /etc/pf.conf — macOS IPv6 firewall configuration
+# /etc/pf.conf - macOS IPv6 firewall configuration
 
 # Define interfaces
 ext_if = "en0"    # External/WAN interface
@@ -59,7 +60,7 @@ block all
 pass quick on lo0
 
 # ==== ICMPv6 Rules (RFC 4890) ====
-# Packet Too Big — NEVER block (required for PMTUD)
+# Packet Too Big - NEVER block (required for PMTUD)
 pass in quick inet6 proto icmp6 icmp6-type 2
 
 # Essential error reporting
@@ -80,7 +81,7 @@ pass in inet6 proto icmp6 icmp6-type 128
 block in quick inet6 from <bogon_ipv6>
 
 # ==== Stateful Rules ====
-# Allow outbound — keep state for return traffic
+# Allow outbound - keep state for return traffic
 pass out on $ext_if inet6 keep state
 
 # Allow established inbound (handled by state table)

@@ -35,6 +35,7 @@ Get the AlloyDB instance URI:
 
 ```bash
 # Get the full instance URI for the Auth Proxy
+
 gcloud alloydb instances describe my-primary \
   --cluster=my-alloydb-cluster \
   --region=us-central1 \

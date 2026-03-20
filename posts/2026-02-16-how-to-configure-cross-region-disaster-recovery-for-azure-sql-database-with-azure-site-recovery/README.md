@@ -33,6 +33,7 @@ For most production scenarios, I recommend auto-failover groups. Manual failover
 
 ```bash
 # Variables
+
 RESOURCE_GROUP="rg-sql-production"
 PRIMARY_SERVER="sql-primary-eastus"
 SECONDARY_SERVER="sql-secondary-westus"

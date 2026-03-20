@@ -18,6 +18,7 @@ The most obvious symptom is an error message from the wrong tool:
 
 ```text
 # Expected Kustomize, got Helm
+
 ComparisonError: failed to load initial state of resource Deployment:
   helm template . --name-template my-app: Error: Chart.yaml file is missing
 

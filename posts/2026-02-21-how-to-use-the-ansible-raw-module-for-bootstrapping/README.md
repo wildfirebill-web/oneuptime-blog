@@ -27,6 +27,7 @@ The classic bootstrapping scenario is installing Python on a brand new server.
 
 ```yaml
 # bootstrap_python.yml - Install Python on a fresh host
+
 ---
 - name: Bootstrap Python on new hosts
   hosts: new_servers

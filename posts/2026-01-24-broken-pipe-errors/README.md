@@ -38,6 +38,7 @@ The most common broken pipe scenario is when SSH connections timeout due to inac
 
 ```bash
 # Example error message
+
 Write failed: Broken pipe
 client_loop: send disconnect: Broken pipe
 ```

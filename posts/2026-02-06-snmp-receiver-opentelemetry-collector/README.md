@@ -71,6 +71,7 @@ Here's a minimal configuration to monitor a network switch using SNMP v2c:
 
 ```yaml
 # receivers: Define how telemetry enters the Collector
+
 receivers:
   # SNMP receiver polls network devices
   snmp:

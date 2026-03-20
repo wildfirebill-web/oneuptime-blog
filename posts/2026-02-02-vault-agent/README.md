@@ -42,6 +42,7 @@ The following command downloads and installs Vault, which includes the Agent:
 
 ```bash
 # macOS
+
 brew tap hashicorp/tap
 brew install hashicorp/tap/vault
 

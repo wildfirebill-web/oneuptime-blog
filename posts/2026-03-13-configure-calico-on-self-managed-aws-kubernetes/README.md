@@ -29,6 +29,7 @@ Initialize the cluster with a pod CIDR that doesn't overlap with the AWS VPC.
 
 ```bash
 # On the control plane node - initialize kubeadm with the pod CIDR
+
 # Use a CIDR that doesn't overlap with your VPC or other networks
 sudo kubeadm init \
   --pod-network-cidr=192.168.0.0/16 \

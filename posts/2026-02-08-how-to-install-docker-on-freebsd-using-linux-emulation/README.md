@@ -29,6 +29,7 @@ The most reliable way to run Docker on FreeBSD is to run a Linux VM using `bhyve
 
 ```bash
 # Install the vm-bhyve management tool and required firmware
+
 pkg install vm-bhyve grub2-bhyve
 ```
 

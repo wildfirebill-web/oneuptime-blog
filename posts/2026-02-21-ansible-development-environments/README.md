@@ -14,6 +14,7 @@ Every developer who has joined a new team knows the pain: spend the first day or
 
 ```yaml
 # roles/devenv/defaults/main.yml - Development environment configuration
+
 devenv_user: "{{ ansible_user }}"
 devenv_home: "/home/{{ devenv_user }}"
 

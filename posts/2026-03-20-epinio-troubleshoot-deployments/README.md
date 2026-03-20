@@ -21,6 +21,7 @@ How to Troubleshoot Epinio Application Deployment Failures demonstrates how Epin
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

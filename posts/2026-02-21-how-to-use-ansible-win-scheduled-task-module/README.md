@@ -16,6 +16,7 @@ Here is a basic task that runs a PowerShell script every day at midnight.
 
 ```yaml
 # simple-task.yml - Create a basic scheduled task
+
 ---
 - name: Create scheduled tasks
   hosts: windows_servers

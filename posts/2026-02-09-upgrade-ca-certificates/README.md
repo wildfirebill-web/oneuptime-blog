@@ -27,6 +27,7 @@ Before rotating, examine your current certificate status.
 echo "Checking Kubernetes certificates..."
 
 # Check API server certificate
+
 echo "API Server certificate:"
 kubectl get pod -n kube-system -l component=kube-apiserver -o yaml | \
   grep -A 5 "tls-cert-file"

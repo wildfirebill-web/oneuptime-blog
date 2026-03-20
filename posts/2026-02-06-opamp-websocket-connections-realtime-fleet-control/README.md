@@ -93,6 +93,7 @@ Configure the OpAMP supervisor to connect via WebSocket:
 
 ```yaml
 # supervisor.yaml
+
 server:
   # Use ws:// for development, wss:// for production
   endpoint: wss://opamp-server.internal:4320/v1/opamp

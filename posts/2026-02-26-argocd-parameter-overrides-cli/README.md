@@ -16,6 +16,7 @@ Before using parameter overrides, authenticate with your ArgoCD server:
 
 ```bash
 # Interactive login
+
 argocd login argocd.example.com --grpc-web
 
 # Token-based login for CI/CD

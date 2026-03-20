@@ -184,6 +184,7 @@ Apply the configuration and verify it:
 
 ```bash
 # Apply the machine configuration
+
 talosctl apply-config --nodes 10.0.0.5 --file worker.yaml
 
 # Verify containerd accepted the configuration

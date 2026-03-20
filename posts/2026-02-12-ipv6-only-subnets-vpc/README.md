@@ -20,6 +20,7 @@ Add an IPv6 CIDR to your VPC:
 
 ```bash
 # Associate an Amazon-provided IPv6 CIDR block
+
 aws ec2 associate-vpc-cidr-block \
   --vpc-id vpc-abc123 \
   --amazon-provided-ipv6-cidr-block

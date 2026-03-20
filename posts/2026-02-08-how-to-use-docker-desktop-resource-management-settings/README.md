@@ -26,6 +26,7 @@ For a machine with 8 cores, the default allocation is 4 cores for Docker. This w
 
 ```bash
 # Check how many CPUs Docker sees inside the VM
+
 docker info --format '{{.NCPU}}'
 
 # Run a CPU-intensive build and monitor usage
@@ -219,7 +220,7 @@ docker stats --no-stream --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\
 docker stats --no-stream --format '{{.Name}},{{.CPUPerc}},{{.MemUsage}}' > docker-stats.csv
 ```
 
-## Resource Profiles for Different Scenarios
+Resource Profiles for Different Scenarios
 
 Here are battle-tested configurations for common development scenarios.
 

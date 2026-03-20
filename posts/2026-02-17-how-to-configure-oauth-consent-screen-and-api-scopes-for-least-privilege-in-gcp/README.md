@@ -37,6 +37,7 @@ Always prefer narrow scopes. They limit the blast radius if your application or 
 
 ```bash
 # Configure the OAuth consent screen brand
+
 # This sets up the application name, support email, and developer contact
 gcloud alpha iap oauth-brands create \
     --application_title="My Internal App" \

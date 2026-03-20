@@ -119,6 +119,7 @@ For event-driven pipelines triggered by Cloud Functions, idempotency requires tr
 
 ```python
 # Cloud Function: idempotent event processor
+
 # Uses a deduplication table to track processed events
 from google.cloud import bigquery
 from google.cloud import firestore

@@ -23,6 +23,7 @@ Check that your Longhorn StorageClass allows expansion:
 
 ```bash
 # Check the StorageClass for allowVolumeExpansion
+
 kubectl get storageclass longhorn -o yaml | grep allowVolumeExpansion
 # Should show: allowVolumeExpansion: true
 ```
@@ -182,7 +183,7 @@ kubectl get nodes.longhorn.io -n longhorn-system -o yaml | grep -A 5 storageAvai
 
 ## Important Notes
 
-- Longhorn only supports **expanding** volumes — you cannot shrink a volume
+- Longhorn only supports **expanding** volumes - you cannot shrink a volume
 - Expansion requires that the new size is strictly larger than the current size
 - Online expansion requires the volume to be attached to a node
 - The filesystem is automatically resized as part of the online expansion process

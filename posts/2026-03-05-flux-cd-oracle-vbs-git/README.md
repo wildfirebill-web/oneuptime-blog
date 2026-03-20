@@ -36,6 +36,7 @@ Generate an SSH key pair that Flux will use to authenticate with your VBS Git re
 
 ```bash
 # Generate an Ed25519 SSH key pair for Flux
+
 ssh-keygen -t ed25519 -C "flux-vbs-deploy-key" -f flux-vbs-key -N ""
 
 # Display the public key

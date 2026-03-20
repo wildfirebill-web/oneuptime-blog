@@ -29,6 +29,7 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Set the service name explicitly
+
 ENV OTEL_SERVICE_NAME=order-service
 
 ENTRYPOINT ["dotnet", "OrderService.dll"]

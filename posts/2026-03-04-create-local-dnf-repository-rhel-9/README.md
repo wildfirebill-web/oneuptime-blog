@@ -26,6 +26,7 @@ You need a server that will host the repository. Install the required tools:
 
 ```bash
 # Install createrepo_c for generating repo metadata
+
 sudo dnf install -y createrepo_c
 
 # Install httpd for serving the repo over HTTP

@@ -71,6 +71,7 @@ sequenceDiagram
 
 ```bash
 # Enable the database secrets engine at the default path.
+
 # This engine manages dynamic credential generation.
 vault secrets enable database
 ```

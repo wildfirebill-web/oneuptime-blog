@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, VPN, StrongSwan, IKEv2, IPsec
+Tags: Ubuntu, VPN, strongSwan, IKEv2, IPsec
 
 Description: Step-by-step guide to deploying an IKEv2 VPN server on Ubuntu using strongSwan, with certificate-based authentication compatible with Windows, macOS, iOS, and Android clients.
 
@@ -21,6 +21,7 @@ IKEv2 is the modern standard for IPsec VPN negotiation. It is faster than IKEv1,
 
 ```bash
 # Install strongSwan and the certificate utilities
+
 sudo apt update
 sudo apt install -y strongswan strongswan-pki libcharon-extra-plugins libcharon-extauth-plugins
 

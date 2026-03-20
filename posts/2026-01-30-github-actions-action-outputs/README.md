@@ -98,6 +98,7 @@ When building a custom action, declare outputs in your `action.yml`:
 
 ```yaml
 # action.yml
+
 name: 'Build and Tag'
 description: 'Builds the project and outputs version info'
 

@@ -33,6 +33,7 @@ flowchart TD
 
 ```ini
 # inventory/restore.ini
+
 [restore_targets]
 db-restore ansible_host=10.0.9.50
 

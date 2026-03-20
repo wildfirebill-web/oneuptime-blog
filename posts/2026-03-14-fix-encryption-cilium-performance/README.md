@@ -28,6 +28,7 @@ This guide covers the specific steps for managing encryption performance in Cili
 
 ```bash
 # Check hardware crypto support
+
 grep -c aes /proc/cpuinfo  # For IPsec AES-GCM
 grep -c -E "avx|ssse3" /proc/cpuinfo  # For WireGuard ChaCha20
 

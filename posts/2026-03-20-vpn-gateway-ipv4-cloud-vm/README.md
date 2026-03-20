@@ -16,12 +16,13 @@ WireGuard is the modern choice for a VPN gateway:
 - Simple configuration (a few lines vs hundreds for OpenVPN)
 - High performance (kernel-native since Linux 5.6)
 - Cryptographically strong (Curve25519, ChaCha20, BLAKE2)
-- Stateless — easy to audit and reason about
+- Stateless - easy to audit and reason about
 
 ## Step 1: Install WireGuard on the Cloud VM
 
 ```bash
 # Ubuntu 20.04+
+
 sudo apt-get update && sudo apt-get install -y wireguard
 
 # Generate server keys
@@ -48,7 +49,7 @@ PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; \
            iptables -D FORWARD -o wg0 -j ACCEPT; \
            iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 
-# Client 1 — laptop
+# Client 1 - laptop
 [Peer]
 PublicKey = <CLIENT1_PUBLIC_KEY>
 AllowedIPs = 10.200.0.2/32                 # IP assigned to this client

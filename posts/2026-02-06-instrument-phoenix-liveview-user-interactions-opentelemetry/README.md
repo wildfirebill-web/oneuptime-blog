@@ -664,6 +664,7 @@ Add to your application.ex:
 
 ```elixir
 # In application.ex start/2
+
 MyAppWeb.LiveViewMetrics.setup()
 ```
 

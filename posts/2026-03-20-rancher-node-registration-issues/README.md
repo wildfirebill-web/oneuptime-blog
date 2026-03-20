@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Troubleshooting, Nodes
+Tags: Rancher, Kubernetes, Troubleshooting, Node
 
 Description: Diagnose and resolve node registration failures in Rancher, including token mismatches, network connectivity, and kubelet configuration issues.
 
@@ -21,7 +21,8 @@ When adding nodes to a Rancher-managed cluster, the node must successfully execu
 
 ```bash
 # In Rancher UI: Cluster → Registration → Node Command
-# Copy the command — it contains an embedded token tied to the cluster
+
+# Copy the command - it contains an embedded token tied to the cluster
 
 # The command looks like:
 sudo docker run -d --privileged --restart=unless-stopped \
@@ -149,4 +150,4 @@ sudo /usr/local/bin/k3s-uninstall.sh    # For K3s
 
 ## Conclusion
 
-Node registration issues in Rancher are typically caused by network connectivity problems, token expiration, hostname conflicts, or missing kernel modules. By methodically checking each layer — network, logs, hostname, and system prerequisites — you can quickly identify and resolve the issue and successfully join the node to your cluster.
+Node registration issues in Rancher are typically caused by network connectivity problems, token expiration, hostname conflicts, or missing kernel modules. By methodically checking each layer - network, logs, hostname, and system prerequisites - you can quickly identify and resolve the issue and successfully join the node to your cluster.

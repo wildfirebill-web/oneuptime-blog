@@ -64,6 +64,7 @@ eksctl create iamserviceaccount \
 
 ```yaml
 # infrastructure/sources/fluent-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -18,6 +18,7 @@ Packer is a single binary. Install it from HashiCorp's official repository:
 
 ```bash
 # Add HashiCorp GPG key
+
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 # Add the official HashiCorp Linux repository

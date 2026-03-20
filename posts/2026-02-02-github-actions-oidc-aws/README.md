@@ -53,6 +53,7 @@ The following command creates the GitHub OIDC identity provider in your AWS acco
 
 ```bash
 # Create the OIDC identity provider
+
 # The thumbprint is GitHub's certificate thumbprint - AWS uses it to validate tokens
 aws iam create-open-id-connect-provider \
   --url https://token.actions.githubusercontent.com \

@@ -32,6 +32,7 @@ Before migrating, figure out what format your connections are using:
 
 ```bash
 # List all connections and their file paths
+
 nmcli -f NAME,FILENAME connection show
 ```
 

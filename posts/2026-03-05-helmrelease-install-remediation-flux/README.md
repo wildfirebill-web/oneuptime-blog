@@ -151,6 +151,7 @@ Check the HelmRelease conditions to see the current install state:
 
 ```bash
 # View the HelmRelease status and conditions
+
 kubectl get helmrelease my-application -n default -o yaml
 
 # Check for install-related events

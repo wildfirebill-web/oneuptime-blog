@@ -30,6 +30,7 @@ Before planning an upgrade, document your current state:
 
 ```bash
 # Record current Kubernetes version across all components
+
 kubectl version --short 2>/dev/null || kubectl version
 kubectl get nodes -o custom-columns=\
 NAME:.metadata.name,\

@@ -71,6 +71,7 @@ Install terraform-ls separately for the best experience:
 
 ```bash
 # macOS
+
 brew install hashicorp/tap/terraform-ls
 
 # Linux
@@ -87,7 +88,7 @@ Install the HashiCorp Terraform/HCL plugin:
 
 Configure the plugin to use OpenTofu:
 
-```
+```text
 Settings → Languages & Frameworks → Terraform and HCL
   → Terraform binary path: /usr/local/bin/tofu
   → Enable formatting on save: ✓
@@ -202,4 +203,4 @@ Commit this to share extension recommendations with your team:
 
 ## Conclusion
 
-The HashiCorp Terraform extension for VS Code and the JetBrains Terraform plugin both work with OpenTofu by pointing the language server path to the `tofu` binary. The terraform-ls language server provides the most features — auto-completion, go-to-definition, hover documentation, and inline validation — across all editors that support LSP. Commit `.vscode/extensions.json` and `.vscode/settings.json` to ensure the whole team uses the same configuration.
+The HashiCorp Terraform extension for VS Code and the JetBrains Terraform plugin both work with OpenTofu by pointing the language server path to the `tofu` binary. The terraform-ls language server provides the most features - auto-completion, go-to-definition, hover documentation, and inline validation - across all editors that support LSP. Commit `.vscode/extensions.json` and `.vscode/settings.json` to ensure the whole team uses the same configuration.

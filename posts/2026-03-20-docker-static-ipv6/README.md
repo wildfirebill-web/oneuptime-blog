@@ -8,12 +8,13 @@ Description: Assign fixed IPv6 addresses to Docker containers using --ip6 flag a
 
 ## Introduction
 
-Docker allows assigning static IPv6 addresses to containers when they connect to user-defined networks with IPv6 enabled. Static IPv6 assignment is useful for services that need stable addresses — such as databases, DNS servers, or internal services referenced by IPv6 address. The address must be within the network's configured IPv6 subnet range.
+Docker allows assigning static IPv6 addresses to containers when they connect to user-defined networks with IPv6 enabled. Static IPv6 assignment is useful for services that need stable addresses - such as databases, DNS servers, or internal services referenced by IPv6 address. The address must be within the network's configured IPv6 subnet range.
 
 ## Assign Static IPv6 with docker run
 
 ```bash
 # First, create a network with IPv6 subnet
+
 docker network create \
     --driver bridge \
     --ipv6 \

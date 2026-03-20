@@ -73,6 +73,7 @@ char _license[] SEC("license") = "GPL";
 
 ```bash
 # Compile the BPF program
+
 clang -O2 -target bpf -c transparent_redirect.bpf.c -o transparent_redirect.bpf.o
 
 # Load and attach to the cgroup (for system-wide redirection)

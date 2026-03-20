@@ -28,6 +28,7 @@ When Prometheus cannot collect Cilium metrics:
 
 ```bash
 # Check Prometheus targets
+
 kubectl port-forward -n monitoring svc/prometheus 9090:9090 &
 curl -s http://localhost:9090/api/v1/targets | jq '.data.activeTargets[] | select(.labels.job | contains("cilium")) | {job: .labels.job, health: .health, lastError: .lastError}'
 

@@ -49,6 +49,7 @@ flowchart TD
 
 ```bash
 # List all tracked connections
+
 kubectl exec -n kube-system ds/cilium -- \
   cilium-dbg bpf ct list global | head -20
 

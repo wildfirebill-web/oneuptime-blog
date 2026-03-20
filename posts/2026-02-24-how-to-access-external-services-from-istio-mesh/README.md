@@ -315,6 +315,7 @@ After creating ServiceEntry resources, verify they are working:
 
 ```bash
 # Check that the ServiceEntry is registered
+
 kubectl get serviceentry
 
 # Test from a pod

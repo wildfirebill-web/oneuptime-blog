@@ -1,4 +1,4 @@
-# How to Use the format Function in OpenTofu
+# How to Use the format Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,8 +16,8 @@ The `format` function in OpenTofu creates formatted strings using printf-style f
 format(spec, values...)
 ```
 
-- **spec** — a format string with `%` placeholders
-- **values** — one argument per placeholder
+- **spec** - a format string with `%` placeholders
+- **values** - one argument per placeholder
 - Returns the formatted string
 
 ## Format Specifiers

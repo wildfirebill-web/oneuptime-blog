@@ -42,6 +42,7 @@ infrastructure/
 
 ```yaml
 # infrastructure/storage/minio/tenants/production/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

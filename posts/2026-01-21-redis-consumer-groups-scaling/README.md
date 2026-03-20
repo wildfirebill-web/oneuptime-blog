@@ -183,6 +183,7 @@ class GroupConsumer:
         logger.info(f"Consumer {self.consumer_name} stopped")
 
 # Usage
+
 r = redis.Redis()
 
 # Create group

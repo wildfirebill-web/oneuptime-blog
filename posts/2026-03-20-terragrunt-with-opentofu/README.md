@@ -20,6 +20,7 @@ Learn how to use Terragrunt to keep OpenTofu configurations DRY with remote stat
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

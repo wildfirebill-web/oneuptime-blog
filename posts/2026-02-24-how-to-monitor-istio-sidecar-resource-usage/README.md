@@ -28,6 +28,7 @@ This gives you a quick snapshot, but for real monitoring you need Prometheus met
 
 ```promql
 # CPU usage per sidecar
+
 sum(rate(container_cpu_usage_seconds_total{container="istio-proxy"}[5m])) by (pod, namespace)
 
 # Total CPU consumed by all sidecars

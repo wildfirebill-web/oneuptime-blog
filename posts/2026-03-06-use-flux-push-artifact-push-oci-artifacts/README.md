@@ -25,6 +25,7 @@ Before you begin, ensure you have the following:
 
 ```bash
 # Verify Flux CLI installation
+
 flux version --client
 
 # Expected output:

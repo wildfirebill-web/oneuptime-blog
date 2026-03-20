@@ -111,6 +111,7 @@ Edit `/etc/iscsi/iscsid.conf`:
 
 ```bash
 # Forward CHAP (initiator credentials)
+
 node.session.auth.authmethod = CHAP
 node.session.auth.username = iscsiuser
 node.session.auth.password = SecurePass123

@@ -35,6 +35,7 @@ For example, if you want to view logs on a worker node:
 
 ```bash
 # Your workstation connects to the endpoint (control plane)
+
 # The endpoint proxies the request to the target node (worker)
 talosctl logs kubelet --endpoints 192.168.1.101 --nodes 192.168.1.110
 ```

@@ -14,6 +14,7 @@ OpenTofu follows a regular release cadence with new minor versions approximately
 
 ```bash
 # Subscribe to GitHub releases (click "Watch" > "Custom" > "Releases")
+
 # https://github.com/opentofu/opentofu/releases
 
 # Check the latest release via CLI
@@ -123,7 +124,7 @@ terraform {
 
 The OpenTofu blog publishes release announcements with feature highlights:
 
-```
+```text
 https://opentofu.org/blog
 ```
 

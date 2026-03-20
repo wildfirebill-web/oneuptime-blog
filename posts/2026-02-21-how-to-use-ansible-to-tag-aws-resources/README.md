@@ -36,6 +36,7 @@ AWS lets you use tags as conditions in IAM policies, which means you can say thi
 
 ```bash
 # Install the AWS collection
+
 ansible-galaxy collection install amazon.aws
 ```
 

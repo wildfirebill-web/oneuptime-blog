@@ -24,6 +24,7 @@ Before running maintenance, check the current state of your etcd database:
 
 ```bash
 # Check etcd status on all control plane nodes
+
 talosctl -n 192.168.1.10,192.168.1.11,192.168.1.12 etcd status
 
 # The output shows:

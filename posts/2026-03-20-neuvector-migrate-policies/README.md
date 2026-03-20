@@ -8,7 +8,7 @@ Description: Export and import NeuVector security policies between Kubernetes cl
 
 ## Introduction
 
-When managing multiple Kubernetes clusters — development, staging, and production — you need a reliable way to migrate security policies between them. NeuVector supports policy export and import through both the UI and REST API, enabling you to maintain consistent security configurations across clusters.
+When managing multiple Kubernetes clusters - development, staging, and production - you need a reliable way to migrate security policies between them. NeuVector supports policy export and import through both the UI and REST API, enabling you to maintain consistent security configurations across clusters.
 
 ## Migration Scenarios
 
@@ -30,6 +30,7 @@ Common migration use cases:
 
 ```bash
 # Export all policies from source cluster
+
 SOURCE_URL="https://neuvector-source.company.com:8443"
 SOURCE_TOKEN="source-cluster-token"
 

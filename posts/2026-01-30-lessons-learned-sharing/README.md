@@ -26,6 +26,7 @@ Hold incident reviews within 48-72 hours of resolution while details remain fres
 
 ```yaml
 # Example: Incident Review Meeting Template
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

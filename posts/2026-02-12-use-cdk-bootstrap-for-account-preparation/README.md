@@ -27,6 +27,7 @@ The simplest bootstrap command targets your default account and region.
 
 ```bash
 # Bootstrap using default credentials and region
+
 cdk bootstrap
 
 # Or be explicit about account and region

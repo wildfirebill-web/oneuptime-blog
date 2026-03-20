@@ -36,6 +36,7 @@ Create the Service Bus namespace and queues with appropriate settings:
 
 ```bash
 # Create the Service Bus namespace
+
 az servicebus namespace create \
   --name sb-saas-jobs \
   --resource-group rg-saas-app \

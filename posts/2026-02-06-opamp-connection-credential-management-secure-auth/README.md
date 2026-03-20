@@ -26,6 +26,7 @@ Start by creating a CA that will sign both server and client certificates:
 
 ```bash
 # Generate the CA private key
+
 openssl genrsa -out ca-key.pem 4096
 
 # Generate the CA certificate (valid for 5 years)

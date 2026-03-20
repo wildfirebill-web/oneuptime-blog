@@ -18,6 +18,7 @@ Let's start with a simple Bokeh application. First, create the application file:
 
 ```python
 # app.py - interactive Bokeh scatter plot with hover tooltips
+
 from bokeh.plotting import figure, curdoc
 from bokeh.models import ColumnDataSource, HoverTool
 from bokeh.layouts import column

@@ -12,8 +12,9 @@ Juniper EX series switches running Junos support IPv6 for both layer-2 (VLAN) an
 
 ## Step 1: Configure VLAN and IRB for IPv6
 
-```
+```text
 # Create a VLAN
+
 set vlans EMPLOYEES vlan-id 10
 set vlans EMPLOYEES l3-interface irb.10
 
@@ -24,7 +25,7 @@ set interfaces irb unit 10 description "Employee VLAN L3 Gateway"
 
 ## Step 2: Configure Access and Trunk Ports
 
-```
+```text
 # Access port for employee VLAN
 set interfaces ge-0/0/1 unit 0 family ethernet-switching
 set interfaces ge-0/0/1 unit 0 family ethernet-switching interface-mode access
@@ -37,7 +38,7 @@ set interfaces ge-0/0/47 unit 0 family ethernet-switching vlan members all
 
 ## Step 3: Enable IPv6 Routing on the Switch
 
-```
+```text
 # Enable IPv6 routing
 set routing-options rib inet6.0 static route ::/0 next-hop 2001:db8:0:1::1
 
@@ -48,7 +49,7 @@ set protocols ospf3 area 0.0.0.0 interface irb.20
 
 ## Step 4: Configure Router Advertisements on IRB
 
-```
+```text
 # Enable RA on the IRB interface for VLAN 10
 set protocols router-advertisement interface irb.10 max-advertisement-interval 100
 set protocols router-advertisement interface irb.10 min-advertisement-interval 30
@@ -68,7 +69,7 @@ set protocols router-advertisement interface irb.10 dns-server-address 2001:db8:
 
 RA Guard prevents rogue Router Advertisements from untrusted switch ports:
 
-```
+```text
 # Create RA Guard policies
 set forwarding-options ipv6-ra-guard policy TRUSTED-RA-POLICY role router
 set forwarding-options ipv6-ra-guard policy UNTRUSTED-RA-POLICY role host
@@ -83,7 +84,7 @@ set interfaces ge-0/0/2 unit 0 family ethernet-switching ipv6-ra-guard UNTRUSTED
 
 ### DHCPv6 Snooping
 
-```
+```text
 # Enable DHCPv6 snooping for VLAN 10
 set vlans EMPLOYEES dhcpv6-snooping
 set vlans EMPLOYEES dhcpv6-snooping trusted ge-0/0/47.0
@@ -91,7 +92,7 @@ set vlans EMPLOYEES dhcpv6-snooping trusted ge-0/0/47.0
 
 ## Step 6: Configure IPv6 ACL on IRB
 
-```
+```text
 # Firewall filter for IRB interface
 set firewall family inet6 filter IRB-PROTECT term ALLOW-ICMPV6 from protocol icmp6
 set firewall family inet6 filter IRB-PROTECT term ALLOW-ICMPV6 then accept
@@ -105,7 +106,7 @@ set interfaces irb unit 10 family inet6 filter input IRB-PROTECT
 
 ## Verification Commands
 
-```
+```text
 # Show IPv6 addresses on IRB interfaces
 show interfaces irb detail | match inet6
 

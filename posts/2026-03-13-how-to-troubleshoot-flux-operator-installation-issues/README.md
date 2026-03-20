@@ -41,6 +41,7 @@ If you see `ImagePullBackOff`, the cluster cannot pull the operator image. Commo
 
 ```yaml
 # Check if the image exists and is accessible
+
 # Verify the Helm values for the correct image reference
 image:
   repository: ghcr.io/controlplaneio-fluxcd/flux-operator

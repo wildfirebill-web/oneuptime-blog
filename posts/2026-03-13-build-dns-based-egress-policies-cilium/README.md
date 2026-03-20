@@ -93,6 +93,7 @@ kubectl apply -f allow-dns.yaml
 kubectl apply -f allow-github-api.yaml
 
 # Verify from pod
+
 kubectl exec -it <pod-name> -- curl -I https://api.github.com
 ```
 

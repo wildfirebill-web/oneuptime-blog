@@ -12,7 +12,7 @@ RFC 7217 "Stable and Opaque IIDs with IPv6 SLAAC" defines an algorithm for gener
 
 ## Comparison of Interface Identifier Methods
 
-```
+```text
 Interface Identifier Method Comparison:
 
 Method              | Stable per network | Privacy (no MAC) | Changes over time
@@ -40,7 +40,7 @@ RFC 7217 Stable Privacy:
 
 ## RFC 7217 Algorithm
 
-```
+```text
 Stable Privacy IID Generation:
 
 IID = F(Prefix, Net_Iface, Network_ID, DAD_Counter, secret_key)
@@ -77,6 +77,7 @@ Linux kernel 4.6+ and systemd-networkd support RFC 7217 stable privacy addresses
 
 ```bash
 # Check if kernel supports RFC 7217
+
 # The feature is in kernel 4.6+
 uname -r
 
@@ -149,7 +150,7 @@ ip -6 addr show eth0 | grep "scope global"
 
 ## RFC 7217 vs Privacy Extensions
 
-```
+```text
 Choosing Between RFC 7217 and RFC 8981:
 
 RFC 7217 Stable Privacy:

@@ -200,6 +200,7 @@ LOG_DIR="/var/log/traffic-capture"
 ARCHIVE_BUCKET="s3://traffic-replay-archives"
 
 # Compress logs
+
 tar -czf traffic-${DATE}.tar.gz ${LOG_DIR}/${DATE}/*.json
 
 # Upload to S3

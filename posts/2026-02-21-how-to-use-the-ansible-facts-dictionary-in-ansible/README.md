@@ -18,6 +18,7 @@ You can see the full facts dictionary for any host by running a quick ad-hoc com
 
 ```bash
 # Dump all facts for a single host in JSON format
+
 ansible web-01 -m setup -i inventory/hosts.ini
 ```
 

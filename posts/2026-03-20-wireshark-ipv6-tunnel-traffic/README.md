@@ -23,6 +23,7 @@ IPv6 tunneling allows IPv6 packets to travel across IPv4 networks. Wireshark can
 
 ```wireshark
 # Show 6in4 tunnels (IPv6 in IPv4, protocol number 41)
+
 ip.proto == 41
 
 # Show 6to4 traffic (same as 6in4 but to/from 192.88.99.0/24)
@@ -133,4 +134,4 @@ tshark -r capture.pcap -Y "teredo" \
   sort | uniq -c | sort -rn
 ```
 
-Wireshark's automatic tunnel dissection — showing both outer and inner headers for 6in4, Teredo, and GRE — makes tunnel troubleshooting as straightforward as analyzing native IPv6 traffic.
+Wireshark's automatic tunnel dissection - showing both outer and inner headers for 6in4, Teredo, and GRE - makes tunnel troubleshooting as straightforward as analyzing native IPv6 traffic.

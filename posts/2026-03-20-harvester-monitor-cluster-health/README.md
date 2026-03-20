@@ -1,4 +1,4 @@
-# How to Monitor Harvester Cluster Health
+# How to Monitor Harvester Cluster Health - Monitor
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ The Harvester dashboard provides an at-a-glance health overview:
 
 ```bash
 # Set kubeconfig
+
 export KUBECONFIG=/etc/rancher/rke2/rke2.yaml
 
 # ===== NODE HEALTH =====

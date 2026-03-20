@@ -24,6 +24,7 @@ Create MySQL-specific network policies before any default-deny policies are appl
 
 ```yaml
 # mysql-network-policies.yaml
+
 # Network policies for MySQL primary-replica replication
 ---
 # Allow replication connections to the primary

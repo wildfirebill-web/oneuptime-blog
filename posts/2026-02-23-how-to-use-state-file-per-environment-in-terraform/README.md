@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, State Management, Environment, Infrastructure as Code, DevOps, Best Practices
+Tags: Terraform, State Management, Environments, Infrastructure as Code, DevOps, Best Practices
 
 Description: Learn how to implement a separate Terraform state file for each environment using workspaces, directory structures, and backend configuration to isolate dev, staging, and production infrastructure.
 
@@ -54,6 +54,7 @@ Each environment uses the shared modules but has its own state:
 
 ```hcl
 # environments/dev/backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "myorg-terraform-state"

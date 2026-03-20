@@ -14,6 +14,7 @@ Pgpool-II provides connection pooling, load balancing, and automatic failover fo
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install pgpool2
 
 # RHEL/CentOS

@@ -37,6 +37,7 @@ Export your VPC configuration to understand what you are working with.
 
 ```bash
 # List all VPCs
+
 aws ec2 describe-vpcs \
   --query 'Vpcs[*].{ID:VpcId,CIDR:CidrBlock,Name:Tags[?Key==`Name`].Value|[0]}' \
   --output table

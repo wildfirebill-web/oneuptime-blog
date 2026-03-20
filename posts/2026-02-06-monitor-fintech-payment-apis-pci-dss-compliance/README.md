@@ -42,6 +42,7 @@ Start with the payment service itself. The instrumentation must capture enough d
 
 ```python
 # payment_service.py
+
 # Instrument payment processing with PCI DSS-safe telemetry
 
 from opentelemetry import trace

@@ -59,6 +59,7 @@ mail2.example.com.  300  IN  A  203.0.113.11
 
 ```bash
 # Look up MX records
+
 dig MX example.com +short
 # 10 mail.example.com.
 

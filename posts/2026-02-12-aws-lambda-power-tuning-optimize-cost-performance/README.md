@@ -44,6 +44,7 @@ The easiest way to deploy is through the AWS Serverless Application Repository.
 
 ```bash
 # Deploy using the SAR application
+
 aws serverlessrepo create-cloud-formation-change-set \
   --application-id arn:aws:serverlessrepo:us-east-1:451282441545:applications/aws-lambda-power-tuning \
   --stack-name lambda-power-tuning \

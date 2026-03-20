@@ -54,6 +54,7 @@ S3 CRR automatically copies objects to a bucket in another region.
 
 ```bash
 # Create destination bucket in secondary region
+
 aws s3 mb s3://company-data-dr --region us-west-2
 
 # Enable versioning on both buckets (required)

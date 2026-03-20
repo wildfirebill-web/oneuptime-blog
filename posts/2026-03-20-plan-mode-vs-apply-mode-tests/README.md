@@ -10,8 +10,8 @@ Description: Understand the difference between plan mode and apply mode in OpenT
 
 OpenTofu's built-in testing framework supports two execution modes for `run` blocks:
 
-- **`command = plan`** — Generates a plan but does not create real resources
-- **`command = apply`** — Runs a full apply, creating real resources in the cloud
+- **`command = plan`** - Generates a plan but does not create real resources
+- **`command = apply`** - Runs a full apply, creating real resources in the cloud
 
 Choosing the right mode for each test is key to balancing speed, cost, and confidence.
 
@@ -82,7 +82,7 @@ run "provision_and_verify" {
 
 ### Cost and Time Considerations
 
-Apply mode creates real resources — incurring cloud costs and taking more time. OpenTofu's test runner destroys resources after each test file completes, but temporary costs apply.
+Apply mode creates real resources - incurring cloud costs and taking more time. OpenTofu's test runner destroys resources after each test file completes, but temporary costs apply.
 
 ## Combining Both Modes
 
@@ -130,7 +130,7 @@ run "verify_no_drift" {
 
   assert {
     condition     = plan.changes.add == 0 && plan.changes.change == 0 && plan.changes.remove == 0
-    error_message = "Configuration is not idempotent — apply produces changes"
+    error_message = "Configuration is not idempotent - apply produces changes"
   }
 }
 ```
@@ -170,10 +170,10 @@ run "fast_validation" {
 
 ## Best Practices
 
-1. **Default to plan mode** for configuration logic tests — it's faster and free
+1. **Default to plan mode** for configuration logic tests - it's faster and free
 2. **Use apply mode** for integration tests that must validate real API behavior
 3. **Run plan tests in every PR**, apply tests on merge or nightly
-4. **Always clean up** — OpenTofu destroys resources after tests, but verify with `tofu state list`
+4. **Always clean up** - OpenTofu destroys resources after tests, but verify with `tofu state list`
 5. **Isolate test resources** using unique name prefixes to avoid conflicts
 
 ## Conclusion

@@ -34,6 +34,7 @@ Ensure your application pods have the correct Prometheus scrape annotations.
 
 ```yaml
 # deployment.yaml
+
 # Application with Prometheus scrape annotations
 apiVersion: apps/v1
 kind: Deployment

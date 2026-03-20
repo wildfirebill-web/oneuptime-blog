@@ -37,13 +37,14 @@ NetFlow tracks every flow in hardware or software. The router maintains a flow c
 
 ```bash
 # NetFlow v5 verification
+
 snmpget -v2c -c public router.example.com \
   .1.3.6.1.4.1.9.9.387.1.1.1.0   # ciscoIpCef OID - shows cache stats
 ```
 
 ## sFlow: Best for High-Speed Links
 
-sFlow samples 1 in N packets and immediately forwards the sample—no flow cache needed. This makes it scale to any line rate.
+sFlow samples 1 in N packets and immediately forwards the sample-no flow cache needed. This makes it scale to any line rate.
 
 **Strengths:**
 - Works at 40G, 100G, 400G interfaces
@@ -52,7 +53,7 @@ sFlow samples 1 in N packets and immediately forwards the sample—no flow cache
 - Wide vendor support (Arista, Juniper, HP, Brocade, Linux)
 
 **Weaknesses:**
-- Statistical—accuracy depends on sampling rate
+- Statistical-accuracy depends on sampling rate
 - Small flows may be missed at low sampling rates
 - Less detailed than NetFlow at equivalent data rates
 
@@ -69,7 +70,7 @@ sudo tcpdump -i eth0 udp port 6343 -n -c 3
 IPFIX is the IETF-standardized version of NetFlow v9. It uses the same template mechanism but with IANA-assigned element IDs.
 
 **Strengths:**
-- Open standard—works across Cisco, Juniper, Palo Alto, F5, OVS
+- Open standard-works across Cisco, Juniper, Palo Alto, F5, OVS
 - Enterprise-specific extensions possible
 - TCP transport option for reliable delivery
 - All modern platforms support it

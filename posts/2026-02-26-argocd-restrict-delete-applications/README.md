@@ -152,6 +152,7 @@ Even with RBAC restrictions, you should monitor delete attempts. ArgoCD logs all
 
 ```bash
 # View recent delete attempts
+
 kubectl logs -n argocd deployment/argocd-server | grep "delete" | grep "applications"
 ```
 

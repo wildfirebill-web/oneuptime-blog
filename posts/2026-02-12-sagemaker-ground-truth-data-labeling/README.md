@@ -49,6 +49,7 @@ s3 = boto3.client('s3')
 bucket = 'my-labeling-bucket'
 
 # Create an input manifest file
+
 # Each line is a JSON object pointing to one data item
 manifest_entries = []
 for i in range(1, 101):  # 100 images to label

@@ -327,6 +327,7 @@ extractQueries().catch(console.error);
 
 ```bash
 # Install Apollo CLI
+
 npm install -g @apollo/rover
 
 # Extract queries from your codebase

@@ -1,14 +1,14 @@
-# How to Use the transpose Function in OpenTofu
+# How to Use the transpose Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, transpose, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Transpose, Map Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the transpose function in OpenTofu to invert a map of lists, swapping keys and values.
 
 ---
 
-`transpose()` takes a map where each value is a list of strings and inverts it — the strings in the value lists become new keys, and each new key maps to a list of the original keys that contained it.
+`transpose()` takes a map where each value is a list of strings and inverts it - the strings in the value lists become new keys, and each new key maps to a list of the original keys that contained it.
 
 ---
 
@@ -19,7 +19,7 @@ transpose(map_of_lists)
 ```
 
 Input: `map(list(string))`
-Output: `map(list(string))` — inverted
+Output: `map(list(string))` - inverted
 
 ---
 
@@ -68,6 +68,7 @@ locals {
 }
 
 # Create policy attachments grouped by policy
+
 resource "aws_iam_user_policy_attachment" "attachments" {
   for_each = {
     for policy, users in local.policy_users :
@@ -75,7 +76,7 @@ resource "aws_iam_user_policy_attachment" "attachments" {
   }
 
   # Use for_each over users within each policy group...
-  # (simplified example — real implementation would need nested for_each)
+  # (simplified example - real implementation would need nested for_each)
 }
 ```
 
@@ -148,4 +149,4 @@ It's less commonly needed than other map functions, but provides clean solutions
 
 ## Summary
 
-`transpose(map_of_lists)` inverts a map where values are lists of strings. Each string from the value lists becomes a key in the output map, and each new key maps to a list of the original keys that contained it. This is useful for restructuring data when you need the inverse relationship — for example, converting "user → roles" to "role → users", or "AZ → subnets" to "subnet → AZ".
+`transpose(map_of_lists)` inverts a map where values are lists of strings. Each string from the value lists becomes a key in the output map, and each new key maps to a list of the original keys that contained it. This is useful for restructuring data when you need the inverse relationship - for example, converting "user → roles" to "role → users", or "AZ → subnets" to "subnet → AZ".

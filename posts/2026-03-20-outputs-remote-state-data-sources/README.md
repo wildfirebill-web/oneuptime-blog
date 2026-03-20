@@ -1,19 +1,20 @@
-# How to Use Output Values in Remote State Data Sources
+# How to Use Output Values in Remote State Data Sources - Outputs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Outputs, Remote State, Data Sources, Infrastructure as Code, DevOps
+Tags: OpenTofu, Outputs, Remote State, Data Source, Infrastructure as Code, DevOps
 
 Description: A guide to using terraform_remote_state data source to access output values from other OpenTofu configurations.
 
 ## Introduction
 
-The `terraform_remote_state` data source allows one OpenTofu configuration to access the output values of another configuration's state file. This is how separate infrastructure projects communicate — the networking project exposes VPC IDs as outputs, and the application project reads them as remote state data.
+The `terraform_remote_state` data source allows one OpenTofu configuration to access the output values of another configuration's state file. This is how separate infrastructure projects communicate - the networking project exposes VPC IDs as outputs, and the application project reads them as remote state data.
 
 ## Setting Up Remote State Output
 
 ```hcl
 # infrastructure/networking/outputs.tf
+
 # These outputs will be consumed by other configurations
 
 output "vpc_id" {

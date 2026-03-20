@@ -18,6 +18,7 @@ Here is the basic syntax.
 
 ```yaml
 # Merge all fragments in the haproxy.d directory into a single config
+
 - name: Assemble HAProxy configuration from fragments
   ansible.builtin.assemble:
     src: /etc/haproxy/conf.d/

@@ -277,6 +277,7 @@ function LazyImage({ src, alt, placeholder, className, ...props }) {
 
 ```python
 # lazy_property.py
+
 from functools import cached_property
 from typing import TypeVar, Callable, Generic
 

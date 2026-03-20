@@ -28,7 +28,7 @@ Navigate to `http://192.168.1.1` or `http://linksyssmartwifi.com`. Default crede
 
 Toggle IPv6 to **Enabled** and select the connection type:
 
-```
+```text
 IPv6: Enabled
 
 IPv6 Connection Type:
@@ -44,7 +44,7 @@ IPv6 Connection Type:
 
 For DHCPv6 (most common for cable/fiber ISPs):
 
-```
+```text
 IPv6 Connection Type: DHCPv6
 
 DHCPv6 Settings:
@@ -60,7 +60,7 @@ DUID:
 
 Configure how local devices receive IPv6:
 
-```
+```text
 IPv6 LAN Settings:
 
 IPv6 Address Assignment:
@@ -95,7 +95,7 @@ For Velop mesh systems, use the Linksys app or web interface:
 
 Check the Status page on Linksys admin:
 
-```
+```text
 Status → Local Network
 
 Expected IPv6 info:
@@ -109,6 +109,7 @@ From a connected laptop:
 
 ```bash
 # macOS/Linux
+
 ip -6 addr show scope global
 ping6 -c 4 ipv6.google.com
 
@@ -120,7 +121,7 @@ curl -6 https://ipv6.icanhazip.com
 
 **DHCPv6 not connecting:**
 - Check if your ISP requires a specific DUID format
-- Try SLAAC/Auto first — some ISPs use RA instead of DHCPv6
+- Try SLAAC/Auto first - some ISPs use RA instead of DHCPv6
 - Factory reset and reconfigure if IPv6 was previously set to a different mode
 
 **LAN devices get fe80 only (no global IPv6):**

@@ -67,6 +67,7 @@ Before configuring PAM and SSH, verify the client can reach the KDC and authenti
 
 ```bash
 # Request a ticket (will prompt for password)
+
 kinit jsmith
 
 # Show current tickets

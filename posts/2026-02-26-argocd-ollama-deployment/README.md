@@ -34,6 +34,7 @@ Start with a straightforward deployment:
 
 ```yaml
 # apps/ollama/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

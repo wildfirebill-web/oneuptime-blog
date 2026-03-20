@@ -302,6 +302,7 @@ Teams in different namespaces create VirtualServices that reference this shared 
 
 ```yaml
 # Team A's namespace
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

@@ -33,6 +33,7 @@ The most common sidecar pattern for OpenTelemetry is running the collector itsel
 
 ```yaml
 # Pod spec with the OpenTelemetry Collector as a sidecar.
+
 # The app sends telemetry to localhost:4318, which the collector
 # receives and forwards to the central gateway.
 apiVersion: v1
@@ -301,7 +302,7 @@ sequenceDiagram
 
 If your sidecar uses a custom protocol instead of HTTP, you need to handle context propagation manually. Extract the trace context from the incoming request in the sidecar, and inject it into whatever format the sidecar uses to communicate with the main container.
 
-## Resource Attributes for Sidecars
+Resource Attributes for Sidecars
 
 Set distinct resource attributes for sidecar containers so you can differentiate their spans from the main application:
 

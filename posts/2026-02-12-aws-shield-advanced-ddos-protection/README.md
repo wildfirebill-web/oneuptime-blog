@@ -31,6 +31,7 @@ First, you need to subscribe. This is an account-level commitment with a 1-year 
 
 ```bash
 # Subscribe to Shield Advanced
+
 aws shield create-subscription
 
 # Verify your subscription is active

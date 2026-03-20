@@ -126,7 +126,7 @@ receivers:
     # This is done through the filter processor
 ```
 
-### Resource Detection
+Resource Detection
 
 Add resource detection to automatically enrich metrics with host and environment information:
 
@@ -239,6 +239,7 @@ When running the OpenTelemetry Collector itself as a container, you need to moun
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TLS, SSL, sslscan, Security, Certificate, Cipher Suite, Vulnerability Assessment
+Tags: TLS, SSL, Sslscan, Security, Certificates, Cipher Suites, Vulnerability Assessment
 
 Description: Learn how to use sslscan to audit TLS/SSL configuration on a server, identify weak cipher suites, deprecated protocol versions, and certificate issues.
 
@@ -14,6 +14,7 @@ Description: Learn how to use sslscan to audit TLS/SSL configuration on a server
 
 ```bash
 # Debian/Ubuntu
+
 apt install sslscan -y
 
 # RHEL/CentOS
@@ -41,7 +42,7 @@ sslscan 192.168.1.10:443
 
 ## Interpreting the Output
 
-```
+```text
 Version: 2.x
 OpenSSL 3.x.x
 

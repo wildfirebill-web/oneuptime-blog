@@ -25,6 +25,7 @@ The workflow has four steps:
 
 ```bash
 # Step 1: Build
+
 podman build --platform linux/amd64 -t myapp:amd64 .
 podman build --platform linux/arm64 -t myapp:arm64 .
 

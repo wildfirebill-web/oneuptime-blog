@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Hetzner Cloud, Terraform, IPv6, Servers, Networking, Cloud
+Tags: Hetzner Cloud, Terraform, IPv6, Server, Networking, Cloud
 
 Description: A guide to provisioning Hetzner Cloud servers and networks with IPv6 addressing using Terraform, including floating IP and DNS configuration.
 
@@ -12,6 +12,7 @@ Hetzner Cloud provides a free /64 IPv6 network prefix for every server. Each ser
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     hcloud = {

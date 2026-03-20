@@ -40,6 +40,7 @@ sudo apt update
 sudo apt install -y freeradius freeradius-utils
 
 # Verify the installation
+
 radiusd -v
 
 # Start and enable FreeRADIUS

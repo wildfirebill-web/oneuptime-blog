@@ -33,6 +33,7 @@ A schematic is a YAML document that describes the customizations you want in you
 
 ```yaml
 # schematic.yaml - defines custom image contents
+
 customization:
   systemExtensions:
     officialExtensions:

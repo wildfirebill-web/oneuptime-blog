@@ -50,6 +50,7 @@ The Collector contrib distribution includes an AWS S3 receiver:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   awss3:
     # SQS queue that receives S3 notifications

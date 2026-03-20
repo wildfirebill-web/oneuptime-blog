@@ -24,6 +24,7 @@ Understanding these requirements before creating your AKS cluster is far easier 
 
 ```bash
 # AKS Ubuntu node image kernel versions
+
 # Ubuntu 22.04 (default for AKS 1.27+): kernel 5.15
 # Ubuntu 18.04 (legacy): kernel 5.4
 

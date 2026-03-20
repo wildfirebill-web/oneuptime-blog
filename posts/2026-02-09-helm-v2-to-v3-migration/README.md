@@ -24,6 +24,7 @@ Before starting the migration, inventory your existing Helm 2 releases across al
 
 ```bash
 # List all Helm 2 releases
+
 helm2 list --all --all-namespaces
 
 # Export release details to CSV for tracking

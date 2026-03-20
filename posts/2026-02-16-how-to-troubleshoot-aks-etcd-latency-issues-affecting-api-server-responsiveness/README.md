@@ -52,6 +52,7 @@ First, rule out other causes of slow API responses. Check if the issue is networ
 
 ```bash
 # Time a simple API call to measure latency
+
 time kubectl get namespaces
 
 # Compare with a more complex query

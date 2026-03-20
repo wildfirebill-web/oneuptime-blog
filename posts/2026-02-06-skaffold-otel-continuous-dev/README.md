@@ -16,6 +16,7 @@ Install Skaffold:
 
 ```bash
 # macOS
+
 brew install skaffold
 
 # Linux

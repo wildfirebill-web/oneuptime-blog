@@ -18,6 +18,7 @@ The simplest form shows all port mappings for a container:
 
 ```bash
 # Show all published port mappings for a container
+
 docker port my-container
 ```
 

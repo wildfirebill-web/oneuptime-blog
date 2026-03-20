@@ -92,6 +92,7 @@ Consistent naming makes configuration discoverable:
 
 ```yaml
 # File names match resource names
+
 # api-gateway/virtualservice.yaml
 apiVersion: networking.istio.io/v1
 kind: VirtualService

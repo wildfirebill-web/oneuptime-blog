@@ -25,6 +25,7 @@ Strimzi publishes Helm charts and raw YAML manifests. The Helm approach works we
 
 ```yaml
 # argocd/strimzi-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

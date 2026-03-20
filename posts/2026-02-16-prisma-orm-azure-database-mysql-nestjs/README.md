@@ -28,6 +28,7 @@ Azure offers a flexible server deployment option for MySQL. It is simpler to con
 
 ```bash
 # Create a resource group for the demo
+
 az group create --name nestjs-prisma-rg --location eastus
 
 # Provision a MySQL flexible server

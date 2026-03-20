@@ -140,6 +140,7 @@ Authorization policies control what authenticated identities can do. Use the pri
 
 ```yaml
 # Deny all by default
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

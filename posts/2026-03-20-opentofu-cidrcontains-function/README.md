@@ -16,8 +16,8 @@ The `cidrcontains` function in OpenTofu returns `true` if a given IP address or 
 cidrcontains(containing_cidr, contained_ip_or_cidr)
 ```
 
-- **containing_cidr** — the outer CIDR range to check against
-- **contained_ip_or_cidr** — an IP address or CIDR that may be inside it
+- **containing_cidr** - the outer CIDR range to check against
+- **contained_ip_or_cidr** - an IP address or CIDR that may be inside it
 - Returns a boolean
 
 ## Basic Examples

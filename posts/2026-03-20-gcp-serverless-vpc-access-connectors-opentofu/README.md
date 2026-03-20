@@ -14,6 +14,7 @@ Serverless VPC Access Connectors enable Cloud Run services and Cloud Functions t
 
 ```hcl
 # main.tf - VPC Access Connector for serverless services
+
 resource "google_vpc_access_connector" "serverless_connector" {
   name          = "serverless-vpc-connector"
   region        = "us-central1"

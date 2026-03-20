@@ -26,6 +26,7 @@ Install the required collection and Python library:
 
 ```bash
 # Install the community.general Ansible collection
+
 ansible-galaxy collection install community.general
 
 # Install the lmdb Python library

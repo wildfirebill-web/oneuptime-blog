@@ -14,6 +14,7 @@ The `depends_on` argument in output blocks tells OpenTofu that the output value 
 
 ```hcl
 # Normally, output dependencies are automatically inferred
+
 output "bucket_url" {
   value = "https://${aws_s3_bucket.main.bucket_domain_name}"
   # OpenTofu knows this depends on aws_s3_bucket.main automatically
@@ -156,4 +157,4 @@ output "good_example" {
 
 ## Conclusion
 
-Using `depends_on` in output blocks ensures that outputs are only exposed after all required resources and side effects are complete. This is particularly important for outputs representing readiness states or URLs that should only be used after supporting infrastructure is fully operational. Use it sparingly — only when OpenTofu cannot automatically infer the dependency from resource references in the output value.
+Using `depends_on` in output blocks ensures that outputs are only exposed after all required resources and side effects are complete. This is particularly important for outputs representing readiness states or URLs that should only be used after supporting infrastructure is fully operational. Use it sparingly - only when OpenTofu cannot automatically infer the dependency from resource references in the output value.

@@ -62,6 +62,7 @@ Create a Cloud SQL instance in your primary region and then add a cross-region r
 
 ```bash
 # Create the primary Cloud SQL instance in us-central1
+
 gcloud sql instances create prod-primary \
   --database-version=POSTGRES_15 \
   --tier=db-custom-4-16384 \

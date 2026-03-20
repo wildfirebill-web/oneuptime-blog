@@ -14,6 +14,7 @@ Before tuning anything, you need to quantify the problem. Instrument your alerti
 
 ```python
 # Track alert outcomes to measure signal-to-noise ratio
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("alert.analysis")

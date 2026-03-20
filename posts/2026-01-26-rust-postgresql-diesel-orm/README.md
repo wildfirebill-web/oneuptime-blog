@@ -51,6 +51,7 @@ Let's start by creating a new Rust project and adding the required dependencies.
 
 ```bash
 # Create a new Rust project
+
 cargo new rust_diesel_demo
 cd rust_diesel_demo
 ```

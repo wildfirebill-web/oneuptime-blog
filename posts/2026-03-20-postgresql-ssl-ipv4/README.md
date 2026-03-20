@@ -14,6 +14,7 @@ PostgreSQL SSL encrypts client-server communication to prevent eavesdropping on 
 
 ```bash
 # PostgreSQL looks for ssl-cert and ssl-key in the data directory by default
+
 # Generate self-signed certificate:
 sudo -u postgres openssl req -new -x509 -days 3650 -nodes \
   -keyout /etc/postgresql/16/main/server.key \
@@ -94,12 +95,12 @@ psql -h 10.0.0.5 -U appuser -d appdb \
   -c "SELECT ssl, cipher, bits, client_dn FROM pg_stat_ssl WHERE pid = pg_backend_pid();"
 
 # sslmode options:
-# disable      — never SSL
-# allow        — try without SSL, fallback to SSL
-# prefer       — try SSL, fallback to plain (default)
-# require      — require SSL, skip cert verification
-# verify-ca    — require SSL, verify CA
-# verify-full  — require SSL, verify CA + hostname
+# disable      - never SSL
+# allow        - try without SSL, fallback to SSL
+# prefer       - try SSL, fallback to plain (default)
+# require      - require SSL, skip cert verification
+# verify-ca    - require SSL, verify CA
+# verify-full  - require SSL, verify CA + hostname
 ```
 
 ## Conclusion

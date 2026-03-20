@@ -18,6 +18,7 @@ Get LocalStack running with one command:
 
 ```bash
 # Start LocalStack with the most common AWS services
+
 docker run -d \
   --name localstack \
   -p 4566:4566 \

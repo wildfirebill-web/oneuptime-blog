@@ -8,7 +8,7 @@ Description: Diagnose and fix issues caused by ICMP Fragmentation Needed message
 
 ## Introduction
 
-ICMP Type 3 Code 4 (Fragmentation Needed) is the signal a router sends when it receives a packet with the Don't Fragment (DF) bit set that is too large to forward on the next link. This message is essential for PMTUD — without it, TCP connections appear to work for small data but silently fail for larger transfers.
+ICMP Type 3 Code 4 (Fragmentation Needed) is the signal a router sends when it receives a packet with the Don't Fragment (DF) bit set that is too large to forward on the next link. This message is essential for PMTUD - without it, TCP connections appear to work for small data but silently fail for larger transfers.
 
 ## Symptoms of Blocked Fragmentation Needed
 
@@ -21,6 +21,7 @@ ICMP Type 3 Code 4 (Fragmentation Needed) is the signal a router sends when it r
 
 ```bash
 # Binary search for the actual path MTU using ping
+
 # Start with 1472 (1500 - 28 bytes for IP+ICMP headers)
 
 ping -s 1472 -M do -c 3 8.8.8.8   # Try full size

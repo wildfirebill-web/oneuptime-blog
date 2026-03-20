@@ -28,6 +28,7 @@ The most painful networking mistake is discovering your IP pool is full when a n
 ```bash
 calicoctl ipam show
 # Watch the "Utilization" column - alert at 80%
+
 ```
 
 **Fix**: Add a new non-overlapping IP pool:

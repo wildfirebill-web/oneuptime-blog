@@ -35,6 +35,7 @@ By default, ArgoCD clones the full Git history. For large repos with long histor
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

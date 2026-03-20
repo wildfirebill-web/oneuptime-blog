@@ -17,6 +17,7 @@ Scapy can capture and decode HTTP traffic at the packet level, giving you visibi
 ```bash
 pip install scapy
 # Root/sudo required for raw socket capture
+
 ```
 
 ## Capturing HTTP Request Packets

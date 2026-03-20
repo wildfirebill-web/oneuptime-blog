@@ -31,6 +31,7 @@ Replace default broad RBAC with minimal permissions and use service account impe
 
 ```yaml
 # hardened-rbac.yaml
+
 # Minimal ClusterRole for kustomize-controller with impersonation only
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole

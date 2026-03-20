@@ -36,33 +36,33 @@ Rancher presents a form-based configuration interface. Configure the following s
 
 ### Namespace Configuration
 
-```
+```text
 Namespace: neuvector (create new)
 ```
 
 ### Container Runtime
 
 Select your cluster's container runtime:
-- **Docker** — for Docker-based clusters
-- **containerd** — most common for modern clusters
-- **CRI-O** — for OpenShift-compatible clusters
+- **Docker** - for Docker-based clusters
+- **containerd** - most common for modern clusters
+- **CRI-O** - for OpenShift-compatible clusters
 
 ### Manager Settings
 
-```
+```text
 Service Type: NodePort or LoadBalancer
 Port: 8443
 ```
 
 ### Controller Settings
 
-```
+```text
 Replicas: 3 (recommended for production)
 ```
 
 ### Scanner Settings
 
-```
+```text
 Enable Scanner: Yes
 Scanner Replicas: 2
 Auto-scan: Enabled
@@ -92,6 +92,7 @@ Rancher allows you to review and edit the underlying Helm values in YAML format 
 
 ```yaml
 # Review these values in the Rancher YAML editor
+
 controller:
   replicas: 3
   pvc:

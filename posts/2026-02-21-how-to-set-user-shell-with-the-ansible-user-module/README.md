@@ -16,6 +16,7 @@ The `shell` parameter on the `user` module sets the user's login shell:
 
 ```yaml
 # set-shell-basic.yml - Set shell during user creation
+
 - name: Create user with specific shell
   hosts: all
   become: yes

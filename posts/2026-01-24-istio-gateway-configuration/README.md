@@ -358,6 +358,7 @@ Verify the gateway resource is created correctly.
 
 ```bash
 # List all gateways
+
 kubectl get gateways -A
 
 # Describe specific gateway

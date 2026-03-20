@@ -24,6 +24,7 @@ Create a reusable shell script that sends formatted messages to Slack.
 ```bash
 #!/bin/bash
 # scripts/notify-slack.sh
+
 # Usage: ./notify-slack.sh "message" "color" "title"
 
 MESSAGE="$1"

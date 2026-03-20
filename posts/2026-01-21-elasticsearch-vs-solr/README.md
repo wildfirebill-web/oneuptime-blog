@@ -198,6 +198,7 @@ Solr:
 **Elasticsearch:**
 ```bash
 # Check cluster health
+
 curl -X GET "localhost:9200/_cluster/health?pretty"
 
 # Add node - automatic discovery

@@ -41,6 +41,7 @@ Before building any plugin, you need the Grafana plugin tools installed.
 
 ```bash
 # Install the Grafana create-plugin CLI globally
+
 npm install -g @grafana/create-plugin
 
 # Create a new plugin project

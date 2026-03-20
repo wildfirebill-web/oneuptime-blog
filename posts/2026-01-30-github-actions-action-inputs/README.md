@@ -174,6 +174,7 @@ Docker actions receive inputs as environment variables prefixed with `INPUT_`:
 
 ```yaml
 # action.yml
+
 name: 'Container Security Scan'
 description: 'Scans container images for vulnerabilities'
 

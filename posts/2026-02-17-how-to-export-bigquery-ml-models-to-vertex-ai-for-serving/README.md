@@ -34,6 +34,7 @@ The exported files will include a SavedModel directory structure with the model 
 
 ```bash
 # Verify the model files were exported successfully
+
 gsutil ls -r gs://my-project-ml-models/churn_classifier/v1/
 ```
 

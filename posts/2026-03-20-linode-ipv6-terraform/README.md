@@ -12,6 +12,7 @@ Linode (now Akamai Cloud) automatically assigns a /128 IPv6 address (SLAAC) to e
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     linode = {

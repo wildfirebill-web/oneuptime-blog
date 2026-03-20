@@ -16,6 +16,7 @@ By default, the collector exposes its own metrics on a Prometheus endpoint. You 
 
 ```yaml
 # otel-collector-config.yaml
+
 # The telemetry section controls the collector's own observability
 service:
   telemetry:

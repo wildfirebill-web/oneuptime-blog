@@ -206,6 +206,7 @@ If your API includes a token refresh endpoint (`/auth/refresh`), make sure it's 
 
 ```yaml
 # Allow the refresh endpoint without JWT
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

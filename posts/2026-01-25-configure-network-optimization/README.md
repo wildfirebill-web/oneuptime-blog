@@ -45,6 +45,7 @@ The default socket buffer sizes on Linux are conservative. For high-throughput a
 # /etc/sysctl.conf
 
 # Maximum socket receive buffer size (16 MB)
+
 net.core.rmem_max = 16777216
 
 # Maximum socket send buffer size (16 MB)

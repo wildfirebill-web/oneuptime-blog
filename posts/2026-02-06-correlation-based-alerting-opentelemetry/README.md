@@ -37,6 +37,7 @@ First, make sure your OpenTelemetry Collector exports resource attributes alongs
 
 ```yaml
 # otel-collector-config.yaml
+
 # This processor adds resource attributes to metrics so alerts carry service context
 processors:
   resource:

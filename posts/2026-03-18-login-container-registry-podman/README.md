@@ -20,6 +20,7 @@ The simplest way to log in is interactively with a username and password prompt.
 
 ```bash
 # Log in to Docker Hub
+
 podman login docker.io
 # Username: yourusername
 # Password: (entered securely, not displayed)

@@ -30,6 +30,7 @@ The following commands query common storage metrics:
 
 ```bash
 # Query total transactions over the last hour
+
 az monitor metrics list \
   --resource "/subscriptions/<sub-id>/resourceGroups/rg-app/providers/Microsoft.Storage/storageAccounts/stappdata2026" \
   --metric "Transactions" \

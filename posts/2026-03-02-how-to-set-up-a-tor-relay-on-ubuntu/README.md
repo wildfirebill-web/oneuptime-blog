@@ -25,6 +25,7 @@ Ubuntu's default repositories often contain older Tor versions. The Tor Project 
 
 ```bash
 # Install required packages
+
 sudo apt install -y apt-transport-https gnupg
 
 # Add the Tor Project's signing key

@@ -23,6 +23,7 @@ The pattern is simple: a cron job or systemd timer on each server runs `ansible-
 
 ```bash
 # Add Ansible's official PPA (newer than Ubuntu's repository)
+
 sudo add-apt-repository --yes ppa:ansible/ansible
 
 # Install ansible

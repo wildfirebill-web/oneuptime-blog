@@ -38,6 +38,7 @@ The key points:
 
 ```yaml
 # site.yml
+
 # Pre-tasks run before roles, post-tasks run after
 ---
 - name: Deploy web application

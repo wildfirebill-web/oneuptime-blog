@@ -49,6 +49,7 @@ Here is a Python library that wraps chaos experiments in OpenTelemetry spans:
 
 ```python
 # chaos_experiment.py
+
 # Framework for running chaos experiments with OpenTelemetry observability
 
 import time

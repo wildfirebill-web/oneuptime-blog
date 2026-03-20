@@ -8,7 +8,7 @@ Description: Learn how to use -target-file and -exclude-file flags in OpenTofu t
 
 ## Introduction
 
-When you need to target or exclude many resources, passing individual `-target` or `-exclude` flags becomes unwieldy. The `-target-file` and `-exclude-file` flags accept a file containing a list of resource addresses — one per line — making it easy to manage large sets of targets or exclusions.
+When you need to target or exclude many resources, passing individual `-target` or `-exclude` flags becomes unwieldy. The `-target-file` and `-exclude-file` flags accept a file containing a list of resource addresses - one per line - making it easy to manage large sets of targets or exclusions.
 
 ## -target-file
 
@@ -16,6 +16,7 @@ Create a file listing resources to include:
 
 ```text
 # targets.txt
+
 aws_s3_bucket.data
 aws_s3_bucket_versioning.data
 module.networking
@@ -110,10 +111,10 @@ tofu apply -target-file=stage2.txt
 ```bash
 # Track problem resources in a file
 cat > known-issues.txt << 'EOF'
-# Ticket #1234 — provider bug
+# Ticket #1234 - provider bug
 module.legacy-billing
 
-# Ticket #1456 — manual configuration needed
+# Ticket #1456 - manual configuration needed
 aws_route53_record.external
 EOF
 

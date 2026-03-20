@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Teaching, Education, Beginners
+Tags: Portainer, Docker, Teaching, Education, Beginner
 
 Description: Use Portainer's visual interface to teach Docker fundamentals to beginners, bridging the gap between CLI commands and container concepts.
 
@@ -24,7 +24,7 @@ Docker's command-line interface intimidates many beginners. Portainer's graphica
 
 In Portainer: **Containers > Add Container**
 
-```
+```text
 Image: hello-world
 Name: my-first-container
 Click: Deploy the container
@@ -46,7 +46,7 @@ Key teaching point: A container is an isolated process running from an image.
 
 In Portainer: **Containers > Add Container**
 
-```
+```text
 Image: ubuntu:22.04
 Name: ubuntu-interactive
 Console: Interactive + TTY enabled
@@ -67,14 +67,14 @@ docker run -it --name ubuntu-interactive ubuntu:22.04 /bin/bash
 
 In Portainer: **Containers > Add Container**
 
-```
+```text
 Image: nginx:alpine
 Name: my-webserver
 Port mapping: 8080 (host) -> 80 (container)
 Click: Deploy
 ```
 
-Then open a browser to `http://localhost:8080` — students see the Nginx welcome page.
+Then open a browser to `http://localhost:8080` - students see the Nginx welcome page.
 
 CLI equivalent:
 ```bash
@@ -83,6 +83,7 @@ docker run -d --name my-webserver -p 8080:80 nginx:alpine
 
 ```bash
 # Teaching script: Show port mapping effect
+
 echo "Container is accessible at:"
 echo "  Inside Docker: http://my-webserver:80"
 echo "  From your laptop: http://localhost:8080"
@@ -95,7 +96,7 @@ curl -s http://localhost:8080 | grep -o '<title>.*</title>'
 
 In Portainer: **Containers > Add Container**
 
-```
+```text
 Image: postgres:15-alpine
 Name: my-database
 Environment variables:
@@ -128,13 +129,13 @@ In Portainer:
 1. Create container with `nginx:alpine`, no volumes
 2. Connect to Console, create a file: `echo "my data" > /usr/share/nginx/html/test.txt`
 3. Stop and remove the container
-4. Recreate it — the file is gone
+4. Recreate it - the file is gone
 
 **Fix with volumes:**
 
 In Portainer: **Volumes > Add Volume**, then **Containers > Add Container**
 
-```
+```text
 Image: nginx:alpine
 Name: nginx-with-data
 Volume: mydata -> /usr/share/nginx/html (bind or named)
@@ -222,4 +223,4 @@ In Portainer: **Images** shows all local images with size and tags.
 
 ## Conclusion
 
-Portainer transforms Docker education by making invisible concepts visible. Students can focus on understanding what containers do rather than struggling with CLI syntax. The visual feedback loop — deploy a container, see it appear in the list, view its logs, inspect its configuration — builds intuition faster than documentation alone. As students advance, they can graduate to the CLI with a strong conceptual foundation built through the Portainer interface.
+Portainer transforms Docker education by making invisible concepts visible. Students can focus on understanding what containers do rather than struggling with CLI syntax. The visual feedback loop - deploy a container, see it appear in the list, view its logs, inspect its configuration - builds intuition faster than documentation alone. As students advance, they can graduate to the CLI with a strong conceptual foundation built through the Portainer interface.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, SSL, HTTPS, Security, Web Server
+Tags: Nginx, SSL, HTTPS, Security, Web Server
 
 Description: Learn how to configure Nginx to redirect all HTTP traffic to HTTPS, including proper 301 redirects, HSTS headers, and various configuration patterns for different deployment scenarios.
 
@@ -16,6 +16,7 @@ Redirecting HTTP to HTTPS ensures all traffic to your website is encrypted. This
 
 ```nginx
 # HTTP server - redirect all traffic to HTTPS
+
 server {
     listen 80;
     listen [::]:80;

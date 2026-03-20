@@ -18,6 +18,7 @@ The `-d` flag (short for `--detach`) runs a container in the background.
 
 ```bash
 # Start an nginx container in the background
+
 docker run -d nginx:latest
 ```
 

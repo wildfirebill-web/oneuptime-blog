@@ -264,6 +264,7 @@ Save your policy definition as a JSON file and create it using the CLI.
 
 ```bash
 # Create the custom policy definition
+
 az policy definition create \
   --name "deploy-vm-diagnostics" \
   --display-name "Deploy diagnostic settings on VMs" \
